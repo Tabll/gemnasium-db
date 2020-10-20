@@ -1,0 +1,17 @@
+---
+identifier: "GMS-2017-235"
+package_slug: "npm/zwserver"
+title: "Directory Traversal"
+description: "`zwserver` is vulnerable to a directory traversal issue, giving an attacker
+  access to the filesystem by placing \"../\" in the url./n"
+date: "2017-09-27"
+pubdate: "2017-09-27"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://github.com/JacksonGL/NPM-Vuln-PoC/tree/master/directory-traversal/zwserver"
+- "https://nodesecurity.io/advisories/372"
+credit: "Liang Gong"
+uuid: "043b14c0-3df2-46fc-a366-a0bf7d272fc0"

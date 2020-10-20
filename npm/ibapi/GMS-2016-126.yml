@@ -1,0 +1,19 @@
+---
+identifier: "GMS-2016-126"
+package_slug: "npm/ibapi"
+title: "Downloads Resources over HTTP"
+description: "ibapi downloads binary resources over HTTP, which leaves it vulnerable
+  to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping
+  out the requested binary with an attacker controlled binary if the attacker is on
+  the network or positioned in between the user and the remote server."
+date: "2016-12-21"
+pubdate: "2016-12-21"
+affected_range: ">=0.0.0"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "No fix is currently available for this vulnerability. It's recommended
+  to not install nor use this module."
+urls:
+- "https://nodesecurity.io/advisories/182"
+credit: "Adam Baldwin"
+uuid: "d88ffc0c-db72-4f12-97b4-dbebda24d8b9"

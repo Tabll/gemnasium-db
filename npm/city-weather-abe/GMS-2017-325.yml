@@ -1,0 +1,17 @@
+---
+identifier: "GMS-2017-325"
+package_slug: "npm/city-weather-abe"
+title: "Directory Traversal"
+description: "`city-weather-abe` is vulnerable to a directory traversal issue, giving
+  an attacker access to the filesystem by placing \"../\" in the url."
+date: "2017-10-25"
+pubdate: "2017-10-25"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/city-weather-abe"
+- "https://nodesecurity.io/advisories/408"
+credit: "Liang Gong"
+uuid: "d7719ea5-20fc-4357-8842-ca0bcf81e3c8"

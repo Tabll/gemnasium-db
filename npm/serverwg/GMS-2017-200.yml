@@ -1,0 +1,17 @@
+---
+identifier: "GMS-2017-200"
+package_slug: "npm/serverwg"
+title: "Directory Traversal"
+description: "`serverwg` is vulnerable to a directory traversal issue, giving an attacker
+  access to the filesystem by placing \"../\" in the URL."
+date: "2017-09-08"
+pubdate: "2017-09-08"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://github.com/JacksonGL/NPM-Vuln-PoC/tree/master/directory-traversal/serverwg"
+- "https://nodesecurity.io/advisories/364"
+credit: "Liang Gong"
+uuid: "ce1f9ca1-ed67-4b1b-a23b-39d34d42f024"

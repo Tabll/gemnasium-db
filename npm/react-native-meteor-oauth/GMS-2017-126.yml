@@ -1,0 +1,17 @@
+---
+identifier: "GMS-2017-126"
+package_slug: "npm/react-native-meteor-oauth"
+title: "Random Token based off Math.random()"
+description: "The OAuth Random Token is generated using a non-cryptographically strong
+  RNG (Math.random())."
+date: "2017-04-14"
+pubdate: "2017-04-14"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://github.com/tableflip/react-native-meteor-oauth/blob/a7eb738b74c469f5db20296b44b7cae4e2337435/src/meteor-oauth.js#L66"
+- "https://nodesecurity.io/advisories/157"
+credit: "Sven Slootweg"
+uuid: "c461fab3-fe1a-44e9-ab88-3e0d20897062"

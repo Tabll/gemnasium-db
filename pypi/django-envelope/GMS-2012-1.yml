@@ -1,0 +1,18 @@
+---
+identifier: "GMS-2012-1"
+package_slug: "pypi/django-envelope"
+title: "Information Exposure"
+description: "This package is vulnerable to Information Exposure."
+date: "2012-01-03"
+pubdate: "2012-01-03"
+affected_range: "<0.4.1"
+fixed_versions:
+- "0.4.1"
+affected_versions: "All versions before 0.4.1"
+solution: "Upgrade to latest version."
+urls:
+- "https://github.com/zsiciarz/django-envelope/blob/master/docs/changes.rst#041"
+- "https://github.com/zsiciarz/django-envelope/commit/98a6def1c1544c6e070c26f39cb5cabb3434da14"
+- "https://github.com/zsiciarz/django-envelope/pull/7"
+credit: "Tomasz Wysocki"
+uuid: "adae0c3c-284f-4068-9f63-13bf90276bd2"

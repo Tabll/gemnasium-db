@@ -1,0 +1,96 @@
+---
+title: GitLab Advisory Database Stats
+output:
+  html_document:
+    toc: false
+    theme: sandstone
+    fontsize: 24pt
+---
+
+```{r include=FALSE, setup-hook, echo=FALSE}
+require(lubridate)
+require(ggplot2)
+```
+
+### Adivsory distribution
+
+The pie chart below illustrates the advisory distribution for the package types we support by providing their total number and percentages.
+
+```{r echo=FALSE}
+source('compute_charts.R')
+package_type_distro('../data/data.csv')
+```
+
+
+### Number of CVEs
+
+The pie chart below illustrates how many advisories in the database are originating from NVD.
+
+```{r echo=FALSE}
+source('compute_charts.R')
+cve_distro('../data/data.csv')
+```
+
+
+### Number of merged CVEs
+
+The barchart below depicts the number of advisories (CVEs only) that have been merged during the last couple of months starting from May 2019 where the initial data was imported to gemnasium-db. Note, that we are only counting newly added advisories (not updated ones).
+
+```{r echo=FALSE}
+source('compute_charts.R')
+merged_advisories('../data/data.csv')
+```
+
+
+### Throughput
+
+Throughput indicates the efficiency of adding new advisories to gemnasium-db; more automation increases the throughput.
+The plot below shows how the throughput developed over the last couple of month. For every month throughput is computed with: $\frac{|\text{Advisories}|}{\text{day}}$. The spike for May 2019 is due to the initial import of advisory data.
+
+```{r echo=FALSE}
+source('compute_charts.R')
+throughput('../data/data.csv')
+```
+
+### Coverage 
+
+Coverage indicates how many advisories from NVD have been identified as relevant in the context of dependency scanning. The barchart below shows how many CVEs (in %) were translated into advisories because of their relation to a supported package. The X-axis depicts the year of the NVD data feed wheras the Y-asis depicts percentage of extracted CVEs.
+
+```{r echo=FALSE}
+source('compute_charts.R')
+coverage('../data/data.csv', '../data/nvd.csv')
+```
+
+### TTM (Time to Merge)
+
+Time to merge (TTM) measures the expired time between the publication of a CVE
+on NVD and the point in time where the advisory is merged into gemnasium-db.
+The figures below illustrates the weekly and monthly TTM trends. The orange line
+represents the mean values whereas the blue line represents the median values.
+The grey area illustrates the boundaries, i.e., the observed minimum and
+maximum TTM values for a certain period.  In all figures below, the red, dashed
+line marks the 7 day threshold.
+
+```{r echo=FALSE}
+source('compute_charts.R')
+acc_ttm_week_band('../data/data.csv', FALSE, 30)
+```
+
+```{r echo=FALSE}
+source('compute_charts.R')
+acc_ttm_week_band('../data/data.csv', TRUE, 30)
+```
+
+The figures below show how many advisories (depicted on Y axis) have been
+merged within a given number of days (depicted on X axis). 
+
+```{r echo=FALSE}
+source('compute_charts.R')
+acc_ttm_week_facets('../data/data.csv', FALSE, 30)
+```
+
+```{r echo=FALSE}
+source('compute_charts.R')
+acc_ttm_week_facets('../data/data.csv', TRUE, 30)
+```
+

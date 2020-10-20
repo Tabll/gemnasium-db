@@ -1,0 +1,18 @@
+---
+identifier: "GMS-2017-100"
+package_slug: "npm/sauce-connect"
+title: "Downloads Resources over HTTP"
+description: "sauce-connect downloads binary resources over HTTP, which leaves it
+  vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE)
+  by swapping out the requested binary with an attacker controlled binary if the attacker
+  is on the network or positioned in between the user and the remote server."
+date: "2017-01-01"
+pubdate: "2017-01-01"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://nodesecurity.io/advisories/186"
+credit: "Adam Baldwin"
+uuid: "1c146fac-bb01-46be-9970-63ac9774c5c6"

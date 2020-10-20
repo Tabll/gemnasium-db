@@ -1,0 +1,18 @@
+---
+identifier: "GMS-2016-62"
+package_slug: "npm/pivottable"
+title: "XSS vulnerability"
+description: "A cross site scripting (XSS) vulnerability was introduced due to a change
+  from text to html functions in how JSON elements are rendered."
+date: "2016-08-26"
+pubdate: "2016-08-26"
+affected_range: ">=1.4.0-alpha <2.0.0"
+fixed_versions:
+- "2.0.0"
+affected_versions: "All versions starting from 1.4.0-alpha before 2.0.0"
+solution: "Upgrade to version 2.0.0 or later."
+urls:
+- "https://github.com/nicolaskruchten/pivottable/pull/401"
+- "https://nodesecurity.io/advisories/139"
+credit: "Todd Wolfson"
+uuid: "30e55807-aed7-4330-b269-58d7ad331c03"

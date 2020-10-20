@@ -1,0 +1,16 @@
+---
+identifier: "GMS-2011-1"
+package_slug: "pypi/plumi.app"
+title: "Privilege Escalation"
+description: "This package is vulnerable to Privilege Escalation. See "
+date: "2011-06-22"
+pubdate: "2011-06-22"
+affected_range: "<4.2.2"
+fixed_versions:
+- "4.2.2"
+affected_versions: "All versions before 4.2.2"
+solution: "Upgrade to latest version."
+urls:
+- "https://github.com/plumi/plumi.app/commit/693d7aa55b8f5fb332de62b5f24b0c10e3b1fa4c"
+credit: "Dimitris Moraitis"
+uuid: "d1b0029f-a88f-4eb0-a933-725710790de1"

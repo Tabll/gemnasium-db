@@ -1,0 +1,16 @@
+---
+identifier: "OSVDB-112683"
+package_slug: "gem/as"
+title: "Allow a local attacker to gain access to credential information"
+description: "As Gem for Ruby contains a flaw that is due to the program displaying
+  credential information in plaintext in the process list. This may allow a local
+  attacker to gain access to credential information."
+date: "2014-09-25"
+pubdate: "2014-09-25"
+affected_range: ">0"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "Don't use this package."
+urls:
+- "https://github.com/rubysec/ruby-advisory-db/blob/master/gems/as/OSVDB-112683.yml"
+uuid: "9fdfc5aa-18b4-469d-976d-3e7758af49c3"

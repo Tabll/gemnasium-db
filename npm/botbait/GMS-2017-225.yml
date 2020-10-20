@@ -1,0 +1,17 @@
+---
+identifier: "GMS-2017-225"
+package_slug: "npm/botbait"
+title: "Tracking Module"
+description: "`botbait` is known to record and track user information. The module
+  tracks the following information: * Source IP * process.versions * process.platform
+  * How the module was invoked (test, require, pre-install)"
+date: "2017-09-26"
+pubdate: "2017-09-26"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://nodesecurity.io/advisories/483"
+credit: "Adam Baldwin"
+uuid: "8925b385-6223-4669-bd3e-bb880e777c06"

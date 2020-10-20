@@ -1,0 +1,20 @@
+---
+identifier: "GMS-2017-136"
+package_slug: "npm/hubl-server"
+title: "Downloads resources over HTTP"
+description: "During installation hubl-server downloads a set of dependencies from
+  api.hubapi.com. It appears in the code that these files are downloaded over HTTPS
+  however the api.hubapi.com endpoint redirects to a HTTP url. Because of this behavior
+  an attacker with the ability to man-in-the-middle a developer or system performing
+  a package installation could compromise the integrity of the installation."
+date: "2017-06-05"
+pubdate: "2017-06-05"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment, so this is recommended
+  to use a different module."
+urls:
+- "https://nodesecurity.io/advisories/334"
+credit: "Adam Baldwin"
+uuid: "676994be-e01e-40c6-b90f-8e3f380c5744"

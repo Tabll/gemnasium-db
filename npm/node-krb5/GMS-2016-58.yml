@@ -1,0 +1,21 @@
+---
+identifier: "GMS-2016-58"
+package_slug: "npm/node-krb5"
+title: "Spoofing attack due to unvalidated KDC"
+description: "This module does not validate the KDC, which might allow an attacker
+  with network access and enough time to spoof the KDC and impersonate a valid user
+  without knowing their credentials."
+date: "2016-08-04"
+pubdate: "2016-08-04"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "Consider using the \"kerberos\" npm module, which has this protection in
+  place, or short of that, ensure there are no untrusted users on your network."
+urls:
+- "http://archive.hack.lu/2010/Bouillon-Stealing-credentials-for-impersonation.pdf"
+- "https://github.com/qesuto/node-krb5/issues/13"
+- "https://nodesecurity.io/advisories/136"
+- "https://www.npmjs.com/package/kerberos"
+credit: "Richard Silverman"
+uuid: "27907061-c288-4c2a-8580-70b00d0691eb"

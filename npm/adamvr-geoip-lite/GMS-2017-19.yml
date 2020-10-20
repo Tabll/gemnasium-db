@@ -1,0 +1,17 @@
+---
+identifier: "GMS-2017-19"
+package_slug: "npm/adamvr-geoip-lite"
+title: "Downloads Resources over HTTP"
+description: "adamvr-geoip-lite downloads geoip resources over HTTP, which leaves
+  it vulnerable to MITM attacks. This impacts the integrity and availability of this
+  geoip data that may alter the decisions made by an application using this data."
+date: "2017-01-01"
+pubdate: "2017-01-01"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://nodesecurity.io/advisories/283"
+credit: "Adam Baldwin"
+uuid: "35598d87-7362-4a84-a504-58f91a927d5d"

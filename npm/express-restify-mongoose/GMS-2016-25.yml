@@ -1,0 +1,22 @@
+---
+identifier: "GMS-2016-25"
+package_slug: "npm/express-restify-mongoose"
+title: "Private Data Disclosure"
+description: "A malicious user could go to your application and send a request for
+  `GET /User?distinct=password` and get all the passwords for all the users in the
+  database, despite the field being set to private. This could also be used for other
+  private data if the malicious user knew what was set as private for specific routes. "
+date: "2016-04-19"
+pubdate: "2016-04-19"
+affected_range: ">=3.0.0a <=3.0.1 || <= 2.4.2"
+fixed_versions:
+- "2.5.0"
+- "3.1.0"
+affected_versions: "All versions starting from 3.0.0a up to 3.0.1, all versions up
+  to 2.4.2"
+solution: "Update to at least version 3.1.0 or 2.5.0"
+urls:
+- "https://github.com/florianholzapfel/express-restify-mongoose/issues/252"
+- "https://nodesecurity.io/advisories/92"
+credit: "Stefan Mirea"
+uuid: "04c4e9db-9ff1-49b9-bcf3-d7e60887198a"

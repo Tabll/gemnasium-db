@@ -1,0 +1,20 @@
+---
+identifier: "GMS-2012-3"
+package_slug: "pypi/requests"
+title: "Denial of Service"
+description: "When using digest authentication with a wrong password, `requests` will
+  retry the request for infinity. This makes the package vulnerable to Denial of Service
+  (DoS)."
+date: "2012-04-07"
+pubdate: "2012-04-07"
+affected_range: "<0.12.0"
+fixed_versions:
+- "0.12.0"
+affected_versions: "All versions before 0.12.0"
+solution: "Upgrade to 0.12 or higher."
+urls:
+- "https://github.com/requests/requests/issues/541"
+- "https://github.com/requests/requests/pull/547"
+- "https://github.com/requests/requests/pull/547/commits/c3e6c41fc164d4348f8ce197bd0075aff05637af"
+credit: "Mads Holden"
+uuid: "910856d8-23de-4b85-bd7a-406ce2805b8e"

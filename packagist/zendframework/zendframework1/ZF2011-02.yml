@@ -1,0 +1,20 @@
+# This advisory is derived from
+# https://github.com/FriendsOfPHP/security-advisories
+---
+identifier: "ZF2011-02"
+package_slug: "packagist/zendframework/zendframework1"
+title: "SQL Injection"
+description: "Potential SQL Injection Vector When Using `PDO_MySql`."
+date: "2011-05-03"
+pubdate: "2011-05-03"
+affected_range: ">=1.10.0,<1.10.9||>=1.11.0,<1.11.6"
+fixed_versions:
+- "1.12.0"
+affected_versions: "All versions starting from 1.10.0 before 1.10.9, all versions
+  starting from 1.11.0 before 1.11.6"
+not_impacted: "All versions before 1.10.0, all versions starting from 1.10.9 before
+  1.11.0, all versions starting from 1.11.6"
+solution: "Upgrade to version 1.12.0 or above."
+urls:
+- "https://framework.zend.com/security/advisory/ZF2011-02"
+uuid: "4ebe7b94-8b3f-4395-98a3-c6cebf0bc8a6"

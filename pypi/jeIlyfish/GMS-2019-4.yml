@@ -1,0 +1,14 @@
+---
+identifier: "GMS-2019-4"
+package_slug: "pypi/jeIlyfish"
+title: "Malicious Package (Typosquatting)"
+description: "This is a malicious package which tries to steal SSH and GPG keys."
+date: "2019-12-04"
+pubdate: "2019-12-04"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "Replace this package with jellyfish."
+urls:
+- "https://www.zdnet.com/article/two-malicious-python-libraries-removed-from-pypi/"
+uuid: "c0406021-c319-4447-8b6d-0b6380c56789"

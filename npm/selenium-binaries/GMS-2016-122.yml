@@ -1,0 +1,20 @@
+---
+identifier: "GMS-2016-122"
+package_slug: "npm/selenium-binaries"
+title: "Downloads Resources over HTTP"
+description: "selenium-binaries downloads binary resources over HTTP, which leaves
+  it vulnerable to MITM attacks. It may be possible to cause remote code execution
+  (RCE) by swapping out the requested binary with an attacker controlled binary if
+  the attacker is on the network or positioned in between the user and the remote
+  server."
+date: "2016-12-18"
+pubdate: "2016-12-18"
+affected_range: ">=0.0.0"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "No fix is currently available for this vulnerability. It's recommended
+  to not install nor use this module."
+urls:
+- "https://nodesecurity.io/advisories/175"
+credit: "Adam Baldwin"
+uuid: "46ef79ae-8263-4b77-bfc5-02e00afadc3a"

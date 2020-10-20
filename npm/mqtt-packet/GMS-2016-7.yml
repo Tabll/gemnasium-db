@@ -1,0 +1,21 @@
+---
+identifier: "GMS-2016-7"
+package_slug: "npm/mqtt-packet"
+title: "Denial of Service"
+description: "Specifically crafted MQTT packets can crash the application, making
+  a DoS attack feasible with very little bandwidth."
+date: "2016-01-15"
+pubdate: "2016-01-15"
+affected_range: "<3.4.6 || >=4.0.0 <4.0.5"
+fixed_versions:
+- "3.4.6"
+- "4.0.5"
+affected_versions: "All versions before 3.4.6, all versions starting from 4.0.0 before
+  4.0.5"
+solution: "Update to version 3.4.6 or 4.0.5 or greater to fix the problem."
+urls:
+- "https://github.com/mcollina/mosca/issues/393"
+- "https://github.com/mqttjs/mqtt-packet/pull/8"
+- "https://nodesecurity.io/advisories/75"
+credit: "Peter Sorowka"
+uuid: "25798734-b115-4401-9784-6992003165c0"

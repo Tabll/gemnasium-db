@@ -1,0 +1,18 @@
+# This advisory is derived from
+# https://github.com/FriendsOfPHP/security-advisories
+---
+identifier: "2015-04-02"
+package_slug: "packagist/firebase/php-jwt"
+title: "Improper Access Control"
+description: "Critical vulnerabilities in JSON Web Token libraries."
+date: "2015-04-01"
+pubdate: "2015-04-01"
+affected_range: "<2.0.0"
+fixed_versions:
+- "2.0.0"
+affected_versions: "All versions before 2.0.0"
+not_impacted: "All versions starting from 2.0.0"
+solution: "Upgrade to version 2.0.0 or above."
+urls:
+- "https://auth0.com/blog/2015/03/31/critical-vulnerabilities-in-json-web-token-libraries/"
+uuid: "a9e890a9-b528-4f83-a4c4-1d9d8883a3d4"

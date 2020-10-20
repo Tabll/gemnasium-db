@@ -1,0 +1,18 @@
+# This advisory is derived from
+# https://github.com/FriendsOfPHP/security-advisories
+---
+identifier: "2016-10-31"
+package_slug: "packagist/gregwar/rst"
+title: "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')"
+description: "Local File Inclusion Vulnerability in rst."
+date: "2016-10-31"
+pubdate: "2016-10-31"
+affected_range: "<1.0.3"
+fixed_versions:
+- "1.0.3"
+affected_versions: "All versions before 1.0.3"
+not_impacted: "All versions starting from 1.0.3"
+solution: "Upgrade to version 1.0.3 or above."
+urls:
+- "https://hackerone.com/reports/179034"
+uuid: "cb2ff358-931b-4ea9-926f-921a914f1d59"

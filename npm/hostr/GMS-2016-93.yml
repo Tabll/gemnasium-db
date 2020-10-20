@@ -1,0 +1,20 @@
+---
+identifier: "GMS-2016-93"
+package_slug: "npm/hostr"
+title: "Directory Traversal"
+description: "There is a directory traversal vulnerability that allows an attacker
+  to read files outside the current directory by sending `../` in the url path for
+  GET requests."
+date: "2016-12-11"
+pubdate: "2016-12-11"
+affected_range: "<=2.3.5"
+fixed_versions:
+- "2.3.6"
+affected_versions: "All versions up to 2.3.5"
+solution: "Upgrade to v2.3.6 or later."
+urls:
+- "https://github.com/henrytseng/hostr/commit/789a00047459fd80b6f0a9701a1378a47fb73ba8"
+- "https://github.com/henrytseng/hostr/issues/8"
+- "https://nodesecurity.io/advisories/303"
+credit: "Liang Gong"
+uuid: "eb4bf60c-5335-4cb4-8a7b-76bd30491a93"

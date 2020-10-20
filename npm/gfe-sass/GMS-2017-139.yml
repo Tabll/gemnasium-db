@@ -1,0 +1,18 @@
+---
+identifier: "GMS-2017-139"
+package_slug: "npm/gfe-sass"
+title: "Downloads Resources over HTTP"
+description: "gfe-sass downloads resources over HTTP, which leaves it vulnerable to
+  MITM attacks. It may be possible to cause remote code execution (RCE) by swapping
+  out the requested resources with an attacker controlled copy if the attacker is
+  on the network or positioned in between the user and the remote server."
+date: "2017-07-05"
+pubdate: "2017-07-05"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://nodesecurity.io/advisories/291"
+credit: "Adam Baldwin"
+uuid: "06724179-fff9-4aac-9e2d-bd9d5e62cf2a"

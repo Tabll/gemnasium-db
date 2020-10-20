@@ -1,0 +1,15 @@
+---
+identifier: "GMS-2017-223"
+package_slug: "npm/npm-script-demo"
+title: "Malicious Module"
+description: "The module `npm-script-demo` opened a connection to a command and control
+  server. It has been removed from the npm registry."
+date: "2017-09-26"
+pubdate: "2017-09-26"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://nodesecurity.io/advisories/481"
+uuid: "a53721ed-cd50-43fb-9d84-45642bfca67b"

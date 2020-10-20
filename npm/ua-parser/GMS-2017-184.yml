@@ -1,0 +1,16 @@
+---
+identifier: "GMS-2017-184"
+package_slug: "npm/ua-parser"
+title: "ReDoS via long UserAgent header"
+description: "ua-parser is vulnerable to a ReDoS (Regular Expression Denial of Service)
+  attack when given a specially crafted UserAgent header."
+date: "2017-08-29"
+pubdate: "2017-08-29"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "Use an alternative parser, such as useragent."
+urls:
+- "https://nodesecurity.io/advisories/316"
+credit: "Adam Baldwin"
+uuid: "75e9fde4-c839-420f-8f6c-4dcd61ac8079"

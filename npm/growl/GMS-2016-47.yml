@@ -1,0 +1,19 @@
+---
+identifier: "GMS-2016-47"
+package_slug: "npm/growl"
+title: "Command Injection"
+description: "Growl does not properly sanitize input before passing it to exec, allowing
+  for arbitrary command execution."
+date: "2016-07-21"
+pubdate: "2016-07-21"
+affected_range: "<1.10.2"
+fixed_versions:
+- "1.10.2"
+affected_versions: "All versions before 1.10.2"
+solution: "Apply the pull request that fixes this issue; see provided link."
+urls:
+- "https://github.com/tj/node-growl/issues/60"
+- "https://github.com/tj/node-growl/pull/61"
+- "https://nodesecurity.io/advisories/146"
+credit: "Cristian-Alexandru Staicu"
+uuid: "15744a58-a432-48d2-a1f9-56442cad2a62"

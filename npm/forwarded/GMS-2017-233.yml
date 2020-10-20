@@ -1,0 +1,19 @@
+---
+identifier: "GMS-2017-233"
+package_slug: "npm/forwarded"
+title: "Regular Expression Denial of Service"
+description: "The forwarded module is vulnerable to a regular expression denial of
+  service when it's passed specially crafted input to parse. This causes the event
+  loop to be blocked causing a denial of service condition."
+date: "2017-09-26"
+pubdate: "2017-09-26"
+affected_range: "< 0.1.2"
+fixed_versions:
+- "0.1.2"
+affected_versions: "All versions before 0.1.2"
+solution: "Upgrade to latest version. If you are using this module via express, upgrade
+  to Express version 4.15.5 or greater.\r\n"
+urls:
+- "https://nodesecurity.io/advisories/527"
+credit: "Cristian-Alexandru Staicu"
+uuid: "c62164a3-b984-4a86-9390-3048ca3bf1b3"

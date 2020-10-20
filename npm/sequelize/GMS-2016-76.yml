@@ -1,0 +1,18 @@
+---
+identifier: "GMS-2016-76"
+package_slug: "npm/sequelize"
+title: "SQL Injection via LIMIT and ORDER"
+description: "If user input goes into the `limit` or `order` parameters, a malicious
+  user can put in their own SQL statements. "
+date: "2016-10-31"
+pubdate: "2016-10-31"
+affected_range: "<= 3.16.0"
+fixed_versions:
+- "3.17.0"
+affected_versions: "All versions up to 3.16.0"
+solution: "Upgrade sequelize to version 3.17.0 or greater"
+urls:
+- "https://github.com/sequelize/sequelize/pull/5167/commits/f282d85e60e3df5e57ecdb82adccb4eaef404f03"
+- "https://nodesecurity.io/advisories/112"
+credit: "Spencer Creasey"
+uuid: "30416f3d-5adb-4d20-b78b-498e520220b5"

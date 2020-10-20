@@ -1,0 +1,20 @@
+---
+identifier: "OSVDB-95376"
+package_slug: "gem/activerecord-oracle_enhanced-adapter"
+title: "ActiveRecord Gem :limit / :offset SQL Injection"
+description: "The issue is due to the program not properly sanitizing user-supplied
+  input related to the `:limit` and `:offset` functions. This may allow an attacker
+  to inject or manipulate SQL queries in the back-end database, allowing for the manipulation
+  or disclosure of arbitrary data."
+date: "2008-10-10"
+pubdate: "2008-10-10"
+affected_range: "<1.1.8"
+fixed_versions:
+- "1.1.8"
+affected_versions: "All versions before 1.1.8"
+solution: "Upgrade to latest version."
+urls:
+- "https://github.com/rsim/oracle-enhanced/commit/414b582d1afc4b2626ef7bf57e0987a00d433374"
+- "https://github.com/rubysec/ruby-advisory-db/blob/master/gems/activerecord-oracle_enhanced-adapter/OSVDB-95376.yml"
+credit: "Raimonds Simanovskis"
+uuid: "76502c86-e685-4bd7-a06d-a472d0b45bc3"

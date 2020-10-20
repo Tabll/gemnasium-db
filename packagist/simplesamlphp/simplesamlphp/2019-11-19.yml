@@ -1,0 +1,18 @@
+# This advisory is derived from
+# https://github.com/FriendsOfPHP/security-advisories
+---
+identifier: "2019-11-19"
+package_slug: "packagist/simplesamlphp/simplesamlphp"
+title: "Information Exposure"
+description: "Information disclosure in simplesamlphp."
+date: "2019-11-19"
+pubdate: "2019-11-19"
+affected_range: ">=1.17.0,<1.17.8"
+fixed_versions:
+- "1.17.8"
+affected_versions: "All versions starting from 1.17.0 before 1.17.8"
+not_impacted: "All versions before 1.17.0, all versions starting from 1.17.8"
+solution: "Upgrade to version 1.17.8 or above."
+urls:
+- "https://simplesamlphp.org/security/201911-02"
+uuid: "d40335f6-312c-497b-87df-3c6e714383de"

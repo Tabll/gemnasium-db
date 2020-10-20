@@ -1,0 +1,18 @@
+# This advisory is derived from
+# https://github.com/FriendsOfPHP/security-advisories
+---
+identifier: "ZF2018-01"
+package_slug: "packagist/zendframework/zend-feed"
+title: "URL Redirection to Untrusted Site ('Open Redirect')"
+description: "URL Rewrite vulnerability in `zend-feed`."
+date: "2018-06-11"
+pubdate: "2018-06-11"
+affected_range: ">=1.0.0,<2.10.3"
+fixed_versions:
+- "2.10.3"
+affected_versions: "All versions starting from 1.0.0 before 2.10.3"
+not_impacted: "All versions before 1.0.0, all versions starting from 2.10.3"
+solution: "Upgrade to version 2.10.3 or above."
+urls:
+- "https://framework.zend.com/security/advisory/ZF2018-01"
+uuid: "a7314f13-0fd3-4429-be98-4b8c8532835e"

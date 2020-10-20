@@ -1,0 +1,16 @@
+---
+identifier: "OSVDB-113418"
+package_slug: "pypi/IPy"
+title: "Incomplete List of Disallowed Inputs"
+description: "A flaw in the `iptype()` function is triggered when handling octal encoding.
+  This may allow a remote attacker to bypass the IP exclusion feature."
+date: "2014-10-16"
+pubdate: "2014-10-16"
+affected_range: ">=0.0a"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "http://www.agarri.fr/kom/archives/2014/10/15/bypassing_blacklists_based_on_ipy/index.html"
+- "http://www.osvdb.org/show/osvdb/113418"
+uuid: "c3950aa6-894d-46c8-8f37-20bf9f1ff57c"

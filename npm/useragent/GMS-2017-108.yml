@@ -1,0 +1,18 @@
+---
+identifier: "GMS-2017-108"
+package_slug: "npm/useragent"
+title: "ReDoS via long UserAgent header"
+description: "An attacker could edit their own headers, creating an arbitrarily long
+  useragent string, causing the event loop and server to block."
+date: "2017-02-06"
+pubdate: "2017-02-06"
+affected_range: "<2.1.12"
+fixed_versions:
+- "2.1.12"
+affected_versions: "All versions before 2.1.12"
+solution: "Upgrade to latest version."
+urls:
+- "https://github.com/3rd-Eden/useragent/commit/64b15c9446a24abd9f52ed4ceb970f1a5cf790dd"
+- "https://nodesecurity.io/advisories/312"
+credit: "Mathias Madsen, Matteo Collina"
+uuid: "e1dc8f97-2af2-4352-9e55-e8bde0fca917"

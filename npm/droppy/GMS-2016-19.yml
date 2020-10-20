@@ -1,0 +1,19 @@
+---
+identifier: "GMS-2016-19"
+package_slug: "npm/droppy"
+title: "No CSRF Validation"
+description: "Droppy does not perform any verification for cross-domain websocket
+  requests. An attacker is able to make a specially crafted page that can send requests
+  as the context of the currently logged in user. For example this means the malicious
+  user could add a new admin account under his control and delete others."
+date: "2016-03-28"
+pubdate: "2016-03-28"
+affected_range: "<3.5.0"
+fixed_versions:
+- "3.5.0"
+affected_versions: "All versions before 3.5.0"
+solution: "Upgrade to droppy version 3.5.0 or greater."
+urls:
+- "https://nodesecurity.io/advisories/91"
+credit: "Craig Arendt"
+uuid: "1b7f8277-e5b6-41b1-afad-b8a7789a1d5b"

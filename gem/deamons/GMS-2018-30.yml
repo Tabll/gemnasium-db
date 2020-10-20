@@ -1,0 +1,15 @@
+---
+identifier: "GMS-2018-30"
+package_slug: "gem/deamons"
+title: "Malicious package (Typosquatting)"
+description: "The daemons package loads and executes malicious scripts."
+date: "2018-06-19"
+pubdate: "2018-06-19"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Replace this package with daemons."
+urls:
+- "https://github.com/rubysec/ruby-advisory-db/issues/345"
+uuid: "12600bf3-23ed-42f4-8077-15f48feedf4f"

@@ -1,0 +1,19 @@
+---
+identifier: "GMS-2017-302"
+package_slug: "npm/jquey"
+title: "Exfiltrates data on installation"
+description: "The jquey module exfiltrates sensitive data such as a user's private
+  SSH key and bash history to a third party server during installation."
+date: "2017-10-06"
+pubdate: "2017-10-06"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "Do not install this module. It has been unpublished from the registry but
+  may exist in some caches. If you may have accidentally installed this package you
+  should cycle your SSH key and review your bash history for any sensitive data that
+  may have been leaked."
+urls:
+- "https://nodesecurity.io/advisories/544"
+credit: "Aurélio A. Heckert"
+uuid: "c61a930a-1cd1-4206-bf59-7971749a8b49"

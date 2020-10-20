@@ -1,0 +1,19 @@
+---
+identifier: "GMS-2017-332"
+package_slug: "npm/moment"
+title: "Regular Expression Denial of Service"
+description: "Moment is vulnerable to a low severity regular expression denial of
+  service vulnerability."
+date: "2017-11-27"
+pubdate: "2017-11-27"
+affected_range: "<2.19.3"
+fixed_versions:
+- "2.19.3"
+affected_versions: "All versions before 2.19.3"
+solution: "Update to version 2.19.3"
+urls:
+- "https://github.com/moment/moment/issues/4163"
+- "https://github.com/moment/moment/pull/4326"
+- "https://nodesecurity.io/advisories/532"
+credit: "Cristian-Alexandru Staicu"
+uuid: "a8a43b37-fc01-492c-b30b-996c906c5f84"

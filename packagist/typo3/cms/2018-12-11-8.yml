@@ -1,0 +1,21 @@
+# This advisory is derived from
+# https://github.com/FriendsOfPHP/security-advisories
+---
+identifier: "2018-12-11-8"
+package_slug: "packagist/typo3/cms"
+title: "Cross-site Scripting"
+description: "Cross-Site Scripting in CKEditor."
+date: "2018-12-11"
+pubdate: "2018-12-11"
+affected_range: ">=8.0.0,<8.7.21||>=9.0.0,<9.5.2"
+fixed_versions:
+- "8.7.21"
+- "9.5.2"
+affected_versions: "All versions starting from 8.0.0 before 8.7.21, all versions starting
+  from 9.0.0 before 9.5.2"
+not_impacted: "All versions before 8.0.0, all versions starting from 8.7.21 before
+  9.0.0, all versions starting from 9.5.2"
+solution: "Upgrade to versions 8.7.21, 9.5.2 or above."
+urls:
+- "https://typo3.org/security/advisory/typo3-core-sa-2018-005/"
+uuid: "82873014-63af-46f1-83b7-4e633797e95f"

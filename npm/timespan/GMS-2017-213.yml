@@ -1,0 +1,18 @@
+---
+identifier: "GMS-2017-213"
+package_slug: "npm/timespan"
+title: "Regular Expression Denial of Service"
+description: "The timespan module is vulnerable to regular expression denial of service.
+  Given 50k characters of untrusted user input it will block the event loop for around
+  10 seconds."
+date: "2017-09-25"
+pubdate: "2017-09-25"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://github.com/indexzero/TimeSpan.js/issues/10"
+- "https://nodesecurity.io/advisories/533"
+credit: "Cristian-Alexandru Staicu"
+uuid: "1bf4cce3-8a03-40c0-ba6a-bbb0ac259d8c"

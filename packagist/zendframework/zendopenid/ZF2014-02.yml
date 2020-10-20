@@ -1,0 +1,19 @@
+# This advisory is derived from
+# https://github.com/FriendsOfPHP/security-advisories
+---
+identifier: "ZF2014-02"
+package_slug: "packagist/zendframework/zendopenid"
+title: "Improper Authentication"
+description: "Potential security issue in login mechanism of ZendOpenId and Zend_OpenId
+  consumer."
+date: "2014-02-17"
+pubdate: "2014-02-17"
+affected_range: ">=2.0.0,<2.0.2"
+fixed_versions:
+- "2.0.2"
+affected_versions: "All versions starting from 2.0.0 before 2.0.2"
+not_impacted: "All versions before 2.0.0, all versions starting from 2.0.2"
+solution: "Upgrade to version 2.0.2 or above."
+urls:
+- "https://framework.zend.com/security/advisory/ZF2014-02"
+uuid: "cea07a52-5846-41f8-8702-611625e5643f"

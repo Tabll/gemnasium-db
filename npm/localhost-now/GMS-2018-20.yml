@@ -1,0 +1,18 @@
+---
+identifier: "GMS-2018-20"
+package_slug: "npm/localhost-now"
+title: "Path Traversal"
+description: "localhost-now suffers from a path traversal vulnerability. It allows
+  reading the content of arbitrary files on the remote server."
+date: "2018-02-26"
+pubdate: "2018-02-26"
+affected_range: "<1.0.2"
+fixed_versions:
+- "1.0.2"
+affected_versions: "All versions before 1.0.2"
+solution: "Upgrade to latest version."
+urls:
+- "https://github.com/DCKT/localhost-now/commit/30b004c7f145d677df8800a106c2edc982313995"
+- "https://hackerone.com/reports/312889"
+credit: "bl4de"
+uuid: "86879474-c3ee-4bfa-a79d-81ba0803835e"

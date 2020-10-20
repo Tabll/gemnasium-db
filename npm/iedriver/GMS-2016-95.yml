@@ -1,0 +1,19 @@
+---
+identifier: "GMS-2016-95"
+package_slug: "npm/iedriver"
+title: "Downloads Resources over HTTP"
+description: "iedriver downloads binary resources over HTTP, which leaves the module
+  vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE)
+  by swapping out the requested binary with an attacker controlled binary if the attacker
+  is on the network or positioned in between the user and the remote server."
+date: "2016-12-16"
+pubdate: "2016-12-16"
+affected_range: "<3.0.0"
+fixed_versions:
+- "3.0.0"
+affected_versions: "All versions before 3.0.0"
+solution: "Update to version 3.0.0 or greater."
+urls:
+- "https://nodesecurity.io/advisories/174"
+credit: "Adam Baldwin"
+uuid: "faf0d9b7-9035-4905-abf6-82004f9c7615"

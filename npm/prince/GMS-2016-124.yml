@@ -1,0 +1,20 @@
+---
+identifier: "GMS-2016-124"
+package_slug: "npm/prince"
+title: "Downloads Resources over HTTP"
+description: "prince downloads zipped resources over HTTP, which leaves it vulnerable
+  to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping
+  out the requested tarball with an attacker controlled tarball if the attacker is
+  on the network or positioned in between the user and the remote server."
+date: "2016-12-21"
+pubdate: "2016-12-21"
+affected_range: "<1.4.5"
+fixed_versions:
+- "1.4.5"
+affected_versions: "All versions before 1.4.5"
+solution: "Upgrade to 1.4.5"
+urls:
+- "https://github.com/rse/node-prince/commit/c7e355bd3d3e4bc060f102c5264e838f379aa8a8"
+- "https://nodesecurity.io/advisories/185"
+credit: "Adam Baldwin"
+uuid: "1a0ca979-63cb-4e09-8666-5dfa16e56ced"

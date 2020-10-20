@@ -1,0 +1,17 @@
+---
+identifier: "GMS-2017-311"
+package_slug: "npm/jn_jj_server"
+title: "Directory Traversal"
+description: "`jn_jj_server` is vulnerable to a directory traversal issue, giving
+  an attacker access to the filesystem by placing \"../\" in the url./n"
+date: "2017-10-09"
+pubdate: "2017-10-09"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/jn_jj_server"
+- "https://nodesecurity.io/advisories/424"
+credit: "Liang Gong"
+uuid: "c3a7c11e-899f-4100-b10f-db88b22a34ba"

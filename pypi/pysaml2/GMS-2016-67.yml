@@ -1,0 +1,19 @@
+---
+identifier: "GMS-2016-67"
+package_slug: "pypi/pysaml2"
+title: "XEE vulnerability"
+description: "PySAML2 is vulnerable to XML External Entity attacks (XEE attacks) via
+  SAML XML requests."
+date: "2016-10-06"
+pubdate: "2016-10-06"
+affected_range: ">=0.0.0"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment. Please note
+  that https://github.com/rohe/pysaml2/pull/379 is incomplete in its attempt to fix
+  the issue."
+urls:
+- "https://github.com/rohe/pysaml2/issues/366"
+- "https://www.owasp.org/index.php/XML_External_Entity_(XXE)_Processing"
+credit: "Matias P. Brutti"
+uuid: "ff1ba63a-199f-44a2-9dbb-6fe07fc6a288"

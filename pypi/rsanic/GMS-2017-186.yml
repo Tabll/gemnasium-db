@@ -1,0 +1,19 @@
+---
+identifier: "GMS-2017-186"
+package_slug: "pypi/rsanic"
+title: "Cross-site Scripting"
+description: "This package is vulnerable to Cross-site Scripting (XSS) attacks. The
+  autoescape option was set to False in the jinja configuration, allowing attackers
+  to use inject content into user input."
+date: "2017-08-29"
+pubdate: "2017-08-29"
+affected_range: "<0.2.2"
+fixed_versions:
+- "0.3.0"
+affected_versions: "All versions before 0.2.2"
+solution: "Upgrade to fixed version"
+urls:
+- "https://github.com/reformo/rsanic/blob/master/ChangeLog.rst#new-in-version-022"
+- "https://github.com/reformo/rsanic/commit/6791cb09c322e1ff6e7b471a3bd2219a44e25801"
+credit: "Mehmet Korkmaz"
+uuid: "46c030f4-8364-4624-abab-816b3c81d31e"

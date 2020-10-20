@@ -1,0 +1,18 @@
+# This advisory is derived from
+# https://github.com/FriendsOfPHP/security-advisories
+---
+identifier: "2019-06-25-7"
+package_slug: "packagist/typo3/cms"
+title: "Improper Access Control"
+description: "Broken Access Control in Import Module."
+date: "2019-06-25"
+pubdate: "2019-06-25"
+affected_range: ">=9.0.0,<9.5.8"
+fixed_versions:
+- "9.5.8"
+affected_versions: "All versions starting from 9.0.0 before 9.5.8"
+not_impacted: "All versions before 9.0.0, all versions starting from 9.5.8"
+solution: "Upgrade to version 9.5.8 or above."
+urls:
+- "https://typo3.org/security/advisory/typo3-core-sa-2019-017/"
+uuid: "dac5b8e0-852e-48df-bc0d-d4c1bbc45c71"

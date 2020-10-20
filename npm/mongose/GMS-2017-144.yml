@@ -1,0 +1,16 @@
+---
+identifier: "GMS-2017-144"
+package_slug: "npm/mongose"
+title: "Hijacked Environment Variables"
+description: "`mongose` was a malicious module published with the intent to hijack
+  environment variables. It has been unpublished by npm."
+date: "2017-08-08"
+pubdate: "2017-08-08"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "If you have found this installed in your environment you should invalidate
+  and regenerate any authentication tokens found in your environment variables."
+urls:
+- "https://nodesecurity.io/advisories/516"
+uuid: "35d1b7fa-68e3-46f1-890a-80cd67b3da66"

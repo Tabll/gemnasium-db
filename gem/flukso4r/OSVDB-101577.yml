@@ -1,0 +1,16 @@
+---
+identifier: "OSVDB-101577"
+package_slug: "gem/flukso4r"
+title: "Arbitrary Command Execution"
+description: "The package flukso4r contains a flaw in `/lib/flukso/R.rb` that is due
+  to the application failing to properly validate user-supplied input. This may allow
+  a context-dependent attacker to execute arbitrary commands."
+date: "2013-12-31"
+pubdate: "2013-12-31"
+affected_range: ">0.0.0"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "We are not aware of a solution at the moment."
+urls:
+- "http://osvdb.org/show/osvdb/101577"
+uuid: "34ea8922-f51a-454d-972f-909b811b4ad6"

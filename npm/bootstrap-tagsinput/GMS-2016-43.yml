@@ -1,0 +1,18 @@
+---
+identifier: "GMS-2016-43"
+package_slug: "npm/bootstrap-tagsinput"
+title: "XSS in itemTitle parameter"
+description: "Contains a cross site scripting vulnerability (XSS) via the `itemTitle`
+  parameter. By supplying a malicious value for this parameter, it is possible to
+  execute arbitrary code."
+date: "2016-07-20"
+pubdate: "2016-07-20"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://github.com/bootstrap-tagsinput/bootstrap-tagsinput/issues/501"
+- "https://nodesecurity.io/advisories/124"
+credit: "Alex Wong"
+uuid: "fec31a4f-4a2b-4fd1-aa26-34c03a349446"

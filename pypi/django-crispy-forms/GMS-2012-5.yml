@@ -1,0 +1,18 @@
+---
+identifier: "GMS-2012-5"
+package_slug: "pypi/django-crispy-forms"
+title: "Information Exposure"
+description: "This package is vulnerable to Information Exposure between requests
+  in multithreaded WSGI servers."
+date: "2012-05-23"
+pubdate: "2012-05-23"
+affected_range: "<1.1.4"
+fixed_versions:
+- "1.1.4"
+affected_versions: "All versions before 1.1.4"
+solution: "Upgrade to latest version."
+urls:
+- "https://github.com/django-crispy-forms/django-crispy-forms/blob/dev/CHANGELOG.md#114-2012524"
+- "https://github.com/django-crispy-forms/django-crispy-forms/commit/51531004c5a035f20769266a9181e8cd44ed4a5e"
+credit: "Paul Oswald"
+uuid: "88a9e229-5b95-403d-a12e-e60e9ad23ee2"

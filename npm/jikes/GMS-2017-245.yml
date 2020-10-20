@@ -1,0 +1,18 @@
+---
+identifier: "GMS-2017-245"
+package_slug: "npm/jikes"
+title: "Directory Traversal"
+description: "`jikes` is vulnerable to a directory traversal issue, giving an attacker
+  access to the filesystem by placing \"../\" in the url. Accessible files are restricted
+  to files with `.htm` and `.js` extensions. /n"
+date: "2017-09-27"
+pubdate: "2017-09-27"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/jikes"
+- "https://nodesecurity.io/advisories/476"
+credit: "Liang Gong"
+uuid: "ddcfd014-7175-4452-8053-e0b496252711"

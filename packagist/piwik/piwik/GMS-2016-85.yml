@@ -1,0 +1,22 @@
+---
+identifier: "GMS-2016-85"
+package_slug: "packagist/piwik/piwik"
+title: "PHP Object Injection Vulnerability"
+description: "There's a PHP Object Injection vulnerability that can be triggered through
+  the `saveLayout()` method defined into the `/plugins/Dashboard/Controller.php` script.
+  Since Piwik is not using \"utf8mb4\" collations for its database, this can be exploited
+  in combination with a MySQL UTF8 truncation issue in order to corrupt the session
+  array, allowing unauthenticated attackers to inject arbitrary PHP objects into the
+  application scope and carry out Server-Side Request Forgery (SSRF) attacks, delete
+  arbitrary files, execute arbitrary PHP code, and possibly other attacks. "
+date: "2016-11-10"
+pubdate: "2016-11-10"
+affected_range: "<2.16.1-stable"
+fixed_versions:
+- "2.16.1"
+affected_versions: "All versions before 2.16.1"
+solution: "Upgrade to latest version."
+urls:
+- "http://karmainsecurity.com/KIS-2016-13"
+credit: "Egidio Romano"
+uuid: "2738e525-06a8-4bb9-b963-53ae17816bc5"

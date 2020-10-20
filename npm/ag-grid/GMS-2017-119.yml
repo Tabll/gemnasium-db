@@ -1,0 +1,18 @@
+---
+identifier: "GMS-2017-119"
+package_slug: "npm/ag-grid"
+title: "XSS via Angular Expression"
+description: "ag-grid is vulnerable to Cross-site Scripting (XSS) via Angular Expressions,
+  if AngularJS is used in combination with ag-grid."
+date: "2017-03-15"
+pubdate: "2017-03-15"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://github.com/ceolter/ag-grid/issues/1287"
+- "https://nodesecurity.io/advisories/327"
+- "https://spring.io/blog/2016/01/28/angularjs-escaping-the-expression-sandbox-for-xss"
+credit: "Gabrielle Bourdages"
+uuid: "d91474c2-0719-4058-b5ea-85c112b442b7"

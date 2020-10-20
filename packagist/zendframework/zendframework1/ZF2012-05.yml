@@ -1,0 +1,21 @@
+# This advisory is derived from
+# https://github.com/FriendsOfPHP/security-advisories
+---
+identifier: "ZF2012-05"
+package_slug: "packagist/zendframework/zendframework1"
+title: "Improper Restriction of XML External Entity Reference"
+description: "Potential XML eXternal Entity injection vectors in Zend Framework 1
+  `Zend_Feed` component."
+date: "2012-12-18"
+pubdate: "2012-12-18"
+affected_range: ">=1.11.0,<1.11.15||>=1.12.0,<1.12.1"
+fixed_versions:
+- "1.12.1"
+affected_versions: "All versions starting from 1.11.0 before 1.11.15, all versions
+  starting from 1.12.0 before 1.12.1"
+not_impacted: "All versions before 1.11.0, all versions starting from 1.11.15 before
+  1.12.0, all versions starting from 1.12.1"
+solution: "Upgrade to version 1.12.1 or above."
+urls:
+- "https://framework.zend.com/security/advisory/ZF2012-05"
+uuid: "863f6f88-9c5b-4158-bef2-0c131d1d0189"

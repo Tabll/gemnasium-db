@@ -1,0 +1,18 @@
+# This advisory is derived from
+# https://github.com/FriendsOfPHP/security-advisories
+---
+identifier: "2018-10-18-1"
+package_slug: "packagist/typo3/phar-stream-wrapper"
+title: "Insecure Deserialization"
+description: "By-passing Protection of `PharStreamWrapper` Interceptor."
+date: "2018-10-18"
+pubdate: "2018-10-18"
+affected_range: ">=1.0.0,<3.0.1"
+fixed_versions:
+- "3.0.1"
+affected_versions: "All versions starting from 1.0.0 before 3.0.1"
+not_impacted: "All versions before 1.0.0, all versions starting from 3.0.1"
+solution: "Upgrade to version 3.0.1 or above."
+urls:
+- "https://typo3.org/security/advisory/typo3-psa-2018-001/"
+uuid: "725fbbc6-d869-4636-bddf-19b86d506c48"

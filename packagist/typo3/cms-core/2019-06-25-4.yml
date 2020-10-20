@@ -1,0 +1,21 @@
+# This advisory is derived from
+# https://github.com/FriendsOfPHP/security-advisories
+---
+identifier: "2019-06-25-4"
+package_slug: "packagist/typo3/cms-core"
+title: "Code Injection"
+description: "Arbitrary Code Execution and Cross-Site Scripting in Backend API."
+date: "2019-06-25"
+pubdate: "2019-06-25"
+affected_range: ">=8.0.0,<8.7.27||>=9.0.0,<9.5.8"
+fixed_versions:
+- "8.7.27"
+- "9.5.8"
+affected_versions: "All versions starting from 8.0.0 before 8.7.27, all versions starting
+  from 9.0.0 before 9.5.8"
+not_impacted: "All versions before 8.0.0, all versions starting from 8.7.27 before
+  9.0.0, all versions starting from 9.5.8"
+solution: "Upgrade to versions 8.7.27, 9.5.8 or above."
+urls:
+- "https://typo3.org/security/advisory/typo3-core-sa-2019-019/"
+uuid: "d571b8f8-e83b-43bb-8f02-09e659714300"

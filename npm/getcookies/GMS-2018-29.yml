@@ -1,0 +1,17 @@
+---
+identifier: "GMS-2018-29"
+package_slug: "npm/getcookies"
+title: "Contains Backdoor"
+description: "All versions of `getcookies` contain a malicious backdoor that allows
+  a remote attacker to execute code on the web server that uses this module."
+date: "2018-05-03"
+pubdate: "2018-05-03"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "This module should not be used and should be removed from any applications
+  that use it."
+urls:
+- "https://blog.npmjs.org/post/173526807575/reported-malicious-module-getcookies"
+- "https://nodesecurity.io/advisories/576"
+uuid: "067804d5-7091-4b2d-8244-43f505db947f"

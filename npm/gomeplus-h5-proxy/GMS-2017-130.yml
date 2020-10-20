@@ -1,0 +1,18 @@
+---
+identifier: "GMS-2017-130"
+package_slug: "npm/gomeplus-h5-proxy"
+title: "Directory Traversal"
+description: "gomeplus-h5-proxy is vulnerable to a directory traversal issue, allowing
+  attackers to access any file in the system by placing '../' in the URL."
+date: "2017-04-29"
+pubdate: "2017-04-29"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment, so it's recommended
+  to use a different module."
+urls:
+- "https://github.com/JacksonGL/NPM-Vuln-PoC/tree/master/directory-traversal/gomeplus-h5-proxy"
+- "https://nodesecurity.io/advisories/350"
+credit: "Liang Gong"
+uuid: "4f08fc15-01c8-4358-bc08-86b4aceb51cc"

@@ -1,0 +1,23 @@
+# This advisory is derived from
+# https://github.com/FriendsOfPHP/security-advisories
+---
+identifier: "2016-04-12-3"
+package_slug: "packagist/typo3/cms"
+title: "Improper Authentication"
+description: "Authentication Bypass in TYPO3 CMS."
+date: "2016-04-12"
+pubdate: "2016-04-12"
+affected_range: ">=6.2.0,<6.2.20||>=7.6.0,<7.6.5||>=8.0.0,<8.0.1"
+fixed_versions:
+- "6.2.20"
+- "7.6.5"
+- "8.0.1"
+affected_versions: "All versions starting from 6.2.0 before 6.2.20, all versions starting
+  from 7.6.0 before 7.6.5, all versions starting from 8.0.0 before 8.0.1"
+not_impacted: "All versions before 6.2.0, all versions starting from 6.2.20 before
+  7.6.0, all versions starting from 7.6.5 before 8.0.0, all versions starting from
+  8.0.1"
+solution: "Upgrade to versions 6.2.20, 7.6.5, 8.0.1 or above."
+urls:
+- "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2016-011/"
+uuid: "2ade5d2f-6ea7-4f12-a164-8dc32d56ab7c"

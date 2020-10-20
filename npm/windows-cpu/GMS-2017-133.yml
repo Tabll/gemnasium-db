@@ -1,0 +1,19 @@
+---
+identifier: "GMS-2017-133"
+package_slug: "npm/windows-cpu"
+title: "Command Execution"
+description: "The `findLoad` method passes a provided string directly to the shell,
+  allowing arbitrary command execution."
+date: "2017-05-19"
+pubdate: "2017-05-19"
+affected_range: ">=0.0.0alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "Avoid passing user input to the findLoad method. If you must, pass user
+  input through a sanitizer (such as a shell escaping tool) prior to passing it to
+  findLoad."
+urls:
+- "https://github.com/KyleRoss/windows-cpu/blob/master/index.js#L81"
+- "https://nodesecurity.io/advisories/336"
+credit: "Daniel Bond"
+uuid: "087558e7-5ccb-48d9-a20a-b070e1adbf16"

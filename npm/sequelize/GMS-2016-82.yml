@@ -1,0 +1,17 @@
+---
+identifier: "GMS-2016-82"
+package_slug: "npm/sequelize"
+title: "SQL Injection"
+description: "Sequelize defaults SQLite to use MySQL backslash escaping, even though
+  SQLite uses Postgres escaping. This leads to SQL injection."
+date: "2016-10-31"
+pubdate: "2016-10-31"
+affected_range: "<= 1.7.0-alpha2"
+fixed_versions:
+- "1.7.0-alpha3"
+affected_versions: "All versions up to 1.7.0-alpha2"
+solution: "Upgrade to at least version <=1.7.0-alpha3"
+urls:
+- "https://github.com/sequelize/sequelize/commit/c876192aa6ce1f67e22b26a4d175b8478615f42d"
+- "https://nodesecurity.io/advisories/113"
+uuid: "86658789-e6c3-4fcb-af93-1fa252042230"

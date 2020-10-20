@@ -1,0 +1,17 @@
+---
+identifier: "GMS-2017-228"
+package_slug: "npm/welcomyzt"
+title: "Directory Traversal"
+description: "`welcomyzt` is vulnerable to a directory traversal issue, giving an
+  attacker access to the filesystem by placing \"../\" in the URL."
+date: "2017-09-26"
+pubdate: "2017-09-26"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/pooledwebsocket"
+- "https://nodesecurity.io/advisories/388"
+credit: "Liang Gong"
+uuid: "c58f2305-4133-460c-9791-e3f0ec05aef2"

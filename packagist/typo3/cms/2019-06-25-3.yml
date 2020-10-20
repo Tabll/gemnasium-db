@@ -1,0 +1,21 @@
+# This advisory is derived from
+# https://github.com/FriendsOfPHP/security-advisories
+---
+identifier: "2019-06-25-3"
+package_slug: "packagist/typo3/cms"
+title: "Security Misconfiguration"
+description: "Security Misconfiguration in Frontend Session Handling."
+date: "2019-06-25"
+pubdate: "2019-06-25"
+affected_range: ">=8.0.0,<8.7.27||>=9.0.0,<9.5.8"
+fixed_versions:
+- "8.7.27"
+- "9.5.8"
+affected_versions: "All versions starting from 8.0.0 before 8.7.27, all versions starting
+  from 9.0.0 before 9.5.8"
+not_impacted: "All versions before 8.0.0, all versions starting from 8.7.27 before
+  9.0.0, all versions starting from 9.5.8"
+solution: "Upgrade to versions 8.7.27, 9.5.8 or above."
+urls:
+- "https://typo3.org/security/advisory/typo3-core-sa-2019-018/"
+uuid: "3c18324d-d293-40a2-8908-b87be959d3f6"

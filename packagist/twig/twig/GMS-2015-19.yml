@@ -1,0 +1,23 @@
+---
+identifier: "GMS-2015-19"
+package_slug: "packagist/twig/twig"
+title: "Remote Code Execution"
+description: "Your application is affected if you allow end users to submit Twig templates,
+  even if you protected this template with Twig's sandbox mode. End users can craft
+  valid Twig code that allows them to execute arbitrary code (RCEs) via the _self
+  variable, which is always available, even in sandboxed templates."
+date: "2015-08-12"
+pubdate: "2015-08-12"
+affected_range: "<1.20.0"
+fixed_versions:
+- "1.20.0"
+affected_versions: "All versions before 1.20.0"
+not_impacted: "1.20.0"
+urls:
+- "https://github.com/twigphp/Twig/commit/30be07759a3de2558da5224f127d052ecf492e8f"
+- "https://github.com/twigphp/Twig/pull/1759"
+- "https://symfony.com/blog/security-release-twig-1-20-0"
+credit: " James Kettle who was the first to report a RCE security issue, Alain Tiemblo,
+  Christophe\nCoevoet, and Fabien Potencier for finding more possible and dangerous
+  RCEs."
+uuid: "f97bda53-2b96-44b3-8057-6239d361d452"

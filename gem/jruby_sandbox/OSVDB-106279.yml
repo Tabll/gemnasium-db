@@ -1,0 +1,18 @@
+---
+identifier: "OSVDB-106279"
+package_slug: "gem/jruby_sandbox"
+title: "Security bypass using Java imports"
+description: "An attacker can Import Java classes to circumvent the security protections
+  and execute arbitrary code outside the sandboxed environment."
+date: "2014-04-25"
+pubdate: "2014-04-25"
+affected_range: "<=0.2.2"
+fixed_versions:
+- "0.2.3"
+affected_versions: "All versions up to 0.2.2"
+solution: "Upgrade to latest version."
+urls:
+- "http://packetstormsecurity.com/files/126317/JRuby-Sandbox-0.2.2-Bypass.html"
+- "http://seclists.org/fulldisclosure/2014/Apr/att-264/jruby-sandbox.txt"
+credit: "joernchen - Phenoelit\r\n"
+uuid: "9ea06338-835a-4037-bfb3-b62f21a290ad"

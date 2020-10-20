@@ -1,0 +1,18 @@
+# This advisory is derived from
+# https://github.com/FriendsOfPHP/security-advisories
+---
+identifier: "2015-05-07"
+package_slug: "packagist/cakephp/cakephp"
+title: "Cross-Site Request Forgery (CSRF)"
+description: "Incorrect CSRF validation in cakephp."
+date: "2015-05-07"
+pubdate: "2015-05-07"
+affected_range: ">=3.0.0,<3.0.4"
+fixed_versions:
+- "3.0.4"
+affected_versions: "All versions starting from 3.0.0 before 3.0.4"
+not_impacted: "All versions before 3.0.0, all versions starting from 3.0.4"
+solution: "Upgrade to version 3.0.4 or above."
+urls:
+- "https://bakery.cakephp.org/2015/05/07/cakephp_3_0_4_released.html"
+uuid: "30344577-0ded-420f-ae68-4685291ac133"

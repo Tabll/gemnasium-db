@@ -1,0 +1,21 @@
+# This advisory is derived from
+# https://github.com/FriendsOfPHP/security-advisories
+---
+identifier: "2015-11-23"
+package_slug: "packagist/typo3/flow"
+title: "Improper Restriction of XML External Entity Reference"
+description: "Arbitrary file upload and XML External Entity processing."
+date: "2015-11-23"
+pubdate: "2015-11-23"
+affected_range: ">=2.3.0,<2.3.7||>=3.0.0,<3.0.1"
+fixed_versions:
+- "2.3.7"
+- "3.0.1"
+affected_versions: "All versions starting from 2.3.0 before 2.3.7, all versions starting
+  from 3.0.0 before 3.0.1"
+not_impacted: "All versions before 2.3.0, all versions starting from 2.3.7 before
+  3.0.0, all versions starting from 3.0.1"
+solution: "Upgrade to versions 2.3.7, 3.0.1 or above."
+urls:
+- "https://www.neos.io/news/flow-sa-2015-001.html"
+uuid: "5070f590-ebee-403f-9c09-860b0fe64a2b"

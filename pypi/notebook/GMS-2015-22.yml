@@ -1,0 +1,20 @@
+---
+identifier: "GMS-2015-22"
+package_slug: "pypi/notebook"
+title: "XSS vulnerability"
+description: "If you create a new folder in the iPython file browser and set Javascript
+  code as its name the code injected will be executed. So, if I create a folder called
+  \"><img src=x onerror=alert(document.cookie)> and then I access to it, the cookies
+  will be prompted."
+date: "2015-08-18"
+pubdate: "2015-08-18"
+affected_range: "<4.0.5"
+fixed_versions:
+- "4.0.5"
+affected_versions: "All versions before 4.0.5"
+solution: "Upgrade to latest version."
+urls:
+- "https://github.com/jupyter/notebook/commit/35f32dd2da804d108a3a3585b69ec3295b2677ed"
+- "https://github.com/jupyter/notebook/commit/dd9876381f0ef09873d8c5f6f2063269172331e3"
+credit: "Juan Broullón"
+uuid: "52b92c2c-bbd2-4be9-aaf3-e14692cdfb1d"

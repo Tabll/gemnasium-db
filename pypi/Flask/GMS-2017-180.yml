@@ -1,0 +1,19 @@
+---
+identifier: "GMS-2017-180"
+package_slug: "pypi/Flask"
+title: "Arbitrary File Download"
+description: "This package is vulnerable to Arbitrary File Download. A client can
+  use backslashes to escape the directory the files where exposed from. Note: Only
+  if the host server is a windows-based operating system."
+date: "2017-08-28"
+pubdate: "2017-08-28"
+affected_range: "<0.6.1"
+fixed_versions:
+- "0.6.1"
+affected_versions: "All versions before 0.6.1"
+solution: "Armin Ronacher"
+urls:
+- "https://github.com/pallets/flask/blob/master/CHANGES"
+- "https://github.com/pallets/flask/commit/aeed530e3221c1b445c13269dcd2fb67548bcefc"
+credit: "Armin Ronacher"
+uuid: "c6611397-2367-4729-96b6-6ac97f295183"

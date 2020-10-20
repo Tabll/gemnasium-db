@@ -1,0 +1,17 @@
+---
+identifier: "GMS-2017-277"
+package_slug: "npm/whispercast"
+title: "Directory Traversal"
+description: "`whispercast` is vulnerable to a directory traversal issue, giving an
+  attacker access to the filesystem by placing \"../\" in the url./n"
+date: "2017-10-02"
+pubdate: "2017-10-02"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/whispercast"
+- "https://nodesecurity.io/advisories/466"
+credit: "Liang Gong"
+uuid: "982e630f-c161-4361-9759-52802aff9891"

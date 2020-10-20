@@ -1,0 +1,18 @@
+---
+identifier: "OSVDB-108593"
+package_slug: "gem/kompanee-recipes"
+title: "Command injection vulnerability"
+description: "The file /lib/kompanee-recipes/heroku.rb does not properly escape user
+  controlled input for the 'password', 'user', 'deploy_name', and 'application' variables.
+  A remote attacker, by passing shell metacharacters, may be able to execute arbitrary
+  commands."
+date: "2014-06-30"
+pubdate: "2014-06-30"
+affected_range: "=0.1.4"
+fixed_versions: []
+affected_versions: "Version 0.1.4"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "http://www.vapid.dhs.org/advisories/kompanee-recipes-0.1.4.html"
+credit: "Larry W. Cashdollar, @_larry0"
+uuid: "436d6d5c-6f52-4dd3-a402-990a1d621a26"

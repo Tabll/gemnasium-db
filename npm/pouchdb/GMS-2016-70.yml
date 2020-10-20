@@ -1,0 +1,20 @@
+---
+identifier: "GMS-2016-70"
+package_slug: "npm/pouchdb"
+title: "Arbitrary Code Injection"
+description: "An arbitrary code injection vector was found via the map/reduce functions
+  used in PouchDB temporary views and design documents. The code execution engine
+  is not properly sandboxed and may be used to run arbitrary JavaScript as well as
+  system commands."
+date: "2016-10-17"
+pubdate: "2016-10-17"
+affected_range: "<=6.0.4"
+fixed_versions:
+- "6.0.5"
+affected_versions: "All versions up to 6.0.4"
+solution: "Update to version 6.0.5 or later."
+urls:
+- "https://github.com/pouchdb/pouchdb/issues/5612"
+- "https://nodesecurity.io/advisories/143"
+credit: "micaksica"
+uuid: "efcb7466-6ba6-4b73-8dc2-43c0f6731d70"

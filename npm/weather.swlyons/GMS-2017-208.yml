@@ -1,0 +1,17 @@
+---
+identifier: "GMS-2017-208"
+package_slug: "npm/weather.swlyons"
+title: "Directory Traversal"
+description: "`weather.swlyons` is vulnerable to a directory traversal issue, giving
+  an attacker access to the filesystem by placing \"../\" in the URL."
+date: "2017-09-12"
+pubdate: "2017-09-12"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://github.com/JacksonGL/NPM-Vuln-PoC/tree/master/directory-traversal/weather.swlyons"
+- "https://nodesecurity.io/advisories/379"
+credit: "Liang Gong"
+uuid: "3b5ac5ab-91f7-4e35-affb-a38aa8994be2"

@@ -1,0 +1,18 @@
+---
+identifier: "GMS-2016-61"
+package_slug: "npm/c3"
+title: "XSS via tooltips"
+description: "c3 contain a cross site scripting (XSS) vulnerability through improper
+  html sanitization on rendered tooltips."
+date: "2016-08-26"
+pubdate: "2016-08-26"
+affected_range: "<0.4.11"
+fixed_versions:
+- "0.4.11"
+affected_versions: "All versions before 0.4.11"
+solution: "Upgrade to latest version."
+urls:
+- "https://github.com/c3js/c3/issues/1536"
+- "https://nodesecurity.io/advisories/138"
+credit: "Calvin K Cox"
+uuid: "e8af181e-e0bb-4fff-923e-f4c08177b017"

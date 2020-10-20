@@ -1,0 +1,19 @@
+---
+identifier: "OSVDB-117903"
+package_slug: "gem/ruby-saml"
+title: "Arbitrary code execution"
+description: "The gem contains a flaw that is triggered as the URI value of a SAML
+  response is not properly sanitized through a prepared statement. This may allow
+  a remote attacker to execute arbitrary shell commands on the host machine."
+date: "2015-02-03"
+pubdate: "2015-02-03"
+affected_range: "<0.8.2"
+fixed_versions:
+- "0.8.2"
+affected_versions: "All versions before 0.8.2"
+solution: "Upgrade to latest version."
+urls:
+- "http://www.osvdb.org/show/osvdb/117903"
+- "https://github.com/onelogin/ruby-saml/pull/183"
+credit: "Glyn Wintle - dxwsecurity"
+uuid: "f7433840-d0ae-4d4f-af96-7c2ffccb8362"

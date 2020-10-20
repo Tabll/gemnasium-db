@@ -1,0 +1,21 @@
+---
+identifier: "TYPO3-CORE-SA-2016-021"
+package_slug: "packagist/typo3/cms"
+title: "Cross-Site Scripting"
+description: "Failing to properly encode user input, the page module is vulnerable
+  to Cross-Site Scripting. A valid backend user account with permissions to edit plugins
+  is needed to exploit this vulnerability."
+date: "2016-09-13"
+pubdate: "2016-09-13"
+affected_range: "<6.2.27||>=7.0.0.alpha,<7.6.11||>=8.0.0.alpha,<8.3.1"
+fixed_versions:
+- "6.2.27"
+- "7.6.11"
+- "8.3.1"
+affected_versions: "All versions before 6.2.27, all versions starting from 7.0.0.alpha
+  before 7.6.11, all versions starting from 8.0.0.alpha before 8.3.1"
+solution: "Upgrade to latest version."
+urls:
+- "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2016-021"
+credit: "Georg Ringer"
+uuid: "50d72ef4-d755-4718-99bd-8b10e72db6f8"

@@ -1,0 +1,17 @@
+---
+identifier: "GMS-2017-283"
+package_slug: "npm/reecerver"
+title: "Directory Traversal"
+description: "`reecerver` is vulnerable to a directory traversal issue, giving an
+  attacker access to the filesystem by placing \"../\" in the url./n"
+date: "2017-10-04"
+pubdate: "2017-10-04"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/reecerver"
+- "https://nodesecurity.io/advisories/443"
+credit: "Liang Gong"
+uuid: "90a6c361-d658-4f1f-8159-c3fb80b67772"

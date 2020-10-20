@@ -1,0 +1,16 @@
+---
+identifier: "GMS-2016-91"
+package_slug: "npm/bitty"
+title: "Directory Traversal"
+description: "There's a directory traversal vulnerability that is exploitable via
+  the URL path in GET requests."
+date: "2016-12-07"
+pubdate: "2016-12-07"
+affected_range: ">=0.0.0"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://nodesecurity.io/advisories/150"
+credit: "Liang Gong"
+uuid: "93693b8e-18ee-466a-ad1d-64059c9b81e6"

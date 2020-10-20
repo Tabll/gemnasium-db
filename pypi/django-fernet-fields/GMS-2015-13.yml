@@ -1,0 +1,17 @@
+---
+identifier: "GMS-2015-13"
+package_slug: "pypi/django-fernet-fields"
+title: "Information Exposure"
+description: "This package is vulnerable to Information Exposure through the DualField
+  and HashField columns which are insecure."
+date: "2015-05-30"
+pubdate: "2015-05-30"
+affected_range: "<0.3"
+fixed_versions:
+- "0.3"
+affected_versions: "All versions before 0.3"
+solution: "Upgrade to latest version."
+urls:
+- "https://github.com/orcasgit/django-fernet-fields/commit/b2c5fbf3eff53b2f19f116d626bc2496922882c2"
+credit: "Carl Meyer"
+uuid: "4558b30a-ff71-4047-87b8-f9a75d386bdd"

@@ -1,0 +1,17 @@
+---
+identifier: "OSVDB-132871"
+package_slug: "gem/mapbox-rails"
+title: "Content Injection via TileJSON Name"
+description: "If you use `L.mapbox.map` and `L.mapbox.shareControl`, it is possible
+  for a malicious user with control over the `TileJSON` content to inject script content
+  into the name value of the `TileJSON`. After clicking on the share control, the
+  malicious code will execute in the context of the page using `Mapbox.js`."
+date: "2016-01-12"
+pubdate: "2016-01-12"
+affected_range: ">=0.0.0a"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://nodesecurity.io/advisories/74"
+uuid: "4484a7a3-fd8a-41a3-8abe-00d859c2107a"

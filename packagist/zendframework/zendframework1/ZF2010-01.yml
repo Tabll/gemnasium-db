@@ -1,0 +1,18 @@
+# This advisory is derived from
+# https://github.com/FriendsOfPHP/security-advisories
+---
+identifier: "ZF2010-01"
+package_slug: "packagist/zendframework/zendframework1"
+title: "Cross-site Scripting"
+description: "Potential XSS vectors due to inconsistent encodings."
+date: "2010-01-08"
+pubdate: "2010-01-08"
+affected_range: ">=1.9.0,<1.9.7"
+fixed_versions:
+- "1.12.0"
+affected_versions: "All versions starting from 1.9.0 before 1.9.7"
+not_impacted: "All versions before 1.9.0, all versions starting from 1.9.7"
+solution: "Upgrade to version 1.12.0 or above."
+urls:
+- "https://framework.zend.com/security/advisory/ZF2010-01"
+uuid: "b328ca61-52ce-4ef0-97df-f92744ae1ef5"

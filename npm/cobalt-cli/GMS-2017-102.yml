@@ -1,0 +1,16 @@
+---
+identifier: "GMS-2017-102"
+package_slug: "npm/cobalt-cli"
+title: "Downloads Resources over HTTP"
+description: "cobalt-cli downloads resources over HTTP, which leaves it vulnerable
+  to MITM attacks."
+date: "2017-01-01"
+pubdate: "2017-01-01"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://nodesecurity.io/advisories/197"
+credit: "Adam Baldwin"
+uuid: "7ad50a61-113a-477e-80f0-5fe8e455d933"

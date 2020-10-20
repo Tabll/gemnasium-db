@@ -1,0 +1,17 @@
+---
+identifier: "GMS-2018-24"
+package_slug: "npm/hekto"
+title: "Path Traversal"
+description: "Hekto contains a path traversal vulnerability. It allows reading arbitrary
+  files from the remote server."
+date: "2018-02-26"
+pubdate: "2018-02-26"
+affected_range: "<0.2.3"
+fixed_versions:
+- "0.2.3"
+affected_versions: "All versions before 0.2.3"
+solution: "Upgrade to latest version."
+urls:
+- "https://hackerone.com/reports/311218"
+credit: "bl4de"
+uuid: "f00c5b39-d130-437d-8ad0-745e30d5b6b0"

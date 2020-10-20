@@ -1,0 +1,15 @@
+---
+identifier: "GMS-2013-4"
+package_slug: "gem/angular-rails"
+title: "Values bound to a[href] are not sanitized in angular.js"
+description: "The bundled `angular.js` library contains a security issue and a memory
+  leak that have been adressed in the latest version."
+date: "2013-02-21"
+pubdate: "2013-02-21"
+affected_range: "<=0.0.12"
+fixed_versions: []
+affected_versions: "All versions up to 0.0.12"
+credit: "Apolishc"
+urls:
+- "http://blog.angularjs.org/2013/02/angularjs-105-flatulent-propulsion-and.html"
+uuid: "216c163a-43a3-42f9-a9db-90cb0fbad27a"

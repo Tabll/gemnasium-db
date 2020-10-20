@@ -1,0 +1,18 @@
+---
+identifier: "GMS-2015-55"
+package_slug: "npm/ecstatic"
+title: "Denial of Service"
+description: "Certain input strings when passed to new Date() or Date.parse() will
+  cause v8 to raise an exception. This leads to a crash and denial of service in ecstatic
+  when this input is passed into the server via the If-Modified-Since header."
+date: "2015-12-24"
+pubdate: "2015-12-24"
+affected_range: "<1.4.0"
+fixed_versions:
+- "1.4.0"
+affected_versions: "All versions before 1.4.0"
+solution: "Upgrade to latest version."
+urls:
+- "https://nodesecurity.io/advisories/64"
+credit: "James Halliday"
+uuid: "8066e278-6d13-4703-8749-092a1887c3ec"

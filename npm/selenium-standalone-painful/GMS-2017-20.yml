@@ -1,0 +1,19 @@
+---
+identifier: "GMS-2017-20"
+package_slug: "npm/selenium-standalone-painful"
+title: "Downloads Resources over HTTP"
+description: "selenium-standalone-painful downloads binary resources over HTTP, which
+  leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution
+  (RCE) by swapping out the requested resources with an attacker controlled copy if
+  the attacker is on the network or positioned in between the user and the remote
+  server."
+date: "2017-01-01"
+pubdate: "2017-01-01"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://nodesecurity.io/advisories/284"
+credit: "Adam Baldwin"
+uuid: "ff4b57ea-5f45-42be-9752-5090e86265b9"

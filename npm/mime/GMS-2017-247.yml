@@ -1,0 +1,20 @@
+---
+identifier: "GMS-2017-247"
+package_slug: "npm/mime"
+title: "Regular Expression Denial of Service"
+description: "The mime module is vulnerable to regular expression denial of service
+  when a mime lookup is performed on untrusted user input."
+date: "2017-09-27"
+pubdate: "2017-09-27"
+affected_range: "<1.4.1 || >= 2.0.0 < 2.0.3"
+fixed_versions:
+- "1.4.1"
+- "2.0.3"
+affected_versions: "All versions before 1.4.1, all versions starting from 2.0.0 before
+  2.0.3"
+solution: "Upgrade to version 2.0.3 or greater."
+urls:
+- "https://github.com/broofa/node-mime/issues/167"
+- "https://nodesecurity.io/advisories/535"
+credit: "Cristian-Alexandru Staicu"
+uuid: "6c482efa-d68b-44eb-97d3-c2bf5fd542be"

@@ -1,0 +1,18 @@
+# This advisory is derived from
+# https://github.com/FriendsOfPHP/security-advisories
+---
+identifier: "2011-09-25"
+package_slug: "packagist/doctrine/orm"
+title: "SQL Injection"
+description: "SQL Injection vulnerability in orm."
+date: "2011-09-25"
+pubdate: "2011-09-25"
+affected_range: ">=2.0.0,<2.0.3"
+fixed_versions:
+- "2.1.3"
+affected_versions: "All versions starting from 2.0.0 before 2.0.3"
+not_impacted: "All versions before 2.0.0, all versions starting from 2.0.3"
+solution: "Upgrade to version 2.1.3 or above."
+urls:
+- "https://www.doctrine-project.org/blog/doctrine-security-fix.html"
+uuid: "a220ab45-fa8d-451c-b3a7-b66d2ea228be"

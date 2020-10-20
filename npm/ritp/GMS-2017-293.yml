@@ -1,0 +1,18 @@
+---
+identifier: "GMS-2017-293"
+package_slug: "npm/ritp"
+title: "Directory Traversal"
+description: "`ritp` is vulnerable to a directory traversal issue whereby an attacker
+  can gain access to the file system by placing ../ in the URL. Access is restricted
+  to files with a file extension, so files such as /etc/passwd are not accessible."
+date: "2017-10-04"
+pubdate: "2017-10-04"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/ritp"
+- "https://nodesecurity.io/advisories/432"
+credit: "Liang Gong"
+uuid: "49f94dd2-b4fd-42d7-bcc8-401fb96cbd69"

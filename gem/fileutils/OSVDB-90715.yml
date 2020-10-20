@@ -1,0 +1,15 @@
+---
+identifier: "OSVDB-90715"
+package_slug: "gem/fileutils"
+title: "Insecure file handling in /tmp"
+description: "The package fileutils handles temporary files insecurely."
+date: "2013-02-24"
+pubdate: "2013-02-24"
+affected_range: "<=0.7"
+fixed_versions: []
+affected_versions: "All versions up to 0.7"
+solution: "No solution yet."
+urls:
+- "http://direct.osvdb.org/show/osvdb/90716"
+- "http://vapid.dhs.org/advisories/file_utils_ruby_gem.html"
+uuid: "5b6e7dbf-43d7-440f-b631-4c4f13a75aa2"

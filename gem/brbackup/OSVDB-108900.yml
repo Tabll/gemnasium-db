@@ -1,0 +1,16 @@
+---
+identifier: "OSVDB-108900"
+package_slug: "gem/brbackup"
+title: "dbuser Variable Shell Metacharacter Injection Remote Command Execution"
+description: "This package contains a flaw that is triggered as input passed via the
+  'dbuser' variable is not properly sanitized. This may allow a remote attacker to
+  inject shell metacharacters and execute arbitrary commands."
+date: "2014-07-09"
+pubdate: "2014-07-09"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://github.com/rubysec/ruby-advisory-db/blob/master/gems/brbackup/OSVDB-108900.yml"
+uuid: "4128375c-e531-4b5c-aba1-a08c426a0f42"

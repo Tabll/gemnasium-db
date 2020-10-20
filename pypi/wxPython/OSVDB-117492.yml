@@ -1,0 +1,17 @@
+---
+identifier: "OSVDB-117492"
+package_slug: "pypi/wxPython"
+title: "Insecure Temporary File Creation"
+description: "wx.tools.img2py creates temporary files insecurely. It is possible for
+  a local attacker to use a symlink attack against an unspecified file to cause the
+  program to unexpectedly overwrite an arbitrary file."
+date: "2015-01-15"
+pubdate: "2015-01-15"
+affected_range: ">=0.0a"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "http://www.osvdb.org/show/osvdb/117492"
+- "https://github.com/wxWidgets/wxPython/commits/master/wx/tools/img2py.py"
+uuid: "b8dff624-6a96-400f-bdeb-395bca20f4f7"

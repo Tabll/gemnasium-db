@@ -1,0 +1,18 @@
+# This advisory is derived from
+# https://github.com/FriendsOfPHP/security-advisories
+---
+identifier: "2016-09-05"
+package_slug: "packagist/cartalyst/sentry"
+title: "Weak Password Recovery Mechanism for Forgotten Password"
+description: "Null reset codes are allowed through sentry."
+date: "2016-10-04"
+pubdate: "2016-10-04"
+affected_range: "<=2.1.6"
+fixed_versions:
+- "2.1.7"
+affected_versions: "All versions up to 2.1.6"
+not_impacted: "All versions after 2.1.6"
+solution: "Upgrade to version 2.1.7 or above."
+urls:
+- "https://haxx.ml/post/149975211631/how-i-hacked-your-cfp-and-probably-some-other"
+uuid: "be87b502-0f68-46ac-96f0-1641c63cc853"

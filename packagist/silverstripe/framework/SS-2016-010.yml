@@ -1,0 +1,32 @@
+---
+identifier: "SS-2016-010"
+package_slug: "packagist/silverstripe/framework"
+title: "ReadOnly transformation for formfields exploitable"
+description: "Form fields returning `isReadonly()` as true are vulnerable to reflected
+  XSS injections. This includes `ReadonlyField`, `LookupField`, `HTMLReadonlyField`,
+  as well as special purpose fields like `TimeField_Readonly`. Values submitted to
+  through these form fields are not filtered out from the form session data, and might
+  be shown to the user depending on the form behaviour. For example, form validation
+  errors cause the form to re-render with previously submitted values by default.
+  SilverStripe forms automatically load values from request data (GET and POST), which
+  enables malicious use of URLs if your form uses these fields and doesn't overwrite
+  data on form construction. Readonly and disabled form fields are already filtered
+  out in `saveInto()`, so maliciously submitted data on these fields doesn't make
+  it into the database unless you are accessing form values directly in your saving
+  logic."
+date: "2016-11-29"
+pubdate: "2016-11-29"
+affected_range: "<3.1.21||>=3.2.0-alpha0,<3.2.6||>=3.3.0-alpha0,<3.3.4||>=3.4.0-alpha0,<3.4.2"
+fixed_versions:
+- "3.1.21"
+- "3.2.6"
+- "3.3.4"
+- "3.4.2"
+affected_versions: "All versions before 3.1.21, all versions starting from 3.2.0-alpha0
+  before 3.2.6, all versions starting from 3.3.0-alpha0 before 3.3.4, all versions
+  starting from 3.4.0-alpha0 before 3.4.2"
+solution: "Upgrade to latest version."
+urls:
+- "https://www.silverstripe.org/download/security-releases/ss-2016-010/"
+credit: "security-assessment.com, division of Dimension Data"
+uuid: "63bde099-0b5f-4527-b494-4914a9c0c30a"

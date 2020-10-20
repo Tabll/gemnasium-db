@@ -1,0 +1,20 @@
+---
+identifier: "GMS-2016-50"
+package_slug: "npm/fuelux"
+title: "XSS in Pillbox"
+description: "There exists a cross site scripting (XSS) vulnerability in the Pillbox
+  feature of FuelUX. By supplying a script as a value for a new pillbox, it is possible
+  to cause arbitrary script execution."
+date: "2016-07-25"
+pubdate: "2016-07-25"
+affected_range: "<3.15.7"
+fixed_versions:
+- "3.15.7"
+affected_versions: "All versions before 3.15.7"
+solution: "Upgrade to latest version."
+urls:
+- "https://github.com/ExactTarget/fuelux/issues/1841"
+- "https://github.com/ExactTarget/fuelux/releases/tag/3.15.7"
+- "https://nodesecurity.io/advisories/133"
+credit: "Keenan Jaenicke"
+uuid: "7c62030a-b40b-4cb3-ad47-492b92f84087"

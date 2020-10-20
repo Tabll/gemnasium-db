@@ -1,0 +1,18 @@
+# This advisory is derived from
+# https://github.com/FriendsOfPHP/security-advisories
+---
+identifier: "SS-2015-018-1"
+package_slug: "packagist/silverstripe/userforms"
+title: "Unrestricted Upload of File with Dangerous Type"
+description: "File upload exposure on UserForms module."
+date: "2015-08-31"
+pubdate: "2015-08-31"
+affected_range: "<3.0.0"
+fixed_versions:
+- "3.0.0"
+affected_versions: "All versions before 3.0.0"
+not_impacted: "All versions starting from 3.0.0"
+solution: "Upgrade to version 3.0.0 or above."
+urls:
+- "https://www.silverstripe.org/software/download/security-releases/ss-2015-018/"
+uuid: "a6f855bb-eefe-437c-a987-8c94de94357c"

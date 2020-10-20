@@ -1,0 +1,20 @@
+# This advisory is derived from
+# https://github.com/FriendsOfPHP/security-advisories
+---
+identifier: "2019-03-20"
+package_slug: "packagist/drupal/drupal"
+title: "Cross-site Scripting"
+description: "Cross-site Scripting vulnerability in drupal."
+date: "2019-03-20"
+pubdate: "2019-03-20"
+affected_range: ">=7.0,<7.64||>=8.0.0,<8.6.12"
+fixed_versions:
+- "8.6.12"
+affected_versions: "All versions starting from 7.0 before 7.64, all versions starting
+  from 8.0.0 before 8.6.12"
+not_impacted: "All versions before 7.0, all versions starting from 7.64 before 8.0.0,
+  all versions starting from 8.6.12"
+solution: "Upgrade to version 8.6.12 or above."
+urls:
+- "https://www.drupal.org/sa-core-2019-004"
+uuid: "7e5b5216-4f73-4e9a-8d8d-771dbc57136c"

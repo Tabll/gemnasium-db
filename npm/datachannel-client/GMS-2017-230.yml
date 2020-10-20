@@ -1,0 +1,17 @@
+---
+identifier: "GMS-2017-230"
+package_slug: "npm/datachannel-client"
+title: "Directory Traversal"
+description: "`datachannel-client` is vulnerable to a directory traversal issue, giving
+  an attacker access to the filesystem by placing \"../\" in the URL."
+date: "2017-09-26"
+pubdate: "2017-09-26"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://github.com/JacksonGL/NPM-Vuln-PoC/tree/master/directory-traversal/datachannel-client"
+- "https://nodesecurity.io/advisories/391"
+credit: "Liang Gong"
+uuid: "1c15f6ce-d65f-4b4c-b548-7aa06fc6865a"

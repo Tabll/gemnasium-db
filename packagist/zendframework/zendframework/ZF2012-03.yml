@@ -1,0 +1,18 @@
+# This advisory is derived from
+# https://github.com/FriendsOfPHP/security-advisories
+---
+identifier: "ZF2012-03"
+package_slug: "packagist/zendframework/zendframework"
+title: "Cross-site Scripting"
+description: "Potential XSS Vectors in Multiple Zend Framework 2 Components."
+date: "2012-09-20"
+pubdate: "2012-09-20"
+affected_range: ">=2.0.0,<2.0.1"
+fixed_versions:
+- "2.0.1"
+affected_versions: "All versions starting from 2.0.0 before 2.0.1"
+not_impacted: "All versions before 2.0.0, all versions starting from 2.0.1"
+solution: "Upgrade to version 2.0.1 or above."
+urls:
+- "https://framework.zend.com/security/advisory/ZF2012-03"
+uuid: "3e641dda-1e16-4371-abd6-e98209ca023c"

@@ -1,0 +1,18 @@
+---
+identifier: "GMS-2018-13"
+package_slug: "packagist/propel/propel1"
+title: "SQL injection with limit() on MySQL"
+description: "The `limit()` query method is vulnerable to SQL injection with MySQL."
+date: "2018-02-14"
+pubdate: "2018-02-14"
+affected_range: "<=1.7.1"
+fixed_versions: []
+affected_versions: "All versions up to 1.7.1"
+not_impacted: "Drivers other than MySQL"
+solution: "Since there's no fixed version at the moment, it's recommended not to use
+  the limit() query method."
+urls:
+- "https://github.com/propelorm/Propel/issues/1052"
+- "https://github.com/propelorm/Propel/pull/1054"
+credit: "Mike Petrovich"
+uuid: "be98b4b2-3d26-46ae-bf9f-f042f943849a"

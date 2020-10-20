@@ -1,0 +1,21 @@
+# This advisory is derived from
+# https://github.com/FriendsOfPHP/security-advisories
+---
+identifier: "SS-2016-003-1"
+package_slug: "packagist/silverstripe/framework"
+title: "SS-2016-003: Hostname, IP and Protocol Spoofing through HTTP Headers"
+description: "SS-2016-003: Hostname, IP and Protocol Spoofing through HTTP Headers"
+date: "2016-02-18"
+pubdate: "2016-02-18"
+affected_range: ">=3.1.0,<=3.1.16||>=3.2.0,<3.3.0"
+fixed_versions:
+- "3.1.17"
+- "3.3.0"
+affected_versions: "All versions starting from 3.1.0 up to 3.1.16, all versions starting
+  from 3.2.0 before 3.3.0"
+not_impacted: "All versions before 3.1.0, all versions after 3.1.16 before 3.2.0,
+  all versions starting from 3.3.0"
+solution: "Upgrade to versions 3.1.17, 3.3.0 or above."
+urls:
+- "https://www.silverstripe.org/download/security-releases/ss-2016-003/"
+uuid: "cc96f44a-0e52-49ba-86ba-43cdcbc72735"

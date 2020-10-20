@@ -1,0 +1,18 @@
+---
+identifier: "GMS-2015-44"
+package_slug: "packagist/typo3/flow"
+title: "Arbitrary File Upload"
+description: "There's a flaw that allows arbitrary file uploads, including server-side
+  scripts, posing the risk of attacks."
+date: "2015-11-23"
+pubdate: "2015-11-23"
+affected_range: ">=3.0.0-beta1,<3.0.1"
+fixed_versions:
+- "3.0.1"
+affected_versions: "All versions starting from 3.0.0-beta1 before 3.0.1"
+not_impacted: "Prior to 3.0.0"
+solution: "Upgrade to latest version."
+urls:
+- "https://www.neos.io/news/flow-sa-2015-001.html"
+credit: "Mickael Dorigny (Synetis)"
+uuid: "1a4ae2bc-0b1a-44a5-b485-294475e01aa8"

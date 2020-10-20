@@ -1,0 +1,16 @@
+---
+identifier: "GMS-2014-28"
+package_slug: "npm/sequelize-restful"
+title: "Denial of Service"
+description: "squelize-restful can crash when called on a crafted URL."
+date: "2014-12-08"
+pubdate: "2014-12-08"
+affected_range: "<0.3.1"
+fixed_versions:
+- "0.3.1"
+affected_versions: "All versions before 0.3.1"
+solution: "Upgrade to latest version."
+urls:
+- "https://github.com/sequelize/sequelize-restful/pull/17"
+credit: "Björn Kimminich"
+uuid: "50568559-ebcc-4967-8758-17c2c36bb8d6"

@@ -1,0 +1,22 @@
+---
+identifier: "GMS-2016-42"
+package_slug: "npm/swagger-ui"
+title: "XSS in Consumes/Produces Parameter"
+description: "Swagger-UI contains a cross site scripting (XSS) vulnerability in the
+  `consumes` and `produces` parameters of the swagger JSON document for a given API.
+  A maliciously crafted swagger JSON doc can be loaded via the URL query-string parameter
+  `url`. "
+date: "2016-07-20"
+pubdate: "2016-07-20"
+affected_range: "<2.1.5-M1 >=2.1.4-M1"
+fixed_versions:
+- "2.1.5"
+affected_versions: "All versions starting from 2.1.4-m1 before 2.1.5-m1"
+not_impacted: "2.1.3 and earlier"
+solution: "Upgrade to latest version."
+urls:
+- "https://github.com/swagger-api/swagger-ui/issues/1866"
+- "https://github.com/swagger-api/swagger-ui/pull/1867"
+- "https://nodesecurity.io/advisories/123"
+credit: "Joe Vennix"
+uuid: "e7bd1269-05ad-4084-8f93-5b9743a067c2"

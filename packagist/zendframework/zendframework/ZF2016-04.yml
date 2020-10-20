@@ -1,0 +1,19 @@
+---
+identifier: "ZF2016-04"
+package_slug: "packagist/zendframework/zendframework"
+title: "Remote code execution in zend-mail via Sendmail adapter"
+description: "A malicious user may be able to inject arbitrary parameters to the system
+  Sendmail program. The attack is performed by providing additional quote characters
+  within an address; when unsanitized, they can be interpreted as additional command
+  line arguments, leading to the vulnerability."
+date: "2016-12-20"
+pubdate: "2016-12-20"
+affected_range: "<2.4.11"
+fixed_versions:
+- "2.4.11"
+affected_versions: "All versions before 2.4.11"
+solution: "Upgrade to latest version"
+urls:
+- "https://framework.zend.com/security/advisory/ZF2016-04"
+credit: "Dawid Golunski, Enrico Zimuel"
+uuid: "aa5d577c-a25d-40e5-90c6-c1b0e7366f95"

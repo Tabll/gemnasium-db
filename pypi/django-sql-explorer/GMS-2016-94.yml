@@ -1,0 +1,20 @@
+---
+identifier: "GMS-2016-94"
+package_slug: "pypi/django-sql-explorer"
+title: "Cross-Site Scripting"
+description: "This package is vulnerable to Cross-Site Scripting (XSS) attacks. The
+  autoescaping method was disabled by default, allowing an attacker to alter database
+  values."
+date: "2016-12-15"
+pubdate: "2016-12-15"
+affected_range: "<1.1"
+fixed_versions:
+- "1.1"
+affected_versions: "All versions before 1.1"
+solution: "Upgrade to fixed version"
+urls:
+- "https://github.com/groveco/django-sql-explorer/commit/adb3bf8b12350e875b02db43409ca07c7368f576"
+- "https://github.com/groveco/django-sql-explorer/issues/267"
+- "https://github.com/groveco/django-sql-explorer/pull/286"
+credit: "Josh Wright"
+uuid: "628dba71-8a19-4591-9020-dd67153c4437"

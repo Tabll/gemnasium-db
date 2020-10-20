@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2016-69"
+package_slug: "npm/plotly.js"
+title: "Cross Site Scripting"
+description: "If an attacker can trick an unsuspecting user into viewing a specially
+  crafted plot on a site that uses plotly.js, then the attacker could potentially
+  retrieve authentication tokens and perform actions on behalf of the user."
+date: "2016-10-17"
+pubdate: "2016-10-17"
+affected_range: "<1.10.4||>=1.11.0 <1.16.0"
+fixed_versions:
+- "1.10.4"
+- "1.16.0"
+affected_versions: "All versions before 1.10.4, all versions starting from 1.11.0
+  before 1.16.0"
+solution: "Update to 1.16.0 or later."
+urls:
+- "http://help.plot.ly/security-advisories/2016-08-08-plotlyjs-xss-advisory/"
+- "https://acloudtree.com/2016-08-09-how-i-hacked-plotly-by-exploiting-a-svg-vulnerability-in-plotlyjs/"
+- "https://github.com/plotly/plotly.js/commit/0a1526de6ee872993cabac966ed6fdc67cd052f0"
+- "https://github.com/plotly/plotly.js/commit/d58d3bee92cbed88e2da250753d7dcb374d42e1d"
+- "https://github.com/plotly/plotly.js/issues/642"
+- "https://nodesecurity.io/advisories/145"
+credit: "Jared Folkins"
+uuid: "f3fe2f2e-8776-401b-a937-fbdd918e5213"

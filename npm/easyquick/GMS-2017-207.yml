@@ -1,0 +1,19 @@
+---
+identifier: "GMS-2017-207"
+package_slug: "npm/easyquick"
+title: "Directory Traversal"
+description: "`easyquick` is vulnerable to a directory traversal issue, giving an
+  attacker access to the filesystem by placing \"../\" in the URL. Access is constrained,
+  however, to supported file types. Requesting a file such as `/etc/passwd` returns
+  a \"not supported\" error."
+date: "2017-09-12"
+pubdate: "2017-09-12"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://github.com/JacksonGL/NPM-Vuln-PoC/tree/master/directory-traversal/easyquick"
+- "https://nodesecurity.io/advisories/373"
+credit: "Liang Gong"
+uuid: "067e08a3-e924-4748-8ecb-51222d0115e3"

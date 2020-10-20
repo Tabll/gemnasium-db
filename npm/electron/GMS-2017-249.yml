@@ -1,0 +1,22 @@
+---
+identifier: "GMS-2017-249"
+package_slug: "npm/electron"
+title: "Chromium Remote Code Execution"
+description: "A remote code execution vulnerability has been discovered in Google
+  Chromium that affects all recent versions of Electron. Any Electron app that accesses
+  remote content is vulnerable to this exploit, regardless of whether the sandbox
+  option is enabled."
+date: "2017-09-28"
+pubdate: "2017-09-28"
+affected_range: "< 1.6.14 || >= 1.7.0 < 1.7.8"
+fixed_versions:
+- "1.6.14"
+- "1.7.8"
+affected_versions: "All versions before 1.6.14, all versions starting from 1.7.0 before
+  1.7.8"
+solution: "Update to the latest version."
+urls:
+- "https://electron.atom.io/blog/2017/09/27/chromium-rce-vulnerability-fix"
+- "https://nodesecurity.io/advisories/539"
+credit: "Electron Team"
+uuid: "b7ab766a-faaf-41e0-9cde-eb3b4e0c0df6"

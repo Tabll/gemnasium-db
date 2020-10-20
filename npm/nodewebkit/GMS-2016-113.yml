@@ -1,0 +1,19 @@
+---
+identifier: "GMS-2016-113"
+package_slug: "npm/nodewebkit"
+title: "Downloads Resources over HTTP"
+description: "nodewebkit downloads zipped resources over HTTP, which leaves it vulnerable
+  to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping
+  out the requested zip file with an attacker controlled zip file if the attacker
+  is on the network or positioned in between the user and the remote server."
+date: "2016-12-18"
+pubdate: "2016-12-18"
+affected_range: ">=0.0.0"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "No fix is currently available for this vulnerability. It's recommended
+  to not install nor use this module."
+urls:
+- "https://nodesecurity.io/advisories/173"
+credit: "Adam Baldwin"
+uuid: "c3d07b0f-ff43-45ec-a071-3d57151d31b9"

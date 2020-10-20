@@ -1,0 +1,16 @@
+---
+identifier: "GMS-2017-157"
+package_slug: "npm/node-openssl"
+title: "Hijacked Environment Variables"
+description: "`node-openssl` was a malicious module published with the intent to hijack
+  environment variables. It has been unpublished by npm."
+date: "2017-08-08"
+pubdate: "2017-08-08"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "If you have found this installed in your environment you should invalidate
+  and regenerate any authentication tokens found in your environment variables."
+urls:
+- "https://nodesecurity.io/advisories/503"
+uuid: "5999bf03-0b82-47fa-9711-9efde500102c"

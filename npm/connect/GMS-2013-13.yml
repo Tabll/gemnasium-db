@@ -1,0 +1,19 @@
+---
+identifier: "GMS-2013-13"
+package_slug: "npm/connect"
+title: "Cross-Site Scripting with connect.methodOverride()"
+description: "The middleware overwrites req.method with the req.body['_method'] value.
+  When you don't catch the error it responds with a default error msg: \"Cannot [METHOD]
+  [URL]\" . Because this is not enough sanitized, you can force a Cross-Site Scripting
+  in the response."
+date: "2013-06-27"
+pubdate: "2013-06-27"
+affected_range: "<=2.8.0"
+fixed_versions:
+- "2.8.1"
+affected_versions: "All versions up to 2.8.0"
+solution: "Upgrade to latest version."
+urls:
+- "https://github.com/senchalabs/connect/issues/831"
+credit: "Sergio Arcos"
+uuid: "690e52ad-63a4-414a-9c63-0efbd798ed3f"

@@ -1,0 +1,20 @@
+---
+identifier: "GMS-2018-11"
+package_slug: "npm/ssri"
+title: "ReDoS"
+description: "There is a Regular Expression Denial of Service vulnerability in the
+  strict mode functionality."
+date: "2018-02-14"
+pubdate: "2018-02-14"
+affected_range: "<=5.2.1"
+fixed_versions:
+- "5.2.2"
+affected_versions: "All versions up to 5.2.1"
+not_impacted: "Consumers not using the opts.strict option."
+solution: "Upgrade to version 5.2.2 or later."
+urls:
+- "https://github.com/zkat/ssri/commit/d0ebcdc"
+- "https://github.com/zkat/ssri/pull/10"
+- "https://nodesecurity.io/advisories/565"
+credit: "Jamie Davis"
+uuid: "4fcea192-70af-401b-bf74-a19e17a22cb5"

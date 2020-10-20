@@ -1,0 +1,20 @@
+---
+identifier: "OSVDB-110796"
+package_slug: "gem/flavour_saver"
+title: "Remote code execution via handlebars helper"
+description: "The gem contains a flaw in helper method dispatch where it uses Kernel::send
+  to call helpers without checking that they are defined within the template context
+  first. This allows expressions such as {{system \"ls\"}} or {{eval \"puts 1 + 1\"}}
+  to be executed."
+date: "2014-09-04"
+pubdate: "2014-09-04"
+affected_range: "<0.3.3"
+fixed_versions:
+- "0.3.3"
+affected_versions: "All versions before 0.3.3"
+solution: "Upgrade to latest version."
+urls:
+- "http://osvdb.org/show/osvdb/110796"
+- "https://github.com/jamesotron/FlavourSaver/commit/04a8ff444a9a9668a75b01b20b4974d398087a64"
+credit: "@nifoc (Daniel Kempens)"
+uuid: "7d9bb389-8a15-45e8-99c8-897156ae9858"

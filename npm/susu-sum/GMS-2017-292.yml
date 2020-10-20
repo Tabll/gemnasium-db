@@ -1,0 +1,17 @@
+---
+identifier: "GMS-2017-292"
+package_slug: "npm/susu-sum"
+title: "Directory Traversal"
+description: "`susu-sum` is vulnerable to a directory traversal issue, giving an attacker
+  access to the filesystem by placing \"../\" in the url./n"
+date: "2017-10-04"
+pubdate: "2017-10-04"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/susu-sum"
+- "https://nodesecurity.io/advisories/429"
+credit: "Liang Gong"
+uuid: "88f54acb-69d7-4dcf-a012-404ba067d984"

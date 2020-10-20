@@ -1,0 +1,22 @@
+---
+identifier: "OSVDB-95749"
+package_slug: "gem/activeresource"
+title: "Remote code execution and potential Denial of Service Vulnerability"
+description: "Activeresource contains a format string flaw in the request function
+  of `lib/active_resource/connection.rb`. The issue is triggered as format string
+  specifiers (e.g. `%s` and `%x`) are not properly sanitized in user-supplied input
+  when passed via the `result.code` and `result.message` variables. This may allow
+  a remote attacker to cause a denial of service or potentially execute arbitrary
+  code."
+date: "2008-08-15"
+pubdate: "2008-08-15"
+affected_range: "<2.2.0"
+fixed_versions:
+- "2.2.0"
+affected_versions: "All versions before 2.2.0"
+solution: "Upgrade to latest version."
+urls:
+- "https://github.com/rails/rails/commit/aad7cac6add2fa01cebbb36e9f546292d632c9ea#diff-21986102684ac74b23a2f959f56756b6"
+- "https://github.com/rubysec/ruby-advisory-db/blob/master/gems/activeresource/OSVDB-95749.yml"
+credit: "Jamis Buck"
+uuid: "77ce3920-50be-4562-bc83-96f799a32a85"

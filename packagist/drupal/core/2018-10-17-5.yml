@@ -1,0 +1,19 @@
+# This advisory is derived from
+# https://github.com/FriendsOfPHP/security-advisories
+---
+identifier: "2018-10-17-5"
+package_slug: "packagist/drupal/core"
+title: "Improper Access Control"
+description: "In some conditions, content moderation fails to check a users access
+  to use certain transitions, leading to an access bypass."
+date: "2018-10-18"
+pubdate: "2018-10-18"
+affected_range: ">=8.0.0,<8.6.2"
+fixed_versions:
+- "8.6.2"
+affected_versions: "All versions starting from 8.0.0 before 8.6.2"
+not_impacted: "All versions before 8.0.0, all versions starting from 8.6.2"
+solution: "Upgrade to version 8.6.2 or above."
+urls:
+- "https://www.drupal.org/sa-core-2018-006"
+uuid: "f16e3667-7668-4051-8236-7bf3a4b79988"

@@ -1,0 +1,17 @@
+---
+identifier: "GMS-2017-265"
+package_slug: "npm/byucslabsix"
+title: "Directory Traversal"
+description: "`byucslabsix` is vulnerable to a directory traversal issue, giving an
+  attacker access to the filesystem by placing \"../\" in the url./n"
+date: "2017-09-29"
+pubdate: "2017-09-29"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/byucslabsix"
+- "https://nodesecurity.io/advisories/399"
+credit: "Liang Gong"
+uuid: "b669c5b2-e270-4918-aa85-250cfe7ff3b7"

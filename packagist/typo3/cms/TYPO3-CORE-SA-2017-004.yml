@@ -1,0 +1,18 @@
+---
+identifier: "TYPO3-CORE-SA-2017-004"
+package_slug: "packagist/typo3/cms"
+title: "XSS Vulnerability"
+description: "Failing to properly encode user input, backend forms are vulnerable
+  to Cross-Site Scripting. A valid backend user account is needed to exploit this
+  vulnerability."
+date: "2017-09-05"
+pubdate: "2017-09-05"
+affected_range: ">=8.0.0,<8.7.5"
+fixed_versions:
+- "v8.7.5"
+affected_versions: "All versions starting from 8.0.0 before 8.7.5"
+solution: "Upgrade to latest version."
+urls:
+- "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2017-004/"
+credit: "Georg Ringer"
+uuid: "a6ea059e-b345-4157-920b-acf119704959"

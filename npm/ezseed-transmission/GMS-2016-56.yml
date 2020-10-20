@@ -1,0 +1,23 @@
+---
+identifier: "GMS-2016-56"
+package_slug: "npm/ezseed-transmission"
+title: "Insecure Defaults Leads to Potential MITM"
+description: "ezseed-transmission downloads a script from
+  `http://stedolan.github.io/jq/download/linux64/jq` without checking the
+  certificate. An attacker on the same network or on an ISP level could
+  intercept the traffic and push their own version of the file, causing the
+  attackers code to be executed."
+date: "2016-07-29"
+pubdate: "2016-07-29"
+affected_range: ">= 0.0.10 <= 0.0.14"
+fixed_versions:
+- "0.0.15"
+affected_versions: "All versions starting from 0.0.10 up to 0.0.14"
+not_impacted: "Prior to 0.0.10"
+solution: "Upgrade to at least version 0.0.15"
+urls:
+- "https://github.com/ezseed/transmission/commit/4816b1b08288774c607a7df2a4209612c4d46caa"
+- "https://github.com/ezseed/transmission/commit/71df46fa60979d117f04d0ae58dfdedde8c8f485"
+- "https://nodesecurity.io/advisories/114"
+credit: "Adam Baldwin"
+uuid: "e52c1b57-ae80-4cd4-a49c-1e12b2ffbb34"

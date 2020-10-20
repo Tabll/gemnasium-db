@@ -1,0 +1,20 @@
+---
+identifier: "GMS-2017-117"
+package_slug: "npm/node-jose"
+title: "Invalid Curve Attack"
+description: "node-jose is vulnerable to an invalid curve attack. This allows an attacker
+  to recover the private secret key when JWE with Key Agreement with Elliptic Curve
+  Diffie-Hellman Ephemeral Static (ECDH-ES) is used."
+date: "2017-03-13"
+pubdate: "2017-03-13"
+affected_range: "<0.9.3"
+fixed_versions:
+- "0.9.3"
+affected_versions: "All versions before 0.9.3"
+solution: "Upgrade to version 0.9.3 or greater"
+urls:
+- "http://blog.intothesymmetry.com/2017/03/critical-vulnerability-in-json-web.html"
+- "https://github.com/cisco/node-jose"
+- "https://nodesecurity.io/advisories/324"
+credit: "Antonio Sanso"
+uuid: "093623ab-1967-4991-ba9e-109a384e1fcc"

@@ -1,0 +1,20 @@
+---
+identifier: "GMS-2017-138"
+package_slug: "npm/f2e-server"
+title: "Directory Traversal"
+description: "f2e-server is vulnerable to a directory traversal issue, giving an attacker
+  access to the filesystem by placing \"../\" in the url. This is compounded by f2e-server
+  requiring elevated privileges to run."
+date: "2017-06-27"
+pubdate: "2017-06-27"
+affected_range: "<= 1.12.11"
+fixed_versions:
+- "1.12.12"
+affected_versions: "All versions up to 1.12.11"
+solution: "Upgrade to v1.12.12 or later."
+urls:
+- "https://github.com/shy2850/node-server/issues/10"
+- "https://github.com/shy2850/node-server/pull/12"
+- "https://nodesecurity.io/advisories/346"
+credit: "Liang Gong"
+uuid: "b990107e-45e2-487d-8c94-d2bca47211e7"

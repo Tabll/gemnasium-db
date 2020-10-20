@@ -1,0 +1,18 @@
+---
+identifier: "GMS-2016-63"
+package_slug: "npm/mqtt"
+title: "Denial of Service"
+description: "Specifically crafted MQTT packets can crash the application, making
+  a DoS attack feasible with very little bandwidth."
+date: "2016-08-26"
+pubdate: "2016-08-26"
+affected_range: "<=0.3.13"
+fixed_versions:
+- "1.0.0"
+affected_versions: "All versions up to 0.3.13"
+solution: "Upgrade to v1.0.0 or later"
+urls:
+- "https://github.com/mqttjs/MQTT.js/blob/388a084d7803934b18b43c1146c817deaa1396b1/lib/parse.js#L230"
+- "https://nodesecurity.io/advisories/140"
+credit: "Matteo Collina"
+uuid: "6a803780-dac1-4734-82b5-f56ff8a96887"

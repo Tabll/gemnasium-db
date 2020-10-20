@@ -1,0 +1,21 @@
+---
+identifier: "GMS-2012-4"
+package_slug: "npm/socket.io"
+title: "Insecure randomness"
+description: "Because socket.io depends on `Math.random()` to create socket IDs, the
+  IDs are predictable. An attacker is able to guess the socket ID and gain access
+  to socket.io servers, potentially obtaining sensitive information."
+date: "2012-04-26"
+pubdate: "2012-04-26"
+affected_range: "<=0.9.6"
+fixed_versions:
+- "0.9.7"
+affected_versions: "All versions up to 0.9.6"
+solution: "Upgrade to v0.9.7 or later."
+urls:
+- "https://github.com/socketio/socket.io/commit/67b4eb9abdf111dfa9be4176d1709374a2b4ded8"
+- "https://github.com/socketio/socket.io/issues/856"
+- "https://github.com/socketio/socket.io/pull/857"
+- "https://nodesecurity.io/advisories/321"
+credit: "Martin Thomson"
+uuid: "859864b5-3aeb-4199-a22c-71f4958bc5d6"

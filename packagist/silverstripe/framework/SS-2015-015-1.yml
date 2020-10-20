@@ -1,0 +1,18 @@
+# This advisory is derived from
+# https://github.com/FriendsOfPHP/security-advisories
+---
+identifier: "SS-2015-015-1"
+package_slug: "packagist/silverstripe/framework"
+title: "Cross-site Scripting"
+description: "XSS in `dev/build` `returnURL` Parameter."
+date: "2015-09-14"
+pubdate: "2015-09-14"
+affected_range: ">=3.1.0,<3.1.14"
+fixed_versions:
+- "3.1.14"
+affected_versions: "All versions starting from 3.1.0 before 3.1.14"
+not_impacted: "All versions before 3.1.0, all versions starting from 3.1.14"
+solution: "Upgrade to version 3.1.14 or above."
+urls:
+- "https://www.silverstripe.org/software/download/security-releases/ss-2015-015/"
+uuid: "c1ec6bf5-833d-4f21-80ae-089485ddada2"

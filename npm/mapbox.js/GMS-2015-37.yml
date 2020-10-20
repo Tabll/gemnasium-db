@@ -1,0 +1,21 @@
+---
+identifier: "GMS-2015-37"
+package_slug: "npm/mapbox.js"
+title: "Content Injection via TileJSON attribute"
+description: "Mapbox.js is vulnerable to a cross-site-scripting attack in certain
+  uncommon usage scenarios."
+date: "2015-10-24"
+pubdate: "2015-10-24"
+affected_range: "<1.6.5 || < 2.1.7 >=2.0.0-beta0"
+fixed_versions:
+- "1.6.5"
+- "2.1.7"
+affected_versions: "All versions before 1.6.5, all versions starting from 2.0.0-beta0
+  before 2.1.7"
+solution: "Upgrade to Mapbox.js version 2.1.7. If you are still using a 1.x version
+  and unable to upgrade to 2.1.7, upgrade to 1.6.5."
+urls:
+- "https://hackerone.com/reports/54327"
+- "https://nodesecurity.io/advisories/49"
+credit: "John Firebaugh, Juan Broullón Sampedro"
+uuid: "0cc1813a-8ab7-42aa-a35f-a988551e0dc1"

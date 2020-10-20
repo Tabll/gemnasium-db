@@ -1,0 +1,23 @@
+---
+identifier: "SS-2016-007"
+package_slug: "packagist/silverstripe/framework"
+title: "VersionedRequestFilter vulnerability"
+description: "A cross-site scripting vulnerability in `VersionedRequestFilter` has
+  been found. If an incoming user request should not be able to access the requested
+  stage, an error message is created for display on the CMS login page that they are
+  redirected to. In this error message, the URL of the requested page is interpolated
+  into the error message without being escaped; hence, arbitrary HTML can be injected
+  into the CMS login page."
+date: "2016-08-15"
+pubdate: "2016-08-15"
+affected_range: ">=3.3.0-alpha0,<3.3.3-stable||>=3.4.0-alpha0,<3.4.1-stable"
+fixed_versions:
+- "3.3.3"
+- "3.4.1"
+affected_versions: "All versions starting from 3.3.0-alpha0 before 3.3.3, all versions
+  starting from 3.4.0-alpha0 before 3.4.1"
+solution: "Upgrade to latest version."
+urls:
+- "https://www.silverstripe.org/download/security-releases/ss-2016-007/"
+credit: "Matthew Daley"
+uuid: "5fb6a408-ab7d-4b82-9857-c566b7f8ad3b"

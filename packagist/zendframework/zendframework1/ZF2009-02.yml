@@ -1,0 +1,18 @@
+# This advisory is derived from
+# https://github.com/FriendsOfPHP/security-advisories
+---
+identifier: "ZF2009-02"
+package_slug: "packagist/zendframework/zendframework1"
+title: "Cross-site Scripting"
+description: "XSS vector in `Zend_Filter_StripTags`."
+date: "2009-02-27"
+pubdate: "2009-02-27"
+affected_range: ">=1.7.0,<1.7.6"
+fixed_versions:
+- "1.12.0"
+affected_versions: "All versions starting from 1.7.0 before 1.7.6"
+not_impacted: "All versions before 1.7.0, all versions starting from 1.7.6"
+solution: "Upgrade to version 1.12.0 or above."
+urls:
+- "https://framework.zend.com/security/advisory/ZF2009-02"
+uuid: "a147779c-31cc-41b8-83f2-29f4f8434261"

@@ -1,0 +1,18 @@
+---
+identifier: "GMS-2015-39"
+package_slug: "npm/ansi2html"
+title: "Regular Expression Denial of Service"
+description: "ansi2html is vulnerable to regular expression denial of service (ReDoS)
+  when certain types of user input is passed in which can lead to long processing
+  time that make the application unresponsive."
+date: "2015-10-25"
+pubdate: "2015-10-25"
+affected_range: "<=0.0.1"
+fixed_versions: []
+affected_versions: "All versions up to 0.0.1"
+solution: "Do not pass untrusted input to ansi2html or limit the size of the user
+  input to limit the impact."
+urls:
+- "https://nodesecurity.io/advisories/51"
+credit: "Adam Baldwin"
+uuid: "077d88ec-85d1-414f-a66c-fa1819bd1fdc"

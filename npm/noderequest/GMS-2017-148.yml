@@ -1,0 +1,16 @@
+---
+identifier: "GMS-2017-148"
+package_slug: "npm/noderequest"
+title: "Hijacked Environment Variables"
+description: "`noderequest` was a malicious module published with the intent to hijack
+  environment variables. It has been unpublished by npm."
+date: "2017-08-08"
+pubdate: "2017-08-08"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "If you have found this installed in your environment you should invalidate
+  and regenerate any authentication tokens found in your environment variables."
+urls:
+- "https://nodesecurity.io/advisories/512"
+uuid: "09f016f9-7886-43bc-a81e-dadc20f699c2"

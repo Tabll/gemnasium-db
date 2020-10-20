@@ -1,0 +1,21 @@
+---
+identifier: "GMS-2015-57"
+package_slug: "npm/hapi"
+title: "Route level CORS config overrides connection level defaults"
+description: "When server level, connection level or route level CORS configurations
+  are combined and when a higher level config included security restrictions (like
+  origin), a higher level config that included security restrictions (like origin)
+  would have those restrictions overridden by less restrictive defaults (e.g. origin
+  defaults to all origins `*`)."
+date: "2015-12-28"
+pubdate: "2015-12-28"
+affected_range: "<11.1.4"
+fixed_versions:
+- "11.1.4"
+affected_versions: "All versions before 11.1.4"
+solution: "Upgrade to latest version."
+urls:
+- "https://github.com/hapijs/hapi/issues/2980"
+- "https://nodesecurity.io/advisories/65"
+credit: "Eran Hammer"
+uuid: "8c69fc28-89b9-4991-96b9-c3ad3dacf799"

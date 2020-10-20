@@ -1,0 +1,20 @@
+---
+identifier: "EZSA-2017-006"
+package_slug: "packagist/ezsystems/ezpublish-legacy"
+title: "Information disclosure in backend content tree menu"
+description: "If a view has been disabled in site.ini `SiteAccessRules` Rules, and
+  an attacker accesses the backend with the URL to this module, then the tree menu
+  may be displayed. Since the tree menu may contain hidden items, this may lead to
+  information disclosure."
+date: "2017-09-11"
+pubdate: "2017-09-11"
+affected_range: "=2017.08"
+fixed_versions:
+- "v2017.08.1"
+affected_versions: "Version 2017.08"
+not_impacted: "2015.x and earlier"
+solution: "Upgrade to latest or apply patches; see provided link."
+urls:
+- "http://share.ez.no/community-project/security-advisories/ezsa-2017-006-information-disclosure-in-backend-content-tree-menu"
+- "https://github.com/ezsystems/ezpublish-legacy/commit/a4a0470f8d80f012fe14e4f8ab11c7d14375986c"
+uuid: "217fba50-ee53-4a83-befd-1a169bc752ad"

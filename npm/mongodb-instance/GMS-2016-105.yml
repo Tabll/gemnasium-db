@@ -1,0 +1,20 @@
+---
+identifier: "GMS-2016-105"
+package_slug: "npm/mongodb-instance"
+title: "Downloads Resources over HTTP"
+description: "mongodb-instance downloads binary resources over HTTP, which leaves
+  it vulnerable to MITM attacks. It may be possible to cause remote code execution
+  (RCE) by swapping out the requested binary with an attacker controlled binary if
+  the attacker is on the network or positioned in between the user and the remote
+  server."
+date: "2016-12-16"
+pubdate: "2016-12-16"
+affected_range: "<0.0.3"
+fixed_versions:
+- "0.0.3"
+affected_versions: "All versions before 0.0.3"
+solution: "Update to version 0.0.3 or later."
+urls:
+- "https://nodesecurity.io/advisories/235"
+credit: "Adam Baldwin"
+uuid: "e81981b6-6a8a-4207-adab-751bd65c7ec4"

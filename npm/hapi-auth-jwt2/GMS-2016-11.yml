@@ -1,0 +1,19 @@
+---
+identifier: "GMS-2016-11"
+package_slug: "npm/hapi-auth-jwt2"
+title: "Authentication Bypass in Try Mode"
+description: "When attempting to allow authentication mode try in hapi, Hapi introduced
+  an issue whereby people can bypass authentication."
+date: "2016-01-28"
+pubdate: "2016-01-28"
+affected_range: "5.1.1"
+fixed_versions:
+- "5.1.2"
+affected_versions: "Version 5.1.1"
+solution: "Upgrade to version 5.1.2 or greater."
+urls:
+- "https://github.com/dwyl/hapi-auth-jwt2/issues/111"
+- "https://github.com/dwyl/hapi-auth-jwt2/pull/112"
+- "https://nodesecurity.io/advisories/81"
+credit: "Alan Shaw"
+uuid: "051d2774-6c43-482f-9ed0-768cedecb723"

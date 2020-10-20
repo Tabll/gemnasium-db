@@ -1,0 +1,19 @@
+---
+identifier: "GMS-2015-9"
+package_slug: "npm/semver"
+title: "Regular Expression Denial of Service"
+description: "semver is vulnerable to regular expression denial of service when extremely
+  long version strings are parsed."
+date: "2015-04-03"
+pubdate: "2015-04-03"
+affected_range: "<4.3.2"
+fixed_versions:
+- "4.3.2"
+affected_versions: "All versions before 4.3.2"
+solution: "Update to latest version"
+urls:
+- "https://github.com/npm/node-semver/commit/c80180d8341a8ada0236815c29a2be59864afd70"
+- "https://github.com/npm/npm/releases/tag/v2.7.5"
+- "https://nodesecurity.io/advisories/semver_redos"
+credit: "Adam Baldwin"
+uuid: "bee62db4-45f8-40f1-b4ca-483bb8d2482a"

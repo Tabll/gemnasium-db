@@ -1,0 +1,19 @@
+---
+identifier: "GMS-2016-114"
+package_slug: "npm/steroids"
+title: "Downloads Resources over HTTP"
+description: "steroids downloads zipped resources over HTTP, which leaves it vulnerable
+  to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping
+  out the requested tarball with an attacker controlled tarball if the attacker is
+  on the network or positioned in between the user and the remote server."
+date: "2016-12-18"
+pubdate: "2016-12-18"
+affected_range: ">=0.0.0"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "No fix is currently available for this vulnerability. It's recommended
+  to not install nor use this module."
+urls:
+- "https://nodesecurity.io/advisories/168"
+credit: "Adam Baldwin"
+uuid: "838beb44-ff36-481f-8c8d-1ec99c2d997c"

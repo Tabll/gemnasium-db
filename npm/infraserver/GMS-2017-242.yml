@@ -1,0 +1,17 @@
+---
+identifier: "GMS-2017-242"
+package_slug: "npm/infraserver"
+title: "Directory Traversal"
+description: "`infraserver` is vulnerable to a directory traversal issue, giving an
+  attacker access to the filesystem by placing \"../\" in the url./n"
+date: "2017-09-27"
+pubdate: "2017-09-27"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/infraserver"
+- "https://nodesecurity.io/advisories/471"
+credit: "Liang Gong"
+uuid: "23a032d8-47e2-4f21-9f58-9cfd4884d272"

@@ -1,0 +1,21 @@
+---
+identifier: "TYPO3-CORE-SA-2017-005"
+package_slug: "packagist/typo3/cms"
+title: "Information Disclosure"
+description: "Failing to properly check user permission on file storages, editors
+  could gain knowledge of protected storages and its folders as well as using them
+  in a file collection being rendered in the frontend. A valid backend user account
+  is needed to exploit this vulnerability."
+date: "2017-09-05"
+pubdate: "2017-09-05"
+affected_range: ">=7.6.0,<7.6.22||>=8.0.0,<8.7.5"
+fixed_versions:
+- "v7.6.22"
+- "v8.7.5"
+affected_versions: "All versions starting from 7.6.0 before 7.6.22, all versions starting
+  from 8.0.0 before 8.7.5"
+solution: "Upgrade to latest version."
+urls:
+- "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2017-005/"
+credit: "Tobias Kummer, Georg Ringer"
+uuid: "014531ea-71b0-4f61-9b8b-87e596c2fc86"

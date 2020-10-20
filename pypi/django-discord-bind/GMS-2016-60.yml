@@ -1,0 +1,16 @@
+---
+identifier: "GMS-2016-60"
+package_slug: "pypi/django-discord-bind"
+title: "Cross-Site Request Forgery"
+description: "This package is vulnerable to Cross-Site Request Forgery (CSRF) attacks."
+date: "2016-08-19"
+pubdate: "2016-08-19"
+affected_range: "<0.2.0"
+fixed_versions:
+- "0.2.0"
+affected_versions: "All versions before 0.2.0"
+solution: "Upgrade to latest version."
+urls:
+- "https://github.com/mrogaski/django-discord-bind/commit/b586a9c9c4cad3cf17f46b34e7faa5174ce04fa8"
+credit: "Mark Rogaski"
+uuid: "ac4735db-b9e8-476f-bf72-b9ae743df3f0"

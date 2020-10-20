@@ -1,0 +1,18 @@
+# This advisory is derived from
+# https://github.com/FriendsOfPHP/security-advisories
+---
+identifier: "2018-11-20-1"
+package_slug: "packagist/ezsystems/repository-forms"
+title: "Information Disclosure"
+description: "User data disclosure in repository-forms."
+date: "2018-11-20"
+pubdate: "2018-11-20"
+affected_range: ">=2.3.0,<2.3.2.1"
+fixed_versions:
+- "2.3.2.1"
+affected_versions: "All versions starting from 2.3.0 before 2.3.2.1"
+not_impacted: "All versions before 2.3.0, all versions starting from 2.3.2.1"
+solution: "Upgrade to version 2.3.2.1 or above."
+urls:
+- "http://share.ez.no/community-project/security-advisories/ezsa-2018-007-user-data-disclosure"
+uuid: "da8603b1-35e3-4f55-8f81-26621a7df8e3"

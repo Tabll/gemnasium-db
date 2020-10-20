@@ -1,0 +1,15 @@
+---
+identifier: "GMS-2017-37"
+package_slug: "npm/tomita"
+title: "Downloads Resources over HTTP"
+description: "tomita"
+date: "2017-01-01"
+pubdate: "2017-01-01"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://nodesecurity.io/advisories/267"
+credit: "Adam Baldwin"
+uuid: "d840775c-8b9e-4d5a-9457-7b514ff9a0e1"

@@ -1,0 +1,18 @@
+# This advisory is derived from
+# https://github.com/FriendsOfPHP/security-advisories
+---
+identifier: "2019-01-22-3"
+package_slug: "packagist/typo3/cms-core"
+title: "Improper Access Control"
+description: "Broken Access Control in Localization Handling."
+date: "2019-01-22"
+pubdate: "2019-01-22"
+affected_range: ">=8.0.0,<8.7.23"
+fixed_versions:
+- "8.7.23"
+affected_versions: "All versions starting from 8.0.0 before 8.7.23"
+not_impacted: "All versions before 8.0.0, all versions starting from 8.7.23"
+solution: "Upgrade to version 8.7.23 or above."
+urls:
+- "https://typo3.org/security/advisory/typo3-core-sa-2019-003/"
+uuid: "fb952290-296e-4fc5-b7f0-e6beb952fa08"

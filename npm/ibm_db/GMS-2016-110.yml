@@ -1,0 +1,19 @@
+---
+identifier: "GMS-2016-110"
+package_slug: "npm/ibm_db"
+title: "Downloads Resources over HTTP"
+description: "ibm_db downloads binary resources over HTTP, which leaves it vulnerable
+  to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping
+  out the requested binary with an attacker controlled binary if the attacker is on
+  the network or positioned in between the user and the remote server."
+date: "2016-12-18"
+pubdate: "2016-12-18"
+affected_range: "<1.0.2"
+fixed_versions:
+- "1.0.2"
+affected_versions: "All versions before 1.0.2"
+solution: "Upgrade to latest version. "
+urls:
+- "https://nodesecurity.io/advisories/163"
+credit: "Adam Baldwin"
+uuid: "82b033cc-5330-4b1e-8f73-5cfd5c9aaa2f"

@@ -1,0 +1,14 @@
+---
+identifier: "GMS-2019-3"
+package_slug: "pypi/python3-dateutil"
+title: "Malicious package (Typosquatting)"
+description: "This is a malicious package which tries to steal SSH and GPG keys."
+date: "2019-12-04"
+pubdate: "2019-12-04"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "Replace this package with dateutil."
+urls:
+- "https://www.zdnet.com/article/two-malicious-python-libraries-removed-from-pypi/"
+uuid: "78990aad-e6b9-47d4-91ab-acdcd98ed2fd"

@@ -1,0 +1,20 @@
+# This advisory is derived from
+# https://github.com/FriendsOfPHP/security-advisories
+---
+identifier: "2017-05-09"
+package_slug: "packagist/amphp/artax"
+title: "Cookie leakage to wrong origins and non-restricted cookie acceptance"
+description: "Cookie leakage to wrong origins and non-restricted cookie acceptance"
+date: "2017-05-09"
+pubdate: "2017-05-09"
+affected_range: "<1.0.6||>=2,<2.0.6"
+fixed_versions:
+- "1.0.6"
+- "2.0.6"
+affected_versions: "All versions before 1.0.6, all versions starting from 2 before
+  2.0.6"
+not_impacted: "All versions after 1.0.6 before 2, all versions starting from 2.0.6"
+solution: "Upgrade to versions 1.0.6, 2.0.6 or above."
+urls:
+- "https://github.com/amphp/artax/releases/tag/v2.0.6"
+uuid: "7f88672c-1d01-4b5b-a84b-bb43678145f4"

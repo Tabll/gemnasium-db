@@ -1,0 +1,18 @@
+---
+identifier: "GMS-2014-7"
+package_slug: "npm/yar"
+title: "Denial of Service"
+description: "Yar uses an encrypted cookie for session support which can crash the
+  process if it contains an invalid value."
+date: "2014-06-16"
+pubdate: "2014-06-16"
+affected_range: "<2.2.0"
+fixed_versions:
+- "2.2.0"
+affected_versions: "All versions before 2.2.0"
+solution: "Upgrade to latest version."
+urls:
+- "https://github.com/hapijs/yar/issues/34"
+- "https://nodesecurity.io/advisories/yar-DoS"
+credit: "Reid Burke"
+uuid: "3c47db82-bc4c-4d3a-8f6a-4a240c8a77d7"

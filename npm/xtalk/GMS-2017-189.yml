@@ -1,0 +1,17 @@
+---
+identifier: "GMS-2017-189"
+package_slug: "npm/xtalk"
+title: "Directory Traversal"
+description: "`xtalk` is vulnerable to a directory traversal issue, giving an attacker
+  access to the filesystem by placing \"../\" in the URL."
+date: "2017-09-01"
+pubdate: "2017-09-01"
+affected_range: ">=0.0.2"
+fixed_versions: []
+affected_versions: "All versions starting from 0.0.2"
+solution: "Because there is no patched version for this module, we suggest using a
+  different one."
+urls:
+- "https://nodesecurity.io/advisories/339"
+credit: "Liang Gong"
+uuid: "977f36ef-dbdd-4b68-9e0f-5231f8696893"

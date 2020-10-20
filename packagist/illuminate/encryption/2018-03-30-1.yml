@@ -1,0 +1,31 @@
+# This advisory is derived from
+# https://github.com/FriendsOfPHP/security-advisories
+---
+identifier: "2018-03-30-1"
+package_slug: "packagist/illuminate/encryption"
+title: "Cryptographic Issues"
+description: "Exploit of encryption failure vulnerability."
+date: "2018-03-30"
+pubdate: "2018-03-30"
+affected_range: ">=4.0.0,<=4.0.11||>=4.1.0,<=4.1.31||>=4.2.0,<=4.2.22
+  ||>=5.0.0,<=5.0.35||>=5.1.0,<=5.1.46||>=5.2.0,<=5.2.45||>=5.3.0,<=5.3.31
+  ||>=5.4.0,<=5.4.36||>=5.5.0,<5.5.40||>=5.6.0,<5.6.15"
+fixed_versions:
+- "5.5.40"
+- "5.6.15"
+affected_versions: "All versions starting from 4.0.0 up to 4.0.11, all versions starting
+  from 4.1.0 up to 4.1.31, all versions starting from 4.2.0 up to 4.2.22, all versions
+  starting from 5.0.0 up to 5.0.35, all versions starting from 5.1.0 up to 5.1.46,
+  all versions starting from 5.2.0 up to 5.2.45, all versions starting from 5.3.0
+  up to 5.3.31, all versions starting from 5.4.0 up to 5.4.36, all versions starting
+  from 5.5.0 before 5.5.40, all versions starting from 5.6.0 before 5.6.15"
+not_impacted: "All versions before 4.0.0, all versions after 4.0.11 before 4.1.0,
+  all versions after 4.1.31 before 4.2.0, all versions after 4.2.22 before 5.0.0,
+  all versions after 5.0.35 before 5.1.0, all versions after 5.1.46 before 5.2.0,
+  all versions after 5.2.45 before 5.3.0, all versions after 5.3.31 before 5.4.0,
+  all versions after 5.4.36 before 5.5.0, all versions starting from 5.5.40 before
+  5.6.0, all versions starting from 5.6.15"
+solution: "Upgrade to versions 5.5.40, 5.6.15 or above."
+urls:
+- "https://medium.com/@taylorotwell/laravel-security-release-5-6-15-and-5-5-40-56f1257933a0"
+uuid: "b4e6a97b-3050-44d0-9b80-82e5bd94d90f"

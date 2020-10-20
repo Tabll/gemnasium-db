@@ -1,0 +1,20 @@
+---
+identifier: "GMS-2016-72"
+package_slug: "npm/reduce-css-calc"
+title: "Arbitrary Code Injection"
+description: "Arbitrary code execution is possible through crafted css. This makes
+  cross sites scripting (XSS) possible on the client and arbitrary code injection
+  possible on the server and user input is passed to the `calc` function."
+date: "2016-10-17"
+pubdate: "2016-10-17"
+affected_range: "<=1.2.4"
+fixed_versions:
+- "1.2.5"
+affected_versions: "All versions up to 1.2.4"
+solution: "Update to version 1.2.5 or later"
+urls:
+- "https://gist.github.com/ChALkeR/415a41b561ebea9b341efbb40b802fc9"
+- "https://github.com/MoOx/reduce-css-calc/commit/aebe8f7adce937c0fec4c1315e4113ef74cadb6a"
+- "https://nodesecurity.io/advisories/144"
+credit: "Сковорода Никита Андреевич"
+uuid: "55ce8ffe-908f-496e-ad30-59cd166ad0cf"

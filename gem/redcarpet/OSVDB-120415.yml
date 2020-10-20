@@ -1,0 +1,20 @@
+---
+identifier: "OSVDB-120415"
+package_slug: "gem/redcarpet"
+title: "XSS via parse_inline()"
+description: "There's a flaw that allows a cross-site scripting (XSS) attack. This
+  flaw exists because the `parse_inline()` function in markdown.c does not validate
+  input before returning it to users. This may allow a remote attacker to create a
+  specially crafted request that would execute arbitrary script code in a user's browser
+  session within the trust relationship between their browser and the server."
+date: "2014-04-07"
+pubdate: "2014-04-07"
+affected_range: "<3.2.3"
+fixed_versions:
+- "3.2.3"
+affected_versions: "All versions before 3.2.3"
+urls:
+- "http://osvdb.org/show/osvdb/120415"
+- "https://github.com/vmg/redcarpet/commit/a6c759d7e7cbdd8cb8a1876f97a38b1befe221d5"
+credit: "Daniel LeCheminant (@d_lec)"
+uuid: "8a2e2610-51ff-4734-b1d3-9b478c1406d8"

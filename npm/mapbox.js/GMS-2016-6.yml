@@ -1,0 +1,23 @@
+---
+identifier: "GMS-2016-6"
+package_slug: "npm/mapbox.js"
+title: "Content Injection via TileJSON Name"
+description: "Mapbox.js is vulnerable to a cross-site-scripting attack in certain
+  uncommon usage scenarios."
+date: "2016-01-12"
+pubdate: "2016-01-12"
+affected_range: "<1.6.6 || < 2.2.4 >=2.0.0-beta0"
+fixed_versions:
+- "1.6.6"
+- "2.2.4"
+affected_versions: "All versions before 1.6.6, all versions starting from 2.0.0-beta0
+  before 2.2.4"
+solution: "Upgrade to Mapbox.js version 2.2.4. If you are still using a 1.x version
+  and unable to upgrade to 2.2.4, upgrade to 1.6.6.\r\n\r\nIf you are unable to upgrade
+  to either 2.2.4 or 1.6.6, you can also remove instances of L.mapbox.shareControl
+  from your maps."
+urls:
+- "https://hackerone.com/reports/99245"
+- "https://nodesecurity.io/advisories/74"
+credit: "Alexandra Ulsh, Abdullah Ahmet Erdem"
+uuid: "af2f8035-5f46-49a2-8966-b8f745c2ab11"

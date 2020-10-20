@@ -1,0 +1,29 @@
+---
+identifier: "TYPO3-CORE-SA-2016-013"
+package_slug: "packagist/typo3/cms"
+title: "Missing Access Check"
+description: "Extbase request handling fails to implement a proper access check for
+  requested controller/ action combinations, which makes it possible for an attacker
+  to execute arbitrary Extbase actions by crafting a special request. To successfully
+  exploit this vulnerability, an attacker must have access to at least one Extbase
+  plugin or module action in a TYPO3 installation. The missing access check inevitably
+  leads to information disclosure or remote code execution, depending on the action
+  that an attacker is able to execute."
+date: "2016-05-24"
+pubdate: "2016-05-24"
+affected_range: ">=4.3.0-alpha,<6.2.24||>=7.0.0-alpha,<7.6.8||>=8.0.0-alpha,<8.1.1"
+fixed_versions:
+- "6.2.24"
+- "7.6.8"
+- "8.1.1"
+affected_versions: "All versions starting from 4.3.0-alpha before 6.2.24, all versions
+  starting from 7.0.0-alpha before 7.6.8, all versions starting from 8.0.0-alpha before
+  8.1.1"
+solution: "Upgrade to latest or apply patches."
+urls:
+- "https://github.com/TYPO3/TYPO3.CMS/commit/21ed4054212babb7ec75d80a24f95c6ba25bd2fb"
+- "https://github.com/TYPO3/TYPO3.CMS/commit/404f09d491c96b294ded5e2741277dfbeba92807"
+- "https://github.com/TYPO3/TYPO3.CMS/commit/c10db60dfc87c33542c418fa316754a5309c3e26"
+- "https://typo3.org/teamssecuritysecurity-bulletins/security-bulletins-single-view/article/missing-access-check-in-typo3-cms/"
+credit: "Stefan Horlacher from Arcus Security GmbH, Alex Kellner, Oliver Hader"
+uuid: "892f3e6a-6675-4bc1-be5f-7e6f973e679e"

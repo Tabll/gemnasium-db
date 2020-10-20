@@ -1,0 +1,19 @@
+---
+identifier: "GMS-2016-10"
+package_slug: "npm/i18n-node-angular"
+title: "Denial of Service and Content Injection"
+description: "A REST API endpoint that is used for development was not disabled in
+  production environments, a malicious user can use it to fill up the server and cause
+  a Denial of Service or content injection."
+date: "2016-01-25"
+pubdate: "2016-01-25"
+affected_range: "<1.4.0"
+fixed_versions:
+- "1.4.0"
+affected_versions: "All versions before 1.4.0"
+solution: "Upgrade to version 1.4.0 or greater."
+urls:
+- "https://github.com/oliversalzburg/i18n-node-angular/commit/877720d2d9bb90dc8233706e81ffa03f99fc9dc8"
+- "https://nodesecurity.io/advisories/80"
+credit: "Garth Boyd"
+uuid: "4f58353c-ec55-4435-a0ae-3a6b19f40ae8"

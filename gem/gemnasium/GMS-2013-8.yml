@@ -1,0 +1,15 @@
+---
+identifier: "GMS-2013-8"
+package_slug: "gem/gemnasium"
+title: "Api V1 is deprecated"
+description: "The V1 of gemnasium.com's API has been deprecated due to major changes.
+  All users should upgrade to 2.0.0"
+date: "2013-04-30"
+pubdate: "2013-04-30"
+affected_range: "<2.0.0"
+fixed_versions:
+- "2.0.0"
+affected_versions: "All versions before 2.0.0"
+solution: "Please upgrade to 2.0.0"
+urls: []
+uuid: "60503f93-bf6e-4e97-a34a-e0d00daf8e75"

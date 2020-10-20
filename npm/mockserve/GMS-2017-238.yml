@@ -1,0 +1,17 @@
+---
+identifier: "GMS-2017-238"
+package_slug: "npm/mockserve"
+title: "Directory Traversal"
+description: "`mockserve` is vulnerable to a directory traversal issue, giving an
+  attacker access to the filesystem by placing \"../\" in the url./n"
+date: "2017-09-27"
+pubdate: "2017-09-27"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/mockserve"
+- "https://nodesecurity.io/advisories/445"
+credit: "Liang Gong"
+uuid: "112138b0-e3db-489b-9857-23552a29c91e"

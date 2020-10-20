@@ -1,0 +1,17 @@
+---
+identifier: "GMS-2016-21"
+package_slug: "npm/summit"
+title: "Unsafe eval()"
+description: "When using the PouchDB driver in the module, an attacker can execute
+  arbitrary commands via the collection name."
+date: "2016-04-08"
+pubdate: "2016-04-08"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://github.com/notduncansmith/summit/issues/23"
+- "https://nodesecurity.io/advisories/315"
+credit: "Cristian-Alexandru Staicu"
+uuid: "ae7103ce-dd93-45f3-8f47-ffa31a0655ba"

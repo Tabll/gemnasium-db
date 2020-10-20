@@ -1,0 +1,16 @@
+---
+identifier: "GMS-2017-89"
+package_slug: "npm/unicode-json"
+title: "Downloads Resources over HTTP"
+description: "unicode-json downloads data resources over HTTP, which leaves it vulnerable
+  to MITM attacks."
+date: "2017-01-01"
+pubdate: "2017-01-01"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://nodesecurity.io/advisories/206"
+credit: "Adam Baldwin"
+uuid: "2b12c48f-9aef-4cf5-90d9-9e78c414cec9"

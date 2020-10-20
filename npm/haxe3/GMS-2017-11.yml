@@ -1,0 +1,18 @@
+---
+identifier: "GMS-2017-11"
+package_slug: "npm/haxe3"
+title: "Downloads Resources over HTTP"
+description: "haxe3 downloads resources over HTTP, which leaves it vulnerable to MITM
+  attacks. It may be possible to cause remote code execution (RCE) by swapping out
+  the requested resources with an attacker controlled copy if the attacker is on the
+  network or positioned in between the user and the remote server."
+date: "2017-01-01"
+pubdate: "2017-01-01"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://nodesecurity.io/advisories/294"
+credit: "Adam Baldwin"
+uuid: "4cf0ede1-87fd-4b99-9bf2-6cf30adce3f1"

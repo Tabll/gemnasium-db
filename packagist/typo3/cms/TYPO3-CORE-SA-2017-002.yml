@@ -1,0 +1,18 @@
+---
+identifier: "TYPO3-CORE-SA-2017-002"
+package_slug: "packagist/typo3/cms"
+title: "Authentication Bypass"
+description: "Due to late TCA initialization the authentication service fails to restrict
+  frontend user according to the validation rules. Therefore it is possible to authenticate
+  restricted (e.g. disabled) frontend users."
+date: "2017-02-28"
+pubdate: "2017-02-28"
+affected_range: ">=8.0.0,<8.6.1"
+fixed_versions:
+- "8.6.1"
+affected_versions: "All versions starting from 8.0.0 before 8.6.1"
+solution: "Upgrade to latest version."
+urls:
+- "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2017-002/"
+credit: "Thomas Dahlke"
+uuid: "5e8b7695-9cf9-44f0-b675-f2b894c89518"

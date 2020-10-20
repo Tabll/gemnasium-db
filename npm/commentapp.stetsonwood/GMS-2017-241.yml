@@ -1,0 +1,17 @@
+---
+identifier: "GMS-2017-241"
+package_slug: "npm/commentapp.stetsonwood"
+title: "Directory Traversal"
+description: "`commentapp.stetsonwood` is vulnerable to a directory traversal issue,
+  giving an attacker access to the filesystem by placing \"../\" in the url./n"
+date: "2017-09-27"
+pubdate: "2017-09-27"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/commentapp.stetsonwood"
+- "https://nodesecurity.io/advisories/470"
+credit: "Liang Gong"
+uuid: "eb6afd17-1488-44d6-8466-ea771c331347"

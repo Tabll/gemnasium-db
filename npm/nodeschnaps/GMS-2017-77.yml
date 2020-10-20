@@ -1,0 +1,20 @@
+---
+identifier: "GMS-2017-77"
+package_slug: "npm/nodeschnaps"
+title: "Downloads Resources over HTTP"
+description: "nodeschnaps downloads binary resources over HTTP, which leaves it vulnerable
+  to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping
+  out the requested binary with an attacker controlled binary if the attacker is on
+  the network or positioned in between the user and the remote server."
+date: "2017-01-01"
+pubdate: "2017-01-01"
+affected_range: "<0.8.0"
+fixed_versions:
+- "0.8.0"
+affected_versions: "All versions before 0.8.0"
+solution: "Upgrade to 0.8.0 or above"
+urls:
+- "https://github.com/killmag10/nodeschnaps/commit/b9e989e2e4dc4f4da01af48ecb15c5f15616b7d6"
+- "https://nodesecurity.io/advisories/212"
+credit: "Adam Baldwin"
+uuid: "19570eb5-6874-4a75-8798-0dbeb2623e9a"

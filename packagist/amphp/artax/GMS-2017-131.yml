@@ -1,0 +1,16 @@
+---
+identifier: "GMS-2017-131"
+package_slug: "packagist/amphp/artax"
+title: "Cookie leakage, non-restricted cookie acceptance"
+description: "Cookies of `foo.bar.example.com` are leaked to foo.bar. Additionally,
+  any site can set cookies for any other site."
+date: "2017-05-07"
+pubdate: "2017-05-07"
+affected_range: "<2.0.6"
+fixed_versions:
+- "v2.0.6"
+affected_versions: "All versions before 2.0.6"
+solution: "Upgrade to latest version."
+urls:
+- "https://github.com/amphp/artax/releases/tag/v2.0.6"
+uuid: "fb7a804d-dfd6-4a58-9e85-d0858643dd82"

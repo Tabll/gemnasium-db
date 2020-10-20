@@ -1,0 +1,21 @@
+---
+identifier: "GMS-2016-80"
+package_slug: "packagist/gregwar/rst"
+title: "Local File Inclusion Vulnerability"
+description: "Gregwar is vulnerable to local file inclusion when including RST templates."
+date: "2016-10-31"
+pubdate: "2016-10-31"
+affected_range: "<1.0.3"
+fixed_versions:
+- "v1.0.3"
+affected_versions: "All versions before 1.0.3"
+solution: "Upgrade to version 1.0.3 and set the \"include\" parameter according to
+  your needs. If you're loading RST templates from a database, disable include. If
+  you're loading RST templates from the filesystem and need include for snippets,
+  jail all includes to within a common directory."
+urls:
+- "https://github.com/Gregwar/RST/pull/34"
+- "https://hackerone.com/reports/179034"
+- "https://twitter.com/CiPHPerCoder/status/793076643468304384"
+credit: "hextitan"
+uuid: "4c63982c-f8bb-482b-8ccd-e25b1edbc38b"

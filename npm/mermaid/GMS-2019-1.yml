@@ -1,0 +1,19 @@
+---
+identifier: "GMS-2019-1"
+package_slug: "npm/mermaid"
+title: "Cross-Site Scripting"
+description: "If malicious input such as `A[\"<img src=invalid onerror=alert('XSS')></img>\"]`
+  is provided to the application, it will execute the code instead of rendering it
+  as text due to improper output encoding."
+date: "2019-05-13"
+pubdate: "2019-05-13"
+affected_range: "<8.2.3"
+fixed_versions:
+- "8.2.3"
+affected_versions: "All versions before 8.2.3."
+solution: "Upgrade to 8.2.3 or later."
+urls:
+- "https://github.com/knsv/mermaid/issues/869"
+- "https://github.com/knsv/mermaid/issues/847"
+- "https://www.npmjs.com/advisories/751"
+uuid: "a530ab88-bbda-42f9-bad5-ae10a153bbb2"

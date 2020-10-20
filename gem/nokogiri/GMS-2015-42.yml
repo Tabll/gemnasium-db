@@ -1,0 +1,23 @@
+---
+identifier: "GMS-2015-42"
+package_slug: "gem/nokogiri"
+title: "Multiple vulnerabilities in libxml2, libxslt"
+description: "The vendored libxml2 and libxslt libraries have multiple vulnerabilities:
+  CVE-2015-1819 CVE-2015-7941_1 CVE-2015-7941_2 CVE-2015-7942 CVE-2015-7942-2 CVE-2015-8035
+  CVE-2015-7995"
+date: "2015-11-16"
+pubdate: "2015-11-16"
+affected_range: "<1.6.6.3||>=1.6.7.rc2 <1.6.7.rc4"
+fixed_versions:
+- "1.6.6.3"
+- "1.6.7.rc4"
+affected_versions: "All versions before 1.6.6.3, all versions starting from 1.6.7.rc2
+  before 1.6.7.rc4"
+solution: "Upgrade to latest version."
+urls:
+- "https://github.com/sparklemotion/nokogiri/blob/master/CHANGELOG.rdoc#167rc4--2015-11-22"
+- "https://github.com/sparklemotion/nokogiri/blob/v1.6.6.x/CHANGELOG.rdoc#1663--2015-11-16"
+- "https://github.com/sparklemotion/nokogiri/commit/ac6106f1e641d50b27752c52b355e01d03ae8829"
+- "https://github.com/sparklemotion/nokogiri/commit/ee52b7be5b47e1029af98f6b7eb6df7fc5ffd359"
+- "https://groups.google.com/forum/#!topic/nokogiri-talk/gEpHWo2xLCE"
+uuid: "8d7b4a38-b0c8-4e10-8941-28e5f588a056"

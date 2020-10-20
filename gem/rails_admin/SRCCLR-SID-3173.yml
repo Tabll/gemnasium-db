@@ -1,0 +1,20 @@
+---
+identifier: "SRCCLR-SID-3173"
+package_slug: "gem/rails_admin"
+title: "Cross-Site Request Forgery"
+description: "The `ApplicationController` is not protected against CSRF (Cross-Site
+  Request Forgery)."
+date: "2016-12-21"
+pubdate: "2016-12-21"
+affected_range: ">=1.0.0-alpha0 <1.1.1"
+fixed_versions:
+- "1.1.1"
+- "1.2.0"
+affected_versions: "All versions starting from 1.0.0-alpha0 before 1.1.1"
+not_impacted: "0.x"
+solution: "Upgrade to latest version."
+urls:
+- "https://github.com/sferik/rails_admin/commit/b13e879eb93b661204e9fb5e55f7afa4f397537a"
+- "https://www.sourceclear.com/registry/security/cross-site-request-forgery-csrf-/ruby/sid-3173"
+credit: "SourceClear"
+uuid: "78453bc9-7aec-4c34-b32a-2b2d7c19f5bd"

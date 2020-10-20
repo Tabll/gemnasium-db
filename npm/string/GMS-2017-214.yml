@@ -1,0 +1,18 @@
+---
+identifier: "GMS-2017-214"
+package_slug: "npm/string"
+title: "Regular Expression Denial of Service"
+description: "The string module is vulnerable to regular expression denial of service
+  when specifically crafted untrusted user input is passed into the `underscore` or
+  `unescapeHTML` methods."
+date: "2017-09-25"
+pubdate: "2017-09-25"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://github.com/jprichardson/string.js/issues/212"
+- "https://nodesecurity.io/advisories/536"
+credit: "Cristian-Alexandru Staicu"
+uuid: "8acb039a-f07d-43af-ab28-cadc6aa353e3"

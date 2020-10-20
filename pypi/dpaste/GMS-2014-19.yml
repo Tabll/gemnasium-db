@@ -1,0 +1,18 @@
+---
+identifier: "GMS-2014-19"
+package_slug: "pypi/dpaste"
+title: "Cross-site Scripting"
+description: "This package is vulnerable to Cross-Site Scripting (XSS) attacks due
+  to not escaping HTML tags."
+date: "2014-08-01"
+pubdate: "2014-08-01"
+affected_range: "<2.8"
+fixed_versions:
+- "2.8"
+affected_versions: "All versions before 2.8"
+solution: "Upgrade to latest version."
+urls:
+- "https://github.com/bartTC/dpaste/blob/master/CHANGELOG#L68"
+- "https://github.com/bartTC/dpaste/commit/497e5f0c28d575b3e92ef65b70384314a9e330da"
+credit: "Martin Mahner"
+uuid: "b9d8e48e-c0c6-47e9-8860-67292d2b000e"

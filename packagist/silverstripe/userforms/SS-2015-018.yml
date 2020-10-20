@@ -1,0 +1,20 @@
+---
+identifier: "SS-2015-018"
+package_slug: "packagist/silverstripe/userforms"
+title: "File upload exposure"
+description: "The userforms module allows CMS administrators to create public facing
+  forms with file upload abilities. These files are uploaded into a predictable public
+  path on the website, unless configured otherwise by the CMS administrator setting
+  up the form. While the name of the uploaded file itself is not predictable, certain
+  actions taken by CMS authors could expose it. For example, submission notification
+  emails contain a link to the file without authorisation checks."
+date: "2015-08-31"
+pubdate: "2015-08-31"
+affected_range: "<3.0.0-stable"
+fixed_versions:
+- "3.0.0"
+affected_versions: "All versions before 3.0.0"
+solution: "Upgrade to latest version."
+urls:
+- "http://www.silverstripe.org/software/download/security-releases/ss-2015-018/"
+uuid: "8e3ec46f-9ceb-496d-b501-f28c5a804eda"

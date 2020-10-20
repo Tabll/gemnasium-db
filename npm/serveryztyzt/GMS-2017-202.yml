@@ -1,0 +1,17 @@
+---
+identifier: "GMS-2017-202"
+package_slug: "npm/serveryztyzt"
+title: "Directory Traversal"
+description: "`serveryztyzt` is vulnerable to a directory traversal issue, giving
+  an attacker access to the filesystem by placing \"../\" in the URL."
+date: "2017-09-12"
+pubdate: "2017-09-12"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://github.com/JacksonGL/NPM-Vuln-PoC/tree/master/directory-traversal/serveryztyzt"
+- "https://nodesecurity.io/advisories/354"
+credit: "Liang Gong"
+uuid: "979cefbe-529b-48d3-9102-b004d7d507aa"

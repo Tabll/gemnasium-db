@@ -1,0 +1,18 @@
+# This advisory is derived from
+# https://github.com/FriendsOfPHP/security-advisories
+---
+identifier: "ZF2018-01"
+package_slug: "packagist/zendframework/zendframework"
+title: "URL Redirection to Untrusted Site (Open Redirect)"
+description: "URL Rewrite vulnerability."
+date: "2018-06-11"
+pubdate: "2018-06-11"
+affected_range: "<2.5.0"
+fixed_versions:
+- "2.5.0"
+affected_versions: "All versions before 2.5.0"
+not_impacted: "All versions starting from 2.5.0"
+solution: "Upgrade to version 2.5.0 or above."
+urls:
+- "https://framework.zend.com/security/advisory/ZF2018-01"
+uuid: "2d20d2c2-0e8d-4e25-965c-2b43584db882"

@@ -1,0 +1,16 @@
+---
+identifier: "GMS-2017-135"
+package_slug: "packagist/shopware/shopware"
+title: "Remote Code Execution Vulnerability"
+description: "Under certain circumstances, it’s possible to execute an authorized
+  foreign code in Shopware."
+date: "2017-06-01"
+pubdate: "2017-06-01"
+affected_range: "<5.2.25"
+fixed_versions:
+- "v5.2.25"
+affected_versions: "All versions before 5.2.25"
+solution: "Upgrade to latest or apply patches."
+urls:
+- "http://en.community.shopware.com/_detail_2015.html"
+uuid: "ef9fa3a4-176c-4245-b7dc-ec54e260aa42"

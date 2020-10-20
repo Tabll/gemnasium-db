@@ -1,0 +1,21 @@
+---
+identifier: "GMS-2015-24"
+package_slug: "npm/uglify-js"
+title: "Backdooring via erroneous minifcation of boolean expression"
+description: "There's a vulnerability which allows a specially crafted Javascript
+  file to have altered functionality after minification. This bug was demonstrated
+  to allow potentially malicious code to be hidden within secure code, activated by
+  minification. Affected versions erroneously minify boolean expressions."
+date: "2015-08-24"
+pubdate: "2015-08-24"
+affected_range: "<2.4.24"
+fixed_versions:
+- "2.4.24"
+affected_versions: "All versions before 2.4.24"
+solution: "Upgrade to latest version."
+urls:
+- "https://github.com/mishoo/UglifyJS2/issues/751"
+- "https://nodesecurity.io/advisories/uglifyjs_incorrectly_handles_non-boolean_comparisons"
+- "https://zyan.scripts.mit.edu/blog/backdooring-js/"
+credit: "Yan Zhu, Tom MacWright (uglify-js)"
+uuid: "f52aa9e4-a3b1-4b29-99f8-eb7c1d2181e6"

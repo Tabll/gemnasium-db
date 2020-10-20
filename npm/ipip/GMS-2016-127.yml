@@ -1,0 +1,17 @@
+---
+identifier: "GMS-2016-127"
+package_slug: "npm/ipip"
+title: "Downloads Resources over HTTP"
+description: "ipip downloads data resources over HTTP, which leaves it vulnerable
+  to MITM attacks."
+date: "2016-12-21"
+pubdate: "2016-12-21"
+affected_range: ">=0.0.0"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "No fix is currently available for this vulnerability. It's recommended
+  to not install nor use this module."
+urls:
+- "https://nodesecurity.io/advisories/184"
+credit: "Adam Baldwin"
+uuid: "a45a3018-440a-4306-948d-ae1bd975b886"

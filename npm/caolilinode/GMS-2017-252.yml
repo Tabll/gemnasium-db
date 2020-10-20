@@ -1,0 +1,17 @@
+---
+identifier: "GMS-2017-252"
+package_slug: "npm/caolilinode"
+title: "Directory Traversal"
+description: "`caolilinode` is vulnerable to a directory traversal issue, giving an
+  attacker access to the filesystem by placing \"../\" in the url./n"
+date: "2017-09-28"
+pubdate: "2017-09-28"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/caolilinode"
+- "https://nodesecurity.io/advisories/394"
+credit: "Liang Gong"
+uuid: "ed91e8a1-5999-47ac-8432-67e50c3d4a9c"

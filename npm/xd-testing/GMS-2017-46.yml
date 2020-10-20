@@ -1,0 +1,18 @@
+---
+identifier: "GMS-2017-46"
+package_slug: "npm/xd-testing"
+title: "Downloads Resources over HTTP"
+description: "xd-testing downloads binary resources over HTTP, which leaves it vulnerable
+  to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping
+  out the requested binary with an attacker controlled binary if the attacker is on
+  the network or positioned in between the user and the remote server."
+date: "2017-01-01"
+pubdate: "2017-01-01"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://nodesecurity.io/advisories/257"
+credit: "Adam Baldwin"
+uuid: "9d9e2e3f-22e2-4f43-89a7-6870147823a9"

@@ -1,0 +1,21 @@
+---
+identifier: "GMS-2016-121"
+package_slug: "npm/nw"
+title: "Downloads Resources over HTTP"
+description: "nw downloads zipped resources over HTTP, It may be possible to cause
+  remote code execution (RCE) by swapping out the requested zip file with an attacker
+  controlled binary if the attacker is on the network or positioned in between the
+  user and the remote server."
+date: "2016-12-18"
+pubdate: "2016-12-18"
+affected_range: "<0.26.0"
+fixed_versions:
+- "0.26.0"
+affected_versions: "All versions before 0.26.0"
+solution: "Upgrade to 0.26.0"
+urls:
+- "https://github.com/nwjs/npm-installer/blob/v0.13.0/scripts/install.js#L30"
+- "https://github.com/nwjs/npm-installer/commit/adb4df1e012d38a3872578d484291b9af07aad5b"
+- "https://nodesecurity.io/advisories/166"
+credit: "Adam Baldwin"
+uuid: "d5bb4d79-72bf-4a2b-8e36-b90632d7fcb7"

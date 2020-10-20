@@ -1,0 +1,18 @@
+# This advisory is derived from
+# https://github.com/FriendsOfPHP/security-advisories
+---
+identifier: "2018-10-17-1"
+package_slug: "packagist/drupal/core"
+title: "Improper Access Control"
+description: "Improper Access Control in drupal."
+date: "2018-10-18"
+pubdate: "2018-10-18"
+affected_range: ">=8.0.0,<8.6.2"
+fixed_versions:
+- "8.6.2"
+affected_versions: "All versions starting from 8.0.0 before 8.6.2"
+not_impacted: "All versions before 8.0.0, all versions starting from 8.6.2"
+solution: "Upgrade to version 8.6.2 or above."
+urls:
+- "https://www.drupal.org/sa-core-2018-006"
+uuid: "4155c877-36ac-49fd-957e-e278623eea27"

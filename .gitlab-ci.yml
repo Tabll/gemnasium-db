@@ -1,0 +1,103 @@
+stages:
+  - test
+  - extract
+  - spellcheck
+  - bump
+  - deploy
+
+default:
+  tags:
+    - gitlab-org
+
+workflow:
+  rules:
+    # For merge requests, create a pipeline.
+    - if: '$CI_MERGE_REQUEST_IID'
+    # For `master` branch, create a pipeline (this includes on schedules, pushes, merges, etc.).
+    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
+    # For tags, create a pipeline.
+    - if: '$CI_COMMIT_TAG'
+
+syntax:
+  image: python:3
+  stage: test 
+  before_script:
+    - pip install yamllint
+  script:
+    - yamllint .
+  resource_group: gemnasium-db
+
+semantic:
+  image: ruby:2.6-alpine3.10
+  stage: test 
+  before_script:
+    - apk add git openssh-client
+    - mkdir -p ~/.ssh && chmod 700 ~/.ssh
+    - ssh-keyscan gitlab.com >> ~/.ssh/known_hosts && chmod 644 ~/.ssh/known_hosts
+    - eval $(ssh-agent -s)
+    - echo "$SEMVER_DIALECT_SSH" | tr -d '\r' | ssh-add -
+  script:
+    - bundle install --gemfile schema/Gemfile
+    - bundle install --gemfile identifier/Gemfile
+    - bundle exec --gemfile schema/Gemfile schema/validate.rb --semantic gem go npm maven packagist pypi conan nuget
+    - identifier/identifier.rb -v .
+  resource_group: gemnasium-db
+
+extract_description:
+  image: ruby:2.6-alpine3.10
+  stage: extract
+  allow_failure: true
+  before_script:
+    - apk add --no-cache git bash
+    - gem install bundler:2.1.4
+    - bundle install --gemfile spellcheck/Gemfile
+  script:
+    - spellcheck/extract_description.sh
+  artifacts:
+    paths:
+      - description.txt
+    expire_in: 1 week
+  resource_group: gemnasium-db
+
+spellchecking:
+  image: registry.gitlab.com/julianthome/docker-language-tool:1.0.0
+  stage: spellcheck
+  needs:
+    - job: extract_description
+      artifacts: true
+  allow_failure: true
+  script:
+    - ./spellcheck/spellcheck.sh
+  resource_group: gemnasium-db
+
+bump:
+  image: registry.gitlab.com/julianthome/bumper:master-v1.0.7
+  stage: bump
+  rules:
+    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
+  variables:
+    GIT_STRATEGY: none
+  before_script:
+    - mkdir -p ~/.ssh && chmod 700 ~/.ssh
+    - ssh-keyscan gitlab.com >> ~/.ssh/known_hosts && chmod 644 ~/.ssh/known_hosts
+    - eval $(ssh-agent -s)
+    - ssh-add <(echo "$BUMPER_SSH")
+    - git clone git@gitlab.com:gitlab-org/security-products/gemnasium-db.git
+  script:
+    - bump.rb -v "v" -c "CHANGELOG.md" -g "gemnasium-db" -n "bumper" -e "bumper@gitlab.com"
+  resource_group: gemnasium-db
+
+pages:
+  image: julianthome/stat
+  stage: deploy
+  rules:
+    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
+    - if: '$CI_COMMIT_TAG'
+  script:
+    - cd stats && make
+  resource_group: gemnasium-db
+  artifacts:
+    paths:
+      - data/data.tar.gz
+      - data/nvd.tar.gz
+      - public

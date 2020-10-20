@@ -1,0 +1,18 @@
+# This advisory is derived from
+# https://github.com/FriendsOfPHP/security-advisories
+---
+identifier: "2015-01-15"
+package_slug: "packagist/socalnick/scn-social-auth"
+title: "Cross-site Scripting"
+description: "XSS vulnerability in login redirect param."
+date: "2015-01-16"
+pubdate: "2015-01-16"
+affected_range: "<1.15.2"
+fixed_versions:
+- "1.15.2"
+affected_versions: "All versions before 1.15.2"
+not_impacted: "All versions starting from 1.15.2"
+solution: "Upgrade to version 1.15.2 or above."
+urls:
+- "https://github.com/socalnick/scnsocialauth/issues/184"
+uuid: "20a3cce5-af16-44e1-894a-f6c0b55c62b7"

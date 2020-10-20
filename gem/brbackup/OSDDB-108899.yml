@@ -1,0 +1,18 @@
+---
+identifier: "OSDDB-108899"
+package_slug: "gem/brbackup"
+title: "SQL Injection"
+description: "This package contains a flaw that may allow carrying out an SQL injection
+  attack. The issue is due to the /lib/brbackup.rb script not properly sanitizing
+  user-supplied input to the 'name' parameter. This may allow a remote attacker to
+  inject or manipulate SQL queries in the back-end database, allowing for the manipulation
+  or disclosure of arbitrary data."
+date: "2014-07-09"
+pubdate: "2014-07-09"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://github.com/rubysec/ruby-advisory-db/blob/master/gems/brbackup/OSVDB-108899.yml"
+uuid: "0717b8a7-5f8a-4460-878a-bf4f5393fe1e"

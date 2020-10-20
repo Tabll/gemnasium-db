@@ -1,0 +1,18 @@
+---
+identifier: "GMS-2016-125"
+package_slug: "npm/jser-stat"
+title: "Downloads Resources over HTTP"
+description: "jser-stat downloads data resources over HTTP, which leaves it vulnerable
+  to MITM attacks."
+date: "2016-12-21"
+pubdate: "2016-12-21"
+affected_range: ">=0.0.0"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "No fix is currently available for this vulnerability. It's recommended
+  to not install nor use this module."
+urls:
+- "https://github.com/jser/stat-js/blob/master/data/url-mapping.js"
+- "https://nodesecurity.io/advisories/188"
+credit: "Adam Baldwin"
+uuid: "6829d1ad-f44a-499c-bc2e-7dd3fabece25"

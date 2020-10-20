@@ -1,0 +1,21 @@
+---
+identifier: "GMS-2015-25"
+package_slug: "packagist/typo3/cms"
+title: "Unauthenticated Path Disclosure"
+description: "It has been discovered, that calling a PHP script which is delivered
+  with TYPO3 for testing purposes, discloses the absolute server path to the TYPO3
+  installation."
+date: "2015-09-08"
+pubdate: "2015-09-08"
+affected_range: ">=6.2.0,<6.2.15||>=7.0.0,<7.4.0"
+fixed_versions:
+- "6.2.15"
+- "7.4.0"
+affected_versions: "All versions starting from 6.2.0 before 6.2.15, all versions starting
+  from 7.0.0 before 7.4.0"
+solution: "Upgrade to latest version."
+urls:
+- "https://review.typo3.org/#/c/43120/"
+- "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2015-008/"
+credit: "Heiko Kromm"
+uuid: "38bce9b3-fe92-41e5-80f1-ba30408f33e9"

@@ -1,0 +1,19 @@
+---
+identifier: "GMS-2016-116"
+package_slug: "npm/closure-util"
+title: "Downloads Resources over HTTP"
+description: "closure-utils downloads binary resources over HTTP, which leaves it
+  vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE)
+  by swapping out the requested binary with an attacker controlled binary if the attacker
+  is on the network or positioned in between the user and the remote server."
+date: "2016-12-18"
+pubdate: "2016-12-18"
+affected_range: ">=0.0.0"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "No fix is currently available for this vulnerability. It's recommended
+  to not install nor use this module."
+urls:
+- "https://nodesecurity.io/advisories/165"
+credit: "Adam Baldwin"
+uuid: "60088e05-0c58-400b-9be0-128e51eee7ca"

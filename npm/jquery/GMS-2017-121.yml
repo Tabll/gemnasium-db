@@ -1,0 +1,19 @@
+---
+identifier: "GMS-2017-121"
+package_slug: "npm/jquery"
+title: "XSS via improper selector detection"
+description: "jQuery's main method in affected versions contains an unreliable way
+  of detecting whether the input to the `jQuery(strInput)` function is intended to
+  be a selector or HTML."
+date: "2017-03-21"
+pubdate: "2017-03-21"
+affected_range: ">=1.7.1 <=1.8.3"
+fixed_versions:
+- "1.9.1"
+affected_versions: "All versions starting from 1.7.1 up to 1.8.3"
+solution: "Upgrade to v1.9.0 or greater."
+urls:
+- "https://bugs.jquery.com/ticket/11290"
+- "https://nodesecurity.io/advisories/329"
+credit: "Richard Gibson"
+uuid: "04a14325-f5d9-4711-aee7-cf19ed54b0d2"

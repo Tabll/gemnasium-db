@@ -1,0 +1,20 @@
+---
+identifier: "GMS-2014-22"
+package_slug: "npm/send"
+title: "Directory traversal vulnerability"
+description: "When relying on the root option to restrict file access it may be possible
+  for an application consumer to escape out of the restricted directory and access
+  files in a similarly named directory. For example, `static(_dirname + '/public')`
+  would allow access to `_dirname + '/public-restricted'`."
+date: "2014-09-12"
+pubdate: "2014-09-12"
+affected_range: "<0.8.4"
+fixed_versions:
+- "0.8.4"
+affected_versions: "All versions before 0.8.4"
+solution: "Upgrade to a version greater than or equal to 0.8.4."
+urls:
+- "https://github.com/visionmedia/send/commit/9c6ca9b2c0b880afd3ff91ce0d211213c5fa5f9a"
+- "https://github.com/visionmedia/send/pull/59"
+credit: "Ilya Kantor"
+uuid: "de5acfaf-0ca4-4a5e-a26d-6f26d9fbb8f6"

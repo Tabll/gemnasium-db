@@ -1,0 +1,17 @@
+---
+identifier: "GMS-2017-187"
+package_slug: "npm/safe-eval"
+title: "Sandbox Breakout"
+description: "By accessing the object constructors, un-sanitized user input can access
+  the entire standard library and effectively break out of the sandbox. "
+date: "2017-08-30"
+pubdate: "2017-08-30"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "Avoid passing user input to safe-eval."
+urls:
+- "https://github.com/hacksparrow/safe-eval/issues/5"
+- "https://nodesecurity.io/advisories/337"
+credit: "Alessandro Nadalin"
+uuid: "bd6ecf76-bf82-4505-8f6c-3884385ffaec"

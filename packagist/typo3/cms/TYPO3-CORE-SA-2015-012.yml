@@ -1,0 +1,20 @@
+---
+identifier: "TYPO3-CORE-SA-2015-012"
+package_slug: "packagist/typo3/cms"
+title: "Cross-Site Scripting vulnerability in typolinks"
+description: "All link fields within the TYPO3 installation are vulnerable to Cross-Site
+  Scripting as authorized editors can insert javascript commands by using the url
+  scheme \"javascript:\"."
+date: "2015-12-15"
+pubdate: "2015-12-15"
+affected_range: ">=6.2.0,<6.2.16||>=7.0.0,<7.6.1"
+fixed_versions:
+- "6.2.16"
+- "7.6.1"
+affected_versions: "All versions starting from 6.2.0 before 6.2.16, all versions starting
+  from 7.0.0 before 7.6.1"
+solution: "Upgrade to latest version."
+urls:
+- "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2015-012/"
+credit: "Oliver Hader"
+uuid: "954fcbc6-dade-4d5e-a77f-9f0f87c6b6c1"

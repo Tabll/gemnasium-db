@@ -1,0 +1,17 @@
+---
+identifier: "GMS-2017-288"
+package_slug: "npm/iter-server"
+title: "Directory Traversal"
+description: "`iter-server` is vulnerable to a directory traversal issue, giving an
+  attacker access to the filesystem by placing \"../\" in the url./n"
+date: "2017-10-04"
+pubdate: "2017-10-04"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/iter-server"
+- "https://nodesecurity.io/advisories/454"
+credit: "Liang Gong"
+uuid: "a03bb96e-c025-44a8-9d0b-ca073eec2387"

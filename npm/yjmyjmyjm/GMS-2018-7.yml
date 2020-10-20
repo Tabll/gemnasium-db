@@ -1,0 +1,18 @@
+---
+identifier: "GMS-2018-7"
+package_slug: "npm/yjmyjmyjm"
+title: "Directory Traversal"
+description: "`yjmyjmyjm` is vulnerable to a directory traversal issue, giving an
+  attacker access to the filesystem by placing \"../\" in the URL."
+date: "2018-01-23"
+pubdate: "2018-01-23"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "As there is currently no fix for this issue selecting an alternative static
+  web server would be the best choice."
+urls:
+- "https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/yjmyjmyjm"
+- "https://nodesecurity.io/advisories/451"
+credit: "Liang Gong"
+uuid: "52c2206f-4c1c-4b37-8f27-f33bb2780478"

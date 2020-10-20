@@ -1,0 +1,19 @@
+---
+identifier: "GMS-2016-99"
+package_slug: "npm/install-nw"
+title: "Downloads Resources over HTTP"
+description: "install-nw downloads binary resources over HTTP, which leaves it vulnerable
+  to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping
+  out the requested binary with an attacker controlled binary if the attacker is on
+  the network or positioned in between the user and the remote server."
+date: "2016-12-16"
+pubdate: "2016-12-16"
+affected_range: "<1.1.5"
+fixed_versions:
+- "1.1.5"
+affected_versions: "All versions before 1.1.5"
+solution: "Update to version 1.1.5 or greater."
+urls:
+- "https://nodesecurity.io/advisories/204"
+credit: "Adam Baldwin"
+uuid: "070d1cb2-fdc0-4ccb-b42c-12533489f5b0"

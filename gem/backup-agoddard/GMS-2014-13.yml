@@ -1,0 +1,19 @@
+---
+identifier: "GMS-2014-13"
+package_slug: "gem/backup-agoddard"
+title: "Command injection vulnerability"
+description: "If it is used in the context of a RoR application, since the user input
+  isn't properly sanitized, the method decrypt in `/lib/backup/cli/utility.rb` is
+  vulnerable to command injection."
+date: "2014-07-07"
+pubdate: "2014-07-07"
+affected_range: "=3.0.28"
+fixed_versions: []
+affected_versions: "Version 3.0.28"
+not_impacted: "You are not impacted if you don't send user controlled data to this
+  gem."
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "http://www.vapid.dhs.org/advisories/backup-agoddard-3.0.28.html"
+credit: "Larry W. Cashdollar, @_larry0"
+uuid: "5990d41c-cdd7-4e64-8792-e5112d6f843f"

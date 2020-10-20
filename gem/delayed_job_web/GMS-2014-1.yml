@@ -1,0 +1,18 @@
+---
+identifier: "GMS-2014-1"
+package_slug: "gem/delayed_job_web"
+title: "Cross-site Scripting"
+description: "This package is vulnerable to Cross-site Scripting (XSS)."
+date: "2014-01-28"
+pubdate: "2014-01-28"
+affected_range: "<1.2.9"
+fixed_versions:
+- "1.2.9"
+affected_versions: "All versions before 1.2.9"
+solution: "Upgrade to latest version."
+urls:
+- "https://github.com/ejschmitt/delayed_job_web/commit/b328b269d14d878c056289fb9b1eb8358b5d61fd"
+- "https://github.com/ejschmitt/delayed_job_web/issues/49"
+- "https://github.com/ejschmitt/delayed_job_web/pull/55"
+credit: "Tim Lucas"
+uuid: "b9eeae7b-088f-4f30-b8a2-ca6908d4869a"

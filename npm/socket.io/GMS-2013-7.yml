@@ -1,0 +1,17 @@
+---
+identifier: "GMS-2013-7"
+package_slug: "npm/socket.io"
+title: "Memory leak when using HTTPS"
+description: "Socket.io will leak memory if used with HTTPS. This version seems to fix
+  also other memory issues, even if HTTPS is not used."
+date: "2013-03-29"
+pubdate: "2013-03-29"
+affected_range: "<0.9.14"
+fixed_versions:
+- "0.9.14"
+affected_versions: "All versions before 0.9.14"
+solution: "Upgrade to 0.9.14"
+urls:
+- "https://github.com/LearnBoost/socket.io/issues/1177"
+credit: "James Allen"
+uuid: "da8a7c83-9e6e-43c6-96da-5d56ee2b4545"

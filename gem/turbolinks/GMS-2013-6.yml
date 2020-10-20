@@ -1,0 +1,19 @@
+---
+identifier: "GMS-2013-6"
+package_slug: "gem/turbolinks"
+title: "Cross-site Scripting"
+description: "XSS vulnerability for html files served up with `Content-Disposition
+  attachment` headers."
+date: "2013-03-14"
+pubdate: "2013-03-14"
+affected_range: "<5.0.0.beta1"
+fixed_versions:
+- "5.0.0.beta1"
+affected_versions: "All versions before 5.0.0.beta1"
+solution: "Upgrade to latest version."
+urls:
+- "https://github.com/turbolinks/turbolinks-classic/commit/fff70bd9371bf9d700ff40463eb03f1a2b8ec3ab"
+- "https://github.com/turbolinks/turbolinks-classic/issues/195"
+- "https://github.com/turbolinks/turbolinks-classic/pull/441"
+credit: "Mala"
+uuid: "23d26dab-f3c9-4d7a-844c-8fd214f40c48"

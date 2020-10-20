@@ -1,0 +1,16 @@
+---
+identifier: "GMS-2017-81"
+package_slug: "npm/node-browser"
+title: "Downloads Resources over HTTP"
+description: "node-browser downloads resources over HTTP, which leaves it vulnerable
+  to MITM attacks."
+date: "2017-01-01"
+pubdate: "2017-01-01"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://nodesecurity.io/advisories/214"
+credit: "Adam Baldwin"
+uuid: "08780fff-66c3-46f3-9ea1-0c8b39bdaff7"

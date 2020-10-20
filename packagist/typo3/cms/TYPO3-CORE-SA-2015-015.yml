@@ -1,0 +1,18 @@
+---
+identifier: "TYPO3-CORE-SA-2015-015"
+package_slug: "packagist/typo3/cms"
+title: "Cross-Site Scripting in Indexed Search"
+description: "Failing to properly encode editor input, the search result view of indexed_search
+  is susceptible to Cross-Site Scripting, allowing authenticated editors to inject
+  arbitrary HTML."
+date: "2015-12-15"
+pubdate: "2015-12-15"
+affected_range: "<6.2.16"
+fixed_versions:
+- "6.2.16"
+affected_versions: "All versions before 6.2.16"
+solution: "Upgrade to latest version."
+urls:
+- "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2015-015/"
+credit: "Dmitry Dulepov"
+uuid: "540c63f4-844f-462e-830f-d2c598a766ed"

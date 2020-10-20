@@ -1,0 +1,15 @@
+---
+identifier: "GMS-2013-12"
+package_slug: "gem/sinatra-erbjoiner"
+title: "Fatal uncaught syntax error"
+description: "A fatal syntax error has been published by mistake."
+date: "2013-06-27"
+pubdate: "2013-06-27"
+affected_range: "<1.0.1"
+fixed_versions:
+- "1.0.1"
+affected_versions: "All versions before 1.0.1"
+solution: "Please upgrade to 1.0.1 or above"
+urls: []
+credit: "Christian Tschoepe <christian.tschoepe@rackspace.com>"
+uuid: "71b0d915-9380-49aa-82ce-447ce6928a5e"

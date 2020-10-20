@@ -1,0 +1,17 @@
+---
+identifier: "OSVDB-108530"
+package_slug: "gem/kajam"
+title: "Arbitrary code execution"
+description: "There is a flaw in /dataset/lib/dataset/database/postgresql.rb that
+  is triggered when handling metacharacters. This may allow a remote attacker to execute
+  arbitrary commands."
+date: "2014-06-30"
+pubdate: "2014-06-30"
+affected_range: ">=0.0"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "http://osvdb.org/show/osvdb/108530"
+credit: "Larry W. Cashdollar - Vapid Labs"
+uuid: "83f0641f-e08d-4b8c-bcbd-daaf01a5ea69"

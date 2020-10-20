@@ -1,0 +1,17 @@
+---
+identifier: "GMS-2017-296"
+package_slug: "npm/pytservce"
+title: "Directory Traversal"
+description: "`pytservce` is vulnerable to a directory traversal issue, giving an
+  attacker access to the filesystem by placing \"../\" in the url./n"
+date: "2017-10-04"
+pubdate: "2017-10-04"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/pytservce"
+- "https://nodesecurity.io/advisories/435"
+credit: "Liang Gong"
+uuid: "344333de-9303-4c99-a6fc-87391637cb2e"

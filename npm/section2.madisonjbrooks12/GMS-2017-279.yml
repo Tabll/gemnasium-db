@@ -1,0 +1,17 @@
+---
+identifier: "GMS-2017-279"
+package_slug: "npm/section2.madisonjbrooks12"
+title: "Directory Traversal"
+description: "`section2.madisonjbrooks12` is vulnerable to a directory traversal issue,
+  giving an attacker access to the filesystem by placing \"../\" in the url./n"
+date: "2017-10-02"
+pubdate: "2017-10-02"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/section2.madisonjbrooks12"
+- "https://nodesecurity.io/advisories/468"
+credit: "Liang Gong"
+uuid: "c59797fb-2cec-4c8e-8bcc-de9e3521eb0e"

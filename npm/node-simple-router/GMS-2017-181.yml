@@ -1,0 +1,17 @@
+---
+identifier: "GMS-2017-181"
+package_slug: "npm/node-simple-router"
+title: "Directory Traversal"
+description: "node-simple-router is vulnerable to a directory traversal issue, giving
+  an attacker access to the filesystem by placing \"../\" in the URL."
+date: "2017-08-29"
+pubdate: "2017-08-29"
+affected_range: "<=0.10.0"
+fixed_versions:
+- "0.10.1"
+affected_versions: "All versions up to 0.10.0"
+solution: "Upgrade to v0.10.1 or later."
+urls:
+- "https://nodesecurity.io/advisories/352"
+credit: "Liang Gong"
+uuid: "1ff31cbf-7186-4481-be8a-484b8c426af3"

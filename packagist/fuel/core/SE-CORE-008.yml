@@ -1,0 +1,17 @@
+---
+identifier: "SE-CORE-008"
+package_slug: "packagist/fuel/core"
+title: "Crypt encryption compromised"
+description: "With the right knowledge, code, and GPU calculation power, Crypt encryption
+  can be broken in minutes."
+date: "2018-04-14"
+pubdate: "2018-04-14"
+affected_range: "<1.8.1"
+fixed_versions:
+- "1.8.1"
+affected_versions: "All versions before 1.8.1"
+solution: "Upgrade to latest version."
+urls:
+- "https://fuelphp.com/security-advisories"
+credit: "Felix Widemann, Nils Rokita"
+uuid: "b33a0533-ef60-48b4-8096-1b281bd97c09"

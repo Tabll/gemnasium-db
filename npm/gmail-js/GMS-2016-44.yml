@@ -1,0 +1,21 @@
+---
+identifier: "GMS-2016-44"
+package_slug: "npm/gmail-js"
+title: "DOM-based XSS"
+description: "Three functions exposed by the Gmail.js API (not the Google Gmail API)
+  are vulnerable to DOM-based cross site scripting. The three functions are `tools.parse_response`,
+  `helper.get.visible_emails_post`, and `helper.get.email_data_post`. Each one of
+  these functions calls `new Function()` with user data passed as the argument."
+date: "2016-07-21"
+pubdate: "2016-07-21"
+affected_range: "<0.6.5"
+fixed_versions:
+- "0.6.5"
+affected_versions: "All versions before 0.6.5"
+solution: "Upgrade to latest version."
+urls:
+- "https://github.com/KartikTalwar/gmail.js/commit/a83436f499f9c01b04280af945a5a81137b6baf1"
+- "https://github.com/KartikTalwar/gmail.js/issues/281"
+- "https://nodesecurity.io/advisories/125"
+credit: "Gursev Singh Kalra"
+uuid: "55aa6b46-72fc-4dac-a9d2-b2d5bd7dff9e"

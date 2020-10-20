@@ -1,0 +1,17 @@
+---
+identifier: "GMS-2016-12"
+package_slug: "pypi/pytest-server-fixtures"
+title: "Arbitrary Script Injection"
+description: "This package vulnerable to Arbitrary Script Injection because the `shell=True`
+  flag which enables subshells in the `workspace.run()` method."
+date: "2016-02-15"
+pubdate: "2016-02-15"
+affected_range: "<1.1.0"
+fixed_versions:
+- "1.1.0"
+affected_versions: "All versions before 1.1.0"
+solution: "Upgrade to latest version."
+urls:
+- "https://github.com/manahl/pytest-plugins/blob/master/CHANGES.md#110-2016-2-15"
+- "https://github.com/manahl/pytest-plugins/commit/ea6072a461edde63c07f7b7f4a4daffdc09fb116"
+uuid: "684abc9e-cced-4a9a-aef2-dcca4da14352"

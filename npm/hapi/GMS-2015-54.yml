@@ -1,0 +1,21 @@
+---
+identifier: "GMS-2015-54"
+package_slug: "npm/hapi"
+title: "Denial of service - Potential socket exhaustion"
+description: "Certain input passed into the If-Modified-Since or Last-Modified headers
+  will cause an 'illegal access' exception to be raised. Instead of sending a HTTP
+  500 error back to the sender, hapi will continue to hold the socket open until timed
+  out (default node timeout is 2 minutes)."
+date: "2015-12-23"
+pubdate: "2015-12-23"
+affected_range: "<11.1.3"
+fixed_versions:
+- "11.1.3"
+affected_versions: "All versions before 11.1.3"
+solution: "Upgrade to latest version."
+urls:
+- "https://github.com/hapijs/hapi/commit/aab2496e930dce5ee1ab28eecec94e0e45f03580"
+- "https://github.com/jfhbrook/node-ecstatic/pull/179"
+- "https://nodesecurity.io/advisories/63"
+credit: "Adam Baldwin"
+uuid: "a8509370-4727-438f-965f-843ac4ecc658"

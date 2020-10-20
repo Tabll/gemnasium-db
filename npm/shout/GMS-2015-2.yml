@@ -1,0 +1,18 @@
+---
+identifier: "GMS-2015-2"
+package_slug: "npm/shout"
+title: "HTML Injection"
+description: "Because the `/topic` command in messages is unescaped, attackers have
+  the ability to inject HTML scripts that will run in the victim's browser."
+date: "2015-01-22"
+pubdate: "2015-01-22"
+affected_range: ">=0.44.0 <=0.49.3"
+fixed_versions:
+- "0.50.0"
+affected_versions: "All versions starting from 0.44.0 up to 0.49.3"
+solution: "Upgrade to v0.50.0 or later."
+urls:
+- "https://github.com/erming/shout/pull/344"
+- "https://nodesecurity.io/advisories/322"
+credit: "pangeacake"
+uuid: "4cf708e0-a420-4f87-af51-18dc5efafe3c"

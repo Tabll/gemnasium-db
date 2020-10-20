@@ -1,0 +1,22 @@
+---
+identifier: "OSVDB-110439"
+package_slug: "gem/dragonfly"
+title: "Remote Code Execution"
+description: "The gem contains a flaw in Uploading & Processing that is due to the
+  gem failing to restrict arbitrary commands to imagemagicks convert. This may allow
+  a remote attacker to gain read/write access to the filesystem and execute arbitrary
+  commands. "
+date: "2014-08-25"
+pubdate: "2014-08-25"
+affected_range: "<1.0.7"
+fixed_versions:
+- "1.0.7"
+affected_versions: "All versions before 1.0.7"
+solution: "Upgrade to version 1.0.7, or higher, to address this vulnerability. It
+  is also possible to temporarily mitigate this issue by implementing the following
+  workaround: version 1.0.6 introduced the HMAC signing feature which prevents this
+  issue, but it was not enabled by default. 1.0.7 enables it by default."
+urls:
+- "http://osvdb.org/show/osvdb/110439"
+credit: "leex"
+uuid: "a1ee61eb-57b6-40ff-bd64-3df1ef6e128f"

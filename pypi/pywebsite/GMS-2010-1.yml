@@ -1,0 +1,16 @@
+---
+identifier: "GMS-2010-1"
+package_slug: "pypi/pywebsite"
+title: "Timing Attack"
+description: "This package is vulnerable to Timing Attacks."
+date: "2010-01-04"
+pubdate: "2010-01-04"
+affected_range: "<0.1.14pre"
+fixed_versions:
+- "0.1.14pre"
+affected_versions: "All versions before 0.1.14pre"
+solution: "Upgrade to latest version."
+urls:
+- "https://bitbucket.org/illume/pywebsite/commits/136922b7c4c2c9467dd554385fbf2408d1d7b061"
+credit: "René Dudfield\r\n\r\n"
+uuid: "d112f9fb-4ce7-4fcd-b6c6-16d5724fd8dd"

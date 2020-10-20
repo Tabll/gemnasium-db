@@ -1,0 +1,17 @@
+---
+identifier: "GMS-2017-203"
+package_slug: "npm/citypredict.whauwiller"
+title: "Directory Traversal"
+description: "citypredict.whauwiller is vulnerable to a directory traversal issue,
+  giving an attacker access to the filesystem by placing \"../\" in the URL."
+date: "2017-09-12"
+pubdate: "2017-09-12"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://github.com/JacksonGL/NPM-Vuln-PoC/tree/master/directory-traversal/citypredict.whauwiller"
+- "https://nodesecurity.io/advisories/370"
+credit: "Liang Gong"
+uuid: "28d04d87-341c-4aed-99ff-132e113a42f8"

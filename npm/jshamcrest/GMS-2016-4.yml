@@ -1,0 +1,22 @@
+---
+identifier: "GMS-2016-4"
+package_slug: "npm/jshamcrest"
+title: "Regular Expression Denial of Service"
+description: "jshamcrest is vulnerable to regular expression denial of service (ReDoS)
+  when certain types of user input is passed in to the emailAddress validator. \"The
+  Regular expression Denial of Service (ReDoS) is a Denial of Service attack, that
+  exploits the fact that most Regular Expression implementations may reach extreme
+  situations that cause them to work very slowly (exponentially related to input size).
+  An attacker can then cause a program using a Regular Expression to enter these extreme
+  situations and then hang for a very long time.\""
+date: "2016-01-05"
+pubdate: "2016-01-05"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://nodesecurity.io/advisories/53"
+- "https://www.owasp.org/index.php/Regular_expression_Denial_of_Service_-_ReDoS"
+credit: "Adam Baldwin"
+uuid: "3d89d183-d90f-4323-852a-c14f62fc9d99"

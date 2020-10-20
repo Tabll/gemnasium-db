@@ -1,0 +1,18 @@
+# This advisory is derived from
+# https://github.com/FriendsOfPHP/security-advisories
+---
+identifier: "ZF2012-01"
+package_slug: "packagist/zendframework/zendframework1"
+title: "Improper Restriction of XML External Entity Reference"
+description: "Local file disclosure via XXE injection in `Zend_XmlRpc`."
+date: "2012-08-20"
+pubdate: "2012-08-20"
+affected_range: ">=1.0.0,<1.11.13"
+fixed_versions:
+- "1.12.0"
+affected_versions: "All versions starting from 1.0.0 before 1.11.13"
+not_impacted: "All versions before 1.0.0, all versions starting from 1.11.13"
+solution: "Upgrade to version 1.12.0 or above."
+urls:
+- "https://framework.zend.com/security/advisory/ZF2012-01"
+uuid: "e1c63fe5-6384-439b-ba77-1ab756575042"

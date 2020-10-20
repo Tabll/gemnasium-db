@@ -1,0 +1,19 @@
+---
+identifier: "GMS-2015-35"
+package_slug: "pypi/Products.CMFPlone"
+title: "Multiple CSRF vulnerabilities in Management Interface"
+description: "There are multiple CSRF (cross-site request forgery) vulnerabilities
+  in the ZMI (Zope Management Interface)."
+date: "2015-10-06"
+pubdate: "2015-10-06"
+affected_range: "<5.0a"
+fixed_versions: []
+affected_versions: "All versions before 5.0a"
+not_impacted: "5.x branch"
+solution: "Upgrade to 5.x or apply patch if running 4.x. Blocking ZMI access from
+  the public does not entirely eliminate CSRF vulnerabilities, but make them much
+  harder to exploit. See provided link."
+urls:
+- "https://plone.org/products/plone/security/advisories/security-vulnerability-20151006-csrf"
+credit: "Plone Security Team"
+uuid: "b5a40e54-135e-44bf-ac5c-8216bf99d1dd"

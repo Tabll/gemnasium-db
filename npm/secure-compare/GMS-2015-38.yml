@@ -1,0 +1,18 @@
+---
+identifier: "GMS-2015-38"
+package_slug: "npm/secure-compare"
+title: "Insecure Comparison"
+description: "Secure-compare does not actually compare two strings properly. compare
+  actually compares the first argument with itself, meaning the check passes for any
+  two strings of the same length."
+date: "2015-10-24"
+pubdate: "2015-10-24"
+affected_range: "<=3.0.0"
+fixed_versions: []
+affected_versions: "All versions up to 3.0.0"
+solution: "Upgrade to secure-compare 3.0.1 or greater."
+urls:
+- "https://github.com/vdemedes/secure-compare/pull/1"
+- "https://nodesecurity.io/advisories/50"
+credit: "Joshua Dague"
+uuid: "d206158e-37e8-400c-8eda-01cf6f6a750d"

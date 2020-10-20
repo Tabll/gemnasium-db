@@ -1,0 +1,19 @@
+---
+identifier: "TYPO3-CORE-SA-2017-006"
+package_slug: "packagist/typo3/cms"
+title: "Information Disclosure"
+description: "HTTP requests being performed using the TYPO3 API expose the specific
+  TYPO3 version to the called endpoint."
+date: "2017-09-05"
+pubdate: "2017-09-05"
+affected_range: ">=7.6.0,<7.6.22||>=8.0.0,<8.7.5"
+fixed_versions:
+- "v7.6.22"
+- "v8.7.5"
+affected_versions: "All versions starting from 7.6.0 before 7.6.22, all versions starting
+  from 8.0.0 before 8.7.5"
+solution: "Upgrade to latest version."
+urls:
+- "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2017-006/"
+credit: "Sascha Egerer, Susanne Moog"
+uuid: "bf7f802e-238f-443a-8b83-ccdde06b221f"

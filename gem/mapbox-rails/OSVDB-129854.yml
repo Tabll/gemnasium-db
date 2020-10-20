@@ -1,0 +1,18 @@
+---
+identifier: "OSVDB-129854"
+package_slug: "gem/mapbox-rails"
+title: "Content Injection via TileJSON attribute"
+description: "If you use `L.mapbox.map` or `L.mapbox.tileLayer` to load untrusted
+  `TileJSON` content from a non-Mapbox URL, it is possible for a malicious user with
+  control over the `TileJSON` content to inject script content into the `attribution`
+  value of the `TileJSON` which will be executed in the context of the page using
+  Mapbox.js."
+date: "2015-10-24"
+pubdate: "2015-10-24"
+affected_range: ">=0.0.0a"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://nodesecurity.io/advisories/49"
+uuid: "e82d6cbc-4779-4e1c-8614-537e26dd29b7"

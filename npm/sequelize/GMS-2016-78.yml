@@ -1,0 +1,18 @@
+---
+identifier: "GMS-2016-78"
+package_slug: "npm/sequelize"
+title: "Improper Escaping of Bound Arrays"
+description: "In Postgres, SQLite, and Microsoft SQL Server there is an issue where
+  arrays are treated as strings and improperly escaped."
+date: "2016-10-31"
+pubdate: "2016-10-31"
+affected_range: "<=3.19.3"
+fixed_versions:
+- "3.20.0"
+affected_versions: "All versions up to 3.19.3"
+solution: "Upgrade to version 3.20.0 or greater"
+urls:
+- "https://github.com/sequelize/sequelize/issues/5671"
+- "https://nodesecurity.io/advisories/102"
+credit: "Leibale Eidelman"
+uuid: "0d89ac02-0810-47c5-8408-e11687502956"

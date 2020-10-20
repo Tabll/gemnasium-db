@@ -1,0 +1,18 @@
+# This advisory is derived from
+# https://github.com/FriendsOfPHP/security-advisories
+---
+identifier: "ZF2011-01"
+package_slug: "packagist/zendframework/zendframework1"
+title: "Cross-Site Scripting"
+description: "Potential XSS in Development Environment Error View Script."
+date: "2012-06-13"
+pubdate: "2012-06-13"
+affected_range: ">=1.0.0,<1.11.4"
+fixed_versions:
+- "1.12.0"
+affected_versions: "All versions starting from 1.0.0 before 1.11.4"
+not_impacted: "All versions before 1.0.0, all versions starting from 1.11.4"
+solution: "Upgrade to version 1.12.0 or above."
+urls:
+- "https://framework.zend.com/security/advisory/ZF2011-01"
+uuid: "b4c32e29-4e77-4df7-8ef5-1cd6c67e5b1f"

@@ -1,0 +1,18 @@
+# This advisory is derived from
+# https://github.com/FriendsOfPHP/security-advisories
+---
+identifier: "2017-09-05-1"
+package_slug: "packagist/typo3/cms"
+title: "Cross-site Scripting"
+description: "XSS in TYPO3 CMS Backend."
+date: "2017-09-05"
+pubdate: "2017-09-05"
+affected_range: ">=8.0.0,<8.7.0"
+fixed_versions:
+- "8.7.0"
+affected_versions: "All versions starting from 8.0.0 before 8.7.0"
+not_impacted: "All versions before 8.0.0, all versions starting from 8.7.0"
+solution: "Upgrade to version 8.7.0 or above."
+urls:
+- "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2017-004/"
+uuid: "b83735a3-3e9a-400c-8e20-39c29f7c20c5"

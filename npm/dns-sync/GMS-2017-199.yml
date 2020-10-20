@@ -1,0 +1,17 @@
+---
+identifier: "GMS-2017-199"
+package_slug: "npm/dns-sync"
+title: "Command Injection"
+description: "If untrusted user input is allowed into the `resolve()` method then
+  command injection is possible."
+date: "2017-09-08"
+pubdate: "2017-09-08"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "Use an alternative dns resolver or do not allow untrusted input into dns-sync.resolve()."
+urls:
+- "https://github.com/skoranga/node-dns-sync/issues/5"
+- "https://nodesecurity.io/advisories/523"
+credit: "Cristian-Alexandru Staicu"
+uuid: "fcad12c1-e44e-4ed5-9485-027149da1373"

@@ -1,0 +1,17 @@
+---
+identifier: "GMS-2017-256"
+package_slug: "npm/fast-http-cli"
+title: "Directory Traversal"
+description: "`fast-http-cli` is vulnerable to a directory traversal issue, giving
+  an attacker access to the filesystem by placing \"../\" in the url./n"
+date: "2017-09-28"
+pubdate: "2017-09-28"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://github.com/JacksonGL/NPM-Vuln-PoC/tree/master/directory-traversal/fast-http-cli"
+- "https://nodesecurity.io/advisories/383"
+credit: "Liang Gong"
+uuid: "3cd0b10e-f4d7-46ab-a2e0-86d94d516af9"

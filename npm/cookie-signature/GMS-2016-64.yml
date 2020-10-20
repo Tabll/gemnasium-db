@@ -1,0 +1,16 @@
+---
+identifier: "GMS-2016-64"
+package_slug: "npm/cookie-signature"
+title: "Timing attack vulnerability"
+description: "Cookie-signature is vulnerable to timing attacks."
+date: "2016-08-29"
+pubdate: "2016-08-29"
+affected_range: "<=1.0.3"
+fixed_versions:
+- "1.0.4"
+affected_versions: "All versions up to 1.0.3"
+solution: "Upgrade to 1.0.4 or latest"
+urls:
+- "https://github.com/tj/node-cookie-signature/commit/39791081692e9e14aa62855369e1c7f80fbfd50e"
+- "https://nodesecurity.io/advisories/134"
+uuid: "cefa0192-78a6-4ae7-ae8b-f0ea4e5b539d"

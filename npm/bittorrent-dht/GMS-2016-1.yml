@@ -1,0 +1,19 @@
+---
+identifier: "GMS-2016-1"
+package_slug: "npm/bittorrent-dht"
+title: "Remote Memory Disclosure"
+description: "A security issue was found in bittorrent-dht that allows someone to
+  send a specific series of messages to a listening peer and get it to reveal internal
+  memory."
+date: "2016-01-04"
+pubdate: "2016-01-04"
+affected_range: "<5.1.3"
+fixed_versions:
+- "5.1.3"
+affected_versions: "All versions before 5.1.3"
+solution: "Upgrade to latest version."
+urls:
+- "https://github.com/feross/bittorrent-dht/issues/87"
+- "https://nodesecurity.io/advisories/68"
+credit: "Feross Aboukhadijeh / Mathias Buss Madsen"
+uuid: "a5a6fe76-6de6-4795-9904-42a721fc029c"

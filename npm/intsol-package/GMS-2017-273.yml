@@ -1,0 +1,17 @@
+---
+identifier: "GMS-2017-273"
+package_slug: "npm/intsol-package"
+title: "Directory Traversal"
+description: "`intsol-package` is vulnerable to a directory traversal issue, giving
+  an attacker access to the filesystem by placing \"../\" in the url./n"
+date: "2017-10-02"
+pubdate: "2017-10-02"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/intsol-package"
+- "https://nodesecurity.io/advisories/461"
+credit: "Liang Gong"
+uuid: "6247f2f8-982f-4fe7-b066-367dff0c0ed4"

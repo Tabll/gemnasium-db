@@ -1,0 +1,15 @@
+---
+identifier: "GMS-2017-224"
+package_slug: "npm/pandora-doomsday"
+title: "Infecting Module"
+description: "The module `pandora-doomsday` infects other modules. It's since been
+  unpublished from the registry."
+date: "2017-09-26"
+pubdate: "2017-09-26"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://nodesecurity.io/advisories/482"
+uuid: "717c1fbd-abbe-4ef4-b45b-0568d15a083c"

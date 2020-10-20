@@ -1,0 +1,21 @@
+# This advisory is derived from
+# https://github.com/FriendsOfPHP/security-advisories
+---
+identifier: "2019-03-12"
+package_slug: "packagist/twig/twig"
+title: "Information Disclosure"
+description: "Sandbox Information Disclosure."
+date: "2019-03-12"
+pubdate: "2019-03-12"
+affected_range: "<1.38.0||>=2.0.0,<2.7.0"
+fixed_versions:
+- "1.38.0"
+- "2.7.0"
+affected_versions: "All versions before 1.38.0, all versions starting from 2.0.0 before
+  2.7.0"
+not_impacted: "All versions starting from 1.38.0 before 2.0.0, all versions starting
+  from 2.7.0"
+solution: "Upgrade to versions 1.38.0, 2.7.0 or above."
+urls:
+- "https://symfony.com/blog/twig-sandbox-information-disclosure"
+uuid: "55e81a41-d7d7-4327-a63f-751cb97613e4"

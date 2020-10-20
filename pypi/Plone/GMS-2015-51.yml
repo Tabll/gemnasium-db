@@ -1,0 +1,18 @@
+---
+identifier: "GMS-2015-51"
+package_slug: "pypi/Plone"
+title: "User information disclosure"
+description: "A vulnerability allows unauthorized disclosure of registered user information."
+date: "2015-12-08"
+pubdate: "2015-12-08"
+affected_range: "<4.3.8||>=5.0a1,<5.0.1"
+fixed_versions:
+- "4.3.8"
+- "5.0.1"
+affected_versions: "All versions before 4.3.8, all versions starting from 5.0a1 before
+  5.0.1"
+solution: "Install hotfix patch. There's no fixed version for the moment."
+urls:
+- "https://plone.org/products/plone/security/advisories/20151208-announcement"
+credit: "Giovanni Monteiro Calanzani and Glauter de Sousa Vilela"
+uuid: "f79fd32e-84ba-4b0b-969d-717588b338ca"

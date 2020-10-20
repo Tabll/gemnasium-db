@@ -1,0 +1,23 @@
+# This advisory is derived from
+# https://github.com/FriendsOfPHP/security-advisories
+---
+identifier: "2016-05-24-1"
+package_slug: "packagist/typo3/cms"
+title: "Improper Access Control"
+description: "Missing Access Check in TYPO3 CMS."
+date: "2016-05-24"
+pubdate: "2016-05-24"
+affected_range: ">=6.2.0,<6.2.25||>=7.6.0,<7.6.8||>=8.0.0,<8.1.1"
+fixed_versions:
+- "6.2.25"
+- "7.6.8"
+- "8.1.1"
+affected_versions: "All versions starting from 6.2.0 before 6.2.25, all versions starting
+  from 7.6.0 before 7.6.8, all versions starting from 8.0.0 before 8.1.1"
+not_impacted: "All versions before 6.2.0, all versions starting from 6.2.25 before
+  7.6.0, all versions starting from 7.6.8 before 8.0.0, all versions starting from
+  8.0.0 before 8.1.1"
+solution: "Upgrade to versions 6.2.25, 7.6.8, 8.1.1 or above."
+urls:
+- "https://typo3.org/teamssecuritysecurity-bulletins/security-bulletins-single-view/article/missing-access-check-in-typo3-cms/"
+uuid: "9b31f3d0-2d8d-44c0-a05c-668224c08e52"

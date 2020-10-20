@@ -1,0 +1,18 @@
+---
+identifier: "GMS-2017-188"
+package_slug: "npm/serverlyr"
+title: "Directory Traversal"
+description: "`serverlyr` is vulnerable to a directory traversal issue, giving an
+  attacker access to the filesystem by placing \"../\" in the URL."
+date: "2017-08-30"
+pubdate: "2017-08-30"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "Because there is no fixed version for this module, we recommend using another
+  one."
+urls:
+- "https://github.com/JacksonGL/NPM-Vuln-PoC/tree/master/directory-traversal/serverlyr"
+- "https://nodesecurity.io/advisories/365"
+credit: "Liang Gong"
+uuid: "7cc11252-76bb-4704-8362-b94c44ac2a36"

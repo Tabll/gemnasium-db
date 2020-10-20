@@ -1,0 +1,16 @@
+---
+identifier: "OSVDB-112346"
+package_slug: "gem/web-console"
+title: "Unspecified flow / unspecified impact"
+description: "Web Console Gem contains an unspecified flaw. This impact of this security
+  issue is unknown."
+date: "2014-09-29"
+pubdate: "2014-09-29"
+affected_range: "=2.0.0.beta3"
+fixed_versions:
+- "2.0.0.beta4"
+affected_versions: "Version 2.0.0.beta3"
+solution: "Upgrade to latest version."
+urls:
+- "http://weblog.rubyonrails.org/2014/9/29/Rails-4-2-0-beta2-has-been-released/"
+uuid: "ee23b30f-ca1f-4ae1-9329-94fc99bd642b"

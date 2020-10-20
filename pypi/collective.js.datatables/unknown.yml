@@ -1,0 +1,19 @@
+---
+identifier: "All versions"
+package_slug: "pypi/collective.js.datatables"
+title: "XSS vulnerability"
+description: "By exploiting a Cross-site scripting vulnerability the attacker can
+  hijack a user session. This means that the malicious hacker can change a user's
+  password and invalidate the session of the victim."
+date: "2015-09-09"
+pubdate: "2015-09-09"
+affected_range: ">=0.0a"
+fixed_versions: []
+affected_versions: ""
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://github.com/DataTables/DataTables/issues/602"
+- "https://github.com/DataTables/DataTablesSrc/commit/ccf86dc5982bd8e16d"
+- "https://www.netsparker.com/cve-2015-6384-xss-vulnerability-identified-in-datatables/"
+credit: "Onur Yilmaz"
+uuid: "5107e8f8-9c2a-485d-8340-425e040279cb"

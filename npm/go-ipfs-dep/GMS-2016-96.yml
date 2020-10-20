@@ -1,0 +1,19 @@
+---
+identifier: "GMS-2016-96"
+package_slug: "npm/go-ipfs-dep"
+title: "Downloads Resources over HTTP"
+description: "During the installation process, the go-ipfs-deps module insecurely
+  downloads resources over HTTP. This allows for a MITM attack to compromise the integrity
+  of the resources used by this module and could allow for further compromise."
+date: "2016-12-16"
+pubdate: "2016-12-16"
+affected_range: "<=0.4.4-1"
+fixed_versions:
+- "0.4.5"
+affected_versions: "All versions before 0.4.4"
+solution: "Upgrade to version 0.4.5 or greater"
+urls:
+- "https://github.com/diasdavid/go-ipfs-dep/pull/12"
+- "https://nodesecurity.io/advisories/156"
+credit: "Scott Hardy & Adam Baldwin"
+uuid: "d61fc0e3-5edd-476b-8d82-b7d1e97b50c4"

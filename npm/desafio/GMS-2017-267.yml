@@ -1,0 +1,18 @@
+---
+identifier: "GMS-2017-267"
+package_slug: "npm/desafio"
+title: "Directory Traversal"
+description: "`desafio` is vulnerable to a directory traversal issue, giving an attacker
+  access to the filesystem by placing \"../\" in the url, but is limited to accessing
+  only .html files./n"
+date: "2017-09-29"
+pubdate: "2017-09-29"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/desafio"
+- "https://nodesecurity.io/advisories/397"
+credit: "Liang Gong"
+uuid: "960b812b-6415-4b1a-b29b-ca1ed94318df"

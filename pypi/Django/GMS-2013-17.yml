@@ -1,0 +1,18 @@
+---
+identifier: "GMS-2013-17"
+package_slug: "pypi/Django"
+title: "XSS in admin interface"
+description: "The Django administrative application, django.contrib.admin, consider
+  value of a URLField to be safe. Thus, when displaying it, Django does not escape
+  it allowing an attacker to perform XSS in the administrative interface."
+date: "2013-08-13"
+pubdate: "2013-08-13"
+affected_range: ">=1.5,<1.5.2"
+fixed_versions:
+- "1.5.2"
+affected_versions: "All versions starting from 1.5 before 1.5.2"
+solution: "Upgrade to latest"
+urls:
+- "https://www.djangoproject.com/weblog/2013/aug/13/security-releases-issued/"
+credit: "Łukasz Langa"
+uuid: "9d1e278a-8895-4d91-94e1-a2cb7359866e"

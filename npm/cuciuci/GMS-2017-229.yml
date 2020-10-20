@@ -1,0 +1,17 @@
+---
+identifier: "GMS-2017-229"
+package_slug: "npm/cuciuci"
+title: "Directory Traversal"
+description: "`cuciuci` is vulnerable to a directory traversal issue, giving an attacker
+  access to the filesystem by placing \"../\" in the URL."
+date: "2017-09-26"
+pubdate: "2017-09-26"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://github.com/JacksonGL/NPM-Vuln-PoC/tree/master/directory-traversal/cuciuci"
+- "https://nodesecurity.io/advisories/381"
+credit: "Liang Gong"
+uuid: "f6ab1a4a-8e07-4e5a-b342-5c245b25ce4b"

@@ -1,0 +1,20 @@
+---
+identifier: "GMS-2015-45"
+package_slug: "packagist/typo3/flow"
+title: "XXE vulnerability"
+description: "A potential XML External Entity processing vulnerability has been discovered
+  in the MediaTypeConverter. "
+date: "2015-11-23"
+pubdate: "2015-11-23"
+affected_range: ">=3.0.0-beta1,<3.0.1||>=2.3.0-stable,<2.3.7"
+fixed_versions:
+- "2.3.7"
+- "3.0.1"
+affected_versions: "All versions starting from 3.0.0-beta1 before 3.0.1, all versions
+  starting from 2.3.0 before 2.3.7"
+not_impacted: "2.x prior to 2.3.0"
+solution: "Upgrade to latest version."
+urls:
+- "https://www.neos.io/news/flow-sa-2015-001.html"
+credit: "Wouter Wolters"
+uuid: "99cec42e-fb3d-42aa-bfdf-32aa229a902b"

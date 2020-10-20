@@ -1,0 +1,17 @@
+---
+identifier: "GMS-2017-271"
+package_slug: "npm/serverabc"
+title: "Directory Traversal"
+description: "`serverabc` is vulnerable to a directory traversal issue, giving an
+  attacker access to the filesystem by placing \"../\" in the url./n"
+date: "2017-10-02"
+pubdate: "2017-10-02"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/serverabc"
+- "https://nodesecurity.io/advisories/459"
+credit: "Liang Gong"
+uuid: "eec73318-7490-461b-b64b-409b5acde9da"

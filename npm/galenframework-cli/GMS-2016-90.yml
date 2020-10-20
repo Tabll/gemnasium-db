@@ -1,0 +1,20 @@
+---
+identifier: "GMS-2016-90"
+package_slug: "npm/galenframework-cli"
+title: "Downloads Resources over HTTP"
+description: "The library downloads binary resources over HTTP, which leaves the module
+  vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE)
+  by swapping out the requested binary with an attacker controlled binary if the attacker
+  is on the network or positioned in between the user and the remote server."
+date: "2016-12-06"
+pubdate: "2016-12-06"
+affected_range: "<=2.3.1-6"
+fixed_versions:
+- "2.3.2"
+affected_versions: "All versions before 2.3.1"
+solution: "Update to version 2.3.2 or later."
+urls:
+- "https://github.com/hypery2k/galenframework-cli/commit/dcf9505f77f2ea50f84372f9b6b521c89561cbe1"
+- "https://nodesecurity.io/advisories/170"
+credit: "Adam Baldwin"
+uuid: "29775903-71cd-4df1-8bd2-2682ed4c03c3"

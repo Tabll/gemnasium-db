@@ -1,0 +1,16 @@
+---
+identifier: "GMS-2018-32"
+package_slug: "npm/event-stream"
+title: "Malicious package"
+description: "The event-stream package contains a malicious dependency."
+date: "2018-10-20"
+pubdate: "2018-10-20"
+affected_range: "=3.3.6"
+fixed_versions:
+- "4.0.0"
+affected_versions: "Version 3.3.6"
+not_impacted: "All versions before 3.3.6, all versions after 3.6.6"
+solution: "Upgrade to version 4.0.0."
+urls:
+- "https://github.com/dominictarr/event-stream/issues/116"
+uuid: "a2353474-d999-4237-8c7a-097ac6b5cf02"

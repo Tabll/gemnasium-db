@@ -1,0 +1,18 @@
+# This advisory is derived from
+# https://github.com/FriendsOfPHP/security-advisories
+---
+identifier: "2016-02-16-1"
+package_slug: "packagist/typo3/cms"
+title: "SQL Injection"
+description: "SQL Injection in dbal."
+date: "2016-02-16"
+pubdate: "2016-02-16"
+affected_range: ">=6.2.0,<6.2.18"
+fixed_versions:
+- "6.2.18"
+affected_versions: "All versions starting from 6.2.0 before 6.2.18"
+not_impacted: "All versions before 6.2.0, all versions starting from 6.2.18"
+solution: "Upgrade to version 6.2.18 or above."
+urls:
+- "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2015-016/"
+uuid: "b7c46e13-4473-47e5-bf79-3e4b66b4d844"

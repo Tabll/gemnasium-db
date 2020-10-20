@@ -1,0 +1,17 @@
+---
+identifier: "GMS-2017-312"
+package_slug: "npm/enserver"
+title: "Directory Traversal"
+description: "`enserver` is vulnerable to a directory traversal issue, giving an attacker
+  access to the filesystem by placing \"../\" in the url./n"
+date: "2017-10-09"
+pubdate: "2017-10-09"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/enserver"
+- "https://nodesecurity.io/advisories/425"
+credit: "Liang Gong"
+uuid: "80d198b6-0dc4-40b1-8e0e-517ae8168292"

@@ -1,0 +1,17 @@
+---
+identifier: "GMS-2017-193"
+package_slug: "npm/cyber-js"
+title: "Directory Traversal"
+description: "A `cyberjs` server is vulnerable to a directory traversal issue, giving
+  an attacker access to the filesystem by placing \"../\" in the url."
+date: "2017-09-06"
+pubdate: "2017-09-06"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://github.com/JacksonGL/NPM-Vuln-PoC/tree/master/directory-traversal/cyber-js"
+- "https://nodesecurity.io/advisories/347"
+credit: "Liang Gong"
+uuid: "94a48daf-915b-4f56-bfbf-241d488dc1a9"

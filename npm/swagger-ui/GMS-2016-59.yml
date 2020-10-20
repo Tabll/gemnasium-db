@@ -1,0 +1,18 @@
+---
+identifier: "GMS-2016-59"
+package_slug: "npm/swagger-ui"
+title: "XSS in URL Query String Parameter"
+description: "There's a cross site scripting (XSS) vulnerability in the `url` query
+  string parameter."
+date: "2016-08-15"
+pubdate: "2016-08-15"
+affected_range: "<2.1.0"
+fixed_versions:
+- "2.1.0"
+affected_versions: "All versions before 2.1.0"
+solution: "Upgrade to version 2.1.0 or above."
+urls:
+- "https://github.com/swagger-api/swagger-ui/issues/1262"
+- "https://nodesecurity.io/advisories/137"
+credit: "mehmetaydogdu"
+uuid: "7456e0f8-286e-4a69-9586-d3cc2fc4ea27"

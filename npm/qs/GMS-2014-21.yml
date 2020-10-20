@@ -1,0 +1,19 @@
+---
+identifier: "GMS-2014-21"
+package_slug: "npm/qs"
+title: "Denial-of-Service Extended Event Loop Blocking"
+description: "qs is affected by a denial of service vulnerability that results from
+  excessive recursion in parsing a deeply nested JSON string."
+date: "2014-08-06"
+pubdate: "2014-08-06"
+affected_range: "<1.0.0"
+fixed_versions:
+- "1.0.0"
+affected_versions: "All versions before 1.0.0"
+not_impacted: ">= 1.x"
+solution: "Update to 1.0.0 or higher."
+urls:
+- "https://nodesecurity.io/advisories/qs_dos_extended_event_loop_blocking"
+- "https://www.npmjs.org/package/qs"
+credit: "Tom Steele"
+uuid: "dc790c1c-61ce-4295-ae2d-5e02a42a7de5"

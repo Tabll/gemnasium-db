@@ -1,0 +1,20 @@
+---
+identifier: "GMS-2016-87"
+package_slug: "npm/appium-chromedriver"
+title: "Downloads Resources over HTTP"
+description: "The library downloads binary resources over HTTP, which leaves the module
+  vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE)
+  by swapping out the requested binary with an attacker controlled binary if the attacker
+  is on the network or positioned in between the user and the remote server."
+date: "2016-12-06"
+pubdate: "2016-12-06"
+affected_range: "<2.9.4"
+fixed_versions:
+- "2.9.4"
+affected_versions: "All versions before 2.9.4"
+solution: "Upgrade to version 2.9.4 or greater."
+urls:
+- "https://github.com/appium/appium-chromedriver/commit/c7e384afcddf009636b8e5bb23b1f06150eda293"
+- "https://nodesecurity.io/advisories/162"
+credit: "Adam Baldwin"
+uuid: "13cab419-affc-4ce9-977c-57ce8568cf35"

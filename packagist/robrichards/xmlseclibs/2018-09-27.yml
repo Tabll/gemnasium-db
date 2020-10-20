@@ -1,0 +1,18 @@
+# This advisory is derived from
+# https://github.com/FriendsOfPHP/security-advisories
+---
+identifier: "2018-09-27"
+package_slug: "packagist/robrichards/xmlseclibs"
+title: "XPath Injection"
+description: "Filter input to avoid XPath injection."
+date: "2018-02-15"
+pubdate: "2018-02-15"
+affected_range: ">=1.0.0,<3.0.2"
+fixed_versions:
+- "3.0.2"
+affected_versions: "All versions starting from 1.0.0 before 3.0.2"
+not_impacted: "All versions before 1.0.0, all versions starting from 3.0.2"
+solution: "Upgrade to version 3.0.2 or above."
+urls:
+- "https://github.com/robrichards/xmlseclibs/commit/649032643f7aac493e91ca318da0339aec72aa4a"
+uuid: "364de8a0-ee28-493d-92ca-06857ff25d01"

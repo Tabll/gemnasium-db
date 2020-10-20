@@ -1,0 +1,18 @@
+# This advisory is derived from
+# https://github.com/FriendsOfPHP/security-advisories
+---
+identifier: "2013-04-08"
+package_slug: "packagist/twig/twig"
+title: "Path Traversal"
+description: "Vulnerability in the filesystem loader."
+date: "2013-04-08"
+pubdate: "2013-04-08"
+affected_range: ">=1.0.0,<1.12.3"
+fixed_versions:
+- "1.12.3"
+affected_versions: "All versions starting from 1.0.0 before 1.12.3"
+not_impacted: "All versions before 1.0.0, all versions starting from 1.12.3"
+solution: "Upgrade to version 1.12.3 or above."
+urls:
+- "http://blog.twig.sensiolabs.org/post/47461911874/security-release-twig-1-12-3-released"
+uuid: "b255e4c2-af55-464e-b685-f40a93836d7d"

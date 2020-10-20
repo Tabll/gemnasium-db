@@ -1,0 +1,16 @@
+# This advisory is derived from
+# https://github.com/FriendsOfPHP/security-advisories
+---
+identifier: "2017-11-20"
+package_slug: "packagist/stormpath/sdk"
+title: "Use of Insufficiently Random Values"
+description: "Insecure Random Number Generator in stormpath."
+date: "2017-11-20"
+pubdate: "2017-11-20"
+affected_range: ">=0.0.0,<9.9.99"
+fixed_versions: []
+affected_versions: "All versions starting from 0.0.0 before 9.9.99"
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/stormpath/stormpath-sdk-php/issues/132"
+uuid: "1be66353-a7a9-4de7-be41-055cca2e1a75"

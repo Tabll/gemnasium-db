@@ -1,0 +1,19 @@
+# This advisory is derived from
+# https://github.com/FriendsOfPHP/security-advisories
+---
+identifier: "2018-02-26-1"
+package_slug: "packagist/ezsystems/ezpublish-legacy"
+title: "Cross-site Scripting"
+description: "Several vulnerabilities in Forgot password, Information collector, XML
+  text, and Matrix field type features"
+date: "2018-02-26"
+pubdate: "2018-02-26"
+affected_range: ">=2011.0.0,<2017.12.2.1"
+fixed_versions:
+- "2017.12.2.1"
+affected_versions: "All versions starting from 2011.0.0 before 2017.12.2.1"
+not_impacted: "All versions before 2011.0.0, all versions starting from 2017.12.2.1"
+solution: "Upgrade to version 2017.12.2.1 or above."
+urls:
+- "http://share.ez.no/community-project/security-advisories/ezsa-2018-001-several-vulnerabilities-in-forgot-password-information-collector-xml-text-and-matrix-field-type-features"
+uuid: "0a3e44bc-0f42-4d5d-a65b-297d471e8d68"

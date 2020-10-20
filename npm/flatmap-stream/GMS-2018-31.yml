@@ -1,0 +1,15 @@
+---
+identifier: "GMS-2018-31"
+package_slug: "npm/flatmap-stream"
+title: "Malicious package"
+description: "The flatmap-stream package is malicious."
+date: "2018-10-20"
+pubdate: "2018-10-20"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Avoid installing this package or remove it."
+urls:
+- "https://github.com/dominictarr/event-stream/issues/116"
+uuid: "d05b94a0-758c-4f90-9a8d-d1c5e184afa2"

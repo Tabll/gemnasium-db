@@ -1,0 +1,18 @@
+---
+identifier: "GMS-2015-11"
+package_slug: "pypi/django-countries"
+title: "Cross-Site Scripting"
+description: "This package is vulnerable to Cross-Site Scripting (XSS) attacks"
+date: "2015-05-13"
+pubdate: "2015-05-13"
+affected_range: "<3.4"
+fixed_versions:
+- "3.4"
+affected_versions: "All versions before 3.4"
+solution: "Upgrade to latest version."
+urls:
+- "https://github.com/SmileyChris/django-countries/blob/master/CHANGES.rst#version-34-22-october-2015"
+- "https://github.com/SmileyChris/django-countries/commit/1ed7c6763d890d00f32242202b424709e8668d5a"
+- "https://github.com/SmileyChris/django-countries/pull/108"
+credit: "Antonin Lacombe"
+uuid: "517b7a64-362e-4da3-b416-6c3c726bf71c"

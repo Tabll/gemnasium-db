@@ -1,0 +1,19 @@
+---
+identifier: "GMS-2017-118"
+package_slug: "npm/i18next"
+title: "Cross-Site Scripting"
+description: "Because of how the interpolation is implemented, making replacements
+  from the dictionary one at a time, untrusted user input can use the name of one
+  of the dictionary keys to inject script into the browser."
+date: "2017-03-14"
+pubdate: "2017-03-14"
+affected_range: "<=1.10.2"
+fixed_versions:
+- "1.10.3"
+affected_versions: "All versions up to 1.10.2"
+solution: "Upgrade to v1.10.3 or greater."
+urls:
+- "https://github.com/i18next/i18next/pull/443"
+- "https://nodesecurity.io/advisories/325"
+credit: "KJ Tsanaktsidis"
+uuid: "d771229b-9a15-4dce-ba40-c2618e87e358"

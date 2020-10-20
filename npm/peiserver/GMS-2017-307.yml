@@ -1,0 +1,17 @@
+---
+identifier: "GMS-2017-307"
+package_slug: "npm/peiserver"
+title: "Directory Traversal"
+description: "`peiserver` is vulnerable to a directory traversal issue, giving an
+  attacker access to the filesystem by placing \"../\" in the url./n"
+date: "2017-10-09"
+pubdate: "2017-10-09"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/peiserver"
+- "https://nodesecurity.io/advisories/420"
+credit: "Liang Gong"
+uuid: "2c2baff2-d752-42be-b2e6-bd526a429ef7"

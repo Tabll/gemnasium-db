@@ -1,0 +1,18 @@
+# This advisory is derived from
+# https://github.com/FriendsOfPHP/security-advisories
+---
+identifier: "2016-03-16"
+package_slug: "packagist/paragonie/random_compat"
+title: "Cryptographic Issues"
+description: "random_compat u ses insecure CSPRNG (`openssl_random_pseudo_bytes()`)."
+date: "2016-03-16"
+pubdate: "2016-03-16"
+affected_range: "<2.0"
+fixed_versions:
+- "2.0.0"
+affected_versions: "All versions before 2.0"
+not_impacted: "All versions starting from 2.0"
+solution: "Upgrade to version 2.0.0 or above."
+urls:
+- "https://github.com/paragonie/random_compat/issues/96"
+uuid: "ca55739d-c8cc-43d8-9d9d-bc5a4c2a9a5a"

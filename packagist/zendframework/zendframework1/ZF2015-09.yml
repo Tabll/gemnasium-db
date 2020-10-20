@@ -1,0 +1,19 @@
+# This advisory is derived from
+# https://github.com/FriendsOfPHP/security-advisories
+---
+identifier: "ZF2015-09"
+package_slug: "packagist/zendframework/zendframework1"
+title: "Information Disclosure"
+description: "Potential Information Disclosure and Insufficient Entropy vulnerability
+  in `Zend\\Captcha\\Word`."
+date: "2015-11-23"
+pubdate: "2015-11-23"
+affected_range: ">=1.12.0,<1.12.17"
+fixed_versions:
+- "1.12.17"
+affected_versions: "All versions starting from 1.12.0 before 1.12.17"
+not_impacted: "All versions before 1.12.0, all versions starting from 1.12.17"
+solution: "Upgrade to version 1.12.17 or above."
+urls:
+- "https://framework.zend.com/security/advisory/ZF2015-09"
+uuid: "bc6db313-083a-4313-9664-6e401b095231"

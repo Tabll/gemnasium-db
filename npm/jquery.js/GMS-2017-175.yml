@@ -1,0 +1,16 @@
+---
+identifier: "GMS-2017-175"
+package_slug: "npm/jquery.js"
+title: "Hijacked Environment Variables"
+description: "`jquery.js` was a malicious module published with the intent to hijack
+  environment variables. It has been unpublished by npm."
+date: "2017-08-08"
+pubdate: "2017-08-08"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "If you have found this installed in your environment you should invalidate
+  and regenerate any authentication tokens found in your environment variables."
+urls:
+- "https://nodesecurity.io/advisories/496"
+uuid: "14e56e35-d504-46f8-9c5e-f042d982286c"

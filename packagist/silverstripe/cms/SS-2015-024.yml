@@ -1,0 +1,18 @@
+---
+identifier: "SS-2015-024"
+package_slug: "packagist/silverstripe/cms"
+title: "Queued jobs serialised data exposure"
+description: "SavedJobData and SavedJobMessages contain php serialized data. There's
+  no point showing these to a CMS Admin as they're not human readable. Worse, it might
+  be insecure, as a malicious CMS Admin might be able to craft a payload thats dangerous
+  to unserialize. This issue has been resolved by hiding this content, even from administrators."
+date: "2015-11-23"
+pubdate: "2015-11-23"
+affected_range: "<2.8.3"
+fixed_versions:
+- "3.0.10"
+affected_versions: "All versions before 2.8.3"
+solution: "Upgrade to latest version."
+urls:
+- "http://www.silverstripe.org/download/security-releases/SS-2015-024"
+uuid: "4652d8d8-6f10-4460-8d88-daa80df3b0a7"

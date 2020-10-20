@@ -1,0 +1,19 @@
+---
+identifier: "GMS-2018-4"
+package_slug: "npm/mobile-icon-resizer"
+title: "Arbitrary Code Injection"
+description: "mobile-icon-resizer has a code execution vulnerability via the image
+  resizing configuration: the parameters `ratio` and `baseRatio` are passed directly
+  to `eval()`, thus allowing dynamic javascript payloads to be executed."
+date: "2018-01-15"
+pubdate: "2018-01-15"
+affected_range: ">=0.2.0 <=0.4.2"
+fixed_versions:
+- "0.4.3"
+affected_versions: "All versions starting from 0.2.0 up to 0.4.2"
+solution: "Upgrade to latest version."
+urls:
+- "https://github.com/muzzley/mobile-icon-resizer/issues/8"
+- "https://nodesecurity.io/advisories/317"
+credit: "Cristian-Alexandru Staicu"
+uuid: "a858ebfd-30b7-4bc9-877d-0114dcf22b89"

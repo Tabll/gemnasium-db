@@ -1,0 +1,17 @@
+---
+identifier: "GMS-2017-315"
+package_slug: "npm/nodeaaaaa"
+title: "Directory Traversal"
+description: "`nodeaaaaa` is vulnerable to a directory traversal issue, giving an
+  attacker access to the filesystem by placing \"../\" in the url./n"
+date: "2017-10-10"
+pubdate: "2017-10-10"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/nodeaaaaa"
+- "https://nodesecurity.io/advisories/446"
+credit: "Liang Gong"
+uuid: "46c8c135-52e9-4637-8052-f5b1a47396b8"

@@ -1,0 +1,16 @@
+---
+identifier: "GMS-2017-163"
+package_slug: "npm/gruntcli"
+title: "Hijacked Environment Variables"
+description: "`gruntcli` was a malicious module published with the intent to hijack
+  environment variables. It has been unpublished by npm."
+date: "2017-08-08"
+pubdate: "2017-08-08"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "If you have found this installed in your environment you should invalidate
+  and regenerate any authentication tokens found in your environment variables."
+urls:
+- "https://nodesecurity.io/advisories/498"
+uuid: "ebf401d6-81d3-463f-9c7d-1108698f0c3c"

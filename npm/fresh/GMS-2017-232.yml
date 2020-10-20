@@ -1,0 +1,19 @@
+---
+identifier: "GMS-2017-232"
+package_slug: "npm/fresh"
+title: "Regular Expression Denial of Service"
+description: "Fresh is vulnerable to a regular expression denial of service when it
+  is passed specially crafted input to parse. This causes the event loop to be blocked
+  causing a denial of service condition."
+date: "2017-09-26"
+pubdate: "2017-09-26"
+affected_range: "< 0.5.2"
+fixed_versions:
+- "0.5.2"
+affected_versions: "All versions before 0.5.2"
+solution: "Upgrade to latest version. If you are using this module via express, upgrade
+  to Express version 4.15.5 or greater."
+urls:
+- "https://nodesecurity.io/advisories/526"
+credit: "Cristian-Alexandru Staicu"
+uuid: "a45dd12c-da38-4119-a6a7-1e0b3f9d5d44"

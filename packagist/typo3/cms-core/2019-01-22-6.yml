@@ -1,0 +1,21 @@
+# This advisory is derived from
+# https://github.com/FriendsOfPHP/security-advisories
+---
+identifier: "2019-01-22-6"
+package_slug: "packagist/typo3/cms-core"
+title: "Cross-site Scripting"
+description: "Cross-Site Scripting in Form Framework."
+date: "2019-01-22"
+pubdate: "2019-01-22"
+affected_range: ">=8.0.0,<8.7.23||>=9.0.0,<9.5.4"
+fixed_versions:
+- "8.7.23"
+- "9.5.4"
+affected_versions: "All versions starting from 8.0.0 before 8.7.23, all versions starting
+  from 9.0.0 before 9.5.4"
+not_impacted: "All versions before 8.0.0, all versions starting from 8.7.23 before
+  9.0.0, all versions starting from 9.5.4"
+solution: "Upgrade to versions 8.7.23, 9.5.4 or above."
+urls:
+- "https://typo3.org/security/advisory/typo3-core-sa-2019-007/"
+uuid: "0cfa6c4a-2167-4ef0-bacf-25f0f1e9e6c0"

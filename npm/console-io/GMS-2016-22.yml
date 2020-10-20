@@ -1,0 +1,21 @@
+---
+identifier: "GMS-2016-22"
+package_slug: "npm/console-io"
+title: "Authentication Bypass"
+description: "A malicious user could bypass the authentication and execute any command
+  that the user who is running the console-io application is able to run. This means
+  that if console-io was running from root, the attacker would have full access to
+  the system. This vulnerability exists because the application does not configure
+  socket.io to require authentication, which allows a malicious user to connect via
+  a websocket to send commands and receive the response."
+date: "2016-04-18"
+pubdate: "2016-04-18"
+affected_range: "<=2.6.3"
+fixed_versions:
+- "2.7.0"
+affected_versions: "All versions up to 2.6.3"
+solution: "Upgrade to at least version 2.7.0\r\n"
+urls:
+- "https://nodesecurity.io/advisories/90"
+credit: "Craig Arendt"
+uuid: "789d2819-31f7-4392-a6db-17068f8baabd"

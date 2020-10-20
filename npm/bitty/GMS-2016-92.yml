@@ -1,0 +1,16 @@
+---
+identifier: "GMS-2016-92"
+package_slug: "npm/bitty"
+title: "Directory Traversal"
+description: " Bitty has a directory traversal vulnerability that is exploitable via
+  the URL path\nin GET requests."
+date: "2016-12-07"
+pubdate: "2016-12-07"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://nodesecurity.io/advisories/150"
+credit: "Liang Gong"
+uuid: "cc3d1ceb-539c-425f-9260-564ec138d196"

@@ -1,0 +1,22 @@
+---
+identifier: "ZF2016-11"
+package_slug: "packagist/zendframework/zendframework1"
+title: "Potential Insufficient Entropy"
+description: "There are several methods used to generate random numbers in ZF1 that
+  potentially used insufficient entropy. Moreover, there's a potential security issue
+  in the usage of the `openssl_random_pseudo_bytes()` function in `Zend_Crypt_Math::randBytes`,
+  reported in PHP BUG #70014, and the security implications reported in a discussion
+  on the `random_compat` library."
+date: "2016-04-13"
+pubdate: "2016-04-13"
+affected_range: "<1.12.18"
+fixed_versions:
+- "1.12.18"
+affected_versions: "All versions before 1.12.18"
+solution: "Upgrade to latest version."
+urls:
+- "http://framework.zend.com/security/advisory/ZF2016-01"
+- "https://bugs.php.net/bug.php?id=70014"
+- "https://github.com/paragonie/random_compat/issues/96"
+credit: "Brian Engert of Soliant Consulting, Enrico Zimuel"
+uuid: "47deea7f-de67-40f0-bf95-6b18d825be0c"

@@ -1,0 +1,17 @@
+---
+identifier: "GMS-2017-314"
+package_slug: "npm/discordi.js"
+title: "Exfiltrates Discord login tokens to pastebin"
+description: "discordi.js is a malicious module based on the discord.js library that
+  exfiltrates login tokens to pastebin."
+date: "2017-10-09"
+pubdate: "2017-10-09"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "Do not install / use this module. It has been unpublished from the registry
+  but may exist in some caches. Any users that logged into Discord using this library
+  will need to change their credentials."
+urls:
+- "https://nodesecurity.io/advisories/545"
+uuid: "5ac04b26-4ec1-4c85-8979-9699d50aa959"

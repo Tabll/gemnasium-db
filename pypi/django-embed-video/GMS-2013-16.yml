@@ -1,0 +1,17 @@
+---
+identifier: "GMS-2013-16"
+package_slug: "pypi/django-embed-video"
+title: "Open Redirect attacks"
+description: "This package is vulnerable to Open Redirect attacks due to no detection
+  of faked urls."
+date: "2013-08-12"
+pubdate: "2013-08-12"
+affected_range: "<0.3"
+fixed_versions:
+- "0.3"
+affected_versions: "All versions before 0.3"
+solution: "Upgrade to latest version."
+urls:
+- "https://github.com/jazzband/django-embed-video/commit/d0d357b767e324a7cc21b5035357fdfbc7c8ce8e"
+credit: "Juda Kaleta"
+uuid: "d53170d6-4565-43f1-a0d4-a3d6af1053b8"

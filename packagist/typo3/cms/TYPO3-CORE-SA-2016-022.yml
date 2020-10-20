@@ -1,0 +1,26 @@
+---
+identifier: "TYPO3-CORE-SA-2016-022"
+package_slug: "packagist/typo3/cms"
+title: "Cache Flooding in Frontend"
+description: "Links with a valid cHash argument lead to newly generated page cache
+  entries. Because the cHash is not bound to a specific page, attackers could use
+  valid cHash arguments for multiple pages, leading to additional useless page cache
+  entries. Depending on the number of pages in the system and the number of available
+  valid links with a cHash, attackers could add a considerable amount of additional
+  cache entries, which in the end exceed storage limits and thus could lead to the
+  system not responding any more. This means the Cache Flooding attack potentially
+  could lead to a successful Denial of Service (DoS) attack."
+date: "2016-09-13"
+pubdate: "2016-09-13"
+affected_range: "<6.2.27||>=7.0.0.alpha,<7.6.11||>=8.0.0.alpha,<8.3.1"
+fixed_versions:
+- "6.2.27"
+- "7.6.11"
+- "8.3.1"
+affected_versions: "All versions before 6.2.27, all versions starting from 7.0.0.alpha
+  before 7.6.11, all versions starting from 8.0.0.alpha before 8.3.1"
+solution: "Upgrade to latest version."
+urls:
+- "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2016-022"
+credit: "Dmitry Dulepov"
+uuid: "7b1bfcc9-6c8a-4b00-8a79-03a7c3ef4954"

@@ -1,0 +1,21 @@
+# This advisory is derived from
+# https://github.com/FriendsOfPHP/security-advisories
+---
+identifier: "2018-04-18"
+package_slug: "packagist/drupal/drupal"
+title: "Cross-site Scripting"
+description: "XSS vulnerabiltiy in drupal."
+date: "2018-04-18"
+pubdate: "2018-04-18"
+affected_range: ">=8.0,<8.4.7||>=8.5,<8.5.2"
+fixed_versions:
+- "8.4.7"
+- "8.5.2"
+affected_versions: "All versions starting from 8.0 before 8.4.7, all versions starting
+  from 8.5 before 8.5.2"
+not_impacted: "All versions before 8.0, all versions starting from 8.4.7 before 8.5,
+  all versions starting from 8.5.2"
+solution: "Upgrade to versions 8.4.7, 8.5.2 or above."
+urls:
+- "https://www.drupal.org/sa-core-2018-003"
+uuid: "21161ee3-776d-4d27-b021-690dc23ba5f0"

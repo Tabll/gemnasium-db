@@ -1,0 +1,20 @@
+---
+identifier: "GMS-2015-40"
+package_slug: "packagist/codeigniter/framework"
+title: "XSS vulnerability"
+description: "There's an XSS attack vector in Security Library method `xss_clean()`."
+date: "2015-10-31"
+pubdate: "2015-10-31"
+affected_range: "<3.0.3"
+fixed_versions:
+- "3.0.3"
+affected_versions: "All versions before 3.0.3"
+solution: "Upgrade to latest version."
+urls:
+- "http://www.codeigniter.com/user_guide/changelog.html#version-3-0-3"
+- "https://github.com/bcit-ci/CodeIgniter/commit/249580e711d42fe966e52d7bcc0f349ba99a94a3"
+- "https://github.com/bcit-ci/CodeIgniter/commit/4fbf2d1a8e2b6d33e92f3f353b05388fd3229bd7"
+- "https://github.com/bcit-ci/CodeIgniter/commit/71b1b3f5b2dcc0f4b652e9494e9853b82541ac8c"
+- "https://github.com/bcit-ci/CodeIgniter/commit/f0f47da9ae4227968ccc9ee6511bcab526498b4c"
+credit: "Andrey Andreev"
+uuid: "16f4d8e2-00bc-42ca-8742-bbe36adc0d06"

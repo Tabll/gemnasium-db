@@ -1,0 +1,27 @@
+# This advisory is derived from
+# https://github.com/FriendsOfPHP/security-advisories
+---
+identifier: "2016-11-01"
+package_slug: "packagist/typo3/flow"
+title: "Information Exposure Through Timing Discrepancy"
+description: "Time-Based Information Disclosure Vulnerability in Flow."
+date: "2016-11-01"
+pubdate: "2016-11-01"
+affected_range: ">=2.3.0,<2.3.16||>=3.0.0,<3.0.10||>=3.1.0,<3.1.7||>=3.2.0,<3.2.7||>=3.3.0,<3.3.5"
+fixed_versions:
+- "2.3.16"
+- "3.0.10"
+- "3.1.7"
+- "3.2.7"
+- "3.3.5"
+affected_versions: "All versions starting from 2.3.0 before 2.3.16, all versions starting
+  from 3.0.0 before 3.0.10, all versions starting from 3.1.0 before 3.1.7, all versions
+  starting from 3.2.0 before 3.2.7, all versions starting from 3.3.0 before 3.3.5"
+not_impacted: "All versions before 2.3.0, all versions starting from 2.3.16 before
+  3.0.0, all versions starting from 3.0.10 before 3.1.0, all versions starting from
+  3.1.7 before 3.2.0, all versions starting from 3.2.7 before 3.3.0, all versions
+  starting from 3.3.5"
+solution: "Upgrade to versions 2.3.16, 3.0.10, 3.1.7, 3.2.7, 3.3.5 or above."
+urls:
+- "https://www.neos.io/blog/flow-sa-2016-001.html"
+uuid: "eb2c4b0e-4c59-4e3b-a67b-a978328b2cd2"

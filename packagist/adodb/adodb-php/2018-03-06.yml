@@ -1,0 +1,18 @@
+# This advisory is derived from
+# https://github.com/FriendsOfPHP/security-advisories
+---
+identifier: "2018-03-06"
+package_slug: "packagist/adodb/adodb-php"
+title: "SQL Injection"
+description: "adodb-php contains a SQLi vulnerability."
+date: "2018-03-06"
+pubdate: "2018-03-06"
+affected_range: "<5.20.12"
+fixed_versions:
+- "5.20.12"
+affected_versions: "All versions before 5.20.12"
+not_impacted: "All versions starting from 5.20.12"
+solution: "Upgrade to version 5.20.12 or above."
+urls:
+- "https://github.com/ADOdb/ADOdb/pull/401"
+uuid: "147cdf17-a45b-42e6-abad-89a67a159681"

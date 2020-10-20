@@ -1,0 +1,17 @@
+---
+identifier: "GMS-2013-11"
+package_slug: "npm/libnotify"
+title: "Potential Command Injection"
+description: "Untrusted input passed in the call to libnotify.notify could result
+  in execution of shell commands. Callers may be unaware of this."
+date: "2013-05-16"
+pubdate: "2013-05-16"
+affected_range: "<=1.0.3"
+fixed_versions:
+- "1.0.4"
+affected_versions: "All versions up to 1.0.3"
+solution: "Upgrade to latest version."
+urls:
+- "https://nodesecurity.io/advisories/20"
+credit: "Adam Baldwin"
+uuid: "81aa2b74-ca5c-4d66-b22e-9f1d6f565c8b"

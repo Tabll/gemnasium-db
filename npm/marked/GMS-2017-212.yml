@@ -1,0 +1,19 @@
+---
+identifier: "GMS-2017-212"
+package_slug: "npm/marked"
+title: "Regular Expression Denial of Service"
+description: "The marked module is vulnerable to a regular expression denial of service.
+  Based on the information published in the public issue, 1k characters can block
+  for around 6 seconds."
+date: "2017-09-21"
+pubdate: "2017-09-21"
+affected_range: "<0.3.9"
+fixed_versions:
+- "0.3.9"
+affected_versions: "All versions before 0.3.9"
+solution: "Update to 0.3.9"
+urls:
+- "https://github.com/chjj/marked/issues/937"
+- "https://nodesecurity.io/advisories/531"
+credit: "Cristian-Alexandru Staicu"
+uuid: "1ea42320-be49-483b-b3fc-8a3a090e9d6a"

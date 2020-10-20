@@ -1,0 +1,18 @@
+---
+identifier: "GMS-2016-128"
+package_slug: "pypi/onegov.form"
+title: "Cross-Site Scripting"
+description: "This package is vulnerable to Cross-Site Scripting (XSS). When a label
+  is rendered, the contents of the label element were not escaped."
+date: "2016-12-22"
+pubdate: "2016-12-22"
+affected_range: "<0.16.1"
+fixed_versions:
+- "0.16.1"
+affected_versions: "All versions before 0.16.1"
+solution: "Upgrade to latest version."
+urls:
+- "https://github.com/OneGov/onegov.form/commit/abce4e1ca620de244460f005f9d2412683552f30"
+- "https://github.com/wtforms/wtforms/issues/315"
+credit: "Denis Krienbühl"
+uuid: "f6784357-e515-4597-9dfb-9df4b5b42259"

@@ -1,0 +1,21 @@
+# This advisory is derived from
+# https://github.com/FriendsOfPHP/security-advisories
+---
+identifier: "SS-2015-008-1"
+package_slug: "packagist/silverstripe/cms"
+title: "Incorrect Permission Assignment for Critical Resource"
+description: "SiteTree Creation Permission Vulnerability in silverstripe."
+date: "2015-03-19"
+pubdate: "2015-03-19"
+affected_range: ">=3.0.0,<=3.0.11||>=3.1.0,<3.1.11"
+fixed_versions:
+- "3.0.12"
+- "3.1.11"
+affected_versions: "All versions starting from 3.0.0 up to 3.0.11, all versions starting
+  from 3.1.0 before 3.1.11"
+not_impacted: "All versions before 3.0.0, all versions after 3.0.11 before 3.1.0,
+  all versions starting from 3.1.11"
+solution: "Upgrade to versions 3.0.12, 3.1.11 or above."
+urls:
+- "https://www.silverstripe.org/software/download/security-releases/ss-2015-008-sitetree-creation-permission-vulnerability/"
+uuid: "6730db60-67fb-4d2e-88ae-aaabe878bab7"

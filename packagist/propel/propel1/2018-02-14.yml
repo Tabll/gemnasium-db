@@ -1,0 +1,18 @@
+# This advisory is derived from
+# https://github.com/FriendsOfPHP/security-advisories
+---
+identifier: "2018-02-14"
+package_slug: "packagist/propel/propel1"
+title: "SQL Injection"
+description: "SQL injection possible with `limit()` on MySQL."
+date: "2018-02-16"
+pubdate: "2018-02-16"
+affected_range: ">=1,<=1.7.1"
+fixed_versions:
+- "1.7.2"
+affected_versions: "All versions starting from 1 up to 1.7.1"
+not_impacted: "All versions before 1, all versions after 1.7.1"
+solution: "Upgrade to version 1.7.2 or above."
+urls:
+- "https://github.com/propelorm/Propel/issues/1052"
+uuid: "d10cdce9-812f-4085-9a41-8d689db1d2d5"

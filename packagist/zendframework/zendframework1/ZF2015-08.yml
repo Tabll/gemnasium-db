@@ -1,0 +1,18 @@
+# This advisory is derived from
+# https://github.com/FriendsOfPHP/security-advisories
+---
+identifier: "ZF2015-08"
+package_slug: "packagist/zendframework/zendframework1"
+title: "SQL Injection"
+description: "Potential SQL injection vector using null byte for PDO (MsSql, SQLite)."
+date: "2015-09-15"
+pubdate: "2015-09-15"
+affected_range: ">=1.12.0,<1.12.16"
+fixed_versions:
+- "1.12.16"
+affected_versions: "All versions starting from 1.12.0 before 1.12.16"
+not_impacted: "All versions before 1.12.0, all versions starting from 1.12.16"
+solution: "Upgrade to version 1.12.16 or above."
+urls:
+- "https://framework.zend.com/security/advisory/ZF2015-08"
+uuid: "c5c800f6-4e9f-4fd9-897a-9fca5ddd2e14"

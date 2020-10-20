@@ -1,0 +1,18 @@
+---
+identifier: "GMS-2013-15"
+package_slug: "gem/coderay"
+title: "Denial of Service"
+description: "Hash caches and dynamic Symbol creation can be exploited by an attacker."
+date: "2013-07-17"
+pubdate: "2013-07-17"
+affected_range: ">=1.1.0.rc1 <1.1.0.rc5"
+fixed_versions:
+- "1.1.0.rc5"
+affected_versions: "All versions starting from 1.1.0.rc1 before 1.1.0.rc5"
+solution: "Upgrade to latest version."
+urls:
+- "https://github.com/rubychan/coderay/commit/d9ee8379543c59e75e39a7a233df6639ee7d4160"
+- "https://github.com/rubychan/coderay/issues/148"
+- "https://github.com/rubychan/coderay/pull/149"
+credit: "Kornelius Kalnbach"
+uuid: "dd04e660-5f75-4bc7-8931-2c2b8c6e9fe0"

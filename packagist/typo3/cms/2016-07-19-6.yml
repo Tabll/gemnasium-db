@@ -1,0 +1,19 @@
+# This advisory is derived from
+# https://github.com/FriendsOfPHP/security-advisories
+---
+identifier: "2016-07-19-6"
+package_slug: "packagist/typo3/cms"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Environment Variable Injection."
+date: "2016-07-19"
+pubdate: "2016-07-19"
+affected_range: ">=8.0.0,<8.2.1"
+fixed_versions:
+- "8.2.1"
+affected_versions: "All versions starting from 8.0.0 before 8.2.1"
+not_impacted: "All versions before 8.0.0, all versions starting from 8.2.1"
+solution: "Upgrade to version 8.2.1 or above."
+urls:
+- "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2016-019"
+uuid: "f0531fcf-037c-44c2-ad5e-e4384e83f38b"

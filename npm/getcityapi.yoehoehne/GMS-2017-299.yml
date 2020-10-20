@@ -1,0 +1,17 @@
+---
+identifier: "GMS-2017-299"
+package_slug: "npm/getcityapi.yoehoehne"
+title: "Directory Traversal"
+description: "`getcityapi.yoehoehne` is vulnerable to a directory traversal issue,
+  giving an attacker access to the filesystem by placing \"../\" in the url./n"
+date: "2017-10-04"
+pubdate: "2017-10-04"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/getcityapi.yoehoehne"
+- "https://nodesecurity.io/advisories/438"
+credit: "Liang Gong"
+uuid: "a1feb145-a44b-42c6-9c82-089393e3d56e"

@@ -1,0 +1,17 @@
+---
+identifier: "GMS-2013-9"
+package_slug: "npm/ep_imageconvert"
+title: "Unauthenticated Remote Command Injection"
+description: "ep_imageconvert is vulnerable to remote command injection."
+date: "2013-05-06"
+pubdate: "2013-05-06"
+affected_range: "<0.0.3"
+fixed_versions:
+- "0.0.3"
+affected_versions: "All versions before 0.0.3"
+solution: "Upgrade to latest version."
+urls:
+- "https://github.com/redhog/ep_imageconvert/pull/5"
+- "https://nodesecurity.io/advisories/ep_imageconvert_command_injection"
+credit: "Neal Poole"
+uuid: "6b6980cc-8beb-4c82-a23f-45bf332b5f43"

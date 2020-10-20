@@ -1,0 +1,18 @@
+---
+identifier: "OSVDB-118481"
+package_slug: "gem/nokogiri"
+title: "XML Document Root Element Handling Memory Consumption Remote DoS"
+description: "This package contains a flaw that is triggered when handling a root
+  element in an XML document. This may allow a remote attacker to cause a consumption
+  of memory resources."
+date: "2014-04-30"
+pubdate: "2014-04-30"
+affected_range: "<1.6.3"
+fixed_versions:
+- "1.6.3"
+affected_versions: "All versions before 1.6.3"
+solution: "Upgrade to latest version."
+urls:
+- "https://github.com/sparklemotion/nokogiri/pull/1087"
+credit: "Michal Ochman"
+uuid: "a4703878-04c6-4b69-adf1-1310844dfb01"

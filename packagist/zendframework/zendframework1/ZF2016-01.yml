@@ -1,0 +1,18 @@
+# This advisory is derived from
+# https://github.com/FriendsOfPHP/security-advisories
+---
+identifier: "ZF2016-01"
+package_slug: "packagist/zendframework/zendframework1"
+title: "Insufficient Entropy"
+description: "Potential Insufficient Entropy Vulnerability in ZF1."
+date: "2016-04-13"
+pubdate: "2016-04-13"
+affected_range: ">=1.12.0,<1.12.18"
+fixed_versions:
+- "1.12.18"
+affected_versions: "All versions starting from 1.12.0 before 1.12.18"
+not_impacted: "All versions before 1.12.0, all versions starting from 1.12.18"
+solution: "Upgrade to version 1.12.18 or above."
+urls:
+- "https://framework.zend.com/security/advisory/ZF2016-01"
+uuid: "d62eac61-20f1-40dd-95fe-5977b8083fe7"

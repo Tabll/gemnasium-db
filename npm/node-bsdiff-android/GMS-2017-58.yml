@@ -1,0 +1,16 @@
+---
+identifier: "GMS-2017-58"
+package_slug: "npm/node-bsdiff-android"
+title: "Downloads Resources over HTTP"
+description: "node-bsdiff-android downloads resources over HTTP, which leaves it vulnerable
+  to MITM attacks."
+date: "2017-01-01"
+pubdate: "2017-01-01"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://nodesecurity.io/advisories/234"
+credit: "Adam Baldwin"
+uuid: "f17d40d2-d6b7-4c1d-ad43-a135d5143ac1"

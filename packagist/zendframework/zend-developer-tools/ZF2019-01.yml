@@ -1,0 +1,18 @@
+# This advisory is derived from
+# https://github.com/FriendsOfPHP/security-advisories
+---
+identifier: "ZF2019-01"
+package_slug: "packagist/zendframework/zend-developer-tools"
+title: "Information Disclosure"
+description: "Information disclosure in `zend-developer-tools`."
+date: "2019-03-28"
+pubdate: "2019-03-28"
+affected_range: ">=1.2.2,<1.2.3"
+fixed_versions:
+- "1.2.3"
+affected_versions: "All versions starting from 1.2.2 before 1.2.3"
+not_impacted: "All versions before 1.2.2, all versions starting from 1.2.3"
+solution: "Upgrade to version 1.2.3 or above."
+urls:
+- "https://framework.zend.com/security/advisory/ZF2019-01"
+uuid: "f3afa8b1-6db8-4f79-bfc2-ea352ff8a21e"

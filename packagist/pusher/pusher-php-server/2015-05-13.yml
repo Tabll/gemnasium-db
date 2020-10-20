@@ -1,0 +1,18 @@
+# This advisory is derived from
+# https://github.com/FriendsOfPHP/security-advisories
+---
+identifier: "2015-05-13"
+package_slug: "packagist/pusher/pusher-php-server"
+title: "Improper Authentication"
+description: "Exploit in the private channel authentication."
+date: "2015-05-13"
+pubdate: "2015-05-13"
+affected_range: "<2.2.1"
+fixed_versions:
+- "2.2.1"
+affected_versions: "All versions before 2.2.1"
+not_impacted: "All versions starting from 2.2.1"
+solution: "Upgrade to version 2.2.1 or above."
+urls:
+- "https://blog.pusher.com/update-on-security/"
+uuid: "73c6d320-0190-4143-a0d8-303f9bb4657e"

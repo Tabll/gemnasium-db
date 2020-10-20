@@ -1,0 +1,20 @@
+---
+identifier: "GMS-2015-36"
+package_slug: "npm/hapi"
+title: "Incorrect handling of CORS preflight request headers"
+description: "Hapi implement CORS incorrectly and allowes for configurations that
+  at best return inconsistent headers and at worst allow cross-origin activities that
+  are expected to be forbidden."
+date: "2015-10-20"
+pubdate: "2015-10-20"
+affected_range: "<11.0.0"
+fixed_versions:
+- "11.0.0"
+affected_versions: "All versions before 11.0.0"
+solution: "Upgrade to latest version."
+urls:
+- "https://github.com/hapijs/hapi/issues/2840"
+- "https://github.com/hapijs/hapi/issues/2850"
+- "https://nodesecurity.io/advisories/45"
+credit: "Eran Hammer"
+uuid: "4d887e1e-5822-4387-b5ac-208e49377a34"

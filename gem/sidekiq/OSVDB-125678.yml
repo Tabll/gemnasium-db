@@ -1,0 +1,17 @@
+---
+identifier: "OSVDB-125678"
+package_slug: "gem/sidekiq"
+title: "XSS via msg.display_class element"
+description: "XSS via job arguments display class in `Sidekiq::Web` (`web/views/queue.erb`)."
+date: "2015-04-21"
+pubdate: "2015-04-21"
+affected_range: "<3.4.0"
+fixed_versions:
+- "3.4.0"
+affected_versions: "All versions before 3.4.0"
+solution: "Upgrade to latest version."
+urls:
+- "https://github.com/mperham/sidekiq/commit/3056a5ac96376038c1951fab2a3524f878c61709"
+- "https://github.com/mperham/sidekiq/pull/2309"
+credit: "Nolan Evans"
+uuid: "5b3cee0a-0f89-4263-880b-bd76a5cdc641"

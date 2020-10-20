@@ -1,0 +1,19 @@
+---
+identifier: "GMS-2013-18"
+package_slug: "pypi/Django"
+title: "Possible XSS via is_safe_url"
+description: "The is_safe_url() function, due to the manner in which it parses the
+  URL, will permit redirects to schemes other than HTTP and HTTPS such as javascript:."
+date: "2013-08-13"
+pubdate: "2013-08-13"
+affected_range: ">=1.4,<1.4.6||>=1.5,<1.5.2"
+fixed_versions:
+- "1.4.6"
+- "1.5.2"
+affected_versions: "All versions starting from 1.4 before 1.4.6, all versions starting
+  from 1.5 before 1.5.2"
+solution: "Upgrade to latest"
+urls:
+- "https://www.djangoproject.com/weblog/2013/aug/13/security-releases-issued/"
+credit: "Nick Bruun"
+uuid: "4963db3f-ace3-4899-9b75-bd97aa634bc1"

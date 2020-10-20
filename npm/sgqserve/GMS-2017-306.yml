@@ -1,0 +1,17 @@
+---
+identifier: "GMS-2017-306"
+package_slug: "npm/sgqserve"
+title: "Directory Traversal"
+description: "`sgqserve` is vulnerable to a directory traversal issue, giving an attacker
+  access to the filesystem by placing \"../\" in the url./n"
+date: "2017-10-09"
+pubdate: "2017-10-09"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/sgqserve"
+- "https://nodesecurity.io/advisories/419"
+credit: "Liang Gong"
+uuid: "1f235903-3b64-49dd-8f46-1c4e0b0bc04e"

@@ -1,0 +1,17 @@
+---
+identifier: "GMS-2017-268"
+package_slug: "npm/dylmomo"
+title: "Directory Traversal"
+description: "`dylmomo` is vulnerable to a directory traversal issue, giving an attacker
+  access to the filesystem by placing \"../\" in the url./n"
+date: "2017-09-29"
+pubdate: "2017-09-29"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/dylmomo"
+- "https://nodesecurity.io/advisories/396"
+credit: "Liang Gong"
+uuid: "5bb131f3-ad26-4adc-a26d-05e68e928a1d"

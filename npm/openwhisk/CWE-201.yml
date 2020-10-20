@@ -1,0 +1,18 @@
+---
+identifier: "CWE-201"
+package_slug: "npm/openwhisk"
+title: "Error clearly exposes the database credentials"
+description: "When access is denied, `mysql_pconnect()` raises a warning that exposes
+  the user credentials."
+date: "2017-07-18"
+pubdate: "2017-07-18"
+affected_range: "<3.2.1"
+fixed_versions:
+- "3.2.1"
+affected_versions: "All versions before 3.2.1"
+solution: "Upgrade to version 3.2.1 or higher."
+urls:
+- "https://cwe.mitre.org/data/definitions/201.html"
+- "https://github.com/apache/incubator-openwhisk-client-js/commit/0e40671e75d2ec7e88fa39ef787526d4304f2aaa"
+credit: "James M Snell"
+uuid: "d99db642-9524-41f0-8dba-1c1fcf79ce35"

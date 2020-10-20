@@ -1,0 +1,20 @@
+---
+identifier: "GMS-2016-34"
+package_slug: "npm/cli"
+title: "Arbitrary File Write"
+description: "Node-cli insecurely uses user provided data in the name of it's lock
+  file and log file. It allows the starting user to overwrite any file they have access
+  to."
+date: "2016-06-15"
+pubdate: "2016-06-15"
+affected_range: "<1.0.0"
+fixed_versions:
+- "1.0.0"
+affected_versions: "All versions before 1.0.0"
+solution: "Update to version 1.0.0 or later"
+urls:
+- "https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=809252"
+- "https://github.com/node-js-libs/cli/issues/81"
+- "https://nodesecurity.io/advisories/95"
+credit: "Steve Kemp"
+uuid: "5eb6c481-e499-4b08-b246-e217d7361899"

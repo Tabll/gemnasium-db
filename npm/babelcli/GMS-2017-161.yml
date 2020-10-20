@@ -1,0 +1,16 @@
+---
+identifier: "GMS-2017-161"
+package_slug: "npm/babelcli"
+title: "Hijacked Environment Variables"
+description: "`babelcli` was a malicious module published with the intent to hijack
+  environment variables. It has been unpublished by npm."
+date: "2017-08-08"
+pubdate: "2017-08-08"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "If you have found this installed in your environment you should invalidate
+  and regenerate any authentication tokens found in your environment variables."
+urls:
+- "https://nodesecurity.io/advisories/499"
+uuid: "15d54d33-48e4-4d3c-b0b6-04a2eec72a40"

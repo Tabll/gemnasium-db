@@ -1,0 +1,17 @@
+---
+identifier: "GMS-2017-254"
+package_slug: "npm/censorify.tanisjr"
+title: "Directory Traversal"
+description: "`censorify.tanisjr` is vulnerable to a directory traversal issue, giving
+  an attacker access to the filesystem by placing \"../\" in the url./n"
+date: "2017-09-28"
+pubdate: "2017-09-28"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/censorify.tanisjr"
+- "https://nodesecurity.io/advisories/392"
+credit: "Liang Gong"
+uuid: "171e6fe7-32a0-47a5-a22e-9a8d8bc2a2c4"

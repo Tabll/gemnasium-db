@@ -1,0 +1,18 @@
+# This advisory is derived from
+# https://github.com/FriendsOfPHP/security-advisories
+---
+identifier: "2014-07-29-1"
+package_slug: "packagist/willdurand/js-translation-bundle"
+title: "Path Traversal"
+description: "Fixed potential path traversal attack and remote code injection."
+date: "2014-07-29"
+pubdate: "2014-07-29"
+affected_range: "<2.1.1"
+fixed_versions:
+- "2.1.1"
+affected_versions: "All versions before 2.1.1"
+not_impacted: "All versions starting from 2.1.1"
+solution: "Upgrade to version 2.1.1 or above."
+urls:
+- "https://github.com/willdurand/BazingaJsTranslationBundle/releases/tag/v2.1.1"
+uuid: "0f9637a4-1a4c-44a3-8414-162550c3c973"

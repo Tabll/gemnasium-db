@@ -1,0 +1,18 @@
+---
+identifier: "GMS-2016-84"
+package_slug: "packagist/3f/pygmentize"
+title: "Remote Code Execution"
+description: "There's a Remote Code Execution vulnerability in the `highlight` function
+  of Pygmentize."
+date: "2016-11-05"
+pubdate: "2016-11-05"
+affected_range: "<1.2"
+fixed_versions:
+- "1.2"
+affected_versions: "All versions before 1.2"
+solution: "Upgrade to latest version."
+urls:
+- "https://github.com/dedalozzo/pygmentize/issues/1"
+- "https://github.com/dedalozzo/pygmentize/pull/3"
+credit: "Micheal Cottingham"
+uuid: "2a73a435-951f-4207-b779-a6b49b8fa0a0"

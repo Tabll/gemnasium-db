@@ -1,0 +1,20 @@
+---
+identifier: "TYPO3-CORE-SA-2015-013"
+package_slug: "packagist/typo3/cms"
+title: "Multiple Cross-Site Scripting vulnerabilities in frontend"
+description: "Failing to properly encode editor input, several frontend components
+  are susceptible to Cross-Site Scripting, allowing authenticated editors to inject
+  arbitrary HTML."
+date: "2015-12-15"
+pubdate: "2015-12-15"
+affected_range: ">=6.2.0,<6.2.16||>=7.0.0,<7.6.1"
+fixed_versions:
+- "6.2.16"
+- "7.6.1"
+affected_versions: "All versions starting from 6.2.0 before 6.2.16, all versions starting
+  from 7.0.0 before 7.6.1"
+solution: "Upgrade to latest version."
+urls:
+- "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2015-013/"
+credit: "Nils Juenemann, Georg Ringer"
+uuid: "3fe64157-b187-4a27-9e81-9535a15e4013"

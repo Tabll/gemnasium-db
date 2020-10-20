@@ -1,0 +1,21 @@
+---
+identifier: "GMS-2018-3"
+package_slug: "npm/featurebook"
+title: "Directory Traversal"
+description: "The `featurebook` is vulnerable to a Directory Traversal attack. This
+  may allow attackers to access confidential resources that exist outside of the intended
+  web root of the service. This is mitigated significantly by the fact that `featurebook`
+  is clearly not intended to be run in production code nor to be exposed to an untrusted
+  network."
+date: "2018-01-15"
+pubdate: "2018-01-15"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "Ensure that the featurebook server is not running in production or exposed
+  to an untrusted network."
+urls:
+- "https://github.com/nodejs/security-wg/blob/master/vuln/npm/358.json"
+- "https://nodesecurity.io/advisories/556"
+credit: "Yasin Soliman"
+uuid: "f3bd6b89-5cf0-4e3e-98cb-50516868670e"

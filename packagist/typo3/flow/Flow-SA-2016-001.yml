@@ -1,0 +1,26 @@
+---
+identifier: "Flow-SA-2016-001"
+package_slug: "packagist/typo3/flow"
+title: "Time-Based Information Disclosure Vulnerability"
+description: "The `PersistedUsernamePasswordProvider` is prone to a information disclosure
+  of account existence based on timing attacks as the hashing of passwords is only
+  done in case an account is found."
+date: "2016-11-01"
+pubdate: "2016-11-01"
+affected_range: "<2.3.16||>=3.0.0-alpha,<3.0.10||>=3.1.0-alpha,<3.1.7
+  ||>=3.2.0-alpha,<3.2.7||>=3.3.0-alpha,<3.3.5"
+fixed_versions:
+- "2.3.16"
+- "3.0.10"
+- "3.1.7"
+- "3.2.7"
+- "3.3.5"
+affected_versions: "All versions before 2.3.16, all versions starting from 3.0.0-alpha
+  before 3.0.10, all versions starting from 3.1.0-alpha before 3.1.7, all versions
+  starting from 3.2.0-alpha before 3.2.7, all versions starting from 3.3.0-alpha before
+  3.3.5"
+solution: "Upgrade to fixed version."
+urls:
+- "https://www.neos.io/blog/flow-sa-2016-001.html"
+credit: "Kevin Fischer and Coresec Systems"
+uuid: "ed0b1054-8033-4c53-846e-c305cca0c153"

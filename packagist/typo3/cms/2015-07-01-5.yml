@@ -1,0 +1,21 @@
+# This advisory is derived from
+# https://github.com/FriendsOfPHP/security-advisories
+---
+identifier: "2015-07-01-5"
+package_slug: "packagist/typo3/cms"
+title: "Improper Restriction of Excessive Authentication Attempts"
+description: "Brute Force Protection Bypass in backend login."
+date: "2015-07-01"
+pubdate: "2015-07-01"
+affected_range: ">=6.2.0,<6.2.14||>=7.0.0,<7.3.0"
+fixed_versions:
+- "6.2.14"
+- "7.3.0"
+affected_versions: "All versions starting from 6.2.0 before 6.2.14, all versions starting
+  from 7.0.0 before 7.3.0"
+not_impacted: "All versions before 6.2.0, all versions starting from 6.2.14 before
+  7.0.0, all versions starting from 7.3.0"
+solution: "Upgrade to versions 6.2.14, 7.3.0 or above."
+urls:
+- "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2015-006/"
+uuid: "6a269719-c506-46de-9766-5a14edf5a483"

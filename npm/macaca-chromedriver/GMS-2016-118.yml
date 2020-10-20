@@ -1,0 +1,20 @@
+---
+identifier: "GMS-2016-118"
+package_slug: "npm/macaca-chromedriver"
+title: "Downloads Resources over HTTP"
+description: "macaca-chromedriver downloads binary resources over HTTP, which leaves
+  it vulnerable to MITM attacks. It may be possible to cause remote code execution
+  (RCE) by swapping out the requested binary with an attacker controlled binary if
+  the attacker is on the network or positioned in between the user and the remote
+  server."
+date: "2016-12-18"
+pubdate: "2016-12-18"
+affected_range: "<1.0.29"
+fixed_versions:
+- "1.0.29"
+affected_versions: "All versions before 1.0.29"
+solution: "Update to version 1.0.29 or greater."
+urls:
+- "https://nodesecurity.io/advisories/180"
+credit: "Adam Baldwin"
+uuid: "ed204250-346b-4280-b5fc-af68cfc798c9"

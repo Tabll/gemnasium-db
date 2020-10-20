@@ -1,0 +1,20 @@
+# This advisory is derived from
+# https://github.com/FriendsOfPHP/security-advisories
+---
+identifier: "2011-09-25"
+package_slug: "packagist/doctrine/dbal"
+title: "SQL Injection"
+description: "SQL Injection vulnerability in dbal."
+date: "2011-08-30"
+pubdate: "2011-08-30"
+affected_range: ">=2.0.0,<2.0.8||>=2.1.0,<2.1.2"
+fixed_versions:
+- "2.1.5"
+affected_versions: "All versions starting from 2.0.0 before 2.0.8, all versions starting
+  from 2.1.0 before 2.1.2"
+not_impacted: "All versions before 2.0.0, all versions starting from 2.0.8 before
+  2.1.0, all versions starting from 2.1.2"
+solution: "Upgrade to version 2.1.5 or above."
+urls:
+- "https://www.doctrine-project.org/blog/dbal-security-2011-1.html"
+uuid: "0050286e-39b3-42f2-ba37-ed6cc42686c2"

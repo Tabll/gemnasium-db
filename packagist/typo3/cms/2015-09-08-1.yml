@@ -1,0 +1,21 @@
+# This advisory is derived from
+# https://github.com/FriendsOfPHP/security-advisories
+---
+identifier: "2015-09-08-1"
+package_slug: "packagist/typo3/cms"
+title: "Information Exposure"
+description: "Frontend: Unauthenticated Path Disclosure."
+date: "2015-09-08"
+pubdate: "2015-09-08"
+affected_range: ">=6.2.0,<6.2.15||>=7.0.0,<7.3.0"
+fixed_versions:
+- "6.2.15"
+- "7.3.0"
+affected_versions: "All versions starting from 6.2.0 before 6.2.15, all versions starting
+  from 7.0.0 before 7.3.0"
+not_impacted: "All versions before 6.2.0, all versions starting from 6.2.15 before
+  7.0.0, all versions starting from 7.3.0"
+solution: "Upgrade to versions 6.2.15, 7.3.0 or above."
+urls:
+- "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2015-008/"
+uuid: "e34f09db-0dc5-4cb1-a8fd-1bc2cd473cd4"

@@ -1,0 +1,19 @@
+# This advisory is derived from
+# https://github.com/FriendsOfPHP/security-advisories
+---
+identifier: "ZF2012-04"
+package_slug: "packagist/zendframework/zendframework"
+title: "Unintended Proxy or Intermediary ('Confused Deputy')"
+description: "Potential Proxy Injection Vulnerabilities in Multiple Zend Framework
+  2 Components."
+date: "2012-09-29"
+pubdate: "2012-09-29"
+affected_range: ">=2.0.0,<2.0.5"
+fixed_versions:
+- "2.0.5"
+affected_versions: "All versions starting from 2.0.0 before 2.0.5"
+not_impacted: "All versions before 2.0.0, all versions starting from 2.0.5"
+solution: "Upgrade to version 2.0.5 or above."
+urls:
+- "https://framework.zend.com/security/advisory/ZF2012-04"
+uuid: "71e470d1-b489-483d-9e67-7809fe3431fb"

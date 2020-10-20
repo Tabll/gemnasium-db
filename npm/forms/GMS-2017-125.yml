@@ -1,0 +1,19 @@
+---
+identifier: "GMS-2017-125"
+package_slug: "npm/forms"
+title: "XSS Vulnerability"
+description: "Forms did not have proper html escaping. This means that if the application
+  did not sanitize html on behalf of forms, use of forms may be vulnerable to cross
+  site scripting"
+date: "2017-04-11"
+pubdate: "2017-04-11"
+affected_range: "<1.3.0"
+fixed_versions:
+- "1.3.0"
+affected_versions: "All versions before 1.3.0"
+solution: "Upgrade to version 1.3.0 or later"
+urls:
+- "https://github.com/caolan/forms/commit/bc01e534a0ff863dedb2026a50bd03153bbc6a5d"
+- "https://nodesecurity.io/advisories/158"
+credit: "Jordan Harband"
+uuid: "fc62152d-c374-4a0f-a8a7-c0e8222e9b43"

@@ -1,0 +1,21 @@
+# This advisory is derived from
+# https://github.com/FriendsOfPHP/security-advisories
+---
+identifier: "2014-12-09-1"
+package_slug: "packagist/typo3/cms"
+title: "URL Redirection to Untrusted Site ('Open Redirect')"
+description: "Possible link spoofing on the homepage when anchors are used."
+date: "2014-12-10"
+pubdate: "2014-12-10"
+affected_range: ">=6.2.0,<6.2.9||>=7.0.0,<7.0.2"
+fixed_versions:
+- "6.2.9"
+- "7.0.2"
+affected_versions: "All versions starting from 6.2.0 before 6.2.9, all versions starting
+  from 7.0.0 before 7.0.2"
+not_impacted: "All versions before 6.2.0, all versions starting from 6.2.9 before
+  7.0.0, all versions starting from 7.0.2"
+solution: "Upgrade to versions 6.2.9, 7.0.2 or above."
+urls:
+- "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2014-003/"
+uuid: "0e018677-0091-450f-827e-ccd7312cf082"

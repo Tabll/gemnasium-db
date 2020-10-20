@@ -1,0 +1,22 @@
+---
+identifier: "GMS-2014-2"
+package_slug: "npm/st"
+title: "Static file leakage"
+description: "As stated on \"The NPM Blog\", \"it was possible, through a carefully
+  encoded URL, to get st to serve any file it could see, not just the ones in the
+  static content directory, and you could also list the contents of directories, so
+  it was very easy to go looking for sensitive files.\" The NPM registry relies on
+  st, meaning that all the versions of all the npms published prior to March 17th
+  may be corrupted. But there is no evidence that they *have* been corrupted."
+date: "2014-03-21"
+pubdate: "2014-03-21"
+affected_range: "<0.3.2"
+fixed_versions:
+- "0.3.2"
+affected_versions: "All versions before 0.3.2"
+solution: "Upgrade to latest version"
+urls:
+- "http://blog.npmjs.org/post/80277229932/newly-paranoid-maintainers"
+- "https://github.com/isaacs/st/commit/f961d4a839a76a423b212c716776d583b8d120e9"
+credit: "Will Farrington and Charlie Somerville"
+uuid: "9dc25279-7ac0-4774-acb2-680f8a3170ef"

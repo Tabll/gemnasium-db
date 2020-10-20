@@ -1,0 +1,18 @@
+---
+identifier: "GMS-2017-330"
+package_slug: "packagist/phpxmlrpc/extras"
+title: "XSS in class documenting_xmlrpc_server"
+description: "The `generateDocs` functions doesn't properly escape the GET parameter
+  `methodName`."
+date: "2017-10-29"
+pubdate: "2017-10-29"
+affected_range: "<0.6.1"
+fixed_versions:
+- "0.6.1"
+affected_versions: "All versions before 0.6.1"
+solution: "Upgrade to latest version."
+urls:
+- "https://github.com/gggeek/phpxmlrpc-extras/commit/65c336e3def9ce71b3e799104d3a6ad15668ddb0"
+- "https://github.com/gggeek/phpxmlrpc-extras/releases/tag/0.6.1"
+credit: "Gaetano Giunta"
+uuid: "ada343ec-6d67-46f8-b525-a4d92f597412"

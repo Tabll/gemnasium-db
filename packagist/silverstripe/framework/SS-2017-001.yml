@@ -1,0 +1,20 @@
+---
+identifier: "SS-2017-001"
+package_slug: "packagist/silverstripe/framework"
+title: "XSS In page name"
+description: "SilverStripe is vulnerable to XSS via the page name. For instance, page
+  name `\"><svg/onload=alert(/xss/)>` will trigger an XSS alert."
+date: "2017-01-31"
+pubdate: "2017-01-31"
+affected_range: "<3.4.4-rc1||>=3.5.0-alpha0,<3.5.2-rc1"
+fixed_versions:
+- "3.4.4-rc1"
+- "3.5.2-rc1"
+affected_versions: "All versions before 3.4.4-rc1, all versions starting from 3.5.0-alpha0
+  before 3.5.2-rc1"
+solution: "Upgrade to latest version."
+urls:
+- "https://github.com/silverstripe/silverstripe-framework/commit/c6c6c13fc265aeedf5de7226b3cde39d185ba49d"
+- "https://www.silverstripe.org/download/security-releases/ss-2017-001/"
+credit: "Edric Teo"
+uuid: "2a282e23-034b-4cc5-94f3-926939f8803a"

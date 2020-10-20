@@ -1,0 +1,21 @@
+# This advisory is derived from
+# https://github.com/FriendsOfPHP/security-advisories
+---
+identifier: "2014-02-13"
+package_slug: "packagist/contao/core"
+title: "Code Injection"
+description: "PHP object injection vulnerability allows for arbitrary code execution."
+date: "2014-02-13"
+pubdate: "2014-02-13"
+affected_range: ">=2.0.0,<2.11.16||>=3.0.0,<3.2.7"
+fixed_versions:
+- "2.11.16"
+- "3.2.7"
+affected_versions: "All versions starting from 2.0.0 before 2.11.16, all versions
+  starting from 3.0.0 before 3.2.7"
+not_impacted: "All versions before 2.0.0, all versions starting from 2.11.16 before
+  3.0.0, all versions starting from 3.2.7"
+solution: "Upgrade to versions 2.11.16, 3.2.7 or above."
+urls:
+- "https://contao.org/en/news/major-security-hole-found-in-contao.html"
+uuid: "af0b6324-b476-4a8f-927f-7b5c9de777e4"

@@ -1,0 +1,19 @@
+---
+identifier: "GMS-2013-10"
+package_slug: "npm/hubot-scripts"
+title: "Potential Command Injection"
+description: "Untrusted input passed in to the hubot-scripts/package/src/scripts/email.coffee
+  module can allow for command injection. This may be unexpected behavior for the
+  caller."
+date: "2013-05-16"
+pubdate: "2013-05-16"
+affected_range: "<=2.4.3"
+fixed_versions:
+- "2.4.5"
+affected_versions: "All versions up to 2.4.3"
+solution: "Do not use the email script (it's not enabled by default) or upgrade to
+  latest version."
+urls:
+- "https://nodesecurity.io/advisories/13"
+credit: "Neal Poole"
+uuid: "ded2e6e1-52f3-4c3c-b0fa-fce3f3eed1ca"

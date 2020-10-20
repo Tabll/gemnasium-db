@@ -1,0 +1,17 @@
+---
+identifier: "GMS-2017-280"
+package_slug: "npm/cypserver"
+title: "Directory Traversal"
+description: "`cypserver` is vulnerable to a directory traversal issue, giving an
+  attacker access to the filesystem by placing \"../\" in the url./n"
+date: "2017-10-04"
+pubdate: "2017-10-04"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/cypserver"
+- "https://nodesecurity.io/advisories/440"
+credit: "Liang Gong"
+uuid: "9d3d16f0-ae0b-418f-b029-9d1da7e940b1"

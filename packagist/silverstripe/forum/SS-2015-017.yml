@@ -1,0 +1,23 @@
+---
+identifier: "SS-2015-017"
+package_slug: "packagist/silverstripe/forum"
+title: "CSRF Vulnerability"
+description: "A number of form actions in the Forum module are directly accessible.
+  A malicious user (e.g. spammer) can use GET requests to create Members and post
+  to forums, bypassing CSRF and anti-spam measures. Additionally, a forum moderator
+  could be tricked into clicking a specially crafted URL, resulting in a topic being
+  moved. "
+date: "2015-08-10"
+pubdate: "2015-08-10"
+affected_range: "<0.6.2||>=0.7.0,<0.7.4"
+fixed_versions:
+- "0.6.2"
+- "0.7.4"
+- "0.8.0"
+affected_versions: "All versions before 0.6.2, all versions starting from 0.7.0 before
+  0.7.4"
+solution: "Upgrade to latest version."
+urls:
+- "http://www.silverstripe.org/software/download/security-releases/ss-2015-017/"
+credit: "Michael Strong"
+uuid: "5b2d957a-a663-4ab1-97c4-61b95850228c"

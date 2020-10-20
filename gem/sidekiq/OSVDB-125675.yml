@@ -1,0 +1,16 @@
+---
+identifier: "OSVDB-125675"
+package_slug: "gem/sidekiq"
+title: "Multiple Unspecified CSRF"
+description: "Sidekiq::Web lacks CSRF protection"
+date: "2015-07-06"
+pubdate: "2015-07-06"
+affected_range: "<3.4.2"
+fixed_versions:
+- "3.4.2"
+affected_versions: "All versions before 3.4.2"
+solution: " Upgrade to latest version."
+urls:
+- "https://github.com/mperham/sidekiq/pull/2422"
+credit: "Mike Perham"
+uuid: "835d0c97-71ba-4618-8fea-3f1154a2b769"

@@ -1,0 +1,17 @@
+---
+identifier: "GMS-2015-33"
+package_slug: "npm/handlebars"
+title: "XSS vulnerability due to improper value escaping"
+description: "The library does not properly escape attribute values making XSS exploits
+  possible."
+date: "2015-10-04"
+pubdate: "2015-10-04"
+affected_range: "<4.0.0"
+fixed_versions:
+- "4.0.0"
+affected_versions: "All versions before 4.0.0"
+solution: "Upgrade to latest version."
+urls:
+- "https://github.com/wycats/handlebars.js/commit/83b8e846a3569bd366cf0b6bdc1e4604d1a2077e"
+- "https://github.com/wycats/handlebars.js/issues/1114"
+uuid: "217fef77-6889-46ba-8fa6-66e8f1c3ea87"

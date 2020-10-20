@@ -1,0 +1,17 @@
+---
+identifier: "GMS-2017-195"
+package_slug: "npm/serverliujiayi1"
+title: "Directory Traversal"
+description: "`serverliujiayi1` is vulnerable to a directory traversal issue, giving
+  an attacker access to the filesystem by placing \"../\" in the URL."
+date: "2017-09-06"
+pubdate: "2017-09-06"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://github.com/JacksonGL/NPM-Vuln-PoC/tree/master/directory-traversal/serverliujiayi1"
+- "https://nodesecurity.io/advisories/367"
+credit: "Liang Gong"
+uuid: "44ff43e0-37c9-4fa9-8493-38171f8e9e12"

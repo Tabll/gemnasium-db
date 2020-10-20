@@ -1,0 +1,22 @@
+---
+identifier: "OSVDB-62067"
+package_slug: "gem/bcrypt-ruby"
+title: "Bug reduced the entropy of hashed passwords containing non US-ASCII characters"
+description: "This package suffered from a bug related to character encoding that
+  substantially reduced the entropy of hashed passwords containing non US-ASCII characters.
+  An incorrect encoding step transparently replaced such characters by '?' prior to
+  hashing. In the worst case of a password consisting solely of non-US-ASCII characters,
+  this would cause its hash to be equivalent to all other such passwords of the same
+  length. This issue only affects the JRuby implementation."
+date: "2010-02-01"
+pubdate: "2010-02-01"
+affected_range: "<2.1.4"
+fixed_versions:
+- "2.1.4"
+affected_versions: "All versions before 2.1.4"
+solution: "This gem has been renamed. Please use \"bcrypt\" from now on."
+urls:
+- "https://github.com/codahale/bcrypt-ruby/commit/92c8e4e3760d089e494b7a3ac1faa563681868c7"
+- "https://github.com/rubysec/ruby-advisory-db/blob/master/gems/bcrypt-ruby/OSVDB-62067.yml"
+credit: "Aliaksandr Radzivanovich"
+uuid: "560fc440-f641-4034-875e-7a3e670f451d"

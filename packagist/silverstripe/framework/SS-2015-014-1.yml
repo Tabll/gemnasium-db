@@ -1,0 +1,21 @@
+# This advisory is derived from
+# https://github.com/FriendsOfPHP/security-advisories
+---
+identifier: "SS-2015-014-1"
+package_slug: "packagist/silverstripe/framework"
+title: "Code Injection"
+description: "Vulnerability on `isDev`, `isTest` and `flush` `$_GET` validation."
+date: "2015-05-28"
+pubdate: "2015-05-28"
+affected_range: ">=3.0.0,<=3.0.13||>=3.1.0,<3.1.13"
+fixed_versions:
+- "3.0.14"
+- "3.1.13"
+affected_versions: "All versions starting from 3.0.0 up to 3.0.13, all versions starting
+  from 3.1.0 before 3.1.13"
+not_impacted: "All versions before 3.0.0, all versions after 3.0.13 before 3.1.0,
+  all versions starting from 3.1.13"
+solution: "Upgrade to versions 3.0.14, 3.1.13 or above."
+urls:
+- "https://www.silverstripe.org/software/download/security-releases/ss-2015-014/"
+uuid: "a2728752-b57a-4326-a0a9-5b42b43862ba"

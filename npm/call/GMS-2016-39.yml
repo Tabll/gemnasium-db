@@ -1,0 +1,21 @@
+---
+identifier: "GMS-2016-39"
+package_slug: "npm/call"
+title: "Invalid input to route validation rules"
+description: "call does not validate empty parameters, which could result in invalid input
+  bypassing the route validation rules. For example, in the routing scheme
+  `/api/{param}/{param2}/details`, a request made to `/api///` would match
+  incorrectly."
+date: "2016-07-05"
+pubdate: "2016-07-05"
+affected_range: ">=2.0.1 <3.0.2"
+fixed_versions:
+- "3.0.2"
+affected_versions: "All versions starting from 2.0.1 before 3.0.2"
+not_impacted: "Prior to 2.0.1"
+solution: "Upgrade to latest version."
+urls:
+- "https://github.com/hapijs/hapi/issues/3228"
+- "https://nodesecurity.io/advisories/121"
+credit: "Nicolas Morel"
+uuid: "bddd8086-cdab-42fd-bebe-4bf747d3c7ec"

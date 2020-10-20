@@ -1,0 +1,20 @@
+---
+identifier: "201606-01"
+package_slug: "packagist/simplesamlphp/simplesamlphp"
+title: "Link injection"
+description: "`www/logout.php` and `modules/core/www/no_cookie.php` are not checking
+  the URLs obtained via the HTTP request before displaying them as the target of links
+  that the user may click on. It allows attackers to display links targeting a malicious
+  website inside a trusted site running SimpleSAMLphp, due to the lack of security
+  checks involving the `link_href` and `retryURL` HTTP parameters, respectively."
+date: "2016-06-06"
+pubdate: "2016-06-06"
+affected_range: "<1.14.4"
+fixed_versions:
+- "1.14.4"
+affected_versions: "All versions before 1.14.4"
+solution: "Upgrade to latest version."
+urls:
+- "https://simplesamlphp.org/security/201606-01"
+credit: "John Page (hyp3rlinx)"
+uuid: "5b9dd903-016e-4131-859b-0c449fbb127a"

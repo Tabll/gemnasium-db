@@ -1,0 +1,19 @@
+---
+identifier: "GMS-2017-300"
+package_slug: "npm/cofee-script"
+title: "Exfiltrates data on installation"
+description: "The cofee-script module exfiltrates sensitive data such as a user's
+  private SSH key and bash history to a third party server during installation."
+date: "2017-10-06"
+pubdate: "2017-10-06"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "Do not install this module. It has been unpublished from the registry but
+  may exist in some caches. If you may have accidentally installed this package you
+  should cycle your SSH key and review your bash history for any sensitive data that
+  may have been leaked."
+urls:
+- "https://nodesecurity.io/advisories/540"
+credit: "Aurélio A. Heckert"
+uuid: "37dab71a-f693-4865-809c-5fcc849db9cb"

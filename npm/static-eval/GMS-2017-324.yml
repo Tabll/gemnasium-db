@@ -1,0 +1,19 @@
+---
+identifier: "GMS-2017-324"
+package_slug: "npm/static-eval"
+title: "Sandbox Breakout / Arbitrary Code Execution"
+description: "In affected versions, untrusted user input is able to access the global
+  function constructor, effectively allowing arbitrary code execution."
+date: "2017-10-18"
+pubdate: "2017-10-18"
+affected_range: "<=1.1.1"
+fixed_versions:
+- "2.0.0"
+affected_versions: "All versions up to 1.1.1"
+solution: "Upgrade to v2.0.0 or later."
+urls:
+- "https://github.com/substack/static-eval/pull/18"
+- "https://maustin.net/articles/2017-10/static_eval"
+- "https://nodesecurity.io/advisories/548"
+credit: "Matt Austin"
+uuid: "51e83936-1226-4f21-bfb0-03218926a026"

@@ -1,0 +1,23 @@
+# This advisory is derived from
+# https://github.com/FriendsOfPHP/security-advisories
+---
+identifier: "ZF2015-01"
+package_slug: "packagist/zendframework/zendframework"
+title: "Session Fixation"
+description: "Session validation vulnerability."
+date: "2015-01-14"
+pubdate: "2015-01-14"
+affected_range: ">=2.0.0,<2.0.99||>=2.1.0,<2.1.99||>=2.2.0,<2.2.9||>=2.3.0,<2.3.4"
+fixed_versions:
+- "2.2.9"
+- "2.3.4"
+affected_versions: "All versions starting from 2.0.0 before 2.0.99, all versions starting
+  from 2.1.0 before 2.1.99, all versions starting from 2.2.0 before 2.2.9, all versions
+  starting from 2.3.0 before 2.3.4"
+not_impacted: "All versions before 2.0.0, all versions starting from 2.0.99 before
+  2.1.0, all versions starting from 2.1.99 before 2.2.0, all versions starting from
+  2.2.9 before 2.3.0, all versions starting from 2.3.4"
+solution: "Upgrade to versions 2.2.9, 2.3.4 or above."
+urls:
+- "https://framework.zend.com/security/advisory/ZF2015-01"
+uuid: "ba82a032-936d-4c93-9a81-37728c8e9ae0"

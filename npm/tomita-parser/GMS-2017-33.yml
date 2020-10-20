@@ -1,0 +1,18 @@
+---
+identifier: "GMS-2017-33"
+package_slug: "npm/tomita-parser"
+title: "Downloads Resources over HTTP"
+description: "tomita-parser downloads binary resources over HTTP, which leaves it
+  vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE)
+  by swapping out the requested resources with an attacker controlled copy if the
+  attacker is on the network or positioned in between the user and the remote server."
+date: "2017-01-01"
+pubdate: "2017-01-01"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://nodesecurity.io/advisories/261"
+credit: "Adam Baldwin"
+uuid: "69216465-f88e-4f9e-8a2f-0310245e7b17"

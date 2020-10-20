@@ -1,0 +1,18 @@
+---
+identifier: "GMS-2017-191"
+package_slug: "npm/sencisho"
+title: "Directory Traversal"
+description: "Sencisho is vulnerable to a directory traversal issue, giving an attacker
+  access to the filesystem by placing \"../\" in the URL."
+date: "2017-09-01"
+pubdate: "2017-09-01"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "Because there is no patched version for this module, we suggest using a
+  different one."
+urls:
+- "https://github.com/JacksonGL/NPM-Vuln-PoC/tree/master/directory-traversal/sencisho"
+- "https://nodesecurity.io/advisories/340"
+credit: "Liang Gong"
+uuid: "e73a33be-e649-499a-a2a9-789648ce5c51"

@@ -1,0 +1,17 @@
+---
+identifier: "201612-03"
+package_slug: "packagist/simplesamlphp/simplesamlphp-module-infocard"
+title: "Incorrect signature verification"
+description: "An incorrect check of return values in the signature validation utilities
+  allows an attacker to get invalid signatures accepted as valid by forcing an error
+  during validation."
+date: "2016-12-12"
+pubdate: "2016-12-12"
+affected_range: "=1.0"
+fixed_versions:
+- "1.0.1"
+affected_versions: "Version 1.0"
+solution: "Upgrade to latest version."
+urls:
+- "https://simplesamlphp.org/security/201612-03"
+uuid: "d65486f2-707a-4a40-adb0-467e940288f3"

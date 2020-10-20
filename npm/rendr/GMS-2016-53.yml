@@ -1,0 +1,20 @@
+---
+identifier: "GMS-2016-53"
+package_slug: "npm/rendr"
+title: "XSS in client rendered block templates"
+description: "There's a cross site scripting (XSS) issue when rendered inside a `_block`
+  during client side rendering. Server side rendering is not affected and is properly
+  escaped."
+date: "2016-07-25"
+pubdate: "2016-07-25"
+affected_range: "<=1.1.3"
+fixed_versions:
+- "1.1.4"
+affected_versions: "All versions up to 1.1.3"
+solution: "Upgrade to latest version."
+urls:
+- "https://github.com/rendrjs/rendr-handlebars/pull/61"
+- "https://github.com/rendrjs/rendr/pull/513"
+- "https://nodesecurity.io/advisories/128"
+credit: "Jon Merrifield"
+uuid: "3b217377-48f7-4045-b1a0-95723d282acf"

@@ -1,0 +1,18 @@
+---
+identifier: "GMS-2016-2"
+package_slug: "npm/ws"
+title: "Remote Memory Disclosure"
+description: "When given a number instead of a string, the ping function sends a non
+  zeroed buffer of the corresponding length which exposes memory to the recipient."
+date: "2016-01-04"
+pubdate: "2016-01-04"
+affected_range: "<= 1.0.0"
+fixed_versions:
+- "1.0.1"
+affected_versions: "All versions up to 1.0.0"
+solution: "Update to version 1.0.1 or greater."
+urls:
+- "https://github.com/websockets/ws/releases/tag/1.0.1"
+- "https://nodesecurity.io/advisories/67"
+credit: "Feross Aboukhadijeh / Mathias Buss"
+uuid: "caa947c7-b317-4e2a-9aeb-31425578b272"

@@ -1,0 +1,23 @@
+---
+identifier: "GMS-2017-222"
+package_slug: "npm/superagent"
+title: "Large gzip Denial of Service"
+description: "In a ZIP Bomb attack, the HTTP server replies with a compressed response
+  that becomes several magnitudes larger once uncompressed. If a client does not take
+  special care when processing such responses, it may result in excessive CPU and/or
+  memory consumption. An attacker might exploit such a weakness for a DoS attack.
+  To exploit this the attacker must control the location (URL) that superagent makes
+  a request to."
+date: "2017-09-26"
+pubdate: "2017-09-26"
+affected_range: "<3.7.0"
+fixed_versions:
+- "3.7.0"
+affected_versions: "All versions before 3.7.0"
+solution: "Upgrade to latest version."
+urls:
+- "https://github.com/visionmedia/superagent/commit/946e28dab08f2ab334753bf36a2fbc5110d17789"
+- "https://github.com/visionmedia/superagent/issues/1259"
+- "https://nodesecurity.io/advisories/479"
+credit: "Dennis Appelt"
+uuid: "5a5c64d8-6cc3-4790-b236-450d7326bb65"

@@ -1,0 +1,21 @@
+---
+identifier: "GMS-2015-41"
+package_slug: "packagist/cakephp/cakephp"
+title: "Remote File Inclusion"
+description: "Unsafe view template filenames result in a Remote File Inclusion vulnerability."
+date: "2015-11-05"
+pubdate: "2015-11-05"
+affected_range: ">=3.1.0-stable,<3.1.4||>=3.0.0-stable,<3.0.15||>=2.7.0-stable,<2.7.6||<2.6.12"
+fixed_versions:
+- "2.6.12"
+- "2.7.6"
+- "3.0.15"
+- "3.1.4"
+affected_versions: "All versions starting from 3.1.0 before 3.1.4, all versions starting
+  from 3.0.0 before 3.0.15, all versions starting from 2.7.0 before 2.7.6, all versions
+  before 2.6.12"
+solution: "Upgrade to latest version."
+urls:
+- "http://bakery.cakephp.org/2015/11/05/cakephp_3015_314_2612_276_released.html"
+credit: "Kurita Takashi"
+uuid: "9cc5d75f-3b23-48d9-b413-63dc20a95985"

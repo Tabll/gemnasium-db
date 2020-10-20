@@ -1,0 +1,18 @@
+# This advisory is derived from
+# https://github.com/FriendsOfPHP/security-advisories
+---
+identifier: "SS-2015-004-1"
+package_slug: "packagist/silverstripe/framework"
+title: "Cross-site Scripting"
+description: "TreeDropdownField and TreeMultiSelectField XSS."
+date: "2015-02-12"
+pubdate: "2015-02-12"
+affected_range: ">=3.1.0,<=3.1.9"
+fixed_versions:
+- "3.1.10"
+affected_versions: "All versions starting from 3.1.0 up to 3.1.9"
+not_impacted: "All versions before 3.1.0, all versions after 3.1.9"
+solution: "Upgrade to version 3.1.10 or above."
+urls:
+- "https://www.silverstripe.org/software/download/security-releases/ss-2015-004/"
+uuid: "15120ebb-fece-4bfe-a31e-dcfd4cb74868"

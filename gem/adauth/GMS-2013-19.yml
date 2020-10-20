@@ -1,0 +1,19 @@
+---
+identifier: "GMS-2013-19"
+package_slug: "gem/adauth"
+title: "Passwordless login"
+description: "Users are able to log themselves in with a blank password, even for
+  users who are NOT currently in the users table (ie have never previously logged
+  in)."
+date: "2013-08-28"
+pubdate: "2013-08-28"
+affected_range: "<2.0.2"
+fixed_versions:
+- "2.0.2"
+affected_versions: "All versions before 2.0.2"
+solution: "Upgrade to latest version."
+urls:
+- "http://arcath.github.io/blog/2013/08/28/issue-37/"
+- "https://github.com/Arcath/Adauth/issues/37"
+credit: "Adam \"Arcath\" Laycock"
+uuid: "11fcb46c-8d54-491d-b89d-eff7e143a93c"

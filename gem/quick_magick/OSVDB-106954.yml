@@ -1,0 +1,16 @@
+---
+identifier: "OSVDB-106954"
+package_slug: "gem/quick_magick"
+title: "QuickMagick::Image.read Function Crafted String Handling Remote Command Injection"
+description: "This package contains a flaw in the `QuickMagick::Image.read` function.
+  The issue is triggered when handling a specially crafted string. This may allow
+  a remote attacker to inject arbitrary commands."
+date: "2011-01-12"
+pubdate: "2011-01-12"
+affected_range: ">0"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "Don't use this package."
+urls:
+- "https://github.com/rubysec/ruby-advisory-db/blob/master/gems/quick_magick/OSVDB-106954.yml"
+uuid: "5695a6ef-da6a-4166-a80a-1a118a7fdc13"

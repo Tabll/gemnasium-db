@@ -1,0 +1,18 @@
+---
+identifier: "GMS-2016-86"
+package_slug: "npm/gitbook"
+title: "Cross Site Scripting"
+description: "Stored Cross-Site-Scripting (XSS) is possible by including code outside
+  of backticks in any ebook. This code will be executed on the online reader."
+date: "2016-11-25"
+pubdate: "2016-11-25"
+affected_range: "<3.2.2"
+fixed_versions:
+- "3.2.2"
+affected_versions: "All versions before 3.2.2"
+solution: "Update to version 3.2.2 or later"
+urls:
+- "https://github.com/GitbookIO/gitbook/issues/1609"
+- "https://nodesecurity.io/advisories/159"
+credit: "Björn Kimminich"
+uuid: "d41fdb32-b86f-4d09-87da-214144fbeb3b"

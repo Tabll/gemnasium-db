@@ -1,0 +1,20 @@
+---
+identifier: "GMS-2017-123"
+package_slug: "npm/hapi"
+title: "Denial of Service via malformed accept-encoding header"
+description: "When hapi encounters a malformed `accept-encoding` header an uncaught
+  exception is thrown. This may cause hapi to crash or to hang the client connection
+  until the timeout period is reached."
+date: "2017-04-05"
+pubdate: "2017-04-05"
+affected_range: ">=15.0.0 <16.1.1"
+fixed_versions:
+- "16.1.1"
+affected_versions: "All versions starting from 15.0.0 before 16.1.1"
+not_impacted: "14.x and earlier"
+solution: "Upgrade to latest version."
+urls:
+- "https://github.com/hapijs/hapi/issues/3466"
+- "https://nodesecurity.io/advisories/335"
+credit: "Georgios Andrianakis"
+uuid: "42ba2f53-5b00-43d6-a7cc-7d4b796e20ff"

@@ -1,0 +1,19 @@
+---
+identifier: "GMS-2016-51"
+package_slug: "npm/swagger-ui"
+title: "XSS via Content-type header"
+description: "By using a malicious server which returns script as the value of the
+  Content-Type header, it is possible to execute arbitrary code using the demonstration
+  capabilities of Swagger-UI."
+date: "2016-07-25"
+pubdate: "2016-07-25"
+affected_range: "<2.1.5 >=2.1.2-M2"
+fixed_versions:
+- "2.1.5"
+affected_versions: "All versions starting from 2.1.2-m2 before 2.1.5"
+solution: "Upgrade to latest version"
+urls:
+- "https://github.com/swagger-api/swagger-ui/issues/1863"
+- "https://nodesecurity.io/advisories/131"
+credit: "Joe Vennix"
+uuid: "0290c4b6-a047-40e0-a616-c4ce696b3c12"

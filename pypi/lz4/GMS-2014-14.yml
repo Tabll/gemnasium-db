@@ -1,0 +1,19 @@
+---
+identifier: "GMS-2014-14"
+package_slug: "pypi/lz4"
+title: "Remote code execution"
+description: "An integer overflow can occur when processing any variant of a \"literal
+  run\". When certain payloads are processed, a pointer to an output buffer can be
+  set to an address outside the output buffer. Since the attacker can specify exact
+  offsets in memory, it is very easy to create a reliable Remote Code Execution exploit."
+date: "2014-07-07"
+pubdate: "2014-07-07"
+affected_range: "<0.7.0"
+fixed_versions:
+- "0.7.0"
+affected_versions: "All versions before 0.7.0"
+solution: "Upgrade to latest version."
+urls:
+- "http://blog.securitymouse.com/2014/07/hacking-cern-exploiting-python-lz4-for.html"
+credit: "Don A. Bailey"
+uuid: "76f6607d-5ce2-4029-b755-ea6af7e2baba"

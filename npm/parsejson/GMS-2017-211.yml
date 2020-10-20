@@ -1,0 +1,18 @@
+---
+identifier: "GMS-2017-211"
+package_slug: "npm/parsejson"
+title: "Regular Expression Denial of Service"
+description: "The parsejson module is vulnerable to regular expression denial of service
+  when untrusted user input is passed into it to be parsed."
+date: "2017-09-21"
+pubdate: "2017-09-21"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "Until a fix is available do not use parsejson to parse json. Use JSON.parse()
+  instead if available."
+urls:
+- "https://github.com/get/parsejson/issues/4"
+- "https://nodesecurity.io/advisories/528"
+credit: "Cristian-Alexandru Staicu"
+uuid: "b425eff1-2755-406d-8cde-8c9dc36b3c6b"

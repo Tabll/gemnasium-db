@@ -1,0 +1,17 @@
+---
+identifier: "GMS-2017-264"
+package_slug: "npm/yyooopack"
+title: "Directory Traversal"
+description: "`yyooopack` is vulnerable to a directory traversal issue, giving an
+  attacker access to the filesystem by placing \"../\" in the url./n"
+date: "2017-09-29"
+pubdate: "2017-09-29"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/yyooopack"
+- "https://nodesecurity.io/advisories/400"
+credit: "Liang Gong"
+uuid: "4ddd1941-e1f4-4689-a80b-51fec655d4f6"

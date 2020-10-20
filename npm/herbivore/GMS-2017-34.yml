@@ -1,0 +1,20 @@
+---
+identifier: "GMS-2017-34"
+package_slug: "npm/herbivore"
+title: "Downloads Resources over HTTP"
+description: "herbivore 0.0.3 and below download binary resources over HTTP, which
+  leaves it vulnerable to MITM attacks. It may be possible to cause remote code execution
+  (RCE) by swapping out the requested resources with an attacker controlled copy if
+  the attacker is on the network or positioned in between the user and the remote
+  server."
+date: "2017-01-01"
+pubdate: "2017-01-01"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://github.com/samatt/Herbivore/commit/0a041defc3463e99948e5d2064aef54b2128c5a3"
+- "https://nodesecurity.io/advisories/258"
+credit: "Adam Baldwin"
+uuid: "7148b5bf-73fb-4841-9d3e-94d2687e35e8"

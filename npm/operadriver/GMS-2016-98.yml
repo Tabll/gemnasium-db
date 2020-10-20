@@ -1,0 +1,19 @@
+---
+identifier: "GMS-2016-98"
+package_slug: "npm/operadriver"
+title: "Downloads Resources over HTTP"
+description: "operadriver downloads binary resources over HTTP, which leaves it vulnerable
+  to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping
+  out the requested binary with an attacker controlled binary if the attacker is on
+  the network or positioned in between the user and the remote server."
+date: "2016-12-16"
+pubdate: "2016-12-16"
+affected_range: "<0.2.3"
+fixed_versions:
+- "0.2.3"
+affected_versions: "All versions before 0.2.3"
+solution: "Update to version 0.2.3 or later."
+urls:
+- "https://nodesecurity.io/advisories/196"
+credit: "Adam Baldwin"
+uuid: "bf9fe814-51eb-47f5-a2e1-51ae956e6a85"

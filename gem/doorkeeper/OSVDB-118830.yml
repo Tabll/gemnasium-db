@@ -1,0 +1,21 @@
+---
+identifier: "OSVDB-118830"
+package_slug: "gem/doorkeeper"
+title: "Sensitive information in production logs"
+description: "The program stores sensitive information in production logs. This may
+  allow a local attacker to gain access to sensitive information."
+date: "2015-02-10"
+pubdate: "2015-02-10"
+affected_range: ">2.0.0a <2.1.2||<1.4.2"
+fixed_versions:
+- "1.4.2"
+- "2.1.2"
+affected_versions: "All versions after 2.0.0a before 2.1.2, all versions before 1.4.2"
+solution: "Upgrade to latest version."
+urls:
+- "http://www.osvdb.com/show/osvdb/118830"
+- "https://github.com/apsoto/doorkeeper/commit/ff434bb8fc49e132bff4d0f974ee0c1a8a69c143"
+- "https://github.com/doorkeeper-gem/doorkeeper/commit/d6bca5f32b741b8cee83a4aeb818338b919181fe"
+- "https://github.com/doorkeeper-gem/doorkeeper/issues/576"
+credit: "Ryan Sonnek @wireframe"
+uuid: "e683aa3c-82b6-4e9f-ac84-b1a56fde6640"

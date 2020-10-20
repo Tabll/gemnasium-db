@@ -1,0 +1,18 @@
+# This advisory is derived from
+# https://github.com/FriendsOfPHP/security-advisories
+---
+identifier: "SS-2015-026-1"
+package_slug: "packagist/silverstripe/framework"
+title: "Cross-site Scripting"
+description: "Form field validation message XSS vulnerability."
+date: "2015-11-11"
+pubdate: "2015-11-11"
+affected_range: ">=3.0.0,<3.2.1"
+fixed_versions:
+- "3.2.1"
+affected_versions: "All versions starting from 3.0.0 before 3.2.1"
+not_impacted: "All versions before 3.0.0, all versions starting from 3.2.1"
+solution: "Upgrade to version 3.2.1 or above."
+urls:
+- "https://www.silverstripe.org/download/security-releases/ss-2015-026/"
+uuid: "2a2b3651-3a90-446c-80eb-bc5cc3aed459"

@@ -1,0 +1,17 @@
+---
+identifier: "GMS-2018-22"
+package_slug: "npm/anywhere"
+title: "Cross Site Scripting"
+description: "anywhere allows embedding HTML in file names, which in certain conditions
+  allows execution of malicious JavaScript."
+date: "2018-02-26"
+pubdate: "2018-02-26"
+affected_range: "<1.5.0"
+fixed_versions:
+- "1.5.0"
+affected_versions: "All versions before 1.5.0"
+solution: "Upgrade to latest version."
+urls:
+- "https://hackerone.com/reports/309394"
+credit: "bl4de"
+uuid: "be165ad3-7c4b-45fb-a8e1-9208e98a3520"

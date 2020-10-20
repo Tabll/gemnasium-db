@@ -1,0 +1,14 @@
+---
+identifier: "GMS-2017-329"
+package_slug: "npm/html-janitor"
+title: "Sanitization bypassing leading to XSS"
+description: "Arbitrary HTML can pass the sanitization process, which can be unexpected
+  and dangerous (XSS) in case user-controlled input is passed to the clean function."
+date: "2017-10-27"
+pubdate: "2017-10-27"
+affected_range: ">=0.2.0"
+fixed_versions: []
+affected_versions: "All versions starting from 0.2.0"
+urls: []
+credit: "Martin (bayotop)"
+uuid: "955d7ef2-e297-4f0a-b32e-7aaf532cade0"

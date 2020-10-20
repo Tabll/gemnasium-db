@@ -1,0 +1,23 @@
+---
+identifier: "GMS-2015-46"
+package_slug: "packagist/typo3/neos"
+title: "XSS Vulnerabilities"
+description: "Neos is vulnerable to several XSS attacks. Through these vulnerabilities,
+  an attacker could tamper with page rendering, redirect victims to a fake login page,
+  or capture user credentials (such as cookies). With the potential backdoor upload
+  an attacker could gain access to the server itself, to an extent mainly limited
+  by the server setup."
+date: "2015-11-23"
+pubdate: "2015-11-23"
+affected_range: ">=2.0.0alpha,<2.0.4||>=1.2.0alpha,<1.2.13"
+fixed_versions:
+- "1.2.13"
+- "2.0.4"
+affected_versions: "All versions starting from 2.0.0alpha before 2.0.4, all versions
+  starting from 1.2.0alpha before 1.2.13"
+not_impacted: "1.0.x and 1.1.x"
+solution: "Upgrade to latest version."
+urls:
+- "https://www.neos.io/news/neos-sa-2015-002.html"
+credit: "Mickael Dorigny (Synetis)"
+uuid: "a502f36f-040e-4017-ba3e-614dde7a46d6"

@@ -1,0 +1,18 @@
+# This advisory is derived from
+# https://github.com/FriendsOfPHP/security-advisories
+---
+identifier: "2017-05-18"
+package_slug: "packagist/squizlabs/php_codesniffer"
+title: "Code Injection"
+description: "Arbitrary shell execution in php_codesniffer."
+date: "2017-05-18"
+pubdate: "2017-05-18"
+affected_range: ">=3.0.0,<3.0.1"
+fixed_versions:
+- "3.0.1"
+affected_versions: "All versions starting from 3.0.0 before 3.0.1"
+not_impacted: "All versions before 3.0.0, all versions starting from 3.0.1"
+solution: "Upgrade to version 3.0.1 or above."
+urls:
+- "https://github.com/squizlabs/PHP_CodeSniffer/releases/tag/3.0.1"
+uuid: "a55a00b0-c003-4fb0-828f-d4d5ad25719e"

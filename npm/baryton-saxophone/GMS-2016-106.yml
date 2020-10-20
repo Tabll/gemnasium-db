@@ -1,0 +1,20 @@
+---
+identifier: "GMS-2016-106"
+package_slug: "npm/baryton-saxophone"
+title: "Downloads Resources over HTTP"
+description: "baryton-saxophone downloads binary resources over HTTP, which leaves
+  it vulnerable to MITM attacks. It may be possible to cause remote code execution
+  (RCE) by swapping out the requested binary with an attacker controlled binary if
+  the attacker is on the network or positioned in between the user and the remote
+  server."
+date: "2016-12-16"
+pubdate: "2016-12-16"
+affected_range: "<3.0.1"
+fixed_versions:
+- "3.0.1"
+affected_versions: "All versions before 3.0.1"
+solution: "Update to version 3.0.1 or greater."
+urls:
+- "https://nodesecurity.io/advisories/240"
+credit: "Adam Baldwin"
+uuid: "86446cb0-881d-433a-89ea-d53490526945"

@@ -1,0 +1,23 @@
+---
+identifier: "SS-2016-008"
+package_slug: "packagist/silverstripe/framework"
+title: "Password encryption salt expiry"
+description: "When a user changes their password, the internal salt used for hashing their
+  password is not updated."
+date: "2016-08-15"
+pubdate: "2016-08-15"
+affected_range: "<3.1.20-stable||>=3.2.0-alpha0,<3.2.5-stable
+  ||>=3.3.0-alpha0,<3.3.3-stable||>=3.4.0-alpha0,<3.4.1-stable"
+fixed_versions:
+- "3.1.20"
+- "3.2.5"
+- "3.3.3"
+- "3.4.1"
+affected_versions: "All versions before 3.1.20, all versions starting from 3.2.0-alpha0
+  before 3.2.5, all versions starting from 3.3.0-alpha0 before 3.3.3, all versions
+  starting from 3.4.0-alpha0 before 3.4.1"
+solution: "Upgrade to latest version."
+urls:
+- "https://www.silverstripe.org/download/security-releases/ss-2016-008/"
+credit: "Jono Menz"
+uuid: "bb0fe318-727c-46d6-bcd2-0206ea97e654"

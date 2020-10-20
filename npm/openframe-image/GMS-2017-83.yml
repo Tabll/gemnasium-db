@@ -1,0 +1,16 @@
+---
+identifier: "GMS-2017-83"
+package_slug: "npm/openframe-image"
+title: "Downloads Resources over HTTP"
+description: "openframe-image downloads data resources over HTTP, which leaves it
+  vulnerable to MITM attacks."
+date: "2017-01-01"
+pubdate: "2017-01-01"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://nodesecurity.io/advisories/218"
+credit: "Adam Baldwin"
+uuid: "73647ce2-d582-4181-b9bb-25f9c905ed2f"

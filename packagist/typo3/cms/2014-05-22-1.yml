@@ -1,0 +1,19 @@
+# This advisory is derived from
+# https://github.com/FriendsOfPHP/security-advisories
+---
+identifier: "2014-05-22-1"
+package_slug: "packagist/typo3/cms"
+title: "Cross-site Scripting"
+description: "The ExtJS JavaScript framework that is shipped with TYPO3 is susceptible
+  to XSS."
+date: "2014-05-22"
+pubdate: "2014-05-22"
+affected_range: ">=6.2.0,<6.2.3"
+fixed_versions:
+- "6.2.3"
+affected_versions: "All versions starting from 6.2.0 before 6.2.3"
+not_impacted: "All versions before 6.2.0, all versions starting from 6.2.3"
+solution: "Upgrade to version 6.2.3 or above."
+urls:
+- "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2014-001/"
+uuid: "83007f0b-3563-47a2-91f3-58eae2c7cc84"

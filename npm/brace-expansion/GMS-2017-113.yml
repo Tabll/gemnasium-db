@@ -1,0 +1,20 @@
+---
+identifier: "GMS-2017-113"
+package_slug: "npm/brace-expansion"
+title: "Regular Expression DoS"
+description: "brace expansion is vulnerable to Regular Expression Denial of Service
+  attacks."
+date: "2017-03-02"
+pubdate: "2017-03-02"
+affected_range: "<=1.1.6"
+fixed_versions:
+- "1.1.7"
+affected_versions: "All versions up to 1.1.6"
+solution: "Upgrade to version 1.1.7 or later."
+urls:
+- "https://github.com/juliangruber/brace-expansion/issues/33"
+- "https://github.com/juliangruber/brace-expansion/pull/35"
+- "https://github.com/juliangruber/brace-expansion/pull/35/commits/b13381281cead487cbdbfd6a69fb097ea5e456c3"
+- "https://nodesecurity.io/advisories/338"
+credit: "kamael"
+uuid: "8afb86ca-4a5e-4803-abcc-c9988ef61abf"

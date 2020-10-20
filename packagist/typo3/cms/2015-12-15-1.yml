@@ -1,0 +1,21 @@
+# This advisory is derived from
+# https://github.com/FriendsOfPHP/security-advisories
+---
+identifier: "2015-12-15-1"
+package_slug: "packagist/typo3/cms"
+title: "Cross-site Scripting"
+description: "Multiple Cross-Site Scripting vulnerabilities in TYPO3 backend."
+date: "2015-12-15"
+pubdate: "2015-12-15"
+affected_range: ">=6.2.0,<6.2.16||>=7.0.0,<7.6.1"
+fixed_versions:
+- "6.2.16"
+- "7.6.1"
+affected_versions: "All versions starting from 6.2.0 before 6.2.16, all versions starting
+  from 7.0.0 before 7.6.1"
+not_impacted: "All versions before 6.2.0, all versions starting from 6.2.16 before
+  7.0.0, all versions starting from 7.6.1"
+solution: "Upgrade to versions 6.2.16, 7.6.1 or above."
+urls:
+- "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2015-011/"
+uuid: "507a18e1-e35f-4d2e-8e92-29e90fe8926e"

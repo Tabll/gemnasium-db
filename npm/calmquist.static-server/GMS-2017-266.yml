@@ -1,0 +1,17 @@
+---
+identifier: "GMS-2017-266"
+package_slug: "npm/calmquist.static-server"
+title: "Directory Traversal"
+description: "`calmquist.static-server` is vulnerable to a directory traversal issue,
+  giving an attacker access to the filesystem by placing \"../\" in the url./n"
+date: "2017-09-29"
+pubdate: "2017-09-29"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/calmquist.static-server"
+- "https://nodesecurity.io/advisories/398"
+credit: "Liang Gong"
+uuid: "8a5dd74c-2d5d-440e-ba60-b1d6f1c979a2"

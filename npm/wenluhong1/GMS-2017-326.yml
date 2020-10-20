@@ -1,0 +1,17 @@
+---
+identifier: "GMS-2017-326"
+package_slug: "npm/wenluhong1"
+title: "Directory Traversal"
+description: "`wenluhong1` is vulnerable to a directory traversal issue, giving an
+  attacker access to the filesystem by placing \"../\" in the url."
+date: "2017-10-25"
+pubdate: "2017-10-25"
+affected_range: ">=0.0.0-alpha"
+fixed_versions: []
+affected_versions: "All versions"
+solution: "There is no solution for this vulnerability at the moment."
+urls:
+- "https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/wenluhong1"
+- "https://nodesecurity.io/advisories/409"
+credit: "Liang Gong"
+uuid: "fbf6af00-d5b7-4da5-8d3e-cdf80aab8d66"

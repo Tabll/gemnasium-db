@@ -1,0 +1,19 @@
+---
+identifier: "GMS-2016-97"
+package_slug: "npm/apk-parser"
+title: "Downloads Resources over HTTP"
+description: "apk-parser downloads binary resources over HTTP, which leaves it vulnerable
+  to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping
+  out the requested binary with an attacker controlled binary if the attacker is on
+  the network or positioned in between the user and the remote server."
+date: "2016-12-16"
+pubdate: "2016-12-16"
+affected_range: "<0.1.6"
+fixed_versions:
+- "0.1.6"
+affected_versions: "All versions before 0.1.6"
+solution: "Update to version 0.1.6 or later."
+urls:
+- "https://nodesecurity.io/advisories/195"
+credit: "Adam Baldwin"
+uuid: "72177b75-db9a-4a2e-9fc4-beddee05cc82"

@@ -1,0 +1,21 @@
+---
+identifier: "GMS-2016-41"
+package_slug: "npm/sequelize"
+title: "SQL Injection via GeoJSON"
+description: "SequelizeJS is vulnerable to SQL injection via GeoJSON documents containing
+  a value with a single quote. This vulnerability affects postresql/postgis as well
+  as MySQL."
+date: "2016-07-18"
+pubdate: "2016-07-18"
+affected_range: "<3.23.5"
+fixed_versions:
+- "3.23.5"
+affected_versions: "All versions before 3.23.5"
+solution: "Upgrade to latest or use workaround; see provided link"
+urls:
+- "https://github.com/sequelize/sequelize/issues/6194"
+- "https://github.com/sequelize/sequelize/pull/6302/commits/f93af43a1d86400487f5e3d9762f1a4b7cf6b1e1"
+- "https://github.com/sequelize/sequelize/pull/6303/commits/a81ac1f38476d553c92d522913e91c6e07acc4fa"
+- "https://nodesecurity.io/advisories/122"
+credit: "https://github.com/contra"
+uuid: "24bacb5f-f6bc-45ae-ac36-f516821bbd27"

@@ -1,0 +1,18 @@
+---
+identifier: "GMS-2014-23"
+package_slug: "pypi/ftw.mail"
+title: "Cross-Site Scripting"
+description: "This package is vulnerable to Cross-Site Scripting (XSS) attacks."
+date: "2014-09-16"
+pubdate: "2014-09-16"
+affected_range: "<2.2.3"
+fixed_versions:
+- "2.2.3"
+affected_versions: "All versions before 2.2.3"
+solution: "Upgrade to latest version."
+urls:
+- "https://github.com/4teamwork/ftw.mail/blob/master/docs/HISTORY.txt#L128"
+- "https://github.com/4teamwork/ftw.mail/commit/1e72b712cc7382fc821907a173233cb873b14d11"
+- "https://github.com/4teamwork/ftw.mail/pull/25"
+credit: "Philippe Gross"
+uuid: "386d6c11-7449-4d5d-af3f-4137a8d319b4"

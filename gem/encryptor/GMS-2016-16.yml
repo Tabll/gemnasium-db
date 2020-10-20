@@ -1,0 +1,21 @@
+---
+identifier: "GMS-2016-16"
+package_slug: "gem/encryptor"
+title: "AES-GCM nonce reuse vulnerability"
+description: "The package encryptor encrypts all messages using the same key/nonce.
+  This not only exposes the XOR of the plaintexts if you XOR together two ciphertexts,
+  but it also leaks the AES-GCM authentication key, allowing an attacker to forge
+  messages and potentially perform chosen ciphertext attacks, which could potentially
+  enable full plaintext recovery."
+date: "2016-03-20"
+pubdate: "2016-03-20"
+affected_range: "<3.0.0"
+fixed_versions:
+- "3.0.0"
+affected_versions: "All versions before 3.0.0"
+solution: "Upgrade to latest version."
+urls:
+- "https://github.com/attr-encrypted/encryptor/commit/b946c1806d620e452a8f88f94387a527c3da2715"
+- "https://github.com/attr-encrypted/encryptor/pull/22"
+credit: "Matouš Borák"
+uuid: "c79d4ce6-a678-4a25-bee2-acc94c5b5332"
