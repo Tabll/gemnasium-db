@@ -4,7 +4,8 @@ package_slug: "npm/execa"
 title: "Uncontrolled Search Path Element"
 description: "Attackers could trick execa into executing arbitrary binaries. This
   behaviour is caused by the setting `preferLocal=true` which makes execa search
-  for locally installed binaries and executes them."
+  for locally installed binaries and executes them. This vulnerability is usually only 
+  exploitable when using execa on a client-side LOCAL application."
 date: "2020-05-15"
 pubdate: "2020-05-15"
 affected_range: "<2.0.0"
