@@ -1,7 +1,5 @@
 stages:
   - test
-  - extract
-  - spellcheck
   - bump
   - deploy
 
@@ -41,33 +39,6 @@ semantic:
     - bundle install --gemfile identifier/Gemfile
     - bundle exec --gemfile schema/Gemfile schema/validate.rb --semantic gem go npm maven packagist pypi conan nuget
     - identifier/identifier.rb -v .
-  resource_group: gemnasium-db
-
-extract_description:
-  image: ruby:2.6-alpine3.10
-  stage: extract
-  allow_failure: true
-  before_script:
-    - apk add --no-cache git bash
-    - gem install bundler:2.1.4
-    - bundle install --gemfile spellcheck/Gemfile
-  script:
-    - spellcheck/extract_description.sh
-  artifacts:
-    paths:
-      - description.txt
-    expire_in: 1 week
-  resource_group: gemnasium-db
-
-spellchecking:
-  image: registry.gitlab.com/julianthome/docker-language-tool:1.0.0
-  stage: spellcheck
-  needs:
-    - job: extract_description
-      artifacts: true
-  allow_failure: true
-  script:
-    - ./spellcheck/spellcheck.sh
   resource_group: gemnasium-db
 
 bump:
