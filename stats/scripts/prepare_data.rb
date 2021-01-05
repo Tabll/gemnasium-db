@@ -5,13 +5,6 @@ require 'yaml'
 require 'csv'
 require 'git'
 require 'time'
-require 'open-uri'
-
-def download_file(url, file)
-  open(file, 'wb') do |file|
-    file << open(url).read
-  end
-end
 
 unless ARGV.size == 2
   puts 'usage ./prepare_data.rb <path-to-gemnasium-db> <outdir>'
@@ -61,6 +54,3 @@ end
 
 File.write(File.join(outdir, 'data.csv'), rows.map(&:to_csv).join)
 
-# download nvd data
-file_id = '1gN-p-nB_BoqZ48T79llGI3p-Lg1biO6Q'
-download_file("https://docs.google.com/uc?export=download&id=#{file_id}", File.join(outdir, 'nvd.csv'))
