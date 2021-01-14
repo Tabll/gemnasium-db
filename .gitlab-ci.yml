@@ -23,7 +23,7 @@ syntax:
     - pip install yamllint
   script:
     - yamllint .
-  resource_group: gemnasium-db
+  resource_group: "gemnasium-db-$CI_COMMIT_REF_SLUG"
 
 semantic:
   image: ruby:2.6-alpine3.10
@@ -39,7 +39,7 @@ semantic:
     - bundle install --gemfile identifier/Gemfile
     - bundle exec --gemfile schema/Gemfile schema/validate.rb --semantic gem go npm maven packagist pypi conan nuget
     - identifier/identifier.rb -v .
-  resource_group: gemnasium-db
+  resource_group: "gemnasium-db-$CI_COMMIT_REF_SLUG"
 
 bump:
   image: registry.gitlab.com/julianthome/bumper:master-v1.0.7
@@ -56,7 +56,7 @@ bump:
     - git clone git@gitlab.com:gitlab-org/security-products/gemnasium-db.git
   script:
     - bump.rb -v "v" -c "CHANGELOG.md" -g "gemnasium-db" -n "bumper" -e "bumper@gitlab.com"
-  resource_group: gemnasium-db
+  resource_group: "gemnasium-db-$CI_COMMIT_REF_SLUG"
 
 pages:
   image: julianthome/stat
@@ -69,7 +69,7 @@ pages:
     - gem install csv sqlite3 git
   script:
     - cd stats && make
-  resource_group: gemnasium-db
+  resource_group: "gemnasium-db-$CI_COMMIT_REF_SLUG"
   artifacts:
     paths:
       - data/data.tar.gz
