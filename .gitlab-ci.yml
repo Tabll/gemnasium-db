@@ -40,6 +40,7 @@ semantic:
     - bundle exec --gemfile schema/Gemfile schema/validate.rb --semantic gem go npm maven packagist pypi conan nuget
     - identifier/identifier.rb -v .
   resource_group: "gemnasium-db-$CI_COMMIT_REF_SLUG"
+  allow_failure: true
 
 bump:
   image: registry.gitlab.com/julianthome/bumper:master-v1.0.7
