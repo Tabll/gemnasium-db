@@ -26,6 +26,18 @@ you can contribute to the GitLab Advisory Database database by opening an issue,
 or even submit the vulnerability as a YAML file in a merge request.
 Please review the [contribution guidelines](CONTRIBUTING.md).
 
+## Credits 
+
+We would like to thank the following authors very much for their valuable
+contributions.
+
+| Author    | MRs            |
+| --------- | -------------- |
+| @brondsem | !1500, !1501   |
+| @mrtux    | !1611, !1613   |
+| @rusher1  | !2246          | 
+| @vavkamil | !4650          |
+
 ## Directory structure
 
 Each YAML file of the repo corresponds to a single security advisory.
