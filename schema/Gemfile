@@ -1,5 +1,0 @@
-# frozen_string_literal: true
-
-source 'https://rubygems.org'
-gem 'json-schema'
-gem 'semver_dialects', git:'git@gitlab.com:gitlab-org/secure/vulnerability-research/advisories/semver_dialects.git', ref: '8531cbcd'

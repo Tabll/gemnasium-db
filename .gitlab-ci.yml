@@ -16,7 +16,15 @@ workflow:
     # For tags, create a pipeline.
     - if: '$CI_COMMIT_TAG'
 
-syntax:
+go-yaml-lint:
+  image: golang:1.16-alpine
+  stage: test 
+  script:
+    - (cd ci/go-yaml-lint && go build)
+    - for ptype in "conan" "gem" "go" "maven" "npm" "nuget" "packagist" "pypi"; do ci/go-yaml-lint/go-yaml-lint "$ptype" || exit 1; done
+  resource_group: "gemnasium-db-$CI_COMMIT_REF_SLUG"
+
+yamllint:
   image: python:3
   stage: test 
   before_script:
@@ -35,10 +43,10 @@ semantic:
     - eval $(ssh-agent -s)
     - echo "$SEMVER_DIALECT_SSH" | tr -d '\r' | ssh-add -
   script:
-    - bundle install --gemfile schema/Gemfile
-    - bundle install --gemfile identifier/Gemfile
-    - bundle exec --gemfile schema/Gemfile schema/validate.rb --semantic gem go npm maven packagist pypi conan nuget
-    - identifier/identifier.rb -v .
+    - bundle install --gemfile ci/schema/Gemfile
+    - bundle install --gemfile ci/identifier/Gemfile
+    - bundle exec --gemfile ci/schema/Gemfile ci/schema/validate.rb --semantic gem go npm maven packagist pypi conan nuget
+    - ci/identifier/identifier.rb -v .
   resource_group: "gemnasium-db-$CI_COMMIT_REF_SLUG"
 
 bump:
@@ -68,7 +76,7 @@ pages:
     - apt-get update && apt-get -y install ruby-all-dev libsqlite3-dev git-lfs
     - gem install csv sqlite3 git
   script:
-    - cd stats && make
+    - cd ci/stats && make
   resource_group: "gemnasium-db-$CI_COMMIT_REF_SLUG"
   artifacts:
     paths:
