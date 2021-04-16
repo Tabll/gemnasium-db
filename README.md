@@ -203,3 +203,10 @@ We apply the following [semantic versioning](https://semver.org/spec/v2.0.0.html
 All notable changes concerning minor and major updates are tracked in [the changelog](CHANGELOG.md) which 
 is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+### 3rd party integrations
+
+Our [GitLab Security Alert Database Terms](https://gitlab.com/gitlab-org/security-products/gemnasium-db/-/blob/master/LICENSE.md#5-general-prohibitions-and-gitlabs-enforcement-rights)
+prohibit the use of data contained in the GitLab Advisory Database (or more
+specifically the [gemnasium-db](https://gitlab.com/gitlab-org/security-products/gemnasium-db))
+by 3rd party tools. 3rd party integrators can use the
+MIT-licensed, time-delayed gemnasium-db clone https://gitlab.com/gitlab-org/advisories-community instead.
