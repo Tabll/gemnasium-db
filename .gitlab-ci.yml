@@ -36,12 +36,6 @@ yamllint:
 semantic:
   image: ruby:2.6-alpine3.10
   stage: test 
-  before_script:
-    - apk add git openssh-client
-    - mkdir -p ~/.ssh && chmod 700 ~/.ssh
-    - ssh-keyscan gitlab.com >> ~/.ssh/known_hosts && chmod 644 ~/.ssh/known_hosts
-    - eval $(ssh-agent -s)
-    - echo "$SEMVER_DIALECT_SSH" | tr -d '\r' | ssh-add -
   script:
     - bundle install --gemfile ci/schema/Gemfile
     - bundle install --gemfile ci/identifier/Gemfile
