@@ -31,13 +31,14 @@ Please review the [contribution guidelines](CONTRIBUTING.md).
 We would like to thank the following authors very much for their valuable
 contributions.
 
-| Author    | MRs            |
-| --------- | -------------- |
-| @brondsem | !1500, !1501   |
-| @mrtux    | !1611, !1613   |
-| @rusher1  | !2246          | 
-| @vavkamil | !4650          |
-| @robw-nom | !4808          |
+| Author       | MRs            |
+| ------------ | -------------- |
+| @brondsem    | !1500, !1501   |
+| @mrtux       | !1611, !1613   |
+| @rusher1     | !2246          | 
+| @vavkamil    | !4650          |
+| @robw-nom    | !4808          |
+| @masahiro331 | !6889          |
 
 ## Directory structure
 
