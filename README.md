@@ -131,6 +131,8 @@ in which the vulnerability has been disclosed, e.g. `2017`.
 * `credit` (string, optional): The names of the people who reported the vulnerability or helped fixing it.
 * `urls` (array of strings): URLs of: detailed advisory, documented exploit, vulnerable source code, etc.
    The order is not relevant.
+* `cwe_ids` (array of strings, optional): List of CWEs that are related to the
+    advisory.
 * `cvss_v2` (string, optional): The CVSS attack vector (version 2.x) for a
 given vulnerability (see https://www.first.org/cvss/v2/ for more details).
 * `cvss_v3` (string, optional): The CVSS attack vector (version 3.x) for a
@@ -187,10 +189,12 @@ not_impacted: "All versions before 1.9, all versions after 2.7.1 before 2.8, all
 solution: "Upgrade to versions 2.7.2, 2.8.1 or above."
 urls:
 - "https://nvd.nist.gov/vuln/detail/CVE-2020-11001"
+cwe_ids:
+- "CWE-79"
+- "CWE-80"
 cvss_v2: "AV:N/AC:M/Au:S/C:N/I:P/A:N"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:N/A:N"
 uuid: "4f4e9149-afd0-47d6-850f-4c8c70a49143"
-
 ```
 
 ### Versioning and Changelog

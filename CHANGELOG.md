@@ -1,3 +1,6 @@
+#### [v1.3.0] 2021-06-02
+##### Added
+- Schema change: `cwe_ids` array (!6975)
 #### [v1.2.0] 2020-07-24
 ##### Added
 - Conan Support
