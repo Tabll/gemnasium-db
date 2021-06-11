@@ -1,3 +1,6 @@
+#### [v1.4.0] 2021-06-10
+##### Added
+- Schema change: `info` dictionary (!6974)
 #### [v1.3.0] 2021-06-02
 ##### Added
 - Schema change: `cwe_ids` array (!6975)

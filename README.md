@@ -131,6 +131,10 @@ in which the vulnerability has been disclosed, e.g. `2017`.
 * `credit` (string, optional): The names of the people who reported the vulnerability or helped fixing it.
 * `urls` (array of strings): URLs of: detailed advisory, documented exploit, vulnerable source code, etc.
    The order is not relevant.
+* `links` (array of objects, optional): Meta-information regarding the advisory
+    pointing to resources that are helpful to better understand the context.
+    The key has to be alphanumeric. Every object has two properties: a required
+    `name` (string) and an optional `type` (`poc`, `blog`).
 * `cwe_ids` (array of strings, optional): List of CWEs that are related to the
     advisory.
 * `cvss_v2` (string, optional): The CVSS attack vector (version 2.x) for a
@@ -166,36 +170,36 @@ Our YAML file schema for advisories is specified in [schema/schema.json](schema/
 
 Here's a sample document:
 
-```
+``` yaml
 ---
-identifier: "CVE-2020-11001"
-package_slug: "pypi/wagtail"
-title: "Cross-site Scripting"
-description: "A cross-site scripting (XSS) vulnerability exists on the
-  page revision comparison view within the Wagtail admin interface. A user with a
-  limited-permission editor account for the Wagtail admin could potentially craft
-  a page revision history that, when viewed by a user with higher privileges, could
-  perform actions with that user's credentials. The vulnerability is not exploitable
-  by an ordinary site visitor without access to the Wagtail admin."
-date: "2020-04-15"
-pubdate: "2020-04-14"
-affected_range: ">=1.9,<=2.7.1||==2.8"
+identifier: "CVE-2021-28965"
+package_slug: "gem/rexml"
+title: "Improper Restriction of XML External Entity Reference"
+description: "The REXML gem does not properly address XML round-trip issues. An incorrect
+  document can be produced after parsing and serializing."
+date: "2021-06-02"
+pubdate: "2021-04-21"
+affected_range: "<3.2.5"
 fixed_versions:
-- "2.7.2"
-- "2.8.1"
-affected_versions: "All versions starting from 1.9 up to 2.7.1, version 2.8"
-not_impacted: "All versions before 1.9, all versions after 2.7.1 before 2.8, all versions
-  after 2.8"
-solution: "Upgrade to versions 2.7.2, 2.8.1 or above."
+- "3.2.5"
+affected_versions: "All versions before 3.2.5"
+not_impacted: "All versions starting from 3.2.5"
+solution: "Upgrade to version 3.2.5 or above."
 urls:
-- "https://nvd.nist.gov/vuln/detail/CVE-2020-11001"
+- "https://nvd.nist.gov/vuln/detail/CVE-2021-28965"
+- "https://www.ruby-lang.org/en/news/2021/04/05/xml-round-trip-vulnerability-in-rexml-cve-2021-28965/"
+links:
+  - url: "https://hackerone.com/reports/1104077"
+    type: "poc"
+  - url: "https://nvd.nist.gov/vuln/detail/CVE-2021-28965"
+  - url: "https://www.ruby-lang.org/en/news/2021/04/05/xml-round-trip-vulnerability-in-rexml-cve-2021-28965/"
 cwe_ids:
-- "CWE-79"
-- "CWE-80"
-cvss_v2: "AV:N/AC:M/Au:S/C:N/I:P/A:N"
-cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:N/A:N"
-uuid: "4f4e9149-afd0-47d6-850f-4c8c70a49143"
+- "CWE-611"
+cvss_v2: "AV:N/AC:L/Au:N/C:N/I:P/A:N"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+uuid: "d3422009-4cd3-49e6-bc8a-b0581fed6612"
 ```
+
 
 ### Versioning and Changelog
 
