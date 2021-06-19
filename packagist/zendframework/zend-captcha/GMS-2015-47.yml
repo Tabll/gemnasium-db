@@ -16,7 +16,9 @@ fixed_versions:
 - "2.5.2"
 affected_versions: "All versions before 2.4.9, all versions starting from 2.5.0 before
   2.5.2"
-solution: "Upgrade to latest version."
+not_impacted: "All versions starting from 2.4.9 before 2.5.0, all versions starting
+  from 2.5.2"
+solution: "Upgrade to versions 2.4.9, 2.5.2 or above."
 urls:
 - "http://framework.zend.com/security/advisory/ZF2015-09"
 credit: "Vincent Herbulot, Enrico Zimuel"

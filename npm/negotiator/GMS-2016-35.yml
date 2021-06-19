@@ -10,7 +10,8 @@ affected_range: "<= 0.6.0"
 fixed_versions:
 - "0.6.1"
 affected_versions: "All versions up to 0.6.0"
-solution: "Upgrade to latest version."
+not_impacted: "All versions after 0.6.0"
+solution: "Upgrade to version 0.6.1 or above."
 urls:
 - "https://nodesecurity.io/advisories/106"
 credit: "Adam Baldwin"

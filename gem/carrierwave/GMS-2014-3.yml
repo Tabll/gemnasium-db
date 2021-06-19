@@ -10,7 +10,8 @@ affected_range: "<1.0.0.beta"
 fixed_versions:
 - "1.0.0.beta"
 affected_versions: "All versions before 1.0.0.beta"
-solution: "Upgrade to latest version."
+not_impacted: "All versions starting from 1.0.0.beta"
+solution: "Upgrade to version 1.0.0.beta or above."
 urls:
 - "https://github.com/carrierwaveuploader/carrierwave/commit/96314bb42c32d6b24278474e1c877b53a88bfaf8"
 - "https://github.com/carrierwaveuploader/carrierwave/pull/1361"

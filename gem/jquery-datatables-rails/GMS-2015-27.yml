@@ -11,7 +11,8 @@ affected_range: "<3.4.0"
 fixed_versions:
 - "3.4.0"
 affected_versions: "All versions before 3.4.0"
-solution: "Upgrade to latest version."
+not_impacted: "All versions starting from 3.4.0"
+solution: "Upgrade to version 3.4.0 or above."
 urls:
 - "https://github.com/DataTables/DataTables/issues/602"
 - "https://github.com/DataTables/DataTablesSrc/commit/ccf86dc5982bd8e16d"

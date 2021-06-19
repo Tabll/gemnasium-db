@@ -10,7 +10,8 @@ affected_range: "<=1.0.3"
 fixed_versions:
 - "1.0.4"
 affected_versions: "All versions up to 1.0.3"
-solution: "Upgrade to latest version."
+not_impacted: "All versions after 1.0.3"
+solution: "Upgrade to version 1.0.4 or above."
 urls:
 - "https://nodesecurity.io/advisories/20"
 credit: "Adam Baldwin"

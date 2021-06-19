@@ -11,7 +11,8 @@ affected_range: "<1.4.1"
 fixed_versions:
 - "1.4.1"
 affected_versions: "All versions before 1.4.1"
-solution: "Upgrade to latest version."
+not_impacted: "All versions starting from 1.4.1"
+solution: "Upgrade to version 1.4.1 or above."
 urls:
 - "https://github.com/jonschlinkert/remarkable/issues/97"
 - "https://nodesecurity.io/advisories/remarkable_content_injection"

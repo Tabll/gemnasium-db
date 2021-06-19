@@ -15,7 +15,8 @@ affected_range: "<2.16.1-stable"
 fixed_versions:
 - "2.16.1"
 affected_versions: "All versions before 2.16.1"
-solution: "Upgrade to latest version."
+not_impacted: "All versions starting from 2.16.1-stable"
+solution: "Upgrade to version 2.16.1 or above."
 urls:
 - "http://karmainsecurity.com/KIS-2016-13"
 credit: "Egidio Romano"

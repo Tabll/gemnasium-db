@@ -12,7 +12,8 @@ affected_range: "<0.4.7"
 fixed_versions:
 - "0.4.7"
 affected_versions: "All versions before 0.4.7"
-solution: "Upgrade to latest version."
+not_impacted: "All versions starting from 0.4.7"
+solution: "Upgrade to version 0.4.7 or above."
 urls:
 - "https://github.com/jonschlinkert/assign-deep/commit/19953a8c089b0328c470acaaaf6accdfcb34da11"
 - "https://hackerone.com/reports/310707"

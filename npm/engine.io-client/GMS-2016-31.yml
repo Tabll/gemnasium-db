@@ -14,8 +14,8 @@ affected_range: "<= 1.6.8"
 fixed_versions:
 - "1.6.9"
 affected_versions: "All versions up to 1.6.8"
-solution: "Upgrade to the latest version. If you are unable to upgrade, make sure
-  and force all calls to socket.io to have the rejectedUnauthorized flag set to true."
+not_impacted: "All versions after 1.6.8"
+solution: "Upgrade to version 1.6.9 or above."
 urls:
 - "https://github.com/socketio/engine.io-client/commit/2c55b278a491bf45313ecc0825cf800e2f7ff5c1"
 - "https://nodesecurity.io/advisories/99"

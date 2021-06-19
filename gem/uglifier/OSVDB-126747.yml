@@ -12,7 +12,8 @@ affected_range: "<2.7.2"
 fixed_versions:
 - "2.7.2"
 affected_versions: "All versions before 2.7.2"
-solution: "Upgrade to latest version."
+not_impacted: "All versions starting from 2.7.2"
+solution: "Upgrade to version 2.7.2 or above."
 urls:
 - "https://github.com/lautis/uglifier/pull/86"
 - "https://github.com/mishoo/UglifyJS2/issues/751"

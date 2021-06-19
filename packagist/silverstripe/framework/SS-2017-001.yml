@@ -12,7 +12,9 @@ fixed_versions:
 - "3.5.2-rc1"
 affected_versions: "All versions before 3.4.4-rc1, all versions starting from 3.5.0-alpha0
   before 3.5.2-rc1"
-solution: "Upgrade to latest version."
+not_impacted: "All versions starting from 3.4.4-rc1 before 3.5.0-alpha0, all versions
+  starting from 3.5.2-rc1"
+solution: "Upgrade to versions 3.4.4-rc1, 3.5.2-rc1 or above."
 urls:
 - "https://github.com/silverstripe/silverstripe-framework/commit/c6c6c13fc265aeedf5de7226b3cde39d185ba49d"
 - "https://www.silverstripe.org/download/security-releases/ss-2017-001/"

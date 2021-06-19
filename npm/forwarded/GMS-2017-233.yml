@@ -11,8 +11,8 @@ affected_range: "< 0.1.2"
 fixed_versions:
 - "0.1.2"
 affected_versions: "All versions before 0.1.2"
-solution: "Upgrade to latest version. If you are using this module via express, upgrade
-  to Express version 4.15.5 or greater.\r\n"
+not_impacted: "All versions starting from 0.1.2"
+solution: "Upgrade to version 0.1.2 or above."
 urls:
 - "https://nodesecurity.io/advisories/527"
 credit: "Cristian-Alexandru Staicu"

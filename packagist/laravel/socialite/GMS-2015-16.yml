@@ -9,7 +9,8 @@ affected_range: "<2.0.10"
 fixed_versions:
 - "2.0.10"
 affected_versions: "All versions before 2.0.10"
-solution: "Upgrade to latest version."
+not_impacted: "All versions starting from 2.0.10"
+solution: "Upgrade to version 2.0.10 or above."
 urls:
 - "https://github.com/laravel/socialite/pull/93"
 credit: "Graham Campbell"

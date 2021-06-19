@@ -12,8 +12,9 @@ fixed_versions:
 - "3.0.1"
 affected_versions: "All versions starting from 3.0.0-beta1 before 3.0.1, all versions
   starting from 2.3.0 before 2.3.7"
-not_impacted: "2.x prior to 2.3.0"
-solution: "Upgrade to latest version."
+not_impacted: "All versions before 3.0.0-beta1, all versions starting from 3.0.1,
+  all versions before 2.3.0-stable, all versions starting from 2.3.7"
+solution: "Upgrade to versions 2.3.7, 3.0.1 or above."
 urls:
 - "https://www.neos.io/news/flow-sa-2015-001.html"
 credit: "Wouter Wolters"

@@ -10,7 +10,8 @@ affected_range: "<=0.2.2"
 fixed_versions:
 - "0.2.3"
 affected_versions: "All versions up to 0.2.2"
-solution: "Upgrade to latest version."
+not_impacted: "All versions after 0.2.2"
+solution: "Upgrade to version 0.2.3 or above."
 urls:
 - "http://packetstormsecurity.com/files/126317/JRuby-Sandbox-0.2.2-Bypass.html"
 - "http://seclists.org/fulldisclosure/2014/Apr/att-264/jruby-sandbox.txt"

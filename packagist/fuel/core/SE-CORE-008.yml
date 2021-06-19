@@ -10,7 +10,8 @@ affected_range: "<1.8.1"
 fixed_versions:
 - "1.8.1"
 affected_versions: "All versions before 1.8.1"
-solution: "Upgrade to latest version."
+not_impacted: "All versions starting from 1.8.1"
+solution: "Upgrade to version 1.8.1 or above."
 urls:
 - "https://fuelphp.com/security-advisories"
 credit: "Felix Widemann, Nils Rokita"

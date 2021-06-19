@@ -11,7 +11,8 @@ affected_range: "<0.7.8"
 fixed_versions:
 - "0.7.8"
 affected_versions: "All versions before 0.7.8"
-solution: "Upgrade to latest version."
+not_impacted: "All versions starting from 0.7.8"
+solution: "Upgrade to version 0.7.8 or above."
 urls:
 - "https://github.com/rubysec/ruby-advisory-db/blob/master/gems/curb/OSVDB-114600.yml"
 uuid: "7ff556ca-6e7b-423e-b548-2f5afe23a157"

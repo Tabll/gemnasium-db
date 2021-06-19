@@ -13,7 +13,8 @@ affected_range: "<1.14.4"
 fixed_versions:
 - "1.14.4"
 affected_versions: "All versions before 1.14.4"
-solution: "Upgrade to latest version."
+not_impacted: "All versions starting from 1.14.4"
+solution: "Upgrade to version 1.14.4 or above."
 urls:
 - "https://simplesamlphp.org/security/201606-01"
 credit: "John Page (hyp3rlinx)"

@@ -16,7 +16,9 @@ fixed_versions:
 - "3.4.1"
 affected_versions: "All versions starting from 3.3.0-alpha0 before 3.3.3, all versions
   starting from 3.4.0-alpha0 before 3.4.1"
-solution: "Upgrade to latest version."
+not_impacted: "All versions before 3.3.0-alpha0, all versions starting from 3.3.3-stable
+  before 3.4.0-alpha0, all versions starting from 3.4.1-stable"
+solution: "Upgrade to versions 3.3.3, 3.4.1 or above."
 urls:
 - "https://www.silverstripe.org/download/security-releases/ss-2016-007/"
 credit: "Matthew Daley"

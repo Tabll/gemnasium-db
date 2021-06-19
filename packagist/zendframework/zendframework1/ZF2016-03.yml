@@ -10,7 +10,8 @@ affected_range: "<1.12.20"
 fixed_versions:
 - "1.12.20"
 affected_versions: "All versions before 1.12.20"
-solution: "Upgrade to latest version."
+not_impacted: "All versions starting from 1.12.20"
+solution: "Upgrade to version 1.12.20 or above."
 urls:
 - "https://framework.zend.com/security/advisory/ZF2016-03"
 credit: "Hiroshi Tokumaru (HASH Consulting Corp.), Masanobu Katagi (Japan Computer

@@ -12,7 +12,8 @@ affected_range: "<=0.8.1"
 fixed_versions:
 - "0.9.0"
 affected_versions: "All versions up to 0.8.1"
-solution: "Upgrade to latest version."
+not_impacted: "All versions after 0.8.1"
+solution: "Upgrade to version 0.9.0 or above."
 urls:
 - "https://github.com/libp2p/js-libp2p-secio/pull/95"
 - "https://nodesecurity.io/advisories/558"

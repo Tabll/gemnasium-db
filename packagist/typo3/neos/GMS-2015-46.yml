@@ -15,8 +15,9 @@ fixed_versions:
 - "2.0.4"
 affected_versions: "All versions starting from 2.0.0alpha before 2.0.4, all versions
   starting from 1.2.0alpha before 1.2.13"
-not_impacted: "1.0.x and 1.1.x"
-solution: "Upgrade to latest version."
+not_impacted: "All versions before 2.0.0alpha, all versions starting from 2.0.4, all
+  versions before 1.2.0alpha, all versions starting from 1.2.13"
+solution: "Upgrade to versions 1.2.13, 2.0.4 or above."
 urls:
 - "https://www.neos.io/news/neos-sa-2015-002.html"
 credit: "Mickael Dorigny (Synetis)"

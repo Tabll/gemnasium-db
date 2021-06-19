@@ -2,17 +2,18 @@
 identifier: "GMS-2016-40"
 package_slug: "npm/hapi"
 title: "Invalid input to route validation rules"
-description: "hapi does not validate empty parameters, which could result in invalid input
-  bypassing the route validation rules. For example, in the routing scheme
-  `/api/{param}/{param2}/details`, a request made to `/api///` would match
-  incorrectly."
+description: "hapi does not validate empty parameters, which could result in invalid
+  input bypassing the route validation rules. For example, in the routing scheme 
+  `/api/{param}/{param2}/details`,
+  a request made to `/api///` would match incorrectly."
 date: "2016-07-05"
 pubdate: "2016-07-05"
 affected_range: ">=8.0.0-rc4 <13.4.2"
 fixed_versions:
 - "13.4.2"
 affected_versions: "All versions starting from 8.0.0-rc4 before 13.4.2"
-solution: "Upgrade to latest version."
+not_impacted: "All versions before 8.0.0-rc4, all versions starting from 13.4.2"
+solution: "Upgrade to version 13.4.2 or above."
 urls:
 - "https://github.com/hapijs/hapi/issues/3228"
 - "https://nodesecurity.io/advisories/121"

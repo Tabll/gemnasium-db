@@ -12,7 +12,8 @@ affected_range: "<2.4.11"
 fixed_versions:
 - "2.4.11"
 affected_versions: "All versions before 2.4.11"
-solution: "Upgrade to latest version"
+not_impacted: "All versions starting from 2.4.11"
+solution: "Upgrade to version 2.4.11 or above."
 urls:
 - "https://framework.zend.com/security/advisory/ZF2016-04"
 credit: "Dawid Golunski, Enrico Zimuel"

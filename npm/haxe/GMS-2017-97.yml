@@ -12,7 +12,8 @@ affected_range: "<5.0.2"
 fixed_versions:
 - "5.0.2"
 affected_versions: "All versions before 5.0.2"
-solution: "Upgrade to latest version."
+not_impacted: "All versions starting from 5.0.2"
+solution: "Upgrade to version 5.0.2 or above."
 urls:
 - "https://github.com/HaxeFoundation/npm-haxe/commit/a43b9c8d3e1532a40ad6064d1c723eda98e6df2e"
 - "https://nodesecurity.io/advisories/177"

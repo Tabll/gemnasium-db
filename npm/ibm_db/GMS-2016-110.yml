@@ -12,7 +12,8 @@ affected_range: "<1.0.2"
 fixed_versions:
 - "1.0.2"
 affected_versions: "All versions before 1.0.2"
-solution: "Upgrade to latest version. "
+not_impacted: "All versions starting from 1.0.2"
+solution: "Upgrade to version 1.0.2 or above."
 urls:
 - "https://nodesecurity.io/advisories/163"
 credit: "Adam Baldwin"

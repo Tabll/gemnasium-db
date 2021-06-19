@@ -10,7 +10,8 @@ affected_range: "<=2.0.0-alpha7"
 fixed_versions:
 - "2.0.0-alpha8"
 affected_versions: "All versions up to 2.0.0-alpha7"
-solution: "Upgrade to latest version."
+not_impacted: "All versions after 2.0.0-alpha7"
+solution: "Upgrade to version 2.0.0-alpha8 or above."
 urls:
 - "https://github.com/felixge/node-mysql/issues/342"
 - "https://nodesecurity.io/advisories/66"

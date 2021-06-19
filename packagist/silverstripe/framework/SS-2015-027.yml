@@ -2,17 +2,18 @@
 identifier: "SS-2015-027"
 package_slug: "packagist/silverstripe/framework"
 title: "Insufficient sanitization in \"Add from URL\""
-description: "\"Add from URL\" doesn't clearly sanitize URL server side in
-  `HtmlEditorField_Toolbar`.  The current logic will pass this through to
-  Oembed, which will probably reject most dangerous URLs, but it's possible
-  future changes would break this."
+description: "\"Add from URL\" does not clearly sanitize URL server side in 
+  `HtmlEditorField_Toolbar`.
+  The current logic will pass this through to Oembed, which will probably reject most
+  dangerous URLs, but it's possible future changes would break this."
 date: "2015-11-16"
 pubdate: "2015-11-16"
 affected_range: "<3.2.1-stable"
 fixed_versions:
 - "3.2.1"
 affected_versions: "All versions before 3.2.1"
-solution: "Upgrade to latest version."
+not_impacted: "All versions starting from 3.2.1-stable"
+solution: "Upgrade to version 3.2.1 or above."
 urls:
 - "http://www.silverstripe.org/download/security-releases/ss-2015-027/"
 uuid: "ff980589-d6ac-44c5-b9a8-9d6c47bcd589"

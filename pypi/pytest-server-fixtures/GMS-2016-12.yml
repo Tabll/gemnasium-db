@@ -10,7 +10,8 @@ affected_range: "<1.1.0"
 fixed_versions:
 - "1.1.0"
 affected_versions: "All versions before 1.1.0"
-solution: "Upgrade to latest version."
+not_impacted: "All versions starting from 1.1.0"
+solution: "Upgrade to version 1.1.0 or above."
 urls:
 - "https://github.com/manahl/pytest-plugins/blob/master/CHANGES.md#110-2016-2-15"
 - "https://github.com/manahl/pytest-plugins/commit/ea6072a461edde63c07f7b7f4a4daffdc09fb116"

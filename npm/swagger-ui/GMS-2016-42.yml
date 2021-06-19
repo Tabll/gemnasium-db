@@ -12,8 +12,8 @@ affected_range: "<2.1.5-M1 >=2.1.4-M1"
 fixed_versions:
 - "2.1.5"
 affected_versions: "All versions starting from 2.1.4-m1 before 2.1.5-m1"
-not_impacted: "2.1.3 and earlier"
-solution: "Upgrade to latest version."
+not_impacted: "All versions before 2.1.4-m1, all versions starting from 2.1.5-m1"
+solution: "Upgrade to version 2.1.5 or above."
 urls:
 - "https://github.com/swagger-api/swagger-ui/issues/1866"
 - "https://github.com/swagger-api/swagger-ui/pull/1867"

@@ -12,7 +12,8 @@ affected_range: "<1.1.0"
 fixed_versions:
 - "1.1.0"
 affected_versions: "All versions before 1.1.0"
-solution: "Upgrade to latest version."
+not_impacted: "All versions starting from 1.1.0"
+solution: "Upgrade to version 1.1.0 or above."
 urls:
 - "https://github.com/rubysec/ruby-advisory-db/blob/master/gems/json/OSVDB-101157.yml"
 uuid: "3cb112f9-bfd2-40fa-be1d-7505a5634860"

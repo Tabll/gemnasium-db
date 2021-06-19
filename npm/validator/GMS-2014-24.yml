@@ -10,7 +10,8 @@ affected_range: "<3.22.1"
 fixed_versions:
 - "3.22.1"
 affected_versions: "All versions before 3.22.1"
-solution: "Upgrade to latest version."
+not_impacted: "All versions starting from 3.22.1"
+solution: "Upgrade to version 3.22.1 or above."
 urls:
 - "https://github.com/chriso/validator.js/issues/152#issuecomment-48107184"
 - "https://nodesecurity.io/advisories/validator-isurl-denial-of-service"

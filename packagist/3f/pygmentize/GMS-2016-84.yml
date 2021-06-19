@@ -10,7 +10,8 @@ affected_range: "<1.2"
 fixed_versions:
 - "1.2"
 affected_versions: "All versions before 1.2"
-solution: "Upgrade to latest version."
+not_impacted: "All versions starting from 1.2"
+solution: "Upgrade to version 1.2 or above."
 urls:
 - "https://github.com/dedalozzo/pygmentize/issues/1"
 - "https://github.com/dedalozzo/pygmentize/pull/3"

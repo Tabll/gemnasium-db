@@ -10,7 +10,8 @@ affected_range: ">=3.0.0a1,<3.0.1"
 fixed_versions:
 - "3.0.1"
 affected_versions: "All versions starting from 3.0.0a1 before 3.0.1"
-solution: "Upgrade to latest version."
+not_impacted: "All versions before 3.0.0a1, all versions starting from 3.0.1"
+solution: "Upgrade to version 3.0.1 or above."
 urls:
 - "https://github.com/squizlabs/PHP_CodeSniffer/commit/7ce7bb942f5667724e81a3ea99e805a30be6c05b"
 - "https://github.com/squizlabs/PHP_CodeSniffer/releases/tag/3.0.1"

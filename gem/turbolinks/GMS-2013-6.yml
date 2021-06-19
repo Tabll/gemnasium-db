@@ -10,7 +10,8 @@ affected_range: "<5.0.0.beta1"
 fixed_versions:
 - "5.0.0.beta1"
 affected_versions: "All versions before 5.0.0.beta1"
-solution: "Upgrade to latest version."
+not_impacted: "All versions starting from 5.0.0.beta1"
+solution: "Upgrade to version 5.0.0.beta1 or above."
 urls:
 - "https://github.com/turbolinks/turbolinks-classic/commit/fff70bd9371bf9d700ff40463eb03f1a2b8ec3ab"
 - "https://github.com/turbolinks/turbolinks-classic/issues/195"

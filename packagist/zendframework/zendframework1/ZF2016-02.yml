@@ -10,7 +10,8 @@ affected_range: "<1.12.19"
 fixed_versions:
 - "1.12.19"
 affected_versions: "All versions before 1.12.19"
-solution: "Upgrade to latest version."
+not_impacted: "All versions starting from 1.12.19"
+solution: "Upgrade to version 1.12.19 or above."
 urls:
 - "https://framework.zend.com/security/advisory/ZF2016-02"
 - "https://github.com/zendframework/zf1/commit/bf3f40605be3d8f136a07ae991079a7dcb34d967"

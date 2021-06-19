@@ -9,7 +9,8 @@ affected_range: "<1.0.1"
 fixed_versions:
 - "v1.0.1"
 affected_versions: "All versions before 1.0.1"
-solution: "Upgrade to latest version."
+not_impacted: "All versions starting from 1.0.1"
+solution: "Upgrade to version v1.0.1 or above."
 urls:
 - "https://github.com/amphp/http/pull/4"
 credit: "Niklas Keller"

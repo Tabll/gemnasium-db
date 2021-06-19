@@ -13,7 +13,8 @@ affected_range: "<4.3.1"
 fixed_versions:
 - "4.3.1"
 affected_versions: "All versions before 4.3.1"
-solution: "Upgrade to latest version or use workaround; see provided link."
+not_impacted: "All versions starting from 4.3.1"
+solution: "Upgrade to version 4.3.1 or above."
 urls:
 - "https://github.com/kickstarter/rack-attack/releases/tag/v4.3.1"
 credit: "Andres Riancho from Include Security"

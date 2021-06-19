@@ -3,8 +3,8 @@ identifier: "GMS-2017-248"
 package_slug: "npm/debug"
 title: "Regular Expression Denial of Service"
 description: "The debug module is vulnerable to regular expression denial of service
-  when untrusted user input is passed into the `o` formatter. It takes around 50k
-  characters to block for 2 seconds making this a low severity issue."
+  when untrusted user input is passed into the `o` formatter. It takes around k characters
+  to block for 2 seconds making this a low severity issue."
 date: "2017-09-27"
 pubdate: "2017-09-27"
 affected_range: "<2.6.9 || >= 3.0.0 <3.1.0"
@@ -13,7 +13,9 @@ fixed_versions:
 - "3.1.0"
 affected_versions: "All versions before 2.6.9, all versions starting from 3.0.0 before
   3.1.0"
-solution: "Upgrade to latest versions."
+not_impacted: "All versions starting from 2.6.9 before 3.0.0, all versions starting
+  from 3.1.0"
+solution: "Upgrade to versions 2.6.9, 3.1.0 or above."
 urls:
 - "https://github.com/visionmedia/debug/issues/501"
 - "https://github.com/visionmedia/debug/pull/504"

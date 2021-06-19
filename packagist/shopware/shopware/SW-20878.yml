@@ -10,7 +10,8 @@ affected_range: ">=5.2.0-alpha0,<=5.3.6"
 fixed_versions:
 - "v5.3.7"
 affected_versions: "All versions starting from 5.2.0-alpha0 up to 5.3.6"
-solution: "Upgrade to latest version."
+not_impacted: "All versions before 5.2.0-alpha0, all versions after 5.3.6"
+solution: "Upgrade to version v5.3.7 or above."
 urls:
 - "http://en.community.shopware.com/_detail_2048.html"
 uuid: "1d64e4f0-bcca-4cb4-8844-c4427dd0ea7b"

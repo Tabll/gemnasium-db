@@ -12,7 +12,9 @@ fixed_versions:
 - "1.6.7.rc4"
 affected_versions: "All versions before 1.6.6.4, all versions starting from 1.6.7.rc1
   before 1.6.7.rc4"
-solution: "Upgrade to latest version."
+not_impacted: "All versions starting from 1.6.6.4 before 1.6.7.rc1, all versions starting
+  from 1.6.7.rc4"
+solution: "Upgrade to versions 1.6.6.4, 1.6.7.rc4 or above."
 urls:
 - "https://github.com/sparklemotion/nokogiri/blob/master/CHANGELOG.rdoc#167rc4--2015-11-22"
 - "https://github.com/sparklemotion/nokogiri/blob/v1.6.6.x/CHANGELOG.rdoc#1664--2015-11-19"

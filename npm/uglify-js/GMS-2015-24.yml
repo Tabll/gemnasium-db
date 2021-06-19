@@ -12,7 +12,8 @@ affected_range: "<2.4.24"
 fixed_versions:
 - "2.4.24"
 affected_versions: "All versions before 2.4.24"
-solution: "Upgrade to latest version."
+not_impacted: "All versions starting from 2.4.24"
+solution: "Upgrade to version 2.4.24 or above."
 urls:
 - "https://github.com/mishoo/UglifyJS2/issues/751"
 - "https://nodesecurity.io/advisories/uglifyjs_incorrectly_handles_non-boolean_comparisons"

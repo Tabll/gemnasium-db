@@ -11,8 +11,9 @@ fixed_versions:
 - "8.6.1"
 affected_versions: "All versions starting from 7.6.0 before 7.6.16, all versions starting
   from 8.0.0 before 8.6.1"
-not_impacted: "7.5.x and earlier"
-solution: "Upgrade to latest version"
+not_impacted: "All versions before 7.6.0, all versions starting from 7.6.16 before
+  8.0.0, all versions starting from 8.6.1"
+solution: "Upgrade to versions 7.6.16, 8.6.1 or above."
 urls:
 - "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2017-003/"
 uuid: "8ce8c591-2cce-4dca-8988-d542b0257eaa"

@@ -9,8 +9,8 @@ affected_range: "<2.0.0-alpha8"
 fixed_versions:
 - "2.0.0-alpha8"
 affected_versions: "All versions before 2.0.0-alpha8"
-not_impacted: "Drivers other than MySQL"
-solution: "Upgrade to latest version."
+not_impacted: "All versions starting from 2.0.0-alpha8"
+solution: "Upgrade to version 2.0.0-alpha8 or above."
 urls:
 - "https://github.com/propelorm/Propel2/commit/4c309e3e5adaba077f54c0fab93c34995d7c9b3d"
 - "https://github.com/propelorm/Propel2/issues/1463"

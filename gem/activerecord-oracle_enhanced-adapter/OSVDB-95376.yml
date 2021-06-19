@@ -12,7 +12,8 @@ affected_range: "<1.1.8"
 fixed_versions:
 - "1.1.8"
 affected_versions: "All versions before 1.1.8"
-solution: "Upgrade to latest version."
+not_impacted: "All versions starting from 1.1.8"
+solution: "Upgrade to version 1.1.8 or above."
 urls:
 - "https://github.com/rsim/oracle-enhanced/commit/414b582d1afc4b2626ef7bf57e0987a00d433374"
 - "https://github.com/rubysec/ruby-advisory-db/blob/master/gems/activerecord-oracle_enhanced-adapter/OSVDB-95376.yml"

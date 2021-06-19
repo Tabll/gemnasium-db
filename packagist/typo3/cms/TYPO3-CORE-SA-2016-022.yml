@@ -19,7 +19,9 @@ fixed_versions:
 - "8.3.1"
 affected_versions: "All versions before 6.2.27, all versions starting from 7.0.0.alpha
   before 7.6.11, all versions starting from 8.0.0.alpha before 8.3.1"
-solution: "Upgrade to latest version."
+not_impacted: "All versions starting from 6.2.27 before 7.0.0.alpha, all versions
+  starting from 7.6.11 before 8.0.0.alpha, all versions starting from 8.3.1"
+solution: "Upgrade to versions 6.2.27, 7.6.11, 8.3.1 or above."
 urls:
 - "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2016-022"
 credit: "Dmitry Dulepov"

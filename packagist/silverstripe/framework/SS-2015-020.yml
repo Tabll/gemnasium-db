@@ -10,7 +10,8 @@ affected_range: "<3.1.14-stable"
 fixed_versions:
 - "3.1.14"
 affected_versions: "All versions before 3.1.14"
-solution: "Upgrade to latest version."
+not_impacted: "All versions starting from 3.1.14-stable"
+solution: "Upgrade to version 3.1.14 or above."
 urls:
 - "http://www.silverstripe.org/software/download/security-releases/ss-2015-020/"
 credit: "Florian Thoma"

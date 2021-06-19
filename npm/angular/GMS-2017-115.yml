@@ -12,7 +12,8 @@ affected_range: "<1.6.3"
 fixed_versions:
 - "1.6.3"
 affected_versions: "All versions before 1.6.3"
-solution: "Upgrade to latest version."
+not_impacted: "All versions starting from 1.6.3"
+solution: "Upgrade to version 1.6.3 or above."
 urls: []
 credit: "Pete Bacon Darwin"
 uuid: "87437e0e-d971-4476-b5be-0de10f2a561a"

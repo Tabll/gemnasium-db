@@ -10,7 +10,8 @@ affected_range: ">=6.2.0,<6.2.16"
 fixed_versions:
 - "6.2.16"
 affected_versions: "All versions starting from 6.2.0 before 6.2.16"
-solution: "Upgrade to latest version."
+not_impacted: "All versions before 6.2.0, all versions starting from 6.2.16"
+solution: "Upgrade to version 6.2.16 or above."
 urls:
 - "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2015-014/"
 credit: "Heiko Kromm"

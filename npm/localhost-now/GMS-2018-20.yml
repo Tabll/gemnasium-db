@@ -10,7 +10,8 @@ affected_range: "<1.0.2"
 fixed_versions:
 - "1.0.2"
 affected_versions: "All versions before 1.0.2"
-solution: "Upgrade to latest version."
+not_impacted: "All versions starting from 1.0.2"
+solution: "Upgrade to version 1.0.2 or above."
 urls:
 - "https://github.com/DCKT/localhost-now/commit/30b004c7f145d677df8800a106c2edc982313995"
 - "https://hackerone.com/reports/312889"

@@ -9,7 +9,8 @@ affected_range: "<3.4.2"
 fixed_versions:
 - "3.4.2"
 affected_versions: "All versions before 3.4.2"
-solution: " Upgrade to latest version."
+not_impacted: "All versions starting from 3.4.2"
+solution: "Upgrade to version 3.4.2 or above."
 urls:
 - "https://github.com/mperham/sidekiq/pull/2422"
 credit: "Mike Perham"

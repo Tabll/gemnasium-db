@@ -12,7 +12,8 @@ affected_range: "<0.3.3"
 fixed_versions:
 - "0.3.3"
 affected_versions: "All versions before 0.3.3"
-solution: "Upgrade to latest version."
+not_impacted: "All versions starting from 0.3.3"
+solution: "Upgrade to version 0.3.3 or above."
 urls:
 - "http://osvdb.org/show/osvdb/110796"
 - "https://github.com/jamesotron/FlavourSaver/commit/04a8ff444a9a9668a75b01b20b4974d398087a64"

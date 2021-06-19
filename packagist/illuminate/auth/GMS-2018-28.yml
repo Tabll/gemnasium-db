@@ -15,7 +15,9 @@ fixed_versions:
 - "v5.6.15"
 affected_versions: "All versions before 5.5.40, all versions starting from 5.6.0-alpha0
   before 5.6.15"
-solution: "Upgrade to latest version."
+not_impacted: "All versions starting from 5.5.40 before 5.6.0-alpha0, all versions
+  starting from 5.6.15"
+solution: "Upgrade to versions v5.5.40, v5.6.15 or above."
 urls:
 - "https://medium.com/@taylorotwell/laravel-security-release-5-6-15-and-5-5-40-56f1257933a0"
 credit: "Felix Wiedemann"

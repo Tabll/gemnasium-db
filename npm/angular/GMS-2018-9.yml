@@ -10,7 +10,8 @@ affected_range: "<1.6.9"
 fixed_versions:
 - "1.6.9"
 affected_versions: "All versions before 1.6.9"
-solution: "Upgrade to latest version."
+not_impacted: "All versions starting from 1.6.9"
+solution: "Upgrade to version 1.6.9 or above."
 urls:
 - "https://github.com/RetireJS/retire.js/commit/ed3512729af76583b28611a4a1b6a8797d7f074c#diff-8b52b7156debed9dd797400ff51e3e15"
 credit: "Masato Kinugawa"

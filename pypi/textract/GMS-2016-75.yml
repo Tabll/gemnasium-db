@@ -11,7 +11,8 @@ affected_range: "<1.5.0"
 fixed_versions:
 - "1.5.0"
 affected_versions: "All versions before 1.5.0"
-solution: "Upgrade to latest version."
+not_impacted: "All versions starting from 1.5.0"
+solution: "Upgrade to version 1.5.0 or above."
 urls:
 - "http://seclists.org/oss-sec/2016/q4/203"
 - "https://github.com/deanmalmgren/textract/pull/114"

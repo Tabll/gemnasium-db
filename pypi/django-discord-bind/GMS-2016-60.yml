@@ -9,7 +9,8 @@ affected_range: "<0.2.0"
 fixed_versions:
 - "0.2.0"
 affected_versions: "All versions before 0.2.0"
-solution: "Upgrade to latest version."
+not_impacted: "All versions starting from 0.2.0"
+solution: "Upgrade to version 0.2.0 or above."
 urls:
 - "https://github.com/mrogaski/django-discord-bind/commit/b586a9c9c4cad3cf17f46b34e7faa5174ce04fa8"
 credit: "Mark Rogaski"

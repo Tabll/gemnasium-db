@@ -11,7 +11,8 @@ affected_range: "<5.1.3"
 fixed_versions:
 - "5.1.3"
 affected_versions: "All versions before 5.1.3"
-solution: "Upgrade to latest version."
+not_impacted: "All versions starting from 5.1.3"
+solution: "Upgrade to version 5.1.3 or above."
 urls:
 - "https://github.com/feross/bittorrent-dht/issues/87"
 - "https://nodesecurity.io/advisories/68"

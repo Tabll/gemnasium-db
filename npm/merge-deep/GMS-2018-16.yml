@@ -12,7 +12,8 @@ affected_range: "<3.0.1"
 fixed_versions:
 - "3.0.1"
 affected_versions: "All versions before 3.0.1"
-solution: "Upgrade to latest version."
+not_impacted: "All versions starting from 3.0.1"
+solution: "Upgrade to version 3.0.1 or above."
 urls:
 - "https://github.com/jonschlinkert/merge-deep/commit/2c33634da7129a5aefcc262d2fec2e72224404e5"
 - "https://hackerone.com/reports/310708"

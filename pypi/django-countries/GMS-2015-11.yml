@@ -9,7 +9,8 @@ affected_range: "<3.4"
 fixed_versions:
 - "3.4"
 affected_versions: "All versions before 3.4"
-solution: "Upgrade to latest version."
+not_impacted: "All versions starting from 3.4"
+solution: "Upgrade to version 3.4 or above."
 urls:
 - "https://github.com/SmileyChris/django-countries/blob/master/CHANGES.rst#version-34-22-october-2015"
 - "https://github.com/SmileyChris/django-countries/commit/1ed7c6763d890d00f32242202b424709e8668d5a"

@@ -10,7 +10,8 @@ affected_range: "<5.20.11"
 fixed_versions:
 - "v5.20.11"
 affected_versions: "All versions before 5.20.11"
-solution: "Upgrade to latest version."
+not_impacted: "All versions starting from 5.20.11"
+solution: "Upgrade to version v5.20.11 or above."
 urls:
 - "https://github.com/ADOdb/ADOdb/commit/d29c23f2264ec95c6d3851e0f51ce240b2f36b74"
 - "https://github.com/ADOdb/ADOdb/issues/400"

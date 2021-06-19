@@ -13,7 +13,9 @@ fixed_versions:
 - "8.5.2"
 affected_versions: "All versions before 8.4.7, all versions starting from 8.5.0-alpha0
   before 8.5.2"
-solution: "Upgrade to latest version."
+not_impacted: "All versions starting from 8.4.7 before 8.5.0-alpha0, all versions
+  starting from 8.5.2"
+solution: "Upgrade to versions 8.4.7, 8.5.2 or above."
 urls:
 - "https://www.drupal.org/sa-core-2018-003"
 credit: "Kyaw Min Thein"

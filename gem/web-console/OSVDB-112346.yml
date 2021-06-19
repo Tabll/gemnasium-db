@@ -10,7 +10,8 @@ affected_range: "=2.0.0.beta3"
 fixed_versions:
 - "2.0.0.beta4"
 affected_versions: "Version 2.0.0.beta3"
-solution: "Upgrade to latest version."
+not_impacted: "All versions before 2.0.0.beta3, all versions after 2.0.0.beta3"
+solution: "Upgrade to version 2.0.0.beta4 or above."
 urls:
 - "http://weblog.rubyonrails.org/2014/9/29/Rails-4-2-0-beta2-has-been-released/"
 uuid: "ee23b30f-ca1f-4ae1-9329-94fc99bd642b"

@@ -11,7 +11,8 @@ affected_range: "<=1.11.4"
 fixed_versions:
 - "1.12.0"
 affected_versions: "All versions up to 1.11.4"
-solution: "Upgrade to latest version."
+not_impacted: "All versions after 1.11.4"
+solution: "Upgrade to version 1.12.0 or above."
 urls:
 - "https://github.com/jquery/jquery-ui/pull/1622"
 - "https://nodesecurity.io/advisories/127"

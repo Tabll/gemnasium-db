@@ -14,7 +14,9 @@ fixed_versions:
 - "2.7.2"
 affected_versions: "All versions before 2.4.11, all versions starting from 2.5.0 before
   2.7.2"
-solution: "Upgrade to latest version"
+not_impacted: "All versions starting from 2.4.11 before 2.5.0, all versions starting
+  from 2.7.2"
+solution: "Upgrade to versions 2.4.11, 2.7.2 or above."
 urls:
 - "https://framework.zend.com/security/advisory/ZF2016-04"
 credit: "Dawid Golunski, Enrico Zimuel"

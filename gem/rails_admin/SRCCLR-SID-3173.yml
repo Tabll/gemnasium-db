@@ -11,8 +11,8 @@ fixed_versions:
 - "1.1.1"
 - "1.2.0"
 affected_versions: "All versions starting from 1.0.0-alpha0 before 1.1.1"
-not_impacted: "0.x"
-solution: "Upgrade to latest version."
+not_impacted: "All versions before 1.0.0-alpha0, all versions starting from 1.1.1"
+solution: "Upgrade to versions 1.1.1, 1.2.0 or above."
 urls:
 - "https://github.com/sferik/rails_admin/commit/b13e879eb93b661204e9fb5e55f7afa4f397537a"
 - "https://www.sourceclear.com/registry/security/cross-site-request-forgery-csrf-/ruby/sid-3173"

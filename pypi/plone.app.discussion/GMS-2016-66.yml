@@ -9,7 +9,8 @@ affected_range: "<2.4.18"
 fixed_versions:
 - "2.4.18"
 affected_versions: "All versions before 2.4.18"
-solution: "Upgrade to latest version."
+not_impacted: "All versions starting from 2.4.18"
+solution: "Upgrade to version 2.4.18 or above."
 urls:
 - "https://github.com/plone/plone.app.discussion/commit/358ec89c03c3068993a1b73499d2e59f9d977088"
 - "https://github.com/plone/plone.app.discussion/pull/112"

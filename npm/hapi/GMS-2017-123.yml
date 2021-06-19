@@ -11,8 +11,8 @@ affected_range: ">=15.0.0 <16.1.1"
 fixed_versions:
 - "16.1.1"
 affected_versions: "All versions starting from 15.0.0 before 16.1.1"
-not_impacted: "14.x and earlier"
-solution: "Upgrade to latest version."
+not_impacted: "All versions before 15.0.0, all versions starting from 16.1.1"
+solution: "Upgrade to version 16.1.1 or above."
 urls:
 - "https://github.com/hapijs/hapi/issues/3466"
 - "https://nodesecurity.io/advisories/335"

@@ -10,7 +10,8 @@ affected_range: "<1.0.0"
 fixed_versions:
 - "1.0.0"
 affected_versions: "All versions before 1.0.0"
-solution: "Upgrade to latest version."
+not_impacted: "All versions starting from 1.0.0"
+solution: "Upgrade to version 1.0.0 or above."
 urls:
 - "https://github.com/onelogin/ruby-saml/commit/9853651b96b99653ea8627d757d46bfe62ab6448"
 uuid: "5425926c-6c44-4fa1-89e1-3a0a1c956648"

@@ -14,7 +14,8 @@ affected_range: "<3.7.0"
 fixed_versions:
 - "3.7.0"
 affected_versions: "All versions before 3.7.0"
-solution: "Upgrade to latest version."
+not_impacted: "All versions starting from 3.7.0"
+solution: "Upgrade to version 3.7.0 or above."
 urls:
 - "https://github.com/visionmedia/superagent/commit/946e28dab08f2ab334753bf36a2fbc5110d17789"
 - "https://github.com/visionmedia/superagent/issues/1259"

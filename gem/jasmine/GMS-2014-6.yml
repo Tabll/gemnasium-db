@@ -13,7 +13,8 @@ affected_range: ">=2.0.0.rc3 <2.0.2"
 fixed_versions:
 - "2.0.2"
 affected_versions: "All versions starting from 2.0.0.rc3 before 2.0.2"
-solution: "Upgrade to latest version."
+not_impacted: "All versions before 2.0.0.rc3, all versions starting from 2.0.2"
+solution: "Upgrade to version 2.0.2 or above."
 urls:
 - "https://github.com/jasmine/jasmine-gem/commit/e2105b71aee65386d0d083e4b64c49892d0d6caa"
 - "https://github.com/jasmine/jasmine-gem/pull/213"

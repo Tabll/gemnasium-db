@@ -3,15 +3,17 @@ identifier: "GMS-2017-246"
 package_slug: "npm/method-override"
 title: "Regular Expression Denial of Service"
 description: "method-override is vulnerable to a regular expression denial of service
-  vulnerability when specially crafted input is passed in to be parsed via the
-  `X-HTTP-Method-Override` header."
+  vulnerability when specially crafted input is passed in to be parsed via the 
+  `X-HTTP-Method-Override`
+  header."
 date: "2017-09-27"
 pubdate: "2017-09-27"
 affected_range: "<=1.0.2||<2.3.10"
 fixed_versions:
 - "2.3.10"
 affected_versions: "All versions up to 1.0.2, all versions before 2.3.10"
-solution: "Upgrade to latest version."
+not_impacted: "All versions after 1.0.2 before 2.3.10"
+solution: "Upgrade to version 2.3.10 or above."
 urls:
 - "https://nodesecurity.io/advisories/538"
 credit: "Doug Wilson"

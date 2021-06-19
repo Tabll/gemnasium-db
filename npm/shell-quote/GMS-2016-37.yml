@@ -2,7 +2,7 @@
 identifier: "GMS-2016-37"
 package_slug: "npm/shell-quote"
 title: "Potential Command Injection"
-description: "The module doesn't properly escape \">\" and \"<\" operator used for
+description: "The module does not properly escape \">\" and \"<\" operator used for
   redirection in shell. Application escaping command-line args with this module might
   be vulnerable from malicious user input."
 date: "2016-06-21"
@@ -11,7 +11,8 @@ affected_range: "<=1.6.0"
 fixed_versions:
 - "1.6.1"
 affected_versions: "All versions up to 1.6.0"
-solution: "Upgrade to latest version."
+not_impacted: "All versions after 1.6.0"
+solution: "Upgrade to version 1.6.1 or above."
 urls:
 - "https://github.com/substack/node-shell-quote/commit/70e9eb2a854eb56a3dfa255be12610a722bbe080"
 - "https://github.com/substack/node-shell-quote/commit/ace52f4c8717b370b301a3db3a4727db26e309ad"
