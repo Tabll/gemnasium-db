@@ -9,9 +9,7 @@ following the [contribution guidelines](CONTRIBUTING.md).
 
 ## Tracking process and schedule
 
-Currently GitLab's Vulnerability Research group checks these sources twice a week:
-
-- [NVD JSON feeds](https://nvd.nist.gov/vuln/data-feeds)
+- [NVD JSON feeds](https://nvd.nist.gov/vuln/data-feeds) (daily)
 - [FriendsOfPHP security advisories](https://github.com/FriendsOfPHP/security-advisories)
 - [Victims CVE DB](https://github.com/victims/victims-cve-db)
 - [oss-security mailing list](http://www.openwall.com/lists/oss-security/)
