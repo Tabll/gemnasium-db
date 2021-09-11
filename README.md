@@ -31,8 +31,10 @@ Please review the [contribution guidelines](CONTRIBUTING.md).
 We would like to thank the following authors very much for their valuable
 contributions.
 
-| Author       | MRs            |
+| Author       | MRs/Issues     |
 | ------------ | -------------- |
+| @thklein     | #167           |
+| @AB-xdev     | #166           |
 | @brondsem    | !1500, !1501   |
 | @mrtux       | !1611, !1613   |
 | @rusher1     | !2246          | 
