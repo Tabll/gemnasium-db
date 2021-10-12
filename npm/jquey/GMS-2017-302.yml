@@ -17,3 +17,6 @@ urls:
 - "https://nodesecurity.io/advisories/544"
 credit: "Aurélio A. Heckert"
 uuid: "c61a930a-1cd1-4206-bf59-7971749a8b49"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

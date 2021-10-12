@@ -14,3 +14,6 @@ solution: "Upgrade to version 4.0.0."
 urls:
 - "https://github.com/dominictarr/event-stream/issues/116"
 uuid: "a2353474-d999-4237-8c7a-097ac6b5cf02"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

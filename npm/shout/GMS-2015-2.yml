@@ -16,3 +16,6 @@ urls:
 - "https://nodesecurity.io/advisories/322"
 credit: "pangeacake"
 uuid: "4cf708e0-a420-4f87-af51-18dc5efafe3c"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

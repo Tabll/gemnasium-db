@@ -17,3 +17,6 @@ urls:
 - "https://github.com/dedalozzo/pygmentize/pull/3"
 credit: "Micheal Cottingham"
 uuid: "2a73a435-951f-4207-b779-a6b49b8fa0a0"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

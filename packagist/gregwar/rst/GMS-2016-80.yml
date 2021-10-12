@@ -19,3 +19,6 @@ urls:
 - "https://twitter.com/CiPHPerCoder/status/793076643468304384"
 credit: "hextitan"
 uuid: "4c63982c-f8bb-482b-8ccd-e25b1edbc38b"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

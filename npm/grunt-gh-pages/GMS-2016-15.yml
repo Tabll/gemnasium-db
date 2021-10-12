@@ -19,3 +19,6 @@ urls:
 - "https://nodesecurity.io/advisories/85"
 credit: "Stephan Bönnemann"
 uuid: "4ec8438c-833a-4725-85fc-abc143ad893c"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

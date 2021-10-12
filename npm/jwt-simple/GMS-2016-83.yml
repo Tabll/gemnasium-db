@@ -21,3 +21,6 @@ urls:
 - "https://nodesecurity.io/advisories/87"
 credit: "Theofanis Katsimpas"
 uuid: "cf1ad89c-9436-46cf-9ff9-f7fb411e2328"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

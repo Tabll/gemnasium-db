@@ -16,3 +16,6 @@ urls:
 - "https://nodesecurity.io/advisories/137"
 credit: "mehmetaydogdu"
 uuid: "7456e0f8-286e-4a69-9586-d3cc2fc4ea27"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

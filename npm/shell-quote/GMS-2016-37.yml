@@ -19,3 +19,6 @@ urls:
 - "https://nodesecurity.io/advisories/117"
 credit: "Koki Takahashi, Node Security Team"
 uuid: "37e74eca-3ebe-48f7-bc02-78e1d08764fd"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

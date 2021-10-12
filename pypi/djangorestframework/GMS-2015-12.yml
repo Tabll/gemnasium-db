@@ -20,3 +20,6 @@ urls:
 - "https://github.com/encode/django-rest-framework/commit/7872d0acbffeea5f4420aae5627f8767c6418ba3"
 credit: "Tom Christie"
 uuid: "c6c37dcc-ed7b-444f-8699-ad74b7da42f9"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

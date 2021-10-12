@@ -1,11 +1,11 @@
-# This advisory is derived from
+# This advisory is derived from##
 # https://github.com/FriendsOfPHP/security-advisories
 ---
 identifier: "ZF2014-01"
 package_slug: "packagist/zendframework/zendframework"
 title: "Improper Restriction of XML External Entity Reference"
-description: "Potential XXE/XEE attacks using PHP functions: `simplexml load *`,
-  `DOMDocument::loadXML`, and `xml parse`."
+description: "Potential XXE/XEE attacks using PHP functions: `simplexml load *`, `DOMDocument::loadXML`,
+  and `xml parse`."
 date: "2014-02-26"
 pubdate: "2014-02-26"
 affected_range: ">=2.1.0,<2.1.6||>=2.2.0,<2.2.6"

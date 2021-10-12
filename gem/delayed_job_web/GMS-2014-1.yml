@@ -17,3 +17,6 @@ urls:
 - "https://github.com/ejschmitt/delayed_job_web/pull/55"
 credit: "Tim Lucas"
 uuid: "b9eeae7b-088f-4f30-b8a2-ca6908d4869a"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

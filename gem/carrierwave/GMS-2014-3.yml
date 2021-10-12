@@ -17,3 +17,6 @@ urls:
 - "https://github.com/carrierwaveuploader/carrierwave/pull/1361"
 credit: "Manuel Pradal"
 uuid: "7193f2e4-6708-41c2-9f4f-849fd5cfdf6e"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

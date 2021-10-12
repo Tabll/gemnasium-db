@@ -20,3 +20,6 @@ urls:
 - "https://www.owasp.org/index.php/Regular_expression_Denial_of_Service_-_ReDoS"
 credit: "Adam Baldwin"
 uuid: "d7d1e911-ff3f-4fd1-ba85-6241945ab2ef"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

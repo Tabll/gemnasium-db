@@ -16,3 +16,6 @@ urls:
 - "https://fuelphp.com/security-advisories"
 credit: "Felix Widemann, Nils Rokita"
 uuid: "b33a0533-ef60-48b4-8096-1b281bd97c09"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

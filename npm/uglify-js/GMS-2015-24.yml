@@ -20,3 +20,6 @@ urls:
 - "https://zyan.scripts.mit.edu/blog/backdooring-js/"
 credit: "Yan Zhu, Tom MacWright (uglify-js)"
 uuid: "f52aa9e4-a3b1-4b29-99f8-eb7c1d2181e6"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

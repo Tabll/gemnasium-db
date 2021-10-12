@@ -1,5 +1,3 @@
-# This advisory is derived from
-# https://github.com/FriendsOfPHP/security-advisories
 ---
 identifier: "2019-03-20"
 package_slug: "packagist/drupal/core"
@@ -18,3 +16,6 @@ solution: "Upgrade to version 8.6.12 or above."
 urls:
 - "https://www.drupal.org/sa-core-2019-004"
 uuid: "56778bfb-0b4d-4f5d-853d-83520bfd916d"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

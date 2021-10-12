@@ -17,3 +17,6 @@ urls:
 - "https://github.com/paragonie/random_compat/issues/5"
 credit: "Mason Malone"
 uuid: "e4f625e6-acbc-43fa-88bf-faa8a1d77859"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

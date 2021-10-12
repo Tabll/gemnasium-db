@@ -19,3 +19,6 @@ urls:
 - "https://nodesecurity.io/advisories/360"
 credit: "micaksica"
 uuid: "bfd17511-3ab4-4a1f-a82b-e4dc3b5374e6"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

@@ -25,3 +25,6 @@ urls:
 credit: "Peter van der Zee"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
 uuid: "cd6cfe67-4650-49c6-a10a-ee4195a573fa"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

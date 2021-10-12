@@ -8,8 +8,7 @@ description: "GridField does not have sufficient CSRF protection, meaning that i
   is used for management of groups, users and permissions in the CMS."
 date: "2016-02-24"
 pubdate: "2016-02-24"
-affected_range: ">=3.1.0-alpha,<3.1.17-stable||>=3.2.0-alpha,<3.2.2-stable
-  ||>=3.3.0-alpha,<3.3.0-stable"
+affected_range: ">=3.1.0-alpha,<3.1.17-stable||>=3.2.0-alpha,<3.2.2-stable ||>=3.3.0-alpha,<3.3.0-stable"
 fixed_versions:
 - "3.1.17"
 - "3.2.2"
@@ -25,3 +24,6 @@ urls:
 - "http://www.silverstripe.org/download/security-releases/ss-2016-002/"
 credit: "Ashraf Alharbi from Security-Assessment.com"
 uuid: "3d4eab5e-b688-4c43-9b27-5aae03fd248d"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

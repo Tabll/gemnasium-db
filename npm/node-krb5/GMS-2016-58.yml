@@ -19,3 +19,6 @@ urls:
 - "https://www.npmjs.com/package/kerberos"
 credit: "Richard Silverman"
 uuid: "27907061-c288-4c2a-8580-70b00d0691eb"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

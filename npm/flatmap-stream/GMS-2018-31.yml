@@ -13,3 +13,6 @@ solution: "Avoid installing this package or remove it."
 urls:
 - "https://github.com/dominictarr/event-stream/issues/116"
 uuid: "d05b94a0-758c-4f90-9a8d-d1c5e184afa2"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

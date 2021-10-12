@@ -3,8 +3,8 @@ identifier: "GMS-2014-4"
 package_slug: "npm/sauce-connect-launcher"
 title: "Heartbleed Vulnerability"
 description: "Sauce Connect is vulnerable to the HeartBleed bug (CVE-2014-0160). A
-  new version 4.1 has been release to fix the bug. The package sauce-connect-launcher
-  (up to 0.3.3 included) is downloading vulnerable version of Sauce Connect."
+  new has been release to fix the bug. The package sauce-connect-launcher (up to included)
+  is downloading vulnerable version of Sauce Connect."
 date: "2014-04-11"
 pubdate: "2014-04-11"
 affected_range: "<=0.3.3"
@@ -16,3 +16,6 @@ solution: "Upgrade to latest."
 urls:
 - "https://github.com/bermi/sauce-connect-launcher/issues/22"
 uuid: "212781fa-b521-4e8d-9e4e-9a6197c92707"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

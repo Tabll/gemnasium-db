@@ -23,3 +23,6 @@ urls:
 - "http://www.silverstripe.org/software/download/security-releases/ss-2015-017/"
 credit: "Michael Strong"
 uuid: "5b2d957a-a663-4ab1-97c4-61b95850228c"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

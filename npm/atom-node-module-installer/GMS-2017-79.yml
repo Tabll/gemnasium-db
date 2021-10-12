@@ -17,3 +17,6 @@ urls:
 - "https://nodesecurity.io/advisories/216"
 credit: "Adam Baldwin"
 uuid: "cf87cde9-6904-4dfa-a41d-febd87ce388b"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

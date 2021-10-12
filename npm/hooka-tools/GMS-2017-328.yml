@@ -14,3 +14,6 @@ solution: "Do not install / use this module. It has been unpublished from the re
 urls:
 - "https://nodesecurity.io/advisories/549"
 uuid: "b4abfeaf-df82-44c6-b3ac-87dd158ef919"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

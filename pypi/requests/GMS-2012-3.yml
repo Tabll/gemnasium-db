@@ -18,3 +18,6 @@ urls:
 - "https://github.com/requests/requests/pull/547/commits/c3e6c41fc164d4348f8ce197bd0075aff05637af"
 credit: "Mads Holden"
 uuid: "910856d8-23de-4b85-bd7a-406ce2805b8e"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

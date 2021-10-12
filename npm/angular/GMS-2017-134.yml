@@ -17,3 +17,6 @@ urls:
 - "https://github.com/angular/angular.js/commit/8f31f1ff43b673a24f84422d5c13d6312b2c4d94"
 credit: "https://github.com/cure53"
 uuid: "fe6d57b6-f1f8-4821-be24-935f27a42222"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

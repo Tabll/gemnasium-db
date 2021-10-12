@@ -16,3 +16,6 @@ urls:
 - "https://nodesecurity.io/advisories/112"
 credit: "Spencer Creasey"
 uuid: "30416f3d-5adb-4d20-b78b-498e520220b5"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

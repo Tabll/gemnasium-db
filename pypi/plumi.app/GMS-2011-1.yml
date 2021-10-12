@@ -15,3 +15,6 @@ urls:
 - "https://github.com/plumi/plumi.app/commit/693d7aa55b8f5fb332de62b5f24b0c10e3b1fa4c"
 credit: "Dimitris Moraitis"
 uuid: "d1b0029f-a88f-4eb0-a933-725710790de1"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

@@ -16,3 +16,6 @@ urls:
 - "https://nodesecurity.io/advisories/124"
 credit: "Alex Wong"
 uuid: "fec31a4f-4a2b-4fd1-aa26-34c03a349446"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

@@ -1,5 +1,3 @@
-# This advisory is derived from
-# https://github.com/FriendsOfPHP/security-advisories
 ---
 identifier: "2011-09-25"
 package_slug: "packagist/doctrine/orm"
@@ -16,3 +14,6 @@ solution: "Upgrade to version 2.1.3 or above."
 urls:
 - "https://www.doctrine-project.org/blog/doctrine-security-fix.html"
 uuid: "a220ab45-fa8d-451c-b3a7-b66d2ea228be"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

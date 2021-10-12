@@ -17,3 +17,6 @@ urls:
 - "https://github.com/knsv/mermaid/issues/847"
 - "https://www.npmjs.com/advisories/751"
 uuid: "a530ab88-bbda-42f9-bad5-ae10a153bbb2"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

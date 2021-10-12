@@ -20,3 +20,6 @@ urls:
 - "https://nodesecurity.io/advisories/125"
 credit: "Gursev Singh Kalra"
 uuid: "55aa6b46-72fc-4dac-a9d2-b2d5bd7dff9e"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

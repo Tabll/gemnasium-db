@@ -19,3 +19,6 @@ urls:
 - "https://github.com/bcit-ci/CodeIgniter/commit/f0f47da9ae4227968ccc9ee6511bcab526498b4c"
 credit: "Andrey Andreev"
 uuid: "16f4d8e2-00bc-42ca-8742-bbe36adc0d06"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

@@ -17,3 +17,6 @@ urls:
 - "https://github.com/pallets/flask/commit/aeed530e3221c1b445c13269dcd2fb67548bcefc"
 credit: "Armin Ronacher"
 uuid: "c6611397-2367-4729-96b6-6ac97f295183"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

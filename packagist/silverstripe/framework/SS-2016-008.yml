@@ -6,8 +6,7 @@ description: "When a user changes their password, the internal salt used for has
   their password is not updated."
 date: "2016-08-15"
 pubdate: "2016-08-15"
-affected_range: "<3.1.20-stable||>=3.2.0-alpha0,<3.2.5-stable
-  ||>=3.3.0-alpha0,<3.3.3-stable||>=3.4.0-alpha0,<3.4.1-stable"
+affected_range: "<3.1.20-stable||>=3.2.0-alpha0,<3.2.5-stable ||>=3.3.0-alpha0,<3.3.3-stable||>=3.4.0-alpha0,<3.4.1-stable"
 fixed_versions:
 - "3.1.20"
 - "3.2.5"
@@ -24,3 +23,6 @@ urls:
 - "https://www.silverstripe.org/download/security-releases/ss-2016-008/"
 credit: "Jono Menz"
 uuid: "bb0fe318-727c-46d6-bcd2-0206ea97e654"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

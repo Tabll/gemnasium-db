@@ -19,3 +19,6 @@ urls:
 - "https://nodesecurity.io/advisories/128"
 credit: "Jon Merrifield"
 uuid: "3b217377-48f7-4045-b1a0-95723d282acf"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

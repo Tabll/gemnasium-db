@@ -16,3 +16,6 @@ urls:
 - "https://github.com/Eeems/PooledWebSocket/commit/7b3b4e5c6be6d8a964296fa3c50e38dc07e9701d"
 credit: "Liang Gong"
 uuid: "eb3e9746-069e-4b75-9f13-6e3235740311"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

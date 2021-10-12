@@ -2,8 +2,8 @@
 identifier: "GMS-2017-323"
 package_slug: "npm/st"
 title: "Open Redirect"
-description: "An attacker is able to craft a request that results in an `HTTP 301`
-  (redirect) to an entirely different domain."
+description: "An attacker is able to craft a request that results in an `HTTP ` (redirect)
+  to an entirely different domain."
 date: "2017-10-13"
 pubdate: "2017-10-13"
 affected_range: "<=1.2.1"
@@ -15,3 +15,6 @@ urls:
 - "https://nodesecurity.io/advisories/547"
 credit: "Xin Gao"
 uuid: "3ed3bd53-fe5d-4f93-a849-4811e5e460b0"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

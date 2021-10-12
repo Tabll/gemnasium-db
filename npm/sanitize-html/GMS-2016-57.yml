@@ -17,3 +17,6 @@ urls:
 - "https://nodesecurity.io/advisories/135"
 credit: "Björn Kimminich"
 uuid: "c9f9614f-b55e-44e7-96aa-2f2bf19a7430"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

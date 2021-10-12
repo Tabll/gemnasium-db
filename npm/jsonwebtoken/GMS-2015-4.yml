@@ -19,3 +19,6 @@ urls:
 - "https://www.timmclean.net/2015/02/25/jwt-alg-none.html"
 credit: "Tim McLean"
 uuid: "2e3badf0-2af4-4e1b-9746-9980e738c496"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

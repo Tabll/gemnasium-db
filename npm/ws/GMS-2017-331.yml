@@ -18,3 +18,6 @@ urls:
 - "https://nodesecurity.io/advisories/550"
 credit: "Nick Starke, Ryan Knell"
 uuid: "18a02acd-60b8-44ce-9af1-8f535852ae34"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

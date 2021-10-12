@@ -19,3 +19,6 @@ urls:
 - "https://auth0.com/blog/critical-vulnerabilities-in-json-web-token-libraries/"
 credit: "Theofanis Katsimpas"
 uuid: "a749be1a-1ee1-414b-83cc-d56af2a85d07"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

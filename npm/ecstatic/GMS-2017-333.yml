@@ -2,7 +2,7 @@
 identifier: "GMS-2017-333"
 package_slug: "npm/ecstatic"
 title: "Denial of Service"
-description: "A payload of kB causes a lag of 1 second, a payload of 35kB causes a lag
+description: "A payload of kB causes a lag of 1 second, a payload of kB causes a lag
   of 3 seconds, a payload of kB caused the server to crash."
 date: "2017-12-13"
 pubdate: "2017-12-13"
@@ -18,3 +18,6 @@ urls:
 - "https://www.checkmarx.com/advisories/denial-of-service-dos-vulnerability-in-ecstatic-npm-package/"
 credit: "Checkmarx"
 uuid: "68259bc9-2da1-446d-b31e-9f3012630466"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

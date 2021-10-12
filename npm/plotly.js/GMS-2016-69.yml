@@ -23,3 +23,6 @@ urls:
 - "https://nodesecurity.io/advisories/145"
 credit: "Jared Folkins"
 uuid: "f3fe2f2e-8776-401b-a937-fbdd918e5213"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

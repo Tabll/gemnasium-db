@@ -15,3 +15,6 @@ urls:
 - "https://github.com/sequelize/sequelize/commit/c876192aa6ce1f67e22b26a4d175b8478615f42d"
 - "https://nodesecurity.io/advisories/113"
 uuid: "86658789-e6c3-4fcb-af93-1fa252042230"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

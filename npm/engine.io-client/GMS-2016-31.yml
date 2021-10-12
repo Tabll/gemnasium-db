@@ -22,3 +22,6 @@ urls:
 - "https://www.cigital.com/blog/node-js-socket-io/"
 credit: "David Johansson"
 uuid: "06be7bcf-c759-490d-8aa9-d3d922ec8486"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

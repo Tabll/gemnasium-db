@@ -14,3 +14,6 @@ urls:
 - "https://github.com/sequelize/sequelize/blob/master/changelog.md#300"
 - "https://nodesecurity.io/advisories/109"
 uuid: "a58f9843-7486-4ee1-b942-d84a986903ff"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

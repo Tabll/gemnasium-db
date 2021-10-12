@@ -17,3 +17,6 @@ urls:
 - "https://nodesecurity.io/advisories/336"
 credit: "Daniel Bond"
 uuid: "087558e7-5ccb-48d9-a20a-b070e1adbf16"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

@@ -17,3 +17,6 @@ urls:
 - "https://nodesecurity.io/advisories/validator-isurl-denial-of-service"
 credit: "Karl Düüna"
 uuid: "5ca626fd-b99b-464d-83a0-569186506234"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

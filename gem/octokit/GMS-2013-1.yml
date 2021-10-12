@@ -3,7 +3,7 @@ identifier: "GMS-2013-1"
 package_slug: "gem/octokit"
 title: "PubSubHubbub Service Hooks support is broken"
 description: "The PubSubHubbub Service Hooks support was broken since url_encoded
-  requests have been removed from Octokit 1.19"
+  requests have been removed."
 date: "2013-01-15"
 pubdate: "2013-01-15"
 affected_range: ">=1.19 <1.22"
@@ -15,3 +15,6 @@ solution: "Update to 1.22"
 urls:
 - "https://github.com/pengwynn/octokit/pull/203#commits-pushed-6ecd347"
 uuid: "cfa7a884-93f5-4b35-83f2-c1f4d8fcffdc"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

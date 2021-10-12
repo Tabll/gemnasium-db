@@ -17,3 +17,6 @@ urls:
 - "https://nodesecurity.io/advisories/64"
 credit: "James Halliday"
 uuid: "8066e278-6d13-4703-8749-092a1887c3ec"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

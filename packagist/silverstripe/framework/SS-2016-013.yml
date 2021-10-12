@@ -8,8 +8,7 @@ description: "The core template `framework/templates/Includes/GridField_print.ss
   just returns the raw `FirstName + Surname` as a string, which is injected directly."
 date: "2016-08-15"
 pubdate: "2016-08-15"
-affected_range: "<3.1.20-stable||>=3.2.0-alpha0,<3.2.5-stable
-  ||>=3.3.0-alpha0,<3.3.3-stable||>=3.4.0-alpha0,<3.4.1-stable"
+affected_range: "<3.1.20-stable||>=3.2.0-alpha0,<3.2.5-stable ||>=3.3.0-alpha0,<3.3.3-stable||>=3.4.0-alpha0,<3.4.1-stable"
 fixed_versions:
 - "3.1.20"
 - "3.2.5"
@@ -26,3 +25,6 @@ urls:
 - "https://www.silverstripe.org/download/security-releases/ss-2016-013/"
 credit: "Matt Peel"
 uuid: "7b2dd94d-a777-4571-8958-4641c0813814"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

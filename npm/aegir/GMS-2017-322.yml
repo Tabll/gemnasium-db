@@ -17,3 +17,6 @@ urls:
 - "https://nodesecurity.io/advisories/546"
 credit: "David Dias"
 uuid: "25179a2b-dcb2-4a72-bc0c-e43a89e976e6"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

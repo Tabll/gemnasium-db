@@ -2,11 +2,10 @@
 identifier: "GMS-2017-105"
 package_slug: "npm/windows-build-tools"
 title: "Downloads Resources over HTTP"
-description: "windows-build-tools versions below 1.0.0 download resources over HTTP,
-  which leaves it vulnerable to MITM attacks. It may be possible to cause remote code
-  execution (RCE) by swapping out the requested resources with an attacker controlled
-  copy if the attacker is on the network or positioned in between the user and the
-  remote server."
+description: "windows-build-tools download resources over HTTP, which leaves it vulnerable
+  to MITM attacks. It may be possible to cause remote code execution (RCE) by swapping
+  out the requested resources with an attacker controlled copy if the attacker is
+  on the network or positioned in between the user and the remote server."
 date: "2017-01-06"
 pubdate: "2017-01-06"
 affected_range: "<1.0.0"
@@ -19,3 +18,6 @@ urls:
 - "https://nodesecurity.io/advisories/304"
 credit: "Liang Gong"
 uuid: "4814c019-83ec-4f25-99ea-9c8ffbb8f097"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

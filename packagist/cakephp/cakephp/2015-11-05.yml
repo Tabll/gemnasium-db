@@ -1,5 +1,3 @@
-# This advisory is derived from
-# https://github.com/FriendsOfPHP/security-advisories
 ---
 identifier: "2015-11-05"
 package_slug: "packagist/cakephp/cakephp"
@@ -7,8 +5,7 @@ title: "PHP Remote File Inclusion"
 description: "Remote File Inclusion through View template name manipulation."
 date: "2015-11-05"
 pubdate: "2015-11-05"
-affected_range: ">=2.0.0,<2.0.99||>=2.1.0,<2.1.99||>=2.2.0,<2.2.99
-  ||>=2.3.0,<2.3.99||>=2.4.0,<2.4.99||>=2.5.0,<2.5.99||>=2.6.0,<2.6.12
+affected_range: ">=2.0.0,<2.0.99||>=2.1.0,<2.1.99||>=2.2.0,<2.2.99 ||>=2.3.0,<2.3.99||>=2.4.0,<2.4.99||>=2.5.0,<2.5.99||>=2.6.0,<2.6.12
   ||>=2.7.0,<2.7.6||>=3.0.0,<3.0.15||>=3.1.0,<3.1.4"
 fixed_versions:
 - "2.6.12"
@@ -32,3 +29,6 @@ solution: "Upgrade to versions 2.6.12, 2.7.6, 3.0.15, 3.1.4 or above."
 urls:
 - "https://bakery.cakephp.org/2015/11/05/cakephp_3015_314_2612_276_released.html"
 uuid: "8b89f086-5ba0-4368-9ad0-035484c375d9"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

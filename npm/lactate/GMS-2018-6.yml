@@ -20,3 +20,6 @@ urls:
 - "https://nodesecurity.io/advisories/560"
 credit: "Yasin Soliman (ysx)"
 uuid: "4c809acc-e12d-41c1-becc-106ff6ca9746"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

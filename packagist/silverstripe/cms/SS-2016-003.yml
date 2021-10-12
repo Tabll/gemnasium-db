@@ -20,8 +20,7 @@ description: "In it's default configuration, SilverStripe trusts all originating
   true`."
 date: "2016-02-24"
 pubdate: "2016-02-24"
-affected_range: ">=3.1.0-alpha,<3.1.17-stable||>=3.2.0-alpha,<3.2.2-stable
-  ||>=3.3.0-alpha,<3.3.0-stable"
+affected_range: ">=3.1.0-alpha,<3.1.17-stable||>=3.2.0-alpha,<3.2.2-stable ||>=3.3.0-alpha,<3.3.0-stable"
 fixed_versions:
 - "3.1.17"
 - "3.2.2"
@@ -37,3 +36,6 @@ urls:
 - "http://www.silverstripe.org/download/security-releases/ss-2016-003/"
 credit: "Patrick Nelson and Ingo Schommer"
 uuid: "ace78468-2cc7-4ea2-b0ec-2d113f39cb7f"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

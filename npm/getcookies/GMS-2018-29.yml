@@ -15,3 +15,6 @@ urls:
 - "https://blog.npmjs.org/post/173526807575/reported-malicious-module-getcookies"
 - "https://nodesecurity.io/advisories/576"
 uuid: "067804d5-7091-4b2d-8244-43f505db947f"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

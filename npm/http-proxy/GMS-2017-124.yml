@@ -16,3 +16,6 @@ urls:
 - "https://nodesecurity.io/advisories/323"
 credit: "TJ Holowaychuk"
 uuid: "875b96d1-6e1d-4404-aeaf-d6669f5bbf43"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

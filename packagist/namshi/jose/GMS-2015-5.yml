@@ -16,3 +16,6 @@ urls:
 - "https://github.com/namshi/jose/commit/127b4415e66d89b1fcfb5a07933db0b5ff5cd636"
 credit: "Tim McLean"
 uuid: "9aac37e8-68db-4d05-a5b0-68f08e61608b"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

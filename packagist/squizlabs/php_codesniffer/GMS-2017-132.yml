@@ -17,3 +17,6 @@ urls:
 - "https://github.com/squizlabs/PHP_CodeSniffer/releases/tag/3.0.1"
 credit: "Sergei Morozov"
 uuid: "79fff4d0-ecd5-4b6e-a63a-96f7f65ce238"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

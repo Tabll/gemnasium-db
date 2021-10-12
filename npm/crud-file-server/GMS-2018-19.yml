@@ -17,3 +17,6 @@ urls:
 - "https://hackerone.com/reports/311101"
 credit: "bl4de"
 uuid: "54c67ce4-e6fe-4295-992b-426816b53f8f"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

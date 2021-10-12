@@ -26,3 +26,6 @@ urls:
 - "https://github.com/silverstripe/silverstripe-framework/commit/a6bd22ab2f3b11a054d20be13306a19089510989"
 credit: "Anthony Thorpe"
 uuid: "46f940bb-8dd2-46a1-b0c0-2828e3510395"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

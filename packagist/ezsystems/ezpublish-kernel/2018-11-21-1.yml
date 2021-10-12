@@ -1,4 +1,4 @@
-# This advisory is derived from
+# This advisory is derived from##
 # https://github.com/FriendsOfPHP/security-advisories
 ---
 identifier: "2018-11-21-1"
@@ -7,8 +7,7 @@ title: "Information Exposure"
 description: "REST API returns list of all site accesses."
 date: "2018-11-21"
 pubdate: "2018-11-21"
-affected_range: ">=7.3.0,<7.3.2.1||>=7.0.0,<7.2.4.1||>=6.8.0,<6.13.5.1
-  ||>=6.0.0,<6.7.9.1||>=5.4.0,<5.4.13.1||>=5.3.0,<5.3.12.1"
+affected_range: ">=7.3.0,<7.3.2.1||>=7.0.0,<7.2.4.1||>=6.8.0,<6.13.5.1 ||>=6.0.0,<6.7.9.1||>=5.4.0,<5.4.13.1||>=5.3.0,<5.3.12.1"
 fixed_versions:
 - "5.0.0"
 - "6.7.9.1"

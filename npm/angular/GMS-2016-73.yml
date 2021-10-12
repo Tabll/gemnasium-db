@@ -2,10 +2,10 @@
 identifier: "GMS-2016-73"
 package_slug: "npm/angular"
 title: "Bypass CSP protection"
-description: "Extension URIs (`resource://...`) bypass Content-Security-Policy in
-  Chrome and Firefox and can always be loaded. Now if a site already has a XSS bug,
-  and uses CSP to protect itself, but the user has an extension installed that uses
-  Angular, an attacked can load Angular from the extension, and Angular's auto-bootstrapping
+description: "Extension URIs (`resource://...`) bypass ``Content-Security-Policy``
+  in Chrome and Firefox and can always be loaded. Now if a site already has a XSS
+  bug, and uses CSP to protect itself, but the user has an extension installed that
+  uses Angular, an attacked can load Angular from the extension, and Angular's auto-bootstrapping
   can be used to bypass the victim site's CSP protection. "
 date: "2016-10-19"
 pubdate: "2016-10-19"
@@ -25,3 +25,6 @@ urls:
 - "https://github.com/mozilla/addons-linter/issues/1000"
 credit: "Pete Bacon Darwin\r\nMartin Probst\r\n"
 uuid: "d090b9bb-1fd4-47d2-bbe0-21b2722f3f07"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

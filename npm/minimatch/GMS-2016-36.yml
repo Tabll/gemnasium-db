@@ -3,7 +3,7 @@ identifier: "GMS-2016-36"
 package_slug: "npm/minimatch"
 title: "Regular Expression Denial of Service"
 description: "The primary function, `minimatch(path, pattern)` is vulnerable to ReDoS
-  in the `pattern` parameter. This is because of the regular expression on line 521 of
+  in the `pattern` parameter. This is because of the regular expression on line of
   minimatch.js: `/((?:\\\\{2})*)(\\\\?)\\|/g,`. The problematic portion of the regex
   is `((?:\\\\{2})*)` which matches against `//`."
 date: "2016-06-20"
@@ -18,3 +18,6 @@ urls:
 - "https://nodesecurity.io/advisories/118"
 credit: "Nick Starke"
 uuid: "7d9ba955-fd99-4503-936e-f6833768f76e"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

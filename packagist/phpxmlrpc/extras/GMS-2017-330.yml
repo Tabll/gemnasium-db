@@ -17,3 +17,6 @@ urls:
 - "https://github.com/gggeek/phpxmlrpc-extras/releases/tag/0.6.1"
 credit: "Gaetano Giunta"
 uuid: "ada343ec-6d67-46f8-b525-a4d92f597412"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

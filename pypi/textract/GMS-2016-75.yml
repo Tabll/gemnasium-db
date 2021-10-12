@@ -18,3 +18,6 @@ urls:
 - "https://github.com/deanmalmgren/textract/pull/114"
 credit: "Pierre Ernst"
 uuid: "d4224ca1-461e-4801-88d1-676efa5cc42e"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

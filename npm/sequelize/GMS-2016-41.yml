@@ -19,3 +19,6 @@ urls:
 - "https://nodesecurity.io/advisories/122"
 credit: "https://github.com/contra"
 uuid: "24bacb5f-f6bc-45ae-ac36-f516821bbd27"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

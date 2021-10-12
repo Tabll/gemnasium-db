@@ -16,3 +16,6 @@ urls:
 - "https://spring.io/blog/2016/01/28/angularjs-escaping-the-expression-sandbox-for-xss"
 credit: "Gabrielle Bourdages"
 uuid: "d91474c2-0719-4058-b5ea-85c112b442b7"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

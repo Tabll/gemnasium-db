@@ -16,3 +16,6 @@ urls:
 - "https://plone.org/security/20160419/privilege-escalation-in-webdav"
 credit: "Thomas Mogensen, Plone Security Team\r\n"
 uuid: "4236625d-3514-4546-bdd4-d892ae4124a3"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

@@ -16,3 +16,6 @@ urls:
 - "https://plone.org/products/plone/security/advisories/20151208-announcement"
 credit: "Giovanni Monteiro Calanzani and Glauter de Sousa Vilela"
 uuid: "f79fd32e-84ba-4b0b-969d-717588b338ca"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

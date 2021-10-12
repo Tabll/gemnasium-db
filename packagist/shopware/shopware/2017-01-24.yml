@@ -1,5 +1,3 @@
-# This advisory is derived from
-# https://github.com/FriendsOfPHP/security-advisories
 ---
 identifier: "2017-01-24"
 package_slug: "packagist/shopware/shopware"
@@ -19,3 +17,6 @@ solution: "Upgrade to versions 4.3.0, 5.2.15 or above."
 urls:
 - "https://community.shopware.com/_detail_1989.html"
 uuid: "2b5b7075-b0ea-48de-bc43-2b5441bbf6b3"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

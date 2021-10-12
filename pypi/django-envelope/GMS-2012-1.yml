@@ -17,3 +17,6 @@ urls:
 - "https://github.com/zsiciarz/django-envelope/pull/7"
 credit: "Tomasz Wysocki"
 uuid: "adae0c3c-284f-4068-9f63-13bf90276bd2"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

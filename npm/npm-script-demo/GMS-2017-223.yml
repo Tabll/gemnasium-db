@@ -13,3 +13,6 @@ solution: "There is no solution for this vulnerability at the moment."
 urls:
 - "https://nodesecurity.io/advisories/481"
 uuid: "a53721ed-cd50-43fb-9d84-45642bfca67b"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

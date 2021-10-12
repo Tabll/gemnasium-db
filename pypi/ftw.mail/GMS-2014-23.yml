@@ -17,3 +17,6 @@ urls:
 - "https://github.com/4teamwork/ftw.mail/pull/25"
 credit: "Philippe Gross"
 uuid: "386d6c11-7449-4d5d-af3f-4137a8d319b4"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

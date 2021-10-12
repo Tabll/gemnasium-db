@@ -17,3 +17,6 @@ urls:
 - "https://nodesecurity.io/advisories/328"
 credit: "Egor Homakov"
 uuid: "64559551-a08a-4af6-ab2e-80980dbfbf7d"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

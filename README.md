@@ -137,7 +137,7 @@ in which the vulnerability has been disclosed, e.g. `2017`.
     pointing to resources that are helpful to better understand the context.
     The key has to be alphanumeric. Every object has two properties: a required
     `name` (string) and an optional `type` (`poc`, `blog`).
-* `cwe_ids` (array of strings, optional): List of CWEs that are related to the
+* `cwe_ids` (array of strings): List of CWEs that are related to the
     advisory.
 * `cvss_v2` (string, optional): The CVSS attack vector (version 2.x) for a
 given vulnerability (see https://www.first.org/cvss/v2/ for more details).

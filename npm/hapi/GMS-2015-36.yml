@@ -19,3 +19,6 @@ urls:
 - "https://nodesecurity.io/advisories/45"
 credit: "Eran Hammer"
 uuid: "4d887e1e-5822-4387-b5ac-208e49377a34"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

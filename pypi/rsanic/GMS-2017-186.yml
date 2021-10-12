@@ -17,3 +17,6 @@ urls:
 - "https://github.com/reformo/rsanic/commit/6791cb09c322e1ff6e7b471a3bd2219a44e25801"
 credit: "Mehmet Korkmaz"
 uuid: "46c030f4-8364-4624-abab-816b3c81d31e"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

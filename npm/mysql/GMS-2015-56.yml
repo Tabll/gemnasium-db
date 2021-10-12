@@ -17,3 +17,6 @@ urls:
 - "https://nodesecurity.io/advisories/66"
 credit: "Sébastian Dejonghe"
 uuid: "4393be11-a9b5-4fd6-be3d-a286ff0c2c40"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

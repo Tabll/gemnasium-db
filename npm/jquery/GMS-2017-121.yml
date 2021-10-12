@@ -17,3 +17,6 @@ urls:
 - "https://nodesecurity.io/advisories/329"
 credit: "Richard Gibson"
 uuid: "04a14325-f5d9-4711-aee7-cf19ed54b0d2"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

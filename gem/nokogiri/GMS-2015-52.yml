@@ -24,3 +24,6 @@ urls:
 - "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8242"
 - "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8317"
 uuid: "6e5aa2b4-fe35-4810-bd23-01023adf2e74"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

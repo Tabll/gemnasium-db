@@ -17,3 +17,6 @@ urls:
 - "https://github.com/SmileyChris/django-countries/pull/108"
 credit: "Antonin Lacombe"
 uuid: "517b7a64-362e-4da3-b416-6c3c726bf71c"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

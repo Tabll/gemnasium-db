@@ -17,3 +17,6 @@ urls:
 - "https://nodesecurity.io/advisories/138"
 credit: "Calvin K Cox"
 uuid: "e8af181e-e0bb-4fff-923e-f4c08177b017"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

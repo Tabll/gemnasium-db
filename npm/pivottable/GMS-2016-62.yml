@@ -16,3 +16,6 @@ urls:
 - "https://nodesecurity.io/advisories/139"
 credit: "Todd Wolfson"
 uuid: "30e55807-aed7-4330-b269-58d7ad331c03"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

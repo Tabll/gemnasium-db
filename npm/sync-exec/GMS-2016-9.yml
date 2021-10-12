@@ -3,10 +3,10 @@ identifier: "GMS-2016-9"
 package_slug: "npm/sync-exec"
 title: "Tmp files readable by other users"
 description: "The sync-exec module is used to simulate child_process.execSync in node
-  versions <0.11.9. Sync-exec uses tmp directories as a buffer before returning values.
-  Other users on the server have read access to the tmp directory, possibly allowing
-  an attacker on the server to obtain confidential information from the buffer/tmp
-  file, while it exists."
+  Sync-exec uses tmp directories as a buffer before returning values. Other users
+  on the server have read access to the tmp directory, possibly allowing an attacker
+  on the server to obtain confidential information from the buffer/tmp file, while
+  it exists."
 date: "2016-01-24"
 pubdate: "2016-01-24"
 affected_range: ">=0.0.0-alpha"
@@ -18,3 +18,6 @@ urls:
 - "https://nodesecurity.io/advisories/310"
 credit: "maxnikulin"
 uuid: "3148e134-4917-4d18-825b-9d0ddb2bb402"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

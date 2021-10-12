@@ -16,3 +16,6 @@ urls:
 - "https://nodesecurity.io/advisories/140"
 credit: "Matteo Collina"
 uuid: "6a803780-dac1-4734-82b5-f56ff8a96887"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

@@ -1,5 +1,3 @@
-# This advisory is derived from
-# https://github.com/FriendsOfPHP/security-advisories
 ---
 identifier: "2012-03-28"
 package_slug: "packagist/typo3/flow"
@@ -16,3 +14,6 @@ solution: "Upgrade to version 2.0.0 or above."
 urls:
 - "https://www.neos.io/news/flow-sa-2012-001.html"
 uuid: "e754b6b8-dbf7-48b8-a6eb-6c18018072b1"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

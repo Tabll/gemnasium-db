@@ -19,3 +19,6 @@ solution: "Upgrade to version 3.0.0 or above."
 urls:
 - "http://www.silverstripe.org/software/download/security-releases/ss-2015-018/"
 uuid: "8e3ec46f-9ceb-496d-b501-f28c5a804eda"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

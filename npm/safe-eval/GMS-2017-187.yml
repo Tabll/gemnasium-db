@@ -15,3 +15,6 @@ urls:
 - "https://nodesecurity.io/advisories/337"
 credit: "Alessandro Nadalin"
 uuid: "bd6ecf76-bf82-4505-8f6c-3884385ffaec"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

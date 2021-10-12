@@ -17,3 +17,6 @@ urls:
 - "https://www.djangoproject.com/weblog/2013/aug/13/security-releases-issued/"
 credit: "Nick Bruun"
 uuid: "4963db3f-ace3-4899-9b75-bd97aa634bc1"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

@@ -17,3 +17,6 @@ urls:
 - "https://github.com/pusher/pusher-http-ruby/commit/c9fb93a0d9c1423da7bf9b7e846b3617a21975c7"
 credit: "Pusher Team"
 uuid: "c8b9e7f2-1be9-4b8c-939f-1a45f5e7eb4c"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

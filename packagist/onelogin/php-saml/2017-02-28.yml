@@ -1,5 +1,3 @@
-# This advisory is derived from
-# https://github.com/FriendsOfPHP/security-advisories
 ---
 identifier: "2017-02-28"
 package_slug: "packagist/onelogin/php-saml"
@@ -17,3 +15,6 @@ solution: "Upgrade to version 2.10.4 or above."
 urls:
 - "https://github.com/onelogin/php-saml/commit/949359f5cad5e1d085c4e5447d9aa8f49a6e82a1"
 uuid: "b8044848-109e-418c-a0ed-7c5f9bcd3012"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

@@ -15,3 +15,6 @@ urls:
 - "https://nodesecurity.io/advisories/157"
 credit: "Sven Slootweg"
 uuid: "c461fab3-fe1a-44e9-ab88-3e0d20897062"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

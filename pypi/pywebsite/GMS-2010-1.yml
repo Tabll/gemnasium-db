@@ -15,3 +15,6 @@ urls:
 - "https://bitbucket.org/illume/pywebsite/commits/136922b7c4c2c9467dd554385fbf2408d1d7b061"
 credit: "René Dudfield\r\n\r\n"
 uuid: "d112f9fb-4ce7-4fcd-b6c6-16d5724fd8dd"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

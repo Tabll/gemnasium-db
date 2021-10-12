@@ -2,8 +2,7 @@
 identifier: "GMS-2016-5"
 package_slug: "gem/auto_awesomplete"
 title: "Arbitrary search execution"
-description: "The gem contains a flaw that is triggered when handling the 
-  `params[:default_class_name]`
+description: "The gem contains a flaw that is triggered when handling the `params[:default_class_name]`
   option. This allows users to search any object of all given ActiveRecord classes."
 date: "2016-01-08"
 pubdate: "2016-01-08"
@@ -16,3 +15,6 @@ solution: "Upgrade to version 0.1.1 or above."
 urls:
 - "https://github.com/Tab10id/auto_awesomplete/issues/2"
 uuid: "a485b39c-b70a-43e5-afbd-3cafc277f190"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

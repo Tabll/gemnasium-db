@@ -17,3 +17,6 @@ urls:
 - "https://github.com/nov/jose-php/commit/1cce55e27adf0274193eb1cd74b927a398a3df4b"
 credit: "Tim McLean"
 uuid: "2075d168-97be-4b03-afef-e82a94e7fd08"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

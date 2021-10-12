@@ -1,5 +1,3 @@
-# This advisory is derived from
-# https://github.com/FriendsOfPHP/security-advisories
 ---
 identifier: "2014-04-07"
 package_slug: "packagist/contao/core"
@@ -19,3 +17,6 @@ solution: "Upgrade to versions 2.11.17, 3.2.9 or above."
 urls:
 - "https://contao.org/en/news/new-security-hole-found-in-contao.html"
 uuid: "f333f85d-791e-4696-bf56-5036715bc004"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

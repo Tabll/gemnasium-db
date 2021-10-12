@@ -1,5 +1,3 @@
-# This advisory is derived from
-# https://github.com/FriendsOfPHP/security-advisories
 ---
 identifier: "2016-03-16"
 package_slug: "packagist/paragonie/random_compat"
@@ -16,3 +14,6 @@ solution: "Upgrade to version 2.0.0 or above."
 urls:
 - "https://github.com/paragonie/random_compat/issues/96"
 uuid: "ca55739d-c8cc-43d8-9d9d-bc5a4c2a9a5a"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

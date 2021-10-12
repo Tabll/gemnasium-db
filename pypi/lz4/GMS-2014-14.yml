@@ -18,3 +18,6 @@ urls:
 - "http://blog.securitymouse.com/2014/07/hacking-cern-exploiting-python-lz4-for.html"
 credit: "Don A. Bailey"
 uuid: "76f6607d-5ce2-4029-b755-ea6af7e2baba"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

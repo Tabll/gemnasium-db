@@ -2,8 +2,8 @@
 identifier: "GMS-2016-68"
 package_slug: "npm/uws"
 title: "Denial of Service"
-description: "By sending a 256 Mb websocket message to a uws server instance, it is
-  possible to crash the node process by exceeding V8's maximum string size."
+description: "By sending a Mb websocket message to a uws server instance, it is possible
+  to crash the node process by exceeding V8's maximum string size."
 date: "2016-10-17"
 pubdate: "2016-10-17"
 affected_range: ">=0.10.0 <=0.10.8"
@@ -17,3 +17,6 @@ urls:
 - "https://nodesecurity.io/advisories/149"
 credit: "Luigi Pinca"
 uuid: "1742da8d-6fe6-4a30-9426-85b3ef8f39c0"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

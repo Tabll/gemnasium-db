@@ -2,8 +2,8 @@
 identifier: "GMS-2017-110"
 package_slug: "npm/angular"
 title: "Bypass CSP protection"
-description: "In versions prior to 1.6.3, AngularJS allows bootstrapping of invalid/bad
-  svg and currentScript if it was clobbered."
+description: ", AngularJS allows bootstrapping of invalid/bad svg and currentScript
+  if it was clobbered."
 date: "2017-02-24"
 pubdate: "2017-02-24"
 affected_range: "<1.6.3"
@@ -18,3 +18,6 @@ urls:
 - "https://github.com/angular/angular.js/commit/c8f78a8ca9debc33a6deaf951f344b8d372bf210"
 credit: "Pete Bacon Darwin"
 uuid: "56a448c2-1ca1-45b6-a77a-b58aca00928e"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

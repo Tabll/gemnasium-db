@@ -17,3 +17,6 @@ urls:
 - "https://github.com/lsegal/yard/commit/715d6cb462392e610ab751fcfee7b622850fa802"
 credit: "Loren Segal"
 uuid: "2baa51b4-5ddf-42b6-83d9-f3e61c744de8"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

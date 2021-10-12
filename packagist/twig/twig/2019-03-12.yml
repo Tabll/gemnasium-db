@@ -1,5 +1,3 @@
-# This advisory is derived from
-# https://github.com/FriendsOfPHP/security-advisories
 ---
 identifier: "2019-03-12"
 package_slug: "packagist/twig/twig"
@@ -19,3 +17,6 @@ solution: "Upgrade to versions 1.38.0, 2.7.0 or above."
 urls:
 - "https://symfony.com/blog/twig-sandbox-information-disclosure"
 uuid: "55e81a41-d7d7-4327-a63f-751cb97613e4"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

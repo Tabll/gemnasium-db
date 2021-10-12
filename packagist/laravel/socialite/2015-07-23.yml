@@ -1,5 +1,3 @@
-# This advisory is derived from
-# https://github.com/FriendsOfPHP/security-advisories
 ---
 identifier: "2015-07-23"
 package_slug: "packagist/laravel/socialite"
@@ -18,3 +16,6 @@ solution: "Upgrade to version 2.0.9 or above."
 urls:
 - "https://github.com/laravel/socialite/pull/91"
 uuid: "3392e36d-0be9-483d-8dc3-a702fe66c5e9"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

@@ -20,3 +20,6 @@ urls:
 - "https://github.com/attr-encrypted/encryptor/pull/22"
 credit: "Matouš Borák"
 uuid: "c79d4ce6-a678-4a25-bee2-acc94c5b5332"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

@@ -22,3 +22,6 @@ urls:
 - "https://nodesecurity.io/advisories/539"
 credit: "Electron Team"
 uuid: "b7ab766a-faaf-41e0-9cde-eb3b4e0c0df6"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

@@ -1,4 +1,4 @@
-# This advisory is derived from
+# This advisory is derived from##
 # https://github.com/FriendsOfPHP/security-advisories
 ---
 identifier: "2018-08-08-1"
@@ -7,8 +7,7 @@ title: "Session Fixation"
 description: "Cookie serialization vulnerability."
 date: "2018-08-07"
 pubdate: "2018-08-07"
-affected_range: ">=4.0.0,<=4.0.11||>=4.1.0,<=4.1.31||>=4.2.0,<=4.2.22
-  ||>=5.0.0,<=5.0.35||>=5.1.0,<=5.1.46||>=5.2.0,<=5.2.45||>=5.3.0,<=5.3.31
+affected_range: ">=4.0.0,<=4.0.11||>=4.1.0,<=4.1.31||>=4.2.0,<=4.2.22 ||>=5.0.0,<=5.0.35||>=5.1.0,<=5.1.46||>=5.2.0,<=5.2.45||>=5.3.0,<=5.3.31
   ||>=5.4.0,<=5.4.36||>=5.5.0,<5.5.42||>=5.6.0,<5.6.30"
 fixed_versions:
 - "5.5.43"

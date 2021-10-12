@@ -18,3 +18,6 @@ urls:
 - "https://github.com/puppetlabs/hiera/commit/5b71548ca9ea9ced460b2970c3e8fb483b495806"
 credit: "Peter Huene"
 uuid: "662fdd78-0793-4fa6-817c-e492cf6d8387"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

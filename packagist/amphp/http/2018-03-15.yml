@@ -1,5 +1,3 @@
-# This advisory is derived from
-# https://github.com/FriendsOfPHP/security-advisories
 ---
 identifier: "2018-03-15"
 package_slug: "packagist/amphp/http"
@@ -16,3 +14,6 @@ solution: "Upgrade to version 1.0.1 or above."
 urls:
 - "https://github.com/amphp/http/releases/tag/v1.0.1"
 uuid: "fe1e9a0f-eb83-4a0d-8b40-0f115c41ea61"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

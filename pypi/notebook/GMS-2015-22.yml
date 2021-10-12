@@ -19,3 +19,6 @@ urls:
 - "https://github.com/jupyter/notebook/commit/dd9876381f0ef09873d8c5f6f2063269172331e3"
 credit: "Juan Broullón"
 uuid: "52b92c2c-bbd2-4be9-aaf3-e14692cdfb1d"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

@@ -16,3 +16,6 @@ urls:
 - "https://github.com/manahl/pytest-plugins/blob/master/CHANGES.md#110-2016-2-15"
 - "https://github.com/manahl/pytest-plugins/commit/ea6072a461edde63c07f7b7f4a4daffdc09fb116"
 uuid: "684abc9e-cced-4a9a-aef2-dcca4da14352"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

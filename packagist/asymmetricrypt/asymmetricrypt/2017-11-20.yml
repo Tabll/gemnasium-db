@@ -1,5 +1,3 @@
-# This advisory is derived from
-# https://github.com/FriendsOfPHP/security-advisories
 ---
 identifier: "2017-11-20"
 package_slug: "packagist/asymmetricrypt/asymmetricrypt"
@@ -14,3 +12,6 @@ solution: "Unfortunately, there is no solution available yet."
 urls:
 - "https://github.com/Cosmicist/AsymmetriCrypt/issues/4"
 uuid: "1131a22a-585e-4e86-9560-e57c2988ca9e"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

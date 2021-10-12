@@ -2,8 +2,8 @@
 identifier: "GMS-2013-5"
 package_slug: "npm/ms"
 title: "Minutes parsing is broken"
-description: "Ms 0.5.1 does not correctly parse minutes, people should remain on 0.5.0
-  until it’s fixed. (Kindly reported by ForbesLindesay)"
+description: "Ms does not correctly parse minutes, people should remain on until it’s
+  fixed. (Kindly reported by ForbesLindesay)"
 date: "2013-02-28"
 pubdate: "2013-02-28"
 affected_range: "0.5.1"
@@ -14,3 +14,6 @@ solution: "Stay on 0.5.0"
 urls:
 - "https://github.com/guille/ms.js/issues/22"
 uuid: "2caadd9a-073c-4711-a6ce-9bb67b24cc95"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

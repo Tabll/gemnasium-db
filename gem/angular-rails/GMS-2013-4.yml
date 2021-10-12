@@ -13,3 +13,6 @@ credit: "Apolishc"
 urls:
 - "http://blog.angularjs.org/2013/02/angularjs-105-flatulent-propulsion-and.html"
 uuid: "216c163a-43a3-42f9-a9db-90cb0fbad27a"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

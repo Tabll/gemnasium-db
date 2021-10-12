@@ -19,3 +19,6 @@ urls:
 - "https://nodesecurity.io/advisories/115"
 credit: "James Hush"
 uuid: "c09ac23f-a14d-4e9f-80ac-874036ea3167"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

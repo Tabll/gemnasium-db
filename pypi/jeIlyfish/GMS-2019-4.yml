@@ -12,3 +12,6 @@ solution: "Replace this package with jellyfish."
 urls:
 - "https://www.zdnet.com/article/two-malicious-python-libraries-removed-from-pypi/"
 uuid: "c0406021-c319-4447-8b6d-0b6380c56789"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

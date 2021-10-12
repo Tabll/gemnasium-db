@@ -17,3 +17,6 @@ urls:
 - "https://github.com/micromatch/braces/commit/abdafb0cae1e0c00f184abbadc692f4eaa98f451"
 credit: "Santosh Rao"
 uuid: "2e432200-f475-447e-ab52-be43b580a77d"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

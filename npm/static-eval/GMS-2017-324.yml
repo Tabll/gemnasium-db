@@ -17,3 +17,6 @@ urls:
 - "https://nodesecurity.io/advisories/548"
 credit: "Matt Austin"
 uuid: "51e83936-1226-4f21-bfb0-03218926a026"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

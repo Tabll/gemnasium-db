@@ -17,3 +17,6 @@ urls:
 - "https://nodesecurity.io/advisories/60"
 credit: "Greg Meyer"
 uuid: "f96dca21-b68a-4fa0-a690-6f409c4ef3d9"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

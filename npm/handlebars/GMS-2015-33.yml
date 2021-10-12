@@ -16,3 +16,6 @@ urls:
 - "https://github.com/wycats/handlebars.js/commit/83b8e846a3569bd366cf0b6bdc1e4604d1a2077e"
 - "https://github.com/wycats/handlebars.js/issues/1114"
 uuid: "217fef77-6889-46ba-8fa6-66e8f1c3ea87"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

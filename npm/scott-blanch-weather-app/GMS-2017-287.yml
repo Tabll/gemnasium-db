@@ -15,3 +15,6 @@ urls:
 - "https://nodesecurity.io/advisories/453"
 credit: "Liang Gong"
 uuid: "a7262371-519c-4680-bd35-0c1569bcbcb8"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

@@ -28,3 +28,6 @@ versions:
     - "v2.2.3"
     sha: "bb4e33bf68bf89cad44d386192cbed201f35b241"
     timestamp: "20190930210921"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

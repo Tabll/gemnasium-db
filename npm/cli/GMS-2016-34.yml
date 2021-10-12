@@ -18,3 +18,6 @@ urls:
 - "https://nodesecurity.io/advisories/95"
 credit: "Steve Kemp"
 uuid: "5eb6c481-e499-4b08-b246-e217d7361899"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

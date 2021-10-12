@@ -18,3 +18,6 @@ urls:
 - "https://github.com/TracyWebTech/django-revproxy/commit/e9b4dfd162c73adbad6077355c9420d0c40d4f3f"
 credit: "Sergio Oliveira"
 uuid: "fe108300-acd8-4a8e-9934-fbc8179c8fe9"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

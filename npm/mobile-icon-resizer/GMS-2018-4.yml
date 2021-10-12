@@ -18,3 +18,6 @@ urls:
 - "https://nodesecurity.io/advisories/317"
 credit: "Cristian-Alexandru Staicu"
 uuid: "a858ebfd-30b7-4bc9-877d-0114dcf22b89"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

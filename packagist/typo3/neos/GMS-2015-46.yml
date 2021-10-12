@@ -22,3 +22,6 @@ urls:
 - "https://www.neos.io/news/neos-sa-2015-002.html"
 credit: "Mickael Dorigny (Synetis)"
 uuid: "a502f36f-040e-4017-ba3e-614dde7a46d6"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

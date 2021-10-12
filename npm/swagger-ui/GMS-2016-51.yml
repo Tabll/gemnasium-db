@@ -18,3 +18,6 @@ urls:
 - "https://nodesecurity.io/advisories/131"
 credit: "Joe Vennix"
 uuid: "0290c4b6-a047-40e0-a616-c4ce696b3c12"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

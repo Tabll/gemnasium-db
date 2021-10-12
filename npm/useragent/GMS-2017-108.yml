@@ -17,3 +17,6 @@ urls:
 - "https://nodesecurity.io/advisories/312"
 credit: "Mathias Madsen, Matteo Collina"
 uuid: "e1dc8f97-2af2-4352-9e55-e8bde0fca917"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

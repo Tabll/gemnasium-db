@@ -23,3 +23,6 @@ urls:
 - "https://github.com/sparklemotion/nokogiri/commit/ee52b7be5b47e1029af98f6b7eb6df7fc5ffd359"
 - "https://groups.google.com/forum/#!topic/nokogiri-talk/gEpHWo2xLCE"
 uuid: "8d7b4a38-b0c8-4e10-8941-28e5f588a056"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

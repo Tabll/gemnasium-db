@@ -1,5 +1,3 @@
-# This advisory is derived from
-# https://github.com/FriendsOfPHP/security-advisories
 ---
 identifier: "2014-05-20"
 package_slug: "packagist/laravel/framework"
@@ -18,3 +16,6 @@ solution: "Upgrade to version 4.1.29 or above."
 urls:
 - "https://laravel.com/docs/5.3/upgrade#upgrade-4.1.29"
 uuid: "457cb202-0bfa-4fcb-88bb-4641b1c99dcb"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

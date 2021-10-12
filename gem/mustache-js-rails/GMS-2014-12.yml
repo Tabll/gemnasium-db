@@ -17,3 +17,6 @@ urls:
 - "https://github.com/janl/mustache.js/pull/388"
 - "https://github.com/knapo/mustache-js-rails/commit/0c79aec192b9b4a8491cdc3398bf6e4db535432b"
 uuid: "636ad536-646a-41cc-aa63-9111ae1177ff"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

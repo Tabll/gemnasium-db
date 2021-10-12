@@ -16,3 +16,6 @@ urls:
 - "https://github.com/plone/plone.app.discussion/pull/112"
 credit: "Maurits van Rees"
 uuid: "38cb449e-6bc4-4ebc-b343-3dd82248458b"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

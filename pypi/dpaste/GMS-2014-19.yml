@@ -17,3 +17,6 @@ urls:
 - "https://github.com/bartTC/dpaste/commit/497e5f0c28d575b3e92ef65b70384314a9e330da"
 credit: "Martin Mahner"
 uuid: "b9d8e48e-c0c6-47e9-8860-67292d2b000e"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

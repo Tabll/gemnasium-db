@@ -1,5 +1,3 @@
-# This advisory is derived from
-# https://github.com/FriendsOfPHP/security-advisories
 ---
 identifier: "2014-04-26"
 package_slug: "packagist/zfr/zfr-oauth2-server-module"
@@ -16,3 +14,6 @@ solution: "Upgrade to version 0.1.2 or above."
 urls:
 - "https://github.com/zf-fr/zfr-oauth2-server-module/issues/6"
 uuid: "a3dd19e8-536e-4a17-b5dd-a30878a8eb45"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

@@ -14,3 +14,6 @@ urls:
 - "https://nodesecurity.io/advisories/319"
 credit: "Ben Alpert"
 uuid: "e1817462-cddc-40fa-9d9d-76129b9a5b15"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

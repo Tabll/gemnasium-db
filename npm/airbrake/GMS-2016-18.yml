@@ -19,3 +19,6 @@ urls:
 - "https://nodesecurity.io/advisories/96"
 credit: "Phil Schleihauf"
 uuid: "6fd1ea8f-c10e-4ef1-ab4d-9734699d8955"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

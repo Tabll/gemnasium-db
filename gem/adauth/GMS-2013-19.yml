@@ -18,3 +18,6 @@ urls:
 - "https://github.com/Arcath/Adauth/issues/37"
 credit: "Adam \"Arcath\" Laycock"
 uuid: "11fcb46c-8d54-491d-b89d-eff7e143a93c"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

@@ -16,3 +16,6 @@ urls:
 - "https://nodesecurity.io/advisories/308"
 credit: "saurik"
 uuid: "980f208d-a755-46f3-8bac-4decf4c48f56"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

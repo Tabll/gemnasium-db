@@ -20,3 +20,6 @@ urls:
 - "http://bakery.cakephp.org/2015/08/06/cakephp_2_5_9_2_6_10_2_7_2_released.html"
 credit: "Kurita Takashi (https://github.com/chinpei215)\r\n"
 uuid: "fedb7562-921a-4bab-93ac-7ae176ce6ecc"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

@@ -2,8 +2,7 @@
 identifier: "GMS-2015-21"
 package_slug: "pypi/Django"
 title: "Denial-of-service possibility in logout() view by filling session store"
-description: "A session can be created when anonymously accessing the 
-  `django.contrib.auth.views.logout`
+description: "A session can be created when anonymously accessing the `django.contrib.auth.views.logout`
   view (provided it wasn't decorated with `django.contrib.auth.decorators.login_required`
   as done in the admin). This allows an attacker to easily create many new session
   records by sending repeated requests, potentially filling up the session store or
@@ -25,3 +24,6 @@ urls:
 - "https://www.djangoproject.com/weblog/2015/aug/18/security-releases/"
 credit: "Lin Hua Cheng"
 uuid: "bfcb6043-e9f1-497d-a9e4-a8698b7f0fa1"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

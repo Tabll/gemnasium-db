@@ -7,8 +7,7 @@ description: "List of key / value pairs assigned to `OptionsetField` or `Checkbo
   XSS vulnerability in lists where either key or value contain unescaped HTML."
 date: "2016-08-15"
 pubdate: "2016-08-15"
-affected_range: "<3.1.20-stable||>=3.2.0-alpha0,<3.2.5-stable
-  ||>=3.3.0-alpha0,<3.3.3-stable||>=3.4.0-alpha0,<3.4.1-stable"
+affected_range: "<3.1.20-stable||>=3.2.0-alpha0,<3.2.5-stable ||>=3.3.0-alpha0,<3.3.3-stable||>=3.4.0-alpha0,<3.4.1-stable"
 fixed_versions:
 - "3.1.20"
 - "3.2.5"
@@ -24,3 +23,6 @@ solution: "Upgrade to versions 3.1.20, 3.2.5, 3.3.3, 3.4.1 or above."
 urls:
 - "https://www.silverstripe.org/download/security-releases/ss-2016-015/"
 uuid: "18057445-887b-4e7f-90b7-2a382f808455"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

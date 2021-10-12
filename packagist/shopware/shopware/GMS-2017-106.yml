@@ -15,3 +15,6 @@ solution: "Update Shopware to 5.2.16 or update the HotFix plugin to 1.1.0. There
 urls:
 - "http://en.community.shopware.com/_detail_1989.html"
 uuid: "95b18b22-3a9d-4826-ac87-5f0ac7c5677d"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

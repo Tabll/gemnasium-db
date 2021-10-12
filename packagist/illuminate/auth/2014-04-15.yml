@@ -1,5 +1,3 @@
-# This advisory is derived from
-# https://github.com/FriendsOfPHP/security-advisories
 ---
 identifier: "2014-04-15"
 package_slug: "packagist/illuminate/auth"
@@ -18,3 +16,6 @@ solution: "Upgrade to version 4.1.26 or above."
 urls:
 - "https://laravel.com/docs/5.1/upgrade#upgrade-4.1.26"
 uuid: "60a897a5-5548-4b20-bec5-afb51c1c3494"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

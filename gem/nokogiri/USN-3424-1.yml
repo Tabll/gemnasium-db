@@ -3,10 +3,10 @@ identifier: "USN-3424-1"
 package_slug: "gem/nokogiri"
 title: "Vulnerabilities in libxml2"
 description: "The version of libxml2 packaged with Nokogiri contains several vulnerabilities.
-  Nokogiri has mitigated these issues by upgrading to libxml It was discovered that a type
-  confusion error existed in libxml2. An attacker could use this to specially construct
-  XML data that could cause a denial of service or possibly execute arbitrary code.
-  (CVE-2017-0663) It was discovered that libxml2 did not properly validate parsed
+  Nokogiri has mitigated these issues by upgrading to libxml It was discovered that
+  a type confusion error existed in libxml2. An attacker could use this to specially
+  construct XML data that could cause a denial of service or possibly execute arbitrary
+  code. (CVE-2017-0663) It was discovered that libxml2 did not properly validate parsed
   entity references. An attacker could use this to specially construct XML data that
   could expose sensitive information. (CVE-2017-7375) It was discovered that a buffer
   overflow existed in libxml2 when handling HTTP redirects. An attacker could use
@@ -31,3 +31,6 @@ solution: "Upgrade to version 1.8.1 or above."
 urls:
 - "https://github.com/sparklemotion/nokogiri/issues/1673"
 uuid: "06565b64-486d-4326-b906-890d9915804d"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

@@ -22,3 +22,6 @@ urls:
 - "https://github.com/collectiveidea/delayed_job_active_record/commit/3436dd0921daff15e7e1f87f1da0384138c582cc"
 credit: "Erik Berlin"
 uuid: "3888a429-bc20-4d2d-b316-1d924dc3f974"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

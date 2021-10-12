@@ -6,8 +6,7 @@ description: "The package lz4-ruby is vulnerable to an integer overflow attack. 
   certain payloads are processed, a pointer to an output buffer can be set to an address
   outside the output buffer. Since the attacker can specify exact offsets in memory,
   it is very easy to create a reliable Remote Code Execution exploit. 32bit variants
-  of the package are critically affected. 64bit variants are deemed infeasible to exploit
-  at this time."
+  of the package are critically affected. 64bit variants are deemed infeasible to exploit."
 date: "2014-07-10"
 pubdate: "2014-07-10"
 affected_range: "<0.3.3"
@@ -21,3 +20,6 @@ urls:
 - "https://github.com/komiya-atsushi/lz4-ruby/issues/9"
 credit: "Don A. Bailey - Lab Mouse Security"
 uuid: "61562b2b-d702-4b3d-8b14-a98e47c0dfee"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

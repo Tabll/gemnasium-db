@@ -24,3 +24,6 @@ urls:
 - "https://www.silverstripe.org/download/security-releases/ss-2016-016/"
 credit: "David Júlio"
 uuid: "d90b3586-c328-4cf0-ae93-c3867cad725c"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

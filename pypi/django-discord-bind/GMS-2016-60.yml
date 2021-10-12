@@ -15,3 +15,6 @@ urls:
 - "https://github.com/mrogaski/django-discord-bind/commit/b586a9c9c4cad3cf17f46b34e7faa5174ce04fa8"
 credit: "Mark Rogaski"
 uuid: "ac4735db-b9e8-476f-bf72-b9ae743df3f0"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

@@ -2,11 +2,10 @@
 identifier: "GMS-2017-5"
 package_slug: "npm/alto-saxophone"
 title: "Downloads Resources over HTTP"
-description: "alto-saxophone versions below 2.25.1 download binary resources over
-  HTTP, which leaves it vulnerable to MITM attacks. It may be possible to cause remote
-  code execution (RCE) by swapping out the requested binary with an attacker controlled
-  binary if the attacker is on the network or positioned in between the user and the
-  remote server."
+description: "alto-saxophone download binary resources over HTTP, which leaves it
+  vulnerable to MITM attacks. It may be possible to cause remote code execution (RCE)
+  by swapping out the requested binary with an attacker controlled binary if the attacker
+  is on the network or positioned in between the user and the remote server."
 date: "2017-01-01"
 pubdate: "2017-01-01"
 affected_range: "<2.25.1"
@@ -18,3 +17,6 @@ urls:
 - "https://nodesecurity.io/advisories/172"
 credit: "Adam Baldwin"
 uuid: "c4119041-e6b5-4df2-8e45-b12c75e958a9"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

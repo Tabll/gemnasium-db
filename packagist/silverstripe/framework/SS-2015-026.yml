@@ -21,3 +21,6 @@ urls:
 - "http://www.silverstripe.org/download/security-releases/ss-2015-026/"
 credit: "Arjun Basnet from Cyber Security Works Pvt. Ltd"
 uuid: "fbccf217-cd72-45bf-b52c-d867f309792e"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

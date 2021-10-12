@@ -23,3 +23,6 @@ urls:
 - "https://www.silverstripe.org/download/security-releases/ss-2016-007/"
 credit: "Matthew Daley"
 uuid: "5fb6a408-ab7d-4b82-9857-c566b7f8ad3b"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

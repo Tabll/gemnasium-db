@@ -18,3 +18,6 @@ urls:
 - "http://share.ez.no/community-project/security-advisories/ezsa-2017-006-information-disclosure-in-backend-content-tree-menu"
 - "https://github.com/ezsystems/ezpublish-legacy/commit/a4a0470f8d80f012fe14e4f8ab11c7d14375986c"
 uuid: "217fba50-ee53-4a83-befd-1a169bc752ad"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

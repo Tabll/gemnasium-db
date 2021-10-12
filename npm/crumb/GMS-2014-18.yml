@@ -21,3 +21,6 @@ urls:
 - "https://nodesecurity.io/advisories/crumb_cors_token_disclosure"
 credit: "Marcus Stong"
 uuid: "f96a3e93-d9a8-4459-b0e8-0f5d8ea4fe7c"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

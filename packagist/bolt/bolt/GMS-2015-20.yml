@@ -21,3 +21,6 @@ urls:
 - "https://github.com/bolt/bolt/pull/3815"
 credit: "Tim Coen of Curesec GmbH"
 uuid: "bd543b18-5d5e-46c5-bc88-aaa0f632c0cc"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

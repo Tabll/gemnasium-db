@@ -1,5 +1,3 @@
-# This advisory is derived from
-# https://github.com/FriendsOfPHP/security-advisories
 ---
 identifier: "2018-10-02"
 package_slug: "packagist/alterphp/easyadmin-extension-bundle"
@@ -19,3 +17,6 @@ solution: "Upgrade to versions 1.2.11, 1.3.1 or above."
 urls:
 - "https://github.com/alterphp/EasyAdminExtensionBundle/releases/tag/v1.3.1"
 uuid: "df47b34b-de04-42d3-ba8c-2d2d9833adc0"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

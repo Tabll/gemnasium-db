@@ -1,5 +1,3 @@
-# This advisory is derived from
-# https://github.com/FriendsOfPHP/security-advisories
 ---
 identifier: "2016-09-05"
 package_slug: "packagist/cartalyst/sentry"
@@ -16,3 +14,6 @@ solution: "Upgrade to version 2.1.7 or above."
 urls:
 - "https://haxx.ml/post/149975211631/how-i-hacked-your-cfp-and-probably-some-other"
 uuid: "be87b502-0f68-46ac-96f0-1641c63cc853"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

@@ -1,5 +1,3 @@
-# This advisory is derived from
-# https://github.com/FriendsOfPHP/security-advisories
 ---
 identifier: "2018-03-06"
 package_slug: "packagist/adodb/adodb-php"
@@ -16,3 +14,6 @@ solution: "Upgrade to version 5.20.12 or above."
 urls:
 - "https://github.com/ADOdb/ADOdb/pull/401"
 uuid: "147cdf17-a45b-42e6-abad-89a67a159681"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

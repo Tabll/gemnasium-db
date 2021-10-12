@@ -19,3 +19,6 @@ urls:
 - "https://nodesecurity.io/advisories/558"
 credit: "Maciej Krüger, David Dias"
 uuid: "a2f84dd5-2ffe-4f76-91cf-796b29bb7897"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

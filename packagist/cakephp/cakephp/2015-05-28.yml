@@ -1,5 +1,3 @@
-# This advisory is derived from
-# https://github.com/FriendsOfPHP/security-advisories
 ---
 identifier: "2015-05-28"
 package_slug: "packagist/cakephp/cakephp"
@@ -27,3 +25,6 @@ solution: "Upgrade to versions 2.6.6, 3.0.6 or above."
 urls:
 - "https://bakery.cakephp.org/2015/05/28/cakephp_2_6_6_and_3_0_6_released.html"
 uuid: "16d3273c-1cf8-43d6-b60a-a8b460328d4d"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

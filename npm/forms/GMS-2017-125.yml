@@ -17,3 +17,6 @@ urls:
 - "https://nodesecurity.io/advisories/158"
 credit: "Jordan Harband"
 uuid: "fc62152d-c374-4a0f-a8a7-c0e8222e9b43"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

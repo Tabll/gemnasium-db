@@ -15,3 +15,6 @@ solution: "Upgrade to version v2.0.6 or above."
 urls:
 - "https://github.com/amphp/artax/releases/tag/v2.0.6"
 uuid: "fb7a804d-dfd6-4a58-9e85-d0858643dd82"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

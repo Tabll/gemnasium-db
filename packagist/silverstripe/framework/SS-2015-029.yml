@@ -26,3 +26,6 @@ urls:
 - "https://github.com/silverstripe/silverstripe-framework/commit/3c0f2e8e11a1bead64d869854b9dfc0f80e7579a"
 credit: "Alain J Homewood - PWC"
 uuid: "ef9cc84f-ddf9-4569-9ae9-b0494d663339"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

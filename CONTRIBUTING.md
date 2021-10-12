@@ -49,7 +49,7 @@ description about the advisories it contains.
 Please checks these before submitting a YAML file to the repo:
 
 All the YAML fields should be double-quoted and all files should start with three dashes `---`.
-The text width for all fields should be <=100 characters. 
+The text width for all fields should be <=150 characters. 
 The indentation level should be 2 characters. These rules are enforced through
 yamllint.
 

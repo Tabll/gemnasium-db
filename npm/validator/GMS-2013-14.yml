@@ -16,3 +16,6 @@ urls:
 - "https://nealpoole.com/blog/2013/07/xss-filter-bypass-in-validator-nodejs-module/"
 credit: "Neal Poole"
 uuid: "9ad2a6d5-4184-4423-b080-e7f2bac589b5"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

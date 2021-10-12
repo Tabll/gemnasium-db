@@ -21,3 +21,6 @@ credit: " James Kettle who was the first to report a RCE security issue, Alain T
   Christophe\nCoevoet, and Fabien Potencier for finding more possible and dangerous
   RCEs."
 uuid: "f97bda53-2b96-44b3-8057-6239d361d452"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

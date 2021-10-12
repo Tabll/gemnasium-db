@@ -17,3 +17,6 @@ urls:
 - "https://github.com/hybridauth/hybridauth/blob/e261094cbb527b2174ca6c1cc00a0ea6a590c79e/CHANGELOG#L88"
 credit: "LongCat"
 uuid: "86d010f4-a558-4ab9-b80a-b0ba708d7652"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

@@ -16,3 +16,6 @@ urls:
 - "http://www.silverstripe.org/software/download/security-releases/ss-2015-020/"
 credit: "Florian Thoma"
 uuid: "2a5ef867-5beb-40f4-9719-0a2a89cdc8b5"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

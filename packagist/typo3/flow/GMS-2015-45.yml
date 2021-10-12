@@ -19,3 +19,6 @@ urls:
 - "https://www.neos.io/news/flow-sa-2015-001.html"
 credit: "Wouter Wolters"
 uuid: "99cec42e-fb3d-42aa-bfdf-32aa229a902b"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

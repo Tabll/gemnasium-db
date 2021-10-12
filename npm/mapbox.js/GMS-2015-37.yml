@@ -19,3 +19,6 @@ urls:
 - "https://nodesecurity.io/advisories/49"
 credit: "John Firebaugh, Juan Broullón Sampedro"
 uuid: "0cc1813a-8ab7-42aa-a35f-a988551e0dc1"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

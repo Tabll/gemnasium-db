@@ -16,3 +16,6 @@ urls:
 - "https://github.com/jazzband/django-embed-video/commit/d0d357b767e324a7cc21b5035357fdfbc7c8ce8e"
 credit: "Juda Kaleta"
 uuid: "d53170d6-4565-43f1-a0d4-a3d6af1053b8"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

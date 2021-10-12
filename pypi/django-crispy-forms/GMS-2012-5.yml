@@ -17,3 +17,6 @@ urls:
 - "https://github.com/django-crispy-forms/django-crispy-forms/commit/51531004c5a035f20769266a9181e8cd44ed4a5e"
 credit: "Paul Oswald"
 uuid: "88a9e229-5b95-403d-a12e-e60e9ad23ee2"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

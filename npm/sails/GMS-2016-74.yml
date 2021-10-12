@@ -26,3 +26,6 @@ urls:
 - "https://nodesecurity.io/advisories/148"
 credit: "Evan Johnson"
 uuid: "32e80a10-38c0-4fc0-8222-13423d09eedc"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

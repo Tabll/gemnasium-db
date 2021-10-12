@@ -3,7 +3,7 @@ identifier: "GMS-2017-215"
 package_slug: "npm/slug"
 title: "Regular Expression Denial of Service"
 description: "slug is vulnerable to regular expression denial of service is specially
-  crafted untrusted input is passed as input. About 50k characters can block the event
+  crafted untrusted input is passed as input. About k characters can block the event
   loop for 2 seconds."
 date: "2017-09-25"
 pubdate: "2017-09-25"
@@ -16,3 +16,6 @@ urls:
 - "https://nodesecurity.io/advisories/537"
 credit: "Cristian-Alexandru Staicu"
 uuid: "2e11bb5b-8a7a-4d20-bd18-c3f79cf7a253"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

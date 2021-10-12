@@ -20,3 +20,6 @@ urls:
 - "https://nodesecurity.io/advisories/88"
 credit: "Brian Brennan and Tim McLean"
 uuid: "43dd4f0e-e7a8-47d5-aa7e-f84efb60a5e2"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

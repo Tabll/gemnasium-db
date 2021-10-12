@@ -16,3 +16,6 @@ urls:
 - "https://nodesecurity.io/advisories/50"
 credit: "Joshua Dague"
 uuid: "d206158e-37e8-400c-8eda-01cf6f6a750d"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

@@ -16,3 +16,6 @@ urls:
 - "https://nodesecurity.io/advisories/314"
 credit: "CycoPH"
 uuid: "f48ce8e1-1689-4274-bd33-cce0258467b4"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

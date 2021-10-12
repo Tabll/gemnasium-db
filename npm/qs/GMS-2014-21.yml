@@ -17,3 +17,6 @@ urls:
 - "https://www.npmjs.org/package/qs"
 credit: "Tom Steele"
 uuid: "dc790c1c-61ce-4295-ae2d-5e02a42a7de5"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

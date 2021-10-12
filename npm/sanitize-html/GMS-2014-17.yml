@@ -18,3 +18,6 @@ urls:
 - "https://nodesecurity.io/advisories/155"
 credit: "Jim O'Brien"
 uuid: "5b7ca891-3705-4a01-a3ba-d11f8a05b620"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

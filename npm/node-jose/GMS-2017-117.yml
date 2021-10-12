@@ -18,3 +18,6 @@ urls:
 - "https://nodesecurity.io/advisories/324"
 credit: "Antonio Sanso"
 uuid: "093623ab-1967-4991-ba9e-109a384e1fcc"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

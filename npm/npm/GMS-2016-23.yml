@@ -2,8 +2,8 @@
 identifier: "GMS-2016-23"
 package_slug: "npm/npm"
 title: "npm Token Leak"
-description: "The primary npm registry has, since late 2014, used HTTP bearer tokens
-  to authenticate requests from the npm command-line interface. Due to a design flaw
+description: "The primary npm registry has, since late, used HTTP bearer tokens to
+  authenticate requests from the npm command-line interface. Due to a design flaw
   in the CLI, these bearer tokens were sent with every request made by the CLI for
   logged-in users, regardless of the destination of the request. They should instead
   only be included for requests made against the registry or registries used for the
@@ -28,3 +28,6 @@ urls:
 - "https://www.npmjs.com/settings/tokens"
 credit: "Mitar, Will White & the team at Mapbox, Max Motovilov, and James Taylor"
 uuid: "4cb639ca-5f18-4c73-91f8-1b5db9a10866"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

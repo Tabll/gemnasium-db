@@ -13,3 +13,6 @@ solution: "Please upgrade to 1.0.1 or above"
 urls: []
 credit: "Christian Tschoepe <christian.tschoepe@rackspace.com>"
 uuid: "71b0d915-9380-49aa-82ce-447ce6928a5e"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

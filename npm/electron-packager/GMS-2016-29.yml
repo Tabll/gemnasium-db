@@ -26,3 +26,6 @@ urls:
 - "https://nodesecurity.io/advisories/104"
 credit: "Mark Lee"
 uuid: "26441c8c-16e6-4ae8-bb6c-c74c424a1f98"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

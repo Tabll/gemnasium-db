@@ -19,3 +19,6 @@ urls:
 - "https://nodesecurity.io/advisories/90"
 credit: "Craig Arendt"
 uuid: "789d2819-31f7-4392-a6db-17068f8baabd"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

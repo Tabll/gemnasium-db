@@ -14,3 +14,6 @@ solution: "Upgrade to latest or apply patches."
 urls:
 - "http://en.community.shopware.com/_detail_2015.html"
 uuid: "ef9fa3a4-176c-4245-b7dc-ec54e260aa42"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

@@ -1,5 +1,3 @@
-# This advisory is derived from
-# https://github.com/FriendsOfPHP/security-advisories
 ---
 identifier: "2015-05-13"
 package_slug: "packagist/pusher/pusher-php-server"
@@ -16,3 +14,6 @@ solution: "Upgrade to version 2.2.1 or above."
 urls:
 - "https://blog.pusher.com/update-on-security/"
 uuid: "73c6d320-0190-4143-a0d8-303f9bb4657e"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

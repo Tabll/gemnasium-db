@@ -17,3 +17,6 @@ urls:
 - "https://nodesecurity.io/advisories/156"
 credit: "Scott Hardy & Adam Baldwin"
 uuid: "d61fc0e3-5edd-476b-8d82-b7d1e97b50c4"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

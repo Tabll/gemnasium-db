@@ -19,3 +19,6 @@ urls:
 - "https://github.com/yaybu/yaybu/issues/62"
 credit: "Doug Winter"
 uuid: "d494bdd2-8edb-4c71-9a3e-dce608eb1595"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

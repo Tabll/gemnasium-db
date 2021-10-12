@@ -19,3 +19,6 @@ urls:
 - "https://nodesecurity.io/advisories/75"
 credit: "Peter Sorowka"
 uuid: "25798734-b115-4401-9784-6992003165c0"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

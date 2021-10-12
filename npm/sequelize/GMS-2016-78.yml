@@ -16,3 +16,6 @@ urls:
 - "https://nodesecurity.io/advisories/102"
 credit: "Leibale Eidelman"
 uuid: "0d89ac02-0810-47c5-8408-e11687502956"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

@@ -20,3 +20,6 @@ urls:
 - "https://www.silverstripe.org/download/security-releases/ss-2017-001/"
 credit: "Edric Teo"
 uuid: "2a282e23-034b-4cc5-94f3-926939f8803a"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

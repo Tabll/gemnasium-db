@@ -3,8 +3,7 @@ identifier: "GMS-2016-45"
 package_slug: "npm/swagger-ui"
 title: "XSS in key names"
 description: "Swagger-ui contains a cross site scripting (XSS) vulnerability in the
-  key names for the following object path in the JSON document: 
-  `.definitions.{USER_DEFINED}.properties.{INJECTABLE_KEY_NAME}`.
+  key names for the following object path in the JSON document: `.definitions.{USER_DEFINED}.properties.{INJECTABLE_KEY_NAME}`.
   Supplying a key name with script tags causes arbitrary code execution. In addition
   it is possible to load the arbitrary JSON files remotely via the `URL` query-string
   parameter."
@@ -22,3 +21,6 @@ urls:
 - "https://nodesecurity.io/advisories/126"
 credit: "Joe Vennix"
 uuid: "930c411b-4b66-47e0-b2dd-6090d3490d6f"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

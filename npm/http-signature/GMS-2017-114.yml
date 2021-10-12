@@ -17,3 +17,6 @@ urls:
 - "https://nodesecurity.io/advisories/318"
 credit: "Dave Longley"
 uuid: "7bdb7b9a-ab15-44ea-95e3-987d94aa11ea"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

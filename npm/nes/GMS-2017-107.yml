@@ -19,3 +19,6 @@ urls:
 - "https://nodesecurity.io/advisories/331"
 credit: "iipokypatop"
 uuid: "7dfc8fc6-f198-48be-b939-b912b2844f32"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

@@ -17,3 +17,6 @@ urls:
 - "http://www.vapid.dhs.org/advisories/backup-agoddard-3.0.28.html"
 credit: "Larry W. Cashdollar, @_larry0"
 uuid: "5990d41c-cdd7-4e64-8792-e5112d6f843f"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

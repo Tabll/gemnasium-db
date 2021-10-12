@@ -17,3 +17,6 @@ urls:
 - "https://nodesecurity.io/advisories/13"
 credit: "Neal Poole"
 uuid: "ded2e6e1-52f3-4c3c-b0fa-fce3f3eed1ca"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

@@ -1,5 +1,3 @@
-# This advisory is derived from
-# https://github.com/FriendsOfPHP/security-advisories
 ---
 identifier: "2019-11-19"
 package_slug: "packagist/simplesamlphp/simplesamlphp"
@@ -16,3 +14,6 @@ solution: "Upgrade to version 1.17.8 or above."
 urls:
 - "https://simplesamlphp.org/security/201911-02"
 uuid: "d40335f6-312c-497b-87df-3c6e714383de"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

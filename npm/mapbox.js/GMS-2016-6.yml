@@ -21,3 +21,6 @@ urls:
 - "https://nodesecurity.io/advisories/74"
 credit: "Alexandra Ulsh, Abdullah Ahmet Erdem"
 uuid: "af2f8035-5f46-49a2-8966-b8f745c2ab11"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

@@ -23,3 +23,6 @@ urls:
 - "http://framework.zend.com/security/advisory/ZF2015-09"
 credit: "Vincent Herbulot, Enrico Zimuel"
 uuid: "387723a0-edf8-4a8a-9ea2-0b5eb38e5d38"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

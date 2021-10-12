@@ -15,3 +15,6 @@ urls:
 - "https://github.com/laravel/socialite/pull/93"
 credit: "Graham Campbell"
 uuid: "142ed7c0-3a74-4fed-b818-fb63f89dcfbf"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

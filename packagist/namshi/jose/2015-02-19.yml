@@ -1,5 +1,3 @@
-# This advisory is derived from
-# https://github.com/FriendsOfPHP/security-advisories
 ---
 identifier: "2015-02-19"
 package_slug: "packagist/namshi/jose"
@@ -23,3 +21,6 @@ solution: "Upgrade to versions 1.1.2, 1.2.2, 2.0.3, 2.1.2 or above."
 urls:
 - "https://github.com/namshi/jose/commit/009f86d6ced000b806b2f602c0b7393060ebb34e"
 uuid: "2f5c6e22-70ed-4748-94f0-6a83e154f1fd"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

@@ -15,3 +15,6 @@ urls:
 - "https://github.com/angular/angular.js/commit/f35f334bd3197585bdf034f4b6d9ffa3122dac62"
 credit: "Raphaël Jamet\r\nGeorge Kalpakas \r\nIgor Minar \r\n"
 uuid: "1726b349-06de-4554-8d39-b8c9a4e8a5bc"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

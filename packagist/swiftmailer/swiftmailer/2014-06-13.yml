@@ -1,5 +1,3 @@
-# This advisory is derived from
-# https://github.com/FriendsOfPHP/security-advisories
 ---
 identifier: "2014-06-13"
 package_slug: "packagist/swiftmailer/swiftmailer"
@@ -18,3 +16,6 @@ solution: "Upgrade to version 5.2.1 or above."
 urls:
 - "http://blog.swiftmailer.org/post/88660759928/security-fix-swiftmailer-5-2-1-released"
 uuid: "bbee823f-50a5-41c3-b84b-f12e1395d17b"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

@@ -15,3 +15,6 @@ urls:
 - "http://forum.codeigniter.com/thread-65803.html"
 - "http://www.codeigniter.com/user_guide/changelog.html#version-3-1-0"
 uuid: "a57c59f9-2cd5-4305-8ec0-6c72ef6793d9"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

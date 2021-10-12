@@ -27,3 +27,6 @@ urls:
 - "https://github.com/silverstripe/silverstripe-framework/commit/f32c893546340c8c279fd1ab6d4269e9d6539bc2"
 credit: "Will Rossiter "
 uuid: "f5d554da-1e60-450a-9378-a289d428c9d8"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

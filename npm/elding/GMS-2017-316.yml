@@ -5,7 +5,7 @@ title: "Directory Traversal"
 description: "`elding` is vulnerable to a directory traversal issue, allowing an attacker
   to access the filesystem by placing \"../\" in the url. /nThe files accessible,
   however, are limited to files with a file extension. Sending a `GET` request to
-  `/../../../etc/passwd`, for example, will return a 404 on etc/passwd/index.js."
+  `/../../../etc/passwd`, for example, will return a on etc/passwd/index.js."
 date: "2017-10-10"
 pubdate: "2017-10-10"
 affected_range: ">=0.0.0-alpha"
@@ -17,3 +17,6 @@ urls:
 - "https://nodesecurity.io/advisories/415"
 credit: "Liang Gong"
 uuid: "93daefdd-0fe4-422c-bbf1-54ef1a3d8db4"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

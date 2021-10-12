@@ -26,3 +26,6 @@ urls:
 - "https://github.com/silverstripe/silverstripe-framework/commit/a24c8260b1d048dc6a0836eb1be9a1ca2056e770"
 credit: "Eric Flokstra"
 uuid: "4927825d-9838-45bf-a97d-5bdaa9f701d3"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

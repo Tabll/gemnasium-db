@@ -18,3 +18,6 @@ urls:
 - "https://nodesecurity.io/advisories/309"
 credit: "Feross Aboukhadijeh"
 uuid: "04e24d91-9ce3-437b-a24d-7e9d3ec9f447"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

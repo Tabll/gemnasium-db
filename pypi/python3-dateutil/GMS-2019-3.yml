@@ -12,3 +12,6 @@ solution: "Replace this package with dateutil."
 urls:
 - "https://www.zdnet.com/article/two-malicious-python-libraries-removed-from-pypi/"
 uuid: "78990aad-e6b9-47d4-91ab-acdcd98ed2fd"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

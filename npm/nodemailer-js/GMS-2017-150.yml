@@ -14,3 +14,6 @@ solution: "If you have found this installed in your environment you should inval
 urls:
 - "https://nodesecurity.io/advisories/510"
 uuid: "2a47c8e1-4d79-4a74-bab8-f6a74815a0b3"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

@@ -33,3 +33,6 @@ urls:
 - "https://www.silverstripe.org/download/security-releases/ss-2016-010/"
 credit: "security-assessment.com, division of Dimension Data"
 uuid: "63bde099-0b5f-4527-b494-4914a9c0c30a"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
