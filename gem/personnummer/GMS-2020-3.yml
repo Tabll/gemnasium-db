@@ -1,0 +1,18 @@
+---
+identifier: "GMS-2020-3"
+package_slug: "gem/personnummer"
+title: "Improper Input Validation"
+description: "Improper Input Validation in personnummer."
+date: "2020-09-01"
+pubdate: "2020-09-01"
+affected_range: "<1.3.1"
+fixed_versions: []
+affected_versions: "All versions before 1.3.1"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls: []
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
+- "CWE-20"
+uuid: "b1f6754d-915f-4b35-866b-01942f75f024"

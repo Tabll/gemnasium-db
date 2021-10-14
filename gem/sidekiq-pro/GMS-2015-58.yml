@@ -1,0 +1,17 @@
+---
+identifier: "GMS-2015-58"
+package_slug: "gem/sidekiq-pro"
+title: "Typosquatting"
+description: "This is a malicious package. You may want to install sidekiq."
+date: "2015-05-01"
+pubdate: "2015-05-01"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions before 2.0.2"
+not_impacted: ""
+solution: "Do not install this package."
+urls: []
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
+uuid: "70f8603c-3cb1-444f-a953-2978bdc20205"

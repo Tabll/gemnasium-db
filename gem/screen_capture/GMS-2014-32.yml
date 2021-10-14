@@ -1,0 +1,20 @@
+---
+identifier: "GMS-2014-32"
+package_slug: "gem/screen_capture"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in screen_capture."
+date: "2014-06-01"
+pubdate: "2014-06-01"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls: []
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"
+uuid: "e0520c05-ebcd-4456-b572-8b0873086e71"
