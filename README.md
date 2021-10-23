@@ -26,6 +26,11 @@ you can contribute to the GitLab Advisory Database database by opening an issue,
 or even submit the vulnerability as a YAML file in a merge request.
 Please review the [contribution guidelines](CONTRIBUTING.md).
 
+In case you do not want to create the advisory yourself, you can also create an
+issue and mention the missing advisory. In this case, we would be grateful if
+you could add a publicly available resource/links to mailing lists and/or issue
+description for verification purposes.
+
 ## Credits 
 
 We would like to thank the following authors very much for their valuable
