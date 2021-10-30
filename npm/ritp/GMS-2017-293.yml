@@ -13,9 +13,10 @@ affected_versions: "All versions"
 solution: "There is no solution for this vulnerability at the moment."
 urls:
 - "https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/ritp"
-- "https://nodesecurity.io/advisories/432"
 credit: "Liang Gong"
 uuid: "49f94dd2-b4fd-42d7-bcc8-401fb96cbd69"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2017-293"

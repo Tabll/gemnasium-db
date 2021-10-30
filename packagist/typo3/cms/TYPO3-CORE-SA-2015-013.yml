@@ -20,3 +20,5 @@ urls:
 - "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2015-013/"
 credit: "Nils Juenemann, Georg Ringer"
 uuid: "3fe64157-b187-4a27-9e81-9535a15e4013"
+identifiers:
+- "TYPO3-CORE-SA-2015-013"

@@ -12,9 +12,10 @@ affected_versions: "All versions"
 solution: "There is no solution for this vulnerability at the moment."
 urls:
 - "https://github.com/JacksonGL/NPM-Vuln-PoC/tree/master/directory-traversal/tiny-http"
-- "https://nodesecurity.io/advisories/342"
 credit: "Liang Gong"
 uuid: "f52dfe69-6298-4493-a61d-5d08619a4568"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2017-192"

@@ -17,3 +17,5 @@ urls:
 - "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2015-015/"
 credit: "Dmitry Dulepov"
 uuid: "540c63f4-844f-462e-830f-d2c598a766ed"
+identifiers:
+- "TYPO3-CORE-SA-2015-015"

@@ -20,3 +20,5 @@ uuid: "4652d8d8-6f10-4460-8d88-daa80df3b0a7"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "SS-2015-024"

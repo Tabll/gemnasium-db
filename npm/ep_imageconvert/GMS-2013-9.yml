@@ -13,9 +13,10 @@ not_impacted: "All versions starting from 0.0.3"
 solution: "Upgrade to version 0.0.3 or above."
 urls:
 - "https://github.com/redhog/ep_imageconvert/pull/5"
-- "https://nodesecurity.io/advisories/ep_imageconvert_command_injection"
 credit: "Neal Poole"
 uuid: "6b6980cc-8beb-4c82-a23f-45bf332b5f43"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2013-9"

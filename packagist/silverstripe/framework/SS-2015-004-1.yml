@@ -1,5 +1,3 @@
-# This advisory is derived from##
-# https://github.com/FriendsOfPHP/security-advisories
 ---
 identifier: "SS-2015-004-1"
 package_slug: "packagist/silverstripe/framework"
@@ -16,3 +14,5 @@ solution: "Upgrade to version 3.1.10 or above."
 urls:
 - "https://www.silverstripe.org/software/download/security-releases/ss-2015-004/"
 uuid: "15120ebb-fece-4bfe-a31e-dcfd4cb74868"
+identifiers:
+- "SS-2015-004-1"

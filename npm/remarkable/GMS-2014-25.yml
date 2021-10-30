@@ -15,9 +15,10 @@ not_impacted: "All versions starting from 1.4.1"
 solution: "Upgrade to version 1.4.1 or above."
 urls:
 - "https://github.com/jonschlinkert/remarkable/issues/97"
-- "https://nodesecurity.io/advisories/remarkable_content_injection"
 credit: "Adam Baldwin"
 uuid: "62f5a267-0fc7-4eea-af92-9b40316a17a4"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2014-25"

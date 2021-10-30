@@ -24,10 +24,11 @@ solution: "Upgrade npm itself with `npm install npm@latest -g` and revoke your t
 urls:
 - "http://blog.npmjs.org/post/142036323955/fixing-a-bearer-token-vulnerability"
 - "https://nodejs.org/en/blog/vulnerability/npm-tokens-leak-march-2016/"
-- "https://nodesecurity.io/advisories/98"
 - "https://www.npmjs.com/settings/tokens"
 credit: "Mitar, Will White & the team at Mapbox, Max Motovilov, and James Taylor"
 uuid: "4cb639ca-5f18-4c73-91f8-1b5db9a10866"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2016-23"

@@ -31,9 +31,10 @@ affected_versions: "All versions before 2.11.2, all versions starting from 3.0.0
 solution: "Upgrade to one of the fixed versions."
 urls:
 - "https://node-postgres.com/announcements#2017-08-12-code-execution-vulnerability"
-- "https://nodesecurity.io/advisories/521"
 credit: "Sehrope Sarkuni"
 uuid: "7d7894a7-f07c-40d8-80fc-91c0007ccf60"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2017-178"

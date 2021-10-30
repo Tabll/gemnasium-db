@@ -14,9 +14,10 @@ affected_versions: "All versions before 1.3.0"
 solution: "Upgrade to version 1.3.0 or later"
 urls:
 - "https://github.com/caolan/forms/commit/bc01e534a0ff863dedb2026a50bd03153bbc6a5d"
-- "https://nodesecurity.io/advisories/158"
 credit: "Jordan Harband"
 uuid: "fc62152d-c374-4a0f-a8a7-c0e8222e9b43"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2017-125"

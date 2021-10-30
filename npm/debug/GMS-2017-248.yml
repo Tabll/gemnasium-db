@@ -19,9 +19,10 @@ solution: "Upgrade to versions 2.6.9, 3.1.0 or above."
 urls:
 - "https://github.com/visionmedia/debug/issues/501"
 - "https://github.com/visionmedia/debug/pull/504"
-- "https://nodesecurity.io/advisories/534"
 credit: "Cristian-Alexandru Staicu"
 uuid: "37283ed4-0380-40d7-ada7-2d994afcc62a"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2017-248"

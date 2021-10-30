@@ -12,9 +12,10 @@ affected_versions: "All versions"
 solution: "There is no solution for this vulnerability at the moment."
 urls:
 - "https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/city-weather-abe"
-- "https://nodesecurity.io/advisories/408"
 credit: "Liang Gong"
 uuid: "d7719ea5-20fc-4357-8842-ca0bcf81e3c8"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2017-325"

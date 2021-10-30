@@ -12,9 +12,10 @@ affected_versions: "All versions"
 solution: "There is no solution for this vulnerability at the moment."
 urls:
 - "https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/caolilinode"
-- "https://nodesecurity.io/advisories/394"
 credit: "Liang Gong"
 uuid: "ed91e8a1-5999-47ac-8432-67e50c3d4a9c"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2017-252"

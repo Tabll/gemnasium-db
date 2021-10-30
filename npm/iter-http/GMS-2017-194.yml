@@ -12,9 +12,10 @@ affected_versions: "All versions"
 solution: "There is no solution for this vulnerability at the moment."
 urls:
 - "https://github.com/JacksonGL/NPM-Vuln-PoC/tree/master/directory-traversal/iter-http"
-- "https://nodesecurity.io/advisories/343"
 credit: "Liang Gong"
 uuid: "06e74d24-65e7-4e57-afde-008c59cf8afa"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2017-194"

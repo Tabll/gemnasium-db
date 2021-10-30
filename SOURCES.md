@@ -15,7 +15,7 @@ following the [contribution guidelines](CONTRIBUTING.md).
 - [oss-security mailing list](http://www.openwall.com/lists/oss-security/)
 - [ruby-advisory-db](https://github.com/rubysec/ruby-advisory-db)
 
-While the source tracking of NVD, FriendsOfPHP and Victims CVE DB is semi-automated, 
+While the advisory tracking for NVD and ruby-advisory-db is semi-automated, 
 we check the oss-security mailing list manually. 
 
 For the manual source tracking, we use the following strategy:

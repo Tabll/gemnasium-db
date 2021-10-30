@@ -16,9 +16,10 @@ solution: "No fix is currently available for this vulnerability. It's recommende
   to not install nor use this module."
 urls:
 - "https://github.com/DirtyHairy/node-libxl/blob/f993517a91c070a4e260e06e88ced6639f651f97/install-libxl.js#L74"
-- "https://nodesecurity.io/advisories/178"
 credit: "Adam Baldwin"
 uuid: "784457b1-c252-49bd-bad1-ba212d5a1190"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2016-119"

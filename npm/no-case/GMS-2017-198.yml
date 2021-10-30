@@ -13,9 +13,10 @@ affected_versions: "All versions before 2.3.2"
 solution: "Upgrade to version 2.3.2 or greater."
 urls:
 - "https://github.com/blakeembrey/no-case/issues/17"
-- "https://nodesecurity.io/advisories/529"
 credit: "Cristian-Alexandru Staicu"
 uuid: "feb8cb59-4089-4280-b77f-65a24840887f"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2017-198"

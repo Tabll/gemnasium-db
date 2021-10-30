@@ -18,10 +18,11 @@ not_impacted: "All versions after 1.6.8"
 solution: "Upgrade to version 1.6.9 or above."
 urls:
 - "https://github.com/socketio/engine.io-client/commit/2c55b278a491bf45313ecc0825cf800e2f7ff5c1"
-- "https://nodesecurity.io/advisories/99"
 - "https://www.cigital.com/blog/node-js-socket-io/"
 credit: "David Johansson"
 uuid: "06be7bcf-c759-490d-8aa9-d3d922ec8486"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2016-31"

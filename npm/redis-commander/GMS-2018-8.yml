@@ -13,9 +13,10 @@ affected_versions: "All versions"
 solution: "There is no solution for this vulnerability at the moment."
 urls:
 - "https://hackerone.com/reports/296377"
-- "https://nodesecurity.io/advisories/562"
 credit: "Yasin Soliman (ysx)"
 uuid: "f18038c4-58bc-410c-9524-a682f7786e7c"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2018-8"

@@ -13,9 +13,10 @@ solution: "Until a fix is available do not use parsejson to parse json. Use JSON
   instead if available."
 urls:
 - "https://github.com/get/parsejson/issues/4"
-- "https://nodesecurity.io/advisories/528"
 credit: "Cristian-Alexandru Staicu"
 uuid: "b425eff1-2755-406d-8cde-8c9dc36b3c6b"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2017-211"

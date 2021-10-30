@@ -14,10 +14,11 @@ fixed_versions: []
 affected_versions: "All versions"
 solution: "There is no solution for this vulnerability at the moment, so this is recommended
   to use a different module."
-urls:
-- "https://nodesecurity.io/advisories/334"
+urls: []
 credit: "Adam Baldwin"
 uuid: "676994be-e01e-40c6-b90f-8e3f380c5744"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2017-136"

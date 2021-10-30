@@ -15,10 +15,11 @@ fixed_versions:
 affected_versions: "All versions before 1.0.0"
 not_impacted: "All versions starting from 1.0.0"
 solution: "Upgrade to version 1.0.0 or above."
-urls:
-- "https://nodesecurity.io/advisories/85"
+urls: []
 credit: "Stephan Bönnemann"
 uuid: "4ec8438c-833a-4725-85fc-abc143ad893c"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2016-15"

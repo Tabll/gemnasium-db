@@ -13,10 +13,11 @@ fixed_versions:
 affected_versions: "All versions before 0.3.16"
 not_impacted: "All versions starting from 0.3.16"
 solution: "Upgrade to version 0.3.16 or above."
-urls:
-- "https://nodesecurity.io/advisories/60"
+urls: []
 credit: "Greg Meyer"
 uuid: "f96dca21-b68a-4fa0-a690-6f409c4ef3d9"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2015-50"

@@ -14,10 +14,11 @@ fixed_versions:
 affected_versions: "All versions before 1.0.2"
 not_impacted: "All versions starting from 1.0.2"
 solution: "Upgrade to version 1.0.2 or above."
-urls:
-- "https://nodesecurity.io/advisories/163"
+urls: []
 credit: "Adam Baldwin"
 uuid: "82b033cc-5330-4b1e-8f73-5cfd5c9aaa2f"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2016-110"

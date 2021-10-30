@@ -13,9 +13,10 @@ solution: "There is no solution for this vulnerability at the moment, so it's re
   to use a different module."
 urls:
 - "https://github.com/JacksonGL/NPM-Vuln-PoC/tree/master/directory-traversal/badjs-sourcemap-server"
-- "https://nodesecurity.io/advisories/349"
 credit: "Liang Gong"
 uuid: "e1787585-578c-4d07-ba63-e268253a568c"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2017-127"

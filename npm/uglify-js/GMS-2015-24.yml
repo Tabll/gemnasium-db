@@ -16,10 +16,11 @@ not_impacted: "All versions starting from 2.4.24"
 solution: "Upgrade to version 2.4.24 or above."
 urls:
 - "https://github.com/mishoo/UglifyJS2/issues/751"
-- "https://nodesecurity.io/advisories/uglifyjs_incorrectly_handles_non-boolean_comparisons"
 - "https://zyan.scripts.mit.edu/blog/backdooring-js/"
 credit: "Yan Zhu, Tom MacWright (uglify-js)"
 uuid: "f52aa9e4-a3b1-4b29-99f8-eb7c1d2181e6"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2015-24"

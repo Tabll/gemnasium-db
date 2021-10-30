@@ -15,9 +15,10 @@ solution: "Upgrade to version 5.2.2 or later."
 urls:
 - "https://github.com/zkat/ssri/commit/d0ebcdc"
 - "https://github.com/zkat/ssri/pull/10"
-- "https://nodesecurity.io/advisories/565"
 credit: "Jamie Davis"
 uuid: "4fcea192-70af-401b-bf74-a19e17a22cb5"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2018-11"

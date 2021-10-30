@@ -31,3 +31,5 @@ versions:
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2019-2"

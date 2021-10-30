@@ -17,3 +17,5 @@ urls:
 - "http://seclists.org/fulldisclosure/2014/Apr/att-264/jruby-sandbox.txt"
 credit: "joernchen - Phenoelit\r\n"
 uuid: "9ea06338-835a-4037-bfb3-b62f21a290ad"
+identifiers:
+- "OSVDB-106279"

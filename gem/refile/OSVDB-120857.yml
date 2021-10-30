@@ -18,3 +18,5 @@ urls:
 - "https://groups.google.com/forum/#!topic/ruby-security-ann/VIfMO2LvzNs"
 credit: "Ted Johansson of Tinkerbox"
 uuid: "3215d8be-ab48-43cf-9d2f-82a88fe51bb2"
+identifiers:
+- "OSVDB-120857"

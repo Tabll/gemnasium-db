@@ -16,3 +16,5 @@ urls:
 - "https://github.com/wycats/handlebars.js/commit/83b8e846a3569bd366cf0b6bdc1e4604d1a2077e"
 - "https://github.com/wycats/handlebars.js/issues/1114"
 uuid: "b99220c9-6a66-4b17-b02c-91f77371589d"
+identifiers:
+- "OSVDB-131671"

@@ -15,9 +15,10 @@ solution: "Update to version 1.2.5 or later"
 urls:
 - "https://gist.github.com/ChALkeR/415a41b561ebea9b341efbb40b802fc9"
 - "https://github.com/MoOx/reduce-css-calc/commit/aebe8f7adce937c0fec4c1315e4113ef74cadb6a"
-- "https://nodesecurity.io/advisories/144"
 credit: "Сковорода Никита Андреевич"
 uuid: "55ce8ffe-908f-496e-ad30-59cd166ad0cf"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2016-72"

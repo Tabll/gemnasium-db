@@ -15,9 +15,10 @@ not_impacted: "All versions before 2.1.2-m2, all versions starting from 2.1.5"
 solution: "Upgrade to version 2.1.5 or above."
 urls:
 - "https://github.com/swagger-api/swagger-ui/issues/1863"
-- "https://nodesecurity.io/advisories/131"
 credit: "Joe Vennix"
 uuid: "0290c4b6-a047-40e0-a616-c4ce696b3c12"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2016-51"

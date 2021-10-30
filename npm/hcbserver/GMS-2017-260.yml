@@ -12,9 +12,10 @@ affected_versions: "All versions"
 solution: "There is no solution for this vulnerability at the moment."
 urls:
 - "https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/hcbserver"
-- "https://nodesecurity.io/advisories/414"
 credit: "Liang Gong"
 uuid: "d85df590-48e3-490a-bf41-7f9cdca04314"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2017-260"

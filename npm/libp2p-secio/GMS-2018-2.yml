@@ -16,9 +16,10 @@ not_impacted: "All versions after 0.8.1"
 solution: "Upgrade to version 0.9.0 or above."
 urls:
 - "https://github.com/libp2p/js-libp2p-secio/pull/95"
-- "https://nodesecurity.io/advisories/558"
 credit: "Maciej Krüger, David Dias"
 uuid: "a2f84dd5-2ffe-4f76-91cf-796b29bb7897"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2018-2"

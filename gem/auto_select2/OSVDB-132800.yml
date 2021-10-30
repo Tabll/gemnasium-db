@@ -16,3 +16,5 @@ urls:
 - "https://github.com/Loriowar/auto_select2/issues/4"
 credit: "Boris Kocherov"
 uuid: "2a5ff8ae-4a65-470e-bfa9-35c07a5130e7"
+identifiers:
+- "OSVDB-132800"

@@ -14,9 +14,10 @@ affected_versions: "All versions before 0.4.4"
 solution: "Upgrade to version 0.4.5 or greater"
 urls:
 - "https://github.com/diasdavid/go-ipfs-dep/pull/12"
-- "https://nodesecurity.io/advisories/156"
 credit: "Scott Hardy & Adam Baldwin"
 uuid: "d61fc0e3-5edd-476b-8d82-b7d1e97b50c4"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2016-96"

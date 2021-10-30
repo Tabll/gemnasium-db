@@ -14,10 +14,11 @@ solution: "There is no solution for this vulnerability at the moment. This libra
   until a patch is available."
 urls:
 - "https://github.com/luin/serialize/issues/4"
-- "https://nodesecurity.io/advisories/311"
 - "https://opsecx.com/index.php/2017/02/08/exploiting-node-js-deserialization-bug-for-remote-code-execution/"
 credit: "Ajin Abraham"
 uuid: "e0596073-a1d7-4182-861c-3dca7511bebe"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2017-109"

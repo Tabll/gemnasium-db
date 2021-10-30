@@ -21,3 +21,5 @@ uuid: "217fba50-ee53-4a83-befd-1a169bc752ad"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "EZSA-2017-006"

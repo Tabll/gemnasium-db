@@ -16,3 +16,5 @@ solution: "Upgrade to version 0.9.6 or above."
 urls:
 - "http://osvdb.org/show/osvdb/97854"
 uuid: "4a5aa186-c026-49f1-9f14-5b99a18bf1fc"
+identifiers:
+- "OSVDB-97854"

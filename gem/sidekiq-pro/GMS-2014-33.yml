@@ -1,9 +1,6 @@
 ---
 identifier: "GMS-2014-33"
 package_slug: "gem/sidekiq-pro"
-title: "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
-description: "Improper Neutralization of Input During Web Page Generation ('Cross-site
-  Scripting') in sidekiq-pro."
 title: "Typosquatting"
 description: "This is a malicious package. You may want to install sidekiq."
 date: "2014-10-01"
@@ -19,3 +16,5 @@ cwe_ids:
 - "CWE-79"
 - "CWE-937"
 uuid: "c0f1e38c-725e-44f6-8c3f-fad28af3b0b9"
+identifiers:
+- "GMS-2014-33"

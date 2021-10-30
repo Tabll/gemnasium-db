@@ -15,9 +15,10 @@ not_impacted: "All versions after 1.11.4"
 solution: "Upgrade to version 1.12.0 or above."
 urls:
 - "https://github.com/jquery/jquery-ui/pull/1622"
-- "https://nodesecurity.io/advisories/127"
 credit: "Phat Ly"
 uuid: "d4780b28-9937-414d-bd04-73d7129d22d6"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2016-46"

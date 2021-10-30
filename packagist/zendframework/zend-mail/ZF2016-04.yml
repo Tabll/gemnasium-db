@@ -21,3 +21,5 @@ urls:
 - "https://framework.zend.com/security/advisory/ZF2016-04"
 credit: "Dawid Golunski, Enrico Zimuel"
 uuid: "448a3645-941d-44ea-8bc0-e67994f5f267"
+identifiers:
+- "ZF2016-04"

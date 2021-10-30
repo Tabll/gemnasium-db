@@ -20,3 +20,5 @@ urls:
 - "http://homakov.blogspot.com.es/2013/06/cookie-forcing-protection-made-easy.html"
 credit: "Egor Homakov"
 uuid: "2d24e9a9-8ead-4c3d-b3f1-4ed927faad1f"
+identifiers:
+- "OSVDB-114435"

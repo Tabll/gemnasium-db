@@ -34,7 +34,7 @@ yamllint:
   resource_group: "gemnasium-db-$CI_COMMIT_REF_SLUG"
 
 semantic:
-  image: ruby:2.6-alpine3.10
+  image: ruby:3.0-alpine3.12
   stage: test 
   script:
     - bundle install --gemfile ci/schema/Gemfile

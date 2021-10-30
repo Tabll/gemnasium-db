@@ -17,3 +17,5 @@ urls:
 - "https://github.com/sparklemotion/nokogiri/pull/1087"
 credit: "Michal Ochman"
 uuid: "a4703878-04c6-4b69-adf1-1310844dfb01"
+identifiers:
+- "OSVDB-118481"

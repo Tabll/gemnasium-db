@@ -20,3 +20,5 @@ urls:
 - "https://www.drupal.org/sa-core-2018-003"
 credit: "Kyaw Min Thein"
 uuid: "fde82eef-10ac-4917-82af-0f44430e72f7"
+identifiers:
+- "SA-CORE-2018-003"

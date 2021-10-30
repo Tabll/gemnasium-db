@@ -21,3 +21,5 @@ urls:
 - "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2017-005/"
 credit: "Tobias Kummer, Georg Ringer"
 uuid: "014531ea-71b0-4f61-9b8b-87e596c2fc86"
+identifiers:
+- "TYPO3-CORE-SA-2017-005"

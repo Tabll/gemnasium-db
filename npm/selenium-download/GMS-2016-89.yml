@@ -15,9 +15,10 @@ affected_versions: "All versions before 2.0.7"
 solution: "Update to version 2.0.7 or greater"
 urls:
 - "https://github.com/groupon/selenium-download/commit/1957ca79707b9bee224b222500ceb250f736b93b"
-- "https://nodesecurity.io/advisories/164"
 credit: "Adam Baldwin"
 uuid: "fc9f22de-a10d-4a95-a93b-010ef89c75ac"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2016-89"

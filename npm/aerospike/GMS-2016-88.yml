@@ -16,9 +16,10 @@ solution: "Update to version 2.4.2 or later"
 urls:
 - "https://github.com/aerospike/aerospike-client-nodejs/issues/153"
 - "https://github.com/aerospike/aerospike-client-nodejs/releases/tag/v2.4.2"
-- "https://nodesecurity.io/advisories/167"
 credit: "Adam Baldwin"
 uuid: "dd1c5645-179d-4d90-b834-c5a7c9171b68"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2016-88"

@@ -15,9 +15,10 @@ not_impacted: "All versions before 15.0.0, all versions starting from 16.1.1"
 solution: "Upgrade to version 16.1.1 or above."
 urls:
 - "https://github.com/hapijs/hapi/issues/3466"
-- "https://nodesecurity.io/advisories/335"
 credit: "Georgios Andrianakis"
 uuid: "42ba2f53-5b00-43d6-a7cc-7d4b796e20ff"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2017-123"

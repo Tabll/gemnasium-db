@@ -26,3 +26,5 @@ urls:
 - "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2016-022"
 credit: "Dmitry Dulepov"
 uuid: "7b1bfcc9-6c8a-4b00-8a79-03a7c3ef4954"
+identifiers:
+- "TYPO3-CORE-SA-2016-022"

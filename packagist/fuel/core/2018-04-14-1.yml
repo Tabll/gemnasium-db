@@ -1,5 +1,3 @@
-# This advisory is derived from##
-# https://github.com/FriendsOfPHP/security-advisories
 ---
 identifier: "2018-04-14-1"
 package_slug: "packagist/fuel/core"
@@ -16,3 +14,5 @@ solution: "Upgrade to version 1.8.1 or above."
 urls:
 - "https://fuelphp.com/security-advisories"
 uuid: "9fc5c28e-3ae5-4882-b6ec-7da882b0e4f9"
+identifiers:
+- "2018-04-14-1"

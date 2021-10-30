@@ -14,10 +14,11 @@ fixed_versions:
 affected_versions: "All versions up to 3.0.1"
 not_impacted: "All versions after 3.0.1"
 solution: "Upgrade to version 3.0.2 or above."
-urls:
-- "https://nodesecurity.io/advisories/118"
+urls: []
 credit: "Nick Starke"
 uuid: "7d9ba955-fd99-4503-936e-f6833768f76e"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2016-36"

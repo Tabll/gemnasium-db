@@ -11,10 +11,11 @@ fixed_versions:
 - "0.10.1"
 affected_versions: "All versions up to 0.10.0"
 solution: "Upgrade to v0.10.1 or later."
-urls:
-- "https://nodesecurity.io/advisories/352"
+urls: []
 credit: "Liang Gong"
 uuid: "1ff31cbf-7186-4481-be8a-484b8c426af3"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2017-181"

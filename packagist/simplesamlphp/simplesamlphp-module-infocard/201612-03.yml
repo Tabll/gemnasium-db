@@ -16,3 +16,5 @@ solution: "Upgrade to version 1.0.1 or above."
 urls:
 - "https://simplesamlphp.org/security/201612-03"
 uuid: "d65486f2-707a-4a40-adb0-467e940288f3"
+identifiers:
+- "201612-03"

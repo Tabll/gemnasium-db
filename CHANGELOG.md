@@ -1,3 +1,6 @@
+#### [v2.0.0] 2021-10-28
+##### Added
+- Schema change: `identifiers` dictionary (!10362)
 #### [v1.4.0] 2021-06-10
 ##### Added
 - Schema change: `info` dictionary (!6974)

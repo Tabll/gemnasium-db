@@ -10,10 +10,11 @@ affected_range: ">=0.0.0-alpha"
 fixed_versions: []
 affected_versions: "All versions"
 solution: "Use an alternative parser, such as useragent."
-urls:
-- "https://nodesecurity.io/advisories/316"
+urls: []
 credit: "Adam Baldwin"
 uuid: "75e9fde4-c839-420f-8f6c-4dcd61ac8079"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2017-184"

@@ -15,3 +15,5 @@ urls:
 - "http://www.vapid.dhs.org/advisories/gnms-2.1.1.html"
 credit: "Larry W. Cashdollar, @_larry0"
 uuid: "31e37a9b-b21f-4343-bd97-ced73be810e8"
+identifiers:
+- "OSVDB-108594"

@@ -13,9 +13,10 @@ affected_versions: "All versions starting from 1.4.0-alpha before 2.0.0"
 solution: "Upgrade to version 2.0.0 or later."
 urls:
 - "https://github.com/nicolaskruchten/pivottable/pull/401"
-- "https://nodesecurity.io/advisories/139"
 credit: "Todd Wolfson"
 uuid: "30e55807-aed7-4330-b269-58d7ad331c03"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2016-62"

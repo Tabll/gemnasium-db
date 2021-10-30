@@ -15,9 +15,10 @@ solution: "Upgrade to version 1.11.4 or later"
 urls:
 - "https://github.com/punkave/sanitize-html/commit/5d205a1005ba0df80e21d8c64a15bb3accdb2403"
 - "https://github.com/punkave/sanitize-html/issues/100"
-- "https://nodesecurity.io/advisories/154"
 credit: "Andrew Krasichkov"
 uuid: "5bc008bf-ca52-45d0-b422-aee65858ae32"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2016-17"

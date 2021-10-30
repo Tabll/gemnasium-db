@@ -12,9 +12,10 @@ affected_versions: "All versions"
 solution: "There is no solution for this vulnerability at the moment."
 urls:
 - "https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/open-device"
-- "https://nodesecurity.io/advisories/447"
 credit: "Liang Gong"
 uuid: "9bc4bece-0af6-4dec-8f28-b3263410a359"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2017-284"

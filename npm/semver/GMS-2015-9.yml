@@ -15,9 +15,10 @@ solution: "Upgrade to version 4.3.2 or above."
 urls:
 - "https://github.com/npm/node-semver/commit/c80180d8341a8ada0236815c29a2be59864afd70"
 - "https://github.com/npm/npm/releases/tag/v2.7.5"
-- "https://nodesecurity.io/advisories/semver_redos"
 credit: "Adam Baldwin"
 uuid: "bee62db4-45f8-40f1-b4ca-483bb8d2482a"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2015-9"

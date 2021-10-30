@@ -17,9 +17,10 @@ solution: "Update to version 3.0.0 or later."
 urls:
 - "https://auth0.com/blog/2015/03/31/critical-vulnerabilities-in-json-web-token-libraries/"
 - "https://github.com/brianloveswords/node-jws/commit/585d0e1e97b6747c10cf5b7689ccc5618a89b299#diff-4ac32a78649ca5bdd8e0ba38b7006a1e"
-- "https://nodesecurity.io/advisories/88"
 credit: "Brian Brennan and Tim McLean"
 uuid: "43dd4f0e-e7a8-47d5-aa7e-f84efb60a5e2"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2016-54"

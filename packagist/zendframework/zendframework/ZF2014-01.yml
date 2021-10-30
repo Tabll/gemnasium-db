@@ -1,5 +1,3 @@
-# This advisory is derived from##
-# https://github.com/FriendsOfPHP/security-advisories
 ---
 identifier: "ZF2014-01"
 package_slug: "packagist/zendframework/zendframework"
@@ -20,3 +18,5 @@ solution: "Upgrade to versions 2.1.6, 2.2.6 or above."
 urls:
 - "https://framework.zend.com/security/advisory/ZF2014-01"
 uuid: "31e21c8a-323d-4d53-a7c6-04f2d6ba4169"
+identifiers:
+- "ZF2014-01"

@@ -15,9 +15,10 @@ affected_versions: "All versions"
 solution: "upgrade to Node >=0.12.0. The functionality is provided natively."
 urls:
 - "https://github.com/gvarsanyi/sync-exec/issues/17"
-- "https://nodesecurity.io/advisories/310"
 credit: "maxnikulin"
 uuid: "3148e134-4917-4d18-825b-9d0ddb2bb402"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2016-9"

@@ -19,3 +19,5 @@ urls:
 - "https://simplesamlphp.org/security/201606-01"
 credit: "John Page (hyp3rlinx)"
 uuid: "5b9dd903-016e-4131-859b-0c449fbb127a"
+identifiers:
+- "201606-01"

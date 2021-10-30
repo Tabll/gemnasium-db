@@ -14,10 +14,11 @@ fixed_versions:
 - "3.0.1"
 affected_versions: "All versions before 3.0.1"
 solution: "Update to version 3.0.1 or greater."
-urls:
-- "https://nodesecurity.io/advisories/240"
+urls: []
 credit: "Adam Baldwin"
 uuid: "86446cb0-881d-433a-89ea-d53490526945"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2016-106"

@@ -19,3 +19,5 @@ uuid: "d53170d6-4565-43f1-a0d4-a3d6af1053b8"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2013-16"

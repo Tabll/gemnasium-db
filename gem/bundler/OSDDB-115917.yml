@@ -18,3 +18,5 @@ urls:
 - "https://github.com/rubysec/ruby-advisory-db/blob/master/gems/bundler/OSVDB-115917.yml"
 credit: "Christoph Olszowka"
 uuid: "865c5cac-7aba-4a65-aa84-18c16d31bdc0"
+identifiers:
+- "OSDDB-115917"

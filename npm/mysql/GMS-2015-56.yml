@@ -14,9 +14,10 @@ not_impacted: "All versions after 2.0.0-alpha7"
 solution: "Upgrade to version 2.0.0-alpha8 or above."
 urls:
 - "https://github.com/felixge/node-mysql/issues/342"
-- "https://nodesecurity.io/advisories/66"
 credit: "Sébastian Dejonghe"
 uuid: "4393be11-a9b5-4fd6-be3d-a286ff0c2c40"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2015-56"

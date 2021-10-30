@@ -17,9 +17,10 @@ solution: "The fix has not been published yet. Update the module using git: npm 
 urls:
 - "https://github.com/vivaxy/here/commit/298dbab41344dfb7f95f66b1fa7b5cfb436bd4a2"
 - "https://hackerone.com/reports/296254"
-- "https://nodesecurity.io/advisories/554"
 credit: "Yasin Soliman"
 uuid: "bf642e15-a39d-47e9-92a5-36ad19dc6a64"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2018-1"

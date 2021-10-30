@@ -1,5 +1,3 @@
-# This advisory is derived from##
-# https://github.com/FriendsOfPHP/security-advisories
 ---
 identifier: "2017-09-05-4"
 package_slug: "packagist/typo3/cms"
@@ -19,3 +17,5 @@ solution: "Upgrade to versions 7.6.22, 8.7.0 or above."
 urls:
 - "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2017-007/"
 uuid: "baabf217-a703-49ea-b2d6-42d512525dbd"
+identifiers:
+- "2017-09-05-4"

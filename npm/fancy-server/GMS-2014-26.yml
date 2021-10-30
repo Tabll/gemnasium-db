@@ -14,9 +14,10 @@ affected_versions: "All versions before 0.1.4"
 solution: "Upgrade to version 0.1.4 or greater."
 urls:
 - "http://en.wikipedia.org/wiki/Directory_traversal_attack"
-- "https://nodesecurity.io/advisories/fancy-server-directory-traversal"
 credit: "Adam Baldwin"
 uuid: "313349b0-136c-4203-8a41-444bf3511c5f"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2014-26"

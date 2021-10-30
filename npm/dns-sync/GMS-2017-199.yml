@@ -12,9 +12,10 @@ affected_versions: "All versions"
 solution: "Use an alternative dns resolver or do not allow untrusted input into dns-sync.resolve()."
 urls:
 - "https://github.com/skoranga/node-dns-sync/issues/5"
-- "https://nodesecurity.io/advisories/523"
 credit: "Cristian-Alexandru Staicu"
 uuid: "fcad12c1-e44e-4ed5-9485-027149da1373"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2017-199"

@@ -13,9 +13,10 @@ affected_versions: "All versions up to 3.0.0"
 solution: "Upgrade to secure-compare 3.0.1 or greater."
 urls:
 - "https://github.com/vdemedes/secure-compare/pull/1"
-- "https://nodesecurity.io/advisories/50"
 credit: "Joshua Dague"
 uuid: "d206158e-37e8-400c-8eda-01cf6f6a750d"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2015-38"

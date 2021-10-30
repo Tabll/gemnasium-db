@@ -17,3 +17,5 @@ urls:
 - "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2017-004/"
 credit: "Georg Ringer"
 uuid: "a6ea059e-b345-4157-920b-acf119704959"
+identifiers:
+- "TYPO3-CORE-SA-2017-004"

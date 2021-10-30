@@ -15,3 +15,5 @@ solution: "Upgrade to version v5.3.7 or above."
 urls:
 - "http://en.community.shopware.com/_detail_2048.html"
 uuid: "1d64e4f0-bcca-4cb4-8844-c4427dd0ea7b"
+identifiers:
+- "SW-20878"

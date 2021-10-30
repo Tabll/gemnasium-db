@@ -13,9 +13,10 @@ solution: "As there is currently no fix for this issue selecting an alternative 
   web server would be the best choice."
 urls:
 - "https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/yjmyjmyjm"
-- "https://nodesecurity.io/advisories/451"
 credit: "Liang Gong"
 uuid: "52c2206f-4c1c-4b37-8f27-f33bb2780478"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2018-7"

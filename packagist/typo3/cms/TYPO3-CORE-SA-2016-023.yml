@@ -21,3 +21,5 @@ urls:
 - "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2016-023"
 credit: "Christian Kuhn"
 uuid: "e013fda5-989d-4a88-9d47-40b39c5b6e84"
+identifiers:
+- "TYPO3-CORE-SA-2016-023"

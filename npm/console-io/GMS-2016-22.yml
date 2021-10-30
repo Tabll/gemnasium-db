@@ -15,10 +15,11 @@ fixed_versions:
 - "2.7.0"
 affected_versions: "All versions up to 2.6.3"
 solution: "Upgrade to at least version 2.7.0\r\n"
-urls:
-- "https://nodesecurity.io/advisories/90"
+urls: []
 credit: "Craig Arendt"
 uuid: "789d2819-31f7-4392-a6db-17068f8baabd"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2016-22"

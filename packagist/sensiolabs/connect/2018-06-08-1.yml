@@ -1,5 +1,3 @@
-# This advisory is derived from##
-# https://github.com/FriendsOfPHP/security-advisories
 ---
 identifier: "2018-06-08-1"
 package_slug: "packagist/sensiolabs/connect"
@@ -16,3 +14,5 @@ solution: "Upgrade to version 4.2.3 or above."
 urls:
 - "https://github.com/sensiolabs/connect/pull/63"
 uuid: "a9a29e09-e9a5-48ba-b70c-40db98cf5b40"
+identifiers:
+- "2018-06-08-1"

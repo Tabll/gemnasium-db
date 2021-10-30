@@ -12,9 +12,10 @@ affected_versions: "All versions"
 solution: "There is no solution for this vulnerability at the moment."
 urls:
 - "https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/nodeload-nmickuli"
-- "https://nodesecurity.io/advisories/410"
 credit: "Liang Gong"
 uuid: "7df722da-11bc-4feb-8b7d-4fe8845f7f7e"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2017-327"

@@ -15,9 +15,10 @@ not_impacted: "All versions before 2.0.1, all versions starting from 3.0.2"
 solution: "Upgrade to version 3.0.2 or above."
 urls:
 - "https://github.com/hapijs/hapi/issues/3228"
-- "https://nodesecurity.io/advisories/121"
 credit: "Nicolas Morel"
 uuid: "bddd8086-cdab-42fd-bebe-4bf747d3c7ec"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2016-39"

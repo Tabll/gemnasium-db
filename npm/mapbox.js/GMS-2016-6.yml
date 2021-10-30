@@ -18,9 +18,10 @@ solution: "Upgrade to Mapbox.js version 2.2.4. If you are still using a 1.x vers
   from your maps."
 urls:
 - "https://hackerone.com/reports/99245"
-- "https://nodesecurity.io/advisories/74"
 credit: "Alexandra Ulsh, Abdullah Ahmet Erdem"
 uuid: "af2f8035-5f46-49a2-8966-b8f745c2ab11"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2016-6"

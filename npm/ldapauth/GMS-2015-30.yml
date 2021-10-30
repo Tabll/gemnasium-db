@@ -13,9 +13,10 @@ solution: "Consider updating to use ldapauth-fork 2.3.3 or greater as ldapauth h
   not yet been patched."
 urls:
 - "http://www.openwall.com/lists/oss-security/2015/09/18/4"
-- "https://nodesecurity.io/advisories/ldapauth-ldap-injection"
 credit: "David Black, Jerome Touffe-Blin"
 uuid: "183417f9-48e4-48da-a972-bccba57fc406"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2015-30"

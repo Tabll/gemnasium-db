@@ -1,5 +1,3 @@
-# This advisory is derived from##
-# https://github.com/FriendsOfPHP/security-advisories
 ---
 identifier: "2018-10-17-1"
 package_slug: "packagist/drupal/drupal"
@@ -16,3 +14,5 @@ solution: "Upgrade to version 8.6.2 or above."
 urls:
 - "https://www.drupal.org/sa-core-2018-006"
 uuid: "26b75120-43b6-47fb-be29-d2f6f07c9e70"
+identifiers:
+- "2018-10-17-1"

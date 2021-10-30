@@ -20,3 +20,5 @@ urls:
 - "http://www.osvdb.org/show/osvdb/96425"
 credit: "Bryan Helmkamp"
 uuid: "bec964ec-8624-426d-8d71-7f532fe12b56"
+identifiers:
+- "OSVDB-96425"

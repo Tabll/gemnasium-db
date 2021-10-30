@@ -13,10 +13,11 @@ fixed_versions:
 - "0.10.0"
 affected_versions: "All versions up to 0.9.11"
 solution: "Upgrade to v0.10.0 or higher."
-urls:
-- "https://nodesecurity.io/advisories/318"
+urls: []
 credit: "Dave Longley"
 uuid: "7bdb7b9a-ab15-44ea-95e3-987d94aa11ea"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2017-114"

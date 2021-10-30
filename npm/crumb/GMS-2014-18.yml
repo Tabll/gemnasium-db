@@ -18,9 +18,10 @@ affected_versions: "All versions before 3.0.0"
 solution: "Update to a version 3.0.0 or greater."
 urls:
 - "https://github.com/spumko/crumb/commit/5e6d4f5c81677fe9e362837ffd4a02394303db3c"
-- "https://nodesecurity.io/advisories/crumb_cors_token_disclosure"
 credit: "Marcus Stong"
 uuid: "f96a3e93-d9a8-4459-b0e8-0f5d8ea4fe7c"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2014-18"

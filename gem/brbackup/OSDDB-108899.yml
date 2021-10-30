@@ -16,3 +16,5 @@ solution: "There is no solution for this vulnerability at the moment."
 urls:
 - "https://github.com/rubysec/ruby-advisory-db/blob/master/gems/brbackup/OSVDB-108899.yml"
 uuid: "0717b8a7-5f8a-4460-878a-bf4f5393fe1e"
+identifiers:
+- "OSDDB-108899"

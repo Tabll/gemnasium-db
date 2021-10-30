@@ -13,10 +13,11 @@ fixed_versions:
 - "3.5.0"
 affected_versions: "All versions before 3.5.0"
 solution: "Upgrade to droppy version 3.5.0 or greater."
-urls:
-- "https://nodesecurity.io/advisories/91"
+urls: []
 credit: "Craig Arendt"
 uuid: "1b7f8277-e5b6-41b1-afad-b8a7789a1d5b"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2016-19"

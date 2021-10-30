@@ -16,3 +16,5 @@ solution: "Upgrade to version 4.2.0.beta2 or above."
 urls:
 - "http://weblog.rubyonrails.org/2014/9/29/Rails-4-2-0-beta2-has-been-released/"
 uuid: "a5939986-2994-4350-b1e5-db5506c136d1"
+identifiers:
+- "OSVDB-112347"

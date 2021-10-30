@@ -12,9 +12,10 @@ affected_versions: "All versions"
 solution: "Do not install / use this module. It has been unpublished from the registry
   but may exist in some caches. Any users that logged into Discord using this library
   will need to change their credentials."
-urls:
-- "https://nodesecurity.io/advisories/545"
+urls: []
 uuid: "5ac04b26-4ec1-4c85-8979-9699d50aa959"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2017-314"

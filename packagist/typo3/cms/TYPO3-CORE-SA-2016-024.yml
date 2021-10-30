@@ -20,3 +20,5 @@ urls:
 - "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2016-024"
 credit: "Gerrit Venema"
 uuid: "039fbf04-7d50-4081-9939-4130b62dea75"
+identifiers:
+- "TYPO3-CORE-SA-2016-024"

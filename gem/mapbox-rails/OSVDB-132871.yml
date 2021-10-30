@@ -12,6 +12,7 @@ affected_range: ">=0.0.0a"
 fixed_versions: []
 affected_versions: "All versions"
 solution: "There is no solution for this vulnerability at the moment."
-urls:
-- "https://nodesecurity.io/advisories/74"
+urls: []
 uuid: "4484a7a3-fd8a-41a3-8abe-00d859c2107a"
+identifiers:
+- "OSVDB-132871"

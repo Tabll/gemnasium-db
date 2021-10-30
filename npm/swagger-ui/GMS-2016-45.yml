@@ -18,9 +18,10 @@ solution: "Upgrade to version 2.2.2 or above."
 urls:
 - "https://en.wikipedia.org/wiki/Content_Security_Policy"
 - "https://github.com/swagger-api/swagger-ui/issues/1865"
-- "https://nodesecurity.io/advisories/126"
 credit: "Joe Vennix"
 uuid: "930c411b-4b66-47e0-b2dd-6090d3490d6f"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2016-45"

@@ -19,3 +19,5 @@ urls:
 - "https://github.com/jamesotron/FlavourSaver/commit/04a8ff444a9a9668a75b01b20b4974d398087a64"
 credit: "@nifoc (Daniel Kempens)"
 uuid: "7d9bb389-8a15-45e8-99c8-897156ae9858"
+identifiers:
+- "OSVDB-110796"

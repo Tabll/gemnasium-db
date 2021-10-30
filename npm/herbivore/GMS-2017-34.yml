@@ -14,9 +14,10 @@ affected_versions: "All versions"
 solution: "There is no solution for this vulnerability at the moment."
 urls:
 - "https://github.com/samatt/Herbivore/commit/0a041defc3463e99948e5d2064aef54b2128c5a3"
-- "https://nodesecurity.io/advisories/258"
 credit: "Adam Baldwin"
 uuid: "7148b5bf-73fb-4841-9d3e-94d2687e35e8"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2017-34"

@@ -13,9 +13,10 @@ affected_versions: "All versions up to 3.0.5"
 solution: "Upgrade to version 3.0.6 or greater."
 urls:
 - "https://github.com/hapijs/content/commit/3a8a6cbaf111955ec514019c2122cb278cc36a23"
-- "https://nodesecurity.io/advisories/530"
 credit: "Cristian-Alexandru Staicu"
 uuid: "8d320ca0-b041-43a2-8756-362d1be2ef67"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2017-209"

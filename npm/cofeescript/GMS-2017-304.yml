@@ -13,10 +13,11 @@ solution: "Do not install this module. It has been unpublished from the registry
   may exist in some caches. If you may have accidentally installed this package you
   should cycle your SSH key and review your bash history for any sensitive data that
   may have been leaked."
-urls:
-- "https://nodesecurity.io/advisories/541"
+urls: []
 credit: "Aurélio A. Heckert"
 uuid: "9fb85140-1422-4799-bf6f-fd6ab5b4a6a6"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2017-304"

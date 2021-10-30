@@ -1,5 +1,3 @@
-# This advisory is derived from##
-# https://github.com/FriendsOfPHP/security-advisories
 ---
 identifier: "SS-2014-017-1"
 package_slug: "packagist/silverstripe/framework"
@@ -16,3 +14,5 @@ solution: "Upgrade to version 3.1.12 or above."
 urls:
 - "https://www.silverstripe.org/software/download/security-releases/ss-2014-017-xml-quadratic-blowup-attack/"
 uuid: "90f36da5-7b5e-4495-98c6-1a3fc2340edc"
+identifiers:
+- "SS-2014-017-1"

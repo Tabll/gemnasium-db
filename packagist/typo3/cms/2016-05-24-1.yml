@@ -1,5 +1,3 @@
-# This advisory is derived from##
-# https://github.com/FriendsOfPHP/security-advisories
 ---
 identifier: "2016-05-24-1"
 package_slug: "packagist/typo3/cms"
@@ -21,3 +19,5 @@ solution: "Upgrade to versions 6.2.25, 7.6.8, 8.1.1 or above."
 urls:
 - "https://typo3.org/teamssecuritysecurity-bulletins/security-bulletins-single-view/article/missing-access-check-in-typo3-cms/"
 uuid: "9b31f3d0-2d8d-44c0-a05c-668224c08e52"
+identifiers:
+- "2016-05-24-1"

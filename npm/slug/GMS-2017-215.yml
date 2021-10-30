@@ -13,9 +13,10 @@ affected_versions: "All versions"
 solution: "There is no solution for this vulnerability at the moment."
 urls:
 - "https://github.com/dodo/node-slug/issues/82"
-- "https://nodesecurity.io/advisories/537"
 credit: "Cristian-Alexandru Staicu"
 uuid: "2e11bb5b-8a7a-4d20-bd18-c3f79cf7a253"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2017-215"

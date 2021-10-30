@@ -8,7 +8,7 @@ description: "Improper Neutralization of Special Elements used in an OS Command 
 date: "2014-04-01"
 pubdate: "2014-04-01"
 affected_range: "<0.2.3"
-fixed_versions: 
+fixed_versions:
 - "0.2.3"
 affected_versions: "All versions before 0.2.3"
 not_impacted: "All versions starting from 0.2.3"
@@ -19,3 +19,5 @@ cwe_ids:
 - "CWE-78"
 - "CWE-937"
 uuid: "35278361-72c4-4b1a-b096-40f33c41da73"
+identifiers:
+- "GMS-2014-30"

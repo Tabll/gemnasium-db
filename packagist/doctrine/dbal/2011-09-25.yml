@@ -19,3 +19,5 @@ uuid: "0050286e-39b3-42f2-ba37-ed6cc42686c2"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "2011-09-25"

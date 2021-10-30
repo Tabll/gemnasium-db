@@ -14,3 +14,5 @@ urls:
 - "http://www.agarri.fr/kom/archives/2014/10/15/bypassing_blacklists_based_on_ipy/index.html"
 - "http://www.osvdb.org/show/osvdb/113418"
 uuid: "c3950aa6-894d-46c8-8f37-20bf9f1ff57c"
+identifiers:
+- "OSVDB-113418"

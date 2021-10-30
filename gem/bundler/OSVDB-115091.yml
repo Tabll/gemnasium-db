@@ -17,3 +17,5 @@ urls:
 - "https://github.com/rubysec/ruby-advisory-db/blob/master/gems/bundler/OSVDB-115091.yml"
 credit: "Colin Curtin"
 uuid: "f3552591-4582-4dd5-8072-1a33756f0490"
+identifiers:
+- "OSVDB-115091"

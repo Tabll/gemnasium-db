@@ -19,3 +19,5 @@ urls:
 - "https://github.com/jruby/activerecord-jdbc-adapter/issues/322#issuecomment-14053441"
 credit: "Karol Bucek"
 uuid: "33fda33f-c6b4-4bee-9d16-93467cd3f261"
+identifiers:
+- "OSVDB-2013-02-25"

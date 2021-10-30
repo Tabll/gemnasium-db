@@ -16,3 +16,5 @@ cwe_ids:
 - "CWE-937"
 - "CWE-20"
 uuid: "b1f6754d-915f-4b35-866b-01942f75f024"
+identifiers:
+- "GMS-2020-3"

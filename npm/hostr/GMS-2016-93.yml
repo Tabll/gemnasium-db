@@ -15,9 +15,10 @@ solution: "Upgrade to v2.3.6 or later."
 urls:
 - "https://github.com/henrytseng/hostr/commit/789a00047459fd80b6f0a9701a1378a47fb73ba8"
 - "https://github.com/henrytseng/hostr/issues/8"
-- "https://nodesecurity.io/advisories/303"
 credit: "Liang Gong"
 uuid: "eb4bf60c-5335-4cb4-8a7b-76bd30491a93"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2016-93"

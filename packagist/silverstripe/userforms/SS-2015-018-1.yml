@@ -1,5 +1,3 @@
-# This advisory is derived from##
-# https://github.com/FriendsOfPHP/security-advisories
 ---
 identifier: "SS-2015-018-1"
 package_slug: "packagist/silverstripe/userforms"
@@ -16,3 +14,5 @@ solution: "Upgrade to version 3.0.0 or above."
 urls:
 - "https://www.silverstripe.org/software/download/security-releases/ss-2015-018/"
 uuid: "a6f855bb-eefe-437c-a987-8c94de94357c"
+identifiers:
+- "SS-2015-018-1"

@@ -21,3 +21,5 @@ urls:
 - "https://github.com/doorkeeper-gem/doorkeeper/issues/576"
 credit: "Ryan Sonnek @wireframe"
 uuid: "e683aa3c-82b6-4e9f-ac84-b1a56fde6640"
+identifiers:
+- "OSVDB-118830"

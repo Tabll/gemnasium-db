@@ -27,3 +27,5 @@ urls:
 - "https://typo3.org/teamssecuritysecurity-bulletins/security-bulletins-single-view/article/missing-access-check-in-typo3-cms/"
 credit: "Stefan Horlacher from Arcus Security GmbH, Alex Kellner, Oliver Hader"
 uuid: "892f3e6a-6675-4bc1-be5f-7e6f973e679e"
+identifiers:
+- "TYPO3-CORE-SA-2016-013"

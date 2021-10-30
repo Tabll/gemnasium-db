@@ -53,20 +53,33 @@ The text width for all fields should be <=150 characters.
 The indentation level should be 2 characters. These rules are enforced through
 yamllint.
 
-* `identifier` should be the CVE id when it exists. If a vulnerability (and the
-corresponding advisory) cannot be linked to a CVE, you can use our internal id
-`GMS-<year>-<nr>` where `<year>` is the year in which the vulnerability was
-disclosed and `<nr>` is a sequence number. In order to generate a new, unique
-valid id, you can use our helper script `identifier/identifer.rb` which can be
-invoked with `identifier/identifer.rb -n . <year>` where `<year>` is the year
-in which the vulnerability has been disclosed, e.g. `2017`.
+* `identifiers` (array of strings) is an array that includes public identifiers
+  for the advisory.  If a vulnerability (and the corresponding advisory) cannot
+  be linked to a CVE, you can use our internal id `GMS-<year>-<nr>` where
+  `<year>` is the year in which the vulnerability was disclosed and `<nr>` is a
+  sequence number. In order to generate a new, unique valid id, you can use our
+  helper script `identifier/identifer.rb` which can be invoked with
+  `identifier/identifer.rb -n . <year>` where `<year>` is the year in which the
+  vulnerability has been disclosed, e.g. `2017`.
+* `identifier` (string, **DEPRECATED**) should be the CVE id when it exists. If
+  a vulnerability (and the corresponding advisory) cannot be linked to a CVE,
+  you can use our internal id `GMS-<year>-<nr>` where `<year>` is the year in
+  which the vulnerability was disclosed and `<nr>` is a sequence number. In
+  order to generate a new, unique valid id, you can use our helper script
+  `identifier/identifer.rb` which can be invoked with `identifier/identifer.rb
+  -n . <year>` where `<year>` is the year in which the vulnerability has been
+  disclosed, e.g. `2017`.
 * `package_slug` refers to a public package.
-* `title` must not contain the package name. Please use an appropriate CWE title if available.
-* `pubdate` (string): The date on which the advisory was published, in ISO-8601 format.
-* `date` (string): The last date on which the advisory was modified, in ISO-8601 format.
+* `title` must not contain the package name. Please use an appropriate CWE
+  title if available.
+* `pubdate` (string): The date on which the advisory was published, in ISO-8601
+  format.
+* `date` (string): The last date on which the advisory was modified, in
+  ISO-8601 format.
 * `not_impacted` must not list the fixed versions.
 * `solution` (string, optional): How to remediate the vulnerability.
-* `urls` must contain URLs specific to the vulnerability, not URLs generic to the package itself.
+* `urls` must contain URLs specific to the vulnerability, not URLs generic to
+  the package itself.
 
 `description` must not contain:
 * an overview of the package itself, only the vulnerability belonging to the package

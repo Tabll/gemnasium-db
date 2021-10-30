@@ -19,3 +19,5 @@ urls:
 - "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2017-006/"
 credit: "Sascha Egerer, Susanne Moog"
 uuid: "bf7f802e-238f-443a-8b83-ccdde06b221f"
+identifiers:
+- "TYPO3-CORE-SA-2017-006"

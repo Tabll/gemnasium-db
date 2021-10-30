@@ -11,9 +11,10 @@ fixed_versions: []
 affected_versions: "All versions"
 solution: "If you have found this installed in your environment you should invalidate
   and regenerate any authentication tokens found in your environment variables."
-urls:
-- "https://nodesecurity.io/advisories/510"
+urls: []
 uuid: "2a47c8e1-4d79-4a74-bab8-f6a74815a0b3"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2017-150"

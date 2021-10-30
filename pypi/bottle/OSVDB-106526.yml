@@ -18,3 +18,5 @@ urls:
 - "http://osvdb.org/show/osvdb/106526"
 - "https://github.com/defnull/bottle/issues/616"
 uuid: "7ddeee48-fead-4351-bd42-56d438c2429f"
+identifiers:
+- "OSVDB-106526"

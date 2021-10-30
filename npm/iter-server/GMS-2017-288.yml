@@ -12,9 +12,10 @@ affected_versions: "All versions"
 solution: "There is no solution for this vulnerability at the moment."
 urls:
 - "https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/iter-server"
-- "https://nodesecurity.io/advisories/454"
 credit: "Liang Gong"
 uuid: "a03bb96e-c025-44a8-9d0b-ca073eec2387"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2017-288"

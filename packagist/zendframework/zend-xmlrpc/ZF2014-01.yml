@@ -1,5 +1,3 @@
-# This advisory is derived from##
-# https://github.com/FriendsOfPHP/security-advisories
 ---
 identifier: "ZF2014-01"
 package_slug: "packagist/zendframework/zend-xmlrpc"
@@ -20,3 +18,5 @@ solution: "Upgrade to versions 2.1.6, 2.2.6 or above."
 urls:
 - "https://framework.zend.com/security/advisory/ZF2014-01"
 uuid: "252e2e66-7a0a-4e4d-b75d-cae7c2824821"
+identifiers:
+- "ZF2014-01"

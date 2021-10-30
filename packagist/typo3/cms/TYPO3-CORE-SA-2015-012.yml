@@ -20,3 +20,5 @@ urls:
 - "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2015-012/"
 credit: "Oliver Hader"
 uuid: "954fcbc6-dade-4d5e-a77f-9f0f87c6b6c1"
+identifiers:
+- "TYPO3-CORE-SA-2015-012"

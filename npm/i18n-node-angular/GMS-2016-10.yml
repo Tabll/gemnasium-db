@@ -14,9 +14,10 @@ affected_versions: "All versions before 1.4.0"
 solution: "Upgrade to version 1.4.0 or greater."
 urls:
 - "https://github.com/oliversalzburg/i18n-node-angular/commit/877720d2d9bb90dc8233706e81ffa03f99fc9dc8"
-- "https://nodesecurity.io/advisories/80"
 credit: "Garth Boyd"
 uuid: "4f58353c-ec55-4435-a0ae-3a6b19f40ae8"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2016-10"

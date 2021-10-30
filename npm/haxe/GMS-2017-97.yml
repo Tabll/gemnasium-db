@@ -16,9 +16,10 @@ not_impacted: "All versions starting from 5.0.2"
 solution: "Upgrade to version 5.0.2 or above."
 urls:
 - "https://github.com/HaxeFoundation/npm-haxe/commit/a43b9c8d3e1532a40ad6064d1c723eda98e6df2e"
-- "https://nodesecurity.io/advisories/177"
 credit: "Adam Baldwin"
 uuid: "223e7044-ecf3-41f1-88f2-caffb3b2ac29"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2017-97"

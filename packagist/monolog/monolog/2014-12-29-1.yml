@@ -1,5 +1,3 @@
-# This advisory is derived from##
-# https://github.com/FriendsOfPHP/security-advisories
 ---
 identifier: "2014-12-29-1"
 package_slug: "packagist/monolog/monolog"
@@ -16,3 +14,5 @@ solution: "Upgrade to version 1.12.0 or above."
 urls:
 - "https://github.com/Seldaek/monolog/pull/448#issuecomment-68208704"
 uuid: "d6a36047-f241-44ab-898e-bbd6f4ecc707"
+identifiers:
+- "2014-12-29-1"

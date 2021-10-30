@@ -20,9 +20,10 @@ urls:
 - "https://github.com/plotly/plotly.js/commit/0a1526de6ee872993cabac966ed6fdc67cd052f0"
 - "https://github.com/plotly/plotly.js/commit/d58d3bee92cbed88e2da250753d7dcb374d42e1d"
 - "https://github.com/plotly/plotly.js/issues/642"
-- "https://nodesecurity.io/advisories/145"
 credit: "Jared Folkins"
 uuid: "f3fe2f2e-8776-401b-a937-fbdd918e5213"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2016-69"

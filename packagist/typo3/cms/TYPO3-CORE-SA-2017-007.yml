@@ -19,3 +19,5 @@ urls:
 - "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2017-007/"
 credit: "Maurizio Siddu, Susanne Moog"
 uuid: "96ffa41f-9e2d-444f-a12c-56c66e3cebad"
+identifiers:
+- "TYPO3-CORE-SA-2017-007"

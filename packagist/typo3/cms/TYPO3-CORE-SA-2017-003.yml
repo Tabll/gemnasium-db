@@ -17,3 +17,5 @@ solution: "Upgrade to versions 7.6.16, 8.6.1 or above."
 urls:
 - "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2017-003/"
 uuid: "8ce8c591-2cce-4dca-8988-d542b0257eaa"
+identifiers:
+- "TYPO3-CORE-SA-2017-003"

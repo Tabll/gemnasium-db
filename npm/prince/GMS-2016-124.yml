@@ -15,9 +15,10 @@ affected_versions: "All versions before 1.4.5"
 solution: "Upgrade to 1.4.5"
 urls:
 - "https://github.com/rse/node-prince/commit/c7e355bd3d3e4bc060f102c5264e838f379aa8a8"
-- "https://nodesecurity.io/advisories/185"
 credit: "Adam Baldwin"
 uuid: "1a0ca979-63cb-4e09-8666-5dfa16e56ced"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2016-124"

@@ -16,9 +16,10 @@ urls:
 - "https://github.com/matt-/nunjucks_test"
 - "https://github.com/mozilla/nunjucks/commit/038ba1e29990ca0eeafcf77125f4d9f960723f60"
 - "https://github.com/mozilla/nunjucks/issues/835"
-- "https://nodesecurity.io/advisories/147"
 credit: "Matt Austin"
 uuid: "d340cdfd-40a6-4e82-b52c-584e41aafed8"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2016-71"

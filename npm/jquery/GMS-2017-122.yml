@@ -13,10 +13,11 @@ fixed_versions:
 - "3.0.0"
 affected_versions: "All versions before 1.12.0, all versions after 1.12.2 before 3.0.0-beta1"
 solution: "Upgrade to v3.0.0 or greater."
-urls:
-- "https://nodesecurity.io/advisories/328"
+urls: []
 credit: "Egor Homakov"
 uuid: "64559551-a08a-4af6-ab2e-80980dbfbf7d"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2017-122"

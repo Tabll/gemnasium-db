@@ -12,9 +12,10 @@ affected_versions: "All versions"
 solution: "There is no solution for this vulnerability at the moment."
 urls:
 - "https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/infraserver"
-- "https://nodesecurity.io/advisories/471"
 credit: "Liang Gong"
 uuid: "23a032d8-47e2-4f21-9f58-9cfd4884d272"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2017-242"

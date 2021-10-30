@@ -15,3 +15,5 @@ urls:
 - "http://osvdb.org/show/osvdb/108530"
 credit: "Larry W. Cashdollar - Vapid Labs"
 uuid: "83f0641f-e08d-4b8c-bcbd-daaf01a5ea69"
+identifiers:
+- "OSVDB-108530"

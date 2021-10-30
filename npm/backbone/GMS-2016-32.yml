@@ -14,8 +14,9 @@ affected_versions: "All versions up to 0.3.3"
 solution: "Upgrade to at least version 0.5.0"
 urls:
 - "https://github.com/jashkenas/backbone/compare/0.3.3...0.5.0#diff-0d56d0d310de7ff18b3cef9c2f8f75dcL1008"
-- "https://nodesecurity.io/advisories/108"
 uuid: "63158937-8093-4497-bbd9-110587803258"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2016-32"

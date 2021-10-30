@@ -1,5 +1,3 @@
-# This advisory is derived from##
-# https://github.com/FriendsOfPHP/security-advisories
 ---
 identifier: "2019-05-07-3"
 package_slug: "packagist/typo3/cms"
@@ -19,3 +17,5 @@ solution: "Upgrade to versions 8.7.25, 9.5.6 or above."
 urls:
 - "https://typo3.org/security/advisory/typo3-core-sa-2019-012/"
 uuid: "2dbb8708-786c-43a5-b018-d4fdfb32a68b"
+identifiers:
+- "2019-05-07-3"

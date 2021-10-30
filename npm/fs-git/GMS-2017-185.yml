@@ -16,9 +16,10 @@ solution: "Update to version 1.0.2 or later.  In lieu of updating, before passin
   using a proper shell escaping library."
 urls:
 - "https://github.com/vvakame/fs-git/commit/eb5f70efa5cfbff1ab299fa7daaa5de549243998"
-- "https://nodesecurity.io/advisories/360"
 credit: "micaksica"
 uuid: "bfd17511-3ab4-4a1f-a82b-e4dc3b5374e6"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2017-185"

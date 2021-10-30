@@ -14,9 +14,10 @@ not_impacted: "All versions starting from 2.1.12"
 solution: "Upgrade to version 2.1.12 or above."
 urls:
 - "https://github.com/3rd-Eden/useragent/commit/64b15c9446a24abd9f52ed4ceb970f1a5cf790dd"
-- "https://nodesecurity.io/advisories/312"
 credit: "Mathias Madsen, Matteo Collina"
 uuid: "e1dc8f97-2af2-4352-9e55-e8bde0fca917"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2017-108"

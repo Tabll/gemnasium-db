@@ -13,3 +13,5 @@ urls:
 - "http://direct.osvdb.org/show/osvdb/90716"
 - "http://vapid.dhs.org/advisories/file_utils_ruby_gem.html"
 uuid: "5b6e7dbf-43d7-440f-b631-4c4f13a75aa2"
+identifiers:
+- "OSVDB-90715"

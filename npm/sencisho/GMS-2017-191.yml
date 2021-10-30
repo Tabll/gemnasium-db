@@ -13,9 +13,10 @@ solution: "Because there is no patched version for this module, we suggest using
   different one."
 urls:
 - "https://github.com/JacksonGL/NPM-Vuln-PoC/tree/master/directory-traversal/sencisho"
-- "https://nodesecurity.io/advisories/340"
 credit: "Liang Gong"
 uuid: "e73a33be-e649-499a-a2a9-789648ce5c51"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2017-191"

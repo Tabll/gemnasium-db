@@ -34,3 +34,5 @@ uuid: "06565b64-486d-4326-b906-890d9915804d"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "USN-3424-1"

@@ -1,5 +1,3 @@
-# This advisory is derived from##
-# https://github.com/FriendsOfPHP/security-advisories
 ---
 identifier: "2019-05-08-1"
 package_slug: "packagist/typo3/phar-stream-wrapper"
@@ -19,3 +17,5 @@ solution: "Upgrade to versions 2.1.1, 3.1.1 or above."
 urls:
 - "https://typo3.org/security/advisory/typo3-psa-2019-007/"
 uuid: "04ab94a2-8f27-4420-98a8-c0feaaa0ae4f"
+identifiers:
+- "2019-05-08-1"

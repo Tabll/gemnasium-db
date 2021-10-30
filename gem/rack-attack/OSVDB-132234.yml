@@ -19,3 +19,5 @@ urls:
 - "https://github.com/kickstarter/rack-attack/releases/tag/v4.3.1"
 credit: "Andres Riancho from Include Security"
 uuid: "f19c0c3b-5aa4-4c7a-a1eb-f797f76ff3ae"
+identifiers:
+- "OSVDB-132234"

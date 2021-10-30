@@ -20,3 +20,5 @@ urls:
 - "https://github.com/electronick/enum_column/pull/21"
 credit: "Aaron Weiner"
 uuid: "9eab3794-199d-4c41-b5e9-9471e20ea456"
+identifiers:
+- "OSVDB-94679"

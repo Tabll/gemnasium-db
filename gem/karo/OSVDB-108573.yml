@@ -14,3 +14,5 @@ urls:
 - "http://www.vapid.dhs.org/advisories/karo-2.3.8.html"
 credit: "Larry W. Cashdollar, @_larry0"
 uuid: "c513f96d-e129-4cf2-a7fe-f69e6bb7f8ad"
+identifiers:
+- "OSVDB-108573"

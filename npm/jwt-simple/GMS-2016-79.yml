@@ -17,9 +17,10 @@ urls:
 - "https://auth0.com/blog/2015/03/31/critical-vulnerabilities-in-json-web-token-libraries/"
 - "https://github.com/hokaccha/node-jwt-simple/pull/14"
 - "https://github.com/hokaccha/node-jwt-simple/pull/16"
-- "https://nodesecurity.io/advisories/87"
 credit: "Theofanis Katsimpas"
 uuid: "2d30b6dc-8f1f-476b-b35f-1fa5ecaa07ac"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2016-79"

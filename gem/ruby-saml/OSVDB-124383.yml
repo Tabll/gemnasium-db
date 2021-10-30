@@ -15,3 +15,5 @@ urls:
 - "https://github.com/onelogin/ruby-saml/commit/a2e5318530701bf14528c5b3b51c880b3499a75d"
 - "https://github.com/onelogin/ruby-saml/pull/247"
 uuid: "d1fe9ba7-f25a-43b4-ac7d-6a875cff88f4"
+identifiers:
+- "OSVDB-124383"

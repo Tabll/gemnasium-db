@@ -16,9 +16,10 @@ solution: "Upgrade to Mapbox.js version 2.1.7. If you are still using a 1.x vers
   and unable to upgrade to 2.1.7, upgrade to 1.6.5."
 urls:
 - "https://hackerone.com/reports/54327"
-- "https://nodesecurity.io/advisories/49"
 credit: "John Firebaugh, Juan Broullón Sampedro"
 uuid: "0cc1813a-8ab7-42aa-a35f-a988551e0dc1"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2015-37"

@@ -20,3 +20,5 @@ urls:
 - "http://osvdb.org/show/osvdb/110439"
 credit: "leex"
 uuid: "a1ee61eb-57b6-40ff-bd64-3df1ef6e128f"
+identifiers:
+- "OSVDB-110439"

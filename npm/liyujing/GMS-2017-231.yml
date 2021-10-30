@@ -12,9 +12,10 @@ affected_versions: "All versions"
 solution: "There is no solution for this vulnerability at the moment."
 urls:
 - "https://github.com/JacksonGL/NPM-Vuln-PoC/tree/master/directory-traversal/liyujing"
-- "https://nodesecurity.io/advisories/387"
 credit: "Liang Gong"
 uuid: "190acd38-bdd9-4034-8e93-af7aa642c91c"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2017-231"

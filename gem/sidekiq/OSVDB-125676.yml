@@ -16,3 +16,5 @@ urls:
 - "https://github.com/mperham/sidekiq/issues/2330"
 credit: "KelvinLin (https://github.com/KelvinLin)"
 uuid: "ef7dc852-9804-466b-a04c-ef0dcadbd940"
+identifiers:
+- "OSVDB-125676"

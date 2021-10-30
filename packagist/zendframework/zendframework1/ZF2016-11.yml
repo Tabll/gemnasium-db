@@ -21,3 +21,5 @@ urls:
 - "https://github.com/paragonie/random_compat/issues/96"
 credit: "Brian Engert of Soliant Consulting, Enrico Zimuel"
 uuid: "47deea7f-de67-40f0-bf95-6b18d825be0c"
+identifiers:
+- "ZF2016-11"

@@ -14,9 +14,10 @@ solution: "Update to version 2.19.3"
 urls:
 - "https://github.com/moment/moment/issues/4163"
 - "https://github.com/moment/moment/pull/4326"
-- "https://nodesecurity.io/advisories/532"
 credit: "Cristian-Alexandru Staicu"
 uuid: "a8a43b37-fc01-492c-b30b-996c906c5f84"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2017-332"

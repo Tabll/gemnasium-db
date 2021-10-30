@@ -20,3 +20,5 @@ urls:
 - "https://github.com/rubysec/ruby-advisory-db/blob/master/gems/bcrypt-ruby/OSVDB-62067.yml"
 credit: "Aliaksandr Radzivanovich"
 uuid: "560fc440-f641-4034-875e-7a3e670f451d"
+identifiers:
+- "OSVDB-62067"

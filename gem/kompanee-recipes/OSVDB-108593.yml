@@ -16,3 +16,5 @@ urls:
 - "http://www.vapid.dhs.org/advisories/kompanee-recipes-0.1.4.html"
 credit: "Larry W. Cashdollar, @_larry0"
 uuid: "436d6d5c-6f52-4dd3-a402-990a1d621a26"
+identifiers:
+- "OSVDB-108593"

@@ -13,9 +13,10 @@ solution: "Because there is no fixed version for this module, we recommend using
   one."
 urls:
 - "https://github.com/JacksonGL/NPM-Vuln-PoC/tree/master/directory-traversal/serverlyr"
-- "https://nodesecurity.io/advisories/365"
 credit: "Liang Gong"
 uuid: "7cc11252-76bb-4704-8362-b94c44ac2a36"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2017-188"

@@ -1,5 +1,3 @@
-# This advisory is derived from##
-# https://github.com/FriendsOfPHP/security-advisories
 ---
 identifier: "2015-07-01-1"
 package_slug: "packagist/typo3/cms"
@@ -19,3 +17,5 @@ solution: "Upgrade to versions 6.2.14, 7.3.0 or above."
 urls:
 - "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2015-002/"
 uuid: "a81502ec-78d9-4c08-9ba8-a6b784266571"
+identifiers:
+- "2015-07-01-1"

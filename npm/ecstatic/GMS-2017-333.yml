@@ -14,10 +14,11 @@ not_impacted: "All versions starting from 2.0.0"
 solution: "Upgrade to version 2.0.0 or above."
 urls:
 - "https://github.com/jfhbrook/node-ecstatic/commit/71ce93988ead4b561a8592168c72143907189f01#diff-b2b5a88fb51675f1aa1065c093dce1ee"
-- "https://nodesecurity.io/advisories/553"
 - "https://www.checkmarx.com/advisories/denial-of-service-dos-vulnerability-in-ecstatic-npm-package/"
 credit: "Checkmarx"
 uuid: "68259bc9-2da1-446d-b31e-9f3012630466"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2017-333"

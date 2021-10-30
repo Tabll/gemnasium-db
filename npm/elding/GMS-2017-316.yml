@@ -14,9 +14,10 @@ affected_versions: "All versions"
 solution: "There is no solution for this vulnerability at the moment."
 urls:
 - "https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/elding"
-- "https://nodesecurity.io/advisories/415"
 credit: "Liang Gong"
 uuid: "93daefdd-0fe4-422c-bbf1-54ef1a3d8db4"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2017-316"

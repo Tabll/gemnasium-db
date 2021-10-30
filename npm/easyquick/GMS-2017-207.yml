@@ -14,9 +14,10 @@ affected_versions: "All versions"
 solution: "There is no solution for this vulnerability at the moment."
 urls:
 - "https://github.com/JacksonGL/NPM-Vuln-PoC/tree/master/directory-traversal/easyquick"
-- "https://nodesecurity.io/advisories/373"
 credit: "Liang Gong"
 uuid: "067e08a3-e924-4748-8ecb-51222d0115e3"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2017-207"

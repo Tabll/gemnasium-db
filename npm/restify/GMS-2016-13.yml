@@ -12,10 +12,11 @@ fixed_versions:
 affected_versions: "All versions starting from 2.0.0 up to 4.0.4"
 not_impacted: "1.x"
 solution: "Upgrade to v4.1.0 or greater."
-urls:
-- "https://nodesecurity.io/advisories/314"
+urls: []
 credit: "CycoPH"
 uuid: "f48ce8e1-1689-4274-bd33-cce0258467b4"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2016-13"

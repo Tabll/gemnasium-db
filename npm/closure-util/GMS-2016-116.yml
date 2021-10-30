@@ -13,10 +13,11 @@ fixed_versions: []
 affected_versions: "All versions"
 solution: "No fix is currently available for this vulnerability. It's recommended
   to not install nor use this module."
-urls:
-- "https://nodesecurity.io/advisories/165"
+urls: []
 credit: "Adam Baldwin"
 uuid: "60088e05-0c58-400b-9be0-128e51eee7ca"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2016-116"

@@ -14,9 +14,10 @@ not_impacted: "All versions starting from 2.2.0"
 solution: "Upgrade to version 2.2.0 or above."
 urls:
 - "https://github.com/hapijs/yar/issues/34"
-- "https://nodesecurity.io/advisories/yar-DoS"
 credit: "Reid Burke"
 uuid: "3c47db82-bc4c-4d3a-8f6a-4a240c8a77d7"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2014-7"

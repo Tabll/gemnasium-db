@@ -12,9 +12,10 @@ affected_versions: "All versions"
 solution: "There is no solution for this vulnerability at the moment."
 urls:
 - "https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/quickserver"
-- "https://nodesecurity.io/advisories/433"
 credit: "Liang Gong"
 uuid: "050b06f3-84ea-4400-9060-81f428d1ba00"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2017-295"

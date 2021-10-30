@@ -16,9 +16,10 @@ solution: "Upgrade to version 3.15.7 or above."
 urls:
 - "https://github.com/ExactTarget/fuelux/issues/1841"
 - "https://github.com/ExactTarget/fuelux/releases/tag/3.15.7"
-- "https://nodesecurity.io/advisories/133"
 credit: "Keenan Jaenicke"
 uuid: "7c62030a-b40b-4cb3-ad47-492b92f84087"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2016-50"

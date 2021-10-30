@@ -15,9 +15,10 @@ solution: "Update to version 1.0.0 or later"
 urls:
 - "https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=809252"
 - "https://github.com/node-js-libs/cli/issues/81"
-- "https://nodesecurity.io/advisories/95"
 credit: "Steve Kemp"
 uuid: "5eb6c481-e499-4b08-b246-e217d7361899"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2016-34"

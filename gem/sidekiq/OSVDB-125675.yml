@@ -15,3 +15,5 @@ urls:
 - "https://github.com/mperham/sidekiq/pull/2422"
 credit: "Mike Perham"
 uuid: "835d0c97-71ba-4618-8fea-3f1154a2b769"
+identifiers:
+- "OSVDB-125675"

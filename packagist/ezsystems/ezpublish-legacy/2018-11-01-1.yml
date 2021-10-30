@@ -1,5 +1,3 @@
-# This advisory is derived from##
-# https://github.com/FriendsOfPHP/security-advisories
 ---
 identifier: "2018-11-01-1"
 package_slug: "packagist/ezsystems/ezpublish-legacy"
@@ -26,3 +24,5 @@ solution: "Upgrade to versions 2017.12.4.2, 2018.06.1.4, 2019.03.0 or above."
 urls:
 - "http://share.ez.no/community-project/security-advisories/ezsa-2018-006-xss-vulnerability-in-disabled-module-error-template"
 uuid: "ef171c5a-3ce5-4146-bcd1-9b55508e424b"
+identifiers:
+- "2018-11-01-1"

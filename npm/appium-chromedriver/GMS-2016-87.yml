@@ -15,9 +15,10 @@ affected_versions: "All versions before 2.9.4"
 solution: "Upgrade to version 2.9.4 or greater."
 urls:
 - "https://github.com/appium/appium-chromedriver/commit/c7e384afcddf009636b8e5bb23b1f06150eda293"
-- "https://nodesecurity.io/advisories/162"
 credit: "Adam Baldwin"
 uuid: "13cab419-affc-4ce9-977c-57ce8568cf35"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2016-87"

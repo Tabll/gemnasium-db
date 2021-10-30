@@ -12,9 +12,10 @@ affected_versions: "All versions"
 solution: "There is no solution for this vulnerability at the moment."
 urls:
 - "https://github.com/JacksonGL/NPM-Vuln-PoC/tree/master/directory-traversal/weather.swlyons"
-- "https://nodesecurity.io/advisories/379"
 credit: "Liang Gong"
 uuid: "3b5ac5ab-91f7-4e35-affb-a38aa8994be2"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2017-208"

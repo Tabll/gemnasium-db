@@ -20,3 +20,5 @@ urls:
 - "https://www.neos.io/blog/neos-sa-2015-001.html"
 credit: "Robert Lemke"
 uuid: "d5a1588b-12bf-46e2-afa9-ae28c086cc8d"
+identifiers:
+- "neos-sa-2015-001"

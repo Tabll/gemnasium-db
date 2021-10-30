@@ -21,3 +21,5 @@ uuid: "78453bc9-7aec-4c34-b32a-2b2d7c19f5bd"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "SRCCLR-SID-3173"

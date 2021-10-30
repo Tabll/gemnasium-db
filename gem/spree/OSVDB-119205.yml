@@ -24,3 +24,5 @@ urls:
 - "https://spreecommerce.com/blog/security-updates-2015-3-3"
 credit: "Egor Homakov, Sakurity"
 uuid: "f0c280e8-492a-42bc-a239-8506d0c698de"
+identifiers:
+- "OSVDB-119205"

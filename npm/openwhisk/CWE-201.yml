@@ -16,3 +16,5 @@ urls:
 - "https://github.com/apache/incubator-openwhisk-client-js/commit/0e40671e75d2ec7e88fa39ef787526d4304f2aaa"
 credit: "James M Snell"
 uuid: "d99db642-9524-41f0-8dba-1c1fcf79ce35"
+identifiers:
+- "CWE-201"

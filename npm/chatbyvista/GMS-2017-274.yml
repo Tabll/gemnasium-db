@@ -12,9 +12,10 @@ affected_versions: "All versions"
 solution: "There is no solution for this vulnerability at the moment."
 urls:
 - "https://github.com/JacksonGL/NPM-Vuln-PoC/blob/master/directory-traversal/chatbyvista"
-- "https://nodesecurity.io/advisories/462"
 credit: "Liang Gong"
 uuid: "ab8057b5-f4c8-4766-b65f-cf92a509a9f3"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2017-274"

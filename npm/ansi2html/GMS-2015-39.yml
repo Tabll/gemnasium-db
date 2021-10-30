@@ -12,10 +12,11 @@ fixed_versions: []
 affected_versions: "All versions up to 0.0.1"
 solution: "Do not pass untrusted input to ansi2html or limit the size of the user
   input to limit the impact."
-urls:
-- "https://nodesecurity.io/advisories/51"
+urls: []
 credit: "Adam Baldwin"
 uuid: "077d88ec-85d1-414f-a66c-fa1819bd1fdc"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2015-39"

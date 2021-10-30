@@ -15,9 +15,10 @@ solution: "Upgrade to version 0.9.3 or greater"
 urls:
 - "http://blog.intothesymmetry.com/2017/03/critical-vulnerability-in-json-web.html"
 - "https://github.com/cisco/node-jose"
-- "https://nodesecurity.io/advisories/324"
 credit: "Antonio Sanso"
 uuid: "093623ab-1967-4991-ba9e-109a384e1fcc"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2017-117"

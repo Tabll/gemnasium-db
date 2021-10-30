@@ -21,3 +21,5 @@ urls:
 - "https://github.com/rubysec/ruby-advisory-db/blob/master/gems/activeresource/OSVDB-95749.yml"
 credit: "Jamis Buck"
 uuid: "77ce3920-50be-4562-bc83-96f799a32a85"
+identifiers:
+- "OSVDB-95749"

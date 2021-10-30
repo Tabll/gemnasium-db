@@ -15,9 +15,10 @@ affected_versions: "All versions before 1.4.1, all versions starting from 2.0.0 
 solution: "Upgrade to version 2.0.3 or greater."
 urls:
 - "https://github.com/broofa/node-mime/issues/167"
-- "https://nodesecurity.io/advisories/535"
 credit: "Cristian-Alexandru Staicu"
 uuid: "6c482efa-d68b-44eb-97d3-c2bf5fd542be"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2017-247"

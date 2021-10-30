@@ -17,3 +17,5 @@ urls:
 - "https://github.com/zendframework/zf1/commit/bf3f40605be3d8f136a07ae991079a7dcb34d967"
 credit: "Peter O'Callaghan, Enrico Zimuel"
 uuid: "9291001b-a9d9-4468-805f-08d6c10958b7"
+identifiers:
+- "ZF2016-02"

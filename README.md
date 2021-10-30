@@ -118,46 +118,68 @@ nuget/Node.js
 
 ## YAML schema
 
-* `identifier` should be the CVE id when it exists. If a vulnerability (and the
-corresponding advisory) cannot be linked to a CVE, you can use our internal id
-`GMS-<year>-<nr>` where `<year>` is the year in which the vulnerability was
-disclosed and `<nr>` is a sequence number. In order to generate a new, unique
-valid id, you can use our helper script `identifier/identifer.rb` which can be
-invoked with `identifier/identifer.rb -n . <year>` where `<year>` is the year
-in which the vulnerability has been disclosed, e.g. `2017`.
+* `identifiers` (array of strings) is an array that includes public identifiers
+  for the advisory.  If a vulnerability (and the corresponding advisory) cannot
+  be linked to a CVE, you can use our internal id `GMS-<year>-<nr>` where
+  `<year>` is the year in which the vulnerability was disclosed and `<nr>` is a
+  sequence number. In order to generate a new, unique valid id, you can use our
+  helper script `identifier/identifer.rb` which can be invoked with
+  `identifier/identifer.rb -n . <year>` where `<year>` is the year in which the
+  vulnerability has been disclosed, e.g. `2017`.
+* `identifier` (string, **DEPERECATED**) should be the CVE id when it exists. If a
+  vulnerability (and the corresponding advisory) cannot be linked to a CVE, you
+  can use our internal id `GMS-<year>-<nr>` where `<year>` is the year in which
+  the vulnerability was disclosed and `<nr>` is a sequence number. In order to
+  generate a new, unique valid id, you can use our helper script
+  `identifier/identifer.rb` which can be invoked with `identifier/identifer.rb
+  -n . <year>` where `<year>` is the year in which the vulnerability has been
+  disclosed, e.g. `2017`.
 * `package_slug` (string): Package type and package name separated by a slash.
 * `title` (string): A short description of the security flaw.
-* `description` (string): A long description of the security flaw and the possible risks.
-   The [CommonMark](https://spec.commonmark.org/0.28/) flavor of Markdown can be used.
-* `pubdate` (string): The date on which the advisory was made public, in ISO-8601 format; `pubdate` refers to the publication date provided by the data-source from which the advisory originates (e.g., NVD).
-* `date` (string): The last date on which the advisory was modified, in ISO-8601 format; `date` refers to the modification date provided by the data-source from which the advisory originates (e.g., NVD).
-* `affected_range` (string): The range of affected versions. Machine-readable syntax used by the package manager.
-* `affected_versions` (string): The range of affected versions. Human-readable version for display.
-* `fixed_versions` (array of strings): The versions fixing the vulnerability. The order is not relevant.
-* `not_impacted` (string, optional): Environments not affected by the vulnerability.
+* `description` (string): A long description of the security flaw and the
+  possible risks.  The [CommonMark](https://spec.commonmark.org/0.28/) flavor
+  of Markdown can be used.
+* `pubdate` (string): The date on which the advisory was made public, in
+  ISO-8601 format; `pubdate` refers to the publication date provided by the
+  data-source from which the advisory originates (e.g., NVD).
+* `date` (string): The last date on which the advisory was modified, in
+  ISO-8601 format; `date` refers to the modification date provided by the
+  data-source from which the advisory originates (e.g., NVD).
+* `affected_range` (string): The range of affected versions. Machine-readable
+  syntax used by the package manager.
+* `affected_versions` (string): The range of affected versions. Human-readable
+  version for display.
+* `fixed_versions` (array of strings): The versions fixing the vulnerability.
+  The order is not relevant.
+* `not_impacted` (string, optional): Environments not affected by the
+  vulnerability.
 * `solution` (string, optional): How to remediate the vulnerability.
-* `credit` (string, optional): The names of the people who reported the vulnerability or helped fixing it.
-* `urls` (array of strings): URLs of: detailed advisory, documented exploit, vulnerable source code, etc.
-   The order is not relevant.
+* `credit` (string, optional): The names of the people who reported the
+  vulnerability or helped fixing it.
+* `urls` (array of strings): URLs of: detailed advisory, documented exploit,
+  vulnerable source code, etc.  The order is not relevant.
 * `links` (array of objects, optional): Meta-information regarding the advisory
-    pointing to resources that are helpful to better understand the context.
-    The key has to be alphanumeric. Every object has two properties: a required
-    `name` (string) and an optional `type` (`poc`, `blog`).
-* `cwe_ids` (array of strings): List of CWEs that are related to the
-    advisory.
+  pointing to resources that are helpful to better understand the context.  The
+  key has to be alphanumeric. Every object has two properties: a required
+  `name` (string) and an optional `type` (`poc`, `blog`).
+* `cwe_ids` (array of strings): List of CWEs that are related to the advisory.
 * `cvss_v2` (string, optional): The CVSS attack vector (version 2.x) for a
-given vulnerability (see https://www.first.org/cvss/v2/ for more details).
+  given vulnerability (see https://www.first.org/cvss/v2/ for more details).
 * `cvss_v3` (string, optional): The CVSS attack vector (version 3.x) for a
-given vulnerability (see https://www.first.org/cvss/v3-1/ for more details).
+  given vulnerability (see https://www.first.org/cvss/v3-1/ for more details).
 * `versions` (array, optional): Version meta information. This array contains
-meta-information about the versions that are mentioned in the `affected_range`
-and `fixed_version` fields. A meta-information object includes the following
-properties:
+  meta-information about the versions that are mentioned in the
+  `affected_range` and `fixed_version` fields. A meta-information object
+  includes the following properties:
   - `number`: The version number.
-  - `commit`: Meta information related to a Git commit with the following properties:
-    - `tags`: The git commit tags that are assiciated with this particular version.
+  - `commit`: Meta information related to a Git commit with the following
+    properties:
+    - `tags`: The git commit tags that are assiciated with this particular
+      version.
     - `sha`: The git commit SHA.
-    - `timestamp`: The git commit timestamp. This is also the property by which all the meta-information objects, which are contained in the `versions` array, are sorted in ascending order.
+    - `timestamp`: The git commit timestamp. This is also the property by which
+      all the meta-information objects, which are contained in the `versions`
+      array, are sorted in ascending order.
 
 The syntax to be used in `affected_range` depends on the package type:
 - `gem`: [gem requirement](https://guides.rubygems.org/specification-reference/#add_runtime_dependency)
@@ -181,6 +203,8 @@ Here's a sample document:
 ``` yaml
 ---
 identifier: "CVE-2021-28965"
+identifiers: 
+- "CVE-2021-28965"
 package_slug: "gem/rexml"
 title: "Improper Restriction of XML External Entity Reference"
 description: "The REXML gem does not properly address XML round-trip issues. An incorrect

@@ -19,3 +19,5 @@ urls:
 - "https://github.com/rubysec/ruby-advisory-db/blob/master/gems/builder/OSVDB-95668.yml"
 credit: "Jim Weirich"
 uuid: "621f0db3-93ff-4fb9-956a-1eac55189338"
+identifiers:
+- "OSDDB-95668"

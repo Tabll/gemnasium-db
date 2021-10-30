@@ -17,7 +17,8 @@ solution: "Upgrade to version 2.7.2 or above."
 urls:
 - "https://github.com/lautis/uglifier/pull/86"
 - "https://github.com/mishoo/UglifyJS2/issues/751"
-- "https://nodesecurity.io/advisories/uglifyjs_incorrectly_handles_non-boolean_comparisons"
 - "https://zyan.scripts.mit.edu/blog/backdooring-js/"
 credit: "Yan Zhu, Tom MacWright (UglifyJS),  Reed Loden (uglyfier)"
 uuid: "6fa33e76-33a5-4f18-b848-2f1ad12b5b45"
+identifiers:
+- "OSVDB-126747"

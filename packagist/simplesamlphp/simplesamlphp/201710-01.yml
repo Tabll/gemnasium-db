@@ -1,5 +1,3 @@
-# This advisory is derived from##
-# https://github.com/FriendsOfPHP/security-advisories
 ---
 identifier: "201710-01"
 package_slug: "packagist/simplesamlphp/simplesamlphp"
@@ -16,3 +14,5 @@ solution: "Upgrade to version 1.14.17 or above."
 urls:
 - "https://simplesamlphp.org/security/201710-01"
 uuid: "88a65088-8ced-44a9-8d2c-58f61d3aad2c"
+identifiers:
+- "201710-01"

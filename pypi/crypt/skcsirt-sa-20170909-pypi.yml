@@ -18,3 +18,5 @@ urls:
 - "http://www.nbu.gov.sk/skcsirt-sa-20170909-pypi/"
 credit: "SK-CSIRT"
 uuid: "994ac7cc-6b3c-4199-85be-f18c9c8d43bb"
+identifiers:
+- "skcsirt-sa-20170909-pypi"

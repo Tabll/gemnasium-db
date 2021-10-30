@@ -13,10 +13,11 @@ fixed_versions:
 affected_versions: "All versions up to 1.0.2, all versions before 2.3.10"
 not_impacted: "All versions after 1.0.2 before 2.3.10"
 solution: "Upgrade to version 2.3.10 or above."
-urls:
-- "https://nodesecurity.io/advisories/538"
+urls: []
 credit: "Doug Wilson"
 uuid: "582f5eef-c25c-4e5d-a37d-050329a36e54"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2017-246"

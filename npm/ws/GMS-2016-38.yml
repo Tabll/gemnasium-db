@@ -15,9 +15,10 @@ solution: "Update to version 1.1.1 of ws, or if that is not possible, set the ma
 urls:
 - "https://github.com/nodejs/node/issues/7388"
 - "https://github.com/websockets/ws/commit/0328a8f49f004f98d2913016214e93b2fc2713bc"
-- "https://nodesecurity.io/advisories/120"
 credit: "Fedor Indutny"
 uuid: "a0b42462-4ec4-4aa6-afa5-86d1ca9c2af2"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2016-38"

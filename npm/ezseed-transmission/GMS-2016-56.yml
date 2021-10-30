@@ -17,9 +17,10 @@ solution: "Upgrade to at least version 0.0.15"
 urls:
 - "https://github.com/ezseed/transmission/commit/4816b1b08288774c607a7df2a4209612c4d46caa"
 - "https://github.com/ezseed/transmission/commit/71df46fa60979d117f04d0ae58dfdedde8c8f485"
-- "https://nodesecurity.io/advisories/114"
 credit: "Adam Baldwin"
 uuid: "e52c1b57-ae80-4cd4-a49c-1e12b2ffbb34"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2016-56"

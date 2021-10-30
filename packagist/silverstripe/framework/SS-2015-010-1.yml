@@ -1,5 +1,3 @@
-# This advisory is derived from##
-# https://github.com/FriendsOfPHP/security-advisories
 ---
 identifier: "SS-2015-010-1"
 package_slug: "packagist/silverstripe/framework"
@@ -16,3 +14,5 @@ solution: "Upgrade to version 3.1.12 or above."
 urls:
 - "https://www.silverstripe.org/software/download/security-releases/ss-2015-010-xss-in-directorforce-redirect/"
 uuid: "11e936c6-9e9d-4718-9b65-a44f4e13f8b3"
+identifiers:
+- "SS-2015-010-1"

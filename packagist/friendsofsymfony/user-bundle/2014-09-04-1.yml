@@ -1,5 +1,3 @@
-# This advisory is derived from##
-# https://github.com/FriendsOfPHP/security-advisories
 ---
 identifier: "2014-09-04-1"
 package_slug: "packagist/friendsofsymfony/user-bundle"
@@ -16,3 +14,5 @@ solution: "Upgrade to version 1.3.0 or above."
 urls:
 - "https://symfony.com/blog/fosuserbundle-entropy-of-generated-tokens-is-lost"
 uuid: "95d2439b-3b4c-41b8-9403-9b80b674e017"
+identifiers:
+- "2014-09-04-1"

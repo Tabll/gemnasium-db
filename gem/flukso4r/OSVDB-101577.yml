@@ -14,3 +14,5 @@ solution: "We are not aware of a solution at the moment."
 urls:
 - "http://osvdb.org/show/osvdb/101577"
 uuid: "34ea8922-f51a-454d-972f-909b811b4ad6"
+identifiers:
+- "OSVDB-101577"

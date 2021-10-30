@@ -16,9 +16,10 @@ solution: "Upgrade to version 1.1.4 or above."
 urls:
 - "https://github.com/rendrjs/rendr-handlebars/pull/61"
 - "https://github.com/rendrjs/rendr/pull/513"
-- "https://nodesecurity.io/advisories/128"
 credit: "Jon Merrifield"
 uuid: "3b217377-48f7-4045-b1a0-95723d282acf"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2016-53"

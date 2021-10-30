@@ -17,9 +17,10 @@ not_impacted: "All versions starting from 2.3.3"
 solution: "Upgrade to version 2.3.3 or above."
 urls:
 - "https://github.com/salesforce/tough-cookie/issues/92"
-- "https://nodesecurity.io/advisories/525"
 credit: "Cristian-Alexandru Staicu"
 uuid: "29853e80-30d2-40ef-874a-89ca1734dec2"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2017-210"

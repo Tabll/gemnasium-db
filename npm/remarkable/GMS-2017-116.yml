@@ -10,10 +10,11 @@ fixed_versions:
 - "1.7.0"
 affected_versions: "All versions up to 1.6.2"
 solution: "Upgrade to v1.7.0 or higher"
-urls:
-- "https://nodesecurity.io/advisories/319"
+urls: []
 credit: "Ben Alpert"
 uuid: "e1817462-cddc-40fa-9d9d-76129b9a5b15"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2017-116"

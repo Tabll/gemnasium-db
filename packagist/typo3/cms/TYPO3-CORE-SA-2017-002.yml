@@ -17,3 +17,5 @@ urls:
 - "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2017-002/"
 credit: "Thomas Dahlke"
 uuid: "5e8b7695-9cf9-44f0-b675-f2b894c89518"
+identifiers:
+- "TYPO3-CORE-SA-2017-002"

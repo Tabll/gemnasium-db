@@ -23,9 +23,10 @@ urls:
 - "http://sailsjs.org/documentation/concepts/security/cors"
 - "http://sailsjs.org/documentation/reference/configuration/sails-config-cors"
 - "https://github.com/balderdashy/sails/commit/ca43e0507af79f15361789a3489013b01c8e1825"
-- "https://nodesecurity.io/advisories/148"
 credit: "Evan Johnson"
 uuid: "32e80a10-38c0-4fc0-8222-13423d09eedc"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2016-74"

@@ -21,3 +21,5 @@ urls:
 - "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2016-021"
 credit: "Georg Ringer"
 uuid: "50d72ef4-d755-4718-99bd-8b10e72db6f8"
+identifiers:
+- "TYPO3-CORE-SA-2016-021"

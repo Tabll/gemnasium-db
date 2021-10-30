@@ -16,3 +16,5 @@ urls:
 - "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2015-014/"
 credit: "Heiko Kromm"
 uuid: "078d8889-a099-4822-aa93-01d2bb172975"
+identifiers:
+- "TYPO3-CORE-SA-2015-014"

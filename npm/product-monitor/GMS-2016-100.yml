@@ -14,10 +14,11 @@ fixed_versions:
 - "2.2.5"
 affected_versions: "All versions before 2.2.5"
 solution: "Update to versions 2.2.5 or later."
-urls:
-- "https://nodesecurity.io/advisories/171"
+urls: []
 credit: "Adam Baldwin"
 uuid: "027d9419-ab6d-4ecd-8b1e-4581affa6f73"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2016-100"

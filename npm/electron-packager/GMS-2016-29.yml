@@ -23,9 +23,10 @@ solution: "Upgrade to at least version 7.0.0\r\n\r\nIt's also recommended to del
   home folder."
 urls:
 - "https://github.com/electron-userland/electron-packager/issues/333"
-- "https://nodesecurity.io/advisories/104"
 credit: "Mark Lee"
 uuid: "26441c8c-16e6-4ae8-bb6c-c74c424a1f98"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2016-29"

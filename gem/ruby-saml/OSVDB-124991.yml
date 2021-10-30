@@ -15,3 +15,5 @@ solution: "Upgrade to version 1.0.0 or above."
 urls:
 - "https://github.com/onelogin/ruby-saml/commit/9853651b96b99653ea8627d757d46bfe62ab6448"
 uuid: "5425926c-6c44-4fa1-89e1-3a0a1c956648"
+identifiers:
+- "OSVDB-124991"

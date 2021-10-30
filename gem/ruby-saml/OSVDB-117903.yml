@@ -18,3 +18,5 @@ urls:
 - "https://github.com/onelogin/ruby-saml/pull/183"
 credit: "Glyn Wintle - dxwsecurity"
 uuid: "f7433840-d0ae-4d4f-af96-7c2ffccb8362"
+identifiers:
+- "OSVDB-117903"

@@ -15,3 +15,5 @@ urls:
 - "http://www.osvdb.org/show/osvdb/117492"
 - "https://github.com/wxWidgets/wxPython/commits/master/wx/tools/img2py.py"
 uuid: "b8dff624-6a96-400f-bdeb-395bca20f4f7"
+identifiers:
+- "OSVDB-117492"

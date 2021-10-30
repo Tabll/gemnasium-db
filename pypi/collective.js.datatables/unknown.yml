@@ -17,3 +17,5 @@ urls:
 - "https://www.netsparker.com/cve-2015-6384-xss-vulnerability-identified-in-datatables/"
 credit: "Onur Yilmaz"
 uuid: "5107e8f8-9c2a-485d-8340-425e040279cb"
+identifiers:
+- "All versions"

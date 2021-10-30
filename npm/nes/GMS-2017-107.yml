@@ -16,9 +16,10 @@ solution: "Upgrade to version 6.4.1 or later."
 urls:
 - "https://github.com/hapijs/nes/commit/249ba1755ed6977fbc208463c87364bf884ad655"
 - "https://github.com/hapijs/nes/issues/171"
-- "https://nodesecurity.io/advisories/331"
 credit: "iipokypatop"
 uuid: "7dfc8fc6-f198-48be-b939-b912b2844f32"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2017-107"

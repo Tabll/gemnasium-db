@@ -16,9 +16,10 @@ affected_versions: "All versions up to 0.3.8"
 solution: "Change to use https or update to at least version 0.4.0"
 urls:
 - "https://github.com/airbrake/node-airbrake/issues/70"
-- "https://nodesecurity.io/advisories/96"
 credit: "Phil Schleihauf"
 uuid: "6fd1ea8f-c10e-4ef1-ab4d-9734699d8955"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2016-18"

@@ -19,9 +19,10 @@ not_impacted: "All versions starting from 1.6.14 before 1.7.0, all versions star
 solution: "Upgrade to versions 1.6.14, 1.7.8 or above."
 urls:
 - "https://electron.atom.io/blog/2017/09/27/chromium-rce-vulnerability-fix"
-- "https://nodesecurity.io/advisories/539"
 credit: "Electron Team"
 uuid: "b7ab766a-faaf-41e0-9cde-eb3b4e0c0df6"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2017-249"

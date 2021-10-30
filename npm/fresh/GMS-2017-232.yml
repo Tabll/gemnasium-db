@@ -13,10 +13,11 @@ fixed_versions:
 affected_versions: "All versions before 0.5.2"
 not_impacted: "All versions starting from 0.5.2"
 solution: "Upgrade to version 0.5.2 or above."
-urls:
-- "https://nodesecurity.io/advisories/526"
+urls: []
 credit: "Cristian-Alexandru Staicu"
 uuid: "a45dd12c-da38-4119-a6a7-1e0b3f9d5d44"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2017-232"

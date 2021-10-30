@@ -14,3 +14,5 @@ solution: "Don't use this package."
 urls:
 - "https://github.com/rubysec/ruby-advisory-db/blob/master/gems/quick_magick/OSVDB-106954.yml"
 uuid: "5695a6ef-da6a-4166-a80a-1a118a7fdc13"
+identifiers:
+- "OSVDB-106954"

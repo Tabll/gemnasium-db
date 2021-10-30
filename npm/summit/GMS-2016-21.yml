@@ -12,9 +12,10 @@ affected_versions: "All versions"
 solution: "There is no solution for this vulnerability at the moment."
 urls:
 - "https://github.com/notduncansmith/summit/issues/23"
-- "https://nodesecurity.io/advisories/315"
 credit: "Cristian-Alexandru Staicu"
 uuid: "ae7103ce-dd93-45f3-8f47-ffa31a0655ba"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2016-21"

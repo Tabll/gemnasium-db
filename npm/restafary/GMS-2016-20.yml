@@ -12,10 +12,11 @@ fixed_versions:
 - "1.6.1"
 affected_versions: "All versions before 1.6.1"
 solution: "Upgrade to version 1.6.1 or greater."
-urls:
-- "https://nodesecurity.io/advisories/89"
+urls: []
 credit: "Craig Arendt"
 uuid: "b483abdb-4e75-476f-acc9-88e32e17f191"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
+identifiers:
+- "GMS-2016-20"
