@@ -27,3 +27,4 @@ cwe_ids:
 - "CWE-506"
 identifiers:
 - "GMS-2021-1"
+- "GHSA-pjwm-rvh2-c87w"
