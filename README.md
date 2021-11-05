@@ -7,11 +7,7 @@ The GitLab team constantly improves this vulnerability database
 by checking external sources on a regular basis, and contributing their findings to this repo.
 Learn more on the [external sources](SOURCES.md) and how the GitLab team tracks them.
 
-The advisory data contained in this repository is used as the basis for our 
-[Advisory Landing Page](https://advisories.gitlab.com).
-
-Statistical data about the advisories contained in this repository is available
-on our [GitLab Advisory Stats Page](https://gitlab-org.gitlab.io/security-products/gemnasium-db/). 
+More information about the advisories contained in this repository is available on our [Advisory Landing Page](https://advisories.gitlab.com).
 
 ## Licensing
 

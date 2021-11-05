@@ -60,19 +60,3 @@ bump:
     - bump.rb -v "v" -c "CHANGELOG.md" -g "gemnasium-db" -n "bumper" -e "bumper@gitlab.com"
   resource_group: "gemnasium-db-$CI_COMMIT_REF_SLUG"
 
-pages:
-  image: registry.gitlab.com/julianthome/stats:1.3.0
-  stage: deploy
-  rules:
-    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
-    - if: '$CI_COMMIT_TAG'
-  before_script:
-    - gem install csv sqlite3 git
-  script:
-    - cd ci/stats && make
-  resource_group: "gemnasium-db-$CI_COMMIT_REF_SLUG"
-  artifacts:
-    paths:
-      - data/data.tar.gz
-      - data/nvd.tar.gz
-      - public
