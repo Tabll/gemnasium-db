@@ -43,6 +43,7 @@ contributions.
 | @vavkamil     | !4650          |
 | @robw-nom     | !4808          |
 | @masahiro331  | !6889          |
+| @mattchrist   | #173           |
 
 ## Directory structure
 
