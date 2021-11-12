@@ -7,7 +7,8 @@ The GitLab team constantly improves this vulnerability database
 by checking external sources on a regular basis, and contributing their findings to this repo.
 Learn more on the [external sources](SOURCES.md) and how the GitLab team tracks them.
 
-More information about the advisories contained in this repository is available on our [Advisory Landing Page](https://advisories.gitlab.com).
+More information about the advisories contained in this repository is available
+on our [Advisory Landing Page](https://advisories.gitlab.com).
 
 ## Licensing
 
@@ -25,7 +26,8 @@ Please review the [contribution guidelines](CONTRIBUTING.md).
 In case you do not want to create the advisory yourself, you can also create an
 issue and mention the missing advisory. In this case, we would be grateful if
 you could add a publicly available resource/links to mailing lists and/or issue
-description for verification purposes.
+description for verification purposes. We would be very grateful, if you could
+create an issue using the `New Advisory` template. 
 
 ## Credits 
 
