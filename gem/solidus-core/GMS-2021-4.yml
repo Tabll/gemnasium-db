@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2021-4"
+identifiers:
+- "GHSA-5629-8855-gf4g"
+- "GMS-2021-4"
+package_slug: "gem/solidus-core"
+title: "Cross-Site Request Forgery (CSRF)"
+description: "solidus-core is vulnerable to CSRF"
+date: "2021-11-01"
+pubdate: "2021-11-01"
+affected_range: "<2.11.12||>2.11.12 <3.0.3||>3.0.3 <3.1.3"
+fixed_versions:
+- "2.11.12"
+- "3.0.3"
+- "3.1.3"
+affected_versions: "All versions before 2.11.12, 
+  all versions after 2.11.12 before 3.0.3, 
+  all versions after 3.0.3 before 3.1.3"
+not_impacted: "Version 2.11.12, version 3.0.3, all versions starting from 3.1.3"
+solution: "Upgrade to version 2.11.12, 3.0.3, 3.1.3 or above."
+urls: 
+- "https://github.com/solidusio/solidus/security/advisories/GHSA-5629-8855-gf4g"
+uuid: "346f167e-50d6-4526-bc18-1be951a34735"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
