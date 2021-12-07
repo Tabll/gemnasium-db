@@ -46,6 +46,7 @@ contributions.
 | @robw-nom     | !4808          |
 | @masahiro331  | !6889          |
 | @mattchrist   | #173           |
+| @curvedriver  | #174           |
 
 ## Directory structure
 
