@@ -20,7 +20,7 @@ we check the oss-security mailing list manually.
 
 For the manual source tracking, we use the following strategy:
 - Look for vulnerability announcement that do not have a CVE with an announcement day not older than 4 weeks
-- Generate an identifier (as explaine in our [contribution guidelines](CONTRIBUTING.md))
+- Generate an identifier (as explained in our [contribution guidelines](CONTRIBUTING.md))
 - Create an MR (according to our [contribution guidelines](CONTRIBUTING.md))
 
 It's preferred to create merge requests right away but the team member

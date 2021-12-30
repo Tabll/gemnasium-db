@@ -1,0 +1,334 @@
+{
+  "definitions": {},
+  "$id": "https://gitlab.com/gitlab-org/security-products/gemnasium-db/schema/schema.json",
+  "type": "object",
+  "title": "Gemnasium DB Advisory Schema",
+  "required": [
+    "identifier",
+    "identifiers",
+    "package_slug",
+    "title",
+    "description",
+    "date",
+    "affected_range",
+    "fixed_versions",
+    "affected_versions",
+    "urls",
+    "uuid",
+    "pubdate"
+  ],
+  "optional": [
+    "credit",
+    "cvss_v2",
+    "cvss_v3",
+    "solution",
+    "not_impacted",
+    "versions",
+    "links"
+  ],
+  "properties": {
+    "identifiers": {
+      "$id": "#/properties/identifiers",
+      "type": "array",
+      "title": "The vulnerability identifiers",
+      "items": {
+        "$id": "#/properties/identifiers/items",
+        "type": "string",
+        "title": "A single identifier",
+        "default": "",
+        "examples": [
+          "CVE-2020-0001"
+        ],
+        "minItems": 1,
+        "pattern": "^([\\da-zA-Z_\\-]+)$"
+      }
+    },
+    "identifier": {
+      "$id": "#/properties/identifier",
+      "type": "string",
+      "title": "The CVE id (preferred) or any public identifier",
+      "default": "",
+      "examples": [
+        "CVE-2019-3888"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "package_slug": {
+      "$id": "#/properties/package_slug",
+      "type": "string",
+      "title": "Package type and package name separated by a slash",
+      "default": "",
+      "examples": [
+        "maven/io.undertow/undertow-core"
+      ],
+      "pattern": "^(gem|go|maven|npm|packagist|pypi|nuget|conan)/.+$"
+    },
+    "title": {
+      "$id": "#/properties/title",
+      "type": "string",
+      "title": "A short description of the security flaw",
+      "default": "",
+      "examples": [
+        "Information Exposure"
+      ],
+      "pattern": "^.+$"
+    },
+    "description": {
+      "$id": "#/properties/description",
+      "type": "string",
+      "title": "A long description of the security flaw and the possible risks",
+      "default": "",
+      "examples": [
+        "A description with `markdown`"
+      ],
+      "pattern": "^.+$"
+    },
+    "date": {
+      "$id": "#/properties/date",
+      "type": "string",
+      "title": "The last date on which the advisory was modified, in ISO-8601 format",
+      "default": "",
+      "examples": [
+        "2019-07-05"
+      ],
+      "pattern": "^(\\d\\d\\d\\d-\\d\\d-\\d\\d)$"
+    },
+    "pubdate": {
+      "$id": "#/properties/pubdate",
+      "type": "string",
+      "title": "The date on which the advisory was published, in ISO-8601 format",
+      "default": "",
+      "examples": [
+        "2019-07-05"
+      ],
+      "pattern": "^(\\d\\d\\d\\d-\\d\\d-\\d\\d)$"
+    },
+    "affected_range": {
+      "$id": "#/properties/affected_range",
+      "type": "string",
+      "title": "The range of affected versions in machine-readable syntax used by the package manager",
+      "default": "",
+      "examples": [
+        "(,2.0.21)"
+      ],
+      "pattern": "[<>= ,\\]\\[\\)\\(\\w\\.|]*"
+    },
+    "fixed_versions": {
+      "$id": "#/properties/fixed_versions",
+      "type": "array",
+      "title": "The versions fixing the vulnerability",
+      "items": {
+        "$id": "#/properties/fixed_versions/items",
+        "type": [
+          "string",
+          "number"
+        ],
+        "title": "A single affected Version",
+        "default": "",
+        "examples": [
+          "2.0.21.Final"
+        ],
+        "pattern": "^([\\d\\.a-zA-Z_\\-]+)$"
+      }
+    },
+    "affected_versions": {
+      "$id": "#/properties/affected_versions",
+      "type": "string",
+      "title": "The range of affected versions in human-readable version for display",
+      "default": "",
+      "examples": [
+        "All versions before 2.0.21"
+      ],
+      "pattern": "^.+$"
+    },
+    "not_impacted": {
+      "$id": "#/properties/not_impacted",
+      "type": "string",
+      "title": "Environments not affected by the vulnerability",
+      "default": "",
+      "examples": [
+        "All versions starting from 2.0.21"
+      ],
+      "pattern": "^.*$"
+    },
+    "credit": {
+      "$id": "#/properties/credit",
+      "type": "string",
+      "title": "The names of the people who reported the vulnerability or helped fixing it",
+      "default": "",
+      "examples": [
+        "Mark Hamill"
+      ],
+      "pattern": "^.*$"
+    },
+    "solution": {
+      "$id": "#/properties/solution",
+      "type": "string",
+      "title": "How to remediate the vulnerability",
+      "default": "",
+      "examples": [
+        "Upgrade to version 2.0.21.Final or above."
+      ],
+      "pattern": "^.*$"
+    },
+    "urls": {
+      "$id": "#/properties/urls",
+      "type": "array",
+      "title": "URLs of: detailed advisory, documented exploit, vulnerable source code, etc",
+      "items": {
+        "$id": "#/properties/urls/items",
+        "type": "string",
+        "title": "The Items Schema",
+        "default": "",
+        "examples": [
+          "https://nvd.nist.gov/vuln/detail/CVE-2019-3888",
+          "https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2019-3888"
+        ],
+        "pattern": "^.*$"
+      }
+    },
+    "cwe_ids": {
+      "$id": "#/properties/cwe_ids",
+      "type": "array",
+      "title": "List of related cwe_ids",
+      "items": {
+        "$id": "#/properties/cwe_ids/items",
+        "type": "string",
+        "title": "The Items Schema",
+        "default": "",
+        "examples": [
+          "CWE-94",
+          "CWE-76"
+        ],
+        "pattern": "^CWE-[0-9]{1,4}$"
+      }
+    },
+    "uuid": {
+      "$id": "#/properties/uuid",
+      "type": "string",
+      "title": "UUID",
+      "default": "",
+      "examples": [
+        "e1f57671-bce6-42e6-b344-bc67d25d9ca9"
+      ],
+      "pattern": "^[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}$"
+    },
+    "cvss_v2": {
+      "$id": "#/properties/cvss_v2",
+      "type": "string",
+      "title": "Common Vulnerability Scoring System Vector (according to CVSS version 2)",
+      "default": "",
+      "examples": [
+        "AV:N/AC:M/Au:N/C:N/I:P/A:P"
+      ],
+      "pattern": "^AV:[NALP]\\/AC:[HML]\\/Au:[MSN]\\/C:[NPC]\\/I:[NPC]\\/A:[NPC]$"
+    },
+    "cvss_v3": {
+      "$id": "#/properties/cvss_v3",
+      "type": "string",
+      "title": "Common Vulnerability Scoring System Vector (according to CVSS version 3)",
+      "default": "",
+      "examples": [
+        "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N/RL:O/CR:L"
+      ],
+      "pattern": "^CVSS:3\\.[\\d\\.]+\\/AV:[NALP]\\/AC:[LH]\\/PR:[NLH]\\/UI:[NR]\\/S:[UC]\\/C:[NLH]\\/I:[NLH]\\/A:[NLH]$"
+    },
+    "links": {
+      "$id": "#/properties/links",
+      "type": "array",
+      "description": "An array of references to external documentation or articles that describe the vulnerability.",
+      "items": {
+        "type": "object",
+        "required": [
+          "url"
+        ],
+        "properties": {
+          "type": {
+            "$id": "#/properties/links/array/type",
+            "type": "string",
+            "description": "Type of the link.",
+            "enum": [
+              "poc",
+              "blog"
+            ]
+          },
+          "url": {
+            "$id": "#/properties/links/array/url",
+            "type": "string",
+            "description": "URL of the vulnerability details document.",
+            "format": "uri"
+          }
+        }
+      }
+    },
+    "versions": {
+      "$id": "#/properties/versions",
+      "type": "array",
+      "title": "Version Meta Information",
+      "items": {
+        "$id": "#/properties/versions/items",
+        "type": "object",
+        "title": "version meta info items",
+        "required": [
+          "number",
+          "commit"
+        ],
+        "properties": {
+          "number": {
+            "$id": "#/properties/versions/items/properties/number",
+            "type": "string",
+            "title": "Version Information",
+            "pattern": "^([\\d\\.a-zA-Z_\\-]+)$",
+            "examples": [
+              "1.2.3"
+            ]
+          },
+          "commit": {
+            "$id": "#/properties/versions/items/properties/commit",
+            "type": "object",
+            "title": "Git commit meta information",
+            "required": [
+              "tags",
+              "sha",
+              "timestamp"
+            ],
+            "properties": {
+              "tags": {
+                "$id": "#/properties/versions/items/properties/commit/tags",
+                "type": "array",
+                "title": "Array of Git Tags associated with this particular version",
+                "items": {
+                  "$id": "#/properties/versions/items/properties/commit/tags/items",
+                  "type": "string",
+                  "title": "The Items Schema",
+                  "examples": [
+                    "v1.2.3-tag"
+                  ],
+                  "pattern": "^[a-zA-Z0-9_\\-\\.]*$"
+                }
+              },
+              "sha": {
+                "$id": "#/properties/versions/items/properties/commit/sha",
+                "type": "string",
+                "title": "Commit sha",
+                "pattern": "^[0-9a-f]{5,40}$",
+                "examples": [
+                  "295cf0778821bf08681e2bd0ef0e6cad04fc3001"
+                ]
+              },
+              "timestamp": {
+                "$id": "#/properties/versions/items/properties/commit/timestamp",
+                "type": "string",
+                "title": "Timestamp of the format YYYYMMDDHHMMSS",
+                "pattern": "^\\d{14,14}$",
+                "examples": [
+                  "20190626162700"
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

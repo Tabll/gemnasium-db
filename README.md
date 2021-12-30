@@ -34,20 +34,22 @@ create an issue using the `New Advisory` template.
 We would like to thank the following authors very much for their valuable
 contributions.
 
-| Author        | MRs/Issues     |
-| ------------- | -------------- |
-| @blischalkcof | #168           |
-| @thklein      | #167           |
-| @AB-xdev      | #166           |
-| @brondsem     | !1500, !1501   |
-| @mrtux        | !1611, !1613   |
-| @rusher1      | !2246          | 
-| @vavkamil     | !4650          |
-| @robw-nom     | !4808          |
-| @masahiro331  | !6889          |
-| @mattchrist   | #173           |
-| @curvedriver  | #174           |
-| @AFDesk       | #175           |
+| Author         | MRs/Issues            |
+| -------------- | --------------------- |
+| @blischalkcof  | #168                  |
+| @thklein       | #167                  |
+| @AB-xdev       | #166                  |
+| @brondsem      | !1500, !1501          |
+| @mrtux         | !1611, !1613, !11467  |
+| @rusher1       | !2246                 | 
+| @vavkamil      | !4650                 |
+| @robw-nom      | !4808                 |
+| @masahiro331   | !6889                 |
+| @mattchrist    | #173                  |
+| @curvedriver   | #174                  |
+| @AFDesk        | #175                  |
+| @patrickmorton | #179                  |
+| @westonsteimel | !11629                |
 
 ## Directory structure
 
