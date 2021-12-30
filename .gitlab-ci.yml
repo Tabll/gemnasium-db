@@ -1,62 +1,32 @@
 stages:
-  - test
-  - bump
-  - deploy
+  - sync
 
-default:
+run:
+  image: ubuntu:20.04
+  stage: sync
   tags:
-    - gitlab-org
-
-workflow:
-  rules:
-    # For merge requests, create a pipeline.
-    - if: '$CI_MERGE_REQUEST_IID'
-    # For `master` branch, create a pipeline (this includes on schedules, pushes, merges, etc.).
-    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
-    # For tags, create a pipeline.
-    - if: '$CI_COMMIT_TAG'
-
-go-yaml-lint:
-  image: golang:1.16-alpine
-  stage: test 
-  script:
-    - (cd ci/go-yaml-lint && go build)
-    - for ptype in "conan" "gem" "go" "maven" "npm" "nuget" "packagist" "pypi"; do ci/go-yaml-lint/go-yaml-lint "$ptype" || exit 1; done
-  resource_group: "gemnasium-db-$CI_COMMIT_REF_SLUG"
-
-yamllint:
-  image: python:3
-  stage: test 
+    - docker
   before_script:
-    - pip install yamllint
-  script:
-    - yamllint .
-  resource_group: "gemnasium-db-$CI_COMMIT_REF_SLUG"
+    - apt update
+    - apt install -y git
+    - git config --global user.name "Tabll"
+    - git config --global user.email "tabll@outlook.com"
 
-semantic:
-  image: ruby:3.0-alpine3.12
-  stage: test 
   script:
-    - bundle install --gemfile ci/schema/Gemfile
-    - bundle install --gemfile ci/identifier/Gemfile
-    - bundle exec --gemfile ci/schema/Gemfile ci/schema/validate.rb --semantic gem go npm maven packagist pypi conan nuget
-    - ci/identifier/identifier.rb -v .
-  resource_group: "gemnasium-db-$CI_COMMIT_REF_SLUG"
+    - mkdir work_dir
+    - cd work_dir
+    - git clone -b $CI_COMMIT_REF_NAME https://$git_user_name:$git_password@gitlab.tabll.cn/Tabll/gemnasium-db.git .
+    - mkdir sync_git
+    - git clone https://gitlab.com/gitlab-org/security-products/gemnasium-db.git sync_git
+    - shopt -s extglob
+    - cp -rf .gitlab-ci.yml sync_git
+    - rm -rf !(.git|sync_git)
+    - rm -rf sync_git/.git
+    - cp -rf sync_git/* .
+    - rm -rf sync_git
+    - git add .
+    - git commit -a -m "同步 `date +%Y-%m-%d`"
+    - git push https://$git_user_name:$git_password@gitlab.tabll.cn/Tabll/gemnasium-db.git $CI_COMMIT_REF_NAME:$CI_COMMIT_REF_NAME
 
-bump:
-  image: registry.gitlab.com/julianthome/bumper:master-v1.0.7
-  stage: bump
   rules:
-    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
-  variables:
-    GIT_STRATEGY: none
-  before_script:
-    - mkdir -p ~/.ssh && chmod 700 ~/.ssh
-    - ssh-keyscan gitlab.com >> ~/.ssh/known_hosts && chmod 644 ~/.ssh/known_hosts
-    - eval $(ssh-agent -s)
-    - ssh-add <(echo "$BUMPER_SSH")
-    - git clone git@gitlab.com:gitlab-org/security-products/gemnasium-db.git
-  script:
-    - bump.rb -v "v" -c "CHANGELOG.md" -g "gemnasium-db" -n "bumper" -e "bumper@gitlab.com"
-  resource_group: "gemnasium-db-$CI_COMMIT_REF_SLUG"
-
+    - if: $CI_PIPELINE_SOURCE == "schedule"
