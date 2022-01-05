@@ -235,6 +235,11 @@ cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
 uuid: "d3422009-4cd3-49e6-bc8a-b0581fed6612"
 ```
 
+### Advisory Headers
+
+For some advisories you may find the comments below listed in the advisory headers:
+
+* `# community-sync`: synchronizes the advisories automatically with [our community database](https://gitlab.com/gitlab-org/advisories-community) independent of its creation date of the advisory.
 
 ### Versioning and Changelog
 
