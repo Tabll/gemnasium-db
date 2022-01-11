@@ -9,11 +9,16 @@ following the [contribution guidelines](CONTRIBUTING.md).
 
 ## Tracking process and schedule
 
-- [NVD JSON feeds](https://nvd.nist.gov/vuln/data-feeds) (daily)
+Below is the list of data-sources we check for updates on a daily basis:
+- [NVD JSON feeds](https://nvd.nist.gov/vuln/data-feeds)
+- [GitHub security advisory database](https://github.com/advisories)
+- [Ruby Advisory DB](https://github.com/rubysec/ruby-advisory-db)
+
+Below is a list of data-sources from which we sourced data in the past. Those
+data-sources are checked occasionally:
 - [FriendsOfPHP security advisories](https://github.com/FriendsOfPHP/security-advisories)
 - [Victims CVE DB](https://github.com/victims/victims-cve-db)
 - [oss-security mailing list](http://www.openwall.com/lists/oss-security/)
-- [ruby-advisory-db](https://github.com/rubysec/ruby-advisory-db)
 
 While the advisory tracking for NVD and ruby-advisory-db is semi-automated, 
 we check the oss-security mailing list manually. 

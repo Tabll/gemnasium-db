@@ -1,0 +1,32 @@
+---
+identifier: "GMS-2020-10"
+identifiers:
+- "GHSA-mjcr-rqjg-rhg3"
+- "GMS-2020-10"
+package_slug: "pypi/datasette-indieauth"
+title: "Implementation trusts the \"me\" field returned by the authorization server
+  without verifying it"
+description: "### Impact\n\nA malicious user can sign in as a user with any IndieAuth
+  identifier. This is because the implementation does not verify that the final `\"me\"`
+  URL value returned by the authorization server belongs to the same domain as the
+  initial value entered by the user.\n\n### Patches\n\n fixes this issue.\n\n### Workarounds\n\nThere
+  is no workaround. Upgrade to immediately.\n\n### References\n\n- [Security Considerations:
+  Differing User Profile URLs](https://indieauth.spec.indieweb.org/#differing-user-profile-urls-li-1)
+  in the IndieAuth specification.\n\n### For more information\n\nIf you have any questions
+  or comments about this advisory:\n\n* Open an issue in [simonw/datasette-indieauth](https://github.com/simonw/datasette-indieauth/issues)"
+date: "2020-11-24"
+pubdate: "2020-11-24"
+affected_range: "==1.0"
+fixed_versions:
+- "1.1"
+affected_versions: "Version 1.0"
+not_impacted: "All versions before 1.0, all versions after 1.0"
+solution: "Upgrade to version 1.1 or above."
+urls:
+- "https://github.com/simonw/datasette-indieauth/security/advisories/GHSA-mjcr-rqjg-rhg3"
+- "https://pypi.org/project/datasette-indieauth/"
+- "https://github.com/advisories/GHSA-mjcr-rqjg-rhg3"
+uuid: "cdaee516-c142-48ce-a03f-3a1814ff5ccb"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

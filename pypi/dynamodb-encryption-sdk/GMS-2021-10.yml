@@ -1,0 +1,36 @@
+---
+identifier: "GMS-2021-10"
+identifiers:
+- "GHSA-4ph2-8337-hm62"
+- "GMS-2021-10"
+package_slug: "pypi/dynamodb-encryption-sdk"
+title: "Key Caching behavior in the DynamoDB Encryption Client."
+description: "### Impact\nThis advisory concerns users of MostRecentProvider in the
+  DynamoDB Encryption Client with a key provider like AWS Key Management Service that
+  allows for permissions on keys to be modified.\n\nWhen key usage permissions were
+  changed at the key provider, time-based key reauthorization logic in MostRecentProvider
+  did not reauthorize the use of the key. This created the potential for keys to be
+  used in the DynamoDB Encryption Client after permissions to do so were revoked at
+  the key provider.\n\n### Patches\nFixed as of We recommend users to modify their
+  code and adopt `CachingMostRecentProvider`.\n\n\n### Workarounds\nUsers who cannot
+  upgrade to use the `CachingMostRecentProvider` can call `clear()` on the cache to
+  manually flush all of its contents. Next use of the key will force a re-validation
+  to occur with the key provider."
+date: "2021-02-08"
+pubdate: "2021-02-08"
+affected_range: "<1.3.0"
+fixed_versions:
+- "1.3.0"
+affected_versions: "All versions before 1.3.0"
+not_impacted: "All versions starting from 1.3.0"
+solution: "Upgrade to version 1.3.0 or above."
+urls:
+- "https://github.com/aws/aws-dynamodb-encryption-python/security/advisories/GHSA-4ph2-8337-hm62"
+- "https://github.com/aws/aws-dynamodb-encryption-python/commit/90606ec9af7c2b5cb338d64639a62ee867d38d6b"
+- "https://github.com/aws/aws-dynamodb-encryption-python/blob/master/CHANGELOG.rst#130----2021-02-04"
+- "https://pypi.org/project/dynamodb-encryption-sdk"
+- "https://github.com/advisories/GHSA-4ph2-8337-hm62"
+uuid: "39e08330-8b8a-4124-81d6-f33c8957dccc"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

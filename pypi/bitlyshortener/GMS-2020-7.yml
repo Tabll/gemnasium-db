@@ -1,0 +1,30 @@
+---
+identifier: "GMS-2020-7"
+identifiers:
+- "GHSA-r82c-j4mq-5xfw"
+- "GMS-2020-7"
+package_slug: "pypi/bitlyshortener"
+title: "Update bitlyshortener to >=0.5.0 to prevent generating some invalid short
+  URLs"
+description: "### Impact\nDue to a sudden upstream breaking change by Bitly, versions
+  of `bitlyshortener` can generate an invalid short URL when a vanity domain exists.\n\n###
+  Patches\nUpgrading `bitlyshortener` to or newer will prevent the generation of any
+  such invalid short URLs.\n\n### References\n* [Release notes](https://github.com/impredicative/bitlyshortener/releases)"
+date: "2021-09-21"
+pubdate: "2020-10-27"
+affected_range: "<0.5.0"
+fixed_versions:
+- "0.5.0"
+affected_versions: "All versions before 0.5.0"
+not_impacted: "All versions starting from 0.5.0"
+solution: "Upgrade to version 0.5.0 or above."
+urls:
+- "https://github.com/impredicative/bitlyshortener/security/advisories/GHSA-r82c-j4mq-5xfw"
+- "https://github.com/impredicative/bitlyshortener/commit/3d412feb77f3daf6f71536463734c2119a55968d"
+- "https://github.com/impredicative/bitlyshortener/releases/tag/0.5.0"
+- "https://pypi.org/project/bitlyshortener/"
+- "https://github.com/advisories/GHSA-r82c-j4mq-5xfw"
+uuid: "e9941312-ff0b-4dd6-908b-3cbc3756b369"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

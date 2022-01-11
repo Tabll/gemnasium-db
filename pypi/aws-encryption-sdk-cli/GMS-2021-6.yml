@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2021-6"
+identifiers:
+- "GHSA-89v2-g37m-g3ff"
+- "GMS-2021-6"
+package_slug: "pypi/aws-encryption-sdk-cli"
+title: "Improper Verification of Cryptographic Signature in aws-encryption-sdk-cli"
+description: "This advisory addresses several LOW severity issues with
+  streaming signed messages and restricting processing of certain types of invalid
+  messages."
+date: "2021-06-01"
+pubdate: "2021-06-01"
+affected_range: "<1.9.0||>=2.0.0,<2.2.0"
+fixed_versions:
+- "1.9.0"
+- "2.2.0"
+affected_versions: "All versions before 1.9.0, all versions starting from 2.0.0 before
+  2.2.0"
+not_impacted: "All versions starting from 1.9.0 before 2.0.0, all versions starting
+  from 2.2.0"
+solution: "Upgrade to versions 1.9.0, 2.2.0 or above."
+urls:
+- "https://github.com/aws/aws-encryption-sdk-cli/security/advisories/GHSA-89v2-g37m-g3ff"
+- "https://github.com/advisories/GHSA-89v2-g37m-g3ff"
+uuid: "605f3166-e8c0-4969-95aa-09e3caf92f85"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

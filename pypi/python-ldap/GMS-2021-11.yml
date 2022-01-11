@@ -1,0 +1,33 @@
+---
+identifier: "GMS-2021-11"
+identifiers:
+- "GHSA-r8wq-qrxc-hmcm"
+- "GMS-2021-11"
+package_slug: "pypi/python-ldap"
+title: "ReDoS in LDAP schema parser"
+description: "https://github.com/python-ldap/python-ldap/issues/424\n\n### Impact\nThe
+  LDAP schema parser of python-ldap are vulnerable to a regular expression denial-of-service
+  attack. The issue affects clients that use ``ldap.schema`` package to parse LDAP
+  schema definitions from an untrusted source.\n\n### Patches\nThe upcoming release
+  of python-ldap will contain a workaround to prevent ReDoS attacks. The schema parser
+  refuses schema definitions with an excessive amount of backslashes.\n\n### Workarounds\nAs
+  a workaround, users can check input for excessive amount of backslashes in schemas.
+  More than a dozen backslashes per line are atypical.\n\n### References\n[CWE-1333](https://cwe.mitre.org/data/definitions/1333.html)\n\n###
+  For more information\nIf you have any questions or comments about this advisory:\n*
+  Open an issue in [python-ldap](https://github.com/python-ldap/python-ldap) tracker\n"
+date: "2021-11-29"
+pubdate: "2021-11-29"
+affected_range: "<3.4.0"
+fixed_versions:
+- "3.4.0"
+affected_versions: "All versions before 3.4.0"
+not_impacted: "All versions starting from 3.4.0"
+solution: "Upgrade to version 3.4.0 or above."
+urls:
+- "https://github.com/python-ldap/python-ldap/security/advisories/GHSA-r8wq-qrxc-hmcm"
+- "https://github.com/python-ldap/python-ldap/issues/424"
+- "https://github.com/advisories/GHSA-r8wq-qrxc-hmcm"
+uuid: "a42dc4ce-63ef-4da8-b01c-c900ceff8f80"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

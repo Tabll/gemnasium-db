@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2020-8"
+identifiers:
+- "GHSA-f366-4rvv-95x2"
+- "GMS-2020-8"
+package_slug: "pypi/cryptoauthlib"
+title: "Buffer overflow in deprecated USB HALs and stack overflow in USB enumeration"
+description: "If an application is making use of the deprecated kit
+  protocol HALs as the communication channel to the target device an attacker can
+  masquerade as a device and return malformed packets of arbitrary length which the
+  protocol stack will write to the stack."
+date: "2021-10-04"
+pubdate: "2020-10-02"
+affected_range: "<20200912"
+fixed_versions:
+- "20200912"
+affected_versions: "All versions before 20200912"
+not_impacted: "All versions starting from 20200912"
+solution: "Upgrade to version 20200912 or above."
+urls:
+- "https://github.com/MicrochipTech/cryptoauthlib/security/advisories/GHSA-f366-4rvv-95x2"
+- "https://github.com/advisories/GHSA-f366-4rvv-95x2"
+uuid: "2d726501-c5a7-4e9d-929a-45bf6be8612b"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
