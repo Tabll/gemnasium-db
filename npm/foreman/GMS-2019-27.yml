@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2019-27"
+identifiers:
+- "GHSA-xm28-fw2x-fqv2"
+- "GMS-2019-27"
+package_slug: "npm/foreman"
+title: "Denial of Service in foreman"
+description: "All versions of `foreman` are vulnerable to Regular Expression Denial
+  of Service when requests to it are made with a specially crafted path."
+date: "2021-08-04"
+pubdate: "2019-05-31"
+affected_range: "<3.0.1"
+fixed_versions:
+- "3.0.1"
+affected_versions: "All versions before 3.0.1"
+not_impacted: "All versions starting from 3.0.1"
+solution: "Upgrade to version 3.0.1 or above."
+urls:
+- "https://hackerone.com/reports/320586"
+- "https://github.com/strongloop/node-foreman/blob/v2.0.0/forward.js#L30"
+- "https://nodesecurity.io/advisories/645"
+- "https://www.npmjs.com/advisories/645"
+- "https://snyk.io/vuln/npm:foreman:20180429"
+- "https://github.com/advisories/GHSA-xm28-fw2x-fqv2"
+uuid: "9ec88406-6f18-4040-bb55-5c4757b07d33"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

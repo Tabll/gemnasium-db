@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-288"
+identifiers:
+- "GHSA-vxfp-qmpq-6826"
+- "GMS-2020-288"
+package_slug: "npm/hpmm"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in hpmm."
+date: "2021-09-30"
+pubdate: "2020-09-03"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1053"
+- "https://github.com/advisories/GHSA-vxfp-qmpq-6826"
+uuid: "0eea5c73-105f-4a2c-8d6a-6c42ce073488"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

@@ -1,0 +1,33 @@
+---
+identifier: "GMS-2021-20"
+identifiers:
+- "GHSA-h45p-w933-jxh3"
+- "GMS-2021-20"
+package_slug: "npm/@aws-crypto/client-node"
+title: "Improper Verification of Cryptographic Signature in aws-encryption-sdk-javascript "
+description: "This ESDK supports a streaming mode where callers may stream the plaintext
+  of signed messages before the ECDSA signature is validated. In addition to these
+  signatures, the ESDK uses AES-GCM encryption and all plaintext is verified before
+  being released to a caller. There is no impact on the integrity of the ciphertext
+  or decrypted plaintext, however some callers may rely on the the ECDSA signature
+  for non-repudiation. Without validating the ECDSA signature, an actor with trusted
+  KMS permissions to decrypt a message may also be able to encrypt messages. This
+  update introduces a new API for callers who wish to stream only unsigned messages."
+date: "2021-06-01"
+pubdate: "2021-06-01"
+affected_range: "<1.9.0||>=2.0.0 <2.2.0"
+fixed_versions:
+- "1.9.0"
+- "2.2.0"
+affected_versions: "All versions before 1.9.0, all versions starting from 2.0.0 before
+  2.2.0"
+not_impacted: "All versions starting from 1.9.0 before 2.0.0, all versions starting
+  from 2.2.0"
+solution: "Upgrade to versions 1.9.0, 2.2.0 or above."
+urls:
+- "https://github.com/aws/aws-encryption-sdk-javascript/security/advisories/GHSA-h45p-w933-jxh3"
+- "https://github.com/advisories/GHSA-h45p-w933-jxh3"
+uuid: "0ff0d9c7-4fc0-4074-845f-b240cfaf2697"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

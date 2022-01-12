@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2020-431"
+identifiers:
+- "GHSA-3gpc-w23c-w59w"
+- "GMS-2020-431"
+package_slug: "npm/pitboss-ng"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in pitboss-ng."
+date: "2021-04-21"
+pubdate: "2020-09-04"
+affected_range: "<2.0.0"
+fixed_versions:
+- "2.0.0"
+affected_versions: "All versions before 2.0.0"
+not_impacted: "All versions starting from 2.0.0"
+solution: "Upgrade to version 2.0.0 or above."
+urls:
+- "https://www.npmjs.com/advisories/1319"
+- "https://github.com/advisories/GHSA-3gpc-w23c-w59w"
+uuid: "da990e6f-0c27-4978-acce-448fa0675401"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

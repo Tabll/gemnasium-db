@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2020-108"
+identifiers:
+- "GHSA-qmgf-fp85-55gr"
+- "GMS-2020-108"
+package_slug: "npm/bitcionjs"
+title: "Malicious Package"
+description: "All versions of this package contained malware. The package was designed
+  to find and exfiltrate cryptocurrency wallets. Any computer that has this package
+  installed or running should be considered fully compromised. All secrets and keys
+  stored on that computer should be rotated immediately from a different computer.\n\nThe
+  package should be removed, but as full control of the computer may have been given
+  to an outside entity, there is no guarantee that removing the package will remove
+  all malicious software resulting from installing it."
+date: "2021-10-01"
+pubdate: "2020-09-04"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1360"
+- "https://github.com/advisories/GHSA-qmgf-fp85-55gr"
+uuid: "695ffc2f-11d8-44ee-8d84-5fda76e2bd5b"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-367"
+identifiers:
+- "GHSA-5ff8-jcf9-fw62"
+- "GMS-2020-367"
+package_slug: "npm/markdown-it-katex"
+title: "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+description: "Improper Neutralization of Input During Web Page Generation ('Cross-site
+  Scripting') in markdown-it-katex."
+date: "2021-10-04"
+pubdate: "2020-09-04"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/waylonflinn/markdown-it-katex/issues/26"
+- "https://www.npmjs.com/advisories/1466"
+- "https://github.com/advisories/GHSA-5ff8-jcf9-fw62"
+uuid: "486d7423-424a-458d-957b-e0fd5867773e"
+cwe_ids:
+- "CWE-1035"
+- "CWE-79"
+- "CWE-937"

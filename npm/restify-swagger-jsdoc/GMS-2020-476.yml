@@ -1,0 +1,24 @@
+---
+identifier: "GMS-2020-476"
+identifiers:
+- "GHSA-gvff-25cc-4f66"
+- "GMS-2020-476"
+package_slug: "npm/restify-swagger-jsdoc"
+title: "Relative Path Traversal"
+description: "Relative Path Traversal in restify-swagger-jsdoc."
+date: "2021-09-28"
+pubdate: "2020-09-03"
+affected_range: "<3.2.1"
+fixed_versions:
+- "3.2.1"
+affected_versions: "All versions before 3.2.1"
+not_impacted: "All versions starting from 3.2.1"
+solution: "Upgrade to version 3.2.1 or above."
+urls:
+- "https://www.npmjs.com/advisories/1037"
+- "https://github.com/advisories/GHSA-gvff-25cc-4f66"
+uuid: "cd1e7630-f864-4c88-99a9-0b807c472e08"
+cwe_ids:
+- "CWE-1035"
+- "CWE-352"
+- "CWE-937"

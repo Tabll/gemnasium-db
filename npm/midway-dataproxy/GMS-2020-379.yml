@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-379"
+identifiers:
+- "GHSA-mq9h-cwc2-6j5r"
+- "GMS-2020-379"
+package_slug: "npm/midway-dataproxy"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in midway-dataproxy."
+date: "2021-09-30"
+pubdate: "2020-09-03"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1056"
+- "https://github.com/advisories/GHSA-mq9h-cwc2-6j5r"
+uuid: "1422008b-94e2-4558-b970-ca6e9b0407b3"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

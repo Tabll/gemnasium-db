@@ -1,0 +1,24 @@
+---
+identifier: "GMS-2020-340"
+identifiers:
+- "GHSA-33gc-f8v9-v8hm"
+- "GMS-2020-340"
+package_slug: "npm/ladder-text-js"
+title: "Malicious Package"
+description: "`ladder-text-js` contained a malicious script that attempted to delete
+  all files when `npm test` was run. \nThis module has been unpublished from the npm
+  Registry. If you find this module in your environment remove it."
+date: "2021-10-01"
+pubdate: "2020-09-01"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/651"
+- "https://github.com/advisories/GHSA-33gc-f8v9-v8hm"
+uuid: "59b42a53-3227-4f25-ba56-ef0ef3721864"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

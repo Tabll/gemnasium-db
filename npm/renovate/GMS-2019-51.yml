@@ -1,0 +1,32 @@
+---
+identifier: "GMS-2019-51"
+identifiers:
+- "GHSA-v7x3-7hw7-pcjg"
+- "GMS-2019-51"
+package_slug: "npm/renovate"
+title: "Moderate severity vulnerability that affects renovate"
+description: "## Go Modules Vulnerability Disclosure\n\n### Impact\n\nTemporary repository
+  tokens were leaked into Pull Requests comments in during certain Go Modules update
+  failure scenarios.\n\n### Patches\n\nThe problem has been patched. Self-hosted users
+  should upgrade to v19.38.7 or later.\n\n### Workarounds\n\nDisable Go Modules support.\n\n###
+  References\n\nBlog post: https://renovatebot.com/blog/go-modules-vulnerability-disclosure\n\n###
+  For more information\n\nIf you have any questions or comments about this advisory:\n*
+  Open an issue in [Renovate](http://github.com/renovatebot/renovate)\n* Email us
+  at [support@renovatebot.com](mailto:support@renovatebot.com)\n\n"
+date: "2021-09-20"
+pubdate: "2019-10-21"
+affected_range: "<19.38.7"
+fixed_versions:
+- "19.38.7"
+affected_versions: "All versions before 19.38.7"
+not_impacted: "All versions starting from 19.38.7"
+solution: "Upgrade to version 19.38.7 or above."
+urls:
+- "https://github.com/renovatebot/renovate/security/advisories/GHSA-v7x3-7hw7-pcjg"
+- "https://github.com/advisories/GHSA-v7x3-7hw7-pcjg"
+- "https://snyk.io/vuln/SNYK-JS-RENOVATE-536203"
+uuid: "9fa01472-6f9f-4a40-b913-fa932d3abaff"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
+...

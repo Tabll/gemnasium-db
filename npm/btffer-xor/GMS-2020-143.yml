@@ -1,0 +1,24 @@
+---
+identifier: "GMS-2020-143"
+identifiers:
+- "GHSA-8hrq-9wm7-v3jw"
+- "GMS-2020-143"
+package_slug: "npm/btffer-xor"
+title: "Malicious Package"
+description: " contained malicious code. The package targeted the Ethereum cryptocurrency
+  and performed transactions to wallets not controlled by the user. Remove the package
+  from your environment. Ensure no Ethereum funds were compromised."
+date: "2021-09-29"
+pubdate: "2020-09-03"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1231"
+- "https://github.com/advisories/GHSA-8hrq-9wm7-v3jw"
+uuid: "ce943ad5-ae23-4b87-9d0f-ea62a4017822"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

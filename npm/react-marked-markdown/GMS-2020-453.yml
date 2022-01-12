@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2020-453"
+identifiers:
+- "GHSA-m7qm-r2r5-f77q"
+- "GMS-2020-453"
+package_slug: "npm/react-marked-markdown"
+title: "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+description: "Improper Neutralization of Input During Web Page Generation ('Cross-site
+  Scripting') in react-marked-markdown."
+date: "2021-09-24"
+pubdate: "2020-09-01"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/Vincent-P/react-marked-markdown/issues/61"
+- "https://hackerone.com/reports/344069"
+- "https://www.npmjs.com/advisories/668"
+- "https://github.com/advisories/GHSA-m7qm-r2r5-f77q"
+uuid: "69db7b1e-75f9-4061-9460-c91dff5306be"
+cwe_ids:
+- "CWE-1035"
+- "CWE-79"
+- "CWE-937"

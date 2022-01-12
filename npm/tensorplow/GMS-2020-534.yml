@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-534"
+identifiers:
+- "GHSA-m2fp-c79h-rr79"
+- "GMS-2020-534"
+package_slug: "npm/tensorplow"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in tensorplow."
+date: "2021-09-30"
+pubdate: "2020-09-02"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/910"
+- "https://github.com/advisories/GHSA-m2fp-c79h-rr79"
+uuid: "51f46f0e-f2d2-4de1-8438-54a76b8bb817"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

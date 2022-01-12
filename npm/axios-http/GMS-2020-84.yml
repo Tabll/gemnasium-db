@@ -1,0 +1,24 @@
+---
+identifier: "GMS-2020-84"
+identifiers:
+- "GHSA-r2rg-683g-ff96"
+- "GMS-2020-84"
+package_slug: "npm/axios-http"
+title: "Malicious Package"
+description: "This package contained malicious code. The package uploaded system information
+  such as OS and hostname to a remote server. Remove the package from your environment.
+  There are no indications of further compromise."
+date: "2021-09-30"
+pubdate: "2020-09-03"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1123"
+- "https://github.com/advisories/GHSA-r2rg-683g-ff96"
+uuid: "55d8e596-808f-418b-8551-df0a1aacd6c3"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-361"
+identifiers:
+- "GHSA-qm4q-f956-fg64"
+- "GMS-2020-361"
+package_slug: "npm/luna-mock"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in luna-mock."
+date: "2021-09-30"
+pubdate: "2020-09-03"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1055"
+- "https://github.com/advisories/GHSA-qm4q-f956-fg64"
+uuid: "42f11c90-5c25-4683-9254-e3b9a6999e84"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-484"
+identifiers:
+- "GHSA-x87g-rgrh-r6g3"
+- "GMS-2020-484"
+package_slug: "npm/rpc-websocket"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in rpc-websocket."
+date: "2021-09-30"
+pubdate: "2020-09-03"
+affected_range: ">=0.7.7"
+fixed_versions: []
+affected_versions: "All versions starting from 0.7.7"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1022"
+- "https://github.com/advisories/GHSA-x87g-rgrh-r6g3"
+uuid: "7ce99008-aaa2-4618-984b-2074147acab8"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-491"
+identifiers:
+- "GHSA-m5pf-5894-jmx7"
+- "GMS-2020-491"
+package_slug: "npm/sailclothjs"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in sailclothjs."
+date: "2020-09-03"
+pubdate: "2020-09-03"
+affected_range: "=1.2.6"
+fixed_versions: []
+affected_versions: "Version 1.2.6"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1099"
+- "https://github.com/advisories/GHSA-m5pf-5894-jmx7"
+uuid: "e9f8d883-7d9a-4cb6-97f5-b7a669d85fc1"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

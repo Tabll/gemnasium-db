@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-489"
+identifiers:
+- "GHSA-3wjm-33mw-h388"
+- "GMS-2020-489"
+package_slug: "npm/s3asy"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in s3asy."
+date: "2020-09-01"
+pubdate: "2020-09-01"
+affected_range: "=0.4.8"
+fixed_versions: []
+affected_versions: "Version 0.4.8"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/636"
+- "https://github.com/advisories/GHSA-3wjm-33mw-h388"
+uuid: "ec989511-c658-48fc-a30e-24b01cb49c3b"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

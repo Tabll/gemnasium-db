@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2020-14"
+identifiers:
+- "GHSA-7wgh-5q4q-6wx5"
+- "GMS-2020-14"
+package_slug: "npm/1337qq-js"
+title: "Malicious Package"
+description: "All versions of `1337qq-js` contain malicious code. The package exfiltrates
+  sensitive information through install scripts. It targets UNIX systems. The information
+  exfiltrated includes:\n- Environment variables\n- Running processes\n- /etc/hosts\n-
+  uname -a\n- npmrc file Remove the package from your system and rotate any compromised
+  credentials."
+date: "2021-10-04"
+pubdate: "2020-09-04"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1455"
+- "https://github.com/advisories/GHSA-7wgh-5q4q-6wx5"
+uuid: "df7fa2db-2941-4d4d-a537-b2b4f7f07375"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

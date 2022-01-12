@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-380"
+identifiers:
+- "GHSA-w65v-hx54-xrqx"
+- "GMS-2020-380"
+package_slug: "npm/midway-xtpl"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in midway-xtpl."
+date: "2021-09-30"
+pubdate: "2020-09-03"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1057"
+- "https://github.com/advisories/GHSA-w65v-hx54-xrqx"
+uuid: "2d508dc9-4a04-480f-9374-fa76bc536f4b"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

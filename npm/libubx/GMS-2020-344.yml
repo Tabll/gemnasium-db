@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-344"
+identifiers:
+- "GHSA-m7xv-7p93-g6q8"
+- "GMS-2020-344"
+package_slug: "npm/libubx"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in libubx."
+date: "2020-09-03"
+pubdate: "2020-09-03"
+affected_range: "=1.0.3"
+fixed_versions: []
+affected_versions: "Version 1.0.3"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/938"
+- "https://github.com/advisories/GHSA-m7xv-7p93-g6q8"
+uuid: "88293bbd-1c4f-4d42-969a-4433ef9b222d"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

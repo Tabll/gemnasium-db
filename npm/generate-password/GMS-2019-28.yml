@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2019-28"
+identifiers:
+- "GHSA-6qqf-vvcr-7qrv"
+- "GMS-2019-28"
+package_slug: "npm/generate-password"
+title: "Cryptographically Weak PRNG in generate-password"
+description: "Affected versions of generate-password generate random values that are
+  biased towards certain characters depending on the chosen character sets. This may
+  result in guessable passwords. Update to or later.\n"
+date: "2021-08-04"
+pubdate: "2019-05-23"
+affected_range: "<1.4.1"
+fixed_versions:
+- "1.4.1"
+affected_versions: "All versions before 1.4.1"
+not_impacted: "All versions starting from 1.4.1"
+solution: "Upgrade to version 1.4.1 or above."
+urls:
+- "https://github.com/brendanashworth/generate-password/pull/26"
+- "https://www.npmjs.com/advisories/762"
+- "https://github.com/advisories/GHSA-6qqf-vvcr-7qrv"
+uuid: "8c427f6a-0e41-4dd7-805d-6cdad4f7b9fc"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

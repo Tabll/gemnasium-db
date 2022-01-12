@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2020-519"
+identifiers:
+- "GHSA-f8h3-rqrm-47v9"
+- "GMS-2020-519"
+package_slug: "npm/smart-extend"
+title: "Prototype Pollution in smart-extend"
+description: "All versions of `smart-extend` are vulnerable to Prototype Pollution.
+  The `deep()` function allows attackers to modify the prototype of Object causing
+  the addition or modification of an existing property that will exist on all objects.
+  \n\n## Recommendation\n\nNo fix is currently available. Consider using an alternative
+  module until a fix is made available."
+date: "2021-09-27"
+pubdate: "2020-09-02"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://hackerone.com/reports/438274"
+- "https://www.npmjs.com/advisories/801"
+- "https://github.com/advisories/GHSA-f8h3-rqrm-47v9"
+uuid: "49732232-0074-470e-b411-295425017260"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

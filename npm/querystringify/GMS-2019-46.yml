@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2019-46"
+identifiers:
+- "GHSA-hxcm-v35h-mg2x"
+- "GMS-2019-46"
+package_slug: "npm/querystringify"
+title: "Prototype Pollution"
+description: "A vulnerability was found in querystringify It's possible to override
+  built-in properties of the resulting query string object if a malicious string is
+  inserted in the query string."
+date: "2021-02-25"
+pubdate: "2019-06-07"
+affected_range: "<2.0.0"
+fixed_versions:
+- "2.0.0"
+affected_versions: "All versions before 2.0.0"
+not_impacted: "All versions starting from 2.0.0"
+solution: "Upgrade to version 2.0.0 or above."
+urls:
+- "https://github.com/unshiftio/querystringify/pull/19"
+- "https://github.com/unshiftio/querystringify/commit/422eb4f6c7c28ee5f100dcc64177d3b68bb2b080"
+- "https://github.com/advisories/GHSA-hxcm-v35h-mg2x"
+uuid: "758ea689-d260-4c46-be7b-a11414122789"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

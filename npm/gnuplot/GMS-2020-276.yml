@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-276"
+identifiers:
+- "GHSA-cfwc-xjfp-44jg"
+- "GMS-2020-276"
+package_slug: "npm/gnuplot"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in gnuplot."
+date: "2021-10-04"
+pubdate: "2020-09-04"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1440"
+- "https://github.com/advisories/GHSA-cfwc-xjfp-44jg"
+uuid: "a46aad6e-889d-4422-b178-5431cfc51310"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

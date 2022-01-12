@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2020-198"
+identifiers:
+- "GHSA-hj5w-xgw9-w4rj"
+- "GMS-2020-198"
+package_slug: "npm/coinstrng"
+title: "Malicious Package"
+description: "All versions of this package contained malware. The package was designed
+  to find and exfiltrate cryptocurrency wallets. Any computer that has this package
+  installed or running should be considered fully compromised. All secrets and keys
+  stored on that computer should be rotated immediately from a different computer.\n\nThe
+  package should be removed, but as full control of the computer may have been given
+  to an outside entity, there is no guarantee that removing the package will remove
+  all malicious software resulting from installing it."
+date: "2021-10-01"
+pubdate: "2020-09-03"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1385"
+- "https://github.com/advisories/GHSA-hj5w-xgw9-w4rj"
+uuid: "f2834c7e-3e48-4fcb-b69f-9cdc8377d810"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2020-103"
+identifiers:
+- "GHSA-2mj8-pj3j-h362"
+- "GMS-2020-103"
+package_slug: "npm/bin-links"
+title: "Symlink reference outside of node_modules in bin-links"
+description: "Versions of `bin-links` are vulnerable to a Symlink reference outside
+  of node_modules. It is possible to create symlinks to files outside of the`node_modules`
+  folder through the `bin` field. This may allow attackers to access unauthorized
+  files."
+date: "2020-09-04"
+pubdate: "2020-09-04"
+affected_range: "<1.1.5"
+fixed_versions:
+- "1.1.5"
+affected_versions: "All versions before 1.1.5"
+not_impacted: "All versions starting from 1.1.5"
+solution: "Upgrade to version 1.1.5 or above."
+urls:
+- "https://www.npmjs.com/advisories/1435"
+- "https://github.com/advisories/GHSA-2mj8-pj3j-h362"
+uuid: "0b887a08-f8f8-46ec-94f2-a4c715ff2440"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

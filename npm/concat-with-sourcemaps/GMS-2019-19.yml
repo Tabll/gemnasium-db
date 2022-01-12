@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2019-19"
+identifiers:
+- "GHSA-2xv3-h762-ccxv"
+- "GMS-2019-19"
+package_slug: "npm/concat-with-sourcemaps"
+title: "Out-of-bounds Read in concat-with-sourcemaps"
+description: "Versions of `concat-with-sourcemaps` allocates uninitialized Buffers
+  when a number is passed as a separator. Update to or later."
+date: "2021-09-22"
+pubdate: "2019-05-29"
+affected_range: ">=1.0.0 <1.0.6"
+fixed_versions:
+- "1.0.6"
+affected_versions: "All versions starting from 1.0.0 before 1.0.6"
+not_impacted: "All versions before 1.0.0, all versions starting from 1.0.6"
+solution: "Upgrade to version 1.0.6 or above."
+urls:
+- "https://hackerone.com/reports/320166"
+- "https://github.com/floridoo/concat-with-sourcemaps/blob/v1.0.5/index.js#L18"
+- "https://www.npmjs.com/advisories/644"
+- "https://github.com/advisories/GHSA-2xv3-h762-ccxv"
+uuid: "4bb2b1f1-5875-4b87-b2c9-5c5f9fcccd0d"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

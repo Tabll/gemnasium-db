@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-540"
+identifiers:
+- "GHSA-9xww-fwh9-95c5"
+- "GMS-2020-540"
+package_slug: "npm/uglyfi-js"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in uglyfi-js."
+date: "2021-09-30"
+pubdate: "2020-09-02"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/911"
+- "https://github.com/advisories/GHSA-9xww-fwh9-95c5"
+uuid: "1d8fecfb-3d4b-4cc4-b8e4-37647171d050"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2020-93"
+identifiers:
+- "GHSA-rvg8-pwq2-xj7q"
+- "GMS-2020-93"
+package_slug: "npm/base64url"
+title: "Out-of-bounds Read in base64url"
+description: "Versions of `base64url` are vulnerable to to out-of-bounds reads as
+  it allocates uninitialized Buffers when number is passed in input on Node.js. ##
+  Recommendation\n\nUpdate to or later."
+date: "2021-09-24"
+pubdate: "2020-09-01"
+affected_range: "<3.0.0"
+fixed_versions:
+- "3.0.0"
+affected_versions: "All versions before 3.0.0"
+not_impacted: "All versions starting from 3.0.0"
+solution: "Upgrade to version 3.0.0 or above."
+urls:
+- "https://hackerone.com/reports/321687"
+- "https://www.npmjs.com/advisories/658"
+- "https://github.com/brianloveswords/base64url/pull/25"
+- "https://github.com/advisories/GHSA-rvg8-pwq2-xj7q"
+uuid: "545be113-b751-4a0f-a69c-1721eaf5e3df"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

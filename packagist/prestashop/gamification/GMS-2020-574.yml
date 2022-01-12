@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2020-574"
+identifiers:
+- "GHSA-769f-539v-f5jg"
+- "GMS-2020-574"
+package_slug: "packagist/prestashop/gamification"
+title: "PrestaShop gamification module ZIP archives were vulnerable from CVE-2017-9841"
+description: "We have identified that some gamification module ZIP archives
+  have been built with phpunit dev dependencies. PHPUnit contains a php script that
+  would allow, on a webserver, an attacker to perform a RCE."
+date: "2020-01-08"
+pubdate: "2020-01-08"
+affected_range: "<2.3.2"
+fixed_versions:
+- "2.3.2"
+affected_versions: "All versions before 2.3.2"
+not_impacted: "All versions starting from 2.3.2"
+solution: "Upgrade to version 2.3.2 or above."
+urls:
+- "https://github.com/PrestaShop/gamification/security/advisories/GHSA-769f-539v-f5jg"
+- "https://github.com/PrestaShop/gamification/commit/5044bda903a7ea9596c21faa2b9a42244763568c"
+- "https://build.prestashop.com/news/critical-security-vulnerability-in-prestashop-modules/"
+- "https://github.com/advisories/GHSA-769f-539v-f5jg"
+uuid: "40a7e6e9-3cd5-4f96-b1f5-f0dd782baa88"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

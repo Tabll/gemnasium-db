@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2020-237"
+identifiers:
+- "GHSA-vp8g-53fw-r9f2"
+- "GMS-2020-237"
+package_slug: "npm/dynamo-schema"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in dynamo-schema."
+date: "2021-09-24"
+pubdate: "2020-09-01"
+affected_range: "=0.0.3"
+fixed_versions: []
+affected_versions: "Version 0.0.3"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/626"
+- "https://github.com/andrewjstone/dynamo-schema"
+- "https://snyk.io/vuln/SNYK-JS-DYNAMOSCHEMA-450992"
+- "https://github.com/advisories/GHSA-vp8g-53fw-r9f2"
+uuid: "a05ee6e3-986e-41ea-a0e6-c5a5ded3c169"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

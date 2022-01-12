@@ -1,0 +1,33 @@
+---
+identifier: "GMS-2020-39"
+identifiers:
+- "GHSA-m4vv-p6fq-jhqp"
+- "GMS-2020-39"
+package_slug: "npm/@vivaxy/here"
+title: "Directory Traversal in @vivaxy/here"
+description: "The @vivaxy/here module is a small web server that serves files with
+  the process' working directory acting as the web root.\n\nIt is vulnerable to a
+  directory traversal attack. \n\nThis means that files on the local file system which
+  exist outside of the web root may be disclosed to an attacker. This might include
+  confidential files.\n\nMitigating Factors:\nIf the node process is run as a user
+  with very limited filesystem permissions, there is significantly less risk of exposing
+  confidential/private information. Proof of Concept:\n```\ncurl \"http://${SERVER_IP}:${SERVER_PORT}/..%2f..%2fetc/passwd\"\n```
+  ## Recommendation\n\nRun `npm i @vivaxy/here` to install the latest version that
+  addresses this vulnerability."
+date: "2021-09-23"
+pubdate: "2020-09-01"
+affected_range: "<=3.2.1"
+fixed_versions:
+- "3.2.2"
+affected_versions: "All versions up to 3.2.1"
+not_impacted: "All versions after 3.2.1"
+solution: "Upgrade to version 3.2.2 or above."
+urls:
+- "https://github.com/vivaxy/here/commit/298dbab41344dfb7f95f66b1fa7b5cfb436bd4a2"
+- "https://hackerone.com/reports/296254"
+- "https://www.npmjs.com/advisories/557"
+- "https://github.com/advisories/GHSA-m4vv-p6fq-jhqp"
+uuid: "256e817b-481a-4a8d-9d58-52fad9019d15"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

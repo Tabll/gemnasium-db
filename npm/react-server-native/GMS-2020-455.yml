@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-455"
+identifiers:
+- "GHSA-fwvp-x5gj-773j"
+- "GMS-2020-455"
+package_slug: "npm/react-server-native"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in react-server-native."
+date: "2020-09-01"
+pubdate: "2020-09-01"
+affected_range: "=0.0.7"
+fixed_versions: []
+affected_versions: "Version 0.0.7"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/635"
+- "https://github.com/advisories/GHSA-fwvp-x5gj-773j"
+uuid: "a29a682d-82fb-4d3d-b9b6-7511403a7967"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

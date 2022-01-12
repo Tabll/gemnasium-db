@@ -11,7 +11,8 @@ following the [contribution guidelines](CONTRIBUTING.md).
 
 Below is the list of data-sources we check for updates on a daily basis:
 - [NVD JSON feeds](https://nvd.nist.gov/vuln/data-feeds)
-- [GitHub security advisory database](https://github.com/advisories)
+- [GitHub security advisory database](https://github.com/advisories) by means
+  of the [Trivy Advisory Database](https://github.com/aquasecurity/vuln-list)
 - [Ruby Advisory DB](https://github.com/rubysec/ruby-advisory-db)
 
 Below is a list of data-sources from which we sourced data in the past. Those

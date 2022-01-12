@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-22"
+identifiers:
+- "GHSA-fvwr-h9xh-m6wc"
+- "GMS-2020-22"
+package_slug: "npm/@commercial/subtext"
+title: "Improper Neutralization"
+description: "Improper Neutralization in @commercial/subtext."
+date: "2020-09-03"
+pubdate: "2020-09-03"
+affected_range: "<5.1.1"
+fixed_versions:
+- "5.1.1"
+affected_versions: "All versions before 5.1.1"
+not_impacted: "All versions starting from 5.1.1"
+solution: "Upgrade to version 5.1.1 or above."
+urls:
+- "https://github.com/hapijs/subtext/issues/72"
+- "https://www.npmjs.com/advisories/1166"
+- "https://github.com/advisories/GHSA-fvwr-h9xh-m6wc"
+uuid: "a891aac3-29b3-4dbe-a684-9fba1cdb11f0"
+cwe_ids:
+- "CWE-1035"
+- "CWE-707"
+- "CWE-937"

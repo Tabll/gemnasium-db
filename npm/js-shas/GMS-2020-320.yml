@@ -1,0 +1,24 @@
+---
+identifier: "GMS-2020-320"
+identifiers:
+- "GHSA-5wq6-v5cw-jvfr"
+- "GMS-2020-320"
+package_slug: "npm/js-shas"
+title: "Malicious Package"
+description: " contained malicious code. The package targeted the Ethereum cryptocurrency
+  and performed transactions to wallets not controlled by the user. Remove the package
+  from your environment. Ensure no Ethereum funds were compromised."
+date: "2021-09-30"
+pubdate: "2020-09-03"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1285"
+- "https://github.com/advisories/GHSA-5wq6-v5cw-jvfr"
+uuid: "b3f3434a-207a-46b9-a0e5-79e43613abbe"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2020-527"
+identifiers:
+- "GHSA-7xcx-6wjh-7xp2"
+- "GMS-2020-527"
+package_slug: "npm/standard-version"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in standard-version."
+date: "2021-09-22"
+pubdate: "2020-07-13"
+affected_range: "<8.0.1"
+fixed_versions:
+- "8.0.1"
+affected_versions: "All versions before 8.0.1"
+not_impacted: "All versions starting from 8.0.1"
+solution: "Upgrade to version 8.0.1 or above."
+urls:
+- "https://github.com/conventional-changelog/standard-version/security/advisories/GHSA-7xcx-6wjh-7xp2"
+- "https://github.com/conventional-changelog/standard-version/tree/2f04ac8fc1c134a1981c23a093d4eece77d0bbb9"
+- "https://github.com/advisories/GHSA-7xcx-6wjh-7xp2"
+uuid: "590efc63-98e5-4080-8fc8-dd93158a520c"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

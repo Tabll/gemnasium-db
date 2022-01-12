@@ -1,0 +1,31 @@
+---
+identifier: "GMS-2020-373"
+identifiers:
+- "GHSA-jfcc-rm7f-xgf8"
+- "GMS-2020-373"
+package_slug: "npm/mavon-editor"
+title: "Cross-Site Scripting in mavon-editor"
+description: "All versions of `mavon-editor` are vulnerable to Cross-Site Scripting.
+  The package fails to sanitize entered input, allowing attackers to execute arbitrary
+  JavaScript in a victim's browser. No fix is currently available. Consider using
+  an alternative package until a fix is made available."
+date: "2021-11-29"
+pubdate: "2020-09-03"
+affected_range: "<2.8.2"
+fixed_versions:
+- "2.8.2"
+affected_versions: "All versions before 2.8.2"
+not_impacted: "All versions starting from 2.8.2"
+solution: "Upgrade to version 2.8.2 or above."
+urls:
+- "https://github.com/hinesboy/mavonEditor/issues/472"
+- "https://snyk.io/vuln/SNYK-JS-MAVONEDITOR-459108"
+- "https://www.npmjs.com/advisories/1169"
+- "https://github.com/hinesboy/mavonEditor/pull/548"
+- "https://github.com/hinesboy/mavonEditor/commit/5592ec3761bd3b5a12ba6f99ce3c4057c6e33f72"
+- "https://www.npmjs.com/package/mavon-editor"
+- "https://github.com/advisories/GHSA-jfcc-rm7f-xgf8"
+uuid: "f37e3c45-efec-4672-ac12-02fbbf854fa2"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

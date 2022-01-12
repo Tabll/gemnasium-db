@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2020-531"
+identifiers:
+- "GHSA-g64q-3vg8-8f93"
+- "GMS-2020-531"
+package_slug: "npm/subtext"
+title: "Prototype Pollution in subtext"
+description: "All versions of `subtext` are vulnerable to Prototype Pollution. A multipart
+  payload can be constructed in a way that one of the parts’ content can be set as
+  the entire payload object’s prototype. If this prototype contains data, it may bypass
+  other validation rules which enforce access and privacy. If this prototype evaluates
+  to null, it can cause unhandled exceptions when the request payload is accessed.
+  ## Recommendation\n\nThis package is deprecated and is now maintained as `@hapi/subtext`.
+  Please update your dependencies to use `@hapi/subtext`."
+date: "2021-10-04"
+pubdate: "2020-09-03"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1479"
+- "https://github.com/advisories/GHSA-g64q-3vg8-8f93"
+uuid: "02868318-b57a-4d76-845e-e9d4863b4898"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

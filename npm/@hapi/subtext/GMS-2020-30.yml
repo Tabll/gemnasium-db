@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-30"
+identifiers:
+- "GHSA-4rgj-8mq3-hggj"
+- "GMS-2020-30"
+package_slug: "npm/@hapi/subtext"
+title: "Improper Neutralization"
+description: "Improper Neutralization in @hapi/subtext."
+date: "2020-09-03"
+pubdate: "2020-09-03"
+affected_range: "<6.1.2"
+fixed_versions:
+- "6.1.2"
+affected_versions: "All versions before 6.1.2"
+not_impacted: "All versions starting from 6.1.2"
+solution: "Upgrade to version 6.1.2 or above."
+urls:
+- "https://github.com/hapijs/subtext/issues/72"
+- "https://www.npmjs.com/advisories/1165"
+- "https://github.com/advisories/GHSA-4rgj-8mq3-hggj"
+uuid: "45286548-c272-414c-9cb2-140e88e9473b"
+cwe_ids:
+- "CWE-1035"
+- "CWE-707"
+- "CWE-937"

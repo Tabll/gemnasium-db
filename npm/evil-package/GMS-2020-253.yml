@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-253"
+identifiers:
+- "GHSA-p62r-jf56-h429"
+- "GMS-2020-253"
+package_slug: "npm/evil-package"
+title: "Malicious Package"
+description: "All versions of `evil-package` contain malicious code. The package uploads
+  the contents of `process.env` to `example.com/log`. Remove the package from your
+  environment. Given the host where the information was uploaded to there is no further
+  indication of compromise."
+date: "2021-09-29"
+pubdate: "2020-09-03"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1162"
+- "https://github.com/advisories/GHSA-p62r-jf56-h429"
+uuid: "23cc1f7e-9338-483f-a299-572015c03ead"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

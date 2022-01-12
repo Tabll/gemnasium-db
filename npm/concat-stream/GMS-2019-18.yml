@@ -1,0 +1,36 @@
+---
+identifier: "GMS-2019-18"
+identifiers:
+- "GHSA-g74r-ffvr-5q9f"
+- "GMS-2019-18"
+package_slug: "npm/concat-stream"
+title: "Memory Exposure in concat-stream"
+description: "Versions of `concat-stream` are vulnerable to memory exposure if userp
+  provided input is passed into `write()`\n\n are not affected due to not using unguarded
+  Buffer constructor. \nUpdate to or later.\n\nIf you are unable to update make sure
+  user provided input into the `write()` function is not a number."
+date: "2021-08-04"
+pubdate: "2019-06-03"
+affected_range: ">=1.5.0 <1.5.2||>=1.4.0 <1.4.11||>=1.3.0 <1.3.2"
+fixed_versions:
+- "1.5.2"
+- "1.5.2"
+- "1.5.2"
+- "1.3.2"
+affected_versions: "All versions starting from 1.5.0 before 1.5.2, all versions starting
+  from 1.4.0 before 1.4.11, all versions starting from 1.3.0 before 1.3.2"
+not_impacted: "All versions before 1.5.0, all versions starting from 1.5.2, all versions
+  before 1.4.0, all versions starting from 1.4.11, all versions before 1.3.0, all
+  versions starting from 1.3.2"
+solution: "Upgrade to versions 1.5.2, 1.5.2, 1.5.2, 1.3.2 or above."
+urls:
+- "https://github.com/maxogden/concat-stream/pull/47"
+- "https://github.com/maxogden/concat-stream/pull/47/commits/3e285ba5e5b10b7c98552217f5c1023829efe69e"
+- "https://gist.github.com/ChALkeR/c2d2fd3f1d72d51ad883df195be03a85"
+- "https://nodesecurity.io/advisories/597"
+- "https://www.npmjs.com/advisories/597"
+- "https://github.com/advisories/GHSA-g74r-ffvr-5q9f"
+uuid: "1f457bb4-1c8f-41a9-9929-e513b6f58299"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

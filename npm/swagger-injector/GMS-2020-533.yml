@@ -1,0 +1,23 @@
+---
+identifier: "GMS-2020-533"
+identifiers:
+- "GHSA-v4x8-gw49-7hv4"
+- "GMS-2020-533"
+package_slug: "npm/swagger-injector"
+title: "Relative Path Traversal"
+description: "Relative Path Traversal in swagger-injector."
+date: "2021-09-29"
+pubdate: "2020-09-03"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1172"
+- "https://github.com/advisories/GHSA-v4x8-gw49-7hv4"
+uuid: "e7c499eb-7091-4f82-99c3-4b73a92dcd22"
+cwe_ids:
+- "CWE-1035"
+- "CWE-352"
+- "CWE-937"

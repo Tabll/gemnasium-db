@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-393"
+identifiers:
+- "GHSA-48hw-37g6-3gw4"
+- "GMS-2020-393"
+package_slug: "npm/mx-nested-menu"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in mx-nested-menu."
+date: "2020-09-03"
+pubdate: "2020-09-03"
+affected_range: "=0.1.30"
+fixed_versions: []
+affected_versions: "Version 0.1.30"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/947"
+- "https://github.com/advisories/GHSA-48hw-37g6-3gw4"
+uuid: "d98410a7-065b-4cfe-b93e-3686add1a365"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

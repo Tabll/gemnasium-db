@@ -5,7 +5,7 @@ title: "Private Data Disclosure"
 description: "A malicious user could go to your application and send a request for
   `GET /User?distinct=password` and get all the passwords for all the users in the
   database, despite the field being set to private. This could also be used for other
-  private data if the malicious user knew what was set as private for specific routes. "
+  private data if the malicious user knew what was set as private for specific routes."
 date: "2016-04-19"
 pubdate: "2016-04-19"
 affected_range: ">=3.0.0a <=3.0.1 || <= 2.4.2"

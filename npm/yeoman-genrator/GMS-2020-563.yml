@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-563"
+identifiers:
+- "GHSA-f7g4-fm4c-54m9"
+- "GMS-2020-563"
+package_slug: "npm/yeoman-genrator"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in yeoman-genrator."
+date: "2021-09-29"
+pubdate: "2020-09-03"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1198"
+- "https://github.com/advisories/GHSA-f7g4-fm4c-54m9"
+uuid: "1e4b951b-dd39-4c63-a4f5-08df3eb1632e"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-71"
+identifiers:
+- "GHSA-8q2c-2396-hf7j"
+- "GMS-2020-71"
+package_slug: "npm/appx-compiler"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in appx-compiler."
+date: "2021-09-30"
+pubdate: "2020-09-03"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1050"
+- "https://github.com/advisories/GHSA-8q2c-2396-hf7j"
+uuid: "34cbc84e-6fe1-466a-955b-21b0f53d7902"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

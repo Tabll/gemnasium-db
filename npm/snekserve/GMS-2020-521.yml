@@ -1,0 +1,24 @@
+---
+identifier: "GMS-2020-521"
+identifiers:
+- "GHSA-hv4w-jhcj-6wfw"
+- "GMS-2020-521"
+package_slug: "npm/snekserve"
+title: "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+description: "Improper Neutralization of Input During Web Page Generation ('Cross-site
+  Scripting') in snekserve."
+date: "2021-09-29"
+pubdate: "2020-09-03"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1167"
+- "https://github.com/advisories/GHSA-hv4w-jhcj-6wfw"
+uuid: "bc0a8ab9-afb1-4479-8b85-56f9625a1567"
+cwe_ids:
+- "CWE-1035"
+- "CWE-79"
+- "CWE-937"

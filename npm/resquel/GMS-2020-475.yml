@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-475"
+identifiers:
+- "GHSA-crpm-fm48-chj7"
+- "GMS-2020-475"
+package_slug: "npm/resquel"
+title: "SQL Injection in resquel"
+description: "All versions of `resquel` are vulnerable to SQL Injection. Query parameters
+  are not properly sanitized, allowing attackers to inject SQL statements and execute
+  arbitrary SQL queries No fix is currently available. Consider using an alternative
+  package until a fix is made available."
+date: "2021-09-28"
+pubdate: "2020-09-11"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/963"
+- "https://github.com/advisories/GHSA-crpm-fm48-chj7"
+uuid: "4f3bcc8a-9a40-4fc4-bb55-50b2af3f48f1"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

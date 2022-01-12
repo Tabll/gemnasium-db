@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-127"
+identifiers:
+- "GHSA-xmmp-hrmx-x5g7"
+- "GMS-2020-127"
+package_slug: "npm/bowe"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in bowe."
+date: "2021-09-30"
+pubdate: "2020-09-02"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/899"
+- "https://github.com/advisories/GHSA-xmmp-hrmx-x5g7"
+uuid: "1b1312ef-190e-4048-9119-f7446bc14d96"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

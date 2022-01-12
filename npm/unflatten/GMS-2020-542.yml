@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2020-542"
+identifiers:
+- "GHSA-6fh5-8wq8-w3wr"
+- "GMS-2020-542"
+package_slug: "npm/unflatten"
+title: "Prototype Pollution in unflatten"
+description: "All versions of `unflatten` are vulnerable to prototype pollution. The
+  function `unflatten` does not restrict the modification of an Object's prototype,
+  which may allow an attacker to add or modify an existing property that will exist
+  on all objects. \n\nNo fix is currently available. Consider using an alternative
+  package until a fix is made available."
+date: "2021-10-01"
+pubdate: "2020-09-04"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1329"
+- "https://github.com/advisories/GHSA-6fh5-8wq8-w3wr"
+uuid: "42ffee55-9fec-41a2-abb6-260a90a70e64"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

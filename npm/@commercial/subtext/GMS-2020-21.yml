@@ -1,0 +1,24 @@
+---
+identifier: "GMS-2020-21"
+identifiers:
+- "GHSA-cvfm-xjc8-f2vm"
+- "GMS-2020-21"
+package_slug: "npm/@commercial/subtext"
+title: "Improper Neutralization"
+description: "Improper Neutralization in @commercial/subtext."
+date: "2020-09-03"
+pubdate: "2020-09-03"
+affected_range: "=5.1.1"
+fixed_versions:
+- "5.1.2"
+affected_versions: "Version 5.1.1"
+not_impacted: "All versions before 5.1.1, all versions after 5.1.1"
+solution: "Upgrade to version 5.1.2 or above."
+urls:
+- "https://www.npmjs.com/advisories/1477"
+- "https://github.com/advisories/GHSA-cvfm-xjc8-f2vm"
+uuid: "32a89a63-920a-4245-be2f-f978cea7e017"
+cwe_ids:
+- "CWE-1035"
+- "CWE-707"
+- "CWE-937"

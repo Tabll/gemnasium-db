@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2020-535"
+identifiers:
+- "GHSA-76xq-58hj-vwm2"
+- "GMS-2020-535"
+package_slug: "npm/test-module-a"
+title: "Malicious Package"
+description: "All versions of `test-module-a` contain malicious code as a preinstall
+  script. The package fetches all names of npm packages owned by the user and attempts
+  to add another maintainer to every package as a means of package hijacking, ## Recommendation\n\nRemove
+  the package from your system. If you own any packages that were compromised please
+  contact npm security immediately at security@npmjs.com. Also enable 2FA for publishing
+  to further secure packages you maintain."
+date: "2021-09-30"
+pubdate: "2020-09-11"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/929"
+- "https://github.com/advisories/GHSA-76xq-58hj-vwm2"
+uuid: "5cf9438c-9d6f-49f7-9e90-b0bbe6bba0d3"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

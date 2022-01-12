@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2020-372"
+identifiers:
+- "GHSA-5mrr-rgp6-x4gr"
+- "GMS-2020-372"
+package_slug: "npm/marsdb"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in marsdb."
+date: "2021-09-29"
+pubdate: "2020-09-03"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/bkimminich/juice-shop/issues/1173"
+- "https://www.npmjs.com/advisories/1122"
+- "https://github.com/advisories/GHSA-5mrr-rgp6-x4gr"
+uuid: "5fe9053f-4cbe-41aa-8739-402a848893a6"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

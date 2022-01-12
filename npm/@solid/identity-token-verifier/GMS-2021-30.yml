@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2021-30"
+identifiers:
+- "GHSA-xmh9-rg6f-j3mr"
+- "GMS-2021-30"
+package_slug: "npm/@solid/identity-token-verifier"
+title: "Verification flaw in Solid identity-token-verifier"
+description: "Any Pod on a Solid server using a vulnerable version of the identity-token-verifier
+  library is at risk of a spoofed Demonstration of Proof-of-Possession (DPoP) token
+  binding. This vulnerability could give total and complete access to a targeted Pod."
+date: "2021-03-12"
+pubdate: "2021-03-12"
+affected_range: "<0.5.2"
+fixed_versions:
+- "0.5.2"
+affected_versions: "All versions before 0.5.2"
+not_impacted: "All versions starting from 0.5.2"
+solution: "Upgrade to version 0.5.2 or above."
+urls:
+- "https://github.com/solid/identity-token-verifier/security/advisories/GHSA-xmh9-rg6f-j3mr"
+- "https://github.com/solid/identity-token-verifier/commit/fbdeb4aa8c12694b3744cd0454acb826817d9e6c"
+- "https://github.com/solid/identity-token-verifier/releases/tag/0.5.2"
+- "https://www.npmjs.com/package/@solid/identity-token-verifier"
+- "https://github.com/advisories/GHSA-xmh9-rg6f-j3mr"
+uuid: "aa1165c2-5e4e-49e1-8f5c-8ca48834411f"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

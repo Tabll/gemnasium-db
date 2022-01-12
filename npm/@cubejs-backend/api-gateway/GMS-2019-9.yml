@@ -1,0 +1,29 @@
+---
+identifier: "GMS-2019-9"
+identifiers:
+- "GHSA-4j6x-w426-6rc6"
+- "GMS-2019-9"
+package_slug: "npm/@cubejs-backend/api-gateway"
+title: "Default Express middleware security check is ignored in production"
+description: "## Default Express middleware security check is ignored in production\r\n\r\n###
+  Impact\r\nAll Cube.js deployments that use affected versions of `@cubejs-backend/api-gateway`
+  with default express authentication middleware in production environment are affected.\r\n\r\n###
+  Patches\r\n@cubejs-backend/api-gateway@0.11.17\r\n\r\n### Workarounds\r\nOverride
+  default authentication express middleware: https://cube.dev/docs/@cubejs-backend-server-core#options-reference-check-auth-middleware\r\n\r\n###
+  For more information\r\nIf you have any questions or comments about this advisory:\r\n*
+  Open an issue in https://github.com/cube-js/cube.js/issues\r\n* Reach out us in
+  community Slack: https://slack.cube.dev/\r\n\r\n"
+date: "2019-11-08"
+pubdate: "2019-11-08"
+affected_range: ">=0.11.0 <=0.11.16"
+fixed_versions:
+- "0.11.17"
+affected_versions: "All versions starting from 0.11.0 up to 0.11.16"
+not_impacted: "All versions before 0.11.0, all versions after 0.11.16"
+solution: "Upgrade to version 0.11.17 or above."
+urls:
+- "https://github.com/advisories/GHSA-4j6x-w426-6rc6"
+uuid: "e10faeae-07ea-4c4c-b555-10eeafb01e2a"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

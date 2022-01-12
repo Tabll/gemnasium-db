@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2020-120"
+identifiers:
+- "GHSA-hfc6-79wv-5hpw"
+- "GMS-2020-120"
+package_slug: "npm/blingjs"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in blingjs."
+date: "2021-09-24"
+pubdate: "2020-09-01"
+affected_range: "=0.0.4"
+fixed_versions: []
+affected_versions: "Version 0.0.4"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/619"
+- "https://github.com/jamiller619/blingjs"
+- "https://snyk.io/vuln/SNYK-JS-BLINGJS-451007"
+- "https://github.com/advisories/GHSA-hfc6-79wv-5hpw"
+uuid: "32f6159c-74db-45db-a526-bcdc8fe29698"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

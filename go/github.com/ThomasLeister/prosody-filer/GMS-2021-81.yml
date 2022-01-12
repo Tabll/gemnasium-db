@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2021-81"
+identifiers:
+- "GHSA-qmfx-75ff-8mw6"
+- "GMS-2021-81"
+package_slug: "go/github.com/ThomasLeister/prosody-filer"
+title: "Listing of upload directory contents possible"
+description: "There's an security issue in prosody-filer versions **< 1.0.1** which
+  leads to unwanted directory listings of download directories. \n\nAn attacker is
+  able to list previous uploads of a certain user by shortening the URL and accessing
+  a URL subdirectors other than `/upload/` (or the corresponding user defined root
+  dir)\n\nVersion 1.0.1 and later fix this problem and allow only direct file access
+  if the full path is known. Directory listings are blocked entirely."
+date: "2021-05-27"
+pubdate: "2021-05-27"
+affected_range: "<1.0.1"
+fixed_versions:
+- "1.0.1"
+affected_versions: "All versions before 1.0.1"
+not_impacted: "All versions starting from 1.0.1"
+solution: "Upgrade to version 1.0.1 or above."
+urls:
+- "https://github.com/ThomasLeister/prosody-filer/security/advisories/GHSA-qmfx-75ff-8mw6"
+- "https://github.com/advisories/GHSA-qmfx-75ff-8mw6"
+uuid: "3a316850-ca2a-4c8e-ad0f-f0737eaf8e7c"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

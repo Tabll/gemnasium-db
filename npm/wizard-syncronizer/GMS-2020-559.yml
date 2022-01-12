@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-559"
+identifiers:
+- "GHSA-wgw3-gf4p-62xc"
+- "GMS-2020-559"
+package_slug: "npm/wizard-syncronizer"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in wizard-syncronizer."
+date: "2021-09-28"
+pubdate: "2020-09-11"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/977"
+- "https://github.com/advisories/GHSA-wgw3-gf4p-62xc"
+uuid: "a0449145-efe2-4bc3-bc8d-d4e58d51a1a2"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

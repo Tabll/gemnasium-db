@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-292"
+identifiers:
+- "GHSA-5p28-63mc-cgr9"
+- "GMS-2020-292"
+package_slug: "npm/html-purify"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in html-purify."
+date: "2020-12-04"
+pubdate: "2020-12-04"
+affected_range: "<=1.1.0"
+fixed_versions: []
+affected_versions: "All versions up to 1.1.0"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1586"
+- "https://github.com/advisories/GHSA-5p28-63mc-cgr9"
+uuid: "70ed8b6b-0aaa-493d-9bde-185f9d22e3f0"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

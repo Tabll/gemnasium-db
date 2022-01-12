@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-16"
+identifiers:
+- "GHSA-725f-3pw7-rq6x"
+- "GMS-2020-16"
+package_slug: "npm/8.9.4"
+title: "Malicious Package"
+description: " of `8.9.4` contain malicious code as a preinstall script. The package
+  reads the system's SSH keys but does not upload it to a remote server. Remove the
+  package from your environment. There is no evidence of further compromise at the
+  moment."
+date: "2021-09-29"
+pubdate: "2020-09-03"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1201"
+- "https://github.com/advisories/GHSA-725f-3pw7-rq6x"
+uuid: "836674ad-874f-4661-8676-c544ff27f3a5"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

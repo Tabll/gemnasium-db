@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-511"
+identifiers:
+- "GHSA-3wh2-2pp3-2823"
+- "GMS-2020-511"
+package_slug: "npm/simple-alipay"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in simple-alipay."
+date: "2020-09-01"
+pubdate: "2020-09-01"
+affected_range: "=1.0.1"
+fixed_versions: []
+affected_versions: "Version 1.0.1"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/637"
+- "https://github.com/advisories/GHSA-3wh2-2pp3-2823"
+uuid: "3e4d75c8-b006-45d9-b06d-588f4d43f097"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

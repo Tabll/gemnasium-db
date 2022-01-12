@@ -1,0 +1,30 @@
+---
+identifier: "GMS-2020-460"
+identifiers:
+- "GHSA-36rh-ggpr-j3gj"
+- "GMS-2020-460"
+package_slug: "npm/renovate"
+title: "Azure DevOps token leakage in logs"
+description: "### Impact\n\nApplies to Azure DevOps users only. The bot's token may
+  be exposed in server or pipeline logs due to the `http.extraheader=AUTHORIZATION`
+  parameter being logged without redaction. It is recommended that Azure DevOps users
+  revoke their existing bot credentials and generate new ones after upgrading if there's
+  a potential that logs have been saved to a location that others can view.\n\n###
+  Patches\n\nFixed \n\n### Workarounds\n\nDo not share Renovate logs with anyone who
+  cannot be trusted with access to the token.\n\n### For more information\n\nIf you
+  have any questions or comments about this advisory:\n* Email us at [security@renovatebot.com](mailto:security@renovatebot.com)"
+date: "2020-09-14"
+pubdate: "2020-09-14"
+affected_range: ">=19.180.0 <23.25.1"
+fixed_versions:
+- "23.25.1"
+affected_versions: "All versions starting from 19.180.0 before 23.25.1"
+not_impacted: "All versions before 19.180.0, all versions starting from 23.25.1"
+solution: "Upgrade to version 23.25.1 or above."
+urls:
+- "https://github.com/renovatebot/renovate/security/advisories/GHSA-36rh-ggpr-j3gj"
+- "https://github.com/advisories/GHSA-36rh-ggpr-j3gj"
+uuid: "ac2bdfe1-cc17-4e9a-9594-ce35f7cd1cb0"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

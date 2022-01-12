@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2020-223"
+identifiers:
+- "GHSA-w3f3-4j22-2v3p"
+- "GMS-2020-223"
+package_slug: "npm/destroyer-of-worlds"
+title: "Malicious Package"
+description: "The package `destroyer-of-worlds` contained malicious code. The package
+  contained a bash script that was run as a postinstall script. The script deleted
+  system files and attempted to exhaust resources by creating a large file, a fork
+  bomb and an endless loop. The script targeted UNIX systems. Remove the package from
+  your environment and perform additional incident response on your system's files
+  and processes."
+date: "2021-09-30"
+pubdate: "2020-09-02"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/890"
+- "https://github.com/advisories/GHSA-w3f3-4j22-2v3p"
+uuid: "ac312e0f-69ec-4517-9716-9a196b15608a"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

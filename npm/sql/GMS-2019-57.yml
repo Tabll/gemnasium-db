@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2019-57"
+identifiers:
+- "GHSA-8f93-rv4p-x4jw"
+- "GMS-2019-57"
+package_slug: "npm/sql"
+title: "SQL Injection in sql"
+description: "All versions of `sql` are vulnerable to sql injection as it does not
+  properly escape parameters when building SQL queries. No fix is currently available
+  for this vulnerability. It is our recommendation to not install or use this module
+  until a fix is available."
+date: "2021-08-04"
+pubdate: "2019-06-12"
+affected_range: "<=0.78.0"
+fixed_versions: []
+affected_versions: "All versions up to 0.78.0"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://hackerone.com/reports/319465"
+- "https://nodesecurity.io/advisories/662"
+- "https://www.npmjs.com/advisories/662"
+- "https://github.com/advisories/GHSA-8f93-rv4p-x4jw"
+uuid: "017d9f7f-ca28-46f1-91a0-660996829dbe"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

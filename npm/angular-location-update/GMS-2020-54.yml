@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-54"
+identifiers:
+- "GHSA-53jx-4wwh-gcqj"
+- "GMS-2020-54"
+package_slug: "npm/angular-location-update"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in angular-location-update."
+date: "2020-09-11"
+pubdate: "2020-09-11"
+affected_range: "=0.0.3"
+fixed_versions: []
+affected_versions: "Version 0.0.3"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/930"
+- "https://github.com/advisories/GHSA-53jx-4wwh-gcqj"
+uuid: "e3c32c43-0886-4597-bba4-320089b93426"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

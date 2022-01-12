@@ -1,0 +1,31 @@
+---
+identifier: "GMS-2019-58"
+identifiers:
+- "GHSA-4qhx-g9wp-g9m6"
+- "GMS-2019-58"
+package_slug: "npm/squel"
+title: "Failure to sanitize quotes which can lead to sql injection in squel"
+description: "All versions of `squel` are vulnerable to sql injection.\n\nThe `squel`
+  package does not properly escape user provided input when provided using the `setFields`
+  method. This could lead to sql injection if the query was then executed.\n\nProof
+  of concept demonstrating the injection of a single quote into a generated sql statement
+  from user provided input.\n```\n> console.log(squel.insert().into('buh').setFields({foo:
+  \"bar'baz\"}).toString());\nINSERT INTO buh (foo) VALUES ('bar'baz')\n``` ## Recommendation\n\nThere
+  is no fix at this time and the issue has been reported publicly. Consider using
+  another query builder that provides strong guarantees for input sanitization to
+  prevent sql injection attacks."
+date: "2021-09-16"
+pubdate: "2019-06-14"
+affected_range: "<=5.13.0"
+fixed_versions: []
+affected_versions: "All versions up to 5.13.0"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/hiddentao/squel/issues/350"
+- "https://www.npmjs.com/advisories/575"
+- "https://github.com/advisories/GHSA-4qhx-g9wp-g9m6"
+uuid: "763d482a-218c-4c80-9ca7-731dfc327b97"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

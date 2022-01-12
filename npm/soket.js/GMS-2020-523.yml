@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-523"
+identifiers:
+- "GHSA-x6gq-467r-hwcc"
+- "GMS-2020-523"
+package_slug: "npm/soket.js"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in soket.js."
+date: "2021-10-01"
+pubdate: "2020-09-01"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/687"
+- "https://github.com/advisories/GHSA-x6gq-467r-hwcc"
+uuid: "07c89b12-ce49-4741-a711-57c3ab6c1488"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

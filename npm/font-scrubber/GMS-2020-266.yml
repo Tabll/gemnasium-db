@@ -1,0 +1,30 @@
+---
+identifier: "GMS-2020-266"
+identifiers:
+- "GHSA-65j7-66p7-9xgf"
+- "GMS-2020-266"
+package_slug: "npm/font-scrubber"
+title: "Malicious Package"
+description: " of `font-scrubber` contains malicious code as a postinstall script.
+  The package attempts to upload sensitive files from the system to a remote server.
+  The files include configuration files, command history logs, SSH keys and /etc/passwd.
+  ## Recommendation\n\nAny computer that has this package installed or running should
+  be considered fully compromised. All secrets and keys stored on that computer should
+  be rotated immediately from a different computer.\n\nThe package should be removed,
+  but as full control of the computer may have been given to an outside entity, there
+  is no guarantee that removing the package will remove all malicious software resulting
+  from installing it."
+date: "2021-09-30"
+pubdate: "2020-09-02"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/919"
+- "https://github.com/advisories/GHSA-65j7-66p7-9xgf"
+uuid: "6095a475-8b34-4382-8b34-8dde2ad0db50"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

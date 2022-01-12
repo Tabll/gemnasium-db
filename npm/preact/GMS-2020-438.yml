@@ -1,0 +1,31 @@
+---
+identifier: "GMS-2020-438"
+identifiers:
+- "GHSA-cg48-9hh2-x6mx"
+- "GMS-2020-438"
+package_slug: "npm/preact"
+title: "HTML Injection in preact"
+description: "Versions of `preact` on prerelease tags alpha and beta are vulnerable
+  to HTML Injection. Due to insufficient input validation the package allows attackers
+  to inject JavaScript objects as virtual-dom nodes, which may lead to Cross-Site
+  Scripting. This requires user input parsed with `JSON.parse()` to be passed directly
+  into JSX without sanitization. Upgrade to ."
+date: "2021-09-27"
+pubdate: "2020-09-02"
+affected_range: ">=10.0.0-alpha.0 <=10.0.0-beta.0"
+fixed_versions:
+- "10.0.0-beta.1"
+affected_versions: "All versions starting from 10.0.0-alpha.0 up to 10.0.0-beta.0"
+not_impacted: "All versions before 10.0.0-alpha.0, all versions after 10.0.0-beta.0"
+solution: "Upgrade to version 10.0.0-beta.1 or above. *Note*: 10.0.0-beta.1 may be
+  an unstable version. Use caution."
+urls:
+- "https://github.com/developit/preact/pull/1528"
+- "https://github.com/developit/preact/releases/tag/10.0.0-beta.1"
+- "https://medium.com/dailyjs/exploiting-script-injection-flaws-in-reactjs-883fb1fe36c1"
+- "https://www.npmjs.com/advisories/835"
+- "https://github.com/advisories/GHSA-cg48-9hh2-x6mx"
+uuid: "288419de-9f97-451e-89ca-acfb6d6d9ca4"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

@@ -1,0 +1,39 @@
+---
+identifier: "GMS-2021-74"
+identifiers:
+- "GHSA-hwvm-vfw8-93mw"
+- "GMS-2021-74"
+package_slug: "maven/org.odpi.egeria/egeria-connector-xtdb"
+title: "Vulnerable dependency in XTDB connector"
+description: "### Impact\n\nThe impacted portion of the XTDB connector is its connectivity
+  to S3 as a backing store: this is the only portion of the connector that uses this
+  vulnerable `httpclient` dependency. Per the description, the vulnerability regards
+  URIs that may be misinterpreted, which given the area of impact within the connector
+  we understand to be any URI used to configure connectivity to S3. Note therefore
+  that if you do not use or configure S3 as a backing store in your use of the connector,
+  you should not be exposed to any vulnerability from this component.\n\n### Patches\n\nThe
+  problem has been addressed in version 4.5.13 of the httpclient library, which is
+  included as a replacement dependency version for the build of the XTDB connector
+  from release 3.5 onwards. Therefore, using release 3.5 (or newer) of the connector
+  will include the fixes to address this CVE.\n\n### Workarounds\n\nWe have not investigated
+  specific workarounds, but per the description of the issue it seems likely that
+  ensuring the proper URIs are used for any S3 connectivity used by the connector
+  (and ensuring there are appropriate controls around modifying such URIs in the connector's
+  configuration) would be the first point of investigation.\n\n### References\n\nhttps://nvd.nist.gov/vuln/detail/CVE-2020-13956"
+date: "2021-12-16"
+pubdate: "2021-12-16"
+affected_range: "(,3.5)"
+fixed_versions:
+- "3.5"
+affected_versions: "All versions before 3.5"
+not_impacted: "All versions starting from 3.5"
+solution: "Upgrade to version 3.5 or above."
+urls:
+- "https://github.com/odpi/egeria-connector-xtdb/security/advisories/GHSA-hwvm-vfw8-93mw"
+- "https://nvd.nist.gov/vuln/detail/CVE-2020-13956"
+- "https://github.com/odpi/egeria-connector-xtdb/commit/7b2dcc9fc6c5ce509cf72a275a2f2b8b1870dc15"
+- "https://github.com/advisories/GHSA-hwvm-vfw8-93mw"
+uuid: "ce48e043-667e-48f9-a482-6ea829bdedd2"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

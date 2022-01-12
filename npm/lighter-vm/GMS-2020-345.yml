@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-345"
+identifiers:
+- "GHSA-c3hq-7mxh-mqxf"
+- "GMS-2020-345"
+package_slug: "npm/lighter-vm"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in lighter-vm."
+date: "2020-09-04"
+pubdate: "2020-09-04"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1317"
+- "https://github.com/advisories/GHSA-c3hq-7mxh-mqxf"
+uuid: "d7e14e20-b251-4164-ad91-833c03820be8"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

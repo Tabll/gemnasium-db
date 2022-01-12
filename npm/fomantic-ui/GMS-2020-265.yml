@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-265"
+identifiers:
+- "GHSA-788m-pj96-7w2c"
+- "GMS-2020-265"
+package_slug: "npm/fomantic-ui"
+title: "Improper Neutralization"
+description: "Improper Neutralization in fomantic-ui."
+date: "2021-09-27"
+pubdate: "2020-09-02"
+affected_range: "<2.7.0"
+fixed_versions:
+- "2.7.0"
+affected_versions: "All versions before 2.7.0"
+not_impacted: "All versions starting from 2.7.0"
+solution: "Upgrade to version 2.7.0 or above."
+urls:
+- "https://github.com/fomantic/Fomantic-UI/releases/tag/2.7.0"
+- "https://www.npmjs.com/advisories/885"
+- "https://github.com/advisories/GHSA-788m-pj96-7w2c"
+uuid: "0efa0134-6325-421f-a0a4-a56ae25612ce"
+cwe_ids:
+- "CWE-1035"
+- "CWE-707"
+- "CWE-937"

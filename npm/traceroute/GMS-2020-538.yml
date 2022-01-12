@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2020-538"
+identifiers:
+- "GHSA-rjvj-673q-4hfw"
+- "GMS-2020-538"
+package_slug: "npm/traceroute"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in traceroute."
+date: "2021-10-04"
+pubdate: "2020-09-04"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://snyk.io/vuln/npm:traceroute:20160311"
+- "https://www.npmjs.com/advisories/1465"
+- "https://github.com/jaw187/node-traceroute"
+- "https://github.com/advisories/GHSA-rjvj-673q-4hfw"
+uuid: "a515a0a9-0ec4-4a39-b446-740b63d9d371"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

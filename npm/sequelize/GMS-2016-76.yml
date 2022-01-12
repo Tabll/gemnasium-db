@@ -3,7 +3,7 @@ identifier: "GMS-2016-76"
 package_slug: "npm/sequelize"
 title: "SQL Injection via LIMIT and ORDER"
 description: "If user input goes into the `limit` or `order` parameters, a malicious
-  user can put in their own SQL statements. "
+  user can put in their own SQL statements."
 date: "2016-10-31"
 pubdate: "2016-10-31"
 affected_range: "<= 3.16.0"

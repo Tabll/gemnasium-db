@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-445"
+identifiers:
+- "GHSA-8qh7-xw58-3ww7"
+- "GMS-2020-445"
+package_slug: "npm/radic-util"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in radic-util."
+date: "2020-09-11"
+pubdate: "2020-09-11"
+affected_range: "=1.0.2"
+fixed_versions: []
+affected_versions: "Version 1.0.2"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/942"
+- "https://github.com/advisories/GHSA-8qh7-xw58-3ww7"
+uuid: "07127e5d-015f-4b45-9b7f-55a365c15ed9"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

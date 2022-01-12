@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2021-33"
+identifiers:
+- "GHSA-qm7x-rc44-rrqw"
+- "GMS-2021-33"
+package_slug: "npm/apollo-server"
+title: "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+description: "Improper Neutralization of Input During Web Page Generation ('Cross-site
+  Scripting') in apollo-server."
+date: "2021-11-08"
+pubdate: "2021-11-08"
+affected_range: ">=2.0.0 <2.25.3||>=3.0.0 <3.4.1"
+fixed_versions:
+- "2.25.3"
+- "3.4.1"
+affected_versions: "All versions starting from 2.0.0 before 2.25.3, all versions starting
+  from 3.0.0 before 3.4.1"
+not_impacted: "All versions before 2.0.0, all versions starting from 2.25.3 before
+  3.0.0, all versions starting from 3.4.1"
+solution: "Upgrade to versions 2.25.3, 3.4.1 or above."
+urls:
+- "https://github.com/apollographql/apollo-server/security/advisories/GHSA-qm7x-rc44-rrqw"
+- "https://github.com/advisories/GHSA-qm7x-rc44-rrqw"
+uuid: "c033ae24-bf3c-4acf-bb2f-93ee66cce275"
+cwe_ids:
+- "CWE-1035"
+- "CWE-79"
+- "CWE-937"

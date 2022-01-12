@@ -1,0 +1,24 @@
+---
+identifier: "GMS-2020-337"
+identifiers:
+- "GHSA-wqgq-mfvj-6qxp"
+- "GMS-2020-337"
+package_slug: "npm/koa-body-parse"
+title: "Malicious Package"
+description: "This package contained malicious code. The package uploaded system information
+  such as OS and hostname to a remote server. Remove the package from your environment.
+  There are no indications of further compromise."
+date: "2021-09-30"
+pubdate: "2020-09-03"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1131"
+- "https://github.com/advisories/GHSA-wqgq-mfvj-6qxp"
+uuid: "0c883172-4f0f-44a7-a1ca-5fc868eba164"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-518"
+identifiers:
+- "GHSA-4j54-mmmv-hjpm"
+- "GMS-2020-518"
+package_slug: "npm/slush-fullstack-framework"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in slush-fullstack-framework."
+date: "2020-09-03"
+pubdate: "2020-09-03"
+affected_range: "=0.9.2"
+fixed_versions: []
+affected_versions: "Version 0.9.2"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1108"
+- "https://github.com/advisories/GHSA-4j54-mmmv-hjpm"
+uuid: "2f160d92-af64-48cb-869e-2be77196579d"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

@@ -1,0 +1,24 @@
+---
+identifier: "GMS-2020-496"
+identifiers:
+- "GHSA-f3vw-587g-r29g"
+- "GMS-2020-496"
+package_slug: "npm/sapper"
+title: "Relative Path Traversal"
+description: "Relative Path Traversal in sapper."
+date: "2021-10-04"
+pubdate: "2020-09-03"
+affected_range: "<0.27.11"
+fixed_versions:
+- "0.27.11"
+affected_versions: "All versions before 0.27.11"
+not_impacted: "All versions starting from 0.27.11"
+solution: "Upgrade to version 0.27.11 or above."
+urls:
+- "https://www.npmjs.com/advisories/1494"
+- "https://github.com/advisories/GHSA-f3vw-587g-r29g"
+uuid: "cdc3b4dc-6a26-4b39-b8a0-0a5d79d25f07"
+cwe_ids:
+- "CWE-1035"
+- "CWE-352"
+- "CWE-937"

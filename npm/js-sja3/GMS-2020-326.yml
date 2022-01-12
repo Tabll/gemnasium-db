@@ -1,0 +1,24 @@
+---
+identifier: "GMS-2020-326"
+identifiers:
+- "GHSA-6343-m2qr-66gf"
+- "GMS-2020-326"
+package_slug: "npm/js-sja3"
+title: "Malicious Package"
+description: " contained malicious code. The package targeted the Ethereum cryptocurrency
+  and performed transactions to wallets not controlled by the user. Remove the package
+  from your environment. Ensure no Ethereum funds were compromised."
+date: "2021-09-30"
+pubdate: "2020-09-03"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1291"
+- "https://github.com/advisories/GHSA-6343-m2qr-66gf"
+uuid: "1b4cbed7-9703-4a90-b809-4f9a5b8ac67c"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

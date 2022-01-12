@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2020-281"
+identifiers:
+- "GHSA-m86m-5m44-pc93"
+- "GMS-2020-281"
+package_slug: "npm/grpc-ts-health-check"
+title: "Denial of Service in grpc-ts-health-check"
+description: "Versions of `grpc-ts-health-check` are vulnerable to Denial of Service.
+  The package exposes an API endpoint that may allow attackers to set the service's
+  health status to failing. This can lead to Denial of Service as Kubernetes blocks
+  traffic to services with a failing status. Upgrade to or later."
+date: "2020-09-03"
+pubdate: "2020-09-03"
+affected_range: "<2.0.0"
+fixed_versions:
+- "2.0.0"
+affected_versions: "All versions before 2.0.0"
+not_impacted: "All versions starting from 2.0.0"
+solution: "Upgrade to version 2.0.0 or above."
+urls:
+- "https://www.npmjs.com/advisories/1097"
+- "https://github.com/advisories/GHSA-m86m-5m44-pc93"
+uuid: "87d40b19-4327-41f7-ac47-b6dd4729079f"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-436"
+identifiers:
+- "GHSA-wfhx-6pcm-7m55"
+- "GMS-2020-436"
+package_slug: "npm/ponse"
+title: "Relative Path Traversal"
+description: "Relative Path Traversal in ponse."
+date: "2021-09-28"
+pubdate: "2020-09-03"
+affected_range: "<2.0.2"
+fixed_versions:
+- "2.0.2"
+affected_versions: "All versions before 2.0.2"
+not_impacted: "All versions starting from 2.0.2"
+solution: "Upgrade to version 2.0.2 or above."
+urls:
+- "https://hackerone.com/reports/383112"
+- "https://www.npmjs.com/advisories/1002"
+- "https://github.com/advisories/GHSA-wfhx-6pcm-7m55"
+uuid: "c32b25ef-80f3-442c-bd1e-b87521f21335"
+cwe_ids:
+- "CWE-1035"
+- "CWE-352"
+- "CWE-937"

@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2020-50"
+identifiers:
+- "GHSA-mg85-8mv5-ffjr"
+- "GMS-2020-50"
+package_slug: "npm/ammo"
+title: "Denial of Service in ammo"
+description: "All versions of `ammo` are vulnerable to Denial of Service. The Range
+  HTTP header parser has a vulnerability which will cause the function to throw a
+  system error if the header is set to an invalid value. Because hapi is not expecting
+  the function to ever throw, the error is thrown all the way up the stack. If no
+  unhandled exception handler is available, the application will exist, allowing an
+  attacker to shut down services. This package is deprecated and is now maintained
+  as `@hapi/ammo`. Please update your dependencies to use `@hapi/ammo`."
+date: "2020-09-03"
+pubdate: "2020-09-03"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1472"
+- "https://github.com/advisories/GHSA-mg85-8mv5-ffjr"
+uuid: "93019793-55a9-42eb-88a4-fb65cdb6c407"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

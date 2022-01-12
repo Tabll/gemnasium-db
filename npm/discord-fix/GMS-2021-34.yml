@@ -1,0 +1,29 @@
+---
+identifier: "GMS-2021-34"
+identifiers:
+- "GHSA-qv2g-99x4-45x6"
+- "GMS-2021-34"
+package_slug: "npm/discord-fix"
+title: "Malicious npm package: discord-fix"
+description: "The npm `discord-fix` package has been identified as malicious and removed
+  from the npm package registry.\n\n## Remediation\n\nAny computer that has this package
+  installed or running should be considered fully compromised. All secrets and keys
+  stored on that computer should be rotated immediately from a different computer.
+  The package should be removed, but as full control of the computer may have been
+  given to an outside entity, there is no guarantee that removing the package will
+  remove all malicious software resulting from installing it."
+date: "2021-01-29"
+pubdate: "2021-01-29"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://blog.sonatype.com/sonatype-spots-more-discord-malware-in-npm?hs_preview=BbDPGbfh-40737456755"
+- "https://www.npmjs.com/advisories/1597"
+- "https://github.com/advisories/GHSA-qv2g-99x4-45x6"
+uuid: "46263ede-1fc7-4ab3-b835-c5f0fb12e038"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

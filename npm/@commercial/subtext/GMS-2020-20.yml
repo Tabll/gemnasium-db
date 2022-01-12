@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2020-20"
+identifiers:
+- "GHSA-36c4-4r89-6whg"
+- "GMS-2020-20"
+package_slug: "npm/@commercial/subtext"
+title: "Prototype Pollution in @commercial/subtext"
+description: "Versions of `@commercial/subtext` are vulnerable to Prototype Pollution.
+  A multipart payload can be constructed in a way that one of the parts’ content can
+  be set as the entire payload object’s prototype. If this prototype contains data,
+  it may bypass other validation rules which enforce access and privacy. If this prototype
+  evaluates to null, it can cause unhandled exceptions when the request payload is
+  accessed."
+date: "2021-10-04"
+pubdate: "2020-09-03"
+affected_range: "<5.1.2"
+fixed_versions:
+- "5.1.2"
+affected_versions: "All versions before 5.1.2"
+not_impacted: "All versions starting from 5.1.2"
+solution: "Upgrade to version 5.1.2 or above."
+urls:
+- "https://www.npmjs.com/advisories/1484"
+- "https://github.com/advisories/GHSA-36c4-4r89-6whg"
+uuid: "b6af0670-2606-4adf-9ca0-62aad005316b"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

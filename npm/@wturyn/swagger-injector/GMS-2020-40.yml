@@ -1,0 +1,23 @@
+---
+identifier: "GMS-2020-40"
+identifiers:
+- "GHSA-4x7w-frcq-v4m3"
+- "GMS-2020-40"
+package_slug: "npm/@wturyn/swagger-injector"
+title: "Relative Path Traversal"
+description: "Relative Path Traversal in @wturyn/swagger-injector."
+date: "2021-09-29"
+pubdate: "2020-09-03"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1173"
+- "https://github.com/advisories/GHSA-4x7w-frcq-v4m3"
+uuid: "3ca5a039-3d9d-44b2-8ae5-9b43602ab050"
+cwe_ids:
+- "CWE-1035"
+- "CWE-352"
+- "CWE-937"

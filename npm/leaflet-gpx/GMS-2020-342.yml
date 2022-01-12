@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-342"
+identifiers:
+- "GHSA-gjc9-932x-c59p"
+- "GMS-2020-342"
+package_slug: "npm/leaflet-gpx"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in leaflet-gpx."
+date: "2020-09-03"
+pubdate: "2020-09-03"
+affected_range: "=1.0.1"
+fixed_versions: []
+affected_versions: "Version 1.0.1"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/937"
+- "https://github.com/advisories/GHSA-gjc9-932x-c59p"
+uuid: "4a392c53-9bac-4914-bf16-cba69e444b4a"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

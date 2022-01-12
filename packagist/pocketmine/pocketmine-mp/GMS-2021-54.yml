@@ -1,0 +1,35 @@
+---
+identifier: "GMS-2021-54"
+identifiers:
+- "GHSA-j5qg-w9jg-3wg3"
+- "GMS-2021-54"
+package_slug: "packagist/pocketmine/pocketmine-mp"
+title: "Inability to de-op players if listed in ops.txt with non-lowercase letters"
+description: "### Impact\nOriginally reported in iTXTech/Genisys#1188\n\n```txt\nPotterHarry98\npotterharry98\n```\n\n`deop
+  PotterHarry98`\n\nwill remove `potterharry98` from the ops.txt but not `PotterHarry98`.\n\nOperator
+  permissions are checked using `Config->exists()` with `lowercase=true`, which will
+  result in a match:\nhttps://github.com/pmmp/PocketMine-MP/blob/22bb1ce8e03dba57173debf0415390511d68e045/src/utils/Config.php#L449\n\nThis
+  means that it's possible to make yourself impossible to de-op (using commands) by
+  adding your name to ops.txt with uppercase letters.\n\n### Patches\n4d37b79ff7f9d9452e988387f97919a9a1c4954e\n\n###
+  Workarounds\nThis can be easily addressed by removing the offending lines from ops.txt
+  manually.\n\n### For more information\nIf you have any questions or comments about
+  this advisory:\n* Open an issue in [pmmp/PocketMine-MP](https://github.com/pmmp/PocketMine-MP)\n*
+  Email us at [team@pmmp.io](mailto:team@pmmp.io)\n"
+date: "2021-12-16"
+pubdate: "2021-12-16"
+affected_range: "<4.0.3"
+fixed_versions:
+- "4.0.3"
+affected_versions: "All versions before 4.0.3"
+not_impacted: "All versions starting from 4.0.3"
+solution: "Upgrade to version 4.0.3 or above."
+urls:
+- "https://github.com/pmmp/PocketMine-MP/security/advisories/GHSA-j5qg-w9jg-3wg3"
+- "https://github.com/iTXTech/Genisys/issues/1188"
+- "https://github.com/pmmp/PocketMine-MP/commit/4d37b79ff7f9d9452e988387f97919a9a1c4954e"
+- "https://github.com/pmmp/PocketMine-MP/blob/4.0.3/changelogs/4.0.md#403"
+- "https://github.com/advisories/GHSA-j5qg-w9jg-3wg3"
+uuid: "6264c8ae-1688-4d5d-9c75-212bb4697a5b"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

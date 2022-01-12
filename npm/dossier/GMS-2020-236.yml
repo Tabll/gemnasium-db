@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2020-236"
+identifiers:
+- "GHSA-c8h6-89q2-mgv8"
+- "GMS-2020-236"
+package_slug: "npm/dossier"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in dossier."
+date: "2021-09-24"
+pubdate: "2020-09-01"
+affected_range: "=0.0.4"
+fixed_versions: []
+affected_versions: "Version 0.0.4"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/625"
+- "https://github.com/advisories/GHSA-c8h6-89q2-mgv8"
+- "https://snyk.io/vuln/SNYK-JS-DOSSIER-450994"
+uuid: "53a02a99-5c84-4338-9e44-94d47b4cf2ba"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

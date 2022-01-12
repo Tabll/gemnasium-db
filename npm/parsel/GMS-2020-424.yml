@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2020-424"
+identifiers:
+- "GHSA-vjvw-wcmw-pr26"
+- "GMS-2020-424"
+package_slug: "npm/parsel"
+title: "Insufficient Entropy in parsel"
+description: "All versions of `parsel` use an insecure key derivation function. The
+  package runs keys of arbitrary lengths through one round of SHA256 hashing for key
+  stretching. This allows for the use of keys of insufficient entropy with inappropriate
+  key stretching. The package is deprecated and will not be updated. Consider using
+  an alternative package."
+date: "2021-10-04"
+pubdate: "2020-09-04"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1462"
+- "https://github.com/advisories/GHSA-vjvw-wcmw-pr26"
+uuid: "0b6df785-8fb8-49e2-b04f-a5e857f7b6c2"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

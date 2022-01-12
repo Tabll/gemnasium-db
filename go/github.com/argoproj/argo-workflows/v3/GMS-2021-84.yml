@@ -1,0 +1,35 @@
+---
+identifier: "GMS-2021-84"
+identifiers:
+- "GHSA-6c73-2v8x-qpvm"
+- "GMS-2021-84"
+package_slug: "go/github.com/argoproj/argo-workflows/v3"
+title: "Argo Server TLS requests could be forged by attacker with network access"
+description: "### Impact\n\nWe are not aware of any exploits. This is a pro-active
+  fix.\n\nImpacted: \n\n* You are running Argo Server < v3.0 with `--secure=true`
+  or >= v3.0 with `--secure` unspecified (note - running in secure mode is recommended
+  regardless).\n* The attacker is within your network. If you expose Argo Server to
+  the Internet then \"your network\" is \"the Internet\". \n\nThe Argo Server's keys
+  are packaged within the image. They could be extracted and used to decrypt traffic,
+  or forge requests.\n\n### Patches\n\nhttps://github.com/argoproj/argo-workflows/pull/6540\n\n###
+  Workarounds\n\n* Make sure that your Argo Server service or pod are not directly
+  accessible outside of your cluster. Put TLS load balancer in front of it.\n\nThis
+  was identified by engineers at Jetstack.io"
+date: "2021-08-23"
+pubdate: "2021-08-23"
+affected_range: ">=3.0.0 <3.0.9||>=3.1.0 <3.1.6"
+fixed_versions:
+- "3.0.9"
+- "3.1.6"
+affected_versions: "All versions starting from 3.0.0 before 3.0.9, all versions starting
+  from 3.1.0 before 3.1.6"
+not_impacted: "All versions before 3.0.0, all versions starting from 3.0.9 before
+  3.1.0, all versions starting from 3.1.6"
+solution: "Upgrade to versions 3.0.9, 3.1.6 or above."
+urls:
+- "https://github.com/argoproj/argo-workflows/security/advisories/GHSA-6c73-2v8x-qpvm"
+- "https://github.com/advisories/GHSA-6c73-2v8x-qpvm"
+uuid: "dfac9d4c-89a5-4825-9812-278ac11a2ca4"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

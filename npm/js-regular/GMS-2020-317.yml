@@ -1,0 +1,24 @@
+---
+identifier: "GMS-2020-317"
+identifiers:
+- "GHSA-qcc9-q247-3m2m"
+- "GMS-2020-317"
+package_slug: "npm/js-regular"
+title: "Malicious Package"
+description: "This package contained malicious code. The package uploaded system information
+  such as OS and hostname to a remote server. Remove the package from your environment.
+  There are no indications of further compromise."
+date: "2021-09-30"
+pubdate: "2020-09-03"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1129"
+- "https://github.com/advisories/GHSA-qcc9-q247-3m2m"
+uuid: "75863752-d622-4aa4-acd7-bac7c2d28214"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

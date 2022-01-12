@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-434"
+identifiers:
+- "GHSA-84qj-9qf2-q92r"
+- "GMS-2020-434"
+package_slug: "npm/pm-controls"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in pm-controls."
+date: "2020-09-03"
+pubdate: "2020-09-03"
+affected_range: "=1.1.8"
+fixed_versions: []
+affected_versions: "Version 1.1.8"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/949"
+- "https://github.com/advisories/GHSA-84qj-9qf2-q92r"
+uuid: "31e82d47-840d-47c1-bea3-5579080bdf46"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

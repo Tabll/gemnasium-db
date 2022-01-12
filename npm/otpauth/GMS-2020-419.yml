@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2020-419"
+identifiers:
+- "GHSA-rmmc-8cqj-hfp3"
+- "GMS-2020-419"
+package_slug: "npm/otpauth"
+title: "Authentication Bypass in otpauth"
+description: "Versions of `otpauth` are vulnerable to Authentication Bypass. The package's
+  `totp.validate()` function may return positive values for single digit tokens even
+  if they are invalid. This may allow attackers to bypass the OTP authentication by
+  providing single digit tokens."
+date: "2021-09-29"
+pubdate: "2020-09-03"
+affected_range: "<3.2.8"
+fixed_versions:
+- "3.2.8"
+affected_versions: "All versions before 3.2.8"
+not_impacted: "All versions starting from 3.2.8"
+solution: "Upgrade to version 3.2.8 or above."
+urls:
+- "https://www.npmjs.com/advisories/1087"
+- "https://github.com/advisories/GHSA-rmmc-8cqj-hfp3"
+uuid: "0a450ba9-7470-4c97-9b7f-44305d00bd68"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

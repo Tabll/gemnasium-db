@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-546"
+identifiers:
+- "GHSA-54qm-37qr-w5wq"
+- "GMS-2020-546"
+package_slug: "npm/veval"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in veval."
+date: "2020-09-04"
+pubdate: "2020-09-04"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1321"
+- "https://github.com/advisories/GHSA-54qm-37qr-w5wq"
+uuid: "b62a8b8f-069c-4101-a2ca-6261beb6d8bb"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

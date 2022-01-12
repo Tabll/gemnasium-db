@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-499"
+identifiers:
+- "GHSA-p7w2-mc6m-mfx2"
+- "GMS-2020-499"
+package_slug: "npm/scroool"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in scroool."
+date: "2020-09-11"
+pubdate: "2020-09-11"
+affected_range: "=0.1.7"
+fixed_versions: []
+affected_versions: "Version 0.1.7"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/944"
+- "https://github.com/advisories/GHSA-p7w2-mc6m-mfx2"
+uuid: "2ff52067-6f2d-4bca-a480-11a900962313"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

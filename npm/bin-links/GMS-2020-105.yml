@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2020-105"
+identifiers:
+- "GHSA-v45m-2wcp-gg98"
+- "GMS-2020-105"
+package_slug: "npm/bin-links"
+title: "Global node_modules Binary Overwrite in bin-links"
+description: "Versions of `bin-links` are vulnerable to a Global node_modules Binary
+  Overwrite. It fails to prevent globally-installed binaries to be overwritten by
+  other package installs. For example, if a package was installed globally and created
+  a `serve` binary, any subsequent installs of packages that also create a `serve`
+  binary would overwrite the first binary. This behavior is still allowed in local
+  installations."
+date: "2020-09-04"
+pubdate: "2020-09-04"
+affected_range: "<1.1.6"
+fixed_versions:
+- "1.1.6"
+affected_versions: "All versions before 1.1.6"
+not_impacted: "All versions starting from 1.1.6"
+solution: "Upgrade to version 1.1.6 or above."
+urls:
+- "https://www.npmjs.com/advisories/1438"
+- "https://github.com/advisories/GHSA-v45m-2wcp-gg98"
+uuid: "d556ad33-8cc7-4aea-b726-defa9af8aada"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

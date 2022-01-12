@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2020-390"
+identifiers:
+- "GHSA-97mg-3cr6-3x4c"
+- "GMS-2020-390"
+package_slug: "npm/mongodb-query-parser"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in mongodb-query-parser."
+date: "2020-09-04"
+pubdate: "2020-09-04"
+affected_range: "<2.0.0"
+fixed_versions:
+- "2.0.0"
+affected_versions: "All versions before 2.0.0"
+not_impacted: "All versions starting from 2.0.0"
+solution: "Upgrade to version 2.0.0 or above."
+urls:
+- "https://www.npmjs.com/advisories/1448"
+- "https://github.com/advisories/GHSA-97mg-3cr6-3x4c"
+uuid: "1e57e490-91b6-4af6-9e22-5fcddb39d30f"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

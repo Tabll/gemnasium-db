@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2020-301"
+identifiers:
+- "GHSA-rggq-f2wf-m6cp"
+- "GMS-2020-301"
+package_slug: "npm/jajajejejiji"
+title: "Malicious Package"
+description: "All versions of `jajajejejiji` typosquatted a popular package of similar
+  name and tracked users who had installed the incorrect package. The package uploaded
+  information to a remote server including: name of the downloaded package, name of
+  the intended package, the Node version and whether the process was running as sudo.
+  There is no further compromise. Remove the package from your dependencies and always
+  ensure package names are typed correctly upon installation."
+date: "2021-10-01"
+pubdate: "2020-09-02"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/838"
+- "https://github.com/advisories/GHSA-rggq-f2wf-m6cp"
+uuid: "fd83e96f-7255-46f7-b230-76911a1c3d83"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2021-104"
+identifiers:
+- "GHSA-rrfw-hg9m-j47h"
+- "GMS-2021-104"
+package_slug: "go/github.com/russellhaering/goxmldsig"
+title: "Signature Validation Bypass"
+description: "An authentication bypass exists in the [goxmldsig](https://github.com/russellhaering/goxmldsig/security/advisories/GHSA-q547-gmf8-8jr7)
+  this library uses to determine if SAML assertions are genuine. An attacker could
+  craft a SAML response that would appear to be valid but would not have been genuinely
+  issued by the IDP."
+date: "2021-10-08"
+pubdate: "2021-05-24"
+affected_range: "<=0.4.1"
+fixed_versions:
+- "0.4.2"
+affected_versions: "All versions up to 0.4.1"
+not_impacted: "All versions after 0.4.1"
+solution: "Upgrade to version 0.4.2 or above."
+urls:
+- "https://github.com/crewjam/saml/security/advisories/GHSA-rrfw-hg9m-j47h"
+- "https://github.com/advisories/GHSA-rrfw-hg9m-j47h"
+uuid: "c5ee7767-5719-40f6-97ae-83e3d68d3e9b"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

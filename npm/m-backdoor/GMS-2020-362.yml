@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-362"
+identifiers:
+- "GHSA-vv52-3mrp-455m"
+- "GMS-2020-362"
+package_slug: "npm/m-backdoor"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in m-backdoor."
+date: "2021-10-04"
+pubdate: "2020-09-03"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1513"
+- "https://github.com/advisories/GHSA-vv52-3mrp-455m"
+uuid: "24ed49b2-57fb-4844-b51f-17196b314ecc"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

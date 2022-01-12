@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2020-572"
+identifiers:
+- "GHSA-8jq6-w5cg-wm45"
+- "GMS-2020-572"
+package_slug: "packagist/pocketmine/pocketmine-mp"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in pocketmine/pocketmine-mp."
+date: "2021-02-13"
+pubdate: "2020-11-11"
+affected_range: "<3.15.4"
+fixed_versions:
+- "3.15.4"
+affected_versions: "All versions before 3.15.4"
+not_impacted: "All versions starting from 3.15.4"
+solution: "Upgrade to version 3.15.4 or above."
+urls:
+- "https://github.com/pmmp/PocketMine-MP/security/advisories/GHSA-8jq6-w5cg-wm45"
+- "https://github.com/advisories/GHSA-8jq6-w5cg-wm45"
+uuid: "888d6107-5e09-4da9-8c55-2920328ed17f"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

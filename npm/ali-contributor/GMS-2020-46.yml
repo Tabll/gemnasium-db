@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-46"
+identifiers:
+- "GHSA-h3m2-h22h-695r"
+- "GMS-2020-46"
+package_slug: "npm/ali-contributor"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in ali-contributor."
+date: "2021-09-30"
+pubdate: "2020-09-03"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1045"
+- "https://github.com/advisories/GHSA-h3m2-h22h-695r"
+uuid: "16d82dca-0512-4390-827f-5564a68fa5b8"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

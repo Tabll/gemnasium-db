@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-244"
+identifiers:
+- "GHSA-28f8-hqmc-7ph8"
+- "GMS-2020-244"
+package_slug: "npm/ember-power-timepicker"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in ember-power-timepicker."
+date: "2020-09-11"
+pubdate: "2020-09-11"
+affected_range: "=1.0.8"
+fixed_versions: []
+affected_versions: "Version 1.0.8"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/931"
+- "https://github.com/advisories/GHSA-28f8-hqmc-7ph8"
+uuid: "07bc85f7-1006-430e-abf1-81903edb9f97"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

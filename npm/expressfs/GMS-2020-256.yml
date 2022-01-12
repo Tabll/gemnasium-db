@@ -1,0 +1,24 @@
+---
+identifier: "GMS-2020-256"
+identifiers:
+- "GHSA-mxmj-84q8-34r7"
+- "GMS-2020-256"
+package_slug: "npm/expressfs"
+title: "Command Injection in expressfs"
+description: "All versions of `expressfs` are vulnerable to Command Injection. `expressfs.cp`,
+  `expressfs.create` and `expressfs.rmdir`. No fix is currently available. Consider
+  using an alternative module until a fix is made available."
+date: "2021-09-28"
+pubdate: "2020-09-03"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/953"
+- "https://github.com/advisories/GHSA-mxmj-84q8-34r7"
+uuid: "961a29b1-57a8-4262-981f-063fff61afd6"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

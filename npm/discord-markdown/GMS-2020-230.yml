@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2020-230"
+identifiers:
+- "GHSA-9r27-994c-4xch"
+- "GMS-2020-230"
+package_slug: "npm/discord-markdown"
+title: "discord-html not escaping HTML code blocks when lacking a language identifier"
+description: "### Impact\nAny website using discord-markdown with user-generated markdown
+  is vulnerable to having code injected into the page where the markdown is displayed.\n\n###
+  Patches\nThis has been patched \n\n### Workarounds\nEscape the characters `&lt;&gt;&amp;`
+  before sending plain code blocks to discord-markdown.\n\n### References\nhttps://github.com/brussell98/discord-markdown/issues/13"
+date: "2020-02-24"
+pubdate: "2020-02-24"
+affected_range: "<2.3.1"
+fixed_versions:
+- "2.3.1"
+affected_versions: "All versions before 2.3.1"
+not_impacted: "All versions starting from 2.3.1"
+solution: "Upgrade to version 2.3.1 or above."
+urls:
+- "https://github.com/brussell98/discord-markdown/security/advisories/GHSA-9r27-994c-4xch"
+- "https://github.com/brussell98/discord-markdown/issues/13"
+- "https://github.com/brussell98/discord-markdown/commit/7ce2eb66520815dcf5e97ef2bc8a2d5979da66e7"
+- "https://github.com/advisories/GHSA-9r27-994c-4xch"
+uuid: "0c39c2a1-1749-419a-8752-eab0064a5dc4"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

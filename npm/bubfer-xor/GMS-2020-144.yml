@@ -1,0 +1,24 @@
+---
+identifier: "GMS-2020-144"
+identifiers:
+- "GHSA-vm67-mh96-95mq"
+- "GMS-2020-144"
+package_slug: "npm/bubfer-xor"
+title: "Malicious Package"
+description: " contained malicious code. The package targeted the Ethereum cryptocurrency
+  and performed transactions to wallets not controlled by the user. Remove the package
+  from your environment. Ensure no Ethereum funds were compromised."
+date: "2021-09-29"
+pubdate: "2020-09-03"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1232"
+- "https://github.com/advisories/GHSA-vm67-mh96-95mq"
+uuid: "1be215a8-1e70-47dd-995d-30c4ec47b710"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

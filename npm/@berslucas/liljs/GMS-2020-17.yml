@@ -1,0 +1,29 @@
+---
+identifier: "GMS-2020-17"
+identifiers:
+- "GHSA-c53x-wwx2-pg96"
+- "GMS-2020-17"
+package_slug: "npm/@berslucas/liljs"
+title: "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+description: "Improper Neutralization of Input During Web Page Generation ('Cross-site
+  Scripting') in @berslucas/liljs."
+date: "2021-09-28"
+pubdate: "2020-09-03"
+affected_range: "<1.0.2"
+fixed_versions:
+- "1.0.2"
+affected_versions: "All versions before 1.0.2"
+not_impacted: "All versions starting from 1.0.2"
+solution: "Upgrade to version 1.0.2 or above."
+urls:
+- "https://snyk.io/vuln/SNYK-JS-BERSLUCASLILJS-450217"
+- "https://www.npmjs.com/advisories/1016"
+- "https://github.com/bersLucas/liljs/pull/7"
+- "https://github.com/bersLucas/liljs/commit/779c0dcd8aba434a1c94db7d1d2d990a629f9a6c"
+- "https://github.com/bersLucas/liljs/releases/tag/1.0.2"
+- "https://github.com/advisories/GHSA-c53x-wwx2-pg96"
+uuid: "4323eccd-788a-49aa-8659-b09f274520c5"
+cwe_ids:
+- "CWE-1035"
+- "CWE-79"
+- "CWE-937"

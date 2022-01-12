@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-94"
+identifiers:
+- "GHSA-vm6v-w6q2-mrrq"
+- "GMS-2020-94"
+package_slug: "npm/bb-builder"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in bb-builder."
+date: "2021-09-30"
+pubdate: "2020-09-03"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1119"
+- "https://github.com/advisories/GHSA-vm6v-w6q2-mrrq"
+uuid: "0647e393-d255-4171-9aef-f3cececa1758"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

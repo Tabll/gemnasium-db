@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-526"
+identifiers:
+- "GHSA-hvxq-j2r4-4jm8"
+- "GMS-2020-526"
+package_slug: "npm/sql-injection"
+title: "Regular Expression Denial of Service in sql-injection"
+description: "All versions of `sql-injection` are vulnerable to Regular Expression
+  Denial of Service. The package processes a request's body with regular expressions
+  that may take exponentially longer to execute for large inputs. No fix is currently
+  available. Consider using an alternative package until a fix is made available."
+date: "2020-09-03"
+pubdate: "2020-09-03"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1163"
+- "https://github.com/advisories/GHSA-hvxq-j2r4-4jm8"
+uuid: "91558fd8-74b1-4935-b094-2dc29e782936"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

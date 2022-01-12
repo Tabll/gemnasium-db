@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-399"
+identifiers:
+- "GHSA-xwg3-gjxh-c8pm"
+- "GMS-2020-399"
+package_slug: "npm/ngx-context-menu"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in ngx-context-menu."
+date: "2020-09-03"
+pubdate: "2020-09-03"
+affected_range: "=0.0.26"
+fixed_versions: []
+affected_versions: "Version 0.0.26"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1105"
+- "https://github.com/advisories/GHSA-xwg3-gjxh-c8pm"
+uuid: "51db7917-3fcb-4c45-9900-7024cb3c58cd"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

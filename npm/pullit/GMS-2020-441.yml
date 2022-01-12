@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2020-441"
+identifiers:
+- "GHSA-8px5-63x9-5c7p"
+- "GMS-2020-441"
+package_slug: "npm/pullit"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in pullit."
+date: "2021-09-28"
+pubdate: "2020-09-03"
+affected_range: "<1.4.0"
+fixed_versions:
+- "1.4.0"
+affected_versions: "All versions before 1.4.0"
+not_impacted: "All versions starting from 1.4.0"
+solution: "Upgrade to version 1.4.0 or above."
+urls:
+- "https://hackerone.com/reports/315773"
+- "https://www.npmjs.com/advisories/1004"
+- "https://github.com/advisories/GHSA-8px5-63x9-5c7p"
+uuid: "c8977f32-e6cf-4fd2-8b23-48fd1f6a2e82"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

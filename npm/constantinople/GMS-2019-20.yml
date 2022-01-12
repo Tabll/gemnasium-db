@@ -1,0 +1,30 @@
+---
+identifier: "GMS-2019-20"
+identifiers:
+- "GHSA-4vmm-mhcq-4x9j"
+- "GMS-2019-20"
+package_slug: "npm/constantinople"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in constantinople."
+date: "2021-08-16"
+pubdate: "2019-06-14"
+affected_range: "<3.1.1"
+fixed_versions:
+- "3.1.1"
+affected_versions: "All versions before 3.1.1"
+not_impacted: "All versions starting from 3.1.1"
+solution: "Upgrade to version 3.1.1 or above."
+urls:
+- "https://github.com/pugjs/constantinople/commit/01d409c0d081dfd65223e6b7767c244156d35f7f"
+- "https://bugzilla.redhat.com/show_bug.cgi?id=1577703"
+- "https://nodesecurity.io/advisories/568"
+- "https://www.npmjs.com/advisories/568"
+- "https://snyk.io/vuln/npm:constantinople:20180421"
+- "https://github.com/advisories/GHSA-4vmm-mhcq-4x9j"
+uuid: "1ab55935-b39e-4014-9215-b86889c60576"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

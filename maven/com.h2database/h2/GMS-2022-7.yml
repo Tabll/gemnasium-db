@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2022-7"
+identifiers:
+- "GHSA-h376-j262-vhq6"
+- "GMS-2022-7"
+package_slug: "maven/com.h2database/h2"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in com.h2database:h2."
+date: "2022-01-06"
+pubdate: "2022-01-06"
+affected_range: "[1.1.100,2.0.206)"
+fixed_versions:
+- "2.0.206"
+affected_versions: "All versions starting from 1.1.100 before 2.0.206"
+not_impacted: "All versions before 1.1.100, all versions starting from 2.0.206"
+solution: "Upgrade to version 2.0.206 or above."
+urls:
+- "https://github.com/h2database/h2database/security/advisories/GHSA-h376-j262-vhq6"
+- "https://github.com/h2database/h2database/releases/tag/version-2.0.206"
+- "https://github.com/advisories/GHSA-h376-j262-vhq6"
+uuid: "e84c874d-fd09-44c4-aa51-72a3f882b18d"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

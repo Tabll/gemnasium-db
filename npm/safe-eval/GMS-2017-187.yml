@@ -3,7 +3,7 @@ identifier: "GMS-2017-187"
 package_slug: "npm/safe-eval"
 title: "Sandbox Breakout"
 description: "By accessing the object constructors, un-sanitized user input can access
-  the entire standard library and effectively break out of the sandbox. "
+  the entire standard library and effectively break out of the sandbox."
 date: "2017-08-30"
 pubdate: "2017-08-30"
 affected_range: ">=0.0.0-alpha"

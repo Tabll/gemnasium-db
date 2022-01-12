@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2020-442"
+identifiers:
+- "GHSA-v6gv-fg46-h89j"
+- "GMS-2020-442"
+package_slug: "npm/put"
+title: "Sensitive Data Exposure in put"
+description: "All versions of `put` are vulnerable to Uninitialized Memory Exposure.
+  The package incorrectly calculates the allocated Buffer size and does not trim the
+  bytes written, which may allow attackers to access uninitialized memory containing
+  sensitive data. This vulnerability only affects versions of Node.js Upgrade your
+  Node.js version or consider using an alternative package."
+date: "2021-09-28"
+pubdate: "2020-09-03"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://hackerone.com/reports/321702"
+- "https://www.npmjs.com/advisories/1007"
+- "https://github.com/advisories/GHSA-v6gv-fg46-h89j"
+uuid: "3dcb4926-b477-4e10-8b46-a23f5fafdd45"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

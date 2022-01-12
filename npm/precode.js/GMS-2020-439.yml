@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-439"
+identifiers:
+- "GHSA-5w4r-wwc3-6qcp"
+- "GMS-2020-439"
+package_slug: "npm/precode.js"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in precode.js."
+date: "2020-09-11"
+pubdate: "2020-09-11"
+affected_range: "=1.1.1"
+fixed_versions: []
+affected_versions: "Version 1.1.1"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/941"
+- "https://github.com/advisories/GHSA-5w4r-wwc3-6qcp"
+uuid: "9fbb66ad-1895-47b2-9c1a-dd1835bf67cf"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

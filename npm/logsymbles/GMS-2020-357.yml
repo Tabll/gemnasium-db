@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-357"
+identifiers:
+- "GHSA-vcg5-9xw6-r56c"
+- "GMS-2020-357"
+package_slug: "npm/logsymbles"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in logsymbles."
+date: "2021-09-30"
+pubdate: "2020-09-02"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/908"
+- "https://github.com/advisories/GHSA-vcg5-9xw6-r56c"
+uuid: "5c47fbff-18eb-4faf-9db5-03bacfeb0758"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

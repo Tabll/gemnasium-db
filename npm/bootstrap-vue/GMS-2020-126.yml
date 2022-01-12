@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2020-126"
+identifiers:
+- "GHSA-c7pp-x73h-4m2v"
+- "GMS-2020-126"
+package_slug: "npm/bootstrap-vue"
+title: "Cross-Site Scripting in bootstrap-vue"
+description: "Versions of `bootstrap-vue` are vulnerable to Cross-Site Scripting.
+  Due to insufficient input sanitization, components may be vulnerable to Cross-Site
+  Scripting through the `options` variable. This may lead to the execution of malicious
+  JavaScript on the user's browser."
+date: "2021-09-27"
+pubdate: "2020-09-02"
+affected_range: "<=2.0.0-rc.11"
+fixed_versions:
+- "2.0.0-rc.12"
+affected_versions: "All versions up to 2.0.0-rc.11"
+not_impacted: "All versions after 2.0.0-rc.11"
+solution: "Upgrade to version 2.0.0-rc.12 or above. *Note*: 2.0.0-rc.12 may be an
+  unstable version. Use caution."
+urls:
+- "https://www.npmjs.com/advisories/770"
+- "https://github.com/bootstrap-vue/bootstrap-vue/issues/1974"
+- "https://github.com/advisories/GHSA-c7pp-x73h-4m2v"
+uuid: "761143c3-b4d1-4f86-87e5-61358362d068"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

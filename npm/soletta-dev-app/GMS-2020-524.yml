@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-524"
+identifiers:
+- "GHSA-8mgg-5x65-m4m4"
+- "GMS-2020-524"
+package_slug: "npm/soletta-dev-app"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in soletta-dev-app."
+date: "2021-09-28"
+pubdate: "2020-09-11"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/958"
+- "https://github.com/advisories/GHSA-8mgg-5x65-m4m4"
+uuid: "dfc8ee2b-8dbc-41d2-8139-625ed8bc0847"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2020-378"
+identifiers:
+- "GHSA-qcff-ffx3-m25c"
+- "GMS-2020-378"
+package_slug: "npm/meta-git"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in meta-git."
+date: "2021-10-04"
+pubdate: "2020-09-04"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://hackerone.com/reports/728040"
+- "https://www.npmjs.com/advisories/1457"
+- "https://github.com/advisories/GHSA-qcff-ffx3-m25c"
+uuid: "485c4bd2-3978-462f-8d61-5b352c128093"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

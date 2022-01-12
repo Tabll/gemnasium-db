@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2021-39"
+identifiers:
+- "GHSA-8r4g-cg4m-x23c"
+- "GMS-2021-39"
+package_slug: "npm/node-static"
+title: "Denial of Service in node-static"
+description: "All versions of node-static are vulnerable to a Denial of Service. The
+  package fails to catch an exception when user input includes null bytes. This allows
+  attackers to access `http://host/%00` and crash the server."
+date: "2021-09-22"
+pubdate: "2021-09-22"
+affected_range: "<=0.7.11"
+fixed_versions: []
+affected_versions: "All versions up to 0.7.11"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/cloudhead/node-static/pull/213"
+- "https://github.com/cloudhead/node-static/blob/643a528ec7bbd05a59c4030655d94810570afb3f/CHANGES.md#-unreleased"
+- "https://www.npmjs.com/advisories/1208"
+- "https://www.npmjs.com/package/node-static"
+- "https://github.com/advisories/GHSA-8r4g-cg4m-x23c"
+uuid: "1714827d-1558-4ae7-8649-39673d99112d"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

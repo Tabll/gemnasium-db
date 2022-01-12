@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2020-507"
+identifiers:
+- "GHSA-h6mq-3cj6-h738"
+- "GMS-2020-507"
+package_slug: "npm/showdown"
+title: "Reverse Tabnabbing in showdown"
+description: "Versions of `showdown` are vulnerable to [Reverse Tabnabbing](https://www.owasp.org/index.php/Reverse_Tabnabbing).
+  The package uses `target='_blank'` in anchor tags, allowing attackers to access
+  `window.opener` for the original page when opening links. This is commonly used
+  for phishing attacks."
+date: "2021-10-01"
+pubdate: "2020-09-03"
+affected_range: "<1.9.1"
+fixed_versions:
+- "1.9.1"
+affected_versions: "All versions before 1.9.1"
+not_impacted: "All versions starting from 1.9.1"
+solution: "Upgrade to version 1.9.1 or above."
+urls:
+- "https://github.com/showdownjs/showdown/pull/670/files"
+- "https://snyk.io/vuln/SNYK-JS-SHOWDOWN-469487"
+- "https://www.npmjs.com/advisories/1302"
+- "https://github.com/advisories/GHSA-h6mq-3cj6-h738"
+uuid: "246f12aa-650a-46eb-b011-79f4cba62d41"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

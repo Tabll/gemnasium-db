@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-82"
+identifiers:
+- "GHSA-v86x-f47q-f7f4"
+- "GMS-2020-82"
+package_slug: "npm/atompm"
+title: "Unauthorized File Access in atompm"
+description: "Versions of `atompm` are vulnerable to Unauthorized File Access. The
+  package fails to sanitize relative paths in the URL for file downloads, allowing
+  attackers to download arbitrary files from the system. Upgrade to or later."
+date: "2021-09-28"
+pubdate: "2020-09-11"
+affected_range: "<0.8.2"
+fixed_versions:
+- "0.8.2"
+affected_versions: "All versions before 0.8.2"
+not_impacted: "All versions starting from 0.8.2"
+solution: "Upgrade to version 0.8.2 or above."
+urls:
+- "https://www.npmjs.com/advisories/959"
+- "https://github.com/advisories/GHSA-v86x-f47q-f7f4"
+uuid: "92995897-2730-4498-b172-6cdc63e2718e"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

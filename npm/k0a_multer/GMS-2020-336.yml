@@ -1,0 +1,24 @@
+---
+identifier: "GMS-2020-336"
+identifiers:
+- "GHSA-v95x-h953-x7fg"
+- "GMS-2020-336"
+package_slug: "npm/k0a_multer"
+title: "Malicious Package"
+description: "This package contained malicious code. The package uploaded system information
+  such as OS and hostname to a remote server. Remove the package from your environment.
+  There are no indications of further compromise."
+date: "2021-09-30"
+pubdate: "2020-09-03"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1130"
+- "https://github.com/advisories/GHSA-v95x-h953-x7fg"
+uuid: "8bb2f2c2-7824-42ba-bf99-3663dad37d7c"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

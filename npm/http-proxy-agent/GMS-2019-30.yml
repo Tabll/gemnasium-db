@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2019-30"
+identifiers:
+- "GHSA-8w57-jfpm-945m"
+- "GMS-2019-30"
+package_slug: "npm/http-proxy-agent"
+title: "Denial of Service in http-proxy-agent"
+description: "Versions of `http-proxy-agent` are vulnerable to denial of service and
+  uninitialized memory leak when unsanitized options are passed to `Buffer`. ## Recommendation\n\nUpdate
+  to or later."
+date: "2020-08-31"
+pubdate: "2019-06-11"
+affected_range: "<2.1.0"
+fixed_versions:
+- "2.1.0"
+affected_versions: "All versions before 2.1.0"
+not_impacted: "All versions starting from 2.1.0"
+solution: "Upgrade to version 2.1.0 or above."
+urls:
+- "https://hackerone.com/reports/321631"
+- "https://github.com/TooTallNate/node-http-proxy-agent/blob/2.0.0/index.js#L80"
+- "https://nodesecurity.io/advisories/607"
+- "https://www.npmjs.com/advisories/607"
+- "https://github.com/advisories/GHSA-8w57-jfpm-945m"
+uuid: "ddc545f1-0d1c-4241-ae66-0c8eba637702"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-229"
+identifiers:
+- "GHSA-j5jc-jf8f-86q7"
+- "GMS-2020-229"
+package_slug: "npm/dictum.js"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in dictum.js."
+date: "2020-09-01"
+pubdate: "2020-09-01"
+affected_range: "=1.0.5"
+fixed_versions: []
+affected_versions: "Version 1.0.5"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/640"
+- "https://github.com/advisories/GHSA-j5jc-jf8f-86q7"
+uuid: "d2af05d6-e17d-45dc-91cc-73c4ac46de00"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

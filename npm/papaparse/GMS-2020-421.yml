@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2020-421"
+identifiers:
+- "GHSA-qvjc-g5vr-mfgr"
+- "GMS-2020-421"
+package_slug: "npm/papaparse"
+title: "Regular Expression Denial of Service in papaparse"
+description: "Versions of `papaparse` are vulnerable to Regular Expression Denial
+  of Service (ReDos). The `parse` function contains a malformed regular expression
+  that takes exponentially longer to process non-numerical inputs. This allows attackers
+  to stall systems and lead to Denial of Service. Upgrade to or later."
+date: "2021-10-04"
+pubdate: "2020-09-04"
+affected_range: "<5.2.0"
+fixed_versions:
+- "5.2.0"
+affected_versions: "All versions before 5.2.0"
+not_impacted: "All versions starting from 5.2.0"
+solution: "Upgrade to version 5.2.0 or above."
+urls:
+- "https://github.com/mholt/PapaParse/issues/777"
+- "https://snyk.io/vuln/SNYK-JS-PAPAPARSE-564258"
+- "https://www.npmjs.com/advisories/1515"
+- "https://github.com/advisories/GHSA-qvjc-g5vr-mfgr"
+uuid: "193d539f-35c4-452d-9b17-59884655d877"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

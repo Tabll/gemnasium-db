@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2020-43"
+identifiers:
+- "GHSA-4q8f-5xxj-946r"
+- "GMS-2020-43"
+package_slug: "npm/addax"
+title: "Command Injection in addax"
+description: "Versions of `addax` are vulnerable to Command Injection. The package
+  does not validate user input on the `presignPath` function which receives input
+  directly from the API endpoint. Exploiting the vulnerability requires authentication.
+  This may allow attackers to run arbitrary commands in the system. Upgrade to or
+  later."
+date: "2021-09-28"
+pubdate: "2020-09-03"
+affected_range: "<1.1.0"
+fixed_versions:
+- "1.1.0"
+affected_versions: "All versions before 1.1.0"
+not_impacted: "All versions starting from 1.1.0"
+solution: "Upgrade to version 1.1.0 or above."
+urls:
+- "https://www.npmjs.com/advisories/954"
+- "https://github.com/advisories/GHSA-4q8f-5xxj-946r"
+uuid: "7bc80f15-257c-4b21-8c28-734af5de489c"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

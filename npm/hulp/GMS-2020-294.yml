@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-294"
+identifiers:
+- "GHSA-fqw7-8v6m-2f86"
+- "GMS-2020-294"
+package_slug: "npm/hulp"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in hulp."
+date: "2021-09-30"
+pubdate: "2020-09-02"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/905"
+- "https://github.com/advisories/GHSA-fqw7-8v6m-2f86"
+uuid: "28664e6e-78cd-4e98-aa39-38c2e784a947"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

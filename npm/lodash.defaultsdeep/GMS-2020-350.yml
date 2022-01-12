@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2020-350"
+identifiers:
+- "GHSA-46fh-8fc5-xcwx"
+- "GMS-2020-350"
+package_slug: "npm/lodash.defaultsdeep"
+title: "Prototype Pollution in lodash.defaultsdeep"
+description: "Versions of `lodash.defaultsdeep` are vulnerable to Prototype Pollution.
+  The function 'defaultsDeep' may allow a malicious user to modify the prototype of
+  `Object` via `__proto__` causing the addition or modification of an existing property
+  that will exist on all objects. \n\nUpdate to or later."
+date: "2021-09-29"
+pubdate: "2020-09-03"
+affected_range: "<4.6.1"
+fixed_versions:
+- "4.6.1"
+affected_versions: "All versions before 4.6.1"
+not_impacted: "All versions starting from 4.6.1"
+solution: "Upgrade to version 4.6.1 or above."
+urls:
+- "https://www.npmjs.com/advisories/1070"
+- "https://github.com/advisories/GHSA-46fh-8fc5-xcwx"
+uuid: "2b2a034c-04b5-47ec-8934-7fa7e721e88d"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

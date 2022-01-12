@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-235"
+identifiers:
+- "GHSA-73hr-6785-f5p8"
+- "GMS-2020-235"
+package_slug: "npm/donotinstallthis"
+title: "Malicious Package"
+description: "The package `donotinstallthis` contained malicious code. The package
+  contained a script that was run as part of the install script. The script contacted
+  a remote service tracking how many installations were done. There is no further
+  compromise. Remove the package from your environment."
+date: "2021-09-30"
+pubdate: "2020-09-02"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/887"
+- "https://github.com/advisories/GHSA-73hr-6785-f5p8"
+uuid: "513e7875-1c16-43f2-9e34-12df6136a30d"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

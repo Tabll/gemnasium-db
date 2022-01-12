@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-374"
+identifiers:
+- "GHSA-m9r7-q9fc-qwx5"
+- "GMS-2020-374"
+package_slug: "npm/maybemaliciouspackage"
+title: "Malicious Package"
+description: "All versions of `maybemaliciouspackage` contain malicious code. The
+  package prints the system's SSH keys to the console as a postinstall script. ##
+  Recommendation\n\nRemove the package from your environment. There are no further
+  signs of compromise."
+date: "2021-09-30"
+pubdate: "2020-09-03"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1042"
+- "https://github.com/advisories/GHSA-m9r7-q9fc-qwx5"
+uuid: "dba2b7b7-79d8-42d6-8440-a6966572bff3"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

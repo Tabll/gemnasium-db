@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2020-360"
+identifiers:
+- "GHSA-hxwc-5vw9-2w4w"
+- "GMS-2020-360"
+package_slug: "npm/loopback-connector-mongodb"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in loopback-connector-mongodb."
+date: "2021-09-27"
+pubdate: "2020-09-02"
+affected_range: "<=3.5.0"
+fixed_versions:
+- "3.6.0"
+affected_versions: "All versions up to 3.5.0"
+not_impacted: "All versions after 3.5.0"
+solution: "Upgrade to version 3.6.0 or above."
+urls:
+- "https://loopback.io/doc/en/lb3/Security-advisory-08-15-2018.html"
+- "https://www.npmjs.com/advisories/767"
+- "https://github.com/loopbackio/loopback-connector-mongodb"
+- "https://github.com/advisories/GHSA-hxwc-5vw9-2w4w"
+uuid: "261fcd81-d2b5-4cf6-af7a-7f44fcdd504d"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

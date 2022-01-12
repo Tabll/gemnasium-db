@@ -1,0 +1,29 @@
+---
+identifier: "GMS-2019-61"
+identifiers:
+- "GHSA-xc7v-wxcw-j472"
+- "GMS-2019-61"
+package_slug: "npm/tunnel-agent"
+title: "Memory Exposure in tunnel-agent"
+description: "Versions of `tunnel-agent` are vulnerable to memory exposure.\n\nThis
+  is exploitable if user supplied input is provided to the auth value and is a number.\n\nProof-of-concept:\n```js\nrequire('request')({\n
+  method: 'GET',\n uri: 'http://www.example.com',\n tunnel: true,\n proxy:{\n protocol:
+  'http:',\n host:'127.0.0.1',\n port:8080,\n auth:USERSUPPLIEDINPUT // number\n }\n});\n```
+  Update to or later."
+date: "2021-08-04"
+pubdate: "2019-06-03"
+affected_range: "<0.6.0"
+fixed_versions:
+- "0.6.0"
+affected_versions: "All versions before 0.6.0"
+not_impacted: "All versions starting from 0.6.0"
+solution: "Upgrade to version 0.6.0 or above."
+urls:
+- "https://github.com/request/tunnel-agent/commit/9ca95ec7219daface8a6fc2674000653de0922c0"
+- "https://www.npmjs.com/advisories/598"
+- "https://gist.github.com/ChALkeR/fd6b2c445834244e7d440a043f9d2ff4"
+- "https://github.com/advisories/GHSA-xc7v-wxcw-j472"
+uuid: "72536a02-8dbb-40d5-9f29-cae43c5d8da7"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

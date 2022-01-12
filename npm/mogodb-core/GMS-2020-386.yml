@@ -1,0 +1,24 @@
+---
+identifier: "GMS-2020-386"
+identifiers:
+- "GHSA-g4m3-rpxr-h7vg"
+- "GMS-2020-386"
+package_slug: "npm/mogodb-core"
+title: "Malicious Package"
+description: "This package contained malicious code. The package uploaded system information
+  such as OS and hostname to a remote server. Remove the package from your environment.
+  There are no indications of further compromise."
+date: "2021-09-30"
+pubdate: "2020-09-03"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1134"
+- "https://github.com/advisories/GHSA-g4m3-rpxr-h7vg"
+uuid: "0b194e59-f876-4f92-99c8-83c60e7a18dc"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

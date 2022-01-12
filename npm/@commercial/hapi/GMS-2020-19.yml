@@ -1,0 +1,34 @@
+---
+identifier: "GMS-2020-19"
+identifiers:
+- "GHSA-66mv-xh68-h6v2"
+- "GMS-2020-19"
+package_slug: "npm/@commercial/hapi"
+title: "Denial of Service in @commercial/hapi"
+description: "Affected versions of `@commercial/hapi` are vulnerable to Denial of
+  Service. The CORS request handler has a vulnerability which will cause the function
+  to throw a system error if the header contains some invalid values. If no unhandled
+  exception handler is available, the application will exist, allowing an attacker
+  to shut down services."
+date: "2020-09-03"
+pubdate: "2020-09-03"
+affected_range: "<16.8.2||>=17.0.0 <17.9.2||>=18.0.0 <18.4.1||>=19.0.0 <19.1.1"
+fixed_versions:
+- "16.8.2"
+- "17.9.2"
+- "18.4.1"
+- "19.1.1"
+affected_versions: "All versions before 16.8.2, all versions starting from 17.0.0
+  before 17.9.2, all versions starting from 18.0.0 before 18.4.1, all versions starting
+  from 19.0.0 before 19.1.1"
+not_impacted: "All versions starting from 16.8.2 before 17.0.0, all versions starting
+  from 17.9.2 before 18.0.0, all versions starting from 18.4.1 before 19.0.0, all
+  versions starting from 19.1.1"
+solution: "Upgrade to versions 16.8.2, 17.9.2, 18.4.1, 19.1.1 or above."
+urls:
+- "https://www.npmjs.com/advisories/1483"
+- "https://github.com/advisories/GHSA-66mv-xh68-h6v2"
+uuid: "32520150-989d-4bde-befc-188c75737226"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

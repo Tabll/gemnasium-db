@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-275"
+identifiers:
+- "GHSA-c722-pv5w-cfg2"
+- "GMS-2020-275"
+package_slug: "npm/github-jquery-widgets"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in github-jquery-widgets."
+date: "2020-09-11"
+pubdate: "2020-09-11"
+affected_range: "=0.1.2"
+fixed_versions: []
+affected_versions: "Version 0.1.2"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/933"
+- "https://github.com/advisories/GHSA-c722-pv5w-cfg2"
+uuid: "47c8ef4e-327c-48b8-aa22-98b04e1c5e13"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

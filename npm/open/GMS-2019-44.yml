@@ -1,0 +1,30 @@
+---
+identifier: "GMS-2019-44"
+identifiers:
+- "GHSA-28xh-wpgr-7fm8"
+- "GMS-2019-44"
+package_slug: "npm/open"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in open."
+date: "2021-08-17"
+pubdate: "2019-06-20"
+affected_range: "<6.0.0"
+fixed_versions:
+- "6.0.0"
+affected_versions: "All versions before 6.0.0"
+not_impacted: "All versions starting from 6.0.0"
+solution: "Upgrade to version 6.0.0 or above."
+urls:
+- "https://github.com/pwnall/node-open/issues/68"
+- "https://github.com/pwnall/node-open/issues/69"
+- "https://hackerone.com/reports/319473"
+- "https://nodesecurity.io/advisories/663"
+- "https://www.npmjs.com/advisories/663"
+- "https://github.com/advisories/GHSA-28xh-wpgr-7fm8"
+uuid: "5681c8eb-4356-4bbf-a54a-4ad36815038e"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

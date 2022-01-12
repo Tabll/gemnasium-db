@@ -1,0 +1,32 @@
+---
+identifier: "GMS-2020-220"
+identifiers:
+- "GHSA-73v8-v6g4-vrpm"
+- "GMS-2020-220"
+package_slug: "npm/decompress-zip"
+title: "Arbitrary File Overwrite in decompress-zip"
+description: "Vulnerable versions of `decompress-zip` are affected by the Zip-Slip
+  vulnerability, an arbitrary file write vulnerability. The vulnerability occurs because
+  `decompress-zip` does not verify that extracted files do not resolve to targets
+  outside of the extraction root directory. \nFor `decompress-zip` upgrade to or later.\nFor
+  `decompress-zip` upgrade to or later."
+date: "2021-09-27"
+pubdate: "2020-09-02"
+affected_range: "<0.2.2||>=0.3.0 <0.3.2"
+fixed_versions:
+- "0.2.2"
+- "0.3.2"
+affected_versions: "All versions before 0.2.2, all versions starting from 0.3.0 before
+  0.3.2"
+not_impacted: "All versions starting from 0.2.2 before 0.3.0, all versions starting
+  from 0.3.2"
+solution: "Upgrade to versions 0.2.2, 0.3.2 or above."
+urls:
+- "https://github.com/nodejs/security-wg/blob/master/vuln/npm/488.json"
+- "https://snyk.io/research/zip-slip-vulnerability"
+- "https://www.npmjs.com/advisories/777"
+- "https://github.com/advisories/GHSA-73v8-v6g4-vrpm"
+uuid: "1c0feab2-ff5d-4a40-a888-df70e1f4bb9f"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

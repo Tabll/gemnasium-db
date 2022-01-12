@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2020-125"
+identifiers:
+- "GHSA-9r7h-6639-v5mw"
+- "GMS-2020-125"
+package_slug: "npm/bootstrap-select"
+title: "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+description: "Improper Neutralization of Input During Web Page Generation ('Cross-site
+  Scripting') in bootstrap-select."
+date: "2021-10-04"
+pubdate: "2020-09-03"
+affected_range: "<1.13.6"
+fixed_versions:
+- "1.13.6"
+affected_versions: "All versions before 1.13.6"
+not_impacted: "All versions starting from 1.13.6"
+solution: "Upgrade to version 1.13.6 or above."
+urls:
+- "https://github.com/dimpu/ngx-md/issues/129"
+- "https://github.com/snapappointments/bootstrap-select/issues/2199"
+- "https://www.npmjs.com/advisories/1522"
+- "https://github.com/advisories/GHSA-9r7h-6639-v5mw"
+uuid: "4cef4136-1ae5-40eb-8d02-63abc3bc7dc8"
+cwe_ids:
+- "CWE-1035"
+- "CWE-79"
+- "CWE-937"

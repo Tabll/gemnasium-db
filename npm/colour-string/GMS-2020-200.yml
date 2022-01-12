@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-200"
+identifiers:
+- "GHSA-8mmf-qp7j-2w24"
+- "GMS-2020-200"
+package_slug: "npm/colour-string"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in colour-string."
+date: "2021-09-30"
+pubdate: "2020-09-02"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/903"
+- "https://github.com/advisories/GHSA-8mmf-qp7j-2w24"
+uuid: "8b6087de-9ece-4588-bcde-49e3277e83a0"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

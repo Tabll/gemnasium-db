@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2020-273"
+identifiers:
+- "GHSA-8j49-49jq-vwcq"
+- "GMS-2020-273"
+package_slug: "npm/getsetdeep"
+title: "Prototype Pollution in getsetdeep"
+description: "All versions of `getsetdeep` are vulnerable to prototype pollution.
+  The `setDeep()` function does not restrict the modification of an Object's prototype,
+  which may allow an attacker to add or modify an existing property that will exist
+  on all objects. \n\nNo fix is currently available. Consider using an alternative
+  package until a fix is made available."
+date: "2021-10-01"
+pubdate: "2020-09-04"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1334"
+- "https://github.com/advisories/GHSA-8j49-49jq-vwcq"
+uuid: "d643f016-19fc-4f54-b144-a46e748716dc"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

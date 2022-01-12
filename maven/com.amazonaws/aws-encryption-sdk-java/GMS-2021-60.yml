@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2021-60"
+identifiers:
+- "GHSA-55xh-53m6-936r"
+- "GMS-2021-60"
+package_slug: "maven/com.amazonaws/aws-encryption-sdk-java"
+title: "Improper Verification of Cryptographic Signature in aws-encryption-sdk-java"
+description: "This advisory addresses several LOW severity issues with
+  streaming signed messages and restricting processing of certain types of invalid
+  messages."
+date: "2021-06-01"
+pubdate: "2021-06-01"
+affected_range: "(,1.9.0),[2.0.0,2.2.0)"
+fixed_versions:
+- "1.9.0"
+- "2.2.0"
+affected_versions: "All versions before 1.9.0, all versions starting from 2.0.0 before
+  2.2.0"
+not_impacted: "All versions starting from 1.9.0 before 2.0.0, all versions starting
+  from 2.2.0"
+solution: "Upgrade to versions 1.9.0, 2.2.0 or above."
+urls:
+- "https://github.com/aws/aws-encryption-sdk-java/security/advisories/GHSA-55xh-53m6-936r"
+- "https://github.com/advisories/GHSA-55xh-53m6-936r"
+uuid: "4676a1a2-8671-45e0-b5ce-912f91f11c26"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

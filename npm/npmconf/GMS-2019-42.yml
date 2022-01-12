@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2019-42"
+identifiers:
+- "GHSA-57cf-349j-352g"
+- "GMS-2019-42"
+package_slug: "npm/npmconf"
+title: "Out-of-bounds Read in npmconf"
+description: "Versions of `npmconf` allocate and write to disk uninitialized memory
+  contents when a typed number is passed as input on Node.js Update to or later. Consider
+  switching to another config storage mechanism, as npmconf is deprecated and should
+  not be used."
+date: "2021-08-04"
+pubdate: "2019-06-12"
+affected_range: "<2.1.3"
+fixed_versions:
+- "2.1.3"
+affected_versions: "All versions before 2.1.3"
+not_impacted: "All versions starting from 2.1.3"
+solution: "Upgrade to version 2.1.3 or above."
+urls:
+- "https://hackerone.com/reports/320269"
+- "https://nodesecurity.io/advisories/653"
+- "https://www.npmjs.com/advisories/653"
+- "https://github.com/advisories/GHSA-57cf-349j-352g"
+uuid: "429aeb2a-94c1-44fe-acb2-436104f4e78e"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

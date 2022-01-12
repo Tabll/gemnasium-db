@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-562"
+identifiers:
+- "GHSA-54cr-gv8w-8324"
+- "GMS-2020-562"
+package_slug: "npm/xoc"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in xoc."
+date: "2020-09-01"
+pubdate: "2020-09-01"
+affected_range: "=1.0.7"
+fixed_versions: []
+affected_versions: "Version 1.0.7"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/638"
+- "https://github.com/advisories/GHSA-54cr-gv8w-8324"
+uuid: "bfe1da66-c091-43d3-bb90-42eb7cbe3395"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

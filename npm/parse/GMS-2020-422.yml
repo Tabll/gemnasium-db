@@ -1,0 +1,35 @@
+---
+identifier: "GMS-2020-422"
+identifiers:
+- "GHSA-wvh7-5p38-2qfc"
+- "GMS-2020-422"
+package_slug: "npm/parse"
+title: "Storing Password in Local Storage"
+description: "The `setPassword` method (http://parseplatform.org/Parse-SDK-JS/api/2.9.1/Parse.User.html#setPassword)
+  stores the user's password in localStorage as raw text making it vulnerable to anyone
+  with access to your localStorage. We believe this is the only time that password
+  is stored at all. In the documentation under Users > Signing Up, it clearly states,
+  \"We never store passwords in plaintext, nor will we ever transmit passwords back
+  to the client in plaintext.\"\n\nExample Code:\n```js\nasync () => {\n const user
+  = Parse.User.current()\n if (user) {\n user.setPassword('newpass')\n await user.save()\n
+  }\n}\n```\nAfter running the above code, the new password will be stored in localStorage
+  as a property named \"password\".\n\nProposed Solution:\nBefore saving anything
+  to localStorage, Parse should strip out any properties named \"password\" that are
+  attempting to be stored with a Parse.User type object.\n\nConfiguration:\nParse
+  SDK: \nParse Server: "
+date: "2021-09-22"
+pubdate: "2020-07-23"
+affected_range: "<2.10.0"
+fixed_versions:
+- "2.10.0"
+affected_versions: "All versions before 2.10.0"
+not_impacted: "All versions starting from 2.10.0"
+solution: "Upgrade to version 2.10.0 or above."
+urls:
+- "https://github.com/parse-community/Parse-SDK-JS/security/advisories/GHSA-wvh7-5p38-2qfc"
+- "https://github.com/parse-community/Parse-SDK-JS/commit/d1106174571b699f972929dd7cbb8e45b5283cbb"
+- "https://github.com/advisories/GHSA-wvh7-5p38-2qfc"
+uuid: "7ef18b1e-e5f5-41dd-843f-dbf2d372231f"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-443"
+identifiers:
+- "GHSA-v6vv-hhqc-6hh2"
+- "GMS-2020-443"
+package_slug: "npm/pyramid-proportion"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in pyramid-proportion."
+date: "2020-09-03"
+pubdate: "2020-09-03"
+affected_range: "=1.0.5"
+fixed_versions: []
+affected_versions: "Version 1.0.5"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1106"
+- "https://github.com/advisories/GHSA-v6vv-hhqc-6hh2"
+uuid: "51492a38-e85a-44cc-a5c3-f6096b326197"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

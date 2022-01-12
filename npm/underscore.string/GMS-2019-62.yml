@@ -1,0 +1,29 @@
+---
+identifier: "GMS-2019-62"
+identifiers:
+- "GHSA-v2p6-4mp7-3r9v"
+- "GMS-2019-62"
+package_slug: "npm/underscore.string"
+title: "Regular Expression Denial of Service in underscore.string"
+description: "Versions of `underscore.string` prior to *3.3.5* are vulnerable to Regular
+  Expression Denial of Service (ReDoS).\n\nThe function `unescapeHTML` is vulnerable
+  to ReDoS due to an overly-broad regex. The slowdown is approximately 2s f characters
+  but grows exponentially with larger inputs. Upgrade to or higher."
+date: "2021-08-16"
+pubdate: "2019-06-14"
+affected_range: "<3.3.5"
+fixed_versions:
+- "3.3.5"
+affected_versions: "All versions before 3.3.5"
+not_impacted: "All versions starting from 3.3.5"
+solution: "Upgrade to version 3.3.5 or above."
+urls:
+- "https://github.com/epeli/underscore.string/issues/510"
+- "https://github.com/epeli/underscore.string/pull/517"
+- "https://github.com/epeli/underscore.string/commit/f486cd684c94c12db48b45d52b1472a1b9661029"
+- "https://www.npmjs.com/advisories/745"
+- "https://github.com/advisories/GHSA-v2p6-4mp7-3r9v"
+uuid: "708ccd56-ef56-49a0-a4cb-8c673ef4d950"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

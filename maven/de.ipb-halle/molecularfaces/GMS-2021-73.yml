@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2021-73"
+identifiers:
+- "GHSA-2pwh-52h7-7j84"
+- "GMS-2021-73"
+package_slug: "maven/de.ipb-halle/molecularfaces"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in de.ipb-halle:molecularfaces."
+date: "2021-04-16"
+pubdate: "2021-04-16"
+affected_range: "(,0.3.0)"
+fixed_versions:
+- "0.3.0"
+affected_versions: "All versions before 0.3.0"
+not_impacted: "All versions starting from 0.3.0"
+solution: "Upgrade to version 0.3.0 or above."
+urls:
+- "https://github.com/ipb-halle/MolecularFaces/security/advisories/GHSA-2pwh-52h7-7j84"
+- "https://github.com/advisories/GHSA-2pwh-52h7-7j84"
+uuid: "5b6227e1-98eb-4aae-a2b1-360cc770ce30"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

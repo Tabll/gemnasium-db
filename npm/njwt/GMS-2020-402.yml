@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2020-402"
+identifiers:
+- "GHSA-g3qw-9pgp-xpj4"
+- "GMS-2020-402"
+package_slug: "npm/njwt"
+title: "Out-of-bounds Read in njwt"
+description: "Versions of `njwt` are vulnerable to out-of-bounds reads when a number
+  is passed into the `base64urlEncode` function. \n\nOn Node.js or lower this can
+  expose sensitive information and on any other version of Node.js this creates a
+  Denial of Service vulnerability."
+date: "2021-09-24"
+pubdate: "2020-09-01"
+affected_range: "<1.0.0"
+fixed_versions:
+- "1.0.0"
+affected_versions: "All versions before 1.0.0"
+not_impacted: "All versions starting from 1.0.0"
+solution: "Upgrade to version 1.0.0 or above."
+urls:
+- "https://hackerone.com/reports/321704"
+- "https://www.npmjs.com/advisories/679"
+- "https://github.com/advisories/GHSA-g3qw-9pgp-xpj4"
+uuid: "144aadb2-fbf3-451c-98b2-bfd423d2fd2d"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

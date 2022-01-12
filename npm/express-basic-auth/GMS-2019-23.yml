@@ -1,0 +1,32 @@
+---
+identifier: "GMS-2019-23"
+identifiers:
+- "GHSA-c35v-qwqg-87jc"
+- "GMS-2019-23"
+package_slug: "npm/express-basic-auth"
+title: "Timing Attack in express-basic-auth"
+description: "Versions of `express-basic-auth` are vulnerable to Timing Attacks. The
+  package uses nating string comparison instead of a constant time string compare
+  which may lead to Timing Attacks. Timing Attacks can be used to increase the efficiency
+  of brute-force attacks by removing the exponential increase in entropy gained from
+  longer secrets."
+date: "2021-08-04"
+pubdate: "2019-06-06"
+affected_range: "<1.1.7"
+fixed_versions:
+- "1.1.7"
+affected_versions: "All versions before 1.1.7"
+not_impacted: "All versions starting from 1.1.7"
+solution: "Upgrade to version 1.1.7 or above."
+urls:
+- "https://github.com/webpack-contrib/webpack-bundle-analyzer/issues/263"
+- "https://github.com/LionC/express-basic-auth/pull/20"
+- "https://github.com/LionC/express-basic-auth/pull/21"
+- "https://github.com/LionC/express-basic-auth/commit/00bb29fdd638f5cda8025d4398be97d528ce3f6f"
+- "https://snyk.io/vuln/SNYK-JS-EXPRESSBASICAUTH-174345"
+- "https://www.npmjs.com/advisories/827"
+- "https://github.com/advisories/GHSA-c35v-qwqg-87jc"
+uuid: "53c0193a-561e-47d1-b18c-d3f168384c0e"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

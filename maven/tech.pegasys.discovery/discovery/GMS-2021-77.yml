@@ -1,0 +1,24 @@
+---
+identifier: "GMS-2021-77"
+identifiers:
+- "GHSA-w3hj-wr2q-x83g"
+- "GMS-2021-77"
+package_slug: "maven/tech.pegasys.discovery/discovery"
+title: "Improper Neutralization"
+description: "Improper Neutralization in tech.pegasys.discovery:discovery."
+date: "2021-04-06"
+pubdate: "2021-04-06"
+affected_range: "(,0.4.5)"
+fixed_versions:
+- "0.4.5"
+affected_versions: "All versions before 0.4.5"
+not_impacted: "All versions starting from 0.4.5"
+solution: "Upgrade to version 0.4.5 or above."
+urls:
+- "https://github.com/ConsenSys/discovery/security/advisories/GHSA-w3hj-wr2q-x83g"
+- "https://github.com/advisories/GHSA-w3hj-wr2q-x83g"
+uuid: "5e605c41-5ec2-485c-b708-81ccb94d690d"
+cwe_ids:
+- "CWE-1035"
+- "CWE-707"
+- "CWE-937"

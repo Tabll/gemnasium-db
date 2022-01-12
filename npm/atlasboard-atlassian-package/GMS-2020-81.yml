@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-81"
+identifiers:
+- "GHSA-25v4-mcx4-hh35"
+- "GMS-2020-81"
+package_slug: "npm/atlasboard-atlassian-package"
+title: "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+description: "Improper Neutralization of Input During Web Page Generation ('Cross-site
+  Scripting') in atlasboard-atlassian-package."
+date: "2021-10-04"
+pubdate: "2020-09-04"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://hackerone.com/reports/456702"
+- "https://www.npmjs.com/advisories/1449"
+- "https://github.com/advisories/GHSA-25v4-mcx4-hh35"
+uuid: "47062ebb-61b2-4fb4-9964-2d732284a0d6"
+cwe_ids:
+- "CWE-1035"
+- "CWE-79"
+- "CWE-937"

@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2021-29"
+identifiers:
+- "GHSA-q324-q795-2q5p"
+- "GMS-2021-29"
+package_slug: "npm/@redocly/openapi-cli"
+title: "Relative Path Traversal"
+description: "Relative Path Traversal in @redocly/openapi-cli."
+date: "2021-10-12"
+pubdate: "2021-10-12"
+affected_range: "<=1.0.0-beta.58"
+fixed_versions:
+- "1.0.0-beta.59"
+affected_versions: "All versions up to 1.0.0-beta.58"
+not_impacted: "All versions after 1.0.0-beta.58"
+solution: "Upgrade to version 1.0.0-beta.59 or above. *Note*: 1.0.0-beta.59 may be
+  an unstable version. Use caution."
+urls:
+- "https://github.com/Redocly/openapi-cli/security/advisories/GHSA-q324-q795-2q5p"
+- "https://github.com/Redocly/openapi-cli/pull/347"
+- "https://github.com/advisories/GHSA-q324-q795-2q5p"
+uuid: "85fd168e-9c73-4416-b834-d49788f71e29"
+cwe_ids:
+- "CWE-1035"
+- "CWE-352"
+- "CWE-937"

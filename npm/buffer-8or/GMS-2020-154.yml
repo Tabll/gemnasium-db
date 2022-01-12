@@ -1,0 +1,24 @@
+---
+identifier: "GMS-2020-154"
+identifiers:
+- "GHSA-4hm7-73ch-vm59"
+- "GMS-2020-154"
+package_slug: "npm/buffer-8or"
+title: "Malicious Package"
+description: " contained malicious code. The package targeted the Ethereum cryptocurrency
+  and performed transactions to wallets not controlled by the user. Remove the package
+  from your environment. Ensure no Ethereum funds were compromised."
+date: "2021-09-29"
+pubdate: "2020-09-03"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1241"
+- "https://github.com/advisories/GHSA-4hm7-73ch-vm59"
+uuid: "9727d81d-004a-4c7f-9c36-2c4837d72e66"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

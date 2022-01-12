@@ -1,0 +1,30 @@
+---
+identifier: "GMS-2019-14"
+identifiers:
+- "GHSA-v6cj-r88p-92rm"
+- "GMS-2019-14"
+package_slug: "npm/centra"
+title: "Buffer Overflow in centra"
+description: "## Denial of Service\n\n### Impact\n\nAffected Centra versions will,
+  when not in stream mode, buffer responses to requests into memory with no size limit.
+  This issue affects anyone requesting content from untrusted sources.\n\n### Patches\n\n
+  resolves the issue by limiting the size of buffered response body.\n\n### Workarounds\n\nAttempting
+  workarounds isn't recommended. Updating is preferred.\n\n### For more information\n\nIf
+  you have any questions or comments about this advisory, open an issue in [ethanent/centra](https://github.com/ethanent/centra).\n\n"
+date: "2021-09-20"
+pubdate: "2019-09-30"
+affected_range: "<2.4.0"
+fixed_versions:
+- "2.4.0"
+affected_versions: "All versions before 2.4.0"
+not_impacted: "All versions starting from 2.4.0"
+solution: "Upgrade to version 2.4.0 or above."
+urls:
+- "https://github.com/ethanent/centra/security/advisories/GHSA-v6cj-r88p-92rm"
+- "https://github.com/advisories/GHSA-v6cj-r88p-92rm"
+- "https://snyk.io/vuln/SNYK-JS-CENTRA-536073"
+uuid: "05c5c582-517d-4051-8064-a3a17f450fdd"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
+...

@@ -1,0 +1,24 @@
+---
+identifier: "GMS-2020-97"
+identifiers:
+- "GHSA-7cvf-p83w-48q6"
+- "GMS-2020-97"
+package_slug: "npm/beffer-xor"
+title: "Malicious Package"
+description: " contained malicious code. The package targeted the Ethereum cryptocurrency
+  and performed transactions to wallets not controlled by the user. Remove the package
+  from your environment. Ensure no Ethereum funds were compromised."
+date: "2021-09-29"
+pubdate: "2020-09-03"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1229"
+- "https://github.com/advisories/GHSA-7cvf-p83w-48q6"
+uuid: "ed280945-96d6-4bdd-8e88-c9ad62d44bbe"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

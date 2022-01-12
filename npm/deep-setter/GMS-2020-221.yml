@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2020-221"
+identifiers:
+- "GHSA-9qrg-h9g8-c65q"
+- "GMS-2020-221"
+package_slug: "npm/deep-setter"
+title: "Prototype Pollution in deep-setter"
+description: "All versions of `deep-setter` are vulnerable to prototype pollution.
+  The package does not restrict the modification of an Object's prototype, which may
+  allow an attacker to add or modify an existing property that will exist on all objects.
+  \n\n## Recommendation\n\nNo fix is currently available. Consider using an alternative
+  package until a fix is made available."
+date: "2021-10-01"
+pubdate: "2020-09-04"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1333"
+- "https://github.com/advisories/GHSA-9qrg-h9g8-c65q"
+uuid: "210a3a8c-e6e3-49f8-902b-efb1875fb8ab"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

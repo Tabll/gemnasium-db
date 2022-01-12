@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2020-410"
+identifiers:
+- "GHSA-7r5f-7qr4-pf6q"
+- "GMS-2020-410"
+package_slug: "npm/notevil"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in notevil."
+date: "2020-09-03"
+pubdate: "2020-09-03"
+affected_range: "<1.3.2"
+fixed_versions:
+- "1.3.2"
+affected_versions: "All versions before 1.3.2"
+not_impacted: "All versions starting from 1.3.2"
+solution: "Upgrade to version 1.3.2 or above."
+urls:
+- "https://www.npmjs.com/advisories/1093"
+- "https://github.com/advisories/GHSA-7r5f-7qr4-pf6q"
+uuid: "d6c61e91-5537-4bd1-9fd0-790f01c90a40"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

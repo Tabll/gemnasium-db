@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2020-18"
+identifiers:
+- "GHSA-rhc3-76jw-4f2x"
+- "GMS-2020-18"
+package_slug: "npm/@commercial/ammo"
+title: "Denial of Service in @commercial/ammo"
+description: "Versions of `@commercial/ammo` are vulnerable to Denial of Service.
+  The Range HTTP header parser has a vulnerability which will cause the function to
+  throw a system error if the header is set to an invalid value. Because hapi is not
+  expecting the function to ever throw, the error is thrown all the way up the stack.
+  If no unhandled exception handler is available, the application will exist, allowing
+  an attacker to shut down services."
+date: "2020-09-04"
+pubdate: "2020-09-04"
+affected_range: "<2.1.1"
+fixed_versions:
+- "2.1.1"
+affected_versions: "All versions before 2.1.1"
+not_impacted: "All versions starting from 2.1.1"
+solution: "Upgrade to version 2.1.1 or above."
+urls:
+- "https://www.npmjs.com/advisories/1473"
+- "https://github.com/advisories/GHSA-rhc3-76jw-4f2x"
+uuid: "c39d3e07-56aa-4170-9bc8-ef92beef9fe7"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

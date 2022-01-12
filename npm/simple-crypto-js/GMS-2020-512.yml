@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2020-512"
+identifiers:
+- "GHSA-5v7r-jg9r-vq44"
+- "GMS-2020-512"
+package_slug: "npm/simple-crypto-js"
+title: "Insecure Cryptography Algorithm in simple-crypto-js"
+description: "Versions of `simple-crypto-js` use AES-CBC with PKCS#7 padding, which
+  is vulnerable to padding oracle attacks. This may allow attackers to break the encryption
+  and access sensitive data."
+date: "2021-09-29"
+pubdate: "2020-09-03"
+affected_range: "<2.3.0"
+fixed_versions:
+- "2.3.0"
+affected_versions: "All versions before 2.3.0"
+not_impacted: "All versions starting from 2.3.0"
+solution: "Upgrade to version 2.3.0 or above."
+urls:
+- "https://github.com/danang-id/simple-crypto-js/issues/12"
+- "https://robertheaton.com/2013/07/29/padding-oracle-attack/"
+- "https://www.npmjs.com/advisories/1220"
+- "https://snyk.io/vuln/SNYK-JS-SIMPLECRYPTOJS-544027"
+- "https://github.com/advisories/GHSA-5v7r-jg9r-vq44"
+uuid: "6eb9d8f6-ec8d-4a4c-ad18-e5df2a06b2cb"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

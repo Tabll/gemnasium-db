@@ -1,0 +1,32 @@
+---
+identifier: "GMS-2020-414"
+identifiers:
+- "GHSA-jmqm-f2gx-4fjv"
+- "GMS-2020-414"
+package_slug: "npm/npm-registry-fetch"
+title: "Sensitive information exposure through logs in npm-registry-fetch"
+description: "Affected versions of `npm-registry-fetch` are vulnerable to an information
+  exposure vulnerability through log files. The cli supports URLs like `<protocol>://[<user>[:<password>]@]<hostname>[:<port>][:][/]<path>`.
+  The password value is not redacted and is printed to stdout and also to any generated
+  log files."
+date: "2021-09-22"
+pubdate: "2020-07-07"
+affected_range: "<4.0.5||>=5.0.0 <8.1.1"
+fixed_versions:
+- "4.0.5"
+- "8.1.1"
+affected_versions: "All versions before 4.0.5, all versions starting from 5.0.0 before
+  8.1.1"
+not_impacted: "All versions starting from 4.0.5 before 5.0.0, all versions starting
+  from 8.1.1"
+solution: "Upgrade to versions 4.0.5, 8.1.1 or above."
+urls:
+- "https://github.com/npm/npm-registry-fetch/security/advisories/GHSA-jmqm-f2gx-4fjv"
+- "https://github.com/npm/npm-registry-fetch/pull/29"
+- "https://github.com/npm/npm-registry-fetch/commit/18bf9b97fb1deecdba01ffb05580370846255c88"
+- "https://snyk.io/vuln/SNYK-JS-NPMREGISTRYFETCH-575432"
+- "https://github.com/advisories/GHSA-jmqm-f2gx-4fjv"
+uuid: "97ccc7bd-fa9c-4853-b4cb-4c2cbde65da4"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

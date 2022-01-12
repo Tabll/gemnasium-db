@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2019-34"
+identifiers:
+- "GHSA-j59f-6m4q-62h6"
+- "GMS-2019-34"
+package_slug: "npm/ipns"
+title: "Improper Key Verification in ipns"
+description: " of `ipns` are vulnerable to improper key validation. This is due to
+  the public key verification was not being performed properly, resulting in any key
+  being valid. Update to or later."
+date: "2021-08-04"
+pubdate: "2019-05-30"
+affected_range: "<0.1.3"
+fixed_versions:
+- "0.1.3"
+affected_versions: "All versions before 0.1.3"
+not_impacted: "All versions starting from 0.1.3"
+solution: "Upgrade to version 0.1.3 or above."
+urls:
+- "https://github.com/ipfs/js-ipns/commit/33684e356f1f2fdcd99b2fb85fcc5d52223769a0"
+- "https://www.npmjs.com/advisories/693"
+- "https://github.com/advisories/GHSA-j59f-6m4q-62h6"
+uuid: "7628fdad-6f71-4f3d-8e4b-ee1b1a824a40"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

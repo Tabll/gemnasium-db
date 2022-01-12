@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2021-41"
+identifiers:
+- "GHSA-2c83-wfv3-q25f"
+- "GMS-2021-41"
+package_slug: "npm/rebber"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in rebber."
+date: "2021-09-07"
+pubdate: "2021-09-07"
+affected_range: "<5.2.1"
+fixed_versions:
+- "5.2.1"
+affected_versions: "All versions before 5.2.1"
+not_impacted: "All versions starting from 5.2.1"
+solution: "Upgrade to version 5.2.1 or above."
+urls:
+- "https://github.com/zestedesavoir/zmarkdown/security/advisories/GHSA-2c83-wfv3-q25f"
+- "https://github.com/advisories/GHSA-2c83-wfv3-q25f"
+uuid: "53cd83a3-0d08-4c81-bbb2-9b1534a3e726"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

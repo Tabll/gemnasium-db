@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-522"
+identifiers:
+- "GHSA-wp2p-q35g-3rjj"
+- "GMS-2020-522"
+package_slug: "npm/soket.io"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in soket.io."
+date: "2021-10-01"
+pubdate: "2020-09-01"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/686"
+- "https://github.com/advisories/GHSA-wp2p-q35g-3rjj"
+uuid: "d89daab7-eb54-4fff-bb87-02347d3db532"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

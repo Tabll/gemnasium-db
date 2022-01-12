@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2020-183"
+identifiers:
+- "GHSA-jf8x-wg7f-p3w8"
+- "GMS-2020-183"
+package_slug: "npm/cage-js"
+title: "Malicious Package"
+description: "All versions of `cage-js` contains malicious code. The malware downloads
+  and runs a script from a remote server as a postinstall script. Any computer that
+  has this package installed or running should be considered fully compromised. All
+  secrets and keys stored on that computer should be rotated immediately from a different
+  computer.\n\nThe package should be removed, but as full control of the computer
+  may have been given to an outside entity, there is no guarantee that removing the
+  package will remove all malicious software resulting from installing it."
+date: "2021-09-30"
+pubdate: "2020-09-03"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1085"
+- "https://github.com/advisories/GHSA-jf8x-wg7f-p3w8"
+uuid: "d414680a-fa35-474c-a491-b29e98b785c3"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

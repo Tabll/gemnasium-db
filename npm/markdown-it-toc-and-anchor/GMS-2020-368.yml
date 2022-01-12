@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2020-368"
+identifiers:
+- "GHSA-x6m6-5hrf-fh6r"
+- "GMS-2020-368"
+package_slug: "npm/markdown-it-toc-and-anchor"
+title: "Denial of Service in markdown-it-toc-and-anchor"
+description: "All versions of `markdown-it-toc-and-anchor` are vulnerable to Denial
+  of Service. Parsing markdown containing `**text**+@[toc]` causes the application
+  to enter and infinite loop. No fix is currently available. Consider using an alternative
+  module until a fix is made available."
+date: "2021-09-24"
+pubdate: "2020-09-01"
+affected_range: "<4.2.0"
+fixed_versions:
+- "4.2.0"
+affected_versions: "All versions before 4.2.0"
+not_impacted: "All versions starting from 4.2.0"
+solution: "Upgrade to version 4.2.0 or above."
+urls:
+- "https://www.npmjs.com/advisories/749"
+- "https://github.com/medfreeman/markdown-it-toc-and-anchor"
+- "https://snyk.io/vuln/SNYK-JS-MARKDOWNITTOCANDANCHOR-73500"
+- "https://github.com/advisories/GHSA-x6m6-5hrf-fh6r"
+uuid: "86de185f-5133-4a65-8c17-ccdf5d13cf33"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

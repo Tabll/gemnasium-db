@@ -1,0 +1,24 @@
+---
+identifier: "GMS-2020-334"
+identifiers:
+- "GHSA-gqq4-937c-2282"
+- "GMS-2020-334"
+package_slug: "npm/juffer-xor"
+title: "Malicious Package"
+description: " contained malicious code. The package targeted the Ethereum cryptocurrency
+  and performed transactions to wallets not controlled by the user. Remove the package
+  from your environment. Ensure no Ethereum funds were compromised."
+date: "2021-09-30"
+pubdate: "2020-09-03"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1272"
+- "https://github.com/advisories/GHSA-gqq4-937c-2282"
+uuid: "52efac67-f417-4530-a5a1-ea8aadf5444b"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

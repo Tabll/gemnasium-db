@@ -1,0 +1,24 @@
+---
+identifier: "GMS-2020-525"
+identifiers:
+- "GHSA-c4fm-46gm-4469"
+- "GMS-2020-525"
+package_slug: "npm/sparkies"
+title: "Malicious Package"
+description: "This package contained malicious code. The package uploaded system information
+  such as OS and hostname to a remote server. Remove the package from your environment.
+  There are no indications of further compromise."
+date: "2021-09-30"
+pubdate: "2020-09-03"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1141"
+- "https://github.com/advisories/GHSA-c4fm-46gm-4469"
+uuid: "9e2b4826-8048-4704-9ad9-8ce0f37db2be"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2021-24"
+identifiers:
+- "GHSA-xh2p-7p87-fhgh"
+- "GMS-2021-24"
+package_slug: "npm/@liquity/contracts"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in @liquity/contracts."
+date: "2021-08-05"
+pubdate: "2021-08-05"
+affected_range: "<=1.0.0"
+fixed_versions: []
+affected_versions: "All versions up to 1.0.0"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/liquity/dev/security/advisories/GHSA-xh2p-7p87-fhgh"
+- "https://github.com/liquity/dev/commit/c69d0bae30b5457e89724d880851a03ba7477905"
+- "https://github.com/liquity/dev/blob/7c83ea11378454629618b3808b16fbfda69ee3e5/packages/contracts/contracts/TroveManager.sol#L722"
+- "https://www.npmjs.com/package/@liquity/contracts"
+- "https://github.com/advisories/GHSA-xh2p-7p87-fhgh"
+uuid: "e3a22247-c598-477e-8ff4-c57ada744deb"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2020-44"
+identifiers:
+- "GHSA-7p6w-x2gr-rrf8"
+- "GMS-2020-44"
+package_slug: "npm/ag-grid-community"
+title: "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+description: "Improper Neutralization of Input During Web Page Generation ('Cross-site
+  Scripting') in ag-grid-community."
+date: "2021-09-27"
+pubdate: "2020-09-02"
+affected_range: "<14.0.0"
+fixed_versions:
+- "14.0.0"
+affected_versions: "All versions before 14.0.0"
+not_impacted: "All versions starting from 14.0.0"
+solution: "Upgrade to version 14.0.0 or above."
+urls:
+- "https://github.com/ag-grid/ag-grid/issues/1961"
+- "https://www.npmjs.com/advisories/894"
+- "https://github.com/advisories/GHSA-7p6w-x2gr-rrf8"
+uuid: "0d100291-78c1-4766-8e18-6e2f3db99d2f"
+cwe_ids:
+- "CWE-1035"
+- "CWE-79"
+- "CWE-937"

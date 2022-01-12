@@ -1,0 +1,24 @@
+---
+identifier: "GMS-2020-160"
+identifiers:
+- "GHSA-c4hh-fg8x-6h9p"
+- "GMS-2020-160"
+package_slug: "npm/buffer-xnr"
+title: "Malicious Package"
+description: " contained malicious code. The package targeted the Ethereum cryptocurrency
+  and performed transactions to wallets not controlled by the user. Remove the package
+  from your environment. Ensure no Ethereum funds were compromised."
+date: "2021-09-29"
+pubdate: "2020-09-03"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1247"
+- "https://github.com/advisories/GHSA-c4hh-fg8x-6h9p"
+uuid: "ef86f30d-2bdc-42e2-8259-0edf73985be9"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

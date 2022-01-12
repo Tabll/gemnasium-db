@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-447"
+identifiers:
+- "GHSA-44vf-8ffm-v2qh"
+- "GMS-2020-447"
+package_slug: "npm/rails-session-decoder"
+title: "Sensitive Data Exposure in rails-session-decoder"
+description: "All versions of `rails-session-decoder` are missing verification of
+  the Message Authentication Code appended to the cookies. This may lead to decryption
+  of cipher text thus exposing encrypted information. No fix is currently available.
+  Consider using an alternative module until a fix is made available."
+date: "2020-09-02"
+pubdate: "2020-09-02"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/753"
+- "https://github.com/advisories/GHSA-44vf-8ffm-v2qh"
+uuid: "468b75a1-95bd-4a53-96b0-167bbf32b881"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

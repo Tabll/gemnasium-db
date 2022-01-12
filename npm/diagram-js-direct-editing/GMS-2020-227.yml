@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2020-227"
+identifiers:
+- "GHSA-j8r2-2x94-2q67"
+- "GMS-2020-227"
+package_slug: "npm/diagram-js-direct-editing"
+title: "Cross-Site Scripting in diagram-js-direct-editing"
+description: "Versions of `diagram-js-direct-editing` are vulnerable to Cross-Site
+  Scripting. The package fails to sanitize input from the clipboard, allowing attackers
+  to execute arbitrary JavaScript in the victim's browser. Upgrade to or later."
+date: "2021-09-28"
+pubdate: "2020-09-11"
+affected_range: "<1.4.3"
+fixed_versions:
+- "1.4.3"
+affected_versions: "All versions before 1.4.3"
+not_impacted: "All versions starting from 1.4.3"
+solution: "Upgrade to version 1.4.3 or above."
+urls:
+- "https://www.npmjs.com/advisories/983"
+- "https://github.com/bpmn-io/diagram-js-direct-editing"
+- "https://github.com/advisories/GHSA-j8r2-2x94-2q67"
+uuid: "1268a258-39db-448e-996f-a9d870ed53a8"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

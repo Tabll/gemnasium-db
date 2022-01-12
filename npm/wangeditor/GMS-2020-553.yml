@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2020-553"
+identifiers:
+- "GHSA-g7mw-5cq6-fv82"
+- "GMS-2020-553"
+package_slug: "npm/wangeditor"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in wangeditor."
+date: "2021-09-27"
+pubdate: "2020-09-02"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/wangfupeng1988/wangEditor/issues/1945"
+- "https://snyk.io/vuln/SNYK-JS-WANGEDITOR-174536"
+- "https://www.npmjs.com/advisories/876"
+- "https://github.com/advisories/GHSA-g7mw-5cq6-fv82"
+uuid: "cb4c04f0-bf0b-4269-aca3-a296eeac0624"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

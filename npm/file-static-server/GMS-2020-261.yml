@@ -1,0 +1,24 @@
+---
+identifier: "GMS-2020-261"
+identifiers:
+- "GHSA-qjfh-xc44-rm9x"
+- "GMS-2020-261"
+package_slug: "npm/file-static-server"
+title: "Relative Path Traversal"
+description: "Relative Path Traversal in file-static-server."
+date: "2021-09-28"
+pubdate: "2020-09-03"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://hackerone.com/reports/310671"
+- "https://www.npmjs.com/advisories/1008"
+- "https://github.com/advisories/GHSA-qjfh-xc44-rm9x"
+uuid: "dee57a35-d39a-42b9-9e62-5d91e274b22e"
+cwe_ids:
+- "CWE-1035"
+- "CWE-352"
+- "CWE-937"

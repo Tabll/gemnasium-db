@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2020-348"
+identifiers:
+- "GHSA-w725-67p7-xv22"
+- "GMS-2020-348"
+package_slug: "npm/local-devices"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in local-devices."
+date: "2021-09-28"
+pubdate: "2020-09-03"
+affected_range: "<3.0.0"
+fixed_versions:
+- "3.0.0"
+affected_versions: "All versions before 3.0.0"
+not_impacted: "All versions starting from 3.0.0"
+solution: "Upgrade to version 3.0.0 or above."
+urls:
+- "https://github.com/DylanPiercey/local-devices/pull/16"
+- "https://www.npmjs.com/advisories/1020"
+- "https://github.com/advisories/GHSA-w725-67p7-xv22"
+uuid: "fcb2bbe7-a0e0-4bdd-ab74-a2eb146aaa78"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

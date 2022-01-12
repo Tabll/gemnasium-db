@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2020-405"
+identifiers:
+- "GHSA-cv3v-7846-6pxm"
+- "GMS-2020-405"
+package_slug: "npm/node-git-server"
+title: "Unauthorized File Access in node-git-server"
+description: "Versions of `node-git-server` are vulnerable to Unauthorized File Access.
+  It is possible to access any git repository by using absolute paths, which may allow
+  attackers to access private repositories. Upgrade to or later."
+date: "2021-09-29"
+pubdate: "2020-09-03"
+affected_range: "<0.6.1"
+fixed_versions:
+- "0.6.1"
+affected_versions: "All versions before 0.6.1"
+not_impacted: "All versions starting from 0.6.1"
+solution: "Upgrade to version 0.6.1 or above."
+urls:
+- "https://github.com/gabrielcsapo/node-git-server/pull/62"
+- "https://www.npmjs.com/advisories/1214"
+- "https://github.com/gabrielcsapo/node-git-server/commit/ac26650f69bc445d71e4f2c55328676d10a4be43"
+- "https://snyk.io/vuln/SNYK-JS-NODEGITSERVER-474343"
+- "https://github.com/advisories/GHSA-cv3v-7846-6pxm"
+uuid: "48db2369-2762-4fbc-8f54-588809bb8999"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

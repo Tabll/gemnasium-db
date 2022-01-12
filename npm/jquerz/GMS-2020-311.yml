@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-311"
+identifiers:
+- "GHSA-c6f3-3c98-2j2f"
+- "GMS-2020-311"
+package_slug: "npm/jquerz"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in jquerz."
+date: "2021-09-30"
+pubdate: "2020-09-02"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/907"
+- "https://github.com/advisories/GHSA-c6f3-3c98-2j2f"
+uuid: "0b802cb2-018b-49f1-b95b-bdc9d195c22f"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

@@ -1,0 +1,30 @@
+---
+identifier: "GMS-2021-87"
+identifiers:
+- "GHSA-3pqh-p72c-fj85"
+- "GMS-2021-87"
+- "CVE-2021-3978"
+package_slug: "go/github.com/cloudflare/cfrpki/cmd/octorpki"
+title: "Improper Preservation of Permissions in github.com/cloudflare/cfrpki/cmd/octorpki"
+description: "### Impact\n\nWhen copying files with rsync, octorpki uses the \"-a\"
+  flag 0, which forces rsync to copy binaries with the suid bit set as root. Since
+  the provided service definition defaults to root (https://github.com/cloudflare/cfrpki/blob/master/package/octorpki.service)
+  this could allow for a vector, when combined with another vulnerability that causes
+  octorpki to process a malicious TAL file, for a local privilege escalation.  \n\n##
+  For more information\n\nIf you have any questions or comments about this advisory
+  email us at security@cloudflare.com"
+date: "2021-11-19"
+pubdate: "2021-11-19"
+affected_range: "<1.4.2"
+fixed_versions:
+- "1.4.2"
+affected_versions: "All versions before 1.4.2"
+not_impacted: "All versions starting from 1.4.2"
+solution: "Upgrade to version 1.4.2 or above."
+urls:
+- "https://github.com/cloudflare/cfrpki/security/advisories/GHSA-3pqh-p72c-fj85"
+- "https://github.com/advisories/GHSA-3pqh-p72c-fj85"
+uuid: "ee11f400-296e-4daf-95dd-ea105a9bd7d3"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

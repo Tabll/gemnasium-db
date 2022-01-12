@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2021-76"
+identifiers:
+- "GHSA-3w6p-8f82-gw8r"
+- "GMS-2021-76"
+package_slug: "maven/ru.yandex.clickhouse/clickhouse-jdbc-bridge"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in ru.yandex.clickhouse:clickhouse-jdbc-bridge."
+date: "2021-12-17"
+pubdate: "2021-12-17"
+affected_range: "(,2.0.7)"
+fixed_versions:
+- "2.0.7"
+affected_versions: "All versions before 2.0.7"
+not_impacted: "All versions starting from 2.0.7"
+solution: "Upgrade to version 2.0.7 or above."
+urls:
+- "https://github.com/ClickHouse/clickhouse-jdbc-bridge/security/advisories/GHSA-3w6p-8f82-gw8r"
+- "https://nvd.nist.gov/vuln/detail/CVE-2021-4104"
+- "https://access.redhat.com/security/cve/CVE-2021-4104"
+- "https://github.com/advisories/GHSA-3w6p-8f82-gw8r"
+uuid: "2e6d81d1-db50-448c-8964-256220c11f90"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

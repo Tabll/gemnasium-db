@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-394"
+identifiers:
+- "GHSA-crr2-ph72-c52g"
+- "GMS-2020-394"
+package_slug: "npm/my-very-own-package"
+title: "Malicious Package"
+description: "All versions of `my-very-own-package` contain malicious code. The package
+  sends the output of `process.versions`, `process.arch` and `process.platform` to
+  a remote server in a postinstall script. Remove the package from your environment.
+  There are no further signs of compromise."
+date: "2021-09-30"
+pubdate: "2020-09-03"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1043"
+- "https://github.com/advisories/GHSA-crr2-ph72-c52g"
+uuid: "6040de76-bba4-4dc6-ad19-2faf7e320e12"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

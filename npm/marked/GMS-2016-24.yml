@@ -6,7 +6,7 @@ description: "Due to the way that marked parses input, specifically HTML entitie
   it's possible to bypass marked's content injection protection (`sanitize: true`)
   to inject a `javascript:` URL. This flaw exists because `&#xNNanything;` gets parsed
   to what it could and leaves the rest behind, resulting in just `anything;` being
-  left. "
+  left."
 date: "2016-04-18"
 pubdate: "2016-04-18"
 affected_range: "<0.3.6"

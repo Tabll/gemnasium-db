@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2021-64"
+identifiers:
+- "GHSA-76f4-fw33-6j2v"
+- "GMS-2021-64"
+package_slug: "maven/com.vaadin/vaadin-bom"
+title: "Potential sensitive data exposure in applications using Vaadin 15"
+description: "Insecure configuration of default `ObjectMapper` in `com.vaadin:flow-server`
+  versions 3.0.0 through 3.0.5 (Vaadin 15.0.0 through 15.0.4) may expose sensitive
+  data if the application also uses e.g. `@RestController`\n\n- https://vaadin.com/security/cve-2020-36319"
+date: "2021-10-08"
+pubdate: "2021-04-19"
+affected_range: "[15.0.0,15.0.5)"
+fixed_versions:
+- "15.0.5"
+affected_versions: "All versions starting from 15.0.0 before 15.0.5"
+not_impacted: "All versions before 15.0.0, all versions starting from 15.0.5"
+solution: "Upgrade to version 15.0.5 or above."
+urls:
+- "https://github.com/vaadin/platform/security/advisories/GHSA-76f4-fw33-6j2v"
+- "https://vaadin.com/security/cve-2020-36319"
+- "https://github.com/advisories/GHSA-76f4-fw33-6j2v"
+uuid: "fd1affe4-d4b5-4793-b026-067ea41501aa"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

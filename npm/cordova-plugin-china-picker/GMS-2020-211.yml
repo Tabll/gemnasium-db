@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2020-211"
+identifiers:
+- "GHSA-x9gm-qxhh-rf75"
+- "GMS-2020-211"
+package_slug: "npm/cordova-plugin-china-picker"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in cordova-plugin-china-picker."
+date: "2021-09-24"
+pubdate: "2020-09-01"
+affected_range: "=1.0.910"
+fixed_versions: []
+affected_versions: "Version 1.0.910"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/622"
+- "https://github.com/advisories/GHSA-x9gm-qxhh-rf75"
+- "https://snyk.io/vuln/SNYK-JS-CORDOVAPLUGINCHINAPICKER-451001"
+uuid: "960a905a-b3ad-4926-a78b-6d28ae582b71"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

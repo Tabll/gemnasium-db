@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2020-121"
+identifiers:
+- "GHSA-rvww-x6m4-4vc2"
+- "GMS-2020-121"
+package_slug: "npm/blubird"
+title: "Malicious Package"
+description: " of `blubird` contains malicious code . The package is malware designed
+  to take advantage of users making a mistake when typing the name of a module to
+  install. Upon require the package attempts to start a cryptocurrency miner using
+  coin-hive. Remove the package from your environment and verify whether your system
+  is running the cryptocurrency miner."
+date: "2021-09-30"
+pubdate: "2020-09-11"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/921"
+- "https://github.com/advisories/GHSA-rvww-x6m4-4vc2"
+uuid: "776b47fb-27fd-4788-9bb3-2a66141a0679"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-132"
+identifiers:
+- "GHSA-vpj4-89q8-rh38"
+- "GMS-2020-132"
+package_slug: "npm/bpmn-js-properties-panel"
+title: "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+description: "Improper Neutralization of Input During Web Page Generation ('Cross-site
+  Scripting') in bpmn-js-properties-panel."
+date: "2021-09-29"
+pubdate: "2020-09-03"
+affected_range: "<0.31.0"
+fixed_versions:
+- "0.31.0"
+affected_versions: "All versions before 0.31.0"
+not_impacted: "All versions starting from 0.31.0"
+solution: "Upgrade to version 0.31.0 or above."
+urls:
+- "https://www.npmjs.com/advisories/1079"
+- "https://github.com/advisories/GHSA-vpj4-89q8-rh38"
+uuid: "630265ba-5928-4936-a3c7-b65d25525a81"
+cwe_ids:
+- "CWE-1035"
+- "CWE-79"
+- "CWE-937"

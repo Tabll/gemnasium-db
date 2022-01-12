@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-503"
+identifiers:
+- "GHSA-59x8-7wx6-4hj9"
+- "GMS-2020-503"
+package_slug: "npm/secure_identity_login_module"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in secure_identity_login_module."
+date: "2021-09-30"
+pubdate: "2020-09-03"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1063"
+- "https://github.com/advisories/GHSA-59x8-7wx6-4hj9"
+uuid: "f71793f8-af8b-4a90-98f0-038f4aa3223c"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

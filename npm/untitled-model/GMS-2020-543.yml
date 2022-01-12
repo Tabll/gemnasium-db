@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2020-543"
+identifiers:
+- "GHSA-hq8g-qq57-5275"
+- "GMS-2020-543"
+package_slug: "npm/untitled-model"
+title: "SQL Injection in untitled-model"
+description: "All versions of `untitled-model` re vulnerable to SQL Injection. Query
+  parameters are not properly sanitized allowing attackers to inject SQL statements
+  and execute arbitrary SQL queries. No fix is currently available. Consider using
+  an alternative package until a fix is made available."
+date: "2021-09-28"
+pubdate: "2020-09-11"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://hackerone.com/reports/507222"
+- "https://www.npmjs.com/advisories/989"
+- "https://github.com/advisories/GHSA-hq8g-qq57-5275"
+uuid: "feea18f0-444a-4cce-a1d3-2aa76bc975f1"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2020-299"
+identifiers:
+- "GHSA-6fcr-9h9g-23fq"
+- "GMS-2020-299"
+package_slug: "npm/ipfs-bitswap"
+title: "Denial of Service in ipfs-bitswap"
+description: "Versions of `ipfs-bitswap` are vulnerable to Denial of Service (DoS).
+  The package put unwanted blocks in the blockstore, which could be used to exhaust
+  system resources in specific conditions. Upgrade to or later."
+date: "2021-09-27"
+pubdate: "2020-09-02"
+affected_range: "<0.24.1"
+fixed_versions:
+- "0.24.1"
+affected_versions: "All versions before 0.24.1"
+not_impacted: "All versions starting from 0.24.1"
+solution: "Upgrade to version 0.24.1 or above."
+urls:
+- "https://github.com/ipfs/js-ipfs-bitswap/pull/194"
+- "https://snyk.io/vuln/SNYK-JS-IPFSBITSWAP-174847"
+- "https://www.npmjs.com/advisories/916"
+- "https://github.com/advisories/GHSA-6fcr-9h9g-23fq"
+uuid: "53625387-500b-4c08-a730-c600159675d2"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-239"
+identifiers:
+- "GHSA-r32x-jhw5-g48p"
+- "GMS-2020-239"
+package_slug: "npm/eco"
+title: "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+description: "Improper Neutralization of Input During Web Page Generation ('Cross-site
+  Scripting') in eco."
+date: "2021-09-28"
+pubdate: "2020-09-03"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/sstephenson/eco/pull/67"
+- "https://www.npmjs.com/advisories/1024"
+- "https://github.com/advisories/GHSA-r32x-jhw5-g48p"
+uuid: "39ad8949-ca1f-4816-85d6-366f3b560ae5"
+cwe_ids:
+- "CWE-1035"
+- "CWE-79"
+- "CWE-937"

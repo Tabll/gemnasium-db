@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2020-53"
+identifiers:
+- "GHSA-w8hg-mxvh-9h57"
+- "GMS-2020-53"
+package_slug: "npm/angular-bmap"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in angular-bmap."
+date: "2021-09-24"
+pubdate: "2020-09-01"
+affected_range: "=0.0.9"
+fixed_versions: []
+affected_versions: "Version 0.0.9"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/614"
+- "https://snyk.io/vuln/SNYK-JS-ANGULARBMAP-451017"
+- "https://github.com/shenfw1987/angular-bmap"
+- "https://github.com/advisories/GHSA-w8hg-mxvh-9h57"
+uuid: "bde936e4-aa74-4610-900b-e051108c78ee"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

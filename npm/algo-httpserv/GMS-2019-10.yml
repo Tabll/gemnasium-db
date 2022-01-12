@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2019-10"
+identifiers:
+- "GHSA-cgjv-rghq-qhgp"
+- "GMS-2019-10"
+package_slug: "npm/algo-httpserv"
+title: "Relative Path Traversal"
+description: "Relative Path Traversal in algo-httpserv."
+date: "2021-08-17"
+pubdate: "2019-09-11"
+affected_range: "<1.1.2"
+fixed_versions:
+- "1.1.2"
+affected_versions: "All versions before 1.1.2"
+not_impacted: "All versions starting from 1.1.2"
+solution: "Upgrade to version 1.1.2 or above."
+urls:
+- "https://github.com/AlgoRythm-Dylan/httpserv/commit/bcfe9d4316c2b59aab3a64a38905376026888735"
+- "https://www.npmjs.com/advisories/889"
+- "https://snyk.io/vuln/SNYK-JS-ALGOHTTPSERV-174741"
+- "https://github.com/advisories/GHSA-cgjv-rghq-qhgp"
+uuid: "24cd1f44-7aec-4e7e-b617-cc7b2c02cdd4"
+cwe_ids:
+- "CWE-1035"
+- "CWE-352"
+- "CWE-937"

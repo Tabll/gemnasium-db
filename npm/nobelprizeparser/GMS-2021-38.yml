@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2021-38"
+identifiers:
+- "GHSA-4wv4-mgfq-598v"
+- "GMS-2021-38"
+package_slug: "npm/nobelprizeparser"
+title: "Code injection in nobelprizeparser"
+description: "Code injection through use of eval."
+date: "2021-03-12"
+pubdate: "2021-03-12"
+affected_range: "<1.0.2"
+fixed_versions:
+- "1.0.2"
+affected_versions: "All versions before 1.0.2"
+not_impacted: "All versions starting from 1.0.2"
+solution: "Upgrade to version 1.0.2 or above."
+urls:
+- "https://github.com/AnneTheDev/nobelprize/security/advisories/GHSA-4wv4-mgfq-598v"
+- "https://github.com/AnneTheDev/nobelprize/commit/00639d375b0efd097bc1eca18d9dc021691b9286"
+- "https://www.npmjs.com/package/nobelprizeparser"
+- "https://github.com/advisories/GHSA-4wv4-mgfq-598v"
+uuid: "1150d15e-899a-4e0e-b7c6-09cb4c5491bf"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

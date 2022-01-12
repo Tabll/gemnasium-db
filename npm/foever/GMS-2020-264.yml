@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-264"
+identifiers:
+- "GHSA-j3qq-qvc8-c6g7"
+- "GMS-2020-264"
+package_slug: "npm/foever"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in foever."
+date: "2021-10-01"
+pubdate: "2020-09-01"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/688"
+- "https://github.com/advisories/GHSA-j3qq-qvc8-c6g7"
+uuid: "c7805ca8-2ef8-4cc4-8cdf-3614baf3537f"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

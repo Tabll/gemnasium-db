@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2020-57"
+identifiers:
+- "GHSA-8rxg-9g6f-vq9p"
+- "GMS-2020-57"
+package_slug: "npm/another-date-range-picker"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in another-date-range-picker."
+date: "2021-09-24"
+pubdate: "2020-09-01"
+affected_range: "=4.1.48"
+fixed_versions: []
+affected_versions: "Version 4.1.48"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/617"
+- "https://github.com/bi-a/mydaterangepicker"
+- "https://github.com/kekeh/mydaterangepicker"
+- "https://snyk.io/vuln/SNYK-JS-ANOTHERDATERANGEPICKER-451011"
+- "https://github.com/advisories/GHSA-8rxg-9g6f-vq9p"
+uuid: "015961a9-d446-4012-a003-31d405de3c39"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

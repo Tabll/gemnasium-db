@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-471"
+identifiers:
+- "GHSA-qj3g-wfr7-3cv7"
+- "GMS-2020-471"
+package_slug: "npm/require-ports"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in require-ports."
+date: "2021-09-30"
+pubdate: "2020-09-02"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/909"
+- "https://github.com/advisories/GHSA-qj3g-wfr7-3cv7"
+uuid: "82316840-bcf7-48fc-bf07-f14ab17aa46b"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

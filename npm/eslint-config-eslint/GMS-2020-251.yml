@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2020-251"
+identifiers:
+- "GHSA-pv55-r6j3-wp94"
+- "GMS-2020-251"
+package_slug: "npm/eslint-config-eslint"
+title: "Malicious Package"
+description: " of `eslint-config-eslint` was published without authorization and was
+  found to contain malicious code. This code would read the users `.npmrc` file and
+  send any found authentication tokens to a remote server. The best course of action
+  if you found this package installed in your environment is to revoke all your npm
+  tokens. You can find instructions on how to do that here. https://docs.npmjs.com/getting-started/working_with_tokens#how-to-revoke-tokens\n"
+date: "2020-09-01"
+pubdate: "2020-09-01"
+affected_range: "=5.0.2"
+fixed_versions: []
+affected_versions: "Version 5.0.2"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/674"
+- "https://github.com/advisories/GHSA-pv55-r6j3-wp94"
+uuid: "85baaa5d-283f-49de-98c5-d9c90c4af3d6"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

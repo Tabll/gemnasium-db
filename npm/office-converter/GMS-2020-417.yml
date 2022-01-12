@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-417"
+identifiers:
+- "GHSA-9p64-h5q4-phpm"
+- "GMS-2020-417"
+package_slug: "npm/office-converter"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in office-converter."
+date: "2021-09-27"
+pubdate: "2020-09-02"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/759"
+- "https://github.com/advisories/GHSA-9p64-h5q4-phpm"
+uuid: "3870adb6-b2f0-40c8-8110-ebf4647885ec"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

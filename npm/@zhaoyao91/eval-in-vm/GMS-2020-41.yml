@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-41"
+identifiers:
+- "GHSA-jp99-5h8w-gmxc"
+- "GMS-2020-41"
+package_slug: "npm/@zhaoyao91/eval-in-vm"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in @zhaoyao91/eval-in-vm."
+date: "2020-09-04"
+pubdate: "2020-09-04"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1320"
+- "https://github.com/advisories/GHSA-jp99-5h8w-gmxc"
+uuid: "5ea6b9a5-f3b9-4228-bd41-a5cf29418653"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2019-12"
+identifiers:
+- "GHSA-87mg-h5r3-hw88"
+- "GMS-2019-12"
+package_slug: "npm/bootbox"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in bootbox."
+date: "2021-09-16"
+pubdate: "2019-05-30"
+affected_range: "<=5.5.2"
+fixed_versions: []
+affected_versions: "All versions up to 5.5.2"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/makeusabrew/bootbox/issues/661"
+- "https://hackerone.com/reports/508446"
+- "https://www.npmjs.com/advisories/882"
+- "https://github.com/advisories/GHSA-87mg-h5r3-hw88"
+uuid: "06f6d66d-33cc-4093-89a1-2edcbb4df124"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2020-363"
+identifiers:
+- "GHSA-cr5w-6rv4-r2qg"
+- "GMS-2020-363"
+package_slug: "npm/maleficent"
+title: "Malicious Package"
+description: "All versions of `maleficent` contain malicious code. The package is
+  a demonstration of possible risks when installing npm packages. It gathers system
+  information such as: environment variables, OS information, network interface, AWS
+  credentials, npm credentials and ssh keys. The package prints the information to
+  a local file but does not upload it to a remote server. \nRemove the package from
+  your environment. There is no further compromise."
+date: "2021-09-30"
+pubdate: "2020-09-03"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/951"
+- "https://github.com/advisories/GHSA-cr5w-6rv4-r2qg"
+uuid: "7761220c-d6ee-4721-b787-9474337b739c"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

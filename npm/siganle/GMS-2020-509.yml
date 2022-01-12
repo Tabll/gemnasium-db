@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2020-509"
+identifiers:
+- "GHSA-p5p2-rhc3-wmf3"
+- "GMS-2020-509"
+package_slug: "npm/siganle"
+title: "Malicious Package"
+description: "All versions of this package contained malware. The package was designed
+  to find and exfiltrate cryptocurrency wallets. Any computer that has this package
+  installed or running should be considered fully compromised. All secrets and keys
+  stored on that computer should be rotated immediately from a different computer.\n\nThe
+  package should be removed, but as full control of the computer may have been given
+  to an outside entity, there is no guarantee that removing the package will remove
+  all malicious software resulting from installing it."
+date: "2021-10-04"
+pubdate: "2020-09-03"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1409"
+- "https://github.com/advisories/GHSA-p5p2-rhc3-wmf3"
+uuid: "e77c4344-dcea-4b07-8b40-29e7d26628c6"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-48"
+identifiers:
+- "GHSA-jfx5-7mr2-g8hg"
+- "GMS-2020-48"
+package_slug: "npm/alico"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in alico."
+date: "2021-09-30"
+pubdate: "2020-09-03"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1047"
+- "https://github.com/advisories/GHSA-jfx5-7mr2-g8hg"
+uuid: "786618e3-6617-474a-8003-0db5c83f76ad"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

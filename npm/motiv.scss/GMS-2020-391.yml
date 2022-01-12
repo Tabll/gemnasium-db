@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2020-391"
+identifiers:
+- "GHSA-2vqq-jgxx-fxjc"
+- "GMS-2020-391"
+package_slug: "npm/motiv.scss"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in motiv.scss."
+date: "2021-09-30"
+pubdate: "2020-09-11"
+affected_range: "=0.4.20"
+fixed_versions:
+- "0.4.21"
+affected_versions: "Version 0.4.20"
+not_impacted: "All versions before 0.4.20, all versions after 0.4.20"
+solution: "Upgrade to version 0.4.21 or above."
+urls:
+- "https://www.npmjs.com/advisories/939"
+- "https://github.com/advisories/GHSA-2vqq-jgxx-fxjc"
+uuid: "97c17434-6031-4de5-b9f4-424e2b704174"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

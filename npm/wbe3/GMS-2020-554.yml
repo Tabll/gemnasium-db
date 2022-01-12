@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2020-554"
+identifiers:
+- "GHSA-hg7w-2pf7-mxm2"
+- "GMS-2020-554"
+package_slug: "npm/wbe3"
+title: "Malicious Package"
+description: "All versions of this package contained malware. The package was designed
+  to find and exfiltrate cryptocurrency wallets. Any computer that has this package
+  installed or running should be considered fully compromised. All secrets and keys
+  stored on that computer should be rotated immediately from a different computer.\n\nThe
+  package should be removed, but as full control of the computer may have been given
+  to an outside entity, there is no guarantee that removing the package will remove
+  all malicious software resulting from installing it."
+date: "2021-10-04"
+pubdate: "2020-09-03"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1414"
+- "https://github.com/advisories/GHSA-hg7w-2pf7-mxm2"
+uuid: "b5838ed6-9a4c-4f60-b6ee-3f32f0b62d27"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

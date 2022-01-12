@@ -1,0 +1,29 @@
+---
+identifier: "GMS-2020-536"
+identifiers:
+- "GHSA-h5vj-f7r9-w564"
+- "GMS-2020-536"
+package_slug: "npm/text-qrcode"
+title: "Entropy Backdoor in text-qrcode"
+description: "All versions of `text-qrcode` contain malicious code that overwrites
+  the `randomBytes` method for the `crypto` module with a function that generates
+  weak entropy. Instead of generating bytes, the infected randomBytes will generate
+  3 bytes of entropy and hash them, resulting in a byte value being returned, but
+  one that is easily guessable. Uninstall `text-qrcode` immediately. If the module
+  was used to generate entropy that is load bearing, all such instances of generated
+  entropy must be replaced. This includes things like bitcoin wallets, private keys,
+  encrypted messages, etc."
+date: "2021-10-01"
+pubdate: "2020-09-01"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/738"
+- "https://github.com/advisories/GHSA-h5vj-f7r9-w564"
+uuid: "2e404bc0-3650-4a9e-8450-1a18540a5108"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

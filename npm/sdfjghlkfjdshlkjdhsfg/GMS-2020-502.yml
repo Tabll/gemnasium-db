@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2020-502"
+identifiers:
+- "GHSA-gcfc-mgg3-8j2c"
+- "GMS-2020-502"
+package_slug: "npm/sdfjghlkfjdshlkjdhsfg"
+title: "Malicious Package"
+description: "All versions of `sdfjghlkfjdshlkjdhsfg` contain malicious code. The
+  package is essentially a worm that fetches all packages owned by the user, adds
+  a script to self-replicate as a preinstall script and publishes a new version. ##
+  Recommendation\n\nRemove the package from your environment and ensure all packages
+  owned were not impacted."
+date: "2021-09-30"
+pubdate: "2020-09-03"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1072"
+- "https://github.com/advisories/GHSA-gcfc-mgg3-8j2c"
+uuid: "b68f23b1-bdfc-49ae-bd2c-5ddeaf259887"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

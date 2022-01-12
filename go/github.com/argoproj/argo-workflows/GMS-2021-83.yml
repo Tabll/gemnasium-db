@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2021-83"
+identifiers:
+- "GHSA-rc7p-gmvh-xfx2"
+- "GMS-2021-83"
+package_slug: "go/github.com/argoproj/argo-workflows"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in github.com/argoproj/argo-workflows."
+date: "2021-08-02"
+pubdate: "2021-08-02"
+affected_range: "<3.0.0"
+fixed_versions:
+- "3.0.0"
+affected_versions: "All versions before 3.0.0"
+not_impacted: ""
+solution: "Upgrade to version 3.0.0 or above."
+urls:
+- "https://github.com/argoproj/argo-workflows/security/advisories/GHSA-rc7p-gmvh-xfx2"
+- "https://github.com/advisories/GHSA-rc7p-gmvh-xfx2"
+uuid: "c45f8ab0-3052-4eda-bd23-5f2311b17beb"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

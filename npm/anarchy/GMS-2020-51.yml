@@ -1,0 +1,23 @@
+---
+identifier: "GMS-2020-51"
+identifiers:
+- "GHSA-jjhg-qw5v-r8xx"
+- "GMS-2020-51"
+package_slug: "npm/anarchy"
+title: "Malicious Package"
+description: "All versions of `anarchy` contain malicious code. The package ran `rm
+  - rf /` as an install script. Remove the package from your environment."
+date: "2021-09-30"
+pubdate: "2020-09-03"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1089"
+- "https://github.com/advisories/GHSA-jjhg-qw5v-r8xx"
+uuid: "ee29907d-6820-4638-bc64-c6fa33c2fe11"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

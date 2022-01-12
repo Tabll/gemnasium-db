@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-383"
+identifiers:
+- "GHSA-94m7-w873-6wwf"
+- "GMS-2020-383"
+package_slug: "npm/modlibrary"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in modlibrary."
+date: "2020-09-01"
+pubdate: "2020-09-01"
+affected_range: "=0.1.1"
+fixed_versions: []
+affected_versions: "Version 0.1.1"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/631"
+- "https://github.com/advisories/GHSA-94m7-w873-6wwf"
+uuid: "447484a8-fcc5-44ee-adab-094155520ce1"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

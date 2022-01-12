@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2020-398"
+identifiers:
+- "GHSA-28xx-8j99-m32j"
+- "GMS-2020-398"
+package_slug: "npm/nginxbeautifier"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in nginxbeautifier."
+date: "2021-10-01"
+pubdate: "2020-09-01"
+affected_range: "=1.0.14"
+fixed_versions:
+- "1.0.15"
+affected_versions: "Version 1.0.14"
+not_impacted: "All versions before 1.0.14, all versions after 1.0.14"
+solution: "Upgrade to version 1.0.15 or above."
+urls:
+- "https://www.npmjs.com/advisories/639"
+- "https://github.com/advisories/GHSA-28xx-8j99-m32j"
+uuid: "7a18d177-7e2d-4a4c-8241-0f0b5bdd2527"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

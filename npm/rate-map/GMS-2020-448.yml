@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-448"
+identifiers:
+- "GHSA-x48m-gp6r-gp4v"
+- "GMS-2020-448"
+package_slug: "npm/rate-map"
+title: "Malicious Package"
+description: " of `rate-map` contains malicious code. The malware breaks functionality
+  of the `purescript-installer` package by rewriting code of the `dl-tar` dependency.
+  ## Recommendation\n\n There is no indication of further compromise."
+date: "2021-09-30"
+pubdate: "2020-09-03"
+affected_range: "=1.0.3"
+fixed_versions:
+- "1.0.5"
+affected_versions: "Version 1.0.3"
+not_impacted: "All versions before 1.0.3, all versions after 1.0.3"
+solution: "Upgrade to version 1.0.5 or above."
+urls:
+- "https://www.npmjs.com/advisories/1083"
+- "https://github.com/advisories/GHSA-x48m-gp6r-gp4v"
+uuid: "439d7e39-9af7-48fa-9d77-8fa74d9848d0"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

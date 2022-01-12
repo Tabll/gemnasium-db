@@ -1,0 +1,30 @@
+---
+identifier: "GMS-2018-38"
+identifiers:
+- "GHSA-cgpw-2gph-2r9g"
+- "GMS-2018-38"
+package_slug: "nuget/Microsoft.AspNetCore.Server.Kestrel.Core"
+title: "Moderate severity vulnerability that affects Microsoft.AspNetCore.All, Microsoft.AspNetCore.App,
+  and Microsoft.AspNetCore.Server.Kestrel.Core"
+description: "Microsoft is aware of a denial of service vulnerability in ASP.NET Core
+  when a malformed request is terminated. An attacker who successfully exploited this
+  vulnerability could cause a denial of service attack.\n\nThe update addresses the
+  vulnerability by correcting how ASP.NET Core handles such requests.\n"
+date: "2021-12-03"
+pubdate: "2018-10-16"
+affected_range: "[2.0.0,2.0.4),[2.1.0,2.1.2)"
+fixed_versions:
+- "2.0.4"
+- "2.1.2"
+affected_versions: "All versions starting from 2.0.0 before 2.0.4, all versions starting
+  from 2.1.0 before 2.1.2"
+not_impacted: "All versions before 2.0.0, all versions starting from 2.0.4 before
+  2.1.0, all versions starting from 2.1.2"
+solution: "Upgrade to versions 2.0.4, 2.1.2 or above."
+urls:
+- "https://github.com/aspnet/Announcements/issues/311"
+- "https://github.com/advisories/GHSA-cgpw-2gph-2r9g"
+uuid: "c56356a9-6e00-4a9b-ad61-f9bd6530033e"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-302"
+identifiers:
+- "GHSA-9cq4-mhmr-84gm"
+- "GMS-2020-302"
+package_slug: "npm/jasmin"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in jasmin."
+date: "2020-09-01"
+pubdate: "2020-09-01"
+affected_range: "=0.0.3"
+fixed_versions: []
+affected_versions: "Version 0.0.3"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/629"
+- "https://github.com/advisories/GHSA-9cq4-mhmr-84gm"
+uuid: "80615418-49a7-48a0-809c-42f45e7d3bfd"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

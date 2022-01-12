@@ -1,0 +1,29 @@
+---
+identifier: "GMS-2020-56"
+identifiers:
+- "GHSA-2p62-c4rm-mr72"
+- "GMS-2020-56"
+package_slug: "npm/another-date-picker"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in another-date-picker."
+date: "2021-09-24"
+pubdate: "2020-09-01"
+affected_range: "=2.0.43"
+fixed_versions:
+- "2.0.45"
+affected_versions: "Version 2.0.43"
+not_impacted: "All versions before 2.0.43, all versions after 2.0.43"
+solution: "Upgrade to version 2.0.45 or above."
+urls:
+- "https://www.npmjs.com/advisories/616"
+- "https://github.com/bi-a/mydatepicker"
+- "https://github.com/kekeh/mydatepicker"
+- "https://snyk.io/vuln/SNYK-JS-ANOTHERDATEPICKER-451013"
+- "https://github.com/advisories/GHSA-2p62-c4rm-mr72"
+uuid: "48810b3a-d43b-4996-8a9d-5b01a11d4bf9"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

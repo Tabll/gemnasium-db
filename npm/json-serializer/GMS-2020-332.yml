@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2020-332"
+identifiers:
+- "GHSA-7xfq-xh6v-4mrm"
+- "GMS-2020-332"
+package_slug: "npm/json-serializer"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in json-serializer."
+date: "2021-10-01"
+pubdate: "2020-09-01"
+affected_range: "=2.0.10"
+fixed_versions:
+- "2.0.11"
+affected_versions: "Version 2.0.10"
+not_impacted: "All versions before 2.0.10, all versions after 2.0.10"
+solution: "Upgrade to version 2.0.11 or above."
+urls:
+- "https://www.npmjs.com/advisories/630"
+- "https://github.com/advisories/GHSA-7xfq-xh6v-4mrm"
+uuid: "a3dd1399-3494-4a1a-a883-c53125f535e0"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

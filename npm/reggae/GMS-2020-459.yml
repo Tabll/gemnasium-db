@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2020-459"
+identifiers:
+- "GHSA-q9wr-gcjc-hq52"
+- "GMS-2020-459"
+package_slug: "npm/reggae"
+title: "Prototype Pollution in reggae"
+description: "All versions of `reggae` are vulnerable to prototype pollution. The
+  function `set` does not restrict the modification of an Object's prototype, which
+  may allow a malicious to add or modify an existing property that will exist on all
+  objects. \n\nNo fix is currently available. Consider using an alternative package
+  until a fix is made available."
+date: "2021-10-01"
+pubdate: "2020-09-04"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1331"
+- "https://github.com/advisories/GHSA-q9wr-gcjc-hq52"
+uuid: "8cd31c72-3fc1-4822-992f-24dc6c631a67"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

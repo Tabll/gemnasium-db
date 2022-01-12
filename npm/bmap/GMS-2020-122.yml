@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-122"
+identifiers:
+- "GHSA-p59g-6cqr-m73w"
+- "GMS-2020-122"
+package_slug: "npm/bmap"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in bmap."
+date: "2021-09-29"
+pubdate: "2020-09-03"
+affected_range: "=1.0.3"
+fixed_versions: []
+affected_versions: "Version 1.0.3"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1192"
+- "https://github.com/advisories/GHSA-p59g-6cqr-m73w"
+uuid: "f29089fe-5ca0-4fbc-a6f0-7476df8c035b"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

@@ -1,0 +1,39 @@
+---
+identifier: "GMS-2019-56"
+identifiers:
+- "GHSA-9mrq-cjgh-32g2"
+- "GMS-2019-56"
+package_slug: "npm/smartbanner.js"
+title: "Low severity vulnerability that affects smartbanner.js"
+description: "## rel noopener vulnerability\n\n### Impact\nClicking on smartbanner
+  _View_ link and navigating to 3rd party page leaves `window.opener` exposed. It
+  may allow hostile 3rd parties to abuse `window.opener`, e.g. by redirection or injection
+  on the original page with smartbanner.\n\n### Patches\n`rel=\"noopener\"` is automatically
+  populated to links as of `v1.14.1` which is a recommended upgrade to resolve the
+  vulnerability.\n\n### Workarounds\nIf you can not upgrade to `v1.14.1`:\n1. Ensure
+  _View_ link is only taking users to App Store or Google Play Store where security
+  is guarded by respective app store security teams\n2. If _View_ link is going to
+  a 3rd party page, limit smartbanner.js to be used on iOS that decreases the scope
+  of the vulnerability since as of Safari, `rel=\"noopener\"` is imposed on all `target=\"_blank\"`
+  links.\n\n Following combination of smartbanner meta tags can be used to achieve
+  the above:\n\n ```html\n <meta name=\"smartbanner:enabled-platforms\" content=\"none\">\n
+  <meta name=\"smartbanner:include-user-agent-regex\" content=\"Mobile.*Safari\">\n
+  ```\n\n### References\n* [About rel=noopener](https://mathiasbynens.github.io/rel-noopener/)\n*
+  [Safari Release Notes](https://developer.apple.com/documentation/safari_release_notes/safari_12_1_release_notes#3130296)\n\n###
+  For more information\nIf you have any questions or comments about this advisory:\n*
+  Open an issue in [smartbanner.js](https://github.com/ain/smartbanner.js/issues/new)\n"
+date: "2021-12-03"
+pubdate: "2019-09-13"
+affected_range: "<1.14.1"
+fixed_versions:
+- "1.14.1"
+affected_versions: "All versions before 1.14.1"
+not_impacted: "All versions starting from 1.14.1"
+solution: "Upgrade to version 1.14.1 or above."
+urls:
+- "https://github.com/ain/smartbanner.js/security/advisories/GHSA-9mrq-cjgh-32g2"
+- "https://github.com/advisories/GHSA-9mrq-cjgh-32g2"
+uuid: "e2198156-8410-455f-bc00-d2bb0624a42b"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

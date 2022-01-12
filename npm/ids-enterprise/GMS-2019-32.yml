@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2019-32"
+identifiers:
+- "GHSA-crfx-5phg-hmw9"
+- "GMS-2019-32"
+package_slug: "npm/ids-enterprise"
+title: "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+description: "Improper Neutralization of Input During Web Page Generation ('Cross-site
+  Scripting') in ids-enterprise."
+date: "2021-08-04"
+pubdate: "2019-06-13"
+affected_range: "<4.18.2"
+fixed_versions:
+- "4.18.2"
+affected_versions: "All versions before 4.18.2"
+not_impacted: "All versions starting from 4.18.2"
+solution: "Upgrade to version 4.18.2 or above."
+urls:
+- "https://github.com/infor-design/enterprise-ng/issues/502"
+- "https://github.com/infor-design/enterprise/commit/ce7b335bb614a6720867abf5b8eb351deb13aed1"
+- "https://www.npmjs.com/advisories/955"
+- "https://github.com/advisories/GHSA-crfx-5phg-hmw9"
+uuid: "6d5a0ee8-56cd-4ca2-8843-fb922ff543b3"
+cwe_ids:
+- "CWE-1035"
+- "CWE-79"
+- "CWE-937"

@@ -1,0 +1,29 @@
+---
+identifier: "GMS-2022-9"
+identifiers:
+- "GHSA-gp6j-vx54-5pmf"
+- "GMS-2022-9"
+package_slug: "go/github.com/keep-network/keep-ecdsa"
+title: "Incorrect validation of parties IDs leaks secret keys in Secret-sharing scheme"
+description: "In the threshold signature scheme, participants start by
+  dividing secrets into shares using a secret sharing scheme. The Verifiable Secret
+  Sharing scheme generates shares from the user’s IDs but does not properly validate
+  them. Using a malicious ID will make other users reveal their secrets during the
+  secret-sharing procedure. In addition, a second issue resulting from lack of validation
+  could cause nodes to crash when sent maliciously formed user IDs."
+date: "2022-01-06"
+pubdate: "2022-01-06"
+affected_range: "<1.8.1"
+fixed_versions:
+- "1.8.1"
+affected_versions: "All versions before 1.8.1"
+not_impacted: "All versions starting from 1.8.1"
+solution: "Upgrade to version 1.8.1 or above."
+urls:
+- "https://github.com/keep-network/keep-ecdsa/security/advisories/GHSA-gp6j-vx54-5pmf"
+- "https://github.com/keep-network/keep-ecdsa/releases/tag/v1.8.1"
+- "https://github.com/advisories/GHSA-gp6j-vx54-5pmf"
+uuid: "ec003a33-a979-400d-abe6-918fbb425035"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

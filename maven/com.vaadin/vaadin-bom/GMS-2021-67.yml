@@ -1,0 +1,30 @@
+---
+identifier: "GMS-2021-67"
+identifiers:
+- "GHSA-c6c4-7x48-4cqp"
+- "GMS-2021-67"
+package_slug: "maven/com.vaadin/vaadin-bom"
+title: "Cross-Site Request Forgery (CSRF)"
+description: "Cross-Site Request Forgery (CSRF) in com.vaadin:vaadin-bom."
+date: "2021-10-08"
+pubdate: "2021-04-19"
+affected_range: "[10.0.0,10.0.17),[11.0.0,14.4.7),[15.0.0,18.0.6)"
+fixed_versions:
+- "10.0.17"
+- "14.4.7"
+- "18.0.6"
+affected_versions: "All versions starting from 10.0.0 before 10.0.17, all versions
+  starting from 11.0.0 before 14.4.7, all versions starting from 15.0.0 before 18.0.6"
+not_impacted: "All versions before 10.0.0, all versions starting from 10.0.17 before
+  11.0.0, all versions starting from 14.4.7 before 15.0.0, all versions starting from
+  18.0.6"
+solution: "Upgrade to versions 10.0.17, 14.4.7, 18.0.6 or above."
+urls:
+- "https://github.com/vaadin/platform/security/advisories/GHSA-c6c4-7x48-4cqp"
+- "https://vaadin.com/security/cve-2021-31404"
+- "https://github.com/advisories/GHSA-c6c4-7x48-4cqp"
+uuid: "1efaf75b-33c0-4e7a-b742-939a06eb81bb"
+cwe_ids:
+- "CWE-1035"
+- "CWE-352"
+- "CWE-937"

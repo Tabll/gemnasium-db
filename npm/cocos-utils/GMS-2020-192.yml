@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-192"
+identifiers:
+- "GHSA-rffp-mc78-wjf7"
+- "GMS-2020-192"
+package_slug: "npm/cocos-utils"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in cocos-utils."
+date: "2021-09-27"
+pubdate: "2020-09-02"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/829"
+- "https://github.com/advisories/GHSA-rffp-mc78-wjf7"
+uuid: "2587b0c3-2bcd-444e-855f-f72684bced16"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

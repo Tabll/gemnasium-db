@@ -1,0 +1,24 @@
+---
+identifier: "GMS-2021-56"
+identifiers:
+- "GHSA-3pcr-4982-548m"
+- "GMS-2021-56"
+package_slug: "packagist/shopware/production"
+title: "Exposure of .env if project root is configured as web root in shopware/production"
+description: "The .env and other sensitive files can be leaked if the
+  project root and not `/public` is configured as the web root."
+date: "2021-04-13"
+pubdate: "2021-04-13"
+affected_range: "<=6.3.5.2"
+fixed_versions:
+- "6.3.5.3"
+affected_versions: "All versions up to 6.3.5.2"
+not_impacted: "All versions after 6.3.5.2"
+solution: "Upgrade to version 6.3.5.3 or above."
+urls:
+- "https://github.com/shopware/platform/security/advisories/GHSA-3pcr-4982-548m"
+- "https://github.com/advisories/GHSA-3pcr-4982-548m"
+uuid: "46b379bc-f693-4fcc-943f-6c434061d4b3"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

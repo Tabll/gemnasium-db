@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2019-16"
+identifiers:
+- "GHSA-m8fw-534v-xm85"
+- "GMS-2019-16"
+package_slug: "npm/cloudcmd"
+title: "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+description: "Improper Neutralization of Input During Web Page Generation ('Cross-site
+  Scripting') in cloudcmd."
+date: "2021-08-04"
+pubdate: "2019-06-04"
+affected_range: "<9.1.6"
+fixed_versions:
+- "9.1.6"
+affected_versions: "All versions before 9.1.6"
+not_impacted: "All versions starting from 9.1.6"
+solution: "Upgrade to version 9.1.6 or above."
+urls:
+- "https://github.com/coderaiser/cloudcmd/commit/23f4d4702cd3d473977285f26ea2ae7206b45f38"
+- "https://hackerone.com/reports/341044"
+- "https://hackerone.com/reports/341044)"
+- "https://www.npmjs.com/advisories/642"
+- "https://github.com/advisories/GHSA-m8fw-534v-xm85"
+uuid: "82ec2339-b865-4097-95c5-bb557092c9de"
+cwe_ids:
+- "CWE-1035"
+- "CWE-79"
+- "CWE-937"

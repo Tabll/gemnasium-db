@@ -6,7 +6,7 @@ description: "The airbrake module defaults to sending environment variables over
   Environment variables can often times contain secret keys and other sensitive values.
   A malicious user could be on the same network as a regular user and intercept all
   the secret keys the user is sending. This goes against common best practice, which
-  is to use HTTPS. "
+  is to use HTTPS."
 date: "2016-03-28"
 pubdate: "2016-03-28"
 affected_range: "<=0.3.8"

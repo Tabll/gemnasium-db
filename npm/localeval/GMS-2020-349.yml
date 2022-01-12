@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-349"
+identifiers:
+- "GHSA-mmqv-m45h-q2hp"
+- "GMS-2020-349"
+package_slug: "npm/localeval"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in localeval."
+date: "2020-09-04"
+pubdate: "2020-09-04"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1340"
+- "https://github.com/advisories/GHSA-mmqv-m45h-q2hp"
+uuid: "56bbdf06-d489-4031-bf24-517ea1267d84"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

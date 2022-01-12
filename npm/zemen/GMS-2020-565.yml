@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2020-565"
+identifiers:
+- "GHSA-377f-vvrc-9wgg"
+- "GMS-2020-565"
+package_slug: "npm/zemen"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in zemen."
+date: "2021-09-30"
+pubdate: "2020-09-03"
+affected_range: "=0.0.5"
+fixed_versions:
+- "0.0.6"
+affected_versions: "Version 0.0.5"
+not_impacted: "All versions before 0.0.5, all versions after 0.0.5"
+solution: "Upgrade to version 0.0.6 or above."
+urls:
+- "https://www.npmjs.com/advisories/1101"
+- "https://github.com/advisories/GHSA-377f-vvrc-9wgg"
+uuid: "b7b4b49d-bbd5-4169-a50b-ae14a0b49acd"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

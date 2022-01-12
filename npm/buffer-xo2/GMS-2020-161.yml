@@ -1,0 +1,24 @@
+---
+identifier: "GMS-2020-161"
+identifiers:
+- "GHSA-f72h-wf57-7xwh"
+- "GMS-2020-161"
+package_slug: "npm/buffer-xo2"
+title: "Malicious Package"
+description: " contained malicious code. The package targeted the Ethereum cryptocurrency
+  and performed transactions to wallets not controlled by the user. Remove the package
+  from your environment. Ensure no Ethereum funds were compromised."
+date: "2021-09-29"
+pubdate: "2020-09-03"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1248"
+- "https://github.com/advisories/GHSA-f72h-wf57-7xwh"
+uuid: "dd272cb1-e5ce-4450-b7c2-58043593e6eb"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

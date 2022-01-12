@@ -1,0 +1,39 @@
+---
+identifier: "GMS-2022-3"
+identifiers:
+- "GHSA-c6fg-99pr-25m9"
+- "GMS-2022-3"
+package_slug: "packagist/pocketmine/pocketmine-mp"
+title: "Uncapped length of skin data fields submitted by players"
+description: "### Impact\nSome skin data fields (e.g. skinID, geometryName) are not
+  capped in length. These fields are typically saved in the NBT data of a player when
+  the player quits the server, or during an autosave.\n\nThis is problematic due to
+  the 32767 byte limit on `TAG_String`s. If any of these fields exceeds 32767 bytes,
+  an exception will be thrown during data saving, which will cause the server to crash.\n\nOther
+  fields (such as skinGeometryData) are also uncapped, but those have a much larger
+  2 GB length limit, so this is not a concern for those, particularly considering
+  the decompressed packet size limit of 2 MB.\n\n### Patches\nPM3: 958a9dbf0fe3131ab60319c5a939f5dfbfe5dfbb\nPM4:
+  6492cac5c10f9fa8443ceddd2191a7b65b73f601\n\n### Workarounds\nA plugin may check
+  player skins during `PlayerLoginEvent` and `PlayerSkinChangeEvent` and ensure that
+  the offending fields are not larger than 32767 bytes.\n\n### For more information\nIf
+  you have any questions or comments about this advisory:\n* Email us at [team@pmmp.io](mailto:team@pmmp.io)\n"
+date: "2022-01-06"
+pubdate: "2022-01-06"
+affected_range: "<3.26.5||>=4.0.0,<4.0.5"
+fixed_versions:
+- "3.26.5"
+- "4.0.5"
+affected_versions: "All versions before 3.26.5, all versions starting from 4.0.0 before
+  4.0.5"
+not_impacted: "All versions starting from 3.26.5 before 4.0.0, all versions starting
+  from 4.0.5"
+solution: "Upgrade to versions 3.26.5, 4.0.5 or above."
+urls:
+- "https://github.com/pmmp/PocketMine-MP/security/advisories/GHSA-c6fg-99pr-25m9"
+- "https://github.com/pmmp/PocketMine-MP/commit/6492cac5c10f9fa8443ceddd2191a7b65b73f601"
+- "https://github.com/pmmp/PocketMine-MP/commit/958a9dbf0fe3131ab60319c5a939f5dfbfe5dfbb"
+- "https://github.com/advisories/GHSA-c6fg-99pr-25m9"
+uuid: "037aaeab-a3e0-4cef-ae78-a8f620ba107b"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2020-487"
+identifiers:
+- "GHSA-277p-xwpp-3jf7"
+- "GMS-2020-487"
+package_slug: "npm/rrgod"
+title: "Malicious Package"
+description: "All versions of `rrgod` are considered malicious. The package is malware
+  designed to run arbitrary scripts. When installed, the package downloads an arbitrary
+  file and executes its contents as a pre, post and install scripts. This package
+  is not available on the npm Registry anymore. If you happen to find this package
+  in your environment you should consider the system it was installed on compromised
+  and assess if further response (such as rotating all credentials found on the compromised
+  machine) is necessary.\n"
+date: "2021-10-01"
+pubdate: "2020-09-02"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/764"
+- "https://github.com/advisories/GHSA-277p-xwpp-3jf7"
+uuid: "a5544a39-c2c1-4f6d-8b0a-00e233eea541"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

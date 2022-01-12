@@ -1,0 +1,24 @@
+---
+identifier: "GMS-2020-149"
+identifiers:
+- "GHSA-f64g-whxf-w8f2"
+- "GMS-2020-149"
+package_slug: "npm/buffar-xor"
+title: "Malicious Package"
+description: " contained malicious code. The package targeted the Ethereum cryptocurrency
+  and performed transactions to wallets not controlled by the user. Remove the package
+  from your environment. Ensure no Ethereum funds were compromised."
+date: "2021-09-29"
+pubdate: "2020-09-03"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1236"
+- "https://github.com/advisories/GHSA-f64g-whxf-w8f2"
+uuid: "f512b12a-45ef-418f-989f-d7530ba486ee"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

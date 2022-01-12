@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2021-27"
+identifiers:
+- "GHSA-q4h9-46xg-m3x9"
+- "GMS-2021-27"
+package_slug: "npm/@openzeppelin/contracts-upgradeable"
+title: "UUPSUpgradeable vulnerability in @openzeppelin/contracts-upgradeable"
+description: "Upgradeable contracts using `UUPSUpgradeable` may be vulnerable to an
+  attack affecting uninitialized implementation contracts. We will update this advisory
+  with more information soon."
+date: "2021-09-15"
+pubdate: "2021-09-15"
+affected_range: ">=4.1.0 <4.3.2"
+fixed_versions:
+- "4.3.2"
+affected_versions: "All versions starting from 4.1.0 before 4.3.2"
+not_impacted: "All versions before 4.1.0, all versions starting from 4.3.2"
+solution: "Upgrade to version 4.3.2 or above."
+urls:
+- "https://github.com/OpenZeppelin/openzeppelin-contracts-upgradeable/security/advisories/GHSA-q4h9-46xg-m3x9"
+- "https://github.com/advisories/GHSA-q4h9-46xg-m3x9"
+uuid: "aba348fa-c7f7-4c0e-a2b3-b1186da27e53"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

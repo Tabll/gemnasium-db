@@ -1,0 +1,24 @@
+---
+identifier: "GMS-2020-174"
+identifiers:
+- "GHSA-wv39-cgmm-cq29"
+- "GMS-2020-174"
+package_slug: "npm/buffmr-xor"
+title: "Malicious Package"
+description: " contained malicious code. The package targeted the Ethereum cryptocurrency
+  and performed transactions to wallets not controlled by the user. Remove the package
+  from your environment. Ensure no Ethereum funds were compromised."
+date: "2021-09-29"
+pubdate: "2020-09-03"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1261"
+- "https://github.com/advisories/GHSA-wv39-cgmm-cq29"
+uuid: "da333b06-d2fa-4f33-aa5f-1e3dc6127d6e"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

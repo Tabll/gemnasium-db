@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-423"
+identifiers:
+- "GHSA-q643-w9jp-q2qg"
+- "GMS-2020-423"
+package_slug: "npm/parsel"
+title: "Hardcoded Initialization Vector in parsel"
+description: "All versions of `parsel` have a default hardcoded initialization vector.
+  In cases where the IV is not provided, the package defaults to a hardcoded IV which
+  renders the cipher vulnerable to chosen plaintext attacks. The package is deprecated
+  and will not be updated. Consider using an alternative package."
+date: "2020-09-04"
+pubdate: "2020-09-04"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1460"
+- "https://github.com/advisories/GHSA-q643-w9jp-q2qg"
+uuid: "50983ab5-8865-4e0c-965a-da2a0f824a58"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2020-33"
+identifiers:
+- "GHSA-c82c-8pjw-6829"
+- "GMS-2020-33"
+package_slug: "npm/@impala/bmap"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in @impala/bmap."
+date: "2021-09-24"
+pubdate: "2020-09-01"
+affected_range: "=1.0.3"
+fixed_versions: []
+affected_versions: "Version 1.0.3"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/613"
+- "https://github.com/advisories/GHSA-c82c-8pjw-6829"
+- "https://snyk.io/vuln/SNYK-JS-IMPALABMAP-451019"
+uuid: "b9301b56-1456-4a49-a762-0544c588ee9c"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

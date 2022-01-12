@@ -1,0 +1,24 @@
+---
+identifier: "GMS-2020-504"
+identifiers:
+- "GHSA-p9vv-3945-x93h"
+- "GMS-2020-504"
+package_slug: "npm/semantic-ui-search"
+title: "Improper Neutralization"
+description: "Improper Neutralization in semantic-ui-search."
+date: "2021-09-27"
+pubdate: "2020-09-02"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/Semantic-Org/Semantic-UI/issues/4498"
+- "https://www.npmjs.com/advisories/760"
+- "https://github.com/advisories/GHSA-p9vv-3945-x93h"
+uuid: "4321a682-9326-4f2d-af9f-4aa1c9731bf4"
+cwe_ids:
+- "CWE-1035"
+- "CWE-707"
+- "CWE-937"

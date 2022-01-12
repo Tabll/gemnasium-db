@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2019-53"
+identifiers:
+- "GHSA-5w65-6875-rhq8"
+- "GMS-2019-53"
+package_slug: "npm/sailsjs-cacheman"
+title: "Undefined Behavior in sailsjs-cacheman"
+description: "All versions of `sailsjs-cacheman` have a vulnerability that may lead
+  to Undefined Behavior. The config variable is exposing to the global scope which
+  may overwrite other variables and cause the application to misbehave. No fix is
+  currently available. Consider using an alternative module until a fix is made available."
+date: "2021-09-21"
+pubdate: "2019-09-11"
+affected_range: "<=1.0.0"
+fixed_versions: []
+affected_versions: "All versions up to 1.0.0"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/gayanhewa/sailsjs-cacheman/pull/10"
+- "https://github.com/gayanhewa/sailsjs-cacheman/commit/4a456f44141ae2d5aed8cb32a82063356dcc318f"
+- "https://www.npmjs.com/advisories/752"
+- "https://github.com/advisories/GHSA-5w65-6875-rhq8"
+uuid: "0afbe870-e94d-4b14-8545-5297f73bd5ca"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

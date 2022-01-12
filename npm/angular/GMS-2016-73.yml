@@ -2,11 +2,11 @@
 identifier: "GMS-2016-73"
 package_slug: "npm/angular"
 title: "Bypass CSP protection"
-description: "Extension URIs (`resource://...`) bypass ``Content-Security-Policy``
+description: "Extension URIs (`resource://...`) bypass ````Content-Security-Policy````
   in Chrome and Firefox and can always be loaded. Now if a site already has a XSS
   bug, and uses CSP to protect itself, but the user has an extension installed that
   uses Angular, an attacked can load Angular from the extension, and Angular's auto-bootstrapping
-  can be used to bypass the victim site's CSP protection. "
+  can be used to bypass the victim site's CSP protection."
 date: "2016-10-19"
 pubdate: "2016-10-19"
 affected_range: "<1.5.9"

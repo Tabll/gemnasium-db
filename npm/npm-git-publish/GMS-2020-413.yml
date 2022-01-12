@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2020-413"
+identifiers:
+- "GHSA-49mg-94fc-2fx6"
+- "GMS-2020-413"
+package_slug: "npm/npm-git-publish"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in npm-git-publish."
+date: "2021-10-04"
+pubdate: "2020-09-04"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://hackerone.com/reports/730121"
+- "https://www.npmjs.com/advisories/1458"
+- "https://github.com/advisories/GHSA-49mg-94fc-2fx6"
+uuid: "19dcb185-dd70-4183-9074-22df5fcac664"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

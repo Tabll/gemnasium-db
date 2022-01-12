@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2019-64"
+identifiers:
+- "GHSA-86p3-4gfq-38f2"
+- "GMS-2019-64"
+package_slug: "npm/url-relative"
+title: "Denial of Service in url-relative"
+description: "All versions of `url-relative` are vulnerable to Denial of Service.
+  If the values `to` and `from` are equal, the function hangs and never returns. This
+  may cause a Denial of Service. No fix is currently available. Consider using an
+  alternative module until a fix is made available."
+date: "2021-08-04"
+pubdate: "2019-06-05"
+affected_range: "<=1.0.0"
+fixed_versions: []
+affected_versions: "All versions up to 1.0.0"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/junosuarez/url-relative/issues/3"
+- "https://www.npmjs.com/advisories/783"
+- "https://snyk.io/vuln/SNYK-JS-URLRELATIVE-173691"
+- "https://github.com/advisories/GHSA-86p3-4gfq-38f2"
+uuid: "c4a23ab8-76f0-4a49-9a7d-ab7338c6cd17"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

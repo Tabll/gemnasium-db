@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2020-377"
+identifiers:
+- "GHSA-3f95-w5h5-fq86"
+- "GMS-2020-377"
+package_slug: "npm/mergify"
+title: "Prototype Pollution in mergify"
+description: "All versions of `mergify` are vulnerable to Prototype Pollution. The
+  `mergify()` function allows attackers to modify the prototype of Object causing
+  the addition or modification of an existing property that will exist on all objects.
+  \n\n## Recommendation\n\nNo fix is currently available. Consider using an alternative
+  module as the package is deprecated."
+date: "2021-09-28"
+pubdate: "2020-09-11"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://hackerone.com/reports/439098"
+- "https://www.npmjs.com/advisories/995"
+- "https://github.com/advisories/GHSA-3f95-w5h5-fq86"
+uuid: "61531e64-d2df-497d-94f2-d01a722ca044"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

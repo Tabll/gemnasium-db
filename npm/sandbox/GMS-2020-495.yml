@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-495"
+identifiers:
+- "GHSA-gc25-3vc5-2jf9"
+- "GMS-2020-495"
+package_slug: "npm/sandbox"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in sandbox."
+date: "2020-09-04"
+pubdate: "2020-09-04"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1318"
+- "https://github.com/advisories/GHSA-gc25-3vc5-2jf9"
+uuid: "c2f7b5ac-6778-40a8-9b34-4993ecdef0ab"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

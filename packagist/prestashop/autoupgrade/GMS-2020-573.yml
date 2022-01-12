@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2020-573"
+identifiers:
+- "GHSA-wqq8-mqj9-697f"
+- "GMS-2020-573"
+package_slug: "packagist/prestashop/autoupgrade"
+title: "PrestaShop autoupgrade module ZIP archives were vulnerable from CVE-2017-9841"
+description: "We have identified that some autoupgrade module ZIP archives
+  have been built with phpunit dev dependencies. PHPUnit contains a php script that
+  would allow, on a webserver, an attacker to perform a RCE."
+date: "2020-01-08"
+pubdate: "2020-01-08"
+affected_range: ">=4.0.0,<4.10.1"
+fixed_versions:
+- "4.10.1"
+affected_versions: "All versions starting from 4.0.0 before 4.10.1"
+not_impacted: "All versions before 4.0.0, all versions starting from 4.10.1"
+solution: "Upgrade to version 4.10.1 or above."
+urls:
+- "https://github.com/PrestaShop/autoupgrade/security/advisories/GHSA-wqq8-mqj9-697f"
+- "https://github.com/PrestaShop/autoupgrade/commit/ce96357ad3ff6278bb28dc225913e75c2f077a32"
+- "https://github.com/advisories/GHSA-wqq8-mqj9-697f"
+uuid: "dca45782-a5f7-43b4-b735-22fc94066816"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

@@ -1,0 +1,24 @@
+---
+identifier: "GMS-2020-306"
+identifiers:
+- "GHSA-x8m7-cv39-xmg9"
+- "GMS-2020-306"
+package_slug: "npm/jq-sha3"
+title: "Malicious Package"
+description: " contained malicious code. The package targeted the Ethereum cryptocurrency
+  and performed transactions to wallets not controlled by the user. Remove the package
+  from your environment. Ensure no Ethereum funds were compromised."
+date: "2021-09-30"
+pubdate: "2020-09-03"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1278"
+- "https://github.com/advisories/GHSA-x8m7-cv39-xmg9"
+uuid: "1dca0aae-9284-4b0e-8cad-2e832d4b9029"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

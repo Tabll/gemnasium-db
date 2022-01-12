@@ -1,0 +1,24 @@
+---
+identifier: "GMS-2020-529"
+identifiers:
+- "GHSA-2mvq-xp48-4c77"
+- "GMS-2020-529"
+package_slug: "npm/subtext"
+title: "Improper Neutralization"
+description: "Improper Neutralization in subtext."
+date: "2021-09-29"
+pubdate: "2020-09-03"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/hapijs/subtext/issues/72"
+- "https://www.npmjs.com/advisories/1168"
+- "https://github.com/advisories/GHSA-2mvq-xp48-4c77"
+uuid: "da0d90b1-02d0-4a42-b8bd-c25918f18ff7"
+cwe_ids:
+- "CWE-1035"
+- "CWE-707"
+- "CWE-937"

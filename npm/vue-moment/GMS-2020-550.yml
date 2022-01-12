@@ -1,0 +1,29 @@
+---
+identifier: "GMS-2020-550"
+identifiers:
+- "GHSA-hrpp-f84w-xhfg"
+- "GMS-2020-550"
+package_slug: "npm/vue-moment"
+title: "Outdated Static Dependency in vue-moment"
+description: "Versions of `vue-moment` contain an Outdated Static Dependency. The
+  package depends on `moment` and has it loaded statically instead of as a dependency
+  that can be updated. It has `moment@2.19.1` that contains a Regular Expression Denial
+  of Service vulnerability."
+date: "2021-10-04"
+pubdate: "2020-09-04"
+affected_range: "<4.1.0"
+fixed_versions:
+- "4.1.0"
+affected_versions: "All versions before 4.1.0"
+not_impacted: "All versions starting from 4.1.0"
+solution: "Upgrade to version 4.1.0 or above."
+urls:
+- "https://www.npmjs.com/advisories/1425"
+- "https://www.npmjs.com/advisories/532"
+- "https://github.com/brockpetrie/vue-moment/commit/a265e54660a7181a6795a12a97cebac5b305746e"
+- "https://snyk.io/vuln/SNYK-JS-VUEMOMENT-538934"
+- "https://github.com/advisories/GHSA-hrpp-f84w-xhfg"
+uuid: "05a638e1-7185-4097-911e-621b3366ada3"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-49"
+identifiers:
+- "GHSA-rjhc-w3fj-j6x9"
+- "GMS-2020-49"
+package_slug: "npm/alipayjsapi"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in alipayjsapi."
+date: "2021-09-30"
+pubdate: "2020-09-03"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1048"
+- "https://github.com/advisories/GHSA-rjhc-w3fj-j6x9"
+uuid: "78df2f63-dae1-49ee-8772-32a3e99c5bc9"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

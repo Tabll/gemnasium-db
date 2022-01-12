@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-296"
+identifiers:
+- "GHSA-jf55-rgpx-p6rx"
+- "GMS-2020-296"
+package_slug: "npm/iie-viz"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in iie-viz."
+date: "2020-09-03"
+pubdate: "2020-09-03"
+affected_range: "=1.0.4"
+fixed_versions: []
+affected_versions: "Version 1.0.4"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1103"
+- "https://github.com/advisories/GHSA-jf55-rgpx-p6rx"
+uuid: "96e2ed7e-a64a-42d0-a6ee-29ea329c30e2"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

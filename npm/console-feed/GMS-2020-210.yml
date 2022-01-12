@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-210"
+identifiers:
+- "GHSA-g9wg-wq4f-2x5w"
+- "GMS-2020-210"
+package_slug: "npm/console-feed"
+title: "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+description: "Improper Neutralization of Input During Web Page Generation ('Cross-site
+  Scripting') in console-feed."
+date: "2021-09-29"
+pubdate: "2020-09-03"
+affected_range: "<2.8.10"
+fixed_versions:
+- "2.8.10"
+affected_versions: "All versions before 2.8.10"
+not_impacted: "All versions starting from 2.8.10"
+solution: "Upgrade to version 2.8.10 or above."
+urls:
+- "https://www.npmjs.com/advisories/1088"
+- "https://github.com/advisories/GHSA-g9wg-wq4f-2x5w"
+uuid: "3f0f960c-5570-4d99-aeaa-4f506a5d67ab"
+cwe_ids:
+- "CWE-1035"
+- "CWE-79"
+- "CWE-937"

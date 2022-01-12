@@ -1,0 +1,24 @@
+---
+identifier: "GMS-2020-375"
+identifiers:
+- "GHSA-hgr5-82rc-p936"
+- "GMS-2020-375"
+package_slug: "npm/md-data-table"
+title: "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+description: "Improper Neutralization of Input During Web Page Generation ('Cross-site
+  Scripting') in md-data-table."
+date: "2021-09-24"
+pubdate: "2020-09-01"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/748"
+- "https://github.com/advisories/GHSA-hgr5-82rc-p936"
+uuid: "6923bf6f-e1c4-4eb0-b3ed-4d87fd511775"
+cwe_ids:
+- "CWE-1035"
+- "CWE-79"
+- "CWE-937"

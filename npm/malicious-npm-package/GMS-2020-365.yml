@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-365"
+identifiers:
+- "GHSA-49c6-3wr4-8jr4"
+- "GMS-2020-365"
+package_slug: "npm/malicious-npm-package"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in malicious-npm-package."
+date: "2021-10-01"
+pubdate: "2020-09-04"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1323"
+- "https://github.com/advisories/GHSA-49c6-3wr4-8jr4"
+uuid: "81336513-c8b2-4891-89e2-ee6a40bae5b2"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

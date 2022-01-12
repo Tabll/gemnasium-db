@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-245"
+identifiers:
+- "GHSA-vm7j-4rj6-mw2p"
+- "GMS-2020-245"
+package_slug: "npm/ember_cli_babe"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in ember_cli_babe."
+date: "2021-09-29"
+pubdate: "2020-09-03"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1200"
+- "https://github.com/advisories/GHSA-vm7j-4rj6-mw2p"
+uuid: "7fc113a1-e5b9-47ee-ad98-5395efeef969"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

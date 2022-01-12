@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2020-107"
+identifiers:
+- "GHSA-85q4-v37c-wfpc"
+- "GMS-2020-107"
+package_slug: "npm/bitcion-ops"
+title: "Malicious Package"
+description: "All versions of this package contained malware. The package was designed
+  to find and exfiltrate cryptocurrency wallets. Any computer that has this package
+  installed or running should be considered fully compromised. All secrets and keys
+  stored on that computer should be rotated immediately from a different computer.\n\nThe
+  package should be removed, but as full control of the computer may have been given
+  to an outside entity, there is no guarantee that removing the package will remove
+  all malicious software resulting from installing it."
+date: "2021-10-01"
+pubdate: "2020-09-04"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1359"
+- "https://github.com/advisories/GHSA-85q4-v37c-wfpc"
+uuid: "3888da97-7818-4d47-8ef1-37e066830a65"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

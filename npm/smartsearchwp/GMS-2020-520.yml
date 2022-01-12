@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-520"
+identifiers:
+- "GHSA-fgp6-8g62-qx6w"
+- "GMS-2020-520"
+package_slug: "npm/smartsearchwp"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in smartsearchwp."
+date: "2021-09-30"
+pubdate: "2020-09-03"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1011"
+- "https://github.com/advisories/GHSA-fgp6-8g62-qx6w"
+uuid: "70d3c88e-85e4-4d06-8550-4080433b62c8"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

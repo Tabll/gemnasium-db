@@ -1,0 +1,24 @@
+---
+identifier: "GMS-2020-172"
+identifiers:
+- "GHSA-7frr-c83r-fm22"
+- "GMS-2020-172"
+package_slug: "npm/buffez-xor"
+title: "Malicious Package"
+description: " contained malicious code. The package targeted the Ethereum cryptocurrency
+  and performed transactions to wallets not controlled by the user. Remove the package
+  from your environment. Ensure no Ethereum funds were compromised."
+date: "2021-09-29"
+pubdate: "2020-09-03"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1259"
+- "https://github.com/advisories/GHSA-7frr-c83r-fm22"
+uuid: "dea1a21a-6853-4d23-9e82-5bbce510a938"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

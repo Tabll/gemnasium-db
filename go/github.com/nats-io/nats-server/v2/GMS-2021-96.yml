@@ -1,0 +1,38 @@
+---
+identifier: "GMS-2021-96"
+identifiers:
+- "GHSA-2c64-vj8g-vwrq"
+- "GMS-2021-96"
+package_slug: "go/github.com/nats-io/nats-server/v2"
+title: "Incorrect handling of credential expiry by NATS Server"
+description: "(This advisory is canonically https://advisories.nats.io/CVE/CVE-2020-26892.txt
+  )\n\n## Problem Description\n\nNATS nats-server through 2020-10-07 has Incorrect
+  Access Control because of how expired credentials are handled.\n\nThe NATS accounts
+  system has expiration timestamps on credentials; the <https://github.com/nats-io/jwt>
+  library had an API which encouraged misuse and an `IsRevoked()` method which misused
+  its own API.\n\nA new `IsClaimRevoked()` method has correct handling and the nats-server
+  has been updated to use this.  The old `IsRevoked()` method now always returns true
+  and other client code will have to be updated to avoid calling it.\n\nThe CVE identifier
+  should cover any application using the old JWT API, where the nats-server is one
+  of those applications.\n\n\n## Affected versions\n\n#### JWT library\n\n * all versions
+  prior to 1.1.0\n * fixed after nats-io/jwt PR 103 landed (2020-10-06)\n\n#### NATS
+  Server\n\n * Version 2 prior to 2.1.9\n   + 2.0.0 through and including 2.1.8 are
+  vulnerable.\n * fixed with nats-io/nats-server PRs 1632, 1635, 1645\n\n\n## Impact\n\nTime-based
+  credential expiry did not work.\n\n\n## Workaround\n\nHave credentials which only
+  expire after fixes can be deployed.\n\n\n## Solution\n\nUpgrade the JWT dependency
+  in any application using it.\n\nUpgrade the NATS server if using NATS Accounts."
+date: "2021-05-21"
+pubdate: "2021-05-21"
+affected_range: "<2.1.9"
+fixed_versions:
+- "2.1.9"
+affected_versions: "All versions before 2.1.9"
+not_impacted: "All versions starting from 2.1.9"
+solution: "Upgrade to version 2.1.9 or above."
+urls:
+- "https://github.com/nats-io/nats-server/security/advisories/GHSA-2c64-vj8g-vwrq"
+- "https://github.com/advisories/GHSA-2c64-vj8g-vwrq"
+uuid: "ee8b83a0-6809-4869-9a32-b90925bbf67f"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

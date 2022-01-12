@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2019-13"
+identifiers:
+- "GHSA-xm7f-x4wx-wmgv"
+- "GMS-2019-13"
+package_slug: "npm/byte"
+title: "Out-of-bounds Read in byte"
+description: "Versions of `byte` allocate uninitialized buffers and read data from
+  them past the initialized length \nUpdate to or later."
+date: "2021-08-04"
+pubdate: "2019-06-04"
+affected_range: "<1.4.1"
+fixed_versions:
+- "1.4.1"
+affected_versions: "All versions before 1.4.1"
+not_impacted: "All versions starting from 1.4.1"
+solution: "Upgrade to version 1.4.1 or above."
+urls:
+- "https://github.com/node-modules/byte/pull/3"
+- "https://hackerone.com/reports/330351"
+- "https://www.npmjs.com/advisories/657"
+- "https://github.com/advisories/GHSA-xm7f-x4wx-wmgv"
+uuid: "a109c4c8-76e2-4f2b-a084-cfbb34b6aebd"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

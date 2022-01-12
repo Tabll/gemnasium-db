@@ -1,0 +1,29 @@
+---
+identifier: "GMS-2019-60"
+identifiers:
+- "GHSA-83rx-c8cr-6j8q"
+- "GMS-2019-60"
+package_slug: "npm/tesseract.js"
+title: "Insecure Default Configuration in tesseract.js"
+description: "Versions of `tesseract.js` default to using a third-party proxy. Requests
+  may be proxied through `crossorigin.me` which clearly states is not suitable for
+  production use. This may lead to instability and privacy violations. Upgrade to
+  or later."
+date: "2021-08-04"
+pubdate: "2019-06-05"
+affected_range: "<1.0.19"
+fixed_versions:
+- "1.0.19"
+affected_versions: "All versions before 1.0.19"
+not_impacted: "All versions starting from 1.0.19"
+solution: "Upgrade to version 1.0.19 or above."
+urls:
+- "https://github.com/naptha/tesseract.js/commit/679eba055f2a4271558e86beec3d1b70cae3fb28"
+- "https://www.npmjs.com/advisories/792"
+- "https://github.com/naptha/tesseract.js/pull/267"
+- "https://snyk.io/vuln/SNYK-JS-TESSERACTJS-174085"
+- "https://github.com/advisories/GHSA-83rx-c8cr-6j8q"
+uuid: "0e83dd6b-857a-4e98-9b0f-343b522502f5"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

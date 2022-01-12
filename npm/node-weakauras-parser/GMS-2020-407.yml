@@ -1,0 +1,31 @@
+---
+identifier: "GMS-2020-407"
+identifiers:
+- "GHSA-86mr-6m89-vgj3"
+- "GMS-2020-407"
+package_slug: "npm/node-weakauras-parser"
+title: "Buffer Overflow in node-weakauras-parser"
+description: "Affected versions of `node-weakauras-parser` are vulnerable to a Buffer
+  Overflow. The `encode_weakaura` function fails to properly validate the input size.
+  A buffer of bytes causes an overflow on systems. Upgrade to or later."
+date: "2021-10-04"
+pubdate: "2020-09-03"
+affected_range: ">=1.0.4 <1.0.5||>=2.0.0 <2.0.2||>=3.0.0 <3.0.1"
+fixed_versions:
+- "1.0.5"
+- "2.0.2"
+- "3.0.1"
+affected_versions: "All versions starting from 1.0.4 before 1.0.5, all versions starting
+  from 2.0.0 before 2.0.2, all versions starting from 3.0.0 before 3.0.1"
+not_impacted: "All versions before 1.0.4, all versions starting from 1.0.5 before
+  2.0.0, all versions starting from 2.0.2 before 3.0.0, all versions starting from
+  3.0.1"
+solution: "Upgrade to versions 1.0.5, 2.0.2, 3.0.1 or above."
+urls:
+- "https://github.com/Zireael-N/node-weakauras-parser/commit/bc146da09db689e554d28e948f1cf1c138f09f69#diff-023afe6291ac9ada88788108cb3367b3R38-R43"
+- "https://www.npmjs.com/advisories/1504"
+- "https://github.com/advisories/GHSA-86mr-6m89-vgj3"
+uuid: "d43244fe-7f7e-48f8-ad35-4d9713899ca7"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

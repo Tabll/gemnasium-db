@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-308"
+identifiers:
+- "GHSA-78p3-96hc-3j47"
+- "GMS-2020-308"
+package_slug: "npm/jquery-airload"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in jquery-airload."
+date: "2020-09-03"
+pubdate: "2020-09-03"
+affected_range: "=0.2.5"
+fixed_versions: []
+affected_versions: "Version 0.2.5"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1102"
+- "https://github.com/advisories/GHSA-78p3-96hc-3j47"
+uuid: "3a764f44-07da-4166-b131-aaa70cfe1ca2"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

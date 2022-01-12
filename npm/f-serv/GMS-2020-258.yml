@@ -1,0 +1,23 @@
+---
+identifier: "GMS-2020-258"
+identifiers:
+- "GHSA-vx5w-cxch-wwc9"
+- "GMS-2020-258"
+package_slug: "npm/f-serv"
+title: "Relative Path Traversal"
+description: "Relative Path Traversal in f-serv."
+date: "2021-09-29"
+pubdate: "2020-09-03"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1092"
+- "https://github.com/advisories/GHSA-vx5w-cxch-wwc9"
+uuid: "94741b3d-d243-4d20-a242-b08cfd1edc33"
+cwe_ids:
+- "CWE-1035"
+- "CWE-352"
+- "CWE-937"

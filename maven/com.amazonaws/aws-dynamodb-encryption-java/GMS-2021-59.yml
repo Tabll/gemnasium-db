@@ -1,0 +1,35 @@
+---
+identifier: "GMS-2021-59"
+identifiers:
+- "GHSA-w736-hf9p-qqh3"
+- "GMS-2021-59"
+package_slug: "maven/com.amazonaws/aws-dynamodb-encryption-java"
+title: "Key Caching behavior in the DynamoDB Encryption Client."
+description: "### Impact\nThis advisory concerns users of MostRecentProvider in the
+  DynamoDB Encryption Client with a key provider like AWS Key Management Service that
+  allows for permissions on keys to be modified.\n\nWhen key usage permissions were
+  changed at the key provider, time-based key reauthorization logic in MostRecentProvider
+  did not reauthorize the use of the key. This created the potential for keys to be
+  used in the DynamoDB Encryption Client after permissions to do so were revoked at
+  the key provider.\n\n### Patches\nFixed as of 1.15.0.  We recommend users to modify
+  their code and adopt `CachingMostRecentProvider`.\n\n### Workarounds\nUsers who
+  cannot upgrade to use the `CachingMostRecentProvider` can call `clear()` on the
+  cache to manually flush all of its contents. Next use of the key will force a re-validation
+  to occur with the key provider."
+date: "2021-02-08"
+pubdate: "2021-02-08"
+affected_range: "(,1.15.0)"
+fixed_versions:
+- "1.15.0"
+affected_versions: "All versions before 1.15.0"
+not_impacted: "All versions starting from 1.15.0"
+solution: "Upgrade to version 1.15.0 or above."
+urls:
+- "https://github.com/aws/aws-dynamodb-encryption-java/security/advisories/GHSA-w736-hf9p-qqh3"
+- "https://github.com/aws/aws-dynamodb-encryption-java/commit/7de5f5a5929271ab25bce685089eb7ec564dac4b"
+- "https://github.com/aws/aws-dynamodb-encryption-java/blob/master/CHANGELOG.md#1150----2021-02-04"
+- "https://github.com/advisories/GHSA-w736-hf9p-qqh3"
+uuid: "bf75df47-aedf-486a-9008-a8b86deefe0c"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

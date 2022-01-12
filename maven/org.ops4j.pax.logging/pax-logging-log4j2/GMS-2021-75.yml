@@ -1,0 +1,29 @@
+---
+identifier: "GMS-2021-75"
+identifiers:
+- "GHSA-xxfh-x98p-j8fr"
+- "GMS-2021-75"
+package_slug: "maven/org.ops4j.pax.logging/pax-logging-log4j2"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in org.ops4j.pax.logging:pax-logging-log4j2."
+date: "2021-12-11"
+pubdate: "2021-12-10"
+affected_range: "[2.0.0,2.0.11),(,1.11.10)"
+fixed_versions:
+- "1.11.10"
+affected_versions: "All versions starting from 2.0.0 before 2.0.11, all versions before
+  1.11.10"
+not_impacted: "All versions before 2.0.0, all versions starting from 1.11.10 before
+  2.0.11"
+solution: "Upgrade to version 1.11.10 or above."
+urls:
+- "https://github.com/ops4j/org.ops4j.pax.logging/security/advisories/GHSA-xxfh-x98p-j8fr"
+- "https://github.com/advisories/GHSA-jfh8-c2jp-5v3q"
+- "https://github.com/advisories/GHSA-xxfh-x98p-j8fr"
+uuid: "0254c3de-1b01-4883-afca-3fb391994f56"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

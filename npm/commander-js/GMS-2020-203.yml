@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-203"
+identifiers:
+- "GHSA-2hqf-qqmq-pgpp"
+- "GMS-2020-203"
+package_slug: "npm/commander-js"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in commander-js."
+date: "2021-10-01"
+pubdate: "2020-09-02"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/763"
+- "https://github.com/advisories/GHSA-2hqf-qqmq-pgpp"
+uuid: "7689b965-425d-45a6-b1fe-1058c33b9672"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

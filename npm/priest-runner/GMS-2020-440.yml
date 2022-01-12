@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-440"
+identifiers:
+- "GHSA-9px9-f7jw-fwhj"
+- "GMS-2020-440"
+package_slug: "npm/priest-runner"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in priest-runner."
+date: "2021-10-04"
+pubdate: "2020-09-03"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1492"
+- "https://github.com/advisories/GHSA-9px9-f7jw-fwhj"
+uuid: "de05bbac-b090-4b4e-b2bb-a5ed712a29c9"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

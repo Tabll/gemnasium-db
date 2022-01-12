@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2020-193"
+identifiers:
+- "GHSA-2q6w-rxf3-4wc9"
+- "GMS-2020-193"
+package_slug: "npm/codify"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in codify."
+date: "2021-09-24"
+pubdate: "2020-09-01"
+affected_range: "=0.3.1"
+fixed_versions: []
+affected_versions: "Version 0.3.1"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/620"
+- "https://github.com/bozuko/codify"
+- "https://snyk.io/vuln/SNYK-JS-CODIFY-451005"
+- "https://github.com/advisories/GHSA-2q6w-rxf3-4wc9"
+uuid: "2921795a-da44-4f5e-9771-b4ac25464ce2"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

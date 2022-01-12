@@ -3,7 +3,7 @@ identifier: "GMS-2017-134"
 package_slug: "npm/angular"
 title: "XSS in $sanitize in Safari/Firefox"
 description: "Both Firefox and Safari are vulnerable to XSS if we use an inert document
-  created via `document.implementation.createHTMLDocument()`. "
+  created via `document.implementation.createHTMLDocument()`."
 date: "2017-05-25"
 pubdate: "2017-05-25"
 affected_range: "<1.6.5"

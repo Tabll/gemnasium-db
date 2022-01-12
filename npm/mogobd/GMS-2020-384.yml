@@ -1,0 +1,24 @@
+---
+identifier: "GMS-2020-384"
+identifiers:
+- "GHSA-jchg-g94r-64qg"
+- "GMS-2020-384"
+package_slug: "npm/mogobd"
+title: "Malicious Package"
+description: "This package contained malicious code. The package uploaded system information
+  such as OS and hostname to a remote server. Remove the package from your environment.
+  There are no indications of further compromise."
+date: "2021-09-30"
+pubdate: "2020-09-03"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1132"
+- "https://github.com/advisories/GHSA-jchg-g94r-64qg"
+uuid: "37016a75-ec7d-4456-b582-254f8bd1cb44"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

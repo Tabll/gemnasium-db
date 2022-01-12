@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2020-250"
+identifiers:
+- "GHSA-m852-866j-69j8"
+- "GMS-2020-250"
+package_slug: "npm/eslint-config-airbnb-standard"
+title: "Malicious Package"
+description: " of `eslint-config-airbnb-standard` was published with a bundled version
+  of `eslint-scope` that was found to contain malicious code. This code would read
+  the users `.npmrc` file and send it's contents to a remote server. The best course
+  of action if you found this package installed in your environment is to revoke all
+  your npm tokens and use a different version of the module. You can find instructions
+  on how to do that here. https://docs.npmjs.com/getting-started/working_with_tokens#how-to-revoke-tokens\n"
+date: "2021-10-01"
+pubdate: "2020-09-01"
+affected_range: "=2.0.0"
+fixed_versions:
+- "2.1.0"
+affected_versions: "Version 2.0.0"
+not_impacted: "All versions before 2.0.0, all versions after 2.0.0"
+solution: "Upgrade to version 2.1.0 or above."
+urls:
+- "https://www.npmjs.com/advisories/675"
+- "https://github.com/advisories/GHSA-m852-866j-69j8"
+uuid: "67ea704a-d2db-4ec8-bf36-d271a9dc8c4e"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

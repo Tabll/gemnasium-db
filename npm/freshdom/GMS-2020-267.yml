@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2020-267"
+identifiers:
+- "GHSA-8qm2-24qc-c4qg"
+- "GMS-2020-267"
+package_slug: "npm/freshdom"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in freshdom."
+date: "2021-09-24"
+pubdate: "2020-09-01"
+affected_range: "=0.0.6"
+fixed_versions: []
+affected_versions: "Version 0.0.6"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/627"
+- "https://github.com/jamiller619/freshdom"
+- "https://snyk.io/vuln/SNYK-JS-FRESHDOM-450987"
+- "https://github.com/advisories/GHSA-8qm2-24qc-c4qg"
+uuid: "78a85404-2b73-496c-95ea-5dec4c322c2c"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

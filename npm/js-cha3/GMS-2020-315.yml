@@ -1,0 +1,24 @@
+---
+identifier: "GMS-2020-315"
+identifiers:
+- "GHSA-7xf9-74cp-8hx3"
+- "GMS-2020-315"
+package_slug: "npm/js-cha3"
+title: "Malicious Package"
+description: " contained malicious code. The package targeted the Ethereum cryptocurrency
+  and performed transactions to wallets not controlled by the user. Remove the package
+  from your environment. Ensure no Ethereum funds were compromised."
+date: "2021-09-30"
+pubdate: "2020-09-03"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1281"
+- "https://github.com/advisories/GHSA-7xf9-74cp-8hx3"
+uuid: "7f49dc73-d5bc-4e73-a69d-9a58e000e438"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

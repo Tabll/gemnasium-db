@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-409"
+identifiers:
+- "GHSA-38vq-cjh5-vw7x"
+- "GMS-2020-409"
+package_slug: "npm/nodes.js"
+title: "Malicious Package"
+description: "All versions of `nodes.js ` contain malicious code. The package searches
+  and installs globally thousands of packages based on keywords `node`, `react`, `react-native`,
+  `vue`, `angular` and `babel` to fill the system's memory. Remove the package from
+  your environment and validate what packages are installed."
+date: "2021-09-30"
+pubdate: "2020-09-03"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1074"
+- "https://github.com/advisories/GHSA-38vq-cjh5-vw7x"
+uuid: "a308fc9a-361d-4664-b9c4-1b6a5bdb1683"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

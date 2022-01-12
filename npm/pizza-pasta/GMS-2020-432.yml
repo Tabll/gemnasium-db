@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-432"
+identifiers:
+- "GHSA-wxrm-2h86-v95f"
+- "GMS-2020-432"
+package_slug: "npm/pizza-pasta"
+title: "Malicious Package"
+description: " of `pizza-pasta` contains malicious code as a install scripts. The
+  package created folders in the system's Desktop and downloaded an image from `imgur.com`.
+  The package also printed the users SSH keys to the console. Remove the package from
+  your environment. There are no evidences of further compromise."
+date: "2021-09-29"
+pubdate: "2020-09-03"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1196"
+- "https://github.com/advisories/GHSA-wxrm-2h86-v95f"
+uuid: "400da501-e054-4648-93a5-bb4cf5ae0797"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

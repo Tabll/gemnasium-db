@@ -1,0 +1,29 @@
+---
+identifier: "GMS-2021-40"
+identifiers:
+- "GHSA-qc22-qwm9-j8rx"
+- "GMS-2021-40"
+package_slug: "npm/npm-groovy-lint"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in npm-groovy-lint."
+date: "2021-12-20"
+pubdate: "2021-12-20"
+affected_range: "<9.1.0"
+fixed_versions:
+- "9.1.0"
+affected_versions: "All versions before 9.1.0"
+not_impacted: "All versions starting from 9.1.0"
+solution: "Upgrade to version 9.1.0 or above."
+urls:
+- "https://github.com/nvuillam/npm-groovy-lint/issues/194"
+- "https://github.com/nvuillam/npm-groovy-lint/pull/195"
+- "https://github.com/nvuillam/npm-groovy-lint/commit/0b664519019442052e0190170c2b1c5aff7d72e7"
+- "https://github.com/advisories/GHSA-jfh8-c2jp-5v3q"
+- "https://github.com/advisories/GHSA-qc22-qwm9-j8rx"
+uuid: "1ec1ba28-7b6f-49ce-bc8b-ffa6bc5839e1"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

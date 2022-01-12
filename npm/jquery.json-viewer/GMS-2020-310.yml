@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-310"
+identifiers:
+- "GHSA-v9wp-8r97-v6xg"
+- "GMS-2020-310"
+package_slug: "npm/jquery.json-viewer"
+title: "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+description: "Improper Neutralization of Input During Web Page Generation ('Cross-site
+  Scripting') in jquery.json-viewer."
+date: "2021-09-28"
+pubdate: "2020-09-03"
+affected_range: "<1.3.0"
+fixed_versions:
+- "1.3.0"
+affected_versions: "All versions before 1.3.0"
+not_impacted: "All versions starting from 1.3.0"
+solution: "Upgrade to version 1.3.0 or above."
+urls:
+- "https://www.npmjs.com/advisories/1036"
+- "https://github.com/advisories/GHSA-v9wp-8r97-v6xg"
+uuid: "3b85738e-8922-4895-bc4f-0edc2c1f674a"
+cwe_ids:
+- "CWE-1035"
+- "CWE-79"
+- "CWE-937"

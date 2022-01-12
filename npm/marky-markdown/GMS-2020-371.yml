@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2020-371"
+identifiers:
+- "GHSA-pxmp-fwjc-4x7q"
+- "GMS-2020-371"
+package_slug: "npm/marky-markdown"
+title: "HTML Injection in marky-markdown"
+description: "All versions of `marky-markdown` are vulnerable to HTML Injection due
+  to a validation bypass. The package only allows iframes where the source is `youtube.com`
+  but it is possible to bypass the validation with sources where `youtube.com` is
+  the sub-domain, such as `youtube.com.evil.co`. This This package is no longer maintained.
+  Please upgrade to `@npmcorp/marky-markdown`"
+date: "2021-10-04"
+pubdate: "2020-09-03"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1471"
+- "https://github.com/advisories/GHSA-pxmp-fwjc-4x7q"
+uuid: "2cb2e8eb-147b-4a93-94af-14c47c7243de"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

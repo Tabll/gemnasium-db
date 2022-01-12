@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2020-124"
+identifiers:
+- "GHSA-9hc2-w9gg-q6jw"
+- "GMS-2020-124"
+package_slug: "npm/boogeyman"
+title: "Malicious Package"
+description: "All versions of `boogeyman` are considered malicious. This particular
+  package would download a payload from pastebin.com, eval it to read ssh keys and
+  the users `.npmrc` and send them to a private pastebin account. This package was
+  published to the npm Registry for a very short period of time. If you happen to
+  find it in your environment you should revoke and rotate your ssh keys and your
+  npm token."
+date: "2021-10-01"
+pubdate: "2020-09-01"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/677"
+- "https://github.com/advisories/GHSA-9hc2-w9gg-q6jw"
+uuid: "dddc89ff-9105-47d3-acd1-9b0d47a83488"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

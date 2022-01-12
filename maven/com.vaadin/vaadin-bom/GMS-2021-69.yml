@@ -1,0 +1,30 @@
+---
+identifier: "GMS-2021-69"
+identifiers:
+- "GHSA-j9wr-49vq-rm5g"
+- "GMS-2021-69"
+package_slug: "maven/com.vaadin/vaadin-bom"
+title: "Server classes and resources exposure in OSGi applications using Vaadin 12-14
+  and 19"
+description: "Vulnerability in OSGi integration in `com.vaadin:flow-server` versions
+  1.2.0 through 2.4.7 (Vaadin 12.0.0 through 14.4.9), and 6.0.0 through 6.0.1 (Vaadin
+  19.0.0) allows attacker to access application classes and resources on the server
+  via crafted HTTP request.\n\n- https://vaadin.com/security/cve-2021-31407"
+date: "2021-10-08"
+pubdate: "2021-04-19"
+affected_range: "[12.0.0,14.4.10),[19.0.0]"
+fixed_versions:
+- "14.4.10"
+- "19.0.1"
+affected_versions: "All versions starting from 12.0.0 before 14.4.10, version 19.0.0"
+not_impacted: "All versions before 12.0.0, all versions starting from 14.4.10 before
+  19.0.0, all versions after 19.0.0"
+solution: "Upgrade to versions 14.4.10, 19.0.1 or above."
+urls:
+- "https://github.com/vaadin/platform/security/advisories/GHSA-j9wr-49vq-rm5g"
+- "https://vaadin.com/security/cve-2021-31407"
+- "https://github.com/advisories/GHSA-j9wr-49vq-rm5g"
+uuid: "96c3df96-e0a9-448f-afab-2128b8dbcbb4"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-389"
+identifiers:
+- "GHSA-mh5c-679w-hh4r"
+- "GMS-2020-389"
+package_slug: "npm/mongodb"
+title: "Denial of Service in mongodb"
+description: "Versions of `mongodb` are vulnerable to Denial of Service. The package
+  fails to properly catch an exception when a collection name is invalid and the DB
+  does not exist, crashing the application. Upgrade to or later."
+date: "2020-09-03"
+pubdate: "2020-09-03"
+affected_range: "<3.1.13"
+fixed_versions:
+- "3.1.13"
+affected_versions: "All versions before 3.1.13"
+not_impacted: "All versions starting from 3.1.13"
+solution: "Upgrade to version 3.1.13 or above."
+urls:
+- "https://www.npmjs.com/advisories/1203"
+- "https://github.com/advisories/GHSA-mh5c-679w-hh4r"
+uuid: "e8978603-dd78-4b0e-a49a-1963d56c2bdd"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

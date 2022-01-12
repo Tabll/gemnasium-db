@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2020-274"
+identifiers:
+- "GHSA-gm9x-q798-hmr4"
+- "GMS-2020-274"
+package_slug: "npm/git-tags-remote"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in git-tags-remote."
+date: "2021-09-23"
+pubdate: "2020-07-29"
+affected_range: "<1.0.4"
+fixed_versions:
+- "1.0.4"
+affected_versions: "All versions before 1.0.4"
+not_impacted: "All versions starting from 1.0.4"
+solution: "Upgrade to version 1.0.4 or above."
+urls:
+- "https://www.npmjs.com/advisories/1517"
+- "https://github.com/sh0ji/git-tags-remote/issues/58"
+- "https://github.com/sh0ji/git-tags-remote/commit/a20488960cbd2c98455386108253094897ebfc1c"
+- "https://github.com/advisories/GHSA-gm9x-q798-hmr4"
+uuid: "a6598f17-8a79-458b-8dc3-fc0a9f9484a6"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

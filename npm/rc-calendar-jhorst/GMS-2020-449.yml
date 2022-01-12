@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-449"
+identifiers:
+- "GHSA-4c87-gg2q-fc6m"
+- "GMS-2020-449"
+package_slug: "npm/rc-calendar-jhorst"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in rc-calendar-jhorst."
+date: "2020-09-01"
+pubdate: "2020-09-01"
+affected_range: "=8.4.3"
+fixed_versions: []
+affected_versions: "Version 8.4.3"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/633"
+- "https://github.com/advisories/GHSA-4c87-gg2q-fc6m"
+uuid: "432c8b03-0467-4518-ba20-97c655308c43"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

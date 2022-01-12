@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-214"
+identifiers:
+- "GHSA-4rx9-58m7-gr8w"
+- "GMS-2020-214"
+package_slug: "npm/css_transform_step"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in css_transform_step."
+date: "2020-09-01"
+pubdate: "2020-09-01"
+affected_range: "=1.0.6"
+fixed_versions: []
+affected_versions: "Version 1.0.6"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/623"
+- "https://github.com/advisories/GHSA-4rx9-58m7-gr8w"
+uuid: "cdebe9c5-da50-4723-949c-2866aac20344"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

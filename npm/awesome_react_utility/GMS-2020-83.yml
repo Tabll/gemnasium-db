@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2020-83"
+identifiers:
+- "GHSA-m25q-fwg4-9v2p"
+- "GMS-2020-83"
+package_slug: "npm/awesome_react_utility"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in awesome_react_utility."
+date: "2021-09-24"
+pubdate: "2020-09-01"
+affected_range: "=1.0.2"
+fixed_versions: []
+affected_versions: "Version 1.0.2"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/618"
+- "https://github.com/kooinam/awesome_react_utility"
+- "https://github.com/advisories/GHSA-m25q-fwg4-9v2p"
+uuid: "a65d23bd-8e03-41ae-87ae-189de91f5585"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

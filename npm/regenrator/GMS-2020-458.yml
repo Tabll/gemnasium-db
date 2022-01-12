@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-458"
+identifiers:
+- "GHSA-m5p4-7wf9-6w99"
+- "GMS-2020-458"
+package_slug: "npm/regenrator"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in regenrator."
+date: "2021-10-01"
+pubdate: "2020-09-01"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/685"
+- "https://github.com/advisories/GHSA-m5p4-7wf9-6w99"
+uuid: "05bcdba2-b4df-4c58-aa04-25d291a7708f"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

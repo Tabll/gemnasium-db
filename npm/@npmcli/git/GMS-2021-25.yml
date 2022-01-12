@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2021-25"
+identifiers:
+- "GHSA-hxwm-x553-x359"
+- "GMS-2021-25"
+package_slug: "npm/@npmcli/git"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in @npmcli/git."
+date: "2021-08-05"
+pubdate: "2021-08-05"
+affected_range: "<2.0.8"
+fixed_versions:
+- "2.0.8"
+affected_versions: "All versions before 2.0.8"
+not_impacted: "All versions starting from 2.0.8"
+solution: "Upgrade to version 2.0.8 or above."
+urls:
+- "https://github.com/npm/git/security/advisories/GHSA-hxwm-x553-x359"
+- "https://github.com/npm/git/pull/29"
+- "https://github.com/advisories/GHSA-hxwm-x553-x359"
+uuid: "c6d624ea-da70-4c24-a2f7-80a893cf5e50"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

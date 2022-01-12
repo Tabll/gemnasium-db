@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2021-44"
+identifiers:
+- "GHSA-qrmm-w75w-3wpx"
+- "GMS-2021-44"
+package_slug: "npm/swagger-ui-dist"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in swagger-ui-dist."
+date: "2021-12-09"
+pubdate: "2021-12-09"
+affected_range: "<4.1.3"
+fixed_versions:
+- "4.1.3"
+affected_versions: "All versions before 4.1.3"
+not_impacted: "All versions starting from 4.1.3"
+solution: "Upgrade to version 4.1.3 or above."
+urls:
+- "https://github.com/swagger-api/swagger-ui/security/advisories/GHSA-qrmm-w75w-3wpx"
+- "https://github.com/swagger-api/swagger-ui/issues/4872"
+- "https://github.com/swagger-api/swagger-ui/commit/01a3e55960f864a0acf6a8d06e5ddaf6776a7f76"
+- "https://github.com/advisories/GHSA-qrmm-w75w-3wpx"
+uuid: "f4a70b99-d82a-4080-b37d-8627fb70475d"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

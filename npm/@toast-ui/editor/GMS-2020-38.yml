@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2020-38"
+identifiers:
+- "GHSA-cr56-66mx-293v"
+- "GMS-2020-38"
+package_slug: "npm/@toast-ui/editor"
+title: "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+description: "Improper Neutralization of Input During Web Page Generation ('Cross-site
+  Scripting') in @toast-ui/editor."
+date: "2021-10-04"
+pubdate: "2020-09-03"
+affected_range: "<2.2.0"
+fixed_versions:
+- "2.2.0"
+affected_versions: "All versions before 2.2.0"
+not_impacted: "All versions starting from 2.2.0"
+solution: "Upgrade to version 2.2.0 or above."
+urls:
+- "https://github.com/nhn/tui.editor/issues/733"
+- "https://www.npmjs.com/advisories/1521"
+- "https://github.com/nhn/tui.editor/pull/1010"
+- "https://github.com/advisories/GHSA-cr56-66mx-293v"
+uuid: "e05766e9-c4b3-44a4-9c49-9d598fb2df05"
+cwe_ids:
+- "CWE-1035"
+- "CWE-79"
+- "CWE-937"

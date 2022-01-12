@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-305"
+identifiers:
+- "GHSA-mpjf-8cmf-p789"
+- "GMS-2020-305"
+package_slug: "npm/jingo"
+title: "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+description: "Improper Neutralization of Input During Web Page Generation ('Cross-site
+  Scripting') in jingo."
+date: "2021-09-27"
+pubdate: "2020-09-01"
+affected_range: "<1.9.2"
+fixed_versions:
+- "1.9.2"
+affected_versions: "All versions before 1.9.2"
+not_impacted: "All versions starting from 1.9.2"
+solution: "Upgrade to version 1.9.2 or above."
+urls:
+- "https://www.npmjs.com/advisories/750"
+- "https://github.com/advisories/GHSA-mpjf-8cmf-p789"
+uuid: "0f411b8e-420b-435f-904a-9b462e301459"
+cwe_ids:
+- "CWE-1035"
+- "CWE-79"
+- "CWE-937"

@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2020-396"
+identifiers:
+- "GHSA-whv6-rj84-2vh2"
+- "GMS-2020-396"
+package_slug: "npm/nextcloud-vue-collections"
+title: "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+description: "Improper Neutralization of Input During Web Page Generation ('Cross-site
+  Scripting') in nextcloud-vue-collections."
+date: "2021-10-04"
+pubdate: "2020-09-04"
+affected_range: "<0.4.2"
+fixed_versions:
+- "0.4.2"
+affected_versions: "All versions before 0.4.2"
+not_impacted: "All versions starting from 0.4.2"
+solution: "Upgrade to version 0.4.2 or above."
+urls:
+- "https://github.com/juliushaertl/nextcloud-vue-collections/commit/8ec1fca214f003538cec4137792ede928f25f583"
+- "https://www.npmjs.com/advisories/1442"
+- "https://github.com/advisories/GHSA-whv6-rj84-2vh2"
+uuid: "ae457df7-a1bb-426f-85c8-f8fbde6a67da"
+cwe_ids:
+- "CWE-1035"
+- "CWE-79"
+- "CWE-937"

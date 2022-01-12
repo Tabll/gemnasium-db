@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2021-61"
+identifiers:
+- "GHSA-94g7-hpv8-h9qm"
+- "GMS-2021-61"
+package_slug: "maven/com.splunk.logging/splunk-library-javalogging"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in com.splunk.logging:splunk-library-javalogging."
+date: "2021-12-14"
+pubdate: "2021-12-14"
+affected_range: "(,1.11.1)"
+fixed_versions:
+- "1.11.1"
+affected_versions: "All versions before 1.11.1"
+not_impacted: "All versions starting from 1.11.1"
+solution: "Upgrade to version 1.11.1 or above."
+urls:
+- "https://github.com/splunk/splunk-library-javalogging/security/advisories/GHSA-94g7-hpv8-h9qm"
+- "https://github.com/advisories/GHSA-94g7-hpv8-h9qm"
+uuid: "06edfa28-d307-4f04-a792-5069df0cf9f6"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

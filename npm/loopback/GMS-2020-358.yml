@@ -1,0 +1,31 @@
+---
+identifier: "GMS-2020-358"
+identifiers:
+- "GHSA-724c-6vrf-99rq"
+- "GMS-2020-358"
+package_slug: "npm/loopback"
+title: "Sensitive Data Exposure in loopback"
+description: "Versions of `loopback` (3.x) (2.x) are vulnerable to Sensitive Data
+  Exposure. Invalid API requests to the login endpoint may return information about
+  the first user in the database. This can be used alongside other attacks for credential
+  theft. If you're using `loopback` upgrade to or later.\nIf you're using `loopback`
+  upgrade to or later."
+date: "2021-09-27"
+pubdate: "2020-09-02"
+affected_range: "<=2.41.0||>=3.0.0 <=3.25.0"
+fixed_versions:
+- "2.42.0"
+- "3.26.0"
+affected_versions: "All versions up to 2.41.0, all versions starting from 3.0.0 up
+  to 3.25.0"
+not_impacted: "All versions after 2.41.0 before 3.0.0, all versions after 3.25.0"
+solution: "Upgrade to versions 2.42.0, 3.26.0 or above."
+urls:
+- "https://github.com/strongloop/loopback/issues/4195"
+- "https://loopback.io/doc/en/sec/Security-advisory-06-17-2019.html"
+- "https://www.npmjs.com/advisories/915"
+- "https://github.com/advisories/GHSA-724c-6vrf-99rq"
+uuid: "c25e9c2a-53e1-4d80-bc31-61d8db2d6c3f"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

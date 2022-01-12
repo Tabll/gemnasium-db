@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-560"
+identifiers:
+- "GHSA-j6v9-xgvh-f796"
+- "GMS-2020-560"
+package_slug: "npm/wxchangba"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in wxchangba."
+date: "2021-09-28"
+pubdate: "2020-09-11"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/960"
+- "https://github.com/advisories/GHSA-j6v9-xgvh-f796"
+uuid: "f1475df5-a85f-44d6-86f2-e9cde7def79e"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-452"
+identifiers:
+- "GHSA-5645-gc7h-98h8"
+- "GMS-2020-452"
+package_slug: "npm/react-dates-sc"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in react-dates-sc."
+date: "2020-09-01"
+pubdate: "2020-09-01"
+affected_range: "=0.3.0"
+fixed_versions: []
+affected_versions: "Version 0.3.0"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/634"
+- "https://github.com/advisories/GHSA-5645-gc7h-98h8"
+uuid: "1baadd4d-48b8-43ba-af2a-1940e12dbf61"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

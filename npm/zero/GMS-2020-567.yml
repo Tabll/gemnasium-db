@@ -1,0 +1,24 @@
+---
+identifier: "GMS-2020-567"
+identifiers:
+- "GHSA-crf7-fvjx-863q"
+- "GMS-2020-567"
+package_slug: "npm/zero"
+title: "Relative Path Traversal"
+description: "Relative Path Traversal in zero."
+date: "2021-09-28"
+pubdate: "2020-09-03"
+affected_range: "<1.0.6"
+fixed_versions:
+- "1.0.6"
+affected_versions: "All versions before 1.0.6"
+not_impacted: "All versions starting from 1.0.6"
+solution: "Upgrade to version 1.0.6 or above."
+urls:
+- "https://www.npmjs.com/advisories/1025"
+- "https://github.com/advisories/GHSA-crf7-fvjx-863q"
+uuid: "51a123c4-75b1-4a29-abc4-37704730e770"
+cwe_ids:
+- "CWE-1035"
+- "CWE-352"
+- "CWE-937"

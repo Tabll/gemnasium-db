@@ -1,0 +1,29 @@
+---
+identifier: "GMS-2020-28"
+identifiers:
+- "GHSA-22h7-7wwg-qmgg"
+- "GMS-2020-28"
+package_slug: "npm/@hapi/hoek"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in @hapi/hoek."
+date: "2021-10-04"
+pubdate: "2020-09-04"
+affected_range: ">=8.3.2 <8.5.1||>=9.0.0 <9.0.3"
+fixed_versions:
+- "8.5.1"
+- "9.0.3"
+affected_versions: "All versions starting from 8.3.2 before 8.5.1, all versions starting
+  from 9.0.0 before 9.0.3"
+not_impacted: "All versions before 8.3.2, all versions starting from 8.5.1 before
+  9.0.0, all versions starting from 9.0.3"
+solution: "Upgrade to versions 8.5.1, 9.0.3 or above."
+urls:
+- "https://www.npmjs.com/advisories/1468"
+- "https://github.com/advisories/GHSA-22h7-7wwg-qmgg"
+uuid: "c2fed447-25ec-48aa-ba06-1f94d5afc207"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

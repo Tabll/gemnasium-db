@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2020-55"
+identifiers:
+- "GHSA-qmxf-fxq7-w59f"
+- "GMS-2020-55"
+package_slug: "npm/angular-material-sidenav-rnd"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in angular-material-sidenav-rnd."
+date: "2021-09-24"
+pubdate: "2020-09-01"
+affected_range: "=0.1.1"
+fixed_versions: []
+affected_versions: "Version 0.1.1"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/615"
+- "https://github.com/musabgosset/angular-material-sidenav"
+- "https://snyk.io/vuln/SNYK-JS-ANGULARMATERIALSIDENAVRND-451015"
+- "https://github.com/sovanna/angular-material-sidenav"
+- "https://github.com/advisories/GHSA-qmxf-fxq7-w59f"
+uuid: "805aaf2f-4ef2-4c9b-a070-5d7594f7a843"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

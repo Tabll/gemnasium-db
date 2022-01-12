@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-403"
+identifiers:
+- "GHSA-x3m6-rprw-862w"
+- "GMS-2020-403"
+package_slug: "npm/node-buc"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in node-buc."
+date: "2021-09-30"
+pubdate: "2020-09-03"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1059"
+- "https://github.com/advisories/GHSA-x3m6-rprw-862w"
+uuid: "776215b1-2e7c-4bb9-8872-550e727f3c85"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

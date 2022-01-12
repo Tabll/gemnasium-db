@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2020-347"
+identifiers:
+- "GHSA-mfc2-93pr-jf92"
+- "GMS-2020-347"
+package_slug: "npm/loadyaml"
+title: "Malicious code in `loadyaml`"
+description: "npm packages `loadyaml` and `electorn` were removed from the npm registry
+  for containing malicious code. Upon installation the package runs a preinstall script
+  that writes a public comment on GitHub containing the following information:\n-
+  IP and IP-based geolocation\n- home directory name\n- local username \n\nThe malicious
+  packages have been removed from the npm registry and the leaked content removed
+  from GitHub."
+date: "2021-10-04"
+pubdate: "2020-10-01"
+affected_range: "<=1.0.2"
+fixed_versions: []
+affected_versions: "All versions up to 1.0.2"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1563"
+- "https://github.com/advisories/GHSA-mfc2-93pr-jf92"
+uuid: "e0cae223-542c-47d0-ae87-9ddbbd08b426"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

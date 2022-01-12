@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2019-63"
+identifiers:
+- "GHSA-gm9g-2g8v-fvxj"
+- "GMS-2019-63"
+package_slug: "npm/upmerge"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in upmerge."
+date: "2021-09-16"
+pubdate: "2019-06-06"
+affected_range: "<=0.1.8"
+fixed_versions: []
+affected_versions: "All versions up to 0.1.8"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://hackerone.com/reports/439120"
+- "https://www.npmjs.com/advisories/809"
+- "https://snyk.io/vuln/SNYK-JS-UPMERGE-174133"
+- "https://github.com/advisories/GHSA-gm9g-2g8v-fvxj"
+uuid: "98d78d04-0ceb-4d7b-ad21-a9e8b4b9759d"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

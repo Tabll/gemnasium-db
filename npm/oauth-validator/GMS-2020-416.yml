@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-416"
+identifiers:
+- "GHSA-cxcf-78mr-wpg7"
+- "GMS-2020-416"
+package_slug: "npm/oauth-validator"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in oauth-validator."
+date: "2020-09-01"
+pubdate: "2020-09-01"
+affected_range: "=1.0.2"
+fixed_versions: []
+affected_versions: "Version 1.0.2"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/632"
+- "https://github.com/advisories/GHSA-cxcf-78mr-wpg7"
+uuid: "84451b85-d32b-4955-a48f-bcb81d2dc0f7"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

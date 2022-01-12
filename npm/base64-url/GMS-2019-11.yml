@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2019-11"
+identifiers:
+- "GHSA-j4mr-9xw3-c9jx"
+- "GMS-2019-11"
+package_slug: "npm/base64-url"
+title: "Out-of-bounds Read in base64-url"
+description: "Versions of `base64-url` are vulnerable to out-of-bounds read as it
+  allocates uninitialized Buffers when number is passed in input. Update to or later."
+date: "2021-08-04"
+pubdate: "2019-05-31"
+affected_range: "<2.0.0"
+fixed_versions:
+- "2.0.0"
+affected_versions: "All versions before 2.0.0"
+not_impacted: "All versions starting from 2.0.0"
+solution: "Upgrade to version 2.0.0 or above."
+urls:
+- "https://hackerone.com/reports/321692"
+- "https://nodesecurity.io/advisories/660"
+- "https://www.npmjs.com/advisories/660"
+- "https://github.com/advisories/GHSA-j4mr-9xw3-c9jx"
+uuid: "b1f840cb-005c-471b-805e-96a4f6dbca6f"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

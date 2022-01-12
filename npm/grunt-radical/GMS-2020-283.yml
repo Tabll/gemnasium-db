@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-283"
+identifiers:
+- "GHSA-4627-w373-375v"
+- "GMS-2020-283"
+package_slug: "npm/grunt-radical"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in grunt-radical."
+date: "2020-09-11"
+pubdate: "2020-09-11"
+affected_range: "=0.0.14"
+fixed_versions: []
+affected_versions: "Version 0.0.14"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/935"
+- "https://github.com/advisories/GHSA-4627-w373-375v"
+uuid: "f448a994-6217-45c8-97e7-e07bbeaefbbe"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

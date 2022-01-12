@@ -1,0 +1,24 @@
+---
+identifier: "GMS-2020-412"
+identifiers:
+- "GHSA-353r-3v84-9pjj"
+- "GMS-2020-412"
+package_slug: "npm/nothing-js"
+title: "Malicious Package"
+description: "`nothing-js` contained a malicious script that attempted to delete all
+  files when `npm test` was run. This module has been unpublished from the npm Registry.
+  If you find this module in your environment remove it."
+date: "2021-10-01"
+pubdate: "2020-09-01"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/650"
+- "https://github.com/advisories/GHSA-353r-3v84-9pjj"
+uuid: "eb37801a-d3f4-457e-856f-03d9f40ab02e"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

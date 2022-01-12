@@ -1,0 +1,23 @@
+---
+identifier: "GMS-2020-530"
+identifiers:
+- "GHSA-5854-jvxx-2cg9"
+- "GMS-2020-530"
+package_slug: "npm/subtext"
+title: "Improper Neutralization"
+description: "Improper Neutralization in subtext."
+date: "2020-09-03"
+pubdate: "2020-09-03"
+affected_range: ">=4.1.0"
+fixed_versions: []
+affected_versions: "All versions starting from 4.1.0"
+not_impacted: "Unfortunately, there is no solution available yet."
+solution: "Upgrade to version +inf or above."
+urls:
+- "https://www.npmjs.com/advisories/1478"
+- "https://github.com/advisories/GHSA-5854-jvxx-2cg9"
+uuid: "7e092e34-c147-41de-842a-7f70bd1a59f1"
+cwe_ids:
+- "CWE-1035"
+- "CWE-707"
+- "CWE-937"

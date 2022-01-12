@@ -1,0 +1,24 @@
+---
+identifier: "GMS-2019-73"
+identifiers:
+- "GHSA-cxw4-9qv9-vx5h"
+- "GMS-2019-73"
+package_slug: "nuget/PeterO.Cbor"
+title: "Improper Neutralization"
+description: "Improper Neutralization in PeterO.Cbor."
+date: "2020-07-07"
+pubdate: "2019-09-30"
+affected_range: "(,4.0.0)"
+fixed_versions:
+- "4.0.0"
+affected_versions: "All versions before 4.0.0"
+not_impacted: "All versions starting from 4.0.0"
+solution: "Upgrade to version 4.0.0 or above."
+urls:
+- "https://github.com/peteroupc/CBOR/security/advisories/GHSA-cxw4-9qv9-vx5h"
+- "https://github.com/advisories/GHSA-cxw4-9qv9-vx5h"
+uuid: "27ddbc3b-6e7e-45ad-bf6e-fa721f524757"
+cwe_ids:
+- "CWE-1035"
+- "CWE-707"
+- "CWE-937"

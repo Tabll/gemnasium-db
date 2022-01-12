@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2020-297"
+identifiers:
+- "GHSA-92px-q4w8-hrr5"
+- "GMS-2020-297"
+package_slug: "npm/impala"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in impala."
+date: "2021-09-24"
+pubdate: "2020-09-01"
+affected_range: "=1.1.7"
+fixed_versions: []
+affected_versions: "Version 1.1.7"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/628"
+- "https://github.com/shenfw1987/impala"
+- "https://snyk.io/vuln/SNYK-JS-IMPALA-450989"
+- "https://github.com/advisories/GHSA-92px-q4w8-hrr5"
+uuid: "4226f670-fab8-461f-a1e0-e7c4a9ebd287"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"
