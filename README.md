@@ -48,7 +48,7 @@ contributions.
 | @mattchrist    | #173                  |
 | @curvedriver   | #174                  |
 | @AFDesk        | #175                  |
-| @patrickmorton | #179                  |
+| @patrickmorton | #179,#180             |
 | @westonsteimel | !11629                |
 
 ## Directory structure
