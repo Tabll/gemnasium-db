@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2022-11"
+identifiers:
+- "GHSA-64g7-mvw6-v9qj"
+- "GMS-2022-11"
+package_slug: "npm/shelljs"
+title: "Improper Privilege Management in shelljs"
+description: "Output from the synchronous version of `shell.exec()` may be visible to 
+  other users on the same system. You may be affected if you execute `shell.exec()` 
+  in multi-user Mac, Linux, or WSL environments, or if you execute `shell.exec()` 
+  as the root user. Other shelljs functions (including the asynchronous version 
+  of `shell.exec()`) are not impacted."
+date: "2022-01-14"
+pubdate: "2022-01-14"
+affected_range: "<0.8.5"
+fixed_versions:
+- "0.8.5"
+affected_versions: "All versions before 0.8.5"
+not_impacted: "All versions starting from 0.8.5"
+solution: "Upgrade to version 0.8.5 or above."
+urls:
+- "https://github.com/shelljs/shelljs/security/advisories/GHSA-64g7-mvw6-v9qj"
+- "https://huntr.dev/bounties/50996581-c08e-4eed-a90e-c0bac082679c/"
+- "https://github.com/advisories/GHSA-64g7-mvw6-v9qj"
+uuid: "0d528ed9-c504-475b-a1a5-590591214c86"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
