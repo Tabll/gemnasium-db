@@ -2,13 +2,11 @@ stages:
   - sync
 
 run:
-  image: ubuntu:20.04
+  image: tabll/git:latest
   stage: sync
   tags:
     - docker
   before_script:
-    - apt update
-    - apt install -y git
     - git config --global user.name "Tabll"
     - git config --global user.email "tabll@outlook.com"
 
