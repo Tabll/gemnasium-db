@@ -1,10 +1,12 @@
+# community-sync
 ---
 identifier: "GMS-2022-10"
 identifiers:
 - "GHSA-5rqg-jm4f-cqx7"
 - "GMS-2022-10"
+- "CVE-2021-23567"
 package_slug: "npm/Colors"
-title: "Infinite loop causing Denial of Service in colors"
+title: "Loop with Unreachable Exit Condition ('Infinite Loop')"
 description: "colors is a library for including colored text in node.js consoles.
   Between January, colors were published including malicious code that caused a Denial
   of Service due to an infinite loop. Software dependent on these versions experienced
@@ -23,7 +25,10 @@ urls:
 - "https://github.com/Marak/colors.js/commit/5d2d242f656103ac38086d6b26433a09f1c38c75"
 - "https://github.com/Marak/colors.js/commit/6bc50e79eeaa1d87369bb3e7e608ebed18c5cf26"
 - "https://github.com/advisories/GHSA-5rqg-jm4f-cqx7"
+cvss_v2: "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
 uuid: "91e837ea-58c6-4758-a81c-da66d8d9e784"
 cwe_ids:
 - "CWE-1035"
+- "CWE-835"
 - "CWE-937"

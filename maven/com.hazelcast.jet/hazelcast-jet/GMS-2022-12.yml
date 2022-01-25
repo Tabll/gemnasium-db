@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2022-12"
+identifiers:
+- "GHSA-v57x-gxfj-484q"
+- "GMS-2022-12"
+package_slug: "maven/com.hazelcast.jet/hazelcast-jet"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in com.hazelcast.jet:hazelcast-jet."
+date: "2022-01-21"
+pubdate: "2022-01-21"
+affected_range: "[4.1,4.5.3)"
+fixed_versions:
+- "4.5.3"
+affected_versions: "All versions starting from 4.1 before 4.5.3"
+not_impacted: "All versions before 4.1, all versions starting from 4.5.3"
+solution: "Upgrade to version 4.5.3 or above."
+urls:
+- "https://github.com/hazelcast/hazelcast/security/advisories/GHSA-v57x-gxfj-484q"
+- "https://github.com/advisories/GHSA-v57x-gxfj-484q"
+uuid: "ff8ae72e-8cea-4bd2-ac66-0aa5b4d21275"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"
