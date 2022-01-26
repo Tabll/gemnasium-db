@@ -48,7 +48,7 @@ contributions.
 | @mattchrist    | #173                  |
 | @curvedriver   | #174                  |
 | @AFDesk        | #175                  |
-| @patrickmorton | #179,#180             |
+| @patrickmorton | #179,#180,#182        |
 | @westonsteimel | !11629                |
 | @mburakouski   | #181                  |
 
