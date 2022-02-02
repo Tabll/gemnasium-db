@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2022-16"
+identifiers:
+- "GHSA-f7qw-5fgj-247x"
+- "GMS-2022-16"
+package_slug: "pypi/plone.app.contenttypes"
+title: "Cross-site Scripting and Open Redirect in plone.app.contenttypes"
+description: "Plone is vulnerable to reflected cross site scripting and open 
+  redirect when an attacker can get a compromised version of the `image_view_fullscreen`
+  page in a cache, for example in Varnish. The technique is known as cache poisoning.
+  Any later visitor can get redirected when clicking on a link on this page.
+  Usually only anonymous users are affected, but this depends on your cache settings."
+date: "2022-02-01"
+pubdate: "2022-02-01"
+affected_range: "<2.2.3"
+fixed_versions:
+- "2.2.3"
+affected_versions: "All versions before 2.2.3"
+not_impacted: "All versions starting from 2.2.3"
+solution: "Upgrade to version 2.2.3 or above."
+urls:
+- "https://github.com/plone/Products.ATContentTypes/security/advisories/GHSA-g4c2-ghfg-g5rh"
+- "https://github.com/plone/plone.app.contenttypes/security/advisories/GHSA-f7qw-5fgj-247x"
+- "https://github.com/advisories/GHSA-f7qw-5fgj-247x"
+uuid: "cca8dc08-e0ee-430d-a283-da275efcc7a6"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
