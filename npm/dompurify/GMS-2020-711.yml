@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2020-711"
+identifiers:
+- "GHSA-mjjq-c88q-qhr6"
+- "GMS-2020-711"
+package_slug: "npm/dompurify"
+title: "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+description: "Improper Neutralization of Input During Web Page Generation ('Cross-site
+  Scripting') in dompurify."
+date: "2021-09-29"
+pubdate: "2020-09-03"
+affected_range: "<2.0.7"
+fixed_versions:
+- "2.0.7"
+affected_versions: "All versions before 2.0.7"
+not_impacted: "All versions starting from 2.0.7"
+solution: "Upgrade to version 2.0.7 or above."
+urls:
+- "https://github.com/cure53/DOMPurify/releases/tag/2.0.7"
+- "https://www.npmjs.com/advisories/1223"
+- "https://github.com/advisories/GHSA-mjjq-c88q-qhr6"
+uuid: "61ae891b-fa29-4719-a9ec-2bd7cab54ebe"
+cwe_ids:
+- "CWE-1035"
+- "CWE-79"
+- "CWE-937"

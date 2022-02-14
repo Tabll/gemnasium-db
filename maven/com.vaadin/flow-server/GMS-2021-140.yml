@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2021-140"
+identifiers:
+- "GHSA-8vfw-v2jv-9hwc"
+- "GMS-2021-140"
+package_slug: "maven/com.vaadin/flow-server"
+title: "Improper Neutralization"
+description: "Improper Neutralization in com.vaadin:flow-server."
+date: "2021-06-28"
+pubdate: "2021-06-28"
+affected_range: "[2.0.0,2.6.1],[3.0.0,6.0.9]"
+fixed_versions:
+- "2.6.2"
+- "6.0.10"
+affected_versions: "All versions starting from 2.0.0 up to 2.6.1, all versions starting
+  from 3.0.0 up to 6.0.9"
+not_impacted: "All versions before 2.0.0, all versions after 2.6.1 before 3.0.0, all
+  versions after 6.0.9"
+solution: "Upgrade to versions 2.6.2, 6.0.10 or above."
+urls:
+- "https://github.com/vaadin/flow/security/advisories/GHSA-8vfw-v2jv-9hwc"
+- "https://vaadin.com/security/cve-2021-33604"
+- "https://github.com/advisories/GHSA-8vfw-v2jv-9hwc"
+uuid: "3511dfc7-2b27-4482-aafa-63c1b6eb3574"
+cwe_ids:
+- "CWE-1035"
+- "CWE-707"
+- "CWE-937"

@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-746"
+identifiers:
+- "GHSA-ch52-vgq2-943f"
+- "GMS-2020-746"
+package_slug: "npm/marked"
+title: "Regular Expression Denial of Service in marked"
+description: "Affected versions of `marked` are vulnerable to Regular Expression Denial
+  of Service (ReDoS). The `_label` subrule may significantly degrade parsing performance
+  of malformed input.\n\n\n## Recommendation\n\nUpgrade to version 0.7.0 or later."
+date: "2020-09-03"
+pubdate: "2020-09-03"
+affected_range: ">=0.4.0 <0.7.0"
+fixed_versions:
+- "0.7.0"
+affected_versions: "All versions starting from 0.4.0 before 0.7.0"
+not_impacted: "All versions before 0.4.0, all versions starting from 0.7.0"
+solution: "Upgrade to version 0.7.0 or above."
+urls:
+- "https://www.npmjs.com/advisories/1076"
+- "https://github.com/advisories/GHSA-ch52-vgq2-943f"
+uuid: "8a51b528-2cfd-4b8c-85bf-4ae222fcbd9e"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

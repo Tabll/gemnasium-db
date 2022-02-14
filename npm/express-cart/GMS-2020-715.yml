@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-715"
+identifiers:
+- "GHSA-8h8v-6qqm-fwpq"
+- "GMS-2020-715"
+package_slug: "npm/express-cart"
+title: "Relative Path Traversal"
+description: "Relative Path Traversal in express-cart."
+date: "2021-09-24"
+pubdate: "2020-09-01"
+affected_range: "<=1.1.5"
+fixed_versions:
+- "1.1.7"
+affected_versions: "All versions up to 1.1.5"
+not_impacted: "All versions after 1.1.5"
+solution: "Upgrade to version 1.1.7 or above."
+urls:
+- "https://hackerone.com/reports/343726"
+- "https://www.npmjs.com/advisories/676"
+- "https://github.com/advisories/GHSA-8h8v-6qqm-fwpq"
+uuid: "3ae9c94d-0650-41ba-806c-402936ff8c75"
+cwe_ids:
+- "CWE-1035"
+- "CWE-352"
+- "CWE-937"

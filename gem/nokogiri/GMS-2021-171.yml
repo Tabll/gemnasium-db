@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2021-171"
+identifiers:
+- "GHSA-7rrm-v45f-jp64"
+- "GMS-2021-171"
+package_slug: "gem/nokogiri"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in nokogiri."
+date: "2021-05-17"
+pubdate: "2021-05-17"
+affected_range: "<1.11.4"
+fixed_versions:
+- "1.11.4"
+affected_versions: "All versions before 1.11.4"
+not_impacted: "All versions starting from 1.11.4"
+solution: "Upgrade to version 1.11.4 or above."
+urls:
+- "https://github.com/sparklemotion/nokogiri/security/advisories/GHSA-7rrm-v45f-jp64"
+- "https://github.com/advisories/GHSA-7rrm-v45f-jp64"
+uuid: "8b767b94-586d-4f9e-9226-20d2b4107cd7"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

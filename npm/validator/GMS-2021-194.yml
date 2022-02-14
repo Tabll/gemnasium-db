@@ -1,0 +1,29 @@
+---
+identifier: "GMS-2021-194"
+identifiers:
+- "GHSA-xx4c-jj58-r7x6"
+- "GMS-2021-194"
+package_slug: "npm/validator"
+title: " Inefficient Regular Expression Complexity in Validator.js"
+description: "### Impact\nVersions of `validator` prior to 13.7.0 are affected by
+  an inefficient Regular Expression complexity  when using the `rtrim` and `trim`
+  sanitizers.\n\n### Patches\nThe problem has been patched in validator 13.7.0"
+date: "2021-11-19"
+pubdate: "2021-11-19"
+affected_range: ">=11.1.0 <13.7.0"
+fixed_versions:
+- "13.7.0"
+affected_versions: "All versions starting from 11.1.0 before 13.7.0"
+not_impacted: "All versions before 11.1.0, all versions starting from 13.7.0"
+solution: "Upgrade to version 13.7.0 or above."
+urls:
+- "https://github.com/validatorjs/validator.js/security/advisories/GHSA-xx4c-jj58-r7x6"
+- "https://nvd.nist.gov/vuln/detail/CVE-2021-3765"
+- "https://github.com/validatorjs/validator.js/issues/1599"
+- "https://github.com/validatorjs/validator.js/pull/1738"
+- "https://huntr.dev/bounties/c37e975c-21a3-4c5f-9b57-04d63b28cfc9/"
+- "https://github.com/advisories/GHSA-xx4c-jj58-r7x6"
+uuid: "a99a707c-4460-421f-9787-09722c4fd8b2"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

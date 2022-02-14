@@ -1,0 +1,29 @@
+---
+identifier: "GMS-2021-177"
+identifiers:
+- "GHSA-g54h-m393-cpwq"
+- "GMS-2021-177"
+package_slug: "go/github.com/opencontainers/runc"
+title: "Devices resource list treated as a denylist by default"
+description: "Contrary to the 
+  OCI runtime specification
+  `runc`'s implementation of the `linux.resources.devices` list was a black-list by
+  default. This means that users who created their own `config.json` objects and didn't
+  prefix a deny-all rule (`{\"allow\": false, \"permissions\": \"rwm\"}` or equivalent)
+  were not provided protection by the `devices` cgroup."
+date: "2021-12-20"
+pubdate: "2021-12-20"
+affected_range: "<=1.0.0-rc90"
+fixed_versions:
+- "1.0.0-rc91"
+affected_versions: "All versions up to 1.0.0-rc90"
+not_impacted: "All versions after 1.0.0-rc90"
+solution: "Upgrade to version 1.0.0-rc91 or above. *Note*: 1.0.0-rc91 may be an unstable
+  version. Use caution."
+urls:
+- "https://github.com/opencontainers/runc/security/advisories/GHSA-g54h-m393-cpwq"
+- "https://github.com/advisories/GHSA-g54h-m393-cpwq"
+uuid: "bfdc8e36-4894-4b69-b57d-86476bdd49ad"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

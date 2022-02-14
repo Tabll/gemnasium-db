@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2020-778"
+identifiers:
+- "GHSA-x9hc-rw35-f44h"
+- "GMS-2020-778"
+package_slug: "npm/static-eval"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in static-eval."
+date: "2021-09-27"
+pubdate: "2020-09-02"
+affected_range: "<=2.0.1"
+fixed_versions:
+- "2.0.2"
+affected_versions: "All versions up to 2.0.1"
+not_impacted: "All versions after 2.0.1"
+solution: "Upgrade to version 2.0.2 or above."
+urls:
+- "https://www.npmjs.com/advisories/758"
+- "https://github.com/advisories/GHSA-x9hc-rw35-f44h"
+uuid: "f054ee0b-bc92-4c19-8449-3bc50f0e1439"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

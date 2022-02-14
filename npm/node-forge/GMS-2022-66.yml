@@ -1,0 +1,32 @@
+---
+identifier: "GMS-2022-66"
+identifiers:
+- "GHSA-5rrq-pxf6-6jx5"
+- "GMS-2022-66"
+package_slug: "npm/node-forge"
+title: "Prototype Pollution in node-forge debug API."
+description: "### Impact\nThe `forge.debug` API had a potential prototype pollution
+  issue if called with untrusted input. The API was only used for internal debug purposes
+  in a safe way and never documented or advertised.  It is suspected that uses of
+  this API, if any exist, would likely not have used untrusted inputs in a vulnerable
+  way.\n\n### Patches\nThe `forge.debug` API and related functions were removed in
+  1.0.0.\n\n### Workarounds\nDon't use the `forge.debug` API directly or indirectly
+  with untrusted input.\n\n### References\n- https://www.huntr.dev/bounties/1-npm-node-forge/\n\n###
+  For more information\nIf you have any questions or comments about this advisory:\n*
+  Open an issue in [forge](https://github.com/digitalbazaar/forge).\n* Email us at
+  support@digitalbazaar.com."
+date: "2022-01-08"
+pubdate: "2022-01-08"
+affected_range: "<1.0.0"
+fixed_versions:
+- "1.0.0"
+affected_versions: "All versions before 1.0.0"
+not_impacted: "All versions starting from 1.0.0"
+solution: "Upgrade to version 1.0.0 or above."
+urls:
+- "https://github.com/digitalbazaar/forge/security/advisories/GHSA-5rrq-pxf6-6jx5"
+- "https://github.com/advisories/GHSA-5rrq-pxf6-6jx5"
+uuid: "35de6cb2-3049-439e-a7ea-0add07fc90f5"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

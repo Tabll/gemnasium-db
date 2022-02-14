@@ -1,0 +1,31 @@
+---
+identifier: "GMS-2021-187"
+identifiers:
+- "GHSA-g2q5-5433-rhrf"
+- "GMS-2021-187"
+package_slug: "npm/rc"
+title: "Embedded malware in rc"
+description: "The npm package `rc` had versions published with malicious code. Users
+  of affected versions (1.2.9, 1.3.9, and 2.3.9) should downgrade to 1.2.8 as soon
+  as possible and check their systems for suspicious activity.\nAny computer that
+  has this package installed or running should be considered fully compromised. All
+  secrets and keys stored on that computer should be rotated immediately from a different
+  computer. The package should be removed, but as full control of the computer may
+  have been given to an outside entity, there is no guarantee that removing the package
+  will remove all malicious software resulting from installing it."
+date: "2021-11-04"
+pubdate: "2021-11-04"
+affected_range: "=1.2.9||=1.3.9||=2.3.9"
+fixed_versions: []
+affected_versions: "Version 1.2.9, version 1.3.9, version 2.3.9"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/dominictarr/rc"
+- "https://www.npmjs.com/package/rc"
+- "https://www.virustotal.com/gui/file/26451f7f6fe297adf6738295b1dcc70f7678434ef21d8b6aad5ec00beb8a72cf?nocache=1"
+- "https://github.com/advisories/GHSA-g2q5-5433-rhrf"
+uuid: "7a22e584-c144-4497-8359-a0788061b33a"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

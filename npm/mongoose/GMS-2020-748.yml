@@ -1,0 +1,32 @@
+---
+identifier: "GMS-2020-748"
+identifiers:
+- "GHSA-r5xw-q988-826m"
+- "GMS-2020-748"
+package_slug: "npm/mongoose"
+title: "Remote Memory Exposure in mongoose"
+description: "Versions of `mongoose` before 4.3.6, 3.8.39 are vulnerable to remote
+  memory exposure.\n\nTrying to save a number to a field of type Buffer on the affected
+  mongoose versions allocates a chunk of uninitialized memory and stores it in the
+  database.\n\n\n## Recommendation\n\nUpdate to version 4.3.6, 3.8.39 or later."
+date: "2021-09-23"
+pubdate: "2020-09-01"
+affected_range: ">=3.5.5 <=3.8.38||>=4.0.0 <=4.3.5"
+fixed_versions:
+- "3.8.39"
+- "4.3.6"
+affected_versions: "All versions starting from 3.5.5 up to 3.8.38, all versions starting
+  from 4.0.0 up to 4.3.5"
+not_impacted: "All versions before 3.5.5, all versions after 3.8.38 before 4.0.0,
+  all versions after 4.3.5"
+solution: "Upgrade to versions 3.8.39, 4.3.6 or above."
+urls:
+- "https://github.com/Automattic/mongoose/issues/3764"
+- "https://gist.github.com/ChALkeR/440bc3dfcbd9b6da75c3"
+- "https://gist.github.com/ChALkeR/d4a8055625221b6e65f0"
+- "https://www.npmjs.com/advisories/599"
+- "https://github.com/advisories/GHSA-r5xw-q988-826m"
+uuid: "de72d02e-6cbf-4499-afab-e86dba1eec5c"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

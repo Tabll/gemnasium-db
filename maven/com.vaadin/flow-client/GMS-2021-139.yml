@@ -1,0 +1,24 @@
+---
+identifier: "GMS-2021-139"
+identifiers:
+- "GHSA-6hgr-2g6q-3rmc"
+- "GMS-2021-139"
+package_slug: "maven/com.vaadin/flow-client"
+title: "Cross-Site Request Forgery (CSRF)"
+description: "Cross-Site Request Forgery (CSRF) in com.vaadin:flow-client."
+date: "2021-10-08"
+pubdate: "2021-04-22"
+affected_range: "[5.0.0,6.0.5)"
+fixed_versions:
+- "6.0.5"
+affected_versions: "All versions starting from 5.0.0 before 6.0.5"
+not_impacted: "All versions before 5.0.0, all versions starting from 6.0.5"
+solution: "Upgrade to version 6.0.5 or above."
+urls:
+- "https://github.com/vaadin/flow/security/advisories/GHSA-6hgr-2g6q-3rmc"
+- "https://github.com/advisories/GHSA-6hgr-2g6q-3rmc"
+uuid: "b4fd8433-1c60-46dd-8cd8-20bf0d46e617"
+cwe_ids:
+- "CWE-1035"
+- "CWE-352"
+- "CWE-937"

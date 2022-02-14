@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2021-173"
+identifiers:
+- "GHSA-8xfw-5q82-3652"
+- "GMS-2021-173"
+package_slug: "gem/spree_auth_devise"
+title: "Cross-Site Request Forgery (CSRF)"
+description: "Cross-Site Request Forgery (CSRF) in spree_auth_devise."
+date: "2021-11-18"
+pubdate: "2021-11-18"
+affected_range: "=4.1.0"
+fixed_versions:
+- "4.1.1"
+affected_versions: "Version 4.1.0"
+not_impacted: "All versions before 4.1.0, all versions after 4.1.0"
+solution: "Upgrade to version 4.1.1 or above."
+urls:
+- "https://github.com/solidusio/solidus_auth_devise/security/advisories/GHSA-xm34-v85h-9pg2"
+- "https://github.com/spree/spree_auth_devise/security/advisories/GHSA-8xfw-5q82-3652"
+- "https://github.com/advisories/GHSA-8xfw-5q82-3652"
+uuid: "f7c3234b-99a6-41fb-98fb-6155c530e521"
+cwe_ids:
+- "CWE-1035"
+- "CWE-352"
+- "CWE-937"

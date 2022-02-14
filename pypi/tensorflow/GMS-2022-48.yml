@@ -1,0 +1,31 @@
+---
+identifier: "GMS-2022-48"
+identifiers:
+- "GHSA-43q8-3fv7-pr5x"
+- "GMS-2022-48"
+package_slug: "pypi/tensorflow"
+title: "Improper Validation of Integrity Check Value in TensorFlow"
+description: "The implementation of `tf.sparse.split`
+  does not fully validate the input arguments."
+date: "2022-02-09"
+pubdate: "2022-02-09"
+affected_range: "<2.5.3||>=2.6.0,<2.6.3||==2.7.0"
+fixed_versions:
+- "2.5.3"
+- "2.6.3"
+- "2.7.1"
+affected_versions: "All versions before 2.5.3, all versions starting from 2.6.0 before
+  2.6.3, version 2.7.0"
+not_impacted: "All versions starting from 2.5.3 before 2.6.0, all versions starting
+  from 2.6.3 before 2.7.0, all versions after 2.7.0"
+solution: "Upgrade to versions 2.5.3, 2.6.3, 2.7.1 or above."
+urls:
+- "https://github.com/tensorflow/tensorflow/security/advisories/GHSA-43q8-3fv7-pr5x"
+- "https://github.com/tensorflow/tensorflow/security/advisories/GHSA-pgcq-h79j-2f69"
+- "https://github.com/tensorflow/tensorflow/pull/53695"
+- "https://github.com/tensorflow/tensorflow/commit/61bf91e768173b001d56923600b40d9a95a04ad5"
+- "https://github.com/advisories/GHSA-43q8-3fv7-pr5x"
+uuid: "4add4d07-6e00-4e22-89b2-167fed304aaa"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

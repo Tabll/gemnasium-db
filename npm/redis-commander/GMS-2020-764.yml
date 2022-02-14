@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-764"
+identifiers:
+- "GHSA-8c8c-4vfj-rrpc"
+- "GMS-2020-764"
+package_slug: "npm/redis-commander"
+title: "Reflected Cross-Site Scripting in redis-commander"
+description: "Affected versions of `redis-commander` contain a cross-site scripting
+  vulnerability in the `highlighterId` paramter of the clipboard.swf component on
+  hosts serving Redis Commander."
+date: "2021-09-23"
+pubdate: "2020-09-01"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://hackerone.com/reports/296377"
+- "https://www.npmjs.com/advisories/562"
+- "https://github.com/advisories/GHSA-8c8c-4vfj-rrpc"
+uuid: "6171ce66-c0b5-414a-b990-a66e804e94a5"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

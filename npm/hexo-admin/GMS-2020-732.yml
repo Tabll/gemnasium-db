@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-732"
+identifiers:
+- "GHSA-phph-xpj4-wvcv"
+- "GMS-2020-732"
+package_slug: "npm/hexo-admin"
+title: "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+description: "Improper Neutralization of Input During Web Page Generation ('Cross-site
+  Scripting') in hexo-admin."
+date: "2021-09-29"
+pubdate: "2020-09-03"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/jaredly/hexo-admin/issues/185"
+- "https://www.npmjs.com/advisories/1211"
+- "https://github.com/advisories/GHSA-phph-xpj4-wvcv"
+uuid: "f81d14fa-ee3e-4806-9ba9-267ee122a1b1"
+cwe_ids:
+- "CWE-1035"
+- "CWE-79"
+- "CWE-937"

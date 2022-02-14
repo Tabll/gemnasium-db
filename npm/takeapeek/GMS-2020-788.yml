@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-788"
+identifiers:
+- "GHSA-4q2f-8g74-qm56"
+- "GMS-2020-788"
+package_slug: "npm/takeapeek"
+title: "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+description: "Improper Neutralization of Input During Web Page Generation ('Cross-site
+  Scripting') in takeapeek."
+date: "2021-09-28"
+pubdate: "2020-09-03"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://hackerone.com/reports/490728"
+- "https://www.npmjs.com/advisories/1038"
+- "https://github.com/advisories/GHSA-4q2f-8g74-qm56"
+uuid: "86d1e0b5-0e64-4d6f-975a-d96d9f5bc748"
+cwe_ids:
+- "CWE-1035"
+- "CWE-79"
+- "CWE-937"

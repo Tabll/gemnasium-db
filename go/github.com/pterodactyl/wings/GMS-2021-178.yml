@@ -1,0 +1,33 @@
+---
+identifier: "GMS-2021-178"
+identifiers:
+- "GHSA-6rg3-8h8x-5xfv"
+- "GMS-2021-178"
+package_slug: "go/github.com/pterodactyl/wings"
+title: "Unchecked hostname resolution could allow access to local network resources
+  by users outside the local network"
+description: "### Impact\nA newly implemented route allowing users to download files
+  from remote endpoints was not properly verifying the destination hostname for user
+  provided URLs. This would allow malicious users to potentially access resources
+  on local networks that would otherwise be inaccessible.\n\nThis vulnerability requires
+  valid authentication credentials and is therefore **not exploitable by unauthenticated
+  users**. If you are running an instance for yourself or other trusted individuals
+  this impact is unlikely to be of major concern to you. However, you should still
+  upgrade for security sake.\n\n### Patches\nUsers should upgrade to the latest version
+  of Wings.\n\n### Workarounds\nThere is no workaround available that does not involve
+  modifying Panel or Wings code.\n"
+date: "2021-10-05"
+pubdate: "2021-06-23"
+affected_range: "=1.2.0"
+fixed_versions:
+- "1.2.1"
+affected_versions: "Version 1.2.0"
+not_impacted: "All versions before 1.2.0, all versions after 1.2.0"
+solution: "Upgrade to version 1.2.1 or above."
+urls:
+- "https://github.com/pterodactyl/wings/security/advisories/GHSA-6rg3-8h8x-5xfv"
+- "https://github.com/advisories/GHSA-6rg3-8h8x-5xfv"
+uuid: "4ca5aba7-3e05-41b3-aedc-c329f009eeb1"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

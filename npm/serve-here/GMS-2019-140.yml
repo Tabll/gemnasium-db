@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2019-140"
+identifiers:
+- "GHSA-g8m7-qhv7-9h5x"
+- "GMS-2019-140"
+package_slug: "npm/serve-here"
+title: "Relative Path Traversal"
+description: "Relative Path Traversal in serve-here."
+date: "2021-09-22"
+pubdate: "2019-07-05"
+affected_range: "<=3.2.0"
+fixed_versions: []
+affected_versions: "All versions up to 3.2.0"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/vivaxy/here/pull/17"
+- "https://github.com/vivaxy/here/commit/298dbab41344dfb7f95f66b1fa7b5cfb436bd4a2"
+- "https://nodesecurity.io/advisories/554"
+- "https://www.npmjs.com/advisories/554"
+- "https://hackerone.com/reports/296254"
+- "https://hackerone.com/reports/569966"
+- "https://github.com/advisories/GHSA-g8m7-qhv7-9h5x"
+uuid: "4d5c23ac-d232-4d9b-bdea-64b12bc2ae94"
+cwe_ids:
+- "CWE-1035"
+- "CWE-352"
+- "CWE-937"

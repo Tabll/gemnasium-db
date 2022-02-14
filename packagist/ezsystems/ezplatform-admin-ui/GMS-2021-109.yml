@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2021-109"
+identifiers:
+- "GHSA-9jp8-cwwx-p64q"
+- "GMS-2021-109"
+package_slug: "packagist/ezsystems/ezplatform-admin-ui"
+title: "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+description: "Improper Neutralization of Input During Web Page Generation ('Cross-site
+  Scripting') in ezsystems/ezplatform-admin-ui."
+date: "2021-12-01"
+pubdate: "2021-12-01"
+affected_range: ">=1.5.0,<=1.5.25"
+fixed_versions:
+- "1.5.25.1"
+affected_versions: "All versions starting from 1.5.0 up to 1.5.25"
+not_impacted: "All versions before 1.5.0, all versions after 1.5.25"
+solution: "Upgrade to version 1.5.25.1 or above."
+urls:
+- "https://github.com/ezsystems/ezplatform-admin-ui/security/advisories/GHSA-9jp8-cwwx-p64q"
+- "https://developers.ibexa.co/security-advisories/ibexa-sa-2021-010-xss-in-richtext-custom-tag-attributes"
+- "https://github.com/advisories/GHSA-9jp8-cwwx-p64q"
+uuid: "ab29a51d-fea4-4f58-b28f-855f9f37a42d"
+cwe_ids:
+- "CWE-1035"
+- "CWE-79"
+- "CWE-937"

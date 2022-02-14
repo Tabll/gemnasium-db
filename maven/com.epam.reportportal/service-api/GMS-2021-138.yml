@@ -1,0 +1,29 @@
+---
+identifier: "GMS-2021-138"
+identifiers:
+- "GHSA-7qfm-6m33-rgg9"
+- "GMS-2021-138"
+package_slug: "maven/com.epam.reportportal/service-api"
+title: "XML External Entity Reference"
+description: "An issue was discovered in service-api before 4.3.12 and 5.x before
+  5.1.1 for Report Portal. It allows XXE, with resultant secrets disclosure and SSRF,
+  via JUnit XML launch import."
+date: "2021-08-13"
+pubdate: "2021-08-13"
+affected_range: "(,4.3.12),[5.0.0,5.1.1)"
+fixed_versions:
+- "4.3.12"
+- "5.1.1"
+affected_versions: "All versions before 4.3.12, all versions starting from 5.0.0 before
+  5.1.1"
+not_impacted: "All versions starting from 4.3.12 before 5.0.0, all versions starting
+  from 5.1.1"
+solution: "Upgrade to versions 4.3.12, 5.1.1 or above."
+urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2020-12642"
+- "https://github.com/reportportal/reportportal/blob/master/SECURITY_ADVISORIES.md"
+- "https://github.com/advisories/GHSA-7qfm-6m33-rgg9"
+uuid: "27b0ece9-3ba3-4945-9367-d70a0a057401"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

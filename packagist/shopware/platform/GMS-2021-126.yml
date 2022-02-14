@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2021-126"
+identifiers:
+- "GHSA-pjj4-jjgc-h3r8"
+- "GMS-2021-126"
+package_slug: "packagist/shopware/platform"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in shopware/platform."
+date: "2021-03-12"
+pubdate: "2021-03-12"
+affected_range: "<=6.3.5.1"
+fixed_versions:
+- "6.3.5.2"
+affected_versions: "All versions up to 6.3.5.1"
+not_impacted: "All versions after 6.3.5.1"
+solution: "Upgrade to version 6.3.5.2 or above."
+urls:
+- "https://github.com/shopware/platform/security/advisories/GHSA-pjj4-jjgc-h3r8"
+- "https://docs.shopware.com/en/shopware-6-en/security-updates/security-update-03-2021"
+- "https://github.com/advisories/GHSA-pjj4-jjgc-h3r8"
+uuid: "b0f4004c-1de2-41a2-91c3-59927946aa0a"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

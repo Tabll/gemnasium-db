@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2020-792"
+identifiers:
+- "GHSA-533p-g2hq-qr26"
+- "GMS-2020-792"
+package_slug: "npm/treekill"
+title: "Command Injection in treekill"
+description: "All versions of `treekill` are vulnerable to Command Injection. The
+  package fails to sanitize values passed to the  `kill` function. If this value is
+  user-controlled it  may allow attackers to run arbitrary commands in the server.
+  The issue only affects Windows systems.\n\n\n## Recommendation\n\nNo fix is currently
+  available. Consider using an alternative package until a fix is made available."
+date: "2021-10-04"
+pubdate: "2020-09-04"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://hackerone.com/reports/703415"
+- "https://www.npmjs.com/advisories/1433"
+- "https://github.com/advisories/GHSA-533p-g2hq-qr26"
+uuid: "6e056dc0-d47e-4a2a-ac44-6c4cfef85104"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

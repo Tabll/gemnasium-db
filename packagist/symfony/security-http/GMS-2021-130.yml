@@ -1,0 +1,32 @@
+---
+identifier: "GMS-2021-130"
+identifiers:
+- "GHSA-g2qj-pmxm-9f8f"
+- "GMS-2021-130"
+package_slug: "packagist/symfony/security-http"
+title: "User enumeration in authentication mechanisms"
+description: "Description\n-----------\n\nThe ability to enumerate users was possible
+  without relevant permissions due to different exception messages depending on whether
+  the user existed or not. It was also possible to enumerate users by using a timing
+  attack, by comparing time elapsed when authenticating an existing user and authenticating
+  a non-existing user.\n\nResolution\n----------\n\nWe now ensure that 403s are returned
+  whether the user exists or not if the password is invalid or if the user does not
+  exist.\n\nThe patch for this issue is available [here](https://github.com/symfony/symfony/commit/2a581d22cc621b33d5464ed65c4bc2057f72f011)
+  for branch 3.4.\n\nCredits\n-------\n\nI would like to thank James Isaac and Mathias
+  Brodala for reporting the issue and Robin Chalas for fixing the issue."
+date: "2021-10-08"
+pubdate: "2021-05-17"
+affected_range: ">=5.1.0,<5.2.8"
+fixed_versions:
+- "5.2.8"
+affected_versions: "All versions starting from 5.1.0 before 5.2.8"
+not_impacted: "All versions before 5.1.0, all versions starting from 5.2.8"
+solution: "Upgrade to version 5.2.8 or above."
+urls:
+- "https://github.com/symfony/symfony/security/advisories/GHSA-g2qj-pmxm-9f8f"
+- "https://github.com/symfony/symfony/commit/2a581d22cc621b33d5464ed65c4bc2057f72f011"
+- "https://github.com/advisories/GHSA-g2qj-pmxm-9f8f"
+uuid: "9aa58c02-87b5-41d7-9d45-b50b41d46234"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

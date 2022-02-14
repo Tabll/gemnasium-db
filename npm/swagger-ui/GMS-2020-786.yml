@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2020-786"
+identifiers:
+- "GHSA-vp93-gcx5-4w52"
+- "GMS-2020-786"
+package_slug: "npm/swagger-ui"
+title: "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+description: "Improper Neutralization of Input During Web Page Generation ('Cross-site
+  Scripting') in swagger-ui."
+date: "2021-09-28"
+pubdate: "2020-09-11"
+affected_range: "<2.2.1"
+fixed_versions:
+- "2.2.1"
+affected_versions: "All versions before 2.2.1"
+not_impacted: "All versions starting from 2.2.1"
+solution: "Upgrade to version 2.2.1 or above."
+urls:
+- "https://github.com/swagger-api/swagger-ui/issues/1864"
+- "https://www.npmjs.com/advisories/986"
+- "https://github.com/advisories/GHSA-vp93-gcx5-4w52"
+uuid: "97650c8c-8f6b-4213-a05a-3a35abf73ca2"
+cwe_ids:
+- "CWE-1035"
+- "CWE-79"
+- "CWE-937"

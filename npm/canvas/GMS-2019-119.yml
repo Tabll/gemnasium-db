@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2019-119"
+identifiers:
+- "GHSA-vpq5-4rc8-c222"
+- "GMS-2019-119"
+package_slug: "npm/canvas"
+title: "Denial of Service in canvas"
+description: "Versions of `canvas` prior to 1.6.10 are vulnerable to Denial of Service.
+  Processing malicious JPEGs or GIFs could crash the node process.\n\n\n## Recommendation\n\nUpgrade
+  to version 1.6.10"
+date: "2020-08-31"
+pubdate: "2019-06-05"
+affected_range: "<1.6.10"
+fixed_versions:
+- "1.6.10"
+affected_versions: "All versions before 1.6.10"
+not_impacted: "All versions starting from 1.6.10"
+solution: "Upgrade to version 1.6.10 or above."
+urls:
+- "https://github.com/Automattic/node-canvas/commit/c3e4ccb1c404da01e83fe5eb3626bf55f7f55957"
+- "https://hackerone.com/reports/315037"
+- "https://www.npmjs.com/advisories/804"
+- "https://github.com/advisories/GHSA-vpq5-4rc8-c222"
+uuid: "1fab3863-2d37-4d05-9c1e-a2d1c93c2e57"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

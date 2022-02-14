@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2019-132"
+identifiers:
+- "GHSA-73cw-jxmm-qpgh"
+- "GMS-2019-132"
+package_slug: "npm/localhost-now"
+title: "Relative Path Traversal"
+description: "Relative Path Traversal in localhost-now."
+date: "2021-08-04"
+pubdate: "2019-06-11"
+affected_range: "<=1.0.2"
+fixed_versions: []
+affected_versions: "All versions up to 1.0.2"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://hackerone.com/reports/329837"
+- "https://github.com/DCKT/localhost-now/blob/master/lib/app.js#L17"
+- "https://nodesecurity.io/advisories/655"
+- "https://www.npmjs.com/advisories/655"
+- "https://github.com/advisories/GHSA-73cw-jxmm-qpgh"
+uuid: "16bc6fa6-a2e0-4021-a66a-18b2dc1bd800"
+cwe_ids:
+- "CWE-1035"
+- "CWE-352"
+- "CWE-937"

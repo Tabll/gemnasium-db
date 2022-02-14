@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2022-46"
+identifiers:
+- "GHSA-8w54-22w9-3g8f"
+- "GMS-2022-46"
+package_slug: "pypi/Products.CMFPlone"
+title: "Cross-site Scripting and Open Redirect in Products.CMFPlone"
+description: "Plone is vulnerable to reflected cross site scripting and
+  open redirect when an attacker can get a compromised version of the image_view_fullscreen
+  page in a cache, for example in Varnish."
+date: "2022-01-31"
+pubdate: "2022-01-28"
+affected_range: "<5.0.0"
+fixed_versions:
+- "5.0.0"
+affected_versions: "All versions before 5.0.0"
+not_impacted: "All versions starting from 5.0.0"
+solution: "Upgrade to version 5.0.0 or above."
+urls:
+- "https://github.com/plone/Products.CMFPlone/security/advisories/GHSA-8w54-22w9-3g8f"
+- "https://github.com/advisories/GHSA-8w54-22w9-3g8f"
+uuid: "126ea653-0e86-47a1-9874-c144acc26dfd"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

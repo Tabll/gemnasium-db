@@ -1,0 +1,24 @@
+---
+identifier: "GMS-2020-760"
+identifiers:
+- "GHSA-4vvp-x9h2-x2vf"
+- "GMS-2020-760"
+package_slug: "npm/public"
+title: "Relative Path Traversal"
+description: "Relative Path Traversal in public."
+date: "2021-09-29"
+pubdate: "2020-09-03"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://hackerone.com/reports/593911"
+- "https://www.npmjs.com/advisories/1144"
+- "https://github.com/advisories/GHSA-4vvp-x9h2-x2vf"
+uuid: "9c5c65a9-89f3-4bd3-a751-7973d9ec6206"
+cwe_ids:
+- "CWE-1035"
+- "CWE-352"
+- "CWE-937"

@@ -1,0 +1,35 @@
+---
+identifier: "GMS-2021-167"
+identifiers:
+- "GHSA-jgpv-4h4c-xhw3"
+- "GMS-2021-167"
+package_slug: "pypi/Pillow"
+title: "Uncontrolled Resource Consumption in pillow"
+description: "### Impact\n_Pillow before 8.1.1 allows attackers to cause a denial
+  of service  because the reported size of a contained image is
+  not properly checked for a BLP container, and thus an attempted memory allocation
+  can be very large._\n\n### Patches\n_An issue was discovered in Pillow before 6.2.0.
+  When reading specially crafted invalid image files, the library can either allocate
+  very large amounts of memory or take an extremely long period of time to process
+  the image._\n\n### Workarounds\n_An issue was discovered in Pillow before 6.2.0.
+  When reading specially crafted invalid image files, the library can either allocate
+  very large amounts of memory or take an extremely long period of time to process
+  the image._\n\n### References\nhttps://nvd.nist.gov/vuln/detail/CVE-2021-27921\n\n###
+  For more information\nIf you have any questions or comments about this advisory:\n*
+  Open an issue in example link to repo
+  email address]"
+date: "2021-04-23"
+pubdate: "2021-04-23"
+affected_range: "<8.1.1"
+fixed_versions:
+- "8.1.2"
+affected_versions: "All versions before 8.1.1"
+not_impacted: "All versions starting from 8.1.1"
+solution: "Upgrade to version 8.1.2 or above."
+urls:
+- "https://github.com/calix2/pyVulApp/security/advisories/GHSA-jgpv-4h4c-xhw3"
+- "https://github.com/advisories/GHSA-jgpv-4h4c-xhw3"
+uuid: "db60ee8a-d592-4cb8-b12b-1aa09a8d779b"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

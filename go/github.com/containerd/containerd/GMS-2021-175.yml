@@ -1,0 +1,32 @@
+---
+identifier: "GMS-2021-175"
+identifiers:
+- "GHSA-5j5w-g665-5m35"
+- "GMS-2021-175"
+package_slug: "go/github.com/containerd/containerd"
+title: "Ambiguous OCI manifest parsing"
+description: "In the OCI Distribution Specification version 1.0.0 and
+  prior and in the OCI Image Specification version 1.0.1 and prior, manifest and index
+  documents are ambiguous without an accompanying Content-Type HTTP header."
+date: "2021-11-18"
+pubdate: "2021-11-18"
+affected_range: "<1.4.12||>=1.5.0 <1.5.8"
+fixed_versions:
+- "1.4.12"
+- "1.5.8"
+affected_versions: "All versions before 1.4.12, all versions starting from 1.5.0 before
+  1.5.8"
+not_impacted: "All versions starting from 1.4.12 before 1.5.0, all versions starting
+  from 1.5.8"
+solution: "Upgrade to versions 1.4.12, 1.5.8 or above."
+urls:
+- "https://github.com/containerd/containerd/security/advisories/GHSA-5j5w-g665-5m35"
+- "https://github.com/opencontainers/distribution-spec/security/advisories/GHSA-mc8v-mgrf-8f4m"
+- "https://github.com/opencontainers/image-spec/security/advisories/GHSA-77vh-xpmg-72qh"
+- "https://github.com/containerd/containerd/releases/tag/v1.4.12"
+- "https://github.com/containerd/containerd/releases/tag/v1.5.8"
+- "https://github.com/advisories/GHSA-5j5w-g665-5m35"
+uuid: "64aca9cf-7680-46d1-8a67-3d43181b53ff"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

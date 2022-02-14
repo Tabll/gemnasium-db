@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2020-750"
+identifiers:
+- "GHSA-5vj8-3v2h-h38v"
+- "GMS-2020-750"
+package_slug: "npm/next"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in next."
+date: "2020-09-04"
+pubdate: "2020-09-04"
+affected_range: "<5.1.0"
+fixed_versions:
+- "5.1.0"
+affected_versions: "All versions before 5.1.0"
+not_impacted: "All versions starting from 5.1.0"
+solution: "Upgrade to version 5.1.0 or above."
+urls:
+- "https://github.com/masasron/vulnerability-research/tree/master/CVE-2018-6184/LFI"
+- "https://www.npmjs.com/advisories/1538"
+- "https://github.com/advisories/GHSA-5vj8-3v2h-h38v"
+uuid: "125df67c-7a4c-42ec-ab93-04e21b47a7d7"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

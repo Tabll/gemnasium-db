@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2020-704"
+identifiers:
+- "GHSA-h97g-4mx7-5p2p"
+- "GMS-2020-704"
+package_slug: "npm/apostrophe"
+title: "Open Redirect in apostrophe"
+description: "Versions of `apostrophe` prior to 2.92.0 are vulnerable to Open Redirect.
+  The package redirected requests to third-party websites if escaped URLs followed
+  by a trailing `/` were appended at the end.\n\n\n\n## Recommendation\n\nUpdate to
+  version 2.92.0 or later."
+date: "2021-09-28"
+pubdate: "2020-09-03"
+affected_range: "<2.92.0"
+fixed_versions:
+- "2.92.0"
+affected_versions: "All versions before 2.92.0"
+not_impacted: "All versions starting from 2.92.0"
+solution: "Upgrade to version 2.92.0 or above."
+urls:
+- "https://github.com/apostrophecms/apostrophe/commit/1eba144bb82bd43dab72ce36cfbd593361b6d9b7"
+- "https://snyk.io/vuln/SNYK-JS-APOSTROPHE-451089"
+- "https://www.npmjs.com/advisories/1029"
+- "https://github.com/advisories/GHSA-h97g-4mx7-5p2p"
+uuid: "d01c66a2-e1c2-487d-87d0-b5b4e26d0bc5"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

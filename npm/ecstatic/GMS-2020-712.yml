@@ -1,0 +1,33 @@
+---
+identifier: "GMS-2020-712"
+identifiers:
+- "GHSA-9q64-mpxx-87fg"
+- "GMS-2020-712"
+package_slug: "npm/ecstatic"
+title: "Open Redirect in ecstatic"
+description: "Versions of `ecstatic` prior to 4.1.2, 3.3.2 or 2.2.2 are vulnerable
+  to Open Redirect. The package fails to validate redirects, allowing attackers to
+  craft requests that result in an `HTTP 301` redirect to any other domains.\n\n\n##
+  Recommendation\n\nIf using `ecstatic` 4.x, upgrade to 4.1.2 or later.\nIf using
+  `ecstatic` 3.x, upgrade to 3.3.2 or later.\nIf using `ecstatic` 2.x, upgrade to
+  2.2.2 or later."
+date: "2020-12-15"
+pubdate: "2020-04-01"
+affected_range: "<2.2.2||>=3.0.0 <3.3.2||>=4.0.0 <4.1.2"
+fixed_versions:
+- "2.2.2"
+- "3.3.2"
+- "4.1.2"
+affected_versions: "All versions before 2.2.2, all versions starting from 3.0.0 before
+  3.3.2, all versions starting from 4.0.0 before 4.1.2"
+not_impacted: "All versions starting from 2.2.2 before 3.0.0, all versions starting
+  from 3.3.2 before 4.0.0, all versions starting from 4.1.2"
+solution: "Upgrade to versions 2.2.2, 3.3.2, 4.1.2 or above."
+urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2019-10775"
+- "https://www.npmjs.com/advisories/830"
+- "https://github.com/advisories/GHSA-9q64-mpxx-87fg"
+uuid: "c122cdf1-1d29-4b8a-ad52-829a28bc6901"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

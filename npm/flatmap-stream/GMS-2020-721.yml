@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2020-721"
+identifiers:
+- "GHSA-9x64-5r7x-2q53"
+- "GMS-2020-721"
+package_slug: "npm/flatmap-stream"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in flatmap-stream."
+date: "2021-10-01"
+pubdate: "2020-09-01"
+affected_range: "=0.1.1"
+fixed_versions: []
+affected_versions: "Version 0.1.1"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/dominictarr/event-stream/issues/116"
+- "https://www.npmjs.com/advisories/737"
+- "https://github.com/advisories/GHSA-9x64-5r7x-2q53"
+uuid: "3ec51115-ae2b-4203-8680-6028ffb482bf"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

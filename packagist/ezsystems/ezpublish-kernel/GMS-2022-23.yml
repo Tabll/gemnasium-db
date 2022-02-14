@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2022-23"
+identifiers:
+- "GHSA-44m4-9cjp-j587"
+- "GMS-2022-23"
+package_slug: "packagist/ezsystems/ezpublish-kernel"
+title: "IBX-1392: Image filenames sanitization"
+description: "ezsystems/ezpublish-kernel versions 7.5.* before 7.5.26 are vulnerable
+  to certain injection attacks and unauthorized access to some image files."
+date: "2022-01-21"
+pubdate: "2022-01-21"
+affected_range: ">=7.5.0,<7.5.26"
+fixed_versions:
+- "7.5.26"
+affected_versions: "All versions starting from 7.5.0 before 7.5.26"
+not_impacted: "All versions before 7.5.0, all versions starting from 7.5.26"
+solution: "Upgrade to version 7.5.26 or above."
+urls:
+- "https://github.com/ezsystems/ezpublish-kernel/security/advisories/GHSA-44m4-9cjp-j587"
+- "https://developers.ibexa.co/security-advisories/ibexa-sa-2022-001-image-filenames-sanitization "
+- "https://github.com/ezsystems/ezpublish-kernel/releases/tag/v7.5.26"
+- "https://github.com/advisories/GHSA-44m4-9cjp-j587"
+uuid: "2416d3d7-84ca-484f-b99c-be61f819094d"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

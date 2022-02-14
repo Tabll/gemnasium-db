@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-790"
+identifiers:
+- "GHSA-wqhw-frpx-5mmp"
+- "GMS-2020-790"
+package_slug: "npm/tomato"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in tomato."
+date: "2021-09-27"
+pubdate: "2020-09-02"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/797"
+- "https://github.com/advisories/GHSA-wqhw-frpx-5mmp"
+uuid: "7d29bc5f-568b-4048-af18-6b165dac9a5e"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

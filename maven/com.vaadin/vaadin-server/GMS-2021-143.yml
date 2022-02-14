@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2021-143"
+identifiers:
+- "GHSA-j23j-q57m-63v3"
+- "GMS-2021-143"
+package_slug: "maven/com.vaadin/vaadin-server"
+title: "Denial of service in DataCommunicator class in Vaadin 8"
+description: "Missing check in `DataCommunicator` class in `com.vaadin:vaadin-server`
+  versions 8.0.0 through 8.14.0 (Vaadin 8.0.0 through 8.14.0) allows authenticated
+  network attacker to cause heap exhaustion by requesting too many rows of data."
+date: "2021-10-13"
+pubdate: "2021-10-13"
+affected_range: "[8.0.0,8.14.1)"
+fixed_versions:
+- "8.14.1"
+affected_versions: "All versions starting from 8.0.0 before 8.14.1"
+not_impacted: "All versions before 8.0.0, all versions starting from 8.14.1"
+solution: "Upgrade to version 8.14.1 or above."
+urls:
+- "https://github.com/vaadin/framework/security/advisories/GHSA-j23j-q57m-63v3"
+- "https://github.com/vaadin/framework/pull/12415"
+- "https://vaadin.com/security/cve-2021-33609"
+- "https://github.com/advisories/GHSA-j23j-q57m-63v3"
+uuid: "5c1370e9-df86-4a41-b50e-0a4299902742"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

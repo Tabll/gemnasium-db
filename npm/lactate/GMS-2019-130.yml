@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2019-130"
+identifiers:
+- "GHSA-68gr-cmcp-g3mj"
+- "GMS-2019-130"
+package_slug: "npm/lactate"
+title: "Directory Traversal in lactate"
+description: "A crafted `GET` request can be leveraged to traverse the directory structure
+  of a host using the lactate web server package, and request arbitrary files outside
+  of the specified web root."
+date: "2021-08-16"
+pubdate: "2019-06-14"
+affected_range: "<=0.13.12"
+fixed_versions: []
+affected_versions: "All versions up to 0.13.12"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/RetireJS/retire.js/commit/800c8140884eaa5753a49308f560c925fe97b9a5"
+- "https://hackerone.com/reports/296645"
+- "https://www.npmjs.com/advisories/560"
+- "https://snyk.io/vuln/npm:lactate:20180123"
+- "https://github.com/advisories/GHSA-68gr-cmcp-g3mj"
+uuid: "fd878296-02b5-44d5-a836-6a87acb01159"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

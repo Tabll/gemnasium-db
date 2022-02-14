@@ -1,0 +1,32 @@
+---
+identifier: "GMS-2021-165"
+identifiers:
+- "GHSA-9wx7-jrvc-28mm"
+- "GMS-2021-165"
+package_slug: "nuget/starkbank-ecdsa"
+title: "Signature verification vulnerability in Stark Bank ecdsa libraries"
+description: "An attacker can forge signatures on arbitrary messages that will verify
+  for any public key. This may allow attackers to authenticate as any user within
+  the Stark Bank platform, and bypass signature verification needed to perform operations
+  on the platform, such as send payments and transfer funds. Additionally, the ability
+  for attackers to forge signatures may impact other users and projects using these
+  libraries in different and unforeseen ways."
+date: "2021-11-08"
+pubdate: "2021-11-08"
+affected_range: "[1.3.1]"
+fixed_versions:
+- "1.3.2"
+affected_versions: "Version 1.3.1"
+not_impacted: "All versions before 1.3.1, all versions after 1.3.1"
+solution: "Upgrade to version 1.3.2 or above."
+urls:
+- "https://github.com/starkbank/ecdsa-python/releases/tag/v2.0.1"
+- "https://research.nccgroup.com/2021/11/08/technical-advisory-arbitrary-signature-forgery-in-stark-bank-ecdsa-libraries/"
+- "https://github.com/starkbank/ecdsa-dotnet"
+- "https://github.com/starkbank/ecdsa-java"
+- "https://github.com/starkbank/ecdsa-node"
+- "https://github.com/advisories/GHSA-9wx7-jrvc-28mm"
+uuid: "852c24b1-cab6-4e61-8ad4-7002b9478dcf"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

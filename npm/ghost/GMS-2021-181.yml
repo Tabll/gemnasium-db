@@ -1,0 +1,39 @@
+---
+identifier: "GMS-2021-181"
+identifiers:
+- "GHSA-65p7-pjj8-ggmr"
+- "GMS-2021-181"
+package_slug: "npm/ghost"
+title: "Member account takeover"
+description: "### Impact\n\nAn error in the implementation of the member email change
+  functionality allows unauthenticated users to change the email address of arbitrary
+  member accounts to one they control by crafting a request to the relevant API endpoint,
+  and validating the new address via magic link sent to the new email address.\n\nGhost(Pro)
+  has already been patched. Self-hosters are impacted if running Ghost a version between
+  3.18.0 and 4.15.0 with members functionality enabled.\n\n### Patches\n\nFixed in
+  4.15.1, all 4.x sites should upgrade as soon as possible.\nFixed in 3.42.6, all
+  3.x sites should upgrade as soon as possible.\n\n### Workarounds\n\nThe patch in
+  4.15.1 and 3.42.6 adds a new authenticated endpoint for updating member email addresses.
+  Updating Ghost is the quickest complete solution.\n\nAs a workaround, if for any
+  reason you cannot update your Ghost instance, you can block the `POST /members/api/send-magic-link/`
+  endpoint, which will also disable member login and signup for your site.\n\n###
+  For more information\n\nIf you have any questions or comments about this advisory:\n*
+  Email us at [security@ghost.org](mailto:security@ghost.org)\n"
+date: "2021-09-23"
+pubdate: "2021-09-23"
+affected_range: ">=3.18.0 <3.42.6||>=4.0.0 <4.15.1"
+fixed_versions:
+- "3.42.6"
+- "4.15.1"
+affected_versions: "All versions starting from 3.18.0 before 3.42.6, all versions
+  starting from 4.0.0 before 4.15.1"
+not_impacted: "All versions before 3.18.0, all versions starting from 3.42.6 before
+  4.0.0, all versions starting from 4.15.1"
+solution: "Upgrade to versions 3.42.6, 4.15.1 or above."
+urls:
+- "https://github.com/TryGhost/Ghost/security/advisories/GHSA-65p7-pjj8-ggmr"
+- "https://github.com/advisories/GHSA-65p7-pjj8-ggmr"
+uuid: "1cb85299-7bf8-4b8f-a18a-5f30c8719fa8"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

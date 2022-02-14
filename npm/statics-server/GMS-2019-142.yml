@@ -1,0 +1,24 @@
+---
+identifier: "GMS-2019-142"
+identifiers:
+- "GHSA-74cp-qw7f-7hpw"
+- "GMS-2019-142"
+package_slug: "npm/statics-server"
+title: "Relative Path Traversal"
+description: "Relative Path Traversal in statics-server."
+date: "2021-08-04"
+pubdate: "2019-06-05"
+affected_range: "<=0.0.9"
+fixed_versions: []
+affected_versions: "All versions up to 0.0.9"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://hackerone.com/reports/355456"
+- "https://www.npmjs.com/advisories/805"
+- "https://github.com/advisories/GHSA-74cp-qw7f-7hpw"
+uuid: "042211dc-9131-4792-8a54-18c8560edaf4"
+cwe_ids:
+- "CWE-1035"
+- "CWE-352"
+- "CWE-937"

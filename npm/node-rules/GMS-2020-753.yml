@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2020-753"
+identifiers:
+- "GHSA-8whr-v3gm-w8h9"
+- "GMS-2020-753"
+package_slug: "npm/node-rules"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in node-rules."
+date: "2021-10-04"
+pubdate: "2020-09-03"
+affected_range: "<5.0.0"
+fixed_versions:
+- "5.0.0"
+affected_versions: "All versions before 5.0.0"
+not_impacted: "All versions starting from 5.0.0"
+solution: "Upgrade to version 5.0.0 or above."
+urls:
+- "https://github.com/mithunsatheesh/node-rules/issues/84"
+- "https://snyk.io/vuln/SNYK-JS-NODERULES-560426"
+- "https://www.npmjs.com/advisories/1499"
+- "https://github.com/advisories/GHSA-8whr-v3gm-w8h9"
+uuid: "362e7240-d569-45e5-bbcb-abfc97d20ea1"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

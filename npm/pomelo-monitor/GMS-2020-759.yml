@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-759"
+identifiers:
+- "GHSA-m5ch-gx8g-rg73"
+- "GMS-2020-759"
+package_slug: "npm/pomelo-monitor"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in pomelo-monitor."
+date: "2021-09-27"
+pubdate: "2020-09-02"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/756"
+- "https://github.com/advisories/GHSA-m5ch-gx8g-rg73"
+uuid: "61a4eb54-447d-4f7a-8698-c064ffd3ba1d"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

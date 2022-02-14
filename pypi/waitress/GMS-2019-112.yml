@@ -1,0 +1,24 @@
+---
+identifier: "GMS-2019-112"
+identifiers:
+- "GHSA-m5ff-3wj3-8ph4"
+- "GMS-2019-112"
+package_slug: "pypi/waitress"
+title: "Improper Neutralization"
+description: "Improper Neutralization in waitress."
+date: "2021-08-19"
+pubdate: "2019-12-26"
+affected_range: "<1.4.1"
+fixed_versions:
+- "1.4.1"
+affected_versions: "All versions before 1.4.1"
+not_impacted: "All versions starting from 1.4.1"
+solution: "Upgrade to version 1.4.1 or above."
+urls:
+- "https://github.com/Pylons/waitress/security/advisories/GHSA-m5ff-3wj3-8ph4"
+- "https://github.com/advisories/GHSA-m5ff-3wj3-8ph4"
+uuid: "348e6911-d9a2-4716-a66a-df5a51ea95f0"
+cwe_ids:
+- "CWE-1035"
+- "CWE-707"
+- "CWE-937"

@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2019-118"
+identifiers:
+- "GHSA-jj6g-7j8p-7gf2"
+- "GMS-2019-118"
+package_slug: "npm/bracket-template"
+title: "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+description: "Improper Neutralization of Input During Web Page Generation ('Cross-site
+  Scripting') in bracket-template."
+date: "2021-08-04"
+pubdate: "2019-05-30"
+affected_range: "<=1.1.5"
+fixed_versions: []
+affected_versions: "All versions up to 1.1.5"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://hackerone.com/reports/317125"
+- "https://www.npmjs.com/advisories/608"
+- "https://github.com/advisories/GHSA-jj6g-7j8p-7gf2"
+uuid: "38cf1c5d-05a5-43a9-8de2-659b178a09aa"
+cwe_ids:
+- "CWE-1035"
+- "CWE-79"
+- "CWE-937"

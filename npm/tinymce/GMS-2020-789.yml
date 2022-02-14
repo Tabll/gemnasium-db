@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2020-789"
+identifiers:
+- "GHSA-vrv8-v4w8-f95h"
+- "GMS-2020-789"
+package_slug: "npm/tinymce"
+title: "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+description: "Improper Neutralization of Input During Web Page Generation ('Cross-site
+  Scripting') in tinymce."
+date: "2020-11-13"
+pubdate: "2020-08-11"
+affected_range: "<4.9.11||>=5.0.0 <5.4.1"
+fixed_versions:
+- "4.9.11"
+- "5.4.1"
+affected_versions: "All versions before 4.9.11, all versions starting from 5.0.0 before
+  5.4.1"
+not_impacted: "All versions starting from 4.9.11 before 5.0.0, all versions starting
+  from 5.4.1"
+solution: "Upgrade to versions 4.9.11, 5.4.1 or above."
+urls:
+- "https://github.com/tinymce/tinymce/security/advisories/GHSA-vrv8-v4w8-f95h"
+- "https://github.com/advisories/GHSA-vrv8-v4w8-f95h"
+uuid: "16f25820-790f-4b85-bf6c-c21d381a00a2"
+cwe_ids:
+- "CWE-1035"
+- "CWE-79"
+- "CWE-937"

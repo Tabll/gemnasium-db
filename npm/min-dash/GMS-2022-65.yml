@@ -1,0 +1,31 @@
+---
+identifier: "GMS-2022-65"
+identifiers:
+- "GHSA-2m53-83f3-562j"
+- "GMS-2022-65"
+package_slug: "npm/min-dash"
+title: "Prototype pollution in min-dash < 3.8.1"
+description: "### Impact\n\nThe `set` method is vulnerable to prototype pollution
+  with specially crafted inputs.\n\n```javascript\n// insert the following into poc.js
+  and run node poc,js (after installing the package)\n \nlet parser = require(\"min-dash\");\nparser.set({},
+  [[\"__proto__\"], \"polluted\"], \"success\");\nconsole.log(polluted);\n```\n\n###
+  Patches\n\n`min-dash>=3.8.1` fix the issue.\n\n### Workarounds\n\nNo workarounds
+  exist for the issue.\n\n### References\n\nClosed via https://github.com/bpmn-io/min-dash/pull/21.\n\n###
+  Credits\n\nCredits to Cristian-Alexandru STAICU who found the vulnerability and
+  to Idan Digmi from the Snyk Security Team who reported the vulnerability to us,
+  responsibly. "
+date: "2022-02-01"
+pubdate: "2022-02-01"
+affected_range: "<3.8.1"
+fixed_versions:
+- "3.8.1"
+affected_versions: "All versions before 3.8.1"
+not_impacted: "All versions starting from 3.8.1"
+solution: "Upgrade to version 3.8.1 or above."
+urls:
+- "https://github.com/bpmn-io/min-dash/security/advisories/GHSA-2m53-83f3-562j"
+- "https://github.com/advisories/GHSA-2m53-83f3-562j"
+uuid: "ca05c224-1e47-4cdc-83a6-edca418320f0"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

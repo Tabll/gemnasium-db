@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2019-114"
+identifiers:
+- "GHSA-28hp-fgcr-2r4h"
+- "GMS-2019-114"
+package_slug: "npm/angular"
+title: "Cross-Site Scripting via JSONP"
+description: "JSONP allows untrusted resource URLs, which provides a vector for attack
+  by malicious actors."
+date: "2021-08-17"
+pubdate: "2019-06-27"
+affected_range: "<1.6.0"
+fixed_versions:
+- "1.6.0"
+affected_versions: "All versions before 1.6.0"
+not_impacted: "All versions starting from 1.6.0"
+solution: "Upgrade to version 1.6.0 or above."
+urls:
+- "https://github.com/angular/angular.js/commit/6476af83cd0418c84e034a955b12a842794385c4"
+- "https://www.npmjs.com/advisories/1630"
+- "https://github.com/advisories/GHSA-28hp-fgcr-2r4h"
+uuid: "13d2293b-7079-44f3-b87f-f8cc9719371f"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

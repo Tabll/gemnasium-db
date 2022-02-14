@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2020-706"
+identifiers:
+- "GHSA-4qqc-mp5f-ccv4"
+- "GMS-2020-706"
+package_slug: "npm/bestzip"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in bestzip."
+date: "2021-10-04"
+pubdate: "2020-09-02"
+affected_range: "<2.1.7"
+fixed_versions:
+- "2.1.7"
+affected_versions: "All versions before 2.1.7"
+not_impacted: "All versions starting from 2.1.7"
+solution: "Upgrade to version 2.1.7 or above."
+urls:
+- "https://www.npmjs.com/advisories/1554"
+- "https://github.com/advisories/GHSA-4qqc-mp5f-ccv4"
+uuid: "6368b76b-2e00-44e7-8249-e700fbd0cbd2"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

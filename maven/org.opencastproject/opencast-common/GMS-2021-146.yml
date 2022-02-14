@@ -1,0 +1,33 @@
+---
+identifier: "GMS-2021-146"
+identifiers:
+- "GHSA-mf4f-j588-5xm8"
+- "GMS-2021-146"
+package_slug: "maven/org.opencastproject/opencast-common"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in org.opencastproject:opencast-common."
+date: "2021-12-14"
+pubdate: "2021-12-14"
+affected_range: "(,9.10),[10.0,10.6)"
+fixed_versions:
+- "9.10"
+- "10.6"
+affected_versions: "All versions before 9.10, all versions starting from 10.0 before
+  10.6"
+not_impacted: "All versions starting from 9.10 before 10.0, all versions starting
+  from 10.6"
+solution: "Upgrade to versions 9.10, 10.6 or above."
+urls:
+- "https://github.com/opencast/opencast/security/advisories/GHSA-mf4f-j588-5xm8"
+- "https://nvd.nist.gov/vuln/detail/CVE-2021-44228"
+- "https://github.com/opencast/opencast/pull/3253"
+- "https://docs.opencast.org/r/10.x/admin/#changelog/#opencast-106"
+- "https://docs.opencast.org/r/9.x/admin/#changelog/#opencast-910"
+- "https://github.com/advisories/GHSA-mf4f-j588-5xm8"
+uuid: "493b2d63-0664-494b-8860-f64d506d5bc0"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

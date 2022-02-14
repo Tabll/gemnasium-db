@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2019-121"
+identifiers:
+- "GHSA-4859-gpc7-4j66"
+- "GMS-2019-121"
+package_slug: "npm/dot"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in dot."
+date: "2021-08-04"
+pubdate: "2019-06-05"
+affected_range: "<=1.1.2"
+fixed_versions: []
+affected_versions: "All versions up to 1.1.2"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://hackerone.com/reports/390929"
+- "https://www.npmjs.com/advisories/798"
+- "https://github.com/advisories/GHSA-4859-gpc7-4j66"
+uuid: "c6b58f94-a789-481b-9898-1c639d2c3492"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

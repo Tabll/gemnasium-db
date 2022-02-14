@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2021-117"
+identifiers:
+- "GHSA-cfcv-q4qq-2ph4"
+- "GMS-2021-117"
+package_slug: "packagist/pimcore/pimcore"
+title: "CKEditor 4 vulnerabilities in versions <4.16.1"
+description: "Details see: \n\nhttps://github.com/ckeditor/ckeditor4/security/advisories/GHSA-m94c-37g6-cjhc
+  ( CVE-2021-37695 )\nhttps://github.com/ckeditor/ckeditor4/security/advisories/GHSA-6226-h7ff-ch6c
+  ( CVE-2021-32808 )\nhttps://github.com/ckeditor/ckeditor4/security/advisories/GHSA-7889-rm5j-hpgg
+  \ ( CVE-2021-32809 )\n\nPatch: \nhttps://github.com/pimcore/pimcore/pull/10032"
+date: "2021-10-08"
+pubdate: "2021-08-23"
+affected_range: "<10.1.1"
+fixed_versions:
+- "10.1.1"
+affected_versions: "All versions before 10.1.1"
+not_impacted: "All versions starting from 10.1.1"
+solution: "Upgrade to version 10.1.1 or above."
+urls:
+- "https://github.com/pimcore/pimcore/security/advisories/GHSA-cfcv-q4qq-2ph4"
+- "https://github.com/pimcore/pimcore/commit/0d2ce3b1db4ac40646cee5104115767505760b6a"
+- "https://github.com/advisories/GHSA-cfcv-q4qq-2ph4"
+uuid: "6f3bded9-f11f-4a03-8434-b078a9febc15"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

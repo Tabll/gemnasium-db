@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2020-709"
+identifiers:
+- "GHSA-pqpp-2363-649v"
+- "GMS-2020-709"
+package_slug: "npm/buttle"
+title: "Cross-Site Scripting in buttle"
+description: "All versions of `buttle` are vulnerable to Cross-Site Scripting. Due
+  to misconfiguration of its rendering engine, `buttle` does not sanitize the HTML
+  output allowing attackers to run arbitrary JavaScript when processing malicious
+  markdown files.\n\n\n## Recommendation\n\nNo fix is currently available. Consider
+  using an alternative module until a fix is made available.\n"
+date: "2021-09-27"
+pubdate: "2020-09-02"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://hackerone.com/reports/404126"
+- "https://www.npmjs.com/advisories/810"
+- "https://github.com/advisories/GHSA-pqpp-2363-649v"
+uuid: "2c31aa04-7f10-4df3-bcb0-ae4bdc39ebe2"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

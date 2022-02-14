@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2019-124"
+identifiers:
+- "GHSA-gc94-6w89-hpqr"
+- "GMS-2019-124"
+package_slug: "npm/fs-path"
+title: "Command Injection in fs-path"
+description: "All versions of `fs-path` are vulnerable to command injection is unsanitized
+  user input is passed in.\n\n\n## Recommendation\n\nNo fix is currently available
+  for this vulnerability. It is our recommendation to not install or use this module
+  until a fix is available."
+date: "2021-09-16"
+pubdate: "2019-06-12"
+affected_range: "<=0.0.25"
+fixed_versions: []
+affected_versions: "All versions up to 0.0.25"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://hackerone.com/reports/324491"
+- "https://nodesecurity.io/advisories/661"
+- "https://www.npmjs.com/advisories/661"
+- "https://github.com/advisories/GHSA-gc94-6w89-hpqr"
+uuid: "caf36c64-2fe7-48cd-8b8f-33ae7708ac51"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

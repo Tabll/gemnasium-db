@@ -1,0 +1,41 @@
+---
+identifier: "GMS-2022-28"
+identifiers:
+- "GHSA-7v3x-h7r2-34jv"
+- "GMS-2022-28"
+package_slug: "packagist/pterodactyl/panel"
+title: "Insufficient Session Expiration in Pterodactyl API"
+description: "### Impact\nA vulnerability exists in Pterodactyl Panel `<= 1.6.6` that
+  could allow a malicious attacker that compromises an API key to generate an authenticated
+  user session that is not revoked when the API key is deleted, thus allowing the
+  malicious user to remain logged in as the user the key belonged to.\n\nIt is important
+  to note that **a malicious user must first compromise an existing API key for a
+  user to exploit this issue**. It cannot be exploited by chance, and requires a coordinated
+  attack against an individual account using a known API key.\n\n### Patches\nThis
+  issue has been addressed in the `v1.7.0` release of Pterodactyl Panel.\n\n### Workarounds\nThose
+  not wishing to upgrade may apply the change below:\n\n```diff\ndiff --git a/app/Http/Middleware/Api/AuthenticateKey.php
+  b/app/Http/Middleware/Api/AuthenticateKey.php\nindex eb25dac6..857bfab2 100644\n---
+  a/app/Http/Middleware/Api/AuthenticateKey.php\n+++ b/app/Http/Middleware/Api/AuthenticateKey.php\n@@
+  -70,7 +70,7 @@ class AuthenticateKey\n         } else {\n             $model = $this->authenticateApiKey($request->bearerToken(),
+  $keyType);\n\n-            $this->auth->guard()->loginUsingId($model->user_id);\n+
+  \           $this->auth->guard()->onceUsingId($model->user_id);\n         }\n```\n\n###
+  For more information\nIf you have any questions or comments about this advisory
+  please reach out to `Tactical Fish#8008` on [Discord](https://discord.gg/pterodactyl)
+  or email `dane@pterodactyl.io`.\n"
+date: "2022-01-21"
+pubdate: "2022-01-21"
+affected_range: "<1.7.0"
+fixed_versions:
+- "1.7.0"
+affected_versions: "All versions before 1.7.0"
+not_impacted: "All versions starting from 1.7.0"
+solution: "Upgrade to version 1.7.0 or above."
+urls:
+- "https://github.com/pterodactyl/panel/security/advisories/GHSA-7v3x-h7r2-34jv"
+- "https://github.com/pterodactyl/panel/commit/dfa329ddf242908b60e22e3340ea36359eab1ef4"
+- "https://github.com/pterodactyl/panel/releases/tag/v1.7.0"
+- "https://github.com/advisories/GHSA-7v3x-h7r2-34jv"
+uuid: "57c6df5d-f568-470b-8761-601b83f0f66e"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

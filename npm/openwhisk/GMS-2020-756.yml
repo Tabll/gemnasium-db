@@ -1,0 +1,31 @@
+---
+identifier: "GMS-2020-756"
+identifiers:
+- "GHSA-53mj-mc38-q894"
+- "GMS-2020-756"
+package_slug: "npm/openwhisk"
+title: "Remote Memory Exposure in openwhisk"
+description: "Versions of `openwhisk` before 3.3.1 are vulnerable to remote memory
+  exposure.\n\nWhen a number is passed to `api_key`, affected versions of `openwhisk`
+  allocate an uninitialized buffer and send that over network in Authorization header
+  (base64-encoded).\n\nProof of concept:\n\n```js\nvar openwhisk = require('openwhisk');\nvar
+  options = {\n  apihost: '127.0.0.1:1433', \n  api_key: USERSUPPLIEDINPUT // number\n};\nvar
+  ow = openwhisk(options);\now.actions.invoke({actionName: 'sample'}).then(result
+  => console.log(result))\n```\n\n\n## Recommendation\n\nUpdate to version 3.3.1 or
+  later."
+date: "2021-09-24"
+pubdate: "2020-09-01"
+affected_range: "<3.3.1"
+fixed_versions:
+- "3.3.1"
+affected_versions: "All versions before 3.3.1"
+not_impacted: "All versions starting from 3.3.1"
+solution: "Upgrade to version 3.3.1 or above."
+urls:
+- "https://github.com/openwhisk/openwhisk-client-js/pull/34"
+- "https://www.npmjs.com/advisories/600"
+- "https://github.com/advisories/GHSA-53mj-mc38-q894"
+uuid: "75cd42c4-3e17-4f3c-9690-6fbb8a1a94a0"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2020-728"
+identifiers:
+- "GHSA-f52g-6jhx-586p"
+- "GMS-2020-728"
+package_slug: "npm/handlebars"
+title: "Denial of Service in handlebars"
+description: "Affected versions of `handlebars` are vulnerable to Denial of Service.
+  The package's parser may be forced into an endless loop while processing specially-crafted
+  templates. This may allow attackers to exhaust system resources leading to Denial
+  of Service.\n\n\n## Recommendation\n\nUpgrade to version 4.4.5 or later."
+date: "2021-10-01"
+pubdate: "2020-09-03"
+affected_range: ">=4.0.0 <4.4.5"
+fixed_versions:
+- "4.4.5"
+affected_versions: "All versions starting from 4.0.0 before 4.4.5"
+not_impacted: "All versions before 4.0.0, all versions starting from 4.4.5"
+solution: "Upgrade to version 4.4.5 or above."
+urls:
+- "https://www.npmjs.com/advisories/1300"
+- "https://github.com/advisories/GHSA-f52g-6jhx-586p"
+uuid: "af1dbac5-da24-4858-86af-a802508d0439"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

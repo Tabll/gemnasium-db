@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2019-141"
+identifiers:
+- "GHSA-rv49-54qp-fw42"
+- "GMS-2019-141"
+package_slug: "npm/servey"
+title: "Relative Path Traversal"
+description: "Relative Path Traversal in servey."
+date: "2021-08-04"
+pubdate: "2019-06-06"
+affected_range: "<3.1.0"
+fixed_versions:
+- "3.1.0"
+affected_versions: "All versions before 3.1.0"
+not_impacted: "All versions starting from 3.1.0"
+solution: "Upgrade to version 3.1.0 or above."
+urls:
+- "https://github.com/typeorm/typeorm/commit/d46c8b0e6c0db56bb5976a4917e9f67a43715111"
+- "https://hackerone.com/reports/355501"
+- "https://www.npmjs.com/advisories/802"
+- "https://github.com/advisories/GHSA-rv49-54qp-fw42"
+uuid: "dc6bd394-e762-4fec-b076-44d6b6a0e2ea"
+cwe_ids:
+- "CWE-1035"
+- "CWE-352"
+- "CWE-937"

@@ -1,0 +1,33 @@
+---
+identifier: "GMS-2021-183"
+identifiers:
+- "GHSA-rrqv-vjrw-hrcr"
+- "GMS-2021-183"
+package_slug: "npm/json-ptr"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in json-ptr."
+date: "2021-05-26"
+pubdate: "2021-05-26"
+affected_range: "<2.1.0"
+fixed_versions:
+- "2.1.0"
+affected_versions: "All versions before 2.1.0"
+not_impacted: "All versions starting from 2.1.0"
+solution: "Upgrade to version 2.1.0 or above."
+urls:
+- "https://github.com/418sec/json-ptr/pull/3"
+- "https://github.com/flitbit/json-ptr/blob/456a1728b45c8663bb1ac20a249c5fb17495ec6b/README.md#security-vulnerability-prior-to-v210"
+- "https://github.com/flitbit/json-ptr/blob/master/src/util.ts%23L174"
+- "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSNPM-1038396"
+- "https://snyk.io/vuln/SNYK-JS-JSONPTR-1016939"
+- "https://www.huntr.dev/bounties/2-npm-json-ptr/"
+- "https://www.npmjs.com/advisories/1706"
+- "https://www.npmjs.com/package/json-ptr"
+- "https://github.com/advisories/GHSA-rrqv-vjrw-hrcr"
+uuid: "b7ce1a9f-1bbd-49ac-925d-36a5b72f5a9d"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

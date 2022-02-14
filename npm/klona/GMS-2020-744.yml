@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2020-744"
+identifiers:
+- "GHSA-4r97-78gf-q24v"
+- "GMS-2020-744"
+package_slug: "npm/klona"
+title: "Prototype Pollution in klona"
+description: "Versions of `klona` prior to 1.1.1 are vulnerable to prototype pollution.
+  The package does not restrict the modification of an Object's prototype when cloning
+  objects, which may allow an attacker to add or modify an existing property that
+  will exist on all objects.\n\n\n\n\n## Recommendation\n\nUpgrade to version 1.1.1
+  or later."
+date: "2021-10-04"
+pubdate: "2020-09-04"
+affected_range: "<1.1.1"
+fixed_versions:
+- "1.1.1"
+affected_versions: "All versions before 1.1.1"
+not_impacted: "All versions starting from 1.1.1"
+solution: "Upgrade to version 1.1.1 or above."
+urls:
+- "https://hackerone.com/reports/778414"
+- "https://www.npmjs.com/advisories/1463"
+- "https://github.com/advisories/GHSA-4r97-78gf-q24v"
+uuid: "25701287-013a-4e91-a712-c262e67e739d"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

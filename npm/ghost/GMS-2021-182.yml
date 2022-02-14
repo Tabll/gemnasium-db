@@ -1,0 +1,31 @@
+---
+identifier: "GMS-2021-182"
+identifiers:
+- "GHSA-wfrj-qqc2-83cm"
+- "GMS-2021-182"
+package_slug: "npm/ghost"
+title: "Remote command injection when using sendmail email transport"
+description: "### Impact\n\nSites using the `sendmail` transport as part of their
+  `mail` config are vulnerable to remote command injection due to a [vulnerability](https://github.com/advisories/GHSA-48ww-j4fc-435p)
+  in the `nodemailer` dependency.\n\nGhost defaults to the `direct` transport so this
+  is only exploitable if the `sendmail` transport is explicitly used.\n\n### Patches\n\nFixed
+  in 4.15.0, all sites should upgrade as soon as possible.\n\n### Workarounds\n\n*
+  Use an alternative email transport as described in the [docs](https://ghost.org/docs/config/#mail).
+  \n\n### For more information\n\nIf you have any questions or comments about this
+  advisory:\n\n* email us at security@ghost.org\n"
+date: "2021-09-20"
+pubdate: "2021-09-20"
+affected_range: "<4.15.0"
+fixed_versions:
+- "4.15.0"
+affected_versions: "All versions before 4.15.0"
+not_impacted: "All versions starting from 4.15.0"
+solution: "Upgrade to version 4.15.0 or above."
+urls:
+- "https://github.com/TryGhost/Ghost/security/advisories/GHSA-wfrj-qqc2-83cm"
+- "https://github.com/advisories/GHSA-48ww-j4fc-435p"
+- "https://github.com/advisories/GHSA-wfrj-qqc2-83cm"
+uuid: "b29f3caa-47ba-4efd-8f19-5e9a9ebf686c"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

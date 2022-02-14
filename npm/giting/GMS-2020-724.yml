@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-724"
+identifiers:
+- "GHSA-7r9x-hr76-jr96"
+- "GMS-2020-724"
+package_slug: "npm/giting"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in giting."
+date: "2021-10-04"
+pubdate: "2020-09-04"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/1446"
+- "https://github.com/advisories/GHSA-7r9x-hr76-jr96"
+uuid: "6557d2d4-5deb-4a96-bbd3-56ccb511667f"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

@@ -1,0 +1,29 @@
+---
+identifier: "GMS-2020-730"
+identifiers:
+- "GHSA-q2c6-c6pm-g3gh"
+- "GMS-2020-730"
+package_slug: "npm/handlebars"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in handlebars."
+date: "2020-09-04"
+pubdate: "2020-09-04"
+affected_range: "<3.0.8||>=4.0.0 <4.5.3"
+fixed_versions:
+- "3.0.8"
+- "4.5.3"
+affected_versions: "All versions before 3.0.8, all versions starting from 4.0.0 before
+  4.5.3"
+not_impacted: "All versions starting from 3.0.8 before 4.0.0, all versions starting
+  from 4.5.3"
+solution: "Upgrade to versions 3.0.8, 4.5.3 or above."
+urls:
+- "https://www.npmjs.com/advisories/1324"
+- "https://github.com/advisories/GHSA-q2c6-c6pm-g3gh"
+uuid: "34bee61b-6ace-4065-9fd7-f2f1ccb6a9e6"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

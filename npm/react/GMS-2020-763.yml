@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2020-763"
+identifiers:
+- "GHSA-hg79-j56m-fxgv"
+- "GMS-2020-763"
+package_slug: "npm/react"
+title: "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+description: "Improper Neutralization of Input During Web Page Generation ('Cross-site
+  Scripting') in react."
+date: "2021-10-01"
+pubdate: "2020-09-04"
+affected_range: "<0.14.0"
+fixed_versions:
+- "0.14.0"
+affected_versions: "All versions before 0.14.0"
+not_impacted: "All versions starting from 0.14.0"
+solution: "Upgrade to version 0.14.0 or above."
+urls:
+- "https://snyk.io/vuln/npm:react:20150318"
+- "https://www.npmjs.com/advisories/1347"
+- "http://danlec.com/blog/xss-via-a-spoofed-react-element"
+- "https://github.com/facebook/react"
+- "https://github.com/advisories/GHSA-hg79-j56m-fxgv"
+uuid: "3f505d5a-95a6-4126-92a4-0a00159b93c8"
+cwe_ids:
+- "CWE-1035"
+- "CWE-79"
+- "CWE-937"

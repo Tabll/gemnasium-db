@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2021-186"
+identifiers:
+- "GHSA-593v-wcqx-hq2w"
+- "GMS-2021-186"
+package_slug: "npm/parse-server"
+title: "Incorrect version tags linked to external repository"
+description: "A security incident caused a number of incorrect version
+  tags to be pushed to the Parse Server repository."
+date: "2021-09-07"
+pubdate: "2021-09-07"
+affected_range: ">=4.0.0 <4.5.2||>=4.6.0 <4.10.0"
+fixed_versions:
+- "4.5.2"
+- "4.10.0"
+affected_versions: "All versions starting from 4.0.0 before 4.5.2, all versions starting
+  from 4.6.0 before 4.10.0"
+not_impacted: "All versions before 4.0.0, all versions starting from 4.5.2 before
+  4.6.0, all versions starting from 4.10.0"
+solution: "Upgrade to versions 4.5.2, 4.10.0 or above."
+urls:
+- "https://github.com/parse-community/parse-server/security/advisories/GHSA-593v-wcqx-hq2w"
+- "https://github.com/advisories/GHSA-593v-wcqx-hq2w"
+uuid: "73f24736-5ada-4012-8b2d-27a8739f49b5"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

@@ -1,0 +1,32 @@
+---
+identifier: "GMS-2021-180"
+identifiers:
+- "GHSA-73qr-pfmq-6rp8"
+- "GMS-2021-180"
+package_slug: "npm/coa"
+title: "Embedded malware in coa"
+description: "The npm package `coa` had versions published with malicious code. Users
+  of affected versions (2.0.3 and above) should downgrade to 2.0.2 as soon as possible
+  and check their systems for suspicious activity. See [this issue](https://github.com/veged/coa/issues/99) for
+  details as they unfold.\nAny computer that has this package installed or running
+  should be considered fully compromised. All secrets and keys stored on that computer
+  should be rotated immediately from a different computer. The package should be removed,
+  but as full control of the computer may have been given to an outside entity, there
+  is no guarantee that removing the package will remove all malicious software resulting
+  from installing it."
+date: "2021-11-04"
+pubdate: "2021-11-04"
+affected_range: "=2.0.3||=2.0.4||=2.1.1||=2.1.3||=3.0.1||=3.1.3"
+fixed_versions: []
+affected_versions: "Version 2.0.3, version 2.0.4, version 2.1.1, version 2.1.3, version
+  3.0.1, version 3.1.3"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/veged/coa/issues/99"
+- "https://www.virustotal.com/gui/file/26451f7f6fe297adf6738295b1dcc70f7678434ef21d8b6aad5ec00beb8a72cf?nocache=1"
+- "https://github.com/advisories/GHSA-73qr-pfmq-6rp8"
+uuid: "13f52daf-08a7-4d60-a050-ca2d9aef766c"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

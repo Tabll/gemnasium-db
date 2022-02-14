@@ -1,0 +1,31 @@
+---
+identifier: "GMS-2020-737"
+identifiers:
+- "GHSA-6x33-pw7p-hmpq"
+- "GMS-2020-737"
+package_slug: "npm/http-proxy"
+title: "Denial of Service in http-proxy"
+description: "Versions of `http-proxy` prior to 1.18.1 are vulnerable to Denial of
+  Service. An HTTP request with a long body triggers an `ERR_HTTP_HEADERS_SENT` unhandled
+  exception that crashes the proxy server. This is only possible when the proxy server
+  sets headers in the proxy request using the `proxyReq.setHeader` function.   \n\nFor
+  a proxy server running on `http://localhost:3000`, the following curl request triggers
+  the unhandled exception:  \n```curl -XPOST http://localhost:3000 -d \"$(python -c
+  'print(\"x\"*1025)')\"```\n\n\n## Recommendation\n\nUpgrade to version 1.18.1 or
+  later"
+date: "2020-09-04"
+pubdate: "2020-09-04"
+affected_range: "<1.18.1"
+fixed_versions:
+- "1.18.1"
+affected_versions: "All versions before 1.18.1"
+not_impacted: "All versions starting from 1.18.1"
+solution: "Upgrade to version 1.18.1 or above."
+urls:
+- "https://github.com/http-party/node-http-proxy/pull/1447/files"
+- "https://www.npmjs.com/advisories/1486"
+- "https://github.com/advisories/GHSA-6x33-pw7p-hmpq"
+uuid: "3d983c36-1c4d-4a64-95ac-9e93902d5e74"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

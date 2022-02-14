@@ -1,0 +1,30 @@
+---
+identifier: "GMS-2020-745"
+identifiers:
+- "GHSA-w4vp-3mq7-7v82"
+- "GMS-2020-745"
+package_slug: "npm/lazysizes"
+title: "Cross-Site Scripting in lazysizes"
+description: "Versions of `lazysizes` prior to 5.2.1-rc1 are vulnerable to Cross-Site
+  Scripting.  The `video-embed` plugin fails to sanitize the following attributes:
+  data-vimeo, `data-vimeoparams`, `data-youtube` and `data-ytparams`. This allows
+  attackers to execute arbitrary JavaScript in a victim's browser if the attacker
+  has control over the vulnerable attributes.\n\n\n## Recommendation\n\nUpgrade to
+  version 5.2.1-rc1 or later."
+date: "2021-10-04"
+pubdate: "2020-09-03"
+affected_range: "<=5.2.1-rc0"
+fixed_versions:
+- "5.2.1-rc1"
+affected_versions: "All versions up to 5.2.1-rc0"
+not_impacted: "All versions after 5.2.1-rc0"
+solution: "Upgrade to version 5.2.1-rc1 or above. *Note*: 5.2.1-rc1 may be an unstable
+  version. Use caution."
+urls:
+- "https://github.com/aFarkas/lazysizes/issues/764"
+- "https://www.npmjs.com/advisories/1493"
+- "https://github.com/advisories/GHSA-w4vp-3mq7-7v82"
+uuid: "b736f626-e198-4387-81b2-34bb87f20a68"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

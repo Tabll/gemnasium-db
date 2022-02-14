@@ -1,0 +1,29 @@
+---
+identifier: "GMS-2020-739"
+identifiers:
+- "GHSA-p77h-hv6g-fmfp"
+- "GMS-2020-739"
+package_slug: "npm/ibm_db"
+title: "Sensitive Data Exposure in ibm_db"
+description: "Versions of `ibm_db` prior to 2.6.0 are vulnerable to Sensitive Data
+  Exposure. The package printed database credentials in plaintext in logs while in
+  debug mode.\n\n\n## Recommendation\n\nUpgrade to version 2.6.0 or later and ensure
+  sensitive information was not logged."
+date: "2021-09-29"
+pubdate: "2020-09-03"
+affected_range: "<2.6.0"
+fixed_versions:
+- "2.6.0"
+affected_versions: "All versions before 2.6.0"
+not_impacted: "All versions starting from 2.6.0"
+solution: "Upgrade to version 2.6.0 or above."
+urls:
+- "https://github.com/ibmdb/node-ibm_db/issues/563"
+- "https://snyk.io/vuln/SNYK-JS-IBMDB-459762"
+- "https://www.npmjs.com/advisories/1185"
+- "https://github.com/ibmdb/node-ibm_db/commit/526c88b5eedc605274def65405279f6708d91ce8"
+- "https://github.com/advisories/GHSA-p77h-hv6g-fmfp"
+uuid: "4d46e259-7c4e-45c1-bedd-83676efca0b5"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

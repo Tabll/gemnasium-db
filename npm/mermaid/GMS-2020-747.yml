@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-747"
+identifiers:
+- "GHSA-w32g-5hqp-gg6q"
+- "GMS-2020-747"
+package_slug: "npm/mermaid"
+title: "Improper Neutralization"
+description: "Improper Neutralization in mermaid."
+date: "2021-09-27"
+pubdate: "2020-09-02"
+affected_range: "<8.2.3"
+fixed_versions:
+- "8.2.3"
+affected_versions: "All versions before 8.2.3"
+not_impacted: "All versions starting from 8.2.3"
+solution: "Upgrade to version 8.2.3 or above."
+urls:
+- "https://github.com/knsv/mermaid/issues/847"
+- "https://www.npmjs.com/advisories/751"
+- "https://github.com/advisories/GHSA-w32g-5hqp-gg6q"
+uuid: "1a6d891a-eb54-43f9-817e-c88bb627ca7a"
+cwe_ids:
+- "CWE-1035"
+- "CWE-707"
+- "CWE-937"

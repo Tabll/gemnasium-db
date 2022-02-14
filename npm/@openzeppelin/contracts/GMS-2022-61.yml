@@ -1,0 +1,24 @@
+---
+identifier: "GMS-2022-61"
+identifiers:
+- "GHSA-m6w8-fq7v-ph4m"
+- "GMS-2022-61"
+package_slug: "npm/@openzeppelin/contracts"
+title: "Improper Neutralization"
+description: "Improper Neutralization in @openzeppelin/contracts."
+date: "2022-01-17"
+pubdate: "2022-01-13"
+affected_range: ">=4.3.0 <4.4.2"
+fixed_versions:
+- "4.4.2"
+affected_versions: "All versions starting from 4.3.0 before 4.4.2"
+not_impacted: "All versions before 4.3.0, all versions starting from 4.4.2"
+solution: "Upgrade to version 4.4.2 or above."
+urls:
+- "https://github.com/OpenZeppelin/openzeppelin-contracts/security/advisories/GHSA-m6w8-fq7v-ph4m"
+- "https://github.com/advisories/GHSA-m6w8-fq7v-ph4m"
+uuid: "e71e09f4-76be-42e1-ba6f-6474577fccd5"
+cwe_ids:
+- "CWE-1035"
+- "CWE-707"
+- "CWE-937"

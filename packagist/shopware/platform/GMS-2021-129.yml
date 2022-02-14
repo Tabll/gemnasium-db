@@ -1,0 +1,30 @@
+---
+identifier: "GMS-2021-129"
+identifiers:
+- "GHSA-wq3r-jwrq-xg6w"
+- "GMS-2021-129"
+package_slug: "packagist/shopware/platform"
+title: "Canceling of orders not related to the logged-in user"
+description: "### Impact\nCanceling of orders not related to the logged-in user\n\n###
+  Patches\nWe recommend updating to the current version 6.4.1.1. You can get the update
+  to 6.4.1.1 regularly via the Auto-Updater or directly via the download overview.\n\nhttps://www.shopware.com/en/download/#shopware-6\n\n###
+  Workarounds\nFor older versions of 6.1, 6.2, and 6.3, corresponding security measures
+  are also available via a plugin. For the full range of functions, we recommend updating
+  to the latest Shopware version.\n\nhttps://store.shopware.com/en/detail/index/sArticle/518463/number/Swag136939272659\n"
+date: "2021-06-28"
+pubdate: "2021-06-28"
+affected_range: "<=6.4.1.0"
+fixed_versions:
+- "6.4.1.1"
+affected_versions: "All versions up to 6.4.1.0"
+not_impacted: "All versions after 6.4.1.0"
+solution: "Upgrade to version 6.4.1.1 or above."
+urls:
+- "https://github.com/shopware/platform/security/advisories/GHSA-wq3r-jwrq-xg6w"
+- "https://store.shopware.com/en/detail/index/sArticle/518463/number/Swag136939272659"
+- "https://www.shopware.com/en/download/#shopware-6"
+- "https://github.com/advisories/GHSA-wq3r-jwrq-xg6w"
+uuid: "fc5170ac-87b5-4710-b29f-b53fa563245f"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

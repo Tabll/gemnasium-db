@@ -1,0 +1,31 @@
+---
+identifier: "GMS-2020-738"
+identifiers:
+- "GHSA-pc5p-h8pf-mvwp"
+- "GMS-2020-738"
+package_slug: "npm/https-proxy-agent"
+title: "Machine-In-The-Middle in https-proxy-agent"
+description: "Versions of `https-proxy-agent` prior to 2.2.3 are vulnerable to Machine-In-The-Middle.
+  The package fails to enforce TLS on the socket if the proxy server responds the
+  to the request with a HTTP status different than 200. This allows an attacker with
+  access to the proxy server to intercept unencrypted communications, which may include
+  sensitive information such as credentials.\n\n\n## Recommendation\n\nUpgrade to
+  version 3.0.0 or 2.2.3."
+date: "2021-08-23"
+pubdate: "2020-04-16"
+affected_range: "<2.2.3"
+fixed_versions:
+- "2.2.3"
+affected_versions: "All versions before 2.2.3"
+not_impacted: "All versions starting from 2.2.3"
+solution: "Upgrade to version 2.2.3 or above."
+urls:
+- "https://github.com/TooTallNate/node-https-proxy-agent/commit/36d8cf509f877fa44f4404fce57ebaf9410fe51b"
+- "https://hackerone.com/reports/541502"
+- "https://www.npmjs.com/advisories/1184"
+- "https://snyk.io/vuln/SNYK-JS-HTTPSPROXYAGENT-469131"
+- "https://github.com/advisories/GHSA-pc5p-h8pf-mvwp"
+uuid: "abf8af44-1087-4cfc-8887-1acf4275b47c"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

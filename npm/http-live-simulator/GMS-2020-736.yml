@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2020-736"
+identifiers:
+- "GHSA-xgp2-cc4r-7vf6"
+- "GMS-2020-736"
+package_slug: "npm/http-live-simulator"
+title: "Denial of Service in http-live-simulator"
+description: "Versions of `http-live-simulator` prior to 1.0.8 are vulnerable to Denial
+  of Service. The package fails to catch an exception that causes the Node process
+  to crash, effectively shutting down the server. This allows an attacker to send
+  an HTTP request that crashes the server.\n\n\n## Recommendation\n\nUpgrade to version
+  1.0.8 or later."
+date: "2020-09-03"
+pubdate: "2020-09-03"
+affected_range: "<1.0.8"
+fixed_versions:
+- "1.0.8"
+affected_versions: "All versions before 1.0.8"
+not_impacted: "All versions starting from 1.0.8"
+solution: "Upgrade to version 1.0.8 or above."
+urls:
+- "https://hackerone.com/reports/627376"
+- "https://www.npmjs.com/advisories/1189"
+- "https://github.com/advisories/GHSA-xgp2-cc4r-7vf6"
+uuid: "51a28401-6a1c-4e97-a5fd-f51045b16c70"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

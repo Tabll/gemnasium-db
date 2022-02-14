@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2020-779"
+identifiers:
+- "GHSA-9p2w-rmx4-9mw7"
+- "GMS-2020-779"
+package_slug: "npm/strapi"
+title: "Command Injection in strapi"
+description: "Versions of `strapi` before 3.0.0-beta.17.8 are vulnerable to Command
+  Injection. The package fails to sanitize plugin names in the `/admin/plugins/install/`
+  route. This may allow an authenticated attacker with admin privileges to run arbitrary
+  commands in the server.\n\n\n## Recommendation\n\nUpgrade to version 3.0.0-beta.17.8
+  or later"
+date: "2021-10-04"
+pubdate: "2020-09-04"
+affected_range: "<=3.0.0-beta.17.7"
+fixed_versions:
+- "3.0.0-beta.17.8"
+affected_versions: "All versions up to 3.0.0-beta.17.7"
+not_impacted: "All versions after 3.0.0-beta.17.7"
+solution: "Upgrade to version 3.0.0-beta.17.8 or above. *Note*: 3.0.0-beta.17.8 may
+  be an unstable version. Use caution."
+urls:
+- "https://www.npmjs.com/advisories/1424"
+- "https://github.com/advisories/GHSA-9p2w-rmx4-9mw7"
+uuid: "19d7ef0c-c568-40c5-a442-5fb8beae990d"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

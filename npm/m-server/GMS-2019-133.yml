@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2019-133"
+identifiers:
+- "GHSA-vc6r-4x6g-mmqc"
+- "GMS-2019-133"
+package_slug: "npm/m-server"
+title: "Relative Path Traversal"
+description: "Relative Path Traversal in m-server."
+date: "2021-08-04"
+pubdate: "2019-06-11"
+affected_range: "<1.4.2"
+fixed_versions:
+- "1.4.2"
+affected_versions: "All versions before 1.4.2"
+not_impacted: "All versions starting from 1.4.2"
+solution: "Upgrade to version 1.4.2 or above."
+urls:
+- "https://github.com/nunnly/m-server/commit/01f13f040d1961ca3146dce7e2db990156e65e9a"
+- "https://www.npmjs.com/advisories/731"
+- "https://hackerone.com/reports/319795"
+- "https://github.com/nodejs/security-wg/blob/master/vuln/npm/468.json"
+- "https://github.com/advisories/GHSA-vc6r-4x6g-mmqc"
+uuid: "bea19282-9661-4d3d-bea8-1c9460cdab95"
+cwe_ids:
+- "CWE-1035"
+- "CWE-352"
+- "CWE-937"

@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2021-128"
+identifiers:
+- "GHSA-r64m-qchj-hrjp"
+- "GMS-2021-128"
+package_slug: "packagist/shopware/platform"
+title: "Webcache Poisoning in shopware/platform and shopware/core"
+description: "Webcache Poisoning via X-Forwarded-Prefix and sub-request
+  Patches."
+date: "2021-11-24"
+pubdate: "2021-11-24"
+affected_range: "<=6.4.6.0"
+fixed_versions:
+- "6.4.6.1"
+affected_versions: "All versions up to 6.4.6.0"
+not_impacted: "All versions after 6.4.6.0"
+solution: "Upgrade to version 6.4.6.1 or above."
+urls:
+- "https://github.com/shopware/platform/security/advisories/GHSA-r64m-qchj-hrjp"
+- "https://github.com/shopware/platform/commit/9062f15450d183f2c666664841efd4f5ef25e0f3"
+- "https://github.com/advisories/GHSA-r64m-qchj-hrjp"
+uuid: "52ccf51e-051f-450c-bcbf-178dec8bb978"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

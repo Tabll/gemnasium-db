@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2019-138"
+identifiers:
+- "GHSA-7jfh-2xc9-ccv7"
+- "GMS-2019-138"
+package_slug: "npm/public"
+title: "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+description: "Improper Neutralization of Input During Web Page Generation ('Cross-site
+  Scripting') in public."
+date: "2021-08-04"
+pubdate: "2019-05-31"
+affected_range: "<0.1.4||=0.1.5"
+fixed_versions:
+- "0.1.4"
+affected_versions: "All versions before 0.1.4, version 0.1.5"
+not_impacted: "All versions starting from 0.1.4 before 0.1.5, all versions after 0.1.5"
+solution: "Upgrade to version 0.1.4 or above."
+urls:
+- "https://hackerone.com/reports/316346"
+- "https://www.npmjs.com/advisories/609"
+- "https://github.com/advisories/GHSA-7jfh-2xc9-ccv7"
+uuid: "ea4ed656-3c53-4922-a63e-0e685360e5f4"
+cwe_ids:
+- "CWE-1035"
+- "CWE-79"
+- "CWE-937"

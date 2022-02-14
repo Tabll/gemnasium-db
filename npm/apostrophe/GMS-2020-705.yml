@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2020-705"
+identifiers:
+- "GHSA-pv6r-vchh-cxg9"
+- "GMS-2020-705"
+package_slug: "npm/apostrophe"
+title: "Denial of Service in apostrophe"
+description: "Versions of `apostrophe` prior to 2.97.1 are vulnerable to Denial of
+  Service. The `apostrophe-jobs` module sets a callback for incoming jobs and doesn't
+  clear it regardless of its status. This causes the server to accumulate callbacks,
+  allowing an attacker to start a large number of jobs and exhaust system memory.\n\n\n##
+  Recommendation\n\nUpgrade to version 2.97.1 or later."
+date: "2021-09-29"
+pubdate: "2020-09-03"
+affected_range: "<2.97.1"
+fixed_versions:
+- "2.97.1"
+affected_versions: "All versions before 2.97.1"
+not_impacted: "All versions starting from 2.97.1"
+solution: "Upgrade to version 2.97.1 or above."
+urls:
+- "https://www.npmjs.com/advisories/1183"
+- "https://github.com/advisories/GHSA-pv6r-vchh-cxg9"
+uuid: "4c0bc321-d7ab-4ddf-9254-80ba8353c516"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

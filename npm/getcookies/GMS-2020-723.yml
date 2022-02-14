@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2020-723"
+identifiers:
+- "GHSA-3cjv-4phw-gvvv"
+- "GMS-2020-723"
+package_slug: "npm/getcookies"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in getcookies."
+date: "2021-10-01"
+pubdate: "2020-09-01"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://www.npmjs.com/advisories/649"
+- "https://github.com/advisories/GHSA-3cjv-4phw-gvvv"
+uuid: "cf9c32e5-2af5-43ec-97b3-7acfc514c317"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

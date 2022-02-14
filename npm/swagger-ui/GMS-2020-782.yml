@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2020-782"
+identifiers:
+- "GHSA-4f9m-pxwh-68hg"
+- "GMS-2020-782"
+package_slug: "npm/swagger-ui"
+title: "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+description: "Improper Neutralization of Input During Web Page Generation ('Cross-site
+  Scripting') in swagger-ui."
+date: "2021-09-28"
+pubdate: "2020-09-11"
+affected_range: "<3.20.9"
+fixed_versions:
+- "3.20.9"
+affected_versions: "All versions before 3.20.9"
+not_impacted: "All versions starting from 3.20.9"
+solution: "Upgrade to version 3.20.9 or above."
+urls:
+- "https://github.com/swagger-api/swagger-ui/pull/5190"
+- "https://snyk.io/vuln/SNYK-JS-SWAGGERUI-449921"
+- "https://www.npmjs.com/advisories/976"
+- "https://github.com/advisories/GHSA-4f9m-pxwh-68hg"
+uuid: "ec81ec0d-7035-4eab-9fef-113b359f07ad"
+cwe_ids:
+- "CWE-1035"
+- "CWE-79"
+- "CWE-937"

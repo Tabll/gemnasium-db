@@ -1,0 +1,29 @@
+---
+identifier: "GMS-2019-111"
+identifiers:
+- "GHSA-67cx-rhhq-mfhq"
+- "GMS-2019-111"
+package_slug: "pypi/indico"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in indico."
+date: "2021-09-01"
+pubdate: "2019-10-11"
+affected_range: "<2.1.10||>=2.2.0,<2.2.3"
+fixed_versions:
+- "2.1.10"
+- "2.2.3"
+affected_versions: "All versions before 2.1.10, all versions starting from 2.2.0 before
+  2.2.3"
+not_impacted: "All versions starting from 2.1.10 before 2.2.0, all versions starting
+  from 2.2.3"
+solution: "Upgrade to versions 2.1.10, 2.2.3 or above."
+urls:
+- "https://github.com/indico/indico/security/advisories/GHSA-67cx-rhhq-mfhq"
+- "https://github.com/advisories/GHSA-67cx-rhhq-mfhq"
+uuid: "47cd22fc-0a68-404b-a772-e5ff54f61e5b"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

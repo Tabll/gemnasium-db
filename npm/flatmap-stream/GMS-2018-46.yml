@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2018-46"
+identifiers:
+- "GHSA-mh6f-8j2x-4483"
+- "GMS-2018-46"
+package_slug: "npm/flatmap-stream"
+title: "Critical severity vulnerability that affects event-stream and flatmap-stream"
+description: "The NPM package `flatmap-stream` is considered malicious.  A malicious
+  actor added this package as a dependency to the NPM `event-stream` package in version
+  `3.3.6`.  Users of `event-stream` are encouraged to downgrade to the last non-malicious
+  version, `3.3.4`, or upgrade to the latest  4.x version. \n\nUsers of `flatmap-stream`
+  are encouraged to remove the dependency entirely.\n"
+date: "2021-09-15"
+pubdate: "2018-11-26"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/dominictarr/event-stream/issues/116"
+- "https://github.com/advisories/GHSA-mh6f-8j2x-4483"
+uuid: "cfc93aa2-d1c2-4900-931a-164dca048b48"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
