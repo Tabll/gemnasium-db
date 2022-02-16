@@ -1,0 +1,41 @@
+---
+identifier: "GMS-2022-72"
+identifiers:
+- "GHSA-62mh-w5cv-p88c"
+- "GMS-2022-72"
+package_slug: "go/github.com/nats-io/jwt"
+title: "Import token permissions checking not enforced"
+description: "The NATS server provides for Subjects which are namespaced by Account; 
+  all Subjects are supposed to be private to an account, with an `Export/Import` system 
+  used to grant cross-account access to some Subjects. Some Exports are public, such 
+  that anyone can import the relevant subjects, and some Exports are private, such that 
+  the Import requires a token JWT to prove permission. The JWT library's validation of 
+  the bindings in the `Import Token` incorrectly warned on mismatches, instead of 
+  outright rejecting the token. As a result, any account can take an Import token used 
+  by any other account and re-use it for themselves because the binding to the importing 
+  account is not rejected, and use it to import any Subject from the Exporting account, 
+  not just the Subject referenced in the Import Token. The NATS account-server system 
+  treats account JWTs as semi-public information, such that an attacker can easily 
+  enumerate all account JWTs and retrieve all Import Tokens from those account JWTs."
+date: "2022-02-15"
+pubdate: "2022-02-15"
+affected_range: "<v2.0.1"
+fixed_versions:
+- "v2.0.1"
+affected_versions: "All versions before 2.0.1"
+not_impacted: "All versions starting from 2.0.1"
+solution: "Upgrade to version 2.0.1 or above."
+urls:
+- "https://github.com/nats-io/jwt/security/advisories/GHSA-62mh-w5cv-p88c"
+- "https://github.com/advisories/GHSA-62mh-w5cv-p88c"
+uuid: "062627b8-eda1-4b0a-8a9f-b2aa871b7ba3"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
+versions:
+- number: "v2.0.1"
+  commit:
+    tags:
+    - "v2.0.1"
+    sha: "8ca1dd115eef060c4232d9a27d58353641bae017"
+    timestamp: "20210314230523"
