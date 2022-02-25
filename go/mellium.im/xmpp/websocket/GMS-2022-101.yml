@@ -1,0 +1,24 @@
+---
+identifier: "GMS-2022-101"
+identifiers:
+- "GHSA-h289-x5wc-xcv8"
+- "GMS-2022-101"
+package_slug: "go/mellium.im/xmpp/websocket"
+title: "Improper Validation of Certificate with Host Mismatch in mellium.im/xmpp/websocket"
+description: "If no TLS configuration is provided by the user, the websocket
+  package constructs its own TLS configuration using recommended defaults."
+date: "2022-02-17"
+pubdate: "2022-02-16"
+affected_range: "<0.21.1"
+fixed_versions:
+- "0.21.1"
+affected_versions: "All versions before 0.21.1"
+not_impacted: "All versions starting from 0.21.1"
+solution: "Upgrade to version 0.21.1 or above."
+urls:
+- "https://github.com/mellium/xmpp/security/advisories/GHSA-h289-x5wc-xcv8"
+- "https://github.com/advisories/GHSA-h289-x5wc-xcv8"
+uuid: "5a1f7fb6-c666-4bb7-b224-fa5333cafd95"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

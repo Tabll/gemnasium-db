@@ -5,10 +5,10 @@ identifiers:
 - "GMS-2022-71"
 package_slug: "go/github.com/cloudflare/cfrpki/cmd/octorpki"
 title: "Path traversal in github.com/cloudflare/cfrpki/cmd/octorpki"
-description: "In the case that a malicious TAL file is parsed pointing to 
-  a repository that provides a malicious ROA file which octorpki downloads, it 
-  is possible to bypass the current directory traversal mitigation to allow 
-  writing outside of the current directory."
+description: "In the case that a malicious TAL file is parsed pointing to a repository
+  that provides a malicious ROA file which octorpki downloads, it is possible to bypass
+  the current directory traversal mitigation to allow writing outside of the current
+  directory."
 date: "2022-02-15"
 pubdate: "2022-02-14"
 affected_range: "<=v1.4.2"

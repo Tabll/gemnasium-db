@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2022-78"
+identifiers:
+- "GHSA-vg27-hr3v-3cqv"
+- "GMS-2022-78"
+- "CVE-2022-0637"
+package_slug: "pypi/pollbot"
+title: "Open Redirect in pollbot"
+description: "There was an open redirection vulnerability in the path of 
+  https://pollbot.services.mozilla.com/ and https://pollbot.stage.mozaws.net/. 
+  Attackers can serve malicious websites that steal passwords or download 
+  ransomware to their victims machine due to a redirect and there are a heap of 
+  other attack vectors."
+date: "2022-02-17"
+pubdate: "2022-02-16"
+affected_range: "<1.4.6"
+fixed_versions:
+- "1.4.6"
+affected_versions: "All versions before 1.4.6"
+not_impacted: "All versions starting from 1.4.6"
+solution: "Upgrade to version 1.4.6 or above."
+urls:
+- "https://github.com/mozilla/PollBot/security/advisories/GHSA-vg27-hr3v-3cqv"
+- "https://github.com/advisories/GHSA-vg27-hr3v-3cqv"
+uuid: "7a38a9c1-3279-472e-afbd-10f34557feff"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

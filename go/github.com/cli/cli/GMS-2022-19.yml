@@ -3,11 +3,14 @@ identifier: "GMS-2022-19"
 identifiers:
 - "GHSA-fqfh-778m-2v32"
 - "GMS-2022-19"
-package_slug: "go/github.com/cli/cli/"
+package_slug: "go/github.com/cli/cli"
 title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
   Injection')"
-description: "Improper Neutralization of Special Elements used in an OS Command ('OS
-  Command Injection') in github.com/cli/cli/."
+description: "GitHub CLI depends on a git.exe executable being found in system %PATH%
+  on Windows. However, if a malicious `.\\git.exe` or `.\\git.bat` is found in the
+  current working directory at the time of running gh, the malicious command will
+  be invoked instead of the system one. Windows users who run gh inside untrusted
+  directories are affected."
 date: "2022-02-11"
 pubdate: "2022-02-11"
 affected_range: "<v1.2.1"

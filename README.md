@@ -36,7 +36,7 @@ contributions.
 
 | Author         | MRs/Issues            |
 | -------------- | --------------------- |
-| @blischalkcof  | #168                  |
+| @blischalkcof  | #168, #185            |
 | @thklein       | #167                  |
 | @AB-xdev       | #166                  |
 | @brondsem      | !1500, !1501          |

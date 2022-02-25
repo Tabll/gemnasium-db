@@ -2,9 +2,11 @@
 # frozen_string_literal: true
 
 require 'optparse'
+require 'yaml'
+require 'set'
 
-def search_files(dir, pattern)
-  Dir[File.join(dir, '**', pattern)].map { |file| File.basename(file) }.sort
+def search_files(dir, pattern, base_only = true)
+  Dir[File.join(dir, '**', pattern)].map { |file| base_only ? File.basename(file) : file }.sort
 end
 
 def strip_count(fname)
@@ -12,7 +14,26 @@ def strip_count(fname)
 end
 
 def validate_identifiers(dir)
-  search_files(dir, 'GMS*.yml').reject{ |fil| fil.match?(/GMS-\d{4}-\d+/) }.empty?
+  return false unless search_files(dir, 'GMS*.yml').reject{ |fil| fil.match?(/GMS-\d{4}-\d+/) }.empty?
+  ret = true
+  lookup = {}
+  search_files(dir, 'GMS*.yml', false).each do |f|
+    dict = YAML.load(File.read(f))
+    slug = dict.dig('package_slug')
+
+    dict.dig('identifiers').each do |id|
+      unless lookup.key?(slug)
+        lookup[slug] = Set.new()
+      end
+      if lookup[slug].include?(id)
+        puts "#{id} already present for #{slug}"
+        ret = false
+      end
+      lookup[slug] << id
+    end
+  end
+
+  ret
 end
 
 def generate_new_identifier(dir, year)

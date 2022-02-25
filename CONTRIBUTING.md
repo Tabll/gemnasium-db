@@ -81,12 +81,8 @@ yamllint.
 * `urls` must contain URLs specific to the vulnerability, not URLs generic to
   the package itself.
 
-`description` must not contain:
-* an overview of the package itself, only the vulnerability belonging to the package
-* fixed versions - this is redundant with `fixed_versions`
-* affected versions - this is redundant with `affected_versions`
-* solution to remediate the vulnerability - use `solution` instead
-* links - use `urls` instead
+`description` should not provide an overview of the package itself, only the
+description of the vulnerability as it pertains to the package
 
 File paths, source-code snippets, configuration parameters, as well as 
 in and output parameters/values that 

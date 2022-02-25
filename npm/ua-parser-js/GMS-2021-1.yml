@@ -1,30 +1,26 @@
 ---
 identifier: "GMS-2021-1"
+identifiers:
+- "GHSA-pjwm-rvh2-c87w"
+- "GMS-2021-1"
 package_slug: "npm/ua-parser-js"
 title: "Embedded Malicious Code"
 description: "This package was found to contain malicious code."
 date: "2021-10-22"
 pubdate: "2021-10-22"
-affected_range: ">=0.7.29 <0.7.30||>=0.8.0 <0.8.1||>=1.0.0 <1.0.1"
+affected_range: "=0.7.29||=0.8.0||=1.0.0"
 fixed_versions:
 - "0.7.30"
 - "0.8.1"
 - "1.0.1"
-affected_versions: "All versions starting from 0.7.29 before 0.7.30, all versions
-  starting from 0.8.0 before 0.8.1, all versions starting from 1.0.0 before 1.0.1"
-not_impacted: "All versions before 0.7.29, all versions starting from 0.7.30 before
-  0.8.0, all versions starting from 0.8.1 before 1.0.0, all versions starting from
-  1.0.1"
-solution: "Upgrade to versions 0.7.30, 0.8.1, 1.0.1 or above"
+affected_versions: "Version 0.7.29, version 0.8.0, version 1.0.0"
+not_impacted: "All versions before 0.7.29, all versions after 0.7.29 before 0.8.0,
+  all versions after 0.8.0 before 1.0.0, all versions after 1.0.0"
+solution: "Upgrade to versions 0.7.30, 0.8.1, 1.0.1 or above."
 urls:
 - "https://us-cert.cisa.gov/ncas/current-activity/2021/10/22/malware-discovered-popular-npm-package-ua-parser-js"
 - "https://github.com/advisories/GHSA-pjwm-rvh2-c87w"
-cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
 uuid: "dd8322cc-5544-4956-8ea8-c0c03440f12b"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
-- "CWE-506"
-identifiers:
-- "GMS-2021-1"
-- "GHSA-pjwm-rvh2-c87w"
