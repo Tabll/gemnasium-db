@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2022-163"
+identifiers:
+- "GHSA-fq42-c5rg-92c2"
+- "GMS-2022-163"
+package_slug: "gem/nokogiri"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in nokogiri."
+date: "2022-02-26"
+pubdate: "2022-02-25"
+affected_range: "<1.13.2"
+fixed_versions:
+- "1.13.2"
+affected_versions: "All versions before 1.13.2"
+not_impacted: "All versions starting from 1.13.2"
+solution: "Upgrade to version 1.13.2 or above."
+urls:
+- "https://github.com/sparklemotion/nokogiri/security/advisories/GHSA-fq42-c5rg-92c2"
+- "https://github.com/advisories/GHSA-fq42-c5rg-92c2"
+uuid: "df6849b5-3c92-44d1-a3d4-9f55f10de697"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2022-143"
+identifiers:
+- "GHSA-vv6j-ww6x-54gx"
+- "GMS-2022-143"
+- "CVE-2022-0609"
+package_slug: "nuget/CefSharp.OffScreen.NETCore"
+title: "Use after free in Animation"
+description: "The attack may be initiated remotely. No form of authentication
+  is needed for a successful exploitation. It demands that the victim is doing some
+  kind of user interaction. Technical details are unknown but an exploit is available.\n\nThere
+  is currently little other public information on the issue other than it has been
+  flagged as `High` severity."
+date: "2022-02-26"
+pubdate: "2022-02-22"
+affected_range: "(,98.1.190]"
+fixed_versions:
+- "98.1.210"
+affected_versions: "All versions up to 98.1.190"
+not_impacted: "All versions after 98.1.190"
+solution: "Upgrade to version 98.1.210 or above."
+urls:
+- "https://github.com/cefsharp/CefSharp/security/advisories/GHSA-vv6j-ww6x-54gx"
+- "https://github.com/advisories/GHSA-vv6j-ww6x-54gx"
+uuid: "d15e5ee8-049c-4c21-9aea-558fa66dfdef"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
