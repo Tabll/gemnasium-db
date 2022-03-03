@@ -1,0 +1,35 @@
+---
+identifier: "GMS-2022-176"
+identifiers:
+- "GHSA-gv9j-4w24-q7vx"
+- "GMS-2022-176"
+package_slug: "go/github.com/coredns/coredns"
+title: "Improper random number generation in github.com/coredns/coredns"
+description: "### Impact\n\nCoreDNS before 1.6.6 (using go DNS package < 1.1.25) improperly
+  generates random numbers because math/rand is used. The TXID becomes predictable,
+  leading to response forgeries.\n\n### Patches\nThe problem has been fixed in 1.6.6+.\n\n###
+  References\n- [CVE-2019-19794](https://nvd.nist.gov/vuln/detail/CVE-2019-19794)\n\n###
+  For more information\nPlease consult [our security guide](https://github.com/coredns/coredns/blob/master/.github/SECURITY.md)
+  for more information regarding our security process.\n"
+date: "2022-03-01"
+pubdate: "2022-03-01"
+affected_range: "<v1.6.6"
+fixed_versions:
+- "v1.6.6"
+affected_versions: "All versions before 1.6.6"
+not_impacted: "All versions starting from 1.6.6"
+solution: "Upgrade to version 1.6.6 or above."
+urls:
+- "https://github.com/coredns/coredns/security/advisories/GHSA-gv9j-4w24-q7vx"
+- "https://github.com/advisories/GHSA-gv9j-4w24-q7vx"
+uuid: "c4d8a20c-37b9-411a-aae8-da7ccd489931"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
+versions:
+- number: "v1.6.6"
+  commit:
+    tags:
+    - "v1.6.6"
+    sha: "6a7a75e0cc14159177e604d0157836cc32add343"
+    timestamp: "20191211191653"

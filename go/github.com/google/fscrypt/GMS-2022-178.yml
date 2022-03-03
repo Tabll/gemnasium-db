@@ -1,0 +1,34 @@
+---
+identifier: "GMS-2022-178"
+identifiers:
+- "GHSA-chxf-fjcf-7fwp"
+- "GMS-2022-178"
+package_slug: "go/github.com/google/fscrypt"
+title: "Possible filesystem space exhaustion by local users"
+description: "`fscrypt` through v0.3.2 creates a world-writable directory by default
+  when setting up a filesystem, allowing unprivileged users to exhaust filesystem
+  space. We recommend upgrading to `fscrypt` v0.3.3 or above and adjusting the permissions
+  on existing `fscrypt` metadata directories where applicable.\n\nFor more details,
+  see [CVE-2022-25326](https://www.cve.org/CVERecord?id=CVE-2022-25326) and https://github.com/google/fscrypt#setting-up-fscrypt-on-a-filesystem.\n"
+date: "2022-03-01"
+pubdate: "2022-03-01"
+affected_range: "<v0.3.3"
+fixed_versions:
+- "v0.3.3"
+affected_versions: "All versions before 0.3.3"
+not_impacted: "All versions starting from 0.3.3"
+solution: "Upgrade to version 0.3.3 or above."
+urls:
+- "https://github.com/google/fscrypt/security/advisories/GHSA-chxf-fjcf-7fwp"
+- "https://github.com/advisories/GHSA-chxf-fjcf-7fwp"
+uuid: "1933db5e-3352-4184-8dba-d4bbf784c810"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
+versions:
+- number: "v0.3.3"
+  commit:
+    tags:
+    - "v0.3.3"
+    sha: "f28f2be05de938b1c2da7a88569bf6611250a9e2"
+    timestamp: "20220223204848"

@@ -1,0 +1,35 @@
+---
+identifier: "GMS-2022-179"
+identifiers:
+- "GHSA-p93v-m2r2-4387"
+- "GMS-2022-179"
+package_slug: "go/github.com/google/fscrypt"
+title: "Denial of service via insufficient metadata validation"
+description: "The PAM module for `fscrypt` through v0.3.2 does not adequately validate
+  `fscrypt` metadata files, allowing users to create malicious metadata files that
+  prevent other users from logging in. A local user can cause a denial of service
+  by creating a `fscrypt` metadata file that prevents other users from logging into
+  the system. We recommend upgrading to v0.3.3 or above.\n\nFor more details, see
+  [CVE-2022-25327](https://www.cve.org/CVERecord?id=CVE-2022-25327)."
+date: "2022-03-01"
+pubdate: "2022-03-01"
+affected_range: "<v0.3.3"
+fixed_versions:
+- "v0.3.3"
+affected_versions: "All versions before 0.3.3"
+not_impacted: "All versions starting from 0.3.3"
+solution: "Upgrade to version 0.3.3 or above."
+urls:
+- "https://github.com/google/fscrypt/security/advisories/GHSA-p93v-m2r2-4387"
+- "https://github.com/advisories/GHSA-p93v-m2r2-4387"
+uuid: "7498ee96-5263-4d78-afc9-549be1813e2a"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
+versions:
+- number: "v0.3.3"
+  commit:
+    tags:
+    - "v0.3.3"
+    sha: "f28f2be05de938b1c2da7a88569bf6611250a9e2"
+    timestamp: "20220223204848"
