@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2022-240"
+identifiers:
+- "GHSA-fmx4-26r3-wxpf"
+- "GMS-2022-240"
+package_slug: "gem/commonmarker"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in commonmarker."
+date: "2022-03-03"
+pubdate: "2022-03-03"
+affected_range: "<0.23.4"
+fixed_versions:
+- "0.23.4"
+affected_versions: "All versions before 0.23.4"
+not_impacted: "All versions starting from 0.23.4"
+solution: "Upgrade to version 0.23.4 or above."
+urls:
+- "https://github.com/github/cmark-gfm/security/advisories/GHSA-mc3g-88wq-6f4x"
+- "https://github.com/gjtorikian/commonmarker/security/advisories/GHSA-fmx4-26r3-wxpf"
+- "https://github.com/gjtorikian/commonmarker/commit/ab4504fd17460627a6ab255bc3c63e8e5fc6aed3"
+- "https://github.com/advisories/GHSA-fmx4-26r3-wxpf"
+uuid: "3e490e83-3344-4008-a8f6-912d46164352"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

@@ -1,0 +1,30 @@
+---
+identifier: "GMS-2022-230"
+identifiers:
+- "GHSA-mfjm-vh54-3f96"
+- "GMS-2022-230"
+package_slug: "pypi/scrapy"
+title: "Cookie-setting is not restricted based on the public suffix list"
+description: "Responses from domain names whose public domain name suffix
+  contains 1 or more periods (e.g. responses from `example.co.uk`, given its public
+  domain name suffix is `co.uk`) are able to set cookies that are included in requests
+  to any other domain sharing the same domain name suffix."
+date: "2022-03-02"
+pubdate: "2022-03-01"
+affected_range: "<1.8.2||>=2.0.0,<2.6.0"
+fixed_versions:
+- "1.8.2"
+- "2.6.0"
+affected_versions: "All versions before 1.8.2, all versions starting from 2.0.0 before
+  2.6.0"
+not_impacted: "All versions starting from 1.8.2 before 2.0.0, all versions starting
+  from 2.6.0"
+solution: "Upgrade to versions 1.8.2, 2.6.0 or above."
+urls:
+- "https://github.com/scrapy/scrapy/security/advisories/GHSA-mfjm-vh54-3f96"
+- "https://github.com/scrapy/scrapy/commit/e865c4430e58a4faa0e0766b23830f8423d6167a"
+- "https://github.com/advisories/GHSA-mfjm-vh54-3f96"
+uuid: "2ee20ab6-d297-4e94-96a3-81675366eaa4"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
