@@ -5,9 +5,8 @@ identifiers:
 - "GMS-2022-205"
 package_slug: "go/github.com/pomerium/pomerium"
 title: "Multiple security issues in Pomerium's embedded envoy"
-description: "Possible DoS or crash - Resources available
-  to unauthorized users. Pomerium may trust upstream certificates that should not
-  be trusted."
+description: "Possible DoS or crash - Resources available to unauthorized users. Pomerium
+  may trust upstream certificates that should not be trusted."
 date: "2022-03-02"
 pubdate: "2022-03-01"
 affected_range: "<v0.16.4"
