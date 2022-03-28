@@ -1,0 +1,24 @@
+---
+identifier: "GMS-2022-410"
+identifiers:
+- "GHSA-32gv-6cf3-wcmq"
+- "GMS-2022-410"
+package_slug: "pypi/Twisted"
+title: "HTTP/2 DoS Attacks: Ping, Reset, and Settings Floods"
+description: "Twisted web servers that utilize the optional HTTP/2 support
+  suffer from the following flow-control related vulnerabilities."
+date: "2022-03-17"
+pubdate: "2022-03-14"
+affected_range: "<19.10.0"
+fixed_versions:
+- "19.10.0"
+affected_versions: "All versions before 19.10.0"
+not_impacted: "All versions starting from 19.10.0"
+solution: "Upgrade to version 19.10.0 or above."
+urls:
+- "https://github.com/twisted/twisted/security/advisories/GHSA-32gv-6cf3-wcmq"
+- "https://github.com/advisories/GHSA-32gv-6cf3-wcmq"
+uuid: "42202e66-ecdd-4dd7-b9d6-77a96c72eaa3"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

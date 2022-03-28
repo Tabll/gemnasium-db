@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2022-513"
+identifiers:
+- "GHSA-3988-h75v-hwf6"
+- "GMS-2022-513"
+package_slug: "packagist/squizlabs/php_codesniffer"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "A properly crafted filename would allow for arbitrary code execution when using 
+  the `--filter=gitmodified` command line option."
+date: "2022-03-26"
+pubdate: "2022-03-26"
+affected_range: ">=3.0.0,<3.0.1"
+fixed_versions:
+- "3.0.1"
+affected_versions: "All versions starting from 3.0.0 before 3.0.1"
+not_impacted: "All versions before 3.0.0, all versions starting from 3.0.1"
+solution: "Upgrade to version 3.0.1 or above."
+urls:
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/squizlabs/php_codesniffer/2017-05-18.yaml"
+- "https://github.com/squizlabs/PHP_CodeSniffer/releases/tag/3.0.1"
+- "https://github.com/advisories/GHSA-3988-h75v-hwf6"
+uuid: "892b087e-1a5d-46b6-bb30-5ec63111c886"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2022-450"
+identifiers:
+- "GHSA-7j52-6fjp-58gr"
+- "GMS-2022-450"
+package_slug: "npm/@openzeppelin/contracts-upgradeable"
+title: "Inconsistent storage layout for ERC2771ContextUpgradeable"
+description: "The storage layout of the ERC2771ContextUpgradeable is
+  not constant"
+date: "2022-03-18"
+pubdate: "2022-03-14"
+affected_range: ">=4.0.0 <4.3.0"
+fixed_versions:
+- "4.3.0"
+affected_versions: "All versions starting from 4.0.0 before 4.3.0"
+not_impacted: "All versions before 4.0.0, all versions starting from 4.3.0"
+solution: "Upgrade to version 4.3.0 or above."
+urls:
+- "https://github.com/OpenZeppelin/openzeppelin-contracts-upgradeable/security/advisories/GHSA-7j52-6fjp-58gr"
+- "https://github.com/OpenZeppelin/openzeppelin-transpiler/pull/86"
+- "https://github.com/advisories/GHSA-7j52-6fjp-58gr"
+uuid: "9a481670-821c-4fd2-bc7b-455364e97bf4"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

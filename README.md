@@ -51,6 +51,8 @@ contributions.
 | @patrickmorton | #179,#180,#182        |
 | @westonsteimel | !11629                |
 | @mburakouski   | #181                  |
+| @AFDesk        | #187                  |
+| @attritionorg  | !13114                |
 
 ## Directory structure
 

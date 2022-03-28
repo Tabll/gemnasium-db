@@ -8,13 +8,14 @@ title: "Improper Neutralization of Special Elements used in an OS Command ('OS C
   Injection')"
 description: "Improper Neutralization of Special Elements used in an OS Command ('OS
   Command Injection') in localeval."
-date: "2020-09-04"
+date: "2022-03-14"
 pubdate: "2020-09-04"
-affected_range: ">=0"
-fixed_versions: []
-affected_versions: "All versions"
-not_impacted: ""
-solution: "Unfortunately, there is no solution available yet."
+affected_range: ">=0.0.0 <15.3.0"
+fixed_versions:
+- "15.3.0"
+affected_versions: "All versions starting from 0.0.0 before 15.3.0"
+not_impacted: "All versions before 0.0.0, all versions starting from 15.3.0"
+solution: "Upgrade to version 15.3.0 or above."
 urls:
 - "https://www.npmjs.com/advisories/1340"
 - "https://github.com/advisories/GHSA-mmqv-m45h-q2hp"

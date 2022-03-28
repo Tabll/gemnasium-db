@@ -1,0 +1,35 @@
+---
+identifier: "GMS-2022-424"
+identifiers:
+- "GHSA-w2j5-3rcx-vx7x"
+- "GMS-2022-424"
+package_slug: "go/github.com/cri-o/cri-o"
+title: "Sysctls applied to containers with host IPC or host network namespaces can
+  affect the host"
+description: "Before setting the sysctls for a pod, the pods namespaces
+  must be unshared (created)."
+date: "2022-03-18"
+pubdate: "2022-03-15"
+affected_range: ">=1.23.0 <1.23.1||>=1.22.0 <1.22.2||>=1.21.0 <1.21.5||>=1.20.0 <1.20.6||>=1.18.0
+  <1.19.5"
+fixed_versions:
+- "1.23.1"
+- "1.21.5"
+- "1.20.6"
+- "1.19.5"
+affected_versions: "All versions starting from 1.23.0 before 1.23.1, all versions
+  starting from 1.22.0 before 1.22.2, all versions starting from 1.21.0 before 1.21.5,
+  all versions starting from 1.20.0 before 1.20.6, all versions starting from 1.18.0
+  before 1.19.5"
+not_impacted: "All versions before 1.23.0, all versions starting from 1.23.1, all
+  versions before 1.22.0, all versions starting from 1.22.2, all versions before 1.21.0,
+  all versions starting from 1.21.5, all versions before 1.20.0, all versions starting
+  from 1.20.6, all versions before 1.18.0, all versions starting from 1.19.5"
+solution: "Upgrade to versions 1.23.1, 1.21.5, 1.20.6, 1.19.5 or above."
+urls:
+- "https://github.com/cri-o/cri-o/security/advisories/GHSA-w2j5-3rcx-vx7x"
+- "https://github.com/advisories/GHSA-w2j5-3rcx-vx7x"
+uuid: "5fee36fd-642f-472b-b9d4-34979375051d"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

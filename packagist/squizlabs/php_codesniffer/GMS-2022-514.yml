@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2022-514"
+identifiers:
+- "GHSA-mhfv-8rc9-w38c"
+- "GMS-2022-514"
+package_slug: "packagist/squizlabs/php_codesniffer"
+title: "Arbitrary shell execution"
+description: "Uses of `shell_exec()` and `exec()` were not escaping filenames and 
+  configuration settings in most cases."
+date: "2022-03-26"
+pubdate: "2022-03-26"
+affected_range: ">=1.0.0,<2.8.1"
+fixed_versions:
+- "2.8.1"
+affected_versions: "All versions starting from 1.0.0 before 2.8.1"
+not_impacted: "All versions before 1.0.0, all versions starting from 2.8.1"
+solution: "Upgrade to version 2.8.1 or above."
+urls:
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/squizlabs/php_codesniffer/2017-03-01.yaml"
+- "https://github.com/squizlabs/PHP_CodeSniffer/releases/tag/2.8.1"
+- "https://github.com/advisories/GHSA-mhfv-8rc9-w38c"
+uuid: "e03582ba-9cba-4f7a-a5a1-5411bfc9d656"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

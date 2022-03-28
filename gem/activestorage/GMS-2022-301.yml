@@ -1,0 +1,39 @@
+---
+identifier: "GMS-2022-301"
+identifiers:
+- "GHSA-w749-p3v6-hccq"
+- "GMS-2022-301"
+- "CVE-2022-21831"
+package_slug: "gem/activestorage"
+title: "Possible code injection vulnerability in Rails / Active Storage"
+description: "The Active Storage module of Rails starting with version 5.2.0 are possibly
+  vulnerable to code injection. This issue was patched in versions 5.2.6.2, 6.0.4.7,
+  6.1.4.7, and 7.0.2.3. To work around this issue, applications should implement a
+  strict allow-list on accepted transformation methods or arguments. Additionally,
+  a strict ImageMagick security policy will help mitigate this issue."
+date: "2022-03-08"
+pubdate: "2022-03-08"
+affected_range: ">=5.2.0 <=5.2.6.2||>=6.0.0 <=6.0.4.6||>=6.1.0 <=6.1.4.6||>=7.0.0
+  <=7.0.2.2"
+fixed_versions:
+- "5.2.6.3"
+- "6.0.4.7"
+- "6.1.4.7"
+- "7.0.2.3"
+affected_versions: "All versions starting from 5.2.0 up to 5.2.6.2, all versions starting
+  from 6.0.0 up to 6.0.4.6, all versions starting from 6.1.0 up to 6.1.4.6, all versions
+  starting from 7.0.0 up to 7.0.2.2"
+not_impacted: "All versions before 5.2.0, all versions after 5.2.6.2 before 6.0.0,
+  all versions after 6.0.4.6 before 6.1.0, all versions after 6.1.4.6 before 7.0.0,
+  all versions after 7.0.2.2"
+solution: "Upgrade to versions 5.2.6.3, 6.0.4.7, 6.1.4.7, 7.0.2.3 or above."
+urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2022-21831"
+- "https://github.com/rails/rails/commit/0a72f7d670e9aa77a0bb8584cb1411ddabb7546e"
+- "https://groups.google.com/g/rubyonrails-security/c/n-p-W1yxatI"
+- "https://rubysec.com/advisories/CVE-2022-21831/"
+- "https://github.com/advisories/GHSA-w749-p3v6-hccq"
+uuid: "67a40378-7cd2-4bdd-8870-6c33d01b244c"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

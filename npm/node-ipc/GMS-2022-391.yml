@@ -1,0 +1,26 @@
+# community-sync
+---
+identifier: "GMS-2022-391"
+identifiers:
+- "GHSA-3mpp-xfvh-qh37"
+- "GMS-2022-391"
+package_slug: "npm/node-ipc"
+title: "node-ipc behavior change (sabotaged package)"
+description: "node-ipc version 11.0.0 and newer include a message from the maintainer
+  that is written to the user’s desktop. Please review the version changes before
+  proceeding."
+date: "2022-03-16"
+pubdate: "2022-03-16"
+affected_range: ">=11.0.0"
+fixed_versions:
+- "10.1.3"
+affected_versions: "All versions starting from 11.0.0"
+not_impacted: "All versions before 11.0.0"
+solution: "Downgrade to version 10.1.3"
+urls:
+- "https://github.com/RIAEvangelist/node-ipc/releases/tag/v11.0.0"
+- "https://github.com/advisories/GHSA-3mpp-xfvh-qh37"
+uuid: "c7f515ad-0ad8-492c-9550-c484981af90a"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2022-454"
+identifiers:
+- "GHSA-fm35-jgg3-3grx"
+- "GMS-2022-454"
+package_slug: "packagist/pocketmine/pocketmine-mp"
+title: "NaN/INF in serverbound movement packets can crash clients and servers"
+description: "A malicious client may send a `MovePlayerPacket` to the
+  server whose position or rotation contains NaN or INF. Since neither the server
+  nor vanilla client handles this properly, a number of interesting side effects come
+  into play."
+date: "2022-03-21"
+pubdate: "2022-03-18"
+affected_range: "<=3.18.0"
+fixed_versions:
+- "3.18.1"
+affected_versions: "All versions up to 3.18.0"
+not_impacted: "All versions after 3.18.0"
+solution: "Upgrade to version 3.18.1 or above."
+urls:
+- "https://github.com/pmmp/PocketMine-MP/security/advisories/GHSA-fm35-jgg3-3grx"
+- "https://github.com/advisories/GHSA-fm35-jgg3-3grx"
+uuid: "8561dc6f-4c54-42fb-b877-90bb7417c752"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

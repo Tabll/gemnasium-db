@@ -3,6 +3,7 @@ identifier: "GMS-2022-68"
 identifiers:
 - "GHSA-wxgw-qj99-44c2"
 - "GMS-2022-68"
+- "CVE-2020-7720"
 package_slug: "npm/node-forge"
 title: "Prototype Pollution in node-forge util.setPath API"
 description: "### Impact\n`forge.util.setPath` had a potential prototype pollution

@@ -1,0 +1,26 @@
+# community-sync
+---
+identifier: "GMS-2022-392"
+identifiers:
+- "GHSA-8gr3-2gjw-jj7g"
+- "GMS-2022-392"
+package_slug: "npm/node-ipc"
+title: "Hidden functionality in node-ipc"
+description: "The package node-ipc version 9.2.2 is vulnerable to hidden functionality
+  that was introduced by the maintainer. The package uses a dependency that writes
+  a file to disk that does not pertain to the functionality of the package and is
+  not included in versions < 9.2.2."
+date: "2022-03-16"
+pubdate: "2022-03-16"
+affected_range: "=9.2.2"
+fixed_versions: []
+affected_versions: "Version 9.2.2"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/RIAEvangelist/node-ipc/releases/tag/9.2.2"
+- "https://github.com/advisories/GHSA-8gr3-2gjw-jj7g"
+uuid: "fa94b437-e41f-407e-8819-5e0b568b31b8"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
