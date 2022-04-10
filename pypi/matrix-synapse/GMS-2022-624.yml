@@ -1,0 +1,33 @@
+---
+identifier: "GMS-2022-624"
+identifiers:
+- "GHSA-4822-jvwx-w47h"
+- "GMS-2022-624"
+package_slug: "pypi/matrix-synapse"
+title: "Uncontrolled Resource Consumption"
+description: "Synapse before 1.52.0 with URL preview functionality enabled
+  will attempt to generate URL previews for media stream URLs without properly limiting
+  connection time. Connections will only be terminated after `max_spider_size` (default:
+  10M) bytes have been downloaded, which can in some cases lead to long-lived connections
+  towards the streaming media server (for instance, Icecast). This can cause excessive
+  traffic and connections toward such servers if their stream URL is, for example,
+  posted to a large room with many Synapse instances with URL preview enabled."
+date: "2022-04-05"
+pubdate: "2022-04-01"
+affected_range: "<1.53.0"
+fixed_versions:
+- "1.53.0"
+affected_versions: "All versions before 1.53.0"
+not_impacted: "All versions starting from 1.53.0"
+solution: "Upgrade to version 1.53.0 or above."
+urls:
+- "https://github.com/matrix-org/synapse/security/advisories/GHSA-4822-jvwx-w47h"
+- "https://github.com/matrix-org/synapse/pull/11784"
+- "https://github.com/matrix-org/synapse/pull/11936"
+- "https://github.com/matrix-org/synapse/releases/tag/v1.52.0"
+- "https://github.com/matrix-org/synapse/releases/tag/v1.53.0"
+- "https://github.com/advisories/GHSA-4822-jvwx-w47h"
+uuid: "d4cd108a-edd8-4852-ae37-ef6061e54cc9"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

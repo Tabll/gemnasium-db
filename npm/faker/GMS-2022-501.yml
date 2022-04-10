@@ -14,8 +14,9 @@ affected_range: "=6.6.6"
 fixed_versions: []
 affected_versions: "Version 6.6.6"
 not_impacted: ""
-solution: "Move to a different package as this maintainer is no longer trustworthy."
+solution: "Migrate to the stable fork, @faker-js/faker. The maintainer of the original package is no longer trustworthy."
 urls:
+- "https://fakerjs.dev/update.html#i-heard-something-happened-what-s-the-tldr"
 - "https://nvd.nist.gov/vuln/detail/CVE-2021-23567"
 - "https://github.com/Marak/colors.js/issues/285"
 - "https://github.com/Marak/colors.js/issues/285%23issuecomment-1008212640"

@@ -4,9 +4,22 @@ identifiers:
 - "GHSA-5629-8855-gf4g"
 - "GMS-2021-4"
 package_slug: "gem/solidus-core"
-title: "Cross-Site Request Forgery (CSRF)"
-description: "solidus-core is vulnerable to CSRF"
-date: "2021-11-18"
+title: "Authentication Bypass by CSRF Weakness"
+description: "### Impact\nThe actual vulnerability has been discovered on `solidus_auth_devise`.
+  See [GHSA-xm34-v85h-9pg2](https://github.com/solidusio/solidus_auth_devise/security/advisories/GHSA-xm34-v85h-9pg2)
+  for details.\n\nThe security advisory here exists to provide an extra layer of security
+  in the form of a monkey patch for users who don't update `solidus_auth_devise`.
+  For this reason, it has been marked as low impact on this end.\n\n### Patches\nFor
+  extra security, update `solidus_core` to versions `3.1.3`, `3.0.3` or `2.11.12`.\n\n###
+  Workarounds\nLook at the workarounds described at
+  [GHSA-xm34-v85h-9pg2](https://github.com/solidusio/solidus_auth_devise/security/advisories/GHSA-xm34-v85h-9pg2).\n\n###
+  References\n- [GHSA-xm34-v85h-9pg2](https://github.com/solidusio/solidus_auth_devise/security/advisories/GHSA-xm34-v85h-9pg2).\n\n###
+  For more information\nIf you have any questions or comments about this advisory:\n*
+  Open an issue in [solidus_auth_devise](https://github.com/solidusio/solidus_auth_devise/issues)
+  or a discussion in [solidus](https://github.com/solidusio/solidus/discussions)\n*
+  Email us at [security@solidus.io](mailto:security@soliidus.io)\n* Contact the core
+  team on [Slack](http://slack.solidus.io/)\n"
+date: "2022-03-02"
 pubdate: "2021-11-18"
 affected_range: "<2.11.12||>=3.0.0 <3.0.3||>=3.1.0 <3.1.3"
 fixed_versions:
@@ -20,6 +33,8 @@ not_impacted: "All versions starting from 2.11.12 before 3.0.0, all versions sta
 solution: "Upgrade to versions 2.11.12, 3.0.3, 3.1.3 or above."
 urls:
 - "https://github.com/solidusio/solidus/security/advisories/GHSA-5629-8855-gf4g"
+- "https://github.com/solidusio/solidus_auth_devise/security/advisories/GHSA-xm34-v85h-9pg2"
+- "https://github.com/advisories/GHSA-5629-8855-gf4g"
 uuid: "346f167e-50d6-4526-bc18-1be951a34735"
 cwe_ids:
 - "CWE-1035"

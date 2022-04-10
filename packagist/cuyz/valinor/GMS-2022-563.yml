@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2022-563"
+identifiers:
+- "GHSA-xhr8-mpwq-2rr2"
+- "GMS-2022-563"
+package_slug: "packagist/cuyz/valinor"
+title: "Automatic named constructor discovery"
+description: "The issue arises
+  when upgrading from `cuyz/valinor:0.3.0` to a newer system on an existing application,
+  which broke due to the wrong constructor being picked. The bigger security
+  concern is akin to https://github.com/rails/rails/issues/5228."
+date: "2022-04-05"
+pubdate: "2022-04-01"
+affected_range: ">=0.5.0,<0.7.0"
+fixed_versions:
+- "0.7.0"
+affected_versions: "All versions starting from 0.5.0 before 0.7.0"
+not_impacted: "All versions before 0.5.0, all versions starting from 0.7.0"
+solution: "Upgrade to version 0.7.0 or above."
+urls:
+- "https://github.com/CuyZ/Valinor/security/advisories/GHSA-xhr8-mpwq-2rr2"
+- "https://github.com/CuyZ/Valinor/commit/718d3c1bc2ea7d28b4b1f6c062addcd1dde8660b"
+- "https://github.com/CuyZ/Valinor/releases/tag/0.7.0"
+- "https://github.com/advisories/GHSA-xhr8-mpwq-2rr2"
+uuid: "08517e9e-7e1b-403a-9cb4-eb7e811037a7"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

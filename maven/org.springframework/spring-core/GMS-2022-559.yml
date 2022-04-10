@@ -1,0 +1,40 @@
+# community-sync
+---
+identifier: "GMS-2022-559"
+identifiers:
+- "GHSA-36p3-wjmg-h94x"
+- "GMS-2022-559"
+- "CVE-2022-22965"
+package_slug: "maven/org.springframework/spring-core"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in org.springframework:spring-core."
+date: "2022-03-31"
+pubdate: "2022-03-31"
+affected_range: "(,5.2.20),[5.3.0,5.3.18)"
+fixed_versions:
+- "5.2.20"
+- "5.3.18"
+affected_versions: "All versions before 5.2.20, all versions starting from 5.3.0 before
+  5.3.18"
+not_impacted: "All versions starting from 5.2.20 before 5.3.0, all versions starting
+  from 5.3.18"
+solution: "Upgrade to versions 5.2.20, 5.3.18 or above."
+urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2022-22965"
+- "https://github.com/spring-projects/spring-framework/commit/002546b3e4b8d791ea6acccb81eb3168f51abb15"
+- "https://github.com/spring-projects/spring-boot/releases/tag/v2.5.12"
+- "https://github.com/spring-projects/spring-boot/releases/tag/v2.6.6"
+- "https://github.com/spring-projects/spring-framework/releases/tag/v5.2.20.RELEASE"
+- "https://github.com/spring-projects/spring-framework/releases/tag/v5.3.18"
+- "https://spring.io/blog/2022/03/31/spring-framework-rce-early-announcement"
+- "https://tanzu.vmware.com/security/cve-2022-22965"
+- "https://github.com/advisories/GHSA-36p3-wjmg-h94x"
+cvss_v2: "AV:N/AC:M/Au:N/C:C/I:C/A:C"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H"
+uuid: "fb9d5137-513f-4507-9fde-1a87f460bfca"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

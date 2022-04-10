@@ -8,9 +8,9 @@ title: "Improper Neutralization"
 description: "Improper Neutralization in github.com/aws/aws-sdk-go/service/s3/s3crypto."
 date: "2022-02-11"
 pubdate: "2022-02-11"
-affected_range: "<v1.34.0"
+affected_range: "<1.34.0"
 fixed_versions:
-- "v1.34.0"
+- "1.34.0"
 affected_versions: "All versions before 1.34.0"
 not_impacted: "All versions starting from 1.34.0"
 solution: "Upgrade to version 1.34.0 or above."
@@ -22,10 +22,3 @@ cwe_ids:
 - "CWE-1035"
 - "CWE-707"
 - "CWE-937"
-versions:
-- number: "v1.34.0"
-  commit:
-    tags:
-    - "v1.34.0"
-    sha: "ae9b9fd92af132cfd8d879809d8611825ba135f4"
-    timestamp: "20200807223756"
