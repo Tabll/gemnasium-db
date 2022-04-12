@@ -1,0 +1,43 @@
+---
+identifier: "GMS-2022-786"
+identifiers:
+- "GHSA-gx8x-g87m-h5q6"
+- "GMS-2022-786"
+package_slug: "gem/nokogiri"
+title: "Denial of Service (DoS) in Nokogiri on JRuby"
+description: "## Summary\n\nNokogiri `v1.13.4` updates the vendored `org.cyberneko.html`
+  library to `1.9.22.noko2` which addresses
+  [CVE-2022-24839](https://github.com/sparklemotion/nekohtml/security/advisories/GHSA-9849-p7jc-9rmv).
+  That CVE is rated 7.5 (High Severity).\n\nSee
+  [GHSA-9849-p7jc-9rmv](https://github.com/sparklemotion/nekohtml/security/advisories/GHSA-9849-p7jc-9rmv)
+  for more information.\n\nPlease note that this advisory only applies to the **JRuby**
+  implementation of Nokogiri `< 1.13.4`.\n\n\n## Mitigation\n\nUpgrade to Nokogiri
+  `>= 1.13.4`.\n\n\n## Impact\n\n###
+  [CVE-2022-24839](https://github.com/sparklemotion/nekohtml/security/advisories/GHSA-9849-p7jc-9rmv)
+  in nekohtml\n\n- **Severity**: High 7.5\n- **Type**:
+  [CWE-400](https://cwe.mitre.org/data/definitions/400.html)
+  Uncontrolled Resource Consumption\n- **Description**: The fork of `org.cyberneko.html`
+  used by Nokogiri (Rubygem) raises a `java.lang.OutOfMemoryError` exception when
+  parsing ill-formed HTML markup.\n- **See also**:
+  [GHSA-9849-p7jc-9rmv](https://github.com/sparklemotion/nekohtml/security/advisories/GHSA-9849-p7jc-9rmv)\n"
+date: "2022-04-11"
+pubdate: "2022-04-11"
+affected_range: "<1.13.4"
+fixed_versions:
+- "1.13.4"
+affected_versions: "All versions before 1.13.4"
+not_impacted: "All versions starting from 1.13.4"
+solution: "Upgrade to version 1.13.4 or above."
+urls:
+- "https://github.com/sparklemotion/nekohtml/security/advisories/GHSA-9849-p7jc-9rmv"
+- "https://github.com/sparklemotion/nokogiri/security/advisories/GHSA-gx8x-g87m-h5q6"
+- "https://nvd.nist.gov/vuln/detail/CVE-2022-24839"
+- "https://github.com/sparklemotion/nekohtml/commit/a800fce3b079def130ed42a408ff1d09f89e773d"
+- "https://github.com/sparklemotion/nokogiri/releases/tag/v1.13.4"
+- "https://groups.google.com/g/ruby-security-ann/c/vX7qSjsvWis/m/TJWN4oOKBwAJ"
+- "https://github.com/advisories/GHSA-gx8x-g87m-h5q6"
+uuid: "f4fbc6a4-bd16-430d-a981-88cda99d2d61"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
+- "CWE-400"
