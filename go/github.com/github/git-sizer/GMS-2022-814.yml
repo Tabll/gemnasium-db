@@ -1,0 +1,40 @@
+---
+identifier: "GMS-2022-814"
+identifiers:
+- "GHSA-57q7-rxqq-7vgp"
+- "GMS-2022-814"
+package_slug: "go/github.com/github/git-sizer"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in github.com/github/git-sizer."
+date: "2022-04-12"
+pubdate: "2022-02-15"
+affected_range: "<=v1.3.0"
+fixed_versions:
+- "v1.4.0"
+affected_versions: "All versions up to 1.3.0"
+not_impacted: "All versions after 1.3.0"
+solution: "Upgrade to version 1.4.0 or above."
+urls:
+- "https://github.com/github/git-sizer/security/advisories/GHSA-57q7-rxqq-7vgp"
+- "https://github.com/github/git-sizer/commit/38400d6ddd79325e956b00ff584cfcc8dd96d536"
+- "https://github.com/advisories/GHSA-57q7-rxqq-7vgp"
+uuid: "5bf3251a-c81d-4600-b97b-46f4fce8ff2c"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"
+versions:
+- number: "v1.3.0"
+  commit:
+    tags:
+    - "v1.3.0"
+    sha: "d5204a5abf740e072a798139f3d6a0a95fce6a7a"
+    timestamp: "20180829075344"
+- number: "v1.4.0"
+  commit:
+    tags:
+    - "v1.4.0"
+    sha: "4827e15619e2918e8d389d3757bc69d26daf6ba9"
+    timestamp: "20210423125245"

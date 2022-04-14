@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2022-818"
+identifiers:
+- "GHSA-6hv3-7c34-4hx8"
+- "GMS-2022-818"
+- "CVE-2019-14802"
+package_slug: "go/github.com/hashicorp/nomad/client/allocrunner/taskrunner/template"
+title: "Information Exposure Through Environmental Variables"
+description: "In Nomad before version 0.9.5, when rendering a task template, all environment
+  variables were available to the rendering task. As a fix, only task environment
+  variables are used."
+date: "2022-04-12"
+pubdate: "2022-02-15"
+affected_range: "<0.9.5"
+fixed_versions:
+- "0.9.5"
+affected_versions: "All versions before 0.9.5"
+not_impacted: "All versions starting from 0.9.5"
+solution: "Upgrade to version 0.9.5 or above."
+urls:
+- "https://github.com/hashicorp/nomad/pull/6055"
+- "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-14802"
+- "https://github.com/hashicorp/nomad/releases/tag/v0.9.5"
+- "https://github.com/advisories/GHSA-6hv3-7c34-4hx8"
+uuid: "0b4ec2de-4900-45a5-b1ff-c487abd03c32"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

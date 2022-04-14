@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2022-790"
+identifiers:
+- "GHSA-wf98-vxv9-jqfv"
+- "GMS-2022-790"
+package_slug: "packagist/craftcms/cms"
+title: "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+description: "Improper Neutralization of Input During Web Page Generation ('Cross-site
+  Scripting') in craftcms/cms."
+date: "2022-04-12"
+pubdate: "2022-04-05"
+affected_range: "<3.7.29"
+fixed_versions:
+- "3.7.29"
+affected_versions: "All versions before 3.7.29"
+not_impacted: "All versions starting from 3.7.29"
+solution: "Upgrade to version 3.7.29 or above."
+urls:
+- "https://github.com/craftcms/cms/security/advisories/GHSA-wf98-vxv9-jqfv"
+- "https://github.com/advisories/GHSA-wf98-vxv9-jqfv"
+uuid: "813632c4-b66f-4487-9c6a-f96cbdb7ae2c"
+cwe_ids:
+- "CWE-1035"
+- "CWE-79"
+- "CWE-937"
