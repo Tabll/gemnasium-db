@@ -3,7 +3,7 @@ identifier: "GMS-2021-4"
 identifiers:
 - "GHSA-5629-8855-gf4g"
 - "GMS-2021-4"
-package_slug: "gem/solidus-core"
+package_slug: "gem/solidus_core"
 title: "Authentication Bypass by CSRF Weakness"
 description: "### Impact\nThe actual vulnerability has been discovered on `solidus_auth_devise`.
   See [GHSA-xm34-v85h-9pg2](https://github.com/solidusio/solidus_auth_devise/security/advisories/GHSA-xm34-v85h-9pg2)
