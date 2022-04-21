@@ -54,6 +54,8 @@ contributions.
 | @attritionorg  | !13114                |
 | @hnathbar      | !13474                |
 | @javidr        | #189                  |
+| @mrjonstrong   | !13937                |
+| @hchriwoo      | #192                  |
 
 ## Directory structure
 

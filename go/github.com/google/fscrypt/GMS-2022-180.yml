@@ -12,7 +12,7 @@ description: "The bash completion script for `fscrypt` through v0.3.2 allows inj
   path and if the system administrator happens to be using the `fscrypt` bash completion
   script to complete mountpoint paths. We recommend upgrading to v0.3.3 or above.\n\nFor
   more details, see [CVE-2022-25328](https://www.cve.org/CVERecord?id=CVE-2022-25328)."
-date: "2022-03-01"
+date: "2022-04-19"
 pubdate: "2022-03-01"
 affected_range: "<v0.3.3"
 fixed_versions:

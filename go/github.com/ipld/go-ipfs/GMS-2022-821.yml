@@ -17,7 +17,7 @@ description: "go-ipfs nodes with versions 0.10.0, 0.11.0, 0.12.0, or 0.12.1 can
   services which fetch data on behalf of users, as well as applications such as 
   IPFS Companion which load data based on a user visiting a website with links 
   to IPFS URLs."
-date: "2022-04-12"
+date: "2022-04-20"
 pubdate: "2022-04-08"
 affected_range: "<0.11.1||>=0.12.0 <0.12.2"
 fixed_versions:

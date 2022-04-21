@@ -10,7 +10,7 @@ description: "`fscrypt` through v0.3.2 creates a world-writable directory by def
   space. We recommend upgrading to `fscrypt` v0.3.3 or above and adjusting the permissions
   on existing `fscrypt` metadata directories where applicable.\n\nFor more details,
   see [CVE-2022-25326](https://www.cve.org/CVERecord?id=CVE-2022-25326) and https://github.com/google/fscrypt#setting-up-fscrypt-on-a-filesystem.\n"
-date: "2022-03-01"
+date: "2022-04-19"
 pubdate: "2022-03-01"
 affected_range: "<v0.3.3"
 fixed_versions:

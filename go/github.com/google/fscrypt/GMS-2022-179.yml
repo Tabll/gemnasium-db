@@ -11,7 +11,7 @@ description: "The PAM module for `fscrypt` through v0.3.2 does not adequately va
   by creating a `fscrypt` metadata file that prevents other users from logging into
   the system. We recommend upgrading to v0.3.3 or above.\n\nFor more details, see
   [CVE-2022-25327](https://www.cve.org/CVERecord?id=CVE-2022-25327)."
-date: "2022-03-01"
+date: "2022-04-19"
 pubdate: "2022-03-01"
 affected_range: "<v0.3.3"
 fixed_versions:

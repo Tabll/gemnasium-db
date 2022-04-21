@@ -11,7 +11,7 @@ description: "GitHub CLI depends on a git.exe executable being found in system %
   current working directory at the time of running gh, the malicious command will
   be invoked instead of the system one. Windows users who run gh inside untrusted
   directories are affected."
-date: "2022-02-11"
+date: "2022-04-19"
 pubdate: "2022-02-11"
 affected_range: "<v1.2.1"
 fixed_versions:
