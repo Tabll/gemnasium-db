@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2022-1097"
+identifiers:
+- "GHSA-m98g-63qj-fp8j"
+- "GMS-2022-1097"
+package_slug: "maven/org.keycloak/keycloak-parent"
+title: "Reflected XSS on clients-registrations endpoint"
+description: "A POST based reflected Cross Site Scripting vulnerability on has been
+  identified in Keycloak. When a malicious request is sent to the client registration
+  endpoint, the error message is not properly escaped, allowing an attacker to execute
+  malicious scripts into the user's browser."
+date: "2022-04-28"
+pubdate: "2022-04-28"
+affected_range: "[10.0.0,18.0.0)"
+fixed_versions:
+- "18.0.0"
+affected_versions: "All versions starting from 10.0.0 before 18.0.0"
+not_impacted: "All versions before 10.0.0, all versions starting from 18.0.0"
+solution: "Upgrade to version 18.0.0 or above."
+urls:
+- "https://github.com/keycloak/keycloak/security/advisories/GHSA-m98g-63qj-fp8j"
+- "https://github.com/advisories/GHSA-m98g-63qj-fp8j"
+uuid: "fa3e50a4-8029-44b1-9be6-425e6953df8e"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

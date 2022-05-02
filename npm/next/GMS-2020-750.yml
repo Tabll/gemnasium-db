@@ -8,13 +8,13 @@ title: "Improper Neutralization of Special Elements used in an OS Command ('OS C
   Injection')"
 description: "Improper Neutralization of Special Elements used in an OS Command ('OS
   Command Injection') in next."
-date: "2020-09-04"
+date: "2022-04-28"
 pubdate: "2020-09-04"
-affected_range: "<5.1.0"
+affected_range: ">=0.9.9 <5.1.0"
 fixed_versions:
 - "5.1.0"
-affected_versions: "All versions before 5.1.0"
-not_impacted: "All versions starting from 5.1.0"
+affected_versions: "All versions starting from 0.9.9 before 5.1.0"
+not_impacted: "All versions before 0.9.9, all versions starting from 5.1.0"
 solution: "Upgrade to version 5.1.0 or above."
 urls:
 - "https://github.com/masasron/vulnerability-research/tree/master/CVE-2018-6184/LFI"

@@ -1,0 +1,36 @@
+---
+identifier: "GMS-2022-1138"
+identifiers:
+- "GHSA-ch3h-j2vf-95pv"
+- "GMS-2022-1138"
+- "CVE-2022-27777"
+package_slug: "gem/actionview"
+title: "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+description: "Improper Neutralization of Input During Web Page Generation ('Cross-site
+  Scripting') in actionview."
+date: "2022-04-27"
+pubdate: "2022-04-27"
+affected_range: "<=5.2.7.0||>=6.0.0 <=6.0.4.7||>=6.1.0 <=6.1.5.0||>=7.0.0 <=7.0.2.3"
+fixed_versions:
+- "5.2.7.1"
+- "6.0.4.8"
+- "6.1.5.1"
+- "7.0.2.4"
+affected_versions: "All versions up to 5.2.7.0, all versions starting from 6.0.0 up
+  to 6.0.4.7, all versions starting from 6.1.0 up to 6.1.5.0, all versions starting
+  from 7.0.0 up to 7.0.2.3"
+not_impacted: "All versions after 5.2.7.0 before 6.0.0, all versions after 6.0.4.7
+  before 6.1.0, all versions after 6.1.5.0 before 7.0.0, all versions after 7.0.2.3"
+solution: "Upgrade to versions 5.2.7.1, 6.0.4.8, 6.1.5.1, 7.0.2.4 or above."
+urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2022-27777"
+- "https://github.com/rails/rails/commit/649516ce0feb699ae06a8c5e81df75d460cc9a85"
+- "https://github.com/rubysec/ruby-advisory-db/blob/master/gems/actionview/CVE-2022-27777.yml"
+- "https://groups.google.com/g/ruby-security-ann/c/9wJPEDv-iRw"
+- "https://rubyonrails.org/2022/4/26/Rails-7-0-2-4-6-1-5-1-6-0-4-8-and-5-2-7-1-have-been-released"
+- "https://github.com/advisories/GHSA-ch3h-j2vf-95pv"
+uuid: "26f3f4c4-2838-431b-80e7-f0fdf810c308"
+cwe_ids:
+- "CWE-1035"
+- "CWE-79"
+- "CWE-937"

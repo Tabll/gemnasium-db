@@ -1,0 +1,33 @@
+---
+identifier: "GMS-2022-1047"
+identifiers:
+- "GHSA-gvj8-4cj4-h776"
+- "GMS-2022-1047"
+package_slug: "packagist/ibexa/core"
+title: "Object state limitation has no effect"
+description: "Object state limitation is a policy you can use in your roles to limit
+  access to content based on specific object state values. Due to a flawed earlier
+  update, these limitations were ineffective in releases made since February 16th
+  2022. They would grant access to the given content regardless of the object state.
+  Depending on how your frontent is designed, knowing the URL to the content may or
+  may not be required to access it. If you are using object state limitations in your
+  roles, this issue is critical. Please apply the fix as soon as possible."
+date: "2022-04-29"
+pubdate: "2022-04-29"
+affected_range: ">=4.0.0,<4.0.5||>=4.1.0,<4.1.2"
+fixed_versions:
+- "4.0.5"
+- "4.1.2"
+affected_versions: "All versions starting from 4.0.0 before 4.0.5, all versions starting
+  from 4.1.0 before 4.1.2"
+not_impacted: "All versions before 4.0.0, all versions starting from 4.0.5 before
+  4.1.0, all versions starting from 4.1.2"
+solution: "Upgrade to versions 4.0.5, 4.1.2 or above."
+urls:
+- "https://github.com/ibexa/core/security/advisories/GHSA-gvj8-4cj4-h776"
+- "https://developers.ibexa.co/security-advisories/ibexa-sa-2022-004-ineffective-object-state-limitation-and-unauthenticated-fastly-purge"
+- "https://github.com/advisories/GHSA-gvj8-4cj4-h776"
+uuid: "88a9f7ad-7d96-48a7-a618-e958334eba11"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

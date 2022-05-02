@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2022-1098"
+identifiers:
+- "GHSA-4pc7-vqv5-5r3v"
+- "GMS-2022-1098"
+- "CVE-2021-3827"
+package_slug: "maven/org.keycloak/keycloak-saml-core"
+title: "ECP SAML binding bypasses authentication flows"
+description: "### Description\nA flaw was found in keycloak, where the default ECP
+  binding flow allows other authentication flows to be bypassed. By exploiting this
+  behavior, an attacker can bypass the MFA authentication by sending a SOAP request
+  with an AuthnRequest and Authorization header with the user's credentials. The highest
+  threat from this vulnerability is to confidentiality and integrity.\n"
+date: "2022-04-27"
+pubdate: "2022-04-27"
+affected_range: "(,18.0.0)"
+fixed_versions:
+- "18.0.0"
+affected_versions: "All versions before 18.0.0"
+not_impacted: "All versions starting from 18.0.0"
+solution: "Upgrade to version 18.0.0 or above."
+urls:
+- "https://github.com/keycloak/keycloak/security/advisories/GHSA-4pc7-vqv5-5r3v"
+- "https://github.com/advisories/GHSA-4pc7-vqv5-5r3v"
+uuid: "07cadbda-431c-4ee5-bd12-40ca13d02e40"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

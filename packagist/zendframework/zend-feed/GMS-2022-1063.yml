@@ -1,0 +1,32 @@
+---
+identifier: "GMS-2022-1063"
+identifiers:
+- "GHSA-f6p5-76fp-m248"
+- "GMS-2022-1063"
+package_slug: "packagist/zendframework/zend-feed"
+title: "URL Rewrite vulnerability in multiple zendframework components"
+description: "zend-diactoros (and, by extension, Expressive), zend-http (and, by extension,
+  Zend Framework MVC projects), and zend-feed (specifically, its PubSubHubbub sub-component)
+  each contain a potential URL rewrite exploit. In each case, marshaling a request
+  URI includes logic that introspects HTTP request headers that are specific to a
+  given server-side URL rewrite mechanism.\n\nWhen these headers are present on systems
+  not running the specific URL rewriting mechanism, the logic would still trigger,
+  allowing a malicious client or proxy to emulate the headers to request arbitrary
+  content."
+date: "2022-04-28"
+pubdate: "2022-04-28"
+affected_range: "<2.10.3"
+fixed_versions:
+- "2.10.3"
+affected_versions: "All versions before 2.10.3"
+not_impacted: "All versions starting from 2.10.3"
+solution: "Upgrade to version 2.10.3 or above."
+urls:
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/zendframework/zend-diactoros/ZF2018-01.yaml"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/zendframework/zend-feed/ZF2018-01.yaml"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/zendframework/zend-http/ZF2018-01.yaml"
+- "https://github.com/advisories/GHSA-f6p5-76fp-m248"
+uuid: "0e398683-8384-42f1-9926-9bfe393eda85"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

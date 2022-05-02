@@ -1,0 +1,30 @@
+---
+identifier: "GMS-2022-1046"
+identifiers:
+- "GHSA-5x4f-7xgq-r42x"
+- "GMS-2022-1046"
+package_slug: "packagist/ezsystems/ezpublish-kernel"
+title: "Object state limitation has no effect"
+description: "Object state limitation is a policy you can use in your roles to limit
+  access to content based on specific object state values. Due to a flawed earlier
+  update, these limitations were ineffective in releases made since February 16th
+  2022. They would grant access to the given content regardless of the object state.
+  Depending on how your frontent is designed, knowing the URL to the content may or
+  may not be required to access it. If you are using object state limitations in your
+  roles, this issue is critical. Please apply the fix as soon as possible."
+date: "2022-04-29"
+pubdate: "2022-04-29"
+affected_range: ">=7.5.0,<7.5.28"
+fixed_versions:
+- "7.5.28"
+affected_versions: "All versions starting from 7.5.0 before 7.5.28"
+not_impacted: "All versions before 7.5.0, all versions starting from 7.5.28"
+solution: "Upgrade to version 7.5.28 or above."
+urls:
+- "https://github.com/ezsystems/ezpublish-kernel/security/advisories/GHSA-5x4f-7xgq-r42x"
+- "https://developers.ibexa.co/security-advisories/ibexa-sa-2022-004-ineffective-object-state-limitation-and-unauthenticated-fastly-purge"
+- "https://github.com/advisories/GHSA-5x4f-7xgq-r42x"
+uuid: "f165407f-7c37-4f02-9ed4-ead967288cc5"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
