@@ -1,6 +1,6 @@
 ## Terms
 
-This vulnerability database is available freely under the [GitLab Security Alert Database Terms](./LICENSE.md), please review them before contributing.
+This vulnerability database is available freely under the [GitLab Advisory Database Terms](./LICENSE.md), please review them before contributing.
 
 _This notice should stay as the first item in the CONTRIBUTING.md file._
 

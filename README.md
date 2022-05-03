@@ -1,6 +1,6 @@
 # GitLab Advisory Database
 
-This repository contains the security advisories used by the 
+This repository contains the security advisories used by the
 [GitLab dependency scanners](https://docs.gitlab.com/ee/user/application_security/dependency_scanning/index.html).
 It can be used for both searching advisories and submitting new ones.
 The GitLab team constantly improves this vulnerability database
@@ -12,8 +12,8 @@ on our [Advisory Landing Page](https://advisories.gitlab.com).
 
 ## Licensing
 
-This vulnerability database is available freely under the 
-[GitLab Security Alert Database Terms](./LICENSE.md), 
+This vulnerability database is available freely under the
+[GitLab Advisory Database Terms](./LICENSE.md),
 please review them before any usage.
 
 ## Contributing
@@ -255,12 +255,12 @@ We apply the following [semantic versioning](https://semver.org/spec/v2.0.0.html
 2. **minor version increment**: backwards-compatible YAML schema changes (e.g., adding/removing optional fields).
 3. **major version increment**: non-backwards-compatible YAML schema changes (e.g., adding/removing required fields)
 
-All notable changes concerning minor and major updates are tracked in [the changelog](CHANGELOG.md) which 
+All notable changes concerning minor and major updates are tracked in [the changelog](CHANGELOG.md) which
 is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### 3rd party integrations
 
-Our [GitLab Security Alert Database Terms](https://gitlab.com/gitlab-org/security-products/gemnasium-db/-/blob/master/LICENSE.md#5-general-prohibitions-and-gitlabs-enforcement-rights)
+Our [GitLab Advisory Database Terms](https://gitlab.com/gitlab-org/security-products/gemnasium-db/-/blob/master/LICENSE.md#5-general-prohibitions-and-gitlabs-enforcement-rights)
 prohibit the use of data contained in the GitLab Advisory Database (or more
 specifically the [gemnasium-db](https://gitlab.com/gitlab-org/security-products/gemnasium-db))
 by 3rd party tools. 3rd party integrators can use the
