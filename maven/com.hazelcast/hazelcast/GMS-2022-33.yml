@@ -8,7 +8,7 @@ title: "Improper Neutralization of Special Elements used in an OS Command ('OS C
   Injection')"
 description: "Improper Neutralization of Special Elements used in an OS Command ('OS
   Command Injection') in com.hazelcast:hazelcast."
-date: "2022-04-22"
+date: "2022-05-02"
 pubdate: "2022-01-21"
 affected_range: "[4.0.0,4.0.5),[4.1.1,4.1.8),[4.2,4.2.4),[5.0,5.0.2)"
 fixed_versions:
