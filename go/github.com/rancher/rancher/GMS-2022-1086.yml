@@ -18,7 +18,7 @@ description: "This vulnerability only affects customers using Fleet for continuo
   git repo due to a misconfigured URL. The exposed SSH key is logged in base64 format
   as a query parameter together with the git URL. The credentials can be seen in Rancher
   UI and in Fleet's deployment pod logs."
-date: "2022-04-27"
+date: "2022-05-04"
 pubdate: "2022-04-27"
 affected_range: "<v2.5.13 || >=v2.6.0 <v2.6.4"
 fixed_versions:
