@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2022-1331"
+identifiers:
+- "GHSA-52rh-5rpj-c3w6"
+- "GMS-2022-1331"
+package_slug: "npm/matrix-org-irc"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in matrix-org-irc."
+date: "2022-05-05"
+pubdate: "2022-05-05"
+affected_range: "<=1.2.0"
+fixed_versions:
+- "1.2.1"
+affected_versions: "All versions up to 1.2.0"
+not_impacted: "All versions after 1.2.0"
+solution: "Upgrade to version 1.2.1 or above."
+urls:
+- "https://github.com/matrix-org/node-irc/security/advisories/GHSA-52rh-5rpj-c3w6"
+- "https://matrix.org/blog/2022/05/04/0-34-0-security-release-for-matrix-appservice-irc-high-severity"
+- "https://github.com/advisories/GHSA-52rh-5rpj-c3w6"
+uuid: "c9eae764-773b-4ba3-b505-1a25db512a35"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"
