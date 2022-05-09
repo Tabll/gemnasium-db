@@ -1,0 +1,22 @@
+---
+identifier: "GMS-2022-1343"
+identifiers:
+- "GMS-2022-1343"
+package_slug: "nuget/Newtonsoft.Json"
+title: "Uncontrolled Resource Consumption"
+description: "There is a potential Denial of Service vulnerability in Newtonsoft.Json."
+date: "2022-05-08"
+pubdate: "2022-04-23"
+affected_range: "(,13.0.1)"
+fixed_versions: []
+affected_versions: "All versions before 13.0.1"
+not_impacted: "All versions starting from 13.0.1."
+solution: "Upgrade to version 13.0.1 or above"
+urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2018-18909"
+cvss_v3: "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "6b64327a-db6f-445a-b41f-1f200a824a01"
+cwe_ids:
+- "CWE-1035"
+- "CWE-755"
+- "CWE-937"
