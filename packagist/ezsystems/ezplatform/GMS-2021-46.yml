@@ -13,13 +13,14 @@ description: "The default configuration for platform.sh (.platform.app.yaml) all
   extension directories."
 date: "2021-09-14"
 pubdate: "2021-09-14"
-affected_range: ">=2.0.0,<=2.5.24||<=1.13.6"
+affected_range: "<=1.13.6||>=2.0.0,<=2.5.24"
 fixed_versions:
 - "1.13.6.1"
-affected_versions: "All versions starting from 2.0.0 up to 2.5.24, all versions up
-  to 1.13.6"
-not_impacted: "All versions before 2.0.0, all versions after 1.13.6 before 2.5.24"
-solution: "Upgrade to version 1.13.6.1 or above."
+- "2.5.24.1"
+affected_versions: "All versions up to 1.13.6, all versions starting from 2.0.0 up
+  to 2.5.24"
+not_impacted: "All versions after 1.13.6 before 2.0.0, all versions after 2.5.24"
+solution: "Upgrade to versions 1.13.6.1, 2.5.24.1 or above."
 urls:
 - "https://github.com/ezsystems/ezplatform/security/advisories/GHSA-2rh5-jvgx-pgw3"
 - "https://developers.ibexa.co/security-advisories/ibexa-sa-2021-006-storage-and-legacy-files-accessible-if-path-is-known"

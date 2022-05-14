@@ -6,9 +6,9 @@ identifiers:
 package_slug: "go/github.com/cri-o/cri-o"
 title: "Sysctls applied to containers with host IPC or host network namespaces can
   affect the host"
-description: "Before setting the sysctls for a pod, the pods namespaces
-  must be unshared (created)."
-date: "2022-03-18"
+description: "Before setting the sysctls for a pod, the pods namespaces must be unshared
+  (created)."
+date: "2022-04-19"
 pubdate: "2022-03-15"
 affected_range: ">=1.23.0 <1.23.1||>=1.22.0 <1.22.2||>=1.21.0 <1.21.5||>=1.20.0 <1.20.6||>=1.18.0
   <1.19.5"

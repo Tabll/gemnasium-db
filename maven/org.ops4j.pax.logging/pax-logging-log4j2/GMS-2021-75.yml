@@ -10,14 +10,15 @@ description: "Improper Neutralization of Special Elements used in an OS Command 
   Command Injection') in org.ops4j.pax.logging:pax-logging-log4j2."
 date: "2021-12-11"
 pubdate: "2021-12-10"
-affected_range: "[2.0.0,2.0.11),(,1.11.10)"
+affected_range: "(,1.11.10),[2.0.0,2.0.11)"
 fixed_versions:
 - "1.11.10"
-affected_versions: "All versions starting from 2.0.0 before 2.0.11, all versions before
-  1.11.10"
-not_impacted: "All versions before 2.0.0, all versions starting from 1.11.10 before
-  2.0.11"
-solution: "Upgrade to version 1.11.10 or above."
+- "2.0.11"
+affected_versions: "All versions before 1.11.10, all versions starting from 2.0.0
+  before 2.0.11"
+not_impacted: "All versions starting from 1.11.10 before 2.0.0, all versions starting
+  from 2.0.11"
+solution: "Upgrade to versions 1.11.10, 2.0.11 or above."
 urls:
 - "https://github.com/ops4j/org.ops4j.pax.logging/security/advisories/GHSA-xxfh-x98p-j8fr"
 - "https://github.com/advisories/GHSA-jfh8-c2jp-5v3q"

@@ -6,16 +6,16 @@ identifiers:
 package_slug: "maven/com.vaadin/vaadin-bom"
 title: "Cross-Site Request Forgery (CSRF)"
 description: "Cross-Site Request Forgery (CSRF) in com.vaadin:vaadin-bom."
-date: "2021-10-08"
+date: "2022-04-19"
 pubdate: "2021-04-19"
-affected_range: "[19.0.0],[15.0.0,18.0.7)"
+affected_range: "[15.0.0,18.0.7),[19.0.0]"
 fixed_versions:
+- "18.0.7"
 - "19.0.1"
-- "19.0.1"
-affected_versions: "Version 19.0.0, all versions starting from 15.0.0 before 18.0.7"
-not_impacted: "All versions before 19.0.0, all versions after 19.0.0, all versions
-  before 15.0.0, all versions starting from 18.0.7"
-solution: "Upgrade to versions 19.0.1, 19.0.1 or above."
+affected_versions: "All versions starting from 15.0.0 before 18.0.7, version 19.0.0"
+not_impacted: "All versions before 15.0.0, all versions starting from 18.0.7 before
+  19.0.0, all versions after 19.0.0"
+solution: "Upgrade to versions 18.0.7, 19.0.1 or above."
 urls:
 - "https://github.com/vaadin/platform/security/advisories/GHSA-9h6g-6mxg-vvp4"
 - "https://vaadin.com/security/cve-2021-31406"
