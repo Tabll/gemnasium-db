@@ -5,7 +5,7 @@ identifiers:
 - "GMS-2020-718"
 package_slug: "npm/express-fileupload"
 title: "Denial of Service in express-fileupload"
-description: "Versions of `express-fileupload` prior to 1.1.6-alpha.6 are vulnerable
+description: "Versions of `express-fileupload` prior to 1.1.6-alpha.6 is vulnerable
   to Denial of Service. The package causes server responses to be delayed (up to 30s
   in internal testing) if the request contains a large filename of `.` characters."
 date: "2020-09-03"
