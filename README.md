@@ -56,6 +56,7 @@ contributions.
 | @javidr        | #189                  |
 | @mrjonstrong   | !13937                |
 | @hchriwoo      | #192                  |
+| @masakura      | !14708                |
 
 ## Directory structure
 
