@@ -8,7 +8,7 @@ title: "Improper Neutralization of Special Elements used in an OS Command ('OS C
   Injection')"
 description: "Improper Neutralization of Special Elements used in an OS Command ('OS
   Command Injection') in handlebars."
-date: "2021-08-04"
+date: "2022-05-23"
 pubdate: "2019-06-05"
 affected_range: "<3.0.7||>=4.0.0 <4.0.14||>=4.1.0 <4.1.2"
 fixed_versions:

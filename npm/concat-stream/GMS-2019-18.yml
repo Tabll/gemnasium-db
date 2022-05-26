@@ -9,7 +9,7 @@ description: "Versions of `concat-stream` is vulnerable to memory exposure if us
   provided input is passed into `write()`\n\n are not affected due to not using unguarded
   Buffer constructor. \nUpdate to or later.\n\nIf you are unable to update make sure
   user provided input into the `write()` function is not a number."
-date: "2021-08-04"
+date: "2022-05-23"
 pubdate: "2019-06-03"
 affected_range: ">=1.3.0 <1.3.2||>=1.4.0 <1.4.11||>=1.5.0 <1.5.2"
 fixed_versions:
