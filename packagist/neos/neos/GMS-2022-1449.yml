@@ -1,0 +1,38 @@
+---
+identifier: "GMS-2022-1449"
+identifiers:
+- "GHSA-jfxf-4frr-9j3q"
+- "GMS-2022-1449"
+package_slug: "packagist/neos/neos"
+title: "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+description: "Improper Neutralization of Input During Web Page Generation ('Cross-site
+  Scripting') in neos/neos."
+date: "2022-05-25"
+pubdate: "2022-05-25"
+affected_range: ">=3.3,<5.3.10||>=7.0.0,<7.0.9||>=7.1.0,<7.1.7||>=7.2.0,<7.2.6||>=7.3.0,<7.3.4||>=8.0.0,<8.0.2"
+fixed_versions:
+- "5.3.10"
+- "7.0.9"
+- "7.1.7"
+- "7.2.6"
+- "7.3.4"
+- "8.0.2"
+affected_versions: "All versions starting from 3.3 before 5.3.10, all versions starting
+  from 7.0.0 before 7.0.9, all versions starting from 7.1.0 before 7.1.7, all versions
+  starting from 7.2.0 before 7.2.6, all versions starting from 7.3.0 before 7.3.4,
+  all versions starting from 8.0.0 before 8.0.2"
+not_impacted: "All versions before 3.3, all versions starting from 5.3.10 before 7.0.0,
+  all versions starting from 7.0.9 before 7.1.0, all versions starting from 7.1.7
+  before 7.2.0, all versions starting from 7.2.6 before 7.3.0, all versions starting
+  from 7.3.4 before 8.0.0, all versions starting from 8.0.2"
+solution: "Upgrade to versions 5.3.10, 7.0.9, 7.1.7, 7.2.6, 7.3.4, 8.0.2 or above."
+urls:
+- "https://github.com/neos/neos-development-collection/security/advisories/GHSA-jfxf-4frr-9j3q"
+- "https://discuss.neos.io/t/neos-bugfix-releases-5-3-10-7-0-9-7-1-7-7-2-6-7-3-4-8-0-2/5930?u=kdambekalns"
+- "https://www.neos.io/blog/xss-in-various-backend-modules.html"
+- "https://github.com/advisories/GHSA-jfxf-4frr-9j3q"
+uuid: "ab3e5f92-28ff-4880-b368-b9d4765a455a"
+cwe_ids:
+- "CWE-1035"
+- "CWE-79"
+- "CWE-937"

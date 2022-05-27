@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2022-1456"
+identifiers:
+- "GHSA-gj94-v4p9-w672"
+- "GMS-2022-1456"
+package_slug: "packagist/pocketmine/pocketmine-mp"
+title: "Denial-of-service vulnerability processing large chat messages containing
+  many newlines"
+description: "### Impact\nPocketMine-MP caps maximum chat message length at 512 Unicode
+  characters, or about 2048 bytes. No more than 2 chat messages may be sent per tick.
+  However, due to legacy reasons, incoming chat message blobs are split by ``, and
+  each part is treated as a separate message, the length of each part is individually
+  checked."
+date: "2022-05-25"
+pubdate: "2022-05-25"
+affected_range: "<4.2.10"
+fixed_versions:
+- "4.2.10"
+affected_versions: "All versions before 4.2.10"
+not_impacted: "All versions starting from 4.2.10"
+solution: "Upgrade to version 4.2.10 or above."
+urls:
+- "https://github.com/pmmp/PocketMine-MP/security/advisories/GHSA-gj94-v4p9-w672"
+- "https://github.com/advisories/GHSA-gj94-v4p9-w672"
+uuid: "1e4b9981-e09a-4b66-b36e-53bbb11853e6"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

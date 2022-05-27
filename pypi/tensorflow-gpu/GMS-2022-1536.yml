@@ -1,0 +1,31 @@
+---
+identifier: "GMS-2022-1536"
+identifiers:
+- "GHSA-mw6j-hh29-h379"
+- "GMS-2022-1536"
+package_slug: "pypi/tensorflow-gpu"
+title: "`CHECK` failure in depthwise ops via overflows"
+description: "### Impact\nThe implementation of depthwise ops in TensorFlow is vulnerable
+  to a denial of service via `CHECK`-failure (assertion failure) caused by overflowing
+  the number of elements in a tensor."
+date: "2022-05-25"
+pubdate: "2022-05-25"
+affected_range: "<2.6.4||>=2.7.0,<2.7.2||>=2.8.0,<2.8.1"
+fixed_versions:
+- "2.6.4"
+- "2.7.2"
+- "2.8.1"
+affected_versions: "All versions before 2.6.4, all versions starting from 2.7.0 before
+  2.7.2, all versions starting from 2.8.0 before 2.8.1"
+not_impacted: "All versions starting from 2.6.4 before 2.7.0, all versions starting
+  from 2.7.2 before 2.8.0, all versions starting from 2.8.1"
+solution: "Upgrade to versions 2.6.4, 2.7.2, 2.8.1 or above."
+urls:
+- "https://github.com/tensorflow/tensorflow/security/advisories/GHSA-mw6j-hh29-h379"
+- "https://github.com/tensorflow/tensorflow/commit/3796cc4fcd93ae55812a457abc96dcd55fbb854b"
+- "https://github.com/tensorflow/tensorflow/blob/master/tensorflow/security/advisory/tfsa-2021-198.md"
+- "https://github.com/advisories/GHSA-mw6j-hh29-h379"
+uuid: "c74de6de-5a53-429d-a540-7d6f28970b1a"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
