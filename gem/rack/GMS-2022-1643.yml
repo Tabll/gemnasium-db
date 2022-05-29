@@ -1,0 +1,31 @@
+---
+identifier: "GMS-2022-1643"
+identifiers:
+- "GHSA-hxqx-xwvh-44m2"
+- "GMS-2022-1643"
+- "CVE-2022-30122"
+package_slug: "gem/rack"
+title: "Denial of Service Vulnerability in Rack Multipart Parsing"
+description: "Carefully crafted multipart POST requests can cause Rack's multipart parser to
+  take much longer than expected, leading to a possible denial of service
+  vulnerability. Impacted code will use Rack's multipart parser to parse multipart posts."
+date: "2022-05-27"
+pubdate: "2022-05-27"
+affected_range: ">=1.2 <=2.0.9.0||>=2.1 <=2.1.4.0||>=2.2 <=2.2.3.0"
+fixed_versions:
+- "2.0.9.1"
+- "2.1.4.1"
+- "2.2.3.1"
+affected_versions: "All versions starting from 1.2 up to 2.0.9.0, all versions starting
+  from 2.1 up to 2.1.4.0, all versions starting from 2.2 up to 2.2.3.0"
+not_impacted: "All versions before 1.2, all versions after 2.0.9.0 before 2.1, all
+  versions after 2.1.4.0 before 2.2, all versions after 2.2.3.0"
+solution: "Upgrade to versions 2.0.9.1, 2.1.4.1, 2.2.3.1 or above."
+urls:
+- "https://github.com/rubysec/ruby-advisory-db/blob/master/gems/rack/CVE-2022-30122.yml"
+- "https://groups.google.com/g/ruby-security-ann/c/L2Axto442qk"
+- "https://github.com/advisories/GHSA-hxqx-xwvh-44m2"
+uuid: "20daa17a-47b5-4f79-80c2-cd8f2db9805c"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
