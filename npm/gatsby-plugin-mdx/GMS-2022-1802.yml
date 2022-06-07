@@ -1,0 +1,29 @@
+---
+identifier: "GMS-2022-1802"
+identifiers:
+- "GHSA-mj46-r4gr-5x83"
+- "GMS-2022-1802"
+package_slug: "npm/gatsby-plugin-mdx"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in gatsby-plugin-mdx."
+date: "2022-06-03"
+pubdate: "2022-06-03"
+affected_range: "<2.14.1||>=3.0.0 <3.15.2"
+fixed_versions:
+- "2.14.1"
+- "3.15.2"
+affected_versions: "All versions before 2.14.1, all versions starting from 3.0.0 before
+  3.15.2"
+not_impacted: "All versions starting from 2.14.1 before 3.0.0, all versions starting
+  from 3.15.2"
+solution: "Upgrade to versions 2.14.1, 3.15.2 or above."
+urls:
+- "https://github.com/gatsbyjs/gatsby/security/advisories/GHSA-mj46-r4gr-5x83"
+- "https://github.com/advisories/GHSA-mj46-r4gr-5x83"
+uuid: "52b4cfd6-7740-442a-91aa-36009a6d6e4a"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"
