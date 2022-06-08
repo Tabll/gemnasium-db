@@ -1,0 +1,34 @@
+---
+identifier: "GMS-2022-1912"
+identifiers:
+- "GHSA-4v9q-cgpw-cf38"
+- "GMS-2022-1912"
+- "CVE-2022-29255"
+package_slug: "pypi/vyper"
+title: "Multiple evaluation of contract address in call in vyper"
+description: "### Impact\nwhen a calling an external contract with no return value,
+  the contract address could be evaluated twice. this is usually only an efficiency
+  problem, but if evaluation of the contract address has side effects, it could result
+  in double evaluation of the side effects.\n\nin the following example, `Foo(msg.sender).bar()`
+  is the contract address for the following call (to `.foo()`), and could get evaluated
+  twice\n\n```vyper\ninterface Foo:\n  def foo(): nonpayable\n  def bar() -> address:
+  nonpayable\n\n@external\ndef do_stuff():\n  Foo(Foo(msg.sender).bar()).foo()\n```\n\n###
+  Patches\nv0.3.4\n\n### Workarounds\nassign contract addresses to variables. the
+  above example would change to\n```vyper\n@external\ndef do_stuff():\n  t: Foo =
+  Foo(msg.sender).bar()\n  t.foo()\n```\n\n### References\n\n### For more information\n"
+date: "2022-06-06"
+pubdate: "2022-06-06"
+affected_range: "<0.3.4"
+fixed_versions:
+- "0.3.4"
+affected_versions: "All versions before 0.3.4"
+not_impacted: "All versions starting from 0.3.4"
+solution: "Upgrade to version 0.3.4 or above."
+urls:
+- "https://github.com/vyperlang/vyper/security/advisories/GHSA-4v9q-cgpw-cf38"
+- "https://github.com/vyperlang/vyper/commit/6b4d8ff185de071252feaa1c319712b2d6577f8d"
+- "https://github.com/advisories/GHSA-4v9q-cgpw-cf38"
+uuid: "bec24fda-092b-4813-b8b2-82228ef81445"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

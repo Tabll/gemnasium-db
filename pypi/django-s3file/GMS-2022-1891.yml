@@ -1,0 +1,30 @@
+---
+identifier: "GMS-2022-1891"
+identifiers:
+- "GHSA-4w8f-hjm9-xwgf"
+- "GMS-2022-1891"
+- "CVE-2022-24840"
+package_slug: "pypi/django-s3file"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in django-s3file."
+date: "2022-06-06"
+pubdate: "2022-06-06"
+affected_range: "<5.5.1"
+fixed_versions:
+- "5.5.1"
+affected_versions: "All versions before 5.5.1"
+not_impacted: "All versions starting from 5.5.1"
+solution: "Upgrade to version 5.5.1 or above."
+urls:
+- "https://github.com/codingjoe/django-s3file/security/advisories/GHSA-4w8f-hjm9-xwgf"
+- "https://nvd.nist.gov/vuln/detail/CVE-2022-24840"
+- "https://github.com/codingjoe/django-s3file/commit/68ccd2c621a40eb66fdd6af2be9d5fcc9c373318"
+- "https://github.com/codingjoe/django-s3file/releases/tag/5.5.1"
+- "https://github.com/advisories/GHSA-4w8f-hjm9-xwgf"
+uuid: "b411f06b-861b-4fde-be61-2c229bf397da"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"
