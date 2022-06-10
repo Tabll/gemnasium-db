@@ -2,13 +2,14 @@
 identifier: "GMS-2022-1472"
 identifiers:
 - "GHSA-hj57-j5cw-2mwp"
+- "CVE-2022-1706"
 - "GMS-2022-1472"
 package_slug: "go/github.com/coreos/ignition"
 title: "Ignition config accessible to unprivileged software on VMware"
 description: "Unprivileged software in VMware VMs, including software running in unprivileged
   containers, can retrieve an Ignition config stored in a hypervisor guestinfo variable
   or OVF environment."
-date: "2022-05-25"
+date: "2022-06-08"
 pubdate: "2022-05-25"
 affected_range: "<v2.14.0"
 fixed_versions:
@@ -21,9 +22,12 @@ urls:
 - "https://github.com/coreos/ignition/issues/1300"
 - "https://github.com/coreos/ignition/pull/1350"
 - "https://github.com/advisories/GHSA-hj57-j5cw-2mwp"
+cvss_v2: "AV:N/AC:M/Au:S/C:P/I:N/A:N"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
 uuid: "bdaa79ea-e4ae-4f2a-af1e-7373250a6989"
 cwe_ids:
 - "CWE-1035"
+- "CWE-863"
 - "CWE-937"
 versions:
 - number: "v2.14.0"
