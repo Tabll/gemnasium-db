@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2022-2344"
+identifiers:
+- "GHSA-fr2w-mp56-g4xp"
+- "GMS-2022-2344"
+package_slug: "pypi/inventree"
+title: "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+description: "Improper Neutralization of Input During Web Page Generation ('Cross-site
+  Scripting') in inventree."
+date: "2022-06-17"
+pubdate: "2022-06-17"
+affected_range: "<0.7.2"
+fixed_versions:
+- "0.7.2"
+affected_versions: "All versions before 0.7.2"
+not_impacted: "All versions starting from 0.7.2"
+solution: "Upgrade to version 0.7.2 or above."
+urls:
+- "https://github.com/inventree/InvenTree/security/advisories/GHSA-fr2w-mp56-g4xp"
+- "https://github.com/advisories/GHSA-fr2w-mp56-g4xp"
+uuid: "295d27e9-5a85-4e0f-9074-ef1ec52ee4f8"
+cwe_ids:
+- "CWE-1035"
+- "CWE-79"
+- "CWE-937"

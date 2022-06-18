@@ -1,0 +1,32 @@
+---
+identifier: "GMS-2022-2195"
+identifiers:
+- "GHSA-qpgx-64h2-gc3c"
+- "GMS-2022-2195"
+- "CVE-2022-25856"
+package_slug: "go/github.com/argoproj/argo-events"
+title: "Relative Path Traversal"
+description: "Relative Path Traversal in github.com/argoproj/argo-events."
+date: "2022-06-17"
+pubdate: "2022-06-17"
+affected_range: "<v1.7.1"
+fixed_versions:
+- "v1.7.1"
+affected_versions: "All versions before 1.7.1"
+not_impacted: "All versions starting from 1.7.1"
+solution: "Upgrade to version 1.7.1 or above."
+urls:
+- "https://github.com/argoproj/argo-events/security/advisories/GHSA-qpgx-64h2-gc3c"
+- "https://github.com/advisories/GHSA-qpgx-64h2-gc3c"
+uuid: "73086423-dc77-4418-9c8f-cc6bd52b5a3c"
+cwe_ids:
+- "CWE-1035"
+- "CWE-352"
+- "CWE-937"
+versions:
+- number: "v1.7.1"
+  commit:
+    tags:
+    - "v1.7.1"
+    sha: "ea4723975a698c3955ed302eb7a20abff4924efb"
+    timestamp: "20220609060918"

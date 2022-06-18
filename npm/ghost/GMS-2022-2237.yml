@@ -1,0 +1,29 @@
+---
+identifier: "GMS-2022-2237"
+identifiers:
+- "GHSA-7v28-g2pq-ggg8"
+- "GMS-2022-2237"
+package_slug: "npm/ghost"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in ghost."
+date: "2022-06-17"
+pubdate: "2022-06-17"
+affected_range: "<4.48.2||>=5.0.0 <5.2.3"
+fixed_versions:
+- "4.48.2"
+- "5.2.3"
+affected_versions: "All versions before 4.48.2, all versions starting from 5.0.0 before
+  5.2.3"
+not_impacted: "All versions starting from 4.48.2 before 5.0.0, all versions starting
+  from 5.2.3"
+solution: "Upgrade to versions 4.48.2, 5.2.3 or above."
+urls:
+- "https://github.com/TryGhost/Ghost/security/advisories/GHSA-7v28-g2pq-ggg8"
+- "https://github.com/advisories/GHSA-7v28-g2pq-ggg8"
+uuid: "cd7d8768-3f75-4c35-988e-a3afcafc6031"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

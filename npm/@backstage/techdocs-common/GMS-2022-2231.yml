@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2022-2231"
+identifiers:
+- "GHSA-4jqc-jvh2-pxg9"
+- "GMS-2022-2231"
+package_slug: "npm/@backstage/techdocs-common"
+title: "Path traversal for local publishers in TechDocs backend"
+description: "A malicious actor with the ability to register entities
+  in the Software Catalog is able to write files to arbitrary paths on the techdocs
+  backend host instance when `techdocs.publisher.type` is set to `local`."
+date: "2022-06-17"
+pubdate: "2022-06-17"
+affected_range: "<0.11.16"
+fixed_versions:
+- "0.11.16"
+affected_versions: "All versions before 0.11.16"
+not_impacted: "All versions starting from 0.11.16"
+solution: "Upgrade to version 0.11.16 or above."
+urls:
+- "https://github.com/backstage/backstage/security/advisories/GHSA-4jqc-jvh2-pxg9"
+- "https://github.com/backstage/backstage/commit/429c9f9daa5654dd1b996aa85f7264eb23a2e4fa"
+- "https://github.com/advisories/GHSA-4jqc-jvh2-pxg9"
+uuid: "ec8b1d2c-36fb-491d-a167-e5e58b0964df"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
