@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2022-2437"
+identifiers:
+- "GHSA-85q9-7467-r53q"
+- "GMS-2022-2437"
+package_slug: "pypi/inventree"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in inventree."
+date: "2022-06-17"
+pubdate: "2022-06-17"
+affected_range: "<0.7.3"
+fixed_versions:
+- "0.7.3"
+affected_versions: "All versions before 0.7.3"
+not_impacted: ""
+solution: "Upgrade to version 0.7.3 or above."
+urls:
+- "https://github.com/inventree/InvenTree/security/advisories/GHSA-85q9-7467-r53q"
+- "https://github.com/advisories/GHSA-85q9-7467-r53q"
+uuid: "220f5895-63b0-4792-b535-7bbe32047282"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"
