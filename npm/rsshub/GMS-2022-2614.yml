@@ -1,0 +1,30 @@
+---
+identifier: "GMS-2022-2614"
+identifiers:
+- "GHSA-jvxx-v45p-v5vf"
+- "GMS-2022-2614"
+package_slug: "npm/rsshub"
+title: "Denial of Service (DoS) vulnerability in RSSHub"
+description: "### Impact\n\nPassing some special values to the `filter` and `filterout`
+  parameters can cause an abnormally high CPU. Impact on the performance of the servers
+  and RSSHub services.\n\n### Patches\n\nIt is fixed in 5c4177441417b44a6e45c3c63e9eac2504abeb5b,
+  please update to this or the later versions as soon as possible.\n\n### Credits\n\n@Rongronggg9
+  \n\n### References\n\nA full report will be disclosed after 120 hours.\n\n### For
+  more information\n\nIf you have any questions or comments about this advisory:\n*
+  Open an issue in <https://github.com/DIYgod/RSSHub/issues>\n* Email us at [i@diygod.me](mailto:i@diygod.me)\n"
+date: "2022-06-23"
+pubdate: "2022-06-23"
+affected_range: "<=1.0.0"
+fixed_versions: []
+affected_versions: "All versions up to 1.0.0"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/DIYgod/RSSHub/security/advisories/GHSA-jvxx-v45p-v5vf"
+- "https://github.com/DIYgod/RSSHub/commit/4671720f4c5e1aaaad8fcc1dce684b6546baf2ff"
+- "https://github.com/DIYgod/RSSHub/commit/5c4177441417b44a6e45c3c63e9eac2504abeb5b"
+- "https://github.com/advisories/GHSA-jvxx-v45p-v5vf"
+uuid: "021f7be9-f7f2-49a4-9dbb-a05fb5af4fb1"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
