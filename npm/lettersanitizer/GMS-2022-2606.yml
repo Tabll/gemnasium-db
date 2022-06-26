@@ -1,0 +1,35 @@
+---
+identifier: "GMS-2022-2606"
+identifiers:
+- "GHSA-7r3r-gq8p-v9jj"
+- "GMS-2022-2606"
+- "CVE-2022-31103"
+package_slug: "npm/lettersanitizer"
+title: "Improper handling of CSS at-rules in lettersanitizer"
+description: "### Impact\n\nAll versions of lettersanitizer below 1.0.2 are affected
+  by a denial of service issue when processing a CSS at-rule `@keyframes`.\n\nThis
+  package is depended on by [react-letter](https://github.com/mat-sz/react-letter),
+  therefore everyone using react-letter is also at risk.\n\n### Patches\n\nThe problem
+  has been patched in version 1.0.2.\n\n### Workarounds\n\nThere is no workaround
+  besides upgrading.\n\n### References\n\nThe issue was originally reported in the
+  react-letter repository: https://github.com/mat-sz/react-letter/issues/17\n\n###
+  For more information\nIf you have any questions or comments about this advisory:\n*
+  Open an issue in [lettersanitizer](https://github.com/mat-sz/lettersanitizer/issues)\n*
+  Email me at [contact@matsz.dev](mailto:contact@matsz.dev)\n"
+date: "2022-06-23"
+pubdate: "2022-06-23"
+affected_range: "<1.0.2"
+fixed_versions:
+- "1.0.2"
+affected_versions: "All versions before 1.0.2"
+not_impacted: "All versions starting from 1.0.2"
+solution: "Upgrade to version 1.0.2 or above."
+urls:
+- "https://github.com/mat-sz/lettersanitizer/security/advisories/GHSA-7r3r-gq8p-v9jj"
+- "https://github.com/mat-sz/react-letter/issues/17"
+- "https://github.com/mat-sz/lettersanitizer/commit/96d3dfe2ef0465d47324ed4d13e91ba0816a173f"
+- "https://github.com/advisories/GHSA-7r3r-gq8p-v9jj"
+uuid: "d77b6652-498e-45ef-92cd-6e4c140bf5c4"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
