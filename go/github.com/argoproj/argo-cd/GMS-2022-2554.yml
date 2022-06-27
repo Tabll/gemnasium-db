@@ -1,0 +1,48 @@
+---
+identifier: "GMS-2022-2554"
+identifiers:
+- "GHSA-2m7h-86qq-fp4v"
+- "GMS-2022-2554"
+- "CVE-2022-31034"
+package_slug: "go/github.com/argoproj/argo-cd"
+title: "Insecure entropy in Argo CD's PKCE/Oauth2/OIDC params"
+description: "### Impact\n\nAll versions of Argo CD starting with v0.11.0 is vulnerable
+  to a variety of attacks when an SSO login is initiated from the Argo CD CLI or UI.
+  The vulnerabilities are due to the use of insufficiently random values in parameters
+  in Oauth2/OIDC login flows. In each case, using a relatively-predictable (time-based)
+  seed in a non-cryptographically-secure pseudo-random number generator made the parameter
+  less random than required by the relevant spec or by general best practices."
+date: "2022-06-23"
+pubdate: "2022-06-21"
+affected_range: ">=v0.11.0 <=v1.8.7"
+fixed_versions:
+- "v2.1.16"
+affected_versions: "All versions starting from 0.11.0 up to 1.8.7"
+not_impacted: "All versions before 0.11.0, all versions after 1.8.7"
+solution: "Upgrade to version 2.1.16 or above."
+urls:
+- "https://github.com/argoproj/argo-cd/security/advisories/GHSA-2m7h-86qq-fp4v"
+- "https://github.com/advisories/GHSA-2m7h-86qq-fp4v"
+uuid: "454e5db0-cef8-4c50-81b8-eb9313f77e1b"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
+versions:
+- number: "v0.11.0"
+  commit:
+    tags:
+    - "v0.11.0"
+    sha: "71b646dfaedfdbab9e83d314f1b76287561a18e1"
+    timestamp: "20190110231421"
+- number: "v1.8.7"
+  commit:
+    tags:
+    - "v1.8.7"
+    sha: "eb3d1fb84b9b77cdffd70b14c4f949f1c64a9416"
+    timestamp: "20210303070237"
+- number: "v2.1.16"
+  commit:
+    tags:
+    - "v2.1.16"
+    sha: "903db5fe464032bd5a10bf32fe17639e76634c2a"
+    timestamp: "20220621161926"
