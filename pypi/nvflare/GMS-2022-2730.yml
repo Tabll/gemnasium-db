@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2022-2730"
+identifiers:
+- "GHSA-rcxc-3w2m-mp8h"
+- "GMS-2022-2730"
+- "CVE-2022-31604"
+package_slug: "pypi/nvflare"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in nvflare."
+date: "2022-06-22"
+pubdate: "2022-06-22"
+affected_range: "<2.1.2"
+fixed_versions:
+- "2.1.2"
+affected_versions: "All versions before 2.1.2"
+not_impacted: "All versions starting from 2.1.2"
+solution: "Upgrade to version 2.1.2 or above."
+urls:
+- "https://github.com/NVIDIA/NVFlare/security/advisories/GHSA-rcxc-3w2m-mp8h"
+- "https://github.com/advisories/GHSA-rcxc-3w2m-mp8h"
+uuid: "6828152e-603d-4290-b8ab-63049b8a18db"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

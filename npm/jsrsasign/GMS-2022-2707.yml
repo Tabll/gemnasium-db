@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2022-2707"
+identifiers:
+- "GHSA-3fvg-4v2m-98jf"
+- "GMS-2022-2707"
+- "CVE-2022-25898"
+package_slug: "npm/jsrsasign"
+title: "Improper Neutralization"
+description: "Improper Neutralization in jsrsasign."
+date: "2022-06-25"
+pubdate: "2022-06-25"
+affected_range: ">=4.8.0 <10.5.25"
+fixed_versions:
+- "10.5.25"
+affected_versions: "All versions starting from 4.8.0 before 10.5.25"
+not_impacted: "All versions before 4.8.0, all versions starting from 10.5.25"
+solution: "Upgrade to version 10.5.25 or above."
+urls:
+- "https://github.com/kjur/jsrsasign/security/advisories/GHSA-3fvg-4v2m-98jf"
+- "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-25898"
+- "https://github.com/kjur/jsrsasign/releases/tag/10.5.25"
+- "https://github.com/advisories/GHSA-3fvg-4v2m-98jf"
+uuid: "79135888-e228-4886-a9bf-4d70a4e9b91c"
+cwe_ids:
+- "CWE-1035"
+- "CWE-707"
+- "CWE-937"
