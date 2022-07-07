@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2022-2867"
+identifiers:
+- "GHSA-ffmh-x56j-9rc3"
+- "GMS-2022-2867"
+package_slug: "npm/jquery-validation"
+title: "Regular Expression Denial of Service in jquery-validation"
+description: "An exponential ReDoS (Regular Expression Denial of Service) can be triggered 
+  in the jquery-validation npm package, when an attacker is able to supply arbitrary input to the 
+  `url2` method"
+date: "2022-07-05"
+pubdate: "2022-07-05"
+affected_range: "<1.19.5"
+fixed_versions:
+- "1.19.5"
+affected_versions: "All versions before 1.19.5"
+not_impacted: "All versions starting from 1.19.5"
+solution: "Upgrade to version 1.19.5 or above."
+urls:
+- "https://github.com/jquery-validation/jquery-validation/security/advisories/GHSA-ffmh-x56j-9rc3"
+- "https://github.com/advisories/GHSA-ffmh-x56j-9rc3"
+uuid: "a8aac1ee-20f5-4dc4-a9ba-65f6d54c80be"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

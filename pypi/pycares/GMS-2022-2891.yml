@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2022-2891"
+identifiers:
+- "GHSA-c58j-88f5-h53f"
+- "GMS-2022-2891"
+package_slug: "pypi/pycares"
+title: "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')
+  in pycares"
+description: "pycares versions < 4.2.0 are affected by [CVE-2021-3672](https://nvd.nist.gov/vuln/detail/CVE-2021-3672)
+  which affects the underlying c-ares library."
+date: "2022-07-05"
+pubdate: "2022-07-05"
+affected_range: "<4.2.0"
+fixed_versions:
+- "4.2.0"
+affected_versions: "All versions before 4.2.0"
+not_impacted: "All versions starting from 4.2.0"
+solution: "Upgrade to version 4.2.0 or above."
+urls:
+- "https://github.com/saghul/pycares/security/advisories/GHSA-c58j-88f5-h53f"
+- "https://github.com/advisories/GHSA-c58j-88f5-h53f"
+uuid: "319c2352-e786-4c39-b8d6-decaf3d6ab68"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
