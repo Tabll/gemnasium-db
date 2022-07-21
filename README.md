@@ -62,6 +62,7 @@ contributions.
 | @ryan461       | !15227                |
 | @steppy452     | #198                  |
 | @rousey.thomas-heb | #203              |
+| @gmacedo       | #204                  |
 
 ## Directory structure
 

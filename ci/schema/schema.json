@@ -66,6 +66,7 @@
     "title": {
       "$id": "#/properties/title",
       "type": "string",
+      "maxLength": 255,
       "title": "A short description of the security flaw",
       "default": "",
       "examples": [
@@ -76,6 +77,7 @@
     "description": {
       "$id": "#/properties/description",
       "type": "string",
+      "maxLength": 1048576,
       "title": "A long description of the security flaw and the possible risks",
       "default": "",
       "examples": [
