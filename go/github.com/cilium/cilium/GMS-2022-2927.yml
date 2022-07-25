@@ -1,0 +1,34 @@
+---
+identifier: "GMS-2022-2927"
+identifiers:
+- "GHSA-wc5v-r48v-g4vh"
+- "GMS-2022-2927"
+package_slug: "go/github.com/cilium/cilium"
+title: "Cilium host policy bypass in endpoint-routes mode with dual-stack"
+description: "This vulnerability allows bypassing host policies for IPv6 traffic 
+  coming from a Cilium-managed pod and destined to the host-network namespace 
+  (e.g., to a host-network pod). Host policy enforcement on IPv4 or for traffic 
+  coming from outside the node is not affected.
+  Cilium is only affected by this vulnerability if IPv4, IPv6, endpoint routes, 
+  and the host firewall are enabled. Note that endpoint routes are typically only 
+  enabled in GKE, EKS, AKS, and OpenShift; in those environments, IPv6 is typically 
+  disabled. Host firewall is disabled by default."
+date: "2022-07-20"
+pubdate: "2022-07-15"
+affected_range: "<1.10.13||>=1.11.0 <1.11.7"
+fixed_versions:
+- "1.10.13"
+- "1.11.7"
+affected_versions: "All versions before 1.10.13, all versions starting from 1.11.0
+  before 1.11.7"
+not_impacted: "All versions starting from 1.10.13 before 1.11.0, all versions starting
+  from 1.11.7"
+solution: "Upgrade to versions 1.10.13, 1.11.7 or above."
+urls:
+- "https://github.com/cilium/cilium/security/advisories/GHSA-wc5v-r48v-g4vh"
+- "https://github.com/cilium/cilium/commit/c758da7e9d19cd19b96dc90424c0b5ec7409cd0a"
+- "https://github.com/advisories/GHSA-wc5v-r48v-g4vh"
+uuid: "65818997-71c1-4a33-9662-326581e0ac63"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

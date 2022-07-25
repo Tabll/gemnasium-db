@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2022-2965"
+identifiers:
+- "GHSA-cqhr-jqvc-qw9p"
+- "GMS-2022-2965"
+- "CVE-2016-1000273"
+package_slug: "maven/net.bull.javamelody/javamelody-core"
+title: "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+description: "Improper Neutralization of Input During Web Page Generation ('Cross-site
+  Scripting') in net.bull.javamelody:javamelody-core."
+date: "2022-07-20"
+pubdate: "2022-07-20"
+affected_range: "(,1.61.0)"
+fixed_versions:
+- "1.61.0"
+affected_versions: "All versions before 1.61.0"
+not_impacted: "All versions starting from 1.61.0"
+solution: "Upgrade to version 1.61.0 or above."
+urls:
+- "https://github.com/javamelody/javamelody/commit/e0497c1980acebd257d3da78dfde29ae9bdffdf6"
+- "https://github.com/javamelody/javamelody/wiki/ReleaseNotes#1620"
+- "https://github.com/advisories/GHSA-cqhr-jqvc-qw9p"
+uuid: "2be0a937-a7f8-4e45-a26c-4ebcafcf46b8"
+cwe_ids:
+- "CWE-1035"
+- "CWE-79"
+- "CWE-937"

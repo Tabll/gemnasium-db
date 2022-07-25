@@ -1,0 +1,24 @@
+---
+identifier: "GMS-2022-2961"
+identifiers:
+- "GHSA-fjh6-p566-wr6q"
+- "GMS-2022-2961"
+package_slug: "maven/io.github.skylot/jadx-core"
+title: "skylot jadx affected by Incorrect Behavior Order in vulnerable dependency"
+description: "Contains vulnerable library protobuf-java 3.11.4 (CVE-2021-22569)"
+date: "2022-07-21"
+pubdate: "2022-07-21"
+affected_range: "(,1.4.2]"
+fixed_versions:
+- "1.4.3"
+affected_versions: "All versions up to 1.4.2"
+not_impacted: "All versions after 1.4.2"
+solution: "Upgrade to version 1.4.3 or above."
+urls:
+- "https://github.com/skylot/jadx/security/advisories/GHSA-fjh6-p566-wr6q"
+- "https://github.com/skylot/jadx/releases/tag/v1.4.3"
+- "https://github.com/advisories/GHSA-fjh6-p566-wr6q"
+uuid: "802f2d85-ec4e-4851-b506-77efd5c1bfa9"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
