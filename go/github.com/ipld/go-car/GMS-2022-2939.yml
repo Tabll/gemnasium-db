@@ -5,17 +5,16 @@ identifiers:
 - "GMS-2022-2939"
 package_slug: "go/github.com/ipld/go-car"
 title: "Malformed CAR panics and excessive memory usage"
-description: "Out of bound memory access (OOB), out of memory (OOM) panics or 
-  excessive memory usage can be triggered by decode of malformed CARv1 headers, 
-  malformed CARv1 sections, and malformed CIDv0 data used in CARv1 sections. 
-  This also applies to CARv1 data within a CARv2 container. Additionally, we 
-  wish to use this security advisory to make clear to consumers of CARv2 format 
-  data that loading CARv2 indexes from untrusted sources is dangerous and should 
-  be avoided. Where CAR data indexes are required, they should be regenerated 
-  locally. Out of memory (OOM) panics or excessive memory usage can be triggered
-  by decode of intentionally malformed CARv2 indexes, or CARv2 indexes which are 
-  larger than available system memory (i.e. parallelization of CARv2 decodes may 
-  increase such a vulnerability)."
+description: "Out of bound memory access (OOB), out of memory (OOM) panics or excessive
+  memory usage can be triggered by decode of malformed CARv1 headers, malformed CARv1
+  sections, and malformed CIDv0 data used in CARv1 sections. This also applies to
+  CARv1 data within a CARv2 container. Additionally, we wish to use this security
+  advisory to make clear to consumers of CARv2 format data that loading CARv2 indexes
+  from untrusted sources is dangerous and should be avoided. Where CAR data indexes
+  are required, they should be regenerated locally. Out of memory (OOM) panics or
+  excessive memory usage can be triggered by decode of intentionally malformed CARv2
+  indexes, or CARv2 indexes which are larger than available system memory (i.e. parallelization
+  of CARv2 decodes may increase such a vulnerability)."
 date: "2022-07-08"
 pubdate: "2022-07-06"
 affected_range: "<v0.4.0"

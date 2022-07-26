@@ -6,11 +6,11 @@ identifiers:
 package_slug: "go/github.com/ipfs/go-ipfs"
 title: "DOS and excessive memory usage when passing untrusted user input to to dag
   import"
-description: "go-ipfs nodes crash when trying to import certain malformed CAR files 
-  due to an issue in the go-car dependency. This impacts nodes running ipfs dag import 
+description: "go-ipfs nodes crash when trying to import certain malformed CAR files
+  due to an issue in the go-car dependency. This impacts nodes running ipfs dag import
   on untrusted user inputs, for example, pinning services with a car ingest endpoint.
-  This include the corresponding HTTP RPC API v0/dag/import endpoint. An attacker 
-  controlling the car file passed in can also make the node allocate arbitrary sized 
+  This include the corresponding HTTP RPC API v0/dag/import endpoint. An attacker
+  controlling the car file passed in can also make the node allocate arbitrary sized
   buffers creating memory exhaustion attacks."
 date: "2022-07-16"
 pubdate: "2022-07-06"

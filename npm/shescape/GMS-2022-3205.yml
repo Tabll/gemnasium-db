@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2022-3205"
+identifiers:
+- "GHSA-jjc5-fp7p-6f8w"
+- "GMS-2022-3205"
+package_slug: "npm/shescape"
+title: "Shescape prior to 1.5.8 vulnerable to insufficient escaping of line feeds
+  for CMD"
+description: "This impacts users that use Shescape (any API function) to escape 
+  arguments for cmd.exe on Windows. An attacker can omit all arguments following 
+  their input by including a line feed character ('\n') in the payload. "
+date: "2022-07-15"
+pubdate: "2022-07-15"
+affected_range: "<1.5.8"
+fixed_versions:
+- "1.5.8"
+affected_versions: "All versions before 1.5.8"
+not_impacted: "All versions starting from 1.5.8"
+solution: "Upgrade to version 1.5.8 or above."
+urls:
+- "https://github.com/ericcornelissen/shescape/security/advisories/GHSA-jjc5-fp7p-6f8w"
+- "https://github.com/ericcornelissen/shescape/pull/332"
+- "https://github.com/ericcornelissen/shescape/releases/tag/v1.5.8"
+- "https://github.com/advisories/GHSA-jjc5-fp7p-6f8w"
+uuid: "ebfd1a76-1d0d-4ff4-a13b-e3a29a7b823a"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

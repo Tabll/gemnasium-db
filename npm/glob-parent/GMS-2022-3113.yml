@@ -1,0 +1,33 @@
+---
+identifier: "GMS-2022-3113"
+identifiers:
+- "GHSA-cj88-88mr-972w"
+- "GMS-2022-3113"
+- "CVE-2021-35065"
+package_slug: "npm/glob-parent"
+title: "glob-parent before 6.0.1 and 5.1.2 vulnerable to Regular Expression Denial
+  of Service (ReDoS)"
+description: "glob-parent before 6.0.1 and 5.1.2 is vulnerable to Regular Expression
+  Denial of Service (ReDoS). This issue is fixed in version 6.0.1 and 5.1.2."
+date: "2022-07-19"
+pubdate: "2022-07-18"
+affected_range: "<5.1.2||=6.0.0"
+fixed_versions:
+- "5.1.2"
+- "6.0.1"
+affected_versions: "All versions before 5.1.2, version 6.0.0"
+not_impacted: "All versions starting from 5.1.2 before 6.0.0, all versions after 6.0.0"
+solution: "Upgrade to versions 5.1.2, 6.0.1 or above."
+urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2021-35065"
+- "https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1103"
+- "https://github.com/gulpjs/glob-parent/pull/49"
+- "https://www.mend.io/vulnerability-database/CVE-2021-35065"
+- "https://github.com/gulpjs/glob-parent/pull/36"
+- "https://github.com/gulpjs/glob-parent/releases/tag/v5.1.2"
+- "https://github.com/gulpjs/glob-parent/releases/tag/v6.0.1"
+- "https://github.com/advisories/GHSA-cj88-88mr-972w"
+uuid: "d179a62d-e731-4841-b6e3-e18b7608ff11"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

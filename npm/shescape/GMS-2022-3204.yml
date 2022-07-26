@@ -1,0 +1,31 @@
+---
+identifier: "GMS-2022-3204"
+identifiers:
+- "GHSA-44vr-rwwj-p88h"
+- "GMS-2022-3204"
+package_slug: "npm/shescape"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in shescape."
+date: "2022-07-19"
+pubdate: "2022-07-15"
+affected_range: ">=1.4.0 <1.5.8"
+fixed_versions:
+- "1.5.8"
+affected_versions: "All versions starting from 1.4.0 before 1.5.8"
+not_impacted: "All versions before 1.4.0, all versions starting from 1.5.8"
+solution: "Upgrade to version 1.5.8 or above."
+urls:
+- "https://github.com/ericcornelissen/shescape/security/advisories/GHSA-44vr-rwwj-p88h"
+- "https://github.com/ericcornelissen/shescape/pull/322"
+- "https://github.com/ericcornelissen/shescape/pull/324"
+- "https://github.com/ericcornelissen/shescape/pull/332"
+- "https://github.com/ericcornelissen/shescape/releases/tag/v1.5.7"
+- "https://github.com/ericcornelissen/shescape/releases/tag/v1.5.8"
+- "https://github.com/advisories/GHSA-44vr-rwwj-p88h"
+uuid: "c395562c-026c-4b44-9ec3-3539741c77ad"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

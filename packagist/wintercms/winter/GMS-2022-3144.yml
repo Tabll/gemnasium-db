@@ -1,0 +1,32 @@
+---
+identifier: "GMS-2022-3144"
+identifiers:
+- "GHSA-q37h-jhf3-85cj"
+- "GMS-2022-3144"
+package_slug: "packagist/wintercms/winter"
+title: "Bypass of CMS Safe Mode Security Feature"
+description: "Authenticated users with permissions to create or modify theme 
+  template objects through the backend CMS editor can exploit this 
+  vulnerability to bypass the `cms.enableSafeMode` security feature if enabled 
+  (disables modification of PHP code through the web interface when enabled).
+  This is only an issue for Winter CMS instances that rely on the Safe Mode 
+  security feature to prevent privileged users from modifying the PHP code 
+  of CMS theme template objects through the web interface."
+date: "2022-07-16"
+pubdate: "2022-07-15"
+affected_range: "<1.0.475||>=1.1.0,<1.1.9"
+fixed_versions:
+- "1.0.475"
+- "1.1.9"
+affected_versions: "All versions before 1.0.475, all versions starting from 1.1.0
+  before 1.1.9"
+not_impacted: "All versions starting from 1.0.475 before 1.1.0, all versions starting
+  from 1.1.9"
+solution: "Upgrade to versions 1.0.475, 1.1.9 or above."
+urls:
+- "https://github.com/wintercms/winter/security/advisories/GHSA-q37h-jhf3-85cj"
+- "https://github.com/advisories/GHSA-q37h-jhf3-85cj"
+uuid: "8a0a9e8a-8f3d-4f9d-a82a-be0657b69c6a"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

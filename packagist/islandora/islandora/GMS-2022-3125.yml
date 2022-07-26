@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2022-3125"
+identifiers:
+- "GHSA-m58q-qq5h-mgqq"
+- "GMS-2022-3125"
+package_slug: "packagist/islandora/islandora"
+title: "Islandora 2.0 before 2.4.1 could allow any user to upload content into a repository"
+description: "This vulnerability would allow any user, regardless of permissions, to upload 
+  content into a repository. This affects installations of Islandora core 2.0 or greater."
+date: "2022-07-21"
+pubdate: "2022-07-21"
+affected_range: ">=2.0,<2.4.1"
+fixed_versions:
+- "2.4.1"
+affected_versions: "All versions starting from 2.0 before 2.4.1"
+not_impacted: "All versions before 2.0, all versions starting from 2.4.1"
+solution: "Upgrade to version 2.4.1 or above."
+urls:
+- "https://github.com/Islandora/islandora/security/advisories/GHSA-m58q-qq5h-mgqq"
+- "https://github.com/Islandora/islandora/commit/573d6878edf057987f1e41e5068de0074573e4c7"
+- "https://github.com/Islandora/islandora/releases/tag/2.4.1"
+- "https://github.com/advisories/GHSA-m58q-qq5h-mgqq"
+uuid: "4c4248c8-3aea-4fe6-b49e-ccbb4af686e8"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
