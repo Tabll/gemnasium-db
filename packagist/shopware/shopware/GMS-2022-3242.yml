@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2022-3242"
+identifiers:
+- "GHSA-5834-xv5q-cgfw"
+- "GMS-2022-3242"
+- "CVE-2022-31148"
+package_slug: "packagist/shopware/shopware"
+title: "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+description: "Improper Neutralization of Input During Web Page Generation ('Cross-site
+  Scripting') in shopware/shopware."
+date: "2022-07-27"
+pubdate: "2022-07-27"
+affected_range: ">=5.7.0,<=5.7.13"
+fixed_versions:
+- "5.7.14"
+affected_versions: "All versions starting from 5.7.0 up to 5.7.13"
+not_impacted: "All versions before 5.7.0, all versions after 5.7.13"
+solution: "Upgrade to version 5.7.14 or above."
+urls:
+- "https://github.com/shopware/shopware/security/advisories/GHSA-5834-xv5q-cgfw"
+- "https://docs.shopware.com/en/shopware-5-en/security-updates/security-update-07-2022"
+- "https://www.shopware.com/en/changelog-sw5/#5-7-14"
+- "https://github.com/advisories/GHSA-5834-xv5q-cgfw"
+uuid: "8f1b1e0c-1300-4ef2-bb3a-112fc24a5be3"
+cwe_ids:
+- "CWE-1035"
+- "CWE-79"
+- "CWE-937"
