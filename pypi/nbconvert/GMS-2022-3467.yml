@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2022-3467"
+identifiers:
+- "GHSA-9jmq-rx5f-8jwq"
+- "GMS-2022-3467"
+- "CVE-2021-32862"
+package_slug: "pypi/nbconvert"
+title: "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+description: "Improper Neutralization of Input During Web Page Generation ('Cross-site
+  Scripting') in nbconvert."
+date: "2022-08-10"
+pubdate: "2022-08-10"
+affected_range: "<=6.2"
+fixed_versions:
+- "6.3"
+affected_versions: "All versions up to 6.2"
+not_impacted: "All versions after 6.2"
+solution: "Upgrade to version 6.3 or above."
+urls:
+- "https://github.com/jupyter/nbconvert/security/advisories/GHSA-9jmq-rx5f-8jwq"
+- "https://github.com/advisories/GHSA-9jmq-rx5f-8jwq"
+uuid: "0338b6cf-c0d6-428e-b038-f823779a667b"
+cwe_ids:
+- "CWE-1035"
+- "CWE-79"
+- "CWE-937"
