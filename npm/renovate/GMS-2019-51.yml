@@ -13,13 +13,13 @@ description: "## Go Modules Vulnerability Disclosure\n\n### Impact\n\nTemporary 
   For more information\n\nIf you have any questions or comments about this advisory:\n*
   Open an issue in [Renovate](http://github.com/renovatebot/renovate)\n* Email us
   at [support@renovatebot.com](mailto:support@renovatebot.com)\n\n"
-date: "2021-09-20"
+date: "2022-08-11"
 pubdate: "2019-10-21"
-affected_range: "<19.38.7"
+affected_range: ">=13.87.0 <19.38.7"
 fixed_versions:
 - "19.38.7"
-affected_versions: "All versions before 19.38.7"
-not_impacted: "All versions starting from 19.38.7"
+affected_versions: "All versions starting from 13.87.0 before 19.38.7"
+not_impacted: "All versions before 13.87.0, all versions starting from 19.38.7"
 solution: "Upgrade to version 19.38.7 or above."
 urls:
 - "https://github.com/renovatebot/renovate/security/advisories/GHSA-v7x3-7hw7-pcjg"

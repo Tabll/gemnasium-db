@@ -1,0 +1,40 @@
+---
+identifier: "GMS-2022-3552"
+identifiers:
+- "GHSA-j259-6c58-9m58"
+- "GMS-2022-3552"
+- "CVE-2022-35942"
+package_slug: "npm/loopback-connector-postgresql"
+title: "loopback-connector-postgresql Vulnerable to Improper Sanitization of `contains`
+  Filter"
+description: "Improper input validation on the `contains` LoopBack filter may allow
+  for arbitrary SQL injection.\n\n### Impact\n\nWhen the extended filter property
+  `contains` is permitted to be interpreted by the Postgres connector, it is possible
+  to inject arbitrary SQL which may affect the confidentiality and integrity of data
+  stored on the connected database.\n\nThis affects users who does any of the following:\n\n-
+  Connect to the database via the DataSource with `allowExtendedProperties: true`
+  setting OR\n- Uses the connector's CRUD methods directly OR\n- Uses the connector's
+  other methods to interpret the LoopBack filter.\n\n### Patches\n\nPatch release
+  `loopback-connector-postgresql@5.5.1` has been published of which resolves this
+  issue.\n\n### Workarounds\n\nUsers who are unable to upgrade should do the following
+  if applicable:\n\n- Remove `allowExtendedProperties: true` DataSource setting\n-
+  Add `allowExtendedProperties: false` DataSource setting\n- When passing directly
+  to the connector functions, manually sanitize the user input for the `contains`
+  LoopBack filter beforehand.\n\n"
+date: "2022-08-11"
+pubdate: "2022-08-11"
+affected_range: "<5.5.1"
+fixed_versions:
+- "5.5.1"
+affected_versions: "All versions before 5.5.1"
+not_impacted: "All versions starting from 5.5.1"
+solution: "Upgrade to version 5.5.1 or above."
+urls:
+- "https://github.com/loopbackio/loopback-connector-postgresql/security/advisories/GHSA-j259-6c58-9m58"
+- "https://github.com/loopbackio/loopback-connector-postgresql/commit/d57406c6737692a3a106b58a35406290cddb23e5"
+- "https://github.com/advisories/GHSA-j259-6c58-9m58"
+uuid: "769d4f8d-0de4-458b-8c0c-63403b101084"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
+...
