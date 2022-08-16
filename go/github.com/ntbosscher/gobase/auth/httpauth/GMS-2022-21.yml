@@ -9,7 +9,7 @@ description: "### Impact\nIncorrect routing of some HTTP requests when using htt
   Patches\nUpgrade to for fix\n\n### Workarounds\nNone\n\n### References\nNone\n\n###
   For more information\nIf you have any questions or comments about this advisory:\n*
   Email us at [nbosscher@blue-giraffe.ca](mailto:nbosscher@blue-giraffe.ca)"
-date: "2022-02-11"
+date: "2022-08-13"
 pubdate: "2022-02-11"
 affected_range: "<v0.7.1"
 fixed_versions:
