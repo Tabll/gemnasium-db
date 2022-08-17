@@ -16,7 +16,7 @@ description: "### Impact\nA maliciously crafted claim may be incorrectly authent
   more information\nIf you have any questions or comments about this advisory:\n*
   Open an issue in [Microsoft Bot Builder SDK](https://github.com/microsoft/botframework-sdk)\n*
   Email us at [bf-reports@microsoft.com](mailto:bf-reports@microsoft.com)"
-date: "2022-08-13"
+date: "2022-08-16"
 pubdate: "2021-03-08"
 affected_range: ">=4.7.0,<4.7.2||>=4.8.0,<4.8.1||>=4.9.0,<4.9.3||>=4.10.0,<4.10.1"
 fixed_versions:
