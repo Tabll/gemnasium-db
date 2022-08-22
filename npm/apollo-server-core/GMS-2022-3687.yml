@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2022-3687"
+identifiers:
+- "GHSA-2fvv-qxrq-7jq6"
+- "GMS-2022-3687"
+package_slug: "npm/apollo-server-core"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in apollo-server-core."
+date: "2022-08-18"
+pubdate: "2022-08-18"
+affected_range: ">=3.0.0 <3.10.1"
+fixed_versions:
+- "3.10.1"
+affected_versions: "All versions starting from 3.0.0 before 3.10.1"
+not_impacted: "All versions before 3.0.0, all versions starting from 3.10.1"
+solution: "Upgrade to version 3.10.1 or above."
+urls:
+- "https://github.com/apollographql/apollo-server/security/advisories/GHSA-2fvv-qxrq-7jq6"
+- "https://github.com/apollographql/apollo-server/commit/68a439b6e3af9edc8a2480092f2d49f058be1e64"
+- "https://github.com/advisories/GHSA-2fvv-qxrq-7jq6"
+uuid: "dd421fb4-3f07-465b-ab52-d238188b08e4"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

@@ -1,0 +1,24 @@
+---
+identifier: "GMS-2022-3668"
+identifiers:
+- "GHSA-cvx8-ppmc-78hm"
+- "GMS-2022-3668"
+- "CVE-2022-1798"
+package_slug: "go/kubevirt.io/kubevirt"
+title: "Relative Path Traversal"
+description: "Relative Path Traversal in kubevirt.io/kubevirt."
+date: "2022-08-18"
+pubdate: "2022-08-18"
+affected_range: "<=0.53"
+fixed_versions: []
+affected_versions: "All versions up to 0.53"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/google/security-research/security/advisories/GHSA-cvx8-ppmc-78hm"
+- "https://github.com/advisories/GHSA-cvx8-ppmc-78hm"
+uuid: "815806e6-b8e2-4abd-8822-0be903839c27"
+cwe_ids:
+- "CWE-1035"
+- "CWE-352"
+- "CWE-937"
