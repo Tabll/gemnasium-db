@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2022-3780"
+identifiers:
+- "GHSA-56x4-j7p9-fcf9"
+- "GMS-2022-3780"
+package_slug: "npm/moment-timezone"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in moment-timezone."
+date: "2022-08-30"
+pubdate: "2022-08-30"
+affected_range: ">=0.1.0 <0.5.35"
+fixed_versions:
+- "0.5.35"
+affected_versions: "All versions starting from 0.1.0 before 0.5.35"
+not_impacted: "All versions before 0.1.0, all versions starting from 0.5.35"
+solution: "Upgrade to version 0.5.35 or above."
+urls:
+- "https://github.com/moment/moment-timezone/security/advisories/GHSA-56x4-j7p9-fcf9"
+- "https://github.com/moment/moment-timezone/commit/ce955a301ff372e8e9fb3a5b516620c60e7a082a"
+- "https://github.com/advisories/GHSA-56x4-j7p9-fcf9"
+uuid: "3e6221a0-5835-4f37-a2bc-fb88d09ac7d7"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

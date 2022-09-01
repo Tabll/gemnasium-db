@@ -1,0 +1,36 @@
+---
+identifier: "GMS-2022-3726"
+identifiers:
+- "GHSA-pfhr-pccp-hwmh"
+- "GMS-2022-3726"
+package_slug: "go/github.com/cilium/cilium"
+title: "Network Policies & (Clusterwide) Cilium Network Policies with namespace label
+  selectors may unexpectedly select pods with maliciously crafted labels"
+description: "If a user has Network Policies with namespace selectors
+  selecting labels of namespaces, or (clusterwide) Cilium Network Policies matching
+  on namespace labels, then it is possible for an attacker with Kubernetes pod deploy
+  rights (either directly or indirectly via higher-level APIs such as Deployment,
+  Daemonset etc) to craft additional pod labels such that the pod is selected by another
+  policy that exists rather than the expected policy."
+date: "2022-08-30"
+pubdate: "2022-08-30"
+affected_range: "<=1.10.13||>=1.11.0 <=1.11.7||=1.12.0"
+fixed_versions:
+- "1.10.14"
+- "1.11.8"
+- "1.12.1"
+affected_versions: "All versions up to 1.10.13, all versions starting from 1.11.0
+  up to 1.11.7, version 1.12.0"
+not_impacted: "All versions after 1.10.13 before 1.11.0, all versions after 1.11.7
+  before 1.12.0, all versions after 1.12.0"
+solution: "Upgrade to versions 1.10.14, 1.11.8, 1.12.1 or above."
+urls:
+- "https://github.com/cilium/cilium/security/advisories/GHSA-pfhr-pccp-hwmh"
+- "https://github.com/cilium/cilium/releases/tag/v1.10.14"
+- "https://github.com/cilium/cilium/releases/tag/v1.11.8"
+- "https://github.com/cilium/cilium/releases/tag/v1.12.1"
+- "https://github.com/advisories/GHSA-pfhr-pccp-hwmh"
+uuid: "8b954254-a498-4b40-be9e-0a7e625795bd"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
