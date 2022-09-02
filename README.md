@@ -64,6 +64,7 @@ contributions.
 | @rousey.thomas-heb | #203              |
 | @gmacedo       | #204                  |
 | @captncraig    | !17282                |
+| @dmitriylewen  | #206                  |
 
 ## Directory structure
 
