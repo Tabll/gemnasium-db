@@ -1,0 +1,40 @@
+---
+identifier: "GMS-2022-3941"
+identifiers:
+- "GHSA-qf7j-25g9-r63f"
+- "GMS-2022-3941"
+- "CVE-2022-36058"
+package_slug: "go/github.com/ElrondNetwork/elrond-go"
+title: "Insecure Default Variable Initialization"
+description: "It is possible to call on an SC address with a missing function name."
+date: "2022-09-01"
+pubdate: "2022-09-01"
+affected_range: "<=v1.3.33"
+fixed_versions:
+- "v1.3.34"
+affected_versions: "All versions up to 1.3.33"
+not_impacted: "All versions after 1.3.33"
+solution: "Upgrade to version 1.3.34 or above."
+urls:
+- "https://github.com/ElrondNetwork/elrond-go/security/advisories/GHSA-qf7j-25g9-r63f"
+- "https://github.com/ElrondNetwork/elrond-go/commit/cb487fd7be2a2077638eb34ae771a73630c870c7"
+- "https://github.com/ElrondNetwork/elrond-go/blob/8e402fa6d7e91e779980122d3798b2bf50892945/integrationTests/vm/txsFee/asyncESDT_test.go#L402"
+- "https://github.com/advisories/GHSA-qf7j-25g9-r63f"
+uuid: "863c9d29-8f02-4d5d-bf3e-f3766bd8485f"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
+- "CWE-453"
+versions:
+- number: "v1.3.33"
+  commit:
+    tags:
+    - "v1.3.33"
+    sha: "84c9960c1625395f0ebd8e8811fb5f70859185fe"
+    timestamp: "20220704142306"
+- number: "v1.3.34"
+  commit:
+    tags:
+    - "v1.3.34"
+    sha: "cb487fd7be2a2077638eb34ae771a73630c870c7"
+    timestamp: "20220706191727"
