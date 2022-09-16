@@ -1,0 +1,37 @@
+---
+identifier: "GMS-2022-4207"
+identifiers:
+- "GHSA-qcqv-38jg-2r43"
+- "GMS-2022-4207"
+package_slug: "gem/pageflow"
+title: "Pageflow vulnerable to insecure direct object reference in membership update
+  endpoint"
+description: "Pageflow has a membership edit feature which allows users to edit the 
+  roles of user memberships associated with an account that they have the manager 
+  role to (including their own). While the Entity dropdown select field is greyed 
+  out in the UI, an attacker can use tools which allow sending arbitrary HTTP request 
+  to craft a request to the /admin/users/{user_id}/memberships/{membership_id} 
+  endpoint containing an additional membership[entity_id] parameter. This parameter 
+  is honored when the membership is updated, allowing an attacker to update the 
+  membership object associated with their own account (with manager role) to be 
+  associated with a different attacker-chosen account instead. Since account_ids 
+  are enumerable, an attacker can compromise all accounts present on the platform."
+date: "2022-09-15"
+pubdate: "2022-09-15"
+affected_range: "<14.5.2||>=15.0.0 <15.7.1"
+fixed_versions:
+- "14.5.2"
+- "15.7.1"
+affected_versions: "All versions before 14.5.2, all versions starting from 15.0.0
+  before 15.7.1"
+not_impacted: "All versions starting from 14.5.2 before 15.0.0, all versions starting
+  from 15.7.1"
+solution: "Upgrade to versions 14.5.2, 15.7.1 or above."
+urls:
+- "https://github.com/codevise/pageflow/security/advisories/GHSA-qcqv-38jg-2r43"
+- "https://github.com/codevise/pageflow/pull/1862"
+- "https://github.com/advisories/GHSA-qcqv-38jg-2r43"
+uuid: "9cb2ceac-649e-4740-a1cd-ce86edc39620"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

@@ -1,0 +1,36 @@
+---
+identifier: "GMS-2022-4208"
+identifiers:
+- "GHSA-wrrw-crp8-979q"
+- "GMS-2022-4208"
+package_slug: "gem/pageflow"
+title: "Pageflow vulnerable to sensitive user data extraction via Ransack query injection"
+description: "The attack allows extracting sensitive properties of database objects
+  that are associated with users or entries belonging to an account that the attacker
+  has access to.
+  
+  Pageflow uses the ActiveAdmin Ruby library to provide some management features to its 
+  users. ActiveAdmin relies on the Ransack library to implement search functionality. 
+  In its default configuration, Ransack will allow for query conditions based on 
+  properties of associated database objects [1]. The *_starts_with, *_ends_with or 
+  *_contains search matchers [2] can then be abused to exfiltrate sensitive string 
+  values of associated database objects via character-by-character brute-force."
+date: "2022-09-15"
+pubdate: "2022-09-15"
+affected_range: "<14.5.2||>=15.0.0 <15.7.1"
+fixed_versions:
+- "14.5.2"
+- "15.7.1"
+affected_versions: "All versions before 14.5.2, all versions starting from 15.0.0
+  before 15.7.1"
+not_impacted: "All versions starting from 14.5.2 before 15.0.0, all versions starting
+  from 15.7.1"
+solution: "Upgrade to versions 14.5.2, 15.7.1 or above."
+urls:
+- "https://github.com/codevise/pageflow/security/advisories/GHSA-wrrw-crp8-979q"
+- "https://github.com/codevise/pageflow/pull/1862"
+- "https://github.com/advisories/GHSA-wrrw-crp8-979q"
+uuid: "849e4245-ca44-4473-b2ae-bc34159f7eb0"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
