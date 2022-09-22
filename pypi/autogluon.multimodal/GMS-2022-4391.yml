@@ -1,0 +1,31 @@
+---
+identifier: "GMS-2022-4391"
+identifiers:
+- "GHSA-6h2x-4gjf-jc5w"
+- "GMS-2022-4391"
+package_slug: "pypi/autogluon.multimodal"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in autogluon.multimodal."
+date: "2022-09-21"
+pubdate: "2022-09-21"
+affected_range: ">=0.4.0,<0.4.3||>=0.5.0,<0.5.2"
+fixed_versions:
+- "0.4.3"
+- "0.5.2"
+affected_versions: "All versions starting from 0.4.0 before 0.4.3, all versions starting
+  from 0.5.0 before 0.5.2"
+not_impacted: "All versions before 0.4.0, all versions starting from 0.4.3 before
+  0.5.0, all versions starting from 0.5.2"
+solution: "Upgrade to versions 0.4.3, 0.5.2 or above."
+urls:
+- "https://github.com/awslabs/autogluon/security/advisories/GHSA-6h2x-4gjf-jc5w"
+- "https://github.com/awslabs/autogluon/pull/1987"
+- "https://github.com/awslabs/autogluon/commit/23a37e74e58d03055c84a1b89c5af6c3db296b5e"
+- "https://github.com/advisories/GHSA-6h2x-4gjf-jc5w"
+uuid: "e293f670-0c43-4354-9f16-988bf7af5c3d"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"
