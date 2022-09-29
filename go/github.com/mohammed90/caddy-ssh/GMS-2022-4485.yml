@@ -1,0 +1,49 @@
+---
+identifier: "GMS-2022-4485"
+identifiers:
+- "GHSA-gmhj-xjfh-cf6m"
+- "GMS-2022-4485"
+package_slug: "go/github.com/mohammed90/caddy-ssh"
+title: "Caddy-SSH vulnerable to Authorization Bypass due to incorrect usage of PAM
+  library"
+description: "Not invoking a call to `pam_acct_mgmt` after a call to `pam_authenticate`
+  to check the validity of a login can lead to an authorization bypass. Impact: Exploitability:
+  The attack can be carried over the network. A complex non-standard configuration
+  or a specialized condition is required for the attack to be successfully conducted.
+  The attacker also requires access to a users credentials, be it expired, for an
+  attack to be successful. There is no user interaction required for successful execution.
+  The attack can affect components outside the scope of the target module. Impact:
+  Using this attack vector, an attacker may access otherwise restricted parts of the
+  system. The attack can be used to gain access to confidential files like passwords,
+  login credentials and other secrets. Hence, it has a high impact on confidentiality.
+  It may also be directly used to affect a change on a system resource. Hence has
+  a medium to high impact on integrity. This attack may not be used to affect the
+  availability of the system. Taking this account an appropriate CVSS v3.1 vector
+  would be AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:L/A:N Root Cause Analysis: In this case,
+  in the following PAM transaction, only a call to `pam.Authenticate` is used to login
+  a user. implies that a user with expired credentials can still login. The bug can
+  be verified easily by creating a new user account, expiring it with `chage -E0 <username>`
+  and then trying to log in with the expired credentials. Patches: This can be fixed
+  by invoking a call to `pam.AcctMgmt` after a successful call to `pam.Authenticate`."
+date: "2022-09-23"
+pubdate: "2022-09-23"
+affected_range: "=v0.0.1"
+fixed_versions: []
+affected_versions: "Version 0.0.1"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/mohammed90/caddy-ssh/security/advisories/GHSA-gmhj-xjfh-cf6m"
+- "https://github.com/mohammed90/caddy-ssh/commit/4b3e639d64c55f91152ffb51a4af35a8845c95a3"
+- "https://github.com/advisories/GHSA-gmhj-xjfh-cf6m"
+uuid: "e115e1b8-cc10-4edc-b600-5ea2f1310f07"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
+versions:
+- number: "v0.0.1"
+  commit:
+    tags:
+    - "v0.0.1"
+    sha: "b9ce99b66fde8bc158ca3a50d8e39c0044c67d0e"
+    timestamp: "20220328134736"
