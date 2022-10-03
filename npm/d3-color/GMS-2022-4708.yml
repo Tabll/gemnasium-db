@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2022-4708"
+identifiers:
+- "GHSA-36jr-mh4h-2g58"
+- "GMS-2022-4708"
+package_slug: "npm/d3-color"
+title: "d3-color vulnerable to ReDoS"
+description: "The d3-color module provides representations for various color spaces
+  in the browser. Versions prior to 3.1.0 is vulnerable to a Regular expression Denial
+  of Service. This issue has been patched in version 3.1.0. There are no known workarounds."
+date: "2022-09-29"
+pubdate: "2022-09-29"
+affected_range: "<3.1.0"
+fixed_versions:
+- "3.1.0"
+affected_versions: "All versions before 3.1.0"
+not_impacted: "All versions starting from 3.1.0"
+solution: "Upgrade to version 3.1.0 or above."
+urls:
+- "https://github.com/d3/d3-color/pull/100"
+- "https://github.com/d3/d3-color/releases/tag/v3.1.0"
+- "https://security.snyk.io/vuln/SNYK-JS-D3COLOR-1076592"
+- "https://github.com/advisories/GHSA-36jr-mh4h-2g58"
+uuid: "75d40ab7-0ab8-41e7-97a8-f6b98e8fba11"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
