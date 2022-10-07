@@ -1,0 +1,43 @@
+---
+identifier: "GMS-2022-4915"
+identifiers:
+- "GHSA-67x4-qr35-qvrm"
+- "GMS-2022-4915"
+- "CVE-2022-39273"
+package_slug: "go/github.com/flyteorg/flyteadmin"
+title: "FlyteAdmin's Default OAuth Authorization Server secret must be rotated"
+description: "Users who enable the default Flyte’s authorization server without changing 
+  the default clientid hashes will be exposed to the public internet. In an effort to 
+  make enabling authentication easier for Flyte administrators, the default
+  configuration for Flyte Admin allows access for Flyte Propeller even after turning
+  on authentication via a hardcoded hashed password. This password is also set on
+  the default Flyte Propeller configmap in the various Flyte Helm charts. Users who
+  enable auth but do not override this setting in Flyte Admin’s configuration may
+  unknowingly allow public traffic in by way of this default password with attackers
+  effectively impersonating propeller. This only applies to users who have not specified
+  the ExternalAuthorizationServer setting. Using an external auth server automatically
+  turns off this default configuration is not susceptible to this vulnerability."
+date: "2022-10-05"
+pubdate: "2022-10-05"
+affected_range: "<v1.1.44"
+fixed_versions:
+- "v1.1.44"
+affected_versions: "All versions before 1.1.44"
+not_impacted: "All versions starting from 1.1.44"
+solution: "Upgrade to version 1.1.44 or above."
+urls:
+- "https://github.com/flyteorg/flyteadmin/security/advisories/GHSA-67x4-qr35-qvrm"
+- "https://github.com/flyteorg/flyteadmin/pull/478"
+- "https://docs.flyte.org/en/latest/deployment/cluster_config/auth_setup.html#oauth2-authorization-server"
+- "https://github.com/advisories/GHSA-67x4-qr35-qvrm"
+uuid: "eedc2732-0a90-4fee-b403-f8e46292912c"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
+versions:
+- number: "v1.1.44"
+  commit:
+    tags:
+    - "v1.1.44"
+    sha: "281172edf55fe6800959238fc128964ead6d9101"
+    timestamp: "20220927210728"

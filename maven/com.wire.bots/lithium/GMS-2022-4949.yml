@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2022-4949"
+identifiers:
+- "GHSA-f36p-42jv-8rh2"
+- "GMS-2022-4949"
+package_slug: "maven/com.wire.bots/lithium"
+title: "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+description: "Improper Neutralization of Input During Web Page Generation ('Cross-site
+  Scripting') in com.wire.bots:lithium."
+date: "2022-10-05"
+pubdate: "2022-09-30"
+affected_range: "(,3.4.2)"
+fixed_versions:
+- "3.4.2"
+affected_versions: "All versions before 3.4.2"
+not_impacted: ""
+solution: "Upgrade to version 3.4.2 or above."
+urls:
+- "https://github.com/wireapp/lithium/security/advisories/GHSA-f36p-42jv-8rh2"
+- "https://github.com/wireapp/lithium/commit/8b9b406d608fe482ec0e7adf8705834bca92d7df"
+- "https://github.com/advisories/GHSA-f36p-42jv-8rh2"
+uuid: "d891e070-682f-4301-8901-d7fc54015ba5"
+cwe_ids:
+- "CWE-1035"
+- "CWE-79"
+- "CWE-937"
