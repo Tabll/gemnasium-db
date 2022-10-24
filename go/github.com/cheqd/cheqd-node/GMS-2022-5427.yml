@@ -1,0 +1,36 @@
+---
+identifier: "GMS-2022-5427"
+identifiers:
+- "GHSA-j92c-mmf7-j5x5"
+- "GMS-2022-5427"
+package_slug: "go/github.com/cheqd/cheqd-node"
+title: "Potential inter-blockchain communication (IBC) protocol compromise via \"Dragonberry\"
+  vulnerability in cheqd"
+description: "This vulnerability affects IBC transfers due to a security vulnerability
+  dubbed \"Dragonberry\" upstream in Cosmos SDK. The vulnerability could allow malicious
+  attackers to compromise chain-to-chain IBC transfers. There is no vulnerability
+  in the `DID/resource` modules for cheqd-node."
+date: "2022-10-18"
+pubdate: "2022-10-18"
+affected_range: "<v0.6.9"
+fixed_versions:
+- "v0.6.9"
+affected_versions: "All versions before 0.6.9"
+not_impacted: "All versions starting from 0.6.9"
+solution: "Upgrade to version 0.6.9 or above."
+urls:
+- "https://github.com/cheqd/cheqd-node/security/advisories/GHSA-j92c-mmf7-j5x5"
+- "https://forum.cosmos.network/t/ibc-security-advisory-dragonberry/7702/1"
+- "https://github.com/cosmos/cosmos-sdk/releases/tag/v0.45.9"
+- "https://github.com/advisories/GHSA-j92c-mmf7-j5x5"
+uuid: "6e4e4fd1-c034-41c3-9254-58173a481f37"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
+versions:
+- number: "v0.6.9"
+  commit:
+    tags:
+    - "0.6.9"
+    sha: "d332dbcc1cecfe1ff3447b8ea2a3d15693e142cf"
+    timestamp: "20221017130404"

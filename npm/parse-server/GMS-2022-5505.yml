@@ -1,0 +1,29 @@
+---
+identifier: "GMS-2022-5505"
+identifiers:
+- "GHSA-h423-w6qv-2wj3"
+- "GMS-2022-5505"
+- "CVE-2022-39313"
+package_slug: "npm/parse-server"
+title: "Improper Input Validation"
+description: "Parse Server crashes when a file download request is received with an
+  invalid byte range."
+date: "2022-10-18"
+pubdate: "2022-10-18"
+affected_range: "<4.10.17||>=5.0.0 <5.2.8"
+fixed_versions:
+- "4.10.17"
+- "5.2.8"
+affected_versions: "All versions before 4.10.17, all versions starting from 5.0.0
+  before 5.2.8"
+not_impacted: "All versions starting from 4.10.17 before 5.0.0, all versions starting
+  from 5.2.8"
+solution: "Upgrade to versions 4.10.17, 5.2.8 or above."
+urls:
+- "https://github.com/parse-community/parse-server/security/advisories/GHSA-h423-w6qv-2wj3"
+- "https://github.com/parse-community/parse-server/releases/tag/4.10.17"
+- "https://github.com/advisories/GHSA-h423-w6qv-2wj3"
+uuid: "8daa1c9f-4897-4c95-81cf-ca6d1a86efea"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

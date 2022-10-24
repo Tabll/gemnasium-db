@@ -1,0 +1,29 @@
+---
+identifier: "GMS-2022-5093"
+identifiers:
+- "GHSA-528j-9r78-wffx"
+- "GMS-2022-5093"
+package_slug: "go/go.etcd.io/etcd/client/v3"
+title: "etcd user credentials are stored in WAL logs in plaintext"
+description: "The etcd assumes that the on disk files are secure. 
+  The possible fixes have been provided, however,
+  it is the responsibility of the etcd users to make sure that the etcd server WAL
+  log files are secure."
+date: "2022-10-06"
+pubdate: "2022-10-06"
+affected_range: "<3.3.23||>=3.4.0 <3.4.10"
+fixed_versions:
+- "3.3.23"
+- "3.4.10"
+affected_versions: "All versions before 3.3.23, all versions starting from 3.4.0 before
+  3.4.10"
+not_impacted: "All versions starting from 3.3.23 before 3.4.0, all versions starting
+  from 3.4.10"
+solution: "Upgrade to versions 3.3.23, 3.4.10 or above."
+urls:
+- "https://github.com/etcd-io/etcd/security/advisories/GHSA-528j-9r78-wffx"
+- "https://github.com/advisories/GHSA-528j-9r78-wffx"
+uuid: "01c2d0b7-388a-4e42-8ac1-583691e63917"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

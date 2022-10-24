@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2022-5123"
+identifiers:
+- "GHSA-8w7w-67mw-r5p7"
+- "GMS-2022-5123"
+package_slug: "npm/generator-jhipster"
+title: "generator-jhipster vulnerable to login check Regular Expression Denial of
+  Service"
+description: "### Impact\nFor applications using JWT or session-based authentication
+  (not OIDC), users can input a login string which can cause a denial of service,
+  as parsing it will be too complex."
+date: "2022-10-06"
+pubdate: "2022-10-06"
+affected_range: ">6.8.0 <6.9.0"
+fixed_versions:
+- "6.9.0"
+affected_versions: "All versions after 6.8.0 before 6.9.0"
+not_impacted: ""
+solution: "Upgrade to version 6.9.0 or above."
+urls:
+- "https://github.com/jhipster/generator-jhipster/security/advisories/GHSA-8w7w-67mw-r5p7"
+- "https://gist.github.com/atomfrede/311f8a9c6eb74c5c5226af0481155207"
+- "https://www.jhipster.tech/2020/05/17/jhipster-release-6.9.0.html"
+- "https://github.com/advisories/GHSA-8w7w-67mw-r5p7"
+uuid: "c3eb94de-1124-4b6c-bb7b-d8d119d19d9a"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2022-5173"
+identifiers:
+- "GHSA-8r99-h8j2-rw64"
+- "GMS-2022-5173"
+package_slug: "pypi/Twisted"
+title: "Improper Neutralization"
+description: "Improper Neutralization in twisted."
+date: "2022-10-07"
+pubdate: "2022-10-07"
+affected_range: "<20.3.0"
+fixed_versions:
+- "20.3.0"
+affected_versions: "All versions before 20.3.0"
+not_impacted: "All versions starting from 20.3.0"
+solution: "Upgrade to version 20.3.0 or above."
+urls:
+- "https://github.com/twisted/twisted/security/advisories/GHSA-8r99-h8j2-rw64"
+- "https://github.com/twisted/twisted/commit/20c787a14a09e7cbd5dfd8df08ceff00d1fcc081"
+- "https://github.com/twisted/twisted/commit/4a7d22e490bb8ff836892cc99a1f54b85ccb0281"
+- "https://github.com/advisories/GHSA-8r99-h8j2-rw64"
+uuid: "68e2a2bf-6c7a-4b44-aa3f-4e1feae3b726"
+cwe_ids:
+- "CWE-1035"
+- "CWE-707"
+- "CWE-937"

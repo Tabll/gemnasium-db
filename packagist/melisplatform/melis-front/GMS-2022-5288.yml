@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2022-5288"
+identifiers:
+- "GHSA-h479-2mv4-5c26"
+- "GMS-2022-5288"
+- "CVE-2022-39298"
+package_slug: "packagist/melisplatform/melis-front"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in melisplatform/melis-front."
+date: "2022-10-11"
+pubdate: "2022-10-11"
+affected_range: "<5.0.1"
+fixed_versions:
+- "5.0.1"
+affected_versions: "All versions before 5.0.1"
+not_impacted: "All versions starting from 5.0.1"
+solution: "Upgrade to version 5.0.1 or above."
+urls:
+- "https://github.com/melisplatform/melis-front/security/advisories/GHSA-h479-2mv4-5c26"
+- "https://github.com/melisplatform/melis-front/commit/89ae612d5f1f7aa2fb621ee8de27dffe1feb851e"
+- "https://github.com/advisories/GHSA-h479-2mv4-5c26"
+uuid: "05ffb140-4739-4cf6-9142-b65049dbc01d"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

@@ -1,0 +1,29 @@
+---
+identifier: "GMS-2022-5094"
+identifiers:
+- "GHSA-9gp7-6833-wv89"
+- "GMS-2022-5094"
+package_slug: "go/go.etcd.io/etcd/client/v3"
+title: "etcd having a negative value for cluster node size results in an index out-of-bound
+  panic during service discovery"
+description: "When an etcd instance attempts to perform service discovery, 
+  if a cluster size is provided as a negative value, 
+  the etcd instance will panic without recovery."
+date: "2022-10-06"
+pubdate: "2022-10-06"
+affected_range: "<3.3.23||>=3.4.0 <3.4.10"
+fixed_versions:
+- "3.3.23"
+- "3.4.10"
+affected_versions: "All versions before 3.3.23, all versions starting from 3.4.0 before
+  3.4.10"
+not_impacted: "All versions starting from 3.3.23 before 3.4.0, all versions starting
+  from 3.4.10"
+solution: "Upgrade to versions 3.3.23, 3.4.10 or above."
+urls:
+- "https://github.com/etcd-io/etcd/security/advisories/GHSA-9gp7-6833-wv89"
+- "https://github.com/advisories/GHSA-9gp7-6833-wv89"
+uuid: "d702880a-f56a-4a1e-a26d-cd01bd9b59c6"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

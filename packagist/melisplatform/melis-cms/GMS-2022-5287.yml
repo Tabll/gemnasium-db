@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2022-5287"
+identifiers:
+- "GHSA-m3m3-6gww-7gj9"
+- "GMS-2022-5287"
+- "CVE-2022-39297"
+package_slug: "packagist/melisplatform/melis-cms"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in melisplatform/melis-cms."
+date: "2022-10-11"
+pubdate: "2022-10-11"
+affected_range: "<5.0.1"
+fixed_versions:
+- "5.0.1"
+affected_versions: "All versions before 5.0.1"
+not_impacted: "All versions starting from 5.0.1"
+solution: "Upgrade to version 5.0.1 or above."
+urls:
+- "https://github.com/melisplatform/melis-cms/security/advisories/GHSA-m3m3-6gww-7gj9"
+- "https://github.com/melisplatform/melis-cms/commit/d124b2474699a679a24ec52620cadceb3d4cec11"
+- "https://github.com/advisories/GHSA-m3m3-6gww-7gj9"
+uuid: "6cb3ec81-c3c7-4109-957b-608000bc94d2"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

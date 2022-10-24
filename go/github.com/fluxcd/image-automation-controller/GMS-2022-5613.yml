@@ -1,0 +1,48 @@
+---
+identifier: "GMS-2022-5613"
+identifiers:
+- "GHSA-f4p5-x4vc-mh4v"
+- "GMS-2022-5613"
+- "CVE-2022-39272"
+package_slug: "go/github.com/fluxcd/image-automation-controller"
+title: "Improper use of metav1.Duration allows for Denial of Service"
+description: "Flux controllers within the affected versions range is vulnerable to
+  a denial of service attack. Users that have permissions to change Flux’s objects,
+  either through a Flux source or directly within a cluster, can provide invalid data
+  to fields `.spec.interval` or `.spec.timeout` (and structured variations of these
+  fields), causing the entire object type to stop being processed.
+  
+  The issue has two root causes a) the Kubernetes type `metav1.Duration` not being 
+  fully compatible with the Go type `time.Duration` as explained on 
+  [upstream report](https://github.com/kubernetes/apimachinery/issues/131);
+  b) lack of validation within Flux to restrict allowed values."
+date: "2022-10-19"
+pubdate: "2022-10-19"
+affected_range: ">=v0.1.0 <v0.26.0"
+fixed_versions:
+- "v0.26.0"
+affected_versions: "All versions starting from 0.1.0 before 0.26.0"
+not_impacted: "All versions before 0.1.0, all versions starting from 0.26.0"
+solution: "Upgrade to version 0.26.0 or above."
+urls:
+- "https://github.com/fluxcd/flux2/security/advisories/GHSA-f4p5-x4vc-mh4v"
+- "https://github.com/kubernetes/apimachinery/issues/131"
+- "https://github.com/advisories/GHSA-f4p5-x4vc-mh4v"
+uuid: "2c2f6f0e-4ee2-4954-9c27-dfa63f804e4a"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
+versions:
+- number: "v0.1.0"
+  commit:
+    tags:
+    - "v0.1.0"
+    sha: "23c501695c1a6db7232957920e4462162cb0961a"
+    timestamp: "20201210135937"
+- number: "v0.26.0"
+  commit:
+    tags:
+    - "v0.26.0"
+    sha: "0082af7b652211f3f465b748e59975b38e63a44c"
+    timestamp: "20220929163308"
+...

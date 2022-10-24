@@ -2,27 +2,28 @@
 identifier: "GMS-2022-4614"
 identifiers:
 - "GHSA-8fg9-p83m-x5pq"
+- "CVE-2022-39280"
 - "GMS-2022-4614"
 package_slug: "pypi/dparse"
 title: "ReDoS issue in dparse"
-description: "dparse versions prior to 0.5.1 contain a regular expression
-  that is vulnerable to ReDoS. All users parsing index server URLs with
-  dparse are impacted by this vulnerability. The Patch is applied
-  in the `0.5.2` version, all users are recommended to upgrade as soon as 
-  possible. Workarounds: Avoid passing index server URLs in the source file 
-  to be parsed. If you have any questions or comments about this advisory, 
-  email us at support@pyup.io"
-date: "2022-09-27"
+description: "dparse versions prior to 0.5.1 contain a regular expression that is
+  vulnerable to ReDoS. All users parsing index server URLs with dparse are impacted
+  by this vulnerability. The Patch is applied in the `0.5.2` version, all users are
+  recommended to upgrade as soon as possible. Workarounds: Avoid passing index server
+  URLs in the source file to be parsed. If you have any questions or comments about
+  this advisory, email us at support@pyup.io"
+date: "2022-10-07"
 pubdate: "2022-09-27"
-affected_range: "<0.5.1"
+affected_range: "<0.5.2"
 fixed_versions:
 - "0.5.2"
-affected_versions: "All versions before 0.5.1"
-not_impacted: "All versions starting from 0.5.1"
+affected_versions: "All versions before 0.5.2"
+not_impacted: "All versions starting from 0.5.2"
 solution: "Upgrade to version 0.5.2 or above."
 urls:
 - "https://github.com/pyupio/dparse/security/advisories/GHSA-8fg9-p83m-x5pq"
 - "https://github.com/advisories/GHSA-8fg9-p83m-x5pq"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
 uuid: "cdc30816-4d63-48cd-97a1-80ead6b990aa"
 cwe_ids:
 - "CWE-1035"

@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2022-5273"
+identifiers:
+- "GHSA-jjmg-x456-w976"
+- "GMS-2022-5273"
+package_slug: "npm/csrf-csrf"
+title: "Incorrect default cookie name and recommendation"
+description: "The default cookie name (and documentation recommendation) was prefixed 
+  with Host__ instead of __Host-."
+date: "2022-10-10"
+pubdate: "2022-10-10"
+affected_range: "<2.2.1"
+fixed_versions:
+- "2.2.1"
+affected_versions: "All versions before 2.2.1"
+not_impacted: "All versions starting from 2.2.1"
+solution: "Upgrade to version 2.2.1 or above."
+urls:
+- "https://github.com/Psifi-Solutions/csrf-csrf/security/advisories/GHSA-jjmg-x456-w976"
+- "https://github.com/Psifi-Solutions/csrf-csrf/commit/8f1ce8db97d945a4bb7f39f0b43c6041fa83d675"
+- "https://github.com/advisories/GHSA-jjmg-x456-w976"
+uuid: "588624f0-74b5-491d-a33d-c6a8b17e45c5"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
