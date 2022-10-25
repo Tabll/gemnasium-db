@@ -6,7 +6,7 @@ identifiers:
 package_slug: "go/github.com/theupdateframework/go-tuf"
 title: "Improper Neutralization"
 description: "Improper Neutralization in github.com/theupdateframework/go-tuf."
-date: "2022-09-16"
+date: "2022-10-24"
 pubdate: "2022-09-16"
 affected_range: "<v0.3.2"
 fixed_versions:
