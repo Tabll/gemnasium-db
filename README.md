@@ -58,14 +58,14 @@ contributions.
 | @hchriwoo      | #192                  |
 | @masakura      | !14708                |
 | @blischalkcof  | #194                  |
-| @dmitriylewen  | #195,#196             |
+| @dmitriylewen  | #195,#196,#207        |
 | @ryan461       | !15227                |
 | @steppy452     | #198                  |
 | @rousey.thomas-heb | #203              |
 | @gmacedo       | #204                  |
 | @captncraig    | !17282                |
 | @dmitriylewen  | #206                  |
-| @candrews      | !18818                |
+| @candrews      | !18818, !19242        |
 
 ## Directory structure
 
