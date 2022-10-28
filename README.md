@@ -65,7 +65,7 @@ contributions.
 | @gmacedo       | #204                  |
 | @captncraig    | !17282                |
 | @dmitriylewen  | #206                  |
-| @candrews      | !18818, !19242        |
+| @candrews      | !18818, !19242, !19243 |
 
 ## Directory structure
 

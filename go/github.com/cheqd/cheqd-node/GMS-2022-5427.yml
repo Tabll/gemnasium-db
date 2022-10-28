@@ -31,6 +31,6 @@ versions:
 - number: "v0.6.9"
   commit:
     tags:
-    - "0.6.9"
-    sha: "d332dbcc1cecfe1ff3447b8ea2a3d15693e142cf"
+    - "v0.6.9"
+    sha: "dc6a6623d0ab5295541950b217a717bc51b7fc10"
     timestamp: "20221017130404"
