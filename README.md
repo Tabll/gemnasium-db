@@ -36,19 +36,21 @@ contributions.
 
 | Author         | MRs/Issues            |
 | -------------- | --------------------- |
+| @candrews      | !18818, !19242, !19243, !19941 |
+| @mrtux         | !1611, !1613, !11467, !13620  |
+| @AFDesk        | #175, #187, #188, #200   |
+| @curvedriver   | #174, #197, #199        |
+| @patrickmorton | #179, #180, #182        |
+| @dmitriylewen  | #195, #196, #207        |
 | @blischalkcof  | #168, #185            |
+| @brondsem      | !1500, !1501          |
 | @thklein       | #167                  |
 | @AB-xdev       | #166                  |
-| @brondsem      | !1500, !1501          |
-| @mrtux         | !1611, !1613, !11467, !13620  |
 | @rusher1       | !2246                 | 
 | @vavkamil      | !4650                 |
 | @robw-nom      | !4808                 |
 | @masahiro331   | !6889                 |
 | @mattchrist    | #173                  |
-| @curvedriver   | #174,#197,#199        |
-| @AFDesk        | #175,#187,#188,#200   |
-| @patrickmorton | #179,#180,#182        |
 | @westonsteimel | !11629                |
 | @mburakouski   | #181                  |
 | @attritionorg  | !13114                |
@@ -58,14 +60,12 @@ contributions.
 | @hchriwoo      | #192                  |
 | @masakura      | !14708                |
 | @blischalkcof  | #194                  |
-| @dmitriylewen  | #195,#196,#207        |
 | @ryan461       | !15227                |
 | @steppy452     | #198                  |
 | @rousey.thomas-heb | #203              |
 | @gmacedo       | #204                  |
 | @captncraig    | !17282                |
 | @dmitriylewen  | #206                  |
-| @candrews      | !18818, !19242, !19243 |
 
 ## Directory structure
 
