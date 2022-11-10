@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2022-6505"
+identifiers:
+- "GHSA-8g2p-5pqh-5jmc"
+- "GMS-2022-6505"
+package_slug: "nuget/System.Data.SqlClient"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in System.Data.SqlClient."
+date: "2022-11-08"
+pubdate: "2022-11-08"
+affected_range: "(,4.8.4]"
+fixed_versions:
+- "4.8.5"
+affected_versions: "All versions up to 4.8.4"
+not_impacted: "All versions after 4.8.4"
+solution: "Upgrade to version 4.8.5 or above."
+urls:
+- "https://github.com/dotnet/corefx/security/advisories/GHSA-8g2p-5pqh-5jmc"
+- "https://github.com/dotnet/runtime/issues/78042"
+- "https://www.nuget.org/packages/Microsoft.Data.SqlClient/"
+- "https://github.com/advisories/GHSA-8g2p-5pqh-5jmc"
+uuid: "882af2a2-ce90-4624-9c27-4c2b9900f5e1"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

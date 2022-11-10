@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2022-6564"
+identifiers:
+- "GHSA-6c6p-h79f-g6p4"
+- "GMS-2022-6564"
+- "CVE-2022-39388"
+package_slug: "go/github.com/istio/istio"
+title: "Istio may allow identity impersonation if user has localhost access"
+description: "User can impersonate any workload identity within the service mesh if 
+  they have localhost access to the Istiod control plane."
+date: "2022-11-09"
+pubdate: "2022-11-09"
+affected_range: ">=1.15.0-beta.0 <1.15.3"
+fixed_versions:
+- "1.15.3"
+affected_versions: "All versions starting from 1.15.0-beta.0 before 1.15.3"
+not_impacted: "All versions before 1.15.0-beta.0, all versions starting from 1.15.3"
+solution: "Upgrade to version 1.15.3 or above."
+urls:
+- "https://github.com/istio/istio/security/advisories/GHSA-6c6p-h79f-g6p4"
+- "https://github.com/istio/istio/commit/346260e5115e9fbc65ba8a559bc686e6ca046a32"
+- "https://github.com/istio/istio/commit/9a643e270421560afb2630e00f76d46a55499df9"
+- "https://istio.io/latest/news/releases/1.15.x/announcing-1.15.3/"
+- "https://github.com/advisories/GHSA-6c6p-h79f-g6p4"
+uuid: "1e27f2c5-56bb-4141-b1ae-be8cd6667778"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

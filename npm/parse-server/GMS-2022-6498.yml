@@ -1,0 +1,34 @@
+---
+identifier: "GMS-2022-6498"
+identifiers:
+- "GHSA-prm5-8g2m-24gg"
+- "GMS-2022-6498"
+- "CVE-2022-39396"
+package_slug: "npm/parse-server"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in parse-server."
+date: "2022-11-09"
+pubdate: "2022-11-08"
+affected_range: "<4.10.18||>=5.0.0 <5.3.1"
+fixed_versions:
+- "4.10.18"
+- "5.3.1"
+affected_versions: "All versions before 4.10.18, all versions starting from 5.0.0
+  before 5.3.1"
+not_impacted: "All versions starting from 4.10.18 before 5.0.0, all versions starting
+  from 5.3.1"
+solution: "Upgrade to versions 4.10.18, 5.3.1 or above."
+urls:
+- "https://github.com/parse-community/parse-server/security/advisories/GHSA-prm5-8g2m-24gg"
+- "https://github.com/parse-community/parse-server/pull/8295"
+- "https://github.com/parse-community/parse-server/pull/8296"
+- "https://github.com/parse-community/parse-server/releases/tag/4.10.18"
+- "https://github.com/parse-community/parse-server/releases/tag/5.3.1"
+- "https://github.com/advisories/GHSA-prm5-8g2m-24gg"
+uuid: "9c8690a3-4af9-41a0-a65a-29bacbf8d620"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"
