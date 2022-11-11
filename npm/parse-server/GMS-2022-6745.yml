@@ -1,0 +1,35 @@
+---
+identifier: "GMS-2022-6745"
+identifiers:
+- "GHSA-93vw-8fm5-p2jf"
+- "GMS-2022-6745"
+- "CVE-2022-41879"
+package_slug: "npm/parse-server"
+title: "Parse Server is vulnerable to Prototype Pollution via Cloud Code Webhooks"
+description: "A compromised Parse Server Cloud Code Webhook target endpoint allows 
+  an attacker to use prototype pollution to bypass the Parse Server 
+  `requestKeywordDenylist` option."
+date: "2022-11-10"
+pubdate: "2022-11-10"
+affected_range: "<4.10.20||>=5.0.0 <5.3.3"
+fixed_versions:
+- "4.10.20"
+- "5.3.3"
+affected_versions: "All versions before 4.10.20, all versions starting from 5.0.0
+  before 5.3.3"
+not_impacted: "All versions starting from 4.10.20 before 5.0.0, all versions starting
+  from 5.3.3"
+solution: "Upgrade to versions 4.10.20, 5.3.3 or above."
+urls:
+- "https://github.com/parse-community/parse-server/security/advisories/GHSA-93vw-8fm5-p2jf"
+- "https://github.com/parse-community/parse-server/pull/8305"
+- "https://github.com/parse-community/parse-server/pull/8306"
+- "https://github.com/parse-community/parse-server/commit/60c5a73d257e0d536056b38bdafef8b7130524d8"
+- "https://github.com/parse-community/parse-server/commit/6c63f04ba37174021082a5b5c4ba1556dcc954f4"
+- "https://github.com/parse-community/parse-server/releases/tag/4.10.20"
+- "https://github.com/parse-community/parse-server/releases/tag/5.3.3"
+- "https://github.com/advisories/GHSA-93vw-8fm5-p2jf"
+uuid: "e661eed8-b87d-4f38-b231-6e3f22620513"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
