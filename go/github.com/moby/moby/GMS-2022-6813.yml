@@ -1,0 +1,29 @@
+---
+identifier: "GMS-2022-6813"
+identifiers:
+- "GHSA-vp35-85q5-9f25"
+- "GMS-2022-6813"
+package_slug: "go/github.com/moby/moby"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in github.com/moby/moby."
+date: "2022-11-11"
+pubdate: "2022-11-11"
+affected_range: "<=20.10.19"
+fixed_versions:
+- "20.10.20"
+affected_versions: "All versions up to 20.10.19"
+not_impacted: "All versions after 20.10.19"
+solution: "Upgrade to version 20.10.20 or above."
+urls:
+- "https://github.com/moby/moby/security/advisories/GHSA-vp35-85q5-9f25"
+- "https://github.blog/2022-10-17-git-security-vulnerabilities-announced/"
+- "https://github.com/moby/moby/releases/tag/v20.10.20"
+- "https://lore.kernel.org/git/xmqq4jw1uku5.fsf@gitster.g/T/#u"
+- "https://github.com/advisories/GHSA-vp35-85q5-9f25"
+uuid: "40ea1dfc-fb21-4f57-a539-8c70f6d01014"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

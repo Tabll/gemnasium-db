@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2022-6762"
+identifiers:
+- "GHSA-7644-cxp8-h23r"
+- "GMS-2022-6762"
+package_slug: "packagist/ibexa/admin-ui"
+title: "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+description: "Improper Neutralization of Input During Web Page Generation ('Cross-site
+  Scripting') in ibexa/admin-ui."
+date: "2022-11-10"
+pubdate: "2022-11-10"
+affected_range: ">=4.2.0,<4.2.3"
+fixed_versions:
+- "4.2.3"
+affected_versions: "All versions starting from 4.2.0 before 4.2.3"
+not_impacted: "All versions before 4.2.0, all versions starting from 4.2.3"
+solution: "Upgrade to version 4.2.3 or above."
+urls:
+- "https://github.com/ibexa/admin-ui/security/advisories/GHSA-7644-cxp8-h23r"
+- "https://developers.ibexa.co/security-advisories/ibexa-sa-2022-009-critical-vulnerabilities-in-graphql-role-assignment-ct-editing-and-drafts-tooltips"
+- "https://github.com/advisories/GHSA-7644-cxp8-h23r"
+uuid: "f77b9b17-13cc-4c32-8431-2983310d80da"
+cwe_ids:
+- "CWE-1035"
+- "CWE-79"
+- "CWE-937"

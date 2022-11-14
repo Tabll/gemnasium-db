@@ -1,0 +1,31 @@
+---
+identifier: "GMS-2022-6760"
+identifiers:
+- "GHSA-446q-xxg5-3vhh"
+- "GMS-2022-6760"
+package_slug: "packagist/ezsystems/repository-forms"
+title: "eZ Platform users with the Company admin role can assign any role to any user"
+description: "Critical severity. Users with the Company admin role (introduced by
+  the company account feature in v4) can assign any role to any user. This also applies
+  to any other user that has the role / assign policy. Any subtree limitation in place
+  does not have any effect.\n\nThe role / assign policy is typically only given to
+  administrators, which limits the scope in most cases, but please verify who has
+  this policy in your installaton. The fix ensures that subtree limitations are working
+  as intended."
+date: "2022-11-10"
+pubdate: "2022-11-10"
+affected_range: ">=2.5.0,<2.5.15"
+fixed_versions:
+- "2.5.15"
+affected_versions: "All versions starting from 2.5.0 before 2.5.15"
+not_impacted: "All versions before 2.5.0, all versions starting from 2.5.15"
+solution: "Upgrade to version 2.5.15 or above."
+urls:
+- "https://github.com/ezsystems/repository-forms/security/advisories/GHSA-446q-xxg5-3vhh"
+- "https://github.com/ezsystems/repository-forms/commit/cac51487f8a10e48448399bedb45a519874f1006"
+- "https://developers.ibexa.co/security-advisories/ibexa-sa-2022-009-critical-vulnerabilities-in-graphql-role-assignment-ct-editing-and-drafts-tooltips"
+- "https://github.com/advisories/GHSA-446q-xxg5-3vhh"
+uuid: "d400225c-0b38-4593-b14d-075ec1e8c52a"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

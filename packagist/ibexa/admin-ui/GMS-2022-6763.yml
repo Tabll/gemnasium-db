@@ -1,0 +1,31 @@
+---
+identifier: "GMS-2022-6763"
+identifiers:
+- "GHSA-g6jc-xrc3-4wwq"
+- "GMS-2022-6763"
+package_slug: "packagist/ibexa/admin-ui"
+title: "Ibexa DXP users with the Company admin role can assign any role to any user"
+description: "Critical severity. Users with the Company admin role (introduced by
+  the company account feature in v4) can assign any role to any user. This also applies
+  to any other user that has the role / assign policy. Any subtree limitation in place
+  does not have any effect.\n\nThe role / assign policy is typically only given to
+  administrators, which limits the scope in most cases, but please verify who has
+  this policy in your installaton. The fix ensures that subtree limitations are working
+  as intended."
+date: "2022-11-10"
+pubdate: "2022-11-10"
+affected_range: ">=4.2.0,<4.2.3"
+fixed_versions:
+- "4.2.3"
+affected_versions: "All versions starting from 4.2.0 before 4.2.3"
+not_impacted: "All versions before 4.2.0, all versions starting from 4.2.3"
+solution: "Upgrade to version 4.2.3 or above."
+urls:
+- "https://github.com/ibexa/admin-ui/security/advisories/GHSA-g6jc-xrc3-4wwq"
+- "https://github.com/ibexa/admin-ui/commit/e34abb0cf4e463ef86a8bda907496a8dd9967807"
+- "https://developers.ibexa.co/security-advisories/ibexa-sa-2022-009-critical-vulnerabilities-in-graphql-role-assignment-ct-editing-and-drafts-tooltips"
+- "https://github.com/advisories/GHSA-g6jc-xrc3-4wwq"
+uuid: "3f31f0b4-0163-4360-a032-5c80e5814681"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

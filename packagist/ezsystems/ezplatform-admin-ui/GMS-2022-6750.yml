@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2022-6750"
+identifiers:
+- "GHSA-58h5-h554-429q"
+- "GMS-2022-6750"
+package_slug: "packagist/ezsystems/ezplatform-admin-ui"
+title: "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+description: "Improper Neutralization of Input During Web Page Generation ('Cross-site
+  Scripting') in ezsystems/ezplatform-admin-ui."
+date: "2022-11-10"
+pubdate: "2022-11-10"
+affected_range: ">=2.3.0,<2.3.26"
+fixed_versions:
+- "2.3.26"
+affected_versions: "All versions starting from 2.3.0 before 2.3.26"
+not_impacted: "All versions before 2.3.0, all versions starting from 2.3.26"
+solution: "Upgrade to version 2.3.26 or above."
+urls:
+- "https://github.com/ezsystems/ezplatform-admin-ui/security/advisories/GHSA-58h5-h554-429q"
+- "https://github.com/ezsystems/ezplatform-admin-ui/commit/29e156a7bbecca5abd946c99546a261679587d29"
+- "https://developers.ibexa.co/security-advisories/ibexa-sa-2022-009-critical-vulnerabilities-in-graphql-role-assignment-ct-editing-and-drafts-tooltips"
+- "https://github.com/advisories/GHSA-58h5-h554-429q"
+uuid: "bd8714a3-db89-41e8-b8c7-774040298c1d"
+cwe_ids:
+- "CWE-1035"
+- "CWE-79"
+- "CWE-937"
