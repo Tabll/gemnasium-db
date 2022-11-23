@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2022-6914"
+identifiers:
+- "GHSA-vqp6-rc3h-83cp"
+- "GMS-2022-6914"
+- "CVE-2022-41924"
+package_slug: "go/tailscale/tailscale.com/cmd"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in tailscale/tailscale.com/cmd."
+date: "2022-11-21"
+pubdate: "2022-11-21"
+affected_range: "<1.32.3"
+fixed_versions:
+- "1.32.3"
+affected_versions: "All versions before 1.32.3"
+not_impacted: "All versions starting from 1.32.3"
+solution: "Upgrade to version 1.32.3 or above."
+urls:
+- "https://github.com/tailscale/tailscale/security/advisories/GHSA-vqp6-rc3h-83cp"
+- "https://github.com/advisories/GHSA-vqp6-rc3h-83cp"
+uuid: "1038c408-631c-4541-ae5d-83144a6fdbb0"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

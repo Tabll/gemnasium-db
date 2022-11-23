@@ -1,0 +1,30 @@
+---
+identifier: "GMS-2022-6969"
+identifiers:
+- "GHSA-gpv5-rp6w-58r8"
+- "GMS-2022-6969"
+package_slug: "nuget/Akka"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in Akka."
+date: "2022-11-22"
+pubdate: "2022-11-22"
+affected_range: "(,1.4.46),[1.5.0-alpha1,1.5.0-alpha3)"
+fixed_versions:
+- "1.4.46"
+- "1.5.0-alpha3"
+affected_versions: "All versions before 1.4.46, all versions after 1.5.0-alpha1 before
+  1.5.0-alpha3"
+not_impacted: "All versions starting from 1.4.46 up to 1.5.0-alpha1, all versions
+  starting from 1.5.0-alpha3"
+solution: "Upgrade to versions 1.4.46, 1.5.0-alpha3 or above. *Note*: 1.5.0-alpha3
+  may be an unstable version. Use caution."
+urls:
+- "https://github.com/akkadotnet/akka.net/security/advisories/GHSA-gpv5-rp6w-58r8"
+- "https://github.com/advisories/GHSA-gpv5-rp6w-58r8"
+uuid: "25ee8f7a-0c87-408d-ace9-fa6341f4f821"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

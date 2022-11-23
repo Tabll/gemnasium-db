@@ -1,0 +1,45 @@
+---
+identifier: "GMS-2022-6878"
+identifiers:
+- "GHSA-6cqj-6969-p57x"
+- "GMS-2022-6878"
+- "CVE-2022-39199"
+package_slug: "go/github.com/codenotary/immudb/pkg/client"
+title: "Lack of proper validation of server UUID can be used by the server to trick
+  the client to accept invalid proofs"
+description: "### Impact\n\nimmudb client SDKs use server's UUID to distinguish between
+  different server instance so that the client can connect to different immudb instances
+  and keep the state for multiple servers. SDK does not validate this uuid and can
+  accept any value reported by the server. A malicious server can change the reported
+  UUID tricking the client to treat it as a different server thus accepting a state
+  completely irrelevant to the one previously retrieved from the server.\n\n### Patches\n\nThe
+  following Go SDK versions are not vulnerable\n\n| **SDK** | **Version** |\n|-------|------------|\n|
+  [go](pkg.go.dev/github.com/codenotary/immudb/pkg/client) | 1.4.1 |\n\n### Workarounds\n\nWhen
+  initializing an immudb client object, a custom state handler can be used to store
+  the state. Providing custom implementation that ignores the server UUID can be used
+  to ensure that even if the server changes the UUID, client will still consider it
+  to be the same server.\n\n### For more information\n\nIf you have any questions
+  or comments about this advisory:\n\n* Open a discussion in [immudb Discussions](https://github.com/codenotary/immudb/discussions/new)\n*
+  Email us at [immudb-security@codenotary.com](mailto:immudb-security@codenotary.com)\n"
+date: "2022-11-21"
+pubdate: "2022-11-21"
+affected_range: "<v1.4.1"
+fixed_versions:
+- "v1.4.1"
+affected_versions: "All versions before 1.4.1"
+not_impacted: "All versions starting from 1.4.1"
+solution: "Upgrade to version 1.4.1 or above."
+urls:
+- "https://github.com/codenotary/immudb/security/advisories/GHSA-6cqj-6969-p57x"
+- "https://github.com/advisories/GHSA-6cqj-6969-p57x"
+uuid: "9541905d-c6d4-4321-b930-2c56f2e504cf"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
+versions:
+- number: "v1.4.1"
+  commit:
+    tags:
+    - "v1.4.1"
+    sha: "ad7623ce74bb3257d78af75941d494883591141a"
+    timestamp: "20221121134825"
