@@ -12,12 +12,11 @@ description: "`sweetalert2` versions 8.19.1 and up until 9.0.0 is vulnerable to 
   the package until the maintainer releases a fix."
 date: "2022-11-23"
 pubdate: "2022-11-23"
-affected_range: ">=8.19.1 <9.0.0"
-fixed_versions:
-- "9.0.0"
-affected_versions: "All versions starting from 8.19.1 before 9.0.0"
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "All versions before 0"
 not_impacted: ""
-solution: "Upgrade to version 9.0.0 or above."
+solution: "Unfortunately, there is no solution available yet."
 urls:
 - "https://github.com/sweetalert2/sweetalert2/releases/tag/v11.4.9"
 - "https://www.npmjs.com/package/sweetalert2"

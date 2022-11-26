@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2022-7288"
+identifiers:
+- "GHSA-qq6h-5g6j-q3cm"
+- "GMS-2022-7288"
+package_slug: "npm/sweetalert2"
+title: "sweetalert2 v11.4.9 and above contains hidden functionality"
+description: "`sweetalert2` versions 11.4.9 and above is vulnerable to hidden functionality
+  that was introduced by the maintainer. The package outputs audio and/or video messages
+  that do not pertain to the functionality of the package and is not included in versions
+  11.0.0 - 11.4.8.\n\n### Workaround\nUse a version 11.0.0 - 11.4.8 of the package
+  until the maintainer releases a fix."
+date: "2022-11-23"
+pubdate: "2022-11-23"
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "All versions before 0"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/sweetalert2/sweetalert2/releases/tag/v11.4.9"
+- "https://www.npmjs.com/package/sweetalert2"
+- "https://github.com/advisories/GHSA-qq6h-5g6j-q3cm"
+uuid: "d2f08048-68f4-4807-8bd4-289d091b9947"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
