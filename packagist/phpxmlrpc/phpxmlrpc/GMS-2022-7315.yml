@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2022-7315"
+identifiers:
+- "GHSA-3fgr-xjr6-xqm8"
+- "GMS-2022-7315"
+package_slug: "packagist/phpxmlrpc/phpxmlrpc"
+title: "code injection in phpxmlrpc/phpxmlrpc"
+description: "code injection in `Wrapper::buildClientWrapperCode` via manipulation
+  of the `$client` argument. It was possible to force the client to access local files
+  or connect to undesired urls instead of the intended target server's url."
+date: "2022-11-28"
+pubdate: "2022-11-28"
+affected_range: "<4.9.0"
+fixed_versions:
+- "4.9.0"
+affected_versions: "All versions before 4.9.0"
+not_impacted: "All versions starting from 4.9.0"
+solution: "Upgrade to version 4.9.0 or above."
+urls:
+- "https://github.com/gggeek/phpxmlrpc/issues/80"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/phpxmlrpc/phpxmlrpc/2022-11-28-2.yaml"
+- "https://github.com/gggeek/phpxmlrpc/releases/tag/4.9.0"
+- "https://github.com/advisories/GHSA-3fgr-xjr6-xqm8"
+uuid: "ebc4bf27-47bc-4eaf-9750-759c40f8eb64"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

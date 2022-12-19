@@ -11,7 +11,7 @@ description: "Newtonsoft.Json prior to version 13.0.1 is vulnerable to Insecure 
   (DoS), and it is exploitable when an attacker sends 5 requests that cause SOE in
   time frame of 5 minutes. This vulnerability affects Internet Information Services
   (IIS) Applications."
-date: "2022-06-22"
+date: "2022-12-08"
 pubdate: "2022-06-22"
 affected_range: "(,13.0.1)"
 fixed_versions:
@@ -30,4 +30,5 @@ urls:
 uuid: "6003dc9e-b6ce-4232-93a7-117ec2caa845"
 cwe_ids:
 - "CWE-1035"
+- "CWE-78"
 - "CWE-937"

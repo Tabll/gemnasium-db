@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2022-8299"
+identifiers:
+- "GHSA-9h9g-93gc-623h"
+- "GMS-2022-8299"
+- "CVE-2022-23519"
+package_slug: "gem/rails-html-sanitizer"
+title: "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+description: "Improper Neutralization of Input During Web Page Generation ('Cross-site
+  Scripting') in rails-html-sanitizer."
+date: "2022-12-13"
+pubdate: "2022-12-13"
+affected_range: "<1.4.4"
+fixed_versions:
+- "1.4.4"
+affected_versions: "All versions before 1.4.4"
+not_impacted: "All versions starting from 1.4.4"
+solution: "Upgrade to version 1.4.4 or above."
+urls:
+- "https://github.com/rails/rails-html-sanitizer/security/advisories/GHSA-9h9g-93gc-623h"
+- "https://hackerone.com/reports/1656627"
+- "https://github.com/advisories/GHSA-9h9g-93gc-623h"
+uuid: "3579ccc6-601e-412d-9f40-02327e052d2d"
+cwe_ids:
+- "CWE-1035"
+- "CWE-79"
+- "CWE-937"

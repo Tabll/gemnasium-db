@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2022-7821"
+identifiers:
+- "GHSA-78m5-jpmf-ch7v"
+- "GMS-2022-7821"
+package_slug: "pypi/guarddog"
+title: "GuardDog vulnerable to arbitrary file write when scanning a specially-crafted
+  remote PyPI package"
+description: "Extracting files using `shutil.unpack_archive()` from a potentially malicious 
+  tarball without validating that the destination file path is within the intended 
+  destination directory can cause files outside the destination directory to be overwritten."
+date: "2022-12-05"
+pubdate: "2022-12-05"
+affected_range: "<=0.1.7"
+fixed_versions:
+- "0.1.8"
+affected_versions: "All versions up to 0.1.7"
+not_impacted: "All versions after 0.1.7"
+solution: "Upgrade to version 0.1.8 or above."
+urls:
+- "https://github.com/DataDog/guarddog/security/advisories/GHSA-78m5-jpmf-ch7v"
+- "https://github.com/DataDog/guarddog/commit/37c7d0767ba28f4df46117d478f97652594c491c"
+- "https://github.com/DataDog/guarddog/blob/a1d064ceb09d39bb28deb6972bc0a278756ea91f/guarddog/scanners/package_scanner.py#L153..158"
+- "https://github.com/advisories/GHSA-78m5-jpmf-ch7v"
+uuid: "ddeb82be-5d36-49bb-bf89-a19d7b7f0169"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

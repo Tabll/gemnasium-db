@@ -67,6 +67,7 @@ contributions.
 | @captncraig    | !17282                |
 | @dmitriylewen  | #206                  |
 | @u808595       | #209                  |
+| @vanschelven   | #210                  |
 
 ## Directory structure
 
