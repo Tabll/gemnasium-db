@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2022-8623"
+identifiers:
+- "GHSA-m3cq-xcx9-3gvm"
+- "GMS-2022-8623"
+package_slug: "go/github.com/kyverno/kyverno"
+title: "Bypass of verifyImages rule possible with malicious proxy/registry"
+description: "Users of Kyverno on versions 1.8.3 or 1.8.4 who use `verifyImages`
+  rules to verify container image signatures, and do not prevent use of unknown registries."
+date: "2022-12-21"
+pubdate: "2022-12-21"
+affected_range: ">=1.8.3 <=1.8.4"
+fixed_versions:
+- "1.8.5"
+affected_versions: "All versions starting from 1.8.3 up to 1.8.4"
+not_impacted: "All versions before 1.8.3, all versions after 1.8.4"
+solution: "Upgrade to version 1.8.5 or above."
+urls:
+- "https://github.com/kyverno/kyverno/security/advisories/GHSA-m3cq-xcx9-3gvm"
+- "https://github.com/kyverno/kyverno/pull/5713"
+- "https://github.com/kyverno/kyverno/releases/tag/v1.8.5"
+- "https://kyverno.io/policies/best-practices/restrict_image_registries/restrict_image_registries/"
+- "https://github.com/advisories/GHSA-m3cq-xcx9-3gvm"
+uuid: "056c7934-0a62-4b4c-a0f5-8201e114b22e"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
+...
