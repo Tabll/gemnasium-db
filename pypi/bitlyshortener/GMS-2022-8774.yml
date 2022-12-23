@@ -1,0 +1,23 @@
+---
+identifier: "GMS-2022-8774"
+identifiers:
+- "GHSA-ggrh-grj3-vfvw"
+- "GMS-2022-8774"
+package_slug: "pypi/bitlyshortener"
+title: "Package discontinued because Bitly lowered the free quota"
+description: "False positive"
+date: "2022-11-28"
+pubdate: "2022-11-28"
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "All versions up to 0.6.3"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/impredicative/bitlyshortener/security/advisories/GHSA-ggrh-grj3-vfvw"
+- "https://github.com/advisories/GHSA-ggrh-grj3-vfvw"
+uuid: "e41dd810-6bc0-47a7-a665-25244a3604c7"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
+...
