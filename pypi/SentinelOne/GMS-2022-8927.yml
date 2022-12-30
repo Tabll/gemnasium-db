@@ -12,9 +12,9 @@ description: "In December 2022, threat actors impersonated SentinelOne by upload
   The packages have since been taken down from PyPI."
 date: "2022-12-27"
 pubdate: "2022-12-27"
-affected_range: ">=1.0.0,<=1.2.1"
+affected_range: "==1.0.0"
 fixed_versions: []
-affected_versions: "All versions starting from 1.0.0 up to 1.2.1"
+affected_versions: "Version 1.0.0"
 not_impacted: ""
 solution: "Unfortunately, there is no solution available yet."
 urls:
