@@ -1,0 +1,37 @@
+---
+identifier: "GMS-2022-9213"
+identifiers:
+- "GHSA-q2fj-6h62-59m2"
+- "GMS-2022-9213"
+package_slug: "maven/io.apiman/apiman-distro-vertx"
+title: "Apiman Vert.x Gateway has Transitive Hazelcast connection caching issue"
+description: "### Impact\n\nIf you are using the **Apiman Vert.x Gateway** prior to
+  Apiman 3.0.0.Final, a connection caching issue in Hazelcast could allow an unauthenticated,
+  remote attacker to access and manipulate data in the cluster with another authenticated
+  connection's identity.\n\nHazelcast is a transitive dependency of the Apiman Vert.x
+  Gateway.\n\nThe precise risk is difficult to quantify at this juncture as plugins
+  deployed by users may make use of Hazelcast in a different manner to the main Apiman
+  codebase.\n\nIf any of your custom Apiman plugins specify Hazelcast dependencies,
+  you should also bump these versions. \n\nHint: an easy way to track Apiman dependency
+  versions is to use `apiman-parent`.\n\nIf you use the Apiman Tomcat or WildFly Gateway
+  this does not affect you.\n\n### Patches\n\nUpgrade to **Apiman 3.0.0.Final or later**.\n\nIf
+  you are using an older version of Apiman and need to remain on that version, contact
+  to your Apiman support provider for advice/long-term support.\n\n### Workarounds\n\nNone
+  (other than doing your own build).\n\n### References\n\n* https://github.com/advisories/GHSA-c5hg-mr8r-f6jp"
+date: "2022-12-30"
+pubdate: "2022-12-30"
+affected_range: "(,3.0.0.Final)"
+fixed_versions:
+- "3.0.0.Final"
+affected_versions: "All versions before 3.0.0.final"
+not_impacted: "All versions starting from 3.0.0.final"
+solution: "Upgrade to version 3.0.0.Final or above."
+urls:
+- "https://github.com/apiman/apiman/security/advisories/GHSA-q2fj-6h62-59m2"
+- "https://github.com/advisories/GHSA-c5hg-mr8r-f6jp"
+- "https://support.hazelcast.com/s/article/Security-Advisory-for-CVE-2022-36437"
+- "https://github.com/advisories/GHSA-q2fj-6h62-59m2"
+uuid: "3d279bc8-9a1c-484e-bd8b-251c409ec9f6"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
