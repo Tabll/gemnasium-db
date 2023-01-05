@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2023-1"
+identifiers:
+- "GHSA-5pq7-52mg-hr42"
+- "GMS-2023-1"
+package_slug: "gem/httparty"
+title: "Improper Neutralization"
+description: "Improper Neutralization in httparty."
+date: "2023-01-03"
+pubdate: "2023-01-03"
+affected_range: "<=0.20.0"
+fixed_versions:
+- "0.21.0"
+affected_versions: "All versions up to 0.20.0"
+not_impacted: "All versions after 0.20.0"
+solution: "Upgrade to version 0.21.0 or above."
+urls:
+- "https://github.com/jnunemaker/httparty/security/advisories/GHSA-5pq7-52mg-hr42"
+- "https://github.com/jnunemaker/httparty/commit/cdb45a678c43e44570b4e73f84b1abeb5ec22b8e"
+- "https://github.com/jnunemaker/httparty/blob/4416141d37fd71bdba4f37589ec265f55aa446ce/lib/httparty/request/body.rb#L43"
+- "https://github.com/advisories/GHSA-5pq7-52mg-hr42"
+uuid: "4697e10a-cbe0-4805-89a6-8b5c9fc1487e"
+cwe_ids:
+- "CWE-1035"
+- "CWE-707"
+- "CWE-937"
