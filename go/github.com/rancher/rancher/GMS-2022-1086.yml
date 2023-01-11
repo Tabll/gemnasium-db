@@ -18,12 +18,12 @@ description: "This vulnerability only affects customers using Fleet for continuo
   git repo due to a misconfigured URL. The exposed SSH key is logged in base64 format
   as a query parameter together with the git URL. The credentials can be seen in Rancher
   UI and in Fleet's deployment pod logs."
-date: "2022-05-04"
+date: "2023-01-07"
 pubdate: "2022-04-27"
-affected_range: "<v2.5.13 || >=v2.6.0 <v2.6.4"
+affected_range: "<2.5.13||>=2.6.0 <2.6.4"
 fixed_versions:
-- "v2.5.13"
-- "v2.6.4"
+- "2.5.13"
+- "2.6.4"
 affected_versions: "All versions before 2.5.13, all versions starting from 2.6.0 before
   2.6.4"
 not_impacted: "All versions starting from 2.5.13 before 2.6.0, all versions starting
@@ -36,28 +36,3 @@ uuid: "0a50dbb7-64cd-47da-b5c8-c4acc51334c4"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
-versions:
-- number: "v2.6.0"
-  commit:
-    tags:
-    - "v2.6.0"
-    - "v2.6.0-rc10"
-    sha: "df2432ad895c9d6be0e47e0d6d62a4c3dc8f08e5"
-    timestamp: "20210830223634"
-- number: "v2.6.4"
-  commit:
-    tags:
-    - "v2.6.4"
-    - "v2.6.4-harvester2"
-    - "v2.6.4-harvester3"
-    - "v2.6.4-rc16"
-    - "v2.6.4-rc17"
-    sha: "4b4e29678c0bf932f8e0f79f3895952ce1739f4d"
-    timestamp: "20220331015714"
-- number: "v2.5.13"
-  commit:
-    tags:
-    - "v2.5.13"
-    - "v2.5.13-rc4"
-    sha: "7218c48a6f516b72ec4586a790b3b9f1e1fe792b"
-    timestamp: "20220415052704"

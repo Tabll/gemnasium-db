@@ -1,0 +1,31 @@
+---
+identifier: "GMS-2023-4"
+identifiers:
+- "GHSA-jxgp-jgh3-8jc8"
+- "GMS-2023-4"
+- "CVE-2023-22480"
+package_slug: "go/github.com/KubeOperator/KubeOperator"
+title: "KubeOperator allows unauthorized access to system API"
+description: "API interfaces with unauthorized access will leak sensitive information
+  via `/api/v1/clusters/kubeconfig/`"
+date: "2023-01-09"
+pubdate: "2023-01-09"
+affected_range: "<=v3.16.3"
+fixed_versions: []
+affected_versions: "All versions up to 3.16.3"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/KubeOperator/KubeOperator/security/advisories/GHSA-jxgp-jgh3-8jc8"
+- "https://github.com/advisories/GHSA-jxgp-jgh3-8jc8"
+uuid: "50ba219c-2176-4665-a5f9-c3fb4cfb4629"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
+versions:
+- number: "v3.16.3"
+  commit:
+    tags:
+    - "v3.16.3"
+    sha: "8205703d0b66ba888ef8a7da0c800037fbf2ac72"
+    timestamp: "20230105063507"

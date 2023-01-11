@@ -7,7 +7,7 @@ package_slug: "go/github.com/projectdiscovery/interactsh"
 title: "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
 description: "Improper Neutralization of Input During Web Page Generation ('Cross-site
   Scripting') in github.com/projectdiscovery/interactsh."
-date: "2022-01-27"
+date: "2023-01-11"
 pubdate: "2022-01-27"
 affected_range: "<v1.0.0"
 fixed_versions:

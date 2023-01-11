@@ -10,7 +10,7 @@ description: "This vulnerability affects IBC transfers due to a security vulnera
   dubbed \"Dragonberry\" upstream in Cosmos SDK. The vulnerability could allow malicious
   attackers to compromise chain-to-chain IBC transfers. There is no vulnerability
   in the `DID/resource` modules for cheqd-node."
-date: "2022-10-18"
+date: "2023-01-07"
 pubdate: "2022-10-18"
 affected_range: "<v0.6.9"
 fixed_versions:

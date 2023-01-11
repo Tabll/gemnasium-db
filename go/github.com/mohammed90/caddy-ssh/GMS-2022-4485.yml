@@ -25,7 +25,7 @@ description: "Not invoking a call to `pam_acct_mgmt` after a call to `pam_authen
   be verified easily by creating a new user account, expiring it with `chage -E0 <username>`
   and then trying to log in with the expired credentials. Patches: This can be fixed
   by invoking a call to `pam.AcctMgmt` after a successful call to `pam.Authenticate`."
-date: "2022-09-23"
+date: "2023-01-08"
 pubdate: "2022-09-23"
 affected_range: "=v0.0.1"
 fixed_versions: []

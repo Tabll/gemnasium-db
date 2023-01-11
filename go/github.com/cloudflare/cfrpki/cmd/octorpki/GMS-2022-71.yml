@@ -9,7 +9,7 @@ description: "In the case that a malicious TAL file is parsed pointing to a repo
   that provides a malicious ROA file which octorpki downloads, it is possible to bypass
   the current directory traversal mitigation to allow writing outside of the current
   directory."
-date: "2022-02-15"
+date: "2023-01-11"
 pubdate: "2022-02-14"
 affected_range: "<=v1.4.2"
 fixed_versions: []

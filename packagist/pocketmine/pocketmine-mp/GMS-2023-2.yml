@@ -1,0 +1,32 @@
+---
+identifier: "GMS-2023-2"
+identifiers:
+- "GHSA-7m9r-rq9j-wmmh"
+- "GMS-2023-2"
+package_slug: "packagist/pocketmine/pocketmine-mp"
+title: "PocketMine-MP vulnerable to denial-of-service by sending large modal form
+  responses"
+description: "### Impact\nDue to a workaround for an old client bug (which has since
+  been fixed), very large JSON payloads in `ModalFormResponsePacket` were able to
+  cause the server to spend a significant amount of time processing the packet. Large
+  numbers of these packets were able to hog CPU time so as to prevent the server from
+  processing other connections in a timely manner.\n\n### Patches\nThe problem has
+  been addressed in 3baa5ab71214f96e6e7ab12cb9beef08118473b5 by removing the workaround
+  code.\n\n### Workarounds\nPlugins could cancel `DataPacketReceiveEvent` for this
+  packet, decode the data their way, and then call `Player->onFormSubmit()` directly,
+  bypassing the vulnerable code."
+date: "2023-01-10"
+pubdate: "2023-01-10"
+affected_range: "<4.12.5"
+fixed_versions:
+- "4.12.5"
+affected_versions: "All versions before 4.12.5"
+not_impacted: "All versions starting from 4.12.5"
+solution: "Upgrade to version 4.12.5 or above."
+urls:
+- "https://github.com/pmmp/PocketMine-MP/security/advisories/GHSA-7m9r-rq9j-wmmh"
+- "https://github.com/advisories/GHSA-7m9r-rq9j-wmmh"
+uuid: "3b86c2c9-783b-4e1e-b945-590c7a6979f5"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

@@ -11,7 +11,7 @@ description: "### Impact\n\nCoreDNS before 1.6.6 (using go DNS package < 1.1.25)
   References\n- [CVE-2019-19794](https://nvd.nist.gov/vuln/detail/CVE-2019-19794)\n\n###
   For more information\nPlease consult [our security guide](https://github.com/coredns/coredns/blob/master/.github/SECURITY.md)
   for more information regarding our security process.\n"
-date: "2022-03-01"
+date: "2023-01-11"
 pubdate: "2022-03-01"
 affected_range: "<v1.6.6"
 fixed_versions:

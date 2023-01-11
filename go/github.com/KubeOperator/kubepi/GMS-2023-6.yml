@@ -1,0 +1,38 @@
+---
+identifier: "GMS-2023-6"
+identifiers:
+- "GHSA-v4w5-r2xc-7f8h"
+- "GMS-2023-6"
+- "CVE-2023-22479"
+package_slug: "go/github.com/KubeOperator/kubepi"
+title: "KubePi session fixation attack allows an attacker to hijack a legitimate user
+  session."
+description: "### Summary\nA session fixation attack allows an attacker to hijack
+  a legitimate user session. The attack investigates a flaw in how the online application
+  handles the session ID, especially the susceptible web application.\n\n### Affected
+  Version\n<= v1.6.3\n\n### For more information\nIf you have any questions or comments
+  about this advisory, please [open an issue](https://github.com/KubeOperator/KubePi/issues).\n\nThis
+  vulnerability is reported by [sachinh09](https://huntr.dev/users/sachinh09/) from
+  [huntr.dev](https://huntr.dev/)."
+date: "2023-01-09"
+pubdate: "2023-01-09"
+affected_range: "<=v1.6.3"
+fixed_versions:
+- "v1.6.4"
+affected_versions: "All versions up to 1.6.3"
+not_impacted: "All versions after 1.6.3"
+solution: "Upgrade to version 1.6.4 or above."
+urls:
+- "https://github.com/KubeOperator/KubePi/security/advisories/GHSA-v4w5-r2xc-7f8h"
+- "https://github.com/advisories/GHSA-v4w5-r2xc-7f8h"
+uuid: "67c92aa0-253a-49a7-bbf3-f0a0fe92265a"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
+versions:
+- number: "v1.6.3"
+  commit:
+    tags:
+    - "v1.6.3"
+    sha: "eead48749050a1bc47c710acb8267211a387a85d"
+    timestamp: "20230104102835"

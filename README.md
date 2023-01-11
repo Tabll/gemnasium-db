@@ -42,7 +42,7 @@ contributions.
 | @AFDesk        | #175, #187, #188, #200   |
 | @curvedriver   | #174, #197, #199        |
 | @patrickmorton | #179, #180, #182        |
-| @blischalkcof  | #168, #185            |
+| @blischalkcof  | #168, #185, #213      |
 | @brondsem      | !1500, !1501          |
 | @thklein       | #167                  |
 | @AB-xdev       | #166                  |
@@ -68,6 +68,7 @@ contributions.
 | @dmitriylewen  | #206                  |
 | @u808595       | #209                  |
 | @vanschelven   | #210                  |
+| @opalmer       | #212                  |
 
 ## Directory structure
 

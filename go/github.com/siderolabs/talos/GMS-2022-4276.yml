@@ -18,7 +18,7 @@ description: "### Impact\nAn issue was discovered in net/netfilter/nf_tables_api
   https://www.sesin.at/2022/09/02/cve-2022-39190-linux-kernel-up-to-5-19-5-nf_tables_api-c-nft_verdict_init-denial-of-service/\n-
   https://nvd.nist.gov/vuln/detail/CVE-2022-39190\n\n### For more information\n- Email
   us at [security@siderolabs.com](mailto:security@siderolabs.com)"
-date: "2022-09-16"
+date: "2023-01-11"
 pubdate: "2022-09-16"
 affected_range: "<v1.2.0"
 fixed_versions:

@@ -8,7 +8,7 @@ title: "Improper Neutralization of Special Elements used in an OS Command ('OS C
   Injection')"
 description: "Improper Neutralization of Special Elements used in an OS Command ('OS
   Command Injection') in github.com/github/git-sizer."
-date: "2022-08-13"
+date: "2023-01-09"
 pubdate: "2022-02-15"
 affected_range: "<=v1.3.0"
 fixed_versions:
