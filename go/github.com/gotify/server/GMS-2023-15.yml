@@ -1,0 +1,41 @@
+---
+identifier: "GMS-2023-15"
+identifiers:
+- "GHSA-3244-8mff-w398"
+- "GMS-2023-15"
+package_slug: "go/github.com/gotify/server"
+title: "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+description: "Improper Neutralization of Input During Web Page Generation ('Cross-site
+  Scripting') in github.com/gotify/server."
+date: "2023-01-10"
+pubdate: "2023-01-10"
+affected_range: "<=v2.2.2"
+fixed_versions:
+- "v2.2.3"
+affected_versions: "All versions up to 2.2.2"
+not_impacted: "All versions after 2.2.2"
+solution: "Upgrade to version 2.2.3 or above."
+urls:
+- "https://github.com/gotify/server/security/advisories/GHSA-3244-8mff-w398"
+- "https://github.com/gotify/server/pull/541"
+- "https://research.securitum.com/mutation-xss-via-mathml-mutation-dompurify-2-0-17-bypass/"
+- "https://www.vidocsecurity.com/blog/hacking-swagger-ui-from-xss-to-account-takeovers/"
+- "https://github.com/advisories/GHSA-3244-8mff-w398"
+uuid: "20c77732-af63-40fc-92c3-e008797cab52"
+cwe_ids:
+- "CWE-1035"
+- "CWE-79"
+- "CWE-937"
+versions:
+- number: "v2.2.2"
+  commit:
+    tags:
+    - "v2.2.2"
+    sha: "056cd5ecb7f30d9d4feacb2e79c904c71fdbb066"
+    timestamp: "20221229120302"
+- number: "v2.2.3"
+  commit:
+    tags:
+    - "v2.2.3"
+    sha: "5852bbb4ac038bb8f060508d29f6e5288cf1b84f"
+    timestamp: "20230110174136"
