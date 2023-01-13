@@ -7,7 +7,7 @@ identifiers:
 package_slug: "go/github.com/cloudflare/cfrpki/cmd/octorpki"
 title: "Relative Path Traversal"
 description: "Relative Path Traversal in github.com/cloudflare/cfrpki/cmd/octorpki."
-date: "2022-06-25"
+date: "2023-01-12"
 pubdate: "2022-06-25"
 affected_range: "<v1.4.3"
 fixed_versions:

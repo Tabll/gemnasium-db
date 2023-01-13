@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2023-29"
+identifiers:
+- "GHSA-pgjv-jrg2-gq3v"
+- "GMS-2023-29"
+package_slug: "pypi/dompurify"
+title: "dompurify vulnerable to Cross-site Scripting"
+description: "dompurify prior to version 2.2.2 is vulnerable to cross-site scripting
+  when converting from SVG namespace."
+date: "2023-01-11"
+pubdate: "2023-01-11"
+affected_range: "<2.2.2"
+fixed_versions:
+- "2.2.2"
+affected_versions: "All versions before 2.2.2"
+not_impacted: "All versions starting from 2.2.2"
+solution: "Upgrade to version 2.2.2 or above."
+urls:
+- "https://github.com/cure53/DOMPurify/issues/482"
+- "https://github.com/cure53/DOMPurify/releases/tag/2.2.2"
+- "https://security.snyk.io/vuln/SNYK-JS-DOMPURIFY-1035544"
+- "https://github.com/advisories/GHSA-pgjv-jrg2-gq3v"
+uuid: "832c1797-1ebb-4907-82a9-2a2d1b35ee5e"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

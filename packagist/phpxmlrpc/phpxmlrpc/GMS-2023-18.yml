@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2023-18"
+identifiers:
+- "GHSA-7vcx-v65q-9wpg"
+- "GMS-2023-18"
+package_slug: "packagist/phpxmlrpc/phpxmlrpc"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in phpxmlrpc/phpxmlrpc."
+date: "2023-01-11"
+pubdate: "2023-01-11"
+affected_range: "<4.9.0"
+fixed_versions:
+- "4.9.0"
+affected_versions: "All versions before 4.9.0"
+not_impacted: "All versions starting from 4.9.0"
+solution: "Upgrade to version 4.9.0 or above."
+urls:
+- "https://github.com/gggeek/phpxmlrpc/security/advisories/GHSA-7vcx-v65q-9wpg"
+- "https://github.com/gggeek/phpxmlrpc/issues/80"
+- "https://github.com/gggeek/phpxmlrpc/commit/cf6e605e09d001ce520bfa8e7b168cfa514e663b"
+- "https://github.com/advisories/GHSA-7vcx-v65q-9wpg"
+uuid: "c19a03eb-ea65-4e0f-a692-3c7c9bfa12b0"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

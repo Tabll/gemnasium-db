@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2023-20"
+identifiers:
+- "GHSA-pxqj-xrv5-qvjf"
+- "GMS-2023-20"
+package_slug: "packagist/phpxmlrpc/phpxmlrpc"
+title: "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+description: "Improper Neutralization of Input During Web Page Generation ('Cross-site
+  Scripting') in phpxmlrpc/phpxmlrpc."
+date: "2023-01-11"
+pubdate: "2023-01-11"
+affected_range: "<4.9.2"
+fixed_versions:
+- "4.9.2"
+affected_versions: "All versions before 4.9.2"
+not_impacted: "All versions starting from 4.9.2"
+solution: "Upgrade to version 4.9.2 or above."
+urls:
+- "https://github.com/gggeek/phpxmlrpc/security/advisories/GHSA-pxqj-xrv5-qvjf"
+- "https://github.com/gggeek/phpxmlrpc/releases/tag/4.9.2"
+- "https://github.com/advisories/GHSA-pxqj-xrv5-qvjf"
+uuid: "3472fc68-6ee5-49eb-a307-599c67c42f06"
+cwe_ids:
+- "CWE-1035"
+- "CWE-79"
+- "CWE-937"

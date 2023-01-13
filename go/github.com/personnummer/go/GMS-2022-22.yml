@@ -21,7 +21,7 @@ description: "Back in min June a security vulnerability was reported to the team
   or comments about this advisory:\n* Open an issue in [Personnummer Meta](https://github.com/personnummer/meta/issues)\n*
   Email us at [Personnummer Email](mailto:security@personnummer.dev)\n\n### Credits\n\nNiklas
   Sköldmark (Medborgarskolan)"
-date: "2022-09-19"
+date: "2023-01-12"
 pubdate: "2022-02-11"
 affected_range: "<v3.0.1"
 fixed_versions:

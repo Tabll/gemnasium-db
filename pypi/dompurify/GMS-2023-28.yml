@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2023-28"
+identifiers:
+- "GHSA-h6p3-p4vx-wr8q"
+- "GMS-2023-28"
+package_slug: "pypi/dompurify"
+title: "dompurify vulnerable to Cross-site Scripting"
+description: "dompurify prior to version 2.2.3 is vulnerable to a cross-site scripting
+  problem caused by nested headlines."
+date: "2023-01-11"
+pubdate: "2023-01-11"
+affected_range: "<2.2.3"
+fixed_versions:
+- "2.2.3"
+affected_versions: "All versions before 2.2.3"
+not_impacted: "All versions starting from 2.2.3"
+solution: "Upgrade to version 2.2.3 or above."
+urls:
+- "https://github.com/cure53/DOMPurify/releases/tag/2.2.3"
+- "https://security.snyk.io/vuln/SNYK-JS-DOMPURIFY-2863266"
+- "https://www.vidocsecurity.com/blog/hacking-swagger-ui-from-xss-to-account-takeovers/"
+- "https://github.com/advisories/GHSA-h6p3-p4vx-wr8q"
+uuid: "d269bd49-b7b1-475e-9cfa-b4b0ac17e513"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

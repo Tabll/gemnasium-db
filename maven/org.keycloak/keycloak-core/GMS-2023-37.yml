@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2023-37"
+identifiers:
+- "GHSA-v436-q368-hvgg"
+- "GMS-2023-37"
+- "CVE-2023-0091"
+package_slug: "maven/org.keycloak/keycloak-core"
+title: "Keycloak has lack of validation of access token on client registrations endpoint"
+description: "When a service account with the create-client or manage-clients role
+  can use the client-registration endpoints to create/manage clients with an access
+  token.\n\nIf the access token is leaked, there is an option to revoke the specific
+  token. However, the check is not performed in client-registration endpoints."
+date: "2023-01-12"
+pubdate: "2023-01-12"
+affected_range: "(,20.0.2]"
+fixed_versions:
+- "20.0.3"
+affected_versions: "All versions up to 20.0.2"
+not_impacted: "All versions after 20.0.2"
+solution: "Upgrade to version 20.0.3 or above."
+urls:
+- "https://github.com/keycloak/keycloak/security/advisories/GHSA-v436-q368-hvgg"
+- "https://github.com/advisories/GHSA-v436-q368-hvgg"
+uuid: "7a91f54d-13b7-43a4-8271-8b28e010228c"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
