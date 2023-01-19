@@ -1,0 +1,29 @@
+---
+identifier: "GMS-2023-58"
+identifiers:
+- "GHSA-p84v-45xj-wwqj"
+- "GMS-2023-58"
+- "CVE-2023-22792"
+package_slug: "gem/actionpack"
+title: "ReDoS based DoS vulnerability in Action Dispatch"
+description: "There is a possible regular expression based DoS vulnerability in Action
+  Dispatch. Specially crafted cookies, in combination with a specially crafted 
+  `X_FORWARDED_HOST` header can cause the regular expression engine to enter a state of 
+  catastrophic backtracking. This can cause the process to use large amounts of CPU and 
+  memory, leading to a possible DoS vulnerability All users running an affected release 
+  should either upgrade or use one of the workarounds immediately."
+date: "2023-01-18"
+pubdate: "2023-01-18"
+affected_range: ">=3.0.0 <6.1.7.1"
+fixed_versions:
+- "6.1.7.1"
+affected_versions: "All versions starting from 3.0.0 before 6.1.7.1"
+not_impacted: "All versions before 3.0.0, all versions starting from 6.1.7.1"
+solution: "Upgrade to version 6.1.7.1 or above."
+urls:
+- "https://github.com/rails/rails/releases/tag/v7.0.4.1"
+- "https://github.com/advisories/GHSA-p84v-45xj-wwqj"
+uuid: "a7f44e26-c2ae-4ddb-9023-edc0a302e7d1"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

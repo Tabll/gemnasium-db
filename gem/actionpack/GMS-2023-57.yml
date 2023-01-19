@@ -1,0 +1,29 @@
+---
+identifier: "GMS-2023-57"
+identifiers:
+- "GHSA-9445-4cr6-336r"
+- "GMS-2023-57"
+- "CVE-2023-22797"
+package_slug: "gem/actionpack"
+title: "Open Redirect Vulnerability in Action Pack"
+description: "There is a vulnerability in Action Controller’s `redirect_to`. There is a possible open 
+  redirect when using the redirect_to helper with untrusted user input. Vulnerable code will look 
+  like this: `redirect_to(params[:some_param])`. Rails 7.0 introduced protection against open 
+  redirects from calling `redirect_to` with untrusted user input. In prior versions the developer 
+  was fully responsible for only providing trusted input. However the check introduced could 
+  be bypassed by a carefully crafted URL."
+date: "2023-01-18"
+pubdate: "2023-01-18"
+affected_range: ">=7.0.0 <7.0.4.1"
+fixed_versions:
+- "7.0.4.1"
+affected_versions: "All versions starting from 7.0.0 before 7.0.4.1"
+not_impacted: "All versions before 7.0.0, all versions starting from 7.0.4.1"
+solution: "Upgrade to version 7.0.4.1 or above."
+urls:
+- "https://github.com/rails/rails/releases/tag/v7.0.4.1"
+- "https://github.com/advisories/GHSA-9445-4cr6-336r"
+uuid: "1ea0f92f-5ee8-4ae3-855e-4f1a93d0b23c"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
