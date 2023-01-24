@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2023-83"
+identifiers:
+- "GHSA-q95h-cqrv-8jv5"
+- "GMS-2023-83"
+package_slug: "gem/exiftool_vendored"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in exiftool_vendored."
+date: "2023-01-20"
+pubdate: "2023-01-20"
+affected_range: "<12.25.0"
+fixed_versions:
+- "12.25.0"
+affected_versions: "All versions before 12.25.0"
+not_impacted: "All versions starting from 12.25.0"
+solution: "Upgrade to version 12.25.0 or above."
+urls:
+- "https://github.com/exiftool-rb/exiftool_vendored.rb/security/advisories/GHSA-q95h-cqrv-8jv5"
+- "https://twitter.com/wcbowling/status/1385803927321415687"
+- "https://github.com/advisories/GHSA-q95h-cqrv-8jv5"
+uuid: "6361c4e1-2459-4f82-9b1d-6f81b9aff612"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2023-68"
+identifiers:
+- "GHSA-829q-v5g8-hhxc"
+- "GMS-2023-68"
+package_slug: "packagist/cakephp/cakephp"
+title: "Cross-Site Request Forgery (CSRF)"
+description: "Cross-Site Request Forgery (CSRF) in cakephp/cakephp."
+date: "2023-01-20"
+pubdate: "2023-01-20"
+affected_range: ">=3.0.0,<3.0.4"
+fixed_versions:
+- "3.0.4"
+affected_versions: "All versions starting from 3.0.0 before 3.0.4"
+not_impacted: "All versions before 3.0.0, all versions starting from 3.0.4"
+solution: "Upgrade to version 3.0.4 or above."
+urls:
+- "https://github.com/cakephp/cakephp/commit/522ed2f1fb49b00001c1ef8815a6feda790d61dd"
+- "https://bakery.cakephp.org/2015/05/07/cakephp_3_0_4_released.html"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/cakephp/cakephp/2015-05-07.yaml"
+- "https://github.com/advisories/GHSA-829q-v5g8-hhxc"
+uuid: "5c05466f-cc28-4984-9ce9-26ef8a181a05"
+cwe_ids:
+- "CWE-1035"
+- "CWE-352"
+- "CWE-937"
