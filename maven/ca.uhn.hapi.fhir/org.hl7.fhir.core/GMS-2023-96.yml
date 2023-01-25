@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2023-96"
+identifiers:
+- "GHSA-jqh6-9574-5x22"
+- "GMS-2023-96"
+- "CVE-2023-24057"
+package_slug: "maven/ca.uhn.hapi.fhir/org.hl7.fhir.core"
+title: "Relative Path Traversal"
+description: "Relative Path Traversal in ca.uhn.hapi.fhir:org.hl7.fhir.core."
+date: "2023-01-23"
+pubdate: "2023-01-23"
+affected_range: "(,5.6.92)"
+fixed_versions:
+- "5.6.92"
+affected_versions: "All versions before 5.6.92"
+not_impacted: "All versions starting from 5.6.92"
+solution: "Upgrade to version 5.6.92 or above."
+urls:
+- "https://github.com/hapifhir/org.hl7.fhir.core/security/advisories/GHSA-jqh6-9574-5x22"
+- "https://github.com/advisories/GHSA-jqh6-9574-5x22"
+uuid: "99cd9ddd-76cb-4347-bb02-560441e6efd6"
+cwe_ids:
+- "CWE-1035"
+- "CWE-352"
+- "CWE-937"
