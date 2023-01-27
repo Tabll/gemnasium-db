@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2023-146"
+identifiers:
+- "GHSA-qrg7-hfx7-95c5"
+- "GMS-2023-146"
+- "CVE-2022-31249"
+package_slug: "go/rancher/github.com/rancher/wrangler"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in rancher/github.com/rancher/wrangler."
+date: "2023-01-25"
+pubdate: "2023-01-25"
+affected_range: "=1.0.0"
+fixed_versions:
+- "1.0.1"
+affected_versions: "Version 1.0.0"
+not_impacted: "All versions before 1.0.0, all versions after 1.0.0"
+solution: "Upgrade to version 1.0.1 or above."
+urls:
+- "https://github.com/rancher/wrangler/security/advisories/GHSA-qrg7-hfx7-95c5"
+- "https://github.com/advisories/GHSA-qrg7-hfx7-95c5"
+uuid: "777a1d9f-f3eb-4121-919c-a7aed0c070bf"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"
