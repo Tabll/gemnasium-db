@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2023-165"
+identifiers:
+- "GHSA-x477-fq37-q5wr"
+- "GMS-2023-165"
+package_slug: "go/fortio.org/proxy"
+title: "Initial debug-host handler implementation could leak information and facilitate
+  denial of service"
+description: "### Impact\nversion 1.5.0 and 1.6.0 when using the new `debug-host`
+  feature could expose unnecessary information about the host\n\n### Patches\nUse
+  1.6.1 or newer\n\n### Workarounds\nDowngrade to 1.4.0 or set `debug-host` to empty\n\n###
+  References\nhttps://github.com/fortio/proxy/pull/38\n\nQ&A https://github.com/fortio/proxy/discussions"
+date: "2023-01-27"
+pubdate: "2023-01-27"
+affected_range: ">=v1.5.0 <v1.6.1"
+fixed_versions:
+- "v1.6.1"
+affected_versions: "All versions starting from 1.5.0 before 1.6.1"
+not_impacted: "All versions before 1.5.0, all versions starting from 1.6.1"
+solution: "Upgrade to version 1.6.1 or above."
+urls:
+- "https://github.com/fortio/proxy/security/advisories/GHSA-x477-fq37-q5wr"
+- "https://github.com/fortio/proxy/pull/38"
+- "https://github.com/advisories/GHSA-x477-fq37-q5wr"
+uuid: "516c514d-dadc-4afc-911a-144246cbf977"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

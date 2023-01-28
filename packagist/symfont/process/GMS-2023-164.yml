@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2023-164"
+identifiers:
+- "GHSA-g3j5-mpp2-2fqm"
+- "GMS-2023-164"
+package_slug: "packagist/symfont/process"
+title: "symfont/process typosquatting malware spoofs symfony/process"
+description: "In September 2021, security researchers discovered a malicious Composer
+  package called `symfont/process`, a typosquat targeting users of `symfony/process`.
+  The malicious package has since been removed from Packagist."
+date: "2023-01-26"
+pubdate: "2023-01-26"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/symfont/process/2021-09-10.yaml"
+- "https://www.kernelmode.blog/typosquatting-malware-found-in-composer-repository/"
+- "https://github.com/advisories/GHSA-g3j5-mpp2-2fqm"
+uuid: "d1d8683e-b8da-421d-b90f-8edbf1801f0d"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

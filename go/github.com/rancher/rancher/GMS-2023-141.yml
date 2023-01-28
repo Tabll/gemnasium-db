@@ -6,8 +6,8 @@ identifiers:
 package_slug: "go/github.com/rancher/rancher"
 title: "Rancher generated tokens not revoked after modifications made to authentication
   provider"
-description: "This issue affects Rancher versions from 2.5.0 up to and
-  including 2.5.16, from 2.6.0 up to and including 2.6.9 and 2.7.0."
+description: "This issue affects Rancher versions from 2.5.0 up to and including 2.5.16,
+  from 2.6.0 up to and including 2.6.9 and 2.7.0."
 date: "2023-01-25"
 pubdate: "2023-01-25"
 affected_range: ">=v2.5.0 <v2.5.17 || >=v2.6.0 <v2.6.10 || >=v2.7.0 <v2.7.1"
