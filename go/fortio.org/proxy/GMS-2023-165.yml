@@ -12,9 +12,9 @@ description: "### Impact\nversion 1.5.0 and 1.6.0 when using the new `debug-host
   References\nhttps://github.com/fortio/proxy/pull/38\n\nQ&A https://github.com/fortio/proxy/discussions"
 date: "2023-01-27"
 pubdate: "2023-01-27"
-affected_range: ">=v1.5.0 <v1.6.1"
+affected_range: ">=1.5.0 <1.6.1"
 fixed_versions:
-- "v1.6.1"
+- "1.6.1"
 affected_versions: "All versions starting from 1.5.0 before 1.6.1"
 not_impacted: "All versions before 1.5.0, all versions starting from 1.6.1"
 solution: "Upgrade to version 1.6.1 or above."
