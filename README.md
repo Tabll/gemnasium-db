@@ -42,7 +42,7 @@ contributions.
 | @AFDesk        | #175, #187, #188, #200   |
 | @curvedriver   | #174, #197, #199        |
 | @patrickmorton | #179, #180, #182        |
-| @blischalkcof  | #168, #185, #213, #214      |
+| @blischalkcof  | #168, #185, #213, #214, #220      |
 | @brondsem      | !1500, !1501          |
 | @thklein       | #167                  |
 | @AB-xdev       | #166                  |
