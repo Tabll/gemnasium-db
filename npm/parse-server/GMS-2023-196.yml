@@ -1,0 +1,35 @@
+---
+identifier: "GMS-2023-196"
+identifiers:
+- "GHSA-vm5r-c87r-pf6x"
+- "GMS-2023-196"
+- "CVE-2023-22474"
+package_slug: "npm/parse-server"
+title: "Parse Server option `masterKeyIps` vulnerability to IP spoofing"
+description: "### Impact\n\nParse Server uses the request header `x-forwarded-for`
+  to determine the client IP address. If Parse Server does not run behind a proxy
+  server, then a client can set this header and Parse Server will trust the value
+  of the header. The incorrect client IP address will be used by various features
+  in Parse Server. This allows to circumvent the security mechanism of the Parse Server
+  option `masterKeyIps` by setting an allowed IP address as the `x-forwarded-for`
+  header value.\n\n### Patches\n\nThe mechanism to determine the client IP address
+  has been rewritten. The correct IP address determination now requires to set the
+  Parse Server option `trustProxy` accordingly, see the express framework's [trust
+  proxy](https://expressjs.com/en/guide/behind-proxies.html) setting.\n\n### References\n-
+  https://github.com/parse-community/parse-server/security/advisories/GHSA-vm5r-c87r-pf6x\n-
+  https://expressjs.com/en/guide/behind-proxies.html"
+date: "2023-01-31"
+pubdate: "2023-01-31"
+affected_range: "<5.4.1"
+fixed_versions:
+- "5.4.1"
+affected_versions: "All versions before 5.4.1"
+not_impacted: "All versions starting from 5.4.1"
+solution: "Upgrade to version 5.4.1 or above."
+urls:
+- "https://github.com/parse-community/parse-server/security/advisories/GHSA-vm5r-c87r-pf6x"
+- "https://github.com/advisories/GHSA-vm5r-c87r-pf6x"
+uuid: "43fe4295-cf20-4612-8135-6cbcc2e088b5"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

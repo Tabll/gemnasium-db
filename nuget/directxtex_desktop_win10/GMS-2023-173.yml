@@ -18,13 +18,14 @@ description: "### Impact\nA memory overwrite bug was reported by a security rese
   in the January 2023 or later release of DirectXTex.\n\n### Workarounds\nIf your
   code makes use of **ConvertToSinglePlane**, you can validate that the width & height
   alignment requirements are met for the input image before calling the function.\n"
-date: "2023-01-26"
+date: "2023-02-01"
 pubdate: "2023-01-26"
-affected_range: "(,2022.12.18.1]"
-fixed_versions: []
-affected_versions: "All versions up to 2022.12.18.1"
-not_impacted: ""
-solution: "Unfortunately, there is no solution available yet."
+affected_range: "(,2023.1.31.1)"
+fixed_versions:
+- "2023.1.31.1"
+affected_versions: "All versions before 2023.1.31.1"
+not_impacted: "All versions starting from 2023.1.31.1"
+solution: "Upgrade to version 2023.1.31.1 or above."
 urls:
 - "https://github.com/microsoft/DirectXTex/security/advisories/GHSA-3w9w-9833-gcpv"
 - "https://github.com/microsoft/DirectXTex/pull/307"
