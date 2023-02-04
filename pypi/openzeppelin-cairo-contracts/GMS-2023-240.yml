@@ -1,0 +1,36 @@
+---
+identifier: "GMS-2023-240"
+identifiers:
+- "GHSA-626q-v9j4-mcp4"
+- "GMS-2023-240"
+- "CVE-2023-23940"
+package_slug: "pypi/openzeppelin-cairo-contracts"
+title: "OpenZeppelin Contracts contains Improper Verification of Cryptographic Signature"
+description: "### Cause\n`is_valid_eth_signature` is missing a call to `finalize_keccak`
+  after calling `verify_eth_signature`. \n\n### Impact\nAs a result, any contract
+  using `is_valid_eth_signature` from the account library (such as the `EthAccount`
+  preset) is vulnerable to a malicious sequencer. Specifically, the malicious sequencer
+  would be able to bypass signature validation to impersonate an instance of these
+  accounts.\n\n### Risk\nIn order to exploit this vulnerability, it is required to
+  control a sequencer or prover since they're the ones executing the hints, being
+  able to inject incorrect keccak results.\n\nToday StarkWare is the only party running
+  both a prover or a sequencer, greatly reducing the risk of exploit.\n\n### Patches\nThe
+  issue has been patched in 0.6.1.\n\n### For more information\nIf you have any questions
+  or comments about this advisory:\n* Open an issue in 
+  [the Contracts for Cairo repository](https://github.com/OpenZeppelin/cairo-contracts/issues/new/choose)\n
+  * Email us at [security@openzeppelin.com](mailto:security@openzeppelin.com)"
+date: "2023-02-02"
+pubdate: "2023-02-02"
+affected_range: ">=0.2.0,<0.6.1"
+fixed_versions:
+- "0.6.1"
+affected_versions: "All versions starting from 0.2.0 before 0.6.1"
+not_impacted: "All versions before 0.2.0, all versions starting from 0.6.1"
+solution: "Upgrade to version 0.6.1 or above."
+urls:
+- "https://github.com/OpenZeppelin/cairo-contracts/security/advisories/GHSA-626q-v9j4-mcp4"
+- "https://github.com/advisories/GHSA-626q-v9j4-mcp4"
+uuid: "0fd7c895-c9d2-4bcd-949f-59a5ae4b1f3f"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
