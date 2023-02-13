@@ -16,7 +16,7 @@ description: "### Impact\nDecoding certain blocks using the go-ipld-prime versio
   that calls the defective code.\n\n### For more information\nIf you have any questions
   or comments about this advisory:\n\n* Ask in [IPFS Discord #ipld-chatter](https://discord.gg/ipfs)\n*
   Open an issue in [go-codec-dagpb](https://github.com/ipld/go-codec-dagpb)"
-date: "2023-01-11"
+date: "2023-02-09"
 pubdate: "2022-04-08"
 affected_range: "<v1.3.1"
 fixed_versions:

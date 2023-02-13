@@ -28,7 +28,7 @@ description: "The Go package `github.com/flynn/noise`, a [Noise Protocol](https:
   Brown for their collaboration on the fixes. The fixed issues are noted in the audit
   as:\n\n* UCB-02-003 Potential nonce overflow in Noise protocol\n* UCB-02-006 DoS
   due to unconditional nonce increment"
-date: "2023-01-09"
+date: "2023-02-09"
 pubdate: "2022-02-15"
 affected_range: "<v1.0.0"
 fixed_versions:

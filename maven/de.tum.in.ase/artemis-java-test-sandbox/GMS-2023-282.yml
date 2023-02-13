@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2023-282"
+identifiers:
+- "GHSA-98hq-4wmw-98w9"
+- "GMS-2023-282"
+package_slug: "maven/de.tum.in.ase/artemis-java-test-sandbox"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in de.tum.in.ase:artemis-java-test-sandbox."
+date: "2023-02-10"
+pubdate: "2023-02-10"
+affected_range: "(,1.11.2)"
+fixed_versions:
+- "1.11.2"
+affected_versions: "All versions before 1.11.2"
+not_impacted: "All versions starting from 1.11.2"
+solution: "Upgrade to version 1.11.2 or above."
+urls:
+- "https://github.com/ls1intum/Ares/security/advisories/GHSA-98hq-4wmw-98w9"
+- "https://github.com/advisories/GHSA-98hq-4wmw-98w9"
+uuid: "73aa203e-624d-4264-827b-a552fd8934f6"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"
