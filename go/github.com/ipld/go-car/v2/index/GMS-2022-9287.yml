@@ -5,12 +5,12 @@ identifiers:
 - "GMS-2022-9287"
 package_slug: "go/github.com/ipld/go-car/v2/index"
 title: "Malformed CAR panics and excessive memory usage"
-description: "Decoding CAR data from untrusted user input can cause, panics, 
-  out of bound memory access, out of memory, divide by zero, and excessive memory 
-  usage. Such panics can be triggered by intentionally malformed CARv1 data, 
-  including CARv1 data within a CARv2 container; and also CARv2 data with excessively 
-  large indexes. These vulnerabilities are not known to be exploited in the wild and 
-  were discovered primarily with the use of code fuzzing tooling."
+description: "Decoding CAR data from untrusted user input can cause, panics, out-of-bound
+  memory access, out of memory, divide by zero, and excessive memory usage. Such panics
+  can be triggered by intentionally malformed CARv1 data, including CARv1 data within
+  a CARv2 container; and also CARv2 data with excessively large indexes. These vulnerabilities
+  are not known to be exploited in the wild and were discovered primarily with the
+  use of code fuzzing tooling."
 date: "2023-02-09"
 pubdate: "2022-07-06"
 affected_range: ">=v2.0.0 <v2.4.0"
