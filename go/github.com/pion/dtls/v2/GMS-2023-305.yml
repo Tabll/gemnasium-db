@@ -1,14 +1,13 @@
 ---
-identifier: "GMS-2023-257"
+identifier: "GMS-2023-305"
 identifiers:
 - "GHSA-hxp2-xqf3-v83h"
-- "GMS-2023-257"
-package_slug: "go/github.com/pion/dtls"
-title: "Pion DTLS is vulnerable to out of bounds read via server hello"
-description: "### Impact\n\nWhen attempting to unmarshal a Server Hello request we
-  could attempt to unmarshal into a buffer that was too small. This could result in
-  a panic leading the program to crash.\n\nThis issue could be abused to cause a denial
-  of service.\n\n### Workaround\n\nNone"
+- "GMS-2023-305"
+package_slug: "go/github.com/pion/dtls/v2"
+title: "Out-of-bounds Read"
+description: "When attempting to unmarshal a Server Hello request we could attempt
+  to unmarshal into a buffer that was too small. This could result in a panic leading
+  the program to crash. This issue could be abused to cause a denial of service."
 date: "2023-02-13"
 pubdate: "2023-02-07"
 affected_range: "<v2.2.4"
@@ -20,8 +19,9 @@ solution: "Upgrade to version 2.2.4 or above."
 urls:
 - "https://github.com/pion/dtls/security/advisories/GHSA-hxp2-xqf3-v83h"
 - "https://github.com/pion/dtls/commit/7a14903448b70069fd9e02adf210ca23083c56d2"
+- "https://pkg.go.dev/vuln/GO-2023-1535"
 - "https://github.com/advisories/GHSA-hxp2-xqf3-v83h"
-uuid: "ec3adcce-9f88-4e8f-bc1f-37a006defcfa"
+uuid: "e080d997-2bb6-4705-b256-9c1df7b5de55"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"

@@ -1,14 +1,13 @@
 ---
-identifier: "GMS-2023-256"
+identifier: "GMS-2023-304"
 identifiers:
 - "GHSA-4xgv-j62q-h3rj"
-- "GMS-2023-256"
-package_slug: "go/github.com/pion/dtls"
-title: "Pion DTLS is vulnerable to panic via Hello Verify Request unmarshal"
-description: "### Impact\n\nDuring the unmarshalling of a hello verify request we
-  could try to unmarshal into too small a buffer. is could result in a panic leading
-  the program to crash.\n\nThis issue could be abused to cause a denial of service.\n\n###
-  Workaround\n\nNone, upgrade to 2.2.4\n"
+- "GMS-2023-304"
+package_slug: "go/github.com/pion/dtls/v2"
+title: "Improper Check or Handling of Exceptional Conditions"
+description: "During the unmarshalling of a hello verify request we could try to unmarshal
+  into too small a buffer. is could result in a panic leading the program to crash.
+  This issue could be abused to cause a denial of service."
 date: "2023-02-13"
 pubdate: "2023-02-07"
 affected_range: "<v2.2.4"
@@ -20,8 +19,9 @@ solution: "Upgrade to version 2.2.4 or above."
 urls:
 - "https://github.com/pion/dtls/security/advisories/GHSA-4xgv-j62q-h3rj"
 - "https://github.com/pion/dtls/commit/a50d26c5e4eed2ca87509494ffef2d2ebd22b1eb"
+- "https://pkg.go.dev/vuln/GO-2023-1534"
 - "https://github.com/advisories/GHSA-4xgv-j62q-h3rj"
-uuid: "83df9ddf-78fd-4c47-9f09-94d414ec23b4"
+uuid: "1db3f600-ffab-453a-a5b0-72c984717fd2"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"

@@ -1,0 +1,30 @@
+---
+identifier: "GMS-2023-353"
+identifiers:
+- "GHSA-74m5-2c7w-9w3x"
+- "GMS-2023-353"
+package_slug: "pypi/starlette"
+title: "MultipartParser denial of service with too many fields or files"
+description: "The MultipartParser using the package python-multipart accepts 
+  an unlimited number of multipart parts (form fields or files). Processing too 
+  many parts results in high CPU usage and high memory usage, eventually leading 
+  to an OOM process kill. This can be triggered by sending too many small form 
+  fields with no content, or too many empty files. For this to take effect 
+  application code has to; have python-multipart installed and call 
+  `request.form()` or via another framework like FastAPI, using form field 
+  parameters or UploadFile parameters, which in turn calls `request.form()`."
+date: "2023-02-14"
+pubdate: "2023-02-14"
+affected_range: "<0.25.0"
+fixed_versions:
+- "0.25.0"
+affected_versions: "All versions before 0.25.0"
+not_impacted: "All versions starting from 0.25.0"
+solution: "Upgrade to version 0.25.0 or above."
+urls:
+- "https://github.com/encode/starlette/security/advisories/GHSA-74m5-2c7w-9w3x"
+- "https://github.com/advisories/GHSA-74m5-2c7w-9w3x"
+uuid: "9e9fe64a-df87-41da-9d18-dc0b2d0e16c3"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

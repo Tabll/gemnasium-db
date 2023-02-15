@@ -15,7 +15,7 @@ description: "Out of bound memory access (OOB), out of memory (OOM) panics or ex
   excessive memory usage can be triggered by decode of intentionally malformed CARv2
   indexes, or CARv2 indexes which are larger than available system memory (i.e. parallelization
   of CARv2 decodes may increase such a vulnerability)."
-date: "2023-02-09"
+date: "2023-02-14"
 pubdate: "2022-07-06"
 affected_range: "<v0.4.0"
 fixed_versions:
