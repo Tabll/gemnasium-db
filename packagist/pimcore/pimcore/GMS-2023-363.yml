@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2023-363"
+identifiers:
+- "GHSA-76r7-h46w-463r"
+- "GMS-2023-363"
+package_slug: "packagist/pimcore/pimcore"
+title: "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+description: "Improper Neutralization of Input During Web Page Generation ('Cross-site
+  Scripting') in pimcore/pimcore."
+date: "2023-02-15"
+pubdate: "2023-02-15"
+affected_range: "<10.5.17"
+fixed_versions:
+- "10.5.17"
+affected_versions: "All versions before 10.5.17"
+not_impacted: "All versions starting from 10.5.17"
+solution: "Upgrade to version 10.5.17 or above."
+urls:
+- "https://github.com/pimcore/pimcore/security/advisories/GHSA-76r7-h46w-463r"
+- "https://github.com/advisories/GHSA-76r7-h46w-463r"
+uuid: "70994015-af9a-4a71-ab08-6cae2fb85d0e"
+cwe_ids:
+- "CWE-1035"
+- "CWE-79"
+- "CWE-937"
