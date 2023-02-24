@@ -12,7 +12,7 @@ description: "go-ipfs nodes crash when trying to import certain malformed CAR fi
   This include the corresponding HTTP RPC API v0/dag/import endpoint. An attacker
   controlling the car file passed in can also make the node allocate arbitrary sized
   buffers creating memory exhaustion attacks."
-date: "2023-01-12"
+date: "2023-02-20"
 pubdate: "2022-07-06"
 affected_range: ">=v0.5.0 <v0.13.1"
 fixed_versions:

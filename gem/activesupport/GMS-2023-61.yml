@@ -5,17 +5,17 @@ identifiers:
 - "GMS-2023-61"
 - "CVE-2023-22796"
 package_slug: "gem/activesupport"
-title: "ReDoS based DoS vulnerability in Active Support’s underscore"
+title: "Duplicate of ./gem/activesupport/CVE-2023-22796.yml"
 description: "There is a possible regular expression based DoS vulnerability in Active
-  Support. A specially crafted string passed to the underscore method can cause the 
-  regular expression engine to enter a state of catastrophic backtracking. This can cause 
-  the process to use large amounts of CPU and memory, leading to a possible DoS vulnerability.
-  This affects `String#underscore`, `ActiveSupport::Inflector.underscore`, `String#titleize`, 
-  and any other methods using these. All users running an affected release should either 
-  upgrade or use one of the workarounds immediately."
+  Support. A specially crafted string passed to the underscore method can cause the
+  regular expression engine to enter a state of catastrophic backtracking. This can
+  cause the process to use large amounts of CPU and memory, leading to a possible
+  DoS vulnerability. This affects `String#underscore`, `ActiveSupport::Inflector.underscore`,
+  `String#titleize`, and any other methods using these. All users running an affected
+  release should either upgrade or use one of the workarounds immediately."
 date: "2023-01-18"
 pubdate: "2023-01-18"
-affected_range: "<6.1.7.1||>=7.0.0 <7.0.4.1"
+affected_range: "<0"
 fixed_versions:
 - "6.1.7.1"
 - "7.0.4.1"

@@ -5,7 +5,7 @@ identifiers:
 - "GMS-2022-4384"
 - "CVE-2022-39231"
 package_slug: "npm/parse-server"
-title: "parse-server auth adapter app ID validation can be circumvented"
+title: "Duplicate of ./npm/parse-server/CVE-2022-39231.yml"
 description: "### Impact\n\nValidation of the authentication adapter app ID for _Facebook_
   and _Spotify_ may be circumvented.\n\nThis fixes a vulnerability that affects configurations
   which allow users to authenticate using the Parse Server authentication adapter
@@ -26,7 +26,7 @@ description: "### Impact\n\nValidation of the authentication adapter app ID for 
   GitHub advisory [GHSA-r657-33vp-gp22](https://github.com/parse-community/parse-server/security/advisories/GHSA-r657-33vp-gp22)"
 date: "2022-09-21"
 pubdate: "2022-09-21"
-affected_range: "<4.10.16||>=5.0.0 <5.2.7"
+affected_range: "<0"
 fixed_versions:
 - "4.10.16"
 - "5.2.7"

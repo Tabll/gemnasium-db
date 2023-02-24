@@ -1,0 +1,30 @@
+---
+identifier: "GMS-2023-418"
+identifiers:
+- "GHSA-vvpx-j8f3-3w6h"
+- "GMS-2023-418"
+- "CVE-2022-41723"
+package_slug: "go/golang.org/x/net"
+title: "Uncontrolled Resource Consumption"
+description: "A maliciously crafted HTTP/2 stream could cause excessive CPU consumption
+  in the HPACK decoder, sufficient to cause a denial of service from a small number
+  of small requests."
+date: "2023-02-17"
+pubdate: "2023-02-17"
+affected_range: "<0.7.0"
+fixed_versions:
+- "0.7.0"
+affected_versions: "All versions before 0.7.0"
+not_impacted: "All versions starting from 0.7.0"
+solution: "Upgrade to version 0.7.0 or above."
+urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2022-41723"
+- "https://go.dev/cl/468135"
+- "https://go.dev/issue/57855"
+- "https://groups.google.com/g/golang-announce/c/V0aBFqaFs_E"
+- "https://vuln.go.dev/ID/GO-2023-1571.json"
+- "https://github.com/advisories/GHSA-vvpx-j8f3-3w6h"
+uuid: "7d6041af-892c-4c2d-9edf-b379543f522d"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

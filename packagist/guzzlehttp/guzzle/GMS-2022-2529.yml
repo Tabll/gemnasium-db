@@ -5,7 +5,7 @@ identifiers:
 - "GMS-2022-2529"
 - "CVE-2022-31091"
 package_slug: "packagist/guzzlehttp/guzzle"
-title: "Change in port should be considered a change in origin"
+title: "Duplicate of ./packagist/guzzlehttp/guzzle/CVE-2022-31091.yml"
 description: "### Impact\n\n`Authorization` and `Cookie` headers on requests are sensitive
   information. On making a request which responds with a redirect to a URI with a
   different port, if we choose to follow it, we should remove the `Authorization`
@@ -25,7 +25,7 @@ description: "### Impact\n\n`Authorization` and `Cookie` headers on requests are
   [vulnerability reporting process](https://github.com/guzzle/guzzle/security/policy).\n"
 date: "2022-06-22"
 pubdate: "2022-06-21"
-affected_range: "<6.5.8||>=7.0.0,<7.4.5"
+affected_range: "<0"
 fixed_versions:
 - "6.5.8"
 - "7.4.5"

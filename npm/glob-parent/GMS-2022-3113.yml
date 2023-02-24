@@ -5,13 +5,12 @@ identifiers:
 - "GMS-2022-3113"
 - "CVE-2021-35065"
 package_slug: "npm/glob-parent"
-title: "glob-parent before 6.0.1 and 5.1.2 vulnerable to Regular Expression Denial
-  of Service (ReDoS)"
+title: "Duplicate of ./npm/glob-parent/CVE-2021-35065.yml"
 description: "glob-parent before 6.0.1 and 5.1.2 is vulnerable to Regular Expression
   Denial of Service (ReDoS). This issue is fixed in version 6.0.1 and 5.1.2."
 date: "2022-07-19"
 pubdate: "2022-07-18"
-affected_range: "<5.1.2||=6.0.0"
+affected_range: "<0"
 fixed_versions:
 - "5.1.2"
 - "6.0.1"

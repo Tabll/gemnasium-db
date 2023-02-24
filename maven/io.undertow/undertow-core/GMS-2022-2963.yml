@@ -5,13 +5,13 @@ identifiers:
 - "GMS-2022-2963"
 - "CVE-2021-3859"
 package_slug: "maven/io.undertow/undertow-core"
-title: "Undertow vulnerable to Denial of Service (DoS) attacks"
+title: "Duplicate of ./maven/io.undertow/undertow-core/CVE-2021-3859.yml"
 description: "Undertow client side invocation timeout raised when calling over HTTP2,
   this vulnerability can allow attacker to carry out denial of service (DoS) attacks
   in versions less than 2.2.15 Final."
 date: "2022-07-15"
 pubdate: "2022-07-15"
-affected_range: "(,2.2.15)"
+affected_range: "(,0)"
 fixed_versions:
 - "2.2.15"
 affected_versions: "All versions before 2.2.15"

@@ -6,7 +6,8 @@ identifiers:
 - "CVE-2023-22797"
 package_slug: "gem/actionpack"
 title: "Open Redirect Vulnerability in Action Pack"
-description: "There is a vulnerability in Action Controller’s `redirect_to`. There is a possible open 
+description: "This is a duplicate of /gem/actionpack/CVE-2023-22797.yml. 
+  There is a vulnerability in Action Controller’s `redirect_to`. There is a possible open 
   redirect when using the redirect_to helper with untrusted user input. Vulnerable code will look 
   like this: `redirect_to(params[:some_param])`. Rails 7.0 introduced protection against open 
   redirects from calling `redirect_to` with untrusted user input. In prior versions the developer 
@@ -14,7 +15,7 @@ description: "There is a vulnerability in Action Controller’s `redirect_to`. T
   be bypassed by a carefully crafted URL."
 date: "2023-01-18"
 pubdate: "2023-01-18"
-affected_range: ">=7.0.0 <7.0.4.1"
+affected_range: "<0"
 fixed_versions:
 - "7.0.4.1"
 affected_versions: "All versions starting from 7.0.0 before 7.0.4.1"

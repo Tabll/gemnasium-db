@@ -5,8 +5,7 @@ identifiers:
 - "GMS-2022-4383"
 - "CVE-2022-39225"
 package_slug: "npm/parse-server"
-title: "parse-server's session object properties can be updated by foreign user if
-  object ID is known"
+title: "Duplicate of ./npm/parse-server/CVE-2022-39225.yml"
 description: "### Impact\n\nA foreign user can write to the session object of another
   user if the session object ID is known. For example, a foreign user can assign the
   session object to their own user by writing to the `user` field and then read any
@@ -28,7 +27,7 @@ description: "### Impact\n\nA foreign user can write to the session object of an
   advisory [GHSA-6w4q-23cf-j9jp](https://github.com/parse-community/parse-server/security/advisories/GHSA-6w4q-23cf-j9jp)"
 date: "2022-09-21"
 pubdate: "2022-09-21"
-affected_range: "<4.10.15||>=5.0.0 <5.2.6"
+affected_range: "<0"
 fixed_versions:
 - "4.10.15"
 - "5.2.6"

@@ -5,13 +5,12 @@ identifiers:
 - "GMS-2022-1837"
 - "CVE-2022-31030"
 package_slug: "go/github.com/containerd/containerd"
-title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
-  Injection')"
+title: "Duplicate of ./go/github.com/containerd/containerd/CVE-2022-31030.yml"
 description: "Improper Neutralization of Special Elements used in an OS Command ('OS
   Command Injection') in github.com/containerd/containerd."
 date: "2022-06-06"
 pubdate: "2022-06-06"
-affected_range: "<v1.5.13 || >=v1.6.0 <v1.6.6"
+affected_range: "<0"
 fixed_versions:
 - "v1.5.13"
 - "v1.6.6"

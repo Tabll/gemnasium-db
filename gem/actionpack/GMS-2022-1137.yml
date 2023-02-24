@@ -5,13 +5,12 @@ identifiers:
 - "GMS-2022-1137"
 - "CVE-2022-22577"
 package_slug: "gem/actionpack"
-title: "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+title: "Duplicate of ./gem/actionpack/CVE-2022-22577.yml"
 description: "Improper Neutralization of Input During Web Page Generation ('Cross-site
   Scripting') in actionpack."
 date: "2022-04-27"
 pubdate: "2022-04-27"
-affected_range: ">=5.2.0 <=5.2.7.0||>=6.0.0 <=6.0.4.7||>=6.1.0 <=6.1.5.0||>=7.0.0
-  <=7.0.2.3"
+affected_range: "<0"
 fixed_versions:
 - "5.2.7.1"
 - "6.0.4.8"

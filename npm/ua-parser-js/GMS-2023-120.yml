@@ -5,7 +5,7 @@ identifiers:
 - "GMS-2023-120"
 - "CVE-2022-25927"
 package_slug: "npm/ua-parser-js"
-title: "ReDoS Vulnerability in ua-parser-js version "
+title: "Duplicate of ./npm/ua-parser-js/CVE-2022-25927.yml"
 description: "### Description:\nA regular expression denial of service (ReDoS) vulnerability
   has been discovered in `ua-parser-js`.\n\n### Impact:\nThis vulnerability bypass
   the library's `MAX_LENGTH` input limit prevention. By crafting a very-very-long
@@ -18,7 +18,7 @@ description: "### Description:\nA regular expression denial of service (ReDoS) v
   Credits:\nThanks to @Snyk who first reported the issue."
 date: "2023-01-24"
 pubdate: "2023-01-24"
-affected_range: "<0.7.33||>=0.8.0 <1.0.33"
+affected_range: "<0"
 fixed_versions:
 - "0.7.33"
 - "1.0.33"

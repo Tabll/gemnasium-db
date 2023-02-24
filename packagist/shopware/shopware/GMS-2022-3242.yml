@@ -5,12 +5,12 @@ identifiers:
 - "GMS-2022-3242"
 - "CVE-2022-31148"
 package_slug: "packagist/shopware/shopware"
-title: "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+title: "Duplicate of ./packagist/shopware/shopware/CVE-2022-31148.yml"
 description: "Improper Neutralization of Input During Web Page Generation ('Cross-site
   Scripting') in shopware/shopware."
 date: "2022-07-27"
 pubdate: "2022-07-27"
-affected_range: ">=5.7.0,<=5.7.13"
+affected_range: "<0"
 fixed_versions:
 - "5.7.14"
 affected_versions: "All versions starting from 5.7.0 up to 5.7.13"

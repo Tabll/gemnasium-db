@@ -5,7 +5,7 @@ identifiers:
 - "CVE-2022-39280"
 - "GMS-2022-4614"
 package_slug: "pypi/dparse"
-title: "ReDoS issue in dparse"
+title: "Duplicate of ./pypi/dparse/CVE-2022-39280.yml"
 description: "dparse versions prior to 0.5.1 contain a regular expression that is
   vulnerable to ReDoS. All users parsing index server URLs with dparse are impacted
   by this vulnerability. The Patch is applied in the `0.5.2` version, all users are
@@ -14,7 +14,7 @@ description: "dparse versions prior to 0.5.1 contain a regular expression that i
   this advisory, email us at support@pyup.io"
 date: "2022-10-07"
 pubdate: "2022-09-27"
-affected_range: "<0.5.2"
+affected_range: "<0"
 fixed_versions:
 - "0.5.2"
 affected_versions: "All versions before 0.5.2"

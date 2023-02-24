@@ -5,14 +5,13 @@ identifiers:
 - "GMS-2022-1644"
 - "CVE-2022-30123"
 package_slug: "gem/rack"
-title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
-  Injection')"
-description: "Carefully crafted requests can cause shell escape sequences to be written to
-  the terminal via Rack's Lint middleware and CommonLogger middleware. These
-  escape sequences can be leveraged to possibly execute commands in the victim's terminal."
+title: "Duplicate of ./gem/rack/CVE-2022-30123.yml"
+description: "Carefully crafted requests can cause shell escape sequences to be written
+  to the terminal via Rack's Lint middleware and CommonLogger middleware. These escape
+  sequences can be leveraged to possibly execute commands in the victim's terminal."
 date: "2022-05-27"
 pubdate: "2022-05-27"
-affected_range: "<=2.0.9.0||>=2.1 <=2.1.4.0||>=2.2 <=2.2.3.0"
+affected_range: "<0"
 fixed_versions:
 - "2.0.9.1"
 - "2.1.4.1"

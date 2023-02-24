@@ -5,7 +5,7 @@ identifiers:
 - "GMS-2022-301"
 - "CVE-2022-21831"
 package_slug: "gem/activestorage"
-title: "Possible code injection vulnerability in Rails / Active Storage"
+title: "Duplicate of ./gem/activestorage/CVE-2022-21831.yml"
 description: "The Active Storage module of Rails starting with version 5.2.0 are possibly
   vulnerable to code injection. This issue was patched in versions 5.2.6.2, 6.0.4.7,
   6.1.4.7, and 7.0.2.3. To work around this issue, applications should implement a
@@ -13,8 +13,7 @@ description: "The Active Storage module of Rails starting with version 5.2.0 are
   a strict ImageMagick security policy will help mitigate this issue."
 date: "2022-03-08"
 pubdate: "2022-03-08"
-affected_range: ">=5.2.0 <=5.2.6.2||>=6.0.0 <=6.0.4.6||>=6.1.0 <=6.1.4.6||>=7.0.0
-  <=7.0.2.2"
+affected_range: "<0"
 fixed_versions:
 - "5.2.6.3"
 - "6.0.4.7"

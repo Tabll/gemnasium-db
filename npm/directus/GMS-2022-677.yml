@@ -5,7 +5,7 @@ identifiers:
 - "GMS-2022-677"
 - "CVE-2022-26969"
 package_slug: "npm/directus"
-title: "Insecure default value for CORS configuration"
+title: "Duplicate of ./npm/directus/CVE-2022-26969.yml"
 description: "### Impact\n\nThe default value for the `CORS_ENABLED` and `CORS_ORIGIN`
   configuration was set to be very permissive by default. This could lead to unauthorized
   access in uncontrolled environments when the configuration hasn't been changed.\n\n###
@@ -17,7 +17,7 @@ description: "### Impact\n\nThe default value for the `CORS_ENABLED` and `CORS_O
   Email us at [security@directus.io](mailto:security@directus.io)\n"
 date: "2022-04-06"
 pubdate: "2022-04-05"
-affected_range: "<9.7.0"
+affected_range: "<0"
 fixed_versions:
 - "9.7.0"
 affected_versions: "All versions before 9.7.0"

@@ -5,13 +5,12 @@ identifiers:
 - "GMS-2022-1446"
 - "CVE-2022-30999"
 package_slug: "packagist/fof/upload"
-title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
-  Injection')"
+title: "Duplicate of ./packagist/fof/upload/CVE-2022-30999.yml"
 description: "Improper Neutralization of Special Elements used in an OS Command ('OS
   Command Injection') in fof/upload."
 date: "2022-05-25"
 pubdate: "2022-05-25"
-affected_range: "<1.2.3"
+affected_range: "<0"
 fixed_versions:
 - "1.2.3"
 affected_versions: "All versions before 1.2.3"

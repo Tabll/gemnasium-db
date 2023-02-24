@@ -5,8 +5,7 @@ identifiers:
 - "GMS-2022-3340"
 - "CVE-2022-31177"
 package_slug: "pypi/Flask-AppBuilder"
-title: "Flask-AppBuilder before v4.1.3 allows inference of sensitive information through
-  query strings"
+title: "Duplicate of ./pypi/Flask-AppBuilder/CVE-2022-31177.yml"
 description: "### Impact\nAn authenticated Admin user could craft HTTP requests to
   filter users by their salted and hashed passwords strings. These filters could be
   made by using partial hashed password strings. The response would not include the
@@ -17,7 +16,7 @@ description: "### Impact\nAn authenticated Admin user could craft HTTP requests 
   Email us at [example email address](mailto:example@example.com)\n"
 date: "2022-07-29"
 pubdate: "2022-07-29"
-affected_range: "<4.1.3"
+affected_range: "<0"
 fixed_versions:
 - "4.1.3"
 affected_versions: "All versions before 4.1.3"

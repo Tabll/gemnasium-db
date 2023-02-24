@@ -5,7 +5,7 @@ identifiers:
 - "GMS-2023-8"
 - "CVE-2022-3145"
 package_slug: "npm/@okta/oidc-middleware"
-title: "@okta/oidc-middlewareOpen Redirect vulnerability"
+title: "Duplicate of ./npm/@okta/oidc-middleware/CVE-2022-3145.yml"
 description: "An open redirect vulnerability exists in Okta OIDC Middleware prior
   to version 5.0.0 allowing an attacker to redirect a user to an arbitrary URL.\n\n**Affected
   products and versions**\nOkta OIDC Middleware prior to version 5.0.0.\n\n**Resolution**\nThe
@@ -20,7 +20,7 @@ description: "An open redirect vulnerability exists in Okta OIDC Middleware prio
   site.\n\n**References**\nhttps://github.com/okta/okta-oidc-middleware"
 date: "2023-01-09"
 pubdate: "2023-01-09"
-affected_range: "<5.0.0"
+affected_range: "<0"
 fixed_versions:
 - "5.0.0"
 affected_versions: "All versions before 5.0.0"

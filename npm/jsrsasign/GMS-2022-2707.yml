@@ -5,11 +5,11 @@ identifiers:
 - "GMS-2022-2707"
 - "CVE-2022-25898"
 package_slug: "npm/jsrsasign"
-title: "Improper Neutralization"
+title: "Duplicate of ./npm/jsrsasign/CVE-2022-25898.yml"
 description: "Improper Neutralization in jsrsasign."
 date: "2022-06-25"
 pubdate: "2022-06-25"
-affected_range: ">=4.8.0 <10.5.25"
+affected_range: "<0"
 fixed_versions:
 - "10.5.25"
 affected_versions: "All versions starting from 4.8.0 before 10.5.25"

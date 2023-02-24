@@ -5,13 +5,12 @@ identifiers:
 - "GMS-2022-6498"
 - "CVE-2022-39396"
 package_slug: "npm/parse-server"
-title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
-  Injection')"
+title: "Duplicate of ./npm/parse-server/CVE-2022-39396.yml"
 description: "Improper Neutralization of Special Elements used in an OS Command ('OS
   Command Injection') in parse-server."
 date: "2022-11-09"
 pubdate: "2022-11-08"
-affected_range: "<4.10.18||>=5.0.0 <5.3.1"
+affected_range: "<0"
 fixed_versions:
 - "4.10.18"
 - "5.3.1"

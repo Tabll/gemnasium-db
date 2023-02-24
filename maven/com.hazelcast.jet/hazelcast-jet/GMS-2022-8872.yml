@@ -5,7 +5,7 @@ identifiers:
 - "GMS-2022-8872"
 - "CVE-2022-36437"
 package_slug: "maven/com.hazelcast.jet/hazelcast-jet"
-title: "Hazelcast connection caching"
+title: "Duplicate of ./maven/com.hazelcast.jet/hazelcast-jet/CVE-2022-36437.yml"
 description: "### Impact\nThe Connection handler in Hazelcast and Hazelcast Jet allows
   an unauthenticated, remote attacker to access and manipulate data in the cluster
   with another authenticated connection's identity.\nThe affected Hazelcast versions
@@ -17,7 +17,7 @@ description: "### Impact\nThe Connection handler in Hazelcast and Hazelcast Jet 
   lowers the exploitation risk.\n\n### References\nhttps://support.hazelcast.com/s/article/Security-Advisory-for-CVE-2022-36437\n"
 date: "2022-12-27"
 pubdate: "2022-12-27"
-affected_range: "(,4.5.3]"
+affected_range: "(,0)"
 fixed_versions:
 - "4.5.4"
 affected_versions: "All versions up to 4.5.3"

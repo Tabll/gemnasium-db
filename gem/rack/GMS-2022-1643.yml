@@ -5,13 +5,14 @@ identifiers:
 - "GMS-2022-1643"
 - "CVE-2022-30122"
 package_slug: "gem/rack"
-title: "Denial of Service Vulnerability in Rack Multipart Parsing"
-description: "Carefully crafted multipart POST requests can cause Rack's multipart parser to
-  take much longer than expected, leading to a possible denial of service
-  vulnerability. Impacted code will use Rack's multipart parser to parse multipart posts."
+title: "Duplicate of ./gem/rack/CVE-2022-30122.yml"
+description: "Carefully crafted multipart POST requests can cause Rack's multipart
+  parser to take much longer than expected, leading to a possible denial of service
+  vulnerability. Impacted code will use Rack's multipart parser to parse multipart
+  posts."
 date: "2022-05-27"
 pubdate: "2022-05-27"
-affected_range: ">=1.2 <=2.0.9.0||>=2.1 <=2.1.4.0||>=2.2 <=2.2.3.0"
+affected_range: "<0"
 fixed_versions:
 - "2.0.9.1"
 - "2.1.4.1"

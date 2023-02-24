@@ -5,8 +5,7 @@ identifiers:
 - "GMS-2022-6369"
 - "CVE-2022-39386"
 package_slug: "npm/@fastify/websocket"
-title: "fastify/websocket vulnerable to uncaught exception via crash on malformed
-  packet"
+title: "Duplicate of ./npm/@fastify/websocket/CVE-2022-39386.yml"
 description: "### Impact\n\nAny application using @fastify/websocket could crash if
   a specific, malformed packet is sent. \n\nAll versions of fastify-websocket are
   also impacted. That module is deprecated, so it will not be patched.\n\n### Patches\n\nThis
@@ -19,7 +18,7 @@ description: "### Impact\n\nAny application using @fastify/websocket could crash
   Email us at [hello@matteocollina.com](mailto:hello@matteocollina.com)\n"
 date: "2022-11-07"
 pubdate: "2022-11-07"
-affected_range: ">=5.0.0 <5.0.1||>=6.0.0 <7.1.1"
+affected_range: "<0"
 fixed_versions:
 - "5.0.1"
 - "7.1.1"

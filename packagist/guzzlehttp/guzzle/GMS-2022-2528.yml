@@ -5,7 +5,7 @@ identifiers:
 - "GMS-2022-2528"
 - "CVE-2022-31090"
 package_slug: "packagist/guzzlehttp/guzzle"
-title: "CURLOPT_HTTPAUTH option not cleared on change of origin"
+title: "Duplicate of ./packagist/guzzlehttp/guzzle/CVE-2022-31090.yml"
 description: "### Impact\n\n`Authorization` headers on requests are sensitive information.
   When using our Curl handler, it is possible to use the `CURLOPT_HTTPAUTH` option
   to specify an `Authorization` header. On making a request which responds with a
@@ -29,7 +29,7 @@ description: "### Impact\n\n`Authorization` headers on requests are sensitive in
   [vulnerability reporting process](https://github.com/guzzle/guzzle/security/policy).\n"
 date: "2022-06-22"
 pubdate: "2022-06-21"
-affected_range: "<6.5.8||>=7.0.0,<7.4.5"
+affected_range: "<0"
 fixed_versions:
 - "6.5.8"
 - "7.4.5"

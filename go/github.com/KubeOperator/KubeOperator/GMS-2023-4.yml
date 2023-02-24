@@ -5,12 +5,12 @@ identifiers:
 - "GMS-2023-4"
 - "CVE-2023-22480"
 package_slug: "go/github.com/KubeOperator/KubeOperator"
-title: "KubeOperator allows unauthorized access to system API"
+title: "Duplicate of ./go/github.com/KubeOperator/KubeOperator/CVE-2023-22480.yml"
 description: "API interfaces with unauthorized access will leak sensitive information
   via `/api/v1/clusters/kubeconfig/`"
 date: "2023-01-09"
 pubdate: "2023-01-09"
-affected_range: "<=v3.16.3"
+affected_range: "<0"
 fixed_versions: []
 affected_versions: "All versions up to 3.16.3"
 not_impacted: ""

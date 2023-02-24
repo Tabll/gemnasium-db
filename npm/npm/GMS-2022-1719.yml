@@ -5,16 +5,15 @@ identifiers:
 - "GMS-2022-1719"
 - "CVE-2022-29244"
 package_slug: "npm/npm"
-title: "Packing does not respect root-level ignore files in workspaces"
-description: "`npm pack` ignores root-level `.gitignore` & `.npmignore` file 
-  exclusion directives when run in a workspace or with a workspace flag 
-  (ie. `--workspaces`, `--workspace=<name>`). Anyone who has run `npm pack` or 
-  `npm publish` with workspaces, as of v7.9.0 & v7.13.0 respectively, may be 
-  affected and have published files into the npm registry they did not intend 
-  to include."
+title: "Duplicate of ./npm/npm/CVE-2022-29244.yml"
+description: "`npm pack` ignores root-level `.gitignore` & `.npmignore` file exclusion
+  directives when run in a workspace or with a workspace flag (ie. `--workspaces`,
+  `--workspace=<name>`). Anyone who has run `npm pack` or `npm publish` with workspaces,
+  as of v7.9.0 & v7.13.0 respectively, may be affected and have published files into
+  the npm registry they did not intend to include."
 date: "2022-06-02"
 pubdate: "2022-06-02"
-affected_range: ">=7.9.0 <8.11.0"
+affected_range: "<0"
 fixed_versions:
 - "8.11.0"
 affected_versions: "All versions starting from 7.9.0 before 8.11.0"

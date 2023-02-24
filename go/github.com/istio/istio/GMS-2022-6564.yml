@@ -5,12 +5,12 @@ identifiers:
 - "GMS-2022-6564"
 - "CVE-2022-39388"
 package_slug: "go/github.com/istio/istio"
-title: "Istio may allow identity impersonation if user has localhost access"
-description: "User can impersonate any workload identity within the service mesh if 
+title: "Duplicate of ./go/github.com/istio/istio/CVE-2022-39388.yml"
+description: "User can impersonate any workload identity within the service mesh if
   they have localhost access to the Istiod control plane."
 date: "2022-11-09"
 pubdate: "2022-11-09"
-affected_range: ">=1.15.0-beta.0 <1.15.3"
+affected_range: "<0"
 fixed_versions:
 - "1.15.3"
 affected_versions: "All versions starting from 1.15.0-beta.0 before 1.15.3"

@@ -5,13 +5,12 @@ identifiers:
 - "GMS-2022-5287"
 - "CVE-2022-39297"
 package_slug: "packagist/melisplatform/melis-cms"
-title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
-  Injection')"
+title: "Duplicate of ./packagist/melisplatform/melis-cms/CVE-2022-39297.yml"
 description: "Improper Neutralization of Special Elements used in an OS Command ('OS
   Command Injection') in melisplatform/melis-cms."
 date: "2022-10-11"
 pubdate: "2022-10-11"
-affected_range: "<5.0.1"
+affected_range: "<0"
 fixed_versions:
 - "5.0.1"
 affected_versions: "All versions before 5.0.1"

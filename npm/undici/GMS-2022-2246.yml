@@ -5,12 +5,12 @@ identifiers:
 - "GMS-2022-2246"
 - "CVE-2022-32210"
 package_slug: "npm/undici"
-title: "ProxyAgent vulnerable to MITM"
-description: "`Undici.ProxyAgent` never verifies the remote server's
-  certificate, and always exposes all request & response data to the proxy."
+title: "Duplicate of ./npm/undici/CVE-2022-32210.yml"
+description: "`Undici.ProxyAgent` never verifies the remote server's certificate,
+  and always exposes all request & response data to the proxy."
 date: "2022-06-17"
 pubdate: "2022-06-17"
-affected_range: ">=4.8.2 <=5.5.0"
+affected_range: "<0"
 fixed_versions:
 - "5.5.1"
 affected_versions: "All versions starting from 4.8.2 up to 5.5.0"

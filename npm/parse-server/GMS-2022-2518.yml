@@ -5,7 +5,7 @@ identifiers:
 - "GMS-2022-2518"
 - "CVE-2022-31089"
 package_slug: "npm/parse-server"
-title: "Invalid file request can crash server"
+title: "Duplicate of ./npm/parse-server/CVE-2022-31089.yml"
 description: "### Impact\nCertain types of invalid files requests are not handled
   properly and can crash the server. If you are running multiple Parse Server instances
   in a cluster, the availability impact may be low; if you are running Parse Server
@@ -18,7 +18,7 @@ description: "### Impact\nCertain types of invalid files requests are not handle
   at [report.parseplatform.org](https://report.parseplatform.org/)\n"
 date: "2022-06-20"
 pubdate: "2022-06-20"
-affected_range: "<4.10.12||>=5.0.0 <5.2.3"
+affected_range: "<0"
 fixed_versions:
 - "4.10.12"
 - "5.2.3"

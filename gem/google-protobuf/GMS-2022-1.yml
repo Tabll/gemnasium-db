@@ -5,7 +5,7 @@ identifiers:
 - "GMS-2022-1"
 - "CVE-2021-22569"
 package_slug: "gem/google-protobuf"
-title: "A potential Denial of Service issue in protobuf-java"
+title: "Duplicate of ./gem/google-protobuf/CVE-2021-22569.yml"
 description: "## Summary\n\nA potential Denial of Service issue in protobuf-java was
   discovered in the parsing procedure for binary data.\n\nReporter: [OSS-Fuzz](https://github.com/google/oss-fuzz)\n\nAffected
   versions: All versions of Java Protobufs (including Kotlin and JRuby) prior to the
@@ -21,7 +21,7 @@ description: "## Summary\n\nA potential Denial of Service issue in protobuf-java
   )\n- google-protobuf [JRuby gem only] (3.19.2) \n"
 date: "2022-01-07"
 pubdate: "2022-01-07"
-affected_range: "<3.19.2"
+affected_range: "<0"
 fixed_versions:
 - "3.19.2"
 affected_versions: "All versions before 3.19.2"

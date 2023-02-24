@@ -5,7 +5,7 @@ identifiers:
 - "GMS-2022-1264"
 - "CVE-2022-24877"
 package_slug: "go/github.com/fluxcd/kustomize-controller"
-title: "Improper path handling in kustomization files allows path traversal"
+title: "Duplicate of ./go/github.com/fluxcd/kustomize-controller/CVE-2022-24877.yml"
 description: "The kustomize-controller enables the use of Kustomize’s functionality
   when applying Kubernetes declarative state onto a cluster. A malicious user can
   use built-in features and a specially crafted `kustomization.yaml` to expose sensitive
@@ -23,7 +23,7 @@ description: "The kustomize-controller enables the use of Kustomize’s function
   blocking access to sensitive path locations."
 date: "2022-05-04"
 pubdate: "2022-05-04"
-affected_range: "<v0.24.0"
+affected_range: "<0"
 fixed_versions:
 - "v0.24.0"
 affected_versions: "All versions before 0.24.0"

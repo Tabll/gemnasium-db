@@ -5,12 +5,12 @@ identifiers:
 - "GMS-2022-5505"
 - "CVE-2022-39313"
 package_slug: "npm/parse-server"
-title: "Improper Input Validation"
+title: "Duplicate of ./npm/parse-server/CVE-2022-39313.yml"
 description: "Parse Server crashes when a file download request is received with an
   invalid byte range."
 date: "2022-10-18"
 pubdate: "2022-10-18"
-affected_range: "<4.10.17||>=5.0.0 <5.2.8"
+affected_range: "<0"
 fixed_versions:
 - "4.10.17"
 - "5.2.8"

@@ -5,12 +5,12 @@ identifiers:
 - "GMS-2022-8299"
 - "CVE-2022-23519"
 package_slug: "gem/rails-html-sanitizer"
-title: "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+title: "Duplicate of ./gem/rails-html-sanitizer/CVE-2022-23519.yml"
 description: "Improper Neutralization of Input During Web Page Generation ('Cross-site
   Scripting') in rails-html-sanitizer."
 date: "2022-12-13"
 pubdate: "2022-12-13"
-affected_range: "<1.4.4"
+affected_range: "<0"
 fixed_versions:
 - "1.4.4"
 affected_versions: "All versions before 1.4.4"

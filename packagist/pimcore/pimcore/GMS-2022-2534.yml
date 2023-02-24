@@ -5,15 +5,14 @@ identifiers:
 - "GMS-2022-2534"
 - "CVE-2022-31092"
 package_slug: "packagist/pimcore/pimcore"
-title: "Improper quoting of columns when using setOrderBy() or setGroupBy() on listing
-  classes in Pimcore"
+title: "Duplicate of ./packagist/pimcore/pimcore/CVE-2022-31092.yml"
 description: "Quoting is not done properly so there's the theoretical possibility
   to inject custom SQL if the developer is using this methods with input data and
   not doing proper input validation in advance and so relies on the auto-quoting being
   done by the listing classes."
 date: "2022-06-22"
 pubdate: "2022-06-22"
-affected_range: "<10.4.4"
+affected_range: "<0"
 fixed_versions:
 - "10.4.4"
 affected_versions: "All versions before 10.4.4"

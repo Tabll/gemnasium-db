@@ -5,7 +5,7 @@ identifiers:
 - "GMS-2023-10"
 - "CVE-2023-22488"
 package_slug: "packagist/flarum/core"
-title: "Flarum notifications can leak restricted content"
+title: "Duplicate of ./packagist/flarum/core/CVE-2023-22488.yml"
 description: "Using the notifications feature, one can read restricted/private content
   and bypass access checks that would be in place for such content.\n\nThe notification-sending
   component does not check that the subject of the notification can be seen by the
@@ -33,7 +33,7 @@ description: "Using the notifications feature, one can read restricted/private c
   and we will address it promptly.\n"
 date: "2023-01-10"
 pubdate: "2023-01-10"
-affected_range: "<1.6.3"
+affected_range: "<0"
 fixed_versions:
 - "1.6.3"
 affected_versions: "All versions before 1.6.3"

@@ -5,11 +5,11 @@ identifiers:
 - "GMS-2022-4942"
 - "CVE-2022-3171"
 package_slug: "maven/com.google.protobuf/protobuf-java"
-title: "Improper Neutralization"
+title: "Duplicate of ./maven/com.google.protobuf/protobuf-java/CVE-2022-3171.yml"
 description: "Improper Neutralization in com.google.protobuf:protobuf-java."
 date: "2022-10-04"
 pubdate: "2022-10-04"
-affected_range: "(,3.16.3),[3.17.0-rc-1,3.19.6),[3.20.0-rc-1,3.20.3),[3.21.0-rc-1,3.21.7)"
+affected_range: "(,0)"
 fixed_versions:
 - "3.20.3"
 - "3.21.7"

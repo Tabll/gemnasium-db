@@ -6,7 +6,7 @@ identifiers:
 package_slug: "go/github.com/ipfs/go-ipfs"
 title: "Opened exploitable ports in default docker-compose.yaml"
 description: "Allows admin API access to the IPFS node."
-date: "2023-01-11"
+date: "2023-02-20"
 pubdate: "2022-04-04"
 affected_range: ">=v0.11.0 <v0.12.1"
 fixed_versions:

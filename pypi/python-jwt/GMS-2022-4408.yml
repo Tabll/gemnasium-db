@@ -5,17 +5,15 @@ identifiers:
 - "GMS-2022-4408"
 - "CVE-2022-39227"
 package_slug: "pypi/python-jwt"
-title: "python-jwt vulnerable to token forgery with new claims"
+title: "Duplicate of ./pypi/python-jwt/CVE-2022-39227.yml"
 description: "### Impact\nAn attacker who obtains a JWT can arbitrarily forge its
   contents without knowing the secret key. Depending on the application, this may
   for example enable the attacker to spoof other user's identities, hijack their sessions,
   or bypass authentication.\n\n### Patches\nUsers should upgrade to version 3.3.4\nFixed
   by: https://github.com/davedoesdev/python-jwt/commit/88ad9e67c53aa5f7c43ec4aa52ed34b7930068c9\n\n
-  ###
-  Workarounds\nNone\n\n### References\nFound by [Tom Tervoort](Tom.Tervoort@secura.com)\n
+  ### Workarounds\nNone\n\n### References\nFound by [Tom Tervoort](Tom.Tervoort@secura.com)\n
   https://github.com/pypa/advisory-database/blob/main/vulns/python-jwt/PYSEC-2022-259.yaml\n\n
-  ###
-  More information\n\nThe vulnerability allows an attacker, who possesses a single
+  ### More information\n\nThe vulnerability allows an attacker, who possesses a single
   valid JWT, to create a new token with forged claims that the verify_jwt function
   will accept as valid.\n\nThe issue is caused by an inconsistency between the JWT
   parsers used by python-jwt and its dependency jwcrypto. By mixing compact and JSON
@@ -26,7 +24,7 @@ description: "### Impact\nAn attacker who obtains a JWT can arbitrarily forge it
   open an issue in [python-jwt](https://github.com/davedoesdev/python-jwt)\n"
 date: "2022-09-21"
 pubdate: "2022-09-21"
-affected_range: "<3.3.4"
+affected_range: "<0"
 fixed_versions:
 - "3.3.4"
 affected_versions: "All versions before 3.3.4"

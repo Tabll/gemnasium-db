@@ -5,7 +5,7 @@ identifiers:
 - "GMS-2022-3782"
 - "CVE-2022-36046"
 package_slug: "npm/next"
-title: "Unexpected server crash in Next.js"
+title: "Duplicate of ./npm/next/CVE-2022-36046.yml"
 description: "### Impact\n\nWhen specific requests are made to the Next.js server
   it can cause an `unhandledRejection` in the server which can crash the process to
   exit in specific Node.js versions with strict `unhandledRejection` handling. \n\n-
@@ -17,7 +17,7 @@ description: "### Impact\n\nWhen specific requests are made to the Next.js serve
   across requests.\n\n### Patches\nhttps://github.com/vercel/next.js/releases/tag/v12.2.4\n"
 date: "2022-08-30"
 pubdate: "2022-08-30"
-affected_range: "=12.2.3"
+affected_range: "<0"
 fixed_versions:
 - "12.2.4"
 affected_versions: "Version 12.2.3"

@@ -5,17 +5,17 @@ identifiers:
 - "GMS-2023-60"
 - "CVE-2023-22794"
 package_slug: "gem/activerecord"
-title: "SQL Injection Vulnerability via ActiveRecord comments"
+title: "Duplicate of ./gem/activerecord/CVE-2023-22794.yml"
 description: "There is a possible vulnerability in ActiveRecord related to the sanitization
-  of comments. Previously the implementation of escaping for comments was insufficient. If 
-  malicious user input is passed to either the annotate query method, the optimizer_hints 
-  query method, or through the QueryLogs interface which automatically adds annotations, 
-  it may be sent to the database with insufficient sanitization and be able to inject SQL 
-  outside of the comment. In most cases these interfaces won’t be used with user input and 
-  users should avoid doing so."
+  of comments. Previously the implementation of escaping for comments was insufficient.
+  If malicious user input is passed to either the annotate query method, the optimizer_hints
+  query method, or through the QueryLogs interface which automatically adds annotations,
+  it may be sent to the database with insufficient sanitization and be able to inject
+  SQL outside of the comment. In most cases these interfaces won’t be used with user
+  input and users should avoid doing so."
 date: "2023-01-18"
 pubdate: "2023-01-18"
-affected_range: ">=6.0.0 <6.0.6.1||>=6.1.0 <6.1.7.1||>=7.0.0 <7.0.4.1"
+affected_range: "<0"
 fixed_versions:
 - "6.0.6.1"
 - "6.1.7.1"

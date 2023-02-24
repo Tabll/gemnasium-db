@@ -5,7 +5,7 @@ identifiers:
 - "GMS-2022-6112"
 - "CVE-2022-39353"
 package_slug: "npm/@xmldom/xmldom"
-title: "xmldom allows multiple root nodes in a DOM"
+title: "Duplicate of ./npm/@xmldom/xmldom/CVE-2022-39353.yml"
 description: "### Impact\nxmldom parses XML that is not well-formed because it contains
   multiple top level elements, and adds all root nodes to the `childNodes` collection
   of the `Document`, without reporting any error or throwing.\nThis breaks the assumption
@@ -20,7 +20,7 @@ description: "### Impact\nxmldom parses XML that is not well-formed because it c
   any questions or comments about this advisory:\n* Email us at security@xmldom.org\n"
 date: "2022-11-01"
 pubdate: "2022-11-01"
-affected_range: "<0.7.7||>=0.8.0 <0.8.4||>=0.9.0-beta.1 <0.9.0-beta.4"
+affected_range: "<0"
 fixed_versions:
 - "0.7.7"
 - "0.8.4"

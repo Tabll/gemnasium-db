@@ -5,14 +5,14 @@ identifiers:
 - "GMS-2022-3603"
 - "CVE-2022-35956"
 package_slug: "gem/update_by_case"
-title: "update_by_case before 0.1.3 can be vulnerable to sql injection"
+title: "Duplicate of ./gem/update_by_case/CVE-2022-35956.yml"
 description: "Before version 0.1.3 `update_by_case` gem used custom sql strings, and
   it was not sanitized, making it vulnerable to sql injection. Upgrade to version
   >= 0.1.3 that uses `Arel` instead to construct the resulting sql statement, with
   sanitized sql."
 date: "2022-08-11"
 pubdate: "2022-08-11"
-affected_range: "<0.1.3"
+affected_range: "<0"
 fixed_versions:
 - "0.1.3"
 affected_versions: "All versions before 0.1.3"

@@ -5,7 +5,7 @@ identifiers:
 - "GMS-2022-1448"
 - "CVE-2022-25772"
 package_slug: "packagist/mautic/core"
-title: "Cross-site Scripting vulnerability in Mautic's tracking pixel functionality"
+title: "Duplicate of ./packagist/mautic/core/CVE-2022-25772.yml"
 description: "### Impact\n\nMautic allows you to track open rates by using tracking
   pixels. \nThe tracking information is stored together with extra metadata of the
   tracking request.\n\nThe output isn't sufficiently filtered when showing the metadata
@@ -15,7 +15,7 @@ description: "### Impact\n\nMautic allows you to track open rates by using track
   about this advisory:\n* Email us at [security@mautic.org](mailto:security@mautic.org)\n"
 date: "2022-05-25"
 pubdate: "2022-05-25"
-affected_range: "<4.3.0"
+affected_range: "<0"
 fixed_versions:
 - "4.3.0"
 affected_versions: "All versions before 4.3.0"

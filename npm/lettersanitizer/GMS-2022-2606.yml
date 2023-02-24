@@ -5,7 +5,7 @@ identifiers:
 - "GMS-2022-2606"
 - "CVE-2022-31103"
 package_slug: "npm/lettersanitizer"
-title: "Improper handling of CSS at-rules in lettersanitizer"
+title: "Duplicate of ./npm/lettersanitizer/CVE-2022-31103.yml"
 description: "### Impact\n\nAll versions of lettersanitizer below 1.0.2 are affected
   by a denial of service issue when processing a CSS at-rule `@keyframes`.\n\nThis
   package is depended on by [react-letter](https://github.com/mat-sz/react-letter),
@@ -18,7 +18,7 @@ description: "### Impact\n\nAll versions of lettersanitizer below 1.0.2 are affe
   Email me at [contact@matsz.dev](mailto:contact@matsz.dev)\n"
 date: "2022-06-23"
 pubdate: "2022-06-23"
-affected_range: "<1.0.2"
+affected_range: "<0"
 fixed_versions:
 - "1.0.2"
 affected_versions: "All versions before 1.0.2"

@@ -5,18 +5,18 @@ identifiers:
 - "GMS-2022-8130"
 - "CVE-2022-23500"
 package_slug: "packagist/typo3/cms-core"
-title: "TYPO3 CMS vulnerable to Denial of Service in Page Error Handling"
+title: "Duplicate of ./packagist/typo3/cms-core/CVE-2022-23500.yml"
 description: "### Problem\nRequesting invalid or non-existing resources via HTTP triggers
   the page error handler, which again could retrieve content to be shown as an error
   message from another page. This leads to a scenario in which the application is
   calling itself recursively - amplifying the impact of the initial attack until the
   limits of the web server are exceeded.\n\nThis vulnerability is very similar, but
-  not identical, to the one described in `TYPO3-CORE-SA-2021-005`
-  (CVE-2021-21359).\n\n### Solution\nUpdate to TYPO3 versions 9.5.38 ELTS, 10.4.33
-  or 11.5.20 that fix the problem described above."
+  not identical, to the one described in `TYPO3-CORE-SA-2021-005` (CVE-2021-21359).\n\n###
+  Solution\nUpdate to TYPO3 versions 9.5.38 ELTS, 10.4.33 or 11.5.20 that fix the
+  problem described above."
 date: "2022-12-13"
 pubdate: "2022-12-13"
-affected_range: ">=9.0.0,<9.5.38||>=10.0.0,<10.4.33||>=11.0.0,<11.5.20"
+affected_range: "<0"
 fixed_versions:
 - "9.5.38"
 - "10.4.33"

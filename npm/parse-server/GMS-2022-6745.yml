@@ -5,13 +5,13 @@ identifiers:
 - "GMS-2022-6745"
 - "CVE-2022-41879"
 package_slug: "npm/parse-server"
-title: "Parse Server is vulnerable to Prototype Pollution via Cloud Code Webhooks"
-description: "A compromised Parse Server Cloud Code Webhook target endpoint allows 
-  an attacker to use prototype pollution to bypass the Parse Server 
-  `requestKeywordDenylist` option."
+title: "Duplicate of ./npm/parse-server/CVE-2022-41879.yml"
+description: "A compromised Parse Server Cloud Code Webhook target endpoint allows
+  an attacker to use prototype pollution to bypass the Parse Server `requestKeywordDenylist`
+  option."
 date: "2022-11-10"
 pubdate: "2022-11-10"
-affected_range: "<4.10.20||>=5.0.0 <5.3.3"
+affected_range: "<0"
 fixed_versions:
 - "4.10.20"
 - "5.3.3"

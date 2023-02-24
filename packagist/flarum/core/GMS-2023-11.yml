@@ -5,8 +5,7 @@ identifiers:
 - "GMS-2023-11"
 - "CVE-2023-22489"
 package_slug: "packagist/flarum/core"
-title: "Any Flarum user including unactivated can reply in public discussions whose
-  first post was permanently deleted"
+title: "Duplicate of ./packagist/flarum/core/CVE-2023-22489.yml"
 description: "If the first post of a discussion is permanently deleted but the discussion
   stays visible, any actor who can view the discussion is able to create a new reply
   via the REST API, no matter the reply permission or lock status.\n\nThis includes
@@ -37,7 +36,7 @@ description: "If the first post of a discussion is permanently deleted but the d
   and we will address it promptly.\n"
 date: "2023-01-10"
 pubdate: "2023-01-10"
-affected_range: ">=1.3.0,<1.6.3"
+affected_range: "<0"
 fixed_versions:
 - "1.6.3"
 affected_versions: "All versions starting from 1.3.0 before 1.6.3"

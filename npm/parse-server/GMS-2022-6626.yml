@@ -5,15 +5,13 @@ identifiers:
 - "GMS-2022-6626"
 - "CVE-2022-41878"
 package_slug: "npm/parse-server"
-title: "Parse Server vulnerable to Prototype Pollution via Cloud Code Webhooks or
-  Cloud Code Triggers"
-description: "Keywords that are specified in the Parse Server option 
-  `requestKeywordDenylist` can be injected via Cloud Code Webhooks or Triggers. This 
-  will result in the keyword being saved to the database, bypassing the 
-  `requestKeywordDenylist` option."
+title: "Duplicate of ./npm/parse-server/CVE-2022-41878.yml"
+description: "Keywords that are specified in the Parse Server option `requestKeywordDenylist`
+  can be injected via Cloud Code Webhooks or Triggers. This will result in the keyword
+  being saved to the database, bypassing the `requestKeywordDenylist` option."
 date: "2022-11-09"
 pubdate: "2022-11-09"
-affected_range: "<4.10.19||>=5.0.0 <5.3.2"
+affected_range: "<0"
 fixed_versions:
 - "4.10.19"
 - "5.3.2"

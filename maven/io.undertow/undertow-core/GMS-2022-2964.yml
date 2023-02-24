@@ -5,12 +5,12 @@ identifiers:
 - "GMS-2022-2964"
 - "CVE-2021-3690"
 package_slug: "maven/io.undertow/undertow-core"
-title: "Undertow vulnerable to memory exhaustion due to buffer leak"
+title: "Duplicate of ./maven/io.undertow/undertow-core/CVE-2021-3690.yml"
 description: "Buffer leak on incoming WebSocket PONG message(s) in Undertow before
   2.0.40 and 2.2.10 can lead to memory exhaustion and allow a denial of service."
 date: "2022-07-15"
 pubdate: "2022-07-15"
-affected_range: "(,2.0.40),[2.2.0,2.2.10)"
+affected_range: "(,0)"
 fixed_versions:
 - "2.0.40"
 - "2.2.10"

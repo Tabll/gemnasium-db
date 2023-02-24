@@ -5,11 +5,11 @@ identifiers:
 - "GMS-2022-6953"
 - "CVE-2022-41919"
 package_slug: "npm/fastify"
-title: "Cross-Site Request Forgery (CSRF)"
+title: "Duplicate of ./npm/fastify/CVE-2022-41919.yml"
 description: "Cross-Site Request Forgery (CSRF) in fastify."
 date: "2022-11-21"
 pubdate: "2022-11-21"
-affected_range: ">=3.0.0 <3.29.4||>=4.0.0 <4.10.2"
+affected_range: "<0"
 fixed_versions:
 - "3.29.4"
 - "4.10.2"

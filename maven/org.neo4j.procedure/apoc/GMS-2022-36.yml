@@ -5,14 +5,14 @@ identifiers:
 - "GMS-2022-36"
 - "CVE-2021-42767"
 package_slug: "maven/org.neo4j.procedure/apoc"
-title: "Path traversal in Neo4j Graph Database"
+title: "Duplicate of ./maven/org.neo4j.procedure/apoc/CVE-2021-42767.yml"
 description: "### Impact\nDirectory Traversal Vulnerabilities found in several functions
   of apoc plugins in Neo4j Graph database. The attacker can retrieve and download
   files from outside the configured directory on the affected server. Under some circumstances,
   the attacker can also create files."
 date: "2022-02-01"
 pubdate: "2022-02-01"
-affected_range: "(,3.5.17),[4.2.0,4.2.10),[4.3.0.0,4.3.0.3],[4.4.0.0]"
+affected_range: "(,0)"
 fixed_versions:
 - "3.5.17"
 - "4.2.10"

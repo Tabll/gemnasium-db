@@ -5,8 +5,7 @@ identifiers:
 - "GMS-2022-3552"
 - "CVE-2022-35942"
 package_slug: "npm/loopback-connector-postgresql"
-title: "loopback-connector-postgresql Vulnerable to Improper Sanitization of `contains`
-  Filter"
+title: "Duplicate of ./npm/loopback-connector-postgresql/CVE-2022-35942.yml"
 description: "Improper input validation on the `contains` LoopBack filter may allow
   for arbitrary SQL injection.\n\n### Impact\n\nWhen the extended filter property
   `contains` is permitted to be interpreted by the Postgres connector, it is possible
@@ -23,7 +22,7 @@ description: "Improper input validation on the `contains` LoopBack filter may al
   LoopBack filter beforehand.\n\n"
 date: "2022-08-11"
 pubdate: "2022-08-11"
-affected_range: "<5.5.1"
+affected_range: "<0"
 fixed_versions:
 - "5.5.1"
 affected_versions: "All versions before 5.5.1"

@@ -5,8 +5,7 @@ identifiers:
 - "GMS-2022-7409"
 - "CVE-2022-41654"
 package_slug: "npm/ghost"
-title: "ghost vulnerable to unauthorized newsletter modification via improper access
-  controls"
+title: "Duplicate of ./npm/ghost/CVE-2022-41654.yml"
 description: "### Impact\n\nOn sites where members is enabled (this is the default)
   it is possible for members (unprivileged users) to make changes to newsletter settings.
   This gives unprivileged users the ability to view and change settings they were
@@ -27,7 +26,7 @@ description: "### Impact\n\nOn sites where members is enabled (this is the defau
   McDaniel and other members of [Cisco Talos](https://talosintelligence.com/vulnerability_reports)"
 date: "2022-11-28"
 pubdate: "2022-11-28"
-affected_range: ">=4.46.0 <4.48.8||>=5.0.0 <5.22.7"
+affected_range: "<0"
 fixed_versions:
 - "4.48.8"
 - "5.22.7"

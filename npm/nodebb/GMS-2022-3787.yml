@@ -5,16 +5,16 @@ identifiers:
 - "GMS-2022-3787"
 - "CVE-2022-36045"
 package_slug: "npm/nodebb"
-title: "Cryptographically weak PRNG in `utils.generateUUID`"
-description: "`utils.generateUUID`, a helper function available in essentially
-  all versions of NodeBB (as far back as v1.0.1 and potentially earlier) used a cryptographically
+title: "Duplicate of ./npm/nodebb/CVE-2022-36045.yml"
+description: "`utils.generateUUID`, a helper function available in essentially all
+  versions of NodeBB (as far back as v1.0.1 and potentially earlier) used a cryptographically
   insecure Pseudo-random number generator (`Math.random()`), which meant that a specially
   crafted script combined with multiple invocations of the password reset functionality
   could enable an attacker to correctly calculate the reset code for an account they
   do not have access to."
 date: "2022-08-30"
 pubdate: "2022-08-30"
-affected_range: "<1.19.8||=2.0.0"
+affected_range: "<0"
 fixed_versions:
 - "1.19.8"
 - "2.0.1"

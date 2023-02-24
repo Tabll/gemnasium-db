@@ -5,12 +5,12 @@ identifiers:
 - "GMS-2022-2654"
 - "CVE-2022-31101"
 package_slug: "packagist/prestashop/blockwishlist"
-title: "SQL Injection in BlockWishList"
+title: "Duplicate of ./packagist/prestashop/blockwishlist/CVE-2022-31101.yml"
 description: "### Impact\nAn authenticated customer can perform SQL injection\n\n###
   Patches\nIssue is fixed in 2.1.1\n"
 date: "2022-06-25"
 pubdate: "2022-06-25"
-affected_range: ">=2.0.0,<2.1.1"
+affected_range: "<0"
 fixed_versions:
 - "2.1.1"
 affected_versions: "All versions starting from 2.0.0 before 2.1.1"

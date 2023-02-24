@@ -5,12 +5,12 @@ identifiers:
 - "GMS-2022-3903"
 - "CVE-2022-31152"
 package_slug: "pypi/matrix-synapse"
-title: "Denial of service due to incorrect application of event authorization rules"
-description: "The Matrix specification specifies a list of event authorization
-  rules which must be checked when determining if an event should be accepted into a room."
+title: "Duplicate of ./pypi/matrix-synapse/CVE-2022-31152.yml"
+description: "The Matrix specification specifies a list of event authorization rules
+  which must be checked when determining if an event should be accepted into a room."
 date: "2022-08-31"
 pubdate: "2022-08-31"
-affected_range: "<1.62"
+affected_range: "<0"
 fixed_versions:
 - "1.62"
 affected_versions: "All versions before 1.62"

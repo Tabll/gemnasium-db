@@ -5,21 +5,14 @@ identifiers:
 - "GMS-2022-6995"
 - "CVE-2022-41902"
 package_slug: "pypi/tensorflow"
-title: "Out of bounds write in grappler in Tensorflow"
-description: "### Impact\nThe function 
-  [MakeGrapplerFunctionItem](https://https://github.com/tensorflow/tensorflow/blob/master/tensorflow/core/grappler/utils/functions.cc#L221)
+title: "Duplicate of ./pypi/tensorflow/CVE-2022-41902.yml"
+description: "The function `MakeGrapplerFunctionItem`
   takes arguments that determine the sizes of inputs and outputs. If the inputs given
   are greater than or equal to the sizes of the outputs, an out-of-bounds memory read
-  or a crash is triggered.\n\n### Patches\nWe have patched the issue in GitHub commit
-  [a65411a1d69edfb16b25907ffb8f73556ce36bb7](https://github.com/tensorflow/tensorflow/commit/a65411a1d69edfb16b25907ffb8f73556ce36bb7)
-  .\n\nThe fix will be included in TensorFlow 2.11.0. We will also cherrypick this commit on
-  TensorFlow 2.10.1.\n\n\n### For more information\nPlease consult 
-  [our security guide](https://github.com/tensorflow/tensorflow/blob/master/SECURITY.md)
-  for more information regarding the security model and how to contact us with issues
-  and questions.\n"
+  or a crash is triggered."
 date: "2022-11-21"
 pubdate: "2022-11-21"
-affected_range: "<2.8.4||>=2.9.0,<2.9.3||>=2.10.0,<2.10.1"
+affected_range: "<0"
 fixed_versions:
 - "2.8.4"
 - "2.9.3"
@@ -32,7 +25,6 @@ solution: "Upgrade to versions 2.8.4, 2.9.3, 2.10.1 or above."
 urls:
 - "https://github.com/tensorflow/tensorflow/security/advisories/GHSA-cg88-rpvp-cjv5"
 - "https://github.com/tensorflow/tensorflow/commit/a65411a1d69edfb16b25907ffb8f73556ce36bb7"
-- "https://https://github.com/tensorflow/tensorflow/blob/master/tensorflow/core/grappler/utils/functions.cc#L221"
 - "https://github.com/advisories/GHSA-cg88-rpvp-cjv5"
 uuid: "f5b5b8fc-9104-488d-89a5-712604536063"
 cwe_ids:

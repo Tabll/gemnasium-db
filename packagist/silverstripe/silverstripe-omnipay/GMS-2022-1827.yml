@@ -5,7 +5,7 @@ identifiers:
 - "GMS-2022-1827"
 - "CVE-2022-29254"
 package_slug: "packagist/silverstripe/silverstripe-omnipay"
-title: "Failed payment recorded has completed in Silverstripe Omnipay"
+title: "Duplicate of ./packagist/silverstripe/silverstripe-omnipay/CVE-2022-29254.yml"
 description: "### Impact\nFor a subset of Omnipay gateways (those that use intermediary
   states like `isNotification()` or `isRedirect()`), if the payment identifier or
   success URL is exposed it is possible for payments to be prematurely marked as completed
@@ -18,7 +18,7 @@ description: "### Impact\nFor a subset of Omnipay gateways (those that use inter
   about this advisory:\n* Email us at [security@silverstripe.org](mailto:security@silverstripe.org)\n"
 date: "2022-06-06"
 pubdate: "2022-06-06"
-affected_range: "<2.5.2||>=3.0.0,<3.0.2||>=3.1.0,<3.1.4||>=3.2.0,<3.2.1"
+affected_range: "<0"
 fixed_versions:
 - "2.5.2"
 - "3.0.2"

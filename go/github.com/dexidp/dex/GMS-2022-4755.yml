@@ -5,20 +5,19 @@ identifiers:
 - "GMS-2022-4755"
 - "CVE-2022-39222"
 package_slug: "go/github.com/dexidp/dex"
-title: "Dex vulnerable to Man-in-the-Middle allowing ID token capture via intercepted
-  authorization code"
-description: "Dex instances with public clients (and by extension, clients
-  accepting tokens issued by those Dex instances) are affected by this vulnerability. 
-  An attacker can exploit this vulnerability by making a victim navigate to a malicious
-  website and guiding them through the OIDC flow, stealing the OAuth authorization
-  code in the process. The authorization code then can be exchanged by the attacker
-  for a token, gaining access to applications accepting that token. Patches: Update 
-  to 2.35.0. Workarounds: No known workarounds (without impacting behavior) for existing
-  versions. Disabling public clients is the only way to defend against attacks 
-  exploiting this vulnerability."
+title: "Duplicate of ./go/github.com/dexidp/dex/CVE-2022-39222.yml"
+description: "Dex instances with public clients (and by extension, clients accepting
+  tokens issued by those Dex instances) are affected by this vulnerability. An attacker
+  can exploit this vulnerability by making a victim navigate to a malicious website
+  and guiding them through the OIDC flow, stealing the OAuth authorization code in
+  the process. The authorization code then can be exchanged by the attacker for a
+  token, gaining access to applications accepting that token. Patches: Update to 2.35.0.
+  Workarounds: No known workarounds (without impacting behavior) for existing versions.
+  Disabling public clients is the only way to defend against attacks exploiting this
+  vulnerability."
 date: "2022-10-03"
 pubdate: "2022-10-03"
-affected_range: "<=v2.34.0"
+affected_range: "<0"
 fixed_versions:
 - "v2.35.0"
 affected_versions: "All versions up to 2.34.0"

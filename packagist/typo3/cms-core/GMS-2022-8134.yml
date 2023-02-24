@@ -5,7 +5,7 @@ identifiers:
 - "GMS-2022-8134"
 - "CVE-2022-23501"
 package_slug: "packagist/typo3/cms-core"
-title: "TYPO3 CMS vulnerable to Weak Authentication in Frontend Login"
+title: "Duplicate of ./packagist/typo3/cms-core/CVE-2022-23501.yml"
 description: "### Problem\nRestricting frontend login to specific users, organized
   in different storage folders (partitions), can be bypassed. A potential attacker
   might use this ambiguity in usernames to get access to a different account - however,
@@ -14,7 +14,7 @@ description: "### Problem\nRestricting frontend login to specific users, organiz
   above.\n\n### References\n* [TYPO3-CORE-SA-2022-013](https://typo3.org/security/advisory/typo3-core-sa-2022-013)\n"
 date: "2022-12-13"
 pubdate: "2022-12-13"
-affected_range: "<8.7.49||>=9.0.0,<9.5.38||>=10.0.0,<10.4.33||>=11.0.0,<11.5.20||>=12.0.0,<12.1.1"
+affected_range: "<0"
 fixed_versions:
 - "8.7.49"
 - "9.5.38"

@@ -5,13 +5,12 @@ identifiers:
 - "GMS-2022-2609"
 - "CVE-2022-31093"
 package_slug: "npm/next-auth"
-title: "Improper Handling of `callbackUrl` parameter in next-auth"
-description: "An attacker can send a request to an app using NextAuth.js
-  with an invalid `callbackUrl` query parameter, which internally we convert to a
-  `URL` object."
+title: "Duplicate of ./npm/next-auth/CVE-2022-31093.yml"
+description: "An attacker can send a request to an app using NextAuth.js with an invalid
+  `callbackUrl` query parameter, which internally we convert to a `URL` object."
 date: "2022-06-22"
 pubdate: "2022-06-21"
-affected_range: "<3.29.5||>=4.0.0 <4.5.0"
+affected_range: "<0"
 fixed_versions:
 - "3.29.5"
 - "4.5.0"

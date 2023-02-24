@@ -5,13 +5,13 @@ identifiers:
 - "GMS-2022-3819"
 - "CVE-2022-35933"
 package_slug: "packagist/prestashop/productcomments"
-title: "Cross-site Scripting in prestashop/productcomments"
+title: "Duplicate of ./packagist/prestashop/productcomments/CVE-2022-35933.yml"
 description: "### Impact\nAn attacker could steal an admin's cookie\n\n### Patches\nThe
   issue is fixed in 5.0.2\n\n### References\n[Improper Neutralization of Input During
   Web Page Generation ('Cross-site Scripting')](https://cwe.mitre.org/data/definitions/79.html)\n"
 date: "2022-08-31"
 pubdate: "2022-08-31"
-affected_range: "<5.0.2"
+affected_range: "<0"
 fixed_versions:
 - "5.0.2"
 affected_versions: "All versions before 5.0.2"

@@ -5,7 +5,7 @@ identifiers:
 - "GMS-2022-3029"
 - "CVE-2022-32224"
 package_slug: "gem/activerecord"
-title: "RCE bug with Serialized Columns in Active Record"
+title: "Duplicate of ./gem/activerecord/CVE-2022-32224.yml"
 description: "When serialized columns that use YAML (the default) are deserialized,
   Rails uses YAML.unsafe_load to convert the YAML data in to Ruby objects. If an attacker
   can manipulate data in the database (via means like SQL injection), then it may
@@ -13,7 +13,7 @@ description: "When serialized columns that use YAML (the default) are deserializ
   for this issue, but other coders (such as JSON) are not impacted."
 date: "2022-07-13"
 pubdate: "2022-07-12"
-affected_range: "<=5.2.8||>=6.0.0 <=6.0.5||>=6.1.0 <=6.1.6||>=7.0.0 <=7.0.3"
+affected_range: "<0"
 fixed_versions:
 - "6.1.6.1"
 - "7.0.3.1"

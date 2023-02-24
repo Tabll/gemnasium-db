@@ -5,8 +5,7 @@ identifiers:
 - "GMS-2022-1894"
 - "CVE-2022-31027"
 package_slug: "pypi/oauthenticator"
-title: "Authorization Bypass Through User-Controlled Key when using CILogonOAuthenticator
-  oauthenticator"
+title: "Duplicate of ./pypi/oauthenticator/CVE-2022-31027.yml"
 description: "# Background\n\nCILogon is a federated auth provider that allows users
   to authenticate\nthemselves via a number of Identity Providers (IdP), focused primarily
   on educational and\nresearch institutions (such as Universities). More traditional
@@ -46,7 +45,7 @@ description: "# Background\n\nCILogon is a federated auth provider that allows u
   documentation."
 date: "2022-06-06"
 pubdate: "2022-06-06"
-affected_range: "<15.0.0"
+affected_range: "<0"
 fixed_versions:
 - "15.0.0"
 affected_versions: "All versions before 15.0.0"

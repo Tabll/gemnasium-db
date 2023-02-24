@@ -5,7 +5,7 @@ identifiers:
 - "GMS-2022-1921"
 - "CVE-2022-31026"
 package_slug: "gem/trilogy"
-title: "Use of Uninitialized Variable in trilogy"
+title: "Duplicate of ./gem/trilogy/CVE-2022-31026.yml"
 description: "### Impact\n\nWhen authenticating, a malicious server could return a
   specially crafted authentication packet, causing the client to read and return up
   to 12 bytes of data from an uninitialized variable in stack memory.\n\n### Patches\n\nUsers
@@ -16,7 +16,7 @@ description: "### Impact\n\nWhen authenticating, a malicious server could return
   Open an issue in [trilogy](https://github.com/github/trilogy)\n"
 date: "2022-06-06"
 pubdate: "2022-06-06"
-affected_range: "<2.1.1"
+affected_range: "<0"
 fixed_versions:
 - "2.1.1"
 affected_versions: "All versions before 2.1.1"

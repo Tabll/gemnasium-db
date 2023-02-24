@@ -5,7 +5,7 @@ identifiers:
 - "GMS-2023-222"
 - "CVE-2023-23937"
 package_slug: "packagist/pimcore/pimcore"
-title: "Pimcore contains Unrestricted Upload of File with Dangerous Type"
+title: "Duplicate of ./packagist/pimcore/pimcore/CVE-2023-23937.yml"
 description: "### Impact\nThe upload functionality for updating user profile does
   not properly validate the file content-type, allowing any authenticated user to
   bypass this security check by adding a valid signature (p.e. GIF89) and sending
@@ -14,7 +14,7 @@ description: "### Impact\nThe upload functionality for updating user profile doe
   Patches\nUpdate to version 10.5.16 or apply this patch manually https://github.com/pimcore/pimcore/pull/14125.patch"
 date: "2023-02-02"
 pubdate: "2023-02-02"
-affected_range: "<10.5.16"
+affected_range: "<0"
 fixed_versions:
 - "10.5.16"
 affected_versions: "All versions before 10.5.16"

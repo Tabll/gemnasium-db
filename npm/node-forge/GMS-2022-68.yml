@@ -5,7 +5,7 @@ identifiers:
 - "GMS-2022-68"
 - "CVE-2020-7720"
 package_slug: "npm/node-forge"
-title: "Prototype Pollution in node-forge util.setPath API"
+title: "Duplicate of ./npm/node-forge/CVE-2020-7720.yml"
 description: "### Impact\n`forge.util.setPath` had a potential prototype pollution
   issue if called with untrusted keys. This API was not used by forge itself.\n\n###
   Patches\nThe `forge.util.setPath` API and related functions were removed in 0.10.0.\n\n###
@@ -16,7 +16,7 @@ description: "### Impact\n`forge.util.setPath` had a potential prototype polluti
   Email us at support@digitalbazaar.com."
 date: "2022-01-08"
 pubdate: "2022-01-08"
-affected_range: "<0.10.0"
+affected_range: "<0"
 fixed_versions:
 - "0.10.0"
 affected_versions: "All versions before 0.10.0"

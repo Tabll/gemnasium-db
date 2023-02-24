@@ -5,13 +5,12 @@ identifiers:
 - "GMS-2022-1891"
 - "CVE-2022-24840"
 package_slug: "pypi/django-s3file"
-title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
-  Injection')"
+title: "Duplicate of ./pypi/django-s3file/CVE-2022-24840.yml"
 description: "Improper Neutralization of Special Elements used in an OS Command ('OS
   Command Injection') in django-s3file."
 date: "2022-06-06"
 pubdate: "2022-06-06"
-affected_range: "<5.5.1"
+affected_range: "<0"
 fixed_versions:
 - "5.5.1"
 affected_versions: "All versions before 5.5.1"

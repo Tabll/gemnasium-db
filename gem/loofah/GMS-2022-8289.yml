@@ -5,7 +5,7 @@ identifiers:
 - "GMS-2022-8289"
 - "CVE-2022-23514"
 package_slug: "gem/loofah"
-title: "Inefficient Regular Expression Complexity in Loofah"
+title: "Duplicate of ./gem/loofah/CVE-2022-23514.yml"
 description: "## Summary\n\nLoofah `< 2.19.1` contains an inefficient regular expression
   that is susceptible to excessive backtracking when attempting to sanitize certain
   SVG attributes. This may lead to a denial of service through CPU resource consumption.\n\n\n##
@@ -16,7 +16,7 @@ description: "## Summary\n\nLoofah `< 2.19.1` contains an inefficient regular ex
   reported by @ooooooo-q (https://github.com/ooooooo-q).\n"
 date: "2022-12-13"
 pubdate: "2022-12-13"
-affected_range: "<2.19.1"
+affected_range: "<0"
 fixed_versions:
 - "2.19.1"
 affected_versions: "All versions before 2.19.1"

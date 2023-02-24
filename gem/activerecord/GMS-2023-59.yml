@@ -5,15 +5,16 @@ identifiers:
 - "GMS-2023-59"
 - "CVE-2022-44566"
 package_slug: "gem/activerecord"
-title: "Denial of Service Vulnerability in ActiveRecord’s PostgreSQL adapter"
+title: "Duplicate of ./gem/activerecord/CVE-2022-44566.yml"
 description: "There is a potential denial of service vulnerability present in ActiveRecord’s
-  PostgreSQL adapter. In ActiveRecord <7.0.4.1 and <6.1.7.1, when a value outside the range 
-  for a 64bit signed integer is provided to the PostgreSQL connection adapter, it will treat 
-  the target column type as numeric. Comparing integer values against numeric values can result 
-  in a slow sequential scan resulting in potential Denial of Service."
+  PostgreSQL adapter. In ActiveRecord <7.0.4.1 and <6.1.7.1, when a value outside
+  the range for a 64bit signed integer is provided to the PostgreSQL connection adapter,
+  it will treat the target column type as numeric. Comparing integer values against
+  numeric values can result in a slow sequential scan resulting in potential Denial
+  of Service."
 date: "2023-01-18"
 pubdate: "2023-01-18"
-affected_range: "<6.1.7.1||>=7.0.0 <7.0.4.1"
+affected_range: "<0"
 fixed_versions:
 - "6.1.7.1"
 - "7.0.4.1"
