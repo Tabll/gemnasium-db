@@ -1,0 +1,43 @@
+---
+identifier: "GMS-2023-449"
+identifiers:
+- "GHSA-9vx8-f5c4-862x"
+- "GMS-2023-449"
+package_slug: "maven/org.neo4j.procedure/apoc"
+title: "XML External Entity (XXE) vulnerability in apoc.import.graphml"
+description: "### Impact\nA XML External Entity (XXE) vulnerability found in the apoc.import.graphml
+  procedure of APOC core plugin in Neo4j graph database. XML External Entity (XXE)
+  injection occurs when the XML parser allows external entities to be resolved. The
+  XML parser used by the apoc.import.graphml procedure was not configured in a secure
+  way and therefore allowed this.\n\nExternal entities can be used to read local files,
+  send HTTP requests, and perform denial-of-service attacks on the application.\n\nAbusing
+  the XXE vulnerability enabled assessors to read local files remotely. Although with
+  the level of privileges assessors had this was limited to one-line files. With the
+  ability to write to the database, any file could have been read. Additionally, assessors
+  noted, with local testing, the server could be crashed by passing in improperly
+  formatted XML. \n\n### Patches\nThe users should aim to use the latest released
+  version compatible with their Neo4j version. The minimum versions containing patch
+  for this vulnerability is 4.4.0.14. \n\n### Workarounds\nIf you cannot upgrade the
+  library, you can control the allowlist
+  of the procedures that can be used in your system.\n\n### For more information\nIf
+  you have any questions or comments about this advisory:\n* Open an issue in neo4j-apoc-procedures\n*
+  Email us at [security@neo4j.com](mailto:security@neo4j.com)\n"
+date: "2023-02-24"
+pubdate: "2023-02-24"
+affected_range: "(,4.4.0.14)"
+fixed_versions:
+- "4.4.0.14"
+affected_versions: "All versions before 4.4.0.14"
+not_impacted: "All versions starting from 4.4.0.14"
+solution: "Upgrade to version 4.4.0.14 or above."
+urls:
+- "https://github.com/neo4j-contrib/neo4j-apoc-procedures/security/advisories/GHSA-9vx8-f5c4-862x"
+- "https://github.com/neo4j/apoc/security/advisories/GHSA-6wxg-wh7f-rqpr"
+- "https://nvd.nist.gov/vuln/detail/CVE-2023-23926"
+- "https://github.com/neo4j-contrib/neo4j-apoc-procedures/commit/c3e2a29020497acf9417879f38e8af4e8c6d5783"
+- "https://github.com/neo4j-contrib/neo4j-apoc-procedures/releases/tag/4.4.0.14"
+- "https://github.com/advisories/GHSA-9vx8-f5c4-862x"
+uuid: "c8990a58-31a6-4a6c-84b0-36a4c5e44d24"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

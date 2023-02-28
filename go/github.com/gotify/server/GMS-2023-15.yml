@@ -7,7 +7,7 @@ package_slug: "go/github.com/gotify/server"
 title: "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
 description: "Improper Neutralization of Input During Web Page Generation ('Cross-site
   Scripting') in github.com/gotify/server."
-date: "2023-01-10"
+date: "2023-02-24"
 pubdate: "2023-01-10"
 affected_range: "<=v2.2.2"
 fixed_versions:

@@ -70,6 +70,7 @@ contributions.
 | @u808595       | #209                  |
 | @opalmer       | #212                  |
 | @tywayne       | !22027                |
+| @Bragolgirith  | #221                  |
 
 ## Directory structure
 
