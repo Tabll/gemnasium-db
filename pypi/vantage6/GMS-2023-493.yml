@@ -1,0 +1,31 @@
+---
+identifier: "GMS-2023-493"
+identifiers:
+- "GHSA-vvjv-97j8-94xh"
+- "GMS-2023-493"
+- "CVE-2023-22738"
+package_slug: "pypi/vantage6"
+title: "vantage6 vulnerable to Improper Preservation of Permissions"
+description: "### Impact\nAssigning existing users to a different organization is
+  currently possible. It may lead to unintended access: if a user from organization
+  A is accidentally assigned to organization B, they will retain their permissions
+  and therefore might be able to access stuff they should not be allowed to access.\n\n###
+  Patches\nUpdate to 3.8.0\n\n### Workarounds\nNone\n\n### References\nNone\n\n###
+  For more information\nIf you have any questions or comments about this advisory:\n*
+  Email us at [vantage6@iknl.nl](mailto:vantage6@iknl.nl)\n"
+date: "2023-02-28"
+pubdate: "2023-02-28"
+affected_range: "<3.8.0"
+fixed_versions:
+- "3.8.0"
+affected_versions: "All versions before 3.8.0"
+not_impacted: "All versions starting from 3.8.0"
+solution: "Upgrade to version 3.8.0 or above."
+urls:
+- "https://github.com/vantage6/vantage6/security/advisories/GHSA-vvjv-97j8-94xh"
+- "https://github.com/vantage6/vantage6/commit/798aca1de142a4eca175ef51112e2235642f4f24"
+- "https://github.com/advisories/GHSA-vvjv-97j8-94xh"
+uuid: "b46a0174-1579-4e04-a9f4-23377cf23dc6"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
