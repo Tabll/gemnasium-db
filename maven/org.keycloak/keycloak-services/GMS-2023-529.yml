@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2023-529"
+identifiers:
+- "GHSA-w354-2f3c-qvg9"
+- "GMS-2023-529"
+- "CVE-2022-1438"
+package_slug: "maven/org.keycloak/keycloak-services"
+title: "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+description: "Improper Neutralization of Input During Web Page Generation ('Cross-site
+  Scripting') in org.keycloak:keycloak-services."
+date: "2023-03-01"
+pubdate: "2023-03-01"
+affected_range: "(,21.0.0]"
+fixed_versions: []
+affected_versions: "All versions up to 21.0.0"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/keycloak/keycloak/security/advisories/GHSA-w354-2f3c-qvg9"
+- "https://access.redhat.com/security/cve/cve-2022-1438"
+- "https://bugzilla.redhat.com/show_bug.cgi?id=2031904"
+- "https://github.com/keycloak/keycloak/blob/48835576daa158443f69917ac309e1a7c951bc87/services/src/main/java/org/keycloak/authentication/AuthenticationProcessor.java#L1045"
+- "https://github.com/advisories/GHSA-w354-2f3c-qvg9"
+uuid: "a7751452-ab3a-43cf-be08-473aab8f950a"
+cwe_ids:
+- "CWE-1035"
+- "CWE-79"
+- "CWE-937"

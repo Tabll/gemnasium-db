@@ -1,0 +1,36 @@
+---
+identifier: "GMS-2023-513"
+identifiers:
+- "GHSA-p2pf-g8cq-3gq5"
+- "GMS-2023-513"
+- "CVE-2023-26047"
+package_slug: "go/github.com/kitabisa/teler-waf"
+title: "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+description: "Improper Neutralization of Input During Web Page Generation ('Cross-site
+  Scripting') in github.com/kitabisa/teler-waf."
+date: "2023-03-01"
+pubdate: "2023-03-01"
+affected_range: "<v0.2.0"
+fixed_versions:
+- "v0.2.0"
+affected_versions: "All versions before 0.2.0"
+not_impacted: "All versions starting from 0.2.0"
+solution: "Upgrade to version 0.2.0 or above."
+urls:
+- "https://github.com/kitabisa/teler-waf/security/advisories/GHSA-p2pf-g8cq-3gq5"
+- "https://github.com/dwisiswant0/cwa-filter-rules/commit/d818d1645832d1a02cd210c7680e692d2bf4313b"
+- "https://github.com/kitabisa/teler-waf/compare/v0.1.2...v0.2.0"
+- "https://github.com/kitabisa/teler-waf/releases/tag/v0.2.0"
+- "https://github.com/advisories/GHSA-p2pf-g8cq-3gq5"
+uuid: "35e395c3-ffc8-429c-8e6b-d85001f6f9a2"
+cwe_ids:
+- "CWE-1035"
+- "CWE-79"
+- "CWE-937"
+versions:
+- number: "v0.2.0"
+  commit:
+    tags:
+    - "v0.2.0"
+    sha: "57505b884ba77c4b8377685ce196d3f5e6df5654"
+    timestamp: "20230112072140"

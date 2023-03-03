@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2023-528"
+identifiers:
+- "GHSA-m4fv-gm5m-4725"
+- "GMS-2023-528"
+- "CVE-2022-1274"
+package_slug: "maven/org.keycloak/keycloak-services"
+title: "HTML Injection in Keycloak Admin REST API"
+description: "The `execute-actions-email` endpoint of the Keycloak Admin REST API
+  allows a malicious actor to send emails containing phishing links to Keycloak users.\n"
+date: "2023-03-01"
+pubdate: "2023-03-01"
+affected_range: "(,20.0.5)"
+fixed_versions:
+- "20.0.5"
+affected_versions: "All versions before 20.0.5"
+not_impacted: "All versions starting from 20.0.5"
+solution: "Upgrade to version 20.0.5 or above."
+urls:
+- "https://github.com/keycloak/keycloak/security/advisories/GHSA-m4fv-gm5m-4725"
+- "https://github.com/keycloak/keycloak/pull/16764"
+- "https://github.com/keycloak/keycloak/commit/fc3c61235fa30132123c17ed8702ff7b3a672fe9"
+- "https://github.com/advisories/GHSA-m4fv-gm5m-4725"
+uuid: "37f37dae-0143-4c23-a3f2-33625ee10937"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
