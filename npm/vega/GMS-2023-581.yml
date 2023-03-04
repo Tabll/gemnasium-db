@@ -1,0 +1,33 @@
+---
+identifier: "GMS-2023-581"
+identifiers:
+- "GHSA-cp47-r258-q626"
+- "GMS-2023-581"
+package_slug: "npm/vega"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in vega."
+date: "2023-03-02"
+pubdate: "2023-03-02"
+affected_range: "<4.5.1||>=5.0.0 <5.4.1"
+fixed_versions:
+- "4.5.1"
+- "5.4.1"
+affected_versions: "All versions before 4.5.1, all versions starting from 5.0.0 before
+  5.4.1"
+not_impacted: "All versions starting from 4.5.1 before 5.0.0, all versions starting
+  from 5.4.1"
+solution: "Upgrade to versions 4.5.1, 5.4.1 or above."
+urls:
+- "https://github.com/vega/vega/security/advisories/GHSA-cp47-r258-q626"
+- "https://github.com/vega/vega/pull/1892"
+- "https://github.com/vega/vega/commit/692327013eb4dd5adec0c47a620181af1b135e2a"
+- "https://github.com/vega/vega/commits/v4.5.1"
+- "https://github.com/vega/vega/commits/v5.4.1"
+- "https://github.com/advisories/GHSA-cp47-r258-q626"
+uuid: "04812f2c-7e7f-4378-93f4-82fd007b3c95"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

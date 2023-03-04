@@ -1,0 +1,42 @@
+---
+identifier: "GMS-2023-564"
+identifiers:
+- "GHSA-6gc3-crp7-25w5"
+- "GMS-2023-564"
+- "CVE-2023-26483"
+package_slug: "go/github.com/russellhaering/gosaml2"
+title: "gosaml2 vulnerable to Denial Of Service Via Deflate Decompression Bomb"
+description: "### Impact\nSAML Service Providers using this library for SAML authentication
+  support are likely susceptible to Denial of Service attacks. A bug in this library
+  enables attackers to craft a `deflate`-compressed request which will consume significantly
+  more memory during processing than the size of the original request. This may eventually
+  lead to memory exhaustion and the process being killed.\n\n### Mitigation\nThe maximum
+  compression ratio achievable with `deflate` is 1032:1, so by limiting the size of
+  bodies passed to gosaml2, limiting the rate and concurrency of calls, and ensuring
+  that lots of memory is available to the process it _may_ be possible to help Go's
+  garbage collector \"keep up\".\n\nImplementors are encouraged not to rely on this.\n\n###
+  Patches\nThis issue is addressed in v0.9.0"
+date: "2023-03-02"
+pubdate: "2023-03-02"
+affected_range: "<v0.9.0"
+fixed_versions:
+- "v0.9.0"
+affected_versions: "All versions before 0.9.0"
+not_impacted: "All versions starting from 0.9.0"
+solution: "Upgrade to version 0.9.0 or above."
+urls:
+- "https://github.com/russellhaering/gosaml2/security/advisories/GHSA-6gc3-crp7-25w5"
+- "https://github.com/russellhaering/gosaml2/commit/f9d66040241093e8702649baff50cc70d2c683c0"
+- "https://github.com/russellhaering/gosaml2/releases/tag/v0.9.0"
+- "https://github.com/advisories/GHSA-6gc3-crp7-25w5"
+uuid: "40e5d471-f32c-4f42-b274-169eec2ec247"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
+versions:
+- number: "v0.9.0"
+  commit:
+    tags:
+    - "v0.9.0"
+    sha: "629123cf78da94425d341ed99190cb68085841de"
+    timestamp: "20230301214958"

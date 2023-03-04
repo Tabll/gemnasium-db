@@ -71,6 +71,7 @@ contributions.
 | @opalmer       | #212                  |
 | @tywayne       | !22027                |
 | @Bragolgirith  | #221                  |
+| @thw0rted      | #222                  |
 
 ## Directory structure
 
