@@ -1,0 +1,46 @@
+---
+identifier: "GMS-2023-601"
+identifiers:
+- "GHSA-wxwq-525w-hcqx"
+- "GMS-2023-601"
+package_slug: "go/github.com/fkie-cad/yapscan"
+title: "Yapscan Denial of Service vulnerability in report server"
+description: "### Impact\n\nIf you use the report server, it may be vulnerable to
+  a Denial of Service attack.\n\n### Patches\n\nHas been patched in v0.19.2.\n\n###
+  References\n\nThe vulnerability was inherited by the following upstream vulnerabilites\n\n-
+  [golang.org/x/text < v0.3.7](https://github.com/advisories/GHSA-ppp9-7jff-5vj2)\n-
+  [golang.org/x/net < 0.0.0-20220906165146-f3363e06e74c](https://github.com/advisories/GHSA-69cg-p879-7622)\n"
+date: "2023-03-03"
+pubdate: "2023-03-03"
+affected_range: ">=v0.18.0 <v0.19.2"
+fixed_versions:
+- "v0.19.2"
+affected_versions: "All versions starting from 0.18.0 before 0.19.2"
+not_impacted: "All versions before 0.18.0, all versions starting from 0.19.2"
+solution: "Upgrade to version 0.19.2 or above."
+urls:
+- "https://github.com/fkie-cad/yapscan/security/advisories/GHSA-wxwq-525w-hcqx"
+- "https://github.com/fkie-cad/yapscan/pull/46"
+- "https://github.com/fkie-cad/yapscan/commit/242b4b25b107deacddd4ca276b45d23e16bb3b88"
+- "https://github.com/fkie-cad/yapscan/commit/65f277662c6475eb3f592e0e4fdfee902ecd9326"
+- "https://github.com/advisories/GHSA-69cg-p879-7622"
+- "https://github.com/advisories/GHSA-ppp9-7jff-5vj2"
+- "https://github.com/fkie-cad/yapscan/releases/tag/v0.19.2"
+- "https://github.com/advisories/GHSA-wxwq-525w-hcqx"
+uuid: "7e1540e6-d19c-41a0-acb0-15afee542d5b"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
+versions:
+- number: "v0.18.0"
+  commit:
+    tags:
+    - "v0.18.0"
+    sha: "bde8c9cd9033c1ac137bc99b78d9fe78c1f929d1"
+    timestamp: "20221209144659"
+- number: "v0.19.2"
+  commit:
+    tags:
+    - "v0.19.2"
+    sha: "ae3feaf6bd7269865ad534295982a16e78021677"
+    timestamp: "20230303104413"
