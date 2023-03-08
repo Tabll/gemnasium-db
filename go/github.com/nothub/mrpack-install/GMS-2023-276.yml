@@ -2,11 +2,12 @@
 identifier: "GMS-2023-276"
 identifiers:
 - "GHSA-r887-gfxh-m9rr"
+- "CVE-2023-25307"
 - "GMS-2023-276"
 package_slug: "go/github.com/nothub/mrpack-install"
 title: "Relative Path Traversal"
 description: "Relative Path Traversal in github.com/nothub/mrpack-install."
-date: "2023-02-08"
+date: "2023-03-06"
 pubdate: "2023-02-08"
 affected_range: "<=v0.16.2"
 fixed_versions:
