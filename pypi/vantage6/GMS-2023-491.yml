@@ -14,9 +14,9 @@ description: "### Impact\nWe are incorporating the password policies listed in h
   to 3.8.0+\n\n### Workarounds\nNo\n\n### References\nhttps://github.com/vantage6/vantage6/issues/59\n\n###
   For more information\nIf you have any questions or comments about this advisory:\n*
   Email us at [vantage6@iknl.nl](mailto:vantage6@iknl.nl)\n"
-date: "2023-02-28"
-pubdate: "2023-02-28"
-affected_range: "<3.8.0"
+date: "2023-03-09"
+pubdate: "2023-03-01"
+affected_range: ">=3.3.3,<3.8.0"
 fixed_versions:
 - "3.8.0"
 affected_versions: "All versions before 3.8.0"

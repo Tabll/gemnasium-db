@@ -1,0 +1,41 @@
+---
+identifier: "GMS-2023-663"
+identifiers:
+- "GHSA-3h57-hmj3-gj3p"
+- "GMS-2023-663"
+- "CVE-2023-27530"
+package_slug: "gem/rack"
+title: "Rack has possible DoS Vulnerability in Multipart MIME parsing"
+description: "There is a possible DoS vulnerability in the Multipart MIME parsing
+  code in Rack. This vulnerability has been assigned the CVE identifier CVE-2023-27530.\n\nVersions
+  Affected: All. Not affected: None Fixed Versions: 3.0.4.2, 2.2.6.3, 2.1.4.3, 2.0.9.3\n\n#
+  Impact\nThe Multipart MIME parsing code in Rack limits the number of file parts,
+  but does not limit the total number of parts that can be uploaded. Carefully crafted
+  requests can abuse this and cause multipart parsing to take longer than expected.\n\nAll
+  users running an affected release should either upgrade or use one of the workarounds
+  immediately.\n\n# Workarounds\nA proxy can be configured to limit the POST body
+  size which will mitigate this issue.\n"
+date: "2023-03-08"
+pubdate: "2023-03-08"
+affected_range: "<2.0.9.3||>=2.1.0 <2.1.4.3||>=2.2.0 <2.2.6.3||>=3.0.0 <3.0.4.2"
+fixed_versions:
+- "2.0.9.3"
+- "2.1.4.3"
+- "2.2.6.3"
+- "3.0.4.2"
+affected_versions: "All versions before 2.0.9.3, all versions starting from 2.1.0
+  before 2.1.4.3, all versions starting from 2.2.0 before 2.2.6.3, all versions starting
+  from 3.0.0 before 3.0.4.2"
+not_impacted: "All versions starting from 2.0.9.3 before 2.1.0, all versions starting
+  from 2.1.4.3 before 2.2.0, all versions starting from 2.2.6.3 before 3.0.0, all
+  versions starting from 3.0.4.2"
+solution: "Upgrade to versions 2.0.9.3, 2.1.4.3, 2.2.6.3, 3.0.4.2 or above."
+urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2023-27530"
+- "https://discuss.rubyonrails.org/t/cve-2023-27530-possible-dos-vulnerability-in-multipart-mime-parsing/82388"
+- "https://github.com/rubysec/ruby-advisory-db/blob/master/gems/rack/CVE-2023-27530.yml"
+- "https://github.com/advisories/GHSA-3h57-hmj3-gj3p"
+uuid: "8cb7e242-c54e-46c7-b1f7-a1dc6fcec080"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
