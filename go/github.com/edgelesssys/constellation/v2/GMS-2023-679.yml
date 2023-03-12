@@ -1,0 +1,35 @@
+---
+identifier: "GMS-2023-679"
+identifiers:
+- "GHSA-6w5f-5wgr-qjg5"
+- "GMS-2023-679"
+package_slug: "go/github.com/edgelesssys/constellation/v2"
+title: "Constellation allows Emergency shell access during initramfs boot phase"
+description: "### Impact\n\nAn active attacker could let the boot fail on purpose
+  in the initramfs, dropping the serial console into an emergency shell. This gives
+  attackers with access to the serial console full control over the VM.\n\n### Patches\n\nThe
+  issue has been patched in [v2.6.0](https://github.com/edgelesssys/constellation/releases/tag/v2.6.0).\n\n###
+  Workarounds\n\nnone\n\n"
+date: "2023-03-09"
+pubdate: "2023-03-09"
+affected_range: "<v2.6.0"
+fixed_versions:
+- "v2.6.0"
+affected_versions: "All versions before 2.6.0"
+not_impacted: "All versions starting from 2.6.0"
+solution: "Upgrade to version 2.6.0 or above."
+urls:
+- "https://github.com/edgelesssys/constellation/security/advisories/GHSA-6w5f-5wgr-qjg5"
+- "https://github.com/edgelesssys/constellation/releases/tag/v2.6.0"
+- "https://github.com/advisories/GHSA-6w5f-5wgr-qjg5"
+uuid: "d36e4304-c429-462a-8f53-aaa8b029a1b4"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
+versions:
+- number: "v2.6.0"
+  commit:
+    tags:
+    - "v2.6.0"
+    sha: "0413b4cc103c18d46fed4fd020dee30ede8e556c"
+    timestamp: "20230308154826"
