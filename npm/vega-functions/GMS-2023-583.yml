@@ -6,8 +6,14 @@ identifiers:
 - "CVE-2023-26486"
 package_slug: "npm/vega-functions"
 title: "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
-description: "Improper Neutralization of Input During Web Page Generation ('Cross-site
-  Scripting') in vega-functions."
+description: "Vega is a visualization grammar, a declarative format for creating,
+  saving, and sharing interactive visualization designs. The Vega `scale` expression
+  function has the ability to call arbitrary functions with a single controlled argument.
+  The scale expression function passes a user supplied argument group to getScale,
+  which is then used as if it were an internal context. The context.scales[name].value
+  is accessed from group and called as a function back in scale. This can be exploited
+  to escape the Vega expression sandbox in order to execute arbitrary JavaScript.
+  This issue has been fixed in version 5.13.1."
 date: "2023-03-02"
 pubdate: "2023-03-02"
 affected_range: "<5.13.1"

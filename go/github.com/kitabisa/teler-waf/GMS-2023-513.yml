@@ -6,8 +6,17 @@ identifiers:
 - "CVE-2023-26047"
 package_slug: "go/github.com/kitabisa/teler-waf"
 title: "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
-description: "Improper Neutralization of Input During Web Page Generation ('Cross-site
-  Scripting') in github.com/kitabisa/teler-waf."
+description: "teler-waf is a Go HTTP middleware that provides teler IDS functionality
+  to protect against web-based attacks. In teler-waf prior to version v0.2.0 is vulnerable
+  to a bypass attack when a specific case-sensitive hex entities payload with special
+  characters such as CR/LF and horizontal tab is used. This vulnerability allows an
+  attacker to execute arbitrary JavaScript code on the victim's browser and compromise
+  the security of the web application. An attacker can exploit this vulnerability
+  to bypass common web attack threat rules in teler-waf and launch cross-site scripting
+  (XSS) attacks. The attacker can execute arbitrary JavaScript code on the victim's
+  browser and steal sensitive information, such as login credentials and session tokens,
+  or take control of the victim's browser and perform malicious actions. This issue
+  has been patched in version 0.2.0."
 date: "2023-03-01"
 pubdate: "2023-03-01"
 affected_range: "<v0.2.0"

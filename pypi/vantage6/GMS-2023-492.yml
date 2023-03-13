@@ -6,14 +6,10 @@ identifiers:
 - "CVE-2023-23929"
 package_slug: "pypi/vantage6"
 title: "vantage6 refresh tokens do not expire"
-description: "From issue: \n\nProblem description\nCurrently, the refresh token is
-  valid indefinitely. This is bad security practice.\n\nDesired solution\nThe refresh
-  token should get a validity of 24-48 hours.\n\nAdditional context\n\nWhen implementing
-  this, also check that the refresh token returns a new refresh token\nWhen implementing
-  this, also adapt the UI so that it logs out if refresh token is no longer valid.\nWhen
-  implementing this, ensure that nodes refresh their token periodically so that they
-  do not have to be restarted manually.\n\n\n### Impact\n### Patches\nNone available
-  \n\n### Workarounds\nNone available\n\n"
+description: "vantage6 is a privacy preserving federated learning infrastructure for
+  secure insight exchange. Currently, the refresh token is valid indefinitely. The
+  refresh token should get a validity of 24-48 hours. A fix was released in version
+  3.8.0."
 date: "2023-02-28"
 pubdate: "2023-02-28"
 affected_range: "<3.8.0"
@@ -23,10 +19,12 @@ affected_versions: "All versions before 3.8.0"
 not_impacted: "All versions starting from 3.8.0"
 solution: "Upgrade to version 3.8.0 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2023-23929"
 - "https://github.com/vantage6/vantage6/security/advisories/GHSA-4w59-c3gc-rrhp"
 - "https://github.com/vantage6/vantage6/commit/48ebfca42359e9a6743e9598684585e2522cdce8"
 - "https://github.com/advisories/GHSA-4w59-c3gc-rrhp"
 uuid: "324e744a-f8bf-4d48-856a-58391c70339d"
 cwe_ids:
 - "CWE-1035"
+- "CWE-613"
 - "CWE-937"
