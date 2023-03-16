@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2023-737"
+identifiers:
+- "GHSA-hw7c-3rfg-p46j"
+- "GMS-2023-737"
+- "CVE-2023-24535"
+package_slug: "go/google.golang.org/protobuf"
+title: "Panic leading to denial of service"
+description: "Parsing invalid messages can panic.\n\nParsing a text-format message
+  which contains a potential number consisting of a minus sign, one or more characters
+  of whitespace, and no further input will cause a panic."
+date: "2023-03-14"
+pubdate: "2023-03-14"
+affected_range: ">=1.29.0 <1.29.1"
+fixed_versions:
+- "1.29.1"
+affected_versions: "All versions starting from 1.29.0 before 1.29.1"
+not_impacted: "All versions before 1.29.0, all versions starting from 1.29.1"
+solution: "Upgrade to version 1.29.1 or above."
+urls:
+- "https://github.com/golang/protobuf/issues/1530"
+- "https://go.dev/cl/475995"
+- "https://pkg.go.dev/vuln/GO-2023-1631"
+- "https://github.com/advisories/GHSA-hw7c-3rfg-p46j"
+uuid: "1b1b4a1b-ad58-4a29-bab6-9bfe1fabb819"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
