@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2023-781"
+identifiers:
+- "GHSA-rrwm-8wqm-gwgv"
+- "GMS-2023-781"
+package_slug: "packagist/pimcore/pimcore"
+title: "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+description: "Improper Neutralization of Input During Web Page Generation ('Cross-site
+  Scripting') in pimcore/pimcore."
+date: "2023-03-16"
+pubdate: "2023-03-16"
+affected_range: "<10.5.19"
+fixed_versions:
+- "10.5.19"
+affected_versions: "All versions before 10.5.19"
+not_impacted: "All versions starting from 10.5.19"
+solution: "Upgrade to version 10.5.19 or above."
+urls:
+- "https://github.com/pimcore/pimcore/security/advisories/GHSA-rrwm-8wqm-gwgv"
+- "https://github.com/advisories/GHSA-rrwm-8wqm-gwgv"
+uuid: "33a35337-e7d7-42c5-9b12-a628154b8f57"
+cwe_ids:
+- "CWE-1035"
+- "CWE-79"
+- "CWE-937"
