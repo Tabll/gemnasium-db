@@ -1,9 +1,9 @@
 ---
 identifier: "GMS-2023-493"
 identifiers:
+- "CVE-2023-22738"
 - "GHSA-vvjv-97j8-94xh"
 - "GMS-2023-493"
-- "CVE-2023-22738"
 package_slug: "pypi/vantage6"
 title: "vantage6 vulnerable to Improper Preservation of Permissions"
 description: "vantage6 is a privacy preserving federated learning infrastructure for
@@ -12,8 +12,8 @@ description: "vantage6 is a privacy preserving federated learning infrastructure
   A is accidentally assigned to organization B, they will retain their permissions
   and therefore might be able to access stuff they should not be allowed to access.
   This issue is patched in version 3.8.0."
-date: "2023-02-28"
-pubdate: "2023-02-28"
+date: "2023-03-10"
+pubdate: "2023-03-01"
 affected_range: "<3.8.0"
 fixed_versions:
 - "3.8.0"
@@ -24,7 +24,9 @@ urls:
 - "https://github.com/vantage6/vantage6/security/advisories/GHSA-vvjv-97j8-94xh"
 - "https://github.com/vantage6/vantage6/commit/798aca1de142a4eca175ef51112e2235642f4f24"
 - "https://github.com/advisories/GHSA-vvjv-97j8-94xh"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
 uuid: "b46a0174-1579-4e04-a9f4-23377cf23dc6"
 cwe_ids:
 - "CWE-1035"
+- "CWE-281"
 - "CWE-937"

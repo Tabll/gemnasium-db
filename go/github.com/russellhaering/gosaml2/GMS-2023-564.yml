@@ -1,9 +1,9 @@
 ---
 identifier: "GMS-2023-564"
 identifiers:
+- "CVE-2023-26483"
 - "GHSA-6gc3-crp7-25w5"
 - "GMS-2023-564"
-- "CVE-2023-26483"
 package_slug: "go/github.com/russellhaering/gosaml2"
 title: "gosaml2 vulnerable to Denial Of Service Via Deflate Decompression Bomb"
 description: "### Impact\nSAML Service Providers using this library for SAML authentication
@@ -16,8 +16,8 @@ description: "### Impact\nSAML Service Providers using this library for SAML aut
   that lots of memory is available to the process it _may_ be possible to help Go's
   garbage collector \"keep up\".\n\nImplementors are encouraged not to rely on this.\n\n###
   Patches\nThis issue is addressed in v0.9.0"
-date: "2023-03-02"
-pubdate: "2023-03-02"
+date: "2023-03-13"
+pubdate: "2023-03-03"
 affected_range: "<v0.9.0"
 fixed_versions:
 - "v0.9.0"
@@ -29,6 +29,7 @@ urls:
 - "https://github.com/russellhaering/gosaml2/commit/f9d66040241093e8702649baff50cc70d2c683c0"
 - "https://github.com/russellhaering/gosaml2/releases/tag/v0.9.0"
 - "https://github.com/advisories/GHSA-6gc3-crp7-25w5"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
 uuid: "40e5d471-f32c-4f42-b274-169eec2ec247"
 cwe_ids:
 - "CWE-1035"

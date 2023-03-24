@@ -1,17 +1,17 @@
 ---
 identifier: "GMS-2023-492"
 identifiers:
+- "CVE-2023-23929"
 - "GHSA-4w59-c3gc-rrhp"
 - "GMS-2023-492"
-- "CVE-2023-23929"
 package_slug: "pypi/vantage6"
 title: "vantage6 refresh tokens do not expire"
 description: "vantage6 is a privacy preserving federated learning infrastructure for
   secure insight exchange. Currently, the refresh token is valid indefinitely. The
   refresh token should get a validity of 24-48 hours. A fix was released in version
   3.8.0."
-date: "2023-02-28"
-pubdate: "2023-02-28"
+date: "2023-03-10"
+pubdate: "2023-03-04"
 affected_range: "<3.8.0"
 fixed_versions:
 - "3.8.0"
@@ -23,6 +23,7 @@ urls:
 - "https://github.com/vantage6/vantage6/security/advisories/GHSA-4w59-c3gc-rrhp"
 - "https://github.com/vantage6/vantage6/commit/48ebfca42359e9a6743e9598684585e2522cdce8"
 - "https://github.com/advisories/GHSA-4w59-c3gc-rrhp"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
 uuid: "324e744a-f8bf-4d48-856a-58391c70339d"
 cwe_ids:
 - "CWE-1035"

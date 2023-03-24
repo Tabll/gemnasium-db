@@ -1,9 +1,9 @@
 ---
 identifier: "GMS-2023-513"
 identifiers:
+- "CVE-2023-26047"
 - "GHSA-p2pf-g8cq-3gq5"
 - "GMS-2023-513"
-- "CVE-2023-26047"
 package_slug: "go/github.com/kitabisa/teler-waf"
 title: "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
 description: "teler-waf is a Go HTTP middleware that provides teler IDS functionality
@@ -17,8 +17,8 @@ description: "teler-waf is a Go HTTP middleware that provides teler IDS function
   browser and steal sensitive information, such as login credentials and session tokens,
   or take control of the victim's browser and perform malicious actions. This issue
   has been patched in version 0.2.0."
-date: "2023-03-01"
-pubdate: "2023-03-01"
+date: "2023-03-10"
+pubdate: "2023-03-03"
 affected_range: "<v0.2.0"
 fixed_versions:
 - "v0.2.0"
@@ -31,6 +31,7 @@ urls:
 - "https://github.com/kitabisa/teler-waf/compare/v0.1.2...v0.2.0"
 - "https://github.com/kitabisa/teler-waf/releases/tag/v0.2.0"
 - "https://github.com/advisories/GHSA-p2pf-g8cq-3gq5"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
 uuid: "35e395c3-ffc8-429c-8e6b-d85001f6f9a2"
 cwe_ids:
 - "CWE-1035"
