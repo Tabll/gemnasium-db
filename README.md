@@ -45,6 +45,7 @@ contributions.
 | @blischalkcof  | #168, #185, #213, #214, #220      |
 | @brondsem      | !1500, !1501          |
 | @vanschelven   | #210, !23063          |
+| @dmitriylewen  | #206, #223            |
 | @thklein       | #167                  |
 | @AB-xdev       | #166                  |
 | @rusher1       | !2246                 | 
@@ -66,7 +67,6 @@ contributions.
 | @rousey.thomas-heb | #203              |
 | @gmacedo       | #204                  |
 | @captncraig    | !17282                |
-| @dmitriylewen  | #206                  |
 | @u808595       | #209                  |
 | @opalmer       | #212                  |
 | @tywayne       | !22027                |
