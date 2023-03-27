@@ -1,0 +1,24 @@
+---
+identifier: "GMS-2023-883"
+identifiers:
+- "GHSA-cpmr-mw4j-99r7"
+- "GMS-2023-883"
+package_slug: "pypi/label-studio"
+title: "Relative Path Traversal"
+description: "Relative Path Traversal in label-studio."
+date: "2023-03-24"
+pubdate: "2023-03-24"
+affected_range: "<=1.7.1"
+fixed_versions: []
+affected_versions: "All versions up to 1.7.1"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/heartexlabs/label-studio/security/advisories/GHSA-cpmr-mw4j-99r7"
+- "https://github.com/heartexlabs/label-studio/blob/53944e6bcede75ca5c102d655013f2e5238e85e6/deploy/default.conf#L119"
+- "https://github.com/advisories/GHSA-cpmr-mw4j-99r7"
+uuid: "61dacb6d-85ac-45d2-b6e3-6478057d5612"
+cwe_ids:
+- "CWE-1035"
+- "CWE-352"
+- "CWE-937"
