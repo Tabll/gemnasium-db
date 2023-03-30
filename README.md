@@ -44,7 +44,7 @@ contributions.
 | @patrickmorton | #179, #180, #182        |
 | @blischalkcof  | #168, #185, #213, #214, #220      |
 | @brondsem      | !1500, !1501          |
-| @vanschelven   | #210, !23063          |
+| @vanschelven   | #210, !23063, #224    |
 | @dmitriylewen  | #206, #223            |
 | @thklein       | #167                  |
 | @AB-xdev       | #166                  |

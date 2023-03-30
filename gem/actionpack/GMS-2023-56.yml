@@ -1,21 +1,20 @@
 ---
 identifier: "GMS-2023-56"
 identifiers:
+- "CVE-2023-22795"
 - "GHSA-8xww-x3g3-6jcv"
 - "GMS-2023-56"
-- "CVE-2023-22795"
 package_slug: "gem/actionpack"
 title: "ReDoS based DoS vulnerability in Action Dispatch"
 description: "There is a possible regular expression based DoS vulnerability in Action
   Dispatch related to the If-None-Match header. This vulnerability has been assigned
-  the CVE identifier CVE-2023-22795. A specially crafted HTTP `If-None-Match`
-  header can cause the regular expression engine to enter a state of catastrophic
-  backtracking, when on a version of Ruby below 3.2.0. This can cause the process
-  to use large amounts of CPU and memory, leading to a possible DoS vulnerability
-  All users running an affected release should either upgrade or use one of the workarounds
-  immediately."
-date: "2023-01-18"
-pubdate: "2023-01-18"
+  the CVE identifier CVE-2023-22795. A specially crafted HTTP `If-None-Match` header
+  can cause the regular expression engine to enter a state of catastrophic backtracking,
+  when on a version of Ruby below 3.2.0. This can cause the process to use large amounts
+  of CPU and memory, leading to a possible DoS vulnerability All users running an
+  affected release should either upgrade or use one of the workarounds immediately."
+date: "2023-03-28"
+pubdate: "2023-02-09"
 affected_range: "<6.1.7.1||>=7.0.0 <7.0.4.1"
 fixed_versions:
 - "6.1.7.1"
@@ -28,7 +27,9 @@ solution: "Upgrade to versions 6.1.7.1, 7.0.4.1 or above."
 urls:
 - "https://github.com/rails/rails/releases/tag/v7.0.4.1"
 - "https://github.com/advisories/GHSA-8xww-x3g3-6jcv"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
 uuid: "28e35361-0e15-4f89-903e-9769326ab222"
 cwe_ids:
 - "CWE-1035"
+- "CWE-1333"
 - "CWE-937"
