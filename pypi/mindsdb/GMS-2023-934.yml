@@ -1,0 +1,24 @@
+---
+identifier: "GMS-2023-934"
+identifiers:
+- "GHSA-2g5w-29q9-w6hx"
+- "GMS-2023-934"
+package_slug: "pypi/mindsdb"
+title: "Relative Path Traversal"
+description: "Relative Path Traversal in mindsdb."
+date: "2023-03-30"
+pubdate: "2023-03-30"
+affected_range: "<=23.3.5.0"
+fixed_versions: []
+affected_versions: "All versions up to 23.3.5.0"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/mindsdb/mindsdb/security/advisories/GHSA-2g5w-29q9-w6hx"
+- "https://github.com/mindsdb/mindsdb/blob/afedd37c16e579b6dc075b0814e42d0505ccdc07/mindsdb/api/http/namespaces/file.py#L26..L134"
+- "https://github.com/advisories/GHSA-2g5w-29q9-w6hx"
+uuid: "fcb4424b-1315-48a8-83d2-1fa89cf8368d"
+cwe_ids:
+- "CWE-1035"
+- "CWE-352"
+- "CWE-937"
