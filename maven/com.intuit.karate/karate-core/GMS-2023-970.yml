@@ -1,0 +1,24 @@
+---
+identifier: "GMS-2023-970"
+identifiers:
+- "GHSA-5x5q-8cgm-2hjq"
+- "GMS-2023-970"
+package_slug: "maven/com.intuit.karate/karate-core"
+title: "Karate has vulnerable dependency on json-smart package"
+description: "Karate has vulnerable dependency on the package net.minidev:json-smart"
+date: "2023-03-31"
+pubdate: "2023-03-31"
+affected_range: "[1.3.1]"
+fixed_versions: []
+affected_versions: "Version 1.3.1"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/karatelabs/karate/security/advisories/GHSA-5x5q-8cgm-2hjq"
+- "https://github.com/oswaldobapvicjr/jsonmerge/security/advisories/GHSA-493p-pfq6-5258"
+- "https://nvd.nist.gov/vuln/detail/CVE-2023-1370"
+- "https://github.com/advisories/GHSA-5x5q-8cgm-2hjq"
+uuid: "b9b82df9-a269-4c3e-a422-bf39ff6b20a2"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

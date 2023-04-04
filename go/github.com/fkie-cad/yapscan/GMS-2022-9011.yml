@@ -15,7 +15,7 @@ description: "### Impact\n\nIf you make use of the **report receiver server** (e
   reduce the risk of this include authenticating clients (see `--client-ca` flag)
   and containerization of the yapscan server.\n\n### References\n\nThe tracking issue
   is #35. There you can find the commits, fixing the issue.\n"
-date: "2023-01-13"
+date: "2023-03-31"
 pubdate: "2022-12-29"
 affected_range: ">=v0.18.0 <v0.19.1"
 fixed_versions:

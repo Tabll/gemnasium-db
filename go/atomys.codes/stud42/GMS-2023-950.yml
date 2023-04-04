@@ -1,0 +1,24 @@
+---
+identifier: "GMS-2023-950"
+identifiers:
+- "GHSA-3hwm-922r-47hw"
+- "GMS-2023-950"
+package_slug: "go/atomys.codes/stud42"
+title: "Stud42 vulnerable to denial of service"
+description: "Stud42's API is vulnerable to a denial of service because the API pod
+  can be overloaded by the GraphQL parser."
+date: "2023-03-31"
+pubdate: "2023-03-31"
+affected_range: "<=0.22.3"
+fixed_versions: []
+affected_versions: "All versions up to 0.22.3"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/42Atomys/stud42/security/advisories/GHSA-3hwm-922r-47hw"
+- "https://github.com/42Atomys/stud42/issues/412"
+- "https://github.com/advisories/GHSA-3hwm-922r-47hw"
+uuid: "e5b9b5b8-0f88-4f46-a51d-4bbfdcd416ac"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

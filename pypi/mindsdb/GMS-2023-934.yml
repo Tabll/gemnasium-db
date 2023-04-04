@@ -8,9 +8,9 @@ title: "Relative Path Traversal"
 description: "Relative Path Traversal in mindsdb."
 date: "2023-03-30"
 pubdate: "2023-03-30"
-affected_range: "<=23.3.5.0"
+affected_range: "<=23.1.5.0"
 fixed_versions: []
-affected_versions: "All versions up to 23.3.5.0"
+affected_versions: "All versions up to 23.1.5.0"
 not_impacted: ""
 solution: "Unfortunately, there is no solution available yet."
 urls:

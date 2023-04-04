@@ -18,18 +18,20 @@ description: "### Impact\nA XML External Entity (XXE) vulnerability found in the
   formatted XML. \n\n### Patches\nThe users should aim to use the latest released
   version compatible with their Neo4j version. The minimum versions containing patch
   for this vulnerability is 4.4.0.14. \n\n### Workarounds\nIf you cannot upgrade the
-  library, you can control the allowlist
-  of the procedures that can be used in your system.\n\n### For more information\nIf
-  you have any questions or comments about this advisory:\n* Open an issue in neo4j-apoc-procedures\n*
-  Email us at [security@neo4j.com](mailto:security@neo4j.com)\n"
-date: "2023-02-24"
+  library, you can control the allowlist of the procedures that can be used in your
+  system.\n\n### For more information\nIf you have any questions or comments about
+  this advisory:\n* Open an issue in neo4j-apoc-procedures\n* Email us at [security@neo4j.com](mailto:security@neo4j.com)\n"
+date: "2023-03-31"
 pubdate: "2023-02-24"
-affected_range: "(,4.4.0.14)"
+affected_range: "(,4.4.0.14),[5.0.0,5.5.0)"
 fixed_versions:
 - "4.4.0.14"
-affected_versions: "All versions before 4.4.0.14"
-not_impacted: "All versions starting from 4.4.0.14"
-solution: "Upgrade to version 4.4.0.14 or above."
+- "5.5.0"
+affected_versions: "All versions before 4.4.0.14, all versions starting from 5.0.0
+  before 5.5.0"
+not_impacted: "All versions starting from 4.4.0.14 before 5.0.0, all versions starting
+  from 5.5.0"
+solution: "Upgrade to versions 4.4.0.14, 5.5.0 or above."
 urls:
 - "https://github.com/neo4j-contrib/neo4j-apoc-procedures/security/advisories/GHSA-9vx8-f5c4-862x"
 - "https://github.com/neo4j/apoc/security/advisories/GHSA-6wxg-wh7f-rqpr"
