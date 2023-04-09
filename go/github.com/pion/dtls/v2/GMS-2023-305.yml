@@ -8,7 +8,7 @@ title: "Out-of-bounds Read"
 description: "When attempting to unmarshal a Server Hello request we could attempt
   to unmarshal into a buffer that was too small. This could result in a panic leading
   the program to crash. This issue could be abused to cause a denial of service."
-date: "2023-02-13"
+date: "2023-04-04"
 pubdate: "2023-02-07"
 affected_range: "<v2.2.4"
 fixed_versions:

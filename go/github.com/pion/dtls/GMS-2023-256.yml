@@ -9,7 +9,7 @@ description: "### Impact\n\nDuring the unmarshalling of a hello verify request w
   could try to unmarshal into too small a buffer. is could result in a panic leading
   the program to crash.\n\nThis issue could be abused to cause a denial of service.\n\n###
   Workaround\n\nNone, upgrade to 2.2.4\n"
-date: "2023-02-13"
+date: "2023-04-04"
 pubdate: "2023-02-07"
 affected_range: "<v2.2.4"
 fixed_versions:

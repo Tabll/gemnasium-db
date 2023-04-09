@@ -18,7 +18,7 @@ description: "In Cronos nodes running versions before v0.7.0, the contract selfd
   the Cronos mainnet beta network. If a contract is subject to DoS due to this issue,
   the user can redeploy the same contract, i.e with identical bytecode, so that the
   original contract's code is recovered.\n"
-date: "2023-01-07"
+date: "2023-04-05"
 pubdate: "2022-08-11"
 affected_range: "<=v0.7.0"
 fixed_versions:
