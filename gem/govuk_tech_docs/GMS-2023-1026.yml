@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2023-1026"
+identifiers:
+- "GHSA-x2xw-hw8g-6773"
+- "GMS-2023-1026"
+package_slug: "gem/govuk_tech_docs"
+title: "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+description: "Improper Neutralization of Input During Web Page Generation ('Cross-site
+  Scripting') in govuk_tech_docs."
+date: "2023-04-11"
+pubdate: "2023-04-11"
+affected_range: ">=2.0.2 <3.3.1"
+fixed_versions:
+- "3.3.1"
+affected_versions: "All versions starting from 2.0.2 before 3.3.1"
+not_impacted: "All versions before 2.0.2, all versions starting from 3.3.1"
+solution: "Upgrade to version 3.3.1 or above."
+urls:
+- "https://github.com/alphagov/tech-docs-gem/security/advisories/GHSA-x2xw-hw8g-6773"
+- "https://github.com/alphagov/tech-docs-gem/pull/323"
+- "https://github.com/alphagov/tech-docs-gem/releases/tag/v3.3.1"
+- "https://github.com/advisories/GHSA-x2xw-hw8g-6773"
+uuid: "7d757ec8-34ef-4081-8aff-dc752abec0c0"
+cwe_ids:
+- "CWE-1035"
+- "CWE-79"
+- "CWE-937"
