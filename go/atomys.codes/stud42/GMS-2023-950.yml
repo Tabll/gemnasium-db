@@ -7,13 +7,14 @@ package_slug: "go/atomys.codes/stud42"
 title: "Stud42 vulnerable to denial of service"
 description: "Stud42's API is vulnerable to a denial of service because the API pod
   can be overloaded by the GraphQL parser."
-date: "2023-03-31"
+date: "2023-04-14"
 pubdate: "2023-03-31"
-affected_range: "<=0.22.3"
-fixed_versions: []
-affected_versions: "All versions up to 0.22.3"
-not_impacted: ""
-solution: "Unfortunately, there is no solution available yet."
+affected_range: "<0.23.0"
+fixed_versions:
+- "0.23.0"
+affected_versions: "All versions before 0.23.0"
+not_impacted: "All versions starting from 0.23.0"
+solution: "Upgrade to version 0.23.0 or above."
 urls:
 - "https://github.com/42Atomys/stud42/security/advisories/GHSA-3hwm-922r-47hw"
 - "https://github.com/42Atomys/stud42/issues/412"
