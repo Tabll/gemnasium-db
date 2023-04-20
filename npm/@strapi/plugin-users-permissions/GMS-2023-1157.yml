@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2023-1157"
+identifiers:
+- "GHSA-xv3q-jrmm-4fxv"
+- "GMS-2023-1157"
+package_slug: "npm/@strapi/plugin-users-permissions"
+title: "Authentication Bypass in @strapi/plugin-users-permissions"
+description: "Strapi through 4.5.6 does not verify the access or ID
+  tokens issued during the OAuth flow when the AWS Cognito login provider is used
+  for authentication."
+date: "2023-04-18"
+pubdate: "2023-04-18"
+affected_range: ">=3.2.1 <4.6.0"
+fixed_versions:
+- "4.6.0"
+affected_versions: "All versions starting from 3.2.1 before 4.6.0"
+not_impacted: "All versions before 3.2.1, all versions starting from 4.6.0"
+solution: "Upgrade to version 4.6.0 or above."
+urls:
+- "https://github.com/strapi/strapi/security/advisories/GHSA-xv3q-jrmm-4fxv"
+- "https://github.com/strapi/strapi/pull/15382"
+- "https://github.com/strapi/strapi/commit/d0edd25ceb49d275d710bf8d59999a2c07072893"
+- "https://github.com/strapi/strapi/releases/tag/v4.6.0"
+- "https://github.com/advisories/GHSA-xv3q-jrmm-4fxv"
+uuid: "37512a77-ce2c-48ae-b0d9-57324ae85ae2"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
