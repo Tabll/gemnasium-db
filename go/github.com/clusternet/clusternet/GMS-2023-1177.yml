@@ -2,6 +2,7 @@
 identifier: "GMS-2023-1177"
 identifiers:
 - "GHSA-833c-xh79-p429"
+- "CVE-2023-30622"
 - "GMS-2023-1177"
 package_slug: "go/github.com/clusternet/clusternet"
 title: "A potential risk in clusternet which can be leveraged to make a cluster-level
@@ -16,7 +17,7 @@ description: "## Summary:\nA potential risk in clusternet which can be leveraged
   can leverage the service account to do malicious actions to critical system resources.
   For example, he/she can leverage the service account to get ALL secrets in the entire
   cluster, resulting in cluster-level privilege escalation."
-date: "2023-04-23"
+date: "2023-04-24"
 pubdate: "2023-04-21"
 affected_range: "<v0.15.2"
 fixed_versions:
@@ -31,6 +32,7 @@ urls:
 uuid: "cbf8d247-0701-4fae-8669-e697f4d075eb"
 cwe_ids:
 - "CWE-1035"
+- "CWE-269"
 - "CWE-937"
 versions:
 - number: "v0.15.2"

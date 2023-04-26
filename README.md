@@ -221,7 +221,7 @@ The YAML schema also supports temporary fields. All temporary field names start 
 an underscore `_` character. Note that temporary fields may disappear in the
 future.
 
-Our YAML file schema for advisories is specified in [schema/schema.json](schema/schema.json).
+Our YAML file schema for advisories is specified in [ci/schema/schema.json](ci/schema/schema.json).
 
 Here's a sample document:
 
