@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2023-1193"
+identifiers:
+- "GHSA-wqm8-jx8r-8rcq"
+- "GMS-2023-1193"
+package_slug: "packagist/silverstripe/admin"
+title: "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+description: "Improper Neutralization of Input During Web Page Generation ('Cross-site
+  Scripting') in silverstripe/admin."
+date: "2023-04-26"
+pubdate: "2023-04-26"
+affected_range: "<1.12.7"
+fixed_versions:
+- "1.12.7"
+affected_versions: "All versions before 1.12.7"
+not_impacted: "All versions starting from 1.12.7"
+solution: "Upgrade to version 1.12.7 or above."
+urls:
+- "https://github.com/silverstripe/silverstripe-admin/security/advisories/GHSA-wqm8-jx8r-8rcq"
+- "https://github.com/advisories/GHSA-vrv8-v4w8-f95h"
+- "https://www.silverstripe.org/download/security-releases/ss-2023-001"
+- "https://www.tiny.cloud/docs/release-notes/release-notes54/#securityfixes"
+- "https://github.com/advisories/GHSA-wqm8-jx8r-8rcq"
+uuid: "8f700ad7-b590-475c-9c54-c90455f4e7de"
+cwe_ids:
+- "CWE-1035"
+- "CWE-79"
+- "CWE-937"

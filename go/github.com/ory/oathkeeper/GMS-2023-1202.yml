@@ -1,0 +1,36 @@
+---
+identifier: "GMS-2023-1202"
+identifiers:
+- "GHSA-w9mr-28mw-j8hg"
+- "GMS-2023-1202"
+package_slug: "go/github.com/ory/oathkeeper"
+title: "Hop-by-hop abuse to malform header mutator"
+description: "### Impact\n\nDownstream services relying on the presence of headers
+  set by the `header` mutator could be exploited. A client can drop the header set
+  by the `header` mutator by including that header's name in the `Connection` header.
+  Example minimal config:\n\n```yaml\n- id: 'example'\n upstream:\n  url: 'https://example.com'\n
+  match:\n  url: 'http://127.0.0.1:4455/'\n  methods:\n   - GET\n authenticators:\n
+  \ - handler: anonymous\n authorizer:\n  handler: allow\n mutators:\n  - handler:
+  header\n   config:\n    headers:\n     X-Subject: {{ .Subject }}\n```\n\n```\ncurl
+  -H \"Connection: x-subject\" http://127.0.0.1:4455/\n```\n\nThe `X-Subject` header
+  will not arrive at the downstream server. It is completely dropped. In case the
+  downstream server handles such a request in an unexpected way, an attacker can exploit
+  this, assuming they know or guess the internal header name.\n\n### Patches\n\nc5cc7f736dc84185034be4356057d1c7a656d797\n\n###
+  Workarounds\n\nThe downstream server should handle the case that an expected header
+  is not set by responding with an appropriate error.\n\n### References\n\nSee background
+  info in https://github.com/golang/go/issues/50580"
+date: "2023-04-26"
+pubdate: "2023-04-26"
+affected_range: "<0.40.3"
+fixed_versions:
+- "0.40.3"
+affected_versions: "All versions before 0.40.3"
+not_impacted: "All versions starting from 0.40.3"
+solution: "Upgrade to version 0.40.3 or above."
+urls:
+- "https://github.com/ory/oathkeeper/security/advisories/GHSA-w9mr-28mw-j8hg"
+- "https://github.com/advisories/GHSA-w9mr-28mw-j8hg"
+uuid: "f1e5caae-fb27-4f5a-a538-4474134afea3"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
