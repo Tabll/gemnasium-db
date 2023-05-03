@@ -1,0 +1,33 @@
+---
+identifier: "GMS-2023-1308"
+identifiers:
+- "GHSA-hjp3-5g2q-7jww"
+- "GMS-2023-1308"
+package_slug: "gem/audited"
+title: "Race Condition leading to logging errors"
+description: "In certain setups with threaded web servers, Audited's use of `Thread.current`
+  can incorrectly attributed audits to the wrong user. \n\nFixed in 5.3.3. \n\nIn
+  March, @convisoappsec noticed that the library in question had a Race Condition
+  problem, which caused logs to be registered at times with different users than those
+  who performed the genuine actions.\n\n- The first issue we identified was from November
+  2021: https://github.com/collectiveidea/audited/issues/601 \n- So the solution was
+  implemented in the following Pull Request: https://github.com/collectiveidea/audited/pull/669
+  \n- And the feature was published in version 5.3.3: RELEASE: https://github.com/collectiveidea/audited/pull/671\n"
+date: "2023-05-01"
+pubdate: "2023-05-01"
+affected_range: ">=4.0.0 <5.3.3"
+fixed_versions:
+- "5.3.3"
+affected_versions: "All versions starting from 4.0.0 before 5.3.3"
+not_impacted: "All versions before 4.0.0, all versions starting from 5.3.3"
+solution: "Upgrade to version 5.3.3 or above."
+urls:
+- "https://github.com/collectiveidea/audited/security/advisories/GHSA-hjp3-5g2q-7jww"
+- "https://github.com/collectiveidea/audited/issues/601"
+- "https://github.com/collectiveidea/audited/pull/669"
+- "https://github.com/collectiveidea/audited/pull/671"
+- "https://github.com/advisories/GHSA-hjp3-5g2q-7jww"
+uuid: "9ea398a2-1f69-4e9b-8e56-c8b5e773796b"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
