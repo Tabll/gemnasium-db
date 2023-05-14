@@ -1,0 +1,36 @@
+---
+identifier: "GMS-2023-1408"
+identifiers:
+- "GHSA-q3j6-22wf-3jh9"
+- "GMS-2023-1408"
+package_slug: "go/github.com/ipfs/go-bitswap"
+title: "github.com/ipfs/go-bitswap vulnerable to DOS unbounded persistent memory leak"
+description: "This package has been moved to https://pkg.go.dev/github.com/ipfs/boxo/bitswap,
+  this vulnerability is tracked there: 
+    https://github.com/ipfs/boxo/security/advisories/GHSA-m974-xj4j-7qv5
+  (`CVE-2023-25568`)"
+date: "2023-05-11"
+pubdate: "2023-05-11"
+affected_range: "<v0.12.0"
+fixed_versions:
+- "v0.12.0"
+affected_versions: "All versions before 0.12.0"
+not_impacted: "All versions starting from 0.12.0"
+solution: "Upgrade to version 0.12.0 or above."
+urls:
+- "https://github.com/ipfs/boxo/security/advisories/GHSA-m974-xj4j-7qv5"
+- "https://github.com/ipfs/go-bitswap/security/advisories/GHSA-q3j6-22wf-3jh9"
+- "https://github.com/ipfs/go-libipfs/security/advisories/GHSA-m974-xj4j-7qv5"
+- "https://nvd.nist.gov/vuln/detail/CVE-2023-25568"
+- "https://github.com/advisories/GHSA-q3j6-22wf-3jh9"
+uuid: "6a2db8af-c92c-4103-bbda-b22ed71535ab"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
+versions:
+- number: "v0.12.0"
+  commit:
+    tags:
+    - "v0.12.0"
+    sha: "580c92268a30f67a98f40635efe1933277e9a649"
+    timestamp: "20230127220034"
