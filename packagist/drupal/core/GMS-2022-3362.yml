@@ -17,7 +17,7 @@ description: "In some situations, the Image module does not correctly check acce
   provide a way to change that in the admin UI.\n\nSome sites may require configuration
   changes following this security release. Review the release notes for your Drupal
   version if you have issues accessing files or image styles after updating."
-date: "2023-05-09"
+date: "2023-05-18"
 pubdate: "2023-04-26"
 affected_range: ">=7.0.0,<7.91||>=8.0.0,<9.3.19||>=9.4.0,<9.4.3"
 fixed_versions:
