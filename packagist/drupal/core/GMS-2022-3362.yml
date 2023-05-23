@@ -17,18 +17,17 @@ description: "In some situations, the Image module does not correctly check acce
   provide a way to change that in the admin UI.\n\nSome sites may require configuration
   changes following this security release. Review the release notes for your Drupal
   version if you have issues accessing files or image styles after updating."
-date: "2023-05-18"
+date: "2023-05-09"
 pubdate: "2023-04-26"
-affected_range: ">=7.0.0,<7.91||>=8.0.0,<9.3.19||>=9.4.0,<9.4.3"
+affected_range: ">=7.0,<7.91||>=8.0.0,<9.3.19||>=9.4.0,<9.4.3"
 fixed_versions:
-- "7.91"
 - "9.3.19"
 - "9.4.3"
-affected_versions: "All versions starting from 7.0.0 before 7.91, all versions starting
+affected_versions: "All versions starting from 7.0 before 7.91, all versions starting
   from 8.0.0 before 9.3.19, all versions starting from 9.4.0 before 9.4.3"
-not_impacted: "All versions before 7.0.0, all versions starting from 7.91 before 8.0.0,
+not_impacted: "All versions before 7.0, all versions starting from 7.91 before 8.0.0,
   all versions starting from 9.3.19 before 9.4.0, all versions starting from 9.4.3"
-solution: "Upgrade to versions 7.91, 9.3.19, 9.4.3 or above."
+solution: "Upgrade to versions 9.3.19, 9.4.3 or above."
 urls:
 - "https://github.com/drupal/core/commit/2d5f47fc8a166115f56c2330a81e83abe22445cf"
 - "https://github.com/drupal/core/commit/e2fbf63700819cb470a1be425798f1a3f2020116"
