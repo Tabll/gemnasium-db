@@ -72,6 +72,7 @@ contributions.
 | @tywayne       | !22027                |
 | @Bragolgirith  | #221                  |
 | @thw0rted      | #222                  |
+| @weyert-tapico | #226 |
 
 ## Directory structure
 
