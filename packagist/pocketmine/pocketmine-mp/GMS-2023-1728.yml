@@ -1,0 +1,36 @@
+---
+identifier: "GMS-2023-1728"
+identifiers:
+- "GHSA-42qm-8v8m-m78c"
+- "GMS-2023-1728"
+package_slug: "packagist/pocketmine/pocketmine-mp"
+title: "PocketMine MP vulnerable to uncontrolled resource consumption via mismatched
+  type of 'InventoryTransactionPacket'"
+description: "### Impact\nA \"mismatch\" type `InventoryTransactionPacket` is sent
+  by the client to request a resync of all currently open inventories.\n\nSince PocketMine-MP
+  does not rate-limit these \"mismatch\" transactions, and the syncing of inventories
+  is not deferred until, e.g. the end of the current tick, they can be used as a very
+  cheap bandwidth multiplier by making the server send out many MB of data (network
+  serialized inventory items can be very large, especially when dealing with large
+  amounts of NBT).\n\nThis is not currently known to have been exploited in the wild.\n\n###
+  Patches\nThis problem was fixed in 4.18.0-ALPHA2 by ca6d51498f12427a947467da8fcad7811418e6cc
+  alongside the introduction of the `ItemStackRequest` system implementation.\n\n###
+  Workarounds\nPlugins can handle `DataPacketReceiveEvent` for `InventoryTransactionPacket`
+  and check if the type is `MismatchTransactionData`. If it is, apply some kind of
+  rate limit (e.g. max 1 per tick)."
+date: "2023-06-01"
+pubdate: "2023-06-01"
+affected_range: "<4.18.0-ALPHA2"
+fixed_versions:
+- "4.18.0-ALPHA2"
+affected_versions: "All versions before 4.18.0-alpha2"
+not_impacted: "All versions starting from 4.18.0-alpha2"
+solution: "Upgrade to version 4.18.0-ALPHA2 or above."
+urls:
+- "https://github.com/pmmp/PocketMine-MP/security/advisories/GHSA-42qm-8v8m-m78c"
+- "https://github.com/pmmp/PocketMine-MP/blob/4.18.0-ALPHA2/changelogs/4.18-alpha.md#4180-ALPHA2"
+- "https://github.com/advisories/GHSA-42qm-8v8m-m78c"
+uuid: "24426f10-a3e0-45eb-9e2b-9911d87aa609"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
