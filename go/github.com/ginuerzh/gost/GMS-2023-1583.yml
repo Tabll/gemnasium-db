@@ -1,8 +1,8 @@
 ---
 identifier: "GMS-2023-1583"
 identifiers:
-- "GHSA-qjrq-hm79-49ww"
 - "CVE-2023-32691"
+- "GHSA-qjrq-hm79-49ww"
 - "GMS-2023-1583"
 package_slug: "go/github.com/ginuerzh/gost"
 title: "ginuerzh/gost vulnerable to Timing Attack"
@@ -29,8 +29,8 @@ description: "[Timing attacks](https://en.wikipedia.org/wiki/Timing_attack) occu
   \"\" || password == v)\n+\tpassOk := subtle.ConstantTimeCompare([]byte(password),
   []byte(v)) == 0\n+\treturn ok && (v == \"\" || passOk)\n }\n \n // Add adds a key-value
   pair to the Authenticator.\n-- \n2.25.1\n\n```"
-date: "2023-05-23"
-pubdate: "2023-05-22"
+date: "2023-06-05"
+pubdate: "2023-05-30"
 affected_range: "<=v2.11.5"
 fixed_versions: []
 affected_versions: "All versions up to 2.11.5"
@@ -40,9 +40,11 @@ urls:
 - "https://github.com/ginuerzh/gost/security/advisories/GHSA-qjrq-hm79-49ww"
 - "https://github.com/ginuerzh/gost/blob/1c62376e0880e4094bd3731e06bd4f7842638f6a/auth.go#L46"
 - "https://github.com/advisories/GHSA-qjrq-hm79-49ww"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N"
 uuid: "09dac1f0-857e-410c-ba33-bf39c74e09b1"
 cwe_ids:
 - "CWE-1035"
+- "CWE-203"
 - "CWE-937"
 versions:
 - number: "v2.11.5"
