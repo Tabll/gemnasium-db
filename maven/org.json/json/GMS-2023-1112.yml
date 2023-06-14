@@ -1,0 +1,22 @@
+---
+identifier: "GMS-2023-1112"
+identifiers:
+- "GMS-2023-1112"
+package_slug: "maven/org.json/json"
+title: "Uncontrolled Resource Consumption"
+description: "Decoding invalid JSON data can cause the JVM to hang in an infinite loop leading to a Denial of Service and high CPU consumption."
+date: "2023-06-13"
+pubdate: "2023-06-13"
+affected_range: "(,20200518)"
+fixed_versions:
+- "20200518"
+affected_versions: "All versions up to 20200518"
+not_impacted: "All versions after 20200518"
+solution: "Upgrade to version 20200518 or above."
+urls:
+- "https://github.com/stleary/JSON-java/issues/484"
+- "https://github.com/stleary/JSON-java/pull/485"
+uuid: "f1925ff8-b82f-4110-b4c7-dd4233055deb"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
