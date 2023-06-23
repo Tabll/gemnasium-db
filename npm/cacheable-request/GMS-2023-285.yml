@@ -4,21 +4,15 @@ identifiers:
 - "GHSA-8x6c-cv3v-vp6g"
 - "GMS-2023-285"
 package_slug: "npm/cacheable-request"
-title: "cacheable-request depends on http-cache-semantics, which is vulnerable to
-  Regular Expression Denial of Service"
-description: "cacheable-request depends on http-cache-semanttics, which contains an
-  Inefficient Regular Expression Complexity in versions prior to 4.1.1 of that package.
-  http-cache semantics contains an Inefficient Regular Expression Complexity, leading to 
-  Denial of Service. The issue can be exploited via malicious request header values sent 
-  to a server, when that server reads the cache policy from the request using this library."
-date: "2023-02-11"
+title: "False Positive"
+description: "This advisory has been marked as a False Positive."
+date: "2023-06-23"
 pubdate: "2023-02-11"
-affected_range: "<10.2.7"
-fixed_versions:
-- "10.2.7"
-affected_versions: "All versions before 10.2.7"
-not_impacted: "All versions starting from 10.2.7"
-solution: "Upgrade to version 10.2.7 or above."
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "All versions before 0"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
 urls:
 - "https://github.com/jaredwray/cacheable-request/security/advisories/GHSA-8x6c-cv3v-vp6g"
 - "https://github.com/jaredwray/cacheable-request/commit/8a47777e4eb61960469873cf4b3a2823742fc15e"

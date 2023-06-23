@@ -1,5 +1,5 @@
 ---
-identifier: "OSDDB-108899"
+identifier: "OSVDB-108899"
 package_slug: "gem/brbackup"
 title: "SQL Injection"
 description: "This package contains a flaw that may allow carrying out an SQL injection
@@ -17,4 +17,4 @@ urls:
 - "https://github.com/rubysec/ruby-advisory-db/blob/master/gems/brbackup/OSVDB-108899.yml"
 uuid: "0717b8a7-5f8a-4460-878a-bf4f5393fe1e"
 identifiers:
-- "OSDDB-108899"
+- "OSVDB-108899"

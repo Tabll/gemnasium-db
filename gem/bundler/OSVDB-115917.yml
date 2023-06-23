@@ -1,5 +1,5 @@
 ---
-identifier: "OSDDB-115917"
+identifier: "OSVDB-115917"
 package_slug: "gem/bundler"
 title: "Install Command Process Listing Local Plaintext Credential Disclosure"
 description: "This package contains a flaw that is due to the program listing credential
@@ -19,4 +19,4 @@ urls:
 credit: "Christoph Olszowka"
 uuid: "865c5cac-7aba-4a65-aa84-18c16d31bdc0"
 identifiers:
-- "OSDDB-115917"
+- "OSVDB-115917"

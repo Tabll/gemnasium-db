@@ -1,5 +1,5 @@
 ---
-identifier: "All versions"
+identifier: "GMS-2015-60"
 package_slug: "pypi/collective.js.datatables"
 title: "XSS vulnerability"
 description: "By exploiting a Cross-site scripting vulnerability the attacker can
@@ -9,8 +9,8 @@ date: "2015-09-09"
 pubdate: "2015-09-09"
 affected_range: ">=0.0a"
 fixed_versions: []
-affected_versions: ""
-solution: "There is no solution for this vulnerability at the moment."
+affected_versions: "All versions"
+solution: "Unfortunately, there is no solution available yet."
 urls:
 - "https://github.com/DataTables/DataTables/issues/602"
 - "https://github.com/DataTables/DataTablesSrc/commit/ccf86dc5982bd8e16d"
@@ -18,4 +18,5 @@ urls:
 credit: "Onur Yilmaz"
 uuid: "5107e8f8-9c2a-485d-8340-425e040279cb"
 identifiers:
-- "All versions"
+- "GMS-2015-60"
+not_impacted: ""
