@@ -74,6 +74,7 @@ contributions.
 | @thw0rted      | #222                  |
 | @weyert-tapico | #226 |
 | @wichers | #229 |
+| @niklas.volcz | !24710 |
 
 ## Directory structure
 
