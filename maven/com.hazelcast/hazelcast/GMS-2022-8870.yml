@@ -15,7 +15,7 @@ description: "### Impact\nThe Connection handler in Hazelcast and Hazelcast Jet 
   IMDG (and Enterprise) 4.2.6\nHazelcast Platform (and Enterprise) 5.1.3\n\n### Workarounds\nThere
   is no known workaround, but setups with TLS and mutual authentication enabled significantly
   lowers the exploitation risk.\n\n### References\nhttps://support.hazelcast.com/s/article/Security-Advisory-for-CVE-2022-36437\n"
-date: "2023-01-09"
+date: "2023-08-03"
 pubdate: "2022-12-29"
 affected_range: "(,3.12.12],[4.0,4.0.6],[4.1,4.1.9],[4.2,4.2.5],[5.0,5.0.3],[5.1,5.1.2]"
 fixed_versions:
