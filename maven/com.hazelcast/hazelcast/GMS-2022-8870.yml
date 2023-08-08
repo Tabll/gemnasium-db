@@ -17,21 +17,28 @@ description: "### Impact\nThe Connection handler in Hazelcast and Hazelcast Jet 
   lowers the exploitation risk.\n\n### References\nhttps://support.hazelcast.com/s/article/Security-Advisory-for-CVE-2022-36437\n"
 date: "2023-01-09"
 pubdate: "2022-12-29"
-affected_range: "(,3.12.12],[4.0,4.0.6],[4.1,4.1.9],[4.2,4.2.5],[5.0,5.0.3],[5.1,5.1.2]"
+affected_range: "(,3.12.13),(,3.12.13),[4.0.0,4.1.10),[4.0.0,4.1.10),[4.2.0,4.2.6),[4.2.0,4.2.6),[5.0.0,5.0.4),[5.0.0,5.0.4),[5.1.0,5.1.3)"
 fixed_versions:
-- "3.12.13"
+- "4.1.10"
 - "4.1.10"
 - "4.2.6"
+- "4.2.6"
+- "5.0.4"
 - "5.0.4"
 - "5.1.3"
-affected_versions: "All versions up to 3.12.12, all versions starting from 4.0 up
-  to 4.0.6, all versions starting from 4.1 up to 4.1.9, all versions starting from
-  4.2 up to 4.2.5, all versions starting from 5.0 up to 5.0.3, all versions starting
-  from 5.1 up to 5.1.2"
-not_impacted: "All versions after 3.12.12 before 4.0, all versions after 4.0.6 before
-  4.1, all versions after 4.1.9 before 4.2, all versions after 4.2.5 before 5.0, all
-  versions after 5.0.3 before 5.1, all versions after 5.1.2"
-solution: "Upgrade to versions 3.12.13, 4.1.10, 4.2.6, 5.0.4, 5.1.3 or above."
+affected_versions: "All versions before 3.12.13, all versions before 3.12.13, all
+  versions starting from 4.0.0 before 4.1.10, all versions starting from 4.0.0 before
+  4.1.10, all versions starting from 4.2.0 before 4.2.6, all versions starting from
+  4.2.0 before 4.2.6, all versions starting from 5.0.0 before 5.0.4, all versions
+  starting from 5.0.0 before 5.0.4, all versions starting from 5.1.0 before 5.1.3"
+not_impacted: "All versions starting from 3.12.13 before 3.12.13, all versions before
+  4.0.0, all versions starting from 4.1.10, all versions before 4.0.0, all versions
+  starting from 4.1.10 before 4.2.0, all versions starting from 4.2.6, all versions
+  before 4.2.0, all versions starting from 4.2.6 before 5.0.0, all versions starting
+  from 5.0.4, all versions before 5.0.0, all versions starting from 5.0.4 before 5.1.0,
+  all versions starting from 5.1.3"
+solution: "Upgrade to versions 1.9.2, 1.9.2, 1.9.2, 1.9.2, 4.1.10, 4.1.10, 4.2.6,
+  4.2.6, 5.0.4, 5.0.4, 5.1.3 or above."
 urls:
 - "https://github.com/hazelcast/hazelcast/security/advisories/GHSA-c5hg-mr8r-f6jp"
 - "https://support.hazelcast.com/s/article/Security-Advisory-for-CVE-2022-36437"
