@@ -1,0 +1,30 @@
+---
+identifier: "GMS-2023-1880"
+identifiers:
+- "GHSA-h9wq-xcqx-mqxm"
+- "GMS-2023-1880"
+package_slug: "npm/@vendure/core"
+title: "Vendure Cross Site Request Forgery vulnerability impacting all API requests"
+description: "### Impact\nVendure is an e-commerce GraphQL framework with a number
+  of APIs and different levels of\nauthorization. By default the Cookie settings are
+  insecure, having the SameSite setting as false\nwhich results in not having one
+  (originates from the cookie-session npm package’s default\nsettings).\n\n### Patches\nIn
+  progress\n\n### Workarounds\nManually set the `authOptions.cookieOptions.sameSite`
+  configuration option to `'strict'`, `'lax'` or `true`.\n\n### References\n_Are there
+  any links users can visit to find out more?_\n"
+date: "2023-07-11"
+pubdate: "2023-07-11"
+affected_range: "<2.0.3"
+fixed_versions:
+- "2.0.3"
+affected_versions: "All versions before 2.0.3"
+not_impacted: "All versions starting from 2.0.3"
+solution: "Upgrade to version 2.0.3 or above."
+urls:
+- "https://github.com/vendure-ecommerce/vendure/security/advisories/GHSA-h9wq-xcqx-mqxm"
+- "https://github.com/vendure-ecommerce/vendure/commit/4a10d6785a3bf792ddf84053cdf232c205b82c81"
+- "https://github.com/advisories/GHSA-h9wq-xcqx-mqxm"
+uuid: "cef0ad65-2a5f-4e6f-a8cb-aa39124d6cf9"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

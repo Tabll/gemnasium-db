@@ -1,0 +1,29 @@
+---
+identifier: "GMS-2023-1827"
+identifiers:
+- "GHSA-f99h-w337-mv56"
+- "GMS-2023-1827"
+package_slug: "go/github.com/malfunkt/iprange"
+title: "iprange may panic when parsing ranges with invalid masks"
+description: "Parsing a range with a mask larger than 32 bits causes a panic."
+date: "2023-07-12"
+pubdate: "2023-07-12"
+affected_range: "<=v0.9.0"
+fixed_versions: []
+affected_versions: "All versions up to 0.9.0"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/malfunkt/iprange/issues/1"
+- "https://github.com/advisories/GHSA-f99h-w337-mv56"
+uuid: "af2c1104-ae84-4815-a667-88b18b661088"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
+versions:
+- number: "v0.9.0"
+  commit:
+    tags:
+    - "v0.9.0"
+    sha: "849731f26a4b5b24ffb3c2d2b1265b7652f33f18"
+    timestamp: "20180210233524"

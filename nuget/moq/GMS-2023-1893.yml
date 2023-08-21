@@ -1,0 +1,29 @@
+---
+identifier: "GMS-2023-1893"
+identifiers:
+- "GHSA-6r78-m64m-qwcf"
+- "GMS-2023-1893"
+package_slug: "nuget/moq"
+title: "Moq v4.20.0 and 4.20.1 share hashed user data"
+description: "Moq v4.20.0 and 4.20.1 include support for [SponsorLink](https://github.com/devlooped/SponsorLink),
+  which runs an obfuscated DLL at build time that scans local `git config` data and
+  shares the user's hashed email address with SponsorLink's remote servers. There
+  is no option to disable this.\n\nMoq v4.20.2 has removed this functionality."
+date: "2023-08-19"
+pubdate: "2023-08-10"
+affected_range: "[4.20.0,4.20.2)"
+fixed_versions:
+- "4.20.2"
+affected_versions: "All versions starting from 4.20.0 before 4.20.2"
+not_impacted: "All versions before 4.20.0, all versions starting from 4.20.2"
+solution: "Upgrade to version 4.20.2 or above."
+urls:
+- "https://github.com/moq/moq/issues/1374"
+- "https://github.com/moq/moq/pull/1363"
+- "https://github.com/moq/moq/pull/1375"
+- "https://www.cazzulino.com/sponsorlink.html"
+- "https://github.com/advisories/GHSA-6r78-m64m-qwcf"
+uuid: "6c876964-ca81-4544-9043-fa9031783c46"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

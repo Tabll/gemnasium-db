@@ -1,0 +1,34 @@
+---
+identifier: "GMS-2023-1823"
+identifiers:
+- "GHSA-2w8w-qhg4-f78j"
+- "GMS-2023-1823"
+package_slug: "go/github.com/jaegertracing/jaeger"
+title: "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+description: "Improper Neutralization of Input During Web Page Generation ('Cross-site
+  Scripting') in github.com/jaegertracing/jaeger."
+date: "2023-07-11"
+pubdate: "2023-07-11"
+affected_range: "<v1.47.0"
+fixed_versions:
+- "v1.47.0"
+affected_versions: "All versions before 1.47.0"
+not_impacted: "All versions starting from 1.47.0"
+solution: "Upgrade to version 1.47.0 or above."
+urls:
+- "https://github.com/jaegertracing/jaeger-ui/security/advisories/GHSA-vv24-rm95-q56r"
+- "https://github.com/jaegertracing/jaeger/security/advisories/GHSA-2w8w-qhg4-f78j"
+- "https://github.com/jaegertracing/jaeger-ui/blob/main/packages/jaeger-ui/src/components/TracePage/TraceTimelineViewer/SpanDetail/KeyValuesTable.tsx#L49"
+- "https://github.com/advisories/GHSA-2w8w-qhg4-f78j"
+uuid: "6882ffe1-1245-4080-bee1-f98ad44838ab"
+cwe_ids:
+- "CWE-1035"
+- "CWE-79"
+- "CWE-937"
+versions:
+- number: "v1.47.0"
+  commit:
+    tags:
+    - "v1.47.0"
+    sha: "ee6cc41ef62ba8f04de8a16431b43b620bdf571c"
+    timestamp: "20230706203811"

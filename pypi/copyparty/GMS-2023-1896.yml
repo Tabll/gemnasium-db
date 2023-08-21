@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2023-1896"
+identifiers:
+- "GHSA-cw7j-v52w-fp5r"
+- "GMS-2023-1896"
+package_slug: "pypi/copyparty"
+title: "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+description: "Improper Neutralization of Input During Web Page Generation ('Cross-site
+  Scripting') in copyparty."
+date: "2023-07-24"
+pubdate: "2023-07-21"
+affected_range: "<1.8.6"
+fixed_versions:
+- "1.8.6"
+affected_versions: "All versions before 1.8.6"
+not_impacted: "All versions starting from 1.8.6"
+solution: "Upgrade to version 1.8.6 or above."
+urls:
+- "https://github.com/9001/copyparty/security/advisories/GHSA-cw7j-v52w-fp5r"
+- "https://github.com/9001/copyparty/commit/0778da6c4d04de870c61f970763a7b619094093c"
+- "https://github.com/9001/copyparty/releases/tag/v1.8.6"
+- "https://github.com/advisories/GHSA-cw7j-v52w-fp5r"
+uuid: "d186a847-7bf3-461b-8004-84d4109851f8"
+cwe_ids:
+- "CWE-1035"
+- "CWE-79"
+- "CWE-937"

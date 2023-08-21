@@ -1,0 +1,37 @@
+---
+identifier: "GMS-2023-1908"
+identifiers:
+- "GHSA-qppv-j76h-2rpx"
+- "GMS-2023-1908"
+package_slug: "pypi/tornado"
+title: "Tornado vulnerable to HTTP request smuggling via improper parsing of `Content-Length`
+  fields and chunk lengths"
+description: "## Summary\nTornado interprets `-`, `+`, and `_` in chunk length and
+  `Content-Length` values, which are not allowed by the HTTP RFCs. This can result
+  in request smuggling when Tornado is deployed behind certain proxies that interpret
+  those non-standard characters differently. This is known to apply to older versions
+  of haproxy, although the current release is not affected.\n\n## Details\nTornado
+  uses the `int` constructor to parse the values of `Content-Length` headers and chunk
+  lengths in the following locations:\n### `tornado/http1connection.py:445`\n```python3\n
+  \     self._expected_content_remaining = int(headers[\"Content-Length\"])\n```\n###
+  `tornado/http1connection.py:621`\n```python3\n        content_length = int(headers[\"Content-Length\"])
+  # type: Optional[int]\n```\n### `tornado/http1connection.py:671`\n```python3\n      chunk_len
+  = int(chunk_len_str.strip(), 16)\n```\nBecause `int(\"0_0\") == int(\"+0\") == int(\"-0\")
+  == int(\"0\")`, using the `int` constructor to parse and validate strings that should
+  contain only ASCII digits is not a good strategy. \n\n"
+date: "2023-08-14"
+pubdate: "2023-08-14"
+affected_range: "<6.3.3"
+fixed_versions:
+- "6.3.3"
+affected_versions: "All versions before 6.3.3"
+not_impacted: "All versions starting from 6.3.3"
+solution: "Upgrade to version 6.3.3 or above."
+urls:
+- "https://github.com/tornadoweb/tornado/security/advisories/GHSA-qppv-j76h-2rpx"
+- "https://github.com/tornadoweb/tornado/commit/b7a5dd29bb02950303ae96055082c12a1ea0a4fe"
+- "https://github.com/advisories/GHSA-qppv-j76h-2rpx"
+uuid: "ed3b5889-bdb6-4b6f-a26e-bc3785269ce9"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

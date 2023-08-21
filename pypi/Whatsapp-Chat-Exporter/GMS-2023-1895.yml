@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2023-1895"
+identifiers:
+- "GHSA-8c6x-g4fw-8rf4"
+- "GMS-2023-1895"
+package_slug: "pypi/Whatsapp-Chat-Exporter"
+title: "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+description: "Improper Neutralization of Input During Web Page Generation ('Cross-site
+  Scripting') in Whatsapp-Chat-Exporter."
+date: "2023-07-10"
+pubdate: "2023-07-10"
+affected_range: "<0.9.5"
+fixed_versions:
+- "0.9.5"
+affected_versions: "All versions before 0.9.5"
+not_impacted: "All versions starting from 0.9.5"
+solution: "Upgrade to version 0.9.5 or above."
+urls:
+- "https://github.com/KnugiHK/WhatsApp-Chat-Exporter/security/advisories/GHSA-8c6x-g4fw-8rf4"
+- "https://github.com/KnugiHK/WhatsApp-Chat-Exporter/commit/bfdc68cd6ad53ceecf132773f9aaba50dd80fe79"
+- "https://github.com/advisories/GHSA-8c6x-g4fw-8rf4"
+uuid: "40f3020c-816b-4208-950c-21ba8b20f3bb"
+cwe_ids:
+- "CWE-1035"
+- "CWE-79"
+- "CWE-937"

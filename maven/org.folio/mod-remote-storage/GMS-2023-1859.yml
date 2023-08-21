@@ -1,0 +1,36 @@
+---
+identifier: "GMS-2023-1859"
+identifiers:
+- "GHSA-m8v7-469p-5x89"
+- "GMS-2023-1859"
+package_slug: "maven/org.folio/mod-remote-storage"
+title: "Hard-coded System User Credentials in Folio Data Export Spring module "
+description: "### Impact\nThe module creates a system user that is used to perform
+  internal module-to-module operations. Credentials for this user are hard-coded in
+  the source code. This makes it trivial to authenticate as this user, allowing unauthorized
+  read access to these mod-inventory-storage records: instances, holdings, items,
+  contributor-types, identifier-types. This includes records marked as suppressed
+  from discovery.\n\n### Patches\nUpgrade mod-remote-storage to >=2.0.3, or a 1.7.x
+  version >=1.7.1.\n\n### Workarounds\nNo known workarounds.\n\n### References\nhttps://wiki.folio.org/x/hbMMBw
+  - FOLIO Security Advisory with Upgrade Instructions\nhttps://github.com/folio-org/mod-remote-storage/commit/57df495f76e9aa5be9ce7ce3a65f89b6dbcbc13b
+  - Fix"
+date: "2023-07-25"
+pubdate: "2023-07-25"
+affected_range: "(,1.7.2),[2.0.0,2.0.3)"
+fixed_versions:
+- "1.7.2"
+- "2.0.3"
+affected_versions: "All versions before 1.7.2, all versions starting from 2.0.0 before
+  2.0.3"
+not_impacted: "All versions starting from 1.7.2 before 2.0.0, all versions starting
+  from 2.0.3"
+solution: "Upgrade to versions 1.7.2, 2.0.3 or above."
+urls:
+- "https://github.com/folio-org/mod-remote-storage/security/advisories/GHSA-m8v7-469p-5x89"
+- "https://github.com/folio-org/mod-remote-storage/commit/57df495f76e9aa5be9ce7ce3a65f89b6dbcbc13b"
+- "https://wiki.folio.org/x/hbMMBw"
+- "https://github.com/advisories/GHSA-m8v7-469p-5x89"
+uuid: "5efd7474-b5ed-4565-92fe-3a9cc960f56a"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

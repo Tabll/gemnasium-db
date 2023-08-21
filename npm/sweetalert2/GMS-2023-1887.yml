@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2023-1887"
+identifiers:
+- "GHSA-mrr8-v49w-3333"
+- "GMS-2023-1887"
+package_slug: "npm/sweetalert2"
+title: "sweetalert2 v11.6.14 and above contains potentially undesirable behavior"
+description: "`sweetalert2` versions 11.6.14 and above have potentially undesirable
+  behavior. The package outputs audio and/or video messages that do not pertain to
+  the functionality of the package when run on specific tlds. This functionality is
+  documented on the project's readme"
+date: "2023-07-10"
+pubdate: "2023-07-10"
+affected_range: ">=11.6.14"
+fixed_versions: []
+affected_versions: "All versions starting from 11.6.14"
+not_impacted: "All versions before 11.6.14"
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/sweetalert2/sweetalert2#important-notice-about-usage-of-this-software-for-ru-su-by-and-%D1%80%D1%84-domain-zones"
+- "https://github.com/sweetalert2/sweetalert2/releases/tag/v11.4.9"
+- "https://www.npmjs.com/package/sweetalert2"
+- "https://github.com/advisories/GHSA-mrr8-v49w-3333"
+uuid: "81381af0-a7a9-4384-921b-d81c8cf2cea9"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

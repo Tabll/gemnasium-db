@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2023-1879"
+identifiers:
+- "GHSA-gm68-572p-q28r"
+- "GMS-2023-1879"
+package_slug: "npm/@vendure/admin-ui-plugin"
+title: "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+description: "Improper Neutralization of Input During Web Page Generation ('Cross-site
+  Scripting') in @vendure/admin-ui-plugin."
+date: "2023-07-06"
+pubdate: "2023-07-06"
+affected_range: "<2.0.3"
+fixed_versions:
+- "2.0.3"
+affected_versions: "All versions before 2.0.3"
+not_impacted: "All versions starting from 2.0.3"
+solution: "Upgrade to version 2.0.3 or above."
+urls:
+- "https://github.com/vendure-ecommerce/vendure/security/advisories/GHSA-gm68-572p-q28r"
+- "https://github.com/vendure-ecommerce/vendure/commit/0cdc92b241e6fd4017ddfc9fbdca189fc7c1ada0"
+- "https://github.com/vendure-ecommerce/vendure/blob/master/CHANGELOG.md#203-2023-07-04"
+- "https://github.com/advisories/GHSA-gm68-572p-q28r"
+uuid: "94ce4e95-acfa-4036-a6bc-da3a54dcd121"
+cwe_ids:
+- "CWE-1035"
+- "CWE-79"
+- "CWE-937"

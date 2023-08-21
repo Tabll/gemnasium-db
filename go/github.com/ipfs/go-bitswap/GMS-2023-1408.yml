@@ -6,10 +6,9 @@ identifiers:
 package_slug: "go/github.com/ipfs/go-bitswap"
 title: "github.com/ipfs/go-bitswap vulnerable to DOS unbounded persistent memory leak"
 description: "This package has been moved to https://pkg.go.dev/github.com/ipfs/boxo/bitswap,
-  this vulnerability is tracked there: 
-    https://github.com/ipfs/boxo/security/advisories/GHSA-m974-xj4j-7qv5
+  this vulnerability is tracked there: https://github.com/ipfs/boxo/security/advisories/GHSA-m974-xj4j-7qv5
   (`CVE-2023-25568`)"
-date: "2023-05-11"
+date: "2023-06-16"
 pubdate: "2023-05-11"
 affected_range: "<v0.12.0"
 fixed_versions:

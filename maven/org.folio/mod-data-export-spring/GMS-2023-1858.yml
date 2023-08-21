@@ -1,0 +1,37 @@
+---
+identifier: "GMS-2023-1858"
+identifiers:
+- "GHSA-vf78-3q9f-92g3"
+- "GMS-2023-1858"
+package_slug: "maven/org.folio/mod-data-export-spring"
+title: "Hard-coded System User Credentials in Folio Data Export Spring module "
+description: "### Impact\nThe module creates a system user that is used to perform
+  internal module-to-module operations. Credentials for this user are hard-coded in
+  the source code. This makes it trivial to authenticate as this user, resulting in
+  unauthorized access to potentially dangerous APIs, allowing to view and modify configuration
+  including single-sign-on configuration, to read, add and modify user data, and to
+  read and transfer fees/fines in a patron's account.\n\n### Patches\nUpgrade mod-data-export-spring
+  to >=2.0.2, or a 1.5.x version >=1.5.4.\n\n### Workarounds\nNo known workarounds.\n\n###
+  References\nhttps://wiki.folio.org/x/hbMMBw - FOLIO Security Advisory with Upgrade
+  Instructions\nhttps://github.com/folio-org/mod-data-export-spring/commit/93aff4566bff59e30f4121b5a2bda5b0b508a446
+  - Fix"
+date: "2023-07-25"
+pubdate: "2023-07-25"
+affected_range: "(,1.5.4),[2.0.0,2.0.2)"
+fixed_versions:
+- "1.5.4"
+- "2.0.2"
+affected_versions: "All versions before 1.5.4, all versions starting from 2.0.0 before
+  2.0.2"
+not_impacted: "All versions starting from 1.5.4 before 2.0.0, all versions starting
+  from 2.0.2"
+solution: "Upgrade to versions 1.5.4, 2.0.2 or above."
+urls:
+- "https://github.com/folio-org/mod-data-export-spring/security/advisories/GHSA-vf78-3q9f-92g3"
+- "https://github.com/folio-org/mod-data-export-spring/commit/93aff4566bff59e30f4121b5a2bda5b0b508a446"
+- "https://wiki.folio.org/x/hbMMBw"
+- "https://github.com/advisories/GHSA-vf78-3q9f-92g3"
+uuid: "cc34ce65-f286-4482-a6c2-cdc2f3def20c"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
