@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2023-1964"
+identifiers:
+- "GHSA-jxcx-3h54-qqxx"
+- "GMS-2023-1964"
+package_slug: "packagist/silverstripe/admin"
+title: "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+description: "Improper Neutralization of Input During Web Page Generation ('Cross-site
+  Scripting') in silverstripe/admin."
+date: "2023-08-23"
+pubdate: "2023-08-23"
+affected_range: ">=1.0.0,<1.13.6"
+fixed_versions:
+- "1.13.6"
+affected_versions: "All versions starting from 1.0.0 before 1.13.6"
+not_impacted: "All versions before 1.0.0, all versions starting from 1.13.6"
+solution: "Upgrade to version 1.13.6 or above."
+urls:
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/silverstripe/admin/SS-2023-002.yaml"
+- "https://www.silverstripe.org/download/security-releases/SS-2023-002"
+- "https://github.com/advisories/GHSA-jxcx-3h54-qqxx"
+uuid: "0c4a623f-fc11-4b6b-8197-27ed2a8404b4"
+cwe_ids:
+- "CWE-1035"
+- "CWE-79"
+- "CWE-937"
