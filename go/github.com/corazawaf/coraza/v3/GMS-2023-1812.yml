@@ -2,6 +2,7 @@
 identifier: "GMS-2023-1812"
 identifiers:
 - "GHSA-c2pj-v37r-2p6h"
+- "CVE-2023-40586"
 - "GMS-2023-1812"
 package_slug: "go/github.com/corazawaf/coraza/v3"
 title: "Coraza has potential denial of service vulnerability"
@@ -25,7 +26,7 @@ description: "### Summary\n\nDue to the misuse of `log.Fatalf`, the application 
   by the following commit: 
   https://github.com/corazawaf/coraza/commit/24af0c8cf4f10bab558740b595712be3b85493ec.\n\n
   ### Mitigation\n\nThe error from `mime.ParseMediaType` should return directly."
-date: "2023-08-23"
+date: "2023-08-25"
 pubdate: "2023-06-26"
 affected_range: ">=v3.0.0 <v3.0.1"
 fixed_versions:
@@ -46,6 +47,7 @@ urls:
 uuid: "3e14990f-8245-4ba9-a968-ce0510dde9c9"
 cwe_ids:
 - "CWE-1035"
+- "CWE-400"
 - "CWE-937"
 versions:
 - number: "v3.0.0"

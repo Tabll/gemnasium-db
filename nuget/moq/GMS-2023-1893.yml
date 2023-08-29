@@ -9,7 +9,7 @@ description: "Moq v4.20.0 and 4.20.1 include support for [SponsorLink](https://g
   which runs an obfuscated DLL at build time that scans local `git config` data and
   shares the user's hashed email address with SponsorLink's remote servers. There
   is no option to disable this.\n\nMoq v4.20.2 has removed this functionality."
-date: "2023-08-19"
+date: "2023-08-25"
 pubdate: "2023-08-10"
 affected_range: "[4.20.0,4.20.2)"
 fixed_versions:
