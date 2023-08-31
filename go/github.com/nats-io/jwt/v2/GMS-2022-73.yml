@@ -18,7 +18,7 @@ description: "The NATS server provides for Subjects which are namespaced by Acco
   system treats account JWTs as semi-public information, such that an attacker can
   easily enumerate all account JWTs and retrieve all Import Tokens from those account
   JWTs."
-date: "2023-01-09"
+date: "2023-08-29"
 pubdate: "2022-02-15"
 affected_range: "<v2.0.1"
 fixed_versions:

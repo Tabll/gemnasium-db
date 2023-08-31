@@ -6,7 +6,7 @@ identifiers:
 package_slug: "go/github.com/ntbosscher/gobase"
 title: "gobase subject to Incorrect routing of some HTTP requests when using httpauth"
 description: "Incorrect routing of some HTTP requests when using httpauth"
-date: "2023-02-14"
+date: "2023-08-30"
 pubdate: "2022-02-11"
 affected_range: "<v0.7.2"
 fixed_versions:

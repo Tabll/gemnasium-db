@@ -7,7 +7,7 @@ package_slug: "go/github.com/russellhaering/goxmldsig"
 title: "gosaml2 is vulnerable to NULL Pointer Dereference"
 description: "This affects all versions less than 0.7.0 of package github.com/russellhaering/gosaml2.
   There is a crash on null pointer dereference caused by sending malformed XML signatures."
-date: "2023-04-04"
+date: "2023-08-30"
 pubdate: "2021-06-23"
 affected_range: "<v1.1.1"
 fixed_versions:
