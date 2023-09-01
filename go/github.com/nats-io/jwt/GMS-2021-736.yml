@@ -16,8 +16,8 @@ description: "(This advisory is canonically https://advisories.nats.io/CVE/CVE-2
   should cover any application using the old JWT API, where the nats-server is one
   of those applications.\n\n\n## Affected versions\n\n#### JWT library\n\n * all versions
   prior to 1.1.0\n * fixed after nats-io/jwt PR 103 landed (2020-10-06)\n\n#### NATS
-  Server\n\n * Version 2 prior to 2.1.9\n  + 2.0.0 through and including 2.1.8 is
-  vulnerable.\n * fixed with nats-io/nats-server PRs 1632, 1635, 1645\n\n\n## Impact\n\nTime-based
+  Server\n\n * Version 2 prior to 2.1.9\n + 2.0.0 through and including 2.1.8 is vulnerable.\n
+  * fixed with nats-io/nats-server PRs 1632, 1635, 1645\n\n\n## Impact\n\nTime-based
   credential expiry does not work.\n\n\n## Workaround\n\nHave credentials which only
   expire after fixes can be deployed.\n\n\n## Solution\n\nUpgrade the JWT dependency
   in any application using it.\n\nUpgrade the NATS server if using NATS Accounts."
