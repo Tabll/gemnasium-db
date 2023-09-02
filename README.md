@@ -75,6 +75,7 @@ contributions.
 | @weyert-tapico | #226 |
 | @wichers | #229 |
 | @niklas.volcz | !24710 |
+| @flagosatfluid | #232, #239, #240, #241, #242, #244 |
 
 ## Directory structure
 
