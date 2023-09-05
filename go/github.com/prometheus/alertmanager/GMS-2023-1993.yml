@@ -1,29 +1,28 @@
 ---
 identifier: "GMS-2023-1993"
 identifiers:
-- "GHSA-v86x-5fm3-5p7j"
 - "CVE-2023-40577"
+- "GHSA-v86x-5fm3-5p7j"
 - "GMS-2023-1993"
 package_slug: "go/github.com/prometheus/alertmanager"
 title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
   Injection')"
 description: "Improper Neutralization of Special Elements used in an OS Command ('OS
   Command Injection') in github.com/prometheus/alertmanager."
-date: "2023-08-25"
-pubdate: "2023-08-23"
-affected_range: "<=v0.25.0"
-fixed_versions:
-- "v0.25.1"
-affected_versions: "All versions up to 0.25.0"
-not_impacted: "All versions after 0.25.0"
-solution: "Upgrade to version 0.25.1 or above."
+date: "2023-08-31"
+pubdate: "2023-08-25"
+affected_range: "=v0.25.0"
+fixed_versions: []
+affected_versions: "Version 0.25.0"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
 urls:
 - "https://github.com/prometheus/alertmanager/security/advisories/GHSA-v86x-5fm3-5p7j"
 - "https://github.com/advisories/GHSA-v86x-5fm3-5p7j"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N"
 uuid: "4c9a570b-d429-4130-9114-fdb817d9566d"
 cwe_ids:
 - "CWE-1035"
-- "CWE-78"
 - "CWE-79"
 - "CWE-937"
 versions:
@@ -33,9 +32,3 @@ versions:
     - "v0.25.0"
     sha: "e575fe4a05b52f6f29c3996243234ae2782a5490"
     timestamp: "20221222142419"
-- number: "v0.25.1"
-  commit:
-    tags:
-    - "v0.25.1"
-    sha: "2972437eba02354810658c4c82306460fa0fedf7"
-    timestamp: "20230824102900"

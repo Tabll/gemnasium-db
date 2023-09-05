@@ -10,14 +10,14 @@ description: "Keycloak's OpenID Connect user authentication was found to incorre
   authenticate requests. An authenticated attacker who could also obtain a certain
   piece of info from a user request, from a victim within the same realm, could use
   that data to impersonate the victim and generate new session tokens."
-date: "2023-08-23"
+date: "2023-08-14"
 pubdate: "2023-08-04"
-affected_range: "(,21.0.1)"
+affected_range: "(,18.0.6)"
 fixed_versions:
-- "21.0.1"
-affected_versions: "All versions before 21.0.1"
-not_impacted: "All versions starting from 21.0.1"
-solution: "Upgrade to version 21.0.1 or above."
+- "19.0.0"
+affected_versions: "All versions before 18.0.6"
+not_impacted: "All versions starting from 18.0.6"
+solution: "Upgrade to version 19.0.0 or above."
 urls:
 - "https://github.com/keycloak/keycloak/security/advisories/GHSA-9g98-5mj6-f9mv"
 - "https://github.com/keycloak/keycloak/commit/ec8109112e67208c13e13f6d1f8706a5a3ba8d4c"
