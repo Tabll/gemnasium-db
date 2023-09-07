@@ -1,0 +1,35 @@
+---
+identifier: "GMS-2023-2192"
+identifiers:
+- "GHSA-23px-mw2p-46qm"
+- "GMS-2023-2192"
+package_slug: "go/github.com/cosmos/cosmos-sdk"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in github.com/cosmos/cosmos-sdk."
+date: "2023-09-06"
+pubdate: "2023-09-06"
+affected_range: "<v0.46"
+fixed_versions:
+- "v0.46"
+affected_versions: "All versions before 0.46"
+not_impacted: "All versions starting from 0.46"
+solution: "Upgrade to version 0.46 or above."
+urls:
+- "https://github.com/cosmos/cosmos-sdk/security/advisories/GHSA-23px-mw2p-46qm"
+- "https://github.com/cosmos/cosmos-sdk/blob/tools/cosmovisor/v1.5.0/tools/cosmovisor/CHANGELOG.md"
+- "https://github.com/cosmos/cosmos-sdk/releases/tag/v0.46.0"
+- "https://github.com/advisories/GHSA-23px-mw2p-46qm"
+uuid: "1746f724-3080-4e1d-a5a1-5681c3684cdc"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"
+versions:
+- number: "v0.46"
+  commit:
+    tags:
+    - "v0.46.0"
+    sha: "f8f794be69165f155f9a99a0549e0044d5d7191e"
+    timestamp: "20220726144415"
