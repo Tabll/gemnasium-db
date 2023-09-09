@@ -72,9 +72,10 @@ contributions.
 | @Bragolgirith  | #221                  |
 | @thw0rted      | #222                  |
 | @weyert-tapico | #226 |
-| @wichers | #229 |
-| @niklas.volcz | !24710 |
+| @wichers       | #229 |
+| @niklas.volcz  | !24710 |
 | @flagosatfluid | #232, #239, #240, #241, #242, #244, #257 |
+| @delifer       | #258 |
 
 ## Directory structure
 
