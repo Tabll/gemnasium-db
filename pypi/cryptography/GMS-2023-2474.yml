@@ -1,0 +1,30 @@
+---
+identifier: "GMS-2023-2474"
+identifiers:
+- "GHSA-v8gr-m533-ghj9"
+- "GMS-2023-2474"
+package_slug: "pypi/cryptography"
+title: "Vulnerable OpenSSL included in cryptography wheels"
+description: "pyca/cryptography's wheels include a statically linked copy of OpenSSL.
+  The versions of OpenSSL included in cryptography 2.5-41.0.3 is vulnerable to several
+  security issues. More details about the vulnerabilities themselves can be found
+  in https://www.openssl.org/news/secadv/20230908.txt.\n\nIf you are building cryptography
+  source (\"sdist\") then you are responsible for upgrading your copy of OpenSSL.
+  Only users installing from wheels built by the cryptography project (i.e., those
+  distributed on PyPI) need to update their cryptography versions."
+date: "2023-09-21"
+pubdate: "2023-09-21"
+affected_range: ">=2.5,<41.0.4"
+fixed_versions:
+- "41.0.4"
+affected_versions: "All versions starting from 2.5 before 41.0.4"
+not_impacted: "All versions before 2.5, all versions starting from 41.0.4"
+solution: "Upgrade to version 41.0.4 or above."
+urls:
+- "https://github.com/pyca/cryptography/security/advisories/GHSA-v8gr-m533-ghj9"
+- "https://github.com/pyca/cryptography/commit/fc11bce6930e591ce26a2317b31b9ce2b3e25512"
+- "https://github.com/advisories/GHSA-v8gr-m533-ghj9"
+uuid: "91cb25a6-605c-4ce7-b551-4dff4edf9fb7"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
