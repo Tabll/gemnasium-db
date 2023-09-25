@@ -1,9 +1,9 @@
 ---
 identifier: "GMS-2022-8406"
 identifiers:
+- "CVE-2022-3916"
 - "GHSA-97g8-xfvw-q4hg"
 - "GMS-2022-8406"
-- "CVE-2022-3916"
 package_slug: "maven/org.keycloak/keycloak-parent"
 title: "Keycloak vulnerable to session takeover with OIDC offline refreshtokens"
 description: "An issue was discovered in Keycloak when using a client with the `offline_access`
@@ -15,18 +15,20 @@ description: "An issue was discovered in Keycloak when using a client with the `
   and another user authenticates to the application. In that case, it will share the
   same root session id, and when utilizing the refresh token, they will be issued
   a token for the original user."
-date: "2022-12-13"
-pubdate: "2022-12-13"
-affected_range: "(,19.0.2]"
+date: "2023-09-22"
+pubdate: "2023-09-20"
+affected_range: "(,20.0.2)"
 fixed_versions:
 - "20.0.2"
-affected_versions: "All versions up to 19.0.2"
-not_impacted: "All versions after 19.0.2"
+affected_versions: "All versions before 20.0.2"
+not_impacted: "All versions starting from 20.0.2"
 solution: "Upgrade to version 20.0.2 or above."
 urls:
 - "https://github.com/keycloak/keycloak/security/advisories/GHSA-97g8-xfvw-q4hg"
 - "https://github.com/advisories/GHSA-97g8-xfvw-q4hg"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:N"
 uuid: "b3d87723-b9e0-4385-b744-04cb878e9d57"
 cwe_ids:
 - "CWE-1035"
+- "CWE-613"
 - "CWE-937"
