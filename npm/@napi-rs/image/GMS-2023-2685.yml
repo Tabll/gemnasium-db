@@ -1,0 +1,29 @@
+---
+identifier: "GMS-2023-2685"
+identifiers:
+- "GHSA-4vjr-crvh-383h"
+- "GMS-2023-2685"
+package_slug: "npm/@napi-rs/image"
+title: "@napi-rs/image affected by libwebp CVE"
+description: "### Impact\nHeap buffer overflow in `libwebp` allows a remote attacker
+  to perform an out-of-bounds memory write via a crafted webp image.\n\n### References\n-
+  https://github.com/advisories/GHSA-j7hp-h8jx-5ppr\n- https://blog.isosceles.com/the-webp-0day/\n"
+date: "2023-09-27"
+pubdate: "2023-09-27"
+affected_range: "<1.7.0"
+fixed_versions:
+- "1.7.0"
+affected_versions: "All versions before 1.7.0"
+not_impacted: "All versions starting from 1.7.0"
+solution: "Upgrade to version 1.7.0 or above."
+urls:
+- "https://github.com/Brooooooklyn/Image/security/advisories/GHSA-4vjr-crvh-383h"
+- "https://github.com/Brooooooklyn/Image/commit/aa07979f6cd0c534a8befea87fac1210a3b621c1"
+- "https://blog.isosceles.com/the-webp-0day/"
+- "https://github.com/Brooooooklyn/Image/releases/tag/%40napi-rs%2Fimage%401.7.0"
+- "https://github.com/advisories/GHSA-j7hp-h8jx-5ppr"
+- "https://github.com/advisories/GHSA-4vjr-crvh-383h"
+uuid: "decb4a43-6073-439a-b632-29b427b35fe3"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
