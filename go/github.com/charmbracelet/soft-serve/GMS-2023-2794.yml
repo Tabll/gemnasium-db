@@ -1,0 +1,46 @@
+---
+identifier: "GMS-2023-2794"
+identifiers:
+- "GHSA-mc97-99j4-vm2v"
+- "GMS-2023-2794"
+package_slug: "go/github.com/charmbracelet/soft-serve"
+title: "Soft Serve Public Key Authentication Bypass Vulnerability when Keyboard-Interactive
+  SSH Authentication is Enabled"
+description: "### Impact\n\nA security vulnerability in Soft Serve could allow an
+  unauthenticated, remote attacker to bypass public key authentication when keyboard-interactive
+  SSH authentication is active, through the `allow-keyless` setting, and the public
+  key requires additional client-side verification for example using FIDO2 or GPG.
+  This is due to insufficient validation procedures of the public key step during
+  SSH request handshake, granting unauthorized access if the keyboard-interaction
+  mode is utilized. An attacker could exploit this vulnerability by presenting manipulated
+  SSH requests using keyboard-interactive authentication mode. This could potentially
+  result in unauthorized access to the Soft Serve.\n\n### Patches\n\nUsers should
+  upgrade to the latest Soft Serve version `v0.6.2` to receive the patch for this
+  issue. \n\n### Workarounds\n\nTo workaround this vulnerability without upgrading,
+  users can _temporarily_ disable Keyboard-Interactive SSH Authentication using the
+  `allow-keyless` setting.\n\n### References\n\nhttps://github.com/charmbracelet/soft-serve/issues/389"
+date: "2023-10-03"
+pubdate: "2023-10-02"
+affected_range: "<v0.6.2"
+fixed_versions:
+- "v0.6.2"
+affected_versions: "All versions before 0.6.2"
+not_impacted: "All versions starting from 0.6.2"
+solution: "Upgrade to version 0.6.2 or above."
+urls:
+- "https://github.com/charmbracelet/soft-serve/security/advisories/GHSA-mc97-99j4-vm2v"
+- "https://github.com/charmbracelet/soft-serve/issues/389"
+- "https://github.com/charmbracelet/soft-serve/commit/407c4ec72d1006cee1ff8c1775e5bcc091c2bc89"
+- "https://github.com/charmbracelet/soft-serve/releases/tag/v0.6.2"
+- "https://github.com/advisories/GHSA-mc97-99j4-vm2v"
+uuid: "710e9961-3676-49bf-b9bf-e01b1f8c69e6"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
+versions:
+- number: "v0.6.2"
+  commit:
+    tags:
+    - "v0.6.2"
+    sha: "b5d545d19ecba0b7065899fc3ec10516def4c463"
+    timestamp: "20231002131305"
