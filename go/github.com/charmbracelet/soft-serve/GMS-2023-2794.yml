@@ -2,6 +2,7 @@
 identifier: "GMS-2023-2794"
 identifiers:
 - "GHSA-mc97-99j4-vm2v"
+- "CVE-2023-43809"
 - "GMS-2023-2794"
 package_slug: "go/github.com/charmbracelet/soft-serve"
 title: "Soft Serve Public Key Authentication Bypass Vulnerability when Keyboard-Interactive

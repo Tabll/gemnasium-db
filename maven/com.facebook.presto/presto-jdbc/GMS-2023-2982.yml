@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2023-2982"
+identifiers:
+- "GHSA-86q5-qcjc-7pv4"
+- "GMS-2023-2982"
+package_slug: "maven/com.facebook.presto/presto-jdbc"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in com.facebook.presto:presto-jdbc."
+date: "2023-10-03"
+pubdate: "2023-10-03"
+affected_range: "(,0.283]"
+fixed_versions: []
+affected_versions: "All versions up to 0.283"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/prestodb/presto/security/advisories/GHSA-86q5-qcjc-7pv4"
+- "https://github.com/advisories/GHSA-86q5-qcjc-7pv4"
+uuid: "56777b57-0124-416e-92a6-51f6d3eb43e4"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"
