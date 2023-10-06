@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2023-3137"
+identifiers:
+- "GHSA-56pw-mpj4-fxww"
+- "GMS-2023-3137"
+package_slug: "pypi/Pillow"
+title: "Bundled libwebp in Pillow vulnerable"
+description: "Pillow versions before v10.0.1 bundled libwebp binaries in wheels that
+  is vulnerable to CVE-2023-5129 (previously CVE-2023-4863). Pillow v10.0.1 upgrades
+  the bundled libwebp binary to v1.3.2."
+date: "2023-10-05"
+pubdate: "2023-10-05"
+affected_range: "<10.0.1"
+fixed_versions:
+- "10.0.1"
+affected_versions: "All versions before 10.0.1"
+not_impacted: "All versions starting from 10.0.1"
+solution: "Upgrade to version 10.0.1 or above."
+urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2023-4863"
+- "https://nvd.nist.gov/vuln/detail/CVE-2023-5129"
+- "https://github.com/pypa/advisory-database/tree/main/vulns/pillow/PYSEC-2023-175.yaml"
+- "https://github.com/python-pillow/Pillow/blob/main/CHANGES.rst#1001-2023-09-15"
+- "https://github.com/advisories/GHSA-56pw-mpj4-fxww"
+uuid: "c398d62f-4190-440a-bdd4-c74a85adda9d"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

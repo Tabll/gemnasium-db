@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2023-3096"
+identifiers:
+- "GHSA-4c29-gfrp-g6x9"
+- "GMS-2023-3096"
+package_slug: "nuget/CefSharp.Common.NETCore"
+title: "Improper Neutralization"
+description: "Improper Neutralization in CefSharp.Common.NETCore."
+date: "2023-10-05"
+pubdate: "2023-10-05"
+affected_range: "(,117.2.20)"
+fixed_versions:
+- "117.2.20"
+affected_versions: "All versions before 117.2.20"
+not_impacted: "All versions starting from 117.2.20"
+solution: "Upgrade to version 117.2.20 or above."
+urls:
+- "https://github.com/cefsharp/CefSharp/security/advisories/GHSA-4c29-gfrp-g6x9"
+- "https://github.com/cefsharp/CefSharp/commit/45e66f7c0f9094f2fd81ab57b37a9ed9576b51b8"
+- "https://github.com/advisories/GHSA-4c29-gfrp-g6x9"
+uuid: "f70c965f-88ed-468d-8f39-2040b9d34b2a"
+cwe_ids:
+- "CWE-1035"
+- "CWE-707"
+- "CWE-937"

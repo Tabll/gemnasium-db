@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2023-3131"
+identifiers:
+- "GHSA-94vc-p8w7-5p49"
+- "GMS-2023-3131"
+package_slug: "pypi/imagecodecs"
+title: "Bundled libwebp in imagecodecs vulnerable"
+description: "imagecodecs versions before v2023.9.18 bundled libwebp binaries in wheels
+  that is vulnerable to CVE-2023-5129 (previously CVE-2023-4863). imagecodecs v2023.9.18
+  upgrades the bundled libwebp binary to v1.3.2."
+date: "2023-10-05"
+pubdate: "2023-10-05"
+affected_range: "<2023.9.18"
+fixed_versions:
+- "2023.9.18"
+affected_versions: "All versions before 2023.9.18"
+not_impacted: "All versions starting from 2023.9.18"
+solution: "Upgrade to version 2023.9.18 or above."
+urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2023-4863"
+- "https://nvd.nist.gov/vuln/detail/CVE-2023-5129"
+- "https://github.com/cgohlke/imagecodecs/blob/v2023.9.18/CHANGES.rst"
+- "https://github.com/pypa/advisory-database/tree/main/vulns/imagecodecs/PYSEC-2023-174.yaml"
+- "https://github.com/advisories/GHSA-94vc-p8w7-5p49"
+uuid: "b73cebb3-9e60-45e0-b674-3e55cf8ac02f"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

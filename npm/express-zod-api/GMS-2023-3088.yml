@@ -1,0 +1,44 @@
+---
+identifier: "GMS-2023-3088"
+identifiers:
+- "GHSA-mvrp-3cvx-c325"
+- "GMS-2023-3088"
+package_slug: "npm/express-zod-api"
+title: "Zod denial of service vulnerability during email validation"
+description: "### Impact\n\nAPI servers running `express-zod-api` having:\n\n- version
+  of `express-zod-api` below `10.0.0-beta1`,\n- and using the following (or similar)
+  validation schema in its implementation: `z.string().email()`,\n\nis vulnerable
+  to a DoS attack due to: \n\n- Inefficient Regular Expression Complexity in `zod`
+  versions up to `3.22.2`,\n- depending on `zod`.\n\n### Patches\n\nThe patched version
+  of `zod` fixing the vulnerability is `3.22.3`.\n\nHowever, it's highly recommended
+  to upgrade `express-zod-api` to at least version `10.0.0`, which does not depend
+  on `zod` strictly and directly, but requires its installation as a peer dependency
+  instead, enabling you to install the patched `zod` version yourself.\n\n### Workarounds\n\nWhen
+  it's not possible to upgrade your dependencies, consider the following replacement
+  in your implementation:\n\n```diff\n- z.string().email()\n+ z.string().regex(\n+
+  \ /^(?!\\.)(?!.*\\.\\.)([A-Z0-9_+-\\.]*)[A-Z0-9_+-]@([A-Z0-9][A-Z0-9\\-]*\\.)+[A-Z]{2,}$/i\n+
+  )\n```\n\nThis regular expression is taken from the suggested patch of `zod`.\n\n###
+  References\n\n- Original issue: https://github.com/colinhacks/zod/issues/2609\n-
+  The patch: https://github.com/colinhacks/zod/pull/2824\n- Entry in database: https://nvd.nist.gov/vuln/detail/CVE-2023-4316\n-
+  Enumeration: https://cwe.mitre.org/data/definitions/1333.html\n- Parent advisory:
+  https://github.com/advisories/GHSA-m95q-7qp3-xv42\n- Changelog entry for `express-zod-api`
+  version `10.0.0-beta1`: https://github.com/RobinTail/express-zod-api/blob/master/CHANGELOG.md#v1000-beta1"
+date: "2023-10-04"
+pubdate: "2023-10-04"
+affected_range: "<10.0.0-beta1"
+fixed_versions:
+- "10.0.0-beta1"
+affected_versions: "All versions before 10.0.0-beta1"
+not_impacted: "All versions starting from 10.0.0-beta1"
+solution: "Upgrade to version 10.0.0-beta1 or above. *Note*: 10.0.0-beta1 may be an
+  unstable version. Use caution."
+urls:
+- "https://github.com/RobinTail/express-zod-api/security/advisories/GHSA-mvrp-3cvx-c325"
+- "https://github.com/colinhacks/zod/issues/2609"
+- "https://github.com/colinhacks/zod/pull/2824"
+- "https://github.com/advisories/GHSA-m95q-7qp3-xv42"
+- "https://github.com/advisories/GHSA-mvrp-3cvx-c325"
+uuid: "8c5617c8-11f7-4184-8299-93af863dd734"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
