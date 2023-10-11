@@ -76,6 +76,7 @@ contributions.
 | @niklas.volcz  | !24710 |
 | @flagosatfluid | #232, #239, #240, #241, #242, #244, #257 |
 | @delifer       | #258 |
+| @cflucasraab | !25856 |
 
 ## Directory structure
 
