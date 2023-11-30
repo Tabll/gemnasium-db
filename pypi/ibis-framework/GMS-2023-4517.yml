@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2023-4517"
+identifiers:
+- "GHSA-x563-6hqv-26mr"
+- "GMS-2023-4517"
+package_slug: "pypi/ibis-framework"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in ibis-framework."
+date: "2023-11-17"
+pubdate: "2023-11-17"
+affected_range: "<7.1.0"
+fixed_versions:
+- "7.1.0"
+affected_versions: "All versions before 7.1.0"
+not_impacted: "All versions starting from 7.1.0"
+solution: "Upgrade to version 7.1.0 or above."
+urls:
+- "https://github.com/ibis-project/ibis/security/advisories/GHSA-x563-6hqv-26mr"
+- "https://github.com/ibis-project/ibis/commit/0fa1e5dc06783c01e912e8de4d7e10186ca0e364"
+- "https://github.com/ibis-project/ibis/releases/tag/7.1.0"
+- "https://github.com/advisories/GHSA-x563-6hqv-26mr"
+uuid: "43f83ece-7612-475b-9d59-c9a6a343e8de"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

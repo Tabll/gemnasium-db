@@ -1,0 +1,38 @@
+---
+identifier: "GMS-2023-3988"
+identifiers:
+- "GHSA-7crc-r3wg-cfgf"
+- "GMS-2023-3988"
+package_slug: "packagist/ezsystems/ezplatform-solr-search-engine"
+title: "Json response for search reveals Solr credentials"
+description: "### Impact\nAn error in Ibexa's Solr search engine results in potential
+  exposure of Solr credentials. This is a critical vulnerability and all supported
+  versions of the engine are affected. Those not using the Solr search engine are
+  not affected.\n\n### Patches\nThe issue is fixed in all supported versions of ezsystems/ezplatform-solr-search-engine,
+  see \"Patched versions\".\nAn advisory is also published for ibexa/solr, please
+  see that repository.\n
+  Commit: https://github.com/ezsystems/ezplatform-solr-search-engine/commit/1005e02cc32ff15a705857fa56171528a83b9c3e\n\n
+  ###Workarounds\nNone.\n\n
+  ### References\n
+  https://developers.ibexa.co/security-advisories/ibexa-sa-2023-005-vulnerabilities-in-solr-search-and-file-downloads\n"
+date: "2023-11-03"
+pubdate: "2023-11-03"
+affected_range: ">=1.7.0,<1.7.12||>=2.0.0,<2.0.2||>=3.3.0,<3.3.15"
+fixed_versions:
+- "2.0.2"
+- "3.3.15"
+- "1.7.12"
+affected_versions: "All versions starting from 1.7.0 before 1.7.12, all versions starting
+  from 2.0.0 before 2.0.2, all versions starting from 3.3.0 before 3.3.15"
+not_impacted: "All versions before 1.7.0, all versions starting from 1.7.12 before
+  2.0.0, all versions starting from 2.0.2 before 3.3.0, all versions starting from
+  3.3.15"
+solution: "Upgrade to versions 2.0.2, 3.3.15, 1.7.12 or above."
+urls:
+- "https://github.com/ezsystems/ezplatform-solr-search-engine/security/advisories/GHSA-7crc-r3wg-cfgf"
+- "https://github.com/ezsystems/ezplatform-solr-search-engine/commit/c382037208f38f18efb5a6b21d6936efc55fc408"
+- "https://github.com/advisories/GHSA-7crc-r3wg-cfgf"
+uuid: "610082cb-fc4f-44c3-9675-11fcf3af7823"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

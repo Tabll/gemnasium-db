@@ -109,11 +109,10 @@
       "$id": "#/properties/affected_range",
       "type": "string",
       "title": "The range of affected versions in machine-readable syntax used by the package manager",
-      "default": "",
       "examples": [
         "(,2.0.21)"
       ],
-      "pattern": "[<>= ,\\]\\[\\)\\(\\w\\.|]*"
+      "pattern": "[<>= ,\\]\\[\\)\\(\\w\\.|]+"
     },
     "fixed_versions": {
       "$id": "#/properties/fixed_versions",

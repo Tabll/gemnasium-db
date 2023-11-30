@@ -77,6 +77,9 @@ contributions.
 | @flagosatfluid | #232, #239, #240, #241, #242, #244, #257 |
 | @delifer       | #258 |
 | @cflucasraab | !25856 |
+| @sify21 | !26082 |
+| @yasinsd @Reicela96 | !26255 |
+| @flagosatfluid  | #265 |
 
 ## Directory structure
 

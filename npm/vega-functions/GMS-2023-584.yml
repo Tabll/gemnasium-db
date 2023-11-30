@@ -18,7 +18,7 @@ description: "Vega is a visualization grammar, a declarative format for creating
   issue opens various XSS vectors, but exact impact and severity depends on the environment
   (e.g. Core JS `setImmediate` polyfill basically allows `eval`-like functionality).
   This issue was patched in 5.23.0."
-date: "2023-03-09"
+date: "2023-11-07"
 pubdate: "2023-03-04"
 affected_range: "<5.13.1"
 fixed_versions:

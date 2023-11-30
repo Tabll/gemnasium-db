@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2023-4593"
+identifiers:
+- "GHSA-2c7c-3mj9-8fqh"
+- "GMS-2023-4593"
+package_slug: "go/github.com/square/go-jose"
+title: "Decryption of malicious PBES2 JWE objects can consume unbounded system resources"
+description: "The go-jose package is subject to a \"billion hashes attack\" causing
+  denial-of-service when decrypting JWE inputs. This occurs when an attacker can provide
+  a PBES2 encrypted JWE blob with a very large p2c value that, when decrypted, produces
+  a denial-of-service."
+date: "2023-11-21"
+pubdate: "2023-11-21"
+affected_range: ">=v0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/go-jose/go-jose/issues/64"
+- "https://github.com/go-jose/go-jose/commit/65351c27657d58960c2e6c9fbb2b00f818e50568"
+- "https://github.com/advisories/GHSA-2c7c-3mj9-8fqh"
+uuid: "1525091a-1e01-4e2f-b32a-a1b3a32083e9"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
+versions: []

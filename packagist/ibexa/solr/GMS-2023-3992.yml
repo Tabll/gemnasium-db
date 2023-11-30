@@ -1,0 +1,33 @@
+---
+identifier: "GMS-2023-3992"
+identifiers:
+- "GHSA-v6xp-ccvx-w52m"
+- "GMS-2023-3992"
+package_slug: "packagist/ibexa/solr"
+title: "Json response for search reveals Solr credentials"
+description: "### Impact\nAn error in Ibexa's Solr search engine results in potential
+  exposure of Solr credentials. This is a critical vulnerability and all supported
+  versions of the engine are affected. Those not using the Solr search engine are
+  not affected.\n\n### Patches\nThe issue is fixed in all supported versions of ibexa/solr,
+  see \"Patched versions\".\nAn advisory is also published for ezsystems/ezplatform-solr-search-engine,
+  please see that repository.\n
+  Commit: https://github.com/ibexa/solr/commit/2f8b711874bee1ebe31fb8a6362e0c8e52c53012\n\n
+  ###Workarounds\nNone.\n\n
+  ### References\n
+  https://developers.ibexa.co/security-advisories/ibexa-sa-2023-005-vulnerabilities-in-solr-search-and-file-downloads\n"
+date: "2023-11-03"
+pubdate: "2023-11-03"
+affected_range: ">=4.5.0,<4.5.4"
+fixed_versions:
+- "4.5.4"
+affected_versions: "All versions starting from 4.5.0 before 4.5.4"
+not_impacted: "All versions before 4.5.0, all versions starting from 4.5.4"
+solution: "Upgrade to version 4.5.4 or above."
+urls:
+- "https://github.com/ibexa/solr/security/advisories/GHSA-v6xp-ccvx-w52m"
+- "https://github.com/ibexa/solr/commit/2f8b711874bee1ebe31fb8a6362e0c8e52c53012"
+- "https://github.com/advisories/GHSA-v6xp-ccvx-w52m"
+uuid: "733b7372-77b0-413e-a6cd-4137d4083b2b"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

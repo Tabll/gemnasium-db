@@ -1,0 +1,39 @@
+---
+identifier: "GMS-2023-3438"
+identifiers:
+- "GHSA-9wmc-rg4h-28wv"
+- "GMS-2023-3438"
+package_slug: "go/github.com/kumahq/kuma"
+title: "github.com/kumahq/kuma affected by CVE-2023-44487"
+description: "### Impact\nEnvoy and Go HTTP/2 protocol stack is vulnerable to the
+  \"Rapid Reset\" class of exploits, which send a sequence of HEADERS frames optionally
+  followed by RST_STREAM frames.\n\nThis can be exercised if you use the builtin gateway
+  and receive untrusted http2 traffic.\n\n
+  ### Workarounds 
+  Disable http2 on the gateway listener with a MeshProxyPatch or ProxyTemplate.\n"
+date: "2023-10-17"
+pubdate: "2023-10-17"
+affected_range: "<2.0.8||>=2.1.0 <2.1.8||>=2.2.0 <2.2.4||>=2.3.0 <2.3.3||>=2.4.0 <2.4.3"
+fixed_versions:
+- "2.3.3"
+- "2.4.3"
+- "2.1.8"
+- "2.2.4"
+- "2.0.8"
+affected_versions: "All versions before 2.0.8, all versions starting from 2.1.0 before
+  2.1.8, all versions starting from 2.2.0 before 2.2.4, all versions starting from
+  2.3.0 before 2.3.3, all versions starting from 2.4.0 before 2.4.3"
+not_impacted: "All versions starting from 2.0.8 before 2.1.0, all versions starting
+  from 2.1.8 before 2.2.0, all versions starting from 2.2.4 before 2.3.0, all versions
+  starting from 2.3.3 before 2.4.0, all versions starting from 2.4.3"
+solution: "Upgrade to versions 2.3.3, 2.4.3, 2.1.8, 2.2.4, 2.0.8 or above."
+urls:
+- "https://github.com/kumahq/kuma/security/advisories/GHSA-9wmc-rg4h-28wv"
+- "https://github.com/kumahq/kuma/pull/8001"
+- "https://github.com/kumahq/kuma/pull/8023"
+- "https://github.com/kumahq/kuma/pull/8034"
+- "https://github.com/advisories/GHSA-9wmc-rg4h-28wv"
+uuid: "10c7c0c6-44d3-4923-8ec4-c1dbc13b64ae"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

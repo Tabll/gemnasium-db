@@ -16,9 +16,9 @@ description: "### Impact\n\nRapidly creating and cancelling streams (HEADERS fra
   mitigates this vulnerability:\n\n- https://github.com/nghttp2/nghttp2/commit/72b4af6143681f528f1d237b21a9a7aee1738832\n"
 date: "2023-10-10"
 pubdate: "2023-10-10"
-affected_range: "<v1.57.0"
+affected_range: "<1.57.0"
 fixed_versions:
-- "v1.57.0"
+- "1.57.0"
 affected_versions: "All versions before 1.57.0"
 not_impacted: "All versions starting from 1.57.0"
 solution: "Upgrade to version 1.57.0 or above."
@@ -31,10 +31,3 @@ uuid: "763625f0-bcda-4332-b79f-52dd6e5fe9a6"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
-versions:
-- number: "v1.57.0"
-  commit:
-    tags:
-    - "v1.57.0"
-    sha: "6fdf90693ece205405e015237063d79b9bac343d"
-    timestamp: "20231010135701"

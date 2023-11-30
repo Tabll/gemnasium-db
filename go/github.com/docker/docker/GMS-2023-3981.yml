@@ -1,0 +1,34 @@
+---
+identifier: "GMS-2023-3981"
+identifiers:
+- "GHSA-jq35-85cj-fj4p"
+- "GMS-2023-3981"
+package_slug: "go/github.com/docker/docker"
+title: "/sys/devices/virtual/powercap accessible by default to containers"
+description: "Intel's RAPL (Running Average Power Limit) feature, introduced by the
+  Sandy Bridge microarchitecture, provides software insights into hardware energy
+  consumption. To facilitate this, Intel introduced the powercap framework in Linux
+  kernel 3.13, which reads values via relevant MSRs (model specific registers) and
+  provides unprivileged userspace access via `sysfs`."
+date: "2023-10-30"
+pubdate: "2023-10-30"
+affected_range: "<v24.0.7"
+fixed_versions:
+- "v24.0.7"
+affected_versions: "All versions before 24.0.7"
+not_impacted: "All versions starting from 24.0.7"
+solution: "Upgrade to version 24.0.7 or above."
+urls:
+- "https://github.com/moby/moby/security/advisories/GHSA-jq35-85cj-fj4p"
+- "https://github.com/advisories/GHSA-jq35-85cj-fj4p"
+uuid: "e721468c-f96b-4dec-ab28-371798565ae6"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
+versions:
+- number: "v24.0.7"
+  commit:
+    tags:
+    - "v24.0.7"
+    sha: "bd74784b6c130e1559a3baf9ac0dc266a562bf30"
+    timestamp: "20231026075105"

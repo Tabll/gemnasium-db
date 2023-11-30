@@ -10,7 +10,7 @@ description: "vantage6 is a privacy preserving federated learning infrastructure
   secure insight exchange. Currently, the refresh token is valid indefinitely. The
   refresh token should get a validity of 24-48 hours. A fix was released in version
   3.8.0."
-date: "2023-03-10"
+date: "2023-11-07"
 pubdate: "2023-03-04"
 affected_range: "<3.8.0"
 fixed_versions:

@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2023-3489"
+identifiers:
+- "GHSA-rc4v-99cr-pjcm"
+- "GMS-2023-3489"
+package_slug: "npm/@seal-security/mongoose-fixed"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in @seal-security/mongoose-fixed."
+date: "2023-10-17"
+pubdate: "2023-10-17"
+affected_range: "=5.3.3"
+fixed_versions:
+- "5.3.4"
+affected_versions: "Version 5.3.3"
+not_impacted: "All versions before 5.3.3, all versions after 5.3.3"
+solution: "Upgrade to version 5.3.4 or above."
+urls:
+- "https://github.com/ali-security/mongoose/security/advisories/GHSA-rc4v-99cr-pjcm"
+- "https://github.com/Automattic/mongoose/commit/f1efabf350522257364aa5c2cb36e441cf08f1a2"
+- "https://security.snyk.io/vuln/SNYK-JS-MONGOOSE-5777721"
+- "https://github.com/advisories/GHSA-rc4v-99cr-pjcm"
+uuid: "9e50a711-acfc-4fd2-aeb9-e6d1f5ba8394"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

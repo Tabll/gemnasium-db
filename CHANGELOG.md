@@ -1,3 +1,6 @@
+#### [v2.1.0] 2023-11-13
+##### Changed
+- `affected_range` can no longer be empty (!26251)
 #### [v2.0.0] 2021-10-28
 ##### Added
 - Schema change: `identifiers` dictionary (!10362)

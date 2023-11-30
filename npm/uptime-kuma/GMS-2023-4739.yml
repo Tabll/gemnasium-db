@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2023-4739"
+identifiers:
+- "GHSA-v4v2-8h88-65qj"
+- "GMS-2023-4739"
+package_slug: "npm/uptime-kuma"
+title: "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+description: "Improper Neutralization of Input During Web Page Generation ('Cross-site
+  Scripting') in uptime-kuma."
+date: "2023-11-24"
+pubdate: "2023-11-24"
+affected_range: ">=1.20.0 <=1.23.6"
+fixed_versions:
+- "1.23.7"
+affected_versions: "All versions starting from 1.20.0 up to 1.23.6"
+not_impacted: "All versions before 1.20.0, all versions after 1.23.6"
+solution: "Upgrade to version 1.23.7 or above."
+urls:
+- "https://github.com/louislam/uptime-kuma/security/advisories/GHSA-v4v2-8h88-65qj"
+- "https://github.com/advisories/GHSA-v4v2-8h88-65qj"
+uuid: "b3a356a4-e448-4501-bcba-8fb02332216f"
+cwe_ids:
+- "CWE-1035"
+- "CWE-79"
+- "CWE-937"

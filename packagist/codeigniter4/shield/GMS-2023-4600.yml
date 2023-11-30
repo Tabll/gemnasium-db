@@ -1,0 +1,34 @@
+---
+identifier: "GMS-2023-4600"
+identifiers:
+- "GHSA-v427-c49j-8w6x"
+- "GMS-2023-4600"
+package_slug: "packagist/codeigniter4/shield"
+title: "Cleartext Storage of Sensitive Information in HMAC SHA256 Authentication"
+description: "### Impact\n**secretKey**, an important key for HMAC SHA256 authentication,
+  was stored in the database in raw form.\n\nIf a malicious person somehow had access
+  to the data in the database, they could use the key and secretKey for HMAC SHA256
+  authentication to send requests impersonating that person.\n\n### Patches\nUpgrade
+  to Shield v1.0.0-beta.8 or later.\n\nAfter upgrading, all existing secret keys must
+  be encrypted.\nSee https://github.com/codeigniter4/shield/blob/develop/UPGRADING.md
+  for details.\n\n### Workarounds\nNone.\n\n### References\n- https://codeigniter4.github.io/shield/references/authentication/hmac/\n\n###
+  For more information\nIf you have any questions or comments about this advisory:\n*
+  Open an issue or discussion in [codeigniter4/shield](https://github.com/codeigniter4/shield)\n*
+  Email us at [security@codeigniter.com](mailto:security@codeigniter.com)\n"
+date: "2023-11-23"
+pubdate: "2023-11-23"
+affected_range: "<1.0.0-beta.8"
+fixed_versions:
+- "1.0.0-beta.8"
+affected_versions: "All versions before 1.0.0-beta.8"
+not_impacted: "All versions starting from 1.0.0-beta.8"
+solution: "Upgrade to version 1.0.0-beta.8 or above. *Note*: 1.0.0-beta.8 may be an
+  unstable version. Use caution."
+urls:
+- "https://github.com/codeigniter4/shield/security/advisories/GHSA-v427-c49j-8w6x"
+- "https://github.com/codeigniter4/shield/commit/f77c6ae20275ac1245330a2b9a523bf7e6f6202f"
+- "https://github.com/advisories/GHSA-v427-c49j-8w6x"
+uuid: "a8d507aa-b692-4084-8a55-134fad4f628e"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

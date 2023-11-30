@@ -1,0 +1,29 @@
+---
+identifier: "GMS-2023-5275"
+identifiers:
+- "GHSA-f678-j579-4xf5"
+- "GMS-2023-5275"
+package_slug: "pypi/apache-superset"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in apache-superset."
+date: "2023-11-28"
+pubdate: "2023-11-28"
+affected_range: "<2.1.2"
+fixed_versions:
+- "2.1.2"
+affected_versions: "All versions before 2.1.2"
+not_impacted: "All versions starting from 2.1.2"
+solution: "Upgrade to version 2.1.2 or above."
+urls:
+- "https://github.com/orangecertcc/security-research/security/advisories/GHSA-f678-j579-4xf5"
+- "https://nvd.nist.gov/vuln/detail/CVE-2023-40610"
+- "https://lists.apache.org/thread/jvgxpk4dbxyqtsgtl4pdgbd520rc0rot"
+- "http://www.openwall.com/lists/oss-security/2023/11/27/2"
+- "https://github.com/advisories/GHSA-f678-j579-4xf5"
+uuid: "ad326f9d-c857-4c62-8e86-8133f560b226"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"

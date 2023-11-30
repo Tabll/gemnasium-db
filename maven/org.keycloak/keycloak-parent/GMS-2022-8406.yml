@@ -15,7 +15,7 @@ description: "An issue was discovered in Keycloak when using a client with the `
   and another user authenticates to the application. In that case, it will share the
   same root session id, and when utilizing the refresh token, they will be issued
   a token for the original user."
-date: "2023-09-22"
+date: "2023-11-07"
 pubdate: "2023-09-20"
 affected_range: "(,20.0.2)"
 fixed_versions:
