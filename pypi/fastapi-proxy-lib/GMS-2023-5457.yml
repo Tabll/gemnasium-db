@@ -1,0 +1,34 @@
+---
+identifier: "GMS-2023-5457"
+identifiers:
+- "GHSA-7vwr-g6pm-9hc8"
+- "GMS-2023-5457"
+package_slug: "pypi/fastapi-proxy-lib"
+title: "Cookie leakage between different users in fastapi-proxy-lib"
+description: "### Impact\n\nIn the implementation of version `0.0.1`, requests from
+  different user clients are processed using a shared `httpx.AsyncClient`.\n\nHowever,
+  one oversight is that the `httpx.AsyncClient` will persistently store cookies based
+  on the `set-cookie` response header sent by the target server and share these cookies
+  across different user requests.\n\nThis results in a cookie leakage issue among
+  all user clients sharing the same `httpx.AsyncClient`.\n\n### Patches\n\nIt's fixed
+  in `0.1.0`\n\n### Workarounds\n\nIf you insist `0.0.1`:\n- Do not use `ForwardHttpProxy`
+  at all.\n- Do not use `ReverseHttpProxy` or `ReverseWebSocketProxy` for any servers
+  that may potentially send a `set-cookie` response.\n\n**However, it's best to upgrade
+  to the latest version.**\n\n### References\n\nfixed in [#10](https://github.com/WSH032/fastapi-proxy-lib/pull/10)
+  \n"
+date: "2023-12-01"
+pubdate: "2023-12-01"
+affected_range: "<0.1.0"
+fixed_versions:
+- "0.1.0"
+affected_versions: "All versions before 0.1.0"
+not_impacted: "All versions starting from 0.1.0"
+solution: "Upgrade to version 0.1.0 or above."
+urls:
+- "https://github.com/WSH032/fastapi-proxy-lib/security/advisories/GHSA-7vwr-g6pm-9hc8"
+- "https://github.com/WSH032/fastapi-proxy-lib/pull/10"
+- "https://github.com/advisories/GHSA-7vwr-g6pm-9hc8"
+uuid: "b537978b-b564-47c2-aee6-1b3bb7dc8f7e"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
