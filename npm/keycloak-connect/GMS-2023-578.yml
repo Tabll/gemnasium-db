@@ -10,12 +10,11 @@ description: "There is an Open Redirect vulnerability in the Node.js adapter whe
   forwarding requests to Keycloak using `checkSSO` with query param `prompt=none`."
 date: "2023-04-04"
 pubdate: "2023-03-27"
-affected_range: "<=18.0.1"
-fixed_versions:
-- "21.0.1"
-affected_versions: "All versions up to and including 18.0.1"
-not_impacted: "All versions starting from 21.0.1"
-solution: "Upgrade to version 21.0.1 or above."
+affected_range: "<=23.0.1"
+fixed_versions: []
+affected_versions: "All versions up to and including 23.0.1"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
 urls:
 - "https://github.com/keycloak/keycloak-nodejs-connect/security/advisories/GHSA-59fq-727j-hm3f"
 - "https://github.com/keycloak/keycloak-nodejs-connect/commit/190a9470e234bbd9ac5d5de43f5a19aead9a2c21"
