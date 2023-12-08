@@ -1,0 +1,34 @@
+---
+identifier: "GMS-2023-5641"
+identifiers:
+- "GHSA-v7hc-87jc-qrrr"
+- "GMS-2023-5641"
+package_slug: "go/knative.dev/eventing-github"
+title: "eventing-github vulnerable to denial of service caused by improper enforcement
+  of the timeout on individual read operations"
+description: "### Impact\n\nThe eventing-github cluster-local server does not set
+  `ReadHeaderTimeout` which could lead do a DDoS attack, where a large group of
+  users send requests to the server causing the server to hang for long enough to
+  deny it from being available to other users, also know as a Slowloris attack.\n\n###
+  Patches\n\nFix in `v1.12.1` and `v1.11.3`\n\n### Credits\n\nThe vulnerability was
+  reported by Ada Logics during an ongoing security audit of Knative involving Ada
+  Logics, the Knative maintainers, OSTIF and CNCF.\n"
+date: "2023-12-06"
+pubdate: "2023-12-06"
+affected_range: "<0.39.1"
+fixed_versions:
+- "0.39.1"
+affected_versions: "All versions before 0.39.1"
+not_impacted: "All versions starting from 0.39.1"
+solution: "Upgrade to version 0.39.1 or above."
+urls:
+- "https://github.com/knative-extensions/eventing-github/security/advisories/GHSA-v7hc-87jc-qrrr"
+- "https://github.com/knative-extensions/eventing-github/pull/442"
+- "https://github.com/knative-extensions/eventing-github/pull/446"
+- "https://github.com/knative-extensions/eventing-github/pull/447"
+- "https://github.com/knative-extensions/eventing-github/commit/ea5cb8b25fc3410dde45ce2eb95454e4cfe77c40"
+- "https://github.com/advisories/GHSA-v7hc-87jc-qrrr"
+uuid: "a4dbe13c-9211-4fdb-b024-36f218577c15"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

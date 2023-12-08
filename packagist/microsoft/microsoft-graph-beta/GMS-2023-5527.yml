@@ -1,0 +1,31 @@
+---
+identifier: "GMS-2023-5527"
+identifiers:
+- "GHSA-7mc6-x925-7qvx"
+- "GMS-2023-5527"
+package_slug: "packagist/microsoft/microsoft-graph-beta"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in microsoft/microsoft-graph-beta."
+date: "2023-12-05"
+pubdate: "2023-12-05"
+affected_range: "<2.0.1"
+fixed_versions:
+- "2.0.1"
+affected_versions: "All versions before 2.0.1"
+not_impacted: "All versions starting from 2.0.1"
+solution: "Upgrade to version 2.0.1 or above."
+urls:
+- "https://github.com/microsoftgraph/msgraph-beta-sdk-php/security/advisories/GHSA-7mc6-x925-7qvx"
+- "https://nvd.nist.gov/vuln/detail/CVE-2023-49103"
+- "https://github.com/microsoftgraph/msgraph-beta-sdk-php/compare/2.0.0...2.0.1"
+- "https://github.com/microsoftgraph/msgraph-sdk-php-core/compare/2.0.1...2.0.2"
+- "https://github.com/microsoftgraph/msgraph-sdk-php/compare/1.109.0...1.109.1"
+- "https://owncloud.com/security-advisories/disclosure-of-sensitive-credentials-and-configuration-in-containerized-deployments/"
+- "https://github.com/advisories/GHSA-7mc6-x925-7qvx"
+uuid: "3a6e1b74-5a6c-4306-a76b-6d622f186601"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"
