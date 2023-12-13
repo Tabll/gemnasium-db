@@ -11,8 +11,8 @@ description: "There is an Open Redirect vulnerability in the Node.js adapter whe
 date: "2023-04-04"
 pubdate: "2023-03-27"
 affected_range: "<=23.0.1"
-fixed_versions: []
 affected_versions: "All versions up to and including 23.0.1"
+fixed_versions: []
 not_impacted: ""
 solution: "Unfortunately, there is no solution available yet."
 urls:
