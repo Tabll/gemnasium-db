@@ -27,9 +27,9 @@ In case you do not want to create the advisory yourself, you can also create an
 issue and mention the missing advisory. In this case, we would be grateful if
 you could add a publicly available resource/links to mailing lists and/or issue
 description for verification purposes. We would be very grateful, if you could
-create an issue using the `New Advisory` template. 
+create an issue using the `New Advisory` template.
 
-## Credits 
+## Credits
 
 We would like to thank the following authors very much for their valuable
 contributions.
@@ -48,7 +48,7 @@ contributions.
 | @dmitriylewen  | #206, #223            |
 | @thklein       | #167                  |
 | @AB-xdev       | #166                  |
-| @rusher1       | !2246                 | 
+| @rusher1       | !2246                 |
 | @vavkamil      | !4650                 |
 | @robw-nom      | !4808                 |
 | @masahiro331   | !6889                 |
@@ -80,6 +80,8 @@ contributions.
 | @sify21 | !26082 |
 | @yasinsd @Reicela96 | !26255 |
 | @flagosatfluid  | #265 |
+| @Kamoot  | !26608 |
+| @fedemengo | !26641 |
 
 ## Directory structure
 
@@ -236,7 +238,7 @@ Here's a sample document:
 ``` yaml
 ---
 identifier: "CVE-2021-28965"
-identifiers: 
+identifiers:
 - "CVE-2021-28965"
 package_slug: "gem/rexml"
 title: "Improper Restriction of XML External Entity Reference"

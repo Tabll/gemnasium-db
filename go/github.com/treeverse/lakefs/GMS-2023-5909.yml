@@ -12,7 +12,7 @@ description: "### Impact\n\nWhen lakeFS is configured with **ALL** of the follow
   a user who can configure an action can impersonate any other user.\n\n### Patches\n_Has
   the problem been patched? What versions should users upgrade to?_\n\n### Workarounds\n\n**ANY
   ONE** of these is sufficient to prevent the issue:\n\n* Do not pass `auth.encrypt.secret_key`
-  through an environment variable.\n\n  For instance, Kubernetes users can generate
+  through an environment variable.\n\n For instance, Kubernetes users can generate
   the entire configuration as a secret and mount that. This is described [here](https://kubernetes.io/docs/concepts/configuration/secret/#using-a-secret).\n*
   Disable actions.\n* Limit users allowed to configure actions.\n\n"
 date: "2023-12-12"
