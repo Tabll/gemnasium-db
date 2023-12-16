@@ -1,0 +1,24 @@
+---
+identifier: "GMS-2023-6179"
+identifiers:
+- "GHSA-j8w6-2r9h-cxhj"
+- "GMS-2023-6179"
+package_slug: "pypi/mindsdb"
+title: "GitHub Security Lab (GHSL) Vulnerability Report: Arbitary write GHSL-2023-182 "
+description: "### Impact\n\nIssue: Arbitrary file write in file.py (GHSL-2023-183)\n\n###
+  Patches\n\nUse mindsdb staging branch or v23.11.4.1"
+date: "2023-12-15"
+pubdate: "2023-12-15"
+affected_range: "<23.7.4.1"
+fixed_versions:
+- "23.11.4.1"
+affected_versions: "All versions before 23.7.4.1"
+not_impacted: "All versions starting from 23.7.4.1"
+solution: "Upgrade to version 23.11.4.1 or above."
+urls:
+- "https://github.com/mindsdb/mindsdb/security/advisories/GHSA-j8w6-2r9h-cxhj"
+- "https://github.com/advisories/GHSA-j8w6-2r9h-cxhj"
+uuid: "b3ab273a-8457-45a3-807d-31745ce3ef30"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

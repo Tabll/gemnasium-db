@@ -82,6 +82,8 @@ contributions.
 | @flagosatfluid  | #265 |
 | @Kamoot  | !26608 |
 | @fedemengo | !26641 |
+| @flagosatfluid| !26642 |
+
 
 ## Directory structure
 

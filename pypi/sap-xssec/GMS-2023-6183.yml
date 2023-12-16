@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2023-6183"
+identifiers:
+- "GHSA-6mjg-37cp-42x5"
+- "GMS-2023-6183"
+package_slug: "pypi/sap-xssec"
+title: "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+description: "Improper Neutralization of Input During Web Page Generation ('Cross-site
+  Scripting') in sap-xssec."
+date: "2023-12-13"
+pubdate: "2023-12-13"
+affected_range: "<4.1.0"
+fixed_versions:
+- "4.1.0"
+affected_versions: "All versions before 4.1.0"
+not_impacted: "All versions starting from 4.1.0"
+solution: "Upgrade to version 4.1.0 or above."
+urls:
+- "https://github.com/SAP/cloud-pysec/security/advisories/GHSA-6mjg-37cp-42x5"
+- "https://github.com/SAP/cloud-pysec/commit/d90c9e0733fa9af68bd8ea0b1cf023cf482163ef"
+- "https://github.com/advisories/GHSA-6mjg-37cp-42x5"
+uuid: "dc6d6a56-26a0-4d36-91af-47a4acc23b19"
+cwe_ids:
+- "CWE-1035"
+- "CWE-79"
+- "CWE-937"

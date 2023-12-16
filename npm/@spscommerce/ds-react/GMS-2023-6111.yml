@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2023-6111"
+identifiers:
+- "GHSA-cfxh-frx4-9gjg"
+- "GMS-2023-6111"
+package_slug: "npm/@spscommerce/ds-react"
+title: "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+description: "Improper Neutralization of Input During Web Page Generation ('Cross-site
+  Scripting') in @spscommerce/ds-react."
+date: "2023-12-15"
+pubdate: "2023-12-15"
+affected_range: ">=4.12.2 <7.17.4"
+fixed_versions:
+- "7.17.4"
+affected_versions: "All versions starting from 4.12.2 before 7.17.4"
+not_impacted: "All versions before 4.12.2, all versions starting from 7.17.4"
+solution: "Upgrade to version 7.17.4 or above."
+urls:
+- "https://github.com/SPSCommerce/woodland/security/advisories/GHSA-cfxh-frx4-9gjg"
+- "https://github.com/advisories/GHSA-cfxh-frx4-9gjg"
+uuid: "541f78ad-50e2-4089-842d-68e1506bc2c5"
+cwe_ids:
+- "CWE-1035"
+- "CWE-79"
+- "CWE-937"

@@ -1,0 +1,34 @@
+---
+identifier: "GMS-2023-6081"
+identifiers:
+- "GHSA-59c9-pxq8-9c73"
+- "GMS-2023-6081"
+package_slug: "maven/com.sap.cloud.security.xsuaa/spring-xsuaa"
+title: "Improper JWT Signature Validation in SAP Security Services Library "
+description: "### Impact\nSAP BTP Security Services Integration Library ([Java] cloud-security-services-integration-library)
+  allows under certain conditions an escalation of privileges. On successful exploitation,
+  an unauthenticated attacker can obtain arbitrary permissions within the application.\n\n###
+  Patches\nUpgrade to patched version >= 2.17.0 or >= 3.3.0 \nWe always recommend
+  to upgrade to the latest released version.\n\n### Workarounds\nNo workarounds\n\n###
+  References\nhttps://www.cve.org/CVERecord?id=CVE-2023-50422\n"
+date: "2023-12-13"
+pubdate: "2023-12-13"
+affected_range: "(,2.17.0),[3.0.0,3.3.0)"
+fixed_versions:
+- "2.17.0"
+- "3.3.0"
+affected_versions: "All versions before 2.17.0, all versions starting from 3.0.0 before
+  3.3.0"
+not_impacted: "All versions starting from 2.17.0 before 3.0.0, all versions starting
+  from 3.3.0"
+solution: "Upgrade to versions 2.17.0, 3.3.0 or above."
+urls:
+- "https://github.com/SAP/cloud-security-services-integration-library/security/advisories/GHSA-59c9-pxq8-9c73"
+- "https://github.com/SAP/cloud-security-services-integration-library/commit/4b3e42ab23df6418243b29908b1a2582818d9360"
+- "https://github.com/SAP/cloud-security-services-integration-library/commit/7ce9601979c30ae269a1cbaf7cf33486d10736f1"
+- "https://en.wikipedia.org/wiki/JSON_Web_Token"
+- "https://github.com/advisories/GHSA-59c9-pxq8-9c73"
+uuid: "2b99ed53-90dd-4f28-909c-53992fbcce36"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

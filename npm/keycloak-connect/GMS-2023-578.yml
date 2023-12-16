@@ -8,7 +8,7 @@ package_slug: "npm/keycloak-connect"
 title: "keycloak-connect contains Open redirect vulnerability in the Node.js adapter"
 description: "There is an Open Redirect vulnerability in the Node.js adapter when
   forwarding requests to Keycloak using `checkSSO` with query param `prompt=none`."
-date: "2023-04-04"
+date: "2023-04-05"
 pubdate: "2023-03-27"
 affected_range: "<=23.0.1"
 affected_versions: "All versions up to and including 23.0.1"

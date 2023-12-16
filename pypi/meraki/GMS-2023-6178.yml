@@ -1,0 +1,30 @@
+---
+identifier: "GMS-2023-6178"
+identifiers:
+- "GHSA-6x4h-9622-fqr6"
+- "GMS-2023-6178"
+package_slug: "pypi/meraki"
+title: "Improper validation in meraki"
+description: "aiohttp is an asynchronous HTTP client/server framework for asyncio
+  and Python. Improper validation made it possible for an attacker to modify the HTTP
+  request (e.g. to insert a new header) or create a new HTTP request if the attacker
+  controls the HTTP version. The vulnerability only occurs if the attacker can control
+  the HTTP version of the request. This issue has been patched in version 3.9.0.\n\nmeraki
+  from version 1.40.1 requires aiohttp 3.9.0"
+date: "2023-12-13"
+pubdate: "2023-12-13"
+affected_range: "<1.40.1"
+fixed_versions:
+- "1.40.1"
+affected_versions: "All versions before 1.40.1"
+not_impacted: "All versions starting from 1.40.1"
+solution: "Upgrade to version 1.40.1 or above."
+urls:
+- "https://github.com/meraki/dashboard-api-python/security/advisories/GHSA-6x4h-9622-fqr6"
+- "https://nvd.nist.gov/vuln/detail/CVE-2023-49081"
+- "https://github.com/meraki/dashboard-api-python/releases/tag/1.40.1"
+- "https://github.com/advisories/GHSA-6x4h-9622-fqr6"
+uuid: "9e598070-7646-4ba0-b070-0fb81af56916"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
