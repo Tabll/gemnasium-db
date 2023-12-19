@@ -11,7 +11,7 @@ description: "### Impact\nSAP BTP Security Services Integration Library ([Golang
   arbitrary permissions within the application.\n\n### Patches\nUpgrade to patched
   version >= 0.17.0\nWe always recommend to upgrade to the latest released version.\n\n###
   Workarounds\nNo workarounds\n\n### References\nhttps://www.cve.org/CVERecord?id=CVE-2023-50424"
-date: "2023-12-13"
+date: "2023-12-18"
 pubdate: "2023-12-13"
 affected_range: "<v0.17.0"
 fixed_versions:

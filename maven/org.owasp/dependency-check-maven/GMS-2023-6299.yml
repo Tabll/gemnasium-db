@@ -17,7 +17,7 @@ description: "### Summary\nThe value of `nvdApiKey` configuration parameter is l
   value is logged twice.\n\n### Impact\nThe NVD API key is a kind of secret and should
   not be exposed. If stolen, an attacker can use this key to obtain already public
   information.\n\n"
-date: "2023-12-16"
+date: "2023-12-19"
 pubdate: "2023-12-15"
 affected_range: "[9.0.0,9.0.5]"
 fixed_versions:
