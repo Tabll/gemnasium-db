@@ -1,0 +1,36 @@
+---
+identifier: "GMS-2024-2"
+identifiers:
+- "GHSA-c9v7-wmwj-vf6x"
+- "GMS-2024-2"
+package_slug: "go/github.com/gravitational/teleport"
+title: "SFTP is possible on the Proxy server for any user with SFTP access"
+description: "### Impact\nAn attacker that has access to nodes within the cluster
+  may be able to SFTP to the Proxy Service. The user's permissions on the Proxy server
+  are still respected, so files can only be read or modified on the Proxy if the user
+  has system access to read or write to them.\n\n### Patches\nFixed in versions 14.2.4,
+  13.4.13 and 12.4.31.\n\n### Workarounds\nThis issue can be mitigated by ensuring
+  that regular users do not have a valid principal on the proxy server. To be exploitable,
+  the user's login must exist on a proxy server and the Teleport binary must have
+  permissions to start a session with this user.\n\n### References\n* Fix PR: https://github.com/gravitational/teleport/pull/36136\n"
+date: "2024-01-03"
+pubdate: "2024-01-03"
+affected_range: "<12.4.31||>=13.0.0 <13.4.13||>=14.0.0 <14.2.4"
+fixed_versions:
+- "13.4.13"
+- "14.2.4"
+- "12.4.31"
+affected_versions: "All versions before 12.4.31, all versions starting from 13.0.0
+  before 13.4.13, all versions starting from 14.0.0 before 14.2.4"
+not_impacted: "All versions starting from 12.4.31 before 13.0.0, all versions starting
+  from 13.4.13 before 14.0.0, all versions starting from 14.2.4"
+solution: "Upgrade to versions 13.4.13, 14.2.4, 12.4.31 or above."
+urls:
+- "https://github.com/gravitational/teleport/security/advisories/GHSA-c9v7-wmwj-vf6x"
+- "https://github.com/gravitational/teleport/pull/36136"
+- "https://github.com/gravitational/teleport/commit/1c77fc49944ebcded32bbdd77c3e1f4f8a1c130d"
+- "https://github.com/advisories/GHSA-c9v7-wmwj-vf6x"
+uuid: "647e485b-a870-4533-aa2a-8904e9fd60bb"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
