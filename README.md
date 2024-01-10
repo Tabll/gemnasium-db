@@ -81,7 +81,7 @@ contributions.
 | @yasinsd @Reicela96 | !26255 |
 | @flagosatfluid  | #265 |
 | @Kamoot  | !26608 |
-| @fedemengo | !26641 |
+| @fedemengo | !26641, !26850 |
 | @flagosatfluid| !26642 |
 | @greengeko | !26649 |
 
