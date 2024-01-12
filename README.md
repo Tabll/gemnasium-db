@@ -84,6 +84,7 @@ contributions.
 | @fedemengo | !26641, !26850 |
 | @flagosatfluid| !26642 |
 | @greengeko | !26649, !26857 |
+| @hristiyan.ivanov | !26861, #274 |
 
 
 ## Directory structure
