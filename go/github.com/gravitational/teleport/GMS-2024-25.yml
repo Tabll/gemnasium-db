@@ -1,0 +1,32 @@
+---
+identifier: "GMS-2024-25"
+identifiers:
+- "GHSA-vfxf-76hv-v4w4"
+- "GMS-2024-25"
+package_slug: "go/github.com/gravitational/teleport"
+title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
+  Injection')"
+description: "Improper Neutralization of Special Elements used in an OS Command ('OS
+  Command Injection') in github.com/gravitational/teleport."
+date: "2024-01-16"
+pubdate: "2024-01-03"
+affected_range: "<12.4.31||>=13.0.0 <13.4.13||>=14.0.0 <14.2.4"
+fixed_versions:
+- "13.4.13"
+- "14.2.4"
+- "12.4.31"
+affected_versions: "All versions before 12.4.31, all versions starting from 13.0.0
+  before 13.4.13, all versions starting from 14.0.0 before 14.2.4"
+not_impacted: "All versions starting from 12.4.31 before 13.0.0, all versions starting
+  from 13.4.13 before 14.0.0, all versions starting from 14.2.4"
+solution: "Upgrade to versions 13.4.13, 14.2.4, 12.4.31 or above."
+urls:
+- "https://github.com/gravitational/teleport/security/advisories/GHSA-vfxf-76hv-v4w4"
+- "https://github.com/gravitational/teleport/pull/36132"
+- "https://github.com/gravitational/teleport/commit/fcc97de9f99dfec8696ecfd620672a26f29cf9ac"
+- "https://github.com/advisories/GHSA-vfxf-76hv-v4w4"
+uuid: "801f1bdb-d7ea-49bc-b0af-4b7f4bc857c7"
+cwe_ids:
+- "CWE-1035"
+- "CWE-78"
+- "CWE-937"
