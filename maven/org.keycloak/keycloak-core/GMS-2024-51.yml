@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2024-51"
+identifiers:
+- "GHSA-9vm7-v8wj-3fqw"
+- "GMS-2024-51"
+package_slug: "maven/org.keycloak/keycloak-core"
+title: "keycloak-core: open redirect via \"form_post.jwt\" JARM response mode"
+description: "An incomplete fix was found in Keycloak Core patch. An attacker can
+  steal authorization codes or tokens from clients using a wildcard in the JARM response
+  mode \"form_post.jwt\". It is observed that changing the response_mode parameter
+  in the original proof of concept from \"form_post\" to \"form_post.jwt\" can bypass
+  the security patch implemented to address CVE-2023-6134."
+date: "2024-01-23"
+pubdate: "2024-01-23"
+affected_range: "(,23.0.4)"
+fixed_versions:
+- "23.0.4"
+affected_versions: "All versions before 23.0.4"
+not_impacted: "All versions starting from 23.0.4"
+solution: "Upgrade to version 23.0.4 or above."
+urls:
+- "https://github.com/keycloak/keycloak/security/advisories/GHSA-9vm7-v8wj-3fqw"
+- "https://github.com/advisories/GHSA-9vm7-v8wj-3fqw"
+uuid: "29c19da7-a0fc-407a-be70-46a294e7c0d6"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
