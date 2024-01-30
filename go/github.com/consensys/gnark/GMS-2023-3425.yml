@@ -28,7 +28,7 @@ description: "### Impact\n\nThe vulnerability allows a third party to derive a v
   verification process) should depend on `state_folded_digests_x`, `state_folded_digests_y`,
   `proof_grand_product_commitment_x`, `proof_grand_product_commitment_y` and `state_zeta`
   (by hashing those values for instance).\n"
-date: "2023-10-24"
+date: "2024-01-26"
 pubdate: "2023-10-17"
 affected_range: "<v0.9.1"
 fixed_versions:
