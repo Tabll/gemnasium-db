@@ -1,0 +1,31 @@
+---
+identifier: "GMS-2024-59"
+identifiers:
+- "GHSA-9h6g-pr28-7cqp"
+- "GMS-2024-59"
+package_slug: "npm/nodemailer"
+title: "nodemailer ReDoS when trying to send a specially crafted email"
+description: "### Summary\nA ReDoS vulnerability occurs when nodemailer tries to parse
+  img files with the parameter `attachDataUrls` set, causing the stuck of event loop.
+  \nAnother flaw was found when nodemailer tries to parse an attachments with a embedded
+  file, causing the stuck of event loop. \n\n### Details\n\nRegex: /^data:((?:[^;]*;)*(?:[^,]*)),(.*)$/\n\nPath:
+  compile -> getAttachments -> _processDataUrl\n\nRegex: /(<img\\b[^>]* src\\s*=[\\s\"']*)(data:([^;]+);[^\"'>\\s]+)/\n\nPath:
+  _convertDataImages\n\n### PoC\n\nhttps://gist.github.com/francoatmega/890dd5053375333e40c6fdbcc8c58df6\nhttps://gist.github.com/francoatmega/9aab042b0b24968d7b7039818e8b2698\n\n###
+  Impact\n\nReDoS causes the event loop to stuck a specially crafted evil email can
+  cause this problem.\n"
+date: "2024-01-31"
+pubdate: "2024-01-31"
+affected_range: "<=6.9.8"
+fixed_versions: []
+affected_versions: "All versions up to 6.9.8"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/nodemailer/nodemailer/security/advisories/GHSA-9h6g-pr28-7cqp"
+- "https://gist.github.com/francoatmega/890dd5053375333e40c6fdbcc8c58df6"
+- "https://gist.github.com/francoatmega/9aab042b0b24968d7b7039818e8b2698"
+- "https://github.com/advisories/GHSA-9h6g-pr28-7cqp"
+uuid: "7eb13570-9108-4c98-a708-17550b1897ec"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
