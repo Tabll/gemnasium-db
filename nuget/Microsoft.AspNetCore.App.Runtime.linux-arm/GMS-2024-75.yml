@@ -1,0 +1,68 @@
+---
+identifier: "GMS-2024-75"
+identifiers:
+- "GHSA-vh55-786g-wjwj"
+- "GMS-2024-75"
+package_slug: "nuget/Microsoft.AspNetCore.App.Runtime.linux-arm"
+title: ".NET Information Disclosure Vulnerability"
+description: "Microsoft is releasing this security advisory to provide information
+  about a vulnerability in .NET Core 3.1 and .NET 6.0. This advisory also provides
+  guidance on what developers can do to update their applications to remove this vulnerability.\n\nAn
+  information disclosure vulnerability exists in .NET Core 3.1 and .NET 6.0 that could
+  lead to unauthorized access of privileged information.\n\n## <a name=\"affected-software\"></a>Affected
+  software\n\n* Any .NET 6.0 application running on .NET 6.0.7 or earlier.\n* Any
+  .NET Core 3.1 applicaiton running on .NET Core 3.1.27 or earlier.\n\nIf your application
+  uses the following package versions, ensure you update to the latest version of
+  .NET.\n\n### <a name=\".NET Core 3.1\"></a>.NET Core 3.1\n\nPackage name | Affected
+  version | Patched version\n------------ | ---------------- | -------------------------\n[System.Security.Cryptography.Xml](http://system.security)|
+  <=4.7.0| 4.7.1\n[Microsoft.AspNetCore.App.Runtime.win-x64](https://www.nuget.org/packages/Microsoft.AspNetCore.App.Runtime.win-x64)|
+  >=3.1.0, 3.1.27| 3.1.28\n[Microsoft.AspNetCore.App.Runtime.linux-x64](https://www.nuget.org/packages/Microsoft.AspNetCore.App.Runtime.linux-x64)|
+  >=3.1.0, 3.1.27| 3.1.28\n[Microsoft.AspNetCore.App.Runtime.win-x86](https://www.nuget.org/packages/Microsoft.AspNetCore.App.Runtime.win-x86)|
+  >=3.1.0, 3.1.27| 3.1.28\n[Microsoft.AspNetCore.App.Runtime.osx-x64](https://www.nuget.org/packages/Microsoft.AspNetCore.App.Runtime.osx-x64)|
+  >=3.1.0, 3.1.27| 3.1.28\n[Microsoft.AspNetCore.App.Runtime.linux-musl-x64](https://www.nuget.org/packages/Microsoft.AspNetCore.App.Runtime.linux-musl-x64)|
+  >=3.1.0, 3.1.27| 3.1.28\n[Microsoft.AspNetCore.App.Runtime.linux-arm64](https://www.nuget.org/packages/Microsoft.AspNetCore.App.Runtime.linux-arm64)|
+  >=3.1.0, 3.1.27| 3.1.28\n[Microsoft.AspNetCore.App.Runtime.linux-arm](https://www.nuget.org/packages/Microsoft.AspNetCore.App.Runtime.linux-arm)|
+  >=3.1.0, 3.1.27| 3.1.28\n[Microsoft.AspNetCore.App.Runtime.win-arm64](https://www.nuget.org/packages/Microsoft.AspNetCore.App.Runtime.win-arm64)|
+  >=3.1.0, 3.1.27| 3.1.28\n[Microsoft.AspNetCore.App.Runtime.win-arm](https://www.nuget.org/packages/Microsoft.AspNetCore.App.Runtime.win-arm)|
+  >=3.1.0, 3.1.27| 3.1.28\n[Microsoft.AspNetCore.App.Runtime.linux-musl-arm64](https://www.nuget.org/packages/Microsoft.AspNetCore.App.Runtime.linux-musl-arm64)|
+  >=3.1.0, 3.1.27| 3.1.28\n[Microsoft.AspNetCore.App.Runtime.linux-musl-arm](https://www.nuget.org/packages/Microsoft.AspNetCore.App.Runtime.linux-musl-arm)|
+  >=3.1.0, 3.1.27| 3.1.28\n\n### <a name=\".NET 6\"></a>.NET 6\n\nPackage name | Affected
+  version | Patched version\n------------ | ---------------- | -------------------------\n[System.Security.Cryptography.Xml](https://www.nuget.org/packages/System.Security.Cryptography.Xml)|
+  >=5.0.0, 6.0.0| 6.0.1\n[Microsoft.AspNetCore.App.Runtime.win-x64](https://www.nuget.org/packages/Microsoft.AspNetCore.App.Runtime.win-x64)|
+  >=6.0.0, 6.0.7| 6.0.8\n[Microsoft.AspNetCore.App.Runtime.linux-x64](https://www.nuget.org/packages/Microsoft.AspNetCore.App.Runtime.linux-x64)|
+  >=6.0.0, 6.0.7| 6.0.8\n[Microsoft.AspNetCore.App.Runtime.win-x86](https://www.nuget.org/packages/Microsoft.AspNetCore.App.Runtime.win-x86)|
+  >=6.0.0, 6.0.7| 6.0.8\n[Microsoft.AspNetCore.App.Runtime.osx-x64](https://www.nuget.org/packages/Microsoft.AspNetCore.App.Runtime.osx-x64)|
+  >=6.0.0, 6.0.7| 6.0.8\n[Microsoft.AspNetCore.App.Runtime.linux-musl-x64](https://www.nuget.org/packages/Microsoft.AspNetCore.App.Runtime.linux-musl-x64)|
+  >=6.0.0, 6.0.7| 6.0.8\n[Microsoft.AspNetCore.App.Runtime.linux-arm64](https://www.nuget.org/packages/Microsoft.AspNetCore.App.Runtime.linux-arm64)|
+  >=6.0.0, 6.0.7| 6.0.8\n[Microsoft.AspNetCore.App.Runtime.linux-arm](https://www.nuget.org/packages/Microsoft.AspNetCore.App.Runtime.linux-arm)|
+  >=6.0.0, 6.0.7| 6.0.8\n[Microsoft.AspNetCore.App.Runtime.win-arm64](https://www.nuget.org/packages/Microsoft.AspNetCore.App.Runtime.win-arm64)|
+  >=6.0.0, 6.0.7| 6.0.8\n[Microsoft.AspNetCore.App.Runtime.win-arm](https://www.nuget.org/packages/Microsoft.AspNetCore.App.Runtime.win-arm)|
+  >=6.0.0, 6.0.7| 6.0.8\n[Microsoft.AspNetCore.App.Runtime.osx-arm64](https://www.nuget.org/packages/Microsoft.AspNetCore.App.Runtime.osx-arm64)|
+  >=6.0.0, 6.0.7| 6.0.8\n[Microsoft.AspNetCore.App.Runtime.linux-musl-arm64](https://www.nuget.org/packages/Microsoft.AspNetCore.App.Runtime.linux-musl-arm64)|
+  >=6.0.0, 6.0.7| 6.0.8\n[Microsoft.AspNetCore.App.Runtime.linux-musl-arm](https://www.nuget.org/packages/Microsoft.AspNetCore.App.Runtime.linux-musl-arm)|
+  >=6.0.0, 6.0.7| 6.0.8\n\n## Patches\n\n\n* If you're using .NET 6.0, you should
+  download and install Runtime 6.0.8 or SDK 6.0.108 (for Visual Studio 2022 v17.1)
+  from https://dotnet.microsoft.com/download/dotnet-core/6.0.\n* If you're using .NET
+  Core 3.1, you should download and install Runtime 3.1.28 (for Visual Studio 2019
+  v16.9) from https://dotnet.microsoft.com/download/dotnet-core/3.1.\n\n\n### Other\n\nAnnouncement
+  for this issue can be found at https://github.com/dotnet/announcements/issues/232\nAn
+  Issue for this can be found at https://github.com/dotnet/aspnetcore/issues/43166\nMSRC
+  details for this can be found at https://msrc.microsoft.com/update-guide/vulnerability/CVE-2022-34716"
+date: "2024-02-03"
+pubdate: "2024-02-03"
+affected_range: "[3.1.0,3.1.27],[6.0.0,6.0.7]"
+fixed_versions:
+- "3.1.28"
+- "6.0.8"
+affected_versions: "All versions starting from 3.1.0 up to 3.1.27, all versions starting
+  from 6.0.0 up to 6.0.7"
+not_impacted: "All versions before 3.1.0, all versions after 3.1.27 before 6.0.0,
+  all versions after 6.0.7"
+solution: "Upgrade to versions 3.1.28, 6.0.8 or above."
+urls:
+- "https://github.com/dotnet/aspnetcore/security/advisories/GHSA-vh55-786g-wjwj"
+- "https://github.com/advisories/GHSA-vh55-786g-wjwj"
+uuid: "97d2190a-f9ce-46a3-bfea-298e439cd2f4"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

@@ -1,0 +1,33 @@
+---
+identifier: "GMS-2024-67"
+identifiers:
+- "GHSA-pm3m-32r3-7mfh"
+- "GMS-2024-67"
+package_slug: "go/go.etcd.io/etcd"
+title: "Etcd embed auto compaction retention negative value causing a compaction loop
+  or a crash"
+description: "### Impact\nData Validation\n\n### Detail\nThe parseCompactionRetention
+  function in embed/etcd.go allows the retention variable value to be negative and
+  causes the node to execute the history compaction in a loop, taking more CPU than
+  usual and spamming logs.\n\n### References\nFind out more on this vulnerability
+  in the [security audit report](https://github.com/etcd-io/etcd/blob/master/security/SECURITY_AUDIT.pdf)\n\n###
+  For more information\nIf you have any questions or comments about this advisory:\n*
+  Contact the [etcd security committee](https://github.com/etcd-io/etcd/blob/master/security/security-release-process.md#product-security-committee-psc)"
+date: "2024-02-03"
+pubdate: "2024-02-03"
+affected_range: "<3.3.23||>=3.4.0-rc.0 <=3.4.9"
+fixed_versions:
+- "3.3.23"
+- "3.4.10"
+affected_versions: "All versions before 3.3.23, all versions starting from 3.4.0-rc.0
+  up to 3.4.9"
+not_impacted: "All versions starting from 3.3.23 before 3.4.0-rc.0, all versions after
+  3.4.9"
+solution: "Upgrade to versions 3.3.23, 3.4.10 or above."
+urls:
+- "https://github.com/etcd-io/etcd/security/advisories/GHSA-pm3m-32r3-7mfh"
+- "https://github.com/advisories/GHSA-pm3m-32r3-7mfh"
+uuid: "2aecafd5-cb35-4dd5-ae8a-31a039621824"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

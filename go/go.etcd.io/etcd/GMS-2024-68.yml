@@ -1,0 +1,34 @@
+---
+identifier: "GMS-2024-68"
+identifiers:
+- "GHSA-vjg6-93fv-qv64"
+- "GMS-2024-68"
+package_slug: "go/go.etcd.io/etcd"
+title: "Etcd auth Inaccurate logging of authentication attempts for users with CN-based
+  auth only"
+description: "### Vulnerability type\nLogging\n\n### Detail\netcd users who have no
+  password can authenticate only through a client certificate. When such users try
+  to authenticate into etcd using the Authenticate endpoint, errors are logged with
+  insufficient information regarding why the authentication failed, and may be misleading
+  when auditing etcd logs.\n\n### References\nFind out more on this vulnerability
+  in the [security audit report](https://github.com/etcd-io/etcd/blob/master/security/SECURITY_AUDIT.pdf)\n\n###
+  For more information\nIf you have any questions or comments about this advisory:\n*
+  Contact the [etcd security committee](https://github.com/etcd-io/etcd/blob/master/security/security-release-process.md#product-security-committee-psc)"
+date: "2024-02-03"
+pubdate: "2024-02-03"
+affected_range: "<3.3.23||>=3.4.0-rc.0 <=3.4.9"
+fixed_versions:
+- "3.3.23"
+- "3.4.10"
+affected_versions: "All versions before 3.3.23, all versions starting from 3.4.0-rc.0
+  up to 3.4.9"
+not_impacted: "All versions starting from 3.3.23 before 3.4.0-rc.0, all versions after
+  3.4.9"
+solution: "Upgrade to versions 3.3.23, 3.4.10 or above."
+urls:
+- "https://github.com/etcd-io/etcd/security/advisories/GHSA-vjg6-93fv-qv64"
+- "https://github.com/advisories/GHSA-vjg6-93fv-qv64"
+uuid: "f210d07e-d454-4714-b0ab-f455a304049b"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"
