@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2024-338"
+identifiers:
+- "GHSA-97m3-52wr-xvv2"
+- "GMS-2024-338"
+package_slug: "packagist/dompdf/dompdf"
+title: "Improper Neutralization"
+description: "Improper Neutralization in dompdf/dompdf."
+date: "2024-02-22"
+pubdate: "2024-02-22"
+affected_range: "<=2.0.4"
+fixed_versions: []
+affected_versions: "All versions up to 2.0.4"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/dompdf/dompdf/security/advisories/GHSA-97m3-52wr-xvv2"
+- "https://github.com/dompdf/php-svg-lib/security/advisories/GHSA-f3qr-qr4x-j273"
+- "https://github.com/dompdf/php-svg-lib/commit/732faa9fb4309221e2bd9b2fda5de44f947133aa"
+- "https://github.com/advisories/GHSA-97m3-52wr-xvv2"
+uuid: "c969d96c-1f52-4580-aeb0-5d34007f88a6"
+cwe_ids:
+- "CWE-1035"
+- "CWE-707"
+- "CWE-937"

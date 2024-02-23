@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2024-341"
+identifiers:
+- "GHSA-97m3-52wr-xvv2"
+- "GMS-2024-341"
+package_slug: "packagist/phenx/php-svg-lib"
+title: "Improper Neutralization"
+description: "Improper Neutralization in phenx/php-svg-lib."
+date: "2024-02-22"
+pubdate: "2024-02-22"
+affected_range: "<0.5.2"
+fixed_versions:
+- "0.5.2"
+affected_versions: "All versions before 0.5.2"
+not_impacted: "All versions starting from 0.5.2"
+solution: "Upgrade to version 0.5.2 or above."
+urls:
+- "https://github.com/dompdf/dompdf/security/advisories/GHSA-97m3-52wr-xvv2"
+- "https://github.com/dompdf/php-svg-lib/security/advisories/GHSA-f3qr-qr4x-j273"
+- "https://github.com/dompdf/php-svg-lib/commit/732faa9fb4309221e2bd9b2fda5de44f947133aa"
+- "https://github.com/advisories/GHSA-97m3-52wr-xvv2"
+uuid: "a4b0f445-74e7-4ef3-bd7e-2e03106c81a3"
+cwe_ids:
+- "CWE-1035"
+- "CWE-707"
+- "CWE-937"
