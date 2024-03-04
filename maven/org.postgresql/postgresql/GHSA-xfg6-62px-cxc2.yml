@@ -1,0 +1,51 @@
+---
+identifier: "GHSA-xfg6-62px-cxc2"
+identifiers:
+- "GHSA-xfg6-62px-cxc2"
+package_slug: "maven/org.postgresql/postgresql"
+title: "Duplicate Advisory: SQL injection in pgjdbc"
+description: "## Duplicate Advisory\nThis advisory has been withdrawn because it is
+  a duplicate of GHSA-24rp-q3w6-vc56. This link is maintained to preserve external
+  references.\n\n## Original Description\npgjdbc, the PostgreSQL JDBC Driver, allows
+  attacker to inject SQL if using PreferQueryMode=SIMPLE. Note this is not the default.
+  In the default mode there is no vulnerability. A placeholder for a numeric value
+  must be immediately preceded by a minus. There must be a second placeholder for
+  a string value after the first placeholder; both must be on the same line. By constructing
+  a matching string payload, the attacker can inject SQL to alter the query,bypassing
+  the protections that parameterized queries bring against SQL Injection attacks.
+  Versions before 42.7.2, 42.6.1, 42.5.5, 42.4.4, 42.3.9, and 42.2.8 are affected."
+date: "2024-02-21"
+pubdate: "2024-02-19"
+affected_range: "[42.7.0,42.7.2),[42.6.0,42.6.1),[42.5.0,42.5.5),[42.4.0,42.4.4),[42.3.0,42.3.9),[,42.2.8)"
+fixed_versions:
+- "42.7.2"
+- "42.6.1"
+- "42.5.5"
+- "42.4.4"
+- "42.3.9"
+- "42.2.8"
+affected_versions: "All versions starting from 42.7.0 before 42.7.2, all versions
+  starting from 42.6.0 before 42.6.1, all versions starting from 42.5.0 before 42.5.5,
+  all versions starting from 42.4.0 before 42.4.4, all versions starting from 42.3.0
+  before 42.3.9, all versions before 42.2.8"
+not_impacted: "All versions before 42.7.0, all versions starting from 42.7.2, all
+  versions before 42.6.0, all versions starting from 42.6.1, all versions before 42.5.0,
+  all versions starting from 42.5.5, all versions before 42.4.0, all versions starting
+  from 42.4.4, all versions before 42.3.0, all versions starting from 42.2.8 before
+  42.3.9"
+solution: "Upgrade to versions 42.7.2, 42.7.2, 42.7.2, 42.7.2, 42.5.5, 42.4.4, 42.3.9,
+  42.2.8, 42.2.8 or above."
+urls:
+- "https://github.com/advisories/GHSA-xfg6-62px-cxc2"
+- "https://github.com/pgjdbc/pgjdbc/security/advisories/GHSA-24rp-q3w6-vc56"
+- "https://nvd.nist.gov/vuln/detail/CVE-2024-1597"
+- "https://github.com/pgjdbc/pgjdbc/commit/06abfb78a627277a580d4df825f210e96a4e14ee"
+- "https://github.com/pgjdbc/pgjdbc/commit/93b0fcb2711d9c1e3a2a03134369738a02a58b40"
+- "https://github.com/pgjdbc/pgjdbc"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H"
+uuid: "438c7349-a5ca-4854-b8e6-1369f32bd9b7"
+cwe_ids:
+- "CWE-89"
+- "CWE-937"
+- "CWE-1035"
+_sync: "true"

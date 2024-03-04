@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-p4m5-32pr-2hqr"
+identifiers:
+- "GHSA-p4m5-32pr-2hqr"
+package_slug: "pypi/pypop-genomics"
+title: "PyPop C extensions possible vulnerability: missing arguments and redundant
+  null pointers"
+description: "### Impact\nCode scanning revealed possible vulnerability in C extensions
+  for PyPop: incorrect function calls (missing arguments or wrongly typed arguments)
+  and redundant null pointers.\n\n### Patches\nThe problem has been patched and fixed
+  in the latest release of PyPop: 1.0.2. Please upgrade your PyPop installation via:\n\n```\npip
+  install -U pypop-genomics\n```\n\n### Workarounds\nNo. Upgrade to the latest package:
+  1.0.2.\n\n### References\nN/A\n"
+date: "2024-02-26"
+pubdate: "2024-02-26"
+affected_range: "<1.0.2"
+fixed_versions:
+- "1.0.2"
+affected_versions: "All versions before 1.0.2"
+not_impacted: "All versions starting from 1.0.2"
+solution: "Upgrade to version 1.0.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-p4m5-32pr-2hqr"
+- "https://github.com/alexlancaster/pypop/security/advisories/GHSA-p4m5-32pr-2hqr"
+- "https://github.com/alexlancaster/pypop/commit/2e5c495dd7684f67f6682e80e324351039a28262"
+- "https://github.com/alexlancaster/pypop"
+- "https://github.com/alexlancaster/pypop/releases/tag/v1.0.2"
+uuid: "02e25b57-cb15-4e54-b561-966931d3767d"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"
+_sync: "true"

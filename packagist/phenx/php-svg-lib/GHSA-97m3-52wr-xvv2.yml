@@ -1,0 +1,44 @@
+---
+identifier: "GHSA-97m3-52wr-xvv2"
+identifiers:
+- "GHSA-97m3-52wr-xvv2"
+package_slug: "packagist/phenx/php-svg-lib"
+title: "Dompdf's usage of vulnerable version of phenx/php-svg-lib leads to restriction
+  bypass and potential RCE"
+description: "### Summary\nA lack of sanitization/check in the font path returned
+  by php-svg-lib, in the case of a inline CSS font defined, that will be used by Cpdf
+  to open a font will be passed to a `file_exists` call, which is sufficient to trigger
+  metadata unserializing on a PHAR file, through the phar:// URL handler on PHP <
+  8.0. On other versions, it might be used as a way to get a SSRF through, for example,
+  ftp, not restricted by authorized protocols configured on dompdf.\n\n### Details\nThe
+  problem lies on the `openFont` function of the `lib/Cpdf.php` library, when the
+  `$font` variable passed by php-svg-lib isn't checked correctly. A path is crafted
+  through $name and $dir, which are two values that can be controlled through CSS
+  : \n\n```\n$name = basename($font);\n$dir = dirname($font);\n[...]\n$metrics_name
+  = \"$name.ufm\";\n[...]\n\nif (!isset($this->fonts[$font]) && file_exists(\"$dir/$metrics_name\"))
+  {\n```\n\nPassing a font named `phar:///foo/bar/baz.phar/test` will set the value
+  of $name to `test` and $dir to `phar:///foo/bar/baz.phar`, which once reconstructed
+  will call file_exists on `phar:///foo/bar/baz.phar/test.ufm`. That allows to deserialize
+  the `baz.phar` arbitrary file that contains a `test.ufm` file in the archive."
+date: "2024-02-23"
+pubdate: "2024-02-22"
+affected_range: "<0.5.2"
+fixed_versions:
+- "0.5.2"
+affected_versions: "All versions before 0.5.2"
+not_impacted: "All versions starting from 0.5.2"
+solution: "Upgrade to version 0.5.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-97m3-52wr-xvv2"
+- "https://github.com/dompdf/dompdf/security/advisories/GHSA-97m3-52wr-xvv2"
+- "https://github.com/dompdf/php-svg-lib/security/advisories/GHSA-f3qr-qr4x-j273"
+- "https://github.com/dompdf/php-svg-lib/commit/732faa9fb4309221e2bd9b2fda5de44f947133aa"
+- "https://github.com/dompdf/dompdf"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H"
+uuid: "a8535c06-b345-48a5-9bcd-da2f52a92fa5"
+cwe_ids:
+- "CWE-502"
+- "CWE-73"
+- "CWE-937"
+- "CWE-1035"
+_sync: "true"

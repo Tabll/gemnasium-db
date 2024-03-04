@@ -1,0 +1,42 @@
+---
+identifier: "GHSA-84c3-j8r2-mcm8"
+identifiers:
+- "GHSA-84c3-j8r2-mcm8"
+package_slug: "npm/@nfid/embed"
+title: "@nfid/embed has compromised private key due to @dfinity/auth-client producing
+  insecure session keys"
+description: "### Problem\nUser sessions in the @nfid/embed SDK with Ed25519 keys
+  are vulnerable due to a compromised private key `535yc-uxytb-gfk7h-tny7p-vjkoe-i4krp-3qmcl-uqfgr-cpgej-yqtjq-rqe`.
+  This exposes users to potential loss of funds on ledgers and unauthorized access
+  to canisters they control.\n\n### Solution\nUsing version >1.0.1 of @dfinity/auth-client
+  and @dfinity/identity packages, or @nfid/embed >0.10.1-alpha.6 includes patched
+  versions of the issue.\n\nUser sessions will be automatically fixed when they re-authenticate.\n\n###
+  Why this happened\nThe DFINITY auth client library provides a function, `Ed25519KeyIdentity.generate`,
+  for generating an Ed25519 key pair. This function includes an optional parameter
+  to supply a 32-byte seed value, which will be utilized as the secret key. In cases
+  where no seed value is provided, the library is expected to generate the secret
+  key using secure randomness. However, a recent update of DFINITY libraries has compromised
+  this assurance by employing an insecure seed for key pair generation.\n\n### References\n[AgentJS
+  CVE ](https://github.com/dfinity/agent-js/security/advisories/GHSA-c9vv-fhgv-cjc3)\n"
+date: "2024-02-26"
+pubdate: "2024-02-26"
+affected_range: ">=0.10.0 <0.10.1-alpha.6"
+fixed_versions:
+- "0.10.1-alpha.6"
+affected_versions: "All versions starting from 0.10.0 before 0.10.1-alpha.6"
+not_impacted: "All versions before 0.10.0, all versions starting from 0.10.1-alpha.6"
+solution: "Upgrade to version 0.10.1-alpha.6 or above. *Note*: 0.10.1-alpha.6 may
+  be an unstable version. Use caution."
+urls:
+- "https://github.com/advisories/GHSA-84c3-j8r2-mcm8"
+- "https://github.com/dfinity/agent-js/security/advisories/GHSA-c9vv-fhgv-cjc3"
+- "https://github.com/internet-identity-labs/sdk-ts/security/advisories/GHSA-84c3-j8r2-mcm8"
+- "https://github.com/internet-identity-labs/sdk-ts"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N"
+uuid: "ee37925e-9eda-4c4d-b7c2-3d3cab119d2c"
+cwe_ids:
+- "CWE-321"
+- "CWE-330"
+- "CWE-937"
+- "CWE-1035"
+_sync: "true"
