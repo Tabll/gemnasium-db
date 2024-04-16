@@ -1,0 +1,25 @@
+---
+identifier: "GMS-2022-902"
+identifiers:
+- "GHSA-rpx7-33j2-xx9x"
+- "GMS-2022-902"
+package_slug: "pypi/nemo-toolkit"
+title: "Relative Path Traversal"
+description: "Relative Path Traversal in nemo_toolkit."
+date: "2022-04-20"
+pubdate: "2022-02-15"
+affected_range: "<1.6.0"
+fixed_versions:
+- "1.6.0"
+affected_versions: "All versions before 1.6.0"
+not_impacted: "All versions starting from 1.6.0"
+solution: "Upgrade to version 1.6.0 or above."
+urls:
+- "https://github.com/NVIDIA/NeMo/security/advisories/GHSA-rpx7-33j2-xx9x"
+- "https://github.com/NVIDIA/NeMo/commit/f7e4ed7e4f7f2fa43765a38c2fafa1b6d1ebd7c0"
+- "https://github.com/advisories/GHSA-rpx7-33j2-xx9x"
+uuid: "bd507341-a8fc-48d4-9633-b6cfce607c8d"
+cwe_ids:
+- "CWE-1035"
+- "CWE-352"
+- "CWE-937"

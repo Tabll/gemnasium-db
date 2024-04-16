@@ -1,0 +1,36 @@
+---
+identifier: "GHSA-7jwh-3vrq-q3m8"
+identifiers:
+- "GHSA-7jwh-3vrq-q3m8"
+package_slug: "go/github.com/jackc/pgproto3/v2"
+title: "pgproto3 SQL Injection via Protocol Message Size Overflow"
+description: "### Impact\n\nSQL injection can occur if an attacker can cause a single
+  query or bind message to exceed 4 GB in size. An integer overflow in the calculated
+  message size can cause the one large message to be sent as multiple messages under
+  the attacker's control.\n\n### Patches\n\nThe problem is resolved in v2.3.3\n\n###
+  Workarounds\n\nReject user input large enough to cause a single query or bind message
+  to exceed 4 GB in size.\n"
+date: "2024-03-14"
+pubdate: "2024-03-04"
+affected_range: "<2.3.3"
+fixed_versions:
+- "2.3.3"
+affected_versions: "All versions before 2.3.3"
+not_impacted: "All versions starting from 2.3.3"
+solution: "Upgrade to version 2.3.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-7jwh-3vrq-q3m8"
+- "https://github.com/jackc/pgproto3/security/advisories/GHSA-7jwh-3vrq-q3m8"
+- "https://github.com/jackc/pgx/security/advisories/GHSA-mrww-27vc-gghv"
+- "https://nvd.nist.gov/vuln/detail/CVE-2024-27304"
+- "https://github.com/jackc/pgproto3/commit/945c2126f6db8f3bea7eeebe307c01fe92bca007"
+- "https://github.com/jackc/pgx/commit/adbb38f298c76e283ffc7c7a3f571036fea47fd4"
+- "https://github.com/jackc/pgx/commit/c543134753a0c5d22881c12404025724cb05ffd8"
+- "https://github.com/jackc/pgx/commit/f94eb0e2f96782042c96801b5ac448f44f0a81df"
+- "https://github.com/jackc/pgproto3"
+uuid: "642f92b2-f4ac-4cc9-b2d3-f50f7b24f919"
+cwe_ids:
+- "CWE-190"
+- "CWE-89"
+- "CWE-937"
+- "CWE-1035"

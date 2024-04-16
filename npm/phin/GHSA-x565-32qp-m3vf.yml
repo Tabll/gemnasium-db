@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-x565-32qp-m3vf"
+identifiers:
+- "GHSA-x565-32qp-m3vf"
+package_slug: "npm/phin"
+title: "phin may include sensitive headers in subsequent requests after redirect"
+description: "Users may be impacted if sending requests including sensitive data in
+  specific headers with `followRedirects` enabled."
+date: "2024-04-11"
+pubdate: "2024-04-11"
+affected_range: "<3.7.1"
+fixed_versions:
+- "3.7.1"
+affected_versions: "All versions before 3.7.1"
+not_impacted: "All versions starting from 3.7.1"
+solution: "Upgrade to version 3.7.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-x565-32qp-m3vf"
+- "https://github.com/ethanent/phin/security/advisories/GHSA-x565-32qp-m3vf"
+- "https://github.com/ethanent/phin/commit/c071f95336a987dad9332fd388adeb249925cc57"
+- "https://github.com/ethanent/phin"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:N"
+uuid: "37888727-c734-4884-a61f-b627b4a454d6"
+cwe_ids:
+- "CWE-200"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,26 @@
+---
+identifier: "GHSA-7f4j-64p6-5h5v"
+identifiers:
+- "GHSA-7f4j-64p6-5h5v"
+package_slug: "go/github.com/traefik/traefik/v2"
+title: "Traefik affected by HTTP/2 CONTINUATION flood in net/http"
+description: "There is a potential vulnerability in Traefik managing HTTP/2 connections.\n\nMore
+  details in the [CVE-2023-45288](https://www.cve.org/CVERecord?id=CVE-2023-45288)."
+date: "2024-04-15"
+pubdate: "2024-04-15"
+affected_range: "<2.11.2"
+fixed_versions:
+- "2.11.2"
+affected_versions: "All versions before 2.11.2"
+not_impacted: "All versions starting from 2.11.2"
+solution: "Upgrade to version 2.11.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-7f4j-64p6-5h5v"
+- "https://github.com/traefik/traefik/security/advisories/GHSA-7f4j-64p6-5h5v"
+- "https://github.com/traefik/traefik"
+- "https://github.com/traefik/traefik/releases/tag/v2.11.2"
+- "https://github.com/traefik/traefik/releases/tag/v3.0.0-rc5"
+uuid: "f48ca1ba-86b2-429a-8f01-3062ad9fc94f"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

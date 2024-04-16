@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-pmf3-c36m-g5cf"
+identifiers:
+- "GHSA-pmf3-c36m-g5cf"
+package_slug: "go/github.com/containers/buildah"
+title: "Container escape at build time"
+description: "Users running containers with root privileges allowing a container to
+  run with read/write access to the host system files when selinux is not enabled.
+  \ With selinux enabled, some read access is allowed."
+date: "2024-03-19"
+pubdate: "2024-03-19"
+affected_range: "<1.35.1"
+fixed_versions:
+- "1.35.1"
+affected_versions: "All versions before 1.35.1"
+not_impacted: "All versions starting from 1.35.1"
+solution: "Upgrade to version 1.35.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-pmf3-c36m-g5cf"
+- "https://github.com/containers/buildah/security/advisories/GHSA-pmf3-c36m-g5cf"
+- "https://github.com/containers/buildah/commit/9de9c20ff368beb84b84fe660773d352519dc1c5"
+- "https://github.com/containers/buildah"
+uuid: "93fc1a89-748b-4938-9540-0f8c31ac3ddd"
+cwe_ids:
+- "CWE-22"
+- "CWE-937"
+- "CWE-1035"

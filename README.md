@@ -2,13 +2,8 @@
 
 This repository contains the security advisories used by the
 [GitLab dependency scanners](https://docs.gitlab.com/ee/user/application_security/dependency_scanning/index.html).
-It can be used for both searching advisories and submitting new ones.
-The GitLab team constantly improves this vulnerability database
-by checking external sources on a regular basis, and contributing their findings to this repo.
-Learn more on the [external sources](SOURCES.md) and how the GitLab team tracks them.
 
-More information about the advisories contained in this repository is available
-on our [Advisory Landing Page](https://advisories.gitlab.com).
+You can also search for advisories on https://advisories.gitlab.com
 
 ## Licensing
 
@@ -78,12 +73,12 @@ contributions.
 | @delifer       | #258 |
 | @cflucasraab | !25856 |
 | @sify21 | !26082 |
-| @yasinsd @Reicela96 | !26255 |
+| @yasinsd @greengeko | !26255 |
 | @flagosatfluid  | #265 |
 | @Kamoot  | !26608 |
 | @fedemengo | !26641, !26850 |
 | @flagosatfluid| !26642 |
-| @greengeko | !26649, !26857, !26898 |
+| @greengeko | !26649, !26857, !26898, !27717, !27720 |
 | @hristiyan.ivanov | !26861, #274 |
 
 

@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-2m57-hf25-phgg"
+identifiers:
+- "GHSA-2m57-hf25-phgg"
+package_slug: "pypi/sqlparse"
+title: "sqlparse parsing heavily nested list leads to Denial of Service"
+description: "Passing a heavily nested list to sqlparse.parse() leads to a Denial
+  of Service due to RecursionError."
+date: "2024-04-15"
+pubdate: "2024-04-15"
+affected_range: "<0.5.0"
+fixed_versions:
+- "0.5.0"
+affected_versions: "All versions before 0.5.0"
+not_impacted: "All versions starting from 0.5.0"
+solution: "Upgrade to version 0.5.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-2m57-hf25-phgg"
+- "https://github.com/andialbrecht/sqlparse/security/advisories/GHSA-2m57-hf25-phgg"
+- "https://github.com/andialbrecht/sqlparse/commit/b4a39d9850969b4e1d6940d32094ee0b42a2cf03"
+- "https://github.com/andialbrecht/sqlparse"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "eb1dc93e-c8bb-4183-9cbc-48ffe7e2e376"
+cwe_ids:
+- "CWE-674"
+- "CWE-937"
+- "CWE-1035"

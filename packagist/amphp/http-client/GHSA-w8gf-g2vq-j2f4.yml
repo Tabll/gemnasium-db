@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-w8gf-g2vq-j2f4"
+identifiers:
+- "GHSA-w8gf-g2vq-j2f4"
+package_slug: "packagist/amphp/http-client"
+title: "amphp/http-client  Denial of Service via HTTP/2 CONTINUATION Frames"
+description: "Early versions of `amphp/http-client` with HTTP/2 support (v4.0.0-rc10
+  to 4.0.0) will collect HTTP/2 `CONTINUATION` frames in an unbounded buffer and will
+  not check the header size limit until it has received the `END_HEADERS` flag, resulting
+  in an OOM crash. Later versions of `amphp/http-client` (v4.1.0-rc1 and up) depend
+  on `amphp/http` for HTTP/2 processing and will therefore need an updated version
+  of `amphp/http`, see [GHSA-qjfw-cvjf-f4fm](https://github.com/amphp/http/security/advisories/GHSA-qjfw-cvjf-f4fm)."
+date: "2024-04-03"
+pubdate: "2024-04-03"
+affected_range: ">=4.0.0-rc10 <4.1.0-rc1"
+fixed_versions:
+- "4.1.0-rc1"
+affected_versions: "All versions starting from 4.0.0-rc10 before 4.1.0-rc1"
+not_impacted: "All versions before 4.0.0-rc10, all versions starting from 4.1.0-rc1"
+solution: "Upgrade to version 4.1.0-rc1 or above."
+urls:
+- "https://github.com/advisories/GHSA-w8gf-g2vq-j2f4"
+- "https://github.com/amphp/http-client/security/advisories/GHSA-w8gf-g2vq-j2f4"
+- "https://github.com/amphp/http/security/advisories/GHSA-qjfw-cvjf-f4fm"
+- "https://github.com/amphp/http-client"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:H"
+uuid: "66bbe7e7-d529-46f2-821c-d7e39a40b57a"
+cwe_ids:
+- "CWE-770"
+- "CWE-789"
+- "CWE-937"
+- "CWE-1035"

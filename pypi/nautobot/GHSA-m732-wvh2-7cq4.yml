@@ -1,0 +1,63 @@
+---
+identifier: "GHSA-m732-wvh2-7cq4"
+identifiers:
+- "GHSA-m732-wvh2-7cq4"
+package_slug: "pypi/nautobot"
+title: "Unauthenticated views may expose information to anonymous users"
+description: "A number of Nautobot URL endpoints were found to be improperly accessible
+  to unauthenticated (anonymous) users, including the following:\n\n- `/api/graphql/`
+  (1)\n- `/api/users/users/session/` (Nautobot 2.x only; the only information exposed
+  to an anonymous user is which authentication backend classes are enabled on this
+  Nautobot instance)\n- `/dcim/racks/<uuid:pk>/dynamic-groups/` (1)\n- `/dcim/devices/<uuid:pk>/dynamic-groups/`
+  (1)\n- `/extras/job-results/<uuid:pk>/log-table/`\n- `/extras/secrets/provider/<str:provider_slug>/form/`
+  (the only information exposed to an anonymous user is the fact that a secrets provider
+  with the given slug (e.g. `environment-variable` or `text-file`) is supported by
+  this Nautobot instance)\n- `/ipam/prefixes/<uuid:pk>/dynamic-groups/` (1)\n- `/ipam/ip-addresses/<uuid:pk>/dynamic-groups/`
+  (1)\n- `/virtualization/clusters/<uuid:pk>/dynamic-groups/` (1)\n- `/virtualization/virtual-machines/<uuid:pk>/dynamic-groups/`
+  (1)\n\n(1) These endpoints will not disclose any Nautobot data to an unauthenticated
+  user unless the Nautobot configuration variable `EXEMPT_VIEW_PERMISSIONS` is changed
+  from its default value (an empty list) to permit access to specific data by unauthenticated
+  users.\n\nOf these endpoints, the only one that poses any significant risk of sensitive
+  information disclosure under normal Nautobot operation with a default configuration
+  is `/extras/job-results/<uuid:pk>/log-table/`. This endpoint returns an HTML table
+  containing all of the logs associated with the specified JobResult; while these
+  logs may contain sensitive information depending on the Jobs executed in Nautobot,
+  this exposure is mitigated somewhat by the fact that any attacker would have to
+  have prior knowledge of the existence of a JobResult with a particular UUID.\n\nIn
+  the interest of full disclosure, the following additional endpoints were also accessible
+  to anonymous users, but do not disclose any sensitive data when accessed (only a
+  listing of other API endpoints).\n\n- `/api/`\n- `/api/circuits/`\n- `/api/dcim/`\n-
+  `/api/extras/`\n- `/api/ipam/`\n- `/api/plugins/`\n- `/api/tenancy/`\n- `/api/users/`\n-
+  `/api/virtualization/`\n\nAll of the above endpoints have been corrected to require
+  user authentication, with the exception of `/api/users/users/session/` which is
+  unused at this time and therefore has been simply removed from Nautobot 2.1.9. Additionally,
+  we have added test automation which enumerates available Nautobot URL endpoints
+  and verifies that appropriate authentication requirements are in place; this test
+  was instrumental in identifying the above comprehensive list."
+date: "2024-03-26"
+pubdate: "2024-03-26"
+affected_range: "<1.6.16||>=2.0.0,<2.1.9"
+fixed_versions:
+- "1.6.16"
+- "2.1.9"
+affected_versions: "All versions before 1.6.16, all versions starting from 2.0.0 before
+  2.1.9"
+not_impacted: "All versions starting from 1.6.16 before 2.0.0, all versions starting
+  from 2.1.9"
+solution: "Upgrade to versions 1.6.16, 2.1.9 or above."
+urls:
+- "https://github.com/advisories/GHSA-m732-wvh2-7cq4"
+- "https://github.com/nautobot/nautobot/security/advisories/GHSA-m732-wvh2-7cq4"
+- "https://github.com/nautobot/nautobot/pull/5464"
+- "https://github.com/nautobot/nautobot/pull/5465"
+- "https://github.com/nautobot/nautobot/commit/2fd95c365f8477b26e06d60b999ddd36882d5750"
+- "https://github.com/nautobot/nautobot/commit/dd623e6c3307f48b6357fcc91925bcad5192abfb"
+- "https://github.com/nautobot/nautobot"
+- "https://github.com/nautobot/nautobot/releases/tag/v1.6.16"
+- "https://github.com/nautobot/nautobot/releases/tag/v2.1.9"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N"
+uuid: "75746106-94f1-4148-837b-76742a96d58f"
+cwe_ids:
+- "CWE-200"
+- "CWE-937"
+- "CWE-1035"

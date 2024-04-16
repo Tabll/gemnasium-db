@@ -1,0 +1,36 @@
+---
+identifier: "GHSA-2x7m-gf85-3745"
+identifiers:
+- "GHSA-2x7m-gf85-3745"
+package_slug: "nuget/Microsoft.Native.Quic.MsQuic.OpenSSL"
+title: "Remote Denial of Service Vulnerability in Microsoft QUIC"
+description: "### Impact\nThe MsQuic server will continue to leak memory until no
+  more is available, resulting in a denial of service.\n\n### Patches\nThe following
+  patch was made:\n\n - Fix Memory Leak from Multiple Decodes of TP - https://github.com/microsoft/msquic/commit/5d070d661c45979946615289e92bb6b822efe9e9\n\n###
+  Workarounds\nBeyond upgrading to the patched versions, there is no other workaround.\n\n###
+  MSRC CVE Info\nhttps://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-26190"
+date: "2024-03-13"
+pubdate: "2024-03-13"
+affected_range: "[,2.1.12),[2.2.0,2.2.7),[2.3.0,2.3.5)"
+fixed_versions:
+- "2.1.12"
+- "2.2.7"
+- "2.3.5"
+affected_versions: "All versions before 2.1.12, all versions starting from 2.2.0 before
+  2.2.7, all versions starting from 2.3.0 before 2.3.5"
+not_impacted: "All versions starting from 2.1.12 before 2.2.0, all versions starting
+  from 2.2.7 before 2.3.0, all versions starting from 2.3.5"
+solution: "Upgrade to versions 2.1.12, 2.2.7, 2.3.5 or above."
+urls:
+- "https://github.com/advisories/GHSA-2x7m-gf85-3745"
+- "https://github.com/microsoft/msquic/security/advisories/GHSA-2x7m-gf85-3745"
+- "https://github.com/microsoft/msquic/commit/5d070d661c45979946615289e92bb6b822efe9e9"
+- "https://github.com/microsoft/msquic/commit/933f7b79949bc588945672396d70b661143bb8f0"
+- "https://github.com/microsoft/msquic"
+- "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-26190"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "488823ed-a5ef-44b0-9feb-ba23142499bb"
+cwe_ids:
+- "CWE-401"
+- "CWE-937"
+- "CWE-1035"

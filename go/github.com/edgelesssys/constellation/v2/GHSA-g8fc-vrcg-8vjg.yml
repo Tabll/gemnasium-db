@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-g8fc-vrcg-8vjg"
+identifiers:
+- "GHSA-g8fc-vrcg-8vjg"
+package_slug: "go/github.com/edgelesssys/constellation/v2"
+title: "Constallation has pods exposed to peers in VPC"
+description: "Cilium allows outside actors (`world` entity) to directly access pods
+  with their internal pod IP, even if they are not exposed explicitly (e.g. via `LoadBalancer`).
+  A pod that does not authenticate clients and that does not exclude `world` traffic
+  via network policy may leak sensitive data to an attacker _inside the cloud VPC_."
+date: "2024-04-15"
+pubdate: "2024-04-15"
+affected_range: "<2.16.3"
+fixed_versions:
+- "2.16.3"
+affected_versions: "All versions before 2.16.3"
+not_impacted: "All versions starting from 2.16.3"
+solution: "Upgrade to version 2.16.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-g8fc-vrcg-8vjg"
+- "https://github.com/edgelesssys/constellation/security/advisories/GHSA-g8fc-vrcg-8vjg"
+- "https://github.com/cilium/cilium/issues/25626"
+- "https://github.com/edgelesssys/constellation"
+uuid: "5f8b64c8-8933-411d-9c8d-679bc659d235"
+cwe_ids:
+- "CWE-940"
+- "CWE-937"
+- "CWE-1035"

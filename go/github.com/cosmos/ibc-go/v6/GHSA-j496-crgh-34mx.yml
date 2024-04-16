@@ -1,0 +1,36 @@
+---
+identifier: "GHSA-j496-crgh-34mx"
+identifiers:
+- "GHSA-j496-crgh-34mx"
+package_slug: "go/github.com/cosmos/ibc-go/v6"
+title: "ibc-go: Potential Reentrancy using Timeout Callbacks in ibc-hooks"
+description: "Through the deployment and subsequent use of a malicious CosmWasm contract
+  via IBC interactions, an attacker could potentially execute the same `MsgTimeout`
+  inside the IBC hook for the `OnTimeout` callback before the packet commitment is
+  deleted. On chains where ibc-hooks wraps ICS-20, this vulnerability may allow for
+  the logic of the `OnTimeout` callback of the transfer application to be recursively
+  executed, leading to a condition that may present the opportunity for the loss of
+  funds from the escrow account or unexpected minting of tokens."
+date: "2024-04-05"
+pubdate: "2024-04-05"
+affected_range: "<6.3.0"
+fixed_versions:
+- "6.3.0"
+affected_versions: "All versions before 6.3.0"
+not_impacted: "All versions starting from 6.3.0"
+solution: "Upgrade to version 6.3.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-j496-crgh-34mx"
+- "https://github.com/cosmos/ibc-go/security/advisories/GHSA-j496-crgh-34mx"
+- "https://github.com/cosmos/ibc-go/commit/04275aa77644dec97fb91b749d963c992591b7f7"
+- "https://github.com/cosmos/ibc-go/commit/278fa89f192af04af32d82fd5ef41f84f82edd97"
+- "https://github.com/cosmos/ibc-go/commit/5e2e9ebc2f67df324028dd36a1837ffcc8e6b0dd"
+- "https://github.com/cosmos/ibc-go/commit/a0185df3953070ba5ebcb66735925449d1dbe729"
+- "https://github.com/cosmos/ibc-go/commit/e78b3a2b9c9ce80a67d6b1c2b7f9abcb225cc219"
+- "https://github.com/cosmos/ibc-go"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:H"
+uuid: "3433c510-76ae-4399-9c13-0b8f3c9f1ab7"
+cwe_ids:
+- "CWE-696"
+- "CWE-937"
+- "CWE-1035"
