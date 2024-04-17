@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-4q82-j5c2-g2c5"
+identifiers:
+- "GHSA-4q82-j5c2-g2c5"
+package_slug: "pypi/scrapy"
+title: "Duplicate Advisory: Scrapy authorization header leakage on cross-domain redirect"
+description: "## Duplicate Advisory\nThis advisory has been withdrawn because it is
+  a duplicate of GHSA-cw9j-q3vf-hrrv. This link is maintained to preserve external
+  references.\n\n## Original Description\nIn scrapy versions before 2.11.1, an issue
+  was identified where the Authorization header, containing credentials for server
+  authentication, is leaked to a third-party site during a cross-domain redirect.
+  This vulnerability arises from the failure to remove the Authorization header when
+  redirecting across domains. The exposure of the Authorization header to unauthorized
+  actors could potentially allow for account hijacking."
+date: "2024-04-16"
+pubdate: "2024-04-16"
+affected_range: "<2.11.1"
+fixed_versions:
+- "2.11.1"
+affected_versions: "All versions before 2.11.1"
+not_impacted: "All versions starting from 2.11.1"
+solution: "Upgrade to version 2.11.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-4q82-j5c2-g2c5"
+- "https://nvd.nist.gov/vuln/detail/CVE-2024-3574"
+- "https://github.com/scrapy/scrapy/commit/5bcb8fd5019c72d05c4a96da78a7fcb6ecb55b75"
+- "https://github.com/advisories/GHSA-cw9j-q3vf-hrrv"
+- "https://github.com/scrapy/scrapy"
+- "https://huntr.com/bounties/49974321-2718-43e3-a152-62b16eed72a9"
+cvss_v3: "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+uuid: "013f71ff-e00f-49df-a529-a541c2f8231e"
+cwe_ids:
+- "CWE-200"
+- "CWE-937"
+- "CWE-1035"

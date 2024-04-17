@@ -1,0 +1,43 @@
+---
+identifier: "GHSA-g7xq-xv8c-h98c"
+identifiers:
+- "GHSA-g7xq-xv8c-h98c"
+package_slug: "gem/phlex"
+title: "Cross-site Scripting (XSS) possible due to improper sanitisation of `href`
+  attributes on `<a>` tags"
+description: "There is a potential cross-site scripting (XSS) vulnerability that can
+  be exploited via maliciously crafted user data.\n\nOur filter to detect and prevent
+  the use of the `javascript:` URL scheme in the `href` attribute of an `<a>` tag
+  could be bypassed with tab `\\t` or newline `\\n` characters between the characters
+  of the protocol, e.g. `java\\tscript:`."
+date: "2024-04-17"
+pubdate: "2024-04-17"
+affected_range: ">=1.10.0 <1.10.1||=1.10.0||>=1.9.0 <1.9.2||>=1.8.0 <1.8.3||>=1.7.0
+  <1.7.2||>=1.6.0 <1.6.3||>=1.5.0 <1.5.3||<1.4.2"
+fixed_versions:
+- "1.10.1"
+- "1.9.2"
+- "1.8.3"
+- "1.7.2"
+- "1.6.3"
+- "1.5.3"
+- "1.4.2"
+affected_versions: "All versions before 1.4.2, all versions starting from 1.5.0 before
+  1.5.3, all versions starting from 1.6.0 before 1.6.3, all versions starting from
+  1.7.0 before 1.7.2, all versions starting from 1.8.0 before 1.8.3, all versions
+  starting from 1.9.0 before 1.9.2, all versions starting from 1.10.0 before 1.10.1,
+  version 1.10.0"
+not_impacted: ""
+solution: "Upgrade to versions 1.10.1, 1.4.2, 1.5.3, 1.6.3, 1.7.2, 1.8.3, 1.9.2 or
+  above."
+urls:
+- "https://github.com/advisories/GHSA-g7xq-xv8c-h98c"
+- "https://github.com/phlex-ruby/phlex/security/advisories/GHSA-g7xq-xv8c-h98c"
+- "https://github.com/phlex-ruby/phlex/commit/9e3f5b980655817993682e409cbda72956d865cb"
+- "https://github.com/phlex-ruby/phlex"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:L/A:N"
+uuid: "7eafb61f-1ba8-40fe-82f0-e45c31371219"
+cwe_ids:
+- "CWE-87"
+- "CWE-937"
+- "CWE-1035"
