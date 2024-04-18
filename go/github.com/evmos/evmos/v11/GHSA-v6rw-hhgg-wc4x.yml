@@ -1,0 +1,26 @@
+---
+identifier: "GHSA-v6rw-hhgg-wc4x"
+identifiers:
+- "GHSA-v6rw-hhgg-wc4x"
+package_slug: "go/github.com/evmos/evmos/v11"
+title: "Evmos vulnerable to DOS and transaction fee expropiation through Authz exploit"
+description: "_What kind of vulnerability is it? Who is impacted?_\n\nAn attacker
+  can use this bug to bypass the block gas limit and gas payment completely to perform
+  a full Denial-of-Service against the chain."
+date: "2024-04-17"
+pubdate: "2024-04-17"
+affected_range: "<12.0.0"
+fixed_versions:
+- "12.0.0"
+affected_versions: "All versions before 12.0.0"
+not_impacted: "All versions starting from 12.0.0"
+solution: "Upgrade to version 12.0.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-v6rw-hhgg-wc4x"
+- "https://github.com/evmos/evmos/security/advisories/GHSA-v6rw-hhgg-wc4x"
+- "https://github.com/evmos/evmos"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:H"
+uuid: "345cb04b-9ee0-4e10-9556-a817f0aa5f93"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

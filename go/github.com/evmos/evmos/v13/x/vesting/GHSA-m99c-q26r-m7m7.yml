@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-m99c-q26r-m7m7"
+identifiers:
+- "GHSA-m99c-q26r-m7m7"
+package_slug: "go/github.com/evmos/evmos/v13/x/vesting"
+title: "Evmos vulnerable to unauthorized account creation with vesting module"
+description: "_What kind of vulnerability is it? Who is impacted?_\n\nUsing the vesting
+  module, a malicious attacker can create a new vesting account at a given\naddress,
+  before a contract is created on that address.\n\nAddresses of smart contracts deployed
+  to the EVM are deterministic. Therefore, it would be possible for an attacker to
+  front-run a contract creation and create a vesting account at that address.\nWhen
+  an address has been initialized without any contract code deployed to it, it will
+  not be possible to upload any afterwards. In the described attack, this would mean
+  that a malicious actor could prevent smart contracts from being deployed correctly.\n\nIn
+  order to remediate this, an alternative user flow is being implemented for the vesting
+  module:\n- only the account receiving the vesting funds will be able to create such
+  an account by calling the `CreateClawbackVestingAccount` method and defining a funder
+  address\n- vesting and lockup periods can then be created by that funder address
+  using `FundClawbackAccount`"
+date: "2024-04-17"
+pubdate: "2024-04-17"
+affected_range: "<=13.0.2"
+fixed_versions: []
+affected_versions: "All versions up to 13.0.2"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-m99c-q26r-m7m7"
+- "https://github.com/evmos/evmos/security/advisories/GHSA-m99c-q26r-m7m7"
+- "https://github.com/evmos/evmos"
+uuid: "9732e91f-17cd-412b-b7f9-f35803aeac89"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"
