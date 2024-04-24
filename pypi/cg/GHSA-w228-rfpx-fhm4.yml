@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-w228-rfpx-fhm4"
+identifiers:
+- "GHSA-w228-rfpx-fhm4"
+package_slug: "pypi/cg"
+title: "cg vulnerable to an Open Redirect Vulnerability on Referer Header"
+description: "A vulnerability has been discovered in the handling of the referrer
+  header in the application, which could allow an attacker to conduct open redirects.
+  The issue arises from improper validation of the referrer header in certain conditions.
+  By manipulating the referrer header, an attacker could potentially redirect users
+  to malicious websites, phishing pages, or other dangerous destinations."
+date: "2024-04-23"
+pubdate: "2024-04-23"
+affected_range: "<60.2.12"
+fixed_versions:
+- "60.2.12"
+affected_versions: "All versions before 60.2.12"
+not_impacted: "All versions starting from 60.2.12"
+solution: "Upgrade to version 60.2.12 or above."
+urls:
+- "https://github.com/advisories/GHSA-w228-rfpx-fhm4"
+- "https://github.com/Clinical-Genomics/cg/security/advisories/GHSA-w228-rfpx-fhm4"
+- "https://github.com/Clinical-Genomics/cg/commit/96e6a968a5a3639cc40ad251ad65952e4f38dd25"
+- "https://github.com/Clinical-Genomics/cg"
+- "https://github.com/Clinical-Genomics/cg/blob/master/cg/server/invoices/views.py#L173"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+uuid: "494377e4-3518-4979-be53-f4850b05f201"
+cwe_ids:
+- "CWE-601"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-x883-2vmg-xwf7"
+identifiers:
+- "GHSA-x883-2vmg-xwf7"
+package_slug: "go/github.com/authelia/authelia/v4"
+title: "Authelia's Group Changes may not have the expected results (YAML file backend)"
+description: "Under very specific conditions changes to a users groups may not have
+  the expected results.\n\nThe specific conditions are:"
+date: "2024-04-22"
+pubdate: "2024-04-22"
+affected_range: ">=4.37.0 <4.38.0"
+fixed_versions:
+- "4.38.0"
+affected_versions: "All versions starting from 4.37.0 before 4.38.0"
+not_impacted: "All versions before 4.37.0, all versions starting from 4.38.0"
+solution: "Upgrade to version 4.38.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-x883-2vmg-xwf7"
+- "https://github.com/authelia/authelia/security/advisories/GHSA-x883-2vmg-xwf7"
+- "https://github.com/authelia/authelia"
+- "https://github.com/authelia/authelia/blob/v4.37.5/internal/handlers/handler_verify.go#L376-L394"
+cvss_v3: "CVSS:3.1/AV:P/AC:H/PR:H/UI:R/S:U/C:L/I:N/A:N"
+uuid: "504f1956-2f20-462e-9238-c843646a545f"
+cwe_ids:
+- "CWE-281"
+- "CWE-937"
+- "CWE-1035"

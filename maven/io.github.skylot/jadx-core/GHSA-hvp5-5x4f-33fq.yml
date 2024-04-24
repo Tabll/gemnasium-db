@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-hvp5-5x4f-33fq"
+identifiers:
+- "GHSA-hvp5-5x4f-33fq"
+package_slug: "maven/io.github.skylot/jadx-core"
+title: "JADX file override vulnerability"
+description: "when jadx parses a resource file, there is an escape problem with the
+  style file, which can overwrite other files in the directory when saving the decompile
+  result.\n\nAlthough I don't think this vulnerability realizes path traversal in
+  the true sense of the word , I reported it anyway"
+date: "2024-04-22"
+pubdate: "2024-04-22"
+affected_range: "[,1.5.0)"
+fixed_versions:
+- "1.5.0"
+affected_versions: "All versions before 1.5.0"
+not_impacted: "All versions starting from 1.5.0"
+solution: "Upgrade to version 1.5.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-hvp5-5x4f-33fq"
+- "https://github.com/skylot/jadx/security/advisories/GHSA-hvp5-5x4f-33fq"
+- "https://github.com/skylot/jadx/commit/d86449a8ea26381d0ce6fafaed7deb7542dfd70b"
+- "https://github.com/skylot/jadx"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N"
+uuid: "e0195e7f-4a21-40c5-b978-f55f343fe852"
+cwe_ids:
+- "CWE-22"
+- "CWE-937"
+- "CWE-1035"

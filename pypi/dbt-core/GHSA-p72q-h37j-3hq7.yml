@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-p72q-h37j-3hq7"
+identifiers:
+- "GHSA-p72q-h37j-3hq7"
+package_slug: "pypi/dbt-core"
+title: "dbt uses a SQLparse version with a high vulnerability"
+description: "Using a version of `sqlparse` that has a security vulnerability and
+  no way to update in current version of dbt core. Snyk recommends using `sqlparse==0.5`
+  but this causes a conflict with dbt. Snyk states the issues is a recursion error:
+  `SNYK-PYTHON-SQLPARSE-6615674`."
+date: "2024-04-22"
+pubdate: "2024-04-22"
+affected_range: ">=1.6.0 <1.6.13||>=1.7.0 <1.7.13"
+fixed_versions:
+- "1.6.13"
+- "1.7.13"
+affected_versions: "All versions starting from 1.6.0 before 1.6.13, all versions starting
+  from 1.7.0 before 1.7.13"
+not_impacted: "All versions before 1.6.0, all versions starting from 1.6.13 before
+  1.7.0, all versions starting from 1.7.13"
+solution: "Upgrade to versions 1.6.13, 1.7.13 or above."
+urls:
+- "https://github.com/advisories/GHSA-p72q-h37j-3hq7"
+- "https://github.com/andialbrecht/sqlparse/security/advisories/GHSA-2m57-hf25-phgg"
+- "https://github.com/dbt-labs/dbt-core/security/advisories/GHSA-p72q-h37j-3hq7"
+- "https://github.com/dbt-labs/dbt-core"
+- "https://security.snyk.io/vuln/SNYK-PYTHON-SQLPARSE-6615674"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "d655767e-a158-42aa-a8a1-26b5d44105d7"
+cwe_ids:
+- "CWE-673"
+- "CWE-937"
+- "CWE-1035"
