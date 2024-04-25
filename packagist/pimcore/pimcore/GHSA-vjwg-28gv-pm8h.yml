@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-vjwg-28gv-pm8h"
+identifiers:
+- "GHSA-vjwg-28gv-pm8h"
+package_slug: "packagist/pimcore/pimcore"
+title: "Pimcore TinyMCE Bundle - tinymce CVE-2024-29203, CVE-2024-29881"
+description: "The TineMCE Bundle uses tinymce version 6.7.3. CVEs for this version
+  exists for <6.8.1:\nhttps://nvd.nist.gov/vuln/detail/CVE-2024-29203\nhttps://nvd.nist.gov/vuln/detail/CVE-2024-29881"
+date: "2024-04-24"
+pubdate: "2024-04-24"
+affected_range: ">=11.0.0-ALPHA1 <11.2.3"
+fixed_versions:
+- "11.2.3"
+affected_versions: "All versions starting from 11.0.0-ALPHA1 before 11.2.3"
+not_impacted: "All versions before 11.0.0-ALPHA1, all versions starting from 11.2.3"
+solution: "Upgrade to version 11.2.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-vjwg-28gv-pm8h"
+- "https://github.com/pimcore/pimcore/security/advisories/GHSA-vjwg-28gv-pm8h"
+- "https://github.com/pimcore/pimcore"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+uuid: "1f4814f7-099b-405e-8191-53191274cc05"
+cwe_ids:
+- "CWE-1395"
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"
