@@ -72,14 +72,29 @@ def validate_mutually_exclusive_versions(yaml_dict)
 
   raw_fixed = (yaml_dict['fixed_versions'] || []).map(&:to_s)
   raw_affected = yaml_dict['affected_range']
-
   # e.g. maven/org.apache.thrift/ABCD
   package_type_str = yaml_dict['package_slug'].split('/').first
 
+  unless %w[maven nuget].include?(package_type_str)
+    valid_range = /^[><=]{1,2} *[\w\.\-]+ *,? *([><=]{1,2} *[\w\.\-]+)*$/
+    raw_affected.strip.split('||').each do |ran|
+      range = ran.gsub(/[\s\u00A0]/, '')
+      if !range.match?(valid_range)
+        errors << "malformed version range #{range}"
+        return errors
+      end
+    end
+  end
+
   raw_fixed.each do |raw_fixed_str|
-    sat = SemverDialects::VersionChecker.version_sat?(package_type_str, raw_fixed_str, raw_affected)
-    if sat
-      errors << "Fixed version #{raw_fixed_str} may be also be affected (#{raw_affected})"
+    begin
+      sat = SemverDialects::VersionChecker.version_sat?(package_type_str, raw_fixed_str, raw_affected)
+      if sat
+        errors << "Fixed version #{raw_fixed_str} may be also be affected (#{raw_affected})"
+      end
+    rescue SemverDialects::InvalidVersionError => e
+      # conan does not enforce semver compatibility
+      errors << e.message unless package_type_str == 'conan'
     end
   end
 

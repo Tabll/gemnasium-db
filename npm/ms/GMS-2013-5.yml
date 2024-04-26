@@ -6,7 +6,7 @@ description: "Ms does not correctly parse minutes, people should remain on until
   fixed. (Kindly reported by ForbesLindesay)"
 date: "2013-02-28"
 pubdate: "2013-02-28"
-affected_range: "0.5.1"
+affected_range: "=0.5.1"
 fixed_versions:
 - "0.6.0"
 affected_versions: "Version 0.5.1"

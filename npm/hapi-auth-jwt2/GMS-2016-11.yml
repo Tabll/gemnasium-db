@@ -6,7 +6,7 @@ description: "When attempting to allow authentication mode try in hapi, Hapi int
   an issue whereby people can bypass authentication."
 date: "2016-01-28"
 pubdate: "2016-01-28"
-affected_range: "5.1.1"
+affected_range: "=5.1.1"
 fixed_versions:
 - "5.1.2"
 affected_versions: "Version 5.1.1"

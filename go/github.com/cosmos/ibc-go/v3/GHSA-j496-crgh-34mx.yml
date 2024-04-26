@@ -13,7 +13,7 @@ description: "Through the deployment and subsequent use of a malicious CosmWasm 
   funds from the escrow account or unexpected minting of tokens."
 date: "2024-04-05"
 pubdate: "2024-04-05"
-affected_range: "="
+affected_range: ">0"
 fixed_versions: []
 affected_versions: "All versions "
 not_impacted: ""
