@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-g43w-98wp-m694"
+identifiers:
+- "GHSA-g43w-98wp-m694"
+package_slug: "packagist/silverstripe/framework"
+title: "SilverStripe framework XML Quadratic Blowup Attack"
+description: "A low level vulnerability has been found in the SilverStripe framework,
+  where the Quadratic Blowup Attack could potentially be exploited to affect the performance
+  of a site.\n\nSee http://mashable.com/2014/08/06/wordpress-xml-blowup-dos/ for a
+  writeup."
+date: "2024-05-23"
+pubdate: "2024-05-23"
+affected_range: "<3.1.12"
+fixed_versions:
+- "3.1.12"
+affected_versions: "All versions before 3.1.12"
+not_impacted: "All versions starting from 3.1.12"
+solution: "Upgrade to version 3.1.12 or above."
+urls:
+- "https://github.com/advisories/GHSA-g43w-98wp-m694"
+- "https://github.com/silverstripe/silverstripe-framework/commit/7f983c2bae1dc78ca7217e9af364b2fb71dcefe8"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/silverstripe/framework/SS-2014-017-1.yaml"
+- "https://github.com/silverstripe/silverstripe-framework"
+- "https://www.silverstripe.org/software/download/security-releases/ss-2014-017-xml-quadratic-blowup-attack"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+uuid: "7faf310d-c383-4968-aaf8-11b285e3a5bd"
+cwe_ids:
+- "CWE-400"
+- "CWE-776"
+- "CWE-937"
+- "CWE-1035"

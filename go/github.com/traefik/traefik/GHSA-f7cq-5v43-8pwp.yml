@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-f7cq-5v43-8pwp"
+identifiers:
+- "GHSA-f7cq-5v43-8pwp"
+package_slug: "go/github.com/traefik/traefik"
+title: "Traefik vulnerable to GO issue allowing malformed DNS message to cause infinite
+  loop"
+description: "There is a vulnerability in [GO managing malformed DNS message](https://groups.google.com/g/golang-announce/c/wkkO4P9stm0),
+  which impacts Traefik.\nThis vulnerability could be exploited to cause a denial
+  of service."
+date: "2024-05-23"
+pubdate: "2024-05-23"
+affected_range: "<=1.7.34"
+fixed_versions: []
+affected_versions: "All versions up to 1.7.34"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-f7cq-5v43-8pwp"
+- "https://github.com/traefik/traefik/security/advisories/GHSA-f7cq-5v43-8pwp"
+- "https://github.com/advisories/GHSA-5fq7-4mxc-535h"
+- "https://github.com/traefik/traefik"
+- "https://github.com/traefik/traefik/releases/tag/v2.11.3"
+- "https://github.com/traefik/traefik/releases/tag/v3.0.1"
+- "https://www.cve.org/CVERecord?id=CVE-2024-24788"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+uuid: "6bcf2821-55bf-4919-804a-3e7f0692ca65"
+cwe_ids:
+- "CWE-1395"
+- "CWE-937"
+- "CWE-1035"

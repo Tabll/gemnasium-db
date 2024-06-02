@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-wq43-8r5p-w3mc"
+identifiers:
+- "GHSA-wq43-8r5p-w3mc"
+package_slug: "packagist/contao/core"
+title: "contao/core PHP object injection vulnerability allows for arbitrary code execution"
+description: "PHP object injection vulnerability was identified in contao/core due
+  to untrusted data being passed to `deserialize()` function."
+date: "2024-05-15"
+pubdate: "2024-05-15"
+affected_range: ">=2.0.0 <2.11.14||>=3.0.0 <3.2.5"
+fixed_versions:
+- "2.11.14"
+- "3.2.5"
+affected_versions: "All versions starting from 2.0.0 before 2.11.14, all versions
+  starting from 3.0.0 before 3.2.5"
+not_impacted: "All versions before 2.0.0, all versions starting from 2.11.14 before
+  3.0.0, all versions starting from 3.2.5"
+solution: "Upgrade to versions 2.11.14, 3.2.5 or above."
+urls:
+- "https://github.com/advisories/GHSA-wq43-8r5p-w3mc"
+- "https://github.com/contao/core/issues/6695"
+- "https://github.com/contao/core/commit/d67c46c1f1283134e3050244cfdda0ef26fa5cd4"
+- "https://github.com/contao/core/commit/f939b5be8a0048ef779def3289e2072febef1b37"
+- "https://contao.org/en/news/major-security-hole-found-in-contao.html"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/contao/core/2014-02-13.yaml"
+uuid: "ba7908ba-f0f0-415e-8d2c-a45fb93441ac"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

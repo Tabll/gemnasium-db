@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-9rx9-7fmh-gj3g"
+identifiers:
+- "GHSA-9rx9-7fmh-gj3g"
+package_slug: "packagist/typo3/cms-core"
+title: "TYPO3 Broken Access Control in Localization Handling"
+description: "It has been discovered that backend users having limited access to specific
+  languages are capable of modifying and creating pages in the default language which
+  actually should be disallowed. A valid backend user account is needed in order to
+  exploit this vulnerability."
+date: "2024-05-30"
+pubdate: "2024-05-30"
+affected_range: ">=8.0.0 <8.7.23"
+fixed_versions:
+- "8.7.23"
+affected_versions: "All versions starting from 8.0.0 before 8.7.23"
+not_impacted: "All versions before 8.0.0, all versions starting from 8.7.23"
+solution: "Upgrade to version 8.7.23 or above."
+urls:
+- "https://github.com/advisories/GHSA-9rx9-7fmh-gj3g"
+- "https://github.com/TYPO3-CMS/core/commit/64b1b5dc2f7cacb2ba39b74081f4179d6393b2bf"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/typo3/cms-core/2019-01-22-3.yaml"
+- "https://github.com/TYPO3-CMS/core"
+- "https://typo3.org/security/advisory/typo3-core-sa-2019-003"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N"
+uuid: "d669bbee-3b4e-4486-9902-f886e244ba06"
+cwe_ids:
+- "CWE-269"
+- "CWE-937"
+- "CWE-1035"

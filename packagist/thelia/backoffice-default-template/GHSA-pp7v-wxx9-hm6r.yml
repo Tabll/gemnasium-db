@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-pp7v-wxx9-hm6r"
+identifiers:
+- "GHSA-pp7v-wxx9-hm6r"
+package_slug: "packagist/thelia/backoffice-default-template"
+title: "Thelia BackOffice default template vulnerable to Cross-site Scripting"
+description: "The BackOffice of Thelia (`error.html` template) has a cross-site scripting
+  vulnerability in version 2.1.0 and 2.1.1 but not version 2.0.X. Version 2.1.2 contains
+  a patch for the issue."
+date: "2024-05-30"
+pubdate: "2024-05-30"
+affected_range: ">=2.1.0 <2.1.2"
+fixed_versions:
+- "2.1.2"
+affected_versions: "All versions starting from 2.1.0 before 2.1.2"
+not_impacted: "All versions before 2.1.0, all versions starting from 2.1.2"
+solution: "Upgrade to version 2.1.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-pp7v-wxx9-hm6r"
+- "https://github.com/thelia-templates/back/commit/592612899057addc2613ccddf172024588277d2d"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/thelia/backoffice-default-template/2015-02-24-1.yaml"
+- "https://github.com/thelia-templates/back"
+- "https://thelia.net/version-2-1-2-with-security-fix"
+- "https://web.archive.org/web/20160406004324/http://thelia.net/version-2-1-2-with-security-fix"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+uuid: "88116121-a430-4cf6-a301-e7e739ba8ee9"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

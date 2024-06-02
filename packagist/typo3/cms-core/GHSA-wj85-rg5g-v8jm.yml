@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-wj85-rg5g-v8jm"
+identifiers:
+- "GHSA-wj85-rg5g-v8jm"
+package_slug: "packagist/typo3/cms-core"
+title: "TYPO3 Information Disclosure in User Authentication"
+description: "It has been discovered that login failures have been logged on the default
+  stream with log level \"warning\" including plain-text user credentials."
+date: "2024-05-30"
+pubdate: "2024-05-30"
+affected_range: ">=9.0.0 <9.5.6"
+fixed_versions:
+- "9.5.6"
+affected_versions: "All versions starting from 9.0.0 before 9.5.6"
+not_impacted: "All versions before 9.0.0, all versions starting from 9.5.6"
+solution: "Upgrade to version 9.5.6 or above."
+urls:
+- "https://github.com/advisories/GHSA-wj85-rg5g-v8jm"
+- "https://github.com/TYPO3-CMS/core/commit/ac0565b7a539398a07adf21f04f85cd2574817d2"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/typo3/cms-core/2019-05-07-5.yaml"
+- "https://github.com/TYPO3-CMS/core"
+- "https://typo3.org/security/advisory/typo3-core-sa-2019-010"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+uuid: "69a4661c-518d-4019-9b36-06888b5f719f"
+cwe_ids:
+- "CWE-256"
+- "CWE-937"
+- "CWE-1035"

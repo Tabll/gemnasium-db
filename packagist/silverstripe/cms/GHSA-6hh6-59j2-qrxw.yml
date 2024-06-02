@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-6hh6-59j2-qrxw"
+identifiers:
+- "GHSA-6hh6-59j2-qrxw"
+package_slug: "packagist/silverstripe/cms"
+title: "Silverstripe History XSS Vulnerability"
+description: "A cross-site scripting vulnerability has been discovered in the CMS
+  page history tab.\n\nThis vulnerability can only be exploited if a user with CMS
+  access has posted malicious or unescaped HTML into any of the text fields on a page,
+  and if the \"compare mode\" option is selected. The HTML will be embedded into the
+  page unescaped.\n\nThis has been resolved by performing the text comparison in a
+  HTML friendly way."
+date: "2024-05-22"
+pubdate: "2024-05-22"
+affected_range: ">=3.1.0 <3.1.10"
+fixed_versions:
+- "3.1.10"
+affected_versions: "All versions starting from 3.1.0 before 3.1.10"
+not_impacted: "All versions before 3.1.0, all versions starting from 3.1.10"
+solution: "Upgrade to version 3.1.10 or above."
+urls:
+- "https://github.com/advisories/GHSA-6hh6-59j2-qrxw"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/silverstripe/cms/SS-2015-003-1.yaml"
+- "https://github.com/silverstripe/silverstripe-cms"
+- "https://www.silverstripe.org/software/download/security-releases/ss-2015-003"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+uuid: "d615eb3f-0b84-4a9b-9abc-e0134b79c4e2"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

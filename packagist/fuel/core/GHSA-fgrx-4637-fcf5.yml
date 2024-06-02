@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-fgrx-4637-fcf5"
+identifiers:
+- "GHSA-fgrx-4637-fcf5"
+package_slug: "packagist/fuel/core"
+title: "fuel/core Crypt encryption compromised."
+description: "In fuel/core versions pior to 1.8.1, with the right knowledge, code,
+  and GPU calculation power, Crypt encryption can be broken in minutes."
+date: "2024-05-15"
+pubdate: "2024-05-15"
+affected_range: "<1.8.1"
+fixed_versions:
+- "1.8.1"
+affected_versions: "All versions before 1.8.1"
+not_impacted: "All versions starting from 1.8.1"
+solution: "Upgrade to version 1.8.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-fgrx-4637-fcf5"
+- "https://github.com/fuel/core/commit/59112c96d0a6f2b0ead6a57edd8ac465678bdcb0"
+- "https://fuelphp.com/security-advisories"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/fuel/core/2018-04-14-1.yaml"
+- "https://github.com/fuel/core"
+uuid: "10cabc9e-b345-4386-872d-5d6386281a61"
+cwe_ids:
+- "CWE-327"
+- "CWE-937"
+- "CWE-1035"

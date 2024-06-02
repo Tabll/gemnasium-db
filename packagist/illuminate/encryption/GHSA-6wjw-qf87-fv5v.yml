@@ -1,0 +1,36 @@
+---
+identifier: "GHSA-6wjw-qf87-fv5v"
+identifiers:
+- "GHSA-6wjw-qf87-fv5v"
+package_slug: "packagist/illuminate/encryption"
+title: "Laravel Encrypter Failure to decryption vulnerability"
+description: "A potential exploit of the Laravel Encrypter component that may cause
+  the Encrypter to fail on decryption and unexpectedly return false.\n\nTo exploit
+  this, the attacker must be able to modify the encrypted payload before it is decrypted.
+  Depending on the code within your application, this could lead to unexpected behavior
+  when combined with weak type comparisons, for example:\n\n```php\n<?php\n\n$decyptedValue
+  = decrypt($secret);\n\nif ($decryptedValue == '') {\n// Code is run even though
+  decrypted value is false...\n}\n```"
+date: "2024-05-15"
+pubdate: "2024-05-15"
+affected_range: ">=5.5.0 <5.5.40||>=5.6.0 <5.6.15"
+fixed_versions:
+- "5.5.40"
+- "5.6.15"
+affected_versions: "All versions starting from 5.5.0 before 5.5.40, all versions starting
+  from 5.6.0 before 5.6.15"
+not_impacted: "All versions before 5.5.0, all versions starting from 5.5.40 before
+  5.6.0, all versions starting from 5.6.15"
+solution: "Upgrade to versions 5.5.40, 5.6.15 or above."
+urls:
+- "https://github.com/advisories/GHSA-6wjw-qf87-fv5v"
+- "https://github.com/illuminate/encryption/commit/51667a52bd7d135c6aa40a897656ffe9d3cd072d"
+- "https://github.com/illuminate/encryption/commit/c80b1da6a0412bd74bd56dc80f6126f561631b05"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/illuminate/encryption/2018-03-30-1.yaml"
+- "https://github.com/illuminate/encryption"
+- "https://medium.com/@taylorotwell/laravel-security-release-5-6-15-and-5-5-40-56f1257933a0"
+uuid: "b3061dcc-d5e4-4454-ae55-cb1f9cd03c81"
+cwe_ids:
+- "CWE-1240"
+- "CWE-937"
+- "CWE-1035"

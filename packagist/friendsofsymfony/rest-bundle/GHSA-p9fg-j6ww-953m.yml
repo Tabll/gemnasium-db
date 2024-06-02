@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-p9fg-j6ww-953m"
+identifiers:
+- "GHSA-p9fg-j6ww-953m"
+package_slug: "packagist/friendsofsymfony/rest-bundle"
+title: "FOSRestBundle issue with broken validation of JSONP callbacks"
+description: "Starting with FOSRestBundle 1.2 we [switched](https://github.com/FriendsOfSymfony/FOSRestBundle/pull/642/files#diff-431bc57ca9ca16332c0cff43ad45263cR37)
+  to using [willdurand/jsonp-callback-validator](https://github.com/willdurand/JsonpCallbackValidator)
+  for validation of JSONP callbacks. However [the change was implemented](https://github.com/FriendsOfSymfony/FOSRestBundle/pull/665)
+  incorrectly validating the callback query param name, rather than its value. Anyone
+  using the JSONP handler (which is off by default) together with FOSRestBundle 1.2.0
+  or 1.2.1 should update to FOSRestBundle [1.2.2](https://github.com/FriendsOfSymfony/FOSRestBundle/releases/tag/1.2.2)."
+date: "2024-05-15"
+pubdate: "2024-05-15"
+affected_range: ">=1.2.0 <1.2.2"
+fixed_versions:
+- "1.2.2"
+affected_versions: "All versions starting from 1.2.0 before 1.2.2"
+not_impacted: "All versions before 1.2.0, all versions starting from 1.2.2"
+solution: "Upgrade to version 1.2.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-p9fg-j6ww-953m"
+- "https://github.com/FriendsOfSymfony/FOSRestBundle/commit/3dd7d40068360c23366fb4884c5d194c769ec2c1"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/friendsofsymfony/rest-bundle/2014-01-22-1.yaml"
+- "https://github.com/FriendsOfSymfony/FOSRestBundle"
+- "https://symfony.com/blog/fosrestbundle-security-issue-with-jsonp-handler"
+uuid: "c37af7fc-2ca0-49db-8c6d-ec8a3b9ab91b"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

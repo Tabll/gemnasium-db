@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-r85g-7jpv-8xrx"
+identifiers:
+- "GHSA-r85g-7jpv-8xrx"
+package_slug: "packagist/silverstripe/framework"
+title: "silverstripe/framework has Cross-site Scripting vulnerability in CMSSecurity
+  BackURL"
+description: "In follow up to [SS-2016-001](https://www.silverstripe.org/download/security-releases/ss-2016-001/)
+  there is yet a minor unresolved fix to incorrectly encoded URL."
+date: "2024-05-27"
+pubdate: "2024-05-27"
+affected_range: ">=3.1.0-rc1 <3.1.21||>=3.2.0-rc1 <3.2.6||>=3.3.0-rc1 <3.3.4||>=3.4.0-rc1
+  <3.4.2"
+fixed_versions:
+- "3.1.21"
+- "3.2.6"
+- "3.3.4"
+- "3.4.2"
+affected_versions: "All versions starting from 3.1.0-rc1 before 3.1.21, all versions
+  starting from 3.2.0-rc1 before 3.2.6, all versions starting from 3.3.0-rc1 before
+  3.3.4, all versions starting from 3.4.0-rc1 before 3.4.2"
+not_impacted: "All versions before 3.1.0-rc1, all versions starting from 3.1.21 before
+  3.2.0-rc1, all versions starting from 3.2.6 before 3.3.0-rc1, all versions starting
+  from 3.3.4 before 3.4.0-rc1, all versions starting from 3.4.2"
+solution: "Upgrade to versions 3.1.21, 3.2.6, 3.3.4, 3.4.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-r85g-7jpv-8xrx"
+- "https://github.com/silverstripe/silverstripe-framework/commit/6b123fe1c93d3ac976f484192abc31cad4f81d47"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/silverstripe/framework/SS-2016-016-1.yaml"
+- "https://github.com/silverstripe/silverstripe-framework"
+- "https://www.silverstripe.org/download/security-releases/ss-2016-016"
+uuid: "e4818779-7ece-459e-91a0-88adc6569684"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

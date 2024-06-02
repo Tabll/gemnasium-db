@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-v84h-653v-4pq9"
+identifiers:
+- "GHSA-v84h-653v-4pq9"
+package_slug: "go/github.com/jub0bs/fcors"
+title: "Some CORS middleware allow untrusted origins"
+description: "Some CORS middleware (more specifically those created by specifying
+  two or more origin patterns whose hosts share a proper suffix) incorrectly allow
+  some untrusted origins, thereby opening the door to cross-origin attacks from the
+  untrusted origins in question.\n\nFor example, specifying origin patterns `https://foo.com`
+  and `https://bar.com` (in that order) would yield a middleware that would incorrectly
+  allow untrusted origin `https://barfoo.com`."
+date: "2024-05-03"
+pubdate: "2024-05-03"
+affected_range: "<0.9.0"
+fixed_versions:
+- "0.9.0"
+affected_versions: "All versions before 0.9.0"
+not_impacted: "All versions starting from 0.9.0"
+solution: "Upgrade to version 0.9.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-v84h-653v-4pq9"
+- "https://github.com/jub0bs/fcors/security/advisories/GHSA-v84h-653v-4pq9"
+- "https://github.com/jub0bs/fcors/commit/08d85c149a418a583315cee066d4a35cc817219d"
+- "https://github.com/jub0bs/fcors"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:N"
+uuid: "8acbefe9-ef40-4828-adcc-e9bdd8db1df4"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

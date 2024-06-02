@@ -1,0 +1,36 @@
+---
+identifier: "GHSA-jwvj-pwww-3mj5"
+identifiers:
+- "GHSA-jwvj-pwww-3mj5"
+package_slug: "packagist/laravel/framework"
+title: "laravel framework Unexpected database bindings via requests"
+description: "This is a follow-up to the security advisory https://github.com/laravel/framework/security/advisories/GHSA-3p32-j457-pg5x
+  which addresses a few additional edge cases.\n\nIf a request is crafted where a
+  field that is normally a non-array value is an array, and that input is not validated
+  or cast to its expected type before being passed to the query builder, an unexpected
+  number of query bindings can be added to the query. In some situations, this will
+  simply lead to no results being returned by the query builder; however, it is possible
+  certain queries could be affected in a way that causes the query to return unexpected
+  results."
+date: "2024-05-15"
+pubdate: "2024-05-15"
+affected_range: ">=6.0.0 <6.20.14||>=7.0.0 <7.30.4||>=8.0.0 <8.24.0"
+fixed_versions:
+- "6.20.14"
+- "7.30.4"
+- "8.24.0"
+affected_versions: "All versions starting from 6.0.0 before 6.20.14, all versions
+  starting from 7.0.0 before 7.30.4, all versions starting from 8.0.0 before 8.24.0"
+not_impacted: "All versions before 6.0.0, all versions starting from 6.20.14 before
+  7.0.0, all versions starting from 7.30.4 before 8.0.0, all versions starting from
+  8.24.0"
+solution: "Upgrade to versions 6.20.14, 7.30.4, 8.24.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-jwvj-pwww-3mj5"
+- "https://github.com/laravel/framework/security/advisories/GHSA-x7p5-p2c9-phvg"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/laravel/framework/2021-01-21.yaml"
+- "https://github.com/laravel/framework"
+uuid: "82fc46ef-ed98-4bc9-bd6f-d8613f0f528c"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

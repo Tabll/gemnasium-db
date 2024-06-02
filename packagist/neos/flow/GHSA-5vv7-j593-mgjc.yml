@@ -1,0 +1,36 @@
+---
+identifier: "GHSA-5vv7-j593-mgjc"
+identifiers:
+- "GHSA-5vv7-j593-mgjc"
+package_slug: "packagist/neos/flow"
+title: "Neos Flow Arbitrary file upload and XML External Entity processing"
+description: "It has been discovered that Flow 3.0.0 allows arbitrary file uploads,
+  inlcuding server-side scripts, posing the risk of attacks. If those scripts are
+  executed by the server when accessed through their public URL, anything not blocked
+  through other means is possible (information disclosure, placement of backdoors,
+  data removal, …).\n\nNote: The upload of files is only possible if the application
+  built on Flow provides means to do so, and whether or not the upload of files poses
+  a risk is dependent on the system setup. If uploaded script files are not executed
+  by the server, there is no risk. In versions prior to 3.0.0 the upload of files
+  with the extension php was blocked.\n\nIn Flow 2.3.0 to 2.3.6 a potential XML External
+  Entity processing vulnerability has been discovered in the MediaTypeConverter."
+date: "2024-05-17"
+pubdate: "2024-05-17"
+affected_range: ">=2.3.0 <2.3.7||>=3.0.0 <3.0.1"
+fixed_versions:
+- "2.3.7"
+- "3.0.1"
+affected_versions: "All versions starting from 2.3.0 before 2.3.7, all versions starting
+  from 3.0.0 before 3.0.1"
+not_impacted: "All versions before 2.3.0, all versions starting from 2.3.7 before
+  3.0.0, all versions starting from 3.0.1"
+solution: "Upgrade to versions 2.3.7, 3.0.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-5vv7-j593-mgjc"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/neos/flow/2015-11-23.yaml"
+- "https://github.com/neos/flow"
+- "https://www.neos.io/blog/flow-sa-2015-001.html"
+uuid: "f3afa01a-2c63-4b87-b22a-37a66da52fbe"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

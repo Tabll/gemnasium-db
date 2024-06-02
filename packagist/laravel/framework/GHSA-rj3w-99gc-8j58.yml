@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-rj3w-99gc-8j58"
+identifiers:
+- "GHSA-rj3w-99gc-8j58"
+package_slug: "packagist/laravel/framework"
+title: "Laravel Risk of mass-assignment vulnerabilities"
+description: "Laravel 4.1.29 improves the column quoting for all database drivers.
+  This protects your application from some mass assignment vulnerabilities when not
+  using the fillable property on models. If you are using the fillable property on
+  your models to protect against mass assignment, your application is not vulnerable.
+  However, if you are using guarded and are passing a user controlled array into an
+  \"update\" or \"save\" type function, you should upgrade to 4.1.29 immediately as
+  your application may be at risk of mass assignment."
+date: "2024-05-15"
+pubdate: "2024-05-15"
+affected_range: ">=4.0.0 <4.1.29"
+fixed_versions:
+- "4.1.29"
+affected_versions: "All versions starting from 4.0.0 before 4.1.29"
+not_impacted: "All versions before 4.0.0, all versions starting from 4.1.29"
+solution: "Upgrade to version 4.1.29 or above."
+urls:
+- "https://github.com/advisories/GHSA-rj3w-99gc-8j58"
+- "https://github.com/laravel/framework/commit/c942a1bc30999e3d7a5567f264bfc99c77843919"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/laravel/framework/2014-05-20.yaml"
+- "https://github.com/laravel/framework"
+- "https://laravel.com/docs/5.3/upgrade#upgrade-4.1.29"
+uuid: "dab8ec58-7b42-469d-bcf6-320ba1ec00f5"
+cwe_ids:
+- "CWE-20"
+- "CWE-937"
+- "CWE-1035"

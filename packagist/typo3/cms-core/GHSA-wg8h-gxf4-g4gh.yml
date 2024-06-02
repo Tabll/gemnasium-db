@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-wg8h-gxf4-g4gh"
+identifiers:
+- "GHSA-wg8h-gxf4-g4gh"
+package_slug: "packagist/typo3/cms-core"
+title: "TYPO3 Cross-Site Scripting in Online Media Asset Rendering"
+description: "Failing to properly encode user input, online media asset rendering
+  (*.youtube and *.vimeo files) is vulnerable to cross-site scripting. A valid backend
+  user account or write access on the server system (e.g. SFTP) is needed in order
+  to exploit this vulnerability."
+date: "2024-05-30"
+pubdate: "2024-05-30"
+affected_range: ">=8.0.0 <8.7.21||>=9.0.0 <9.5.2"
+fixed_versions:
+- "8.7.21"
+- "9.5.2"
+affected_versions: "All versions starting from 8.0.0 before 8.7.21, all versions starting
+  from 9.0.0 before 9.5.2"
+not_impacted: "All versions before 8.0.0, all versions starting from 8.7.21 before
+  9.0.0, all versions starting from 9.5.2"
+solution: "Upgrade to versions 8.7.21, 9.5.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-wg8h-gxf4-g4gh"
+- "https://github.com/TYPO3-CMS/core/commit/23800859368e2af60604ff27f3eed9971ccd9fbd"
+- "https://github.com/TYPO3-CMS/core/commit/f9e5e255f41c248e115b2a755b797ce48d10d72a"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/typo3/cms-core/2018-12-11-1.yaml"
+- "https://github.com/TYPO3-CMS/core"
+- "https://typo3.org/security/advisory/typo3-core-sa-2018-006"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+uuid: "22f6cac9-7c31-42bf-818e-10f788e4378c"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

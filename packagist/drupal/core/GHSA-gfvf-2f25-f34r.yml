@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-gfvf-2f25-f34r"
+identifiers:
+- "GHSA-gfvf-2f25-f34r"
+package_slug: "packagist/drupal/core"
+title: "Drupal Anonymous Open Redirect "
+description: "Drupal core and contributed modules frequently use a \"destination\"
+  query string parameter in URLs to redirect users to a new destination after completing
+  an action on the current page. Under certain circumstances, malicious users can
+  use this parameter to construct a URL that will trick users into being redirected
+  to a 3rd party website, thereby exposing the users to potential social engineering
+  attacks."
+date: "2024-05-15"
+pubdate: "2024-05-15"
+affected_range: ">=8.0.0 <8.5.8||>=8.6.0 <8.6.2"
+fixed_versions:
+- "8.5.8"
+- "8.6.2"
+affected_versions: "All versions starting from 8.0.0 before 8.5.8, all versions starting
+  from 8.6.0 before 8.6.2"
+not_impacted: "All versions before 8.0.0, all versions starting from 8.5.8 before
+  8.6.0, all versions starting from 8.6.2"
+solution: "Upgrade to versions 8.5.8, 8.6.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-gfvf-2f25-f34r"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/drupal/core/2018-10-17-3.yaml"
+- "https://github.com/drupal/core"
+- "https://www.drupal.org/sa-core-2018-006"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:L/A:N"
+uuid: "84ea3a45-9600-446c-8f9e-5427d411d873"
+cwe_ids:
+- "CWE-601"
+- "CWE-937"
+- "CWE-1035"

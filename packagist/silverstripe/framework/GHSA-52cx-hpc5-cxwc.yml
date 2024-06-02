@@ -1,0 +1,38 @@
+---
+identifier: "GHSA-52cx-hpc5-cxwc"
+identifiers:
+- "GHSA-52cx-hpc5-cxwc"
+package_slug: "packagist/silverstripe/framework"
+title: "silverstripe/framework missing ACL on reports"
+description: "The SS_Report, and the reports CMS section only checks `canView()` when
+  listing the reports that can be viewed by the current user.\n\nIt does not (and
+  should) perform `canView` checks when the report is actually viewed, so if you know
+  the URL to a report and can otherwise access the Reports section of the CMS, you
+  can view any report."
+date: "2024-05-27"
+pubdate: "2024-05-27"
+affected_range: ">=3.1.19-rc1 <3.1.20||>=3.2.4-rc1 <3.2.5||>=3.3.2-rc1 <3.3.3||>=3.4.0-rc1
+  <3.4.1"
+fixed_versions:
+- "3.1.20"
+- "3.2.5"
+- "3.3.3"
+- "3.4.1"
+affected_versions: "All versions starting from 3.1.19-rc1 before 3.1.20, all versions
+  starting from 3.2.4-rc1 before 3.2.5, all versions starting from 3.3.2-rc1 before
+  3.3.3, all versions starting from 3.4.0-rc1 before 3.4.1"
+not_impacted: "All versions before 3.1.19-rc1, all versions starting from 3.1.20 before
+  3.2.4-rc1, all versions starting from 3.2.5 before 3.3.2-rc1, all versions starting
+  from 3.3.3 before 3.4.0-rc1, all versions starting from 3.4.1"
+solution: "Upgrade to versions 3.1.20, 3.2.5, 3.3.3, 3.4.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-52cx-hpc5-cxwc"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/silverstripe/framework/SS-2016-012-1.yaml"
+- "https://github.com/silverstripe/silverstripe-framework"
+- "https://www.silverstripe.org/download/security-releases/ss-2016-012"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N"
+uuid: "afff162b-0443-49c8-93ac-6fb974089fe8"
+cwe_ids:
+- "CWE-862"
+- "CWE-937"
+- "CWE-1035"

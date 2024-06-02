@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-q3jm-v27q-jfww"
+identifiers:
+- "GHSA-q3jm-v27q-jfww"
+package_slug: "packagist/titon/framework"
+title: "titon/framework vulnerable to Remote Code Execution via Chosen-Ciphertext
+  Attack"
+description: "titon/framework package (which is now abandoned and no longer maintained)
+  is vulnerable to remote code execution via Chosen-Ciphertext Attack."
+date: "2024-05-30"
+pubdate: "2024-05-30"
+affected_range: "<=0.1.0-alpha"
+fixed_versions: []
+affected_versions: "All versions up to 0.1.0-alpha"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-q3jm-v27q-jfww"
+- "https://github.com/titon/framework/issues/93"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/titon/framework/2017-11-20.yaml"
+- "https://github.com/titon/framework"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+uuid: "87c52830-b915-40be-b9d7-9f1b6e69c18b"
+cwe_ids:
+- "CWE-347"
+- "CWE-937"
+- "CWE-1035"

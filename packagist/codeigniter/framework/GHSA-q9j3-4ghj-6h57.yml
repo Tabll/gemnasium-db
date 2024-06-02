@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-q9j3-4ghj-6h57"
+identifiers:
+- "GHSA-q9j3-4ghj-6h57"
+package_slug: "packagist/codeigniter/framework"
+title: "Inadequate XSS Prevention in CodeIgniter/Framework Security Library"
+description: "The xss_clean() method in the Security Library of CodeIgniter/Framework,
+  specifically in versions before 3.0.3, exhibited a vulnerability that allowed certain
+  Cross-Site Scripting (XSS) vectors to bypass its intended protection mechanisms.\n\nThe
+  xss_clean() method is designed to sanitize input data by removing potentially malicious
+  content, thus preventing XSS attacks. However, in versions prior to 3.0.3, it was
+  discovered that the method did not adequately mitigate specific XSS vectors, leaving
+  a potential security gap."
+date: "2024-05-15"
+pubdate: "2024-05-15"
+affected_range: "<3.0.3"
+fixed_versions:
+- "3.0.3"
+affected_versions: "All versions before 3.0.3"
+not_impacted: "All versions starting from 3.0.3"
+solution: "Upgrade to version 3.0.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-q9j3-4ghj-6h57"
+- "https://github.com/bcit-ci/CodeIgniter/commit/71b1b3f5b2dcc0f4b652e9494e9853b82541ac8c"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/codeigniter/framework/2015-10-31-1.yaml"
+- "https://github.com/bcit-ci/CodeIgniter"
+- "https://www.codeigniter.com/user_guide/changelog.html#version-3-0-3"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:N/I:L/A:N"
+uuid: "e7e2eef2-f9c1-46e5-9c45-8656976f45cb"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

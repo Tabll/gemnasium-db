@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-6wqp-7g94-f69j"
+identifiers:
+- "GHSA-6wqp-7g94-f69j"
+package_slug: "packagist/sensiolabs/connect"
+title: "sensiolabs/connect has a Cross-Site Request Forgery Vulnerability"
+description: "Versions of sensiolabs/connect prior to 4.2.3 are affected by a Cross-Site
+  Request Forgery (CSRF) vulnerability due to the absence of the state parameter in
+  OAuth requests. The lack of proper state parameter handling exposes applications
+  to CSRF attacks during the OAuth authentication flow."
+date: "2024-05-21"
+pubdate: "2024-05-21"
+affected_range: "<4.2.3"
+fixed_versions:
+- "4.2.3"
+affected_versions: "All versions before 4.2.3"
+not_impacted: "All versions starting from 4.2.3"
+solution: "Upgrade to version 4.2.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-6wqp-7g94-f69j"
+- "https://github.com/sensiolabs/connect/pull/63"
+- "https://github.com/symfonycorp/connect/commit/9522aa774e8a0f8a61e709d828e6cc34c4c1e703"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/sensiolabs/connect/2018-06-08-1.yaml"
+- "https://github.com/symfonycorp/connect"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+uuid: "c01970bd-38f9-4a8d-9eea-83ef09eb8b26"
+cwe_ids:
+- "CWE-352"
+- "CWE-937"
+- "CWE-1035"

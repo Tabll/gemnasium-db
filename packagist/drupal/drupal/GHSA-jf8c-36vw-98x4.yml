@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-jf8c-36vw-98x4"
+identifiers:
+- "GHSA-jf8c-36vw-98x4"
+package_slug: "packagist/drupal/drupal"
+title: "Drupal core Remote Code Execution"
+description: "In Drupal core, when sending email some variables were not being sanitized
+  for shell arguments in `DefaultMailSystem::mail()`, which could lead to remote code
+  execution."
+date: "2024-05-15"
+pubdate: "2024-05-15"
+affected_range: ">=7.0 <7.60||>=8.0.0 <8.5.8||>=8.6.0 <8.6.2"
+fixed_versions:
+- "7.60"
+- "8.5.8"
+- "8.6.2"
+affected_versions: "All versions starting from 7.0 before 7.60, all versions starting
+  from 8.0.0 before 8.5.8, all versions starting from 8.6.0 before 8.6.2"
+not_impacted: "All versions before 7.0, all versions starting from 7.60 before 8.0.0,
+  all versions starting from 8.5.8 before 8.6.0, all versions starting from 8.6.2"
+solution: "Upgrade to versions 7.60, 8.5.8, 8.6.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-jf8c-36vw-98x4"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/drupal/drupal/2018-10-17-4.yaml"
+- "https://github.com/drupal/drupal"
+- "https://www.drupal.org/sa-core-2018-006"
+uuid: "366d4589-0c00-4bdf-910c-8f7d468ada1d"
+cwe_ids:
+- "CWE-94"
+- "CWE-937"
+- "CWE-1035"

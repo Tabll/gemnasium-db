@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-88jp-9jrv-6368"
+identifiers:
+- "GHSA-88jp-9jrv-6368"
+package_slug: "packagist/silverstripe/framework"
+title: "Silverstripe XSS In GridField print"
+description: "A cross-site scripting vulnerability has been discovered in the print
+  view of  GridField.\n\nThis vulnerability can only be exploited if a user with CMS
+  access has posted malicious or unescaped HTML into any field of an object in a GridField,
+  and the print feature is used.\n\nThis has been resolved by ensuring that the print
+  feature safely escapes all fields."
+date: "2024-05-23"
+pubdate: "2024-05-23"
+affected_range: ">=3.1.0 <3.1.10"
+fixed_versions:
+- "3.1.10"
+affected_versions: "All versions starting from 3.1.0 before 3.1.10"
+not_impacted: "All versions before 3.1.0, all versions starting from 3.1.10"
+solution: "Upgrade to version 3.1.10 or above."
+urls:
+- "https://github.com/advisories/GHSA-88jp-9jrv-6368"
+- "https://github.com/silverstripe/silverstripe-framework/commit/cebc0d08c5cc8177c2462a963b76e5bc7827146d"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/silverstripe/framework/SS-2015-006-1.yaml"
+- "https://github.com/silverstripe/silverstripe-framework"
+- "https://www.silverstripe.org/software/download/security-releases/ss-2015-006"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+uuid: "3ad9420b-5624-4b5c-86a5-0109e7b4360b"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

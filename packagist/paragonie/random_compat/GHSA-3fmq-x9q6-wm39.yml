@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-3fmq-x9q6-wm39"
+identifiers:
+- "GHSA-3fmq-x9q6-wm39"
+package_slug: "packagist/paragonie/random_compat"
+title: "random_compat Uses insecure CSPRNG"
+description: "random_compat versions prior to 2.0 are affected by a security vulnerability
+  related to the insecure usage of Cryptographically Secure Pseudo-Random Number Generators
+  (CSPRNG). The affected versions use openssl_random_pseudo_bytes(), which may result
+  in insufficient entropy and compromise the security of generated random numbers."
+date: "2024-05-17"
+pubdate: "2024-05-17"
+affected_range: "<2.0"
+fixed_versions:
+- "2.0"
+affected_versions: "All versions before 2.0"
+not_impacted: "All versions starting from 2.0"
+solution: "Upgrade to version 2.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-3fmq-x9q6-wm39"
+- "https://github.com/paragonie/random_compat/issues/96"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/paragonie/random_compat/2016-03-16.yaml"
+- "https://github.com/paragonie/random_compat"
+uuid: "411345b7-c6e5-4426-99b2-a9a33f97bc98"
+cwe_ids:
+- "CWE-331"
+- "CWE-937"
+- "CWE-1035"

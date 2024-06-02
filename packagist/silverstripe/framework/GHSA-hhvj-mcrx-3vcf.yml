@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-hhvj-mcrx-3vcf"
+identifiers:
+- "GHSA-hhvj-mcrx-3vcf"
+package_slug: "packagist/silverstripe/framework"
+title: "silverstripe/framework has Cross-site Scripting vulnerability in page name"
+description: "silverstripe/framework is vulnerable to XSS in Page name where the payload
+  `\"><svg/onload=alert(/xss/)>` will trigger an XSS alert."
+date: "2024-05-27"
+pubdate: "2024-05-27"
+affected_range: ">=3.4.0-rc1 <3.4.4||>=3.5.0-rc1 <3.5.2"
+fixed_versions:
+- "3.4.4"
+- "3.5.2"
+affected_versions: "All versions starting from 3.4.0-rc1 before 3.4.4, all versions
+  starting from 3.5.0-rc1 before 3.5.2"
+not_impacted: "All versions before 3.4.0-rc1, all versions starting from 3.4.4 before
+  3.5.0-rc1, all versions starting from 3.5.2"
+solution: "Upgrade to versions 3.4.4, 3.5.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-hhvj-mcrx-3vcf"
+- "https://github.com/silverstripe/silverstripe-framework/commit/9574d627f95aca7ae0fcefcae2bf56215777e190"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/silverstripe/framework/SS-2017-001-1.yaml"
+- "https://github.com/silverstripe/silverstripe-framework"
+- "https://www.silverstripe.org/download/security-releases/ss-2017-001"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+uuid: "7a8853ee-0737-4fee-84c6-dd196753a3a6"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

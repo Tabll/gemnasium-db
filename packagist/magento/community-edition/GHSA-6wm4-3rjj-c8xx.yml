@@ -1,0 +1,26 @@
+---
+identifier: "GHSA-6wm4-3rjj-c8xx"
+identifiers:
+- "GHSA-6wm4-3rjj-c8xx"
+package_slug: "packagist/magento/community-edition"
+title: "Magento Security enhancements that help close RCE,XSS,CSRF and other vulnerabilities"
+description: "SUPEE-10975, Magento Commerce 1.14.4.0 and Open Source 1.9.4.0 contain
+  multiple security enhancements that help close remote code execution (RCE), cross-site
+  scripting (XSS), cross-site request forgery (CSRF) and other vulnerabilities."
+date: "2024-05-15"
+pubdate: "2024-05-15"
+affected_range: ">=1.5.0.0 <1.9.4.0"
+fixed_versions:
+- "1.9.4.0"
+affected_versions: "All versions starting from 1.5.0.0 before 1.9.4.0"
+not_impacted: "All versions before 1.5.0.0, all versions starting from 1.9.4.0"
+solution: "Upgrade to version 1.9.4.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-6wm4-3rjj-c8xx"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/magento/magento1ce/2018-11-28.yaml"
+- "https://github.com/magento/magento2"
+- "https://web.archive.org/web/20200929120610/https://magento.com/security/patches/supee-10975"
+uuid: "5bd25b99-8f5e-4ad2-b91b-6fdfc0526ff3"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

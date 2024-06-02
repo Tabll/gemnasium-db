@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-rv8r-8mh5-5376"
+identifiers:
+- "GHSA-rv8r-8mh5-5376"
+package_slug: "packagist/typo3/cms-core"
+title: "TYPO3 Information Disclosure in Backend User Interface"
+description: "The element information component used to display properties of a certain
+  record is susceptible to information disclosure. The list of references from or
+  to the record is not properly checked for the backend user’s permissions. A valid
+  backend user account is needed in order to exploit this vulnerability."
+date: "2024-05-30"
+pubdate: "2024-05-30"
+affected_range: ">=8.0.0 <8.7.27||>=9.0.0 <9.5.8"
+fixed_versions:
+- "8.7.27"
+- "9.5.8"
+affected_versions: "All versions starting from 8.0.0 before 8.7.27, all versions starting
+  from 9.0.0 before 9.5.8"
+not_impacted: "All versions before 8.0.0, all versions starting from 8.7.27 before
+  9.0.0, all versions starting from 9.5.8"
+solution: "Upgrade to versions 8.7.27, 9.5.8 or above."
+urls:
+- "https://github.com/advisories/GHSA-rv8r-8mh5-5376"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/typo3/cms-core/2019-06-25-1.yaml"
+- "https://github.com/TYPO3-CMS/core"
+- "https://typo3.org/security/advisory/typo3-core-sa-2019-014"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N"
+uuid: "5812c945-64af-43e3-bf7a-eef2a5e36899"
+cwe_ids:
+- "CWE-862"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-h63c-xvpf-264j"
+identifiers:
+- "GHSA-h63c-xvpf-264j"
+package_slug: "packagist/adodb/adodb-php"
+title: "ADOdb SQL injection vulnerability"
+description: "The ADOdb Library for PHP prior to version 5.20.11 is prone to SQL Injection
+  vulnerability in multiple drivers."
+date: "2024-05-15"
+pubdate: "2024-05-15"
+affected_range: "<5.20.11"
+fixed_versions:
+- "5.20.11"
+affected_versions: "All versions before 5.20.11"
+not_impacted: "All versions starting from 5.20.11"
+solution: "Upgrade to version 5.20.11 or above."
+urls:
+- "https://github.com/advisories/GHSA-h63c-xvpf-264j"
+- "https://github.com/ADOdb/ADOdb/pull/311"
+- "https://github.com/ADOdb/ADOdb/pull/401"
+- "https://github.com/dregad/ADOdb/commit/34788ce8c1d08500631f55764cc2247b9c7cfd2b"
+- "https://github.com/dregad/ADOdb/commit/d29c23f2264ec95c6d3851e0f51ce240b2f36b74"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/adodb/adodb-php/2018-03-06.yaml"
+uuid: "f44da0a1-634d-427d-a7c3-154d11492767"
+cwe_ids:
+- "CWE-89"
+- "CWE-937"
+- "CWE-1035"

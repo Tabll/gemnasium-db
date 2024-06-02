@@ -1,0 +1,37 @@
+---
+identifier: "GHSA-qf65-hph9-453r"
+identifiers:
+- "GHSA-qf65-hph9-453r"
+package_slug: "packagist/drupal/drupal"
+title: "Drupal Cross-Site Scripting (XSS) affecting CKEditor Third-party library"
+description: "The Drupal project uses the CKEditor, library for WYSIWYG editing. CKEditor
+  has released a security update that impacts Drupal.\n\nVulnerabilities are possible
+  if Drupal is configured to allow use of the CKEditor library for WYSIWYG editing.
+  An attacker that can create or edit content (even without access to CKEditor themselves)
+  may be able to exploit one or more Cross-Site Scripting (XSS) vulnerabilities to
+  target users with access to the WYSIWYG CKEditor, including site admins with privileged
+  access."
+date: "2024-05-15"
+pubdate: "2024-05-15"
+affected_range: ">=8.0.0 <8.9.16||>=9.0.0 <9.1.12||>=9.2.0 <9.2.4"
+fixed_versions:
+- "8.9.16"
+- "9.1.12"
+- "9.2.4"
+affected_versions: "All versions starting from 8.0.0 before 8.9.16, all versions starting
+  from 9.0.0 before 9.1.12, all versions starting from 9.2.0 before 9.2.4"
+not_impacted: "All versions before 8.0.0, all versions starting from 8.9.16 before
+  9.0.0, all versions starting from 9.1.12 before 9.2.0, all versions starting from
+  9.2.4"
+solution: "Upgrade to versions 8.9.16, 9.1.12, 9.2.4 or above."
+urls:
+- "https://github.com/advisories/GHSA-qf65-hph9-453r"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/drupal/drupal/2021-05-26.yaml"
+- "https://github.com/drupal/drupal"
+- "https://www.drupal.org/sa-core-2021-005"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:L/I:L/A:N"
+uuid: "7ac8793a-afb4-4713-be86-01290156a840"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

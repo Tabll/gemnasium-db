@@ -1,0 +1,37 @@
+---
+identifier: "GHSA-cg34-w3fm-82h3"
+identifiers:
+- "GHSA-cg34-w3fm-82h3"
+package_slug: "pypi/scrapy"
+title: "Duplicate Advisory: Scrapy leaks the authorization header on same-domain but
+  cross-origin redirects "
+description: "## Duplicate Advisory\nThis advisory has been withdrawn because it is
+  a duplicate of GHSA-4qqq-9vqf-3h3f. This link is maintained to preserve external
+  references.\n\n## Original Description\nIn scrapy/scrapy, an issue was identified
+  where the Authorization header is not removed during redirects that only change
+  the scheme (e.g., HTTPS to HTTP) but remain within the same domain. This behavior
+  contravenes the Fetch standard, which mandates the removal of Authorization headers
+  in cross-origin requests when the scheme, host, or port changes. Consequently, when
+  a redirect downgrades from HTTPS to HTTP, the Authorization header may be inadvertently
+  exposed in plaintext, leading to potential sensitive information disclosure to unauthorized
+  actors. The flaw is located in the _build_redirect_request function of the redirect
+  middleware."
+date: "2024-05-20"
+pubdate: "2024-05-20"
+affected_range: "<2.11.2"
+fixed_versions:
+- "2.11.2"
+affected_versions: "All versions before 2.11.2"
+not_impacted: "All versions starting from 2.11.2"
+solution: "Upgrade to version 2.11.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-cg34-w3fm-82h3"
+- "https://nvd.nist.gov/vuln/detail/CVE-2024-1968"
+- "https://github.com/scrapy/scrapy/commit/1d0502f25bbe55a22899af915623fda1aaeb9dd8"
+- "https://huntr.com/bounties/27f6a021-a891-446a-ada5-0226d619dd1a"
+cvss_v3: "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+uuid: "e6b2b53d-ee1e-4004-b0a0-9deb4b07ab20"
+cwe_ids:
+- "CWE-200"
+- "CWE-937"
+- "CWE-1035"

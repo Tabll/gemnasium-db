@@ -1,0 +1,36 @@
+---
+identifier: "GHSA-25gq-jvx2-vg9x"
+identifiers:
+- "GHSA-25gq-jvx2-vg9x"
+package_slug: "packagist/silverstripe/framework"
+title: "Silverstripe X-Forwarded-Host request hostname injection"
+description: "A potential hostname injection vulnerability has been found which could
+  allow attackers to alter url resolution.\n\nIf a request contains the X-Forwarded-Host
+  HTTP header a website would then use its value in place of the actual HTTP hostname.
+  In cases where caching is enabled, this could allow an attacker to potentially embed
+  a remote url as the base_url for any site. This would then cause other visitors
+  to the site to be redirected unknowingly.\n\nThis header is necessary for servers
+  running behind a reverse proxy (such as nginx). Such servers are likely not vulnerable
+  to this risk.\n\nA fix has been merged into the default installer, although existing
+  projects which do not run behind a reverse proxy should update their htaccess as
+  below:\n```\n<IfModule mod_headers.c>"
+date: "2024-05-23"
+pubdate: "2024-05-23"
+affected_range: ">=3.1.0 <3.1.13"
+fixed_versions:
+- "3.1.13"
+affected_versions: "All versions starting from 3.1.0 before 3.1.13"
+not_impacted: "All versions before 3.1.0, all versions starting from 3.1.13"
+solution: "Upgrade to version 3.1.13 or above."
+urls:
+- "https://github.com/advisories/GHSA-25gq-jvx2-vg9x"
+- "https://github.com/silverstripe/silverstripe-framework/commit/75137dbab28c0efd28b07e50044a50c5af4e46aa"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/silverstripe/framework/SS-2015-013-1.yaml"
+- "https://github.com/silverstripe/silverstripe-framework"
+- "https://www.silverstripe.org/software/download/security-releases/ss-2015-013"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:N"
+uuid: "348d72fc-d042-4f10-9864-0de82acfc4f4"
+cwe_ids:
+- "CWE-601"
+- "CWE-937"
+- "CWE-1035"

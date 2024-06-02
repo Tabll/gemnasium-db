@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-2w9p-xxqr-h253"
+identifiers:
+- "GHSA-2w9p-xxqr-h253"
+package_slug: "packagist/ezsystems/ezplatform-kernel"
+title: "eZ Platform Object Injection in SiteAccessMatchListener"
+description: "This Security Advisory is about an object injection vulnerability in
+  the SiteAccessMatchListener of eZ Platform, which could lead to remote code execution
+  (RCE), a very serious threat. All sites may be affected.\n\nUpdate: There are bugs
+  introduced by this fix, particularly but not limited to compound siteaccess matchers.
+  These have been fixed in ezsystems/ezplatform-kernel v1.0.3, and in ezsystems/ezpublish-kernel
+  v7.5.8, v6.13.6.4, and v5.4.15."
+date: "2024-05-15"
+pubdate: "2024-05-15"
+affected_range: ">=1.0.0 <1.0.3"
+fixed_versions:
+- "1.0.3"
+affected_versions: "All versions starting from 1.0.0 before 1.0.3"
+not_impacted: "All versions before 1.0.0, all versions starting from 1.0.3"
+solution: "Upgrade to version 1.0.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-2w9p-xxqr-h253"
+- "https://ezplatform.com/security-advisories/ezsa-2020-004-object-injection-in-siteaccessmatchlistener"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/ezsystems/ezplatform-kernel/2020-05-20-1.yaml"
+- "https://github.com/ezsystems/ezplatform-kernel"
+- "https://web.archive.org/web/20201024030303/https://ezplatform.com/security-advisories/ezsa-2020-004-object-injection-in-siteaccessmatchlistener"
+uuid: "4b805a6c-4099-4981-a0c9-3e1c0805297b"
+cwe_ids:
+- "CWE-94"
+- "CWE-937"
+- "CWE-1035"

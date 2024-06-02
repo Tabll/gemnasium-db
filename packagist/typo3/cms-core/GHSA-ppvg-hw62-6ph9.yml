@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-ppvg-hw62-6ph9"
+identifiers:
+- "GHSA-ppvg-hw62-6ph9"
+package_slug: "packagist/typo3/cms-core"
+title: "TYPO3 Security Misconfiguration in Install Tool Cookie"
+description: "It has been discovered that cookies created in the Install Tool are
+  not hardened to be submitted only via HTTP. In combination with other vulnerabilities
+  such as cross-site scripting it can lead to hijacking an active and valid session
+  in the Install Tool."
+date: "2024-05-30"
+pubdate: "2024-05-30"
+affected_range: ">=8.0.0 <8.7.21||>=9.0.0 <9.5.2||>=7.0.0 <7.6.32"
+fixed_versions:
+- "8.7.21"
+- "9.5.2"
+- "7.6.32"
+affected_versions: "All versions starting from 7.0.0 before 7.6.32, all versions starting
+  from 8.0.0 before 8.7.21, all versions starting from 9.0.0 before 9.5.2"
+not_impacted: "All versions before 7.0.0, all versions starting from 7.6.32 before
+  8.0.0, all versions starting from 8.7.21 before 9.0.0, all versions starting from
+  9.5.2"
+solution: "Upgrade to versions 7.6.32, 8.7.21, 9.5.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-ppvg-hw62-6ph9"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/typo3/cms-core/2018-12-11-4.yaml"
+- "https://github.com/TYPO3-CMS/core"
+- "https://typo3.org/security/advisory/typo3-core-sa-2018-009"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+uuid: "e5a1c130-5507-4467-bf57-c3af4d7e5b35"
+cwe_ids:
+- "CWE-1004"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,36 @@
+---
+identifier: "GHSA-crr3-h4m8-7f56"
+identifiers:
+- "GHSA-crr3-h4m8-7f56"
+package_slug: "packagist/silverstripe/framework"
+title: "silverstripe/framework vulnerable to member disclosure in login form"
+description: "There is a user ID enumeration vulnerability in our brute force error
+  messages.\n\n- Users that don't exist in will never get a locked out message\n-
+  Users that do exist, will get a locked out message\n\nThis means an attacker can
+  infer or confirm user details that exist in the member table.\n\nThis issue has
+  been resolved by ensuring that login attempt logging and lockout process works equivalently
+  for non-existent users as it does for existant users.\n\nThis is a regression of
+  [SS-2017-002](https://www.silverstripe.org/download/security-releases/ss-2017-002)."
+date: "2024-05-27"
+pubdate: "2024-05-27"
+affected_range: ">=4.0.0-rc1 <4.0.4||>=4.1.0-rc1 <4.1.1"
+fixed_versions:
+- "4.0.4"
+- "4.1.1"
+affected_versions: "All versions starting from 4.0.0-rc1 before 4.0.4, all versions
+  starting from 4.1.0-rc1 before 4.1.1"
+not_impacted: "All versions before 4.0.0-rc1, all versions starting from 4.0.4 before
+  4.1.0-rc1, all versions starting from 4.1.1"
+solution: "Upgrade to versions 4.0.4, 4.1.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-crr3-h4m8-7f56"
+- "https://github.com/silverstripe/silverstripe-framework/commit/5887201dd578a5b9779c33a182153d2ce973ab41"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/silverstripe/framework/SS-2018-010-1.yaml"
+- "https://github.com/silverstripe/silverstripe-framework"
+- "https://www.silverstripe.org/download/security-releases/ss-2018-010"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+uuid: "78c1eab6-616b-4e4d-b13a-a24c0c246443"
+cwe_ids:
+- "CWE-200"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-8fg7-hp93-qhvr"
+identifiers:
+- "GHSA-8fg7-hp93-qhvr"
+package_slug: "go/github.com/wolfi-dev/wolfictl"
+title: "wolfictl leaks GitHub tokens to remote non-GitHub git servers"
+description: "A git authentication issue allows a local user’s GitHub token to be
+  sent to remote servers other than `github.com`."
+date: "2024-05-15"
+pubdate: "2024-05-15"
+affected_range: "<0.16.10"
+fixed_versions:
+- "0.16.10"
+affected_versions: "All versions before 0.16.10"
+not_impacted: "All versions starting from 0.16.10"
+solution: "Upgrade to version 0.16.10 or above."
+urls:
+- "https://github.com/advisories/GHSA-8fg7-hp93-qhvr"
+- "https://github.com/wolfi-dev/wolfictl/security/advisories/GHSA-8fg7-hp93-qhvr"
+- "https://github.com/wolfi-dev/wolfictl"
+cvss_v3: "CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:H/I:N/A:N"
+uuid: "9e03df74-19cf-4ba9-b420-2c982bee5c0f"
+cwe_ids:
+- "CWE-552"
+- "CWE-668"
+- "CWE-937"
+- "CWE-1035"

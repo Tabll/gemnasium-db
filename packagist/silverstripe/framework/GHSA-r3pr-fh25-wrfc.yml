@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-r3pr-fh25-wrfc"
+identifiers:
+- "GHSA-r3pr-fh25-wrfc"
+package_slug: "packagist/silverstripe/framework"
+title: "silverstripe/framework's install.php script discloses sensitive data by pre-populating
+  DB credential forms"
+description: "When accessing the `install.php` script it is possible to extract any
+  pre-configured database or default admin account password by viewing the source
+  of the page, and inspecting the `value` property of the password fields."
+date: "2024-05-27"
+pubdate: "2024-05-27"
+affected_range: ">=4.0.0-rc1 <4.0.1"
+fixed_versions:
+- "4.0.1"
+affected_versions: "All versions starting from 4.0.0-rc1 before 4.0.1"
+not_impacted: "All versions before 4.0.0-rc1, all versions starting from 4.0.1"
+solution: "Upgrade to version 4.0.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-r3pr-fh25-wrfc"
+- "https://github.com/silverstripe/silverstripe-framework/commit/7a79cd039a96ef54182263d5fbb72addf093b171"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/silverstripe/framework/SS-2017-010-1.yaml"
+- "https://github.com/silverstripe/silverstripe-framework"
+- "https://www.silverstripe.org/download/security-releases/ss-2017-010"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+uuid: "323d7d09-c31c-4569-8b06-99913e7e0516"
+cwe_ids:
+- "CWE-200"
+- "CWE-937"
+- "CWE-1035"

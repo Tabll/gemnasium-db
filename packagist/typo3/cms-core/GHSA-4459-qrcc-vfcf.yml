@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-4459-qrcc-vfcf"
+identifiers:
+- "GHSA-4459-qrcc-vfcf"
+package_slug: "packagist/typo3/cms-core"
+title: "TYPO3 Cross-Site Scripting in Form Framework"
+description: "Failing to properly encode user input, frontend forms handled by the
+  form framework (system extension “form”) are vulnerable to cross-site scripting."
+date: "2024-05-30"
+pubdate: "2024-05-30"
+affected_range: ">=8.5.0 <8.7.23||>=9.0.0 <9.5.4"
+fixed_versions:
+- "8.7.23"
+- "9.5.4"
+affected_versions: "All versions starting from 8.5.0 before 8.7.23, all versions starting
+  from 9.0.0 before 9.5.4"
+not_impacted: "All versions before 8.5.0, all versions starting from 8.7.23 before
+  9.0.0, all versions starting from 9.5.4"
+solution: "Upgrade to versions 8.7.23, 9.5.4 or above."
+urls:
+- "https://github.com/advisories/GHSA-4459-qrcc-vfcf"
+- "https://github.com/TYPO3-CMS/core/commit/3b8b8b4416b921df4ccc7c5b4a8e9a069562be35"
+- "https://github.com/TYPO3-CMS/core/commit/a0e917008320e24c26780ba385fbfe738fcd45b9"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/typo3/cms-core/2019-01-22-6.yaml"
+- "https://github.com/TYPO3-CMS/core"
+- "https://typo3.org/security/advisory/typo3-core-sa-2019-007"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+uuid: "759681f3-baa3-4444-a9bd-29337a66a1f4"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

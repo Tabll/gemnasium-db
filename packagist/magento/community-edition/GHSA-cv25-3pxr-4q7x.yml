@@ -1,0 +1,41 @@
+---
+identifier: "GHSA-cv25-3pxr-4q7x"
+identifiers:
+- "GHSA-cv25-3pxr-4q7x"
+package_slug: "packagist/magento/community-edition"
+title: "Magento Open Source Security Advisory: Patch SUPEE-10975"
+description: "Magento Commerce 1.14.4.0 and Open Source 1.9.4.0 have been enhanced
+  with critical security updates to address multiple vulnerabilities, including remote
+  code execution (RCE), cross-site scripting (XSS), cross-site request forgery (CSRF),
+  and more. The following issues have been identified and remediated:\n\n- PRODSECBUG-1589:
+  Stops Brute Force Requests via basic RSS authentication\n- MAG-23: M1 Credit Card
+  Storage Capability\n- PRODSECBUG-2149: Authenticated RCE using customer import\n-
+  PRODSECBUG-2159: API Based RCE Vulnerability\n- PRODSECBUG-2156: RCE Via Unauthorized
+  Upload\n- PRODSECBUG-2155: Authenticated RCE using dataflow\n- PRODSECBUG-2053:
+  Prevents XSS in Newsletter Template\n- PRODSECBUG-2142: XSS in CMS Preview\n- PRODSECBUG-1860:
+  Admin Account XSS Attack Cessation via Filename\n- PRODSECBUG-2119: EE Patch to
+  include names in templates\n- PRODSECBUG-2129: XSS in Google Analytics Vulnerability\n-
+  PRODSECBUG-2019: Merchant Wishlist Security Strengthening\n- PRODSECBUG-2104: Send
+  to a Friend Vulnerability\n- PRODSECBUG-2125: CSRF on deletion of Blocks Vulnerability\n-
+  PRODSECBUG-2088: CSRF Vulnerability related to Customer Group Deletion\n- PRODSECBUG-2140:
+  CSRF on deletion of Site Map\n- PRODSECBUG-2108: Outdated jQuery causing PCI scanning
+  failures\n- MAG-12, MAG-2: Encryption Keys Stored in Plain Text\n- PRODSECBUG-2141:
+  Unauthorized Admin Panel Bypass"
+date: "2024-05-15"
+pubdate: "2024-05-15"
+affected_range: ">=1.9.0.0 <1.14.4.0"
+fixed_versions:
+- "1.14.4.0"
+affected_versions: "All versions starting from 1.9.0.0 before 1.14.4.0"
+not_impacted: "All versions before 1.9.0.0, all versions starting from 1.14.4.0"
+solution: "Upgrade to version 1.14.4.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-cv25-3pxr-4q7x"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/magento/magento1ee/2018-11-28.yaml"
+- "https://github.com/magento/magento2"
+- "https://magento.com/security/patches/supee-10975"
+- "https://web.archive.org/web/20210517140123/https://magento.com/security/patches/supee-10975"
+uuid: "5759143d-4347-481a-9331-cd9ac24fa4e9"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

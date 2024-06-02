@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-qm5v-pj64-852j"
+identifiers:
+- "GHSA-qm5v-pj64-852j"
+package_slug: "packagist/passbolt/passbolt_api"
+title: "Passbolt Api Tabnabbing when opening URI with menu \"Open URI in a new tab\""
+description: "A user could create and share a resource with a malicious URI. When
+  the victim opens with menu “Open URI in a new tab” function, the malicious page
+  has access to the window.opener object."
+date: "2024-05-20"
+pubdate: "2024-05-20"
+affected_range: "<2.11.0"
+fixed_versions:
+- "2.11.0"
+affected_versions: "All versions before 2.11.0"
+not_impacted: "All versions starting from 2.11.0"
+solution: "Upgrade to version 2.11.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-qm5v-pj64-852j"
+- "https://github.com/passbolt/passbolt_api/commit/f568e113beb3134446eda9e66400d28d726ee20d"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/passbolt/passbolt_api/2019-08-07-3.yaml"
+- "https://github.com/passbolt/passbolt_api"
+- "https://www.passbolt.com/incidents/20190807_multiple_vulnerabilities"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:L/I:L/A:L"
+uuid: "5f775ae9-2deb-4e92-81d3-b2b03a750a1f"
+cwe_ids:
+- "CWE-657"
+- "CWE-937"
+- "CWE-1035"

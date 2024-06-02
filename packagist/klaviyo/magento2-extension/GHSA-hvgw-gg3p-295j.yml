@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-hvgw-gg3p-295j"
+identifiers:
+- "GHSA-hvgw-gg3p-295j"
+package_slug: "packagist/klaviyo/magento2-extension"
+title: "Read private customer data reclaiming carts in Klaviyo Magento"
+description: "A researcher identified an endpoint in a thirth party module Klaviyo
+  Magento 2 which allows to read private customer data from stores. It works by reclaiming
+  any guest-cart as your own and reading the private data for the orders in the Magento
+  API."
+date: "2024-05-15"
+pubdate: "2024-05-15"
+affected_range: ">=1.0.0 <3.0.0"
+fixed_versions:
+- "3.0.0"
+affected_versions: "All versions starting from 1.0.0 before 3.0.0"
+not_impacted: "All versions before 1.0.0, all versions starting from 3.0.0"
+solution: "Upgrade to version 3.0.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-hvgw-gg3p-295j"
+- "https://github.com/klaviyo/magento2-klaviyo/pull/107"
+- "https://gist.github.com/JeroenBoersma/f5864a45e3df63b198a57abdff366df2"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/klaviyo/magento2-extension/2021-05-25-1.yaml"
+- "https://github.com/klaviyo/magento2-klaviyo"
+uuid: "005ebbb6-e290-4723-ad74-7434cdce216c"
+cwe_ids:
+- "CWE-200"
+- "CWE-937"
+- "CWE-1035"

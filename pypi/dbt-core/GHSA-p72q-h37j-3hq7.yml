@@ -10,7 +10,7 @@ description: "Using a version of `sqlparse` that has a security vulnerability an
   `SNYK-PYTHON-SQLPARSE-6615674`."
 date: "2024-04-22"
 pubdate: "2024-04-22"
-affected_range: ">=1.6.0 <1.6.13||>=1.7.0 <1.7.13"
+affected_range: ">=1.6.0,<1.6.13||>=1.7.0,<1.7.13"
 fixed_versions:
 - "1.6.13"
 - "1.7.13"

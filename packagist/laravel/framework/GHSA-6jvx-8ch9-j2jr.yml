@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-6jvx-8ch9-j2jr"
+identifiers:
+- "GHSA-6jvx-8ch9-j2jr"
+package_slug: "packagist/laravel/framework"
+title: "Laravel Cookie serialization vulnerability"
+description: "Laravel 5.6.30 is a security release of Laravel and is recommended as
+  an immediate upgrade for all users. Laravel 5.6.30 also contains a breaking change
+  to cookie encryption and serialization logic. Refer to [laravel advisory](https://laravel.com/docs/5.6/upgrade#upgrade-5.6.30)
+  for more details and read the notes carefully when upgrading your application."
+date: "2024-05-15"
+pubdate: "2024-05-15"
+affected_range: ">=5.5.0 <5.6.30"
+fixed_versions:
+- "5.6.30"
+affected_versions: "All versions starting from 5.5.0 before 5.6.30"
+not_impacted: "All versions before 5.5.0, all versions starting from 5.6.30"
+solution: "Upgrade to version 5.6.30 or above."
+urls:
+- "https://github.com/advisories/GHSA-6jvx-8ch9-j2jr"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/laravel/framework/2018-08-08-1.yaml"
+- "https://github.com/laravel/framework"
+- "https://laravel.com/docs/5.6/upgrade#upgrade-5.6.30"
+uuid: "af474a1f-823a-4209-8a2f-2b759191a6e4"
+cwe_ids:
+- "CWE-502"
+- "CWE-937"
+- "CWE-1035"

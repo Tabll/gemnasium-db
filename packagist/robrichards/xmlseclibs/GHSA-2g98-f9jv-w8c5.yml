@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-2g98-f9jv-w8c5"
+identifiers:
+- "GHSA-2g98-f9jv-w8c5"
+package_slug: "packagist/robrichards/xmlseclibs"
+title: "robrichards/xmlseclibs XPath injection"
+description: "A vulnerability has been identified in the robrichards/xmlseclibs library,
+  specifically related to XPath injection. The issue arises from inadequate filtering
+  of user input before it is incorporated into XPath expressions."
+date: "2024-05-20"
+pubdate: "2024-05-20"
+affected_range: ">=1.0.0 <3.0.2"
+fixed_versions:
+- "3.0.2"
+affected_versions: "All versions starting from 1.0.0 before 3.0.2"
+not_impacted: "All versions before 1.0.0, all versions starting from 3.0.2"
+solution: "Upgrade to version 3.0.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-2g98-f9jv-w8c5"
+- "https://github.com/robrichards/xmlseclibs/commit/649032643f7aac493e91ca318da0339aec72aa4a"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/robrichards/xmlseclibs/2018-09-27.yaml"
+- "https://github.com/robrichards/xmlseclibs"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+uuid: "7a4d7b7d-0372-4557-ba5d-a33b854f76f5"
+cwe_ids:
+- "CWE-91"
+- "CWE-937"
+- "CWE-1035"

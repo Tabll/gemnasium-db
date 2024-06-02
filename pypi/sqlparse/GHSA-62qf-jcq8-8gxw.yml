@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-62qf-jcq8-8gxw"
+identifiers:
+- "GHSA-62qf-jcq8-8gxw"
+package_slug: "pypi/sqlparse"
+title: "Duplicate Advisory: sqlparse parsing heavily nested list leads to Denial of
+  Service"
+description: "## Duplicate Advisory\nThis advisory has been withdrawn because it is
+  a duplicate of GHSA-2m57-hf25-phgg. This link is maintained to preserve external
+  references.\n\n## Original Description\nPassing a heavily nested list to sqlparse.parse()
+  leads to a Denial of Service due to RecursionError."
+date: "2024-05-01"
+pubdate: "2024-04-30"
+affected_range: "<0.5.0"
+fixed_versions:
+- "0.5.0"
+affected_versions: "All versions before 0.5.0"
+not_impacted: "All versions starting from 0.5.0"
+solution: "Upgrade to version 0.5.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-62qf-jcq8-8gxw"
+- "https://nvd.nist.gov/vuln/detail/CVE-2024-4340"
+- "https://github.com/andialbrecht/sqlparse/commit/b4a39d9850969b4e1d6940d32094ee0b42a2cf03"
+- "https://github.com/advisories/GHSA-2m57-hf25-phgg"
+- "https://research.jfrog.com/vulnerabilities/sqlparse-stack-exhaustion-dos-jfsa-2024-001031292"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "838c64be-0159-405b-9e34-dc3a994485d9"
+cwe_ids:
+- "CWE-674"
+- "CWE-937"
+- "CWE-1035"

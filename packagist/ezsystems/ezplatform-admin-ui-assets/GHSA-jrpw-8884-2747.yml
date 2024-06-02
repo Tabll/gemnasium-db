@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-jrpw-8884-2747"
+identifiers:
+- "GHSA-jrpw-8884-2747"
+package_slug: "packagist/ezsystems/ezplatform-admin-ui-assets"
+title: "eZ Platform Bundled jQuery affected by CVE-2019-11358"
+description: "In eZ Platform 2.x, ezsystems/ezplatform-admin-ui-assets before v4.2.0
+  includes jQuery version 3.3.1. This version of jQuery is affected by the security
+  vulnerability https://www.cvedetails.com/cve/CVE-2019-11358/\nThis is fixed in jQuery
+  version 3.4. We recommend that you upgrade your ezsystems/ezplatform-admin-ui-assets
+  to v4.2.0 using Composer. This release includes jQuery 3.4.1."
+date: "2024-05-15"
+pubdate: "2024-05-15"
+affected_range: ">=4.0.0 <4.2.0"
+fixed_versions:
+- "4.2.0"
+affected_versions: "All versions starting from 4.0.0 before 4.2.0"
+not_impacted: "All versions before 4.0.0, all versions starting from 4.2.0"
+solution: "Upgrade to version 4.2.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-jrpw-8884-2747"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/ezsystems/ezplatform-admin-ui-assets/2019-07-04-1.yaml"
+- "https://github.com/ezsystems/ezplatform-admin-ui-assets"
+- "https://share.ez.no/community-project/security-advisories/ezsa-2019-005-bundled-jquery-affected-by-cve-2019-11358"
+- "https://web.archive.org/web/20210614184115/https://share.ez.no/community-project/security-advisories/ezsa-2019-005-bundled-jquery-affected-by-cve-2019-11358"
+uuid: "0226fe38-e350-4a7e-9acd-4b8ac1254224"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

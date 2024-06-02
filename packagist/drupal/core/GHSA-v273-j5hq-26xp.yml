@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-v273-j5hq-26xp"
+identifiers:
+- "GHSA-v273-j5hq-26xp"
+package_slug: "packagist/drupal/core"
+title: "Drupal core uses a vulnerable Third-party library CKEditor"
+description: "The Drupal project uses the third-party library [CKEditor](https://github.com/ckeditor/ckeditor4),
+  which has released a [security improvement](https://ckeditor.com/blog/CKEditor-4.14-with-Paste-from-LibreOffice-released/#security-issues-fixed)
+  that is needed to protect some Drupal configurations.\n\nVulnerabilities are possible
+  if Drupal is configured to use the WYSIWYG CKEditor for your site's users. An attacker
+  that can create or edit content may be able to exploit this Cross Site Scripting
+  (XSS) vulnerability to target users with access to the WYSIWYG CKEditor, and this
+  may include site admins with privileged access.\n\nThe latest versions of Drupal
+  update CKEditor to 4.14 to mitigate the vulnerabilities."
+date: "2024-05-15"
+pubdate: "2024-05-15"
+affected_range: ">=8.0.0 <8.7.12||>=8.8.0 <8.8.4"
+fixed_versions:
+- "8.7.12"
+- "8.8.4"
+affected_versions: "All versions starting from 8.0.0 before 8.7.12, all versions starting
+  from 8.8.0 before 8.8.4"
+not_impacted: "All versions before 8.0.0, all versions starting from 8.7.12 before
+  8.8.0, all versions starting from 8.8.4"
+solution: "Upgrade to versions 8.7.12, 8.8.4 or above."
+urls:
+- "https://github.com/advisories/GHSA-v273-j5hq-26xp"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/drupal/core/2020-03-18.yaml"
+- "https://github.com/drupal/core"
+- "https://www.drupal.org/sa-core-2020-001"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:L/A:N"
+uuid: "97053bed-8157-446d-a455-d060610640ce"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

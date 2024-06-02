@@ -1,0 +1,26 @@
+---
+identifier: "GHSA-vjrg-wpm8-rhrw"
+identifiers:
+- "GHSA-vjrg-wpm8-rhrw"
+package_slug: "packagist/doctrine/orm"
+title: "doctrine/orm Regression in Query Parenthesis can have Security Implications"
+description: "An issue identified in doctrine/orm project related to statement in
+  Where-Clause were not wrapped in brackets due to improper hadandling of case insensitive
+  check."
+date: "2024-05-15"
+pubdate: "2024-05-15"
+affected_range: ">=2.8.3 <2.8.4"
+fixed_versions:
+- "2.8.4"
+affected_versions: "All versions starting from 2.8.3 before 2.8.4"
+not_impacted: "All versions before 2.8.3, all versions starting from 2.8.4"
+solution: "Upgrade to version 2.8.4 or above."
+urls:
+- "https://github.com/advisories/GHSA-vjrg-wpm8-rhrw"
+- "https://github.com/doctrine/orm/pull/8591"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/doctrine/orm/2021-04-06.yaml"
+- "https://github.com/doctrine/orm"
+uuid: "c28d3063-90a7-46f0-8a4b-7f0a6405af8c"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

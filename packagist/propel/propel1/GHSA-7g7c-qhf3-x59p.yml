@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-7g7c-qhf3-x59p"
+identifiers:
+- "GHSA-7g7c-qhf3-x59p"
+package_slug: "packagist/propel/propel1"
+title: "propel/propel1 SQL injection possible with limit() on MySQL"
+description: "The limit() query method is susceptible to catastrophic SQL injection
+  with MySQL.\n\nFor example, given a model User for a table users:\n```\nUserQuery::create()->limit('1;DROP
+  TABLE users')->find();\n```\nThis will drop the users table!\n\nThe cause appears
+  to be a lack of integer casting of the limit input in either Criteria::setLimit()
+  or in DBMySQL::applyLimit(). The code comments there seem to imply that casting
+  was avoided due to overflow issues with 32-bit integers.\n\nThis is surprising behavior
+  since one of the primary purposes of an ORM is to prevent basic SQL injection.\n\nThis
+  affects all versions of Propel: 1.x, 2.x, and 3."
+date: "2024-05-20"
+pubdate: "2024-05-20"
+affected_range: ">=1 <1.7.2"
+fixed_versions:
+- "1.7.2"
+affected_versions: "All versions starting from 1 before 1.7.2"
+not_impacted: "All versions before 1, all versions starting from 1.7.2"
+solution: "Upgrade to version 1.7.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-7g7c-qhf3-x59p"
+- "https://github.com/propelorm/Propel/issues/1052"
+- "https://github.com/propelorm/Propel/pull/1054"
+- "https://github.com/propelorm/Propel/commit/b72093201f8e225410f62a246653ac039e31c90a"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/propel/propel1/2018-02-14.yaml"
+- "https://github.com/propelorm/Propel"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+uuid: "f6761ba2-a150-4bff-b18d-42a3501c1d1d"
+cwe_ids:
+- "CWE-89"
+- "CWE-937"
+- "CWE-1035"

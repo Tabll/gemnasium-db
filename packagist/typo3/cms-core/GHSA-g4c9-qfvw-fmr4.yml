@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-g4c9-qfvw-fmr4"
+identifiers:
+- "GHSA-g4c9-qfvw-fmr4"
+package_slug: "packagist/typo3/cms-core"
+title: "TYPO3 Cross-Site Scripting in Backend Modal Component"
+description: "Failing to properly encode user input, notifications shown in modal
+  windows in the TYPO3 backend are vulnerable to cross-site scripting. A valid backend
+  user account is needed in order to exploit this vulnerability."
+date: "2024-05-30"
+pubdate: "2024-05-30"
+affected_range: ">=8.0.0 <8.7.21||>=9.0.0 <9.5.2||>=7.1.0 <7.6.32"
+fixed_versions:
+- "8.7.21"
+- "9.5.2"
+- "7.6.32"
+affected_versions: "All versions starting from 7.1.0 before 7.6.32, all versions starting
+  from 8.0.0 before 8.7.21, all versions starting from 9.0.0 before 9.5.2"
+not_impacted: "All versions before 7.1.0, all versions starting from 7.6.32 before
+  8.0.0, all versions starting from 8.7.21 before 9.0.0, all versions starting from
+  9.5.2"
+solution: "Upgrade to versions 7.6.32, 8.7.21, 9.5.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-g4c9-qfvw-fmr4"
+- "https://github.com/TYPO3-CMS/core/commit/3c1deac4db61ac1ac4231799beb1f49c28eb2b4d"
+- "https://github.com/TYPO3-CMS/core/commit/983ecc4ea3a841aca7ff2bb1d2f0e0318c3646b3"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/typo3/cms-core/2018-12-11-2.yaml"
+- "https://github.com/TYPO3-CMS/core"
+- "https://typo3.org/security/advisory/typo3-core-sa-2018-007"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+uuid: "b966ca18-d5f7-44cc-a355-c13b2dc14671"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

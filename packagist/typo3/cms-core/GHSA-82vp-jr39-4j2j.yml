@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-82vp-jr39-4j2j"
+identifiers:
+- "GHSA-82vp-jr39-4j2j"
+package_slug: "packagist/typo3/cms-core"
+title: "TYPO3 Security Misconfiguration in Frontend Session Handling"
+description: "It has been discovered session data of properly authenticated and logged
+  in frontend users is kept and transformed into an anonymous user session during
+  the logout process. This way the next user using the same client application gains
+  access to previous session data."
+date: "2024-05-30"
+pubdate: "2024-05-30"
+affected_range: ">=8.0.0 <8.7.27||>=9.0.0 <9.5.8"
+fixed_versions:
+- "8.7.27"
+- "9.5.8"
+affected_versions: "All versions starting from 8.0.0 before 8.7.27, all versions starting
+  from 9.0.0 before 9.5.8"
+not_impacted: "All versions before 8.0.0, all versions starting from 8.7.27 before
+  9.0.0, all versions starting from 9.5.8"
+solution: "Upgrade to versions 8.7.27, 9.5.8 or above."
+urls:
+- "https://github.com/advisories/GHSA-82vp-jr39-4j2j"
+- "https://github.com/TYPO3-CMS/core/commit/c8c08ca0c26db02753c243e175a8a045628341b6"
+- "https://github.com/TYPO3-CMS/core/commit/fe43834075ae283c8cd91949e9f1dfd18b2d492f"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/typo3/cms-core/2019-06-25-3.yaml"
+- "https://github.com/TYPO3-CMS/core"
+- "https://typo3.org/security/advisory/typo3-core-sa-2019-018"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N"
+uuid: "b9bfb5ab-7be0-4b35-a125-371297685656"
+cwe_ids:
+- "CWE-488"
+- "CWE-937"
+- "CWE-1035"

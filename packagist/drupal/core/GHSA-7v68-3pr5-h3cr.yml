@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-7v68-3pr5-h3cr"
+identifiers:
+- "GHSA-7v68-3pr5-h3cr"
+package_slug: "packagist/drupal/core"
+title: "Drupal Core Insufficient Contextual Links validation leads to Remote Code
+  Execution"
+description: "The Contextual Links module doesn't sufficiently validate the requested
+  contextual links.\nThis vulnerability is mitigated by the fact that an attacker
+  must have a role with the permission \"access contextual links\"."
+date: "2024-05-15"
+pubdate: "2024-05-15"
+affected_range: ">=8.0.0 <8.5.8||>=8.6.0 <8.6.2"
+fixed_versions:
+- "8.5.8"
+- "8.6.2"
+affected_versions: "All versions starting from 8.0.0 before 8.5.8, all versions starting
+  from 8.6.0 before 8.6.2"
+not_impacted: "All versions before 8.0.0, all versions starting from 8.5.8 before
+  8.6.0, all versions starting from 8.6.2"
+solution: "Upgrade to versions 8.5.8, 8.6.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-7v68-3pr5-h3cr"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/drupal/core/2018-10-17-5.yaml"
+- "https://github.com/drupal/core"
+- "https://www.drupal.org/sa-core-2018-006"
+uuid: "00bc2b3d-3a2e-4ce4-aff8-91ec1842c514"
+cwe_ids:
+- "CWE-94"
+- "CWE-937"
+- "CWE-1035"

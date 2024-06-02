@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-f84q-mgj9-8jfc"
+identifiers:
+- "GHSA-f84q-mgj9-8jfc"
+package_slug: "packagist/drupal/core"
+title: "Drupal Content moderation Access bypass"
+description: "In some conditions, drupal content moderation fails to check a users
+  access to use certain transitions, leading to an access bypass."
+date: "2024-05-15"
+pubdate: "2024-05-15"
+affected_range: ">=8.0.0 <8.5.8||>=8.6.0 <8.6.2"
+fixed_versions:
+- "8.5.8"
+- "8.6.2"
+affected_versions: "All versions starting from 8.0.0 before 8.5.8, all versions starting
+  from 8.6.0 before 8.6.2"
+not_impacted: "All versions before 8.0.0, all versions starting from 8.5.8 before
+  8.6.0, all versions starting from 8.6.2"
+solution: "Upgrade to versions 8.5.8, 8.6.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-f84q-mgj9-8jfc"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/drupal/core/2018-10-17-1.yaml"
+- "https://github.com/drupal/core"
+- "https://www.drupal.org/sa-core-2018-006"
+uuid: "daa8f26d-0722-4783-ac59-615c8ff546f7"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

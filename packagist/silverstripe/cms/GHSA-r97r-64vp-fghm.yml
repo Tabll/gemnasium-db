@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-r97r-64vp-fghm"
+identifiers:
+- "GHSA-r97r-64vp-fghm"
+package_slug: "packagist/silverstripe/cms"
+title: "Silverstripe XSS vulnerability via VirtualPage"
+description: "A cross-site scripting vulnerability has been discovered in the VirtualPage
+  class.\n\nThis vulnerability can only be exploited if a user with CMS access has
+  posted malicious or unescaped HTML into any of the textfields of a page which a
+  VirtualPage refers to.\n\nThis has been resolved by ensuring that VirtualPage safely
+  escapes all field content."
+date: "2024-05-22"
+pubdate: "2024-05-22"
+affected_range: ">=3.1.0 <3.1.10"
+fixed_versions:
+- "3.1.10"
+affected_versions: "All versions starting from 3.1.0 before 3.1.10"
+not_impacted: "All versions before 3.1.0, all versions starting from 3.1.10"
+solution: "Upgrade to version 3.1.10 or above."
+urls:
+- "https://github.com/advisories/GHSA-r97r-64vp-fghm"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/silverstripe/cms/SS-2015-005-1.yaml"
+- "https://github.com/silverstripe/silverstripe-cms"
+- "https://www.silverstripe.org/software/download/security-releases/ss-2015-005"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+uuid: "eee18a41-b7ae-49e0-8406-b539883707ca"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

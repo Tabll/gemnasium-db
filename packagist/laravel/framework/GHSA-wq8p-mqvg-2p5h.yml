@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-wq8p-mqvg-2p5h"
+identifiers:
+- "GHSA-wq8p-mqvg-2p5h"
+package_slug: "packagist/laravel/framework"
+title: "laravel framework SQL Injection via limit and offset functions"
+description: "Those using SQL Server with Laravel and allowing user input to be passed
+  directly to the limit and offset functions are vulnerable to SQL injection. Other
+  database drivers such as MySQL and Postgres are not affected by this vulnerability."
+date: "2024-05-15"
+pubdate: "2024-05-15"
+affected_range: ">=6.0.0 <6.20.26||>=7.0.0 <7.30.5||>=8.0.0 <8.40.0"
+fixed_versions:
+- "6.20.26"
+- "7.30.5"
+- "8.40.0"
+affected_versions: "All versions starting from 6.0.0 before 6.20.26, all versions
+  starting from 7.0.0 before 7.30.5, all versions starting from 8.0.0 before 8.40.0"
+not_impacted: "All versions before 6.0.0, all versions starting from 6.20.26 before
+  7.0.0, all versions starting from 7.30.5 before 8.0.0, all versions starting from
+  8.40.0"
+solution: "Upgrade to versions 6.20.26, 7.30.5, 8.40.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-wq8p-mqvg-2p5h"
+- "https://github.com/laravel/framework/security/advisories/GHSA-4mg9-vhxq-vm7j"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/laravel/framework/2021-04-28.yaml"
+- "https://github.com/laravel/framework"
+uuid: "1fdca865-3053-4889-a51a-2c1028c468ba"
+cwe_ids:
+- "CWE-89"
+- "CWE-937"
+- "CWE-1035"

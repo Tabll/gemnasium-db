@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-pr99-c33p-fwf6"
+identifiers:
+- "GHSA-pr99-c33p-fwf6"
+package_slug: "packagist/drupal/core"
+title: "Drupal core Denial of Service"
+description: "A visit to install.php can cause cached data to become corrupted. This
+  could cause a site to be impaired until caches are rebuilt."
+date: "2024-05-15"
+pubdate: "2024-05-15"
+affected_range: ">=8.0.0 <8.7.11||>=8.8.0 <8.8.1"
+fixed_versions:
+- "8.7.11"
+- "8.8.1"
+affected_versions: "All versions starting from 8.0.0 before 8.7.11, all versions starting
+  from 8.8.0 before 8.8.1"
+not_impacted: "All versions before 8.0.0, all versions starting from 8.7.11 before
+  8.8.0, all versions starting from 8.8.1"
+solution: "Upgrade to versions 8.7.11, 8.8.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-pr99-c33p-fwf6"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/drupal/core/2019-12-18-1.yaml"
+- "https://github.com/drupal/core"
+- "https://www.drupal.org/sa-core-2019-009"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+uuid: "a74c0d68-4a10-4370-9867-b1a4f17fed92"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

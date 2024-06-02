@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-8v5x-6vv5-jv4g"
+identifiers:
+- "GHSA-8v5x-6vv5-jv4g"
+package_slug: "packagist/amphp/http"
+title: "amphp/http Host Header Injection vulnerability"
+description: "amphp/http versions before 1.0.1 allows an attacker to supply invalid
+  input in the Host header which may lead to various type of Host header injection
+  attacks."
+date: "2024-05-15"
+pubdate: "2024-05-15"
+affected_range: "<1.0.1"
+fixed_versions:
+- "1.0.1"
+affected_versions: "All versions before 1.0.1"
+not_impacted: "All versions starting from 1.0.1"
+solution: "Upgrade to version 1.0.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-8v5x-6vv5-jv4g"
+- "https://github.com/amphp/http/pull/4"
+- "https://github.com/amphp/http/commit/16e465fa82555104d1cff98cb8e412295a380214"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/amphp/http/2018-03-15.yaml"
+- "https://github.com/amphp/http"
+- "https://github.com/amphp/http/releases/tag/v1.0.1"
+uuid: "09546466-8e38-407a-a1c0-64dd20c6a1e9"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

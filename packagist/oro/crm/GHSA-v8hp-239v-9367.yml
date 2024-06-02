@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-v8hp-239v-9367"
+identifiers:
+- "GHSA-v8hp-239v-9367"
+package_slug: "packagist/oro/crm"
+title: "OroCRM Forced Redirect to External Website"
+description: "OroCRM is prone to open redirection which could allow attackers to redirect
+  users to external website."
+date: "2024-05-20"
+pubdate: "2024-05-20"
+affected_range: ">=1.7.0 <1.7.4"
+fixed_versions:
+- "1.7.4"
+affected_versions: "All versions starting from 1.7.0 before 1.7.4"
+not_impacted: "All versions before 1.7.0, all versions starting from 1.7.4"
+solution: "Upgrade to version 1.7.4 or above."
+urls:
+- "https://github.com/advisories/GHSA-v8hp-239v-9367"
+- "https://github.com/oroinc/crm/commit/f86a959dcd77af09e7a5a5930a60cf409924a2be"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/oro/crm/2015-07-08.yaml"
+- "https://github.com/oroinc/crm"
+- "https://oroinc.com/orocrm/blog/orocrm-security-announcement"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+uuid: "80e8870c-40c8-405c-9ab1-2b53b161e726"
+cwe_ids:
+- "CWE-601"
+- "CWE-937"
+- "CWE-1035"

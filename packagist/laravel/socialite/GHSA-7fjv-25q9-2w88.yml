@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-7fjv-25q9-2w88"
+identifiers:
+- "GHSA-7fjv-25q9-2w88"
+package_slug: "packagist/laravel/socialite"
+title: "State Guessing Vulnerability in laravel/socialite"
+description: "laravel/socialite versions prior to 2.0.10 are susceptible to a security
+  vulnerability related to state guessing during OAuth authentication. This vulnerability
+  could potentially lead to session hijacking, allowing attackers to compromise user
+  sessions. The issue has been addressed and fixed in version 2.0.10."
+date: "2024-05-15"
+pubdate: "2024-05-15"
+affected_range: ">=1.0.0 <2.0.10"
+fixed_versions:
+- "2.0.10"
+affected_versions: "All versions starting from 1.0.0 before 2.0.10"
+not_impacted: "All versions before 1.0.0, all versions starting from 2.0.10"
+solution: "Upgrade to version 2.0.10 or above."
+urls:
+- "https://github.com/advisories/GHSA-7fjv-25q9-2w88"
+- "https://github.com/laravel/socialite/pull/93"
+- "https://github.com/laravel/socialite/commit/3d9ed9f4703de82a89541e2458f64de348a60a99"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/laravel/socialite/2015-08-03.yaml"
+- "https://github.com/laravel/socialite"
+uuid: "ea3c93bd-4b14-4c93-9861-f0a4099538e7"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-mmcv-fvq8-r9x3"
+identifiers:
+- "GHSA-mmcv-fvq8-r9x3"
+package_slug: "packagist/symfony/symfony"
+title: "Symfony XML decoding attack vector through external entities"
+description: "The XMLEncoder component of Symfony 2.0.x fails to disable external
+  entities when parsing XML. In the Symfony2 framework the XML class may be used to
+  deserialize objects or as part of a client/server API. By using external entities
+  it is possible to include arbitrary files from the file system."
+date: "2024-05-30"
+pubdate: "2024-05-30"
+affected_range: ">=2.0.0 <2.0.11"
+fixed_versions:
+- "2.0.11"
+affected_versions: "All versions starting from 2.0.0 before 2.0.11"
+not_impacted: "All versions before 2.0.0, all versions starting from 2.0.11"
+solution: "Upgrade to version 2.0.11 or above."
+urls:
+- "https://github.com/advisories/GHSA-mmcv-fvq8-r9x3"
+- "https://github.com/symfony/symfony/commit/3e64d36cbdc34acaa82e0e6318112cd2eacb6fec"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/symfony/symfony/2012-02-24.yaml"
+- "https://github.com/symfony/symfony"
+- "https://symfony.com/blog/security-release-symfony-2-0-11-released"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+uuid: "5fe6e3f5-92f6-4207-a442-09fbf14e0d32"
+cwe_ids:
+- "CWE-502"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-c4c3-j73v-634r"
+identifiers:
+- "GHSA-c4c3-j73v-634r"
+package_slug: "packagist/silverstripe/framework"
+title: "silverstripe/framework has Cross-site Scripting vulnerability in page history
+  comparison"
+description: "Authenticated user with page edit permission can craft HTML, which when
+  rendered in a page history comparison can execute client scripts."
+date: "2024-05-27"
+pubdate: "2024-05-27"
+affected_range: ">=3.4.0-rc1 <3.4.6||>=3.5.0-rc1 <3.5.4"
+fixed_versions:
+- "3.4.6"
+- "3.5.4"
+affected_versions: "All versions starting from 3.4.0-rc1 before 3.4.6, all versions
+  starting from 3.5.0-rc1 before 3.5.4"
+not_impacted: "All versions before 3.4.0-rc1, all versions starting from 3.4.6 before
+  3.5.0-rc1, all versions starting from 3.5.4"
+solution: "Upgrade to versions 3.4.6, 3.5.4 or above."
+urls:
+- "https://github.com/advisories/GHSA-c4c3-j73v-634r"
+- "https://github.com/silverstripe/silverstripe-framework/commit/2b72c0f73b668ddf7c059319da915a6c08652278"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/silverstripe/framework/SS-2017-004-1.yaml"
+- "https://github.com/silverstripe/silverstripe-framework"
+- "https://www.silverstripe.org/download/security-releases/ss-2017-004"
+uuid: "605ba5a6-335a-45f0-bd85-73497e9d3b14"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-mcfc-67vm-j568"
+identifiers:
+- "GHSA-mcfc-67vm-j568"
+package_slug: "packagist/magento/community-edition"
+title: "Magento Cross-Site Scripting (XSS) vulnerability"
+description: "Magento Commerce and Open Source 2.2.6 and 2.1.15 contain multiple security
+  enhancements that help close Cross-Site Scripting (XSS) and other vulnerabilities."
+date: "2024-05-15"
+pubdate: "2024-05-15"
+affected_range: ">=2.1 <2.1.15||>=2.2 <2.2.6"
+fixed_versions:
+- "2.1.15"
+- "2.2.6"
+affected_versions: "All versions starting from 2.1 before 2.1.15, all versions starting
+  from 2.2 before 2.2.6"
+not_impacted: "All versions before 2.1, all versions starting from 2.1.15 before 2.2,
+  all versions starting from 2.2.6"
+solution: "Upgrade to versions 2.1.15, 2.2.6 or above."
+urls:
+- "https://github.com/advisories/GHSA-mcfc-67vm-j568"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/magento/product-community-edition/2018-09-10.yaml"
+- "https://github.com/magento/magento2"
+- "https://web.archive.org/web/20210802082439/https://magento.com/security/patches/magento-2.2.6-and-2.1.15-security-update"
+uuid: "1c66dff5-492f-4c68-96d8-9a2c94f0ae63"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

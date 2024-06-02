@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-75mx-chcf-2q32"
+identifiers:
+- "GHSA-75mx-chcf-2q32"
+package_slug: "packagist/typo3/cms"
+title: "TYPO3 Cross-Site Scripting vulnerability in typolinks"
+description: "All link fields within the TYPO3 installation are vulnerable to Cross-Site
+  Scripting as authorized editors can insert javascript commands by using the url
+  scheme `javascript:`."
+date: "2024-05-30"
+pubdate: "2024-05-30"
+affected_range: ">=6.2.0 <6.2.16||>=7.0.0 <7.6.1"
+fixed_versions:
+- "6.2.16"
+- "7.6.1"
+affected_versions: "All versions starting from 6.2.0 before 6.2.16, all versions starting
+  from 7.0.0 before 7.6.1"
+not_impacted: "All versions before 6.2.0, all versions starting from 6.2.16 before
+  7.0.0, all versions starting from 7.6.1"
+solution: "Upgrade to versions 6.2.16, 7.6.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-75mx-chcf-2q32"
+- "https://github.com/TYPO3/typo3/commit/25a1473907f0f4b2bb0147c661981940c57a4555"
+- "https://github.com/TYPO3/typo3/commit/de1755a6dcff9b037c6d5a1fa340ba100aff054a"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/typo3/cms/2015-12-15-2.yaml"
+- "https://github.com/TYPO3/typo3"
+- "https://typo3.org/security/advisory/typo3-core-sa-2015-012"
+- "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2015-012"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+uuid: "94b45376-4ddd-4712-8683-fd4e1e287147"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

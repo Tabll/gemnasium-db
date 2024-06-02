@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-qvwg-c35p-rqhj"
+identifiers:
+- "GHSA-qvwg-c35p-rqhj"
+package_slug: "packagist/wwbn/avideo"
+title: "Duplicate Advisory: AVideo cross-site scripting vulnerability in the view/about.php
+  page"
+description: "## Duplicate Advisory\nThis advisory has been withdrawn because it is
+  a duplicate of GHSA-f98p-2hc5-fm7v. This link is maintained to preserve external
+  references.\n\n## Original Description\nWWBN AVideo 12.4 is vulnerable to Cross
+  Site Scripting (XSS)."
+date: "2024-05-20"
+pubdate: "2024-05-14"
+affected_range: "<14.3"
+fixed_versions:
+- "14.3"
+affected_versions: "All versions before 14.3"
+not_impacted: "All versions starting from 14.3"
+solution: "Upgrade to version 14.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-qvwg-c35p-rqhj"
+- "https://nvd.nist.gov/vuln/detail/CVE-2024-34899"
+- "https://hackerdna.com/courses/cve/cve-2024-34899"
+uuid: "908d338d-1108-4ef8-b62a-e56784532243"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

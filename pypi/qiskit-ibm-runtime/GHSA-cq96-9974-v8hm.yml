@@ -10,7 +10,7 @@ description: "An `eval()` method exists `Options._get_program_inputs`. This is b
   now or at a later time."
 date: "2024-03-20"
 pubdate: "2024-03-20"
-affected_range: ">=0.11.0 <0.11.1"
+affected_range: ">=0.11.0,<0.11.1"
 fixed_versions:
 - "0.11.1"
 affected_versions: "All versions starting from 0.11.0 before 0.11.1"

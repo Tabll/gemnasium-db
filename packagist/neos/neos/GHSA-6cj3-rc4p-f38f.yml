@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-6cj3-rc4p-f38f"
+identifiers:
+- "GHSA-6cj3-rc4p-f38f"
+package_slug: "packagist/neos/neos"
+title: "Cross-site Scripting vulnerabilities in Neos"
+description: "It has been discovered that Neos is vulnerable to several XSS attacks.
+  Through these vulnerabilities, an attacker could tamper with page rendering, redirect
+  victims to a fake login page, or capture user credentials (such as cookies). With
+  the potential backdoor upload an attacker could gain access to the server itself,
+  to an extent mainly limited by the server setup."
+date: "2024-05-17"
+pubdate: "2024-05-17"
+affected_range: ">=1.2.0 <1.2.13||>=2.0.0 <2.0.4"
+fixed_versions:
+- "1.2.13"
+- "2.0.4"
+affected_versions: "All versions starting from 1.2.0 before 1.2.13, all versions starting
+  from 2.0.0 before 2.0.4"
+not_impacted: "All versions before 1.2.0, all versions starting from 1.2.13 before
+  2.0.0, all versions starting from 2.0.4"
+solution: "Upgrade to versions 1.2.13, 2.0.4 or above."
+urls:
+- "https://github.com/advisories/GHSA-6cj3-rc4p-f38f"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/neos/neos/2015-11-23.yaml"
+- "https://github.com/neos/neos"
+- "https://www.neos.io/blog/neos-sa-2015-002.html"
+uuid: "d3d8832d-ec4e-4b0c-a305-66a032fea1c8"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

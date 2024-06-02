@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-g49q-jw42-6x85"
+identifiers:
+- "GHSA-g49q-jw42-6x85"
+package_slug: "npm/thelounge"
+title: "thelounge may publicly disclose of all usernames/idents via port 113"
+description: "Per RFC 1413, The unique identifying tuple includes not only the ports,
+  but also the both addresses. Without the addresses, the information becomes both
+  non-unique and public:\n- If multiple connections happen to use the same local port
+  number (which is possible if the addresses differ), the username of the first is
+  returned for all, resulting in the wrong ident for all but the first.\n- By not
+  checking the connection address, the information becomes public. Because there is
+  only a relatively small number of local ports, and the remote ports are likely to
+  be either 6667 or 6697, it becomes trivial to scan the entire range to get a list
+  of idents.\n\nTo prevent this from happening, disable identd or upgrade to a non
+  vulnerable version."
+date: "2024-05-09"
+pubdate: "2024-05-09"
+affected_range: "<=4.4.3"
+fixed_versions: []
+affected_versions: "All versions up to 4.4.3"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-g49q-jw42-6x85"
+- "https://github.com/thelounge/thelounge/security/advisories/GHSA-g49q-jw42-6x85"
+- "https://github.com/thelounge/thelounge/pull/4872"
+- "https://github.com/thelounge/thelounge"
+uuid: "666e1449-aecf-4d53-b609-2ec5efaddefd"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

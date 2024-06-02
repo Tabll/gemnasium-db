@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-g6f5-4w43-2x63"
+identifiers:
+- "GHSA-g6f5-4w43-2x63"
+package_slug: "packagist/socalnick/scn-social-auth"
+title: "ScnSocialAuth Cross-site Scripting vulnerability in login redirect param"
+description: "ScnSocialAuth version 1.15.2 has been released and includes a security
+  for this vulnerability. Fix has been applied in https://github.com/SocalNick/ScnSocialAuth/commit/4a00966c41bc37251586d007564c5c891eba3700"
+date: "2024-05-29"
+pubdate: "2024-05-29"
+affected_range: "<1.15.2"
+fixed_versions:
+- "1.15.2"
+affected_versions: "All versions before 1.15.2"
+not_impacted: "All versions starting from 1.15.2"
+solution: "Upgrade to version 1.15.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-g6f5-4w43-2x63"
+- "https://github.com/socalnick/scnsocialauth/issues/184"
+- "https://github.com/SocalNick/ScnSocialAuth/commit/4a00966c41bc37251586d007564c5c891eba3700"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/socalnick/scn-social-auth/2015-01-15.yaml"
+- "https://github.com/SocalNick/ScnSocialAuth/commit"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+uuid: "cd881ab1-4d31-4397-9935-5691caa3dd2c"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"
