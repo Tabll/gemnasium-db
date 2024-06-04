@@ -1,0 +1,26 @@
+---
+identifier: "GHSA-qrxh-46mr-pr7q"
+identifiers:
+- "GHSA-qrxh-46mr-pr7q"
+package_slug: "packagist/typo3/cms"
+title: "TYPO3 is susceptible to Cross-Site Flashing"
+description: "The flashplayer misses to validate flash and image files. Therefore
+  it is possible to embed flash videos from external domains."
+date: "2024-06-03"
+pubdate: "2024-06-03"
+affected_range: ">=6.2.0 <6.2.16"
+fixed_versions:
+- "6.2.16"
+affected_versions: "All versions starting from 6.2.0 before 6.2.16"
+not_impacted: "All versions before 6.2.0, all versions starting from 6.2.16"
+solution: "Upgrade to version 6.2.16 or above."
+urls:
+- "https://github.com/advisories/GHSA-qrxh-46mr-pr7q"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/typo3/cms/2015-12-15-4.yaml"
+- "https://github.com/TYPO3/typo3"
+- "https://typo3.org/security/advisory/typo3-core-sa-2015-014"
+- "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2015-014"
+uuid: "1567323a-0fb8-4dbd-8d41-d628f3ae9e4e"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-9895-53fc-98v2"
+identifiers:
+- "GHSA-9895-53fc-98v2"
+package_slug: "packagist/typo3/cms"
+title: "TYPO3 SQL Injection in dbal"
+description: "A flaw in the database escaping API results in a SQL injection vulnerability
+  when extension dbal is enabled and configured for MySQL passthrough mode in its
+  extension configuration. All queries which use the DatabaseConnection::sql_query
+  are vulnerable, even if arguments were properly escaped with DatabaseConnection::quoteStr
+  beforehand."
+date: "2024-06-03"
+pubdate: "2024-06-03"
+affected_range: ">=6.2.0 <6.2.18"
+fixed_versions:
+- "6.2.18"
+affected_versions: "All versions starting from 6.2.0 before 6.2.18"
+not_impacted: "All versions before 6.2.0, all versions starting from 6.2.18"
+solution: "Upgrade to version 6.2.18 or above."
+urls:
+- "https://github.com/advisories/GHSA-9895-53fc-98v2"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/typo3/cms/2016-02-16-1.yaml"
+- "https://typo3.org/article/typo3-core-sa-2016-001"
+uuid: "02f894b1-e14f-4948-a36f-ed0184f8d4c7"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

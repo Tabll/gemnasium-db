@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-6fc6-cj2j-h22x"
+identifiers:
+- "GHSA-6fc6-cj2j-h22x"
+package_slug: "packagist/typo3/cms"
+title: "TYPO3 Multiple Cross-Site Scripting vulnerabilities in frontend"
+description: "Failing to properly encode editor input, several frontend components
+  are susceptible to Cross-Site Scripting, allowing authenticated editors to inject
+  arbitrary HTML."
+date: "2024-06-03"
+pubdate: "2024-06-03"
+affected_range: ">=6.2.0 <6.2.16||>=7.0.0 <7.6.1"
+fixed_versions:
+- "6.2.16"
+- "7.6.1"
+affected_versions: "All versions starting from 6.2.0 before 6.2.16, all versions starting
+  from 7.0.0 before 7.6.1"
+not_impacted: "All versions before 6.2.0, all versions starting from 6.2.16 before
+  7.0.0, all versions starting from 7.6.1"
+solution: "Upgrade to versions 6.2.16, 7.6.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-6fc6-cj2j-h22x"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/typo3/cms/2015-12-15-3.yaml"
+- "https://typo3.org/security/advisory/typo3-core-sa-2015-013"
+- "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2015-013"
+uuid: "0d4eea61-2495-4df5-9d44-8d50cdf8e18c"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

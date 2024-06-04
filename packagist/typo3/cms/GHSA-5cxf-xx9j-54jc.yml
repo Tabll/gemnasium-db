@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-5cxf-xx9j-54jc"
+identifiers:
+- "GHSA-5cxf-xx9j-54jc"
+package_slug: "packagist/typo3/cms"
+title: "Multiple Cross-Site Scripting vulnerabilities in TYPO3 backend"
+description: "Failing to properly encode user input, several backend components are
+  susceptible to Cross-Site Scripting, allowing authenticated editors to inject arbitrary
+  HTML or JavaScript."
+date: "2024-06-03"
+pubdate: "2024-06-03"
+affected_range: ">=6.2.0 <6.2.16||>=7.0.0 <7.6.1"
+fixed_versions:
+- "6.2.16"
+- "7.6.1"
+affected_versions: "All versions starting from 6.2.0 before 6.2.16, all versions starting
+  from 7.0.0 before 7.6.1"
+not_impacted: "All versions before 6.2.0, all versions starting from 6.2.16 before
+  7.0.0, all versions starting from 7.6.1"
+solution: "Upgrade to versions 6.2.16, 7.6.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-5cxf-xx9j-54jc"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/typo3/cms/2015-12-15-1.yaml"
+- "https://typo3.org/security/advisory/typo3-core-sa-2015-011"
+- "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2015-011"
+uuid: "a6aadc26-b287-441b-a5f1-655b1bfadaa3"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-wh8q-72cp-p5wf"
+identifiers:
+- "GHSA-wh8q-72cp-p5wf"
+package_slug: "packagist/typo3/cms"
+title: "Cross-Site Scripting in TYPO3 component Indexed Search"
+description: "Failing to properly encode editor input, the search result view of indexed_search
+  is susceptible to Cross-Site Scripting, allowing authenticated editors to inject
+  arbitrary HTML."
+date: "2024-06-03"
+pubdate: "2024-06-03"
+affected_range: ">=6.2.0 <6.2.16"
+fixed_versions:
+- "6.2.16"
+affected_versions: "All versions starting from 6.2.0 before 6.2.16"
+not_impacted: "All versions before 6.2.0, all versions starting from 6.2.16"
+solution: "Upgrade to version 6.2.16 or above."
+urls:
+- "https://github.com/advisories/GHSA-wh8q-72cp-p5wf"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/typo3/cms/2015-12-15-5.yaml"
+- "https://github.com/TYPO3/typo3"
+- "https://typo3.org/security/advisory/typo3-core-sa-2015-015"
+- "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2015-015"
+uuid: "d750741a-9643-4a61-aed1-13ae8415e91c"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"
