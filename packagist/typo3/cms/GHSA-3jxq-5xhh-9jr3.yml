@@ -1,0 +1,25 @@
+---
+identifier: "GHSA-3jxq-5xhh-9jr3"
+identifiers:
+- "GHSA-3jxq-5xhh-9jr3"
+package_slug: "packagist/typo3/cms"
+title: "Cross-Site Scripting (XSS) in TYPO3 component Backend"
+description: "Failing to properly encode incoming data, the bookmark toolbar is susceptible
+  to Cross-Site Scripting."
+date: "2024-06-04"
+pubdate: "2024-06-04"
+affected_range: ">=6.2.0 <6.2.19"
+fixed_versions:
+- "6.2.19"
+affected_versions: "All versions starting from 6.2.0 before 6.2.19"
+not_impacted: "All versions before 6.2.0, all versions starting from 6.2.19"
+solution: "Upgrade to version 6.2.19 or above."
+urls:
+- "https://github.com/advisories/GHSA-3jxq-5xhh-9jr3"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/typo3/cms/2016-02-23-2.yaml"
+- "https://github.com/TYPO3/typo3"
+- "https://typo3.org/security/advisory/typo3-core-sa-2016-006"
+uuid: "3786a19f-d352-42e2-9779-ae778d974b71"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

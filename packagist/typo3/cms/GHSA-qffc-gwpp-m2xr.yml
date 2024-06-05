@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-qffc-gwpp-m2xr"
+identifiers:
+- "GHSA-qffc-gwpp-m2xr"
+package_slug: "packagist/typo3/cms"
+title: "XML External Entity (XXE) Processing in TYPO3 Core"
+description: "All XML processing within the TYPO3 CMS are vulnerable to XEE processing.
+  This can lead to load internal and/or external (file) content within an XML structure.
+  Furthermore it is possible to inject arbitrary files for an XML Denial of Service
+  attack. For more information on that topic see https://www.owasp.org/index.php/XML_External_Entity_(XXE)_Processing."
+date: "2024-06-04"
+pubdate: "2024-06-04"
+affected_range: ">=6.2.0 <6.2.19||>=7.6.0 <7.6.4"
+fixed_versions:
+- "6.2.19"
+- "7.6.4"
+affected_versions: "All versions starting from 6.2.0 before 6.2.19, all versions starting
+  from 7.6.0 before 7.6.4"
+not_impacted: "All versions before 6.2.0, all versions starting from 6.2.19 before
+  7.6.0, all versions starting from 7.6.4"
+solution: "Upgrade to versions 6.2.19, 7.6.4 or above."
+urls:
+- "https://github.com/advisories/GHSA-qffc-gwpp-m2xr"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/typo3/cms/2016-02-23-1.yaml"
+- "https://typo3.org/security/advisory/typo3-core-sa-2016-005"
+uuid: "cc7ba982-09fd-4887-b675-52b10955482e"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

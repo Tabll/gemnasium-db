@@ -1,0 +1,26 @@
+---
+identifier: "GHSA-wrpf-2x8h-82gr"
+identifiers:
+- "GHSA-wrpf-2x8h-82gr"
+package_slug: "packagist/typo3/cms"
+title: "Typo3 Arbitrary File Disclosure in Form Component"
+description: "Failing to properly validate user input, the form component is susceptible
+  to Arbitrary File Disclosure. A valid backend user account is needed to exploit
+  this vulnerability. Only forms are vulnerable, which contain upload fields."
+date: "2024-06-04"
+pubdate: "2024-06-04"
+affected_range: ">=6.2.0 <6.2.20"
+fixed_versions:
+- "6.2.20"
+affected_versions: "All versions starting from 6.2.0 before 6.2.20"
+not_impacted: "All versions before 6.2.0, all versions starting from 6.2.20"
+solution: "Upgrade to version 6.2.20 or above."
+urls:
+- "https://github.com/advisories/GHSA-wrpf-2x8h-82gr"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/typo3/cms/2016-04-12-2.yaml"
+- "https://typo3.org/security/advisory/typo3-core-sa-2016-010"
+uuid: "70a2b110-0d01-4534-baa9-fd0ae17ece98"
+cwe_ids:
+- "CWE-200"
+- "CWE-937"
+- "CWE-1035"
