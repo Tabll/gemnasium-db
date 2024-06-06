@@ -1,0 +1,37 @@
+---
+identifier: "GHSA-r6mm-wmhf-849m"
+identifiers:
+- "GHSA-r6mm-wmhf-849m"
+package_slug: "packagist/typo3/flow"
+title: "Time-Based Information Disclosure Vulnerability in Flow"
+description: "The PersistedUsernamePasswordProvider was prone to a information disclosure
+  of account existance based on timing attacks as the hashing of passwords was only
+  done in case an account was found. We changed the core so that the provider always
+  does a password comparison in case credentials were submitted at all."
+date: "2024-06-05"
+pubdate: "2024-06-05"
+affected_range: ">=2.3.0 <2.3.16||>=3.0.0 <3.0.10||>=3.1.0 <3.1.7||>=3.2.0 <3.2.7||>=3.3.0
+  <3.3.5"
+fixed_versions:
+- "2.3.16"
+- "3.0.10"
+- "3.1.7"
+- "3.2.7"
+- "3.3.5"
+affected_versions: "All versions starting from 2.3.0 before 2.3.16, all versions starting
+  from 3.0.0 before 3.0.10, all versions starting from 3.1.0 before 3.1.7, all versions
+  starting from 3.2.0 before 3.2.7, all versions starting from 3.3.0 before 3.3.5"
+not_impacted: "All versions before 2.3.0, all versions starting from 2.3.16 before
+  3.0.0, all versions starting from 3.0.10 before 3.1.0, all versions starting from
+  3.1.7 before 3.2.0, all versions starting from 3.2.7 before 3.3.0, all versions
+  starting from 3.3.5"
+solution: "Upgrade to versions 2.3.16, 3.0.10, 3.1.7, 3.2.7, 3.3.5 or above."
+urls:
+- "https://github.com/advisories/GHSA-r6mm-wmhf-849m"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/typo3/flow/2016-11-01.yaml"
+- "https://github.com/neos/flow"
+- "https://www.neos.io/blog/flow-sa-2016-001.html"
+uuid: "786b156a-8f48-41be-bcca-0947e710a2c3"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

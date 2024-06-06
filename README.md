@@ -117,6 +117,7 @@ packagist
 pypi
 nuget
 conan
+swift
 ```
 
 These correspond to:
@@ -129,6 +130,7 @@ These correspond to:
 - Python packages from [pypi.org](https://pypi.org/)
 - Nuget packages from [nuget.org](https://www.nuget.org/)
 - Conan packages from [conan.io](https://conan.io/center/)
+- Swift from source code hosting services such as `gitlab.com` or `github.com`
 
 For npm packages, the package name may include a [npm scope](https://docs.npmjs.com/misc/scope).
 For instance, the package slug of [@babel/cli](https://www.npmjs.com/package/@babel/cli) is:
@@ -224,6 +226,7 @@ The syntax to be used in `affected_range` depends on the package type:
 - `go`: [go semver](https://godoc.org/golang.org/x/tools/internal/semver)
 - `nuget`: [NuGet semver](https://docs.microsoft.com/en-us/nuget/concepts/package-versioning)
 - `conan`: [node-semver flavour](https://github.com/npm/node-semver#ranges)
+- `swift`: [node-semver flavour](https://github.com/npm/node-semver#ranges)
 
 
 The YAML schema also supports temporary fields. All temporary field names start with

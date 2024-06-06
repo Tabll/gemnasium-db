@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-g4pf-3jvq-2gcw"
+identifiers:
+- "GHSA-g4pf-3jvq-2gcw"
+package_slug: "packagist/typo3/cms"
+title: "TYPO3 Remote Code Execution in third party library swiftmailer"
+description: "TYPO3 uses the package swiftmailer/swiftmailer for mail actions. This
+  package is known to be vulnerable to Remote Code Execution."
+date: "2024-06-05"
+pubdate: "2024-06-05"
+affected_range: ">=6.2.0 <6.2.30||>=7.6.0 <7.6.15||>=8.0.0 <8.5.1"
+fixed_versions:
+- "6.2.30"
+- "7.6.15"
+- "8.5.1"
+affected_versions: "All versions starting from 6.2.0 before 6.2.30, all versions starting
+  from 7.6.0 before 7.6.15, all versions starting from 8.0.0 before 8.5.1"
+not_impacted: "All versions before 6.2.0, all versions starting from 6.2.30 before
+  7.6.0, all versions starting from 7.6.15 before 8.0.0, all versions starting from
+  8.5.1"
+solution: "Upgrade to versions 6.2.30, 7.6.15, 8.5.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-g4pf-3jvq-2gcw"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/typo3/cms/2017-01-03-1.yaml"
+- "https://github.com/TYPO3/typo3"
+- "https://typo3.org/security/advisory/typo3-core-sa-2017-001"
+uuid: "3ea38843-fd70-4379-9429-cfd1ac01cd99"
+cwe_ids:
+- "CWE-94"
+- "CWE-937"
+- "CWE-1035"

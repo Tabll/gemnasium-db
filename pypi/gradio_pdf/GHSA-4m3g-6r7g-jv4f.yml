@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-4m3g-6r7g-jv4f"
+identifiers:
+- "GHSA-4m3g-6r7g-jv4f"
+package_slug: "pypi/gradio_pdf"
+title: "Arbitrary JavaScript execution due to using outdated libraries"
+description: "gradio-pdf projects with dependencies on the pdf.js library are vulnerable
+  to CVE-2024-4367, which allows arbitrary JavaScript execution."
+date: "2024-06-05"
+pubdate: "2024-06-05"
+affected_range: "<0.0.10"
+fixed_versions:
+- "0.0.10"
+affected_versions: "All versions before 0.0.10"
+not_impacted: "All versions starting from 0.0.10"
+solution: "Upgrade to version 0.0.10 or above."
+urls:
+- "https://github.com/advisories/GHSA-4m3g-6r7g-jv4f"
+- "https://github.com/freddyaboulton/gradio-pdf/security/advisories/GHSA-4m3g-6r7g-jv4f"
+- "https://github.com/freddyaboulton/gradio-pdf/commit/67edd0c625fae7b855186727ee9678297602ee45"
+- "https://github.com/freddyaboulton/gradio-pdf"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:L/I:N/A:N"
+uuid: "fa9d726b-f558-4acc-a434-5d052b654877"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

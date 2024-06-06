@@ -1,0 +1,25 @@
+---
+identifier: "GHSA-mh3r-6cp5-hc2j"
+identifiers:
+- "GHSA-mh3r-6cp5-hc2j"
+package_slug: "packagist/typo3/cms"
+title: "Authentication Bypass in TYPO3 Frontend"
+description: "Due to late TCA initialization the authentication service fails to restrict
+  frontend user according to the validation rules. Therefore it is possible to authenticate
+  restricted (e.g. disabled) frontend users."
+date: "2024-06-05"
+pubdate: "2024-06-05"
+affected_range: ">=8.2.0 <8.6.1"
+fixed_versions:
+- "8.6.1"
+affected_versions: "All versions starting from 8.2.0 before 8.6.1"
+not_impacted: "All versions before 8.2.0, all versions starting from 8.6.1"
+solution: "Upgrade to version 8.6.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-mh3r-6cp5-hc2j"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/typo3/cms/2017-02-28-1.yaml"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N"
+uuid: "6d1feada-25b3-4362-9ae2-cdbf7cdc0c2f"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

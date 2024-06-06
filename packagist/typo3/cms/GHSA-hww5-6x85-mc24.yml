@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-hww5-6x85-mc24"
+identifiers:
+- "GHSA-hww5-6x85-mc24"
+package_slug: "packagist/typo3/cms"
+title: "Typo3 Arbitrary Code Execution and Cross-Site Scripting in Backend API"
+description: "Backend API configuration using Page TSconfig is vulnerable to arbitrary
+  code execution and cross-site scripting. TSconfig fields of page properties in backend
+  forms can be used to inject malicious sequences. Field tsconfig_includes is vulnerable
+  to directory traversal leading to same scenarios as having direct access to TSconfig
+  settings.\n\nA valid backend user account having access to modify values for fields
+  pages.TSconfig and pages.tsconfig_includes is needed in order to exploit this vulnerability."
+date: "2024-06-05"
+pubdate: "2024-06-05"
+affected_range: ">=8.0.0 <8.7.27||>=9.0.0 <9.5.8"
+fixed_versions:
+- "8.7.27"
+- "9.5.8"
+affected_versions: "All versions starting from 8.0.0 before 8.7.27, all versions starting
+  from 9.0.0 before 9.5.8"
+not_impacted: "All versions before 8.0.0, all versions starting from 8.7.27 before
+  9.0.0, all versions starting from 9.5.8"
+solution: "Upgrade to versions 8.7.27, 9.5.8 or above."
+urls:
+- "https://github.com/advisories/GHSA-hww5-6x85-mc24"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/typo3/cms/2019-06-25-4.yaml"
+- "https://typo3.org/security/advisory/typo3-core-sa-2019-019"
+uuid: "92686280-c73f-457c-9a4e-9fef6ae62296"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

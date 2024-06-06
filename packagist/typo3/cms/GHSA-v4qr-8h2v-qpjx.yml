@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-v4qr-8h2v-qpjx"
+identifiers:
+- "GHSA-v4qr-8h2v-qpjx"
+package_slug: "packagist/typo3/cms"
+title: "Cross-Site Scripting in TYPO3 CMS Backend"
+description: "Failing to properly encode user input, backend forms are vulnerable
+  to Cross-Site Scripting. A valid backend user account is needed to exploit this
+  vulnerability."
+date: "2024-06-05"
+pubdate: "2024-06-05"
+affected_range: ">=8.0.0 <8.7.5"
+fixed_versions:
+- "8.7.5"
+affected_versions: "All versions starting from 8.0.0 before 8.7.5"
+not_impacted: "All versions before 8.0.0, all versions starting from 8.7.5"
+solution: "Upgrade to version 8.7.5 or above."
+urls:
+- "https://github.com/advisories/GHSA-v4qr-8h2v-qpjx"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/typo3/cms/2017-09-05-1.yaml"
+- "https://github.com/TYPO3/typo3"
+- "https://typo3.org/security/advisory/typo3-core-sa-2017-004"
+- "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2017-004"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N"
+uuid: "58eb145d-f44b-4f73-af0e-55ccb2627c6c"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

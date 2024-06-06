@@ -1,3 +1,6 @@
+#### [v2.2.0] 2024-06-05
+##### Added
+- Swift support (!28712)
 #### [v2.1.0] 2023-11-13
 ##### Changed
 - `affected_range` can no longer be empty (!26251)

@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-rhc2-23c2-ww7c"
+identifiers:
+- "GHSA-rhc2-23c2-ww7c"
+package_slug: "packagist/aimeos/aimeos-core"
+title: "Remote code execution in web server context"
+description: "User with administrative privileges and upload files that look like
+  images but contain PHP code which can then be executed in the context of the web
+  server."
+date: "2024-06-05"
+pubdate: "2024-06-05"
+affected_range: ">=2024.04.1 <2024.04.5"
+fixed_versions:
+- "2024.04.5"
+affected_versions: "All versions starting from 2024.04.1 before 2024.04.5"
+not_impacted: "All versions before 2024.04.1, all versions starting from 2024.04.5"
+solution: "Upgrade to version 2024.04.5 or above."
+urls:
+- "https://github.com/advisories/GHSA-rhc2-23c2-ww7c"
+- "https://github.com/aimeos/aimeos-core/security/advisories/GHSA-rhc2-23c2-ww7c"
+- "https://github.com/aimeos/aimeos-core"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H"
+uuid: "1cddf493-e08b-4198-aaa8-e7d6dd4758f0"
+cwe_ids:
+- "CWE-73"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-c7p6-3c9c-f88q"
+identifiers:
+- "GHSA-c7p6-3c9c-f88q"
+package_slug: "packagist/typo3/cms"
+title: "Information Disclosure in TYPO3 CMS"
+description: "HTTP requests being performed using the TYPO3 API expose the specific
+  TYPO3 version to the called endpoint."
+date: "2024-06-05"
+pubdate: "2024-06-05"
+affected_range: ">=7.6.0 <7.6.22||>=8.0.0 <8.7.5"
+fixed_versions:
+- "7.6.22"
+- "8.7.5"
+affected_versions: "All versions starting from 7.6.0 before 7.6.22, all versions starting
+  from 8.0.0 before 8.7.5"
+not_impacted: "All versions before 7.6.0, all versions starting from 7.6.22 before
+  8.0.0, all versions starting from 8.7.5"
+solution: "Upgrade to versions 7.6.22, 8.7.5 or above."
+urls:
+- "https://github.com/advisories/GHSA-c7p6-3c9c-f88q"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/typo3/cms/2017-09-05-3.yaml"
+- "https://github.com/TYPO3/typo3"
+- "https://typo3.org/security/advisory/typo3-core-sa-2017-006"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N"
+uuid: "059f9a3d-7294-466a-b272-3d078bd8263b"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

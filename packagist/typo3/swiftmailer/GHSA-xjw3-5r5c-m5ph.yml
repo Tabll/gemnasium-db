@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-xjw3-5r5c-m5ph"
+identifiers:
+- "GHSA-xjw3-5r5c-m5ph"
+package_slug: "packagist/typo3/swiftmailer"
+title: "typo3 Security fix for Flow Swift Mailer package"
+description: "A remote code execution vulnerability has been found in the Swift Mailer
+  library (swiftmailer/swiftmailer) recently. See this advisory for details. If you
+  are not using the default mail() transport, this particular problem  does not affect
+  you. Upgrading is of course still recommended!"
+date: "2024-06-05"
+pubdate: "2024-06-05"
+affected_range: ">=4.1.0 <4.1.99||>=5.4.0 <5.4.5"
+fixed_versions:
+- "4.1.99"
+- "5.4.5"
+affected_versions: "All versions starting from 4.1.0 before 4.1.99, all versions starting
+  from 5.4.0 before 5.4.5"
+not_impacted: "All versions before 4.1.0, all versions starting from 4.1.99 before
+  5.4.0, all versions starting from 5.4.5"
+solution: "Upgrade to versions 4.1.99, 5.4.5 or above."
+urls:
+- "https://github.com/advisories/GHSA-xjw3-5r5c-m5ph"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/typo3/swiftmailer/2017-01-06.yaml"
+- "https://github.com/neos/swiftmailer"
+- "https://www.neos.io/blog/flow-sa-2017-01.html"
+uuid: "4fbf0d99-bf1d-4304-96ea-3a4f9043112b"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

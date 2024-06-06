@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-g9rv-6g56-65h8"
+identifiers:
+- "GHSA-g9rv-6g56-65h8"
+package_slug: "packagist/typo3/cms"
+title: "Typo3 Security Misconfiguration in User Session Handling"
+description: "When users change their password existing sessions for that particular
+  user account are not revoked. A valid backend or frontend user account is required
+  in order to make use of this vulnerability."
+date: "2024-06-05"
+pubdate: "2024-06-05"
+affected_range: ">=8.0.0 <8.7.25||>=9.0.0 <9.5.6"
+fixed_versions:
+- "8.7.25"
+- "9.5.6"
+affected_versions: "All versions starting from 8.0.0 before 8.7.25, all versions starting
+  from 9.0.0 before 9.5.6"
+not_impacted: "All versions before 8.0.0, all versions starting from 8.7.25 before
+  9.0.0, all versions starting from 9.5.6"
+solution: "Upgrade to versions 8.7.25, 9.5.6 or above."
+urls:
+- "https://github.com/advisories/GHSA-g9rv-6g56-65h8"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/typo3/cms/2019-05-07-2.yaml"
+- "https://github.com/TYPO3/typo3"
+- "https://typo3.org/security/advisory/typo3-core-sa-2019-011"
+uuid: "f08abfa4-e37c-45b1-989c-468c97175f20"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

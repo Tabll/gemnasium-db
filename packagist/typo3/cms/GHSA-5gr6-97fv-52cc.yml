@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-5gr6-97fv-52cc"
+identifiers:
+- "GHSA-5gr6-97fv-52cc"
+package_slug: "packagist/typo3/cms"
+title: "Cross-Site Scripting in TYPO3 CMS"
+description: "Failing to properly encode user input, several places of the TYPO3 CMS
+  are vulnerable to Cross-Site Scripting."
+date: "2024-06-05"
+pubdate: "2024-06-05"
+affected_range: ">=7.6.0 <7.6.16||>=8.0.0 <8.6.1"
+fixed_versions:
+- "7.6.16"
+- "8.6.1"
+affected_versions: "All versions starting from 7.6.0 before 7.6.16, all versions starting
+  from 8.0.0 before 8.6.1"
+not_impacted: "All versions before 7.6.0, all versions starting from 7.6.16 before
+  8.0.0, all versions starting from 8.6.1"
+solution: "Upgrade to versions 7.6.16, 8.6.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-5gr6-97fv-52cc"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/typo3/cms/2017-02-28-2.yaml"
+- "https://github.com/TYPO3/typo3"
+- "https://typo3.org/security/advisory/typo3-core-sa-2017-003"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N"
+uuid: "d136ed9c-9fc5-44d0-8878-ec5d41ef3510"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,26 @@
+---
+identifier: "GHSA-665w-mwrr-77q3"
+identifiers:
+- "GHSA-665w-mwrr-77q3"
+package_slug: "npm/@jmondi/url-to-png"
+title: "Arbitrary file read via Playwright's screenshot feature exploiting file wrapper"
+description: "All users of url-to-png. Please see https://github.com/jasonraimondi/url-to-png/issues/47"
+date: "2024-06-05"
+pubdate: "2024-06-05"
+affected_range: "<2.0.3"
+fixed_versions:
+- "2.0.3"
+affected_versions: "All versions before 2.0.3"
+not_impacted: "All versions starting from 2.0.3"
+solution: "Upgrade to version 2.0.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-665w-mwrr-77q3"
+- "https://github.com/jasonraimondi/url-to-png/security/advisories/GHSA-665w-mwrr-77q3"
+- "https://github.com/jasonraimondi/url-to-png/issues/47"
+- "https://github.com/jasonraimondi/url-to-png"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+uuid: "2638391a-1da0-456e-ae98-cb1c493640e7"
+cwe_ids:
+- "CWE-22"
+- "CWE-937"
+- "CWE-1035"

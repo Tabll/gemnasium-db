@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-v5jp-4h2p-j2p4"
+identifiers:
+- "GHSA-v5jp-4h2p-j2p4"
+package_slug: "packagist/typo3/cms"
+title: "Privilege Escalation in TYPO3 CMS"
+description: "The workspace/ version preview link created by a privileged (backend)
+  user could be abused to obtain certain editing permission, if the admin panel is
+  configured to be shown. A valid preview link is required to exploit this vulnerability."
+date: "2024-06-05"
+pubdate: "2024-06-05"
+affected_range: ">=6.2.0 <6.2.20||>=7.6.0 <7.6.5||>=8.0.0 <8.0.1"
+fixed_versions:
+- "6.2.20"
+- "7.6.5"
+- "8.0.1"
+affected_versions: "All versions starting from 6.2.0 before 6.2.20, all versions starting
+  from 7.6.0 before 7.6.5, all versions starting from 8.0.0 before 8.0.1"
+not_impacted: "All versions before 6.2.0, all versions starting from 6.2.20 before
+  7.6.0, all versions starting from 7.6.5 before 8.0.0, all versions starting from
+  8.0.1"
+solution: "Upgrade to versions 6.2.20, 7.6.5, 8.0.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-v5jp-4h2p-j2p4"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/typo3/cms/2016-04-12-4.yaml"
+- "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2016-012"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N"
+uuid: "6b05bdac-cd35-436e-9b54-608252f2cc41"
+cwe_ids:
+- "CWE-269"
+- "CWE-937"
+- "CWE-1035"

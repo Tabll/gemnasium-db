@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-vpr3-rc99-2wpr"
+identifiers:
+- "GHSA-vpr3-rc99-2wpr"
+package_slug: "packagist/typo3/cms"
+title: "Information Disclosure in TYPO3 Backend"
+description: "The TYPO3 backend module stores the username of an authenticated backend
+  user in its cache files. By guessing the file path to the cache files it is possible
+  to receive valid backend usernames."
+date: "2024-06-05"
+pubdate: "2024-06-05"
+affected_range: ">=6.2.0 <6.2.26||>=7.6.0 <7.6.10||>=8.0.0 <8.2.1"
+fixed_versions:
+- "6.2.26"
+- "7.6.10"
+- "8.2.1"
+affected_versions: "All versions starting from 6.2.0 before 6.2.26, all versions starting
+  from 7.6.0 before 7.6.10, all versions starting from 8.0.0 before 8.2.1"
+not_impacted: "All versions before 6.2.0, all versions starting from 6.2.26 before
+  7.6.0, all versions starting from 7.6.10 before 8.0.0, all versions starting from
+  8.2.1"
+solution: "Upgrade to versions 6.2.26, 7.6.10, 8.2.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-vpr3-rc99-2wpr"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/typo3/cms/2016-07-19-4.yaml"
+- "https://typo3.org/security/advisory/typo3-core-sa-2016-017"
+- "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2016-017"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+uuid: "bc3c87ef-136c-42b7-a999-8f181e717030"
+cwe_ids:
+- "CWE-285"
+- "CWE-937"
+- "CWE-1035"

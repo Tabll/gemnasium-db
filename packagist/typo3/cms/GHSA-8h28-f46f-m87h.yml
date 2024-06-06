@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-8h28-f46f-m87h"
+identifiers:
+- "GHSA-8h28-f46f-m87h"
+package_slug: "packagist/typo3/cms"
+title: "Insecure Deserialization in TYPO3 CMS"
+description: "It has been discovered that the Form Framework (system extension \"form\")
+  is vulnerable to Insecure Deserialization when being used with the additional PHP
+  PECL package “yaml”, which is capable of unserializing YAML contents to PHP objects.
+  A valid backend user account as well as having PHP setting \"yaml.decode_php\" enabled
+  is needed to exploit this vulnerability (which is the default value according to
+  PHP documentation)."
+date: "2024-06-05"
+pubdate: "2024-06-05"
+affected_range: ">=8.5.0 <8.7.17||>=9.0.0 <9.3.2"
+fixed_versions:
+- "8.7.17"
+- "9.3.2"
+affected_versions: "All versions starting from 8.5.0 before 8.7.17, all versions starting
+  from 9.0.0 before 9.3.2"
+not_impacted: "All versions before 8.5.0, all versions starting from 8.7.17 before
+  9.0.0, all versions starting from 9.3.2"
+solution: "Upgrade to versions 8.7.17, 9.3.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-8h28-f46f-m87h"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/typo3/cms/2018-07-12-4.yaml"
+- "https://github.com/TYPO3/typo3"
+- "https://typo3.org/security/advisory/typo3-core-sa-2018-004"
+uuid: "c561f584-3dd0-40cb-b102-428760fd1f42"
+cwe_ids:
+- "CWE-502"
+- "CWE-937"
+- "CWE-1035"

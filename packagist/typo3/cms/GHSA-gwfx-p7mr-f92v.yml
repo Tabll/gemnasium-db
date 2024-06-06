@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-gwfx-p7mr-f92v"
+identifiers:
+- "GHSA-gwfx-p7mr-f92v"
+package_slug: "packagist/typo3/cms"
+title: "Missing Access Check in TYPO3 CMS"
+description: "Extbase request handling fails to implement a proper access check for
+  requested controller/ action combinations, which makes it possible for an attacker
+  to execute arbitrary Extbase actions by crafting a special request. To successfully
+  exploit this vulnerability, an attacker must have access to at least one Extbase
+  plugin or module action in a TYPO3 installation. The missing access check inevitably
+  leads to information disclosure or remote code execution, depending on the action
+  that an attacker is able to execute."
+date: "2024-06-05"
+pubdate: "2024-06-05"
+affected_range: ">=6.2.0 <6.2.25||>=7.6.0 <7.6.8||>=8.0.0 <8.1.1"
+fixed_versions:
+- "6.2.25"
+- "7.6.8"
+- "8.1.1"
+affected_versions: "All versions starting from 6.2.0 before 6.2.25, all versions starting
+  from 7.6.0 before 7.6.8, all versions starting from 8.0.0 before 8.1.1"
+not_impacted: "All versions before 6.2.0, all versions starting from 6.2.25 before
+  7.6.0, all versions starting from 7.6.8 before 8.0.0, all versions starting from
+  8.1.1"
+solution: "Upgrade to versions 6.2.25, 7.6.8, 8.1.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-gwfx-p7mr-f92v"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/typo3/cms/2016-05-24-1.yaml"
+- "https://web.archive.org/web/20160606110438/https://typo3.org/teamssecuritysecurity-bulletins/security-bulletins-single-view/article/missing-access-check-in-typo3-cms"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H"
+uuid: "45da7e85-a122-43e1-a493-c0bbb0c5f8d5"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

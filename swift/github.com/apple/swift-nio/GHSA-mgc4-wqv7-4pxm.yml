@@ -1,0 +1,40 @@
+---
+identifier: "GHSA-mgc4-wqv7-4pxm"
+identifiers:
+- "GHSA-mgc4-wqv7-4pxm"
+package_slug: "swift/github.com/apple/swift-nio"
+title: "SwiftNIO vulnerable to HTTP request smuggling using malformed Transfer-Encoding
+  header"
+description: "Affected SwiftNIO systems are vulnerable to request smuggling attacks,
+  in which they parse a given HTTP message differently from other network parties,
+  potentially seeing a different number of requests than other servers. This can lead
+  to failures of authentication, routing, and other issues.\n\nThis vulnerability
+  can be found in the bundled copy of the Node.JS HTTP parser used in the `NIOHTTP1`
+  module."
+date: "2023-05-18"
+pubdate: "2023-05-18"
+affected_range: ">=1.0.0 <1.14.2||>=2.0.0 <2.13.1"
+fixed_versions:
+- "1.14.2"
+- "2.13.1"
+affected_versions: "All versions starting from 1.0.0 before 1.14.2, all versions starting
+  from 2.0.0 before 2.13.1"
+not_impacted: "All versions before 1.0.0, all versions starting from 1.14.2 before
+  2.0.0, all versions starting from 2.13.1"
+solution: "Upgrade to versions 1.14.2, 2.13.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-mgc4-wqv7-4pxm"
+- "https://github.com/apple/swift-nio/security/advisories/GHSA-mgc4-wqv7-4pxm"
+- "https://github.com/apple/swift-nio/pull/1387"
+- "https://github.com/apple/swift-nio/pull/1388"
+- "https://github.com/apple/swift-nio/commit/8da5c5a4e6c5084c296b9f39dc54f00be146e0fa"
+- "https://github.com/apple/swift-nio/commit/bfde40cac8eca25ce021552513b20ee23fc6e306"
+- "https://github.com/apple/swift-nio/commit/df9390006bce7da1b6273f804d3acbbfdfcc6154"
+- "https://github.com/apple/swift-nio/commit/f94b22b506e3557cb1b325534fa9bbcd39c90246"
+- "https://github.com/apple/swift-nio"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+uuid: "5c5744c6-2aa2-4cb8-9253-b3e4c5d49c1e"
+cwe_ids:
+- "CWE-444"
+- "CWE-937"
+- "CWE-1035"
