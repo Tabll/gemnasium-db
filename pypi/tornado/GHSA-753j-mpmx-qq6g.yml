@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-753j-mpmx-qq6g"
+identifiers:
+- "GHSA-753j-mpmx-qq6g"
+package_slug: "pypi/tornado"
+title: "Inconsistent Interpretation of HTTP Requests ('HTTP Request/Response Smuggling')
+  in tornado"
+description: "When Tornado receives a request with two `Transfer-Encoding: chunked`
+  headers, it ignores them both. This enables request smuggling when Tornado is deployed
+  behind a proxy server that emits such requests. [Pound](https://en.wikipedia.org/wiki/Pound_(networking))
+  does this."
+date: "2024-06-06"
+pubdate: "2024-06-06"
+affected_range: "<6.4.1"
+fixed_versions:
+- "6.4.1"
+affected_versions: "All versions before 6.4.1"
+not_impacted: "All versions starting from 6.4.1"
+solution: "Upgrade to version 6.4.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-753j-mpmx-qq6g"
+- "https://github.com/tornadoweb/tornado/security/advisories/GHSA-753j-mpmx-qq6g"
+- "https://github.com/tornadoweb/tornado/commit/d65f6e71a77f53a1ff0a0dc55704be13f04eb572"
+- "https://github.com/tornadoweb/tornado"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+uuid: "1d813e1b-6615-40b9-a287-bf304f77db19"
+cwe_ids:
+- "CWE-444"
+- "CWE-937"
+- "CWE-1035"

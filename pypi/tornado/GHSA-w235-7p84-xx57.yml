@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-w235-7p84-xx57"
+identifiers:
+- "GHSA-w235-7p84-xx57"
+package_slug: "pypi/tornado"
+title: "Tornado has a CRLF injection in CurlAsyncHTTPClient headers"
+description: "Tornado’s `curl_httpclient.CurlAsyncHTTPClient` class is vulnerable
+  to CRLF (carriage return/line feed) injection in the request headers."
+date: "2024-06-06"
+pubdate: "2024-06-06"
+affected_range: "<6.4.1"
+fixed_versions:
+- "6.4.1"
+affected_versions: "All versions before 6.4.1"
+not_impacted: "All versions starting from 6.4.1"
+solution: "Upgrade to version 6.4.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-w235-7p84-xx57"
+- "https://github.com/tornadoweb/tornado/security/advisories/GHSA-w235-7p84-xx57"
+- "https://github.com/tornadoweb/tornado/commit/7786f09f84c9f3f2012c4cf3878417cb9f053669"
+- "https://github.com/tornadoweb/tornado"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N"
+uuid: "e52b6da6-84bd-4511-8049-156bce5730d9"
+cwe_ids:
+- "CWE-93"
+- "CWE-937"
+- "CWE-1035"
