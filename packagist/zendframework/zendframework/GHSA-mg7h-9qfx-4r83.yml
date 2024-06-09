@@ -1,0 +1,39 @@
+---
+identifier: "GHSA-mg7h-9qfx-4r83"
+identifiers:
+- "GHSA-mg7h-9qfx-4r83"
+package_slug: "packagist/zendframework/zendframework"
+title: "ZendFramework Potential Proxy Injection Vulnerabilities"
+description: "`Zend\\Session\\Validator\\RemoteAddr` and `Zend\\View\\Helper\\ServerUrl`
+  were found to be improperly parsing HTTP headers for proxy information, which could
+  potentially allow an attacker to spoof a proxied IP or host name.\n\nIn `Zend\\Session\\Validator\\RemoteAddr`,
+  if the client is behind a proxy server, the detection of the proxy URL was incorrect,
+  and could lead to invalid results on subsequent lookups.\n\nIn `Zend\\View\\Helper\\ServerUrl`,
+  if the server lives behind a proxy, the helper would always generate a URL based
+  on the proxy host, regardless of whether or not this was desired; additionally,
+  it did not take into account the proxy port or protocol, if provided."
+date: "2024-06-07"
+pubdate: "2024-06-07"
+affected_range: ">=2.0.0 <2.0.5"
+fixed_versions:
+- "2.0.5"
+affected_versions: "All versions starting from 2.0.0 before 2.0.5"
+not_impacted: "All versions before 2.0.0, all versions starting from 2.0.5"
+solution: "Upgrade to version 2.0.5 or above."
+urls:
+- "https://github.com/advisories/GHSA-mg7h-9qfx-4r83"
+- "https://github.com/zendframework/zendframework/commit/1040acaf70d297ec7214934d8ddc3e811d249b5c"
+- "https://github.com/zendframework/zendframework/commit/ad8fdc3378710b7cfbe2a271dbb0e3256cffb599"
+- "https://github.com/zendframework/zendframework/commit/ada1fab92f6d5c7ad96c5a63f3196d925e3f5887"
+- "https://github.com/zendframework/zendframework/commit/b914ecdd4d17ab5b61f15ccdc02a6e9b255b15d8"
+- "https://github.com/zendframework/zendframework/commit/c3819abbf2c9571069c893d27ae6170bda413925"
+- "https://github.com/zendframework/zendframework/commit/cfaf5ea095c93f3e70343358a3a88c3924d7ed7d"
+- "https://framework.zend.com/security/advisory/ZF2012-04"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/zendframework/zendframework/ZF2012-04.yaml"
+- "https://github.com/zendframework/zendframework"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N"
+uuid: "231d36d7-f5f1-4178-9eb0-10c54514096e"
+cwe_ids:
+- "CWE-74"
+- "CWE-937"
+- "CWE-1035"

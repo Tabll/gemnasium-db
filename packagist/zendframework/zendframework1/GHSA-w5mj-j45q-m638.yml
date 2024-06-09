@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-w5mj-j45q-m638"
+identifiers:
+- "GHSA-w5mj-j45q-m638"
+package_slug: "packagist/zendframework/zendframework1"
+title: "ZendFramework1 Potential Security Issues in Bundled Dojo Library"
+description: "In mid-March, 2010, the Dojo Foundation issued a Security Advisory indicating
+  potential security issues with specific files in Dojo Toolkit. Details of the advisory
+  may be found on the Dojo website:\n\nhttp://dojotoolkit.org/blog/post/dylan/2010/03/dojo-security-advisory/\nIn
+  particular, several files in the Dojo tree were identified as having potential exploits,
+  and the Dojo team also advised disabling or removing any PHP scripts in the tree
+  when deploying to production."
+date: "2024-06-07"
+pubdate: "2024-06-07"
+affected_range: ">=1.9.0 <1.9.8||>=1.10.0 <1.10.3"
+fixed_versions:
+- "1.9.8"
+- "1.10.3"
+affected_versions: "All versions starting from 1.9.0 before 1.9.8, all versions starting
+  from 1.10.0 before 1.10.3"
+not_impacted: "All versions before 1.9.0, all versions starting from 1.9.8 before
+  1.10.0, all versions starting from 1.10.3"
+solution: "Upgrade to versions 1.10.3, 1.9.8 or above."
+urls:
+- "https://github.com/advisories/GHSA-w5mj-j45q-m638"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/zendframework/zendframework1/ZF2010-07.yaml"
+- "https://github.com/zendframework/zf1"
+- "https://web.archive.org/web/20210509072723/https://framework.zend.com/security/advisory/ZF2010-07"
+uuid: "9b31b78b-b745-4460-b8bd-18df6c51419f"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

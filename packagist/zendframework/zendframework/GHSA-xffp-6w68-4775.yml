@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-xffp-6w68-4775"
+identifiers:
+- "GHSA-xffp-6w68-4775"
+package_slug: "packagist/zendframework/zendframework"
+title: "Zendframework Remote Address Spoofing Vector in `Zend\\Http\\PhpEnvironment\\RemoteAddress`"
+description: "The `Zend\\Http\\PhpEnvironment\\RemoteAddress` class provides features
+  around detecting the internet protocol (IP) address for an incoming proxied request
+  via the X-Forwarded-For header, taking into account a provided list of trusted proxy
+  server IPs. Prior to 2.2.5, the class was not taking into account whether or not
+  the IP address contained in PHP's `$_SERVER['REMOTE_ADDR']` was in the trusted proxy
+  server list.\n\nThe IETF draft specification indicates that if `$_SERVER['REMOTE_ADDR']`
+  is not a trusted proxy, it must be considered the originating IP address, and the
+  value of X-Forwarded-For must be disregarded."
+date: "2024-06-07"
+pubdate: "2024-06-07"
+affected_range: ">=2.2.0 <2.2.5"
+fixed_versions:
+- "2.2.5"
+affected_versions: "All versions starting from 2.2.0 before 2.2.5"
+not_impacted: "All versions before 2.2.0, all versions starting from 2.2.5"
+solution: "Upgrade to version 2.2.5 or above."
+urls:
+- "https://github.com/advisories/GHSA-xffp-6w68-4775"
+- "https://github.com/zendframework/zendframework/commit/bb6784461d3b23ef1db4be8cf47957ccc3b681ed"
+- "https://framework.zend.com/security/advisory/ZF2013-04"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/zendframework/zendframework/ZF2013-04.yaml"
+- "https://github.com/zendframework/zendframework"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+uuid: "477864b2-e26f-4046-bbd4-a98f5dd74999"
+cwe_ids:
+- "CWE-601"
+- "CWE-937"
+- "CWE-1035"

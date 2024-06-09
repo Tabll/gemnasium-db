@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-g52p-86j5-xr8q"
+identifiers:
+- "GHSA-g52p-86j5-xr8q"
+package_slug: "packagist/zendframework/zendframework1"
+title: "ZendFramework Potential Cross-site Scripting in Development Environment Error
+  View Script"
+description: "The default error handling view script generated using `Zend_Tool` failed
+  to escape request parameters when run in the \"development\" configuration environment,
+  providing a potential XSS attack vector.\n\n`Zend_Tool_Project_Context_Zf_ViewScriptFile`
+  was patched such that the view script template now calls the `escape()` method on
+  dumped request variables.\n\nZend Framework 1.11.4 includes a patch that adds escaping
+  to the generated error/error.phtml view script, ensuring that request variables
+  are escaped appropriately for the browser.\nDo note, however, that this will not
+  update any previously generated code. You will still need to follow the next advice
+  for previously generated error view scripts."
+date: "2024-06-07"
+pubdate: "2024-06-07"
+affected_range: ">=1.0.0 <1.11.4"
+fixed_versions:
+- "1.11.4"
+affected_versions: "All versions starting from 1.0.0 before 1.11.4"
+not_impacted: "All versions before 1.0.0, all versions starting from 1.11.4"
+solution: "Upgrade to version 1.11.4 or above."
+urls:
+- "https://github.com/advisories/GHSA-g52p-86j5-xr8q"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/zendframework/zendframework1/ZF2011-01.yaml"
+- "https://github.com/zendframework/zf1"
+- "https://web.archive.org/web/20210120123405/https://framework.zend.com/security/advisory/ZF2011-01"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+uuid: "426286fc-7d87-473f-bcfc-9f0d4885e3e2"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

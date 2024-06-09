@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-x86x-qhf8-f37w"
+identifiers:
+- "GHSA-x86x-qhf8-f37w"
+package_slug: "packagist/willdurand/js-translation-bundle"
+title: "willdurand/js-translation-bundle potential path traversal attack and remote
+  code injection"
+description: "A path traversal and a javascript code injection vulnerabilities were
+  identified in willdurand/js-translation-bundle versions prior to 2.1.1."
+date: "2024-06-07"
+pubdate: "2024-06-07"
+affected_range: "<2.1.1"
+fixed_versions:
+- "2.1.1"
+affected_versions: "All versions before 2.1.1"
+not_impacted: "All versions starting from 2.1.1"
+solution: "Upgrade to version 2.1.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-x86x-qhf8-f37w"
+- "https://github.com/willdurand/BazingaJsTranslationBundle/commit/7accee93569c3f3d2379f035a41ece66522801fc"
+- "https://github.com/willdurand/BazingaJsTranslationBundle/commit/df6c0fd603c0192ebc5584991a52a1092c5f60bd"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/willdurand/js-translation-bundle/2014-07-29-1.yaml"
+- "https://github.com/willdurand/BazingaJsTranslationBundle"
+- "https://github.com/willdurand/BazingaJsTranslationBundle/releases/tag/v2.1.1"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+uuid: "02968146-c25b-4240-b2c7-72fdfc02bc96"
+cwe_ids:
+- "CWE-22"
+- "CWE-74"
+- "CWE-937"
+- "CWE-1035"

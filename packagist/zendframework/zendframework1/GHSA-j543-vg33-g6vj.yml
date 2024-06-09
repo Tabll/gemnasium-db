@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-j543-vg33-g6vj"
+identifiers:
+- "GHSA-j543-vg33-g6vj"
+package_slug: "packagist/zendframework/zendframework1"
+title: "ZendFramework potential Cross-site Scripting vector in `Zend_Dojo_View_Helper_Editor`"
+description: "`Zend_Dojo_View_Helper_Editor` was incorrectly decorating a TEXTAREA
+  instead of a DIV. The Dojo team has reported that this has security implications
+  as the rich text editor they use is unable to escape content for a TEXTAREA."
+date: "2024-06-07"
+pubdate: "2024-06-07"
+affected_range: ">=1.7.0 <1.7.9||>=1.8.0 <1.8.5||>=1.9.0 <1.9.7"
+fixed_versions:
+- "1.7.9"
+- "1.8.5"
+- "1.9.7"
+affected_versions: "All versions starting from 1.7.0 before 1.7.9, all versions starting
+  from 1.8.0 before 1.8.5, all versions starting from 1.9.0 before 1.9.7"
+not_impacted: "All versions before 1.7.0, all versions starting from 1.7.9 before
+  1.8.0, all versions starting from 1.8.5 before 1.9.0, all versions starting from
+  1.9.7"
+solution: "Upgrade to versions 1.7.9, 1.8.5, 1.9.7 or above."
+urls:
+- "https://github.com/advisories/GHSA-j543-vg33-g6vj"
+- "https://framework.zend.com/security/advisory/ZF2010-02"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/zendframework/zendframework1/ZF2010-02.yaml"
+- "https://github.com/zendframework/zf1"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+uuid: "a8d1f651-eab8-411b-aa0d-fae675a4958f"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

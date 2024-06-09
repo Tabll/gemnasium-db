@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-4j9x-g4x8-vcmf"
+identifiers:
+- "GHSA-4j9x-g4x8-vcmf"
+package_slug: "packagist/zendframework/zendframework1"
+title: "ZendFramework potential XML eXternal Entity injection vectors"
+description: "`Zend_Feed_Rss` and `Zend_Feed_Atom` were found to contain potential
+  XML eXternal Entity (XXE) vectors due to insecure usage of PHP's DOM extension.
+  External entities could be specified by adding a specific DOCTYPE element to feeds;
+  exploiting this vulnerability could coerce opening arbitrary files and/or TCP connections.\n\nA
+  similar issue was fixed for 1.11.13 and 1.12.0, in the `Zend_Feed::import()` factory
+  method; however, the reporter of the issue discovered that the individual classes
+  contained similar functionality in their constructors which remained vulnerable."
+date: "2024-06-07"
+pubdate: "2024-06-07"
+affected_range: ">=1.11.0 <1.11.15||>=1.12.0 <1.12.1"
+fixed_versions:
+- "1.11.15"
+- "1.12.1"
+affected_versions: "All versions starting from 1.11.0 before 1.11.15, all versions
+  starting from 1.12.0 before 1.12.1"
+not_impacted: "All versions before 1.11.0, all versions starting from 1.11.15 before
+  1.12.0, all versions starting from 1.12.1"
+solution: "Upgrade to versions 1.11.15, 1.12.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-4j9x-g4x8-vcmf"
+- "https://framework.zend.com/security/advisory/ZF2012-05"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/zendframework/zendframework1/ZF2012-05.yaml"
+- "https://github.com/zendframework/zf1"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+uuid: "bb9b579e-0d76-4948-af58-6567e12a4162"
+cwe_ids:
+- "CWE-611"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-2fhr-8r8r-qp56"
+identifiers:
+- "GHSA-2fhr-8r8r-qp56"
+package_slug: "packagist/zendframework/zendframework"
+title: "ZendFramework Information Disclosure and Insufficient Entropy vulnerability"
+description: "In Zend Framework, `Zend_Captcha_Word` (v1) and `Zend\\Captcha\\Word`
+  (v2) generate a \"word\" for a CAPTCHA challenge by selecting a sequence of random
+  letters from a character set. Prior to this advisory, the selection was performed
+  using PHP's `internal array_rand()` function. This function does not generate sufficient
+  entropy due to its usage of `rand()` instead of more cryptographically secure methods
+  such as `openssl_pseudo_random_bytes()`. This could potentially lead to information
+  disclosure should an attacker be able to brute force the random number generation."
+date: "2024-06-07"
+pubdate: "2024-06-07"
+affected_range: ">=2.0.0 <2.4.9"
+fixed_versions:
+- "2.4.9"
+affected_versions: "All versions starting from 2.0.0 before 2.4.9"
+not_impacted: "All versions before 2.0.0, all versions starting from 2.4.9"
+solution: "Upgrade to version 2.4.9 or above."
+urls:
+- "https://github.com/advisories/GHSA-2fhr-8r8r-qp56"
+- "https://github.com/zendframework/zendframework/commit/ced8ff93ef892a64885c03f5dfab3f788a219709"
+- "https://framework.zend.com/security/advisory/ZF2015-09"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/zendframework/zendframework/ZF2015-09.yaml"
+- "https://github.com/zendframework/zendframework"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+uuid: "f49f1310-ef29-4cbc-90b5-8b5b131a92d6"
+cwe_ids:
+- "CWE-200"
+- "CWE-331"
+- "CWE-937"
+- "CWE-1035"

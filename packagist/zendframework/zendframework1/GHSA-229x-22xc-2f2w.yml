@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-229x-22xc-2f2w"
+identifiers:
+- "GHSA-229x-22xc-2f2w"
+package_slug: "packagist/zendframework/zendframework1"
+title: "Zendframework Local file disclosure via XXE injection in Zend_XmlRpc"
+description: "Zend_XmlRpc is vulnerable to XML eXternal Entity (XXE) Injection attacks.
+  The SimpleXMLElement class (SimpleXML PHP extension) is used in an insecure way
+  to parse XML data. External entities can be specified by adding a specific DOCTYPE
+  element to XML-RPC requests. By exploiting this vulnerability an application may
+  be coerced to open arbitrary files and/or TCP connections."
+date: "2024-06-07"
+pubdate: "2024-06-07"
+affected_range: ">=1.0.0 <1.11.13"
+fixed_versions:
+- "1.11.13"
+affected_versions: "All versions starting from 1.0.0 before 1.11.13"
+not_impacted: "All versions before 1.0.0, all versions starting from 1.11.13"
+solution: "Upgrade to version 1.11.13 or above."
+urls:
+- "https://github.com/advisories/GHSA-229x-22xc-2f2w"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/zendframework/zendframework1/ZF2012-01.yaml"
+- "https://github.com/zendframework/zf1"
+- "https://web.archive.org/web/20210620092354/https://framework.zend.com/security/advisory/ZF2012-01"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N"
+uuid: "40340689-955c-4aec-b466-b36cfd0b553e"
+cwe_ids:
+- "CWE-611"
+- "CWE-937"
+- "CWE-1035"

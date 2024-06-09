@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-6v7p-5qcq-268c"
+identifiers:
+- "GHSA-6v7p-5qcq-268c"
+package_slug: "packagist/zendframework/zend-navigation"
+title: "Zend-Navigation vulnerable to Cross-site Scripting"
+description: "Many Zend Framework 2 view helpers were using the `escapeHtml()` view
+  helper in order to escape HTML attributes, instead of the more appropriate `escapeHtmlAttr()`.
+  In situations where user data and/or JavaScript is used to seed attributes, this
+  can lead to potential cross site scripting (XSS) attack vectors.\n\nVulnerable view
+  helpers include:\n\n- All `Zend\\Form` view helpers.\n- Most `Zend\\Navigation`
+  (aka `Zend\\View\\Helper\\Navigation\\*`) view helpers.\n- All \"HTML Element\"
+  view helpers: `htmlFlash()`, `htmlPage()`, `htmlQuickTime()`.\n- `Zend\\View\\Helper\\Gravatar`"
+date: "2024-06-07"
+pubdate: "2024-06-07"
+affected_range: ">=2.0.0 <2.2.7||>=2.3.0 <2.3.1"
+fixed_versions:
+- "2.2.7"
+- "2.3.1"
+affected_versions: "All versions starting from 2.0.0 before 2.2.7, all versions starting
+  from 2.3.0 before 2.3.1"
+not_impacted: "All versions before 2.0.0, all versions starting from 2.2.7 before
+  2.3.0, all versions starting from 2.3.1"
+solution: "Upgrade to versions 2.2.7, 2.3.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-6v7p-5qcq-268c"
+- "https://framework.zend.com/security/advisory/ZF2014-03"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/zendframework/zend-navigation/ZF2014-03.yaml"
+- "https://github.com/zendframework/zend-navigation"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+uuid: "fb5dea35-59b6-4fa2-9730-11978f6c3881"
+cwe_ids:
+- "CWE-352"
+- "CWE-937"
+- "CWE-1035"

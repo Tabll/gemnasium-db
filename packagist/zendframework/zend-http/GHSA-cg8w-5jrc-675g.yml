@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-cg8w-5jrc-675g"
+identifiers:
+- "GHSA-cg8w-5jrc-675g"
+package_slug: "packagist/zendframework/zend-http"
+title: "Zend-HTTP URL Rewrite vulnerability"
+description: "zend-diactoros (and, by extension, Expressive), zend-http (and, by extension,
+  Zend Framework MVC projects), and zend-feed (specifically, its PubSubHubbub sub-component)
+  each contain a potential URL rewrite exploit. In each case, marshaling a request
+  URI includes logic that introspects HTTP request headers that are specific to a
+  given server-side URL rewrite mechanism.\n\nWhen these headers are present on systems
+  not running the specific URL rewriting mechanism, the logic would still trigger,
+  allowing a malicious client or proxy to emulate the headers to request arbitrary
+  content."
+date: "2024-06-07"
+pubdate: "2024-06-07"
+affected_range: ">=1.0.0 <2.8.1"
+fixed_versions:
+- "2.8.1"
+affected_versions: "All versions starting from 1.0.0 before 2.8.1"
+not_impacted: "All versions before 1.0.0, all versions starting from 2.8.1"
+solution: "Upgrade to version 2.8.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-cg8w-5jrc-675g"
+- "https://github.com/zendframework/zend-http/commit/44197164a270259116162a442f639085ea24094a"
+- "https://github.com/zendframework/zend-http/commit/5234f4a9e8137b731ab95d6a17879d4eb8fb9e39"
+- "https://framework.zend.com/security/advisory/ZF2018-01"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/zendframework/zend-http/ZF2018-01.yaml"
+- "https://github.com/zendframework/zend-http"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+uuid: "687288af-26c8-4327-bb6a-b3fa5a708bab"
+cwe_ids:
+- "CWE-352"
+- "CWE-937"
+- "CWE-1035"

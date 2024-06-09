@@ -1,0 +1,39 @@
+---
+identifier: "GHSA-f3wf-q4fj-3gxf"
+identifiers:
+- "GHSA-f3wf-q4fj-3gxf"
+package_slug: "packagist/typo3/cms"
+title: "TYPO3 Denial of Service in Online Media Asset Handling"
+description: "Online Media Asset Handling (*`.youtube` and *`.vimeo` files) in the
+  TYPO3 backend is vulnerable to denial of service. Putting large files with according
+  file extensions results in high consumption of system resources. This can lead to
+  exceeding limits of the current PHP process which results in a dysfunctional backend
+  component. A valid backend user account or write access on the server system (e.g.
+  SFTP) is needed in order to exploit this vulnerability."
+date: "2024-06-07"
+pubdate: "2024-06-07"
+affected_range: ">=7.0.0 <7.6.32||>=8.0.0 <8.7.21||>=9.0.0 <9.5.2"
+fixed_versions:
+- "7.6.32"
+- "8.7.21"
+- "9.5.2"
+affected_versions: "All versions starting from 7.0.0 before 7.6.32, all versions starting
+  from 8.0.0 before 8.7.21, all versions starting from 9.0.0 before 9.5.2"
+not_impacted: "All versions before 7.0.0, all versions starting from 7.6.32 before
+  8.0.0, all versions starting from 8.7.21 before 9.0.0, all versions starting from
+  9.5.2"
+solution: "Upgrade to versions 7.6.32, 8.7.21, 9.5.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-f3wf-q4fj-3gxf"
+- "https://github.com/TYPO3/typo3/commit/054799caf53b28ff92e00aff957fab88c45a7509"
+- "https://github.com/TYPO3/typo3/commit/16567366e2a25c0cbed7208c3be9eda962e28c9b"
+- "https://github.com/TYPO3/typo3/commit/7a5155e0137d01db7e5723849f0493ad5b0c98ac"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/typo3/cms/2018-12-11-6.yaml"
+- "https://github.com/TYPO3/typo3"
+- "https://typo3.org/security/advisory/typo3-core-sa-2018-011"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+uuid: "420b09ef-b1c7-46f2-bcc5-93eb2c9ce128"
+cwe_ids:
+- "CWE-770"
+- "CWE-937"
+- "CWE-1035"

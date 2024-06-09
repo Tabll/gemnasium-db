@@ -1,0 +1,37 @@
+---
+identifier: "GHSA-g7hw-jh4p-75wr"
+identifiers:
+- "GHSA-g7hw-jh4p-75wr"
+package_slug: "packagist/typo3/cms"
+title: "TYPO3 Cross-Site Scripting in Filelist Module"
+description: "It has been discovered that the output table listing in the “Files”
+  backend module is vulnerable to cross-site scripting when a file extension contains
+  malicious sequences.\n\nAccess to the file system of the server - either directly
+  or through synchronization - is required to exploit the vulnerability."
+date: "2024-06-07"
+pubdate: "2024-06-07"
+affected_range: ">=10.0.0 <10.2.1||>=8.0.0 <8.7.30||>=9.0.0 <9.5.12"
+fixed_versions:
+- "10.2.1"
+- "8.7.30"
+- "9.5.12"
+affected_versions: "All versions starting from 8.0.0 before 8.7.30, all versions starting
+  from 9.0.0 before 9.5.12, all versions starting from 10.0.0 before 10.2.1"
+not_impacted: "All versions before 8.0.0, all versions starting from 8.7.30 before
+  9.0.0, all versions starting from 9.5.12 before 10.0.0, all versions starting from
+  10.2.1"
+solution: "Upgrade to versions 10.2.1, 8.7.30, 9.5.12 or above."
+urls:
+- "https://github.com/advisories/GHSA-g7hw-jh4p-75wr"
+- "https://github.com/TYPO3/typo3/commit/044d7dbe28382919c765b6b815d420f480a1ac70"
+- "https://github.com/TYPO3/typo3/commit/96b122b756cc778697845d48210b0993c0724b5f"
+- "https://github.com/TYPO3/typo3/commit/fcc1bab07027ba9d8140a91006d3cda1244d6298"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/typo3/cms/2019-12-17-3.yaml"
+- "https://github.com/TYPO3/typo3"
+- "https://typo3.org/security/advisory/typo3-core-sa-2019-023"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+uuid: "11bab1d5-053a-45ee-8ac6-19a3c445da96"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

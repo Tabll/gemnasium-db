@@ -1,0 +1,51 @@
+---
+identifier: "GHSA-96c6-m98x-hxjx"
+identifiers:
+- "GHSA-96c6-m98x-hxjx"
+package_slug: "packagist/zendframework/zend-session"
+title: "Zend-Session session validation vulnerability"
+description: "`Zend\\Session` session validators do not work as expected if set prior
+  to the start of a session.\n\nFor instance, the following test case fails (where
+  $this->manager is an instance of `Zend\\Session\\SessionManager`):\n```\n$this\n->manager\n->getValidatorChain()\n->attach('session.validate',
+  array(new RemoteAddr(), 'isValid'));\n\n$this->manager->start();\n\n$this->assertSame(\narray(\n'Zend\\Session\\Validator\\RemoteAddr'
+  =3D> '',\n),\n$_SESSION['__ZF']['_VALID']\n);\n```\nThe implication is that subsequent
+  calls to `Zend\\Session\\SessionManager#start()` (in later requests, assuming a
+  session was created) will not have any validator metadata attached, which causes
+  any validator metadata to be re-built from scratch, thus marking the session as
+  valid.\n\nAn attacker is thus able to simply ignore session validators such as `RemoteAddr`
+  or `HttpUserAgent`, since the \"signature\" that these validators check against
+  is not being stored in the session."
+date: "2024-06-07"
+pubdate: "2024-06-07"
+affected_range: ">=2.0.0 <2.2.9||>=2.3.0 <2.3.4"
+fixed_versions:
+- "2.2.9"
+- "2.3.4"
+affected_versions: "All versions starting from 2.0.0 before 2.2.9, all versions starting
+  from 2.3.0 before 2.3.4"
+not_impacted: "All versions before 2.0.0, all versions starting from 2.2.9 before
+  2.3.0, all versions starting from 2.3.4"
+solution: "Upgrade to versions 2.2.9, 2.3.4 or above."
+urls:
+- "https://github.com/advisories/GHSA-96c6-m98x-hxjx"
+- "https://github.com/zendframework/zend-session/commit/05fa95488b5ade513c4dcc56051a7ddb1c94f341"
+- "https://github.com/zendframework/zend-session/commit/1272fc047121720130690c324413629d8f63d210"
+- "https://github.com/zendframework/zend-session/commit/35014ab0ae17c2a169320f182697ee9fe73d841e"
+- "https://github.com/zendframework/zend-session/commit/3b1a65b3193a4219f5c4259ab8735f9ad254a021"
+- "https://github.com/zendframework/zend-session/commit/6a27a9fddd8f5b12b3af0de6309181ff5946dd0e"
+- "https://github.com/zendframework/zend-session/commit/7c4b73dd64e01001946aac76c6deddfe1c6ef0be"
+- "https://github.com/zendframework/zend-session/commit/7fc94bd6a60342416242a3899d63072c471b33d3"
+- "https://github.com/zendframework/zend-session/commit/93b43aa0ca5348d29034f67195ffa3f4082878d5"
+- "https://github.com/zendframework/zend-session/commit/9868f84513536446b0bac81cc95e0130b0a6fc9c"
+- "https://github.com/zendframework/zend-session/commit/a3382bfd3067f527762294b5fc622550988e6862"
+- "https://github.com/zendframework/zend-session/commit/b1903947e285568344b3458e4524b016ce311072"
+- "https://github.com/zendframework/zend-session/commit/ff9236cc4c4944b5f5a6fbfee01420ef82c4fa91"
+- "https://framework.zend.com/security/advisory/ZF2015-01"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/zendframework/zend-session/ZF2015-01.yaml"
+- "https://github.com/zendframework/zend-session"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N"
+uuid: "ec3e6916-6eaa-450f-9cb2-e3eb227f2c35"
+cwe_ids:
+- "CWE-384"
+- "CWE-937"
+- "CWE-1035"
