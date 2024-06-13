@@ -1,0 +1,36 @@
+---
+identifier: "GHSA-4vf6-mq7w-3hp6"
+identifiers:
+- "GHSA-4vf6-mq7w-3hp6"
+package_slug: "packagist/zendframework/zendframework1"
+title: "Zend_Filter_StripTags vulnerable to Cross-site Scripting when comments allowed"
+description: "Zend_Filter_StripTags contained an optional setting to allow allowlisting
+  HTML comments in filtered text. Microsoft Internet Explorer and several other browsers
+  allow developers to create conditional functionality via HTML comments, including
+  execution of script events and rendering of additional commented markup. By allowing
+  allowlisting of HTML comments, a malicious user could potentially include XSS exploits
+  within HTML comments that would then be rendered in the final output."
+date: "2024-06-07"
+pubdate: "2024-06-07"
+affected_range: ">=1.7.0 <1.7.9||>=1.8.0 <1.8.5||>=1.9.0 <1.9.7"
+fixed_versions:
+- "1.7.9"
+- "1.8.5"
+- "1.9.7"
+affected_versions: "All versions starting from 1.7.0 before 1.7.9, all versions starting
+  from 1.8.0 before 1.8.5, all versions starting from 1.9.0 before 1.9.7"
+not_impacted: "All versions before 1.7.0, all versions starting from 1.7.9 before
+  1.8.0, all versions starting from 1.8.5 before 1.9.0, all versions starting from
+  1.9.7"
+solution: "Upgrade to versions 1.7.9, 1.8.5, 1.9.7 or above."
+urls:
+- "https://github.com/advisories/GHSA-4vf6-mq7w-3hp6"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/zendframework/zendframework1/ZF2010-03.yaml"
+- "https://github.com/zendframework/zf1"
+- "https://web.archive.org/web/20210411020019/https://framework.zend.com/security/advisory/ZF2010-03"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+uuid: "7372efac-3350-4b5c-ba8a-01cb654a97e6"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

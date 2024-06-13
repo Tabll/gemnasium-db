@@ -1,0 +1,37 @@
+---
+identifier: "GHSA-gwpm-pm6x-h7rj"
+identifiers:
+- "GHSA-gwpm-pm6x-h7rj"
+package_slug: "packagist/zendframework/zendframework1"
+title: "ZendFramework Cross-site Scripting vector in `Zend_Filter_StripTags`"
+description: "`Zend_Filter_StripTags` is a filtering class analogous to PHP's `strip_tags()`
+  function. In addition to stripping HTML tags and selectively keeping those provided
+  in a allowlist, it also provides the ability to allowlist specific attributes to
+  retain per allowlisted tag.\n\nThe reporter discovered that attributes that contained
+  allowspace, and in paricular, line breaks, surrounding the attribute assignment
+  operator would not be stripped, regardless of whether or not they were allowlisted.
+  As examples of input affected:\n```\n<!-- newlines before and/or after assignment:
+  -->\n<a href=\"http://framework.zend.com/issues\" onclick\n=\n\"alert('Broken');
+  return false;\">Issues</a>\n```\nWhen passed to the following code:\n```\n$filter
+  = new Zend_Filter_StripTags(array('a' => array('href')));\n$value  = $filter->($html);\n```\nthen
+  the \"onclick\" attribute would remain, even though it was not specified in the
+  tag's allowlist. This could open potential cross-site scripting attack (XSS) vectors."
+date: "2024-06-07"
+pubdate: "2024-06-07"
+affected_range: ">=1.7.0 <1.7.6"
+fixed_versions:
+- "1.7.6"
+affected_versions: "All versions starting from 1.7.0 before 1.7.6"
+not_impacted: "All versions before 1.7.0, all versions starting from 1.7.6"
+solution: "Upgrade to version 1.7.6 or above."
+urls:
+- "https://github.com/advisories/GHSA-gwpm-pm6x-h7rj"
+- "https://framework.zend.com/security/advisory/ZF2009-02"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/zendframework/zendframework1/ZF2009-02.yaml"
+- "https://github.com/zendframework/zf1"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+uuid: "17cab934-6926-4907-95ad-7342ab2abfc1"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

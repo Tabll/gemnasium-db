@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-87m9-rv8p-rgmg"
+identifiers:
+- "GHSA-87m9-rv8p-rgmg"
+package_slug: "go/github.com/mostynb/go-grpc-compression"
+title: "go-grpc-compression has a zstd decompression bombing vulnerability"
+description: "A malicious user could cause a denial of service (DoS) when using a
+  specially crafted gRPC request. The decompression mechanism for zstd did not respect
+  the limits imposed by gRPC, allowing rapid memory usage increases.\n\nVersions v1.1.4
+  through to v1.2.2 made use of the Decoder.DecodeAll function in github.com/klauspost/compress/zstd
+  to decompress data provided by the peer. The vulnerability is exploitable only by
+  attackers who can send gRPC payloads to users of github.com/mostynb/go-grpc-compression/zstd
+  or github.com/mostynb/go-grpc-compression/nonclobbering/zstd."
+date: "2024-06-10"
+pubdate: "2024-06-10"
+affected_range: ">=1.1.4 <1.2.3"
+fixed_versions:
+- "1.2.3"
+affected_versions: "All versions starting from 1.1.4 before 1.2.3"
+not_impacted: "All versions before 1.1.4, all versions starting from 1.2.3"
+solution: "Upgrade to version 1.2.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-87m9-rv8p-rgmg"
+- "https://github.com/mostynb/go-grpc-compression/security/advisories/GHSA-87m9-rv8p-rgmg"
+- "https://github.com/mostynb/go-grpc-compression/commit/629c44d3acb9624993cc7de629f47d72109e2ce5"
+- "https://github.com/mostynb/go-grpc-compression"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "20a9c3b4-2927-4222-9e19-9ef626f0763a"
+cwe_ids:
+- "CWE-400"
+- "CWE-937"
+- "CWE-1035"
