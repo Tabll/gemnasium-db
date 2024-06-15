@@ -1,0 +1,26 @@
+---
+identifier: "GHSA-85rg-8m6h-825p"
+identifiers:
+- "GHSA-85rg-8m6h-825p"
+package_slug: "go/github.com/k8sgpt-ai/k8sgpt"
+title: "Vulnerabilities with the k8sGPT"
+description: "Bunch of vulnerabilities found in k8sGPT.  Fixed in release https://github.com/k8sgpt-ai/k8sgpt/releases/tag/v0.3.33"
+date: "2024-06-13"
+pubdate: "2024-06-13"
+affected_range: "<0.3.33"
+fixed_versions:
+- "0.3.33"
+affected_versions: "All versions before 0.3.33"
+not_impacted: "All versions starting from 0.3.33"
+solution: "Upgrade to version 0.3.33 or above."
+urls:
+- "https://github.com/advisories/GHSA-85rg-8m6h-825p"
+- "https://github.com/k8sgpt-ai/k8sgpt/security/advisories/GHSA-85rg-8m6h-825p"
+- "https://github.com/k8sgpt-ai/k8sgpt"
+- "https://github.com/k8sgpt-ai/k8sgpt/releases/tag/v0.3.33"
+uuid: "3d66e50f-fddd-455f-83bc-797b85bcbcfd"
+cwe_ids:
+- "CWE-22"
+- "CWE-457"
+- "CWE-937"
+- "CWE-1035"
