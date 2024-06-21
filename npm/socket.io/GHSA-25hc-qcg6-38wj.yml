@@ -1,0 +1,36 @@
+---
+identifier: "GHSA-25hc-qcg6-38wj"
+identifiers:
+- "GHSA-25hc-qcg6-38wj"
+package_slug: "npm/socket.io"
+title: "socket.io has an unhandled 'error' event"
+description: "A specially crafted Socket.IO packet can trigger an uncaught exception
+  on the Socket.IO server, thus killing the Node.js process.\n\n```\nnode:events:502\nthrow
+  err; // Unhandled 'error' event\n^\n\nError [ERR_UNHANDLED_ERROR]: Unhandled error.
+  (undefined)\nat new NodeError (node:internal/errors:405:5)\nat Socket.emit (node:events:500:17)\nat
+  /myapp/node_modules/socket.io/lib/socket.js:531:14\nat process.processTicksAndRejections
+  (node:internal/process/task_queues:77:11) {\ncode: 'ERR_UNHANDLED_ERROR',\ncontext:
+  undefined\n}\n```"
+date: "2024-06-19"
+pubdate: "2024-06-19"
+affected_range: "<2.5.1||>=3.0.0 <4.6.2"
+fixed_versions:
+- "2.5.1"
+- "4.6.2"
+affected_versions: "All versions before 2.5.1, all versions starting from 3.0.0 before
+  4.6.2"
+not_impacted: "All versions starting from 2.5.1 before 3.0.0, all versions starting
+  from 4.6.2"
+solution: "Upgrade to versions 2.5.1, 4.6.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-25hc-qcg6-38wj"
+- "https://github.com/socketio/socket.io/security/advisories/GHSA-25hc-qcg6-38wj"
+- "https://github.com/socketio/socket.io/commit/15af22fc22bc6030fcead322c106f07640336115"
+- "https://github.com/socketio/socket.io/commit/d30630ba10562bf987f4d2b42440fc41a828119c"
+- "https://github.com/socketio/socket.io"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
+uuid: "c4ffbb37-66b6-4552-9870-c5f8e0883dd8"
+cwe_ids:
+- "CWE-754"
+- "CWE-937"
+- "CWE-1035"

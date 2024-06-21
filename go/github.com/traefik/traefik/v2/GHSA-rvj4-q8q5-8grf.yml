@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-rvj4-q8q5-8grf"
+identifiers:
+- "GHSA-rvj4-q8q5-8grf"
+package_slug: "go/github.com/traefik/traefik/v2"
+title: "ACME DNS: Azure Identity Libraries Elevation of Privilege Vulnerability"
+description: "There is a vulnerability in [Azure Identity Libraries and Microsoft
+  Authentication Library Elevation of Privilege Vulnerability](https://nvd.nist.gov/vuln/detail/CVE-2024-35255)."
+date: "2024-06-20"
+pubdate: "2024-06-20"
+affected_range: "<2.11.5"
+fixed_versions:
+- "2.11.5"
+affected_versions: "All versions before 2.11.5"
+not_impacted: "All versions starting from 2.11.5"
+solution: "Upgrade to version 2.11.5 or above."
+urls:
+- "https://github.com/advisories/GHSA-rvj4-q8q5-8grf"
+- "https://github.com/traefik/traefik/security/advisories/GHSA-rvj4-q8q5-8grf"
+- "https://nvd.nist.gov/vuln/detail/CVE-2024-35255"
+- "https://github.com/traefik/traefik"
+- "https://github.com/traefik/traefik/releases/tag/v2.11.5"
+- "https://github.com/traefik/traefik/releases/tag/v3.0.3"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+uuid: "daa0361c-5533-490d-b998-d6c69163040d"
+cwe_ids:
+- "CWE-362"
+- "CWE-937"
+- "CWE-1035"
