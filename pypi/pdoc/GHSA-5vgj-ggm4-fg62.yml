@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-5vgj-ggm4-fg62"
+identifiers:
+- "GHSA-5vgj-ggm4-fg62"
+package_slug: "pypi/pdoc"
+title: "pdoc embeds link to malicious CDN if math mode is enabled"
+description: "Documentation generated with `pdoc --math` linked to JavaScript files
+  from polyfill.io.\nThe polyfill.io CDN has been sold and now serves malicious code.\n\nUsers
+  who produce documentation with math mode should update immediately. All other users
+  are unaffected."
+date: "2024-06-25"
+pubdate: "2024-06-25"
+affected_range: "<14.5.1"
+fixed_versions:
+- "14.5.1"
+affected_versions: "All versions before 14.5.1"
+not_impacted: "All versions starting from 14.5.1"
+solution: "Upgrade to version 14.5.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-5vgj-ggm4-fg62"
+- "https://github.com/mitmproxy/pdoc/security/advisories/GHSA-5vgj-ggm4-fg62"
+- "https://github.com/mitmproxy/pdoc/pull/703"
+- "https://github.com/mitmproxy/pdoc/commit/726b8f2e365fe8afeb3604a7c73d19b460395d58"
+- "https://github.com/mitmproxy/pdoc"
+- "https://sansec.io/research/polyfill-supply-chain-attack"
+uuid: "9b2900bb-f0b9-4c02-9377-530d05677fd6"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"
