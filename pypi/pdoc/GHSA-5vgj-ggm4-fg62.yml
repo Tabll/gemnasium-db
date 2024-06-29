@@ -2,13 +2,14 @@
 identifier: "GHSA-5vgj-ggm4-fg62"
 identifiers:
 - "GHSA-5vgj-ggm4-fg62"
+- "CVE-2024-38526"
 package_slug: "pypi/pdoc"
 title: "pdoc embeds link to malicious CDN if math mode is enabled"
 description: "Documentation generated with `pdoc --math` linked to JavaScript files
   from polyfill.io.\nThe polyfill.io CDN has been sold and now serves malicious code.\n\nUsers
   who produce documentation with math mode should update immediately. All other users
   are unaffected."
-date: "2024-06-25"
+date: "2024-06-28"
 pubdate: "2024-06-25"
 affected_range: "<14.5.1"
 fixed_versions:
