@@ -1,0 +1,22 @@
+---
+identifier: "GHSA-5grr-72f9-678v"
+identifiers:
+- "GHSA-5grr-72f9-678v"
+package_slug: "pypi/cipherbcrypt"
+title: "Malware package cipherbcrypt"
+description: "Malicious package. Exfiltrated secrets to a target server."
+date: "2024-07-12"
+pubdate: "2024-07-12"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-5grr-72f9-678v"
+- "https://github.com/pypa/advisory-database/commit/f8df7b7d0444991716fb449d55adf50067d0ba38"
+- "https://github.com/pypa/advisory-database/tree/main/vulns/cipherbcrypt/PYSEC-2024-55.yaml"
+uuid: "af6dd100-99e8-460d-ba6a-e5c7063c5fe4"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

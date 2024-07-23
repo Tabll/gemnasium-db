@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-hc5w-gxxr-w8x8"
+identifiers:
+- "GHSA-hc5w-gxxr-w8x8"
+package_slug: "go/github.com/bishopfox/sliver"
+title: "Sliver Allows Authenticated Operator-to-Server Remote Code Execution"
+description: "Sliver version 1.6.0 (prerelease) is vulnerable to RCE on the teamserver
+  by a low-privileged \"operator\" user. The RCE is as the system root user."
+date: "2024-07-18"
+pubdate: "2024-07-18"
+affected_range: ">=1.5.40 <=1.6.0-dev"
+fixed_versions: []
+affected_versions: "All versions starting from 1.5.40 up to 1.6.0-dev"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-hc5w-gxxr-w8x8"
+- "https://github.com/BishopFox/sliver/security/advisories/GHSA-hc5w-gxxr-w8x8"
+- "https://github.com/BishopFox/sliver/pull/1281"
+- "https://github.com/BishopFox/sliver/commit/0deaee625d14c6f05f63c86e5c3b7ae623a1138f"
+- "https://github.com/BishopFox/sliver"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+uuid: "ba266b77-26ed-473c-aa03-f7e9aa355baf"
+cwe_ids:
+- "CWE-78"
+- "CWE-937"
+- "CWE-1035"

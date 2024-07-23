@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-564j-v29w-rqr6"
+identifiers:
+- "GHSA-564j-v29w-rqr6"
+package_slug: "pypi/khoj-assistant"
+title: "Khoj Open Redirect Vulnerability in Login Page"
+description: "An attacker can use the `next` parameter on the login page to redirect
+  a victim to a malicious page, while masking this using a legit-looking `app.khoj.dev`
+  url.\nFor example, `https://app.khoj.dev/login?next=//example.com` will redirect
+  to the https://example.com page."
+date: "2024-07-08"
+pubdate: "2024-07-08"
+affected_range: "<1.14.0"
+fixed_versions:
+- "1.14.0"
+affected_versions: "All versions before 1.14.0"
+not_impacted: "All versions starting from 1.14.0"
+solution: "Upgrade to version 1.14.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-564j-v29w-rqr6"
+- "https://github.com/khoj-ai/khoj/security/advisories/GHSA-564j-v29w-rqr6"
+- "https://github.com/khoj-ai/khoj/commit/4daf16e5f916641304e11d56a6071ad365c21a18"
+- "https://github.com/khoj-ai/khoj"
+- "https://github.com/khoj-ai/khoj/blob/2667ef45449eb408ce1d7c393be04845be31e15f/src/khoj/routers/auth.py#L95"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N"
+uuid: "5e538259-c248-4c04-ab0f-90d5cceafa83"
+cwe_ids:
+- "CWE-601"
+- "CWE-937"
+- "CWE-1035"

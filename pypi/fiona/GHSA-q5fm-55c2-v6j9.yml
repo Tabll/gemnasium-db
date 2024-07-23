@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-q5fm-55c2-v6j9"
+identifiers:
+- "GHSA-q5fm-55c2-v6j9"
+package_slug: "pypi/fiona"
+title: "Fiona affected by CVE-2023-45853 related to MiniZip madler-zlib"
+description: "Vulnerability scan of fiona shows [CVE-2023-45853](https://nvd.nist.gov/vuln/detail/CVE-2023-45853)"
+date: "2024-07-16"
+pubdate: "2024-07-16"
+affected_range: "<1.10b1"
+fixed_versions:
+- "1.10b1"
+affected_versions: "All versions before 1.10b1"
+not_impacted: "All versions starting from 1.10b1"
+solution: "Upgrade to version 1.10b1 or above."
+urls:
+- "https://github.com/advisories/GHSA-q5fm-55c2-v6j9"
+- "https://github.com/Toblerity/Fiona/security/advisories/GHSA-q5fm-55c2-v6j9"
+- "https://nvd.nist.gov/vuln/detail/CVE-2023-45853"
+- "https://github.com/OSGeo/gdal/commit/4aa7ca61c1d2191baf1eea2a97d0dec33a41691f"
+- "https://github.com/madler/zlib/commit/73331a6a0481067628f065ffe87bb1d8f787d10c"
+- "https://github.com/Toblerity/Fiona"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+uuid: "5d182d79-1f05-4651-ae56-38d317929e92"
+cwe_ids:
+- "CWE-1395"
+- "CWE-190"
+- "CWE-937"
+- "CWE-1035"

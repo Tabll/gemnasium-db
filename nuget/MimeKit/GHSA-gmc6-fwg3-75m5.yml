@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-gmc6-fwg3-75m5"
+identifiers:
+- "GHSA-gmc6-fwg3-75m5"
+package_slug: "nuget/MimeKit"
+title: "Mimekit has vulnerable dependency that can lead to denial of service"
+description: "Denial of service vulnerability."
+date: "2024-07-11"
+pubdate: "2024-07-11"
+affected_range: "[3.0.0,4.7.1)"
+fixed_versions:
+- "4.7.1"
+affected_versions: "All versions starting from 3.0.0 before 4.7.1"
+not_impacted: "All versions before 3.0.0, all versions starting from 4.7.1"
+solution: "Upgrade to version 4.7.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-gmc6-fwg3-75m5"
+- "https://github.com/jstedfast/MimeKit/security/advisories/GHSA-gmc6-fwg3-75m5"
+- "https://github.com/dotnet/announcements/issues/312"
+- "https://github.com/jstedfast/MimeKit/commit/aef4eda75525848b992ce5e1f9b87399000fffb6"
+- "https://github.com/advisories/GHSA-447r-wph3-92pm"
+- "https://github.com/jstedfast/MimeKit"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "310fd2bb-ed3b-4a6e-94a1-a83a5de6e079"
+cwe_ids:
+- "CWE-20"
+- "CWE-937"
+- "CWE-1035"

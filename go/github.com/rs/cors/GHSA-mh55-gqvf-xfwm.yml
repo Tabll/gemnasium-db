@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-mh55-gqvf-xfwm"
+identifiers:
+- "GHSA-mh55-gqvf-xfwm"
+package_slug: "go/github.com/rs/cors"
+title: "Denial of service via malicious preflight requests in github.com/rs/cors"
+description: "Middleware causes a prohibitive amount of heap allocations when processing
+  malicious preflight requests that include a Access-Control-Request-Headers (ACRH)
+  header whose value contains many commas. This behavior can be abused by attackers
+  to produce undue load on the middleware/server as an attempt to cause a denial of
+  service."
+date: "2024-07-05"
+pubdate: "2024-07-05"
+affected_range: ">=1.9.0 <1.11.0"
+fixed_versions:
+- "1.11.0"
+affected_versions: "All versions starting from 1.9.0 before 1.11.0"
+not_impacted: "All versions before 1.9.0, all versions starting from 1.11.0"
+solution: "Upgrade to version 1.11.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-mh55-gqvf-xfwm"
+- "https://github.com/rs/cors/issues/170"
+- "https://github.com/rs/cors/pull/171"
+- "https://github.com/rs/cors/commit/4c32059b2756926619f6bf70281b91be7b5dddb2"
+- "https://github.com/rs/cors"
+uuid: "0e6c83f2-5708-4451-9735-9a3b268c745a"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

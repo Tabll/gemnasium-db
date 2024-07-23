@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-xr7q-jx4m-x55m"
+identifiers:
+- "GHSA-xr7q-jx4m-x55m"
+package_slug: "go/github.com/grpc/grpc-go"
+title: "Private tokens could appear in logs if context containing gRPC metadata is
+  logged in github.com/grpc/grpc-go"
+description: "This issue represents a potential PII concern.  If applications were
+  printing or logging a context containing gRPC metadata, the affected versions will
+  contain all the metadata, which may include private information."
+date: "2024-07-05"
+pubdate: "2024-07-05"
+affected_range: ">=1.64.0 <1.64.1||=1.64.0"
+fixed_versions:
+- "1.64.1"
+affected_versions: "All versions starting from 1.64.0 before 1.64.1, version 1.64.0"
+not_impacted: ""
+solution: "Upgrade to version 1.64.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-xr7q-jx4m-x55m"
+- "https://github.com/grpc/grpc-go/security/advisories/GHSA-xr7q-jx4m-x55m"
+- "https://github.com/grpc/grpc-go"
+uuid: "6a794f13-5920-446c-b69f-c0ddec71a956"
+cwe_ids:
+- "CWE-200"
+- "CWE-937"
+- "CWE-1035"

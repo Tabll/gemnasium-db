@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-crjg-w57m-rqqf"
+identifiers:
+- "GHSA-crjg-w57m-rqqf"
+package_slug: "maven/dnsjava/dnsjava"
+title: "DNSJava vulnerable to KeyTrap - Denial-of-Service Algorithmic Complexity Attacks"
+description: "Users using the `ValidatingResolver` for DNSSEC validation can run into
+  CPU exhaustion with specially crafted DNSSEC-signed zones."
+date: "2024-07-22"
+pubdate: "2024-07-22"
+affected_range: "[,3.6.0)"
+fixed_versions:
+- "3.6.0"
+affected_versions: "All versions before 3.6.0"
+not_impacted: "All versions starting from 3.6.0"
+solution: "Upgrade to version 3.6.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-crjg-w57m-rqqf"
+- "https://github.com/dnsjava/dnsjava/security/advisories/GHSA-crjg-w57m-rqqf"
+- "https://github.com/dnsjava/dnsjava/commit/07ac36a11578cc1bce0cd8ddf2fe568f062aee78"
+- "https://github.com/dnsjava/dnsjava/commit/3ddc45ce8cdb5c2274e10b7401416f497694e1cf"
+- "https://github.com/dnsjava/dnsjava"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+uuid: "d10ed130-0f67-46d9-8b92-89e4ec221333"
+cwe_ids:
+- "CWE-770"
+- "CWE-937"
+- "CWE-1035"
