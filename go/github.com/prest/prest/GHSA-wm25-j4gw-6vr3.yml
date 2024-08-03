@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-wm25-j4gw-6vr3"
+identifiers:
+- "GHSA-wm25-j4gw-6vr3"
+package_slug: "go/github.com/prest/prest"
+title: "pREST vulnerable to jwt bypass + sql injection"
+description: "Probably jwt bypass + sql injection\nor what i'm doing wrong?"
+date: "2024-07-30"
+pubdate: "2024-07-30"
+affected_range: "<1.5.4"
+fixed_versions:
+- "1.5.4"
+affected_versions: "All versions before 1.5.4"
+not_impacted: "All versions starting from 1.5.4"
+solution: "Upgrade to version 1.5.4 or above."
+urls:
+- "https://github.com/advisories/GHSA-wm25-j4gw-6vr3"
+- "https://github.com/prest/prest/security/advisories/GHSA-wm25-j4gw-6vr3"
+- "https://github.com/prest/prest/commit/96ff96cfdc7ad6dd86e2289fcd5a37ee70c8926e"
+- "https://github.com/prest/prest"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+uuid: "bb7485a9-b986-44a6-b8ec-9d08eb86fa66"
+cwe_ids:
+- "CWE-287"
+- "CWE-89"
+- "CWE-937"
+- "CWE-1035"
