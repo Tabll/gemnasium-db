@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-cxcc-q839-2cw9"
+identifiers:
+- "GHSA-cxcc-q839-2cw9"
+package_slug: "cargo/columnar"
+title: "columnar: `Read` on uninitialized buffer may cause UB (ColumnarReadExt::read_typed_vec())"
+description: "Affected versions of this crate passes an uninitialized buffer to a
+  user-provided `Read` implementation (`ColumnarReadExt::read_typed_vec()`).\nArbitrary
+  `Read` implementations can read from the uninitialized buffer (memory exposure)
+  and also can return incorrect number of bytes written to the buffer.\nReading from
+  uninitialized memory produces undefined values that can quickly invoke undefined
+  behavior."
+date: "2023-06-13"
+pubdate: "2022-06-16"
+affected_range: "<=0.0.19"
+fixed_versions: []
+affected_versions: "All versions up to 0.0.19"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-cxcc-q839-2cw9"
+- "https://github.com/frankmcsherry/columnar/issues/6"
+- "https://github.com/frankmcsherry/columnar"
+- "https://rustsec.org/advisories/RUSTSEC-2021-0087.html"
+uuid: "af7a2303-89cd-4a11-b354-0dc513254aa8"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-hmx9-jm3v-33hv"
+identifiers:
+- "GHSA-hmx9-jm3v-33hv"
+package_slug: "cargo/buffoon"
+title: "InputStream::read_exact : `Read` on uninitialized buffer causes UB"
+description: "Affected versions of this crate passes an uninitialized buffer to a
+  user-provided `Read` implementation.\nArbitrary `Read` implementations can read
+  from the uninitialized buffer (memory exposure) and also can return incorrect number
+  of bytes written to the buffer.\nReading from uninitialized memory produces undefined
+  values that can quickly invoke undefined behavior."
+date: "2023-06-13"
+pubdate: "2022-06-16"
+affected_range: "<=0.5.0"
+fixed_versions: []
+affected_versions: "All versions up to 0.5.0"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-hmx9-jm3v-33hv"
+- "https://github.com/carllerche/buffoon/issues/2"
+- "https://github.com/carllerche/buffoon"
+- "https://rustsec.org/advisories/RUSTSEC-2020-0154.html"
+uuid: "da4ffad1-a595-4332-b97a-2dc7019e8ccf"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,47 @@
+---
+identifier: "GHSA-3pp4-64mp-9cg9"
+identifiers:
+- "GHSA-3pp4-64mp-9cg9"
+package_slug: "cargo/tremor-script"
+title: "Memory Safety Issue when using `patch` or `merge` on `state` and assign the
+  result back to `state`"
+description: "Affected versions of this crate maintains references to memory that
+  might have been freed already.\nIf affects the following two `tremor-script` language
+  constructs:\n\n* A [Merge](https://www.tremor.rs/docs/tremor-script/index#merge)
+  where we assign the result back to the target expression\nand the expression to
+  be merged needs to reference the `event`:\n\n```\nlet state = merge state of event
+  end;\n```\n\n* A [Patch](https://www.tremor.rs/docs/tremor-script/index#patch) where
+  we assign the result back to the target expression\nand the patch operations used
+  need to reference the `event`:\n\n```\nlet state = patch state of insert event.key
+  => event.value end;\n```\n\nFor constructs like this (it doesnt matter what is references
+  in the expression to be merged or the patch operations) an optimization\nwas applied
+  to manipulate the target value in-place, instead of cloning it.\n\nOur `Value` struct
+  which underpins all event data in `tremor-script`, is representing as borrowed strings
+  `beef::Cow<'lifetime, str>`\nthat reference the actual `Vec<u8>` the event is based
+  upon. We keep the raw byte-array next to the event structure inside our `Event`
+  struct as a self-referential struct,\nso we make sure that the structured `Value`
+  and its references are valid across its whole lifetime.\n\nThe optimization was
+  considered safe as long as it was only possible to merge or patche `event` data
+  or static data.\nWhen `state` was introduced to `tremor-script` a new possibility
+  existed, to keep `Value` data around for longer than the lifetime of an event.\nIf
+  `event` data is merged or patched into `state` without cloning `state` first, it
+  can still reference keys or values from\nthe previous event, which will now be invalid.
+  This allows access to those already freed regions of memory and to get their content
+  out over the wire."
+date: "2022-06-17"
+pubdate: "2022-06-17"
+affected_range: ">=0.7.2 <0.11.6"
+fixed_versions:
+- "0.11.6"
+affected_versions: "All versions starting from 0.7.2 before 0.11.6"
+not_impacted: "All versions before 0.7.2, all versions starting from 0.11.6"
+solution: "Upgrade to version 0.11.6 or above."
+urls:
+- "https://github.com/advisories/GHSA-3pp4-64mp-9cg9"
+- "https://github.com/tremor-rs/tremor-runtime/pull/1217"
+- "https://github.com/tremor-rs/tremor-runtime"
+- "https://rustsec.org/advisories/RUSTSEC-2021-0111.html"
+uuid: "1f0497cd-bd29-4d5f-9951-1a1eba6f2c7a"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

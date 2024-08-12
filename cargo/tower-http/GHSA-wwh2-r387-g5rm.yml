@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-wwh2-r387-g5rm"
+identifiers:
+- "GHSA-wwh2-r387-g5rm"
+package_slug: "cargo/tower-http"
+title: "tower-http's improper validation of Windows paths could lead to directory
+  traversal attack"
+description: "`tower_http::services::fs::ServeDir` didn't correctly validate Windows
+  paths meaning paths like `/foo/bar/c:/windows/web/screen/img101.png` would be allowed
+  and respond with the contents of `c:/windows/web/screen/img101.png`. Thus users
+  could potentially read files anywhere on the filesystem. This only impacts Windows.
+  Linux and other unix likes are not impacted by this."
+date: "2023-06-13"
+pubdate: "2022-06-17"
+affected_range: ">=0.2.0 <0.2.1||<0.1.3"
+fixed_versions:
+- "0.2.1"
+- "0.1.3"
+affected_versions: "All versions before 0.1.3, all versions starting from 0.2.0 before
+  0.2.1"
+not_impacted: "All versions starting from 0.1.3 before 0.2.0, all versions starting
+  from 0.2.1"
+solution: "Upgrade to versions 0.1.3, 0.2.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-wwh2-r387-g5rm"
+- "https://github.com/tower-rs/tower-http/pull/204"
+- "https://github.com/tower-rs/tower-http"
+- "https://rustsec.org/advisories/RUSTSEC-2021-0135.html"
+uuid: "d5c618de-9ca5-439b-9a6d-b31e615c7fc1"
+cwe_ids:
+- "CWE-22"
+- "CWE-937"
+- "CWE-1035"

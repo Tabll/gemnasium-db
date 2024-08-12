@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-gfgm-chr3-x6px"
+identifiers:
+- "GHSA-gfgm-chr3-x6px"
+package_slug: "cargo/prettytable-rs"
+title: "prettytable-rs: Force cast a &Vec<T> to &[T] may lead to undefined behavior"
+description: "In function `Table::as_ref`, a reference of vector is force cast to
+  slice. There are multiple problems here:\n1. To guarantee the size is correct, we
+  have to first do `Vec::shrink_to_fit`. The function requires a mutable reference,
+  so we have to force cast from immutable to mutable, which is undefined behavior
+  (UB).\n2. Even if (1) is sound, `&Vec<T>` and `&[T]` still might not have the same
+  layout. Treating them equally may lead to undefinted behavior (UB)."
+date: "2022-12-30"
+pubdate: "2022-12-30"
+affected_range: "<0.10.0"
+fixed_versions:
+- "0.10.0"
+affected_versions: "All versions before 0.10.0"
+not_impacted: "All versions starting from 0.10.0"
+solution: "Upgrade to version 0.10.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-gfgm-chr3-x6px"
+- "https://github.com/phsym/prettytable-rs/issues/145"
+- "https://github.com/phsym/prettytable-rs"
+- "https://rustsec.org/advisories/RUSTSEC-2022-0074.html"
+uuid: "c4941b33-8128-40b8-83f8-fd29b1895b73"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

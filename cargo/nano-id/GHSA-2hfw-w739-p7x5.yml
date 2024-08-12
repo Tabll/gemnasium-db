@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-2hfw-w739-p7x5"
+identifiers:
+- "GHSA-2hfw-w739-p7x5"
+package_slug: "cargo/nano-id"
+title: "nano-id reduced entropy due to inadequate character set usage"
+description: "Affected versions of the nano-id crate incorrectly generated IDs using
+  a reduced character set in the `nano_id::base62` and `nano_id::base58` functions.
+  Specifically, the `base62` function used a character set of 32 symbols instead of
+  the intended 62 symbols, and the `base58` function used a character set of 16 symbols
+  instead of the intended 58 symbols. Additionally, the `nano_id::gen` macro is also
+  affected when a custom character set that is not a power of 2 in size is specified.\n\nIt
+  should be noted that `nano_id::base64` is not affected by this vulnerability."
+date: "2024-06-17"
+pubdate: "2024-06-04"
+affected_range: "<0.4.0"
+fixed_versions:
+- "0.4.0"
+affected_versions: "All versions before 0.4.0"
+not_impacted: "All versions starting from 0.4.0"
+solution: "Upgrade to version 0.4.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-2hfw-w739-p7x5"
+- "https://github.com/viz-rs/nano-id/commit/a9022772b2f1ce38929b5b81eccc670ac9d3ab23"
+- "https://github.com/viz-rs/nano-id"
+- "https://rustsec.org/advisories/RUSTSEC-2024-0343.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:L"
+uuid: "e72e14c1-f76d-4c37-bbe8-008f4412ec06"
+cwe_ids:
+- "CWE-331"
+- "CWE-937"
+- "CWE-1035"

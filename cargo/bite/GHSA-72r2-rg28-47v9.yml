@@ -1,0 +1,25 @@
+---
+identifier: "GHSA-72r2-rg28-47v9"
+identifiers:
+- "GHSA-72r2-rg28-47v9"
+package_slug: "cargo/bite"
+title: "`read` on uninitialized buffer may cause UB (bite::read::BiteReadExpandedExt::read_framed_max)"
+description: "Affected versions of this crate calls a user provided `Read` implementation
+  on an uninitialized buffer. `Read` on uninitialized buffer is defined as undefined
+  behavior in Rust."
+date: "2023-06-13"
+pubdate: "2022-06-16"
+affected_range: "<=0.0.5"
+fixed_versions: []
+affected_versions: "All versions up to 0.0.5"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-72r2-rg28-47v9"
+- "https://github.com/hinaria/bite/issues/1"
+- "https://github.com/hinaria/bite"
+- "https://rustsec.org/advisories/RUSTSEC-2020-0153.html"
+uuid: "13a2edc6-f714-458b-b668-54d9476ed873"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

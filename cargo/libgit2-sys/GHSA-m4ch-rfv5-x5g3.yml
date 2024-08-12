@@ -1,0 +1,42 @@
+---
+identifier: "GHSA-m4ch-rfv5-x5g3"
+identifiers:
+- "GHSA-m4ch-rfv5-x5g3"
+package_slug: "cargo/libgit2-sys"
+title: "git2-rs fails to verify SSH keys by default"
+description: "The git2 and libgit2-sys crates are Rust wrappers around the [libgit2](https://libgit2.org/)
+  C library. It was discovered that libgit2 1.5.0 and below did not verify SSH host
+  keys when establishing an SSH connection, exposing users of the library to Man-In-the-Middle
+  attacks.\n\nThe libgit2 team assigned [CVE-2023-22742](https://github.com/libgit2/libgit2/security/advisories/GHSA-8643-3wh5-rmjq)
+  to this vulnerability. The following versions of the libgit2-sys Rust crate have
+  been released:\n\n* libgit2-sys 0.14.2, updating the underlying libgit2 C library
+  to version 1.5.1.\n* libgit2-sys 0.13.5, updating the underlying libgit2 C library
+  to version 1.4.5.\n\nA new git2 crate version has also been released, 0.16.1. This
+  version only bumps its libgit2-sys dependency to ensure no vulnerable libgit2-sys
+  versions are used, but contains no code changes: if you update the libgit2-sys version
+  there is no need to also update the git2 crate version.\n\n[You can learn more about
+  this vulnerability in libgit2's advisory](https://github.com/libgit2/libgit2/security/advisories/GHSA-8643-3wh5-rmjq)"
+date: "2023-01-20"
+pubdate: "2023-01-20"
+affected_range: ">=0.14.0 <0.14.2||<0.13.5"
+fixed_versions:
+- "0.14.2"
+- "0.13.5"
+affected_versions: "All versions before 0.13.5, all versions starting from 0.14.0
+  before 0.14.2"
+not_impacted: "All versions starting from 0.13.5 before 0.14.0, all versions starting
+  from 0.14.2"
+solution: "Upgrade to versions 0.13.5, 0.14.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-m4ch-rfv5-x5g3"
+- "https://github.com/libgit2/libgit2/security/advisories/GHSA-8643-3wh5-rmjq"
+- "https://github.com/rust-lang/git2-rs/security/advisories/GHSA-m4ch-rfv5-x5g3"
+- "https://nvd.nist.gov/vuln/detail/CVE-2023-22742"
+- "https://github.com/rust-lang/git2-rs/commit/87934f87d36753ed702792ec063be7246444a8e1"
+- "https://github.com/rust-lang/git2-rs"
+- "https://rustsec.org/advisories/RUSTSEC-2023-0003.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:N"
+uuid: "75c55cf6-523e-432e-a3f1-460be40039e7"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

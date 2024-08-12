@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-v935-pqmr-g8v9"
+identifiers:
+- "GHSA-v935-pqmr-g8v9"
+package_slug: "cargo/num-bigint"
+title: "Unexpected panics in num-bigint"
+description: "Two scenarios were reported where `BigInt` and `BigUint` multiplication
+  may unexpectedly panic.\n\n- The internal `mac3` function did not expect the possibility
+  of non-empty all-zero inputs, leading to an `unwrap()` panic.\n- A buffer was allocated
+  with less capacity than needed for an intermediate result, leading to an assertion
+  panic.\n\nRust panics can either cause stack unwinding or program abort, depending
+  on the application configuration. In some settings, an unexpected panic may constitute
+  a denial-of-service vulnerability."
+date: "2021-11-03"
+pubdate: "2021-11-03"
+affected_range: ">=0.4.1 <0.4.3"
+fixed_versions:
+- "0.4.3"
+affected_versions: "All versions starting from 0.4.1 before 0.4.3"
+not_impacted: "All versions before 0.4.1, all versions starting from 0.4.3"
+solution: "Upgrade to version 0.4.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-v935-pqmr-g8v9"
+- "https://github.com/rust-num/num-bigint/security/advisories/GHSA-v935-pqmr-g8v9"
+- "https://github.com/rust-num/num-bigint/pull/228"
+- "https://github.com/rust-num/num-bigint"
+uuid: "17d46878-cb17-4f9c-a4cf-e080c9aef57a"
+cwe_ids:
+- "CWE-131"
+- "CWE-20"
+- "CWE-937"
+- "CWE-1035"

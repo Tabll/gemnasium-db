@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-cf4g-fcf8-3cr9"
+identifiers:
+- "GHSA-cf4g-fcf8-3cr9"
+package_slug: "cargo/pnet_packet"
+title: "`pnet_packet` buffer overrun in `set_payload` setters"
+description: "As indicated by this [issue](https://github.com/libpnet/libpnet/issues/449#issuecomment-663355987),
+  a buffer overrun is possible in the `set_payload` setter of the various mutable
+  \"Packet\" struct setters. The offending `set_payload` functions were defined within
+  the struct `impl` blocks in earlier versions of the package, and later by the `packet`
+  macro.\n\nFixed in the `packet` macro by [this](https://github.com/libpnet/libpnet/pull/455)
+  PR."
+date: "2023-02-09"
+pubdate: "2023-02-09"
+affected_range: "<0.27.2"
+fixed_versions:
+- "0.27.2"
+affected_versions: "All versions before 0.27.2"
+not_impacted: "All versions starting from 0.27.2"
+solution: "Upgrade to version 0.27.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-cf4g-fcf8-3cr9"
+- "https://github.com/libpnet/libpnet/issues/449"
+- "https://github.com/libpnet/libpnet"
+- "https://rustsec.org/advisories/RUSTSEC-2020-0167.html"
+cvss_v3: "CVSS:3.0/AV:L/AC:L/PR:H/UI:N/S:U/C:N/I:H/A:H"
+uuid: "b1ad1b9e-52b1-4986-a1e6-095f0271bc91"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

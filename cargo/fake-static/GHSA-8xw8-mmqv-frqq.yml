@@ -1,0 +1,26 @@
+---
+identifier: "GHSA-8xw8-mmqv-frqq"
+identifiers:
+- "GHSA-8xw8-mmqv-frqq"
+package_slug: "cargo/fake-static"
+title: "fake-static allows converting any reference into a `'static` reference"
+description: "fake-static allows converting a reference with any lifetime into\na
+  reference with `'static` lifetime without the `unsafe` keyword.\n\nInternally, this
+  crate does not use unsafe code, it instead\nexploits a soundness bug in rustc"
+date: "2021-08-18"
+pubdate: "2021-08-25"
+affected_range: "<=0.1.0"
+fixed_versions: []
+affected_versions: "All versions up to 0.1.0"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-8xw8-mmqv-frqq"
+- "https://github.com/rust-lang/rust/issues/25860"
+- "https://github.com/NieDzejkob/fake-static"
+- "https://rustsec.org/advisories/RUSTSEC-2020-0013.html"
+uuid: "175ef8c1-2078-4cd4-8ac3-c3aaaec1b3a2"
+cwe_ids:
+- "CWE-657"
+- "CWE-937"
+- "CWE-1035"

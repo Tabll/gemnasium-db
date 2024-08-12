@@ -1,0 +1,37 @@
+---
+identifier: "GHSA-w5w5-8vfh-xcjq"
+identifiers:
+- "GHSA-w5w5-8vfh-xcjq"
+package_slug: "cargo/whoami"
+title: "whoami stack buffer overflow on several Unix platforms"
+description: "With versions of the whoami crate >= 0.5.3 and < 1.5.0, calling any
+  of these functions leads to an immediate stack buffer overflow on illumos and Solaris:\n\n-
+  `whoami::username`\n- `whoami::realname`\n- `whoami::username_os`\n- `whoami::realname_os`\n\nWith
+  versions of the whoami crate >= 0.5.3 and < 1.0.1, calling any of the above functions
+  also leads to a stack buffer overflow on these platforms:\n\n- Bitrig\n- DragonFlyBSD\n-
+  FreeBSD\n- NetBSD\n- OpenBSD\n\nThis occurs because of an incorrect definition of
+  the `passwd` struct on those platforms.\n\nAs a result of this issue, denial of
+  service and data corruption have both been observed in the wild. The issue is possibly
+  exploitable as well.\n\nThis vulnerability also affects other Unix platforms that
+  aren't Linux or macOS.\n\nThis issue has been addressed in whoami 1.5.0.\n\nFor
+  more information, see [this GitHub issue](https://github.com/ardaku/whoami/issues/91)."
+date: "2024-04-05"
+pubdate: "2024-04-05"
+affected_range: ">=0.5.3 <1.5.0"
+fixed_versions:
+- "1.5.0"
+affected_versions: "All versions starting from 0.5.3 before 1.5.0"
+not_impacted: "All versions before 0.5.3, all versions starting from 1.5.0"
+solution: "Upgrade to version 1.5.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-w5w5-8vfh-xcjq"
+- "https://github.com/ardaku/whoami/issues/91"
+- "https://github.com/ardaku/whoami/commit/d6ee13ed9e818aa51b8d86d95e8009a376289a40"
+- "https://github.com/ardaku/whoami"
+- "https://rustsec.org/advisories/RUSTSEC-2024-0020.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:H"
+uuid: "84ba815c-665b-4f99-a79e-1a760c075469"
+cwe_ids:
+- "CWE-121"
+- "CWE-937"
+- "CWE-1035"

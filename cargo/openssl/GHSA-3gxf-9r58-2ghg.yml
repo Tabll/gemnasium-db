@@ -1,0 +1,26 @@
+---
+identifier: "GHSA-3gxf-9r58-2ghg"
+identifiers:
+- "GHSA-3gxf-9r58-2ghg"
+package_slug: "cargo/openssl"
+title: "`openssl` `X509NameBuilder::build` returned object is not thread safe"
+description: "OpenSSL has a `modified` bit that it can set on on `X509_NAME` objects.
+  If this bit is set then the object is not thread-safe even when it appears the code
+  is not modifying the value.\n\nThanks to David Benjamin (Google) for reporting this
+  issue."
+date: "2023-03-24"
+pubdate: "2023-03-24"
+affected_range: ">=0.9.7 <0.10.48"
+fixed_versions:
+- "0.10.48"
+affected_versions: "All versions starting from 0.9.7 before 0.10.48"
+not_impacted: "All versions before 0.9.7, all versions starting from 0.10.48"
+solution: "Upgrade to version 0.10.48 or above."
+urls:
+- "https://github.com/advisories/GHSA-3gxf-9r58-2ghg"
+- "https://github.com/sfackler/rust-openssl/pull/1854"
+- "https://rustsec.org/advisories/RUSTSEC-2023-0022.html"
+uuid: "807878be-c064-417a-a62d-7ba152dd982c"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

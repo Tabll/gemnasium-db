@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-9q5j-jm53-v7vr"
+identifiers:
+- "GHSA-9q5j-jm53-v7vr"
+package_slug: "cargo/lz4-sys"
+title: "lz4-sys vulnerable to memory corruption via issue in liblz4"
+description: "lz4-sys up to v1.9.3 bundles a version of liblz4 that is vulnerable
+  to\n[CVE-2021-3520](https://nvd.nist.gov/vuln/detail/CVE-2021-3520).\n\nAttackers
+  could craft a payload that triggers an integer overflow upon\ndecompression, causing
+  an out-of-bounds write.\n\nThe flaw has been corrected in version v1.9.4 of liblz4,
+  which is included\nin lz4-sys 1.9.4."
+date: "2022-09-01"
+pubdate: "2022-09-01"
+affected_range: "<1.9.4"
+fixed_versions:
+- "1.9.4"
+affected_versions: "All versions before 1.9.4"
+not_impacted: "All versions starting from 1.9.4"
+solution: "Upgrade to version 1.9.4 or above."
+urls:
+- "https://github.com/advisories/GHSA-9q5j-jm53-v7vr"
+- "https://github.com/lz4/lz4/pull/972"
+- "https://rustsec.org/advisories/RUSTSEC-2022-0051.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+uuid: "7ff09d10-1256-4efd-adbe-36c58c57e89d"
+cwe_ids:
+- "CWE-190"
+- "CWE-787"
+- "CWE-937"
+- "CWE-1035"

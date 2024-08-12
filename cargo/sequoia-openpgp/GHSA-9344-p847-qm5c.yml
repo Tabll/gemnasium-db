@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-9344-p847-qm5c"
+identifiers:
+- "GHSA-9344-p847-qm5c"
+package_slug: "cargo/sequoia-openpgp"
+title: "Low severity (DoS) vulnerability in sequoia-openpgp"
+description: "There is a denial-of-service vulnerability in sequoia-openpgp, our\ncrate
+  providing a low-level interface to our OpenPGP implementation.\nWhen triggered,
+  the process will enter an infinite loop.\n\nMany thanks to Andrew Gallagher for
+  disclosing the issue to us."
+date: "2024-06-27"
+pubdate: "2024-06-26"
+affected_range: ">=1.13.0 <1.21.0"
+fixed_versions:
+- "1.21.0"
+affected_versions: "All versions starting from 1.13.0 before 1.21.0"
+not_impacted: "All versions before 1.13.0, all versions starting from 1.21.0"
+solution: "Upgrade to version 1.21.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-9344-p847-qm5c"
+- "https://gitlab.com/sequoia-pgp/sequoia"
+- "https://gitlab.com/sequoia-pgp/sequoia/-/issues/1106"
+- "https://rustsec.org/advisories/RUSTSEC-2024-0345.html"
+uuid: "394da35a-0d2b-4a2c-8d58-43f89a8e7152"
+cwe_ids:
+- "CWE-835"
+- "CWE-937"
+- "CWE-1035"

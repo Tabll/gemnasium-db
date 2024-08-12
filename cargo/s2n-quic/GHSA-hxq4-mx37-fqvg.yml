@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-hxq4-mx37-fqvg"
+identifiers:
+- "GHSA-hxq4-mx37-fqvg"
+package_slug: "cargo/s2n-quic"
+title: "s2n-quic potential denial of service vulnerability when receiving empty UDP
+  packets"
+description: "An issue in s2n-quic results in the endpoint shutting down after receiving
+  an empty UDP packet on a connection.\n\nNo AWS services are affected by this issue
+  and customers of AWS services do not need to take action. Applications using s2n-quic
+  should upgrade their application to the most recent release of s2n-quic.\n\nImpacted
+  version: s2n-quic v1.22.0."
+date: "2023-06-30"
+pubdate: "2023-06-30"
+affected_range: ">=1.22.0 <1.23.0||=1.22.0"
+fixed_versions:
+- "1.23.0"
+affected_versions: "All versions starting from 1.22.0 before 1.23.0, version 1.22.0"
+not_impacted: ""
+solution: "Upgrade to version 1.23.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-hxq4-mx37-fqvg"
+- "https://github.com/aws/s2n-quic/security/advisories/GHSA-hxq4-mx37-fqvg"
+- "https://github.com/aws/s2n-quic/commit/4b1d417e9de7eafaf5350553c5fcb9264dfa32f5"
+- "https://github.com/aws/s2n-quic"
+- "https://github.com/aws/s2n-quic/releases/tag/v1.23.0"
+uuid: "b65f7e68-336c-4c6a-abee-67734f8fd230"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,39 @@
+---
+identifier: "GHSA-58j9-j2fj-v8f4"
+identifiers:
+- "GHSA-58j9-j2fj-v8f4"
+package_slug: "cargo/surrealdb"
+title: "SurrealDB vulnerable to Uncontrolled CPU Consumption via WebSocket Interface"
+description: "SurrealDB depends on the `tungstenite` and `tokio-tungstenite` crates
+  used by the `axum` crate, which handles connections to the SurrealDB WebSocket interface.
+  On versions before `0.20.1`, the `tungstenite` crate presented an issue which allowed
+  the parsing of HTTP headers during the client handshake to continuously consume
+  high CPU when the headers were very long. All affected crates have been updated
+  in SurrealDB version `1.1.0`.\n\nFrom the original advisory for [CVE-2023-43669](https://nvd.nist.gov/vuln/detail/CVE-2023-43669):\n\"The
+  Tungstenite crate through 0.20.0 for Rust allows remote attackers to cause a denial
+  of service (minutes of CPU consumption) via an excessive length of an HTTP header
+  in a client handshake. The length affects both how many times a parse is attempted
+  (e.g., thousands of times) and the average amount of data for each parse attempt
+  (e.g., millions of bytes).\""
+date: "2024-01-19"
+pubdate: "2024-01-19"
+affected_range: "<1.1.0"
+fixed_versions:
+- "1.1.0"
+affected_versions: "All versions before 1.1.0"
+not_impacted: "All versions starting from 1.1.0"
+solution: "Upgrade to version 1.1.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-58j9-j2fj-v8f4"
+- "https://github.com/surrealdb/surrealdb/security/advisories/GHSA-58j9-j2fj-v8f4"
+- "https://nvd.nist.gov/vuln/detail/CVE-2023-43669"
+- "https://github.com/snapview/tungstenite-rs/issues/376"
+- "https://github.com/surrealdb/surrealdb/pull/2807"
+- "https://github.com/surrealdb/surrealdb/commit/87859158d3750b03564613de70b5ec4ae090549d"
+- "https://github.com/surrealdb/surrealdb"
+- "https://rustsec.org/advisories/RUSTSEC-2023-0065.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "92ea77e1-73c1-41fc-ad52-7a22b6e5e10f"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

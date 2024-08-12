@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-7fw6-6mfj-g3q2"
+identifiers:
+- "GHSA-7fw6-6mfj-g3q2"
+package_slug: "cargo/ckb"
+title: "ckb: Transaction header_deps validation issue (network forking)"
+description: "fn `HeaderChecker#check_valid` skipped main chain checking after this
+  PR: https://github.com/nervosnetwork/ckb/pull/1646/files#diff-c4e017b67c1b3005ca0c446a9b0879571aa36a858b1f7ddd1b9328a884e3214bR171-R176\n\nIt
+  will cause network forking if one transaction is using a forked block header which
+  is not exists in local node's storage."
+date: "2022-11-02"
+pubdate: "2022-11-02"
+affected_range: "<0.101.1"
+fixed_versions:
+- "0.101.1"
+affected_versions: "All versions before 0.101.1"
+not_impacted: "All versions starting from 0.101.1"
+solution: "Upgrade to version 0.101.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-7fw6-6mfj-g3q2"
+- "https://github.com/nervosnetwork/ckb/security/advisories/GHSA-7fw6-6mfj-g3q2"
+- "https://github.com/nervosnetwork/ckb/pull/1646/files#diff-c4e017b67c1b3005ca0c446a9b0879571aa36a858b1f7ddd1b9328a884e3214bR171-R176"
+- "https://github.com/nervosnetwork/ckb"
+uuid: "c57dcb3e-1524-47d9-ae02-1556b5c5211a"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

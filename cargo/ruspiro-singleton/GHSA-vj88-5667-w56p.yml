@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-vj88-5667-w56p"
+identifiers:
+- "GHSA-vj88-5667-w56p"
+package_slug: "cargo/ruspiro-singleton"
+title: "Singleton lacks bounds on Send and Sync."
+description: "`Singleton<T>` is meant to be a static object that can be initialized
+  lazily. In\norder to satisfy the requirement that `static` items must implement
+  `Sync`,\n`Singleton` implemented both `Sync` and `Send` unconditionally.\n\nThis
+  allows for a bug where non-`Sync` types such as `Cell` can be used in\nsingletons
+  and cause data races in concurrent programs.\n\nThe flaw was corrected in commit
+  `b0d2bd20e` by adding trait bounds, requiring\nthe contaiend type to implement `Sync`."
+date: "2021-08-24"
+pubdate: "2021-08-25"
+affected_range: "<0.4.1"
+fixed_versions:
+- "0.4.1"
+affected_versions: "All versions before 0.4.1"
+not_impacted: "All versions starting from 0.4.1"
+solution: "Upgrade to version 0.4.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-vj88-5667-w56p"
+- "https://github.com/RusPiRo/ruspiro-singleton/issues/10"
+- "https://github.com/RusPiRo/ruspiro-singleton"
+- "https://rustsec.org/advisories/RUSTSEC-2020-0115.html"
+uuid: "9fb68a61-a506-47ea-8436-ff2119e61536"
+cwe_ids:
+- "CWE-362"
+- "CWE-937"
+- "CWE-1035"

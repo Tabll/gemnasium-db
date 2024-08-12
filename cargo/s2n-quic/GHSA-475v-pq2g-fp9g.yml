@@ -1,0 +1,26 @@
+---
+identifier: "GHSA-475v-pq2g-fp9g"
+identifiers:
+- "GHSA-475v-pq2g-fp9g"
+package_slug: "cargo/s2n-quic"
+title: "s2n-quic potential denial of service via crafted stream frames"
+description: "An issue in s2n-quic could result in unnecessary resource utilization
+  when peers open streams beyond advertised limits.\n\nImpacted versions: <= v1.30.0."
+date: "2023-11-08"
+pubdate: "2023-11-08"
+affected_range: "<1.31.0"
+fixed_versions:
+- "1.31.0"
+affected_versions: "All versions before 1.31.0"
+not_impacted: "All versions starting from 1.31.0"
+solution: "Upgrade to version 1.31.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-475v-pq2g-fp9g"
+- "https://github.com/aws/s2n-quic/security/advisories/GHSA-475v-pq2g-fp9g"
+- "https://github.com/aws/s2n-quic/commit/73e66b066de4940d129dbf33d91c39170eb4c38d"
+- "https://github.com/aws/s2n-quic"
+- "https://github.com/aws/s2n-quic/releases/tag/v1.31.0"
+uuid: "c1a2fc90-8f80-4ed3-a3b6-82b1434d27e3"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-xpp3-xrff-w6rh"
+identifiers:
+- "GHSA-xpp3-xrff-w6rh"
+package_slug: "cargo/rocksdb"
+title: "rocksdb vulnerable to out-of-bounds read"
+description: "Affected versions of this crate called the RocksDB C API\n`rocksdb_open_column_families_with_ttl()`
+  with a pointer to a single integer\nTTL value, but one TTL value for each column
+  family is expected.\n\nThis is only relevant when using\n`rocksdb::DBWithThreadMode::open_cf_descriptors_with_ttl()`
+  with multiple\ncolumn families.\n\nThis bug has been fixed in v0.19.0."
+date: "2022-08-12"
+pubdate: "2022-08-12"
+affected_range: "<0.19.0"
+fixed_versions:
+- "0.19.0"
+affected_versions: "All versions before 0.19.0"
+not_impacted: "All versions starting from 0.19.0"
+solution: "Upgrade to version 0.19.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-xpp3-xrff-w6rh"
+- "https://github.com/rust-rocksdb/rust-rocksdb/pull/616"
+- "https://github.com/rust-rocksdb/rust-rocksdb"
+- "https://github.com/rust-rocksdb/rust-rocksdb/releases/tag/v0.19.0"
+- "https://rustsec.org/advisories/RUSTSEC-2022-0046.html"
+uuid: "faa46b44-185a-4d2c-bee1-49ef3b06ca3b"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

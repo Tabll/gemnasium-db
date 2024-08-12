@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-6878-6wc2-pf5h"
+identifiers:
+- "GHSA-6878-6wc2-pf5h"
+package_slug: "cargo/cocoon"
+title: "Sequential calls of encryption API (`encrypt`, `wrap`, and `dump`) result
+  in nonce reuse"
+description: "**Problem**: Trying to create a new encrypted message with the same
+  cocoon object generates the same ciphertext. It mostly affects `MiniCocoon` and
+  `Cocoon` objects with custom seeds and RNGs (where `StdRng` is used under the hood).\n\n**Note**:
+  The issue does **NOT** affect objects created with **`Cocoon::new`** which utilizes
+  `ThreadRng`.\n\n**Cause**: `StdRng` produces the same nonce because `StdRng::clone`
+  resets its state.\n\n**Measure**: Make encryption API mutable (`encrypt`, `wrap`,
+  and `dump`).\n\n**Workaround**: Create a new cocoon object with a new **seed** per
+  each encryption."
+date: "2023-10-24"
+pubdate: "2023-10-24"
+affected_range: "<0.4.0"
+fixed_versions:
+- "0.4.0"
+affected_versions: "All versions before 0.4.0"
+not_impacted: "All versions starting from 0.4.0"
+solution: "Upgrade to version 0.4.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-6878-6wc2-pf5h"
+- "https://github.com/fadeevab/cocoon/issues/22"
+- "https://github.com/fadeevab/cocoon/commit/1b6392173ce35db4736a94b62b2d2973f9a71441"
+- "https://github.com/fadeevab/cocoon/commit"
+- "https://rustsec.org/advisories/RUSTSEC-2023-0068.html"
+cvss_v3: "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:C/C:L/I:L/A:N"
+uuid: "a979fec3-206e-4e97-8c53-d5373fe7f4b7"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

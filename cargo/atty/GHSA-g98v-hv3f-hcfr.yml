@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-g98v-hv3f-hcfr"
+identifiers:
+- "GHSA-g98v-hv3f-hcfr"
+package_slug: "cargo/atty"
+title: "atty potential unaligned read"
+description: "On windows, `atty` dereferences a potentially unaligned pointer.\n\nIn
+  practice however, the pointer won't be unaligned unless a custom global allocator
+  is used.\n\nIn particular, the `System` allocator on windows uses `HeapAlloc`, which
+  guarantees a large enough alignment."
+date: "2024-02-14"
+pubdate: "2023-06-30"
+affected_range: "<=0.2.14"
+fixed_versions: []
+affected_versions: "All versions up to 0.2.14"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-g98v-hv3f-hcfr"
+- "https://github.com/softprops/atty/issues/50"
+- "https://github.com/softprops/atty/pull/51"
+- "https://github.com/softprops/atty"
+- "https://rustsec.org/advisories/RUSTSEC-2021-0145.html"
+uuid: "7081f703-a523-4642-8448-06ec231e3aaf"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

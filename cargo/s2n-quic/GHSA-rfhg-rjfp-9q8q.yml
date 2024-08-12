@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-rfhg-rjfp-9q8q"
+identifiers:
+- "GHSA-rfhg-rjfp-9q8q"
+package_slug: "cargo/s2n-quic"
+title: "Potential denial of service after connection migration"
+description: "An issue in s2n-quic results in the endpoint shutting down due to a
+  combination of peer-initiated connection migration and duplicate new connection
+  ID frames being received. No AWS services are affected by this issue, and customers
+  of AWS services do not need to take action.\n\nImpacted versions: <=v1.24.0"
+date: "2023-07-24"
+pubdate: "2023-07-24"
+affected_range: "<1.25.0"
+fixed_versions:
+- "1.25.0"
+affected_versions: "All versions before 1.25.0"
+not_impacted: "All versions starting from 1.25.0"
+solution: "Upgrade to version 1.25.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-rfhg-rjfp-9q8q"
+- "https://github.com/aws/s2n-quic/security/advisories/GHSA-rfhg-rjfp-9q8q"
+- "https://github.com/aws/s2n-quic/commit/73a814240c5db6fae261a6e4ab567b0b094a35db"
+- "https://github.com/aws/s2n-quic"
+uuid: "097f8f2b-056d-4dc0-99ac-d8399a7391bd"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

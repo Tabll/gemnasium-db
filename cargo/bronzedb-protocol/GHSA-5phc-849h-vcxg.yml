@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-5phc-849h-vcxg"
+identifiers:
+- "GHSA-5phc-849h-vcxg"
+package_slug: "cargo/bronzedb-protocol"
+title: "`Read` on uninitialized buffer can cause UB (impl of `ReadKVExt`)"
+description: "Affected versions of this crate passes an uninitialized buffer to a
+  user-provided `Read` implementation.\nArbitrary `Read` implementations can read
+  from the uninitialized buffer (memory exposure) and also can return incorrect number
+  of bytes written to the buffer.\nReading from uninitialized memory produces undefined
+  values that can quickly invoke undefined behavior."
+date: "2023-06-13"
+pubdate: "2022-06-16"
+affected_range: "<=0.1.0"
+fixed_versions: []
+affected_versions: "All versions up to 0.1.0"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-5phc-849h-vcxg"
+- "https://github.com/Hexilee/BronzeDB/issues/1"
+- "https://github.com/Hexilee/BronzeDB"
+- "https://rustsec.org/advisories/RUSTSEC-2021-0084.html"
+uuid: "9da51909-3888-4f2c-94fd-60dfd5622a2f"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

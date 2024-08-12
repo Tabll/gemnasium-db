@@ -36,7 +36,7 @@ def validate_unique_names(dir)
   grouped_slugs.each do |typ, slugs|
     seen = {}
     case typ
-    when 'pypi', 'gem', 'nuget', 'go', 'swift'
+    when 'pypi', 'gem', 'nuget', 'go', 'swift', 'cargo'
       slugs.each do |slug, _|
         hashed_slug = generate_package_hash(slug)
 

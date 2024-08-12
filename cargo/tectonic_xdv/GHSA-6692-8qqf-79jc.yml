@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-6692-8qqf-79jc"
+identifiers:
+- "GHSA-6692-8qqf-79jc"
+package_slug: "cargo/tectonic_xdv"
+title: "`Read` on uninitialized buffer may cause UB ('tectonic_xdv' crate)"
+description: "Affected versions of this crate passes an uninitialized buffer to a
+  user-provided `Read` implementation.\n\nArbitrary `Read` implementations can read
+  from the uninitialized buffer (memory exposure) and also can return incorrect number
+  of bytes written to the buffer. Reading from uninitialized memory produces undefined
+  values that can quickly invoke undefined behavior.\n\nThe problem was fixed in commit
+  `cdff034` by zero-initializing the buffer before passing it to a user-provided `Read`
+  implementation."
+date: "2022-06-17"
+pubdate: "2022-06-17"
+affected_range: "<0.1.12"
+fixed_versions:
+- "0.1.12"
+affected_versions: "All versions before 0.1.12"
+not_impacted: "All versions starting from 0.1.12"
+solution: "Upgrade to version 0.1.12 or above."
+urls:
+- "https://github.com/advisories/GHSA-6692-8qqf-79jc"
+- "https://github.com/tectonic-typesetting/tectonic/issues/752"
+- "https://github.com/tectonic-typesetting/tectonic/commit/cdff034e6d93cdfdafd13d8c6956e22fa5a57b79"
+- "https://github.com/tectonic-typesetting/tectonic"
+- "https://rustsec.org/advisories/RUSTSEC-2021-0112.html"
+uuid: "ddd2a9c9-d233-4c4c-b489-88dc2d65439b"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

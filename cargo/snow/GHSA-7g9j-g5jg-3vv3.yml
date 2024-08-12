@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-7g9j-g5jg-3vv3"
+identifiers:
+- "GHSA-7g9j-g5jg-3vv3"
+package_slug: "cargo/snow"
+title: "Unauthenticated Nonce Increment in snow"
+description: "There was a logic bug where unauthenticated payloads could still cause
+  a nonce increment in snow's internal state. For an attacker with the ability to
+  inject packets into the channel Noise is talking over, this allows a denial-of-service
+  type attack which could prevent communication as it causes the sending and receiving
+  side to be expecting different nonce values than would arrive.\n\nNote that this
+  only affects those who are using the stateful `TransportState`, not those using
+  `StatelessTransportState`."
+date: "2024-02-09"
+pubdate: "2024-01-24"
+affected_range: "<0.9.5"
+fixed_versions:
+- "0.9.5"
+affected_versions: "All versions before 0.9.5"
+not_impacted: "All versions starting from 0.9.5"
+solution: "Upgrade to version 0.9.5 or above."
+urls:
+- "https://github.com/advisories/GHSA-7g9j-g5jg-3vv3"
+- "https://github.com/mcginty/snow/security/advisories/GHSA-7g9j-g5jg-3vv3"
+- "https://github.com/mcginty/snow/commit/12e8ae55547ae297d5f70599e5c884ea891303eb"
+- "https://github.com/mcginty/snow"
+- "https://rustsec.org/advisories/RUSTSEC-2024-0011.html"
+uuid: "e58b5db9-31f3-4d39-91c5-bb84cd0ae995"
+cwe_ids:
+- "CWE-440"
+- "CWE-937"
+- "CWE-1035"

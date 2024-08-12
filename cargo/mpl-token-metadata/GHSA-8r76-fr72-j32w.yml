@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-8r76-fr72-j32w"
+identifiers:
+- "GHSA-8r76-fr72-j32w"
+package_slug: "cargo/mpl-token-metadata"
+title: "Creator Verification Error when Bubblegum Activate"
+description: "This was an error found by @metamania01 of the Audit Company Solshield.\n\nIt
+  allowed one to verify a creator that did not sign by making use of a provision in
+  Token Metadata that allows Creators who have signed compressed nfts to allow them
+  to decompress with verified creators.\n\nThe issue is now patched.\nFor more info
+  see.\nhttps://twitter.com/thehasheddude/status/1601642138143375360"
+date: "2022-12-12"
+pubdate: "2022-12-12"
+affected_range: ">=1.5.0 <1.6.3"
+fixed_versions:
+- "1.6.3"
+affected_versions: "All versions starting from 1.5.0 before 1.6.3"
+not_impacted: "All versions before 1.5.0, all versions starting from 1.6.3"
+solution: "Upgrade to version 1.6.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-8r76-fr72-j32w"
+- "https://github.com/metaplex-foundation/metaplex-program-library/security/advisories/GHSA-8r76-fr72-j32w"
+- "https://github.com/metaplex-foundation/metaplex-program-library/commit/c18591a7ce9bb561940cb94df4b7c35ef9cc0f57"
+- "https://github.com/metaplex-foundation/metaplex-program-library"
+- "https://twitter.com/thehasheddude/status/1601642138143375360"
+uuid: "3de9e24b-5285-4217-853a-0bfed6f49b66"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

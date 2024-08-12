@@ -1,0 +1,44 @@
+---
+identifier: "GHSA-3mv5-343c-w2qg"
+identifiers:
+- "GHSA-3mv5-343c-w2qg"
+package_slug: "cargo/zerocopy"
+title: "Ref methods into_ref, into_mut, into_slice, and into_slice_mut are unsound
+  when used with cell::Ref or cell::RefMut"
+description: "*This advisory is also published as [RUSTSEC-2023-0074](https://rustsec.org/advisories/RUSTSEC-2023-0074.html).*\n\nThe
+  `Ref` methods `into_ref`, `into_mut`, `into_slice`, and `into_slice_mut` are unsound
+  and may allow safe code to exhibit undefined behavior when used with `Ref<B, T>`
+  where `B` is [`cell::Ref`](https://doc.rust-lang.org/core/cell/struct.Ref.html)
+  or [`cell::RefMut`](https://doc.rust-lang.org/core/cell/struct.RefMut.html). Note
+  that these methods remain sound when used with `B` types other than `cell::Ref`
+  or `cell::RefMut`.\n\nSee https://github.com/google/zerocopy/issues/716 for a more
+  in-depth analysis.\n\nThe current plan is to yank the affected versions soon. See
+  https://github.com/google/zerocopy/issues/679 for more detail."
+date: "2024-02-12"
+pubdate: "2023-12-15"
+affected_range: ">=0.2.2 <0.2.9||>=0.3.0 <0.3.2||>=0.4.0 <0.4.1||=0.4.0||>=0.5.0 <0.5.2||>=0.6.0
+  <0.6.6||>=0.7.0 <0.7.31"
+fixed_versions:
+- "0.2.9"
+- "0.3.2"
+- "0.4.1"
+- "0.5.2"
+- "0.6.6"
+- "0.7.31"
+affected_versions: "All versions starting from 0.2.2 before 0.2.9, all versions starting
+  from 0.3.0 before 0.3.2, all versions starting from 0.4.0 before 0.4.1, version
+  0.4.0, all versions starting from 0.5.0 before 0.5.2, all versions starting from
+  0.6.0 before 0.6.6, all versions starting from 0.7.0 before 0.7.31"
+not_impacted: ""
+solution: "Upgrade to versions 0.2.9, 0.3.2, 0.4.1, 0.5.2, 0.6.6, 0.7.31 or above."
+urls:
+- "https://github.com/advisories/GHSA-3mv5-343c-w2qg"
+- "https://github.com/google/zerocopy/security/advisories/GHSA-3mv5-343c-w2qg"
+- "https://github.com/google/zerocopy/issues/679"
+- "https://github.com/google/zerocopy/issues/716"
+- "https://github.com/google/zerocopy"
+- "https://rustsec.org/advisories/RUSTSEC-2023-0074.html"
+uuid: "a72dc583-dfd6-4d02-b1a8-14cfbb34adda"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

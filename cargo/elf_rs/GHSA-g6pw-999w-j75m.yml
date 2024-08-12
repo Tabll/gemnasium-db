@@ -1,0 +1,37 @@
+---
+identifier: "GHSA-g6pw-999w-j75m"
+identifiers:
+- "GHSA-g6pw-999w-j75m"
+package_slug: "cargo/elf_rs"
+title: "ELF header parsing library doesn't check for valid offset"
+description: "The crate has several unsafe sections that don't perform proper pointer
+  validation.\n\nAn example can be found in the following function:\n\n```\nfn section_header_raw(&self)
+  -> &[ET::SectionHeader] {\nlet sh_off = self.elf_header().section_header_offset()
+  as usize;\nlet sh_num = self.elf_header().section_header_entry_num() as usize;\nunsafe
+  {\nlet sh_ptr = self.content().as_ptr().add(sh_off);\nfrom_raw_parts(sh_ptr as *const
+  ET::SectionHeader, sh_num)\n}\n}\n```\n\nWhile this will work perfectly fine *if*
+  the ELF header is valid, malicious or malformed input can contain a section header
+  offset of an arbitrary size, meaning that the resultant pointer in the unsafe block
+  can point to an artibrary address in the address space of the process.\n\nThis can
+  result in unpredictable behaviour, and in our fuzz testing, we discovered that it's
+  trivial to cause SIGABRT (signal 6), or SEGV (signal 11).\n\nThe function should
+  either be marked as unsafe, with a note that the caller is responsible for providing
+  only valid inputs, or it should ideally do the due diligence to ensure that the
+  offset doesn't exceed the bounds of the header (and add additional checks as necessary)."
+date: "2023-01-20"
+pubdate: "2023-01-20"
+affected_range: "<0.3.0"
+fixed_versions:
+- "0.3.0"
+affected_versions: "All versions before 0.3.0"
+not_impacted: "All versions starting from 0.3.0"
+solution: "Upgrade to version 0.3.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-g6pw-999w-j75m"
+- "https://github.com/vincenthouyi/elf_rs/issues/11"
+- "https://github.com/vincenthouyi/elf_rs"
+- "https://rustsec.org/advisories/RUSTSEC-2022-0079.html"
+uuid: "0eceaf03-1af3-41bf-aa58-bfdf98edd1f1"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

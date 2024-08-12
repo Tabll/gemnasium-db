@@ -1,0 +1,24 @@
+---
+identifier: "GHSA-8q5c-93vg-c747"
+identifiers:
+- "GHSA-8q5c-93vg-c747"
+package_slug: "cargo/toolshed"
+title: "WITHDRAWN"
+description: "WITHDRAWN"
+date: "2021-08-19"
+pubdate: "2021-08-25"
+affected_range: "<=0.8.1"
+fixed_versions: []
+affected_versions: "All versions up to 0.8.1"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-8q5c-93vg-c747"
+- "https://github.com/ratel-rust/toolshed/issues/12"
+- "https://github.com/ratel-rust/toolshed"
+- "https://rustsec.org/advisories/RUSTSEC-2020-0136.html"
+uuid: "9180708c-3b36-4efd-bb9a-6817532f5024"
+cwe_ids:
+- "CWE-362"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-22q8-ghmq-63vf"
+identifiers:
+- "GHSA-22q8-ghmq-63vf"
+package_slug: "cargo/libgit2-sys"
+title: "libgit2-sys affected by memory corruption, denial of service, and arbitrary
+  code execution in libgit2"
+description: "The [libgit2](https://github.com/libgit2/libgit2/) project fixed three
+  security issues in the 1.7.2 release. These issues are:"
+date: "2024-02-12"
+pubdate: "2024-02-12"
+affected_range: "<0.16.2"
+fixed_versions:
+- "0.16.2"
+affected_versions: "All versions before 0.16.2"
+not_impacted: "All versions starting from 0.16.2"
+solution: "Upgrade to version 0.16.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-22q8-ghmq-63vf"
+- "https://github.com/rust-lang/git2-rs/pull/1017"
+- "https://github.com/rust-lang/git2-rs/commit/9e57876be78924c1e5f3f268bb599e3981fe58bb"
+- "https://github.com/rust-lang/git2-rs"
+- "https://rustsec.org/advisories/RUSTSEC-2024-0013.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:L"
+uuid: "38227ad5-0e0d-4e55-8dc5-943a33e605a8"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

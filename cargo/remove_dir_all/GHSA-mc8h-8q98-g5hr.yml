@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-mc8h-8q98-g5hr"
+identifiers:
+- "GHSA-mc8h-8q98-g5hr"
+package_slug: "cargo/remove_dir_all"
+title: "Race Condition Enabling Link Following and Time-of-check Time-of-use (TOCTOU)
+  Race Condition in remove_dir_all"
+description: "The `remove_dir_all` crate is a Rust library that offers additional
+  features over the Rust standard library `fs::remove_dir_all` function. It suffers
+  the same class of failure as the code it was layering over: TOCTOU race conditions,
+  with the ability to cause arbitrary paths to be deleted by substituting a symlink
+  for a path after the type of the path was checked.\n\nThanks to the Rust security
+  team for identifying the problem and alerting us to it."
+date: "2023-02-24"
+pubdate: "2023-02-24"
+affected_range: "<0.8.0"
+fixed_versions:
+- "0.8.0"
+affected_versions: "All versions before 0.8.0"
+not_impacted: "All versions starting from 0.8.0"
+solution: "Upgrade to version 0.8.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-mc8h-8q98-g5hr"
+- "https://github.com/XAMPPRocky/remove_dir_all/security/advisories/GHSA-mc8h-8q98-g5hr"
+- "https://github.com/XAMPPRocky/remove_dir_all/commit/7247a8b6ee59fc99bbb69ca6b3ca4bfd8c809ead"
+- "https://github.com/XAMPPRocky/remove_dir_all"
+- "https://rustsec.org/advisories/RUSTSEC-2023-0018.html"
+uuid: "a7a4f5a6-d9eb-426f-8dda-0af7e6756a97"
+cwe_ids:
+- "CWE-366"
+- "CWE-367"
+- "CWE-937"
+- "CWE-1035"

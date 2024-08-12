@@ -1,0 +1,26 @@
+---
+identifier: "GHSA-xcf7-rvmh-g6q4"
+identifiers:
+- "GHSA-xcf7-rvmh-g6q4"
+package_slug: "cargo/openssl"
+title: "`openssl` `X509VerifyParamRef::set_host` buffer over-read"
+description: "When this function was passed an empty string, `openssl` would attempt
+  to call `strlen` on it, reading arbitrary memory until it reached a NUL byte."
+date: "2023-06-21"
+pubdate: "2023-06-21"
+affected_range: ">=0.10.0 <0.10.55"
+fixed_versions:
+- "0.10.55"
+affected_versions: "All versions starting from 0.10.0 before 0.10.55"
+not_impacted: "All versions before 0.10.0, all versions starting from 0.10.55"
+solution: "Upgrade to version 0.10.55 or above."
+urls:
+- "https://github.com/advisories/GHSA-xcf7-rvmh-g6q4"
+- "https://github.com/sfackler/rust-openssl/issues/1965"
+- "https://github.com/sfackler/rust-openssl/pull/1968"
+- "https://github.com/sfackler/rust-openssl"
+- "https://rustsec.org/advisories/RUSTSEC-2023-0044.html"
+uuid: "07515ec4-36e1-493d-b0df-845e5da3ae2d"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

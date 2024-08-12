@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-f2wx-xjfw-xjv6"
+identifiers:
+- "GHSA-f2wx-xjfw-xjv6"
+package_slug: "cargo/topgrade"
+title: "topgrade Time-of-check Time-of-use (TOCTOU) Race Condition in remove_dir_all"
+description: "https://github.com/advisories/GHSA-mc8h-8q98-g5hr\nhttps://github.com/XAMPPRocky/remove_dir_all/commit/7247a8b6ee59fc99bbb69ca6b3ca4bfd8c809ead\n\n`tempfile`
+  v0.4.26 ships with affected `remove_dir_all` v0.5.3 and so blocks my deployment
+  of v12 to openSUSE distribution because it imposes a clean `cargo audit`\n\nUpdating
+  `tempfile` is warranted"
+date: "2023-07-17"
+pubdate: "2023-07-17"
+affected_range: "<12.0.1"
+fixed_versions:
+- "12.0.1"
+affected_versions: "All versions before 12.0.1"
+not_impacted: "All versions starting from 12.0.1"
+solution: "Upgrade to version 12.0.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-f2wx-xjfw-xjv6"
+- "https://github.com/topgrade-rs/topgrade/security/advisories/GHSA-f2wx-xjfw-xjv6"
+- "https://github.com/XAMPPRocky/remove_dir_all/commit/7247a8b6ee59fc99bbb69ca6b3ca4bfd8c809ead"
+- "https://github.com/advisories/GHSA-mc8h-8q98-g5hr"
+- "https://github.com/topgrade-rs/topgrade"
+- "https://github.com/topgrade-rs/topgrade/releases/tag/v12.0.0"
+uuid: "f55d5351-63f8-4d62-b6ef-00b0507f5bbc"
+cwe_ids:
+- "CWE-367"
+- "CWE-937"
+- "CWE-1035"

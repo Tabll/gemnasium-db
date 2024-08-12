@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-rwf4-gx62-rqfw"
+identifiers:
+- "GHSA-rwf4-gx62-rqfw"
+package_slug: "cargo/crossbeam"
+title: "`MsQueue` `push`/`pop` use the wrong orderings"
+description: "Affected versions of this crate use orderings which are too weak to
+  support this data structure.\nIt is likely this has caused memory corruption in
+  the wild: <https://github.com/crossbeam-rs/crossbeam/issues/97#issuecomment-412785919>."
+date: "2022-06-08"
+pubdate: "2022-06-08"
+affected_range: "<0.3.0"
+fixed_versions:
+- "0.3.0"
+affected_versions: "All versions before 0.3.0"
+not_impacted: "All versions starting from 0.3.0"
+solution: "Upgrade to version 0.3.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-rwf4-gx62-rqfw"
+- "https://github.com/crossbeam-rs/crossbeam/issues/97#issuecomment-412785919"
+- "https://github.com/crossbeam-rs/crossbeam/pull/98"
+- "https://github.com/crossbeam-rs/crossbeam"
+- "https://rustsec.org/advisories/RUSTSEC-2022-0029.html"
+uuid: "c0fe38c8-52f0-406f-accf-55cc2f1b8762"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

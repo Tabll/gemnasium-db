@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-39vw-qp34-rmwf"
+identifiers:
+- "GHSA-39vw-qp34-rmwf"
+package_slug: "cargo/serde_yaml"
+title: "Uncontrolled recursion leads to abort in deserialization"
+description: "Affected versions of this crate did not properly check for recursion
+  while deserializing aliases. This allows an attacker to make a YAML file with an
+  alias referring to itself causing an abort. The flaw was corrected by checking the
+  recursion depth."
+date: "2023-06-13"
+pubdate: "2021-08-25"
+affected_range: ">=0.6.0-rc1 <0.8.4"
+fixed_versions:
+- "0.8.4"
+affected_versions: "All versions starting from 0.6.0-rc1 before 0.8.4"
+not_impacted: "All versions before 0.6.0-rc1, all versions starting from 0.8.4"
+solution: "Upgrade to version 0.8.4 or above."
+urls:
+- "https://github.com/advisories/GHSA-39vw-qp34-rmwf"
+- "https://github.com/dtolnay/serde-yaml/pull/105"
+- "https://github.com/dtolnay/serde-yaml/commit/b93aff6e904cffbbfd1f421b82f6dcc5ca19a4fd"
+- "https://github.com/dtolnay/serde-yaml"
+- "https://rustsec.org/advisories/RUSTSEC-2018-0005.html"
+uuid: "7e814e7c-37ff-4849-a8b2-5828542715eb"
+cwe_ids:
+- "CWE-674"
+- "CWE-937"
+- "CWE-1035"

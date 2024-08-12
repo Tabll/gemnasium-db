@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-q73f-w3h7-7wcc"
+identifiers:
+- "GHSA-q73f-w3h7-7wcc"
+package_slug: "cargo/ckb"
+title: "Nervos CKB Transaction which calls syscall load_cell_data_hash has nondeterministic
+  result"
+description: "Tx-pool verify transaction which inputs' script contains `load_cell_data_hash`
+  is nondeterministic"
+date: "2024-02-03"
+pubdate: "2024-02-03"
+affected_range: "<0.34.2"
+fixed_versions:
+- "0.34.2"
+affected_versions: "All versions before 0.34.2"
+not_impacted: "All versions starting from 0.34.2"
+solution: "Upgrade to version 0.34.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-q73f-w3h7-7wcc"
+- "https://github.com/nervosnetwork/ckb/security/advisories/GHSA-q73f-w3h7-7wcc"
+- "https://github.com/nervosnetwork/ckb/commit/01eb5b2ecadf7e421b117d6c013e182978746e2f"
+- "https://github.com/nervosnetwork/ckb/commit/fe83220905599e72c97878295f4769e91348d738"
+- "https://github.com/nervosnetwork/ckb/commit/ff88b48779358e038209f3ac1bc1061e6f4deb13"
+uuid: "5f7d5ea2-2c45-43a4-b804-8071c4cfb75d"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-mpg5-fvwp-42m2"
+identifiers:
+- "GHSA-mpg5-fvwp-42m2"
+package_slug: "cargo/dashmap"
+title: "Unsoundness in `dashmap` references"
+description: "Reference returned by some methods of `Ref` (and similar types) may
+  outlive the `Ref` and escape the lock.\nThis causes undefined behavior and may result
+  in a segfault.\n\nMore information in [`dashmap#167`](https://github.com/xacrimon/dashmap/issues/167)
+  issue."
+date: "2022-06-16"
+pubdate: "2022-06-16"
+affected_range: ">=5.0.0 <5.1.0||=5.0.0"
+fixed_versions:
+- "5.1.0"
+affected_versions: "All versions starting from 5.0.0 before 5.1.0, version 5.0.0"
+not_impacted: ""
+solution: "Upgrade to version 5.1.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-mpg5-fvwp-42m2"
+- "https://github.com/xacrimon/dashmap/issues/167"
+- "https://github.com/xacrimon/dashmap"
+- "https://rustsec.org/advisories/RUSTSEC-2022-0002.html"
+uuid: "f54bdf5d-bbfc-4d8f-8cde-7c67830051f0"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

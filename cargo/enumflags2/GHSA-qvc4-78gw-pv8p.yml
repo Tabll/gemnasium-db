@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-qvc4-78gw-pv8p"
+identifiers:
+- "GHSA-qvc4-78gw-pv8p"
+package_slug: "cargo/enumflags2"
+title: "Adverserial use of `make_bitflags!` macro can cause undefined behavior"
+description: "The macro relied on an expression of the form `Enum::Variant` always
+  being a\nvariant of the enum. However, it may also be an associated integer constant,
+  in\nwhich case there's no guarantee that the value of said constant consists only
+  of\nbits valid for this bitflag type.\n\nThus, code like this could create an invalid
+  `BitFlags<Test>`, which would cause\niterating over it to trigger undefined behavior.
+  As the debug formatter\ninternally iterates over the value, it is also affected.\n\n```rust\nuse
+  enumflags2::{bitflags, make_bitflags};"
+date: "2023-04-24"
+pubdate: "2023-04-24"
+affected_range: ">=0.7.0 <0.7.7"
+fixed_versions:
+- "0.7.7"
+affected_versions: "All versions starting from 0.7.0 before 0.7.7"
+not_impacted: "All versions before 0.7.0, all versions starting from 0.7.7"
+solution: "Upgrade to version 0.7.7 or above."
+urls:
+- "https://github.com/advisories/GHSA-qvc4-78gw-pv8p"
+- "https://github.com/meithecatte/enumflags2"
+- "https://github.com/meithecatte/enumflags2/releases/tag/v0.7.7"
+- "https://rustsec.org/advisories/RUSTSEC-2023-0035.html"
+uuid: "e6c99ff9-e0de-4f5c-ad66-a0e332869aa5"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-3xc6-7h59-j2x4"
+identifiers:
+- "GHSA-3xc6-7h59-j2x4"
+package_slug: "cargo/eza"
+title: "Duplicate Advisory: eza Potential Heap Overflow Vulnerability for AArch64"
+description: "## Duplicate Advisory\nThis advisory has been withdrawn because it is
+  a duplicate of GHSA-3qx3-6hxr-j2ch. This link is maintained to preserve external
+  references.\n\n## Original Description\nBuffer Overflow vulnerability in eza before
+  version 0.18.2, allows local attackers to execute arbitrary code via the .git/HEAD,
+  .git/refs, and .git/objects components."
+date: "2024-03-06"
+pubdate: "2024-03-06"
+affected_range: "<0.18.2"
+fixed_versions:
+- "0.18.2"
+affected_versions: "All versions before 0.18.2"
+not_impacted: "All versions starting from 0.18.2"
+solution: "Upgrade to version 0.18.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-3xc6-7h59-j2x4"
+- "https://nvd.nist.gov/vuln/detail/CVE-2024-25817"
+- "https://github.com/advisories/GHSA-3qx3-6hxr-j2ch"
+- "https://www.cubeyond.net/blog/my-cves/eza-cve-report"
+uuid: "4774634b-bc22-4182-aa3d-399542763006"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

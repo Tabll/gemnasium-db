@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-m24x-r6q3-2vp9"
+identifiers:
+- "GHSA-m24x-r6q3-2vp9"
+package_slug: "cargo/surrealdb"
+title: "Uncaught Exception processing HTTP Headers in SurrealDB"
+description: "The `ID`, `DB` and `NS` headers accepted by the SurrealDB HTTP REST
+  API would fail to parse when containing some special characters. This would cause
+  a panic which would crash the SurrealDB server, leading to denial of service.\n\nThis
+  issue only affects the SurrealDB binary; it does not affect the SurrealDB library."
+date: "2024-01-18"
+pubdate: "2024-01-18"
+affected_range: "<1.1.0"
+fixed_versions:
+- "1.1.0"
+affected_versions: "All versions before 1.1.0"
+not_impacted: "All versions starting from 1.1.0"
+solution: "Upgrade to version 1.1.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-m24x-r6q3-2vp9"
+- "https://github.com/surrealdb/surrealdb/security/advisories/GHSA-m24x-r6q3-2vp9"
+- "https://github.com/surrealdb/surrealdb/pull/2985"
+- "https://github.com/surrealdb/surrealdb/commit/a70ddb2e2aed2453730b81781e426486247609cb"
+- "https://github.com/surrealdb/surrealdb"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "577facd3-8809-49ff-b492-80ba33e76a12"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

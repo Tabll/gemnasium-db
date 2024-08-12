@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-x5j2-g63m-f8g4"
+identifiers:
+- "GHSA-x5j2-g63m-f8g4"
+package_slug: "cargo/pqc_kyber"
+title: "pqc_kyber KyberSlash: division timings depending on secrets"
+description: "Various Kyber software libraries in various environments leak secret
+  information into timing, specifically because\n\n* these libraries include a line
+  of code that divides a secret numerator by a public denominator,\n* the number of
+  CPU cycles for division in various environments varies depending on the inputs to
+  the division, and\n* this variation appears within the range of numerators used
+  in these libraries.\n\nThe KyberSlash pages track which Kyber [libraries](https://kyberslash.cr.yp.to/libraries.html)
+  have this issue, and include a [FAQ](https://kyberslash.cr.yp.to/faq.html) about
+  the issue."
+date: "2024-04-15"
+pubdate: "2024-02-09"
+affected_range: "<=0.7.1"
+fixed_versions: []
+affected_versions: "All versions up to 0.7.1"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-x5j2-g63m-f8g4"
+- "https://github.com/Argyle-Software/kyber/issues/108"
+- "https://github.com/bwesterb/argyle-kyber/commit/b5c6ad13f4eece80e59c6ebeafd787ba1519f5f6"
+- "https://github.com/Argyle-Software/kyber"
+- "https://rustsec.org/advisories/RUSTSEC-2023-0079.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N"
+uuid: "ef1a9845-e255-4c05-a04c-27194bd91698"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

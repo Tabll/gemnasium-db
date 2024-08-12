@@ -1,0 +1,38 @@
+---
+identifier: "GHSA-4q83-7cq4-p6wg"
+identifiers:
+- "GHSA-4q83-7cq4-p6wg"
+package_slug: "cargo/tokio"
+title: "`tokio::io::ReadHalf<T>::unsplit` is Unsound"
+description: "`tokio::io::ReadHalf<T>::unsplit` can violate the `Pin` contract\n\nThe
+  soundness issue is described in the [tokio/issues#5372](https://github.com/tokio-rs/tokio/issues/5372)\n\nSpecific
+  set of conditions needed to trigger an issue (a !Unpin type in ReadHalf)\nis unusual,
+  combined with the difficulty of making any arbitrary use-after-free\nexploitable
+  in Rust without doing a lot of careful alignment of data types in\nthe surrounding
+  code.\n\nThe `tokio` feature `io-util` is also required to be enabled to trigger
+  this\nsoundness issue.\n\nThanks to zachs18 reporting the issue to Tokio team responsibly
+  and taiki-e\nand carllerche appropriately responding and fixing the soundness bug.\n\nTokio
+  before 0.2.0 used `futures` 0.1 that did not have `Pin`, so it is not\naffected
+  by this issue."
+date: "2023-02-04"
+pubdate: "2023-02-04"
+affected_range: ">=1.21.0 <1.24.2||>=1.19.0 <1.20.4||>=0.2.0 <1.18.5"
+fixed_versions:
+- "1.24.2"
+- "1.20.4"
+- "1.18.5"
+affected_versions: "All versions starting from 0.2.0 before 1.18.5, all versions starting
+  from 1.19.0 before 1.20.4, all versions starting from 1.21.0 before 1.24.2"
+not_impacted: "All versions before 0.2.0, all versions starting from 1.18.5 before
+  1.19.0, all versions starting from 1.20.4 before 1.21.0, all versions starting from
+  1.24.2"
+solution: "Upgrade to versions 1.18.5, 1.20.4, 1.24.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-4q83-7cq4-p6wg"
+- "https://github.com/tokio-rs/tokio/issues/5372"
+- "https://github.com/tokio-rs/tokio"
+- "https://rustsec.org/advisories/RUSTSEC-2023-0005.html"
+uuid: "23f16d19-2df5-4281-b403-438f548e0a9d"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-r9rv-9mh8-pxf4"
+identifiers:
+- "GHSA-r9rv-9mh8-pxf4"
+package_slug: "cargo/ckb"
+title: "Nervos CKB BlockTimeTooNew should not be considered as invalid block"
+description: "Currently, when a node receives a block in future according to its local
+  wall clock, it will mark the block as invalid and ban the peer.\n\nIf the header's
+  timestamp is more than 15 seconds ahead of our current time. In that case, the header
+  may become valid in the future, and we don't want to disconnect a peer merely for
+  serving us one too-far-ahead block header, to prevent an attacker from splitting
+  the network by mining a block right at the  15 seconds boundary."
+date: "2024-02-02"
+pubdate: "2024-02-02"
+affected_range: "<0.33.1"
+fixed_versions:
+- "0.33.1"
+affected_versions: "All versions before 0.33.1"
+not_impacted: "All versions starting from 0.33.1"
+solution: "Upgrade to version 0.33.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-r9rv-9mh8-pxf4"
+- "https://github.com/nervosnetwork/ckb/security/advisories/GHSA-r9rv-9mh8-pxf4"
+- "https://github.com/nervosnetwork/ckb/commit/760d447c8b600df0539debe80b1625836fc72819"
+uuid: "fae5876c-54f3-47ff-9bd7-5878ba167246"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-48m6-wm5p-rr6h"
+identifiers:
+- "GHSA-48m6-wm5p-rr6h"
+package_slug: "cargo/self_cell"
+title: "Insufficient covariance check makes self_cell unsound"
+description: "All public versions prior to `1.02` used an insufficient check to ensure
+  that users correctly marked the dependent type as either `covariant` or `not_covariant`.
+  This allowed users to mark a dependent as covariant even though its type was not
+  covariant but invariant, for certain invariant types involving trait object lifetimes.
+  One example for such a dependent type is `type Dependent<'a> = RefCell<Box<dyn fmt::Display
+  + 'a>>`. Such a type allowed unsound usage in purely safe user code that leads to
+  undefined behavior. The patched versions now produce a compile time error if such
+  a type is marked as `covariant`."
+date: "2023-11-14"
+pubdate: "2023-11-14"
+affected_range: "<0.10.3||>=1.0.0 <1.0.2"
+fixed_versions:
+- "0.10.3"
+- "1.0.2"
+affected_versions: "All versions before 0.10.3, all versions starting from 1.0.0 before
+  1.0.2"
+not_impacted: "All versions starting from 0.10.3 before 1.0.0, all versions starting
+  from 1.0.2"
+solution: "Upgrade to versions 0.10.3, 1.0.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-48m6-wm5p-rr6h"
+- "https://github.com/Voultapher/self_cell/issues/49"
+- "https://github.com/Voultapher/self_cell"
+- "https://rustsec.org/advisories/RUSTSEC-2023-0070.html"
+uuid: "8d9d69fc-fc86-40dd-9853-9ec633f2f024"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

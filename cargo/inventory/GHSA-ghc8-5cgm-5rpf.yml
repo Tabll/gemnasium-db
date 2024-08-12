@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-ghc8-5cgm-5rpf"
+identifiers:
+- "GHSA-ghc8-5cgm-5rpf"
+package_slug: "cargo/inventory"
+title: "Inventory fails to prohibit standard library access prior to initialization
+  of Rust standard library runtime"
+description: "Affected versions allow arbitrary caller-provided code to execute before
+  the lifetime of `main`.\n\nIf the caller-provided code accesses particular pieces
+  of the standard library that require an initialized Rust runtime, such as `std::io`
+  or `std::thread`, these may not behave as documented. Panics are likely; UB is possible.\n\nThe
+  flaw was corrected by enforcing that only code written within the `inventory` crate,
+  which is guaranteed not to access runtime-dependent parts of the standard library,
+  runs before `main`. Caller-provided code is restricted to running at compile time."
+date: "2023-09-11"
+pubdate: "2023-09-11"
+affected_range: "<0.2.0"
+fixed_versions:
+- "0.2.0"
+affected_versions: "All versions before 0.2.0"
+not_impacted: "All versions starting from 0.2.0"
+solution: "Upgrade to version 0.2.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-ghc8-5cgm-5rpf"
+- "https://github.com/dtolnay/inventory/pull/43"
+- "https://github.com/dtolnay/inventory/commit/b853350a3800e38d2cb9950355b80bc8b8d3959c"
+- "https://github.com/dtolnay/inventory"
+- "https://rustsec.org/advisories/RUSTSEC-2023-0057.html"
+uuid: "323c7247-66ca-4115-b713-59b680068b2f"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-8q64-wrfr-q48c"
+identifiers:
+- "GHSA-8q64-wrfr-q48c"
+package_slug: "cargo/model"
+title: "Data races in model"
+description: "`Shared` data structure in `model` crate implements `Send` and `Sync`
+  traits regardless of the inner type.\nThis allows safe Rust code to trigger a data
+  race, which is undefined behavior in Rust.\n\nUsers are advised to treat `Shared`
+  as an unsafe type.\nIt should not be used outside of the testing context,\nand care
+  must be taken so that the testing code does not have a data race\nbesides a race
+  condition that is expected to be caught by the test.\n\nCheck [the Rustonomicon](https://doc.rust-lang.org/nomicon/races.html)
+  for the difference between\na data race and a general race condition."
+date: "2021-08-24"
+pubdate: "2021-08-25"
+affected_range: "<=0.1.2"
+fixed_versions: []
+affected_versions: "All versions up to 0.1.2"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-8q64-wrfr-q48c"
+- "https://github.com/spacejam/model/issues/3"
+- "https://github.com/spacejam/model"
+- "https://rustsec.org/advisories/RUSTSEC-2020-0140.html"
+uuid: "d3c75120-87a6-4b43-8621-ecf2e564be48"
+cwe_ids:
+- "CWE-362"
+- "CWE-937"
+- "CWE-1035"

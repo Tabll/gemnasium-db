@@ -1,0 +1,26 @@
+---
+identifier: "GHSA-v42f-j8fx-99f3"
+identifiers:
+- "GHSA-v42f-j8fx-99f3"
+package_slug: "cargo/scottqueue"
+title: "Queue<T> should have a Send bound on its Send/Sync traits"
+description: "Affected versions of this crate unconditionally implements `Send`/`Sync`
+  for `Queue<T>`.\n\nThis allows (1) creating data races to a `T: !Sync` and (2) sending
+  `T: !Send` to other threads, resulting in memory corruption or other undefined behavior."
+date: "2021-08-24"
+pubdate: "2021-08-25"
+affected_range: "<=0.1.0"
+fixed_versions: []
+affected_versions: "All versions up to 0.1.0"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-v42f-j8fx-99f3"
+- "https://github.com/rossdylan/rust-scottqueue/issues/1"
+- "https://github.com/rossdylan/rust-scottqueue"
+- "https://rustsec.org/advisories/RUSTSEC-2020-0133.html"
+uuid: "438b80c9-3a30-4f50-9225-80c1ae71723b"
+cwe_ids:
+- "CWE-362"
+- "CWE-937"
+- "CWE-1035"

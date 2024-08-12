@@ -1,0 +1,36 @@
+---
+identifier: "GHSA-773q-5334-5gf9"
+identifiers:
+- "GHSA-773q-5334-5gf9"
+package_slug: "cargo/evm-core"
+title: "Memory over-allocation in evm-core"
+description: "Prior to the patch, when executing specific EVM opcodes related\nto
+  memory operations that use `evm_core::Memory::copy_large`, the\ncrate can over-allocate
+  memory when it is not needed, making it\npossible for an attacker to perform denial-of-service
+  attack.\n\nThe flaw was corrected in commit `19ade85`."
+date: "2021-08-18"
+pubdate: "2021-08-25"
+affected_range: ">=0.26.0 <0.26.1||>=0.25.0 <0.25.1||>=0.24.0 <0.24.1||>=0.23.0 <0.23.1||<0.21.1"
+fixed_versions:
+- "0.26.1"
+- "0.25.1"
+- "0.24.1"
+- "0.23.1"
+- "0.21.1"
+affected_versions: "All versions before 0.21.1, all versions starting from 0.23.0
+  before 0.23.1, all versions starting from 0.24.0 before 0.24.1, all versions starting
+  from 0.25.0 before 0.25.1, all versions starting from 0.26.0 before 0.26.1"
+not_impacted: "All versions starting from 0.21.1 before 0.23.0, all versions starting
+  from 0.23.1 before 0.24.0, all versions starting from 0.24.1 before 0.25.0, all
+  versions starting from 0.25.1 before 0.26.0, all versions starting from 0.26.1"
+solution: "Upgrade to versions 0.21.1, 0.23.1, 0.24.1, 0.25.1, 0.26.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-773q-5334-5gf9"
+- "https://github.com/rust-blockchain/evm/commit/19ade85"
+- "https://github.com/rust-blockchain/evm"
+- "https://rustsec.org/advisories/RUSTSEC-2021-0066.html"
+uuid: "61ca50dc-a07a-4b5a-9968-991a738a044a"
+cwe_ids:
+- "CWE-789"
+- "CWE-937"
+- "CWE-1035"

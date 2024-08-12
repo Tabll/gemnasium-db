@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-7v4j-8wvr-v55r"
+identifiers:
+- "GHSA-7v4j-8wvr-v55r"
+package_slug: "cargo/array-macro"
+title: "`array!` macro is unsound when its length is impure constant"
+description: "Affected versions of this crate did substitute the array length provided
+  by an user at compile-time multiple times.\n\nWhen an impure constant expression
+  is passed as an array length (such as a result of an impure procedural macro), this
+  can result in the initialization of an array with uninitialized types, which in
+  turn can allow an attacker to execute arbitrary code.\n\nThe flaw was corrected
+  in commit [d5b63f72](https://github.com/xfix/array-macro/commit/d5b63f72090f3809c21ac28f9cfd84f12559bf7d)
+  by making sure that array length is substituted just once."
+date: "2022-06-20"
+pubdate: "2022-06-16"
+affected_range: ">=2.1.0 <2.1.2"
+fixed_versions:
+- "2.1.2"
+affected_versions: "All versions starting from 2.1.0 before 2.1.2"
+not_impacted: "All versions before 2.1.0, all versions starting from 2.1.2"
+solution: "Upgrade to version 2.1.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-7v4j-8wvr-v55r"
+- "https://github.com/xfix/array-macro/commit/d5b63f72090f3809c21ac28f9cfd84f12559bf7d"
+- "https://github.com/rustsec/advisory-db/blob/main/crates/array-macro/RUSTSEC-2022-0017.md"
+- "https://github.com/xfix/array-macro"
+- "https://gitlab.com/KonradBorowski/array-macro/-/issues/5"
+- "https://rustsec.org/advisories/RUSTSEC-2022-0017.html"
+uuid: "8d547250-0eb6-4eb8-a61a-5438b8451452"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-8gj8-hv75-gp94"
+identifiers:
+- "GHSA-8gj8-hv75-gp94"
+package_slug: "cargo/crossbeam"
+title: "`SegQueue` creates zero value of any type"
+description: "Affected versions of this crate called `mem::zeroed()` to create values
+  of a user-supplied type `T`.\nThis is unsound e.g. if `T` is a reference type (which
+  must be non-null).\n\nThe flaw was corrected by avoiding the use of `mem::zeroed()`,
+  using `MaybeUninit` instead."
+date: "2022-06-16"
+pubdate: "2022-06-16"
+affected_range: "<0.7.0"
+fixed_versions:
+- "0.7.0"
+affected_versions: "All versions before 0.7.0"
+not_impacted: "All versions starting from 0.7.0"
+solution: "Upgrade to version 0.7.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-8gj8-hv75-gp94"
+- "https://github.com/crossbeam-rs/crossbeam/pull/458"
+- "https://github.com/crossbeam-rs/crossbeam"
+- "https://rustsec.org/advisories/RUSTSEC-2022-0020.html"
+uuid: "34f2a129-281f-4c87-be9d-0a750184823b"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

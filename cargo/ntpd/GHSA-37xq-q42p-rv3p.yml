@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-37xq-q42p-rv3p"
+identifiers:
+- "GHSA-37xq-q42p-rv3p"
+package_slug: "cargo/ntpd"
+title: "ntpd has Dependency on Vulnerable Third-Party Component"
+description: "During startup, an attacker that can man-in-the-middle traffic to and
+  from NTS key exchange servers can trigger a very expensive key validation process
+  due to a vulnerability in webpki."
+date: "2024-06-26"
+pubdate: "2023-08-24"
+affected_range: "<0.3.7"
+fixed_versions:
+- "0.3.7"
+affected_versions: "All versions before 0.3.7"
+not_impacted: "All versions starting from 0.3.7"
+solution: "Upgrade to version 0.3.7 or above."
+urls:
+- "https://github.com/advisories/GHSA-37xq-q42p-rv3p"
+- "https://github.com/pendulum-project/ntpd-rs/security/advisories/GHSA-37xq-q42p-rv3p"
+- "https://github.com/pendulum-project/ntpd-rs/commit/927952a440176a18f3ded132eb831ae7f7ac5c00"
+- "https://github.com/pendulum-project/ntpd-rs"
+- "https://github.com/rustsec/advisory-db/blob/main/crates/rustls-webpki/RUSTSEC-2023-0053.md"
+cvss_v3: "CVSS:3.1/AV:A/AC:H/PR:N/UI:R/S:U/C:N/I:N/A:L"
+uuid: "2f9a5a5c-d6a0-4ffc-943c-d1f7aaa7429c"
+cwe_ids:
+- "CWE-1395"
+- "CWE-937"
+- "CWE-1035"

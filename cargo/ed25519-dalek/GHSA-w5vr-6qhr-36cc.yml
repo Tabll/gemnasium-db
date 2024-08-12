@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-w5vr-6qhr-36cc"
+identifiers:
+- "GHSA-w5vr-6qhr-36cc"
+package_slug: "cargo/ed25519-dalek"
+title: "`ed25519-dalek` Double Public Key Signing Function Oracle Attack"
+description: "Versions of `ed25519-dalek` prior to v2.0 model private and public keys
+  as separate types which can be assembled into a `Keypair`, and also provide APIs
+  for serializing and deserializing 64-byte private/public keypairs.\n\nSuch APIs
+  and serializations are inherently unsafe as the public key is one of the inputs
+  used in the deterministic computation of the `S` part of the signature, but not
+  in the `R` value. An adversary could somehow use the signing function as an oracle
+  that allows arbitrary public keys as input can obtain two signatures for the same
+  message sharing the same `R` and only differ on the `S` part.\n\nUnfortunately,
+  when this happens, one can easily extract the private key.\n\nRevised public APIs
+  in v2.0 of `ed25519-dalek` do NOT allow a decoupled private/public keypair as signing
+  input, except as part of specially labeled \"hazmat\" APIs which are clearly labeled
+  as being dangerous if misused."
+date: "2023-08-14"
+pubdate: "2023-08-14"
+affected_range: "<2.0.0"
+fixed_versions:
+- "2.0.0"
+affected_versions: "All versions before 2.0.0"
+not_impacted: "All versions starting from 2.0.0"
+solution: "Upgrade to version 2.0.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-w5vr-6qhr-36cc"
+- "https://github.com/MystenLabs/ed25519-unsafe-libs"
+- "https://github.com/dalek-cryptography/ed25519-dalek"
+- "https://rustsec.org/advisories/RUSTSEC-2022-0093.html"
+uuid: "55d30d07-147f-4836-90b4-5f84a9dd7c34"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

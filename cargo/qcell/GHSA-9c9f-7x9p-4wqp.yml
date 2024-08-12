@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-9c9f-7x9p-4wqp"
+identifiers:
+- "GHSA-9c9f-7x9p-4wqp"
+package_slug: "cargo/qcell"
+title: "A malicious coder can get unsound access to TCell or TLCell memory"
+description: "This is impossible to do by accident, but by carefully constructing\nmarker
+  types to be covariant, a malicious coder can cheat the\nsingleton check in `TCellOwner`
+  and `TLCellOwner`, giving unsound\naccess to cell memory.  This could take the form
+  of getting two\nmutable references to the same memory, or a mutable reference and
+  an\nimmutable reference.\n\nThe fix is for the crate to internally force the marker
+  type to be\ninvariant.  This blocks the conversion between covariant types which\nRust
+  normally allows."
+date: "2022-06-17"
+pubdate: "2022-06-17"
+affected_range: "<0.4.3"
+fixed_versions:
+- "0.4.3"
+affected_versions: "All versions before 0.4.3"
+not_impacted: "All versions starting from 0.4.3"
+solution: "Upgrade to version 0.4.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-9c9f-7x9p-4wqp"
+- "https://github.com/uazu/qcell/issues/20"
+- "https://github.com/uazu/qcell"
+- "https://rustsec.org/advisories/RUSTSEC-2022-0007.html"
+uuid: "e0e19b62-c78e-4598-b87f-c05fa48fb3eb"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

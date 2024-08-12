@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-r67p-m7g9-gxw6"
+identifiers:
+- "GHSA-r67p-m7g9-gxw6"
+package_slug: "cargo/csv-sniffer"
+title: "`Read` on uninitialized memory may cause UB (fn preamble_skipcount())"
+description: "Affected versions of this crate passes an uninitialized buffer to a
+  user-provided `Read` implementation (within `fn preamble_skipcount()`).\n\nArbitrary
+  `Read` implementations can read from the uninitialized buffer (memory exposure)
+  and also can return incorrect number of bytes written to the buffer.\nReading from
+  uninitialized memory produces undefined values that can quickly invoke undefined
+  behavior."
+date: "2022-06-16"
+pubdate: "2022-06-16"
+affected_range: "<0.2.0"
+fixed_versions:
+- "0.2.0"
+affected_versions: "All versions before 0.2.0"
+not_impacted: "All versions starting from 0.2.0"
+solution: "Upgrade to version 0.2.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-r67p-m7g9-gxw6"
+- "https://github.com/jblondin/csv-sniffer/issues/1"
+- "https://github.com/jblondin/csv-sniffer/pull/2"
+- "https://rustsec.org/advisories/RUSTSEC-2021-0088.html"
+uuid: "f6b7002e-d359-44df-a246-c3092891e301"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,58 @@
+---
+identifier: "GHSA-jp3w-3q88-34cf"
+identifiers:
+- "GHSA-jp3w-3q88-34cf"
+package_slug: "cargo/rust-crypto"
+title: "Miscomputation when performing AES encryption in rust-crypto"
+description: "The following Rust program demonstrates some strangeness in AES encryption
+  - if you have an immutable key slice and then operate on that slice, you get different
+  encryption output than if you operate on a copy of that key.\n\nFor these functions,
+  we expect that extending a 16 byte key to a 32 byte key by repeating it gives the
+  same encrypted data, because the underlying rust-crypto functions repeat key data
+  up to the necessary key size for the cipher.\n\n```rust\nuse crypto::{\naes, blockmodes,
+  buffer,\nbuffer::{BufferResult, ReadBuffer, WriteBuffer},\nsymmetriccipher,\n};\n\nfn
+  encrypt(\nkey: &[u8],\niv: &[u8],\ndata: &str,\n) -> Result<String, symmetriccipher::SymmetricCipherError>
+  {\nlet mut encryptor =\naes::cbc_encryptor(aes::KeySize::KeySize256, key, iv, blockmodes::PkcsPadding);\n\nlet
+  mut encrypted_data = Vec::<u8>::new();\nlet mut read_buffer = buffer::RefReadBuffer::new(data.as_bytes());\nlet
+  mut buffer = [0; 4096];\nlet mut write_buffer = buffer::RefWriteBuffer::new(&mut
+  buffer);\n\nloop {\nlet result = encryptor.encrypt(&mut read_buffer, &mut write_buffer,
+  true)?;\n\nencrypted_data.extend(\nwrite_buffer\n.take_read_buffer()\n.take_remaining()\n.iter()\n.copied(),\n);\n\nmatch
+  result {\nBufferResult::BufferUnderflow => break,\nBufferResult::BufferOverflow
+  => {}\n}\n}\n\nOk(hex::encode(encrypted_data))\n}\n\nfn working() {\nlet data =
+  \"data\";\nlet iv = [\n0xF0, 0xF1, 0xF2, 0xF3, 0xF4, 0xF5, 0xF6, 0xF7, 0xF8, 0xF9,
+  0xFA, 0xFB, 0xFC, 0xFD, 0xFE,\n0xFF,\n];\nlet key = [\n0x00, 0x01, 0x02, 0x03, 0x04,
+  0x05, 0x06, 0x07, 0x08, 0x09, 0x0A, 0x0B, 0x0C, 0x0D, 0x0E,\n0x0F,\n];\n// The copy
+  here makes the code work.\nlet key_copy = key;\nlet key2: Vec<u8> = key_copy.iter().cycle().take(32).copied().collect();\nprintln!(\"key1:{}
+  key2: {}\", hex::encode(&key), hex::encode(&key2));\n\nlet x1 = encrypt(&key, &iv,
+  data).unwrap();\nprintln!(\"X1: {}\", x1);\n\nlet x2 = encrypt(&key2, &iv, data).unwrap();\nprintln!(\"X2:
+  {}\", x2);\n\nassert_eq!(x1, x2);\n}\n\nfn broken() {\nlet data = \"data\";\nlet
+  iv = [\n0xF0, 0xF1, 0xF2, 0xF3, 0xF4, 0xF5, 0xF6, 0xF7, 0xF8, 0xF9, 0xFA, 0xFB,
+  0xFC, 0xFD, 0xFE,\n0xFF,\n];\nlet key = [\n0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06,
+  0x07, 0x08, 0x09, 0x0A, 0x0B, 0x0C, 0x0D, 0x0E,\n0x0F,\n];\n// This operation shouldn't
+  affect the contents of key at all.\nlet key2: Vec<u8> = key.iter().cycle().take(32).copied().collect();\nprintln!(\"key1:{}
+  key2: {}\", hex::encode(&key), hex::encode(&key2));\n\nlet x1 = encrypt(&key, &iv,
+  data).unwrap();\nprintln!(\"X1: {}\", x1);\n\nlet x2 = encrypt(&key2, &iv, data).unwrap();\nprintln!(\"X2:
+  {}\", x2);\n\nassert_eq!(x1, x2);\n}\n\nfn main() {\nworking();\nbroken();\n}\n```\n\nThe
+  output from this program:\n\n```shell\nRunning `target/host/debug/rust-crypto-test`\nkey1:000102030405060708090a0b0c0d0e0f
+  key2: 000102030405060708090a0b0c0d0e0f000102030405060708090a0b0c0d0e0f\nX1: 90462bbe32965c8e7ea0addbbed4cddb\nX2:
+  90462bbe32965c8e7ea0addbbed4cddb\nkey1:000102030405060708090a0b0c0d0e0f key2: 000102030405060708090a0b0c0d0e0f000102030405060708090a0b0c0d0e0f\nX1:
+  26e847e5e7df1947bf82a650548a7d5b\nX2: 90462bbe32965c8e7ea0addbbed4cddb\nthread 'main'
+  panicked at 'assertion failed: `(left == right)`\nleft: `\"26e847e5e7df1947bf82a650548a7d5b\"`,\nright:
+  `\"90462bbe32965c8e7ea0addbbed4cddb\"`', src/main.rs:83:5\n```\n\nNotably, the X1
+  key in the `broken()` test changes every time after rerunning the program."
+date: "2022-06-17"
+pubdate: "2022-06-17"
+affected_range: "<=0.2.36"
+fixed_versions: []
+affected_versions: "All versions up to 0.2.36"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-jp3w-3q88-34cf"
+- "https://github.com/DaGenix/rust-crypto/issues/476"
+- "https://github.com/DaGenix/rust-crypto"
+- "https://rustsec.org/advisories/RUSTSEC-2022-0011.html"
+uuid: "8d043f2a-6916-4103-b0de-7b6587b4bb22"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

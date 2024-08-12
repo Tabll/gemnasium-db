@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-6hcf-g6gr-hhcr"
+identifiers:
+- "GHSA-6hcf-g6gr-hhcr"
+package_slug: "cargo/openssl"
+title: "`openssl` `X509Extension::new` and `X509Extension::new_nid` null pointer dereference"
+description: "These functions would crash when the context argument was None with
+  certain extension types.\n\nThanks to David Benjamin (Google) for reporting this
+  issue."
+date: "2023-03-24"
+pubdate: "2023-03-24"
+affected_range: ">=0.9.7 <0.10.48"
+fixed_versions:
+- "0.10.48"
+affected_versions: "All versions starting from 0.9.7 before 0.10.48"
+not_impacted: "All versions before 0.9.7, all versions starting from 0.10.48"
+solution: "Upgrade to version 0.10.48 or above."
+urls:
+- "https://github.com/advisories/GHSA-6hcf-g6gr-hhcr"
+- "https://github.com/sfackler/rust-openssl/pull/1854"
+- "https://github.com/sfackler/rust-openssl"
+- "https://rustsec.org/advisories/RUSTSEC-2023-0024.html"
+uuid: "0d451044-9c14-454c-8aac-33cb6f4a2bf4"
+cwe_ids:
+- "CWE-476"
+- "CWE-937"
+- "CWE-1035"

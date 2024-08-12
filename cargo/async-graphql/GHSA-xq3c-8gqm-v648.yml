@@ -1,0 +1,26 @@
+---
+identifier: "GHSA-xq3c-8gqm-v648"
+identifiers:
+- "GHSA-xq3c-8gqm-v648"
+package_slug: "cargo/async-graphql"
+title: "async-graphql / async-graphql - @DOS GraphQL Nested Fragments overflow"
+description: "Executing deeply nested queries may cause stack overflow."
+date: "2022-07-29"
+pubdate: "2022-07-29"
+affected_range: "<4.0.6"
+fixed_versions:
+- "4.0.6"
+affected_versions: "All versions before 4.0.6"
+not_impacted: "All versions starting from 4.0.6"
+solution: "Upgrade to version 4.0.6 or above."
+urls:
+- "https://github.com/advisories/GHSA-xq3c-8gqm-v648"
+- "https://github.com/async-graphql/async-graphql/security/advisories/GHSA-xq3c-8gqm-v648"
+- "https://github.com/async-graphql/async-graphql/commit/521769b80039fc8043d1c9883e3d6e5b57359072"
+- "https://github.com/async-graphql/async-graphql"
+- "https://rustsec.org/advisories/RUSTSEC-2022-0037.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "45b7685c-daf0-4a4d-b857-6a75d33f0344"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

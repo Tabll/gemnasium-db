@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-w3vw-ccc5-qr8v"
+identifiers:
+- "GHSA-w3vw-ccc5-qr8v"
+package_slug: "cargo/tss-esapi"
+title: "Use After Free in Context::start_auth_session"
+description: "**This issue only applies to applications starting authorization sessions
+  using an explicit initial `nonce`.**"
+date: "2022-06-17"
+pubdate: "2022-06-17"
+affected_range: ">=7.0.0 <7.1.0||<6.1.2"
+fixed_versions:
+- "7.1.0"
+- "6.1.2"
+affected_versions: "All versions before 6.1.2, all versions starting from 7.0.0 before
+  7.1.0"
+not_impacted: "All versions starting from 6.1.2 before 7.0.0, all versions starting
+  from 7.1.0"
+solution: "Upgrade to versions 6.1.2, 7.1.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-w3vw-ccc5-qr8v"
+- "https://github.com/parallaxsecond/rust-tss-esapi/security/advisories/GHSA-w3vw-ccc5-qr8v"
+- "https://github.com/parallaxsecond/rust-tss-esapi"
+uuid: "ed223763-a230-4b3d-82d9-c6af9a2f0277"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

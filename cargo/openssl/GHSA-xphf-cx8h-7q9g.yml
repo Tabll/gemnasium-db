@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-xphf-cx8h-7q9g"
+identifiers:
+- "GHSA-xphf-cx8h-7q9g"
+package_slug: "cargo/openssl"
+title: "`openssl` `X509StoreRef::objects` is unsound"
+description: "This function returned a reference into an OpenSSL datastructure, but
+  there was no way to ensure OpenSSL would not mutate the datastructure behind one's
+  back.\n\nUse of this function should be replaced with `X509StoreRef::all_certificates`."
+date: "2023-11-28"
+pubdate: "2023-11-28"
+affected_range: ">=0.10.29 <0.10.60"
+fixed_versions:
+- "0.10.60"
+affected_versions: "All versions starting from 0.10.29 before 0.10.60"
+not_impacted: "All versions before 0.10.29, all versions starting from 0.10.60"
+solution: "Upgrade to version 0.10.60 or above."
+urls:
+- "https://github.com/advisories/GHSA-xphf-cx8h-7q9g"
+- "https://github.com/sfackler/rust-openssl/issues/2096"
+- "https://github.com/sfackler/rust-openssl/commit/cf9681a55cabd4cb9f1475bde17b5079f2a0384e"
+- "https://github.com/sfackler/rust-openssl"
+- "https://rustsec.org/advisories/RUSTSEC-2023-0072.html"
+uuid: "464abee6-a680-457a-8289-0a9c1641afa8"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

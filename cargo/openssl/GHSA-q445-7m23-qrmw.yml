@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-q445-7m23-qrmw"
+identifiers:
+- "GHSA-q445-7m23-qrmw"
+package_slug: "cargo/openssl"
+title: "openssl's `MemBio::get_buf` has undefined behavior with empty buffers"
+description: "Previously, `MemBio::get_buf` called `slice::from_raw_parts` with a
+  null-pointer, which violates the functions invariants, leading to undefined behavior.
+  In debug builds this would produce an assertion failure. This is now fixed."
+date: "2024-07-22"
+pubdate: "2024-07-22"
+affected_range: "<0.10.66"
+fixed_versions:
+- "0.10.66"
+affected_versions: "All versions before 0.10.66"
+not_impacted: "All versions starting from 0.10.66"
+solution: "Upgrade to version 0.10.66 or above."
+urls:
+- "https://github.com/advisories/GHSA-q445-7m23-qrmw"
+- "https://github.com/sfackler/rust-openssl/pull/2266"
+- "https://github.com/sfackler/rust-openssl/commit/aef36e0f3950653148d6644309ee41ccf16e02bb"
+- "https://github.com/sfackler/rust-openssl"
+- "https://github.com/sfackler/rust-openssl/releases/tag/openssl-v0.10.66"
+- "https://rustsec.org/advisories/RUSTSEC-2024-0357.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L"
+uuid: "995167cb-e870-4296-85ed-4f0232595389"
+cwe_ids:
+- "CWE-476"
+- "CWE-937"
+- "CWE-1035"

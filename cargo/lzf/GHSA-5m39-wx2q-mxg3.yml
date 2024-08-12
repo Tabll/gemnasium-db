@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-5m39-wx2q-mxg3"
+identifiers:
+- "GHSA-5m39-wx2q-mxg3"
+package_slug: "cargo/lzf"
+title: "Invalid use of `mem::uninitialized` causes `use-of-uninitialized-value`"
+description: "The compression and decompression function used `mem:uninitialized`
+  to create an array of uninitialized values, to later write values into it. This
+  later leads to reads from uninitialized memory.\n\nThe flaw was corrected in commit
+  b633bf265e41c60dfce3be7eac4e4dd5e18d06cf by using a heap-allocated `Vec` and removing
+  out use of `mem::uninitialized`. The fix was released in v0.3.2 and v1.0.0\n\nSubsequently,
+  the crate was deprecated and its use is discouraged."
+date: "2022-11-08"
+pubdate: "2022-11-08"
+affected_range: "<0.3.2"
+fixed_versions:
+- "0.3.2"
+affected_versions: "All versions before 0.3.2"
+not_impacted: "All versions starting from 0.3.2"
+solution: "Upgrade to version 0.3.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-5m39-wx2q-mxg3"
+- "https://github.com/badboy/lzf-rs/issues/9"
+- "https://github.com/badboy/lzf-rs/commit/b633bf265e41c60dfce3be7eac4e4dd5e18d06cf"
+- "https://github.com/badboy/lzf-rs"
+- "https://rustsec.org/advisories/RUSTSEC-2022-0067.html"
+uuid: "402cc812-9135-4ccb-ae4e-1bba62822546"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

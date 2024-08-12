@@ -1,0 +1,26 @@
+---
+identifier: "GHSA-wj7f-468m-6mv8"
+identifiers:
+- "GHSA-wj7f-468m-6mv8"
+package_slug: "cargo/birdcage"
+title: "Environment variables still accessible through /proc"
+description: "Environment variables can be read from procfs unless a new process is
+  started."
+date: "2023-12-01"
+pubdate: "2023-12-01"
+affected_range: "<0.7.0"
+fixed_versions:
+- "0.7.0"
+affected_versions: "All versions before 0.7.0"
+not_impacted: "All versions starting from 0.7.0"
+solution: "Upgrade to version 0.7.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-wj7f-468m-6mv8"
+- "https://github.com/phylum-dev/birdcage/security/advisories/GHSA-wj7f-468m-6mv8"
+- "https://github.com/phylum-dev/birdcage"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+uuid: "fbc79985-b7e6-4b2b-bc1b-2c8d3058f4d5"
+cwe_ids:
+- "CWE-200"
+- "CWE-937"
+- "CWE-1035"

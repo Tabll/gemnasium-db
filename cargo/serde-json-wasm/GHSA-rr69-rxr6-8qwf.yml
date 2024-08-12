@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-rr69-rxr6-8qwf"
+identifiers:
+- "GHSA-rr69-rxr6-8qwf"
+package_slug: "cargo/serde-json-wasm"
+title: "serde-json-wasm stack overflow during recursive JSON parsing"
+description: "When parsing untrusted, deeply nested JSON, the stack may overflow,
+  possibly enabling a Denial of Service attack. This was fixed by adding a check for
+  recursion depth."
+date: "2024-02-09"
+pubdate: "2024-02-09"
+affected_range: ">=1.0.0 <1.0.1||=1.0.0||<0.5.2"
+fixed_versions:
+- "1.0.1"
+- "0.5.2"
+affected_versions: "All versions before 0.5.2, all versions starting from 1.0.0 before
+  1.0.1, version 1.0.0"
+not_impacted: ""
+solution: "Upgrade to versions 0.5.2, 1.0.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-rr69-rxr6-8qwf"
+- "https://github.com/CosmWasm/serde-json-wasm/commit/a9a9b9bf243862bd2afbf6853fca97f30dc4f620"
+- "https://github.com/CosmWasm/serde-json-wasm/commit/e78f9e28b3a2151d3175ee88ab2a001bf9515429"
+- "https://github.com/CosmWasm/serde-json-wasm"
+- "https://rustsec.org/advisories/RUSTSEC-2024-0012.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "eb0e8ec5-d58b-4a52-8b14-76ad1954714d"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

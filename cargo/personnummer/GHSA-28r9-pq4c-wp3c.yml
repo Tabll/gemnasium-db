@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-28r9-pq4c-wp3c"
+identifiers:
+- "GHSA-28r9-pq4c-wp3c"
+package_slug: "cargo/personnummer"
+title: "personnummer/rust vulnerable to Improper Input Validation"
+description: "This vulnerability was reported to the personnummer team in June 2020.
+  The slow response was due to locked ownership of some of the affected packages,
+  which caused delays to update packages prior to disclosure.\n\nThe vulnerability
+  is determined to be low severity."
+date: "2022-09-21"
+pubdate: "2022-09-21"
+affected_range: "<3.0.1"
+fixed_versions:
+- "3.0.1"
+affected_versions: "All versions before 3.0.1"
+not_impacted: "All versions starting from 3.0.1"
+solution: "Upgrade to version 3.0.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-28r9-pq4c-wp3c"
+- "https://github.com/personnummer/rust/security/advisories/GHSA-28r9-pq4c-wp3c"
+- "https://github.com/personnummer/rust/pull/4"
+- "https://github.com/personnummer/rust/commit/11c3b0491b70449fb790056585ad3251b0e23acb"
+- "https://crates.io/crates/personnummer"
+- "https://github.com/personnummer/rust"
+- "https://github.com/personnummer/rust/releases/tag/v3.0.1"
+- "https://rustsec.org/advisories/RUSTSEC-2020-0166.html"
+uuid: "50827251-f3cf-4b42-ba54-f8468c55b231"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

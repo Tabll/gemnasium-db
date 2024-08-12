@@ -1,0 +1,41 @@
+---
+identifier: "GHSA-x4gp-pqpj-f43q"
+identifiers:
+- "GHSA-x4gp-pqpj-f43q"
+package_slug: "cargo/curve25519-dalek"
+title: "curve25519-dalek has timing variability in `curve25519-dalek`'s `Scalar29::sub`/`Scalar52::sub`"
+description: "Timing variability of any kind is problematic when working with  potentially
+  secret values such as\nelliptic curve scalars, and such issues can potentially leak
+  private keys and other secrets. Such a\nproblem was recently discovered in `curve25519-dalek`.\n\nThe
+  `Scalar29::sub` (32-bit) and `Scalar52::sub` (64-bit) functions contained usage
+  of a mask value\ninside a loop where LLVM saw an opportunity to insert a branch
+  instruction (`jns` on x86) to\nconditionally bypass this code section when the mask
+  value is set to zero as can be seen in godbolt:\n\n- 32-bit (see L106): https://godbolt.org/z/zvaWxzvqv\n-
+  64-bit (see L48): https://godbolt.org/z/PczYj7Pda\n\nA similar problem was recently
+  discovered in the Kyber reference implementation:\n\nhttps://groups.google.com/a/list.nist.gov/g/pqc-forum/c/hqbtIGFKIpU/m/cnE3pbueBgAJ\n\nAs
+  discussed on that thread, one portable solution, which is also used in this PR,
+  is to introduce a\nvolatile read as an optimization barrier, which prevents the
+  compiler from optimizing it away.\n\nThe fix can be validated in godbolt here:\n\n-
+  32-bit: https://godbolt.org/z/jc9j7eb8E\n- 64-bit: https://godbolt.org/z/x8d46Yfah\n\nThe
+  problem was discovered and the solution independently verified by\nAlexander Wagner
+  <alexander.wagner@aisec.fraunhofer.de> and Lea Themint <lea.thiemt@tum.de> using\ntheir
+  DATA tool:\n\nhttps://github.com/Fraunhofer-AISEC/DATA"
+date: "2024-06-18"
+pubdate: "2024-06-18"
+affected_range: "<4.1.3"
+fixed_versions:
+- "4.1.3"
+affected_versions: "All versions before 4.1.3"
+not_impacted: "All versions starting from 4.1.3"
+solution: "Upgrade to version 4.1.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-x4gp-pqpj-f43q"
+- "https://github.com/dalek-cryptography/curve25519-dalek/pull/659"
+- "https://github.com/dalek-cryptography/curve25519-dalek/commit/415892acf1cdf9161bd6a4c99bc2f4cb8fae5e6a"
+- "https://github.com/dalek-cryptography/curve25519-dalek"
+- "https://rustsec.org/advisories/RUSTSEC-2024-0344.html"
+uuid: "f2126145-3ad9-4f54-a28a-4edfa2511d3b"
+cwe_ids:
+- "CWE-203"
+- "CWE-937"
+- "CWE-1035"

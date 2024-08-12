@@ -1,0 +1,24 @@
+---
+identifier: "GHSA-h4c3-5275-vrmg"
+identifiers:
+- "GHSA-h4c3-5275-vrmg"
+package_slug: "cargo/ckb"
+title: "Nervos CKB Pool does not remove the conflicting transactions from the statistics "
+description: "There's a bug in the pool statistics that when conflicting transactions
+  are removed from the pool, they are not subtracted from the statics. Finally, the
+  transaction pool keeps full and reject all transactions."
+date: "2024-02-03"
+pubdate: "2024-02-03"
+affected_range: "<0.39.2"
+fixed_versions:
+- "0.39.2"
+affected_versions: "All versions before 0.39.2"
+not_impacted: "All versions starting from 0.39.2"
+solution: "Upgrade to version 0.39.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-h4c3-5275-vrmg"
+- "https://github.com/nervosnetwork/ckb/security/advisories/GHSA-h4c3-5275-vrmg"
+uuid: "649a388b-e6f8-463a-b713-91a0ef55dc34"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-j57r-4qw6-58r3"
+identifiers:
+- "GHSA-j57r-4qw6-58r3"
+package_slug: "cargo/rusty-paseto"
+title: "rusty_paseto vulnerable to private key extraction due to ed25519-dalek dependency"
+description: "The vulnerability, known as RUSTSEC-2022-0093, impacts the `ed25519-dalek`
+  crate, which is a dependency of the `rusty-paseto` crate. This issue arises from
+  a \"Double Public Key Signing Function Oracle Attack\" affecting versions of `ed25519-dalek`
+  prior to v2.0. These versions expose an unsafe API for serializing and deserializing
+  64-byte keypairs that include both private and public keys, creating potential for
+  certain attacks. `d25519-dalek` users utilizing these serialization and deserialization
+  functions directly could potentially be impacted."
+date: "2023-11-07"
+pubdate: "2023-11-07"
+affected_range: "<0.6.0"
+fixed_versions:
+- "0.6.0"
+affected_versions: "All versions before 0.6.0"
+not_impacted: "All versions starting from 0.6.0"
+solution: "Upgrade to version 0.6.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-j57r-4qw6-58r3"
+- "https://github.com/rrrodzilla/rusty_paseto/security/advisories/GHSA-j57r-4qw6-58r3"
+- "https://github.com/rrrodzilla/rusty_paseto/commit/42718c1b757c1dfabb80621f2f48b8268f7fa24e"
+- "https://github.com/rrrodzilla/rusty_paseto"
+- "https://github.com/rrrodzilla/rusty_paseto/releases/tag/v0.6.0"
+- "https://rustsec.org/advisories/RUSTSEC-2022-0093.html"
+uuid: "f4fdd17e-7398-4eb4-aa1d-705c9abd157b"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

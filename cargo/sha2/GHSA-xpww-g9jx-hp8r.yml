@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-xpww-g9jx-hp8r"
+identifiers:
+- "GHSA-xpww-g9jx-hp8r"
+package_slug: "cargo/sha2"
+title: "Miscomputed sha2 results when using AVX2 backend"
+description: "The v0.9.7 release of the `sha2` crate introduced a new AVX2-accelerated\nbackend
+  which was automatically enabled for all x86/x86_64 CPUs where AVX2\nsupport was
+  autodetected at runtime.\n\nThis backend was buggy and would miscompute results
+  for long messages\n(i.e. messages spanning multiple SHA blocks).\n\nThe crate has
+  since been yanked, but any users who upgraded to v0.9.7 should\nimmediately upgrade
+  to v0.9.8 and recompute any hashes which were previously\ncomputed by v0.9.7."
+date: "2022-06-17"
+pubdate: "2022-06-17"
+affected_range: ">=0.9.7 <0.9.8||=0.9.7"
+fixed_versions:
+- "0.9.8"
+affected_versions: "All versions starting from 0.9.7 before 0.9.8, version 0.9.7"
+not_impacted: ""
+solution: "Upgrade to version 0.9.8 or above."
+urls:
+- "https://github.com/advisories/GHSA-xpww-g9jx-hp8r"
+- "https://github.com/RustCrypto/hashes/pull/314"
+- "https://github.com/RustCrypto/hashes"
+- "https://rustsec.org/advisories/RUSTSEC-2021-0100.html"
+uuid: "0aace533-937e-4ee7-a115-bc3e0ceb8412"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

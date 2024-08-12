@@ -1,0 +1,26 @@
+---
+identifier: "GHSA-pp8r-vv2j-9j5v"
+identifiers:
+- "GHSA-pp8r-vv2j-9j5v"
+package_slug: "cargo/traitobject"
+title: "traitobject is Unmaintained"
+description: "Crate `traitobject` has not had a release for over five years.\n\nIn
+  addition there is an existing security advisory that has not been addressed:\n\n-
+  [RUSTSEC-2020-0027](https://rustsec.org/advisories/RUSTSEC-2020-0027)"
+date: "2022-09-16"
+pubdate: "2022-09-16"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-pp8r-vv2j-9j5v"
+- "https://github.com/reem/rust-traitobject/issues/7"
+- "https://github.com/reem/rust-traitobject"
+- "https://rustsec.org/advisories/RUSTSEC-2021-0144.html"
+uuid: "0db0233f-7a66-42a3-9902-d041a441cdbd"
+cwe_ids:
+- "CWE-1104"
+- "CWE-937"
+- "CWE-1035"

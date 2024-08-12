@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-7pwq-f4pq-78gm"
+identifiers:
+- "GHSA-7pwq-f4pq-78gm"
+package_slug: "cargo/rustdecimal"
+title: "`rustdecimal` is a malicious crate"
+description: "The Rust Security Response WG and the crates.io team [were notified][1]
+  on 2022-05-02 of the existence of the malicious crate `rustdecimal`, which contained
+  malware. The crate name was intentionally similar to the name of the popular [`rust_decimal`][2]
+  crate, hoping that potential victims would misspell its name (an attack called \"typosquatting\").\n\nTo
+  protect the security of the ecosystem, the crates.io team permanently removed the
+  crate from the registry as soon as it was made aware of the malware. An analysis
+  of all the crates on crates.io was also performed, and no other crate with similar
+  code patterns was found.\n\nKeep in mind that the [`rust_decimal`][2] crate was
+  **not** compromised, and it is still safe to use."
+date: "2022-08-11"
+pubdate: "2022-08-11"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-7pwq-f4pq-78gm"
+- "https://github.com/paupino/rust-decimal/issues/514#issuecomment-1115408888"
+- "https://groups.google.com/g/rustlang-security-announcements/c/5DVtC8pgJLw?pli=1"
+- "https://raw.globalsecuritydatabase.org/GSD-2022-1002520"
+- "https://rustsec.org/advisories/RUSTSEC-2022-0042.html"
+uuid: "2b6d800a-0bb1-4470-b779-0dcf2ee7730e"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

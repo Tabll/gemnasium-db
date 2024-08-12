@@ -1,0 +1,26 @@
+---
+identifier: "GHSA-vfv3-9w6v-23jp"
+identifiers:
+- "GHSA-vfv3-9w6v-23jp"
+package_slug: "cargo/typemap"
+title: "typemap is Unmaintained"
+description: "The maintainer seems unreachable. The crate may or may not be usable
+  as-is despite no maintenance and may not work in future versions of Rust. The last
+  release seems to have been seven years ago."
+date: "2022-09-16"
+pubdate: "2022-09-16"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-vfv3-9w6v-23jp"
+- "https://github.com/reem/rust-typemap/issues/45"
+- "https://github.com/reem/rust-typemap"
+- "https://rustsec.org/advisories/RUSTSEC-2019-0039.html"
+uuid: "a94840ac-ea27-464b-b5e4-8f661ae6b66b"
+cwe_ids:
+- "CWE-1104"
+- "CWE-937"
+- "CWE-1035"

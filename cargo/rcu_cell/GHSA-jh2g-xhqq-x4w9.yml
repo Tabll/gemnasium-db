@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-jh2g-xhqq-x4w9"
+identifiers:
+- "GHSA-jh2g-xhqq-x4w9"
+package_slug: "cargo/rcu_cell"
+title: "Send/Sync bound needed on T  for Send/Sync impl of RcuCell<T>"
+description: "Affected versions of this crate unconditionally implement Send/Sync
+  for `RcuCell<T>`.\nThis allows users to send `T: !Send` to other threads (while
+  `T` enclosed within `RcuCell<T>`), and allows users to concurrently access `T: !Sync`
+  by using the APIs of `RcuCell<T>` that provide access to `&T`.\n\nThis can result
+  in memory corruption caused by data races."
+date: "2021-08-24"
+pubdate: "2021-08-25"
+affected_range: "<0.1.9"
+fixed_versions:
+- "0.1.9"
+affected_versions: "All versions before 0.1.9"
+not_impacted: "All versions starting from 0.1.9"
+solution: "Upgrade to version 0.1.9 or above."
+urls:
+- "https://github.com/advisories/GHSA-jh2g-xhqq-x4w9"
+- "https://github.com/Xudong-Huang/rcu_cell/issues/3"
+- "https://github.com/Xudong-Huang/rcu_cell/pull/4/commits/1faf18eee11f14969b77ae0f76dcd9ebd437d0c2"
+- "https://github.com/Xudong-Huang/rcu_cell"
+- "https://rustsec.org/advisories/RUSTSEC-2020-0131.html"
+uuid: "5002df7c-bc5c-4514-9a40-f2e504941b51"
+cwe_ids:
+- "CWE-362"
+- "CWE-937"
+- "CWE-1035"

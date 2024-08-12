@@ -61,7 +61,7 @@
       "examples": [
         "maven/io.undertow/undertow-core"
       ],
-      "pattern": "^(gem|go|maven|npm|packagist|pypi|nuget|conan|swift)/.+$"
+      "pattern": "^(gem|go|maven|npm|packagist|pypi|nuget|conan|swift|cargo)/.+$"
     },
     "title": {
       "$id": "#/properties/title",

@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-q3gg-m8hr-h4x4"
+identifiers:
+- "GHSA-q3gg-m8hr-h4x4"
+package_slug: "cargo/surrealdb"
+title: "Externally Controlled Format String in Scripting Functions"
+description: "The `rquickjs` crate used by SurrealDB implements Rust bindings to the
+  QuickJS C library and is used to execute SurrealDB scripting functions. The `rquickjs`
+  function `Exception::throw_type` takes a string and returns an error object. Prior
+  to version `0.4.2` of the crate, this string would be fed directly into `printf`,
+  which will receive the error string as a format string with no additional arguments,
+  leading to undefined behavior. This issue triggers when a SurrealDB scripting function
+  returns an error and its input contains a format string such as `%s` or `%d`.\n\nThis
+  vulnerability can only affect SurrealDB servers explicitly enabling the scripting
+  capability with `--allow-scripting` or `--allow-all` and equivalent environment
+  variables `SURREAL_CAPS_ALLOW_SCRIPT=true` and `SURREAL_CAPS_ALLOW_ALL=true`."
+date: "2024-02-21"
+pubdate: "2024-02-21"
+affected_range: "<1.1.1"
+fixed_versions:
+- "1.1.1"
+affected_versions: "All versions before 1.1.1"
+not_impacted: "All versions starting from 1.1.1"
+solution: "Upgrade to version 1.1.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-q3gg-m8hr-h4x4"
+- "https://github.com/surrealdb/surrealdb/security/advisories/GHSA-q3gg-m8hr-h4x4"
+- "https://github.com/surrealdb/surrealdb/issues/3327"
+- "https://github.com/surrealdb/surrealdb/pull/3332"
+- "https://github.com/surrealdb/surrealdb"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H"
+uuid: "caccc6e1-aecf-4bb3-b1c4-34da96087fed"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

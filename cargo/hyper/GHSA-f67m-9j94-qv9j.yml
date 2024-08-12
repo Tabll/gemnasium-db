@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-f67m-9j94-qv9j"
+identifiers:
+- "GHSA-f67m-9j94-qv9j"
+package_slug: "cargo/hyper"
+title: "Parser creates invalid uninitialized value"
+description: "Affected versions of this crate called `mem::uninitialized()` in the
+  HTTP1 parser to create values of type `httparse::Header` (from the `httparse` crate).\nThis
+  is unsound, since `Header` contains references and thus must be non-null.\n\nThe
+  flaw was corrected by avoiding the use of `mem::uninitialized()`, using `MaybeUninit`
+  instead."
+date: "2022-06-16"
+pubdate: "2022-06-16"
+affected_range: "<0.14.12"
+fixed_versions:
+- "0.14.12"
+affected_versions: "All versions before 0.14.12"
+not_impacted: "All versions starting from 0.14.12"
+solution: "Upgrade to version 0.14.12 or above."
+urls:
+- "https://github.com/advisories/GHSA-f67m-9j94-qv9j"
+- "https://github.com/hyperium/hyper/pull/2545"
+- "https://github.com/hyperium/hyper"
+- "https://rustsec.org/advisories/RUSTSEC-2022-0022.html"
+uuid: "e94b138f-5029-4582-8908-ac728de7e167"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

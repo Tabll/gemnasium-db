@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-gjrj-9rj4-pgwx"
+identifiers:
+- "GHSA-gjrj-9rj4-pgwx"
+package_slug: "cargo/perseus-actix-web"
+title: "DoS Vulnerability from Upstream Actix Web Issues"
+description: "This vulnerability affects all users of the `perseus deploy` functionality
+  who have not exported their sites to static files. If you are using the inbuilt
+  Perseus server in production, there is a memory leak in Actix Web stemming from
+  [this upstream issue](https://github.com/actix/actix-web/issues/1780) which can
+  allow even a single user to cause the process to exhaust its memory on low-memory
+  servers by continuously reloading the page. Note that this issue does not affect
+  all Actix Web applications, but rather results from certain usage patterns which
+  appear to be present in Perseus' server mechanics."
+date: "2021-12-17"
+pubdate: "2021-12-15"
+affected_range: "<0.3.0-beta.22"
+fixed_versions:
+- "0.3.0-beta.22"
+affected_versions: "All versions before 0.3.0-beta.22"
+not_impacted: "All versions starting from 0.3.0-beta.22"
+solution: "Upgrade to version 0.3.0-beta.22 or above."
+urls:
+- "https://github.com/advisories/GHSA-gjrj-9rj4-pgwx"
+- "https://github.com/arctic-hen7/perseus/security/advisories/GHSA-gjrj-9rj4-pgwx"
+- "https://github.com/actix/actix-web/issues/1780"
+- "https://github.com/arctic-hen7/perseus"
+uuid: "b407086a-47f7-43cd-a708-f83021003819"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

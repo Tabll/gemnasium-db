@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-52xf-5p2m-9wrv"
+identifiers:
+- "GHSA-52xf-5p2m-9wrv"
+package_slug: "cargo/s2n-tls"
+title: "s2n-tls has a potentially observable differences in RSA premaster secret handling"
+description: "When receiving a message from a client that sent an invalid RSA premaster
+  secret, an issue in s2n-tls results in the server performing additional processing
+  when the premaster secret contains an incorrect client hello version. While no practical
+  attack on s2n-tls has been demonstrated, this causes a small timing difference which
+  could theoretically be used as described in the Marvin Attack [1].\n\nWe would like
+  to thank Hubert Kario [2] for reporting this issue."
+date: "2024-06-06"
+pubdate: "2024-06-06"
+affected_range: "<0.2.7"
+fixed_versions:
+- "0.2.7"
+affected_versions: "All versions before 0.2.7"
+not_impacted: "All versions starting from 0.2.7"
+solution: "Upgrade to version 0.2.7 or above."
+urls:
+- "https://github.com/advisories/GHSA-52xf-5p2m-9wrv"
+- "https://github.com/aws/s2n-tls/security/advisories/GHSA-52xf-5p2m-9wrv"
+- "https://github.com/aws/s2n-tls/commit/114ccab0ff2cde491203ac841837d0d39b767412"
+- "https://github.com/aws/s2n-tls"
+- "https://github.com/aws/s2n-tls/releases/tag/v1.4.16"
+uuid: "7ed86268-b22b-4ed3-996c-cd9435ef823b"
+cwe_ids:
+- "CWE-203"
+- "CWE-937"
+- "CWE-1035"

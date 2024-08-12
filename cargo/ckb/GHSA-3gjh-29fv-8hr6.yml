@@ -1,0 +1,26 @@
+---
+identifier: "GHSA-3gjh-29fv-8hr6"
+identifiers:
+- "GHSA-3gjh-29fv-8hr6"
+package_slug: "cargo/ckb"
+title: "Nervos CKB Snappy decompress length can be very large and causes out of memory
+  error "
+description: "Adversary can create message which compressed size is less than the
+  package limit but the decompressed length is very large such as 1G. It will cost
+  the node many memories to process the network messages, and on the system with less
+  than 1G memory, the process is killed directly because of out of memory error."
+date: "2024-02-03"
+pubdate: "2024-02-03"
+affected_range: "<0.34.2"
+fixed_versions:
+- "0.34.2"
+affected_versions: "All versions before 0.34.2"
+not_impacted: "All versions starting from 0.34.2"
+solution: "Upgrade to version 0.34.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-3gjh-29fv-8hr6"
+- "https://github.com/nervosnetwork/ckb/security/advisories/GHSA-3gjh-29fv-8hr6"
+uuid: "d5e2777a-82d9-449e-a9c2-e68e53dc4aec"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

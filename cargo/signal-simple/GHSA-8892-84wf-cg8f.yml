@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-8892-84wf-cg8f"
+identifiers:
+- "GHSA-8892-84wf-cg8f"
+package_slug: "cargo/signal-simple"
+title: "SyncChannel<T> can move 'T: !Send' to other threads"
+description: "Affected versions of this crate unconditionally implement Send/Sync
+  for `SyncChannel<T>`. `SyncChannel<T>` doesn't provide access to `&T` but merely
+  serves as a channel that consumes and returns owned `T`. Users can create UB in
+  safe Rust by sending `T: !Send` to other threads with `SyncChannel::send/recv` APIs.
+  Using `T = Arc<Cell<_>` allows to create data races (which can lead to memory corruption),
+  and using `T = MutexGuard<T>` allows to unlock a mutex from a thread that didn't
+  lock the mutex."
+date: "2023-06-13"
+pubdate: "2021-08-25"
+affected_range: "<=0.1.1"
+fixed_versions: []
+affected_versions: "All versions up to 0.1.1"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-8892-84wf-cg8f"
+- "https://github.com/kitsuneninetails/signal-rust/issues/2"
+- "https://github.com/kitsuneninetails/signal-rust"
+- "https://rustsec.org/advisories/RUSTSEC-2020-0126.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+uuid: "21e82fa4-9626-4432-9bf4-74d44bb6af3e"
+cwe_ids:
+- "CWE-362"
+- "CWE-937"
+- "CWE-1035"

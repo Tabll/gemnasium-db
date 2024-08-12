@@ -1,0 +1,37 @@
+---
+identifier: "GHSA-xr9w-x6gw-c9mj"
+identifiers:
+- "GHSA-xr9w-x6gw-c9mj"
+package_slug: "cargo/deno"
+title: "Duplicate advisory: Deno vulnerable to Regular Expression Denial of Service"
+description: "## Duplicate Advisory\nThis advisory has been withdrawn because it is
+  a duplicate of [GHSA-jc97-h3h9-7xh6](https://github.com/advisories/GHSA-jc97-h3h9-7xh6).
+  This link is maintained to preserve external references.\n\n## Original Description\nVersions
+  of the package deno before 1.31.0 are vulnerable to Regular Expression Denial of
+  Service (ReDoS) due to the upgradeWebSocket function, which contains regexes in
+  the form of /s*,s*/, used for splitting the Connection/Upgrade header. A specially
+  crafted Connection/Upgrade header can be used to significantly slow down a web socket
+  server. This issue has been patched in version 1.31.0."
+date: "2023-04-03"
+pubdate: "2023-02-25"
+affected_range: "<1.31.0"
+fixed_versions:
+- "1.31.0"
+affected_versions: "All versions before 1.31.0"
+not_impacted: "All versions starting from 1.31.0"
+solution: "Upgrade to version 1.31.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-xr9w-x6gw-c9mj"
+- "https://nvd.nist.gov/vuln/detail/CVE-2023-26103"
+- "https://github.com/denoland/deno/pull/17722"
+- "https://github.com/denoland/deno/commit/cf06a7c7e672880e1b38598fe445e2c50b4a9d06"
+- "https://github.com/denoland/deno"
+- "https://github.com/denoland/deno/blob/2b247be517d789a37e532849e2e40b724af0918f/ext/http/01_http.js%23L395-L409"
+- "https://github.com/denoland/deno/releases/tag/v1.31.0"
+- "https://security.snyk.io/vuln/SNYK-RUST-DENO-3315970"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "8d5419c4-6f4b-47bf-8ed7-1a20a4997b46"
+cwe_ids:
+- "CWE-1333"
+- "CWE-937"
+- "CWE-1035"

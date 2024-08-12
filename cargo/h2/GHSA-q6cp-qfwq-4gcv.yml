@@ -1,0 +1,36 @@
+---
+identifier: "GHSA-q6cp-qfwq-4gcv"
+identifiers:
+- "GHSA-q6cp-qfwq-4gcv"
+package_slug: "cargo/h2"
+title: "h2 servers vulnerable to degradation of service with CONTINUATION Flood"
+description: "An attacker can send a flood of CONTINUATION frames, causing `h2` to
+  process them indefinitely. This results in an increase in CPU usage.\n\nTokio task
+  budget helps prevent this from a complete denial-of-service, as the server can still
+  respond to legitimate requests, albeit with increased latency.\n\nMore details at
+  https://seanmonstar.com/blog/hyper-http2-continuation-flood/.\n\nPatches available
+  for 0.4.x and 0.3.x versions."
+date: "2024-04-05"
+pubdate: "2024-04-05"
+affected_range: "<0.3.26||>=0.4.0 <0.4.4"
+fixed_versions:
+- "0.3.26"
+- "0.4.4"
+affected_versions: "All versions before 0.3.26, all versions starting from 0.4.0 before
+  0.4.4"
+not_impacted: "All versions starting from 0.3.26 before 0.4.0, all versions starting
+  from 0.4.4"
+solution: "Upgrade to versions 0.3.26, 0.4.4 or above."
+urls:
+- "https://github.com/advisories/GHSA-q6cp-qfwq-4gcv"
+- "https://github.com/hyperium/h2"
+- "https://rustsec.org/advisories/RUSTSEC-2024-0332.html"
+- "https://seanmonstar.com/blog/hyper-http2-continuation-flood"
+- "https://www.kb.cert.org/vuls/id/421644"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+uuid: "61e45068-cb97-4a04-8534-0747586dad5d"
+cwe_ids:
+- "CWE-400"
+- "CWE-770"
+- "CWE-937"
+- "CWE-1035"

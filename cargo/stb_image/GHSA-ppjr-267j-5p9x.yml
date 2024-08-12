@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-ppjr-267j-5p9x"
+identifiers:
+- "GHSA-ppjr-267j-5p9x"
+package_slug: "cargo/stb_image"
+title: "NULL pointer derefernce in `stb_image`"
+description: "A bug in error handling in the `stb_image` C library could cause a NULL
+  pointer dereference when attempting to load an invalid or unsupported image file.
+  \ This is fixed in version 0.2.5 and later of the `stb_image` Rust crate, by patching
+  the C code to correctly handle NULL pointers."
+date: "2023-07-19"
+pubdate: "2023-03-20"
+affected_range: "<0.2.5"
+fixed_versions:
+- "0.2.5"
+affected_versions: "All versions before 0.2.5"
+not_impacted: "All versions starting from 0.2.5"
+solution: "Upgrade to version 0.2.5 or above."
+urls:
+- "https://github.com/advisories/GHSA-ppjr-267j-5p9x"
+- "https://github.com/servo/rust-stb-image/pull/102"
+- "https://github.com/servo/rust-stb-imag"
+- "https://rustsec.org/advisories/RUSTSEC-2023-0021.html"
+uuid: "9dc67488-17d5-4ce0-abcd-05d592f40ebd"
+cwe_ids:
+- "CWE-476"
+- "CWE-937"
+- "CWE-1035"

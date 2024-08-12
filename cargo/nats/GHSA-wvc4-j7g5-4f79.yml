@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-wvc4-j7g5-4f79"
+identifiers:
+- "GHSA-wvc4-j7g5-4f79"
+package_slug: "cargo/nats"
+title: "NATS TLS certificate common name validation bypass"
+description: "The NATS official Rust clients are vulnerable to MitM when using TLS.\n\nA
+  fix for the `nats` crate hasn't been released yet. Since the `nats` crate is going
+  to be deprecated anyway, consider switching to `async-nats` `>= 0.29` which already
+  fixed this vulnerability.\n\nThe common name of the server's TLS certificate is
+  validated against the `host`name provided by the server's plaintext `INFO` message
+  during the initial connection setup phase. A MitM proxy can tamper with the `host`
+  field's value by substituting it with the common name of a valid certificate it
+  controls, fooling the client into accepting it."
+date: "2023-03-27"
+pubdate: "2023-03-27"
+affected_range: ">=0.9.0 <0.24.1"
+fixed_versions:
+- "0.24.1"
+affected_versions: "All versions starting from 0.9.0 before 0.24.1"
+not_impacted: "All versions before 0.9.0, all versions starting from 0.24.1"
+solution: "Upgrade to version 0.24.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-wvc4-j7g5-4f79"
+- "https://github.com/nats-io/nats.rs/pull/881"
+- "https://github.com/nats-io/nats.rs/pull/887"
+- "https://github.com/nats-io/nats.rs/commit/9bacb86a480803ece9d1a45aa443081cf1eb815c"
+- "https://github.com/nats-io/nats.rs"
+- "https://rustsec.org/advisories/RUSTSEC-2023-0029.html"
+uuid: "7be99708-930e-4763-89cd-56af5d58fd74"
+cwe_ids:
+- "CWE-347"
+- "CWE-937"
+- "CWE-1035"

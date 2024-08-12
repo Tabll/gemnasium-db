@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-3227-r97m-8j95"
+identifiers:
+- "GHSA-3227-r97m-8j95"
+package_slug: "cargo/afire"
+title: "Relative Path Traversal in afire serve_static"
+description: "This vulnerability effects the built-in afire serve_static extension
+  allowing paths containing `//....` to bypass the previous path sanitation and request
+  files in higher directories that should not be accessible."
+date: "2022-04-22"
+pubdate: "2022-04-22"
+affected_range: ">=0.2.1 <1.1.0"
+fixed_versions:
+- "1.1.0"
+affected_versions: "All versions starting from 0.2.1 before 1.1.0"
+not_impacted: "All versions before 0.2.1, all versions starting from 1.1.0"
+solution: "Upgrade to version 1.1.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-3227-r97m-8j95"
+- "https://github.com/Basicprogrammer10/afire/security/advisories/GHSA-3227-r97m-8j95"
+- "https://github.com/Basicprogrammer10/afire/commit/da7904c04f82e1cb43cc42eaf6a1dba072b5c921"
+- "https://github.com/Basicprogrammer10/afire"
+- "https://github.com/Basicprogrammer10/afire/releases/tag/v1.1.0"
+uuid: "fa8eb58b-8210-49ca-a596-2225ad5414c6"
+cwe_ids:
+- "CWE-22"
+- "CWE-34"
+- "CWE-937"
+- "CWE-1035"

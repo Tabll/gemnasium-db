@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-v363-rrf2-5fmj"
+identifiers:
+- "GHSA-v363-rrf2-5fmj"
+package_slug: "cargo/ferris-says"
+title: "ferris-says has undefined behavior when not using UTF-8"
+description: "Affected versions receive a `&[u8]` from the caller through a safe API,
+  and pass it directly to the unsafe `str::from_utf8_unchecked` function.\n\nThe behavior
+  of `ferris_says::say` is undefined if the bytes from the caller don't happen to
+  be valid UTF-8.\n\nThe flaw was corrected in [ferris-says#21] by using the safe
+  `str::from_utf8` instead, and returning an error on invalid input. However this
+  fix has not yet been published to crates.io as a patch version for 0.2.\n\nSeparately,
+  [ferris-says#32] has introduced a different API for version 0.3 which accepts input
+  as `&str` rather than `&[u8]`, so is unaffected by this bug.\n\n[ferris-says#21]:
+  https://github.com/rust-lang/ferris-says/pull/21\n[ferris-says#32]: https://github.com/rust-lang/ferris-says/pull/32"
+date: "2024-01-17"
+pubdate: "2024-01-17"
+affected_range: ">=0.1.2 <=0.2.1||>=0.3.0 <0.3.1"
+fixed_versions:
+- "0.3.1"
+affected_versions: "All versions starting from 0.1.2 up to 0.2.1, all versions starting
+  from 0.3.0 before 0.3.1"
+not_impacted: "All versions before 0.1.2, all versions after 0.2.1 before 0.3.0, all
+  versions starting from 0.3.1"
+solution: "Upgrade to version 0.3.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-v363-rrf2-5fmj"
+- "https://github.com/rust-lang/ferris-says/pull/21"
+- "https://github.com/rust-lang/ferris-says/commit/bb661f29e0d88968c495a4ea4dc63ff0e2c2c11a"
+- "https://github.com/mgattozzi/ferris-says"
+- "https://rustsec.org/advisories/RUSTSEC-2024-0001.html"
+uuid: "913eea53-7558-49d2-b99a-d1bbf61bc9ec"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-xfhw-6mc4-mgxf"
+identifiers:
+- "GHSA-xfhw-6mc4-mgxf"
+package_slug: "cargo/crayon"
+title: "crayon: ObjectPool creates uninitialized memory when freeing objects"
+description: "As of version 0.6.0, the ObjectPool explicitly creates an uninitialized
+  instance of its type parameter when it attempts to free an object, and swaps it
+  into the storage. This causes instant undefined behavior due to reading the uninitialized
+  memory in order to write it to the pool storage.\n\nExtremely basic usage of the
+  crate can trigger this issue, e.g. this code from a doctest:\n\n```rust\nuse crayon::prelude::*;\napplication::oneshot().unwrap();\n\nlet
+  mut params = MeshParams::default();\n\nlet mesh = video::create_mesh(params, None).unwrap();\n\n//
+  Deletes the mesh object.\nvideo::delete_mesh(mesh); // <-- UB\n```\n\nThe Clippy
+  warning for this code was silenced in commit c2fde19caf6149d91faa504263f0bc5cafc35de5.\n\nDiscovered
+  via https://asan.saethlin.dev/ub?crate=crayon&version=0.7.1"
+date: "2024-04-05"
+pubdate: "2024-04-05"
+affected_range: ">=0.6.0 <=0.7.1"
+fixed_versions: []
+affected_versions: "All versions starting from 0.6.0 up to 0.7.1"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-xfhw-6mc4-mgxf"
+- "https://github.com/shawnscode/crayon/issues/109"
+- "https://github.com/shawnscode/crayon/commit/c2fde19caf6149d91faa504263f0bc5cafc35de5"
+- "https://github.com/shawnscode/crayon"
+- "https://rustsec.org/advisories/RUSTSEC-2024-0018.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "3eb98ed0-96b2-4ece-a45d-66052eb64107"
+cwe_ids:
+- "CWE-908"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-pfjq-935c-4895"
+identifiers:
+- "GHSA-pfjq-935c-4895"
+package_slug: "cargo/v9"
+title: "Data races in v9"
+description: "Affected versions of this crate unconditionally implement `Sync` for
+  `SyncRef<T>`. This definition allows data races if `&T` is accessible through `&SyncRef`.\n\n`SyncRef<T>`
+  derives `Clone` and `Debug`, and the default implementations of those traits access
+  `&T` by invoking `T::clone()` & `T::fmt()`. It is possible to create data races
+  & undefined behavior by concurrently invoking `SyncRef<T>::clone()` or `SyncRef<T>::fmt()`
+  from multiple threads with `T: !Sync`."
+date: "2023-06-13"
+pubdate: "2021-08-25"
+affected_range: "<0.1.43"
+fixed_versions:
+- "0.1.43"
+affected_versions: "All versions before 0.1.43"
+not_impacted: "All versions starting from 0.1.43"
+solution: "Upgrade to version 0.1.43 or above."
+urls:
+- "https://github.com/advisories/GHSA-pfjq-935c-4895"
+- "https://github.com/purpleposeidon/v9/issues/1"
+- "https://rustsec.org/advisories/RUSTSEC-2020-0127.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+uuid: "de71016d-71c1-45b5-b1e6-dfd18e8fc28e"
+cwe_ids:
+- "CWE-362"
+- "CWE-937"
+- "CWE-1035"

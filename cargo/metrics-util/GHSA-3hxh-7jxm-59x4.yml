@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-3hxh-7jxm-59x4"
+identifiers:
+- "GHSA-3hxh-7jxm-59x4"
+package_slug: "cargo/metrics-util"
+title: "AtomicBucket<T> unconditionally implements Send/Sync"
+description: "In the affected versions of the crate, `AtomicBucket<T>` unconditionally
+  implements `Send`/`Sync` traits. Therefore, users can create a data race to the
+  inner\n`T: !Sync` by using the `AtomicBucket::data_with()` API.\nSuch data races
+  can potentially cause memory corruption or other undefined behavior.\n\nThe flaw
+  was fixed in commit 8e6daab by adding appropriate Send/Sync bounds to the Send/Sync
+  impl of struct `Block<T>` (which is a data type contained inside `AtomicBucket<T>`)."
+date: "2022-06-17"
+pubdate: "2022-06-17"
+affected_range: "<0.7.0"
+fixed_versions:
+- "0.7.0"
+affected_versions: "All versions before 0.7.0"
+not_impacted: "All versions starting from 0.7.0"
+solution: "Upgrade to version 0.7.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-3hxh-7jxm-59x4"
+- "https://github.com/metrics-rs/metrics/issues/190"
+- "https://github.com/metrics-rs/metrics"
+- "https://rustsec.org/advisories/RUSTSEC-2021-0113.html"
+uuid: "d9f85696-85b7-4c91-93ce-428efb4e165d"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

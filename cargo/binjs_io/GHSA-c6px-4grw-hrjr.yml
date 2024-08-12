@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-c6px-4grw-hrjr"
+identifiers:
+- "GHSA-c6px-4grw-hrjr"
+package_slug: "cargo/binjs_io"
+title: "'Read' on uninitialized memory may cause UB"
+description: "Affected versions of this crate passes an uninitialized buffer to a
+  user-provided `Read` implementation. The crate currently contains 4 occurrences
+  of such cases. Arbitrary `Read` implementations can read from the uninitialized
+  buffer (memory exposure) and also can return incorrect number of bytes written to
+  the buffer.\nReading from uninitialized memory produces undefined values that can
+  quickly invoke undefined behavior."
+date: "2023-06-13"
+pubdate: "2022-06-16"
+affected_range: "<=0.2.1"
+fixed_versions: []
+affected_versions: "All versions up to 0.2.1"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-c6px-4grw-hrjr"
+- "https://github.com/binast/binjs-ref/issues/460"
+- "https://github.com/binast/binjs-ref"
+- "https://rustsec.org/advisories/RUSTSEC-2021-0085.html"
+uuid: "bb395e19-04ea-4997-86c1-86faf754e9e0"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

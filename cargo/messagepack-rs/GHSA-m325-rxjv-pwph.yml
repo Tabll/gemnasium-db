@@ -1,0 +1,26 @@
+---
+identifier: "GHSA-m325-rxjv-pwph"
+identifiers:
+- "GHSA-m325-rxjv-pwph"
+package_slug: "cargo/messagepack-rs"
+title: "Deserialization functions pass uninitialized memory to user-provided Read"
+description: "Affected versions of this crate passed an uninitialized buffer to a\nuser-provided
+  `Read` instance in:\n\n* `deserialize_binary`\n* `deserialize_string`\n* `deserialize_extension_others`\n*
+  `deserialize_string_primitive`\n\nThis can result in safe `Read` implementations
+  reading from the uninitialized\nbuffer leading to undefined behavior."
+date: "2023-06-13"
+pubdate: "2022-06-17"
+affected_range: "<=0.8.1"
+fixed_versions: []
+affected_versions: "All versions up to 0.8.1"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-m325-rxjv-pwph"
+- "https://github.com/otake84/messagepack-rs/issues/2"
+- "https://github.com/otake84/messagepack-rs"
+- "https://rustsec.org/advisories/RUSTSEC-2021-0092.html"
+uuid: "96416107-7f47-441d-bef2-ead7c43e2cfa"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

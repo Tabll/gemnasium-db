@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-9g55-pg62-m8hh"
+identifiers:
+- "GHSA-9g55-pg62-m8hh"
+package_slug: "cargo/crossbeam-channel"
+title: "Channel creates zero value of any type"
+description: "Affected versions of this crate called `mem::zeroed()` to create values
+  of a user-supplied type `T`.\nThis is unsound e.g. if `T` is a reference type (which
+  must be non-null).\n\nThe flaw was corrected by avoiding the use of `mem::zeroed()`,
+  using `MaybeUninit` instead."
+date: "2022-06-16"
+pubdate: "2022-06-16"
+affected_range: "<0.4.3"
+fixed_versions:
+- "0.4.3"
+affected_versions: "All versions before 0.4.3"
+not_impacted: "All versions starting from 0.4.3"
+solution: "Upgrade to version 0.4.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-9g55-pg62-m8hh"
+- "https://github.com/crossbeam-rs/crossbeam/pull/458"
+- "https://github.com/crossbeam-rs/crossbeam"
+- "https://rustsec.org/advisories/RUSTSEC-2022-0019.html"
+uuid: "a5367d95-4ff8-4602-adf7-713e7d135827"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

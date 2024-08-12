@@ -17,7 +17,7 @@ def invalidated_range(slug)
   case slug
   when 'maven', 'nuget'
     return '(,0)'
-  when 'pypi', 'packagist', 'conan', 'gem', 'npm', 'go', 'swift'
+  when 'pypi', 'packagist', 'conan', 'gem', 'npm', 'go', 'swift', 'cargo'
     return '<0'
   end
   ''

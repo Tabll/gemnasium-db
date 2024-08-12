@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-fc4h-xcf3-qj5f"
+identifiers:
+- "GHSA-fc4h-xcf3-qj5f"
+package_slug: "cargo/matrix-sdk"
+title: "matrix-sdk 0.6.0 logs access tokens"
+description: "When sending Matrix requests using an affected version of `matrix-sdk`
+  in an application that writes logs using `tracing-subscriber` (in a way that includes
+  fields of tracing spans such as `tracing_subscriber`s default text output from the
+  `fmt` module), these logs will contain the user's access token."
+date: "2022-10-25"
+pubdate: "2022-10-25"
+affected_range: ">=0.6.0 <0.6.2"
+fixed_versions:
+- "0.6.2"
+affected_versions: "All versions starting from 0.6.0 before 0.6.2"
+not_impacted: "All versions before 0.6.0, all versions starting from 0.6.2"
+solution: "Upgrade to version 0.6.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-fc4h-xcf3-qj5f"
+- "https://github.com/matrix-org/matrix-rust-sdk/issues/1110"
+- "https://github.com/matrix-org/matrix-rust-sdk"
+- "https://rustsec.org/advisories/RUSTSEC-2022-0062.html"
+uuid: "2917fa90-0437-4518-be2b-fcc15dfac332"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

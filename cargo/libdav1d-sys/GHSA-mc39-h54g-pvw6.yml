@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-mc39-h54g-pvw6"
+identifiers:
+- "GHSA-mc39-h54g-pvw6"
+package_slug: "cargo/libdav1d-sys"
+title: "libdav1d-sys affected by dav1d AV1 decoder integer overflow"
+description: "An integer overflow in dav1d AV1 decoder that can occur when decoding
+  videos with large frame size. This can lead to memory corruption within the AV1
+  decoder. We recommend upgrading to version 0.7.0 of libdav1d-sys, which includes
+  dav1d 1.4.0."
+date: "2024-04-05"
+pubdate: "2024-04-05"
+affected_range: "<0.7.0"
+fixed_versions:
+- "0.7.0"
+affected_versions: "All versions before 0.7.0"
+not_impacted: "All versions starting from 0.7.0"
+solution: "Upgrade to version 0.7.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-mc39-h54g-pvw6"
+- "https://github.com/njaard/libavif-rs"
+- "https://rustsec.org/advisories/RUSTSEC-2024-0016.html"
+- "https://www.cvedetails.com/cve/CVE-2024-1580"
+cvss_v3: "CVSS:3.1/AV:A/AC:H/PR:L/UI:N/S:U/C:L/I:H/A:L"
+uuid: "31fe8e93-66c8-4602-98f8-fb55dff5794b"
+cwe_ids:
+- "CWE-190"
+- "CWE-937"
+- "CWE-1035"

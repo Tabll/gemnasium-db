@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-wcxc-jf6c-8rx9"
+identifiers:
+- "GHSA-wcxc-jf6c-8rx9"
+package_slug: "cargo/libpulse-binding"
+title: " Uncaught Exception in libpulse-binding"
+description: "Affected versions of this crate failed to catch panics crossing FFI
+  boundaries via callbacks, which\nis a form of UB. This flaw was corrected by [this
+  commit][1] which was included in version 2.6.0."
+date: "2021-08-18"
+pubdate: "2021-08-25"
+affected_range: "<2.6.0"
+fixed_versions:
+- "2.6.0"
+affected_versions: "All versions before 2.6.0"
+not_impacted: "All versions starting from 2.6.0"
+solution: "Upgrade to version 2.6.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-wcxc-jf6c-8rx9"
+- "https://github.com/jnqnfe/pulse-binding-rust/commit/7fd282aef7787577c385aed88cb25d004b85f494"
+- "https://github.com/jnqnfe/pulse-binding-rust"
+- "https://rustsec.org/advisories/RUSTSEC-2019-0038.html"
+uuid: "c6628beb-6e26-4215-8757-072376f7997e"
+cwe_ids:
+- "CWE-248"
+- "CWE-937"
+- "CWE-1035"

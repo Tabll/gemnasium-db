@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-fq33-vmhv-48xh"
+identifiers:
+- "GHSA-fq33-vmhv-48xh"
+package_slug: "cargo/ntru"
+title: "ntru-rs has unsound FFI: Wrong API usage causes write past allocated area"
+description: "The following usage causes undefined behavior.\n```rust\nlet kp: ntru::types::KeyPair
+  = …;\nkp.get_public().export(Default::default())\n```\n\nWhen compiled with debug
+  assertions, the code above will trigger a `attempt to subtract with overflow` panic
+  before UB occurs.\nOther mistakes (e.g. using `EncParams` from a different key)
+  may always trigger UB.\n\nLikely, older versions of this crate are also affected,
+  but have not been tested."
+date: "2023-04-07"
+pubdate: "2023-04-07"
+affected_range: ">=0.4.3 <=0.5.6"
+fixed_versions: []
+affected_versions: "All versions starting from 0.4.3 up to 0.5.6"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-fq33-vmhv-48xh"
+- "https://github.com/FrinkGlobal/ntru-rs/issues/8"
+- "https://github.com/FrinkGlobal/ntru-rs"
+- "https://rustsec.org/advisories/RUSTSEC-2023-0032.html"
+uuid: "31f523c9-5c25-4dbe-a0ff-42b8a4945f71"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

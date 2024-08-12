@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-rcx8-48pc-v9q8"
+identifiers:
+- "GHSA-rcx8-48pc-v9q8"
+package_slug: "cargo/mail-internals"
+title: "mail-internals use-after-free vulnerability in `vec_insert_bytes`"
+description: "Incorrect reallocation logic in the function [`vec_insert_bytes`](https://docs.rs/mail-internals/0.2.3/mail_internals/utils/fn.vec_insert_bytes.html)
+  causes a use-after-free.\n\nThis function does not have to be called directly to
+  trigger the vulnerability because many methods on [`EncodingWriter`](https://docs.rs/mail-internals/0.2.3/mail_internals/encoder/struct.EncodingWriter.html)
+  call this function internally.\n\nThe mail-\\* suite is unmaintained and the upstream
+  sources have been actively vandalised.\nA fixed `mail-internals-ng` (and `mail-headers-ng`
+  and `mail-core-ng`) crate has been published which fixes this, and a dependency
+  on another unsound crate."
+date: "2023-08-24"
+pubdate: "2023-08-24"
+affected_range: ">=0.2.0 <=0.2.3"
+fixed_versions: []
+affected_versions: "All versions starting from 0.2.0 up to 0.2.3"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-rcx8-48pc-v9q8"
+- "https://github.com/rustsec/advisory-db/blob/main/crates/mail-internals/RUSTSEC-2023-0054.md"
+- "https://rustsec.org/advisories/RUSTSEC-2023-0054.html"
+uuid: "99008c59-4a53-4e4c-9b73-857ff0351606"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

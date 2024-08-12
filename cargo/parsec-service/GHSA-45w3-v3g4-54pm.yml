@@ -1,0 +1,46 @@
+---
+identifier: "GHSA-45w3-v3g4-54pm"
+identifiers:
+- "GHSA-45w3-v3g4-54pm"
+package_slug: "cargo/parsec-service"
+title: "Chrono has potential segfault issue in SPIFFE authenticator"
+description: "Several vulnerabilities have been reported in the `time` and `chrono`
+  crates related to handling of calls to `localtime_r`. You can follow some of the
+  discussions [here](https://github.com/chronotope/chrono/issues/602) and [here](https://github.com/time-rs/time/issues/293),
+  and the associated CVE [here](https://nvd.nist.gov/vuln/detail/CVE-2020-26235).
+  In our case, the issue with the dependency was flagged by our nightly CI build running
+  [`cargo-audit`](https://github.com/parallaxsecond/parsec/issues/544).\n\nThe vulnerability
+  leads to a segfault in specific circumstances - namely, when one of a number of
+  functions in the `time` crate is called while any other thread is setting an environment
+  variable. Given that in the case of the Parsec service this affects the SPIFFE authenticator,
+  Parsec service users can encounter the issue only when the JWT SVID authenticator
+  is enabled and being used. We have not undergone any manual tracing to understand
+  if the vulnerable methods are called anywhere in our stack, however it seems reasonable
+  to expect that if that were to be the case, the issue would lie in JWT validation
+  (i.e. when handling the dates found within a Json Web Token). JWT validation could
+  thus fail, bringing down the thread in which the request happens. The rest of the
+  threads continue to work. Since the threadpool implementation that we use [continues
+  replenishing the pool](https://docs.rs/threadpool/latest/threadpool/) when one thread
+  panics, the impact on the service should be minimal."
+date: "2022-09-12"
+pubdate: "2022-02-11"
+affected_range: ">=0.8.0 <1.1.0"
+fixed_versions:
+- "1.1.0"
+affected_versions: "All versions starting from 0.8.0 before 1.1.0"
+not_impacted: "All versions before 0.8.0, all versions starting from 1.1.0"
+solution: "Upgrade to version 1.1.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-45w3-v3g4-54pm"
+- "https://github.com/parallaxsecond/parsec/security/advisories/GHSA-45w3-v3g4-54pm"
+- "https://nvd.nist.gov/vuln/detail/CVE-2020-26235"
+- "https://github.com/chronotope/chrono/issues/602"
+- "https://github.com/parallaxsecond/parsec/issues/544"
+- "https://github.com/parallaxsecond/parsec/issues/544#issuecomment-1024185688"
+- "https://github.com/time-rs/time/issues/293"
+- "https://github.com/parallaxsecond/parsec"
+uuid: "5f476c6f-cca7-4dfc-a8b1-3a44d4ed2af5"
+cwe_ids:
+- "CWE-476"
+- "CWE-937"
+- "CWE-1035"

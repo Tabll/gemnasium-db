@@ -1,0 +1,25 @@
+---
+identifier: "GHSA-p7mj-xvxg-grff"
+identifiers:
+- "GHSA-p7mj-xvxg-grff"
+package_slug: "cargo/out-reference"
+title: "`out_reference::Out::from_raw` should be `unsafe`"
+description: "`Out::from_raw` in affected versions allows writing a value to invalid
+  memory address without requiring `unsafe`.\n\nThe soundness issue has been addressed
+  by making `Out::from_raw` an unsafe function."
+date: "2023-03-13"
+pubdate: "2023-03-13"
+affected_range: ">=0.1.0 <0.2.0"
+fixed_versions:
+- "0.2.0"
+affected_versions: "All versions starting from 0.1.0 before 0.2.0"
+not_impacted: "All versions before 0.1.0, all versions starting from 0.2.0"
+solution: "Upgrade to version 0.2.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-p7mj-xvxg-grff"
+- "https://github.com/RustyYato/out-ref/issues/1"
+- "https://rustsec.org/advisories/RUSTSEC-2021-0152.html"
+uuid: "bd9b358a-10f7-4d52-93f1-c0eb8ef1031a"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-3m6f-3gfg-4x56"
+identifiers:
+- "GHSA-3m6f-3gfg-4x56"
+package_slug: "cargo/simple_asn1"
+title: "Panic on incorrect date input to `simple_asn1`"
+description: "Version 0.6.0 of the `simple_asn1` crate panics on certain malformed\ninputs
+  to its parsing functions, including `from_der` and `der_decode`.\nBecause this crate
+  is frequently used with inputs from the network, this\nshould be considered a security
+  vulnerability.\n\nThe issue occurs when parsing the old ASN.1 \"UTCTime\" time format.
+  \ If an\nattacker provides a UTCTime where the first character is ASCII but the\nsecond
+  character is above 0x7f, a string slice operation in the\n`from_der_` function will
+  try to slice into the middle of a UTF-8\ncharacter, and cause a panic.\n\nThis error
+  was introduced in commit\n[`d7d39d709577710e9dc8`](https://github.com/acw/simple_asn1/commit/d7d39d709577710e9dc8833ee57d200eef366db8),\nwhich
+  updated `simple_asn1` to use `time` instead of `chrono` because of\n[`RUSTSEC-2020-159`](https://rustsec.org/advisories/RUSTSEC-2020-0159).\nVersions
+  of `simple_asn1` before 0.6.0 are not affected by this issue.\n\nThe [patch](https://github.com/acw/simple_asn1/pull/28)
+  was applied in\n`simple_asn1` version 0.6.1."
+date: "2022-06-17"
+pubdate: "2022-06-17"
+affected_range: ">=0.6.0 <0.6.1||=0.6.0"
+fixed_versions:
+- "0.6.1"
+affected_versions: "All versions starting from 0.6.0 before 0.6.1, version 0.6.0"
+not_impacted: ""
+solution: "Upgrade to version 0.6.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-3m6f-3gfg-4x56"
+- "https://github.com/acw/simple_asn1/issues/27"
+- "https://github.com/acw/simple_asn1/commit/d7d39d709577710e9dc8833ee57d200eef366db8"
+- "https://github.com/acw/simple_asn1"
+- "https://rustsec.org/advisories/RUSTSEC-2021-0125.html"
+uuid: "87a1e3ef-6939-47a6-846e-54f7bf98c536"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

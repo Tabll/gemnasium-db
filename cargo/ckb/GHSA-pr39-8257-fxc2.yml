@@ -1,0 +1,25 @@
+---
+identifier: "GHSA-pr39-8257-fxc2"
+identifiers:
+- "GHSA-pr39-8257-fxc2"
+package_slug: "cargo/ckb"
+title: "Nervos CKB DoS: Process exists when p2p discovery protocol receives unsupported
+  peer IP"
+description: "The p2p discovery protocol assumes that the peer IP must be valid IPv4
+  address."
+date: "2024-02-02"
+pubdate: "2024-02-02"
+affected_range: "<0.34.0"
+fixed_versions:
+- "0.34.0"
+affected_versions: "All versions before 0.34.0"
+not_impacted: "All versions starting from 0.34.0"
+solution: "Upgrade to version 0.34.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-pr39-8257-fxc2"
+- "https://github.com/nervosnetwork/ckb/security/advisories/GHSA-pr39-8257-fxc2"
+- "https://github.com/nervosnetwork/ckb/commit/d909cdebacc4747e972de4a7e5f19c8f79480361"
+uuid: "c335277e-d156-4f6e-9e38-a6d366d6ceb4"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

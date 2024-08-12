@@ -1,0 +1,23 @@
+---
+identifier: "GHSA-wjxc-pjx9-4wvm"
+identifiers:
+- "GHSA-wjxc-pjx9-4wvm"
+package_slug: "cargo/ckb"
+title: "Nervos CKB Panic on malformed input"
+description: "CKB process will panic when received malformed p2p message because of
+  snappy, which is used to compress network messages"
+date: "2024-02-03"
+pubdate: "2024-02-03"
+affected_range: "<0.34.2"
+fixed_versions:
+- "0.34.2"
+affected_versions: "All versions before 0.34.2"
+not_impacted: "All versions starting from 0.34.2"
+solution: "Upgrade to version 0.34.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-wjxc-pjx9-4wvm"
+- "https://github.com/nervosnetwork/ckb/security/advisories/GHSA-wjxc-pjx9-4wvm"
+uuid: "312398f9-0ee8-49e7-a608-fe036457cd41"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

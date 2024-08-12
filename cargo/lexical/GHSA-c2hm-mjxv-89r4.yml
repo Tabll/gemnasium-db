@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-c2hm-mjxv-89r4"
+identifiers:
+- "GHSA-c2hm-mjxv-89r4"
+package_slug: "cargo/lexical"
+title: "Multiple soundness issues in lexical"
+description: "`lexical` contains multiple soundness issues:\n\n1. [Bytes::read() allows
+  creating instances of types with invalid bit patterns](https://github.com/Alexhuszagh/rust-lexical/issues/102)\n1.
+  [BytesIter::read() advances iterators out of bounds](https://github.com/Alexhuszagh/rust-lexical/issues/101)\n1.
+  [The `BytesIter` trait has safety invariants but is public and not marked `unsafe`](https://github.com/Alexhuszagh/rust-lexical/issues/104)\n1.
+  [`write_float()` calls `MaybeUninit::assume_init()` on uninitialized data, which
+  is is not allowed by the Rust abstract machine](https://github.com/Alexhuszagh/rust-lexical/issues/95)\n\nThe
+  crate also has some correctness issues and appears to be unmaintained."
+date: "2024-07-05"
+pubdate: "2023-09-04"
+affected_range: "<=6.1.1"
+fixed_versions: []
+affected_versions: "All versions up to 6.1.1"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-c2hm-mjxv-89r4"
+- "https://github.com/Alexhuszagh/rust-lexical"
+- "https://rustsec.org/advisories/RUSTSEC-2023-0055.html"
+uuid: "aefce5f8-994e-4a8a-a7de-fa9e99a451f0"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

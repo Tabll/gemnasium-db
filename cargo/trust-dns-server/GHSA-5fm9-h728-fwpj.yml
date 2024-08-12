@@ -1,0 +1,41 @@
+---
+identifier: "GHSA-5fm9-h728-fwpj"
+identifiers:
+- "GHSA-5fm9-h728-fwpj"
+package_slug: "cargo/trust-dns-server"
+title: "trust-dns vulnerable to Remote Attackers causing Denial-of-Service (packet
+  loops) with crafted DNS packets"
+description: "trust-dns and trust-dns-server are vulnerable to remotely triggered
+  denial-of-service attacks, consuming both network and CPU resources.\nDNS messages
+  with the QR=1 bit set are responded to with a `FormErr` response.\nThis allows creating
+  a traffic loop, in which these `FormErr` responses are sent nonstop between vulnerable
+  servers.\n\nThere are two scenarios how this can be exploited: 1) Create a loop
+  between two instances of trust-dns, consuming network resources, or 2) consuming
+  the CPU of a single instance.\n\nWith two instances *A* and *B* an attacker sends
+  a DNS query with a spoofed source IP address to *A*.\n*A* replies with a `FormErr`
+  to *B*.\nNow both servers with ping-pong the message back and forth until by chance
+  the packet is dropped in the network.\nMultiple spoofed packets can be sent by the
+  attacker, increasing resource consumption.\n\nA single server can get locked up
+  replying to itself.\nSame setup as above, but now *A* sends the reply to itself.\nThe
+  packet is sent out as fast as the CPU and network stack manage.\nThis locks up a
+  CPU core.\nMultiple packets from the attacker consume multiple CPU cores."
+date: "2023-06-06"
+pubdate: "2023-06-06"
+affected_range: "<0.22.1||>=0.23.0-alpha.2 <0.23.0-alpha.3"
+fixed_versions:
+- "0.22.1"
+- "0.23.0-alpha.3"
+affected_versions: "All versions before 0.22.1, all versions starting from 0.23.0-alpha.2
+  before 0.23.0-alpha.3"
+not_impacted: "All versions starting from 0.22.1 before 0.23.0-alpha.2, all versions
+  starting from 0.23.0-alpha.3"
+solution: "Upgrade to versions 0.22.1, 0.23.0-alpha.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-5fm9-h728-fwpj"
+- "https://github.com/bluejekyll/trust-dns/pull/1952"
+- "https://github.com/bluejekyll/trust-dns"
+- "https://rustsec.org/advisories/RUSTSEC-2023-0041.html"
+uuid: "fe91c51b-60c6-41c7-a682-ae290d4e4d56"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

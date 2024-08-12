@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-p56p-gq3f-whg8"
+identifiers:
+- "GHSA-p56p-gq3f-whg8"
+package_slug: "cargo/flumedb"
+title: "`Read` on uninitialized buffer may cause UB ( `read_entry()` )"
+description: "Affected versions of this crate passes an uninitialized buffer to a
+  user-provided `Read` implementation.\nThere are two of such cases (`go_offset_log::read_entry()`
+  & `offset_log::read_entry()`).\n\nArbitrary `Read` implementations can read from
+  the uninitialized buffer (memory exposure) and also can return incorrect number
+  of bytes written to the buffer.\nReading from uninitialized memory produces undefined
+  values that can quickly invoke undefined behavior."
+date: "2022-06-16"
+pubdate: "2022-06-16"
+affected_range: "<0.1.6"
+fixed_versions:
+- "0.1.6"
+affected_versions: "All versions before 0.1.6"
+not_impacted: "All versions starting from 0.1.6"
+solution: "Upgrade to version 0.1.6 or above."
+urls:
+- "https://github.com/advisories/GHSA-p56p-gq3f-whg8"
+- "https://github.com/sunrise-choir/flumedb-rs/issues/10"
+- "https://github.com/sunrise-choir/flumedb-rs/pull/12/commits/1b643df85ca4a56f7d96105a9eb35e1b917ee488"
+- "https://github.com/sunrise-choir/flumedb-rs"
+- "https://rustsec.org/advisories/RUSTSEC-2021-0086.html"
+uuid: "8c048e2f-ec0b-4429-8a95-246af8f9d5e7"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

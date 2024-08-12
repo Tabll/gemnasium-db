@@ -1,0 +1,25 @@
+---
+identifier: "GHSA-wm8x-php5-hvq6"
+identifiers:
+- "GHSA-wm8x-php5-hvq6"
+package_slug: "cargo/maligned"
+title: "Maligned causes incorrect deallocation"
+description: "`maligned::align_first` manually allocates with an alignment larger
+  than T, and then uses `Vec::from_raw_parts` on that allocation to get a `Vec<T>`."
+date: "2023-03-07"
+pubdate: "2023-03-07"
+affected_range: "<=0.2.1"
+fixed_versions: []
+affected_versions: "All versions up to 0.2.1"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-wm8x-php5-hvq6"
+- "https://github.com/tylerhawkes/maligned/issues/5"
+- "https://doc.rust-lang.org/std/alloc/trait.GlobalAlloc.html#tymethod.dealloc"
+- "https://github.com/tylerhawkes/maligned"
+- "https://rustsec.org/advisories/RUSTSEC-2023-0017.html"
+uuid: "7c93fe15-ff13-4355-81c8-9fd61ce4befc"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

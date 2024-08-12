@@ -1,0 +1,24 @@
+---
+identifier: "GHSA-p2gm-ffr3-w2xw"
+identifiers:
+- "GHSA-p2gm-ffr3-w2xw"
+package_slug: "cargo/ckb"
+title: "Nervos CKB vulnerable to low-resource flood DDoS attacks through network message"
+description: "### Workarounds\n* forbid request genesis through network request\n*
+  forbid requesting duplicate data  through network request"
+date: "2023-02-08"
+pubdate: "2023-02-08"
+affected_range: "<0.101.4"
+fixed_versions:
+- "0.101.4"
+affected_versions: "All versions before 0.101.4"
+not_impacted: "All versions starting from 0.101.4"
+solution: "Upgrade to version 0.101.4 or above."
+urls:
+- "https://github.com/advisories/GHSA-p2gm-ffr3-w2xw"
+- "https://github.com/nervosnetwork/ckb/security/advisories/GHSA-p2gm-ffr3-w2xw"
+- "https://github.com/nervosnetwork/ckb"
+uuid: "8e180525-59f8-4d07-854a-6f9a41e17d92"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

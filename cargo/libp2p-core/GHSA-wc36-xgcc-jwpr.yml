@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-wc36-xgcc-jwpr"
+identifiers:
+- "GHSA-wc36-xgcc-jwpr"
+package_slug: "cargo/libp2p-core"
+title: "Failure to verify the public key of a `SignedEnvelope` against the `PeerId`
+  in a `PeerRecord`"
+description: "Affected versions of this crate did not check that the public key the
+  signature was created with matches the peer ID of the peer record.\nAny combination
+  was considered valid.\n\nThis allows an attacker to republish an existing `PeerRecord`
+  with a different `PeerId`."
+date: "2022-06-17"
+pubdate: "2022-06-17"
+affected_range: ">=0.30.0-rc.1 <0.30.2"
+fixed_versions:
+- "0.30.2"
+affected_versions: "All versions starting from 0.30.0-rc.1 before 0.30.2"
+not_impacted: "All versions before 0.30.0-rc.1, all versions starting from 0.30.2"
+solution: "Upgrade to version 0.30.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-wc36-xgcc-jwpr"
+- "https://github.com/libp2p/rust-libp2p"
+- "https://rustsec.org/advisories/RUSTSEC-2022-0009.html"
+uuid: "84d83dd2-ef44-4223-bd84-a1bce4405b1c"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

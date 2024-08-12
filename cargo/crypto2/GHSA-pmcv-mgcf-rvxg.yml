@@ -1,0 +1,26 @@
+---
+identifier: "GHSA-pmcv-mgcf-rvxg"
+identifiers:
+- "GHSA-pmcv-mgcf-rvxg"
+package_slug: "cargo/crypto2"
+title: "Non-aligned u32 read in Chacha20 encryption and decryption"
+description: "The implementation does not enforce alignment requirements on input
+  slices while incorrectly assuming 4-byte alignment through an unsafe call to `std::slice::from_raw_parts_mut`,
+  which breaks the contract and introduces undefined behavior.\n\nThis affects Chacha20
+  encryption and decryption in crypto2."
+date: "2022-06-16"
+pubdate: "2022-06-16"
+affected_range: "<=0.1.2"
+fixed_versions: []
+affected_versions: "All versions up to 0.1.2"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-pmcv-mgcf-rvxg"
+- "https://github.com/shadowsocks/crypto2/issues/27"
+- "https://github.com/shadowsocks/crypto2"
+- "https://rustsec.org/advisories/RUSTSEC-2021-0121.html"
+uuid: "55a0ac25-a297-4d75-9486-f0b0c5639460"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

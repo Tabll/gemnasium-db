@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-hfxp-p695-629x"
+identifiers:
+- "GHSA-hfxp-p695-629x"
+package_slug: "cargo/abomonation"
+title: "abomonation transmutes &T to and from &[u8] without sufficient constraints"
+description: "This transmute is at the core of the abomonation crates. It's so easy
+  to use it to violate alignment requirements that no test in the crate's test suite
+  passes under miri.\n\nThe use of this transmute in serialization/deserialization
+  also incorrectly assumes that the layout of a repr(Rust) type is stable.\nThis transmute
+  can also disclose both the contents of padding bytes which may be an information
+  leak and the contents of pointers, which may be used to defeat ASLR."
+date: "2023-06-13"
+pubdate: "2022-06-16"
+affected_range: "<=0.7.3"
+fixed_versions: []
+affected_versions: "All versions up to 0.7.3"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-hfxp-p695-629x"
+- "https://github.com/TimelyDataflow/abomonation/issues/23"
+- "https://github.com/TimelyDataflow/abomonation"
+- "https://rustsec.org/advisories/RUSTSEC-2021-0120.html"
+uuid: "a1c6189f-dd06-42e6-8777-01918f426699"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

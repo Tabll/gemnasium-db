@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-f85w-wvc7-crwc"
+identifiers:
+- "GHSA-f85w-wvc7-crwc"
+package_slug: "cargo/bumpalo"
+title: "bumpalo has use-after-free due to a lifetime error in `Vec::into_iter()`"
+description: "In affected versions of this crate, the lifetime of the iterator produced
+  by `Vec::into_iter()` is not constrained to the lifetime of the `Bump` that allocated
+  the vector's memory. Using the iterator after the `Bump` is dropped causes use-after-free
+  accesses.\n\nThe following example demonstrates memory corruption arising from a
+  misuse of this unsoundness.\n\n```rust\nuse bumpalo::{collections::Vec, Bump};\n\nfn
+  main() {\nlet bump = Bump::new();\nlet mut vec = Vec::new_in(&bump);\nvec.extend([0x01u8;
+  32]);\nlet into_iter = vec.into_iter();\ndrop(bump);\n\nfor _ in 0..100 {\nlet reuse_bump
+  = Bump::new();\nlet _reuse_alloc = reuse_bump.alloc([0x41u8; 10]);\n}\n\nfor x in
+  into_iter {\nprint!(\"0x{:02x} \", x);\n}\nprintln!();\n}\n```\n\nThe issue was
+  corrected in version 3.11.1 by adding a lifetime to the `IntoIter` type, and updating
+  the signature of `Vec::into_iter()` to constrain this lifetime."
+date: "2023-01-20"
+pubdate: "2023-01-20"
+affected_range: ">=1.1.0 <3.11.1"
+fixed_versions:
+- "3.11.1"
+affected_versions: "All versions starting from 1.1.0 before 3.11.1"
+not_impacted: "All versions before 1.1.0, all versions starting from 3.11.1"
+solution: "Upgrade to version 3.11.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-f85w-wvc7-crwc"
+- "https://github.com/fitzgen/bumpalo"
+- "https://github.com/fitzgen/bumpalo/blob/main/CHANGELOG.md#3111"
+- "https://rustsec.org/advisories/RUSTSEC-2022-0078.html"
+uuid: "2e1e2c1f-60b3-4bea-8193-dc3b76ae2f2f"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

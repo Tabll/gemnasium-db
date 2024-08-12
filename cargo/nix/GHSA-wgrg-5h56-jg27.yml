@@ -1,0 +1,42 @@
+---
+identifier: "GHSA-wgrg-5h56-jg27"
+identifiers:
+- "GHSA-wgrg-5h56-jg27"
+package_slug: "cargo/nix"
+title: "Out-of-bounds write in nix::unistd::getgrouplist"
+description: "On certain platforms, if a user has more than 16 groups, the\n`nix::unistd::getgrouplist`
+  function will call the libc `getgrouplist`\nfunction with a length parameter greater
+  than the size of the buffer it\nprovides, resulting in an out-of-bounds write and
+  memory corruption.\n\nThe libc `getgrouplist` function takes an in/out parameter
+  `ngroups`\nspecifying the size of the group buffer. When the buffer is too small
+  to\nhold all of the reqested user's group memberships, some libc\nimplementations,
+  including glibc and Solaris libc, will modify `ngroups`\nto indicate the actual
+  number of groups for the user, in addition to\nreturning an error. The version of
+  `nix::unistd::getgrouplist` in nix\n0.16.0 and up will resize the buffer to twice
+  its size, but will not\nread or modify the `ngroups` variable. Thus, if the user
+  has more than\ntwice as many groups as the initial buffer size of 8, the next call
+  to\n`getgrouplist` will then write past the end of the buffer.\n\nThe issue would
+  require editing /etc/groups to exploit, which is usually\nonly editable by the root
+  user."
+date: "2022-06-17"
+pubdate: "2022-06-17"
+affected_range: ">=0.16.0 <0.20.2||>=0.21.0 <0.21.2||>=0.22.0 <0.22.2"
+fixed_versions:
+- "0.20.2"
+- "0.21.2"
+- "0.22.2"
+affected_versions: "All versions starting from 0.16.0 before 0.20.2, all versions
+  starting from 0.21.0 before 0.21.2, all versions starting from 0.22.0 before 0.22.2"
+not_impacted: "All versions before 0.16.0, all versions starting from 0.20.2 before
+  0.21.0, all versions starting from 0.21.2 before 0.22.0, all versions starting from
+  0.22.2"
+solution: "Upgrade to versions 0.20.2, 0.21.2, 0.22.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-wgrg-5h56-jg27"
+- "https://github.com/nix-rust/nix/issues/1541"
+- "https://github.com/nix-rust/nix"
+- "https://rustsec.org/advisories/RUSTSEC-2021-0119.html"
+uuid: "4adc9fd0-e1b5-4ab5-82ba-51439c62de40"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-jf5h-cf95-w759"
+identifiers:
+- "GHSA-jf5h-cf95-w759"
+package_slug: "cargo/raw-cpuid"
+title: "Optional `Deserialize` implementations lacking validation"
+description: "When activating the non-default feature `serialize`, most structs implement\n`serde::Deserialize`
+  without sufficient validation. This allows breaking\ninvariants in safe code, leading
+  to:\n\n* Undefined behavior in `as_string()` methods (which use\n`std::str::from_utf8_unchecked()`
+  internally).\n* Panics due to failed assertions.\n\nSee https://github.com/gz/rust-cpuid/issues/43."
+date: "2022-06-17"
+pubdate: "2022-06-17"
+affected_range: ">=3.1.0 <9.1.1"
+fixed_versions:
+- "9.1.1"
+affected_versions: "All versions starting from 3.1.0 before 9.1.1"
+not_impacted: "All versions before 3.1.0, all versions starting from 9.1.1"
+solution: "Upgrade to version 9.1.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-jf5h-cf95-w759"
+- "https://github.com/gz/rust-cpuid/issues/43"
+- "https://github.com/gz/rust-cpuid"
+- "https://rustsec.org/advisories/RUSTSEC-2021-0089.html"
+uuid: "e5c6f1e7-84af-45b5-b19a-f12416293dad"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

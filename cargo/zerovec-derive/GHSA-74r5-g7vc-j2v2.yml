@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-74r5-g7vc-j2v2"
+identifiers:
+- "GHSA-74r5-g7vc-j2v2"
+package_slug: "cargo/zerovec-derive"
+title: "zerovec-derive incorrectly uses `#[repr(packed)]`"
+description: "The affected versions make unsafe memory accesses under the assumption
+  that `#[repr(packed)]` has a guaranteed field order.\n\nThe Rust specification does
+  not guarantee this, and https://github.com/rust-lang/rust/pull/125360 (1.80.0-beta)
+  starts\nreordering fields of `#[repr(packed)]` structs, leading to illegal memory
+  accesses.\n\nThe patched versions `0.9.7` and `0.10.3` use `#[repr(C, packed)]`,
+  which guarantees field order."
+date: "2024-07-09"
+pubdate: "2024-07-08"
+affected_range: ">=0.10.0 <0.10.3||<0.9.7"
+fixed_versions:
+- "0.10.3"
+- "0.9.7"
+affected_versions: "All versions before 0.9.7, all versions starting from 0.10.0 before
+  0.10.3"
+not_impacted: "All versions starting from 0.9.7 before 0.10.0, all versions starting
+  from 0.10.3"
+solution: "Upgrade to versions 0.10.3, 0.9.7 or above."
+urls:
+- "https://github.com/advisories/GHSA-74r5-g7vc-j2v2"
+- "https://github.com/unicode-org/icu4x/issues/5196#issuecomment-2214711069"
+- "https://github.com/rustsec/advisory-db/pull/2007"
+- "https://rustsec.org/advisories/RUSTSEC-2024-0346.html"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+uuid: "a2f24008-a98a-458a-a1a3-1afb3fd06766"
+cwe_ids:
+- "CWE-120"
+- "CWE-937"
+- "CWE-1035"

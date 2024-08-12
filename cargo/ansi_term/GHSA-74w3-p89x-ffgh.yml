@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-74w3-p89x-ffgh"
+identifiers:
+- "GHSA-74w3-p89x-ffgh"
+package_slug: "cargo/ansi_term"
+title: "ansi_term is Unmaintained"
+description: "## Withdrawn Advisory\nThis advisory has been withdrawn because it does
+  not discuss a particular vulnerability in the code of `ansi_term`.\n\n## Original
+  Description\nThe maintainer has adviced this crate is deprecated and will not receive
+  any maintenance.\n\nThe crate does not seem to have much dependencies and may or
+  may not be ok to use as-is.\n\nLast release seems to have been three years ago."
+date: "2022-09-19"
+pubdate: "2022-09-16"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-74w3-p89x-ffgh"
+- "https://github.com/ogham/rust-ansi-term/issues/72"
+- "https://github.com/ogham/rust-ansi-term"
+- "https://rustsec.org/advisories/RUSTSEC-2021-0139.html"
+uuid: "407ef8c9-5228-42aa-bcaa-eef234bb3b77"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

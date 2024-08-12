@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-8qv2-5vq6-g2g7"
+identifiers:
+- "GHSA-8qv2-5vq6-g2g7"
+package_slug: "cargo/webpki"
+title: "webpki: CPU denial of service in certificate path building"
+description: "When this crate is given a pathological certificate chain to validate,
+  it will spend CPU time exponential with the number of candidate certificates at
+  each step of path building.\n\nBoth TLS clients and TLS servers that accept client
+  certificate are affected.\n\nThis was previously reported in https://github.com/briansmith/webpki/issues/69.\n\n`rustls-webpki`
+  is a fork of this crate which contains a fix for this issue and is actively maintained."
+date: "2023-09-06"
+pubdate: "2023-08-25"
+affected_range: "<0.22.2"
+fixed_versions:
+- "0.22.2"
+affected_versions: "All versions before 0.22.2"
+not_impacted: "All versions starting from 0.22.2"
+solution: "Upgrade to version 0.22.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-8qv2-5vq6-g2g7"
+- "https://github.com/briansmith/webpki/issues/69"
+- "https://github.com/briansmith/webpki/issues/69#issuecomment-1699894848"
+- "https://github.com/briansmith/webpki/commit/30a108e0802fd09585e0d071013f24b8272d139b"
+- "https://github.com/briansmith/webpki"
+- "https://github.com/crypto-com/sgx-vendor"
+- "https://rustsec.org/advisories/RUSTSEC-2023-0052.html"
+cvss_v3: "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "1c8d1610-d5d3-454f-8ffe-a6636c6f6a08"
+cwe_ids:
+- "CWE-400"
+- "CWE-937"
+- "CWE-1035"

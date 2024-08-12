@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-q579-9wp9-gfp2"
+identifiers:
+- "GHSA-q579-9wp9-gfp2"
+package_slug: "cargo/rdiff"
+title: "Window can read out of bounds if Read instance returns more bytes than buffer
+  size"
+description: "`rdiff` performs a diff of two provided strings or files. As part of
+  its reading code it uses the return value of a `Read` instance to set the length
+  of its internal character vector.\n\nIf the `Read` implementation claims that it
+  has read more bytes than the length of the provided buffer, the length of the vector
+  will be set to longer than its capacity. This causes `rdiff` APIs to return uninitialized
+  memory in its API\nmethods."
+date: "2023-06-13"
+pubdate: "2022-06-17"
+affected_range: "<=0.1.2"
+fixed_versions: []
+affected_versions: "All versions up to 0.1.2"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-q579-9wp9-gfp2"
+- "https://github.com/dyule/rdiff/issues/3"
+- "https://github.com/dyule/rdiff"
+- "https://rustsec.org/advisories/RUSTSEC-2021-0094.html"
+uuid: "ff4f240e-8380-434f-898c-e7db4e6ee43b"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"
