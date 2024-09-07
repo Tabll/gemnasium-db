@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-gj55-2xf9-67rq"
+identifiers:
+- "GHSA-gj55-2xf9-67rq"
+package_slug: "pypi/jupyterlite-core"
+title: "HTML injection in JupyterLite leading to DOM Clobbering"
+description: "The vulnerability depends on user interaction by opening a malicious
+  notebook with Markdown cells, or Markdown file using JupyterLab preview feature.\n\nA
+  malicious user can access any data accessible from JupyterLite and perform arbitrary
+  actions in JupyterLite environment."
+date: "2024-09-06"
+pubdate: "2024-09-06"
+affected_range: "<0.4.1"
+fixed_versions:
+- "0.4.1"
+affected_versions: "All versions before 0.4.1"
+not_impacted: "All versions starting from 0.4.1"
+solution: "Upgrade to version 0.4.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-gj55-2xf9-67rq"
+- "https://github.com/jupyterlab/jupyterlab/security/advisories/GHSA-9q39-rmj3-p4r2"
+- "https://github.com/jupyterlite/jupyterlite/security/advisories/GHSA-gj55-2xf9-67rq"
+- "https://github.com/jupyterlite/jupyterlite"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N"
+uuid: "0720bec4-26c9-4c0d-be73-2f1c590f90e4"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

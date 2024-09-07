@@ -1,0 +1,25 @@
+---
+identifier: "GHSA-r3jq-4r5c-j9hp"
+identifiers:
+- "GHSA-r3jq-4r5c-j9hp"
+package_slug: "pypi/taipy"
+title: "Taipy has a Session Cookie without Secure and HTTPOnly flags"
+description: "Session cookie is without Secure and HTTPOnly flags."
+date: "2024-08-27"
+pubdate: "2024-08-27"
+affected_range: "<=3.1.1"
+fixed_versions: []
+affected_versions: "All versions up to 3.1.1"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-r3jq-4r5c-j9hp"
+- "https://github.com/Avaiga/taipy/security/advisories/GHSA-r3jq-4r5c-j9hp"
+- "https://github.com/Avaiga/taipy"
+- "https://github.com/Avaiga/taipy/blob/develop/frontend/taipy-gui/src/components/Taipy/Navigate.tsx#L67"
+uuid: "8a305f77-5a5f-44db-bb29-502cfaf67c89"
+cwe_ids:
+- "CWE-1004"
+- "CWE-614"
+- "CWE-937"
+- "CWE-1035"

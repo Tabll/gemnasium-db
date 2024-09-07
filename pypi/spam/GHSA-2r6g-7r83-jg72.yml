@@ -1,0 +1,24 @@
+---
+identifier: "GHSA-2r6g-7r83-jg72"
+identifiers:
+- "GHSA-2r6g-7r83-jg72"
+package_slug: "pypi/spam"
+title: "`spam` project on PyPI compromised, malicious releases made"
+description: "The `spam` project on PyPI was taken over via user account compromise
+  via a phishing attack and a new malicious release made which contained code which
+  some environment variables and downloaded and ran malware at install time"
+date: "2024-08-30"
+pubdate: "2024-08-30"
+affected_range: "==2.0.2||==4.0.2"
+fixed_versions: []
+affected_versions: "Version 2.0.2, version 4.0.2"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-2r6g-7r83-jg72"
+- "https://github.com/pypa/advisory-database/tree/main/vulns/spam/PYSEC-2022-251.yaml"
+- "https://twitter.com/pypi/status/1562442207079976966"
+uuid: "1951c368-2e56-4d01-ac3d-91d9b435d32a"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

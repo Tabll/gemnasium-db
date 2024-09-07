@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-wq9x-qwcq-mmgf"
+identifiers:
+- "GHSA-wq9x-qwcq-mmgf"
+package_slug: "cargo/diesel"
+title: "Diesel vulnerable to Binary Protocol Misinterpretation caused by Truncating
+  or Overflowing Casts"
+description: "The following presentation at this year's DEF CON was brought to our
+  attention on the Diesel Gitter Channel:"
+date: "2024-08-23"
+pubdate: "2024-08-23"
+affected_range: "<2.2.3"
+fixed_versions:
+- "2.2.3"
+affected_versions: "All versions before 2.2.3"
+not_impacted: "All versions starting from 2.2.3"
+solution: "Upgrade to version 2.2.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-wq9x-qwcq-mmgf"
+- "https://github.com/diesel-rs/diesel/pull/4170"
+- "https://github.com/diesel-rs/diesel/commit/9eccd7d6d705ac53618bfd478152e32ec3b4536c"
+- "https://github.com/diesel-rs/diesel"
+- "https://github.com/diesel-rs/diesel/blob/ae82c4a5a133db65612b7436356f549bfecda1c7/diesel/src/pg/connection/stmt/mod.rs#L36"
+- "https://rustsec.org/advisories/RUSTSEC-2024-0365.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+uuid: "d60d6f6b-5063-471f-8be9-a2f6a283434b"
+cwe_ids:
+- "CWE-89"
+- "CWE-937"
+- "CWE-1035"

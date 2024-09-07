@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-xmrp-424f-vfpx"
+identifiers:
+- "GHSA-xmrp-424f-vfpx"
+package_slug: "cargo/sqlx"
+title: "SQLx Binary Protocol Misinterpretation caused by Truncating or Overflowing
+  Casts"
+description: "The following presentation at this year's DEF CON was brought to our
+  attention on the SQLx Discord:"
+date: "2024-08-19"
+pubdate: "2024-08-19"
+affected_range: "<0.8.1"
+fixed_versions:
+- "0.8.1"
+affected_versions: "All versions before 0.8.1"
+not_impacted: "All versions starting from 0.8.1"
+solution: "Upgrade to version 0.8.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-xmrp-424f-vfpx"
+- "https://github.com/launchbadge/sqlx/issues/3440"
+- "https://github.com/launchbadge/sqlx"
+- "https://github.com/launchbadge/sqlx/blob/6f2905695b9606b5f51b40ce10af63ac9e696bb8/sqlx-postgres/src/arguments.rs#L163"
+- "https://rustsec.org/advisories/RUSTSEC-2024-0363.html"
+uuid: "6d3e8c28-ba63-4d1d-a0e1-16059da8fab6"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

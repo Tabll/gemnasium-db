@@ -1,0 +1,22 @@
+---
+identifier: "GHSA-pp84-v3mw-gg4w"
+identifiers:
+- "GHSA-pp84-v3mw-gg4w"
+package_slug: "pypi/taipy"
+title: "Taipy 3.1.1 affected by CVEs on flask-core and pymongo"
+description: "CVEs on latest 3.1.1"
+date: "2024-08-27"
+pubdate: "2024-08-27"
+affected_range: "<=3.1.1"
+fixed_versions: []
+affected_versions: "All versions up to 3.1.1"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-pp84-v3mw-gg4w"
+- "https://github.com/Avaiga/taipy/security/advisories/GHSA-pp84-v3mw-gg4w"
+- "https://github.com/Avaiga/taipy"
+uuid: "c5b7062b-f9e9-4f87-a4c5-cf0965895e3d"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

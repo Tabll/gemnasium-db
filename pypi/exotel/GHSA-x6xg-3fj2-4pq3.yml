@@ -1,0 +1,24 @@
+---
+identifier: "GHSA-x6xg-3fj2-4pq3"
+identifiers:
+- "GHSA-x6xg-3fj2-4pq3"
+package_slug: "pypi/exotel"
+title: "`exotel` project on PyPI compromised, malicious release made"
+description: "The exotel project on PyPI was taken over via user account compromise
+  via a phishing attack and a new malicious release made which contained code which
+  some environment variables and downloaded and ran malware at install time"
+date: "2024-08-30"
+pubdate: "2024-08-30"
+affected_range: "==0.1.6"
+fixed_versions: []
+affected_versions: "Version 0.1.6"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-x6xg-3fj2-4pq3"
+- "https://github.com/pypa/advisory-database/tree/main/vulns/exotel/PYSEC-2022-250.yaml"
+- "https://twitter.com/pypi/status/1562442207079976966"
+uuid: "bfbd3f6b-55b8-427b-9423-0ae55dce62e7"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

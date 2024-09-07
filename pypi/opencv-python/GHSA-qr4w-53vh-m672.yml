@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-qr4w-53vh-m672"
+identifiers:
+- "GHSA-qr4w-53vh-m672"
+package_slug: "pypi/opencv-python"
+title: "opencv-python bundled libwebp binaries in wheels that are vulnerable to CVE-2023-4863"
+description: "opencv-python versions before v4.8.1.78 bundled libwebp binaries in
+  wheels that are vulnerable to CVE-2023-4863. opencv-python v4.8.1.78 upgrades the
+  bundled libwebp binary to v1.3.2."
+date: "2024-08-30"
+pubdate: "2024-08-30"
+affected_range: "<4.8.1.78"
+fixed_versions:
+- "4.8.1.78"
+affected_versions: "All versions before 4.8.1.78"
+not_impacted: "All versions starting from 4.8.1.78"
+solution: "Upgrade to version 4.8.1.78 or above."
+urls:
+- "https://github.com/advisories/GHSA-qr4w-53vh-m672"
+- "https://nvd.nist.gov/vuln/detail/CVE-2023-4863"
+- "https://github.com/opencv/opencv/pull/24274"
+- "https://github.com/opencv/opencv/commit/687fc11626901cff09d2b3b5f331fd59190ad4c7"
+- "https://github.com/opencv/opencv-python"
+- "https://github.com/opencv/opencv/wiki/ChangeLog#version481"
+- "https://github.com/pypa/advisory-database/tree/main/vulns/opencv-python/PYSEC-2023-183.yaml"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+uuid: "bb92dc48-f769-4093-9a91-adaf4bf2a1a3"
+cwe_ids:
+- "CWE-787"
+- "CWE-937"
+- "CWE-1035"

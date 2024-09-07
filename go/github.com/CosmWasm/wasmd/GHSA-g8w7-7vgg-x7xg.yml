@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-g8w7-7vgg-x7xg"
+identifiers:
+- "GHSA-g8w7-7vgg-x7xg"
+package_slug: "go/github.com/CosmWasm/wasmd"
+title: "CWA-2024-005: Stackoverflow in wasmd"
+description: "**Component:** wasmd\n**Criticality:** High ([ACMv1](https://github.com/interchainio/security/blob/main/resources/CLASSIFICATION_MATRIX.md):
+  I:Critical; L:Likely)\n**Patched versions:** wasmd 0.53.0, 0.46.0\n\nSee [CWA-2024-005](https://github.com/CosmWasm/advisories/blob/main/CWAs/CWA-2024-005.md)
+  for more details."
+date: "2024-08-21"
+pubdate: "2024-08-21"
+affected_range: ">=0.50.0 <0.53.0||<0.46.0"
+fixed_versions:
+- "0.53.0"
+- "0.46.0"
+affected_versions: "All versions before 0.46.0, all versions starting from 0.50.0
+  before 0.53.0"
+not_impacted: "All versions starting from 0.46.0 before 0.50.0, all versions starting
+  from 0.53.0"
+solution: "Upgrade to versions 0.46.0, 0.53.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-g8w7-7vgg-x7xg"
+- "https://github.com/CosmWasm/wasmd/security/advisories/GHSA-g8w7-7vgg-x7xg"
+- "https://github.com/CosmWasm/wasmd/commit/71cf6a8145426b82ed6249ecc86ddd281af9f97b"
+- "https://github.com/CosmWasm/wasmd/commit/db8981db8419fc4daa042ce04e279efb53c4ff29"
+- "https://github.com/CosmWasm/advisories/blob/main/CWAs/CWA-2024-005.md"
+- "https://github.com/CosmWasm/wasmd"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "d7530f82-d908-4980-b7d0-63e1dc6645a6"
+cwe_ids:
+- "CWE-121"
+- "CWE-937"
+- "CWE-1035"

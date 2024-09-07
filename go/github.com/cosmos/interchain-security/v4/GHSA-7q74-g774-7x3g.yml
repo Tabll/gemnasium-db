@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-7q74-g774-7x3g"
+identifiers:
+- "GHSA-7q74-g774-7x3g"
+package_slug: "go/github.com/cosmos/interchain-security/v4"
+title: "Interchain Security: The signers of ICS messages do not need to match the
+  provider address "
+description: "### Context\n\nICS has the following four messages that enable validators
+  on the provider chain to perform different actions:\n\n- `MsgOptIn` -- adds a validator
+  to the consumer chain’s active set\n- `MsgOptOut` -- removes a validator from the
+  consumer chain’s active set \n- `MsgAssignConsumerKey` -- changes the consensus
+  key used for a validator’s operations on a consumer chain\n- `MsgSetConsumerCommissionRate`
+  -- sets a validator’s consumer-specific commission rate\n\nNormally, only the respective
+  validators are allowed to perform these actions. \n\n### Issue\n\nThe upgrade to
+  SDK 0.50, introduced a [signer](https://docs.cosmos.network/v0.50/build/building-modules/protobuf-annotations#signer)
+  field to these messages. This field is used to authenticate the user sending the
+  message to the system. However, there was no validation on the ICS side to check
+  if the signer matches the provider address.  \n\nAs a result, any user could opt-in,
+  opt-out, change the commission rate, or change what public key a validator uses
+  on a consumer chain. \n\nFor more context, check out the code:"
+date: "2024-09-06"
+pubdate: "2024-09-05"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-7q74-g774-7x3g"
+- "https://github.com/cosmos/interchain-security/security/advisories/GHSA-7q74-g774-7x3g"
+- "https://github.com/cosmos/interchain-security"
+uuid: "1da15f38-baa9-4d5c-be53-8e99c9b7e338"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

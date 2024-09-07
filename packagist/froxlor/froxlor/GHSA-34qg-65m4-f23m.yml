@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-34qg-65m4-f23m"
+identifiers:
+- "GHSA-34qg-65m4-f23m"
+package_slug: "packagist/froxlor/froxlor"
+title: "Froxlor: /etc/pure-ftpd/db/mysql.conf is chmod 644 but contains <SQL_UNPRIVILEGED_PASSWORD>"
+description: "In Froxlor 2.1.9 and in the HEADs of the `main`, `v2.2` and `v2.1` branches
+  , the XML templates in `lib/configfiles/` set `chmod 644` for `/etc/pure-ftpd/db/mysql.conf`,
+  although that file contains `<SQL_UNPRIVILEGED_PASSWORD>`. At least on Debian 12,
+  all parent directories of `/etc/pure-ftpd/db/mysql.conf` are world readable by default,
+  thus exposing these credentials to all users with access to the system. Only Froxlor
+  instances configured to use pure-ftpd are affected/vulnerable."
+date: "2024-08-23"
+pubdate: "2024-08-23"
+affected_range: "<2.2.0"
+fixed_versions:
+- "2.2.0"
+affected_versions: "All versions before 2.2.0"
+not_impacted: "All versions starting from 2.2.0"
+solution: "Upgrade to version 2.2.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-34qg-65m4-f23m"
+- "https://github.com/froxlor/Froxlor/security/advisories/GHSA-34qg-65m4-f23m"
+- "https://github.com/froxlor/Froxlor/commit/5d2ce4ecfb0e9c397ef5c73b107fb9a0e122e910"
+- "https://github.com/froxlor/Froxlor"
+- "https://github.com/froxlor/Froxlor/blob/2.1.9/lib/configfiles/bookworm.xml#L3075"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:L"
+uuid: "f99b2051-5ce9-41f5-8fd7-3a77e620c212"
+cwe_ids:
+- "CWE-732"
+- "CWE-937"
+- "CWE-1035"

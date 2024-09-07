@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-f3q4-ggfp-jv34"
+identifiers:
+- "GHSA-f3q4-ggfp-jv34"
+package_slug: "pypi/Adyen"
+title: "Adyen APIs Library for Python timing attack vulnerability"
+description: "Adyen has utility methods for validating notification HMAC signatures.
+  The `is_valid_hmac` and `is_valid_hmac_notification` methods are vulnerable to a
+  timing attack, you should compare the hash of the HMACs instead."
+date: "2024-08-30"
+pubdate: "2024-08-30"
+affected_range: ">=2.2.0,<7.1.0"
+fixed_versions:
+- "7.1.0"
+affected_versions: "All versions starting from 2.2.0 before 7.1.0"
+not_impacted: "All versions before 2.2.0, all versions starting from 7.1.0"
+solution: "Upgrade to version 7.1.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-f3q4-ggfp-jv34"
+- "https://github.com/Adyen/adyen-python-api-library/issues/168"
+- "https://github.com/Adyen/adyen-python-api-library/pull/170"
+- "https://github.com/Adyen/adyen-python-api-library/commit/3292133dbc00ffc4cccfb92de672a76eaa587ca5"
+- "https://github.com/Adyen/adyen-python-api-library"
+- "https://github.com/pypa/advisory-database/tree/main/vulns/adyen/PYSEC-2023-1.yaml"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+uuid: "9f83e63d-e0b4-4141-9c81-139182d79c33"
+cwe_ids:
+- "CWE-347"
+- "CWE-937"
+- "CWE-1035"

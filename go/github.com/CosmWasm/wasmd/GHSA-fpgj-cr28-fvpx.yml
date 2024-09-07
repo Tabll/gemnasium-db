@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-fpgj-cr28-fvpx"
+identifiers:
+- "GHSA-fpgj-cr28-fvpx"
+package_slug: "go/github.com/CosmWasm/wasmd"
+title: "CWA-2024-006: wasmd non-deterministic module_query_safe query"
+description: "**Component:** wasmd\n**Criticality:** Medium ([ACMv1](https://github.com/interchainio/security/blob/main/resources/CLASSIFICATION_MATRIX.md):
+  I:Moderate; L:Likely)\n**Patched versions:** wasmd 0.53.0\n\nSee [CWA-2024-006](https://github.com/CosmWasm/advisories/blob/main/CWAs/CWA-2024-006.md)
+  for more details."
+date: "2024-08-21"
+pubdate: "2024-08-21"
+affected_range: ">=0.52.0 <0.53.0||=0.52.0"
+fixed_versions:
+- "0.53.0"
+affected_versions: "All versions starting from 0.52.0 before 0.53.0, version 0.52.0"
+not_impacted: ""
+solution: "Upgrade to version 0.53.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-fpgj-cr28-fvpx"
+- "https://github.com/CosmWasm/wasmd/security/advisories/GHSA-fpgj-cr28-fvpx"
+- "https://github.com/CosmWasm/wasmd/commit/db8981db8419fc4daa042ce04e279efb53c4ff29"
+- "https://github.com/CosmWasm/advisories/blob/main/CWAs/CWA-2024-006.md"
+- "https://github.com/CosmWasm/wasmd"
+uuid: "fba7fc45-94dc-4afa-95cf-ff3b493358bb"
+cwe_ids:
+- "CWE-89"
+- "CWE-937"
+- "CWE-1035"
