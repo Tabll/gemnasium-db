@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-gcfg-hmwx-wq5h"
+identifiers:
+- "GHSA-gcfg-hmwx-wq5h"
+package_slug: "packagist/nategood/httpful"
+title: "Httpful is Missing Certificate Validation"
+description: "Httpful has Insecure HTTPS Connections due to Missing Default Certificate
+  Validation"
+date: "2024-09-09"
+pubdate: "2024-09-09"
+affected_range: "<1.0.0"
+fixed_versions:
+- "1.0.0"
+affected_versions: "All versions before 1.0.0"
+not_impacted: "All versions starting from 1.0.0"
+solution: "Upgrade to version 1.0.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-gcfg-hmwx-wq5h"
+- "https://github.com/nategood/httpful/issues/247"
+- "https://github.com/nategood/httpful/commit/44c880e4f559e9215dc6ea9fe50315500c6c2c84"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/nategood/httpful/2024-05-01.yaml"
+- "https://github.com/nategood/httpful"
+- "https://github.com/nategood/httpful/blob/fc8e4274a09529a6ff29b9c6c0a105ee43dbfda5/src/Httpful/Request.php#L35"
+- "https://huntr.com/bounties/8d59c089-92f1-4b73-90f8-54968a70e2fb"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N"
+uuid: "74fd3e58-9b8f-4b11-a03b-9a52f5846d1b"
+cwe_ids:
+- "CWE-295"
+- "CWE-937"
+- "CWE-1035"
