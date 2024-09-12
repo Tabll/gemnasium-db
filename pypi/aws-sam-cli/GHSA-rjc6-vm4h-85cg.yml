@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-rjc6-vm4h-85cg"
+identifiers:
+- "GHSA-rjc6-vm4h-85cg"
+package_slug: "pypi/aws-sam-cli"
+title: "Sensitive Information Exposure Through Insecure Logging For Secrets Like Metadata.DockerBuildArgs"
+description: "The AWS Serverless Application Model (SAM) CLI is an open source tool
+  that allows customers to build, deploy and test their serverless applications built
+  on AWS. AWS SAM CLI can build container (Docker) images and customers can specify
+  arguments in the SAM template that are passed to the Docker engine during build
+  [1]."
+date: "2024-09-11"
+pubdate: "2024-09-11"
+affected_range: "<1.122.0"
+fixed_versions:
+- "1.122.0"
+affected_versions: "All versions before 1.122.0"
+not_impacted: "All versions starting from 1.122.0"
+solution: "Upgrade to version 1.122.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-rjc6-vm4h-85cg"
+- "https://github.com/aws/aws-sam-cli/security/advisories/GHSA-rjc6-vm4h-85cg"
+- "https://github.com/aws/aws-sam-cli"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:U/C:H/I:N/A:N"
+uuid: "10ea2e02-2b48-40ba-82ff-01c6d28a647e"
+cwe_ids:
+- "CWE-532"
+- "CWE-937"
+- "CWE-1035"

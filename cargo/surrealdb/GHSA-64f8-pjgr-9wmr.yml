@@ -1,0 +1,45 @@
+---
+identifier: "GHSA-64f8-pjgr-9wmr"
+identifiers:
+- "GHSA-64f8-pjgr-9wmr"
+package_slug: "cargo/surrealdb"
+title: "Untrusted Query Object Evaluation in RPC API"
+description: "During the sign in and sign up operations through the SurrealDB RPC
+  API, an arbitrary object would be accepted in order to support a wide array of types
+  and structures that could contain user credentials. This arbitrary object could
+  potentially contain any SurrealDB value, including an object representing a subquery.
+  For this to materialize, this object would need to be encoded using the bincode
+  serialization format instead of the default JSON serialization format or the additionally
+  supported CBOR serialization format.\n\nIf a binary object containing a subquery
+  were to be provided in this way, that subquery would be computed while executing
+  the `SIGNIN` and `SIGNUP` queries defined by the database owner while defining a
+  record access method. Since those queries are executed under a system user session
+  with the editor role, an unauthenticated attacker may be able to leverage this behavior
+  to select, create, update and delete non-IAM resources with permissions of a system
+  user with the editor role."
+date: "2024-09-11"
+pubdate: "2024-09-11"
+affected_range: "<1.5.5||>=2.0.0-beta.1 <2.0.0-beta.3"
+fixed_versions:
+- "1.5.5"
+- "2.0.0-beta.3"
+affected_versions: "All versions before 1.5.5, all versions starting from 2.0.0-beta.1
+  before 2.0.0-beta.3"
+not_impacted: "All versions starting from 1.5.5 before 2.0.0-beta.1, all versions
+  starting from 2.0.0-beta.3"
+solution: "Upgrade to versions 1.5.5, 2.0.0-beta.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-64f8-pjgr-9wmr"
+- "https://github.com/surrealdb/surrealdb/security/advisories/GHSA-64f8-pjgr-9wmr"
+- "https://github.com/surrealdb/surrealdb/commit/b7583a653a2c495a60630dffd663f506426db330"
+- "https://github.com/surrealdb/surrealdb/commit/eab7ef5354168d4039f7f7b77042c99a52f770a6"
+- "https://github.com/surrealdb/surrealdb"
+- "https://surrealdb.com/docs/surrealdb/integration/rpc#signin"
+- "https://surrealdb.com/docs/surrealdb/integration/rpc#signup"
+- "https://surrealdb.com/docs/surrealdb/security/authentication#record-users"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+uuid: "6a06c5c3-4c56-472e-9a7b-43ef0d99a58f"
+cwe_ids:
+- "CWE-75"
+- "CWE-937"
+- "CWE-1035"
