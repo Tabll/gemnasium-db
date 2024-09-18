@@ -1,0 +1,39 @@
+---
+identifier: "GHSA-2326-pfpj-vx3h"
+identifiers:
+- "GHSA-2326-pfpj-vx3h"
+package_slug: "cargo/lexical-core"
+title: "lexical-core has multiple soundness issues"
+description: "`RUSTSEC-2024-0377` contains multiple soundness issues:\n\n1. [Bytes::read()
+  allows creating instances of types with invalid bit patterns](https://github.com/Alexhuszagh/rust-lexical/issues/102)\n1.
+  [BytesIter::read() advances iterators out of bounds](https://github.com/Alexhuszagh/rust-lexical/issues/101)\n1.
+  [The `BytesIter` trait has safety invariants but is public and not marked `unsafe`](https://github.com/Alexhuszagh/rust-lexical/issues/104)\n1.
+  [`write_float()` calls `MaybeUninit::assume_init()` on uninitialized data, which
+  is is not allowed by the Rust abstract machine](https://github.com/Alexhuszagh/rust-lexical/issues/95)\n1.
+  [`radix()` calls `MaybeUninit::assume_init()` on uninitialized data, which is is
+  not allowed by the Rust abstract machine](https://github.com/Alexhuszagh/rust-lexical/issues/126)\n\nVersion
+  1.0 fixes these issues, removes the vast majority of `unsafe` code, and also fixes
+  some correctness issues."
+date: "2024-09-16"
+pubdate: "2024-09-16"
+affected_range: "<1.0.0"
+fixed_versions:
+- "1.0.0"
+affected_versions: "All versions before 1.0.0"
+not_impacted: "All versions starting from 1.0.0"
+solution: "Upgrade to version 1.0.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-2326-pfpj-vx3h"
+- "https://github.com/Alexhuszagh/rust-lexical/issues/101"
+- "https://github.com/Alexhuszagh/rust-lexical/issues/102"
+- "https://github.com/Alexhuszagh/rust-lexical/issues/104"
+- "https://github.com/Alexhuszagh/rust-lexical/issues/126"
+- "https://github.com/Alexhuszagh/rust-lexical/issues/95"
+- "https://github.com/Alexhuszagh/rust-lexical"
+- "https://github.com/advisories/GHSA-c2hm-mjxv-89r4"
+- "https://rustsec.org/advisories/RUSTSEC-2023-0055"
+- "https://rustsec.org/advisories/RUSTSEC-2023-0086.html"
+uuid: "8d416147-bf17-4580-80c3-86ece4d05e75"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

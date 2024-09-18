@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-2gh6-wc3m-g37f"
+identifiers:
+- "GHSA-2gh6-wc3m-g37f"
+package_slug: "maven/pl.allegro.tech.hermes/hermes-management"
+title: "hermes-management is vulnerable to RCE due to Apache commons-jxpath"
+description: "hermes-management is vulnerable to RCE when it processes user-controlled
+  data due to using Apache commons-jxpath."
+date: "2024-09-17"
+pubdate: "2024-09-17"
+affected_range: "[,2.2.9)"
+fixed_versions:
+- "2.2.9"
+affected_versions: "All versions before 2.2.9"
+not_impacted: "All versions starting from 2.2.9"
+solution: "Upgrade to version 2.2.9 or above."
+urls:
+- "https://github.com/advisories/GHSA-2gh6-wc3m-g37f"
+- "https://github.com/allegro/hermes/security/advisories/GHSA-2gh6-wc3m-g37f"
+- "https://github.com/allegro/hermes/commit/72ecc5aa41e37fd614443dd35d9200b66a61afb1"
+- "https://github.com/allegro/hermes"
+- "https://hackinglab.cz/en/blog/remote-code-execution-in-jxpath-library-cve-2022-41852"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+uuid: "279c8ff5-411a-475c-81f4-092ecddcc242"
+cwe_ids:
+- "CWE-1395"
+- "CWE-937"
+- "CWE-1035"
