@@ -27,7 +27,7 @@ description: "The state sync protocol retrieves a snapshot of the application an
   will disagree with the views of the correct validators. If an increasing number
   of validators state sync using RPC endpoints with invalid states, the network eventually
   halts."
-date: "2024-09-03"
+date: "2024-09-16"
 pubdate: "2024-09-03"
 affected_range: ">=0.34.0 <0.34.34||>=0.37.0 <0.37.11||>=0.38.0 <0.38.12"
 fixed_versions:
@@ -46,6 +46,7 @@ urls:
 - "https://github.com/cometbft/cometbft/commit/3937e00a339ee6b861d75997b4f6c87d867b74f2"
 - "https://github.com/cometbft/cometbft/commit/52c00a537f8f56ed94b4a5c8af6e3fecff468b55"
 - "https://github.com/cometbft/cometbft"
+- "https://pkg.go.dev/vuln/GO-2024-3112"
 cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:N/I:L/A:L"
 uuid: "8681069c-8d98-47ee-830f-d427a7f2a16d"
 cwe_ids:

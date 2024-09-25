@@ -11,7 +11,7 @@ description: "Affected versions of borsh cause undefined behavior when zero-size
   cause a segmentation fault.\n\nThere is currently no way for borsh to read data
   without also providing a Rust type. Therefore, if you are not using ZST for serialization,
   then you are not affected by this issue."
-date: "2023-04-17"
+date: "2024-09-23"
 pubdate: "2023-04-17"
 affected_range: "<1.0.0-alpha.1"
 fixed_versions:

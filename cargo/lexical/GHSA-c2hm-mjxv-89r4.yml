@@ -9,15 +9,18 @@ description: "`lexical` contains multiple soundness issues:\n\n1. [Bytes::read()
   [BytesIter::read() advances iterators out of bounds](https://github.com/Alexhuszagh/rust-lexical/issues/101)\n1.
   [The `BytesIter` trait has safety invariants but is public and not marked `unsafe`](https://github.com/Alexhuszagh/rust-lexical/issues/104)\n1.
   [`write_float()` calls `MaybeUninit::assume_init()` on uninitialized data, which
-  is is not allowed by the Rust abstract machine](https://github.com/Alexhuszagh/rust-lexical/issues/95)\n\nThe
-  crate also has some correctness issues and appears to be unmaintained."
-date: "2024-07-05"
+  is is not allowed by the Rust abstract machine](https://github.com/Alexhuszagh/rust-lexical/issues/95)\n1.
+  [`radix()` calls `MaybeUninit::assume_init()` on uninitialized data, which is is
+  not allowed by the Rust abstract machine](https://github.com/Alexhuszagh/rust-lexical/issues/126)\n\nThe
+  crate also has some correctness issues."
+date: "2024-09-16"
 pubdate: "2023-09-04"
-affected_range: "<=6.1.1"
-fixed_versions: []
-affected_versions: "All versions up to 6.1.1"
-not_impacted: ""
-solution: "Unfortunately, there is no solution available yet."
+affected_range: "<7.0.0"
+fixed_versions:
+- "7.0.0"
+affected_versions: "All versions before 7.0.0"
+not_impacted: "All versions starting from 7.0.0"
+solution: "Upgrade to version 7.0.0 or above."
 urls:
 - "https://github.com/advisories/GHSA-c2hm-mjxv-89r4"
 - "https://github.com/Alexhuszagh/rust-lexical"
