@@ -15,6 +15,7 @@ affected_versions: "All version before 2.0.0"
 solution: "Upgrade to version 2.0.0 or above."
 urls:
 - "https://github.com/sindresorhus/execa/releases/tag/v2.0.0"
+- "https://gitlab.com/gitlab-org/security-products/gemnasium-db/-/issues/301#note_2093180579"
 credit: "Joern Schneeweisz"
 cvss_v2: "AV:N/AC:L/Au:N/C:C/I:C/A:C"
 cvss_v3: "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
