@@ -1,0 +1,36 @@
+---
+identifier: "GHSA-9r5x-fjv3-q6h4"
+identifiers:
+- "GHSA-9r5x-fjv3-q6h4"
+package_slug: "go/github.com/nats-io/nats-server/v2"
+title: "Duplicate Advisory: Incorrect Access Control in github.com/nats-io/jwt and
+  github.com/nats-io/nats-server/v2"
+description: "## Duplicate Advisory\nThis advisory has been withdrawn because it is
+  a duplicate of GHSA-62mh-w5cv-p88c (for github.com/nats-io/jwt) and GHSA-j756-f273-xhp4
+  (for github.com/nats-io/nats-server). This link is maintained to preserve external
+  references.\n\n## Original Description\nNATS Server (github.com/nats-io/nats-server/v2/server)
+  2.x before 2.2.0 and JWT library (github.com/nats-io/jwt/v2) before 2.0.1 have Incorrect
+  Access Control because Import Token bindings are mishandled."
+date: "2024-05-21"
+pubdate: "2022-02-15"
+affected_range: "<2.2.0"
+fixed_versions:
+- "2.2.0"
+affected_versions: "All versions before 2.2.0"
+not_impacted: "All versions starting from 2.2.0"
+solution: "Upgrade to version 2.2.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-9r5x-fjv3-q6h4"
+- "https://nvd.nist.gov/vuln/detail/CVE-2021-3127"
+- "https://github.com/nats-io/jwt/pull/149"
+- "https://github.com/nats-io/jwt/pull/149/commits/a826c77dc9d2671c961b75ceefdb439c41029866"
+- "https://github.com/nats-io/nats-server/commit/423b79440c80c863de9f4e20548504e6c5d5e403"
+- "https://advisories.nats.io/CVE/CVE-2021-3127.txt"
+- "https://github.com/nats-io/jwt"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+uuid: "478c6758-9746-491f-a695-a09950e8e7ed"
+cwe_ids:
+- "CWE-284"
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-x8jh-xj3x-gx3c"
+identifiers:
+- "GHSA-x8jh-xj3x-gx3c"
+package_slug: "cargo/fast-float"
+title: "`fast-float` has multiple soundness issues"
+description: "`fast-float` contains multiple soundness issues:\n\n1. [Undefined behavior
+  when checking input length](https://github.com/aldanor/fast-float-rust/issues/28),
+  which has been merged but no package [pubished](https://github.com/aldanor/fast-float-rust/issues/35).\n1.
+  [Many functions marked as safe with non-local safety guarantees](https://github.com/aldanor/fast-float-rust/issues/37)\n\nThe
+  library is also unmaintained."
+date: "2024-11-12"
+pubdate: "2024-11-12"
+affected_range: "<=0.2.0"
+fixed_versions: []
+affected_versions: "All versions up to 0.2.0"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-x8jh-xj3x-gx3c"
+- "https://github.com/aldanor/fast-float-rust/issues/28"
+- "https://github.com/aldanor/fast-float-rust/issues/35"
+- "https://github.com/aldanor/fast-float-rust/issues/37"
+- "https://github.com/aldanor/fast-float-rust"
+- "https://rustsec.org/advisories/RUSTSEC-2024-0379.html"
+uuid: "69ee0f99-4efb-48a5-951b-f738956824ec"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

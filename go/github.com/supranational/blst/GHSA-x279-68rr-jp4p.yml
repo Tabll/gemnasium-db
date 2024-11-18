@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-x279-68rr-jp4p"
+identifiers:
+- "GHSA-x279-68rr-jp4p"
+package_slug: "go/github.com/supranational/blst"
+title: "Blst vulnerable to incorrect results for some inputs in blst_fp_eucl_inverse
+  function"
+description: "During the course of differential fuzzing of the blst library by @guidovranken
+  it was discovered that blst would produce the incorrect result for some input values
+  in the inverse function. This was the result of the introduction of a new inversion
+  formula in version v0.3.0. This source of these incorrect outputs was due to two
+  issues:\n\n1. The amount of inner loop iterations was not sufficient for the algorithm
+  to converge.\n2. It was erroneously assumed that the absolute value of the intermediate
+  result would be capped at 767-bits. As a result, some output values were truncated
+  by one bit or the most significant bit was misinterpreted as the sign."
+date: "2024-05-20"
+pubdate: "2022-10-07"
+affected_range: ">=0.3.0 <0.3.3"
+fixed_versions:
+- "0.3.3"
+affected_versions: "All versions starting from 0.3.0 before 0.3.3"
+not_impacted: "All versions before 0.3.0, all versions starting from 0.3.3"
+solution: "Upgrade to version 0.3.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-x279-68rr-jp4p"
+- "https://github.com/supranational/blst/security/advisories/GHSA-x279-68rr-jp4p"
+- "https://github.com/supranational/blst/commit/dd980e7f81397895705c49fcb4f52e485bb45e21"
+- "https://github.com/supranational/blst"
+- "https://pkg.go.dev/vuln/GO-2022-1053"
+uuid: "3cc479e6-16cf-4b54-8a5e-6e92db07d87d"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

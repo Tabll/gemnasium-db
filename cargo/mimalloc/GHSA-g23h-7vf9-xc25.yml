@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-g23h-7vf9-xc25"
+identifiers:
+- "GHSA-g23h-7vf9-xc25"
+package_slug: "cargo/mimalloc"
+title: "Mimalloc Can Allocate Memory with Bad Alignment"
+description: "This crate depended on a promise regarding alignments made by the author
+  of the mimalloc allocator to avoid using aligned allocation functions where possible
+  for performance reasons.\nSince then, the mimalloc allocator's logic changed, making
+  it break this promise.\nThis caused this crate to return memory with an incorrect
+  alignment for some allocations, particularly those with large alignments.\nThe flaw
+  was fixed by always using the aligned allocation functions."
+date: "2024-11-12"
+pubdate: "2024-11-12"
+affected_range: "<0.1.39"
+fixed_versions:
+- "0.1.39"
+affected_versions: "All versions before 0.1.39"
+not_impacted: "All versions starting from 0.1.39"
+solution: "Upgrade to version 0.1.39 or above."
+urls:
+- "https://github.com/advisories/GHSA-g23h-7vf9-xc25"
+- "https://github.com/purpleprotocol/mimalloc_rust/issues/87"
+- "https://github.com/purpleprotocol/mimalloc_rust"
+- "https://rustsec.org/advisories/RUSTSEC-2022-0094.html"
+uuid: "28dba8cf-eb21-4065-b23d-14cb70033fa2"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

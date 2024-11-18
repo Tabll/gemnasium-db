@@ -1,0 +1,42 @@
+---
+identifier: "GHSA-hwqr-f3v9-hwxr"
+identifiers:
+- "GHSA-hwqr-f3v9-hwxr"
+package_slug: "pypi/distributed"
+title: "Workers for local Dask clusters mistakenly listened on public interfaces"
+description: "Versions of `distributed` earlier than `2021.10.0` had a potential security
+  vulnerability relating to single-machine Dask clusters.\n\nClusters started with
+  `dask.distributed.LocalCluster` or `dask.distributed.Client()` (which defaults to
+  using `LocalCluster`) would mistakenly configure their respective Dask workers to
+  listen on external interfaces (typically with a randomly selected high port) rather
+  than only on `localhost`. A Dask cluster created using this method AND running on
+  a machine that has these ports exposed could be used by a sophisticated attacker
+  to enable remote code execution. Users running on machines with standard firewalls
+  in place, or using clusters created via cluster objects other than `LocalCluster`
+  (e.g. `dask_kubernetes.KubeCluster`) should not be affected. This vulnerability
+  is documented in CVE-2021-42343, and was fixed in version `2021.10.0` (PR #5427)."
+date: "2024-09-16"
+pubdate: "2022-07-15"
+affected_range: "<2021.10.0"
+fixed_versions:
+- "2021.10.0"
+affected_versions: "All versions before 2021.10.0"
+not_impacted: "All versions starting from 2021.10.0"
+solution: "Upgrade to version 2021.10.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-hwqr-f3v9-hwxr"
+- "https://github.com/dask/distributed/security/advisories/GHSA-hwqr-f3v9-hwxr"
+- "https://github.com/dask/distributed/pull/5427"
+- "https://github.com/dask/distributed/commit/afce4be8e05fb180e50a9d9e38465f1a82295e1b"
+- "https://docs.dask.org/en/latest/changelog.html"
+- "https://github.com/advisories/GHSA-j8fq-86c5-5v2r"
+- "https://github.com/dask/dask/tags"
+- "https://github.com/dask/distributed"
+- "https://github.com/pypa/advisory-database/tree/main/vulns/distributed/PYSEC-2021-871.yaml"
+- "https://github.com/pypa/advisory-database/tree/main/vulns/distributed/PYSEC-2021-872.yaml"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+uuid: "fc04e58d-59d6-41b5-a6fb-d4973634b3e1"
+cwe_ids:
+- "CWE-668"
+- "CWE-937"
+- "CWE-1035"

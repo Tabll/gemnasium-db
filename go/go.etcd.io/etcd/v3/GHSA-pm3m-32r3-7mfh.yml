@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-pm3m-32r3-7mfh"
+identifiers:
+- "GHSA-pm3m-32r3-7mfh"
+package_slug: "go/go.etcd.io/etcd/v3"
+title: "Etcd embed auto compaction retention negative value causing a compaction loop
+  or a crash"
+description: "Data Validation"
+date: "2024-07-08"
+pubdate: "2024-02-03"
+affected_range: ">=3.4.0-rc.0 <3.4.10||<3.3.23"
+fixed_versions:
+- "3.4.10"
+- "3.3.23"
+affected_versions: "All versions before 3.3.23, all versions starting from 3.4.0-rc.0
+  before 3.4.10"
+not_impacted: "All versions starting from 3.3.23 before 3.4.0-rc.0, all versions starting
+  from 3.4.10"
+solution: "Upgrade to versions 3.3.23, 3.4.10 or above."
+urls:
+- "https://github.com/advisories/GHSA-pm3m-32r3-7mfh"
+- "https://github.com/etcd-io/etcd/security/advisories/GHSA-pm3m-32r3-7mfh"
+- "https://github.com/etcd-io/etcd"
+uuid: "66e3e8f5-0c2d-4a3b-a988-6a92bb1ee482"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

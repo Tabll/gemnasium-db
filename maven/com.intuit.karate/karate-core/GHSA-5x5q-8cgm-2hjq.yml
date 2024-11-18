@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-5x5q-8cgm-2hjq"
+identifiers:
+- "GHSA-5x5q-8cgm-2hjq"
+package_slug: "maven/com.intuit.karate/karate-core"
+title: "Karate has vulnerable dependency on json-smart package (CVE-2023-1370)"
+description: "The CVE\n![image](https://user-images.githubusercontent.com/2663049/229081854-1155c041-56fa-48ca-a7ff-f2f085b845fd.png)"
+date: "2024-10-28"
+pubdate: "2023-03-31"
+affected_range: "[1.3.1,1.4.0),[1.3.1,1.3.1]"
+fixed_versions:
+- "1.4.0"
+affected_versions: "All versions starting from 1.3.1 before 1.4.0, version 1.3.1"
+not_impacted: ""
+solution: "Upgrade to version 1.4.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-5x5q-8cgm-2hjq"
+- "https://github.com/karatelabs/karate/security/advisories/GHSA-5x5q-8cgm-2hjq"
+- "https://github.com/oswaldobapvicjr/jsonmerge/security/advisories/GHSA-493p-pfq6-5258"
+- "https://nvd.nist.gov/vuln/detail/CVE-2023-1370"
+- "https://github.com/karatelabs/karate"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "ebbda370-2cfa-43a6-8bbf-11122e8159c2"
+cwe_ids:
+- "CWE-674"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,50 @@
+---
+identifier: "GHSA-58qw-p7qm-5rvh"
+identifiers:
+- "GHSA-58qw-p7qm-5rvh"
+package_slug: "maven/org.eclipse.jetty/jetty-xml"
+title: "Eclipse Jetty XmlParser allows arbitrary DOCTYPE declarations"
+description: "There are no circumstances in a normally deployed Jetty server where
+  potentially hostile XML is given to the XmlParser class without the attacker already
+  having arbitrary access to the server. I.e. in order to exploit `XmlParser` the
+  attacker would already have the ability to deploy and execute hostile code.  Specifically,
+  Jetty has no protection against malicious web application and potentially hostile
+  web applications should only be run on an isolated virtualisation.\n\nThus this
+  is not considered a vulnerability of the Jetty server itself, as any such usage
+  of the jetty XmlParser is equally vulnerable as a direct usage of the JVM supplied
+  SAX parser.  No CVE will be allocated to this advisory.\n\nHowever, any direct usage
+  of the `XmlParser` class by an application may be vulnerable.  The impact would
+  greatly depend on how the application uses `XmlParser`, but it could be a denial
+  of service due to large entity expansion, or possibly the revealing local files
+  if the XML results are accessible remotely."
+date: "2024-09-10"
+pubdate: "2023-07-10"
+affected_range: "[10.0.0-alpha0,10.0.16),[11.0.0-alpha0,11.0.16),[12.0.0.alpha0,12.0.0),[,9.4.52.v20230823)"
+fixed_versions:
+- "10.0.16"
+- "11.0.16"
+- "12.0.0"
+- "9.4.52.v20230823"
+affected_versions: "All versions starting from 12.0.0.alpha0 before 12.0.0, all versions
+  before 9.4.52.v20230823, all versions starting from 10.0.0-alpha0 before 10.0.16,
+  all versions starting from 11.0.0-alpha0 before 11.0.16"
+not_impacted: "All versions before 12.0.0.alpha0, all versions starting from 12.0.0
+  before 0, all versions starting from 9.4.52.v20230823 before 10.0.0-alpha0, all
+  versions starting from 10.0.16 before 11.0.0-alpha0, all versions starting from
+  11.0.16"
+solution: "Upgrade to versions 10.0.16, 11.0.16, 12.0.0, 9.4.52.v20230823 or above."
+urls:
+- "https://github.com/advisories/GHSA-58qw-p7qm-5rvh"
+- "https://github.com/eclipse/jetty.project/security/advisories/GHSA-58qw-p7qm-5rvh"
+- "https://github.com/eclipse/jetty.project/pull/10067"
+- "https://github.com/eclipse/jetty.project"
+- "https://github.com/eclipse/jetty.project/releases/tag/jetty-10.0.16"
+- "https://github.com/eclipse/jetty.project/releases/tag/jetty-11.0.16"
+- "https://github.com/eclipse/jetty.project/releases/tag/jetty-12.0.0"
+- "https://github.com/eclipse/jetty.project/releases/tag/jetty-9.4.52.v20230823"
+cvss_v3: "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:U/C:L/I:L/A:L"
+uuid: "ec808c3d-65f1-4f2b-80c2-a58e3855db51"
+cwe_ids:
+- "CWE-611"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-cfqx-f43m-vfh7"
+identifiers:
+- "GHSA-cfqx-f43m-vfh7"
+package_slug: "npm/@saltcorn/server"
+title: "@saltcorn/server arbitrary file and directory listing when accessing build
+  mobile app results"
+description: "A user with admin permission can read arbitrary file and directory names
+  on the filesystem by calling the `admin/build-mobile-app/result?build_dir_name=`
+  endpoint.  The `build_dir_name` parameter is not properly validated and it's then
+  used to construct the `buildDir` that is read. The file/directory names under the
+  `buildDir` will be returned."
+date: "2024-10-03"
+pubdate: "2024-10-03"
+affected_range: "<1.0.0-beta.14"
+fixed_versions:
+- "1.0.0-beta.14"
+affected_versions: "All versions before 1.0.0-beta.14"
+not_impacted: "All versions starting from 1.0.0-beta.14"
+solution: "Upgrade to version 1.0.0-beta.14 or above."
+urls:
+- "https://github.com/advisories/GHSA-cfqx-f43m-vfh7"
+- "https://github.com/saltcorn/saltcorn/security/advisories/GHSA-cfqx-f43m-vfh7"
+- "https://github.com/saltcorn/saltcorn/commit/81adaf78430a9b59804894574d67d2a0c7bb3dc5"
+- "https://github.com/saltcorn/saltcorn"
+- "https://github.com/saltcorn/saltcorn/blob/v1.0.0-beta.13/packages/server/routes/admin.js#L2884-L2893"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:N/A:N"
+uuid: "19e217b8-da34-4472-ae95-cd43d4511aa5"
+cwe_ids:
+- "CWE-548"
+- "CWE-937"
+- "CWE-1035"

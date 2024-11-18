@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-pf56-h9qf-rxq4"
+identifiers:
+- "GHSA-pf56-h9qf-rxq4"
+package_slug: "npm/@saltcorn/server"
+title: "Saltcorn Server Stored Cross-Site Scripting (XSS) in event logs page"
+description: "Event log data is not properly sanitized leading to stored Cross-Site
+  Scripting (XSS) vulnerability."
+date: "2024-10-07"
+pubdate: "2024-10-07"
+affected_range: "<1.0.0-beta.16"
+fixed_versions:
+- "1.0.0-beta.16"
+affected_versions: "All versions before 1.0.0-beta.16"
+not_impacted: "All versions starting from 1.0.0-beta.16"
+solution: "Upgrade to version 1.0.0-beta.16 or above."
+urls:
+- "https://github.com/advisories/GHSA-pf56-h9qf-rxq4"
+- "https://github.com/saltcorn/saltcorn/security/advisories/GHSA-pf56-h9qf-rxq4"
+- "https://github.com/saltcorn/saltcorn/commit/3c551261d0e230635774798009951fa83a07cc3a"
+- "https://github.com/saltcorn/saltcorn"
+- "https://github.com/saltcorn/saltcorn/blob/v1.0.0-beta.13/packages/server/routes/eventlog.js#L445"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+uuid: "9980b614-5908-4aeb-b7d9-2522fb76f3ac"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-fpr5-jp2j-4q2f"
+identifiers:
+- "GHSA-fpr5-jp2j-4q2f"
+package_slug: "cargo/paillier-zk"
+title: "paillier-zk has ambiguous challenge derivation"
+description: "Challenge derivation in non-interactive ZK proofs was ambiguous and
+  that could lead to security vulnerability (however, it's unknown if it could be
+  exploited)."
+date: "2024-11-12"
+pubdate: "2024-11-12"
+affected_range: "<0.4.0"
+fixed_versions:
+- "0.4.0"
+affected_versions: "All versions before 0.4.0"
+not_impacted: "All versions starting from 0.4.0"
+solution: "Upgrade to version 0.4.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-fpr5-jp2j-4q2f"
+- "https://github.com/dfns/paillier-zk/pull/49"
+- "https://github.com/LFDT-Lockness/paillier-zk"
+- "https://rustsec.org/advisories/RUSTSEC-2024-0391.html"
+uuid: "34f339b8-29c9-4e9c-906a-91be046361c2"
+cwe_ids:
+- "CWE-327"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-pqp3-8rrw-g8vm"
+identifiers:
+- "GHSA-pqp3-8rrw-g8vm"
+package_slug: "packagist/pocketmine/pocketmine-mp"
+title: "PocketMine-MP vulnerable to server crash with certain invalid JSON payloads
+  in `LoginPacket` due to vulnerable dependency"
+description: "An attacker could crash PocketMine-MP by sending malformed JSON in `LoginPacket`.\n\nThis
+  happened due to a bug in [`netresearch/jsonmapper`](https://github.com/cweiske/JsonMapper).
+  The library wasn't doing proper checks when mapping JSON arrays and objects onto
+  scalar model properties such as strings."
+date: "2024-05-15"
+pubdate: "2023-06-06"
+affected_range: "<4.20.5||>=4.21.0 <4.21.1"
+fixed_versions:
+- "4.20.5"
+- "4.21.1"
+affected_versions: "All versions before 4.20.5, all versions starting from 4.21.0
+  before 4.21.1"
+not_impacted: "All versions starting from 4.20.5 before 4.21.0, all versions starting
+  from 4.21.1"
+solution: "Upgrade to versions 4.20.5, 4.21.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-pqp3-8rrw-g8vm"
+- "https://github.com/pmmp/PocketMine-MP/security/advisories/GHSA-pqp3-8rrw-g8vm"
+- "https://github.com/cweiske/jsonmapper/pull/210"
+- "https://github.com/pmmp/PocketMine-MP/commit/09668a37d66c6023685a948b7550c918620e98f2"
+- "https://github.com/pmmp/netresearch-jsonmapper/commit/a31902a31f5b6fdb832f57c0e3a3f16a3b41c012"
+- "https://github.com/pmmp/PocketMine-MP"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "ca97829e-689d-4d6d-8c0a-f04b29ece16a"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

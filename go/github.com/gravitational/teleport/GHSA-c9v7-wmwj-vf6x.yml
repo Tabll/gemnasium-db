@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-c9v7-wmwj-vf6x"
+identifiers:
+- "GHSA-c9v7-wmwj-vf6x"
+package_slug: "go/github.com/gravitational/teleport"
+title: "Withdrawn Advisory: SFTP is possible on the Proxy server for any user with
+  SFTP access"
+description: "An attacker that has access to nodes within the cluster may be able
+  to SFTP to the Proxy Service. The user's permissions on the Proxy server are still
+  respected, so files can only be read or modified on the Proxy if the user has system
+  access to read or write to them."
+date: "2024-09-06"
+pubdate: "2024-01-03"
+affected_range: ">=14.0.0 <14.2.4||>=13.0.0 <13.4.13||<12.4.31"
+fixed_versions:
+- "14.2.4"
+- "13.4.13"
+- "12.4.31"
+affected_versions: "All versions before 12.4.31, all versions starting from 13.0.0
+  before 13.4.13, all versions starting from 14.0.0 before 14.2.4"
+not_impacted: "All versions starting from 12.4.31 before 13.0.0, all versions starting
+  from 13.4.13 before 14.0.0, all versions starting from 14.2.4"
+solution: "Upgrade to versions 12.4.31, 13.4.13, 14.2.4 or above."
+urls:
+- "https://github.com/advisories/GHSA-c9v7-wmwj-vf6x"
+- "https://github.com/gravitational/teleport/security/advisories/GHSA-c9v7-wmwj-vf6x"
+- "https://github.com/gravitational/teleport/pull/36136"
+- "https://github.com/gravitational/teleport/commit/1c77fc49944ebcded32bbdd77c3e1f4f8a1c130d"
+- "https://github.com/gravitational/teleport"
+uuid: "ab3808c5-7090-454e-a33c-89c374d7dc0a"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

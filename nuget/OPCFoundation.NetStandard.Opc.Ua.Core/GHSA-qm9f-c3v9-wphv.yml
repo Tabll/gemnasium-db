@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-qm9f-c3v9-wphv"
+identifiers:
+- "GHSA-qm9f-c3v9-wphv"
+package_slug: "nuget/OPCFoundation.NetStandard.Opc.Ua.Core"
+title: "Security Update for the OPC UA .NET Standard Stack"
+description: "This security update resolves a vulnerability in the OPC UA .NET Standard
+  Stack that enables an unauthorized attacker to trigger a rapid increase in memory
+  consumption."
+date: "2024-10-18"
+pubdate: "2024-10-18"
+affected_range: "[,1.05.374.54)"
+fixed_versions:
+- "1.05.374.54"
+affected_versions: "All versions before 1.05.374.54"
+not_impacted: "All versions starting from 1.05.374.54"
+solution: "Upgrade to version 1.05.374.54 or above."
+urls:
+- "https://github.com/advisories/GHSA-qm9f-c3v9-wphv"
+- "https://github.com/OPCFoundation/UA-.NETStandard/security/advisories/GHSA-qm9f-c3v9-wphv"
+- "https://github.com/OPCFoundation/UA-.NETStandard"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "879d4f62-f6cd-4000-8da0-675bc80ad6b4"
+cwe_ids:
+- "CWE-770"
+- "CWE-937"
+- "CWE-1035"

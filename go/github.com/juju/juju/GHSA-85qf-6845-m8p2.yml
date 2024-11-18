@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-85qf-6845-m8p2"
+identifiers:
+- "GHSA-85qf-6845-m8p2"
+package_slug: "go/github.com/juju/juju"
+title: "Duplicate Advisory: Juju Unprotected Alternate Channel vulnerability"
+description: "## Duplicate Advisory\nThis advisory has been withdrawn because it is
+  a duplicate of GHSA-xwgj-vpm9-q2rq. This link is maintained to preserve external
+  references.\n\n## Original Description\nVulnerable juju introspection abstract UNIX
+  domain socket. An abstract UNIX domain socket responsible for introspection is available
+  without authentication locally to network namespace users. This enables denial of
+  service attacks."
+date: "2024-10-02"
+pubdate: "2024-10-02"
+affected_range: "<0.0.0-20241001032836-2af7bd8e310b"
+fixed_versions:
+- "0.0.0-20241001032836-2af7bd8e310b"
+affected_versions: "All versions before 0.0.0-20241001032836-2af7bd8e310b"
+not_impacted: "All versions starting from 0.0.0-20241001032836-2af7bd8e310b"
+solution: "Upgrade to version 0.0.0-20241001032836-2af7bd8e310b or above."
+urls:
+- "https://github.com/advisories/GHSA-85qf-6845-m8p2"
+- "https://github.com/juju/juju/security/advisories/GHSA-xwgj-vpm9-q2rq"
+- "https://nvd.nist.gov/vuln/detail/CVE-2024-8038"
+- "https://www.cve.org/CVERecord?id=CVE-2024-8038"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:H"
+uuid: "511cb39b-affa-43d5-9464-033536d2acf8"
+cwe_ids:
+- "CWE-420"
+- "CWE-937"
+- "CWE-1035"

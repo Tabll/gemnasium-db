@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-76cc-p55w-63g3"
+identifiers:
+- "GHSA-76cc-p55w-63g3"
+package_slug: "go/github.com/gravitational/teleport"
+title: "Withdrawn Advisory: Teleport Access List owners can escalate their privileges"
+description: "Access Lists are a new feature introduced in Teleport 14 and currently
+  under preview. An issue was discovered that allows an Access List Owner to assign
+  arbitrary permissions, including permissions to themselves which could result in
+  privilege escalation."
+date: "2024-09-06"
+pubdate: "2024-01-03"
+affected_range: ">=14.0.0 <14.2.4||>=13.0.0 <13.4.13"
+fixed_versions:
+- "14.2.4"
+- "13.4.13"
+affected_versions: "All versions starting from 13.0.0 before 13.4.13, all versions
+  starting from 14.0.0 before 14.2.4"
+not_impacted: "All versions before 13.0.0, all versions starting from 13.4.13 before
+  14.0.0, all versions starting from 14.2.4"
+solution: "Upgrade to versions 13.4.13, 14.2.4 or above."
+urls:
+- "https://github.com/advisories/GHSA-76cc-p55w-63g3"
+- "https://github.com/gravitational/teleport/security/advisories/GHSA-76cc-p55w-63g3"
+- "https://github.com/gravitational/teleport"
+uuid: "96dd7ce2-cb9b-4ec6-b6fa-56566497d7a2"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

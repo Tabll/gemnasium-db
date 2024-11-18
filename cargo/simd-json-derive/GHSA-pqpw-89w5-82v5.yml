@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-pqpw-89w5-82v5"
+identifiers:
+- "GHSA-pqpw-89w5-82v5"
+package_slug: "cargo/simd-json-derive"
+title: "`simd-json-derive` vulnerable to `MaybeUninit` misuse"
+description: "An invalid use of `MaybeUninit::uninit().assume_init()` in `simd-json-derive`'s
+  derive macro can cause undefined behavior. The original code used `MaybeUninit`
+  to avoid initialisation of the struct and then set the fields using `ptr::write`.
+  The undefined behavior triggered by this misuse of `MaybeUninit` can lead to invlaid
+  memory access and panics in binaries compiled in release mode (aka simd-json-derive
+  prior to version 0.12 has UB and optimizes into some nonsense)\n\nThe version `0.12.0`
+  removes this section of code, avoiding the use of MaybeUninit alltogether."
+date: "2024-11-12"
+pubdate: "2024-11-12"
+affected_range: "<0.12.0"
+fixed_versions:
+- "0.12.0"
+affected_versions: "All versions before 0.12.0"
+not_impacted: "All versions starting from 0.12.0"
+solution: "Upgrade to version 0.12.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-pqpw-89w5-82v5"
+- "https://github.com/simd-lite/simd-json-derive/issues/67"
+- "https://github.com/simd-lite/simd-json-derive"
+- "https://rustsec.org/advisories/RUSTSEC-2023-0087.html"
+uuid: "2f75602f-3029-41c0-bdb8-2c1dcb24fb35"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

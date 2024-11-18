@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-277h-px4m-62q8"
+identifiers:
+- "GHSA-277h-px4m-62q8"
+package_slug: "npm/@saltcorn/server"
+title: "@saltcorn/server arbitrary file zip read and download when downloading auto
+  backups"
+description: "A user with admin permission can read and download arbitrary zip files
+  when downloading auto backups. The file name used to identify the zip file is not
+  properly sanitized when passed to `res.download` API."
+date: "2024-10-03"
+pubdate: "2024-10-03"
+affected_range: "<1.0.0-beta.14"
+fixed_versions:
+- "1.0.0-beta.14"
+affected_versions: "All versions before 1.0.0-beta.14"
+not_impacted: "All versions starting from 1.0.0-beta.14"
+solution: "Upgrade to version 1.0.0-beta.14 or above."
+urls:
+- "https://github.com/advisories/GHSA-277h-px4m-62q8"
+- "https://github.com/saltcorn/saltcorn/security/advisories/GHSA-277h-px4m-62q8"
+- "https://github.com/saltcorn/saltcorn/commit/024f19a7e079913f62f4a2335ab04116ddb68192"
+- "https://github.com/saltcorn/saltcorn"
+- "https://github.com/saltcorn/saltcorn/blob/v1.0.0-beta.13/packages/server/routes/admin.js#L671-L682"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:N/A:N"
+uuid: "64c65e69-4171-48de-bb07-56341583817f"
+cwe_ids:
+- "CWE-22"
+- "CWE-937"
+- "CWE-1035"

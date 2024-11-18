@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-qjrv-v6qp-x99x"
+identifiers:
+- "GHSA-qjrv-v6qp-x99x"
+package_slug: "cargo/surrealdb"
+title: "SurrealDB has an Uncaught Exception Handling Parsing Errors on Empty Strings"
+description: "The error rendering code from the parser would panic when handling failed
+  parsing of queries where the error occurred when converting an empty string to a
+  SurrealDB value. This would be the case when casting an empty string to a `record`,
+  `duration` or `datetime`, as well as potentially when parsing an empty string to
+  JSON or providing an empty string to the `type::field` and `type::fields` functions."
+date: "2024-10-08"
+pubdate: "2024-10-08"
+affected_range: ">=2.0.0 <2.0.4"
+fixed_versions:
+- "2.0.4"
+affected_versions: "All versions starting from 2.0.0 before 2.0.4"
+not_impacted: "All versions before 2.0.0, all versions starting from 2.0.4"
+solution: "Upgrade to version 2.0.4 or above."
+urls:
+- "https://github.com/advisories/GHSA-qjrv-v6qp-x99x"
+- "https://github.com/surrealdb/surrealdb/security/advisories/GHSA-qjrv-v6qp-x99x"
+- "https://github.com/surrealdb/surrealdb/pull/4923"
+- "https://github.com/surrealdb/surrealdb/commit/709d6efe901dbf3e207b4fc2ebc30775595efc16"
+- "https://github.com/surrealdb/surrealdb"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+uuid: "e360f98b-fd14-4a5d-9cca-065158da5a17"
+cwe_ids:
+- "CWE-248"
+- "CWE-937"
+- "CWE-1035"

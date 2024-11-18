@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-m658-p24x-p74r"
+identifiers:
+- "GHSA-m658-p24x-p74r"
+package_slug: "go/mellium.im/xmpp"
+title: "Duplicate Advisory: TLS certificate validation error in mellium.im/xmpp"
+description: "## Duplicate Advisory\nThis advisory has been withdrawn because it is
+  a duplicate of GHSA-h289-x5wc-xcv8. This link is maintained to preserve external
+  references.\n\n## Original Description\nIn Mellium mellium.im/xmpp through 0.21.0,
+  an attacker capable of spoofing DNS TXT records can redirect a WebSocket connection
+  request to a server under their control without causing TLS certificate verification
+  to fail. This occurs because the wrong host name is selected during this verification."
+date: "2024-05-20"
+pubdate: "2022-02-12"
+affected_range: ">=0.18.0 <0.21.1"
+fixed_versions:
+- "0.21.1"
+affected_versions: "All versions starting from 0.18.0 before 0.21.1"
+not_impacted: "All versions before 0.18.0, all versions starting from 0.21.1"
+solution: "Upgrade to version 0.21.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-m658-p24x-p74r"
+- "https://nvd.nist.gov/vuln/detail/CVE-2022-24968"
+- "https://github.com/mellium/xmpp/pull/260"
+- "https://github.com/mellium/xmpp/commit/0d92aa486da69b71f2f4a30e62aa722c711b98ac"
+- "https://mellium.im/cve/cve-2022-24968"
+- "https://mellium.im/issue/259"
+- "https://mellium.im/xmpp"
+- "https://pkg.go.dev/vuln/GO-2022-0370"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N"
+uuid: "abd0e8fe-919d-461b-848e-893cbb7f1350"
+cwe_ids:
+- "CWE-295"
+- "CWE-937"
+- "CWE-1035"

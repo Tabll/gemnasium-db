@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-j86v-2vjr-fg8f"
+identifiers:
+- "GHSA-j86v-2vjr-fg8f"
+package_slug: "go/go.etcd.io/etcd/v3"
+title: "Etcd Gateway TLS endpoint validation only confirms TCP reachability"
+description: "### Vulnerability type\nCryptography\n\n### Workarounds\nRefer to the
+  [gateway documentation](https://github.com/etcd-io/etcd/blob/master/Documentation/op-guide/gateway.md).
+  The vulnerability was spotted due to unclear documentation of how the gateway handles
+  endpoints validation. \n\n### Detail\nSecure endpoint validation is performed by
+  the etcd gateway start command when the --discovery-srv flag is enabled. However,
+  as currently implemented, it only validates TCP reachability, effectively allowing
+  connections to an endpoint that doesn't accept TLS connections through the HTTPS
+  URL. The auditors has noted that appropriate documentation of this validation functionality
+  plus deprecation of this misleading functionality is an acceptable path forward.\n\n###
+  References\nFind out more on this vulnerability in the [security audit report](https://github.com/etcd-io/etcd/blob/master/security/SECURITY_AUDIT.pdf)"
+date: "2024-07-08"
+pubdate: "2024-02-03"
+affected_range: ">=3.4.0-rc.0 <3.4.10||<3.3.23"
+fixed_versions:
+- "3.4.10"
+- "3.3.23"
+affected_versions: "All versions before 3.3.23, all versions starting from 3.4.0-rc.0
+  before 3.4.10"
+not_impacted: "All versions starting from 3.3.23 before 3.4.0-rc.0, all versions starting
+  from 3.4.10"
+solution: "Upgrade to versions 3.3.23, 3.4.10 or above."
+urls:
+- "https://github.com/advisories/GHSA-j86v-2vjr-fg8f"
+- "https://github.com/etcd-io/etcd/security/advisories/GHSA-j86v-2vjr-fg8f"
+uuid: "031cdefe-fd18-4900-850f-54834eb4e85b"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

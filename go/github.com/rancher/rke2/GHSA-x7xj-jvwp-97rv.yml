@@ -1,0 +1,43 @@
+---
+identifier: "GHSA-x7xj-jvwp-97rv"
+identifiers:
+- "GHSA-x7xj-jvwp-97rv"
+package_slug: "go/github.com/rancher/rke2"
+title: "RKE2 allows privilege escalation in Windows nodes due to Insecure Access Control
+  Lists"
+description: "A vulnerability has been identified whereby RKE2 deployments in Windows
+  nodes have weak Access Control Lists (ACL), allowing `BUILTIN\\Users` or `NT AUTHORITY\\Authenticated
+  Users` to view or edit sensitive files which could lead to privilege escalation. This
+  vulnerability is exclusive to RKE2 in Windows environments. Linux environments are
+  not affected by it. Please consult the associated [MITRE ATT&CK - Technique
+  - Exploitation for Privilege Escalation](https://attack.mitre.org/techniques/T1068/)
+  for further information about this category of attack."
+date: "2024-10-25"
+pubdate: "2024-10-25"
+affected_range: ">=1.27.0 <1.27.15||>=1.28.0 <1.28.11||>=1.29.0 <1.29.6||>=1.30.0
+  <1.30.2"
+fixed_versions:
+- "1.27.15"
+- "1.28.11"
+- "1.29.6"
+- "1.30.2"
+affected_versions: "All versions starting from 1.27.0 before 1.27.15, all versions
+  starting from 1.28.0 before 1.28.11, all versions starting from 1.29.0 before 1.29.6,
+  all versions starting from 1.30.0 before 1.30.2"
+not_impacted: "All versions before 1.27.0, all versions starting from 1.27.15 before
+  1.28.0, all versions starting from 1.28.11 before 1.29.0, all versions starting
+  from 1.29.6 before 1.30.0, all versions starting from 1.30.2"
+solution: "Upgrade to versions 1.27.15, 1.28.11, 1.29.6, 1.30.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-x7xj-jvwp-97rv"
+- "https://github.com/rancher/rancher/security/advisories/GHSA-7h8m-pvw3-5gh4"
+- "https://github.com/rancher/rke2/security/advisories/GHSA-x7xj-jvwp-97rv"
+- "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-32197"
+- "https://github.com/rancher/rke2"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H"
+uuid: "46d0cb2c-a2a1-446b-8469-30825e9497e7"
+cwe_ids:
+- "CWE-269"
+- "CWE-732"
+- "CWE-937"
+- "CWE-1035"

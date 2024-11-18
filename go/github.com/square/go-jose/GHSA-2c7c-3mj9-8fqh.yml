@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-2c7c-3mj9-8fqh"
+identifiers:
+- "GHSA-2c7c-3mj9-8fqh"
+package_slug: "go/github.com/square/go-jose"
+title: "Decryption of malicious PBES2 JWE objects can consume unbounded system resources"
+description: "The go-jose package is subject to a \"billion hashes attack\" causing
+  denial-of-service when decrypting JWE inputs. This occurs when an attacker can provide
+  a PBES2 encrypted JWE blob with a very large p2c value that, when decrypted, produces
+  a denial-of-service."
+date: "2024-05-20"
+pubdate: "2023-11-21"
+affected_range: "<2.6.2"
+fixed_versions:
+- "2.6.2"
+affected_versions: "All versions before 2.6.2"
+not_impacted: "All versions starting from 2.6.2"
+solution: "Upgrade to version 2.6.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-2c7c-3mj9-8fqh"
+- "https://github.com/go-jose/go-jose/issues/64"
+- "https://github.com/go-jose/go-jose/commit/65351c27657d58960c2e6c9fbb2b00f818e50568"
+- "https://github.com/go-jose/go-jose/commit/a3d307244c3bc50b25a71aa0688764c32ec419c7"
+- "https://github.com/go-jose/go-jose"
+uuid: "58dbab39-eb37-4090-9356-55b8e7e3d947"
+cwe_ids:
+- "CWE-400"
+- "CWE-937"
+- "CWE-1035"

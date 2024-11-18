@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-f8x4-f32r-w556"
+identifiers:
+- "GHSA-f8x4-f32r-w556"
+package_slug: "cargo/pyo3"
+title: "PyO3 has a risk of use-after-free in `borrowed` reads from Python weak references"
+description: "The family of functions to read \"borrowed\" values from Python weak
+  references were fundamentally unsound, because the weak reference does itself not
+  have ownership of the value. At any point the last strong reference could be cleared
+  and the borrowed value would become dangling.\n\nIn PyO3 0.22.4 these functions
+  have all been deprecated and patched to leak a strong reference as a mitigation.
+  PyO3 0.23 will remove these functions entirely."
+date: "2024-10-15"
+pubdate: "2024-10-15"
+affected_range: ">=0.22.0 <0.22.4"
+fixed_versions:
+- "0.22.4"
+affected_versions: "All versions starting from 0.22.0 before 0.22.4"
+not_impacted: "All versions before 0.22.0, all versions starting from 0.22.4"
+solution: "Upgrade to version 0.22.4 or above."
+urls:
+- "https://github.com/advisories/GHSA-f8x4-f32r-w556"
+- "https://github.com/PyO3/pyo3/pull/4590"
+- "https://github.com/PyO3/pyo3"
+- "https://rustsec.org/advisories/RUSTSEC-2024-0378.html"
+uuid: "3704dc5e-86c0-4734-bdaf-b4540931bfcb"
+cwe_ids:
+- "CWE-416"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,26 @@
+---
+identifier: "GHSA-3vpc-4p9p-47hc"
+identifiers:
+- "GHSA-3vpc-4p9p-47hc"
+package_slug: "pypi/curl-cffi"
+title: "curl_cffi bundles a version of libcurl affected by High Severity vulnerability"
+description: "curl_cffi is potentially affected by High Severity vulnerability (CVE-2023-38545)
+  in libcurl<8.4.0"
+date: "2024-10-22"
+pubdate: "2024-10-22"
+affected_range: "<0.7.0b6"
+fixed_versions:
+- "0.7.0b6"
+affected_versions: "All versions before 0.7.0b6"
+not_impacted: "All versions starting from 0.7.0b6"
+solution: "Upgrade to version 0.7.0b6 or above."
+urls:
+- "https://github.com/advisories/GHSA-3vpc-4p9p-47hc"
+- "https://github.com/lexiforest/curl_cffi/security/advisories/GHSA-3vpc-4p9p-47hc"
+- "https://github.com/advisories/GHSA-7xw9-w465-6x42"
+- "https://github.com/lexiforest/curl_cffi"
+uuid: "b447d862-69fc-4e09-ae1d-71c329b9e7ad"
+cwe_ids:
+- "CWE-1395"
+- "CWE-937"
+- "CWE-1035"

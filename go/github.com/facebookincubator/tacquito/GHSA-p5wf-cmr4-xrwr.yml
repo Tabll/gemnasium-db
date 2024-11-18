@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-p5wf-cmr4-xrwr"
+identifiers:
+- "GHSA-p5wf-cmr4-xrwr"
+package_slug: "go/github.com/facebookincubator/tacquito"
+title: "Permissive Regular Expression in tacquito"
+description: "The CVE is for a software vulnerability. Network admins who have deployed
+  tacquito (or versions of tacquito) in their production environments and use tacquito
+  to perform command authorization for network devices should be impacted.\n\nTacquito
+  code prior to commit 07b49d1358e6ec0b5aa482fcd284f509191119e2 was performing regex
+  matches on authorized commands and arguments in a more permissive than intended
+  manner. Configured allowed commands/arguments were intended to require a match on
+  the entire string, but instead only enforced a match on a sub-string. This behaviour
+  could potentially allowed unauthorized commands to be executed."
+date: "2024-11-01"
+pubdate: "2024-10-18"
+affected_range: "<0.0.0-20241011192817-07b49d1358e6"
+fixed_versions:
+- "0.0.0-20241011192817-07b49d1358e6"
+affected_versions: "All versions before 0.0.0-20241011192817-07b49d1358e6"
+not_impacted: "All versions starting from 0.0.0-20241011192817-07b49d1358e6"
+solution: "Upgrade to version 0.0.0-20241011192817-07b49d1358e6 or above."
+urls:
+- "https://github.com/advisories/GHSA-p5wf-cmr4-xrwr"
+- "https://github.com/facebookincubator/tacquito/security/advisories/GHSA-p5wf-cmr4-xrwr"
+- "https://nvd.nist.gov/vuln/detail/CVE-2024-49400"
+- "https://github.com/facebookincubator/tacquito/commit/07b49d1358e6ec0b5aa482fcd284f509191119e2"
+- "https://github.com/facebookincubator/tacquito"
+- "https://www.facebook.com/security/advisories/cve-2024-49400"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:L/I:H/A:H"
+uuid: "a40c8045-b8e5-4335-9790-36e5576de179"
+cwe_ids:
+- "CWE-1333"
+- "CWE-937"
+- "CWE-1035"

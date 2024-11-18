@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-7jjx-3qw9-j6h6"
+identifiers:
+- "GHSA-7jjx-3qw9-j6h6"
+package_slug: "cargo/cggmp21-keygen"
+title: "cggmp21-keygen has ambiguous challenge derivation"
+description: "Challenge derivation in non-interactive ZK proofs was ambiguous and
+  that could lead to security vulnerability (however, it's unknown if it could be
+  exploited)."
+date: "2024-11-12"
+pubdate: "2024-11-12"
+affected_range: "<0.3.0"
+fixed_versions:
+- "0.3.0"
+affected_versions: "All versions before 0.3.0"
+not_impacted: "All versions starting from 0.3.0"
+solution: "Upgrade to version 0.3.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-7jjx-3qw9-j6h6"
+- "https://github.com/dfns/cggmp21/pull/103"
+- "https://github.com/dfns/cggmp21"
+- "https://rustsec.org/advisories/RUSTSEC-2024-0392.html"
+uuid: "9438499e-3b03-4eb1-8055-3c60e9d826ce"
+cwe_ids:
+- "CWE-327"
+- "CWE-937"
+- "CWE-1035"

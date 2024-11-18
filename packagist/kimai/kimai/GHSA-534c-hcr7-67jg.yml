@@ -7,7 +7,7 @@ title: "Kimai has an XXE Leading to Local File Read"
 description: "Kimai uses [PHPSpreadsheet](https://github.com/PHPOffice/PhpSpreadsheet)
   for importing and exporting invoices. Recently, a [CVE](https://github.com/PHPOffice/PhpSpreadsheet/security/advisories/GHSA-ghg6-32f9-2jp7)
   was identified in PHPSpreadsheet, which could lead to an XXE vulnerability."
-date: "2024-09-17"
+date: "2024-11-14"
 pubdate: "2024-09-17"
 affected_range: "<2.21.0"
 fixed_versions:

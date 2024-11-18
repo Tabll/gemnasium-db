@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-82j3-hf72-7x93"
+identifiers:
+- "GHSA-82j3-hf72-7x93"
+package_slug: "maven/com.reposilite/reposilite-backend"
+title: "Reposilite vulnerable to path traversal while serving javadoc expanded files
+  (arbitrary file read) (`GHSL-2024-074`)"
+description: "Reposilite v3.5.10 is affected by an Arbitrary File Read vulnerability
+  via path traversal while serving expanded javadoc files."
+date: "2024-11-04"
+pubdate: "2024-11-04"
+affected_range: "[3.3.0,3.5.12)"
+fixed_versions:
+- "3.5.12"
+affected_versions: "All versions starting from 3.3.0 before 3.5.12"
+not_impacted: "All versions before 3.3.0, all versions starting from 3.5.12"
+solution: "Upgrade to version 3.5.12 or above."
+urls:
+- "https://github.com/advisories/GHSA-82j3-hf72-7x93"
+- "https://github.com/dzikoysk/reposilite/security/advisories/GHSA-82j3-hf72-7x93"
+- "https://nvd.nist.gov/vuln/detail/CVE-2024-36117"
+- "https://github.com/dzikoysk/reposilite/commit/e172ae4b539c822d0d6e04cf090713c7202a79d6"
+- "https://github.com/dzikoysk/reposilite"
+- "https://github.com/dzikoysk/reposilite/releases/tag/3.5.12"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N"
+uuid: "91da7375-87be-422a-84bd-4d25cc585daf"
+cwe_ids:
+- "CWE-22"
+- "CWE-937"
+- "CWE-1035"

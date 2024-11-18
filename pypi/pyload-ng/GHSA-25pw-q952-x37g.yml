@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-25pw-q952-x37g"
+identifiers:
+- "GHSA-25pw-q952-x37g"
+package_slug: "pypi/pyload-ng"
+title: "Duplicate Advisory: pyload-ng vulnerable to RCE with js2py sandbox escape"
+description: "## Duplicate Advisory\nThis advisory has been withdrawn because it is
+  a duplicate of GHSA-r9pp-r4xf-597r. This link is maintained to preserve external
+  references.\n\n## Original Description\nAn issue in pyload-ng v0.5.0b3.dev85 running
+  under python3.11 or below allows attackers to execute arbitrary code via a crafted
+  HTTP request."
+date: "2024-10-28"
+pubdate: "2024-10-28"
+affected_range: "<=0.5.0b3.dev85"
+fixed_versions: []
+affected_versions: "All versions up to 0.5.0b3.dev85"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-25pw-q952-x37g"
+- "https://github.com/pyload/pyload/security/advisories/GHSA-r9pp-r4xf-597r"
+- "https://nvd.nist.gov/vuln/detail/CVE-2024-39205"
+- "https://github.com/Marven11/CVE-2024-39205-Pyload-RCE/tree/main"
+- "https://github.com/pyload/pyload"
+uuid: "5677f5b6-5bd5-436e-b98d-26866ff9bad8"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

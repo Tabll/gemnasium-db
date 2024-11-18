@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-3mpp-xfvh-qh37"
+identifiers:
+- "GHSA-3mpp-xfvh-qh37"
+package_slug: "npm/node-ipc"
+title: "node-ipc behavior change"
+description: "node-ipc starting in version 11.0.0 and prior to version 12.0.0 includes
+  a message from the maintainer that is written to the user’s desktop. Please review
+  the version changes before proceeding."
+date: "2024-08-14"
+pubdate: "2022-03-16"
+affected_range: ">=11.0.0 <12.0.0"
+fixed_versions:
+- "12.0.0"
+affected_versions: "All versions starting from 11.0.0 before 12.0.0"
+not_impacted: "All versions before 11.0.0, all versions starting from 12.0.0"
+solution: "Upgrade to version 12.0.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-3mpp-xfvh-qh37"
+- "https://github.com/RIAEvangelist/node-ipc/commit/a98efaedbf090d7bf4d6bdf07761301c531608af"
+- "https://github.com/RIAEvangelist/node-ipc"
+- "https://github.com/RIAEvangelist/node-ipc/compare/10.1.0...12.0.0"
+- "https://github.com/RIAEvangelist/node-ipc/releases/tag/v11.0.0"
+uuid: "1a0a1127-bd30-4962-9e92-e9af1cf47f97"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"
