@@ -21,7 +21,7 @@ description: "cert-manager packages which call the standard library `pem.Decode(
   all versions of cert-manager to have been released since at least v0.1.0 (since
   `pem.Decode` is core functionality for cert-manager). All [supported releases](https://cert-manager.io/docs/releases/)
   are patched."
-date: "2024-11-20"
+date: "2024-11-22"
 pubdate: "2024-11-20"
 affected_range: "<1.12.14||>=1.13.0-alpha.0 <1.15.4||>=1.16.0-alpha.0 <1.16.2"
 fixed_versions:
@@ -42,6 +42,8 @@ urls:
 - "https://github.com/cert-manager/cert-manager/pull/7402"
 - "https://github.com/cert-manager/cert-manager/pull/7403"
 - "https://github.com/cert-manager/cert-manager"
+- "https://go.dev/issue/50116"
+- "https://pkg.go.dev/vuln/GO-2024-3282"
 uuid: "ff126ec1-72fe-4508-83af-1087969115b1"
 cwe_ids:
 - "CWE-937"

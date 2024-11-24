@@ -10,7 +10,7 @@ description: "Name: ASA-2024-010: Mismatched bit-length in `sdk.Int` and `sdk.De
   Impact, and Possible Likelihood per [ACMv1.2](https://github.com/interchainio/security/blob/main/resources/CLASSIFICATION_MATRIX.md))\nAffected
   versions: `cosmossdk.io/math` package versions <= `math/v1.3.0`\nAffected users:
   Chain Builders + Maintainers, Validators"
-date: "2024-11-20"
+date: "2024-11-22"
 pubdate: "2024-11-20"
 affected_range: "<1.4.0"
 fixed_versions:
@@ -23,6 +23,7 @@ urls:
 - "https://github.com/cosmos/cosmos-sdk/security/advisories/GHSA-7225-m954-23v7"
 - "https://github.com/cosmos/cosmos-sdk/commit/c6522a72a45c34897f9fc85d438c0b74d52f8862"
 - "https://github.com/cosmos/cosmos-sdk"
+- "https://pkg.go.dev/vuln/GO-2024-3279"
 uuid: "9fcdf83e-6f7a-4483-b780-d557028d4e97"
 cwe_ids:
 - "CWE-190"

@@ -9,7 +9,7 @@ description: "**Component:** wasmd\n**Criticality:** Low ([ACMv1](https://github
   message types it was possible to add a large number of addresses which might lead
   to unexpected resource consumption in ValidateBasic.\n\nSee [CWA-2024-003](https://github.com/CosmWasm/advisories/blob/main/CWAs/CWA-2024-003.md)
   for more details."
-date: "2024-08-08"
+date: "2024-11-18"
 pubdate: "2024-08-08"
 affected_range: "<0.52"
 fixed_versions:

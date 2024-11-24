@@ -7,7 +7,7 @@ title: "DNSJava affected by KeyTrap - NSEC3 closest encloser proof can exhaust C
   resources"
 description: "Users using the `ValidatingResolver` for DNSSEC validation can run into
   CPU exhaustion with specially crafted DNSSEC-signed zones."
-date: "2024-09-12"
+date: "2024-11-18"
 pubdate: "2024-07-22"
 affected_range: "[,2.0.0]"
 fixed_versions: []

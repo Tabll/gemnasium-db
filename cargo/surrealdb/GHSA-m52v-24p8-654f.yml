@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-m52v-24p8-654f"
+identifiers:
+- "GHSA-m52v-24p8-654f"
+package_slug: "cargo/surrealdb"
+title: "SurrealDB has an Uncaught Exception Sorting Tables by Random Order"
+description: "Sorting table records using an `ORDER BY` clause with the `rand()` function
+  as sorting mechanism could cause a panic due to relying on a comparison function
+  that did not implement total order. This event resulted in a panic due to a recent
+  [change in Rust 1.81](https://blog.rust-lang.org/2024/09/05/Rust-1.81.0.html#new-sort-implementations)."
+date: "2024-11-22"
+pubdate: "2024-11-22"
+affected_range: "<2.1.0"
+fixed_versions:
+- "2.1.0"
+affected_versions: "All versions before 2.1.0"
+not_impacted: "All versions starting from 2.1.0"
+solution: "Upgrade to version 2.1.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-m52v-24p8-654f"
+- "https://github.com/surrealdb/surrealdb/security/advisories/GHSA-m52v-24p8-654f"
+- "https://github.com/surrealdb/surrealdb/issues/4969"
+- "https://github.com/surrealdb/surrealdb/pull/4805"
+- "https://github.com/surrealdb/surrealdb/pull/4906"
+- "https://github.com/surrealdb/surrealdb/pull/4989"
+- "https://github.com/surrealdb/surrealdb"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+uuid: "1d8076ea-fc4a-4e68-9026-846e06a8e677"
+cwe_ids:
+- "CWE-248"
+- "CWE-937"
+- "CWE-1035"

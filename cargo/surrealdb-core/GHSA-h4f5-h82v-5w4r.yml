@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-h4f5-h82v-5w4r"
+identifiers:
+- "GHSA-h4f5-h82v-5w4r"
+package_slug: "cargo/surrealdb-core"
+title: "SurrealDB has an Uncaught Exception in Function Generating Random Time"
+description: "The `rand::time()` function in SurrealQL generates a random time from
+  an optional range of two Unix timestamps. Due to the underlying use of `timestamp_opt`
+  from the `chrono` crate, this function could potentially return `None` in some instances,
+  leading to a panic when `unwrap` was called on its result in order to return a SurrealQL
+  `datetime` type to the caller of the function."
+date: "2024-11-22"
+pubdate: "2024-11-22"
+affected_range: "<2.1.0"
+fixed_versions:
+- "2.1.0"
+affected_versions: "All versions before 2.1.0"
+not_impacted: "All versions starting from 2.1.0"
+solution: "Upgrade to version 2.1.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-h4f5-h82v-5w4r"
+- "https://github.com/surrealdb/surrealdb/security/advisories/GHSA-h4f5-h82v-5w4r"
+- "https://github.com/surrealdb/surrealdb/pull/5126"
+- "https://github.com/surrealdb/surrealdb"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+uuid: "ae9f3dc2-2d35-4567-aa92-48192b8e1f1e"
+cwe_ids:
+- "CWE-248"
+- "CWE-937"
+- "CWE-1035"
