@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-rpcg-f9q6-2mq6"
+identifiers:
+- "GHSA-rpcg-f9q6-2mq6"
+package_slug: "pypi/zope"
+title: "Remote Code Execution via traversal in TAL expressions"
+description: "This advisory extends the previous advisory at https://github.com/zopefoundation/Zope/security/advisories/GHSA-5pr9-v234-jw36
+  with additional cases of TAL expression traversal vulnerabilities."
+date: "2024-11-19"
+pubdate: "2021-06-08"
+affected_range: ">=5.0.0,<5.2.1||<4.6.1"
+fixed_versions:
+- "5.2.1"
+- "4.6.1"
+affected_versions: "All versions before 4.6.1, all versions starting from 5.0.0 before
+  5.2.1"
+not_impacted: "All versions starting from 4.6.1 before 5.0.0, all versions starting
+  from 5.2.1"
+solution: "Upgrade to versions 4.6.1, 5.2.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-rpcg-f9q6-2mq6"
+- "https://github.com/zopefoundation/Zope/security/advisories/GHSA-5pr9-v234-jw36"
+- "https://github.com/zopefoundation/Zope/security/advisories/GHSA-rpcg-f9q6-2mq6"
+- "https://nvd.nist.gov/vuln/detail/CVE-2021-32674"
+- "https://github.com/zopefoundation/Zope/commit/1d897910139e2c0b11984fc9b78c1da1365bec21"
+- "https://github.com/pypa/advisory-database/tree/main/vulns/zope/PYSEC-2021-104.yaml"
+- "https://github.com/zopefoundation/Zope"
+- "https://pypi.org/project/Zope"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+uuid: "2bc361f3-9329-4350-ae40-16cc55e4bef3"
+cwe_ids:
+- "CWE-22"
+- "CWE-937"
+- "CWE-1035"

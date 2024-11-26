@@ -27,7 +27,7 @@ description: "The state sync protocol retrieves a snapshot of the application an
   will disagree with the views of the correct validators. If an increasing number
   of validators state sync using RPC endpoints with invalid states, the network eventually
   halts."
-date: "2024-09-16"
+date: "2024-11-18"
 pubdate: "2024-09-03"
 affected_range: ">=0.37.0 <0.37.11||>=0.38.0 <0.38.12"
 fixed_versions:

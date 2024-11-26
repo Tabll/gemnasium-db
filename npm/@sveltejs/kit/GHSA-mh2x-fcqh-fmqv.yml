@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-mh2x-fcqh-fmqv"
+identifiers:
+- "GHSA-mh2x-fcqh-fmqv"
+package_slug: "npm/@sveltejs/kit"
+title: "@sveltejs/kit has unescaped error message included on error page"
+description: "The static error.html template for errors contains placeholders that
+  are replaced without escaping the content first."
+date: "2024-11-25"
+pubdate: "2024-11-25"
+affected_range: "<2.8.3"
+fixed_versions:
+- "2.8.3"
+affected_versions: "All versions before 2.8.3"
+not_impacted: "All versions starting from 2.8.3"
+solution: "Upgrade to version 2.8.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-mh2x-fcqh-fmqv"
+- "https://github.com/sveltejs/kit/security/advisories/GHSA-mh2x-fcqh-fmqv"
+- "https://github.com/sveltejs/kit/pull/13050"
+- "https://github.com/sveltejs/kit"
+- "https://github.com/sveltejs/kit/releases/tag/%40sveltejs%2Fkit%402.8.3"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:N"
+uuid: "2a6f33b8-b832-4d8b-81b8-e27717518e27"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

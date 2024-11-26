@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-qg5g-gv98-5ffh"
+identifiers:
+- "GHSA-qg5g-gv98-5ffh"
+package_slug: "cargo/rustls"
+title: "rustls network-reachable panic in `Acceptor::accept`"
+description: "A bug introduced in rustls 0.23.13 leads to a panic if the received
+  TLS ClientHello is fragmented.  Only servers that use `rustls::server::Acceptor::accept()`
+  are affected.\n\nServers that use `tokio-rustls`'s `LazyConfigAcceptor` API are
+  affected.\n\nServers that use `tokio-rustls`'s `TlsAcceptor` API are not affected.\n\nServers
+  that use `rustls-ffi`'s `rustls_acceptor_accept` API are affected."
+date: "2024-11-25"
+pubdate: "2024-11-25"
+affected_range: ">=0.23.13 <0.23.18"
+fixed_versions:
+- "0.23.18"
+affected_versions: "All versions starting from 0.23.13 before 0.23.18"
+not_impacted: "All versions before 0.23.13, all versions starting from 0.23.18"
+solution: "Upgrade to version 0.23.18 or above."
+urls:
+- "https://github.com/advisories/GHSA-qg5g-gv98-5ffh"
+- "https://github.com/rustls/rustls/issues/2227"
+- "https://github.com/rustls/rustls"
+- "https://rustsec.org/advisories/RUSTSEC-2024-0399.html"
+uuid: "6234908a-6228-4af2-ab9f-d03ea1458c5c"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

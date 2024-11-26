@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-rjjv-87mx-6x3h"
+identifiers:
+- "GHSA-rjjv-87mx-6x3h"
+package_slug: "npm/@sveltejs/kit"
+title: "@sveltejs/kit vulnerable to on dev mode 404 page"
+description: "\"Unsanitized input from *the request URL* flows into `end`, where it
+  is used to render an HTML page returned to the user. This may result in a Cross-Site
+  Scripting attack (XSS).\""
+date: "2024-11-25"
+pubdate: "2024-11-25"
+affected_range: "<2.8.3"
+fixed_versions:
+- "2.8.3"
+affected_versions: "All versions before 2.8.3"
+not_impacted: "All versions starting from 2.8.3"
+solution: "Upgrade to version 2.8.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-rjjv-87mx-6x3h"
+- "https://github.com/sveltejs/kit/security/advisories/GHSA-rjjv-87mx-6x3h"
+- "https://github.com/sveltejs/kit/pull/13039"
+- "https://github.com/sveltejs/kit"
+- "https://github.com/sveltejs/kit/releases/tag/%40sveltejs%2Fkit%402.8.3"
+cvss_v3: "CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:C/C:N/I:N/A:N"
+uuid: "50f05073-d224-4d60-9d99-e8c290c0547b"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"
