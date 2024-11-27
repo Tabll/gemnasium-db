@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-r68h-jhhj-9jvm"
+identifiers:
+- "GHSA-r68h-jhhj-9jvm"
+package_slug: "maven/org.owasp.esapi/esapi"
+title: "Validator.isValidSafeHTML is being deprecated and will be deleted from org.owasp.esapi:esapi
+  in 1 year"
+description: "The `Validator.isValidSafeHTML` method can result in false negatives
+  where it reports some input as safe (i.e., returns true), but really isn't, and
+  using that same input as-is can in certain circumstances result in XSS vulnerabilities.
+  Because this method cannot be fixed, it is being deprecated and will be removed
+  in one years time from when this advisory is published. Full details may be found
+  in [ESAPI Security Bulletin #12](https://github.com/ESAPI/esapi-java-legacy/blob/develop/documentation/ESAPI-security-bulletin12.pdf).\n\nNote
+  that all versions of ESAPI, that have this method (which dates back to at least
+  the ESAPI 1.3 release more than 15 years ago) have this issue and it will continue
+  to exist until we remove these two methods in a future ESAPI release."
+date: "2024-11-26"
+pubdate: "2023-11-27"
+affected_range: "[,2.6.0.0)"
+fixed_versions:
+- "2.6.0.0"
+affected_versions: "All versions before 2.6.0.0"
+not_impacted: "All versions starting from 2.6.0.0"
+solution: "Upgrade to version 2.6.0.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-r68h-jhhj-9jvm"
+- "https://github.com/ESAPI/esapi-java-legacy/security/advisories/GHSA-r68h-jhhj-9jvm"
+- "https://github.com/ESAPI/esapi-java-legacy"
+uuid: "9441615f-8026-40b5-a358-1273c1eb539d"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"
