@@ -8,7 +8,7 @@ description: "The vulnerability depends on user interaction by opening a malicio
   notebook with Markdown cells, or Markdown file using JupyterLab preview feature.\n\nA
   malicious user can access any data accessible from JupyterLite and perform arbitrary
   actions in JupyterLite environment."
-date: "2024-09-06"
+date: "2024-11-18"
 pubdate: "2024-09-06"
 affected_range: "<0.4.1"
 fixed_versions:

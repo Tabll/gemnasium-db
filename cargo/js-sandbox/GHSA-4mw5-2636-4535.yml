@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-4mw5-2636-4535"
+identifiers:
+- "GHSA-4mw5-2636-4535"
+package_slug: "cargo/js-sandbox"
+title: "op_panic in the base runtime can force a panic in the runtime's containing
+  thread"
+description: "Affected versions use deno_core releases that expose `Deno.core.ops.op_panic`
+  to the JS runtime in the base core\n\nThis function when called triggers a manual
+  panic in the thread containing the runtime, breaking sandboxing\n\nIt can be fixed
+  by stubbing out the exposed op:\n```javascript\nDeno.core.ops.op_panic = (msg) =>
+  { throw new Error(msg) };\n```"
+date: "2024-12-04"
+pubdate: "2024-12-04"
+affected_range: "<=0.1.6"
+fixed_versions: []
+affected_versions: "All versions up to 0.1.6"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-4mw5-2636-4535"
+- "https://github.com/Bromeon/js-sandbox/issues/31"
+- "https://github.com/Bromeon/js-sandbox"
+- "https://rustsec.org/advisories/RUSTSEC-2024-0403.html"
+uuid: "2f7d805b-271a-449b-8576-639658f14dde"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

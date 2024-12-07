@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-wwq9-3cpr-mm53"
+identifiers:
+- "GHSA-wwq9-3cpr-mm53"
+package_slug: "cargo/hashbrown"
+title: "Borsh serialization of HashMap is non-canonical"
+description: "The borsh serialization of the HashMap did not follow the borsh specification.
+  It potentially produced non-canonical encodings dependent on insertion order. It
+  also did not perform canonicty checks on decoding.\n\nThis can result in consensus
+  splits and cause equivalent objects to be considered distinct.\n\nThis was patched
+  in 0.15.1."
+date: "2024-12-04"
+pubdate: "2024-12-04"
+affected_range: ">=0.15.0 <0.15.1"
+fixed_versions:
+- "0.15.1"
+affected_versions: "All versions starting from 0.15.0 before 0.15.1"
+not_impacted: "All versions before 0.15.0, all versions starting from 0.15.1"
+solution: "Upgrade to version 0.15.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-wwq9-3cpr-mm53"
+- "https://github.com/rust-lang/hashbrown/issues/576"
+- "https://github.com/kayabaNerve/hashbrown-borsh-poc"
+- "https://github.com/rust-lang/hashbrown"
+- "https://rustsec.org/advisories/RUSTSEC-2024-0402.html"
+uuid: "79c3433f-b745-4b1a-bf39-b2f6a620c10d"
+cwe_ids:
+- "CWE-502"
+- "CWE-937"
+- "CWE-1035"

@@ -7,7 +7,7 @@ title: "zlib-rs stack overflow during decompression with malicious input"
 description: "A denial of service vulnerability was found in zlib-rs, triggered by
   specially constructed input. This input causes a stack overflow, resulting in the
   process using zlib-rs to crash."
-date: "2024-11-14"
+date: "2024-12-04"
 pubdate: "2024-11-14"
 affected_range: "<0.4.0"
 fixed_versions:
@@ -19,6 +19,7 @@ urls:
 - "https://github.com/advisories/GHSA-j3px-q95c-9683"
 - "https://github.com/trifectatechfoundation/zlib-rs/security/advisories/GHSA-j3px-q95c-9683"
 - "https://github.com/trifectatechfoundation/zlib-rs"
+- "https://rustsec.org/advisories/RUSTSEC-2024-0401.html"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
 uuid: "ade29460-e608-44ba-b006-d78574f4c16d"
 cwe_ids:

@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-2rxc-gjrp-vjhx"
+identifiers:
+- "GHSA-2rxc-gjrp-vjhx"
+package_slug: "cargo/anstream"
+title: "Unsoundness in anstream"
+description: "When given a valid UTF8 string \"ö\\x1b😀\", the function in crates/anstream/src/adapter/strip.rs
+  will be confused. The UTF8 bytes are \\xc3\\xb6 then \\x1b then \\xf0\\x9f\\x98\\x80.\n\nWhen
+  looping over \"non-printable bytes\" \\x1b\\xf0 will be considered as some non-printable
+  sequence.\n\nThis will produce a broken str from the incorrectly segmented bytes
+  via str::from_utf8_unchecked, and that should never happen.\n\nFull credit goes
+  to @Ralith who reviewed this code and asked @burakemir to follow up."
+date: "2024-12-04"
+pubdate: "2024-12-04"
+affected_range: "<0.6.8"
+fixed_versions:
+- "0.6.8"
+affected_versions: "All versions before 0.6.8"
+not_impacted: "All versions starting from 0.6.8"
+solution: "Upgrade to version 0.6.8 or above."
+urls:
+- "https://github.com/advisories/GHSA-2rxc-gjrp-vjhx"
+- "https://github.com/rust-cli/anstyle/issues/156"
+- "https://github.com/rust-cli/anstyle"
+- "https://rustsec.org/advisories/RUSTSEC-2024-0404.html"
+uuid: "5fe614cd-fcbb-4f37-a32d-7efcf1890434"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"
