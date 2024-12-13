@@ -1,0 +1,37 @@
+---
+identifier: "GHSA-7prj-hgx4-2xc3"
+identifiers:
+- "GHSA-7prj-hgx4-2xc3"
+package_slug: "go/github.com/ryanbekhen/nanoproxy"
+title: "Potential Vulnerabilities Due to Outdated golang.org/x/crypto Dependency in
+  NanoProxy"
+description: "A security issue was identified in the NanoProxy project related to
+  the `golang.org/x/crypto` dependency. The project was using an outdated version
+  of this dependency, which potentially exposed the system to security vulnerabilities
+  that have been addressed in subsequent updates.\n\nImpact:\nThe specific vulnerabilities
+  in the outdated version of `golang.org/x/crypto` could include authorization bypasses,
+  data breaches, or other security risks. These vulnerabilities can be exploited by
+  attackers to compromise the integrity, confidentiality, or availability of the system.\n\nResolution:\nThe
+  issue has been fixed in NanoProxy by upgrading the `golang.org/x/crypto` dependency
+  to version 0.31.0. Users are strongly encouraged to update their instances of NanoProxy
+  to include this fix and ensure they are using the latest secure version of all dependencies.\n\nFixed
+  Version:\n* `golang.org/x/crypto` upgraded to version 0.31.0."
+date: "2024-12-12"
+pubdate: "2024-12-12"
+affected_range: "<0.15.0"
+fixed_versions:
+- "0.15.0"
+affected_versions: "All versions before 0.15.0"
+not_impacted: "All versions starting from 0.15.0"
+solution: "Upgrade to version 0.15.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-7prj-hgx4-2xc3"
+- "https://github.com/ryanbekhen/nanoproxy/security/advisories/GHSA-7prj-hgx4-2xc3"
+- "https://nvd.nist.gov/vuln/detail/CVE-2024-45337"
+- "https://github.com/ryanbekhen/nanoproxy"
+uuid: "279e2910-257d-4456-a8d0-f532ae9493da"
+cwe_ids:
+- "CWE-1395"
+- "CWE-285"
+- "CWE-937"
+- "CWE-1035"
