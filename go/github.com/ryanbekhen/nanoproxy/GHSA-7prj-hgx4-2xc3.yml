@@ -16,7 +16,7 @@ description: "A security issue was identified in the NanoProxy project related t
   to version 0.31.0. Users are strongly encouraged to update their instances of NanoProxy
   to include this fix and ensure they are using the latest secure version of all dependencies.\n\nFixed
   Version:\n* `golang.org/x/crypto` upgraded to version 0.31.0."
-date: "2024-12-12"
+date: "2024-12-13"
 pubdate: "2024-12-12"
 affected_range: "<0.15.0"
 fixed_versions:
@@ -29,6 +29,7 @@ urls:
 - "https://github.com/ryanbekhen/nanoproxy/security/advisories/GHSA-7prj-hgx4-2xc3"
 - "https://nvd.nist.gov/vuln/detail/CVE-2024-45337"
 - "https://github.com/ryanbekhen/nanoproxy"
+- "https://pkg.go.dev/vuln/GO-2024-3330"
 uuid: "279e2910-257d-4456-a8d0-f532ae9493da"
 cwe_ids:
 - "CWE-1395"
