@@ -1,0 +1,26 @@
+---
+identifier: "GHSA-hxr6-2p24-hf98"
+identifiers:
+- "GHSA-hxr6-2p24-hf98"
+package_slug: "go/github.com/traefik/traefik/v2"
+title: "Traefik affected by CVE-2024-53259"
+description: "There is a potential vulnerability in Traefik managing HTTP/3 connections.\n\nMore
+  details in the [CVE-2024-53259](https://nvd.nist.gov/vuln/detail/CVE-2024-53259)."
+date: "2024-12-17"
+pubdate: "2024-12-17"
+affected_range: "<2.11.15"
+fixed_versions:
+- "2.11.15"
+affected_versions: "All versions before 2.11.15"
+not_impacted: "All versions starting from 2.11.15"
+solution: "Upgrade to version 2.11.15 or above."
+urls:
+- "https://github.com/advisories/GHSA-hxr6-2p24-hf98"
+- "https://github.com/traefik/traefik/security/advisories/GHSA-hxr6-2p24-hf98"
+- "https://github.com/traefik/traefik"
+- "https://github.com/traefik/traefik/releases/tag/v2.11.15"
+- "https://github.com/traefik/traefik/releases/tag/v3.2.2"
+uuid: "413c218c-f098-4db5-9b4c-d75299896599"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"
