@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-hvm9-wc8j-mgrc"
+identifiers:
+- "GHSA-hvm9-wc8j-mgrc"
+package_slug: "nuget/TShock"
+title: "TShock Security Escalation Exploit"
+description: "An issue with the way OTAPI manages client connections results in stale
+  UUIDs remaining on `RemoteClient` instances after a player disconnects.\n\nBecause
+  of this, if the following conditions are met a player may assume the login state
+  of a previously connected player:\n1. The server has UUID login enabled\n2. An authenticated
+  player disconnects\n3. A subsequent player connects with a modified client that
+  does not send the `ClientUUID#68` packet during connection\n4. The server assigns
+  the same `RemoteClient` object that belonged to the originally authenticated player
+  to the newly connected player"
+date: "2024-12-18"
+pubdate: "2024-12-18"
+affected_range: "[4.3.21,5.2.1)"
+fixed_versions:
+- "5.2.1"
+affected_versions: "All versions starting from 4.3.21 before 5.2.1"
+not_impacted: "All versions before 4.3.21, all versions starting from 5.2.1"
+solution: "Upgrade to version 5.2.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-hvm9-wc8j-mgrc"
+- "https://github.com/Pryaxis/TShock/security/advisories/GHSA-hvm9-wc8j-mgrc"
+- "https://github.com/Pryaxis/TShock/commit/5075997264b48e27960e3446a948ecb0ea0f5a03"
+- "https://github.com/Pryaxis/TShock"
+uuid: "bf8d671d-4e3f-458c-a770-8c3d54186f61"
+cwe_ids:
+- "CWE-305"
+- "CWE-613"
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

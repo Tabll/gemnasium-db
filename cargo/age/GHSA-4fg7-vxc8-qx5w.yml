@@ -1,0 +1,37 @@
+---
+identifier: "GHSA-4fg7-vxc8-qx5w"
+identifiers:
+- "GHSA-4fg7-vxc8-qx5w"
+package_slug: "cargo/age"
+title: "rage vulnerable to malicious plugin names, recipients, or identities causing
+  arbitrary binary execution"
+description: "A plugin name containing a path separator may allow an attacker to execute
+  an arbitrary binary."
+date: "2024-12-18"
+pubdate: "2024-12-18"
+affected_range: ">=0.6.0 <0.6.1||=0.6.0||>=0.7.0 <0.7.2||>=0.8.0 <0.8.2||>=0.9.0 <0.9.3||>=0.10.0
+  <0.10.1||=0.10.0||>=0.11.0 <0.11.1||=0.11.0"
+fixed_versions:
+- "0.6.1"
+- "0.7.2"
+- "0.8.2"
+- "0.9.3"
+- "0.10.1"
+- "0.11.1"
+affected_versions: "All versions starting from 0.6.0 before 0.6.1, version 0.6.0,
+  all versions starting from 0.7.0 before 0.7.2, all versions starting from 0.8.0
+  before 0.8.2, all versions starting from 0.9.0 before 0.9.3, all versions starting
+  from 0.10.0 before 0.10.1, version 0.10.0, all versions starting from 0.11.0 before
+  0.11.1, version 0.11.0"
+not_impacted: ""
+solution: "Upgrade to versions 0.10.1, 0.11.1, 0.6.1, 0.7.2, 0.8.2, 0.9.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-4fg7-vxc8-qx5w"
+- "https://github.com/str4d/rage/security/advisories/GHSA-4fg7-vxc8-qx5w"
+- "https://github.com/str4d/rage/commit/703152ecfa86f27952a35b57dd525ed39396a227"
+- "https://github.com/str4d/rage"
+uuid: "7ca2f730-8db6-4ad0-9c6c-a7c85ae95c91"
+cwe_ids:
+- "CWE-25"
+- "CWE-937"
+- "CWE-1035"

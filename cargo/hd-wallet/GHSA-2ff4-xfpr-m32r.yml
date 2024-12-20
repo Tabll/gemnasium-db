@@ -1,0 +1,44 @@
+---
+identifier: "GHSA-2ff4-xfpr-m32r"
+identifiers:
+- "GHSA-2ff4-xfpr-m32r"
+package_slug: "cargo/hd-wallet"
+title: "`Slip10Like` derivation method instantiated with certain curves may allow
+  attacker to find derivation path which results into very long derivation (possible
+  DoS)"
+description: "<!-- _What kind of vulnerability is it? Who is impacted?_ -->\n\n**Impacted
+  are the only ones who use [`hd_wallet::Slip10Like`](https://docs.rs/hd-wallet/0.5.1/hd_wallet/struct.Slip10Like.html)
+  or [`slip_10`](https://docs.rs/slip-10/latest/slip_10/) derivation method instantiated
+  with curves other than secp256k1 and secp256r1.**\n\n`hd_wallet` crate used to provide
+  `Slip10Like` derivation method, which is also provided in `slip-10` crate as a default
+  derivation method. It's based on [slip10](https://github.com/satoshilabs/slips/blob/master/slip-0010.md)
+  method that searches for a valid child key in an infinite loop until it's found.\n\nTheoretically,
+  this could be exploited by an attacker by finding a derivation path that would force
+  someone to execute a lot of iterations of this loop to find a valid child key. This
+  attack, however, requires the probability of getting an invalid scalar from random
+  32 bytes to be high. Slip10 is protected from this attack as it's only defined on
+  secp256k1 and secp256r1 curves, for which such probability is very low:\n\n- For
+  secp256k1, probability is $< 2^{-127}$. This means that a loop with 2 or more iterations
+  is vanishingly impossible.\n- For secp256r1, probability is $< 2^{-32}$. This means
+  that a loop with 5 or more iterations is vanishingly impossible.\n\nWhile standard
+  curves are safe to use with slip10, we used to allow slip10-like derivation which
+  can be instantiated with any curve. For instance, one could instantiate it with
+  ed25519 or stark curves, for which probability of getting invalid scalar from random
+  32 bytes is >90%, so theoretically, attacker could try to DoS such construction."
+date: "2024-12-18"
+pubdate: "2024-12-18"
+affected_range: "<0.6.0"
+fixed_versions:
+- "0.6.0"
+affected_versions: "All versions before 0.6.0"
+not_impacted: "All versions starting from 0.6.0"
+solution: "Upgrade to version 0.6.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-2ff4-xfpr-m32r"
+- "https://github.com/LFDT-Lockness/hd-wallet/security/advisories/GHSA-2ff4-xfpr-m32r"
+- "https://github.com/LFDT-Lockness/hd-wallet/commit/a7e37704600ee7c737dbb02db08814dd2d15389d"
+- "https://github.com/LFDT-Lockness/hd-wallet"
+uuid: "10546b39-828a-4de0-9718-6fb3ac69aff9"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

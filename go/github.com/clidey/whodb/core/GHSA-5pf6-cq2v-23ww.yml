@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-5pf6-cq2v-23ww"
+identifiers:
+- "GHSA-5pf6-cq2v-23ww"
+package_slug: "go/github.com/clidey/whodb/core"
+title: "WhoDB Allows Unbounded Memory Consumption in Authentication Middleware Can
+  Lead to Denial of Service"
+description: "A Denial of Service (DoS) vulnerability in the authentication middleware
+  allows any client to cause memory exhaustion by sending large request bodies. The
+  server reads the entire request body into memory without size limits, creating multiple
+  copies during processing, which can lead to Out of Memory conditions.\n\nAffects
+  all versions up to the latest one (v0.43.0)."
+date: "2024-12-19"
+pubdate: "2024-12-19"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-5pf6-cq2v-23ww"
+- "https://github.com/clidey/whodb/security/advisories/GHSA-5pf6-cq2v-23ww"
+- "https://github.com/clidey/whodb/commit/e8b608d35422e1a2bfffe8ed26f0211ea80cb439"
+- "https://github.com/clidey/whodb"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "da55512a-257f-4d19-b6fd-81386ace0675"
+cwe_ids:
+- "CWE-400"
+- "CWE-770"
+- "CWE-937"
+- "CWE-1035"

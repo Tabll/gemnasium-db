@@ -9,18 +9,19 @@ description: "The `OVERWRITE` clause of the `DEFINE TABLE` statement would fail 
   include the `PERMISSIONS` clause, this failure would result in permissions not being
   overwritten as a result, which may potentially lead users to believe they have changed
   the table permissions when they have not."
-date: "2024-12-16"
+date: "2024-12-18"
 pubdate: "2024-12-16"
-affected_range: ">=2.0.0 <2.1.3"
+affected_range: ">=2.0.0 <2.1.4"
 fixed_versions:
-- "2.1.3"
-affected_versions: "All versions starting from 2.0.0 before 2.1.3"
-not_impacted: "All versions before 2.0.0, all versions starting from 2.1.3"
-solution: "Upgrade to version 2.1.3 or above."
+- "2.1.4"
+affected_versions: "All versions starting from 2.0.0 before 2.1.4"
+not_impacted: "All versions before 2.0.0, all versions starting from 2.1.4"
+solution: "Upgrade to version 2.1.4 or above."
 urls:
 - "https://github.com/advisories/GHSA-27vq-hv74-7cqp"
 - "https://github.com/surrealdb/surrealdb/security/advisories/GHSA-27vq-hv74-7cqp"
 - "https://github.com/surrealdb/surrealdb/pull/5260"
+- "https://github.com/surrealdb/surrealdb/commit/2f9a58f830c24f107b4783da1f0704a502bc7734"
 - "https://github.com/surrealdb/surrealdb"
 uuid: "ab3c9fbe-bd24-4a5f-8352-53164a48f94a"
 cwe_ids:
