@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-2qgm-m29m-cj2h"
+identifiers:
+- "GHSA-2qgm-m29m-cj2h"
+package_slug: "npm/uptime-kuma"
+title: "uptime-kuma vulnerable to Local File Inclusion (LFI) via Improper URL Handling
+  in `Real-Browser` monitor"
+description: "An **Improper URL Handling Vulnerability** allows an attacker to access
+  sensitive local files on the server by exploiting the `file:///` protocol. This
+  vulnerability is triggered via the **\"real-browser\"** request type, which takes
+  a screenshot of the URL provided by the attacker. By supplying local file paths,
+  such as `file:///etc/passwd`, an attacker can read sensitive data from the server."
+date: "2024-12-20"
+pubdate: "2024-12-20"
+affected_range: ">=1.23.0 <1.23.16||>=2.0.0-beta.0 <2.0.0-beta.1||=2.0.0-beta.0"
+fixed_versions:
+- "1.23.16"
+- "2.0.0-beta.1"
+affected_versions: "All versions starting from 1.23.0 before 1.23.16, all versions
+  starting from 2.0.0-beta.0 before 2.0.0-beta.1, version 2.0.0-beta.0"
+not_impacted: ""
+solution: "Upgrade to versions 1.23.16, 2.0.0-beta.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-2qgm-m29m-cj2h"
+- "https://github.com/louislam/uptime-kuma/security/advisories/GHSA-2qgm-m29m-cj2h"
+- "https://github.com/louislam/uptime-kuma/commit/6cfae01a0d3727c517afe512fc8fec1d99acf875"
+- "https://github.com/louislam/uptime-kuma"
+- "https://github.com/louislam/uptime-kuma/releases/tag/1.23.16"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:N/A:N"
+uuid: "718cacca-3bc1-4151-b166-dfc0bf33058d"
+cwe_ids:
+- "CWE-22"
+- "CWE-937"
+- "CWE-1035"

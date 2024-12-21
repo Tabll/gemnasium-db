@@ -18,7 +18,7 @@ description: "A plugin name containing a path separator may allow an attacker to
   protocol.\n\nAn equivalent issue was fixed by the [rage](https://github.com/str4d/rage)
   project, see advisory [GHSA-4fg7-vxc8-qx5w](https://github.com/str4d/rage/security/advisories/GHSA-4fg7-vxc8-qx5w).\n\nThanks
   to ⬡-49016 for reporting this."
-date: "2024-12-18"
+date: "2024-12-20"
 pubdate: "2024-12-18"
 affected_range: "<1.2.1"
 fixed_versions:
@@ -29,6 +29,7 @@ solution: "Upgrade to version 1.2.1 or above."
 urls:
 - "https://github.com/advisories/GHSA-32gq-x56h-299c"
 - "https://github.com/FiloSottile/age/security/advisories/GHSA-32gq-x56h-299c"
+- "https://github.com/str4d/rage/security/advisories/GHSA-4fg7-vxc8-qx5w"
 - "https://github.com/FiloSottile/age/commit/482cf6fc9babd3ab06f6606762aac10447222201"
 - "https://github.com/FiloSottile/age"
 uuid: "985d288a-6f9c-48bb-a732-11b6d5da85af"

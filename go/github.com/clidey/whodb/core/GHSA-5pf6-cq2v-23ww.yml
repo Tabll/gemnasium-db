@@ -10,7 +10,7 @@ description: "A Denial of Service (DoS) vulnerability in the authentication midd
   server reads the entire request body into memory without size limits, creating multiple
   copies during processing, which can lead to Out of Memory conditions.\n\nAffects
   all versions up to the latest one (v0.43.0)."
-date: "2024-12-19"
+date: "2024-12-20"
 pubdate: "2024-12-19"
 affected_range: ">=0"
 fixed_versions: []
