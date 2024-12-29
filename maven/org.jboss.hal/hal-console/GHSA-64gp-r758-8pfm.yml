@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-64gp-r758-8pfm"
+identifiers:
+- "GHSA-64gp-r758-8pfm"
+package_slug: "maven/org.jboss.hal/hal-console"
+title: "Cross Site Scripting (XSS) vulnerability while uploading content to a new
+  deployment"
+description: "A vulnerability was found in the WildFly management console. A user
+  may perform cross-site scripting in the deployment system. An attacker (or insider)
+  may execute a malicious payload which could trigger an undesired behavior against
+  the server."
+date: "2024-12-23"
+pubdate: "2024-12-23"
+affected_range: "[,3.7.7.Final)"
+fixed_versions:
+- "3.7.7.Final"
+affected_versions: "All versions before 3.7.7.Final"
+not_impacted: "All versions starting from 3.7.7.Final"
+solution: "Upgrade to version 3.7.7.Final or above."
+urls:
+- "https://github.com/advisories/GHSA-64gp-r758-8pfm"
+- "https://github.com/hal/console/security/advisories/GHSA-64gp-r758-8pfm"
+- "https://github.com/hal/console"
+- "https://github.com/hal/console/releases/tag/v3.7.7"
+- "https://issues.redhat.com/browse/WFLY-19969"
+uuid: "10af69af-d387-4e0f-b4d6-cd56d789916f"
+cwe_ids:
+- "CWE-1395"
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

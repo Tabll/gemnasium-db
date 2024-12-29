@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-f7qj-v3vp-4856"
+identifiers:
+- "GHSA-f7qj-v3vp-4856"
+package_slug: "cargo/libafl"
+title: "libafl has unsound usages of `core::slice::from_raw_parts_mut` "
+description: "The library breaks the safety assumptions when using unsafe API `slice::from_raw_parts_mut`.
+  The pointer passed to `from_raw_parts_mut` is misaligned by casting `u8` to `u16`
+  raw pointer directly, which is unsound. The bug is patched by using `align_offset`,
+  which could make sure the memory address is aligned to 2 bytes for `u16`."
+date: "2024-12-23"
+pubdate: "2024-12-23"
+affected_range: "<0.11.2"
+fixed_versions:
+- "0.11.2"
+affected_versions: "All versions before 0.11.2"
+not_impacted: "All versions starting from 0.11.2"
+solution: "Upgrade to version 0.11.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-f7qj-v3vp-4856"
+- "https://github.com/AFLplusplus/LibAFL/issues/1526"
+- "https://github.com/AFLplusplus/LibAFL/pull/1530"
+- "https://github.com/AFLplusplus/LibAFL/pull/1530/commits/5a60cb31ef587d71d09d534bba39bd3973c4b35d"
+- "https://github.com/AFLplusplus/LibAFL/commit/f70a16a09a8096d3c50159dd8a912a75c2af157c"
+- "https://github.com/AFLplusplus/LibAFL"
+- "https://rustsec.org/advisories/RUSTSEC-2024-0424.html"
+uuid: "3a8d6bd6-263c-4a49-8bc1-6a8b4e9ca076"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

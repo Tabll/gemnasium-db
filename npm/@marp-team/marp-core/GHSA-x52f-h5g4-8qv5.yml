@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-x52f-h5g4-8qv5"
+identifiers:
+- "GHSA-x52f-h5g4-8qv5"
+package_slug: "npm/@marp-team/marp-core"
+title: "Marp Core allows XSS by improper neutralization of HTML sanitization"
+description: "Marp Core ([`@marp-team/marp-core`](https://www.npmjs.com/package/@marp-team/marp-core))
+  from v3.0.2 to v3.9.0 and v4.0.0, are vulnerable to cross-site scripting (XSS)  due
+  to improper neutralization of HTML sanitization."
+date: "2024-12-26"
+pubdate: "2024-12-26"
+affected_range: ">=3.0.2 <3.9.1||>=4.0.0 <4.0.1||=4.0.0"
+fixed_versions:
+- "3.9.1"
+- "4.0.1"
+affected_versions: "All versions starting from 3.0.2 before 3.9.1, all versions starting
+  from 4.0.0 before 4.0.1, version 4.0.0"
+not_impacted: ""
+solution: "Upgrade to versions 3.9.1, 4.0.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-x52f-h5g4-8qv5"
+- "https://github.com/marp-team/marp-core/security/advisories/GHSA-x52f-h5g4-8qv5"
+- "https://github.com/marp-team/marp-core/pull/282"
+- "https://github.com/marp-team/marp-core/commit/61a1def244d1b6faa8e2c0be97ec0b68cab3ab49"
+- "https://github.com/marp-team/marp-core"
+- "https://github.com/marp-team/marp-core/releases/tag/v3.9.1"
+- "https://github.com/marp-team/marp-core/releases/tag/v4.0.1"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:L"
+uuid: "31f6b158-d522-4e78-bf59-47228d8bbd02"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

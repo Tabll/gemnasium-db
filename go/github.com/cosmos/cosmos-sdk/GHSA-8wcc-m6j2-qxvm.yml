@@ -13,7 +13,7 @@ description: "ASA-2024-0012 When decoding a maliciously formed packet with a dee
   internal messages emitted by wasm contracts or a malicious validator block. This may 
   result in a node crashing due to resource exhaustion. This was addressed by adding 
   additional validation to prevent this condition."
-date: "2024-12-16"
+date: "2024-12-23"
 pubdate: "2024-12-16"
 affected_range: ">=0.50.0-alpha.0 <0.50.11||<0.47.15"
 fixed_versions:

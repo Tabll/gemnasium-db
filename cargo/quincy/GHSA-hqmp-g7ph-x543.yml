@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-hqmp-g7ph-x543"
+identifiers:
+- "GHSA-hqmp-g7ph-x543"
+package_slug: "cargo/quincy"
+title: "TunnelVision - decloaking VPNs using DHCP"
+description: "A new decloaking technique for nearly all VPN implementations has been
+  found, which allows attackers to inject entries into the routing tables of unsuspecting
+  victims using DHCP option 121. This allows attackers to redirect traffic, which
+  is supposed to be sent encrypted over the VPN, through the physical interface handling
+  DHCP for the network the victim's computer is connected to, effectively bypassing
+  the VPN connection."
+date: "2024-12-27"
+pubdate: "2024-12-27"
+affected_range: "<=0.13.0"
+fixed_versions: []
+affected_versions: "All versions up to 0.13.0"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-hqmp-g7ph-x543"
+- "https://github.com/M0dEx/quincy/security/advisories/GHSA-hqmp-g7ph-x543"
+- "https://github.com/M0dEx/quincy"
+- "https://www.leviathansecurity.com/blog/tunnelvision"
+cvss_v3: "CVSS:3.1/AV:A/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N"
+uuid: "87308e83-c8b9-49a3-8587-306a575e7565"
+cwe_ids:
+- "CWE-200"
+- "CWE-937"
+- "CWE-1035"
