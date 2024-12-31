@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-gv7f-5qqh-vxfx"
+identifiers:
+- "GHSA-gv7f-5qqh-vxfx"
+package_slug: "cargo/xous"
+title: "xous has unsound usages of `core::slice::from_raw_parts` "
+description: "We consider `as_slice` and `as_slice_mut` unsound because: the pointer
+  with any bit patterns could be cast to the slice of arbitrary types. The pointer
+  could be created by unsafe new and deprecated `from_parts`. We consider that `from_parts`
+  should be removed in latest version because it will help trigger unsoundness in
+  `as_slice`. With new declared as unsafe, `as_slice` should also declared as unsafe.\n\nThis
+  was patched in by marking two functions as `unsafe`."
+date: "2024-12-30"
+pubdate: "2024-12-30"
+affected_range: "<0.9.51"
+fixed_versions:
+- "0.9.51"
+affected_versions: "All versions before 0.9.51"
+not_impacted: "All versions starting from 0.9.51"
+solution: "Upgrade to version 0.9.51 or above."
+urls:
+- "https://github.com/advisories/GHSA-gv7f-5qqh-vxfx"
+- "https://github.com/betrusted-io/xous-core/issues/410"
+- "https://github.com/betrusted-io/xous-core/pull/411"
+- "https://github.com/betrusted-io/xous-core"
+- "https://rustsec.org/advisories/RUSTSEC-2024-0431.html"
+uuid: "40801002-c737-4bfb-811c-8f7f43c9876d"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"
