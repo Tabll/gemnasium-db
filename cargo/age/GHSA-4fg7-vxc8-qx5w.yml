@@ -7,7 +7,7 @@ title: "rage vulnerable to malicious plugin names, recipients, or identities cau
   arbitrary binary execution"
 description: "A plugin name containing a path separator may allow an attacker to execute
   an arbitrary binary."
-date: "2024-12-18"
+date: "2025-01-03"
 pubdate: "2024-12-18"
 affected_range: ">=0.6.0 <0.6.1||=0.6.0||>=0.7.0 <0.7.2||>=0.8.0 <0.8.2||>=0.9.0 <0.9.3||>=0.10.0
   <0.10.1||=0.10.0||>=0.11.0 <0.11.1||=0.11.0"
@@ -30,6 +30,8 @@ urls:
 - "https://github.com/str4d/rage/security/advisories/GHSA-4fg7-vxc8-qx5w"
 - "https://github.com/str4d/rage/commit/703152ecfa86f27952a35b57dd525ed39396a227"
 - "https://github.com/str4d/rage"
+- "https://rustsec.org/advisories/RUSTSEC-2024-0432.html"
+- "https://rustsec.org/advisories/RUSTSEC-2024-0433.html"
 uuid: "7ca2f730-8db6-4ad0-9c6c-a7c85ae95c91"
 cwe_ids:
 - "CWE-25"
