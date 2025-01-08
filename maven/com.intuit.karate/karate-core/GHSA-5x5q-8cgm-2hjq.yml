@@ -5,7 +5,7 @@ identifiers:
 package_slug: "maven/com.intuit.karate/karate-core"
 title: "Karate has vulnerable dependency on json-smart package (CVE-2023-1370)"
 description: "The CVE\n![image](https://user-images.githubusercontent.com/2663049/229081854-1155c041-56fa-48ca-a7ff-f2f085b845fd.png)"
-date: "2024-10-28"
+date: "2025-01-07"
 pubdate: "2023-03-31"
 affected_range: "[1.3.1,1.4.0),[1.3.1,1.3.1]"
 fixed_versions:
