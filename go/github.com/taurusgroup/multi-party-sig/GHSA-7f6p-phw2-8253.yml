@@ -6,7 +6,7 @@ package_slug: "go/github.com/taurusgroup/multi-party-sig"
 title: "Taurus multi-party-sig has OT-based ECDSA protocol implementation flaws"
 description: "Coinbase researchers reported 2 security issues in our implementation
   of the oblivious transfer (OT) based protocol [DKLS](https://eprint.iacr.org/2018/499.pdf):"
-date: "2024-11-27"
+date: "2025-01-08"
 pubdate: "2024-11-25"
 affected_range: "<=0.6.0-alpha-2021-09-21"
 fixed_versions: []
