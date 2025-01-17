@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-mm6v-68qp-f9fw"
+identifiers:
+- "GHSA-mm6v-68qp-f9fw"
+package_slug: "packagist/islandora/crayfish"
+title: "Crayfish allows Remote Code Execution via Homarus Authorization header"
+description: "_What kind of vulnerability is it? Who is impacted?_\n\nRemote code
+  execution may be possible in web-accessible installations of Homarus in certain
+  configurations."
+date: "2025-01-15"
+pubdate: "2025-01-15"
+affected_range: "<4.1.0"
+fixed_versions:
+- "4.1.0"
+affected_versions: "All versions before 4.1.0"
+not_impacted: "All versions starting from 4.1.0"
+solution: "Upgrade to version 4.1.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-mm6v-68qp-f9fw"
+- "https://github.com/Islandora/Crayfish/security/advisories/GHSA-mm6v-68qp-f9fw"
+- "https://github.com/Islandora/Crayfish/commit/64cb4cec688928798cc40e6f0a0e863d7f69fd89"
+- "https://github.com/Islandora/Crayfish"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+uuid: "c108b960-c04f-4d7f-98a6-92bcc6dc16c6"
+cwe_ids:
+- "CWE-150"
+- "CWE-157"
+- "CWE-937"
+- "CWE-1035"

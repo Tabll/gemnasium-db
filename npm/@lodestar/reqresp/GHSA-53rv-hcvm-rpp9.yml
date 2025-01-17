@@ -1,0 +1,25 @@
+---
+identifier: "GHSA-53rv-hcvm-rpp9"
+identifiers:
+- "GHSA-53rv-hcvm-rpp9"
+package_slug: "npm/@lodestar/reqresp"
+title: "Lodestar snappy decompression issue"
+description: "Lodestar client may fail to decode snappy framing compressed messages."
+date: "2025-01-14"
+pubdate: "2025-01-14"
+affected_range: "<1.25.0"
+fixed_versions:
+- "1.25.0"
+affected_versions: "All versions before 1.25.0"
+not_impacted: "All versions starting from 1.25.0"
+solution: "Upgrade to version 1.25.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-53rv-hcvm-rpp9"
+- "https://github.com/ChainSafe/lodestar/security/advisories/GHSA-53rv-hcvm-rpp9"
+- "https://github.com/ChainSafe/lodestar/commit/18a0d681dbcc51fb2ac9456f31e91f4e31a18300"
+- "https://github.com/ChainSafe/lodestar"
+uuid: "30bc4466-1485-4234-bfb8-4af7607dd026"
+cwe_ids:
+- "CWE-703"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-mqf3-qpc3-g26q"
+identifiers:
+- "GHSA-mqf3-qpc3-g26q"
+package_slug: "packagist/silverstripe/framework"
+title: "Silverstripe Framework has a Reflected Cross Site Scripting (XSS) in error
+  message"
+description: "> [!IMPORTANT]\n> This vulnerability only affects sites which are in
+  the \"dev\" environment mode. If your production website is in \"dev\" mode, it
+  has been misconfigured, and you should immediately swap it to \"live\" mode.\n>
+  See https://docs.silverstripe.org/en/developer_guides/debugging/environment_types/
+  for more information.\n\nIf a website has been set to the \"dev\" environment mode,
+  a URL can be provided which includes an XSS payload which will be executed in the
+  resulting error message."
+date: "2025-01-14"
+pubdate: "2025-01-14"
+affected_range: "<5.3.8"
+fixed_versions:
+- "5.3.8"
+affected_versions: "All versions before 5.3.8"
+not_impacted: "All versions starting from 5.3.8"
+solution: "Upgrade to version 5.3.8 or above."
+urls:
+- "https://github.com/advisories/GHSA-mqf3-qpc3-g26q"
+- "https://github.com/silverstripe/silverstripe-framework/security/advisories/GHSA-mqf3-qpc3-g26q"
+- "https://github.com/silverstripe/silverstripe-framework/commit/a555dad4ec73c929f6316bcb4019eb325a5b77d8"
+- "https://github.com/silverstripe/silverstripe-framework"
+- "https://www.silverstripe.org/download/security-releases/ss-2024-002"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:N"
+uuid: "971132f7-d47d-4721-a21a-12491df1afe0"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"
