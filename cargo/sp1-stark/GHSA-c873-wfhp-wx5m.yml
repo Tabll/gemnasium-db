@@ -30,12 +30,12 @@ description: "In SP1’s STARK verifier, the prover provided `chip_ordering` is 
   scheme. To batch this check, multiple polynomial evaluation claims are combined
   using a random linear combination. Prior to v4.0.0, the individual evaluation claims
   were not observed into the challenger before sampling the coefficient for the random
-  linear combination.In v4.0.0, this was fixed by observing all the evaluation claims
-  into the challenger correctly inside of Plonky3.\n\nThis bug was found by external
-  researchers, and we have worked closely with the Plonky3 team to mitigate this vulnerability.
-  We will be deprecating all previous versions and freezing their verifiers to ensure
-  that versions with the vulnerability will not be used in production."
-date: "2025-01-15"
+  linear combination. In v4.0.0, this was fixed by observing all the evaluation claims
+  into the challenger correctly inside of Plonky3.\n\nThis bug was found by Lev Soukhanov
+  and Onur Kilic, and we have worked closely with the Plonky3 team to mitigate this
+  vulnerability. We will be deprecating all previous versions and freezing their verifiers
+  to ensure that versions with the vulnerability will not be used in production."
+date: "2025-01-28"
 pubdate: "2025-01-15"
 affected_range: "<4.0.0"
 fixed_versions:
