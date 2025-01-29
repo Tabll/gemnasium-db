@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-r5w7-f542-q2j4"
+identifiers:
+- "GHSA-r5w7-f542-q2j4"
+package_slug: "npm/@sentry/bun"
+title: "Potential DoS when using ContextLines integration"
+description: "The [ContextLines integration](https://docs.sentry.io/platforms/javascript/guides/node/configuration/integrations/contextlines/)
+  uses readable streams to more efficiently use memory when reading files. The ContextLines
+  integration is used to attach source context to outgoing events.\n\nThe stream was
+  not explicitly closed after use. This could lead to excessive amounts of file handles
+  open on the system and potentially lead to a Denial of Service (DoS).\n\nThe ContextLines
+  integration is enabled by default in the Node SDK (`@sentry/node`) and SDKs that
+  run in Node.js environments (`@sentry/astro`, `@sentry/aws-serverless`, `@sentry/bun`,
+  `@sentry/google-cloud-serverless`, `@sentry/nestjs`, `@sentry/nextjs`, `@sentry/nuxt`,
+  `@sentry/remix`, `@sentry/solidstart`, `@sentry/sveltekit`)."
+date: "2025-01-28"
+pubdate: "2025-01-28"
+affected_range: ">=8.10.0 <8.49.0"
+fixed_versions:
+- "8.49.0"
+affected_versions: "All versions starting from 8.10.0 before 8.49.0"
+not_impacted: "All versions before 8.10.0, all versions starting from 8.49.0"
+solution: "Upgrade to version 8.49.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-r5w7-f542-q2j4"
+- "https://github.com/getsentry/sentry-javascript/security/advisories/GHSA-r5w7-f542-q2j4"
+- "https://github.com/getsentry/sentry-javascript/issues/14892"
+- "https://github.com/getsentry/sentry-javascript/pull/14997"
+- "https://github.com/getsentry/sentry-javascript"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L"
+uuid: "9c9da15b-16d7-4cf7-b0f7-dc63460b67a1"
+cwe_ids:
+- "CWE-774"
+- "CWE-937"
+- "CWE-1035"
