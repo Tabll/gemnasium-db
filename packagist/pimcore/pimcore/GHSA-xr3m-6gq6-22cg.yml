@@ -9,13 +9,14 @@ description: "A Stored Cross-Site Scripting (XSS) vulnerability in PIMCORE allow
   This can result in the execution of malicious scripts in the context of the user's
   browser when the PDF is viewed, leading to potential session hijacking, defacement
   of web pages, or unauthorized access to sensitive information."
-date: "2025-01-28"
+date: "2025-01-29"
 pubdate: "2025-01-28"
-affected_range: "=11.4.2"
-fixed_versions: []
-affected_versions: "Version 11.4.2"
-not_impacted: ""
-solution: "Unfortunately, there is no solution available yet."
+affected_range: ">=11.4.2 <11.5.3"
+fixed_versions:
+- "11.5.3"
+affected_versions: "All versions starting from 11.4.2 before 11.5.3"
+not_impacted: "All versions before 11.4.2, all versions starting from 11.5.3"
+solution: "Upgrade to version 11.5.3 or above."
 urls:
 - "https://github.com/advisories/GHSA-xr3m-6gq6-22cg"
 - "https://github.com/pimcore/pimcore/security/advisories/GHSA-xr3m-6gq6-22cg"
