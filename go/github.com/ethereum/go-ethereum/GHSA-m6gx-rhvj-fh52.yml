@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-m6gx-rhvj-fh52"
+identifiers:
+- "GHSA-m6gx-rhvj-fh52"
+package_slug: "go/github.com/ethereum/go-ethereum"
+title: "Denial of service in go-ethereum due to CVE-2020-28362"
+description: "Versions of Geth built with Go `<1.15.5` or `<1.14.12` are most likely
+  affected by a critical DoS-related security vulnerability. The golang team has registered
+  the underlying flaw as ‘CVE-2020-28362’.\n\nWe recommend all users to rebuild (ideally
+  `v1.9.24`) with Go `1.15.5` or `1.14.12`, to avoid node crashes. Alternatively,
+  if you are running binaries distributed via one of our official channels, we’re
+  going to release `v1.9.24` ourselves built with Go `1.15.5`."
+date: "2025-01-30"
+pubdate: "2021-06-29"
+affected_range: "<1.9.24"
+fixed_versions:
+- "1.9.24"
+affected_versions: "All versions before 1.9.24"
+not_impacted: "All versions starting from 1.9.24"
+solution: "Upgrade to version 1.9.24 or above."
+urls:
+- "https://github.com/advisories/GHSA-m6gx-rhvj-fh52"
+- "https://github.com/ethereum/go-ethereum/security/advisories/GHSA-m6gx-rhvj-fh52"
+- "https://github.com/ethereum/go-ethereum"
+uuid: "db76c699-dd6b-49bd-bfe9-0cae4750a19d"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

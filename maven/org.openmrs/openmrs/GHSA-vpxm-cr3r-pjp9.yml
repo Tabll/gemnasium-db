@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-vpxm-cr3r-pjp9"
+identifiers:
+- "GHSA-vpxm-cr3r-pjp9"
+package_slug: "maven/org.openmrs/openmrs"
+title: "General OpenMRS Security Advisory, January 2025: Penetration Testing Results
+  and Patches"
+description: "We recently underwent Penetration Testing of OpenMRS by a third-party
+  company. **Vulnerabilities were found, and fixes have been made and released.**
+  We've released security updates that include critical fixes, and so, we strongly
+  recommend upgrading affected modules.\n\n**This notice applies to _all_ OpenMRS
+  instances.** The testers used the OpenMRS v3 Reference Application (O3 RefApp);
+  however, their findings highlighted modules commonly used in older OpenMRS applications,
+  including the O2 RefApp."
+date: "2025-01-30"
+pubdate: "2025-01-30"
+affected_range: "[,2.6.11)"
+fixed_versions:
+- "2.6.11"
+affected_versions: "All versions before 2.6.11"
+not_impacted: "All versions starting from 2.6.11"
+solution: "Upgrade to version 2.6.11 or above."
+urls:
+- "https://github.com/advisories/GHSA-vpxm-cr3r-pjp9"
+- "https://github.com/openmrs/openmrs-core/security/advisories/GHSA-vpxm-cr3r-pjp9"
+- "https://github.com/openmrs/openmrs-core"
+uuid: "6373cb3f-7aa5-46a9-8c3c-f86f15118f3c"
+cwe_ids:
+- "CWE-209"
+- "CWE-284"
+- "CWE-601"
+- "CWE-614"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-x9qq-236j-gj97"
+identifiers:
+- "GHSA-x9qq-236j-gj97"
+package_slug: "go/github.com/canonical/lxd"
+title: "Canonical LXD documentation improvement to make clear restricted.devices.disk=allow
+  without restricted.devices.disk.paths also allows shift=true"
+description: "If a user has restricted access to a project that is configured with
+  `restricted=true`, they can gain root access on the system by creating a disk device
+  with `shift=true` and creating a setuid root executable. This is possible because
+  the `shift` property is not restricted unless `restricted.devices.disk.paths` is
+  set."
+date: "2025-01-30"
+pubdate: "2023-12-05"
+affected_range: ">=5.19.0 <5.20.0||=5.19.0"
+fixed_versions:
+- "5.20.0"
+affected_versions: "All versions starting from 5.19.0 before 5.20.0, version 5.19.0"
+not_impacted: ""
+solution: "Upgrade to version 5.20.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-x9qq-236j-gj97"
+- "https://github.com/canonical/lxd/security/advisories/GHSA-x9qq-236j-gj97"
+- "https://github.com/canonical/lxd/issues/12606"
+- "https://github.com/canonical/lxd/commit/ce1bd0dd37bb3810fe6f16c237a4b65257f231f1"
+- "https://github.com/canonical/lxd"
+uuid: "cfb6f929-bfa8-4c91-b030-dfe2058dda97"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"
