@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-2ccp-vqmv-4r4x"
+identifiers:
+- "GHSA-2ccp-vqmv-4r4x"
+package_slug: "maven/org.gaul/s3proxy"
+title: "S3Proxy allows insecure path traversal in filesystem and filesystem-nio2 storage
+  backends"
+description: "Users of the filesystem and filesystem-nio2 storage backends could unintentionally
+  expose local files to authenticated clients."
+date: "2025-02-03"
+pubdate: "2025-02-03"
+affected_range: "[,2.6.0)"
+fixed_versions:
+- "2.6.0"
+affected_versions: "All versions before 2.6.0"
+not_impacted: "All versions starting from 2.6.0"
+solution: "Upgrade to version 2.6.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-2ccp-vqmv-4r4x"
+- "https://github.com/gaul/s3proxy/security/advisories/GHSA-2ccp-vqmv-4r4x"
+- "https://github.com/apache/jclouds/commit/b0819e0ef5e08c792a4d1724b938714ce9503aa3"
+- "https://github.com/gaul/s3proxy/commit/86b6ee4749aa163a78e7898efc063617ed171980"
+- "https://github.com/gaul/s3proxy"
+uuid: "86246ffa-0e98-4f8f-96e8-eb333a1b198c"
+cwe_ids:
+- "CWE-22"
+- "CWE-937"
+- "CWE-1035"

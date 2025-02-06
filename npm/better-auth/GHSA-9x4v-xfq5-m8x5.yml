@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-9x4v-xfq5-m8x5"
+identifiers:
+- "GHSA-9x4v-xfq5-m8x5"
+package_slug: "npm/better-auth"
+title: "Better Auth URL parameter HTML Injection (Reflected Cross-Site scripting)"
+description: "The better-auth `/api/auth/error` page was vulnerable to HTML injection,
+  resulting in a reflected cross-site scripting (XSS) vulnerability."
+date: "2025-02-05"
+pubdate: "2025-02-05"
+affected_range: ">=0.0.2 <1.1.16"
+fixed_versions:
+- "1.1.16"
+affected_versions: "All versions starting from 0.0.2 before 1.1.16"
+not_impacted: "All versions before 0.0.2, all versions starting from 1.1.16"
+solution: "Upgrade to version 1.1.16 or above."
+urls:
+- "https://github.com/advisories/GHSA-9x4v-xfq5-m8x5"
+- "https://github.com/better-auth/better-auth/security/advisories/GHSA-9x4v-xfq5-m8x5"
+- "https://github.com/better-auth/better-auth/commit/7ae340e2eddad641b7e43d24d37c58a66ce9ddcf"
+- "https://github.com/better-auth/better-auth"
+- "https://github.com/better-auth/better-auth/blob/05ada0b79dbcac93cc04ceb79b23ca598d07830c/packages/better-auth/src/api/routes/error.ts#L81"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:N"
+uuid: "a7662356-3658-44ba-9894-d566167c7283"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"
