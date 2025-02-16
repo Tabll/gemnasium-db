@@ -1,0 +1,47 @@
+---
+identifier: "GHSA-wm7r-3qxj-5xgq"
+identifiers:
+- "GHSA-wm7r-3qxj-5xgq"
+package_slug: "go/github.com/grafana/grafana"
+title: "Duplicate Advisory: Grafana Improper Access Control vulnerability"
+description: "## Duplicate Advisory\nThis advisory has been withdrawn because it is
+  a duplicate of GHSA-cvm3-pp2j-chr3. This link is maintained to preserve external
+  references.\n\n## Original Description\nGrafana is an open-source platform for monitoring
+  and observability. \n\nThe option to send a test alert is not available from the
+  user panel UI for users having the Viewer role. It is still possible for a user
+  with the Viewer role to send a test alert using the API as the API does not check
+  access to this function.\n\nThis might enable malicious users to abuse the functionality
+  by sending multiple alert messages to e-mail and Slack, spamming users, prepare
+  Phishing attack or block SMTP server.\n\nUsers may upgrade to version 9.5.3, 9.4.12,
+  9.3.15, 9.2.19 and 8.5.26 to receive a fix."
+date: "2025-02-13"
+pubdate: "2023-06-06"
+affected_range: "<8.5.26||>=9.0.0 <9.2.19||>=9.3.0 <9.3.15||>=9.4.0 <9.4.12||>=9.5.0
+  <9.5.3"
+fixed_versions:
+- "8.5.26"
+- "9.2.19"
+- "9.3.15"
+- "9.4.12"
+- "9.5.3"
+affected_versions: "All versions before 8.5.26, all versions starting from 9.0.0 before
+  9.2.19, all versions starting from 9.3.0 before 9.3.15, all versions starting from
+  9.4.0 before 9.4.12, all versions starting from 9.5.0 before 9.5.3"
+not_impacted: "All versions starting from 8.5.26 before 9.0.0, all versions starting
+  from 9.2.19 before 9.3.0, all versions starting from 9.3.15 before 9.4.0, all versions
+  starting from 9.4.12 before 9.5.0, all versions starting from 9.5.3"
+solution: "Upgrade to versions 8.5.26, 9.2.19, 9.3.15, 9.4.12, 9.5.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-wm7r-3qxj-5xgq"
+- "https://github.com/grafana/bugbounty/security/advisories/GHSA-cvm3-pp2j-chr3"
+- "https://nvd.nist.gov/vuln/detail/CVE-2023-2183"
+- "https://github.com/grafana/grafana"
+- "https://grafana.com/security/security-advisories/cve-2023-2183"
+- "https://security.netapp.com/advisory/ntap-20230706-0002"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:N/A:N"
+uuid: "88c09b1d-90b5-4e7c-87b8-68ce67fe3e58"
+cwe_ids:
+- "CWE-284"
+- "CWE-862"
+- "CWE-937"
+- "CWE-1035"

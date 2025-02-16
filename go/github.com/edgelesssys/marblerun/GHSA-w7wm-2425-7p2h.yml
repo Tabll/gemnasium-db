@@ -17,7 +17,7 @@ description: "During recovery, a Coordinator only verifies that a given recovery
   affect the following:\n\n* secrets and state of the legitimate Coordinator instances\n*
   integrity of workloads\n* certificates chaining back to the legitimate Coordinator
   root certificate"
-date: "2025-02-04"
+date: "2025-02-06"
 pubdate: "2025-02-04"
 affected_range: "<1.7.0"
 fixed_versions:
@@ -31,6 +31,7 @@ urls:
 - "https://github.com/edgelesssys/marblerun/commit/e4864f9f1d0f12a4a7d28514da43bcc75603a5b5"
 - "https://github.com/edgelesssys/marblerun"
 - "https://github.com/edgelesssys/marblerun/releases/tag/v1.7.0"
+- "https://pkg.go.dev/vuln/GO-2025-3450"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:H/A:N"
 uuid: "ad9e185e-9635-4c37-8cfb-8213d7dbb394"
 cwe_ids:

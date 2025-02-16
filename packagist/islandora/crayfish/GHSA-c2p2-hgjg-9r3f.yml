@@ -1,0 +1,25 @@
+---
+identifier: "GHSA-c2p2-hgjg-9r3f"
+identifiers:
+- "GHSA-c2p2-hgjg-9r3f"
+package_slug: "packagist/islandora/crayfish"
+title: "Crayfish Allows Remote Code Execution via hypercube X-Islandora-Args Header"
+description: "_What kind of vulnerability is it? Who is impacted?_\n\nRemote code
+  execution is possible in web-accessible installations of hypercube."
+date: "2025-02-12"
+pubdate: "2025-02-12"
+affected_range: "<=4.0.0"
+fixed_versions: []
+affected_versions: "All versions up to 4.0.0"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-c2p2-hgjg-9r3f"
+- "https://github.com/Islandora/Crayfish/security/advisories/GHSA-c2p2-hgjg-9r3f"
+- "https://github.com/Islandora/Crayfish"
+uuid: "53990ed7-7fee-4cfb-9be3-b309e9f2c33e"
+cwe_ids:
+- "CWE-150"
+- "CWE-74"
+- "CWE-937"
+- "CWE-1035"

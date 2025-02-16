@@ -4,10 +4,9 @@ identifiers:
 - "GHSA-mm6v-68qp-f9fw"
 package_slug: "packagist/islandora/crayfish"
 title: "Crayfish allows Remote Code Execution via Homarus Authorization header"
-description: "_What kind of vulnerability is it? Who is impacted?_\n\nRemote code
-  execution may be possible in web-accessible installations of Homarus in certain
-  configurations."
-date: "2025-01-15"
+description: "Remote code execution may be possible in web-accessible installations
+  of Homarus in certain configurations."
+date: "2025-02-12"
 pubdate: "2025-01-15"
 affected_range: "<4.1.0"
 fixed_versions:

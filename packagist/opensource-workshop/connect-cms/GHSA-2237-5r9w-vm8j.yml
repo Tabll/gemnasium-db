@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-2237-5r9w-vm8j"
+identifiers:
+- "GHSA-2237-5r9w-vm8j"
+package_slug: "packagist/opensource-workshop/connect-cms"
+title: "Connect-CMS information that is restricted to viewing is visible"
+description: "- Information that is restricted from viewing in the search results
+  of site searches (※) can still be viewed via the main text (a feature added in v1.8.0).\n-
+  Impact by version\n- v1.8.0 ~ v1.8.3: It will be displayed in the text.\n- v1.8.0
+  and earlier: It will not be displayed in the body of the text, but the title (frame
+  name) will be displayed with a link.\n- Target viewing restriction function\n- Frame
+  publishing function (private, limited publishing)\n- IP Restriction Page\n- Password
+  setting page"
+date: "2025-02-07"
+pubdate: "2025-02-07"
+affected_range: "<1.8.4"
+fixed_versions:
+- "1.8.4"
+affected_versions: "All versions before 1.8.4"
+not_impacted: "All versions starting from 1.8.4"
+solution: "Upgrade to version 1.8.4 or above."
+urls:
+- "https://github.com/advisories/GHSA-2237-5r9w-vm8j"
+- "https://github.com/opensource-workshop/connect-cms/security/advisories/GHSA-2237-5r9w-vm8j"
+- "https://github.com/opensource-workshop/connect-cms"
+uuid: "fbb87c28-c22b-4061-8f61-71c76bb7bbb8"
+cwe_ids:
+- "CWE-200"
+- "CWE-937"
+- "CWE-1035"

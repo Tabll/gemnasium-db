@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-vrpv-vw92-328g"
+identifiers:
+- "GHSA-vrpv-vw92-328g"
+package_slug: "packagist/rudloff/rtmpdump-bin"
+title: "Multiple rtmpdump vulnerabilities"
+description: "The version of rtmpdump contained in this package has multiple known
+  vulnerabilities."
+date: "2025-02-06"
+pubdate: "2025-02-06"
+affected_range: "<=2.3.1"
+fixed_versions: []
+affected_versions: "All versions up to 2.3.1"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-vrpv-vw92-328g"
+- "https://github.com/Rudloff/rtmpdump-bin/security/advisories/GHSA-vrpv-vw92-328g"
+- "https://github.com/Rudloff/rtmpdump-bin"
+- "https://github.com/advisories/GHSA-fm48-q5qq-894j"
+- "https://github.com/advisories/GHSA-hg4c-2mw4-gwpm"
+- "https://github.com/advisories/GHSA-pfv7-grcx-8gcc"
+uuid: "31b3f538-d6a5-4529-abb5-9848143d36e4"
+cwe_ids:
+- "CWE-1395"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-h7h7-6mx3-r89v"
+identifiers:
+- "GHSA-h7h7-6mx3-r89v"
+package_slug: "cargo/fyrox-core"
+title: "Fyrox has unsound usages of `Vec::from_raw_parts` "
+description: "The library provides a public safe API `transmute_vec_as_bytes`, which
+  incorrectly assumes that any generic type `T` could have stable layout, causing
+  to uninitialized memory exposure if the users pass any types with padding bytes
+  as `T` and cast it to `u8` pointer.\n\nIn the [issue](https://github.com/FyroxEngine/Fyrox/issues/630),
+  we develop a PoC to show passing struct type to `transmute_vec_as_bytes` could lead
+  to undefined behavior with `Vec::from_raw_parts`."
+date: "2025-02-14"
+pubdate: "2025-02-14"
+affected_range: ">=0.28.1 <0.36"
+fixed_versions:
+- "0.36"
+affected_versions: "All versions starting from 0.28.1 before 0.36"
+not_impacted: "All versions before 0.28.1, all versions starting from 0.36"
+solution: "Upgrade to version 0.36 or above."
+urls:
+- "https://github.com/advisories/GHSA-h7h7-6mx3-r89v"
+- "https://github.com/FyroxEngine/Fyrox/issues/630"
+- "https://github.com/FyroxEngine/Fyrox/pull/662"
+- "https://github.com/FyroxEngine/Fyrox/commit/474e3b01a884366cdb7d704f7456ef692e992232"
+- "https://github.com/FyroxEngine/Fyrox"
+- "https://rustsec.org/advisories/RUSTSEC-2024-0435.html"
+uuid: "65fd1550-4101-44a0-984c-d6975071b905"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

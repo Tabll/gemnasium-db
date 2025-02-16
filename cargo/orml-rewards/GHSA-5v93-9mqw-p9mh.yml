@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-5v93-9mqw-p9mh"
+identifiers:
+- "GHSA-5v93-9mqw-p9mh"
+package_slug: "cargo/orml-rewards"
+title: "Uncaught Panic in ORML Rewards Pallet"
+description: "A vulnerability in the `add_share` function of the **Rewards** pallet
+  (part of the ORML repository) can lead to an uncaught Rust panic when handling user-provided
+  input exceeding the `u128` range."
+date: "2025-02-14"
+pubdate: "2025-02-14"
+affected_range: "<1.2.1"
+fixed_versions:
+- "1.2.1"
+affected_versions: "All versions before 1.2.1"
+not_impacted: "All versions starting from 1.2.1"
+solution: "Upgrade to version 1.2.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-5v93-9mqw-p9mh"
+- "https://github.com/open-web3-stack/open-runtime-module-library/security/advisories/GHSA-5v93-9mqw-p9mh"
+- "https://github.com/open-web3-stack/open-runtime-module-library/pull/1016"
+- "https://github.com/open-web3-stack/open-runtime-module-library/commit/6720fcd92f44e5f204741b04fdef3b67b0fcf6bc"
+- "https://github.com/open-web3-stack/open-runtime-module-library"
+uuid: "917662d4-fdcc-4e04-9401-cb9ea3d7f909"
+cwe_ids:
+- "CWE-248"
+- "CWE-937"
+- "CWE-1035"

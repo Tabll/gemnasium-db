@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-67mh-4wv8-2f99"
+identifiers:
+- "GHSA-67mh-4wv8-2f99"
+package_slug: "npm/esbuild"
+title: "esbuild enables any website to send any requests to the development server
+  and read the response"
+description: "esbuild allows any websites to send any request to the development server
+  and read the response due to default CORS settings."
+date: "2025-02-10"
+pubdate: "2025-02-10"
+affected_range: "<0.25.0"
+fixed_versions:
+- "0.25.0"
+affected_versions: "All versions before 0.25.0"
+not_impacted: "All versions starting from 0.25.0"
+solution: "Upgrade to version 0.25.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-67mh-4wv8-2f99"
+- "https://github.com/evanw/esbuild/security/advisories/GHSA-67mh-4wv8-2f99"
+- "https://github.com/evanw/esbuild/commit/de85afd65edec9ebc44a11e245fd9e9a2e99760d"
+- "https://github.com/evanw/esbuild"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:N/A:N"
+uuid: "a4721185-87af-438d-85b6-2557d18b88ea"
+cwe_ids:
+- "CWE-346"
+- "CWE-937"
+- "CWE-1035"

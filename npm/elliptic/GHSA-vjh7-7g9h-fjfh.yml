@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-vjh7-7g9h-fjfh"
+identifiers:
+- "GHSA-vjh7-7g9h-fjfh"
+package_slug: "npm/elliptic"
+title: "Elliptic's private key extraction in ECDSA upon signing a malformed input
+  (e.g. a string)"
+description: "Private key can be extracted from ECDSA signature upon signing a malformed
+  input (e.g. a string or a number), which could e.g. come from JSON network input\n\nNote
+  that `elliptic` by design accepts hex strings as one of the possible input types"
+date: "2025-02-12"
+pubdate: "2025-02-12"
+affected_range: "<6.6.1"
+fixed_versions:
+- "6.6.1"
+affected_versions: "All versions before 6.6.1"
+not_impacted: "All versions starting from 6.6.1"
+solution: "Upgrade to version 6.6.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-vjh7-7g9h-fjfh"
+- "https://github.com/indutny/elliptic/security/advisories/GHSA-vjh7-7g9h-fjfh"
+- "https://github.com/indutny/elliptic/commit/04cb6f54ce552b3ebde6be06d6050419e1c7333e"
+- "https://github.com/indutny/elliptic"
+uuid: "821cae3c-4726-4464-8567-4b13f5e3daf3"
+cwe_ids:
+- "CWE-200"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,26 @@
+---
+identifier: "GHSA-7723-35v7-qcxw"
+identifiers:
+- "GHSA-7723-35v7-qcxw"
+package_slug: "cargo/activitypub_federation"
+title: "Server-Side Request Forgery (SSRF) in activitypub_federation"
+description: "This vulnerability allows a user to bypass any predefined hardcoded
+  URL path or security anti-Localhost mechanism and perform an arbitrary GET request
+  to any Host, Port and URL using a Webfinger Request."
+date: "2025-02-10"
+pubdate: "2025-02-10"
+affected_range: "<=0.6.2"
+fixed_versions: []
+affected_versions: "All versions up to 0.6.2"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-7723-35v7-qcxw"
+- "https://github.com/LemmyNet/lemmy/security/advisories/GHSA-7723-35v7-qcxw"
+- "https://github.com/LemmyNet/activitypub-federation-rust"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:L/I:N/A:N"
+uuid: "6e5d3554-7068-443a-96a8-6832dc6d5cb4"
+cwe_ids:
+- "CWE-918"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-qxh3-jgvh-x55j"
+identifiers:
+- "GHSA-qxh3-jgvh-x55j"
+package_slug: "packagist/opensource-workshop/connect-cms"
+title: "Connect-CMS Privilege Escalation Vulnerability"
+description: "### Impact（影響）\n\nThere is a Privilege Escalation Vulnerability on the
+  management system of Connect-CMS.\nAffercted Version : Connect-CMS 1.7.1, 2.3.1
+  and earlier\n\n### Patches（修正バージョン）\n\nversion 1.7.2, 2.3.1\n\n### Workarounds（運用回避手段）\n\nUpgrade
+  Connect-CMS to latest version"
+date: "2025-02-07"
+pubdate: "2023-07-05"
+affected_range: "<1.7.2||>=2.0.0 <2.3.2"
+fixed_versions:
+- "1.7.2"
+- "2.3.2"
+affected_versions: "All versions before 1.7.2, all versions starting from 2.0.0 before
+  2.3.2"
+not_impacted: "All versions starting from 1.7.2 before 2.0.0, all versions starting
+  from 2.3.2"
+solution: "Upgrade to versions 1.7.2, 2.3.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-qxh3-jgvh-x55j"
+- "https://github.com/opensource-workshop/connect-cms/security/advisories/GHSA-qxh3-jgvh-x55j"
+- "https://github.com/opensource-workshop/connect-cms"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:N"
+uuid: "167a71e9-fb0c-44e9-9d99-021d82912cd9"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

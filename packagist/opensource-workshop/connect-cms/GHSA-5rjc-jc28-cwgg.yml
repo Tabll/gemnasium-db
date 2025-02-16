@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-5rjc-jc28-cwgg"
+identifiers:
+- "GHSA-5rjc-jc28-cwgg"
+package_slug: "packagist/opensource-workshop/connect-cms"
+title: "Connect-CMS Access control vulnerability"
+description: "### Impact（影響）\n\nThere is an Access control vulnerability on the management
+  system of Connect-CMS.\nAffected Version : Connect-CMS v1.8.6, 2.4.6 and earlier\n\n###
+  Patches（修正バージョン）\n\nversion v1.8.7, v2.4.7\n\n### Workarounds（運用回避手段）\n\nUpgrade
+  Connect-CMS to latest version"
+date: "2025-02-07"
+pubdate: "2025-02-07"
+affected_range: "<1.8.7||>=2.0.0 <2.4.7"
+fixed_versions:
+- "1.8.7"
+- "2.4.7"
+affected_versions: "All versions before 1.8.7, all versions starting from 2.0.0 before
+  2.4.7"
+not_impacted: "All versions starting from 1.8.7 before 2.0.0, all versions starting
+  from 2.4.7"
+solution: "Upgrade to versions 1.8.7, 2.4.7 or above."
+urls:
+- "https://github.com/advisories/GHSA-5rjc-jc28-cwgg"
+- "https://github.com/opensource-workshop/connect-cms/security/advisories/GHSA-5rjc-jc28-cwgg"
+- "https://github.com/opensource-workshop/connect-cms"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:N"
+uuid: "0d0a2b64-7f80-4db1-91a1-fa5f17486cae"
+cwe_ids:
+- "CWE-284"
+- "CWE-937"
+- "CWE-1035"

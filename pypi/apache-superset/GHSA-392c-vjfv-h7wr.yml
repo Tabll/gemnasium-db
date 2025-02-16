@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-392c-vjfv-h7wr"
+identifiers:
+- "GHSA-392c-vjfv-h7wr"
+package_slug: "pypi/apache-superset"
+title: "Duplicate Advisory: Apache Superset - Elevation of Privilege"
+description: "### Duplicate Advisory\nThis advisory has been withdrawn because it
+  is a duplicate of GHSA-f678-j579-4xf5. This link is maintained to preserve external
+  references.\n\n### Original Description\n\nImproper authorization check and possible
+  privilege escalation on Apache Superset up to but excluding 2.1.2. Using the default
+  examples database connection that allows access to both the examples schema and
+  Apache Superset's metadata database, an attacker using a specially crafted CTE SQL
+  statement could change data on the metadata database. This weakness could result
+  on tampering with the authentication/authorization data."
+date: "2025-02-13"
+pubdate: "2023-11-27"
+affected_range: "<2.1.2"
+fixed_versions:
+- "2.1.2"
+affected_versions: "All versions before 2.1.2"
+not_impacted: "All versions starting from 2.1.2"
+solution: "Upgrade to version 2.1.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-392c-vjfv-h7wr"
+- "https://github.com/orangecertcc/security-research/security/advisories/GHSA-f678-j579-4xf5"
+- "https://nvd.nist.gov/vuln/detail/CVE-2023-40610"
+- "https://github.com/apache/superset"
+- "https://lists.apache.org/thread/jvgxpk4dbxyqtsgtl4pdgbd520rc0rot"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:N/I:H/A:N"
+uuid: "98e09279-ba0c-4a2b-a09d-28ea12237ccc"
+cwe_ids:
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

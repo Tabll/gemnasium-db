@@ -29,7 +29,7 @@ description: "# CWA-2025-002\n\n**Severity**\n\nMedium (Moderate + Likely)[^1]\n
   Confio receives a report through the Cosmos bug bounty program maintained by Amulet.\n-
   2024-12-20: Confio security contributors confirm the report.\n- 2024-01-27: Confio
   developed the patch internally.\n- 2025-02-04: Patch gets released."
-date: "2025-02-04"
+date: "2025-02-06"
 pubdate: "2025-02-04"
 affected_range: ">=2.2.0 <2.2.2||>=2.1.0 <2.1.5||>=2.0.0 <2.0.6"
 fixed_versions:
@@ -51,6 +51,7 @@ urls:
 - "https://github.com/CosmWasm/cosmwasm/commit/f0c04c03cbe2557634c1bbcdc2ce203fe7caca58"
 - "https://github.com/CosmWasm/advisories/blob/main/CWAs/CWA-2025-002.md"
 - "https://github.com/CosmWasm/wasmvm"
+- "https://pkg.go.dev/vuln/GO-2025-3449"
 uuid: "55b22551-738a-4f61-95e2-535297b9262d"
 cwe_ids:
 - "CWE-937"

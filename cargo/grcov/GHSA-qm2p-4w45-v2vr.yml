@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-qm2p-4w45-v2vr"
+identifiers:
+- "GHSA-qm2p-4w45-v2vr"
+package_slug: "cargo/grcov"
+title: "grcov has an out of bounds write triggered by crafted coverage data"
+description: "Function `grcov::covdir::get_coverage` uses the `unsafe` function `get_unchecked_mut`
+  without validating that the index is in bounds.\n\nThis results in memory corruption,
+  and could potentially allow arbitrary code execution provided that an attacker can
+  feed the tool crafted coverage data."
+date: "2025-02-10"
+pubdate: "2025-02-10"
+affected_range: "<0.8.20"
+fixed_versions:
+- "0.8.20"
+affected_versions: "All versions before 0.8.20"
+not_impacted: "All versions starting from 0.8.20"
+solution: "Upgrade to version 0.8.20 or above."
+urls:
+- "https://github.com/advisories/GHSA-qm2p-4w45-v2vr"
+- "https://github.com/mozilla/grcov/commit/c8219563bc91615dd4a27884a5c63f09db8d03bb"
+- "https://bugzilla.mozilla.org/show_bug.cgi?id=1917475"
+- "https://github.com/mozilla/grcov"
+- "https://rustsec.org/advisories/RUSTSEC-2025-0005.html"
+uuid: "5f635136-f54c-46df-a6c5-dc381114fddf"
+cwe_ids:
+- "CWE-787"
+- "CWE-937"
+- "CWE-1035"
