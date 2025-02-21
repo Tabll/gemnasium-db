@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-2gw2-qgjg-xh6p"
+identifiers:
+- "GHSA-2gw2-qgjg-xh6p"
+package_slug: "cargo/namada-apps"
+title: "Namada-apps allows Post-Genesis Validator Bypass"
+description: "Ledger crash. A user is able to initialize a post-genesis validator
+  with a negative commission rate using the `--force` flag. If this validator gets
+  into the consensus set, then when computing PoS inflation inside `fn update_rewards_products_and_mint_inflation`,
+  an instance of `mul_floor` will cause the return of an `Err`, which causes `finalize_block`
+  to error."
+date: "2025-02-20"
+pubdate: "2025-02-20"
+affected_range: ">=1.0.0 <1.1.0||=1.0.0"
+fixed_versions:
+- "1.1.0"
+affected_versions: "All versions starting from 1.0.0 before 1.1.0, version 1.0.0"
+not_impacted: ""
+solution: "Upgrade to version 1.1.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-2gw2-qgjg-xh6p"
+- "https://github.com/anoma/namada/security/advisories/GHSA-2gw2-qgjg-xh6p"
+- "https://github.com/anoma/namada"
+uuid: "e17ff9f4-b8f7-440f-852c-f7d75a97fa9d"
+cwe_ids:
+- "CWE-248"
+- "CWE-937"
+- "CWE-1035"

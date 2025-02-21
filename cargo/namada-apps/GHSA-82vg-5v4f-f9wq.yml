@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-82vg-5v4f-f9wq"
+identifiers:
+- "GHSA-82vg-5v4f-f9wq"
+package_slug: "cargo/namada-apps"
+title: "Namada-apps can Crash with Excessive Computation in Mempool Validation"
+description: "A malicious transaction may cause a crash in mempool validation.\n\nA
+  transaction with authorization section containing 256 public keys or more with valid
+  matching signatures triggers an integer overflow in signature verification that
+  causes a the node to panic."
+date: "2025-02-20"
+pubdate: "2025-02-20"
+affected_range: ">=1.0.0 <1.1.0||=1.0.0"
+fixed_versions:
+- "1.1.0"
+affected_versions: "All versions starting from 1.0.0 before 1.1.0, version 1.0.0"
+not_impacted: ""
+solution: "Upgrade to version 1.1.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-82vg-5v4f-f9wq"
+- "https://github.com/anoma/namada/security/advisories/GHSA-82vg-5v4f-f9wq"
+- "https://github.com/anoma/namada"
+uuid: "66376dae-9f6f-40a0-8e93-ee89c939ccf1"
+cwe_ids:
+- "CWE-770"
+- "CWE-937"
+- "CWE-1035"

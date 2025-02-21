@@ -9,7 +9,7 @@ description: "uniapi version 1.0.7 introduces code that would execute on import 
   script in a thread. The downloaded script would harvest system information and `POST`
   the information to another remote URL. This code was found in the PyPI release artifacts
   and was not present in the public GitHub repository."
-date: "2025-01-27"
+date: "2025-02-19"
 pubdate: "2025-01-27"
 affected_range: "==1.0.7"
 fixed_versions: []
@@ -18,6 +18,7 @@ not_impacted: ""
 solution: "Unfortunately, there is no solution available yet."
 urls:
 - "https://github.com/advisories/GHSA-gvvw-rr8m-fj76"
+- "https://github.com/kam193/package-campaigns/blob/main/pypi/campaigns/highly_suspicious/2025-01-uniapi.json"
 - "https://github.com/pypa/advisory-database/tree/main/vulns/uniapi/PYSEC-2025-2.yaml"
 - "https://inspector.pypi.io/project/uniapi/1.0.7/packages/0f/40/c6e06c22bbc22ef45f40bf5a7711763fa08fec4d16b4718d86fd60970131/uniapi-1.0.7.tar.gz/uniapi-1.0.7/uniapi/__init__.py#line.11"
 uuid: "e267be51-910f-440e-8dac-727c54f94bbc"

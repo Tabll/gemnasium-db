@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-f8qm-hmm3-fv7f"
+identifiers:
+- "GHSA-f8qm-hmm3-fv7f"
+package_slug: "cargo/namada-apps"
+title: "Namada-apps allows Excessive Computation in Mempool Validation"
+description: "A malicious transaction may cause an expensive computation in mempool
+  validation.\n\nA transaction with multiple repeated sections causes the section
+  hash calculation used for signature validation to grow exponentially (and potentially
+  even cubic) in proportion to number of sections. This may be used to significantly
+  slow down operation of nodes."
+date: "2025-02-20"
+pubdate: "2025-02-20"
+affected_range: ">=1.0.0 <1.1.0||=1.0.0"
+fixed_versions:
+- "1.1.0"
+affected_versions: "All versions starting from 1.0.0 before 1.1.0, version 1.0.0"
+not_impacted: ""
+solution: "Upgrade to version 1.1.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-f8qm-hmm3-fv7f"
+- "https://github.com/anoma/namada/security/advisories/GHSA-f8qm-hmm3-fv7f"
+- "https://github.com/anoma/namada"
+uuid: "c7a4f77d-0277-4b4c-839e-30af91e882d9"
+cwe_ids:
+- "CWE-770"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-x5vx-95h7-rv4p"
+identifiers:
+- "GHSA-x5vx-95h7-rv4p"
+package_slug: "go/github.com/cosmos/cosmos-sdk"
+title: "Cosmos SDK: Groups module can halt chain when handling a malicious proposal"
+description: "Name: ASA-2025-003: Groups module can halt chain when handling a malicious
+  proposal\nComponent: CosmosSDK\nCriticality: High (Considerable Impact; Likely Likelihood
+  per [ACMv1.2](https://github.com/interchainio/security/blob/main/resources/CLASSIFICATION_MATRIX.md))\nAffected
+  versions: <= v0.47.15, <= 0.50.11\nAffected users: Validators, Full nodes, Users
+  on chains that utilize the groups module"
+date: "2025-02-20"
+pubdate: "2025-02-20"
+affected_range: "<0.47.16-ics-lsm||>=0.50.0-alpha.0 <0.50.12"
+fixed_versions:
+- "0.47.16-ics-lsm"
+- "0.50.12"
+affected_versions: "All versions before 0.47.16-ics-lsm, all versions starting from
+  0.50.0-alpha.0 before 0.50.12"
+not_impacted: "All versions starting from 0.47.16-ics-lsm before 0.50.0-alpha.0, all
+  versions starting from 0.50.12"
+solution: "Upgrade to versions 0.47.16-ics-lsm, 0.50.12 or above."
+urls:
+- "https://github.com/advisories/GHSA-x5vx-95h7-rv4p"
+- "https://github.com/cosmos/cosmos-sdk/security/advisories/GHSA-x5vx-95h7-rv4p"
+- "https://github.com/cosmos/cosmos-sdk/commit/0a98b65b24900a0e608866c78f172cf8e4140aea"
+- "https://github.com/cosmos/cosmos-sdk"
+- "https://github.com/cosmos/cosmos-sdk/releases/tag/v0.47.16"
+- "https://github.com/cosmos/cosmos-sdk/releases/tag/v0.50.12"
+uuid: "acaa3100-523a-4563-8ce5-fbcbb5380406"
+cwe_ids:
+- "CWE-369"
+- "CWE-937"
+- "CWE-1035"
