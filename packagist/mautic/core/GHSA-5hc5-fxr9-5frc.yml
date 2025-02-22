@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-5hc5-fxr9-5frc"
+identifiers:
+- "GHSA-5hc5-fxr9-5frc"
+package_slug: "packagist/mautic/core"
+title: "Duplicate Advisory: Mautic has insufficient authentication in upgrade flow"
+description: "# Duplicate Advisory\nThis advisory has been withdrawn because it is
+  a duplicate of GHSA-qf6m-6m4g-rmrc. This link is maintained to preserve external
+  references.\n\n# Original Description\nMautic allows you to update the application
+  via an upgrade script.\n\nThe upgrade logic isn't shielded off correctly, which
+  may lead to vulnerable situation.\n\nThis vulnerability is mitigated by the fact
+  that Mautic needs to be installed in a certain way to be vulnerable."
+date: "2025-02-21"
+pubdate: "2024-09-19"
+affected_range: ">=1.0.0-beta3 <4.4.13||>=5.0.0 <5.1.1"
+fixed_versions:
+- "4.4.13"
+- "5.1.1"
+affected_versions: "All versions starting from 1.0.0-beta3 before 4.4.13, all versions
+  starting from 5.0.0 before 5.1.1"
+not_impacted: "All versions before 1.0.0-beta3, all versions starting from 4.4.13
+  before 5.0.0, all versions starting from 5.1.1"
+solution: "Upgrade to versions 4.4.13, 5.1.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-5hc5-fxr9-5frc"
+- "https://github.com/mautic/mautic/security/advisories/GHSA-qf6m-6m4g-rmrc"
+- "https://nvd.nist.gov/vuln/detail/CVE-2022-25770"
+- "https://github.com/mautic/mautic"
+cvss_v3: "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:C/C:N/I:H/A:H"
+uuid: "ac1d78a5-28cb-4a12-8c52-a875a40ac1c8"
+cwe_ids:
+- "CWE-306"
+- "CWE-937"
+- "CWE-1035"

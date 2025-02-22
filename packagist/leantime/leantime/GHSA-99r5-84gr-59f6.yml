@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-99r5-84gr-59f6"
+identifiers:
+- "GHSA-99r5-84gr-59f6"
+package_slug: "packagist/leantime/leantime"
+title: "Leantime has Host Header Injection Vulnerability "
+description: "A host header injection vulnerability has been identified in the user
+  details viewing functionality of the system. This vulnerability allows an attacker
+  to manipulate the host header in HTTP requests, thereby gaining unauthorized access
+  to view details of other users."
+date: "2025-02-21"
+pubdate: "2025-02-21"
+affected_range: "<3.1.2"
+fixed_versions:
+- "3.1.2"
+affected_versions: "All versions before 3.1.2"
+not_impacted: "All versions starting from 3.1.2"
+solution: "Upgrade to version 3.1.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-99r5-84gr-59f6"
+- "https://github.com/Leantime/leantime/security/advisories/GHSA-99r5-84gr-59f6"
+- "https://github.com/Leantime/leantime"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+uuid: "d5bb4e0e-68c6-44ee-9be8-85fca2d9124e"
+cwe_ids:
+- "CWE-74"
+- "CWE-937"
+- "CWE-1035"

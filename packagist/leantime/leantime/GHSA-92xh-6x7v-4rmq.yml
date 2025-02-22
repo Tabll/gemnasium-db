@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-92xh-6x7v-4rmq"
+identifiers:
+- "GHSA-92xh-6x7v-4rmq"
+package_slug: "packagist/leantime/leantime"
+title: "Leantime allows Cross-Site Request Forgery (CSRF)"
+description: "A cross-site request forgery vulnerability allows a remote actor to
+  create an account with Owner privileges. By luring an Owner or Administrator into
+  clicking a button on an attacker-controlled website, a request will be issued, generating
+  an account with the attacker's information and role of their choosing."
+date: "2025-02-21"
+pubdate: "2025-02-21"
+affected_range: "<3.1.2"
+fixed_versions:
+- "3.1.2"
+affected_versions: "All versions before 3.1.2"
+not_impacted: "All versions starting from 3.1.2"
+solution: "Upgrade to version 3.1.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-92xh-6x7v-4rmq"
+- "https://github.com/Leantime/leantime/security/advisories/GHSA-92xh-6x7v-4rmq"
+- "https://github.com/Leantime/leantime"
+uuid: "771bd40f-fe5b-4ef2-b59e-9f03fde071d7"
+cwe_ids:
+- "CWE-352"
+- "CWE-937"
+- "CWE-1035"

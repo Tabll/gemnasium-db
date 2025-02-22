@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-v4q9-437p-mhpg"
+identifiers:
+- "GHSA-v4q9-437p-mhpg"
+package_slug: "packagist/leantime/leantime"
+title: "Leantime allows Cross Site Scripting (XSS) and SQL Injection (SQLi)"
+description: "A cross-site scripting (XSS) vulnerability has been identified in Leantime.
+  The vulnerability allows an attacker to inject malicious scripts into certain fields,
+  potentially leading to the execution of arbitrary code or unauthorized access to
+  user-sensitive information. The code does not include any validation or sanitization
+  of the $_GET[\"id\"] parameter. As a result, it directly incorporates the user-supplied
+  value into the source path without any checks."
+date: "2025-02-21"
+pubdate: "2025-02-21"
+affected_range: "<3.3"
+fixed_versions:
+- "3.3"
+affected_versions: "All versions before 3.3"
+not_impacted: "All versions starting from 3.3"
+solution: "Upgrade to version 3.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-v4q9-437p-mhpg"
+- "https://github.com/Leantime/leantime/security/advisories/GHSA-v4q9-437p-mhpg"
+- "https://github.com/Leantime/leantime"
+uuid: "ab780187-8df8-4657-adfa-1627971f07e8"
+cwe_ids:
+- "CWE-79"
+- "CWE-89"
+- "CWE-937"
+- "CWE-1035"

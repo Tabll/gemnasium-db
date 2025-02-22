@@ -1,0 +1,25 @@
+---
+identifier: "GHSA-mg4c-884j-pcq9"
+identifiers:
+- "GHSA-mg4c-884j-pcq9"
+package_slug: "packagist/leantime/leantime"
+title: "Leantime allows Stored Cross-Site Scripting (XSS)"
+description: "STORED XSS +OPEN REDIRECTION in SVG uploads\nVulnerable url:https://hack.leantime.io/projects/showProject/3"
+date: "2025-02-21"
+pubdate: "2025-02-21"
+affected_range: "<3.3"
+fixed_versions:
+- "3.3"
+affected_versions: "All versions before 3.3"
+not_impacted: "All versions starting from 3.3"
+solution: "Upgrade to version 3.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-mg4c-884j-pcq9"
+- "https://github.com/Leantime/leantime/security/advisories/GHSA-mg4c-884j-pcq9"
+- "https://github.com/Leantime/leantime/commit/d8b1099b0629da64ad30a1c4daee104fadc6c227"
+- "https://github.com/Leantime/leantime"
+uuid: "9ccefe68-8cca-4e52-a488-2030ac61897c"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

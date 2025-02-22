@@ -1,0 +1,25 @@
+---
+identifier: "GHSA-3hfj-qcvj-4hx8"
+identifiers:
+- "GHSA-3hfj-qcvj-4hx8"
+package_slug: "packagist/leantime/leantime"
+title: "Leantime has Missing Authorization Check for Host Parameter"
+description: "By exploiting this vulnerability an attacker can able to view profile
+  information (but not anything else or change anything)"
+date: "2025-02-21"
+pubdate: "2025-02-21"
+affected_range: "<3.3"
+fixed_versions:
+- "3.3"
+affected_versions: "All versions before 3.3"
+not_impacted: "All versions starting from 3.3"
+solution: "Upgrade to version 3.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-3hfj-qcvj-4hx8"
+- "https://github.com/Leantime/leantime/security/advisories/GHSA-3hfj-qcvj-4hx8"
+- "https://github.com/Leantime/leantime"
+uuid: "642b6826-014f-4221-a0cc-0fce7b5abfb1"
+cwe_ids:
+- "CWE-862"
+- "CWE-937"
+- "CWE-1035"

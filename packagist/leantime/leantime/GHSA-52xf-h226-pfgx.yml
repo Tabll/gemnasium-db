@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-52xf-h226-pfgx"
+identifiers:
+- "GHSA-52xf-h226-pfgx"
+package_slug: "packagist/leantime/leantime"
+title: "Leantime allows Refelected Cross-Site Scripting (XSS)"
+description: "The vulnerability in Leantime's \"overdue\" section allows attackers
+  to upload malicious image files containing XSS payloads. When other users view these
+  files, the scripts execute, enabling attackers to steal sensitive information or
+  perform unauthorized actions. Improving input validation and output encoding in
+  the file upload process can prevent this exploit. Accessing and enhancing the relevant
+  source code modules is crucial for addressing this security flaw effectively."
+date: "2025-02-21"
+pubdate: "2025-02-21"
+affected_range: "<3.3"
+fixed_versions:
+- "3.3"
+affected_versions: "All versions before 3.3"
+not_impacted: "All versions starting from 3.3"
+solution: "Upgrade to version 3.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-52xf-h226-pfgx"
+- "https://github.com/Leantime/leantime/security/advisories/GHSA-52xf-h226-pfgx"
+- "https://github.com/Leantime/leantime"
+uuid: "fd29dbe6-5784-4408-9c11-15b57ed52364"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"
