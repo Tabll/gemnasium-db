@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-vp58-j275-797x"
+identifiers:
+- "GHSA-vp58-j275-797x"
+package_slug: "npm/better-auth"
+title: "Better Auth allows bypassing the trustedOrigins Protection which leads to
+  ATO"
+description: "A bypass was found for **wildcard** or **absolute URLs** trustedOrigins
+  configurations and opens the victims website to a **Open Redirect** vulnerability,
+  where it can be used to steal the **reset password token** of a victims account
+  by changing the \"callbackURL\" parameter value to a website owned by the attacker."
+date: "2025-03-03"
+pubdate: "2025-02-24"
+affected_range: "<1.1.21"
+fixed_versions:
+- "1.1.21"
+affected_versions: "All versions before 1.1.21"
+not_impacted: "All versions starting from 1.1.21"
+solution: "Upgrade to version 1.1.21 or above."
+urls:
+- "https://github.com/advisories/GHSA-vp58-j275-797x"
+- "https://github.com/better-auth/better-auth/security/advisories/GHSA-vp58-j275-797x"
+- "https://github.com/better-auth/better-auth/commit/b381cac7aafd6aa53ef78b6ab771ebfa24643c80"
+- "https://github.com/better-auth/better-auth"
+- "https://github.com/better-auth/better-auth/blob/ddebd0358d74376ea64541512d0167dd4377f182/packages/better-auth/src/api/middlewares/origin-check.ts#L53"
+uuid: "ac7a91be-ee4e-4f95-96bc-f9fd8ebd7c48"
+cwe_ids:
+- "CWE-601"
+- "CWE-937"
+- "CWE-1035"

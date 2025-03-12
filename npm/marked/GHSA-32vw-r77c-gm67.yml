@@ -1,0 +1,26 @@
+---
+identifier: "GHSA-32vw-r77c-gm67"
+identifiers:
+- "GHSA-32vw-r77c-gm67"
+package_slug: "npm/marked"
+title: "Withdrawn Advisory: marked cross-site scripting vulnerability"
+description: "Versions 0.3.2 and earlier of marked are affected by a cross-site scripting
+  vulnerability even when sanitize:true is set."
+date: "2025-02-26"
+pubdate: "2020-08-03"
+affected_range: "<0.3.3"
+fixed_versions:
+- "0.3.3"
+affected_versions: "All versions before 0.3.3"
+not_impacted: "All versions starting from 0.3.3"
+solution: "Upgrade to version 0.3.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-32vw-r77c-gm67"
+- "https://github.com/markedjs/marked/issues/492"
+- "https://github.com/markedjs/marked/commit/fc372d1c6293267722e33f2719d57cebd67b3da1"
+- "https://www.npmjs.com/advisories/24"
+- "https://www.npmjs.com/advisories/24/versions"
+uuid: "b5280838-66a9-4358-aedc-17ef16cd0a4a"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

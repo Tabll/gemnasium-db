@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-5pmw-9j92-3c4c"
+identifiers:
+- "GHSA-5pmw-9j92-3c4c"
+package_slug: "cargo/openh264-sys2"
+title: "OpenH264 Rust API Openh264 Decoding Functions Heap Overflow Vulnerability"
+description: "OpenH264 recently reported a [heap overflow](https://github.com/cisco/openh264/security/advisories/GHSA-m99q-5j7x-7m9x)
+  that was fixed in upstream [63db555](https://github.com/cisco/openh264/commit/63db555e30986e3a5f07871368dc90ae78c27449)
+  and [integrated into](https://github.com/ralfbiedert/openh264-rs/commit/3a822fff0b4c9a984622ca2b179fe8898ac54b14)
+  our 0.6.6 release. For users relying on Cisco's pre-compiled DLL, we also published
+  0.8.0, which is compatible with their latest fixed DLL version  2.6.0.\n\nIn other
+  words:\n- if you rely on our `source` feature only, >=0.6.6 should be safe,\n- if
+  you rely on `libloading`, you must upgrade to 0.8.0 _and_ use their latest DLL >=2.6.0.\n\nUsers
+  handling untrusted video files should update immediately."
+date: "2025-02-24"
+pubdate: "2025-02-24"
+affected_range: "<0.8.0"
+fixed_versions:
+- "0.8.0"
+affected_versions: "All versions before 0.8.0"
+not_impacted: "All versions starting from 0.8.0"
+solution: "Upgrade to version 0.8.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-5pmw-9j92-3c4c"
+- "https://nvd.nist.gov/vuln/detail/CVE-2025-27091"
+- "https://github.com/cisco/openh264/pull/3818"
+- "https://github.com/ralfbiedert/openh264-rs/commit/3a822fff0b4c9a984622ca2b179fe8898ac54b14"
+- "https://github.com/ralfbiedert/openh264-rs"
+- "https://rustsec.org/advisories/RUSTSEC-2025-0008.html"
+uuid: "4e16612e-9401-4044-bbd7-2909561279c8"
+cwe_ids:
+- "CWE-122"
+- "CWE-1395"
+- "CWE-937"
+- "CWE-1035"

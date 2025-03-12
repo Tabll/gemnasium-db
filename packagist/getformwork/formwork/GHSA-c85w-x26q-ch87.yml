@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-c85w-x26q-ch87"
+identifiers:
+- "GHSA-c85w-x26q-ch87"
+package_slug: "packagist/getformwork/formwork"
+title: "Formwork improperly validates input of User role preventing site and panel
+  availability"
+description: "Improper validation of select fields allows attackers to craft an input
+  that crashes the system, resulting in a 500 status and making the entire site and
+  administration panel unavailable.\nThis clearly impacts the Availability aspect
+  of the CIA triad (confidentiality, integrity, and availability), although the attack
+  still has certain limitations."
+date: "2025-03-01"
+pubdate: "2025-03-01"
+affected_range: "<=2.0.0-beta.3"
+fixed_versions: []
+affected_versions: "All versions up to 2.0.0-beta.3"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-c85w-x26q-ch87"
+- "https://github.com/getformwork/formwork/security/advisories/GHSA-c85w-x26q-ch87"
+- "https://github.com/getformwork/formwork/commit/d9f0c1feb3b9855d5bdc8bb189c0aaab2792e7ca"
+- "https://github.com/getformwork/formwork"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:L/I:L/A:H"
+uuid: "528dee35-9883-43ca-9868-8ef9c0631cd8"
+cwe_ids:
+- "CWE-1285"
+- "CWE-248"
+- "CWE-937"
+- "CWE-1035"

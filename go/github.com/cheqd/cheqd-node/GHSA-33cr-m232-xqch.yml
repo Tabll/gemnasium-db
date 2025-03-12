@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-33cr-m232-xqch"
+identifiers:
+- "GHSA-33cr-m232-xqch"
+package_slug: "go/github.com/cheqd/cheqd-node"
+title: "cheqd-node affected by Non-deterministic JSON Unmarshalling of IBC Acknowledgement"
+description: "[An issue was discovered in IBC-Go's deserialization of acknowledgements](https://github.com/cosmos/ibc-go/security/advisories/GHSA-jg6f-48ff-5xrw)
+  that results in non-deterministic behavior which can halt a chain. Any user that
+  can open an IBC channel can introduce this state to the chain.\n\nThis an upstream
+  dependency used in cheqd-node, rather than a custom module."
+date: "2025-03-11"
+pubdate: "2025-03-11"
+affected_range: "<3.1.7"
+fixed_versions:
+- "3.1.7"
+affected_versions: "All versions before 3.1.7"
+not_impacted: "All versions starting from 3.1.7"
+solution: "Upgrade to version 3.1.7 or above."
+urls:
+- "https://github.com/advisories/GHSA-33cr-m232-xqch"
+- "https://github.com/cheqd/cheqd-node/security/advisories/GHSA-33cr-m232-xqch"
+- "https://github.com/cosmos/ibc-go/security/advisories/GHSA-jg6f-48ff-5xrw"
+- "https://github.com/cosmos/ibc-go/commit/59987d52d959dc5876ffd4f307c9b33a52a43748"
+- "https://github.com/cheqd/cheqd-node"
+uuid: "f2c21467-39d4-48a5-980b-0f3e45ae4b29"
+cwe_ids:
+- "CWE-502"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-fmwf-c46w-r8qm"
+identifiers:
+- "GHSA-fmwf-c46w-r8qm"
+package_slug: "cargo/qcp"
+title: "qcp has possible crash/DOS in some build configurations"
+description: "**Nature of issue:** Crash (Denial of Service)\n**Source of issue:**
+  Dependent package (ring)\n**Affected versions of qcp:** 0.1.0-0.3.2\n**Recommendation:**
+  Upgrade to qcp 0.3.3 or later"
+date: "2025-03-08"
+pubdate: "2025-03-08"
+affected_range: "<0.3.3"
+fixed_versions:
+- "0.3.3"
+affected_versions: "All versions before 0.3.3"
+not_impacted: "All versions starting from 0.3.3"
+solution: "Upgrade to version 0.3.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-fmwf-c46w-r8qm"
+- "https://github.com/crazyscot/qcp/security/advisories/GHSA-fmwf-c46w-r8qm"
+- "https://github.com/advisories/GHSA-4p46-pwfr-66x6"
+- "https://github.com/briansmith/ring/blob/main/RELEASES.md#version-01712-2025-03-05"
+- "https://github.com/crazyscot/qcp"
+- "https://rustsec.org/advisories/RUSTSEC-2025-0009.html"
+uuid: "999f26f5-a926-4d49-bda1-fbc86d1ad0a8"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

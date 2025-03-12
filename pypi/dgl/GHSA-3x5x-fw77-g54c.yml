@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-3x5x-fw77-g54c"
+identifiers:
+- "GHSA-3x5x-fw77-g54c"
+package_slug: "pypi/dgl"
+title: "dmlc/dgl Vulnerable to Remote Code Execution by Pickle Deserialization via
+  rpc.recv_request()"
+description: "Dgl implements rpc server (start_server() in rpc_server.py) for supporting
+  the RPC communications among different remote users over networks. It relies on
+  pickle serialize and deserialize to pack and unpack network messages. The is a known
+  risk in pickle deserialization functionality that can be used for remote code execution."
+date: "2025-03-05"
+pubdate: "2025-03-05"
+affected_range: "<=2.4.0"
+fixed_versions: []
+affected_versions: "All versions up to 2.4.0"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-3x5x-fw77-g54c"
+- "https://github.com/dmlc/dgl/security/advisories/GHSA-3x5x-fw77-g54c"
+- "https://github.com/dmlc/dgl/issues/7874"
+- "https://github.com/dmlc/dgl"
+uuid: "29de2dae-58c6-4dda-a63e-b88d1d7487bd"
+cwe_ids:
+- "CWE-502"
+- "CWE-937"
+- "CWE-1035"

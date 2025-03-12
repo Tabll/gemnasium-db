@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-w7f9-wqc4-3wxr"
+identifiers:
+- "GHSA-w7f9-wqc4-3wxr"
+package_slug: "npm/@mockoon/cli"
+title: "Mockoon has a Path Traversal and LFI in the static file serving endpoint"
+description: "A mock API configuration for static file serving following the same
+  approach presented in the [documentation page](https://mockoon.com/tutorials/create-endpoint-serving-static-file/),
+  where the server filename is generated via templating features from user input is
+  vulnerable to Path Traversal and LFI, allowing an attacker to get any file in the
+  mock server filesystem.\nThe issue may be particularly relevant in cloud hosted
+  server instances"
+date: "2025-03-11"
+pubdate: "2025-03-11"
+affected_range: "<=9.1.0"
+fixed_versions: []
+affected_versions: "All versions up to 9.1.0"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-w7f9-wqc4-3wxr"
+- "https://github.com/mockoon/mockoon/security/advisories/GHSA-w7f9-wqc4-3wxr"
+- "https://github.com/mockoon/mockoon/commit/c7f6e23e87dc3b8cc44e5802af046200a797bd2e"
+- "https://github.com/mockoon/mockoon"
+- "https://github.com/mockoon/mockoon/blob/1ed31c4059d7f757f6cb2a43e10dc81b0d9c55a9/packages/commons-server/src/libs/server/server.ts#L1400"
+- "https://github.com/mockoon/mockoon/blob/1ed31c4059d7f757f6cb2a43e10dc81b0d9c55a9/packages/commons-server/src/libs/server/server.ts#L1551"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+uuid: "c4f31642-ab3b-43c0-a57a-3de2d6199ecc"
+cwe_ids:
+- "CWE-22"
+- "CWE-73"
+- "CWE-937"
+- "CWE-1035"

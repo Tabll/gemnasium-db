@@ -1,0 +1,36 @@
+---
+identifier: "GHSA-m3hp-8546-5qmr"
+identifiers:
+- "GHSA-m3hp-8546-5qmr"
+package_slug: "maven/org.keycloak/keycloak-ldap-federation"
+title: "Duplicate Advisory: Authentication Bypass Due to Missing LDAP Bind After Password
+  Reset in Keycloak "
+description: "# Duplicate Advisory\nThis advisory has been withdrawn because it is
+  a duplicate of GHSA-2p82-5wwr-43cw. This link is maintained to preserve external
+  references.\n\n# Original Description\n\nA flaw was found in Keycloak. When an Active
+  Directory user resets their password, the system updates it without performing an
+  LDAP bind to validate the new credentials against AD. This vulnerability allows
+  users whose AD accounts are expired or disabled to regain access in Keycloak, bypassing
+  AD restrictions. The issue enables authentication bypass and could allow unauthorized
+  access under certain conditions."
+date: "2025-03-10"
+pubdate: "2025-01-22"
+affected_range: "[,26.1.0]"
+fixed_versions: []
+affected_versions: "All versions up to 26.1.0"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-m3hp-8546-5qmr"
+- "https://nvd.nist.gov/vuln/detail/CVE-2025-0604"
+- "https://access.redhat.com/errata/RHSA-2025:2544"
+- "https://access.redhat.com/errata/RHSA-2025:2545"
+- "https://access.redhat.com/security/cve/CVE-2025-0604"
+- "https://bugzilla.redhat.com/show_bug.cgi?id=2338993"
+- "https://github.com/keycloak/keycloak"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N"
+uuid: "199e33ce-243d-4740-b6a3-b610ba7876cc"
+cwe_ids:
+- "CWE-287"
+- "CWE-937"
+- "CWE-1035"

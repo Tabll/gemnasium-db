@@ -10,7 +10,7 @@ description: "Chains using affected versions of Packet Forward Middleware in the
   of service. This affects IBC transfers for any asset which is being transferred
   between another chain and its native chain.\n\nWe recommend upgrading as soon as
   possible.\n\n__THIS IS A STATE BREAKING CHANGE__"
-date: "2025-02-12"
+date: "2025-03-11"
 pubdate: "2025-02-12"
 affected_range: "<8.1.1"
 fixed_versions:

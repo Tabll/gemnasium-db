@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-5478-v2w6-c6q7"
+identifiers:
+- "GHSA-5478-v2w6-c6q7"
+package_slug: "pypi/keras"
+title: "Duplicate Advisory: Keras arbitrary code execution vulnerability"
+description: "# Duplicate Advisory\nThis advisory has been withdrawn because it is
+  a duplicate of GHSA-48g7-3x6r-xfhp. This link is maintained to preserve external
+  references.\n\n# Original Description\n\nThe Keras Model.load_model function permits
+  arbitrary code execution, even with safe_mode=True, through a manually constructed,
+  malicious .keras archive. By altering the config.json file within the archive, an
+  attacker can specify arbitrary Python modules and functions, along with their arguments,
+  to be loaded and executed during model loading."
+date: "2025-03-11"
+pubdate: "2025-03-11"
+affected_range: "<3.9.0"
+fixed_versions:
+- "3.9.0"
+affected_versions: "All versions before 3.9.0"
+not_impacted: "All versions starting from 3.9.0"
+solution: "Upgrade to version 3.9.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-5478-v2w6-c6q7"
+- "https://nvd.nist.gov/vuln/detail/CVE-2025-1550"
+- "https://github.com/keras-team/keras/pull/20751"
+- "https://github.com/keras-team/keras/commit/e67ac8ffd0c883bec68eb65bb52340c7f9d3a903"
+- "https://github.com/keras-team/keras"
+- "https://github.com/keras-team/keras/releases/tag/v3.9.0"
+uuid: "52f4cec6-1a6e-411a-aaee-c23fe73ec83f"
+cwe_ids:
+- "CWE-94"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,26 @@
+---
+identifier: "GHSA-vf6x-59hh-332f"
+identifiers:
+- "GHSA-vf6x-59hh-332f"
+package_slug: "packagist/getformwork/formwork"
+title: " Formwork has a cross-site scripting (XSS) vulnerability in Site title"
+description: "The site title field at /panel/options/site/allows embedding JS tags,
+  which can be used to attack all members of the system. This is a widespread attack
+  and can cause significant damage if there is a considerable number of users."
+date: "2025-03-01"
+pubdate: "2025-03-01"
+affected_range: "=2.0.0-beta.3"
+fixed_versions: []
+affected_versions: "Version 2.0.0-beta.3"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-vf6x-59hh-332f"
+- "https://github.com/getformwork/formwork/security/advisories/GHSA-vf6x-59hh-332f"
+- "https://github.com/getformwork/formwork"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:L/I:L/A:L"
+uuid: "62f8eeba-2320-497a-af47-45354e334334"
+cwe_ids:
+- "CWE-80"
+- "CWE-937"
+- "CWE-1035"

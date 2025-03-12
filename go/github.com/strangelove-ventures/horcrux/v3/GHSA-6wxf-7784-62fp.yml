@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-6wxf-7784-62fp"
+identifiers:
+- "GHSA-6wxf-7784-62fp"
+package_slug: "go/github.com/strangelove-ventures/horcrux/v3"
+title: "Horcrux Double Sign Possibility"
+description: "On March 6, 2025, a Horcrux user (01node) experienced a double-signing
+  incident on the Osmosis network, resulting in a 5% slash penalty (approximately
+  75,000 OSMO or $20,000 USD). After thorough investigation, we have identified a
+  race condition in Horcrux's signature state handling as the root cause. This vulnerability
+  was introduced in July 2023 as part of PR [\\#169](https://github.com/strangelove-ventures/horcrux/pull/169)
+  and affects all Horcrux versions from v3.1.0 through v3.3.1. A fix has been developed
+  and is being deployed immediately."
+date: "2025-03-07"
+pubdate: "2025-03-07"
+affected_range: ">=3.1.0 <3.3.2"
+fixed_versions:
+- "3.3.2"
+affected_versions: "All versions starting from 3.1.0 before 3.3.2"
+not_impacted: "All versions before 3.1.0, all versions starting from 3.3.2"
+solution: "Upgrade to version 3.3.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-6wxf-7784-62fp"
+- "https://github.com/strangelove-ventures/horcrux/security/advisories/GHSA-6wxf-7784-62fp"
+- "https://github.com/strangelove-ventures/horcrux/pull/169"
+- "https://github.com/strangelove-ventures/horcrux/commit/fb49be9baed30942b81b42da2b4f7040a2a83c02"
+- "https://github.com/strangelove-ventures/horcrux"
+- "https://github.com/strangelove-ventures/horcrux/releases/tag/v3.3.2"
+uuid: "00634c9f-80f7-4ea5-8b19-1380c66a6612"
+cwe_ids:
+- "CWE-362"
+- "CWE-937"
+- "CWE-1035"
