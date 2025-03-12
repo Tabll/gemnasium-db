@@ -1,5 +1,7 @@
 stages:
   - sync
+variables:
+  GIT_SSL_NO_VERIFY: "true"  # 禁用 Git SSL 验证
 
 run:
   image: tabll/git:latest
