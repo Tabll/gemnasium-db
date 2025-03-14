@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-323w-6p85-26fr"
+identifiers:
+- "GHSA-323w-6p85-26fr"
+package_slug: "go/github.com/plentico/plenti"
+title: "Duplicate Advisory: Plenti  - Code Injection - Denial of Services"
+description: "# Duplicate Advisory\nThis advisory has been withdrawn because it is
+  a duplicate of GHSA-mj4v-hp69-27x5. This link is maintained to preserve external
+  references.\n\n# Original Description\nPlenti <= 0.7.16 is vulnerable to code execution.
+  Users uploading '.svelte' files with the /postLocal endpoint can define the file
+  name as javascript codes. The server executes the uploaded file name in host, and
+  cause code execution."
+date: "2025-03-12"
+pubdate: "2025-03-12"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-323w-6p85-26fr"
+- "https://github.com/plentico/plenti/security/advisories/GHSA-mj4v-hp69-27x5"
+- "https://nvd.nist.gov/vuln/detail/CVE-2025-26260"
+- "https://github.com/plentico/plenti/commit/c3e72a9ebbc2a03f4b0f3104becbfc25e390cb8e"
+- "https://ahmetakan.com/2025/02/14/cve-2025-26260"
+- "https://github.com/ahmetak4n/vulnerability-playground/tree/main/vulnerability-research/CVE-2025-26260"
+- "https://github.com/plentico/plenti"
+- "https://github.com/plentico/plenti/releases/tag/v0.7.17"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+uuid: "688b9052-b8d3-4c03-8e80-9cd7a53a9595"
+cwe_ids:
+- "CWE-94"
+- "CWE-937"
+- "CWE-1035"
