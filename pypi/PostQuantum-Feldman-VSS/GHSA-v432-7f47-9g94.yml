@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-v432-7f47-9g94"
+identifiers:
+- "GHSA-v432-7f47-9g94"
+package_slug: "pypi/PostQuantum-Feldman-VSS"
+title: "PostQuantum-Feldman-VSS'S Dependency Vulnerability in gmpy2 Leading to Interpreter
+  Crash"
+description: "PostQuantum-Feldman-VSS, in versions ≤0.7.6b0, is vulnerable due to
+  its dependency on gmpy2, which can crash the Python interpreter if memory allocation
+  fails. This can be exploited for denial-of-service attacks, impacting the availability
+  of systems using the library."
+date: "2025-03-17"
+pubdate: "2025-03-17"
+affected_range: "<0.7.7b0"
+fixed_versions:
+- "0.7.7b0"
+affected_versions: "All versions before 0.7.7b0"
+not_impacted: "All versions starting from 0.7.7b0"
+solution: "Upgrade to version 0.7.7b0 or above."
+urls:
+- "https://github.com/advisories/GHSA-v432-7f47-9g94"
+- "https://github.com/DavidOsipov/PostQuantum-Feldman-VSS/security/advisories/GHSA-v432-7f47-9g94"
+- "https://github.com/DavidOsipov/PostQuantum-Feldman-VSS"
+uuid: "5d987c9b-af04-44ac-9bce-41ecfdc0e8d9"
+cwe_ids:
+- "CWE-400"
+- "CWE-937"
+- "CWE-1035"

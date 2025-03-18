@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-jwpw-q68h-r678"
+identifiers:
+- "GHSA-jwpw-q68h-r678"
+package_slug: "pub/dio"
+title: "Duplicate Advisory: Improper Neutralization of CRLF Sequences in dio"
+description: "## Duplicate advisory\nThis advisory has been withdrawn because it is
+  a duplicate of GHSA-9324-jv53-9cc8. This link is maintained to preserve external
+  references.\n\n## Original Description\nThe dio package prior to 5.0.0 for Dart
+  allows CRLF injection if the attacker controls the HTTP method string, a different
+  vulnerability than CVE-2020-35669."
+date: "2023-10-05"
+pubdate: "2022-05-24"
+affected_range: "<5.0.0"
+fixed_versions:
+- "5.0.0"
+affected_versions: "All versions before 5.0.0"
+not_impacted: "All versions starting from 5.0.0"
+solution: "Upgrade to version 5.0.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-jwpw-q68h-r678"
+- "https://nvd.nist.gov/vuln/detail/CVE-2021-31402"
+- "https://github.com/cfug/dio/issues/1130"
+- "https://github.com/cfug/dio/commit/927f79e93ba39f3c3a12c190624a55653d577984"
+- "https://github.com/cfug/dio"
+- "https://osv.dev/GHSA-jwpw-q68h-r678"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+uuid: "f9a6bd2b-27d7-4d7e-ad06-a5f53895b85d"
+cwe_ids:
+- "CWE-74"
+- "CWE-88"
+- "CWE-93"
+- "CWE-937"
+- "CWE-1035"

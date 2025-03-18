@@ -88,7 +88,7 @@ def validate_mutually_exclusive_versions(yaml_dict)
 
   raw_fixed.each do |raw_fixed_str|
     begin
-      sat = SemverDialects::VersionChecker.version_sat?(package_type_str == "swift" || package_type_str == "cargo" ? "npm" : package_type_str, raw_fixed_str, raw_affected)
+      sat = SemverDialects::VersionChecker.version_sat?(package_type_str == "swift" || package_type_str == "cargo" || package_type_str == "pub" ? "npm" : package_type_str, raw_fixed_str, raw_affected)
       if sat
         errors << "Fixed version #{raw_fixed_str} may be also be affected (#{raw_affected})"
       end

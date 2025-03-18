@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-3pwp-2fqj-6g2p"
+identifiers:
+- "GHSA-3pwp-2fqj-6g2p"
+package_slug: "pypi/qiskit"
+title: "Duplicate Advisory: Qiskit allows arbitrary code execution decoding QPY format
+  versions < 13"
+description: "# Duplicate Advisory\nThis advisory has been withdrawn because it is
+  a duplicate of GHSA-6m2c-76ff-6vrf. This link is maintained to preserve external
+  references.\n\n# Original Description\nA maliciously crafted QPY file can potential
+  execute arbitrary-code embedded in the payload without privilege escalation when
+  deserialising QPY formats < 13. A python process calling Qiskit 0.18.0 through 1.4.1's
+  `qiskit.qpy.load()` function could potentially execute any arbitrary Python code
+  embedded in the correct place in the binary file as part of specially constructed
+  payload."
+date: "2025-03-14"
+pubdate: "2025-03-14"
+affected_range: "<=1.4.1"
+fixed_versions: []
+affected_versions: "All versions up to 1.4.1"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-3pwp-2fqj-6g2p"
+- "https://nvd.nist.gov/vuln/detail/CVE-2025-2000"
+- "https://www.ibm.com/support/pages/node/7185949"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+uuid: "5cb737bc-a362-47fa-8f7c-1e4b2ed6d531"
+cwe_ids:
+- "CWE-502"
+- "CWE-937"
+- "CWE-1035"

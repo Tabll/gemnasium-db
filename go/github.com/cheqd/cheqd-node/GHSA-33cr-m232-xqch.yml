@@ -8,7 +8,7 @@ description: "[An issue was discovered in IBC-Go's deserialization of acknowledg
   that results in non-deterministic behavior which can halt a chain. Any user that
   can open an IBC channel can introduce this state to the chain.\n\nThis an upstream
   dependency used in cheqd-node, rather than a custom module."
-date: "2025-03-11"
+date: "2025-03-14"
 pubdate: "2025-03-11"
 affected_range: "<3.1.7"
 fixed_versions:
@@ -22,6 +22,7 @@ urls:
 - "https://github.com/cosmos/ibc-go/security/advisories/GHSA-jg6f-48ff-5xrw"
 - "https://github.com/cosmos/ibc-go/commit/59987d52d959dc5876ffd4f307c9b33a52a43748"
 - "https://github.com/cheqd/cheqd-node"
+- "https://pkg.go.dev/vuln/GO-2025-3514"
 uuid: "f2c21467-39d4-48a5-980b-0f3e45ae4b29"
 cwe_ids:
 - "CWE-502"

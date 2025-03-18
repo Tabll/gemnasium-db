@@ -80,6 +80,7 @@ contributions.
 | @flagosatfluid| !26642 |
 | @greengeko | !26649, !26857, !26898, !27717, !27720 |
 | @hristiyan.ivanov | !26861, #274 |
+| @alexandre.laroche.exfo | !36257 |
 
 
 ## Directory structure
@@ -119,6 +120,7 @@ nuget
 conan
 swift
 cargo
+pub
 ```
 
 These correspond to:
@@ -133,6 +135,7 @@ These correspond to:
 - Conan packages from [conan.io](https://conan.io/center/)
 - Swift from source code hosting services such as `gitlab.com` or `github.com`
 - Cargo from source code hosting services such as `gitlab.com` or `github.com`
+- Pub packages from [pub.dev](https://pub.dev/)
 
 For npm packages, the package name may include a [npm scope](https://docs.npmjs.com/misc/scope).
 For instance, the package slug of [@babel/cli](https://www.npmjs.com/package/@babel/cli) is:
@@ -230,6 +233,7 @@ The syntax to be used in `affected_range` depends on the package type:
 - `conan`: [node-semver flavour](https://github.com/npm/node-semver#ranges)
 - `swift`: [node-semver flavour](https://github.com/npm/node-semver#ranges)
 - `cargo`: [node-semver flavour](https://github.com/npm/node-semver#ranges)
+- `pub`: [node-semver flavour](https://github.com/npm/node-semver#ranges)
 
 
 The YAML schema also supports temporary fields. All temporary field names start with

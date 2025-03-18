@@ -1,0 +1,25 @@
+---
+identifier: "GHSA-h42x-xx2q-6v6g"
+identifiers:
+- "GHSA-h42x-xx2q-6v6g"
+package_slug: "npm/flowise"
+title: "Flowise Pre-auth Arbitrary File Upload"
+description: "An unauthorized attacker can leverage the allow-listed route `/api/v1/attachments`
+  to upload arbitrary files when the `storageType` is set to **local** (default)."
+date: "2025-03-13"
+pubdate: "2025-03-13"
+affected_range: "<=2.2.7"
+fixed_versions: []
+affected_versions: "All versions up to 2.2.7"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-h42x-xx2q-6v6g"
+- "https://github.com/FlowiseAI/Flowise/security/advisories/GHSA-h42x-xx2q-6v6g"
+- "https://github.com/FlowiseAI/Flowise/commit/c2b830f279e454e8b758da441016b2234f220ac7"
+- "https://github.com/FlowiseAI/Flowise"
+uuid: "19979ac1-baa9-4412-a8ec-178825165fda"
+cwe_ids:
+- "CWE-434"
+- "CWE-937"
+- "CWE-1035"
