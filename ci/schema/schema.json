@@ -129,7 +129,7 @@
         "examples": [
           "2.0.21.Final"
         ],
-        "pattern": "^([\\d\\.a-zA-Z_\\-]+)$"
+        "pattern": "^([\\d\\.a-zA-Z_+\\-]+)$"
       }
     },
     "affected_versions": {
@@ -279,7 +279,7 @@
             "$id": "#/properties/versions/items/properties/number",
             "type": "string",
             "title": "Version Information",
-            "pattern": "^([\\d\\.a-zA-Z_\\-]+)$",
+            "pattern": "^([\\d\\.a-zA-Z_+\\-]+)$",
             "examples": [
               "1.2.3"
             ]

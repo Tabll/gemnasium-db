@@ -1,3 +1,6 @@
+#### [v2.5.0] 2025-03-19
+##### Changed
+- Allow `+` in `fixed_versions` and `versions.number` (!36490)
 #### [v2.4.0] 2025-03-14
 ##### Added
 - Pub support (!36257)
