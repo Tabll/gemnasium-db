@@ -7,7 +7,7 @@ title: "Nokogiri updates packaged libxslt to v1.1.43 to resolve multiple CVEs"
 description: "Nokogiri v1.18.4 upgrades its dependency libxslt to [v1.1.43](https://gitlab.gnome.org/GNOME/libxslt/-/releases/v1.1.43).\n\nlibxslt
   v1.1.43 resolves:\n\n- CVE-2025-24855: Fix use-after-free of XPath context node\n-
   CVE-2024-55549: Fix UAF related to excluded namespaces"
-date: "2025-03-14"
+date: "2025-03-21"
 pubdate: "2025-03-14"
 affected_range: "<1.18.4"
 fixed_versions:
@@ -23,6 +23,7 @@ urls:
 - "https://github.com/sparklemotion/nokogiri"
 - "https://gitlab.gnome.org/GNOME/libxslt/-/issues/127"
 - "https://gitlab.gnome.org/GNOME/libxslt/-/issues/128"
+cvss_v3: "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:C/C:N/I:H/A:H"
 uuid: "379a1c15-1b4b-4c24-bde2-898055527e8b"
 cwe_ids:
 - "CWE-1395"
