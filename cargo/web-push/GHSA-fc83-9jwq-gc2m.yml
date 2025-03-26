@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-fc83-9jwq-gc2m"
+identifiers:
+- "GHSA-fc83-9jwq-gc2m"
+package_slug: "cargo/web-push"
+title: "Web Push Denial of Service via malicious Web Push endpoint"
+description: "Prior to version 0.10.3, the built-in clients of the `web-push` crate
+  eagerly allocated memory based on the `Content-Length` header returned by the Web
+  Push endpoint. Malicious Web Push endpoints could return a large `Content-Length`
+  without ever having to send as much data, leading to denial of service by memory
+  exhaustion.\n\nServices providing Web Push notifications typically allow the user
+  to register an arbitrary endpoint, so the endpoint should not be trusted.\n\nThe
+  fixed version 0.10.3 now limits the amount of memory it will allocate for each response,
+  limits the amount of data it will read from the endpoint, and returns an error if
+  the endpoint sends too much data.\n\nAs before, it is recommended that services
+  add a timeout for each request to Web Push endpoints."
+date: "2025-03-24"
+pubdate: "2025-03-24"
+affected_range: "<0.10.4"
+fixed_versions:
+- "0.10.4"
+affected_versions: "All versions before 0.10.4"
+not_impacted: "All versions starting from 0.10.4"
+solution: "Upgrade to version 0.10.4 or above."
+urls:
+- "https://github.com/advisories/GHSA-fc83-9jwq-gc2m"
+- "https://github.com/pimeys/rust-web-push/pull/68"
+- "https://github.com/pimeys/rust-web-push"
+- "https://rustsec.org/advisories/RUSTSEC-2025-0015.html"
+uuid: "3846f825-2742-4f95-96cd-8b59551e8f83"
+cwe_ids:
+- "CWE-770"
+- "CWE-937"
+- "CWE-1035"

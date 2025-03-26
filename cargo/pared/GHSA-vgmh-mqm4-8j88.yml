@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-vgmh-mqm4-8j88"
+identifiers:
+- "GHSA-vgmh-mqm4-8j88"
+package_slug: "cargo/pared"
+title: "pared Vulnerable to Use After Free in `Parc` and `Prc` Due to Missing Lifetime
+  Constraints"
+description: "Affected versions of this crate didn't provide sufficient lifetime constraints
+  to conversion functions from `alloc::sync::Arc` and `alloc::rc::Rc`, which made
+  it possible to create projections of these reference counted pointers. Unlike the
+  original reference counted pointers, these projections could outlive original data's
+  lifetimes.\n\nThis projected pointer could cause the original `Arc`'s or `Rc`'s
+  `Drop::drop` to get called at a point where the original data was no longer valid,
+  leading to a potential use after free.\n\nThe affected functions were\n- `pared::prc::Prc::from_rc`\n-
+  `pared::prc::Prc::project`\n- `pared::prc::Prc::try_from_rc`\n- `pared::sync::Parc::from_arc`\n-
+  `pared::sync::Parc::project`\n- `pared::sync::Parc::try_from_arc`"
+date: "2025-03-24"
+pubdate: "2025-03-24"
+affected_range: "<0.4.0"
+fixed_versions:
+- "0.4.0"
+affected_versions: "All versions before 0.4.0"
+not_impacted: "All versions starting from 0.4.0"
+solution: "Upgrade to version 0.4.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-vgmh-mqm4-8j88"
+- "https://github.com/radekvit/pared/issues/2"
+- "https://github.com/radekvit/pared/commit/108f540ea8acb6073751a1aa386085c1cdc4fd1e"
+- "https://github.com/radekvit/pared"
+- "https://rustsec.org/advisories/RUSTSEC-2025-0016.html"
+uuid: "4488863b-e903-48bd-8c8d-f5508b0792b7"
+cwe_ids:
+- "CWE-416"
+- "CWE-937"
+- "CWE-1035"

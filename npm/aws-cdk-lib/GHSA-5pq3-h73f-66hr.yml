@@ -1,0 +1,44 @@
+---
+identifier: "GHSA-5pq3-h73f-66hr"
+identifiers:
+- "GHSA-5pq3-h73f-66hr"
+package_slug: "npm/aws-cdk-lib"
+title: "AWS CDK CodePipeline: trusted entities are too broad"
+description: "The [AWS Cloud Development Kit (CDK)](https://aws.amazon.com/cdk/) is
+  an open-source framework for defining cloud infrastructure using code. Users use
+  it to create their own applications, which are converted to AWS CloudFormation templates
+  during deployment to a user's AWS account. AWS CDK contains pre-built components
+  called \"constructs,\" which are higher-level abstractions providing defaults and
+  best practices. This approach enables developers to use familiar programming languages
+  to define complex cloud infrastructure more efficiently than writing raw CloudFormation
+  templates.\n\nThe [AWS CodePipeline](https://aws.amazon.com/codepipeline/) construct
+  deploys CodePipeline, a managed service that orchestrates software release processes
+  through a series of stages, each comprising one or more actions executed by CodePipeline.
+  To perform these actions, CodePipeline assumes IAM roles with permissions necessary
+  for each step, allowing it to interact with AWS services and resources on behalf
+  of the user.\n\nAn issue exists where, when using CDK to create a CodePipeline with
+  the CDK Construct Library, CDK creates an AWS Identity and Access Management (AWS
+  IAM) trust policy with overly broad permissions. Any user with unrestricted sts:AssumeRole
+  permissions could assume that trust policy. This issue does not affect users who
+  supply their own role for CodePipeline."
+date: "2025-03-24"
+pubdate: "2025-03-24"
+affected_range: "<2.184.0"
+fixed_versions:
+- "2.184.0"
+affected_versions: "All versions before 2.184.0"
+not_impacted: "All versions starting from 2.184.0"
+solution: "Upgrade to version 2.184.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-5pq3-h73f-66hr"
+- "https://github.com/aws/aws-cdk/security/advisories/GHSA-5pq3-h73f-66hr"
+- "https://github.com/aws/aws-cdk/issues/33709"
+- "https://github.com/aws/aws-cdk/commit/a64b01cc2969822bb92d7bd72152ecb2ccf1c1cf"
+- "https://github.com/aws/aws-cdk"
+- "https://github.com/aws/aws-cdk/releases/tag/v2.184.0"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:L/I:L/A:N"
+uuid: "73a5c344-571b-4700-b386-af5429305570"
+cwe_ids:
+- "CWE-276"
+- "CWE-937"
+- "CWE-1035"
