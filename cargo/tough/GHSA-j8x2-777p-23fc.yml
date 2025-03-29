@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-j8x2-777p-23fc"
+identifiers:
+- "GHSA-j8x2-777p-23fc"
+package_slug: "cargo/tough"
+title: "tough cyclic delegation graphs are not detected"
+description: "In a TUF repository, the targets role’s signature indicates which target
+  files are trusted by clients. The role can delegate full or partial trust to other
+  roles, meaning that that role is trusted to sign target file metadata. Delegated
+  roles can further delegate trust to other delegated roles. When searching for metadata
+  about a given target, tough failed to detect cyclical role delegations."
+date: "2025-03-28"
+pubdate: "2025-03-28"
+affected_range: "<0.20.0"
+fixed_versions:
+- "0.20.0"
+affected_versions: "All versions before 0.20.0"
+not_impacted: "All versions starting from 0.20.0"
+solution: "Upgrade to version 0.20.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-j8x2-777p-23fc"
+- "https://github.com/awslabs/tough/security/advisories/GHSA-j8x2-777p-23fc"
+- "https://github.com/awslabs/tough/commit/c5ee1718e630fdedc5676bf71b5bef10e4c7f91c"
+- "https://aws.amazon.com/security/security-bulletins/AWS-2025-007"
+- "https://github.com/awslabs/tough"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:N"
+uuid: "af2255ea-1c62-4e7a-b37b-9b40295c940c"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"
