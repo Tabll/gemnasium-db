@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-jf6p-4hgv-v6qh"
+identifiers:
+- "GHSA-jf6p-4hgv-v6qh"
+package_slug: "packagist/leantime/leantime"
+title: "Duplicate Advisory: Leantime affected by Improper Neutralization of HTML Tags"
+description: "### Duplicate Advisory\nThis advisory has been withdrawn because it
+  is a duplicate of GHSA-95j3-435g-vjcp. This link is maintained to preserve external
+  references.\n\n### Original Description\nCross Site Scripting vulnerability in Leantime
+  v3.2.1 and before allows an authenticated attacker to execute arbitrary code and
+  obtain sensitive information via the first name field in processMentions()."
+date: "2025-03-31"
+pubdate: "2025-03-28"
+affected_range: "<3.3"
+fixed_versions:
+- "3.3"
+affected_versions: "All versions before 3.3"
+not_impacted: "All versions starting from 3.3"
+solution: "Upgrade to version 3.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-jf6p-4hgv-v6qh"
+- "https://github.com/Leantime/leantime/security/advisories/GHSA-95j3-435g-vjcp"
+- "https://nvd.nist.gov/vuln/detail/CVE-2025-28254"
+- "https://github.com/Leantime/leantime/commit/ce1d2073e4601183e1bdd90f4b433d16aee46a50"
+- "https://github.com/Leantime/leantime"
+- "https://github.com/Leantime/leantime/blob/0e7ddbbe3d582f657a1dddfef7b3419ae588cbf7/app/Domain/Notifications/Services/Notifications.php#L128"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N"
+uuid: "7add53be-1673-4e8d-9de6-5b3b162b6d97"
+cwe_ids:
+- "CWE-80"
+- "CWE-937"
+- "CWE-1035"

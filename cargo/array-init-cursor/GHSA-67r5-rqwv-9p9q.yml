@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-67r5-rqwv-9p9q"
+identifiers:
+- "GHSA-67r5-rqwv-9p9q"
+package_slug: "cargo/array-init-cursor"
+title: "array-init-cursor is unsound when used with types that implement `Drop`"
+description: "The `Drop` implementation will get run twice when using the cursor.\n\nThis
+  issue does not affect you, if you are using only using the crate with types that
+  are `Copy` such as `u8`.\n\nThis issue also does not affect you, if you are only
+  depending on it through the crate `planus`."
+date: "2025-03-31"
+pubdate: "2025-03-31"
+affected_range: "<0.2.1"
+fixed_versions:
+- "0.2.1"
+affected_versions: "All versions before 0.2.1"
+not_impacted: "All versions starting from 0.2.1"
+solution: "Upgrade to version 0.2.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-67r5-rqwv-9p9q"
+- "https://github.com/planus-org/planus/issues/293"
+- "https://github.com/planus-org/planus/pull/294"
+- "https://github.com/planus-org/planus"
+- "https://rustsec.org/advisories/RUSTSEC-2025-0019.html"
+uuid: "985b1407-f125-4e5d-b38e-a870cf6db96d"
+cwe_ids:
+- "CWE-672"
+- "CWE-937"
+- "CWE-1035"
