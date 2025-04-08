@@ -9,7 +9,7 @@ description: "In a TUF repository, the targets role’s signature indicates whic
   roles, meaning that that role is trusted to sign target file metadata. Delegated
   roles can further delegate trust to other delegated roles. When searching for metadata
   about a given target, tough failed to detect cyclical role delegations."
-date: "2025-03-28"
+date: "2025-04-02"
 pubdate: "2025-03-28"
 affected_range: "<0.20.0"
 fixed_versions:

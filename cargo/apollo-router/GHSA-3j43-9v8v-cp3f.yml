@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-3j43-9v8v-cp3f"
+identifiers:
+- "GHSA-3j43-9v8v-cp3f"
+package_slug: "cargo/apollo-router"
+title: "Apollo Router Query Validation Vulnerable to Excessive Resource Consumption
+  via Named Fragment Processing"
+description: "A vulnerability in Apollo Router's usage of Apollo Compiler allowed
+  queries with deeply nested and reused named fragments to be prohibitively expensive
+  to validate. This could lead to excessive resource consumption and denial of service."
+date: "2025-04-07"
+pubdate: "2025-04-07"
+affected_range: "<1.61.2||>=2.0.0-alpha.0 <2.1.1"
+fixed_versions:
+- "1.61.2"
+- "2.1.1"
+affected_versions: "All versions before 1.61.2, all versions starting from 2.0.0-alpha.0
+  before 2.1.1"
+not_impacted: "All versions starting from 1.61.2 before 2.0.0-alpha.0, all versions
+  starting from 2.1.1"
+solution: "Upgrade to versions 1.61.2, 2.1.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-3j43-9v8v-cp3f"
+- "https://github.com/apollographql/router/security/advisories/GHSA-3j43-9v8v-cp3f"
+- "https://github.com/apollographql/router/commit/ab6675a63174715ea6ff50881fc957831d4e9564"
+- "https://github.com/apollographql/router/commit/bba032e183b861348a466d3123c7137a1ae18952"
+- "https://github.com/apollographql/router"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "9e3403f5-35ca-42a9-816c-90ec6e9cb258"
+cwe_ids:
+- "CWE-770"
+- "CWE-937"
+- "CWE-1035"

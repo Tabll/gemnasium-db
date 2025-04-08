@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-p2q6-pwh5-m6jr"
+identifiers:
+- "GHSA-p2q6-pwh5-m6jr"
+package_slug: "npm/@apollo/gateway"
+title: "Apollo Gateway Query Planner Vulnerable to Excessive Resource Consumption
+  via Optimization Bypass"
+description: "A vulnerability in Apollo Gateway allowed queries with deeply nested
+  and reused named fragments to be prohibitively expensive to query plan, specifically
+  due to internal optimizations being frequently bypassed. This could lead to excessive
+  resource consumption and denial of service."
+date: "2025-04-07"
+pubdate: "2025-04-07"
+affected_range: "<2.10.1"
+fixed_versions:
+- "2.10.1"
+affected_versions: "All versions before 2.10.1"
+not_impacted: "All versions starting from 2.10.1"
+solution: "Upgrade to version 2.10.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-p2q6-pwh5-m6jr"
+- "https://github.com/apollographql/federation/security/advisories/GHSA-p2q6-pwh5-m6jr"
+- "https://github.com/apollographql/federation/pull/3236"
+- "https://github.com/apollographql/federation"
+- "https://github.com/apollographql/federation/releases/tag/%40apollo%2Fgateway%402.10.1"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "c72c4035-8873-4c03-bcd1-11e09b118eb0"
+cwe_ids:
+- "CWE-770"
+- "CWE-937"
+- "CWE-1035"

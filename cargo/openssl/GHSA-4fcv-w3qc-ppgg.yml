@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-4fcv-w3qc-ppgg"
+identifiers:
+- "GHSA-4fcv-w3qc-ppgg"
+package_slug: "cargo/openssl"
+title: "rust-openssl Use-After-Free in `Md::fetch` and `Cipher::fetch`"
+description: "When a `Some(...)` value was passed to the `properties` argument of
+  either of these functions, a use-after-free would result.\n\nIn practice this would
+  nearly always result in OpenSSL treating the properties as an empty string (due
+  to `CString::drop`'s behavior).\n\nThe maintainers thank [quitbug](https://github.com/quitbug/)
+  for reporting this vulnerability to us."
+date: "2025-04-04"
+pubdate: "2025-04-04"
+affected_range: ">=0.10.39 <0.10.72"
+fixed_versions:
+- "0.10.72"
+affected_versions: "All versions starting from 0.10.39 before 0.10.72"
+not_impacted: "All versions before 0.10.39, all versions starting from 0.10.72"
+solution: "Upgrade to version 0.10.72 or above."
+urls:
+- "https://github.com/advisories/GHSA-4fcv-w3qc-ppgg"
+- "https://github.com/sfackler/rust-openssl/pull/2390"
+- "https://github.com/sfackler/rust-openssl/commit/87085bd67896b7f92e6de35d081f607a334beae4"
+- "https://github.com/sfackler/rust-openssl"
+- "https://rustsec.org/advisories/RUSTSEC-2025-0022.html"
+uuid: "b2b6a074-d986-4428-9790-9dd2ef05c6fc"
+cwe_ids:
+- "CWE-416"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-794x-2rpg-rfgr"
+identifiers:
+- "GHSA-794x-2rpg-rfgr"
+package_slug: "cargo/jj-cli"
+title: "Jujutsu does not have SHA-1 collision detection"
+description: "Jujutsu 0.28.0 and earlier rely on versions of gitoxide that use SHA-1
+  hash implementations without any collision detection, leaving them vulnerable to
+  hash collision attacks."
+date: "2025-04-07"
+pubdate: "2025-04-07"
+affected_range: "<0.28.1"
+fixed_versions:
+- "0.28.1"
+affected_versions: "All versions before 0.28.1"
+not_impacted: "All versions starting from 0.28.1"
+solution: "Upgrade to version 0.28.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-794x-2rpg-rfgr"
+- "https://github.com/jj-vcs/jj/security/advisories/GHSA-794x-2rpg-rfgr"
+- "https://github.com/jj-vcs/jj/commit/350da7d013773377aec0d3a4bf4374d3c941460e"
+- "https://github.com/jj-vcs/jj"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:N/I:H/A:N"
+uuid: "bdfca1a5-740f-41d8-83f7-ca9421a7ccc3"
+cwe_ids:
+- "CWE-328"
+- "CWE-937"
+- "CWE-1035"
