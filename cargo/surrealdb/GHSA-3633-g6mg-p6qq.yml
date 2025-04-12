@@ -1,0 +1,37 @@
+---
+identifier: "GHSA-3633-g6mg-p6qq"
+identifiers:
+- "GHSA-3633-g6mg-p6qq"
+package_slug: "cargo/surrealdb"
+title: "SurrealDB memory exhaustion via string::replace using regex "
+description: "An authenticated user can craft a query using the `string::replace`
+  function that uses a Regex to perform a string replacement. As there is a failure
+  to restrict the resulting string length, this enables an attacker to send a `string::replace`
+  function to the SurrealDB server exhausting all the memory of the server due to
+  string allocations. This eventually results in a Denial-of-Service situation for
+  the SurrealDB server.\n\nThis issue was discovered and patched during an code audit
+  and penetration test of SurrealDB by cure53. Using CVSSv4 definitions, the severity
+  is High."
+date: "2025-04-11"
+pubdate: "2025-04-11"
+affected_range: ">=2.2.0 <2.2.2||>=2.1.0 <2.1.5||<2.0.5"
+fixed_versions:
+- "2.2.2"
+- "2.1.5"
+- "2.0.5"
+affected_versions: "All versions before 2.0.5, all versions starting from 2.1.0 before
+  2.1.5, all versions starting from 2.2.0 before 2.2.2"
+not_impacted: "All versions starting from 2.0.5 before 2.1.0, all versions starting
+  from 2.1.5 before 2.2.0, all versions starting from 2.2.2"
+solution: "Upgrade to versions 2.0.5, 2.1.5, 2.2.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-3633-g6mg-p6qq"
+- "https://github.com/surrealdb/surrealdb/security/advisories/GHSA-3633-g6mg-p6qq"
+- "https://github.com/surrealdb/surrealdb/pull/5619"
+- "https://github.com/surrealdb/surrealdb/pull/5638"
+- "https://github.com/surrealdb/surrealdb"
+uuid: "0501560d-81f9-4fc1-b5bf-08e4403aaaef"
+cwe_ids:
+- "CWE-789"
+- "CWE-937"
+- "CWE-1035"

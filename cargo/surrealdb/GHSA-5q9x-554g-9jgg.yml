@@ -1,0 +1,44 @@
+---
+identifier: "GHSA-5q9x-554g-9jgg"
+identifiers:
+- "GHSA-5q9x-554g-9jgg"
+package_slug: "cargo/surrealdb"
+title: "SurrealDB bypass of deny-net flags via redirect results in server-side request
+  forgery (SSRF)"
+description: "SurrealDB offers http functions that can access external network endpoints.
+  A typical, albeit [not recommended ](https://surrealdb.com/docs/surrealdb/reference-guide/security-best-practices#example-deny-all-capabilities-with-some-exceptions)
+  configuration would be to start SurrealDB with all network connections allowed with
+  the exception of a deny list. For example, `surreal start --allow-net --deny-net
+  10.0.0.0/8` will allow all network connections except to the 10.0.0.0/8 block.\n\nAn
+  authenticated user of SurrealDB can use redirects to bypass this restriction. For
+  example by hosting a server on the public internet which redirects to the IP addresses
+  blocked by the administrator of the SurrealDB server via HTTP 301 or 307 response
+  codes.\n\nWhen sending SurrealDB statements containing the `http::*` functions to
+  the attacker controlled host, the SurrealDB server will follow the redirects to
+  the blocked IP address. Because the statements also return the responses to the
+  attacker, this issue constitutes a full SSRF vulnerability.\n\nThis issue was discovered
+  and patched during an code audit and penetration test of SurrealDB by cure53, the
+  severity as defined within cure53's preliminary finding is Medium, matched by our
+  CVSS v4 assessment."
+date: "2025-04-11"
+pubdate: "2025-04-11"
+affected_range: ">=2.2.0 <2.2.2||>=2.1.0 <2.1.5||<2.0.5"
+fixed_versions:
+- "2.2.2"
+- "2.1.5"
+- "2.0.5"
+affected_versions: "All versions before 2.0.5, all versions starting from 2.1.0 before
+  2.1.5, all versions starting from 2.2.0 before 2.2.2"
+not_impacted: "All versions starting from 2.0.5 before 2.1.0, all versions starting
+  from 2.1.5 before 2.2.0, all versions starting from 2.2.2"
+solution: "Upgrade to versions 2.0.5, 2.1.5, 2.2.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-5q9x-554g-9jgg"
+- "https://github.com/surrealdb/surrealdb/security/advisories/GHSA-5q9x-554g-9jgg"
+- "https://github.com/surrealdb/surrealdb/pull/5597"
+- "https://github.com/surrealdb/surrealdb"
+uuid: "c1cedf5d-f296-4235-b75a-62aa1c0b9982"
+cwe_ids:
+- "CWE-918"
+- "CWE-937"
+- "CWE-1035"

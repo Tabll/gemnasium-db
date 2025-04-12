@@ -1,0 +1,40 @@
+---
+identifier: "GHSA-ccj3-5p93-8p42"
+identifiers:
+- "GHSA-ccj3-5p93-8p42"
+package_slug: "cargo/surrealdb"
+title: "SurrealDB server-takeover via SurrealQL injection on backup import"
+description: "The SurrealDB command-line tool allows exporting databases through the
+  `export` command. It was discovered that table or field names are not properly sanitized
+  in exports, leading to a SurrealQL injection when the backup is reimported.\n\nFor
+  the injection to occur, an authenticated System User with `OWNER` or `EDITOR` roles
+  needs to create tables or fields with malicious names containing SurrealQL, subsequently
+  exported using the `export` operation\n\nThe attacker could achieve a privilege
+  escalation and root level access to the SurrealDB instance if a higher privileged
+  user subsequently performs the `import` operation.\n\nFurthermore, applications
+  using SurrealDB that allow its users to define custom fields or tables are at risk
+  of a universal second order SurrealQL injection, even if query parameters are properly
+  sanitized.\n\nThis issue was discovered and patched during an code audit and penetration
+  test of SurrealDB by cure53, the severity defined within cure53's preliminary finding
+  is Critical, matched by our CVSS v4 assessment."
+date: "2025-04-11"
+pubdate: "2025-04-11"
+affected_range: ">=2.2.0 <2.2.2||>=2.1.0 <2.1.5||<2.0.5"
+fixed_versions:
+- "2.2.2"
+- "2.1.5"
+- "2.0.5"
+affected_versions: "All versions before 2.0.5, all versions starting from 2.1.0 before
+  2.1.5, all versions starting from 2.2.0 before 2.2.2"
+not_impacted: "All versions starting from 2.0.5 before 2.1.0, all versions starting
+  from 2.1.5 before 2.2.0, all versions starting from 2.2.2"
+solution: "Upgrade to versions 2.0.5, 2.1.5, 2.2.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-ccj3-5p93-8p42"
+- "https://github.com/surrealdb/surrealdb/security/advisories/GHSA-ccj3-5p93-8p42"
+- "https://github.com/surrealdb/surrealdb"
+uuid: "6b0033fa-8197-4f9f-8490-c90c99a2487d"
+cwe_ids:
+- "CWE-77"
+- "CWE-937"
+- "CWE-1035"

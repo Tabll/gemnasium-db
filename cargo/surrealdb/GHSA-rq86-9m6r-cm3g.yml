@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-rq86-9m6r-cm3g"
+identifiers:
+- "GHSA-rq86-9m6r-cm3g"
+package_slug: "cargo/surrealdb"
+title: "SurrealDB has uncaught exception in Net module that leads to database crash"
+description: "A vulnerability was found where an attacker can crash the database via
+  crafting a HTTP query that returns a null byte. The problem relies on an uncaught
+  exception in the `net` module, where the result of the query will be converted to
+  JSON before showing as the HTTP response to the user in the **/sql** endpoint."
+date: "2025-04-10"
+pubdate: "2025-04-10"
+affected_range: ">=2.2.0 <2.2.2||>=2.1.0 <2.1.5||<2.0.5"
+fixed_versions:
+- "2.2.2"
+- "2.1.5"
+- "2.0.5"
+affected_versions: "All versions before 2.0.5, all versions starting from 2.1.0 before
+  2.1.5, all versions starting from 2.2.0 before 2.2.2"
+not_impacted: "All versions starting from 2.0.5 before 2.1.0, all versions starting
+  from 2.1.5 before 2.2.0, all versions starting from 2.2.2"
+solution: "Upgrade to versions 2.0.5, 2.1.5, 2.2.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-rq86-9m6r-cm3g"
+- "https://github.com/surrealdb/surrealdb/security/advisories/GHSA-rq86-9m6r-cm3g"
+- "https://github.com/surrealdb/surrealdb/pull/5647"
+- "https://github.com/surrealdb/surrealdb"
+uuid: "a1bcbd68-1f49-46d8-9c0f-9a0f5d68bd09"
+cwe_ids:
+- "CWE-248"
+- "CWE-937"
+- "CWE-1035"

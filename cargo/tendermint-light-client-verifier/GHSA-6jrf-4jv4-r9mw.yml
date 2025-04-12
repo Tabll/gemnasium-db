@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-6jrf-4jv4-r9mw"
+identifiers:
+- "GHSA-6jrf-4jv4-r9mw"
+package_slug: "cargo/tendermint-light-client-verifier"
+title: "tendermint-rs's Light Client Verifier allows malicious validators to spoof
+  votes from other validators "
+description: "Name: ISA-2025-003: Malicious validator can spoof votes from other validators\nComponent:
+  tendermint-rs\nCriticality: High (Catastrophic Impact; Rare Likelihood per [ACMv1.2](https://github.com/interchainio/security/blob/main/resources/CLASSIFICATION_MATRIX.md))\nAffected
+  versions: <= v0.40.2\nAffected users: Everyone"
+date: "2025-04-09"
+pubdate: "2025-04-09"
+affected_range: "<0.40.3"
+fixed_versions:
+- "0.40.3"
+affected_versions: "All versions before 0.40.3"
+not_impacted: "All versions starting from 0.40.3"
+solution: "Upgrade to version 0.40.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-6jrf-4jv4-r9mw"
+- "https://github.com/informalsystems/tendermint-rs/security/advisories/GHSA-6jrf-4jv4-r9mw"
+- "https://github.com/informalsystems/tendermint-rs/commit/1aabcfe6a3c0678db22097543f7f7a662f0db34b"
+- "https://github.com/informalsystems/tendermint-rs"
+uuid: "60d6f3e3-9e8d-46ae-9684-dc384d490327"
+cwe_ids:
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

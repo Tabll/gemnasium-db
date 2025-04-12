@@ -21,14 +21,14 @@ description: "The [AWS Cloud Development Kit (CDK)](https://aws.amazon.com/cdk/)
   IAM) trust policy with overly broad permissions. Any user with unrestricted sts:AssumeRole
   permissions could assume that trust policy. This issue does not affect users who
   supply their own role for CodePipeline."
-date: "2025-03-24"
+date: "2025-04-10"
 pubdate: "2025-03-24"
-affected_range: "<2.184.0"
+affected_range: "<2.189.0"
 fixed_versions:
-- "2.184.0"
-affected_versions: "All versions before 2.184.0"
-not_impacted: "All versions starting from 2.184.0"
-solution: "Upgrade to version 2.184.0 or above."
+- "2.189.0"
+affected_versions: "All versions before 2.189.0"
+not_impacted: "All versions starting from 2.189.0"
+solution: "Upgrade to version 2.189.0 or above."
 urls:
 - "https://github.com/advisories/GHSA-5pq3-h73f-66hr"
 - "https://github.com/aws/aws-cdk/security/advisories/GHSA-5pq3-h73f-66hr"

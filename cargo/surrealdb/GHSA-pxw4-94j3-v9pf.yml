@@ -1,0 +1,46 @@
+---
+identifier: "GHSA-pxw4-94j3-v9pf"
+identifiers:
+- "GHSA-pxw4-94j3-v9pf"
+package_slug: "cargo/surrealdb"
+title: "SurrealDB CPU exhaustion via custom functions result in total DoS"
+description: "SurrealDB allows authenticated users with `OWNER` or `EDITOR` permissions
+  at the root, database or namespace levels to define their own database functions
+  using the `DEFINE FUNCTION` statement\n\nA custom database function comprises a
+  name together with a function body. In the function body, the user programs the
+  functionality of the function in terms of SurrealQL. The language includes a `FOR`
+  keyword, used to implement for-loops.\n\nWhilst the parser and interpreter constrain
+  the number of iterations for a single for-loop, nesting several for-loops with a
+  large number of iterations is possible. Thus, an attacker could define a function
+  that comprises several nested for-loops with an iteration count of 1.000.000 each.\n\nExecuting
+  the function will consume all the CPU time of the server, timeouts configured will
+  not break the CPU consumption, and the function execution monopolizes all CPU time
+  of the SurrealDB server, effectively preventing the server from executing functions,
+  queries, commands of other users, or allowing further connections being established
+  to the server.\n\nTerminating the stuck server requires manual intervention which
+  forces a quit on the server process, as the server application is not responsive
+  any longer.\n\nThis issue was discovered and patched during an code audit and penetration
+  test of SurrealDB by cure53, the severity defined within cure53's preliminary finding
+  is high, matched by our CVSS v4 assessment."
+date: "2025-04-11"
+pubdate: "2025-04-11"
+affected_range: ">=2.2.0 <2.2.2||>=2.1.0 <2.1.5||<2.0.5"
+fixed_versions:
+- "2.2.2"
+- "2.1.5"
+- "2.0.5"
+affected_versions: "All versions before 2.0.5, all versions starting from 2.1.0 before
+  2.1.5, all versions starting from 2.2.0 before 2.2.2"
+not_impacted: "All versions starting from 2.0.5 before 2.1.0, all versions starting
+  from 2.1.5 before 2.2.0, all versions starting from 2.2.2"
+solution: "Upgrade to versions 2.0.5, 2.1.5, 2.2.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-pxw4-94j3-v9pf"
+- "https://github.com/surrealdb/surrealdb/security/advisories/GHSA-pxw4-94j3-v9pf"
+- "https://github.com/surrealdb/surrealdb/pull/5597"
+- "https://github.com/surrealdb/surrealdb"
+uuid: "822eb34f-5d84-436c-bc1c-ed56ae88dbd2"
+cwe_ids:
+- "CWE-835"
+- "CWE-937"
+- "CWE-1035"

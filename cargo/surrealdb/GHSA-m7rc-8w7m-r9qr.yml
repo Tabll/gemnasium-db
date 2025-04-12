@@ -1,0 +1,40 @@
+---
+identifier: "GHSA-m7rc-8w7m-r9qr"
+identifiers:
+- "GHSA-m7rc-8w7m-r9qr"
+package_slug: "cargo/surrealdb"
+title: "SurrealDB vulnerable to memory exhaustion via nested functions and scripts"
+description: "In order to prevent DoS situations due to infinite recursions, SurrealDB
+  implements a limit of nested calls for both native functions and embedded JavaScript
+  functions.\n\nHowever, in SurrealDB instances with embedded scripting functions
+  enabled, it was found that this limit can be circumvented by utilizing both at the
+  same time. If a native function contains JavaScript which issues a new query that
+  calls that function, the recursion limit is not triggered.\n\nOnce executed, SurrealDB
+  will follow the path of infinite recursions until the system runs out of memory,
+  prior to the recursion limit being triggered.\n\nThis vulnerability can only affect
+  SurrealDB servers explicitly enabling the scripting capability with `--allow-scripting`
+  or\n`--allow-all` and equivalent environment variables `SURREAL_CAPS_ALLOW_SCRIPT=true`
+  and `SURREAL_CAPS_ALLOW_ALL=true`.\n\nThis issue was discovered and patched during
+  an code audit and penetration test of SurrealDB by cure53, the severity defined
+  within cure53's preliminary finding is Medium, matched by our CVSS v4 assessment."
+date: "2025-04-10"
+pubdate: "2025-04-10"
+affected_range: ">=2.2.0 <2.2.2||>=2.1.0 <2.1.5||<2.0.5"
+fixed_versions:
+- "2.2.2"
+- "2.1.5"
+- "2.0.5"
+affected_versions: "All versions before 2.0.5, all versions starting from 2.1.0 before
+  2.1.5, all versions starting from 2.2.0 before 2.2.2"
+not_impacted: "All versions starting from 2.0.5 before 2.1.0, all versions starting
+  from 2.1.5 before 2.2.0, all versions starting from 2.2.2"
+solution: "Upgrade to versions 2.0.5, 2.1.5, 2.2.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-m7rc-8w7m-r9qr"
+- "https://github.com/surrealdb/surrealdb/security/advisories/GHSA-m7rc-8w7m-r9qr"
+- "https://github.com/surrealdb/surrealdb"
+uuid: "2ce994e9-178f-43af-a40f-71e56ce5bb79"
+cwe_ids:
+- "CWE-674"
+- "CWE-937"
+- "CWE-1035"

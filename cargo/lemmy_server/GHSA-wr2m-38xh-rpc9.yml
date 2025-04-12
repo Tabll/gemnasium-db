@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-wr2m-38xh-rpc9"
+identifiers:
+- "GHSA-wr2m-38xh-rpc9"
+package_slug: "cargo/lemmy_server"
+title: "Lemmy user purging users or communities or banning users can delete images
+  they didn't upload/exclusively use"
+description: "An improper uploaded media ownership check can result in inadvertent
+  deletion of media when a user is banned with content removal or purged. This can
+  lead to deletion of media that was not uploaded by the banned/purged user. This
+  also applies to purged communities, in which case all media posted in that community
+  will get deleted without proper ownership check.\nThis is limited to media with
+  an `image/*` content-type returned by pict-rs."
+date: "2025-04-08"
+pubdate: "2025-04-08"
+affected_range: ">=0.17.0 <0.19.11"
+fixed_versions:
+- "0.19.11"
+affected_versions: "All versions starting from 0.17.0 before 0.19.11"
+not_impacted: "All versions before 0.17.0, all versions starting from 0.19.11"
+solution: "Upgrade to version 0.19.11 or above."
+urls:
+- "https://github.com/advisories/GHSA-wr2m-38xh-rpc9"
+- "https://github.com/LemmyNet/lemmy/security/advisories/GHSA-wr2m-38xh-rpc9"
+- "https://github.com/LemmyNet/lemmy/pull/1809"
+- "https://github.com/LemmyNet/lemmy/pull/3927"
+- "https://github.com/LemmyNet/lemmy/pull/5566"
+- "https://github.com/LemmyNet/lemmy"
+uuid: "a55c270e-3361-4365-a2ad-dd3318079142"
+cwe_ids:
+- "CWE-708"
+- "CWE-937"
+- "CWE-1035"

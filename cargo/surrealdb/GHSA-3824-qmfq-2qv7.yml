@@ -1,0 +1,38 @@
+---
+identifier: "GHSA-3824-qmfq-2qv7"
+identifiers:
+- "GHSA-3824-qmfq-2qv7"
+package_slug: "cargo/surrealdb"
+title: "SurrealDB no JavaScript script function default timeout could facilitate DoS"
+description: "Through enabling the scripting capability. SurrealDB allows for advanced
+  functions with complicated logic, by allowing embedded functions to be written in
+  JavaScript.\n\nThese functions are bounded for memory and stack size, but not in
+  time. An attacker could launch a number of long running functions that could potentially
+  facilitate a Denial Of Service attack.\n\nThis vulnerability can only affect SurrealDB
+  servers explicitly enabling the scripting capability with `--allow-scripting` or\n`--allow-all`
+  and equivalent environment variables `SURREAL_CAPS_ALLOW_SCRIPT=true` and `SURREAL_CAPS_ALLOW_ALL=true`.\n\nThis
+  issue was discovered and patched during an code audit and penetration test of SurrealDB
+  by cure53, the severity defined within cure53's preliminary finding is Low, matched
+  by our CVSS v4 assessment."
+date: "2025-04-11"
+pubdate: "2025-04-11"
+affected_range: ">=2.2.0 <2.2.2||<2.0.5||>=2.1.0 <2.1.5"
+fixed_versions:
+- "2.2.2"
+- "2.0.5"
+- "2.1.5"
+affected_versions: "All versions before 2.0.5, all versions starting from 2.1.0 before
+  2.1.5, all versions starting from 2.2.0 before 2.2.2"
+not_impacted: "All versions starting from 2.0.5 before 2.1.0, all versions starting
+  from 2.1.5 before 2.2.0, all versions starting from 2.2.2"
+solution: "Upgrade to versions 2.0.5, 2.1.5, 2.2.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-3824-qmfq-2qv7"
+- "https://github.com/surrealdb/surrealdb/security/advisories/GHSA-3824-qmfq-2qv7"
+- "https://github.com/surrealdb/surrealdb/pull/5597"
+- "https://github.com/surrealdb/surrealdb"
+uuid: "15b78d83-94be-4e67-8b4d-b16fee2a01bb"
+cwe_ids:
+- "CWE-770"
+- "CWE-937"
+- "CWE-1035"
