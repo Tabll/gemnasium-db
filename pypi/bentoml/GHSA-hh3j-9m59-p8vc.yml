@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-hh3j-9m59-p8vc"
+identifiers:
+- "GHSA-hh3j-9m59-p8vc"
+package_slug: "pypi/bentoml"
+title: "BentoML vulnerable to Uncontrolled Resource Consumption"
+description: "In bentoml/bentoml version 1.3.9, the `/login` endpoint of the newly
+  integrated Gradio app is vulnerable to a Denial of Service (DoS) attack. This vulnerability
+  can be exploited by appending characters, such as dashes (-), to the end of a multipart
+  boundary in an HTTP request. The server continuously processes each character, leading
+  to excessive resource consumption and rendering the service unavailable. The issue
+  is unauthenticated and does not require any user interaction."
+date: "2025-04-15"
+pubdate: "2025-03-20"
+affected_range: "<=1.3.9"
+fixed_versions: []
+affected_versions: "All versions up to 1.3.9"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-hh3j-9m59-p8vc"
+- "https://nvd.nist.gov/vuln/detail/CVE-2024-8966"
+- "https://github.com/bentoml/BentoML"
+- "https://huntr.com/bounties/7b5932bb-58d1-4e71-b85c-43dc40522ff2"
+- "https://huntr.com/bounties/e467ec92-0ad1-4461-8468-1beabf701b9f"
+cvss_v3: "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "db101e0d-beef-41ca-b3de-9512d74386be"
+cwe_ids:
+- "CWE-400"
+- "CWE-937"
+- "CWE-1035"
