@@ -13,7 +13,7 @@ description: "# Duplicate Advisory\nThis advisory has been withdrawn because it 
   code injection attacks can occur, allowing an attacker to inject a stolen authorization
   code into the attacker's own session with the client with a victim's identity. This
   is usually done with a Man-in-the-Middle (MitM) or phishing attack."
-date: "2025-03-25"
+date: "2025-04-17"
 pubdate: "2024-12-09"
 affected_range: "[,34.0.1.Final]"
 fixed_versions: []
@@ -23,6 +23,7 @@ solution: "Unfortunately, there is no solution available yet."
 urls:
 - "https://github.com/advisories/GHSA-4v5x-9m47-cqr2"
 - "https://nvd.nist.gov/vuln/detail/CVE-2024-12369"
+- "https://access.redhat.com/errata/RHSA-2025:3989"
 - "https://access.redhat.com/security/cve/CVE-2024-12369"
 - "https://bugzilla.redhat.com/show_bug.cgi?id=2331178"
 - "https://github.com/wildfly/wildfly"

@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-f87w-3j5w-v58p"
+identifiers:
+- "GHSA-f87w-3j5w-v58p"
+package_slug: "nuget/CefSharp.WinForms"
+title: "CefSharp affected by incorrect handle provided in unspecified circumstances
+  in Mojo on Windows"
+description: "Incorrect handle provided in unspecified circumstances in Mojo in Google
+  Chrome on Windows prior to 134.0.6998.177 allowed a remote attacker to perform a
+  sandbox escape via a malicious file. (Chromium security severity: High)\n\n
+  https://nvd.nist.gov/vuln/detail/CVE-2025-2783\n
+  https://chromereleases.googleblog.com/2025/03/stable-channel-update-for-desktop_25.html\n
+  https://issues.chromium.org/issues/405143032"
+date: "2025-04-12"
+pubdate: "2025-04-12"
+affected_range: "[,134.3.90)"
+fixed_versions:
+- "134.3.90"
+affected_versions: "All versions before 134.3.90"
+not_impacted: "All versions starting from 134.3.90"
+solution: "Upgrade to version 134.3.90 or above."
+urls:
+- "https://github.com/advisories/GHSA-f87w-3j5w-v58p"
+- "https://github.com/cefsharp/CefSharp/security/advisories/GHSA-f87w-3j5w-v58p"
+- "https://nvd.nist.gov/vuln/detail/CVE-2025-2783"
+- "https://chromereleases.googleblog.com/2025/03/stable-channel-update-for-desktop_25.html"
+- "https://github.com/cefsharp/CefSharp"
+- "https://github.com/cefsharp/CefSharp/releases/tag/v134.3.90"
+- "https://issues.chromium.org/issues/405143032"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:H/A:H"
+uuid: "7f81176e-2926-481c-ab3c-dcb88a736131"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

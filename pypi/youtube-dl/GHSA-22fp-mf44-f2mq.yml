@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-22fp-mf44-f2mq"
+identifiers:
+- "GHSA-22fp-mf44-f2mq"
+package_slug: "pypi/youtube-dl"
+title: "youtube-dl vulnerable to file system modification and RCE through improper
+  file-extension sanitization"
+description: "This advisory follows the security advisory [GHSA-79w7-vh3h-8g4j published
+  by the _yt-dlp/yt-dlp_ project](https://github.com/yt-dlp/yt-dlp/security/advisories/GHSA-79w7-vh3h-8g4j)
+  to aid remediation of the issue in the _ytdl-org/youtube-dl_ project."
+date: "2025-04-18"
+pubdate: "2025-04-18"
+affected_range: ">=2015.01.25,<2024-07-03"
+fixed_versions:
+- "2024-07-03"
+affected_versions: "All versions starting from 2015.01.25 before 2024-07-03"
+not_impacted: "All versions before 2015.01.25, all versions starting from 2024-07-03"
+solution: "Upgrade to version 2024-07-03 or above."
+urls:
+- "https://github.com/advisories/GHSA-22fp-mf44-f2mq"
+- "https://github.com/dirkf/youtube-dl/security/advisories/GHSA-22fp-mf44-f2mq"
+- "https://github.com/yt-dlp/yt-dlp/security/advisories/GHSA-79w7-vh3h-8g4j"
+- "https://nvd.nist.gov/vuln/detail/CVE-2024-38519"
+- "https://github.com/ytdl-org/youtube-dl/pull/32830"
+- "https://github.com/ytdl-org/youtube-dl/commit/d42a222ed541b96649396ef00e19552aef0f09ec"
+- "https://github.com/dirkf/youtube-dl"
+- "https://securitylab.github.com/advisories/GHSL-2024-089_youtube-dl"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+uuid: "c18cf98c-7636-4ae8-85be-40ee39aaa514"
+cwe_ids:
+- "CWE-434"
+- "CWE-669"
+- "CWE-937"
+- "CWE-1035"
