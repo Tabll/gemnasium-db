@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-4p4h-9gvq-7xfg"
+identifiers:
+- "GHSA-4p4h-9gvq-7xfg"
+package_slug: "pypi/picklescan"
+title: "Duplicate Advisory: Picklescan Vulnerable to Exfiltration via DNS via linecache
+  and ssl.get_server_certificate"
+description: "# Duplicate Advisory\nThis advisory has been withdrawn because it is
+  a duplicate of GHSA-93mv-x874-956g. This link is maintained to preserve external
+  references.\n\n# Original Description\n\nThe unsafe globals in Picklescan before
+  0.0.25 do not include ssl. Consequently, ssl.get_server_certificate can exfiltrate
+  data via DNS after deserialization."
+date: "2025-04-24"
+pubdate: "2025-04-24"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-4p4h-9gvq-7xfg"
+- "https://nvd.nist.gov/vuln/detail/CVE-2025-46417"
+- "https://github.com/mmaitre314/picklescan/pull/40"
+- "https://github.com/advisories/GHSA-93mv-x874-956g"
+uuid: "5d12d0de-d96c-46a8-9622-6e42e9e5e706"
+cwe_ids:
+- "CWE-184"
+- "CWE-937"
+- "CWE-1035"

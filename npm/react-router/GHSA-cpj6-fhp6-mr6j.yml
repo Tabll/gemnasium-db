@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-cpj6-fhp6-mr6j"
+identifiers:
+- "GHSA-cpj6-fhp6-mr6j"
+package_slug: "npm/react-router"
+title: "React Router allows pre-render data spoofing on React-Router framework mode"
+description: "After some research, it turns out that it's possible to modify pre-rendered
+  data by adding a header to the request. This allows to completely spoof its contents
+  and modify all the values ​​of the data object passed to the HTML. Latest versions
+  are impacted."
+date: "2025-04-24"
+pubdate: "2025-04-24"
+affected_range: "<7.5.2"
+fixed_versions:
+- "7.5.2"
+affected_versions: "All versions before 7.5.2"
+not_impacted: "All versions starting from 7.5.2"
+solution: "Upgrade to version 7.5.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-cpj6-fhp6-mr6j"
+- "https://github.com/remix-run/react-router/security/advisories/GHSA-cpj6-fhp6-mr6j"
+- "https://github.com/remix-run/react-router/commit/c84302972a152d851cf5dd859ff332b354b70111"
+- "https://github.com/remix-run/react-router"
+- "https://github.com/remix-run/react-router/blob/e6c53a0130559b4a9bd47f9cf76ea5b08a69868a/packages/react-router/lib/server-runtime/routes.ts#L87"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:H"
+uuid: "74acb815-27c2-4cac-8b71-5098fabe03dc"
+cwe_ids:
+- "CWE-345"
+- "CWE-937"
+- "CWE-1035"
