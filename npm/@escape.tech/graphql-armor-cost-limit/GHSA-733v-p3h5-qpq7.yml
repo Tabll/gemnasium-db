@@ -6,13 +6,14 @@ package_slug: "npm/@escape.tech/graphql-armor-cost-limit"
 title: "GraphQL Armor Cost-Limit Plugin Bypass via Introspection Query Obfuscation"
 description: "A query cost restriction using the `cost-limit` can be bypassed if `ignoreIntrospection`
   is enabled (which is the default configuration) by naming your query/fragment `__schema`."
-date: "2025-04-25"
+date: "2025-04-29"
 pubdate: "2025-04-25"
-affected_range: "<=2.4.0"
-fixed_versions: []
-affected_versions: "All versions up to 2.4.0"
-not_impacted: ""
-solution: "Unfortunately, there is no solution available yet."
+affected_range: "<2.4.2"
+fixed_versions:
+- "2.4.2"
+affected_versions: "All versions before 2.4.2"
+not_impacted: "All versions starting from 2.4.2"
+solution: "Upgrade to version 2.4.2 or above."
 urls:
 - "https://github.com/advisories/GHSA-733v-p3h5-qpq7"
 - "https://github.com/Escape-Technologies/graphql-armor/security/advisories/GHSA-733v-p3h5-qpq7"

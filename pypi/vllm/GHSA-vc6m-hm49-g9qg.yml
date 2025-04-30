@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-vc6m-hm49-g9qg"
+identifiers:
+- "GHSA-vc6m-hm49-g9qg"
+package_slug: "pypi/vllm"
+title: "phi4mm: Quadratic Time Complexity in Input Token Processing​ leads to denial
+  of service"
+description: "A critical performance vulnerability has been identified in the input
+  preprocessing logic of the multimodal tokenizer. The code dynamically replaces placeholder
+  tokens (e.g., <|audio_*|>, <|image_*|>) with repeated tokens based on precomputed
+  lengths. Due to ​​inefficient list concatenation operations​​, the algorithm exhibits
+  ​​quadratic time complexity (O(n²))​​, allowing malicious actors to trigger resource
+  exhaustion via specially crafted inputs."
+date: "2025-04-29"
+pubdate: "2025-04-29"
+affected_range: ">=0.8.0,<0.8.5"
+fixed_versions:
+- "0.8.5"
+affected_versions: "All versions starting from 0.8.0 before 0.8.5"
+not_impacted: "All versions before 0.8.0, all versions starting from 0.8.5"
+solution: "Upgrade to version 0.8.5 or above."
+urls:
+- "https://github.com/advisories/GHSA-vc6m-hm49-g9qg"
+- "https://github.com/vllm-project/vllm/security/advisories/GHSA-vc6m-hm49-g9qg"
+- "https://github.com/vllm-project/vllm"
+- "https://github.com/vllm-project/vllm/blob/8cac35ba435906fb7eb07e44fe1a8c26e8744f4e/vllm/model_executor/models/phi4mm.py#L1182-L1197"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+uuid: "4aa524b4-187f-41ac-a544-a4e5866ccfd7"
+cwe_ids:
+- "CWE-1333"
+- "CWE-937"
+- "CWE-1035"
