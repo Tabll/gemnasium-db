@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-fx44-2wx5-5fvp"
+identifiers:
+- "GHSA-fx44-2wx5-5fvp"
+package_slug: "maven/org.keycloak/keycloak-services"
+title: "Duplicate Advisory: Keycloak vulnerable to two factor authentication bypass"
+description: "# Duplicate Advisory\nThis advisory has been withdrawn because it is
+  a duplicate of GHSA-5jfq-x6xp-7rw2. This link is maintained to preserve external
+  references.\n\n# Original Description\nA flaw was found in Keycloak. The org.keycloak.authorization
+  package may be vulnerable to circumventing required actions, allowing users to circumvent
+  requirements such as setting up two-factor authentication."
+date: "2025-04-30"
+pubdate: "2025-04-29"
+affected_range: "[,26.2.2)"
+fixed_versions:
+- "26.2.2"
+affected_versions: "All versions before 26.2.2"
+not_impacted: "All versions starting from 26.2.2"
+solution: "Upgrade to version 26.2.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-fx44-2wx5-5fvp"
+- "https://nvd.nist.gov/vuln/detail/CVE-2025-3910"
+- "https://access.redhat.com/errata/RHSA-2025:4335"
+- "https://access.redhat.com/errata/RHSA-2025:4336"
+- "https://access.redhat.com/security/cve/CVE-2025-3910"
+- "https://bugzilla.redhat.com/show_bug.cgi?id=2361923"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N"
+uuid: "5f99a962-9028-47ba-a3a9-20e5a7357776"
+cwe_ids:
+- "CWE-287"
+- "CWE-937"
+- "CWE-1035"

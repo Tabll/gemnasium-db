@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-927q-g9w9-pm54"
+identifiers:
+- "GHSA-927q-g9w9-pm54"
+package_slug: "cargo/mp3-metadata"
+title: "Panic in mp3-metadata due to the lack of bounds checking"
+description: "The `get_id3()` methods used by `mp3_metadata::read_from_slice()` does
+  not perform adequate bounds checking when recreating the tag due to the use of desynchronization.\n\nFixed
+  in [Fix index error](https://github.com/GuillaumeGomez/mp3-metadata/pull/37), released
+  as part of 0.4.0."
+date: "2025-04-30"
+pubdate: "2025-04-30"
+affected_range: "<0.4.0"
+fixed_versions:
+- "0.4.0"
+affected_versions: "All versions before 0.4.0"
+not_impacted: "All versions starting from 0.4.0"
+solution: "Upgrade to version 0.4.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-927q-g9w9-pm54"
+- "https://github.com/GuillaumeGomez/mp3-metadata/issues/36"
+- "https://github.com/GuillaumeGomez/mp3-metadata/pull/37"
+- "https://github.com/GuillaumeGomez/mp3-metadata"
+- "https://rustsec.org/advisories/RUSTSEC-2025-0027.html"
+uuid: "9a251a68-8ea4-4f3f-bd06-e82ae81f4dc9"
+cwe_ids:
+- "CWE-119"
+- "CWE-937"
+- "CWE-1035"
