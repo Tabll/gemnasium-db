@@ -1,0 +1,26 @@
+---
+identifier: "GHSA-58xc-hpvq-8473"
+identifiers:
+- "GHSA-58xc-hpvq-8473"
+package_slug: "cargo/redox_uefi_std"
+title: "Redox UEFI Safe API can cause heap-buffer-overflow"
+description: "ffi::nstr() should be marked unsafe, since a pointer to a buffer without
+  a trailing 0 value will cause a heap buffer overflow."
+date: "2025-05-06"
+pubdate: "2025-05-06"
+affected_range: ">=0.1.8 <0.1.14"
+fixed_versions:
+- "0.1.14"
+affected_versions: "All versions starting from 0.1.8 before 0.1.14"
+not_impacted: "All versions before 0.1.8, all versions starting from 0.1.14"
+solution: "Upgrade to version 0.1.14 or above."
+urls:
+- "https://github.com/advisories/GHSA-58xc-hpvq-8473"
+- "https://gitlab.redox-os.org/redox-os/uefi"
+- "https://gitlab.redox-os.org/redox-os/uefi/-/commit/b711d47e815665b0ec8949e39292ad8e3fdd0756"
+- "https://rustsec.org/advisories/RUSTSEC-2025-0032.html"
+uuid: "3b6c649c-7629-4740-b022-74ad1a674e35"
+cwe_ids:
+- "CWE-122"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,25 @@
+---
+identifier: "GHSA-m2xr-2vj4-wh94"
+identifiers:
+- "GHSA-m2xr-2vj4-wh94"
+package_slug: "cargo/tanton_engine"
+title: "tanton_engine has unsound public API"
+description: "The following functions in the `tanton_engine` crate are unsound due
+  to lack of sufficient boundary\nchecks in public API:\n\n- `Stack::offset()`\n-
+  `ThreadStack::get()`\n- `RootMoveList::insert_score_depth()`\n- `RootMoveList::insert_score()`\n\nThe
+  tanton_engine crate is no longer maintained, so there are no plans to fix this issue."
+date: "2025-05-06"
+pubdate: "2025-05-06"
+affected_range: "<=1.0.0"
+fixed_versions: []
+affected_versions: "All versions up to 1.0.0"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-m2xr-2vj4-wh94"
+- "https://rustsec.org/advisories/RUSTSEC-2025-0031.html"
+uuid: "65ad9921-9460-4a4b-acea-659d40b78798"
+cwe_ids:
+- "CWE-119"
+- "CWE-937"
+- "CWE-1035"

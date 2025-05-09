@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-q9q2-3ppx-mwqf"
+identifiers:
+- "GHSA-q9q2-3ppx-mwqf"
+package_slug: "maven/org.graylog2/graylog2-server"
+title: "Graylog Allows Stored Cross-Site Scripting via Files Plugin and API Browser"
+description: "Two minor vulnerabilities were identified in the Graylog2 enterprise
+  server, which can be combined to carry out a stored cross-site scripting attack.\nAn
+  attacker with the permission `FILES_CREATE` can exploit these vulnerabilities to
+  upload arbitrary Javascript code to the Graylog2 server, which - upon requesting
+  of the file by a user of the API browser - results in the execution of this Javascript
+  code in the context of the Graylog frontend application.\nThis enables the attacker
+  to carry out authenticated API requests with the permissions of the logged-in user,
+  thereby taking over the user session."
+date: "2025-05-07"
+pubdate: "2025-05-07"
+affected_range: "[,6.2.0)"
+fixed_versions:
+- "6.2.0"
+affected_versions: "All versions before 6.2.0"
+not_impacted: "All versions starting from 6.2.0"
+solution: "Upgrade to version 6.2.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-q9q2-3ppx-mwqf"
+- "https://github.com/Graylog2/graylog2-server/security/advisories/GHSA-q9q2-3ppx-mwqf"
+- "https://github.com/Graylog2/graylog2-server"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:N"
+uuid: "cc297244-9ef8-43ed-85a8-023ab1e127b0"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

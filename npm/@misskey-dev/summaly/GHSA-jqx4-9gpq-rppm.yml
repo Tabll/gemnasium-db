@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-jqx4-9gpq-rppm"
+identifiers:
+- "GHSA-jqx4-9gpq-rppm"
+package_slug: "npm/@misskey-dev/summaly"
+title: "@misskey-dev/summaly allows IP Filter Bypass via Redirect"
+description: "Due to a validation error in `got.scpaping`, it is possible to use an
+  HTTP redirect to avoid IP filtering."
+date: "2025-05-06"
+pubdate: "2025-05-06"
+affected_range: ">=5.1.0 <5.2.1"
+fixed_versions:
+- "5.2.1"
+affected_versions: "All versions starting from 5.1.0 before 5.2.1"
+not_impacted: "All versions before 5.1.0, all versions starting from 5.2.1"
+solution: "Upgrade to version 5.2.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-jqx4-9gpq-rppm"
+- "https://github.com/misskey-dev/summaly/security/advisories/GHSA-jqx4-9gpq-rppm"
+- "https://github.com/misskey-dev/summaly/commit/dfe6451012aac42eabe71d4ed721d8058c4066b4"
+- "https://github.com/misskey-dev/summaly"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+uuid: "70b6e232-7b02-4e01-88f4-ba5afa44f996"
+cwe_ids:
+- "CWE-346"
+- "CWE-937"
+- "CWE-1035"

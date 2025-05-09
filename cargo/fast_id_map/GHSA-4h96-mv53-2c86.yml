@@ -1,0 +1,24 @@
+---
+identifier: "GHSA-4h96-mv53-2c86"
+identifiers:
+- "GHSA-4h96-mv53-2c86"
+package_slug: "cargo/fast_id_map"
+title: "fast_id_map has a soundness issue and is unmaintained"
+description: "`FastMap::get()` lacks sufficient checks to its parameter index and
+  is used to unsafely get a `Vec` element.\n\n`fast_id_map` is unmaintained."
+date: "2025-05-08"
+pubdate: "2025-05-08"
+affected_range: "<=0.1.0"
+fixed_versions: []
+affected_versions: "All versions up to 0.1.0"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-4h96-mv53-2c86"
+- "https://github.com/Bruce0203/fast_map"
+- "https://rustsec.org/advisories/RUSTSEC-2025-0034.html"
+uuid: "ccdf3e85-4f38-4c8d-916b-4e61b0c87975"
+cwe_ids:
+- "CWE-20"
+- "CWE-937"
+- "CWE-1035"
