@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-qv97-5qr8-2266"
+identifiers:
+- "GHSA-qv97-5qr8-2266"
+package_slug: "cargo/mithril-client"
+title: "Mithril snapshots for Cardano database could be compromised by an adversary"
+description: "Inconsistencies could be introduced into a tampered ledger state distributed
+ through Mithril snapshots, either by an unknown source or by a compromised IOG-operated 
+ aggregator. These inconsistencies would not be immediately detected by Cardano nodes 
+ started with such snapshots, potentially enabling long-range attacks that might not 
+ be corrected by honest nodes, even if they sync from genesis.
+
+ Currently, a Mithril network has only one aggregator, which serves snapshots from a 
+ secure cloud location operated by IOG and is therefore assumed to be trustworthy. In 
+ the future, as Mithril networks become more decentralized, multiple aggregators will operate
+ independently. This increased decentralization could raise the risk of a malicious aggregator 
+ distributing a tampered ledger state."
+date: "2025-05-07"
+pubdate: "2025-05-07"
+affected_range: "<0.12.2"
+fixed_versions:
+- "0.12.2"
+affected_versions: "All versions before 0.12.2"
+not_impacted: "All versions starting from 0.12.2"
+solution: "Upgrade to version 0.12.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-qv97-5qr8-2266"
+- "https://github.com/input-output-hk/mithril/security/advisories/GHSA-qv97-5qr8-2266"
+- "https://github.com/input-output-hk/mithril"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:N/I:L/A:L"
+uuid: "6f5de8d6-a292-4b89-8323-7e06b379f2ad"
+cwe_ids:
+- "CWE-345"
+- "CWE-937"
+- "CWE-1035"

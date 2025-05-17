@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-gg76-hg3v-5q6c"
+identifiers:
+- "GHSA-gg76-hg3v-5q6c"
+package_slug: "cargo/macroquad"
+title: "macroquad vulnerable to multiple soundness issues"
+description: "Several soundness issues have been reported. Resolving them doesn't
+  seem to be considered a priority. In particular, unprincipled use of mutable statics
+  is pervasive throughout the library, making it possible to cause use-after-free
+  in safe code.\n\nCurrently, no fixed version is available."
+date: "2025-05-15"
+pubdate: "2025-05-15"
+affected_range: "<=0.4.14"
+fixed_versions: []
+affected_versions: "All versions up to 0.4.14"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-gg76-hg3v-5q6c"
+- "https://github.com/not-fl3/macroquad/issues/333"
+- "https://github.com/not-fl3/macroquad/issues/634"
+- "https://github.com/not-fl3/macroquad/issues/723"
+- "https://github.com/not-fl3/macroquad/issues/746"
+- "https://github.com/not-fl3/macroquad"
+- "https://rustsec.org/advisories/RUSTSEC-2025-0035.html"
+uuid: "51e33c22-21b5-4aa7-8b58-943732a6d926"
+cwe_ids:
+- "CWE-416"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-w443-5h3j-jqcp"
+identifiers:
+- "GHSA-w443-5h3j-jqcp"
+package_slug: "cargo/crossbeam-channel"
+title: "Duplicate Advisory: crossbeam-channel Vulnerable to Double Free on Drop"
+description: "### Duplicate Advisory\nThis advisory has been withdrawn because it
+  is a duplicate of GHSA-pg9f-39pc-qf8g. This link is maintained to preserve external
+  references.\n\n### Original Description\nIn crossbeam-channel rust crate, the internal
+  `Channel` type's `Drop` method has a race condition which could, in some circumstances,
+  lead to a double-free that could result in memory corruption."
+date: "2025-05-15"
+pubdate: "2025-05-14"
+affected_range: ">=0.5.11 <0.5.15"
+fixed_versions:
+- "0.5.15"
+affected_versions: "All versions starting from 0.5.11 before 0.5.15"
+not_impacted: "All versions before 0.5.11, all versions starting from 0.5.15"
+solution: "Upgrade to version 0.5.15 or above."
+urls:
+- "https://github.com/advisories/GHSA-w443-5h3j-jqcp"
+- "https://nvd.nist.gov/vuln/detail/CVE-2025-4574"
+- "https://github.com/crossbeam-rs/crossbeam/pull/1187"
+- "https://access.redhat.com/security/cve/CVE-2025-4574"
+- "https://bugzilla.redhat.com/show_bug.cgi?id=2358890"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L"
+uuid: "30155975-ae15-426d-900b-81e5144bd630"
+cwe_ids:
+- "CWE-415"
+- "CWE-937"
+- "CWE-1035"

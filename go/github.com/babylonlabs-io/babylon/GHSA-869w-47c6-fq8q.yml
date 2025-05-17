@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-869w-47c6-fq8q"
+identifiers:
+- "GHSA-869w-47c6-fq8q"
+package_slug: "go/github.com/babylonlabs-io/babylon"
+title: "Babylon Integer Overflow in Distribution Module CumulativeRewardRatio Calculation
+  Leading to Chain Halt"
+description: "Minting large amount of tokens through ibc transfer and then depositing
+  them in validator rewards pool (via `DepositValidatorRewardsPool` message) can lead
+  to integer overflow panic when calculating `cumulative_reward_ratio` for the validator.\n\nThis
+  calculation happens in `x/epoching` module `EndBlocker`, thus the panic will halt
+  the chain."
+date: "2025-05-15"
+pubdate: "2025-05-15"
+affected_range: "<=1.0.2"
+fixed_versions: []
+affected_versions: "All versions up to 1.0.2"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-869w-47c6-fq8q"
+- "https://github.com/babylonlabs-io/babylon/security/advisories/GHSA-869w-47c6-fq8q"
+- "https://github.com/babylonlabs-io/babylon"
+uuid: "4c49efa7-a242-4175-b016-b26240b5400e"
+cwe_ids:
+- "CWE-190"
+- "CWE-770"
+- "CWE-937"
+- "CWE-1035"

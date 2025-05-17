@@ -5,7 +5,7 @@ identifiers:
 package_slug: "cargo/xmp_toolkit"
 title: "XMP Toolkit's `XmpFile::close` can trigger undefined behavior"
 description: "Affected versions of the crate failed to catch C++ exceptions raised
-  within the `XmpFile::close` function. If such an exception occured, it would trigger
+  within the `XmpFile::close` function. If such an exception occurred, it would trigger
   undefined behavior, typically a process abort.\n\nThis is best demonstrated in [issue
   #230](https://github.com/adobe/xmp-toolkit-rs/issues/230), where a race condition
   causes the `close` call to fail due to file I/O errors.\n\nThis was fixed in [PR
@@ -14,7 +14,7 @@ description: "Affected versions of the crate failed to catch C++ exceptions rais
   existing API ignores the error. A new API `XmpFile::try_close` was added to allow
   callers to receive and process the error result.\n\nUsers of all prior versions
   of `xmp_toolkit` are encouraged to update to version 1.9.0 to avoid undefined behavior."
-date: "2024-07-26"
+date: "2025-05-15"
 pubdate: "2024-07-26"
 affected_range: "<1.9.0"
 fixed_versions:
