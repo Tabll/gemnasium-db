@@ -14,17 +14,20 @@ description: "A high vulnerability exists in the Babylon protocol's x/finality m
   context) to form the StartHeight, NumPubRand, and a shorter-than-expected Commitment
   (e.g., 4 bytes). The replayed signature will pass verification for this crafted
   message, leading to the injection of an invalid PubRand commitment."
-date: "2025-05-15"
+date: "2025-05-22"
 pubdate: "2025-05-15"
-affected_range: "<=1.0.2"
-fixed_versions: []
-affected_versions: "All versions up to 1.0.2"
-not_impacted: ""
-solution: "Unfortunately, there is no solution available yet."
+affected_range: "<1.1.0"
+fixed_versions:
+- "1.1.0"
+affected_versions: "All versions before 1.1.0"
+not_impacted: "All versions starting from 1.1.0"
+solution: "Upgrade to version 1.1.0 or above."
 urls:
 - "https://github.com/advisories/GHSA-7mm3-vfg8-7rg6"
 - "https://github.com/babylonlabs-io/babylon/security/advisories/GHSA-7mm3-vfg8-7rg6"
+- "https://github.com/babylonlabs-io/babylon/commit/cb5d0ecae5cebc116d09296baaed25f715f904df"
 - "https://github.com/babylonlabs-io/babylon"
+- "https://pkg.go.dev/vuln/GO-2025-3686"
 uuid: "2b556068-34e9-4b91-97a3-3cb6ca6e5a98"
 cwe_ids:
 - "CWE-290"

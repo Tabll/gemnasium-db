@@ -1,0 +1,26 @@
+---
+identifier: "GHSA-c37v-3c8w-crq8"
+identifiers:
+- "GHSA-c37v-3c8w-crq8"
+package_slug: "go/zotregistry.dev/zot"
+title: "zot logs secrets"
+description: "When using Keycloak as an oidc provider, the clientsecret gets printed
+  into the container stdout logs for an example at container startup."
+date: "2025-05-22"
+pubdate: "2025-05-22"
+affected_range: "<1.4.4-0.20250522160828-8a99a3ed231f"
+fixed_versions:
+- "1.4.4-0.20250522160828-8a99a3ed231f"
+affected_versions: "All versions before 1.4.4-0.20250522160828-8a99a3ed231f"
+not_impacted: "All versions starting from 1.4.4-0.20250522160828-8a99a3ed231f"
+solution: "Upgrade to version 1.4.4-0.20250522160828-8a99a3ed231f or above."
+urls:
+- "https://github.com/advisories/GHSA-c37v-3c8w-crq8"
+- "https://github.com/project-zot/zot/security/advisories/GHSA-c37v-3c8w-crq8"
+- "https://github.com/project-zot/zot/commit/8a99a3ed231fdcd8467e986182b4705342b6a15e"
+- "https://github.com/project-zot/zot"
+uuid: "11deeee2-ae5c-4638-b3d5-aef969f31714"
+cwe_ids:
+- "CWE-532"
+- "CWE-937"
+- "CWE-1035"

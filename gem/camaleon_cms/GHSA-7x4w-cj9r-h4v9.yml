@@ -34,7 +34,7 @@ description: "The [actions](https://github.com/owen2345/camaleon-cms/blob/feccb9
   sequences such as .. in untrusted input that is used to build paths.\n\n**See also:**\n\n[CodeQL:
   Uncontrolled data used in path expression](https://codeql.github.com/codeql-query-help/ruby/rb-path-injection/)\n[OWASP:
   Path Traversal](https://owasp.org/www-community/attacks/Path_Traversal)"
-date: "2024-09-18"
+date: "2025-05-23"
 pubdate: "2024-09-18"
 affected_range: "<2.8.1"
 fixed_versions:
@@ -47,6 +47,7 @@ urls:
 - "https://github.com/owen2345/camaleon-cms/security/advisories/GHSA-7x4w-cj9r-h4v9"
 - "https://github.com/owen2345/camaleon-cms/commit/f5d032549fa0a204d06e738caf2663607967dee2"
 - "https://github.com/owen2345/camaleon-cms"
+- "https://github.com/rubysec/ruby-advisory-db/blob/master/gems/camaleon_cms/GHSA-7x4w-cj9r-h4v9.yml"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H"
 uuid: "7844c739-21ac-4984-88d2-5eaaa3d136cf"
 cwe_ids:

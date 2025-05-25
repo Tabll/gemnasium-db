@@ -10,17 +10,20 @@ description: "Minting large amount of tokens through ibc transfer and then depos
   to integer overflow panic when calculating `cumulative_reward_ratio` for the validator.\n\nThis
   calculation happens in `x/epoching` module `EndBlocker`, thus the panic will halt
   the chain."
-date: "2025-05-15"
+date: "2025-05-22"
 pubdate: "2025-05-15"
-affected_range: "<=1.0.2"
-fixed_versions: []
-affected_versions: "All versions up to 1.0.2"
-not_impacted: ""
-solution: "Unfortunately, there is no solution available yet."
+affected_range: "<1.1.0"
+fixed_versions:
+- "1.1.0"
+affected_versions: "All versions before 1.1.0"
+not_impacted: "All versions starting from 1.1.0"
+solution: "Upgrade to version 1.1.0 or above."
 urls:
 - "https://github.com/advisories/GHSA-869w-47c6-fq8q"
 - "https://github.com/babylonlabs-io/babylon/security/advisories/GHSA-869w-47c6-fq8q"
+- "https://github.com/babylonlabs-io/babylon/commit/f0a29d60f206268b56992fa50f38a48077eb4f59"
 - "https://github.com/babylonlabs-io/babylon"
+- "https://pkg.go.dev/vuln/GO-2025-3687"
 uuid: "4c49efa7-a242-4175-b016-b26240b5400e"
 cwe_ids:
 - "CWE-190"
