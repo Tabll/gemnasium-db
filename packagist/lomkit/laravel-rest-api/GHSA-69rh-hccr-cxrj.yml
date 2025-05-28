@@ -1,0 +1,36 @@
+---
+identifier: "GHSA-69rh-hccr-cxrj"
+identifiers:
+- "GHSA-69rh-hccr-cxrj"
+package_slug: "packagist/lomkit/laravel-rest-api"
+title: "Laravel Rest Api has a Search Validation Bypass"
+description: "A validation bypass vulnerability was discovered  prior to version 2.13.0,
+  where multiple validations defined for the same attribute could be silently overridden.
+  Due to how the framework merged validation rules across multiple contexts (such
+  as index, store, and update actions), malicious actors could exploit this behavior
+  by crafting requests that bypass expected validation rules, potentially injecting
+  unexpected or dangerous parameters into the application.\n\nImpact:\n\nThis could
+  lead to unauthorized data being accepted or processed by the API, depending on the
+  context in which the validation was bypassed.\n\nPatch:\n\nThe issue was fixed in
+  [PR #172](https://github.com/Lomkit/laravel-rest-api/pull/172) by ensuring that
+  multiple rule definitions are merged correctly rather than overwritten."
+date: "2025-05-27"
+pubdate: "2025-05-27"
+affected_range: "<2.13.0"
+fixed_versions:
+- "2.13.0"
+affected_versions: "All versions before 2.13.0"
+not_impacted: "All versions starting from 2.13.0"
+solution: "Upgrade to version 2.13.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-69rh-hccr-cxrj"
+- "https://github.com/Lomkit/laravel-rest-api/security/advisories/GHSA-69rh-hccr-cxrj"
+- "https://github.com/Lomkit/laravel-rest-api/pull/172"
+- "https://github.com/Lomkit/laravel-rest-api/commit/88b14587b4efd7e59d7379658c606d325bb513b4"
+- "https://github.com/Lomkit/laravel-rest-api"
+uuid: "8d8507e6-5082-4c33-a03a-1066c2b07a65"
+cwe_ids:
+- "CWE-1173"
+- "CWE-20"
+- "CWE-937"
+- "CWE-1035"

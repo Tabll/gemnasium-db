@@ -8,14 +8,13 @@ title: "youtube-dl vulnerable to file system modification and RCE through improp
 description: "This advisory follows the security advisory [GHSA-79w7-vh3h-8g4j published
   by the _yt-dlp/yt-dlp_ project](https://github.com/yt-dlp/yt-dlp/security/advisories/GHSA-79w7-vh3h-8g4j)
   to aid remediation of the issue in the _ytdl-org/youtube-dl_ project."
-date: "2025-04-18"
+date: "2025-05-27"
 pubdate: "2025-04-18"
-affected_range: ">=2015.01.25,<2024-07-03"
-fixed_versions:
-- "2024-07-03"
-affected_versions: "All versions starting from 2015.01.25 before 2024-07-03"
-not_impacted: "All versions before 2015.01.25, all versions starting from 2024-07-03"
-solution: "Upgrade to version 2024-07-03 or above."
+affected_range: ">=2015.01.25,<=2021.12.17"
+fixed_versions: []
+affected_versions: "All versions starting from 2015.01.25 up to 2021.12.17"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
 urls:
 - "https://github.com/advisories/GHSA-22fp-mf44-f2mq"
 - "https://github.com/dirkf/youtube-dl/security/advisories/GHSA-22fp-mf44-f2mq"
