@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-94v7-wxj6-r2q5"
+identifiers:
+- "GHSA-94v7-wxj6-r2q5"
+package_slug: "pypi/multicast"
+title: "multicast in source builds from vulnerable setuptools dependency"
+description: "* Some source-builds may be impacted by a CWE-1395 (eg. vulnerable `setuptools`
+  dependency).\n* Multicast prior to v2.0.9a3 on systems with minimal dependancies
+  installed may use `setuptools <78.1.1` and thus rely on a compromised dependency.
+  In some cases there is a chance that source-builds would fail due to an exploit
+  of the closely related CVE-2025-47273, or become arbitrarily modified."
+date: "2025-05-28"
+pubdate: "2025-05-28"
+affected_range: "<2.0.9a0"
+fixed_versions:
+- "2.0.9a0"
+affected_versions: "All versions before 2.0.9a0"
+not_impacted: "All versions starting from 2.0.9a0"
+solution: "Upgrade to version 2.0.9a0 or above."
+urls:
+- "https://github.com/advisories/GHSA-94v7-wxj6-r2q5"
+- "https://github.com/pypa/setuptools/security/advisories/GHSA-5rjg-fvgr-3xxf"
+- "https://github.com/reactive-firewall/multicast/security/advisories/GHSA-94v7-wxj6-r2q5"
+- "https://github.com/pypa/setuptools/issues/4946"
+- "https://github.com/reactive-firewall/multicast/commit/c5c7c7de272421d944beca8452871bca6bfd151f"
+- "https://github.com/reactive-firewall/multicast"
+- "https://github.com/reactive-firewall/multicast/blob/c5c7c7de272421d944beca8452871bca6bfd151f/docs/requirements.txt#L27"
+- "https://github.com/reactive-firewall/multicast/blob/c5c7c7de272421d944beca8452871bca6bfd151f/pyproject.toml#L2"
+- "https://github.com/reactive-firewall/multicast/blob/c5c7c7de272421d944beca8452871bca6bfd151f/requirements.txt#L26"
+- "https://github.com/reactive-firewall/multicast/blob/c5c7c7de272421d944beca8452871bca6bfd151f/tests/requirements.txt#L32"
+uuid: "acecb772-d304-4a44-9824-9ac4f3abfd0d"
+cwe_ids:
+- "CWE-1395"
+- "CWE-937"
+- "CWE-1035"

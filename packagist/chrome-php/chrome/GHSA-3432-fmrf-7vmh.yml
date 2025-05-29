@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-3432-fmrf-7vmh"
+identifiers:
+- "GHSA-3432-fmrf-7vmh"
+package_slug: "packagist/chrome-php/chrome"
+title: "Chrome PHP is missing encoding in `CssSelector`"
+description: "CSS Selector expressions are not properly encoded, which can lead to
+  XSS (cross-site scripting) vulnerabilities."
+date: "2025-05-28"
+pubdate: "2025-05-28"
+affected_range: "<1.14.0"
+fixed_versions:
+- "1.14.0"
+affected_versions: "All versions before 1.14.0"
+not_impacted: "All versions starting from 1.14.0"
+solution: "Upgrade to version 1.14.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-3432-fmrf-7vmh"
+- "https://github.com/chrome-php/chrome/security/advisories/GHSA-3432-fmrf-7vmh"
+- "https://github.com/chrome-php/chrome/pull/691"
+- "https://github.com/chrome-php/chrome/commit/34b2b8d1691f4e3940b1e1e95d388fffe81169c8"
+- "https://github.com/chrome-php/chrome"
+uuid: "31311cfc-0310-4f63-bf94-1d7895cb0c38"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"
