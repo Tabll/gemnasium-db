@@ -1,0 +1,26 @@
+---
+identifier: "GHSA-wv8j-m3hx-924j"
+identifiers:
+- "GHSA-wv8j-m3hx-924j"
+package_slug: "cargo/arrow2"
+title: "Arrow2 allows out of bounds access in public safe API"
+description: "`Rows::row_unchecked()` allows out of bounds access to the underlying
+  buffer without sufficient checks.\n\nThe arrow2 crate is no longer maintained, so
+  there are no plans to fix this issue. Users are advised to migrate to the arrow
+  crate, instead."
+date: "2025-05-30"
+pubdate: "2025-05-30"
+affected_range: "<=0.18.0"
+fixed_versions: []
+affected_versions: "All versions up to 0.18.0"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-wv8j-m3hx-924j"
+- "https://github.com/jorgecarleitao/arrow2"
+- "https://rustsec.org/advisories/RUSTSEC-2025-0038.html"
+uuid: "81db9b0c-687d-4c07-a134-fbcd1c683803"
+cwe_ids:
+- "CWE-119"
+- "CWE-937"
+- "CWE-1035"
