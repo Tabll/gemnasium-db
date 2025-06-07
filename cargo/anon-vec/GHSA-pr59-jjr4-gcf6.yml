@@ -1,0 +1,26 @@
+---
+identifier: "GHSA-pr59-jjr4-gcf6"
+identifiers:
+- "GHSA-pr59-jjr4-gcf6"
+package_slug: "cargo/anon-vec"
+title: "anon-vec lacks sufficient checks in public API"
+description: "The following functions in the anon-vec crate are unsound due to insufficient
+  checks on their arguments::\n\n- `AnonVec::get_ref()`\n- `AnonVec::get_mut()`\n-
+  `AnonVec::remove_get()`\n\nThe crate was built as a learning project and is not
+  being maintained."
+date: "2025-06-05"
+pubdate: "2025-06-05"
+affected_range: "<=0.1.1"
+fixed_versions: []
+affected_versions: "All versions up to 0.1.1"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-pr59-jjr4-gcf6"
+- "https://github.com/RylanYancey/anon-vec"
+- "https://rustsec.org/advisories/RUSTSEC-2025-0039.html"
+uuid: "87c396ae-2ba2-4617-8ca0-fce9bef4de61"
+cwe_ids:
+- "CWE-20"
+- "CWE-937"
+- "CWE-1035"
