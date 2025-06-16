@@ -1,0 +1,52 @@
+---
+identifier: "GHSA-79xg-q4qm-7v9w"
+identifiers:
+- "GHSA-79xg-q4qm-7v9w"
+package_slug: "go/github.com/CosmWasm/wasmd"
+title: "CWA-2025-006: wasmd's improper error handling may lead to IBC channel opening
+  despite error"
+description: "# CWA-2025-006: Improper error handling may lead to IBC channel opening
+  despite error\n\n**Severity**\n\nHigh (Considerable + Likely)[^1]\n\n**Affected
+  versions:**\n\n- wasmd 0.60.0\n- wasmd >= 0.51.0 < 0.55.1\n\n**Patched versions:**\n\n-
+  wasmd 0.60.1, 0.55.1, 0.54.1, 0.53.3\n\n## Description of the bug\n\nA contract
+  erroring during IBC channel opening does not prevent the channel from opening.\n\n##
+  Applying the patch\n\nThe patch will be shipped in a wasmd release. You will also
+  have to update `libwasmvm` if you build statically.\nIf you already use the latest
+  / close to latest wasmd, you can update more or less as follows:\n\n1. Check the
+  current wasmd version: `go list -m github.com/CosmWasm/wasmd`\n2. Bump the `github.com/CosmWasm/wasmd`
+  dependency in your go.mod to 0.60.1 (Cosmos SDK 0.53 compatible), 0.55.1 (Cosmos
+  SDK 0.50 compatible), 0.54.1 or 0.53.3; `go mod tidy`; commit.\n3. If you use the
+  static libraries `libwasmvm_muslc.aarch64.a`/`libwasmvm_muslc.x86_64.a`, make sure
+  that you use the same version as your wasmvm version.\n4. Check the updated wasmd
+  version: `go list -m github.com/CosmWasm/wasmd` and ensure you see 0.60.1, 0.55.1,
+  0.54.1 or 0.53.3.\n5. Follow your regular practices to deploy chain upgrades.\n\nThe
+  patch is consensus breaking.\n\n## Acknowledgement\n\nThis problem was discovered
+  during an audit of the CosmWasm stack performed by Sherlock and funded by ICF/ICL
+  in Q1 2025. Thank you for that work!\n\nIf you believe you have found a bug in the
+  Interchain Stack or would like to contribute to the\nprogram by reporting a bug,
+  please see <https://hackerone.com/cosmos>.\n\n## Timeline\n\n- 2025-03-03: Auditor
+  informs Confio about this issue.\n- 2025-04-10: Confio developed the patch internally.\n-
+  2025-06-05: Upcoming patch is announced.\n- 2025-06-10: Patch is released."
+date: "2025-06-11"
+pubdate: "2025-06-11"
+affected_range: ">=0.60.0 <0.60.1||=0.60.0||>=0.55.0 <0.55.1||>=0.54.0 <0.54.1||>=0.51.0
+  <0.53.3"
+fixed_versions:
+- "0.60.1"
+- "0.55.1"
+- "0.54.1"
+- "0.53.3"
+affected_versions: "All versions starting from 0.51.0 before 0.53.3, all versions
+  starting from 0.54.0 before 0.54.1, all versions starting from 0.55.0 before 0.55.1,
+  all versions starting from 0.60.0 before 0.60.1, version 0.60.0"
+not_impacted: ""
+solution: "Upgrade to versions 0.53.3, 0.54.1, 0.55.1, 0.60.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-79xg-q4qm-7v9w"
+- "https://github.com/CosmWasm/wasmd/security/advisories/GHSA-79xg-q4qm-7v9w"
+- "https://github.com/CosmWasm/advisories/blob/main/CWAs/CWA-2025-006.md"
+- "https://github.com/CosmWasm/wasmd"
+uuid: "74100032-8f19-4281-a919-65ff95b9e04d"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

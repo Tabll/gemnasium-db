@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-2x5j-vhc8-9cwm"
+identifiers:
+- "GHSA-2x5j-vhc8-9cwm"
+package_slug: "go/github.com/cloudflare/circl"
+title: "CIRCL-Fourq: Missing and wrong validation can lead to incorrect results"
+description: "The CIRCL implementation of FourQ fails to validate user-supplied low-order
+  points during Diffie-Hellman key exchange, potentially allowing attackers to force
+  the identity point and compromise session security.\n\nMoreover, there is an incorrect
+  point validation in ScalarMult can lead to incorrect results in the isEqual function
+  and if a point is on the curve."
+date: "2025-06-10"
+pubdate: "2025-06-10"
+affected_range: "<1.6.1"
+fixed_versions:
+- "1.6.1"
+affected_versions: "All versions before 1.6.1"
+not_impacted: "All versions starting from 1.6.1"
+solution: "Upgrade to version 1.6.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-2x5j-vhc8-9cwm"
+- "https://github.com/cloudflare/circl/security/advisories/GHSA-2x5j-vhc8-9cwm"
+- "https://github.com/cloudflare/circl"
+- "https://github.com/cloudflare/circl/tree/v1.6.1"
+uuid: "20ad5c83-0adb-40e2-a054-7f3cdb0c4b9a"
+cwe_ids:
+- "CWE-20"
+- "CWE-937"
+- "CWE-1035"

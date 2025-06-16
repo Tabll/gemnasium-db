@@ -1,0 +1,38 @@
+---
+identifier: "GHSA-v33j-v3x4-42qg"
+identifiers:
+- "GHSA-v33j-v3x4-42qg"
+package_slug: "cargo/hurl"
+title: "Regex literal in Hurl files are not escaped when exported to HTML, allowing
+  injections"
+description: "Given this Hurl file:\n\nregex.hurl:\n\n```\nGET https://foo.com\nHTTP
+  200\n[Asserts]\njsonpath \"$.body\" matches /<img src=\"\" onerror=\"alert('Hi!')\">/\n```\n\nWhen
+  exported to HTML:\n\n```\n$ hurlfmt --out html regex.hurl\n<pre><code class=\"language-hurl\"><span
+  class=\"hurl-entry\"><span class=\"request\"><span class=\"line\"><span class=\"method\">GET</span>
+  <span class=\"url\">https://foo.com</span></span>\n</span><span class=\"response\"><span
+  class=\"line\"><span class=\"version\">HTTP</span> <span class=\"number\">200</span></span>\n<span
+  class=\"line\"><span class=\"section-header\">[Asserts]</span></span>\n<span class=\"line\"><span
+  class=\"query-type\">jsonpath</span> <span class=\"string\">\"$.body\"</span> <span
+  class=\"predicate-type\">matches</span> <span class=\"regex\">/<img src=\"\" onerror=\"alert('Hi!')\">/</span></span>\n</span></span><span
+  class=\"line\"></span>\n</code></pre>\n```\n\nThe regex literal `/<img src=\"\"
+  onerror=\"alert('Hi!')\">/` is not escaped:\n\n`<span class=\"regex\">/<img src=\"\"
+  onerror=\"alert('Hi!')\">/</span></span>`\n\nWhen opened in a browser, the code
+  is run without user interaction:\n\n![regex](https://github.com/user-attachments/assets/9c20a2ff-900f-4420-b38b-1e7648749119)"
+date: "2025-06-11"
+pubdate: "2025-06-11"
+affected_range: "<7.0.0"
+fixed_versions:
+- "7.0.0"
+affected_versions: "All versions before 7.0.0"
+not_impacted: "All versions starting from 7.0.0"
+solution: "Upgrade to version 7.0.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-v33j-v3x4-42qg"
+- "https://github.com/Orange-OpenSource/hurl/security/advisories/GHSA-v33j-v3x4-42qg"
+- "https://github.com/Orange-OpenSource/hurl/commit/248ac41cfa1797c52241c6ef756490d90027cdf2"
+- "https://github.com/Orange-OpenSource/hurl/commit/7dcdbd1796785392b1e829d1f07c6687b9a8f27d"
+- "https://github.com/Orange-OpenSource/hurl"
+uuid: "0dca2d02-7bd5-4b6c-b64a-75be655a47ed"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"
