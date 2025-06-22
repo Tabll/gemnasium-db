@@ -1,0 +1,36 @@
+---
+identifier: "GHSA-7cjh-xx4r-qh3f"
+identifiers:
+- "GHSA-7cjh-xx4r-qh3f"
+package_slug: "maven/io.sentry/sentry-android-replay"
+title: "sentry-android unmasked sensitive data in Android Session Replays for users
+  of Jetpack Compose 1.8+"
+description: "Under specific circumstances, text composables may contain unmasked
+  sensitive data in Android session replays.  You may be impacted if you meet the
+  following conditions:\n- Using any `sentry-android` with versions < 8.14.0\n- Using
+  Jetpack Compose >= [1.8.0-alpha08](https://developer.android.com/jetpack/androidx/releases/compose-ui#1.8.0-alpha08)\n-
+  Have configured Sentry Session Replays for Android\n\nIf you do not use Jetpack
+  Compose or have never used a version >= 1.8.0-alpha08 you are not impacted. If you
+  have not configured [Session Replays for Mobile](https://docs.sentry.io/product/explore/session-replay/mobile/)
+  you are not impacted."
+date: "2025-06-20"
+pubdate: "2025-06-20"
+affected_range: "[,8.14.0)"
+fixed_versions:
+- "8.14.0"
+affected_versions: "All versions before 8.14.0"
+not_impacted: "All versions starting from 8.14.0"
+solution: "Upgrade to version 8.14.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-7cjh-xx4r-qh3f"
+- "https://github.com/getsentry/sentry-java/security/advisories/GHSA-7cjh-xx4r-qh3f"
+- "https://github.com/getsentry/sentry-java/issues/4467"
+- "https://github.com/getsentry/sentry-java/pull/4485"
+- "https://github.com/getsentry/sentry-java/commit/8bfa9cceab402e58f6723a0694158d27e8a41a56"
+- "https://github.com/getsentry/sentry-java"
+- "https://github.com/getsentry/sentry-java/releases/tag/8.14.0"
+uuid: "3ed4b704-eba3-4056-8e60-789c1392806c"
+cwe_ids:
+- "CWE-532"
+- "CWE-937"
+- "CWE-1035"
