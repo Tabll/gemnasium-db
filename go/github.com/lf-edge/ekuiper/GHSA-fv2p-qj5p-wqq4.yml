@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-fv2p-qj5p-wqq4"
+identifiers:
+- "GHSA-fv2p-qj5p-wqq4"
+package_slug: "go/github.com/lf-edge/ekuiper"
+title: "LF Edge eKuiper vulnerable to File Path Traversal leading to file replacement"
+description: "Path traversal is also known as directory traversal. These vulnerabilities
+  enable an attacker to read arbitrary files on the server that is running an application.
+  In this case, an attacker might be able to write to arbitrary files on the server,
+  allowing them to modify application data or behavior, and ultimately take full control
+  of the server."
+date: "2025-07-03"
+pubdate: "2025-07-03"
+affected_range: "<=1.14.7"
+fixed_versions: []
+affected_versions: "All versions up to 1.14.7"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-fv2p-qj5p-wqq4"
+- "https://github.com/lf-edge/ekuiper/security/advisories/GHSA-fv2p-qj5p-wqq4"
+- "https://github.com/lf-edge/ekuiper"
+- "https://github.com/lf-edge/ekuiper/blob/1e6b6b6601445eb05316532f5fbef7f0a863ecfe/internal/server/rest.go#L329-L359"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:N/I:H/A:L"
+uuid: "e5d67494-2cd7-4abd-a51e-d4af5c852658"
+cwe_ids:
+- "CWE-24"
+- "CWE-937"
+- "CWE-1035"

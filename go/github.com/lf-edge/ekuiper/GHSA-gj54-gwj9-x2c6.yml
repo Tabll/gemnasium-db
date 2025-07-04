@@ -1,0 +1,26 @@
+---
+identifier: "GHSA-gj54-gwj9-x2c6"
+identifiers:
+- "GHSA-gj54-gwj9-x2c6"
+package_slug: "go/github.com/lf-edge/ekuiper"
+title: "eKuiper /config/uploads API arbitrary file writing may lead to RCE"
+description: "eKuiper /config/uploads API supports accessing remote web URLs and saving
+  files in the local upload directory, but there are no security restrictions, resulting
+  in arbitrary file writing through ../. If run with root privileges, RCE can be achieved
+  by writing crontab files or ssh keys."
+date: "2025-07-03"
+pubdate: "2025-07-03"
+affected_range: "<=1.14.7"
+fixed_versions: []
+affected_versions: "All versions up to 1.14.7"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-gj54-gwj9-x2c6"
+- "https://github.com/lf-edge/ekuiper/security/advisories/GHSA-gj54-gwj9-x2c6"
+- "https://github.com/lf-edge/ekuiper"
+uuid: "4fdb515b-295f-4bdd-8a91-30045408914b"
+cwe_ids:
+- "CWE-434"
+- "CWE-937"
+- "CWE-1035"
