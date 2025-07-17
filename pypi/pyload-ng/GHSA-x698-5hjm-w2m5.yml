@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-x698-5hjm-w2m5"
+identifiers:
+- "GHSA-x698-5hjm-w2m5"
+package_slug: "pypi/pyload-ng"
+title: "pyLoad is vulnerable to attacks that bypass localhost restrictions, enabling
+  the creation of arbitrary packages"
+description: "Any unauthenticated attacker can bypass the localhost restrictions posed
+  by the application and utilize this to create arbitrary packages."
+date: "2025-07-08"
+pubdate: "2025-07-08"
+affected_range: "<=0.5.0b3.dev88"
+fixed_versions: []
+affected_versions: "All versions up to 0.5.0b3.dev88"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-x698-5hjm-w2m5"
+- "https://github.com/pyload/pyload/security/advisories/GHSA-x698-5hjm-w2m5"
+- "https://github.com/pyload/pyload/commit/f4e2d12416ba2dfac7b036d5c8d6dab5461b9840"
+- "https://github.com/pyload/pyload"
+- "https://github.com/pyload/pyload/blob/4159a1191ec4fe6d927e57a9c4bb8f54e16c381d/src/pyload/webui/app/blueprints/cnl_blueprint.py#L21-L36"
+- "https://github.com/pyload/pyload/blob/4159a1191ec4fe6d927e57a9c4bb8f54e16c381d/src/pyload/webui/app/blueprints/cnl_blueprint.py#L56-L58C11"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+uuid: "dff52062-0289-4d72-bead-c2870c670c88"
+cwe_ids:
+- "CWE-284"
+- "CWE-290"
+- "CWE-937"
+- "CWE-1035"

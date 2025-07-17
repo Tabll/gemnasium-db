@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-qr9h-j6xg-2j72"
+identifiers:
+- "GHSA-qr9h-j6xg-2j72"
+package_slug: "npm/@builder.io/qwik-city"
+title: "Qwik's unhandled exception vulnerabilty can cause server crashes from malicious
+  requests"
+description: "Possibility to craft a request that will crash the Qwik Server in the
+  default configuration."
+date: "2025-07-09"
+pubdate: "2025-07-09"
+affected_range: "<1.13.0"
+fixed_versions:
+- "1.13.0"
+affected_versions: "All versions before 1.13.0"
+not_impacted: "All versions starting from 1.13.0"
+solution: "Upgrade to version 1.13.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-qr9h-j6xg-2j72"
+- "https://github.com/QwikDev/qwik/security/advisories/GHSA-qr9h-j6xg-2j72"
+- "https://github.com/QwikDev/qwik/pull/7342"
+- "https://github.com/QwikDev/qwik"
+- "https://github.com/QwikDev/qwik/releases/tag/%40builder.io%2Fqwik%401.13.0"
+uuid: "e8ed98dd-50ad-4200-a5c7-fa45e6e7556c"
+cwe_ids:
+- "CWE-248"
+- "CWE-937"
+- "CWE-1035"

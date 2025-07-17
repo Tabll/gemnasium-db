@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-rj53-j6jw-7f7g"
+identifiers:
+- "GHSA-rj53-j6jw-7f7g"
+package_slug: "go/github.com/babylonlabs-io/babylon/v2"
+title: "Babylon vulnerable to chain halt when a message modifies the validator set
+  at the epoch boundary"
+description: "Sending a message that modifies the validator set at the epoch boundary
+  halts the chain."
+date: "2025-07-08"
+pubdate: "2025-07-08"
+affected_range: ">=2.0.0 <2.1.0"
+fixed_versions:
+- "2.1.0"
+affected_versions: "All versions starting from 2.0.0 before 2.1.0"
+not_impacted: "All versions before 2.0.0, all versions starting from 2.1.0"
+solution: "Upgrade to version 2.1.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-rj53-j6jw-7f7g"
+- "https://github.com/babylonlabs-io/babylon/security/advisories/GHSA-rj53-j6jw-7f7g"
+- "https://github.com/babylonlabs-io/babylon/pull/1244/files"
+- "https://boiling-lake-106.notion.site/2025-06-18-Babylon-Genesis-Chain-Halt-Post-Mortem-229f60cc1b5f80b7adf5e3ea0541ea87"
+- "https://github.com/babylonlabs-io/babylon"
+- "https://github.com/babylonlabs-io/babylon/releases/tag/v2.1.0"
+uuid: "52718e5f-5c66-4f99-9b5b-f5722ab56944"
+cwe_ids:
+- "CWE-754"
+- "CWE-937"
+- "CWE-1035"

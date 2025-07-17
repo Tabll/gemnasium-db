@@ -1,0 +1,36 @@
+---
+identifier: "GHSA-xrrq-rrgq-h89w"
+identifiers:
+- "GHSA-xrrq-rrgq-h89w"
+package_slug: "cargo/static-alloc"
+title: "static-alloc vulnerability leads to uninitialized read after allocating MemBump"
+description: "The affected function, `MemBump::new()`, would allocate memory without
+  initializing it. Subsequently calling the created value's various `alloc`methods
+  would then read and write the start of that memory as a `Cell` which isundefined
+  behavior. Instead, it should zero initialize the start of the allocated memory.\n\nFor
+  instance, some values could violate the internal invariants of the type and cause
+  an assertion failure. Nevertheless, no deterministic read is known tocause further
+  uninitialized memory to be exposed.\n\nAffected downstream users that can not upgrade
+  are advised to call `MemBump::reset` immediately after allocation to manually perform
+  the missing write of the counter best-as-possible.\n\nThe flaw was corrected in
+  commit d8d6a7d096d3aaafd963b356a8f1bbd8d26fd967 by zeroing the Cell at the start
+  of the allocated memory."
+date: "2025-07-11"
+pubdate: "2025-07-11"
+affected_range: ">=0.2.2 <0.2.6"
+fixed_versions:
+- "0.2.6"
+affected_versions: "All versions starting from 0.2.2 before 0.2.6"
+not_impacted: "All versions before 0.2.2, all versions starting from 0.2.6"
+solution: "Upgrade to version 0.2.6 or above."
+urls:
+- "https://github.com/advisories/GHSA-xrrq-rrgq-h89w"
+- "https://github.com/197g/static-alloc/issues/81"
+- "https://github.com/197g/static-alloc/pull/82/commits/d8d6a7d096d3aaafd963b356a8f1bbd8d26fd967"
+- "https://github.com/197g/static-alloc"
+- "https://rustsec.org/advisories/RUSTSEC-2025-0042.html"
+uuid: "42584705-257a-4898-a13d-6061303e3709"
+cwe_ids:
+- "CWE-908"
+- "CWE-937"
+- "CWE-1035"

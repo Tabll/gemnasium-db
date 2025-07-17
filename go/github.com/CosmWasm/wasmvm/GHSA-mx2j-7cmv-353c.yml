@@ -29,13 +29,13 @@ description: "# CWA-2025-002\n\n**Severity**\n\nMedium (Moderate + Likely)[^1]\n
   Confio receives a report through the Cosmos bug bounty program maintained by Amulet.\n-
   2024-12-20: Confio security contributors confirm the report.\n- 2024-01-27: Confio
   developed the patch internally.\n- 2025-02-04: Patch gets released."
-date: "2025-02-06"
+date: "2025-07-09"
 pubdate: "2025-02-04"
-affected_range: "<1.5.8"
+affected_range: ">=0.1.0 <1.5.8"
 fixed_versions:
 - "1.5.8"
-affected_versions: "All versions before 1.5.8"
-not_impacted: "All versions starting from 1.5.8"
+affected_versions: "All versions starting from 0.1.0 before 1.5.8"
+not_impacted: "All versions before 0.1.0, all versions starting from 1.5.8"
 solution: "Upgrade to version 1.5.8 or above."
 urls:
 - "https://github.com/advisories/GHSA-mx2j-7cmv-353c"

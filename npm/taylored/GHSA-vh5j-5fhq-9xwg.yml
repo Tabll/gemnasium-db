@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-vh5j-5fhq-9xwg"
+identifiers:
+- "GHSA-vh5j-5fhq-9xwg"
+package_slug: "npm/taylored"
+title: "Taylor has race condition in /get-patch that allows purchase token replay"
+description: "The /get-patch endpoint processes a purchase in two separate database
+  queries: a SELECT that verifies the token is unused, followed by an UPDATE that
+  marks the token as used. Because SQLite only guards each statement, a malicious
+  actor can issue two requests at the exact same moment and have both SELECT statements
+  succeed before either UPDATE runs."
+date: "2025-06-30"
+pubdate: "2025-06-27"
+affected_range: "<8.1.3"
+fixed_versions:
+- "8.1.3"
+affected_versions: "All versions before 8.1.3"
+not_impacted: "All versions starting from 8.1.3"
+solution: "Upgrade to version 8.1.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-vh5j-5fhq-9xwg"
+- "https://github.com/tailot/taylored/security/advisories/GHSA-vh5j-5fhq-9xwg"
+- "https://github.com/tailot/taylored/commit/fdf67a6fba0deae30912905a79fb5a9e83751a79"
+- "https://github.com/tailot/taylored"
+uuid: "2a358ae8-25b4-464d-b27f-55abec1fb766"
+cwe_ids:
+- "CWE-362"
+- "CWE-937"
+- "CWE-1035"
