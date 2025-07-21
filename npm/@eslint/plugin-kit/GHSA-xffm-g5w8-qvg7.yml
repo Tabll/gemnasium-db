@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-xffm-g5w8-qvg7"
+identifiers:
+- "GHSA-xffm-g5w8-qvg7"
+package_slug: "npm/@eslint/plugin-kit"
+title: "@eslint/plugin-kit is vulnerable to Regular Expression Denial of Service attacks
+  through ConfigCommentParser"
+description: "The `ConfigCommentParser#parseJSONLikeConfig` API is vulnerable to a
+  Regular Expression Denial of Service (ReDoS) attack in its only argument."
+date: "2025-07-18"
+pubdate: "2025-07-18"
+affected_range: "<0.3.3"
+fixed_versions:
+- "0.3.3"
+affected_versions: "All versions before 0.3.3"
+not_impacted: "All versions starting from 0.3.3"
+solution: "Upgrade to version 0.3.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-xffm-g5w8-qvg7"
+- "https://github.com/eslint/rewrite/security/advisories/GHSA-xffm-g5w8-qvg7"
+- "https://github.com/eslint/rewrite/commit/b283f64099ad6c6b5043387c091691d21b387805"
+- "https://github.com/eslint/rewrite"
+uuid: "81410482-612b-4920-9a0f-5ca0f14a2d38"
+cwe_ids:
+- "CWE-1333"
+- "CWE-937"
+- "CWE-1035"
