@@ -10,7 +10,7 @@ description: "If a user has restricted access to a project that is configured wi
   with `shift=true` and creating a setuid root executable. This is possible because
   the `shift` property is not restricted unless `restricted.devices.disk.paths` is
   set."
-date: "2025-01-30"
+date: "2025-07-22"
 pubdate: "2023-12-05"
 affected_range: ">=5.19.0 <5.20.0||=5.19.0"
 fixed_versions:

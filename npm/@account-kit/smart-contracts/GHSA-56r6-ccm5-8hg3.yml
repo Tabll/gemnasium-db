@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-56r6-ccm5-8hg3"
+identifiers:
+- "GHSA-56r6-ccm5-8hg3"
+package_slug: "npm/@account-kit/smart-contracts"
+title: "Alchemy Non-SMA and Webauthn Account Security Advisory"
+description: "A potential security issue has been mitigated on old account deployment
+  functions from the factory. Smart wallets in use on all existing supported networks
+  are not impacted."
+date: "2025-07-21"
+pubdate: "2025-07-21"
+affected_range: ">=4.42.0 <4.52.0"
+fixed_versions:
+- "4.52.0"
+affected_versions: "All versions starting from 4.42.0 before 4.52.0"
+not_impacted: "All versions before 4.42.0, all versions starting from 4.52.0"
+solution: "Upgrade to version 4.52.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-56r6-ccm5-8hg3"
+- "https://github.com/alchemyplatform/modular-account/security/advisories/GHSA-56r6-ccm5-8hg3"
+- "https://github.com/alchemyplatform/aa-sdk/commit/b343437a9e4a833c25fed7bc8785a815cbbae0ee"
+- "https://github.com/alchemyplatform/modular-account/commit/2352c9b692935ba97d98619cb31ba1653eee241f"
+- "https://github.com/alchemyplatform/modular-account"
+uuid: "835e745f-315a-48a7-8e46-ebda5e2e36aa"
+cwe_ids:
+- "CWE-287"
+- "CWE-937"
+- "CWE-1035"
