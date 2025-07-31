@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-rm83-pxjx-pr5j"
+identifiers:
+- "GHSA-rm83-pxjx-pr5j"
+package_slug: "cargo/cosmwasm-std"
+title: "Duplicate Advisory: CosmWasm affected by arithmetic overflows"
+description: "### Duplicate Advisory\nThis advisory has been withdrawn because it
+  is a duplicate of GHSA-8724-5xmm-w5xq. This link is maintained to preserve external
+  references.\n\n### Original Description\nThe cosmwasm-std crate before 2.0.2 for
+  Rust allows integer overflows that cause incorrect contract calculations."
+date: "2025-07-28"
+pubdate: "2025-07-27"
+affected_range: ">=1.3.0 <1.4.4||>=1.5.0 <1.5.4"
+fixed_versions:
+- "1.4.4"
+- "1.5.4"
+affected_versions: "All versions starting from 1.3.0 before 1.4.4, all versions starting
+  from 1.5.0 before 1.5.4"
+not_impacted: "All versions before 1.3.0, all versions starting from 1.4.4 before
+  1.5.0, all versions starting from 1.5.4"
+solution: "Upgrade to versions 1.4.4, 1.5.4 or above."
+urls:
+- "https://github.com/advisories/GHSA-rm83-pxjx-pr5j"
+- "https://nvd.nist.gov/vuln/detail/CVE-2024-58263"
+- "https://crates.io/crates/cosmwasm-std"
+- "https://github.com/CosmWasm/advisories/blob/main/CWAs/CWA-2024-002.md"
+- "https://github.com/CosmWasm/cosmwasm"
+- "https://rustsec.org/advisories/RUSTSEC-2024-0338.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N"
+uuid: "29e6cf34-d929-4c76-97be-5144fde96ea5"
+cwe_ids:
+- "CWE-190"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,41 @@
+---
+identifier: "GHSA-q5h2-xq96-6gmc"
+identifiers:
+- "GHSA-q5h2-xq96-6gmc"
+package_slug: "cargo/buffered-reader"
+title: "Duplicate Advisory: buffered-reader vulnerable to out-of-bounds array access
+  leading to panic"
+description: "### Duplicate Advisory\nThis advisory has been withdrawn because it
+  is a duplicate of GHSA-29mf-62xx-28jq. This link is maintained to preserve external
+  references.\n\n### Original Description\nThe buffered-reader crate before 1.2.0
+  for Rust allows out-of-bounds array access and a panic."
+date: "2025-07-28"
+pubdate: "2025-07-28"
+affected_range: "<1.0.2||>=1.1.0 <1.1.5"
+fixed_versions:
+- "1.0.2"
+- "1.1.5"
+affected_versions: "All versions before 1.0.2, all versions starting from 1.1.0 before
+  1.1.5"
+not_impacted: "All versions starting from 1.0.2 before 1.1.0, all versions starting
+  from 1.1.5"
+solution: "Upgrade to versions 1.0.2, 1.1.5 or above."
+urls:
+- "https://github.com/advisories/GHSA-q5h2-xq96-6gmc"
+- "https://nvd.nist.gov/vuln/detail/CVE-2023-53161"
+- "https://crates.io/crates/buffered-reader"
+- "https://crates.io/crates/w"
+- "https://github.com"
+- "https://github.com/advisories/GHSA-29mf-62xx-28jq"
+- "https://gitlab.com/sequoia-pgp/sequoia"
+- "https://gitlab.com/sequoia-pgp/sequoia/-/tags/buffered-reader%2Fv1.0.2"
+- "https://gitlab.com/sequoia-pgp/sequoia/-/tags/buffered-reader%2Fv1.1.5"
+- "https://lists.sequoia-pgp.org/hyperkitty/list/announce@lists.sequoia-pgp.org/thread/SN2E3QRT4DMQ5JNEK6VIN6DJ5SH766DI"
+- "https://rustsec.org/advisories"
+- "https://rustsec.org/advisories/RUSTSEC-2023-0039.html"
+cvss_v3: "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L"
+uuid: "d9d5fcd5-7596-4208-8d0b-e79c6367fd52"
+cwe_ids:
+- "CWE-125"
+- "CWE-937"
+- "CWE-1035"

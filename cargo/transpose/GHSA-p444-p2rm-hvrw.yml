@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-p444-p2rm-hvrw"
+identifiers:
+- "GHSA-p444-p2rm-hvrw"
+package_slug: "cargo/transpose"
+title: "Duplicate Advisory: transpose: Buffer overflow due to integer overflow"
+description: "### Duplicate Advisory\nThis advisory has been withdrawn because it
+  is a duplicate of GHSA-5gmm-6m36-r7jh. This link is maintained to preserve external
+  references.\n\n### Original Description\nThe transpose crate before 0.2.3 for Rust
+  allows an integer overflow via input_width and input_height arguments."
+date: "2025-07-28"
+pubdate: "2025-07-27"
+affected_range: ">=0.1.0 <0.2.3"
+fixed_versions:
+- "0.2.3"
+affected_versions: "All versions starting from 0.1.0 before 0.2.3"
+not_impacted: "All versions before 0.1.0, all versions starting from 0.2.3"
+solution: "Upgrade to version 0.2.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-p444-p2rm-hvrw"
+- "https://nvd.nist.gov/vuln/detail/CVE-2023-53156"
+- "https://github.com/ejmahler/transpose/issues/11"
+- "https://crates.io/crates/transpose"
+- "https://github.com/advisories/GHSA-5gmm-6m36-r7jh"
+- "https://github.com/ejmahler/transpose"
+- "https://rustsec.org/advisories/RUSTSEC-2023-0080.html"
+cvss_v3: "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:C/C:N/I:L/A:L"
+uuid: "94e46389-f811-490d-90be-d4f7f19c17be"
+cwe_ids:
+- "CWE-190"
+- "CWE-937"
+- "CWE-1035"

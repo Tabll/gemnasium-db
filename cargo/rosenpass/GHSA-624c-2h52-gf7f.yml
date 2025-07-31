@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-624c-2h52-gf7f"
+identifiers:
+- "GHSA-624c-2h52-gf7f"
+package_slug: "cargo/rosenpass"
+title: "Duplicate Advisory: Remotely exploitable denial of service in Rosenpass"
+description: "### Duplicate Advisory\nThis advisory has been withdrawn because it
+  is a duplicate of GHSA-6ggr-cwv4-g7qg. This link is maintained to preserve external
+  references.\n\n### Original Description\nThe rosenpass crate before 0.2.1 for Rust
+  allows remote attackers to cause a denial of service (panic) via a one-byte UDP
+  packet."
+date: "2025-07-28"
+pubdate: "2025-07-28"
+affected_range: "<0.2.1"
+fixed_versions:
+- "0.2.1"
+affected_versions: "All versions before 0.2.1"
+not_impacted: "All versions starting from 0.2.1"
+solution: "Upgrade to version 0.2.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-624c-2h52-gf7f"
+- "https://nvd.nist.gov/vuln/detail/CVE-2023-53157"
+- "https://github.com/rosenpass/rosenpass/commit/93439858d1c44294a7b377f775c4fc897a370bb2"
+- "https://crates.io/crates/rosenpass"
+- "https://github.com/advisories/GHSA-6ggr-cwv4-g7qg"
+- "https://github.com/rosenpass/rosenpass"
+- "https://rustsec.org/advisories/RUSTSEC-2023-0077.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+uuid: "dbd34890-8ad4-43bd-83c0-d60c9c9e85c9"
+cwe_ids:
+- "CWE-130"
+- "CWE-937"
+- "CWE-1035"

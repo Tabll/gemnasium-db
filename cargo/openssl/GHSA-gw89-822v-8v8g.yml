@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-gw89-822v-8v8g"
+identifiers:
+- "GHSA-gw89-822v-8v8g"
+package_slug: "cargo/openssl"
+title: "Duplicate Advisory: `openssl` `X509VerifyParamRef::set_host` buffer over-read"
+description: "### Duplicate Advisory\nThis advisory has been withdrawn because it
+  is a duplicate of GHSA-xcf7-rvmh-g6q4. This link is maintained to preserve external
+  references.\n\n### Original Description\nThe openssl crate before 0.10.55 for Rust
+  allows an out-of-bounds read via an empty string to X509VerifyParamRef::set_host."
+date: "2025-07-28"
+pubdate: "2025-07-28"
+affected_range: ">=0.10.0 <0.10.55"
+fixed_versions:
+- "0.10.55"
+affected_versions: "All versions starting from 0.10.0 before 0.10.55"
+not_impacted: "All versions before 0.10.0, all versions starting from 0.10.55"
+solution: "Upgrade to version 0.10.55 or above."
+urls:
+- "https://github.com/advisories/GHSA-gw89-822v-8v8g"
+- "https://nvd.nist.gov/vuln/detail/CVE-2023-53159"
+- "https://github.com/sfackler/rust-openssl/issues/1965"
+- "https://crates.io/crates/openssl"
+- "https://rustsec.org/advisories/RUSTSEC-2023-0044.html"
+cvss_v3: "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:C/C:L/I:N/A:L"
+uuid: "dceee0a6-2641-4e66-bbfb-d332893412b2"
+cwe_ids:
+- "CWE-126"
+- "CWE-937"
+- "CWE-1035"

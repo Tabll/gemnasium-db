@@ -7,7 +7,7 @@ title: "Babylon vulnerable to chain half when transaction has fees different tha
   `ubbn`"
 description: "Sending transactions with fees different than native Babylon genesis
   denom (`ubbn`) leads to chain halt."
-date: "2025-06-30"
+date: "2025-07-29"
 pubdate: "2025-06-30"
 affected_range: "<2.2.0"
 fixed_versions:

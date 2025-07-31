@@ -1,0 +1,37 @@
+---
+identifier: "GHSA-rxmq-m78w-7wmc"
+identifiers:
+- "GHSA-rxmq-m78w-7wmc"
+package_slug: "nuget/SixLabors.ImageSharp"
+title: "SixLabors ImageSharp Has Infinite Loop in GIF Decoder When Skipping Malformed
+  Comment Extension Blocks"
+description: "A specially crafted GIF file containing a malformed comment extension
+  block (with a missing block terminator) can cause the ImageSharp GIF decoder to
+  enter an infinite loop while attempting to skip the block. This leads to a denial
+  of service. Applications processing untrusted GIF input should upgrade to a patched
+  version."
+date: "2025-07-30"
+pubdate: "2025-07-30"
+affected_range: "[,2.1.11),[3.0.0,3.1.11)"
+fixed_versions:
+- "2.1.11"
+- "3.1.11"
+affected_versions: "All versions before 2.1.11, all versions starting from 3.0.0 before
+  3.1.11"
+not_impacted: "All versions starting from 2.1.11 before 3.0.0, all versions starting
+  from 3.1.11"
+solution: "Upgrade to versions 2.1.11, 3.1.11 or above."
+urls:
+- "https://github.com/advisories/GHSA-rxmq-m78w-7wmc"
+- "https://github.com/SixLabors/ImageSharp/security/advisories/GHSA-rxmq-m78w-7wmc"
+- "https://github.com/SixLabors/ImageSharp/issues/2953"
+- "https://github.com/SixLabors/ImageSharp/commit/55e49262df9a057dff9b7807ed1b7bdb49187c3f"
+- "https://github.com/SixLabors/ImageSharp/commit/833f3ceec35af6b775950e06f03b934546cefbf6"
+- "https://github.com/SixLabors/ImageSharp"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+uuid: "4976133b-e80d-4297-88cb-0eedaa15e1c6"
+cwe_ids:
+- "CWE-400"
+- "CWE-770"
+- "CWE-937"
+- "CWE-1035"

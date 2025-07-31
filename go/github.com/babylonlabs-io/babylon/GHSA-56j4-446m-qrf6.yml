@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-56j4-446m-qrf6"
+identifiers:
+- "GHSA-56j4-446m-qrf6"
+package_slug: "go/github.com/babylonlabs-io/babylon"
+title: "Babylon vulnerable to chain half when transaction has fees different than
+  `ubbn`"
+description: "Sending transactions with fees different than native Babylon genesis
+  denom (`ubbn`) leads to chain halt."
+date: "2025-07-29"
+pubdate: "2025-06-30"
+affected_range: "<=1.1.0"
+fixed_versions: []
+affected_versions: "All versions up to 1.1.0"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-56j4-446m-qrf6"
+- "https://github.com/babylonlabs-io/babylon/security/advisories/GHSA-56j4-446m-qrf6"
+- "https://github.com/babylonlabs-io/babylon/commit/fe67aebd5216e7d3afa1d7dee2a3f82e548556f3"
+- "https://github.com/babylonlabs-io/babylon"
+- "https://github.com/cosmos/cosmos-sdk/blob/main/x/distribution/keeper/allocation.go#L28"
+uuid: "e6ce8082-2753-4177-9861-f4676c2e6718"
+cwe_ids:
+- "CWE-755"
+- "CWE-937"
+- "CWE-1035"

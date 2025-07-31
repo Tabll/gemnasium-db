@@ -1,0 +1,37 @@
+---
+identifier: "GHSA-mvw6-62qv-vmqf"
+identifiers:
+- "GHSA-mvw6-62qv-vmqf"
+package_slug: "npm/koa"
+title: "Duplicate Advisory: Koa Open Redirect via Referrer Header (User-Controlled)"
+description: "### Duplicate Advisory\nThis advisory has been withdrawn because it
+  is a duplicate of GHSA-jgmv-j7ww-jx2x. This link is maintained to preserve external
+  references.\n\n### Original Description\nA vulnerability, which was classified as
+  problematic, was found in KoaJS Koa up to 3.0.0. Affected is the function back in
+  the library lib/response.js of the component HTTP Header Handler. The manipulation
+  of the argument Referrer leads to open redirect. It is possible to launch the attack
+  remotely. The exploit has been disclosed to the public and may be used."
+date: "2025-07-29"
+pubdate: "2025-07-25"
+affected_range: "<3.0.1"
+fixed_versions:
+- "3.0.1"
+affected_versions: "All versions before 3.0.1"
+not_impacted: "All versions starting from 3.0.1"
+solution: "Upgrade to version 3.0.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-mvw6-62qv-vmqf"
+- "https://nvd.nist.gov/vuln/detail/CVE-2025-8129"
+- "https://github.com/koajs/koa/issues/1892"
+- "https://github.com/koajs/koa/issues/1892#issue-3213028583"
+- "https://github.com/koajs/koa/commit/422c551c63d00f24e2bbbdf492f262a5935bb1f0"
+- "https://github.com/koajs/koa"
+- "https://vuldb.com/?ctiid.317514"
+- "https://vuldb.com/?id.317514"
+- "https://vuldb.com/?submit.619741"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:N/I:L/A:N"
+uuid: "64edcd72-2ee6-4235-83ab-b3980fe5086c"
+cwe_ids:
+- "CWE-601"
+- "CWE-937"
+- "CWE-1035"

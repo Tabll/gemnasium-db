@@ -1,0 +1,38 @@
+---
+identifier: "GHSA-83j7-mhw9-388w"
+identifiers:
+- "GHSA-83j7-mhw9-388w"
+package_slug: "maven/org.keycloak/keycloak-services"
+title: "Duplicate Advisory: Keycloak Privilege Escalation Vulnerability in Admin Console
+  (FGAPv2 Enabled)"
+description: "### Duplicate Advisory\nThis advisory has been withdrawn because it
+  is a duplicate of GHSA-27gp-8389-hm4w. This link is maintained to preserve external
+  references.\n\n### Original Description\nA flaw was found in the Keycloak identity
+  and access management system when Fine-Grained Admin Permissions (FGAPv2) are enabled.
+  An administrative user with the manage-users role can escalate their privileges
+  to realm-admin due to improper privilege enforcement. This vulnerability allows
+  unauthorized elevation of access rights, compromising the intended separation of
+  administrative duties and posing a security risk to the realm."
+date: "2025-07-30"
+pubdate: "2025-07-18"
+affected_range: "[,26.3.1]"
+fixed_versions: []
+affected_versions: "All versions up to 26.3.1"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-83j7-mhw9-388w"
+- "https://nvd.nist.gov/vuln/detail/CVE-2025-7784"
+- "https://github.com/keycloak/keycloak/issues/41137"
+- "https://github.com/keycloak/keycloak/pull/41168"
+- "https://access.redhat.com/errata/RHSA-2025:12015"
+- "https://access.redhat.com/errata/RHSA-2025:12016"
+- "https://access.redhat.com/security/cve/CVE-2025-7784"
+- "https://bugzilla.redhat.com/show_bug.cgi?id=2381861"
+- "https://github.com/keycloak/keycloak"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:N"
+uuid: "ed976b9f-f6f7-487f-b05b-8d353a2b640b"
+cwe_ids:
+- "CWE-269"
+- "CWE-937"
+- "CWE-1035"
