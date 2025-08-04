@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-2rjv-cv85-xhgm"
+identifiers:
+- "GHSA-2rjv-cv85-xhgm"
+package_slug: "maven/org.opensearch.plugin/opensearch-security"
+title: "OpenSearch unauthorized data access on fields protected by field level security
+  if field is a member of an object"
+description: "OpenSearch versions 2.19.2 and earlier improperly apply Field Level
+  Security (FLS) rules on fields which are not at the top level of the source document
+  tree (i.e., which are members of a JSON object).\n\nIf an FLS exclusion rule (like
+  `~object`) is applied to an object valued attribute in a source document, the object
+  is properly removed from the `_source` document in search and get results. However,
+  any member attribute of that object remains available to search queries. This allows
+  to reconstruct the original field contents using range queries."
+date: "2025-08-01"
+pubdate: "2025-08-01"
+affected_range: "[,2.19.3.0)"
+fixed_versions:
+- "2.19.3.0"
+affected_versions: "All versions before 2.19.3.0"
+not_impacted: "All versions starting from 2.19.3.0"
+solution: "Upgrade to version 2.19.3.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-2rjv-cv85-xhgm"
+- "https://github.com/opensearch-project/security/security/advisories/GHSA-2rjv-cv85-xhgm"
+- "https://github.com/opensearch-project/security"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:N/A:N"
+uuid: "4159b86f-86b6-4794-9197-2b8ed292dec3"
+cwe_ids:
+- "CWE-200"
+- "CWE-937"
+- "CWE-1035"

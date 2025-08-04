@@ -14,7 +14,7 @@ description: "A high vulnerability exists in the Babylon protocol's x/finality m
   context) to form the StartHeight, NumPubRand, and a shorter-than-expected Commitment
   (e.g., 4 bytes). The replayed signature will pass verification for this crafted
   message, leading to the injection of an invalid PubRand commitment."
-date: "2025-05-22"
+date: "2025-07-31"
 pubdate: "2025-05-15"
 affected_range: "<1.1.0"
 fixed_versions:
