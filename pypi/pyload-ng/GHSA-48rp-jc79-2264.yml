@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-48rp-jc79-2264"
+identifiers:
+- "GHSA-48rp-jc79-2264"
+package_slug: "pypi/pyload-ng"
+title: "pyLoad CNL Blueprint allows Path Traversal through `dlc_path` which leads
+  to Remote Code Execution (RCE)"
+description: "**Path Traversal in pyLoad-ng CNL Blueprint via `package` parameter
+  allows Arbitrary File Write leading to Remote Code Execution (RCE)** The `addcrypted`
+  endpoint in `pyload-ng` suffers from an unsafe path construction vulnerability,
+  allowing unauthenticated attackers to write arbitrary files outside the designated
+  storage directory. This can be abused to overwrite critical system files, including
+  cron jobs and systemd services, leading to privilege escalation and remote code
+  execution as root."
+date: "2025-08-04"
+pubdate: "2025-08-04"
+affected_range: "<0.5.0b3.dev90"
+fixed_versions:
+- "0.5.0b3.dev90"
+affected_versions: "All versions before 0.5.0b3.dev90"
+not_impacted: "All versions starting from 0.5.0b3.dev90"
+solution: "Upgrade to version 0.5.0b3.dev90 or above."
+urls:
+- "https://github.com/advisories/GHSA-48rp-jc79-2264"
+- "https://github.com/pyload/pyload/security/advisories/GHSA-48rp-jc79-2264"
+- "https://github.com/pyload/pyload/pull/4596"
+- "https://github.com/pyload/pyload/commit/70a44fe02c03bce92337b5d370d2a45caa4de3d4"
+- "https://github.com/pyload/pyload"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+uuid: "431d627d-6ff2-496b-ba8b-555739b119e0"
+cwe_ids:
+- "CWE-22"
+- "CWE-937"
+- "CWE-1035"
