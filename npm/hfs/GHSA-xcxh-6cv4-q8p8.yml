@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-xcxh-6cv4-q8p8"
+identifiers:
+- "GHSA-xcxh-6cv4-q8p8"
+package_slug: "npm/hfs"
+title: "HFS user adding a \"web link\" in HFS is vulnerable to \"target=_blank\" exploit"
+description: "When adding a \"web link\" to the HFS virtual filesystem, the frontend
+  opens it with `target=\"_blank\"` but without the `rel=\"noopener noreferrer\"`
+  attribute. This allows the opened page to use the `window.opener` property to change
+  the location of the original HFS tab."
+date: "2025-08-12"
+pubdate: "2025-08-12"
+affected_range: "<0.57.10"
+fixed_versions:
+- "0.57.10"
+affected_versions: "All versions before 0.57.10"
+not_impacted: "All versions starting from 0.57.10"
+solution: "Upgrade to version 0.57.10 or above."
+urls:
+- "https://github.com/advisories/GHSA-xcxh-6cv4-q8p8"
+- "https://github.com/rejetto/hfs/security/advisories/GHSA-xcxh-6cv4-q8p8"
+- "https://github.com/rejetto/hfs/commit/6531bcd2ab285af88f91831e30d8a03f5b9fe20d"
+- "https://github.com/rejetto/hfs"
+uuid: "d4ad9e9b-33c7-4b7a-aa5f-f1f40a619c81"
+cwe_ids:
+- "CWE-1022"
+- "CWE-937"
+- "CWE-1035"

@@ -32,7 +32,7 @@ urls:
 - "https://tanzu.vmware.com/security/cve-2022-22965"
 - "https://github.com/advisories/GHSA-36p3-wjmg-h94x"
 cvss_v2: "AV:N/AC:M/Au:N/C:C/I:C/A:C"
-cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
 uuid: "5cef5961-e1a8-4c19-af9a-9edace218afd"
 cwe_ids:
 - "CWE-1035"

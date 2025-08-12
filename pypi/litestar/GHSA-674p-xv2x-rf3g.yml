@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-674p-xv2x-rf3g"
+identifiers:
+- "GHSA-674p-xv2x-rf3g"
+package_slug: "pypi/litestar"
+title: "Litestar has potential log injection in exception logging"
+description: "Litestar does not escape url paths when logging exceptions. This makes
+  logger vulnerable to CRLF injection if logging level is configured to debug or `log_exceptions`
+  is set to \"always\", which allows attackers to inject newlines and forge log entries."
+date: "2025-08-11"
+pubdate: "2025-08-11"
+affected_range: "<2.17.0"
+fixed_versions:
+- "2.17.0"
+affected_versions: "All versions before 2.17.0"
+not_impacted: "All versions starting from 2.17.0"
+solution: "Upgrade to version 2.17.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-674p-xv2x-rf3g"
+- "https://github.com/litestar-org/litestar/security/advisories/GHSA-674p-xv2x-rf3g"
+- "https://github.com/litestar-org/litestar/commit/03b5813d4f448dd710af9ba6252d798cb9fc087f"
+- "https://github.com/litestar-org/litestar"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N"
+uuid: "dc727fd5-e108-41e5-988d-6f8fc9f3242e"
+cwe_ids:
+- "CWE-117"
+- "CWE-937"
+- "CWE-1035"

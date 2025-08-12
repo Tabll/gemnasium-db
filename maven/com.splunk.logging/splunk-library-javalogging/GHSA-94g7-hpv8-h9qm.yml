@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-94g7-hpv8-h9qm"
+identifiers:
+- "GHSA-94g7-hpv8-h9qm"
+package_slug: "maven/com.splunk.logging/splunk-library-javalogging"
+title: "Remote code injection in Log4j"
+description: "Logging untrusted or user controlled data with a vulnerable version
+  of Log4J may result in Remote Code Execution (RCE) against your application. This
+  includes untrusted data included in logged errors such as exception traces, authentication
+  failures, and other unexpected vectors of user controlled input.\n\nMore Details:\nhttps://github.com/advisories/GHSA-jfh8-c2jp-5v3q"
+date: "2025-08-07"
+pubdate: "2021-12-14"
+affected_range: "[1.7.0,1.11.1),[,1.6.2-0-0)"
+fixed_versions:
+- "1.11.1"
+- "1.6.2-0-0"
+affected_versions: "All versions before 1.6.2-0-0, all versions starting from 1.7.0
+  before 1.11.1"
+not_impacted: "All versions starting from 1.6.2-0-0 before 1.7.0, all versions starting
+  from 1.11.1"
+solution: "Upgrade to versions 1.11.1, 1.6.2-0-0 or above."
+urls:
+- "https://github.com/advisories/GHSA-94g7-hpv8-h9qm"
+- "https://github.com/splunk/splunk-library-javalogging/security/advisories/GHSA-94g7-hpv8-h9qm"
+- "https://github.com/splunk/splunk-library-javalogging"
+uuid: "a3481b67-e5f3-41eb-afdd-fbb81a262c68"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"
