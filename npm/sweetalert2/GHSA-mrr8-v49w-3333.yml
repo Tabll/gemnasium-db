@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-mrr8-v49w-3333"
+identifiers:
+- "GHSA-mrr8-v49w-3333"
+package_slug: "npm/sweetalert2"
+title: "sweetalert2 contains potentially undesirable behavior"
+description: "`sweetalert2` versions from 11.6.14 to before 11.22.4 have potentially
+  undesirable behavior. The package outputs audio and/or video messages that do not
+  pertain to the functionality of the package when run on specific tlds. This functionality
+  is documented on the project's readme."
+date: "2025-08-14"
+pubdate: "2023-07-10"
+affected_range: ">=11.6.14 <11.22.4"
+fixed_versions:
+- "11.22.4"
+affected_versions: "All versions starting from 11.6.14 before 11.22.4"
+not_impacted: "All versions before 11.6.14, all versions starting from 11.22.4"
+solution: "Upgrade to version 11.22.4 or above."
+urls:
+- "https://github.com/advisories/GHSA-mrr8-v49w-3333"
+- "https://github.com/sweetalert2/sweetalert2/pull/2847"
+- "https://github.com/sweetalert2/sweetalert2/commit/7de85db5c76ba3ef5f0cdbc335bbc4a7c559e012"
+- "https://github.com/sweetalert2/sweetalert2"
+- "https://github.com/sweetalert2/sweetalert2/releases/tag/v11.4.9"
+- "https://github.com/sweetalert2/sweetalert2/tree/6d02e1095e5d9db1dfa7f0708df6fa13a1b32be3#important-notice-about-usage-of-this-software-for-ru-su-and-%D1%80%D1%84-domain-zones"
+- "https://www.npmjs.com/package/sweetalert2"
+uuid: "b72eaf9f-1925-447a-a897-935be93dc387"
+cwe_ids:
+- "CWE-440"
+- "CWE-937"
+- "CWE-1035"

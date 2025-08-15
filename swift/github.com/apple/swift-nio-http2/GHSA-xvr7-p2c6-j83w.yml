@@ -1,0 +1,36 @@
+---
+identifier: "GHSA-xvr7-p2c6-j83w"
+identifiers:
+- "GHSA-xvr7-p2c6-j83w"
+package_slug: "swift/github.com/apple/swift-nio-http2"
+title: "swift-nio-http2 affected by HTTP/2 MadeYouReset vulnerability"
+description: "The HTTP/2 [MadeYouReset vulnerability](https://galbarnahum.com/made-you-reset)
+  has a mild effect on swift-nio-http2.\n\nswift-nio-http2 mostly protects against
+  MadeYouReset by using a number of existing denial-of-service prevention patterns
+  that we added in response to the RapidReset vulnerabilities. The result is that
+  servers are not vulnerable to naive attacks based on MadeYouReset, and the naive
+  PoC examples do not affect swift-nio-http2.\n\nHowever, in 1.38.0 we added some
+  defense-in-depth measures as a precautionary measure that detect clients behaving
+  \"weirdly\". These defense in depth measures tackle resource drain attacks where
+  attackers interleave attack traffic with legitimate traffic to try to evade our
+  existing DoS prevention mechanisms.\n\nWe recommend all adopters move to 1.38.0
+  as soon as possible to mitigate against more sophisticated attacks that may appear
+  in the future.\n\nWe are very grateful to @galbarnahum, @AnatBB, and @YanivRL for
+  their reporting and assistance with our process."
+date: "2025-08-13"
+pubdate: "2025-08-13"
+affected_range: "<1.38.0"
+fixed_versions:
+- "1.38.0"
+affected_versions: "All versions before 1.38.0"
+not_impacted: "All versions starting from 1.38.0"
+solution: "Upgrade to version 1.38.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-xvr7-p2c6-j83w"
+- "https://github.com/apple/swift-nio-http2/security/advisories/GHSA-xvr7-p2c6-j83w"
+- "https://github.com/apple/swift-nio-http2"
+uuid: "70b92135-cad1-4566-9ef9-3494784ae048"
+cwe_ids:
+- "CWE-405"
+- "CWE-937"
+- "CWE-1035"
