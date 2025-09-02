@@ -11,7 +11,7 @@ description: "## Duplicate Advisory\nThis advisory has been withdrawn because it
   an unprivileged user in the same network namespace can connect to an abstract domain
   socket and guess the JUJU_CONTEXT_ID value. This gives the unprivileged user access
   to the same information and tools as the Juju charm."
-date: "2024-10-02"
+date: "2025-08-26"
 pubdate: "2024-10-02"
 affected_range: "<0.0.0-20241001032836-2af7bd8e310b"
 fixed_versions:
@@ -28,5 +28,7 @@ cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:L/I:H/A:H"
 uuid: "383bf6bc-dc7f-4292-8b00-2ff3410b3094"
 cwe_ids:
 - "CWE-1391"
+- "CWE-330"
+- "CWE-337"
 - "CWE-937"
 - "CWE-1035"

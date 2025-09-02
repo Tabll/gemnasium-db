@@ -1,0 +1,25 @@
+---
+identifier: "GHSA-9xph-j2h6-g47v"
+identifiers:
+- "GHSA-9xph-j2h6-g47v"
+package_slug: "pypi/picklescan"
+title: "Picklescan has a missing detection when calling built-in python library idlelib.calltip.get_entity"
+description: "Using idlelib.calltip.get_entity function, which is a built-in python
+  library function to execute remote pickle file."
+date: "2025-08-26"
+pubdate: "2025-08-26"
+affected_range: "<0.0.29"
+fixed_versions:
+- "0.0.29"
+affected_versions: "All versions before 0.0.29"
+not_impacted: "All versions starting from 0.0.29"
+solution: "Upgrade to version 0.0.29 or above."
+urls:
+- "https://github.com/advisories/GHSA-9xph-j2h6-g47v"
+- "https://github.com/mmaitre314/picklescan/security/advisories/GHSA-9xph-j2h6-g47v"
+- "https://github.com/mmaitre314/picklescan/commit/aecd11be98702caa9ba9b12189d91ad596a36114"
+- "https://github.com/mmaitre314/picklescan"
+uuid: "08986032-1c71-4d34-bd39-d6abe1a02148"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

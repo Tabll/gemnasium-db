@@ -1,20 +1,15 @@
 ---
 identifier: "GMS-2016-25"
 package_slug: "npm/express-restify-mongoose"
-title: "Private Data Disclosure"
-description: "A malicious user could go to your application and send a request for
-  `GET /User?distinct=password` and get all the passwords for all the users in the
-  database, despite the field being set to private. This could also be used for other
-  private data if the malicious user knew what was set as private for specific routes."
-date: "2016-04-19"
+title: "False Positive"
+description: "This advisory has been marked as a False Positive and has been removed."
+date: "2025-08-18"
 pubdate: "2016-04-19"
-affected_range: ">=3.0.0a <=3.0.1 || <= 2.4.2"
-fixed_versions:
-- "2.5.0"
-- "3.1.0"
-affected_versions: "All versions starting from 3.0.0a up to 3.0.1, all versions up
-  to 2.4.2"
-solution: "Update to at least version 3.1.0 or 2.5.0"
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "All versions before 0"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
 urls:
 - "https://github.com/florianholzapfel/express-restify-mongoose/issues/252"
 credit: "Stefan Mirea"

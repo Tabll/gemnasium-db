@@ -1,0 +1,25 @@
+---
+identifier: "GHSA-7cq8-mj8x-j263"
+identifiers:
+- "GHSA-7cq8-mj8x-j263"
+package_slug: "pypi/picklescan"
+title: "Picklescan has a missing detection when calling built-in python idlelib.autocomplete.AutoComplete.fetch_completions"
+description: "Using idlelib.autocomplete.AutoComplete.fetch_completions, which is
+  a built-in python library function to execute remote pickle file."
+date: "2025-08-26"
+pubdate: "2025-08-26"
+affected_range: "<0.0.29"
+fixed_versions:
+- "0.0.29"
+affected_versions: "All versions before 0.0.29"
+not_impacted: "All versions starting from 0.0.29"
+solution: "Upgrade to version 0.0.29 or above."
+urls:
+- "https://github.com/advisories/GHSA-7cq8-mj8x-j263"
+- "https://github.com/mmaitre314/picklescan/security/advisories/GHSA-7cq8-mj8x-j263"
+- "https://github.com/mmaitre314/picklescan/commit/aecd11be98702caa9ba9b12189d91ad596a36114"
+- "https://github.com/mmaitre314/picklescan"
+uuid: "417dba98-b62b-4194-8b4f-42b9d06a2ae3"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

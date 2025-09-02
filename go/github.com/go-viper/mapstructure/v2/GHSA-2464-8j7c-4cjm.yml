@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-2464-8j7c-4cjm"
+identifiers:
+- "GHSA-2464-8j7c-4cjm"
+package_slug: "go/github.com/go-viper/mapstructure/v2"
+title: "go-viper's mapstructure May Leak Sensitive Information in Logs When Processing
+  Malformed Data"
+description: "Use of this library in a security-critical context may result in leaking
+  sensitive information, if used to process sensitive fields."
+date: "2025-08-29"
+pubdate: "2025-08-21"
+affected_range: "<2.4.0"
+fixed_versions:
+- "2.4.0"
+affected_versions: "All versions before 2.4.0"
+not_impacted: "All versions starting from 2.4.0"
+solution: "Upgrade to version 2.4.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-2464-8j7c-4cjm"
+- "https://github.com/go-viper/mapstructure/security/advisories/GHSA-2464-8j7c-4cjm"
+- "https://github.com/go-viper/mapstructure/commit/742921c9ba2854d27baa64272487fc5075d2c39c"
+- "https://github.com/go-viper/mapstructure"
+- "https://pkg.go.dev/vuln/GO-2025-3900"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:N/A:N"
+uuid: "6a8ee151-1e58-421e-b9ca-d9f0bb0e49a8"
+cwe_ids:
+- "CWE-117"
+- "CWE-937"
+- "CWE-1035"

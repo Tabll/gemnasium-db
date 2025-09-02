@@ -1,0 +1,24 @@
+---
+identifier: "GHSA-fff3-4rp7-px97"
+identifiers:
+- "GHSA-fff3-4rp7-px97"
+package_slug: "nuget/magick.net-q8-openmp-x64"
+title: "ImageMagick has a heap-buffer-overflow"
+description: "While Processing a crafted TIFF file, imagemagick crashes."
+date: "2025-08-25"
+pubdate: "2025-08-25"
+affected_range: "[,13.2.0)"
+fixed_versions:
+- "13.2.0"
+affected_versions: "All versions before 13.2.0"
+not_impacted: "All versions starting from 13.2.0"
+solution: "Upgrade to version 13.2.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-fff3-4rp7-px97"
+- "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-fff3-4rp7-px97"
+- "https://github.com/ImageMagick/ImageMagick"
+uuid: "601fe658-1f32-4599-8190-c3179299696e"
+cwe_ids:
+- "CWE-122"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,25 @@
+---
+identifier: "GHSA-6w4w-5w54-rjvr"
+identifiers:
+- "GHSA-6w4w-5w54-rjvr"
+package_slug: "pypi/picklescan"
+title: "Picklescan has a missing detection when calling built-in python idlelib.autocomplete.AutoComplete.get_entity"
+description: "Using idlelib.autocomplete.AutoComplete.get_entity, which is a built-in
+  python library function to execute remote pickle file."
+date: "2025-08-26"
+pubdate: "2025-08-26"
+affected_range: "<0.0.29"
+fixed_versions:
+- "0.0.29"
+affected_versions: "All versions before 0.0.29"
+not_impacted: "All versions starting from 0.0.29"
+solution: "Upgrade to version 0.0.29 or above."
+urls:
+- "https://github.com/advisories/GHSA-6w4w-5w54-rjvr"
+- "https://github.com/mmaitre314/picklescan/security/advisories/GHSA-6w4w-5w54-rjvr"
+- "https://github.com/mmaitre314/picklescan/commit/aecd11be98702caa9ba9b12189d91ad596a36114"
+- "https://github.com/mmaitre314/picklescan"
+uuid: "0b73384c-b802-4eb6-87d4-d156f4f53d3c"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

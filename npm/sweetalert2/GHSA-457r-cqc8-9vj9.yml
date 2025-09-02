@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-457r-cqc8-9vj9"
+identifiers:
+- "GHSA-457r-cqc8-9vj9"
+package_slug: "npm/sweetalert2"
+title: "sweetalert2 v10.16.10 and above contains hidden functionality"
+description: "`sweetalert2` versions 10.16.10 and up until 11.0.0 are vulnerable to
+  hidden functionality that was introduced by the maintainer. The package outputs
+  audio and/or video messages that do not pertain to the functionality of the package
+  and is not included in versions 10.0.0 - 10.16.9."
+date: "2025-08-25"
+pubdate: "2022-11-23"
+affected_range: ">=10.16.10 <11.22.4"
+fixed_versions:
+- "11.22.4"
+affected_versions: "All versions starting from 10.16.10 before 11.22.4"
+not_impacted: "All versions before 10.16.10, all versions starting from 11.22.4"
+solution: "Upgrade to version 11.22.4 or above."
+urls:
+- "https://github.com/advisories/GHSA-457r-cqc8-9vj9"
+- "https://github.com/sweetalert2/sweetalert2"
+- "https://github.com/sweetalert2/sweetalert2/releases/tag/v11.4.9"
+- "https://www.npmjs.com/package/sweetalert2"
+uuid: "a7a9a705-4fda-45bb-944f-613aec56403d"
+cwe_ids:
+- "CWE-912"
+- "CWE-937"
+- "CWE-1035"

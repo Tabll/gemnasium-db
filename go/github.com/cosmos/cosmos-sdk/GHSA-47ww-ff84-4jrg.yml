@@ -9,7 +9,7 @@ description: "Name: ISA-2025-002: x/group can halt when erroring in EndBlocker\n
   versions: <= v0.47.16, <= 0.50.12\nAffected users: Validators, Full nodes, Users
   on chains that utilize the groups module\nCosmos SDK chains in unpatched releases
   that use the `x/group` module are affected."
-date: "2025-03-12"
+date: "2025-08-20"
 pubdate: "2025-03-12"
 affected_range: ">=0.50.0-alpha.0 <0.50.13||<0.47.17"
 fixed_versions:

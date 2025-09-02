@@ -1,0 +1,37 @@
+---
+identifier: "GHSA-qq4c-hm99-979m"
+identifiers:
+- "GHSA-qq4c-hm99-979m"
+package_slug: "cargo/id-map"
+title: "IdMap from_iter may lead to uninitialized memory being freed on drop"
+description: "Due to a flaw in the constructor `id_map::IdMap::from_iter`, ill-formed
+  objects may be created in which the amount of actually initialized memory is less
+  than what is expected by the fields of `IdMap`. Specifically, the field `ids` is
+  initialized based on the capacity of the vector `values`, which is constructed from
+  the provided iterator. However, the length of this vector may be smaller than its
+  capacity.\n\nIn such cases, when the resulting `IdMap` is dropped, its destructor
+  incorrectly assumes that `values` contains `ids.len() == values.capacity()` initialized
+  elements and attempts to iterate over and drop them. This leads to dereferencing
+  and attempting to free uninitialized memory, resulting in undefined behavior and
+  potential segmentation faults.\n\nThe bug was fixed in commit `fab6922`, and all
+  unsafe code was removed from the crate.\n\nNote that the maintainer recommends using
+  the following alternatives:\n- [slab](https://crates.io/crates/slab)\n- [slotmap](https://crates.io/crates/slotmap)"
+date: "2025-08-18"
+pubdate: "2025-08-18"
+affected_range: ">=0.1.6 <0.2.2"
+fixed_versions:
+- "0.2.2"
+affected_versions: "All versions starting from 0.1.6 before 0.2.2"
+not_impacted: "All versions before 0.1.6, all versions starting from 0.2.2"
+solution: "Upgrade to version 0.2.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-qq4c-hm99-979m"
+- "https://github.com/andrewhickman/id-map/issues/4"
+- "https://github.com/andrewhickman/id-map/commit/fab6922b955b5a2986dfff2ccb341628faec30ed"
+- "https://github.com/andrewhickman/id-map"
+- "https://rustsec.org/advisories/RUSTSEC-2025-0050.html"
+uuid: "86d9c5b6-1339-45f5-96ae-117f08789858"
+cwe_ids:
+- "CWE-665"
+- "CWE-937"
+- "CWE-1035"

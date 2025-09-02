@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-w469-hj2f-jpr5"
+identifiers:
+- "GHSA-w469-hj2f-jpr5"
+package_slug: "go/github.com/harness/gitness"
+title: "Harness Allows Arbitrary File Write in Gitness LFS server"
+description: "Open Source Harness git LFS server (Gitness)  exposes api to retrieve
+  and upload files via git LFS.  Implementation of upload git LFS file api is vulnerable
+  to arbitrary file write.  Due to improper sanitization for upload path, a malicious
+  authenticated user who has access to Harness Gitness server api can use a crafted
+  upload request to write arbitrary file to any location on file system, may even
+  compromise the server.\n\nUsers using git LFS are vulnerable."
+date: "2025-08-29"
+pubdate: "2025-08-29"
+affected_range: ">=1.0.4 <3.3.0"
+fixed_versions:
+- "3.3.0"
+affected_versions: "All versions starting from 1.0.4 before 3.3.0"
+not_impacted: "All versions before 1.0.4, all versions starting from 3.3.0"
+solution: "Upgrade to version 3.3.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-w469-hj2f-jpr5"
+- "https://github.com/harness/harness/security/advisories/GHSA-w469-hj2f-jpr5"
+- "https://github.com/harness/harness/commit/21c5ce42ae13740b1cad47706c2ec85e72cc8c20"
+- "https://github.com/harness/harness"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+uuid: "9180fa61-680e-405e-ad5f-1a9da3a1baaa"
+cwe_ids:
+- "CWE-22"
+- "CWE-73"
+- "CWE-937"
+- "CWE-1035"

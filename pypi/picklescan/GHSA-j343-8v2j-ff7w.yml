@@ -1,0 +1,25 @@
+---
+identifier: "GHSA-j343-8v2j-ff7w"
+identifiers:
+- "GHSA-j343-8v2j-ff7w"
+package_slug: "pypi/picklescan"
+title: "Picklescan is missing detection when calling built-in python idlelib.pyshell.ModifiedInterpreter.runcommand"
+description: "Using idlelib.pyshell.ModifiedInterpreter.runcommand function, which
+  is a built-in python library function to execute remote pickle file."
+date: "2025-08-26"
+pubdate: "2025-08-26"
+affected_range: "<0.0.30"
+fixed_versions:
+- "0.0.30"
+affected_versions: "All versions before 0.0.30"
+not_impacted: "All versions starting from 0.0.30"
+solution: "Upgrade to version 0.0.30 or above."
+urls:
+- "https://github.com/advisories/GHSA-j343-8v2j-ff7w"
+- "https://github.com/mmaitre314/picklescan/security/advisories/GHSA-j343-8v2j-ff7w"
+- "https://github.com/mmaitre314/picklescan/commit/1931c2d04eaca8d20597705ff39cab78ba364e4b"
+- "https://github.com/mmaitre314/picklescan"
+uuid: "bb682351-4ca2-49c2-a822-e84da49f34a0"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

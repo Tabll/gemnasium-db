@@ -6,7 +6,7 @@ description: "The `findLoad` method passes a provided string directly to the she
   allowing arbitrary command execution."
 date: "2017-05-19"
 pubdate: "2017-05-19"
-affected_range: ">=0.0.0alpha"
+affected_range: ">=0.0.0"
 fixed_versions: []
 affected_versions: "All versions"
 solution: "Avoid passing user input to the findLoad method. If you must, pass user

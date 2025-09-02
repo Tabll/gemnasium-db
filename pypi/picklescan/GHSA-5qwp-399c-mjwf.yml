@@ -1,0 +1,25 @@
+---
+identifier: "GHSA-5qwp-399c-mjwf"
+identifiers:
+- "GHSA-5qwp-399c-mjwf"
+package_slug: "pypi/picklescan"
+title: "Picklescan has a missing detection when calling built-in python trace.Trace.run"
+description: "Using trace.Trace.run, which is a built-in python library function to
+  execute remote pickle file."
+date: "2025-08-26"
+pubdate: "2025-08-26"
+affected_range: "<0.0.29"
+fixed_versions:
+- "0.0.29"
+affected_versions: "All versions before 0.0.29"
+not_impacted: "All versions starting from 0.0.29"
+solution: "Upgrade to version 0.0.29 or above."
+urls:
+- "https://github.com/advisories/GHSA-5qwp-399c-mjwf"
+- "https://github.com/mmaitre314/picklescan/security/advisories/GHSA-5qwp-399c-mjwf"
+- "https://github.com/mmaitre314/picklescan/commit/aecd11be98702caa9ba9b12189d91ad596a36114"
+- "https://github.com/mmaitre314/picklescan"
+uuid: "d9ecb867-d658-4450-9a24-49a841787f23"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

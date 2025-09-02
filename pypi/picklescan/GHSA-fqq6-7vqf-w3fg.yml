@@ -1,0 +1,25 @@
+---
+identifier: "GHSA-fqq6-7vqf-w3fg"
+identifiers:
+- "GHSA-fqq6-7vqf-w3fg"
+package_slug: "pypi/picklescan"
+title: "Picklescan is missing detection when calling built-in python doctest.debug_script"
+description: "Using doctest.debug_script function, which is a built-in python library
+  function to execute remote pickle file."
+date: "2025-08-26"
+pubdate: "2025-08-26"
+affected_range: "<0.0.30"
+fixed_versions:
+- "0.0.30"
+affected_versions: "All versions before 0.0.30"
+not_impacted: "All versions starting from 0.0.30"
+solution: "Upgrade to version 0.0.30 or above."
+urls:
+- "https://github.com/advisories/GHSA-fqq6-7vqf-w3fg"
+- "https://github.com/mmaitre314/picklescan/security/advisories/GHSA-fqq6-7vqf-w3fg"
+- "https://github.com/mmaitre314/picklescan/commit/1931c2d04eaca8d20597705ff39cab78ba364e4b"
+- "https://github.com/mmaitre314/picklescan"
+uuid: "7046d8ba-a6dc-4e96-8a13-71979ddfd0a6"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

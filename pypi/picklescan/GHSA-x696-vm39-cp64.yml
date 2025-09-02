@@ -1,0 +1,25 @@
+---
+identifier: "GHSA-x696-vm39-cp64"
+identifiers:
+- "GHSA-x696-vm39-cp64"
+package_slug: "pypi/picklescan"
+title: "Picklescan has a missing detection when calling built-in python profile.Profile.run"
+description: "Using profile.Profile.run, which is a built-in python library function
+  to execute remote pickle file."
+date: "2025-08-26"
+pubdate: "2025-08-26"
+affected_range: "<0.0.29"
+fixed_versions:
+- "0.0.29"
+affected_versions: "All versions before 0.0.29"
+not_impacted: "All versions starting from 0.0.29"
+solution: "Upgrade to version 0.0.29 or above."
+urls:
+- "https://github.com/advisories/GHSA-x696-vm39-cp64"
+- "https://github.com/mmaitre314/picklescan/security/advisories/GHSA-x696-vm39-cp64"
+- "https://github.com/mmaitre314/picklescan/commit/aecd11be98702caa9ba9b12189d91ad596a36114"
+- "https://github.com/mmaitre314/picklescan"
+uuid: "aba9e294-1aab-411c-8c33-f9f015e9fe26"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

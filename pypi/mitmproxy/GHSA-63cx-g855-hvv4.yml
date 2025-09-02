@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-63cx-g855-hvv4"
+identifiers:
+- "GHSA-63cx-g855-hvv4"
+package_slug: "pypi/mitmproxy"
+title: "mitmproxy binaries embed a vulnerable python-hyper/h2 dependency"
+description: "mitmproxy 12.1.1 and below embed python-hyper/h2 ≤ v4.2.0, which has
+  a gap in its HTTP/2 header validation. This enables request smuggling attacks when
+  mitmproxy is in a configuration where it translates HTTP/2 to HTTP/1. For example,
+  this affects reverse proxies to `http://` backends. It does not affect mitmproxy's
+  regular mode.\n\nAll users are encouraged to upgrade to mitmproxy 12.1.2, which
+  includes a fixed version of h2.\n\nMore details about the vulnerability itself can
+  be found at https://github.com/python-hyper/h2/security/advisories/GHSA-847f-9342-265h."
+date: "2025-08-25"
+pubdate: "2025-08-25"
+affected_range: "<12.1.2"
+fixed_versions:
+- "12.1.2"
+affected_versions: "All versions before 12.1.2"
+not_impacted: "All versions starting from 12.1.2"
+solution: "Upgrade to version 12.1.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-63cx-g855-hvv4"
+- "https://github.com/mitmproxy/mitmproxy/security/advisories/GHSA-63cx-g855-hvv4"
+- "https://github.com/python-hyper/h2/security/advisories/GHSA-847f-9342-265h"
+- "https://github.com/mitmproxy/mitmproxy"
+uuid: "1d2f1672-1dcb-45b6-8e2e-8eed2c2d2003"
+cwe_ids:
+- "CWE-1395"
+- "CWE-444"
+- "CWE-937"
+- "CWE-1035"

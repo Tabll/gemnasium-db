@@ -1,0 +1,25 @@
+---
+identifier: "GHSA-49gj-c84q-6qm9"
+identifiers:
+- "GHSA-49gj-c84q-6qm9"
+package_slug: "pypi/picklescan"
+title: "Picklescan is missing detection when calling built-in python cProfile.run"
+description: "Using cProfile.run function, which is a built-in python library function
+  to execute remote pickle file."
+date: "2025-08-26"
+pubdate: "2025-08-26"
+affected_range: "<0.0.30"
+fixed_versions:
+- "0.0.30"
+affected_versions: "All versions before 0.0.30"
+not_impacted: "All versions starting from 0.0.30"
+solution: "Upgrade to version 0.0.30 or above."
+urls:
+- "https://github.com/advisories/GHSA-49gj-c84q-6qm9"
+- "https://github.com/mmaitre314/picklescan/security/advisories/GHSA-49gj-c84q-6qm9"
+- "https://github.com/mmaitre314/picklescan/commit/1931c2d04eaca8d20597705ff39cab78ba364e4b"
+- "https://github.com/mmaitre314/picklescan"
+uuid: "8174b1f1-d5d1-4c04-9b85-98a43abd3d47"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

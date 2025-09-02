@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-v2ch-c8v8-fgr7"
+identifiers:
+- "GHSA-v2ch-c8v8-fgr7"
+package_slug: "go/github.com/versity/versitygw"
+title: "Versity panic induced by AWS chunked data sent to port"
+description: "Sending AWS chunk data with no Content-Length HTTP header causes the
+  panic, every time."
+date: "2025-08-29"
+pubdate: "2025-08-29"
+affected_range: "<1.0.17"
+fixed_versions:
+- "1.0.17"
+affected_versions: "All versions before 1.0.17"
+not_impacted: "All versions starting from 1.0.17"
+solution: "Upgrade to version 1.0.17 or above."
+urls:
+- "https://github.com/advisories/GHSA-v2ch-c8v8-fgr7"
+- "https://github.com/versity/versitygw/security/advisories/GHSA-v2ch-c8v8-fgr7"
+- "https://github.com/versity/versitygw/issues/1418"
+- "https://github.com/versity/versitygw/commit/0972af078325ab5c6acd37abffe6bea345ac7db0"
+- "https://github.com/versity/versitygw"
+uuid: "0f42c4d3-31df-4f92-b73a-d9e473c38db3"
+cwe_ids:
+- "CWE-476"
+- "CWE-937"
+- "CWE-1035"

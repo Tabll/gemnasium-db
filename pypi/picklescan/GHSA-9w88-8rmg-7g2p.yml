@@ -1,0 +1,25 @@
+---
+identifier: "GHSA-9w88-8rmg-7g2p"
+identifiers:
+- "GHSA-9w88-8rmg-7g2p"
+package_slug: "pypi/picklescan"
+title: "Picklescan is missing detection when calling built-in python cProfile.runctx"
+description: "Using cProfile.runctx function, which is a built-in python library function
+  to execute remote pickle file."
+date: "2025-08-26"
+pubdate: "2025-08-26"
+affected_range: "<0.0.30"
+fixed_versions:
+- "0.0.30"
+affected_versions: "All versions before 0.0.30"
+not_impacted: "All versions starting from 0.0.30"
+solution: "Upgrade to version 0.0.30 or above."
+urls:
+- "https://github.com/advisories/GHSA-9w88-8rmg-7g2p"
+- "https://github.com/mmaitre314/picklescan/security/advisories/GHSA-9w88-8rmg-7g2p"
+- "https://github.com/mmaitre314/picklescan/commit/1931c2d04eaca8d20597705ff39cab78ba364e4b"
+- "https://github.com/mmaitre314/picklescan"
+uuid: "46da0441-bef7-4be5-9835-d7785d10ea62"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"
