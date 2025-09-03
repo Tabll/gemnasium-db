@@ -1,0 +1,44 @@
+---
+identifier: "GHSA-3632-54q8-m96x"
+identifiers:
+- "GHSA-3632-54q8-m96x"
+package_slug: "cargo/arenavec"
+title: "arenavec has multiple memory corruption vulnerabilities in safe APIs"
+description: "The crate has the following vulnerabilities:\n\n- The public trait `arenavec::common::AllocHandle`
+  allows the return of raw pointers through its methods `allocate` and `allocate_or_extend`.
+  However, the trait is not marked as unsafe, meaning users of the crate may implement
+  it under the assumption that the library safely handles the returned raw pointers.
+  These raw pointers can later be dereferenced within safe APIs of the crate-such
+  as `arenavec::common::SliceVec::push`-potentially leading to arbitrary memory access.\n\n-
+  The safe API `arenavec::common::SliceVec::reserve` can reach the private function
+  `arenavec::common::allocate_inner`. Incorrect behavior in `allocate_inner` may result
+  in a `SliceVec` with an increased capacity, even though the underlying memory has
+  not actually been expanded. This mismatch between `SliceVec.capacity` and the actual
+  reserved memory can lead to a heap buffer overflow.\n\n- The safe API `arenavec::common::SliceVec::split_off`
+  can duplicate the ownership of the elements in `self` (of type `SliceVec`) if they
+  implement the `Drop` trait. Specifically, when `at == 0`, the method returns a new
+  `SliceVec` with the same length as `self`. Since both `self` and the returned object
+  point to the same heap memory, dropping one will deallocate the shared memory. When
+  the other is subsequently dropped, it will attempt to free the same memory again,
+  resulting in a double free violation."
+date: "2025-09-02"
+pubdate: "2025-09-02"
+affected_range: "<=0.1.1"
+fixed_versions: []
+affected_versions: "All versions up to 0.1.1"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-3632-54q8-m96x"
+- "https://github.com/ibabushkin/arenavec/issues/4"
+- "https://github.com/ibabushkin/arenavec/issues/5"
+- "https://github.com/ibabushkin/arenavec/issues/6"
+- "https://github.com/ibabushkin/arenavec"
+- "https://rustsec.org/advisories/RUSTSEC-2025-0053.html"
+uuid: "b88b6c6d-acb0-4cf6-862b-63bd30918319"
+cwe_ids:
+- "CWE-122"
+- "CWE-415"
+- "CWE-822"
+- "CWE-937"
+- "CWE-1035"

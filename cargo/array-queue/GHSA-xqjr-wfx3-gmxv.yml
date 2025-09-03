@@ -1,0 +1,36 @@
+---
+identifier: "GHSA-xqjr-wfx3-gmxv"
+identifiers:
+- "GHSA-xqjr-wfx3-gmxv"
+package_slug: "cargo/array-queue"
+title: "ArrayQueue's push_front is not panic-safe"
+description: "The safe API `array_queue::ArrayQueue::push_front` can lead to deallocating
+  uninitialized memory if a panic occurs while invoking the `clone` method on the
+  passed argument.\n\nSpecifically, `push_front` receives an argument that is intended
+  to be cloned and pushed, whose type implements the `Clone` trait. Furthermore, the
+  method updates the queue's `start` index before initializing the slot for the newly
+  pushed element. User-defined implementations of `Clone` may include a `clone` method
+  that can panic. If such a panic occurs during initialization, the structure is left
+  with an advanced `start` index pointing to an uninitialized slot. When `ArrayQueue`
+  is later dropped, its destructor treats that slot as initialized and attempts to
+  drop it, resulting in an attempt to free uninitialized memory.\n\nThe bug was fixed
+  in commit `728fe1b`."
+date: "2025-09-02"
+pubdate: "2025-09-02"
+affected_range: ">=0.3.0 <0.4.0"
+fixed_versions:
+- "0.4.0"
+affected_versions: "All versions starting from 0.3.0 before 0.4.0"
+not_impacted: "All versions before 0.3.0, all versions starting from 0.4.0"
+solution: "Upgrade to version 0.4.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-xqjr-wfx3-gmxv"
+- "https://github.com/raviqqe/array-queue/issues/3"
+- "https://github.com/raviqqe/array-queue/commit/728fe1bdffb04896d218e962d989a2ae6bf1ea92"
+- "https://github.com/raviqqe/array-queue"
+- "https://rustsec.org/advisories/RUSTSEC-2025-0054.html"
+uuid: "a9222e1e-1f2e-4342-bb66-956664ff2a37"
+cwe_ids:
+- "CWE-665"
+- "CWE-937"
+- "CWE-1035"
