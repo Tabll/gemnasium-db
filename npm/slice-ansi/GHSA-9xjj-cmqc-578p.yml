@@ -1,0 +1,23 @@
+identifier: "GHSA-9xjj-cmqc-578p"
+identifiers:
+- "GHSA-9xjj-cmqc-578p"
+package_slug: "npm/slice-ansi"
+title: "Malware in slice-ansi"
+description: "Any computer that has this package installed or running should be considered
+  fully compromised. All secrets and keys stored on that computer should be
+  rotated immediately from a different computer. The package should be removed,
+  but as full control of the computer may have been given to an outside entity,
+  there is no guarantee that removing the package will remove all malicious
+  software resulting from installing it."
+date: "2025-09-08"
+pubdate: "2025-09-08"
+affected_range: "=7.1.1"
+fixed_versions: []
+affected_versions: "Version =7.1.1"
+not_impacted: ""
+solution: "Remove this package immediately and rotate any secrets that may have been compromised."
+urls:
+- "https://github.com/advisories/GHSA-9xjj-cmqc-578p"
+uuid: "44ed5f4f-0db2-478d-90ed-e171085fe895"
+cwe_ids:
+- "CWE-506"

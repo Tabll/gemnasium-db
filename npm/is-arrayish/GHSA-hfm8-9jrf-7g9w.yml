@@ -1,0 +1,24 @@
+identifier: "GHSA-hfm8-9jrf-7g9w"
+identifiers:
+- "GHSA-hfm8-9jrf-7g9w"
+package_slug: "npm/is-arrayish"
+title: "Malware in is-arrayish"
+description: "Any computer that has this package installed or running should be considered
+  fully compromised. All secrets and keys stored on that computer should be
+  rotated immediately from a different computer. The package should be removed,
+  but as full control of the computer may have been given to an outside entity,
+  there is no guarantee that removing the package will remove all malicious
+  software resulting from installing it."
+date: "2025-09-08"
+pubdate: "2025-09-08"
+affected_range: "=0.3.3"
+fixed_versions: []
+affected_versions: "Version =0.3.3"
+not_impacted: ""
+solution: "Remove this package immediately and rotate any secrets that may have been compromised."
+urls:
+- "https://github.com/github/advisory-database/issues/6099"
+- "https://github.com/advisories/GHSA-hfm8-9jrf-7g9w"
+uuid: "878cc02a-3b35-4614-adb7-2824e2c4ac84"
+cwe_ids:
+- "CWE-506"

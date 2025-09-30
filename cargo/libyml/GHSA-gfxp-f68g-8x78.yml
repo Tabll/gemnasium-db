@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-gfxp-f68g-8x78"
+identifiers:
+- "GHSA-gfxp-f68g-8x78"
+package_slug: "cargo/libyml"
+title: "LibYML: `libyml::string::yaml_string_extend` is unsound and unmaintained"
+description: "In version 0.0.4, `libyml::string::yaml_string_extend` was revised resulting
+  in undefined behaviour, which is unsound.\n\nThe GitHub project for `libyml` was
+  archived after unsoundness issues were raised.\n\nIf you rely on this crate, it
+  is highly recommended switching to a maintained alternative."
+date: "2025-09-15"
+pubdate: "2025-09-15"
+affected_range: ">=0.0.4 <=0.0.5"
+fixed_versions: []
+affected_versions: "All versions starting from 0.0.4 up to 0.0.5"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-gfxp-f68g-8x78"
+- "https://github.com/rustsec/advisory-db/issues/2395"
+- "https://github.com/sebastienrousseau/libyml"
+- "https://rustsec.org/advisories/RUSTSEC-2025-0067.html"
+uuid: "414f454c-613b-477c-8a10-8fb948cc0a9b"
+cwe_ids:
+- "CWE-758"
+- "CWE-937"
+- "CWE-1035"

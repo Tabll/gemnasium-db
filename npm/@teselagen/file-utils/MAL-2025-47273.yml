@@ -1,0 +1,30 @@
+---
+identifier: "MAL-2025-47273"
+identifiers:
+- "MAL-2025-47273"
+- "GHSA-6j7p-4c77-4rvh"
+package_slug: "npm/@teselagen/file-utils"
+title: "Malicious code in @teselagen/file-utils (npm)"
+description: "This package was compromised by the Shai-Hulud NPM worm.\nThe malicious
+  payload steals tokens and credentials and publishes\nthem to GitHub before propogating
+  itself to NPM packages the user owns."
+date: "2025-09-18"
+pubdate: "2025-09-16"
+affected_range: ">=0.3.21 <=0.3.22||=0.3.22||=0.3.21"
+fixed_versions: []
+affected_versions: "All versions starting from 0.3.21 up to 0.3.22, version 0.3.21,
+  version 0.3.22"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/MAL-2025-47273"
+- "https://github.com/advisories/GHSA-6j7p-4c77-4rvh"
+- "https://www.wiz.io/blog/shai-hulud-npm-supply-chain-attack"
+- "https://semgrep.dev/blog/2025/security-advisory-npm-packages-using-secret-scanning-tools-to-steal-credentials/"
+- "https://www.aikido.dev/blog/s1ngularity-nx-attackers-strike-again"
+- "https://www.stepsecurity.io/blog/ctrl-tinycolor-and-40-npm-packages-compromised"
+- "https://socket.dev/blog/tinycolor-supply-chain-attack-affects-40-packages"
+uuid: "b37b7f6c-551d-4b1e-8401-1ed4185439ee"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

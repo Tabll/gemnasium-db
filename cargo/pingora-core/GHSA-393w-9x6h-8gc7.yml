@@ -1,0 +1,36 @@
+---
+identifier: "GHSA-393w-9x6h-8gc7"
+identifiers:
+- "GHSA-393w-9x6h-8gc7"
+package_slug: "cargo/pingora-core"
+title: "Pingora update for MadeYouReset HTTP/2 vulnerability"
+description: "Pingora deployments that include HTTP/2 server support may be affected
+  by the vulnerability described in CVE-2025-8671. Under certain conditions, Pingora
+  applications may allocate buffers before the HTTP/2 reset and resulting stream cancellation
+  is processed by the server. Repeated resets can force excessive memory consumption
+  and lead to denial-of-service.\n\n**Impact**:\nOn affected versions, malicious clients
+  could trigger unusually high memory consumption, which may result in service instability
+  or process termination.\n\n**Credits**:\nReported responsibly by security researcher
+  [Gal Bar Nahum](https://github.com/galbarnahum) (@[galbarnahum](https://github.com/galbarnahum))\n\n**Mitigation**:\nThis
+  issue is addressed by ensuring Pingora uses patched versions of HTTP/2 dependencies
+  that include reset-handling safeguards to release connection resources before excessive
+  memory buildup. Users should upgrade to the latest Pingora release, which incorporates
+  the required fixes.\n- Users are requested to upgrade to latest version of Pingora
+  >= 0.6.0"
+date: "2025-09-17"
+pubdate: "2025-09-17"
+affected_range: "<0.6.0"
+fixed_versions:
+- "0.6.0"
+affected_versions: "All versions before 0.6.0"
+not_impacted: "All versions starting from 0.6.0"
+solution: "Upgrade to version 0.6.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-393w-9x6h-8gc7"
+- "https://github.com/cloudflare/pingora/security/advisories/GHSA-393w-9x6h-8gc7"
+- "https://github.com/cloudflare/pingora"
+- "https://github.com/cloudflare/pingora/releases/tag/0.6.0"
+uuid: "86052ef0-4cb1-49b5-89d5-cd65e43d87d7"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

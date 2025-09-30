@@ -1,0 +1,39 @@
+---
+identifier: "GHSA-3wgq-wrwc-vqmv"
+identifiers:
+- "GHSA-3wgq-wrwc-vqmv"
+package_slug: "cargo/astral-tokio-tar"
+title: "astral-tokio-tar has a path traversal in tar extraction"
+description: "In versions 0.5.3 and earlier of astral-tokio-tar, tar archives may
+  extract outside of their intended destination directory when using the `Entry::unpack_in_raw`
+  API. Additionally, the `Entry::allow_external_symlinks` control (which defaults
+  to `true`) could be bypassed via a pair of symlinks that individually point within
+  the destination but combine to point outside of it.\n\nThese behaviors could be
+  used individually or combined to bypass the intended security control of limiting
+  extraction to the given directory. This in turn would allow an attacker with a malicious
+  tar archive to perform an arbitrary file write and potentially pivot into code execution
+  (e.g. by overwriting a file that the user or system then executes or uses to execute
+  code).\n\nThe impact of this vulnerability for downstream API users of this crate
+  is **high**, per above. However, for this crate's main downstream user (uv), the
+  impact of this vulnerability is **low** due to its overlap with equivalent user
+  capabilities in source distributions. See GHSA-7j9j-68r2-f35q for additional details."
+date: "2025-09-23"
+pubdate: "2025-09-23"
+affected_range: "<0.5.4"
+fixed_versions:
+- "0.5.4"
+affected_versions: "All versions before 0.5.4"
+not_impacted: "All versions starting from 0.5.4"
+solution: "Upgrade to version 0.5.4 or above."
+urls:
+- "https://github.com/advisories/GHSA-3wgq-wrwc-vqmv"
+- "https://github.com/astral-sh/tokio-tar/security/advisories/GHSA-3wgq-wrwc-vqmv"
+- "https://github.com/astral-sh/uv/issues/12163"
+- "https://github.com/astral-sh/tokio-tar/commit/036fdecc85c52458ace92dc9e02e9cef90684e75"
+- "https://github.com/astral-sh/tokio-tar"
+uuid: "1342f97c-3a60-4f0a-ad4a-124025fa7ada"
+cwe_ids:
+- "CWE-22"
+- "CWE-61"
+- "CWE-937"
+- "CWE-1035"

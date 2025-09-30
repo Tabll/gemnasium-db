@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-hhw4-xg65-fp2x"
+identifiers:
+- "GHSA-hhw4-xg65-fp2x"
+package_slug: "cargo/serde_yml"
+title: "serde_yml crate is unsound and unmaintained"
+description: "Using `serde_yml::ser::Serializer.emitter` can cause a segmentation
+  fault, which is unsound.\n\nThe GitHub project for `serde_yml` was archived after
+  unsoundness issues were raised.\n\nIf you rely on this crate, it is highly recommended
+  switching to a maintained alternative."
+date: "2025-09-15"
+pubdate: "2025-09-15"
+affected_range: "<=0.0.12"
+fixed_versions: []
+affected_versions: "All versions up to 0.0.12"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-hhw4-xg65-fp2x"
+- "https://github.com/rustsec/advisory-db/issues/2395"
+- "https://github.com/sebastienrousseau/serde_yml"
+- "https://rustsec.org/advisories/RUSTSEC-2025-0068.html"
+uuid: "b388b004-1ede-4ee1-aea6-047a0644254c"
+cwe_ids:
+- "CWE-787"
+- "CWE-937"
+- "CWE-1035"

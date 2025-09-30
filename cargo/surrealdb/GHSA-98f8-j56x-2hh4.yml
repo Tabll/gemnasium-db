@@ -1,0 +1,36 @@
+---
+identifier: "GHSA-98f8-j56x-2hh4"
+identifiers:
+- "GHSA-98f8-j56x-2hh4"
+package_slug: "cargo/surrealdb"
+title: "Duplicate Advisory: SurrealDB is Vulnerable to Unauthorized Data Exposure
+  via LIVE Query Subscriptions"
+description: "## Duplicate Advisory\nThis advisory has been withdrawn because it is
+  a duplicate of GHSA-7vm2-j586-vcvc. This link is maintained to preserve external
+  references.\n\n## Original Description\nA flaw was found in the live query subscription
+  mechanism of the database engine. This vulnerability allows record or guest users
+  to observe unauthorized records within the same table, bypassing access controls,
+  via crafted LIVE SELECT subscriptions when other users alter or delete records."
+date: "2025-09-26"
+pubdate: "2025-09-26"
+affected_range: ">=2.3.0"
+fixed_versions: []
+affected_versions: "All versions starting from 2.3.0"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-98f8-j56x-2hh4"
+- "https://github.com/surrealdb/surrealdb/security/advisories/GHSA-7vm2-j586-vcvc"
+- "https://nvd.nist.gov/vuln/detail/CVE-2025-11060"
+- "https://github.com/surrealdb/surrealdb/pull/6247"
+- "https://github.com/surrealdb/surrealdb/commit/d81169a06b89f0c588134ddf2d62eeb8d5e8fd0c"
+- "https://access.redhat.com/security/cve/CVE-2025-11060"
+- "https://bugzilla.redhat.com/show_bug.cgi?id=2394708"
+- "https://github.com/surrealdb/surrealdb"
+- "https://surrealdb.com/docs/surrealql/statements/live"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:N/A:N"
+uuid: "766fc429-04d2-49ab-a768-c3c9c3ee04fe"
+cwe_ids:
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-xh92-rqrq-227v"
+identifiers:
+- "GHSA-xh92-rqrq-227v"
+package_slug: "npm/@mastra/mcp-docs-server"
+title: "Mastra Docs MCP Server `@mastra/mcp-docs-server` Leads to Information Exposure"
+description: "The Mastra Docs MCP Server package `@mastra/mcp-docs-server` is a server
+  designed to provide documentation context to AI agentic workflows, such as those
+  used in AI-powered IDEs.\n\n**Resources:**"
+date: "2025-09-24"
+pubdate: "2025-09-24"
+affected_range: "<0.17.0"
+fixed_versions:
+- "0.17.0"
+affected_versions: "All versions before 0.17.0"
+not_impacted: "All versions starting from 0.17.0"
+solution: "Upgrade to version 0.17.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-xh92-rqrq-227v"
+- "https://github.com/mastra-ai/mastra/security/advisories/GHSA-xh92-rqrq-227v"
+- "https://github.com/mastra-ai/mastra/commit/7f2b528ba82db512d68832d2f8ad6cbc8bb46cd4"
+- "https://github.com/mastra-ai/mastra"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+uuid: "baf452bb-7daa-42a2-b438-ec4e501ddee5"
+cwe_ids:
+- "CWE-548"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,24 @@
+identifier: "GHSA-m99c-cfww-cxqx"
+identifiers:
+- "GHSA-m99c-cfww-cxqx"
+package_slug: "npm/color-name"
+title: "Malware in color-name"
+description: "Any computer that has this package installed or running should be considered
+  fully compromised. All secrets and keys stored on that computer should be
+  rotated immediately from a different computer. The package should be removed,
+  but as full control of the computer may have been given to an outside entity,
+  there is no guarantee that removing the package will remove all malicious
+  software resulting from installing it."
+date: "2025-09-08"
+pubdate: "2025-09-08"
+affected_range: "=2.0.1"
+fixed_versions: []
+affected_versions: "Version =2.0.1"
+not_impacted: ""
+solution: "Remove this package immediately and rotate any secrets that may have been compromised."
+urls:
+- "https://github.com/github/advisory-database/issues/6099"
+- "https://github.com/advisories/GHSA-m99c-cfww-cxqx"
+uuid: "4e0e7f54-40f8-42ef-9c23-9cf450c4fb39"
+cwe_ids:
+- "CWE-506"

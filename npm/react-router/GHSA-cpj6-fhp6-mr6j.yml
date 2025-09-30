@@ -7,7 +7,7 @@ title: "False-Positive"
 description: "This advisory is a duplicate of CVE-2025-43865 and has been removed."
 date: "9999-05-06"
 pubdate: "2025-04-24"
-affected_range: ">=7.0.0 <7.5.2"
+affected_range: "<0"
 fixed_versions:
 - "7.5.2"
 affected_versions: "All versions starting from 7.0.0 before 7.5.2"

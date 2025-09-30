@@ -1,0 +1,34 @@
+---
+identifier: "MAL-2025-47221"
+identifiers:
+- "MAL-2025-47221"
+- "GHSA-382x-5wm4-g55m"
+package_slug: "npm/@things-factory/email-base"
+title: "Malicious code in @things-factory/email-base (npm)"
+description: "This package was compromised by the Shai-Hulud NPM worm.\nThe malicious
+  payload steals tokens and credentials and publishes\nthem to GitHub before propogating
+  itself to NPM packages the user owns."
+date: "2025-09-18"
+pubdate: "2025-09-16"
+affected_range: ">=9.0.42 <=9.0.54||=9.0.42||=9.0.43||=9.0.59||=9.0.58||=9.0.57||=9.0.56||=9.0.55||=9.0.54||=9.0.53||=9.0.51||=9.0.52||=9.0.50||=9.0.49||=9.0.48||=9.0.47||=9.0.46||=9.0.45||=9.0.44"
+fixed_versions: []
+affected_versions: "All versions starting from 9.0.42 up to 9.0.54, version 9.0.42,
+  version 9.0.43, version 9.0.44, version 9.0.45, version 9.0.46, version 9.0.47,
+  version 9.0.48, version 9.0.49, version 9.0.50, version 9.0.51, version 9.0.52,
+  version 9.0.53, version 9.0.54, version 9.0.55, version 9.0.56, version 9.0.57,
+  version 9.0.58, version 9.0.59"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/MAL-2025-47221"
+- "https://safedep.io/npm-supply-chain-attack-targeting-maintainers/"
+- "https://github.com/advisories/GHSA-382x-5wm4-g55m"
+- "https://www.wiz.io/blog/shai-hulud-npm-supply-chain-attack"
+- "https://semgrep.dev/blog/2025/security-advisory-npm-packages-using-secret-scanning-tools-to-steal-credentials/"
+- "https://www.aikido.dev/blog/s1ngularity-nx-attackers-strike-again"
+- "https://www.stepsecurity.io/blog/ctrl-tinycolor-and-40-npm-packages-compromised"
+- "https://socket.dev/blog/tinycolor-supply-chain-attack-affects-40-packages"
+uuid: "b8524d0e-1111-4f67-bddf-3fb27257f276"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

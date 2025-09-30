@@ -1,0 +1,36 @@
+---
+identifier: "GHSA-9v82-vcjx-m76j"
+identifiers:
+- "GHSA-9v82-vcjx-m76j"
+package_slug: "packagist/shopware/core"
+title: "Shopware: Reflective Cross Site-Scripting (XSS) in CMS components"
+description: "When an application uses input fields, it is important that user input
+  is adequately filtered for malicious HTML and JavaScript characters. When adequate
+  input validation is not applied, Cross-Site Scripting (XSS) vulnerabilities may
+  arise. These allow malicious actors to inject malicious code into application pages.
+  When a user visits the page, the code is executed in the user's web browser. This
+  allows malicious actors to perform malicious actions in the name of that user. XSS
+  can be divided into three variants: Persistent XSS, Reflective XSS and DOM-based
+  XSS. In Reflective XSS, a malicious actor injects malicious JavaScript code into
+  a URL. Every time the user visits this URL, the JavaScript code is executed in the
+  user’s browser."
+date: "2025-09-10"
+pubdate: "2025-09-10"
+affected_range: ">=6.7.0.0 <6.7.2.1"
+fixed_versions:
+- "6.7.2.1"
+affected_versions: "All versions starting from 6.7.0.0 before 6.7.2.1"
+not_impacted: "All versions before 6.7.0.0, all versions starting from 6.7.2.1"
+solution: "Upgrade to version 6.7.2.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-9v82-vcjx-m76j"
+- "https://github.com/shopware/shopware/security/advisories/GHSA-9v82-vcjx-m76j"
+- "https://github.com/shopware/shopware/commit/12fb537c5ebe009f2a0f58b9c24dbd2d6b4c508f"
+- "https://github.com/shopware/shopware"
+- "https://github.com/shopware/shopware/releases/tag/v6.7.2.1"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:L/A:L"
+uuid: "58c8aa2e-1c91-4454-b525-8ecb6684ee66"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

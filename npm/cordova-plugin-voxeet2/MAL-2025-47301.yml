@@ -1,0 +1,29 @@
+---
+identifier: "MAL-2025-47301"
+identifiers:
+- "MAL-2025-47301"
+- "GHSA-38v6-fq44-h9mr"
+package_slug: "npm/cordova-plugin-voxeet2"
+title: "Malicious code in cordova-plugin-voxeet2 (npm)"
+description: "This package was compromised by the Shai-Hulud NPM worm.\nThe malicious
+  payload steals tokens and credentials and publishes\nthem to GitHub before propogating
+  itself to NPM packages the user owns."
+date: "2025-09-18"
+pubdate: "2025-09-16"
+affected_range: "=1.0.24"
+fixed_versions: []
+affected_versions: "Version 1.0.24"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/MAL-2025-47301"
+- "https://github.com/advisories/GHSA-38v6-fq44-h9mr"
+- "https://www.wiz.io/blog/shai-hulud-npm-supply-chain-attack"
+- "https://semgrep.dev/blog/2025/security-advisory-npm-packages-using-secret-scanning-tools-to-steal-credentials/"
+- "https://www.aikido.dev/blog/s1ngularity-nx-attackers-strike-again"
+- "https://www.stepsecurity.io/blog/ctrl-tinycolor-and-40-npm-packages-compromised"
+- "https://socket.dev/blog/tinycolor-supply-chain-attack-affects-40-packages"
+uuid: "eb8212b8-a157-45bd-bcb0-df6670147330"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

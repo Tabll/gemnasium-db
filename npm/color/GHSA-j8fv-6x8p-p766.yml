@@ -1,0 +1,23 @@
+identifier: "GHSA-j8fv-6x8p-p766"
+identifiers:
+- "GHSA-j8fv-6x8p-p766"
+package_slug: "npm/color"
+title: "Malware in color"
+description: "Any computer that has this package installed or running should be considered
+  fully compromised. All secrets and keys stored on that computer should be
+  rotated immediately from a different computer. The package should be removed,
+  but as full control of the computer may have been given to an outside entity,
+  there is no guarantee that removing the package will remove all malicious
+  software resulting from installing it."
+date: "2025-09-08"
+pubdate: "2025-09-08"
+affected_range: "=5.0.1"
+fixed_versions: []
+affected_versions: "Version =5.0.1"
+not_impacted: ""
+solution: "Remove this package immediately and rotate any secrets that may have been compromised."
+urls:
+- "https://github.com/advisories/GHSA-j8fv-6x8p-p766"
+uuid: "350d6fb6-b77e-45bf-a189-987f492c24c8"
+cwe_ids:
+- "CWE-506"

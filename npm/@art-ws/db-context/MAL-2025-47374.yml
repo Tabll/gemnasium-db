@@ -1,0 +1,30 @@
+---
+identifier: "MAL-2025-47374"
+identifiers:
+- "MAL-2025-47374"
+- "GHSA-hw22-4r5h-554j"
+package_slug: "npm/@art-ws/db-context"
+title: "Malicious code in @art-ws/db-context (npm)"
+description: "This package was compromised by the Shai-Hulud NPM worm.\nThe malicious
+  payload steals tokens and credentials and publishes\nthem to GitHub before propogating
+  itself to NPM packages the user owns."
+date: "2025-09-18"
+pubdate: "2025-09-16"
+affected_range: ">=2.0.23 <=2.0.24||=2.0.24||=2.0.21"
+fixed_versions: []
+affected_versions: "Version 2.0.21, all versions starting from 2.0.23 up to 2.0.24,
+  version 2.0.24"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/MAL-2025-47374"
+- "https://www.wiz.io/blog/shai-hulud-npm-supply-chain-attack"
+- "https://semgrep.dev/blog/2025/security-advisory-npm-packages-using-secret-scanning-tools-to-steal-credentials/"
+- "https://www.aikido.dev/blog/s1ngularity-nx-attackers-strike-again"
+- "https://www.stepsecurity.io/blog/ctrl-tinycolor-and-40-npm-packages-compromised"
+- "https://socket.dev/blog/tinycolor-supply-chain-attack-affects-40-packages"
+- "https://github.com/advisories/GHSA-hw22-4r5h-554j"
+uuid: "5826b8be-07dc-43be-90f9-bfc11f6234af"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

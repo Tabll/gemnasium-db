@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-cvmj-47v9-35m9"
+identifiers:
+- "GHSA-cvmj-47v9-35m9"
+package_slug: "cargo/fuser"
+title: "FUSE-Rust: Uninitalized memory read and leak caused by fuser crate"
+description: "During the creation of a new libfuse session with `fuse_session_new`,
+  the operation list was passed as NULL incorrectly. libfuse expects this argument
+  to always point to list of operations. This caused uninitialized memory read and
+  leaks in libfuse.so."
+date: "2025-09-15"
+pubdate: "2025-09-15"
+affected_range: "<0.16.0"
+fixed_versions:
+- "0.16.0"
+affected_versions: "All versions before 0.16.0"
+not_impacted: "All versions starting from 0.16.0"
+solution: "Upgrade to version 0.16.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-cvmj-47v9-35m9"
+- "https://github.com/cberner/fuser/pull/390"
+- "https://github.com/cberner/fuser"
+- "https://rustsec.org/advisories/RUSTSEC-2021-0154.html"
+uuid: "e4289a10-3314-4ec4-af44-09d598b39e38"
+cwe_ids:
+- "CWE-908"
+- "CWE-937"
+- "CWE-1035"

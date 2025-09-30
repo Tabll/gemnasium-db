@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-5854-jvxx-2cg9"
+identifiers:
+- "GHSA-5854-jvxx-2cg9"
+package_slug: "npm/subtext"
+title: "Denial of Service in content"
+description: "Versions of `content` are vulnerable to Denial of Service. The Content-Encoding
+  HTTP header parser has a vulnerability which will cause the function to throw a
+  system error if the header contains some invalid values. Because hapi rethrows system
+  errors (as opposed to catching expected application errors), the error is thrown
+  all the way up the stack. If no unhandled exception handler is available, the application
+  will exist, allowing an attacker to shut down services."
+date: "2025-09-27"
+pubdate: "2020-09-03"
+affected_range: "<=4.0.6"
+fixed_versions: []
+affected_versions: "All versions up to 4.0.6"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-5854-jvxx-2cg9"
+- "https://github.com/hapijs/subtext"
+- "https://www.npmjs.com/advisories/1478"
+uuid: "ff4807fb-6a67-41f2-8c25-9943f4b0749d"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

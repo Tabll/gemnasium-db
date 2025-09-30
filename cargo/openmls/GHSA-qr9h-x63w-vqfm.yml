@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-qr9h-x63w-vqfm"
+identifiers:
+- "GHSA-qr9h-x63w-vqfm"
+package_slug: "cargo/openmls"
+title: "OpenMLS improper persistence of the secret tree during message processing"
+description: "A bug in the OpenMLS library prevented private key material from being
+  updated in storage during message processing. The key material in question are the
+  keys stored in the MLS secret tree, which are used for decryption of private MLS
+  messages. The effects of the bug are limited in scope, but can affect forward secrecy
+  and limit how many messages can be decrypted."
+date: "2025-09-26"
+pubdate: "2025-09-26"
+affected_range: "<0.7.1"
+fixed_versions:
+- "0.7.1"
+affected_versions: "All versions before 0.7.1"
+not_impacted: "All versions starting from 0.7.1"
+solution: "Upgrade to version 0.7.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-qr9h-x63w-vqfm"
+- "https://github.com/openmls/openmls/security/advisories/GHSA-qr9h-x63w-vqfm"
+- "https://github.com/openmls/openmls/commit/c73a074c804b30bec8284ac1e69a71b01db982ea"
+- "https://github.com/openmls/openmls"
+uuid: "cb95ee6c-ede6-45bb-918e-5d2e9eb63cc8"
+cwe_ids:
+- "CWE-200"
+- "CWE-937"
+- "CWE-1035"

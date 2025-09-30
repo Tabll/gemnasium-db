@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-7rcc-q6rq-jpcm"
+identifiers:
+- "GHSA-7rcc-q6rq-jpcm"
+package_slug: "nuget/DotNetNuke.Core"
+title: "DNN affected by Stored Cross-Site Scripting (XSS) in Profile Biography field"
+description: "Users can use special syntax to inject javascript code in their profile
+  biography field. Although there was sanitization in place, it did not cover all
+  possible scenarios"
+date: "2025-09-22"
+pubdate: "2025-09-22"
+affected_range: "[,10.1.0)"
+fixed_versions:
+- "10.1.0"
+affected_versions: "All versions before 10.1.0"
+not_impacted: "All versions starting from 10.1.0"
+solution: "Upgrade to version 10.1.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-7rcc-q6rq-jpcm"
+- "https://github.com/dnnsoftware/Dnn.Platform/security/advisories/GHSA-7rcc-q6rq-jpcm"
+- "https://github.com/dnnsoftware/Dnn.Platform"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L"
+uuid: "a55bdb97-f34c-4a27-9b8c-77bc26601f85"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

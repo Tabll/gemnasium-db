@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-7944-7c6r-55vv"
+identifiers:
+- "GHSA-7944-7c6r-55vv"
+package_slug: "npm/flowise"
+title: "FlowiseAI Pre-Auth Arbitrary Code Execution"
+description: "An authenticated admin user of **FlowiseAI** can exploit the **Supabase
+  RPC Filter** component to execute **arbitrary server-side code** without restriction.
+  By injecting a malicious payload into the filter expression field, the attacker
+  can directly trigger JavaScript's `execSync()` to launch reverse shells, access
+  environment secrets, or perform any OS-level command execution.\n\nThis results
+  in **full server compromise** and severe breach of trust boundaries between frontend
+  input and backend execution logic."
+date: "2025-09-15"
+pubdate: "2025-09-15"
+affected_range: ">=3.0.5 <3.0.6||=3.0.5"
+fixed_versions:
+- "3.0.6"
+affected_versions: "All versions starting from 3.0.5 before 3.0.6, version 3.0.5"
+not_impacted: ""
+solution: "Upgrade to version 3.0.6 or above."
+urls:
+- "https://github.com/advisories/GHSA-7944-7c6r-55vv"
+- "https://github.com/FlowiseAI/Flowise/security/advisories/GHSA-7944-7c6r-55vv"
+- "https://github.com/FlowiseAI/Flowise"
+- "https://github.com/FlowiseAI/Flowise/blob/flowise%403.0.5/packages/components/nodes/vectorstores/Supabase/Supabase.ts#L237"
+- "https://github.com/FlowiseAI/Flowise/releases/tag/flowise%403.0.6"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H"
+uuid: "f684339e-d724-47b1-8cd3-b0e2d5e39269"
+cwe_ids:
+- "CWE-94"
+- "CWE-937"
+- "CWE-1035"

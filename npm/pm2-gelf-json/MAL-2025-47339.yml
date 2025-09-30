@@ -1,0 +1,30 @@
+---
+identifier: "MAL-2025-47339"
+identifiers:
+- "MAL-2025-47339"
+- "GHSA-v5f5-66fw-94cg"
+package_slug: "npm/pm2-gelf-json"
+title: "Malicious code in pm2-gelf-json (npm)"
+description: "This package was compromised by the Shai-Hulud NPM worm.\nThe malicious
+  payload steals tokens and credentials and publishes\nthem to GitHub before propogating
+  itself to NPM packages the user owns."
+date: "2025-09-18"
+pubdate: "2025-09-16"
+affected_range: ">=1.0.4 <=1.0.5||=1.0.4||=1.0.5"
+fixed_versions: []
+affected_versions: "All versions starting from 1.0.4 up to 1.0.5, version 1.0.4, version
+  1.0.5"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/MAL-2025-47339"
+- "https://github.com/advisories/GHSA-v5f5-66fw-94cg"
+- "https://www.wiz.io/blog/shai-hulud-npm-supply-chain-attack"
+- "https://semgrep.dev/blog/2025/security-advisory-npm-packages-using-secret-scanning-tools-to-steal-credentials/"
+- "https://www.aikido.dev/blog/s1ngularity-nx-attackers-strike-again"
+- "https://www.stepsecurity.io/blog/ctrl-tinycolor-and-40-npm-packages-compromised"
+- "https://socket.dev/blog/tinycolor-supply-chain-attack-affects-40-packages"
+uuid: "43529251-d40b-42e5-bc07-dec011ba2e24"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-g9cg-h3jm-cwrc"
+identifiers:
+- "GHSA-g9cg-h3jm-cwrc"
+package_slug: "npm/@hapi/pez"
+title: "Prototype Pollution in @hapi/subtext"
+description: "Versions of `@hapi/pez` prior to 4.1.2 or 5.0.1 are vulnerable to Prototype
+  Pollution. A multipart payload can be constructed in a way that one of the parts’
+  content can be set as the entire payload object’s prototype. If this prototype contains
+  data, it may bypass other validation rules which enforce access and privacy. If
+  this prototype evaluates to null, it can cause unhandled exceptions when the request
+  payload is accessed."
+date: "2025-09-26"
+pubdate: "2020-09-03"
+affected_range: "<5.0.1"
+fixed_versions:
+- "5.0.1"
+affected_versions: "All versions before 5.0.1"
+not_impacted: "All versions starting from 5.0.1"
+solution: "Upgrade to version 5.0.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-g9cg-h3jm-cwrc"
+- "https://github.com/hapijs/pez"
+- "https://www.npmjs.com/advisories/1480"
+uuid: "457e4ef3-1219-493d-bf39-06ddcfa44f76"
+cwe_ids:
+- "CWE-1321"
+- "CWE-937"
+- "CWE-1035"

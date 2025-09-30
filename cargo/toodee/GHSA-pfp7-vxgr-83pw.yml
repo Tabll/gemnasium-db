@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-pfp7-vxgr-83pw"
+identifiers:
+- "GHSA-pfp7-vxgr-83pw"
+package_slug: "cargo/toodee"
+title: "toodee is vulnerable to Heap Buffer Overflow through its DrainCol Destructor"
+description: "An off-by-one error in the `DrainCol::drop` destructor could cause an
+  unsafe memory copy operation to exceed the bounds of the associated vector.\n\nThe
+  error was related to the size of the data being copied in one of the `ptr::copy`
+  invocations inside the destructor.\n\nWhen removing the first column from a TooDee
+  object, the DrainCol return object could cause a heap buffer overflow vulnerability
+  when it is dropped.\n\nThe issue was fixed in commit `e6e16d5` by reducing the copied
+  size by one."
+date: "2025-09-09"
+pubdate: "2025-09-09"
+affected_range: ">=0.2.0 <0.6.0"
+fixed_versions:
+- "0.6.0"
+affected_versions: "All versions starting from 0.2.0 before 0.6.0"
+not_impacted: "All versions before 0.2.0, all versions starting from 0.6.0"
+solution: "Upgrade to version 0.6.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-pfp7-vxgr-83pw"
+- "https://github.com/antonmarsden/toodee/issues/26"
+- "https://github.com/antonmarsden/toodee/commit/e6e16d5a97e6258ffbedbae1bde65b45c60f242f"
+- "https://github.com/antonmarsden/toodee"
+- "https://rustsec.org/advisories/RUSTSEC-2025-0062.html"
+uuid: "fb687131-53ff-4f25-bab1-391cbf548ee5"
+cwe_ids:
+- "CWE-122"
+- "CWE-937"
+- "CWE-1035"

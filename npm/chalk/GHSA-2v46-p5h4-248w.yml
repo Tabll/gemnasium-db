@@ -1,0 +1,23 @@
+identifier: "GHSA-2v46-p5h4-248w"
+identifiers:
+- "GHSA-2v46-p5h4-248w"
+package_slug: "npm/chalk"
+title: "Malware in chalk"
+description: "Any computer that has this package installed or running should be considered
+  fully compromised. All secrets and keys stored on that computer should be
+  rotated immediately from a different computer. The package should be removed,
+  but as full control of the computer may have been given to an outside entity,
+  there is no guarantee that removing the package will remove all malicious
+  software resulting from installing it."
+date: "2025-09-08"
+pubdate: "2025-09-08"
+affected_range: "=5.6.1"
+fixed_versions: []
+affected_versions: "Version =5.6.1"
+not_impacted: ""
+solution: "Remove this package immediately and rotate any secrets that may have been compromised."
+urls:
+- "https://github.com/advisories/GHSA-2v46-p5h4-248w"
+uuid: "ca765ff5-f89b-45e9-b401-79a92c4c04bf"
+cwe_ids:
+- "CWE-506"
