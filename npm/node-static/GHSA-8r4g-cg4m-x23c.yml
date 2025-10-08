@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-8r4g-cg4m-x23c"
+identifiers:
+- "GHSA-8r4g-cg4m-x23c"
+package_slug: "npm/node-static"
+title: "Denial of Service in node-static"
+description: "All versions of node-static are vulnerable to a Denial of Service. The
+  package fails to catch an exception when user input includes null bytes. This allows
+  attackers to access `http://host/%00` and crash the server."
+date: "2025-10-03"
+pubdate: "2021-09-22"
+affected_range: "<=0.7.11"
+fixed_versions: []
+affected_versions: "All versions up to 0.7.11"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-8r4g-cg4m-x23c"
+- "https://nvd.nist.gov/vuln/detail/CVE-2025-11149"
+- "https://github.com/cloudhead/node-static/pull/213"
+- "https://github.com/github/advisory-database/pull/6248"
+- "https://github.com/cloudhead/node-static"
+- "https://github.com/cloudhead/node-static/blob/643a528ec7bbd05a59c4030655d94810570afb3f/CHANGES.md#-unreleased"
+- "https://security.snyk.io/vuln/SNYK-JS-NODESTATIC-1297183"
+uuid: "5b8f8720-3af5-4168-ad6a-9aec66a91451"
+cwe_ids:
+- "CWE-248"
+- "CWE-400"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-964p-j4gg-mhwc"
+identifiers:
+- "GHSA-964p-j4gg-mhwc"
+package_slug: "npm/flowise"
+title: "Flowise  vulnerable to stored XSS via \"View Messages\" allows credential
+  theft in FlowiseAI admin panel"
+description: "A stored Cross-Site Scripting (XSS) vulnerability in FlowiseAI allows
+  a user to inject arbitrary JavaScript code via message input. When an administrator
+  views messages using the \"View Messages\" button in the workflow UI, the malicious
+  script executes in the context of the admin’s browser, enabling credential theft
+  via access to `localStorage`.\n\n---"
+date: "2025-10-03"
+pubdate: "2025-10-03"
+affected_range: "<2.2.7-patch.1"
+fixed_versions:
+- "2.2.7-patch.1"
+affected_versions: "All versions before 2.2.7-patch.1"
+not_impacted: "All versions starting from 2.2.7-patch.1"
+solution: "Upgrade to version 2.2.7-patch.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-964p-j4gg-mhwc"
+- "https://github.com/FlowiseAI/Flowise/security/advisories/GHSA-964p-j4gg-mhwc"
+- "https://github.com/FlowiseAI/Flowise"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:N"
+uuid: "b3a3351c-f685-4a64-b829-e15b6f75ae43"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,25 @@
+---
+identifier: "GHSA-466c-pfvv-v83g"
+identifiers:
+- "GHSA-466c-pfvv-v83g"
+package_slug: "cargo/wrflib"
+title: "wrflib has a soundness issue and is unmaintained"
+description: "All functions under `wrflib::byte_extract` are simply wrapper of unsafe
+  pointer offset and lacks sufficient checks to it pointer and offset parameter.\n\n`wrflib`
+  is unmaintained."
+date: "2025-10-03"
+pubdate: "2025-10-03"
+affected_range: "<=0.0.3"
+fixed_versions: []
+affected_versions: "All versions up to 0.0.3"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-466c-pfvv-v83g"
+- "https://github.com/cruise-automation/webviz-rust-framework"
+- "https://rustsec.org/advisories/RUSTSEC-2025-0072.html"
+uuid: "d9b7af43-bf22-4606-b12e-597393f2a57c"
+cwe_ids:
+- "CWE-119"
+- "CWE-937"
+- "CWE-1035"
