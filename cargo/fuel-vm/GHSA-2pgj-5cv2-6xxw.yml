@@ -1,0 +1,38 @@
+---
+identifier: "GHSA-2pgj-5cv2-6xxw"
+identifiers:
+- "GHSA-2pgj-5cv2-6xxw"
+package_slug: "cargo/fuel-vm"
+title: "FuelVM is vulnerable to heap memory allocation re-use bug"
+description: "A memory safety vulnerability was present in the Fuel Virtual Machine
+  (FuelVM), where memory reads could bypass expected access controls. Specifically,
+  when a smart contract performed a `mload` (or other opcodes which access memory)
+  on memory that had been deallocated using `ret`, it was still able to access the
+  old memory contents. This occurred because the memory region was not zeroed out
+  or otherwise marked as invalid. As a result, smart contracts could potentially read
+  sensitive data left over from other contracts if the same memory was reallocated,
+  violating isolation guarantees between contracts and enabling unintended data leakage.\n\nAll
+  users running affected versions of FuelVM that relied on strict memory isolation
+  between smart contracts were impacted."
+date: "2025-10-08"
+pubdate: "2025-10-08"
+affected_range: "<0.59.3||>=0.60.0 <0.60.1"
+fixed_versions:
+- "0.59.3"
+- "0.60.1"
+affected_versions: "All versions before 0.59.3, all versions starting from 0.60.0
+  before 0.60.1"
+not_impacted: "All versions starting from 0.59.3 before 0.60.0, all versions starting
+  from 0.60.1"
+solution: "Upgrade to versions 0.59.3, 0.60.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-2pgj-5cv2-6xxw"
+- "https://github.com/FuelLabs/fuel-vm/security/advisories/GHSA-2pgj-5cv2-6xxw"
+- "https://github.com/FuelLabs/fuel-vm/pull/941"
+- "https://github.com/FuelLabs/fuel-vm/commit/9c97c2bf782626b35ba48e154f210f91c847a513"
+- "https://github.com/FuelLabs/fuel-vm"
+uuid: "1200ddea-772c-405a-bca9-10caf899975d"
+cwe_ids:
+- "CWE-416"
+- "CWE-937"
+- "CWE-1035"

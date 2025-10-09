@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-wq95-wr7m-26h4"
+identifiers:
+- "GHSA-wq95-wr7m-26h4"
+package_slug: "npm/flowise"
+title: "Duplicate Advisory: Flowise Stored XSS vulnerability through logs in chatbot"
+description: "### Duplicate Advisory\nThis advisory has been withdrawn because it
+  is a duplicate of GHSA-7r4h-vmj9-wg42. This link is maintained to preserve external
+  references.\n\n### Original Description\nFlowise before 3.0.5 allows XSS via a FORM
+  element and an INPUT element when an admin views the chat log."
+date: "2025-10-08"
+pubdate: "2025-10-06"
+affected_range: "<3.0.5"
+fixed_versions:
+- "3.0.5"
+affected_versions: "All versions before 3.0.5"
+not_impacted: "All versions starting from 3.0.5"
+solution: "Upgrade to version 3.0.5 or above."
+urls:
+- "https://github.com/advisories/GHSA-wq95-wr7m-26h4"
+- "https://github.com/FlowiseAI/Flowise/security/advisories/GHSA-7r4h-vmj9-wg42"
+- "https://nvd.nist.gov/vuln/detail/CVE-2025-29192"
+- "https://github.com/FlowiseAI/Flowise/pull/4905"
+- "https://github.com/FlowiseAI/Flowise/releases/tag/flowise%403.0.5"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:L/A:N"
+uuid: "9b161a88-da5c-4b87-a36e-11959f6f11d4"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"
