@@ -1,0 +1,26 @@
+---
+identifier: "GHSA-m9mp-6x32-5rhg"
+identifiers:
+- "GHSA-m9mp-6x32-5rhg"
+package_slug: "pypi/scio-pypi"
+title: "scio is vunerable to  Remote Command Execution  through PyTorch"
+description: "PyTorch reported a [**critical** vulnerability](https://github.com/pytorch/pytorch/security/advisories/GHSA-53q9-r3pm-6pq6)
+  when using `torch.load`, even with option `weights_only=True`, for `torch <= 2.5.1`.\n\nIn
+  `scio <= 1.0.0`, the lower bound for `torch` is `2.3`."
+date: "2025-10-09"
+pubdate: "2025-10-09"
+affected_range: "<=1.0.0"
+fixed_versions: []
+affected_versions: "All versions up to 1.0.0"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-m9mp-6x32-5rhg"
+- "https://github.com/ThalesGroup/scio/security/advisories/GHSA-m9mp-6x32-5rhg"
+- "https://github.com/pytorch/pytorch/security/advisories/GHSA-53q9-r3pm-6pq6"
+- "https://github.com/ThalesGroup/scio"
+uuid: "a61b2778-b689-4cec-886c-fbf5964b88c2"
+cwe_ids:
+- "CWE-502"
+- "CWE-937"
+- "CWE-1035"
