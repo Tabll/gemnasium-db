@@ -10,13 +10,14 @@ description: "A XSS(cross-site scripting) vulnerability is caused by insufficien
   web pages, and when users browse these web pages, the malicious code will be executed,
   and the victims may be vulnerable to various attacks such as cookie data theft,
   etc."
-date: "2025-10-03"
+date: "2025-10-13"
 pubdate: "2025-10-03"
-affected_range: "<=3.0.5"
-fixed_versions: []
-affected_versions: "All versions up to 3.0.5"
-not_impacted: ""
-solution: "Unfortunately, there is no solution available yet."
+affected_range: "<3.0.8"
+fixed_versions:
+- "3.0.8"
+affected_versions: "All versions before 3.0.8"
+not_impacted: "All versions starting from 3.0.8"
+solution: "Upgrade to version 3.0.8 or above."
 urls:
 - "https://github.com/advisories/GHSA-4fr9-3x69-36wv"
 - "https://github.com/FlowiseAI/Flowise/security/advisories/GHSA-4fr9-3x69-36wv"

@@ -1,0 +1,37 @@
+---
+identifier: "GHSA-fhwm-pc6r-4h2f"
+identifiers:
+- "GHSA-fhwm-pc6r-4h2f"
+package_slug: "npm/commandkit"
+title: "CommandKit has incorrect command name exposure in context object for message
+  command aliases"
+description: "A logic flaw exists in the message command handler of CommandKit that
+  affects how the `commandName` property is exposed to both middleware functions and
+  command execution contexts when handling command aliases. When a message command
+  is invoked using an alias, the `ctx.commandName` value reflects the alias rather
+  than the canonical command name. This occurs in both middleware functions and within
+  the command’s own run function.\n\nDevelopers who rely on `ctx.commandName` for
+  logic that assumes it represents the canonical command identifier may introduce
+  unintended behavior. In security-sensitive cases, such as middleware used for permission
+  checks, rate limiting, or audit logging, this behavior could allow unauthorized
+  command execution or inaccurate access control decisions. Slash commands and context
+  menu commands are not affected."
+date: "2025-10-13"
+pubdate: "2025-10-13"
+affected_range: ">=1.2.0-rc.1 <1.2.0-rc.12"
+fixed_versions:
+- "1.2.0-rc.12"
+affected_versions: "All versions starting from 1.2.0-rc.1 before 1.2.0-rc.12"
+not_impacted: "All versions before 1.2.0-rc.1, all versions starting from 1.2.0-rc.12"
+solution: "Upgrade to version 1.2.0-rc.12 or above."
+urls:
+- "https://github.com/advisories/GHSA-fhwm-pc6r-4h2f"
+- "https://github.com/underctrl-io/commandkit/security/advisories/GHSA-fhwm-pc6r-4h2f"
+- "https://github.com/underctrl-io/commandkit/commit/440385a3e5de3fa3d2a76d23a807995cb29602fd"
+- "https://github.com/underctrl-io/commandkit"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:H/A:N"
+uuid: "961f6792-5f87-4aa9-b30f-5ea67014946d"
+cwe_ids:
+- "CWE-706"
+- "CWE-937"
+- "CWE-1035"

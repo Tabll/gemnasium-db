@@ -5,8 +5,10 @@ identifiers:
 package_slug: "go/github.com/go-chi/chi/v5"
 title: "chi Allows Host Header Injection which Leads to Open Redirect in RedirectSlashes"
 description: "The RedirectSlashes function in middleware/strip.go is vulnerable to
-  host header injection which leads to open redirect."
-date: "2025-06-20"
+  host header injection which leads to open redirect.\n\nWe consider this a **lower-severity**
+  open redirect, as it can't be exploited from browsers or email clients (requires
+  manipulation of a Host header)."
+date: "2025-10-13"
 pubdate: "2025-06-20"
 affected_range: "<5.2.2"
 fixed_versions:

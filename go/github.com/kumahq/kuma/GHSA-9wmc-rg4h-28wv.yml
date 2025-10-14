@@ -1,0 +1,44 @@
+---
+identifier: "GHSA-9wmc-rg4h-28wv"
+identifiers:
+- "GHSA-9wmc-rg4h-28wv"
+package_slug: "go/github.com/kumahq/kuma"
+title: "github.com/kumahq/kuma affected by CVE-2023-44487"
+description: "Envoy and Go HTTP/2 protocol stack is vulnerable to the \"Rapid Reset\"
+  class of exploits, which send a sequence of HEADERS frames optionally followed by
+  RST_STREAM frames.\n\nThis can be exercised if you use the builtin gateway and receive
+  untrusted http2 traffic."
+date: "2025-10-13"
+pubdate: "2023-10-17"
+affected_range: ">=2.4.0 <2.4.3||>=2.3.0 <2.3.3||>=2.2.0 <2.2.4||>=2.1.0 <2.1.8||<2.0.8"
+fixed_versions:
+- "2.4.3"
+- "2.3.3"
+- "2.2.4"
+- "2.1.8"
+- "2.0.8"
+affected_versions: "All versions before 2.0.8, all versions starting from 2.1.0 before
+  2.1.8, all versions starting from 2.2.0 before 2.2.4, all versions starting from
+  2.3.0 before 2.3.3, all versions starting from 2.4.0 before 2.4.3"
+not_impacted: "All versions starting from 2.0.8 before 2.1.0, all versions starting
+  from 2.1.8 before 2.2.0, all versions starting from 2.2.4 before 2.3.0, all versions
+  starting from 2.3.3 before 2.4.0, all versions starting from 2.4.3"
+solution: "Upgrade to versions 2.0.8, 2.1.8, 2.2.4, 2.3.3, 2.4.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-9wmc-rg4h-28wv"
+- "https://github.com/envoyproxy/envoy/security/advisories/GHSA-jhv4-f7mr-xx76"
+- "https://github.com/kumahq/kuma/security/advisories/GHSA-9wmc-rg4h-28wv"
+- "https://github.com/golang/go/issues/63417"
+- "https://github.com/kumahq/kuma/pull/8001"
+- "https://github.com/kumahq/kuma/pull/8023"
+- "https://github.com/kumahq/kuma/pull/8034"
+- "https://cloud.google.com/blog/products/identity-security/how-it-works-the-novel-http2-rapid-reset-ddos-attack"
+- "https://github.com/advisories/GHSA-qppj-fm5r-hxr3"
+- "https://github.com/kumahq/kuma"
+- "https://www.envoyproxy.io/docs/envoy/latest/configuration/best_practices/edge"
+- "https://www.nginx.com/blog/http-2-rapid-reset-attack-impacting-f5-nginx-products/?sf269548684=1"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "a66dc61b-a17a-4eb2-8ea7-786232ae8232"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"
