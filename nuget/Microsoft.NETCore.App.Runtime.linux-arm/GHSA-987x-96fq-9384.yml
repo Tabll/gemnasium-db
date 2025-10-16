@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-987x-96fq-9384"
+identifiers:
+- "GHSA-987x-96fq-9384"
+package_slug: "nuget/Microsoft.NETCore.App.Runtime.linux-arm"
+title: "Duplicate Advisory: Microsoft Security Advisory CVE-2025-55248: .NET Information
+  Disclosure Vulnerability"
+description: "### Duplicate Advisory\nThis advisory has been withdrawn because it
+  is a duplicate of GHSA-gwq6-fmvp-qp68. This link is maintained to preserve external
+  references.\n\n### Original Description\nInadequate encryption strength in .NET,
+  .NET Framework, Visual Studio allows an authorized attacker to disclose information
+  over a network."
+date: "2025-10-15"
+pubdate: "2025-10-14"
+affected_range: "[9.0.0,9.0.10)"
+fixed_versions:
+- "9.0.10"
+affected_versions: "All versions starting from 9.0.0 before 9.0.10"
+not_impacted: "All versions before 9.0.0, all versions starting from 9.0.10"
+solution: "Upgrade to version 9.0.10 or above."
+urls:
+- "https://github.com/advisories/GHSA-987x-96fq-9384"
+- "https://nvd.nist.gov/vuln/detail/CVE-2025-55248"
+- "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55248"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:U/C:H/I:N/A:N"
+uuid: "d6f3bcbc-19ac-451b-bfa6-0cc931f79b65"
+cwe_ids:
+- "CWE-326"
+- "CWE-937"
+- "CWE-1035"

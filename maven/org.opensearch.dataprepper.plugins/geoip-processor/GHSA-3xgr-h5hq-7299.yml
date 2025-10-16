@@ -1,0 +1,36 @@
+---
+identifier: "GHSA-3xgr-h5hq-7299"
+identifiers:
+- "GHSA-3xgr-h5hq-7299"
+package_slug: "maven/org.opensearch.dataprepper.plugins/geoip-processor"
+title: "GeoIP processor disables SSL certificate validation when downloading databases"
+description: "The GeoIP processor in Data Prepper was configured to trust all SSL
+  certificates and disable hostname verification when downloading GeoIP databases
+  from HTTP URLs, making downloads vulnerable to man-in-the-middle attacks.\n\nThe
+  GeoIP processor included a custom SSL implementation that completely bypassed certificate
+  validation when downloading GeoIP databases from external sources. The `initiateSSL()`
+  method incorrectly implemented an approach for trusting all certificates. Specifically
+  it:\n\n* Accepted all SSL certificates without validation\n* Disabled server certificate
+  verification\n* Disabled client certificate verification\n* Disabled hostname verification\n\nThis
+  configuration made database downloads vulnerable to man-in-the-middle attacks, potentially
+  allowing attackers to serve malicious GeoIP databases that could compromise the
+  integrity of geolocation data processing."
+date: "2025-10-15"
+pubdate: "2025-10-15"
+affected_range: "[2.7.0,2.12.2)"
+fixed_versions:
+- "2.12.2"
+affected_versions: "All versions starting from 2.7.0 before 2.12.2"
+not_impacted: "All versions before 2.7.0, all versions starting from 2.12.2"
+solution: "Upgrade to version 2.12.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-3xgr-h5hq-7299"
+- "https://github.com/opensearch-project/data-prepper/security/advisories/GHSA-3xgr-h5hq-7299"
+- "https://github.com/opensearch-project/data-prepper/commit/b82ea0640d98d9f4c742622325faeeb6248ee135"
+- "https://github.com/opensearch-project/data-prepper"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N"
+uuid: "f9dfa06d-03ed-4e75-ae6c-4b0f73039f5a"
+cwe_ids:
+- "CWE-295"
+- "CWE-937"
+- "CWE-1035"

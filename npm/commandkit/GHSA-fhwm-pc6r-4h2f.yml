@@ -10,13 +10,19 @@ description: "A logic flaw exists in the message command handler of CommandKit t
   command execution contexts when handling command aliases. When a message command
   is invoked using an alias, the `ctx.commandName` value reflects the alias rather
   than the canonical command name. This occurs in both middleware functions and within
-  the command’s own run function.\n\nDevelopers who rely on `ctx.commandName` for
-  logic that assumes it represents the canonical command identifier may introduce
-  unintended behavior. In security-sensitive cases, such as middleware used for permission
-  checks, rate limiting, or audit logging, this behavior could allow unauthorized
+  the command’s own run function.\n\nAlthough not explicitly documented, CommandKit’s
+  examples and guidance around middleware usage implicitly convey that `ctx.commandName`
+  represents the canonical command identifier. Middleware examples in the documentation
+  consistently use `ctx.commandName` to reference the command being executed, and
+  the documentation describes middleware as suitable for “logging, authentication,
+  permission checks, or any other cross-cutting concerns.” As a result, developers
+  reasonably expect `ctx.commandName` to return the canonical command name and may
+  rely on it for security-sensitive logic.\n\nDevelopers who assume `ctx.commandName`
+  is canonical may introduce unintended behavior when relying on it for logic such
+  as permission checks, rate limiting, or audit logging. This could allow unauthorized
   command execution or inaccurate access control decisions. Slash commands and context
   menu commands are not affected."
-date: "2025-10-13"
+date: "2025-10-15"
 pubdate: "2025-10-13"
 affected_range: ">=1.2.0-rc.1 <1.2.0-rc.12"
 fixed_versions:
