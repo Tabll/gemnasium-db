@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-3g4j-r53p-22wx"
+identifiers:
+- "GHSA-3g4j-r53p-22wx"
+package_slug: "npm/flowise"
+title: "Duplicate Advisory: FlowiseAI Pre-Auth Arbitrary Code Execution"
+description: "### Duplicate Advisory\nThis advisory has been withdrawn because it
+  is a duplicate of GHSA-7944-7c6r-55vv. This link is maintained to preserve external
+  references.\n\n### Original Description\nFlowise through v3.0.4 is vulnerable to
+  remote code execution via unsanitized evaluation of user input in the \"Supabase
+  RPC Filter\" field."
+date: "2025-10-17"
+pubdate: "2025-10-17"
+affected_range: ">=3.0.5 <3.0.6||=3.0.5"
+fixed_versions:
+- "3.0.6"
+affected_versions: "All versions starting from 3.0.5 before 3.0.6, version 3.0.5"
+not_impacted: ""
+solution: "Upgrade to version 3.0.6 or above."
+urls:
+- "https://github.com/advisories/GHSA-3g4j-r53p-22wx"
+- "https://github.com/FlowiseAI/Flowise/security/advisories/GHSA-7944-7c6r-55vv"
+- "https://nvd.nist.gov/vuln/detail/CVE-2025-57164"
+- "https://github.com/FlowiseAI/Flowise"
+- "https://github.com/FlowiseAI/Flowise/blob/main/packages/components/nodes/vectorstores/Supabase/Supabase.ts#L237"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H"
+uuid: "3e512334-3b75-4fce-ab70-b7c457b9f8ff"
+cwe_ids:
+- "CWE-94"
+- "CWE-937"
+- "CWE-1035"

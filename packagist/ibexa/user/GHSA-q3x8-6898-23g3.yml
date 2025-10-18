@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-q3x8-6898-23g3"
+identifiers:
+- "GHSA-q3x8-6898-23g3"
+package_slug: "packagist/ibexa/user"
+title: "ibexa/user login enumerates user accounts"
+description: "In v5, error messages could provide enough information to tell whether
+  a user exists or not. This is resolved by ensuring the error messages are sufficiently
+  ambigious."
+date: "2025-10-17"
+pubdate: "2025-10-17"
+affected_range: ">=5.0.0 <5.0.3"
+fixed_versions:
+- "5.0.3"
+affected_versions: "All versions starting from 5.0.0 before 5.0.3"
+not_impacted: "All versions before 5.0.0, all versions starting from 5.0.3"
+solution: "Upgrade to version 5.0.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-q3x8-6898-23g3"
+- "https://github.com/ibexa/user/security/advisories/GHSA-q3x8-6898-23g3"
+- "https://developers.ibexa.co/security-advisories/ibexa-sa-2025-004-xss-and-enumeration-vulnerabilities-in-back-office"
+- "https://github.com/ibexa/user"
+uuid: "1502d64b-7822-4adc-970c-48681189f1b6"
+cwe_ids:
+- "CWE-209"
+- "CWE-937"
+- "CWE-1035"
