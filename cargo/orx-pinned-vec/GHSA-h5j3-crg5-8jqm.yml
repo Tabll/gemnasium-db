@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-h5j3-crg5-8jqm"
+identifiers:
+- "GHSA-h5j3-crg5-8jqm"
+package_slug: "cargo/orx-pinned-vec"
+title: "orx-pinned-vec has undefined behavior in index_of_ptr with empty slices"
+description: "The safe function `index_of_ptr` causes undefined behavior when called
+  with an empty slice.\n\nThe issue occurs in the line `ptr.add(slice.len() - 1)`
+  which underflows when `slice.len()` is 0, creating a pointer with a massive offset.
+  According to Rust's safety rules, creating such a pointer causes immediate undefined
+  behavior."
+date: "2025-10-21"
+pubdate: "2025-10-21"
+affected_range: "<3.21.0"
+fixed_versions:
+- "3.21.0"
+affected_versions: "All versions before 3.21.0"
+not_impacted: "All versions starting from 3.21.0"
+solution: "Upgrade to version 3.21.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-h5j3-crg5-8jqm"
+- "https://github.com/orxfun/orx-pinned-vec/issues/52"
+- "https://github.com/orxfun/orx-pinned-vec/pull/53"
+- "https://github.com/orxfun/orx-pinned-vec/commit/4a4007a1aaff25cd417853c76163883a7110e276"
+- "https://github.com/orxfun/orx-pinned-vec"
+- "https://rustsec.org/advisories/RUSTSEC-2025-0106.html"
+uuid: "a8121419-4e6f-44f7-9bb1-637fc53efc0a"
+cwe_ids:
+- "CWE-119"
+- "CWE-191"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-vffh-c9pq-4crh"
+identifiers:
+- "GHSA-vffh-c9pq-4crh"
+package_slug: "npm/uptime-kuma"
+title: "Uptime Kuma Server-side Template Injection (SSTI) in Notification Templates
+  Allows Arbitrary File Read"
+description: "In some Notification types (e.g., Webhook, Telegram), the `send()` function
+  allows user-controlled renderTemplate input. This leads to a Server-side Template
+  Injection (SSTI) vulnerability that can be exploited to read arbitrary files from
+  the server."
+date: "2025-10-20"
+pubdate: "2025-10-20"
+affected_range: "=2.0.0-dev.0"
+fixed_versions: []
+affected_versions: "Version 2.0.0-dev.0"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-vffh-c9pq-4crh"
+- "https://github.com/louislam/uptime-kuma/security/advisories/GHSA-vffh-c9pq-4crh"
+- "https://github.com/louislam/uptime-kuma"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+uuid: "0517a44a-559d-46f8-90e2-7738fd122de6"
+cwe_ids:
+- "CWE-1336"
+- "CWE-36"
+- "CWE-937"
+- "CWE-1035"
