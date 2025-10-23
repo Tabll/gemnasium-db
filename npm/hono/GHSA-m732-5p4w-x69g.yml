@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-m732-5p4w-x69g"
+identifiers:
+- "GHSA-m732-5p4w-x69g"
+package_slug: "npm/hono"
+title: "Hono Improper Authorization vulnerability"
+description: "Hono’s **JWT Auth Middleware does not provide a built-in `aud` (Audience)
+  verification option**, which can cause **confused-deputy / token-mix-up** issues:
+  an API may accept a valid token that was **issued for a different audience** (e.g.,
+  another service) when multiple services share the same issuer/keys. This can lead
+  to unintended cross-service access. Hono’s docs list verification options for `iss/nbf/iat/exp`
+  only, with **no `aud` support**; RFC 7519 requires that when an `aud` claim is present,
+  tokens **MUST** be rejected unless the processing party identifies itself in that
+  claim.\n\n**Note:** This problem likely exists in the **JWK/JWKS-based middleware**
+  as well (e.g., `jwk` / `verifyWithJwks`)"
+date: "2025-10-22"
+pubdate: "2025-10-22"
+affected_range: ">=1.1.0 <4.10.2"
+fixed_versions:
+- "4.10.2"
+affected_versions: "All versions starting from 1.1.0 before 4.10.2"
+not_impacted: "All versions before 1.1.0, all versions starting from 4.10.2"
+solution: "Upgrade to version 4.10.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-m732-5p4w-x69g"
+- "https://github.com/honojs/hono/security/advisories/GHSA-m732-5p4w-x69g"
+- "https://github.com/honojs/hono/commit/45ba3bf9e3dff8e4bd85d6b47d4b71c8d6c66bef"
+- "https://github.com/honojs/hono"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N"
+uuid: "a3e64733-f119-413e-a88e-1846efa53cd9"
+cwe_ids:
+- "CWE-285"
+- "CWE-937"
+- "CWE-1035"

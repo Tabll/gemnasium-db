@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-wwxp-hxh6-8gf8"
+identifiers:
+- "GHSA-wwxp-hxh6-8gf8"
+package_slug: "cargo/binary_vec_io"
+title: "binary_vec_io access memory out-of-bounds in binary_read_to_ref and binary_write_from_ref"
+description: "Safe functions accept a single `&T` or `&mut T` but multiply by `n`
+  to create slices extending beyond allocated memory when `n > 1`.\n\nThese functions
+  use `from_raw_parts` to create slices larger than the underlying allocation, violating
+  memory safety.\n\nThe binary_vec_io repository is archived and unmaintained."
+date: "2025-10-22"
+pubdate: "2025-10-22"
+affected_range: "<=0.1.12"
+fixed_versions: []
+affected_versions: "All versions up to 0.1.12"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-wwxp-hxh6-8gf8"
+- "https://github.com/RustSec/advisory-db/pull/2428"
+- "https://gist.github.com/lewismosciski/57ac3b8b7a861abdd0d7ae6f39de5a9d"
+- "https://github.com/10XGenomics/rust-toolbox"
+- "https://rustsec.org/advisories/RUSTSEC-2025-0109.html"
+uuid: "1647383f-29bb-4c76-a5fa-12a68aef8f78"
+cwe_ids:
+- "CWE-120"
+- "CWE-937"
+- "CWE-1035"
