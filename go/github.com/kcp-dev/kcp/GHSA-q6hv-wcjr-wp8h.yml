@@ -18,7 +18,7 @@ description: "Because UPDATE validation is not being applied, it is possible for
   initializers that are inherited by other `WorkspaceTypes`.\n* Impacts developers
   using the `virtual/framework` package to create their own virtualworkspaces if they
   are using UpdateFuncs in their custom storageWrappers."
-date: "2025-09-26"
+date: "2025-10-23"
 pubdate: "2025-09-26"
 affected_range: "<0.28.3"
 fixed_versions:
@@ -33,6 +33,7 @@ urls:
 - "https://github.com/kcp-dev/kcp/commit/02134a2a51d33652ab288cccd7a13539b59c7584"
 - "https://github.com/kcp-dev/kcp"
 - "https://github.com/kcp-dev/kcp/releases/tag/v0.28.3"
+- "https://pkg.go.dev/vuln/GO-2025-3985"
 uuid: "3fece248-0503-48e5-a91c-84fef8a6b9dd"
 cwe_ids:
 - "CWE-285"

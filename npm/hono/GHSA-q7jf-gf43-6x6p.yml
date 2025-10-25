@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-q7jf-gf43-6x6p"
+identifiers:
+- "GHSA-q7jf-gf43-6x6p"
+package_slug: "npm/hono"
+title: "Hono vulnerable to Vary Header Injection leading to potential CORS Bypass"
+description: "A flaw in the CORS middleware allowed request `Vary` headers to be reflected
+  into the response, enabling attacker-controlled `Vary` values and potentially affecting
+  cache behavior."
+date: "2025-10-24"
+pubdate: "2025-10-24"
+affected_range: "<4.10.3"
+fixed_versions:
+- "4.10.3"
+affected_versions: "All versions before 4.10.3"
+not_impacted: "All versions starting from 4.10.3"
+solution: "Upgrade to version 4.10.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-q7jf-gf43-6x6p"
+- "https://github.com/honojs/hono/security/advisories/GHSA-q7jf-gf43-6x6p"
+- "https://github.com/honojs/hono/commit/d9b8b4b73b4f997994f2764013207365fe711282"
+- "https://github.com/honojs/hono"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N"
+uuid: "e320e45a-96a3-401a-a360-e92d4b8571c7"
+cwe_ids:
+- "CWE-444"
+- "CWE-937"
+- "CWE-1035"

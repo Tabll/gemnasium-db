@@ -14,7 +14,7 @@ description: "A vulnerable node can be made to consume very large amounts of mem
   is then passed as the `count` argument to function `GetHeadersFrom(number, count
   uint64)`. This allows an attacker to bypass `maxHeadersServe` and request all headers
   from the latest block back to the genesis block."
-date: "2025-10-10"
+date: "2025-10-23"
 pubdate: "2025-10-10"
 affected_range: "<0.1.4"
 fixed_versions:
@@ -28,6 +28,7 @@ urls:
 - "https://github.com/microstack-tech/parallax/commit/f759e9090aaf00a43c616d7cbd133c44bb1ed01e"
 - "https://github.com/microstack-tech/parallax"
 - "https://github.com/microstack-tech/parallax/releases/tag/v0.1.4"
+- "https://pkg.go.dev/vuln/GO-2025-4019"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
 uuid: "62bf4e2f-8102-403e-b387-e8156832e113"
 cwe_ids:
