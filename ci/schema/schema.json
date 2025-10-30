@@ -21,6 +21,7 @@
     "credit",
     "cvss_v2",
     "cvss_v3",
+    "cvss_v4",
     "solution",
     "not_impacted",
     "versions",
@@ -233,6 +234,16 @@
         "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N/RL:O/CR:L"
       ],
       "pattern": "^CVSS:3\\.[\\d\\.]+\\/AV:[NALP]\\/AC:[LH]\\/PR:[NLH]\\/UI:[NR]\\/S:[UC]\\/C:[NLH]\\/I:[NLH]\\/A:[NLH]$"
+    },
+    "cvss_v4": {
+      "$id": "#/properties/cvss_v4",
+      "type": "string",
+      "title": "Common Vulnerability Scoring System Vector (according to CVSS version 4)",
+      "default": "",
+      "examples": [
+        "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N"
+      ],
+      "pattern": "^CVSS:4\\.0\\/AV:[NALP]\\/AC:[LH]\\/AT:[NP]\\/PR:[NLH]\\/UI:[NPA]\\/VC:[NLH]\\/VI:[NLH]\\/VA:[NLH]\\/SC:[NLH]\\/SI:[NLH]\\/SA:[NLH]$"
     },
     "links": {
       "$id": "#/properties/links",

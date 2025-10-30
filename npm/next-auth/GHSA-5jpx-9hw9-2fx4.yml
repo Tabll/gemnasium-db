@@ -1,0 +1,37 @@
+---
+identifier: "GHSA-5jpx-9hw9-2fx4"
+identifiers:
+- "GHSA-5jpx-9hw9-2fx4"
+package_slug: "npm/next-auth"
+title: "NextAuthjs Email misdelivery Vulnerability"
+description: "NextAuth.js's email sign-in can be forced to deliver authentication
+  emails to an attacker-controlled mailbox due to a bug in `nodemailer`'s address
+  parser used by the project (fixed in `nodemailer` **v7.0.7**). A crafted input such
+  as:\n\n```\n\"e@attacker.com\"@victim.com\n```\n\nis parsed incorrectly and results
+  in the message being delivered to `e@attacker.com` (attacker) instead of `\"<e@attacker.com>@victim.com\"`
+  (the intended recipient at `victim.com`) in violation of RFC 5321/5322 semantics.
+  This allows an attacker to receive login/verification links or other sensitive emails
+  intended for the victim.\n\n<h2>Affected NextAuthjs Version</h2>\n\n≤ Version |
+  Afftected\n-- | --\n4.24.11 | Yes\n5.0.0-beta.29 | Yes"
+date: "2025-10-29"
+pubdate: "2025-10-29"
+affected_range: "<4.24.12||>=5.0.0-beta.0 <5.0.0-beta.30"
+fixed_versions:
+- "4.24.12"
+- "5.0.0-beta.30"
+affected_versions: "All versions before 4.24.12, all versions starting from 5.0.0-beta.0
+  before 5.0.0-beta.30"
+not_impacted: "All versions starting from 4.24.12 before 5.0.0-beta.0, all versions
+  starting from 5.0.0-beta.30"
+solution: "Upgrade to versions 4.24.12, 5.0.0-beta.30 or above."
+urls:
+- "https://github.com/advisories/GHSA-5jpx-9hw9-2fx4"
+- "https://github.com/nextauthjs/next-auth/security/advisories/GHSA-5jpx-9hw9-2fx4"
+- "https://github.com/nextauthjs/next-auth/commit/82efcf81f218aae43683f8dd2f7c260ef69b3ece"
+- "https://github.com/nextauthjs/next-auth/commit/8f3b2c7af0fe08973a12f616517c3ec85a5cd172"
+- "https://github.com/nextauthjs/next-auth"
+uuid: "7809293c-5cbd-4a58-8d7b-0b2ec63e6d61"
+cwe_ids:
+- "CWE-200"
+- "CWE-937"
+- "CWE-1035"

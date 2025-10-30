@@ -208,6 +208,8 @@ nuget/Node.js
   given vulnerability (see https://www.first.org/cvss/v2/ for more details).
 * `cvss_v3` (string, optional): The CVSS attack vector (version 3.x) for a
   given vulnerability (see https://www.first.org/cvss/v3-1/ for more details).
+* `cvss_v4` (string, optional): The CVSS attack vector (version 4.x) for a
+  given vulnerability (see https://www.first.org/cvss/v4-0/ for more details).
 * `versions` (array, optional): Version meta information. This array contains
   meta-information about the versions that are mentioned in the
   `affected_range` and `fixed_version` fields. A meta-information object
@@ -273,6 +275,7 @@ cwe_ids:
 - "CWE-611"
 cvss_v2: "AV:N/AC:L/Au:N/C:N/I:P/A:N"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N"
 uuid: "d3422009-4cd3-49e6-bc8a-b0581fed6612"
 ```
 

@@ -1,3 +1,6 @@
+#### [v2.6.0] 2025-10-28
+##### Changed
+- Add CVSSv4 support to schema (!43296)
 #### [v2.5.0] 2025-03-19
 ##### Changed
 - Allow `+` in `fixed_versions` and `versions.number` (!36490)
