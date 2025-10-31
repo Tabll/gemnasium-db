@@ -1,0 +1,25 @@
+---
+identifier: "MAL-2025-49075"
+identifiers:
+- "MAL-2025-49075"
+- "GHSA-2rqv-vr76-44pf"
+package_slug: "npm/xo-ui-components"
+title: "Malicious code in xo-ui-components (npm)"
+description: "This malicious package was published during the PhantomRaven NPM campaign.
+  The malicious payload steals tokens and credentials."
+date: "2025-10-30"
+pubdate: "2025-10-29"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/MAL-2025-49075"
+- "https://github.com/advisories/GHSA-2rqv-vr76-44pf"
+- "https://www.koi.ai/blog/phantomraven-npm-malware-hidden-in-invisible-dependencies"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H"
+uuid: "932da38b-f9ba-463c-9e02-e87b5732715f"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

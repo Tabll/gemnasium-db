@@ -1,0 +1,25 @@
+---
+identifier: "MAL-2025-49034"
+identifiers:
+- "MAL-2025-49034"
+- "GHSA-g8jj-5wpc-8v5m"
+package_slug: "npm/preferred-import"
+title: "Malicious code in preferred-import (npm)"
+description: "This malicious package was published during the PhantomRaven NPM campaign.
+  The malicious payload steals tokens and credentials."
+date: "2025-10-30"
+pubdate: "2025-10-29"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/MAL-2025-49034"
+- "https://github.com/advisories/GHSA-g8jj-5wpc-8v5m"
+- "https://www.koi.ai/blog/phantomraven-npm-malware-hidden-in-invisible-dependencies"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H"
+uuid: "b65ae0d6-8f1c-4c0d-a51b-7c85a7babcc9"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

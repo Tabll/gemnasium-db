@@ -1,0 +1,25 @@
+---
+identifier: "MAL-2025-49019"
+identifiers:
+- "MAL-2025-49019"
+- "GHSA-5296-4p82-5mqj"
+package_slug: "npm/lion-based-ui"
+title: "Malicious code in lion-based-ui (npm)"
+description: "This malicious package was published during the PhantomRaven NPM campaign.
+  The malicious payload steals tokens and credentials."
+date: "2025-10-30"
+pubdate: "2025-10-29"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/MAL-2025-49019"
+- "https://github.com/advisories/GHSA-5296-4p82-5mqj"
+- "https://www.koi.ai/blog/phantomraven-npm-malware-hidden-in-invisible-dependencies"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H"
+uuid: "3d1d3244-41da-4e43-bd47-ce1a698dd30a"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

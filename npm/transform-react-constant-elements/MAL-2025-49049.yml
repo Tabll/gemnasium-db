@@ -1,0 +1,25 @@
+---
+identifier: "MAL-2025-49049"
+identifiers:
+- "MAL-2025-49049"
+- "GHSA-3579-w2q2-h749"
+package_slug: "npm/transform-react-constant-elements"
+title: "Malicious code in transform-react-constant-elements (npm)"
+description: "This malicious package was published during the PhantomRaven NPM campaign.
+  The malicious payload steals tokens and credentials."
+date: "2025-10-30"
+pubdate: "2025-10-29"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/MAL-2025-49049"
+- "https://github.com/advisories/GHSA-3579-w2q2-h749"
+- "https://www.koi.ai/blog/phantomraven-npm-malware-hidden-in-invisible-dependencies"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H"
+uuid: "80ad67ae-b81f-48b5-9630-ddb4da8381ba"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

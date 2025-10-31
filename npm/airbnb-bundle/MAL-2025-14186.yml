@@ -1,0 +1,23 @@
+---
+identifier: "MAL-2025-14186"
+identifiers:
+- "MAL-2025-14186"
+package_slug: "npm/airbnb-bundle"
+title: "Malicious code in airbnb-bundle (npm)"
+description: "This malicious package was published during the PhantomRaven NPM campaign.
+  The malicious payload steals tokens and credentials."
+date: "2025-10-30"
+pubdate: "2025-08-14"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/MAL-2025-14186"
+- "https://www.koi.ai/blog/phantomraven-npm-malware-hidden-in-invisible-dependencies"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H"
+uuid: "d2ad56de-aa93-4729-b8b2-7ba12a7ac645"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

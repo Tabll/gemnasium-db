@@ -1,0 +1,25 @@
+---
+identifier: "MAL-2025-49009"
+identifiers:
+- "MAL-2025-49009"
+- "GHSA-638v-w94x-xhg7"
+package_slug: "npm/important-stuff"
+title: "Malicious code in important-stuff (npm)"
+description: "This malicious package was published during the PhantomRaven NPM campaign.
+  The malicious payload steals tokens and credentials."
+date: "2025-10-30"
+pubdate: "2025-10-29"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/MAL-2025-49009"
+- "https://github.com/advisories/GHSA-638v-w94x-xhg7"
+- "https://www.koi.ai/blog/phantomraven-npm-malware-hidden-in-invisible-dependencies"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H"
+uuid: "555cd326-4d4b-4e00-be10-bf6e2ef0d5ad"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

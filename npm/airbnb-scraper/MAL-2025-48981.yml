@@ -1,0 +1,25 @@
+---
+identifier: "MAL-2025-48981"
+identifiers:
+- "MAL-2025-48981"
+- "GHSA-wmjf-39cv-5j44"
+package_slug: "npm/airbnb-scraper"
+title: "Malicious code in airbnb-scraper (npm)"
+description: "This malicious package was published during the PhantomRaven NPM campaign.
+  The malicious payload steals tokens and credentials."
+date: "2025-10-30"
+pubdate: "2025-10-29"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/MAL-2025-48981"
+- "https://github.com/advisories/GHSA-wmjf-39cv-5j44"
+- "https://www.koi.ai/blog/phantomraven-npm-malware-hidden-in-invisible-dependencies"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H"
+uuid: "a15b8f5e-5342-4121-b973-d7fd0e1bb4b2"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

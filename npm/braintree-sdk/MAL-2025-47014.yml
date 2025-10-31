@@ -1,0 +1,25 @@
+---
+identifier: "MAL-2025-47014"
+identifiers:
+- "MAL-2025-47014"
+- "GHSA-p274-px2x-98ff"
+package_slug: "npm/braintree-sdk"
+title: "Malicious code in braintree-sdk (npm)"
+description: "This malicious package was published during the PhantomRaven NPM campaign.
+  The malicious payload steals tokens and credentials."
+date: "2025-10-30"
+pubdate: "2025-09-10"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/MAL-2025-47014"
+- "https://github.com/advisories/GHSA-p274-px2x-98ff"
+- "https://www.koi.ai/blog/phantomraven-npm-malware-hidden-in-invisible-dependencies"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H"
+uuid: "e55d6f12-bfeb-4dd0-b130-4e1f31ee8d2d"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

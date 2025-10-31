@@ -1,0 +1,25 @@
+---
+identifier: "MAL-2025-49016"
+identifiers:
+- "MAL-2025-49016"
+- "GHSA-q7g2-vx75-68xg"
+package_slug: "npm/jsx-a11y"
+title: "Malicious code in jsx-a11y (npm)"
+description: "This malicious package was published during the PhantomRaven NPM campaign.
+  The malicious payload steals tokens and credentials."
+date: "2025-10-30"
+pubdate: "2025-10-29"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/MAL-2025-49016"
+- "https://github.com/advisories/GHSA-q7g2-vx75-68xg"
+- "https://www.koi.ai/blog/phantomraven-npm-malware-hidden-in-invisible-dependencies"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H"
+uuid: "aaa20688-a56a-445b-b5cf-5566a02761d9"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,25 @@
+---
+identifier: "MAL-2025-49008"
+identifiers:
+- "MAL-2025-49008"
+- "GHSA-5gxj-f952-j4hc"
+package_slug: "npm/google-cloud-functions-framework"
+title: "Malicious code in google-cloud-functions-framework (npm)"
+description: "This malicious package was published during the PhantomRaven NPM campaign.
+  The malicious payload steals tokens and credentials."
+date: "2025-10-30"
+pubdate: "2025-10-29"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/MAL-2025-49008"
+- "https://github.com/advisories/GHSA-5gxj-f952-j4hc"
+- "https://www.koi.ai/blog/phantomraven-npm-malware-hidden-in-invisible-dependencies"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H"
+uuid: "a67ae86a-3de3-4ff8-a5a1-ebd93b64b7e8"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,25 @@
+---
+identifier: "MAL-2025-48776"
+identifiers:
+- "MAL-2025-48776"
+- "GHSA-cc3m-3qxq-6pmf"
+package_slug: "npm/op-cli-installer"
+title: "Malicious code in op-cli-installer (npm)"
+description: "This malicious package was published during the PhantomRaven NPM campaign.
+  The malicious payload steals tokens and credentials."
+date: "2025-10-30"
+pubdate: "2025-10-27"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/MAL-2025-48776"
+- "https://github.com/advisories/GHSA-cc3m-3qxq-6pmf"
+- "https://www.koi.ai/blog/phantomraven-npm-malware-hidden-in-invisible-dependencies"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H"
+uuid: "1b63ef4c-6231-41a7-8e48-c77eabfd109d"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

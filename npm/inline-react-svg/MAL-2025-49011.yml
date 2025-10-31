@@ -1,0 +1,25 @@
+---
+identifier: "MAL-2025-49011"
+identifiers:
+- "MAL-2025-49011"
+- "GHSA-jjj5-v47p-89rm"
+package_slug: "npm/inline-react-svg"
+title: "Malicious code in inline-react-svg (npm)"
+description: "This malicious package was published during the PhantomRaven NPM campaign.
+  The malicious payload steals tokens and credentials."
+date: "2025-10-30"
+pubdate: "2025-10-29"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/MAL-2025-49011"
+- "https://github.com/advisories/GHSA-jjj5-v47p-89rm"
+- "https://www.koi.ai/blog/phantomraven-npm-malware-hidden-in-invisible-dependencies"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H"
+uuid: "3a5c901f-b661-4cb7-a8e7-76178f89b315"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

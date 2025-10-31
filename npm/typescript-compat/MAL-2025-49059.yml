@@ -1,0 +1,25 @@
+---
+identifier: "MAL-2025-49059"
+identifiers:
+- "MAL-2025-49059"
+- "GHSA-28rf-vfhw-hxgq"
+package_slug: "npm/typescript-compat"
+title: "Malicious code in typescript-compat (npm)"
+description: "This malicious package was published during the PhantomRaven NPM campaign.
+  The malicious payload steals tokens and credentials."
+date: "2025-10-30"
+pubdate: "2025-10-29"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/MAL-2025-49059"
+- "https://github.com/advisories/GHSA-28rf-vfhw-hxgq"
+- "https://www.koi.ai/blog/phantomraven-npm-malware-hidden-in-invisible-dependencies"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H"
+uuid: "ca1ceebb-7af6-458a-ac72-2aa4de3f9755"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,25 @@
+---
+identifier: "MAL-2025-48979"
+identifiers:
+- "MAL-2025-48979"
+- "GHSA-rpm9-84m3-4j2j"
+package_slug: "npm/airbnb-calendar"
+title: "Malicious code in airbnb-calendar (npm)"
+description: "This malicious package was published during the PhantomRaven NPM campaign.
+  The malicious payload steals tokens and credentials."
+date: "2025-10-30"
+pubdate: "2025-10-29"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/MAL-2025-48979"
+- "https://github.com/advisories/GHSA-rpm9-84m3-4j2j"
+- "https://www.koi.ai/blog/phantomraven-npm-malware-hidden-in-invisible-dependencies"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H"
+uuid: "55d55112-b2a0-4140-8230-67ffbf7ec8dc"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

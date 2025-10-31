@@ -1,0 +1,25 @@
+---
+identifier: "MAL-2025-49014"
+identifiers:
+- "MAL-2025-49014"
+- "GHSA-v88p-3w5x-p4g9"
+package_slug: "npm/jfrog-npm-actions-example"
+title: "Malicious code in jfrog-npm-actions-example (npm)"
+description: "This malicious package was published during the PhantomRaven NPM campaign.
+  The malicious payload steals tokens and credentials."
+date: "2025-10-30"
+pubdate: "2025-10-29"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/MAL-2025-49014"
+- "https://github.com/advisories/GHSA-v88p-3w5x-p4g9"
+- "https://www.koi.ai/blog/phantomraven-npm-malware-hidden-in-invisible-dependencies"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H"
+uuid: "49b3b178-4cc4-483b-ab16-2bad81e210d5"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

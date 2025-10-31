@@ -1,0 +1,25 @@
+---
+identifier: "MAL-2025-48976"
+identifiers:
+- "MAL-2025-48976"
+- "GHSA-3pvv-hpr6-r58v"
+package_slug: "npm/airbnb-base-hf"
+title: "Malicious code in airbnb-base-hf (npm)"
+description: "This malicious package was published during the PhantomRaven NPM campaign.
+  The malicious payload steals tokens and credentials."
+date: "2025-10-30"
+pubdate: "2025-10-29"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/MAL-2025-48976"
+- "https://github.com/advisories/GHSA-3pvv-hpr6-r58v"
+- "https://www.koi.ai/blog/phantomraven-npm-malware-hidden-in-invisible-dependencies"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H"
+uuid: "8e8416e4-87c4-4c43-b63c-30d9aa667dd6"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

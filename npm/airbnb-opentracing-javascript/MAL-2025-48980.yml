@@ -1,0 +1,25 @@
+---
+identifier: "MAL-2025-48980"
+identifiers:
+- "MAL-2025-48980"
+- "GHSA-whq5-735w-92q6"
+package_slug: "npm/airbnb-opentracing-javascript"
+title: "Malicious code in airbnb-opentracing-javascript (npm)"
+description: "This malicious package was published during the PhantomRaven NPM campaign.
+  The malicious payload steals tokens and credentials."
+date: "2025-10-30"
+pubdate: "2025-10-29"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/MAL-2025-48980"
+- "https://github.com/advisories/GHSA-whq5-735w-92q6"
+- "https://www.koi.ai/blog/phantomraven-npm-malware-hidden-in-invisible-dependencies"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H"
+uuid: "29365c73-ffa6-4ff0-9786-99c8be82ad7a"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

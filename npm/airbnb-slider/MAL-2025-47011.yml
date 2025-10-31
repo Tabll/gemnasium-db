@@ -1,0 +1,25 @@
+---
+identifier: "MAL-2025-47011"
+identifiers:
+- "MAL-2025-47011"
+- "GHSA-3777-3hj2-hc7c"
+package_slug: "npm/airbnb-slider"
+title: "Malicious code in airbnb-slider (npm)"
+description: "This malicious package was published during the PhantomRaven NPM campaign.
+  The malicious payload steals tokens and credentials."
+date: "2025-10-30"
+pubdate: "2025-09-10"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/MAL-2025-47011"
+- "https://github.com/advisories/GHSA-3777-3hj2-hc7c"
+- "https://www.koi.ai/blog/phantomraven-npm-malware-hidden-in-invisible-dependencies"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H"
+uuid: "ea5e6264-f222-4f17-bd20-5f0e38410eb5"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

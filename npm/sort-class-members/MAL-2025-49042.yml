@@ -1,0 +1,25 @@
+---
+identifier: "MAL-2025-49042"
+identifiers:
+- "MAL-2025-49042"
+- "GHSA-j8p3-m23m-2q7j"
+package_slug: "npm/sort-class-members"
+title: "Malicious code in sort-class-members (npm)"
+description: "This malicious package was published during the PhantomRaven NPM campaign.
+  The malicious payload steals tokens and credentials."
+date: "2025-10-30"
+pubdate: "2025-10-29"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/MAL-2025-49042"
+- "https://github.com/advisories/GHSA-j8p3-m23m-2q7j"
+- "https://www.koi.ai/blog/phantomraven-npm-malware-hidden-in-invisible-dependencies"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H"
+uuid: "ba2016af-5610-441f-8b3d-cf58ed20bcda"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

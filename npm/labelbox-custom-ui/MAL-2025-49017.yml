@@ -1,0 +1,25 @@
+---
+identifier: "MAL-2025-49017"
+identifiers:
+- "MAL-2025-49017"
+- "GHSA-wpvj-39jh-ph7m"
+package_slug: "npm/labelbox-custom-ui"
+title: "Malicious code in labelbox-custom-ui (npm)"
+description: "This malicious package was published during the PhantomRaven NPM campaign.
+  The malicious payload steals tokens and credentials."
+date: "2025-10-30"
+pubdate: "2025-10-29"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/MAL-2025-49017"
+- "https://github.com/advisories/GHSA-wpvj-39jh-ph7m"
+- "https://www.koi.ai/blog/phantomraven-npm-malware-hidden-in-invisible-dependencies"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H"
+uuid: "a4057011-6b6a-4b10-88c2-d0990fa6721b"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

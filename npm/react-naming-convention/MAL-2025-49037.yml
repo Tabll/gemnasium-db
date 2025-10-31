@@ -1,0 +1,25 @@
+---
+identifier: "MAL-2025-49037"
+identifiers:
+- "MAL-2025-49037"
+- "GHSA-85c8-26hr-q3g6"
+package_slug: "npm/react-naming-convention"
+title: "Malicious code in react-naming-convention (npm)"
+description: "This malicious package was published during the PhantomRaven NPM campaign.
+  The malicious payload steals tokens and credentials."
+date: "2025-10-30"
+pubdate: "2025-10-29"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/MAL-2025-49037"
+- "https://github.com/advisories/GHSA-85c8-26hr-q3g6"
+- "https://www.koi.ai/blog/phantomraven-npm-malware-hidden-in-invisible-dependencies"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H"
+uuid: "84ddaaa2-c25c-49dc-8fdd-d877d5bb5e88"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,25 @@
+---
+identifier: "MAL-2025-49032"
+identifiers:
+- "MAL-2025-49032"
+- "GHSA-5x82-wmhg-9282"
+package_slug: "npm/prefer-arrow"
+title: "Malicious code in prefer-arrow (npm)"
+description: "This malicious package was published during the PhantomRaven NPM campaign.
+  The malicious payload steals tokens and credentials."
+date: "2025-10-30"
+pubdate: "2025-10-29"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/MAL-2025-49032"
+- "https://github.com/advisories/GHSA-5x82-wmhg-9282"
+- "https://www.koi.ai/blog/phantomraven-npm-malware-hidden-in-invisible-dependencies"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H"
+uuid: "4a0220fb-2bc5-410a-8b50-b9ff3a6e763d"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,25 @@
+---
+identifier: "MAL-2025-48991"
+identifiers:
+- "MAL-2025-48991"
+- "GHSA-g957-chqm-7c32"
+package_slug: "npm/crowdstrike"
+title: "Malicious code in crowdstrike (npm)"
+description: "This malicious package was published during the PhantomRaven NPM campaign.
+  The malicious payload steals tokens and credentials."
+date: "2025-10-30"
+pubdate: "2025-10-29"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/MAL-2025-48991"
+- "https://github.com/advisories/GHSA-g957-chqm-7c32"
+- "https://www.koi.ai/blog/phantomraven-npm-malware-hidden-in-invisible-dependencies"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H"
+uuid: "78d521bd-ca89-454d-b3b4-4328ea305f5b"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

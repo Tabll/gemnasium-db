@@ -1,0 +1,23 @@
+---
+identifier: "MAL-2025-42086"
+identifiers:
+- "MAL-2025-42086"
+package_slug: "npm/some-other-config-you-use"
+title: "Malicious code in some-other-config-you-use (npm)"
+description: "This malicious package was published during the PhantomRaven NPM campaign.
+  The malicious payload steals tokens and credentials."
+date: "2025-10-30"
+pubdate: "2025-08-29"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/MAL-2025-42086"
+- "https://www.koi.ai/blog/phantomraven-npm-malware-hidden-in-invisible-dependencies"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H"
+uuid: "918d8601-c2a7-4244-aae7-bdad6143d863"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

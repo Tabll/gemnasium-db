@@ -1,0 +1,25 @@
+---
+identifier: "MAL-2025-48985"
+identifiers:
+- "MAL-2025-48985"
+- "GHSA-5p43-7mp8-r767"
+package_slug: "npm/artifactregistry-login"
+title: "Malicious code in artifactregistry-login (npm)"
+description: "This malicious package was published during the PhantomRaven NPM campaign.
+  The malicious payload steals tokens and credentials."
+date: "2025-10-30"
+pubdate: "2025-10-29"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/MAL-2025-48985"
+- "https://github.com/advisories/GHSA-5p43-7mp8-r767"
+- "https://www.koi.ai/blog/phantomraven-npm-malware-hidden-in-invisible-dependencies"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H"
+uuid: "d921cf35-cc24-4ca3-becf-62eb362b4edb"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

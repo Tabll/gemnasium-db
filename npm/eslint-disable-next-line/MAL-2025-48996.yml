@@ -1,0 +1,25 @@
+---
+identifier: "MAL-2025-48996"
+identifiers:
+- "MAL-2025-48996"
+- "GHSA-rggv-8xvv-qjg5"
+package_slug: "npm/eslint-disable-next-line"
+title: "Malicious code in eslint-disable-next-line (npm)"
+description: "This malicious package was published during the PhantomRaven NPM campaign.
+  The malicious payload steals tokens and credentials."
+date: "2025-10-30"
+pubdate: "2025-10-29"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/MAL-2025-48996"
+- "https://github.com/advisories/GHSA-rggv-8xvv-qjg5"
+- "https://www.koi.ai/blog/phantomraven-npm-malware-hidden-in-invisible-dependencies"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H"
+uuid: "3c51b20f-beae-4bae-9b69-b1cc330aa29e"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,25 @@
+---
+identifier: "MAL-2025-48995"
+identifiers:
+- "MAL-2025-48995"
+- "GHSA-8q39-fjr6-f9v2"
+package_slug: "npm/elemefe"
+title: "Malicious code in elemefe (npm)"
+description: "This malicious package was published during the PhantomRaven NPM campaign.
+  The malicious payload steals tokens and credentials."
+date: "2025-10-30"
+pubdate: "2025-10-29"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/MAL-2025-48995"
+- "https://github.com/advisories/GHSA-8q39-fjr6-f9v2"
+- "https://www.koi.ai/blog/phantomraven-npm-malware-hidden-in-invisible-dependencies"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H"
+uuid: "c4d2b796-2022-4bdc-8bc0-909b45c9653b"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,25 @@
+---
+identifier: "MAL-2025-49033"
+identifiers:
+- "MAL-2025-49033"
+- "GHSA-724w-cf9r-m394"
+package_slug: "npm/prefer-object-spread"
+title: "Malicious code in prefer-object-spread (npm)"
+description: "This malicious package was published during the PhantomRaven NPM campaign.
+  The malicious payload steals tokens and credentials."
+date: "2025-10-30"
+pubdate: "2025-10-29"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/MAL-2025-49033"
+- "https://github.com/advisories/GHSA-724w-cf9r-m394"
+- "https://www.koi.ai/blog/phantomraven-npm-malware-hidden-in-invisible-dependencies"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H"
+uuid: "abe1889e-5bec-4dad-a973-bc3d4c15f45a"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

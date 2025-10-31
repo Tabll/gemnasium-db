@@ -1,0 +1,23 @@
+---
+identifier: "MAL-2025-47583"
+identifiers:
+- "MAL-2025-47583"
+package_slug: "npm/discord-open-source"
+title: "Malicious code in discord-open-source (npm)"
+description: "This malicious package was published during the PhantomRaven NPM campaign.
+  The malicious payload steals tokens and credentials."
+date: "2025-10-30"
+pubdate: "2025-09-25"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/MAL-2025-47583"
+- "https://www.koi.ai/blog/phantomraven-npm-malware-hidden-in-invisible-dependencies"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H"
+uuid: "1a54a793-bf48-4809-b5e3-330b57b8ad31"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"
