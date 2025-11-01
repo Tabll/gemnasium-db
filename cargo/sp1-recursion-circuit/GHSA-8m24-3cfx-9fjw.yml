@@ -16,7 +16,7 @@ description: "During proof generation, the prover must observe all values sent t
   attacks to carry out.\n\nThis issue was discovered during the audit of SP1 V3.0.0
   and was officially fixed on October 17th. Out of abundance of caution, we will be
   deprecating all versions of SP1 before 3.0.0."
-date: "2024-11-08"
+date: "2025-10-31"
 pubdate: "2024-11-08"
 affected_range: "<3.0.0"
 fixed_versions:
@@ -29,6 +29,8 @@ urls:
 - "https://github.com/succinctlabs/sp1/security/advisories/GHSA-8m24-3cfx-9fjw"
 - "https://github.com/succinctlabs/sp1/commit/79884ffb1a2d10bfd2c272f864033577a052468a"
 - "https://github.com/succinctlabs/sp1"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
 uuid: "49f5b2c0-275b-4e27-8a5e-7de86dc48c6b"
 cwe_ids:
 - "CWE-937"

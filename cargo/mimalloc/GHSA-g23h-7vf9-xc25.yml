@@ -10,7 +10,7 @@ description: "This crate depended on a promise regarding alignments made by the 
   it break this promise.\nThis caused this crate to return memory with an incorrect
   alignment for some allocations, particularly those with large alignments.\nThe flaw
   was fixed by always using the aligned allocation functions."
-date: "2024-11-12"
+date: "2025-10-31"
 pubdate: "2024-11-12"
 affected_range: "<0.1.39"
 fixed_versions:
@@ -23,6 +23,8 @@ urls:
 - "https://github.com/purpleprotocol/mimalloc_rust/issues/87"
 - "https://github.com/purpleprotocol/mimalloc_rust"
 - "https://rustsec.org/advisories/RUSTSEC-2022-0094.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
 uuid: "28dba8cf-eb21-4065-b23d-14cb70033fa2"
 cwe_ids:
 - "CWE-937"

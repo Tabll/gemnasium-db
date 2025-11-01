@@ -9,7 +9,7 @@ description: "`fast-float` contains multiple soundness issues:\n\n1. [Undefined 
   which has been merged but no package [pubished](https://github.com/aldanor/fast-float-rust/issues/35).\n1.
   [Many functions marked as safe with non-local safety guarantees](https://github.com/aldanor/fast-float-rust/issues/37)\n\nThe
   library is also unmaintained."
-date: "2024-11-12"
+date: "2025-10-31"
 pubdate: "2024-11-12"
 affected_range: "<=0.2.0"
 fixed_versions: []
@@ -23,6 +23,8 @@ urls:
 - "https://github.com/aldanor/fast-float-rust/issues/37"
 - "https://github.com/aldanor/fast-float-rust"
 - "https://rustsec.org/advisories/RUSTSEC-2024-0379.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
 uuid: "69ee0f99-4efb-48a5-951b-f738956824ec"
 cwe_ids:
 - "CWE-937"

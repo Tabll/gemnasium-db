@@ -8,7 +8,7 @@ description: "The library breaks the safety assumptions when using unsafe API `s
   The pointer passed to `from_raw_parts_mut` is misaligned by casting `u8` to `u16`
   raw pointer directly, which is unsound. The bug is patched by using `align_offset`,
   which could make sure the memory address is aligned to 2 bytes for `u16`."
-date: "2024-12-23"
+date: "2025-10-31"
 pubdate: "2024-12-23"
 affected_range: "<0.11.2"
 fixed_versions:
@@ -24,6 +24,8 @@ urls:
 - "https://github.com/AFLplusplus/LibAFL/commit/f70a16a09a8096d3c50159dd8a912a75c2af157c"
 - "https://github.com/AFLplusplus/LibAFL"
 - "https://rustsec.org/advisories/RUSTSEC-2024-0424.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
 uuid: "3a8d6bd6-263c-4a49-8bc1-6a8b4e9ca076"
 cwe_ids:
 - "CWE-937"

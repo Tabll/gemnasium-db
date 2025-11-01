@@ -9,7 +9,7 @@ description: "A vulnerability was found in the WildFly management console. A use
   may perform cross-site scripting in the deployment system. An attacker (or insider)
   may execute a malicious payload which could trigger an undesired behavior against
   the server."
-date: "2024-12-23"
+date: "2025-10-31"
 pubdate: "2024-12-23"
 affected_range: "[,3.7.7.Final)"
 fixed_versions:
@@ -23,6 +23,8 @@ urls:
 - "https://github.com/hal/console"
 - "https://github.com/hal/console/releases/tag/v3.7.7"
 - "https://issues.redhat.com/browse/WFLY-19969"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N"
 uuid: "10af69af-d387-4e0f-b4d6-cd56d789916f"
 cwe_ids:
 - "CWE-1395"

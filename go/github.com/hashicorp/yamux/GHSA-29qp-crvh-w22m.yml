@@ -28,7 +28,7 @@ description: "## Withdrawn Advisory\nThis advisory has been withdrawn because fu
   BGP reconvergence, etc. To resolve the Denial of Service issue, you have to re-establish
   the connections, which will usually require a hard restart of the service on either
   end of the connection."
-date: "2025-02-06"
+date: "2025-10-31"
 pubdate: "2025-01-29"
 affected_range: ">=0.1.0 <=0.1.2"
 fixed_versions: []
@@ -42,6 +42,8 @@ urls:
 - "https://github.com/hashicorp/yamux/issues/142"
 - "https://github.com/hashicorp/yamux/pull/143"
 - "https://github.com/hashicorp/yamux"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
 uuid: "b2e0361a-de17-4548-8715-b93cb92cd18b"
 cwe_ids:
 - "CWE-770"

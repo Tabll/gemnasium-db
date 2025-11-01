@@ -11,7 +11,7 @@ description: "An invalid use of `MaybeUninit::uninit().assume_init()` in `simd-j
   memory access and panics in binaries compiled in release mode (aka simd-json-derive
   prior to version 0.12 has UB and optimizes into some nonsense)\n\nThe version `0.12.0`
   removes this section of code, avoiding the use of MaybeUninit alltogether."
-date: "2024-11-12"
+date: "2025-10-31"
 pubdate: "2024-11-12"
 affected_range: "<0.12.0"
 fixed_versions:
@@ -24,6 +24,8 @@ urls:
 - "https://github.com/simd-lite/simd-json-derive/issues/67"
 - "https://github.com/simd-lite/simd-json-derive"
 - "https://rustsec.org/advisories/RUSTSEC-2023-0087.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
 uuid: "2f75602f-3029-41c0-bdb8-2c1dcb24fb35"
 cwe_ids:
 - "CWE-937"

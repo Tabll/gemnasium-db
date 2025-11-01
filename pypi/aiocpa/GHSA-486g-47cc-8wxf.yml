@@ -8,7 +8,7 @@ description: "aiocpa is a user-facing library for generating color gradients of 
   Version 0.1.13 introduced obfuscated, malicious code targeting Crypto Pay users,
   forwarding client credentials to a remote Telegram bot. All versions have been removed
   from PyPI."
-date: "2024-11-25"
+date: "2025-10-31"
 pubdate: "2024-11-25"
 affected_range: ">=0.1.13,<=0.1.14"
 fixed_versions: []
@@ -20,6 +20,8 @@ urls:
 - "https://blog.pypi.org/posts/2024-11-25-aiocpa-attack-analysis"
 - "https://github.com/pypa/advisory-database/tree/main/vulns/aiocpa/PYSEC-2024-152.yaml"
 - "https://inspector.pypi.io/project/aiocpa/0.1.13/packages/ab/98/7343281068a2c39086d0b877219668a487508197f46e89b3f41046a4a8ba/aiocpa-0.1.13.tar.gz/aiocpa-0.1.13/cryptopay/utils/sync.py#line.44"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:A/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N"
 uuid: "ba0096c8-83f9-4297-bdc1-f49c11b50202"
 cwe_ids:
 - "CWE-937"

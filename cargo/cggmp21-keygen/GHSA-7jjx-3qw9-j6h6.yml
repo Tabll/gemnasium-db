@@ -7,7 +7,7 @@ title: "cggmp21-keygen has ambiguous challenge derivation"
 description: "Challenge derivation in non-interactive ZK proofs was ambiguous and
   that could lead to security vulnerability (however, it's unknown if it could be
   exploited)."
-date: "2024-11-12"
+date: "2025-10-31"
 pubdate: "2024-11-12"
 affected_range: "<0.3.0"
 fixed_versions:
@@ -20,6 +20,8 @@ urls:
 - "https://github.com/dfns/cggmp21/pull/103"
 - "https://github.com/dfns/cggmp21"
 - "https://rustsec.org/advisories/RUSTSEC-2024-0392.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
 uuid: "9438499e-3b03-4eb1-8055-3c60e9d826ce"
 cwe_ids:
 - "CWE-327"

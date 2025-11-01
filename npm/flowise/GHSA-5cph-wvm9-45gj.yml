@@ -16,7 +16,7 @@ description: "Flowise allows developers to inject configuration into the Chainfl
   via LLM proxying etc.\n\nThese issues are self-targeted and do not persist to other
   users but do leave the server and business exposed.\nAll issues are shown with the
   API but also work with the web embed."
-date: "2024-11-21"
+date: "2025-10-31"
 pubdate: "2024-11-21"
 affected_range: "<2.1.4"
 fixed_versions:
@@ -28,6 +28,8 @@ urls:
 - "https://github.com/advisories/GHSA-5cph-wvm9-45gj"
 - "https://github.com/FlowiseAI/Flowise/security/advisories/GHSA-5cph-wvm9-45gj"
 - "https://github.com/FlowiseAI/Flowise"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
 uuid: "2a5f4cdf-c4f2-4d99-bdc5-07268060bd9d"
 cwe_ids:
 - "CWE-15"
