@@ -9,7 +9,7 @@ description: "Name: ASA-2025-003: Groups module can halt chain when handling a m
   per [ACMv1.2](https://github.com/interchainio/security/blob/main/resources/CLASSIFICATION_MATRIX.md))\nAffected
   versions: <= v0.47.15, <= 0.50.11\nAffected users: Validators, Full nodes, Users
   on chains that utilize the groups module"
-date: "2025-02-20"
+date: "2025-10-31"
 pubdate: "2025-02-20"
 affected_range: "<0.47.16-ics-lsm||>=0.50.0-alpha.0 <0.50.12"
 fixed_versions:
@@ -27,6 +27,8 @@ urls:
 - "https://github.com/cosmos/cosmos-sdk"
 - "https://github.com/cosmos/cosmos-sdk/releases/tag/v0.47.16"
 - "https://github.com/cosmos/cosmos-sdk/releases/tag/v0.50.12"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
 uuid: "acaa3100-523a-4563-8ce5-fbcbb5380406"
 cwe_ids:
 - "CWE-369"

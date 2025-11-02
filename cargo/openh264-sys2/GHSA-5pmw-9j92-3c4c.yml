@@ -12,7 +12,7 @@ description: "OpenH264 recently reported a [heap overflow](https://github.com/ci
   words:\n- if you rely on our `source` feature only, >=0.6.6 should be safe,\n- if
   you rely on `libloading`, you must upgrade to 0.8.0 _and_ use their latest DLL >=2.6.0.\n\nUsers
   handling untrusted video files should update immediately."
-date: "2025-02-24"
+date: "2025-10-31"
 pubdate: "2025-02-24"
 affected_range: "<0.8.0"
 fixed_versions:
@@ -27,6 +27,8 @@ urls:
 - "https://github.com/ralfbiedert/openh264-rs/commit/3a822fff0b4c9a984622ca2b179fe8898ac54b14"
 - "https://github.com/ralfbiedert/openh264-rs"
 - "https://rustsec.org/advisories/RUSTSEC-2025-0008.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:A/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
 uuid: "4e16612e-9401-4044-bbd7-2909561279c8"
 cwe_ids:
 - "CWE-122"

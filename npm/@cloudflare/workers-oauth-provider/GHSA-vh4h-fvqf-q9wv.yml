@@ -15,7 +15,7 @@ description: "# Duplicate Advisory\nThis advisory has been withdrawn because it 
   attacks and was an optional extension in OAuth 2.0 which became required in the
   OAuth 2.1 draft. (Note that the MCP specification requires OAuth 2.1.). This bug
   completely bypasses PKCE protection."
-date: "2025-05-01"
+date: "2025-10-31"
 pubdate: "2025-05-01"
 affected_range: "<0.0.5"
 fixed_versions:
@@ -27,6 +27,8 @@ urls:
 - "https://github.com/advisories/GHSA-vh4h-fvqf-q9wv"
 - "https://nvd.nist.gov/vuln/detail/CVE-2025-4144"
 - "https://github.com/cloudflare/workers-oauth-provider/pull/27"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
 uuid: "06b20e1f-a774-4793-9c89-c2a865fefa4a"
 cwe_ids:
 - "CWE-287"

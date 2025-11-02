@@ -20,7 +20,7 @@ description: "SurrealDB offers http functions that can access external network e
   and patched during an code audit and penetration test of SurrealDB by cure53, the
   severity as defined within cure53's preliminary finding is Medium, matched by our
   CVSS v4 assessment."
-date: "2025-04-11"
+date: "2025-10-31"
 pubdate: "2025-04-11"
 affected_range: ">=2.2.0 <2.2.2||>=2.1.0 <2.1.5||<2.0.5"
 fixed_versions:
@@ -37,6 +37,8 @@ urls:
 - "https://github.com/surrealdb/surrealdb/security/advisories/GHSA-5q9x-554g-9jgg"
 - "https://github.com/surrealdb/surrealdb/pull/5597"
 - "https://github.com/surrealdb/surrealdb"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:N/VI:L/VA:L/SC:H/SI:H/SA:H"
 uuid: "c1cedf5d-f296-4235-b75a-62aa1c0b9982"
 cwe_ids:
 - "CWE-918"

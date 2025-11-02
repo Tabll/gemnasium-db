@@ -11,7 +11,7 @@ description: "# Duplicate Advisory\nThis advisory has been withdrawn because it 
   malicious .keras archive. By altering the config.json file within the archive, an
   attacker can specify arbitrary Python modules and functions, along with their arguments,
   to be loaded and executed during model loading."
-date: "2025-03-11"
+date: "2025-10-31"
 pubdate: "2025-03-11"
 affected_range: "<3.9.0"
 fixed_versions:
@@ -26,6 +26,8 @@ urls:
 - "https://github.com/keras-team/keras/commit/e67ac8ffd0c883bec68eb65bb52340c7f9d3a903"
 - "https://github.com/keras-team/keras"
 - "https://github.com/keras-team/keras/releases/tag/v3.9.0"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:L/AC:L/AT:P/PR:L/UI:A/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H"
 uuid: "52f4cec6-1a6e-411a-aaee-c23fe73ec83f"
 cwe_ids:
 - "CWE-94"

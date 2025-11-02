@@ -11,7 +11,7 @@ description: "Setting lower EVM call gas allows users to partially execute preco
   rewards to 0. The vulnerability could also be used to cause indeterministic execution
   by failing at other points in the code, halting validators.\n\nAny evmOS or Cosmos
   EVM chain using precompiles is affected."
-date: "2025-05-14"
+date: "2025-10-31"
 pubdate: "2025-05-14"
 affected_range: "=0.1.0"
 fixed_versions: []
@@ -24,6 +24,8 @@ urls:
 - "https://github.com/cosmos/evm/commit/0fff8c144b24effbcb3addd666150ba5989d631c"
 - "https://drive.google.com/file/d/1LfC0WSrQOqwTOW3qfaE6t8Jqf1PLVtS_"
 - "https://github.com/cosmos/evm"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:L"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:H/VA:L/SC:N/SI:N/SA:N"
 uuid: "da9a0efc-238f-4f03-95cd-8e0892263f58"
 cwe_ids:
 - "CWE-94"

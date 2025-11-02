@@ -9,7 +9,7 @@ description: "Name: ISA-2025-002: x/group can halt when erroring in EndBlocker\n
   versions: <= v0.47.16, <= 0.50.12\nAffected users: Validators, Full nodes, Users
   on chains that utilize the groups module\nCosmos SDK chains in unpatched releases
   that use the `x/group` module are affected."
-date: "2025-08-20"
+date: "2025-10-31"
 pubdate: "2025-03-12"
 affected_range: ">=0.50.0-alpha.0 <0.50.13||<0.47.17"
 fixed_versions:
@@ -25,6 +25,8 @@ urls:
 - "https://github.com/cosmos/cosmos-sdk/security/advisories/GHSA-47ww-ff84-4jrg"
 - "https://github.com/cosmos/cosmos-sdk/commit/cbd69fb1f4fac418c1f8c6253f5f91fb1263776a"
 - "https://github.com/cosmos/cosmos-sdk"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
 uuid: "edbf56c9-1bc4-4189-9c4c-13ea113b79ff"
 cwe_ids:
 - "CWE-755"

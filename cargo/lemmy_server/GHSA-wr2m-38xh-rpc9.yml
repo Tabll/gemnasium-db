@@ -11,7 +11,7 @@ description: "An improper uploaded media ownership check can result in inadverte
   also applies to purged communities, in which case all media posted in that community
   will get deleted without proper ownership check.\nThis is limited to media with
   an `image/*` content-type returned by pict-rs."
-date: "2025-04-08"
+date: "2025-10-31"
 pubdate: "2025-04-08"
 affected_range: ">=0.17.0 <0.19.11"
 fixed_versions:
@@ -26,6 +26,8 @@ urls:
 - "https://github.com/LemmyNet/lemmy/pull/3927"
 - "https://github.com/LemmyNet/lemmy/pull/5566"
 - "https://github.com/LemmyNet/lemmy"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
 uuid: "a55c270e-3361-4365-a2ad-dd3318079142"
 cwe_ids:
 - "CWE-708"

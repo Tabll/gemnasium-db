@@ -11,7 +11,7 @@ description: "- Information that is restricted from viewing in the search result
   name) will be displayed with a link.\n- Target viewing restriction function\n- Frame
   publishing function (private, limited publishing)\n- IP Restriction Page\n- Password
   setting page"
-date: "2025-02-07"
+date: "2025-10-31"
 pubdate: "2025-02-07"
 affected_range: "<1.8.4"
 fixed_versions:
@@ -23,6 +23,8 @@ urls:
 - "https://github.com/advisories/GHSA-2237-5r9w-vm8j"
 - "https://github.com/opensource-workshop/connect-cms/security/advisories/GHSA-2237-5r9w-vm8j"
 - "https://github.com/opensource-workshop/connect-cms"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N"
 uuid: "fbb87c28-c22b-4061-8f61-71c76bb7bbb8"
 cwe_ids:
 - "CWE-200"

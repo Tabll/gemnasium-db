@@ -13,7 +13,7 @@ description: "## Duplicate Advisory\nThis advisory has been withdrawn because it
   via `pip.main()`. Because pip is not a restricted global, the model, when scanned
   with picklescan, would pass security checks and appear to be safe, when it could
   instead prove to be problematic."
-date: "2025-03-03"
+date: "2025-10-31"
 pubdate: "2025-03-03"
 affected_range: "<=0.0.21"
 fixed_versions: []
@@ -26,6 +26,8 @@ urls:
 - "https://nvd.nist.gov/vuln/detail/CVE-2025-1716"
 - "https://github.com/mmaitre314/picklescan/commit/78ce704227c51f070c0c5fb4b466d92c62a7aa3d"
 - "https://sites.google.com/sonatype.com/vulnerabilities/cve-2025-1716"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
 uuid: "566d8d0e-bc5e-48c1-8f97-b5d7839df7f0"
 cwe_ids:
 - "CWE-184"

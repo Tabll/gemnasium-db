@@ -5,7 +5,7 @@ identifiers:
 package_slug: "packagist/leantime/leantime"
 title: "Leantime allows Stored Cross-Site Scripting (XSS)"
 description: "STORED XSS +OPEN REDIRECTION in SVG uploads\nVulnerable url:https://hack.leantime.io/projects/showProject/3"
-date: "2025-02-21"
+date: "2025-10-31"
 pubdate: "2025-02-21"
 affected_range: "<3.3"
 fixed_versions:
@@ -18,6 +18,8 @@ urls:
 - "https://github.com/Leantime/leantime/security/advisories/GHSA-mg4c-884j-pcq9"
 - "https://github.com/Leantime/leantime/commit/d8b1099b0629da64ad30a1c4daee104fadc6c227"
 - "https://github.com/Leantime/leantime"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:L/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:P/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N"
 uuid: "9ccefe68-8cca-4e52-a488-2030ac61897c"
 cwe_ids:
 - "CWE-79"

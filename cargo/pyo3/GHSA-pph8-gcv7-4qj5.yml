@@ -11,7 +11,7 @@ description: "`PyString::from_object` took `&str` arguments and forwarded them d
   a copy of the data including the overflow).\n\nIn PyO3 0.24.1 this function will
   now allocate a `CString` to guarantee a terminating nul bytes. PyO3 0.25 will likely
   offer an alternative API which takes `&CStr` arguments."
-date: "2025-04-02"
+date: "2025-10-31"
 pubdate: "2025-04-02"
 affected_range: ">=0.1.0 <0.24.1"
 fixed_versions:
@@ -25,6 +25,8 @@ urls:
 - "https://github.com/PyO3/pyo3/pull/5008"
 - "https://github.com/PyO3/pyo3"
 - "https://rustsec.org/advisories/RUSTSEC-2025-0020.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N"
 uuid: "a31ca3a7-400d-440d-903c-2d66c1cfb1d6"
 cwe_ids:
 - "CWE-125"

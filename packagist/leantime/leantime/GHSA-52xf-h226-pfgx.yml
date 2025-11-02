@@ -10,7 +10,7 @@ description: "The vulnerability in Leantime's \"overdue\" section allows attacke
   perform unauthorized actions. Improving input validation and output encoding in
   the file upload process can prevent this exploit. Accessing and enhancing the relevant
   source code modules is crucial for addressing this security flaw effectively."
-date: "2025-02-21"
+date: "2025-10-31"
 pubdate: "2025-02-21"
 affected_range: "<3.3"
 fixed_versions:
@@ -22,6 +22,8 @@ urls:
 - "https://github.com/advisories/GHSA-52xf-h226-pfgx"
 - "https://github.com/Leantime/leantime/security/advisories/GHSA-52xf-h226-pfgx"
 - "https://github.com/Leantime/leantime"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:L/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:P/VC:L/VI:H/VA:N/SC:N/SI:N/SA:N"
 uuid: "fd29dbe6-5784-4408-9c11-15b57ed52364"
 cwe_ids:
 - "CWE-79"

@@ -7,7 +7,7 @@ title: "Leantime allows Stored Cross-Site Scripting (XSS)"
 description: "Stored XSS, also known as persistent XSS, is the more damaging of the
   two. It occurs when a malicious script is injected directly into a vulnerable web
   application."
-date: "2025-02-21"
+date: "2025-10-31"
 pubdate: "2025-02-21"
 affected_range: "<=3.1.4"
 fixed_versions: []
@@ -19,6 +19,8 @@ urls:
 - "https://github.com/Leantime/leantime/security/advisories/GHSA-63cr-xg3f-8jvr"
 - "https://github.com/Leantime/leantime"
 - "https://youtu.be/kqKFgsOqstg"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:L/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:P/VC:L/VI:H/VA:N/SC:N/SI:N/SA:N"
 uuid: "10f34a47-632c-496c-87e4-c255f9ac275d"
 cwe_ids:
 - "CWE-79"

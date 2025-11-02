@@ -20,7 +20,7 @@ description: "Two denial of service vulnerabilities were found in ntpd-rs relate
   of ntpd-rs are recommended to update to the latest version. If an update is impossible,
   it is recommended to only add NTS sources to ntpd-rs that are trusted to not abuse
   this bug."
-date: "2025-02-28"
+date: "2025-10-31"
 pubdate: "2025-02-28"
 affected_range: "<1.5.0"
 fixed_versions:
@@ -34,6 +34,8 @@ urls:
 - "https://github.com/pendulum-project/ntpd-rs/commit/10a103b471dae25ac598140df0c195b6531bf716"
 - "https://github.com/pendulum-project/ntpd-rs/commit/37dd8d9a0faa03e7dfe3a4bf64953010f075c3e2"
 - "https://github.com/pendulum-project/ntpd-rs"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N"
 uuid: "13ea75d7-2222-4cad-bb53-2c01bc0e9cc9"
 cwe_ids:
 - "CWE-369"

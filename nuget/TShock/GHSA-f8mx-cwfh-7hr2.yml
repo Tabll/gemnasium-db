@@ -24,7 +24,7 @@ description: "This issue was reported to TShock by @ohayo, but was found by the 
   the server & even chat.\n\nOther clients will not be notified of their join/leave
   but will be able to see them on the player list.\nLeading to potential chat spam
   & \"spying\" on packets of players within the server."
-date: "2025-02-03"
+date: "2025-10-31"
 pubdate: "2025-02-03"
 affected_range: "[,5.2.2)"
 fixed_versions:
@@ -37,6 +37,8 @@ urls:
 - "https://github.com/Pryaxis/TShock/security/advisories/GHSA-f8mx-cwfh-7hr2"
 - "https://github.com/Pryaxis/TShock/commit/134f80f5b8eac8929aa10f518c00970700d5913d"
 - "https://github.com/Pryaxis/TShock"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N"
 uuid: "a5a2dd76-6fca-4096-a1e3-337f797dd8f8"
 cwe_ids:
 - "CWE-285"

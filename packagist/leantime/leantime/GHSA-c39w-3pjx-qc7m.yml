@@ -6,7 +6,7 @@ package_slug: "packagist/leantime/leantime"
 title: "Leantime allows Stored Cross-Site Scripting (XSS)"
 description: "Leantime allows stored cross-site scripting (XSS) in the API key name
   while generating the API key."
-date: "2025-02-21"
+date: "2025-10-31"
 pubdate: "2025-02-21"
 affected_range: "<3.3"
 fixed_versions:
@@ -18,6 +18,8 @@ urls:
 - "https://github.com/advisories/GHSA-c39w-3pjx-qc7m"
 - "https://github.com/Leantime/leantime/security/advisories/GHSA-c39w-3pjx-qc7m"
 - "https://github.com/Leantime/leantime"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N"
 uuid: "d462a2a0-c68c-4a62-a489-c041b1933dc0"
 cwe_ids:
 - "CWE-79"

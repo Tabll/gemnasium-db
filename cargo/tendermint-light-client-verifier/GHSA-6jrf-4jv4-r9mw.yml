@@ -8,7 +8,7 @@ title: "tendermint-rs's Light Client Verifier allows malicious validators to spo
 description: "Name: ISA-2025-003: Malicious validator can spoof votes from other validators\nComponent:
   tendermint-rs\nCriticality: High (Catastrophic Impact; Rare Likelihood per [ACMv1.2](https://github.com/interchainio/security/blob/main/resources/CLASSIFICATION_MATRIX.md))\nAffected
   versions: <= v0.40.2\nAffected users: Everyone"
-date: "2025-04-09"
+date: "2025-10-31"
 pubdate: "2025-04-09"
 affected_range: "<0.40.3"
 fixed_versions:
@@ -21,6 +21,8 @@ urls:
 - "https://github.com/informalsystems/tendermint-rs/security/advisories/GHSA-6jrf-4jv4-r9mw"
 - "https://github.com/informalsystems/tendermint-rs/commit/1aabcfe6a3c0678db22097543f7f7a662f0db34b"
 - "https://github.com/informalsystems/tendermint-rs"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N"
 uuid: "60d6f3e3-9e8d-46ae-9684-dc384d490327"
 cwe_ids:
 - "CWE-863"

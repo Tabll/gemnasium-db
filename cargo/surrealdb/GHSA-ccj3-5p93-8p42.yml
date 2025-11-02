@@ -17,7 +17,7 @@ description: "The SurrealDB command-line tool allows exporting databases through
   sanitized.\n\nThis issue was discovered and patched during an code audit and penetration
   test of SurrealDB by cure53, the severity defined within cure53's preliminary finding
   is Critical, matched by our CVSS v4 assessment."
-date: "2025-04-11"
+date: "2025-10-31"
 pubdate: "2025-04-11"
 affected_range: ">=2.2.0 <2.2.2||>=2.1.0 <2.1.5||<2.0.5"
 fixed_versions:
@@ -33,6 +33,8 @@ urls:
 - "https://github.com/advisories/GHSA-ccj3-5p93-8p42"
 - "https://github.com/surrealdb/surrealdb/security/advisories/GHSA-ccj3-5p93-8p42"
 - "https://github.com/surrealdb/surrealdb"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:P/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H"
 uuid: "6b0033fa-8197-4f9f-8490-c90c99a2487d"
 cwe_ids:
 - "CWE-77"

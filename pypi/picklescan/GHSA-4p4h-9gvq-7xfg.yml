@@ -10,7 +10,7 @@ description: "# Duplicate Advisory\nThis advisory has been withdrawn because it 
   references.\n\n# Original Description\n\nThe unsafe globals in Picklescan before
   0.0.25 do not include ssl. Consequently, ssl.get_server_certificate can exfiltrate
   data via DNS after deserialization."
-date: "2025-04-24"
+date: "2025-10-31"
 pubdate: "2025-04-24"
 affected_range: ">=0"
 fixed_versions: []
@@ -22,6 +22,8 @@ urls:
 - "https://nvd.nist.gov/vuln/detail/CVE-2025-46417"
 - "https://github.com/mmaitre314/picklescan/pull/40"
 - "https://github.com/advisories/GHSA-93mv-x874-956g"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N"
 uuid: "5d12d0de-d96c-46a8-9622-6e42e9e5e706"
 cwe_ids:
 - "CWE-184"

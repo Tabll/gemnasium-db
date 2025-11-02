@@ -81,6 +81,7 @@ contributions.
 | @greengeko | !26649, !26857, !26898, !27717, !27720 |
 | @hristiyan.ivanov | !26861, #274 |
 | @alexandre.laroche.exfo | !36257 |
+| @soierksu00 | !43444 |
 
 
 ## Directory structure

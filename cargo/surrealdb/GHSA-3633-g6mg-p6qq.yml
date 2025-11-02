@@ -12,7 +12,7 @@ description: "An authenticated user can craft a query using the `string::replace
   the SurrealDB server.\n\nThis issue was discovered and patched during an code audit
   and penetration test of SurrealDB by cure53. Using CVSSv4 definitions, the severity
   is High."
-date: "2025-04-11"
+date: "2025-10-31"
 pubdate: "2025-04-11"
 affected_range: ">=2.2.0 <2.2.2||>=2.1.0 <2.1.5||<2.0.5"
 fixed_versions:
@@ -30,6 +30,8 @@ urls:
 - "https://github.com/surrealdb/surrealdb/pull/5619"
 - "https://github.com/surrealdb/surrealdb/pull/5638"
 - "https://github.com/surrealdb/surrealdb"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
 uuid: "0501560d-81f9-4fc1-b5bf-08e4403aaaef"
 cwe_ids:
 - "CWE-789"

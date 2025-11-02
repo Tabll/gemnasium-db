@@ -6,7 +6,7 @@ package_slug: "packagist/leantime/leantime"
 title: "Leantime allows Cross-Site Scripting (XSS)"
 description: "There is a cross-site scripting vulnerability on To-Do that affects
   a title field of a To-Do."
-date: "2025-02-21"
+date: "2025-10-31"
 pubdate: "2025-02-21"
 affected_range: "<3.3"
 fixed_versions:
@@ -18,6 +18,8 @@ urls:
 - "https://github.com/advisories/GHSA-f679-254h-qhvj"
 - "https://github.com/Leantime/leantime/security/advisories/GHSA-f679-254h-qhvj"
 - "https://github.com/Leantime/leantime"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:P/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
 uuid: "6500b82f-7770-4952-801d-4284c46a9cc4"
 cwe_ids:
 - "CWE-79"

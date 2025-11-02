@@ -16,7 +16,7 @@ description: "The LocalS3 project contains an XML External Entity (XXE) Injectio
   exposing sensitive files from the server.\n\nThis type of vulnerability can be exploited
   to read sensitive files, perform server-side request forgery (SSRF), or potentially
   achieve denial of service through various XXE attack vectors."
-date: "2025-03-10"
+date: "2025-10-31"
 pubdate: "2025-03-10"
 affected_range: "[,1.21)"
 fixed_versions:
@@ -29,6 +29,8 @@ urls:
 - "https://github.com/Robothy/local-s3/security/advisories/GHSA-2466-4485-4pxj"
 - "https://github.com/Robothy/local-s3/commit/d6ed756ceb30c1eb9d4263321ac683d734f8836f"
 - "https://github.com/Robothy/local-s3"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N"
 uuid: "c236a0b7-f26f-4a94-9f47-6770a006b209"
 cwe_ids:
 - "CWE-611"

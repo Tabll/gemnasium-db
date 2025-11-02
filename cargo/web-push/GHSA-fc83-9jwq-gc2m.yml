@@ -14,7 +14,7 @@ description: "Prior to version 0.10.3, the built-in clients of the `web-push` cr
   limits the amount of data it will read from the endpoint, and returns an error if
   the endpoint sends too much data.\n\nAs before, it is recommended that services
   add a timeout for each request to Web Push endpoints."
-date: "2025-03-24"
+date: "2025-10-31"
 pubdate: "2025-03-24"
 affected_range: "<0.10.4"
 fixed_versions:
@@ -27,6 +27,8 @@ urls:
 - "https://github.com/pimeys/rust-web-push/pull/68"
 - "https://github.com/pimeys/rust-web-push"
 - "https://rustsec.org/advisories/RUSTSEC-2025-0015.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N"
 uuid: "3846f825-2742-4f95-96cd-8b59551e8f83"
 cwe_ids:
 - "CWE-770"

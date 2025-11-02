@@ -11,7 +11,7 @@ description: "On March 6, 2025, a Horcrux user (01node) experienced a double-sig
   was introduced in July 2023 as part of PR [\\#169](https://github.com/strangelove-ventures/horcrux/pull/169)
   and affects all Horcrux versions from v3.1.0 through v3.3.1. A fix has been developed
   and is being deployed immediately."
-date: "2025-03-07"
+date: "2025-10-31"
 pubdate: "2025-03-07"
 affected_range: ">=3.1.0 <3.3.2"
 fixed_versions:
@@ -26,6 +26,8 @@ urls:
 - "https://github.com/strangelove-ventures/horcrux/commit/fb49be9baed30942b81b42da2b4f7040a2a83c02"
 - "https://github.com/strangelove-ventures/horcrux"
 - "https://github.com/strangelove-ventures/horcrux/releases/tag/v3.3.2"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N"
 uuid: "00634c9f-80f7-4ea5-8b19-1380c66a6612"
 cwe_ids:
 - "CWE-362"

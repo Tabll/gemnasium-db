@@ -9,7 +9,7 @@ description: "Name: ASA-2025-004: Non-deterministic JSON Unmarshalling of IBC Ac
   Impact; Almost Certain Likelihood per [ACMv1.2](https://github.com/interchainio/security/blob/main/resources/CLASSIFICATION_MATRIX.md))\nAffected
   versions: IBC-Go >= v7; Earlier IBC-Go versions may also be affected.\nAffected
   users: Validators, Full nodes, IBC Middleware authors"
-date: "2025-02-28"
+date: "2025-10-31"
 pubdate: "2025-02-28"
 affected_range: ">=0"
 fixed_versions: []
@@ -22,6 +22,8 @@ urls:
 - "https://github.com/cosmos/ibc-go/commit/59987d52d959dc5876ffd4f307c9b33a52a43748"
 - "https://github.com/cosmos/ibc-go/commit/9869b3c6f7eb05a935b1eb33611c5406f68438a5"
 - "https://github.com/cosmos/ibc-go"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
 uuid: "df6b8fd0-858a-49ef-bead-3d47dff3213d"
 cwe_ids:
 - "CWE-502"

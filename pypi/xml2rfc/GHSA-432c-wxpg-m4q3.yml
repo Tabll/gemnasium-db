@@ -20,7 +20,7 @@ description: "Version [3.12.0](https://github.com/ietf-tools/xml2rfc/blob/main/C
   source directory and below | Access source directory and below | Access source directory
   and below |\n\n[^1]: Access any file of the filesystem with the permissions of the
   user running `xml2rfc` can access."
-date: "2025-02-07"
+date: "2025-10-31"
 pubdate: "2025-02-07"
 affected_range: ">=3.12.0,<3.27.0"
 fixed_versions:
@@ -33,6 +33,8 @@ urls:
 - "https://github.com/ietf-tools/xml2rfc/security/advisories/GHSA-432c-wxpg-m4q3"
 - "https://github.com/ietf-tools/xml2rfc/commit/ec98f9cb4b9a8658222117df037dda473ca3f4e4"
 - "https://github.com/ietf-tools/xml2rfc"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N"
 uuid: "e4eeffa2-7bce-4915-911d-f4d2c5cb0d9a"
 cwe_ids:
 - "CWE-22"

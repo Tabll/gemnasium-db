@@ -14,7 +14,7 @@ description: "This security advisory resolves a vulnerability in the RichText fi
   the fix prevents it from extracting data both during editing and preview. However,
   if such an attack has already been published and the result is stored in the content,
   it is unfortunately not possible to detect and remove it by automatic means."
-date: "2025-04-10"
+date: "2025-10-31"
 pubdate: "2025-04-10"
 affected_range: ">=4.6.0-beta1 <4.6.19"
 fixed_versions:
@@ -28,6 +28,8 @@ urls:
 - "https://github.com/ibexa/fieldtype-richtext/commit/823cba6b5ee2e81d7d74e622ce42c1451e8e1337"
 - "https://developers.ibexa.co/security-advisories/ibexa-sa-2025-002-xxe-vulnerability-in-richtext"
 - "https://github.com/ibexa/fieldtype-richtext"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N"
 uuid: "095795ee-2102-4a7f-8e43-9649c5121026"
 cwe_ids:
 - "CWE-611"

@@ -8,7 +8,7 @@ description: "A malicious transaction may cause a crash in mempool validation.\n
   transaction with authorization section containing 256 public keys or more with valid
   matching signatures triggers an integer overflow in signature verification that
   causes a the node to panic."
-date: "2025-02-20"
+date: "2025-10-31"
 pubdate: "2025-02-20"
 affected_range: ">=1.0.0 <1.1.0||=1.0.0"
 fixed_versions:
@@ -20,6 +20,8 @@ urls:
 - "https://github.com/advisories/GHSA-82vg-5v4f-f9wq"
 - "https://github.com/anoma/namada/security/advisories/GHSA-82vg-5v4f-f9wq"
 - "https://github.com/anoma/namada"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:N/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:H"
 uuid: "66376dae-9f6f-40a0-8e93-ee89c939ccf1"
 cwe_ids:
 - "CWE-770"

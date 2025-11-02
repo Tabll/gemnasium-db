@@ -16,7 +16,7 @@ description: "The library used to extract archives (github.com/jaredallard/archi
   a repository source archive. However, one would need to mutate the archives provided
   by Github or perform some hackery with links, which may not be possible. Thus, \"medium\"
   is used out of an abundance of caution where I would've labeled this as \"low\"."
-date: "2025-03-29"
+date: "2025-10-31"
 pubdate: "2025-03-29"
 affected_range: "<2.3.0"
 fixed_versions:
@@ -31,6 +31,8 @@ urls:
 - "https://github.com/rgst-io/stencil/pull/255"
 - "https://github.com/rgst-io/stencil/commit/5482fcada0c6f77d903d13129bd656b7df80ac3a"
 - "https://github.com/rgst-io/stencil"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:L"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:N/VI:H/VA:L/SC:N/SI:N/SA:N"
 uuid: "1328162a-9c13-47bb-8a2f-d38d001c8219"
 cwe_ids:
 - "CWE-22"

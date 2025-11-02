@@ -6,7 +6,7 @@ package_slug: "cargo/scanner"
 title: "scanner has a Public API without sufficient bounds checking"
 description: "`Match::get()` and `Match::ptr()` lack sufficient bounds checks, leading
   to potential out of bounds reads."
-date: "2025-05-07"
+date: "2025-10-31"
 pubdate: "2025-05-07"
 affected_range: "<=0.1.0"
 fixed_versions: []
@@ -18,6 +18,8 @@ urls:
 - "https://github.com/pombredanne/scanner-rs/pull/1"
 - "https://github.com/pombredanne/scanner-rs"
 - "https://rustsec.org/advisories/RUSTSEC-2025-0033.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:L"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:N/VA:L/SC:N/SI:N/SA:N"
 uuid: "8d15c0fc-466c-4d3f-8176-d489ef4b4063"
 cwe_ids:
 - "CWE-125"

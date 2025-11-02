@@ -10,7 +10,7 @@ description: "Chains using affected versions of Packet Forward Middleware in the
   of service. This affects IBC transfers for any asset which is being transferred
   between another chain and its native chain.\n\nWe recommend upgrading as soon as
   possible.\n\n__THIS IS A STATE BREAKING CHANGE__"
-date: "2025-03-11"
+date: "2025-10-31"
 pubdate: "2025-02-12"
 affected_range: "<7.2.1"
 fixed_versions:
@@ -24,6 +24,8 @@ urls:
 - "https://github.com/cosmos/ibc-apps"
 - "https://github.com/cosmos/ibc-apps/releases/tag/middleware%2Fpacket-forward-middleware%2Fv7.2.1"
 - "https://github.com/cosmos/ibc-apps/releases/tag/middleware%2Fpacket-forward-middleware%2Fv8.1.1"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N"
 uuid: "0b1daded-69a9-48c7-84b4-f899328c452c"
 cwe_ids:
 - "CWE-937"

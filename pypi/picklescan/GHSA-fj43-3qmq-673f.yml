@@ -10,7 +10,7 @@ description: "An unsafe deserialization vulnerability in Python’s pickle modul
   in Numpy library that indrectly call some dangerous function like exec() to execute
   some python code as a parameter, which the attacker can import dangerous library
   inside like os library and execute arbitrary OS commands."
-date: "2025-04-07"
+date: "2025-10-31"
 pubdate: "2025-04-07"
 affected_range: "<0.0.25"
 fixed_versions:
@@ -22,6 +22,8 @@ urls:
 - "https://github.com/advisories/GHSA-fj43-3qmq-673f"
 - "https://github.com/mmaitre314/picklescan/security/advisories/GHSA-fj43-3qmq-673f"
 - "https://github.com/mmaitre314/picklescan"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
 uuid: "a1cb33c4-7d48-4471-bc71-75017647ecf3"
 cwe_ids:
 - "CWE-502"

@@ -9,7 +9,7 @@ description: "The broadcast channel internally calls `clone` on the stored value
   with values that are `Send` but not `Sync` can trigger unsoundness if the `clone`
   implementation makes use of the value being `!Sync`.\n\nThank you to Austin Bonander
   for finding and reporting this issue."
-date: "2025-04-07"
+date: "2025-10-31"
 pubdate: "2025-04-07"
 affected_range: ">=1.44.0 <1.44.2||>=0.2.5 <1.38.2||>=1.39.0 <1.43.1"
 fixed_versions:
@@ -27,6 +27,8 @@ urls:
 - "https://github.com/tokio-rs/tokio/pull/7232"
 - "https://github.com/tokio-rs/tokio"
 - "https://rustsec.org/advisories/RUSTSEC-2025-0023.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
 uuid: "24a1e0b5-4a04-4c10-9f21-cc502bd7aff0"
 cwe_ids:
 - "CWE-664"

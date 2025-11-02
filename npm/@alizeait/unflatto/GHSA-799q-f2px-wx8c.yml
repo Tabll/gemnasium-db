@@ -11,7 +11,7 @@ description: "## Duplicate Advisory\nThis advisory has been withdrawn because it
   to contain a prototype pollution via the method exports.unflatto at /dist/index.js.
   This vulnerability allows attackers to execute arbitrary code or cause a Denial
   of Service (DoS) via injecting arbitrary properties."
-date: "2025-04-01"
+date: "2025-10-31"
 pubdate: "2025-03-28"
 affected_range: "<=1.0.2"
 fixed_versions: []
@@ -24,6 +24,8 @@ urls:
 - "https://github.com/alizeait/unflatto/issues/32"
 - "https://gist.github.com/mestrtee/4c5dfb66bea377889c44dd6c8af28713"
 - "https://github.com/alizeait/unflatto"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:L/SI:L/SA:N"
 uuid: "fcf3d02d-fb89-4f1d-8e65-c537519192de"
 cwe_ids:
 - "CWE-1321"

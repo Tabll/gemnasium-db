@@ -10,7 +10,7 @@ description: "A cross-site scripting (XSS) vulnerability has been identified in 
   user-sensitive information. The code does not include any validation or sanitization
   of the $_GET[\"id\"] parameter. As a result, it directly incorporates the user-supplied
   value into the source path without any checks."
-date: "2025-02-21"
+date: "2025-10-31"
 pubdate: "2025-02-21"
 affected_range: "<3.3"
 fixed_versions:
@@ -22,6 +22,8 @@ urls:
 - "https://github.com/advisories/GHSA-v4q9-437p-mhpg"
 - "https://github.com/Leantime/leantime/security/advisories/GHSA-v4q9-437p-mhpg"
 - "https://github.com/Leantime/leantime"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:P/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N"
 uuid: "ab780187-8df8-4657-adfa-1627971f07e8"
 cwe_ids:
 - "CWE-79"

@@ -5,7 +5,7 @@ identifiers:
 package_slug: "npm/@account-kit/smart-contracts"
 title: "@account-kit/smart-contracts Allowlist Module Bypass Vulnerability"
 description: "Allowlist module contains a bypass vulnerability"
-date: "2025-04-29"
+date: "2025-10-31"
 pubdate: "2025-04-29"
 affected_range: ">=4.8.0 <4.28.2"
 fixed_versions:
@@ -18,6 +18,8 @@ urls:
 - "https://github.com/alchemyplatform/aa-sdk/security/advisories/GHSA-wfm2-rq5g-f8v5"
 - "https://github.com/alchemyplatform/aa-sdk/commit/b65bafdb9eec3a009df2cbabf09a35a76550e9d0"
 - "https://github.com/alchemyplatform/aa-sdk"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N"
 uuid: "77f9db6f-19e5-447d-9097-b8f9d2487122"
 cwe_ids:
 - "CWE-288"

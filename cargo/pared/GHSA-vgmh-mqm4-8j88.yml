@@ -14,7 +14,7 @@ description: "Affected versions of this crate didn't provide sufficient lifetime
   leading to a potential use after free.\n\nThe affected functions were\n- `pared::prc::Prc::from_rc`\n-
   `pared::prc::Prc::project`\n- `pared::prc::Prc::try_from_rc`\n- `pared::sync::Parc::from_arc`\n-
   `pared::sync::Parc::project`\n- `pared::sync::Parc::try_from_arc`"
-date: "2025-03-24"
+date: "2025-10-31"
 pubdate: "2025-03-24"
 affected_range: "<0.4.0"
 fixed_versions:
@@ -28,6 +28,8 @@ urls:
 - "https://github.com/radekvit/pared/commit/108f540ea8acb6073751a1aa386085c1cdc4fd1e"
 - "https://github.com/radekvit/pared"
 - "https://rustsec.org/advisories/RUSTSEC-2025-0016.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:H/SC:N/SI:N/SA:N"
 uuid: "4488863b-e903-48bd-8c8d-f5508b0792b7"
 cwe_ids:
 - "CWE-416"

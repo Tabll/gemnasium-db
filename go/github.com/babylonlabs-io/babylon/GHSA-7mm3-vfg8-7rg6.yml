@@ -14,7 +14,7 @@ description: "A high vulnerability exists in the Babylon protocol's x/finality m
   context) to form the StartHeight, NumPubRand, and a shorter-than-expected Commitment
   (e.g., 4 bytes). The replayed signature will pass verification for this crafted
   message, leading to the injection of an invalid PubRand commitment."
-date: "2025-07-31"
+date: "2025-10-31"
 pubdate: "2025-05-15"
 affected_range: "<1.1.0"
 fixed_versions:
@@ -28,6 +28,8 @@ urls:
 - "https://github.com/babylonlabs-io/babylon/commit/cb5d0ecae5cebc116d09296baaed25f715f904df"
 - "https://github.com/babylonlabs-io/babylon"
 - "https://pkg.go.dev/vuln/GO-2025-3686"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:H/SA:N"
 uuid: "2b556068-34e9-4b91-97a3-3cb6ca6e5a98"
 cwe_ids:
 - "CWE-290"

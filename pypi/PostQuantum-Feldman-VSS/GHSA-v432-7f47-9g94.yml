@@ -18,7 +18,7 @@ description: "**Description:**\n\nPostQuantum-Feldman-VSS, a Python library impl
   fails.  Instead of raising a standard Python exception that could be caught and
   handled, GMP terminates the entire process. This behavior is documented in the GMP
   and gmpy2 documentation:"
-date: "2025-03-19"
+date: "2025-10-31"
 pubdate: "2025-03-17"
 affected_range: "<0.7.7b0"
 fixed_versions:
@@ -30,6 +30,8 @@ urls:
 - "https://github.com/advisories/GHSA-v432-7f47-9g94"
 - "https://github.com/DavidOsipov/PostQuantum-Feldman-VSS/security/advisories/GHSA-v432-7f47-9g94"
 - "https://github.com/DavidOsipov/PostQuantum-Feldman-VSS"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
 uuid: "5d987c9b-af04-44ac-9bce-41ecfdc0e8d9"
 cwe_ids:
 - "CWE-400"

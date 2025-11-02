@@ -7,7 +7,7 @@ title: "Django TomSelect incomplete escaping of dangerous characters in widget a
 description: "User supplied values passed through to certain attributes in form widgets
   are not fully escaped for potentially dangerous tokens, and in some cases are rendered
   in browser as valid html tags."
-date: "2025-03-26"
+date: "2025-10-31"
 pubdate: "2025-03-26"
 affected_range: "<2025.3.3"
 fixed_versions:
@@ -20,9 +20,11 @@ urls:
 - "https://github.com/OmenApps/django-tomselect/security/advisories/GHSA-785h-76cm-cpmf"
 - "https://github.com/OmenApps/django-tomselect/commit/0990ed36c8874f9d42fa9deff7734bf8dcd46d40"
 - "https://github.com/OmenApps/django-tomselect"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:N/VI:N/VA:N/SC:N/SI:L/SA:N"
 uuid: "b62ebf0c-bb67-4d37-b943-9cb83e1887c1"
 cwe_ids:
-- "CWE-79"
 - "CWE-116"
+- "CWE-79"
 - "CWE-937"
 - "CWE-1035"

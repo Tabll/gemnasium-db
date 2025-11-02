@@ -14,7 +14,7 @@ description: "### Duplicate Advisory\n\nThis advisory has been withdrawn because
   the downstream request body is always drained before a connection can be reused.\n\nSee
   [the blog post](https://blog.cloudflare.com/resolving-a-request-smuggling-vulnerability-in-pingora/)
   for more information."
-date: "2025-06-20"
+date: "2025-10-31"
 pubdate: "2025-05-22"
 affected_range: "<0.5.0"
 fixed_versions:
@@ -28,6 +28,8 @@ urls:
 - "https://blog.cloudflare.com/resolving-a-request-smuggling-vulnerability-in-pingora"
 - "https://github.com/cloudflare/pingora"
 - "https://rustsec.org/advisories/RUSTSEC-2025-0037.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:A/VC:H/VI:H/VA:N/SC:L/SI:L/SA:N"
 uuid: "d8ceb377-7476-470a-b7c7-c3c3f50806f4"
 cwe_ids:
 - "CWE-444"

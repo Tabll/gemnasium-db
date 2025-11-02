@@ -7,7 +7,7 @@ title: "Kyverno vulnerable to SSRF via Service Calls"
 description: "An attacker with the ability to create Kyverno policies in a Kubernetes
   cluster can use Service Call functionality to perform SSRF to a server under their
   control in order to exfiltrate data."
-date: "2025-04-23"
+date: "2025-10-31"
 pubdate: "2025-04-15"
 affected_range: "<=1.13.4"
 fixed_versions: []
@@ -19,6 +19,8 @@ urls:
 - "https://github.com/kyverno/kyverno/security/advisories/GHSA-459x-q9hg-4gpq"
 - "https://github.com/kyverno/kyverno"
 - "https://pkg.go.dev/vuln/GO-2025-3615"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N"
 uuid: "b3e5daa3-deab-4a2e-9f0d-7462b469d255"
 cwe_ids:
 - "CWE-918"

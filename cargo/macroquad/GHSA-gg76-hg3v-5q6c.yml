@@ -8,7 +8,7 @@ description: "Several soundness issues have been reported. Resolving them doesn'
   seem to be considered a priority. In particular, unprincipled use of mutable statics
   is pervasive throughout the library, making it possible to cause use-after-free
   in safe code.\n\nCurrently, no fixed version is available."
-date: "2025-05-15"
+date: "2025-10-31"
 pubdate: "2025-05-15"
 affected_range: "<=0.4.14"
 fixed_versions: []
@@ -23,6 +23,8 @@ urls:
 - "https://github.com/not-fl3/macroquad/issues/746"
 - "https://github.com/not-fl3/macroquad"
 - "https://rustsec.org/advisories/RUSTSEC-2025-0035.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
 uuid: "51e33c22-21b5-4aa7-8b58-943732a6d926"
 cwe_ids:
 - "CWE-416"

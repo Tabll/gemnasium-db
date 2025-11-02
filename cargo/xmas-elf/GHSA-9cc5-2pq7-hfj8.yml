@@ -12,7 +12,7 @@ description: "Affected versions of this crate only validated the `index` argumen
   of the HashTable API by setting these fields to inappropriately large values that
   would fall outside the relevant hash table section, and by introducing correspondingly
   out-of-bounds hash table indexes elsewhere in the ELF file."
-date: "2025-03-26"
+date: "2025-10-31"
 pubdate: "2025-03-26"
 affected_range: "<0.10"
 fixed_versions:
@@ -26,6 +26,8 @@ urls:
 - "https://github.com/nrc/xmas-elf/commit/57685c35512a57269086314a42a70441af4ef451"
 - "https://github.com/nrc/xmas-elf"
 - "https://rustsec.org/advisories/RUSTSEC-2025-0018.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N"
 uuid: "2e415aa8-a29b-4f99-bec9-d4721ed869fa"
 cwe_ids:
 - "CWE-125"

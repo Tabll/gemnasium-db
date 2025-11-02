@@ -16,7 +16,7 @@ description: "The LocalS3 project, an S3-compatible storage service, is vulnerab
   bypassing any intended access controls. The XXE vulnerability can be exploited to
   read any file that the application process has access to, potentially exposing sensitive
   configuration files, credentials, or other confidential information."
-date: "2025-03-10"
+date: "2025-10-31"
 pubdate: "2025-03-10"
 affected_range: "[,1.21)"
 fixed_versions:
@@ -29,6 +29,8 @@ urls:
 - "https://github.com/Robothy/local-s3/security/advisories/GHSA-v232-254c-m6p7"
 - "https://github.com/Robothy/local-s3/commit/d6ed756ceb30c1eb9d4263321ac683d734f8836f"
 - "https://github.com/Robothy/local-s3"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N"
 uuid: "508ff86c-3401-4369-b559-b5a9299068c4"
 cwe_ids:
 - "CWE-611"

@@ -10,7 +10,7 @@ description: "An authenticated system user at the root, namespace, or database l
   can be leveraged to exfiltrate the content.\n\nThis issue was discovered and patched
   during an code audit and penetration test of SurrealDB by cure53, the severity defined
   within cure53's preliminary finding is Low, matched by our CVSS v4 assessment."
-date: "2025-04-10"
+date: "2025-10-31"
 pubdate: "2025-04-10"
 affected_range: ">=2.2.0 <2.2.2||<2.1.5"
 fixed_versions:
@@ -26,6 +26,8 @@ urls:
 - "https://github.com/surrealdb/surrealdb/security/advisories/GHSA-2cvj-g5r5-jrrg"
 - "https://github.com/surrealdb/surrealdb/pull/5600"
 - "https://github.com/surrealdb/surrealdb"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N"
 uuid: "04986b07-3663-401a-8df2-007f1675940c"
 cwe_ids:
 - "CWE-22"

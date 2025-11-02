@@ -7,7 +7,7 @@ title: "Uncaught Panic in ORML Rewards Pallet"
 description: "A vulnerability in the `add_share` function of the **Rewards** pallet
   (part of the ORML repository) can lead to an uncaught Rust panic when handling user-provided
   input exceeding the `u128` range."
-date: "2025-02-14"
+date: "2025-10-31"
 pubdate: "2025-02-14"
 affected_range: "<1.2.1"
 fixed_versions:
@@ -21,6 +21,8 @@ urls:
 - "https://github.com/open-web3-stack/open-runtime-module-library/pull/1016"
 - "https://github.com/open-web3-stack/open-runtime-module-library/commit/6720fcd92f44e5f204741b04fdef3b67b0fcf6bc"
 - "https://github.com/open-web3-stack/open-runtime-module-library"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:H/SC:N/SI:N/SA:N"
 uuid: "917662d4-fdcc-4e04-9401-cb9ea3d7f909"
 cwe_ids:
 - "CWE-248"

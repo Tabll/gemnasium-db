@@ -9,7 +9,7 @@ description: "When a `Some(...)` value was passed to the `properties` argument o
   nearly always result in OpenSSL treating the properties as an empty string (due
   to `CString::drop`'s behavior).\n\nThe maintainers thank [quitbug](https://github.com/quitbug/)
   for reporting this vulnerability to us."
-date: "2025-04-04"
+date: "2025-10-31"
 pubdate: "2025-04-04"
 affected_range: ">=0.10.39 <0.10.72"
 fixed_versions:
@@ -23,6 +23,8 @@ urls:
 - "https://github.com/sfackler/rust-openssl/commit/87085bd67896b7f92e6de35d081f607a334beae4"
 - "https://github.com/sfackler/rust-openssl"
 - "https://rustsec.org/advisories/RUSTSEC-2025-0022.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L"
+cvss_v4: "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N"
 uuid: "b2b6a074-d986-4428-9790-9dd2ef05c6fc"
 cwe_ids:
 - "CWE-416"

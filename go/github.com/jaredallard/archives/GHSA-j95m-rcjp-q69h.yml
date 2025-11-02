@@ -13,7 +13,7 @@ description: "A malicious user could feed a specially crafted archive to this li
   as root on a production system).\n\nThe severity is also dependent on **arbitrary
   archives** being passed or not.\n\nBased on the above, severity high was picked
   to be safe."
-date: "2025-03-28"
+date: "2025-10-31"
 pubdate: "2025-03-28"
 affected_range: "<1.0.1"
 fixed_versions:
@@ -25,6 +25,8 @@ urls:
 - "https://github.com/advisories/GHSA-j95m-rcjp-q69h"
 - "https://github.com/jaredallard/archives/security/advisories/GHSA-j95m-rcjp-q69h"
 - "https://github.com/jaredallard/archives"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:L"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:N/VI:H/VA:L/SC:N/SI:N/SA:N"
 uuid: "c717f7e2-c9da-4f85-b945-29ac8749b032"
 cwe_ids:
 - "CWE-22"

@@ -8,7 +8,7 @@ description: "The `Drop` implementation will get run twice when using the cursor
   issue does not affect you, if you are using only using the crate with types that
   are `Copy` such as `u8`.\n\nThis issue also does not affect you, if you are only
   depending on it through the crate `planus`."
-date: "2025-03-31"
+date: "2025-10-31"
 pubdate: "2025-03-31"
 affected_range: "<0.2.1"
 fixed_versions:
@@ -22,6 +22,8 @@ urls:
 - "https://github.com/planus-org/planus/pull/294"
 - "https://github.com/planus-org/planus"
 - "https://rustsec.org/advisories/RUSTSEC-2025-0019.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
 uuid: "985b1407-f125-4e5d-b38e-a870cf6db96d"
 cwe_ids:
 - "CWE-672"

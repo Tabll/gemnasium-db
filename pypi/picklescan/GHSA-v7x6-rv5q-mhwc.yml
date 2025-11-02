@@ -7,7 +7,7 @@ title: "Picklescan missing detection when calling built-in python library functi
   timeit.timeit()"
 description: "Using timeit.timeit() function, which is a built-in python library function
   to execute remote pickle file."
-date: "2025-04-07"
+date: "2025-10-31"
 pubdate: "2025-04-07"
 affected_range: "<0.0.25"
 fixed_versions:
@@ -21,6 +21,8 @@ urls:
 - "https://github.com/mmaitre314/picklescan/pull/40"
 - "https://github.com/mmaitre314/picklescan"
 - "https://github.com/mmaitre314/picklescan/releases/tag/v0.0.25"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
 uuid: "e55eb045-8e7d-49d7-8c31-2404976802e6"
 cwe_ids:
 - "CWE-184"

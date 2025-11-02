@@ -17,7 +17,7 @@ description: "In order to prevent DoS situations due to infinite recursions, Sur
   and `SURREAL_CAPS_ALLOW_ALL=true`.\n\nThis issue was discovered and patched during
   an code audit and penetration test of SurrealDB by cure53, the severity defined
   within cure53's preliminary finding is Medium, matched by our CVSS v4 assessment."
-date: "2025-04-10"
+date: "2025-10-31"
 pubdate: "2025-04-10"
 affected_range: ">=2.2.0 <2.2.2||>=2.1.0 <2.1.5||<2.0.5"
 fixed_versions:
@@ -33,6 +33,8 @@ urls:
 - "https://github.com/advisories/GHSA-m7rc-8w7m-r9qr"
 - "https://github.com/surrealdb/surrealdb/security/advisories/GHSA-m7rc-8w7m-r9qr"
 - "https://github.com/surrealdb/surrealdb"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
 uuid: "2ce994e9-178f-43af-a40f-71e56ce5bb79"
 cwe_ids:
 - "CWE-674"
