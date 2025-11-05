@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-8m2r-x2m2-3wmw"
+identifiers:
+- "GHSA-8m2r-x2m2-3wmw"
+package_slug: "packagist/pimcore/pimcore"
+title: "Duplicate Advisory: Pimcore Authenticated Stored Cross-Site Scripting (XSS)
+  Via Search Document"
+description: "Duplicate Advisory\nThis advisory has been withdrawn because it is a
+  duplicate of GHSA-xr3m-6gq6-22cg. This link is maintained to preserve external references.\n\nOriginal
+  Description\nA vulnerability classified as problematic was found in Pimcore 11.4.2.
+  Affected by this vulnerability is an unknown functionality of the component Search
+  Document. The manipulation leads to basic cross site scripting. The attack can be
+  launched remotely. The exploit has been disclosed to the public and may be used."
+date: "2025-11-04"
+pubdate: "2025-01-28"
+affected_range: ">=11.4.2"
+fixed_versions: []
+affected_versions: "All versions starting from 11.4.2"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-8m2r-x2m2-3wmw"
+- "https://github.com/pimcore/pimcore/security/advisories/GHSA-xr3m-6gq6-22cg"
+- "https://nvd.nist.gov/vuln/detail/CVE-2024-11954"
+- "https://vuldb.com/?ctiid.293905"
+- "https://vuldb.com/?id.293905"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:N/I:L/A:N"
+uuid: "a0b0247a-7b30-4f50-a265-9d464e1e7542"
+cwe_ids:
+- "CWE-74"
+- "CWE-937"
+- "CWE-1035"
