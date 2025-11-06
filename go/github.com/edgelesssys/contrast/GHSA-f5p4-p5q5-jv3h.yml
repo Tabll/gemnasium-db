@@ -13,7 +13,7 @@ description: "A malicious host may provide a crafted LUKS2 volume to a Contrast 
   such that the volume:\n\n- Opens (cryptsetup open) without error using any passphrase
   or token\n- Records all writes in plaintext (or ciphertext with an attacker-known
   key)"
-date: "2025-10-28"
+date: "2025-11-05"
 pubdate: "2025-10-28"
 affected_range: "<1.12.1"
 fixed_versions:
@@ -27,6 +27,7 @@ urls:
 - "https://github.com/edgelesssys/contrast/pull/1731"
 - "https://github.com/edgelesssys/contrast/commit/2252a231d570c2dce10a33660452b0bfc3c43958"
 - "https://github.com/edgelesssys/contrast"
+- "https://pkg.go.dev/vuln/GO-2025-4078"
 cvss_v3: "CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
 uuid: "b3129634-82fd-4ca2-8700-4592a44ee9a8"
 cwe_ids:

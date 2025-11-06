@@ -30,7 +30,7 @@ description: "The issue has been reported by @raefko from @fuzzinglabs. Excerpts
   deserialization code **trusts** the length field implicitly without any validation.
   This is a classic **integer-to-allocation vulnerability** pattern, similar to issues
   that have affected many serialization libraries over the years."
-date: "2025-10-30"
+date: "2025-11-05"
 pubdate: "2025-10-30"
 affected_range: ">=0.9.1 <0.18.1||>=0.19.0 <0.19.2||=0.19.0"
 fixed_versions:
@@ -46,6 +46,7 @@ urls:
 - "https://github.com/Consensys/gnark-crypto/pull/759"
 - "https://github.com/Consensys/gnark-crypto/commit/2e7bf9190a0aac896eeec3876c87c77a35661be7"
 - "https://github.com/Consensys/gnark-crypto"
+- "https://pkg.go.dev/vuln/GO-2025-4087"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
 uuid: "05ddff5a-4e93-4923-bf20-d68b4018ca10"
 cwe_ids:
