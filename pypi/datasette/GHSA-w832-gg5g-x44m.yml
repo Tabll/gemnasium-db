@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-w832-gg5g-x44m"
+identifiers:
+- "GHSA-w832-gg5g-x44m"
+package_slug: "pypi/datasette"
+title: "Open redirect endpoint in Datasette"
+description: "Deployed instances of Datasette prior to `0.65.2` and `1.0a21` include
+  an open redirect vulnerability.\n\nHits to the path `//example.com/foo/bar/` (the
+  trailing slash is required) will redirect the user to `https://example.com/foo/bar`."
+date: "2025-11-06"
+pubdate: "2025-11-06"
+affected_range: "<0.65.2||>=1.0a0,<1.0a21"
+fixed_versions:
+- "0.65.2"
+- "1.0a21"
+affected_versions: "All versions starting from 1.0a0 before 1.0a21, all versions before
+  0.65.2"
+not_impacted: "All versions before 1.0a0, all versions starting from 1.0a21 before
+  0, all versions starting from 0.65.2"
+solution: "Upgrade to versions 0.65.2, 1.0a21 or above."
+urls:
+- "https://github.com/advisories/GHSA-w832-gg5g-x44m"
+- "https://github.com/simonw/datasette/security/advisories/GHSA-w832-gg5g-x44m"
+- "https://github.com/simonw/datasette/issues/2429"
+- "https://github.com/simonw/datasette/commit/f257ca6edb64848c3b04b54d41e347c54fe57c05"
+- "https://github.com/simonw/datasette"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N"
+uuid: "27573f1d-0f63-487a-a287-2220895ce6c8"
+cwe_ids:
+- "CWE-601"
+- "CWE-937"
+- "CWE-1035"
