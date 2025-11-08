@@ -7,7 +7,7 @@ title: "Flowise is vulnerable to arbitrary file exposure through its ReadFileToo
 description: "The ReadFileTool in Flowise does not restrict file path access, allowing
   authenticated attackers to exploit this vulnerability to read arbitrary files from
   the file system, potentially leading to remote command execution."
-date: "2025-10-10"
+date: "2025-11-07"
 pubdate: "2025-10-10"
 affected_range: "<3.0.8"
 fixed_versions:

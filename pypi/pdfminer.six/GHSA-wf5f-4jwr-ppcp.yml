@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-wf5f-4jwr-ppcp"
+identifiers:
+- "GHSA-wf5f-4jwr-ppcp"
+package_slug: "pypi/pdfminer.six"
+title: "Arbitrary Code Execution in pdfminer.six via Crafted PDF Input"
+description: "pdfminer.six will execute arbitrary code from a malicious pickle file
+  if provided with a malicious PDF file. The `CMapDB._load_data()` function in pdfminer.six
+  uses `pickle.loads()` to deserialize pickle files. These pickle files are supposed
+  to be part of the pdfminer.six distribution stored in the `cmap/` directory, but
+  a malicious PDF can specify an alternative directory and filename as long as the
+  filename ends in `.pickle.gz`. A malicious, zipped pickle file can then contain
+  code which will automatically execute when the PDF is processed."
+date: "2025-11-07"
+pubdate: "2025-11-07"
+affected_range: "<20251107"
+fixed_versions:
+- "20251107"
+affected_versions: "All versions before 20251107"
+not_impacted: "All versions starting from 20251107"
+solution: "Upgrade to version 20251107 or above."
+urls:
+- "https://github.com/advisories/GHSA-wf5f-4jwr-ppcp"
+- "https://github.com/pdfminer/pdfminer.six/security/advisories/GHSA-wf5f-4jwr-ppcp"
+- "https://github.com/pdfminer/pdfminer.six/commit/b808ee05dd7f0c8ea8ec34bdf394d40e63501086"
+- "https://github.com/pdfminer/pdfminer.six"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H"
+uuid: "8fe06055-4395-4972-8e0b-f19c1e691f6b"
+cwe_ids:
+- "CWE-502"
+- "CWE-937"
+- "CWE-1035"
