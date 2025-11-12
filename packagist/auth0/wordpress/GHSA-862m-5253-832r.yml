@@ -12,7 +12,7 @@ description: "**Overview**\nThe Auth0 Wordpress plugin contains a critical vulne
   Applications using the Auth0 WordPress plugin, versions between 5.0.0 BETA-0 to
   5.0.1.\n2. Auth0 WordPress plugin uses the Auth0-PHP SDK with version 8.0.0-BETA3
   to 8.3.0.\n\n**Fix**\nUpgrade the Auth0 WordPress plugin to the latest version (v5.3.0)."
-date: "2025-06-05"
+date: "2025-11-10"
 pubdate: "2025-06-05"
 affected_range: ">=5.0.0-BETA0 <5.1.0"
 fixed_versions:
@@ -28,6 +28,8 @@ urls:
 - "https://github.com/auth0/wordpress/security/advisories/GHSA-862m-5253-832r"
 - "https://nvd.nist.gov/vuln/detail/CVE-2025-48951"
 - "https://github.com/auth0/wordpress"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:N/SC:H/SI:H/SA:H"
 uuid: "cf494ce2-c5dc-49ec-b647-dc27af42034d"
 cwe_ids:
 - "CWE-502"

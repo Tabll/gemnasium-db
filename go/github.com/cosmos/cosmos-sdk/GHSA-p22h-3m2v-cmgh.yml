@@ -24,7 +24,7 @@ description: "Description\nName: ISA-2025-005: Integer Overflow in Cosmos SDK\nC
   security efforts, please reach out to our official communication channel at [security@interchain.io](mailto:security@interchain.io).
   For more information about the Interchain Foundation’s engagement with Amulet, and
   to sign up for security notification emails, please see https://github.com/interchainio/security."
-date: "2025-07-08"
+date: "2025-11-10"
 pubdate: "2025-07-08"
 affected_range: "<0.50.14||>=0.52.0-alpha.1 <0.53.3"
 fixed_versions:
@@ -41,6 +41,8 @@ urls:
 - "https://github.com/cosmos/cosmos-sdk/commit/c4a14fa7b6828432fdabdb8b4af68ade9403ce49"
 - "https://github.com/cosmos/cosmos-sdk/commit/f2e6295b662fdb27ea33da1296c29588ccdaab42"
 - "https://github.com/cosmos/cosmos-sdk"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:N/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:H"
 uuid: "fa3aa973-6d84-4ad3-82e5-a3f7c32839d6"
 cwe_ids:
 - "CWE-190"

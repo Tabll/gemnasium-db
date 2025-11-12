@@ -21,7 +21,7 @@ description: "The crate has the following vulnerabilities:\n\n- The public trait
   point to the same heap memory, dropping one will deallocate the shared memory. When
   the other is subsequently dropped, it will attempt to free the same memory again,
   resulting in a double free violation."
-date: "2025-09-02"
+date: "2025-11-10"
 pubdate: "2025-09-02"
 affected_range: "<=0.1.1"
 fixed_versions: []
@@ -35,6 +35,8 @@ urls:
 - "https://github.com/ibabushkin/arenavec/issues/6"
 - "https://github.com/ibabushkin/arenavec"
 - "https://rustsec.org/advisories/RUSTSEC-2025-0053.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
 uuid: "b88b6c6d-acb0-4cf6-862b-63bd30918319"
 cwe_ids:
 - "CWE-122"

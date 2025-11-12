@@ -12,7 +12,7 @@ description: "A denial-of-service / out-of-memory vulnerability exists in the `S
   packet, causing the server to send the same pack multiple times. This can quickly
   exhaust memory and crash the server.\nSeverity: **High** — Remote DoS from an authenticated
   client.\n\n---"
-date: "2025-09-02"
+date: "2025-11-10"
 pubdate: "2025-09-02"
 affected_range: "<5.32.1"
 fixed_versions:
@@ -27,6 +27,8 @@ urls:
 - "https://github.com/pmmp/PocketMine-MP/commit/e375437439df51f7862b6b98318394643fcd6724"
 - "https://github.com/pmmp/PocketMine-MP"
 - "https://github.com/pmmp/PocketMine-MP/releases/tag/5.32.1"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
 uuid: "a295833d-2369-460b-ab54-424f5d5ee23f"
 cwe_ids:
 - "CWE-770"

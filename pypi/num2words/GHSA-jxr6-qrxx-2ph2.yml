@@ -9,7 +9,7 @@ description: "The `num2words` project was compromised via a phishing attack and 
   new versions were uploaded to PyPI containing malicious code. The affected versions
   have been removed from PyPI, and users are advised to remove the affected versions
   from their environments."
-date: "2025-07-31"
+date: "2025-11-10"
 pubdate: "2025-07-31"
 affected_range: ">=0.5.15,<=0.5.16"
 fixed_versions: []
@@ -22,6 +22,8 @@ urls:
 - "https://github.com/savoirfairelinux/num2words"
 - "https://nitter.tiekoetter.com/SFLinux/status/1949906299308953827"
 - "https://www.stepsecurity.io/blog/supply-chain-security-alert-num2words-pypi-package-shows-signs-of-compromise"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
 uuid: "b3e17197-3e9b-4ab0-9ef6-73a27bda3c82"
 cwe_ids:
 - "CWE-506"

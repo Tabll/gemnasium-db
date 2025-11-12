@@ -10,7 +10,7 @@ description: "A XSS(cross-site scripting) vulnerability is caused by insufficien
   web pages, and when users browse these web pages, the malicious code will be executed,
   and the victims may be vulnerable to various attacks such as cookie data theft,
   etc."
-date: "2025-10-13"
+date: "2025-11-10"
 pubdate: "2025-10-03"
 affected_range: "<3.0.8"
 fixed_versions:
@@ -22,6 +22,8 @@ urls:
 - "https://github.com/advisories/GHSA-4fr9-3x69-36wv"
 - "https://github.com/FlowiseAI/Flowise/security/advisories/GHSA-4fr9-3x69-36wv"
 - "https://github.com/FlowiseAI/Flowise"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:P/VC:N/VI:N/VA:N/SC:H/SI:H/SA:N"
 uuid: "1a23bb59-d205-476b-9db3-6ec4c10bf694"
 cwe_ids:
 - "CWE-79"

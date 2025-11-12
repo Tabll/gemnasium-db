@@ -17,7 +17,7 @@ description: "The HTTP/2 [MadeYouReset vulnerability](https://galbarnahum.com/ma
   as soon as possible to mitigate against more sophisticated attacks that may appear
   in the future.\n\nWe are very grateful to @galbarnahum, @AnatBB, and @YanivRL for
   their reporting and assistance with our process."
-date: "2025-08-13"
+date: "2025-11-10"
 pubdate: "2025-08-13"
 affected_range: "<1.38.0"
 fixed_versions:
@@ -29,6 +29,8 @@ urls:
 - "https://github.com/advisories/GHSA-xvr7-p2c6-j83w"
 - "https://github.com/apple/swift-nio-http2/security/advisories/GHSA-xvr7-p2c6-j83w"
 - "https://github.com/apple/swift-nio-http2"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N"
 uuid: "70b92135-cad1-4566-9ef9-3494784ae048"
 cwe_ids:
 - "CWE-405"

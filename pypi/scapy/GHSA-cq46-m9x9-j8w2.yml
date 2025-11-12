@@ -9,7 +9,7 @@ description: "An unsafe deserialization vulnerability in Scapy <v2.7.0 allows at
   to execute arbitrary code **when a malicious session file is locally loaded via
   the `-s` option**. This requires convincing a user to manually load a malicious
   session file.\n\n---"
-date: "2025-10-23"
+date: "2025-11-10"
 pubdate: "2025-10-22"
 affected_range: "<=2.6.1"
 fixed_versions: []
@@ -21,6 +21,8 @@ urls:
 - "https://github.com/secdev/scapy/security/advisories/GHSA-cq46-m9x9-j8w2"
 - "https://github.com/secdev/scapy/commit/13621d1145b3435e9d03caf20997107a84435c0b"
 - "https://github.com/secdev/scapy"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:L/AC:L/AT:P/PR:L/UI:A/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
 uuid: "d31553db-d796-41aa-a255-298912880242"
 cwe_ids:
 - "CWE-502"

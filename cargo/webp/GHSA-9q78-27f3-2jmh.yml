@@ -10,7 +10,7 @@ description: "Affected versions of this crate did not check that the input slice
   and encode other memory contents as an image, resulting in memory exposure or a
   segmentation fault.\n\nThe flaw was corrected in [pull request #44](https://github.com/jaredforth/webp/pull/44)
   by always validating the input buffer size when constructing the encoder."
-date: "2025-08-29"
+date: "2025-11-10"
 pubdate: "2025-08-29"
 affected_range: "<0.3.1"
 fixed_versions:
@@ -25,6 +25,8 @@ urls:
 - "https://github.com/jaredforth/webp/commit/62b47060d7fb8cc0e92e522ee54948edf5aab556"
 - "https://github.com/jaredforth/webp"
 - "https://rustsec.org/advisories/RUSTSEC-2024-0443.html"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+cvss_v4: "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
 uuid: "7c66fdcd-6bc2-40d9-99df-87208d0ac84c"
 cwe_ids:
 - "CWE-125"

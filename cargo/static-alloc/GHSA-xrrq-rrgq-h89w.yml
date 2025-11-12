@@ -15,7 +15,7 @@ description: "The affected function, `MemBump::new()`, would allocate memory wit
   the missing write of the counter best-as-possible.\n\nThe flaw was corrected in
   commit d8d6a7d096d3aaafd963b356a8f1bbd8d26fd967 by zeroing the Cell at the start
   of the allocated memory."
-date: "2025-07-11"
+date: "2025-11-10"
 pubdate: "2025-07-11"
 affected_range: ">=0.2.2 <0.2.6"
 fixed_versions:
@@ -29,6 +29,8 @@ urls:
 - "https://github.com/197g/static-alloc/pull/82/commits/d8d6a7d096d3aaafd963b356a8f1bbd8d26fd967"
 - "https://github.com/197g/static-alloc"
 - "https://rustsec.org/advisories/RUSTSEC-2025-0042.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:N/SC:N/SI:N/SA:N"
 uuid: "42584705-257a-4898-a13d-6061303e3709"
 cwe_ids:
 - "CWE-908"

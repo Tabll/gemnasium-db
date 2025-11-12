@@ -8,7 +8,7 @@ description: "Name: ASA-2025-003: Invalid BitArray handling can lead to network 
   High (Considerable Impact; Possible Likelihood per [ACMv1.2](https://github.com/interchainio/security/blob/main/resources/CLASSIFICATION_MATRIX.md))\nAffected
   versions: `<= v0.38.18`, `<= v0.37.15`, and `main` development branches\nAffected
   users: Validators, Full nodes, Users"
-date: "2025-10-14"
+date: "2025-11-10"
 pubdate: "2025-10-14"
 affected_range: "<0.37.16||>=0.38.0-alpha.1 <0.38.19"
 fixed_versions:
@@ -27,6 +27,8 @@ urls:
 - "https://github.com/cometbft/cometbft"
 - "https://github.com/cometbft/cometbft/releases/tag/v0.37.16"
 - "https://github.com/cometbft/cometbft/releases/tag/v0.38.19"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
 uuid: "dfe4aefb-36f9-4110-a53c-c12b4fe4c31f"
 cwe_ids:
 - "CWE-228"

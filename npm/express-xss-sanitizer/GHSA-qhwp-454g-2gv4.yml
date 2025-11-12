@@ -14,7 +14,7 @@ description: "## Duplicate Advisory\nThis advisory has been withdrawn because it
   (e.g., “Maximum call stack size exceeded”). This causes a denial of service. The
   issue is present through version 2.0.0; no fixed release is available as of this
   update."
-date: "2025-09-26"
+date: "2025-11-10"
 pubdate: "2025-09-15"
 affected_range: "<=2.0.0"
 fixed_versions: []
@@ -29,6 +29,8 @@ urls:
 - "https://github.com/AhmedAdelFahim/express-xss-sanitizer"
 - "https://www.npmjs.com/package/express-xss-sanitizer"
 - "https://www.tenable.com/cve/CVE-2025-59364"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N"
 uuid: "7227cf03-053f-4474-94d6-6d304d418b2b"
 cwe_ids:
 - "CWE-674"

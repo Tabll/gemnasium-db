@@ -8,7 +8,7 @@ description: "In version 0.0.4, `libyml::string::yaml_string_extend` was revised
   in undefined behaviour, which is unsound.\n\nThe GitHub project for `libyml` was
   archived after unsoundness issues were raised.\n\nIf you rely on this crate, it
   is highly recommended switching to a maintained alternative."
-date: "2025-09-15"
+date: "2025-11-10"
 pubdate: "2025-09-15"
 affected_range: ">=0.0.4 <=0.0.5"
 fixed_versions: []
@@ -20,6 +20,8 @@ urls:
 - "https://github.com/rustsec/advisory-db/issues/2395"
 - "https://github.com/sebastienrousseau/libyml"
 - "https://rustsec.org/advisories/RUSTSEC-2025-0067.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N"
 uuid: "414f454c-613b-477c-8a10-8fb948cc0a9b"
 cwe_ids:
 - "CWE-758"

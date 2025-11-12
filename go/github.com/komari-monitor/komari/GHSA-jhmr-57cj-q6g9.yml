@@ -6,7 +6,7 @@ package_slug: "go/github.com/komari-monitor/komari"
 title: "Komari vulnerable to 2FA Authentication Bypass"
 description: "Logic error in 2FA verification condition allows bypass of two-factor
   authentication"
-date: "2025-08-12"
+date: "2025-11-10"
 pubdate: "2025-08-12"
 affected_range: "<0.0.0-20250809064056-cc3d54bff4c6"
 fixed_versions:
@@ -21,6 +21,8 @@ urls:
 - "https://github.com/komari-monitor/komari"
 - "https://github.com/komari-monitor/komari/blob/bd5a6934e1b79a12cf1e6a9bba5372d0e04f3abc/api/login.go#L55"
 - "https://github.com/komari-monitor/komari/releases/tag/1.0.4-fix1"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N"
 uuid: "705ca75b-772c-42e6-ac4e-dddbd5a3859a"
 cwe_ids:
 - "CWE-287"

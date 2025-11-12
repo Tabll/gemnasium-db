@@ -3,8 +3,8 @@ identifier: "GHSA-vfpf-xmwh-8m65"
 identifiers:
 - "GHSA-vfpf-xmwh-8m65"
 package_slug: "gem/prosemirror_to_html"
-title: "ProsemirrorToHtml has a Cross-Site Scripting (XSS) vulnerability through unescaped
-  HTML attribute values"
+title: "Duplicate Advisory: ProsemirrorToHtml has a Cross-Site Scripting (XSS) vulnerability
+  through unescaped HTML attribute values"
 description: "The prosemirror_to_html gem is vulnerable to Cross-Site Scripting\n(XSS)
   attacks through malicious HTML attribute values. While tag\ncontent is properly
   escaped, attribute values are not, allowing\nattackers to inject arbitrary JavaScript
@@ -16,7 +16,7 @@ description: "The prosemirror_to_html gem is vulnerable to Cross-Site Scripting\
   Event handlers: `<div onclick=\"maliciousCode()\">`\n- `onerror` attributes on images:
   `<img src=x onerror=\"alert('XSS')\">`\n- Other HTML attributes that can execute
   JavaScript"
-date: "2025-11-07"
+date: "2025-11-10"
 pubdate: "2025-11-07"
 affected_range: "<0.2.1"
 fixed_versions:

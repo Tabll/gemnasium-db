@@ -8,7 +8,7 @@ description: "During the creation of a new libfuse session with `fuse_session_ne
   the operation list was passed as NULL incorrectly. libfuse expects this argument
   to always point to list of operations. This caused uninitialized memory read and
   leaks in libfuse.so."
-date: "2025-09-15"
+date: "2025-11-10"
 pubdate: "2025-09-15"
 affected_range: "<0.16.0"
 fixed_versions:
@@ -21,6 +21,8 @@ urls:
 - "https://github.com/cberner/fuser/pull/390"
 - "https://github.com/cberner/fuser"
 - "https://rustsec.org/advisories/RUSTSEC-2021-0154.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
 uuid: "e4289a10-3314-4ec4-af44-09d598b39e38"
 cwe_ids:
 - "CWE-908"

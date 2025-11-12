@@ -16,7 +16,7 @@ description: "Due to a flaw in the constructor `id_map::IdMap::from_iter`, ill-f
   potential segmentation faults.\n\nThe bug was fixed in commit `fab6922`, and all
   unsafe code was removed from the crate.\n\nNote that the maintainer recommends using
   the following alternatives:\n- [slab](https://crates.io/crates/slab)\n- [slotmap](https://crates.io/crates/slotmap)"
-date: "2025-08-18"
+date: "2025-11-10"
 pubdate: "2025-08-18"
 affected_range: ">=0.1.6 <0.2.2"
 fixed_versions:
@@ -30,6 +30,8 @@ urls:
 - "https://github.com/andrewhickman/id-map/commit/fab6922b955b5a2986dfff2ccb341628faec30ed"
 - "https://github.com/andrewhickman/id-map"
 - "https://rustsec.org/advisories/RUSTSEC-2025-0050.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N"
 uuid: "86d9c5b6-1339-45f5-96ae-117f08789858"
 cwe_ids:
 - "CWE-665"

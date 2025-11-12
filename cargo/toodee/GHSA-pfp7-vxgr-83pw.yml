@@ -11,7 +11,7 @@ description: "An off-by-one error in the `DrainCol::drop` destructor could cause
   object, the DrainCol return object could cause a heap buffer overflow vulnerability
   when it is dropped.\n\nThe issue was fixed in commit `e6e16d5` by reducing the copied
   size by one."
-date: "2025-09-09"
+date: "2025-11-10"
 pubdate: "2025-09-09"
 affected_range: ">=0.2.0 <0.6.0"
 fixed_versions:
@@ -25,6 +25,8 @@ urls:
 - "https://github.com/antonmarsden/toodee/commit/e6e16d5a97e6258ffbedbae1bde65b45c60f242f"
 - "https://github.com/antonmarsden/toodee"
 - "https://rustsec.org/advisories/RUSTSEC-2025-0062.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:L/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:H/SC:L/SI:L/SA:L"
 uuid: "fb687131-53ff-4f25-bab1-391cbf548ee5"
 cwe_ids:
 - "CWE-122"

@@ -12,7 +12,7 @@ description: "The API of `xcb::Connection` has constructors which allow an arbit
   file descriptor, violating I/O safety.\n\nStarting in version 1.6.0, `xcb` provides
   `Connection::connect_with_fd` and `Connection::connect_with_fd_and_extensions` as
   safe alternatives and deprecates the problematic functions."
-date: "2025-08-22"
+date: "2025-11-10"
 pubdate: "2025-08-22"
 affected_range: "<1.6.0"
 fixed_versions:
@@ -29,6 +29,8 @@ urls:
 - "https://github.com/rust-x-bindings/rust-xcb/commit/da830976870c1174e3b33eb0643177be3991c002"
 - "https://github.com/rust-x-bindings/rust-xcb"
 - "https://rustsec.org/advisories/RUSTSEC-2025-0051.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
 uuid: "ebd108a9-4620-460c-83cd-2d3a24dc5cc6"
 cwe_ids:
 - "CWE-666"

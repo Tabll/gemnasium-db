@@ -7,7 +7,7 @@ title: "Alchemy Non-SMA and Webauthn Account Security Advisory"
 description: "A potential security issue has been mitigated on old account deployment
   functions from the factory. Smart wallets in use on all existing supported networks
   are not impacted."
-date: "2025-07-21"
+date: "2025-11-10"
 pubdate: "2025-07-21"
 affected_range: ">=4.42.0 <4.52.0"
 fixed_versions:
@@ -21,6 +21,8 @@ urls:
 - "https://github.com/alchemyplatform/aa-sdk/commit/b343437a9e4a833c25fed7bc8785a815cbbae0ee"
 - "https://github.com/alchemyplatform/modular-account/commit/2352c9b692935ba97d98619cb31ba1653eee241f"
 - "https://github.com/alchemyplatform/modular-account"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N"
 uuid: "835e745f-315a-48a7-8e46-ebda5e2e36aa"
 cwe_ids:
 - "CWE-287"

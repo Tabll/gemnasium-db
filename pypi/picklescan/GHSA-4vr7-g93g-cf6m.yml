@@ -14,7 +14,7 @@ description: "### Duplicate Advisory\nThis advisory has been withdrawn because i
   to halt and fail to analyze the contents for malicious pickle files. When the file
   incorrectly considered safe is loaded, it can lead to the execution of malicious
   code."
-date: "2025-09-17"
+date: "2025-11-10"
 pubdate: "2025-09-17"
 affected_range: "<0.0.31"
 fixed_versions:
@@ -29,6 +29,8 @@ urls:
 - "https://github.com/mmaitre314/picklescan/blob/v0.0.29/src/picklescan/relaxed_zipfile.py#L35"
 - "https://huggingface.co/jinaai/jina-embeddings-v2-base-en/resolve/main/pytorch_model.bin?download=true"
 - "https://huggingface.co/jinaai/jina-embeddings-v2-base-en/tree/main"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
 uuid: "a12fe47c-c655-4ba1-8a81-281bab3bfabe"
 cwe_ids:
 - "CWE-755"

@@ -11,7 +11,7 @@ description: "mitmproxy 12.1.1 and below embed python-hyper/h2 ≤ v4.2.0, which
   regular mode.\n\nAll users are encouraged to upgrade to mitmproxy 12.1.2, which
   includes a fixed version of h2.\n\nMore details about the vulnerability itself can
   be found at https://github.com/python-hyper/h2/security/advisories/GHSA-847f-9342-265h."
-date: "2025-08-25"
+date: "2025-11-10"
 pubdate: "2025-08-25"
 affected_range: "<12.1.2"
 fixed_versions:
@@ -24,6 +24,8 @@ urls:
 - "https://github.com/mitmproxy/mitmproxy/security/advisories/GHSA-63cx-g855-hvv4"
 - "https://github.com/python-hyper/h2/security/advisories/GHSA-847f-9342-265h"
 - "https://github.com/mitmproxy/mitmproxy"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:N/SC:N/SI:L/SA:N"
 uuid: "1d2f1672-1dcb-45b6-8e2e-8eed2c2d2003"
 cwe_ids:
 - "CWE-1395"

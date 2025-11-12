@@ -35,7 +35,7 @@ description: "This appears to be a security vulnerability report describing a re
   executed the command. Related execution information can also be seen in the log
   file corresponding to --logging_dir\n\n10. Note (Prerequisites)\nRequires machine
   torch version < 2.6.0, while ms-swift accepts torch version >= 2.0"
-date: "2025-07-31"
+date: "2025-11-10"
 pubdate: "2025-07-31"
 affected_range: "<=3.6.3"
 fixed_versions: []
@@ -47,6 +47,8 @@ urls:
 - "https://github.com/modelscope/ms-swift/security/advisories/GHSA-r54c-2xmf-2cf3"
 - "https://github.com/modelscope/ms-swift/commit/cc47463bcd25a8720437cf945130f43052eec5e4"
 - "https://github.com/modelscope/ms-swift"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
 uuid: "2c3e06d3-6917-474c-850a-561a8a950461"
 cwe_ids:
 - "CWE-502"

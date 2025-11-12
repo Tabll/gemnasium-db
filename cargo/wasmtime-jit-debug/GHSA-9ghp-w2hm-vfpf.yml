@@ -13,7 +13,7 @@ description: "The unsound function `dump_code_load_record` uses `from_raw_parts`
   in the Wasmtime project not intended for external use and is more strongly signaled
   nowadays as of [bytecodealliance/wasmtime#10963](https://github.com/bytecodealliance/wasmtime/pull/10963).
   Please open an issue in Wasmtime if you're using this crate directly."
-date: "2025-06-17"
+date: "2025-11-10"
 pubdate: "2025-06-17"
 affected_range: "<24.0.0"
 fixed_versions:
@@ -27,6 +27,8 @@ urls:
 - "https://github.com/bytecodealliance/wasmtime/commit/b5e31a5c33725ab8a7dfbe8505c56b5cf282ffed"
 - "https://github.com/bytecodealliance/wasmtime"
 - "https://rustsec.org/advisories/RUSTSEC-2024-0442.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N"
 uuid: "caceb4a3-1430-4c20-9a60-f8f125fe084e"
 cwe_ids:
 - "CWE-119"

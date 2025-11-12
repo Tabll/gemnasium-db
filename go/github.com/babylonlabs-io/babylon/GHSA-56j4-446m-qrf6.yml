@@ -7,7 +7,7 @@ title: "Babylon vulnerable to chain half when transaction has fees different tha
   `ubbn`"
 description: "Sending transactions with fees different than native Babylon genesis
   denom (`ubbn`) leads to chain halt."
-date: "2025-07-29"
+date: "2025-11-10"
 pubdate: "2025-06-30"
 affected_range: "<=1.1.0"
 fixed_versions: []
@@ -20,6 +20,8 @@ urls:
 - "https://github.com/babylonlabs-io/babylon/commit/fe67aebd5216e7d3afa1d7dee2a3f82e548556f3"
 - "https://github.com/babylonlabs-io/babylon"
 - "https://github.com/cosmos/cosmos-sdk/blob/main/x/distribution/keeper/allocation.go#L28"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
 uuid: "e6ce8082-2753-4177-9861-f4676c2e6718"
 cwe_ids:
 - "CWE-755"

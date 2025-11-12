@@ -8,7 +8,7 @@ description: "The RedirectSlashes function in middleware/strip.go is vulnerable 
   host header injection which leads to open redirect.\n\nWe consider this a **lower-severity**
   open redirect, as it can't be exploited from browsers or email clients (requires
   manipulation of a Host header)."
-date: "2025-10-13"
+date: "2025-11-10"
 pubdate: "2025-06-20"
 affected_range: "<5.2.2"
 fixed_versions:
@@ -21,6 +21,8 @@ urls:
 - "https://github.com/go-chi/chi/security/advisories/GHSA-vrw8-fxc6-2r93"
 - "https://github.com/go-chi/chi/commit/1be7ad938cc9c5b39a9dea01a5c518848928ab65"
 - "https://github.com/go-chi/chi"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N"
 uuid: "5a62e18b-8b9b-493b-bd4c-028be53e56a8"
 cwe_ids:
 - "CWE-601"

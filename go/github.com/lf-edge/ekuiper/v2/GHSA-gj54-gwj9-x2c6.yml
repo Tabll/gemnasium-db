@@ -8,7 +8,7 @@ description: "eKuiper /config/uploads API supports accessing remote web URLs and
   files in the local upload directory, but there are no security restrictions, resulting
   in arbitrary file writing through ../. If run with root privileges, RCE can be achieved
   by writing crontab files or ssh keys."
-date: "2025-07-03"
+date: "2025-11-10"
 pubdate: "2025-07-03"
 affected_range: "<2.2.0"
 fixed_versions:
@@ -20,6 +20,8 @@ urls:
 - "https://github.com/advisories/GHSA-gj54-gwj9-x2c6"
 - "https://github.com/lf-edge/ekuiper/security/advisories/GHSA-gj54-gwj9-x2c6"
 - "https://github.com/lf-edge/ekuiper"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
 uuid: "c8c8e886-eef8-4e0e-973b-6516a476a8bd"
 cwe_ids:
 - "CWE-434"

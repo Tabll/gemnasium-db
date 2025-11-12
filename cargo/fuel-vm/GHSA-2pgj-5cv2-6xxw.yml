@@ -14,7 +14,7 @@ description: "A memory safety vulnerability was present in the Fuel Virtual Mach
   violating isolation guarantees between contracts and enabling unintended data leakage.\n\nAll
   users running affected versions of FuelVM that relied on strict memory isolation
   between smart contracts were impacted."
-date: "2025-10-08"
+date: "2025-11-10"
 pubdate: "2025-10-08"
 affected_range: "<0.59.3||>=0.60.0 <0.60.1"
 fixed_versions:
@@ -31,6 +31,8 @@ urls:
 - "https://github.com/FuelLabs/fuel-vm/pull/941"
 - "https://github.com/FuelLabs/fuel-vm/commit/9c97c2bf782626b35ba48e154f210f91c847a513"
 - "https://github.com/FuelLabs/fuel-vm"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N"
 uuid: "1200ddea-772c-405a-bca9-10caf899975d"
 cwe_ids:
 - "CWE-416"

@@ -6,7 +6,7 @@ package_slug: "go/github.com/komari-monitor/komari"
 title: "Komari vulnerable to Cross-site WebSocket Hijacking"
 description: "WebSocket upgrader has disabled origin checking, enabling Cross-Site
   WebSocket Hijacking (CSWSH) attacks against authenticated users"
-date: "2025-08-12"
+date: "2025-11-10"
 pubdate: "2025-08-12"
 affected_range: "<0.0.0-20250809073044-53171affcaf0"
 fixed_versions:
@@ -21,6 +21,8 @@ urls:
 - "https://github.com/komari-monitor/komari"
 - "https://github.com/komari-monitor/komari/blob/bd5a6934e1b79a12cf1e6a9bba5372d0e04f3abc/api/terminal.go#L33-L35"
 - "https://github.com/komari-monitor/komari/releases/tag/1.0.4-fix2"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:A/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
 uuid: "614240c8-befd-4d1a-9c36-b847a8294347"
 cwe_ids:
 - "CWE-1385"

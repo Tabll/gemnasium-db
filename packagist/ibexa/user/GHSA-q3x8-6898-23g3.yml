@@ -7,7 +7,7 @@ title: "ibexa/user login enumerates user accounts"
 description: "In v5, error messages could provide enough information to tell whether
   a user exists or not. This is resolved by ensuring the error messages are sufficiently
   ambigious."
-date: "2025-10-17"
+date: "2025-11-10"
 pubdate: "2025-10-17"
 affected_range: ">=5.0.0 <5.0.3"
 fixed_versions:
@@ -20,6 +20,8 @@ urls:
 - "https://github.com/ibexa/user/security/advisories/GHSA-q3x8-6898-23g3"
 - "https://developers.ibexa.co/security-advisories/ibexa-sa-2025-004-xss-and-enumeration-vulnerabilities-in-back-office"
 - "https://github.com/ibexa/user"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N"
 uuid: "1502d64b-7822-4adc-970c-48681189f1b6"
 cwe_ids:
 - "CWE-209"

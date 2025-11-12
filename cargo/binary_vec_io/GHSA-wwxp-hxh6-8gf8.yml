@@ -8,7 +8,7 @@ description: "Safe functions accept a single `&T` or `&mut T` but multiply by `n
   to create slices extending beyond allocated memory when `n > 1`.\n\nThese functions
   use `from_raw_parts` to create slices larger than the underlying allocation, violating
   memory safety.\n\nThe binary_vec_io repository is archived and unmaintained."
-date: "2025-10-22"
+date: "2025-11-10"
 pubdate: "2025-10-22"
 affected_range: "<=0.1.12"
 fixed_versions: []
@@ -21,6 +21,8 @@ urls:
 - "https://gist.github.com/lewismosciski/57ac3b8b7a861abdd0d7ae6f39de5a9d"
 - "https://github.com/10XGenomics/rust-toolbox"
 - "https://rustsec.org/advisories/RUSTSEC-2025-0109.html"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
 uuid: "1647383f-29bb-4c76-a5fa-12a68aef8f78"
 cwe_ids:
 - "CWE-120"

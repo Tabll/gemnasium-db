@@ -13,7 +13,7 @@ description: "Under specific circumstances, text composables may contain unmaske
   Compose or have never used a version >= 1.8.0-alpha08 you are not impacted. If you
   have not configured [Session Replays for Mobile](https://docs.sentry.io/product/explore/session-replay/mobile/)
   you are not impacted."
-date: "2025-06-20"
+date: "2025-11-10"
 pubdate: "2025-06-20"
 affected_range: "[,8.14.0)"
 fixed_versions:
@@ -29,6 +29,8 @@ urls:
 - "https://github.com/getsentry/sentry-java/commit/8bfa9cceab402e58f6723a0694158d27e8a41a56"
 - "https://github.com/getsentry/sentry-java"
 - "https://github.com/getsentry/sentry-java/releases/tag/8.14.0"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N"
 uuid: "3ed4b704-eba3-4056-8e60-789c1392806c"
 cwe_ids:
 - "CWE-532"

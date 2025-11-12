@@ -11,7 +11,7 @@ description: "### Duplicate Advisory\nThis advisory has been withdrawn because i
   allows a remote attacker to bypass pickle files security checks by supplying a standard
   pickle file with a PyTorch-related file extension. When the pickle file incorrectly
   considered safe is loaded, it can lead to the execution of malicious code."
-date: "2025-09-17"
+date: "2025-11-10"
 pubdate: "2025-09-17"
 affected_range: "<0.0.31"
 fixed_versions:
@@ -24,6 +24,8 @@ urls:
 - "https://github.com/mmaitre314/picklescan/security/advisories/GHSA-jgw4-cr84-mqxg"
 - "https://nvd.nist.gov/vuln/detail/CVE-2025-10155"
 - "https://github.com/mmaitre314/picklescan/blob/58983e1c20973ac42f2df7ff15d7c8cd32f9b688/src/picklescan/scanner.py#L463"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
 uuid: "703166f2-d727-4de4-a080-fddd31d1919b"
 cwe_ids:
 - "CWE-20"

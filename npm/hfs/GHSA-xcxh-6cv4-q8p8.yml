@@ -8,7 +8,7 @@ description: "When adding a \"web link\" to the HFS virtual filesystem, the fron
   opens it with `target=\"_blank\"` but without the `rel=\"noopener noreferrer\"`
   attribute. This allows the opened page to use the `window.opener` property to change
   the location of the original HFS tab."
-date: "2025-08-12"
+date: "2025-11-10"
 pubdate: "2025-08-12"
 affected_range: "<0.57.10"
 fixed_versions:
@@ -21,6 +21,8 @@ urls:
 - "https://github.com/rejetto/hfs/security/advisories/GHSA-xcxh-6cv4-q8p8"
 - "https://github.com/rejetto/hfs/commit/6531bcd2ab285af88f91831e30d8a03f5b9fe20d"
 - "https://github.com/rejetto/hfs"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
 uuid: "d4ad9e9b-33c7-4b7a-aa5f-f1f40a619c81"
 cwe_ids:
 - "CWE-1022"

@@ -8,7 +8,7 @@ description: "`Rows::row_unchecked()` allows out of bounds access to the underly
   buffer without sufficient checks.\n\nThe arrow2 crate is no longer maintained, so
   there are no plans to fix this issue. Users are advised to migrate to the arrow
   crate, instead."
-date: "2025-05-30"
+date: "2025-11-10"
 pubdate: "2025-05-30"
 affected_range: "<=0.18.0"
 fixed_versions: []
@@ -19,6 +19,8 @@ urls:
 - "https://github.com/advisories/GHSA-wv8j-m3hx-924j"
 - "https://github.com/jorgecarleitao/arrow2"
 - "https://rustsec.org/advisories/RUSTSEC-2025-0038.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
 uuid: "81db9b0c-687d-4c07-a134-fbcd1c683803"
 cwe_ids:
 - "CWE-119"

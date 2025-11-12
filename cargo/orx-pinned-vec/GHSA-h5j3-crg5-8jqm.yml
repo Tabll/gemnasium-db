@@ -9,7 +9,7 @@ description: "The safe function `index_of_ptr` causes undefined behavior when ca
   which underflows when `slice.len()` is 0, creating a pointer with a massive offset.
   According to Rust's safety rules, creating such a pointer causes immediate undefined
   behavior."
-date: "2025-10-21"
+date: "2025-11-10"
 pubdate: "2025-10-21"
 affected_range: "<3.21.0"
 fixed_versions:
@@ -24,6 +24,8 @@ urls:
 - "https://github.com/orxfun/orx-pinned-vec/commit/4a4007a1aaff25cd417853c76163883a7110e276"
 - "https://github.com/orxfun/orx-pinned-vec"
 - "https://rustsec.org/advisories/RUSTSEC-2025-0106.html"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+cvss_v4: "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N"
 uuid: "a8121419-4e6f-44f7-9bb1-637fc53efc0a"
 cwe_ids:
 - "CWE-119"

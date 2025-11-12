@@ -25,7 +25,7 @@ description: "The email parsing library incorrectly handles quoted local-parts c
   x\"',\ndomain: 'internal.domain'\n}\n```\n\nBut the email is sent to `xclow3n@gmail.com`\n\n<img
   width=\"2128\" height=\"439\" alt=\"Image\" src=\"https://github.com/user-attachments/assets/20eb459c-9803-45a2-b30e-5d1177d60a8d\"
   />"
-date: "2025-10-07"
+date: "2025-11-10"
 pubdate: "2025-10-07"
 affected_range: "<7.0.7"
 fixed_versions:
@@ -38,6 +38,8 @@ urls:
 - "https://github.com/nodemailer/nodemailer/security/advisories/GHSA-mm7p-fcc7-pg87"
 - "https://github.com/nodemailer/nodemailer/commit/1150d99fba77280df2cfb1885c43df23109a8626"
 - "https://github.com/nodemailer/nodemailer"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
 uuid: "7f706395-4f0b-4838-b372-0691c6aa0313"
 cwe_ids:
 - "CWE-20"

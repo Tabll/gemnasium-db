@@ -7,7 +7,7 @@ title: "Better Call routing bug can lead to Cache Deception"
 description: "Using a CDN that caches (`/**/*.png`, `/**/*.json`, `/**/*.css`, etc...)
   requests, a cache deception can emerge. This could lead to unauthorized access to
   user sessions and personal data when cached responses are served to other users."
-date: "2025-07-11"
+date: "2025-11-10"
 pubdate: "2025-07-11"
 affected_range: "<1.0.12"
 fixed_versions:
@@ -20,6 +20,8 @@ urls:
 - "https://github.com/Bekacru/better-call/security/advisories/GHSA-hq75-xg7r-rx6c"
 - "https://github.com/Bekacru/better-call/commit/7c7d31b"
 - "https://github.com/Bekacru/better-call"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N"
 uuid: "fa6c1189-a2f8-4088-8493-05d9f7443fc4"
 cwe_ids:
 - "CWE-525"

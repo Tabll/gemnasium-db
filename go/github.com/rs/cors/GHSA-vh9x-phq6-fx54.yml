@@ -12,7 +12,7 @@ description: "### Duplicate Advisory\nThis advisory has been withdrawn because i
   Access-Control-Request-Headers (ACRH) header whose value contains many commas. This
   behavior can be abused by attackers to produce undue load on the middleware/server
   as an attempt to cause a denial of service."
-date: "2025-08-06"
+date: "2025-11-10"
 pubdate: "2025-08-06"
 affected_range: ">=1.9.0 <1.11.0"
 fixed_versions:
@@ -27,6 +27,8 @@ urls:
 - "https://github.com/rs/cors/pull/171"
 - "https://github.com/rs/cors"
 - "https://pkg.go.dev/vuln/GO-2024-2883"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N"
 uuid: "a9dd1341-8014-4f72-8665-d4d413340079"
 cwe_ids:
 - "CWE-770"

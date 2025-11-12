@@ -19,7 +19,7 @@ description: "For tracexec's command line reconstruction feature, when a traced 
   tracexec decides to copy and run the reconstructed commandline,\nthere could be
   injection for `env`'s `--block-signal`, `--default-signal`, `--ignore-signal`, `--split-string`,
   `--unset`, `--chdir`, `--argv0` arguments."
-date: "2025-10-13"
+date: "2025-11-10"
 pubdate: "2025-10-13"
 affected_range: "<0.14.0"
 fixed_versions:
@@ -33,6 +33,8 @@ urls:
 - "https://github.com/kxxt/tracexec/pull/118"
 - "https://github.com/kxxt/tracexec/commit/0dbe63214c8686df5bb62dbe6142cce27868ecff"
 - "https://github.com/kxxt/tracexec"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:L"
+cvss_v4: "CVSS:4.0/AV:L/AC:L/AT:P/PR:L/UI:A/VC:L/VI:L/VA:L/SC:L/SI:L/SA:L"
 uuid: "fe7e613f-31f8-4157-8e0b-7ec50cd27531"
 cwe_ids:
 - "CWE-77"

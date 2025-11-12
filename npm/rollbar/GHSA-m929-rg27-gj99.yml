@@ -10,7 +10,7 @@ description: "rollbar is a package designed to effortlessly track and debug erro
   Pollution vulnerability in the utility.set function of rollbar v2.26.4 and before
   allows attackers to inject properties on Object.prototype via supplying a crafted
   payload, causing denial of service (DoS) as the minimum consequence."
-date: "2025-10-20"
+date: "2025-11-10"
 pubdate: "2025-09-24"
 affected_range: "<=2.26.4"
 fixed_versions: []
@@ -24,6 +24,8 @@ urls:
 - "https://github.com/VulnSageAgent/PoCs/blob/main/JavaScript/prototype-pollution/rollbar%402.26.4/index.js"
 - "https://github.com/VulnSageAgent/PoCs/tree/main/JavaScript/prototype-pollution/CVE-2025-57325"
 - "https://github.com/rollbar/rollbar.js"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L"
+cvss_v4: "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N"
 uuid: "879ef72b-83d6-4092-9ba0-44f2cfc90211"
 cwe_ids:
 - "CWE-1321"

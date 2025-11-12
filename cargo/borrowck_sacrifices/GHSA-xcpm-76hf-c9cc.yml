@@ -10,7 +10,7 @@ description: "The safe function `any_as_u8_slice` can create byte slices that re
   including padding bytes. According to Rust's documentation, `from_raw_parts` requires
   all bytes to be properly initialized, but padding bytes in structs are not guaranteed
   to be initialized. This violates the safety contract and causes undefined behavior."
-date: "2025-10-22"
+date: "2025-11-10"
 pubdate: "2025-10-22"
 affected_range: "<0.2.0"
 fixed_versions:
@@ -24,6 +24,8 @@ urls:
 - "https://github.com/alexpyattaev/borrowck_sacrifices/commit/1bdaa14da68a6e8207f9e81359116f53139800f2"
 - "https://github.com/alexpyattaev/borrowck_sacrifices"
 - "https://rustsec.org/advisories/RUSTSEC-2025-0107.html"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+cvss_v4: "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N"
 uuid: "2799e44b-9c31-4464-b43d-71a4aa271a04"
 cwe_ids:
 - "CWE-824"

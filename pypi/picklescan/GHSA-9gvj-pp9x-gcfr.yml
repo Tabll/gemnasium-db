@@ -8,7 +8,7 @@ title: "Picklescan has pickle parsing logic flaw that leads to malicious pickle 
 description: "Detection bypass in both picklescan and modelscan. Note that it also
   affects the online hugging face pickle scanners, making the malicious pickle file
   bypass the detection."
-date: "2025-08-12"
+date: "2025-11-10"
 pubdate: "2025-08-12"
 affected_range: "<0.0.27"
 fixed_versions:
@@ -24,6 +24,8 @@ urls:
 - "https://github.com/mmaitre314/picklescan/blob/2a8383cfeb4158567f9770d86597300c9e508d0f/src/picklescan/scanner.py#L255"
 - "https://github.com/mmaitre314/picklescan/blob/2a8383cfeb4158567f9770d86597300c9e508d0f/src/picklescan/scanner.py#L281"
 - "https://github.com/mmaitre314/picklescan/releases/tag/v0.0.27"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
 uuid: "7fbe2f90-3857-4404-8fb2-1e8470d8c3c1"
 cwe_ids:
 - "CWE-502"

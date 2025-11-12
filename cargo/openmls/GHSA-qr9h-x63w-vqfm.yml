@@ -9,7 +9,7 @@ description: "A bug in the OpenMLS library prevented private key material from b
   keys stored in the MLS secret tree, which are used for decryption of private MLS
   messages. The effects of the bug are limited in scope, but can affect forward secrecy
   and limit how many messages can be decrypted."
-date: "2025-09-26"
+date: "2025-11-10"
 pubdate: "2025-09-26"
 affected_range: "<0.7.1"
 fixed_versions:
@@ -22,6 +22,8 @@ urls:
 - "https://github.com/openmls/openmls/security/advisories/GHSA-qr9h-x63w-vqfm"
 - "https://github.com/openmls/openmls/commit/c73a074c804b30bec8284ac1e69a71b01db982ea"
 - "https://github.com/openmls/openmls"
+cvss_v3: "CVSS:3.1/AV:L/AC:H/PR:H/UI:R/S:U/C:H/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:L/AC:H/AT:N/PR:H/UI:P/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N"
 uuid: "cb95ee6c-ede6-45bb-918e-5d2e9eb63cc8"
 cwe_ids:
 - "CWE-200"

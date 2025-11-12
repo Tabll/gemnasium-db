@@ -17,7 +17,7 @@ description: "The `get` and `set` methods of the public trait `scratchpad::Track
   to the [penultimate commit](https://github.com/okready/scratchpad/commit/957dee1a3902f48600b06910e8e0b1d5ee7dab83),
   the crate is in maintenance mode awaiting a cleanup that will reduce the area of
   unsafe code. Note that the last commits to the repository are from 4 years ago."
-date: "2025-08-14"
+date: "2025-11-10"
 pubdate: "2025-08-14"
 affected_range: "<=1.3.1"
 fixed_versions: []
@@ -29,6 +29,8 @@ urls:
 - "https://github.com/okready/scratchpad/issues/2"
 - "https://github.com/okready/scratchpad"
 - "https://rustsec.org/advisories/RUSTSEC-2025-0049.html"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+cvss_v4: "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
 uuid: "8cf6ecc5-605f-4a08-bf9a-6caa98e1b8a7"
 cwe_ids:
 - "CWE-122"
