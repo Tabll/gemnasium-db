@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-7xw4-g7mm-r4hh"
+identifiers:
+- "GHSA-7xw4-g7mm-r4hh"
+package_slug: "maven/software.amazon.jdbc/aws-advanced-jdbc-wrapper"
+title: "Amazon Web Services Advanced JDBC Wrapper: Privilege Escalation in Aurora
+  PostgreSQL instance"
+description: "### Description of Vulnerability:\nAn issue in AWS Wrappers for Amazon
+  Aurora PostgreSQL may allow for privilege escalation to rds_superuser role. A low
+  privilege authenticated user can create a crafted function that could be executed
+  with permissions of other Amazon Relational Database Service (RDS) users.\n\nAWS
+  recommends for customers to upgrade to the following versions: AWS JDBC Wrapper
+  to v2.6.5 or greater.\n\n\n### Source of Vulnerability Report: \nAllistair Ishmael
+  Hakim [allistair.hakim@gmail.com](mailto:allistair.hakim@gmail.com)\n\n\n### Affected
+  products & versions: \nAWS JDBC Wrapper < 2.6.5\n\n### Platforms: \nMacOS/Windows/Linux"
+date: "2025-11-13"
+pubdate: "2025-11-13"
+affected_range: "[,2.6.5)"
+fixed_versions:
+- "2.6.5"
+affected_versions: "All versions before 2.6.5"
+not_impacted: "All versions starting from 2.6.5"
+solution: "Upgrade to version 2.6.5 or above."
+urls:
+- "https://github.com/advisories/GHSA-7xw4-g7mm-r4hh"
+- "https://github.com/aws/aws-advanced-jdbc-wrapper/security/advisories/GHSA-7xw4-g7mm-r4hh"
+- "https://github.com/aws/aws-advanced-jdbc-wrapper/commit/b62183b851fa46f891f9fe9c861e9ac2fb7d8b62"
+- "https://github.com/aws/aws-advanced-jdbc-wrapper"
+- "https://github.com/aws/aws-advanced-jdbc-wrapper/releases/tag/2.6.5"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H"
+uuid: "f5c50108-6b30-4fb1-a394-2ac0d0028616"
+cwe_ids:
+- "CWE-470"
+- "CWE-937"
+- "CWE-1035"
