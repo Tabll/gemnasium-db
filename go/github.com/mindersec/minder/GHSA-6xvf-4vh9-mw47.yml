@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-6xvf-4vh9-mw47"
+identifiers:
+- "GHSA-6xvf-4vh9-mw47"
+package_slug: "go/github.com/mindersec/minder"
+title: "Minder does not sandbox http.send in Rego programs"
+description: "Minder users may fetch content in the context of the Minder server,
+  which may include URLs which the user would not normally have access to (for example,
+  if the Minder server is behind a firewall or other network partition)."
+date: "2025-11-20"
+pubdate: "2025-11-20"
+affected_range: ">=0.0.72 <0.0.84"
+fixed_versions:
+- "0.0.84"
+affected_versions: "All versions starting from 0.0.72 before 0.0.84"
+not_impacted: "All versions before 0.0.72, all versions starting from 0.0.84"
+solution: "Upgrade to version 0.0.84 or above."
+urls:
+- "https://github.com/advisories/GHSA-6xvf-4vh9-mw47"
+- "https://github.com/mindersec/minder/security/advisories/GHSA-6xvf-4vh9-mw47"
+- "https://github.com/mindersec/minder/commit/f770400923984649a287d7215410ef108e845af8"
+- "https://github.com/mindersec/minder"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:L/A:L"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:L/VA:L/SC:H/SI:L/SA:L"
+uuid: "cf5c0039-c0d4-4583-8b19-b9af0248c2f9"
+cwe_ids:
+- "CWE-830"
+- "CWE-937"
+- "CWE-1035"

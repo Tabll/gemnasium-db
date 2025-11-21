@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-x39m-3393-3qp4"
+identifiers:
+- "GHSA-x39m-3393-3qp4"
+package_slug: "npm/flowise-ui"
+title: "Flowise doesn't Prevent Bypass of Password Confirmation through Unverified
+  Email Change (credentials)"
+description: "Unverified Email Change - Email as part of Credential / Unverified Account
+  Recovery Channel Change\n\nThe application allows changing the account email address
+  (used as a login identifier and/or password recovery address) without verifying
+  the requester’s authority to make that change (no confirmation to the old email,
+  no authentication step). Because email often functions as a credential or recovery
+  channel, unverified email changes enable attackers to take over accounts by switching
+  the account’s recovery/login address."
+date: "2025-11-14"
+pubdate: "2025-11-14"
+affected_range: "<3.0.10"
+fixed_versions:
+- "3.0.10"
+affected_versions: "All versions before 3.0.10"
+not_impacted: "All versions starting from 3.0.10"
+solution: "Upgrade to version 3.0.10 or above."
+urls:
+- "https://github.com/advisories/GHSA-x39m-3393-3qp4"
+- "https://github.com/FlowiseAI/Flowise/security/advisories/GHSA-x39m-3393-3qp4"
+- "https://github.com/FlowiseAI/Flowise/pull/5294"
+- "https://github.com/FlowiseAI/Flowise"
+- "https://github.com/FlowiseAI/Flowise/releases/tag/flowise%403.0.10"
+cvss_v3: "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:L"
+uuid: "de597d20-fa72-44e3-9f80-b071c7e821a5"
+cwe_ids:
+- "CWE-306"
+- "CWE-620"
+- "CWE-937"
+- "CWE-1035"

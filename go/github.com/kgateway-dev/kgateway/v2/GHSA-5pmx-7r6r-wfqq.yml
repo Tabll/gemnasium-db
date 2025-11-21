@@ -7,7 +7,7 @@ title: "Kgateway transformation policy template can emit files from the containe
 description: "The transformation policy template feature in Kgateway versions through
   2.0.4 allows users with TrafficPolicy creation permissions to craft transformations
   that read and expose arbitrary files from the dataplane container filesystem."
-date: "2025-11-04"
+date: "2025-11-17"
 pubdate: "2025-11-04"
 affected_range: "<2.0.5||>=2.1.0-agw-cel-rbac <2.1.0"
 fixed_versions:
@@ -26,7 +26,7 @@ urls:
 - "https://github.com/kgateway-dev/kgateway"
 - "https://github.com/solo-io/envoy-gloo/releases/tag/v1.34.6-patch3"
 - "https://github.com/solo-io/envoy-gloo/releases/tag/v1.35.2-patch4"
-cvss_v3: "CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N"
+cvss_v3: "CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:H"
 uuid: "44ab0a3d-be56-4701-9f89-f504eeda31b6"
 cwe_ids:
 - "CWE-22"

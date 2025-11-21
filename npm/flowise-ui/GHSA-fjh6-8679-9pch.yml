@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-fjh6-8679-9pch"
+identifiers:
+- "GHSA-fjh6-8679-9pch"
+package_slug: "npm/flowise-ui"
+title: "Flowise does not Prevent Bypass of Password Confirmation - Unverified Password
+  Change"
+description: "Bypass of Password Confirmation - Unverified Password Change (authenticated
+  change without current password)\n\nAn authenticated user is allowed to change their
+  account password without supplying the current password or any additional verification.
+  The application does not verify the actor’s authority to perform that credential
+  change (no current-password check, no authorization enforcement). An attacker who
+  is merely authenticated (or who can trick or coerce an authenticated session) can
+  set a new password and gain control of the account. (ATO - Account Takeover)"
+date: "2025-11-14"
+pubdate: "2025-11-14"
+affected_range: "<3.0.10"
+fixed_versions:
+- "3.0.10"
+affected_versions: "All versions before 3.0.10"
+not_impacted: "All versions starting from 3.0.10"
+solution: "Upgrade to version 3.0.10 or above."
+urls:
+- "https://github.com/advisories/GHSA-fjh6-8679-9pch"
+- "https://github.com/FlowiseAI/Flowise/security/advisories/GHSA-fjh6-8679-9pch"
+- "https://github.com/FlowiseAI/Flowise/pull/5294"
+- "https://github.com/FlowiseAI/Flowise"
+- "https://github.com/FlowiseAI/Flowise/releases/tag/flowise%403.0.10"
+cvss_v3: "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:L"
+uuid: "0c7e7eed-7fbd-4a40-b081-c7194d77508c"
+cwe_ids:
+- "CWE-306"
+- "CWE-620"
+- "CWE-937"
+- "CWE-1035"

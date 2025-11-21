@@ -6,7 +6,7 @@ package_slug: "maven/io.github.ascopes/protobuf-maven-plugin"
 title: "Protobuf Maven Plugin protocDigest is ignored when using protoc from PATH"
 description: "The expected `protocDigest` is ignored when protoc is taken from the
   `PATH`."
-date: "2025-11-04"
+date: "2025-11-15"
 pubdate: "2025-11-04"
 affected_range: "[4.0.0,4.0.2),[,3.10.2)"
 fixed_versions:
@@ -22,6 +22,8 @@ urls:
 - "https://github.com/ascopes/protobuf-maven-plugin/security/advisories/GHSA-j2pc-v64r-mv4f"
 - "https://github.com/ascopes/protobuf-maven-plugin/commit/d3330e7038a296fe595c5470a22019eb70e35b07"
 - "https://github.com/ascopes/protobuf-maven-plugin"
+cvss_v3: "CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:C/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:L/AC:H/AT:P/PR:L/UI:A/VC:N/VI:L/VA:N/SC:N/SI:L/SA:N"
 uuid: "370bbd33-4f1d-46ea-925a-ce3a6239df32"
 cwe_ids:
 - "CWE-354"

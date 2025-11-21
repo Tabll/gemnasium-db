@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-6qv9-48xg-fc7f"
+identifiers:
+- "GHSA-6qv9-48xg-fc7f"
+package_slug: "pypi/langchain-core"
+title: "LangChain Vulnerable to Template Injection via Attribute Access in Prompt
+  Templates"
+description: "Attackers who can control template strings (not just template variables)
+  can:\n- Access Python object attributes and internal properties via attribute traversal\n-
+  Extract sensitive information from object internals (e.g., `__class__`, `__globals__`)\n-
+  Potentially escalate to more severe attacks depending on the objects passed to templates"
+date: "2025-11-20"
+pubdate: "2025-11-20"
+affected_range: ">=1.0.0,<1.0.7||<0.3.80"
+fixed_versions:
+- "1.0.7"
+- "0.3.80"
+affected_versions: "All versions before 0.3.80, all versions starting from 1.0.0 before
+  1.0.7"
+not_impacted: "All versions starting from 0.3.80 before 1.0.0, all versions starting
+  from 1.0.7"
+solution: "Upgrade to versions 0.3.80, 1.0.7 or above."
+urls:
+- "https://github.com/advisories/GHSA-6qv9-48xg-fc7f"
+- "https://github.com/langchain-ai/langchain/security/advisories/GHSA-6qv9-48xg-fc7f"
+- "https://github.com/langchain-ai/langchain/commit/c4b6ba254e1a49ed91f2e268e6484011c540542a"
+- "https://github.com/langchain-ai/langchain/commit/fa7789d6c21222b85211755d822ef698d3b34e00"
+- "https://github.com/langchain-ai/langchain"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "33f49d80-dae4-4607-b60a-d7595e8d4eb0"
+cwe_ids:
+- "CWE-1336"
+- "CWE-937"
+- "CWE-1035"

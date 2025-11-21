@@ -1,0 +1,36 @@
+---
+identifier: "GHSA-2w46-vq8h-98vh"
+identifiers:
+- "GHSA-2w46-vq8h-98vh"
+package_slug: "packagist/shopware/core"
+title: "Shopware 6's password recovery link does not expire after email change"
+description: "When a customer changes their email address after requesting a password
+  reset, the old password reset link (tied to the previous email) remains valid. An
+  attacker with access to the old email inbox is potentially able to reset the customer’s
+  password even after the user changes their email address."
+date: "2025-11-14"
+pubdate: "2025-11-14"
+affected_range: "<6.6.10.9||>=6.7.0.0 <6.7.4.1"
+fixed_versions:
+- "6.6.10.9"
+- "6.7.4.1"
+affected_versions: "All versions starting from 6.7.0.0 before 6.7.4.1, all versions
+  before 6.6.10.9"
+not_impacted: "All versions before 6.7.0.0, all versions starting from 6.7.4.1 before
+  0, all versions starting from 6.6.10.9"
+solution: "Upgrade to versions 6.6.10.9, 6.7.4.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-2w46-vq8h-98vh"
+- "https://github.com/shopware/shopware/security/advisories/GHSA-2w46-vq8h-98vh"
+- "https://github.com/shopware/shopware/commit/1338dd9a11e361639704bf8f09b6878552eb8c13"
+- "https://github.com/shopware/shopware/commit/2fb94855696a90045b81c503d216ba7df8e64e52"
+- "https://github.com/shopware/shopware"
+- "https://github.com/shopware/shopware/releases/tag/v6.6.10.9"
+- "https://github.com/shopware/shopware/releases/tag/v6.7.0.0"
+- "https://github.com/shopware/shopware/releases/tag/v6.7.4.1"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:N/I:H/A:L"
+uuid: "7bafef72-af6f-45a2-82c8-157a7cec9178"
+cwe_ids:
+- "CWE-640"
+- "CWE-937"
+- "CWE-1035"

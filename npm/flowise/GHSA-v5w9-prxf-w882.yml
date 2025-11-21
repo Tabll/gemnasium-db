@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-v5w9-prxf-w882"
+identifiers:
+- "GHSA-v5w9-prxf-w882"
+package_slug: "npm/flowise"
+title: "Flowise has Authentication Bypass Using Unprotected Registration Endpoint
+  (/register)"
+description: "An unauthenticated attacker can exploit the unprotected registration
+  endpoint (/register) to create a new user and bypass authentication."
+date: "2025-11-17"
+pubdate: "2025-11-17"
+affected_range: "=3.0.1"
+fixed_versions: []
+affected_versions: "Version 3.0.1"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-v5w9-prxf-w882"
+- "https://github.com/FlowiseAI/Flowise/security/advisories/GHSA-v5w9-prxf-w882"
+- "https://github.com/FlowiseAI/Flowise"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N"
+uuid: "6f5cb7bd-2eca-4f87-b5f9-9065fe597f19"
+cwe_ids:
+- "CWE-287"
+- "CWE-937"
+- "CWE-1035"
