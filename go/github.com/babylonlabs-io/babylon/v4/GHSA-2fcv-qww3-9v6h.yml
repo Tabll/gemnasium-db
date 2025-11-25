@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-2fcv-qww3-9v6h"
+identifiers:
+- "GHSA-2fcv-qww3-9v6h"
+package_slug: "go/github.com/babylonlabs-io/babylon/v4"
+title: "Babylon's malformed vote extensions are not rejected"
+description: "Adversarial validators can send large vote extensions by using non-existing
+  protobuf tags. This will result in the rejection of the subsequent block proposal.
+  Eventually, all block proposals will be rejected by all validators."
+date: "2025-11-24"
+pubdate: "2025-11-24"
+affected_range: "<4.1.0"
+fixed_versions:
+- "4.1.0"
+affected_versions: "All versions before 4.1.0"
+not_impacted: "All versions starting from 4.1.0"
+solution: "Upgrade to version 4.1.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-2fcv-qww3-9v6h"
+- "https://github.com/babylonlabs-io/babylon/security/advisories/GHSA-2fcv-qww3-9v6h"
+- "https://github.com/babylonlabs-io/babylon/pull/1873/commits/86f38abd2dca5a656195a9954bb569a08d662e2b"
+- "https://github.com/babylonlabs-io/babylon"
+- "https://github.com/babylonlabs-io/babylon/releases/tag/v4.1.0"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:N/I:N/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:H"
+uuid: "0eb417e4-7ae0-4117-ad7d-3c00ca5e5e79"
+cwe_ids:
+- "CWE-770"
+- "CWE-937"
+- "CWE-1035"

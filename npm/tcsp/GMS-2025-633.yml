@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2025-633"
+identifiers:
+- "GMS-2025-633"
+package_slug: "npm/tcsp"
+title: "tcsp contains malware after npm account takeover"
+description: "On November 24th 2025, a new supply chain attack called Shai-Hulud 2.0
+  was launched. This package contains the malicious code that attempts to harvest credentials
+  and infect GitHub and npm repositories. The malicious software executes during the
+  pre-install phase and attempts to harvest credentials from popular online services.
+  It is recommended all credentials be rotated, npm cache is cleared, .node_modules directory
+  is removed and all dependencies be rolled back to previous versions."
+date: "2025-11-25"
+pubdate: "2025-11-25"
+affected_range: "=2.0.2"
+fixed_versions: []
+affected_versions: "Version =2.0.2"
+not_impacted: "All versions not =2.0.2"
+solution: "Unfortunately, there is no solution yet."
+urls:
+- "https://www.wiz.io/blog/shai-hulud-2-0-ongoing-supply-chain-attack"
+- "https://socket.dev/blog/shai-hulud-strikes-again-v2"
+uuid: "b7572ae7-057f-42d9-865c-7257eb903afc"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H"
+cwe_ids:
+- "CWE-506"

@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-xq4h-wqm2-668w"
+identifiers:
+- "GHSA-xq4h-wqm2-668w"
+package_slug: "go/github.com/babylonlabs-io/babylon/v4"
+title: "Babylon's BIP322 signature implementation is not fully compliant to the spec"
+description: "The BIP-322 signature verification does not enforce the SIGHASH value
+  to be SIGHASH_ALL, and therefore is not strictly following the [spec](https://bips.dev/322/)."
+date: "2025-11-24"
+pubdate: "2025-11-24"
+affected_range: "<4.1.0"
+fixed_versions:
+- "4.1.0"
+affected_versions: "All versions before 4.1.0"
+not_impacted: "All versions starting from 4.1.0"
+solution: "Upgrade to version 4.1.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-xq4h-wqm2-668w"
+- "https://github.com/babylonlabs-io/babylon/security/advisories/GHSA-xq4h-wqm2-668w"
+- "https://github.com/babylonlabs-io/babylon/commit/6e8bdd328a47343fcd7ad98d1b0c7267860b019a"
+- "https://bips.dev/322"
+- "https://github.com/babylonlabs-io/babylon"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "4e12a1fb-5e2e-4691-8195-1aca1470f216"
+cwe_ids:
+- "CWE-347"
+- "CWE-937"
+- "CWE-1035"

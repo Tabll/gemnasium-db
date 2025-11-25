@@ -1,0 +1,26 @@
+---
+identifier: "GMS-2025-328"
+identifiers:
+- "GMS-2025-328"
+package_slug: "npm/@voiceflow/dtos-interact"
+title: "@voiceflow/dtos-interact contains malware after npm account takeover"
+description: "On November 24th 2025, a new supply chain attack called Shai-Hulud 2.0
+  was launched. This package contains the malicious code that attempts to harvest credentials
+  and infect GitHub and npm repositories. The malicious software executes during the
+  pre-install phase and attempts to harvest credentials from popular online services.
+  It is recommended all credentials be rotated, npm cache is cleared, .node_modules directory
+  is removed and all dependencies be rolled back to previous versions."
+date: "2025-11-25"
+pubdate: "2025-11-25"
+affected_range: "=1.40.2 || =1.40.1"
+fixed_versions: []
+affected_versions: "Version =1.40.2 and =1.40.1"
+not_impacted: "All versions not =1.40.2 and not =1.40.1"
+solution: "Unfortunately, there is no solution yet."
+urls:
+- "https://www.wiz.io/blog/shai-hulud-2-0-ongoing-supply-chain-attack"
+- "https://socket.dev/blog/shai-hulud-strikes-again-v2"
+uuid: "877b2ea7-8d52-44d7-9c86-c150c737587b"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H"
+cwe_ids:
+- "CWE-506"

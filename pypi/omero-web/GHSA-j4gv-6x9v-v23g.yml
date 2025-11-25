@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-j4gv-6x9v-v23g"
+identifiers:
+- "GHSA-j4gv-6x9v-v23g"
+package_slug: "pypi/omero-web"
+title: "OMERO.web uses jquery-form library, which may be vulnerable to XSS attack"
+description: "OMERO.web uses the jquery-form library throughout to handle form submission
+  and response processing. Due to some unpatched potential vulnerabilities in jquery-form,
+  OMERO.web 5.29.2 and earlier may be susceptible to XSS attacks."
+date: "2025-11-24"
+pubdate: "2025-11-24"
+affected_range: "<5.29.3"
+fixed_versions:
+- "5.29.3"
+affected_versions: "All versions before 5.29.3"
+not_impacted: "All versions starting from 5.29.3"
+solution: "Upgrade to version 5.29.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-j4gv-6x9v-v23g"
+- "https://github.com/ome/omero-web/security/advisories/GHSA-j4gv-6x9v-v23g"
+- "https://github.com/jquery-form/form/issues/604"
+- "https://github.com/ome/omero-web/commit/a3eadf722cfada2b844b97abe65baf5856e77c4f"
+- "https://github.com/ome/omero-web"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:N/VI:N/VA:N/SC:L/SI:L/SA:N"
+uuid: "40796b17-2d07-44c3-85ce-ed602140187d"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"
