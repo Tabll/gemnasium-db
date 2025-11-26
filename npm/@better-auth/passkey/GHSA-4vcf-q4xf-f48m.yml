@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-4vcf-q4xf-f48m"
+identifiers:
+- "GHSA-4vcf-q4xf-f48m"
+package_slug: "npm/@better-auth/passkey"
+title: "Better Auth Passkey Plugin allows passkey deletion through IDOR"
+description: "Affected versions of the better-auth passkey plugin allow users with
+  any valid session to delete arbitrary passkeys via their ID using `POST /passkey/delete-passkey`."
+date: "2025-11-25"
+pubdate: "2025-11-25"
+affected_range: "<1.4.0"
+fixed_versions:
+- "1.4.0"
+affected_versions: "All versions before 1.4.0"
+not_impacted: "All versions starting from 1.4.0"
+solution: "Upgrade to version 1.4.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-4vcf-q4xf-f48m"
+- "https://github.com/better-auth/better-auth/security/advisories/GHSA-4vcf-q4xf-f48m"
+- "https://github.com/better-auth/better-auth/commit/06d68239e"
+- "https://github.com/better-auth/better-auth"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:L"
+uuid: "9eb7dceb-d22e-478e-9563-84f3ca2051ea"
+cwe_ids:
+- "CWE-284"
+- "CWE-639"
+- "CWE-937"
+- "CWE-1035"

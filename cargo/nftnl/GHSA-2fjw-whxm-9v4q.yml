@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-2fjw-whxm-9v4q"
+identifiers:
+- "GHSA-2fjw-whxm-9v4q"
+package_slug: "cargo/nftnl"
+title: "libnftnl has Heap-based Buffer Overflow in nftnl::Batch::with_page_size (nftnl-rs)"
+description: "A heap-buffer-overflow vulnerability exists in the Rust wrapper for
+  libnftnl, triggered via the nftnl::Batch::with_page_size constructor. When a small
+  or malformed page size is provided, the underlying C code allocates an insufficient
+  buffer, leading to out-of-bounds writes during batch initialization.\n\nThe flaw
+  was fixed in commit 94a286f by adding an overflow check:\n```Rust\nbatch_page_size\n.checked_add(crate::nft_nlmsg_maxsize())\n.expect(\"batch_page_size
+  is too large and would overflow\");\n```\nThe fix has not been added to the Rust
+  registry at the time of publish."
+date: "2025-11-25"
+pubdate: "2025-11-25"
+affected_range: "<=0.8.0"
+fixed_versions: []
+affected_versions: "All versions up to 0.8.0"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-2fjw-whxm-9v4q"
+- "https://github.com/mullvad/nftnl-rs/issues/76#issue-3528876468"
+- "https://github.com/mullvad/nftnl-rs/commit/94a286f87e88f431913d19668246de9006790125"
+- "https://github.com/mullvad/nftnl-rs"
+- "https://rustsec.org/advisories/RUSTSEC-2025-0126.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:L/SA:N"
+uuid: "239f4990-64cb-4331-bb4b-132e2fdb99cf"
+cwe_ids:
+- "CWE-122"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-675q-66gf-gqg8"
+identifiers:
+- "GHSA-675q-66gf-gqg8"
+package_slug: "npm/@oneuptime/common"
+title: "OneUptime is Vulnerable to Privilege Escalation via Login Response Manipulation "
+description: "During the login process, the server response included a parameter called
+  isMasterAdmin. By intercepting and modifying this parameter value from false to
+  true, a user is able to gain access to the admin dashboard interface.  However,
+  despite accessing the admin panel, the user does not have sufficient permissions
+  to view or interact with actual data."
+date: "2025-11-25"
+pubdate: "2025-11-25"
+affected_range: "<8.0.5567"
+fixed_versions:
+- "8.0.5567"
+affected_versions: "All versions before 8.0.5567"
+not_impacted: "All versions starting from 8.0.5567"
+solution: "Upgrade to version 8.0.5567 or above."
+urls:
+- "https://github.com/advisories/GHSA-675q-66gf-gqg8"
+- "https://github.com/OneUptime/oneuptime/security/advisories/GHSA-675q-66gf-gqg8"
+- "https://github.com/OneUptime/oneuptime/commit/3e72b2a9a4f50f98cf1f6cf13fa3e405715bb370"
+- "https://github.com/OneUptime/oneuptime"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "51bf5e9d-f4a5-43cb-92e5-db6babf01978"
+cwe_ids:
+- "CWE-284"
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"
