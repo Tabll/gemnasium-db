@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-j9wj-m24m-7jj6"
+identifiers:
+- "GHSA-j9wj-m24m-7jj6"
+package_slug: "npm/willitmerge"
+title: "willitmerge has a Command Injection vulnerability"
+description: "willitmerge describes itself as a command line tool to check if pull
+  requests are mergeable. There is a Command Injection vulnerability in version `willitmerge@0.2.1`.\n\nResources:\n*
+  Project's GitHub source code: https://github.com/shama/willitmerge/\n* Project's
+  npm package: https://www.npmjs.com/package/willitmerge"
+date: "2025-11-26"
+pubdate: "2025-11-26"
+affected_range: "<=0.2.1"
+fixed_versions: []
+affected_versions: "All versions up to 0.2.1"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-j9wj-m24m-7jj6"
+- "https://github.com/shama/willitmerge/security/advisories/GHSA-j9wj-m24m-7jj6"
+- "https://github.com/shama/willitmerge"
+- "https://github.com/shama/willitmerge/blob/2fe91d05191fb05ac6da685828d109a3a5885028/lib/willitmerge.js#L189-L197"
+uuid: "2a336c06-3f2e-4431-91fa-801e1f81015f"
+cwe_ids:
+- "CWE-77"
+- "CWE-937"
+- "CWE-1035"

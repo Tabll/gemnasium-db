@@ -1,0 +1,27 @@
+---
+identifier: "GMS-2025-799"
+identifiers:
+- "GMS-2025-799"
+package_slug: "npm/zapier-platform-legacy-scripting-runner"
+title: "zapier-platform-legacy-scripting-runner contains malware after npm account takeover"
+description: "On November 24th 2025, a new supply chain attack called Shai-Hulud 2.0
+  was launched. This package contains the malicious code that attempts to harvest credentials
+  and infect GitHub and npm repositories. The malicious software executes during the
+  pre-install phase and attempts to harvest credentials from popular online services.
+  It is recommended all credentials be rotated, npm cache is cleared, .node_modules directory
+  is removed and all dependencies be rolled back to previous versions."
+date: "2025-11-26"
+pubdate: "2025-11-26"
+affected_range: "=4.0.3 || =4.0.2 || =4.0.4"
+fixed_versions: []
+affected_versions: "Version =4.0.3 and =4.0.2 and =4.0.4"
+not_impacted: "All versions not =4.0.3 and =4.0.2 and =4.0.4"
+solution: "Unfortunately, there is no solution yet."
+urls:
+- "https://about.gitlab.com/blog/gitlab-discovers-widespread-npm-supply-chain-attack/"
+- "https://www.wiz.io/blog/shai-hulud-2-0-ongoing-supply-chain-attack"
+- "https://socket.dev/blog/shai-hulud-strikes-again-v2"
+uuid: "e9a0cd82-cbae-46fc-86f6-afaed1b61aa6"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H"
+cwe_ids:
+- "CWE-506"

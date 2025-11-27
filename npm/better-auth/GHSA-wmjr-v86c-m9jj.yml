@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-wmjr-v86c-m9jj"
+identifiers:
+- "GHSA-wmjr-v86c-m9jj"
+package_slug: "npm/better-auth"
+title: "Better Auth's multi-session sign-out hook allows forged cookies to revoke
+  arbitrary sessions"
+description: "- Vulnerable component: `multi-session` plugin’s `/sign-out` after-hook
+  (`packages/better-auth/src/plugins/multi-session/index.ts`)\n- Issue: Hook trusts
+  raw multi-session cookies and forwards unsanitized tokens to `internalAdapter.deleteSessions`,
+  allowing forged cookies to revoke arbitrary sessions.\n- Status: Reproduced locally
+  with updated proof-of-concept."
+date: "2025-11-26"
+pubdate: "2025-11-26"
+affected_range: ">=1.3.34 <1.4.0"
+fixed_versions:
+- "1.4.0"
+affected_versions: "All versions starting from 1.3.34 before 1.4.0"
+not_impacted: "All versions before 1.3.34, all versions starting from 1.4.0"
+solution: "Upgrade to version 1.4.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-wmjr-v86c-m9jj"
+- "https://github.com/better-auth/better-auth/security/advisories/GHSA-wmjr-v86c-m9jj"
+- "https://github.com/better-auth/better-auth/commit/cfc453a2a6eb02951f9a0a7c944064936e73eee8"
+- "https://github.com/better-auth/better-auth"
+- "https://github.com/better-auth/better-auth/releases/tag/v1.4.0"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:N/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:H/UI:P/VC:L/VI:L/VA:L/SC:L/SI:L/SA:N"
+uuid: "6646b700-40fd-457f-ad92-cc326a2453f0"
+cwe_ids:
+- "CWE-287"
+- "CWE-345"
+- "CWE-937"
+- "CWE-1035"

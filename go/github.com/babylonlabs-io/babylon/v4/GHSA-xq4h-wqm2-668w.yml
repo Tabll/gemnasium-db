@@ -6,7 +6,7 @@ package_slug: "go/github.com/babylonlabs-io/babylon/v4"
 title: "Babylon's BIP322 signature implementation is not fully compliant to the spec"
 description: "The BIP-322 signature verification does not enforce the SIGHASH value
   to be SIGHASH_ALL, and therefore is not strictly following the [spec](https://bips.dev/322/)."
-date: "2025-11-24"
+date: "2025-11-27"
 pubdate: "2025-11-24"
 affected_range: "<4.1.0"
 fixed_versions:
