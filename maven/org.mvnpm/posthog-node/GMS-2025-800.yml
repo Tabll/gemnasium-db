@@ -1,0 +1,29 @@
+---
+identifier: "GMS-2025-800"
+identifiers:
+- "GMS-2025-800"
+package_slug: "maven/org.mvnpm/posthog-node"
+title: "posthog-node compromised with credential-harvesting malware"
+description: "On November 25th 2025, the Shai-Hulud 2.0 supply chain attack spread to Maven Central
+  through automated mirroring of compromised npm packages. The org.mvnpm:posthog-node:4.18.1 package
+  contains malicious code that attempts to harvest credentials and infect GitHub repositories. The malware
+  was automatically mirrored from the compromised npm version via the mvnpm process that rebuilds npm packages
+  as Maven artifacts. The malicious software executes during the build phase and attempts to harvest credentials
+  from popular online services. It is recommended all credentials be rotated, Maven cache is cleared,
+  target directories are removed and all dependencies be rolled back to previous versions."
+date: "2025-11-27"
+pubdate: "2025-11-27"
+affected_range: "[4.18.1]"
+fixed_versions: []
+affected_versions: "Version 4.18.1"
+not_impacted: "All versions except 4.18.1"
+solution: "Unfortunately, there is no solution yet."
+urls:
+- "https://about.gitlab.com/blog/gitlab-discovers-widespread-npm-supply-chain-attack/"
+- "https://www.wiz.io/blog/shai-hulud-2-0-ongoing-supply-chain-attack"
+- "https://socket.dev/blog/shai-hulud-strikes-again-v2"
+- "https://thehackernews.com/2025/11/shai-hulud-v2-campaign-spreads-from-npm.html"
+uuid: "42542d6b-f23b-4bf7-bf21-d15a9739951d"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H"
+cwe_ids:
+- "CWE-506"
