@@ -9,15 +9,15 @@ description: "A heap-buffer-overflow vulnerability exists in the Rust wrapper fo
   or malformed page size is provided, the underlying C code allocates an insufficient
   buffer, leading to out-of-bounds writes during batch initialization.\n\nThe flaw
   was fixed in commit 94a286f by adding an overflow check:\n```Rust\nbatch_page_size\n.checked_add(crate::nft_nlmsg_maxsize())\n.expect(\"batch_page_size
-  is too large and would overflow\");\n```\nThe fix has not been added to the Rust
-  registry at the time of publish."
-date: "2025-11-25"
+  is too large and would overflow\");\n```"
+date: "2025-12-01"
 pubdate: "2025-11-25"
-affected_range: "<=0.8.0"
-fixed_versions: []
-affected_versions: "All versions up to 0.8.0"
-not_impacted: ""
-solution: "Unfortunately, there is no solution available yet."
+affected_range: "<0.9.0"
+fixed_versions:
+- "0.9.0"
+affected_versions: "All versions before 0.9.0"
+not_impacted: "All versions starting from 0.9.0"
+solution: "Upgrade to version 0.9.0 or above."
 urls:
 - "https://github.com/advisories/GHSA-2fjw-whxm-9v4q"
 - "https://github.com/mullvad/nftnl-rs/issues/76#issue-3528876468"

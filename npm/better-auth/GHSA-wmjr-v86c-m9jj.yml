@@ -10,7 +10,7 @@ description: "- Vulnerable component: `multi-session` plugin’s `/sign-out` aft
   raw multi-session cookies and forwards unsanitized tokens to `internalAdapter.deleteSessions`,
   allowing forged cookies to revoke arbitrary sessions.\n- Status: Reproduced locally
   with updated proof-of-concept."
-date: "2025-11-26"
+date: "2025-12-01"
 pubdate: "2025-11-26"
 affected_range: ">=1.3.34 <1.4.0"
 fixed_versions:

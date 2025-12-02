@@ -1,0 +1,25 @@
+---
+identifier: "GHSA-pq5v-rwp8-p7gm"
+identifiers:
+- "GHSA-pq5v-rwp8-p7gm"
+package_slug: "cargo/rtvm-interpreter"
+title: " rtvm-interpreter lacks sufficient checks in public API"
+description: "The affected function is unsound due to insufficient checks on public
+  struct field."
+date: "2025-12-02"
+pubdate: "2025-12-02"
+affected_range: "<=4.0.0"
+fixed_versions: []
+affected_versions: "All versions up to 4.0.0"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-pq5v-rwp8-p7gm"
+- "https://rustsec.org/advisories/RUSTSEC-2025-0131.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "c8c254df-25f9-4a9f-84d6-b684134b22ac"
+cwe_ids:
+- "CWE-475"
+- "CWE-937"
+- "CWE-1035"
