@@ -10,7 +10,7 @@ description: "On November 24th 2025, a new supply chain attack called Shai-Hulud
   pre-install phase and attempts to harvest credentials from popular online services.
   It is recommended all credentials be rotated, npm cache is cleared, .node_modules directory
   is removed and all dependencies be rolled back to previous versions."
-date: "2025-11-25"
+date: "2025-12-02"
 pubdate: "2025-11-25"
 affected_range: "=8.0.11"
 fixed_versions: []
@@ -18,6 +18,7 @@ affected_versions: "Version =8.0.11"
 not_impacted: "All versions not =8.0.11"
 solution: "Unfortunately, there is no solution yet."
 urls:
+- "https://about.gitlab.com/blog/gitlab-discovers-widespread-npm-supply-chain-attack/"
 - "https://www.wiz.io/blog/shai-hulud-2-0-ongoing-supply-chain-attack"
 - "https://socket.dev/blog/shai-hulud-strikes-again-v2"
 uuid: "04dff4af-2ed5-429a-bc86-04af9ca91c15"
