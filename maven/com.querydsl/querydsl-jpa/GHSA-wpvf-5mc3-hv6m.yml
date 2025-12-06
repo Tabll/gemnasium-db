@@ -8,13 +8,13 @@ description: "## Duplicate Advisory\nThis advisory has been withdrawn because it
   a duplicate of GHSA-6q3q-6v5j-h6vg. This link is maintained to preserve external
   references.\n\n## Original Description\nQuerydsl 5.1.0 allows SQL/HQL injection
   in orderBy in JPAQuery."
-date: "2024-12-03"
+date: "2024-12-05"
 pubdate: "2024-11-20"
-affected_range: "[,5.1.0]"
+affected_range: "(0)"
 fixed_versions: []
-affected_versions: "All versions up to 5.1.0"
+affected_versions: "Version 0"
 not_impacted: ""
-solution: "Unfortunately, there is no solution available yet."
+solution: "Nothing to be done."
 urls:
 - "https://github.com/advisories/GHSA-wpvf-5mc3-hv6m"
 - "https://nvd.nist.gov/vuln/detail/CVE-2024-49203"

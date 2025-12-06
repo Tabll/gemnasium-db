@@ -1,0 +1,42 @@
+---
+identifier: "GHSA-xrv8-2pf5-f3q7"
+identifiers:
+- "GHSA-xrv8-2pf5-f3q7"
+package_slug: "cargo/nitro-tpm-pcr-compute"
+title: "nitro-tpm-pcr-compute may allow kernel command line modification by an account
+  operator"
+description: "Adding default PCR12 validation to ensure that account operators can
+  not modify kernel command line parameters, potentially bypassing root filesystem
+  integrity validation.\n\nAttestable AMIs are based on the systemd Unified Kernel
+  Image (UKI) concept which uses systemd-boot to create a single measured UEFI binary
+  from a Linux kernel, its initramfs, and kernel command line. The embedded kernel
+  command line contains a dm-verity hash value that establishes trust in the root
+  file system.\n\nWhen UEFI Secure Boot is disabled, systemd-boot appends any command
+  line it receives to the kernel command line. Account operators with the ability
+  to modify UefiData can install a boot variable with a command line that deactivates
+  root file system integrity validation, while preserving the original PCR4 value.\n\nSystemd-boot
+  provides separate measurement of command line modifications in PCR12."
+date: "2025-12-05"
+pubdate: "2025-12-05"
+affected_range: "<1.1.0"
+fixed_versions:
+- "1.1.0"
+affected_versions: "All versions before 1.1.0"
+not_impacted: "All versions starting from 1.1.0"
+solution: "Upgrade to version 1.1.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-xrv8-2pf5-f3q7"
+- "https://github.com/aws/nitrotpm-attestation-samples/security/advisories/GHSA-xrv8-2pf5-f3q7"
+- "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/attestable-ami.html"
+- "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/uefi-secure-boot.html"
+- "https://github.com/aws/NitroTPM-Tools"
+- "https://github.com/aws/NitroTPM-Tools/blob/main/CHANGELOG.md"
+- "https://github.com/aws/NitroTPM-Tools/releases/tag/v1.1.0"
+- "https://github.com/aws/nitrotpm-attestation-samples"
+- "https://www.freedesktop.org/software/systemd/man/latest/systemd-stub.html"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:N"
+uuid: "c532b6ca-5a03-4e41-8db7-7108a2f664f0"
+cwe_ids:
+- "CWE-77"
+- "CWE-937"
+- "CWE-1035"
