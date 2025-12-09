@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-m6wq-66p2-c8pc"
+identifiers:
+- "GHSA-m6wq-66p2-c8pc"
+package_slug: "go/github.com/babylonlabs-io/babylon/v4"
+title: "Babylon Nil BlockHash in BLS vote extensions triggers panics in consensus
+  handlers"
+description: "A vulnerability exists in Babylon’s BLS vote extension processing where
+  a malicious active validator can submit a VoteExtension with the `block_hash` field
+  omitted from the protobuf serialization. Because protobuf fields are optional, unmarshalling
+  succeeds but leaves `BlockHash` as nil. Babylon then dereferences this nil pointer
+  in consensus-critical code paths (notably `VerifyVoteExtension`, and also proposal-time
+  vote verification), causing a runtime panic."
+date: "2025-12-08"
+pubdate: "2025-12-08"
+affected_range: "<4.2.0"
+fixed_versions:
+- "4.2.0"
+affected_versions: "All versions before 4.2.0"
+not_impacted: "All versions starting from 4.2.0"
+solution: "Upgrade to version 4.2.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-m6wq-66p2-c8pc"
+- "https://github.com/babylonlabs-io/babylon/security/advisories/GHSA-m6wq-66p2-c8pc"
+- "https://github.com/babylonlabs-io/babylon/commit/f79ad58c1d5bcab3451cb7a47c91e713935917d7"
+- "https://github.com/babylonlabs-io/babylon"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+uuid: "039fa6bd-733a-4c32-9fb1-beb8b1d72092"
+cwe_ids:
+- "CWE-476"
+- "CWE-937"
+- "CWE-1035"

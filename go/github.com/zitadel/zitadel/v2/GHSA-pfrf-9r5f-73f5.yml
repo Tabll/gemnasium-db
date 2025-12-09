@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-pfrf-9r5f-73f5"
+identifiers:
+- "GHSA-pfrf-9r5f-73f5"
+package_slug: "go/github.com/zitadel/zitadel/v2"
+title: "ZITADEL Vulnerable to Account Takeover Due to Improper Instance Validation
+  in V2 Login"
+description: "A potential vulnerability exists in ZITADEL's password reset mechanism
+  in login V2. ZITADEL utilizes the Forwarded or X-Forwarded-Host header from incoming
+  requests to construct the URL for the password reset confirmation link. This link,
+  containing a secret code, is then emailed to the user."
+date: "2025-12-08"
+pubdate: "2025-12-08"
+affected_range: "<1.80.0-v2.20.0.20251208091519-4c879b47334e"
+fixed_versions:
+- "1.80.0-v2.20.0.20251208091519-4c879b47334e"
+affected_versions: "All versions before 1.80.0-v2.20.0.20251208091519-4c879b47334e"
+not_impacted: "All versions starting from 1.80.0-v2.20.0.20251208091519-4c879b47334e"
+solution: "Upgrade to version 1.80.0-v2.20.0.20251208091519-4c879b47334e or above."
+urls:
+- "https://github.com/advisories/GHSA-pfrf-9r5f-73f5"
+- "https://github.com/zitadel/zitadel/security/advisories/GHSA-pfrf-9r5f-73f5"
+- "https://github.com/zitadel/zitadel/commit/4c879b47334e01d4fcab921ac1b44eda39acdb96"
+- "https://github.com/zitadel/zitadel"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N"
+uuid: "1efd917e-15f3-4d4f-80c7-c6093f2751a2"
+cwe_ids:
+- "CWE-601"
+- "CWE-937"
+- "CWE-1035"
