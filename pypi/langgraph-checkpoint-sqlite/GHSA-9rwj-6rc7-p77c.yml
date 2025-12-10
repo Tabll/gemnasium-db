@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-9rwj-6rc7-p77c"
+identifiers:
+- "GHSA-9rwj-6rc7-p77c"
+package_slug: "pypi/langgraph-checkpoint-sqlite"
+title: "LangGraph's SQLite is vulnerable to SQL injection via metadata filter key
+  in SQLite checkpointer list method"
+description: "Attackers who control metadata filter keys can execute arbitrary sql
+  queries against the database."
+date: "2025-12-10"
+pubdate: "2025-12-10"
+affected_range: "<3.0.1"
+fixed_versions:
+- "3.0.1"
+affected_versions: "All versions before 3.0.1"
+not_impacted: "All versions starting from 3.0.1"
+solution: "Upgrade to version 3.0.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-9rwj-6rc7-p77c"
+- "https://github.com/langchain-ai/langgraph/security/advisories/GHSA-9rwj-6rc7-p77c"
+- "https://github.com/langchain-ai/langgraph/commit/297242913f8ad2143ee3e2f72e67db0911d48e2a"
+- "https://github.com/langchain-ai/langgraph"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:L/A:N"
+uuid: "2b4b0890-ad05-4337-a13c-93f91274c881"
+cwe_ids:
+- "CWE-89"
+- "CWE-937"
+- "CWE-1035"

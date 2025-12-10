@@ -1,0 +1,38 @@
+---
+identifier: "GHSA-5j8p-438x-rgg5"
+identifiers:
+- "GHSA-5j8p-438x-rgg5"
+package_slug: "packagist/onelogin/php-saml"
+title: " SAML PHP Toolkit Vulnerability on xmlseclibs CVE-2025-66475 "
+description: "**Summary**\n\nThere is a critical vulnerability on xmlseclibs [CVE-2025-66475](https://github.com/robrichards/xmlseclibs/security/advisories/GHSA-c4cc-x928-vjw9),
+  a dependency of php-saml\n\nUpdate to the following versions of php-saml which forces
+  the use of patched versions of xmlseclibs:\n- [2.21.1](https://github.com/SAML-Toolkits/php-saml/releases/tag/2.21.1)\n-
+  [3.8.1](https://github.com/SAML-Toolkits/php-saml/releases/tag/3.8.1)\n- [4.3.1](https://github.com/SAML-Toolkits/php-saml/releases/tag/4.3.1)\n\n\n**Impact**\n\nSignature
+  Wrapping Vulnerabilities allows an attacker to impersonate a user."
+date: "2025-12-09"
+pubdate: "2025-12-09"
+affected_range: "<2.21.1||>=3.0.0 <3.8.1||>=4.0.0 <4.3.1"
+fixed_versions:
+- "2.21.1"
+- "3.8.1"
+- "4.3.1"
+affected_versions: "All versions before 2.21.1, all versions starting from 3.0.0 before
+  3.8.1, all versions starting from 4.0.0 before 4.3.1"
+not_impacted: "All versions starting from 2.21.1 before 3.0.0, all versions starting
+  from 3.8.1 before 4.0.0, all versions starting from 4.3.1"
+solution: "Upgrade to versions 2.21.1, 3.8.1, 4.3.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-5j8p-438x-rgg5"
+- "https://github.com/SAML-Toolkits/php-saml/security/advisories/GHSA-5j8p-438x-rgg5"
+- "https://github.com/robrichards/xmlseclibs/security/advisories/GHSA-c4cc-x928-vjw9"
+- "https://github.com/SAML-Toolkits/php-saml"
+- "https://github.com/SAML-Toolkits/php-saml/releases/tag/2.21.1"
+- "https://github.com/SAML-Toolkits/php-saml/releases/tag/3.8.1"
+- "https://github.com/SAML-Toolkits/php-saml/releases/tag/4.3.1"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N"
+uuid: "d3f7b02f-681a-483c-991b-4aec48a5ce2d"
+cwe_ids:
+- "CWE-1395"
+- "CWE-937"
+- "CWE-1035"

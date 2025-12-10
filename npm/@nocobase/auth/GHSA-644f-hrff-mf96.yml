@@ -1,0 +1,38 @@
+---
+identifier: "GHSA-644f-hrff-mf96"
+identifiers:
+- "GHSA-644f-hrff-mf96"
+package_slug: "npm/@nocobase/auth"
+title: "Duplicate Advisory: Authentication Bypass via Default JWT Secret in NocoBase
+  docker-compose Deployments"
+description: "## Duplicate Advisory\nThis advisory has been withdrawn because it is
+  a duplicate of GHSA-mv7p-34fv-4874. This link is maintained to preserve external
+  references.\n\n## Original Description\nA vulnerability was detected in nocobase
+  up to 1.9.4/2.0.0-alpha.37. The affected element is an unknown function of the file
+  nocobase\\packages\\core\\auth\\src\\base\\jwt-service.ts of the component JWT Service.
+  The manipulation of the argument API_KEY results in use of hard-coded cryptographic
+  key\n . The attack can be launched remotely. A high complexity level is associated
+  with this attack. The exploitability is described as difficult. The exploit is now
+  public and may be used. The vendor was contacted early about this disclosure but
+  did not respond in any way."
+date: "2025-12-09"
+pubdate: "2025-12-02"
+affected_range: "<1.9.23"
+fixed_versions:
+- "1.9.23"
+affected_versions: "All versions before 1.9.23"
+not_impacted: "All versions starting from 1.9.23"
+solution: "Upgrade to version 1.9.23 or above."
+urls:
+- "https://github.com/advisories/GHSA-644f-hrff-mf96"
+- "https://nvd.nist.gov/vuln/detail/CVE-2025-13877"
+- "https://gist.github.com/H2u8s/f3ede60d7ecfe598ae452aa5a8fbb90d"
+- "https://vuldb.com/?ctiid.334033"
+- "https://vuldb.com/?id.334033"
+- "https://vuldb.com/?submit.692205"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L"
+cvss_v4: "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N"
+uuid: "dceaf37d-9ebc-45cc-9f61-bacb2de9f3ea"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"
