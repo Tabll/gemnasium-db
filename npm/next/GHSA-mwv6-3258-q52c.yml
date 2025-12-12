@@ -1,0 +1,61 @@
+---
+identifier: "GHSA-mwv6-3258-q52c"
+identifiers:
+- "GHSA-mwv6-3258-q52c"
+package_slug: "npm/next"
+title: "Next Vulnerable to Denial of Service with Server Components"
+description: "A vulnerability affects certain React packages for versions 19.0.0,
+  19.0.1, 19.1.0, 19.1.1, 19.1.2, 19.2.0, and 19.2.1 and frameworks that use the affected
+  packages, including Next.js 15.x and 16.x using the App Router. The issue is tracked
+  upstream as [CVE-2025-55184](https://www.cve.org/CVERecord?id=CVE-2025-55184).\n\nA
+  malicious HTTP request can be crafted and sent to any App Router endpoint that,
+  when deserialized, can cause the server process to hang and consume CPU. This can
+  result in denial of service in unpatched environments."
+date: "2025-12-11"
+pubdate: "2025-12-11"
+affected_range: ">=13.3.0 <14.2.34||>=15.0.0-canary.0 <15.0.6||>=15.1.1-canary.0 <15.1.10||>=15.2.0-canary.0
+  <15.2.7||>=15.3.0-canary.0 <15.3.7||>=15.4.0-canary.0 <15.4.9||>=15.5.1-canary.0
+  <15.5.8||>=15.6.0-canary.0 <15.6.0-canary.59||>=16.0.0-beta.0 <16.0.9||>=16.1.0-canary.0
+  <16.1.0-canary.17"
+fixed_versions:
+- "14.2.34"
+- "15.0.6"
+- "15.1.10"
+- "15.2.7"
+- "15.3.7"
+- "15.4.9"
+- "15.5.8"
+- "15.6.0-canary.59"
+- "16.0.9"
+- "16.1.0-canary.17"
+affected_versions: "All versions starting from 13.3.0 before 14.2.34, all versions
+  starting from 15.0.0-canary.0 before 15.0.6, all versions starting from 15.1.1-canary.0
+  before 15.1.10, all versions starting from 15.2.0-canary.0 before 15.2.7, all versions
+  starting from 15.3.0-canary.0 before 15.3.7, all versions starting from 15.4.0-canary.0
+  before 15.4.9, all versions starting from 15.5.1-canary.0 before 15.5.8, all versions
+  starting from 15.6.0-canary.0 before 15.6.0-canary.59, all versions starting from
+  16.0.0-beta.0 before 16.0.9, all versions starting from 16.1.0-canary.0 before 16.1.0-canary.17"
+not_impacted: "All versions before 13.3.0, all versions starting from 14.2.34 before
+  15.0.0-canary.0, all versions starting from 15.0.6 before 15.1.1-canary.0, all versions
+  starting from 15.1.10 before 15.2.0-canary.0, all versions starting from 15.2.7
+  before 15.3.0-canary.0, all versions starting from 15.3.7 before 15.4.0-canary.0,
+  all versions starting from 15.4.9 before 15.5.1-canary.0, all versions starting
+  from 15.5.8 before 15.6.0-canary.0, all versions starting from 15.6.0-canary.59
+  before 16.0.0-beta.0, all versions starting from 16.0.9 before 16.1.0-canary.0,
+  all versions starting from 16.1.0-canary.17"
+solution: "Upgrade to versions 14.2.34, 15.0.6, 15.1.10, 15.2.7, 15.3.7, 15.4.9, 15.5.8,
+  15.6.0-canary.59, 16.0.9, 16.1.0-canary.17 or above."
+urls:
+- "https://github.com/advisories/GHSA-mwv6-3258-q52c"
+- "https://github.com/vercel/next.js/security/advisories/GHSA-mwv6-3258-q52c"
+- "https://github.com/vercel/next.js"
+- "https://nextjs.org/blog/security-update-2025-12-11"
+- "https://www.cve.org/CVERecord?id=CVE-2025-55184"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "e4545a47-122b-450b-84dc-f41bfbaca182"
+cwe_ids:
+- "CWE-1395"
+- "CWE-400"
+- "CWE-502"
+- "CWE-937"
+- "CWE-1035"

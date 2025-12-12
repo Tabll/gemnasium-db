@@ -9,7 +9,7 @@ description: "maxminddb prior to version 0.27 declared `Reader::open_mmap` as sa
   despite wrapping an inherently unsafe memmap2 operation with no extra step done
   to guarantee safety. This could have led to undefined behaviour if the file were
   to be modified on disk while the memory map was still active."
-date: "2025-12-02"
+date: "2025-12-11"
 pubdate: "2025-12-02"
 affected_range: ">=0.11.0 <0.27.0"
 fixed_versions:
@@ -23,8 +23,8 @@ urls:
 - "https://github.com/oschwald/maxminddb-rust/commit/98f0e4fff9678c841ed33f3b8a46322f6163c32a"
 - "https://github.com/oschwald/maxminddb-rust"
 - "https://rustsec.org/advisories/RUSTSEC-2025-0132.html"
-cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
-cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:L/AC:L/AT:N/PR:H/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
 uuid: "9044c2f2-2578-47cc-858c-65ca1fc2a97c"
 cwe_ids:
 - "CWE-915"

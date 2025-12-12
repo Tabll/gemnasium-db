@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-9qr9-h5gf-34mp"
 identifiers:
+- "CVE-2025-55182"
 - "GHSA-9qr9-h5gf-34mp"
 package_slug: "npm/next"
 title: "Next.js is vulnerable to RCE in React flight protocol"
@@ -15,7 +16,7 @@ description: "A vulnerability affects certain React packages<sup>1</sup> for ver
   users of stable 15.x or 16.x Next.js versions should upgrade to a patched, stable
   version immediately.\n\n<sup>1</sup> The affected React packages are:\n- react-server-dom-parcel\n-
   react-server-dom-turbopack\n- react-server-dom-webpack"
-date: "2025-12-08"
+date: "2025-12-11"
 pubdate: "2025-12-03"
 affected_range: ">=14.3.0-canary.77 <15.0.5||>=15.1.0-canary.0 <15.1.9||>=15.2.0-canary.0
   <15.2.6||>=15.3.0-canary.0 <15.3.6||>=15.4.0-canary.0 <15.4.8||>=15.5.0-canary.0
@@ -44,7 +45,9 @@ solution: "Upgrade to versions 15.0.5, 15.1.9, 15.2.6, 15.3.6, 15.4.8, 15.5.7, 1
   or above."
 urls:
 - "https://github.com/advisories/GHSA-9qr9-h5gf-34mp"
+- "https://github.com/facebook/react/security/advisories/GHSA-fv66-9v8q-g76r"
 - "https://github.com/vercel/next.js/security/advisories/GHSA-9qr9-h5gf-34mp"
+- "https://github.com/vitejs/vite-plugin-react/security/advisories/GHSA-fmh4-wr37-44fp"
 - "https://nvd.nist.gov/vuln/detail/CVE-2025-55182"
 - "https://github.com/vercel/next.js"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H"
