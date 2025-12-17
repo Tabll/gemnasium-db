@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-x732-6j76-qmhm"
+identifiers:
+- "GHSA-x732-6j76-qmhm"
+package_slug: "npm/better-auth"
+title: "Better Auth's rou3 Dependency has Double-Slash Path Normalization which can
+  Bypass disabledPaths Config and Rate Limits"
+description: "An issue in the underlying router library **rou3** can cause `/path`
+  and `//path` to be treated as identical routes. If your environment does **not**
+  normalize incoming URLs (e.g., by collapsing multiple slashes), this can allow bypasses
+  of `disabledPaths` and path-based rate limits."
+date: "2025-12-16"
+pubdate: "2025-12-16"
+affected_range: "<1.4.5"
+fixed_versions:
+- "1.4.5"
+affected_versions: "All versions before 1.4.5"
+not_impacted: "All versions starting from 1.4.5"
+solution: "Upgrade to version 1.4.5 or above."
+urls:
+- "https://github.com/advisories/GHSA-x732-6j76-qmhm"
+- "https://github.com/better-auth/better-auth/security/advisories/GHSA-x732-6j76-qmhm"
+- "https://github.com/better-auth/better-auth"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:H"
+uuid: "a2940ee1-fffa-42d4-92e9-2b77282023e8"
+cwe_ids:
+- "CWE-400"
+- "CWE-41"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-wh6m-h6f4-rjf4"
+identifiers:
+- "GHSA-wh6m-h6f4-rjf4"
+package_slug: "go/github.com/abhinavxd/libredesk"
+title: "Libredesk has Improper Neutralization of  HTML Tags in a Web Page"
+description: "LibreDesk is vulnerable to **stored HTML injection** in the contact
+  notes feature. When adding notes via `POST /api/v1/contacts/{id}/notes`, the backend
+  automatically wraps user input in `<p>` tags. However, by intercepting the request
+  and removing the `<p>` tag, an attacker can inject arbitrary HTML elements such
+  as forms and images, which are then stored and rendered without proper sanitization.
+  This can lead to phishing, CSRF-style forced actions, and UI redress attacks.\n\n---"
+date: "2025-12-16"
+pubdate: "2025-12-16"
+affected_range: "<=0.8.3-beta"
+fixed_versions: []
+affected_versions: "All versions up to 0.8.3-beta"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-wh6m-h6f4-rjf4"
+- "https://github.com/abhinavxd/libredesk/security/advisories/GHSA-wh6m-h6f4-rjf4"
+- "https://github.com/abhinavxd/libredesk"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N"
+uuid: "ffde32db-0cff-43ec-9788-322d41b629b1"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

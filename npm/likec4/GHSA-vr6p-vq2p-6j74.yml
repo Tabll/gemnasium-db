@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-vr6p-vq2p-6j74"
+identifiers:
+- "GHSA-vr6p-vq2p-6j74"
+package_slug: "npm/likec4"
+title: "LikeC4 has RCE through vulnerable React and Next.js versions"
+description: "LikeC4 uses React and Next.js: which contain known RCE vulnerabilities,
+  as seen in CVE-2025-55182."
+date: "2025-12-15"
+pubdate: "2025-12-15"
+affected_range: "<=1.46.1"
+fixed_versions: []
+affected_versions: "All versions up to 1.46.1"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-vr6p-vq2p-6j74"
+- "https://github.com/likec4/likec4/security/advisories/GHSA-vr6p-vq2p-6j74"
+- "https://nvd.nist.gov/vuln/detail/CVE-2025-55182"
+- "https://github.com/likec4/likec4"
+- "https://react.dev/blog/2025/12/11/denial-of-service-and-source-code-exposure-in-react-server-components"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H"
+uuid: "c5b9fd56-7bb8-40af-a664-340c7ddb371d"
+cwe_ids:
+- "CWE-502"
+- "CWE-937"
+- "CWE-1035"
