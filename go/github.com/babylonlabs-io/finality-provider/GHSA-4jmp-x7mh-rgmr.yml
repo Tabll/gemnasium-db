@@ -6,7 +6,7 @@ package_slug: "go/github.com/babylonlabs-io/finality-provider"
 title: "Finality Provider vulnerable to anti-slashing bypassing due to misconfiguration"
 description: "The anti-slashing is not effective if the attacker can access EOTS manager
   endpoints."
-date: "2025-12-12"
+date: "2025-12-18"
 pubdate: "2025-12-12"
 affected_range: "<=1.0.3"
 fixed_versions: []

@@ -10,15 +10,15 @@ description: "The Dolibarr backend provides the function of adding Menu, and sup
   and it will be executed when viewing the created Menu:\n\n- htdocs/admin/menus/edit.php\n\n![](https://raw.githubusercontent.com/wh0amitx/Misc/main/images/image-20240228164445656.png)\n\nAs
   you can see, in edit.php, if the created menu is set to `$menu->perms`, the `dol_eval()`
   method will be called. Following the `dol_eval()` method, we can see that it will
-  filter the dangerous php functions in `$menu->perms` through the blocklist set in
-  `$forbiddenphpfunctions`:\n\n![](https://raw.githubusercontent.com/wh0amitx/Misc/main/images/image-20240228164725548.png)\n\nHowever,
-  the blocklist here is not comprehensive. For example, the `include_once` and `require_once`
-  functions can easily pass the blocklist check, which will cause file inclusion vulnerabilities.
-  Moreover, if the `allow_url_include` option is enabled in php.ini, arbitrary code
-  execution will occur. **The most serious thing is that we can cooperate with the
-  file upload at `/htdocs/user/document.php?id=1&uploadform=1` to achieve more general
-  arbitrary code execution.**"
-date: "2025-07-21"
+  filter the dangerous php functions in `$menu->perms` through the `blacklist` set
+  in `$forbiddenphpfunctions`:\n\n![](https://raw.githubusercontent.com/wh0amitx/Misc/main/images/image-20240228164725548.png)\n\nHowever,
+  the `blacklist` here is not comprehensive. For example, the `include_once` and `require_once`
+  functions can easily pass the `blacklist` check, which will cause file inclusion
+  vulnerabilities. Moreover, if the `allow_url_include` option is enabled in php.ini,
+  arbitrary code execution will occur. **The most serious thing is that we can cooperate
+  with the file upload at `/htdocs/user/document.php?id=1&uploadform=1` to achieve
+  more general arbitrary code execution.**"
+date: "2025-12-18"
 pubdate: "2025-07-21"
 affected_range: "<=21.0.2"
 fixed_versions: []

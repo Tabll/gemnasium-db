@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-7hh9-gp72-wh7h"
+identifiers:
+- "GHSA-7hh9-gp72-wh7h"
+package_slug: "packagist/auth0/login"
+title: "Auth0 Laravel SDK has Improper Audience Validation via Auth0-PHP SDK dependency"
+description: "In applications built with the Auth0-PHP SDK, the audience validation
+  in access tokens is performed improperly. Without proper validation, affected applications
+  may accept ID tokens as Access tokens."
+date: "2025-12-17"
+pubdate: "2025-12-17"
+affected_range: ">=7.0.0 <7.20.0"
+fixed_versions:
+- "7.20.0"
+affected_versions: "All versions starting from 7.0.0 before 7.20.0"
+not_impacted: "All versions before 7.0.0, all versions starting from 7.20.0"
+solution: "Upgrade to version 7.20.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-7hh9-gp72-wh7h"
+- "https://github.com/auth0/laravel-auth0/security/advisories/GHSA-7hh9-gp72-wh7h"
+- "https://github.com/auth0/laravel-auth0/commit/a1c3344dc0e5a36e8f56c8cfc535728d3d7558f3"
+- "https://github.com/auth0/laravel-auth0"
+- "https://github.com/auth0/laravel-auth0/releases/tag/7.20.0"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:N"
+uuid: "a1849455-0f0c-4668-879b-8375481eb225"
+cwe_ids:
+- "CWE-1395"
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"
