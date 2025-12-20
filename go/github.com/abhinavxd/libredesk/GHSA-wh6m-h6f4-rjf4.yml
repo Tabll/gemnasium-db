@@ -10,16 +10,18 @@ description: "LibreDesk is vulnerable to **stored HTML injection** in the contac
   and removing the `<p>` tag, an attacker can inject arbitrary HTML elements such
   as forms and images, which are then stored and rendered without proper sanitization.
   This can lead to phishing, CSRF-style forced actions, and UI redress attacks.\n\n---"
-date: "2025-12-16"
+date: "2025-12-20"
 pubdate: "2025-12-16"
-affected_range: "<=0.8.3-beta"
-fixed_versions: []
-affected_versions: "All versions up to 0.8.3-beta"
-not_impacted: ""
-solution: "Unfortunately, there is no solution available yet."
+affected_range: "<0.8.6-beta"
+fixed_versions:
+- "0.8.6-beta"
+affected_versions: "All versions before 0.8.6-beta"
+not_impacted: "All versions starting from 0.8.6-beta"
+solution: "Upgrade to version 0.8.6-beta or above."
 urls:
 - "https://github.com/advisories/GHSA-wh6m-h6f4-rjf4"
 - "https://github.com/abhinavxd/libredesk/security/advisories/GHSA-wh6m-h6f4-rjf4"
+- "https://github.com/abhinavxd/libredesk/commit/270347849943ac6a43e9fd6ebdc99c71841900eb"
 - "https://github.com/abhinavxd/libredesk"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N"
 cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N"

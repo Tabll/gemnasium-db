@@ -1,0 +1,37 @@
+---
+identifier: "GHSA-93vm-mqpw-8wh3"
+identifiers:
+- "GHSA-93vm-mqpw-8wh3"
+package_slug: "maven/org.keycloak/keycloak-ldap-federation"
+title: "Duplicate Advisory: Keycloak LDAP User Federation provider enables admin-triggered
+  untrusted Java deserialization"
+description: "### Duplicate Advisory\nThis advisory has been withdrawn because it
+  is a duplicate of GHSA-4hx9-48xh-5mxr. This link is maintained to preserve external
+  references.\n\n### Original Description\n\nA flaw was found in the Keycloak LDAP
+  User Federation provider. This vulnerability allows an authenticated realm administrator
+  to trigger deserialization of untrusted Java objects via a malicious LDAP server
+  configuration."
+date: "2025-12-19"
+pubdate: "2025-11-25"
+affected_range: "[,26.4.6)"
+fixed_versions:
+- "26.4.6"
+affected_versions: "All versions before 26.4.6"
+not_impacted: "All versions starting from 26.4.6"
+solution: "Upgrade to version 26.4.6 or above."
+urls:
+- "https://github.com/advisories/GHSA-93vm-mqpw-8wh3"
+- "https://nvd.nist.gov/vuln/detail/CVE-2025-13467"
+- "https://github.com/keycloak/keycloak/issues/44478"
+- "https://github.com/keycloak/keycloak/commit/754c070cf8ca187dcc71f0f72ff3130ff2195328"
+- "https://access.redhat.com/errata/RHSA-2025:22088"
+- "https://access.redhat.com/security/cve/CVE-2025-13467"
+- "https://bugzilla.redhat.com/show_bug.cgi?id=2416038"
+- "https://github.com/keycloak/keycloak"
+- "https://github.com/keycloak/keycloak/releases/tag/26.4.6"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:L/I:L/A:N"
+uuid: "88686808-cc35-47b0-9200-9af4c5995b35"
+cwe_ids:
+- "CWE-502"
+- "CWE-937"
+- "CWE-1035"
