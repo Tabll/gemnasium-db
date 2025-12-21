@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-83jg-m2pm-4jxj"
+identifiers:
+- "GHSA-83jg-m2pm-4jxj"
+package_slug: "pypi/cowrie"
+title: "Cowrie has a SSRF vulnerability in wget/curl emulation enabling DDoS amplification"
+description: "A Server-Side Request Forgery (SSRF) vulnerability in Cowrie's emulated
+  shell mode allows unauthenticated attackers to abuse the honeypot as an amplification
+  vector for HTTP-based denial-of-service attacks against arbitrary third-party hosts."
+date: "2025-12-20"
+pubdate: "2025-12-20"
+affected_range: "<2.9.0"
+fixed_versions:
+- "2.9.0"
+affected_versions: "All versions before 2.9.0"
+not_impacted: "All versions starting from 2.9.0"
+solution: "Upgrade to version 2.9.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-83jg-m2pm-4jxj"
+- "https://github.com/cowrie/cowrie/security/advisories/GHSA-83jg-m2pm-4jxj"
+- "https://github.com/cowrie/cowrie/pull/2800"
+- "https://github.com/cowrie/cowrie"
+- "https://github.com/cowrie/cowrie/releases/tag/v2.9.0"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:L"
+uuid: "ef7d3af9-9555-4fa3-b816-7b71b49b5830"
+cwe_ids:
+- "CWE-918"
+- "CWE-937"
+- "CWE-1035"
