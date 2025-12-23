@@ -3,10 +3,12 @@ identifier: "GHSA-vr6p-vq2p-6j74"
 identifiers:
 - "GHSA-vr6p-vq2p-6j74"
 package_slug: "npm/likec4"
-title: "LikeC4 has RCE through vulnerable React and Next.js versions"
-description: "LikeC4 uses React and Next.js: which contain known RCE vulnerabilities,
-  as seen in CVE-2025-55182."
-date: "2025-12-15"
+title: "Withdrawn Advisory: LikeC4 has RCE through vulnerable React and Next.js versions"
+description: "### Withdrawn Advisory\nThis advisory has been withdrawn because LikeC4
+  isn’t impacted by CVE-2025-55182 because it doesn’t ship React. React is a peer
+  dependency.\n\n### Original Description\nLikeC4 uses React and Next.js: which contain
+  known RCE vulnerabilities, as seen in CVE-2025-55182."
+date: "2025-12-22"
 pubdate: "2025-12-15"
 affected_range: "<=1.46.1"
 fixed_versions: []
@@ -17,6 +19,7 @@ urls:
 - "https://github.com/advisories/GHSA-vr6p-vq2p-6j74"
 - "https://github.com/likec4/likec4/security/advisories/GHSA-vr6p-vq2p-6j74"
 - "https://nvd.nist.gov/vuln/detail/CVE-2025-55182"
+- "https://github.com/github/advisory-database/pull/6561#issue-3745533679"
 - "https://github.com/likec4/likec4"
 - "https://react.dev/blog/2025/12/11/denial-of-service-and-source-code-exposure-in-react-server-components"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H"
