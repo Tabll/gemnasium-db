@@ -11,7 +11,7 @@ description: "### Duplicate Advisory\nThis advisory has been withdrawn because i
   User Federation provider. This vulnerability allows an authenticated realm administrator
   to trigger deserialization of untrusted Java objects via a malicious LDAP server
   configuration."
-date: "2025-12-19"
+date: "2025-12-23"
 pubdate: "2025-11-25"
 affected_range: "[,26.4.6)"
 fixed_versions:
@@ -25,6 +25,9 @@ urls:
 - "https://github.com/keycloak/keycloak/issues/44478"
 - "https://github.com/keycloak/keycloak/commit/754c070cf8ca187dcc71f0f72ff3130ff2195328"
 - "https://access.redhat.com/errata/RHSA-2025:22088"
+- "https://access.redhat.com/errata/RHSA-2025:22089"
+- "https://access.redhat.com/errata/RHSA-2025:22090"
+- "https://access.redhat.com/errata/RHSA-2025:22091"
 - "https://access.redhat.com/security/cve/CVE-2025-13467"
 - "https://bugzilla.redhat.com/show_bug.cgi?id=2416038"
 - "https://github.com/keycloak/keycloak"

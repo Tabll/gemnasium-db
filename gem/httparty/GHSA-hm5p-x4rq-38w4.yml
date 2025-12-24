@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-hm5p-x4rq-38w4"
+identifiers:
+- "GHSA-hm5p-x4rq-38w4"
+package_slug: "gem/httparty"
+title: "httparty Has Potential SSRF Vulnerability That Leads to API Key Leakage"
+description: "There may be an SSRF vulnerability in httparty. This issue can pose
+  a risk of leaking API keys, and it can also allow third parties to issue requests
+  to internal servers."
+date: "2025-12-23"
+pubdate: "2025-12-23"
+affected_range: "<=0.23.2"
+fixed_versions: []
+affected_versions: "All versions up to 0.23.2"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-hm5p-x4rq-38w4"
+- "https://github.com/jnunemaker/httparty/security/advisories/GHSA-hm5p-x4rq-38w4"
+- "https://github.com/jnunemaker/httparty/commit/0529bcd6309c9fd9bfdd50ae211843b10054c240"
+- "https://github.com/jnunemaker/httparty"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "7d1ef5fd-4dc3-44fb-aaf3-4b2b9da5b7cf"
+cwe_ids:
+- "CWE-918"
+- "CWE-937"
+- "CWE-1035"
