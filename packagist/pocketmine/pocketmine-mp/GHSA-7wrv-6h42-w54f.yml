@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-7wrv-6h42-w54f"
+identifiers:
+- "GHSA-7wrv-6h42-w54f"
+package_slug: "packagist/pocketmine/pocketmine-mp"
+title: "PocketMine-MP vulnerable to server crash using badly formatted sign NBT in
+  BlockActorDataPacket"
+description: "A player sending a packet can cause the server to crash by providing
+  incorrect sign data in NBT in `BlockActorDataPacket`."
+date: "2025-12-26"
+pubdate: "2023-07-14"
+affected_range: ">=4.20.0 <4.22.3||>=5.0.0 <5.2.1"
+fixed_versions:
+- "4.22.3"
+- "5.2.1"
+affected_versions: "All versions starting from 4.20.0 before 4.22.3, all versions
+  starting from 5.0.0 before 5.2.1"
+not_impacted: "All versions before 4.20.0, all versions starting from 4.22.3 before
+  5.0.0, all versions starting from 5.2.1"
+solution: "Upgrade to versions 4.22.3, 5.2.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-7wrv-6h42-w54f"
+- "https://github.com/pmmp/PocketMine-MP/security/advisories/GHSA-7wrv-6h42-w54f"
+- "https://github.com/pmmp/PocketMine-MP/commit/0c250a2ef09627b48aa52302f6cc7e1f2afb70ea"
+- "https://github.com/pmmp/PocketMine-MP"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "63bfe1c4-a742-4977-908e-d857fb7b6e84"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-wjfq-88q2-r34j"
+identifiers:
+- "GHSA-wjfq-88q2-r34j"
+package_slug: "packagist/pocketmine/pocketmine-mp"
+title: "Unhandled exception when decoding form response JSON"
+description: "When handling form responses from the client (`ModalFormResponsePacket`),
+  the Minecraft Windows client may send weird JSON that `json_decode()` can't understand.
+  A workaround for this is implemented in `InGamePacketHandler::stupid_json_decode()`.\n\nAn
+  `InvalidArgumentException` is thrown by this function when it fails to fix an error
+  found in the JSON, which is not caught by the caller. This leads to a server crash."
+date: "2025-12-26"
+pubdate: "2022-01-21"
+affected_range: ">=4.0.0 <4.0.7"
+fixed_versions:
+- "4.0.7"
+affected_versions: "All versions starting from 4.0.0 before 4.0.7"
+not_impacted: "All versions before 4.0.0, all versions starting from 4.0.7"
+solution: "Upgrade to version 4.0.7 or above."
+urls:
+- "https://github.com/advisories/GHSA-wjfq-88q2-r34j"
+- "https://github.com/pmmp/PocketMine-MP/security/advisories/GHSA-wjfq-88q2-r34j"
+- "https://github.com/pmmp/PocketMine-MP/commit/56fe71d939c38fe14e18a31a673a9331bcc0e4ca"
+- "https://github.com/pmmp/PocketMine-MP"
+- "https://github.com/pmmp/PocketMine-MP/blob/4.0.7/changelogs/4.0.md#407"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "68f875c2-e945-4e1b-bc98-9bf18808b073"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

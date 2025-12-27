@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-9fjq-45qv-pcm7"
+identifiers:
+- "GHSA-9fjq-45qv-pcm7"
+package_slug: "cargo/ruint"
+title: "ruint affected by unsoundness of safe `reciprocal_mg10`"
+description: "The function `reciprocal_mg10` is marked as safe but can trigger undefined
+  behavior (out-of-bounds access) because it relies on `debug_assert!` for safety
+  checks instead of `assert!`.\n\nWhen compiled in release mode, the `debug_assert!`
+  is optimized out, potentially allowing invalid inputs to cause memory corruption."
+date: "2025-12-26"
+pubdate: "2025-12-26"
+affected_range: "<=1.17.0"
+fixed_versions: []
+affected_versions: "All versions up to 1.17.0"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-9fjq-45qv-pcm7"
+- "https://github.com/recmo/uint/issues/550"
+- "https://github.com/recmo/uint"
+- "https://github.com/recmo/uint/blob/17c9b3e9062f74a39701e68dec358375595d33d7/src/algorithms/div/reciprocal.rs#L79-L87"
+- "https://rustsec.org/advisories/RUSTSEC-2025-0137.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+uuid: "2bca5fbf-1090-4756-9c3a-71081df1209d"
+cwe_ids:
+- "CWE-119"
+- "CWE-937"
+- "CWE-1035"

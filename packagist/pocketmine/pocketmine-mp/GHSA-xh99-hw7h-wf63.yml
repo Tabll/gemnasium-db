@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-xh99-hw7h-wf63"
+identifiers:
+- "GHSA-xh99-hw7h-wf63"
+package_slug: "packagist/pocketmine/pocketmine-mp"
+title: "Unchecked validity of Facing values in PlayerActionPacket"
+description: "A remote attacker may crash a server by sending `PlayerActionPacket`
+  with invalid facing values (e.g. negative), specifically with `START_BREAK` or `CRACK_BLOCK`
+  actions, or with a `UseItemTransactionData` (typically in `InventoryTransactionPacket`)."
+date: "2025-12-26"
+pubdate: "2022-01-13"
+affected_range: "<4.0.6"
+fixed_versions:
+- "4.0.6"
+affected_versions: "All versions before 4.0.6"
+not_impacted: "All versions starting from 4.0.6"
+solution: "Upgrade to version 4.0.6 or above."
+urls:
+- "https://github.com/advisories/GHSA-xh99-hw7h-wf63"
+- "https://github.com/pmmp/PocketMine-MP/security/advisories/GHSA-xh99-hw7h-wf63"
+- "https://github.com/pmmp/PocketMine-MP/commit/f126479c37ff00a717a828f5271cf8e821d12d6c"
+- "https://github.com/pmmp/PocketMine-MP"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "5a7d7bda-5d60-4520-a84f-26ffb8cea9df"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

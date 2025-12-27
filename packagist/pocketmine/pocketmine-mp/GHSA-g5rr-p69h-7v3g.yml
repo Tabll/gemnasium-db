@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-g5rr-p69h-7v3g"
+identifiers:
+- "GHSA-g5rr-p69h-7v3g"
+package_slug: "packagist/pocketmine/pocketmine-mp"
+title: "Insufficient type validation in pocketmine/pocketmine-mp"
+description: "When an inventory interaction is performed (e.g. moving an item around
+  an inventory), the client sends a serialized version of the itemstack to the server,
+  which the server then deserializes and compares against its own copy. If the copies
+  don't match, the transaction is invalid.\n\nThis involves deserializing item NBT
+  from the client, which allows for bogus data to be provided. Usually, this is harmless,
+  but in this particular case, it could result in crashes on certain types of bad
+  data (e.g. incorrect ListTag type provided for the `CanDestroy` tag)."
+date: "2025-12-26"
+pubdate: "2022-04-22"
+affected_range: "<4.2.9"
+fixed_versions:
+- "4.2.9"
+affected_versions: "All versions before 4.2.9"
+not_impacted: "All versions starting from 4.2.9"
+solution: "Upgrade to version 4.2.9 or above."
+urls:
+- "https://github.com/advisories/GHSA-g5rr-p69h-7v3g"
+- "https://github.com/pmmp/PocketMine-MP/security/advisories/GHSA-g5rr-p69h-7v3g"
+- "https://github.com/pmmp/PocketMine-MP/commit/5a98b08ee8dc8ff14862cd83d2e4af9d212fefc2"
+- "https://github.com/pmmp/PocketMine-MP"
+- "https://github.com/pmmp/PocketMine-MP/blob/4.2.9/changelogs/4.2.md#429"
+- "https://github.com/pmmp/PocketMine-MP/releases/tag/4.2.9"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "60f063ac-9968-439d-97cf-95a6819ffe6e"
+cwe_ids:
+- "CWE-1287"
+- "CWE-20"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-wqqv-jcfr-9f5g"
+identifiers:
+- "GHSA-wqqv-jcfr-9f5g"
+package_slug: "packagist/pocketmine/pocketmine-mp"
+title: "PocketMine-MP has improperly handled dye colour IDs in banner NBT, leading
+  to server crash"
+description: "`DyeColorIdMap->fromId()` did not account for the possibility that it
+  might be given invalid input. This means that an undefined offset error would occur
+  whenever this happened."
+date: "2025-12-26"
+pubdate: "2023-01-09"
+affected_range: "<4.8.1"
+fixed_versions:
+- "4.8.1"
+affected_versions: "All versions before 4.8.1"
+not_impacted: "All versions starting from 4.8.1"
+solution: "Upgrade to version 4.8.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-wqqv-jcfr-9f5g"
+- "https://github.com/pmmp/PocketMine-MP/security/advisories/GHSA-wqqv-jcfr-9f5g"
+- "https://github.com/pmmp/PocketMine-MP/commit/08b9495bce2d65a6d1d3eeb76e484499a00765eb"
+- "https://github.com/pmmp/PocketMine-MP"
+- "https://github.com/pmmp/PocketMine-MP/blob/38d6284671e8b657ba557e765a6c29b24a7705f5/src/item/Banner.php#L104"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "8ea8d820-b827-4231-b701-a4f9715b82c3"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

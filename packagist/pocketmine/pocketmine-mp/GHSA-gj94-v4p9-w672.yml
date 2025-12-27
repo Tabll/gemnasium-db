@@ -1,0 +1,36 @@
+---
+identifier: "GHSA-gj94-v4p9-w672"
+identifiers:
+- "GHSA-gj94-v4p9-w672"
+package_slug: "packagist/pocketmine/pocketmine-mp"
+title: "Denial-of-service vulnerability processing large chat messages containing
+  many newlines"
+description: "PocketMine-MP caps maximum chat message length at 512 Unicode characters,
+  or about 2048 bytes. No more than 2 chat messages may be sent per tick. However,
+  due to legacy reasons, incoming chat message blobs are split by `\\n`, and each
+  part is treated as a separate message, the length of each part is individually checked.
+  The length of the whole message is not checked.\n\nThis leads to an exploitable
+  performance issue, in which a malicious client may send a chat packet of several
+  megabytes containing nothing but `\\n` newline characters. The server will parse
+  this into a very large array and spend a long time (several milliseconds) iterating
+  over it for no reason.\n\nFurthermore, due to the lack of sufficient rate limit
+  checks before parsing messages, malicious clients may bombard the server with many
+  thousands of these malicious messages, causing lockups for a significant amount
+  of time (seconds or minutes)."
+date: "2025-12-26"
+pubdate: "2022-05-25"
+affected_range: "<4.2.10"
+fixed_versions:
+- "4.2.10"
+affected_versions: "All versions before 4.2.10"
+not_impacted: "All versions starting from 4.2.10"
+solution: "Upgrade to version 4.2.10 or above."
+urls:
+- "https://github.com/advisories/GHSA-gj94-v4p9-w672"
+- "https://github.com/pmmp/PocketMine-MP/security/advisories/GHSA-gj94-v4p9-w672"
+- "https://github.com/pmmp/PocketMine-MP"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+uuid: "5706a04d-d2b5-45c4-84dd-acd1be486431"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"
