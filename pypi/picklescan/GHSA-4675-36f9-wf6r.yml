@@ -1,0 +1,38 @@
+---
+identifier: "GHSA-4675-36f9-wf6r"
+identifiers:
+- "GHSA-4675-36f9-wf6r"
+package_slug: "pypi/picklescan"
+title: "Picklescan does not block ctypes"
+description: "Picklescan doesnt flag ctypes module as a dangerous module, which is
+  a huge issue. ctypes is basically a foreign function interface library and can be
+  used to\n* Load DLLs\n* Call C functions directly\n* Manipulate memory raw pointers.\n\nThis
+  can allow attackers to achieve RCE by invoking direct syscalls without going through
+  blocked modules. Another major issue that ctypes being allowed presents is that
+  it can be used down the line to dismantle interpreter based python sandboxes as
+  ctypes allow direct access to raw memory.\n\nThis is a more severe loophole than
+  normal gadget chains and bypasses as raw memory access can be used for a lot of
+  nefarious purposes down the line if left undetected"
+date: "2025-12-29"
+pubdate: "2025-12-29"
+affected_range: "<0.0.33"
+fixed_versions:
+- "0.0.33"
+affected_versions: "All versions before 0.0.33"
+not_impacted: "All versions starting from 0.0.33"
+solution: "Upgrade to version 0.0.33 or above."
+urls:
+- "https://github.com/advisories/GHSA-4675-36f9-wf6r"
+- "https://github.com/mmaitre314/picklescan/security/advisories/GHSA-4675-36f9-wf6r"
+- "https://github.com/mmaitre314/picklescan/pull/53"
+- "https://github.com/mmaitre314/picklescan/commit/70c1c6c31beb6baaf52c8db1b6c3c0e84a6f9dab"
+- "https://github.com/mmaitre314/picklescan"
+- "https://github.com/mmaitre314/picklescan/releases/tag/v0.0.33"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+uuid: "14048d08-1dbe-4cb8-9625-2f90da84964b"
+cwe_ids:
+- "CWE-184"
+- "CWE-913"
+- "CWE-937"
+- "CWE-1035"

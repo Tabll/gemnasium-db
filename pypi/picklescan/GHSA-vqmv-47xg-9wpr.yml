@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-vqmv-47xg-9wpr"
+identifiers:
+- "GHSA-vqmv-47xg-9wpr"
+package_slug: "pypi/picklescan"
+title: "Picklescan missing detection when calling pty.spawn"
+description: "Using pty.spawn, which is a built-in python library function to execute
+  arbitrary commands on the host system."
+date: "2025-12-29"
+pubdate: "2025-12-29"
+affected_range: "<0.0.33"
+fixed_versions:
+- "0.0.33"
+affected_versions: "All versions before 0.0.33"
+not_impacted: "All versions starting from 0.0.33"
+solution: "Upgrade to version 0.0.33 or above."
+urls:
+- "https://github.com/advisories/GHSA-vqmv-47xg-9wpr"
+- "https://github.com/mmaitre314/picklescan/security/advisories/GHSA-vqmv-47xg-9wpr"
+- "https://github.com/mmaitre314/picklescan/pull/53"
+- "https://github.com/mmaitre314/picklescan/commit/70c1c6c31beb6baaf52c8db1b6c3c0e84a6f9dab"
+- "https://github.com/mmaitre314/picklescan"
+- "https://github.com/mmaitre314/picklescan/releases/tag/v0.0.33"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+uuid: "3f97207e-9a98-49a6-a9c5-0bf255d4ee24"
+cwe_ids:
+- "CWE-502"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,38 @@
+---
+identifier: "GHSA-c86p-w88r-qvqr"
+identifiers:
+- "GHSA-c86p-w88r-qvqr"
+package_slug: "cargo/ring"
+title: "Duplicate Advisory: ring has some AES functions that may panic when overflow
+  checking is enabled in"
+description: "### Duplicate Advisory\nThis advisory has been withdrawn because it
+  is a duplicate of GHSA-4p46-pwfr-66x6. This link is maintained to preserve external
+  references.\n\n### Original Description\nA flaw was found in Rust's Ring package.
+  A panic may be triggered when overflow checking is enabled. In the QUIC protocol,
+  this flaw allows an attacker to induce this panic by sending a specially crafted
+  packet. It will likely occur unintentionally in 1 out of every 2**32 packets sent
+  or received."
+date: "2025-12-29"
+pubdate: "2025-05-09"
+affected_range: "<0.17.13"
+fixed_versions:
+- "0.17.13"
+affected_versions: "All versions before 0.17.13"
+not_impacted: "All versions starting from 0.17.13"
+solution: "Upgrade to version 0.17.13 or above."
+urls:
+- "https://github.com/advisories/GHSA-c86p-w88r-qvqr"
+- "https://nvd.nist.gov/vuln/detail/CVE-2025-4432"
+- "https://github.com/briansmith/ring/pull/2447"
+- "https://github.com/briansmith/ring/commit/ec2d3cf1d91f148c84e4806b4f0b3c98f6df3b38"
+- "https://access.redhat.com/security/cve/CVE-2025-4432"
+- "https://bugzilla.redhat.com/show_bug.cgi?id=2350655"
+- "https://github.com/briansmith/ring"
+- "https://github.com/briansmith/ring/blob/main/RELEASES.md#version-01712-2025-03-05"
+- "https://rustsec.org/advisories/RUSTSEC-2025-0009.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+uuid: "1ff1bda2-c270-4b93-84e4-88cbb10917e7"
+cwe_ids:
+- "CWE-770"
+- "CWE-937"
+- "CWE-1035"

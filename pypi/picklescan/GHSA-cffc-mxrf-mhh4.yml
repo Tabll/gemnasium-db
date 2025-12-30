@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-cffc-mxrf-mhh4"
+identifiers:
+- "GHSA-cffc-mxrf-mhh4"
+package_slug: "pypi/picklescan"
+title: "Picklescan is vulnerable to RCE via missing detection when calling numpy.f2py.crackfortran.param_eval"
+description: "Picklescan uses numpy.f2py.crackfortran.param_eval, which is a function
+  in numpy to execute remote pickle files."
+date: "2025-12-29"
+pubdate: "2025-12-29"
+affected_range: "<0.0.33"
+fixed_versions:
+- "0.0.33"
+affected_versions: "All versions before 0.0.33"
+not_impacted: "All versions starting from 0.0.33"
+solution: "Upgrade to version 0.0.33 or above."
+urls:
+- "https://github.com/advisories/GHSA-cffc-mxrf-mhh4"
+- "https://github.com/mmaitre314/picklescan/security/advisories/GHSA-cffc-mxrf-mhh4"
+- "https://github.com/mmaitre314/picklescan/pull/53"
+- "https://github.com/mmaitre314/picklescan/commit/70c1c6c31beb6baaf52c8db1b6c3c0e84a6f9dab"
+- "https://github.com/mmaitre314/picklescan"
+- "https://github.com/mmaitre314/picklescan/releases/tag/v0.0.33"
+uuid: "cda60c4a-f11f-47bf-8f74-b8ef0d93a63c"
+cwe_ids:
+- "CWE-502"
+- "CWE-94"
+- "CWE-937"
+- "CWE-1035"
