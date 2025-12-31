@@ -11,7 +11,7 @@ description: "### 🚀 Overview\n\nThis report **demonstrates a real-world privi
   by exploiting insecure deserialization in a typical multi-user or server environment.\n\n![line](https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif)\n\n##
   🚨 Special Note\n\nThis advisory addresses a distinct vulnerability from [GHSA-wf5f-4jwr-ppcp
   (CVE-2025-64512)](https://github.com/pdfminer/pdfminer.six/security/advisories/GHSA-wf5f-4jwr-ppcp)."
-date: "2025-11-15"
+date: "2025-12-31"
 pubdate: "2025-11-07"
 affected_range: "<=20251107"
 fixed_versions: []

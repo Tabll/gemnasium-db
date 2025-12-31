@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-mgr9-6c2j-jxrq"
+identifiers:
+- "GHSA-mgr9-6c2j-jxrq"
+package_slug: "packagist/pterodactyl/panel"
+title: "Pterodactyl has a Reflected XSS vulnerability in “Create New Database Host”"
+description: "When an administrative user creates a new database host they are prompted
+  to provide a `Host` value which is expected to be a domain or IP address. When an
+  invalid value is encountered and passed back to `gethostaddr` and/or directly to
+  the MySQL connection tooling, an error is returned. This error is then passed back
+  along to the front-end, but was not properly sanitized when rendered.\n\nTherefore
+  it is possible for an admin to _knowingly_ paste a malicious payload such as `<script>prompt(document.domain)</script>`
+  into the `Host` field and XSS themselves."
+date: "2025-12-30"
+pubdate: "2025-12-30"
+affected_range: "<1.12.0"
+fixed_versions:
+- "1.12.0"
+affected_versions: "All versions before 1.12.0"
+not_impacted: "All versions starting from 1.12.0"
+solution: "Upgrade to version 1.12.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-mgr9-6c2j-jxrq"
+- "https://github.com/pterodactyl/panel/security/advisories/GHSA-mgr9-6c2j-jxrq"
+- "https://github.com/pterodactyl/panel/commit/1570ff250939b75b3ba8cd03e5025d8293544ed4"
+- "https://github.com/pterodactyl/panel"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "c8bb4f96-60dc-4534-a455-ae2b63407a08"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"
