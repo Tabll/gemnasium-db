@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-hjr9-wj7v-7hv8"
+identifiers:
+- "GHSA-hjr9-wj7v-7hv8"
+package_slug: "go/github.com/bishopfox/sliver"
+title: "Sliver Vulnerable to Pre-Auth Memory Exhaustion via NoEncoder Bypass"
+description: "A specially crafted nonce routes unauthenticated requests through the
+  NoEncoder path, where `startSessionHandler()` reads the entire request body without
+  limits, allowing attacker-driven memory exhaustion and process crash."
+date: "2026-01-05"
+pubdate: "2026-01-05"
+affected_range: ">=1.5.0 <=1.5.44"
+fixed_versions: []
+affected_versions: "All versions starting from 1.5.0 up to 1.5.44"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-hjr9-wj7v-7hv8"
+- "https://github.com/BishopFox/sliver/security/advisories/GHSA-hjr9-wj7v-7hv8"
+- "https://github.com/BishopFox/sliver"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N"
+uuid: "41c8ed6f-7b43-405f-b538-d48685909b13"
+cwe_ids:
+- "CWE-770"
+- "CWE-937"
+- "CWE-1035"

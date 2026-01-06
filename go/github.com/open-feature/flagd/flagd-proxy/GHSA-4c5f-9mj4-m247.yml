@@ -1,0 +1,51 @@
+---
+identifier: "GHSA-4c5f-9mj4-m247"
+identifiers:
+- "GHSA-4c5f-9mj4-m247"
+package_slug: "go/github.com/open-feature/flagd/flagd-proxy"
+title: "flagd: Multiple Go Runtime CVEs Impact Security and Availability"
+description: "In 2025, several vulnerabilities in the Go Standard Library were disclosed,
+  impacting Go-based applications like flagd (the evaluation engine for OpenFeature).
+  These CVEs primarily focus on Denial of Service (DoS) through resource exhaustion
+  and Race Conditions in database handling.\n\n| CVE ID | Impacted Package | Severity
+  | Description & Impact on flagd |\n| -- | -- | -- | -- |\n| CVE-2025-47907 | database/sql
+  | 7.0 (High) | Race Condition:  Canceling a query during a Scan call can return
+  data from the wrong query. Critical if flagd uses SQL-based sync providers (e.g.,
+  Postgres), potentially leading to incorrect flag configurations. |\n| CVE-2025-61725
+  | net/mail | 7.5 (High) | DoS: Inefficient complexity in ParseAddress.  Attackers
+  can provide crafted email strings with large domain literals to exhaust CPU if flagd
+  parses email-formatted metadata. |\n| CVE-2025-61723 | encoding/pem | 7.5 (High)
+  | DoS: Quadratic complexity when parsing invalid PEM inputs. Relevant if flagd loads
+  TLS certificates or keys via PEM files from untrusted sources. |\n| CVE-2025-61729
+  | crypto/x509 | 7.5 (High) | Resource Exhaustion: HostnameError.Error() lacks string
+  concatenation limits. A malicious TLS certificate with thousands of hostnames could
+  crash flagd during connection handshakes. |\n| CVE-2025-58188 | net/http | Medium
+  | Request Smuggling: Improper header handling in HTTP/1.1. Could allow attackers
+  to bypass security filters positioned in front of flagd sync or evaluation APIs.
+  |\n| CVE-2025-58187 | archive/zip | Medium | DoS:  Improper validation of malformed
+  ZIP archives.  Impacts flagd if configured to fetch and unpack zipped configuration
+  bundles from remote providers. |"
+date: "2026-01-05"
+pubdate: "2026-01-05"
+affected_range: "<0.8.2"
+fixed_versions:
+- "0.8.2"
+affected_versions: "All versions before 0.8.2"
+not_impacted: "All versions starting from 0.8.2"
+solution: "Upgrade to version 0.8.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-4c5f-9mj4-m247"
+- "https://github.com/open-feature/flagd/security/advisories/GHSA-4c5f-9mj4-m247"
+- "https://github.com/open-feature/flagd/pull/1840"
+- "https://github.com/open-feature/flagd"
+- "https://github.com/open-feature/flagd/releases/tag/core%2Fv0.13.1"
+uuid: "2e35feb8-8695-401c-9efd-cfa342c63f26"
+cwe_ids:
+- "CWE-20"
+- "CWE-362"
+- "CWE-400"
+- "CWE-407"
+- "CWE-444"
+- "CWE-770"
+- "CWE-937"
+- "CWE-1035"
