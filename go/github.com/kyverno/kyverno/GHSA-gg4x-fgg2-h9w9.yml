@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-gg4x-fgg2-h9w9"
+identifiers:
+- "GHSA-gg4x-fgg2-h9w9"
+package_slug: "go/github.com/kyverno/kyverno"
+title: "Bypassing Kyverno Policies via Double Policy Exceptions"
+description: "If a cluster has a `Kyverno` policy in enforce mode and there are two
+  exceptions, this allows the policy to be bypassed, even if the first exception is
+  more restrictive than the second."
+date: "2026-01-06"
+pubdate: "2026-01-06"
+affected_range: ">=1.9.0 <1.13.0"
+fixed_versions:
+- "1.13.0"
+affected_versions: "All versions starting from 1.9.0 before 1.13.0"
+not_impacted: "All versions before 1.9.0, all versions starting from 1.13.0"
+solution: "Upgrade to version 1.13.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-gg4x-fgg2-h9w9"
+- "https://github.com/kyverno/kyverno/security/advisories/GHSA-gg4x-fgg2-h9w9"
+- "https://github.com/kyverno/kyverno"
+cvss_v3: "CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H"
+uuid: "e05f1d2f-ae56-42f5-9054-21ab033d3da3"
+cwe_ids:
+- "CWE-284"
+- "CWE-937"
+- "CWE-1035"
