@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-rhfx-m35p-ff5j"
+identifiers:
+- "GHSA-rhfx-m35p-ff5j"
+package_slug: "cargo/lru"
+title: "`IterMut` violates Stacked Borrows by invalidating internal pointer"
+description: "Affected versions of this crate contain a soundness issue in the `IterMut`
+  iterator implementation. The `IterMut::next` and `IterMut::next_back` methods temporarily
+  create an exclusive reference to the key when dereferencing the internal node pointer.\n\nThis
+  invalidates the shared pointer held by the internal `HashMap`, violating Stacked
+  Borrows rules."
+date: "2026-01-07"
+pubdate: "2026-01-07"
+affected_range: ">=0.9.0 <0.16.3"
+fixed_versions:
+- "0.16.3"
+affected_versions: "All versions starting from 0.9.0 before 0.16.3"
+not_impacted: "All versions before 0.9.0, all versions starting from 0.16.3"
+solution: "Upgrade to version 0.16.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-rhfx-m35p-ff5j"
+- "https://github.com/jeromefroe/lru-rs/pull/224"
+- "https://github.com/jeromefroe/lru-rs"
+- "https://rustsec.org/advisories/RUSTSEC-2026-0002.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "fcc05547-599e-4a3f-b972-5d3b5ee95015"
+cwe_ids:
+- "CWE-476"
+- "CWE-937"
+- "CWE-1035"

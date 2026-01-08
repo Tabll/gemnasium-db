@@ -10,7 +10,7 @@ description: "### Duplicate Advisory\nThis advisory has been withdrawn because i
   an assumed-immutable web parameter vulnerability. A remote and unauthenticated attacker
   can provide a crafted filename parameter during multipart/form-data uploads which
   could result in attacker controlled filenames being written."
-date: "2025-02-13"
+date: "2026-01-07"
 pubdate: "2024-01-04"
 affected_range: "<=0.20.0"
 fixed_versions: []
