@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-g59m-gf8j-gjf5"
+identifiers:
+- "GHSA-g59m-gf8j-gjf5"
+package_slug: "cargo/aws-sdk-devopsguru"
+title: "AWS SDK for Rust v1 adopted defense in depth enhancement for region parameter
+  value"
+description: "This notification is related to the use of specific values for the region
+  input field when calling AWS services. An actor with access to the environment in
+  which the SDK is used could set the region input field to an invalid value.\n\nA
+  defense-in-depth enhancement has been implemented in the AWS SDK for Rust. This
+  enhancement validates that a region used to construct an endpoint URL is a valid
+  host label. The change was released on November 6, 2025. This advisory is informational
+  to help customers understand their responsibilities regarding configuration security."
+date: "2026-01-08"
+pubdate: "2026-01-08"
+affected_range: "<1.89.0"
+fixed_versions:
+- "1.89.0"
+affected_versions: "All versions before 1.89.0"
+not_impacted: "All versions starting from 1.89.0"
+solution: "Upgrade to version 1.89.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-g59m-gf8j-gjf5"
+- "https://github.com/awslabs/aws-sdk-rust/security/advisories/GHSA-g59m-gf8j-gjf5"
+- "https://github.com/smithy-lang/smithy-rs/pull/4383"
+- "https://docs.aws.amazon.com/sdk-for-rust/latest/dg/security.html"
+- "https://github.com/awslabs/aws-sdk-rust"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N"
+uuid: "a7525f78-3d90-4cdc-9865-b7a8a5473a4c"
+cwe_ids:
+- "CWE-20"
+- "CWE-937"
+- "CWE-1035"

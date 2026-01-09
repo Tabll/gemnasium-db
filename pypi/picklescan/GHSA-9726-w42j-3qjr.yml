@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-9726-w42j-3qjr"
+identifiers:
+- "GHSA-9726-w42j-3qjr"
+package_slug: "pypi/picklescan"
+title: "picklescan has Arbitrary file read using `io.FileIO` "
+description: "Unsafe pickle deserialization allows unauthenticated attackers to read
+  arbitrary server files and perform SSRF. By chaining io.FileIO and urllib.request.urlopen,
+  an attacker can bypass RCE-focused blocklists to exfiltrate sensitive data (example:
+  /etc/passwd) to an external server."
+date: "2026-01-08"
+pubdate: "2026-01-08"
+affected_range: "<0.0.35"
+fixed_versions:
+- "0.0.35"
+affected_versions: "All versions before 0.0.35"
+not_impacted: "All versions starting from 0.0.35"
+solution: "Upgrade to version 0.0.35 or above."
+urls:
+- "https://github.com/advisories/GHSA-9726-w42j-3qjr"
+- "https://github.com/mmaitre314/picklescan/security/advisories/GHSA-9726-w42j-3qjr"
+- "https://github.com/mmaitre314/picklescan/pull/55"
+- "https://github.com/mmaitre314/picklescan/commit/a01c58d5dd7960db557b849817c0ab83ab111ef1"
+- "https://github.com/mmaitre314/picklescan"
+- "https://github.com/mmaitre314/picklescan/releases/tag/v0.0.35"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N"
+uuid: "1750d52d-d8a0-459d-9c90-17830f292b70"
+cwe_ids:
+- "CWE-22"
+- "CWE-918"
+- "CWE-937"
+- "CWE-1035"

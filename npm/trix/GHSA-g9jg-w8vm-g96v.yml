@@ -9,7 +9,7 @@ description: "The Trix editor, in versions prior to 2.1.16, is vulnerable to XSS
   attribute that, when rendered as HTML and clicked on, could execute arbitrary JavaScript
   code within the context of the user's session, potentially leading to unauthorized
   actions being performed or sensitive information being disclosed."
-date: "2025-12-31"
+date: "2026-01-08"
 pubdate: "2025-12-31"
 affected_range: "<2.1.16"
 fixed_versions:
@@ -23,6 +23,7 @@ urls:
 - "https://github.com/basecamp/trix/commit/73c20cf03ab2b56c0ef9c9b1aaf63f2de44f4010"
 - "https://github.com/basecamp/trix"
 - "https://github.com/basecamp/trix/releases/tag/v2.1.16"
+- "https://github.com/rubysec/ruby-advisory-db/blob/master/gems/action_text-trix/GHSA-g9jg-w8vm-g96v.yml"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:L/I:L/A:N"
 uuid: "f7b4cfd0-3313-4b27-b3f6-ab55074cae7e"
 cwe_ids:

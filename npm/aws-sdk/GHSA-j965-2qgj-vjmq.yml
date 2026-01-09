@@ -1,0 +1,42 @@
+---
+identifier: "GHSA-j965-2qgj-vjmq"
+identifiers:
+- "GHSA-j965-2qgj-vjmq"
+package_slug: "npm/aws-sdk"
+title: "JavaScript SDK v2 users should add validation to the region parameter value
+  in or migrate to v3"
+description: "CVSSv3.1 Rating: 3.7 (LOW)\n\nSummary\nThis notification is related
+  to the use of specific values for the region input field when calling AWS services.
+  An actor with access to the environment in which the SDK is used could set the region
+  input field to an invalid value. Per the AWS shared responsibility model, customer
+  applications should protect instances appropriately, or implement proper input sanitization
+  checks. The AWS SDK for JavaScript v2 reached end-of-support on September 8, 2025,
+  but a defense-in-depth enhancement has been implemented in AWS SDK for JavaScript
+  v3. Please migrate to that version.\n\nImpact\nCustomer applications could be configured
+  to improperly route AWS API calls to non-existent or non-AWS hosts. While the SDK
+  itself is functioning as designed, we recommend customers migrate to AWS SDK for
+  JavaScript v3 for continued support and enhanced security features.\n\nImpacted
+  versions: All versions of AWS SDK for JavaScript v2\n\nPatches\nNo security patch
+  is required, this is an informational advisory.\n\nWorkarounds\n- Implement proper
+  input sanitization in your application code\n- Migrate to AWS SDK for JavaScript
+  v3\n- Follow AWS security best practices for SDK configuration\n\nReferences\nContact
+  AWS Security via the vulnerability reporting page or email [aws-security@amazon.com](mailto:aws-security@amazon.com).\n\nAcknowledgement\nAWS
+  Security thanks Guy Arazi for bringing these customer security considerations to
+  our attention through the coordinated disclosure process."
+date: "2026-01-08"
+pubdate: "2026-01-08"
+affected_range: ">=2.0.0 <=3.0.0"
+fixed_versions: []
+affected_versions: "All versions starting from 2.0.0 up to 3.0.0"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-j965-2qgj-vjmq"
+- "https://github.com/aws/aws-sdk-js/security/advisories/GHSA-j965-2qgj-vjmq"
+- "https://github.com/aws/aws-sdk-js"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N"
+uuid: "40e86df3-9d4b-4574-99a5-2f2020cf156e"
+cwe_ids:
+- "CWE-20"
+- "CWE-937"
+- "CWE-1035"

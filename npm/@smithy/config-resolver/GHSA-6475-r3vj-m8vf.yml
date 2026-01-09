@@ -1,0 +1,51 @@
+---
+identifier: "GHSA-6475-r3vj-m8vf"
+identifiers:
+- "GHSA-6475-r3vj-m8vf"
+package_slug: "npm/@smithy/config-resolver"
+title: "AWS SDK for JavaScript v3 adopted defense in depth enhancement for region
+  parameter value"
+description: "CVSSv3.1 Rating: 3.7 (LOW)\n\nSummary\n\nThis notification is related
+  to the use of specific values for the region input field when calling AWS services.
+  An actor with access to the environment in which the SDK is used could set the region
+  input field to an invalid value.\n\nA defense-in-depth enhancement has been implemented
+  in the AWS SDK for JavaScript v3 (versions 3.723.0 and later). This enhancement
+  validates that a region used to construct an endpoint URL is a valid host label.
+  The change was released on November 15, 2025. This advisory is informational to
+  help customers understand their responsibilities regarding configuration security.\n\nImpact\nCustomer
+  applications could be configured to improperly route AWS API calls to non-existent
+  or non-AWS hosts. While the SDK was functioning as designed, additional safeguards
+  have been added to support secure customer implementations.\n\nImpacted versions:
+  @smithy/config-resolver <4.4.0\n\nPatches\n\nOn November 15, 2025, an enhancement
+  was made to the AWS SDK for JavaScript v3 (versions 3.723.0 and later) release,
+  which validates the formatting of a region, providing additional safeguards. A feature
+  enhancement was implemented in @smithy/config-resolver v4.4.0. This enhancement
+  provides additional configuration validation safeguards but does not address a security
+  vulnerability.\n\nWorkarounds\nNo workarounds are needed, but as always you should
+  ensure that your application is following security best practices:\n- Implement
+  proper input validation in your application code\n- Update to the latest AWS SDK
+  for Javascript v3 release on a regular basis\n- Follow AWS security best practices
+  [1] for SDK configuration\n\nResources\nContact AWS Security via the vulnerability
+  reporting page or email [aws-security@amazon.com](mailto:aws-security@amazon.com).\n\nAcknowledgement\nAWS
+  Security thanks Guy Arazi for bringing these customer security considerations to
+  our attention through the coordinated disclosure process.\n\n[1] https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/security.html"
+date: "2026-01-08"
+pubdate: "2026-01-08"
+affected_range: "<4.4.0"
+fixed_versions:
+- "4.4.0"
+affected_versions: "All versions before 4.4.0"
+not_impacted: "All versions starting from 4.4.0"
+solution: "Upgrade to version 4.4.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-6475-r3vj-m8vf"
+- "https://github.com/aws/aws-sdk-js-v3/security/advisories/GHSA-6475-r3vj-m8vf"
+- "https://github.com/aws/aws-sdk-js/security/advisories/GHSA-j965-2qgj-vjmq"
+- "https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/security.html"
+- "https://github.com/aws/aws-sdk-js-v3"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N"
+uuid: "6e2314ea-99d8-43d2-a318-4664df29a827"
+cwe_ids:
+- "CWE-20"
+- "CWE-937"
+- "CWE-1035"
