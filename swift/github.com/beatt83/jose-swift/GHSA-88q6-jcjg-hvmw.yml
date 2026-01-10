@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-88q6-jcjg-hvmw"
+identifiers:
+- "GHSA-88q6-jcjg-hvmw"
+package_slug: "swift/github.com/beatt83/jose-swift"
+title: "jose-swift has JWT Signature Verification Bypass via None Algorithm"
+description: "An authentication bypass vulnerability allows any unauthenticated attacker
+  to forge arbitrary JWT tokens by setting \"alg\": \"none\" in the token header.
+  The library's verification functions immediately return `true` for such tokens without
+  performing any cryptographic verification, enabling complete impersonation of any
+  user and privilege escalation."
+date: "2026-01-09"
+pubdate: "2026-01-09"
+affected_range: "<=6.0.1"
+fixed_versions: []
+affected_versions: "All versions up to 6.0.1"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-88q6-jcjg-hvmw"
+- "https://github.com/beatt83/jose-swift/security/advisories/GHSA-88q6-jcjg-hvmw"
+- "https://github.com/beatt83/jose-swift"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N"
+uuid: "472453d6-b0de-4333-926f-e01e383cb789"
+cwe_ids:
+- "CWE-327"
+- "CWE-937"
+- "CWE-1035"

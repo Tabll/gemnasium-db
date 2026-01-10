@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-78h3-63c4-5fqc"
+identifiers:
+- "GHSA-78h3-63c4-5fqc"
+package_slug: "go/github.com/Tencent/WeKnora"
+title: "WeKnora has Command Injection in MCP stdio test"
+description: "---\n\n- **Remote Code Execution (RCE)**: Arbitrary command execution
+  enables file creation/modification, execution of additional payloads, and service
+  disruption\n- **Information Disclosure**: Sensitive data exfiltration through reading
+  environment variables, configuration files, keys, tokens, and local files\n- **Privilege Escalation/Lateral Movement
+  (Environment-Dependent)**: Impact may escalate based on container mounts, network
+  policies, and internal service access permissions\n- **Cross-Tenant Boundary Impact**:
+  Execution occurs in a shared backend runtime; depending on deployment configuration,
+  impact may extend beyond tenant boundaries (**exact scope is uncertain** and varies
+  by deployment setup)"
+date: "2026-01-09"
+pubdate: "2026-01-09"
+affected_range: "<0.2.5"
+fixed_versions:
+- "0.2.5"
+affected_versions: "All versions before 0.2.5"
+not_impacted: "All versions starting from 0.2.5"
+solution: "Upgrade to version 0.2.5 or above."
+urls:
+- "https://github.com/advisories/GHSA-78h3-63c4-5fqc"
+- "https://github.com/Tencent/WeKnora/security/advisories/GHSA-78h3-63c4-5fqc"
+- "https://github.com/Tencent/WeKnora/commit/f7900a5e9a18c99d25cec9589ead9e4e59ce04bb"
+- "https://github.com/Tencent/WeKnora"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H"
+uuid: "f71d870f-3f4f-4b75-92b2-0ca48225899b"
+cwe_ids:
+- "CWE-77"
+- "CWE-937"
+- "CWE-1035"
