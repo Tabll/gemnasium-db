@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-3f44-xw83-3pmg"
+identifiers:
+- "GHSA-3f44-xw83-3pmg"
+package_slug: "npm/renovate"
+title: "Renovate vulnerable to arbitrary command injection via helmv3 manager and
+  malicious Chart.yaml file"
+description: "The user-provided string `repository` in the `helmv3` manager is appended
+  to the `helm registry login` command without proper sanitization."
+date: "2026-01-13"
+pubdate: "2026-01-13"
+affected_range: ">=31.51.0 <40.33.0"
+fixed_versions:
+- "40.33.0"
+affected_versions: "All versions starting from 31.51.0 before 40.33.0"
+not_impacted: "All versions before 31.51.0, all versions starting from 40.33.0"
+solution: "Upgrade to version 40.33.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-3f44-xw83-3pmg"
+- "https://github.com/renovatebot/renovate/security/advisories/GHSA-3f44-xw83-3pmg"
+- "https://github.com/renovatebot/renovate"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H"
+uuid: "19e1ea63-33aa-4fe0-9c4b-74eaa9f439a3"
+cwe_ids:
+- "CWE-77"
+- "CWE-937"
+- "CWE-1035"

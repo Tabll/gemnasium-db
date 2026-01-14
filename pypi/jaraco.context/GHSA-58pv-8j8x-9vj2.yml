@@ -1,0 +1,48 @@
+---
+identifier: "GHSA-58pv-8j8x-9vj2"
+identifiers:
+- "GHSA-58pv-8j8x-9vj2"
+package_slug: "pypi/jaraco.context"
+title: "jaraco.context Has a Path Traversal Vulnerability"
+description: "There is a Zip Slip path traversal vulnerability in the jaraco.context
+  package affecting setuptools as well, in `jaraco.context.tarball()` function. The
+  vulnerability may allow attackers to extract files outside the intended extraction
+  directory when malicious tar archives are processed.\nThe strip_first_component
+  filter splits the path on the first `/` and extracts the second component, while
+  allowing `../` sequences. Paths like `dummy_dir/../../etc/passwd` become `../../etc/passwd`.\nNote
+  that this suffers from a nested tarball attack as well with multi-level tar files
+  such as `dummy_dir/inner.tar.gz`, where the inner.tar.gz includes a traversal `dummy_dir/../../config/.env`
+  that also gets translated to `../../config/.env`.\n\nThe code can be found:\n- https://github.com/jaraco/jaraco.context/blob/main/jaraco/context/__init__.py#L74-L91\n-
+  https://github.com/pypa/setuptools/blob/main/setuptools/_vendor/jaraco/context.py#L55-L76
+  (inherited)\n\nThis report was also sent to setuptools maintainers and they asked
+  some questions regarding this.\n\nThe lengthy answer is:\n\nThe vulnerability seems
+  to be the `strip_first_component` filter function, not the tarball function itself
+  and has the same behavior on any tested Python version locally (from 11 to 14, as
+  I noticed that there is a backports conditional for the tarball).\nThe stock tarball
+  for Python 3.12+ is considered not vulnerable (until proven otherwise 😄) but here
+  the custom filter seems to overwrite the native filtering and introduces the issue
+  - while overwriting the updated secure Python 3.12+ behavior and giving a false
+  sense of sanitization.\n\nThe short answer is:\n\nIf we are talking about Python
+  < 3.12 the tarball and jaraco implementations /  behaviors are relatively the same
+  but for Python 3.12+ the jaraco implementation overwrites the native tarball protection.\n\nSampled
+  tests:\n<img width=\"1634\" height=\"245\" alt=\"image\" src=\"https://github.com/user-attachments/assets/ce6c0de6-bb53-4c2b-818a-d77e28d2fbeb\"
+  />"
+date: "2026-01-13"
+pubdate: "2026-01-13"
+affected_range: ">=5.2.0,<6.1.0"
+fixed_versions:
+- "6.1.0"
+affected_versions: "All versions starting from 5.2.0 before 6.1.0"
+not_impacted: "All versions before 5.2.0, all versions starting from 6.1.0"
+solution: "Upgrade to version 6.1.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-58pv-8j8x-9vj2"
+- "https://github.com/jaraco/jaraco.context/security/advisories/GHSA-58pv-8j8x-9vj2"
+- "https://github.com/jaraco/jaraco.context/commit/7b26a42b525735e4085d2e994e13802ea339d5f9"
+- "https://github.com/jaraco/jaraco.context"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N"
+uuid: "901b2a33-4259-4bf3-b48b-781fccff71f8"
+cwe_ids:
+- "CWE-22"
+- "CWE-937"
+- "CWE-1035"

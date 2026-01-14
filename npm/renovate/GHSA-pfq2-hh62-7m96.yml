@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-pfq2-hh62-7m96"
+identifiers:
+- "GHSA-pfq2-hh62-7m96"
+package_slug: "npm/renovate"
+title: "Renovate vulnerable to arbitrary command injection via Gradle Wrapper and
+  malicious `distributionUrl`"
+description: "Renovate can be tricked into executing shell code while updating the
+  Gradle Wrapper. A malicious `distributionUrl` in `gradle/wrapper/gradle-wrapper.properties`
+  can lead to command execution in the Renovate runtime."
+date: "2026-01-13"
+pubdate: "2026-01-13"
+affected_range: ">=32.124.0 <42.68.5"
+fixed_versions:
+- "42.68.5"
+affected_versions: "All versions starting from 32.124.0 before 42.68.5"
+not_impacted: "All versions before 32.124.0, all versions starting from 42.68.5"
+solution: "Upgrade to version 42.68.5 or above."
+urls:
+- "https://github.com/advisories/GHSA-pfq2-hh62-7m96"
+- "https://github.com/renovatebot/renovate/security/advisories/GHSA-pfq2-hh62-7m96"
+- "https://github.com/renovatebot/renovate"
+- "https://github.com/renovatebot/renovate/releases/tag/42.68.5"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H"
+uuid: "9e67c6bf-9b27-457d-aa90-2e2a9796d674"
+cwe_ids:
+- "CWE-78"
+- "CWE-937"
+- "CWE-1035"

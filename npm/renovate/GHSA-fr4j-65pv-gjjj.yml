@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-fr4j-65pv-gjjj"
+identifiers:
+- "GHSA-fr4j-65pv-gjjj"
+package_slug: "npm/renovate"
+title: "Renovate vulnerable to arbitrary command injection via npm manager and malicious
+  Renovate configuration"
+description: "The user-provided string `packageName` in the `npm` manager is appended
+  to the `npm install` command during lock maintenance without proper sanitization."
+date: "2026-01-13"
+pubdate: "2026-01-13"
+affected_range: ">=35.63.0 <40.33.0"
+fixed_versions:
+- "40.33.0"
+affected_versions: "All versions starting from 35.63.0 before 40.33.0"
+not_impacted: "All versions before 35.63.0, all versions starting from 40.33.0"
+solution: "Upgrade to version 40.33.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-fr4j-65pv-gjjj"
+- "https://github.com/renovatebot/renovate/security/advisories/GHSA-fr4j-65pv-gjjj"
+- "https://github.com/renovatebot/renovate"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H"
+uuid: "bb44802b-0054-4454-bca2-cd3327d1a931"
+cwe_ids:
+- "CWE-77"
+- "CWE-937"
+- "CWE-1035"
