@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-mqqf-5wvp-8fh8"
+identifiers:
+- "GHSA-mqqf-5wvp-8fh8"
+package_slug: "go/github.com/go-chi/chi"
+title: "chi has an open redirect vulnerability in the RedirectSlashes middleware"
+description: "The `RedirectSlashes` function in middleware/strip.go does not perform
+  correct input validation and can lead to an open redirect vulnerability."
+date: "2026-01-14"
+pubdate: "2026-01-14"
+affected_range: ">=5.2.2 <5.2.4"
+fixed_versions:
+- "5.2.4"
+affected_versions: "All versions starting from 5.2.2 before 5.2.4"
+not_impacted: "All versions before 5.2.2, all versions starting from 5.2.4"
+solution: "Upgrade to version 5.2.4 or above."
+urls:
+- "https://github.com/advisories/GHSA-mqqf-5wvp-8fh8"
+- "https://github.com/go-chi/chi/security/advisories/GHSA-mqqf-5wvp-8fh8"
+- "https://github.com/go-chi/chi/issues/1037"
+- "https://github.com/go-chi/chi/commit/6eb35881c0e438ffb663ddbad3a61babaa5e5d8a"
+- "https://github.com/go-chi/chi"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:N/A:N"
+uuid: "968c63be-55df-41d7-8256-951ec90ea6a1"
+cwe_ids:
+- "CWE-601"
+- "CWE-937"
+- "CWE-1035"

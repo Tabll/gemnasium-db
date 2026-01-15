@@ -1,0 +1,37 @@
+---
+identifier: "GHSA-595p-g7xc-c333"
+identifiers:
+- "GHSA-595p-g7xc-c333"
+package_slug: "packagist/algolia/algoliasearch-magento-2"
+title: "Algolia Search & Discovery for Magento 2 Has Untrusted Data Handling"
+description: "Versions of the Algolia Search & Discovery extension for Magento 2 prior
+  to **3.17.2** and **3.16.2** contain a vulnerability where data read from the database
+  was treated as a trusted source during job execution.\n\nIf an attacker is able
+  to modify records used by the extension’s indexing queue, this could result in **arbitrary
+  PHP code execution** when the affected job is processed.\n\nExploitation requires
+  the ability to write malicious data to the Magento database and for the indexing
+  queue to be enabled.\n\n---"
+date: "2026-01-14"
+pubdate: "2026-01-14"
+affected_range: ">=3.17.0-beta.1 <3.17.2||<3.16.2"
+fixed_versions:
+- "3.17.2"
+- "3.16.2"
+affected_versions: "All versions before 3.16.2, all versions starting from 3.17.0-beta.1
+  before 3.17.2"
+not_impacted: "All versions starting from 3.16.2 before 3.17.0-beta.1, all versions
+  starting from 3.17.2"
+solution: "Upgrade to versions 3.16.2, 3.17.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-595p-g7xc-c333"
+- "https://github.com/algolia/algoliasearch-magento-2/security/advisories/GHSA-595p-g7xc-c333"
+- "https://github.com/algolia/algoliasearch-magento-2"
+- "https://github.com/algolia/algoliasearch-magento-2/releases/tag/3.16.2"
+- "https://github.com/algolia/algoliasearch-magento-2/releases/tag/3.17.2"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "ceee2143-fb98-47f0-8a5f-dbf7d9e4f280"
+cwe_ids:
+- "CWE-74"
+- "CWE-937"
+- "CWE-1035"
