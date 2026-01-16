@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-44jg-mv3h-wj6g"
+identifiers:
+- "GHSA-44jg-mv3h-wj6g"
+package_slug: "packagist/solspace/craft-freeform"
+title: "solspace/craft-freeform Vulnerable to XSS in `PhpSpreadsheet` HTML Writer
+  Due to Unsanitized Styling Data"
+description: "_Short summary of the problem. Make the impact and severity as clear
+  as possible. For example: An unsafe deserialization vulnerability allows any unauthenticated
+  user to execute arbitrary code on the server._\n\n\\PhpOffice\\PhpSpreadsheet\\Writer\\Html
+  doesn't sanitize spreadsheet styling information such as font names, allowing an
+  attacker to inject arbitrary JavaScript on the page."
+date: "2026-01-15"
+pubdate: "2026-01-15"
+affected_range: "<4.1.23"
+fixed_versions:
+- "4.1.23"
+affected_versions: "All versions before 4.1.23"
+not_impacted: "All versions starting from 4.1.23"
+solution: "Upgrade to version 4.1.23 or above."
+urls:
+- "https://github.com/advisories/GHSA-44jg-mv3h-wj6g"
+- "https://github.com/PHPOffice/PhpSpreadsheet/security/advisories/GHSA-wgmf-q9vr-vww6"
+- "https://github.com/solspace/craft-freeform/security/advisories/GHSA-44jg-mv3h-wj6g"
+- "https://github.com/solspace/craft-freeform"
+- "https://github.com/solspace/craft-freeform/releases/tag/v4.1.23"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:L/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:A/VC:N/VI:N/VA:N/SC:L/SI:L/SA:N"
+uuid: "55157ef4-9f7a-4e85-a2e5-c0da2b74e367"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

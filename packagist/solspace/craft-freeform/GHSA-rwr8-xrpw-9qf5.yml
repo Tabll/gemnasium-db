@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-rwr8-xrpw-9qf5"
+identifiers:
+- "GHSA-rwr8-xrpw-9qf5"
+package_slug: "packagist/solspace/craft-freeform"
+title: "solspace/craft-freeform Exposed to Known Axios Vulnerabilities via Precompiled
+  Assets"
+description: "The latest versions of both 4.x and 5.x are using Axios versions < 1.7.5
+  and as such are subject to known vulnerabilities as per: https://security.snyk.io/package/npm/axios"
+date: "2026-01-15"
+pubdate: "2026-01-15"
+affected_range: "<4.1.22||>=5.0.0-beta.1 <5.5.9"
+fixed_versions:
+- "4.1.22"
+- "5.5.9"
+affected_versions: "All versions before 4.1.22, all versions starting from 5.0.0-beta.1
+  before 5.5.9"
+not_impacted: "All versions starting from 4.1.22 before 5.0.0-beta.1, all versions
+  starting from 5.5.9"
+solution: "Upgrade to versions 4.1.22, 5.5.9 or above."
+urls:
+- "https://github.com/advisories/GHSA-rwr8-xrpw-9qf5"
+- "https://github.com/solspace/craft-freeform/security/advisories/GHSA-rwr8-xrpw-9qf5"
+- "https://github.com/solspace/craft-freeform"
+uuid: "aca2c8c8-07cc-4268-8da5-2f08d58ba895"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"
