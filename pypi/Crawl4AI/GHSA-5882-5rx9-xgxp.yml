@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-5882-5rx9-xgxp"
+identifiers:
+- "GHSA-5882-5rx9-xgxp"
+package_slug: "pypi/Crawl4AI"
+title: "Crawl4AI is Vulnerable to Remote Code Execution in Docker API via Hooks Parameter"
+description: "A critical remote code execution vulnerability exists in the Crawl4AI
+  Docker API deployment. The `/crawl` endpoint accepts a `hooks` parameter containing
+  Python code that is executed using `exec()`. The `__import__` builtin was included
+  in the allowed builtins, allowing attackers to import arbitrary modules and execute
+  system commands.\n\n**Attack Vector:**\n```json\nPOST /crawl\n{\n\"urls\": [\"https://example.com\"],\n\"hooks\":
+  {\n\"code\": {\n\"on_page_context_created\": \"async def hook(page, context, **kwargs):\\n
+  \   __import__('os').system('malicious_command')\\n    return page\"\n}\n}\n}\n```"
+date: "2026-01-16"
+pubdate: "2026-01-16"
+affected_range: "<0.8.0"
+fixed_versions:
+- "0.8.0"
+affected_versions: "All versions before 0.8.0"
+not_impacted: "All versions starting from 0.8.0"
+solution: "Upgrade to version 0.8.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-5882-5rx9-xgxp"
+- "https://github.com/unclecode/crawl4ai/security/advisories/GHSA-5882-5rx9-xgxp"
+- "https://github.com/unclecode/crawl4ai"
+- "https://github.com/unclecode/crawl4ai/blob/release/v0.8.0/docs/blog/release-v0.8.0.md"
+- "https://github.com/unclecode/crawl4ai/blob/release/v0.8.0/docs/migration/v0.8.0-upgrade-guide.md"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H"
+uuid: "256660f2-025f-45e1-8ab6-3038e7c66456"
+cwe_ids:
+- "CWE-94"
+- "CWE-937"
+- "CWE-1035"

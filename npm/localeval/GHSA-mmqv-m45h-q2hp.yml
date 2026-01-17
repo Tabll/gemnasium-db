@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-mmqv-m45h-q2hp"
+identifiers:
+- "GHSA-mmqv-m45h-q2hp"
+package_slug: "npm/localeval"
+title: "Sandbox Breakout / Arbitrary Code Execution in localeval"
+description: "All versions of `localeval` are vulnerable to Sandbox Escape leading
+  to Remote Code Execution. The package fails to restrict access to the main context
+  through `constructor.constructor`. This may allow attackers to execute arbitrary
+  code in the system.  Evaluating the payload\n```\nconstructor.constructor(\"return
+  process.env\")()\n```\n\nreturns the contents of `process.env`."
+date: "2026-01-16"
+pubdate: "2020-09-04"
+affected_range: "<15.3.0"
+fixed_versions:
+- "15.3.0"
+affected_versions: "All versions before 15.3.0"
+not_impacted: "All versions starting from 15.3.0"
+solution: "Upgrade to version 15.3.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-mmqv-m45h-q2hp"
+- "https://github.com/espadrine/localeval/issues/9"
+- "https://github.com/espadrine/localeval/commit/823f112c793b8fae051eeddad61d4ed29804a56c"
+- "https://github.com/espadrine/localeval/commit/ce985eba77a5f89a7f718727cbaa7fb14da40335"
+- "https://github.com/espadrine/localeval"
+uuid: "47e74b80-ef9c-4851-abb9-aa5a9c41f189"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

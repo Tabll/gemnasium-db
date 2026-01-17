@@ -6,13 +6,13 @@ package_slug: "npm/@coinbase/wallet-sdk"
 title: "Unknown vulnerability in Coinbase Wallet SDK"
 description: "There is a security vulnerability in outdated versions of Coinbase Wallet
   SDK. This does not directly affect users' keys, smart contracts, or funds."
-date: "2025-02-10"
+date: "2026-01-16"
 pubdate: "2025-02-10"
-affected_range: ">=4.0 <4.3.0"
+affected_range: ">=4.0.0-beta.0 <4.3.0"
 fixed_versions:
 - "4.3.0"
-affected_versions: "All versions starting from 4.0 before 4.3.0"
-not_impacted: "All versions before 4.0, all versions starting from 4.3.0"
+affected_versions: "All versions starting from 4.0.0-beta.0 before 4.3.0"
+not_impacted: "All versions before 4.0.0-beta.0, all versions starting from 4.3.0"
 solution: "Upgrade to version 4.3.0 or above."
 urls:
 - "https://github.com/advisories/GHSA-8rgj-285w-qcq4"
