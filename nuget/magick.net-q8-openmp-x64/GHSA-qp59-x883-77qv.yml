@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-qp59-x883-77qv"
+identifiers:
+- "GHSA-qp59-x883-77qv"
+package_slug: "nuget/magick.net-q8-openmp-x64"
+title: "ImageMagick has a Memory Leak in LoadOpenCLDeviceBenchmark() when parsing
+  malformed XML"
+description: "A memory leak vulnerability exists in the `LoadOpenCLDeviceBenchmark()`
+  function in `MagickCore/opencl.c`. When parsing a malformed OpenCL device profile
+  XML file that contains `<device` elements without proper `/>` closing tags, the
+  function fails to release allocated memory for string members (`platform_name`,
+  `vendor_name`, `name`, `version`), leading to memory leaks that could result in
+  resource exhaustion.\n\n**Affected Version**: ImageMagick 7.1.2-12 and possibly
+  earlier versions\n\n---"
+date: "2026-01-21"
+pubdate: "2026-01-21"
+affected_range: "[,14.10.2)"
+fixed_versions:
+- "14.10.2"
+affected_versions: "All versions before 14.10.2"
+not_impacted: "All versions starting from 14.10.2"
+solution: "Upgrade to version 14.10.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-qp59-x883-77qv"
+- "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-qp59-x883-77qv"
+- "https://github.com/ImageMagick/ImageMagick"
+- "https://github.com/dlemstra/Magick.NET/releases/tag/14.10.2"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:H"
+uuid: "70c59efd-2063-4a53-b27d-b4281a440f93"
+cwe_ids:
+- "CWE-763"
+- "CWE-937"
+- "CWE-1035"
