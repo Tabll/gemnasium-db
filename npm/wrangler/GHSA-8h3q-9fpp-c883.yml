@@ -1,0 +1,46 @@
+---
+identifier: "GHSA-8h3q-9fpp-c883"
+identifiers:
+- "GHSA-8h3q-9fpp-c883"
+package_slug: "npm/wrangler"
+title: "Duplicate Advisory: Wrangler affected by OS Command Injection in `wrangler
+  pages deploy`"
+description: "## Duplicate Advisory\nThis advisory has been withdrawn because it is
+  a duplicate of GHSA-36p8-mvp6-cv38. This link is maintained to preserve external
+  references.\n\n## Original Description\n\nSummaryA command injection vulnerability
+  (CWE-78) has been found to exist in the `wrangler pages deploy` command. The issue
+  occurs because the `--commit-hash` parameter is passed directly to a shell command
+  without proper validation or sanitization, allowing an attacker with control of
+  `--commit-hash` to execute arbitrary commands on the system running Wrangler.\n\n\n\n\nRoot
+  causeThe commitHash variable, derived from user input via the --commit-hash CLI
+  argument, is interpolated directly into a shell command using template literals
+  (e.g.,  execSync(`git show -s --format=%B ${commitHash}`)). Shell metacharacters
+  are interpreted by the shell, enabling command execution.\n\n\n\n\nImpactThis vulnerability
+  is generally hard to exploit, as it requires --commit-hash to be attacker controlled.
+  The vulnerability primarily affects CI/CD environments where `wrangler pages deploy`
+  is used in automated pipelines and the \n\n--commit-hash parameter is populated
+  from external, potentially untrusted sources. An attacker could exploit this to:\n\n
+  \ *  Run any shell command.\n  *  Exfiltrate environment variables.\n  *  Compromise
+  the CI runner to install backdoors or modify build artifacts.\n\n\n\nCredits Disclosed
+  responsibly by kny4hacker.\n\n\n\n\nMitigation\n  *  Wrangler v4 users are requested
+  to upgrade to Wrangler v4.59.1 or higher.\n  *  Wrangler v3 users are requested
+  to upgrade to Wrangler v3.114.17 or higher.\n  *  Users on Wrangler v2 (EOL) should
+  upgrade to a supported major version."
+date: "2026-01-21"
+pubdate: "2026-01-21"
+affected_range: ">=2.0.15"
+fixed_versions: []
+affected_versions: "All versions starting from 2.0.15"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-8h3q-9fpp-c883"
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-0933"
+- "https://github.com/cloudflare/workers-sdk"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:H/VI:H/VA:H/SC:L/SI:L/SA:N"
+uuid: "d99d7d30-6cc3-43e6-ba68-bd5026581273"
+cwe_ids:
+- "CWE-20"
+- "CWE-937"
+- "CWE-1035"

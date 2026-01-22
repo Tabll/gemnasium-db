@@ -10,7 +10,7 @@ description: "ActiveRecord-JDBC-Adapter (AR-JDBC) contains a flaw that may allow
   not properly sanitizing user-supplied input before using it in SQL queries. This
   may allow a remote attacker to inject or manipulate SQL queries in the back-end
   database, allowing for the manipulation or disclosure of arbitrary data."
-date: "2026-01-16"
+date: "2026-01-21"
 pubdate: "2026-01-16"
 affected_range: "<1.2.8"
 fixed_versions:
@@ -23,6 +23,7 @@ urls:
 - "https://github.com/jruby/activerecord-jdbc-adapter/issues/322"
 - "https://github.com/jruby/activerecord-jdbc-adapter"
 - "https://github.com/jruby/activerecord-jdbc-adapter/blob/master/lib/arjdbc/jdbc/adapter.rb"
+- "https://github.com/rubysec/ruby-advisory-db/blob/master/gems/activerecord-jdbc-adapter/GHSA-5qw5-wf2q-f538.yml"
 - "https://github.com/rubysec/ruby-advisory-db/blob/master/gems/activerecord-jdbc-adapter/OSVDB-114854.yml"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N"
 cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N"

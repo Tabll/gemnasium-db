@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-rjr4-v43m-pxq6"
+identifiers:
+- "GHSA-rjr4-v43m-pxq6"
+package_slug: "cargo/triton-vm"
+title: "Triton VM Soundness Vulnerability due to Improper Sampling of Randomness"
+description: "In affected versions of Triton VM, the verifier failed to correctly
+  sample randomness in the FRI sub-protocol.\n\nMalicious provers can exploit this
+  to craft proofs for arbitrary statements that this verifier accepts as valid, undermining
+  soundness.\n\nProtocols that rely on proofs and the supplied verifier of the affected
+  versions of Triton VM are completely broken. Protocols implementing their own verifier
+  might be unaffected.\n\nThe flaw was corrected in commit 3a045d63, where the relevant
+  randomness is sampled correctly."
+date: "2026-01-21"
+pubdate: "2026-01-21"
+affected_range: ">=0.41.0 <2.0.0"
+fixed_versions:
+- "2.0.0"
+affected_versions: "All versions starting from 0.41.0 before 2.0.0"
+not_impacted: "All versions before 0.41.0, all versions starting from 2.0.0"
+solution: "Upgrade to version 2.0.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-rjr4-v43m-pxq6"
+- "https://github.com/TritonVM/triton-vm/commit/3a045d636e97bb2eb628671db0001aa665c19dd8"
+- "https://github.com/TritonVM/triton-vm"
+- "https://github.com/TritonVM/triton-vm/releases/tag/v2.0.0"
+- "https://rustsec.org/advisories/RUSTSEC-2026-0004.html"
+uuid: "5db83e92-8f0b-4103-bd09-84af39b15313"
+cwe_ids:
+- "CWE-330"
+- "CWE-937"
+- "CWE-1035"
