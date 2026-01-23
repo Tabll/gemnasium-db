@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-jp3q-wwp3-pwv9"
+identifiers:
+- "GHSA-jp3q-wwp3-pwv9"
+package_slug: "packagist/solspace/craft-freeform"
+title: "Freeform Craft Plugin CP UI (builder/integrations) has Stored Cross-Site Scripting
+  (XSS) issue"
+description: "**Summary**\nAn authenticated, low-privilege user (able to create/edit
+  forms) can inject arbitrary HTML/JS into the Craft Control Panel (CP) builder and
+  integrations views. User-controlled form labels and integration metadata are rendered
+  with `dangerouslySetInnerHTML` without sanitization, leading to stored XSS that
+  executes when any admin views the builder/integration screens.\n\n**Affected Product**\n-
+  Ecosystem: Packagist (Craft CMS plugin)\n- Package: solspace/craft-freeform\n- Version:
+  <= 5.14.6 (latest observed). Likely all 5.x until patched."
+date: "2026-01-22"
+pubdate: "2026-01-22"
+affected_range: "<5.14.7"
+fixed_versions:
+- "5.14.7"
+affected_versions: "All versions before 5.14.7"
+not_impacted: "All versions starting from 5.14.7"
+solution: "Upgrade to version 5.14.7 or above."
+urls:
+- "https://github.com/advisories/GHSA-jp3q-wwp3-pwv9"
+- "https://github.com/solspace/craft-freeform/security/advisories/GHSA-jp3q-wwp3-pwv9"
+- "https://github.com/solspace/craft-freeform"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:N/VI:N/VA:N/SC:L/SI:L/SA:N"
+uuid: "da0ad9e5-4982-403a-8e0f-52f82d126aa3"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

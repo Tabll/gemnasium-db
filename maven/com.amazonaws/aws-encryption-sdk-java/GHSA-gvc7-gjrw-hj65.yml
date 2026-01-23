@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-gvc7-gjrw-hj65"
+identifiers:
+- "GHSA-gvc7-gjrw-hj65"
+package_slug: "maven/com.amazonaws/aws-encryption-sdk-java"
+title: "Duplicate Advisory: Improper Verification of Cryptographic Signature in aws-encryption-sdk-java"
+description: "## Duplicate Advisory\nThis advisory has been withdrawn because it is
+  a duplicate of GHSA-55xh-53m6-936r. This link is maintained to preserve external
+  references.\n\n## Original Description\nAWS Encryption SDK for Java versions 2.0.0
+  to 2.2.0 and less than 1.9.0 incorrectly validates some invalid ECDSA signatures."
+date: "2026-01-22"
+pubdate: "2024-01-19"
+affected_range: "[,1.9.0),[2.0.0,2.2.0)"
+fixed_versions:
+- "1.9.0"
+- "2.2.0"
+affected_versions: "All versions before 1.9.0, all versions starting from 2.0.0 before
+  2.2.0"
+not_impacted: "All versions starting from 1.9.0 before 2.0.0, all versions starting
+  from 2.2.0"
+solution: "Upgrade to versions 1.9.0, 2.2.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-gvc7-gjrw-hj65"
+- "https://github.com/aws/aws-encryption-sdk-java/security/advisories/GHSA-55xh-53m6-936r"
+- "https://nvd.nist.gov/vuln/detail/CVE-2024-23680"
+- "https://github.com/advisories/GHSA-55xh-53m6-936r"
+- "https://github.com/aws/aws-encryption-sdk-java"
+- "https://vulncheck.com/advisories/vc-advisory-GHSA-55xh-53m6-936r"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "4f54f16d-4444-4974-819d-eeb29f52d4ad"
+cwe_ids:
+- "CWE-347"
+- "CWE-937"
+- "CWE-1035"

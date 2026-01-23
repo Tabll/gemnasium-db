@@ -11,7 +11,7 @@ description: "In affected versions of Triton VM, the verifier failed to correctl
   versions of Triton VM are completely broken. Protocols implementing their own verifier
   might be unaffected.\n\nThe flaw was corrected in commit 3a045d63, where the relevant
   randomness is sampled correctly."
-date: "2026-01-21"
+date: "2026-01-22"
 pubdate: "2026-01-21"
 affected_range: ">=0.41.0 <2.0.0"
 fixed_versions:
@@ -25,6 +25,8 @@ urls:
 - "https://github.com/TritonVM/triton-vm"
 - "https://github.com/TritonVM/triton-vm/releases/tag/v2.0.0"
 - "https://rustsec.org/advisories/RUSTSEC-2026-0004.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N"
 uuid: "5db83e92-8f0b-4103-bd09-84af39b15313"
 cwe_ids:
 - "CWE-330"

@@ -1,0 +1,39 @@
+---
+identifier: "GHSA-9rhq-86fm-qxqc"
+identifiers:
+- "GHSA-9rhq-86fm-qxqc"
+package_slug: "maven/org.folio/mod-data-export-spring"
+title: "Duplicate Advisory: Hard-coded credentials in org.folio:mod-data-export-spring"
+description: "## Duplicate Advisory\nThis advisory has been withdrawn because it is
+  a duplicate of GHSA-vf78-3q9f-92g3. This link is maintained to preserve external
+  references.\n\n## Original Description\nHard-coded credentials in FOLIO mod-data-export-spring
+  versions before 1.5.4 and from 2.0.0 to 2.0.2 allows unauthenticated users to access
+  critical APIs, modify user data, modify configurations including single-sign-on,
+  and manipulate fees/fines."
+date: "2026-01-22"
+pubdate: "2024-01-20"
+affected_range: "[,1.5.4),[2.0.0,3.0.0)"
+fixed_versions:
+- "1.5.4"
+- "3.0.0"
+affected_versions: "All versions before 1.5.4, all versions starting from 2.0.0 before
+  3.0.0"
+not_impacted: "All versions starting from 1.5.4 before 2.0.0, all versions starting
+  from 3.0.0"
+solution: "Upgrade to versions 1.5.4, 3.0.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-9rhq-86fm-qxqc"
+- "https://github.com/folio-org/mod-data-export-spring/security/advisories/GHSA-vf78-3q9f-92g3"
+- "https://nvd.nist.gov/vuln/detail/CVE-2024-23687"
+- "https://github.com/folio-org/mod-data-export-spring/commit/93aff4566bff59e30f4121b5a2bda5b0b508a446"
+- "https://github.com/folio-org/mod-data-export-spring/commit/cb6785565067a2a90c1e2250c241e5b23214c691"
+- "https://github.com/advisories/GHSA-vf78-3q9f-92g3"
+- "https://github.com/folio-org/mod-data-export-spring"
+- "https://vulncheck.com/advisories/vc-advisory-GHSA-vf78-3q9f-92g3"
+- "https://wiki.folio.org/x/hbMMBw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N"
+uuid: "8216126e-b8ea-403a-90db-05cd3bb6f705"
+cwe_ids:
+- "CWE-798"
+- "CWE-937"
+- "CWE-1035"

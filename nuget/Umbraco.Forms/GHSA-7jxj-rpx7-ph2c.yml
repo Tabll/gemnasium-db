@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-7jxj-rpx7-ph2c"
+identifiers:
+- "GHSA-7jxj-rpx7-ph2c"
+package_slug: "nuget/Umbraco.Forms"
+title: "Umbraco.Forms CDN may cache sensitive form uploads when processed by ImageSharp"
+description: "Protected files uploaded through Umbraco Forms may be served to unauthenticated
+  users when a CDN or caching layer is present and ImageSharp processes the request.
+  ImageSharp sets aggressive cache headers by default, which can cause intermediary
+  caches to store and serve files that should require authentication."
+date: "2026-01-22"
+pubdate: "2026-01-22"
+affected_range: "[,13.9.0),[14.0.0-beta001,16.4.0),[17.0.0-rc1,17.1.0)"
+fixed_versions:
+- "13.9.0"
+- "16.4.0"
+- "17.1.0"
+affected_versions: "All versions before 13.9.0, all versions starting from 14.0.0-beta001
+  before 16.4.0, all versions starting from 17.0.0-rc1 before 17.1.0"
+not_impacted: "All versions starting from 13.9.0 before 14.0.0-beta001, all versions
+  starting from 16.4.0 before 17.0.0-rc1, all versions starting from 17.1.0"
+solution: "Upgrade to versions 13.9.0, 16.4.0, 17.1.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-7jxj-rpx7-ph2c"
+- "https://github.com/umbraco/Umbraco.Forms.Issues/security/advisories/GHSA-7jxj-rpx7-ph2c"
+- "https://github.com/umbraco/Umbraco.Forms.Issues"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:N/A:N"
+uuid: "c74677f9-3c5a-42ff-8270-ff6417930a31"
+cwe_ids:
+- "CWE-524"
+- "CWE-937"
+- "CWE-1035"

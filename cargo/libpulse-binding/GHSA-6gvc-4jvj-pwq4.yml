@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-6gvc-4jvj-pwq4"
+identifiers:
+- "GHSA-6gvc-4jvj-pwq4"
+package_slug: "cargo/libpulse-binding"
+title: "Duplicate Advisory: Use after free in libpulse-binding"
+description: "## Duplicate Advisory\nThis advisory has been withdrawn because it is
+  a duplicate of GHSA-f56g-chqp-22m9. This link is maintained to preserve external
+  references.\n\n## Original Description\nAn issue was discovered in the libpulse-binding
+  crate before 2.5.0 for Rust. proplist::Iterator can cause a use-after-free."
+date: "2026-01-22"
+pubdate: "2021-08-30"
+affected_range: ">=1.0.5 <2.5.0"
+fixed_versions:
+- "2.5.0"
+affected_versions: "All versions starting from 1.0.5 before 2.5.0"
+not_impacted: "All versions before 1.0.5, all versions starting from 2.5.0"
+solution: "Upgrade to version 2.5.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-6gvc-4jvj-pwq4"
+- "https://nvd.nist.gov/vuln/detail/CVE-2018-25001"
+- "https://github.com/jnqnfe/pulse-binding-rust"
+- "https://rustsec.org/advisories/RUSTSEC-2018-0020.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N"
+uuid: "e58900e0-4b86-42e5-8a1d-55671665451e"
+cwe_ids:
+- "CWE-416"
+- "CWE-937"
+- "CWE-1035"

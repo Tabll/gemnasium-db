@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-3jqf-v4mv-747g"
+identifiers:
+- "GHSA-3jqf-v4mv-747g"
+package_slug: "pypi/moonraker"
+title: "Moonraker affected by LDAP search filter injection"
+description: "Instances of Moonraker configured with the `ldap` component enabled
+  are vulnerable to LDAP search filter injection techniques via the login endpoint.
+  \  The 401 error response message can be used to determine whether or not a search
+  was successful, allowing for brute force methods to discover LDAP entries on the
+  server such as user IDs and user attributes."
+date: "2026-01-22"
+pubdate: "2026-01-22"
+affected_range: "<0.10.0"
+fixed_versions:
+- "0.10.0"
+affected_versions: "All versions before 0.10.0"
+not_impacted: "All versions starting from 0.10.0"
+solution: "Upgrade to version 0.10.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-3jqf-v4mv-747g"
+- "https://github.com/Arksine/moonraker/security/advisories/GHSA-3jqf-v4mv-747g"
+- "https://github.com/Arksine/moonraker/commit/74c5d8e44c4a4abbfbb06fb991e7ebb9ac947f42"
+- "https://github.com/Arksine/moonraker"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N"
+uuid: "5b8af103-6af2-40b5-8d62-83bfd6cba8ca"
+cwe_ids:
+- "CWE-90"
+- "CWE-937"
+- "CWE-1035"

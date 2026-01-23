@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-c4pg-5ggh-vcpp"
+identifiers:
+- "GHSA-c4pg-5ggh-vcpp"
+package_slug: "maven/de.tum.in.ase/artemis-java-test-sandbox"
+title: "Duplicate Advisory: Sandbox escape in Artemis Java Test Sandbox"
+description: "## Duplicate Advisory\nThis advisory has been withdrawn because it is
+  a duplicate of GHSA-98hq-4wmw-98w9. This link is maintained to preserve external
+  references.\n\n## Original Description\nArtemis Java Test Sandbox versions before
+  1.11.2 are vulnerable to a sandbox escape when an attacker loads untrusted libraries
+  using System.load or System.loadLibrary. An attacker can abuse this issue to execute
+  arbitrary Java when a victim executes the supposedly sandboxed code."
+date: "2026-01-22"
+pubdate: "2024-01-19"
+affected_range: "[,1.11.2)"
+fixed_versions:
+- "1.11.2"
+affected_versions: "All versions before 1.11.2"
+not_impacted: "All versions starting from 1.11.2"
+solution: "Upgrade to version 1.11.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-c4pg-5ggh-vcpp"
+- "https://github.com/ls1intum/Ares/security/advisories/GHSA-98hq-4wmw-98w9"
+- "https://nvd.nist.gov/vuln/detail/CVE-2024-23681"
+- "https://github.com/advisories/GHSA-98hq-4wmw-98w9"
+- "https://github.com/ls1intum/Ares"
+- "https://vulncheck.com/advisories/vc-advisory-GHSA-98hq-4wmw-98w9"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H"
+uuid: "ea9bad6e-b773-462a-8f4f-81e2be5bf217"
+cwe_ids:
+- "CWE-284"
+- "CWE-94"
+- "CWE-937"
+- "CWE-1035"

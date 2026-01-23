@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-9xfq-8j3r-xp5g"
+identifiers:
+- "GHSA-9xfq-8j3r-xp5g"
+package_slug: "go/github.com/Consensys/gnark-crypto"
+title: "Duplicate Advisory: Consensys gnark-crypto allows Signature Malleability"
+description: "## Duplicate Advisory\nThis advisory has been withdrawn because it is
+  a duplicate of GHSA-fr8m-434r-g3xp. This link is maintained to preserve external
+  references.\n\n## Original Description\nConsensys gnark-crypto through 0.11.2 allows
+  Signature Malleability. This occurs because deserialisation of EdDSA and ECDSA signatures
+  does not ensure that the data is in a certain interval."
+date: "2026-01-22"
+pubdate: "2023-09-28"
+affected_range: "<0.12.0"
+fixed_versions:
+- "0.12.0"
+affected_versions: "All versions before 0.12.0"
+not_impacted: "All versions starting from 0.12.0"
+solution: "Upgrade to version 0.12.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-9xfq-8j3r-xp5g"
+- "https://nvd.nist.gov/vuln/detail/CVE-2023-44273"
+- "https://github.com/Consensys/gnark-crypto/pull/449"
+- "https://github.com/Consensys/gnark-crypto"
+- "https://github.com/Consensys/gnark-crypto/releases"
+- "https://github.com/Consensys/gnark-crypto/releases/tag/v0.12.0"
+- "https://verichains.io"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+uuid: "5e40e640-e0c0-4f64-a208-bfed7cbfdf3b"
+cwe_ids:
+- "CWE-502"
+- "CWE-937"
+- "CWE-1035"

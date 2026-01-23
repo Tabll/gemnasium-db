@@ -1,0 +1,43 @@
+---
+identifier: "GHSA-3v2x-9xcv-2v2v"
+identifiers:
+- "GHSA-3v2x-9xcv-2v2v"
+package_slug: "cargo/surrealdb"
+title: "SurrealDB Affected by Confused Deputy Privilege Escalation through Future
+  Fields and Functions"
+description: "Unprivileged users (for example, those with the database editor role)
+  can create or modify fields in records that contain functions or `futures`. `Futures`
+  are values which are only computed when the value is queried. The query executes
+  in the context of the querying user, rather than the user who originally defined
+  the future. Likewise, fields containing functions or custom-defined logic (`closures`)
+  are executed under the privileges of the invoking user, not the creator.\n\nThis
+  results in a confused deputy vulnerability: an attacker with limited privileges
+  can define a malicious function or future field that performs privileged actions.
+  When a higher-privileged user (such as a root owner or namespace administrator)
+  executes the function or queries or modifies that record, the function executes
+  with their elevated permissions."
+date: "2026-01-22"
+pubdate: "2026-01-22"
+affected_range: "<2.5.0||>=3.0.0-alpha.1 <3.0.0-beta.3"
+fixed_versions:
+- "2.5.0"
+- "3.0.0-beta.3"
+affected_versions: "All versions before 2.5.0, all versions starting from 3.0.0-alpha.1
+  before 3.0.0-beta.3"
+not_impacted: "All versions starting from 2.5.0 before 3.0.0-alpha.1, all versions
+  starting from 3.0.0-beta.3"
+solution: "Upgrade to versions 2.5.0, 3.0.0-beta.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-3v2x-9xcv-2v2v"
+- "https://github.com/surrealdb/surrealdb/security/advisories/GHSA-3v2x-9xcv-2v2v"
+- "https://github.com/surrealdb/surrealdb/commit/f515c91363ee735aa1bc08580d9e7fa0de6e736f"
+- "https://github.com/surrealdb/surrealdb"
+- "https://github.com/surrealdb/surrealdb/releases/tag/v2.5.0"
+- "https://github.com/surrealdb/surrealdb/releases/tag/v3.0.0-beta.2"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+uuid: "760403ea-90f0-4bae-9b16-751875667248"
+cwe_ids:
+- "CWE-441"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-j8hf-cp34-g4j7"
+identifiers:
+- "GHSA-j8hf-cp34-g4j7"
+package_slug: "go/d7y.io/dragonfly/v2"
+title: "Dragonfly Manager Job API Unauthenticated Access"
+description: "Dragonfly Manager's Job REST API endpoints lack authentication, allowing
+  unauthenticated attackers to create, query, modify, and delete jobs, potentially
+  leading to resource exhaustion, information disclosure, and service disruption."
+date: "2026-01-22"
+pubdate: "2026-01-22"
+affected_range: "<2.4.0"
+fixed_versions:
+- "2.4.0"
+affected_versions: "All versions before 2.4.0"
+not_impacted: "All versions starting from 2.4.0"
+solution: "Upgrade to version 2.4.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-j8hf-cp34-g4j7"
+- "https://github.com/dragonflyoss/dragonfly/security/advisories/GHSA-j8hf-cp34-g4j7"
+- "https://github.com/dragonflyoss/dragonfly"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+uuid: "1378df9a-e2de-4838-ac10-3b4d10c2d6ff"
+cwe_ids:
+- "CWE-306"
+- "CWE-937"
+- "CWE-1035"
