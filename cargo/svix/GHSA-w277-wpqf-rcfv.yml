@@ -3,12 +3,15 @@ identifier: "GHSA-w277-wpqf-rcfv"
 identifiers:
 - "GHSA-w277-wpqf-rcfv"
 package_slug: "cargo/svix"
-title: "Svix vulnerable to improper comparison of different-length signatures"
-description: "The `Webhook::verify` function incorrectly compared signatures of different
-  lengths - the two signatures would only be compared up to the length of the shorter
-  signature. This allowed an attacker to pass in `v1,` as the signature, which would
-  always pass verification."
-date: "2024-02-06"
+title: "Duplicate Advisory: Svix vulnerable to improper comparison of different-length
+  signatures"
+description: "## Duplicate Advisory\nThis advisory has been withdrawn because it is
+  a duplicate of GHSA-747x-5m58-mq97. This link is maintained to preserve external
+  references.\n\n## Original Description\nThe `Webhook::verify` function incorrectly
+  compared signatures of different lengths - the two signatures would only be compared
+  up to the length of the shorter signature. This allowed an attacker to pass in `v1,`
+  as the signature, which would always pass verification."
+date: "2026-01-23"
 pubdate: "2024-02-06"
 affected_range: "<1.17.0"
 fixed_versions:

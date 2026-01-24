@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-7p9h-m7m8-vhhv"
+identifiers:
+- "GHSA-7p9h-m7m8-vhhv"
+package_slug: "packagist/phpmyfaq/phpmyfaq"
+title: "phpMyFAQ: Attachment download allowed without dlattachment right (broken access
+  control)"
+description: "A logged‑in user without the dlattachment right can download FAQ attachments.
+  This is due to a permissive permission check in attachment.php that treats the mere
+  presence of a right key as authorization and a flawed group/user logic expression."
+date: "2026-01-23"
+pubdate: "2026-01-23"
+affected_range: "<4.0.17"
+fixed_versions:
+- "4.0.17"
+affected_versions: "All versions before 4.0.17"
+not_impacted: "All versions starting from 4.0.17"
+solution: "Upgrade to version 4.0.17 or above."
+urls:
+- "https://github.com/advisories/GHSA-7p9h-m7m8-vhhv"
+- "https://github.com/thorsten/phpMyFAQ/security/advisories/GHSA-7p9h-m7m8-vhhv"
+- "https://github.com/thorsten/phpMyFAQ"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+uuid: "55df7b55-ef03-49c5-bf39-95959a74bab0"
+cwe_ids:
+- "CWE-284"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-967g-cjx4-h7j6"
+identifiers:
+- "GHSA-967g-cjx4-h7j6"
+package_slug: "go/github.com/ipld/go-codec-dagpb"
+title: "Duplicate Advisory: go-codec-dagpb vulnerable to panic when decoding invalid
+  blocks"
+description: "## Duplicate Advisory\nThis advisory has been withdrawn because it is
+  a duplicate of GHSA-g3vv-g2j5-45f2. This link is maintained to preserve external
+  references.\n\n## Original Description\ngo-codec-dagpb is an implementation of the
+  DAG-PB spec for Go. The dag-pb codec can panic when decoding invalid blocks. This
+  issue has been patched in version 1.3.1."
+date: "2026-01-23"
+pubdate: "2022-12-28"
+affected_range: "<1.3.1"
+fixed_versions:
+- "1.3.1"
+affected_versions: "All versions before 1.3.1"
+not_impacted: "All versions starting from 1.3.1"
+solution: "Upgrade to version 1.3.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-967g-cjx4-h7j6"
+- "https://nvd.nist.gov/vuln/detail/CVE-2022-2584"
+- "https://github.com/ipld/go-codec-dagpb/commit/a17ace35cc760a2698645c09868f9050fa219f57"
+- "https://pkg.go.dev/vuln/GO-2022-0422"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:H"
+uuid: "1d0efc6c-c5f3-4037-b372-e6d7cfdc73f8"
+cwe_ids:
+- "CWE-119"
+- "CWE-937"
+- "CWE-1035"

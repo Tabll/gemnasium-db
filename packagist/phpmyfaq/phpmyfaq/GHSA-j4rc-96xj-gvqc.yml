@@ -1,0 +1,26 @@
+---
+identifier: "GHSA-j4rc-96xj-gvqc"
+identifiers:
+- "GHSA-j4rc-96xj-gvqc"
+package_slug: "packagist/phpmyfaq/phpmyfaq"
+title: "phpMyFAQ: Public API endpoints expose emails and invisible questions"
+description: "Several public API endpoints return email addresses and non‑public records
+  (e.g. open questions with isVisible=false)."
+date: "2026-01-23"
+pubdate: "2026-01-23"
+affected_range: "<4.0.17"
+fixed_versions:
+- "4.0.17"
+affected_versions: "All versions before 4.0.17"
+not_impacted: "All versions starting from 4.0.17"
+solution: "Upgrade to version 4.0.17 or above."
+urls:
+- "https://github.com/advisories/GHSA-j4rc-96xj-gvqc"
+- "https://github.com/thorsten/phpMyFAQ/security/advisories/GHSA-j4rc-96xj-gvqc"
+- "https://github.com/thorsten/phpMyFAQ"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+uuid: "f4f55531-953b-4d0b-b9d9-4cb48660612a"
+cwe_ids:
+- "CWE-200"
+- "CWE-937"
+- "CWE-1035"

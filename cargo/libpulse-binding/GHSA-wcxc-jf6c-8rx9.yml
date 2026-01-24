@@ -3,11 +3,13 @@ identifier: "GHSA-wcxc-jf6c-8rx9"
 identifiers:
 - "GHSA-wcxc-jf6c-8rx9"
 package_slug: "cargo/libpulse-binding"
-title: " Uncaught Exception in libpulse-binding"
-description: "Affected versions of this crate failed to catch panics crossing FFI
-  boundaries via callbacks, which\nis a form of UB. This flaw was corrected by [this
-  commit][1] which was included in version 2.6.0."
-date: "2021-08-18"
+title: "Duplicate Advisory: Uncaught Exception in libpulse-binding"
+description: "## Duplicate Advisory\nThis advisory has been withdrawn because it is
+  a duplicate of GHSA-xvcg-2q82-r87j. This link is maintained to preserve external
+  references.\n\n## Original Description\nAffected versions of this crate failed to
+  catch panics crossing FFI boundaries via callbacks, which\nis a form of UB. This
+  flaw was corrected by [this commit][1] which was included in version 2.6.0."
+date: "2026-01-23"
 pubdate: "2021-08-25"
 affected_range: "<2.6.0"
 fixed_versions:

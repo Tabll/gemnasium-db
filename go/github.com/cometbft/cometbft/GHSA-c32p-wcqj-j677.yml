@@ -1,0 +1,39 @@
+---
+identifier: "GHSA-c32p-wcqj-j677"
+identifiers:
+- "GHSA-c32p-wcqj-j677"
+package_slug: "go/github.com/cometbft/cometbft"
+title: "CometBFT has inconsistencies between how commit signatures are verified and
+  how block time is derived"
+description: "**Name:** CSA-2026-001: Tachyon\n\n**Criticality:** Critical (Catastrophic
+  Impact; Possible Likelihood per [ACMv1.2](https://github.com/interchainio/security/blob/main/resources/CLASSIFICATION_MATRIX.md))\n\n**Affected
+  versions:** All versions of CometBFT\n\n**Affected users:** Validators and protocols
+  relying on block timestamps\n\n\nA consensus-level vulnerability was discovered
+  in CometBFT's \"BFT Time\" implementation due to an inconsistency between how commit
+  signatures are verified and how block time is derived.\n\nThis breaks a core BFT
+  Time guarantee: \"A faulty process cannot arbitrarily increase the Time value.\""
+date: "2026-01-23"
+pubdate: "2026-01-23"
+affected_range: ">=0.38.0-alpha.1 <0.38.21||<0.37.18"
+fixed_versions:
+- "0.38.21"
+- "0.37.18"
+affected_versions: "All versions before 0.37.18, all versions starting from 0.38.0-alpha.1
+  before 0.38.21"
+not_impacted: "All versions starting from 0.37.18 before 0.38.0-alpha.1, all versions
+  starting from 0.38.21"
+solution: "Upgrade to versions 0.37.18, 0.38.21 or above."
+urls:
+- "https://github.com/advisories/GHSA-c32p-wcqj-j677"
+- "https://github.com/cometbft/cometbft/security/advisories/GHSA-c32p-wcqj-j677"
+- "https://github.com/cometbft/cometbft/commit/bf8274fcdbcab2bc652660ae627196a90a6efb97"
+- "https://github.com/cometbft/cometbft"
+- "https://github.com/cometbft/cometbft/releases/tag/v0.37.18"
+- "https://github.com/cometbft/cometbft/releases/tag/v0.38.21"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N"
+uuid: "df2ded2e-4efb-4a82-bc00-5bc9e46c9811"
+cwe_ids:
+- "CWE-703"
+- "CWE-937"
+- "CWE-1035"

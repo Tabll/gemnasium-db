@@ -3,15 +3,17 @@ identifier: "GHSA-r88h-6987-g79f"
 identifiers:
 - "GHSA-r88h-6987-g79f"
 package_slug: "cargo/syncpool"
-title: "Data races on syncpool"
-description: "Affected versions of this crate unconditionally implements `Send` for
-  `Bucket2`. This allows sending non-Send types to other threads.\n\nThis can lead
-  to data races when non Send types like `Cell<T>` or `Rc<T>` are contained inside
-  `Bucket2` and sent across thread boundaries. The data races can potentially lead
-  to memory corruption (as demonstrated in the PoC from the original report issue).\n\nThe
+title: "Duplicate Advisory: Data races on syncpool"
+description: "## Duplicate Advisory\nThis advisory has been withdrawn because it is
+  a duplicate of GHSA-vp6r-mrq9-8f4h. This link is maintained to preserve external
+  references.\n\n## Original Description\nAffected versions of this crate unconditionally
+  implements `Send` for `Bucket2`. This allows sending non-Send types to other threads.\n\nThis
+  can lead to data races when non Send types like `Cell<T>` or `Rc<T>` are contained
+  inside `Bucket2` and sent across thread boundaries. The data races can potentially
+  lead to memory corruption (as demonstrated in the PoC from the original report issue).\n\nThe
   flaw was corrected in commit `15b2828` by adding a `T: Send` bound to the `Send`
   impl of `Bucket2<T>`."
-date: "2023-06-13"
+date: "2026-01-23"
 pubdate: "2021-08-25"
 affected_range: "<0.1.6"
 fixed_versions:

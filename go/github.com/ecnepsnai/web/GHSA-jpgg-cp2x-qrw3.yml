@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-jpgg-cp2x-qrw3"
+identifiers:
+- "GHSA-jpgg-cp2x-qrw3"
+package_slug: "go/github.com/ecnepsnai/web"
+title: "Duplicate Advisory: ecnepsnai/web vulnerable to Uncontrolled Resource Consumption"
+description: "## Duplicate Advisory\nThis advisory has been withdrawn because it is
+  a duplicate of GHSA-5gjg-jgh4-gppm. This link is maintained to preserve external
+  references.\n\n## Original Description\nWeb Sockets do not execute any AuthenticateMethod
+  methods which may be set, leading to a nil pointer dereference if the returned UserData
+  pointer is assumed to be non-nil, or authentication bypass. This issue only affects
+  WebSockets with an AuthenticateMethod hook. Request handlers that do not explicitly
+  use WebSockets are not vulnerable."
+date: "2026-01-23"
+pubdate: "2022-12-28"
+affected_range: ">=1.4.0 <1.5.2"
+fixed_versions:
+- "1.5.2"
+affected_versions: "All versions starting from 1.4.0 before 1.5.2"
+not_impacted: "All versions before 1.4.0, all versions starting from 1.5.2"
+solution: "Upgrade to version 1.5.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-jpgg-cp2x-qrw3"
+- "https://nvd.nist.gov/vuln/detail/CVE-2021-4236"
+- "https://github.com/ecnepsnai/web/commit/5a78f8d5c41ce60dcf9f61aaf47a7a8dc3e0002f"
+- "https://github.com/ecnepsnai/web"
+- "https://pkg.go.dev/vuln/GO-2021-0107"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+uuid: "59382319-03b7-41c5-b0ab-db3ed1f83528"
+cwe_ids:
+- "CWE-400"
+- "CWE-476"
+- "CWE-937"
+- "CWE-1035"

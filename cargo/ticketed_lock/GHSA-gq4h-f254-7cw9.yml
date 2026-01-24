@@ -3,14 +3,17 @@ identifier: "GHSA-gq4h-f254-7cw9"
 identifiers:
 - "GHSA-gq4h-f254-7cw9"
 package_slug: "cargo/ticketed_lock"
-title: "Data races in ticketed_lock"
-description: "Affected versions of this crate unconditionally implemented `Send` for
-  `ReadTicket<T>` & `WriteTicket<T>`.\nThis allows to send non-Send `T` to other threads.\n\nThis
-  can allows creating data races by cloning types with internal mutability and sending
-  them to other threads (as `T` of `ReadTicket<T>`/`WriteTicket<T>`). Such data races
-  can cause memory corruption or other undefined behavior.\n\nThe flaw was corrected
-  in commit `a986a93` by adding `T: Send` bounds to `Send` impls of `ReadTicket<T>`/`WriteTicket<T>`."
-date: "2023-06-13"
+title: "Duplicate Advisory: Data races in ticketed_lock"
+description: "## Duplicate Advisory\nThis advisory has been withdrawn because it is
+  a duplicate of GHSA-77m6-x95j-75r5. This link is maintained to preserve external
+  references.\n\n## Original Description\nAffected versions of this crate unconditionally
+  implemented `Send` for `ReadTicket<T>` & `WriteTicket<T>`.\nThis allows to send
+  non-Send `T` to other threads.\n\nThis can allows creating data races by cloning
+  types with internal mutability and sending them to other threads (as `T` of `ReadTicket<T>`/`WriteTicket<T>`).
+  Such data races can cause memory corruption or other undefined behavior.\n\nThe
+  flaw was corrected in commit `a986a93` by adding `T: Send` bounds to `Send` impls
+  of `ReadTicket<T>`/`WriteTicket<T>`."
+date: "2026-01-23"
 pubdate: "2021-08-25"
 affected_range: "<0.3.0"
 fixed_versions:

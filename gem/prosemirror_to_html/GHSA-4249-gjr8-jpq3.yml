@@ -3,8 +3,8 @@ identifier: "GHSA-4249-gjr8-jpq3"
 identifiers:
 - "GHSA-4249-gjr8-jpq3"
 package_slug: "gem/prosemirror_to_html"
-title: "ProsemirrorToHtml has a Cross-Site Scripting (XSS) vulnerability through unescaped
-  HTML attribute values"
+title: "Duplicate Advisory: ProsemirrorToHtml has a Cross-Site Scripting (XSS) vulnerability
+  through unescaped HTML attribute values"
 description: "The prosemirror_to_html gem is vulnerable to Cross-Site Scripting (XSS)
   attacks through malicious HTML attribute values. While tag content is properly escaped,
   attribute values are not, allowing attackers to inject arbitrary JavaScript code.\n\n**Who
@@ -16,7 +16,7 @@ description: "The prosemirror_to_html gem is vulnerable to Cross-Site Scripting 
   Event handlers: `<div onclick=\"maliciousCode()\">`\n- `onerror` attributes on images:
   `<img src=x onerror=\"alert('XSS')\">`\n- Other HTML attributes that can execute
   JavaScript"
-date: "2025-11-13"
+date: "2026-01-23"
 pubdate: "2025-11-13"
 affected_range: "<0.2.1"
 fixed_versions:

@@ -3,11 +3,11 @@ identifier: "GHSA-7fpj-wc8v-9cgc"
 identifiers:
 - "GHSA-7fpj-wc8v-9cgc"
 package_slug: "packagist/terminal42/contao-tablelookupwizard"
-title: "terminal42/contao-tablelookupwizard possible SQL injection in widget field
-  value"
+title: "Duplicate Advisory: terminal42/contao-tablelookupwizard possible SQL injection
+  in widget field value"
 description: "The currently selected widget values were not correctly sanitized before
   passing it to the database, leading to an SQL injection possibility."
-date: "2024-05-30"
+date: "2026-01-23"
 pubdate: "2024-05-30"
 affected_range: ">=1.0.0 <3.3.5"
 fixed_versions:
