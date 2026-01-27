@@ -3,40 +3,15 @@ identifier: "GHSA-2w5j-qfvw-2hf5"
 identifiers:
 - "GHSA-2w5j-qfvw-2hf5"
 package_slug: "go/github.com/zitadel/zitadel/v2"
-title: "ZITADEL's User Grant Deactivation not Working"
-description: "ZITADEL's user grants deactivation mechanism did not work correctly.
-  Deactivated user grants were still provided in token, which could lead to unauthorized
-  access to applications and resources.\nAdditionally, the management and auth API
-  always returned the state as active or did not provide any information about the
-  state."
-date: "2024-09-19"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2024-09-19"
-affected_range: ">=2.62.0 <2.62.1||>=2.61.0 <2.61.1||>=2.60.0 <2.60.2||>=2.59.0 <2.59.3||>=2.58.0
-  <2.58.5||>=2.57.0 <2.57.5||>=2.56.0 <2.56.6||>=2.55.0 <2.55.8||<2.54.10"
-fixed_versions:
-- "2.62.1"
-- "2.61.1"
-- "2.60.2"
-- "2.59.3"
-- "2.58.5"
-- "2.57.5"
-- "2.56.6"
-- "2.55.8"
-- "2.54.10"
-affected_versions: "All versions before 2.54.10, all versions starting from 2.55.0
-  before 2.55.8, all versions starting from 2.56.0 before 2.56.6, all versions starting
-  from 2.57.0 before 2.57.5, all versions starting from 2.58.0 before 2.58.5, all
-  versions starting from 2.59.0 before 2.59.3, all versions starting from 2.60.0 before
-  2.60.2, all versions starting from 2.61.0 before 2.61.1, all versions starting from
-  2.62.0 before 2.62.1"
-not_impacted: "All versions starting from 2.54.10 before 2.55.0, all versions starting
-  from 2.55.8 before 2.56.0, all versions starting from 2.56.6 before 2.57.0, all
-  versions starting from 2.57.5 before 2.58.0, all versions starting from 2.58.5 before
-  2.59.0, all versions starting from 2.59.3 before 2.60.0, all versions starting from
-  2.60.2 before 2.61.0, all versions starting from 2.61.1 before 2.62.0, all versions
-  starting from 2.62.1"
-solution: "Upgrade to versions 2.54.10, 2.55.8, 2.56.6, 2.57.5, 2.58.5, 2.59.3, 2.60.2,
-  2.61.1, 2.62.1 or above."
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/advisories/GHSA-2w5j-qfvw-2hf5"
 - "https://github.com/zitadel/zitadel/security/advisories/GHSA-2w5j-qfvw-2hf5"

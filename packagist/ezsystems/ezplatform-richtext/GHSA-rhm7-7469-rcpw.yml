@@ -3,21 +3,15 @@ identifier: "GHSA-rhm7-7469-rcpw"
 identifiers:
 - "GHSA-rhm7-7469-rcpw"
 package_slug: "packagist/ezsystems/ezplatform-richtext"
-title: "Persistent Cross-site Scripting in eZ Platform Rich Text Field Type"
-description: "The validator for the RichText fieldtype blocklists `javascript:` and
-  `vbscript:` in links to prevent XSS. This can leave other options open, and the
-  check can be circumvented using upper case. Content editing permissions for RichText
-  content is required to exploit this vulnerability, which typically means Editor
-  role or higher. The fix implements an allowlist instead, which allows only approved
-  link protocols. The new check is case insensitive."
-date: "2024-08-14"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2024-08-14"
-affected_range: ">=3.3.0 <3.3.40"
-fixed_versions:
-- "3.3.40"
-affected_versions: "All versions starting from 3.3.0 before 3.3.40"
-not_impacted: "All versions before 3.3.0, all versions starting from 3.3.40"
-solution: "Upgrade to version 3.3.40 or above."
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/advisories/GHSA-rhm7-7469-rcpw"
 - "https://github.com/ezsystems/ezplatform-richtext/security/advisories/GHSA-rhm7-7469-rcpw"

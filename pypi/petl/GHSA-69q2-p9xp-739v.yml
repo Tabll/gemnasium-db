@@ -3,19 +3,15 @@ identifier: "GHSA-69q2-p9xp-739v"
 identifiers:
 - "GHSA-69q2-p9xp-739v"
 package_slug: "pypi/petl"
-title: "Duplicate Advisory: XML Injection in petl"
-description: "## Duplicate Advisory\nThis advisoerey has been withdrawn because it
-  is a duplicate of GHSA-f5gc-p5m3-v347. This link is maintained to preserve external
-  references.\n\n## Original Description\npetl before 1.68, in some configurations,
-  allows resolution of entities in an XML document."
-date: "2024-10-09"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2021-04-20"
-affected_range: "<1.6.8"
-fixed_versions:
-- "1.6.8"
-affected_versions: "All versions before 1.6.8"
-not_impacted: "All versions starting from 1.6.8"
-solution: "Upgrade to version 1.6.8 or above."
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/advisories/GHSA-69q2-p9xp-739v"
 - "https://github.com/petl-developers/petl/security/advisories/GHSA-f5gc-p5m3-v347"

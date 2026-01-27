@@ -3,18 +3,15 @@ identifier: "GHSA-9mv7-3c64-mmqw"
 identifiers:
 - "GHSA-9mv7-3c64-mmqw"
 package_slug: "pypi/xml2rfc"
-title: "xml2rfc is vulnerable to arbitrary file reads through prepped files"
-description: "When generating PDF files, this vulnerability allows an attacker to
-  read arbitrary files from the filesystem by injecting malicious link element into
-  the prepped RFCXML."
-date: "2025-09-10"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2025-09-10"
-affected_range: "<3.30.2"
-fixed_versions:
-- "3.30.2"
-affected_versions: "All versions before 3.30.2"
-not_impacted: "All versions starting from 3.30.2"
-solution: "Upgrade to version 3.30.2 or above."
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/advisories/GHSA-9mv7-3c64-mmqw"
 - "https://github.com/ietf-tools/xml2rfc/security/advisories/GHSA-9mv7-3c64-mmqw"

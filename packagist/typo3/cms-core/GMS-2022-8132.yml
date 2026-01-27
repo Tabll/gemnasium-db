@@ -5,27 +5,15 @@ identifiers:
 - "GMS-2022-8132"
 - "CVE-2022-23503"
 package_slug: "packagist/typo3/cms-core"
-title: "Duplicate of ./packagist/typo3/cms-core/CVE-2022-23503.yml"
-description: "Improper Neutralization of Special Elements used in an OS Command ('OS
-  Command Injection') in typo3/cms-core."
-date: "2022-12-13"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2022-12-13"
 affected_range: "<0"
-fixed_versions:
-- "8.7.49"
-- "9.5.38"
-- "10.4.33"
-- "11.5.20"
-- "12.1.1"
-affected_versions: "All versions starting from 8.0.0 before 8.7.49, all versions starting
-  from 9.0.0 before 9.5.38, all versions starting from 10.0.0 before 10.4.33, all
-  versions starting from 11.0.0 before 11.5.20, all versions starting from 12.0.0
-  before 12.1.1"
-not_impacted: "All versions before 8.0.0, all versions starting from 8.7.49 before
-  9.0.0, all versions starting from 9.5.38 before 10.0.0, all versions starting from
-  10.4.33 before 11.0.0, all versions starting from 11.5.20 before 12.0.0, all versions
-  starting from 12.1.1"
-solution: "Upgrade to versions 8.7.49, 9.5.38, 10.4.33, 11.5.20, 12.1.1 or above."
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/TYPO3/typo3/security/advisories/GHSA-c5wx-6c2c-f7rm"
 - "https://github.com/TYPO3/typo3/commit/1302e88565821f2159e08b5d818d28de17ecc830"

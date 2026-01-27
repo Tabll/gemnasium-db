@@ -3,22 +3,15 @@ identifier: "GHSA-mjqp-26hc-grxg"
 identifiers:
 - "GHSA-mjqp-26hc-grxg"
 package_slug: "pypi/picklescan"
-title: "Picklescan: ZIP archive scan bypass is possible through non-exhaustive Cyclic
-  Redundancy Check"
-description: "Picklescan's ability to scan ZIP archives for malicious pickle files
-  is compromised when the archive contains a file with a bad Cyclic Redundancy Check
-  (CRC). Instead of attempting to scan the files within the archive, whatever the
-  CRC is, Picklescan fails in error and returns no results. This allows attackers
-  to potentially hide malicious pickle payloads within ZIP archives that PyTorch might
-  still be able to load (as PyTorch often disables CRC checks)."
-date: "2025-09-10"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2025-09-10"
-affected_range: "<0.0.31"
-fixed_versions:
-- "0.0.31"
-affected_versions: "All versions before 0.0.31"
-not_impacted: "All versions starting from 0.0.31"
-solution: "Upgrade to version 0.0.31 or above."
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/advisories/GHSA-mjqp-26hc-grxg"
 - "https://github.com/mmaitre314/picklescan/security/advisories/GHSA-mjqp-26hc-grxg"

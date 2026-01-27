@@ -3,17 +3,15 @@ identifier: "GHSA-r9pp-r4xf-597r"
 identifiers:
 - "GHSA-r9pp-r4xf-597r"
 package_slug: "pypi/pyload-ng"
-title: "pyload-ng vulnerable to RCE with js2py sandbox escape"
-description: "Any pyload-ng running under python3.11 or below are vulnerable under
-  RCE. Attacker can send a request containing any shell command and the victim server
-  will execute it immediately."
-date: "2024-09-09"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2024-09-09"
-affected_range: "<=0.5.0b3.dev85"
+affected_range: "<0"
 fixed_versions: []
-affected_versions: "All versions up to 0.5.0b3.dev85"
-not_impacted: ""
-solution: "Unfortunately, there is no solution available yet."
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/advisories/GHSA-r9pp-r4xf-597r"
 - "https://github.com/pyload/pyload/security/advisories/GHSA-r9pp-r4xf-597r"

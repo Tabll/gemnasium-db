@@ -4,25 +4,15 @@ identifiers:
 - "GHSA-58qw-p7qm-5rvh"
 - "GMS-2023-1857"
 package_slug: "maven/org.eclipse.jetty/jetty-xml"
-title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
-  Injection')"
-description: "Improper Neutralization of Special Elements used in an OS Command ('OS
-  Command Injection') in org.eclipse.jetty:jetty-xml."
-date: "2023-09-05"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2023-07-10"
-affected_range: "(,9.4.51],[10.0.0-alpha0,10.0.15],[11.0.0-alpha0,11.0.15],[12.0.0.alpha0,12.0.0.beta4]"
-fixed_versions:
-- "10.0.16"
-- "11.0.16"
-- "9.4.52"
-- "12.0.0"
-affected_versions: "All versions up to 9.4.51, all versions starting from 10.0.0-alpha0
-  up to 10.0.15, all versions starting from 11.0.0-alpha0 up to 11.0.15, all versions
-  starting from 12.0.0.alpha0 up to 12.0.0.beta4"
-not_impacted: "All versions after 9.4.51 before 10.0.0-alpha0, all versions after
-  10.0.15 before 11.0.0-alpha0, all versions after 11.0.15 before 12.0.0.alpha0, all
-  versions after 12.0.0.beta4"
-solution: "Upgrade to versions 10.0.16, 11.0.16, 9.4.52, 12.0.0 or above."
+affected_range: "(,0)"
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/eclipse/jetty.project/security/advisories/GHSA-58qw-p7qm-5rvh"
 - "https://github.com/eclipse/jetty.project/pull/10067"

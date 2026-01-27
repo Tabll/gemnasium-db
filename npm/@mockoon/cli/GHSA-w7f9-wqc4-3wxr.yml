@@ -3,21 +3,15 @@ identifier: "GHSA-w7f9-wqc4-3wxr"
 identifiers:
 - "GHSA-w7f9-wqc4-3wxr"
 package_slug: "npm/@mockoon/cli"
-title: "Mockoon has a Path Traversal and LFI in the static file serving endpoint"
-description: "A mock API configuration for static file serving following the same
-  approach presented in the [documentation page](https://mockoon.com/tutorials/create-endpoint-serving-static-file/),
-  where the server filename is generated via templating features from user input is
-  vulnerable to Path Traversal and LFI, allowing an attacker to get any file in the
-  mock server filesystem.\nThe issue may be particularly relevant in cloud hosted
-  server instances"
-date: "2025-03-12"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2025-03-11"
-affected_range: "<9.2.0"
-fixed_versions:
-- "9.2.0"
-affected_versions: "All versions before 9.2.0"
-not_impacted: "All versions starting from 9.2.0"
-solution: "Upgrade to version 9.2.0 or above."
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/advisories/GHSA-w7f9-wqc4-3wxr"
 - "https://github.com/mockoon/mockoon/security/advisories/GHSA-w7f9-wqc4-3wxr"

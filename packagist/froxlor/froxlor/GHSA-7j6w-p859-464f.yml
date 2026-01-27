@@ -3,21 +3,15 @@ identifier: "GHSA-7j6w-p859-464f"
 identifiers:
 - "GHSA-7j6w-p859-464f"
 package_slug: "packagist/froxlor/froxlor"
-title: "Froxlor allows Multiple Accounts to Share the Same Email Address Leading to
-  Potential Privilege Escalation or Account Takeover"
-description: "the vulnerability is that users (such as resellers or customers) are
-  able to create accounts with the same email address as an existing account (e.g.,
-  if the admin has [admin@froxlor.com](mailto:admin@froxlor.com), others can also
-  create an account using the same email). This creates potential issues with account
-  identification and security."
-date: "2025-03-11"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2025-03-11"
-affected_range: "<2.2.6"
-fixed_versions:
-- "2.2.6"
-affected_versions: "All versions before 2.2.6"
-not_impacted: "All versions starting from 2.2.6"
-solution: "Upgrade to version 2.2.6 or above."
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/advisories/GHSA-7j6w-p859-464f"
 - "https://github.com/froxlor/Froxlor/security/advisories/GHSA-7j6w-p859-464f"

@@ -3,25 +3,15 @@ identifier: "GHSA-472w-7w45-g3w5"
 identifiers:
 - "GHSA-472w-7w45-g3w5"
 package_slug: "cargo/pleezer"
-title: "Pleezer resource exhaustion through uncollected hook script processes"
-description: "Hook scripts in pleezer can be triggered by various events like track
-  changes and playback state changes. In affected versions, these scripts were spawned
-  without proper process cleanup, leaving zombie processes in the system's process
-  table.\n\nEven during normal usage, every track change and playback event would
-  leave behind zombie processes. This leads to inevitable resource exhaustion over
-  time as the system's process table fills up, eventually preventing new processes
-  from being created. The issue is exacerbated if events occur rapidly, whether through
-  normal use (e.g., skipping through a playlist) or potential manipulation of the
-  Deezer Connect protocol traffic.\n\nThis vulnerability affects all users who have
-  configured hook scripts using the `--hook` option."
-date: "2025-04-14"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2025-04-14"
-affected_range: "<0.16.0"
-fixed_versions:
-- "0.16.0"
-affected_versions: "All versions before 0.16.0"
-not_impacted: "All versions starting from 0.16.0"
-solution: "Upgrade to version 0.16.0 or above."
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/advisories/GHSA-472w-7w45-g3w5"
 - "https://github.com/roderickvd/pleezer/security/advisories/GHSA-472w-7w45-g3w5"

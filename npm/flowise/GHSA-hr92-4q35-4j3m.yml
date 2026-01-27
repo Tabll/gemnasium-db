@@ -3,20 +3,15 @@ identifier: "GHSA-hr92-4q35-4j3m"
 identifiers:
 - "GHSA-hr92-4q35-4j3m"
 package_slug: "npm/flowise"
-title: "FlowiseAI/Flowise has Server-Side Request Forgery (SSRF) vulnerability"
-description: "---\n\nA Server-Side Request Forgery (SSRF) vulnerability was discovered
-  in the `/api/v1/fetch-links` endpoint of the Flowise application. This vulnerability
-  allows an attacker to use the Flowise server as a proxy to access internal network
-  web services and explore their link structures. The impact includes the potential
-  exposure of sensitive internal administrative endpoints."
-date: "2025-09-15"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2025-09-15"
-affected_range: ">=3.0.5 <3.0.6||=3.0.5"
-fixed_versions:
-- "3.0.6"
-affected_versions: "All versions starting from 3.0.5 before 3.0.6, version 3.0.5"
-not_impacted: ""
-solution: "Upgrade to version 3.0.6 or above."
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/advisories/GHSA-hr92-4q35-4j3m"
 - "https://github.com/FlowiseAI/Flowise/security/advisories/GHSA-hr92-4q35-4j3m"

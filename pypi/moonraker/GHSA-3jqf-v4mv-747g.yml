@@ -3,20 +3,15 @@ identifier: "GHSA-3jqf-v4mv-747g"
 identifiers:
 - "GHSA-3jqf-v4mv-747g"
 package_slug: "pypi/moonraker"
-title: "Moonraker affected by LDAP search filter injection"
-description: "Instances of Moonraker configured with the `ldap` component enabled
-  are vulnerable to LDAP search filter injection techniques via the login endpoint.
-  \  The 401 error response message can be used to determine whether or not a search
-  was successful, allowing for brute force methods to discover LDAP entries on the
-  server such as user IDs and user attributes."
-date: "2026-01-22"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2026-01-22"
-affected_range: "<0.10.0"
-fixed_versions:
-- "0.10.0"
-affected_versions: "All versions before 0.10.0"
-not_impacted: "All versions starting from 0.10.0"
-solution: "Upgrade to version 0.10.0 or above."
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/advisories/GHSA-3jqf-v4mv-747g"
 - "https://github.com/Arksine/moonraker/security/advisories/GHSA-3jqf-v4mv-747g"

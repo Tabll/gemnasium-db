@@ -5,24 +5,15 @@ identifiers:
 - "GMS-2022-6556"
 - "CVE-2022-39395"
 package_slug: "go/github.com/go-vela/server"
-title: "Duplicate of ./go/github.com/go-vela/server/CVE-2022-39395.yml"
-description: "Some current default configurations for Vela allow exploitation and
-  container breakouts. Running Vela plugins as privileged Docker containers allows
-  a malicious user to easily break out of the container and gain access to the worker
-  host operating system. On a fresh install of Vela without any additional configuration,
-  the `target/vela-docker` plugin will run as a privileged container, even if the
-  Vela administrators did not intend to allow for any privileged plugins, and even
-  if the vela.yml configuration file does not use the `privileged = True` flag. Privileged
-  containers permit trivial breakouts, which can pose significant risk to the environment
-  in which Vela is running."
-date: "2022-11-09"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2022-11-09"
 affected_range: "<0"
-fixed_versions:
-- "v0.16.0"
-affected_versions: "All versions before 0.16.0"
-not_impacted: "All versions starting from 0.16.0"
-solution: "Upgrade to version 0.16.0 or above."
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/go-vela/server/security/advisories/GHSA-5m7g-pj8w-7593"
 - "https://github.com/go-vela/server/commit/05558ee99d70f7d6f83bed7c8f78ac0b35fa26f4"
@@ -34,10 +25,3 @@ uuid: "bf934b13-e9de-4cd7-8253-548b5aaa1cd1"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
-versions:
-- number: "v0.16.0"
-  commit:
-    tags:
-    - "v0.16.0"
-    sha: "e972584299eb9989525aa62df9438d9bd60429f1"
-    timestamp: "20221109161535"

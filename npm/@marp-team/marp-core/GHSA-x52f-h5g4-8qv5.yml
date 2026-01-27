@@ -3,20 +3,15 @@ identifier: "GHSA-x52f-h5g4-8qv5"
 identifiers:
 - "GHSA-x52f-h5g4-8qv5"
 package_slug: "npm/@marp-team/marp-core"
-title: "Marp Core allows XSS by improper neutralization of HTML sanitization"
-description: "Marp Core ([`@marp-team/marp-core`](https://www.npmjs.com/package/@marp-team/marp-core))
-  from v3.0.2 to v3.9.0 and v4.0.0, are vulnerable to cross-site scripting (XSS)  due
-  to improper neutralization of HTML sanitization."
-date: "2024-12-26"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2024-12-26"
-affected_range: ">=3.0.2 <3.9.1||>=4.0.0 <4.0.1||=4.0.0"
-fixed_versions:
-- "3.9.1"
-- "4.0.1"
-affected_versions: "All versions starting from 3.0.2 before 3.9.1, all versions starting
-  from 4.0.0 before 4.0.1, version 4.0.0"
-not_impacted: ""
-solution: "Upgrade to versions 3.9.1, 4.0.1 or above."
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/advisories/GHSA-x52f-h5g4-8qv5"
 - "https://github.com/marp-team/marp-core/security/advisories/GHSA-x52f-h5g4-8qv5"

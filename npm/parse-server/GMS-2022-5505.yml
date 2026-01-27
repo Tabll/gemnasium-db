@@ -5,20 +5,15 @@ identifiers:
 - "GMS-2022-5505"
 - "CVE-2022-39313"
 package_slug: "npm/parse-server"
-title: "Duplicate of ./npm/parse-server/CVE-2022-39313.yml"
-description: "Parse Server crashes when a file download request is received with an
-  invalid byte range."
-date: "2022-10-18"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2022-10-18"
 affected_range: "<0"
-fixed_versions:
-- "4.10.17"
-- "5.2.8"
-affected_versions: "All versions before 4.10.17, all versions starting from 5.0.0
-  before 5.2.8"
-not_impacted: "All versions starting from 4.10.17 before 5.0.0, all versions starting
-  from 5.2.8"
-solution: "Upgrade to versions 4.10.17, 5.2.8 or above."
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/parse-community/parse-server/security/advisories/GHSA-h423-w6qv-2wj3"
 - "https://github.com/parse-community/parse-server/releases/tag/4.10.17"

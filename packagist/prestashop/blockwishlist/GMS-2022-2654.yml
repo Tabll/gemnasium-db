@@ -5,17 +5,15 @@ identifiers:
 - "GMS-2022-2654"
 - "CVE-2022-31101"
 package_slug: "packagist/prestashop/blockwishlist"
-title: "Duplicate of ./packagist/prestashop/blockwishlist/CVE-2022-31101.yml"
-description: "### Impact\nAn authenticated customer can perform SQL injection\n\n###
-  Patches\nIssue is fixed in 2.1.1\n"
-date: "2022-06-25"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2022-06-25"
 affected_range: "<0"
-fixed_versions:
-- "2.1.1"
-affected_versions: "All versions starting from 2.0.0 before 2.1.1"
-not_impacted: "All versions before 2.0.0, all versions starting from 2.1.1"
-solution: "Upgrade to version 2.1.1 or above."
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/PrestaShop/blockwishlist/security/advisories/GHSA-2jx3-5j9v-prpp"
 - "https://github.com/advisories/GHSA-2jx3-5j9v-prpp"

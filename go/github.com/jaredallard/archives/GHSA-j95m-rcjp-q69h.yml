@@ -3,24 +3,15 @@ identifier: "GHSA-j95m-rcjp-q69h"
 identifiers:
 - "GHSA-j95m-rcjp-q69h"
 package_slug: "go/github.com/jaredallard/archives"
-title: "github.com/jaredallard/archives Has Improper Limitation of a Pathname to a
-  Restricted Directory ('Path Traversal')"
-description: "A malicious user could feed a specially crafted archive to this library
-  causing RCE, modification of files or other bad things in the context of whatever
-  user is running this library as, through the program that imports it.\n\nThe severity
-  highly depends on the user's permissions and environment it is being ran in (e.g.,
-  non root, read only root container would likely have no impact vs running something
-  as root on a production system).\n\nThe severity is also dependent on **arbitrary
-  archives** being passed or not.\n\nBased on the above, severity high was picked
-  to be safe."
-date: "2025-10-31"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2025-03-28"
-affected_range: "<1.0.1"
-fixed_versions:
-- "1.0.1"
-affected_versions: "All versions before 1.0.1"
-not_impacted: "All versions starting from 1.0.1"
-solution: "Upgrade to version 1.0.1 or above."
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/advisories/GHSA-j95m-rcjp-q69h"
 - "https://github.com/jaredallard/archives/security/advisories/GHSA-j95m-rcjp-q69h"

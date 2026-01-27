@@ -3,23 +3,15 @@ identifier: "GHSA-29mf-62xx-28jq"
 identifiers:
 - "GHSA-29mf-62xx-28jq"
 package_slug: "cargo/buffered-reader"
-title: "buffered-reader vulnerable to out-of-bounds array access leading to panic"
-description: "Affected versions of the crate have a bug where attacker-controlled
-  input can result in the use of an out-of-bound array index. Rust\ndetects the use
-  of the out-of-bound index and causes the application to panic.  An attacker may
-  be able to use this to cause a denial-of-service.  However, it is not possible for
-  an attacker to read from or write to the application's address space."
-date: "2023-06-06"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2023-06-06"
-affected_range: "<1.0.2||>=1.1.0 <1.1.5"
-fixed_versions:
-- "1.0.2"
-- "1.1.5"
-affected_versions: "All versions before 1.0.2, all versions starting from 1.1.0 before
-  1.1.5"
-not_impacted: "All versions starting from 1.0.2 before 1.1.0, all versions starting
-  from 1.1.5"
-solution: "Upgrade to versions 1.0.2, 1.1.5 or above."
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/advisories/GHSA-29mf-62xx-28jq"
 - "https://github.com/advisories/GHSA-25mx-8f3v-8wh7"

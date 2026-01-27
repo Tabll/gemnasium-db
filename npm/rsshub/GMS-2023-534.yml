@@ -4,17 +4,15 @@ identifiers:
 - "GHSA-32gr-4cq6-5w5q"
 - "GMS-2023-534"
 package_slug: "npm/rsshub"
-title: "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
-description: "Improper Neutralization of Input During Web Page Generation ('Cross-site
-  Scripting') in rsshub."
-date: "2023-03-01"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2023-03-01"
-affected_range: "<1.0.0-master.c910c4d"
-fixed_versions:
-- "1.0.0-master.c910c4d"
-affected_versions: "All versions before 1.0.0-master.c910c4d"
-not_impacted: "All versions starting from 1.0.0-master.c910c4d"
-solution: "Upgrade to version 1.0.0-master.c910c4d or above."
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/DIYgod/RSSHub/security/advisories/GHSA-32gr-4cq6-5w5q"
 - "https://github.com/DIYgod/RSSHub/commit/c910c4d28717fb860fbe064736641f379fab2c91"

@@ -4,17 +4,15 @@ identifiers:
 - "GHSA-mhpq-9638-x6pw"
 - "GMS-2023-6769"
 package_slug: "go/github.com/dvsekhvalnov/jose2go"
-title: "Denial of service when decrypting attack controlled input in github.com/dvsekhvalnov/jose2go"
-description: "An attacker controlled input of a PBES2 encrypted JWE blob can have
-  a very large p2c value that, when decrypted, produces a denial-of-service."
-date: "2023-12-20"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2023-12-20"
-affected_range: "<v1.5.1-0.20231206184617-48ba0b76bc88"
-fixed_versions:
-- "v1.5.1-0.20231206184617-48ba0b76bc88"
-affected_versions: "All versions before 1.5.1-0.20231206184617-48ba0b76bc88"
-not_impacted: "All versions starting from 1.5.1-0.20231206184617-48ba0b76bc88"
-solution: "Upgrade to version 1.5.1-0.20231206184617-48ba0b76bc88 or above."
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/dvsekhvalnov/jose2go/issues/31"
 - "https://github.com/dvsekhvalnov/jose2go/commit/a4584e9dd7128608fedbc67892eba9697f0d5317"
@@ -24,4 +22,3 @@ uuid: "77cdf775-4189-405a-a05b-8c8af1d56ceb"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
-versions: []

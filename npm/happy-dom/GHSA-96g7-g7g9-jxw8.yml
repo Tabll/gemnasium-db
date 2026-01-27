@@ -3,17 +3,15 @@ identifier: "GHSA-96g7-g7g9-jxw8"
 identifiers:
 - "GHSA-96g7-g7g9-jxw8"
 package_slug: "npm/happy-dom"
-title: "happy-dom allows for server side code to be executed by a <script> tag"
-description: "Fixes security vulnerability that allowed for server side code to be
-  executed by a <script> tag"
-date: "2024-11-06"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2024-11-06"
-affected_range: "<15.10.1"
-fixed_versions:
-- "15.10.1"
-affected_versions: "All versions before 15.10.1"
-not_impacted: "All versions starting from 15.10.1"
-solution: "Upgrade to version 15.10.1 or above."
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/advisories/GHSA-96g7-g7g9-jxw8"
 - "https://github.com/capricorn86/happy-dom/security/advisories/GHSA-96g7-g7g9-jxw8"

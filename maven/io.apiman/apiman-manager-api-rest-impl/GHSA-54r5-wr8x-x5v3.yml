@@ -3,25 +3,15 @@ identifier: "GHSA-54r5-wr8x-x5v3"
 identifiers:
 - "GHSA-54r5-wr8x-x5v3"
 package_slug: "maven/io.apiman/apiman-manager-api-rest-impl"
-title: "Duplicate Advisory: Apiman has insufficient checks for read permissions"
-description: "## Duplicate Advisory\nThis advisory has been withdrawn because it is
-  a duplicate of GHSA-j94p-hv25-rm5g. This link is maintained to preserve external
-  references.\n\n## Original Description\nApiman 1.5.7 through 2.2.3.Final has insufficient
-  checks for read permissions within the Apiman Manager REST API. A malicious user
-  may be able to find and subscribe to private APIs they do not have permission for,
-  thus accessing API Management-protected resources they should not be allowed to
-  access. The root cause of the issue is the Apiman project's accidental acceptance
-  of a large contribution that was not fully compatible with the security model of
-  Apiman versions before 3.0.0.Final. Because of this, 3.0.0.Final is not affected
-  by the vulnerability."
-date: "2024-10-07"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2022-12-20"
-affected_range: "[1.5.7,3.0.0.Final)"
-fixed_versions:
-- "3.0.0.Final"
-affected_versions: "All versions starting from 1.5.7 before 3.0.0.Final"
-not_impacted: "All versions before 1.5.7, all versions starting from 3.0.0.Final"
-solution: "Upgrade to version 3.0.0.Final or above."
+affected_range: "(,0)"
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/advisories/GHSA-54r5-wr8x-x5v3"
 - "https://nvd.nist.gov/vuln/detail/CVE-2022-47551"

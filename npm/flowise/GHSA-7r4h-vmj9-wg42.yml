@@ -3,19 +3,15 @@ identifier: "GHSA-7r4h-vmj9-wg42"
 identifiers:
 - "GHSA-7r4h-vmj9-wg42"
 package_slug: "npm/flowise"
-title: "Flowise Stored XSS vulnerability through logs in chatbot"
-description: "In the chat log, tags like input and form are allowed. This makes a
-  potential vulnerability where an attacker could inject malicious HTML into the log
-  via prompts. When an admin views the log containing the malicious HTML, the attacker
-  could steal the admin's credentials or sensitive information with stored Cross Site
-  Scripting."
-date: "2025-10-03"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2025-10-03"
-affected_range: "<=3.0.7"
+affected_range: "<0"
 fixed_versions: []
-affected_versions: "All versions up to 3.0.7"
-not_impacted: ""
-solution: "Unfortunately, there is no solution available yet."
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/advisories/GHSA-7r4h-vmj9-wg42"
 - "https://github.com/FlowiseAI/Flowise/security/advisories/GHSA-7r4h-vmj9-wg42"

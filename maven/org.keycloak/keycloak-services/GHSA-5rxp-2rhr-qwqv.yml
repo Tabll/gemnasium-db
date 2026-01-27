@@ -3,24 +3,15 @@ identifier: "GHSA-5rxp-2rhr-qwqv"
 identifiers:
 - "GHSA-5rxp-2rhr-qwqv"
 package_slug: "maven/org.keycloak/keycloak-services"
-title: "Session fixation in Elytron SAML adapters"
-description: "A session fixation issue was discovered in the SAML adapters provided
-  by Keycloak. The session ID and JSESSIONID cookie are not changed at login time,
-  even when the turnOffChangeSessionIdOnLogin option is configured. This flaw allows
-  an attacker who hijacks the current session before authentication to trigger session
-  fixation."
-date: "2024-10-14"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2024-10-14"
-affected_range: "[,22.0.12),[23.0.0,24.0.7),[25.0.0,25.0.5)"
-fixed_versions:
-- "22.0.12"
-- "24.0.7"
-- "25.0.5"
-affected_versions: "All versions before 22.0.12, all versions starting from 23.0.0
-  before 24.0.7, all versions starting from 25.0.0 before 25.0.5"
-not_impacted: "All versions starting from 22.0.12 before 23.0.0, all versions starting
-  from 24.0.7 before 25.0.0, all versions starting from 25.0.5"
-solution: "Upgrade to versions 22.0.12, 24.0.7, 25.0.5 or above."
+affected_range: "(,0)"
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/advisories/GHSA-5rxp-2rhr-qwqv"
 - "https://github.com/keycloak/keycloak/security/advisories/GHSA-5rxp-2rhr-qwqv"

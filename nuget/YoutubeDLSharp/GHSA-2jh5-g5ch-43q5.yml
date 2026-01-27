@@ -3,22 +3,15 @@ identifier: "GHSA-2jh5-g5ch-43q5"
 identifiers:
 - "GHSA-2jh5-g5ch-43q5"
 package_slug: "nuget/YoutubeDLSharp"
-title: "YoutubeDLSharp allows command injection on windows system due to non sanitized
-  arguments"
-description: "This vulnerability only apply when running on a Windows OS.\nAn unsafe
-  conversion of arguments allows the injection of a malicous commands when starting
-  `yt-dlp` from a commands prompt.\n\n> [!CAUTION]\n> **NOTE THAT DEPENDING ON THE
-  CONTEXT AND WHERE THE LIBRARY IS USED, THIS MAY HAVE MORE SEVERE CONSEQUENCES. FOR
-  EXAMPLE, A USER USING THE LIBRARY LOCALLY IS A LOT LESS VULNERABLE THAN AN ASP.NET
-  APPLICATION ACCEPTING INPUTS FROM A NETWORK/INTERNET.**"
-date: "2025-04-23"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2025-04-23"
-affected_range: "[1.0.0-beta4,1.1.2)"
-fixed_versions:
-- "1.1.2"
-affected_versions: "All versions starting from 1.0.0-beta4 before 1.1.2"
-not_impacted: "All versions before 1.0.0-beta4, all versions starting from 1.1.2"
-solution: "Upgrade to version 1.1.2 or above."
+affected_range: "(,0)"
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/advisories/GHSA-2jh5-g5ch-43q5"
 - "https://github.com/Bluegrams/YoutubeDLSharp/security/advisories/GHSA-2jh5-g5ch-43q5"

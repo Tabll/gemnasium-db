@@ -5,16 +5,15 @@ identifiers:
 - "GMS-2023-5"
 - "CVE-2023-22478"
 package_slug: "go/github.com/KubeOperator/kubepi"
-title: "Duplicate of ./go/github.com/KubeOperator/KubePi/CVE-2023-22478.yml"
-description: "API interfaces with unauthorized access will leak sensitive information
-  via `/kubepi/api/v1/systems/operation/logs/search` and `/kubepi/api/v1/systems/login/logs/search`"
-date: "2023-01-09"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2023-01-09"
 affected_range: "<0"
 fixed_versions: []
-affected_versions: "All versions up to 1.6.3"
-not_impacted: ""
-solution: "Unfortunately, there is no solution available yet."
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/KubeOperator/KubePi/security/advisories/GHSA-gqx8-hxmv-c4v4"
 - "https://github.com/advisories/GHSA-gqx8-hxmv-c4v4"
@@ -22,10 +21,3 @@ uuid: "d10b7708-6d9f-4a68-ba61-fe85425c142c"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
-versions:
-- number: "v1.6.3"
-  commit:
-    tags:
-    - "v1.6.3"
-    sha: "eead48749050a1bc47c710acb8267211a387a85d"
-    timestamp: "20230104102835"

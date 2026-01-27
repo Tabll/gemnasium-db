@@ -3,21 +3,15 @@ identifier: "GHSA-rm8p-cx58-hcvx"
 identifiers:
 - "GHSA-rm8p-cx58-hcvx"
 package_slug: "npm/axios"
-title: "Axios has Transitive Critical Vulnerability via form-data — Predictable Boundary
-  Values (CVE-2025-7783)"
-description: "A critical vulnerability exists in the form-data package used by `axios@1.10.0`.
-  The issue allows an attacker to predict multipart boundary values generated using
-  `Math.random()`, opening the door to HTTP parameter pollution or injection attacks.\n\nThis
-  was submitted in [issue #6969](https://github.com/axios/axios/issues/6969) and addressed
-  in [pull request #6970](https://github.com/axios/axios/pull/6970)."
-date: "2025-07-23"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2025-07-23"
-affected_range: ">=1.10.0 <1.11.0||=1.10.0"
-fixed_versions:
-- "1.11.0"
-affected_versions: "All versions starting from 1.10.0 before 1.11.0, version 1.10.0"
-not_impacted: ""
-solution: "Upgrade to version 1.11.0 or above."
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/advisories/GHSA-rm8p-cx58-hcvx"
 - "https://github.com/axios/axios/security/advisories/GHSA-rm8p-cx58-hcvx"

@@ -1,0 +1,38 @@
+---
+identifier: "GHSA-cr3w-cw5w-h3fj"
+identifiers:
+- "GHSA-cr3w-cw5w-h3fj"
+package_slug: "npm/@saltcorn/server"
+title: "Saltcorn's Reflected XSS and Command Injection vulnerabilities can be chained
+  for 1-click-RCE"
+description: "1. There is a reflected XSS vulnerability in the GET /admin/edit-codepage/:name
+  route through the name parameter. This can be used to hijack the session of an admin
+  if they click a specially crafted link.\n2. Additionally, there is a Command Injection
+  vulnerability in GET /admin/backup. The admin can inject a shell command in the
+  backup password which is inserted in the command used to create the backup zip.\n\n\nBoth
+  vulnerabilities can be chained to craft a malicious link which will execute an arbitrary
+  shell command on the server if it is clicked by a saltcorn admin with an active
+  session. I believe iframes could also be used to exploit this silently when the
+  admin visits an attacker-controlled web page (though I have not tested that)."
+date: "2026-01-26"
+pubdate: "2026-01-26"
+affected_range: ">=1.1.1 <1.5.0-beta.19"
+fixed_versions:
+- "1.5.0-beta.19"
+affected_versions: "All versions starting from 1.1.1 before 1.5.0-beta.19"
+not_impacted: "All versions before 1.1.1, all versions starting from 1.5.0-beta.19"
+solution: "Upgrade to version 1.5.0-beta.19 or above."
+urls:
+- "https://github.com/advisories/GHSA-cr3w-cw5w-h3fj"
+- "https://github.com/saltcorn/saltcorn/security/advisories/GHSA-cr3w-cw5w-h3fj"
+- "https://github.com/saltcorn/saltcorn/commit/1bf681e08c45719a52afcf3506fb5ec59f4974d5"
+- "https://github.com/saltcorn/saltcorn"
+- "https://github.com/saltcorn/saltcorn/blob/020893c0001678fd5ebd2c088ba68b395de1aabc/packages/saltcorn-admin-models/models/backup.ts#L381-L382"
+- "https://github.com/saltcorn/saltcorn/blob/020893c0001678fd5ebd2c088ba68b395de1aabc/packages/server/routes/admin.js#L4886-L4887"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H"
+uuid: "9b3cf873-92af-49e2-9fc9-c6c932052c11"
+cwe_ids:
+- "CWE-77"
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

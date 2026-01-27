@@ -4,21 +4,15 @@ identifiers:
 - "GHSA-m8rw-rcpq-2vp2"
 - "GMS-2023-6059"
 package_slug: "go/github.com/sap/cloud-security-client-go"
-title: "Improper Privilege Management in github.com/sap/cloud-security-client-go"
-description: "### Impact\nSAP BTP Security Services Integration Library ([Golang]
-  github.com/sap/cloud-security-client-go) allows under certain conditions an escalation
-  of privileges. On successful exploitation, an unauthenticated attacker can obtain
-  arbitrary permissions within the application.\n\n### Patches\nUpgrade to patched
-  version >= 0.17.0\nWe always recommend to upgrade to the latest released version.\n\n###
-  Workarounds\nNo workarounds\n\n### References\nhttps://www.cve.org/CVERecord?id=CVE-2023-50424"
-date: "2023-12-18"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2023-12-13"
-affected_range: "<v0.17.0"
-fixed_versions:
-- "v0.17.0"
-affected_versions: "All versions before 0.17.0"
-not_impacted: "All versions starting from 0.17.0"
-solution: "Upgrade to version 0.17.0 or above."
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/SAP/cloud-security-client-go/security/advisories/GHSA-m8rw-rcpq-2vp2"
 - "https://github.com/SAP/cloud-security-client-go/commit/2e3bd63e152e09f267316a1071034eb5d4b7f498"
@@ -27,10 +21,3 @@ uuid: "d5187d8a-1241-4bdf-9e1a-17db2787cc46"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
-versions:
-- number: "v0.17.0"
-  commit:
-    tags:
-    - "v0.17.0"
-    sha: "2e3bd63e152e09f267316a1071034eb5d4b7f498"
-    timestamp: "20231123131654"

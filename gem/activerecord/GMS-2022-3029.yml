@@ -5,26 +5,15 @@ identifiers:
 - "GMS-2022-3029"
 - "CVE-2022-32224"
 package_slug: "gem/activerecord"
-title: "Duplicate of ./gem/activerecord/CVE-2022-32224.yml"
-description: "When serialized columns that use YAML (the default) are deserialized,
-  Rails uses YAML.unsafe_load to convert the YAML data in to Ruby objects. If an attacker
-  can manipulate data in the database (via means like SQL injection), then it may
-  be possible for the attacker to escalate to an RCE.\n\nThere are no feasible workarounds
-  for this issue, but other coders (such as JSON) are not impacted."
-date: "2022-07-13"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2022-07-12"
 affected_range: "<0"
-fixed_versions:
-- "6.1.6.1"
-- "7.0.3.1"
-- "5.2.8.1"
-- "6.0.5.1"
-affected_versions: "All versions up to 5.2.8, all versions starting from 6.0.0 up
-  to 6.0.5, all versions starting from 6.1.0 up to 6.1.6, all versions starting from
-  7.0.0 up to 7.0.3"
-not_impacted: "All versions after 5.2.8 before 6.0.0, all versions after 6.0.5 before
-  6.1.0, all versions after 6.1.6 before 7.0.0, all versions after 7.0.3"
-solution: "Upgrade to versions 6.1.6.1, 7.0.3.1, 5.2.8.1, 6.0.5.1 or above."
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://nvd.nist.gov/vuln/detail/CVE-2022-32224"
 - "https://github.com/rails/rails/commit/611990f1a6c137c2d56b1ba06b27e5d2434dcd6a"

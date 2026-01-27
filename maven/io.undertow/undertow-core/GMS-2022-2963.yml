@@ -5,18 +5,15 @@ identifiers:
 - "GMS-2022-2963"
 - "CVE-2021-3859"
 package_slug: "maven/io.undertow/undertow-core"
-title: "Duplicate of ./maven/io.undertow/undertow-core/CVE-2021-3859.yml"
-description: "Undertow client side invocation timeout raised when calling over HTTP2,
-  this vulnerability can allow attacker to carry out denial of service (DoS) attacks
-  in versions less than 2.2.15 Final."
-date: "2022-07-15"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2022-07-15"
 affected_range: "(,0)"
-fixed_versions:
-- "2.2.15"
-affected_versions: "All versions before 2.2.15"
-not_impacted: "All versions starting from 2.2.15"
-solution: "Upgrade to version 2.2.15 or above."
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://nvd.nist.gov/vuln/detail/CVE-2021-3859"
 - "https://github.com/undertow-io/undertow/commit/db0f5be43f8e2a4b88fbedd2eb6d5a95a29ceaa8"

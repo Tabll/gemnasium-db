@@ -5,27 +5,15 @@ identifiers:
 - "GMS-2022-8136"
 - "CVE-2022-23499"
 package_slug: "packagist/typo3/html-sanitizer"
-title: "Duplicate of ./packagist/typo3/html-sanitizer/CVE-2022-23499.yml"
-description: "Due to a parsing issue in the upstream package `masterminds/html5`,
-  malicious markup used in a sequence with special HTML CDATA sections cannot be filtered
-  and sanitized. This allows bypassing the cross-site scripting mechanism of `typo3/html-sanitizer`.
-  Besides that, the upstream package `masterminds/html5` provides HTML raw text elements
-  (`script`, `style`, `noframes`, `noembed` and `iframe`) as DOMText nodes, which
-  were not processed and sanitized further. None of the mentioned elements were defined
-  in the default builder configuration, that's why only custom behaviors, using one
-  of those tag names, were vulnerable to cross-site scripting.\n\n### Solution\nUpdate
-  to `typo3/html-sanitizer` versions 1.5.0 or 2.1.1 that fix the problem described.\n"
-date: "2022-12-13"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2022-12-13"
 affected_range: "<0"
-fixed_versions:
-- "1.5.0"
-- "2.1.1"
-affected_versions: "All versions starting from 1.0.0 before 1.5.0, all versions starting
-  from 2.0.0 before 2.1.1"
-not_impacted: "All versions before 1.0.0, all versions starting from 1.5.0 before
-  2.0.0, all versions starting from 2.1.1"
-solution: "Upgrade to versions 1.5.0, 2.1.1 or above."
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/TYPO3/html-sanitizer/security/advisories/GHSA-hvwx-qh2h-xcfj"
 - "https://github.com/TYPO3/html-sanitizer/pull/105"

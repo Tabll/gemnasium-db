@@ -3,17 +3,15 @@ identifier: "GHSA-hm5p-x4rq-38w4"
 identifiers:
 - "GHSA-hm5p-x4rq-38w4"
 package_slug: "gem/httparty"
-title: "httparty Has Potential SSRF Vulnerability That Leads to API Key Leakage"
-description: "There may be an SSRF vulnerability in httparty. This issue can pose
-  a risk of leaking API keys, and it can also allow third parties to issue requests
-  to internal servers."
-date: "2025-12-23"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2025-12-23"
-affected_range: "<=0.23.2"
+affected_range: "<0"
 fixed_versions: []
-affected_versions: "All versions up to 0.23.2"
-not_impacted: ""
-solution: "Unfortunately, there is no solution available yet."
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/advisories/GHSA-hm5p-x4rq-38w4"
 - "https://github.com/jnunemaker/httparty/security/advisories/GHSA-hm5p-x4rq-38w4"

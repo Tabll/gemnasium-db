@@ -3,19 +3,15 @@ identifier: "GHSA-m449-cwjh-6pw7"
 identifiers:
 - "GHSA-m449-cwjh-6pw7"
 package_slug: "pypi/pypdf"
-title: "pypdf's LZWDecode streams be manipulated to exhaust RAM"
-description: "An attacker who uses this vulnerability can craft a PDF which leads
-  to a memory usage of up to 1 GB per stream. This requires parsing the content stream
-  of a page using the LZWDecode filter.\n\nThis is a follow up to [GHSA-jfx9-29x2-rv3j](https://github.com/py-pdf/pypdf/security/advisories/GHSA-jfx9-29x2-rv3j)
-  to align the default limit with the one for *zlib*."
-date: "2025-11-24"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2025-11-24"
-affected_range: "<6.4.0"
-fixed_versions:
-- "6.4.0"
-affected_versions: "All versions before 6.4.0"
-not_impacted: "All versions starting from 6.4.0"
-solution: "Upgrade to version 6.4.0 or above."
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/advisories/GHSA-m449-cwjh-6pw7"
 - "https://github.com/py-pdf/pypdf/security/advisories/GHSA-jfx9-29x2-rv3j"

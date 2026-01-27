@@ -3,20 +3,15 @@ identifier: "GHSA-3wqc-mwfx-672p"
 identifiers:
 - "GHSA-3wqc-mwfx-672p"
 package_slug: "go/github.com/traefik/traefik/v3"
-title: "Traefik affected by Go oauth2/jws Improper Validation of Syntactic Correctness
-  of Input vulnerability"
-description: "We have encountered a security vulnerability being reported by our scanners
-  for Traefik 2.11.22.\n- https://security.snyk.io/vuln/SNYK-CHAINGUARDLATEST-TRAEFIK33-9403297"
-date: "2025-07-17"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2025-04-18"
-affected_range: "<3.3.6||>=3.4.0-rc1 <3.4.0-rc2||=3.4.0-rc1"
-fixed_versions:
-- "3.3.6"
-- "3.4.0-rc2"
-affected_versions: "All versions before 3.3.6, all versions starting from 3.4.0-rc1
-  before 3.4.0-rc2, version 3.4.0-rc1"
-not_impacted: ""
-solution: "Upgrade to versions 3.3.6, 3.4.0-rc2 or above."
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/advisories/GHSA-3wqc-mwfx-672p"
 - "https://github.com/traefik/traefik/security/advisories/GHSA-3wqc-mwfx-672p"

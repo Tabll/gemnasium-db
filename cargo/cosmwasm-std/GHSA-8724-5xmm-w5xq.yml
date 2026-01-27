@@ -3,25 +3,15 @@ identifier: "GHSA-8724-5xmm-w5xq"
 identifiers:
 - "GHSA-8724-5xmm-w5xq"
 package_slug: "cargo/cosmwasm-std"
-title: "CosmWasm affected by arithmetic overflows"
-description: "Some mathematical operations in `cosmwasm-std` use wrapping math instead
-  of\npanicking on overflow for very big numbers. This can lead to wrong calculations
-  in contracts\nthat use these operations.\n\nAffected functions:\n\n- `Uint{256,512}::pow`
-  / `Int{256,512}::pow`\n- `Int{256,512}::neg`\n\nAffected if `overflow-checks = true`
-  is not set:\n\n- `Uint{64,128}::pow` / `Int{64,128}::pow`\n- `Int{64,128}::neg`"
-date: "2024-04-24"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2024-04-24"
-affected_range: ">=1.3.0 <1.4.4||>=1.5.0 <1.5.4||>=2.0.0 <2.0.2"
-fixed_versions:
-- "1.4.4"
-- "1.5.4"
-- "2.0.2"
-affected_versions: "All versions starting from 1.3.0 before 1.4.4, all versions starting
-  from 1.5.0 before 1.5.4, all versions starting from 2.0.0 before 2.0.2"
-not_impacted: "All versions before 1.3.0, all versions starting from 1.4.4 before
-  1.5.0, all versions starting from 1.5.4 before 2.0.0, all versions starting from
-  2.0.2"
-solution: "Upgrade to versions 1.4.4, 1.5.4, 2.0.2 or above."
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/advisories/GHSA-8724-5xmm-w5xq"
 - "https://github.com/CosmWasm/cosmwasm/commit/607e7fc710fb9441096e8edbaa12879b552c8f65"

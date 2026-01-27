@@ -3,23 +3,15 @@ identifier: "GHSA-2qgm-m29m-cj2h"
 identifiers:
 - "GHSA-2qgm-m29m-cj2h"
 package_slug: "npm/uptime-kuma"
-title: "uptime-kuma vulnerable to Local File Inclusion (LFI) via Improper URL Handling
-  in `Real-Browser` monitor"
-description: "An **Improper URL Handling Vulnerability** allows an attacker to access
-  sensitive local files on the server by exploiting the `file:///` protocol. This
-  vulnerability is triggered via the **\"real-browser\"** request type, which takes
-  a screenshot of the URL provided by the attacker. By supplying local file paths,
-  such as `file:///etc/passwd`, an attacker can read sensitive data from the server."
-date: "2024-12-20"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2024-12-20"
-affected_range: ">=1.23.0 <1.23.16||>=2.0.0-beta.0 <2.0.0-beta.1||=2.0.0-beta.0"
-fixed_versions:
-- "1.23.16"
-- "2.0.0-beta.1"
-affected_versions: "All versions starting from 1.23.0 before 1.23.16, all versions
-  starting from 2.0.0-beta.0 before 2.0.0-beta.1, version 2.0.0-beta.0"
-not_impacted: ""
-solution: "Upgrade to versions 1.23.16, 2.0.0-beta.1 or above."
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/advisories/GHSA-2qgm-m29m-cj2h"
 - "https://github.com/louislam/uptime-kuma/security/advisories/GHSA-2qgm-m29m-cj2h"

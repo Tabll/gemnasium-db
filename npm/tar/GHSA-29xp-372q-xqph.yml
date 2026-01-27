@@ -3,18 +3,15 @@ identifier: "GHSA-29xp-372q-xqph"
 identifiers:
 - "GHSA-29xp-372q-xqph"
 package_slug: "npm/tar"
-title: "node-tar has a race condition leading to uninitialized memory exposure"
-description: "Using `.t` (aka `.list`) with `{ sync: true }` to read tar entry contents
-  returns uninitialized memory contents if tar file was changed on disk to a smaller
-  size while being read."
-date: "2025-10-30"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2025-10-30"
-affected_range: ">=7.5.1 <7.5.2||=7.5.1"
-fixed_versions:
-- "7.5.2"
-affected_versions: "All versions starting from 7.5.1 before 7.5.2, version 7.5.1"
-not_impacted: ""
-solution: "Upgrade to version 7.5.2 or above."
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/advisories/GHSA-29xp-372q-xqph"
 - "https://github.com/isaacs/node-tar/security/advisories/GHSA-29xp-372q-xqph"

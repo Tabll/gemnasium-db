@@ -5,18 +5,15 @@ identifiers:
 - "GMS-2019-123"
 - "CVE-2017-16087"
 package_slug: "npm/fs-git"
-title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
-  Injection')"
-description: "Improper Neutralization of Special Elements used in an OS Command ('OS
-  Command Injection') in fs-git."
-date: "2021-08-04"
+title: "False Positive"
+description: "This advisory has been marked as a False Positive and has been removed"
+date: "2026-01-27"
 pubdate: "2019-05-29"
-affected_range: "<1.0.2"
-fixed_versions:
-- "1.0.2"
-affected_versions: "All versions before 1.0.2"
-not_impacted: "All versions starting from 1.0.2"
-solution: "Upgrade to version 1.0.2 or above."
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "All versions before 0"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
 urls:
 - "https://github.com/vvakame/fs-git/commit/eb5f70efa5cfbff1ab299fa7daaa5de549243998"
 - "https://github.com/vvakame/fs-git/commit/eb5f70efa5cfbff1ab299fa7daaa5de549243998#diff-13b5b151431c7e7a17f273559ed212d5"

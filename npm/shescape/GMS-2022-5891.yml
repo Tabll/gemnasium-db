@@ -5,18 +5,15 @@ identifiers:
 - "GMS-2022-5891"
 - "CVE-2022-25918"
 package_slug: "npm/shescape"
-title: "Duplicate of ./npm/shescape/CVE-2022-25918.yml"
-description: "This impacts users that use shescape to escape arguments:
-  for the Unix shell Bash, or any not-officially-supported Unix shell; using the
-  `escape` or `escapeAll` functions with the `interpolation` option set to `true`."
-date: "2022-10-26"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2022-10-25"
 affected_range: "<0"
-fixed_versions:
-- "1.6.1"
-affected_versions: "All versions starting from 1.5.10 before 1.6.1"
-not_impacted: "All versions before 1.5.10, all versions starting from 1.6.1"
-solution: "Upgrade to version 1.6.1 or above."
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/ericcornelissen/shescape/security/advisories/GHSA-cr84-xvw4-qx3c"
 - "https://github.com/advisories/GHSA-cr84-xvw4-qx3c"

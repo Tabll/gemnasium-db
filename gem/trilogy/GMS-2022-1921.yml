@@ -5,23 +5,15 @@ identifiers:
 - "GMS-2022-1921"
 - "CVE-2022-31026"
 package_slug: "gem/trilogy"
-title: "Duplicate of ./gem/trilogy/CVE-2022-31026.yml"
-description: "### Impact\n\nWhen authenticating, a malicious server could return a
-  specially crafted authentication packet, causing the client to read and return up
-  to 12 bytes of data from an uninitialized variable in stack memory.\n\n### Patches\n\nUsers
-  of the trilogy gem should upgrade to version 2.1.1\n\n### Workarounds\n\nThis issue
-  can be avoided by only connecting to trusted servers.\n\n### Acknowledgements \n\nWe
-  would like to thank Sergei Volokitin for reporting this vulnerability\n\n### For
-  more information\nIf you have any questions or comments about this advisory:\n*
-  Open an issue in [trilogy](https://github.com/github/trilogy)\n"
-date: "2022-06-06"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2022-06-06"
 affected_range: "<0"
-fixed_versions:
-- "2.1.1"
-affected_versions: "All versions before 2.1.1"
-not_impacted: "All versions starting from 2.1.1"
-solution: "Upgrade to version 2.1.1 or above."
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/github/trilogy/security/advisories/GHSA-5g4r-2qhx-vqfm"
 - "https://github.com/github/trilogy/commit/6bed62789eaf119902b0fe247d2a91d56c31a962"

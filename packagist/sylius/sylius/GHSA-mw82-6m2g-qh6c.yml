@@ -3,18 +3,15 @@ identifier: "GHSA-mw82-6m2g-qh6c"
 identifiers:
 - "GHSA-mw82-6m2g-qh6c"
 package_slug: "packagist/sylius/sylius"
-title: "Duplicate Advisory: Sylius Cross Site Scripting (XSS) vulnerability"
-description: "## Duplicate Advisory\nThis advisory has been withdrawn because it is
-  a duplicate of GHSA-7prj-9ccr-hr3q. This link is maintained to preserve external
-  references.\n\n## Original Description\nSylius 1.12.13 is vulnerable to Cross Site
-  Scripting (XSS) via the \"Province\" field in Address Book."
-date: "2024-05-10"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2024-04-22"
-affected_range: "<=1.12.13"
+affected_range: "<0"
 fixed_versions: []
-affected_versions: "All versions up to 1.12.13"
-not_impacted: ""
-solution: "Unfortunately, there is no solution available yet."
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/advisories/GHSA-mw82-6m2g-qh6c"
 - "https://nvd.nist.gov/vuln/detail/CVE-2024-29376"

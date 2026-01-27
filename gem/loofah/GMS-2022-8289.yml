@@ -5,23 +5,15 @@ identifiers:
 - "GMS-2022-8289"
 - "CVE-2022-23514"
 package_slug: "gem/loofah"
-title: "Duplicate of ./gem/loofah/CVE-2022-23514.yml"
-description: "## Summary\n\nLoofah `< 2.19.1` contains an inefficient regular expression
-  that is susceptible to excessive backtracking when attempting to sanitize certain
-  SVG attributes. This may lead to a denial of service through CPU resource consumption.\n\n\n##
-  Mitigation\n\nUpgrade to Loofah `>= 2.19.1`.\n\n\n## Severity\n\nThe Loofah maintainers
-  have evaluated this as [High Severity 7.5 (CVSS3.1)](https://www.first.org/cvss/calculator/3.1#.\n\n\n##
-  References\n\n- [CWE - CWE-1333: Inefficient Regular Expression Complexity (4.9)](https://cwe.mitre.org/data/definitions/1333.html)\n-
-  https://hackerone.com/reports/1684163\n\n\n## Credit\n\nThis vulnerability was responsibly
-  reported by @ooooooo-q (https://github.com/ooooooo-q).\n"
-date: "2022-12-13"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2022-12-13"
 affected_range: "<0"
-fixed_versions:
-- "2.19.1"
-affected_versions: "All versions before 2.19.1"
-not_impacted: "All versions starting from 2.19.1"
-solution: "Upgrade to version 2.19.1 or above."
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/flavorjones/loofah/security/advisories/GHSA-486f-hjj9-9vhh"
 - "https://github.com/flavorjones/loofah/commit/a6e0a1ab90675a17b1b2be189129d94139e4b143"

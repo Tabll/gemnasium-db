@@ -3,16 +3,15 @@ identifier: "GHSA-f46r-rw29-r322"
 identifiers:
 - "GHSA-f46r-rw29-r322"
 package_slug: "npm/react-router"
-title: "False-Positive"
-description: "This advisory is a duplicate of CVE-2025-43864 and has been removed."
-date: "9999-04-24"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2025-04-24"
 affected_range: "<0"
-fixed_versions:
-- "7.5.2"
-affected_versions: "All versions before 7.5.2"
-not_impacted: "All versions starting from 7.5.2"
-solution: "Upgrade to version 7.5.2 or above."
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/advisories/GHSA-f46r-rw29-r322"
 - "https://github.com/remix-run/react-router/security/advisories/GHSA-f46r-rw29-r322"

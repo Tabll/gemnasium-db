@@ -3,16 +3,15 @@ identifier: "GHSA-cpj6-fhp6-mr6j"
 identifiers:
 - "GHSA-cpj6-fhp6-mr6j"
 package_slug: "npm/react-router"
-title: "False-Positive"
-description: "This advisory is a duplicate of CVE-2025-43865 and has been removed."
-date: "9999-05-06"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2025-04-24"
 affected_range: "<0"
-fixed_versions:
-- "7.5.2"
-affected_versions: "All versions starting from 7.0.0 before 7.5.2"
-not_impacted: "All versions before 7.0.0, all versions starting from 7.5.2"
-solution: "Upgrade to version 7.5.2 or above."
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/advisories/GHSA-cpj6-fhp6-mr6j"
 - "https://github.com/remix-run/react-router/security/advisories/GHSA-cpj6-fhp6-mr6j"

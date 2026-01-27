@@ -3,18 +3,15 @@ identifier: "GHSA-3573-4c68-g8cc"
 identifiers:
 - "GHSA-3573-4c68-g8cc"
 package_slug: "npm/@directus/api"
-title: "Directus has open redirect in SAML"
-description: "An open redirect vulnerability exists in the Directus SAML authentication
-  callback endpoint. The `RelayState` parameter is used in redirects without proper
-  validation against an allowlist of permitted domains."
-date: "2026-01-06"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2026-01-06"
-affected_range: "<32.1.1"
-fixed_versions:
-- "32.1.1"
-affected_versions: "All versions before 32.1.1"
-not_impacted: "All versions starting from 32.1.1"
-solution: "Upgrade to version 32.1.1 or above."
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/advisories/GHSA-3573-4c68-g8cc"
 - "https://github.com/directus/directus/security/advisories/GHSA-3573-4c68-g8cc"

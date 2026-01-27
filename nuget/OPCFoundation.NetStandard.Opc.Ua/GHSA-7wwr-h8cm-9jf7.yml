@@ -3,21 +3,15 @@ identifier: "GHSA-7wwr-h8cm-9jf7"
 identifiers:
 - "GHSA-7wwr-h8cm-9jf7"
 package_slug: "nuget/OPCFoundation.NetStandard.Opc.Ua"
-title: "Duplicate Advisory: Authentication Bypass by Spoofing in OPC UA .NET Standard
-  Stack"
-description: "## Duplicate Advisory\nThis advisory has been withdrawn because it is
-  a duplicate of GHSA-4rcc-7pg7-f57f. This link is maintained to preserve external
-  references.\n\n## Original Description\nVulnerability in the OPC UA .NET Standard
-  Stack before 1.5.374.158 allows an unauthorized attacker to bypass application authentication
-  when using HTTPS endpoints."
-date: "2025-03-03"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2025-02-10"
-affected_range: "[,1.5.374.158)"
-fixed_versions:
-- "1.5.374.158"
-affected_versions: "All versions before 1.5.374.158"
-not_impacted: "All versions starting from 1.5.374.158"
-solution: "Upgrade to version 1.5.374.158 or above."
+affected_range: "(,0)"
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/advisories/GHSA-7wwr-h8cm-9jf7"
 - "https://nvd.nist.gov/vuln/detail/CVE-2024-42513"

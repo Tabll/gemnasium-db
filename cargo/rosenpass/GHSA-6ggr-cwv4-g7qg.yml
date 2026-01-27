@@ -3,19 +3,15 @@ identifier: "GHSA-6ggr-cwv4-g7qg"
 identifiers:
 - "GHSA-6ggr-cwv4-g7qg"
 package_slug: "cargo/rosenpass"
-title: "Remotely exploitable denial of service in Rosenpass"
-description: "Affected versions of this crate did not validate the size of buffers
-  when attempting to decode messages.\n\nThis allows an attacker to trigger a panic
-  by sending a UDP datagram with a 1 byte payload over network.\n\nThis flaw was corrected
-  by validating the size of the buffers before attempting to decode the message."
-date: "2023-12-21"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2023-12-21"
-affected_range: "<0.2.1"
-fixed_versions:
-- "0.2.1"
-affected_versions: "All versions before 0.2.1"
-not_impacted: "All versions starting from 0.2.1"
-solution: "Upgrade to version 0.2.1 or above."
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/advisories/GHSA-6ggr-cwv4-g7qg"
 - "https://github.com/rosenpass/rosenpass/commit/93439858d1c44294a7b377f775c4fc897a370bb2"

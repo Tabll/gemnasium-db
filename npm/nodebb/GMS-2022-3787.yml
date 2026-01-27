@@ -5,23 +5,15 @@ identifiers:
 - "GMS-2022-3787"
 - "CVE-2022-36045"
 package_slug: "npm/nodebb"
-title: "Duplicate of ./npm/nodebb/CVE-2022-36045.yml"
-description: "`utils.generateUUID`, a helper function available in essentially all
-  versions of NodeBB (as far back as v1.0.1 and potentially earlier) used a cryptographically
-  insecure Pseudo-random number generator (`Math.random()`), which meant that a specially
-  crafted script combined with multiple invocations of the password reset functionality
-  could enable an attacker to correctly calculate the reset code for an account they
-  do not have access to."
-date: "2022-08-30"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2022-08-30"
 affected_range: "<0"
-fixed_versions:
-- "1.19.8"
-- "2.0.1"
-affected_versions: "All versions before 1.19.8, version 2.0.0"
-not_impacted: "All versions starting from 1.19.8 before 2.0.0, all versions after
-  2.0.0"
-solution: "Upgrade to versions 1.19.8, 2.0.1 or above."
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/NodeBB/NodeBB/security/advisories/GHSA-p4cc-w597-6cpm"
 - "https://github.com/NodeBB/NodeBB/commit/81e3c1ba488d03371a5ce8d0ebb5c5803026e0f9"

@@ -3,18 +3,15 @@ identifier: "GHSA-wqv2-4wpg-8hc9"
 identifiers:
 - "GHSA-wqv2-4wpg-8hc9"
 package_slug: "go/miniflux.app/v2"
-title: "Miniflux has an Open Redirect via protocol-relative redirect_url"
-description: "`redirect_url` is treated as safe when `url.Parse(...).IsAbs()` is false.
-  Protocol-relative URLs like `//ikotaslabs.com` have an empty scheme and pass that
-  check, allowing post-login redirects to attacker-controlled sites."
-date: "2025-12-10"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2025-12-10"
-affected_range: "<2.2.15"
-fixed_versions:
-- "2.2.15"
-affected_versions: "All versions before 2.2.15"
-not_impacted: "All versions starting from 2.2.15"
-solution: "Upgrade to version 2.2.15 or above."
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/advisories/GHSA-wqv2-4wpg-8hc9"
 - "https://github.com/miniflux/v2/security/advisories/GHSA-wqv2-4wpg-8hc9"

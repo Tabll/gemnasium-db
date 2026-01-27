@@ -3,19 +3,15 @@ identifier: "GHSA-pf4h-vrv6-cmvr"
 identifiers:
 - "GHSA-pf4h-vrv6-cmvr"
 package_slug: "nuget/DNN.PLATFORM"
-title: "DNN.PLATFORM Allows Reflected Cross-Site Scripting (XSS) in some TokenReplace
-  situations with SkinObjects"
-description: "DNN.PLATFORM allows specially crafted content in URLs could be used
-  with TokenReplace and not be properly sanitized by some SkinObjects. This vulnerability
-  is fixed in 10.0.1."
-date: "2025-06-20"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2025-06-20"
-affected_range: "[6.0.0,10.0.1)"
-fixed_versions:
-- "10.0.1"
-affected_versions: "All versions starting from 6.0.0 before 10.0.1"
-not_impacted: "All versions before 6.0.0, all versions starting from 10.0.1"
-solution: "Upgrade to version 10.0.1 or above."
+affected_range: "(,0)"
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/advisories/GHSA-pf4h-vrv6-cmvr"
 - "https://github.com/dnnsoftware/Dnn.Platform/security/advisories/GHSA-pf4h-vrv6-cmvr"

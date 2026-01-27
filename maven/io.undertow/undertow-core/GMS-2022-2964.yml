@@ -5,20 +5,15 @@ identifiers:
 - "GMS-2022-2964"
 - "CVE-2021-3690"
 package_slug: "maven/io.undertow/undertow-core"
-title: "Duplicate of ./maven/io.undertow/undertow-core/CVE-2021-3690.yml"
-description: "Buffer leak on incoming WebSocket PONG message(s) in Undertow before
-  2.0.40 and 2.2.10 can lead to memory exhaustion and allow a denial of service."
-date: "2022-07-15"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2022-07-15"
 affected_range: "(,0)"
-fixed_versions:
-- "2.0.40"
-- "2.2.10"
-affected_versions: "All versions before 2.0.40, all versions starting from 2.2.0 before
-  2.2.10"
-not_impacted: "All versions starting from 2.0.40 before 2.2.0, all versions starting
-  from 2.2.10"
-solution: "Upgrade to versions 2.0.40, 2.2.10 or above."
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://nvd.nist.gov/vuln/detail/CVE-2021-3690"
 - "https://github.com/undertow-io/undertow/commit/c7e84a0b7efced38506d7d1dfea5902366973877"

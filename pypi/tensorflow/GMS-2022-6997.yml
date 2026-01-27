@@ -5,23 +5,15 @@ identifiers:
 - "GMS-2022-6997"
 - "CVE-2022-41910"
 package_slug: "pypi/tensorflow"
-title: "Duplicate of ./pypi/tensorflow/CVE-2022-41910.yml"
-description: "The function `MakeGrapplerFunctionItem`
-  takes arguments that determine the sizes of inputs and outputs. If the inputs given
-  are greater than or equal to the sizes of the outputs, an out-of-bounds memory read
-  or a crash is triggered."
-date: "2022-11-21"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2022-11-21"
 affected_range: "<0"
-fixed_versions:
-- "2.8.4"
-- "2.9.3"
-- "2.10.1"
-affected_versions: "All versions before 2.8.4, all versions starting from 2.9.0 before
-  2.9.3, all versions starting from 2.10.0 before 2.10.1"
-not_impacted: "All versions starting from 2.8.4 before 2.9.0, all versions starting
-  from 2.9.3 before 2.10.0, all versions starting from 2.10.1"
-solution: "Upgrade to versions 2.8.4, 2.9.3, 2.10.1 or above."
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/tensorflow/tensorflow/security/advisories/GHSA-frqp-wp83-qggv"
 - "https://github.com/advisories/GHSA-frqp-wp83-qggv"

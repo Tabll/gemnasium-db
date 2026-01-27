@@ -3,18 +3,15 @@ identifier: "GHSA-95j3-435g-vjcp"
 identifiers:
 - "GHSA-95j3-435g-vjcp"
 package_slug: "packagist/leantime/leantime"
-title: "Leantime affected by Improper Neutralization of HTML Tags"
-description: "HTML can be arbitrarily injected into emails from Leantime due to improper
-  neutralization of HTML tags in users' first names. This effectively allows for the
-  creation of phishing emails from a Leantime instance's email address."
-date: "2025-02-21"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2025-02-21"
-affected_range: "<3.3"
-fixed_versions:
-- "3.3"
-affected_versions: "All versions before 3.3"
-not_impacted: "All versions starting from 3.3"
-solution: "Upgrade to version 3.3 or above."
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/advisories/GHSA-95j3-435g-vjcp"
 - "https://github.com/Leantime/leantime/security/advisories/GHSA-95j3-435g-vjcp"

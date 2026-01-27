@@ -5,17 +5,15 @@ identifiers:
 - "GMS-2022-2730"
 - "CVE-2022-31604"
 package_slug: "pypi/nvflare"
-title: "Duplicate of ./pypi/nvflare/CVE-2022-31604.yml"
-description: "Improper Neutralization of Special Elements used in an OS Command ('OS
-  Command Injection') in nvflare."
-date: "2022-06-22"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2022-06-22"
 affected_range: "<0"
-fixed_versions:
-- "2.1.2"
-affected_versions: "All versions before 2.1.2"
-not_impacted: "All versions starting from 2.1.2"
-solution: "Upgrade to version 2.1.2 or above."
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/NVIDIA/NVFlare/security/advisories/GHSA-rcxc-3w2m-mp8h"
 - "https://github.com/advisories/GHSA-rcxc-3w2m-mp8h"

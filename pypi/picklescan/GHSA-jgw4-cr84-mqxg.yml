@@ -3,22 +3,15 @@ identifier: "GHSA-jgw4-cr84-mqxg"
 identifiers:
 - "GHSA-jgw4-cr84-mqxg"
 package_slug: "pypi/picklescan"
-title: "Picklescan Bypass is Possible via File Extension Mismatch"
-description: "Picklescan can be bypassed, allowing the detection of malicious pickle
-  files to fail, when a standard pickle file is given a PyTorch-related file extension
-  (e.g., .bin). This occurs because the scanner prioritizes PyTorch file extension
-  checks and errors out when parsing a standard pickle file with such an extension
-  instead of falling back to standard pickle analysis. This vulnerability allows attackers
-  to disguise malicious pickle payloads within files that would otherwise be scanned
-  for pickle-based threats."
-date: "2025-09-10"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2025-09-10"
-affected_range: "<0.0.31"
-fixed_versions:
-- "0.0.31"
-affected_versions: "All versions before 0.0.31"
-not_impacted: "All versions starting from 0.0.31"
-solution: "Upgrade to version 0.0.31 or above."
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/advisories/GHSA-jgw4-cr84-mqxg"
 - "https://github.com/mmaitre314/picklescan/security/advisories/GHSA-jgw4-cr84-mqxg"

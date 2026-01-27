@@ -4,20 +4,15 @@ identifiers:
 - "GHSA-4jg2-84c2-pj95"
 - "GMS-2021-18"
 package_slug: "npm/@asyncapi/modelina"
-title: "Improper Control of Generation of Code ('Code Injection') in @asyncapi/modelina"
-description: "### Impact\nAnyone who is using the default presets and/or does not
-  handle the functionality themself.\n\n### Patches\nIt has not been patched yet.\n\n###
-  Workarounds\nFully custom presets that change the entire rendering process which
-  can then escape the user input.\n\n### For more information\nEven though that I
-  changed all the presets here, the vulnerability is still present throughout."
-date: "2023-01-25"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2021-09-21"
-affected_range: "<1.0.0"
-fixed_versions:
-- "1.0.0"
-affected_versions: "All versions before 1.0.0"
-not_impacted: "All versions starting from 1.0.0"
-solution: "Upgrade to version 1.0.0 or above."
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/asyncapi/modelina/security/advisories/GHSA-4jg2-84c2-pj95"
 - "https://github.com/advisories/GHSA-4jg2-84c2-pj95"

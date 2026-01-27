@@ -4,18 +4,15 @@ identifiers:
 - "GHSA-hwqr-f3v9-hwxr"
 - "GMS-2022-3213"
 package_slug: "pypi/distributed"
-title: "Improper Neutralization of Special Elements used in an OS Command ('OS Command
-  Injection')"
-description: "Improper Neutralization of Special Elements used in an OS Command ('OS
-  Command Injection') in distributed."
-date: "2022-07-15"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2022-07-15"
-affected_range: ">=0,<2021.10.0"
-fixed_versions:
-- "2021.10.0"
-affected_versions: "All versions starting from 0 before 2021.10.0"
-not_impacted: "All versions before 0, all versions starting from 2021.10.0"
-solution: "Upgrade to version 2021.10.0 or above."
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/dask/distributed/security/advisories/GHSA-hwqr-f3v9-hwxr"
 - "https://docs.dask.org/en/latest/changelog.html"

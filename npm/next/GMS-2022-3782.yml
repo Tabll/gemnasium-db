@@ -5,24 +5,15 @@ identifiers:
 - "GMS-2022-3782"
 - "CVE-2022-36046"
 package_slug: "npm/next"
-title: "Duplicate of ./npm/next/CVE-2022-36046.yml"
-description: "### Impact\n\nWhen specific requests are made to the Next.js server
-  it can cause an `unhandledRejection` in the server which can crash the process to
-  exit in specific Node.js versions with strict `unhandledRejection` handling. \n\n-
-  Affected: All of the following must be true to be affected by this CVE\n - Node.js
-  version above v15.0.0 being used with strict `unhandledRejection` exiting\n - Next.js
-  version v12.2.3\n - Using next start or a [custom server](https://nextjs.org/docs/advanced-features/custom-server)\n
-  \n- Not affected: Deployments on Vercel ([vercel.com](https://vercel.com/)) are
-  not affected along with similar environments where `next-server` isn't being shared
-  across requests.\n\n### Patches\nhttps://github.com/vercel/next.js/releases/tag/v12.2.4\n"
-date: "2022-08-30"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2022-08-30"
 affected_range: "<0"
-fixed_versions:
-- "12.2.4"
-affected_versions: "Version 12.2.3"
-not_impacted: "All versions before 12.2.3, all versions after 12.2.3"
-solution: "Upgrade to version 12.2.4 or above."
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/vercel/next.js/security/advisories/GHSA-wff4-fpwg-qqv3"
 - "https://github.com/vercel/next.js/releases/tag/v12.2.4"

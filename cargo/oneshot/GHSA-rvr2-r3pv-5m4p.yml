@@ -1,0 +1,43 @@
+---
+identifier: "GHSA-rvr2-r3pv-5m4p"
+identifiers:
+- "GHSA-rvr2-r3pv-5m4p"
+package_slug: "cargo/oneshot"
+title: "oneshot has potential Use After Free when used asynchronously"
+description: "There is a race condition that can lead to a use-after-free if a `oneshot::Receiver`
+  is polled but then dropped instead of polled to completion. This could happen if
+  the receiver future was cancelled while receiving, for example by being wrapped
+  in a timeout future or similar.\n\nWhen the `Receiver` is polled (`Future::poll`)
+  it writes a waker to the channel and sets it to the `RECEIVING` state. If the `Receiver`
+  was then dropped (instead of polled to completion), the `Drop` implementation on
+  `Receiver` unconditionally swapped the channel state to `DISCONNECTED` and only
+  after doing so it read back its waker from the heap allocation and dropped it. The
+  problem is that the `DISCONNECTED` state could be observed by the `Sender`, which
+  would lead to it deallocating the channel heap memory. If the `Sender` manage to
+  free the channel before the `Receiver` managed to proceed to dropping the waker,
+  then the `Receiver` would read from the freed channel memory (Use After Free).\n\nThe
+  fix was submitted in https://github.com/faern/oneshot/pull/74 and published as part
+  of `oneshot` version `0.1.12`."
+date: "2026-01-27"
+pubdate: "2026-01-27"
+affected_range: "<0.1.12"
+fixed_versions:
+- "0.1.12"
+affected_versions: "All versions before 0.1.12"
+not_impacted: "All versions starting from 0.1.12"
+solution: "Upgrade to version 0.1.12 or above."
+urls:
+- "https://github.com/advisories/GHSA-rvr2-r3pv-5m4p"
+- "https://github.com/faern/oneshot/issues/73"
+- "https://github.com/rustsec/advisory-db/pull/2600"
+- "https://github.com/faern/oneshot/commit/d1a1506010bc48962634807d0dcca682af4f50ba"
+- "https://github.com/faern/oneshot"
+- "https://rustsec.org/advisories/RUSTSEC-2026-0005.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+uuid: "858240b9-a7e2-43a8-b4e6-0b3a203a6571"
+cwe_ids:
+- "CWE-362"
+- "CWE-416"
+- "CWE-937"
+- "CWE-1035"

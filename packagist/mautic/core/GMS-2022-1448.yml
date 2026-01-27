@@ -5,22 +5,15 @@ identifiers:
 - "GMS-2022-1448"
 - "CVE-2022-25772"
 package_slug: "packagist/mautic/core"
-title: "Duplicate of ./packagist/mautic/core/CVE-2022-25772.yml"
-description: "### Impact\n\nMautic allows you to track open rates by using tracking
-  pixels. \nThe tracking information is stored together with extra metadata of the
-  tracking request.\n\nThe output isn't sufficiently filtered when showing the metadata
-  of the tracking information, which may lead to a vulnerable situation.\n\n### Patches\n\nPlease
-  upgrade to 4.3.0\n\n### Workarounds\nNone.\n\n### References\n* Internally tracked
-  under MST-38\n\n### For more information\nIf you have any questions or comments
-  about this advisory:\n* Email us at [security@mautic.org](mailto:security@mautic.org)\n"
-date: "2022-05-25"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2022-05-25"
 affected_range: "<0"
-fixed_versions:
-- "4.3.0"
-affected_versions: "All versions before 4.3.0"
-not_impacted: "All versions starting from 4.3.0"
-solution: "Upgrade to version 4.3.0 or above."
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/mautic/mautic/security/advisories/GHSA-pjpc-87mp-4332"
 - "https://github.com/mautic/mautic/commit/462eb596027fd949efbf9ac5cb2b376805e9d246"

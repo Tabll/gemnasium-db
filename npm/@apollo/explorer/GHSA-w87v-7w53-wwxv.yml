@@ -3,22 +3,15 @@ identifier: "GHSA-w87v-7w53-wwxv"
 identifiers:
 - "GHSA-w87v-7w53-wwxv"
 package_slug: "npm/@apollo/explorer"
-title: "Apollo Embedded Sandbox and Explorer vulnerable to CSRF via window.postMessage
-  origin-validation bypass"
-description: "A **Cross-Site Request Forgery (CSRF)** vulnerability was identified
-  in Apollo’s **Embedded Sandbox** and **Embedded Explorer**.\n\nThe vulnerability
-  arises from missing origin validation in the client-side code that handles `window.postMessage`
-  events. A malicious website can send forged messages to the embedding page, causing
-  the victim’s browser to execute arbitrary GraphQL queries or mutations against their
-  GraphQL server while authenticated with the victim’s cookies."
-date: "2025-09-26"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2025-09-26"
-affected_range: "<3.7.3"
-fixed_versions:
-- "3.7.3"
-affected_versions: "All versions before 3.7.3"
-not_impacted: "All versions starting from 3.7.3"
-solution: "Upgrade to version 3.7.3 or above."
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/advisories/GHSA-w87v-7w53-wwxv"
 - "https://github.com/apollographql/embeddable-explorer/security/advisories/GHSA-w87v-7w53-wwxv"

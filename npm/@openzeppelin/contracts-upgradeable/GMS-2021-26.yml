@@ -4,19 +4,15 @@ identifiers:
 - "GHSA-9c22-pwxw-p6hx"
 - "GMS-2021-26"
 package_slug: "npm/@openzeppelin/contracts-upgradeable"
-title: "Initializer reentrancy may lead to double initialization"
-description: "Initializer functions that are invoked separate from contract creation
-  (the most prominent example being minimal proxies) may be reentered if they make
-  an untrusted non-view external call. Once an initializer has finished running it
-  can never be re-executed."
-date: "2021-12-14"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2021-12-14"
-affected_range: ">=3.2.0 <4.4.1"
-fixed_versions:
-- "4.4.1"
-affected_versions: "All versions starting from 3.2.0 before 4.4.1"
-not_impacted: "All versions before 3.2.0, all versions starting from 4.4.1"
-solution: "Upgrade to version 4.4.1 or above."
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/OpenZeppelin/openzeppelin-contracts/security/advisories/GHSA-9c22-pwxw-p6hx"
 - "https://github.com/OpenZeppelin/openzeppelin-contracts/pull/3006"

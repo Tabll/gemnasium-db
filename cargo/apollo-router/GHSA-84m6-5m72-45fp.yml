@@ -3,20 +3,15 @@ identifier: "GHSA-84m6-5m72-45fp"
 identifiers:
 - "GHSA-84m6-5m72-45fp"
 package_slug: "cargo/apollo-router"
-title: "Apollo Router Operation Limits Vulnerable to Bypass via Integer Overflow"
-description: "A vulnerability in Apollo Router allowed certain queries to bypass configured
-  operation limits, specifically due to integer overflow."
-date: "2025-04-07"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2025-04-07"
-affected_range: "<1.61.2||>=2.0.0-alpha.0 <2.1.1"
-fixed_versions:
-- "1.61.2"
-- "2.1.1"
-affected_versions: "All versions before 1.61.2, all versions starting from 2.0.0-alpha.0
-  before 2.1.1"
-not_impacted: "All versions starting from 1.61.2 before 2.0.0-alpha.0, all versions
-  starting from 2.1.1"
-solution: "Upgrade to versions 1.61.2, 2.1.1 or above."
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/advisories/GHSA-84m6-5m72-45fp"
 - "https://github.com/apollographql/router/security/advisories/GHSA-84m6-5m72-45fp"

@@ -3,24 +3,15 @@ identifier: "GHSA-25mx-8f3v-8wh7"
 identifiers:
 - "GHSA-25mx-8f3v-8wh7"
 package_slug: "cargo/sequoia-openpgp"
-title: "sequoia-openpgp vulnerable to out-of-bounds array access leading to panic"
-description: "Affected versions of the crate have several bugs where attacker-controlled
-  input can result in the use of an out-of-bound array index.  Rust detects the use
-  of the out-of-bound index and causes the application to panic.  An attacker may
-  be able to use this to cause a denial-of-service.  However, it is not possible for
-  an attacker to read from or write to the application's address space."
-date: "2023-06-06"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2023-06-06"
-affected_range: "<1.1.1||>=1.2.0 <1.8.1||>=1.9.0 <1.16.0"
-fixed_versions:
-- "1.1.1"
-- "1.8.1"
-- "1.16.0"
-affected_versions: "All versions before 1.1.1, all versions starting from 1.2.0 before
-  1.8.1, all versions starting from 1.9.0 before 1.16.0"
-not_impacted: "All versions starting from 1.1.1 before 1.2.0, all versions starting
-  from 1.8.1 before 1.9.0, all versions starting from 1.16.0"
-solution: "Upgrade to versions 1.1.1, 1.16.0, 1.8.1 or above."
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/advisories/GHSA-25mx-8f3v-8wh7"
 - "https://github.com/advisories/GHSA-29mf-62xx-28jq"

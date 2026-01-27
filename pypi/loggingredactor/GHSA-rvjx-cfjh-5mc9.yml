@@ -3,17 +3,15 @@ identifier: "GHSA-rvjx-cfjh-5mc9"
 identifiers:
 - "GHSA-rvjx-cfjh-5mc9"
 package_slug: "pypi/loggingredactor"
-title: "loggingredactor converts non-string types to string types in logs"
-description: "Non-string types are converted into string types, leading to type errors
-  in %d conversions."
-date: "2026-01-07"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2026-01-07"
-affected_range: "<0.0.6"
-fixed_versions:
-- "0.0.6"
-affected_versions: "All versions before 0.0.6"
-not_impacted: "All versions starting from 0.0.6"
-solution: "Upgrade to version 0.0.6 or above."
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/advisories/GHSA-rvjx-cfjh-5mc9"
 - "https://github.com/armurox/loggingredactor/security/advisories/GHSA-rvjx-cfjh-5mc9"

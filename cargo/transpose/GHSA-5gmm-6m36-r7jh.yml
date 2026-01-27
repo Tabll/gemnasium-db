@@ -3,24 +3,15 @@ identifier: "GHSA-5gmm-6m36-r7jh"
 identifiers:
 - "GHSA-5gmm-6m36-r7jh"
 package_slug: "cargo/transpose"
-title: "transpose: Buffer overflow due to integer overflow"
-description: "Given the function `transpose::transpose`:\n```rust\nfn transpose<T:
-  Copy>(input: &[T], output: &mut [T], input_width: usize, input_height: usize)\n```\n\nThe
-  safety check `input_width * input_height == output.len()` can fail due to `input_width
-  * input_height` overflowing in such a way that it equals `output.len()`.\nAs a result
-  of failing the safety check, memory past the end of `output` is written to. This
-  only occurs in release mode since `*` panics on overflow in debug mode.\n\nExploiting
-  this issue requires the caller to pass `input_width` and `input_height` arguments
-  such that multiplying them overflows, and the overflown result equals the lengths
-  of input and output slices."
-date: "2024-04-05"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2024-04-05"
-affected_range: ">=0.1.0 <0.2.3"
-fixed_versions:
-- "0.2.3"
-affected_versions: "All versions starting from 0.1.0 before 0.2.3"
-not_impacted: "All versions before 0.1.0, all versions starting from 0.2.3"
-solution: "Upgrade to version 0.2.3 or above."
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/advisories/GHSA-5gmm-6m36-r7jh"
 - "https://github.com/ejmahler/transpose/issues/11"

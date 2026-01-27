@@ -3,24 +3,15 @@ identifier: "GHSA-78h3-63c4-5fqc"
 identifiers:
 - "GHSA-78h3-63c4-5fqc"
 package_slug: "go/github.com/Tencent/WeKnora"
-title: "WeKnora has Command Injection in MCP stdio test"
-description: "---\n\n- **Remote Code Execution (RCE)**: Arbitrary command execution
-  enables file creation/modification, execution of additional payloads, and service
-  disruption\n- **Information Disclosure**: Sensitive data exfiltration through reading
-  environment variables, configuration files, keys, tokens, and local files\n- **Privilege Escalation/Lateral Movement
-  (Environment-Dependent)**: Impact may escalate based on container mounts, network
-  policies, and internal service access permissions\n- **Cross-Tenant Boundary Impact**:
-  Execution occurs in a shared backend runtime; depending on deployment configuration,
-  impact may extend beyond tenant boundaries (**exact scope is uncertain** and varies
-  by deployment setup)"
-date: "2026-01-09"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2026-01-09"
-affected_range: "<0.2.5"
-fixed_versions:
-- "0.2.5"
-affected_versions: "All versions before 0.2.5"
-not_impacted: "All versions starting from 0.2.5"
-solution: "Upgrade to version 0.2.5 or above."
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/advisories/GHSA-78h3-63c4-5fqc"
 - "https://github.com/Tencent/WeKnora/security/advisories/GHSA-78h3-63c4-5fqc"

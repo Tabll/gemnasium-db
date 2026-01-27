@@ -3,24 +3,15 @@ identifier: "GHSA-xwfj-jgwm-7wp5"
 identifiers:
 - "GHSA-xwfj-jgwm-7wp5"
 package_slug: "cargo/tracing-subscriber"
-title: " Tracing logging user input may result in poisoning logs with ANSI escape
-  sequences"
-description: "Previous versions of tracing-subscriber were vulnerable to ANSI escape
-  sequence injection attacks. Untrusted user input containing ANSI escape sequences
-  could be injected into terminal output when logged, potentially allowing attackers
-  to:\n\n- Manipulate terminal title bars\n- Clear screens or modify terminal display\n-
-  Potentially mislead users through terminal manipulation\n\nIn isolation, impact
-  is minimal, however security issues have been found in terminal emulators that enabled
-  an attacker to use ANSI escape sequences via logs to exploit vulnerabilities in
-  the terminal emulator."
-date: "2025-08-29"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2025-08-29"
-affected_range: "<0.3.20"
-fixed_versions:
-- "0.3.20"
-affected_versions: "All versions before 0.3.20"
-not_impacted: "All versions starting from 0.3.20"
-solution: "Upgrade to version 0.3.20 or above."
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/advisories/GHSA-xwfj-jgwm-7wp5"
 - "https://github.com/tokio-rs/tracing/security/advisories/GHSA-xwfj-jgwm-7wp5"

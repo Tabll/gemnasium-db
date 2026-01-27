@@ -3,21 +3,15 @@ identifier: "GHSA-v98g-8rqx-g93g"
 identifiers:
 - "GHSA-v98g-8rqx-g93g"
 package_slug: "npm/@finos/git-proxy"
-title: "GitProxy Hidden Commits Injection"
-description: "An attacker can inject extra commits into the pack sent to GitHub, commits
-  that aren’t pointed to by any branch. Although these “hidden” commits never show
-  up in the repository’s visible history, GitHub still serves them at their direct
-  commit URLs. This lets an attacker exfiltrate sensitive data without ever leaving
-  a trace in the branch view. We rate this a High‑impact vulnerability because it
-  completely compromises repository confidentiality."
-date: "2025-07-30"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2025-07-30"
-affected_range: "<1.19.2"
-fixed_versions:
-- "1.19.2"
-affected_versions: "All versions before 1.19.2"
-not_impacted: "All versions starting from 1.19.2"
-solution: "Upgrade to version 1.19.2 or above."
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/advisories/GHSA-v98g-8rqx-g93g"
 - "https://github.com/finos/git-proxy/security/advisories/GHSA-v98g-8rqx-g93g"

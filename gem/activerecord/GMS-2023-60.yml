@@ -5,27 +5,15 @@ identifiers:
 - "GMS-2023-60"
 - "CVE-2023-22794"
 package_slug: "gem/activerecord"
-title: "Duplicate of ./gem/activerecord/CVE-2023-22794.yml"
-description: "There is a possible vulnerability in ActiveRecord related to the sanitization
-  of comments. Previously the implementation of escaping for comments was insufficient.
-  If malicious user input is passed to either the annotate query method, the optimizer_hints
-  query method, or through the QueryLogs interface which automatically adds annotations,
-  it may be sent to the database with insufficient sanitization and be able to inject
-  SQL outside of the comment. In most cases these interfaces won’t be used with user
-  input and users should avoid doing so."
-date: "2023-01-18"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2023-01-18"
 affected_range: "<0"
-fixed_versions:
-- "6.0.6.1"
-- "6.1.7.1"
-- "7.0.4.1"
-affected_versions: "All versions starting from 6.0.0 before 6.0.6.1, all versions
-  starting from 6.1.0 before 6.1.7.1, all versions starting from 7.0.0 before 7.0.4.1"
-not_impacted: "All versions before 6.0.0, all versions starting from 6.0.6.1 before
-  6.1.0, all versions starting from 6.1.7.1 before 7.0.0, all versions starting from
-  7.0.4.1"
-solution: "Upgrade to versions 6.0.6.1, 6.1.7.1, 7.0.4.1 or above."
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/rails/rails/releases/tag/v7.0.4.1"
 - "https://github.com/advisories/GHSA-hq7p-j377-6v63"

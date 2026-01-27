@@ -3,21 +3,15 @@ identifier: "GHSA-ccqh-278p-xq6w"
 identifiers:
 - "GHSA-ccqh-278p-xq6w"
 package_slug: "npm/webcrack"
-title: "webcrack has an Arbitrary File Write Vulnerability on Windows when Parsing
-  and Saving a Malicious Bundle"
-description: "An arbitrary file write vulnerability exists in the webcrack module
-  when processing specifically crafted malicious code on Windows systems. This vulnerability
-  is triggered when using the unpack bundles feature in conjunction with the saving
-  feature. If a module name includes a path traversal sequence with Windows path separators,
-  an attacker can exploit this to overwrite files on the host system."
-date: "2024-08-14"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2024-08-14"
-affected_range: "<2.14.1"
-fixed_versions:
-- "2.14.1"
-affected_versions: "All versions before 2.14.1"
-not_impacted: "All versions starting from 2.14.1"
-solution: "Upgrade to version 2.14.1 or above."
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/advisories/GHSA-ccqh-278p-xq6w"
 - "https://github.com/j4k0xb/webcrack/security/advisories/GHSA-ccqh-278p-xq6w"

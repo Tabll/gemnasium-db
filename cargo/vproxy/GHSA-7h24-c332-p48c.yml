@@ -3,17 +3,15 @@ identifier: "GHSA-7h24-c332-p48c"
 identifiers:
 - "GHSA-7h24-c332-p48c"
 package_slug: "cargo/vproxy"
-title: "vproxy Divide by Zero DoS Vulnerability"
-description: "Untrusted, user-controlled data from the HTTP Proxy-Authorization header
-  can induce a denial of service state."
-date: "2025-07-30"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2025-07-30"
-affected_range: "<2.4.0"
-fixed_versions:
-- "2.4.0"
-affected_versions: "All versions before 2.4.0"
-not_impacted: "All versions starting from 2.4.0"
-solution: "Upgrade to version 2.4.0 or above."
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/advisories/GHSA-7h24-c332-p48c"
 - "https://github.com/0x676e67/vproxy/security/advisories/GHSA-7h24-c332-p48c"

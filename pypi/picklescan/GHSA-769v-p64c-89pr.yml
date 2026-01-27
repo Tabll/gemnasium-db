@@ -3,20 +3,15 @@ identifier: "GHSA-769v-p64c-89pr"
 identifiers:
 - "GHSA-769v-p64c-89pr"
 package_slug: "pypi/picklescan"
-title: "PyTorch Model Files Can Bypass Pickle Scanners via Unexpected Pickle Extensions"
-description: "Picklescan fails to detect hidden pickle files embedded in PyTorch model
-  archives due to its reliance on file extensions for detection. This allows an attacker
-  to embed a secondary, malicious pickle file with a non-standard extension inside
-  a model archive, which remains undetected by picklescan but is still loaded by PyTorch's
-  torch.load() function. This can lead to arbitrary code execution when the model
-  is loaded."
-date: "2025-03-03"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2025-03-03"
-affected_range: "<=0.0.21"
+affected_range: "<0"
 fixed_versions: []
-affected_versions: "All versions up to 0.0.21"
-not_impacted: ""
-solution: "Unfortunately, there is no solution available yet."
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/advisories/GHSA-769v-p64c-89pr"
 - "https://github.com/mmaitre314/picklescan/security/advisories/GHSA-769v-p64c-89pr"

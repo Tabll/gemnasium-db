@@ -3,24 +3,15 @@ identifier: "GHSA-wwqv-p2pp-99h5"
 identifiers:
 - "GHSA-wwqv-p2pp-99h5"
 package_slug: "pypi/langgraph-checkpoint"
-title: "LangGraph Checkpoint affected by RCE in \"json\" mode of JsonPlusSerializer "
-description: "Prior to `langgraph-checkpoint` version `3.0` , LangGraph’s `JsonPlusSerializer`
-  (used as the default serialization protocol for all checkpointing) contains a remote
-  code execution (RCE) vulnerability when deserializing payloads saved in the `\"json\"`
-  serialization mode.\n\nIf an attacker can cause your application to persist a payload
-  serialized in this mode, they may be able to also send malicious content that executes
-  arbitrary Python code during deserialization.\n\nUpgrading to version langgraph-checkpoint
-  `3.0` patches this vulnerability by preventing deserialization of custom objects
-  saved in this mode.\n\nIf you are deploying in `langgraph-api`, any version `0.5`
-  or later is also free of this vulnerability."
-date: "2025-11-05"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2025-11-05"
-affected_range: "<3.0.0"
-fixed_versions:
-- "3.0.0"
-affected_versions: "All versions before 3.0.0"
-not_impacted: "All versions starting from 3.0.0"
-solution: "Upgrade to version 3.0.0 or above."
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/advisories/GHSA-wwqv-p2pp-99h5"
 - "https://github.com/langchain-ai/langgraph/security/advisories/GHSA-wwqv-p2pp-99h5"

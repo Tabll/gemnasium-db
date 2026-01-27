@@ -3,17 +3,15 @@ identifier: "GHSA-vgvv-x7xg-6cqg"
 identifiers:
 - "GHSA-vgvv-x7xg-6cqg"
 package_slug: "cargo/russh"
-title: "Russh has an OOM Denial of Service due to allocation of untrusted amount"
-description: "Allocating an untrusted amount of memory allows any unauthenticated
-  user to OOM a russh server."
-date: "2024-08-14"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2024-08-14"
-affected_range: "<0.44.1"
-fixed_versions:
-- "0.44.1"
-affected_versions: "All versions before 0.44.1"
-not_impacted: "All versions starting from 0.44.1"
-solution: "Upgrade to version 0.44.1 or above."
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/advisories/GHSA-vgvv-x7xg-6cqg"
 - "https://github.com/Eugeny/russh/security/advisories/GHSA-vgvv-x7xg-6cqg"

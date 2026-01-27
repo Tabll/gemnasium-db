@@ -3,20 +3,15 @@ identifier: "GHSA-pvcv-q3q7-266g"
 identifiers:
 - "GHSA-pvcv-q3q7-266g"
 package_slug: "packagist/filament/filament"
-title: "Filament multi-factor authentication (app) recovery codes can be used multiple
-  times"
-description: "A flaw in the handling of recovery codes for **app-based multi-factor
-  authentication** allows the same recovery code to be reused indefinitely. This issue
-  does **not** affect email-based MFA. It also only applies when recovery codes are
-  enabled."
-date: "2025-12-09"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2025-12-09"
-affected_range: ">=4.0.0 <4.3.1"
-fixed_versions:
-- "4.3.1"
-affected_versions: "All versions starting from 4.0.0 before 4.3.1"
-not_impacted: "All versions before 4.0.0, all versions starting from 4.3.1"
-solution: "Upgrade to version 4.3.1 or above."
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/advisories/GHSA-pvcv-q3q7-266g"
 - "https://github.com/filamentphp/filament/security/advisories/GHSA-pvcv-q3q7-266g"

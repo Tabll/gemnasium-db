@@ -4,16 +4,15 @@ identifiers:
 - "GHSA-3633-5h82-39pq"
 - "GMS-2022-4279"
 package_slug: "go/github.com/theupdateframework/go-tuf"
-title: "Improper Neutralization"
-description: "Improper Neutralization in github.com/theupdateframework/go-tuf."
-date: "2023-08-30"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2022-09-16"
-affected_range: "<v0.3.2"
-fixed_versions:
-- "v0.3.2"
-affected_versions: "All versions before 0.3.2"
-not_impacted: "All versions starting from 0.3.2"
-solution: "Upgrade to version 0.3.2 or above."
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/theupdateframework/go-tuf/security/advisories/GHSA-3633-5h82-39pq"
 - "https://github.com/advisories/GHSA-3633-5h82-39pq"
@@ -22,10 +21,3 @@ cwe_ids:
 - "CWE-1035"
 - "CWE-707"
 - "CWE-937"
-versions:
-- number: "v0.3.2"
-  commit:
-    tags:
-    - "v0.3.2"
-    sha: "b6695e4ba6d0b98beb851054c0f187df8d54a639"
-    timestamp: "20220907153442"

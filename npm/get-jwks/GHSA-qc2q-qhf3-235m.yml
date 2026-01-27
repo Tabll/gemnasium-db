@@ -3,17 +3,15 @@ identifier: "GHSA-qc2q-qhf3-235m"
 identifiers:
 - "GHSA-qc2q-qhf3-235m"
 package_slug: "npm/get-jwks"
-title: "get-jwks: poisoned JWKS cache allows post-fetch issuer validation bypass"
-description: "A vulnerability in `get-jwks` can lead to cache poisoning in the JWKS
-  key-fetching mechanism."
-date: "2025-09-26"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2025-09-26"
-affected_range: "<11.0.2"
-fixed_versions:
-- "11.0.2"
-affected_versions: "All versions before 11.0.2"
-not_impacted: "All versions starting from 11.0.2"
-solution: "Upgrade to version 11.0.2 or above."
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/advisories/GHSA-qc2q-qhf3-235m"
 - "https://github.com/nearform/get-jwks/security/advisories/GHSA-qc2q-qhf3-235m"

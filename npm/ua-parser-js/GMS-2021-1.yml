@@ -4,19 +4,15 @@ identifiers:
 - "GHSA-pjwm-rvh2-c87w"
 - "GMS-2021-1"
 package_slug: "npm/ua-parser-js"
-title: "Embedded Malicious Code"
-description: "This package was found to contain malicious code."
-date: "2021-10-22"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2021-10-22"
-affected_range: "=0.7.29||=0.8.0||=1.0.0"
-fixed_versions:
-- "0.7.30"
-- "0.8.1"
-- "1.0.1"
-affected_versions: "Version 0.7.29, version 0.8.0, version 1.0.0"
-not_impacted: "All versions before 0.7.29, all versions after 0.7.29 before 0.8.0,
-  all versions after 0.8.0 before 1.0.0, all versions after 1.0.0"
-solution: "Upgrade to versions 0.7.30, 0.8.1, 1.0.1 or above."
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://us-cert.cisa.gov/ncas/current-activity/2021/10/22/malware-discovered-popular-npm-package-ua-parser-js"
 - "https://github.com/advisories/GHSA-pjwm-rvh2-c87w"

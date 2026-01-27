@@ -3,19 +3,15 @@ identifier: "GHSA-9c48-w39g-hm26"
 identifiers:
 - "GHSA-9c48-w39g-hm26"
 package_slug: "cargo/rsa"
-title: "rsa crate has potential panic on a prime being equal to 1"
-description: "When creating a RSA private key from its components, the construction
-  panics, instead of returning an error, when one of the primes is `1`.\n\nDiscovered
-  by Christian Reitter from [Radically Open Security](https://www.radicallyopensecurity.com/)
-  during a security review for [Proton AG](https://proton.me/)."
-date: "2026-01-06"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2026-01-06"
-affected_range: "<0.9.10"
-fixed_versions:
-- "0.9.10"
-affected_versions: "All versions before 0.9.10"
-not_impacted: "All versions starting from 0.9.10"
-solution: "Upgrade to version 0.9.10 or above."
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/advisories/GHSA-9c48-w39g-hm26"
 - "https://github.com/RustCrypto/RSA/security/advisories/GHSA-9c48-w39g-hm26"

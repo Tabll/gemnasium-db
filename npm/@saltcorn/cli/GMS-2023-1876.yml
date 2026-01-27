@@ -4,23 +4,15 @@ identifiers:
 - "GHSA-wxf3-4fvj-vqqx"
 - "GMS-2023-1876"
 package_slug: "npm/@saltcorn/cli"
-title: "Unsafe plugins can be installed via pack import by tenant admins"
-description: "### Summary\nUnsafe plugins (for instance `sql-list`) can be installed
-  in subdomain tenants via pack import even if unsafe plugin installation for tenants
-  is disables\n\n### Details\nI have an example\nhttps://bot20230704.saltcorn.com/view/all_plugins\nIt's
-  publicly accessible (but has not so secure values except list of tenants).\nBut
-  using this mech one can read **any** data from other tenants.\n\n### Impact\nAll
-  tenants of installation (i.e. `saltcorn.com`), can be compromised from tenant user
-  has admin access. If an untrusted user has admin rights to a tenant instance, they
-  will be able to install a plug-in that can access information from other tenants"
-date: "2023-09-06"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2023-07-27"
-affected_range: "<1.0"
-fixed_versions:
-- "1.0"
-affected_versions: "All versions before 1.0"
-not_impacted: "All versions starting from 1.0"
-solution: "Upgrade to version 1.0 or above."
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/saltcorn/saltcorn/security/advisories/GHSA-wxf3-4fvj-vqqx"
 - "https://github.com/advisories/GHSA-wxf3-4fvj-vqqx"

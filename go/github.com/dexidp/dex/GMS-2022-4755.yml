@@ -5,24 +5,15 @@ identifiers:
 - "GMS-2022-4755"
 - "CVE-2022-39222"
 package_slug: "go/github.com/dexidp/dex"
-title: "Duplicate of ./go/github.com/dexidp/dex/CVE-2022-39222.yml"
-description: "Dex instances with public clients (and by extension, clients accepting
-  tokens issued by those Dex instances) are affected by this vulnerability. An attacker
-  can exploit this vulnerability by making a victim navigate to a malicious website
-  and guiding them through the OIDC flow, stealing the OAuth authorization code in
-  the process. The authorization code then can be exchanged by the attacker for a
-  token, gaining access to applications accepting that token. Patches: Update to 2.35.0.
-  Workarounds: No known workarounds (without impacting behavior) for existing versions.
-  Disabling public clients is the only way to defend against attacks exploiting this
-  vulnerability."
-date: "2022-10-03"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2022-10-03"
 affected_range: "<0"
-fixed_versions:
-- "v2.35.0"
-affected_versions: "All versions up to 2.34.0"
-not_impacted: "All versions after 2.34.0"
-solution: "Upgrade to version 2.35.0 or above."
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/dexidp/dex/security/advisories/GHSA-vh7g-p26c-j2cw"
 - "https://github.com/dexidp/dex/releases/tag/v2.35.0"
@@ -31,16 +22,3 @@ uuid: "7f814fb6-c8cb-4ad8-a583-0b10b35750ef"
 cwe_ids:
 - "CWE-1035"
 - "CWE-937"
-versions:
-- number: "v2.34.0"
-  commit:
-    tags:
-    - "v2.34.0"
-    sha: "7b589ba3a7b169052a48e70a123ae9c9b48398c6"
-    timestamp: "20220914113842"
-- number: "v2.35.0"
-  commit:
-    tags:
-    - "v2.35.0"
-    sha: "488db3253cbb5918fa3d134035beb422c74f1a6e"
-    timestamp: "20221003101923"

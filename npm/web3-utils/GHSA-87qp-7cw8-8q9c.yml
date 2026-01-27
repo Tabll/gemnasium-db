@@ -3,23 +3,15 @@ identifier: "GHSA-87qp-7cw8-8q9c"
 identifiers:
 - "GHSA-87qp-7cw8-8q9c"
 package_slug: "npm/web3-utils"
-title: "Duplicate Advisory: web3-utils Prototype Pollution vulnerability"
-description: "## Duplicate Advisory\nThis advisory has been withdrawn because it is
-  a duplicate of GHSA-2g4c-8fpm-c46v. This link is maintained to preserve external
-  references.\n\n## Original Description\nVersions of the package web3-utils before
-  4.2.1 are vulnerable to Prototype Pollution via the utility functions format and
-  mergeDeep, due to insecure recursive merge.\nAn attacker can manipulate an object's
-  prototype, potentially leading to the alteration of the behavior of all objects
-  inheriting from the affected prototype by passing specially crafted input to these
-  functions."
-date: "2024-03-27"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2024-03-25"
-affected_range: "<4.2.1"
-fixed_versions:
-- "4.2.1"
-affected_versions: "All versions before 4.2.1"
-not_impacted: "All versions starting from 4.2.1"
-solution: "Upgrade to version 4.2.1 or above."
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/advisories/GHSA-87qp-7cw8-8q9c"
 - "https://nvd.nist.gov/vuln/detail/CVE-2024-21505"

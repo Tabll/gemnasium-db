@@ -3,18 +3,15 @@ identifier: "GHSA-cxm3-wv7p-598c"
 identifiers:
 - "GHSA-cxm3-wv7p-598c"
 package_slug: "npm/@nx/node"
-title: "Malicious versions of Nx were published"
-description: "Malicious versions of the [`nx` package](https://www.npmjs.com/package/nx),
-  as well as some supporting plugin packages, were published to npm, containing code
-  that scans the file system, collects credentials, and posts them to GitHub as a
-  repo under user's accounts."
-date: "2025-09-01"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2025-08-27"
-affected_range: "=21.5.0||=20.9.0"
+affected_range: "<0"
 fixed_versions: []
-affected_versions: "Version 20.9.0, version 21.5.0"
-not_impacted: ""
-solution: "Unfortunately, there is no solution available yet."
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/advisories/GHSA-cxm3-wv7p-598c"
 - "https://github.com/nrwl/nx/security/advisories/GHSA-cxm3-wv7p-598c"

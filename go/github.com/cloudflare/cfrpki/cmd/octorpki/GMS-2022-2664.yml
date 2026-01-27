@@ -5,16 +5,15 @@ identifiers:
 - "GHSA-cqh2-vc2f-q4fh"
 - "GMS-2022-2664"
 package_slug: "go/github.com/cloudflare/cfrpki/cmd/octorpki"
-title: "Relative Path Traversal"
-description: "Relative Path Traversal in github.com/cloudflare/cfrpki/cmd/octorpki."
-date: "2023-01-12"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2022-06-25"
-affected_range: "<v1.4.3"
-fixed_versions:
-- "v1.4.3"
-affected_versions: "All versions before 1.4.3"
-not_impacted: "All versions starting from 1.4.3"
-solution: "Upgrade to version 1.4.3 or above."
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/cloudflare/cfrpki/security/advisories/GHSA-3jhm-87m6-x959"
 - "https://github.com/cloudflare/cfrpki/security/advisories/GHSA-cqh2-vc2f-q4fh"
@@ -26,10 +25,3 @@ cwe_ids:
 - "CWE-1035"
 - "CWE-352"
 - "CWE-937"
-versions:
-- number: "v1.4.3"
-  commit:
-    tags:
-    - "v1.4.3"
-    sha: "828f93020875c2a3fdd222b70e4756df0ef4e847"
-    timestamp: "20220214191058"

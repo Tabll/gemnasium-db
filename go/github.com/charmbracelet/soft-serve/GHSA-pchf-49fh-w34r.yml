@@ -3,21 +3,15 @@ identifier: "GHSA-pchf-49fh-w34r"
 identifiers:
 - "GHSA-pchf-49fh-w34r"
 package_slug: "go/github.com/charmbracelet/soft-serve"
-title: "Soft Serve Affected by an Authentication Bypass"
-description: "_What kind of vulnerability is it? Who is impacted?_\n\nThis issue impacts
-  every Soft Serve instance.\n\nA critical authentication bypass allows an attacker
-  to impersonate any user (including Admin) by \"offering\" the victim's public key
-  during the SSH handshake before authenticating with their own valid key. This occurs
-  because the user identity is stored in the session context during the \"offer\"
-  phase and is not cleared if that specific authentication attempt fails."
-date: "2026-01-21"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2026-01-21"
-affected_range: "<0.11.3"
-fixed_versions:
-- "0.11.3"
-affected_versions: "All versions before 0.11.3"
-not_impacted: "All versions starting from 0.11.3"
-solution: "Upgrade to version 0.11.3 or above."
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/advisories/GHSA-pchf-49fh-w34r"
 - "https://github.com/charmbracelet/soft-serve/security/advisories/GHSA-pchf-49fh-w34r"

@@ -5,28 +5,15 @@ identifiers:
 - "GMS-2022-6369"
 - "CVE-2022-39386"
 package_slug: "npm/@fastify/websocket"
-title: "Duplicate of ./npm/@fastify/websocket/CVE-2022-39386.yml"
-description: "### Impact\n\nAny application using @fastify/websocket could crash if
-  a specific, malformed packet is sent. \n\nAll versions of fastify-websocket are
-  also impacted. That module is deprecated, so it will not be patched.\n\n### Patches\n\nThis
-  has been patched in v7.1.1 (fastify v4) and v5.0.1 (fastify v3).\n\n### Workarounds\n\nNo
-  known workaround is available. However, it should be possible to attach the error
-  handler manually.\nThe recommended path is upgrading to the patched versions.\n\n##
-  Credits\n\n[marcolanaro](https://github.com/marcolanaro) for finding and patching
-  this vulnerability\n\n### For more information\n\nIf you have any questions or comments
-  about this advisory:\n* Open an issue in [@fastify/websocket](https://github.com/fastify/fastify-websocket)\n*
-  Email us at [hello@matteocollina.com](mailto:hello@matteocollina.com)\n"
-date: "2022-11-07"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2022-11-07"
 affected_range: "<0"
-fixed_versions:
-- "5.0.1"
-- "7.1.1"
-affected_versions: "All versions starting from 5.0.0 before 5.0.1, all versions starting
-  from 6.0.0 before 7.1.1"
-not_impacted: "All versions before 5.0.0, all versions starting from 5.0.1 before
-  6.0.0, all versions starting from 7.1.1"
-solution: "Upgrade to versions 5.0.1, 7.1.1 or above."
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/fastify/fastify-websocket/security/advisories/GHSA-4pcg-wr6c-h9cq"
 - "https://github.com/fastify/fastify-websocket/releases/tag/v5.0.1"

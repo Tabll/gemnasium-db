@@ -3,20 +3,15 @@ identifier: "GHSA-xr3m-6gq6-22cg"
 identifiers:
 - "GHSA-xr3m-6gq6-22cg"
 package_slug: "packagist/pimcore/pimcore"
-title: "Pimcore Authenticated Stored Cross-Site Scripting (XSS) Via Search Document"
-description: "A Stored Cross-Site Scripting (XSS) vulnerability in PIMCORE allows
-  remote attackers to inject arbitrary web script or HTML via the PDF upload functionality.
-  This can result in the execution of malicious scripts in the context of the user's
-  browser when the PDF is viewed, leading to potential session hijacking, defacement
-  of web pages, or unauthorized access to sensitive information."
-date: "2025-01-29"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2025-01-28"
-affected_range: ">=11.4.2 <11.5.3"
-fixed_versions:
-- "11.5.3"
-affected_versions: "All versions starting from 11.4.2 before 11.5.3"
-not_impacted: "All versions before 11.4.2, all versions starting from 11.5.3"
-solution: "Upgrade to version 11.5.3 or above."
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/advisories/GHSA-xr3m-6gq6-22cg"
 - "https://github.com/pimcore/pimcore/security/advisories/GHSA-xr3m-6gq6-22cg"

@@ -5,19 +5,15 @@ identifiers:
 - "GMS-2022-6953"
 - "CVE-2022-41919"
 package_slug: "npm/fastify"
-title: "Duplicate of ./npm/fastify/CVE-2022-41919.yml"
-description: "Cross-Site Request Forgery (CSRF) in fastify."
-date: "2022-11-21"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2022-11-21"
 affected_range: "<0"
-fixed_versions:
-- "3.29.4"
-- "4.10.2"
-affected_versions: "All versions starting from 3.0.0 before 3.29.4, all versions starting
-  from 4.0.0 before 4.10.2"
-not_impacted: "All versions before 3.0.0, all versions starting from 3.29.4 before
-  4.0.0, all versions starting from 4.10.2"
-solution: "Upgrade to versions 3.29.4, 4.10.2 or above."
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/fastify/fastify/security/advisories/GHSA-3fjj-p79j-c9hh"
 - "https://github.com/fastify/fastify/commit/62dde76f1f7aca76e38625fe8d983761f26e6fc9"

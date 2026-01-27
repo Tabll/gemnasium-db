@@ -5,17 +5,15 @@ identifiers:
 - "GMS-2022-4013"
 - "CVE-2022-31020"
 package_slug: "pypi/indy-node"
-title: "Duplicate of ./pypi/indy-node/CVE-2022-31020.yml"
-description: "Improper Neutralization of Special Elements used in an OS Command ('OS
-  Command Injection') in indy-node."
-date: "2022-09-02"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2022-09-02"
 affected_range: "<0"
-fixed_versions:
-- "1.12.5"
-affected_versions: "All versions up to 1.12.4"
-not_impacted: "All versions after 1.12.4"
-solution: "Upgrade to version 1.12.5 or above."
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/hyperledger/indy-node/security/advisories/GHSA-r6v9-p59m-gj2p"
 - "https://github.com/hyperledger/indy-node/commit/fe507474f77084faef4539101e2bbb4d508a97f5"

@@ -5,28 +5,15 @@ identifiers:
 - "GMS-2022-2518"
 - "CVE-2022-31089"
 package_slug: "npm/parse-server"
-title: "Duplicate of ./npm/parse-server/CVE-2022-31089.yml"
-description: "### Impact\nCertain types of invalid files requests are not handled
-  properly and can crash the server. If you are running multiple Parse Server instances
-  in a cluster, the availability impact may be low; if you are running Parse Server
-  as a single instance without redundancy, the availability impact may be high.\n\n###
-  Patches\nTo prevent this, invalid requests are now properly handled.\n\n### Workarounds\nNone\n\n###
-  References\n- https://github.com/parse-community/parse-server/security/advisories/GHSA-xw6g-jjvf-wwf9\n-
-  https://github.com/parse-community/parse-server\n\n### For more information\n- For
-  questions or comments about this vulnerability visit our [community forum](http://community.parseplatform.org/)
-  or [community chat](http://chat.parseplatform.org/)\n- Report other vulnerabilities
-  at [report.parseplatform.org](https://report.parseplatform.org/)\n"
-date: "2022-06-20"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
 pubdate: "2022-06-20"
 affected_range: "<0"
-fixed_versions:
-- "4.10.12"
-- "5.2.3"
-affected_versions: "All versions before 4.10.12, all versions starting from 5.0.0
-  before 5.2.3"
-not_impacted: "All versions starting from 4.10.12 before 5.0.0, all versions starting
-  from 5.2.3"
-solution: "Upgrade to versions 4.10.12, 5.2.3 or above."
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
 urls:
 - "https://github.com/parse-community/parse-server/security/advisories/GHSA-xw6g-jjvf-wwf9"
 - "https://github.com/advisories/GHSA-xw6g-jjvf-wwf9"
