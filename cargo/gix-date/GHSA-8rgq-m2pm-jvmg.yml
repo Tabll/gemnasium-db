@@ -1,0 +1,37 @@
+---
+identifier: "GHSA-8rgq-m2pm-jvmg"
+identifiers:
+- "GHSA-8rgq-m2pm-jvmg"
+package_slug: "cargo/gix-date"
+title: "Duplicate Advisory: gix-date can create non-utf8 string with `TimeBuf::as_str`"
+description: "### Duplicate Advisory\n\nThis advisory has been withdrawn because it
+  is a duplicate of GHSA-6mw6-mj76-grwc. This link is maintained to preserve external
+  references.\n\n### Original Description\nA flaw was found in gix-date. The `gix_date::parse::TimeBuf::as_str`
+  function can generate strings containing invalid non-UTF8 characters. This issue
+  violates the internal safety invariants of the `TimeBuf` component, leading to undefined
+  behavior when these malformed strings are subsequently processed. This could potentially
+  result in application instability or other unforeseen consequences."
+date: "2026-01-27"
+pubdate: "2026-01-26"
+affected_range: "<0.12.0"
+fixed_versions:
+- "0.12.0"
+affected_versions: "All versions before 0.12.0"
+not_impacted: "All versions starting from 0.12.0"
+solution: "Upgrade to version 0.12.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-8rgq-m2pm-jvmg"
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-0810"
+- "https://github.com/GitoxideLabs/gitoxide/issues/2305"
+- "https://access.redhat.com/security/cve/CVE-2026-0810"
+- "https://bugzilla.redhat.com/show_bug.cgi?id=2427057"
+- "https://crates.io/crates/gix-date"
+- "https://github.com/GitoxideLabs/gitoxide"
+- "https://rustsec.org/advisories/RUSTSEC-2025-0140.html"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:H/SC:N/SI:N/SA:N"
+uuid: "db45102c-b8be-4e41-8c1b-46e2e2058d5d"
+cwe_ids:
+- "CWE-787"
+- "CWE-937"
+- "CWE-1035"

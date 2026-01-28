@@ -12,13 +12,13 @@ description: "**Summary**\nAn authenticated, low-privilege user (able to create/
   executes when any admin views the builder/integration screens.\n\n**Affected Product**\n-
   Ecosystem: Packagist (Craft CMS plugin)\n- Package: solspace/craft-freeform\n- Version:
   <= 5.14.6 (latest observed). Likely all 5.x until patched."
-date: "2026-01-22"
+date: "2026-01-27"
 pubdate: "2026-01-22"
-affected_range: "<5.14.7"
+affected_range: ">=5.0.0 <5.14.7"
 fixed_versions:
 - "5.14.7"
-affected_versions: "All versions before 5.14.7"
-not_impacted: "All versions starting from 5.14.7"
+affected_versions: "All versions starting from 5.0.0 before 5.14.7"
+not_impacted: "All versions before 5.0.0, all versions starting from 5.14.7"
 solution: "Upgrade to version 5.14.7 or above."
 urls:
 - "https://github.com/advisories/GHSA-jp3q-wwp3-pwv9"
