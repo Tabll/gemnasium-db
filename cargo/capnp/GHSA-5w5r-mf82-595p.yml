@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-5w5r-mf82-595p"
+identifiers:
+- "GHSA-5w5r-mf82-595p"
+package_slug: "cargo/capnp"
+title: "Cap'n Proto has Undefined Behavior in constant::Reader and StructSchema"
+description: "The safe API functions `constant::Reader::get` and `StructSchema::new`
+  rely on `PointerReader::get_root_unchecked`, which can cause undefined behavior
+  (UB) by constructing arbitrary words or schemas."
+date: "2026-01-28"
+pubdate: "2026-01-28"
+affected_range: "<0.24.0"
+fixed_versions:
+- "0.24.0"
+affected_versions: "All versions before 0.24.0"
+not_impacted: "All versions starting from 0.24.0"
+solution: "Upgrade to version 0.24.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-5w5r-mf82-595p"
+- "https://github.com/capnproto/capnproto-rust/issues/605"
+- "https://github.com/capnproto/capnproto-rust/commit/7b981f4c75a975c80444cd38729bcdf12bf3eabf"
+- "https://github.com/capnproto/capnproto-rust/commit/e3aeec213e6d1b30a182bf61682a370f20d8a02c"
+- "https://github.com/capnproto/capnproto-rust"
+- "https://rustsec.org/advisories/RUSTSEC-2025-0143.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+uuid: "5f5f231f-0c78-4a5d-a960-96083f80aba9"
+cwe_ids:
+- "CWE-758"
+- "CWE-937"
+- "CWE-1035"

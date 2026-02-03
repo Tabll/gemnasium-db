@@ -5,7 +5,7 @@ identifiers:
 package_slug: "npm/@envelop/graphql-modules"
 title: "@envelop/graphql-modules has a Race Condition vulnerability"
 description: "Context race condition when using `useGraphQLModules` plugin"
-date: "2026-01-21"
+date: "2026-01-29"
 pubdate: "2026-01-21"
 affected_range: "<9.1.0"
 fixed_versions:

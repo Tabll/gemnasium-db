@@ -1,0 +1,26 @@
+---
+identifier: "GHSA-h5qv-qjv4-pc5m"
+identifiers:
+- "GHSA-h5qv-qjv4-pc5m"
+package_slug: "pypi/dfir-unfurl"
+title: "Unfurl's unbounded zlib decompression allows decompression bomb DoS"
+description: "The compressed data parser uses `zlib.decompress()` without a maximum
+  output size. A small, highly compressed payload can expand to a very large output,
+  causing memory exhaustion and denial of service."
+date: "2026-01-29"
+pubdate: "2026-01-29"
+affected_range: "<=20250810"
+fixed_versions: []
+affected_versions: "All versions up to 20250810"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-h5qv-qjv4-pc5m"
+- "https://github.com/obsidianforensics/unfurl/security/advisories/GHSA-h5qv-qjv4-pc5m"
+- "https://github.com/obsidianforensics/unfurl"
+uuid: "ed7d9f4d-d4e8-4515-8dea-b2b9300d7725"
+cwe_ids:
+- "CWE-400"
+- "CWE-409"
+- "CWE-937"
+- "CWE-1035"

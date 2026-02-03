@@ -1,0 +1,59 @@
+---
+identifier: "GHSA-h25m-26qc-wcjf"
+identifiers:
+- "GHSA-h25m-26qc-wcjf"
+package_slug: "npm/next"
+title: "Next.js HTTP request deserialization can lead to DoS when using insecure React
+  Server Components"
+description: "A vulnerability affects certain React Server Components packages for
+  versions 19.0.x, 19.1.x, and 19.2.x and frameworks that use the affected packages,
+  including Next.js 13.x, 14.x, 15.x, and 16.x using the App Router. The issue is
+  tracked upstream as [CVE-2026-23864](https://github.com/facebook/react/security/advisories/GHSA-83fc-fqcc-2hmg).\n\nA
+  specially crafted HTTP request can be sent to any App Router Server Function endpoint
+  that, when deserialized, may trigger excessive CPU usage, out-of-memory exceptions,
+  or server crashes. This can result in denial of service in unpatched environments."
+date: "2026-01-28"
+pubdate: "2026-01-28"
+affected_range: ">=13.0.0 <15.0.8||>=15.1.1-canary.0 <15.1.12||>=15.2.0-canary.0 <15.2.9||>=15.3.0-canary.0
+  <15.3.9||>=15.4.0-canary.0 <15.4.11||>=15.5.1-canary.0 <15.5.10||>=15.6.0-canary.0
+  <15.6.0-canary.61||>=16.0.0-beta.0 <16.0.11||>=16.1.0-canary.0 <16.1.5"
+fixed_versions:
+- "15.0.8"
+- "15.1.12"
+- "15.2.9"
+- "15.3.9"
+- "15.4.11"
+- "15.5.10"
+- "15.6.0-canary.61"
+- "16.0.11"
+- "16.1.5"
+affected_versions: "All versions starting from 13.0.0 before 15.0.8, all versions
+  starting from 15.1.1-canary.0 before 15.1.12, all versions starting from 15.2.0-canary.0
+  before 15.2.9, all versions starting from 15.3.0-canary.0 before 15.3.9, all versions
+  starting from 15.4.0-canary.0 before 15.4.11, all versions starting from 15.5.1-canary.0
+  before 15.5.10, all versions starting from 15.6.0-canary.0 before 15.6.0-canary.61,
+  all versions starting from 16.0.0-beta.0 before 16.0.11, all versions starting from
+  16.1.0-canary.0 before 16.1.5"
+not_impacted: "All versions before 13.0.0, all versions starting from 15.0.8 before
+  15.1.1-canary.0, all versions starting from 15.1.12 before 15.2.0-canary.0, all
+  versions starting from 15.2.9 before 15.3.0-canary.0, all versions starting from
+  15.3.9 before 15.4.0-canary.0, all versions starting from 15.4.11 before 15.5.1-canary.0,
+  all versions starting from 15.5.10 before 15.6.0-canary.0, all versions starting
+  from 15.6.0-canary.61 before 16.0.0-beta.0, all versions starting from 16.0.11 before
+  16.1.0-canary.0, all versions starting from 16.1.5"
+solution: "Upgrade to versions 15.0.8, 15.1.12, 15.2.9, 15.3.9, 15.4.11, 15.5.10,
+  15.6.0-canary.61, 16.0.11, 16.1.5 or above."
+urls:
+- "https://github.com/advisories/GHSA-h25m-26qc-wcjf"
+- "https://github.com/facebook/react/security/advisories/GHSA-83fc-fqcc-2hmg"
+- "https://github.com/vercel/next.js/security/advisories/GHSA-h25m-26qc-wcjf"
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-23864"
+- "https://github.com/vercel/next.js"
+- "https://vercel.com/changelog/summary-of-cve-2026-23864"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "c4f29aaf-ccd7-4361-8c87-a6b5fae9c079"
+cwe_ids:
+- "CWE-400"
+- "CWE-502"
+- "CWE-937"
+- "CWE-1035"

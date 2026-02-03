@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-9m3x-qqw2-h32h"
+identifiers:
+- "GHSA-9m3x-qqw2-h32h"
+package_slug: "pypi/picklescan"
+title: "picklescan missing detection by simple obfuscation of a `builtins.eval` call"
+description: "An unsafe deserialization vulnerability allows any unauthenticated user
+  to execute arbitrary code on the host loading a pickle payload from an untrusted
+  source."
+date: "2026-02-02"
+pubdate: "2026-02-02"
+affected_range: "<1.0.1"
+fixed_versions:
+- "1.0.1"
+affected_versions: "All versions before 1.0.1"
+not_impacted: "All versions starting from 1.0.1"
+solution: "Upgrade to version 1.0.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-9m3x-qqw2-h32h"
+- "https://github.com/mmaitre314/picklescan/security/advisories/GHSA-9m3x-qqw2-h32h"
+- "https://github.com/mmaitre314/picklescan/pull/59"
+- "https://github.com/mmaitre314/picklescan/commit/173c8f2a869ea9b69b543477525ec70611c3c6f4"
+- "https://github.com/mmaitre314/picklescan"
+- "https://github.com/mmaitre314/picklescan/releases/tag/v1.0.1"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+uuid: "3c32cf59-ebf8-49ee-acb4-bb22e68dd609"
+cwe_ids:
+- "CWE-502"
+- "CWE-937"
+- "CWE-1035"

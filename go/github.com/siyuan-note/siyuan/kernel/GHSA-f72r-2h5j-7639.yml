@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-f72r-2h5j-7639"
+identifiers:
+- "GHSA-f72r-2h5j-7639"
+package_slug: "go/github.com/siyuan-note/siyuan/kernel"
+title: "SiYuan File Read API Case Sensitivity Bypass can Lead to Path Traversal"
+description: "This is a path traversal/bypass vulnerability where case sensitivity
+  differences between file systems can be exploited to access protected configuration
+  files through the file read API."
+date: "2026-01-28"
+pubdate: "2026-01-28"
+affected_range: "<=0.0.0-20260126094835-d5d10dd41b0c"
+fixed_versions: []
+affected_versions: "All versions up to 0.0.0-20260126094835-d5d10dd41b0c"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-f72r-2h5j-7639"
+- "https://github.com/siyuan-note/siyuan/security/advisories/GHSA-f72r-2h5j-7639"
+- "https://github.com/siyuan-note/siyuan/commit/1f02650b3892d2ea3896242dd2422c30bda55e11"
+- "https://github.com/siyuan-note/siyuan"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N"
+uuid: "27efba25-1626-4e44-b376-c89a39b20ea9"
+cwe_ids:
+- "CWE-178"
+- "CWE-22"
+- "CWE-426"
+- "CWE-937"
+- "CWE-1035"

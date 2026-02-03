@@ -26,7 +26,7 @@ description: "## Duplicate Advisory\nThis advisory has been withdrawn because it
   to upgrade to Wrangler v4.59.1 or higher.\n  *  Wrangler v3 users are requested
   to upgrade to Wrangler v3.114.17 or higher.\n  *  Users on Wrangler v2 (EOL) should
   upgrade to a supported major version."
-date: "2026-01-21"
+date: "2026-01-29"
 pubdate: "2026-01-21"
 affected_range: ">=2.0.15"
 fixed_versions: []

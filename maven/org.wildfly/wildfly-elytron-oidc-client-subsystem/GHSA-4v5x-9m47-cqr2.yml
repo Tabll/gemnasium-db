@@ -3,19 +3,33 @@ identifier: "GHSA-4v5x-9m47-cqr2"
 identifiers:
 - "GHSA-4v5x-9m47-cqr2"
 package_slug: "maven/org.wildfly/wildfly-elytron-oidc-client-subsystem"
-title: "Duplicate"
-description: "This advisory duplicates another."
-date: "2026-01-26"
+title: "Duplicate Advisory: WildFly Elytron OpenID Connect Client Extension authorization
+  code injection attack"
+description: "# Duplicate Advisory\nThis advisory has been withdrawn because it is
+  a duplicate of [GHSA-5565-3c98-g6jc](https://advisory-inbox.githubapp.com/advisory_reviews/GHSA-5565-3c98-g6jc).
+  This link is maintained to preserve external references.\n\n# Original Description\nA
+  vulnerability was found in OIDC-Client. When using the RH SSO OIDC adapter with
+  EAP 7.x or when using the elytron-oidc-client subsystem with EAP 8.x, authorization
+  code injection attacks can occur, allowing an attacker to inject a stolen authorization
+  code into the attacker's own session with the client with a victim's identity. This
+  is usually done with a Man-in-the-Middle (MitM) or phishing attack."
+date: "2026-01-29"
 pubdate: "2024-12-09"
-affected_range: "(,0)"
+affected_range: "[,34.0.1.Final]"
 fixed_versions: []
-affected_versions: "None"
-not_impacted: "N/A"
-solution: "N/A"
+affected_versions: "All versions up to 34.0.1.Final"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
 urls:
 - "https://github.com/advisories/GHSA-4v5x-9m47-cqr2"
 - "https://nvd.nist.gov/vuln/detail/CVE-2024-12369"
+- "https://github.com/wildfly-security/wildfly-elytron/pull/2253"
+- "https://github.com/wildfly-security/wildfly-elytron/pull/2261"
+- "https://github.com/wildfly-security/wildfly-elytron/commit/5ac5e6bbcba58883b3cebb2ddbcec4de140c5ceb"
+- "https://github.com/wildfly-security/wildfly-elytron/commit/d7754f5a6a91ceb0f4dbbbfe301991f6a55404cb"
 - "https://access.redhat.com/errata/RHSA-2025:3989"
+- "https://access.redhat.com/errata/RHSA-2025:3990"
+- "https://access.redhat.com/errata/RHSA-2025:3992"
 - "https://access.redhat.com/security/cve/CVE-2024-12369"
 - "https://bugzilla.redhat.com/show_bug.cgi?id=2331178"
 - "https://github.com/wildfly/wildfly"
