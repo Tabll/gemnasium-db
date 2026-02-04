@@ -1,0 +1,37 @@
+---
+identifier: "GHSA-89p3-9j8c-fqh4"
+identifiers:
+- "GHSA-89p3-9j8c-fqh4"
+package_slug: "packagist/ezsystems/ezpublish-kernel"
+title: "Duplicate Advisory: User account enumeration in eZ Publish Ibexa Kernel"
+description: "## Duplicate Advisory\nThis advisory has been withdrawn because it is
+  a duplicate of GHSA-gmrf-99gw-vvwj. This link is maintained to preserve external
+  references.\n\n## Original Description\n\nThis Security Advisory is about a vulnerability
+  in eZ Platform v1.13, v2.5, and v3.2, and in Ibexa DXP and Ibexa Open Source v3.3.
+  The /user/sessions endpoint can let an attacker detect if a given username or email
+  refers to a valid account. This can be detected through differences in the response
+  data or response time of certain requests. The fix ensures neither attack is possible.
+  The fix is distributed via Composer."
+date: "2026-02-03"
+pubdate: "2023-03-12"
+affected_range: ">=6.13.0 <6.13.8.1||>=7.5.0 <7.5.15.1"
+fixed_versions:
+- "6.13.8.1"
+- "7.5.15.1"
+affected_versions: "All versions starting from 6.13.0 before 6.13.8.1, all versions
+  starting from 7.5.0 before 7.5.15.1"
+not_impacted: "All versions before 6.13.0, all versions starting from 6.13.8.1 before
+  7.5.0, all versions starting from 7.5.15.1"
+solution: "Upgrade to versions 6.13.8.1, 7.5.15.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-89p3-9j8c-fqh4"
+- "https://github.com/ezsystems/ezpublish-kernel/security/advisories/GHSA-gmrf-99gw-vvwj"
+- "https://nvd.nist.gov/vuln/detail/CVE-2021-46876"
+- "https://github.com/ezsystems/ezpublish-kernel/commit/b496f073c3f03707d3531a6941dc098b84e3cbed"
+- "https://github.com/ezsystems/ezpublish-kernel"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+uuid: "f46b1a4b-0927-4dcd-8386-38ff000e8637"
+cwe_ids:
+- "CWE-203"
+- "CWE-937"
+- "CWE-1035"

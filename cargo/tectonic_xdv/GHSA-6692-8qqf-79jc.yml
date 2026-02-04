@@ -3,15 +3,18 @@ identifier: "GHSA-6692-8qqf-79jc"
 identifiers:
 - "GHSA-6692-8qqf-79jc"
 package_slug: "cargo/tectonic_xdv"
-title: "`Read` on uninitialized buffer may cause UB ('tectonic_xdv' crate)"
-description: "Affected versions of this crate passes an uninitialized buffer to a
-  user-provided `Read` implementation.\n\nArbitrary `Read` implementations can read
-  from the uninitialized buffer (memory exposure) and also can return incorrect number
-  of bytes written to the buffer. Reading from uninitialized memory produces undefined
-  values that can quickly invoke undefined behavior.\n\nThe problem was fixed in commit
-  `cdff034` by zero-initializing the buffer before passing it to a user-provided `Read`
-  implementation."
-date: "2022-06-17"
+title: "Duplicate Advisory: `Read` on uninitialized buffer may cause UB ('tectonic_xdv'
+  crate)"
+description: "## Duplicate Advisory\nThis advisory has been withdrawn because it is
+  a duplicate of GHSA-qwvx-c8j7-5g75. This link is maintained to preserve external
+  references.\n\n## Original Description\nAffected versions of this crate passes an
+  uninitialized buffer to a user-provided `Read` implementation.\n\nArbitrary `Read`
+  implementations can read from the uninitialized buffer (memory exposure) and also
+  can return incorrect number of bytes written to the buffer. Reading from uninitialized
+  memory produces undefined values that can quickly invoke undefined behavior.\n\nThe
+  problem was fixed in commit `cdff034` by zero-initializing the buffer before passing
+  it to a user-provided `Read` implementation."
+date: "2026-02-03"
 pubdate: "2022-06-17"
 affected_range: "<0.1.12"
 fixed_versions:

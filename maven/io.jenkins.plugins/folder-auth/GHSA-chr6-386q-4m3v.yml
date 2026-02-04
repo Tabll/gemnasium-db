@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-chr6-386q-4m3v"
+identifiers:
+- "GHSA-chr6-386q-4m3v"
+package_slug: "maven/io.jenkins.plugins/folder-auth"
+title: "Duplicate Advisory: Stored Cross-site Scripting vulnerability in Jenkins Folder-based
+  Authorization Strategy Plugin"
+description: "## Duplicate Advisory\nThis advisory has been withdrawn because it is
+  a duplicate of GHSA-5vjc-qx43-r747. This link is maintained to preserve external
+  references.\n\n## Original Description\nJenkins Folder-based Authorization Strategy
+  Plugin 1.3 and earlier does not escape the names of roles shown on the configuration
+  form, resulting in a stored cross-site scripting (XSS) vulnerability exploitable
+  by attackers with Overall/Administer permission."
+date: "2026-02-03"
+pubdate: "2022-03-16"
+affected_range: "[,1.4)"
+fixed_versions:
+- "1.4"
+affected_versions: "All versions before 1.4"
+not_impacted: "All versions starting from 1.4"
+solution: "Upgrade to version 1.4 or above."
+urls:
+- "https://github.com/advisories/GHSA-chr6-386q-4m3v"
+- "https://nvd.nist.gov/vuln/detail/CVE-2022-27200"
+- "https://github.com/jenkinsci/folder-auth-plugin/commit/085df580c22902820ebba77b1201fabff098efc4"
+- "https://github.com/jenkinsci/folder-auth-plugin"
+- "https://www.jenkins.io/security/advisory/2022-03-15/#SECURITY-2646"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:H"
+uuid: "e8d0a348-c9ce-4f03-a698-0becda89c631"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

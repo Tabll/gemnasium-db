@@ -13,7 +13,7 @@ description: "When installing module packages from attacker-controlled sources, 
   running on the same computer as OpenTofu may also have their performance degraded
   due to the high CPU usage.\n\nThese vulnerabilities **do not** permit arbitrary
   code execution or allow disclosure of confidential information."
-date: "2026-01-21"
+date: "2026-02-03"
 pubdate: "2026-01-21"
 affected_range: "<1.11.4"
 fixed_versions:

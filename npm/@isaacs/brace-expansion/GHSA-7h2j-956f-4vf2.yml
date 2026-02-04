@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-7h2j-956f-4vf2"
+identifiers:
+- "GHSA-7h2j-956f-4vf2"
+package_slug: "npm/@isaacs/brace-expansion"
+title: "@isaacs/brace-expansion has Uncontrolled Resource Consumption"
+description: "`@isaacs/brace-expansion` is vulnerable to a Denial of Service (DoS)
+  issue caused by unbounded brace range expansion. When an attacker provides a pattern
+  containing repeated numeric brace ranges, the library attempts to eagerly generate
+  every possible combination synchronously. Because the expansion grows exponentially,
+  even a small input can consume excessive CPU and memory and may crash the Node.js
+  process."
+date: "2026-02-03"
+pubdate: "2026-02-03"
+affected_range: "<5.0.1"
+fixed_versions:
+- "5.0.1"
+affected_versions: "All versions before 5.0.1"
+not_impacted: "All versions starting from 5.0.1"
+solution: "Upgrade to version 5.0.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-7h2j-956f-4vf2"
+- "https://github.com/isaacs/brace-expansion/security/advisories/GHSA-7h2j-956f-4vf2"
+- "https://github.com/isaacs/brace-expansion"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:N/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:H"
+uuid: "5c580c86-c550-45b7-b612-d1b47b26fea7"
+cwe_ids:
+- "CWE-1333"
+- "CWE-937"
+- "CWE-1035"

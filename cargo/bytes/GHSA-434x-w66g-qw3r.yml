@@ -1,0 +1,43 @@
+---
+identifier: "GHSA-434x-w66g-qw3r"
+identifiers:
+- "GHSA-434x-w66g-qw3r"
+package_slug: "cargo/bytes"
+title: "bytes has integer overflow in BytesMut::reserve"
+description: "# Details\n\nIn the unique reclaim path of `BytesMut::reserve`, the
+  condition\n```rs\nif v_capacity >= new_cap + offset\n```\nuses an unchecked addition.
+  When `new_cap + offset` overflows `usize` in release builds, this condition may
+  incorrectly pass, causing `self.cap` to be set to a value that exceeds the actual
+  allocated capacity. Subsequent APIs such as `spare_capacity_mut()` then trust this
+  corrupted `cap` value and may create out-of-bounds slices, leading to UB.\n\nThis
+  behavior is observable in release builds (integer overflow wraps), whereas debug
+  builds panic due to overflow checks.\n\n## PoC\n\n```rs\nuse bytes::*;\n\nfn main()
+  {\n    let mut a = BytesMut::from(&b\"hello world\"[..]);\n    let mut b = a.split_off(5);\n\n
+  \   // Ensure b becomes the unique owner of the backing storage\n    drop(a);\n\n
+  \   // Trigger overflow in new_cap + offset inside reserve\n    b.reserve(usize::MAX
+  - 6);\n\n    // This call relies on the corrupted cap and may cause UB & HBO\n    b.put_u8(b'h');\n}\n```\n\n#
+  Workarounds\n\nUsers of `BytesMut::reserve` are only affected if integer overflow
+  checks are configured to wrap. When integer overflow is configured to panic, this
+  issue does not apply."
+date: "2026-02-03"
+pubdate: "2026-02-03"
+affected_range: ">=1.2.1 <1.11.1"
+fixed_versions:
+- "1.11.1"
+affected_versions: "All versions starting from 1.2.1 before 1.11.1"
+not_impacted: "All versions before 1.2.1, all versions starting from 1.11.1"
+solution: "Upgrade to version 1.11.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-434x-w66g-qw3r"
+- "https://github.com/tokio-rs/bytes/security/advisories/GHSA-434x-w66g-qw3r"
+- "https://github.com/tokio-rs/bytes/commit/d0293b0e35838123c51ca5dfdf468ecafee4398f"
+- "https://github.com/tokio-rs/bytes"
+- "https://github.com/tokio-rs/bytes/releases/tag/v1.11.1"
+- "https://rustsec.org/advisories/RUSTSEC-2026-0007.html"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+cvss_v4: "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+uuid: "f06e4deb-565d-44ba-b7ed-98328fa0c932"
+cwe_ids:
+- "CWE-680"
+- "CWE-937"
+- "CWE-1035"

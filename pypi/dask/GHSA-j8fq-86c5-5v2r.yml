@@ -1,0 +1,40 @@
+---
+identifier: "GHSA-j8fq-86c5-5v2r"
+identifiers:
+- "GHSA-j8fq-86c5-5v2r"
+package_slug: "pypi/dask"
+title: "Duplicate Advisory: Remote code execution in dask"
+description: "## Duplicate Advisory\nThis advisory has been withdrawn because it is
+  a duplicate of GHSA-hwqr-f3v9-hwxr. This link is maintained to preserve external
+  references.\n\n## Original Description\nAn issue was discovered in Dask (aka python-dask)
+  through 2021.09.1. Single machine Dask clusters started with dask.distributed.LocalCluster
+  or dask.distributed.Client (which defaults to using LocalCluster) would mistakenly
+  configure their respective Dask workers to listen on external interfaces (typically
+  with a randomly selected high port) rather than only on localhost. A Dask cluster
+  created using this method (when running on a machine that has an applicable port
+  exposed) could be used by a sophisticated attacker to achieve remote code execution."
+date: "2026-02-03"
+pubdate: "2021-10-27"
+affected_range: "<2021.10.0"
+fixed_versions:
+- "2021.10.0"
+affected_versions: "All versions before 2021.10.0"
+not_impacted: "All versions starting from 2021.10.0"
+solution: "Upgrade to version 2021.10.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-j8fq-86c5-5v2r"
+- "https://github.com/dask/distributed/security/advisories/GHSA-hwqr-f3v9-hwxr"
+- "https://nvd.nist.gov/vuln/detail/CVE-2021-42343"
+- "https://github.com/dask/distributed/pull/5427"
+- "https://github.com/dask/distributed/commit/afce4be8e05fb180e50a9d9e38465f1a82295e1b"
+- "https://docs.dask.org/en/latest/changelog.html"
+- "https://github.com/dask/dask/tags"
+- "https://github.com/dask/distributed"
+- "https://github.com/pypa/advisory-database/tree/main/vulns/dask/PYSEC-2021-387.yaml"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+uuid: "6469ce73-9cfb-4378-86e5-f6fca8640480"
+cwe_ids:
+- "CWE-668"
+- "CWE-937"
+- "CWE-1035"
