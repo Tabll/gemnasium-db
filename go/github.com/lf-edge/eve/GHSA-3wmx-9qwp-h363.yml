@@ -1,0 +1,39 @@
+---
+identifier: "GHSA-3wmx-9qwp-h363"
+identifiers:
+- "GHSA-3wmx-9qwp-h363"
+package_slug: "go/github.com/lf-edge/eve"
+title: "Duplicate Advisory: EVE Doesn't Protect Config Partition with Measured Boot"
+description: "### Duplicate Advisory\nThis advisory has been withdrawn because it
+  is a duplicate of GHSA-wc42-fcjp-v8vq. This link is maintained to preserve external
+  references.\n\n### Original Description\nWhen sealing/unsealing the “vault” key,
+  a list of PCRs is used, which defines which PCRs\nare used.\n\nIn a previous project,
+  CYMOTIVE found that the configuration is not protected by the secure\nboot, and
+  in response Zededa implemented measurements on the config partition that was\nmapped
+  to PCR 13.\n\nIn that process, PCR 13 was added to the list of PCRs that seal/unseal
+  the key.\n\nIn commit “56e589749c6ff58ded862d39535d43253b249acf”, the config partition\nmeasurement
+  moved from PCR 13 to PCR 14, but PCR 14 was not added to the list of\nPCRs that
+  seal/unseal the key.\n\nThis change makes the measurement of PCR 14 effectively
+  redundant as it would not affect\nthe sealing/unsealing of the key.\n\n\n\nAn attacker
+  could modify the config partition without triggering the measured boot, this could\nresult
+  in the attacker gaining full control over the device with full access to the contents
+  of the\nencrypted “vault”"
+date: "2026-02-04"
+pubdate: "2023-09-21"
+affected_range: "<0.0.0-20230519072751-977f42b07fa9"
+fixed_versions:
+- "0.0.0-20230519072751-977f42b07fa9"
+affected_versions: "All versions before 0.0.0-20230519072751-977f42b07fa9"
+not_impacted: "All versions starting from 0.0.0-20230519072751-977f42b07fa9"
+solution: "Upgrade to version 0.0.0-20230519072751-977f42b07fa9 or above."
+urls:
+- "https://github.com/advisories/GHSA-3wmx-9qwp-h363"
+- "https://nvd.nist.gov/vuln/detail/CVE-2023-43634"
+- "https://asrg.io/security-advisories/config-partition-not-protected-by-measured-boot"
+- "https://asrg.io/security-advisories/cve-2023-43634"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H"
+uuid: "c018c4f2-0eb2-426b-9c2b-406c3d67bc2a"
+cwe_ids:
+- "CWE-522"
+- "CWE-937"
+- "CWE-1035"

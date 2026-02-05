@@ -1,0 +1,45 @@
+---
+identifier: "GHSA-h929-fvvp-882c"
+identifiers:
+- "GHSA-h929-fvvp-882c"
+package_slug: "go/github.com/lf-edge/eve"
+title: "Duplicate Advisory: EVE Seals Vault Key With SHA1 PCRs"
+description: "### Duplicate Advisory\nThis advisory has been withdrawn because it
+  is a duplicate of GHSA-wc42-fcjp-v8vq. This link is maintained to preserve external
+  references.\n\n### Original Description\nVault Key Sealed With SHA1 PCRs\n\n\n\n\n\n\nThe
+  measured boot solution implemented in EVE OS leans on a PCR locking mechanism.\n\nDifferent
+  parts of the system update different PCR values in the TPM, resulting in a unique\nvalue
+  for each PCR entry.\n\nThese PCRs are then used in order to seal/unseal a key from
+  the TPM which is used to\nencrypt/decrypt the “vault” directory.\n\nThis “vault”
+  directory is the most sensitive point in the system and as such, its content should\nbe
+  protected.\n\nThis mechanism is noted in Zededa’s documentation as the “measured
+  boot” mechanism,\ndesigned to protect said “vault”.\n\nThe code that’s responsible
+  for generating and fetching the key from the TPM assumes that\nSHA256 PCRs are used
+  in order to seal/unseal the key, and as such their presence is being\nchecked.\n\nThe
+  issue here is that the key is not sealed using SHA256 PCRs, but using SHA1 PCRs.\nThis
+  leads to several issues:\n\n• Machines that have their SHA256 PCRs enabled but SHA1
+  PCRs disabled, as well\nas not sealing their keys at all, meaning the “vault” is
+  not protected from an attacker.\n\n• SHA1 is considered insecure and reduces the
+  complexity level required to unseal the\nkey in machines which have their SHA1 PCRs
+  enabled.\n\n\n\nAn attacker can very easily retrieve the contents of the “vault”,
+  which will effectively render\nthe “measured boot” mechanism meaningless."
+date: "2026-02-04"
+pubdate: "2023-09-20"
+affected_range: "<0.0.0-20230519072751-977f42b07fa9"
+fixed_versions:
+- "0.0.0-20230519072751-977f42b07fa9"
+affected_versions: "All versions before 0.0.0-20230519072751-977f42b07fa9"
+not_impacted: "All versions starting from 0.0.0-20230519072751-977f42b07fa9"
+solution: "Upgrade to version 0.0.0-20230519072751-977f42b07fa9 or above."
+urls:
+- "https://github.com/advisories/GHSA-h929-fvvp-882c"
+- "https://nvd.nist.gov/vuln/detail/CVE-2023-43635"
+- "https://asrg.io/security-advisories/cve-2023-43635"
+- "https://asrg.io/security-advisories/vault-key-sealed-with-sha1-pcrs"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H"
+uuid: "0d1c9769-4511-4792-8c84-16eada684a60"
+cwe_ids:
+- "CWE-327"
+- "CWE-328"
+- "CWE-937"
+- "CWE-1035"

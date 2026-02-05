@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-74vm-8frp-7w68"
+identifiers:
+- "GHSA-74vm-8frp-7w68"
+package_slug: "pypi/epyt-flow"
+title: "EPyT-Flow vulnerable to unsafe JSON deserialization (__type__)"
+description: "EPyT-Flow’s REST API parses attacker-controlled JSON request bodies
+  using a custom deserializer (my_load_from_json) that supports a __type__ field.
+  When __type__ is present, the deserializer dynamically imports an attacker-specified
+  module/class and instantiates it with attacker-supplied arguments. This allows invoking
+  dangerous classes such as subprocess.Popen, which can lead to OS command execution
+  during JSON parsing. This also affects the loading of JSON files."
+date: "2026-02-04"
+pubdate: "2026-02-04"
+affected_range: "<0.16.1"
+fixed_versions:
+- "0.16.1"
+affected_versions: "All versions before 0.16.1"
+not_impacted: "All versions starting from 0.16.1"
+solution: "Upgrade to version 0.16.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-74vm-8frp-7w68"
+- "https://github.com/WaterFutures/EPyT-Flow/security/advisories/GHSA-74vm-8frp-7w68"
+- "https://github.com/WaterFutures/EPyT-Flow/commit/3fff9151494c7dbc72073830b734f0a7e550e385"
+- "https://github.com/WaterFutures/EPyT-Flow"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H"
+uuid: "2f41ffe7-782d-45c6-94b8-2837afdcc25f"
+cwe_ids:
+- "CWE-502"
+- "CWE-937"
+- "CWE-1035"

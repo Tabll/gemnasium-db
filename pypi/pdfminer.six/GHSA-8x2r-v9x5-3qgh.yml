@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-8x2r-v9x5-3qgh"
+identifiers:
+- "GHSA-8x2r-v9x5-3qgh"
+package_slug: "pypi/pdfminer.six"
+title: "Duplicate Advisory: Insecure Deserialization (pickle) in pdfminer.six CMap
+  Loader — Local Privesc"
+description: "## Duplicate Advisory\nThis advisory has been withdrawn because it is
+  a duplicate of GHSA-f83h-ghpp-7wcc. This link is maintained to preserve external
+  references.\n\n## Original Description\npdfminer.six before 20251230 contains an
+  insecure deserialization vulnerability in the CMap loading mechanism. The library
+  uses Python pickle to deserialize CMap cache files without validation. An attacker
+  with the ability to place a malicious pickle file in a location accessible to the
+  application can trigger arbitrary code execution or privilege escalation when the
+  file is loaded by a trusted process. This is caused by an incomplete patch to CVE-2025-64512."
+date: "2026-02-04"
+pubdate: "2026-02-03"
+affected_range: "<20251230"
+fixed_versions:
+- "20251230"
+affected_versions: "All versions before 20251230"
+not_impacted: "All versions starting from 20251230"
+solution: "Upgrade to version 20251230 or above."
+urls:
+- "https://github.com/advisories/GHSA-8x2r-v9x5-3qgh"
+- "https://github.com/pdfminer/pdfminer.six/security/advisories/GHSA-f83h-ghpp-7wcc"
+- "https://nvd.nist.gov/vuln/detail/CVE-2025-70559"
+- "https://github.com/advisories/GHSA-f83h-ghpp-7wcc"
+- "https://github.com/pdfminer/pdfminer.six"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+uuid: "5eb5bbc2-9bf3-44a5-9c27-dc9d643cdab5"
+cwe_ids:
+- "CWE-502"
+- "CWE-937"
+- "CWE-1035"

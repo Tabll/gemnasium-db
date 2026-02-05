@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-8x3w-qj7j-gqhf"
+identifiers:
+- "GHSA-8x3w-qj7j-gqhf"
+package_slug: "cargo/openmls"
+title: "openmls has improper tag validation"
+description: "Membership and confirmation tags may not be checked correctly due to
+  a missing length check. Any tag that is shorter than the expected tag, but matches
+  up to its length, as well as any empty tag is considered valid."
+date: "2026-02-04"
+pubdate: "2026-02-04"
+affected_range: "<0.7.2"
+fixed_versions:
+- "0.7.2"
+affected_versions: "All versions before 0.7.2"
+not_impacted: "All versions starting from 0.7.2"
+solution: "Upgrade to version 0.7.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-8x3w-qj7j-gqhf"
+- "https://github.com/openmls/openmls/security/advisories/GHSA-8x3w-qj7j-gqhf"
+- "https://github.com/openmls/openmls/commit/91ec049ffc2fa3766110223aa2aabe0303837af8"
+- "https://github.com/openmls/openmls"
+- "https://github.com/openmls/openmls/releases/tag/openmls-v0.7.2"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:L/I:H/A:L"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:H/UI:N/VC:L/VI:H/VA:L/SC:L/SI:H/SA:L"
+uuid: "8ae5a3dd-52c2-4e9e-97e2-e320f8b79228"
+cwe_ids:
+- "CWE-754"
+- "CWE-937"
+- "CWE-1035"

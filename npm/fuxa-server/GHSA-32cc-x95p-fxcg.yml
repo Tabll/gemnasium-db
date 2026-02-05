@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-32cc-x95p-fxcg"
+identifiers:
+- "GHSA-32cc-x95p-fxcg"
+package_slug: "npm/fuxa-server"
+title: "FUXA Unauthenticated Remote Code Execution via Hardcoded JWT Secret in Default
+  Configuration"
+description: "An insecure default configuration in FUXA allows an unauthenticated,
+  remote attacker to gain administrative access and execute arbitrary code on the
+  server. This affects FUXA through version 1.2.9 when authentication is enabled,
+  but the administrator JWT secret is not configured. This issue has been patched
+  in FUXA version 1.2.10."
+date: "2026-02-05"
+pubdate: "2026-02-05"
+affected_range: "<1.2.10"
+fixed_versions:
+- "1.2.10"
+affected_versions: "All versions before 1.2.10"
+not_impacted: "All versions starting from 1.2.10"
+solution: "Upgrade to version 1.2.10 or above."
+urls:
+- "https://github.com/advisories/GHSA-32cc-x95p-fxcg"
+- "https://github.com/frangoteam/FUXA/security/advisories/GHSA-32cc-x95p-fxcg"
+- "https://github.com/frangoteam/FUXA/commit/ea7b3df066f9fdef8ecdce318398ae40546bc50d"
+- "https://github.com/frangoteam/FUXA"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H"
+uuid: "13367908-2361-4c65-afac-ccc6cca5bf66"
+cwe_ids:
+- "CWE-1188"
+- "CWE-321"
+- "CWE-937"
+- "CWE-1035"

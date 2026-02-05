@@ -1,0 +1,42 @@
+---
+identifier: "GHSA-5jvg-8j6f-vpmc"
+identifiers:
+- "GHSA-5jvg-8j6f-vpmc"
+package_slug: "go/github.com/lf-edge/eve"
+title: "Duplicate Advisory: EVE Doesn't Measure Config Partition From 2 Fronts"
+description: "### Duplicate Advisory\nThis advisory has been withdrawn because it
+  is a duplicate of GHSA-phcg-h58r-gmcq. This link is maintained to preserve external
+  references.\n\n### Original Description\nPCR14 is not in the list of PCRs that seal/unseal
+  the “vault” key, but\ndue to the change that was implemented in commit\n“7638364bc0acf8b5c481b5ce5fea11ad44ad7fd4”,
+  fixing this issue alone would not solve the\nproblem of the config partition not
+  being measured correctly.\n\nAlso, the “vault” key is sealed/unsealed with SHA1
+  PCRs instead of\nSHA256. \nThis issue was somewhat mitigated due to all of the PCR
+  extend functions\nupdating both the values of SHA256 and SHA1 for a given PCR ID.\n\nHowever,
+  due to the change that was implemented in commit\n“7638364bc0acf8b5c481b5ce5fea11ad44ad7fd4”,
+  this is no longer the case for PCR14, as\nthe code in “measurefs.go” explicitly
+  updates only the SHA256 instance of PCR14, which\nmeans that even if PCR14 were
+  to be added to the list of PCRs sealing/unsealing the “vault”\nkey, changes to the
+  config partition would still not be measured.\n\n\n\nAn attacker could modify the
+  config partition without triggering the measured boot, this could\nresult in the
+  attacker gaining full control over the device with full access to the contents of
+  the\nencrypted “vault”"
+date: "2026-02-04"
+pubdate: "2023-09-20"
+affected_range: "<0.0.0-20230126065759-d9383a7ee4e1"
+fixed_versions:
+- "0.0.0-20230126065759-d9383a7ee4e1"
+affected_versions: "All versions before 0.0.0-20230126065759-d9383a7ee4e1"
+not_impacted: "All versions starting from 0.0.0-20230126065759-d9383a7ee4e1"
+solution: "Upgrade to version 0.0.0-20230126065759-d9383a7ee4e1 or above."
+urls:
+- "https://github.com/advisories/GHSA-5jvg-8j6f-vpmc"
+- "https://nvd.nist.gov/vuln/detail/CVE-2023-43630"
+- "https://asrg.io/security-advisories/config-partition-not-measured-from-2-fronts"
+- "https://asrg.io/security-advisories/cve-2023-43630"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H"
+uuid: "55e15979-bba8-4fef-b58b-fbd5afa4da9c"
+cwe_ids:
+- "CWE-328"
+- "CWE-522"
+- "CWE-937"
+- "CWE-1035"

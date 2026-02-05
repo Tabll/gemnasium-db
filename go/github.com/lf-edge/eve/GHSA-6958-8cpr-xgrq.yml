@@ -1,0 +1,47 @@
+---
+identifier: "GHSA-6958-8cpr-xgrq"
+identifiers:
+- "GHSA-6958-8cpr-xgrq"
+package_slug: "go/github.com/lf-edge/eve"
+title: "Duplicate Advisory: EVE's Debug Functions Unlockable Without Triggering Measured
+  Boot"
+description: "### Duplicate Advisory\nThis advisory has been withdrawn because it
+  is a duplicate of GHSA-4c4v-42hc-72p6. This link is maintained to preserve external
+  references.\n\n### Original Description\nOn boot, the Pillar eve container checks
+  for the existence and content of\n“/config/GlobalConfig/global.json”.\n\nIf the
+  file exists, it overrides the existing configuration on the device on boot.\n\nThis
+  allows an attacker to change the system’s configuration, which also includes some\ndebug
+  functions.\n\nThis could be used to unlock the ssh with custom “authorized_keys”
+  via the\n“debug.enable.ssh” key, similar to the “authorized_keys” finding that was
+  noted before.\n\nOther usages include unlocking the usb to enable the keyboard via
+  the “debug.enable.usb”\nkey, allowing VNC access via the “app.allow.vnc” key, and
+  more.\n\nAn attacker could easily enable these debug functionalities without triggering
+  the “measured\nboot” mechanism implemented by EVE OS, and without marking the device
+  as “UUD”\n(“Unknown Update Detected”).\nThis is because the “/config” partition
+  is not protected by “measured boot”, it is mutable and it\nis not encrypted in any
+  way.\n\n\n\n\n\nAn attacker can gain full control over the device without changing
+  the PCR values, thereby not\ntriggering the “measured boot” mechanism, and having
+  full access to the vault.\n\n\n\n\nNote:\n\nThis issue was partially fixed in these
+  commits (after disclosure to Zededa), where the config\npartition measurement was
+  added to PCR13:\n\n• aa3501d6c57206ced222c33aea15a9169d629141\n\n• 5fef4d92e75838cc78010edaed5247dfbdae1889.\n\nThis
+  issue was made viable in version 9.0.0 when the calculation was moved to PCR14 but
+  it was not included in the measured boot."
+date: "2026-02-04"
+pubdate: "2023-09-21"
+affected_range: "<0.0.0-20220708121648-5fef4d92e758"
+fixed_versions:
+- "0.0.0-20220708121648-5fef4d92e758"
+affected_versions: "All versions before 0.0.0-20220708121648-5fef4d92e758"
+not_impacted: "All versions starting from 0.0.0-20220708121648-5fef4d92e758"
+solution: "Upgrade to version 0.0.0-20220708121648-5fef4d92e758 or above."
+urls:
+- "https://github.com/advisories/GHSA-6958-8cpr-xgrq"
+- "https://nvd.nist.gov/vuln/detail/CVE-2023-43633"
+- "https://asrg.io/security-advisories/cve-2023-43633"
+- "https://asrg.io/security-advisories/debug-functions-unlockable-without-triggering-measured-boot"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H"
+uuid: "d3524a0e-c4a2-4664-9c3e-31832b4ee0e3"
+cwe_ids:
+- "CWE-522"
+- "CWE-937"
+- "CWE-1035"
