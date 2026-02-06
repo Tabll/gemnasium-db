@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-x9p2-77v6-6vhf"
+identifiers:
+- "GHSA-x9p2-77v6-6vhf"
+package_slug: "go/github.com/dunglas/frankenphp"
+title: "FrankenPHP has delayed propagation of security fixes in upstream base images"
+description: "**Vulnerability in base Docker images (PHP, Go, and Alpine) not automatically
+  propagating to FrankenPHP images.**\n\nFrankenPHP's container images were previously
+  built only when specific version tags were updated or when manual triggers were
+  initiated. This meant that if an upstream base image (such as Alpine Linux or official
+  PHP/Go images) received a security patch under an existing tag, the FrankenPHP image
+  would remain on the older, vulnerable version of those base layers."
+date: "2026-02-05"
+pubdate: "2026-02-05"
+affected_range: "<1.1.11"
+fixed_versions:
+- "1.1.11"
+affected_versions: "All versions before 1.1.11"
+not_impacted: "All versions starting from 1.1.11"
+solution: "Upgrade to version 1.1.11 or above."
+urls:
+- "https://github.com/advisories/GHSA-x9p2-77v6-6vhf"
+- "https://github.com/php/frankenphp/security/advisories/GHSA-x9p2-77v6-6vhf"
+- "https://github.com/php/frankenphp"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+uuid: "60255d2d-bf19-45bb-82c2-2bee4ac5c242"
+cwe_ids:
+- "CWE-1395"
+- "CWE-937"
+- "CWE-1035"
