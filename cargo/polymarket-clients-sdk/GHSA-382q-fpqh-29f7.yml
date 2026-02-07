@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-382q-fpqh-29f7"
+identifiers:
+- "GHSA-382q-fpqh-29f7"
+package_slug: "cargo/polymarket-clients-sdk"
+title: "`polymarket-clients-sdk` was removed from crates.io for malicious code"
+description: "It appeared to be typosquatting existing crate [`polymarket-client-sdk`](https://crates.io/crates/polymarket-client-sdk)
+  (`clients` vs `client`) and attempting to steal credentials from local files.\n\nThe
+  malicious crate had 6 versions published on 2026-02-05 and had been downloaded only
+  59 times. There were no crates depending on this crate on crates.io.\n\nPolymarket
+  thanks [Socket.dev](https://socket.dev/) for detecting and reporting this to the
+  crates.io team!"
+date: "2026-02-06"
+pubdate: "2026-02-06"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-382q-fpqh-29f7"
+- "https://github.com/Polymarket/rs-clob-client"
+- "https://rustsec.org/advisories/RUSTSEC-2026-0010.html"
+uuid: "bfb81bff-89ad-4f50-931e-91ee21418b2f"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

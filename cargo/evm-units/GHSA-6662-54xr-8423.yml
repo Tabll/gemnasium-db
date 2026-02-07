@@ -1,0 +1,22 @@
+---
+identifier: "GHSA-6662-54xr-8423"
+identifiers:
+- "GHSA-6662-54xr-8423"
+package_slug: "cargo/evm-units"
+title: "`evm-units` was removed from crates.io for malicious code"
+description: "It appeared to be attempting to steal cryptocurrency."
+date: "2026-02-06"
+pubdate: "2026-02-06"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-6662-54xr-8423"
+- "https://blog.rust-lang.org/2025/12/03/crates.io-malicious-crates-evm-units-and-uniswap-utils"
+- "https://rustsec.org/advisories/RUSTSEC-2025-0147.html"
+uuid: "eb8d292e-eedd-4544-bb1f-ed11ef82ffae"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

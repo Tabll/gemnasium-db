@@ -5,10 +5,10 @@ identifiers:
 package_slug: "npm/fuxa-server"
 title: "FUXA Unauthenticated Remote Code Execution via Admin JWT Minting"
 description: "An authentication bypass vulnerability in FUXA allows an unauthenticated,
-  remote attacker to gain administrative access and execute arbitrary code on the
-  server. This affects FUXA through version 1.2.9 when authentication is enabled.
-  This issue has been patched in FUXA version 1.2.10."
-date: "2026-02-05"
+  remote attacker to gain administrative access via the heartbeat refresh API and
+  execute arbitrary code on the server. This affects FUXA through version 1.2.9 when
+  authentication is enabled. This issue has been patched in FUXA version 1.2.10."
+date: "2026-02-06"
 pubdate: "2026-02-05"
 affected_range: "<1.2.10"
 fixed_versions:

@@ -1,0 +1,23 @@
+---
+identifier: "GHSA-f8h5-x737-x4xr"
+identifiers:
+- "GHSA-f8h5-x737-x4xr"
+package_slug: "cargo/finch-rust"
+title: "`finch-rust` was removed from crates.io for malicious code"
+description: "It depended on the `sha-rust` crate, which appeared to be attempting
+  to steal credentials from local files."
+date: "2026-02-06"
+pubdate: "2026-02-06"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-f8h5-x737-x4xr"
+- "https://blog.rust-lang.org/2025/12/05/crates.io-malicious-crates-finch-rust-and-sha-rust"
+- "https://rustsec.org/advisories/RUSTSEC-2025-0148.html"
+uuid: "76b404da-5fba-43ec-a355-ffaa556765b4"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

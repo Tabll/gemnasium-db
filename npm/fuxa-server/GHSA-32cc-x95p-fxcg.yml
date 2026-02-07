@@ -10,7 +10,7 @@ description: "An insecure default configuration in FUXA allows an unauthenticate
   server. This affects FUXA through version 1.2.9 when authentication is enabled,
   but the administrator JWT secret is not configured. This issue has been patched
   in FUXA version 1.2.10."
-date: "2026-02-05"
+date: "2026-02-06"
 pubdate: "2026-02-05"
 affected_range: "<1.2.10"
 fixed_versions:

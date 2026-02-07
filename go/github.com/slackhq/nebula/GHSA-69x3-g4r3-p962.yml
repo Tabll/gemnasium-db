@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-69x3-g4r3-p962"
+identifiers:
+- "GHSA-69x3-g4r3-p962"
+package_slug: "go/github.com/slackhq/nebula"
+title: "Blocklist Bypass possible via ECDSA Signature Malleability"
+description: "When using P256 certificates (which is not the default configuration),
+  it is possible to evade a blocklist entry created against the fingerprint of a certificate
+  by using ECDSA Signature Malleability to use a copy of the certificate with a different
+  fingerprint.\n\nIn order for this to affect a user or network, all of the following
+  must be true:\n* `CURVE_P256` certificates are being used\n* There are one or more
+  entries on the blocklist\n* The certificates for those entries are signed by a trusted
+  CA and not expired\n* An attacker has a copy of the private key, and corresponding
+  certificate, for one of those blocklist entries"
+date: "2026-02-06"
+pubdate: "2026-02-06"
+affected_range: ">=1.7.0 <1.10.3"
+fixed_versions:
+- "1.10.3"
+affected_versions: "All versions starting from 1.7.0 before 1.10.3"
+not_impacted: "All versions before 1.7.0, all versions starting from 1.10.3"
+solution: "Upgrade to version 1.10.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-69x3-g4r3-p962"
+- "https://github.com/slackhq/nebula/security/advisories/GHSA-69x3-g4r3-p962"
+- "https://github.com/slackhq/nebula/commit/f573e8a26695278f9d71587390fbfe0d0933aa21"
+- "https://github.com/slackhq/nebula"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N"
+uuid: "f38c8ec4-c97d-40ed-b03e-139c91c465f6"
+cwe_ids:
+- "CWE-347"
+- "CWE-937"
+- "CWE-1035"

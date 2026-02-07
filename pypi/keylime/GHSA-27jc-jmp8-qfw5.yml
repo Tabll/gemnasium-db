@@ -1,0 +1,36 @@
+---
+identifier: "GHSA-27jc-jmp8-qfw5"
+identifiers:
+- "GHSA-27jc-jmp8-qfw5"
+package_slug: "pypi/keylime"
+title: "Duplicate Advisory: Keylime Missing Authentication for Critical Function and
+  Improper Authentication"
+description: "### Duplicate Advisory\nThis advisory has been withdrawn because it
+  is a duplicate of GHSA-4jqp-9qjv-57m2. This link is maintained to preserve external
+  references.\n\n### Original Description\nA flaw was found in Keylime. The Keylime
+  registrar, since version 7.12.0, does not enforce client-side Transport Layer Security
+  (TLS) authentication. This authentication bypass vulnerability allows unauthenticated
+  clients with network access to perform administrative operations, including listing
+  agents, retrieving public Trusted Platform Module (TPM) data, and deleting agents,
+  by connecting without presenting a client certificate."
+date: "2026-02-06"
+pubdate: "2026-02-06"
+affected_range: ">=7.12.0,<7.12.2||>=7.13.0,<7.13.1||==7.13.0"
+fixed_versions:
+- "7.12.2"
+- "7.13.1"
+affected_versions: "All versions starting from 7.12.0 before 7.12.2, all versions
+  starting from 7.13.0 before 7.13.1, version 7.13.0"
+not_impacted: ""
+solution: "Upgrade to versions 7.12.2, 7.13.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-27jc-jmp8-qfw5"
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-1709"
+- "https://access.redhat.com/security/cve/CVE-2026-1709"
+- "https://bugzilla.redhat.com/show_bug.cgi?id=2435514"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:H/A:H"
+uuid: "5caae134-03a7-41b7-b559-d73ae85bd8a1"
+cwe_ids:
+- "CWE-322"
+- "CWE-937"
+- "CWE-1035"

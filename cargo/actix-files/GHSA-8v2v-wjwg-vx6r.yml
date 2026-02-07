@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-8v2v-wjwg-vx6r"
+identifiers:
+- "GHSA-8v2v-wjwg-vx6r"
+package_slug: "cargo/actix-files"
+title: "actix-files has a possible exposure of information vulnerability"
+description: "When passing a non-existing folder to the `actix_files::Files::new()`
+  method causes the actix server to expose unexpected files."
+date: "2026-02-06"
+pubdate: "2026-02-06"
+affected_range: "<0.6.10"
+fixed_versions:
+- "0.6.10"
+affected_versions: "All versions before 0.6.10"
+not_impacted: "All versions starting from 0.6.10"
+solution: "Upgrade to version 0.6.10 or above."
+urls:
+- "https://github.com/advisories/GHSA-8v2v-wjwg-vx6r"
+- "https://github.com/actix/actix-web/security/advisories/GHSA-8v2v-wjwg-vx6r"
+- "https://github.com/actix/actix-web"
+- "https://github.com/actix/actix-web/blob/fba766b4beb92278665d58815c94d336015225c5/actix-files/src/files.rs#L104"
+- "https://github.com/actix/actix-web/blob/fba766b4beb92278665d58815c94d336015225c5/actix-files/src/files.rs#L38"
+- "https://github.com/actix/actix-web/blob/fba766b4beb92278665d58815c94d336015225c5/actix-files/src/files.rs#L98"
+- "https://github.com/actix/actix-web/blob/fba766b4beb92278665d58815c94d336015225c5/actix-files/src/service.rs#L136"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N"
+uuid: "6abbbc83-2839-41a0-8df0-1d1f2fd2601d"
+cwe_ids:
+- "CWE-200"
+- "CWE-937"
+- "CWE-1035"

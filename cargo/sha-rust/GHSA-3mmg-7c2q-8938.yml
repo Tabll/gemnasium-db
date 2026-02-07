@@ -1,0 +1,22 @@
+---
+identifier: "GHSA-3mmg-7c2q-8938"
+identifiers:
+- "GHSA-3mmg-7c2q-8938"
+package_slug: "cargo/sha-rust"
+title: "`sha-rust` was removed from crates.io for malicious code"
+description: "It appeared to be attempting to steal credentials from local files."
+date: "2026-02-06"
+pubdate: "2026-02-06"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-3mmg-7c2q-8938"
+- "https://blog.rust-lang.org/2025/12/05/crates.io-malicious-crates-finch-rust-and-sha-rust"
+- "https://rustsec.org/advisories/RUSTSEC-2025-0146.html"
+uuid: "69b6ca47-a219-4613-8948-8a9e68472682"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"
