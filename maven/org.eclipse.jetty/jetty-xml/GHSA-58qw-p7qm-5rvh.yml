@@ -17,7 +17,7 @@ description: "There are no circumstances in a normally deployed Jetty server whe
   greatly depend on how the application uses `XmlParser`, but it could be a denial
   of service due to large entity expansion, or possibly the revealing local files
   if the XML results are accessible remotely."
-date: "2024-09-10"
+date: "2026-02-10"
 pubdate: "2023-07-10"
 affected_range: "[10.0.0-alpha0,10.0.16),[11.0.0-alpha0,11.0.16),[12.0.0.alpha0,12.0.0),[,9.4.52.v20230823)"
 fixed_versions:
@@ -36,6 +36,7 @@ solution: "Upgrade to versions 10.0.16, 11.0.16, 12.0.0, 9.4.52.v20230823 or abo
 urls:
 - "https://github.com/advisories/GHSA-58qw-p7qm-5rvh"
 - "https://github.com/eclipse/jetty.project/security/advisories/GHSA-58qw-p7qm-5rvh"
+- "https://github.com/jetty/jetty.project/security/advisories/GHSA-58qw-p7qm-5rvh"
 - "https://github.com/eclipse/jetty.project/pull/10067"
 - "https://github.com/eclipse/jetty.project"
 - "https://github.com/eclipse/jetty.project/releases/tag/jetty-10.0.16"

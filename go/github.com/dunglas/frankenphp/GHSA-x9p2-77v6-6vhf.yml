@@ -10,7 +10,7 @@ description: "**Vulnerability in base Docker images (PHP, Go, and Alpine) not au
   initiated. This meant that if an upstream base image (such as Alpine Linux or official
   PHP/Go images) received a security patch under an existing tag, the FrankenPHP image
   would remain on the older, vulnerable version of those base layers."
-date: "2026-02-05"
+date: "2026-02-12"
 pubdate: "2026-02-05"
 affected_range: "<1.1.11"
 fixed_versions:

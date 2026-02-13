@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-w7q7-vjp8-7jv4"
+identifiers:
+- "GHSA-w7q7-vjp8-7jv4"
+package_slug: "npm/typeorm"
+title: "SQL Injection in typeorm"
+description: "Versions of `typeorm` before 0.1.15 are vulnerable to SQL Injection.
+  Field names are not properly validated allowing attackers to inject SQL statements
+  and execute arbitrary SQL queries."
+date: "2026-02-11"
+pubdate: "2019-06-06"
+affected_range: "<0.1.15"
+fixed_versions:
+- "0.1.15"
+affected_versions: "All versions before 0.1.15"
+not_impacted: "All versions starting from 0.1.15"
+solution: "Upgrade to version 0.1.15 or above."
+urls:
+- "https://github.com/advisories/GHSA-w7q7-vjp8-7jv4"
+- "https://github.com/typeorm/typeorm/commit/d46c8b0e6c0db56bb5976a4917e9f67a43715111"
+- "https://hackerone.com/reports/319458"
+- "https://github.com/typeorm/typeorm"
+- "https://www.npmjs.com/advisories/800"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+uuid: "68799c83-1203-4593-a87f-5997f90f040a"
+cwe_ids:
+- "CWE-89"
+- "CWE-937"
+- "CWE-1035"

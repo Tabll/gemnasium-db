@@ -1,0 +1,26 @@
+---
+identifier: "GHSA-6v2j-vr4h-f632"
+identifiers:
+- "GHSA-6v2j-vr4h-f632"
+package_slug: "cargo/finch_cli_rust"
+title: "`finch_cli_rust` was removed from crates.io for malicious code"
+description: "This attempts to typosquat the existing crate [`finch_cli`](https://crates.io/crates/finch_cli)
+  to steal credentials from local files.\n\nThe malicious crate had 1 version published
+  on 2025-12-08 and had been downloaded 18 times. There were no crates depending on
+  this crate on crates.io.\n\nThanks to Matthias Zepper of [NGI Sweden](https://ngisweden.scilifelab.se/)
+  for reporting this to the crates.io team!"
+date: "2026-02-12"
+pubdate: "2026-02-12"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-6v2j-vr4h-f632"
+- "https://rustsec.org/advisories/RUSTSEC-2025-0152.html"
+uuid: "34aaf1ac-e620-4cb6-aa9b-1ba6c2f972cc"
+cwe_ids:
+- "CWE-506"
+- "CWE-937"
+- "CWE-1035"

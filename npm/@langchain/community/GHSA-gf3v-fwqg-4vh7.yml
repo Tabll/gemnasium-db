@@ -1,0 +1,39 @@
+---
+identifier: "GHSA-gf3v-fwqg-4vh7"
+identifiers:
+- "GHSA-gf3v-fwqg-4vh7"
+package_slug: "npm/@langchain/community"
+title: "@langchain/community affected by SSRF Bypass in RecursiveUrlLoader via insufficient
+  URL origin validation"
+description: "The `RecursiveUrlLoader` class in `@langchain/community` is a web crawler
+  that recursively follows links from a starting URL. Its `preventOutside` option
+  (enabled by default) is intended to restrict crawling to the same site as the base
+  URL.\n\nThe implementation used `String.startsWith()` to compare URLs, which does
+  not perform semantic URL validation. An attacker who controls content on a crawled
+  page could include links to domains that share a string prefix with the target (e.g.,
+  `https://example.com.attacker.com` passes a `startsWith` check against `https://example.com`),
+  causing the crawler to follow links to attacker-controlled or internal infrastructure.\n\nAdditionally,
+  the crawler performed no validation against private or reserved IP addresses. A
+  crawled page could include links targeting cloud metadata services (`169.254.169.254`),
+  localhost, or RFC 1918 addresses, and the crawler would fetch them without restriction."
+date: "2026-02-11"
+pubdate: "2026-02-11"
+affected_range: "<1.1.14"
+fixed_versions:
+- "1.1.14"
+affected_versions: "All versions before 1.1.14"
+not_impacted: "All versions starting from 1.1.14"
+solution: "Upgrade to version 1.1.14 or above."
+urls:
+- "https://github.com/advisories/GHSA-gf3v-fwqg-4vh7"
+- "https://github.com/langchain-ai/langchainjs/security/advisories/GHSA-gf3v-fwqg-4vh7"
+- "https://github.com/langchain-ai/langchainjs/pull/9990"
+- "https://github.com/langchain-ai/langchainjs/commit/d5e3db0d01ab321ec70a875805b2f74aefdadf9d"
+- "https://github.com/langchain-ai/langchainjs"
+- "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain%2Fcommunity%401.1.14"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:N/A:N"
+uuid: "e6796228-6155-445e-a6bc-c6e916ffa3e6"
+cwe_ids:
+- "CWE-918"
+- "CWE-937"
+- "CWE-1035"

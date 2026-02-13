@@ -1,0 +1,26 @@
+---
+identifier: "GHSA-xp79-9mxw-878j"
+identifiers:
+- "GHSA-xp79-9mxw-878j"
+package_slug: "cargo/finch-rst"
+title: "`finch-rst` was removed from crates.io for malicious code"
+description: "This attempts to typosquat the existing crate [`finch`](https://crates.io/crates/finch)
+  to steal credentials from local files.\n\nThe malicious crate had 1 version published
+  on 2025-12-08 and had been downloaded 21 times. There were no crates depending on
+  this crate on crates.io.\n\nThanks to Matthias Zepper of [NGI Sweden](https://ngisweden.scilifelab.se/)
+  for reporting this to the crates.io team!"
+date: "2026-02-12"
+pubdate: "2026-02-12"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-xp79-9mxw-878j"
+- "https://rustsec.org/advisories/RUSTSEC-2025-0150.html"
+uuid: "d16be462-37a3-429e-ae03-aeb317556bc6"
+cwe_ids:
+- "CWE-506"
+- "CWE-937"
+- "CWE-1035"

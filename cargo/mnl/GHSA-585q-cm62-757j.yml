@@ -10,16 +10,19 @@ description: "The function `mnl::cb_run` is marked as safe but exhibits unsound 
   validate the input buffer structure before processing, leading to out-of-bounds
   reads.\n\nThis vulnerability allows an attacker to cause a Denial of Service (segmentation
   fault) or potentially read unmapped memory by providing a malformed Netlink message."
-date: "2026-01-09"
+date: "2026-02-10"
 pubdate: "2026-01-09"
-affected_range: "<=0.3.0"
-fixed_versions: []
-affected_versions: "All versions up to 0.3.0"
-not_impacted: ""
-solution: "Unfortunately, there is no solution available yet."
+affected_range: "<0.3.1"
+fixed_versions:
+- "0.3.1"
+affected_versions: "All versions before 0.3.1"
+not_impacted: "All versions starting from 0.3.1"
+solution: "Upgrade to version 0.3.1 or above."
 urls:
 - "https://github.com/advisories/GHSA-585q-cm62-757j"
 - "https://github.com/mullvad/mnl-rs/issues/15"
+- "https://github.com/mullvad/mnl-rs/pull/21"
+- "https://github.com/mullvad/mnl-rs/commit/61929d11c13b6cc4f864840a586fd48c6fd20ad9"
 - "https://github.com/mullvad/mnl-rs"
 - "https://rustsec.org/advisories/RUSTSEC-2025-0142.html"
 cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"

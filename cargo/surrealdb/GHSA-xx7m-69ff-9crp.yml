@@ -1,0 +1,42 @@
+---
+identifier: "GHSA-xx7m-69ff-9crp"
+identifiers:
+- "GHSA-xx7m-69ff-9crp"
+package_slug: "cargo/surrealdb"
+title: "SurrealDB vulnerable to Denial of Service through scripting function memory
+  edge case"
+description: "In SurrealDB instances with the scripting capability enabled (`--allow-scripting`),
+  \ users with the ability to run arbitrary queries can trigger a server crash due
+  to a memory-safety bug in the underlying JS engine. The SurrealDB instance terminates
+  instantly, requiring a manual restart.\n\nThe query consists of using built-in string
+  functions to construct a large string and passing it to the JavaScript runtime for
+  compilation. The exact string size required to trigger the crash varies between
+  SurrealDB versions.\n\nWhilst exploiting the vulnerability requires users to be
+  able to run arbitrary queries, if guest access (`--allow-guests`), is enabled, then
+  guests can perform this attack."
+date: "2026-02-12"
+pubdate: "2026-02-12"
+affected_range: "<2.6.1||>=3.0.0-alpha.8 <3.0.0-beta.3"
+fixed_versions:
+- "2.6.1"
+- "3.0.0-beta.3"
+affected_versions: "All versions before 2.6.1, all versions starting from 3.0.0-alpha.8
+  before 3.0.0-beta.3"
+not_impacted: "All versions starting from 2.6.1 before 3.0.0-alpha.8, all versions
+  starting from 3.0.0-beta.3"
+solution: "Upgrade to versions 2.6.1, 3.0.0-beta.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-xx7m-69ff-9crp"
+- "https://github.com/surrealdb/surrealdb/security/advisories/GHSA-xx7m-69ff-9crp"
+- "https://github.com/surrealdb/surrealdb/pull/6774"
+- "https://github.com/surrealdb/surrealdb/pull/6833"
+- "https://github.com/surrealdb/surrealdb/commit/2b0389b92398d9ecff4632cd51bbf8303832a988"
+- "https://github.com/surrealdb/surrealdb/commit/bcd2ece9ef0d721215f06a47280698669f332285"
+- "https://github.com/surrealdb/surrealdb"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+uuid: "d7c86877-0aef-492f-ac15-725cbecbad27"
+cwe_ids:
+- "CWE-476"
+- "CWE-937"
+- "CWE-1035"

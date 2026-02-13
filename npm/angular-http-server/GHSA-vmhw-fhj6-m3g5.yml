@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-vmhw-fhj6-m3g5"
+identifiers:
+- "GHSA-vmhw-fhj6-m3g5"
+package_slug: "npm/angular-http-server"
+title: "Path Traversal in angular-http-server"
+description: "Versions of `angular-http-server` before 1.4.4 are vulnerable to path
+  traversal."
+date: "2026-02-11"
+pubdate: "2019-05-31"
+affected_range: "<1.4.4"
+fixed_versions:
+- "1.4.4"
+affected_versions: "All versions before 1.4.4"
+not_impacted: "All versions starting from 1.4.4"
+solution: "Upgrade to version 1.4.4 or above."
+urls:
+- "https://github.com/advisories/GHSA-vmhw-fhj6-m3g5"
+- "https://github.com/simonh1000/angular-http-server/commit/8bafc9577161469f5dea01e0b98ea9c525d063e9"
+- "https://hackerone.com/reports/330349"
+- "https://github.com/simonh1000/angular-http-server"
+- "https://www.npmjs.com/advisories/656"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+uuid: "122cf4cf-8106-4afa-93a3-0a80945f77f9"
+cwe_ids:
+- "CWE-22"
+- "CWE-937"
+- "CWE-1035"

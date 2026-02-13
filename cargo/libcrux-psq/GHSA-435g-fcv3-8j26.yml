@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-435g-fcv3-8j26"
+identifiers:
+- "GHSA-435g-fcv3-8j26"
+package_slug: "cargo/libcrux-psq"
+title: "Bug-Fixes in `libcrux-ecdh`, `libcrux-ed25519`, `libcrux-psq`"
+description: "In accordance with our [security policy for `libcrux`](https://github.com/cryspen/libcrux/blob/main/SECURITY.md),
+  we publish a GitHub security advisory for any releases whose CHANGELOG includes
+  bug-fixes, and encourage our users to upgrade. The latest releases of the `libcrux-ecdh`,
+  `libcrux-ed25519` and `libcrux-psq` crates contain the following bug-fixes:"
+date: "2026-02-12"
+pubdate: "2026-02-12"
+affected_range: "<0.0.7"
+fixed_versions:
+- "0.0.7"
+affected_versions: "All versions before 0.0.7"
+not_impacted: "All versions starting from 0.0.7"
+solution: "Upgrade to version 0.0.7 or above."
+urls:
+- "https://github.com/advisories/GHSA-435g-fcv3-8j26"
+- "https://github.com/cryspen/libcrux/security/advisories/GHSA-435g-fcv3-8j26"
+- "https://github.com/cryspen/libcrux/pull/1301"
+- "https://github.com/cryspen/libcrux/pull/1319"
+- "https://github.com/cryspen/libcrux/pull/1320"
+- "https://github.com/cryspen/libcrux/commit/4d6f5d3c2542b6179a6474dec8cfb8b8ddf31a84"
+- "https://github.com/cryspen/libcrux/commit/a09022c5811ca7fd1c6d9a239ff294d64ee86734"
+- "https://github.com/cryspen/libcrux/commit/f303b6446c19fe9a7c993f61e426023609cd5fac"
+- "https://github.com/cryspen/libcrux"
+uuid: "58637a8e-a7c9-4144-9b5d-bbf0d1f85338"
+cwe_ids:
+- "CWE-20"
+- "CWE-327"
+- "CWE-937"
+- "CWE-1035"
