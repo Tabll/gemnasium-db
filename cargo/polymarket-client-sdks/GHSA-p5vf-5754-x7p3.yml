@@ -1,0 +1,26 @@
+---
+identifier: "GHSA-p5vf-5754-x7p3"
+identifiers:
+- "GHSA-p5vf-5754-x7p3"
+package_slug: "cargo/polymarket-client-sdks"
+title: "`polymarket-client-sdks` was removed from crates.io for malicious code"
+description: "It appeared to be typosquatting existing crate [`polymarket-client-sdk`](https://crates.io/crates/polymarket-client-sdk)
+  (`sdks` vs `sdk`) and attempting to steal credentials from local files.\n\nThe malicious
+  crate had 1 version published on 2026-02-09 and had been downloaded only 33 times.
+  There were no crates depending on this crate on crates.io.\n\nThanks to Roland Peelen
+  for finding and reporting this to the crates.io team!"
+date: "2026-02-13"
+pubdate: "2026-02-13"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-p5vf-5754-x7p3"
+- "https://rustsec.org/advisories/RUSTSEC-2026-0011.html"
+uuid: "436dd6e6-c383-43a4-8d98-5f073486c3a0"
+cwe_ids:
+- "CWE-506"
+- "CWE-937"
+- "CWE-1035"

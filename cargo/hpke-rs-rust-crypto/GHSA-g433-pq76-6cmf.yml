@@ -1,0 +1,36 @@
+---
+identifier: "GHSA-g433-pq76-6cmf"
+identifiers:
+- "GHSA-g433-pq76-6cmf"
+package_slug: "cargo/hpke-rs-rust-crypto"
+title: "Bug fixes in hpke-rs, hpke-rs-rust-crypto"
+description: "We publish a GitHub security advisory for any releases whose CHANGELOG
+  includes bug-fixes, and encourage our users to upgrade. The latest releases of the
+  hpke-rs and hpke-rs-rust-crypto crates contain the following bug-fixes:"
+date: "2026-02-13"
+pubdate: "2026-02-13"
+affected_range: "<0.6.0"
+fixed_versions:
+- "0.6.0"
+affected_versions: "All versions before 0.6.0"
+not_impacted: "All versions starting from 0.6.0"
+solution: "Upgrade to version 0.6.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-g433-pq76-6cmf"
+- "https://github.com/cryspen/hpke-rs/security/advisories/GHSA-g433-pq76-6cmf"
+- "https://github.com/cryspen/hpke-rs/pull/123"
+- "https://github.com/cryspen/hpke-rs/pull/124"
+- "https://github.com/cryspen/hpke-rs/pull/127"
+- "https://github.com/cryspen/hpke-rs/pull/128"
+- "https://github.com/cryspen/hpke-rs/commit/1c247b5c9aeca602ad2971c9bd49817fe2c308e6"
+- "https://github.com/cryspen/hpke-rs/commit/25248bd624cc0325c98a05c169a0c9aa0aced632"
+- "https://github.com/cryspen/hpke-rs/commit/3a8254938f43bdc4e0c9c4f987f8071f19779066"
+- "https://github.com/cryspen/hpke-rs/commit/b54c8bb83906331bdf4f606cafa30cd7fd20b531"
+- "https://github.com/cryspen/hpke-rs"
+uuid: "fb654d1c-dcac-46ee-83cf-40ef1e2a2ab7"
+cwe_ids:
+- "CWE-190"
+- "CWE-20"
+- "CWE-697"
+- "CWE-937"
+- "CWE-1035"
