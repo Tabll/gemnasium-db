@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-rq6g-px6m-c248"
+identifiers:
+- "GHSA-rq6g-px6m-c248"
+package_slug: "npm/clawdbot"
+title: "OpenClaw Google Chat shared-path webhook target ambiguity allowed cross-account
+  policy-context misrouting"
+description: "When multiple Google Chat webhook targets are registered on the same
+  HTTP path, and request verification succeeds for more than one target, inbound webhook
+  events could be routed by first-match semantics. This can cause cross-account policy/context
+  misrouting."
+date: "2026-02-18"
+pubdate: "2026-02-18"
+affected_range: "<=2026.1.24-3"
+fixed_versions: []
+affected_versions: "All versions up to 2026.1.24-3"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-rq6g-px6m-c248"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-rq6g-px6m-c248"
+- "https://github.com/openclaw/openclaw/commit/61d59a802869177d9cef52204767cd83357ab79e"
+- "https://github.com/openclaw/openclaw"
+- "https://github.com/openclaw/openclaw/releases/tag/v2026.2.14"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:L/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:L/VI:H/VA:N/SC:L/SI:L/SA:N"
+uuid: "0eeaf9ca-a6fd-4ddf-b610-8e4c8e2ee59e"
+cwe_ids:
+- "CWE-284"
+- "CWE-639"
+- "CWE-937"
+- "CWE-1035"

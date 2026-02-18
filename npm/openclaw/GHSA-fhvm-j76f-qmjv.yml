@@ -1,0 +1,36 @@
+---
+identifier: "GHSA-fhvm-j76f-qmjv"
+identifiers:
+- "GHSA-fhvm-j76f-qmjv"
+package_slug: "npm/openclaw"
+title: "OpenClaw has a potential access-group authorization bypass if channel type
+  lookup fails"
+description: "When Telegram webhook mode is enabled without a configured webhook secret,
+  OpenClaw may accept unauthenticated HTTP POST requests at the Telegram webhook endpoint
+  and trust attacker-controlled update JSON. This can allow forged Telegram updates
+  that spoof `message.from.id` / `chat.id`, potentially bypassing sender allowlists
+  and executing privileged bot commands."
+date: "2026-02-17"
+pubdate: "2026-02-17"
+affected_range: "<2026.2.1"
+fixed_versions:
+- "2026.2.1"
+affected_versions: "All versions before 2026.2.1"
+not_impacted: "All versions starting from 2026.2.1"
+solution: "Upgrade to version 2026.2.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-fhvm-j76f-qmjv"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-fhvm-j76f-qmjv"
+- "https://github.com/openclaw/openclaw/commit/3cbcba10cf30c2ffb898f0d8c7dfb929f15f8930"
+- "https://github.com/openclaw/openclaw/commit/5643a934799dc523ec2ef18c007e1aa2c386b670"
+- "https://github.com/openclaw/openclaw/commit/633fe8b9c17f02fcc68ecdb5ec212a5ace932f09"
+- "https://github.com/openclaw/openclaw/commit/ca92597e1f9593236ad86810b66633144b69314d"
+- "https://github.com/openclaw/openclaw"
+- "https://github.com/openclaw/openclaw/releases/tag/v2026.2.1"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N"
+uuid: "12fa6ab9-a752-4bfd-800a-3cfddde1f2ac"
+cwe_ids:
+- "CWE-285"
+- "CWE-937"
+- "CWE-1035"

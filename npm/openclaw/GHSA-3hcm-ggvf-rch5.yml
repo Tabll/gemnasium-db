@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-3hcm-ggvf-rch5"
+identifiers:
+- "GHSA-3hcm-ggvf-rch5"
+package_slug: "npm/openclaw"
+title: "OpenClaw has an exec allowlist bypass via command substitution/backticks inside
+  double quotes"
+description: "Exec approvals allowlist bypass via command substitution/backticks inside
+  double quotes."
+date: "2026-02-17"
+pubdate: "2026-02-17"
+affected_range: "<2026.2.2"
+fixed_versions:
+- "2026.2.2"
+affected_versions: "All versions before 2026.2.2"
+not_impacted: "All versions starting from 2026.2.2"
+solution: "Upgrade to version 2026.2.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-3hcm-ggvf-rch5"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-3hcm-ggvf-rch5"
+- "https://github.com/openclaw/openclaw/commit/d1ecb46076145deb188abcba8f0699709ea17198"
+- "https://github.com/openclaw/openclaw"
+- "https://github.com/openclaw/openclaw/releases/tag/v2026.2.2"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:L/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N"
+uuid: "2192b2ef-de57-4566-91de-3b8dbf8ffec2"
+cwe_ids:
+- "CWE-78"
+- "CWE-937"
+- "CWE-1035"

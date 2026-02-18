@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-56f2-hvwg-5743"
+identifiers:
+- "GHSA-56f2-hvwg-5743"
+package_slug: "npm/openclaw"
+title: "OpenClaw affected by SSRF in Image Tool Remote Fetch"
+description: "A server-side request forgery (SSRF) vulnerability in the Image tool
+  allowed attackers to force OpenClaw to make HTTP requests to arbitrary internal
+  or restricted network targets."
+date: "2026-02-17"
+pubdate: "2026-02-17"
+affected_range: "<2026.2.2"
+fixed_versions:
+- "2026.2.2"
+affected_versions: "All versions before 2026.2.2"
+not_impacted: "All versions starting from 2026.2.2"
+solution: "Upgrade to version 2026.2.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-56f2-hvwg-5743"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-56f2-hvwg-5743"
+- "https://github.com/openclaw/openclaw/commit/81c68f582d4a9a20d9cca9f367d2da9edc5a65ae"
+- "https://github.com/openclaw/openclaw/commit/9bd64c8a1f91dda602afc1d5246a2ff2be164647"
+- "https://github.com/openclaw/openclaw"
+- "https://github.com/openclaw/openclaw/releases/tag/v2026.2.2"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:L"
+uuid: "c0968b92-5cee-485e-bcdb-e97772efd96d"
+cwe_ids:
+- "CWE-918"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-wfp2-v9c7-fh79"
+identifiers:
+- "GHSA-wfp2-v9c7-fh79"
+package_slug: "npm/openclaw"
+title: "OpenClaw affected by SSRF via attachment/media URL hydration"
+description: "Versions of the `openclaw` npm package prior to `2026.2.2` could be
+  coerced into fetching arbitrary `http(s)` URLs during attachment/media hydration.
+  An attacker who can influence the media URL (for example via model-controlled `sendAttachment`
+  or auto-reply media URLs) could trigger SSRF to internal resources and exfiltrate
+  the fetched bytes as an outbound attachment."
+date: "2026-02-17"
+pubdate: "2026-02-17"
+affected_range: "<2026.2.2"
+fixed_versions:
+- "2026.2.2"
+affected_versions: "All versions before 2026.2.2"
+not_impacted: "All versions starting from 2026.2.2"
+solution: "Upgrade to version 2026.2.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-wfp2-v9c7-fh79"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-wfp2-v9c7-fh79"
+- "https://github.com/openclaw/openclaw/commit/81c68f582d4a9a20d9cca9f367d2da9edc5a65ae"
+- "https://github.com/openclaw/openclaw/commit/9bd64c8a1f91dda602afc1d5246a2ff2be164647"
+- "https://github.com/openclaw/openclaw"
+- "https://github.com/openclaw/openclaw/releases/tag/v2026.2.2"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N"
+uuid: "a90ce32e-342e-4326-b0e1-eb8fb3896ed8"
+cwe_ids:
+- "CWE-918"
+- "CWE-937"
+- "CWE-1035"

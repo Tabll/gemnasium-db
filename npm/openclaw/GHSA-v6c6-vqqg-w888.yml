@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-v6c6-vqqg-w888"
+identifiers:
+- "GHSA-v6c6-vqqg-w888"
+package_slug: "npm/openclaw"
+title: "OpenClaw affected by potential code execution via unsafe hook module path
+  handling in Gateway"
+description: "OpenClaw Gateway supports hook mappings with optional JavaScript/TypeScript
+  transform modules. In affected versions, the gateway did not sufficiently constrain
+  configured module paths before passing them to dynamic `import()`. Under some configurations,
+  a user who can modify gateway configuration could cause the gateway process to load
+  and execute an unintended local module."
+date: "2026-02-18"
+pubdate: "2026-02-18"
+affected_range: ">=2026.1.5 <2026.2.14"
+fixed_versions:
+- "2026.2.14"
+affected_versions: "All versions starting from 2026.1.5 before 2026.2.14"
+not_impacted: "All versions before 2026.1.5, all versions starting from 2026.2.14"
+solution: "Upgrade to version 2026.2.14 or above."
+urls:
+- "https://github.com/advisories/GHSA-v6c6-vqqg-w888"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-v6c6-vqqg-w888"
+- "https://github.com/openclaw/openclaw/commit/35c0e66ed057f1a9f7ad2515fdcef516bd6584ce"
+- "https://github.com/openclaw/openclaw/commit/a0361b8ba959e8506dc79d638b6e6a00d12887e4"
+- "https://github.com/openclaw/openclaw"
+- "https://github.com/openclaw/openclaw/releases/tag/v2026.2.14"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H"
+uuid: "648adfee-d556-405e-9e0d-413047e1be5f"
+cwe_ids:
+- "CWE-22"
+- "CWE-937"
+- "CWE-1035"

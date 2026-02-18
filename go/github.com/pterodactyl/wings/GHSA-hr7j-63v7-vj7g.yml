@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-hr7j-63v7-vj7g"
+identifiers:
+- "GHSA-hr7j-63v7-vj7g"
+package_slug: "go/github.com/pterodactyl/wings"
+title: "Pterodactyl Panel's SFTP sessions remain active after user account deletion
+  or password change"
+description: "Deleting a user account with SFTP access or changing the user's password
+  does not immediately terminate existing SFTP sessions, allowing continued filesystem
+  access after credentials are revoked.\nThis can result in unintended and unauthorized
+  access to server files even after administrators believe access has been fully invalidated."
+date: "2026-02-17"
+pubdate: "2026-02-17"
+affected_range: "<1.12.1"
+fixed_versions:
+- "1.12.1"
+affected_versions: "All versions before 1.12.1"
+not_impacted: "All versions starting from 1.12.1"
+solution: "Upgrade to version 1.12.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-hr7j-63v7-vj7g"
+- "https://github.com/pterodactyl/panel/security/advisories/GHSA-hr7j-63v7-vj7g"
+- "https://github.com/pterodactyl/panel/commit/0e74f3aadec89405751ec602c77fc1d030a417c0"
+- "https://github.com/pterodactyl/panel"
+- "https://github.com/pterodactyl/panel/releases/tag/v1.12.1"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:H/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+uuid: "1038763c-deae-4846-99f2-b701d11c162d"
+cwe_ids:
+- "CWE-284"
+- "CWE-613"
+- "CWE-937"
+- "CWE-1035"

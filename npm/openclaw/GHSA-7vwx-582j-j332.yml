@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-7vwx-582j-j332"
+identifiers:
+- "GHSA-7vwx-582j-j332"
+package_slug: "npm/openclaw"
+title: "OpenClaw MS Teams inbound attachment downloader leaks bearer tokens to allowlisted
+  suffix domains"
+description: "NOTE: This only affects deployments that enable the optional MS Teams
+  extension (Teams channel). If you do not use MS Teams, you are not impacted.\n\nWhen
+  OpenClaw downloads inbound MS Teams attachments / inline images, it may retry a
+  URL with an `Authorization: Bearer <token>` header after receiving `401` or `403`.\n\nBecause
+  the default download allowlist uses suffix matching (and includes some multi-tenant
+  suffix domains), a message that references an untrusted but allowlisted host could
+  cause that bearer token to be sent to the wrong place."
+date: "2026-02-17"
+pubdate: "2026-02-17"
+affected_range: "<2026.2.1"
+fixed_versions:
+- "2026.2.1"
+affected_versions: "All versions before 2026.2.1"
+not_impacted: "All versions starting from 2026.2.1"
+solution: "Upgrade to version 2026.2.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-7vwx-582j-j332"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-7vwx-582j-j332"
+- "https://github.com/openclaw/openclaw/commit/41cc5bcd4f1d434ad1bbdfa55b56f25025ecbf6b"
+- "https://github.com/openclaw/openclaw"
+- "https://github.com/openclaw/openclaw/releases/tag/v2026.2.1"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:N/A:N"
+uuid: "ff867d0d-8c2c-4778-93b5-95119b1d97d0"
+cwe_ids:
+- "CWE-201"
+- "CWE-937"
+- "CWE-1035"

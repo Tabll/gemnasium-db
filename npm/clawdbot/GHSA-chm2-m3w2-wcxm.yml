@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-chm2-m3w2-wcxm"
+identifiers:
+- "GHSA-chm2-m3w2-wcxm"
+package_slug: "npm/clawdbot"
+title: "OpenClaw Google Chat spoofing access with allowlist authorized mutable email
+  principal despite sender-ID mismatch"
+description: "Google Chat allowlisting supports matching by sender email in addition
+  to immutable sender resource name (`users/<id>`). This weakens identity binding
+  if a deployment assumes allowlists are strictly keyed by immutable principals."
+date: "2026-02-17"
+pubdate: "2026-02-17"
+affected_range: "<=2026.1.24-3"
+fixed_versions: []
+affected_versions: "All versions up to 2026.1.24-3"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-chm2-m3w2-wcxm"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-chm2-m3w2-wcxm"
+- "https://github.com/openclaw/openclaw/pull/16243"
+- "https://github.com/openclaw/openclaw/commit/c8424bf29a921e25663b29f308640b3d91a49432"
+- "https://github.com/openclaw/openclaw"
+- "https://github.com/openclaw/openclaw/releases/tag/v2026.2.14"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:L/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:H/AT:P/PR:H/UI:N/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "cbcbeef8-4ca5-4a66-8e0a-20e494eaef6b"
+cwe_ids:
+- "CWE-290"
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

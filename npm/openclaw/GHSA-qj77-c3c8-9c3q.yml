@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-qj77-c3c8-9c3q"
+identifiers:
+- "GHSA-qj77-c3c8-9c3q"
+package_slug: "npm/openclaw"
+title: "OpenClaw's Windows cmd.exe parsing may bypass exec allowlist/approval gating"
+description: "On Windows nodes, exec requests were executed via `cmd.exe /d /s /c
+  <rawCommand>`. In allowlist/approval-gated mode, the allowlist analysis did not
+  model Windows `cmd.exe` parsing and metacharacter behavior. A crafted command string
+  could cause `cmd.exe` to interpret additional operations (for example command chaining
+  via `&`, or expansion via `%...%` / `!...!`) beyond what was allowlisted/approved."
+date: "2026-02-17"
+pubdate: "2026-02-17"
+affected_range: "<2026.2.2"
+fixed_versions:
+- "2026.2.2"
+affected_versions: "All versions before 2026.2.2"
+not_impacted: "All versions starting from 2026.2.2"
+solution: "Upgrade to version 2026.2.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-qj77-c3c8-9c3q"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-qj77-c3c8-9c3q"
+- "https://github.com/openclaw/openclaw/commit/a7f4a53ce80c98ba1452eb90802d447fca9bf3d6"
+- "https://github.com/openclaw/openclaw"
+- "https://github.com/openclaw/openclaw/releases/tag/v2026.2.2"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:L/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N"
+uuid: "e965debc-cbf4-4493-a174-a63612773d89"
+cwe_ids:
+- "CWE-78"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-qrq5-wjgg-rvqw"
+identifiers:
+- "GHSA-qrq5-wjgg-rvqw"
+package_slug: "npm/openclaw"
+title: "OpenClaw has a Path Traversal in Plugin Installation"
+description: "OpenClaw's plugin installation path derivation could be abused by a
+  malicious plugin `package.json` `name` to escape the intended extensions directory
+  and write files to a parent directory."
+date: "2026-02-17"
+pubdate: "2026-02-17"
+affected_range: ">=2026.1.20 <2026.2.1"
+fixed_versions:
+- "2026.2.1"
+affected_versions: "All versions starting from 2026.1.20 before 2026.2.1"
+not_impacted: "All versions before 2026.1.20, all versions starting from 2026.2.1"
+solution: "Upgrade to version 2026.2.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-qrq5-wjgg-rvqw"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-qrq5-wjgg-rvqw"
+- "https://github.com/openclaw/openclaw/commit/d03eca8450dc493b198a88b105fd180895238e5"
+- "https://github.com/openclaw/openclaw"
+- "https://github.com/openclaw/openclaw/releases/tag/v2026.2.1"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:N/I:H/A:H"
+uuid: "ff55903e-6ac3-4066-baec-b89c67e1083c"
+cwe_ids:
+- "CWE-22"
+- "CWE-937"
+- "CWE-1035"

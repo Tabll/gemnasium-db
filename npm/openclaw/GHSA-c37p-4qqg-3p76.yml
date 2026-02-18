@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-c37p-4qqg-3p76"
+identifiers:
+- "GHSA-c37p-4qqg-3p76"
+package_slug: "npm/openclaw"
+title: "OpenClaw Twilio voice-call webhook auth bypass when ngrok loopback compatibility
+  is enabled"
+description: "A Twilio webhook signature-verification bypass in the voice-call extension
+  could allow unauthenticated webhook requests when a specific ngrok free-tier compatibility
+  option is enabled."
+date: "2026-02-18"
+pubdate: "2026-02-18"
+affected_range: "<2026.2.14"
+fixed_versions:
+- "2026.2.14"
+affected_versions: "All versions before 2026.2.14"
+not_impacted: "All versions starting from 2026.2.14"
+solution: "Upgrade to version 2026.2.14 or above."
+urls:
+- "https://github.com/advisories/GHSA-c37p-4qqg-3p76"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-c37p-4qqg-3p76"
+- "https://github.com/openclaw/openclaw/commit/ff11d8793b90c52f8d84dae3fbb99307da51b5c9"
+- "https://github.com/openclaw/openclaw"
+- "https://github.com/openclaw/openclaw/releases/tag/v2026.2.14"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L"
+uuid: "9ec1e4de-579f-442c-8f24-012050126a4f"
+cwe_ids:
+- "CWE-306"
+- "CWE-937"
+- "CWE-1035"

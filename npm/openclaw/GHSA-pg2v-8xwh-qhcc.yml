@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-pg2v-8xwh-qhcc"
+identifiers:
+- "GHSA-pg2v-8xwh-qhcc"
+package_slug: "npm/openclaw"
+title: "OpenClaw affected by SSRF in optional Tlon (Urbit) extension authentication"
+description: "The optional Tlon (Urbit) extension previously accepted a user-provided
+  base URL for authentication and used it to construct an outbound HTTP request, enabling
+  server-side request forgery (SSRF) in affected deployments."
+date: "2026-02-18"
+pubdate: "2026-02-18"
+affected_range: "<2026.2.14"
+fixed_versions:
+- "2026.2.14"
+affected_versions: "All versions before 2026.2.14"
+not_impacted: "All versions starting from 2026.2.14"
+solution: "Upgrade to version 2026.2.14 or above."
+urls:
+- "https://github.com/advisories/GHSA-pg2v-8xwh-qhcc"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-pg2v-8xwh-qhcc"
+- "https://github.com/openclaw/openclaw/commit/bfa7d21e997baa8e3437657d59b1e296815cc1b1"
+- "https://github.com/openclaw/openclaw"
+- "https://github.com/openclaw/openclaw/releases/tag/v2026.2.14"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+uuid: "3c4951af-a6eb-4064-a985-f36b4f4bf0fa"
+cwe_ids:
+- "CWE-918"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-rv39-79c4-7459"
+identifiers:
+- "GHSA-rv39-79c4-7459"
+package_slug: "npm/openclaw"
+title: "OpenClaw's gateway connect could skip device identity checks when auth.token
+  was present but not yet validated"
+description: "The gateway WebSocket `connect` handshake could allow skipping device
+  identity checks when `auth.token` was present but not yet validated."
+date: "2026-02-17"
+pubdate: "2026-02-17"
+affected_range: "<2026.2.2"
+fixed_versions:
+- "2026.2.2"
+affected_versions: "All versions before 2026.2.2"
+not_impacted: "All versions starting from 2026.2.2"
+solution: "Upgrade to version 2026.2.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-rv39-79c4-7459"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-rv39-79c4-7459"
+- "https://github.com/openclaw/openclaw/commit/fe81b1d7125a014b8280da461f34efbf5f761575"
+- "https://github.com/openclaw/openclaw"
+- "https://github.com/openclaw/openclaw/releases/tag/v2026.2.2"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N"
+uuid: "3c3d98c1-d6be-472e-be65-f8a16a87d6af"
+cwe_ids:
+- "CWE-306"
+- "CWE-937"
+- "CWE-1035"

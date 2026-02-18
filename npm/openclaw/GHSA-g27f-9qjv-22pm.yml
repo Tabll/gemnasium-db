@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-g27f-9qjv-22pm"
+identifiers:
+- "GHSA-g27f-9qjv-22pm"
+package_slug: "npm/openclaw"
+title: "OpenClaw log poisoning (indirect prompt injection) via WebSocket headers"
+description: "In `openclaw` versions prior to `2026.2.13`, OpenClaw logged certain
+  WebSocket request headers (including `Origin` and `User-Agent`) without neutralization
+  or length limits on the \"closed before connect\" path.\n\nIf an unauthenticated
+  client can reach the gateway and send crafted header values, those values may be
+  written into core logs. Under workflows where logs are later read or interpreted
+  by an LLM (for example via AI-assisted debugging), this can increase the risk of
+  indirect prompt injection (log poisoning)."
+date: "2026-02-17"
+pubdate: "2026-02-17"
+affected_range: "<2026.2.13"
+fixed_versions:
+- "2026.2.13"
+affected_versions: "All versions before 2026.2.13"
+not_impacted: "All versions starting from 2026.2.13"
+solution: "Upgrade to version 2026.2.13 or above."
+urls:
+- "https://github.com/advisories/GHSA-g27f-9qjv-22pm"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-g27f-9qjv-22pm"
+- "https://github.com/openclaw/openclaw/pull/15592"
+- "https://github.com/openclaw/openclaw/commit/d637a263505448bf4505b85535babbfaacedbaac"
+- "https://github.com/openclaw/openclaw"
+- "https://github.com/openclaw/openclaw/releases/tag/v2026.2.13"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:L/A:N"
+uuid: "1c3d34c0-e9a6-4e72-be93-68911a30e3c2"
+cwe_ids:
+- "CWE-117"
+- "CWE-937"
+- "CWE-1035"

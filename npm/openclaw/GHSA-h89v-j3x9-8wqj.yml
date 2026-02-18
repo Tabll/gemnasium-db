@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-h89v-j3x9-8wqj"
+identifiers:
+- "GHSA-h89v-j3x9-8wqj"
+package_slug: "npm/openclaw"
+title: "OpenClaw affected by denial of service through unguarded archive extraction
+  allowing high expansion/resource abuse (ZIP/TAR)"
+description: "Archive extraction lacked strict resource budgets, allowing high-expansion
+  ZIP/TAR archives to consume excessive CPU/memory/disk during install/update flows."
+date: "2026-02-18"
+pubdate: "2026-02-18"
+affected_range: "<2026.2.14"
+fixed_versions:
+- "2026.2.14"
+affected_versions: "All versions before 2026.2.14"
+not_impacted: "All versions starting from 2026.2.14"
+solution: "Upgrade to version 2026.2.14 or above."
+urls:
+- "https://github.com/advisories/GHSA-h89v-j3x9-8wqj"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-h89v-j3x9-8wqj"
+- "https://github.com/openclaw/openclaw/commit/5f4b29145c236d124524c2c9af0f8acd048fbdea"
+- "https://github.com/openclaw/openclaw/commit/d3ee5deb87ee2ad0ab83c92c365611165423cb71"
+- "https://github.com/openclaw/openclaw"
+- "https://github.com/openclaw/openclaw/releases/tag/v2026.2.14"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+uuid: "720ff7da-7ff9-4fe9-bbe6-26d33c47be3f"
+cwe_ids:
+- "CWE-400"
+- "CWE-937"
+- "CWE-1035"

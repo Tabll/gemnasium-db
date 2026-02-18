@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-w2cg-vxx6-5xjg"
+identifiers:
+- "GHSA-w2cg-vxx6-5xjg"
+package_slug: "npm/openclaw"
+title: "OpenClaw: denial of service through large base64 media files allocating large
+  buffers before limit checks"
+description: "Base64-backed media inputs could be decoded into Buffers before enforcing
+  decoded-size budgets. An attacker supplying oversized base64 payloads can force
+  large allocations, causing memory pressure and denial of service."
+date: "2026-02-18"
+pubdate: "2026-02-18"
+affected_range: "<2026.2.14"
+fixed_versions:
+- "2026.2.14"
+affected_versions: "All versions before 2026.2.14"
+not_impacted: "All versions starting from 2026.2.14"
+solution: "Upgrade to version 2026.2.14 or above."
+urls:
+- "https://github.com/advisories/GHSA-w2cg-vxx6-5xjg"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-w2cg-vxx6-5xjg"
+- "https://github.com/openclaw/openclaw/commit/31791233d60495725fa012745dde8d6ee69e9595"
+- "https://github.com/openclaw/openclaw"
+- "https://github.com/openclaw/openclaw/releases/tag/v2026.2.14"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+uuid: "8a543ce3-263b-461d-a105-0009e591e9cc"
+cwe_ids:
+- "CWE-400"
+- "CWE-937"
+- "CWE-1035"

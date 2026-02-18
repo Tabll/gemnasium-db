@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-xvhf-x56f-2hpp"
+identifiers:
+- "GHSA-xvhf-x56f-2hpp"
+package_slug: "npm/openclaw"
+title: "OpenClaw exec approvals: safeBins could bypass stdin-only constraints via
+  shell expansion"
+description: "OpenClaw's exec-approvals allowlist supports a small set of \"safe bins\"
+  intended to be stdin-only (no positional file arguments) when running `tools.exec.host=gateway|node`
+  with `security=allowlist`.\n\nIn affected configurations, the allowlist validation
+  checked pre-expansion argv tokens, but execution used a real shell (`sh -c`) which
+  expands globs and environment variables. This allowed safe bins like `head`, `tail`,
+  or `grep` to read arbitrary local files via tokens such as `*` or `$HOME/...` without
+  triggering approvals.\n\nThis issue is configuration-dependent and is not exercised
+  by default settings (default `tools.exec.host` is `sandbox`)."
+date: "2026-02-18"
+pubdate: "2026-02-18"
+affected_range: "<2026.2.14"
+fixed_versions:
+- "2026.2.14"
+affected_versions: "All versions before 2026.2.14"
+not_impacted: "All versions starting from 2026.2.14"
+solution: "Upgrade to version 2026.2.14 or above."
+urls:
+- "https://github.com/advisories/GHSA-xvhf-x56f-2hpp"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-xvhf-x56f-2hpp"
+- "https://github.com/openclaw/openclaw/commit/77b89719d5b7e271f48b6f49e334a8b991468c3b"
+- "https://github.com/openclaw/openclaw"
+- "https://github.com/openclaw/openclaw/releases/tag/v2026.2.14"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:N/A:N"
+uuid: "10230a71-aabf-405e-874b-893512c24b16"
+cwe_ids:
+- "CWE-78"
+- "CWE-937"
+- "CWE-1035"

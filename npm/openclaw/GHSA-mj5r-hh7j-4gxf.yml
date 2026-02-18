@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-mj5r-hh7j-4gxf"
+identifiers:
+- "GHSA-mj5r-hh7j-4gxf"
+package_slug: "npm/openclaw"
+title: "OpenClaw Telegram allowlist authorization accepted mutable usernames"
+description: "Telegram allowlist authorization could match on `@username` (mutable/recyclable)
+  instead of immutable numeric sender IDs."
+date: "2026-02-18"
+pubdate: "2026-02-18"
+affected_range: "<2026.2.14"
+fixed_versions:
+- "2026.2.14"
+affected_versions: "All versions before 2026.2.14"
+not_impacted: "All versions starting from 2026.2.14"
+solution: "Upgrade to version 2026.2.14 or above."
+urls:
+- "https://github.com/advisories/GHSA-mj5r-hh7j-4gxf"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-mj5r-hh7j-4gxf"
+- "https://github.com/openclaw/openclaw/commit/9e147f00b48e63e7be6964e0e2a97f2980854128"
+- "https://github.com/openclaw/openclaw/commit/e3b432e481a96b8fd41b91273818e514074e05c3"
+- "https://github.com/openclaw/openclaw"
+- "https://github.com/openclaw/openclaw/releases/tag/v2026.2.14"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:H/A:N"
+uuid: "7b47cc24-08d1-440e-8db3-bb55d85689c0"
+cwe_ids:
+- "CWE-284"
+- "CWE-290"
+- "CWE-937"
+- "CWE-1035"

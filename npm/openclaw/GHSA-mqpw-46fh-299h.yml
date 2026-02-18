@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-mqpw-46fh-299h"
+identifiers:
+- "GHSA-mqpw-46fh-299h"
+package_slug: "npm/openclaw"
+title: "OpenClaw authorization bypass: operator.write can resolve exec approvals via
+  chat.send -> /approve"
+description: "A gateway client authenticated with a device token scoped only to `operator.write`
+  (without `operator.approvals`) could approve/deny pending exec approval requests
+  by sending a chat message containing the built-in `/approve` command.\n\n`exec.approval.resolve`
+  is correctly scoped to `operator.approvals` for direct RPC calls, but the `/approve`
+  command path invoked it via an internal privileged gateway client."
+date: "2026-02-17"
+pubdate: "2026-02-17"
+affected_range: "<2026.2.2"
+fixed_versions:
+- "2026.2.2"
+affected_versions: "All versions before 2026.2.2"
+not_impacted: "All versions starting from 2026.2.2"
+solution: "Upgrade to version 2026.2.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-mqpw-46fh-299h"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-mqpw-46fh-299h"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H"
+uuid: "cf1291f0-6d46-4833-bb01-7bc961a5d33d"
+cwe_ids:
+- "CWE-269"
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

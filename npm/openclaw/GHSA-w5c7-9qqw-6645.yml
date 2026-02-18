@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-w5c7-9qqw-6645"
+identifiers:
+- "GHSA-w5c7-9qqw-6645"
+package_slug: "npm/openclaw"
+title: "OpenClaw inter-session prompts could be treated as direct user instructions"
+description: "Inter-session messages sent via `sessions_send` could be interpreted
+  as direct end-user instructions because they were persisted as `role: \"user\"`
+  without provenance metadata."
+date: "2026-02-18"
+pubdate: "2026-02-18"
+affected_range: "<2026.2.13"
+fixed_versions:
+- "2026.2.13"
+affected_versions: "All versions before 2026.2.13"
+not_impacted: "All versions starting from 2026.2.13"
+solution: "Upgrade to version 2026.2.13 or above."
+urls:
+- "https://github.com/advisories/GHSA-w5c7-9qqw-6645"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-w5c7-9qqw-6645"
+- "https://github.com/openclaw/openclaw/commit/85409e401b6586f83954cb53552395d7aab04797"
+- "https://github.com/openclaw/openclaw"
+- "https://github.com/openclaw/openclaw/releases/tag/v2026.2.12"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:H/VA:N/SC:N/SI:N/SA:N"
+uuid: "ebba3ee9-9e6f-43af-8624-23ad60e03326"
+cwe_ids:
+- "CWE-345"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-33rq-m5x2-fvgf"
+identifiers:
+- "GHSA-33rq-m5x2-fvgf"
+package_slug: "npm/openclaw"
+title: "OpenClaw Twitch allowFrom is not enforced in optional plugin, unauthorized
+  chat users can trigger agent pipeline"
+description: "In the optional Twitch channel plugin (`extensions/twitch`), `allowFrom`
+  is documented as a hard allowlist of Twitch user IDs, but it was not enforced as
+  a hard gate. If `allowedRoles` is unset or empty, the access control path defaulted
+  to allow, so any Twitch user who could mention the bot could reach the agent dispatch
+  pipeline.\n\n**Scope note:** This only affects deployments that installed and enabled
+  the Twitch plugin. Core OpenClaw installs that do not install/enable the Twitch
+  plugin are not impacted."
+date: "2026-02-17"
+pubdate: "2026-02-17"
+affected_range: ">=2026.1.29 <2026.2.1"
+fixed_versions:
+- "2026.2.1"
+affected_versions: "All versions starting from 2026.1.29 before 2026.2.1"
+not_impacted: "All versions before 2026.1.29, all versions starting from 2026.2.1"
+solution: "Upgrade to version 2026.2.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-33rq-m5x2-fvgf"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-33rq-m5x2-fvgf"
+- "https://github.com/openclaw/openclaw/commit/8c7901c984866a776eb59662dc9d8b028de4f0d0"
+- "https://github.com/openclaw/openclaw"
+- "https://github.com/openclaw/openclaw/releases/tag/v2026.2.1"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
+uuid: "8389c188-5b5c-41bb-900e-48c7e4abbd0e"
+cwe_ids:
+- "CWE-285"
+- "CWE-937"
+- "CWE-1035"

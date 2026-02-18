@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-q447-rj3r-2cgh"
+identifiers:
+- "GHSA-q447-rj3r-2cgh"
+package_slug: "npm/openclaw"
+title: "OpenClaw affected by denial of service via unbounded webhook request body
+  buffering"
+description: "Multiple webhook handlers accepted and buffered request bodies without
+  a strict unified byte/time limit. A remote unauthenticated attacker could send oversized
+  payloads and cause memory pressure, degrading availability."
+date: "2026-02-18"
+pubdate: "2026-02-18"
+affected_range: "<2026.2.13"
+fixed_versions:
+- "2026.2.13"
+affected_versions: "All versions before 2026.2.13"
+not_impacted: "All versions starting from 2026.2.13"
+solution: "Upgrade to version 2026.2.13 or above."
+urls:
+- "https://github.com/advisories/GHSA-q447-rj3r-2cgh"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-q447-rj3r-2cgh"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "6a6e287a-00a9-4eb6-9a22-fef21bd048b2"
+cwe_ids:
+- "CWE-400"
+- "CWE-937"
+- "CWE-1035"
