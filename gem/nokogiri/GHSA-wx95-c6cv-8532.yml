@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-wx95-c6cv-8532"
+identifiers:
+- "GHSA-wx95-c6cv-8532"
+package_slug: "gem/nokogiri"
+title: "Nokogiri does not check the return value from xmlC14NExecute"
+description: "Nokogiri's CRuby extension fails to check the return value from `xmlC14NExecute`
+  in the method `Nokogiri::XML::Document#canonicalize` and `Nokogiri::XML::Node#canonicalize`.
+  When canonicalization fails, an empty string is returned instead of raising an exception.
+  This incorrect return value may allow downstream libraries to accept invalid or
+  incomplete canonicalized XML, which has been demonstrated to enable signature validation
+  bypass in SAML libraries.\n\nJRuby is not affected, as the Java implementation correctly
+  raises `RuntimeError` on canonicalization failure."
+date: "2026-02-18"
+pubdate: "2026-02-18"
+affected_range: ">=1.5.1 <1.19.1"
+fixed_versions:
+- "1.19.1"
+affected_versions: "All versions starting from 1.5.1 before 1.19.1"
+not_impacted: "All versions before 1.5.1, all versions starting from 1.19.1"
+solution: "Upgrade to version 1.19.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-wx95-c6cv-8532"
+- "https://github.com/sparklemotion/nokogiri/security/advisories/GHSA-wx95-c6cv-8532"
+- "https://github.com/sparklemotion/nokogiri"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+uuid: "d73a211c-8ad1-4a2b-b490-08324dc7807f"
+cwe_ids:
+- "CWE-252"
+- "CWE-937"
+- "CWE-1035"

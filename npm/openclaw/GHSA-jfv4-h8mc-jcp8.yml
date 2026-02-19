@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-jfv4-h8mc-jcp8"
+identifiers:
+- "GHSA-jfv4-h8mc-jcp8"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Process Safety - Unvalidated PID Kill via SIGKILL in Process Cleanup"
+description: "OpenClaw CLI process cleanup used system-wide process enumeration and
+  pattern matching to terminate processes without verifying they were owned by the
+  current OpenClaw process. On shared hosts, unrelated processes could be terminated
+  if they matched the pattern."
+date: "2026-02-18"
+pubdate: "2026-02-18"
+affected_range: "<2026.2.14"
+fixed_versions:
+- "2026.2.14"
+affected_versions: "All versions before 2026.2.14"
+not_impacted: "All versions starting from 2026.2.14"
+solution: "Upgrade to version 2026.2.14 or above."
+urls:
+- "https://github.com/advisories/GHSA-jfv4-h8mc-jcp8"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-jfv4-h8mc-jcp8"
+- "https://github.com/openclaw/openclaw/commit/6084d13b956119e3cf95daaf9a1cae1670ea3557"
+- "https://github.com/openclaw/openclaw/commit/eb60e2e1b213740c3c587a7ba4dbf10da620ca66"
+- "https://github.com/openclaw/openclaw"
+- "https://github.com/openclaw/openclaw/releases/tag/v2026.2.14"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+cvss_v4: "CVSS:4.0/AV:L/AC:L/AT:P/PR:L/UI:N/VC:N/VI:N/VA:N/SC:N/SI:N/SA:H"
+uuid: "462227b0-e685-4a2f-a98b-44e3962aa758"
+cwe_ids:
+- "CWE-283"
+- "CWE-937"
+- "CWE-1035"

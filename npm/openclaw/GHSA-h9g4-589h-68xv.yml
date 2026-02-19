@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-h9g4-589h-68xv"
+identifiers:
+- "GHSA-h9g4-589h-68xv"
+package_slug: "npm/openclaw"
+title: "OpenClaw has an authentication bypass in sandbox browser bridge server"
+description: "openclaw could start the sandbox browser bridge server without authentication.\n\nWhen
+  the sandboxed browser is enabled, openclaw runs a local (loopback) HTTP bridge that
+  exposes browser control endpoints (for example `/profiles`, `/tabs`, `/tabs/open`,
+  `/agent/*`). Due to missing auth wiring in the sandbox initialization path, that
+  bridge server accepted requests without requiring gateway auth."
+date: "2026-02-18"
+pubdate: "2026-02-18"
+affected_range: ">=2026.1.29-beta.1 <2026.2.14"
+fixed_versions:
+- "2026.2.14"
+affected_versions: "All versions starting from 2026.1.29-beta.1 before 2026.2.14"
+not_impacted: "All versions before 2026.1.29-beta.1, all versions starting from 2026.2.14"
+solution: "Upgrade to version 2026.2.14 or above."
+urls:
+- "https://github.com/advisories/GHSA-h9g4-589h-68xv"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-h9g4-589h-68xv"
+- "https://github.com/openclaw/openclaw/commit/4711a943e30bc58016247152ba06472dab09d0b0"
+- "https://github.com/openclaw/openclaw/commit/6dd6bce997c48752134f2d6ed89b27de01ced7e3"
+- "https://github.com/openclaw/openclaw/commit/cd84885a4ac78eadb7bf321aae98db9519426d67"
+- "https://github.com/openclaw/openclaw"
+- "https://github.com/openclaw/openclaw/releases/tag/v2026.2.14"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N"
+uuid: "2d82d499-c1c4-4a9a-aa54-58ea7df53f59"
+cwe_ids:
+- "CWE-306"
+- "CWE-937"
+- "CWE-1035"

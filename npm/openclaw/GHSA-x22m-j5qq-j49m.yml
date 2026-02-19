@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-x22m-j5qq-j49m"
+identifiers:
+- "GHSA-x22m-j5qq-j49m"
+package_slug: "npm/openclaw"
+title: "OpenClaw has two SSRF via sendMediaFeishu and markdown image fetching in Feishu
+  extension"
+description: "The Feishu extension could fetch attacker-controlled remote URLs in
+  two paths without SSRF protections:\n\n- `sendMediaFeishu(mediaUrl)`\n- Feishu DocX
+  markdown image URLs (write/append -> image processing)"
+date: "2026-02-18"
+pubdate: "2026-02-18"
+affected_range: "<2026.2.14"
+fixed_versions:
+- "2026.2.14"
+affected_versions: "All versions before 2026.2.14"
+not_impacted: "All versions starting from 2026.2.14"
+solution: "Upgrade to version 2026.2.14 or above."
+urls:
+- "https://github.com/advisories/GHSA-x22m-j5qq-j49m"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-x22m-j5qq-j49m"
+- "https://github.com/openclaw/openclaw/pull/16285"
+- "https://github.com/openclaw/openclaw/commit/5b4121d6011a48c71e747e3c18197f180b872c5d"
+- "https://github.com/openclaw/openclaw"
+- "https://github.com/openclaw/openclaw/releases/tag/v2026.2.14"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N"
+uuid: "0e904e9f-867e-4290-9a24-b9140a26f511"
+cwe_ids:
+- "CWE-918"
+- "CWE-937"
+- "CWE-1035"

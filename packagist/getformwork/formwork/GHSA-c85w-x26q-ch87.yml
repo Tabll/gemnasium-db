@@ -10,7 +10,7 @@ description: "Improper validation of select fields allows attackers to craft an 
   administration panel unavailable.\nThis clearly impacts the Availability aspect
   of the CIA triad (confidentiality, integrity, and availability), although the attack
   still has certain limitations."
-date: "2025-03-16"
+date: "2026-02-18"
 pubdate: "2025-03-01"
 affected_range: ">=2.0.0-beta.1 <2.0.0-beta.4"
 fixed_versions:
