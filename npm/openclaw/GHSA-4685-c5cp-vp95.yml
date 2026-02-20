@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-4685-c5cp-vp95"
+identifiers:
+- "GHSA-4685-c5cp-vp95"
+package_slug: "npm/openclaw"
+title: "OpenClaw safeBins stdin-only bypass via sort output and recursive grep flags"
+description: "`tools.exec.safeBins` could be bypassed for filesystem access when `sort`
+  output flags (`-o` / `--output`) or recursive `grep` flags were allowed through
+  safe-bin execution paths."
+date: "2026-02-19"
+pubdate: "2026-02-19"
+affected_range: "<2026.2.19"
+fixed_versions:
+- "2026.2.19"
+affected_versions: "All versions before 2026.2.19"
+not_impacted: "All versions starting from 2026.2.19"
+solution: "Upgrade to version 2026.2.19 or above."
+urls:
+- "https://github.com/advisories/GHSA-4685-c5cp-vp95"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-4685-c5cp-vp95"
+- "https://github.com/openclaw/openclaw/commit/cfe8457a0f4aae5324daec261d3b0aad1461a4bc"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:N"
+uuid: "f3d442b6-cde3-4ead-9596-48e0bfc1dee1"
+cwe_ids:
+- "CWE-184"
+- "CWE-78"
+- "CWE-937"
+- "CWE-1035"

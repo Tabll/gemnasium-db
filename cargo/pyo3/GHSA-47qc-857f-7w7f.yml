@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-47qc-857f-7w7f"
+identifiers:
+- "GHSA-47qc-857f-7w7f"
+package_slug: "cargo/pyo3"
+title: "PyO3 has type confusion when accessing data from sublasses of subclasses of
+  native types with `abi3` feature"
+description: "PyO3 0.28.1 added support for `#[pyclass(extends=PyList)] struct NativeSub`
+  (and other native types) when targeting Python 3.12 and up with the `abi3` feature.\n\nIt
+  was discovered that subclasses of such classes would use the type of the subclass
+  when attempting to access to data of `NativeSub` contained within Python objects,
+  amounting to memory corruption.\n\nPyO3 0.28.2 fixed the issue by using the type
+  of (e.g.) `NativeSub` correctly."
+date: "2026-02-19"
+pubdate: "2026-02-19"
+affected_range: ">=0.28.0 <0.28.2"
+fixed_versions:
+- "0.28.2"
+affected_versions: "All versions starting from 0.28.0 before 0.28.2"
+not_impacted: "All versions before 0.28.0, all versions starting from 0.28.2"
+solution: "Upgrade to version 0.28.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-47qc-857f-7w7f"
+- "https://github.com/PyO3/pyo3/pull/5807#issuecomment-3913251784"
+- "https://github.com/PyO3/pyo3/commit/75abd8602896b350fd8c778e52e0a74b4644ccca"
+- "https://github.com/PyO3/pyo3"
+- "https://github.com/PyO3/pyo3/releases/tag/v0.28.2"
+- "https://rustsec.org/advisories/RUSTSEC-2026-0013.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+uuid: "4e31f175-7a1b-41d2-b2a0-af3f49e43760"
+cwe_ids:
+- "CWE-843"
+- "CWE-937"
+- "CWE-1035"

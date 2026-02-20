@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-gq3j-xvxp-8hrf"
+identifiers:
+- "GHSA-gq3j-xvxp-8hrf"
+package_slug: "npm/hono"
+title: "Hono added timing comparison hardening in basicAuth and bearerAuth"
+description: "The `basicAuth` and `bearerAuth` middlewares previously used a comparison
+  that was not fully timing-safe.\n\nThe `timingSafeEqual` function used normal string
+  equality (`===`) when comparing hash values. This comparison may stop early if values
+  differ, which can theoretically cause small timing differences.\n\nThe implementation
+  has been updated to use a safer comparison method."
+date: "2026-02-19"
+pubdate: "2026-02-19"
+affected_range: "<4.11.10"
+fixed_versions:
+- "4.11.10"
+affected_versions: "All versions before 4.11.10"
+not_impacted: "All versions starting from 4.11.10"
+solution: "Upgrade to version 4.11.10 or above."
+urls:
+- "https://github.com/advisories/GHSA-gq3j-xvxp-8hrf"
+- "https://github.com/honojs/hono/security/advisories/GHSA-gq3j-xvxp-8hrf"
+- "https://github.com/honojs/hono/commit/91def7cab654bad5eecc9270e6620d577971ff5e"
+- "https://github.com/honojs/hono"
+- "https://github.com/honojs/hono/releases/tag/v4.11.10"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N"
+uuid: "c8f5728f-adcd-4d3c-8ab6-97f9b5f1a175"
+cwe_ids:
+- "CWE-208"
+- "CWE-937"
+- "CWE-1035"

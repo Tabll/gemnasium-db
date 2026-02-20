@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-r5fq-947m-xm57"
+identifiers:
+- "GHSA-r5fq-947m-xm57"
+package_slug: "npm/openclaw"
+title: "OpenClaw has a path traversal in apply_patch could write/delete files outside
+  the workspace"
+description: "In affected versions, when `apply_patch` was enabled and the agent ran
+  without filesystem sandbox containment, crafted paths could cause file writes/deletes
+  outside the configured workspace directory."
+date: "2026-02-19"
+pubdate: "2026-02-19"
+affected_range: "<2026.2.14"
+fixed_versions:
+- "2026.2.14"
+affected_versions: "All versions before 2026.2.14"
+not_impacted: "All versions starting from 2026.2.14"
+solution: "Upgrade to version 2026.2.14 or above."
+urls:
+- "https://github.com/advisories/GHSA-r5fq-947m-xm57"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-r5fq-947m-xm57"
+- "https://github.com/openclaw/openclaw/pull/16405"
+- "https://github.com/openclaw/openclaw/commit/5544646a09c0121fca7d7093812dc2de8437c7f1"
+- "https://github.com/openclaw/openclaw"
+- "https://github.com/openclaw/openclaw/releases/tag/v2026.2.14"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+uuid: "b497df05-1cd9-4f49-b9ec-114a7bf4015e"
+cwe_ids:
+- "CWE-22"
+- "CWE-937"
+- "CWE-1035"

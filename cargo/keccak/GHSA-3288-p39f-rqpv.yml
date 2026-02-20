@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-3288-p39f-rqpv"
+identifiers:
+- "GHSA-3288-p39f-rqpv"
+package_slug: "cargo/keccak"
+title: "Unsoundness in opt-in ARMv8 assembly backend for `keccak`"
+description: "The `asm!` block enabled by the off-by-default `asm` feature, when enabled
+  on ARMv8 targets, misspecified the operand\ntype for all of its operands, using
+  `in` for pointers and values which were subsequently mutated by operations performed\nwithin
+  the assembly block."
+date: "2026-02-19"
+pubdate: "2026-02-19"
+affected_range: "<0.1.6"
+fixed_versions:
+- "0.1.6"
+affected_versions: "All versions before 0.1.6"
+not_impacted: "All versions starting from 0.1.6"
+solution: "Upgrade to version 0.1.6 or above."
+urls:
+- "https://github.com/advisories/GHSA-3288-p39f-rqpv"
+- "https://github.com/RustCrypto/sponges/pull/101"
+- "https://github.com/RustCrypto/sponges/commit/7ac1920198ebb7d0192e6d2c3581e15b38a6e0e5"
+- "https://github.com/RustCrypto/sponges"
+- "https://rustsec.org/advisories/RUSTSEC-2026-0012.html"
+cvss_v3: "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:L/AC:H/AT:P/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "14b3b756-c202-4276-b22e-d535a63ac70e"
+cwe_ids:
+- "CWE-758"
+- "CWE-937"
+- "CWE-1035"

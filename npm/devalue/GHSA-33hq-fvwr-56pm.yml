@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-33hq-fvwr-56pm"
+identifiers:
+- "GHSA-33hq-fvwr-56pm"
+package_slug: "npm/devalue"
+title: "devalue affected by CPU and memory amplification from sparse arrays"
+description: "Under certain circumstances, serializing sparse arrays using `uneval`
+  or `stringify` could cause CPU and/or memory exhaustion. When this occurs on the
+  server, it results in a DoS. This is extremely difficult to take advantage of in
+  practice, as an attacker would have to manage to create a sparse array on the server
+  — which is impossible in every mainstream wire format — and then that sparse array
+  would have to be run through `uneval` or `stringify`."
+date: "2026-02-19"
+pubdate: "2026-02-19"
+affected_range: "<5.6.3"
+fixed_versions:
+- "5.6.3"
+affected_versions: "All versions before 5.6.3"
+not_impacted: "All versions starting from 5.6.3"
+solution: "Upgrade to version 5.6.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-33hq-fvwr-56pm"
+- "https://github.com/sveltejs/devalue/security/advisories/GHSA-33hq-fvwr-56pm"
+- "https://github.com/sveltejs/devalue/commit/819f1ac7475ab37547645cfb09bf2f678a799cf0"
+- "https://github.com/sveltejs/devalue"
+- "https://github.com/sveltejs/devalue/releases/tag/v5.6.3"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L"
+cvss_v4: "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N"
+uuid: "0a68aaa9-bcc7-4b49-ac49-1dae1fa0ecc2"
+cwe_ids:
+- "CWE-770"
+- "CWE-937"
+- "CWE-1035"

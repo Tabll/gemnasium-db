@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-6qr9-g2xw-cw92"
+identifiers:
+- "GHSA-6qr9-g2xw-cw92"
+package_slug: "go/github.com/dagu-org/dagu"
+title: "Dagu affected by unauthenticated RCE via inline DAG spec in default configuration"
+description: "Dagu's default configuration ships with authentication completely disabled.
+  The `POST /api/v2/dag-runs` endpoint accepts an inline YAML spec and executes its
+  shell commands immediately — no credentials, no token, nothing. Any dagu instance
+  reachable over the network is fully compromised by default. A second issue means
+  that even with auth properly configured, operator-role users can still execute arbitrary
+  commands by submitting inline specs through the same endpoint."
+date: "2026-02-19"
+pubdate: "2026-02-19"
+affected_range: "<=1.30.3"
+fixed_versions: []
+affected_versions: "All versions up to 1.30.3"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-6qr9-g2xw-cw92"
+- "https://github.com/dagu-org/dagu/security/advisories/GHSA-6qr9-g2xw-cw92"
+- "https://github.com/dagu-org/dagu"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+uuid: "6ce6037e-e2e7-43d8-b424-59ad8aa92edd"
+cwe_ids:
+- "CWE-306"
+- "CWE-937"
+- "CWE-1035"
