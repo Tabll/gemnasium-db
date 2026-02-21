@@ -1,0 +1,25 @@
+---
+identifier: "GHSA-gv8r-9rw9-9697"
+identifiers:
+- "GHSA-gv8r-9rw9-9697"
+package_slug: "go/github.com/traefik/traefik"
+title: "Traefik affected by TLS ClientAuth Bypass on HTTP/3"
+description: "There is a potential vulnerability in Traefik managing HTTP/3 connections.\n\nMore
+  details in the [CVE-2025-68121](https://nvd.nist.gov/vuln/detail/CVE-2025-68121)."
+date: "2026-02-20"
+pubdate: "2026-02-20"
+affected_range: "<=1.7.34"
+fixed_versions: []
+affected_versions: "All versions up to 1.7.34"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-gv8r-9rw9-9697"
+- "https://github.com/traefik/traefik/security/advisories/GHSA-gv8r-9rw9-9697"
+- "https://github.com/traefik/traefik"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:N"
+uuid: "61f865ad-b835-4ede-802d-ee2c2593853e"
+cwe_ids:
+- "CWE-1395"
+- "CWE-937"
+- "CWE-1035"

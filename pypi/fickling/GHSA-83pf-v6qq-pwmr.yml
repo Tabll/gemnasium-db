@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-83pf-v6qq-pwmr"
+identifiers:
+- "GHSA-83pf-v6qq-pwmr"
+package_slug: "pypi/fickling"
+title: "Fickling has a detection bypass via stdlib network-protocol constructors"
+description: "Fickling's `check_safety()` API and `--check-safety` CLI flag incorrectly
+  rate as\n`LIKELY_SAFE` pickle files that open outbound TCP connections at deserialization
+  time\nusing stdlib network-protocol constructors: `smtplib.SMTP`, `imaplib.IMAP4`,\n`ftplib.FTP`,
+  `poplib.POP3`, `telnetlib.Telnet`, and `nntplib.NNTP`.\n\nThe bypass exploits two
+  independent root causes described below.\n\n---"
+date: "2026-02-20"
+pubdate: "2026-02-20"
+affected_range: "<=0.1.7"
+fixed_versions: []
+affected_versions: "All versions up to 0.1.7"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-83pf-v6qq-pwmr"
+- "https://github.com/trailofbits/fickling/security/advisories/GHSA-83pf-v6qq-pwmr"
+- "https://github.com/trailofbits/fickling/pull/233"
+- "https://github.com/trailofbits/fickling/commit/6d20564d23acf14b42ec883908aed159be7b9ade"
+- "https://github.com/trailofbits/fickling"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:P/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N"
+uuid: "b343a556-563a-4664-b1c0-28a8b51af68d"
+cwe_ids:
+- "CWE-184"
+- "CWE-937"
+- "CWE-1035"
