@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-4cqv-h74h-93j4"
+identifiers:
+- "GHSA-4cqv-h74h-93j4"
+package_slug: "npm/openclaw"
+title: "OpenClaw has a Discord `allowFrom` slug-collision authorization bypass"
+description: "OpenClaw supports Discord allowlists using either user IDs or names/tags.
+  Name/tag matching depends on slug normalization, so different user tags can collide
+  to the same slug and unintentionally satisfy a name-based allowlist entry."
+date: "2026-03-03"
+pubdate: "2026-03-03"
+affected_range: "<2026.2.22"
+fixed_versions:
+- "2026.2.22"
+affected_versions: "All versions before 2026.2.22"
+not_impacted: "All versions starting from 2026.2.22"
+solution: "Upgrade to version 2026.2.22 or above."
+urls:
+- "https://github.com/advisories/GHSA-4cqv-h74h-93j4"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-4cqv-h74h-93j4"
+- "https://github.com/openclaw/openclaw/commit/747bb581b3f2264495e1fec5a0727d9f2ca1b6f1"
+- "https://github.com/openclaw/openclaw/commit/f97c45c5b5e0698b6667bb5f6badc0cac7dabd12"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N"
+uuid: "4243f3e6-3932-48d1-bded-f97e509cfd63"
+cwe_ids:
+- "CWE-287"
+- "CWE-937"
+- "CWE-1035"

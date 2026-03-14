@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-cfvj-7rx7-fc7c"
+identifiers:
+- "GHSA-cfvj-7rx7-fc7c"
+package_slug: "npm/openclaw"
+title: "OpenClaw: stageSandboxMedia destination symlink traversal can overwrite files
+  outside sandbox workspace"
+description: "`stageSandboxMedia` allowed destination symlink traversal during media
+  staging, which could overwrite files outside the sandbox workspace root."
+date: "2026-03-03"
+pubdate: "2026-03-03"
+affected_range: "<2026.3.2"
+fixed_versions:
+- "2026.3.2"
+affected_versions: "All versions before 2026.3.2"
+not_impacted: "All versions starting from 2026.3.2"
+solution: "Upgrade to version 2026.3.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-cfvj-7rx7-fc7c"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-cfvj-7rx7-fc7c"
+- "https://github.com/openclaw/openclaw/commit/17ede52a4be3034f6ec4b883ac6b81ad0101558a"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:N/SC:N/SI:H/SA:N"
+uuid: "b86c126c-1634-415c-82f4-731d862e99a2"
+cwe_ids:
+- "CWE-59"
+- "CWE-937"
+- "CWE-1035"

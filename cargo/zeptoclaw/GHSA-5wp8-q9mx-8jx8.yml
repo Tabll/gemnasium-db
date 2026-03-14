@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-5wp8-q9mx-8jx8"
+identifiers:
+- "GHSA-5wp8-q9mx-8jx8"
+package_slug: "cargo/zeptoclaw"
+title: "zeptoclaw has Shell allowlist-blocklist bypass via command/argument injection
+  and file name wildcards"
+description: "[zeptoclaw](https://github.com/qhkm/zeptoclaw) implements a allowlist
+  combined with a blocklist to prevent malicious shell commands in [src/security/shell.rs](https://github.com/qhkm/zeptoclaw/blob/v0.5.8/src/security/shell.rs).
+  However, even in the `Strict` mode, attackers can completely bypass all the guards
+  from allowlist and blocklist:\n\n- to bypass the `allowlist`, command injection
+  is enough, such as `;`, `$()` etc.\n- to bypass the `REGEX_BLOCKED_PATTERNS`, argument
+  injection is enough, such as the `python3 -P -c \"...\"`\n- to bypass the `LITERAL_BLOCKED_PATTERNS`,
+  file name wildcards can do the work, such as `cat /etc/pass[w]d`"
+date: "2026-03-05"
+pubdate: "2026-03-05"
+affected_range: "<0.6.2"
+fixed_versions:
+- "0.6.2"
+affected_versions: "All versions before 0.6.2"
+not_impacted: "All versions starting from 0.6.2"
+solution: "Upgrade to version 0.6.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-5wp8-q9mx-8jx8"
+- "https://github.com/qhkm/zeptoclaw/security/advisories/GHSA-5wp8-q9mx-8jx8"
+- "https://github.com/qhkm/zeptoclaw/commit/68916c3e4f3af107f11940b27854fc7ef517058b"
+- "https://github.com/qhkm/zeptoclaw"
+- "https://github.com/qhkm/zeptoclaw/blob/fe2ef07cfec5bb46b42cdd65f52b9230c03e9270/src/security/shell.rs#L218-L243"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H"
+uuid: "09ff4622-82b0-4fd6-8ced-1c96f697ee25"
+cwe_ids:
+- "CWE-77"
+- "CWE-937"
+- "CWE-1035"

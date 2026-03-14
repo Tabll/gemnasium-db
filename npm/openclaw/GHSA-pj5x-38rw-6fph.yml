@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-pj5x-38rw-6fph"
+identifiers:
+- "GHSA-pj5x-38rw-6fph"
+package_slug: "npm/openclaw"
+title: "OpenClaw has a Command Injection via unescaped environment assignments in
+  Windows Scheduled Task script generation"
+description: "A command injection vulnerability existed in Windows Scheduled Task
+  script generation for OpenClaw. Environment values were written into `gateway.cmd`
+  using unquoted `set KEY=VALUE`, which allowed Windows shell metacharacters in config-provided
+  environment variables to break out of assignment context."
+date: "2026-03-03"
+pubdate: "2026-03-03"
+affected_range: "<2026.2.19"
+fixed_versions:
+- "2026.2.19"
+affected_versions: "All versions before 2026.2.19"
+not_impacted: "All versions starting from 2026.2.19"
+solution: "Upgrade to version 2026.2.19 or above."
+urls:
+- "https://github.com/advisories/GHSA-pj5x-38rw-6fph"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-pj5x-38rw-6fph"
+- "https://github.com/openclaw/openclaw/commit/dafe52e8cf1a041d898cfb304a485fa05e5f58fb"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:L/AC:L/AT:P/PR:N/UI:A/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+uuid: "7fe19556-c1db-4f31-8b71-1cdebabde69f"
+cwe_ids:
+- "CWE-78"
+- "CWE-937"
+- "CWE-1035"

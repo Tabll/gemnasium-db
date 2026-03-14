@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-pjvx-rx66-r3fg"
+identifiers:
+- "GHSA-pjvx-rx66-r3fg"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Cross-account sender authorization expansion in `/allowlist ...
+  --store` account scoping"
+description: "`/allowlist ... --store` resolved the selected channel `accountId` for
+  reads, but store writes still dropped that `accountId` and wrote into the legacy
+  unscoped pairing allowlist store.\n\nBecause default-account reads still merge legacy
+  unscoped entries, a store entry intended for one account could silently authorize
+  the same sender on the `default` account.\n\nThis is a real cross-account sender-authorization
+  scoping bug. Severity is set to **medium** because exploitation requires an already-authorized
+  user who can run `/allowlist` edits."
+date: "2026-03-09"
+pubdate: "2026-03-09"
+affected_range: "<2026.3.7"
+fixed_versions:
+- "2026.3.7"
+affected_versions: "All versions before 2026.3.7"
+not_impacted: "All versions starting from 2026.3.7"
+solution: "Upgrade to version 2026.3.7 or above."
+urls:
+- "https://github.com/advisories/GHSA-pjvx-rx66-r3fg"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-pjvx-rx66-r3fg"
+- "https://github.com/openclaw/openclaw/commit/70da80bcb5574a10925469048d2ebb2abf882e73"
+- "https://github.com/openclaw/openclaw"
+- "https://github.com/openclaw/openclaw/releases/tag/v2026.3.7"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N"
+uuid: "bd1eea3a-0561-4a89-8969-c9f84a8d30ab"
+cwe_ids:
+- "CWE-639"
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

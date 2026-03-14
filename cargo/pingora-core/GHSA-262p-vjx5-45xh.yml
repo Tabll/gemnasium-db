@@ -1,0 +1,53 @@
+---
+identifier: "GHSA-262p-vjx5-45xh"
+identifiers:
+- "GHSA-262p-vjx5-45xh"
+package_slug: "cargo/pingora-core"
+title: "Duplicate Advisory: HTTP Request Smuggling via HTTP/1.0 and Transfer-Encoding
+  Misparsing"
+description: "### Duplicate Advisory\nThis advisory has been withdrawn because it
+  is a duplicate of GHSA-hj7x-879w-vrp7. This link is maintained to preserve external
+  references.\n\n### Original Description\nAn HTTP Request Smuggling vulnerability
+  (CWE-444) has been found in Pingora's parsing of HTTP/1.0 and Transfer-Encoding
+  requests. The issue occurs due to improperly allowing HTTP/1.0 request bodies to
+  be close-delimited and incorrect handling of multiple Transfer-Encoding values,
+  allowing attackers to send HTTP/1.0 requests in a way that would desync Pingora’s
+  request framing from backend servers’.\n\nImpact\n\nThis vulnerability primarily
+  affects standalone Pingora deployments in front of certain backends that accept
+  HTTP/1.0 requests. An attacker could craft a malicious payload following this request
+  that Pingora forwards to the backend in order to:\n\n  *  Bypass proxy-level ACL
+  controls and WAF logic\n\n\n\n\n  *  Poison caches and upstream connections, causing
+  subsequent requests from legitimate users to receive responses intended for smuggled
+  requests\n\n\n\n\n  *  Perform cross-user attacks by hijacking sessions or smuggling
+  requests that appear to originate from the trusted proxy IP\n\n\n\n\nCloudflare's
+  CDN infrastructure was not affected by this vulnerability, as its ingress proxy
+  layers forwarded HTTP/1.1 requests only, rejected ambiguous framing such as invalid
+  Content-Length values, and forwarded a single Transfer-Encoding: chunked header
+  for chunked requests.\n\n\nMitigation:\n\nPingora users should upgrade to Pingora
+  v0.8.0 or higher that fixes this issue by correctly parsing message length headers
+  per RFC 9112 and strictly adhering to more RFC guidelines, including that HTTP request
+  bodies are never close-delimited.\n\nAs a workaround, users can reject certain requests
+  with an error in the request filter logic in order to stop processing bytes on the
+  connection and disable downstream connection reuse. The user should reject any non-HTTP/1.1
+  request, or a request that has invalid Content-Length, multiple Transfer-Encoding
+  headers, or Transfer-Encoding header that is not an exact “chunked” string match."
+date: "2026-03-05"
+pubdate: "2026-03-05"
+affected_range: "<0.8.0"
+fixed_versions:
+- "0.8.0"
+affected_versions: "All versions before 0.8.0"
+not_impacted: "All versions starting from 0.8.0"
+solution: "Upgrade to version 0.8.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-262p-vjx5-45xh"
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-2835"
+- "https://github.com/cloudflare/pingora"
+- "https://rustsec.org/advisories/RUSTSEC-2026-0034.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:N/SC:H/SI:H/SA:N"
+uuid: "94872e33-2c4d-4d52-81a6-e44231a7ba13"
+cwe_ids:
+- "CWE-444"
+- "CWE-937"
+- "CWE-1035"

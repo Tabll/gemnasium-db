@@ -8,7 +8,7 @@ description: "In accordance with our [security policy for `libcrux`](https://git
   we publish a GitHub security advisory for any releases whose CHANGELOG includes
   bug-fixes, and encourage our users to upgrade. The latest releases of the `libcrux-ecdh`,
   `libcrux-ed25519` and `libcrux-psq` crates contain the following bug-fixes:"
-date: "2026-02-12"
+date: "2026-02-27"
 pubdate: "2026-02-12"
 affected_range: "<0.0.6"
 fixed_versions:
@@ -26,6 +26,12 @@ urls:
 - "https://github.com/cryspen/libcrux/commit/a09022c5811ca7fd1c6d9a239ff294d64ee86734"
 - "https://github.com/cryspen/libcrux/commit/f303b6446c19fe9a7c993f61e426023609cd5fac"
 - "https://github.com/cryspen/libcrux"
+- "https://rustsec.org/advisories/RUSTSEC-2026-0023.html"
+- "https://rustsec.org/advisories/RUSTSEC-2026-0024.html"
+- "https://rustsec.org/advisories/RUSTSEC-2026-0025.html"
+- "https://rustsec.org/advisories/RUSTSEC-2026-0026.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:N/SC:N/SI:N/SA:N"
 uuid: "cbff3127-38d2-4949-a5d6-25bc36cd9e98"
 cwe_ids:
 - "CWE-20"

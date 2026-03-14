@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-rv2q-f2h5-6xmg"
+identifiers:
+- "GHSA-rv2q-f2h5-6xmg"
+package_slug: "npm/openclaw"
+title: "OpenClaw's Node role device-identity bypass allows unauthorized node.event
+  injection"
+description: "A client authenticated with a shared gateway token could connect as
+  `role=node` without device identity/pairing, then call `node.event` to trigger `agent.request`
+  and `voice.transcript` flows."
+date: "2026-03-03"
+pubdate: "2026-03-03"
+affected_range: "<2026.2.22"
+fixed_versions:
+- "2026.2.22"
+affected_versions: "All versions before 2026.2.22"
+not_impacted: "All versions starting from 2026.2.22"
+solution: "Upgrade to version 2026.2.22 or above."
+urls:
+- "https://github.com/advisories/GHSA-rv2q-f2h5-6xmg"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-rv2q-f2h5-6xmg"
+- "https://github.com/openclaw/openclaw/commit/ddcb2d79b17bf2a42c5037d8aeff1537a12b931e"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N"
+uuid: "8c09c352-359e-408d-8173-2193636090dd"
+cwe_ids:
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

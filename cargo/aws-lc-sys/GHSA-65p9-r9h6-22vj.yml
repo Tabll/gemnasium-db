@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-65p9-r9h6-22vj"
+identifiers:
+- "GHSA-65p9-r9h6-22vj"
+package_slug: "cargo/aws-lc-sys"
+title: "AWS-LC has Timing Side-Channel in AES-CCM Tag Verification"
+description: "AWS-LC is an open-source, general-purpose cryptographic library."
+date: "2026-03-03"
+pubdate: "2026-03-03"
+affected_range: ">=0.14.0 <0.38.0"
+fixed_versions:
+- "0.38.0"
+affected_versions: "All versions starting from 0.14.0 before 0.38.0"
+not_impacted: "All versions before 0.14.0, all versions starting from 0.38.0"
+solution: "Upgrade to version 0.38.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-65p9-r9h6-22vj"
+- "https://github.com/aws/aws-lc-rs/security/advisories/GHSA-65p9-r9h6-22vj"
+- "https://github.com/aws/aws-lc/security/advisories/GHSA-frmv-5gcm-jwxh"
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-3337"
+- "https://aws.amazon.com/security/security-bulletins/2026-005-AWS"
+- "https://github.com/aws/aws-lc-rs"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N"
+uuid: "8e30b112-299f-4328-87c4-abe99c88ede2"
+cwe_ids:
+- "CWE-208"
+- "CWE-937"
+- "CWE-1035"

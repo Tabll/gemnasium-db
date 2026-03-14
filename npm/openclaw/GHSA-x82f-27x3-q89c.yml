@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-x82f-27x3-q89c"
+identifiers:
+- "GHSA-x82f-27x3-q89c"
+package_slug: "npm/openclaw"
+title: "OpenClaw's TOCTOU symlink race in writeFileWithinRoot could create or truncate
+  files outside root boundaries"
+description: "A symlink-retarget TOCTOU race in `writeFileWithinRoot` could point
+  an attacker-controlled path alias outside the configured root between resolution
+  and write operations."
+date: "2026-03-02"
+pubdate: "2026-03-02"
+affected_range: "<2026.3.1"
+fixed_versions:
+- "2026.3.1"
+affected_versions: "All versions before 2026.3.1"
+not_impacted: "All versions starting from 2026.3.1"
+solution: "Upgrade to version 2026.3.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-x82f-27x3-q89c"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-x82f-27x3-q89c"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N"
+uuid: "cdf510dd-0c45-4fc3-85b7-a3befcaa3081"
+cwe_ids:
+- "CWE-367"
+- "CWE-59"
+- "CWE-937"
+- "CWE-1035"

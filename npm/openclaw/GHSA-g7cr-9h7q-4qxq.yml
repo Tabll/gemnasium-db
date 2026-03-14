@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-g7cr-9h7q-4qxq"
+identifiers:
+- "GHSA-g7cr-9h7q-4qxq"
+package_slug: "npm/openclaw"
+title: "OpenClaw's MS Teams sender allowlist bypass when route allowlist is configured
+  and sender allowlist is empty"
+description: "OpenClaw's Microsoft Teams plugin widened group sender authorization
+  when a team/channel route allowlist was configured but `groupAllowFrom` was empty.
+  Before the fix, a matching route allowlist entry could cause the message handler
+  to synthesize wildcard sender authorization for that route, allowing any sender
+  in the matched team/channel to bypass the intended `groupPolicy: \"allowlist\"`
+  sender check.\n\nThis does not affect default unauthenticated access, but it does
+  weaken a documented Teams group authorization boundary and can allow unauthorized
+  group senders to trigger replies in allowlisted Teams routes."
+date: "2026-03-12"
+pubdate: "2026-03-12"
+affected_range: "<2026.3.8"
+fixed_versions:
+- "2026.3.8"
+affected_versions: "All versions before 2026.3.8"
+not_impacted: "All versions starting from 2026.3.8"
+solution: "Upgrade to version 2026.3.8 or above."
+urls:
+- "https://github.com/advisories/GHSA-g7cr-9h7q-4qxq"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-g7cr-9h7q-4qxq"
+- "https://github.com/openclaw/openclaw/commit/88aee9161e0e6d32e810a25711e32a808a1777b2"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "3f392707-6217-4fe6-a6c7-1a8a604a1777"
+cwe_ids:
+- "CWE-289"
+- "CWE-937"
+- "CWE-1035"

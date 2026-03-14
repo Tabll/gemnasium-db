@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-qc36-x95h-7j53"
+identifiers:
+- "GHSA-qc36-x95h-7j53"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Unrecognized script runners could bypass `system.run` approval integrity"
+description: "In affected versions of `openclaw`, node-host `system.run` approvals
+  did not bind a mutable file operand for some script runners, including forms such
+  as `tsx` and `jiti`. An attacker could obtain approval for a benign script-runner
+  command, rewrite the referenced script on disk, and have the modified code execute
+  under the already approved run context."
+date: "2026-03-13"
+pubdate: "2026-03-13"
+affected_range: "<2026.3.11"
+fixed_versions:
+- "2026.3.11"
+affected_versions: "All versions before 2026.3.11"
+not_impacted: "All versions starting from 2026.3.11"
+solution: "Upgrade to version 2026.3.11 or above."
+urls:
+- "https://github.com/advisories/GHSA-qc36-x95h-7j53"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-qc36-x95h-7j53"
+- "https://github.com/openclaw/openclaw"
+- "https://github.com/openclaw/openclaw/releases/tag/v2026.3.11"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:C/C:H/I:H/A:H"
+uuid: "b9e7e7b4-a477-48c1-b652-97cd0594aeba"
+cwe_ids:
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

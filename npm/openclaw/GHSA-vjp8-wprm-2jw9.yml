@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-vjp8-wprm-2jw9"
+identifiers:
+- "GHSA-vjp8-wprm-2jw9"
+package_slug: "npm/openclaw"
+title: "OpenClaw has cross-account DM pairing authorization bypass via unscoped pairing
+  store access"
+description: "OpenClaw had account-scope gaps in pairing-store access for DM pairing
+  policy, which could let a pairing approval from one account authorize the same sender
+  on another account in multi-account setups."
+date: "2026-03-04"
+pubdate: "2026-03-04"
+affected_range: "<2026.2.26"
+fixed_versions:
+- "2026.2.26"
+affected_versions: "All versions before 2026.2.26"
+not_impacted: "All versions starting from 2026.2.26"
+solution: "Upgrade to version 2026.2.26 or above."
+urls:
+- "https://github.com/advisories/GHSA-vjp8-wprm-2jw9"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-vjp8-wprm-2jw9"
+- "https://github.com/openclaw/openclaw/commit/a0c5e28f3bf0cc0cd9311f9e9ec2ca0352550dcf"
+- "https://github.com/openclaw/openclaw/commit/bce643a0bd145d3e9cb55400af33bd1b85baeb02"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:U/C:L/I:L/A:N"
+uuid: "328c6895-4e4d-4465-a5c8-53b993971a71"
+cwe_ids:
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

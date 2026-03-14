@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-2ww6-868g-2c56"
+identifiers:
+- "GHSA-2ww6-868g-2c56"
+package_slug: "npm/openclaw"
+title: "OpenClaw Vulnerable to HTML injection via unvalidated image MIME type in data-URL
+  interpolation"
+description: "The HTML session exporter (`src/auto-reply/reply/export-html/template.js`)
+  interpolates `img.mimeType` directly into `<img src=\"data:...\">` attributes without
+  validation or escaping. A crafted `mimeType` value (e.g., `x\" onerror=\"alert(1)`)
+  can break out of the attribute context and execute arbitrary JavaScript."
+date: "2026-03-03"
+pubdate: "2026-03-03"
+affected_range: "<2026.2.23"
+fixed_versions:
+- "2026.2.23"
+affected_versions: "All versions before 2026.2.23"
+not_impacted: "All versions starting from 2026.2.23"
+solution: "Upgrade to version 2026.2.23 or above."
+urls:
+- "https://github.com/advisories/GHSA-2ww6-868g-2c56"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-2ww6-868g-2c56"
+- "https://github.com/openclaw/openclaw/pull/24140"
+- "https://github.com/openclaw/openclaw/commit/f3adf142c195000cbde31200626a1d8c8b716df9"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:N/VI:N/VA:N/SC:L/SI:L/SA:N"
+uuid: "48d16769-f755-48ab-94e2-72ba977163ff"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

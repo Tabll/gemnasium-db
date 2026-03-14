@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-rvv3-g6hj-g44x"
+identifiers:
+- "GHSA-rvv3-g6hj-g44x"
+package_slug: "nuget/AutoMapper"
+title: "AutoMapper Vulnerable to Denial of Service (DoS) via Uncontrolled Recursion"
+description: "AutoMapper is vulnerable to a Denial of Service (DoS) attack. When mapping
+  deeply nested object graphs, the library uses recursive method calls without enforcing
+  a default maximum depth limit. This allows an attacker to provide a specially crafted
+  object graph that exhausts the thread's stack memory, triggering a `StackOverflowException`
+  and causing the entire application process to terminate."
+date: "2026-03-13"
+pubdate: "2026-03-13"
+affected_range: "[,16.1.1)"
+fixed_versions:
+- "16.1.1"
+affected_versions: "All versions before 16.1.1"
+not_impacted: "All versions starting from 16.1.1"
+solution: "Upgrade to version 16.1.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-rvv3-g6hj-g44x"
+- "https://github.com/LuckyPennySoftware/AutoMapper/security/advisories/GHSA-rvv3-g6hj-g44x"
+- "https://github.com/LuckyPennySoftware/AutoMapper/commit/0afaf1e91648fca1a57512e94dd00a76ee016816"
+- "https://github.com/LuckyPennySoftware/AutoMapper"
+- "https://github.com/LuckyPennySoftware/AutoMapper/releases/tag/v16.1.1"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "47eb198d-0e26-4b3c-a7c2-69b65e9addcf"
+cwe_ids:
+- "CWE-674"
+- "CWE-937"
+- "CWE-1035"

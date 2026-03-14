@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-wfx3-6g53-9fgc"
+identifiers:
+- "GHSA-wfx3-6g53-9fgc"
+package_slug: "nuget/Magick.NET-Q16-arm64"
+title: "ImageMagick: Memory Leak in multiple coders that write raw pixel data "
+description: "A memory leak vulnerability exists in multiple coders that write raw
+  pixel data where an object is not freed.\n\n```\nDirect leak of 160 byte(s) in 1
+  object(s) allocated from:\n```"
+date: "2026-02-25"
+pubdate: "2026-02-25"
+affected_range: "[,14.10.3)"
+fixed_versions:
+- "14.10.3"
+affected_versions: "All versions before 14.10.3"
+not_impacted: "All versions starting from 14.10.3"
+solution: "Upgrade to version 14.10.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-wfx3-6g53-9fgc"
+- "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-wfx3-6g53-9fgc"
+- "https://github.com/ImageMagick/ImageMagick/commit/fe0a49a58ac5b7a18ff2618b6207dcad71123e43"
+- "https://github.com/ImageMagick/ImageMagick"
+- "https://github.com/dlemstra/Magick.NET/releases/tag/14.10.3"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L"
+uuid: "fee6bf93-0949-40a3-a6b3-a342faa94144"
+cwe_ids:
+- "CWE-401"
+- "CWE-937"
+- "CWE-1035"

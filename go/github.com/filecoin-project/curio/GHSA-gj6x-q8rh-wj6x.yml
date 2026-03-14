@@ -1,0 +1,36 @@
+---
+identifier: "GHSA-gj6x-q8rh-wj6x"
+identifiers:
+- "GHSA-gj6x-q8rh-wj6x"
+package_slug: "go/github.com/filecoin-project/curio"
+title: "Curio exposes database credentials to users with network access through verbose
+  HTTP error responses"
+description: "Multiple HTTP handlers in Curio passed raw database error messages to
+  HTTP clients via `http.Error()`. When the PostgreSQL/YugabyteDB driver (pgx) returned
+  errors, these could contain the database connection string — including hostname,
+  port, username, and password. Additionally, the internal connection string was constructed
+  with the plaintext password embedded in the URL, which was also included in startup
+  error messages and could surface in logs."
+date: "2026-02-26"
+pubdate: "2026-02-26"
+affected_range: ">=1.24.3 <1.27.3-rc2"
+fixed_versions:
+- "1.27.3-rc2"
+affected_versions: "All versions starting from 1.24.3 before 1.27.3-rc2"
+not_impacted: "All versions before 1.24.3, all versions starting from 1.27.3-rc2"
+solution: "Upgrade to version 1.27.3-rc2 or above."
+urls:
+- "https://github.com/advisories/GHSA-gj6x-q8rh-wj6x"
+- "https://github.com/filecoin-project/curio/security/advisories/GHSA-gj6x-q8rh-wj6x"
+- "https://github.com/filecoin-project/curio/pull/919"
+- "https://github.com/filecoin-project/curio/commit/551da78e0123892600d8e6dfe9de7a579055d80b"
+- "https://github.com/filecoin-project/curio"
+- "https://github.com/filecoin-project/curio/blob/main/documentation/en/design/README.md#security-boundary"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N"
+uuid: "b950e1fe-3a8a-441e-be20-3d38a36468d4"
+cwe_ids:
+- "CWE-209"
+- "CWE-532"
+- "CWE-937"
+- "CWE-1035"

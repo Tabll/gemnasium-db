@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-x442-m7cc-hr92"
+identifiers:
+- "GHSA-x442-m7cc-hr92"
+package_slug: "cargo/kora-lib"
+title: "kora-lib: Unrecognized Instruction Types Create Empty Stubs That Bypass Fee
+  Payer Policy"
+description: "When inner CPI instructions use instruction types not recognized by
+  Kora's parser (including Token-2022 extension instructions like `ConfidentialTransfer`,
+  `TransferFeeExtension::WithdrawWithheldTokens`, etc.), they are reconstructed as
+  stub instructions with empty accounts and empty data. These stubs fail deserialization
+  during fee payer policy validation and are silently skipped, meaning any fee payer
+  usage within those instructions goes completely unchecked."
+date: "2026-03-12"
+pubdate: "2026-03-12"
+affected_range: "<2.0.5"
+fixed_versions:
+- "2.0.5"
+affected_versions: "All versions before 2.0.5"
+not_impacted: "All versions starting from 2.0.5"
+solution: "Upgrade to version 2.0.5 or above."
+urls:
+- "https://github.com/advisories/GHSA-x442-m7cc-hr92"
+- "https://github.com/solana-foundation/kora/security/advisories/GHSA-x442-m7cc-hr92"
+- "https://github.com/solana-foundation/kora"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "cc1400ee-67e9-40fb-aae0-85d93c4e23eb"
+cwe_ids:
+- "CWE-693"
+- "CWE-937"
+- "CWE-1035"

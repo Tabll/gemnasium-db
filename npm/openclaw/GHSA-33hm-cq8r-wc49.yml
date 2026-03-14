@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-33hm-cq8r-wc49"
+identifiers:
+- "GHSA-33hm-cq8r-wc49"
+package_slug: "npm/openclaw"
+title: "Temporary path handling could write outside OpenClaw temp boundary"
+description: "Sandbox media local-path validation accepted absolute paths under host
+  tmp, even when those paths were outside the active sandbox root."
+date: "2026-03-03"
+pubdate: "2026-03-03"
+affected_range: "<2026.2.24"
+fixed_versions:
+- "2026.2.24"
+affected_versions: "All versions before 2026.2.24"
+not_impacted: "All versions starting from 2026.2.24"
+solution: "Upgrade to version 2026.2.24 or above."
+urls:
+- "https://github.com/advisories/GHSA-33hm-cq8r-wc49"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-33hm-cq8r-wc49"
+- "https://github.com/openclaw/openclaw/commit/79a7b3d22ef92e36a4031093d80a0acb0d82f351"
+- "https://github.com/openclaw/openclaw/commit/d3da67c7a9b463edc1a9b1c1f7af107a34ca32f5"
+- "https://github.com/openclaw/openclaw/commit/def993dbd843ff28f2b3bad5cc24603874ba9f1e"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:N/SC:N/SI:H/SA:N"
+uuid: "15bfc454-173f-481b-b240-6bfe7cc4c32b"
+cwe_ids:
+- "CWE-22"
+- "CWE-284"
+- "CWE-937"
+- "CWE-1035"

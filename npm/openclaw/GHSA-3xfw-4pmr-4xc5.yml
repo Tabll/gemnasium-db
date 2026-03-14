@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-3xfw-4pmr-4xc5"
+identifiers:
+- "GHSA-3xfw-4pmr-4xc5"
+package_slug: "npm/openclaw"
+title: "OpenClaw safeBins grep -e File Read Bypass (stdin-only policy bypass)"
+description: "OpenClaw `tools.exec.safeBins` had a stdin-only policy bypass for `grep`.\nIf
+  pattern input was supplied through `-e` / `--regexp`, the validator consumed the
+  pattern as a flag value and still allowed one positional operand. That positional
+  could be a bare filename like `.env`."
+date: "2026-03-03"
+pubdate: "2026-03-03"
+affected_range: "<2026.2.21"
+fixed_versions:
+- "2026.2.21"
+affected_versions: "All versions before 2026.2.21"
+not_impacted: "All versions starting from 2026.2.21"
+solution: "Upgrade to version 2026.2.21 or above."
+urls:
+- "https://github.com/advisories/GHSA-3xfw-4pmr-4xc5"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-3xfw-4pmr-4xc5"
+- "https://github.com/openclaw/openclaw/commit/c6ee14d60e4cbd6a82f9b2d74ebeb1e8ee814964"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "29ef79c8-5814-4217-961f-85cd507c0011"
+cwe_ids:
+- "CWE-184"
+- "CWE-937"
+- "CWE-1035"

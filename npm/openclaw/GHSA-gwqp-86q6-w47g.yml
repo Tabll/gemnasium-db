@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-gwqp-86q6-w47g"
+identifiers:
+- "GHSA-gwqp-86q6-w47g"
+package_slug: "npm/openclaw"
+title: "OpenClaw's exec allow-always can be bypassed via unrecognized multiplexer
+  shell wrappers (busybox/toybox sh -c)"
+description: "OpenClaw exec approvals could be bypassed in `allowlist` mode when `allow-always`
+  was granted through unrecognized multiplexer shell wrappers (notably `busybox sh
+  -c` and `toybox sh -c`)."
+date: "2026-03-02"
+pubdate: "2026-03-02"
+affected_range: "<2026.2.23"
+fixed_versions:
+- "2026.2.23"
+affected_versions: "All versions before 2026.2.23"
+not_impacted: "All versions starting from 2026.2.23"
+solution: "Upgrade to version 2026.2.23 or above."
+urls:
+- "https://github.com/advisories/GHSA-gwqp-86q6-w47g"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-gwqp-86q6-w47g"
+- "https://github.com/openclaw/openclaw/commit/a67689a7e3ad494b6637c76235a664322d526f9e"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "ea85d458-746c-4be0-b3b1-43553f8b025c"
+cwe_ids:
+- "CWE-184"
+- "CWE-937"
+- "CWE-1035"

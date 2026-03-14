@@ -1,0 +1,36 @@
+---
+identifier: "GHSA-xx6g-43w2-9g6g"
+identifiers:
+- "GHSA-xx6g-43w2-9g6g"
+package_slug: "go/github.com/OliveTin/OliveTin"
+title: "OliveTin's email argument makes compliance harder, enables log injection"
+description: "The typeSafetyCheckEmail() function in service/internal/executor/arguments.go
+  calls log.Errorf() on every invocation including when validation succeeds (err ==
+  nil). This means every email address submitted by any user is written to the application's
+  ERROR-level log unconditionally. Because the raw user-supplied value is logged without
+  sanitization, an attacker can inject newline characters to forge arbitrary structured
+  log entries (log injection). In deployments using centralized logging (ELK, Splunk,
+  Grafana), the injected lines are parsed as real events, enabling fake security alerts,
+  audit trail manipulation, and persistent misdirection of incident response."
+date: "2026-03-12"
+pubdate: "2026-03-12"
+affected_range: "<3000.11.3"
+fixed_versions:
+- "3000.11.3"
+affected_versions: "All versions before 3000.11.3"
+not_impacted: "All versions starting from 3000.11.3"
+solution: "Upgrade to version 3000.11.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-xx6g-43w2-9g6g"
+- "https://github.com/OliveTin/OliveTin/security/advisories/GHSA-xx6g-43w2-9g6g"
+- "https://github.com/OliveTin/OliveTin/commit/bc5e9fbe1e22ff87a4b277cb56605a46a10e561a"
+- "https://github.com/OliveTin/OliveTin"
+- "https://github.com/OliveTin/OliveTin/releases/tag/3000.11.3"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "396a8e60-ab30-45d9-a72a-e1a6559bbf51"
+cwe_ids:
+- "CWE-117"
+- "CWE-532"
+- "CWE-937"
+- "CWE-1035"

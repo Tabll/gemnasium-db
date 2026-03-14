@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-v6x2-2qvm-6gv8"
+identifiers:
+- "GHSA-v6x2-2qvm-6gv8"
+package_slug: "npm/openclaw"
+title: "OpenClaw reuses the gateway auth token in the owner ID prompt hashing fallback"
+description: "- Auth-secret dual-use across security domains (gateway auth and prompt
+  metadata hashing).\n- Hash outputs are visible to third-party model providers in
+  system prompts.\n- No direct plaintext token disclosure.\n- Practical risk is highest
+  when operators use weak gateway tokens and leave owner hash secret unset."
+date: "2026-03-03"
+pubdate: "2026-03-03"
+affected_range: "<2026.2.22"
+fixed_versions:
+- "2026.2.22"
+affected_versions: "All versions before 2026.2.22"
+not_impacted: "All versions starting from 2026.2.22"
+solution: "Upgrade to version 2026.2.22 or above."
+urls:
+- "https://github.com/advisories/GHSA-v6x2-2qvm-6gv8"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-v6x2-2qvm-6gv8"
+- "https://github.com/openclaw/openclaw/commit/c99e7696e6893083b256f0a6c88fb060f3a76fb7"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:L/AC:H/AT:P/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N"
+uuid: "a4e35b83-ef00-460c-81ca-154345ad827e"
+cwe_ids:
+- "CWE-522"
+- "CWE-937"
+- "CWE-1035"

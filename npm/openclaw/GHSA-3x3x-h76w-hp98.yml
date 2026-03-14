@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-3x3x-h76w-hp98"
+identifiers:
+- "GHSA-3x3x-h76w-hp98"
+package_slug: "npm/openclaw"
+title: "OpenClaw exec allowlist safeBins short-option bypass could permit arbitrary
+  file write"
+description: "OpenClaw `exec` allowlist/safeBins policy could be bypassed with attached
+  short-option payloads (for example `sort -o/tmp/poc`), enabling file-write operations
+  while still satisfying safeBins checks."
+date: "2026-03-03"
+pubdate: "2026-03-03"
+affected_range: "<2026.2.19"
+fixed_versions:
+- "2026.2.19"
+affected_versions: "All versions before 2026.2.19"
+not_impacted: "All versions starting from 2026.2.19"
+solution: "Upgrade to version 2026.2.19 or above."
+urls:
+- "https://github.com/advisories/GHSA-3x3x-h76w-hp98"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-3x3x-h76w-hp98"
+- "https://github.com/openclaw/openclaw/commit/bafdbb6f112409a65decd3d4e7350fbd637c7754"
+- "https://github.com/openclaw/openclaw/commit/cfe8457a0f4aae5324daec261d3b0aad1461a4bc"
+- "https://github.com/openclaw/openclaw/commit/fec48a5006eab37c6a5821726ccaeec886486b13"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "27d801f5-a00e-40b0-9f34-ccd3af94530c"
+cwe_ids:
+- "CWE-184"
+- "CWE-937"
+- "CWE-1035"

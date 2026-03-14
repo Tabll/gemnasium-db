@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-mwcg-wfq3-4gjc"
+identifiers:
+- "GHSA-mwcg-wfq3-4gjc"
+package_slug: "npm/openclaw"
+title: "OpenClaw's system.run approval TOCTOU via mutable symlink cwd target on node
+  host"
+description: "In `openclaw@2026.2.24`, approval-bound `system.run` on node hosts could
+  be influenced by mutable symlink `cwd` targets between approval and execution."
+date: "2026-03-03"
+pubdate: "2026-03-03"
+affected_range: "<2026.2.25"
+fixed_versions:
+- "2026.2.25"
+affected_versions: "All versions before 2026.2.25"
+not_impacted: "All versions starting from 2026.2.25"
+solution: "Upgrade to version 2026.2.25 or above."
+urls:
+- "https://github.com/advisories/GHSA-mwcg-wfq3-4gjc"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-mwcg-wfq3-4gjc"
+- "https://github.com/openclaw/openclaw/commit/f789f880c934caa8be25b38832f27f90f37903db"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N"
+uuid: "465487bf-d407-47e1-ada5-fa69df657ed8"
+cwe_ids:
+- "CWE-367"
+- "CWE-59"
+- "CWE-937"
+- "CWE-1035"

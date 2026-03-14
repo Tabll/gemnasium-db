@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-h656-5vcf-cm23"
+identifiers:
+- "GHSA-h656-5vcf-cm23"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Unauthorized Telegram Senders Trigger Media Download and Disk Write
+  Before Access Check"
+description: "In Telegram DM mode, inbound media was downloaded and written to disk
+  before sender authorization checks completed. An unauthorized sender could trigger
+  inbound media download/write activity (including media groups) even when DM access
+  should be denied."
+date: "2026-03-03"
+pubdate: "2026-03-03"
+affected_range: "<2026.2.24"
+fixed_versions:
+- "2026.2.24"
+affected_versions: "All versions before 2026.2.24"
+not_impacted: "All versions starting from 2026.2.24"
+solution: "Upgrade to version 2026.2.24 or above."
+urls:
+- "https://github.com/advisories/GHSA-h656-5vcf-cm23"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-h656-5vcf-cm23"
+- "https://github.com/openclaw/openclaw/commit/9514201fb9b51de5d0b23151110d0ff5d9c8bd67"
+- "https://github.com/openclaw/openclaw"
+uuid: "3a5df3f4-54ad-4f23-b888-8fd9cd9bd53c"
+cwe_ids:
+- "CWE-208"
+- "CWE-404"
+- "CWE-406"
+- "CWE-770"
+- "CWE-937"
+- "CWE-1035"

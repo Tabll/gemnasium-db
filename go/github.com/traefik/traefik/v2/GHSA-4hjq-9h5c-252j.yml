@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-4hjq-9h5c-252j"
+identifiers:
+- "GHSA-4hjq-9h5c-252j"
+package_slug: "go/github.com/traefik/traefik/v2"
+title: "Traefik: HTTP/2 frames can cause a running server to panic"
+description: "More Details:\n- https://nvd.nist.gov/vuln/detail/CVE-2026-27141\n-
+  https://pkg.go.dev/golang.org/x/net/http2?tab=versions"
+date: "2026-03-12"
+pubdate: "2026-03-12"
+affected_range: "<2.11.40"
+fixed_versions:
+- "2.11.40"
+affected_versions: "All versions before 2.11.40"
+not_impacted: "All versions starting from 2.11.40"
+solution: "Upgrade to version 2.11.40 or above."
+urls:
+- "https://github.com/advisories/GHSA-4hjq-9h5c-252j"
+- "https://github.com/traefik/traefik/security/advisories/GHSA-4hjq-9h5c-252j"
+- "https://github.com/traefik/traefik"
+- "https://github.com/traefik/traefik/releases/tag/v2.11.40"
+- "https://github.com/traefik/traefik/releases/tag/v3.6.10"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:N/SC:N/SI:N/SA:H"
+uuid: "cee164cc-230c-43af-ae22-605fdf83d755"
+cwe_ids:
+- "CWE-476"
+- "CWE-937"
+- "CWE-1035"

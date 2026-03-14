@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-6w86-wgwq-rgq8"
+identifiers:
+- "GHSA-6w86-wgwq-rgq8"
+package_slug: "cargo/neqo-qpack"
+title: "neqo-qpack has iInteger overflow in qpack dynamic table indexing"
+description: "An unsanitized qpack index can lead to an integer overflow, panicing
+  in debug mode, accessing the wrong or no dynamic table entry in release mode.\n\nWhat
+  does this mean for Firefox? Firefox runs Neqo in release mode. A malicious remote
+  can cause its own QUIC connection to fail to use qpack, i.e. compression, or enter
+  an inconsistent state. The remote can not crash Firefox, nor affect other QUIC connections."
+date: "2026-03-04"
+pubdate: "2026-03-04"
+affected_range: "<=0.22.2"
+fixed_versions: []
+affected_versions: "All versions up to 0.22.2"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-6w86-wgwq-rgq8"
+- "https://github.com/mozilla/neqo/security/advisories/GHSA-6w86-wgwq-rgq8"
+- "https://github.com/mozilla/neqo/issues/3406"
+- "https://github.com/mozilla/neqo"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+cvss_v4: "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N"
+uuid: "a8fdd31d-39f7-4d03-94c1-7ff54c52ff2b"
+cwe_ids:
+- "CWE-190"
+- "CWE-937"
+- "CWE-1035"

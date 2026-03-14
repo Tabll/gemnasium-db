@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-gp3q-wpq4-5c5h"
+identifiers:
+- "GHSA-gp3q-wpq4-5c5h"
+package_slug: "npm/openclaw"
+title: "OpenClaw: LINE group allowlist scope mismatch with DM pairing-store entries"
+description: "In specific LINE configurations, sender IDs approved through DM pairing
+  could also satisfy group allowlist checks when operators expected group sender access
+  to be scoped only to explicit group allowlists."
+date: "2026-03-12"
+pubdate: "2026-03-12"
+affected_range: "<2026.2.26"
+fixed_versions:
+- "2026.2.26"
+affected_versions: "All versions before 2026.2.26"
+not_impacted: "All versions starting from 2026.2.26"
+solution: "Upgrade to version 2026.2.26 or above."
+urls:
+- "https://github.com/advisories/GHSA-gp3q-wpq4-5c5h"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-gp3q-wpq4-5c5h"
+- "https://github.com/openclaw/openclaw/commit/892a9c24b0f6118729ab5b5f5499b1a7e792dd15"
+- "https://github.com/openclaw/openclaw/commit/8bdda7a651c21e98faccdbbd73081e79cffe8be0"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:H/A:N"
+uuid: "76b7f9f1-d42b-4b16-820a-a4f4a321201c"
+cwe_ids:
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

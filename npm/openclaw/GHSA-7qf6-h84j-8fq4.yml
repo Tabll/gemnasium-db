@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-7qf6-h84j-8fq4"
+identifiers:
+- "GHSA-7qf6-h84j-8fq4"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Microsoft Teams media fetch paths bypass shared SSRF guard model"
+description: "Microsoft Teams media handling used mixed fetch paths for Graph metadata/content
+  and attachment auth-retry flows. Some paths bypassed the shared SSRF guard model
+  and created inconsistent host/DNS enforcement across redirect/fetch hops."
+date: "2026-03-03"
+pubdate: "2026-03-03"
+affected_range: "<2026.2.26"
+fixed_versions:
+- "2026.2.26"
+affected_versions: "All versions before 2026.2.26"
+not_impacted: "All versions starting from 2026.2.26"
+solution: "Upgrade to version 2026.2.26 or above."
+urls:
+- "https://github.com/advisories/GHSA-7qf6-h84j-8fq4"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-7qf6-h84j-8fq4"
+- "https://github.com/openclaw/openclaw/commit/57334cd7d85174d5f951de01114fd5801b063564"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:H/AT:P/PR:L/UI:N/VC:N/VI:N/VA:N/SC:L/SI:N/SA:N"
+uuid: "9ed92c4a-55bb-4257-8a7e-6d96913f9501"
+cwe_ids:
+- "CWE-367"
+- "CWE-918"
+- "CWE-937"
+- "CWE-1035"

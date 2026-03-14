@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-ccg8-46r6-9qgj"
+identifiers:
+- "GHSA-ccg8-46r6-9qgj"
+package_slug: "npm/openclaw"
+title: "OpenClaw's dispatch-wrapper depth-cap mismatch can bypass shell-wrapper approval
+  gating in system.run allowlist mode"
+description: "A wrapper-depth parsing mismatch in `system.run` allowed nested transparent
+  dispatch wrappers (for example repeated `/usr/bin/env`) to suppress shell-wrapper
+  detection while still matching allowlist resolution. In `security=allowlist` + `ask=on-miss`,
+  this could bypass the expected approval prompt for shell execution."
+date: "2026-03-03"
+pubdate: "2026-03-03"
+affected_range: "<2026.2.24"
+fixed_versions:
+- "2026.2.24"
+affected_versions: "All versions before 2026.2.24"
+not_impacted: "All versions starting from 2026.2.24"
+solution: "Upgrade to version 2026.2.24 or above."
+urls:
+- "https://github.com/advisories/GHSA-ccg8-46r6-9qgj"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-ccg8-46r6-9qgj"
+- "https://github.com/openclaw/openclaw/commit/57c9a18180c8b14885bbd95474cbb17ff2d03f0b"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "210ddea2-5c80-4d81-86d4-6ec42cfcb8d4"
+cwe_ids:
+- "CWE-284"
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

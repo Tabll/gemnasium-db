@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-hwpq-rrpf-pgcq"
+identifiers:
+- "GHSA-hwpq-rrpf-pgcq"
+package_slug: "npm/openclaw"
+title: "OpenClaw: system.run approval identity mismatch could execute a different
+  binary than displayed"
+description: "`system.run` approvals in OpenClaw used rendered command text as the
+  approval identity while trimming argv token whitespace. Runtime execution still
+  used raw argv. A crafted trailing-space executable token could therefore execute
+  a different binary than what the approver saw."
+date: "2026-03-02"
+pubdate: "2026-03-02"
+affected_range: "<2026.2.25"
+fixed_versions:
+- "2026.2.25"
+affected_versions: "All versions before 2026.2.25"
+not_impacted: "All versions starting from 2026.2.25"
+solution: "Upgrade to version 2026.2.25 or above."
+urls:
+- "https://github.com/advisories/GHSA-hwpq-rrpf-pgcq"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-hwpq-rrpf-pgcq"
+- "https://github.com/openclaw/openclaw/commit/03e689fc89bbecbcd02876a95957ef1ad9caa176"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+uuid: "0b67e28d-84b1-43a8-a783-85074a53ae5b"
+cwe_ids:
+- "CWE-436"
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

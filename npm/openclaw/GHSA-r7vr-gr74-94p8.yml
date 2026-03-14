@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-r7vr-gr74-94p8"
+identifiers:
+- "GHSA-r7vr-gr74-94p8"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Command-authorized non-owners could reach owner-only `/config` and
+  `/debug` surfaces"
+description: "OpenClaw documented `/config` and `/debug` as owner-only commands, but
+  the command handlers checked only whether the sender was command-authorized. A lower-trust
+  sender who was intentionally allowed to run commands could still reach privileged
+  configuration and debugging surfaces."
+date: "2026-03-13"
+pubdate: "2026-03-13"
+affected_range: "<2026.3.12"
+fixed_versions:
+- "2026.3.12"
+affected_versions: "All versions before 2026.3.12"
+not_impacted: "All versions starting from 2026.3.12"
+solution: "Upgrade to version 2026.3.12 or above."
+urls:
+- "https://github.com/advisories/GHSA-r7vr-gr74-94p8"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-r7vr-gr74-94p8"
+- "https://github.com/openclaw/openclaw/pull/44305"
+- "https://github.com/openclaw/openclaw/commit/08aa57a3de37d337b226ae861f573779f112ff2e"
+- "https://github.com/openclaw/openclaw"
+- "https://github.com/openclaw/openclaw/releases/tag/v2026.3.12"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+uuid: "1cc1fdd8-6baa-46b1-9d88-07911b9422b5"
+cwe_ids:
+- "CWE-285"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-v892-hwpg-jwqp"
+identifiers:
+- "GHSA-v892-hwpg-jwqp"
+package_slug: "npm/openclaw"
+title: "OpenClaw vulnerable to path traversal (Zip Slip) in archive extraction during
+  explicit installation commands"
+description: "A path traversal (Zip Slip) issue in archive extraction during explicit
+  installation commands could allow a crafted archive to write files outside the intended
+  extraction directory."
+date: "2026-03-02"
+pubdate: "2026-03-02"
+affected_range: ">=2026.1.16-2 <2026.2.14"
+fixed_versions:
+- "2026.2.14"
+affected_versions: "All versions starting from 2026.1.16-2 before 2026.2.14"
+not_impacted: "All versions before 2026.1.16-2, all versions starting from 2026.2.14"
+solution: "Upgrade to version 2026.2.14 or above."
+urls:
+- "https://github.com/advisories/GHSA-v892-hwpg-jwqp"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-v892-hwpg-jwqp"
+- "https://github.com/openclaw/openclaw/commit/3aa94afcfd12104c683c9cad81faf434d0dadf87"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N"
+uuid: "70f71d28-ed40-4736-a037-bf66260eed80"
+cwe_ids:
+- "CWE-22"
+- "CWE-937"
+- "CWE-1035"

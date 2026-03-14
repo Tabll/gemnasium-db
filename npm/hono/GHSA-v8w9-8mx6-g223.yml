@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-v8w9-8mx6-g223"
+identifiers:
+- "GHSA-v8w9-8mx6-g223"
+package_slug: "npm/hono"
+title: "Hono vulnerable to Prototype Pollution possible through __proto__ key allowed
+  in parseBody({ dot: true })"
+description: "When using `parseBody({ dot: true })` in HonoRequest, specially crafted
+  form field names such as `__proto__.x` could create objects containing a `__proto__`
+  property.\n\nIf the parsed result is later merged into regular JavaScript objects
+  using unsafe merge patterns, this may lead to prototype pollution in the target
+  object."
+date: "2026-03-11"
+pubdate: "2026-03-11"
+affected_range: "<4.12.7"
+fixed_versions:
+- "4.12.7"
+affected_versions: "All versions before 4.12.7"
+not_impacted: "All versions starting from 4.12.7"
+solution: "Upgrade to version 4.12.7 or above."
+urls:
+- "https://github.com/advisories/GHSA-v8w9-8mx6-g223"
+- "https://github.com/honojs/hono/security/advisories/GHSA-v8w9-8mx6-g223"
+- "https://github.com/honojs/hono/commit/ef902257e0beacbb83d2a9549b3b83e03514a6fe"
+- "https://github.com/honojs/hono"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N"
+uuid: "6f9a065e-fbd0-4d8e-8b05-a8a283110829"
+cwe_ids:
+- "CWE-1321"
+- "CWE-937"
+- "CWE-1035"

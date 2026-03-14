@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-w9cg-v44m-4qv8"
+identifiers:
+- "GHSA-w9cg-v44m-4qv8"
+package_slug: "npm/openclaw"
+title: "OpenClaw affected by BASH_ENV / ENV startup-file injection into spawned shell
+  commands"
+description: "`BASH_ENV` / `ENV` startup-file injection could lead to unintended pre-command
+  shell execution when attacker-controlled environment values were admitted and then
+  inherited by host command execution paths."
+date: "2026-03-03"
+pubdate: "2026-03-03"
+affected_range: "<2026.2.21"
+fixed_versions:
+- "2026.2.21"
+affected_versions: "All versions before 2026.2.21"
+not_impacted: "All versions starting from 2026.2.21"
+solution: "Upgrade to version 2026.2.21 or above."
+urls:
+- "https://github.com/advisories/GHSA-w9cg-v44m-4qv8"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-w9cg-v44m-4qv8"
+- "https://github.com/openclaw/openclaw/commit/2cdbadee1f8fcaa93302d7debbfc529e19868ea4"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:L/AC:L/AT:P/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+uuid: "ed1b863e-7f0a-48c1-9293-90704beeff61"
+cwe_ids:
+- "CWE-15"
+- "CWE-78"
+- "CWE-937"
+- "CWE-1035"

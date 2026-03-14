@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-mj4p-rc52-m843"
+identifiers:
+- "GHSA-mj4p-rc52-m843"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Sandbox staged writes could escape the verified parent directory
+  before commit"
+description: "In affected versions of `openclaw`, sandbox fs-bridge writes validated
+  the destination before commit, but temporary file creation and population were not
+  pinned to a verified parent directory. A raced parent-path alias change could cause
+  the staged temp file to be created outside the intended writable mount before the
+  final guarded replace step."
+date: "2026-03-13"
+pubdate: "2026-03-13"
+affected_range: "<2026.3.11"
+fixed_versions:
+- "2026.3.11"
+affected_versions: "All versions before 2026.3.11"
+not_impacted: "All versions starting from 2026.3.11"
+solution: "Upgrade to version 2026.3.11 or above."
+urls:
+- "https://github.com/advisories/GHSA-mj4p-rc52-m843"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-mj4p-rc52-m843"
+- "https://github.com/openclaw/openclaw"
+- "https://github.com/openclaw/openclaw/releases/tag/v2026.3.11"
+cvss_v3: "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:C/C:N/I:H/A:H"
+uuid: "ba55e39a-8e11-4779-9fa2-af79828909b5"
+cwe_ids:
+- "CWE-367"
+- "CWE-59"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-7q64-3rg2-h9pf"
+identifiers:
+- "GHSA-7q64-3rg2-h9pf"
+package_slug: "npm/@nestjs/platform-fastify"
+title: "Duplicate Advisory: Nest has a Fastify URL Encoding Middleware Bypass"
+description: "## Duplicate Advisory\nThis advisory has been withdrawn because it is
+  a duplicate of GHSA-r4wm-x892-vjmx. This link is maintained to preserve external
+  references.\n\n## Original Description\n\nA NestJS application using @nestjs/platform-fastify
+  can allow bypass of authentication/authorization middleware when Fastify path-normalization
+  options are enabled.\n\n\n\nThis issue affects nest.Js: 11.1.13."
+date: "2026-03-02"
+pubdate: "2026-02-27"
+affected_range: "<11.1.14"
+fixed_versions:
+- "11.1.14"
+affected_versions: "All versions before 11.1.14"
+not_impacted: "All versions starting from 11.1.14"
+solution: "Upgrade to version 11.1.14 or above."
+urls:
+- "https://github.com/advisories/GHSA-7q64-3rg2-h9pf"
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-2293"
+- "https://fluidattacks.com/advisories/neton"
+- "https://github.com/nestjs/nest"
+- "https://github.com/nestjs/nest/releases/tag/v11.1.14"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N"
+uuid: "1a3f5df0-c3ec-4cef-b396-6bc7a889bb50"
+cwe_ids:
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

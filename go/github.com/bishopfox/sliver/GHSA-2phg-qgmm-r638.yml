@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-2phg-qgmm-r638"
+identifiers:
+- "GHSA-2phg-qgmm-r638"
+package_slug: "go/github.com/bishopfox/sliver"
+title: "Sliver has Potential Zip Bomb Denial of Service in GzipEncoder"
+description: "GzipEncoder does not limit output size when processing compressed data.
+  This allows unauthenticated remote attackers to crash sliver server by sending a
+  http request with highly compressed gzip data (aka zip bomb)."
+date: "2026-02-27"
+pubdate: "2026-02-25"
+affected_range: "<1.7.2"
+fixed_versions:
+- "1.7.2"
+affected_versions: "All versions before 1.7.2"
+not_impacted: "All versions starting from 1.7.2"
+solution: "Upgrade to version 1.7.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-2phg-qgmm-r638"
+- "https://github.com/BishopFox/sliver/security/advisories/GHSA-2phg-qgmm-r638"
+- "https://github.com/BishopFox/sliver/commit/0cf5a47cfdf94b6ab481ec3ea0db09f31654c0f0"
+- "https://github.com/BishopFox/sliver"
+- "https://github.com/BishopFox/sliver/releases/tag/v1.7.2"
+- "https://pkg.go.dev/vuln/GO-2026-4548"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+uuid: "ce5ac3a4-2cd4-41c7-b48c-6f5c55e4f114"
+cwe_ids:
+- "CWE-409"
+- "CWE-937"
+- "CWE-1035"

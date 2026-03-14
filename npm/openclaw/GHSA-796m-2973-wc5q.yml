@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-796m-2973-wc5q"
+identifiers:
+- "GHSA-796m-2973-wc5q"
+package_slug: "npm/openclaw"
+title: "OpenClaw has exec allowlist/safeBins policy-runtime mismatch via env -S wrapper
+  interpretation"
+description: "`tools.exec` allowlist/safe-bins evaluation could diverge from runtime
+  execution for wrapper commands using GNU `env -S/--split-string` semantics. This
+  allowed policy checks to treat a command as a benign safe-bin invocation while runtime
+  executed a different payload."
+date: "2026-03-03"
+pubdate: "2026-03-03"
+affected_range: "<2026.2.23"
+fixed_versions:
+- "2026.2.23"
+affected_versions: "All versions before 2026.2.23"
+not_impacted: "All versions starting from 2026.2.23"
+solution: "Upgrade to version 2026.2.23 or above."
+urls:
+- "https://github.com/advisories/GHSA-796m-2973-wc5q"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-796m-2973-wc5q"
+- "https://github.com/openclaw/openclaw/commit/a1c4bf07c6baad3ef87a0e710fe9aef127b1f606"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:L/AC:L/AT:P/PR:L/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N"
+uuid: "0971b53d-622d-4f63-9620-299e35353420"
+cwe_ids:
+- "CWE-436"
+- "CWE-937"
+- "CWE-1035"

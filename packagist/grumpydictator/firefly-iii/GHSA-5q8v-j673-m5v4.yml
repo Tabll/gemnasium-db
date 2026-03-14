@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-5q8v-j673-m5v4"
+identifiers:
+- "GHSA-5q8v-j673-m5v4"
+package_slug: "packagist/grumpydictator/firefly-iii"
+title: "Firefly III user API endpoints expose all users' information to any authenticated
+  user (IDOR)"
+description: "The User management API endpoints (`GET /api/v1/users` and `GET /api/v1/users/{id}`)
+  are accessible to any authenticated user without admin/owner role verification,
+  exposing all users' email addresses, roles, and account status."
+date: "2026-03-07"
+pubdate: "2026-03-07"
+affected_range: ">=6.4.23 <6.5.1"
+fixed_versions:
+- "6.5.1"
+affected_versions: "All versions starting from 6.4.23 before 6.5.1"
+not_impacted: "All versions before 6.4.23, all versions starting from 6.5.1"
+solution: "Upgrade to version 6.5.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-5q8v-j673-m5v4"
+- "https://github.com/firefly-iii/firefly-iii/security/advisories/GHSA-5q8v-j673-m5v4"
+- "https://github.com/firefly-iii/firefly-iii"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N"
+uuid: "dd3148f0-886f-4cfb-b61d-5fc269bf9aec"
+cwe_ids:
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

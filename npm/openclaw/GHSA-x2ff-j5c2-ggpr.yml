@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-x2ff-j5c2-ggpr"
+identifiers:
+- "GHSA-x2ff-j5c2-ggpr"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Slack interactive callbacks could skip configured sender checks
+  in some shared-workspace flows"
+description: "In shared Slack workspace deployments that rely on sender restrictions
+  (`allowFrom`, DM policy, or channel user allowlists), some interactive callbacks
+  (`block_action`, `view_submission`, `view_closed`) could be accepted before full
+  sender authorization checks.\n\nIn that scenario, an unauthorized workspace member
+  could enqueue system-event text into an active session. This issue did not provide
+  unauthenticated access, cross-gateway isolation bypass, or host-level privilege
+  escalation by itself."
+date: "2026-03-04"
+pubdate: "2026-03-04"
+affected_range: "<2026.2.25"
+fixed_versions:
+- "2026.2.25"
+affected_versions: "All versions before 2026.2.25"
+not_impacted: "All versions starting from 2026.2.25"
+solution: "Upgrade to version 2026.2.25 or above."
+urls:
+- "https://github.com/advisories/GHSA-x2ff-j5c2-ggpr"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-x2ff-j5c2-ggpr"
+- "https://github.com/openclaw/openclaw/commit/ce8c67c314b93f570f53c2a9abc124e1e3a54715"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N"
+uuid: "16a6f808-5d27-4516-9450-093f92fb93f8"
+cwe_ids:
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

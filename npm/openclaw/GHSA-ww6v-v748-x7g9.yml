@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-ww6v-v748-x7g9"
+identifiers:
+- "GHSA-ww6v-v748-x7g9"
+package_slug: "npm/openclaw"
+title: "OpenClaw has a sandbox network isolation bypass via docker.network=container:<id>"
+description: "In `openclaw@2026.2.23`, sandbox network hardening blocks `network=host`
+  but still allows `network=container:<id>`.\n\nThis can let a sandbox join another
+  container's network namespace and reach services available in that namespace."
+date: "2026-03-02"
+pubdate: "2026-03-02"
+affected_range: "<2026.2.24"
+fixed_versions:
+- "2026.2.24"
+affected_versions: "All versions before 2026.2.24"
+not_impacted: "All versions starting from 2026.2.24"
+solution: "Upgrade to version 2026.2.24 or above."
+urls:
+- "https://github.com/advisories/GHSA-ww6v-v748-x7g9"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-ww6v-v748-x7g9"
+- "https://github.com/openclaw/openclaw/commit/14b6eea6e"
+- "https://github.com/openclaw/openclaw/commit/5552f9073"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:N/SC:N/SI:L/SA:N"
+uuid: "7c6d1a02-32f4-4bd5-a274-f2c78e035560"
+cwe_ids:
+- "CWE-284"
+- "CWE-693"
+- "CWE-937"
+- "CWE-1035"

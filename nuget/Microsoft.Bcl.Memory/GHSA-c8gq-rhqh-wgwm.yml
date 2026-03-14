@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-c8gq-rhqh-wgwm"
+identifiers:
+- "GHSA-c8gq-rhqh-wgwm"
+package_slug: "nuget/Microsoft.Bcl.Memory"
+title: "Duplicate Advisory: .NET Denial of Service Vulnerability"
+description: "### Duplicate Advisory\nThis advisory has been withdrawn because it
+  is a duplicate of GHSA-73j8-2gch-69rq. This link is maintained to preserve external
+  references.\n\n### Original Description\nOut-of-bounds read in .NET allows an unauthorized
+  attacker to deny service over a network."
+date: "2026-03-11"
+pubdate: "2026-03-10"
+affected_range: "[9.0.0,9.0.13]"
+fixed_versions: []
+affected_versions: "All versions starting from 9.0.0 up to 9.0.13"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-c8gq-rhqh-wgwm"
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-26127"
+- "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-26127"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "a6c0f8ff-e48e-4d83-8e51-350df4cdb8d5"
+cwe_ids:
+- "CWE-125"
+- "CWE-937"
+- "CWE-1035"

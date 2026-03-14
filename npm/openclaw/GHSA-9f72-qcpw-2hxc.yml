@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-9f72-qcpw-2hxc"
+identifiers:
+- "GHSA-9f72-qcpw-2hxc"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Native prompt image auto-load did not honor tools.fs.workspaceOnly
+  in sandboxed runs"
+description: "In sandboxed runs, native prompt image auto-load did not honor `tools.fs.workspaceOnly=true`.\n\nThis
+  optional hardening setting is **not enabled by default**. When operators enabled
+  it, prompt text could still reference mounted out-of-workspace image paths (for
+  example `/agent/secret.png`) and load those image bytes for vision-capable model
+  input."
+date: "2026-03-03"
+pubdate: "2026-03-03"
+affected_range: "<2026.2.24"
+fixed_versions:
+- "2026.2.24"
+affected_versions: "All versions before 2026.2.24"
+not_impacted: "All versions starting from 2026.2.24"
+solution: "Upgrade to version 2026.2.24 or above."
+urls:
+- "https://github.com/advisories/GHSA-9f72-qcpw-2hxc"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-9f72-qcpw-2hxc"
+- "https://github.com/openclaw/openclaw/commit/370d115549c0dadace0902775eea0d5094aedfdc"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:N/VA:N/SC:H/SI:N/SA:N"
+uuid: "db58d46c-4bea-4fc5-8289-3aed87867ba8"
+cwe_ids:
+- "CWE-200"
+- "CWE-284"
+- "CWE-937"
+- "CWE-1035"

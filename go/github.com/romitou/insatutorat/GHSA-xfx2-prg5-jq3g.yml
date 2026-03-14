@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-xfx2-prg5-jq3g"
+identifiers:
+- "GHSA-xfx2-prg5-jq3g"
+package_slug: "go/github.com/romitou/insatutorat"
+title: "INSATutorat has an authorization bypass vulnerability in its  /api/admin/*
+  endpoints"
+description: "An authorization bypass vulnerability was discovered in the administration
+  pages of the tutoring application. When a standard user (logged in but without administrator
+  privileges) attempts to access a resource under /api/admin/, the system detects
+  the error but does not block the request.\n\nAs a result, sensitive data is still
+  transmitted by the server in the request (GET), and modification actions such as
+  campaign creation (POST) are executed successfully despite the FORBIDDEN error message.
+  All /api/admin/* endpoints are affected."
+date: "2026-03-01"
+pubdate: "2026-03-01"
+affected_range: "<0.0.0-20260226075457-15ae47425aed"
+fixed_versions:
+- "0.0.0-20260226075457-15ae47425aed"
+affected_versions: "All versions before 0.0.0-20260226075457-15ae47425aed"
+not_impacted: "All versions starting from 0.0.0-20260226075457-15ae47425aed"
+solution: "Upgrade to version 0.0.0-20260226075457-15ae47425aed or above."
+urls:
+- "https://github.com/advisories/GHSA-xfx2-prg5-jq3g"
+- "https://github.com/Romitou/INSATutorat/security/advisories/GHSA-xfx2-prg5-jq3g"
+- "https://github.com/Romitou/INSATutorat/commit/15ae47425aed337181f7a6c54a9d199c93b041eb"
+- "https://github.com/Romitou/INSATutorat"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:L"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:L/SC:N/SI:N/SA:N"
+uuid: "e7eefb9b-440f-4394-8eb4-f2147766186a"
+cwe_ids:
+- "CWE-285"
+- "CWE-937"
+- "CWE-1035"

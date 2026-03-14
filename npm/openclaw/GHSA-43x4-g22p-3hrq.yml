@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-43x4-g22p-3hrq"
+identifiers:
+- "GHSA-43x4-g22p-3hrq"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Chrome --no-sandbox disabled OS-level browser sandbox in sandbox
+  browser container"
+description: "Sandbox browser container launched Chromium with `--no-sandbox` by default,
+  disabling Chromium's OS-level sandbox protections."
+date: "2026-03-03"
+pubdate: "2026-03-03"
+affected_range: "<2026.2.21"
+fixed_versions:
+- "2026.2.21"
+affected_versions: "All versions before 2026.2.21"
+not_impacted: "All versions starting from 2026.2.21"
+solution: "Upgrade to version 2026.2.21 or above."
+urls:
+- "https://github.com/advisories/GHSA-43x4-g22p-3hrq"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-43x4-g22p-3hrq"
+- "https://github.com/openclaw/openclaw/commit/1835dec2004fe7a62c6a7ba46b8485f124ec6199"
+- "https://github.com/openclaw/openclaw/commit/e7eba01efc4c3c400e9cfd3ce3d661cbc788a631"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:L/SA:N"
+uuid: "5bf756aa-d7d7-4592-8ef2-1ddc6bd4b07c"
+cwe_ids:
+- "CWE-693"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-5r3p-6rj5-7937"
+identifiers:
+- "GHSA-5r3p-6rj5-7937"
+package_slug: "go/github.com/bytebase/bytebase"
+title: "Bytebase vulnerable to Improper Authentication"
+description: "- GitLab login allows login by any user.\n- JWT auth token can be derived
+  as long as the server isn't rebooted.\n- Developers can assign issues to non-admin/DBA
+  users."
+date: "2026-03-02"
+pubdate: "2026-03-02"
+affected_range: "<1.0.1"
+fixed_versions:
+- "1.0.1"
+affected_versions: "All versions before 1.0.1"
+not_impacted: "All versions starting from 1.0.1"
+solution: "Upgrade to version 1.0.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-5r3p-6rj5-7937"
+- "https://github.com/bytebase/bytebase/security/advisories/GHSA-5r3p-6rj5-7937"
+- "https://github.com/bytebase/bytebase/commit/a578ed58e478ba5c2dadf8d538ec5c3d39c28461"
+- "https://github.com/bytebase/bytebase"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N"
+uuid: "02f96c9b-2bb8-43b0-a622-68cad9bea3f5"
+cwe_ids:
+- "CWE-287"
+- "CWE-937"
+- "CWE-1035"

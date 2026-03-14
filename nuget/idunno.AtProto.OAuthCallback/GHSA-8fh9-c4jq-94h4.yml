@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-8fh9-c4jq-94h4"
+identifiers:
+- "GHSA-8fh9-c4jq-94h4"
+package_slug: "nuget/idunno.AtProto.OAuthCallback"
+title: "idunno.Bluesky, idunno.AtProto and idunno.AtProto.OAuthCallback Denial of
+  Service Vulnerability"
+description: "The `Microsoft.Bcl.Memory` package, a transitive dependency of `idunno.AtProto`
+  and `idunno.AtProto.OAuthCallback` had a Denial of Service security vulnerability,
+  [CVE-2026-26127](https://github.com/dotnet/announcements/issues/384)"
+date: "2026-03-13"
+pubdate: "2026-03-13"
+affected_range: "[,1.7.0)"
+fixed_versions:
+- "1.7.0"
+affected_versions: "All versions before 1.7.0"
+not_impacted: "All versions starting from 1.7.0"
+solution: "Upgrade to version 1.7.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-8fh9-c4jq-94h4"
+- "https://github.com/blowdart/idunno.Bluesky/security/advisories/GHSA-8fh9-c4jq-94h4"
+- "https://github.com/dotnet/announcements/issues/384"
+- "https://github.com/blowdart/idunno.Bluesky"
+- "https://www.cve.org/CVERecord?id=CVE-2026-26127"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "9a7cb536-2289-495f-ad0f-00d304b9d067"
+cwe_ids:
+- "CWE-129"
+- "CWE-937"
+- "CWE-1035"

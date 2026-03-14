@@ -1,4 +1,4 @@
-# GitLab Advisory Database
+# GitLab Advisory Database (GLAD)
 
 This repository contains the security advisories used by the
 [GitLab dependency scanners](https://docs.gitlab.com/ee/user/application_security/dependency_scanning/index.html).

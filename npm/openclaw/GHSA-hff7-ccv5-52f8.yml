@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-hff7-ccv5-52f8"
+identifiers:
+- "GHSA-hff7-ccv5-52f8"
+package_slug: "npm/openclaw"
+title: "OpenClaw's gateway tokenless Tailscale auth applied to HTTP routes"
+description: "When tokenless Tailscale auth is enabled, OpenClaw should only allow
+  forwarded-header auth for Control UI websocket authentication on trusted hosts.
+  In affected versions, that tokenless path could also be used by HTTP gateway auth
+  call sites, which could bypass token/password requirements for HTTP routes in trusted-network
+  deployments."
+date: "2026-03-03"
+pubdate: "2026-03-03"
+affected_range: "<2026.2.21"
+fixed_versions:
+- "2026.2.21"
+affected_versions: "All versions before 2026.2.21"
+not_impacted: "All versions starting from 2026.2.21"
+solution: "Upgrade to version 2026.2.21 or above."
+urls:
+- "https://github.com/advisories/GHSA-hff7-ccv5-52f8"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-hff7-ccv5-52f8"
+- "https://github.com/openclaw/openclaw/commit/356d61aacfa5b0f1d5830716ec59d70682a3e7b8"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "be1f0074-e701-45a0-b9a3-6013e09750b7"
+cwe_ids:
+- "CWE-290"
+- "CWE-937"
+- "CWE-1035"

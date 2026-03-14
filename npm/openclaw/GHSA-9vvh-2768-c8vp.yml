@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-9vvh-2768-c8vp"
+identifiers:
+- "GHSA-9vvh-2768-c8vp"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Discord guild reaction ingress could bypass users and roles allowlists"
+description: "In affected versions of `openclaw`, Discord reaction ingestion for guild
+  channels did not enforce the same member users and roles allowlist checks used for
+  normal inbound guild messages. A non-allowlisted guild member could still trigger
+  reaction events that were accepted and queued as trusted system events for the target
+  session."
+date: "2026-03-13"
+pubdate: "2026-03-13"
+affected_range: "<2026.3.11"
+fixed_versions:
+- "2026.3.11"
+affected_versions: "All versions before 2026.3.11"
+not_impacted: "All versions starting from 2026.3.11"
+solution: "Upgrade to version 2026.3.11 or above."
+urls:
+- "https://github.com/advisories/GHSA-9vvh-2768-c8vp"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-9vvh-2768-c8vp"
+- "https://github.com/openclaw/openclaw"
+- "https://github.com/openclaw/openclaw/releases/tag/v2026.3.11"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N"
+uuid: "6e649f37-2f9c-426f-88ef-21f3832f2e82"
+cwe_ids:
+- "CWE-284"
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

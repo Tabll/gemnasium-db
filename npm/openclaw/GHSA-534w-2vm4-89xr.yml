@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-534w-2vm4-89xr"
+identifiers:
+- "GHSA-534w-2vm4-89xr"
+package_slug: "npm/openclaw"
+title: "OpenClaw's Zalo group sender allowlist bypass permits unauthorized GROUP dispatch"
+description: "A missing group-sender authorization check in the Zalo plugin allowed
+  unauthorized `GROUP` messages to enter agent dispatch paths in configurations intended
+  to restrict group traffic."
+date: "2026-03-03"
+pubdate: "2026-03-03"
+affected_range: "<2026.2.24"
+fixed_versions:
+- "2026.2.24"
+affected_versions: "All versions before 2026.2.24"
+not_impacted: "All versions starting from 2026.2.24"
+solution: "Upgrade to version 2026.2.24 or above."
+urls:
+- "https://github.com/advisories/GHSA-534w-2vm4-89xr"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-534w-2vm4-89xr"
+- "https://github.com/openclaw/openclaw/commit/b4010a0b627025c809c0e5dbdbd4770f3bc59ef8"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "753cfa65-2e7c-4bc8-923f-fdd00b94e10c"
+cwe_ids:
+- "CWE-284"
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

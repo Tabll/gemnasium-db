@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-2rgf-hm63-5qph"
+identifiers:
+- "GHSA-2rgf-hm63-5qph"
+package_slug: "npm/openclaw"
+title: "OpenClaw improperly parses X-Forwarded-For behind trusted proxies allows client
+  IP spoofing in security decisions"
+description: "OpenClaw used left-most `X-Forwarded-For` values when requests came
+  from configured trusted proxies. In proxy chains that append/preserve header values,
+  this could let attacker-controlled header content influence security decisions tied
+  to client IP."
+date: "2026-03-03"
+pubdate: "2026-03-03"
+affected_range: "<2026.2.21"
+fixed_versions:
+- "2026.2.21"
+affected_versions: "All versions before 2026.2.21"
+not_impacted: "All versions starting from 2026.2.21"
+solution: "Upgrade to version 2026.2.21 or above."
+urls:
+- "https://github.com/advisories/GHSA-2rgf-hm63-5qph"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-2rgf-hm63-5qph"
+- "https://github.com/openclaw/openclaw/commit/07039dc089e51589a213ec0d16f8d6f2cd871fa1"
+- "https://github.com/openclaw/openclaw/commit/8877bfd11ec7760b115b2d0d7500a45da2749747"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "7f27134a-af08-4ed9-bf71-b05d4908a218"
+cwe_ids:
+- "CWE-345"
+- "CWE-807"
+- "CWE-937"
+- "CWE-1035"

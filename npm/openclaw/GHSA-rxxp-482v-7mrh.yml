@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-rxxp-482v-7mrh"
+identifiers:
+- "GHSA-rxxp-482v-7mrh"
+package_slug: "npm/openclaw"
+title: "OpenClaw's inbound media downloads could exceed configured byte limits before
+  rejection across multiple channels"
+description: "OpenClaw did not consistently enforce configured inbound media byte
+  limits before buffering remote media in several channel ingestion paths. A remote
+  sender could trigger oversized downloads and memory pressure before rejection."
+date: "2026-03-02"
+pubdate: "2026-03-02"
+affected_range: "<2026.2.22"
+fixed_versions:
+- "2026.2.22"
+affected_versions: "All versions before 2026.2.22"
+not_impacted: "All versions starting from 2026.2.22"
+solution: "Upgrade to version 2026.2.22 or above."
+urls:
+- "https://github.com/advisories/GHSA-rxxp-482v-7mrh"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-rxxp-482v-7mrh"
+- "https://github.com/openclaw/openclaw/commit/73d93dee64127a26f1acd09d0403b794cdeb4f5c"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N"
+uuid: "75b9a183-a0ea-42a0-84eb-75395de57e3b"
+cwe_ids:
+- "CWE-400"
+- "CWE-770"
+- "CWE-937"
+- "CWE-1035"

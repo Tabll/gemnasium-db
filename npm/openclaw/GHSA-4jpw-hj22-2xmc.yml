@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-4jpw-hj22-2xmc"
+identifiers:
+- "GHSA-4jpw-hj22-2xmc"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Pairing-scoped device tokens could mint `operator.admin` and reach
+  node RCE"
+description: "In affected versions of `openclaw`, a caller holding only `operator.pairing`
+  could use `device.token.rotate` to mint a new token with broader scopes for an already
+  paired device. If the target device was approved for `operator.admin`, the attacker
+  could obtain an administrative token without already holding administrative scope."
+date: "2026-03-13"
+pubdate: "2026-03-13"
+affected_range: "<2026.3.11"
+fixed_versions:
+- "2026.3.11"
+affected_versions: "All versions before 2026.3.11"
+not_impacted: "All versions starting from 2026.3.11"
+solution: "Upgrade to version 2026.3.11 or above."
+urls:
+- "https://github.com/advisories/GHSA-4jpw-hj22-2xmc"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-4jpw-hj22-2xmc"
+- "https://github.com/openclaw/openclaw"
+- "https://github.com/openclaw/openclaw/releases/tag/v2026.3.11"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H"
+uuid: "e1ac44e8-bba8-4967-86a9-54a62c5e31fb"
+cwe_ids:
+- "CWE-269"
+- "CWE-937"
+- "CWE-1035"

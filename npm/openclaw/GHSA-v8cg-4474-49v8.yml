@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-v8cg-4474-49v8"
+identifiers:
+- "GHSA-v8cg-4474-49v8"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Slack system events bypass sender authorization in member and message
+  subtype handlers"
+description: "Slack `member_*` and `message` subtype system events (`message_changed`,
+  `message_deleted`, `thread_broadcast`) were not consistently enforcing sender authorization
+  before enqueueing system events."
+date: "2026-03-12"
+pubdate: "2026-03-12"
+affected_range: "<2026.2.26"
+fixed_versions:
+- "2026.2.26"
+affected_versions: "All versions before 2026.2.26"
+not_impacted: "All versions starting from 2026.2.26"
+solution: "Upgrade to version 2026.2.26 or above."
+urls:
+- "https://github.com/advisories/GHSA-v8cg-4474-49v8"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-v8cg-4474-49v8"
+- "https://github.com/openclaw/openclaw/commit/3d30ba18a2aba1e1b302e77ff33145c3b06c01c8"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N"
+uuid: "e470aae9-6311-4128-92df-77ffa0494d89"
+cwe_ids:
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-vqx8-9xxw-f2m7"
+identifiers:
+- "GHSA-vqx8-9xxw-f2m7"
+package_slug: "npm/openclaw"
+title: "OpenClaw's voice-call Twilio webhook replay could bypass manager dedupe because
+  normalized event IDs were randomized per parse"
+description: "Twilio webhook replay events could bypass voice-call manager dedupe
+  because normalized event IDs were randomized per parse. A replayed event could be
+  treated as new and trigger duplicate or stale call-state transitions."
+date: "2026-03-03"
+pubdate: "2026-03-03"
+affected_range: "<2026.2.23"
+fixed_versions:
+- "2026.2.23"
+affected_versions: "All versions before 2026.2.23"
+not_impacted: "All versions starting from 2026.2.23"
+solution: "Upgrade to version 2026.2.23 or above."
+urls:
+- "https://github.com/advisories/GHSA-vqx8-9xxw-f2m7"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-vqx8-9xxw-f2m7"
+- "https://github.com/openclaw/openclaw/commit/1d28da55a5d0ff409e34999e0961157e9db0a2ab"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "7afe9aa7-83a7-485a-97c4-bc66be118980"
+cwe_ids:
+- "CWE-294"
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-4w7m-58cg-cmff"
+identifiers:
+- "GHSA-4w7m-58cg-cmff"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Leaf subagents could steer sibling sessions across sandbox boundaries"
+description: "In affected versions of `openclaw`, sandboxed leaf subagents could still
+  access the `subagents` control surface and resolve against the parent requester
+  scope instead of remaining confined to their own session tree."
+date: "2026-03-13"
+pubdate: "2026-03-13"
+affected_range: "<2026.3.11"
+fixed_versions:
+- "2026.3.11"
+affected_versions: "All versions before 2026.3.11"
+not_impacted: "All versions starting from 2026.3.11"
+solution: "Upgrade to version 2026.3.11 or above."
+urls:
+- "https://github.com/advisories/GHSA-4w7m-58cg-cmff"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-4w7m-58cg-cmff"
+- "https://github.com/openclaw/openclaw"
+- "https://github.com/openclaw/openclaw/releases/tag/v2026.3.11"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H"
+uuid: "d7a6559a-1d41-49d8-9d0a-944dbcf0b894"
+cwe_ids:
+- "CWE-269"
+- "CWE-937"
+- "CWE-1035"

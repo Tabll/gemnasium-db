@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-mwxv-35wr-4vvj"
+identifiers:
+- "GHSA-mwxv-35wr-4vvj"
+package_slug: "npm/openclaw"
+title: "OpenClaw has gateway plugin auth bypass via encoded dot-segment traversal
+  in protected /api/channels paths"
+description: "Gateway plugin route auth protection for `/api/channels` could be bypassed
+  using encoded dot-segment traversal (for example `..%2f`) in path variants that
+  plugin handlers normalize."
+date: "2026-03-03"
+pubdate: "2026-03-03"
+affected_range: "<2026.2.26"
+fixed_versions:
+- "2026.2.26"
+affected_versions: "All versions before 2026.2.26"
+not_impacted: "All versions starting from 2026.2.26"
+solution: "Upgrade to version 2026.2.26 or above."
+urls:
+- "https://github.com/advisories/GHSA-mwxv-35wr-4vvj"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-mwxv-35wr-4vvj"
+- "https://github.com/openclaw/openclaw"
+uuid: "a771a6ef-7cea-4f48-b64c-8b9bb5a9ae11"
+cwe_ids:
+- "CWE-289"
+- "CWE-937"
+- "CWE-1035"

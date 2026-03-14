@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-qcc4-p59m-p54m"
+identifiers:
+- "GHSA-qcc4-p59m-p54m"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Sandbox dangling-symlink alias handling could bypass workspace-only
+  write boundary"
+description: "A sandbox boundary-validation gap in symlink alias handling allowed
+  certain workspace-only write paths to be treated as in-boundary even when they could
+  resolve outside the workspace/sandbox root."
+date: "2026-03-12"
+pubdate: "2026-03-12"
+affected_range: "<2026.2.26"
+fixed_versions:
+- "2026.2.26"
+affected_versions: "All versions before 2026.2.26"
+not_impacted: "All versions starting from 2026.2.26"
+solution: "Upgrade to version 2026.2.26 or above."
+urls:
+- "https://github.com/advisories/GHSA-qcc4-p59m-p54m"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-qcc4-p59m-p54m"
+- "https://github.com/openclaw/openclaw/commit/4fd29a35bb85a1898ebff518364c467058b50e14"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H"
+uuid: "f72ec35a-6f3b-41b8-9fae-bc8b645b2679"
+cwe_ids:
+- "CWE-367"
+- "CWE-59"
+- "CWE-937"
+- "CWE-1035"

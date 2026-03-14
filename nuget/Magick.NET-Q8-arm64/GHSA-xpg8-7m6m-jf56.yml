@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-xpg8-7m6m-jf56"
+identifiers:
+- "GHSA-xpg8-7m6m-jf56"
+package_slug: "nuget/Magick.NET-Q8-arm64"
+title: "ImageMagick: SVG-to-MVG Command Injection via coders/svg.c"
+description: "An attacker can inject arbitrary MVG (Magick Vector Graphics) drawing
+  commands in an SVG file that is read by the internal SVG decoder of ImageMagick.
+  The injected MVG commands execute during rendering."
+date: "2026-02-25"
+pubdate: "2026-02-25"
+affected_range: "[,14.10.3)"
+fixed_versions:
+- "14.10.3"
+affected_versions: "All versions before 14.10.3"
+not_impacted: "All versions starting from 14.10.3"
+solution: "Upgrade to version 14.10.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-xpg8-7m6m-jf56"
+- "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-xpg8-7m6m-jf56"
+- "https://github.com/ImageMagick/ImageMagick/commit/9db96365ecab5de69cdec81b9359672b3a827aaa"
+- "https://github.com/ImageMagick/ImageMagick/commit/f63c78b3828933f1cc7cf499390248981af765aa"
+- "https://github.com/ImageMagick/ImageMagick"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N"
+uuid: "051b8727-ce6b-4110-94a4-49817af56b91"
+cwe_ids:
+- "CWE-116"
+- "CWE-77"
+- "CWE-937"
+- "CWE-1035"

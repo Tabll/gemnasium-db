@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-2mc2-g238-722j"
+identifiers:
+- "GHSA-2mc2-g238-722j"
+package_slug: "npm/openclaw"
+title: "OpenClaw affected by iMessage remote attachment SCP hardening (strict host-key
+  checks and remoteHost validation)"
+description: "Remote iMessage attachment fetches used SCP with trust-on-first-use
+  host-key behavior and accepted unvalidated remote host tokens.\n\nBefore the fix:\n-
+  SCP used `StrictHostKeyChecking=accept-new` in the remote attachment path.\n- `channels.imessage.remoteHost`
+  was not validated as a strict SSH host token."
+date: "2026-03-03"
+pubdate: "2026-03-03"
+affected_range: "<2026.2.19"
+fixed_versions:
+- "2026.2.19"
+affected_versions: "All versions before 2026.2.19"
+not_impacted: "All versions starting from 2026.2.19"
+solution: "Upgrade to version 2026.2.19 or above."
+urls:
+- "https://github.com/advisories/GHSA-2mc2-g238-722j"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-2mc2-g238-722j"
+- "https://github.com/openclaw/openclaw/commit/49d0def6d1e88f002026b1d2a35aa615d48a751a"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "89181bbe-0900-4c35-8591-e3b5a204818d"
+cwe_ids:
+- "CWE-295"
+- "CWE-78"
+- "CWE-937"
+- "CWE-1035"

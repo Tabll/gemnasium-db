@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-jj82-76v6-933r"
+identifiers:
+- "GHSA-jj82-76v6-933r"
+package_slug: "npm/openclaw"
+title: "OpenClaw's exec allowlist wrapper analysis did not unwrap env/shell dispatch
+  chains"
+description: "`system.run` exec allowlist analysis treated wrapper binaries as the
+  effective executable and did not fully unwrap `env`/shell-dispatch wrappers.\n\nThis
+  allowed wrapper-smuggled payloads (for example `env bash -lc ...`) to satisfy an
+  allowlist entry for the wrapper while executing non-allowlisted commands."
+date: "2026-03-03"
+pubdate: "2026-03-03"
+affected_range: "<2026.2.22"
+fixed_versions:
+- "2026.2.22"
+affected_versions: "All versions before 2026.2.22"
+not_impacted: "All versions starting from 2026.2.22"
+solution: "Upgrade to version 2026.2.22 or above."
+urls:
+- "https://github.com/advisories/GHSA-jj82-76v6-933r"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-jj82-76v6-933r"
+- "https://github.com/openclaw/openclaw/commit/2b63592be57782c8946e521bc81286933f0f99c7"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N"
+uuid: "fc96e6be-d22b-4601-bd63-98141a3c5e61"
+cwe_ids:
+- "CWE-78"
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

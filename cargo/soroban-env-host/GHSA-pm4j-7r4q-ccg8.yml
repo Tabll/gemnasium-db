@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-pm4j-7r4q-ccg8"
+identifiers:
+- "GHSA-pm4j-7r4q-ccg8"
+package_slug: "cargo/soroban-env-host"
+title: "Soroban: Muxed address<->ScVal conversions may break after a conversion failure"
+description: "Soroban host ensures that `MuxedAddress` objects can't be used as storage
+  keys in order to proactively prevent the contract logic bugs. However, due to a
+  bug in Soroban host implementation, a failure in `Val`->`ScVal` conversion during
+  the storage key computation will have the flag indicating that storage conversion
+  is happening stuck in the `true` state until the next storage access. While the
+  flag is stuck in `true` state, any `MuxedAddress` object conversions to `ScVal`
+  will fail, i.e. a failure will occur if a `MuxedAddress` is emitted in the event
+  or is serialized to XDR via a host function."
+date: "2026-03-07"
+pubdate: "2026-03-07"
+affected_range: "<26.0.0"
+fixed_versions:
+- "26.0.0"
+affected_versions: "All versions before 26.0.0"
+not_impacted: "All versions starting from 26.0.0"
+solution: "Upgrade to version 26.0.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-pm4j-7r4q-ccg8"
+- "https://github.com/stellar/rs-soroban-env/security/advisories/GHSA-pm4j-7r4q-ccg8"
+- "https://github.com/stellar/rs-soroban-env"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "030fa164-dde7-403c-9506-fa282986161d"
+cwe_ids:
+- "CWE-681"
+- "CWE-937"
+- "CWE-1035"

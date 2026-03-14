@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-j443-wcqq-xprh"
+identifiers:
+- "GHSA-j443-wcqq-xprh"
+package_slug: "go/github.com/arslanbekov/terraform-provider-sendgrid"
+title: "Terraform Provider for SendGrid: TLS Session Resumption Bypasses Certificate
+  Authority Trust Store Modifications in Go"
+description: "A critical vulnerability has been identified at https://security.snyk.io/package/linux/chainguard:latest/terraform-provider-sendgrid,
+  associated with the underlying Go version.\n\nIf the server's TLS configuration
+  is mutated between connections — for example, a CA is removed from the trusted list
+  via `Config.Clone()` combined with modification or `GetConfigForClient` — the resumed
+  handshake still succeeds using the cached session. The certificate is not re-checked
+  against the updated CA list.\n\nAs a result, a client whose CA was revoked or removed
+  between the first and second connection could still establish a connection on the
+  resumed session."
+date: "2026-03-11"
+pubdate: "2026-03-11"
+affected_range: "<=1.1.3-0.20250606002314-b4a2dfeb7b0f"
+fixed_versions: []
+affected_versions: "All versions up to 1.1.3-0.20250606002314-b4a2dfeb7b0f"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-j443-wcqq-xprh"
+- "https://github.com/arslanbekov/terraform-provider-sendgrid/security/advisories/GHSA-j443-wcqq-xprh"
+- "https://github.com/advisories/GHSA-h355-32pf-p2xm"
+- "https://github.com/arslanbekov/terraform-provider-sendgrid"
+- "https://security.snyk.io/vuln/SNYK-CHAINGUARDLATEST-TERRAFORMPROVIDERSENDGRID-15265295"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H"
+uuid: "e7aace8f-4bc2-490e-869b-2021affab588"
+cwe_ids:
+- "CWE-295"
+- "CWE-937"
+- "CWE-1035"

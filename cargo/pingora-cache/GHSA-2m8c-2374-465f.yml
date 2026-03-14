@@ -1,0 +1,48 @@
+---
+identifier: "GHSA-2m8c-2374-465f"
+identifiers:
+- "GHSA-2m8c-2374-465f"
+package_slug: "cargo/pingora-cache"
+title: "Duplicate Advisory: Cache poisoning via insecure-by-default cache key"
+description: "### Duplicate Advisory\nThis advisory has been withdrawn because it
+  is a duplicate of GHSA-f93w-pcj3-rggc. This link is maintained to preserve external
+  references.\n\n### Original Description\nA cache poisoning vulnerability has been
+  found in the Pingora HTTP proxy framework’s default cache key construction. The
+  issue occurs because the default HTTP cache key implementation generates cache keys
+  using only the URI path, excluding critical factors such as the host header (authority).
+  Operators relying on the default are vulnerable to cache poisoning, and cross-origin
+  responses may be improperly served to users.\n\n\nImpact\n\nThis vulnerability affects
+  users of Pingora's alpha proxy caching feature who relied on the default CacheKey
+  implementation. An attacker could exploit this for:\n\n  *  Cross-tenant data leakage:
+  In multi-tenant deployments, poison the cache so that users from one tenant receive
+  cached responses from another tenant\n\n\n  *  Cache poisoning attacks: Serve malicious
+  content to legitimate users by poisoning shared cache entries\n\n\n\n\nCloudflare's
+  CDN infrastructure was not affected by this vulnerability, as Cloudflare's default
+  cache key implementation uses multiple factors to prevent cache key poisoning and
+  never made use of the previously provided default.\n\n\nMitigation:\n\nWe strongly
+  recommend Pingora users to upgrade to Pingora v0.8.0 or higher, which removes the
+  insecure default cache key implementation. Users must now explicitly implement their
+  own callback that includes appropriate factors such as Host header, origin server
+  HTTP scheme, and other attributes their cache should vary on.\n\n\nPingora users
+  on previous versions may also remove any of their default CacheKey usage and implement
+  their own that should at minimum include the host header / authority and upstream
+  peer’s HTTP scheme."
+date: "2026-03-05"
+pubdate: "2026-03-05"
+affected_range: "<0.8.0"
+fixed_versions:
+- "0.8.0"
+affected_versions: "All versions before 0.8.0"
+not_impacted: "All versions starting from 0.8.0"
+solution: "Upgrade to version 0.8.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-2m8c-2374-465f"
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-2836"
+- "https://github.com/cloudflare/pingora"
+- "https://rustsec.org/advisories/RUSTSEC-2026-0035.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:N/VI:H/VA:N/SC:H/SI:H/SA:N"
+uuid: "07421ae4-e93b-4c14-83d5-57a155d2f9e2"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

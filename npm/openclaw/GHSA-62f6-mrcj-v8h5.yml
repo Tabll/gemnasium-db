@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-62f6-mrcj-v8h5"
+identifiers:
+- "GHSA-62f6-mrcj-v8h5"
+package_slug: "npm/openclaw"
+title: "OpenClaw's runtime /debug override path accepted prototype-reserved keys"
+description: "OpenClaw accepted prototype-reserved keys in runtime `/debug set` override
+  object values (`__proto__`, `constructor`, `prototype`)."
+date: "2026-03-03"
+pubdate: "2026-03-03"
+affected_range: "<2026.2.21"
+fixed_versions:
+- "2026.2.21"
+affected_versions: "All versions before 2026.2.21"
+not_impacted: "All versions starting from 2026.2.21"
+solution: "Upgrade to version 2026.2.21 or above."
+urls:
+- "https://github.com/advisories/GHSA-62f6-mrcj-v8h5"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-62f6-mrcj-v8h5"
+- "https://github.com/openclaw/openclaw/commit/fbb79d4013000552d6a2c23b9613d8b3cb92f6b6"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:L/AC:L/AT:P/PR:L/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "a32c168b-1f93-4f29-94c9-f38f7301299f"
+cwe_ids:
+- "CWE-1321"
+- "CWE-937"
+- "CWE-1035"

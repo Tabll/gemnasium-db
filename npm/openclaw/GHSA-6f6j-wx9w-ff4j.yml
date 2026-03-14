@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-6f6j-wx9w-ff4j"
+identifiers:
+- "GHSA-6f6j-wx9w-ff4j"
+package_slug: "npm/openclaw"
+title: "CpenClaw's ACPX Windows wrapper shell fallback allowed cwd injection in specific
+  paths"
+description: "On Windows ACPX paths, wrapper resolution for `.cmd`/`.bat` could fall
+  back to shell execution in ways that allowed `cwd` influence to alter execution
+  behavior."
+date: "2026-03-02"
+pubdate: "2026-03-02"
+affected_range: ">=2026.2.26 <2026.3.1"
+fixed_versions:
+- "2026.3.1"
+affected_versions: "All versions starting from 2026.2.26 before 2026.3.1"
+not_impacted: "All versions before 2026.2.26, all versions starting from 2026.3.1"
+solution: "Upgrade to version 2026.3.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-6f6j-wx9w-ff4j"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-6f6j-wx9w-ff4j"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+uuid: "2363cbd1-1ec2-4435-b7df-f408fac37853"
+cwe_ids:
+- "CWE-78"
+- "CWE-937"
+- "CWE-1035"

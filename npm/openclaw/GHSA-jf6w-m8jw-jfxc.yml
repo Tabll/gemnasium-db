@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-jf6w-m8jw-jfxc"
+identifiers:
+- "GHSA-jf6w-m8jw-jfxc"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Write-scoped callers could reach admin-only session reset logic
+  through `agent`"
+description: "In affected versions of `openclaw`, a gateway caller with `operator.write`
+  could issue `agent` requests containing `/new` or `/reset` and reach the same reset
+  path used by the admin-only `sessions.reset` RPC."
+date: "2026-03-13"
+pubdate: "2026-03-13"
+affected_range: "<2026.3.11"
+fixed_versions:
+- "2026.3.11"
+affected_versions: "All versions before 2026.3.11"
+not_impacted: "All versions starting from 2026.3.11"
+solution: "Upgrade to version 2026.3.11 or above."
+urls:
+- "https://github.com/advisories/GHSA-jf6w-m8jw-jfxc"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-jf6w-m8jw-jfxc"
+- "https://github.com/openclaw/openclaw"
+- "https://github.com/openclaw/openclaw/releases/tag/v2026.3.11"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:H"
+uuid: "108b2ee3-94f2-4188-85ab-7b90c34d3609"
+cwe_ids:
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-38c7-23hj-2wgq"
+identifiers:
+- "GHSA-38c7-23hj-2wgq"
+package_slug: "npm/n8n"
+title: "n8n has Webhook Forgery on Zendesk Trigger Node"
+description: "An attacker who knows the webhook URL of a workflow using the ZendeskTrigger
+  node could send unsigned POST requests and trigger the workflow with arbitrary data.
+  The node does not verify the HMAC-SHA256 signature that Zendesk attaches to every
+  outbound webhook, allowing any party to inject crafted payloads into the connected
+  workflow."
+date: "2026-02-26"
+pubdate: "2026-02-26"
+affected_range: "<1.123.18||>=2.0.0 <2.6.2"
+fixed_versions:
+- "1.123.18"
+- "2.6.2"
+affected_versions: "All versions before 1.123.18, all versions starting from 2.0.0
+  before 2.6.2"
+not_impacted: "All versions starting from 1.123.18 before 2.0.0, all versions starting
+  from 2.6.2"
+solution: "Upgrade to versions 1.123.18, 2.6.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-38c7-23hj-2wgq"
+- "https://github.com/n8n-io/n8n/security/advisories/GHSA-38c7-23hj-2wgq"
+- "https://github.com/n8n-io/n8n/commit/3839e310bd4c3002c646c363d1411916fa195151"
+- "https://github.com/n8n-io/n8n/commit/c6520e4e87614fa60c9433e93019e211f19f65f9"
+- "https://github.com/n8n-io/n8n"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:L/SA:N"
+uuid: "5380e75f-47ce-48c8-8d0c-98aef0a1df2c"
+cwe_ids:
+- "CWE-290"
+- "CWE-937"
+- "CWE-1035"

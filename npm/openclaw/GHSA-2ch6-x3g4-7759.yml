@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-2ch6-x3g4-7759"
+identifiers:
+- "GHSA-2ch6-x3g4-7759"
+package_slug: "npm/openclaw"
+title: "OpenClaw's commands.allowFrom sender authorization accepted conversation identifiers
+  via ctx.From"
+description: "`commands.allowFrom` is documented as a sender authorization allowlist
+  for commands/directives, but command authorization could include `ctx.From` (conversation
+  identity) as a sender candidate.\n\nWhen `commands.allowFrom` contained conversation-like
+  identifiers (for example Discord `channel:<id>` or WhatsApp group JIDs), command/directive
+  authorization could be granted to participants in that conversation instead of only
+  the intended sender identity."
+date: "2026-03-03"
+pubdate: "2026-03-03"
+affected_range: "<2026.2.23"
+fixed_versions:
+- "2026.2.23"
+affected_versions: "All versions before 2026.2.23"
+not_impacted: "All versions starting from 2026.2.23"
+solution: "Upgrade to version 2026.2.23 or above."
+urls:
+- "https://github.com/advisories/GHSA-2ch6-x3g4-7759"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-2ch6-x3g4-7759"
+- "https://github.com/openclaw/openclaw/commit/08e2aa44e78a9c946d97bea62304e6f533b8fa8e"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N"
+uuid: "ef225793-3156-4b91-966e-c4ceddf23a04"
+cwe_ids:
+- "CWE-639"
+- "CWE-937"
+- "CWE-1035"

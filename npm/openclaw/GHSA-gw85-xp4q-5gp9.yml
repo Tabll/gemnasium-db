@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-gw85-xp4q-5gp9"
+identifiers:
+- "GHSA-gw85-xp4q-5gp9"
+package_slug: "npm/openclaw"
+title: "OpenClaw's Synology Chat dmPolicy=allowlist failed open on empty allowedUserIds,
+  allowing unauthorized agent dispatch"
+description: "In `openclaw` versions `2026.2.22` and `2026.2.23`, the optional `synology-chat`
+  channel plugin had an authorization fail-open condition: when `dmPolicy` was `allowlist`
+  and `allowedUserIds` was empty/unset, unauthorized senders were still allowed through
+  to agent dispatch.\n\nThis is assessed as **medium** severity because it requires
+  channel/plugin setup and Synology sender access, but can still trigger downstream
+  agent/tool actions."
+date: "2026-03-03"
+pubdate: "2026-03-03"
+affected_range: ">=2026.2.22 <2026.2.24"
+fixed_versions:
+- "2026.2.24"
+affected_versions: "All versions starting from 2026.2.22 before 2026.2.24"
+not_impacted: "All versions before 2026.2.22, all versions starting from 2026.2.24"
+solution: "Upgrade to version 2026.2.24 or above."
+urls:
+- "https://github.com/advisories/GHSA-gw85-xp4q-5gp9"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-gw85-xp4q-5gp9"
+- "https://github.com/openclaw/openclaw/commit/0ee30361b8f6ef3f110f3a7b001da6dd3df96bb5"
+- "https://github.com/openclaw/openclaw/commit/7655c0cb3a47d0647cbbf5284e177f90b4b82ddb"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "f683a7b4-a84b-4de0-a43b-8fa27734b9ee"
+cwe_ids:
+- "CWE-284"
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

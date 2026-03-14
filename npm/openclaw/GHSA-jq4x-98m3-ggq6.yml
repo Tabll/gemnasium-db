@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-jq4x-98m3-ggq6"
+identifiers:
+- "GHSA-jq4x-98m3-ggq6"
+package_slug: "npm/openclaw"
+title: "OpenClaw Canvas Path Traversal Information Disclosure Vulnerability"
+description: "ZDI-CAN-29312: OpenClaw Canvas Path Traversal Information Disclosure
+  Vulnerability\n\n-- ABSTRACT -------------------------------------\n\nTrend Micro's
+  Zero Day Initiative has identified a vulnerability affecting the following products:\nOpenClaw
+  - OpenClaw\n\n-- VULNERABILITY DETAILS ------------------------\n* Version tested:
+  openclaw 2026.2.17\n* Platform tested: macOS 26.3\n\n---"
+date: "2026-03-02"
+pubdate: "2026-03-02"
+affected_range: "<2026.2.21"
+fixed_versions:
+- "2026.2.21"
+affected_versions: "All versions before 2026.2.21"
+not_impacted: "All versions starting from 2026.2.21"
+solution: "Upgrade to version 2026.2.21 or above."
+urls:
+- "https://github.com/advisories/GHSA-jq4x-98m3-ggq6"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-jq4x-98m3-ggq6"
+- "https://github.com/openclaw/openclaw/commit/39816e61b0c4347a83c9b76bc8883190cfe5a3c9"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N"
+uuid: "29573161-ad89-413e-99f2-4095538d397c"
+cwe_ids:
+- "CWE-22"
+- "CWE-937"
+- "CWE-1035"

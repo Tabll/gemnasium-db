@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-7wx9-6375-f5wh"
+identifiers:
+- "GHSA-7wx9-6375-f5wh"
+package_slug: "pypi/picklescan"
+title: "PickleScan's profile.run blocklist mismatch allows exec() bypass"
+description: "picklescan v1.0.3 blocks `profile.Profile.run` and `profile.Profile.runctx`
+  but does NOT block the module-level `profile.run()` function. A malicious pickle
+  calling `profile.run(statement)` achieves arbitrary code execution via `exec()`
+  while picklescan reports 0 issues. This is because the blocklist entry `\"Profile.run\"`
+  does not match the pickle global name `\"run\"`."
+date: "2026-03-03"
+pubdate: "2026-03-03"
+affected_range: "<1.0.4"
+fixed_versions:
+- "1.0.4"
+affected_versions: "All versions before 1.0.4"
+not_impacted: "All versions starting from 1.0.4"
+solution: "Upgrade to version 1.0.4 or above."
+urls:
+- "https://github.com/advisories/GHSA-7wx9-6375-f5wh"
+- "https://github.com/mmaitre314/picklescan/security/advisories/GHSA-7wx9-6375-f5wh"
+- "https://github.com/mmaitre314/picklescan"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+uuid: "78ca0cd3-202d-4c6d-9f2a-8fbfa28a82bd"
+cwe_ids:
+- "CWE-184"
+- "CWE-697"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-6rmx-gvvg-vh6j"
+identifiers:
+- "GHSA-6rmx-gvvg-vh6j"
+package_slug: "npm/openclaw"
+title: "OpenClaw's hooks count non-POST requests toward auth lockout"
+description: "OpenClaw's hooks HTTP handler counted hook authentication failures before
+  rejecting unsupported HTTP methods. An unauthenticated client could send repeated
+  non-`POST` requests (for example `GET`) with an invalid token to consume the hook
+  auth failure budget and trigger the temporary lockout window for that client key.\n\nThe
+  fix moves the hook method gate ahead of auth-failure accounting so unsupported methods
+  return `405 Method Not Allowed` without incrementing the hook auth limiter."
+date: "2026-03-09"
+pubdate: "2026-03-09"
+affected_range: "<2026.3.7"
+fixed_versions:
+- "2026.3.7"
+affected_versions: "All versions before 2026.3.7"
+not_impacted: "All versions starting from 2026.3.7"
+solution: "Upgrade to version 2026.3.7 or above."
+urls:
+- "https://github.com/advisories/GHSA-6rmx-gvvg-vh6j"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-6rmx-gvvg-vh6j"
+- "https://github.com/openclaw/openclaw/commit/44820dceadac65ac7c0ce8fc0ffba8c2bd9fae89"
+- "https://github.com/openclaw/openclaw"
+- "https://github.com/openclaw/openclaw/releases/tag/v2026.3.7"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+uuid: "2cba0272-38af-4146-a846-5a774824de68"
+cwe_ids:
+- "CWE-307"
+- "CWE-799"
+- "CWE-937"
+- "CWE-1035"

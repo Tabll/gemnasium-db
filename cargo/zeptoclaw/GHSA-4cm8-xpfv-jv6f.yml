@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-4cm8-xpfv-jv6f"
+identifiers:
+- "GHSA-4cm8-xpfv-jv6f"
+package_slug: "cargo/zeptoclaw"
+title: "ZeptoClaw: Email Sender Spoofing to bypass Header-Only From Allowlist Validation"
+description: "The email channel authorizes senders based on the parsed `From` header
+  identity only. If upstream email authentication/enforcement is weak (for example,
+  relaxed SPF/DKIM/DMARC handling), an attacker can spoof an allowlisted sender address
+  and have the message treated as trusted input."
+date: "2026-03-12"
+pubdate: "2026-03-12"
+affected_range: "<0.7.6"
+fixed_versions:
+- "0.7.6"
+affected_versions: "All versions before 0.7.6"
+not_impacted: "All versions starting from 0.7.6"
+solution: "Upgrade to version 0.7.6 or above."
+urls:
+- "https://github.com/advisories/GHSA-4cm8-xpfv-jv6f"
+- "https://github.com/qhkm/zeptoclaw/security/advisories/GHSA-4cm8-xpfv-jv6f"
+- "https://github.com/qhkm/zeptoclaw"
+- "https://github.com/qhkm/zeptoclaw/releases/tag/v0.7.6"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:H/A:N"
+uuid: "79047ff9-cdb7-4b93-849e-902f3982c2ec"
+cwe_ids:
+- "CWE-306"
+- "CWE-345"
+- "CWE-937"
+- "CWE-1035"

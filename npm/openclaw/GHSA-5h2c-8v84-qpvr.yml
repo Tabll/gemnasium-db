@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-5h2c-8v84-qpvr"
+identifiers:
+- "GHSA-5h2c-8v84-qpvr"
+package_slug: "npm/openclaw"
+title: "OpenClaw shell-env fallback trusted startup env and could execute attacker-influenced
+  login-shell paths"
+description: "OpenClaw shell-env fallback trusted startup environment values and could
+  execute attacker-influenced login-shell startup paths before loading env keys."
+date: "2026-03-03"
+pubdate: "2026-03-03"
+affected_range: "<2026.2.22"
+fixed_versions:
+- "2026.2.22"
+affected_versions: "All versions before 2026.2.22"
+not_impacted: "All versions starting from 2026.2.22"
+solution: "Upgrade to version 2026.2.22 or above."
+urls:
+- "https://github.com/advisories/GHSA-5h2c-8v84-qpvr"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-5h2c-8v84-qpvr"
+- "https://github.com/openclaw/openclaw/commit/9363c320d8ffe29290906752fab92621da02c3f7"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L"
+uuid: "9c4a3f10-ea63-4b5e-9ba4-e38adf834c1d"
+cwe_ids:
+- "CWE-15"
+- "CWE-78"
+- "CWE-937"
+- "CWE-1035"

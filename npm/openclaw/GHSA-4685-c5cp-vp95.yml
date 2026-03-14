@@ -7,7 +7,7 @@ title: "OpenClaw safeBins stdin-only bypass via sort output and recursive grep f
 description: "`tools.exec.safeBins` could be bypassed for filesystem access when `sort`
   output flags (`-o` / `--output`) or recursive `grep` flags were allowed through
   safe-bin execution paths."
-date: "2026-02-19"
+date: "2026-02-27"
 pubdate: "2026-02-19"
 affected_range: "<2026.2.19"
 fixed_versions:

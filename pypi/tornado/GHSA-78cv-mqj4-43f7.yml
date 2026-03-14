@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-78cv-mqj4-43f7"
+identifiers:
+- "GHSA-78cv-mqj4-43f7"
+package_slug: "pypi/tornado"
+title: "Tornado has incomplete validation of cookie attributes"
+description: "Values passed to the `domain`, `path`, and `samesite` arguments of `RequestHandler.set_cookie`
+  were not completely validated in versions of Tornado prior to 6.5.5. In particular,
+  semicolons would be allowed, which could be used to inject attacker-controlled values
+  for other cookie attributes."
+date: "2026-03-11"
+pubdate: "2026-03-11"
+affected_range: "<6.5.5"
+fixed_versions:
+- "6.5.5"
+affected_versions: "All versions before 6.5.5"
+not_impacted: "All versions starting from 6.5.5"
+solution: "Upgrade to version 6.5.5 or above."
+urls:
+- "https://github.com/advisories/GHSA-78cv-mqj4-43f7"
+- "https://github.com/tornadoweb/tornado/security/advisories/GHSA-78cv-mqj4-43f7"
+- "https://github.com/tornadoweb/tornado/commit/24a2d96ea115f663b223887deb0060f13974c104"
+- "https://github.com/tornadoweb/tornado"
+- "https://github.com/tornadoweb/tornado/releases/tag/v6.5.5"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N"
+uuid: "99e47da5-263c-4053-b23f-d6ebead3472c"
+cwe_ids:
+- "CWE-74"
+- "CWE-937"
+- "CWE-1035"

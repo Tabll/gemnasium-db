@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-x43w-ph7m-pfjx"
+identifiers:
+- "GHSA-x43w-ph7m-pfjx"
+package_slug: "cargo/hexchat"
+title: "hexchat crate has a Use After Free vulnerability"
+description: "All versions of this crate have function `deregister_command` which
+  can result in use after free. This is unsound.\n\nIn addition, all versions since
+  0.3.0 have \"safe\" macros, which are documented as unsafe to use in threads.\n\nIn
+  addition, the `hexchat` crate is no longer actively maintained.  If users rely on
+  this crate, consider switching to an alternative."
+date: "2026-02-25"
+pubdate: "2026-02-25"
+affected_range: "<=0.6.3"
+fixed_versions: []
+affected_versions: "All versions up to 0.6.3"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-x43w-ph7m-pfjx"
+- "https://github.com/pie-flavor/hexchat-rs/issues/3"
+- "https://github.com/pie-flavor/hexchat-rs"
+- "https://rustsec.org/advisories/RUSTSEC-2025-0153.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+uuid: "f059d5ac-ea5f-4bf1-9a6d-908ca229f5f7"
+cwe_ids:
+- "CWE-416"
+- "CWE-937"
+- "CWE-1035"

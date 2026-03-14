@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-vmhq-cqm9-6p7q"
+identifiers:
+- "GHSA-vmhq-cqm9-6p7q"
+package_slug: "npm/openclaw"
+title: "OpenClaw: `browser.request` let `operator.write` persist admin-only browser
+  profile changes"
+description: "An authorization mismatch in the gateway let an authenticated caller
+  with only `operator.write` use `browser.request` to reach browser profile management
+  routes that persist configuration to disk. In practice, this exposed an admin-only
+  configuration write primitive through `/profiles/create`."
+date: "2026-03-13"
+pubdate: "2026-03-13"
+affected_range: "<2026.3.11"
+fixed_versions:
+- "2026.3.11"
+affected_versions: "All versions before 2026.3.11"
+not_impacted: "All versions starting from 2026.3.11"
+solution: "Upgrade to version 2026.3.11 or above."
+urls:
+- "https://github.com/advisories/GHSA-vmhq-cqm9-6p7q"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-vmhq-cqm9-6p7q"
+- "https://github.com/openclaw/openclaw"
+- "https://github.com/openclaw/openclaw/releases/tag/v2026.3.11"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:L"
+uuid: "a0e9746a-2d95-4ade-862b-e1f7d6182b6f"
+cwe_ids:
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

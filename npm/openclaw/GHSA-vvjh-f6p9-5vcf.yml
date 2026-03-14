@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-vvjh-f6p9-5vcf"
+identifiers:
+- "GHSA-vvjh-f6p9-5vcf"
+package_slug: "npm/openclaw"
+title: "OpenClaw Canvas Authentication Bypass Vulnerability"
+description: "ZDI-CAN-29311: OpenClaw Canvas Authentication Bypass Vulnerability\n\n--
+  ABSTRACT -------------------------------------\n\nTrend Micro's Zero Day Initiative
+  has identified a vulnerability affecting the following products:\nOpenClaw - OpenClaw\n\n--
+  VULNERABILITY DETAILS ------------------------\n* Version tested: openclaw 2026.2.17\n*
+  Platform tested: macOS 26.3\n\n---"
+date: "2026-03-04"
+pubdate: "2026-03-04"
+affected_range: "<2026.2.19"
+fixed_versions:
+- "2026.2.19"
+affected_versions: "All versions before 2026.2.19"
+not_impacted: "All versions starting from 2026.2.19"
+solution: "Upgrade to version 2026.2.19 or above."
+urls:
+- "https://github.com/advisories/GHSA-vvjh-f6p9-5vcf"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-vvjh-f6p9-5vcf"
+- "https://github.com/openclaw/openclaw/commit/c45f3c5b004c8d63dc0e282e2176f8c9355d24f1"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N"
+uuid: "4ba4f09f-ad89-48d9-8fda-4b21a98387c9"
+cwe_ids:
+- "CWE-291"
+- "CWE-937"
+- "CWE-1035"

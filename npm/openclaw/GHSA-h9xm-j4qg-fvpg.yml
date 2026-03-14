@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-h9xm-j4qg-fvpg"
+identifiers:
+- "GHSA-h9xm-j4qg-fvpg"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Experimental apply_patch may bypass workspace-only checks in opt-in
+  sandbox mounts (off by default)"
+description: "In some opt-in sandbox configurations, the **experimental** `apply_patch`
+  tool did not consistently apply workspace-only checks to mounted paths (for example
+  `/agent/...`)."
+date: "2026-03-03"
+pubdate: "2026-03-03"
+affected_range: "<2026.2.23"
+fixed_versions:
+- "2026.2.23"
+affected_versions: "All versions before 2026.2.23"
+not_impacted: "All versions starting from 2026.2.23"
+solution: "Upgrade to version 2026.2.23 or above."
+urls:
+- "https://github.com/advisories/GHSA-h9xm-j4qg-fvpg"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-h9xm-j4qg-fvpg"
+- "https://github.com/openclaw/openclaw/commit/6634030be31e1a1842967df046c2f2e47490e6bf"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:N"
+uuid: "b134015d-369a-4d19-bda0-b74b74da65df"
+cwe_ids:
+- "CWE-284"
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

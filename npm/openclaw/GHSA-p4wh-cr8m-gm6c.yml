@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-p4wh-cr8m-gm6c"
+identifiers:
+- "GHSA-p4wh-cr8m-gm6c"
+package_slug: "npm/openclaw"
+title: "OpenClaw: shell-env trusted-prefix fallback allowed attacker-controlled binary
+  execution via $SHELL"
+description: "`shell-env` fallback trusted prefix-based executable paths for `$SHELL`,
+  allowing execution of attacker-controlled binaries in local/runtime-env influence
+  scenarios."
+date: "2026-03-03"
+pubdate: "2026-03-03"
+affected_range: ">=2026.2.22 <2026.2.23"
+fixed_versions:
+- "2026.2.23"
+affected_versions: "All versions starting from 2026.2.22 before 2026.2.23"
+not_impacted: "All versions before 2026.2.22, all versions starting from 2026.2.23"
+solution: "Upgrade to version 2026.2.23 or above."
+urls:
+- "https://github.com/advisories/GHSA-p4wh-cr8m-gm6c"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-p4wh-cr8m-gm6c"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+uuid: "2a83419b-d665-484b-b06f-2d49b8b3edc2"
+cwe_ids:
+- "CWE-184"
+- "CWE-829"
+- "CWE-937"
+- "CWE-1035"

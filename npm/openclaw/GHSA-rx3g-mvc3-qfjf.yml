@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-rx3g-mvc3-qfjf"
+identifiers:
+- "GHSA-rx3g-mvc3-qfjf"
+package_slug: "npm/openclaw"
+title: "OpenClaw's avatar symlink traversal can expose out-of-workspace local files"
+description: "OpenClaw avatar handling allowed a symlink traversal path that could
+  expose local files outside an agent workspace through gateway avatar surfaces."
+date: "2026-03-03"
+pubdate: "2026-03-03"
+affected_range: "<2026.2.22"
+fixed_versions:
+- "2026.2.22"
+affected_versions: "All versions before 2026.2.22"
+not_impacted: "All versions starting from 2026.2.22"
+solution: "Upgrade to version 2026.2.22 or above."
+urls:
+- "https://github.com/advisories/GHSA-rx3g-mvc3-qfjf"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-rx3g-mvc3-qfjf"
+- "https://github.com/openclaw/openclaw/commit/3d0337504349954237d09e4d957df5cb844d5e77"
+- "https://github.com/openclaw/openclaw/commit/6970c2c2db3ee069ef0fff0ade5cfbdd0134f9d2"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+uuid: "4f3c5c5c-46ff-4a5c-aabe-ba4004b18378"
+cwe_ids:
+- "CWE-22"
+- "CWE-59"
+- "CWE-937"
+- "CWE-1035"

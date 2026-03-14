@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-3pxq-f3cp-jmxp"
+identifiers:
+- "GHSA-3pxq-f3cp-jmxp"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Unified root-bound write hardening for browser output and related
+  path-boundary flows"
+description: "A path-confinement bypass in browser output handling allowed writes
+  outside intended roots in `openclaw` versions up to and including `2026.3.1`.\n\nThe
+  fix unifies root-bound, file-descriptor-verified write semantics and canonical path-boundary
+  validation across browser output and related install/skills write paths."
+date: "2026-03-03"
+pubdate: "2026-03-03"
+affected_range: "<2026.3.2"
+fixed_versions:
+- "2026.3.2"
+affected_versions: "All versions before 2026.3.2"
+not_impacted: "All versions starting from 2026.3.2"
+solution: "Upgrade to version 2026.3.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-3pxq-f3cp-jmxp"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-3pxq-f3cp-jmxp"
+- "https://github.com/openclaw/openclaw/commit/104d32bb64cdf19d5e77f70553a511a2ae90ad1c"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L"
+uuid: "08043ae8-afa3-4995-89d8-91c74d432d04"
+cwe_ids:
+- "CWE-367"
+- "CWE-59"
+- "CWE-937"
+- "CWE-1035"

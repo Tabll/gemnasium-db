@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-9mph-4f7v-fmvh"
+identifiers:
+- "GHSA-9mph-4f7v-fmvh"
+package_slug: "npm/openclaw"
+title: "OpenClaw has agent avatar symlink traversal in gateway session metadata"
+description: "A crafted local avatar path could follow a symlink outside the agent
+  workspace and return arbitrary file contents as a base64 `data:` URL in gateway
+  responses."
+date: "2026-03-04"
+pubdate: "2026-03-04"
+affected_range: "<2026.2.22"
+fixed_versions:
+- "2026.2.22"
+affected_versions: "All versions before 2026.2.22"
+not_impacted: "All versions starting from 2026.2.22"
+solution: "Upgrade to version 2026.2.22 or above."
+urls:
+- "https://github.com/advisories/GHSA-9mph-4f7v-fmvh"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-9mph-4f7v-fmvh"
+- "https://github.com/openclaw/openclaw/commit/3d0337504349954237d09e4d957df5cb844d5e77"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N"
+uuid: "44fc8033-cfcb-46c5-bb5f-ecb6477eea5d"
+cwe_ids:
+- "CWE-59"
+- "CWE-937"
+- "CWE-1035"

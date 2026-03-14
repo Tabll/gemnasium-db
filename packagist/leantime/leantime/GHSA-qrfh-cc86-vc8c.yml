@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-qrfh-cc86-vc8c"
+identifiers:
+- "GHSA-qrfh-cc86-vc8c"
+package_slug: "packagist/leantime/leantime"
+title: "Leantime has HTML injection through firstname and lastname fields"
+description: "Leantime v2.3.27 is vulnerable to Stored HTML Injection. The `firstname`
+  and `lastname` fields in the admin user edit page are rendered without  HTML escaping,
+  allowing an authenticated user to inject arbitrary HTML that executes when the profile
+  is viewed."
+date: "2026-03-05"
+pubdate: "2026-03-05"
+affected_range: "<3.3.0"
+fixed_versions:
+- "3.3.0"
+affected_versions: "All versions before 3.3.0"
+not_impacted: "All versions starting from 3.3.0"
+solution: "Upgrade to version 3.3.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-qrfh-cc86-vc8c"
+- "https://github.com/Leantime/leantime/security/advisories/GHSA-qrfh-cc86-vc8c"
+- "https://github.com/Leantime/leantime/commit/3f8b2c6346111694bb18cec558b27c22d3a2b9d1"
+- "https://github.com/Leantime/leantime"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N"
+uuid: "a0d96cb8-9822-4775-a763-9c7c957079a5"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

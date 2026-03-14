@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-f3f2-mcxc-pwjx"
+identifiers:
+- "GHSA-f3f2-mcxc-pwjx"
+package_slug: "npm/n8n"
+title: "n8n: SQL Injection in MySQL, PostgreSQL, and Microsoft SQL nodes"
+description: "An authenticated user with permission to create or modify workflows
+  and access to a database credential could unknowingly create a workflow that was
+  vulnerable to SQL injection, even while expecting inputs to be handled safely through
+  escaped parameters. By supplying specially crafted table or column names, an attacker
+  could inject arbitrary SQL because the MySQL, PostgreSQL, and Microsoft SQL nodes
+  did not escape identifier values when constructing queries, enabling injection through
+  node configuration parameters."
+date: "2026-02-26"
+pubdate: "2026-02-26"
+affected_range: "<2.4.0"
+fixed_versions:
+- "2.4.0"
+affected_versions: "All versions before 2.4.0"
+not_impacted: "All versions starting from 2.4.0"
+solution: "Upgrade to version 2.4.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-f3f2-mcxc-pwjx"
+- "https://github.com/n8n-io/n8n/security/advisories/GHSA-f3f2-mcxc-pwjx"
+- "https://github.com/n8n-io/n8n/commit/f73fae6fe7fc34907bba102648a9997186aa4385"
+- "https://github.com/n8n-io/n8n"
+- "https://github.com/n8n-io/n8n/releases/tag/n8n%402.4.0"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:N/VI:N/VA:N/SC:H/SI:H/SA:N"
+uuid: "322a6d6c-e133-4354-b935-8a78ef478635"
+cwe_ids:
+- "CWE-89"
+- "CWE-937"
+- "CWE-1035"

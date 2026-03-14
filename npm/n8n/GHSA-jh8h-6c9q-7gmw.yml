@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-jh8h-6c9q-7gmw"
+identifiers:
+- "GHSA-jh8h-6c9q-7gmw"
+package_slug: "npm/n8n"
+title: "n8n has an Authentication Bypass in its Chat Trigger Node"
+description: "When the Chat Trigger node is configured with n8n User Auth authentication,
+  the authentication check could be circumvented.\n- This issue requires the Chat
+  Trigger node to be configured with n8n User Auth authentication (non-default)."
+date: "2026-02-26"
+pubdate: "2026-02-26"
+affected_range: "<1.123.22||>=2.0.0 <2.9.3||>=2.10.0 <2.10.1"
+fixed_versions:
+- "1.123.22"
+- "2.9.3"
+- "2.10.1"
+affected_versions: "All versions before 1.123.22, all versions starting from 2.0.0
+  before 2.9.3, all versions starting from 2.10.0 before 2.10.1"
+not_impacted: "All versions starting from 1.123.22 before 2.0.0, all versions starting
+  from 2.9.3 before 2.10.0, all versions starting from 2.10.1"
+solution: "Upgrade to versions 1.123.22, 2.10.1, 2.9.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-jh8h-6c9q-7gmw"
+- "https://github.com/n8n-io/n8n/security/advisories/GHSA-jh8h-6c9q-7gmw"
+- "https://github.com/n8n-io/n8n/commit/062644ef786b6af480afe4a0f12bc6d70040534a"
+- "https://github.com/n8n-io/n8n/commit/1479aab2d32fe0ee087f82b9038b1035c98be2f6"
+- "https://github.com/n8n-io/n8n/commit/9e5212ecbc5d2d4e6f340b636a5e84be6369882e"
+- "https://github.com/n8n-io/n8n"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "3298d12c-f145-4879-9800-1ec22b0d5b75"
+cwe_ids:
+- "CWE-287"
+- "CWE-937"
+- "CWE-1035"

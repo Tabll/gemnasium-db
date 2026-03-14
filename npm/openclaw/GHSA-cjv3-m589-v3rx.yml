@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-cjv3-m589-v3rx"
+identifiers:
+- "GHSA-cjv3-m589-v3rx"
+package_slug: "npm/openclaw"
+title: "OpenClaw has Canvas route hardening for mixed-trust deployments"
+description: "This advisory tracks a defense-in-depth hardening for canvas routes.
+  In mixed-trust or network-visible deployments, prior canvas auth/fallback behavior
+  could broaden access beyond intended boundaries."
+date: "2026-03-03"
+pubdate: "2026-03-03"
+affected_range: "<2026.2.21"
+fixed_versions:
+- "2026.2.21"
+affected_versions: "All versions before 2026.2.21"
+not_impacted: "All versions starting from 2026.2.21"
+solution: "Upgrade to version 2026.2.21 or above."
+urls:
+- "https://github.com/advisories/GHSA-cjv3-m589-v3rx"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-cjv3-m589-v3rx"
+- "https://github.com/openclaw/openclaw/commit/08a7967936cfc0b2af6b27ec1f9272542648ad6c"
+- "https://github.com/openclaw/openclaw/commit/c45f3c5b004c8d63dc0e282e2176f8c9355d24f1"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:P/VC:N/VI:N/VA:N/SC:H/SI:H/SA:N"
+uuid: "d6f9303a-61da-482a-8395-c7f2d49a77ce"
+cwe_ids:
+- "CWE-1021"
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

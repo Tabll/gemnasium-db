@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-725g-w329-g7qr"
+identifiers:
+- "GHSA-725g-w329-g7qr"
+package_slug: "cargo/kora-lib"
+title: "kora-lib: Token-2022 Transfer Fee Not Deducted During Payment Verification"
+description: "When a user pays transaction fees using a Token-2022 token with a `TransferFeeConfig`
+  extension, Kora's `verify_token_payment()` credits the full raw transfer `amount`
+  as the payment value. However, the on-chain SPL Token-2022 program withholds a portion
+  of that amount as a transfer fee, so the paymaster's destination account only receives
+  `amount - transfer_fee`. This means the paymaster consistently credits more value
+  than it actually receives, resulting in systematic financial loss."
+date: "2026-03-12"
+pubdate: "2026-03-12"
+affected_range: "<2.0.5"
+fixed_versions:
+- "2.0.5"
+affected_versions: "All versions before 2.0.5"
+not_impacted: "All versions starting from 2.0.5"
+solution: "Upgrade to version 2.0.5 or above."
+urls:
+- "https://github.com/advisories/GHSA-725g-w329-g7qr"
+- "https://github.com/solana-foundation/kora/security/advisories/GHSA-725g-w329-g7qr"
+- "https://github.com/solana-foundation/kora/commit/8cbd8217ee505e6b37c63ef835ff095cfa8ab318"
+- "https://github.com/solana-foundation/kora"
+uuid: "6414211d-7588-41e6-b116-73a3bd7d8192"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

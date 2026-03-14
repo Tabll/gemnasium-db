@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-rqpp-rjj8-7wv8"
+identifiers:
+- "GHSA-rqpp-rjj8-7wv8"
+package_slug: "npm/openclaw"
+title: "OpenClaw: WebSocket shared-auth connections could self-declare elevated scopes"
+description: "A logic flaw in the OpenClaw gateway WebSocket connect path allowed
+  certain device-less shared-token or password-authenticated backend connections to
+  keep client-declared scopes without server-side binding. A shared-authenticated
+  client could present elevated scopes such as `operator.admin` even though those
+  scopes were not tied to a device identity or an explicitly trusted Control UI path."
+date: "2026-03-13"
+pubdate: "2026-03-13"
+affected_range: "<2026.3.12"
+fixed_versions:
+- "2026.3.12"
+affected_versions: "All versions before 2026.3.12"
+not_impacted: "All versions starting from 2026.3.12"
+solution: "Upgrade to version 2026.3.12 or above."
+urls:
+- "https://github.com/advisories/GHSA-rqpp-rjj8-7wv8"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-rqpp-rjj8-7wv8"
+- "https://github.com/openclaw/openclaw/pull/44306"
+- "https://github.com/openclaw/openclaw/commit/5e389d5e7c9233ec91026ab2fea299ebaf3249f6"
+- "https://github.com/openclaw/openclaw"
+- "https://github.com/openclaw/openclaw/releases/tag/v2026.3.12"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H"
+uuid: "ba2679b8-3fc1-40fd-86cc-1ef3a96440ac"
+cwe_ids:
+- "CWE-269"
+- "CWE-862"
+- "CWE-937"
+- "CWE-1035"

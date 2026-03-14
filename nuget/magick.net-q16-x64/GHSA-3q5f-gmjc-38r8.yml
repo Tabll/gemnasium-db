@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-3q5f-gmjc-38r8"
+identifiers:
+- "GHSA-3q5f-gmjc-38r8"
+package_slug: "nuget/magick.net-q16-x64"
+title: "ImageMagick: Memory leak in coders/txt.c without freetype"
+description: "If a `texture` attribute is specified for a TXT file, an attempt will
+  be made to read it via `texture=ReadImage(read_info,exception);`. Later, when retrieving
+  metrics via the `GetTypeMetrics` function, if this function fails (i.e., `status
+  == MagickFalse`), the calling function will exit immediately but fail to release
+  the texture object, leading to memory leakage."
+date: "2026-02-25"
+pubdate: "2026-02-25"
+affected_range: "[,14.10.3)"
+fixed_versions:
+- "14.10.3"
+affected_versions: "All versions before 14.10.3"
+not_impacted: "All versions starting from 14.10.3"
+solution: "Upgrade to version 14.10.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-3q5f-gmjc-38r8"
+- "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-3q5f-gmjc-38r8"
+- "https://github.com/ImageMagick/ImageMagick/commit/e6394098af39a9689bb5f0b4eb6a9968e449a8d3"
+- "https://github.com/ImageMagick/ImageMagick"
+- "https://github.com/dlemstra/Magick.NET/releases/tag/14.10.3"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N"
+uuid: "0e65c73c-8b93-42a5-8a6c-7f7aeb12b383"
+cwe_ids:
+- "CWE-401"
+- "CWE-937"
+- "CWE-1035"

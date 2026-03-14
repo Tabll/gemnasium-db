@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-gq5v-qf8q-fp77"
+identifiers:
+- "GHSA-gq5v-qf8q-fp77"
+package_slug: "nuget/Magick.NET-Q8-OpenMP-arm64"
+title: "ImageMagick: Heap-based Buffer Overflow in GetPixelIndex due to metadata-cache
+  desynchronization"
+description: "`OpenPixelCache`  updates image channel metadata **before** attempting
+  pixel cache memory allocation. When both memory and disk allocation fail a heap-buffer-overflow
+  read in occurs in any writer that calls `GetPixelIndex`."
+date: "2026-02-25"
+pubdate: "2026-02-25"
+affected_range: "[,14.10.3)"
+fixed_versions:
+- "14.10.3"
+affected_versions: "All versions before 14.10.3"
+not_impacted: "All versions starting from 14.10.3"
+solution: "Upgrade to version 14.10.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-gq5v-qf8q-fp77"
+- "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-gq5v-qf8q-fp77"
+- "https://github.com/ImageMagick/ImageMagick"
+- "https://github.com/dlemstra/Magick.NET/releases/tag/14.10.3"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:L/I:N/A:L"
+uuid: "1d2c8341-bd91-457a-9f68-8a72e38460b1"
+cwe_ids:
+- "CWE-122"
+- "CWE-125"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,37 @@
+---
+identifier: "GHSA-943q-mwmv-hhvh"
+identifiers:
+- "GHSA-943q-mwmv-hhvh"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Gateway /tools/invoke tool escalation + ACP permission auto-approval"
+description: "OpenClaw Gateway exposes an authenticated HTTP endpoint (`POST /tools/invoke`)
+  intended for invoking a constrained set of tools. Two issues could combine to significantly
+  increase blast radius in misconfigured or exposed deployments:\n\n- The HTTP gateway
+  layer did not deny high-risk session orchestration tools by default, allowing a
+  caller with Gateway auth to invoke tools like `sessions_spawn` / `sessions_send`
+  and pivot into creating or controlling agent sessions.\n- ACP clients could auto-approve
+  permission requests for risky tools with insufficient user interaction/guardrails,
+  reducing the friction that should normally prevent silent execution or mutation."
+date: "2026-03-02"
+pubdate: "2026-03-02"
+affected_range: "<2026.2.14"
+fixed_versions:
+- "2026.2.14"
+affected_versions: "All versions before 2026.2.14"
+not_impacted: "All versions starting from 2026.2.14"
+solution: "Upgrade to version 2026.2.14 or above."
+urls:
+- "https://github.com/advisories/GHSA-943q-mwmv-hhvh"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-943q-mwmv-hhvh"
+- "https://github.com/openclaw/openclaw/pull/15390"
+- "https://github.com/openclaw/openclaw/commit/153a7644e"
+- "https://github.com/openclaw/openclaw/commit/539689a2f"
+- "https://github.com/openclaw/openclaw/commit/bb1c3dfe1"
+- "https://github.com/openclaw/openclaw/commit/ee31cd47b49f4b2f128a69a2a3745ca9db68b3be"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+uuid: "df1b698e-1092-4bbf-bf1f-da3d500591d6"
+cwe_ids:
+- "CWE-78"
+- "CWE-937"
+- "CWE-1035"

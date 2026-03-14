@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-6g25-pc82-vfwp"
+identifiers:
+- "GHSA-6g25-pc82-vfwp"
+package_slug: "npm/openclaw"
+title: "OpenClaw: macOS beta onboarding exposed PKCE verifier via OAuth state"
+description: "The affected surface is the OpenClaw macOS app onboarding flow, and
+  the macOS app is currently in **beta**.\nIn that beta onboarding flow, Anthropic
+  OAuth used the PKCE `code_verifier` value as OAuth `state`, exposing that secret
+  in front-channel URL state."
+date: "2026-03-03"
+pubdate: "2026-03-03"
+affected_range: "<2026.2.25"
+fixed_versions:
+- "2026.2.25"
+affected_versions: "All versions before 2026.2.25"
+not_impacted: "All versions starting from 2026.2.25"
+solution: "Upgrade to version 2026.2.25 or above."
+urls:
+- "https://github.com/advisories/GHSA-6g25-pc82-vfwp"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-6g25-pc82-vfwp"
+- "https://github.com/openclaw/openclaw/commit/8f3310000a8b0c11eced054c2cdb6fb27803511a"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N"
+uuid: "350ded2f-6ca8-46ca-8fca-b7bf8a98a7c5"
+cwe_ids:
+- "CWE-200"
+- "CWE-937"
+- "CWE-1035"

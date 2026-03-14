@@ -1,0 +1,37 @@
+---
+identifier: "GHSA-6mgf-v5j7-45cr"
+identifiers:
+- "GHSA-6mgf-v5j7-45cr"
+package_slug: "npm/openclaw"
+title: "OpenClaw: fetch-guard forwards custom authorization headers across cross-origin
+  redirects"
+description: "OpenClaw's `fetchWithSsrFGuard(...)` followed cross-origin redirects
+  while preserving arbitrary caller-supplied headers except for a narrow denylist
+  (`Authorization`, `Proxy-Authorization`, `Cookie`, `Cookie2`). This allowed custom
+  authorization headers such as `X-Api-Key`, `Private-Token`, and similar sensitive
+  headers to be forwarded to a different origin after a redirect.\n\nThe fix switches
+  cross-origin redirect handling from a narrow sensitive-header denylist to a safe-header
+  allowlist, so only benign headers such as content negotiation and cache validators
+  survive an origin change."
+date: "2026-03-09"
+pubdate: "2026-03-09"
+affected_range: "<2026.3.7"
+fixed_versions:
+- "2026.3.7"
+affected_versions: "All versions before 2026.3.7"
+not_impacted: "All versions starting from 2026.3.7"
+solution: "Upgrade to version 2026.3.7 or above."
+urls:
+- "https://github.com/advisories/GHSA-6mgf-v5j7-45cr"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-6mgf-v5j7-45cr"
+- "https://github.com/openclaw/openclaw/commit/46715371b0612a6f9114dffd1466941ac476cef5"
+- "https://github.com/openclaw/openclaw"
+- "https://github.com/openclaw/openclaw/releases/tag/v2026.3.7"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:L/A:N"
+uuid: "467901dd-258f-41f5-89e0-2c2d66c2592a"
+cwe_ids:
+- "CWE-116"
+- "CWE-184"
+- "CWE-522"
+- "CWE-937"
+- "CWE-1035"

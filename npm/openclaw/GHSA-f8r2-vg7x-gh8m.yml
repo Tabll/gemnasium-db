@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-f8r2-vg7x-gh8m"
+identifiers:
+- "GHSA-f8r2-vg7x-gh8m"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Exec approval allowlist patterns overmatched on POSIX paths"
+description: "`matchesExecAllowlistPattern` normalized patterns and targets with lowercasing
+  and compiled glob matching too broadly on POSIX. In addition, the `?` wildcard could
+  match `/`, which allowed matches to cross path segments."
+date: "2026-03-13"
+pubdate: "2026-03-13"
+affected_range: "<2026.3.11"
+fixed_versions:
+- "2026.3.11"
+affected_versions: "All versions before 2026.3.11"
+not_impacted: "All versions starting from 2026.3.11"
+solution: "Upgrade to version 2026.3.11 or above."
+urls:
+- "https://github.com/advisories/GHSA-f8r2-vg7x-gh8m"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-f8r2-vg7x-gh8m"
+- "https://github.com/openclaw/openclaw"
+- "https://github.com/openclaw/openclaw/releases/tag/v2026.3.11"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "64fe2a30-7da4-4c77-bdc1-0b6aad3c45c8"
+cwe_ids:
+- "CWE-178"
+- "CWE-625"
+- "CWE-937"
+- "CWE-1035"

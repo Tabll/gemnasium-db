@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-jxrq-8fm4-9p58"
+identifiers:
+- "GHSA-jxrq-8fm4-9p58"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Zip extraction symlink traversal could write outside destination"
+description: "A path confinement bypass in OpenClaw ZIP extraction allowed writes
+  outside the intended destination when a pre-existing symlink was present under the
+  extraction root."
+date: "2026-03-03"
+pubdate: "2026-03-03"
+affected_range: "<2026.2.22"
+fixed_versions:
+- "2026.2.22"
+affected_versions: "All versions before 2026.2.22"
+not_impacted: "All versions starting from 2026.2.22"
+solution: "Upgrade to version 2026.2.22 or above."
+urls:
+- "https://github.com/advisories/GHSA-jxrq-8fm4-9p58"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-jxrq-8fm4-9p58"
+- "https://github.com/openclaw/openclaw/commit/4b226b74f5fd3b106a83a6347fd404172e2fd246"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N"
+uuid: "f0d7db6a-6525-4c5d-9d19-bdcfdd159b31"
+cwe_ids:
+- "CWE-59"
+- "CWE-937"
+- "CWE-1035"

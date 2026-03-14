@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-7ff8-xjh3-mgh6"
+identifiers:
+- "GHSA-7ff8-xjh3-mgh6"
+package_slug: "npm/openclaw"
+title: "OpenClaw's non-default autoAllowSkills setting could bypass on-miss exec prompt"
+description: "In `openclaw` versions up to and including `2026.2.22-2`, a non-default
+  exec-approval configuration could allow a skill-name collision to bypass an `ask=on-miss`
+  prompt.\n\nWhen `autoAllowSkills=true`, a path-scoped executable such as `./skill-bin`
+  could resolve to basename `skill-bin`, satisfy the `skills` allowlist segment, and
+  run without prompting for approval."
+date: "2026-03-03"
+pubdate: "2026-03-03"
+affected_range: "<2026.2.23"
+fixed_versions:
+- "2026.2.23"
+affected_versions: "All versions before 2026.2.23"
+not_impacted: "All versions starting from 2026.2.23"
+solution: "Upgrade to version 2026.2.23 or above."
+urls:
+- "https://github.com/advisories/GHSA-7ff8-xjh3-mgh6"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-7ff8-xjh3-mgh6"
+- "https://github.com/openclaw/openclaw/commit/ffd63b7a2c4c6d5aeb4710ef951d5794ad7ad77b"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:L/AC:H/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+uuid: "4fc72ead-ef41-4497-8580-9b8c2274211a"
+cwe_ids:
+- "CWE-266"
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

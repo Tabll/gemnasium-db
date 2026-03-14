@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-pfv7-rr5m-qmv6"
+identifiers:
+- "GHSA-pfv7-rr5m-qmv6"
+package_slug: "npm/openclaw"
+title: "OpenClaw has auth inconsistency on local Browser Extension Relay /extension
+  endpoint"
+description: "When the optional Chrome extension relay is enabled, `/extension` accepted
+  unauthenticated WebSocket upgrades while `/json/*` and `/cdp` required auth."
+date: "2026-03-03"
+pubdate: "2026-03-03"
+affected_range: "<2026.2.19"
+fixed_versions:
+- "2026.2.19"
+affected_versions: "All versions before 2026.2.19"
+not_impacted: "All versions starting from 2026.2.19"
+solution: "Upgrade to version 2026.2.19 or above."
+urls:
+- "https://github.com/advisories/GHSA-pfv7-rr5m-qmv6"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-pfv7-rr5m-qmv6"
+- "https://github.com/openclaw/openclaw/commit/7e54b6c96feb1a5c30884f2b32037b8dadd0e532"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "62925464-b04f-4289-8ecb-c36d62351b41"
+cwe_ids:
+- "CWE-306"
+- "CWE-937"
+- "CWE-1035"

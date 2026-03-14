@@ -1,0 +1,40 @@
+---
+identifier: "GHSA-wgx8-r9vw-2w4h"
+identifiers:
+- "GHSA-wgx8-r9vw-2w4h"
+package_slug: "npm/openclaw"
+title: " Duplicate Advisory: OpenClaw: Skill env override host env injection via applySkillConfigEnvOverrides
+  (defense-in-depth)"
+description: "### Duplicate Advisory\nThis advisory has been withdrawn because it
+  is a duplicate of GHSA-82g8-464f-2mv7. This link is maintained to preserve external
+  references.\n\n### Original Description\nA vulnerability was determined in OpenClaw
+  2026.2.19-2. This vulnerability affects the function applySkillConfigenvOverrides
+  of the component Skill Env Handler. Executing a manipulation can lead to code injection.
+  It is possible to launch the attack remotely. Upgrading to version 2026.2.21-beta.1
+  is able to resolve this issue. This patch is called 8c9f35cdb51692b650ddf05b259ccdd75cc9a83c.
+  It is recommended to upgrade the affected component."
+date: "2026-03-12"
+pubdate: "2026-03-12"
+affected_range: "<2026.2.21"
+fixed_versions:
+- "2026.2.21"
+affected_versions: "All versions before 2026.2.21"
+not_impacted: "All versions starting from 2026.2.21"
+solution: "Upgrade to version 2026.2.21 or above."
+urls:
+- "https://github.com/advisories/GHSA-wgx8-r9vw-2w4h"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-82g8-464f-2mv7"
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-4039"
+- "https://github.com/openclaw/openclaw/commit/8c9f35cdb51692b650ddf05b259ccdd75cc9a83c"
+- "https://github.com/openclaw/openclaw"
+- "https://github.com/openclaw/openclaw/releases/tag/v2026.2.21-beta.1"
+- "https://vuldb.com/?ctiid.350651"
+- "https://vuldb.com/?id.350651"
+- "https://vuldb.com/?submit.769580"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N"
+uuid: "1736ba6d-a416-4ccc-94b5-331099004df7"
+cwe_ids:
+- "CWE-74"
+- "CWE-937"
+- "CWE-1035"

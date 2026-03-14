@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-j8cj-hw74-64jv"
+identifiers:
+- "GHSA-j8cj-hw74-64jv"
+package_slug: "cargo/hivex"
+title: "Hive has Double-free and Use After Free Vulnerabilities"
+description: "`Drop` implementation for `Hive` did perform free, but so did `Hive::close`,
+  which, at the end of the scope performed `Drop`, therefore triggering double-free.\n\nAdditionally,
+  function `Hive::from_handle` was not marked as unsafe, making it, in combination
+  with `as_handle` easy to clone and trigger double-free in safe code or triggering
+  UB when using invalid pointer."
+date: "2026-02-28"
+pubdate: "2026-02-28"
+affected_range: ">=0.2.0 <0.2.1||=0.2.0"
+fixed_versions:
+- "0.2.1"
+affected_versions: "All versions starting from 0.2.0 before 0.2.1, version 0.2.0"
+not_impacted: ""
+solution: "Upgrade to version 0.2.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-j8cj-hw74-64jv"
+- "https://codeberg.org/1millibyte/toolsnt/commit/f4c7a0d1fc4a08ce40bb76e447a69a6f383a916e"
+- "https://codeberg.org/1millibyte/toolsnt/issues/18"
+- "https://docs.rs/crate/hivex"
+- "https://docs.rs/crate/hivex/0.2.1/source"
+- "https://rustsec.org/advisories/RUSTSEC-2026-0029.html"
+uuid: "1118173b-e247-4e70-b516-969d40825060"
+cwe_ids:
+- "CWE-415"
+- "CWE-416"
+- "CWE-937"
+- "CWE-1035"

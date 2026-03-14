@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-vhj5-x93p-67jw"
+identifiers:
+- "GHSA-vhj5-x93p-67jw"
+package_slug: "cargo/actix-web-lab"
+title: "actix-web-lab has host header poisoning in redirect middleware can generate
+  attacker-controlled absolute redirects"
+description: "`actix-web-lab` redirect middleware uses request-derived host information
+  to construct absolute redirect URLs (for example, `https://{hostname}{path}`). In
+  deployments without strict host allowlisting, an attacker can supply a malicious
+  Host header and poison the `Location` response header, causing open redirect/phishing
+  behavior."
+date: "2026-03-11"
+pubdate: "2026-03-11"
+affected_range: "<0.26.0"
+fixed_versions:
+- "0.26.0"
+affected_versions: "All versions before 0.26.0"
+not_impacted: "All versions starting from 0.26.0"
+solution: "Upgrade to version 0.26.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-vhj5-x93p-67jw"
+- "https://github.com/robjtede/actix-web-lab/security/advisories/GHSA-vhj5-x93p-67jw"
+- "https://github.com/robjtede/actix-web-lab/pull/292"
+- "https://github.com/robjtede/actix-web-lab/commit/142c28b82eb59b67445a859a2a9b75e01a9964ee"
+- "https://github.com/robjtede/actix-web-lab"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N"
+uuid: "2e25c5b1-edbf-4765-965f-a4fd167d88e7"
+cwe_ids:
+- "CWE-601"
+- "CWE-937"
+- "CWE-1035"

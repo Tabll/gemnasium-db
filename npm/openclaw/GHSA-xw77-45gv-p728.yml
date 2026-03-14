@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-xw77-45gv-p728"
+identifiers:
+- "GHSA-xw77-45gv-p728"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Plugin subagent routes could bypass gateway authorization with synthetic
+  admin scopes"
+description: "In affected versions of `openclaw`, the plugin subagent runtime dispatched
+  gateway methods through a synthetic operator client that always carried broad administrative
+  scopes. Plugin-owned HTTP routes using `auth: \"plugin\"` could therefore trigger
+  admin-only gateway actions without normal gateway authorization."
+date: "2026-03-13"
+pubdate: "2026-03-13"
+affected_range: ">=2026.3.7 <2026.3.11"
+fixed_versions:
+- "2026.3.11"
+affected_versions: "All versions starting from 2026.3.7 before 2026.3.11"
+not_impacted: "All versions before 2026.3.7, all versions starting from 2026.3.11"
+solution: "Upgrade to version 2026.3.11 or above."
+urls:
+- "https://github.com/advisories/GHSA-xw77-45gv-p728"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-xw77-45gv-p728"
+- "https://github.com/openclaw/openclaw"
+- "https://github.com/openclaw/openclaw/releases/tag/v2026.3.11"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:L"
+uuid: "d95d7e39-9b89-43f1-9bbd-8243f60fd4b6"
+cwe_ids:
+- "CWE-269"
+- "CWE-285"
+- "CWE-937"
+- "CWE-1035"
