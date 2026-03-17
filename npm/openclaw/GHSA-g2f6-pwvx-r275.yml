@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-g2f6-pwvx-r275"
+identifiers:
+- "GHSA-g2f6-pwvx-r275"
+package_slug: "npm/openclaw"
+title: "OpneClaw accepts unsanitized iMessage attachment paths which allowed SCP remote-path
+  command injection"
+description: "`openclaw` versions `<= 2026.3.12` accepted unsanitized iMessage remote
+  attachment paths when staging files over SCP, allowing shell metacharacters in the
+  remote path operand."
+date: "2026-03-16"
+pubdate: "2026-03-16"
+affected_range: "<2026.3.13"
+fixed_versions:
+- "2026.3.13"
+affected_versions: "All versions before 2026.3.13"
+not_impacted: "All versions starting from 2026.3.13"
+solution: "Upgrade to version 2026.3.13 or above."
+urls:
+- "https://github.com/advisories/GHSA-g2f6-pwvx-r275"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-g2f6-pwvx-r275"
+- "https://github.com/openclaw/openclaw/commit/a54bf71b4c0cbe554a84340b773df37ee8e959de"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+uuid: "084f7211-a32d-4068-8f3a-a7c0a09ce723"
+cwe_ids:
+- "CWE-78"
+- "CWE-937"
+- "CWE-1035"

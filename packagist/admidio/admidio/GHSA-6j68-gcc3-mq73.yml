@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-6j68-gcc3-mq73"
+identifiers:
+- "GHSA-6j68-gcc3-mq73"
+package_slug: "packagist/admidio/admidio"
+title: "Admidio Vulnerable to SSRF and Local File Read via Unrestricted URL Fetch
+  in SSO Metadata Endpoint"
+description: "The SSO metadata fetch endpoint at `modules/sso/fetch_metadata.php`
+  accepts an arbitrary URL via `$_GET['url']`, validates it only with PHP's `FILTER_VALIDATE_URL`,
+  and passes it directly to `file_get_contents()`. `FILTER_VALIDATE_URL` accepts `file://`,
+  `http://`, `ftp://`, `data://`, and `php://` scheme URIs. An authenticated administrator
+  can use this endpoint to read arbitrary local files via the `file://` wrapper (Local
+  File Read), reach internal services via `http://` (SSRF), or fetch cloud instance
+  metadata. The full response body is returned verbatim to the caller."
+date: "2026-03-16"
+pubdate: "2026-03-16"
+affected_range: ">=5.0.0 <5.0.7"
+fixed_versions:
+- "5.0.7"
+affected_versions: "All versions starting from 5.0.0 before 5.0.7"
+not_impacted: "All versions before 5.0.0, all versions starting from 5.0.7"
+solution: "Upgrade to version 5.0.7 or above."
+urls:
+- "https://github.com/advisories/GHSA-6j68-gcc3-mq73"
+- "https://github.com/Admidio/admidio/security/advisories/GHSA-6j68-gcc3-mq73"
+- "https://github.com/Admidio/admidio"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:N/A:N"
+uuid: "09ce7fcd-d5b5-4186-87be-454c0c9c1d85"
+cwe_ids:
+- "CWE-918"
+- "CWE-937"
+- "CWE-1035"
