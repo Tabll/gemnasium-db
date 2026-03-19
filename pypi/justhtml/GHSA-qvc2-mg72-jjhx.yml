@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-qvc2-mg72-jjhx"
+identifiers:
+- "GHSA-qvc2-mg72-jjhx"
+package_slug: "pypi/justhtml"
+title: "JustHTML Affected by Mutation XSS via Literal Text Serialization in Raw Text
+  Elements (style/script)"
+description: "Sanitized DOM trees can be unsafe to serialize when a custom policy
+  allows raw-text elements such as `<style>` or `<script>`.\n\nThe issue affects DOM
+  trees that are constructed or modified programmatically and then passed through
+  `sanitize_dom()` with a policy that keeps these elements. Text nodes inside `<style>`
+  and `<script>` are serialized literally, so attacker-controlled text containing
+  the matching closing tag sequence can break out of the raw-text context and inject
+  HTML into the serialized output.\n\nThe default sanitization policy is not affected
+  because it drops the contents of `style` and `script`."
+date: "2026-03-18"
+pubdate: "2026-03-18"
+affected_range: "<1.12.0"
+fixed_versions:
+- "1.12.0"
+affected_versions: "All versions before 1.12.0"
+not_impacted: "All versions starting from 1.12.0"
+solution: "Upgrade to version 1.12.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-qvc2-mg72-jjhx"
+- "https://github.com/EmilStenstrom/justhtml/security/advisories/GHSA-qvc2-mg72-jjhx"
+- "https://github.com/EmilStenstrom/justhtml"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:N/VI:N/VA:N/SC:L/SI:L/SA:N"
+uuid: "8af106f3-e209-491f-913b-98747a939ea1"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

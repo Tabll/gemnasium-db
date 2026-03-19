@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-pcgw-qcv5-h8ch"
+identifiers:
+- "GHSA-pcgw-qcv5-h8ch"
+package_slug: "go/github.com/russellhaering/gosaml2"
+title: "Unsigned SAML LogoutRequest Acceptance in gosaml2"
+description: "The `ValidateEncodedLogoutRequestPOST` function in gosaml2 accepts completely
+  unsigned SAML `LogoutRequest` messages even when `SkipSignatureValidation` is set
+  to `false`. When `validateElementSignature` returns `dsig.ErrMissingSignature`,
+  the code in `decode_logout_request.go:60-62` silently falls through to process the
+  unverified XML element instead of rejecting it. An attacker who can reach the SP's
+  Single Logout endpoint can forge a `LogoutRequest` for any user, terminating their
+  session without possessing the IdP's signing key."
+date: "2026-03-18"
+pubdate: "2026-03-18"
+affected_range: "<0.11.0"
+fixed_versions:
+- "0.11.0"
+affected_versions: "All versions before 0.11.0"
+not_impacted: "All versions starting from 0.11.0"
+solution: "Upgrade to version 0.11.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-pcgw-qcv5-h8ch"
+- "https://github.com/russellhaering/gosaml2/security/advisories/GHSA-pcgw-qcv5-h8ch"
+- "https://github.com/russellhaering/gosaml2"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "eeecb0fe-19c0-48e7-8082-b1837607c8c2"
+cwe_ids:
+- "CWE-347"
+- "CWE-937"
+- "CWE-1035"

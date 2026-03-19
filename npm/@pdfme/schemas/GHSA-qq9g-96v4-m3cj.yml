@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-qq9g-96v4-m3cj"
+identifiers:
+- "GHSA-qq9g-96v4-m3cj"
+package_slug: "npm/@pdfme/schemas"
+title: "Cross-Site Scripting (XSS) via Select Schema Option Value Injection in @pdfme/schemas"
+description: "The Select schema plugin in `@pdfme/schemas` constructs HTML from template-defined
+  option values using unsanitized string interpolation and sets it via `innerHTML`,
+  enabling arbitrary JavaScript execution."
+date: "2026-03-18"
+pubdate: "2026-03-18"
+affected_range: "<5.5.9"
+fixed_versions:
+- "5.5.9"
+affected_versions: "All versions before 5.5.9"
+not_impacted: "All versions starting from 5.5.9"
+solution: "Upgrade to version 5.5.9 or above."
+urls:
+- "https://github.com/advisories/GHSA-qq9g-96v4-m3cj"
+- "https://github.com/pdfme/pdfme/security/advisories/GHSA-qq9g-96v4-m3cj"
+- "https://github.com/pdfme/pdfme"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+uuid: "754c53dd-4c9e-4822-8db3-6758bc355194"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

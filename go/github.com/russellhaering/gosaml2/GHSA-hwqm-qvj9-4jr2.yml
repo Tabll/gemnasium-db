@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-hwqm-qvj9-4jr2"
+identifiers:
+- "GHSA-hwqm-qvj9-4jr2"
+package_slug: "go/github.com/russellhaering/gosaml2"
+title: "gosaml2 CBC Padding Panic — Unauthenticated Process Crash"
+description: "The AES-CBC decryption path in `DecryptBytes()` panics on crafted ciphertext
+  whose plaintext is all zero bytes. After decryption, `bytes.TrimRight(data, \"\\x00\")`
+  empties the slice, then `data[len(data)-1]` panics with `index out of range [-1]`.
+  There is no `recover()` in the library. The panic propagates through `ValidateEncodedResponse`
+  and kills the goroutine (or the entire process in non-`net/http` servers). An attacker
+  needs only the SP's public RSA key (published in SAML metadata) to construct the
+  payload — no valid signature is required."
+date: "2026-03-18"
+pubdate: "2026-03-18"
+affected_range: "<0.11.0"
+fixed_versions:
+- "0.11.0"
+affected_versions: "All versions before 0.11.0"
+not_impacted: "All versions starting from 0.11.0"
+solution: "Upgrade to version 0.11.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-hwqm-qvj9-4jr2"
+- "https://github.com/russellhaering/gosaml2/security/advisories/GHSA-hwqm-qvj9-4jr2"
+- "https://github.com/russellhaering/gosaml2"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+uuid: "97eedd7c-1592-46d0-97eb-60f44e89476f"
+cwe_ids:
+- "CWE-129"
+- "CWE-937"
+- "CWE-1035"

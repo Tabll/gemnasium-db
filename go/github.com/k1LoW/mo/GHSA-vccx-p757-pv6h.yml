@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-vccx-p757-pv6h"
+identifiers:
+- "GHSA-vccx-p757-pv6h"
+package_slug: "go/github.com/k1LoW/mo"
+title: "mo has a XSS via inline SVG script tags in Markdown rendering"
+description: "When rendering Markdown files containing inline SVG elements with `<script>`
+  tags, the embedded JavaScript is executed in the browser. This is due to `rehype-raw`
+  passing raw HTML (including SVG) through to the DOM without sanitization."
+date: "2026-03-18"
+pubdate: "2026-03-18"
+affected_range: "<0.18.5"
+fixed_versions:
+- "0.18.5"
+affected_versions: "All versions before 0.18.5"
+not_impacted: "All versions starting from 0.18.5"
+solution: "Upgrade to version 0.18.5 or above."
+urls:
+- "https://github.com/advisories/GHSA-vccx-p757-pv6h"
+- "https://github.com/k1LoW/mo/security/advisories/GHSA-vccx-p757-pv6h"
+- "https://github.com/k1LoW/mo"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:P/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N"
+uuid: "7b645e3d-3fb9-4aae-8844-ba1683ab1f1a"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

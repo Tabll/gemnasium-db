@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-jqcq-xjh3-6g23"
+identifiers:
+- "GHSA-jqcq-xjh3-6g23"
+package_slug: "go/github.com/jackc/pgproto3/v2"
+title: "Denial of service in github.com/jackc/pgproto3/v2"
+description: "The DataRow.Decode function fails to properly validate field lengths.
+  A malicious or compromised PostgreSQL server can send a DataRow message with a negative
+  field length, causing a slice bounds out of range panic."
+date: "2026-03-18"
+pubdate: "2026-03-18"
+affected_range: ">=2.0.0 <=2.3.3"
+fixed_versions: []
+affected_versions: "All versions starting from 2.0.0 up to 2.3.3"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-jqcq-xjh3-6g23"
+- "https://github.com/golang/vulndb/issues/4518"
+- "https://github.com/jackc/pgx/issues/2507"
+- "https://github.com/jackc/pgproto3"
+- "https://securityinfinity.com/research/memory-safety-vulnerabilities-in-go-postgresql-wire-protocol-parsers-pgproto3-pgx"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "50741999-4985-418b-aba0-c0b387f828fb"
+cwe_ids:
+- "CWE-129"
+- "CWE-937"
+- "CWE-1035"

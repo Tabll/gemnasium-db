@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-479m-364c-43vc"
+identifiers:
+- "GHSA-479m-364c-43vc"
+package_slug: "go/github.com/russellhaering/goxmldsig"
+title: "validateSignature Loop Variable Capture Signature Bypass in goxmldsig"
+description: "This vulnerability lets an attacker get around integrity checks for
+  certain signed elements by replacing their content with the content from another
+  element that is also referenced in the same signature.\n\n------"
+date: "2026-03-18"
+pubdate: "2026-03-18"
+affected_range: "<1.6.0"
+fixed_versions:
+- "1.6.0"
+affected_versions: "All versions before 1.6.0"
+not_impacted: "All versions starting from 1.6.0"
+solution: "Upgrade to version 1.6.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-479m-364c-43vc"
+- "https://github.com/russellhaering/goxmldsig/security/advisories/GHSA-479m-364c-43vc"
+- "https://github.com/russellhaering/goxmldsig"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+uuid: "1127379d-a4fc-42ff-98ed-2405f296a071"
+cwe_ids:
+- "CWE-347"
+- "CWE-682"
+- "CWE-937"
+- "CWE-1035"
