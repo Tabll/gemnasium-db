@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-8px5-2gfr-7ph6"
+identifiers:
+- "GHSA-8px5-2gfr-7ph6"
+package_slug: "npm/openclaw"
+title: "Duplicate Advisory: OpenClaw has Windows Lobster shell fallback command injection
+  in constrained fallback path"
+description: "## Duplicate Advisory\n\nThis advisory has been withdrawn because it
+  is a duplicate of GHSA-fg3m-vhrr-8gj6. This link is maintained to preserve external
+  references.\n\n## Original Description\nOpenClaw versions 2026.1.21 prior to 2026.2.19
+  contain a command injection vulnerability in the Lobster extension's Windows shell
+  fallback mechanism that allows attackers to inject arbitrary commands through tool-provided
+  arguments. When spawn failures trigger shell fallback with shell: true, attackers
+  can exploit cmd.exe command interpretation to execute malicious commands by controlling
+  workflow arguments."
+date: "2026-03-19"
+pubdate: "2026-03-19"
+affected_range: ">=2026.1.21 <=2026.2.17"
+fixed_versions: []
+affected_versions: "All versions starting from 2026.1.21 up to 2026.2.17"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-8px5-2gfr-7ph6"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-fg3m-vhrr-8gj6"
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-31995"
+- "https://github.com/openclaw/openclaw/commit/ba7be018da354ea9f803ed356d20464df0437916"
+- "https://www.vulncheck.com/advisories/openclaw-command-injection-via-windows-shell-fallback-in-lobster-extension"
+cvss_v3: "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:H/A:L"
+cvss_v4: "CVSS:4.0/AV:L/AC:H/AT:N/PR:L/UI:N/VC:N/VI:H/VA:L/SC:N/SI:N/SA:N"
+uuid: "16216728-411a-482b-8a81-b84497a93afc"
+cwe_ids:
+- "CWE-78"
+- "CWE-937"
+- "CWE-1035"

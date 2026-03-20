@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-ggm6-h3mx-cmmp"
+identifiers:
+- "GHSA-ggm6-h3mx-cmmp"
+package_slug: "npm/openclaw"
+title: "Duplicate Advisory: safeBins stdin-only bypass via sort output and recursive
+  grep flags"
+description: "## Duplicate Advisory\n\nThis advisory has been withdrawn because it
+  is a duplicate of GHSA-4685-c5cp-vp95. This link is maintained to preserve external
+  references.\n\n## Original Description\nOpenClaw versions prior to 2026.2.19 tools.exec.safeBins
+  contains an input validation bypass vulnerability that allows attackers to execute
+  unintended filesystem operations through sort output flags or recursive grep flags.
+  Attackers with command execution access can leverage sort -o flag for arbitrary
+  file writes or grep -R flag for recursive file reads, circumventing intended stdin-only
+  restrictions."
+date: "2026-03-19"
+pubdate: "2026-03-19"
+affected_range: "<=2026.2.17"
+fixed_versions: []
+affected_versions: "All versions up to 2026.2.17"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-ggm6-h3mx-cmmp"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-4685-c5cp-vp95"
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-31996"
+- "https://github.com/openclaw/openclaw/commit/2c05cbb43e48ebad03626d3125746fb1b9a8520f"
+- "https://www.vulncheck.com/advisories/openclaw-safebins-stdin-only-bypass-via-sort-output-and-recursive-grep-flags"
+cvss_v3: "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:L/AC:L/AT:P/PR:L/UI:N/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "2af2748a-eb6a-4c75-b3ef-e9cd2ed865f9"
+cwe_ids:
+- "CWE-78"
+- "CWE-937"
+- "CWE-1035"

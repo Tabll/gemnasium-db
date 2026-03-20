@@ -5,7 +5,7 @@ identifiers:
 package_slug: "go/github.com/jackc/pgx/v5"
 title: "Panic in Pipeline when PgConn is busy or closed in github.com/jackc/pgx"
 description: "Pipeline can panic when PgConn is busy or closed."
-date: "2024-07-05"
+date: "2026-03-19"
 pubdate: "2024-07-05"
 affected_range: "<5.5.2"
 fixed_versions:
@@ -16,7 +16,10 @@ solution: "Upgrade to version 5.5.2 or above."
 urls:
 - "https://github.com/advisories/GHSA-fqpg-rq76-99pq"
 - "https://github.com/jackc/pgx/commit/dfd198003a03dbb96e4607b0d3a0bb9a7398ccb7"
+- "https://github.com/jackc/pgx"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
 uuid: "04bc9e88-3b9c-47bf-8e7d-103baaadaea6"
 cwe_ids:
+- "CWE-754"
 - "CWE-937"
 - "CWE-1035"

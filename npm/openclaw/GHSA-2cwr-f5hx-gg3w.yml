@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-2cwr-f5hx-gg3w"
+identifiers:
+- "GHSA-2cwr-f5hx-gg3w"
+package_slug: "npm/openclaw"
+title: "Duplicate Advisory: OpenClaw: stageSandboxMedia destination symlink traversal
+  can overwrite files outside sandbox workspace"
+description: "## Duplicate Advisory\n\nThis advisory has been withdrawn because it
+  is a duplicate of GHSA-cfvj-7rx7-fc7c. This link is maintained to preserve external
+  references.\n\n## Original Description\nOpenClaw versions prior to 2026.3.2 contain
+  a vulnerability in the stageSandboxMedia function in which it fails to validate
+  destination symlinks during media staging, allowing writes to follow symlinks outside
+  the sandbox workspace. Attackers can exploit this by placing symlinks in the media/inbound
+  directory to overwrite arbitrary files on the host system outside sandbox boundaries."
+date: "2026-03-19"
+pubdate: "2026-03-19"
+affected_range: "<=2026.3.1"
+fixed_versions: []
+affected_versions: "All versions up to 2026.3.1"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-2cwr-f5hx-gg3w"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-cfvj-7rx7-fc7c"
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-31990"
+- "https://github.com/openclaw/openclaw/commit/17ede52a4be3034f6ec4b883ac6b81ad0101558a"
+- "https://www.vulncheck.com/advisories/openclaw-symlink-traversal-in-stagesandboxmedia-destination"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:L"
+cvss_v4: "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:N/VI:H/VA:L/SC:N/SI:N/SA:N"
+uuid: "da9b37fe-5697-41c3-8869-3015525c6257"
+cwe_ids:
+- "CWE-59"
+- "CWE-937"
+- "CWE-1035"

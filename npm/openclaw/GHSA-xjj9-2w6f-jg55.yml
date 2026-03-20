@@ -5,14 +5,14 @@ identifiers:
 package_slug: "npm/openclaw"
 title: " Duplicate Advisory: OpenClaw safeBins file-existence oracle information disclosure"
 description: "### Duplicate Advisory\nThis advisory has been withdrawn because it
-  is a duplicate of [OTHER GHSA-ID]. This link is maintained to preserve external
+  is a duplicate of GHSA-6c9j-x93c-rw6j. This link is maintained to preserve external
   references.\n\n### Original Description\nA vulnerability was identified in OpenClaw
   up to 2026.2.17. This issue affects the function tools.exec.safeBins of the component
   File Existence Handler. The manipulation leads to information exposure through discrepancy.
   The attack needs to be performed locally. Upgrading to version 2026.2.19-beta.1
   is capable of addressing this issue. The identifier of the patch is bafdbb6f112409a65decd3d4e7350fbd637c7754.
   Upgrading the affected component is advised."
-date: "2026-03-12"
+date: "2026-03-19"
 pubdate: "2026-03-12"
 affected_range: "<2026.2.19"
 fixed_versions:

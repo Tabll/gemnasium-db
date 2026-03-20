@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-g87j-gm7p-6vw2"
+identifiers:
+- "GHSA-g87j-gm7p-6vw2"
+package_slug: "npm/openclaw"
+title: "Duplicate Advisory: OpenClaw's Node system.run approval hardening wrapper
+  semantic drift can execute unintended local scripts"
+description: "## Duplicate Advisory\n\nThis advisory has been withdrawn because it
+  is a duplicate of GHSA-h3rm-6x7g-882f. This link is maintained to preserve external
+  references.\n\n## Original Description\nOpenClaw 2026.3.1 contains an approval integrity
+  vulnerability in system.run node-host execution where argv rewriting changes command
+  semantics. Attackers can place malicious local scripts in the working directory
+  to execute unintended code despite operator approval of different command text."
+date: "2026-03-19"
+pubdate: "2026-03-19"
+affected_range: "=2026.3.1"
+fixed_versions: []
+affected_versions: "Version 2026.3.1"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-g87j-gm7p-6vw2"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-h3rm-6x7g-882f"
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-29608"
+- "https://github.com/openclaw/openclaw/commit/dded569626b0d8e7bdab10b5e7528b6caf73a0f1"
+- "https://www.vulncheck.com/advisories/openclaw-approval-integrity-bypass-via-system-run-argv-rewriting"
+cvss_v3: "CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:L/AC:H/AT:N/PR:L/UI:A/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+uuid: "495017ed-f657-4f91-aaf5-6c4f0fbb4f9b"
+cwe_ids:
+- "CWE-88"
+- "CWE-937"
+- "CWE-1035"

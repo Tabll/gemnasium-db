@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-wvr4-3wq4-gpc5"
+identifiers:
+- "GHSA-wvr4-3wq4-gpc5"
+package_slug: "npm/mcp-bridge"
+title: "MCP Connect has unauthenticated remote OS command execution via /bridge endpoint"
+description: "When _AUTH_TOKEN_ and _ACCESS_TOKEN_ environment variables are not set
+  (which is the default out-of-the-box configuration) the _/bridge_ HTTP endpoint
+  is completely unauthenticated. Any network-accessible caller can POST a request
+  with an attacker-controlled serverPath and args payload, causing the server to spawn
+  an arbitrary OS process as the user running mcp-bridge. This results in full remote
+  code execution on the host without any credentials."
+date: "2026-03-19"
+pubdate: "2026-03-19"
+affected_range: "<=2.0.0"
+fixed_versions: []
+affected_versions: "All versions up to 2.0.0"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-wvr4-3wq4-gpc5"
+- "https://github.com/EvalsOne/MCP-connect/security/advisories/GHSA-wvr4-3wq4-gpc5"
+- "https://github.com/EvalsOne/MCP-connect"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+uuid: "c0eb896a-a3a9-4054-970e-34f5e682b504"
+cwe_ids:
+- "CWE-306"
+- "CWE-937"
+- "CWE-1035"

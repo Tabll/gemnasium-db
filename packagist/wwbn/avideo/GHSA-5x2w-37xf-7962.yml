@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-5x2w-37xf-7962"
+identifiers:
+- "GHSA-5x2w-37xf-7962"
+package_slug: "packagist/wwbn/avideo"
+title: "AVideo has Unauthenticated PGP Message Decryption via Public Endpoint"
+description: "The AVideo platform exposes a publicly accessible endpoint that performs
+  server-side PGP decryption without requiring any form of authentication. Any anonymous
+  user can submit a private key, ciphertext, and passphrase to the endpoint and receive
+  the decrypted plaintext in the JSON response. This functionality is entirely unprotected,
+  meaning no session, token, or credential is needed to invoke it."
+date: "2026-03-19"
+pubdate: "2026-03-19"
+affected_range: "<=25.0"
+fixed_versions: []
+affected_versions: "All versions up to 25.0"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-5x2w-37xf-7962"
+- "https://github.com/WWBN/AVideo/security/advisories/GHSA-5x2w-37xf-7962"
+- "https://github.com/WWBN/AVideo"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:L"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:N/VA:L/SC:N/SI:N/SA:N"
+uuid: "7d5629bc-83b0-4e29-9add-91e632563c61"
+cwe_ids:
+- "CWE-306"
+- "CWE-937"
+- "CWE-1035"

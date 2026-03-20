@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-q382-vc8q-7jhj"
+identifiers:
+- "GHSA-q382-vc8q-7jhj"
+package_slug: "go/github.com/modelcontextprotocol/go-sdk"
+title: "Improper handling of null Unicode character when parsing JSON in github.com/modelcontextprotocol/go-sdk"
+description: "The Go SDK recently transitioned to the `segmentio/encoding` library
+  for JSON parsing in version 1.3.1. While this change addressed both case-insensitivity
+  and ASCII folding issues, the new parser implemented aggressive key matching that
+  treated keys with `null` Unicode characters appended at the end as equivalent to
+  their base strings."
+date: "2026-03-19"
+pubdate: "2026-03-19"
+affected_range: "<1.4.1"
+fixed_versions:
+- "1.4.1"
+affected_versions: "All versions before 1.4.1"
+not_impacted: "All versions starting from 1.4.1"
+solution: "Upgrade to version 1.4.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-q382-vc8q-7jhj"
+- "https://github.com/modelcontextprotocol/go-sdk/security/advisories/GHSA-q382-vc8q-7jhj"
+- "https://github.com/modelcontextprotocol/go-sdk/commit/724dd47aa3431b9d4cf9ac2eebbf7b38a629afca"
+- "https://github.com/segmentio/encoding/commit/7d5a25dbc5da13aed3cb047a127e4d0e96f536fb"
+- "https://github.com/modelcontextprotocol/go-sdk"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:L/SA:N"
+uuid: "fdcf7d34-83e2-4477-97c6-7c44a7fee6f2"
+cwe_ids:
+- "CWE-1395"
+- "CWE-436"
+- "CWE-937"
+- "CWE-1035"
