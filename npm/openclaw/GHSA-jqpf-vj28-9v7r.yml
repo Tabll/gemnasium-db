@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-jqpf-vj28-9v7r"
+identifiers:
+- "GHSA-jqpf-vj28-9v7r"
+package_slug: "npm/openclaw"
+title: "Duplicate Advisory: Synology Chat dmPolicy=allowlist failed open on empty
+  allowedUserIds, allowing unauthorized agent dispatch"
+description: "## Duplicate Advisory\n\nThis advisory has been withdrawn because it
+  is a duplicate of GHSA-gw85-xp4q-5gp9. This link is maintained to preserve external
+  references.\n\n## Original Description\nOpenClaw versions 2026.2.22 and 2026.2.23
+  contain an authorization bypass vulnerability in the synology-chat channel plugin
+  where dmPolicy set to allowlist with empty allowedUserIds fails open. Attackers
+  with Synology sender access can bypass authorization checks and trigger unauthorized
+  agent dispatch and downstream tool actions."
+date: "2026-03-20"
+pubdate: "2026-03-19"
+affected_range: ">=2026.2.22 <=2026.2.23"
+fixed_versions: []
+affected_versions: "All versions starting from 2026.2.22 up to 2026.2.23"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-jqpf-vj28-9v7r"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-gw85-xp4q-5gp9"
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-31998"
+- "https://github.com/openclaw/openclaw/commit/0ee30361b8f6ef3f110f3a7b001da6dd3df96bb5"
+- "https://github.com/openclaw/openclaw/commit/7655c0cb3a47d0647cbbf5284e177f90b4b82ddb"
+- "https://www.vulncheck.com/advisories/openclaw-authorization-bypass-in-synology-chat-plugin-via-empty-alloweduserids"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:H/A:L"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:L/VI:H/VA:L/SC:N/SI:N/SA:N"
+uuid: "a6a27793-731b-40f9-8360-4f01a39806a2"
+cwe_ids:
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

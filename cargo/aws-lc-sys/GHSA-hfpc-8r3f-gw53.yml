@@ -5,7 +5,7 @@ identifiers:
 package_slug: "cargo/aws-lc-sys"
 title: "AWS-LC has PKCS7_verify Signature Validation Bypass"
 description: "AWS-LC is an open-source, general-purpose cryptographic library."
-date: "2026-03-03"
+date: "2026-03-20"
 pubdate: "2026-03-03"
 affected_range: ">=0.24.0 <0.38.0"
 fixed_versions:
@@ -20,6 +20,7 @@ urls:
 - "https://nvd.nist.gov/vuln/detail/CVE-2026-3338"
 - "https://aws.amazon.com/security/security-bulletins/2026-005-AWS"
 - "https://github.com/aws/aws-lc-rs"
+- "https://rustsec.org/advisories/RUSTSEC-2026-0047.html"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
 uuid: "104b76bb-ddd3-4b92-8b57-5cf30267fb44"
 cwe_ids:

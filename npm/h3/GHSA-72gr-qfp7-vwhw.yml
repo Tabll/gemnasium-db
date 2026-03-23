@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-72gr-qfp7-vwhw"
+identifiers:
+- "GHSA-72gr-qfp7-vwhw"
+package_slug: "npm/h3"
+title: "h3: Double Decoding in `serveStatic` Bypasses `resolveDotSegments` Path Traversal
+  Protection via `%252e%252e`"
+description: "The `serveStatic` utility in h3 applies a redundant `decodeURI()` call
+  to the request pathname after `H3Event` has already performed percent-decoding with
+  `%25` preservation. This double decoding converts `%252e%252e` into `%2e%2e`, which
+  bypasses `resolveDotSegments()` (since it checks for literal `.` characters, not
+  percent-encoded equivalents). When the resulting asset ID is resolved by URL-based
+  backends (CDN, S3, object storage), `%2e%2e` is interpreted as `..` per the URL
+  Standard, enabling path traversal to read arbitrary files from the backend."
+date: "2026-03-20"
+pubdate: "2026-03-20"
+affected_range: "<1.15.9"
+fixed_versions:
+- "1.15.9"
+affected_versions: "All versions before 1.15.9"
+not_impacted: "All versions starting from 1.15.9"
+solution: "Upgrade to version 1.15.9 or above."
+urls:
+- "https://github.com/advisories/GHSA-72gr-qfp7-vwhw"
+- "https://github.com/h3js/h3/security/advisories/GHSA-72gr-qfp7-vwhw"
+- "https://github.com/h3js/h3"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N"
+uuid: "3005795b-fac7-4be0-b03f-1adfe99069b4"
+cwe_ids:
+- "CWE-22"
+- "CWE-937"
+- "CWE-1035"

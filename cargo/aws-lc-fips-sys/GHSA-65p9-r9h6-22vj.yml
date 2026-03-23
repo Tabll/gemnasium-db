@@ -5,7 +5,7 @@ identifiers:
 package_slug: "cargo/aws-lc-fips-sys"
 title: "AWS-LC has Timing Side-Channel in AES-CCM Tag Verification"
 description: "AWS-LC is an open-source, general-purpose cryptographic library."
-date: "2026-03-03"
+date: "2026-03-20"
 pubdate: "2026-03-03"
 affected_range: ">=0.13.0 <0.13.12"
 fixed_versions:
@@ -20,6 +20,8 @@ urls:
 - "https://nvd.nist.gov/vuln/detail/CVE-2026-3337"
 - "https://aws.amazon.com/security/security-bulletins/2026-005-AWS"
 - "https://github.com/aws/aws-lc-rs"
+- "https://rustsec.org/advisories/RUSTSEC-2026-0043.html"
+- "https://rustsec.org/advisories/RUSTSEC-2026-0045.html"
 cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N"
 cvss_v4: "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N"
 uuid: "c65f309e-77f5-4c55-83e6-75861c4cd832"

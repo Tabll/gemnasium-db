@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-x49q-fhhm-r9jf"
+identifiers:
+- "GHSA-x49q-fhhm-r9jf"
+package_slug: "npm/openclaw"
+title: "Duplicate Advisory: OpenClaw: WebSocket shared-auth connections could self-declare
+  elevated scopes"
+description: "### Duplicate Advisory\nThis advisory has been withdrawn because it
+  is a duplicate of GHSA-rqpp-rjj8-7wv8. This link is maintained to preserve external
+  references.\n\n### Original Description\nOpenClaw versions prior to 2026.3.12 contain
+  an authorization bypass vulnerability in the WebSocket connect path that allows
+  shared-token or password-authenticated connections to self-declare elevated scopes
+  without server-side binding. Attackers can exploit this logic flaw to present unauthorized
+  scopes such as operator.admin and perform admin-only gateway operations."
+date: "2026-03-20"
+pubdate: "2026-03-20"
+affected_range: "<2026.3.12"
+fixed_versions:
+- "2026.3.12"
+affected_versions: "All versions before 2026.3.12"
+not_impacted: "All versions starting from 2026.3.12"
+solution: "Upgrade to version 2026.3.12 or above."
+urls:
+- "https://github.com/advisories/GHSA-x49q-fhhm-r9jf"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-rqpp-rjj8-7wv8"
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-22172"
+- "https://www.vulncheck.com/advisories/openclaw-scope-elevation-in-websocket-shared-auth-connections"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H"
+uuid: "5a997bdc-8762-4a2c-880a-2e35f4006ea7"
+cwe_ids:
+- "CWE-862"
+- "CWE-937"
+- "CWE-1035"

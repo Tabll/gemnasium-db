@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-mwjc-5j4x-r686"
+identifiers:
+- "GHSA-mwjc-5j4x-r686"
+package_slug: "packagist/wwbn/avideo"
+title: "AVideo has an unauthenticated decrypt oracle leaking any ciphertext"
+description: "The API plugin exposes a `decryptString` action without any authentication.
+  Anyone can submit ciphertext and receive plaintext. Ciphertext is issued publicly
+  (e.g., `view/url2Embed.json.php`), so any user can recover protected tokens/metadata.
+  Severity: High."
+date: "2026-03-20"
+pubdate: "2026-03-20"
+affected_range: "<=26.0"
+fixed_versions: []
+affected_versions: "All versions up to 26.0"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-mwjc-5j4x-r686"
+- "https://github.com/WWBN/AVideo/security/advisories/GHSA-mwjc-5j4x-r686"
+- "https://github.com/WWBN/AVideo"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+uuid: "e564af78-08a3-4711-a200-40da60575327"
+cwe_ids:
+- "CWE-287"
+- "CWE-312"
+- "CWE-326"
+- "CWE-327"
+- "CWE-937"
+- "CWE-1035"

@@ -17,7 +17,7 @@ description: "Scriban is vulnerable to an uncontrolled process crash resulting i
   from untrusted input), an attacker can supply thousands of nested parentheses or
   blocks. As the parser recursively evaluates each nested layer, it consumes thread
   stack space until it exceeds the limits of the host OS, triggering a fatal crash."
-date: "2026-03-19"
+date: "2026-03-20"
 pubdate: "2026-03-19"
 affected_range: "[,6.6.0)"
 fixed_versions:

@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-pgx6-7jcq-2qff"
+identifiers:
+- "GHSA-pgx6-7jcq-2qff"
+package_slug: "npm/@pdfme/common"
+title: "PDFME has SSRF via Unvalidated URL Fetch in `getB64BasePdf` When `basePdf`
+  Is Attacker-Controlled"
+description: "The `getB64BasePdf` function in `@pdfme/common` fetches arbitrary URLs
+  via `fetch()` without any validation when `basePdf` is a non-data-URI string and
+  `window` is defined. An attacker who can control the `basePdf` field of a template
+  (e.g., through a web application that accepts user-supplied templates) can force
+  the server or client to make requests to arbitrary internal or external endpoints,
+  enabling Server-Side Request Forgery (SSRF) in SSR contexts or blind request forgery
+  in browser contexts."
+date: "2026-03-20"
+pubdate: "2026-03-20"
+affected_range: "<5.5.10"
+fixed_versions:
+- "5.5.10"
+affected_versions: "All versions before 5.5.10"
+not_impacted: "All versions starting from 5.5.10"
+solution: "Upgrade to version 5.5.10 or above."
+urls:
+- "https://github.com/advisories/GHSA-pgx6-7jcq-2qff"
+- "https://github.com/pdfme/pdfme/security/advisories/GHSA-pgx6-7jcq-2qff"
+- "https://github.com/pdfme/pdfme"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:N/A:N"
+uuid: "1f0d82ab-21bd-4e92-a3eb-26da18ffbf04"
+cwe_ids:
+- "CWE-918"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,24 @@
+---
+identifier: "GMS-2026-8"
+identifiers:
+- "GMS-2026-8"
+package_slug: "npm/@emilgroup/auth-sdk-node"
+title: "Embedded Malicious Code (CanisterWorm)"
+description: "This package version was compromised as part of the CanisterWorm supply chain attack, which originated from the Trivy security scanner compromise by
+  threat actor TeamPCP on March 19, 2026. The malicious code deploys a persistent backdoor via systemd, exfiltrates npm tokens and credentials, and
+  uses an Internet Computer Protocol (ICP) canister as a dead-drop C2 server. Any computer that has this package installed or running should be
+  considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer."
+date: "2026-03-22"
+pubdate: "2026-03-21"
+affected_range: "=1.21.1 || =1.21.2"
+fixed_versions: []
+affected_versions: "Version(s) 1.21.1, 1.21.2"
+not_impacted: ""
+solution: "Remove this package immediately and rotate any secrets that may have been compromised."
+urls:
+- "https://socket.dev/blog/canisterworm-npm-publisher-compromise-deploys-backdoor-across-29-packages"
+- "https://thehackernews.com/2026/03/trivy-supply-chain-attack-triggers-self.html"
+- "https://github.com/aquasecurity/trivy/security/advisories/GHSA-69fq-xp46-6x23"
+uuid: "1b338c92-3f09-4d20-8f8c-d82e3c6e80a0"
+cwe_ids:
+- "CWE-506"

@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-44c9-4rg5-qjgq"
+identifiers:
+- "GHSA-44c9-4rg5-qjgq"
+package_slug: "npm/openclaw"
+title: "Duplicate Advisory: web_search citation redirect SSRF via private-network-allowing
+  policy"
+description: "## Duplicate Advisory\n\nThis advisory has been withdrawn because it
+  is a duplicate of GHSA-g99v-8hwm-g76g. This link is maintained to preserve external
+  references.\n\n## Original Description\nOpenClaw versions prior to 2026.3.1 contain
+  a server-side request forgery vulnerability in web_search citation redirect resolution
+  that uses a private-network-allowing SSRF policy. An attacker who can influence
+  citation redirect targets can trigger internal-network requests from the OpenClaw
+  host to loopback, private, or internal destinations."
+date: "2026-03-20"
+pubdate: "2026-03-19"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-44c9-4rg5-qjgq"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-g99v-8hwm-g76g"
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-31989"
+- "https://www.vulncheck.com/advisories/openclaw-server-side-request-forgery-via-web-search-citation-redirect"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:L"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:L/VA:N/SC:L/SI:L/SA:L"
+uuid: "d8d97c7b-d44b-4e44-843f-cf3714d869c2"
+cwe_ids:
+- "CWE-918"
+- "CWE-937"
+- "CWE-1035"

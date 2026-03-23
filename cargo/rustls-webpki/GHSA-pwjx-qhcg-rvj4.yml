@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-pwjx-qhcg-rvj4"
+identifiers:
+- "GHSA-pwjx-qhcg-rvj4"
+package_slug: "cargo/rustls-webpki"
+title: "webpki has a certificate revocation enforcement bug"
+description: "There is a certificate revocation enforcement bug in `rustls-webpki`
+  CRL processing. when both the certificate CRL distribution point and the CRL issuing
+  distribution point contain multiple URI names, `IssuingDistributionPoint::authoritative_for()`
+  reuses one-shot DER iterators across nested comparisons. If the only matching URI
+  pair appears later in both sequences, the implementation misses the match, treats
+  the CRL as non-authoritative, and under `UnknownStatusPolicy::Allow` accepts a revoked
+  certificate."
+date: "2026-03-20"
+pubdate: "2026-03-20"
+affected_range: ">=0.101.0 <0.103.10||>=0.104.0-alpha.1 <0.104.0-alpha.5"
+fixed_versions:
+- "0.103.10"
+- "0.104.0-alpha.5"
+affected_versions: "All versions starting from 0.101.0 before 0.103.10, all versions
+  starting from 0.104.0-alpha.1 before 0.104.0-alpha.5"
+not_impacted: "All versions before 0.101.0, all versions starting from 0.103.10 before
+  0.104.0-alpha.1, all versions starting from 0.104.0-alpha.5"
+solution: "Upgrade to versions 0.103.10, 0.104.0-alpha.5 or above."
+urls:
+- "https://github.com/advisories/GHSA-pwjx-qhcg-rvj4"
+- "https://github.com/rustls/webpki/security/advisories/GHSA-pwjx-qhcg-rvj4"
+- "https://github.com/rustls/webpki"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:N/I:H/A:N"
+uuid: "dd7f3c42-b39f-4503-9f6a-7f26532072f5"
+cwe_ids:
+- "CWE-299"
+- "CWE-937"
+- "CWE-1035"

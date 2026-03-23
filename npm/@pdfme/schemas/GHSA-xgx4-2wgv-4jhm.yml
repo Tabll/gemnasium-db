@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-xgx4-2wgv-4jhm"
+identifiers:
+- "GHSA-xgx4-2wgv-4jhm"
+package_slug: "npm/@pdfme/schemas"
+title: "PDFME  has XSS via Unsanitized i18n Label Injection into innerHTML in multiVariableText
+  propPanel"
+description: "The multiVariableText property panel in `@pdfme/schemas` constructs
+  HTML via string concatenation and assigns it to `innerHTML` using unsanitized i18n
+  label values. An attacker who can control label overrides passed through `options.labels`
+  can inject arbitrary JavaScript that executes in the context of any user who opens
+  the Designer and selects a multiVariableText field with no `{variables}` in its
+  text."
+date: "2026-03-20"
+pubdate: "2026-03-20"
+affected_range: "<5.5.10"
+fixed_versions:
+- "5.5.10"
+affected_versions: "All versions before 5.5.10"
+not_impacted: "All versions starting from 5.5.10"
+solution: "Upgrade to version 5.5.10 or above."
+urls:
+- "https://github.com/advisories/GHSA-xgx4-2wgv-4jhm"
+- "https://github.com/pdfme/pdfme/security/advisories/GHSA-xgx4-2wgv-4jhm"
+- "https://github.com/pdfme/pdfme"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:C/C:L/I:L/A:N"
+uuid: "f87eade2-8735-465c-8f1d-f8b5b1650595"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

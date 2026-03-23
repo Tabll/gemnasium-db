@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-4hxc-9384-m385"
+identifiers:
+- "GHSA-4hxc-9384-m385"
+package_slug: "npm/h3"
+title: "h3: SSE Event Injection via Unsanitized Carriage Return (`\\r`) in EventStream
+  Data and Comment Fields (Bypass of CVE Fix)"
+description: "The `EventStream` class in h3 fails to sanitize carriage return (`\\r`)
+  characters in `data` and `comment` fields. Per the SSE specification, `\\r` is a
+  valid line terminator, so browsers interpret injected `\\r` as line breaks. This
+  allows an attacker to inject arbitrary SSE events, spoof event types, and split
+  a single `push()` call into multiple distinct browser-parsed events. This is an
+  incomplete fix bypass of commit `7791538` which addressed `\\n` injection but missed
+  `\\r`-only injection."
+date: "2026-03-20"
+pubdate: "2026-03-20"
+affected_range: ">=2.0.0-beta.0 <2.0.1-rc.17||<1.15.9"
+fixed_versions:
+- "2.0.1-rc.17"
+- "1.15.9"
+affected_versions: "All versions before 1.15.9, all versions starting from 2.0.0-beta.0
+  before 2.0.1-rc.17"
+not_impacted: "All versions starting from 1.15.9 before 2.0.0-beta.0, all versions
+  starting from 2.0.1-rc.17"
+solution: "Upgrade to versions 1.15.9, 2.0.1-rc.17 or above."
+urls:
+- "https://github.com/advisories/GHSA-4hxc-9384-m385"
+- "https://github.com/h3js/h3/security/advisories/GHSA-4hxc-9384-m385"
+- "https://github.com/h3js/h3"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+uuid: "fd41c501-730f-43d6-9d6d-03d5a1c9483a"
+cwe_ids:
+- "CWE-74"
+- "CWE-937"
+- "CWE-1035"

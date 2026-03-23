@@ -1,0 +1,36 @@
+---
+identifier: "GHSA-82gw-wqw6-r2cf"
+identifiers:
+- "GHSA-82gw-wqw6-r2cf"
+package_slug: "npm/openclaw"
+title: "Duplicate Advisory: Command Injection via unescaped environment assignments
+  in Windows Scheduled Task script generation"
+description: "## Duplicate Advisory\n\nThis advisory has been withdrawn because it
+  is a duplicate of GHSA-pj5x-38rw-6fph. This link is maintained to preserve external
+  references.\n\n## Original Description\nOpenClaw versions prior to 2026.2.19 contain
+  a command injection vulnerability in Windows Scheduled Task script generation where
+  environment variables are written to gateway.cmd using unquoted set KEY=VALUE assignments,
+  allowing shell metacharacters to break out of assignment context. Attackers can
+  inject arbitrary commands through environment variable values containing metacharacters
+  like &, |, ^, %, or ! to achieve command execution when the scheduled task script
+  is generated and executed."
+date: "2026-03-20"
+pubdate: "2026-03-19"
+affected_range: "<=2026.2.17"
+fixed_versions: []
+affected_versions: "All versions up to 2026.2.17"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-82gw-wqw6-r2cf"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-pj5x-38rw-6fph"
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-22176"
+- "https://github.com/openclaw/openclaw/commit/dafe52e8cf1a041d898cfb304a485fa05e5f58fb"
+- "https://www.vulncheck.com/advisories/openclaw-command-injection-via-unescaped-environment-variables-in-windows-scheduled-task"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:L"
+cvss_v4: "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:N/VI:H/VA:L/SC:N/SI:N/SA:N"
+uuid: "92ffa17e-f617-4e38-aef0-9ced64407fdb"
+cwe_ids:
+- "CWE-78"
+- "CWE-937"
+- "CWE-1035"
