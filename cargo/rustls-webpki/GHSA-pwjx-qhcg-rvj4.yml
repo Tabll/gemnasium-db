@@ -3,15 +3,22 @@ identifier: "GHSA-pwjx-qhcg-rvj4"
 identifiers:
 - "GHSA-pwjx-qhcg-rvj4"
 package_slug: "cargo/rustls-webpki"
-title: "webpki has a certificate revocation enforcement bug"
-description: "There is a certificate revocation enforcement bug in `rustls-webpki`
-  CRL processing. when both the certificate CRL distribution point and the CRL issuing
-  distribution point contain multiple URI names, `IssuingDistributionPoint::authoritative_for()`
-  reuses one-shot DER iterators across nested comparisons. If the only matching URI
-  pair appears later in both sequences, the implementation misses the match, treats
-  the CRL as non-authoritative, and under `UnknownStatusPolicy::Allow` accepts a revoked
-  certificate."
-date: "2026-03-20"
+title: "webpki: CRLs not considered authoritative by Distribution Point due to faulty
+  matching logic"
+description: "If a certificate had more than one `distributionPoint`, then only the
+  first `distributionPoint` would be considered against each CRL's `IssuingDistributionPoint`
+  `distributionPoint`, and then the certificate's subsequent `distributionPoint`s
+  would be ignored.\n\nThe impact was that correct provided CRLs would not be consulted
+  to check revocation. With `UnknownStatusPolicy::Deny` (the default) this would lead
+  to incorrect but safe `Error::UnknownRevocationStatus`. With `UnknownStatusPolicy::Allow`
+  this would lead to inappropriate acceptance of revoked certificates.\n\nThis vulnerability
+  is thought to be of limited impact. This is because both the certificate and CRL
+  are signed -- an attacker would need to compromise a trusted issuing authority to
+  trigger this bug.  An attacker with such capabilities could likely bypass revocation
+  checking through other more impactful means (such as publishing a valid, empty CRL.)\n\nMore
+  likely, this bug would be latent in normal use, and an attacker could leverage faulty
+  revocation checking to continue using a revoked credential."
+date: "2026-03-23"
 pubdate: "2026-03-20"
 affected_range: ">=0.101.0 <0.103.10||>=0.104.0-alpha.1 <0.104.0-alpha.5"
 fixed_versions:
@@ -26,6 +33,7 @@ urls:
 - "https://github.com/advisories/GHSA-pwjx-qhcg-rvj4"
 - "https://github.com/rustls/webpki/security/advisories/GHSA-pwjx-qhcg-rvj4"
 - "https://github.com/rustls/webpki"
+- "https://rustsec.org/advisories/RUSTSEC-2026-0049.html"
 cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:N/I:H/A:N"
 uuid: "dd7f3c42-b39f-4503-9f6a-7f26532072f5"
 cwe_ids:
