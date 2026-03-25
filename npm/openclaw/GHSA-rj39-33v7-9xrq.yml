@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-rj39-33v7-9xrq"
+identifiers:
+- "GHSA-rj39-33v7-9xrq"
+package_slug: "npm/openclaw"
+title: "Duplicate Advisory: OpenClaw's shell startup env injection bypasses system.run
+  allowlist intent (RCE class)"
+description: "## Duplicate Advisory\n\nThis advisory has been withdrawn because it
+  is a duplicate of GHSA-xgf2-vxv2-rrmg. This link is maintained to preserve external
+  references.\n\n## Original Description\nOpenClaw versions prior to 2026.2.22 fail
+  to sanitize shell startup environment variables HOME and ZDOTDIR in the system.run
+  function, allowing attackers to bypass command allowlist protections. Remote attackers
+  can inject malicious startup files such as .bash_profile or .zshenv to achieve arbitrary
+  code execution before allowlist-evaluated commands are executed."
+date: "2026-03-24"
+pubdate: "2026-03-21"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-rj39-33v7-9xrq"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-xgf2-vxv2-rrmg"
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-32056"
+- "https://github.com/openclaw/openclaw/commit/c2c7114ed39a547ab6276e1e933029b9530ee906"
+- "https://www.vulncheck.com/advisories/openclaw-remote-code-execution-via-shell-startup-environment-variable-injection-in-system-run"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:H/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+uuid: "b7165a58-283e-4384-b0d8-55509d21138e"
+cwe_ids:
+- "CWE-78"
+- "CWE-937"
+- "CWE-1035"

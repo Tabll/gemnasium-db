@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-x6m9-38vm-2xhf"
+identifiers:
+- "GHSA-x6m9-38vm-2xhf"
+package_slug: "nuget/scriban"
+title: "Scriban has an authorization bypass due to stale include cache surviving TemplateContext.Reset() "
+description: "`TemplateContext.Reset()` claims that a `TemplateContext` can be reused
+  safely on the same thread, but it does not clear `CachedTemplates`. If an application
+  pools `TemplateContext` objects and uses an `ITemplateLoader` that resolves content
+  per request, tenant, or user, a previously authorized include can be served to later
+  renders without calling `TemplateLoader.Load()` again."
+date: "2026-03-24"
+pubdate: "2026-03-24"
+affected_range: "[,7.0.0)"
+fixed_versions:
+- "7.0.0"
+affected_versions: "All versions before 7.0.0"
+not_impacted: "All versions starting from 7.0.0"
+solution: "Upgrade to version 7.0.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-x6m9-38vm-2xhf"
+- "https://github.com/scriban/scriban/security/advisories/GHSA-x6m9-38vm-2xhf"
+- "https://github.com/scriban/scriban"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N"
+uuid: "581b0098-9bf3-49de-9722-c6b86eadbf2c"
+cwe_ids:
+- "CWE-226"
+- "CWE-937"
+- "CWE-1035"

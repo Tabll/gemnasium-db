@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-xcx6-vp38-8hr5"
+identifiers:
+- "GHSA-xcx6-vp38-8hr5"
+package_slug: "nuget/scriban"
+title: "Scriban has Uncontrolled Recursion in `object.to_json` Causing Unrecoverable
+  Process Crash via StackOverflowException"
+description: "The `object.to_json` builtin function in Scriban performs recursive
+  JSON serialization via an internal `WriteValue()` static local function that has
+  no depth limit, no circular reference detection, and no stack overflow guard. A
+  Scriban template containing a self-referencing object passed to `object.to_json`
+  triggers unbounded recursion, causing a `StackOverflowException` that terminates
+  the hosting .NET process. This is a fatal, unrecoverable crash — `StackOverflowException`
+  cannot be caught by user code in .NET."
+date: "2026-03-24"
+pubdate: "2026-03-24"
+affected_range: "[,7.0.0)"
+fixed_versions:
+- "7.0.0"
+affected_versions: "All versions before 7.0.0"
+not_impacted: "All versions starting from 7.0.0"
+solution: "Upgrade to version 7.0.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-xcx6-vp38-8hr5"
+- "https://github.com/scriban/scriban/security/advisories/GHSA-xcx6-vp38-8hr5"
+- "https://github.com/scriban/scriban"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "2b706d50-b153-42ff-92b0-0d1b2181e123"
+cwe_ids:
+- "CWE-674"
+- "CWE-937"
+- "CWE-1035"

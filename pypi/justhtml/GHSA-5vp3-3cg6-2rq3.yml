@@ -1,0 +1,38 @@
+---
+identifier: "GHSA-5vp3-3cg6-2rq3"
+identifiers:
+- "GHSA-5vp3-3cg6-2rq3"
+package_slug: "pypi/justhtml"
+title: "JustHTML is vulnerable to XSS via code fence breakout in <pre> content"
+description: "`to_markdown()` is vulnerable when serializing attacker-controlled `<pre>`
+  content. The `<pre>` handler emits a fixed three-backtick fenced code block, but
+  writes decoded text content into that fence without choosing a delimiter longer
+  than any backtick run inside the content.\n\nAn attacker can place backticks and
+  HTML-like text inside a sanitized `<pre>` element so that the generated Markdown
+  closes the fence early and leaves raw HTML outside the code block. When that Markdown
+  is rendered by a CommonMark/GFM-style renderer that allows raw HTML, the HTML executes.\n\nThis
+  is a bypass of the v1.12.0 Markdown hardening. That fix escaped HTML-significant
+  characters for regular text nodes, but `<pre>` uses a separate serialization path
+  and does not apply the same protection."
+date: "2026-03-24"
+pubdate: "2026-03-24"
+affected_range: "<1.13.0"
+fixed_versions:
+- "1.13.0"
+affected_versions: "All versions before 1.13.0"
+not_impacted: "All versions starting from 1.13.0"
+solution: "Upgrade to version 1.13.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-5vp3-3cg6-2rq3"
+- "https://github.com/EmilStenstrom/justhtml/security/advisories/GHSA-5vp3-3cg6-2rq3"
+- "https://github.com/EmilStenstrom/justhtml/commit/f35f8f723c713bd8f912d86e9ec6881275ff5af9"
+- "https://github.com/EmilStenstrom/justhtml"
+- "https://github.com/EmilStenstrom/justhtml/releases/tag/v1.13.0"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N"
+uuid: "e4fce0c4-6737-4c20-b5b5-e5dcc7b954cc"
+cwe_ids:
+- "CWE-79"
+- "CWE-80"
+- "CWE-937"
+- "CWE-1035"

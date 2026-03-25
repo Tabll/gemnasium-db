@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-p6q4-fgr8-vx4p"
+identifiers:
+- "GHSA-p6q4-fgr8-vx4p"
+package_slug: "nuget/scriban"
+title: "Scriban has a Stack Overflow via Nested Array Initializers That Bypass the
+  ExpressionDepthLimit Fix"
+description: "StackOverflowException via nested array initializers bypasses ExpressionDepthLimit
+  fix (GHSA-wgh7-7m3c-fx25)"
+date: "2026-03-24"
+pubdate: "2026-03-24"
+affected_range: "[,7.0.0)"
+fixed_versions:
+- "7.0.0"
+affected_versions: "All versions before 7.0.0"
+not_impacted: "All versions starting from 7.0.0"
+solution: "Upgrade to version 7.0.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-p6q4-fgr8-vx4p"
+- "https://github.com/scriban/scriban/security/advisories/GHSA-p6q4-fgr8-vx4p"
+- "https://github.com/advisories/GHSA-wgh7-7m3c-fx25"
+- "https://github.com/scriban/scriban"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "3e735ee7-2fed-4c1e-a9a4-d93e957ceef7"
+cwe_ids:
+- "CWE-674"
+- "CWE-937"
+- "CWE-1035"

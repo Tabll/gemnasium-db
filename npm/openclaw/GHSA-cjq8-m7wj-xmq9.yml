@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-cjq8-m7wj-xmq9"
+identifiers:
+- "GHSA-cjq8-m7wj-xmq9"
+package_slug: "npm/openclaw"
+title: "Duplicate Advisory: OpenClaw Node system.run approval context-binding weakness
+  in approval-enabled host=node flows"
+description: "## Duplicate Advisory\n\nThis advisory has been withdrawn because it
+  is a duplicate of GHSA-hjvp-qhm6-wrh2. This link is maintained to preserve external
+  references.\n\n## Original Description\nOpenClaw versions prior to 2026.2.26 contain
+  an approval context-binding weakness in system.run execution flows with host=node
+  that allows reuse of previously approved requests with modified environment variables.
+  Attackers with access to an approval id can exploit this by reusing an approval
+  with changed env input, bypassing execution-integrity controls in approval-enabled
+  workflows."
+date: "2026-03-24"
+pubdate: "2026-03-21"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-cjq8-m7wj-xmq9"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-hjvp-qhm6-wrh2"
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-32058"
+- "https://github.com/openclaw/openclaw/commit/10481097f8e6dd0346db9be0b5f27570e1bdfcfa"
+- "https://www.vulncheck.com/advisories/openclaw-approval-context-binding-weakness-in-system-run-via-host-node"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:H/AT:P/PR:L/UI:A/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "95c49965-1218-48a8-8683-8d20ad067f4e"
+cwe_ids:
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

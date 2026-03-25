@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-86jj-29wc-7q2w"
+identifiers:
+- "GHSA-86jj-29wc-7q2w"
+package_slug: "npm/openclaw"
+title: "Duplicate Advisory: OpenClaw's Signal reaction-only status events could, in
+  limited cases, be enqueued before access checks"
+description: "## Duplicate Advisory\n\nThis advisory has been withdrawn because it
+  is a duplicate of GHSA-792q-qw95-f446. This link is maintained to preserve external
+  references.\n\n## Original Description\nOpenClaw versions prior to 2026.2.25 contain
+  an access control vulnerability in signal reaction notification handling that allows
+  unauthorized senders to enqueue status events before authorization checks are applied.
+  Attackers can exploit the reaction-only event path in event-handler.ts to queue
+  signal reaction status lines for sessions without proper DM or group access validation."
+date: "2026-03-24"
+pubdate: "2026-03-21"
+affected_range: "<=2026.2.24"
+fixed_versions: []
+affected_versions: "All versions up to 2026.2.24"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-86jj-29wc-7q2w"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-792q-qw95-f446"
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-32050"
+- "https://github.com/openclaw/openclaw/commit/2aa7842adeedef423be7ce283a9144b9f1a0a669"
+- "https://www.vulncheck.com/advisories/openclaw-unauthorized-reaction-status-event-enqueue-via-access-check-bypass"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "433bbba1-85f3-4162-899a-0385f0404390"
+cwe_ids:
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-c875-h985-hvrc"
+identifiers:
+- "GHSA-c875-h985-hvrc"
+package_slug: "nuget/scriban"
+title: "Scriban: Built-in operations bypass LoopLimit and delay cancellation, enabling
+  Denial of Service"
+description: "Scriban's `LoopLimit` only applies to script loop statements, not to
+  expensive iteration performed inside operators and builtins. An attacker can submit
+  a single expression such as `{{ 1..1000000 | array.size }}` and force large amounts
+  of CPU work even when `LoopLimit` is set to a very small value."
+date: "2026-03-24"
+pubdate: "2026-03-24"
+affected_range: "[,7.0.0)"
+fixed_versions:
+- "7.0.0"
+affected_versions: "All versions before 7.0.0"
+not_impacted: "All versions starting from 7.0.0"
+solution: "Upgrade to version 7.0.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-c875-h985-hvrc"
+- "https://github.com/scriban/scriban/security/advisories/GHSA-c875-h985-hvrc"
+- "https://github.com/scriban/scriban"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "228290d0-b1f1-433b-8a0d-f250a9b46a42"
+cwe_ids:
+- "CWE-400"
+- "CWE-937"
+- "CWE-1035"

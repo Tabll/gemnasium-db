@@ -1,0 +1,38 @@
+---
+identifier: "GHSA-g3qj-j598-cxmq"
+identifiers:
+- "GHSA-g3qj-j598-cxmq"
+package_slug: "npm/fido2-lib"
+title: "fido2-lib is vulnerable to DoS via cbor-extract heap buffer over-read in CBOR
+  attestation parsing"
+description: "fido2-lib v3.x depends on cbor-x (~1.6.0), which optionally pulls in
+  cbor-extract (C++ native addon). cbor-extract <= 2.2.0 has a heap buffer over-read
+  in `extractStrings()` — a 5-byte CBOR payload crashes Node.js with SIGSEGV. No JS
+  exception, no try/catch, process dead.\n\nThe crash triggers during WebAuthn registration
+  when the server decodes the attestation object. An attacker sends a crafted authenticator
+  response to the registration endpoint — single request, unauthenticated, instant
+  kill.\n\nFixed in cbor-extract@2.2.1 / cbor-x@1.6.3 (2026-03-08). fido2-lib@3.5.7
+  still pins cbor-x ~1.6.0 which resolves to vulnerable cbor-extract."
+date: "2026-03-24"
+pubdate: "2026-03-24"
+affected_range: "<3.5.8"
+fixed_versions:
+- "3.5.8"
+affected_versions: "All versions before 3.5.8"
+not_impacted: "All versions starting from 3.5.8"
+solution: "Upgrade to version 3.5.8 or above."
+urls:
+- "https://github.com/advisories/GHSA-g3qj-j598-cxmq"
+- "https://github.com/webauthn-open-source/fido2-lib/security/advisories/GHSA-g3qj-j598-cxmq"
+- "https://github.com/kriszyp/cbor-extract/issues/2"
+- "https://github.com/kriszyp/cbor-extract/issues/3"
+- "https://github.com/kriszyp/cbor-extract/commit/1f6e0d9704149bdb5531d25f5d08a0280a71e2ca"
+- "https://github.com/webauthn-open-source/fido2-lib"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "00bb55d0-ebf6-4437-9e31-2a4f9d11fb59"
+cwe_ids:
+- "CWE-125"
+- "CWE-126"
+- "CWE-1395"
+- "CWE-937"
+- "CWE-1035"

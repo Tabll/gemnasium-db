@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-v66j-x4hw-fv9g"
+identifiers:
+- "GHSA-v66j-x4hw-fv9g"
+package_slug: "nuget/scriban"
+title: "Scriban: Uncontrolled Memory Allocation via string.pad_left/pad_right Allows
+  Remote Denial of Service"
+description: "The built-in `string.pad_left` and `string.pad_right` template functions
+  in Scriban perform no validation on the `width` parameter, allowing a template expression
+  to allocate arbitrarily large strings in a single call. When Scriban is exposed
+  to untrusted template input — as in the official Scriban.AppService playground deployed
+  on Azure — an unauthenticated attacker can trigger ~1GB memory allocations with
+  a 39-byte payload, crashing the service via `OutOfMemoryException`."
+date: "2026-03-24"
+pubdate: "2026-03-24"
+affected_range: "[,7.0.0)"
+fixed_versions:
+- "7.0.0"
+affected_versions: "All versions before 7.0.0"
+not_impacted: "All versions starting from 7.0.0"
+solution: "Upgrade to version 7.0.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-v66j-x4hw-fv9g"
+- "https://github.com/scriban/scriban/security/advisories/GHSA-v66j-x4hw-fv9g"
+- "https://github.com/scriban/scriban"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "4b386841-3799-459b-b2b4-abdbff57afe7"
+cwe_ids:
+- "CWE-770"
+- "CWE-937"
+- "CWE-1035"

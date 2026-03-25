@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-xw6w-9jjh-p9cr"
+identifiers:
+- "GHSA-xw6w-9jjh-p9cr"
+package_slug: "nuget/scriban"
+title: "Scriban has Multiple Denial-of-Service Vectors via Unbounded Resource Consumption
+  During Expression Evaluation"
+description: "Scriban's expression evaluation contains three distinct code paths that
+  allow an attacker who can supply a template to cause denial of service through unbounded
+  memory allocation or CPU exhaustion. The existing safety controls (`LimitToString`,
+  `LoopLimit`) do not protect these paths, giving applications a false sense of safety
+  when evaluating untrusted templates."
+date: "2026-03-24"
+pubdate: "2026-03-24"
+affected_range: "[,7.0.0)"
+fixed_versions:
+- "7.0.0"
+affected_versions: "All versions before 7.0.0"
+not_impacted: "All versions starting from 7.0.0"
+solution: "Upgrade to version 7.0.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-xw6w-9jjh-p9cr"
+- "https://github.com/scriban/scriban/security/advisories/GHSA-xw6w-9jjh-p9cr"
+- "https://github.com/scriban/scriban"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+uuid: "cfc441bd-7936-47c5-b011-ffea58413984"
+cwe_ids:
+- "CWE-400"
+- "CWE-937"
+- "CWE-1035"
