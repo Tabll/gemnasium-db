@@ -7,7 +7,7 @@ title: "Bug fixes in hpke-rs, hpke-rs-rust-crypto"
 description: "We publish a GitHub security advisory for any releases whose CHANGELOG
   includes bug-fixes, and encourage our users to upgrade. The latest releases of the
   hpke-rs and hpke-rs-rust-crypto crates contain the following bug-fixes:"
-date: "2026-02-13"
+date: "2026-03-25"
 pubdate: "2026-02-13"
 affected_range: "<0.6.0"
 fixed_versions:
@@ -27,6 +27,10 @@ urls:
 - "https://github.com/cryspen/hpke-rs/commit/3a8254938f43bdc4e0c9c4f987f8071f19779066"
 - "https://github.com/cryspen/hpke-rs/commit/b54c8bb83906331bdf4f606cafa30cd7fd20b531"
 - "https://github.com/cryspen/hpke-rs"
+- "https://rustsec.org/advisories/RUSTSEC-2026-0070.html"
+- "https://rustsec.org/advisories/RUSTSEC-2026-0072.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
 uuid: "fb654d1c-dcac-46ee-83cf-40ef1e2a2ab7"
 cwe_ids:
 - "CWE-190"

@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-p2gh-cfq4-4wjc"
+identifiers:
+- "GHSA-p2gh-cfq4-4wjc"
+package_slug: "packagist/google/protobuf"
+title: "Protobuf: Denial of Service issue through malicious messages containing negative
+  varints or deep recursion"
+description: "A Denial of Service (DoS) vulnerability exists in the Protobuf PHP library
+  during the parsing of untrusted input. Maliciously structured messages—specifically
+  those containing negative `varint`s or deep recursion—can be used to crash the application,
+  impacting service availability."
+date: "2026-03-25"
+pubdate: "2026-03-25"
+affected_range: "<4.33.6"
+fixed_versions:
+- "4.33.6"
+affected_versions: "All versions before 4.33.6"
+not_impacted: "All versions starting from 4.33.6"
+solution: "Upgrade to version 4.33.6 or above."
+urls:
+- "https://github.com/advisories/GHSA-p2gh-cfq4-4wjc"
+- "https://github.com/protocolbuffers/protobuf/security/advisories/GHSA-p2gh-cfq4-4wjc"
+- "https://github.com/protocolbuffers/protobuf/issues/24159"
+- "https://github.com/protocolbuffers/protobuf/issues/25067"
+- "https://github.com/protocolbuffers/protobuf/commit/60e93d2d104f2af9cd345b1c6f3891d91430244a"
+- "https://github.com/protocolbuffers/protobuf/commit/c8e9b27d95c6ab2d0668b5889e7dac2c477b7038"
+- "https://github.com/protocolbuffers/protobuf"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+uuid: "edbd4d06-0bc0-4b7b-b4b5-d1332ba9bee2"
+cwe_ids:
+- "CWE-400"
+- "CWE-937"
+- "CWE-1035"

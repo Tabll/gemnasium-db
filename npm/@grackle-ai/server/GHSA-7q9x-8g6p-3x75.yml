@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-7q9x-8g6p-3x75"
+identifiers:
+- "GHSA-7q9x-8g6p-3x75"
+package_slug: "npm/@grackle-ai/server"
+title: "@grackle-ai/server: Unescaped Error String in renderPairingPage() HTML Template"
+description: "The `renderPairingPage()` function embeds the `error` parameter directly
+  into HTML without escaping:\n```typescript\nconst errorHtml = error ? `<p style=\"color:#e74c3c\">${error}</p>`
+  : \"\";\n```\n\nAll current call sites pass hardcoded strings, so this is **not
+  exploitable today**. However, the function is architecturally fragile — if a future
+  code change passes user-controlled or dynamic content into the error parameter,
+  it would create an XSS vulnerability.\n\nThe `renderAuthorizePage()` function in
+  the same file correctly uses `escapeHtml()` for dynamic content, making this an
+  inconsistency.\n\n**Affected code:**\n- `packages/server/src/index.ts:64-89` — `renderPairingPage()`
+  with unescaped error interpolation\n- Compare: `packages/server/src/index.ts:130`
+  — `renderAuthorizePage()` correctly uses `escapeHtml()`"
+date: "2026-03-25"
+pubdate: "2026-03-25"
+affected_range: "<0.70.1"
+fixed_versions:
+- "0.70.1"
+affected_versions: "All versions before 0.70.1"
+not_impacted: "All versions starting from 0.70.1"
+solution: "Upgrade to version 0.70.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-7q9x-8g6p-3x75"
+- "https://github.com/nick-pape/grackle/security/advisories/GHSA-7q9x-8g6p-3x75"
+- "https://github.com/nick-pape/grackle"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:N/VI:N/VA:N/SC:L/SI:L/SA:N"
+uuid: "62a6c99c-ad2e-4fc5-8c46-d1a11deec398"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-5j35-xr4g-vwf4"
+identifiers:
+- "GHSA-5j35-xr4g-vwf4"
+package_slug: "npm/@grackle-ai/server"
+title: "@grackle-ai/server has a Missing Secure Flag on Session Cookie"
+description: "The session cookie is set with `HttpOnly; SameSite=Lax; Path=/` but
+  does not include the `Secure` flag. This means the cookie will be sent over plain
+  HTTP connections.\n\nSince the server binds to `127.0.0.1` by default and uses HTTP
+  (not HTTPS), this is acceptable for localhost use. However, when `--allow-network`
+  is used to bind to `0.0.0.0`, cookies could be transmitted over insecure network
+  connections and intercepted by an attacker.\n\n**Affected code:**\n- `packages/server/src/session.ts:76`
+  — cookie string lacks `; Secure` attribute"
+date: "2026-03-25"
+pubdate: "2026-03-25"
+affected_range: "<0.70.5"
+fixed_versions:
+- "0.70.5"
+affected_versions: "All versions before 0.70.5"
+not_impacted: "All versions starting from 0.70.5"
+solution: "Upgrade to version 0.70.5 or above."
+urls:
+- "https://github.com/advisories/GHSA-5j35-xr4g-vwf4"
+- "https://github.com/nick-pape/grackle/security/advisories/GHSA-5j35-xr4g-vwf4"
+- "https://github.com/nick-pape/grackle"
+cvss_v3: "CVSS:3.1/AV:A/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:A/AC:H/AT:P/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N"
+uuid: "e56a6bfb-be61-44c3-8f3a-5168db756950"
+cwe_ids:
+- "CWE-614"
+- "CWE-937"
+- "CWE-1035"

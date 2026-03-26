@@ -9,17 +9,21 @@ description: "An authentication bypass vulnerability allows any unauthenticated 
   The library's verification functions immediately return `true` for such tokens without
   performing any cryptographic verification, enabling complete impersonation of any
   user and privilege escalation."
-date: "2026-01-09"
+date: "2026-03-25"
 pubdate: "2026-01-09"
-affected_range: "<=6.0.1"
-fixed_versions: []
-affected_versions: "All versions up to 6.0.1"
-not_impacted: ""
-solution: "Unfortunately, there is no solution available yet."
+affected_range: "<6.0.2"
+fixed_versions:
+- "6.0.2"
+affected_versions: "All versions before 6.0.2"
+not_impacted: "All versions starting from 6.0.2"
+solution: "Upgrade to version 6.0.2 or above."
 urls:
 - "https://github.com/advisories/GHSA-88q6-jcjg-hvmw"
 - "https://github.com/beatt83/jose-swift/security/advisories/GHSA-88q6-jcjg-hvmw"
+- "https://github.com/beatt83/jose-swift/pull/62"
+- "https://github.com/beatt83/jose-swift/commit/13e5ae6f23ef1487b0dad72540eff414272bd7ca"
 - "https://github.com/beatt83/jose-swift"
+- "https://github.com/beatt83/jose-swift/releases/tag/6.0.2"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N"
 cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N"
 uuid: "472453d6-b0de-4333-926f-e01e383cb789"

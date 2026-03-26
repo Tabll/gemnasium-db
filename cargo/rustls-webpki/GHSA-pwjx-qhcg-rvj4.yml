@@ -18,16 +18,16 @@ description: "If a certificate had more than one `distributionPoint`, then only 
   checking through other more impactful means (such as publishing a valid, empty CRL.)\n\nMore
   likely, this bug would be latent in normal use, and an attacker could leverage faulty
   revocation checking to continue using a revoked credential."
-date: "2026-03-23"
+date: "2026-03-25"
 pubdate: "2026-03-20"
-affected_range: ">=0.101.0 <0.103.10||>=0.104.0-alpha.1 <0.104.0-alpha.5"
+affected_range: ">=0.102.0-alpha.0 <0.103.10||>=0.104.0-alpha.1 <0.104.0-alpha.5"
 fixed_versions:
 - "0.103.10"
 - "0.104.0-alpha.5"
-affected_versions: "All versions starting from 0.101.0 before 0.103.10, all versions
-  starting from 0.104.0-alpha.1 before 0.104.0-alpha.5"
-not_impacted: "All versions before 0.101.0, all versions starting from 0.103.10 before
-  0.104.0-alpha.1, all versions starting from 0.104.0-alpha.5"
+affected_versions: "All versions starting from 0.102.0-alpha.0 before 0.103.10, all
+  versions starting from 0.104.0-alpha.1 before 0.104.0-alpha.5"
+not_impacted: "All versions before 0.102.0-alpha.0, all versions starting from 0.103.10
+  before 0.104.0-alpha.1, all versions starting from 0.104.0-alpha.5"
 solution: "Upgrade to versions 0.103.10, 0.104.0-alpha.5 or above."
 urls:
 - "https://github.com/advisories/GHSA-pwjx-qhcg-rvj4"

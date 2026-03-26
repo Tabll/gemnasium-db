@@ -5,7 +5,7 @@ identifiers:
 package_slug: "cargo/aws-lc-sys"
 title: "AWS-LC has PKCS7_verify Signature Validation Bypass"
 description: "AWS-LC is an open-source, general-purpose cryptographic library."
-date: "2026-03-20"
+date: "2026-03-25"
 pubdate: "2026-03-03"
 affected_range: ">=0.24.0 <0.38.0"
 fixed_versions:
