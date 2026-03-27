@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-c7w3-x93f-qmm8"
+identifiers:
+- "GHSA-c7w3-x93f-qmm8"
+package_slug: "npm/nodemailer"
+title: "Nodemailer has SMTP command injection due to unsanitized `envelope.size` parameter"
+description: "When a custom `envelope` object is passed to `sendMail()` with a `size`
+  property containing CRLF characters (`\\r\\n`), the value is concatenated directly
+  into the SMTP `MAIL FROM` command without sanitization. This allows injection of
+  arbitrary SMTP commands, including `RCPT TO` — silently adding attacker-controlled
+  recipients to outgoing emails."
+date: "2026-03-26"
+pubdate: "2026-03-26"
+affected_range: "<8.0.4"
+fixed_versions:
+- "8.0.4"
+affected_versions: "All versions before 8.0.4"
+not_impacted: "All versions starting from 8.0.4"
+solution: "Upgrade to version 8.0.4 or above."
+urls:
+- "https://github.com/advisories/GHSA-c7w3-x93f-qmm8"
+- "https://github.com/nodemailer/nodemailer/security/advisories/GHSA-c7w3-x93f-qmm8"
+- "https://github.com/nodemailer/nodemailer/commit/2d7b9710e63555a1eb13d721296c51186d4b5651"
+- "https://github.com/nodemailer/nodemailer"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "f34d172e-1d0f-42bc-bd1a-3ba271bd8847"
+cwe_ids:
+- "CWE-93"
+- "CWE-937"
+- "CWE-1035"

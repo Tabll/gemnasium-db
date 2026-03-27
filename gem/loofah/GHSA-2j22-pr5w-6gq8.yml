@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-2j22-pr5w-6gq8"
+identifiers:
+- "GHSA-2j22-pr5w-6gq8"
+package_slug: "gem/loofah"
+title: "Loofah has improper detection of disallowed URIs via `allowed_uri?`"
+description: "`Loofah::HTML5::Scrub.allowed_uri?` does not correctly reject `javascript:`
+  URIs when the scheme is split by HTML entity-encoded control characters such as
+  `&#13;` (carriage return), `&#10;` (line feed), or `&#9;` (tab)."
+date: "2026-03-26"
+pubdate: "2026-03-26"
+affected_range: ">=2.25.0 <2.25.1||=2.25.0"
+fixed_versions:
+- "2.25.1"
+affected_versions: "All versions starting from 2.25.0 before 2.25.1, version 2.25.0"
+not_impacted: ""
+solution: "Upgrade to version 2.25.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-2j22-pr5w-6gq8"
+- "https://github.com/flavorjones/loofah/security/advisories/GHSA-46fp-8f5p-pf2m"
+- "https://github.com/flavorjones/loofah/commit/f4ebc9c5193dde759a57541062e490e86fc7c068"
+- "https://github.com/flavorjones/loofah"
+- "https://github.com/flavorjones/loofah/releases/tag/v2.25.1"
+- "https://github.com/rubysec/ruby-advisory-db/blob/master/gems/loofah/GHSA-46fp-8f5p-pf2m.yml"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "497f0ab1-3f4f-4027-a1b1-f019926102db"
+cwe_ids:
+- "CWE-79"
+- "CWE-116"
+- "CWE-937"
+- "CWE-1035"

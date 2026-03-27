@@ -1,0 +1,38 @@
+---
+identifier: "GHSA-44px-qjjc-xrhq"
+identifiers:
+- "GHSA-44px-qjjc-xrhq"
+package_slug: "packagist/craftcms/cms"
+title: "Craft CMS: Authorized asset \"preview file\" requests bypass allows users
+  without asset access to retrieve private preview metadata"
+description: "An authenticated low-privileged user can call `assets/preview-file`
+  for an asset they are not authorized to view and still receive preview response
+  data (`previewHtml`) for that private asset.\n\nThe returned preview HTML included
+  a private preview image route containing the target private `assetId`, even though
+  `canView` was `false` for the attacker account."
+date: "2026-03-26"
+pubdate: "2026-03-26"
+affected_range: ">=5.0.0-RC1 <5.9.14||>=4.0.0-RC1 <4.17.8"
+fixed_versions:
+- "5.9.14"
+- "4.17.8"
+affected_versions: "All versions starting from 4.0.0-RC1 before 4.17.8, all versions
+  starting from 5.0.0-RC1 before 5.9.14"
+not_impacted: "All versions before 4.0.0-RC1, all versions starting from 4.17.8 before
+  5.0.0-RC1, all versions starting from 5.9.14"
+solution: "Upgrade to versions 4.17.8, 5.9.14 or above."
+urls:
+- "https://github.com/advisories/GHSA-44px-qjjc-xrhq"
+- "https://github.com/craftcms/cms/security/advisories/GHSA-44px-qjjc-xrhq"
+- "https://github.com/craftcms/cms/commit/b1cddf72c98a66801beb04ea4b07e72182b7b7db"
+- "https://github.com/craftcms/cms/commit/d30df3112220db1ffd6726a3ed11857014c7fb27"
+- "https://github.com/craftcms/cms"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N"
+uuid: "05b8a3c7-d98b-4398-8545-e2ccd6ba799e"
+cwe_ids:
+- "CWE-200"
+- "CWE-639"
+- "CWE-862"
+- "CWE-937"
+- "CWE-1035"

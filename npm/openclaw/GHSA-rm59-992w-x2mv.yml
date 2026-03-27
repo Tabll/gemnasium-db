@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-rm59-992w-x2mv"
+identifiers:
+- "GHSA-rm59-992w-x2mv"
+package_slug: "npm/openclaw"
+title: "OpenClaw is vulnerable to unauthenticated resource exhaustion through its
+  voice call webhook handling"
+description: "Voice Call webhook handling buffered request bodies before provider
+  signature checks, enabling bounded unauthenticated resource exhaustion."
+date: "2026-03-26"
+pubdate: "2026-03-26"
+affected_range: "<2026.3.22"
+fixed_versions:
+- "2026.3.22"
+affected_versions: "All versions before 2026.3.22"
+not_impacted: "All versions starting from 2026.3.22"
+solution: "Upgrade to version 2026.3.22 or above."
+urls:
+- "https://github.com/advisories/GHSA-rm59-992w-x2mv"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-rm59-992w-x2mv"
+- "https://github.com/openclaw/openclaw/commit/651dc7450b68a5396a009db78ef9382633707ead"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+uuid: "b52d1cf3-f8da-495f-aecd-811db7c98303"
+cwe_ids:
+- "CWE-400"
+- "CWE-937"
+- "CWE-1035"

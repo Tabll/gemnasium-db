@@ -1,0 +1,36 @@
+---
+identifier: "GHSA-2pv8-4c52-mf8j"
+identifiers:
+- "GHSA-2pv8-4c52-mf8j"
+package_slug: "go/code.vikunja.io/api"
+title: "Vikunja: Unauthenticated Instance-Wide Data Breach via Link Share Hash Disclosure
+  Chained with Cross-Project Attachment IDOR"
+description: "Two independently-exploitable authorization flaws in Vikunja can be
+  chained to allow an unauthenticated attacker to download and delete every file attachment
+  across all projects in a Vikunja instance. The `ReadAll` endpoint for link shares
+  exposes share hashes (including admin-level shares) to any user with read access,
+  enabling permission escalation. The task attachment `ReadOne`/`GetTaskAttachment`
+  endpoint performs permission checks against a user-supplied task ID but fetches
+  the attachment by its own sequential ID without verifying the attachment belongs
+  to that task, enabling cross-project file access."
+date: "2026-03-26"
+pubdate: "2026-03-26"
+affected_range: "<2.2.1"
+fixed_versions:
+- "2.2.1"
+affected_versions: "All versions before 2.2.1"
+not_impacted: "All versions starting from 2.2.1"
+solution: "Upgrade to version 2.2.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-2pv8-4c52-mf8j"
+- "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-2pv8-4c52-mf8j"
+- "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-8hp8-9fhr-pfm9"
+- "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-jfmm-mjcp-8wq2"
+- "https://github.com/go-vikunja/vikunja"
+- "https://vikunja.io/changelog/vikunja-v2.2.2-was-released"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N"
+uuid: "41c4daf9-446e-4169-aa15-2b108f2d184a"
+cwe_ids:
+- "CWE-639"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-pv9v-5j35-xwcr"
+identifiers:
+- "GHSA-pv9v-5j35-xwcr"
+package_slug: "cargo/libcrux-poly1305"
+title: "libcrux Panics During Standalone MAC Operations"
+description: "An incorrect constant for the key length in libcrux-poly1305 caused
+  the standalone MAC function `libcrux_poly1305::mac` to always panic with an out-of-bounds
+  memory access."
+date: "2026-03-26"
+pubdate: "2026-03-26"
+affected_range: "<0.0.5"
+fixed_versions:
+- "0.0.5"
+affected_versions: "All versions before 0.0.5"
+not_impacted: "All versions starting from 0.0.5"
+solution: "Upgrade to version 0.0.5 or above."
+urls:
+- "https://github.com/advisories/GHSA-pv9v-5j35-xwcr"
+- "https://github.com/cryspen/libcrux/pull/1351"
+- "https://github.com/cryspen/libcrux"
+- "https://rustsec.org/advisories/RUSTSEC-2026-0073.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+uuid: "ece170ab-9bf6-4404-ae9c-3de5540dcb9a"
+cwe_ids:
+- "CWE-125"
+- "CWE-805"
+- "CWE-937"
+- "CWE-1035"

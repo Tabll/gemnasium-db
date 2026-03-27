@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-pw7h-9g6p-c378"
+identifiers:
+- "GHSA-pw7h-9g6p-c378"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Tlon settings empty-allowlist reconciliation bypassed intended revocation"
+description: "Tlon settings reconciliation treated explicit empty allowlists as unset,
+  which could silently undo an intended deny-all revocation."
+date: "2026-03-26"
+pubdate: "2026-03-26"
+affected_range: "<2026.3.22"
+fixed_versions:
+- "2026.3.22"
+affected_versions: "All versions before 2026.3.22"
+not_impacted: "All versions starting from 2026.3.22"
+solution: "Upgrade to version 2026.3.22 or above."
+urls:
+- "https://github.com/advisories/GHSA-pw7h-9g6p-c378"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-pw7h-9g6p-c378"
+- "https://github.com/openclaw/openclaw/commit/3cbf932413e41d1836cb91aed1541a28a3122f93"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "adcb8f29-5d34-4dc9-aa07-89970e6d6063"
+cwe_ids:
+- "CWE-285"
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

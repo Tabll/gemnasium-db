@@ -1,0 +1,37 @@
+---
+identifier: "GHSA-g9ww-x58f-9g6m"
+identifiers:
+- "GHSA-g9ww-x58f-9g6m"
+package_slug: "go/github.com/edgelesssys/contrast"
+title: "Contrast BadAML injection allows arbitrary code execution"
+description: "An attacker with control over the host (which is assumed in the attacker
+  model of Contrast) can execute malicious AML code to gain arbitrary code execution
+  within the confidential guest.\n\nAML is byte code embedded in ACPI tables that
+  are passed from the host (QEMU) to the guest firmware (OVMF), and then passed from
+  OVMF to the Linux kernel. The Linux kernel has an interpreter that executes the
+  AML code. An attacker can craft a table with malicious AML code and the kernel will
+  execute it. AML is Turing-complete and the interpreter has access to the full guest
+  memory, including private pages.\n\nSee the [paper](https://dl.acm.org/doi/pdf/10.1145/3719027.3765123)
+  for a detailed description and background of the attack.\n\nNote that this is not
+  a vulnerability specific to Contrast, but rather a generic vulnerability in Confidential
+  Computing setups that use the ACPI interface."
+date: "2026-03-26"
+pubdate: "2026-03-26"
+affected_range: "<1.18.0"
+fixed_versions:
+- "1.18.0"
+affected_versions: "All versions before 1.18.0"
+not_impacted: "All versions starting from 1.18.0"
+solution: "Upgrade to version 1.18.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-g9ww-x58f-9g6m"
+- "https://github.com/edgelesssys/contrast/security/advisories/GHSA-g9ww-x58f-9g6m"
+- "https://blackhat.com/eu-24/briefings/schedule/#aml-injection-attacks-on-confidential-vms-42723"
+- "https://dl.acm.org/doi/pdf/10.1145/3719027.3765123"
+- "https://github.com/edgelesssys/contrast"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:N"
+uuid: "2ed909c6-c105-4c39-a2c1-a49146d379c5"
+cwe_ids:
+- "CWE-94"
+- "CWE-937"
+- "CWE-1035"

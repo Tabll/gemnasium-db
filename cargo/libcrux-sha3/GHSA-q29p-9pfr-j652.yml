@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-q29p-9pfr-j652"
+identifiers:
+- "GHSA-q29p-9pfr-j652"
+package_slug: "cargo/libcrux-sha3"
+title: "libcrux-sha3: Incorrect output from SHAKE squeeze functions"
+description: "The incremental squeeze functions in the portable SHAKE XOF API, when
+  attempting to squeeze more than `RATE` (168 for SHAKE128, 136 for SHAKE256) bytes,
+  performed an additional permutation of the state before producing the first output
+  block, thus discarding the first block of `RATE` bytes of valid XOF output."
+date: "2026-03-26"
+pubdate: "2026-03-26"
+affected_range: "<0.0.8"
+fixed_versions:
+- "0.0.8"
+affected_versions: "All versions before 0.0.8"
+not_impacted: "All versions starting from 0.0.8"
+solution: "Upgrade to version 0.0.8 or above."
+urls:
+- "https://github.com/advisories/GHSA-q29p-9pfr-j652"
+- "https://github.com/cryspen/libcrux/pull/1352"
+- "https://github.com/cryspen/libcrux"
+- "https://rustsec.org/advisories/RUSTSEC-2026-0074.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N"
+uuid: "3e6842fb-7585-4e42-beee-c2e24e9a6a13"
+cwe_ids:
+- "CWE-682"
+- "CWE-937"
+- "CWE-1035"

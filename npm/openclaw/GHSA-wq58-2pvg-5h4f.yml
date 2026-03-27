@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-wq58-2pvg-5h4f"
+identifiers:
+- "GHSA-wq58-2pvg-5h4f"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Gateway agent /reset exposes admin session reset to operator.write
+  callers"
+description: "Before `v2026.3.23`, the Gateway `agent` RPC accepted `/reset` and `/new`
+  for callers with only `operator.write`, even though the direct `sessions.reset`
+  RPC correctly requires `operator.admin`."
+date: "2026-03-26"
+pubdate: "2026-03-26"
+affected_range: "<2026.3.23"
+fixed_versions:
+- "2026.3.23"
+affected_versions: "All versions before 2026.3.23"
+not_impacted: "All versions starting from 2026.3.23"
+solution: "Upgrade to version 2026.3.23 or above."
+urls:
+- "https://github.com/advisories/GHSA-wq58-2pvg-5h4f"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-wq58-2pvg-5h4f"
+- "https://github.com/openclaw/openclaw/commit/50f6a2f136fed85b58548a38f7a3dbb98d2cd1a0"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N"
+uuid: "edba5ba1-04f4-4188-a055-c3be8198a804"
+cwe_ids:
+- "CWE-862"
+- "CWE-937"
+- "CWE-1035"

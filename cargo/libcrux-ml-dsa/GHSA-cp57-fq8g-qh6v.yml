@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-cp57-fq8g-qh6v"
+identifiers:
+- "GHSA-cp57-fq8g-qh6v"
+package_slug: "cargo/libcrux-ml-dsa"
+title: "libcrux has an Incorrect Check of Signer Response Norm During Verification"
+description: "The ML-DSA verification algorithm as specified in [FIPS 204, subsection
+  6.3](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.204.pdf#subsection.6.3) requires
+  verifiers to check that the infinity norm of the deserialized signer response $z$
+  does not exceed $\\gamma_1 - \\beta$ (line 13 of Algorithm 8). The same check is
+  required to be performed during signature generation.\n\nlibcrux-ml-dsa did not
+  perform this check correctly during signature verification, accepting signatures
+  with signer response norm above the allowed maximum value. The check is correctly
+  performed during signing."
+date: "2026-03-26"
+pubdate: "2026-03-26"
+affected_range: "<0.0.8"
+fixed_versions:
+- "0.0.8"
+affected_versions: "All versions before 0.0.8"
+not_impacted: "All versions starting from 0.0.8"
+solution: "Upgrade to version 0.0.8 or above."
+urls:
+- "https://github.com/advisories/GHSA-cp57-fq8g-qh6v"
+- "https://github.com/cryspen/libcrux/pull/1347"
+- "https://github.com/cryspen/libcrux"
+- "https://rustsec.org/advisories/RUSTSEC-2026-0077.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N"
+uuid: "19d3c197-a83c-48d7-81d0-2743f3cb5c1e"
+cwe_ids:
+- "CWE-347"
+- "CWE-937"
+- "CWE-1035"

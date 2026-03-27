@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-3w6x-gv34-mqpf"
+identifiers:
+- "GHSA-3w6x-gv34-mqpf"
+package_slug: "npm/openclaw"
+title: "OpenClaw's mutating internal ACP chat commands missed operator.admin scope
+  enforcement"
+description: "Mutating internal ACP chat commands missed the operator.admin gate that
+  should separate read-only and mutating control-plane actions."
+date: "2026-03-26"
+pubdate: "2026-03-26"
+affected_range: "<2026.3.22"
+fixed_versions:
+- "2026.3.22"
+affected_versions: "All versions before 2026.3.22"
+not_impacted: "All versions starting from 2026.3.22"
+solution: "Upgrade to version 2026.3.22 or above."
+urls:
+- "https://github.com/advisories/GHSA-3w6x-gv34-mqpf"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-3w6x-gv34-mqpf"
+- "https://github.com/openclaw/openclaw/commit/229426a257e49694a59fa4e3895861d02a4d767f"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N"
+uuid: "1ce4d8fc-51ae-4dcd-bc68-21e7f875dfa4"
+cwe_ids:
+- "CWE-862"
+- "CWE-937"
+- "CWE-1035"

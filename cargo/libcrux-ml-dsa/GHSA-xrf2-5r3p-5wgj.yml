@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-xrf2-5r3p-5wgj"
+identifiers:
+- "GHSA-xrf2-5r3p-5wgj"
+package_slug: "cargo/libcrux-ml-dsa"
+title: "libcrux: Panic in Signature Hint Decoding During Verification"
+description: "During ML-DSA verification the serialized hint values are decoded as
+  specified in algorithm 22 `HintBitUnpack` of [FIPS 204, subsection 7.1](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.204.pdf#%5B%7B%22num%22%3A120%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22FitH%22%7D%2C657%5D).
+  The algorithm requires that the cumulative hint counters per row of the hint vector
+  are strictly increasing and below a maximum value which depends on the choice of
+  ML-DSA parameter set (line 4).\n\nIn libcrux-ml-dsa, hint decoding did not check
+  the boundedness of the cumulative hint counter of the last row of the hint vector."
+date: "2026-03-26"
+pubdate: "2026-03-26"
+affected_range: "<0.0.8"
+fixed_versions:
+- "0.0.8"
+affected_versions: "All versions before 0.0.8"
+not_impacted: "All versions starting from 0.0.8"
+solution: "Upgrade to version 0.0.8 or above."
+urls:
+- "https://github.com/advisories/GHSA-xrf2-5r3p-5wgj"
+- "https://github.com/cryspen/libcrux/pull/1348"
+- "https://github.com/cryspen/libcrux"
+- "https://rustsec.org/advisories/RUSTSEC-2026-0076.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+uuid: "f49524b0-e543-46a3-a5e6-870d26249edc"
+cwe_ids:
+- "CWE-125"
+- "CWE-1285"
+- "CWE-937"
+- "CWE-1035"

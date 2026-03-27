@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-434v-x5qv-pmh6"
+identifiers:
+- "GHSA-434v-x5qv-pmh6"
+package_slug: "cargo/libcrux-ed25519"
+title: "libcrux has All-Zero Key Generation Upon Catastrophic RNG Failure"
+description: "The libcrux-ed25519 key generation samples Ed25519 secret keys from
+  a provided CSPRNG in a loop for up to 100 attempts until a non-zero key is found.
+  \ If a non-zero key could not be sampled within 100 attempts the key generation
+  function would silently continue with an all-zero buffer as the secret key."
+date: "2026-03-26"
+pubdate: "2026-03-26"
+affected_range: "<0.0.7"
+fixed_versions:
+- "0.0.7"
+affected_versions: "All versions before 0.0.7"
+not_impacted: "All versions starting from 0.0.7"
+solution: "Upgrade to version 0.0.7 or above."
+urls:
+- "https://github.com/advisories/GHSA-434v-x5qv-pmh6"
+- "https://github.com/cryspen/libcrux/pull/1349"
+- "https://github.com/cryspen/libcrux"
+- "https://rustsec.org/advisories/RUSTSEC-2026-0075.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N"
+uuid: "32bcd495-ad49-4490-8d5a-b74694850138"
+cwe_ids:
+- "CWE-1240"
+- "CWE-331"
+- "CWE-392"
+- "CWE-937"
+- "CWE-1035"

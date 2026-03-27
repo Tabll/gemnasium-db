@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-prh4-vhfh-24mj"
+identifiers:
+- "GHSA-prh4-vhfh-24mj"
+package_slug: "go/github.com/goharbor/harbor"
+title: "Harbor: LDAP password and OIDC secret are not redacted in the audit log"
+description: "Harbor write configuration payload to audit log when configuration change,
+  the ldap_search_password and oidc_client_secret will be logged in the audit log
+  without redacted"
+date: "2026-03-26"
+pubdate: "2026-03-26"
+affected_range: ">=2.13.0 <2.13.5||>=2.14.0 <2.14.3"
+fixed_versions:
+- "2.13.5"
+- "2.14.3"
+affected_versions: "All versions starting from 2.13.0 before 2.13.5, all versions
+  starting from 2.14.0 before 2.14.3"
+not_impacted: "All versions before 2.13.0, all versions starting from 2.13.5 before
+  2.14.0, all versions starting from 2.14.3"
+solution: "Upgrade to versions 2.13.5, 2.14.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-prh4-vhfh-24mj"
+- "https://github.com/goharbor/harbor/security/advisories/GHSA-prh4-vhfh-24mj"
+- "https://github.com/goharbor/harbor/commit/85e756486fc19333c5c300d7ac273e1580dc9350"
+- "https://github.com/goharbor/harbor"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N"
+uuid: "af551c29-6037-4d44-ab2f-d1b2f9d31227"
+cwe_ids:
+- "CWE-532"
+- "CWE-312"
+- "CWE-937"
+- "CWE-1035"

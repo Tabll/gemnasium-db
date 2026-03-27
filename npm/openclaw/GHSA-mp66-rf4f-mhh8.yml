@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-mp66-rf4f-mhh8"
+identifiers:
+- "GHSA-mp66-rf4f-mhh8"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Google Chat app-url webhook auth accepted non-deployment add-on
+  principals"
+description: "Google Chat app-url webhook verification accepted add-on principals
+  outside the intended deployment binding."
+date: "2026-03-26"
+pubdate: "2026-03-26"
+affected_range: "<2026.3.22"
+fixed_versions:
+- "2026.3.22"
+affected_versions: "All versions before 2026.3.22"
+not_impacted: "All versions starting from 2026.3.22"
+solution: "Upgrade to version 2026.3.22 or above."
+urls:
+- "https://github.com/advisories/GHSA-mp66-rf4f-mhh8"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-mp66-rf4f-mhh8"
+- "https://github.com/openclaw/openclaw/commit/a47722de7e3c9cbda8d5512747ca7e3bb8f6ee66"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N"
+uuid: "00f56d96-ab73-44be-8a6b-cb753a052013"
+cwe_ids:
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

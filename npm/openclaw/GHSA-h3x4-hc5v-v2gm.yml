@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-h3x4-hc5v-v2gm"
+identifiers:
+- "GHSA-h3x4-hc5v-v2gm"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Windows media loaders accepted remote-host file URLs before local
+  path validation"
+description: "Windows local-media handling accepted remote-host file URLs and UNC-style
+  paths before local-path validation, so network-hosted file targets could be treated
+  as local content."
+date: "2026-03-26"
+pubdate: "2026-03-26"
+affected_range: "<2026.3.22"
+fixed_versions:
+- "2026.3.22"
+affected_versions: "All versions before 2026.3.22"
+not_impacted: "All versions starting from 2026.3.22"
+solution: "Upgrade to version 2026.3.22 or above."
+urls:
+- "https://github.com/advisories/GHSA-h3x4-hc5v-v2gm"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-h3x4-hc5v-v2gm"
+- "https://github.com/openclaw/openclaw/commit/4fd7feb0fd4ec16c48ed983980dba79a09b3aaf5"
+- "https://github.com/openclaw/openclaw/commit/93880717f1cd34feaa45e74e939b7a5256288901"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N"
+uuid: "f931e6ee-9641-4657-bb69-63f1df34b25d"
+cwe_ids:
+- "CWE-40"
+- "CWE-937"
+- "CWE-1035"

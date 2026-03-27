@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-7xr2-q9vf-x4r5"
+identifiers:
+- "GHSA-7xr2-q9vf-x4r5"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Symlink Traversal via IDENTITY.md appendFile in agents.create/update
+  (Incomplete Fix for CVE-2026-32013)"
+description: "The patch for CVE-2026-32013 introduced symlink resolution and workspace
+  boundary enforcement for `agents.files.get` and `agents.files.set`. However, two
+  other handlers in the same file (`agents.create` and `agents.update`) still use
+  raw `fs.appendFile` on the `IDENTITY.md` file **without any symlink containment
+  check**. An attacker who can place a symlink in the agent workspace can hijack the
+  `IDENTITY.md` path to append attacker-controlled content to arbitrary files on the
+  system."
+date: "2026-03-26"
+pubdate: "2026-03-26"
+affected_range: "<=2026.2.22"
+fixed_versions: []
+affected_versions: "All versions up to 2026.2.22"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-7xr2-q9vf-x4r5"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-7xr2-q9vf-x4r5"
+- "https://github.com/advisories/GHSA-fgvx-58p6-gjwc"
+- "https://github.com/openclaw/openclaw"
+- "https://github.com/openclaw/openclaw/blob/main/src/gateway/server-methods/agents.ts#L274"
+- "https://github.com/openclaw/openclaw/blob/main/src/gateway/server-methods/agents.ts#L283-L291"
+- "https://github.com/openclaw/openclaw/blob/main/src/gateway/server-methods/agents.ts#L348-L349"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H"
+uuid: "a38b252f-a0c9-46eb-a7bb-f123292ed2c0"
+cwe_ids:
+- "CWE-61"
+- "CWE-937"
+- "CWE-1035"

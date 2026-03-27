@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-hf68-49fm-59cq"
+identifiers:
+- "GHSA-hf68-49fm-59cq"
+package_slug: "npm/openclaw"
+title: "OpenClaw Gateway: RCE and Privilege Escalation from operator.pairing to operator.admin
+  via device.pair.approve"
+description: "device.pair.approve allowed an operator.pairing approver to approve
+  a pending device request for broader operator scopes than the approver actually
+  held."
+date: "2026-03-26"
+pubdate: "2026-03-26"
+affected_range: "<2026.3.22"
+fixed_versions:
+- "2026.3.22"
+affected_versions: "All versions before 2026.3.22"
+not_impacted: "All versions starting from 2026.3.22"
+solution: "Upgrade to version 2026.3.22 or above."
+urls:
+- "https://github.com/advisories/GHSA-hf68-49fm-59cq"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-hf68-49fm-59cq"
+- "https://github.com/openclaw/openclaw/commit/fc2d29ea926f47c428c556e92ec981441228d2a4"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H"
+uuid: "654619e3-2f75-4ca3-b87a-b3be4dd820df"
+cwe_ids:
+- "CWE-269"
+- "CWE-937"
+- "CWE-1035"

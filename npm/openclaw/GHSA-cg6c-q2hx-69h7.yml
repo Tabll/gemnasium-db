@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-cg6c-q2hx-69h7"
+identifiers:
+- "GHSA-cg6c-q2hx-69h7"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Plivo V2 verified replay identity drifts on query-only variants"
+description: "Before `v2026.3.23`, the Plivo V2 verification path treated query-only
+  variants of the same signed request as fresh verified work. Plivo V2 signatures
+  authenticate `baseUrl + nonce`, but the replay key was derived from the full verification
+  URL including the query string, so unsigned query-only changes minted a new `verifiedRequestKey`."
+date: "2026-03-26"
+pubdate: "2026-03-26"
+affected_range: "<2026.3.23"
+fixed_versions:
+- "2026.3.23"
+affected_versions: "All versions before 2026.3.23"
+not_impacted: "All versions starting from 2026.3.23"
+solution: "Upgrade to version 2026.3.23 or above."
+urls:
+- "https://github.com/advisories/GHSA-cg6c-q2hx-69h7"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-cg6c-q2hx-69h7"
+- "https://github.com/openclaw/openclaw/commit/b0ce53a79cf63834660270513e26d921899b4e5b"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N"
+uuid: "9d6e02fe-73a3-48d7-b7db-ca429f425c4e"
+cwe_ids:
+- "CWE-294"
+- "CWE-937"
+- "CWE-1035"
