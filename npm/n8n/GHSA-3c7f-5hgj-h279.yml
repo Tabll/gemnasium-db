@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-3c7f-5hgj-h279"
+identifiers:
+- "GHSA-3c7f-5hgj-h279"
+package_slug: "npm/n8n"
+title: "n8n has XSS in Chat Trigger Node through Custom CSS"
+description: "An authenticated user with permission to create or modify workflows
+  could inject malicious JavaScript into the Custom CSS field of the Chat Trigger
+  node. Due to a misconfiguration in the `sanitize-html` library, the sanitization
+  could be bypassed, resulting in stored XSS on the public chat page. Any user visiting
+  the chat URL would be affected."
+date: "2026-03-27"
+pubdate: "2026-03-27"
+affected_range: "<1.123.27||>=2.14.0 <2..14.1||=2.14.0||>=2.0.0-rc.0 <2.13.3"
+fixed_versions:
+- "1.123.27"
+- "2..14.1"
+- "2.13.3"
+affected_versions: "All versions before 1.123.27, all versions starting from 2.0.0-rc.0
+  before 2.13.3, all versions starting from 2.14.0 before 2..14.1, version 2.14.0"
+not_impacted: ""
+solution: "Upgrade to versions 1.123.27, 2..14.1, 2.13.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-3c7f-5hgj-h279"
+- "https://github.com/n8n-io/n8n/security/advisories/GHSA-3c7f-5hgj-h279"
+- "https://github.com/n8n-io/n8n"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:P/VC:L/VI:L/VA:N/SC:L/SI:L/SA:N"
+uuid: "0b0af5ae-3d11-4b2c-99fc-2b14c0b2fea9"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

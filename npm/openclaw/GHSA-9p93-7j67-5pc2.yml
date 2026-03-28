@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-9p93-7j67-5pc2"
+identifiers:
+- "GHSA-9p93-7j67-5pc2"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Gateway HTTP /sessions/:sessionKey/kill Reaches Admin Kill Path
+  Without Caller Scope Binding"
+description: "Gateway HTTP /sessions/:sessionKey/kill Reaches Admin Kill Path Without
+  Caller Scope Binding."
+date: "2026-03-27"
+pubdate: "2026-03-27"
+affected_range: "<=2026.3.24"
+fixed_versions: []
+affected_versions: "All versions up to 2026.3.24"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-9p93-7j67-5pc2"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-9p93-7j67-5pc2"
+- "https://github.com/openclaw/openclaw/commit/02cf12371f9353a16455da01cc02e6c4ecfc4152"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:L/VA:H/SC:N/SI:N/SA:N"
+uuid: "12262441-7e31-4db1-9244-ce486f691a5b"
+cwe_ids:
+- "CWE-226"
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

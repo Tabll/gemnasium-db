@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-qm2m-28pf-hgjw"
+identifiers:
+- "GHSA-qm2m-28pf-hgjw"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Gateway Plugin HTTP Auth Grants Unrestricted operator.admin Runtime
+  Scope to All Callers"
+description: "Gateway Plugin HTTP auth: \"gateway\" Mints operator.admin Runtime Scope"
+date: "2026-03-27"
+pubdate: "2026-03-27"
+affected_range: "<=2026.3.24"
+fixed_versions: []
+affected_versions: "All versions up to 2026.3.24"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-qm2m-28pf-hgjw"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-qm2m-28pf-hgjw"
+- "https://github.com/openclaw/openclaw/commit/ec2dbcff9afd8a52e00de054b506c91726d9fbbe"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:N/SC:L/SI:L/SA:N"
+uuid: "871509d4-fa2c-4a6e-a7c2-c10d247376f9"
+cwe_ids:
+- "CWE-266"
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

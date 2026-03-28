@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-443w-3rq3-5m5h"
+identifiers:
+- "GHSA-443w-3rq3-5m5h"
+package_slug: "maven/software.amazon.awssdk/cloudfront"
+title: "AWS SDK for Java 2.0: Improper Handling of Special Characters in CloudFront
+  Signing Utilities"
+description: "This notification is related to the [CloudFront signing utilities](https://github.com/aws/aws-sdk-java-v2/blob/master/services/cloudfront/src/main/java/software/amazon/awssdk/services/cloudfront/CloudFrontUtilities.java)
+  in the AWS SDK for Java v2, which are used to generate Amazon CloudFront signed
+  URLs and signed cookies. A defense-in-depth enhancement has been implemented to
+  improve handling of special characters, such as double quotes and backslashes, in
+  input values."
+date: "2026-03-27"
+pubdate: "2026-03-27"
+affected_range: "[2.18.33,2.41.30)"
+fixed_versions:
+- "2.41.30"
+affected_versions: "All versions starting from 2.18.33 before 2.41.30"
+not_impacted: "All versions before 2.18.33, all versions starting from 2.41.30"
+solution: "Upgrade to version 2.41.30 or above."
+urls:
+- "https://github.com/advisories/GHSA-443w-3rq3-5m5h"
+- "https://github.com/aws/aws-sdk-java-v2/security/advisories/GHSA-443w-3rq3-5m5h"
+- "https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/security.html"
+- "https://github.com/aws/aws-sdk-java-v2"
+- "https://github.com/aws/aws-sdk-java-v2/blob/master/services/cloudfront/src/main/java/software/amazon/awssdk/services/cloudfront/CloudFrontUtilities.java"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:H/SI:N/SA:N"
+uuid: "e9ad798d-028f-4497-90bb-9f3977450ea1"
+cwe_ids:
+- "CWE-116"
+- "CWE-20"
+- "CWE-937"
+- "CWE-1035"

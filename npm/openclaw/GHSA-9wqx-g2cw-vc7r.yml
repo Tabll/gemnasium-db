@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-9wqx-g2cw-vc7r"
+identifiers:
+- "GHSA-9wqx-g2cw-vc7r"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Matrix Verification Notices Bypass Matrix DM Policy and Reply to
+  Unpaired DM Peers"
+description: "Matrix Verification Notices Bypass Matrix DM Policy and Reply to Unpaired
+  DM Peers"
+date: "2026-03-27"
+pubdate: "2026-03-27"
+affected_range: "<=2026.3.24"
+fixed_versions: []
+affected_versions: "All versions up to 2026.3.24"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-9wqx-g2cw-vc7r"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-9wqx-g2cw-vc7r"
+- "https://github.com/openclaw/openclaw/commit/2383daf5c4a4e08d9553e0e949552ad755ef9ec2"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "32b66046-bb48-42bf-b921-451b2a1555e2"
+cwe_ids:
+- "CWE-288"
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

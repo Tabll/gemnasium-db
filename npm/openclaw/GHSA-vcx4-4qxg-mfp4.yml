@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-vcx4-4qxg-mfp4"
+identifiers:
+- "GHSA-vcx4-4qxg-mfp4"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Telegram Webhook Missing Guess Rate Limiting Enables Brute-Force
+  Guessing of Weak Webhook Secret"
+description: "Telegram Webhook Missing Guess Rate Limiting Enables Brute-Force Guessing
+  of Weak Webhook Secret"
+date: "2026-03-27"
+pubdate: "2026-03-27"
+affected_range: "<=2026.3.24"
+fixed_versions: []
+affected_versions: "All versions up to 2026.3.24"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-vcx4-4qxg-mfp4"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-vcx4-4qxg-mfp4"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "7ac62a1a-1fb4-4de5-a759-d37195d74e92"
+cwe_ids:
+- "CWE-307"
+- "CWE-521"
+- "CWE-937"
+- "CWE-1035"

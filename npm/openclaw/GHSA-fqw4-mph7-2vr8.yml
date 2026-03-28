@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-fqw4-mph7-2vr8"
+identifiers:
+- "GHSA-fqw4-mph7-2vr8"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Silent privilege escalation via gateway shared-auth reconnect"
+description: "Gateway local shared-auth reconnect silently widens paired device scope
+  from operator.read to operator.admin and reach node RCE"
+date: "2026-03-27"
+pubdate: "2026-03-27"
+affected_range: "<=2026.3.24"
+fixed_versions: []
+affected_versions: "All versions up to 2026.3.24"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-fqw4-mph7-2vr8"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-fqw4-mph7-2vr8"
+- "https://github.com/openclaw/openclaw/commit/81ebc7e0344fd19c85778e883bad45e2da972229"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:A/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H"
+uuid: "d270fdbe-8f5b-4623-8061-0d24db0fbfe2"
+cwe_ids:
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

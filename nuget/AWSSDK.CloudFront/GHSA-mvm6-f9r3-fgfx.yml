@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-mvm6-f9r3-fgfx"
+identifiers:
+- "GHSA-mvm6-f9r3-fgfx"
+package_slug: "nuget/AWSSDK.CloudFront"
+title: "AWS SDK for .NET: Improper escaping of special characters in CloudFront policy
+  document construction"
+description: "This notification is related to the CloudFront signing utilities in
+  the AWS SDK for .NET, which are used to generate Amazon CloudFront signed URLs and
+  signed cookies. A defense-in-depth enhancement has been implemented to improve handling
+  of special characters, such as double quotes and backslashes, in input values."
+date: "2026-03-27"
+pubdate: "2026-03-27"
+affected_range: "[,3.7.510.7)"
+fixed_versions:
+- "3.7.510.7"
+affected_versions: "All versions before 3.7.510.7"
+not_impacted: "All versions starting from 3.7.510.7"
+solution: "Upgrade to version 3.7.510.7 or above."
+urls:
+- "https://github.com/advisories/GHSA-mvm6-f9r3-fgfx"
+- "https://github.com/aws/aws-sdk-net/security/advisories/GHSA-mvm6-f9r3-fgfx"
+- "https://github.com/aws/aws-sdk-net"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:H/SI:N/SA:N"
+uuid: "f424449a-183f-494d-b729-5fc27a967392"
+cwe_ids:
+- "CWE-116"
+- "CWE-20"
+- "CWE-937"
+- "CWE-1035"

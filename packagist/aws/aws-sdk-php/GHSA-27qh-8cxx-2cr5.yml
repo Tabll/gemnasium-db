@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-27qh-8cxx-2cr5"
+identifiers:
+- "GHSA-27qh-8cxx-2cr5"
+package_slug: "packagist/aws/aws-sdk-php"
+title: "AWS SDK for PHP has CloudFront Policy Document Injection via Special Characters"
+description: "This notification is related to the [CloudFront signing utilities](https://github.com/aws/aws-sdk-php/blob/master/src/CloudFront/Signer.php)
+  in the AWS SDK for PHP, which are used to generate Amazon CloudFront signed URLs
+  and signed cookies. A defense-in-depth enhancement has been implemented to improve
+  handling of special characters, such as double quotes and backslashes, in input
+  values."
+date: "2026-03-27"
+pubdate: "2026-03-27"
+affected_range: ">=3.11.7 <3.371.4"
+fixed_versions:
+- "3.371.4"
+affected_versions: "All versions starting from 3.11.7 before 3.371.4"
+not_impacted: "All versions before 3.11.7, all versions starting from 3.371.4"
+solution: "Upgrade to version 3.371.4 or above."
+urls:
+- "https://github.com/advisories/GHSA-27qh-8cxx-2cr5"
+- "https://github.com/aws/aws-sdk-php/security/advisories/GHSA-27qh-8cxx-2cr5"
+- "https://github.com/aws/aws-sdk-php"
+- "https://github.com/aws/aws-sdk-php/blob/master/src/CloudFront/Signer.php"
+- "https://github.com/aws/aws-sdk-php/releases/tag/3.371.4"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:H/SI:N/SA:N"
+uuid: "d287428b-0c38-4d84-879e-7c46fb573061"
+cwe_ids:
+- "CWE-150"
+- "CWE-20"
+- "CWE-74"
+- "CWE-937"
+- "CWE-1035"

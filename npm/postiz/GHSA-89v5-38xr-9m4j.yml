@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-89v5-38xr-9m4j"
+identifiers:
+- "GHSA-89v5-38xr-9m4j"
+package_slug: "npm/postiz"
+title: "Postiz has Multiple SSRF Vectors - Webhooks, RSS Feed, URL Loader"
+description: "Postiz has multiple SSRF vulnerabilities where user-provided URLs are
+  fetched server-side without any IP validation or SSRF protection."
+date: "2026-03-27"
+pubdate: "2026-03-27"
+affected_range: "<=2.0.12"
+fixed_versions: []
+affected_versions: "All versions up to 2.0.12"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-89v5-38xr-9m4j"
+- "https://github.com/gitroomhq/postiz-app/security/advisories/GHSA-89v5-38xr-9m4j"
+- "https://github.com/gitroomhq/postiz-app/commit/0ad89ccd26b1c387c4f3f3544b18c20d33586466"
+- "https://github.com/gitroomhq/postiz-app/commit/be5d871896e97cb1f5a2c9241f156b6a1e1debe8"
+- "https://github.com/gitroomhq/postiz-app"
+- "https://github.com/gitroomhq/postiz-app/releases/tag/v2.21.2"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:N/SC:H/SI:L/SA:N"
+uuid: "dea93036-e7c2-4ee1-b7b0-e9ebbf746706"
+cwe_ids:
+- "CWE-918"
+- "CWE-937"
+- "CWE-1035"

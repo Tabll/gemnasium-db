@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-9hjh-fr4f-gxc4"
+identifiers:
+- "GHSA-9hjh-fr4f-gxc4"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Gateway Backend Reconnect lets Non-Admin Operator Scopes Self-Claim
+  operator.admin"
+description: "Gateway Backend Reconnect lets Non-Admin Operator Scopes Self-Claim
+  operator.admin"
+date: "2026-03-27"
+pubdate: "2026-03-27"
+affected_range: "<=2026.3.24"
+fixed_versions: []
+affected_versions: "All versions up to 2026.3.24"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-9hjh-fr4f-gxc4"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-9hjh-fr4f-gxc4"
+- "https://github.com/openclaw/openclaw/commit/d3d8e316bd819d3c7e34253aeb7eccb2510f5f48"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:N/SC:H/SI:H/SA:N"
+uuid: "d11952c7-4d1d-4ea4-9e2d-7eb2f407bc45"
+cwe_ids:
+- "CWE-269"
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

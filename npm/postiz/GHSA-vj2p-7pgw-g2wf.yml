@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-vj2p-7pgw-g2wf"
+identifiers:
+- "GHSA-vj2p-7pgw-g2wf"
+package_slug: "npm/postiz"
+title: "Postiz App has a High-Severity SSRF Vulnerability via Next.js"
+description: "A successful SSRF attack allows an attacker to:\n- Bypass firewalls
+  to scan and interact with internal network services/ports.\n- Access sensitive cloud
+  metadata services (e.g., AWS IMDS 169.254.169.254) to potentially leak instance
+  credentials.\n- Pivot into the internal network environment where Postiz is hosted."
+date: "2026-03-27"
+pubdate: "2026-03-27"
+affected_range: "<=2.0.12"
+fixed_versions: []
+affected_versions: "All versions up to 2.0.12"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-vj2p-7pgw-g2wf"
+- "https://github.com/gitroomhq/postiz-app/security/advisories/GHSA-vj2p-7pgw-g2wf"
+- "https://github.com/vercel/next.js/security/advisories/GHSA-fr5h-rqp8-mj6g"
+- "https://nvd.nist.gov/vuln/detail/CVE-2024-34351"
+- "https://github.com/gitroomhq/postiz-app"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+uuid: "bf7a1a3d-81ee-4aad-8d6d-b2b09b47bd53"
+cwe_ids:
+- "CWE-1395"
+- "CWE-918"
+- "CWE-937"
+- "CWE-1035"
