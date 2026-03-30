@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-7rx3-28cr-v5wh"
+identifiers:
+- "GHSA-7rx3-28cr-v5wh"
+package_slug: "npm/handlebars"
+title: "Handlebars.js has a Prototype Method Access Control Gap via Missing __lookupSetter__
+  Blocklist Entry"
+description: "The prototype method blocklist in `lib/handlebars/internal/proto-access.js`
+  blocks `constructor`, `__defineGetter__`, `__defineSetter__`, and `__lookupGetter__`,
+  but omits the symmetric `__lookupSetter__`. This omission is only exploitable when
+  the non-default runtime option `allowProtoMethodsByDefault: true` is explicitly
+  set — in that configuration `__lookupSetter__` becomes accessible while its counterparts
+  remain blocked, creating an inconsistent security boundary.\n\n`4.6.0` is the version
+  that introduced `protoAccessControl` and the `allowProtoMethodsByDefault` runtime
+  option."
+date: "2026-03-29"
+pubdate: "2026-03-29"
+affected_range: ">=4.6.0 <4.7.9"
+fixed_versions:
+- "4.7.9"
+affected_versions: "All versions starting from 4.6.0 before 4.7.9"
+not_impacted: "All versions before 4.6.0, all versions starting from 4.7.9"
+solution: "Upgrade to version 4.7.9 or above."
+urls:
+- "https://github.com/advisories/GHSA-7rx3-28cr-v5wh"
+- "https://github.com/handlebars-lang/handlebars.js/security/advisories/GHSA-7rx3-28cr-v5wh"
+- "https://github.com/advisories/GHSA-765h-qjxv-5f44"
+- "https://github.com/handlebars-lang/handlebars.js"
+- "https://github.com/handlebars-lang/handlebars.js/releases/tag/v4.7.9"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N"
+uuid: "a1e99aa7-3aaa-48c7-a0a7-d34b6d665aaa"
+cwe_ids:
+- "CWE-1321"
+- "CWE-937"
+- "CWE-1035"

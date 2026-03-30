@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-q2qc-744p-66r2"
+identifiers:
+- "GHSA-q2qc-744p-66r2"
+package_slug: "npm/openclaw"
+title: "OpenClaw: `session_status` sessionId resolution bypasses sandboxed session-tree
+  visibility"
+description: "`session_status` sessionId resolution bypasses sandboxed session-tree
+  visibility"
+date: "2026-03-29"
+pubdate: "2026-03-29"
+affected_range: ">=2026.3.11 <2026.3.28"
+fixed_versions:
+- "2026.3.28"
+affected_versions: "All versions starting from 2026.3.11 before 2026.3.28"
+not_impacted: "All versions before 2026.3.11, all versions starting from 2026.3.28"
+solution: "Upgrade to version 2026.3.28 or above."
+urls:
+- "https://github.com/advisories/GHSA-q2qc-744p-66r2"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-q2qc-744p-66r2"
+- "https://github.com/openclaw/openclaw/commit/d9810811b6c3c9266d7580f00574e5e02f7663de"
+- "https://github.com/openclaw/openclaw"
+uuid: "a90c42d6-4a7b-41f7-9a93-68ea8e197f44"
+cwe_ids:
+- "CWE-639"
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

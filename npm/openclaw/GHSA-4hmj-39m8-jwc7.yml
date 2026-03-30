@@ -1,0 +1,26 @@
+---
+identifier: "GHSA-4hmj-39m8-jwc7"
+identifiers:
+- "GHSA-4hmj-39m8-jwc7"
+package_slug: "npm/openclaw"
+title: "OpenClaw has ACP CLI approval prompt ANSI escape sequence injection"
+description: "ACP CLI approval prompt ANSI escape sequence injection"
+date: "2026-03-29"
+pubdate: "2026-03-29"
+affected_range: ">=2026.2.13 <2026.3.28"
+fixed_versions:
+- "2026.3.28"
+affected_versions: "All versions starting from 2026.2.13 before 2026.3.28"
+not_impacted: "All versions before 2026.2.13, all versions starting from 2026.3.28"
+solution: "Upgrade to version 2026.3.28 or above."
+urls:
+- "https://github.com/advisories/GHSA-4hmj-39m8-jwc7"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-4hmj-39m8-jwc7"
+- "https://github.com/openclaw/openclaw/commit/464e2c10a5edceb380d815adb6ff56e1a4c50f60"
+- "https://github.com/openclaw/openclaw"
+uuid: "4d15c5f5-02e4-490e-b83e-a04b74268a90"
+cwe_ids:
+- "CWE-116"
+- "CWE-150"
+- "CWE-937"
+- "CWE-1035"

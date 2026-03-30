@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-c279-989m-238f"
+identifiers:
+- "GHSA-c279-989m-238f"
+package_slug: "go/github.com/bishopfox/sliver"
+title: "Sliver: Nil Pointer Dereference in tunnelCloseHandler causes panic when a
+  reverse tunnel (rportfwd) close is attempted"
+description: "A nil pointer dereference in `tunnelCloseHandler` causes the handler
+  goroutine to panic whenever a reverse tunnel (rportfwd) close is attempted. Both
+  the legitimate close path AND the unauthorized close path dereference `tunnel.SessionID`
+  where `tunnel` is guaranteed nil. This means rportfwd tunnels can never be cleanly
+  closed, and any authenticated implant can trigger repeated goroutine panics."
+date: "2026-03-29"
+pubdate: "2026-03-29"
+affected_range: "<=1.7.3"
+fixed_versions: []
+affected_versions: "All versions up to 1.7.3"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-c279-989m-238f"
+- "https://github.com/BishopFox/sliver/security/advisories/GHSA-c279-989m-238f"
+- "https://github.com/BishopFox/sliver"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+uuid: "e6f728bc-20f4-4554-96ab-50cca434f75b"
+cwe_ids:
+- "CWE-476"
+- "CWE-937"
+- "CWE-1035"
