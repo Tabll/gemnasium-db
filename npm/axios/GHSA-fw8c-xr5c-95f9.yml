@@ -1,0 +1,36 @@
+---
+identifier: "GHSA-fw8c-xr5c-95f9"
+identifiers:
+- "GHSA-fw8c-xr5c-95f9"
+package_slug: "npm/axios"
+title: "Embedded Malicious Code via compromised maintainer account"
+description: "Two malicious versions of the axios npm package (1.14.1 and 0.30.4)
+  were published on March 31, 2026 using a compromised maintainer account. Both
+  versions inject a hidden dependency (`plain-crypto-js@4.2.1`) that deploys a
+  cross-platform remote access trojan targeting macOS, Windows, and Linux. The
+  malicious `postinstall` script contacts a command-and-control server and
+  downloads a platform-specific second-stage payload. Any system that ran
+  `npm install` while either version was available should be treated as fully
+  compromised. The malicious packages have been removed from the npm registry."
+date: "2026-03-31"
+pubdate: "2026-03-31"
+affected_range: "=1.14.1||=0.30.4"
+fixed_versions:
+- "1.14.0"
+- "0.30.3"
+affected_versions: "Version 1.14.1, version 0.30.4"
+not_impacted: "All versions before 0.30.4, all versions after 0.30.4 before 1.14.1,
+  all versions after 1.14.1"
+solution: "Downgrade to version 1.14.0 (1.x branch) or 0.30.3 (0.x branch). Treat
+  affected systems as fully compromised and rotate all credentials."
+urls:
+- "https://github.com/advisories/GHSA-fw8c-xr5c-95f9"
+- "https://github.com/axios/axios/issues/10604"
+- "https://www.stepsecurity.io/blog/axios-compromised-on-npm-malicious-versions-drop-remote-access-trojan"
+- "https://socket.dev/blog/axios-npm-package-compromised"
+- "https://thehackernews.com/2026/03/axios-supply-chain-attack-pushes-cross.html"
+uuid: "d02c45c4-94cd-4878-8d5c-5834cb749ad1"
+cwe_ids:
+- "CWE-506"
+- "CWE-937"
+- "CWE-1035"

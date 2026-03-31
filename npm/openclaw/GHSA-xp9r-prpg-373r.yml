@@ -1,0 +1,26 @@
+---
+identifier: "GHSA-xp9r-prpg-373r"
+identifiers:
+- "GHSA-xp9r-prpg-373r"
+package_slug: "npm/openclaw"
+title: "OpenClaw: `browser.request` still allows `POST /reset-profile` through the
+  `operator.write` surface"
+description: "> Fixed in OpenClaw 2026.3.24, the current shipping release."
+date: "2026-03-30"
+pubdate: "2026-03-30"
+affected_range: "<2026.3.24"
+fixed_versions:
+- "2026.3.24"
+affected_versions: "All versions before 2026.3.24"
+not_impacted: "All versions starting from 2026.3.24"
+solution: "Upgrade to version 2026.3.24 or above."
+urls:
+- "https://github.com/advisories/GHSA-xp9r-prpg-373r"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-xp9r-prpg-373r"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H"
+uuid: "8085fcce-607f-4555-9230-121404c5534b"
+cwe_ids:
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

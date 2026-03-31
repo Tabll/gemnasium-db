@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-94pw-c6m8-p9p9"
+identifiers:
+- "GHSA-94pw-c6m8-p9p9"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Gateway operator.write Can Reach Admin-Class Channel Allowlist Persistence
+  via chat.send"
+description: "The shared `/allowlist` command persists channel authorization config
+  through `writeConfigFile(...)` but does not re-validate gateway client scopes for
+  internal gateway callers. Because `chat.send` is intentionally reachable to `operator.write`
+  callers and still creates a generic command-authorized internal context, an authenticated
+  write-scoped gateway client can indirectly mutate channel `allowFrom` and `groupAllowFrom`
+  policy that direct `config.patch` correctly reserves to `operator.admin`.\n\nThis
+  is not just a generic code smell. The current code already shows the intended boundary
+  by adding sink-side internal admin checks to shared `/config` and `/plugins` writes,
+  but `/allowlist` was left behind."
+date: "2026-03-30"
+pubdate: "2026-03-30"
+affected_range: "<2026.3.24"
+fixed_versions:
+- "2026.3.24"
+affected_versions: "All versions before 2026.3.24"
+not_impacted: "All versions starting from 2026.3.24"
+solution: "Upgrade to version 2026.3.24 or above."
+urls:
+- "https://github.com/advisories/GHSA-94pw-c6m8-p9p9"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-94pw-c6m8-p9p9"
+- "https://github.com/openclaw/openclaw"
+uuid: "86055660-4e9e-471b-9ab8-07c1aa5a50b7"
+cwe_ids:
+- "CWE-269"
+- "CWE-937"
+- "CWE-1035"

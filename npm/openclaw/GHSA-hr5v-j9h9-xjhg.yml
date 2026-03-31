@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-hr5v-j9h9-xjhg"
+identifiers:
+- "GHSA-hr5v-j9h9-xjhg"
+package_slug: "npm/openclaw"
+title: "OpenClaw has Sandbox Media Root Bypass via Unnormalized `mediaUrl` / `fileUrl`
+  Parameter Keys (CWE-22)"
+description: "A path traversal vulnerability in the agent sandbox enforcement allows
+  a sandboxed agent to read arbitrary files from other agents' workspaces by using
+  the `mediaUrl` or `fileUrl` parameter key in message tool calls. The `normalizeSandboxMediaParams`
+  function only checks `[\"media\", \"path\", \"filePath\"]` keys, while `mediaUrl`
+  and `fileUrl` escape normalization entirely. Combined with `handlePluginAction`
+  dropping `mediaLocalRoots` from the dispatch context, this enables a full sandbox
+  escape where any agent can read files outside its designated sandbox root."
+date: "2026-03-30"
+pubdate: "2026-03-30"
+affected_range: "<2026.3.24"
+fixed_versions:
+- "2026.3.24"
+affected_versions: "All versions before 2026.3.24"
+not_impacted: "All versions starting from 2026.3.24"
+solution: "Upgrade to version 2026.3.24 or above."
+urls:
+- "https://github.com/advisories/GHSA-hr5v-j9h9-xjhg"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-hr5v-j9h9-xjhg"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N"
+uuid: "61f8c4a0-ba36-43a0-8bc6-7e2276135b3e"
+cwe_ids:
+- "CWE-22"
+- "CWE-937"
+- "CWE-1035"

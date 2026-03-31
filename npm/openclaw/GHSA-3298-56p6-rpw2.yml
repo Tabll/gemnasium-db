@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-3298-56p6-rpw2"
+identifiers:
+- "GHSA-3298-56p6-rpw2"
+package_slug: "npm/openclaw"
+title: "OpenClaw has incomplete Fix for CVE-2026-27486: Unvalidated SIGKILL in `!stop`
+  Chat Command via `shell-utils.ts`"
+description: "The `!stop` (and `/bash stop`) chat command kills background bash processes
+  using `SIGKILL` directly, without first sending `SIGTERM` to allow graceful shutdown.
+  This is because `bash-command.ts` imports `killProcessTree()` from `src/agents/shell-utils.ts`,
+  which still contains the pre-CVE-2026-27486 aggressive kill logic, rather than from
+  the patched `src/process/kill-tree.ts`."
+date: "2026-03-30"
+pubdate: "2026-03-30"
+affected_range: "<2026.3.24"
+fixed_versions:
+- "2026.3.24"
+affected_versions: "All versions before 2026.3.24"
+not_impacted: "All versions starting from 2026.3.24"
+solution: "Upgrade to version 2026.3.24 or above."
+urls:
+- "https://github.com/advisories/GHSA-3298-56p6-rpw2"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-3298-56p6-rpw2"
+- "https://github.com/advisories/GHSA-jfv4-h8mc-jcp8"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:H"
+uuid: "05f3349e-7e23-4d58-8f8d-ff9b7314d1fd"
+cwe_ids:
+- "CWE-404"
+- "CWE-937"
+- "CWE-1035"

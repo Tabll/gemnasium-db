@@ -1,0 +1,28 @@
+---
+identifier: "GMS-2026-68"
+identifiers:
+- "GMS-2026-68"
+package_slug: "npm/@shadanai/openclaw"
+title: "Embedded Malicious Code with vendored remote access trojan"
+description: "Multiple versions of the npm package `@shadanai/openclaw` contain
+  vendored malicious code related to the axios supply chain attack of March 31,
+  2026. These versions were published with embedded malware that deploys a
+  cross-platform remote access trojan. The package should be considered entirely
+  malicious and removed from any system where it was installed."
+date: "2026-03-31"
+pubdate: "2026-03-31"
+affected_range: "=2026.3.28-2||=2026.3.28-3||=2026.3.31-1||=2026.3.31-2"
+fixed_versions: []
+affected_versions: "Version 2026.3.28-2, version 2026.3.28-3, version 2026.3.31-1,
+  version 2026.3.31-2"
+not_impacted: ""
+solution: "Remove the package entirely. This package is malware and has no legitimate
+  use. Treat affected systems as fully compromised and rotate all credentials."
+urls:
+- "https://github.com/advisories/GHSA-fw8c-xr5c-95f9"
+- "https://socket.dev/blog/axios-npm-package-compromised"
+uuid: "bc5736a2-6c5e-47f2-8efa-64327ed78ae8"
+cwe_ids:
+- "CWE-506"
+- "CWE-937"
+- "CWE-1035"
