@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-5724-x3rh-5qqq"
+identifiers:
+- "GHSA-5724-x3rh-5qqq"
+package_slug: "packagist/yeswiki/yeswiki"
+title: "YesWiki has Multiple Reflected Cross-site Scripting Vulnerabilities"
+description: "Multiple **reflected Cross-site Scripting (XSS)** vulnerabilities across
+  both **authenticated and unauthenticated** portions of the application. These findings
+  present a significant security risk, as they can be leveraged to execute arbitrary
+  JavaScript in a victim’s browser under various contexts."
+date: "2026-04-01"
+pubdate: "2026-04-01"
+affected_range: "<4.6.0"
+fixed_versions:
+- "4.6.0"
+affected_versions: "All versions before 4.6.0"
+not_impacted: "All versions starting from 4.6.0"
+solution: "Upgrade to version 4.6.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-5724-x3rh-5qqq"
+- "https://github.com/YesWiki/yeswiki/security/advisories/GHSA-5724-x3rh-5qqq"
+- "https://github.com/YesWiki/yeswiki"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:N/VI:N/VA:N/SC:L/SI:L/SA:N"
+uuid: "c25cdf7f-07f9-4967-9121-4fcf2659853b"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

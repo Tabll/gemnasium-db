@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-vfgx-5q85-58q3"
+identifiers:
+- "GHSA-vfgx-5q85-58q3"
+package_slug: "pypi/openssl-encrypt"
+title: "openssl-encrypt has non-cryptographic PRNG used for steganography pixel selection"
+description: "The `generate_pseudorandom_sequence()` function in `openssl_encrypt/plugins/steganography/core/utils.py`
+  at **lines 89-91** uses Python's `random` module (Mersenne Twister) for steganographic
+  pixel/sample selection."
+date: "2026-03-31"
+pubdate: "2026-03-31"
+affected_range: "<1.4.0"
+fixed_versions:
+- "1.4.0"
+affected_versions: "All versions before 1.4.0"
+not_impacted: "All versions starting from 1.4.0"
+solution: "Upgrade to version 1.4.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-vfgx-5q85-58q3"
+- "https://github.com/jahlives/openssl_encrypt/security/advisories/GHSA-vfgx-5q85-58q3"
+- "https://github.com/jahlives/openssl_encrypt/commit/09e96e090417d34d2f533f6810d3cd4f77810101"
+- "https://github.com/jahlives/openssl_encrypt"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N"
+uuid: "c9dec2ae-d3c9-4c38-9c49-39b8b77eaf1b"
+cwe_ids:
+- "CWE-330"
+- "CWE-937"
+- "CWE-1035"

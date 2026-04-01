@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-3h6j-9x8m-rg3g"
+identifiers:
+- "GHSA-3h6j-9x8m-rg3g"
+package_slug: "packagist/j0k3r/graby"
+title: "Graby has stored XSS via iframe srcdoc Attribute in htmLawed Sanitization
+  Config"
+description: "Graby's `cleanupXss()` function configures htmLawed with conflicting
+  settings: `safe=1` (which removes `<iframe>`) combined with `'elements' => '*+iframe-meta'`
+  (which re-enables `<iframe>`). htmLawed does not sanitize the `srcdoc` attribute,
+  allowing injection of arbitrary JavaScript that executes when the content is rendered
+  via `|raw` in templates."
+date: "2026-03-31"
+pubdate: "2026-03-31"
+affected_range: "<2.5.1"
+fixed_versions:
+- "2.5.1"
+affected_versions: "All versions before 2.5.1"
+not_impacted: "All versions starting from 2.5.1"
+solution: "Upgrade to version 2.5.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-3h6j-9x8m-rg3g"
+- "https://github.com/j0k3r/graby/security/advisories/GHSA-3h6j-9x8m-rg3g"
+- "https://github.com/j0k3r/graby/commit/0295d828822f7a59c5751a8199973a4f965a99b0"
+- "https://github.com/j0k3r/graby"
+- "https://github.com/j0k3r/graby/releases/tag/2.5.1"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:N/VI:N/VA:N/SC:L/SI:L/SA:N"
+uuid: "c37aaa81-f4d2-427c-9fa4-a744df47ff51"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

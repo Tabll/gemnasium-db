@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-j48q-4c78-rhf9"
+identifiers:
+- "GHSA-j48q-4c78-rhf9"
+package_slug: "pypi/openssl-encrypt"
+title: "openssl-encrypt: Dynamic .so loading for Whirlpool uses broad glob pattern
+  without integrity verification"
+description: "The Whirlpool hash implementation in `openssl_encrypt/modules/registry/hash_registry.py`
+  at **lines 570-589** uses glob patterns to find `.so` modules in site-packages and
+  loads the first match via `importlib` without verifying module integrity."
+date: "2026-03-31"
+pubdate: "2026-03-31"
+affected_range: "<1.4.0"
+fixed_versions:
+- "1.4.0"
+affected_versions: "All versions before 1.4.0"
+not_impacted: "All versions starting from 1.4.0"
+solution: "Upgrade to version 1.4.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-j48q-4c78-rhf9"
+- "https://github.com/jahlives/openssl_encrypt/security/advisories/GHSA-j48q-4c78-rhf9"
+- "https://github.com/jahlives/openssl_encrypt/commit/963d0d1278b722ea134272f9df65fddcd3e6ab47"
+- "https://github.com/jahlives/openssl_encrypt"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N"
+uuid: "fcd8c1da-e550-41fc-8294-ac46ea857a84"
+cwe_ids:
+- "CWE-427"
+- "CWE-937"
+- "CWE-1035"

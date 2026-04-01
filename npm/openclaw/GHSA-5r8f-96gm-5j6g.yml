@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-5r8f-96gm-5j6g"
+identifiers:
+- "GHSA-5r8f-96gm-5j6g"
+package_slug: "npm/openclaw"
+title: "OpenClaw Gateway `operator.write` can reach admin-only session reset via `chat.send`
+  `/reset`"
+description: "The `chat.send` path reused command authorization to trigger `/reset`
+  session rotation even though direct session reset is an admin-only control-plane
+  operation."
+date: "2026-04-01"
+pubdate: "2026-04-01"
+affected_range: "<2026.3.28"
+fixed_versions:
+- "2026.3.28"
+affected_versions: "All versions before 2026.3.28"
+not_impacted: "All versions starting from 2026.3.28"
+solution: "Upgrade to version 2026.3.28 or above."
+urls:
+- "https://github.com/advisories/GHSA-5r8f-96gm-5j6g"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-5r8f-96gm-5j6g"
+- "https://github.com/openclaw/openclaw/commit/be00fcfccba108f88dc3d4380146c6e058770b03"
+- "https://github.com/openclaw/openclaw"
+- "https://github.com/openclaw/openclaw/releases/tag/v2026.3.28"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:L"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:H/VA:L/SC:N/SI:N/SA:N"
+uuid: "9651330f-bd7f-4b8e-a380-3c60fbce607a"
+cwe_ids:
+- "CWE-284"
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

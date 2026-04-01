@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-6pfc-6m7w-m8fx"
+identifiers:
+- "GHSA-6pfc-6m7w-m8fx"
+package_slug: "npm/openclaw"
+title: "OpenClaw has a gateway exec allowlist allow-always bypass via unregistered
+  /usr/bin/script wrapper"
+description: "Allow-always persistence did not unwrap `/usr/bin/script` and similar
+  wrappers to the actual executed target before storing trust decisions."
+date: "2026-03-31"
+pubdate: "2026-03-31"
+affected_range: "<2026.3.28"
+fixed_versions:
+- "2026.3.28"
+affected_versions: "All versions before 2026.3.28"
+not_impacted: "All versions starting from 2026.3.28"
+solution: "Upgrade to version 2026.3.28 or above."
+urls:
+- "https://github.com/advisories/GHSA-6pfc-6m7w-m8fx"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-6pfc-6m7w-m8fx"
+- "https://github.com/openclaw/openclaw/commit/83da3cfe31f016841e1deedda1a604696f4c488d"
+- "https://github.com/openclaw/openclaw"
+- "https://github.com/openclaw/openclaw/releases/tag/v2026.3.28"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H"
+uuid: "be3bffa9-e312-4c88-9dc3-00b2571e2954"
+cwe_ids:
+- "CWE-385"
+- "CWE-937"
+- "CWE-1035"

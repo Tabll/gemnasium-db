@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-3gr8-2752-h46q"
+identifiers:
+- "GHSA-3gr8-2752-h46q"
+package_slug: "npm/openclaw"
+title: "Duplicate Advisory: OpenClaw's message tool media parameter bypasses tool
+  policy filesystem isolation"
+description: "### Duplicate Advisory\nThis advisory has been withdrawn because it
+  is a duplicate of GHSA-v8wv-jg3q-qwpq. This link is maintained to preserve external
+  references.\n\n### Original Description\nOpenClaw before 2026.3.24 contains a sandbox
+  bypass vulnerability in the message tool that allows attackers to read arbitrary
+  local files by using mediaUrl and fileUrl alias parameters that bypass localRoots
+  validation. Remote attackers can exploit this by routing file requests through unvalidated
+  alias parameters to access files outside the intended sandbox directory."
+date: "2026-03-31"
+pubdate: "2026-03-31"
+affected_range: "<2026.3.24"
+fixed_versions:
+- "2026.3.24"
+affected_versions: "All versions before 2026.3.24"
+not_impacted: "All versions starting from 2026.3.24"
+solution: "Upgrade to version 2026.3.24 or above."
+urls:
+- "https://github.com/advisories/GHSA-3gr8-2752-h46q"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-v8wv-jg3q-qwpq"
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-33581"
+- "https://github.com/openclaw/openclaw/commit/1d7cb6fc03552bbba00e7cffb3aa9741f5556416"
+- "https://www.vulncheck.com/advisories/openclaw-arbitrary-file-read-via-mediaurl-and-fileurl-parameters"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N"
+uuid: "d0a0950a-9f8b-4b62-8c70-ab1a9184e36f"
+cwe_ids:
+- "CWE-22"
+- "CWE-937"
+- "CWE-1035"

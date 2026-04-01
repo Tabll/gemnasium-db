@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-g86v-f9qv-rh6m"
+identifiers:
+- "GHSA-g86v-f9qv-rh6m"
+package_slug: "npm/openclaw"
+title: "OpenClaw SSRF guard misses four IPv6 special-use ranges"
+description: "The SSRF/IP classifier treated several IPv6 special-use ranges as public
+  and allowed fetches to proceed."
+date: "2026-03-31"
+pubdate: "2026-03-31"
+affected_range: "<2026.3.28"
+fixed_versions:
+- "2026.3.28"
+affected_versions: "All versions before 2026.3.28"
+not_impacted: "All versions starting from 2026.3.28"
+solution: "Upgrade to version 2026.3.28 or above."
+urls:
+- "https://github.com/advisories/GHSA-g86v-f9qv-rh6m"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-g86v-f9qv-rh6m"
+- "https://github.com/openclaw/openclaw/commit/d61f8e56723e03573b847422468d99c44c26e34f"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:N/A:N"
+uuid: "ffbfac6d-3bf6-4dde-a00c-75d6dcc6b9bb"
+cwe_ids:
+- "CWE-918"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-8689-gm9g-jgr6"
+identifiers:
+- "GHSA-8689-gm9g-jgr6"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Voice-call Plivo V3 webhook replay key uses unsorted URL, allowing
+  replay via query-parameter reordering"
+description: "Plivo V3 signature verification canonicalized query ordering, but replay
+  detection hashed the raw verification URL. Reordering query parameters preserved
+  a valid signature while producing a fresh replay-cache key."
+date: "2026-03-31"
+pubdate: "2026-03-31"
+affected_range: "<2026.3.28"
+fixed_versions:
+- "2026.3.28"
+affected_versions: "All versions before 2026.3.28"
+not_impacted: "All versions starting from 2026.3.28"
+solution: "Upgrade to version 2026.3.28 or above."
+urls:
+- "https://github.com/advisories/GHSA-8689-gm9g-jgr6"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-8689-gm9g-jgr6"
+- "https://github.com/openclaw/openclaw/commit/85777e726cb02c01a911b3ff832ddf4d664d5c94"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N"
+uuid: "1e3ce751-1d70-41de-9b8b-bf9649265df3"
+cwe_ids:
+- "CWE-294"
+- "CWE-937"
+- "CWE-1035"

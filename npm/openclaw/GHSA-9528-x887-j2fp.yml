@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-9528-x887-j2fp"
+identifiers:
+- "GHSA-9528-x887-j2fp"
+package_slug: "npm/openclaw"
+title: "OpenClaw's Nextcloud Talk webhook missing rate limiting on shared secret authentication"
+description: "Nextcloud Talk webhook signature failures were not throttled even though
+  the integration relies on an operator-configured shared secret that may be weak."
+date: "2026-03-31"
+pubdate: "2026-03-31"
+affected_range: "<2026.3.28"
+fixed_versions:
+- "2026.3.28"
+affected_versions: "All versions before 2026.3.28"
+not_impacted: "All versions starting from 2026.3.28"
+solution: "Upgrade to version 2026.3.28 or above."
+urls:
+- "https://github.com/advisories/GHSA-9528-x887-j2fp"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-9528-x887-j2fp"
+- "https://github.com/openclaw/openclaw/commit/e403decb6e20091b5402780a7ccd2085f98aa3cd"
+- "https://github.com/openclaw/openclaw"
+- "https://github.com/openclaw/openclaw/releases/tag/v2026.3.28"
+uuid: "447fb630-259c-484b-ae75-0949af9305db"
+cwe_ids:
+- "CWE-307"
+- "CWE-937"
+- "CWE-1035"

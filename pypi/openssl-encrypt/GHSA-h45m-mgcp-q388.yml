@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-h45m-mgcp-q388"
+identifiers:
+- "GHSA-h45m-mgcp-q388"
+package_slug: "pypi/openssl-encrypt"
+title: "openssl-encrypt: TOTP rate limiter is in-memory only — not shared across workers,
+  lost on restart"
+description: "The TOTP brute-force rate limiter in `openssl_encrypt_server/modules/pepper/totp.py`
+  at **lines 47-98** uses an in-memory `defaultdict(list)` as a class variable."
+date: "2026-03-31"
+pubdate: "2026-03-31"
+affected_range: "<1.4.0"
+fixed_versions:
+- "1.4.0"
+affected_versions: "All versions before 1.4.0"
+not_impacted: "All versions starting from 1.4.0"
+solution: "Upgrade to version 1.4.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-h45m-mgcp-q388"
+- "https://github.com/jahlives/openssl_encrypt/security/advisories/GHSA-h45m-mgcp-q388"
+- "https://github.com/jahlives/openssl_encrypt/commit/2749bc0949b34a5921a35fb4a3f1856fc51916de"
+- "https://github.com/jahlives/openssl_encrypt"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N"
+uuid: "6d594cdc-5dd7-4115-96ec-92186a158ccc"
+cwe_ids:
+- "CWE-770"
+- "CWE-937"
+- "CWE-1035"

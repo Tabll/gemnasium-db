@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-425g-fjhq-5h92"
+identifiers:
+- "GHSA-425g-fjhq-5h92"
+package_slug: "pypi/openssl-encrypt"
+title: "openssl-encrypt silently skips schema validation when jsonschema library is
+  not installed"
+description: "In `openssl_encrypt/modules/json_validator.py` at **lines 234-238**,
+  when the `jsonschema` library is not installed, all schema validation is silently
+  skipped with only a print warning."
+date: "2026-03-31"
+pubdate: "2026-03-31"
+affected_range: "<1.4.0"
+fixed_versions:
+- "1.4.0"
+affected_versions: "All versions before 1.4.0"
+not_impacted: "All versions starting from 1.4.0"
+solution: "Upgrade to version 1.4.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-425g-fjhq-5h92"
+- "https://github.com/jahlives/openssl_encrypt/security/advisories/GHSA-425g-fjhq-5h92"
+- "https://github.com/jahlives/openssl_encrypt/commit/6e7f938dcb7928faf5fd12bb5559f6dae2944124"
+- "https://github.com/jahlives/openssl_encrypt"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N"
+uuid: "11b3a613-adce-4054-bbf1-b86662a601ff"
+cwe_ids:
+- "CWE-20"
+- "CWE-937"
+- "CWE-1035"

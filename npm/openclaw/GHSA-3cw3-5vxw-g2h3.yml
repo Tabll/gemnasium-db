@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-3cw3-5vxw-g2h3"
+identifiers:
+- "GHSA-3cw3-5vxw-g2h3"
+package_slug: "npm/openclaw"
+title: "OpenClaw: CLI Remote Onboarding Persists Unauthenticated Discovery Endpoint
+  and Exfiltrates Gateway Credentials"
+description: "Remote onboarding accepted discovered gateway endpoints without an explicit
+  trust confirmation before persisting the remote URL and connection details."
+date: "2026-03-31"
+pubdate: "2026-03-31"
+affected_range: "<2026.3.28"
+fixed_versions:
+- "2026.3.28"
+affected_versions: "All versions before 2026.3.28"
+not_impacted: "All versions starting from 2026.3.28"
+solution: "Upgrade to version 2026.3.28 or above."
+urls:
+- "https://github.com/advisories/GHSA-3cw3-5vxw-g2h3"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-3cw3-5vxw-g2h3"
+- "https://github.com/openclaw/openclaw/commit/d6affb17d85f5f5ab08ef9f2b994b257af12e75a"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:A/AC:L/AT:P/PR:N/UI:P/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N"
+uuid: "f440a494-db06-4319-8535-4c68900a2ffb"
+cwe_ids:
+- "CWE-287"
+- "CWE-862"
+- "CWE-937"
+- "CWE-1035"

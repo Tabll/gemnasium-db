@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-hh43-q692-2xmq"
+identifiers:
+- "GHSA-hh43-q692-2xmq"
+package_slug: "npm/openclaw"
+title: "Duplicate Advisory: `OpenClaw: session_status` let sandboxed subagents access
+  parent or sibling session state"
+description: "## Duplicate Advisory\n\nThis advisory has been withdrawn because it
+  is a duplicate of GHSA-wcxr-59v9-rxr8. This link is maintained to preserve external
+  references.\n\n## Original Description\nOpenClaw before 2026.3.11 contains a session
+  sandbox escape vulnerability in the session_status tool that allows sandboxed subagents
+  to access parent or sibling session state. Attackers can supply arbitrary sessionKey
+  values to read or modify session data outside their sandbox scope, including persisted
+  model overrides."
+date: "2026-04-01"
+pubdate: "2026-03-29"
+affected_range: "<=2026.3.8"
+fixed_versions: []
+affected_versions: "All versions up to 2026.3.8"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-hh43-q692-2xmq"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-wcxr-59v9-rxr8"
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-32918"
+- "https://github.com/openclaw/openclaw"
+- "https://www.vulncheck.com/advisories/openclaw-session-sandbox-escape-via-session-status-tool"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:N/SC:H/SI:H/SA:N"
+uuid: "e8eaf46e-0bca-46d0-8869-e09040a55997"
+cwe_ids:
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

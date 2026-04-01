@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-jccr-rrw2-vc8h"
+identifiers:
+- "GHSA-jccr-rrw2-vc8h"
+package_slug: "npm/openclaw"
+title: "OpenClaw safeBins jq `$ENV` filter bypass allows environment variable disclosure"
+description: "The jq safe-bin policy blocked explicit `env` usage but still allowed
+  jq programs that accessed environment data through `$ENV`."
+date: "2026-03-31"
+pubdate: "2026-03-31"
+affected_range: "<2026.3.28"
+fixed_versions:
+- "2026.3.28"
+affected_versions: "All versions before 2026.3.28"
+not_impacted: "All versions starting from 2026.3.28"
+solution: "Upgrade to version 2026.3.28 or above."
+urls:
+- "https://github.com/advisories/GHSA-jccr-rrw2-vc8h"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-jccr-rrw2-vc8h"
+- "https://github.com/openclaw/openclaw/commit/78e2f3d66d74e5c7e6f45c54162e63986e39771b"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N"
+uuid: "fba3c5ee-878e-4c2d-b8f0-e8b4e5811881"
+cwe_ids:
+- "CWE-200"
+- "CWE-937"
+- "CWE-1035"

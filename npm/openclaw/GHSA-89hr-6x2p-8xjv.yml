@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-89hr-6x2p-8xjv"
+identifiers:
+- "GHSA-89hr-6x2p-8xjv"
+package_slug: "npm/openclaw"
+title: "Duplicate Advisory: OpenClaw's device removal and token revocation do not
+  terminate active WebSocket sessions"
+description: "### Duplicate Advisory\nThis advisory has been withdrawn because it
+  is a duplicate of GHSA-2pr2-hcv6-7gwv. This link is maintained to preserve external
+  references.\n\n### Original Description\nOpenClaw before 2026.3.28 fails to disconnect
+  active WebSocket sessions when devices are removed or tokens are revoked. Attackers
+  with revoked credentials can maintain unauthorized access through existing live
+  sessions until forced reconnection."
+date: "2026-03-31"
+pubdate: "2026-03-31"
+affected_range: "<2026.3.28"
+fixed_versions:
+- "2026.3.28"
+affected_versions: "All versions before 2026.3.28"
+not_impacted: "All versions starting from 2026.3.28"
+solution: "Upgrade to version 2026.3.28 or above."
+urls:
+- "https://github.com/advisories/GHSA-89hr-6x2p-8xjv"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-2pr2-hcv6-7gwv"
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-34503"
+- "https://github.com/openclaw/openclaw/commit/7a801cc451e9e667b705eeccff651923a1b8c863"
+- "https://www.vulncheck.com/advisories/openclaw-incomplete-websocket-session-termination-on-device-removal-and-token-revocation"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N"
+uuid: "203054d0-af10-4cdd-89a2-12c083efaafd"
+cwe_ids:
+- "CWE-613"
+- "CWE-937"
+- "CWE-1035"

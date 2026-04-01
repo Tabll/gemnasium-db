@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-pqhr-mp3f-hrpp"
+identifiers:
+- "GHSA-pqhr-mp3f-hrpp"
+package_slug: "npm/nuxt-og-image"
+title: "Nuxt OG Image vulnerable to Server-Side Request Forgery via user-controlled
+  parameters"
+description: "**Product:** Nuxt OG Image\n**Version:** < 6.2.5\n**CWE-ID:** [CWE-918](https://cwe.mitre.org/data/definitions/918.html):
+  Server-Side Request Forgery"
+date: "2026-03-31"
+pubdate: "2026-03-31"
+affected_range: "<6.2.5"
+fixed_versions:
+- "6.2.5"
+affected_versions: "All versions before 6.2.5"
+not_impacted: "All versions starting from 6.2.5"
+solution: "Upgrade to version 6.2.5 or above."
+urls:
+- "https://github.com/advisories/GHSA-pqhr-mp3f-hrpp"
+- "https://github.com/nuxt-modules/og-image/security/advisories/GHSA-pqhr-mp3f-hrpp"
+- "https://github.com/nuxt-modules/og-image"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+uuid: "5667bd65-bdf0-4b04-ad43-e8dbca4ce79c"
+cwe_ids:
+- "CWE-918"
+- "CWE-937"
+- "CWE-1035"
