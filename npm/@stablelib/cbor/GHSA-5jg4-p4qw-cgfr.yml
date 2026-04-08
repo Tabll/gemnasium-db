@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-5jg4-p4qw-cgfr"
+identifiers:
+- "GHSA-5jg4-p4qw-cgfr"
+package_slug: "npm/@stablelib/cbor"
+title: "@stablelib/cbor: Stack exhaustion Denial of Service via deeply nested CBOR
+  arrays, maps, or tags"
+description: "`@stablelib/cbor` decodes nested CBOR structures recursively and does
+  not enforce a maximum nesting depth. A sufficiently deep attacker-controlled CBOR
+  payload can therefore crash decoding with `RangeError: Maximum call stack size exceeded`."
+date: "2026-04-07"
+pubdate: "2026-04-04"
+affected_range: "<2.0.3"
+fixed_versions:
+- "2.0.3"
+affected_versions: "All versions before 2.0.3"
+not_impacted: "All versions starting from 2.0.3"
+solution: "Upgrade to version 2.0.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-5jg4-p4qw-cgfr"
+- "https://github.com/StableLib/stablelib/security/advisories/GHSA-5jg4-p4qw-cgfr"
+- "https://github.com/StableLib/stablelib/commit/0149e18d9d4736e22c257744ca945ebce7899a01"
+- "https://github.com/StableLib/stablelib"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+uuid: "72dd8525-b97c-4b32-a3fd-c22877275d56"
+cwe_ids:
+- "CWE-674"
+- "CWE-937"
+- "CWE-1035"

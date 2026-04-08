@@ -1,0 +1,38 @@
+---
+identifier: "GHSA-69x8-hrgq-fjj8"
+identifiers:
+- "GHSA-69x8-hrgq-fjj8"
+package_slug: "pypi/litellm"
+title: "LiteLLM: Password hash exposure and pass-the-hash authentication bypass"
+description: "Three issues combine into a full authentication bypass chain:\n\n1.
+  Weak hashing: User passwords are stored as unsalted SHA-256 hashes, making them
+  vulnerable to rainbow table attacks and trivially identifying users with identical
+  passwords.\n2. Hash exposure: Multiple API endpoints (/user/info, /user/update,
+  /spend/users) return the password hash field in responses to any authenticated user
+  regardless of role. Plaintext passwords could also potentially be exposed in certain
+  scenarios.\n4. Pass-the-hash: The /v2/login endpoint accepts the raw SHA-256 hash
+  as a valid password without re-hashing, allowing direct login with a stolen\n\nAn
+  already authenticated user can retrieve another user's password hash from the API
+  and use it to log in as that user. This enables full privilege escalation in three
+  HTTP requests."
+date: "2026-04-08"
+pubdate: "2026-04-08"
+affected_range: "<1.83.0"
+fixed_versions:
+- "1.83.0"
+affected_versions: "All versions before 1.83.0"
+not_impacted: "All versions starting from 1.83.0"
+solution: "Upgrade to version 1.83.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-69x8-hrgq-fjj8"
+- "https://github.com/BerriAI/litellm/security/advisories/GHSA-69x8-hrgq-fjj8"
+- "https://github.com/BerriAI/litellm"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N"
+uuid: "32413193-00fc-4ee5-867d-e4b6d30c0d2b"
+cwe_ids:
+- "CWE-200"
+- "CWE-327"
+- "CWE-916"
+- "CWE-937"
+- "CWE-1035"

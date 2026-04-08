@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-rvvf-6vh3-9j43"
+identifiers:
+- "GHSA-rvvf-6vh3-9j43"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Discord Slash Commands Bypass Group DM Channel Allowlist"
+description: "Discord Slash Commands Bypass Group DM Channel Allowlist"
+date: "2026-04-03"
+pubdate: "2026-04-03"
+affected_range: "<2026.3.31"
+fixed_versions:
+- "2026.3.31"
+affected_versions: "All versions before 2026.3.31"
+not_impacted: "All versions starting from 2026.3.31"
+solution: "Upgrade to version 2026.3.31 or above."
+urls:
+- "https://github.com/advisories/GHSA-rvvf-6vh3-9j43"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-rvvf-6vh3-9j43"
+- "https://github.com/openclaw/openclaw/commit/8fdb19676ab44cf85d47ee13c578195f2e527591"
+- "https://github.com/openclaw/openclaw"
+- "https://github.com/openclaw/openclaw/releases/tag/v2026.3.31"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "dd0af0f7-d5c3-435b-8814-599f001136a0"
+cwe_ids:
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

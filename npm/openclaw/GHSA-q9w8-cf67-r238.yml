@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-q9w8-cf67-r238"
+identifiers:
+- "GHSA-q9w8-cf67-r238"
+package_slug: "npm/openclaw"
+title: "OpenClaw: macOS Tailnet DNS Spoofing & Credential Exfiltration"
+description: "macOS Wide-Area Discovery Accepts Arbitrary Tailnet Peer as DNS Authority
+  and Exfiltrates Operator Credentials"
+date: "2026-04-03"
+pubdate: "2026-04-03"
+affected_range: "<2026.3.31"
+fixed_versions:
+- "2026.3.31"
+affected_versions: "All versions before 2026.3.31"
+not_impacted: "All versions starting from 2026.3.31"
+solution: "Upgrade to version 2026.3.31 or above."
+urls:
+- "https://github.com/advisories/GHSA-q9w8-cf67-r238"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-q9w8-cf67-r238"
+- "https://github.com/openclaw/openclaw/commit/a23c33a681f8c1b22dc793995acc4c5c4b568346"
+- "https://github.com/openclaw/openclaw"
+- "https://github.com/openclaw/openclaw/releases/tag/v2026.3.31"
+cvss_v3: "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:A/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N"
+uuid: "88de24b9-0dca-4fd9-b7cf-6f9d2c71c373"
+cwe_ids:
+- "CWE-346"
+- "CWE-350"
+- "CWE-937"
+- "CWE-1035"

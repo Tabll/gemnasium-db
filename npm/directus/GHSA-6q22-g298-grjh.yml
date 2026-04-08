@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-6q22-g298-grjh"
+identifiers:
+- "GHSA-6q22-g298-grjh"
+package_slug: "npm/directus"
+title: "Directus: Unauthenticated Denial of Service via GraphQL Alias Amplification
+  of Expensive Health Check Resolver"
+description: "The GraphQL specification permits a single query to repeat the same
+  field multiple times using aliases, with each alias resolved independently by default.
+  Directus did not deduplicate resolver invocations within a single request, meaning
+  each alias triggered a full, independent execution of the underlying resolver.\n\nThe
+  health check resolver ran all backend checks (database connectivity, cache, storage
+  writes, and SMTP verification) on every invocation. Combined with unauthenticated
+  access to the system GraphQL endpoint, this allowed an attacker to amplify resource
+  consumption significantly from a single HTTP request, exhausting the database connection
+  pool, storage I/O, and SMTP connections."
+date: "2026-04-04"
+pubdate: "2026-04-04"
+affected_range: "<11.17.0"
+fixed_versions:
+- "11.17.0"
+affected_versions: "All versions before 11.17.0"
+not_impacted: "All versions starting from 11.17.0"
+solution: "Upgrade to version 11.17.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-6q22-g298-grjh"
+- "https://github.com/directus/directus/security/advisories/GHSA-6q22-g298-grjh"
+- "https://github.com/directus/directus"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "8f18b520-b356-40bd-821b-3260f99f70e2"
+cwe_ids:
+- "CWE-400"
+- "CWE-770"
+- "CWE-937"
+- "CWE-1035"

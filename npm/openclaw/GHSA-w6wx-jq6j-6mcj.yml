@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-w6wx-jq6j-6mcj"
+identifiers:
+- "GHSA-w6wx-jq6j-6mcj"
+package_slug: "npm/openclaw"
+title: "OpenClaw: pnpm dlx approvals did not bind local script operands"
+description: "Before OpenClaw 2026.4.2, `pnpm dlx` approval planning did not bind
+  local script operands the same way as related `pnpm exec` flows. A local script
+  approved through a `pnpm dlx` path could be replaced before execution without invalidating
+  the approval."
+date: "2026-04-07"
+pubdate: "2026-04-07"
+affected_range: "<2026.4.2"
+fixed_versions:
+- "2026.4.2"
+affected_versions: "All versions before 2026.4.2"
+not_impacted: "All versions starting from 2026.4.2"
+solution: "Upgrade to version 2026.4.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-w6wx-jq6j-6mcj"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-w6wx-jq6j-6mcj"
+- "https://github.com/openclaw/openclaw/commit/176c059b05357df1bc09d4328a2380670859eeff"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "55eccd73-41b4-449f-9595-227ddbaa1c0a"
+cwe_ids:
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

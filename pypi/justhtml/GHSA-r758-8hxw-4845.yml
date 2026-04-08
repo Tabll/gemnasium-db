@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-r758-8hxw-4845"
+identifiers:
+- "GHSA-r758-8hxw-4845"
+package_slug: "pypi/justhtml"
+title: "justhtml: Mutation XSS with custom foreign-namespace sanitization policies"
+description: "A parser-differential / mutation XSS issue was found in `justhtml` when
+  using a **custom sanitization policy** that preserves foreign namespaces such as
+  SVG or MathML.\n\nUnder these custom settings, specially crafted input could sanitize
+  into HTML that looked safe at first, but became unsafe when parsed again by a browser
+  or another HTML parser."
+date: "2026-04-08"
+pubdate: "2026-04-08"
+affected_range: ">=1.13.0,<1.14.0"
+fixed_versions:
+- "1.14.0"
+affected_versions: "All versions starting from 1.13.0 before 1.14.0"
+not_impacted: "All versions before 1.13.0, all versions starting from 1.14.0"
+solution: "Upgrade to version 1.14.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-r758-8hxw-4845"
+- "https://github.com/EmilStenstrom/justhtml/security/advisories/GHSA-r758-8hxw-4845"
+- "https://github.com/EmilStenstrom/justhtml/commit/8adc4dfe31723dc522f44338f9bd98381c92b076"
+- "https://github.com/EmilStenstrom/justhtml"
+- "https://github.com/EmilStenstrom/justhtml/releases/tag/v1.14.0"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:A/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "9195623f-61b6-497f-9cab-8f4738779b5a"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

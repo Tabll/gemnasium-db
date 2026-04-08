@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-35cq-wv6v-88xf"
+identifiers:
+- "GHSA-35cq-wv6v-88xf"
+package_slug: "npm/openclaw"
+title: "Duplicate Advisory: OpenClaw affected by SSRF via unguarded image download
+  in fal provider"
+description: "### Duplicate Advisory\nThis advisory has been withdrawn because it
+  is a duplicate of GHSA-qxgf-hmcj-3xw3. This link is maintained to preserve external
+  references.\n\n### Original Description\nOpenClaw before 2026.3.28 contains a server-side
+  request forgery vulnerability in the fal provider image-generation-provider.ts component
+  that allows attackers to fetch internal URLs. A malicious or compromised fal relay
+  can exploit unguarded image download fetches to expose internal service metadata
+  and responses through the image pipeline."
+date: "2026-04-06"
+pubdate: "2026-03-31"
+affected_range: "<2026.3.28"
+fixed_versions:
+- "2026.3.28"
+affected_versions: "All versions before 2026.3.28"
+not_impacted: "All versions starting from 2026.3.28"
+solution: "Upgrade to version 2026.3.28 or above."
+urls:
+- "https://github.com/advisories/GHSA-35cq-wv6v-88xf"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-qxgf-hmcj-3xw3"
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-34504"
+- "https://github.com/openclaw/openclaw/commit/80d1e8a11a2ac118c7f7a70bba9c862b6141d928"
+- "https://www.vulncheck.com/advisories/openclaw-server-side-request-forgery-via-unguarded-image-download-in-fal-provider"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:L/SI:L/SA:L"
+uuid: "0904fc43-cb4a-4e4c-b526-717af22039d4"
+cwe_ids:
+- "CWE-918"
+- "CWE-937"
+- "CWE-1035"

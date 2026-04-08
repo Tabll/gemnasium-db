@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-fwjq-xwfj-gv75"
+identifiers:
+- "GHSA-fwjq-xwfj-gv75"
+package_slug: "npm/openclaw"
+title: "OpenClaw: `session_status` still bypasses configured `tools.sessions.visibility`
+  for unsandboxed invocations "
+description: "`session_status` still bypasses configured `tools.sessions.visibility`
+  for unsandboxed invocations"
+date: "2026-04-07"
+pubdate: "2026-04-07"
+affected_range: "<2026.3.31"
+fixed_versions:
+- "2026.3.31"
+affected_versions: "All versions before 2026.3.31"
+not_impacted: "All versions starting from 2026.3.31"
+solution: "Upgrade to version 2026.3.31 or above."
+urls:
+- "https://github.com/advisories/GHSA-fwjq-xwfj-gv75"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-fwjq-xwfj-gv75"
+- "https://github.com/openclaw/openclaw/commit/4d369a3400dc9b737fbe8daa63f09d909ce7beb8"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N"
+uuid: "d71d8f55-51f9-452a-9bad-055c6178ad4a"
+cwe_ids:
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

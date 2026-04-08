@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-m34q-h93w-vg5x"
+identifiers:
+- "GHSA-m34q-h93w-vg5x"
+package_slug: "npm/openclaw"
+title: "OpenClaw: OpenShell mirror mode could delete arbitrary remote directories
+  when roots were mis-scoped"
+description: "Before OpenClaw 2026.4.2, the OpenShell mirror backend accepted arbitrary
+  absolute `remoteWorkspaceDir` and `remoteAgentWorkspaceDir` values. In mirror mode,
+  those paths were then used as the target of remote cleanup and overwrite operations."
+date: "2026-04-07"
+pubdate: "2026-04-07"
+affected_range: "<2026.4.2"
+fixed_versions:
+- "2026.4.2"
+affected_versions: "All versions before 2026.4.2"
+not_impacted: "All versions starting from 2026.4.2"
+solution: "Upgrade to version 2026.4.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-m34q-h93w-vg5x"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-m34q-h93w-vg5x"
+- "https://github.com/openclaw/openclaw/commit/b21c9840c2e38f4bb338d031511b479d5f07ca25"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "ceb16106-9945-4d41-9351-b747398b3735"
+cwe_ids:
+- "CWE-22"
+- "CWE-937"
+- "CWE-1035"

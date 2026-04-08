@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-9gp8-hjxr-6f34"
+identifiers:
+- "GHSA-9gp8-hjxr-6f34"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Host exec environment overrides miss proxy, TLS, Docker, and Git
+  TLS controls"
+description: "Host exec environment overrides miss proxy, TLS, Docker, and Git TLS
+  controls"
+date: "2026-04-03"
+pubdate: "2026-04-03"
+affected_range: "<2026.3.31"
+fixed_versions:
+- "2026.3.31"
+affected_versions: "All versions before 2026.3.31"
+not_impacted: "All versions starting from 2026.3.31"
+solution: "Upgrade to version 2026.3.31 or above."
+urls:
+- "https://github.com/advisories/GHSA-9gp8-hjxr-6f34"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-9gp8-hjxr-6f34"
+- "https://github.com/openclaw/openclaw/commit/4d912e04519b4bd53b248437c53748cdebce9a41"
+- "https://github.com/openclaw/openclaw"
+- "https://github.com/openclaw/openclaw/releases/tag/v2026.3.31"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:N/VI:L/VA:N/SC:L/SI:L/SA:N"
+uuid: "3893d92e-8c32-4b85-a1e3-e53cebe6cbdd"
+cwe_ids:
+- "CWE-269"
+- "CWE-937"
+- "CWE-1035"

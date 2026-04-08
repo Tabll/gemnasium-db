@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-6p8r-6m93-557f"
+identifiers:
+- "GHSA-6p8r-6m93-557f"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Fake DeviceToken Bypasses Shared Auth Rate Limiting"
+description: "Fake DeviceToken Bypasses Shared Auth Rate Limiting"
+date: "2026-04-03"
+pubdate: "2026-04-03"
+affected_range: "<2026.3.31"
+fixed_versions:
+- "2026.3.31"
+affected_versions: "All versions before 2026.3.31"
+not_impacted: "All versions starting from 2026.3.31"
+solution: "Upgrade to version 2026.3.31 or above."
+urls:
+- "https://github.com/advisories/GHSA-6p8r-6m93-557f"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-6p8r-6m93-557f"
+- "https://github.com/openclaw/openclaw/commit/af0c0862f22ca4492406a3103d05e3628f94cbe9"
+- "https://github.com/openclaw/openclaw"
+- "https://github.com/openclaw/openclaw/releases/tag/v2026.3.31"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "53505bce-9d95-41ed-b489-c6a96f87176e"
+cwe_ids:
+- "CWE-307"
+- "CWE-937"
+- "CWE-1035"

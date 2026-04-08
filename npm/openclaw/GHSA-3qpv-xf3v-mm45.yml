@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-3qpv-xf3v-mm45"
+identifiers:
+- "GHSA-3qpv-xf3v-mm45"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Workspace `.env` can override the bundled hooks root and load attacker
+  hook code"
+description: "Workspace `.env` can override the bundled hooks root and load attacker
+  hook code"
+date: "2026-04-02"
+pubdate: "2026-04-02"
+affected_range: "<2026.3.31"
+fixed_versions:
+- "2026.3.31"
+affected_versions: "All versions before 2026.3.31"
+not_impacted: "All versions starting from 2026.3.31"
+solution: "Upgrade to version 2026.3.31 or above."
+urls:
+- "https://github.com/advisories/GHSA-3qpv-xf3v-mm45"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-3qpv-xf3v-mm45"
+- "https://github.com/openclaw/openclaw/commit/330a9f98cb29c79b1c16a2117e03d6276a0d6289"
+- "https://github.com/openclaw/openclaw"
+- "https://github.com/openclaw/openclaw/releases/tag/v2026.3.31"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:L/AC:L/AT:P/PR:N/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+uuid: "15202ee9-39b3-4dde-a96d-37d64f4ddbdf"
+cwe_ids:
+- "CWE-15"
+- "CWE-937"
+- "CWE-1035"

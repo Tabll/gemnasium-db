@@ -9,17 +9,17 @@ description: "An authenticated user with permission to create or modify workflow
   node. Due to a misconfiguration in the `sanitize-html` library, the sanitization
   could be bypassed, resulting in stored XSS on the public chat page. Any user visiting
   the chat URL would be affected."
-date: "2026-03-27"
+date: "2026-04-03"
 pubdate: "2026-03-27"
-affected_range: "<1.123.27||>=2.14.0 <2..14.1||=2.14.0||>=2.0.0-rc.0 <2.13.3"
+affected_range: "<1.123.27||>=2.14.0 <2.14.1||=2.14.0||>=2.0.0-rc.0 <2.13.3"
 fixed_versions:
 - "1.123.27"
-- "2..14.1"
+- "2.14.1"
 - "2.13.3"
 affected_versions: "All versions before 1.123.27, all versions starting from 2.0.0-rc.0
-  before 2.13.3, all versions starting from 2.14.0 before 2..14.1, version 2.14.0"
+  before 2.13.3, all versions starting from 2.14.0 before 2.14.1, version 2.14.0"
 not_impacted: ""
-solution: "Upgrade to versions 1.123.27, 2..14.1, 2.13.3 or above."
+solution: "Upgrade to versions 1.123.27, 2.13.3, 2.14.1 or above."
 urls:
 - "https://github.com/advisories/GHSA-3c7f-5hgj-h279"
 - "https://github.com/n8n-io/n8n/security/advisories/GHSA-3c7f-5hgj-h279"

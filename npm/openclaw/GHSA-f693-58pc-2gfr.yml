@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-f693-58pc-2gfr"
+identifiers:
+- "GHSA-f693-58pc-2gfr"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Telegram legacy allowFrom migration fans default-account trust into
+  all named accounts"
+description: "Telegram legacy allowFrom migration fans default-account trust into
+  all named accounts"
+date: "2026-04-03"
+pubdate: "2026-04-03"
+affected_range: "<2026.3.31"
+fixed_versions:
+- "2026.3.31"
+affected_versions: "All versions before 2026.3.31"
+not_impacted: "All versions starting from 2026.3.31"
+solution: "Upgrade to version 2026.3.31 or above."
+urls:
+- "https://github.com/advisories/GHSA-f693-58pc-2gfr"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-f693-58pc-2gfr"
+- "https://github.com/openclaw/openclaw/commit/d8c68c8d4265ea6fa5e8c5e056534c351bddef37"
+- "https://github.com/openclaw/openclaw"
+- "https://github.com/openclaw/openclaw/releases/tag/v2026.3.31"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "7c5a6adf-334e-4bdf-9804-43de64a75acc"
+cwe_ids:
+- "CWE-732"
+- "CWE-937"
+- "CWE-1035"

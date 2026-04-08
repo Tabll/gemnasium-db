@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-vfw7-6rhc-6xxg"
+identifiers:
+- "GHSA-vfw7-6rhc-6xxg"
+package_slug: "npm/openclaw"
+title: "OpenClaw Has Incomplete Fix for CVE-2026-4039: CLI Backend Environment Variable
+  Injection via Workspace Config"
+description: "Incomplete Fix for CVE-2026-4039: CLI Backend Environment Variable Injection
+  via Workspace Config"
+date: "2026-04-07"
+pubdate: "2026-04-07"
+affected_range: "<2026.3.24"
+fixed_versions:
+- "2026.3.24"
+affected_versions: "All versions before 2026.3.24"
+not_impacted: "All versions starting from 2026.3.24"
+solution: "Upgrade to version 2026.3.24 or above."
+urls:
+- "https://github.com/advisories/GHSA-vfw7-6rhc-6xxg"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-vfw7-6rhc-6xxg"
+- "https://github.com/openclaw/openclaw/commit/c2fb7f1948c3226732a630256b5179a60664ec24"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N"
+uuid: "b2508e65-f6c7-41d5-86a1-5b0f33838c22"
+cwe_ids:
+- "CWE-426"
+- "CWE-937"
+- "CWE-1035"

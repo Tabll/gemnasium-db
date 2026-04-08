@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-qc22-xmq4-qg46"
+identifiers:
+- "GHSA-qc22-xmq4-qg46"
+package_slug: "pypi/c2cciutils"
+title: "c2cciutils affected by CVE-2022-40896 "
+description: "Pinned vulnerable version of Pygment [CVE-2022-40896](https://nvd.nist.gov/vuln/detail/CVE-2022-40896)"
+date: "2026-04-01"
+pubdate: "2026-04-01"
+affected_range: "<1.1.67"
+fixed_versions:
+- "1.1.67"
+affected_versions: "All versions before 1.1.67"
+not_impacted: "All versions starting from 1.1.67"
+solution: "Upgrade to version 1.1.67 or above."
+urls:
+- "https://github.com/advisories/GHSA-qc22-xmq4-qg46"
+- "https://github.com/camptocamp/c2cciutils/security/advisories/GHSA-qc22-xmq4-qg46"
+- "https://github.com/camptocamp/c2cciutils/commit/9d54eab73fcf24d492b339137040400da7ef4076"
+- "https://github.com/advisories/GHSA-mrwq-x4v8-fh7p"
+- "https://github.com/camptocamp/c2cciutils"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+cvss_v4: "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+uuid: "2410caca-113e-4b40-8f0e-908b7fae410d"
+cwe_ids:
+- "CWE-434"
+- "CWE-937"
+- "CWE-1035"

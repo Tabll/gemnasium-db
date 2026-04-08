@@ -6,7 +6,7 @@ package_slug: "npm/openclaw"
 title: "OpenClaw's Nextcloud Talk webhook missing rate limiting on shared secret authentication"
 description: "Nextcloud Talk webhook signature failures were not throttled even though
   the integration relies on an operator-configured shared secret that may be weak."
-date: "2026-03-31"
+date: "2026-04-06"
 pubdate: "2026-03-31"
 affected_range: "<2026.3.28"
 fixed_versions:

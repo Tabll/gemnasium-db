@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-p464-m8x6-vhv8"
+identifiers:
+- "GHSA-p464-m8x6-vhv8"
+package_slug: "npm/openclaw"
+title: "OpenClaw: MS Teams webhook parses body before JWT validation, enabling unauthenticated
+  resource exhaustion"
+description: "MS Teams webhook parses body before JWT validation, enabling unauthenticated
+  resource exhaustion"
+date: "2026-04-03"
+pubdate: "2026-04-03"
+affected_range: "<2026.3.31"
+fixed_versions:
+- "2026.3.31"
+affected_versions: "All versions before 2026.3.31"
+not_impacted: "All versions starting from 2026.3.31"
+solution: "Upgrade to version 2026.3.31 or above."
+urls:
+- "https://github.com/advisories/GHSA-p464-m8x6-vhv8"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-p464-m8x6-vhv8"
+- "https://github.com/openclaw/openclaw/commit/3834d47099dd13c8244ed6de8b9ea9855c553623"
+- "https://github.com/openclaw/openclaw"
+- "https://github.com/openclaw/openclaw/releases/tag/v2026.3.31"
+uuid: "749919fa-3c9a-4a60-9680-dd846e08cc65"
+cwe_ids:
+- "CWE-400"
+- "CWE-937"
+- "CWE-1035"

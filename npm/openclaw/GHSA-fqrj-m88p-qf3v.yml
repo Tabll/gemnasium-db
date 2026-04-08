@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-fqrj-m88p-qf3v"
+identifiers:
+- "GHSA-fqrj-m88p-qf3v"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Zalo replay dedupe cache could suppress events across authenticated
+  webhook targets"
+description: "Before OpenClaw 2026.3.31, the Zalo webhook replay-dedupe cache was
+  shared across authenticated webhook targets and keyed too broadly. In multi-account
+  deployments, a replay seen on one account could suppress a legitimate event on another
+  account if `event_name` and `message_id` matched."
+date: "2026-04-07"
+pubdate: "2026-04-07"
+affected_range: ">=2026.2.19 <2026.3.31"
+fixed_versions:
+- "2026.3.31"
+affected_versions: "All versions starting from 2026.2.19 before 2026.3.31"
+not_impacted: "All versions before 2026.2.19, all versions starting from 2026.3.31"
+solution: "Upgrade to version 2026.3.31 or above."
+urls:
+- "https://github.com/advisories/GHSA-fqrj-m88p-qf3v"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-fqrj-m88p-qf3v"
+- "https://github.com/openclaw/openclaw/commit/4d038bb242c11f39e45f6a4bde400e5fd42e4ebf"
+- "https://github.com/openclaw/openclaw/commit/7cea7c29705b188b464cc9cdc107c275b94b2a72"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N"
+uuid: "1c901410-b6af-43ec-8eaf-8c39c7c73c50"
+cwe_ids:
+- "CWE-287"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-rfgh-63mg-8pwm"
+identifiers:
+- "GHSA-rfgh-63mg-8pwm"
+package_slug: "pypi/pyload-ng"
+title: "pyload-ng has a WebUI JSON permission mismatch that lets ADD/DELETE users
+  invoke MODIFY-only actions"
+description: "Several WebUI JSON endpoints enforce weaker permissions than the core
+  API methods they invoke. This allows authenticated low-privileged users to execute
+  `MODIFY` operations that should be denied by pyLoad's own permission model.\n\nConfirmed
+  mismatches:\n- `ADD` user can reorder packages/files (`order_package`, `order_file`)
+  via `/json/package_order` and `/json/link_order`\n- `DELETE` user can abort downloads
+  (`stop_downloads`) via `/json/abort_link`"
+date: "2026-04-08"
+pubdate: "2026-04-08"
+affected_range: "<=0.5.0b3"
+fixed_versions: []
+affected_versions: "All versions up to 0.5.0b3"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-rfgh-63mg-8pwm"
+- "https://github.com/pyload/pyload/security/advisories/GHSA-rfgh-63mg-8pwm"
+- "https://github.com/pyload/pyload"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:L"
+uuid: "6eb7bb4a-537d-4fbc-b372-5de2326ffaca"
+cwe_ids:
+- "CWE-285"
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

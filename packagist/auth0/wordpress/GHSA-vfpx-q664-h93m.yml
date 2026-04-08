@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-vfpx-q664-h93m"
+identifiers:
+- "GHSA-vfpx-q664-h93m"
+package_slug: "packagist/auth0/wordpress"
+title: "Auth0 WordPress Plugin has Insufficient Entropy in Cookie Encryption"
+description: "In applications built with the Auth0 PHP SDK, cookies are encrypted
+  with insufficient entropy, which may result in threat actors brute-forcing the encryption
+  key and forging session cookies."
+date: "2026-04-03"
+pubdate: "2026-04-03"
+affected_range: ">=5.0.0-BETA0 <5.6.0"
+fixed_versions:
+- "5.6.0"
+affected_versions: "All versions starting from 5.0.0-BETA0 before 5.6.0"
+not_impacted: "All versions before 5.0.0-BETA0, all versions starting from 5.6.0"
+solution: "Upgrade to version 5.6.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-vfpx-q664-h93m"
+- "https://github.com/auth0/wordpress/security/advisories/GHSA-vfpx-q664-h93m"
+- "https://github.com/auth0/wordpress"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:N"
+uuid: "d01c3a9a-142f-4eac-b55a-b0c2ab722826"
+cwe_ids:
+- "CWE-331"
+- "CWE-937"
+- "CWE-1035"

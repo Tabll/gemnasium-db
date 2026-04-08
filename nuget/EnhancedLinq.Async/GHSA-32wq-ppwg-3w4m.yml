@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-32wq-ppwg-3w4m"
+identifiers:
+- "GHSA-32wq-ppwg-3w4m"
+package_slug: "nuget/EnhancedLinq.Async"
+title: "EnhancedLinq.Async is Vulnerable to Denial of Service via Transitive Dependency
+  Microsoft.Bcl.Memory"
+description: "`Microsoft.Bcl.Memory`, a transitive dependency of `EnhancedLinq.Async`,
+  had a Denial of Service security vulnerability, [CVE-2026-26127](https://github.com/dotnet/announcements/issues/384),
+  thus affecting `EnhancedLinq.Async` versions that had vulnerable versions of `Microsoft.Bcl.Memory`
+  as a transitive dependency."
+date: "2026-04-01"
+pubdate: "2026-04-01"
+affected_range: "[1.0.0-beta.1,1.0.0-beta.3)"
+fixed_versions:
+- "1.0.0-beta.3"
+affected_versions: "All versions starting from 1.0.0-beta.1 before 1.0.0-beta.3"
+not_impacted: "All versions before 1.0.0-beta.1, all versions starting from 1.0.0-beta.3"
+solution: "Upgrade to version 1.0.0-beta.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-32wq-ppwg-3w4m"
+- "https://github.com/alastairlundy/EnhancedLinq/security/advisories/GHSA-32wq-ppwg-3w4m"
+- "https://github.com/dotnet/announcements/issues/384"
+- "https://github.com/alastairlundy/EnhancedLinq"
+- "https://www.cve.org/CVERecord?id=CVE-2026-26127"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "99c6d7f0-b414-4b69-80ef-1827235f026a"
+cwe_ids:
+- "CWE-129"
+- "CWE-1395"
+- "CWE-937"
+- "CWE-1035"

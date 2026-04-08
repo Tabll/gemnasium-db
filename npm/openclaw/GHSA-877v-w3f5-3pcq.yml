@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-877v-w3f5-3pcq"
+identifiers:
+- "GHSA-877v-w3f5-3pcq"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Feishu thread history and quoted messages bypass sender allowlist"
+description: "Feishu thread history and quoted messages bypass sender allowlist"
+date: "2026-04-02"
+pubdate: "2026-04-02"
+affected_range: "<2026.3.31"
+fixed_versions:
+- "2026.3.31"
+affected_versions: "All versions before 2026.3.31"
+not_impacted: "All versions starting from 2026.3.31"
+solution: "Upgrade to version 2026.3.31 or above."
+urls:
+- "https://github.com/advisories/GHSA-877v-w3f5-3pcq"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-877v-w3f5-3pcq"
+- "https://github.com/openclaw/openclaw/commit/f45e5a6569aab1d58cc6de25b19f1dc4c8779b85"
+- "https://github.com/openclaw/openclaw"
+- "https://github.com/openclaw/openclaw/releases/tag/v2026.3.31"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "35a78bd7-9e39-45c7-8093-9e7343042a2b"
+cwe_ids:
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

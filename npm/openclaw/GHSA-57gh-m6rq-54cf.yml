@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-57gh-m6rq-54cf"
+identifiers:
+- "GHSA-57gh-m6rq-54cf"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Self-`Whitelist`ing in appendLocalMediaParentRoots Allows Arbitrary
+  File Read & Credential Exfiltration"
+description: "Media Local Roots Self-`Whitelist`ing in `appendLocalMediaParentRoots`
+  Allows Model-Initiated Arbitrary Host File Read and Credential Exfiltration"
+date: "2026-04-03"
+pubdate: "2026-04-03"
+affected_range: "<2026.3.31"
+fixed_versions:
+- "2026.3.31"
+affected_versions: "All versions before 2026.3.31"
+not_impacted: "All versions starting from 2026.3.31"
+solution: "Upgrade to version 2026.3.31 or above."
+urls:
+- "https://github.com/advisories/GHSA-57gh-m6rq-54cf"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-57gh-m6rq-54cf"
+- "https://github.com/openclaw/openclaw/commit/1ca4261d7e055d0be141ed79ebb1365d0fbc7364"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:L/AC:L/AT:P/PR:N/UI:P/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N"
+uuid: "9c7368bd-9685-431a-b8d3-14d69aa66cae"
+cwe_ids:
+- "CWE-552"
+- "CWE-937"
+- "CWE-1035"

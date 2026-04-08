@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-hr8g-2q7x-3f4w"
+identifiers:
+- "GHSA-hr8g-2q7x-3f4w"
+package_slug: "npm/openclaw"
+title: "OpenClaw Has a Gateway Control Interface Information Disclosure Vulnerability"
+description: "OpenClaw Gateway Control Interface Information Disclosure Vulnerability"
+date: "2026-04-03"
+pubdate: "2026-04-03"
+affected_range: "<2026.3.31"
+fixed_versions:
+- "2026.3.31"
+affected_versions: "All versions before 2026.3.31"
+not_impacted: "All versions starting from 2026.3.31"
+solution: "Upgrade to version 2026.3.31 or above."
+urls:
+- "https://github.com/advisories/GHSA-hr8g-2q7x-3f4w"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-hr8g-2q7x-3f4w"
+- "https://github.com/openclaw/openclaw/commit/c5c10adc022f42eb75ebb3bf364dd607738683b3"
+- "https://github.com/openclaw/openclaw"
+- "https://github.com/openclaw/openclaw/releases/tag/v2026.3.31"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N"
+uuid: "af1188e8-6731-4ff0-a462-88de16e98133"
+cwe_ids:
+- "CWE-200"
+- "CWE-937"
+- "CWE-1035"

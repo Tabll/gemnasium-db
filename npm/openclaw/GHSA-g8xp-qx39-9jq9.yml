@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-g8xp-qx39-9jq9"
+identifiers:
+- "GHSA-g8xp-qx39-9jq9"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Incomplete host-env-security-policy allows untrusted model to substitute
+  compiler binaries via env overrides"
+description: "Incomplete `host-env-security-policy.json` allows untrusted model to
+  substitute compiler binaries (`CC`, `CXX`, `CARGO_BUILD_RUSTC`, `CMAKE_C_COMPILER`)
+  via env overrides on approved host exec requests"
+date: "2026-04-03"
+pubdate: "2026-04-03"
+affected_range: "<2026.3.31"
+fixed_versions:
+- "2026.3.31"
+affected_versions: "All versions before 2026.3.31"
+not_impacted: "All versions starting from 2026.3.31"
+solution: "Upgrade to version 2026.3.31 or above."
+urls:
+- "https://github.com/advisories/GHSA-g8xp-qx39-9jq9"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-g8xp-qx39-9jq9"
+- "https://github.com/openclaw/openclaw/commit/e277a37f896b5011a1df06e6490c6630074d0afa"
+- "https://github.com/openclaw/openclaw"
+- "https://github.com/openclaw/openclaw/releases/tag/v2026.3.31"
+cvss_v3: "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:L/AC:H/AT:P/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+uuid: "c57e8746-0bd5-4393-ba41-74b819b3e91f"
+cwe_ids:
+- "CWE-427"
+- "CWE-937"
+- "CWE-1035"

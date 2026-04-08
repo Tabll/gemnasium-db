@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-wwfp-w96m-c6x8"
+identifiers:
+- "GHSA-wwfp-w96m-c6x8"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Pairing pending-request caps were enforced per channel instead of
+  per account"
+description: "Before OpenClaw 2026.3.31, pending pairing-request caps were enforced
+  per channel file instead of per account. On multi-account channel setups, requests
+  from other accounts could fill the shared pending window and block new pairing challenges
+  on an unaffected account."
+date: "2026-04-07"
+pubdate: "2026-04-07"
+affected_range: ">=2026.2.26 <2026.3.31"
+fixed_versions:
+- "2026.3.31"
+affected_versions: "All versions starting from 2026.2.26 before 2026.3.31"
+not_impacted: "All versions before 2026.2.26, all versions starting from 2026.3.31"
+solution: "Upgrade to version 2026.3.31 or above."
+urls:
+- "https://github.com/advisories/GHSA-wwfp-w96m-c6x8"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-wwfp-w96m-c6x8"
+- "https://github.com/openclaw/openclaw/commit/9bc1f896c8cd325dd4761681e9bdb8c425f69785"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:L/SC:N/SI:N/SA:N"
+uuid: "77ec8805-3732-4dcd-9996-e7638048e139"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

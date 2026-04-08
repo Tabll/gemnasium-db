@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-gmpc-fxg2-vcmq"
+identifiers:
+- "GHSA-gmpc-fxg2-vcmq"
+package_slug: "packagist/wwbn/avideo"
+title: "AVideo has Stored XSS via Unescaped Menu Item Fields in TopMenu Plugin"
+description: "The TopMenu plugin renders menu item fields (icon classes, URLs, and
+  text labels) directly into HTML without applying `htmlspecialchars()` or any other
+  output encoding. Since menu items are rendered on every public page through plugin
+  hooks, a single malicious menu entry results in stored cross-site scripting that
+  executes for every visitor to the site. An admin user who is tricked into saving
+  a crafted menu item (or an attacker who gains admin access) can compromise all site
+  visitors."
+date: "2026-04-01"
+pubdate: "2026-04-01"
+affected_range: "<=26.0"
+fixed_versions: []
+affected_versions: "All versions up to 26.0"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-gmpc-fxg2-vcmq"
+- "https://github.com/WWBN/AVideo/security/advisories/GHSA-gmpc-fxg2-vcmq"
+- "https://github.com/WWBN/AVideo"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+uuid: "aa4598f5-a515-49c2-b692-4648ef89048c"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

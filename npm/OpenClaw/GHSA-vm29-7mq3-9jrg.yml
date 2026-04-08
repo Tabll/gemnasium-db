@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-vm29-7mq3-9jrg"
+identifiers:
+- "GHSA-vm29-7mq3-9jrg"
+package_slug: "npm/OpenClaw"
+title: "Duplicate Advisory: OpenClaw: Unavailable local auth SecretRefs could fall
+  through to remote credentials in local mode"
+description: "### Duplicate Advisory\nThis advisory has been withdrawn because it
+  is a duplicate of GHSA-qvr7-g57c-mrc7. This link is maintained to preserve external
+  references.\n\n### Original Description\nOpenClaw before 2026.3.11 contains a credential
+  fallback vulnerability where unavailable local gateway.auth.token and gateway.auth.password
+  SecretRefs are treated as unset, allowing fallback to remote credentials in local
+  mode. Attackers can exploit misconfigured local auth references to cause CLI and
+  helper paths to select incorrect credential sources, potentially bypassing intended
+  local authentication boundaries."
+date: "2026-04-07"
+pubdate: "2026-03-31"
+affected_range: "<2026.3.11"
+fixed_versions:
+- "2026.3.11"
+affected_versions: "All versions before 2026.3.11"
+not_impacted: "All versions starting from 2026.3.11"
+solution: "Upgrade to version 2026.3.11 or above."
+urls:
+- "https://github.com/advisories/GHSA-vm29-7mq3-9jrg"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-qvr7-g57c-mrc7"
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-32970"
+- "https://www.vulncheck.com/advisories/openclaw-credential-fallback-logic-bypass-via-unavailable-local-auth-secretrefs"
+cvss_v3: "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:L/AC:H/AT:N/PR:L/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N"
+uuid: "5697be52-2760-46fc-ad9e-7c75f5e65810"
+cwe_ids:
+- "CWE-636"
+- "CWE-937"
+- "CWE-1035"

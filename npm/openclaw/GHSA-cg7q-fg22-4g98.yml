@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-cg7q-fg22-4g98"
+identifiers:
+- "GHSA-cg7q-fg22-4g98"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Host exec environment sanitization misses package, registry, Docker,
+  compiler, and TLS override variables"
+description: "Host exec environment sanitization misses package, registry, Docker,
+  compiler, and TLS override variables"
+date: "2026-04-03"
+pubdate: "2026-04-03"
+affected_range: "<2026.3.31"
+fixed_versions:
+- "2026.3.31"
+affected_versions: "All versions before 2026.3.31"
+not_impacted: "All versions starting from 2026.3.31"
+solution: "Upgrade to version 2026.3.31 or above."
+urls:
+- "https://github.com/advisories/GHSA-cg7q-fg22-4g98"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-cg7q-fg22-4g98"
+- "https://github.com/openclaw/openclaw/commit/eb8de6715f02949c21c4e895fffc8a6dcb00975c"
+- "https://github.com/openclaw/openclaw"
+- "https://github.com/openclaw/openclaw/releases/tag/v2026.3.31"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N"
+uuid: "f8a553e0-a731-450c-b95d-87a59ef98b4b"
+cwe_ids:
+- "CWE-184"
+- "CWE-937"
+- "CWE-1035"

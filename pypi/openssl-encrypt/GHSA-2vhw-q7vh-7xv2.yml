@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-2vhw-q7vh-7xv2"
+identifiers:
+- "GHSA-2vhw-q7vh-7xv2"
+package_slug: "pypi/openssl-encrypt"
+title: "openssl-encrypt's readiness endpoint leaks database error details to unauthenticated
+  callers"
+description: "The `/ready` endpoint in `openssl_encrypt_server/server.py` at **lines
+  159-175** catches database errors and returns the full exception string in the response."
+date: "2026-04-01"
+pubdate: "2026-04-01"
+affected_range: "<1.4.0"
+fixed_versions:
+- "1.4.0"
+affected_versions: "All versions before 1.4.0"
+not_impacted: "All versions starting from 1.4.0"
+solution: "Upgrade to version 1.4.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-2vhw-q7vh-7xv2"
+- "https://github.com/jahlives/openssl_encrypt/security/advisories/GHSA-2vhw-q7vh-7xv2"
+- "https://github.com/jahlives/openssl_encrypt/commit/7aa8787f4de2e9a23f58fca067bb16c4c69d28bb"
+- "https://github.com/jahlives/openssl_encrypt"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N"
+uuid: "bb058e82-385d-496d-8aa6-3edb255d7e44"
+cwe_ids:
+- "CWE-201"
+- "CWE-937"
+- "CWE-1035"

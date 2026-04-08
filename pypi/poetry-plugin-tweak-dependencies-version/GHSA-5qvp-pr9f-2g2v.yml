@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-5qvp-pr9f-2g2v"
+identifiers:
+- "GHSA-5qvp-pr9f-2g2v"
+package_slug: "pypi/poetry-plugin-tweak-dependencies-version"
+title: "poetry-plugin-tweak-dependencies-version affected by CVE-2026-25645"
+description: "Pin vulnerable version of requests library"
+date: "2026-04-01"
+pubdate: "2026-04-01"
+affected_range: "<1.5.6"
+fixed_versions:
+- "1.5.6"
+affected_versions: "All versions before 1.5.6"
+not_impacted: "All versions starting from 1.5.6"
+solution: "Upgrade to version 1.5.6 or above."
+urls:
+- "https://github.com/advisories/GHSA-5qvp-pr9f-2g2v"
+- "https://github.com/psf/requests/security/advisories/GHSA-gc5v-m9x4-r6x2"
+- "https://github.com/sbrunner/poetry-plugin-tweak-dependencies-version/security/advisories/GHSA-5qvp-pr9f-2g2v"
+- "https://github.com/sbrunner/poetry-plugin-tweak-dependencies-version/commit/54b5784d89f36cd413a8bc5032ab0a96438dcae3"
+- "https://github.com/sbrunner/poetry-plugin-tweak-dependencies-version"
+- "https://github.com/sbrunner/poetry-plugin-tweak-dependencies-version/releases/tag/1.5.6"
+cvss_v3: "CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:N/I:H/A:N"
+uuid: "8b4788cb-ed47-4020-9094-eb87ffa28a4c"
+cwe_ids:
+- "CWE-377"
+- "CWE-937"
+- "CWE-1035"

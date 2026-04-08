@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-89gg-p5r5-q6r4"
+identifiers:
+- "GHSA-89gg-p5r5-q6r4"
+package_slug: "pypi/monai"
+title: "MONAI: Unsafe functions lead to pickle deserialization rce"
+description: "The `algo_from_pickle` function in `monai/auto3dseg/utils.py` causes
+  `pickle.loads(data_bytes)` to be executed, and it does not perform any validation
+  on the input parameters. This ultimately leads to insecure deserialization and can
+  result in code execution vulnerabilities."
+date: "2026-04-07"
+pubdate: "2026-04-07"
+affected_range: "<1.5.2"
+fixed_versions:
+- "1.5.2"
+affected_versions: "All versions before 1.5.2"
+not_impacted: "All versions starting from 1.5.2"
+solution: "Upgrade to version 1.5.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-89gg-p5r5-q6r4"
+- "https://github.com/Project-MONAI/MONAI/security/advisories/GHSA-89gg-p5r5-q6r4"
+- "https://github.com/Project-MONAI/MONAI"
+- "https://github.com/Project-MONAI/MONAI/releases/tag/1.5.2"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:H/UI:R/S:C/C:H/I:H/A:H"
+uuid: "7cb19490-bafa-46b4-9d18-925665abc3fe"
+cwe_ids:
+- "CWE-502"
+- "CWE-937"
+- "CWE-1035"

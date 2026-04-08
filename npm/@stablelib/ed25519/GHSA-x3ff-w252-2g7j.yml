@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-x3ff-w252-2g7j"
+identifiers:
+- "GHSA-x3ff-w252-2g7j"
+package_slug: "npm/@stablelib/ed25519"
+title: "StableLib Ed25519 Signature Malleability via Missing S < L Check"
+description: "- **Signature malleability**: Given any valid signature, an attacker
+  can produce a second distinct valid signature for the same message without knowing
+  the private key\n- **Transaction ID collision**: Applications using signature bytes
+  as unique identifiers (e.g., blockchain transaction IDs) are vulnerable to replay/double-spend
+  attacks\n- **Deduplication bypass**: Systems deduplicating by signature value accept
+  the same message twice with different \"signatures\"\n- **Same vulnerability class**
+  as node-forge CVE-2026-33895 (GHSA-q67f-28xg-22rw), rated HIGH"
+date: "2026-04-07"
+pubdate: "2026-04-01"
+affected_range: "<=2.0.2"
+fixed_versions: []
+affected_versions: "All versions up to 2.0.2"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-x3ff-w252-2g7j"
+- "https://github.com/StableLib/stablelib/security/advisories/GHSA-x3ff-w252-2g7j"
+- "https://github.com/StableLib/stablelib"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+uuid: "4bf7f616-b3e6-4336-b6f7-c107245008ea"
+cwe_ids:
+- "CWE-347"
+- "CWE-937"
+- "CWE-1035"

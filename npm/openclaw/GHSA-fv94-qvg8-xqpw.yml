@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-fv94-qvg8-xqpw"
+identifiers:
+- "GHSA-fv94-qvg8-xqpw"
+package_slug: "npm/openclaw"
+title: "OpenClaw: SSH sandbox tar upload follows symlinks, enabling arbitrary file
+  write on remote host"
+description: "SSH sandbox tar upload follows symlinks, enabling arbitrary file write
+  on remote host"
+date: "2026-04-02"
+pubdate: "2026-04-02"
+affected_range: "<2026.3.31"
+fixed_versions:
+- "2026.3.31"
+affected_versions: "All versions before 2026.3.31"
+not_impacted: "All versions starting from 2026.3.31"
+solution: "Upgrade to version 2026.3.31 or above."
+urls:
+- "https://github.com/advisories/GHSA-fv94-qvg8-xqpw"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-fv94-qvg8-xqpw"
+- "https://github.com/openclaw/openclaw/commit/3d5af14984ac1976c747a8e11581d697bd0829dc"
+- "https://github.com/openclaw/openclaw"
+- "https://github.com/openclaw/openclaw/releases/tag/v2026.3.31"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:N/VI:H/VA:H/SC:N/SI:N/SA:N"
+uuid: "7ff01465-79fb-46b2-a2db-451ccd59cd1e"
+cwe_ids:
+- "CWE-59"
+- "CWE-61"
+- "CWE-937"
+- "CWE-1035"

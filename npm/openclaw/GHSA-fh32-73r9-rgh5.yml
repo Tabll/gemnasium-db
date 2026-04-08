@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-fh32-73r9-rgh5"
+identifiers:
+- "GHSA-fh32-73r9-rgh5"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Trailing-dot localhost CDP hosts could bypass remote loopback protections"
+description: "Before OpenClaw 2026.4.2, remote CDP discovery could return a trailing-dot
+  localhost host such as `localhost.` and bypass OpenClaw's loopback-host normalization.
+  That let a non-loopback remote CDP profile pivot the follow-up connection back onto
+  localhost."
+date: "2026-04-07"
+pubdate: "2026-04-07"
+affected_range: "<2026.4.2"
+fixed_versions:
+- "2026.4.2"
+affected_versions: "All versions before 2026.4.2"
+not_impacted: "All versions starting from 2026.4.2"
+solution: "Upgrade to version 2026.4.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-fh32-73r9-rgh5"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-fh32-73r9-rgh5"
+- "https://github.com/openclaw/openclaw/commit/9c22d636697336a6b22b0ae24798d8b8325d7828"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N"
+uuid: "b210b9d6-b117-4445-8bdc-421a281d3657"
+cwe_ids:
+- "CWE-20"
+- "CWE-937"
+- "CWE-1035"

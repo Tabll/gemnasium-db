@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-vjqw-w5jr-g9w5"
+identifiers:
+- "GHSA-vjqw-w5jr-g9w5"
+package_slug: "npm/openclaw"
+title: "Duplicate Advisory: OpenClaw: Feishu webhook mode accepted forged events when
+  only `verificationToken` was configured"
+description: "### Duplicate Advisory\nThis advisory has been withdrawn because it
+  is a duplicate of GHSA-g353-mgv3-8pcj. This link is maintained to preserve external
+  references.\n\n### Original Description\nOpenClaw before 2026.3.12 contains an authentication
+  bypass vulnerability in Feishu webhook mode when only verificationToken is configured
+  without encryptKey, allowing acceptance of forged events. Unauthenticated network
+  attackers can inject forged Feishu events and trigger downstream tool execution
+  by reaching the webhook endpoint."
+date: "2026-04-06"
+pubdate: "2026-03-29"
+affected_range: "<2026.3.12"
+fixed_versions:
+- "2026.3.12"
+affected_versions: "All versions before 2026.3.12"
+not_impacted: "All versions starting from 2026.3.12"
+solution: "Upgrade to version 2026.3.12 or above."
+urls:
+- "https://github.com/advisories/GHSA-vjqw-w5jr-g9w5"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-g353-mgv3-8pcj"
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-32974"
+- "https://www.vulncheck.com/advisories/openclaw-forged-event-injection-via-feishu-webhook-verification-token"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:H/A:L"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:H/VA:L/SC:N/SI:N/SA:N"
+uuid: "44446701-ab69-4f2a-b507-dbfce9b288ac"
+cwe_ids:
+- "CWE-347"
+- "CWE-937"
+- "CWE-1035"

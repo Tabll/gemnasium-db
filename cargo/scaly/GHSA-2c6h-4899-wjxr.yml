@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-2c6h-4899-wjxr"
+identifiers:
+- "GHSA-2c6h-4899-wjxr"
+package_slug: "cargo/scaly"
+title: "scaly: Multiple soundness issues in Rust safe APIs"
+description: "Affected versions contain multiple safe APIs that can trigger undefined
+  behavior:\n\n- `Array<T>::index` can perform an out-of-bounds read.\n- `String::get_length`
+  can perform an out-of-bounds read.\n- `String::append_character` can perform an
+  invalid write.\n- `String::to_c_string` can perform an out-of-bounds write.\n\nThese
+  issues were reproduced against `scaly` 0.0.37 under Miri. The crate is unmaintained."
+date: "2026-04-04"
+pubdate: "2026-04-04"
+affected_range: "<=0.0.37"
+fixed_versions: []
+affected_versions: "All versions up to 0.0.37"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-2c6h-4899-wjxr"
+- "https://github.com/rustsec/advisory-db/issues/2594"
+- "https://github.com/rschleitzer/Scaly"
+- "https://rustsec.org/advisories/RUSTSEC-2026-0080.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+uuid: "d58a618f-d807-4fcb-acb0-d194d5e18575"
+cwe_ids:
+- "CWE-125"
+- "CWE-787"
+- "CWE-937"
+- "CWE-1035"

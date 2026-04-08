@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-rm5c-4rmf-vvhw"
+identifiers:
+- "GHSA-rm5c-4rmf-vvhw"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Sandbox file operations use check-then-act, bypassing fd-based TOCTOU
+  defenses"
+description: "Sandbox file operations use check-then-act, bypassing fd-based TOCTOU
+  defenses"
+date: "2026-04-03"
+pubdate: "2026-04-03"
+affected_range: "<2026.3.31"
+fixed_versions:
+- "2026.3.31"
+affected_versions: "All versions before 2026.3.31"
+not_impacted: "All versions starting from 2026.3.31"
+solution: "Upgrade to version 2026.3.31 or above."
+urls:
+- "https://github.com/advisories/GHSA-rm5c-4rmf-vvhw"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-rm5c-4rmf-vvhw"
+- "https://github.com/openclaw/openclaw/commit/32a4a47d602e0618f87b3e59f94d8c142767f860"
+- "https://github.com/openclaw/openclaw"
+- "https://github.com/openclaw/openclaw/releases/tag/v2026.3.31"
+uuid: "24aa957b-6223-46cc-b8ea-9de4c84b7f47"
+cwe_ids:
+- "CWE-367"
+- "CWE-937"
+- "CWE-1035"

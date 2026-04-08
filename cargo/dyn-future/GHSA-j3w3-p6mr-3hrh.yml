@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-j3w3-p6mr-3hrh"
+identifiers:
+- "GHSA-j3w3-p6mr-3hrh"
+package_slug: "cargo/dyn-future"
+title: "DynFuture Drop Can Construct a Dangling Reference"
+description: "DynFuture is unsound because its Drop implementation transmutes a trait-object
+  reference into unrelated reference types, which constructs an invalid reference
+  from trait object metadata.\n\nThis issue was reproduced against `dyn-future` 3.0.4
+  under Miri. The crate is unmaintained."
+date: "2026-04-04"
+pubdate: "2026-04-04"
+affected_range: "<=3.0.4"
+fixed_versions: []
+affected_versions: "All versions up to 3.0.4"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-j3w3-p6mr-3hrh"
+- "https://github.com/rustsec/advisory-db/issues/2595"
+- "https://github.com/xacrimon/dyn-future"
+- "https://rustsec.org/advisories/RUSTSEC-2026-0079.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "6aea2244-7079-45b8-bbb9-fdca13fe9736"
+cwe_ids:
+- "CWE-843"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-f6pf-4gjx-c94r"
+identifiers:
+- "GHSA-f6pf-4gjx-c94r"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Media Parsing Path Traversal Leads to Arbitrary File Read"
+description: "OpenClaw <= 2026.3.24 Media Parsing Path Traversal to Arbitrary File
+  Read"
+date: "2026-04-03"
+pubdate: "2026-04-03"
+affected_range: "<2026.3.28"
+fixed_versions:
+- "2026.3.28"
+affected_versions: "All versions before 2026.3.28"
+not_impacted: "All versions starting from 2026.3.28"
+solution: "Upgrade to version 2026.3.28 or above."
+urls:
+- "https://github.com/advisories/GHSA-f6pf-4gjx-c94r"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-f6pf-4gjx-c94r"
+- "https://github.com/openclaw/openclaw/commit/4797bbc5b96e2cca5532e43b58915c051746fe37"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N"
+uuid: "a92a2e8a-98c7-4c30-b6fb-1dfd17e0785a"
+cwe_ids:
+- "CWE-22"
+- "CWE-937"
+- "CWE-1035"

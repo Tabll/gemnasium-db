@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-g5cg-8x5w-7jpm"
+identifiers:
+- "GHSA-g5cg-8x5w-7jpm"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Heartbeat context inheritance bypasses sandbox via senderIsOwner
+  escalation"
+description: "Heartbeat context inheritance bypasses sandbox via senderIsOwner escalation"
+date: "2026-04-02"
+pubdate: "2026-04-02"
+affected_range: "<2026.3.31"
+fixed_versions:
+- "2026.3.31"
+affected_versions: "All versions before 2026.3.31"
+not_impacted: "All versions starting from 2026.3.31"
+solution: "Upgrade to version 2026.3.31 or above."
+urls:
+- "https://github.com/advisories/GHSA-g5cg-8x5w-7jpm"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-g5cg-8x5w-7jpm"
+- "https://github.com/openclaw/openclaw/commit/a30214a624946fc5c85c9558a27c1580172374fd"
+- "https://github.com/openclaw/openclaw"
+- "https://github.com/openclaw/openclaw/releases/tag/v2026.3.31"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H"
+uuid: "88d7cf5f-bd1f-4553-9885-2ba72dac020a"
+cwe_ids:
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

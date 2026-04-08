@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-rxmx-g7hr-8mx4"
+identifiers:
+- "GHSA-rxmx-g7hr-8mx4"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Zalo replay dedupe keys could suppress messages across chats or
+  senders"
+description: "Before OpenClaw 2026.4.2, Zalo webhook replay dedupe keys were not scoped
+  strongly enough across chat and sender dimensions. Legitimate events from different
+  conversations or senders could collide and be dropped as duplicates."
+date: "2026-04-07"
+pubdate: "2026-04-07"
+affected_range: "<2026.4.2"
+fixed_versions:
+- "2026.4.2"
+affected_versions: "All versions before 2026.4.2"
+not_impacted: "All versions starting from 2026.4.2"
+solution: "Upgrade to version 2026.4.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-rxmx-g7hr-8mx4"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-rxmx-g7hr-8mx4"
+- "https://github.com/openclaw/openclaw/commit/ef7c553dd16ee579f1d1a363f5881a99726c1412"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L"
+cvss_v4: "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N"
+uuid: "965a2286-d0ec-4715-8605-d191fced1ca9"
+cwe_ids:
+- "CWE-349"
+- "CWE-440"
+- "CWE-937"
+- "CWE-1035"

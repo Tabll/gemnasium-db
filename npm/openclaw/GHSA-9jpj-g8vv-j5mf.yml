@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-9jpj-g8vv-j5mf"
+identifiers:
+- "GHSA-9jpj-g8vv-j5mf"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Gemini OAuth exposed the PKCE verifier through the OAuth state parameter"
+description: "Before OpenClaw 2026.4.2, the Gemini OAuth flow reused the PKCE verifier
+  as the OAuth `state` value. Because the provider reflected `state` back in the redirect
+  URL, the verifier could be exposed alongside the authorization code."
+date: "2026-04-04"
+pubdate: "2026-04-04"
+affected_range: "<2026.4.2"
+fixed_versions:
+- "2026.4.2"
+affected_versions: "All versions before 2026.4.2"
+not_impacted: "All versions starting from 2026.4.2"
+solution: "Upgrade to version 2026.4.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-9jpj-g8vv-j5mf"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-9jpj-g8vv-j5mf"
+- "https://github.com/openclaw/openclaw/commit/a26f4d0f3ef0757db6c6c40277cc06a5de76c52f"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:A/VC:H/VI:N/VA:N/SC:H/SI:H/SA:N"
+uuid: "e1f87a5e-dd00-456a-b23a-1161445cd3cc"
+cwe_ids:
+- "CWE-345"
+- "CWE-937"
+- "CWE-1035"

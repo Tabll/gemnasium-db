@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-ch86-pxr9-j9h9"
+identifiers:
+- "GHSA-ch86-pxr9-j9h9"
+package_slug: "npm/openclaw"
+title: "Duplicate Advisory: OpenClaw: Gemini OAuth exposed the PKCE verifier through
+  the OAuth state parameter"
+description: "### Duplicate Advisory\nThis advisory has been withdrawn because it
+  is a duplicate of GHSA-9jpj-g8vv-j5mf. This link is maintained to preserve external
+  references.\n\n### Original Description\nOpenClaw before 2026.4.2 reuses the PKCE
+  verifier as the OAuth state parameter in the Gemini OAuth flow, exposing it through
+  the redirect URL. Attackers who capture the redirect URL can obtain both the authorization
+  code and PKCE verifier, defeating PKCE protection and enabling token redemption."
+date: "2026-04-07"
+pubdate: "2026-04-03"
+affected_range: "<2026.4.2"
+fixed_versions:
+- "2026.4.2"
+affected_versions: "All versions before 2026.4.2"
+not_impacted: "All versions starting from 2026.4.2"
+solution: "Upgrade to version 2026.4.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-ch86-pxr9-j9h9"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-9jpj-g8vv-j5mf"
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-34511"
+- "https://github.com/openclaw/openclaw/commit/a26f4d0f3ef0757db6c6c40277cc06a5de76c52f"
+- "https://www.vulncheck.com/advisories/openclaw-pkce-verifier-exposure-via-oauth-state-parameter"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N"
+uuid: "52862000-a96a-445a-81b3-f59f4a2e4e5b"
+cwe_ids:
+- "CWE-330"
+- "CWE-937"
+- "CWE-1035"

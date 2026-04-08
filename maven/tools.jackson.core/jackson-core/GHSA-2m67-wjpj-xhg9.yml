@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-2m67-wjpj-xhg9"
+identifiers:
+- "GHSA-2m67-wjpj-xhg9"
+package_slug: "maven/tools.jackson.core/jackson-core"
+title: "Jackson Core: Document length constraint bypass in blocking, async, and DataInput
+  parsers"
+description: "Jackson Core 3.x does not consistently enforce `StreamReadConstraints.maxDocumentLength`.
+  Oversized JSON documents can be accepted without a `StreamConstraintsException`
+  in multiple parser entry points, which allows configured size limits to be bypassed
+  and weakens denial-of-service protections."
+date: "2026-04-04"
+pubdate: "2026-04-04"
+affected_range: "[3.0.0,3.1.0]"
+fixed_versions: []
+affected_versions: "All versions starting from 3.0.0 up to 3.1.0"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-2m67-wjpj-xhg9"
+- "https://github.com/FasterXML/jackson-core/security/advisories/GHSA-2m67-wjpj-xhg9"
+- "https://github.com/FasterXML/jackson-core"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "4e0cbf8d-7ebe-4662-beed-12ccf4b04c7f"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

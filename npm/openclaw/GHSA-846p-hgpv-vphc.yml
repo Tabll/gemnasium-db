@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-846p-hgpv-vphc"
+identifiers:
+- "GHSA-846p-hgpv-vphc"
+package_slug: "npm/openclaw"
+title: "OpenClaw: QQ Bot structured payloads could read arbitrary local files"
+description: "Before OpenClaw 2026.4.2, QQ Bot structured media payloads could read
+  local files from attacker-chosen paths. A crafted structured payload could escape
+  QQ Bot-owned media roots and cause arbitrary file reads on the host."
+date: "2026-04-07"
+pubdate: "2026-04-07"
+affected_range: "<2026.4.2"
+fixed_versions:
+- "2026.4.2"
+affected_versions: "All versions before 2026.4.2"
+not_impacted: "All versions starting from 2026.4.2"
+solution: "Upgrade to version 2026.4.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-846p-hgpv-vphc"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-846p-hgpv-vphc"
+- "https://github.com/openclaw/openclaw/commit/2c45b06afdd6f7c621038b5419d8e661cff34a7f"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N"
+uuid: "ff055bea-959f-4474-8400-06e127138636"
+cwe_ids:
+- "CWE-22"
+- "CWE-937"
+- "CWE-1035"

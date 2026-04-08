@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-gjm7-hw8f-73rq"
+identifiers:
+- "GHSA-gjm7-hw8f-73rq"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Paired node escalates to gateway RCE via unrestricted node.event
+  agent dispatch"
+description: "Paired node escalates to gateway RCE via unrestricted node.event agent
+  dispatch"
+date: "2026-04-03"
+pubdate: "2026-04-03"
+affected_range: "<2026.3.31"
+fixed_versions:
+- "2026.3.31"
+affected_versions: "All versions before 2026.3.31"
+not_impacted: "All versions starting from 2026.3.31"
+solution: "Upgrade to version 2026.3.31 or above."
+urls:
+- "https://github.com/advisories/GHSA-gjm7-hw8f-73rq"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-gjm7-hw8f-73rq"
+- "https://github.com/openclaw/openclaw/commit/a77928b1087e90f2a8903f8e5aca6dec9237ac62"
+- "https://github.com/openclaw/openclaw"
+- "https://github.com/openclaw/openclaw/releases/tag/v2026.3.31"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+uuid: "016043f0-5350-4794-a018-8823046ba42b"
+cwe_ids:
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-42mx-vp8m-j7qh"
+identifiers:
+- "GHSA-42mx-vp8m-j7qh"
+package_slug: "npm/openclaw"
+title: "OpenClaw: OpenShell `mirror` mode can convert untrusted sandbox files into
+  explicitly enabled workspace hooks and execute them on the host during gateway startup"
+description: "OpenShell `mirror` mode can convert untrusted sandbox files into explicitly
+  enabled workspace hooks and execute them on the host during gateway startup"
+date: "2026-04-07"
+pubdate: "2026-04-07"
+affected_range: "<2026.3.28"
+fixed_versions:
+- "2026.3.28"
+affected_versions: "All versions before 2026.3.28"
+not_impacted: "All versions starting from 2026.3.28"
+solution: "Upgrade to version 2026.3.28 or above."
+urls:
+- "https://github.com/advisories/GHSA-42mx-vp8m-j7qh"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-42mx-vp8m-j7qh"
+- "https://github.com/openclaw/openclaw/commit/c02ee8a3a4cb390b23afdf21317aa8b2096854d1"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "88f6bebb-b37d-4638-be41-2d1f71f3b621"
+cwe_ids:
+- "CWE-829"
+- "CWE-937"
+- "CWE-1035"

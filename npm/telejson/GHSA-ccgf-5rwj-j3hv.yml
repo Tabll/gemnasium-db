@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-ccgf-5rwj-j3hv"
+identifiers:
+- "GHSA-ccgf-5rwj-j3hv"
+package_slug: "npm/telejson"
+title: "TeleJSON: DOM XSS via unsanitised constructor name in `new Function()`"
+description: "telejson versions prior to 6.0.0 (released 2022) are vulnerable to DOM-based
+  Cross-Site Scripting (XSS) through unsafe deserialisation. Attacker-controlled input
+  from the `_constructor-name_` property in parsed JSON is passed directly to `new
+  Function()` without sanitisation, allowing arbitrary JavaScript execution."
+date: "2026-04-02"
+pubdate: "2026-04-02"
+affected_range: "<6.0.0"
+fixed_versions:
+- "6.0.0"
+affected_versions: "All versions before 6.0.0"
+not_impacted: "All versions starting from 6.0.0"
+solution: "Upgrade to version 6.0.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-ccgf-5rwj-j3hv"
+- "https://github.com/storybookjs/telejson/security/advisories/GHSA-ccgf-5rwj-j3hv"
+- "https://github.com/storybookjs/telejson"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "ae439b1c-ac03-46e9-b64b-4a9b3c147337"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

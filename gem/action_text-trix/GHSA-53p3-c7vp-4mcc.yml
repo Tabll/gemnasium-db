@@ -17,7 +17,7 @@ description: "The Trix editor, in versions prior to 2.1.18, is vulnerable to XSS
   attacker-controlled content into the editor). Applications using server-side HTML
   sanitization (such as Rails' built-in sanitizer) are additionally protected, as
   the payload is neutralized on save."
-date: "2026-03-29"
+date: "2026-04-01"
 pubdate: "2026-03-29"
 affected_range: "<2.1.18"
 fixed_versions:
@@ -31,6 +31,7 @@ urls:
 - "https://github.com/basecamp/trix/commit/9c0a993d9fc2ffe9d56b013b030bc238f9c0557c"
 - "https://github.com/basecamp/trix"
 - "https://github.com/basecamp/trix/releases/tag/v2.1.18"
+- "https://github.com/rubysec/ruby-advisory-db/blob/master/gems/action_text-trix/GHSA-53p3-c7vp-4mcc.yml"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N"
 cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
 uuid: "b3164826-dcb9-496b-b058-a5084762d2cc"

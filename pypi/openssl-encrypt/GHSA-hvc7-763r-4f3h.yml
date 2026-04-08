@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-hvc7-763r-4f3h"
+identifiers:
+- "GHSA-hvc7-763r-4f3h"
+package_slug: "pypi/openssl-encrypt"
+title: "openssl-encrypt has no owner verification on key revocation — any client can
+  revoke any key"
+description: "The `revoke_key` method in `openssl_encrypt_server/modules/keyserver/service.py`
+  at **lines 195-270** accepts a `client_id` parameter but never verifies that the
+  requesting client is the same as `key.owner_client_id`."
+date: "2026-04-01"
+pubdate: "2026-04-01"
+affected_range: "<1.4.0"
+fixed_versions:
+- "1.4.0"
+affected_versions: "All versions before 1.4.0"
+not_impacted: "All versions starting from 1.4.0"
+solution: "Upgrade to version 1.4.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-hvc7-763r-4f3h"
+- "https://github.com/jahlives/openssl_encrypt/security/advisories/GHSA-hvc7-763r-4f3h"
+- "https://github.com/jahlives/openssl_encrypt/commit/05e45f393886b5bf7e924d2dd42099a9dd37f91d"
+- "https://github.com/jahlives/openssl_encrypt"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N"
+uuid: "1cccb987-fee7-4e71-be5f-972aaaa779c1"
+cwe_ids:
+- "CWE-862"
+- "CWE-937"
+- "CWE-1035"
