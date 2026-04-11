@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-5gfj-64gh-mgmw"
+identifiers:
+- "GHSA-5gfj-64gh-mgmw"
+package_slug: "pypi/agixt"
+title: "AGiXT Vulnerable to Path Traversal in safe_join()"
+description: "The safe_join() function in the essential_abilities extension fails
+  to validate that resolved file paths remain within the designated agent workspace.
+  An authenticated attacker can use directory traversal sequences to read, write,
+  or delete arbitrary files on the server hosting the AGiXT instance."
+date: "2026-04-08"
+pubdate: "2026-04-08"
+affected_range: "<1.9.2"
+fixed_versions:
+- "1.9.2"
+affected_versions: "All versions before 1.9.2"
+not_impacted: "All versions starting from 1.9.2"
+solution: "Upgrade to version 1.9.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-5gfj-64gh-mgmw"
+- "https://github.com/Josh-XT/AGiXT/security/advisories/GHSA-5gfj-64gh-mgmw"
+- "https://github.com/Josh-XT/AGiXT"
+- "https://github.com/Josh-XT/AGiXT/releases/tag/v1.9.2"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+uuid: "445c1079-181c-4fda-b2c6-b0d9a08b2425"
+cwe_ids:
+- "CWE-22"
+- "CWE-937"
+- "CWE-1035"

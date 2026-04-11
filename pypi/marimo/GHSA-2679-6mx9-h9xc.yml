@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-2679-6mx9-h9xc"
+identifiers:
+- "GHSA-2679-6mx9-h9xc"
+package_slug: "pypi/marimo"
+title: "Marimo: Pre-Auth Remote Code Execution via Terminal WebSocket Authentication
+  Bypass"
+description: "Marimo (19.6k stars) has a Pre-Auth RCE vulnerability. The terminal
+  WebSocket endpoint `/terminal/ws` lacks authentication validation, allowing an unauthenticated
+  attacker to obtain a full PTY shell and execute arbitrary system commands.\n\nUnlike
+  other WebSocket endpoints (e.g., `/ws`) that correctly call `validate_auth()` for
+  authentication, the `/terminal/ws` endpoint only checks the running mode and platform
+  support before accepting connections, completely skipping authentication verification."
+date: "2026-04-08"
+pubdate: "2026-04-08"
+affected_range: "<0.23.0"
+fixed_versions:
+- "0.23.0"
+affected_versions: "All versions before 0.23.0"
+not_impacted: "All versions starting from 0.23.0"
+solution: "Upgrade to version 0.23.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-2679-6mx9-h9xc"
+- "https://github.com/marimo-team/marimo/security/advisories/GHSA-2679-6mx9-h9xc"
+- "https://github.com/marimo-team/marimo/pull/9098"
+- "https://github.com/marimo-team/marimo/commit/c24d4806398f30be6b12acd6c60d1d7c68cfd12a"
+- "https://github.com/marimo-team/marimo"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+uuid: "1a32e43a-b1e3-4c80-9c62-f297697e819e"
+cwe_ids:
+- "CWE-306"
+- "CWE-937"
+- "CWE-1035"

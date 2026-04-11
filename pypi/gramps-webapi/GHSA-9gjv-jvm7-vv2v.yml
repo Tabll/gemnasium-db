@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-9gjv-jvm7-vv2v"
+identifiers:
+- "GHSA-9gjv-jvm7-vv2v"
+package_slug: "pypi/gramps-webapi"
+title: "Gramps Web API: Private Sub-Object Data in Non-Private Objects Exposed to
+  Guest Users"
+description: "Users with the **Guest** role could receive private sub-object data
+  (e.g. private alternate names, private addresses, private note/citation/media handles)
+  through list API endpoints such as `GET /api/people/`, `GET /api/places/`, `GET
+  /api/events/`, and all other object list endpoints.\n\n**This does not expose objects
+  (people, places, events, …) that are themselves marked private.** Top-level private
+  objects are correctly excluded from all responses. Only sub-object data attached
+  to otherwise-public objects is affected."
+date: "2026-04-09"
+pubdate: "2026-04-09"
+affected_range: "<3.11.0"
+fixed_versions:
+- "3.11.0"
+affected_versions: "All versions before 3.11.0"
+not_impacted: "All versions starting from 3.11.0"
+solution: "Upgrade to version 3.11.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-9gjv-jvm7-vv2v"
+- "https://github.com/gramps-project/gramps-web-api/security/advisories/GHSA-9gjv-jvm7-vv2v"
+- "https://github.com/gramps-project/gramps-web-api"
+- "https://github.com/gramps-project/gramps-web-api/releases/tag/v3.11.0"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N"
+uuid: "e2bc3c4a-ee47-4801-acf3-61ed3ec09485"
+cwe_ids:
+- "CWE-200"
+- "CWE-937"
+- "CWE-1035"

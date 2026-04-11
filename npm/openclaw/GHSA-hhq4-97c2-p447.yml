@@ -5,7 +5,7 @@ identifiers:
 package_slug: "npm/openclaw"
 title: "OpenClaw: Zalo webhook replay cache cross-target messageId scope bypass"
 description: "Zalo webhook replay cache cross-target messageId scope bypass"
-date: "2026-04-02"
+date: "2026-04-09"
 pubdate: "2026-04-02"
 affected_range: "<2026.3.31"
 fixed_versions:

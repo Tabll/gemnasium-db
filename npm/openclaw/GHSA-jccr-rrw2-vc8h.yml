@@ -6,7 +6,7 @@ package_slug: "npm/openclaw"
 title: "OpenClaw safeBins jq `$ENV` filter bypass allows environment variable disclosure"
 description: "The jq safe-bin policy blocked explicit `env` usage but still allowed
   jq programs that accessed environment data through `$ENV`."
-date: "2026-03-31"
+date: "2026-04-08"
 pubdate: "2026-03-31"
 affected_range: "<2026.3.28"
 fixed_versions:
@@ -22,6 +22,7 @@ urls:
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N"
 uuid: "fba3c5ee-878e-4c2d-b8f0-e8b4e5811881"
 cwe_ids:
+- "CWE-185"
 - "CWE-200"
 - "CWE-937"
 - "CWE-1035"

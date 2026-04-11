@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-8j7f-g9gv-7jhc"
+identifiers:
+- "GHSA-8j7f-g9gv-7jhc"
+package_slug: "npm/openclaw"
+title: "Duplicate Advisory: OpenClaw: SSRF via Unguarded Configured Base URLs in Multiple
+  Channel Extensions (Incomplete Fix for CVE-2026-28476)"
+description: "### Duplicate Advisory\nThis advisory has been withdrawn because it
+  is a duplicate of GHSA-rhfg-j8jq-7v2h. This link is maintained to preserve external
+  references.\n\n### Original Description\nOpenClaw before 2026.3.25 contains a server-side
+  request forgery vulnerability in multiple channel extensions that fail to properly
+  guard configured base URLs against SSRF attacks. Attackers can exploit unprotected
+  fetch() calls against configured endpoints to rebind requests to blocked internal
+  destinations and access restricted resources."
+date: "2026-04-10"
+pubdate: "2026-04-10"
+affected_range: "<2026.3.28"
+fixed_versions:
+- "2026.3.28"
+affected_versions: "All versions before 2026.3.28"
+not_impacted: "All versions starting from 2026.3.28"
+solution: "Upgrade to version 2026.3.28 or above."
+urls:
+- "https://github.com/advisories/GHSA-8j7f-g9gv-7jhc"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-rhfg-j8jq-7v2h"
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-35629"
+- "https://github.com/openclaw/openclaw/commit/f92c92515bd439a71bd03eb1bc969c1964f17acf"
+- "https://www.vulncheck.com/advisories/openclaw-server-side-request-forgery-via-unguarded-configured-base-urls-in-channel-extensions"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:L"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:L/VA:N/SC:L/SI:L/SA:L"
+uuid: "d9d6be11-8b08-4d73-b670-2c8b20a041b7"
+cwe_ids:
+- "CWE-918"
+- "CWE-937"
+- "CWE-1035"

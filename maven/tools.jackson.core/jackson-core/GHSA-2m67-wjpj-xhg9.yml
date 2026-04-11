@@ -9,19 +9,22 @@ description: "Jackson Core 3.x does not consistently enforce `StreamReadConstrai
   Oversized JSON documents can be accepted without a `StreamConstraintsException`
   in multiple parser entry points, which allows configured size limits to be bypassed
   and weakens denial-of-service protections."
-date: "2026-04-04"
+date: "2026-04-08"
 pubdate: "2026-04-04"
-affected_range: "[3.0.0,3.1.0]"
-fixed_versions: []
-affected_versions: "All versions starting from 3.0.0 up to 3.1.0"
-not_impacted: ""
-solution: "Unfortunately, there is no solution available yet."
+affected_range: "[3.0.0,3.1.1)"
+fixed_versions:
+- "3.1.1"
+affected_versions: "All versions starting from 3.0.0 before 3.1.1"
+not_impacted: "All versions before 3.0.0, all versions starting from 3.1.1"
+solution: "Upgrade to version 3.1.1 or above."
 urls:
 - "https://github.com/advisories/GHSA-2m67-wjpj-xhg9"
 - "https://github.com/FasterXML/jackson-core/security/advisories/GHSA-2m67-wjpj-xhg9"
+- "https://github.com/FasterXML/jackson-core/commit/74c9ee255d1534c179bc7d3de48941bf39a9079c"
 - "https://github.com/FasterXML/jackson-core"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
 uuid: "4e0cbf8d-7ebe-4662-beed-12ccf4b04c7f"
 cwe_ids:
+- "CWE-770"
 - "CWE-937"
 - "CWE-1035"

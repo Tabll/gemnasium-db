@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-qwgj-rrpj-75xm"
+identifiers:
+- "GHSA-qwgj-rrpj-75xm"
+package_slug: "pypi/praisonai"
+title: "PraisonAI: Hardcoded `approval_mode=\"auto\"` in Chainlit UI Overrides Administrator
+  Configuration, Enabling Unapproved Shell Command Execution"
+description: "The Chainlit UI modules (`chat.py` and `code.py`) hardcode `config.approval_mode
+  = \"auto\"` after loading administrator configuration from the `PRAISON_APPROVAL_MODE`
+  environment variable, silently overriding any \"manual\" or \"scoped\" approval
+  setting. This defeats the human-in-the-loop approval gate for all ACP tool executions,
+  including shell command execution via `subprocess.run(..., shell=True)`. An authenticated
+  user can instruct the LLM agent to execute arbitrary single-command shell operations
+  on the server without any approval prompt."
+date: "2026-04-10"
+pubdate: "2026-04-10"
+affected_range: "<4.5.128"
+fixed_versions:
+- "4.5.128"
+affected_versions: "All versions before 4.5.128"
+not_impacted: "All versions starting from 4.5.128"
+solution: "Upgrade to version 4.5.128 or above."
+urls:
+- "https://github.com/advisories/GHSA-qwgj-rrpj-75xm"
+- "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-qwgj-rrpj-75xm"
+- "https://github.com/MervinPraison/PraisonAI"
+- "https://github.com/MervinPraison/PraisonAI/releases/tag/v4.5.128"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+uuid: "bf8a8dce-dbb0-4f05-89db-5044b6092eab"
+cwe_ids:
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

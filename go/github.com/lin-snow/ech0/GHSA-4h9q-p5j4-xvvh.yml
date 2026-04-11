@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-4h9q-p5j4-xvvh"
+identifiers:
+- "GHSA-4h9q-p5j4-xvvh"
+package_slug: "go/github.com/lin-snow/ech0"
+title: "Ech0: Scoped admin access tokens can bypass least-privilege controls on privileged
+  endpoints, including backup export"
+description: "Ech0 scoped access tokens do not reliably enforce least privilege: multiple
+  privileged admin routes omit scope checks, and the backup export handler strips
+  token scope metadata entirely, allowing a low-scope admin access token to reach
+  broader admin functionality than intended."
+date: "2026-04-10"
+pubdate: "2026-04-10"
+affected_range: "<4.3.5"
+fixed_versions:
+- "4.3.5"
+affected_versions: "All versions before 4.3.5"
+not_impacted: "All versions starting from 4.3.5"
+solution: "Upgrade to version 4.3.5 or above."
+urls:
+- "https://github.com/advisories/GHSA-4h9q-p5j4-xvvh"
+- "https://github.com/lin-snow/Ech0/security/advisories/GHSA-4h9q-p5j4-xvvh"
+- "https://github.com/lin-snow/Ech0"
+- "https://github.com/lin-snow/Ech0/releases/tag/v4.3.5"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:L"
+uuid: "824bdb69-8b1a-4134-8187-bd1d94efba19"
+cwe_ids:
+- "CWE-285"
+- "CWE-937"
+- "CWE-1035"

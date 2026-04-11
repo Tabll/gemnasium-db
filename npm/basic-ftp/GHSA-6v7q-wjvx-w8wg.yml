@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-6v7q-wjvx-w8wg"
+identifiers:
+- "GHSA-6v7q-wjvx-w8wg"
+package_slug: "npm/basic-ftp"
+title: "basic-ftp: Incomplete CRLF Injection Protection Allows Arbitrary FTP Command
+  Execution via Credentials and MKD Commands"
+description: "basic-ftp's CRLF injection protection (added in commit 2ecc8e2 for GHSA-chqc-8p9q-pq6q)
+  is incomplete. Two code paths bypass the `protectWhitespace()` control character
+  check: (1) the `login()` method directly concatenates user-supplied credentials
+  into USER/PASS FTP commands without any validation, and (2) the `_openDir()` method
+  sends an MKD command before `cd()` invokes `protectWhitespace()`, creating a TOCTOU
+  bypass. Both vectors allow an attacker who controls input to inject arbitrary FTP
+  commands into the control connection."
+date: "2026-04-10"
+pubdate: "2026-04-10"
+affected_range: "<5.2.2"
+fixed_versions:
+- "5.2.2"
+affected_versions: "All versions before 5.2.2"
+not_impacted: "All versions starting from 5.2.2"
+solution: "Upgrade to version 5.2.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-6v7q-wjvx-w8wg"
+- "https://github.com/patrickjuchli/basic-ftp/security/advisories/GHSA-6v7q-wjvx-w8wg"
+- "https://github.com/patrickjuchli/basic-ftp/commit/20327d35126e57e5fdbaae79a4b65222fbadc53c"
+- "https://github.com/patrickjuchli/basic-ftp"
+- "https://github.com/patrickjuchli/basic-ftp/releases/tag/v5.2.2"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:L"
+uuid: "19274c36-56cb-431e-b8e9-de72c42578ab"
+cwe_ids:
+- "CWE-93"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-q4gf-8mx6-v5v3"
+identifiers:
+- "GHSA-q4gf-8mx6-v5v3"
+package_slug: "npm/next"
+title: "Next.js has a Denial of Service with Server Components"
+description: "A vulnerability affects certain React Server Components packages for
+  versions 19.x and frameworks that use the affected packages, including Next.js 13.x,
+  14.x, 15.x, and 16.x using the App Router. The issue is tracked upstream as [CVE-2026-23869](https://github.com/facebook/react/security/advisories/GHSA-479c-33wc-g2pg).
+  You can read more about this advisory our [this changelog](https://vercel.com/changelog/summary-of-cve-2026-23869).\n\nA
+  specially crafted HTTP request can be sent to any App Router Server Function endpoint
+  that, when deserialized, may trigger excessive CPU usage. This can result in denial
+  of service in unpatched environments."
+date: "2026-04-10"
+pubdate: "2026-04-10"
+affected_range: ">=13.0.0 <15.5.15||>=16.0.0-beta.0 <16.2.3"
+fixed_versions:
+- "15.5.15"
+- "16.2.3"
+affected_versions: "All versions starting from 13.0.0 before 15.5.15, all versions
+  starting from 16.0.0-beta.0 before 16.2.3"
+not_impacted: "All versions before 13.0.0, all versions starting from 15.5.15 before
+  16.0.0-beta.0, all versions starting from 16.2.3"
+solution: "Upgrade to versions 15.5.15, 16.2.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-q4gf-8mx6-v5v3"
+- "https://github.com/vercel/next.js/security/advisories/GHSA-q4gf-8mx6-v5v3"
+- "https://github.com/vercel/next.js"
+- "https://vercel.com/changelog/summary-of-cve-2026-23869"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "374a5eb3-b9ba-476b-a420-aa54722dbaf6"
+cwe_ids:
+- "CWE-770"
+- "CWE-937"
+- "CWE-1035"

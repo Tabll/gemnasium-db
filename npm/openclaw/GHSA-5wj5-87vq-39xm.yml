@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-5wj5-87vq-39xm"
+identifiers:
+- "GHSA-5wj5-87vq-39xm"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Node Pairing Reconnect Command Escalation Bypasses operator.admin
+  Scope Requirement"
+description: "Node Pairing Reconnect Command Escalation Bypasses operator.admin Scope
+  Requirement.\n\nA previously paired node could reconnect with a broader command
+  set, including exec-capable commands, without forcing the operator/admin re-pairing
+  path.\n\nOpenClaw is a user-controlled local assistant. This advisory is scoped
+  to the OpenClaw trust model and does not assume a multi-tenant service boundary."
+date: "2026-04-09"
+pubdate: "2026-04-09"
+affected_range: "<2026.4.8"
+fixed_versions:
+- "2026.4.8"
+affected_versions: "All versions before 2026.4.8"
+not_impacted: "All versions starting from 2026.4.8"
+solution: "Upgrade to version 2026.4.8 or above."
+urls:
+- "https://github.com/advisories/GHSA-5wj5-87vq-39xm"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-5wj5-87vq-39xm"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:L/AC:L/AT:P/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+uuid: "63d58fb7-e983-4479-8d15-e0587b62f2b7"
+cwe_ids:
+- "CWE-288"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-75hx-xj24-mqrw"
+identifiers:
+- "GHSA-75hx-xj24-mqrw"
+package_slug: "npm/n8n-mcp"
+title: "n8n-mcp has unauthenticated session termination and information disclosure
+  in HTTP transport"
+description: "Several HTTP transport endpoints in n8n-mcp lacked proper authentication,
+  and the health check endpoint exposed sensitive operational metadata without credentials."
+date: "2026-04-10"
+pubdate: "2026-04-10"
+affected_range: "<2.47.6"
+fixed_versions:
+- "2.47.6"
+affected_versions: "All versions before 2.47.6"
+not_impacted: "All versions starting from 2.47.6"
+solution: "Upgrade to version 2.47.6 or above."
+urls:
+- "https://github.com/advisories/GHSA-75hx-xj24-mqrw"
+- "https://github.com/czlonkowski/n8n-mcp/security/advisories/GHSA-75hx-xj24-mqrw"
+- "https://github.com/czlonkowski/n8n-mcp/commit/ca9d4b3df6419b8338983be98f7940400f78bde3"
+- "https://github.com/czlonkowski/n8n-mcp"
+- "https://github.com/czlonkowski/n8n-mcp/releases/tag/v2.47.6"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:H"
+uuid: "88e4dba6-a788-4e4b-9092-65b4fe6020fc"
+cwe_ids:
+- "CWE-306"
+- "CWE-937"
+- "CWE-1035"

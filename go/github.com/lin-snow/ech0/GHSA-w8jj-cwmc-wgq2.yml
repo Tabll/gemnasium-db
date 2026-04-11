@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-w8jj-cwmc-wgq2"
+identifiers:
+- "GHSA-w8jj-cwmc-wgq2"
+package_slug: "go/github.com/lin-snow/ech0"
+title: "Ech0's Missing Authorization on System Logs Allows Non-Admin Information Disclosure"
+description: "The system log endpoints (`GET /api/system/logs`, `GET /api/system/logs/stream`,
+  `WS /ws/system/logs`) lack authorization checks, allowing any authenticated non-admin
+  user to read and stream all server logs. These logs contain error stack traces,
+  internal file paths, module names, and arbitrary structured fields that facilitate
+  reconnaissance for further attacks."
+date: "2026-04-10"
+pubdate: "2026-04-10"
+affected_range: "<4.4.3"
+fixed_versions:
+- "4.4.3"
+affected_versions: "All versions before 4.4.3"
+not_impacted: "All versions starting from 4.4.3"
+solution: "Upgrade to version 4.4.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-w8jj-cwmc-wgq2"
+- "https://github.com/lin-snow/Ech0/security/advisories/GHSA-w8jj-cwmc-wgq2"
+- "https://github.com/lin-snow/Ech0"
+- "https://github.com/lin-snow/Ech0/releases/tag/v4.4.3"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N"
+uuid: "e1ca248d-6159-4378-a5f6-ff0fb62f6671"
+cwe_ids:
+- "CWE-862"
+- "CWE-937"
+- "CWE-1035"

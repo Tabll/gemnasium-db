@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-68qg-g8mg-6pr7"
+identifiers:
+- "GHSA-68qg-g8mg-6pr7"
+package_slug: "npm/paperclipai"
+title: "paperclip Vulnerable to Unauthenticated Remote Code Execution via Import Authorization
+  Bypass"
+description: "An unauthenticated attacker can achieve full remote code execution on
+  any network-accessible Paperclip instance running in `authenticated` mode with default
+  configuration. No user interaction, no credentials, just the target's address. The
+  entire chain is six API calls."
+date: "2026-04-10"
+pubdate: "2026-04-10"
+affected_range: "<2026.410.0"
+fixed_versions:
+- "2026.410.0"
+affected_versions: "All versions before 2026.410.0"
+not_impacted: "All versions starting from 2026.410.0"
+solution: "Upgrade to version 2026.410.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-68qg-g8mg-6pr7"
+- "https://github.com/paperclipai/paperclip/security/advisories/GHSA-68qg-g8mg-6pr7"
+- "https://github.com/paperclipai/paperclip"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H"
+uuid: "1c3e3d6d-88d5-441f-8cfa-30f9c5991073"
+cwe_ids:
+- "CWE-287"
+- "CWE-862"
+- "CWE-1188"
+- "CWE-937"
+- "CWE-1035"

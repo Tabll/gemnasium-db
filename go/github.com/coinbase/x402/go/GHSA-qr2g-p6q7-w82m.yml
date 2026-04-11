@@ -8,7 +8,7 @@ description: "A security vulnerability exists in outdated versions of the x402 S
   vulnerability does not affect users' private keys, smart contracts, or funds.\n\nThe
   issue impacts resource servers accepting payments on Solana when the facilitator
   is running a vulnerable version of the x402 SDK."
-date: "2026-03-07"
+date: "2026-04-08"
 pubdate: "2026-03-07"
 affected_range: "<2.5.0"
 fixed_versions:
@@ -19,6 +19,7 @@ solution: "Upgrade to version 2.5.0 or above."
 urls:
 - "https://github.com/advisories/GHSA-qr2g-p6q7-w82m"
 - "https://github.com/coinbase/x402/security/advisories/GHSA-qr2g-p6q7-w82m"
+- "https://github.com/x402-foundation/x402/security/advisories/GHSA-qr2g-p6q7-w82m"
 - "https://github.com/coinbase/x402"
 uuid: "d31e0a53-8c23-4426-b585-6c8ae671f530"
 cwe_ids:

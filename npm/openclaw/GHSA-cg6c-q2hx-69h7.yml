@@ -8,7 +8,7 @@ description: "Before `v2026.3.23`, the Plivo V2 verification path treated query-
   variants of the same signed request as fresh verified work. Plivo V2 signatures
   authenticate `baseUrl + nonce`, but the replay key was derived from the full verification
   URL including the query string, so unsigned query-only changes minted a new `verifiedRequestKey`."
-date: "2026-03-26"
+date: "2026-04-09"
 pubdate: "2026-03-26"
 affected_range: "<2026.3.23"
 fixed_versions:

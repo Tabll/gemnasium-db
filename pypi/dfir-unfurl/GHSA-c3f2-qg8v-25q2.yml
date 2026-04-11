@@ -1,0 +1,37 @@
+---
+identifier: "GHSA-c3f2-qg8v-25q2"
+identifiers:
+- "GHSA-c3f2-qg8v-25q2"
+package_slug: "pypi/dfir-unfurl"
+title: "Duplicate Advisory: Unfurl's unbounded zlib decompression allows decompression
+  bomb DoS"
+description: "### Duplicate Advisory\nThis advisory has been withdrawn because it
+  is a duplicate of GHSA-h5qv-qjv4-pc5m. This link is maintained to preserve external
+  references.\n\n### Original Description\nUnfurl before 2026.04 contains an unbounded
+  zlib decompression vulnerability in parse_compressed.py that allows remote attackers
+  to cause denial of service. Attackers can submit highly compressed payloads via
+  URL parameters to the /json/visjs endpoint that expand to gigabytes, exhausting
+  server memory and crashing the service."
+date: "2026-04-10"
+pubdate: "2026-04-09"
+affected_range: "<2026.04"
+fixed_versions:
+- "2026.04"
+affected_versions: "All versions before 2026.04"
+not_impacted: "All versions starting from 2026.04"
+solution: "Upgrade to version 2026.04 or above."
+urls:
+- "https://github.com/advisories/GHSA-c3f2-qg8v-25q2"
+- "https://github.com/obsidianforensics/unfurl/security/advisories/GHSA-h5qv-qjv4-pc5m"
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-40036"
+- "https://github.com/RyanDFIR/unfurl/pull/243"
+- "https://github.com/RyanDFIR/unfurl"
+- "https://github.com/RyanDFIR/unfurl/releases/tag/v2026.04"
+- "https://www.vulncheck.com/advisories/dfir-unfurl-denial-of-service-via-unbounded-zlib-decompression"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+uuid: "2ef09002-3f7a-4d4c-8272-525580bfd3a4"
+cwe_ids:
+- "CWE-409"
+- "CWE-937"
+- "CWE-1035"

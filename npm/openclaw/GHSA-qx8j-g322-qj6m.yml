@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-qx8j-g322-qj6m"
+identifiers:
+- "GHSA-qx8j-g322-qj6m"
+package_slug: "npm/openclaw"
+title: "OpenClaw: `fetchWithSsrFGuard` replays unsafe request bodies across cross-origin
+  redirects"
+description: "`fetchWithSsrFGuard` replays unsafe request bodies across cross-origin
+  redirects.\n\nA guarded fetch could resend unsafe request bodies or headers when
+  following cross-origin redirects.\n\nOpenClaw is a user-controlled local assistant.
+  This advisory is scoped to the OpenClaw trust model and does not assume a multi-tenant
+  service boundary."
+date: "2026-04-09"
+pubdate: "2026-04-09"
+affected_range: "<2026.4.8"
+fixed_versions:
+- "2026.4.8"
+affected_versions: "All versions before 2026.4.8"
+not_impacted: "All versions starting from 2026.4.8"
+solution: "Upgrade to version 2026.4.8 or above."
+urls:
+- "https://github.com/advisories/GHSA-qx8j-g322-qj6m"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-qx8j-g322-qj6m"
+- "https://github.com/openclaw/openclaw/commit/d7c3210cd6f5fdfdc1beff4c9541673e814354d5"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:L/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N"
+uuid: "e9b5bb17-2df1-473e-9ea2-ec5209beca72"
+cwe_ids:
+- "CWE-345"
+- "CWE-937"
+- "CWE-1035"

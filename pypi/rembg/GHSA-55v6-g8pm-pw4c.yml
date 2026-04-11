@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-55v6-g8pm-pw4c"
+identifiers:
+- "GHSA-55v6-g8pm-pw4c"
+package_slug: "pypi/rembg"
+title: "rembg server is vulnerable to Server-Side Request Forgery (SSRF) and a weak
+  default CORS configuration"
+description: "rembg server is vulnerable to Server-Side Request Forgery (SSRF) and
+  a weak default CORS configuration, which may allow an attacker website to send requests
+  to servers on the internal network and view image responses."
+date: "2026-04-10"
+pubdate: "2026-04-10"
+affected_range: "<2.0.75"
+fixed_versions:
+- "2.0.75"
+affected_versions: "All versions before 2.0.75"
+not_impacted: "All versions starting from 2.0.75"
+solution: "Upgrade to version 2.0.75 or above."
+urls:
+- "https://github.com/advisories/GHSA-55v6-g8pm-pw4c"
+- "https://github.com/danielgatis/rembg/security/advisories/GHSA-55v6-g8pm-pw4c"
+- "https://github.com/danielgatis/rembg/commit/07ad0d493057bddf821dcc3e2410eb7e065257c0"
+- "https://github.com/danielgatis/rembg"
+- "https://github.com/danielgatis/rembg/releases/tag/v2.0.75"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:N"
+uuid: "40d1d6cf-bc2e-4f34-a719-f5d254d9a26e"
+cwe_ids:
+- "CWE-918"
+- "CWE-937"
+- "CWE-1035"

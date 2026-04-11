@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-vvjj-xcjg-gr5g"
+identifiers:
+- "GHSA-vvjj-xcjg-gr5g"
+package_slug: "npm/nodemailer"
+title: "Nodemailer Vulnerable to SMTP Command Injection via CRLF in Transport name
+  Option (EHLO/HELO) "
+description: "Nodemailer versions up to and including 8.0.4 are vulnerable to SMTP
+  command injection via CRLF sequences in the transport `name` configuration option.
+  The `name` value is used directly in the EHLO/HELO SMTP command without any sanitization
+  for carriage return and line feed characters (`\\r\\n`). An attacker who can influence
+  this option can inject arbitrary SMTP commands, enabling unauthorized email sending,
+  email spoofing, and phishing attacks."
+date: "2026-04-08"
+pubdate: "2026-04-08"
+affected_range: "<8.0.5"
+fixed_versions:
+- "8.0.5"
+affected_versions: "All versions before 8.0.5"
+not_impacted: "All versions starting from 8.0.5"
+solution: "Upgrade to version 8.0.5 or above."
+urls:
+- "https://github.com/advisories/GHSA-vvjj-xcjg-gr5g"
+- "https://github.com/nodemailer/nodemailer/security/advisories/GHSA-vvjj-xcjg-gr5g"
+- "https://github.com/nodemailer/nodemailer/commit/0a43876801a420ca528f492eaa01bfc421cc306e"
+- "https://github.com/nodemailer/nodemailer"
+- "https://github.com/nodemailer/nodemailer/releases/tag/v8.0.5"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:H/A:N"
+uuid: "8d3fb7cb-c208-42f5-977b-07cc23382ecc"
+cwe_ids:
+- "CWE-93"
+- "CWE-937"
+- "CWE-1035"

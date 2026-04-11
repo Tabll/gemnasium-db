@@ -8,7 +8,7 @@ title: "OpenClaw: Gateway Canvas local-direct requests bypass Canvas HTTP and We
 description: "Before `v2026.3.23`, Canvas and A2UI loopback requests could bypass
   Canvas bearer-or-capability authentication because `authorizeCanvasRequest(...)`
   treated `isLocalDirectRequest(...)` as an unconditional allow path."
-date: "2026-03-26"
+date: "2026-04-09"
 pubdate: "2026-03-26"
 affected_range: "<2026.3.23"
 fixed_versions:

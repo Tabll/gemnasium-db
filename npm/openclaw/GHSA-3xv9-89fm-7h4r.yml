@@ -7,7 +7,7 @@ title: "OpenClaw: diffs viewer misclassifies proxied remote requests as loopback
   `allowRemoteViewer` is disabled"
 description: "diffs viewer misclassifies proxied remote requests as loopback when
   `allowRemoteViewer` is disabled"
-date: "2026-04-03"
+date: "2026-04-09"
 pubdate: "2026-04-03"
 affected_range: "<2026.3.31"
 fixed_versions:

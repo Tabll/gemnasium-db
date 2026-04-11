@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-v457-wxvj-p9w9"
+identifiers:
+- "GHSA-v457-wxvj-p9w9"
+package_slug: "npm/@vitejs/plugin-rsc"
+title: "@vitejs/plugin-rsc has a Denial of Service with React Server Components"
+description: "`@vitejs/plugin-rsc` vendors `react-server-dom-webpack`, which contained
+  a vulnerability in versions prior to 19.2.4. See details in React repository's advisory
+  https://github.com/facebook/react/security/advisories/GHSA-479c-33wc-g2pg"
+date: "2026-04-10"
+pubdate: "2026-04-10"
+affected_range: "<0.5.23"
+fixed_versions:
+- "0.5.23"
+affected_versions: "All versions before 0.5.23"
+not_impacted: "All versions starting from 0.5.23"
+solution: "Upgrade to version 0.5.23 or above."
+urls:
+- "https://github.com/advisories/GHSA-v457-wxvj-p9w9"
+- "https://github.com/vitejs/vite-plugin-react/security/advisories/GHSA-v457-wxvj-p9w9"
+- "https://github.com/vitejs/vite-plugin-react"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "dcaae44b-9dd2-486d-9b65-9ddaaff5bf21"
+cwe_ids:
+- "CWE-400"
+- "CWE-937"
+- "CWE-1035"

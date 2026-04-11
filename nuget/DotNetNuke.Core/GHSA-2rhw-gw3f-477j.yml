@@ -1,0 +1,26 @@
+---
+identifier: "GHSA-2rhw-gw3f-477j"
+identifiers:
+- "GHSA-2rhw-gw3f-477j"
+package_slug: "nuget/DotNetNuke.Core"
+title: "DNN: Same HostGUID for all new installs"
+description: "All new installations DNN 10.x.x - 10.2.1 installs, have the same Host
+  GUID. This does not affect upgrades from 9.x.x."
+date: "2026-04-10"
+pubdate: "2026-04-10"
+affected_range: "[10.0.0,10.2.2)"
+fixed_versions:
+- "10.2.2"
+affected_versions: "All versions starting from 10.0.0 before 10.2.2"
+not_impacted: "All versions before 10.0.0, all versions starting from 10.2.2"
+solution: "Upgrade to version 10.2.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-2rhw-gw3f-477j"
+- "https://github.com/dnnsoftware/Dnn.Platform/security/advisories/GHSA-2rhw-gw3f-477j"
+- "https://github.com/dnnsoftware/Dnn.Platform"
+- "https://github.com/dnnsoftware/Dnn.Platform/releases/tag/v10.2.2"
+uuid: "1264774d-3d67-44bd-b552-5d77500569a0"
+cwe_ids:
+- "CWE-330"
+- "CWE-937"
+- "CWE-1035"

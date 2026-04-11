@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-8x8f-54wf-vv92"
+identifiers:
+- "GHSA-8x8f-54wf-vv92"
+package_slug: "pypi/praisonai"
+title: "PraisonAI Browser Server allows unauthenticated WebSocket clients to hijack
+  connected extension sessions"
+description: "`praisonai browser start` exposes the browser bridge on `0.0.0.0` by
+  default, and its `/ws` endpoint accepts websocket clients that omit the `Origin`
+  header entirely. An unauthenticated network client can connect as a fake controller,
+  send `start_session`, cause the server to forward `start_automation` to another
+  connected browser-extension websocket, and receive the resulting action/status stream
+  back over that hijacked session. This allows unauthorized remote use of a connected
+  browser automation session without any credentials."
+date: "2026-04-10"
+pubdate: "2026-04-10"
+affected_range: "<4.5.139"
+fixed_versions:
+- "4.5.139"
+affected_versions: "All versions before 4.5.139"
+not_impacted: "All versions starting from 4.5.139"
+solution: "Upgrade to version 4.5.139 or above."
+urls:
+- "https://github.com/advisories/GHSA-8x8f-54wf-vv92"
+- "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-8x8f-54wf-vv92"
+- "https://github.com/MervinPraison/PraisonAI"
+- "https://github.com/MervinPraison/PraisonAI/releases/tag/v4.5.139"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N"
+uuid: "4138104d-4627-482e-955f-0299923d3267"
+cwe_ids:
+- "CWE-306"
+- "CWE-937"
+- "CWE-1035"

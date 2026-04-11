@@ -1,0 +1,39 @@
+---
+identifier: "GHSA-8h8f-7cxm-m38j"
+identifiers:
+- "GHSA-8h8f-7cxm-m38j"
+package_slug: "npm/openclaw"
+title: "Duplicate Advisory: OpenClaw: Windows media loaders accepted remote-host file
+  URLs before local path validation"
+description: "### Duplicate Advisory\nThis advisory has been withdrawn because it
+  is a duplicate of GHSA-h3x4-hc5v-v2gm. This link is maintained to preserve external
+  references.\n\n### Original Description\nOpenClaw versions prior to commit b57b680 contain
+  an approval bypass vulnerability due to inconsistent environment variable normalization
+  between approval and execution paths, allowing attackers to inject attacker-controlled
+  environment variables into execution without approval system validation. Attackers
+  can exploit differing normalization logic to discard non-portable keys during approval
+  processing while accepting them at execution time, bypassing operator review and
+  potentially influencing runtime behavior including execution of attacker-controlled
+  binaries."
+date: "2026-04-10"
+pubdate: "2026-04-02"
+affected_range: "<2026.3.22"
+fixed_versions:
+- "2026.3.22"
+affected_versions: "All versions before 2026.3.22"
+not_impacted: "All versions starting from 2026.3.22"
+solution: "Upgrade to version 2026.3.22 or above."
+urls:
+- "https://github.com/advisories/GHSA-8h8f-7cxm-m38j"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-98ch-45wp-ch47"
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-34426"
+- "https://github.com/openclaw/openclaw/pull/59182"
+- "https://github.com/openclaw/openclaw/commit/b57b680c0c34de907d57f60c38fb358e82aef8f7"
+- "https://www.vulncheck.com/advisories/openclaw-approval-bypass-via-environment-variable-normalization"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:A/VC:L/VI:H/VA:N/SC:N/SI:N/SA:N"
+uuid: "f6b6b72c-d5b0-4e33-a692-a9a37d19f5c2"
+cwe_ids:
+- "CWE-184"
+- "CWE-937"
+- "CWE-1035"

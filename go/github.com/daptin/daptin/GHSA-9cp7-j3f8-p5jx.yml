@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-9cp7-j3f8-p5jx"
+identifiers:
+- "GHSA-9cp7-j3f8-p5jx"
+package_slug: "go/github.com/daptin/daptin"
+title: "Daptin has Unauthenticated Path Traversal and Zip Slip"
+description: "The `cloudstore.file.upload` action in `server/actions/action_cloudstore_file_upload.go`
+  writes user-supplied filenames directly to disk without proper validation.\n\nThis
+  allows unauthenticated attackers to perform path traversal and zip slip attacks,
+  leading to arbitrary file write and potential remote code execution.\n\n**CVSS Score:**
+  10.0 Critical\n**CVSS Vector:** CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:H/A:H\n**CWE:**
+  CWE-22 (Path Traversal)"
+date: "2026-04-10"
+pubdate: "2026-04-10"
+affected_range: "<0.12.0"
+fixed_versions:
+- "0.12.0"
+affected_versions: "All versions before 0.12.0"
+not_impacted: "All versions starting from 0.12.0"
+solution: "Upgrade to version 0.12.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-9cp7-j3f8-p5jx"
+- "https://github.com/daptin/daptin/security/advisories/GHSA-9cp7-j3f8-p5jx"
+- "https://github.com/daptin/daptin/commit/8d626bbb14f82160a08cbca53e0749f475f5742c"
+- "https://github.com/daptin/daptin"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:H/A:H"
+uuid: "216a3366-d857-43a9-a3a3-5a14026b29a4"
+cwe_ids:
+- "CWE-22"
+- "CWE-937"
+- "CWE-1035"

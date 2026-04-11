@@ -7,7 +7,7 @@ title: "OpenClaw: Tlon Startup Migration Rehydrates Empty-Array Revocations From
   Config"
 description: "Tlon Startup Migration Rehydrates Empty-Array Revocations From File
   Config"
-date: "2026-04-03"
+date: "2026-04-09"
 pubdate: "2026-04-03"
 affected_range: "<2026.3.31"
 fixed_versions:

@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-pg8g-f2hf-x82m"
+identifiers:
+- "GHSA-pg8g-f2hf-x82m"
+package_slug: "npm/openclaw"
+title: "Duplicate Advisory: OpenClaw: `fetchWithSsrFGuard` replays unsafe request
+  bodies across cross-origin redirects"
+description: "### Duplicate Advisory\nThis advisory has been withdrawn because it
+  is a duplicate of GHSA-qx8j-g322-qj6m. This link is maintained to preserve external
+  references.\n\n### Original Description\nOpenClaw before 2026.3.31 (patched in 2026.4.8)
+  contains a request body replay vulnerability in fetchWithSsrFGuard that allows unsafe
+  request bodies to be resent across cross-origin redirects. Attackers can exploit
+  this by triggering redirects to exfiltrate sensitive request data or headers to
+  unintended origins."
+date: "2026-04-10"
+pubdate: "2026-04-09"
+affected_range: "<2026.4.8"
+fixed_versions:
+- "2026.4.8"
+affected_versions: "All versions before 2026.4.8"
+not_impacted: "All versions starting from 2026.4.8"
+solution: "Upgrade to version 2026.4.8 or above."
+urls:
+- "https://github.com/advisories/GHSA-pg8g-f2hf-x82m"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-qx8j-g322-qj6m"
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-40037"
+- "https://github.com/openclaw/openclaw/commit/d7c3210cd6f5fdfdc1beff4c9541673e814354d5"
+- "https://www.vulncheck.com/advisories/openclaw-unsafe-request-body-replay-via-fetchwithssrfguard-cross-origin-redirects"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N"
+uuid: "f51edb35-3e35-4c20-9af5-be0747a94d88"
+cwe_ids:
+- "CWE-601"
+- "CWE-937"
+- "CWE-1035"
