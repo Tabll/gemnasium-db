@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-rh42-6rj2-xwmc"
+identifiers:
+- "GHSA-rh42-6rj2-xwmc"
+package_slug: "packagist/kimai/kimai"
+title: "Kimai leaks API Token Hash via Invoice Twig Template"
+description: "The Twig sandbox used for invoice templates blocks certain sensitive
+  `User` methods (password, TOTP secret, etc.) via a blocklist in `StrictPolicy::checkMethodAllowed()`.
+  However, `getApiToken()` and `getPlainApiToken()` are not on the blocklist. An admin
+  who creates an invoice template can embed calls to these methods, causing the bcrypt
+  or sodium hashed API password of any user who generates an invoice using that template
+  to be included in the rendered output.\n\nOnly relevant for OnPremise installations
+  with template upload activated."
+date: "2026-04-14"
+pubdate: "2026-04-14"
+affected_range: "<2.53.0"
+fixed_versions:
+- "2.53.0"
+affected_versions: "All versions before 2.53.0"
+not_impacted: "All versions starting from 2.53.0"
+solution: "Upgrade to version 2.53.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-rh42-6rj2-xwmc"
+- "https://github.com/kimai/kimai/security/advisories/GHSA-rh42-6rj2-xwmc"
+- "https://github.com/kimai/kimai/pull/5878"
+- "https://github.com/kimai/kimai"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:H/UI:R/S:U/C:L/I:N/A:N"
+uuid: "4fab3a83-b3f1-4e25-9666-e1886377a1ba"
+cwe_ids:
+- "CWE-184"
+- "CWE-937"
+- "CWE-1035"
