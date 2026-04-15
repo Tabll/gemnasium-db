@@ -1,0 +1,26 @@
+---
+identifier: "GHSA-fcpv-w245-r2q7"
+identifiers:
+- "GHSA-fcpv-w245-r2q7"
+package_slug: "nuget/DotNetNuke.Core"
+title: "DotNetNuke.Core security code analysis rules triggered"
+description: "The codebase raises code analysis warnings related to security, including
+  CA3075, CA5366, CA5371, CA5368, CA5369, CA5372, CA5379, CA5350, and CA5351.\n\nMost
+  of these deal with disabling DTD processing in XML documents, but also includes
+  cryptographic algorithm choices."
+date: "2026-04-14"
+pubdate: "2026-04-14"
+affected_range: "[6.0.0,10.2.2)"
+fixed_versions:
+- "10.2.2"
+affected_versions: "All versions starting from 6.0.0 before 10.2.2"
+not_impacted: "All versions before 6.0.0, all versions starting from 10.2.2"
+solution: "Upgrade to version 10.2.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-fcpv-w245-r2q7"
+- "https://github.com/dnnsoftware/Dnn.Platform/security/advisories/GHSA-fcpv-w245-r2q7"
+- "https://github.com/dnnsoftware/Dnn.Platform"
+uuid: "ee8881c4-3d2d-4c53-a9cf-6aea8c2d0cfb"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

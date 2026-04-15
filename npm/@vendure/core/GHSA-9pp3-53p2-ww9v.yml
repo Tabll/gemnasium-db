@@ -1,0 +1,36 @@
+---
+identifier: "GHSA-9pp3-53p2-ww9v"
+identifiers:
+- "GHSA-9pp3-53p2-ww9v"
+package_slug: "npm/@vendure/core"
+title: "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')
+  in @vendure/core"
+description: "An unauthenticated SQL injection vulnerability exists in the Vendure
+  Shop API. A user-controlled query string parameter is interpolated directly into
+  a raw SQL expression without parameterization or validation, allowing an attacker
+  to execute arbitrary SQL against the database. This affects all supported database
+  backends (PostgreSQL, MySQL/MariaDB, SQLite).\n\nThe Admin API is also affected,
+  though exploitation there requires authentication."
+date: "2026-04-14"
+pubdate: "2026-04-14"
+affected_range: ">=3.0.0 <3.5.7||>=3.6.0 <3.6.2||>=1.7.4 <2.3.4"
+fixed_versions:
+- "3.5.7"
+- "3.6.2"
+- "2.3.4"
+affected_versions: "All versions starting from 1.7.4 before 2.3.4, all versions starting
+  from 3.0.0 before 3.5.7, all versions starting from 3.6.0 before 3.6.2"
+not_impacted: "All versions before 1.7.4, all versions starting from 2.3.4 before
+  3.0.0, all versions starting from 3.5.7 before 3.6.0, all versions starting from
+  3.6.2"
+solution: "Upgrade to versions 2.3.4, 3.5.7, 3.6.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-9pp3-53p2-ww9v"
+- "https://github.com/vendurehq/vendure/security/advisories/GHSA-9pp3-53p2-ww9v"
+- "https://github.com/vendurehq/vendure"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H"
+uuid: "e8ee2f89-f547-40fc-bbb9-f0f2e64b1005"
+cwe_ids:
+- "CWE-89"
+- "CWE-937"
+- "CWE-1035"

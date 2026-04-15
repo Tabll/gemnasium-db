@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-5gqc-qhrj-9xw8"
+identifiers:
+- "GHSA-5gqc-qhrj-9xw8"
+package_slug: "go/github.com/oxia-db/oxia"
+title: "Oxia affected by server crash via race condition in session heartbeat handling"
+description: "A race condition between session heartbeat processing and session closure
+  can cause the server to panic with `send on closed channel`. The `heartbeat()` method
+  uses a blocking channel send while holding a mutex, and under specific timing with
+  concurrent `close()` calls, this can lead to either a deadlock (channel buffer full)
+  or a panic (send on closed channel after TOCTOU gap in `KeepAlive`)."
+date: "2026-04-14"
+pubdate: "2026-04-14"
+affected_range: "<0.16.2"
+fixed_versions:
+- "0.16.2"
+affected_versions: "All versions before 0.16.2"
+not_impacted: "All versions starting from 0.16.2"
+solution: "Upgrade to version 0.16.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-5gqc-qhrj-9xw8"
+- "https://github.com/oxia-db/oxia/security/advisories/GHSA-5gqc-qhrj-9xw8"
+- "https://github.com/oxia-db/oxia"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+uuid: "b946ef1d-39f2-4010-bc67-5250f391a975"
+cwe_ids:
+- "CWE-362"
+- "CWE-937"
+- "CWE-1035"

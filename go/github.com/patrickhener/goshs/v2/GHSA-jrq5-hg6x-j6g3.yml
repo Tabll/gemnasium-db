@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-jrq5-hg6x-j6g3"
+identifiers:
+- "GHSA-jrq5-hg6x-j6g3"
+package_slug: "go/github.com/patrickhener/goshs/v2"
+title: "goshs has CSRF in state-changing GET routes enables authenticated file deletion
+  and directory creation"
+description: "goshs contains a cross-site request forgery issue in its state-changing
+  HTTP GET routes. An external attacker can cause an already authenticated browser
+  to trigger destructive actions such as `?delete` and `?mkdir` because goshs relies
+  on HTTP basic auth alone and performs no CSRF, `Origin`, or `Referer` validation
+  for those routes. I reproduced this on `v2.0.0-beta.5`."
+date: "2026-04-14"
+pubdate: "2026-04-14"
+affected_range: ">=2.0.0-beta.4 <2.0.0-beta.6"
+fixed_versions:
+- "2.0.0-beta.6"
+affected_versions: "All versions starting from 2.0.0-beta.4 before 2.0.0-beta.6"
+not_impacted: "All versions before 2.0.0-beta.4, all versions starting from 2.0.0-beta.6"
+solution: "Upgrade to version 2.0.0-beta.6 or above."
+urls:
+- "https://github.com/advisories/GHSA-jrq5-hg6x-j6g3"
+- "https://github.com/patrickhener/goshs/security/advisories/GHSA-jrq5-hg6x-j6g3"
+- "https://github.com/patrickhener/goshs"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:N/VI:H/VA:H/SC:N/SI:N/SA:N"
+uuid: "c25d22c9-07a9-4eae-9bb6-27affe483304"
+cwe_ids:
+- "CWE-352"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-7549-ggpq-22w8"
+identifiers:
+- "GHSA-7549-ggpq-22w8"
+package_slug: "packagist/librenms/librenms"
+title: "Duplicate Advisory: LibreNMS is Vulnerable to Remote Code Execution by Arbitrary
+  File Write"
+description: "## Duplicate Advisory\n\nThis advisory has been withdrawn because it
+  is a duplicate of GHSA-pr3g-phhr-h8fh. This link is maintained to preserve external
+  references.\n\n## Original Description\nLibreNMS versions before 26.3.0 are affected
+  by an authenticated remote code execution vulnerability by abusing the Binary Locations config and
+  the Netcommand feature. Successful exploitation requires administrative privileges.
+  Exploitation could result in compromise of the underlying web server."
+date: "2026-04-14"
+pubdate: "2026-04-13"
+affected_range: "<26.3.0"
+fixed_versions:
+- "26.3.0"
+affected_versions: "All versions before 26.3.0"
+not_impacted: "All versions starting from 26.3.0"
+solution: "Upgrade to version 26.3.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-7549-ggpq-22w8"
+- "https://github.com/librenms/librenms/security/advisories/GHSA-pr3g-phhr-h8fh"
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-6204"
+- "https://github.com/librenms/librenms"
+- "https://projectblack.io/blog/librenms-authenticated-rce-and-xss/#binary-path-rce-poc"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N"
+uuid: "206a6cc8-9d9e-457b-8661-19447f3da007"
+cwe_ids:
+- "CWE-78"
+- "CWE-937"
+- "CWE-1035"

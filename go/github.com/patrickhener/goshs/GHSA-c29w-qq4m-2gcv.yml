@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-c29w-qq4m-2gcv"
+identifiers:
+- "GHSA-c29w-qq4m-2gcv"
+package_slug: "go/github.com/patrickhener/goshs"
+title: "Empty-username SFTP password authentication bypass in goshs"
+description: "goshs contains an SFTP authentication bypass when the documented empty-username
+  basic-auth syntax is used. If the server is started with `-b ':pass'` together with
+  `-sftp`, goshs accepts that configuration but does not install any SFTP password
+  handler. As a result, an unauthenticated network attacker can connect to the SFTP
+  service and access files without a password. I reproduced this on the latest release
+  `v2.0.0-beta.5`."
+date: "2026-04-14"
+pubdate: "2026-04-14"
+affected_range: "<=1.1.4"
+fixed_versions: []
+affected_versions: "All versions up to 1.1.4"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-c29w-qq4m-2gcv"
+- "https://github.com/patrickhener/goshs/security/advisories/GHSA-c29w-qq4m-2gcv"
+- "https://github.com/patrickhener/goshs"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+uuid: "f6ec9852-4aed-41c9-9430-f543236de378"
+cwe_ids:
+- "CWE-306"
+- "CWE-937"
+- "CWE-1035"

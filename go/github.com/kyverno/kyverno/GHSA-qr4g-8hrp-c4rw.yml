@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-qr4g-8hrp-c4rw"
+identifiers:
+- "GHSA-qr4g-8hrp-c4rw"
+package_slug: "go/github.com/kyverno/kyverno"
+title: "Kyverno has unrestricted outbound requests in Kyverno apiCall enabling SSRF"
+description: "A Server-Side Request Forgery (SSRF) vulnerability in Kyverno allows
+  authenticated users to induce the admission controller to send arbitrary HTTP requests
+  to attacker-controlled endpoints.\n\nWhen a `ClusterPolicy` uses `apiCall.service.url`
+  with variable substitution (e.g. `{{request.object.*}}`), user-controlled input
+  can influence the request target. The Kyverno admission controller executes these
+  requests from its privileged network position without enforcing any validation or
+  network restrictions.\n\nThe issue becomes **non-blind SSRF**, as response data
+  from internal services can be reflected back to the user via admission error messages.\n\n---"
+date: "2026-04-14"
+pubdate: "2026-04-14"
+affected_range: "<=1.17.1"
+fixed_versions: []
+affected_versions: "All versions up to 1.17.1"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-qr4g-8hrp-c4rw"
+- "https://github.com/kyverno/kyverno/security/advisories/GHSA-qr4g-8hrp-c4rw"
+- "https://github.com/kyverno/kyverno"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N"
+uuid: "65289b66-d0fb-49f8-981c-b8d8ea9d2e16"
+cwe_ids:
+- "CWE-918"
+- "CWE-937"
+- "CWE-1035"

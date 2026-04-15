@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-q8h3-jv9v-57qx"
+identifiers:
+- "GHSA-q8h3-jv9v-57qx"
+package_slug: "nuget/Magick.NET-Q16-HDRI-OpenMP-x64"
+title: "ImageMagick has has an off-by-one origin validation in allows out-of-bounds
+  read in morphology processing"
+description: "An incorrect morphology would allow an out of bounds read of a single
+  pixel.\n\n```\n==1200284==ERROR: AddressSanitizer: heap-buffer-overflow on address
+  0x5100000002d0 at pc 0x59e28e60c27a bp 0x7fff047fd8e0 sp 0x7fff047fd8d0\nREAD of
+  size 4 at 0x5100000002d0 thread T0\n```"
+date: "2026-04-14"
+pubdate: "2026-04-14"
+affected_range: "[,14.20.0)"
+fixed_versions:
+- "14.20.0"
+affected_versions: "All versions before 14.20.0"
+not_impacted: "All versions starting from 14.20.0"
+solution: "Upgrade to version 14.20.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-q8h3-jv9v-57qx"
+- "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-q8h3-jv9v-57qx"
+- "https://github.com/ImageMagick/ImageMagick"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L"
+uuid: "9911231a-8056-4d24-b24a-2bd6d611abc6"
+cwe_ids:
+- "CWE-125"
+- "CWE-193"
+- "CWE-937"
+- "CWE-1035"

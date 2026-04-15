@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-fmqp-4wfc-w3v7"
+identifiers:
+- "GHSA-fmqp-4wfc-w3v7"
+package_slug: "go/github.com/kyverno/kyverno"
+title: "Kyverno APICall SSRF Vulnerability Leading to Multi-Tenant Isolation Breach"
+description: "Kyverno's APICall feature contains a Server-Side Request Forgery (SSRF)
+  vulnerability that allows users with Policy creation permissions to access arbitrary
+  internal resources through Kyverno's high-privilege ServiceAccount. In multi-tenant
+  Kubernetes environments, this constitutes a classic Confused Deputy problem: low-privilege
+  tenants can steal sensitive data from other tenants (such as database passwords
+  and API keys) and cloud platform IAM credentials, completely breaking tenant isolation.
+  This vulnerability does not require cluster-admin privileges and can be exploited
+  with only namespace-level Policy creation permissions."
+date: "2026-04-14"
+pubdate: "2026-04-14"
+affected_range: "<1.16.2"
+fixed_versions:
+- "1.16.2"
+affected_versions: "All versions before 1.16.2"
+not_impacted: "All versions starting from 1.16.2"
+solution: "Upgrade to version 1.16.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-fmqp-4wfc-w3v7"
+- "https://github.com/kyverno/kyverno/security/advisories/GHSA-fmqp-4wfc-w3v7"
+- "https://github.com/kyverno/kyverno"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N"
+uuid: "6ac70e95-afa0-4bbe-8464-9e4c12ebfd7c"
+cwe_ids:
+- "CWE-918"
+- "CWE-937"
+- "CWE-1035"

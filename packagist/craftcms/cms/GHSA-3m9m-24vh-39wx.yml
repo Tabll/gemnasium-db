@@ -1,0 +1,39 @@
+---
+identifier: "GHSA-3m9m-24vh-39wx"
+identifiers:
+- "GHSA-3m9m-24vh-39wx"
+package_slug: "packagist/craftcms/cms"
+title: "Server-Side Request Forgery (SSRF) in Craft CMS with Asset Uploads Mutations"
+description: "## Required Permissions\n\nThe exploitation requires a few permissions
+  to be enabled in the used GraphQL schema:\n\n* \"Edit assets in the <VolumeName>
+  volume\"\n* \"Create assets in the <VolumeName> volume\"\n\n## Details\n\nThe implementation
+  fails to restrict the URL Scheme. While the application is intended to \"upload
+  assets\", there is no `whitelist` forcing `http` or `https`. This allows attackers
+  to use the Gopher protocol to wrap raw TCP commands.\n\n**Impact:** Combined with
+  the DWORD bypass, an attacker can hit internal services without triggering any \"127.0.0.1\"
+  string-matching filters.\n\n**Example Payload:** gopher://2130706433:6379/_FLUSHALL
+  (Targets local Redis via DWORD).\n\n**Remediation Strategy**\n\nTo prevent mathematical
+  IP obfuscation, the application must normalize the hostname before validation."
+date: "2026-04-14"
+pubdate: "2026-04-14"
+affected_range: ">=5.0.0-RC1 <5.9.15||>=4.0.0-RC1 <4.17.9"
+fixed_versions:
+- "5.9.15"
+- "4.17.9"
+affected_versions: "All versions starting from 4.0.0-RC1 before 4.17.9, all versions
+  starting from 5.0.0-RC1 before 5.9.15"
+not_impacted: "All versions before 4.0.0-RC1, all versions starting from 4.17.9 before
+  5.0.0-RC1, all versions starting from 5.9.15"
+solution: "Upgrade to versions 4.17.9, 5.9.15 or above."
+urls:
+- "https://github.com/advisories/GHSA-3m9m-24vh-39wx"
+- "https://github.com/craftcms/cms/security/advisories/GHSA-3m9m-24vh-39wx"
+- "https://github.com/craftcms/cms/commit/d20aecfaa0eae076c4154be3b17e1f9fa05ce46f"
+- "https://github.com/craftcms/cms"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "c3fe9928-897c-428c-aac2-8c43ca1eb623"
+cwe_ids:
+- "CWE-918"
+- "CWE-937"
+- "CWE-1035"

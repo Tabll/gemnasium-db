@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-gpgp-w4x2-h3h7"
+identifiers:
+- "GHSA-gpgp-w4x2-h3h7"
+package_slug: "packagist/wwbn/avideo"
+title: "WWBN AVideo has an IDOR in Live Restreams list.json.php Exposes Other Users'
+  Stream Keys and OAuth Tokens"
+description: "The endpoint `plugin/Live/view/Live_restreams/list.json.php` contains
+  an Insecure Direct Object Reference (IDOR) vulnerability that allows any authenticated
+  user with streaming permission to retrieve other users' live restream configurations,
+  including third-party platform stream keys and OAuth tokens (access_token, refresh_token)
+  for services like YouTube Live, Facebook Live, and Twitch."
+date: "2026-04-14"
+pubdate: "2026-04-14"
+affected_range: "<=29.0"
+fixed_versions: []
+affected_versions: "All versions up to 29.0"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-gpgp-w4x2-h3h7"
+- "https://github.com/WWBN/AVideo/security/advisories/GHSA-gpgp-w4x2-h3h7"
+- "https://github.com/WWBN/AVideo/commit/d5992fff2811df4adad1d9fc7d0a5837b882aed7"
+- "https://github.com/WWBN/AVideo"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+uuid: "7fdd8306-449c-4e28-9933-e9de10a0f368"
+cwe_ids:
+- "CWE-639"
+- "CWE-937"
+- "CWE-1035"

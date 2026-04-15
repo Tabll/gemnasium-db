@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-6rc6-p838-686f"
+identifiers:
+- "GHSA-6rc6-p838-686f"
+package_slug: "packagist/wwbn/avideo"
+title: "WWBN AVideo has a Path Traversal in Locale Save Endpoint Enables Arbitrary
+  PHP File Write to Any Web-Accessible Directory (RCE)"
+description: "The locale save endpoint (`locale/save.php`) constructs a file path
+  by directly concatenating `$_POST['flag']` into the path at line 30 without any
+  sanitization. The `$_POST['code']` parameter is then written verbatim to that path
+  via `fwrite()` at line 40. An admin attacker (or any user who can CSRF an admin,
+  since no CSRF token is checked and cookies use `SameSite=None`) can traverse out
+  of the `locale/` directory and write arbitrary `.php` files to any writable location
+  on the filesystem, achieving Remote Code Execution."
+date: "2026-04-14"
+pubdate: "2026-04-14"
+affected_range: "<=29.0"
+fixed_versions: []
+affected_versions: "All versions up to 29.0"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-6rc6-p838-686f"
+- "https://github.com/WWBN/AVideo/security/advisories/GHSA-6rc6-p838-686f"
+- "https://github.com/WWBN/AVideo"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:N"
+uuid: "4cec3263-ed66-4fe3-a024-d1f2a7fc8ba4"
+cwe_ids:
+- "CWE-22"
+- "CWE-937"
+- "CWE-1035"

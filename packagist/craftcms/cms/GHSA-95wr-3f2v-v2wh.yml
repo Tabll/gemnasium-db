@@ -1,0 +1,36 @@
+---
+identifier: "GHSA-95wr-3f2v-v2wh"
+identifiers:
+- "GHSA-95wr-3f2v-v2wh"
+package_slug: "packagist/craftcms/cms"
+title: "Craft CMS has a host header injection leading to SSRF via resource-js endpoint"
+description: "The `resource-js` endpoint in Craft CMS allows unauthenticated requests
+  to proxy remote JavaScript resources.\nWhen `trustedHosts` is not explicitly restricted
+  (default configuration), the application trusts the client-supplied Host header.\n\nThis
+  allows an attacker to control the derived `baseUrl`, which is used in prefix validation
+  inside `actionResourceJs()`.\nBy supplying a malicious Host header, the attacker
+  can make the server issue arbitrary HTTP requests, leading to Server-Side Request
+  Forgery (SSRF)."
+date: "2026-04-14"
+pubdate: "2026-04-14"
+affected_range: ">=5.0.0-RC1 <5.9.15||>=4.0.0-RC1 <4.17.9"
+fixed_versions:
+- "5.9.15"
+- "4.17.9"
+affected_versions: "All versions starting from 4.0.0-RC1 before 4.17.9, all versions
+  starting from 5.0.0-RC1 before 5.9.15"
+not_impacted: "All versions before 4.0.0-RC1, all versions starting from 4.17.9 before
+  5.0.0-RC1, all versions starting from 5.9.15"
+solution: "Upgrade to versions 4.17.9, 5.9.15 or above."
+urls:
+- "https://github.com/advisories/GHSA-95wr-3f2v-v2wh"
+- "https://github.com/craftcms/cms/security/advisories/GHSA-95wr-3f2v-v2wh"
+- "https://github.com/craftcms/cms/commit/ebe7e85f1c89700d64332f72492be2e9a594e783"
+- "https://github.com/craftcms/cms"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "234d1825-4d23-4d32-a679-c19bf8ff485a"
+cwe_ids:
+- "CWE-918"
+- "CWE-937"
+- "CWE-1035"

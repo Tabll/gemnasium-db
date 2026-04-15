@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-77fj-vx54-gvh7"
+identifiers:
+- "GHSA-77fj-vx54-gvh7"
+package_slug: "go/github.com/gomarkdown/markdown"
+title: "Go Markdown has an Out-of-bounds Read in SmartypantsRenderer"
+description: "Processing a malformed input containing a `<` character that is not
+  followed by a `>` character anywhere in the remaining text with a SmartypantsRenderer
+  will lead to Out of Bounds read or a panic."
+date: "2026-04-14"
+pubdate: "2026-04-14"
+affected_range: "<0.0.0-20260411013819-759bbc3e3207"
+fixed_versions:
+- "0.0.0-20260411013819-759bbc3e3207"
+affected_versions: "All versions before 0.0.0-20260411013819-759bbc3e3207"
+not_impacted: "All versions starting from 0.0.0-20260411013819-759bbc3e3207"
+solution: "Upgrade to version 0.0.0-20260411013819-759bbc3e3207 or above."
+urls:
+- "https://github.com/advisories/GHSA-77fj-vx54-gvh7"
+- "https://github.com/gomarkdown/markdown/security/advisories/GHSA-77fj-vx54-gvh7"
+- "https://github.com/gomarkdown/markdown/commit/759bbc3e32073c3bc4e25969c132fc520eda2778"
+- "https://github.com/gomarkdown/markdown"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "5000fba8-89a5-4b57-ae56-732c98896f02"
+cwe_ids:
+- "CWE-125"
+- "CWE-937"
+- "CWE-1035"

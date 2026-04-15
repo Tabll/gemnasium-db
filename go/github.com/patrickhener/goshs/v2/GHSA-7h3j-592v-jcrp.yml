@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-7h3j-592v-jcrp"
+identifiers:
+- "GHSA-7h3j-592v-jcrp"
+package_slug: "go/github.com/patrickhener/goshs/v2"
+title: "goshs's public collaborator feed leaks .goshs ACL credentials and enables
+  unauthorized access"
+description: "goshs leaks file-based ACL credentials through its public collaborator
+  feed when the server is deployed without global basic auth. Requests to `.goshs`-protected
+  folders are logged before authorization is enforced, and the collaborator websocket
+  broadcasts raw request headers, including `Authorization`. An unauthenticated observer
+  can capture a victim's folder-specific basic-auth header and replay it to read,
+  upload, overwrite, and delete files inside the protected subtree. I reproduced this
+  on `v2.0.0-beta.5`, the latest supported release as of April 10, 2026."
+date: "2026-04-14"
+pubdate: "2026-04-14"
+affected_range: ">=2.0.0-beta.4 <2.0.0-beta.6"
+fixed_versions:
+- "2.0.0-beta.6"
+affected_versions: "All versions starting from 2.0.0-beta.4 before 2.0.0-beta.6"
+not_impacted: "All versions before 2.0.0-beta.4, all versions starting from 2.0.0-beta.6"
+solution: "Upgrade to version 2.0.0-beta.6 or above."
+urls:
+- "https://github.com/advisories/GHSA-7h3j-592v-jcrp"
+- "https://github.com/patrickhener/goshs/security/advisories/GHSA-7h3j-592v-jcrp"
+- "https://github.com/patrickhener/goshs"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+uuid: "febf7dd1-d3fd-4ee0-b832-64c44faf65d6"
+cwe_ids:
+- "CWE-200"
+- "CWE-937"
+- "CWE-1035"

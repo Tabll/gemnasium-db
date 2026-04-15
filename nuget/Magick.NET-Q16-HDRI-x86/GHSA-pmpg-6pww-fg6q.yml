@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-pmpg-6pww-fg6q"
+identifiers:
+- "GHSA-pmpg-6pww-fg6q"
+package_slug: "nuget/Magick.NET-Q16-HDRI-x86"
+title: "ImageMagick has out-of-bounds access in ConnectedComponentsImage() via CLI-controlled
+  connected-components:* artifacts"
+description: "When the `connected-components:*` define specifies an invalid index
+  and out of bound operation will result in an access violation."
+date: "2026-04-14"
+pubdate: "2026-04-14"
+affected_range: "[,14.20.0)"
+fixed_versions:
+- "14.20.0"
+affected_versions: "All versions before 14.20.0"
+not_impacted: "All versions starting from 14.20.0"
+solution: "Upgrade to version 14.20.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-pmpg-6pww-fg6q"
+- "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-pmpg-6pww-fg6q"
+- "https://github.com/ImageMagick/ImageMagick"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L"
+uuid: "cc5bdf29-33d0-4732-a50a-8862c14662c5"
+cwe_ids:
+- "CWE-125"
+- "CWE-787"
+- "CWE-937"
+- "CWE-1035"

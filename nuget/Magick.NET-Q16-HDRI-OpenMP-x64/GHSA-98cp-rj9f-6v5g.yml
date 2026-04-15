@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-98cp-rj9f-6v5g"
+identifiers:
+- "GHSA-98cp-rj9f-6v5g"
+package_slug: "nuget/Magick.NET-Q16-HDRI-OpenMP-x64"
+title: "ImageMagick has has a stack-buffer-overflow in MNG encoder with oversized
+  pallete"
+description: "The patch for GHSA-7h7q-j33q-hvpf was incomplete and still allows a
+  stack buffer overflow for the multi frame images."
+date: "2026-04-14"
+pubdate: "2026-04-14"
+affected_range: "[,14.20.0)"
+fixed_versions:
+- "14.20.0"
+affected_versions: "All versions before 14.20.0"
+not_impacted: "All versions starting from 14.20.0"
+solution: "Upgrade to version 14.20.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-98cp-rj9f-6v5g"
+- "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-98cp-rj9f-6v5g"
+- "https://github.com/ImageMagick/ImageMagick"
+cvss_v3: "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:L/I:H/A:H"
+uuid: "3b702845-4b29-4e06-bde3-b59529ebe4cf"
+cwe_ids:
+- "CWE-121"
+- "CWE-937"
+- "CWE-1035"

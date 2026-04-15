@@ -1,0 +1,40 @@
+---
+identifier: "GHSA-hw5x-4r37-72w7"
+identifiers:
+- "GHSA-hw5x-4r37-72w7"
+package_slug: "go/github.com/opentofu/opentofu"
+title: "OpenTofu has unbounded memory usage, high CPU usage, or deadlock in \"tofu
+  init\" with maliciously-crafted dependency responses"
+description: "When installing module packages from attacker-controlled sources, `tofu
+  init` may use unbounded memory, cause high CPU usage, or deadlock when encountering
+  maliciously-crafted TLS certificate chains or tar archives.\n\nThose who depend
+  on modules or providers served from untrusted third-party servers may experience
+  denial of service due to `tofu init` failing to complete successfully. In the case
+  of unbounded memory usage or high CPU usage, other processes running on the same
+  computer as OpenTofu may also fail or have their performance degraded due to the
+  depletion of shared system resources.\n\nThese vulnerabilities **do not** permit
+  arbitrary code execution or allow disclosure of confidential information."
+date: "2026-04-14"
+pubdate: "2026-04-14"
+affected_range: "<1.11.6"
+fixed_versions:
+- "1.11.6"
+affected_versions: "All versions before 1.11.6"
+not_impacted: "All versions starting from 1.11.6"
+solution: "Upgrade to version 1.11.6 or above."
+urls:
+- "https://github.com/advisories/GHSA-hw5x-4r37-72w7"
+- "https://github.com/opentofu/opentofu/security/advisories/GHSA-hw5x-4r37-72w7"
+- "https://github.com/opentofu/opentofu/issues/4029"
+- "https://github.com/opentofu/opentofu/issues/4030"
+- "https://github.com/opentofu/opentofu/issues/4031"
+- "https://github.com/opentofu/opentofu/issues/4032"
+- "https://github.com/opentofu/opentofu/pull/3966"
+- "https://github.com/opentofu/opentofu"
+- "https://github.com/opentofu/opentofu/releases/tag/v1.11.6"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:N/A:L"
+uuid: "0d6a37ee-bd25-454f-b0f7-ae1fab2af1a7"
+cwe_ids:
+- "CWE-1395"
+- "CWE-937"
+- "CWE-1035"

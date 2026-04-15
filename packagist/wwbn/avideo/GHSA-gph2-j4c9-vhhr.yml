@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-gph2-j4c9-vhhr"
+identifiers:
+- "GHSA-gph2-j4c9-vhhr"
+package_slug: "packagist/wwbn/avideo"
+title: "WWBN AVideo YPTSocket WebSocket Broadcast Relay Leads to Unauthenticated Cross-User
+  JavaScript Execution via Client-Side eval() Sinks"
+description: "The YPTSocket plugin's WebSocket server relays attacker-supplied JSON
+  message bodies to every connected client without sanitizing the `msg` or `callback`
+  fields. On the client side, `plugin/YPTSocket/script.js` contains two `eval()` sinks
+  fed directly by those relayed fields (`json.msg.autoEvalCodeOnHTML` at line 568
+  and `json.callback` at line 95). Because tokens are minted for anonymous visitors
+  and never revalidated beyond decryption, an unauthenticated attacker can broadcast
+  arbitrary JavaScript that executes in the origin of every currently-connected user
+  (including administrators), resulting in universal account takeover, session theft,
+  and privileged action execution."
+date: "2026-04-14"
+pubdate: "2026-04-14"
+affected_range: "<=29.0"
+fixed_versions: []
+affected_versions: "All versions up to 29.0"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-gph2-j4c9-vhhr"
+- "https://github.com/WWBN/AVideo/security/advisories/GHSA-gph2-j4c9-vhhr"
+- "https://github.com/WWBN/AVideo/commit/c08694bf6264eb4decceb78c711baee2609b4efd"
+- "https://github.com/WWBN/AVideo"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H"
+uuid: "4ac060ac-b24c-4bba-9f31-75920610c213"
+cwe_ids:
+- "CWE-94"
+- "CWE-937"
+- "CWE-1035"

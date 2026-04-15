@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-fj52-5g4h-gmq8"
+identifiers:
+- "GHSA-fj52-5g4h-gmq8"
+package_slug: "pypi/pyload-ng"
+title: "pyLoad's Session Not Invalidated After Permission Changes"
+description: "The `pyload` application does not properly invalidate or modify sessions
+  upon changes made to a user's permissions."
+date: "2026-04-14"
+pubdate: "2026-04-14"
+affected_range: "<=0.5.0b3.dev97"
+fixed_versions: []
+affected_versions: "All versions up to 0.5.0b3.dev97"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-fj52-5g4h-gmq8"
+- "https://github.com/pyload/pyload/security/advisories/GHSA-fj52-5g4h-gmq8"
+- "https://github.com/pyload/pyload/commit/e95804fb0d06cbb07d2ba380fc494d9ff89b68c1"
+- "https://github.com/pyload/pyload"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "3daafed5-1492-4fee-bd4f-df790c839790"
+cwe_ids:
+- "CWE-613"
+- "CWE-937"
+- "CWE-1035"

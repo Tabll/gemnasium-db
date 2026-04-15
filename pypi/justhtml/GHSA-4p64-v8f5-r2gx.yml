@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-4p64-v8f5-r2gx"
+identifiers:
+- "GHSA-4p64-v8f5-r2gx"
+package_slug: "pypi/justhtml"
+title: "Multiple security fixes in justhtml"
+description: "`justhtml` `1.16.0` fixes multiple security issues in sanitization,
+  serialization, and programmatic DOM handling.\n\nMost of these issues affected one
+  of these advanced paths rather than ordinary parsed HTML with the default safe settings:\n\n-
+  programmatic DOM input to `sanitize()` or `sanitize_dom()`\n- reused or mutated
+  sanitization policy objects\n- custom policies that preserve foreign namespaces
+  such as SVG or MathML"
+date: "2026-04-14"
+pubdate: "2026-04-14"
+affected_range: "<1.16.0"
+fixed_versions:
+- "1.16.0"
+affected_versions: "All versions before 1.16.0"
+not_impacted: "All versions starting from 1.16.0"
+solution: "Upgrade to version 1.16.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-4p64-v8f5-r2gx"
+- "https://github.com/EmilStenstrom/justhtml/security/advisories/GHSA-4p64-v8f5-r2gx"
+- "https://github.com/EmilStenstrom/justhtml"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:N/VI:N/VA:N/SC:L/SI:L/SA:N"
+uuid: "5a404148-8485-4d94-99ae-5ae85dbfa9b8"
+cwe_ids:
+- "CWE-178"
+- "CWE-436"
+- "CWE-471"
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

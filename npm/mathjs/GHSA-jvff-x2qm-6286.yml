@@ -5,23 +5,24 @@ identifiers:
 package_slug: "npm/mathjs"
 title: "mathjs Allows Improperly Controlled Modification of Dynamically-Determined
   Object Attributes"
-description: "Two security vulnerabilities where detected that allowed executing arbitrary
-  JavaScript via the expression parser of mathjs. You can be affected when you have
-  an application where users can evaluate arbitrary expressions using the mathjs expression
-  parser."
-date: "2026-04-10"
+description: "Two security vulnerabilities, the first of which was introduced in version
+  13.1.0, were detected that allowed executing arbitrary JavaScript via the expression
+  parser of mathjs. You can be affected when you have an application where users can
+  evaluate arbitrary expressions using the mathjs expression parser."
+date: "2026-04-14"
 pubdate: "2026-04-10"
-affected_range: "<15.2.0"
+affected_range: ">=13.1.0 <15.2.0"
 fixed_versions:
 - "15.2.0"
-affected_versions: "All versions before 15.2.0"
-not_impacted: "All versions starting from 15.2.0"
+affected_versions: "All versions starting from 13.1.0 before 15.2.0"
+not_impacted: "All versions before 13.1.0, all versions starting from 15.2.0"
 solution: "Upgrade to version 15.2.0 or above."
 urls:
 - "https://github.com/advisories/GHSA-jvff-x2qm-6286"
 - "https://github.com/josdejong/mathjs/security/advisories/GHSA-jvff-x2qm-6286"
 - "https://github.com/josdejong/mathjs/pull/3656"
 - "https://github.com/josdejong/mathjs/commit/0aee2f61866e35ffa0aef915221cdf6b026ffdd4"
+- "https://github.com/josdejong/mathjs/commit/bcf0da46f0b8577ec03c9ecd7bff8b5c2543a611"
 - "https://github.com/josdejong/mathjs"
 - "https://github.com/josdejong/mathjs/releases/tag/v15.2.0"
 cvss_v3: "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
