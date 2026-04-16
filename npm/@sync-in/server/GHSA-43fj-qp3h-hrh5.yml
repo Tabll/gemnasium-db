@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-43fj-qp3h-hrh5"
+identifiers:
+- "GHSA-43fj-qp3h-hrh5"
+package_slug: "npm/@sync-in/server"
+title: "Sync-in Server has Username Enumeration via Timing Attack"
+description: "The `/api/auth/login` endpoint contains a logic flaw that allows unauthenticated
+  remote attackers to enumerate valid usernames by measuring the application's response
+  time."
+date: "2026-04-15"
+pubdate: "2026-04-15"
+affected_range: "<2.2.0"
+fixed_versions:
+- "2.2.0"
+affected_versions: "All versions before 2.2.0"
+not_impacted: "All versions starting from 2.2.0"
+solution: "Upgrade to version 2.2.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-43fj-qp3h-hrh5"
+- "https://github.com/Sync-in/server/security/advisories/GHSA-43fj-qp3h-hrh5"
+- "https://github.com/Sync-in/server"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N"
+uuid: "67b28e7f-066d-4b6f-84ea-f299889005de"
+cwe_ids:
+- "CWE-208"
+- "CWE-937"
+- "CWE-1035"

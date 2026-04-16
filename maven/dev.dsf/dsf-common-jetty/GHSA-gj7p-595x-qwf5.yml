@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-gj7p-595x-qwf5"
+identifiers:
+- "GHSA-gj7p-595x-qwf5"
+package_slug: "maven/dev.dsf/dsf-common-jetty"
+title: "Data Sharing Framework is Missing Session Timeout for OIDC Sessions"
+description: "OIDC-authenticated sessions had no configured maximum inactivity timeout.
+  Sessions persisted indefinitely after login, even after the OIDC access token expired."
+date: "2026-04-15"
+pubdate: "2026-04-15"
+affected_range: "[,]"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-gj7p-595x-qwf5"
+- "https://github.com/datasharingframework/dsf/security/advisories/GHSA-gj7p-595x-qwf5"
+- "https://github.com/datasharingframework/dsf/commit/7d25feafb83d66cb59985ac88568b67d937b1937"
+- "https://github.com/datasharingframework/dsf/commit/f4ecb002f7d12642f92da6b79371ed367d0140e7"
+- "https://dsf.dev/operations/v2.1.0/bpe/oidc.html"
+- "https://dsf.dev/operations/v2.1.0/fhir/oidc.html"
+- "https://github.com/datasharingframework/dsf"
+cvss_v3: "CVSS:3.1/AV:P/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:P/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N"
+uuid: "6ff7ed18-318b-42ea-8f89-f2cb292d7b3d"
+cwe_ids:
+- "CWE-613"
+- "CWE-937"
+- "CWE-1035"

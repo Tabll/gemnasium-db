@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-33r3-4whc-44c2"
+identifiers:
+- "GHSA-33r3-4whc-44c2"
+package_slug: "npm/vite-plus"
+title: " Path traversal in vite-plus/binding downloadPackageManager() writes outside
+  VP_HOME"
+description: "`downloadPackageManager()` in `vite-plus/binding` accepts an untrusted
+  `version` string and uses it directly in filesystem paths. A caller can supply `../`
+  segments to escape the `VP_HOME/package_manager/<pm>/` cache root and cause Vite+
+  to delete, replace, and populate directories outside the intended cache location."
+date: "2026-04-16"
+pubdate: "2026-04-16"
+affected_range: "<0.1.17"
+fixed_versions:
+- "0.1.17"
+affected_versions: "All versions before 0.1.17"
+not_impacted: "All versions starting from 0.1.17"
+solution: "Upgrade to version 0.1.17 or above."
+urls:
+- "https://github.com/advisories/GHSA-33r3-4whc-44c2"
+- "https://github.com/voidzero-dev/vite-plus/security/advisories/GHSA-33r3-4whc-44c2"
+- "https://github.com/voidzero-dev/vite-plus"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:C/C:N/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:H/SC:N/SI:H/SA:H"
+uuid: "56575425-7a92-494e-b4a3-1d1735cfc75c"
+cwe_ids:
+- "CWE-22"
+- "CWE-937"
+- "CWE-1035"

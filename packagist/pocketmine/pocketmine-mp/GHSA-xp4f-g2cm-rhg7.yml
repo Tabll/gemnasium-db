@@ -1,0 +1,36 @@
+---
+identifier: "GHSA-xp4f-g2cm-rhg7"
+identifiers:
+- "GHSA-xp4f-g2cm-rhg7"
+package_slug: "packagist/pocketmine/pocketmine-mp"
+title: "PocketMine-MP has LogDoS by many junk properties in client data JWT in LoginPacket"
+description: "Attackers can fill the body of the clientData JWT in LoginPacket with
+  lots of junk properties, causing the server to flood warning messages, as well as
+  wasting CPU time.\n\nThis happens because the JsonMapper instance used to process
+  the JWT body is configured to warn on unexpected properties instead of rejecting
+  them outright. While this behaviour increases flexibility for random changes introduced
+  by Microsoft, it also creates vulnerabilities if not handled carefully.\n\nThis
+  vulnerability affects PocketMine-MP servers exposed to a public network where unknown
+  actors may have access."
+date: "2026-04-15"
+pubdate: "2026-04-15"
+affected_range: "<5.42.1"
+fixed_versions:
+- "5.42.1"
+affected_versions: "All versions before 5.42.1"
+not_impacted: "All versions starting from 5.42.1"
+solution: "Upgrade to version 5.42.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-xp4f-g2cm-rhg7"
+- "https://github.com/pmmp/PocketMine-MP/security/advisories/GHSA-xp4f-g2cm-rhg7"
+- "https://github.com/pmmp/PocketMine-MP/commit/c1d4a813fb8c21bfd8b9affd040da864b794df71"
+- "https://github.com/pmmp/PocketMine-MP"
+- "https://github.com/pmmp/PocketMine-MP/blob/5.41.1/src/network/mcpe/handler/LoginPacketHandler.php#L289-L303"
+- "https://github.com/pmmp/PocketMine-MP/blob/5.41.1/src/network/mcpe/handler/LoginPacketHandler.php#L334-L350"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N"
+uuid: "d2c7aedd-13ab-41d8-9f9b-97310b5d2420"
+cwe_ids:
+- "CWE-779"
+- "CWE-937"
+- "CWE-1035"

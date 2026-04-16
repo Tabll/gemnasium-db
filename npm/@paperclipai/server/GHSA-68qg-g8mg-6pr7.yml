@@ -8,8 +8,10 @@ title: "paperclip Vulnerable to Unauthenticated Remote Code Execution via Import
 description: "An unauthenticated attacker can achieve full remote code execution on
   any network-accessible Paperclip instance running in `authenticated` mode with default
   configuration. No user interaction, no credentials, just the target's address. The
-  entire chain is six API calls."
-date: "2026-04-10"
+  entire chain is six API calls.\n\nI verified every step against the latest version.
+  I have a fully automated PoC script and a video recording available.\n\nDiscord:
+  sagi03581"
+date: "2026-04-15"
 pubdate: "2026-04-10"
 affected_range: "<2026.410.0"
 fixed_versions:
@@ -24,8 +26,8 @@ urls:
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H"
 uuid: "de58b4c7-b050-45cf-a79f-ed699508e654"
 cwe_ids:
+- "CWE-1188"
 - "CWE-287"
 - "CWE-862"
-- "CWE-1188"
 - "CWE-937"
 - "CWE-1035"

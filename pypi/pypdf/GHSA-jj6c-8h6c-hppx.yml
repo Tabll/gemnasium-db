@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-jj6c-8h6c-hppx"
+identifiers:
+- "GHSA-jj6c-8h6c-hppx"
+package_slug: "pypi/pypdf"
+title: "pypdf has long runtimes for wrong size values in cross-reference and object
+  streams"
+description: "An attacker who uses this vulnerability can craft a PDF which leads
+  to long runtimes. This requires cross-reference streams with wrong large `/Size`
+  values or object streams with wrong large `/N` values."
+date: "2026-04-15"
+pubdate: "2026-04-15"
+affected_range: "<6.10.1"
+fixed_versions:
+- "6.10.1"
+affected_versions: "All versions before 6.10.1"
+not_impacted: "All versions starting from 6.10.1"
+solution: "Upgrade to version 6.10.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-jj6c-8h6c-hppx"
+- "https://github.com/py-pdf/pypdf/security/advisories/GHSA-jj6c-8h6c-hppx"
+- "https://github.com/py-pdf/pypdf/pull/3733"
+- "https://github.com/py-pdf/pypdf"
+- "https://github.com/py-pdf/pypdf/releases/tag/6.10.1"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L"
+cvss_v4: "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N"
+uuid: "a87eb816-61eb-4159-9442-f921efd34ae9"
+cwe_ids:
+- "CWE-834"
+- "CWE-937"
+- "CWE-1035"
