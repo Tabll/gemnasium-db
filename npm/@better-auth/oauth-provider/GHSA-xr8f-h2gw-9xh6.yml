@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-xr8f-h2gw-9xh6"
+identifiers:
+- "GHSA-xr8f-h2gw-9xh6"
+package_slug: "npm/@better-auth/oauth-provider"
+title: "OAuth 2.1 Provider: Unprivileged users can register OAuth clients"
+description: "An authorization bypass in the OAuth provider allows any authenticated
+  low-privilege user to create OAuth clients even when the deployment configures clientPrivileges
+  to restrict client creation. The option contract explicitly includes a create action,
+  but the create paths never invoke that callback, so applications that rely on clientPrivileges
+  for RBAC can be silently misconfigured into allowing unauthorized client registration."
+date: "2026-04-16"
+pubdate: "2026-04-16"
+affected_range: ">=1.4.8-beta.7 <1.6.5||>=1.7.0-beta.0 <=1.7.0-beta.1"
+fixed_versions:
+- "1.6.5"
+affected_versions: "All versions starting from 1.4.8-beta.7 before 1.6.5, all versions
+  starting from 1.7.0-beta.0 up to 1.7.0-beta.1"
+not_impacted: "All versions before 1.4.8-beta.7, all versions starting from 1.6.5
+  before 1.7.0-beta.0, all versions after 1.7.0-beta.1"
+solution: "Upgrade to version 1.6.5 or above."
+urls:
+- "https://github.com/advisories/GHSA-xr8f-h2gw-9xh6"
+- "https://github.com/better-auth/better-auth/security/advisories/GHSA-xr8f-h2gw-9xh6"
+- "https://github.com/better-auth/better-auth"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:H/VA:N/SC:L/SI:H/SA:N"
+uuid: "a4054fd6-639d-40a2-bbce-771f109b9652"
+cwe_ids:
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-r7w7-9xr2-qq2r"
+identifiers:
+- "GHSA-r7w7-9xr2-qq2r"
+package_slug: "pypi/langchain-openai"
+title: "langchain-openai: Image token counting SSRF protection can be bypassed via
+  DNS rebinding"
+description: "`langchain-openai`'s `_url_to_size()` helper (used by `get_num_tokens_from_messages`
+  for image token counting) validated URLs for SSRF protection and then fetched them
+  in a separate network operation with independent DNS resolution. This left a TOCTOU
+  / DNS rebinding window: an attacker-controlled hostname could resolve to a public
+  IP during validation and then to a private/localhost IP during the actual fetch.\n\nThe
+  practical impact is limited because the fetched response body is passed directly
+  to Pillow's `Image.open()` to extract dimensions — the response content is never
+  returned, logged, or otherwise exposed to the caller. An attacker cannot exfiltrate
+  data from internal services through this path. A potential risk is blind probing
+  (inferring whether an internal host/port is open based on timing or error behavior)."
+date: "2026-04-16"
+pubdate: "2026-04-16"
+affected_range: "<1.1.14"
+fixed_versions:
+- "1.1.14"
+affected_versions: "All versions before 1.1.14"
+not_impacted: "All versions starting from 1.1.14"
+solution: "Upgrade to version 1.1.14 or above."
+urls:
+- "https://github.com/advisories/GHSA-r7w7-9xr2-qq2r"
+- "https://github.com/langchain-ai/langchain/security/advisories/GHSA-r7w7-9xr2-qq2r"
+- "https://github.com/langchain-ai/langchain"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:N/A:N"
+uuid: "fc8a7810-f973-4507-9787-651bb56356d6"
+cwe_ids:
+- "CWE-918"
+- "CWE-937"
+- "CWE-1035"

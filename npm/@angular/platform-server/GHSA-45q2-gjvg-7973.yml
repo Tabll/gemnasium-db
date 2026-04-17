@@ -1,0 +1,49 @@
+---
+identifier: "GHSA-45q2-gjvg-7973"
+identifiers:
+- "GHSA-45q2-gjvg-7973"
+package_slug: "npm/@angular/platform-server"
+title: "Angular: SSRF via protocol-relative and backslash URLs in Angular Platform-Server"
+description: "A [Server-Side Request Forgery (SSRF)](https://developer.mozilla.org/en-US/docs/Web/Security/Attacks/SSRF)
+  vulnerability exists in `@angular/platform-server` due to improper handling of URLs
+  during Server-Side Rendering (SSR).\n\nWhen an attacker sends a request such as
+  `GET /\\evil.com/ HTTP/1.1` the server engine (Express, etc.) passes the URL string
+  to Angular’s rendering functions.\n\nBecause the URL parser normalizes the backslash
+  to a forward slash for HTTP/HTTPS schemes, the internal state of the application
+  is hijacked to believe the current origin is `evil.com`. This misinterpretation
+  tricks the application into treating the attacker’s domain as the local origin.
+  Consequently, any relative `HttpClient` requests or `PlatformLocation.hostname`
+  references are redirected to the attacker controlled server, potentially exposing
+  internal APIs or metadata services.\n\n**Affected APIs:**\n- `renderModule`\n- `renderApplication`\n-
+  `CommonEngine` (from `@angular/ssr`)\n\n**Non-Affected APIs:**\n- `AngularAppEngine`
+  (from `@angular/ssr`)\n- `AngularNodeAppEngine` (from `@angular/ssr`)"
+date: "2026-04-16"
+pubdate: "2026-04-16"
+affected_range: ">=22.0.0-next.0 <22.0.0-next.8||>=21.0.0-next.0 <21.2.9||>=20.0.0-next.0
+  <20.3.19||>=19.0.0-next.0 <19.2.21||<=18.2.14"
+fixed_versions:
+- "22.0.0-next.8"
+- "21.2.9"
+- "20.3.19"
+- "19.2.21"
+affected_versions: "All versions up to 18.2.14, all versions starting from 19.0.0-next.0
+  before 19.2.21, all versions starting from 20.0.0-next.0 before 20.3.19, all versions
+  starting from 21.0.0-next.0 before 21.2.9, all versions starting from 22.0.0-next.0
+  before 22.0.0-next.8"
+not_impacted: "All versions after 18.2.14 before 19.0.0-next.0, all versions starting
+  from 19.2.21 before 20.0.0-next.0, all versions starting from 20.3.19 before 21.0.0-next.0,
+  all versions starting from 21.2.9 before 22.0.0-next.0, all versions starting from
+  22.0.0-next.8"
+solution: "Upgrade to versions 19.2.21, 20.3.19, 21.2.9, 22.0.0-next.8 or above."
+urls:
+- "https://github.com/advisories/GHSA-45q2-gjvg-7973"
+- "https://github.com/angular/angular/security/advisories/GHSA-45q2-gjvg-7973"
+- "https://github.com/angular/angular/pull/68194"
+- "https://github.com/angular/angular"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:L/SI:L/SA:N"
+uuid: "dd94114b-a151-4164-ac2d-c2513bfec62d"
+cwe_ids:
+- "CWE-918"
+- "CWE-937"
+- "CWE-1035"

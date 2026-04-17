@@ -1,0 +1,37 @@
+---
+identifier: "GHSA-4jjr-vmv7-wh4w"
+identifiers:
+- "GHSA-4jjr-vmv7-wh4w"
+package_slug: "packagist/statamic/cms"
+title: "Statamic: Unsafe method invocation via query value resolution allows data
+  destruction"
+description: "Manipulating query parameters on Control Panel and REST API endpoints,
+  or arguments in GraphQL queries, could result in the loss of content, assets, and
+  user accounts.\n\nThe Control Panel requires authentication with minimal permissions
+  in order to exploit. e.g. \"view entries\" permission to delete entries, or \"view
+  users\" permission to delete users, etc.\n\nThe REST and GraphQL API exploits do
+  not require any permissions, however neither are enabled by default. In order to
+  be exploited, they would need to be explicitly enabled with no authentication configured,
+  and the specific resources enabled too.\n\nSites that enable the REST or GraphQL
+  API without authentication should treat patching as critical priority."
+date: "2026-04-16"
+pubdate: "2026-04-16"
+affected_range: "<5.73.20||>=6.0.0-alpha.1 <6.13.0"
+fixed_versions:
+- "5.73.20"
+- "6.13.0"
+affected_versions: "All versions before 5.73.20, all versions starting from 6.0.0-alpha.1
+  before 6.13.0"
+not_impacted: "All versions starting from 5.73.20 before 6.0.0-alpha.1, all versions
+  starting from 6.13.0"
+solution: "Upgrade to versions 5.73.20, 6.13.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-4jjr-vmv7-wh4w"
+- "https://github.com/statamic/cms/security/advisories/GHSA-4jjr-vmv7-wh4w"
+- "https://github.com/statamic/cms"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H"
+uuid: "10a0e5a9-785a-4af8-b463-0110d7584dc4"
+cwe_ids:
+- "CWE-470"
+- "CWE-937"
+- "CWE-1035"

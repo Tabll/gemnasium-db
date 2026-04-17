@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-2x8m-83vc-6wv4"
+identifiers:
+- "GHSA-2x8m-83vc-6wv4"
+package_slug: "npm/flowise-components"
+title: "Flowise: SSRF Protection Bypass (TOCTOU & Default Insecure)"
+description: "The core security wrappers (secureAxiosRequest and secureFetch) intended
+  to prevent Server-Side Request Forgery (SSRF) contain multiple logic flaws. These
+  flaws allow attackers to bypass the allow/deny lists via DNS Rebinding (Time-of-Check
+  Time-of-Use) or by exploiting the default configuration which fails to enforce any
+  deny list."
+date: "2026-04-16"
+pubdate: "2026-04-16"
+affected_range: "<3.1.0"
+fixed_versions:
+- "3.1.0"
+affected_versions: "All versions before 3.1.0"
+not_impacted: "All versions starting from 3.1.0"
+solution: "Upgrade to version 3.1.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-2x8m-83vc-6wv4"
+- "https://github.com/FlowiseAI/Flowise/security/advisories/GHSA-2x8m-83vc-6wv4"
+- "https://github.com/FlowiseAI/Flowise"
+cvss_v3: "CVSS:3.0/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:L"
+uuid: "a8e306b2-dc80-40ff-888c-f4fba35cc7b4"
+cwe_ids:
+- "CWE-367"
+- "CWE-918"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-qqvm-66q4-vf5c"
+identifiers:
+- "GHSA-qqvm-66q4-vf5c"
+package_slug: "npm/flowise"
+title: "Flowise: SSRF Protection Bypass via Direct node-fetch / axios Usage (Patch
+  Enforcement Failure)"
+description: "Flowise introduced SSRF protections through a centralized HTTP security
+  wrapper (`httpSecurity.ts`) that implements deny-list validation and IP pinning
+  logic.\n\nHowever, multiple tool implementations directly import and invoke raw
+  HTTP clients (`node-fetch`, `axios`Instead of using the secured wrapper.\n\nBecause
+  enforcement is neither mandatory nor centralized, these tools bypass SSRF mitigation
+  entirely, restoring full SSRF capability even after the patch.\n\nThis issue is
+  distinct from specification trust issues and represents incomplete mitigation of
+  previously addressed SSRF vulnerabilities."
+date: "2026-04-16"
+pubdate: "2026-04-16"
+affected_range: "<3.1.0"
+fixed_versions:
+- "3.1.0"
+affected_versions: "All versions before 3.1.0"
+not_impacted: "All versions starting from 3.1.0"
+solution: "Upgrade to version 3.1.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-qqvm-66q4-vf5c"
+- "https://github.com/FlowiseAI/Flowise/security/advisories/GHSA-qqvm-66q4-vf5c"
+- "https://github.com/FlowiseAI/Flowise"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:L/VA:N/SC:L/SI:L/SA:N"
+uuid: "34b1fa39-2845-4d24-9b1d-cf3f32267ebd"
+cwe_ids:
+- "CWE-918"
+- "CWE-937"
+- "CWE-1035"

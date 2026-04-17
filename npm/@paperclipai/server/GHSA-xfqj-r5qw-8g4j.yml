@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-xfqj-r5qw-8g4j"
+identifiers:
+- "GHSA-xfqj-r5qw-8g4j"
+package_slug: "npm/@paperclipai/server"
+title: "Paperclip: Unauthenticated Access to Multiple API Endpoints in Authenticated
+  Mode"
+description: "Several API endpoints in `authenticated` mode have no authentication
+  at all. They respond to completely unauthenticated requests with sensitive data
+  or allow state-changing operations. No account, no session, no API key needed.\n\nVerified
+  against the latest version.\n\nDiscord: sagi03581"
+date: "2026-04-16"
+pubdate: "2026-04-16"
+affected_range: "<2026.416.0"
+fixed_versions:
+- "2026.416.0"
+affected_versions: "All versions before 2026.416.0"
+not_impacted: "All versions starting from 2026.416.0"
+solution: "Upgrade to version 2026.416.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-xfqj-r5qw-8g4j"
+- "https://github.com/paperclipai/paperclip/security/advisories/GHSA-xfqj-r5qw-8g4j"
+- "https://github.com/paperclipai/paperclip"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:L"
+uuid: "283cab8f-0b63-4eea-a359-a2bd76f24525"
+cwe_ids:
+- "CWE-306"
+- "CWE-937"
+- "CWE-1035"

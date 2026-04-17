@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-m7mq-85xj-9x33"
+identifiers:
+- "GHSA-m7mq-85xj-9x33"
+package_slug: "npm/flowise"
+title: "Flowise: Weak Default Token Hash Secret"
+description: "**Detection Method:** Kolega.dev Deep Code Scan\n\n| Attribute | Value
+  |\n|---|---|\n| Location | packages/server/src/enterprise/utils/tempTokenUtils.ts:31-34
+  |\n| Practical Exploitability | Medium |\n| Developer Approver | faizan@kolega.ai
+  |"
+date: "2026-04-16"
+pubdate: "2026-04-16"
+affected_range: "<3.1.0"
+fixed_versions:
+- "3.1.0"
+affected_versions: "All versions before 3.1.0"
+not_impacted: "All versions starting from 3.1.0"
+solution: "Upgrade to version 3.1.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-m7mq-85xj-9x33"
+- "https://github.com/FlowiseAI/Flowise/security/advisories/GHSA-m7mq-85xj-9x33"
+- "https://github.com/FlowiseAI/Flowise"
+cvss_v3: "CVSS:3.0/AV:L/AC:H/PR:H/UI:R/S:U/C:H/I:H/A:N"
+uuid: "10a7977a-c8e4-4435-b06e-16839226aa50"
+cwe_ids:
+- "CWE-798"
+- "CWE-937"
+- "CWE-1035"

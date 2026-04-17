@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-x5w6-38gp-mrqh"
+identifiers:
+- "GHSA-x5w6-38gp-mrqh"
+package_slug: "npm/flowise"
+title: "Flowise: Password Reset Link Sent Over Unsecured HTTP"
+description: "**Summary:**\nThe password reset functionality on [cloud.flowiseai.com](http://cloud.flowiseai.com/)
+  sends a reset password link over the unsecured HTTP protocol instead of HTTPS. This
+  behavior introduces the risk of a man-in-the-middle (MITM) attack, where an attacker
+  on the same network as the user (e.g., public Wi-Fi) can intercept the reset link
+  and gain unauthorized access to the victim’s account.\n\n**Steps to Reproduce:**\n1.
+  Sign up for a new account on https://cloud.flowiseai.com/register.\n2. Navigate
+  to the https://cloud.flowiseai.com/forgot-password page and enter your email.\n3.
+  Open your inbox and locate the password reset email.\n4. Copy the reset link and
+  inspect its protocol – it uses http:// instead of https://."
+date: "2026-04-16"
+pubdate: "2026-04-16"
+affected_range: "<3.1.0"
+fixed_versions:
+- "3.1.0"
+affected_versions: "All versions before 3.1.0"
+not_impacted: "All versions starting from 3.1.0"
+solution: "Upgrade to version 3.1.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-x5w6-38gp-mrqh"
+- "https://github.com/FlowiseAI/Flowise/security/advisories/GHSA-x5w6-38gp-mrqh"
+- "https://hackerone.com/reports/1888915"
+- "https://github.com/FlowiseAI/Flowise"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:A/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+uuid: "3d3af728-0f46-4bf4-ad27-9dc08e01da94"
+cwe_ids:
+- "CWE-319"
+- "CWE-937"
+- "CWE-1035"

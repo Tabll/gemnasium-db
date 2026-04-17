@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-3g92-f9ch-qjcm"
+identifiers:
+- "GHSA-3g92-f9ch-qjcm"
+package_slug: "cargo/p3-symmetric"
+title: "Plonky3: The sponge construction used to get a hash function from a cryptographic
+  permutation is not collision resistant for inputs of different lengths"
+description: "The impact of this vulnerability is a little difficult to estimate.
+  It is important to note that, in circumstances where the number of elements to be
+  hashed is known and fixed in advance, (as is the case for most STARKS), the method
+  is collision resistant. This vulnerability only applies if a malicious user is able
+  to manipulate the number of elements to be hashed.\n\nThat being said, there are
+  theoretically situations where this could allow for an amortising of grinding costs
+  (if a prover can manipulate things to get the same hasher state across multiple
+  proofs)."
+date: "2026-04-16"
+pubdate: "2026-04-16"
+affected_range: "<=0.5.2"
+fixed_versions: []
+affected_versions: "All versions up to 0.5.2"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-3g92-f9ch-qjcm"
+- "https://github.com/Plonky3/Plonky3/security/advisories/GHSA-3g92-f9ch-qjcm"
+- "https://github.com/Plonky3/Plonky3/commit/5c1dc1d64c0516a8911bbf3ea40f173c21d6ae47"
+- "https://github.com/Plonky3/Plonky3"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "e7282ab6-da41-41e2-90f8-47fb056c40fc"
+cwe_ids:
+- "CWE-328"
+- "CWE-937"
+- "CWE-1035"

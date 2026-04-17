@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-965h-392x-2mh5"
+identifiers:
+- "GHSA-965h-392x-2mh5"
+package_slug: "cargo/rustls-webpki"
+title: "webpki: Name constraints for URI names were incorrectly accepted"
+description: "Name constraints for URI names were ignored and therefore accepted.\n\nNote
+  this library does not provide an API for asserting URI names, and URI name constraints
+  are otherwise not implemented.  URI name constraints are now rejected unconditionally.\n\nSince
+  name constraints are restrictions on otherwise properly-issued certificates, this
+  bug is reachable only after signature verification and requires misissuance to exploit."
+date: "2026-04-16"
+pubdate: "2026-04-16"
+affected_range: ">=0.101.0 <0.103.12||>=0.104.0-alpha.1 <0.104.0-alpha.6"
+fixed_versions:
+- "0.103.12"
+- "0.104.0-alpha.6"
+affected_versions: "All versions starting from 0.101.0 before 0.103.12, all versions
+  starting from 0.104.0-alpha.1 before 0.104.0-alpha.6"
+not_impacted: "All versions before 0.101.0, all versions starting from 0.103.12 before
+  0.104.0-alpha.1, all versions starting from 0.104.0-alpha.6"
+solution: "Upgrade to versions 0.103.12, 0.104.0-alpha.6 or above."
+urls:
+- "https://github.com/advisories/GHSA-965h-392x-2mh5"
+- "https://github.com/rustls/webpki/security/advisories/GHSA-965h-392x-2mh5"
+- "https://github.com/rustls/webpki"
+- "https://rustsec.org/advisories/RUSTSEC-2026-0098.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:N/I:L/A:N"
+uuid: "5782e892-3bc5-4f07-9f4c-f7e9eae95256"
+cwe_ids:
+- "CWE-295"
+- "CWE-937"
+- "CWE-1035"

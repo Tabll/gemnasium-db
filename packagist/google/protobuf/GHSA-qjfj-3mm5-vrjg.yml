@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-qjfj-3mm5-vrjg"
+identifiers:
+- "GHSA-qjfj-3mm5-vrjg"
+package_slug: "packagist/google/protobuf"
+title: "Withdrawn Advisory: Protobuf: Denial of Service issue through malicious messages
+  containing negative varints or deep recursion"
+description: "## Duplicate Advisory\n\nThis advisory has been withdrawn because it
+  is a duplicate of GHSA-p2gh-cfq4-4wjc. This link is maintained to preserve external
+  references.\n\n## Original Description\nA Denial of Service (DoS) vulnerability
+  exists in the Protobuf PHP library during the parsing of untrusted input. Maliciously
+  structured messages—specifically those containing negative varints or deep recursion—can
+  be used to crash the application, impacting service availability."
+date: "2026-04-16"
+pubdate: "2026-04-16"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-qjfj-3mm5-vrjg"
+- "https://github.com/protocolbuffers/protobuf/security/advisories/GHSA-p2gh-cfq4-4wjc"
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-6409"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+uuid: "b92e1c53-7a5e-444a-8ef3-6a4d3bb4a395"
+cwe_ids:
+- "CWE-20"
+- "CWE-937"
+- "CWE-1035"

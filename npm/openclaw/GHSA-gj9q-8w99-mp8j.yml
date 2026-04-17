@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-gj9q-8w99-mp8j"
+identifiers:
+- "GHSA-gj9q-8w99-mp8j"
+package_slug: "npm/openclaw"
+title: "OpenClaw: TOCTOU read in exec script preflight"
+description: "OpenClaw's exec script preflight validator previously validated and
+  then read a script by mutable pathname. A local race could swap the path between
+  validation and read, causing preflight analysis to inspect a different file identity
+  than the one that passed the workspace boundary check."
+date: "2026-04-16"
+pubdate: "2026-04-16"
+affected_range: "<2026.4.10"
+fixed_versions:
+- "2026.4.10"
+affected_versions: "All versions before 2026.4.10"
+not_impacted: "All versions starting from 2026.4.10"
+solution: "Upgrade to version 2026.4.10 or above."
+urls:
+- "https://github.com/advisories/GHSA-gj9q-8w99-mp8j"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-gj9q-8w99-mp8j"
+- "https://github.com/openclaw/openclaw/pull/62333"
+- "https://github.com/openclaw/openclaw/commit/b024fae9e5df43e9b69b2daebb72be3469d52e91"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:L/AC:H/AT:N/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N"
+uuid: "d669b34a-747d-46ec-9ceb-a5aa546ecf04"
+cwe_ids:
+- "CWE-367"
+- "CWE-937"
+- "CWE-1035"

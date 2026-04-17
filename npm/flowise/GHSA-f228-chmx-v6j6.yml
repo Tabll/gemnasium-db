@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-f228-chmx-v6j6"
+identifiers:
+- "GHSA-f228-chmx-v6j6"
+package_slug: "npm/flowise"
+title: "Flowise: Remote code execution vulnerability in AirtableAgent.ts caused by
+  lack of input verification when using `Pandas`."
+description: "“AirtableAgent” is an agent function provided by FlowiseAI that retrieves
+  search results by accessing private datasets from airtable.com. “AirtableAgent”
+  uses Python, along with `Pyodide` and `Pandas`, to get and return results.\n\nThe
+  user’s input is directly applied to the question parameter within the prompt template
+  and it is reflected to the Python code without any sanitization.\n\n**The point
+  is that an attacker can bypass the intended behavior of the LLM and trigger Remote
+  Code Execution through a simple prompt injection.**"
+date: "2026-04-16"
+pubdate: "2026-04-16"
+affected_range: "<3.1.0"
+fixed_versions:
+- "3.1.0"
+affected_versions: "All versions before 3.1.0"
+not_impacted: "All versions starting from 3.1.0"
+solution: "Upgrade to version 3.1.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-f228-chmx-v6j6"
+- "https://github.com/FlowiseAI/Flowise/security/advisories/GHSA-f228-chmx-v6j6"
+- "https://github.com/FlowiseAI/Flowise"
+cvss_v3: "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:L"
+uuid: "02cb9140-f594-415d-b427-b8dea27cdea5"
+cwe_ids:
+- "CWE-94"
+- "CWE-937"
+- "CWE-1035"

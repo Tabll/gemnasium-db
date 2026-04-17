@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-f6hc-c5jr-878p"
+identifiers:
+- "GHSA-f6hc-c5jr-878p"
+package_slug: "npm/flowise"
+title: "Flowise: resetPassword Authentication Bypass Vulnerability"
+description: "ZDI-CAN-28762: Flowise AccountService resetPassword Authentication Bypass
+  Vulnerability\n\n-- ABSTRACT -------------------------------------\n\nTrend Micro's
+  Zero Day Initiative has identified a vulnerability affecting the following products:\nFlowise
+  - Flowise\n\n-- VULNERABILITY DETAILS ------------------------\n* Version tested:
+  \ 3.0.12\n* Installer file:  hxxps://github.com/FlowiseAI/Flowise\n* Platform tested:
+  NA\n\n---"
+date: "2026-04-16"
+pubdate: "2026-04-16"
+affected_range: "<3.1.0"
+fixed_versions:
+- "3.1.0"
+affected_versions: "All versions before 3.1.0"
+not_impacted: "All versions starting from 3.1.0"
+solution: "Upgrade to version 3.1.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-f6hc-c5jr-878p"
+- "https://github.com/FlowiseAI/Flowise/security/advisories/GHSA-f6hc-c5jr-878p"
+- "https://github.com/FlowiseAI/Flowise"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+uuid: "b64cb562-0927-4cb6-8c04-d7f6dbb2ab0f"
+cwe_ids:
+- "CWE-287"
+- "CWE-937"
+- "CWE-1035"
