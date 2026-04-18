@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-c9h3-5p7r-mrjh"
+identifiers:
+- "GHSA-c9h3-5p7r-mrjh"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Discord event cover images bypassed sandbox media normalization"
+description: "Discord event cover images bypassed sandbox media normalization."
+date: "2026-04-17"
+pubdate: "2026-04-17"
+affected_range: ">=2026.4.7 <2026.4.10"
+fixed_versions:
+- "2026.4.10"
+affected_versions: "All versions starting from 2026.4.7 before 2026.4.10"
+not_impacted: "All versions before 2026.4.7, all versions starting from 2026.4.10"
+solution: "Upgrade to version 2026.4.10 or above."
+urls:
+- "https://github.com/advisories/GHSA-c9h3-5p7r-mrjh"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-c9h3-5p7r-mrjh"
+- "https://github.com/openclaw/openclaw/pull/64377"
+- "https://github.com/openclaw/openclaw/commit/979c6f09d6fad96596feb91c905934be7e0b4f15"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "bd42953d-b248-44d1-9a94-e23c8e1ad314"
+cwe_ids:
+- "CWE-22"
+- "CWE-937"
+- "CWE-1035"

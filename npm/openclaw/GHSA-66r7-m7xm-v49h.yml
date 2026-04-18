@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-66r7-m7xm-v49h"
+identifiers:
+- "GHSA-66r7-m7xm-v49h"
+package_slug: "npm/openclaw"
+title: "OpenClaw: QQBot media tags could read arbitrary local files through reply
+  text"
+description: "QQBot media tags could read arbitrary local files through reply text."
+date: "2026-04-17"
+pubdate: "2026-04-17"
+affected_range: "<2026.4.10"
+fixed_versions:
+- "2026.4.10"
+affected_versions: "All versions before 2026.4.10"
+not_impacted: "All versions starting from 2026.4.10"
+solution: "Upgrade to version 2026.4.10 or above."
+urls:
+- "https://github.com/advisories/GHSA-66r7-m7xm-v49h"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-66r7-m7xm-v49h"
+- "https://github.com/openclaw/openclaw/pull/63271"
+- "https://github.com/openclaw/openclaw/commit/604777e4414cc3b2ff8861f18f4fb04374c702c6"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N"
+uuid: "ee96791b-ae4b-44ee-871f-5ff41645a6b9"
+cwe_ids:
+- "CWE-22"
+- "CWE-937"
+- "CWE-1035"

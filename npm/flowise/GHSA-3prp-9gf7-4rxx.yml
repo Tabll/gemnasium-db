@@ -1,0 +1,36 @@
+---
+identifier: "GHSA-3prp-9gf7-4rxx"
+identifiers:
+- "GHSA-3prp-9gf7-4rxx"
+package_slug: "npm/flowise"
+title: "Flowise: Mass Assignment in DocumentStore Create Endpoint Leads to Cross-Workspace
+  Object Takeover (IDOR)"
+description: "A Mass Assignment vulnerability in the DocumentStore creation endpoint
+  allows authenticated users to control the primary key (id) and internal state fields
+  of DocumentStore entities.\n\nBecause the service uses repository.save() with a
+  client-supplied primary key, the POST create endpoint behaves as an implicit UPSERT
+  operation. This enables overwriting existing DocumentStore objects.\n\nIn multi-workspace
+  or multi-tenant deployments, this can lead to cross-workspace object takeover and
+  broken object-level authorization (IDOR), allowing an attacker to reassign or modify
+  DocumentStore objects belonging to other workspaces."
+date: "2026-04-17"
+pubdate: "2026-04-17"
+affected_range: "<3.1.0"
+fixed_versions:
+- "3.1.0"
+affected_versions: "All versions before 3.1.0"
+not_impacted: "All versions starting from 3.1.0"
+solution: "Upgrade to version 3.1.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-3prp-9gf7-4rxx"
+- "https://github.com/FlowiseAI/Flowise/security/advisories/GHSA-3prp-9gf7-4rxx"
+- "https://github.com/FlowiseAI/Flowise"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:L"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:H/VI:H/VA:L/SC:N/SI:N/SA:N"
+uuid: "cac87071-1678-4dcb-873a-f64d6b30690c"
+cwe_ids:
+- "CWE-284"
+- "CWE-639"
+- "CWE-915"
+- "CWE-937"
+- "CWE-1035"

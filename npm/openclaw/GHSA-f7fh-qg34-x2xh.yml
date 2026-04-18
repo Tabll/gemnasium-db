@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-f7fh-qg34-x2xh"
+identifiers:
+- "GHSA-f7fh-qg34-x2xh"
+package_slug: "npm/openclaw"
+title: "OpenClaw: CDP /json/version WebSocket URL could pivot to untrusted second-hop
+  targets"
+description: "CDP /json/version WebSocket URL could pivot to untrusted second-hop
+  targets."
+date: "2026-04-17"
+pubdate: "2026-04-17"
+affected_range: "<2026.4.5"
+fixed_versions:
+- "2026.4.5"
+affected_versions: "All versions before 2026.4.5"
+not_impacted: "All versions starting from 2026.4.5"
+solution: "Upgrade to version 2026.4.5 or above."
+urls:
+- "https://github.com/advisories/GHSA-f7fh-qg34-x2xh"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-f7fh-qg34-x2xh"
+- "https://github.com/openclaw/openclaw/pull/60469"
+- "https://github.com/openclaw/openclaw/commit/bc356cc8c2beaa747c71dd86cceab8f804699665"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:L/VI:N/VA:N/SC:L/SI:N/SA:N"
+uuid: "b5904b2d-f6cb-40d1-bd5d-73d5860ed91a"
+cwe_ids:
+- "CWE-918"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-rg3h-x3jw-7jm5"
+identifiers:
+- "GHSA-rg3h-x3jw-7jm5"
+package_slug: "pypi/praisonaiagents"
+title: "PraisonAI: SQL Injection via unvalidated `table_prefix` in 9 conversation
+  store backends (incomplete fix for CVE-2026-40315)"
+description: "The fix for [CVE-2026-40315](https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-x783-xp3g-mqhp)
+  added input validation to `SQLiteConversationStore` only. Nine sibling backends
+  — MySQL, PostgreSQL, async SQLite/MySQL/PostgreSQL, Turso, SingleStore, Supabase,
+  SurrealDB — pass `table_prefix` straight into f-string SQL. Same root cause, same
+  code pattern, same exploitation. 52 unvalidated injection points across the codebase.\n\n`postgres.py`
+  additionally accepts an unvalidated `schema` parameter used directly in DDL."
+date: "2026-04-17"
+pubdate: "2026-04-17"
+affected_range: "<1.6.8"
+fixed_versions:
+- "1.6.8"
+affected_versions: "All versions before 1.6.8"
+not_impacted: "All versions starting from 1.6.8"
+solution: "Upgrade to version 1.6.8 or above."
+urls:
+- "https://github.com/advisories/GHSA-rg3h-x3jw-7jm5"
+- "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-rg3h-x3jw-7jm5"
+- "https://github.com/MervinPraison/PraisonAI"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N"
+uuid: "9a50a128-2b5f-42b5-b57a-a3c2db3bad22"
+cwe_ids:
+- "CWE-89"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-g2hm-779g-vm32"
+identifiers:
+- "GHSA-g2hm-779g-vm32"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Heartbeat owner downgrade missed untrusted webhook wake events"
+description: "Heartbeat owner downgrade missed untrusted webhook wake events."
+date: "2026-04-17"
+pubdate: "2026-04-17"
+affected_range: ">=2026.4.7 <2026.4.14"
+fixed_versions:
+- "2026.4.14"
+affected_versions: "All versions starting from 2026.4.7 before 2026.4.14"
+not_impacted: "All versions before 2026.4.7, all versions starting from 2026.4.14"
+solution: "Upgrade to version 2026.4.14 or above."
+urls:
+- "https://github.com/advisories/GHSA-g2hm-779g-vm32"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-g2hm-779g-vm32"
+- "https://github.com/openclaw/openclaw/pull/66031"
+- "https://github.com/openclaw/openclaw/commit/31281bc92f55796817a92bc43f722cba1e77ab42"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N"
+uuid: "695d273f-937f-448a-a4bc-1f339ac05298"
+cwe_ids:
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

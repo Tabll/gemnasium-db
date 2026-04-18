@@ -1,0 +1,39 @@
+---
+identifier: "GHSA-85gx-3qv6-4463"
+identifiers:
+- "GHSA-85gx-3qv6-4463"
+package_slug: "go/github.com/dapr/dapr"
+title: "Dapr: Service Invocation path traversal ACL bypass"
+description: "A vulnerability has been found in Dapr that allows bypassing access
+  control policies for service invocation using reserved URL characters and path traversal
+  sequences in method paths. The ACL normalized the method path independently from
+  the dispatch layer, so the ACL evaluated one path while the target application received
+  a different one.\n\nUsers who have configured access control policies for service
+  invocation are strongly encouraged to upgrade Dapr to the respective patch version
+  `1.17.5`, `1.16.14`, and `1.15.14`."
+date: "2026-04-17"
+pubdate: "2026-04-17"
+affected_range: ">=1.17.0-rc.1 <1.17.5||>=1.16.0-rc.1 <1.16.14||>=1.3.0 <1.15.14"
+fixed_versions:
+- "1.17.5"
+- "1.16.14"
+- "1.15.14"
+affected_versions: "All versions starting from 1.3.0 before 1.15.14, all versions
+  starting from 1.16.0-rc.1 before 1.16.14, all versions starting from 1.17.0-rc.1
+  before 1.17.5"
+not_impacted: "All versions before 1.3.0, all versions starting from 1.15.14 before
+  1.16.0-rc.1, all versions starting from 1.16.14 before 1.17.0-rc.1, all versions
+  starting from 1.17.5"
+solution: "Upgrade to versions 1.15.14, 1.16.14, 1.17.5 or above."
+urls:
+- "https://github.com/advisories/GHSA-85gx-3qv6-4463"
+- "https://github.com/dapr/dapr/security/advisories/GHSA-85gx-3qv6-4463"
+- "https://github.com/dapr/dapr/pull/9589"
+- "https://github.com/dapr/dapr"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N"
+uuid: "da3e92c6-9518-4668-82b1-4a476e2e9653"
+cwe_ids:
+- "CWE-22"
+- "CWE-284"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-jhpv-5j76-m56h"
+identifiers:
+- "GHSA-jhpv-5j76-m56h"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Sender policy bypass in host media attachment reads allows unauthorized
+  local file disclosure"
+description: "OpenClaw's outbound host-media attachment read helper could enable host-local
+  file reads based on global or agent-level read access without also honoring sender
+  and group-scoped tool policy. In channel deployments that used `toolsBySender` or
+  group policy to deny `read` for less-trusted senders, a denied sender could still
+  trigger host-media attachment loading and cause readable local files to be returned
+  through the outbound media path."
+date: "2026-04-17"
+pubdate: "2026-04-17"
+affected_range: ">=2026.4.9 <2026.4.10"
+fixed_versions:
+- "2026.4.10"
+affected_versions: "All versions starting from 2026.4.9 before 2026.4.10"
+not_impacted: "All versions before 2026.4.9, all versions starting from 2026.4.10"
+solution: "Upgrade to version 2026.4.10 or above."
+urls:
+- "https://github.com/advisories/GHSA-jhpv-5j76-m56h"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-jhpv-5j76-m56h"
+- "https://github.com/openclaw/openclaw/pull/64459"
+- "https://github.com/openclaw/openclaw/commit/c949af9fabf3873b5b7c484090cb5f5ab6049a98"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N"
+uuid: "1df96590-3643-45d0-8d61-12e500a67fc0"
+cwe_ids:
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

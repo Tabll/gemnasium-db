@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-jf25-7968-h2h5"
+identifiers:
+- "GHSA-jf25-7968-h2h5"
+package_slug: "npm/openclaw"
+title: "OpenClaw: screen_record outPath bypassed workspace-only filesystem guard"
+description: "screen_record outPath bypassed workspace-only filesystem guard."
+date: "2026-04-17"
+pubdate: "2026-04-17"
+affected_range: "<2026.4.10"
+fixed_versions:
+- "2026.4.10"
+affected_versions: "All versions before 2026.4.10"
+not_impacted: "All versions starting from 2026.4.10"
+solution: "Upgrade to version 2026.4.10 or above."
+urls:
+- "https://github.com/advisories/GHSA-jf25-7968-h2h5"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-jf25-7968-h2h5"
+- "https://github.com/openclaw/openclaw/pull/63551"
+- "https://github.com/openclaw/openclaw/commit/635bb35b68d8faa5bfa2fda35feadd315122748a"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "26c9c7ba-d2ff-4b00-b69b-fd8f2049e9d9"
+cwe_ids:
+- "CWE-22"
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-452v-w3gx-72wg"
+identifiers:
+- "GHSA-452v-w3gx-72wg"
+package_slug: "cargo/zebrad"
+title: "Zebra has rk Identity Point Panic in Transaction Verification"
+description: "Orchard transactions contain a `rk` field which is a randomized validating
+  key and also an elliptic curve point. The Zcash specification allows the field to
+  be the identity (a \"zero\" value), however, the `orchard` crate which is used to
+  verify Orchard proofs would panic when fed a `rk` with the identity value. Thus
+  an attacker could send a crafted transaction that would make a Zebra node crash."
+date: "2026-04-18"
+pubdate: "2026-04-18"
+affected_range: "<4.3.1"
+fixed_versions:
+- "4.3.1"
+affected_versions: "All versions before 4.3.1"
+not_impacted: "All versions starting from 4.3.1"
+solution: "Upgrade to version 4.3.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-452v-w3gx-72wg"
+- "https://github.com/ZcashFoundation/zebra/security/advisories/GHSA-452v-w3gx-72wg"
+- "https://github.com/ZcashFoundation/zebra"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:N/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:H"
+uuid: "4e0bc73e-ad5c-4975-b057-6fc4afe008fb"
+cwe_ids:
+- "CWE-617"
+- "CWE-937"
+- "CWE-1035"

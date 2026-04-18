@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-5fw2-mwhh-9947"
+identifiers:
+- "GHSA-5fw2-mwhh-9947"
+package_slug: "npm/flowise"
+title: "Flowise: Unauthenticated TTS endpoint accepts arbitrary credential IDs — enables
+  API credit abuse via stored credentials"
+description: "The text-to-speech generation endpoint (`POST /api/v1/text-to-speech/generate`)
+  is `whitelist`ed (no auth) and accepts a `credentialId` directly in the request
+  body. When called without a `chatflowId`, the endpoint uses the provided `credentialId`
+  to decrypt the stored credential (e.g., OpenAI or ElevenLabs API key) and generate
+  speech."
+date: "2026-04-17"
+pubdate: "2026-04-17"
+affected_range: "<3.1.0"
+fixed_versions:
+- "3.1.0"
+affected_versions: "All versions before 3.1.0"
+not_impacted: "All versions starting from 3.1.0"
+solution: "Upgrade to version 3.1.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-5fw2-mwhh-9947"
+- "https://github.com/FlowiseAI/Flowise/security/advisories/GHSA-5fw2-mwhh-9947"
+- "https://github.com/FlowiseAI/Flowise"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+uuid: "29fe672f-8140-4e90-9305-fd09d12114d6"
+cwe_ids:
+- "CWE-639"
+- "CWE-937"
+- "CWE-1035"

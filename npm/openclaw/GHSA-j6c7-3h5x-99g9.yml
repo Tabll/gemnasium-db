@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-j6c7-3h5x-99g9"
+identifiers:
+- "GHSA-j6c7-3h5x-99g9"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Shell-wrapper detection missed env-argv assignment injection forms"
+description: "Shell-wrapper detection missed env-argv assignment injection forms."
+date: "2026-04-17"
+pubdate: "2026-04-17"
+affected_range: ">=2026.2.22 <2026.4.12"
+fixed_versions:
+- "2026.4.12"
+affected_versions: "All versions starting from 2026.2.22 before 2026.4.12"
+not_impacted: "All versions before 2026.2.22, all versions starting from 2026.4.12"
+solution: "Upgrade to version 2026.4.12 or above."
+urls:
+- "https://github.com/advisories/GHSA-j6c7-3h5x-99g9"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-j6c7-3h5x-99g9"
+- "https://github.com/openclaw/openclaw/pull/65717"
+- "https://github.com/openclaw/openclaw/commit/8f8492d172f4c5b4fd7dd9a47855ed620c8770ab"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "36583f6b-c09f-4503-8915-e521d33edd22"
+cwe_ids:
+- "CWE-78"
+- "CWE-937"
+- "CWE-1035"

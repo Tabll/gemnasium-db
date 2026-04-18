@@ -9,7 +9,7 @@ description: "The core security wrappers (secureAxiosRequest and secureFetch) in
   flaws allow attackers to bypass the allow/deny lists via DNS Rebinding (Time-of-Check
   Time-of-Use) or by exploiting the default configuration which fails to enforce any
   deny list."
-date: "2026-04-16"
+date: "2026-04-18"
 pubdate: "2026-04-16"
 affected_range: "<3.1.0"
 fixed_versions:
@@ -24,7 +24,7 @@ urls:
 cvss_v3: "CVSS:3.0/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:L"
 uuid: "a8e306b2-dc80-40ff-888c-f4fba35cc7b4"
 cwe_ids:
-- "CWE-367"
 - "CWE-918"
+- "CWE-367"
 - "CWE-937"
 - "CWE-1035"

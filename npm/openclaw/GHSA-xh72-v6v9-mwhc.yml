@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-xh72-v6v9-mwhc"
+identifiers:
+- "GHSA-xh72-v6v9-mwhc"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Feishu webhook and card-action validation now fail closed"
+description: "Feishu webhook mode accepted missing `encryptKey` configuration as valid
+  and blank card-action callback tokens as usable lifecycle tokens. Together, those
+  fail-open paths could allow unauthenticated webhook or card-action traffic to reach
+  command dispatch in affected deployments."
+date: "2026-04-17"
+pubdate: "2026-04-17"
+affected_range: "<2026.4.15"
+fixed_versions:
+- "2026.4.15"
+affected_versions: "All versions before 2026.4.15"
+not_impacted: "All versions starting from 2026.4.15"
+solution: "Upgrade to version 2026.4.15 or above."
+urls:
+- "https://github.com/advisories/GHSA-xh72-v6v9-mwhc"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-xh72-v6v9-mwhc"
+- "https://github.com/openclaw/openclaw/pull/66707"
+- "https://github.com/openclaw/openclaw/commit/c8003f1b33ed2924be5f62131bd28742c5a41aae"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+uuid: "db01a319-f4af-4425-8950-8e7b8a963b8d"
+cwe_ids:
+- "CWE-1188"
+- "CWE-287"
+- "CWE-294"
+- "CWE-937"
+- "CWE-1035"

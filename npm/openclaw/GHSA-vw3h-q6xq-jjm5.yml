@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-vw3h-q6xq-jjm5"
+identifiers:
+- "GHSA-vw3h-q6xq-jjm5"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Voice-call realtime WebSocket accepted oversized frames"
+description: "Voice-call realtime WebSocket accepted oversized frames."
+date: "2026-04-17"
+pubdate: "2026-04-17"
+affected_range: ">=2026.4.9 <2026.4.10"
+fixed_versions:
+- "2026.4.10"
+affected_versions: "All versions starting from 2026.4.9 before 2026.4.10"
+not_impacted: "All versions before 2026.4.9, all versions starting from 2026.4.10"
+solution: "Upgrade to version 2026.4.10 or above."
+urls:
+- "https://github.com/advisories/GHSA-vw3h-q6xq-jjm5"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-vw3h-q6xq-jjm5"
+- "https://github.com/openclaw/openclaw/pull/63890"
+- "https://github.com/openclaw/openclaw/commit/afadb7dae6738819ad9c7d2597ace0516957d20e"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+uuid: "518ac79b-48b2-48bf-9ddb-4100ead4e18b"
+cwe_ids:
+- "CWE-400"
+- "CWE-770"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-jwrq-8g5x-5fhm"
+identifiers:
+- "GHSA-jwrq-8g5x-5fhm"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Collect-mode queue batches could reuse the last sender authorization
+  context"
+description: "Collect-mode queue batches could reuse the last sender authorization
+  context."
+date: "2026-04-17"
+pubdate: "2026-04-17"
+affected_range: "<2026.4.14"
+fixed_versions:
+- "2026.4.14"
+affected_versions: "All versions before 2026.4.14"
+not_impacted: "All versions starting from 2026.4.14"
+solution: "Upgrade to version 2026.4.14 or above."
+urls:
+- "https://github.com/advisories/GHSA-jwrq-8g5x-5fhm"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-jwrq-8g5x-5fhm"
+- "https://github.com/openclaw/openclaw/pull/66024"
+- "https://github.com/openclaw/openclaw/commit/43d4be902755c970b3d15608679761877718da69"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:L/VA:N/SC:L/SI:L/SA:N"
+uuid: "3839e10a-80ba-4f49-8c50-37f97a39a65f"
+cwe_ids:
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

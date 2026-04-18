@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-939r-rj45-g2rj"
+identifiers:
+- "GHSA-939r-rj45-g2rj"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Workspace provider auth choices could auto-enable untrusted provider
+  plugins"
+description: "Workspace provider auth choices could auto-enable untrusted provider
+  plugins."
+date: "2026-04-17"
+pubdate: "2026-04-17"
+affected_range: "<2026.4.9"
+fixed_versions:
+- "2026.4.9"
+affected_versions: "All versions before 2026.4.9"
+not_impacted: "All versions starting from 2026.4.9"
+solution: "Upgrade to version 2026.4.9 or above."
+urls:
+- "https://github.com/advisories/GHSA-939r-rj45-g2rj"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-939r-rj45-g2rj"
+- "https://github.com/openclaw/openclaw/pull/62368"
+- "https://github.com/openclaw/openclaw/commit/2d97eae53e212ae26f3aebcd6a50ffc6877f770d"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:H/VI:H/VA:N/SC:H/SI:N/SA:N"
+uuid: "5ddf6293-a760-428f-92fa-0280c3dad5c2"
+cwe_ids:
+- "CWE-829"
+- "CWE-937"
+- "CWE-1035"

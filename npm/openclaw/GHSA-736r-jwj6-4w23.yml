@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-736r-jwj6-4w23"
+identifiers:
+- "GHSA-736r-jwj6-4w23"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Sandboxed agents could escape exec routing via host=node override"
+description: "Sandboxed agents could escape exec routing via host=node override."
+date: "2026-04-17"
+pubdate: "2026-04-17"
+affected_range: ">=2026.4.5 <2026.4.10"
+fixed_versions:
+- "2026.4.10"
+affected_versions: "All versions starting from 2026.4.5 before 2026.4.10"
+not_impacted: "All versions before 2026.4.5, all versions starting from 2026.4.10"
+solution: "Upgrade to version 2026.4.10 or above."
+urls:
+- "https://github.com/advisories/GHSA-736r-jwj6-4w23"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-736r-jwj6-4w23"
+- "https://github.com/openclaw/openclaw/pull/63880"
+- "https://github.com/openclaw/openclaw/commit/dffad08529202edbf34e4808788e1182fe10f6a9"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:N/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:H/VA:N/SC:N/SI:H/SA:N"
+uuid: "21f5f032-3ada-4ef5-9d4e-660fc2d328ab"
+cwe_ids:
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

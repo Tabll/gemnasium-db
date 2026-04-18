@@ -1,0 +1,36 @@
+---
+identifier: "GHSA-jm8c-9f3j-4378"
+identifiers:
+- "GHSA-jm8c-9f3j-4378"
+package_slug: "pypi/pretalx"
+title: "pretalx mail templates vulnerable to email injection via unescaped user-controlled
+  placeholders"
+description: "An unauthenticated attacker can send arbitrary HTML-rendered emails
+  from a pretalx instance's configured sender address by embedding malformed HTML
+  or markdown link syntax in a user-controlled template placeholder such as the account
+  display name. The most direct vector is the password-reset flow: the attacker registers
+  an account with a malicious name, enters the victim's email address, and triggers
+  a password reset. The resulting email is delivered from the event's legitimate sender
+  address and passes SPF/DKIM/DMARC validation, making it a ready-made phishing vector.\n\nThe
+  same class of bug affects every mail template that interpolates a user-controlled
+  placeholder (speaker name, proposal title, biography, question answers, etc.), including
+  organiser-triggered emails such as acceptance/rejection notifications."
+date: "2026-04-18"
+pubdate: "2026-04-18"
+affected_range: "<2026.1.0"
+fixed_versions:
+- "2026.1.0"
+affected_versions: "All versions before 2026.1.0"
+not_impacted: "All versions starting from 2026.1.0"
+solution: "Upgrade to version 2026.1.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-jm8c-9f3j-4378"
+- "https://github.com/pretalx/pretalx/security/advisories/GHSA-jm8c-9f3j-4378"
+- "https://github.com/pretalx/pretalx"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+uuid: "9aea491a-5dc2-4242-a2b8-df175c77f905"
+cwe_ids:
+- "CWE-116"
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

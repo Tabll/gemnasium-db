@@ -1,0 +1,36 @@
+---
+identifier: "GHSA-mr34-9552-qr95"
+identifiers:
+- "GHSA-mr34-9552-qr95"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Webchat media embedding enforces local-root containment for tool-result
+  files"
+description: "Webchat tool-result media normalization could pass local and UNC-style
+  file paths into the host-side media embedding path without applying the configured
+  local-root containment policy."
+date: "2026-04-17"
+pubdate: "2026-04-17"
+affected_range: ">=2026.4.7 <2026.4.15"
+fixed_versions:
+- "2026.4.15"
+affected_versions: "All versions starting from 2026.4.7 before 2026.4.15"
+not_impacted: "All versions before 2026.4.7, all versions starting from 2026.4.15"
+solution: "Upgrade to version 2026.4.15 or above."
+urls:
+- "https://github.com/advisories/GHSA-mr34-9552-qr95"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-mr34-9552-qr95"
+- "https://github.com/openclaw/openclaw/pull/67293"
+- "https://github.com/openclaw/openclaw/pull/67298"
+- "https://github.com/openclaw/openclaw/pull/67303"
+- "https://github.com/openclaw/openclaw/commit/1470de5d3e0970856d86cd99336bb8ada3fe87da"
+- "https://github.com/openclaw/openclaw/commit/52ef42302ead9e183e6c8810e0a04ee4ef8ae9fc"
+- "https://github.com/openclaw/openclaw/commit/6e58f1f9f54bca1fea1268ec0ee4c01a2af03dde"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N"
+uuid: "628e0fcf-d4f1-4bba-93e5-fff463b1ec74"
+cwe_ids:
+- "CWE-22"
+- "CWE-73"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-r77c-2cmr-7p47"
+identifiers:
+- "GHSA-r77c-2cmr-7p47"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Delivery queue recovery could lose group tool-policy context for
+  media replay"
+description: "Delivery queue recovery could lose group tool-policy context for media
+  replay."
+date: "2026-04-17"
+pubdate: "2026-04-17"
+affected_range: ">=2026.4.10 <2026.4.14"
+fixed_versions:
+- "2026.4.14"
+affected_versions: "All versions starting from 2026.4.10 before 2026.4.14"
+not_impacted: "All versions before 2026.4.10, all versions starting from 2026.4.14"
+solution: "Upgrade to version 2026.4.14 or above."
+urls:
+- "https://github.com/advisories/GHSA-r77c-2cmr-7p47"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-r77c-2cmr-7p47"
+- "https://github.com/openclaw/openclaw/pull/66025"
+- "https://github.com/openclaw/openclaw/commit/48aae82bbc19ba8b0741e61a08063eb0d1df464e"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:H/AT:P/PR:L/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "0826706c-af0f-4cfa-af61-09c950aa0587"
+cwe_ids:
+- "CWE-862"
+- "CWE-937"
+- "CWE-1035"

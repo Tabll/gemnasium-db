@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-xjvp-7243-rg9h"
+identifiers:
+- "GHSA-xjvp-7243-rg9h"
+package_slug: "go/github.com/charmbracelet/wish"
+title: "Wish has SCP Path Traversal that allows arbitrary file read/write"
+description: "The SCP middleware in `charm.land/wish/v2` is vulnerable to path traversal
+  attacks. A malicious SCP client can read arbitrary files from the server, write
+  arbitrary files to the server, and create directories outside the configured root
+  directory by sending crafted filenames containing `../` sequences over the SCP protocol."
+date: "2026-04-18"
+pubdate: "2026-04-18"
+affected_range: "<=1.4.7"
+fixed_versions: []
+affected_versions: "All versions up to 1.4.7"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-xjvp-7243-rg9h"
+- "https://github.com/charmbracelet/wish/security/advisories/GHSA-xjvp-7243-rg9h"
+- "https://github.com/charmbracelet/wish"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:N"
+uuid: "43116cf2-7bd5-494f-bdb1-e1e6bcf857db"
+cwe_ids:
+- "CWE-22"
+- "CWE-937"
+- "CWE-1035"

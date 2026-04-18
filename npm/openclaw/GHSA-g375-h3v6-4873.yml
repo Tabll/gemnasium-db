@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-g375-h3v6-4873"
+identifiers:
+- "GHSA-g375-h3v6-4873"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Heartbeat owner downgrade missed local async exec completion events"
+description: "Heartbeat owner downgrade missed local async exec completion events."
+date: "2026-04-17"
+pubdate: "2026-04-17"
+affected_range: ">=2026.3.31 <2026.4.10"
+fixed_versions:
+- "2026.4.10"
+affected_versions: "All versions starting from 2026.3.31 before 2026.4.10"
+not_impacted: "All versions before 2026.3.31, all versions starting from 2026.4.10"
+solution: "Upgrade to version 2026.4.10 or above."
+urls:
+- "https://github.com/advisories/GHSA-g375-h3v6-4873"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-g375-h3v6-4873"
+- "https://github.com/openclaw/openclaw/pull/64376"
+- "https://github.com/openclaw/openclaw/commit/19a2e9ddb5a8a494abcba812bb11f51075026a27"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N"
+uuid: "0704175d-5ae9-4762-a53e-559188a9e0ab"
+cwe_ids:
+- "CWE-269"
+- "CWE-937"
+- "CWE-1035"

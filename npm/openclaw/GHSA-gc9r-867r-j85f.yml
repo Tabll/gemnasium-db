@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-gc9r-867r-j85f"
+identifiers:
+- "GHSA-gc9r-867r-j85f"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Microsoft Teams SSO invoke handler missed sender authorization checks"
+description: "Microsoft Teams SSO invoke handler missed sender authorization checks."
+date: "2026-04-17"
+pubdate: "2026-04-17"
+affected_range: ">=2026.4.10 <2026.4.14"
+fixed_versions:
+- "2026.4.14"
+affected_versions: "All versions starting from 2026.4.10 before 2026.4.14"
+not_impacted: "All versions before 2026.4.10, all versions starting from 2026.4.14"
+solution: "Upgrade to version 2026.4.14 or above."
+urls:
+- "https://github.com/advisories/GHSA-gc9r-867r-j85f"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-gc9r-867r-j85f"
+- "https://github.com/openclaw/openclaw/pull/66033"
+- "https://github.com/openclaw/openclaw/commit/80b1fa17bfc3f6a668492f0326ea52f48bb89776"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:L/VA:N/SC:L/SI:N/SA:N"
+uuid: "a2a16936-56b7-4486-9efd-da32315bd512"
+cwe_ids:
+- "CWE-862"
+- "CWE-937"
+- "CWE-1035"

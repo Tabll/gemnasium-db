@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-9qhq-v63v-fv3j"
+identifiers:
+- "GHSA-9qhq-v63v-fv3j"
+package_slug: "pypi/praisonai"
+title: "Incomplete fix for CVE-2026-34935: Command Injection in MervinPraison/PraisonAI"
+description: "The fix for PraisonAI's MCP command handling does not add a command
+  allowlist or argument validation to `parse_mcp_command()`, allowing arbitrary executables
+  like `bash`, `python`, or `/bin/sh` with inline code execution flags to pass through
+  to subprocess execution."
+date: "2026-04-17"
+pubdate: "2026-04-17"
+affected_range: "<4.5.149"
+fixed_versions:
+- "4.5.149"
+affected_versions: "All versions before 4.5.149"
+not_impacted: "All versions starting from 4.5.149"
+solution: "Upgrade to version 4.5.149 or above."
+urls:
+- "https://github.com/advisories/GHSA-9qhq-v63v-fv3j"
+- "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-9qhq-v63v-fv3j"
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-34935"
+- "https://github.com/MervinPraison/PraisonAI/commit/47bff65413beaa3c21bf633c1fae4e684348368c"
+- "https://github.com/MervinPraison/PraisonAI"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+uuid: "38d1ff5e-89c6-43ff-8454-c1b0c45e933b"
+cwe_ids:
+- "CWE-78"
+- "CWE-937"
+- "CWE-1035"

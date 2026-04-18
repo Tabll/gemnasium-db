@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-2767-2q9v-9326"
+identifiers:
+- "GHSA-2767-2q9v-9326"
+package_slug: "npm/openclaw"
+title: "OpenClaw: QQBot reply media URL handling could trigger SSRF and re-upload
+  fetched bytes"
+description: "QQBot reply media URL handling could trigger SSRF and re-upload fetched
+  bytes."
+date: "2026-04-17"
+pubdate: "2026-04-17"
+affected_range: "<2026.4.12"
+fixed_versions:
+- "2026.4.12"
+affected_versions: "All versions before 2026.4.12"
+not_impacted: "All versions starting from 2026.4.12"
+solution: "Upgrade to version 2026.4.12 or above."
+urls:
+- "https://github.com/advisories/GHSA-2767-2q9v-9326"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-2767-2q9v-9326"
+- "https://github.com/openclaw/openclaw/pull/63495"
+- "https://github.com/openclaw/openclaw/pull/65788"
+- "https://github.com/openclaw/openclaw/commit/08ae021d1f42905a85a550813c0d95169b171a6c"
+- "https://github.com/openclaw/openclaw/commit/ddb7a8dd80b8d5dd04aafa44ce7a4354b568bb2d"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:N/VI:N/VA:N/SC:L/SI:L/SA:N"
+uuid: "815d70ba-6016-4bda-8ac5-39b7027b333b"
+cwe_ids:
+- "CWE-918"
+- "CWE-937"
+- "CWE-1035"

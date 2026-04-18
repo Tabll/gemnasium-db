@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-xq94-r468-qwgj"
+identifiers:
+- "GHSA-xq94-r468-qwgj"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Browser SSRF hostname validation could be bypassed by DNS rebinding"
+description: "Browser SSRF hostname validation could be bypassed by DNS rebinding."
+date: "2026-04-17"
+pubdate: "2026-04-17"
+affected_range: "<2026.4.10"
+fixed_versions:
+- "2026.4.10"
+affected_versions: "All versions before 2026.4.10"
+not_impacted: "All versions starting from 2026.4.10"
+solution: "Upgrade to version 2026.4.10 or above."
+urls:
+- "https://github.com/advisories/GHSA-xq94-r468-qwgj"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-xq94-r468-qwgj"
+- "https://github.com/openclaw/openclaw/pull/64367"
+- "https://github.com/openclaw/openclaw/commit/121c452d666d4749744dc2089287d0227aae2ed3"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:N/SC:L/SI:L/SA:N"
+uuid: "7d9c82f2-83d1-4c1e-b5e3-abcbc2d63570"
+cwe_ids:
+- "CWE-350"
+- "CWE-918"
+- "CWE-937"
+- "CWE-1035"

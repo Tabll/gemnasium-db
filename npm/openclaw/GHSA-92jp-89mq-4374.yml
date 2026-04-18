@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-92jp-89mq-4374"
+identifiers:
+- "GHSA-92jp-89mq-4374"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Sandbox noVNC helper route exposed interactive browser session credentials"
+description: "Sandbox noVNC helper route exposed interactive browser session credentials."
+date: "2026-04-17"
+pubdate: "2026-04-17"
+affected_range: ">=2026.2.21 <2026.4.10"
+fixed_versions:
+- "2026.4.10"
+affected_versions: "All versions starting from 2026.2.21 before 2026.4.10"
+not_impacted: "All versions before 2026.2.21, all versions starting from 2026.4.10"
+solution: "Upgrade to version 2026.4.10 or above."
+urls:
+- "https://github.com/advisories/GHSA-92jp-89mq-4374"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-92jp-89mq-4374"
+- "https://github.com/openclaw/openclaw/pull/63882"
+- "https://github.com/openclaw/openclaw/commit/8dfbf3268bd224b7377d1ecca77a445100746085"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "00c34f47-2c33-46b1-86ed-2af5a6b1b643"
+cwe_ids:
+- "CWE-306"
+- "CWE-937"
+- "CWE-1035"
