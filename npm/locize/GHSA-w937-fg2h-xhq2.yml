@@ -1,0 +1,39 @@
+---
+identifier: "GHSA-w937-fg2h-xhq2"
+identifiers:
+- "GHSA-w937-fg2h-xhq2"
+package_slug: "npm/locize"
+title: "locize Client SDK: Cross-origin DOM XSS & Handler Hijack Through Missing e.origin
+  Validation in InContext Editor "
+description: "Versions of the `locize` client SDK (the browser module that wires up
+  the locize InContext translation editor) prior to 4.0.21 register a `window.addEventListener(\"message\",
+  …)` handler that dispatches to registered internal handlers (`editKey`, `commitKey`,
+  `commitKeys`, `isLocizeEnabled`, `requestInitialize`, …) **without validating `event.origin`**.\n\nThe
+  pre-patch listener in `src/api/postMessage.js` gates dispatch on `event.data.sender
+  === \"i18next-editor-frame\"` — that value sits inside the attacker-controlled message
+  payload, not the browser-enforced origin. Any web page that could embed or be embedded
+  by a locize-enabled host — an iframe on a third-party page, a `window.open`-ed victim,
+  a parent frame reaching down — could send a crafted `postMessage` and trigger the
+  internal handlers."
+date: "2026-04-22"
+pubdate: "2026-04-22"
+affected_range: "<4.0.21"
+fixed_versions:
+- "4.0.21"
+affected_versions: "All versions before 4.0.21"
+not_impacted: "All versions starting from 4.0.21"
+solution: "Upgrade to version 4.0.21 or above."
+urls:
+- "https://github.com/advisories/GHSA-w937-fg2h-xhq2"
+- "https://github.com/locize/locize/security/advisories/GHSA-w937-fg2h-xhq2"
+- "https://github.com/locize/locize/commit/d006b75fadb8e8ab77b023e462850fc6e9170735"
+- "https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage#security_concerns"
+- "https://github.com/locize/locize"
+- "https://github.com/locize/locize/releases/tag/v4.0.21"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:L/I:H/A:L"
+uuid: "294d43e6-2bc3-4910-ba8c-3de513059a74"
+cwe_ids:
+- "CWE-79"
+- "CWE-346"
+- "CWE-937"
+- "CWE-1035"

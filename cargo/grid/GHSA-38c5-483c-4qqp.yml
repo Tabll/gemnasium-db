@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-38c5-483c-4qqp"
+identifiers:
+- "GHSA-38c5-483c-4qqp"
+package_slug: "cargo/grid"
+title: "Grid: Integer Overflow in Grid::expand_rows Leads to Safe-API Undefined Behavior"
+description: "An integer overflow in `Grid::expand_rows()` can corrupt the relationship
+  between the grid’s logical dimensions and its backing storage. After the internal
+  invariant is broken, the safe API get() may invoke get_unchecked() with an invalid
+  index, resulting in Undefined Behavior."
+date: "2026-04-24"
+pubdate: "2026-04-24"
+affected_range: ">=0.17.0 <1.0.1"
+fixed_versions:
+- "1.0.1"
+affected_versions: "All versions starting from 0.17.0 before 1.0.1"
+not_impacted: "All versions before 0.17.0, all versions starting from 1.0.1"
+solution: "Upgrade to version 1.0.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-38c5-483c-4qqp"
+- "https://github.com/becheran/grid/security/advisories/GHSA-38c5-483c-4qqp"
+- "https://github.com/becheran/grid/commit/be213bd3528727148bef2d523c89e95d1fd9c072"
+- "https://github.com/becheran/grid"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "6dac64bf-466c-44ea-a72b-0d848ad51404"
+cwe_ids:
+- "CWE-190"
+- "CWE-937"
+- "CWE-1035"

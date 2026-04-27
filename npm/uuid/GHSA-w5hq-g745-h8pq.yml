@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-w5hq-g745-h8pq"
+identifiers:
+- "GHSA-w5hq-g745-h8pq"
+package_slug: "npm/uuid"
+title: "uuid: Missing buffer bounds check in v3/v5/v6 when buf is provided"
+description: "`v3`, `v5`, and `v6` accept external output buffers but do not reject
+  out-of-range writes (small `buf` or large `offset`).\nBy contrast, `v4`, `v1`, and
+  `v7` explicitly throw `RangeError` on invalid bounds.\n\nThis inconsistency allows
+  **silent partial writes** into caller-provided buffers."
+date: "2026-04-22"
+pubdate: "2026-04-22"
+affected_range: "<14.0.0"
+fixed_versions:
+- "14.0.0"
+affected_versions: "All versions before 14.0.0"
+not_impacted: "All versions starting from 14.0.0"
+solution: "Upgrade to version 14.0.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-w5hq-g745-h8pq"
+- "https://github.com/uuidjs/uuid/security/advisories/GHSA-w5hq-g745-h8pq"
+- "https://github.com/uuidjs/uuid/commit/3d2c5b0342f0fcb52a5ac681c3d47c13e7444b34"
+- "https://github.com/uuidjs/uuid"
+- "https://github.com/uuidjs/uuid/releases/tag/v14.0.0"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "cd8ae919-fdb7-446b-b964-7bab019850fe"
+cwe_ids:
+- "CWE-1285"
+- "CWE-787"
+- "CWE-937"
+- "CWE-1035"

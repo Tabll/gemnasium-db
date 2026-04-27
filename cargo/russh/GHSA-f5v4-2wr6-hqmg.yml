@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-f5v4-2wr6-hqmg"
+identifiers:
+- "GHSA-f5v4-2wr6-hqmg"
+package_slug: "cargo/russh"
+title: "russh has pre-auth DoS via unbounded allocation in its keyboard-interactive
+  auth handler"
+description: "A pre-authentication denial-of-service vulnerability exists in the server's
+  keyboard-interactive authentication handler. A malicious client can crash any russh-based
+  server that implements keyboard-interactive auth (e.g., for 2FA/TOTP) with a single
+  malformed packet, requiring no credentials."
+date: "2026-04-24"
+pubdate: "2026-04-24"
+affected_range: "<0.60.1"
+fixed_versions:
+- "0.60.1"
+affected_versions: "All versions before 0.60.1"
+not_impacted: "All versions starting from 0.60.1"
+solution: "Upgrade to version 0.60.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-f5v4-2wr6-hqmg"
+- "https://github.com/Eugeny/russh/security/advisories/GHSA-f5v4-2wr6-hqmg"
+- "https://github.com/Eugeny/russh/commit/6c3c80a9b6d60763d6227d60fa8310e57172a4d1"
+- "https://github.com/Eugeny/russh"
+- "https://github.com/Eugeny/russh/releases/tag/v0.60.1"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "f4ec3e87-1b20-421a-85b5-e58875acf40f"
+cwe_ids:
+- "CWE-770"
+- "CWE-789"
+- "CWE-937"
+- "CWE-1035"

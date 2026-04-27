@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-vrx2-77f2-ww34"
+identifiers:
+- "GHSA-vrx2-77f2-ww34"
+package_slug: "pypi/justhtml"
+title: "justhtml has sanitization bypass in custom policies and programmatic DOM"
+description: "`justhtml` `1.17.0` fixes multiple security issues in sanitization,
+  serialization, and programmatic DOM handling.\n\nMost of these issues affected advanced
+  or custom configurations rather than the default safe path."
+date: "2026-04-22"
+pubdate: "2026-04-22"
+affected_range: "<1.17.0"
+fixed_versions:
+- "1.17.0"
+affected_versions: "All versions before 1.17.0"
+not_impacted: "All versions starting from 1.17.0"
+solution: "Upgrade to version 1.17.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-vrx2-77f2-ww34"
+- "https://github.com/EmilStenstrom/justhtml/security/advisories/GHSA-vrx2-77f2-ww34"
+- "https://github.com/EmilStenstrom/justhtml"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:N/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:N/VI:H/VA:N/SC:N/SI:L/SA:N"
+uuid: "b19062bf-de09-44a0-8c96-ae31a4802579"
+cwe_ids:
+- "CWE-436"
+- "CWE-471"
+- "CWE-79"
+- "CWE-835"
+- "CWE-937"
+- "CWE-1035"

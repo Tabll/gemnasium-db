@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-rhf7-wvw3-vjvm"
+identifiers:
+- "GHSA-rhf7-wvw3-vjvm"
+package_slug: "go/github.com/patrickhener/goshs"
+title: "goshs has Cross-Origin Arbitrary File Write via Missing CSRF on PUT and Wildcard
+  CORS"
+description: "The PUT upload handler (`httpserver/updown.go`) lacks the CSRF token
+  validation that was added to the POST upload handler during the GHSA-jrq5-hg6x-j6g3
+  fix. Combined with the unconditional `Access-Control-Allow-Origin: *` on the OPTIONS
+  preflight handler (`httpserver/server.go`), any website can write arbitrary files
+  to a goshs instance through the victim's browser — bypassing network isolation (e.g.
+  localhost, internal network)."
+date: "2026-04-23"
+pubdate: "2026-04-23"
+affected_range: "<=1.1.4"
+fixed_versions: []
+affected_versions: "All versions up to 1.1.4"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-rhf7-wvw3-vjvm"
+- "https://github.com/patrickhener/goshs/security/advisories/GHSA-rhf7-wvw3-vjvm"
+- "https://github.com/patrickhener/goshs"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N"
+uuid: "0f28fedf-c591-4e58-8f10-53ee06613787"
+cwe_ids:
+- "CWE-352"
+- "CWE-937"
+- "CWE-1035"

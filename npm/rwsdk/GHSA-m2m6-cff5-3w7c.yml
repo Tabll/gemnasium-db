@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-m2m6-cff5-3w7c"
+identifiers:
+- "GHSA-m2m6-cff5-3w7c"
+package_slug: "npm/rwsdk"
+title: "RedwoodSDK has Same-site CSRF through lack of origin validation in its server
+  actions"
+description: "Server actions in `rwsdk` apply HTTP method enforcement but no origin
+  validation. A request originating from a different origin that the browser treats
+  as same-site can invoke a server action with the victim's session cookie attached."
+date: "2026-04-24"
+pubdate: "2026-04-24"
+affected_range: ">=1.0.0-beta.50 <1.2.3"
+fixed_versions:
+- "1.2.3"
+affected_versions: "All versions starting from 1.0.0-beta.50 before 1.2.3"
+not_impacted: "All versions before 1.0.0-beta.50, all versions starting from 1.2.3"
+solution: "Upgrade to version 1.2.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-m2m6-cff5-3w7c"
+- "https://github.com/redwoodjs/sdk/security/advisories/GHSA-m2m6-cff5-3w7c"
+- "https://github.com/redwoodjs/sdk"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:H/A:N"
+uuid: "d0e7885b-dde5-4658-8b62-7078163d2d13"
+cwe_ids:
+- "CWE-352"
+- "CWE-937"
+- "CWE-1035"

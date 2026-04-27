@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-hppc-g8h3-xhp3"
+identifiers:
+- "GHSA-hppc-g8h3-xhp3"
+package_slug: "cargo/openssl"
+title: "rust-openssl: Unchecked callback length in PSK/cookie trampolines leaks adjacent
+  memory to peer"
+description: "The FFI trampolines behind `SslContextBuilder::set_psk_client_callback`,
+  `set_psk_server_callback`, `set_cookie_generate_cb`,  and `set_stateless_cookie_generate_cb`
+  forwarded the user closure's returned usize directly to OpenSSL without checking
+  it against the `&mut [u8]` that was handed to the closure. This can lead to buffer
+  overflows and other unintended consequences."
+date: "2026-04-22"
+pubdate: "2026-04-22"
+affected_range: ">=0.9.24 <0.10.78"
+fixed_versions:
+- "0.10.78"
+affected_versions: "All versions starting from 0.9.24 before 0.10.78"
+not_impacted: "All versions before 0.9.24, all versions starting from 0.10.78"
+solution: "Upgrade to version 0.10.78 or above."
+urls:
+- "https://github.com/advisories/GHSA-hppc-g8h3-xhp3"
+- "https://github.com/rust-openssl/rust-openssl/security/advisories/GHSA-hppc-g8h3-xhp3"
+- "https://github.com/rust-openssl/rust-openssl/pull/2607"
+- "https://github.com/rust-openssl/rust-openssl/commit/1d109020d98fff2fb2e45c39a373af3dff99b24c"
+- "https://github.com/rust-openssl/rust-openssl"
+- "https://github.com/rust-openssl/rust-openssl/releases/tag/openssl-v0.10.78"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:L"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:N/VA:L/SC:N/SI:N/SA:N"
+uuid: "7c3130e4-35b3-40b3-91e7-8ebf117a4585"
+cwe_ids:
+- "CWE-126"
+- "CWE-130"
+- "CWE-937"
+- "CWE-1035"

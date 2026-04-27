@@ -18,18 +18,19 @@ description: "It has been reported (by @lopopolo) that the `rand` library is [un
   in an aliased mutable reference, violating the Stacked Borrows rules. Miri is able
   to detect this violation in sample code. Since construction of [aliased mutable
   references is Undefined Behaviour](https://doc.rust-lang.org/stable/nomicon/references.html),
-  the behaviour of optimized builds is hard to predict.\n\nAffected versions of `rand`
-  are `>= 0.7, < 0.9.3` and `0.10.0`."
-date: "2026-04-14"
+  the behaviour of optimized builds is hard to predict."
+date: "2026-04-22"
 pubdate: "2026-04-14"
-affected_range: ">=0.7.0 <0.9.3||>=0.10.0 <0.10.1||=0.10.0"
+affected_range: ">=0.9.0 <0.9.3||>=0.10.0 <0.10.1||=0.10.0||>=0.7.0 <0.8.6"
 fixed_versions:
 - "0.9.3"
 - "0.10.1"
-affected_versions: "All versions starting from 0.7.0 before 0.9.3, all versions starting
-  from 0.10.0 before 0.10.1, version 0.10.0"
+- "0.8.6"
+affected_versions: "All versions starting from 0.7.0 before 0.8.6, all versions starting
+  from 0.9.0 before 0.9.3, all versions starting from 0.10.0 before 0.10.1, version
+  0.10.0"
 not_impacted: ""
-solution: "Upgrade to versions 0.10.1, 0.9.3 or above."
+solution: "Upgrade to versions 0.10.1, 0.8.6, 0.9.3 or above."
 urls:
 - "https://github.com/advisories/GHSA-cq8v-f236-94qc"
 - "https://github.com/rust-random/rand/pull/1763"

@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-9237-rg5p-rhfw"
+identifiers:
+- "GHSA-9237-rg5p-rhfw"
+package_slug: "npm/@saltcorn/data"
+title: "@saltcorn/data: Tenant user role is used for tenant creation role check"
+description: "When a tenant admin is logged out of the root domain (e.g., saltcorn.com)
+  but logged in to their own tenant space as admin, they can simply append `/tenant/create`
+  to their tenant URL. The system reads the role from the tenant context (admin),
+  and a new tenant is created on the **root domain** (in `PUBLIC SCHEMA > _sc_tenants`),
+  rather than in the tenant's own `_sc_tenants` table.\n\nIf the same logic applies
+  to other routes, a tenant admin effectively gains admin rights on the root domain."
+date: "2026-04-22"
+pubdate: "2026-04-22"
+affected_range: "<1.4.4||>=1.5.0-beta.0 <1.5.2||>=1.6.0-alpha.0 <1.6.0-beta.2"
+fixed_versions:
+- "1.4.4"
+- "1.5.2"
+- "1.6.0-beta.2"
+affected_versions: "All versions before 1.4.4, all versions starting from 1.5.0-beta.0
+  before 1.5.2, all versions starting from 1.6.0-alpha.0 before 1.6.0-beta.2"
+not_impacted: "All versions starting from 1.4.4 before 1.5.0-beta.0, all versions
+  starting from 1.5.2 before 1.6.0-alpha.0, all versions starting from 1.6.0-beta.2"
+solution: "Upgrade to versions 1.4.4, 1.5.2, 1.6.0-beta.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-9237-rg5p-rhfw"
+- "https://github.com/saltcorn/saltcorn/security/advisories/GHSA-9237-rg5p-rhfw"
+- "https://github.com/saltcorn/saltcorn"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:L"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:L/SC:N/SI:N/SA:N"
+uuid: "52644833-12c1-4c57-8034-7185821ba780"
+cwe_ids:
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

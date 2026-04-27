@@ -17,16 +17,15 @@ description: "PHPUnit forwards PHP INI settings to child processes (used for iso
   of INI values that participate in the attack:\n\n- `<ini name=\"…\" value=\"…\"/>`
   entries in `phpunit.xml` / `phpunit.xml.dist`\n- INI settings inherited from the
   host PHP runtime via `ini_get_all()`"
-date: "2026-04-18"
+date: "2026-04-20"
 pubdate: "2026-04-18"
-affected_range: "<12.5.22||>=13.0.0 <13.1.6"
+affected_range: ">=12.5.21 <12.5.22||=12.5.21||>=13.1.5 <13.1.6||=13.1.5"
 fixed_versions:
 - "12.5.22"
 - "13.1.6"
-affected_versions: "All versions before 12.5.22, all versions starting from 13.0.0
-  before 13.1.6"
-not_impacted: "All versions starting from 12.5.22 before 13.0.0, all versions starting
-  from 13.1.6"
+affected_versions: "All versions starting from 12.5.21 before 12.5.22, version 12.5.21,
+  all versions starting from 13.1.5 before 13.1.6, version 13.1.5"
+not_impacted: ""
 solution: "Upgrade to versions 12.5.22, 13.1.6 or above."
 urls:
 - "https://github.com/advisories/GHSA-qrr6-mg7r-m243"

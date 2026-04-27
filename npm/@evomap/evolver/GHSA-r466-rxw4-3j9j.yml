@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-r466-rxw4-3j9j"
+identifiers:
+- "GHSA-r466-rxw4-3j9j"
+package_slug: "npm/@evomap/evolver"
+title: "Evolver: Path Traversal via `--out` flag in `fetch` command allows Arbitrary
+  File Write"
+description: "A path traversal vulnerability in the skill download (`fetch`) command
+  allows attackers to write files to arbitrary locations on the filesystem. The `--out=`
+  flag accepts user-provided paths without validation, enabling directory traversal
+  attacks that can overwrite critical system files or create files in sensitive locations."
+date: "2026-04-22"
+pubdate: "2026-04-22"
+affected_range: "<1.69.3"
+fixed_versions:
+- "1.69.3"
+affected_versions: "All versions before 1.69.3"
+not_impacted: "All versions starting from 1.69.3"
+solution: "Upgrade to version 1.69.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-r466-rxw4-3j9j"
+- "https://github.com/EvoMap/evolver/security/advisories/GHSA-r466-rxw4-3j9j"
+- "https://github.com/EvoMap/evolver"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H"
+uuid: "8d472302-566d-49a8-950d-6150610b2f09"
+cwe_ids:
+- "CWE-22"
+- "CWE-937"
+- "CWE-1035"

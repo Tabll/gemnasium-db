@@ -1,0 +1,40 @@
+---
+identifier: "GHSA-2r2p-4cgf-hv7h"
+identifiers:
+- "GHSA-2r2p-4cgf-hv7h"
+package_slug: "npm/engramx"
+title: "engram: HTTP server CORS wildcard + auth-off-by-default enables CSRF graph
+  exfiltration and persistent indirect prompt injection"
+description: "The local HTTP server started by `engram server` (binding `127.0.0.1:7337`
+  by default) was exposed to any browser origin with no authentication unless `ENGRAM_API_TOKEN`
+  was explicitly set. Combined with `Access-Control-Allow-Origin: *` on every response
+  and a body parser that did not require `Content-Type: application/json`, this allowed
+  a malicious web page the developer visited to:\n\n1. **Exfiltrate** the local knowledge
+  graph via `GET /query` and `GET /stats` (function names, file layout, recorded decisions/mistakes).\n2.
+  **Inject persistent prompt-injection payloads** via `POST /learn`, which wrote `mistake`/`decision`
+  nodes that were later surfaced as system-reminders to the user's AI coding agent
+  on every future session and file edit.\n\nSeverity: **High** — confidentiality +
+  persistent indirect prompt injection against the user's coding agent."
+date: "2026-04-22"
+pubdate: "2026-04-22"
+affected_range: "<2.0.2"
+fixed_versions:
+- "2.0.2"
+affected_versions: "All versions before 2.0.2"
+not_impacted: "All versions starting from 2.0.2"
+solution: "Upgrade to version 2.0.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-2r2p-4cgf-hv7h"
+- "https://github.com/NickCirv/engram/security/advisories/GHSA-2r2p-4cgf-hv7h"
+- "https://github.com/NickCirv/engram/issues/7"
+- "https://github.com/NickCirv/engram"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N"
+uuid: "b586276c-6734-423e-8c72-1b7e4f9a580b"
+cwe_ids:
+- "CWE-1188"
+- "CWE-306"
+- "CWE-352"
+- "CWE-942"
+- "CWE-937"
+- "CWE-1035"
