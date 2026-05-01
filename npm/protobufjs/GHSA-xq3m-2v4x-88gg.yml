@@ -6,9 +6,9 @@ package_slug: "npm/protobufjs"
 title: "Arbitrary code execution in protobufjs"
 description: "protobufjs compiles protobuf definitions into JS functions. Attackers
   can manipulate these definitions to execute arbitrary JS code."
-date: "2026-04-16"
+date: "2026-04-30"
 pubdate: "2026-04-16"
-affected_range: ">=8.0.0 <8.0.1||<7.5.5"
+affected_range: "<0"
 fixed_versions:
 - "8.0.1"
 - "7.5.5"
