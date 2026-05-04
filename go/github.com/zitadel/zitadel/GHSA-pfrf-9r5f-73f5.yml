@@ -11,7 +11,7 @@ description: "A potential vulnerability exists in ZITADEL's password reset mecha
   containing a secret code, is then emailed to the user."
 date: "2025-12-08"
 pubdate: "2025-12-08"
-affected_range: ">=1.83.4 <=1.87.5||>=4.0.0-rc.1 <4.7.1"
+affected_range: "<0"
 fixed_versions:
 - "4.7.1"
 affected_versions: "All versions starting from 1.83.4 up to 1.87.5, all versions starting

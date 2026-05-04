@@ -11,7 +11,7 @@ description: "Versions of `typeorm` before 0.1.15 are vulnerable to SQL Injectio
   0.1.15"
 date: "2021-08-04"
 pubdate: "2019-06-06"
-affected_range: "<0.1.15"
+affected_range: "<0"
 fixed_versions:
 - "0.1.15"
 affected_versions: "All versions before 0.1.15"

@@ -9,7 +9,7 @@ description: "The DataRow.Decode function fails to properly validate field lengt
   field length, causing a slice bounds out of range panic."
 date: "2026-03-18"
 pubdate: "2026-03-18"
-affected_range: ">=2.0.0 <=2.3.3"
+affected_range: "<0"
 fixed_versions: []
 affected_versions: "All versions starting from 2.0.0 up to 2.3.3"
 not_impacted: ""

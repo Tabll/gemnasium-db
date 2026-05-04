@@ -9,7 +9,7 @@ description: "This vulnerability lets an attacker get around integrity checks fo
   element that is also referenced in the same signature.\n\n------"
 date: "2026-03-18"
 pubdate: "2026-03-18"
-affected_range: "<1.6.0"
+affected_range: "<0"
 fixed_versions:
 - "1.6.0"
 affected_versions: "All versions before 1.6.0"

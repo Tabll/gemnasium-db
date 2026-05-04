@@ -9,7 +9,7 @@ description: "In a narrow Signal reaction-notification path, reaction-only inbou
   events could enqueue a status event before sender access checks were applied."
 date: "2026-03-03"
 pubdate: "2026-03-03"
-affected_range: "<2026.2.25"
+affected_range: "<0"
 fixed_versions:
 - "2026.2.25"
 affected_versions: "All versions before 2026.2.25"

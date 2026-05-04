@@ -12,7 +12,7 @@ description: "goshs contains an SFTP authentication bypass when the documented e
   `v2.0.0-beta.5`."
 date: "2026-04-14"
 pubdate: "2026-04-14"
-affected_range: "<=1.1.4"
+affected_range: "<0"
 fixed_versions: []
 affected_versions: "All versions up to 1.1.4"
 not_impacted: ""

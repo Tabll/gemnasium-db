@@ -11,7 +11,7 @@ description: "Pion DTLS versions v1.0.0 through v3.1.0 use random nonce generati
   attack\"."
 date: "2026-02-11"
 pubdate: "2026-02-11"
-affected_range: "<=1.5.4"
+affected_range: "<0"
 fixed_versions: []
 affected_versions: "All versions up to 1.5.4"
 not_impacted: ""

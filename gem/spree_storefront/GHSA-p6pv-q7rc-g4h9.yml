@@ -9,7 +9,7 @@ description: "This issue may lead to disclosure of PII of guest users (including
   addresses and phone numbers)."
 date: "2026-02-05"
 pubdate: "2026-02-05"
-affected_range: "<5.0.8||>=5.1.0 <5.1.10||>=5.2.0 <5.2.7||>=5.3.0 <5.3.2"
+affected_range: "<0"
 fixed_versions:
 - "5.0.8"
 - "5.1.10"

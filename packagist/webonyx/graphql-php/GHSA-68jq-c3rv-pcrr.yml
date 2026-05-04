@@ -20,7 +20,7 @@ description: "The `OverlappingFieldsCanBeMerged` validation rule exhibits quadra
   (typically 1 for this attack pattern).\n\n**Credit:** Ashwak N (ashwakn04@gmail.com)"
 date: "2026-04-14"
 pubdate: "2026-04-14"
-affected_range: "<15.31.5"
+affected_range: "<0"
 fixed_versions:
 - "15.31.5"
 affected_versions: "All versions before 15.31.5"

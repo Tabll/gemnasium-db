@@ -13,7 +13,7 @@ description: "`openclaw` web tools strict URL fetch paths could lose DNS pinning
   dispatcher."
 date: "2026-03-03"
 pubdate: "2026-03-03"
-affected_range: "<2026.3.2"
+affected_range: "<0"
 fixed_versions:
 - "2026.3.2"
 affected_versions: "All versions before 2026.3.2"

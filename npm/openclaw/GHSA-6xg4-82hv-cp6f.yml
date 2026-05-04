@@ -10,7 +10,7 @@ description: "ACP-only provenance fields in `chat.send` were gated by self-decla
   state."
 date: "2026-03-31"
 pubdate: "2026-03-31"
-affected_range: "<2026.3.28"
+affected_range: "<0"
 fixed_versions:
 - "2026.3.28"
 affected_versions: "All versions before 2026.3.28"

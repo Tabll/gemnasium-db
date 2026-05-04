@@ -8,7 +8,7 @@ title: "OpenClaw: Gateway Plugin HTTP Auth Grants Unrestricted operator.admin Ru
 description: "Gateway Plugin HTTP auth: \"gateway\" Mints operator.admin Runtime Scope"
 date: "2026-03-27"
 pubdate: "2026-03-27"
-affected_range: "<=2026.3.24"
+affected_range: "<0"
 fixed_versions: []
 affected_versions: "All versions up to 2026.3.24"
 not_impacted: ""

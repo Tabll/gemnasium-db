@@ -10,7 +10,7 @@ description: "A Path Traversal vulnerability in the website content subsystem le
   credentials, configs, and keys."
 date: "2026-02-05"
 pubdate: "2026-02-05"
-affected_range: "<1.6.11"
+affected_range: "<0"
 fixed_versions:
 - "1.6.11"
 affected_versions: "All versions before 1.6.11"

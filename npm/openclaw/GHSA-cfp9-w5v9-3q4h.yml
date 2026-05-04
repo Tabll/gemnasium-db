@@ -10,7 +10,7 @@ description: "The `image` tool did not fully honor the `tools.fs.workspaceOnly` 
   the other file tools would reject."
 date: "2026-03-26"
 pubdate: "2026-03-26"
-affected_range: "<2026.3.2"
+affected_range: "<0"
 fixed_versions:
 - "2026.3.2"
 affected_versions: "All versions before 2026.3.2"

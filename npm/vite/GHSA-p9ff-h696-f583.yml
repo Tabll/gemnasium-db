@@ -9,7 +9,7 @@ description: "[`server.fs`](https://vite.dev/config/server-options#server-fs-str
   WebSocket."
 date: "2026-04-06"
 pubdate: "2026-04-06"
-affected_range: ">=8.0.0 <8.0.5||>=7.0.0 <7.3.2||>=6.0.0 <6.4.2"
+affected_range: "<0"
 fixed_versions:
 - "8.0.5"
 - "7.3.2"

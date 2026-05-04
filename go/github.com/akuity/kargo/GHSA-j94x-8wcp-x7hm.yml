@@ -30,8 +30,7 @@ description: "Kargo's built-in `http` and `http-download` promotion steps execut
   network policies that restrict traffic appropriately."
 date: "2026-03-16"
 pubdate: "2026-03-16"
-affected_range: ">=1.4.0 <1.6.4||>=1.7.0-rc.1 <1.7.9||>=1.8.0-rc.1 <1.8.12||>=1.9.0-rc.1
-  <1.9.5"
+affected_range: "<0"
 fixed_versions:
 - "1.6.4"
 - "1.7.9"

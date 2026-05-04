@@ -10,7 +10,7 @@ description: "The `/objects/playlistsFromUser.json.php` endpoint returns all pla
   names, video IDs, and playlist status for any user on the platform."
 date: "2026-03-07"
 pubdate: "2026-03-07"
-affected_range: "<25.0"
+affected_range: "<0"
 fixed_versions:
 - "25.0"
 affected_versions: "All versions before 25.0"

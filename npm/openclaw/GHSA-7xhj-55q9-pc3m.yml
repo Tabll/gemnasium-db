@@ -10,7 +10,7 @@ description: "OpenClaw hook mapping transforms could be loaded via absolute path
   gateway process when an attacker can modify hooks configuration."
 date: "2026-03-03"
 pubdate: "2026-03-03"
-affected_range: ">=2.0.0-beta3 <2026.2.14"
+affected_range: "<0"
 fixed_versions:
 - "2026.2.14"
 affected_versions: "All versions starting from 2.0.0-beta3 before 2026.2.14"

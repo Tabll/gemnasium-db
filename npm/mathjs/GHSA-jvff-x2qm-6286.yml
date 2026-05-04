@@ -11,7 +11,7 @@ description: "Two security vulnerabilities, the first of which was introduced in
   evaluate arbitrary expressions using the mathjs expression parser."
 date: "2026-04-14"
 pubdate: "2026-04-10"
-affected_range: ">=13.1.0 <15.2.0"
+affected_range: "<0"
 fixed_versions:
 - "15.2.0"
 affected_versions: "All versions starting from 13.1.0 before 15.2.0"

@@ -9,7 +9,7 @@ description: "Incomplete CSRF protections around `/session/verify` made it possi
   this might have made it easier for phishers to take over a Ghost site."
 date: "2026-03-05"
 pubdate: "2026-03-05"
-affected_range: ">=5.101.6 <6.19.3"
+affected_range: "<0"
 fixed_versions:
 - "6.19.3"
 affected_versions: "All versions starting from 5.101.6 before 6.19.3"

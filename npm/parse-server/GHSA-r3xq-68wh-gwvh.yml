@@ -14,7 +14,7 @@ description: "The password reset mechanism does not enforce single-use guarantee
   feature are affected."
 date: "2026-03-17"
 pubdate: "2026-03-17"
-affected_range: ">=9.0.0 <9.6.0-alpha.28||<8.6.48"
+affected_range: "<0"
 fixed_versions:
 - "9.6.0-alpha.28"
 - "8.6.48"

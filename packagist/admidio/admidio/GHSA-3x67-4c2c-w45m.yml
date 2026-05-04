@@ -15,7 +15,7 @@ description: "The MyList configuration feature in Admidio allows authenticated u
   potentially achieving full database compromise."
 date: "2026-03-16"
 pubdate: "2026-03-16"
-affected_range: "<5.0.7"
+affected_range: "<0"
 fixed_versions:
 - "5.0.7"
 affected_versions: "All versions before 5.0.7"

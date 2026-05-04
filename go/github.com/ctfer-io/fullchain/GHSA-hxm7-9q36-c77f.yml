@@ -11,7 +11,7 @@ description: "Due to a mis-written NetworkPolicy, a malicious actor can pivot fr
   to a potential lateral movement."
 date: "2026-03-16"
 pubdate: "2026-03-16"
-affected_range: "<0.1.1"
+affected_range: "<0"
 fixed_versions:
 - "0.1.1"
 affected_versions: "All versions before 0.1.1"

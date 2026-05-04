@@ -10,7 +10,7 @@ description: "The `sanitizeArchivePath` function in `webserver/api/v1/decoder.go
   files outside the intended destination directory."
 date: "2026-03-16"
 pubdate: "2026-03-16"
-affected_range: "<0.2.2"
+affected_range: "<0"
 fixed_versions:
 - "0.2.2"
 affected_versions: "All versions before 0.2.2"

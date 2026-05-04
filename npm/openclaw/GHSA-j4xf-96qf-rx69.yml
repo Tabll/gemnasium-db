@@ -7,7 +7,7 @@ title: "OpenClaw has a Feishu allowFrom authorization bypass via display-name co
 description: "Feishu allowlist authorization could be bypassed by display-name collision."
 date: "2026-03-03"
 pubdate: "2026-03-03"
-affected_range: "<2026.2.22"
+affected_range: "<0"
 fixed_versions:
 - "2026.2.22"
 affected_versions: "All versions before 2026.2.22"

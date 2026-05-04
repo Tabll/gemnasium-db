@@ -15,7 +15,7 @@ description: "The shell environment fallback path could invoke an attacker-contr
   `SHELL` overrides."
 date: "2026-03-03"
 pubdate: "2026-03-03"
-affected_range: "<2026.2.22"
+affected_range: "<0"
 fixed_versions:
 - "2026.2.22"
 affected_versions: "All versions before 2026.2.22"

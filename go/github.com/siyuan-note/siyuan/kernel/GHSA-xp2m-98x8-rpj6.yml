@@ -16,7 +16,7 @@ description: "SiYuan's WebSocket endpoint (`/ws`) allows unauthenticated connect
   instance and monitor their note-taking activity."
 date: "2026-03-16"
 pubdate: "2026-03-16"
-affected_range: "<=0.0.0-20260313024916-fd6526133bb3"
+affected_range: "<0"
 fixed_versions: []
 affected_versions: "All versions up to 0.0.0-20260313024916-fd6526133bb3"
 not_impacted: ""

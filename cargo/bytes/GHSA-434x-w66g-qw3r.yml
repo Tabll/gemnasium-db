@@ -21,7 +21,7 @@ description: "# Details\n\nIn the unique reclaim path of `BytesMut::reserve`, th
   issue does not apply."
 date: "2026-02-03"
 pubdate: "2026-02-03"
-affected_range: ">=1.2.1 <1.11.1"
+affected_range: "<0"
 fixed_versions:
 - "1.11.1"
 affected_versions: "All versions starting from 1.2.1 before 1.11.1"

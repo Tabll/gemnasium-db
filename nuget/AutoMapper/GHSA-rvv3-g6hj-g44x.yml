@@ -11,7 +11,7 @@ description: "AutoMapper is vulnerable to a Denial of Service (DoS) attack. When
   and causing the entire application process to terminate."
 date: "2026-03-16"
 pubdate: "2026-03-13"
-affected_range: "[16.0.0,16.1.1),[,15.1.1)"
+affected_range: "(,0)"
 fixed_versions:
 - "16.1.1"
 - "15.1.1"

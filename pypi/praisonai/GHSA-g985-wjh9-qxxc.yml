@@ -11,7 +11,7 @@ description: "PraisonAI automatically imports `./tools.py` from the current work
   host environment."
 date: "2026-04-10"
 pubdate: "2026-04-10"
-affected_range: "<4.5.139"
+affected_range: "<0"
 fixed_versions:
 - "4.5.139"
 affected_versions: "All versions before 4.5.139"

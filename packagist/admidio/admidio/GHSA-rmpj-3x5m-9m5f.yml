@@ -17,7 +17,7 @@ description: "The documents and files module in Admidio does not verify whether 
   view-only access can delete content they are only permitted to read."
 date: "2026-03-16"
 pubdate: "2026-03-16"
-affected_range: ">=5.0.0 <5.0.7"
+affected_range: "<0"
 fixed_versions:
 - "5.0.7"
 affected_versions: "All versions starting from 5.0.0 before 5.0.7"

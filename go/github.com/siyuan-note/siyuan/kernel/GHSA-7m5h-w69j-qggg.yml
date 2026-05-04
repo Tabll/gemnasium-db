@@ -14,7 +14,7 @@ description: "An authenticated publish-service reader can invoke `/api/av/remove
   availability issue reachable from the publish surface."
 date: "2026-04-10"
 pubdate: "2026-04-10"
-affected_range: "<0.0.0-20260407035653-2f416e5253f1"
+affected_range: "<0"
 fixed_versions:
 - "0.0.0-20260407035653-2f416e5253f1"
 affected_versions: "All versions before 0.0.0-20260407035653-2f416e5253f1"

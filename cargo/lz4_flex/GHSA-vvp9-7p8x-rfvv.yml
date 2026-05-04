@@ -10,7 +10,7 @@ description: "Decompressing invalid LZ4 data can leak data from uninitialized me
   buffer."
 date: "2026-03-16"
 pubdate: "2026-03-16"
-affected_range: "<0.11.6||>=0.12.0 <0.12.1"
+affected_range: "<0"
 fixed_versions:
 - "0.11.6"
 - "0.12.1"

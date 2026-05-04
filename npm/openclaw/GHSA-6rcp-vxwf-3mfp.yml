@@ -11,7 +11,7 @@ description: "In `openclaw` up to and including **2026.2.23** (latest npm releas
   execute at runtime."
 date: "2026-03-03"
 pubdate: "2026-03-03"
-affected_range: "<2026.2.24"
+affected_range: "<0"
 fixed_versions:
 - "2026.2.24"
 affected_versions: "All versions before 2026.2.24"

@@ -9,7 +9,7 @@ description: "Processing a malformed input containing a `<` character that is no
   will lead to Out of Bounds read or a panic."
 date: "2026-04-14"
 pubdate: "2026-04-14"
-affected_range: "<0.0.0-20260411013819-759bbc3e3207"
+affected_range: "<0"
 fixed_versions:
 - "0.0.0-20260411013819-759bbc3e3207"
 affected_versions: "All versions before 0.0.0-20260411013819-759bbc3e3207"

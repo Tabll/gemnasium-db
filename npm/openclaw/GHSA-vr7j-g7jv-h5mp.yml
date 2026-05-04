@@ -10,7 +10,7 @@ description: "`openclaw` created new session transcript JSONL files with overly 
   in tool output."
 date: "2026-03-16"
 pubdate: "2026-03-16"
-affected_range: "<2026.2.17"
+affected_range: "<0"
 fixed_versions:
 - "2026.2.17"
 affected_versions: "All versions before 2026.2.17"

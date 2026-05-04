@@ -13,7 +13,7 @@ description: "A critical remote code execution vulnerability exists in the Crawl
   \   __import__('os').system('malicious_command')\\n    return page\"\n}\n}\n}\n```"
 date: "2026-01-16"
 pubdate: "2026-01-16"
-affected_range: "<0.8.0"
+affected_range: "<0"
 fixed_versions:
 - "0.8.0"
 affected_versions: "All versions before 0.8.0"

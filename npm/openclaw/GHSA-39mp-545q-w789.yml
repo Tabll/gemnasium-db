@@ -70,7 +70,7 @@ description: "> Fixed in OpenClaw 2026.3.24, the current shipping release.\n\n**
   the owner can still use `/send on|off|inherit` normally."
 date: "2026-03-30"
 pubdate: "2026-03-30"
-affected_range: "<2026.3.24"
+affected_range: "<0"
 fixed_versions:
 - "2026.3.24"
 affected_versions: "All versions before 2026.3.24"

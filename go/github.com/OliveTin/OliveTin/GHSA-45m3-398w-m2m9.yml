@@ -12,7 +12,7 @@ description: "An unauthenticated denial-of-service vulnerability exists in Olive
   crash the service when OAuth2 is enabled."
 date: "2026-03-02"
 pubdate: "2026-03-02"
-affected_range: "<0.0.0-20260301235225-f044d90d5525c"
+affected_range: "<0"
 fixed_versions:
 - "0.0.0-20260301235225-f044d90d5525c"
 affected_versions: "All versions before 0.0.0-20260301235225-f044d90d5525c"

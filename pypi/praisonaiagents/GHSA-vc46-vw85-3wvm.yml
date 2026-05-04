@@ -11,7 +11,7 @@ description: "`praisonai workflow run <file.yaml>` loads untrusted YAML and if `
   YAML file can execute arbitrary host commands."
 date: "2026-04-10"
 pubdate: "2026-04-10"
-affected_range: "<1.5.140"
+affected_range: "<0"
 fixed_versions:
 - "1.5.140"
 affected_versions: "All versions before 1.5.140"

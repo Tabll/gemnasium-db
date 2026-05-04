@@ -10,7 +10,7 @@ description: "An XSS vulnerability in the frontend allows a malicious attacker t
   vulnerability."
 date: "2026-02-04"
 pubdate: "2026-02-04"
-affected_range: "<0.60.0"
+affected_range: "<0"
 fixed_versions:
 - "0.60.0"
 affected_versions: "All versions before 0.60.0"

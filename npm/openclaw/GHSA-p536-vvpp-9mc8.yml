@@ -9,7 +9,7 @@ description: "The `web_fetch` tool could be used to crash the OpenClaw Gateway p
   web pages with oversized response bodies or pathological HTML nesting."
 date: "2026-02-19"
 pubdate: "2026-02-19"
-affected_range: "<2026.2.15"
+affected_range: "<0"
 fixed_versions:
 - "2026.2.15"
 affected_versions: "All versions before 2026.2.15"

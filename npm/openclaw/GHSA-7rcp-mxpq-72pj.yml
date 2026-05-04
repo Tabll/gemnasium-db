@@ -10,7 +10,7 @@ description: "The manual Chutes OAuth login flow could accept attacker-controlle
   in credential substitution."
 date: "2026-02-18"
 pubdate: "2026-02-18"
-affected_range: "<2026.2.14"
+affected_range: "<0"
 fixed_versions:
 - "2026.2.14"
 affected_versions: "All versions before 2026.2.14"

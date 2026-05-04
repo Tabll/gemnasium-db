@@ -15,7 +15,7 @@ description: "OpenClaw's `fetchWithSsrFGuard(...)` followed cross-origin redirec
   survive an origin change."
 date: "2026-03-09"
 pubdate: "2026-03-09"
-affected_range: "<2026.3.7"
+affected_range: "<0"
 fixed_versions:
 - "2026.3.7"
 affected_versions: "All versions before 2026.3.7"

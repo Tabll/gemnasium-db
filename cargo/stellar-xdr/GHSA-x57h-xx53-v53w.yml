@@ -15,7 +15,7 @@ description: "`StringM::from_str` does not validate that the input length is wit
   up to and including `v25.0.0` are affected."
 date: "2026-03-05"
 pubdate: "2026-03-05"
-affected_range: "<25.0.1"
+affected_range: "<0"
 fixed_versions:
 - "25.0.1"
 affected_versions: "All versions before 25.0.1"

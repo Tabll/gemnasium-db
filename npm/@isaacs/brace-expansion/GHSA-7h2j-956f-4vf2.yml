@@ -12,7 +12,7 @@ description: "`@isaacs/brace-expansion` is vulnerable to a Denial of Service (Do
   process."
 date: "2026-02-03"
 pubdate: "2026-02-03"
-affected_range: "<5.0.1"
+affected_range: "<0"
 fixed_versions:
 - "5.0.1"
 affected_versions: "All versions before 5.0.1"

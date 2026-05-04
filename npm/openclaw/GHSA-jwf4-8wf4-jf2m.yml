@@ -10,7 +10,7 @@ description: "BlueBubbles is an optional OpenClaw channel plugin. A configuratio
   was `pairing` or `allowlist` and `allowFrom` was empty/unset."
 date: "2026-03-04"
 pubdate: "2026-03-04"
-affected_range: "<2026.2.22"
+affected_range: "<0"
 fixed_versions:
 - "2026.2.22"
 affected_versions: "All versions before 2026.2.22"

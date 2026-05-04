@@ -34,7 +34,7 @@ description: "**Summary**\n\nA critical vulnerability has been identified in CI4
   (e.g., .htaccess or Nginx config)."
 date: "2026-02-02"
 pubdate: "2026-02-02"
-affected_range: "<0.28.5.0"
+affected_range: "<0"
 fixed_versions:
 - "0.28.5.0"
 affected_versions: "All versions before 0.28.5.0"

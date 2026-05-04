@@ -10,7 +10,7 @@ description: "Base64-backed media inputs could be decoded into Buffers before en
   large allocations, causing memory pressure and denial of service."
 date: "2026-02-18"
 pubdate: "2026-02-18"
-affected_range: "<=2026.1.24-3"
+affected_range: "<0"
 fixed_versions: []
 affected_versions: "All versions up to 2026.1.24-3"
 not_impacted: ""

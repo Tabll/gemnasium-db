@@ -17,7 +17,7 @@ description: "A Remote OOM (Out-of-Memory) vulnerability exists in the Sliver C2
   check at all.\n\n---"
 date: "2026-03-17"
 pubdate: "2026-03-17"
-affected_range: "<=1.7.3"
+affected_range: "<0"
 fixed_versions: []
 affected_versions: "All versions up to 1.7.3"
 not_impacted: ""

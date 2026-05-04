@@ -9,7 +9,7 @@ description: "Nextcloud Talk room authorization matched on collidable room names
   of the stable room token, allowing policy confusion across similarly named rooms."
 date: "2026-03-26"
 pubdate: "2026-03-26"
-affected_range: "<2026.3.22"
+affected_range: "<0"
 fixed_versions:
 - "2026.3.22"
 affected_versions: "All versions before 2026.3.22"

@@ -10,7 +10,7 @@ description: "This vulnerability allows users of Gradio applications that have a
   made by the Gradio app to the server."
 date: "2024-09-25"
 pubdate: "2024-09-25"
-affected_range: "<4.19.2"
+affected_range: "<0"
 fixed_versions:
 - "4.19.2"
 affected_versions: "All versions before 4.19.2"

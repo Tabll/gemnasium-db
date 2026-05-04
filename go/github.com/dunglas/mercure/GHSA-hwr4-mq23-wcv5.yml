@@ -16,7 +16,7 @@ description: "A cache key collision vulnerability in `TopicSelectorStore` allows
   authorization checks on private updates."
 date: "2026-04-08"
 pubdate: "2026-04-08"
-affected_range: "<0.22.0"
+affected_range: "<0"
 fixed_versions:
 - "0.22.0"
 affected_versions: "All versions before 0.22.0"

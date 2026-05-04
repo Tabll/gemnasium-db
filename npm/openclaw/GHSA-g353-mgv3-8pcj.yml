@@ -11,7 +11,7 @@ description: "Feishu webhook mode allowed deployments that configured only `veri
   boundary."
 date: "2026-03-13"
 pubdate: "2026-03-13"
-affected_range: "<2026.3.12"
+affected_range: "<0"
 fixed_versions:
 - "2026.3.12"
 affected_versions: "All versions before 2026.3.12"

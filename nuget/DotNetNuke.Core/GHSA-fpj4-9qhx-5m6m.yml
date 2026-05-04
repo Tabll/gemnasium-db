@@ -8,7 +8,7 @@ description: "In the friends feature, a user could craft a request that would fo
   the acceptance of a friend request on another user."
 date: "2026-04-10"
 pubdate: "2026-04-10"
-affected_range: "[6.0.0,10.2.2)"
+affected_range: "(,0)"
 fixed_versions:
 - "10.2.2"
 affected_versions: "All versions starting from 6.0.0 before 10.2.2"

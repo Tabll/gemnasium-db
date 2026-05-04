@@ -10,7 +10,7 @@ description: "The Velbus asset import path parses attacker-controlled XML withou
   and SSRF. The target file must be less than 1023 characters."
 date: "2026-04-15"
 pubdate: "2026-04-15"
-affected_range: "[,1.22.0)"
+affected_range: "(,0)"
 fixed_versions:
 - "1.22.0"
 affected_versions: "All versions before 1.22.0"

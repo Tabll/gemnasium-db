@@ -13,7 +13,7 @@ description: "`basic-ftp` version `5.2.0` allows FTP command injection via CRLF 
   path strings split one intended FTP command into multiple commands."
 date: "2026-04-08"
 pubdate: "2026-04-08"
-affected_range: ">=5.2.0 <5.2.1||=5.2.0"
+affected_range: "<0"
 fixed_versions:
 - "5.2.1"
 affected_versions: "All versions starting from 5.2.0 before 5.2.1, version 5.2.0"

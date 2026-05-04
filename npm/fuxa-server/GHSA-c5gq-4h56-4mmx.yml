@@ -10,7 +10,7 @@ description: "An information disclosure vulnerability in FUXA allows an unauthen
   1.2.10."
 date: "2026-02-05"
 pubdate: "2026-02-05"
-affected_range: "<1.2.10"
+affected_range: "<0"
 fixed_versions:
 - "1.2.10"
 affected_versions: "All versions before 1.2.10"

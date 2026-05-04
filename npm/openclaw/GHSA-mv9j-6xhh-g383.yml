@@ -15,7 +15,7 @@ description: "The OpenClaw Nostr channel plugin (optional, disabled by default, 
   that do not have the Nostr plugin installed and enabled are not impacted."
 date: "2026-02-17"
 pubdate: "2026-02-17"
-affected_range: "<2026.2.12"
+affected_range: "<0"
 fixed_versions:
 - "2026.2.12"
 affected_versions: "All versions before 2026.2.12"

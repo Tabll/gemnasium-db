@@ -17,7 +17,7 @@ description: "Summary\n\nOneUptime Synthetic Monitors allow low-privileged proje
   object to untrusted code, not prototype-chain access to `process`."
 date: "2026-03-07"
 pubdate: "2026-03-07"
-affected_range: "<10.0.20"
+affected_range: "<0"
 fixed_versions:
 - "10.0.20"
 affected_versions: "All versions before 10.0.20"

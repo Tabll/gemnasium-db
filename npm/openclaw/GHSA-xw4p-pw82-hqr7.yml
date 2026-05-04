@@ -9,7 +9,7 @@ description: "- Files may be written outside the sandbox workspace root (within 
   permissions of the user running OpenClaw)."
 date: "2026-03-02"
 pubdate: "2026-03-02"
-affected_range: "<2026.2.14"
+affected_range: "<0"
 fixed_versions:
 - "2026.2.14"
 affected_versions: "All versions before 2026.2.14"

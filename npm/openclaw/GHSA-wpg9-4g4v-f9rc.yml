@@ -11,7 +11,7 @@ description: "In `openclaw@2026.3.1`, the Discord voice transcript path called `
   reach owner-only tool surfaces (`gateway`, `cron`) during voice transcript turns."
 date: "2026-03-03"
 pubdate: "2026-03-03"
-affected_range: "<2026.3.2"
+affected_range: "<0"
 fixed_versions:
 - "2026.3.2"
 affected_versions: "All versions before 2026.3.2"

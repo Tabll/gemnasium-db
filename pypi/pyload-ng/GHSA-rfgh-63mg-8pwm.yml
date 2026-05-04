@@ -13,7 +13,7 @@ description: "Several WebUI JSON endpoints enforce weaker permissions than the c
   (`stop_downloads`) via `/json/abort_link`"
 date: "2026-04-08"
 pubdate: "2026-04-08"
-affected_range: "<=0.5.0b3"
+affected_range: "<0"
 fixed_versions: []
 affected_versions: "All versions up to 0.5.0b3"
 not_impacted: ""

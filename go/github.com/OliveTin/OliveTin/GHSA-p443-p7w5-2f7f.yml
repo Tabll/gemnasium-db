@@ -15,7 +15,7 @@ description: "An authentication context confusion vulnerability in RestartAction
   arbitrary configured shell actions."
 date: "2026-03-05"
 pubdate: "2026-03-05"
-affected_range: "<0.0.0-20260305000458-cb46a597b246"
+affected_range: "<0"
 fixed_versions:
 - "0.0.0-20260305000458-cb46a597b246"
 affected_versions: "All versions before 0.0.0-20260305000458-cb46a597b246"

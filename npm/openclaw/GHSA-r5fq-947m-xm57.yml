@@ -10,7 +10,7 @@ description: "In affected versions, when `apply_patch` was enabled and the agent
   outside the configured workspace directory."
 date: "2026-02-19"
 pubdate: "2026-02-19"
-affected_range: "<2026.2.14"
+affected_range: "<0"
 fixed_versions:
 - "2026.2.14"
 affected_versions: "All versions before 2026.2.14"

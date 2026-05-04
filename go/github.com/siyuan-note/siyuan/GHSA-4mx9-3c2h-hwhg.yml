@@ -15,7 +15,7 @@ description: "Reflected XSS on an unauthenticated endpoint. Victim visits the cr
   An allowlist of safe image types covers the known vectors and future MIME type additions."
 date: "2026-03-17"
 pubdate: "2026-03-17"
-affected_range: "<=0.0.0-20260313024916-fd6526133bb3"
+affected_range: "<0"
 fixed_versions: []
 affected_versions: "All versions up to 0.0.0-20260313024916-fd6526133bb3"
 not_impacted: ""

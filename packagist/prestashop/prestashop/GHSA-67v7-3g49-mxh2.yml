@@ -9,7 +9,7 @@ description: "A time-based user enumeration vulnerability in the user authentica
   whether a customer account exists in the system by measuring response times."
 date: "2026-02-04"
 pubdate: "2026-02-03"
-affected_range: ">=9.0.0-alpha.1 <9.0.3||<8.2.4"
+affected_range: "<0"
 fixed_versions:
 - "9.0.3"
 - "8.2.4"

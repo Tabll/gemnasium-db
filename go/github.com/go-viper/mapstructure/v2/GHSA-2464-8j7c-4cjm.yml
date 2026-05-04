@@ -9,7 +9,7 @@ description: "Use of this library in a security-critical context may result in l
   sensitive information, if used to process sensitive fields."
 date: "2025-08-29"
 pubdate: "2025-08-21"
-affected_range: "<2.4.0"
+affected_range: "<0"
 fixed_versions:
 - "2.4.0"
 affected_versions: "All versions before 2.4.0"

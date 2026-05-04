@@ -18,7 +18,7 @@ description: "The `RecursiveUrlLoader` class in `@langchain/community` is a web 
   localhost, or RFC 1918 addresses, and the crawler would fetch them without restriction."
 date: "2026-02-11"
 pubdate: "2026-02-11"
-affected_range: "<1.1.14"
+affected_range: "<0"
 fixed_versions:
 - "1.1.14"
 affected_versions: "All versions before 1.1.14"

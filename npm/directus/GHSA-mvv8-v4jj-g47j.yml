@@ -12,7 +12,7 @@ description: "Directus stores revision records (in `directus_revisions`) wheneve
   revision records."
 date: "2026-04-07"
 pubdate: "2026-04-04"
-affected_range: "<11.17.0"
+affected_range: "<0"
 fixed_versions:
 - "11.17.0"
 affected_versions: "All versions before 11.17.0"

@@ -8,7 +8,7 @@ title: "Relative Path Traversal"
 description: "Relative Path Traversal in angular-http-server."
 date: "2021-08-04"
 pubdate: "2019-05-31"
-affected_range: "<1.4.4"
+affected_range: "<0"
 fixed_versions:
 - "1.4.4"
 affected_versions: "All versions before 1.4.4"

@@ -11,7 +11,7 @@ description: "When JWT authentication is configured using either:\n\n- `authJwtP
   allows authentication using tokens intended for a different audience/service."
 date: "2026-03-05"
 pubdate: "2026-03-05"
-affected_range: "<0.0.0-20260304231339-e97d8ecbd8d6"
+affected_range: "<0"
 fixed_versions:
 - "0.0.0-20260304231339-e97d8ecbd8d6"
 affected_versions: "All versions before 0.0.0-20260304231339-e97d8ecbd8d6"

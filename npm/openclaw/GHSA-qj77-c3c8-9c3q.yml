@@ -11,7 +11,7 @@ description: "On Windows nodes, exec requests were executed via `cmd.exe /d /s /
   via `&`, or expansion via `%...%` / `!...!`) beyond what was allowlisted/approved."
 date: "2026-02-17"
 pubdate: "2026-02-17"
-affected_range: "<2026.2.2"
+affected_range: "<0"
 fixed_versions:
 - "2026.2.2"
 affected_versions: "All versions before 2026.2.2"

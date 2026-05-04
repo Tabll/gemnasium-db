@@ -10,7 +10,7 @@ description: "`tools.exec.safeBins` allowlist checks could be bypassed by PATH-h
   executable name."
 date: "2026-03-03"
 pubdate: "2026-03-03"
-affected_range: ">=2026.1.21 <2026.2.19"
+affected_range: "<0"
 fixed_versions:
 - "2026.2.19"
 affected_versions: "All versions starting from 2026.1.21 before 2026.2.19"

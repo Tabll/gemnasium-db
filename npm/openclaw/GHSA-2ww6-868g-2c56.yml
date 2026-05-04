@@ -11,7 +11,7 @@ description: "The HTML session exporter (`src/auto-reply/reply/export-html/templ
   can break out of the attribute context and execute arbitrary JavaScript."
 date: "2026-03-03"
 pubdate: "2026-03-03"
-affected_range: "<2026.2.23"
+affected_range: "<0"
 fixed_versions:
 - "2026.2.23"
 affected_versions: "All versions before 2026.2.23"

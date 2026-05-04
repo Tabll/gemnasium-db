@@ -9,7 +9,7 @@ description: "The msgpack decoder fails to properly validate the input buffer le
   an out-of-bounds read and a runtime panic, allowing a denial of service attack."
 date: "2026-03-18"
 pubdate: "2026-03-18"
-affected_range: "<=3.1.0"
+affected_range: "<0"
 fixed_versions: []
 affected_versions: "All versions up to 3.1.0"
 not_impacted: ""

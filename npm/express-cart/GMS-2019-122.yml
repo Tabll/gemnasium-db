@@ -11,7 +11,7 @@ description: "Versions of `express-cart` before 1.1.6 are vulnerable to privileg
   to version 1.1.6 or later."
 date: "2021-08-04"
 pubdate: "2019-06-03"
-affected_range: "<1.1.6"
+affected_range: "<0"
 fixed_versions:
 - "1.1.6"
 affected_versions: "All versions before 1.1.6"

@@ -10,7 +10,7 @@ description: "A vulnerability has been identified that allows an authenticated a
   privileges can download and execute malicious payloads."
 date: "2026-03-26"
 pubdate: "2026-03-26"
-affected_range: ">=1.48 <26.3.0"
+affected_range: "<0"
 fixed_versions:
 - "26.3.0"
 affected_versions: "All versions starting from 1.48 before 26.3.0"

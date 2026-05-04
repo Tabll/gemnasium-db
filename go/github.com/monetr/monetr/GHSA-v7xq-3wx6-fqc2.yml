@@ -11,7 +11,7 @@ description: "The public Stripe webhook endpoint fully reads the request body in
   of service."
 date: "2026-04-14"
 pubdate: "2026-04-14"
-affected_range: "<1.12.4"
+affected_range: "<0"
 fixed_versions:
 - "1.12.4"
 affected_versions: "All versions before 1.12.4"

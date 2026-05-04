@@ -22,7 +22,7 @@ description: "If the `template` tag is allowed, its contents are not sanitized. 
   by default."
 date: "2026-02-03"
 pubdate: "2026-02-03"
-affected_range: "[,9.0.892),[9.1.878-beta,9.1.893-beta)"
+affected_range: "(,0)"
 fixed_versions:
 - "9.0.892"
 - "9.1.893-beta"

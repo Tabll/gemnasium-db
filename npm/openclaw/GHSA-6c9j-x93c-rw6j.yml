@@ -11,7 +11,7 @@ description: "An information disclosure vulnerability in OpenClaw's `tools.exec.
   presence by comparing outcomes for existing vs non-existing filenames."
 date: "2026-02-27"
 pubdate: "2026-02-19"
-affected_range: "<2026.2.19"
+affected_range: "<0"
 fixed_versions:
 - "2026.2.19"
 affected_versions: "All versions before 2026.2.19"

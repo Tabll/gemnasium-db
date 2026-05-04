@@ -12,7 +12,7 @@ description: "`fetchWithSsrFGuard` replays unsafe request bodies across cross-or
   service boundary."
 date: "2026-04-09"
 pubdate: "2026-04-09"
-affected_range: "<2026.4.8"
+affected_range: "<0"
 fixed_versions:
 - "2026.4.8"
 affected_versions: "All versions before 2026.4.8"

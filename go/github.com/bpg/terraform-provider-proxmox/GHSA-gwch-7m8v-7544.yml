@@ -8,7 +8,7 @@ description: "In the SSH configuration documentation, the sudoer line that was s
   can be escalated to edit any files in the system."
 date: "2026-02-02"
 pubdate: "2026-02-02"
-affected_range: "<0.93.1"
+affected_range: "<0"
 fixed_versions:
 - "0.93.1"
 affected_versions: "All versions before 0.93.1"

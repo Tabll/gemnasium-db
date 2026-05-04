@@ -9,7 +9,7 @@ description: "In certain reverse-proxy / forwarding setups, webhook verification
   be bypassed if untrusted forwarded headers are accepted."
 date: "2026-02-17"
 pubdate: "2026-02-17"
-affected_range: "<2026.2.3"
+affected_range: "<0"
 fixed_versions:
 - "2026.2.3"
 affected_versions: "All versions before 2026.2.3"

@@ -15,7 +15,7 @@ description: "OpenClaw's Microsoft Teams plugin widened group sender authorizati
   group senders to trigger replies in allowlisted Teams routes."
 date: "2026-03-12"
 pubdate: "2026-03-12"
-affected_range: "<2026.3.8"
+affected_range: "<0"
 fixed_versions:
 - "2026.3.8"
 affected_versions: "All versions before 2026.3.8"

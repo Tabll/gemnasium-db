@@ -11,7 +11,7 @@ description: "When user-provided input is provided to any type that parses with 
   encounter this scenario."
 date: "2026-02-05"
 pubdate: "2026-02-05"
-affected_range: ">=0.3.6 <0.3.47"
+affected_range: "<0"
 fixed_versions:
 - "0.3.47"
 affected_versions: "All versions starting from 0.3.6 before 0.3.47"

@@ -11,7 +11,7 @@ description: "A path-confinement bypass in browser output handling allowed write
   validation across browser output and related install/skills write paths."
 date: "2026-03-03"
 pubdate: "2026-03-03"
-affected_range: "<2026.3.2"
+affected_range: "<0"
 fixed_versions:
 - "2026.3.2"
 affected_versions: "All versions before 2026.3.2"

@@ -11,7 +11,7 @@ description: "A command injection vulnerability existed in Windows Scheduled Tas
   environment variables to break out of assignment context."
 date: "2026-03-03"
 pubdate: "2026-03-03"
-affected_range: "<2026.2.19"
+affected_range: "<0"
 fixed_versions:
 - "2026.2.19"
 affected_versions: "All versions before 2026.2.19"

@@ -11,7 +11,7 @@ description: "`openclaw` versions `<= 2026.3.12` read and buffered Telegram webh
   parse work per request."
 date: "2026-03-16"
 pubdate: "2026-03-16"
-affected_range: "<2026.3.13"
+affected_range: "<0"
 fixed_versions:
 - "2026.3.13"
 affected_versions: "All versions before 2026.3.13"

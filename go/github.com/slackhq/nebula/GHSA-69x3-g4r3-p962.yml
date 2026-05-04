@@ -14,7 +14,7 @@ description: "When using P256 certificates (which is not the default configurati
   certificate, for one of those blocklist entries"
 date: "2026-02-06"
 pubdate: "2026-02-06"
-affected_range: ">=1.7.0 <1.10.3"
+affected_range: "<0"
 fixed_versions:
 - "1.10.3"
 affected_versions: "All versions starting from 1.7.0 before 1.10.3"

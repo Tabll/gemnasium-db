@@ -14,7 +14,7 @@ description: "When the HTTP server is enabled (`MCP_HTTP_ENABLED=true`), the app
   malicious website can silently read, modify, and delete all stored memories."
 date: "2026-03-07"
 pubdate: "2026-03-07"
-affected_range: "<10.25.1"
+affected_range: "<0"
 fixed_versions:
 - "10.25.1"
 affected_versions: "All versions before 10.25.1"

@@ -10,7 +10,7 @@ description: "In OpenClaw versions prior to 2026.2.12, the gateway accepted an u
   records at an arbitrary path on the gateway host."
 date: "2026-02-17"
 pubdate: "2026-02-17"
-affected_range: "<2026.2.12"
+affected_range: "<0"
 fixed_versions:
 - "2026.2.12"
 affected_versions: "All versions before 2026.2.12"

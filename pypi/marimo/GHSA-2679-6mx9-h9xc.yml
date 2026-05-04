@@ -13,7 +13,7 @@ description: "Marimo (19.6k stars) has a Pre-Auth RCE vulnerability. The termina
   support before accepting connections, completely skipping authentication verification."
 date: "2026-04-08"
 pubdate: "2026-04-08"
-affected_range: "<0.23.0"
+affected_range: "<0"
 fixed_versions:
 - "0.23.0"
 affected_versions: "All versions before 0.23.0"

@@ -10,7 +10,7 @@ description: "OpenClaw Matrix DM allowlist matching could be bypassed in certain
   only affects deployments that have installed and enabled the Matrix plugin."
 date: "2026-02-17"
 pubdate: "2026-02-17"
-affected_range: ">=2026.1.14-1 <2026.2.2"
+affected_range: "<0"
 fixed_versions:
 - "2026.2.2"
 affected_versions: "All versions starting from 2026.1.14-1 before 2026.2.2"

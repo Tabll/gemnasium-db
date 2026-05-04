@@ -9,7 +9,7 @@ description: "Attacker sends many small, valid JSON messages in one TCP frame\nâ
   call stack overflows instead\nâ†’ A ~47 KB payload is sufficient to trigger RangeError"
 date: "2026-04-14"
 pubdate: "2026-04-14"
-affected_range: "<11.1.19"
+affected_range: "<0"
 fixed_versions:
 - "11.1.19"
 affected_versions: "All versions before 11.1.19"

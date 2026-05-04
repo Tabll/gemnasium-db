@@ -8,7 +8,7 @@ description: "All new installations DNN 10.x.x - 10.2.1 installs, have the same 
   GUID. This does not affect upgrades from 9.x.x."
 date: "2026-04-10"
 pubdate: "2026-04-10"
-affected_range: "[10.0.0,10.2.2)"
+affected_range: "(,0)"
 fixed_versions:
 - "10.2.2"
 affected_versions: "All versions starting from 10.0.0 before 10.2.2"

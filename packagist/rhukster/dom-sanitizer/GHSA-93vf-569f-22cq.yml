@@ -11,7 +11,7 @@ description: "DOMSanitizer::sanitize() allows <style> elements in SVG content bu
   when the sanitized SVG is rendered."
 date: "2026-04-10"
 pubdate: "2026-04-10"
-affected_range: "<1.0.10"
+affected_range: "<0"
 fixed_versions:
 - "1.0.10"
 affected_versions: "All versions before 1.0.10"

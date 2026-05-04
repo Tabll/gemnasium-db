@@ -11,7 +11,7 @@ description: "A vulnerability in the HTTP Request node's credential domain valid
   in the \"Allowed domains\" setting."
 date: "2026-02-04"
 pubdate: "2026-02-04"
-affected_range: "<1.121.0"
+affected_range: "<0"
 fixed_versions:
 - "1.121.0"
 affected_versions: "All versions before 1.121.0"

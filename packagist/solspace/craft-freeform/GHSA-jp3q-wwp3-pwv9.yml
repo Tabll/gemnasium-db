@@ -14,7 +14,7 @@ description: "**Summary**\nAn authenticated, low-privilege user (able to create/
   <= 5.14.6 (latest observed). Likely all 5.x until patched."
 date: "2026-02-10"
 pubdate: "2026-01-22"
-affected_range: ">=5.0.0 <5.14.7"
+affected_range: "<0"
 fixed_versions:
 - "5.14.7"
 affected_versions: "All versions starting from 5.0.0 before 5.14.7"

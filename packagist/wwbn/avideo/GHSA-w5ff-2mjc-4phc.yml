@@ -13,7 +13,7 @@ description: "The `uploadVideoToLinkedIn()` method in the SocialMediaPublisher p
   user."
 date: "2026-03-19"
 pubdate: "2026-03-19"
-affected_range: "<=25.0"
+affected_range: "<0"
 fixed_versions: []
 affected_versions: "All versions up to 25.0"
 not_impacted: ""

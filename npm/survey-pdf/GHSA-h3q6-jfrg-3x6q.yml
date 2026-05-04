@@ -8,7 +8,7 @@ description: "The following security vulnerability was identified in jsPDF versi
   <=3.0.4: [Local File Inclusion/Path Traversal](https://github.com/parallax/jsPDF/security/advisories/GHSA-f8cm-6447-x5h2)."
 date: "2026-02-04"
 pubdate: "2026-02-04"
-affected_range: "<1.12.59||>=2.0.0 <2.5.5"
+affected_range: "<0"
 fixed_versions:
 - "1.12.59"
 - "2.5.5"

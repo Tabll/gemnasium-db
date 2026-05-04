@@ -8,7 +8,7 @@ description: "DM pairing-store identities were incorrectly eligible for group al
   authorization checks, enabling cross-context authorization in group message paths."
 date: "2026-03-03"
 pubdate: "2026-03-03"
-affected_range: "<2026.2.26"
+affected_range: "<0"
 fixed_versions:
 - "2026.2.26"
 affected_versions: "All versions before 2026.2.26"

@@ -19,7 +19,7 @@ description: "A path traversal vulnerability exists in [`excel-mcp-server`](http
   exploitation.\n\n---"
 date: "2026-04-14"
 pubdate: "2026-04-14"
-affected_range: "<0.1.8"
+affected_range: "<0"
 fixed_versions:
 - "0.1.8"
 affected_versions: "All versions before 0.1.8"

@@ -8,7 +8,7 @@ description: "OIDC-authenticated sessions had no configured maximum inactivity t
   Sessions persisted indefinitely after login, even after the OIDC access token expired."
 date: "2026-04-15"
 pubdate: "2026-04-15"
-affected_range: "[,]"
+affected_range: "(,0)"
 fixed_versions: []
 affected_versions: "All versions"
 not_impacted: ""

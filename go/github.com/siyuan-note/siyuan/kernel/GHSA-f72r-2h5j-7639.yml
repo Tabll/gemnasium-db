@@ -9,7 +9,7 @@ description: "- Read sensitive information in configuration files (e.g., access 
   service is published without authentication."
 date: "2026-02-10"
 pubdate: "2026-01-28"
-affected_range: "<=0.0.0-20260126094835-d5d10dd41b0c"
+affected_range: "<0"
 fixed_versions: []
 affected_versions: "All versions up to 0.0.0-20260126094835-d5d10dd41b0c"
 not_impacted: ""

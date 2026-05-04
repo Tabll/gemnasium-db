@@ -9,7 +9,7 @@ description: "A user could upload a specially crafted SVG file that could includ
   is increased if the scripts are run by a power user."
 date: "2026-04-10"
 pubdate: "2026-04-10"
-affected_range: "[,10.2.2)"
+affected_range: "(,0)"
 fixed_versions:
 - "10.2.2"
 affected_versions: "All versions before 10.2.2"

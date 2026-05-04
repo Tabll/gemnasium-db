@@ -21,7 +21,7 @@ description: "### Impact\n\nPrometheus can be secured by a web.yml file that spe
   disk, to bypass the authentication."
 date: "2022-12-05"
 pubdate: "2022-12-05"
-affected_range: ">=2.24.1 <2.37.4||>=2.38.0 <2.40.4"
+affected_range: "<0"
 fixed_versions:
 - "2.37.4"
 - "2.40.4"

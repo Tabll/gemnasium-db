@@ -14,7 +14,7 @@ description: "A path traversal vulnerability in the `/export` endpoint allows an
   be chained into `remote code execution (RCE)`."
 date: "2026-03-07"
 pubdate: "2026-03-07"
-affected_range: "<3.5.10"
+affected_range: "<0"
 fixed_versions:
 - "3.5.10"
 affected_versions: "All versions before 3.5.10"

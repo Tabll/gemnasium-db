@@ -10,7 +10,7 @@ description: "OpenClaw had account-scope gaps in pairing-store access for DM pai
   on another account in multi-account setups."
 date: "2026-03-04"
 pubdate: "2026-03-04"
-affected_range: "<2026.2.26"
+affected_range: "<0"
 fixed_versions:
 - "2026.2.26"
 affected_versions: "All versions before 2026.2.26"

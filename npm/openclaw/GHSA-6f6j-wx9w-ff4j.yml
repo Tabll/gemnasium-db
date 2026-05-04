@@ -10,7 +10,7 @@ description: "On Windows ACPX paths, wrapper resolution for `.cmd`/`.bat` could 
   behavior."
 date: "2026-03-02"
 pubdate: "2026-03-02"
-affected_range: ">=2026.2.26 <2026.3.1"
+affected_range: "<0"
 fixed_versions:
 - "2026.3.1"
 affected_versions: "All versions starting from 2026.2.26 before 2026.3.1"

@@ -9,7 +9,7 @@ description: "Feishu webhook reads and parses unauthenticated request bodies bef
   signature validation"
 date: "2026-03-29"
 pubdate: "2026-03-29"
-affected_range: "<2026.3.28"
+affected_range: "<0"
 fixed_versions:
 - "2026.3.28"
 affected_versions: "All versions before 2026.3.28"

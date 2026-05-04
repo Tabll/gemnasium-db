@@ -14,7 +14,7 @@ description: "kyverno’s apiCall servicecall helper implicitly injects `Authori
   report is scoped to ClusterPolicy and global context usage."
 date: "2026-04-14"
 pubdate: "2026-04-14"
-affected_range: "<1.17.0"
+affected_range: "<0"
 fixed_versions:
 - "1.17.0"
 affected_versions: "All versions before 1.17.0"

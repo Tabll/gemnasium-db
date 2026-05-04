@@ -12,7 +12,7 @@ description: "When Telegram webhook mode is enabled without a configured webhook
   and executing privileged bot commands."
 date: "2026-02-17"
 pubdate: "2026-02-17"
-affected_range: "<2026.2.1"
+affected_range: "<0"
 fixed_versions:
 - "2026.2.1"
 affected_versions: "All versions before 2026.2.1"

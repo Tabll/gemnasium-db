@@ -13,7 +13,7 @@ description: "### 🚀 Overview\n\nThis report **demonstrates a real-world privi
   (CVE-2025-64512)](https://github.com/pdfminer/pdfminer.six/security/advisories/GHSA-wf5f-4jwr-ppcp)."
 date: "2026-01-07"
 pubdate: "2025-11-07"
-affected_range: "<20251230"
+affected_range: "<0"
 fixed_versions:
 - "20251230"
 affected_versions: "All versions before 20251230"

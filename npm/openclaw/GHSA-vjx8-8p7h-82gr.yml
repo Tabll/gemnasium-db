@@ -7,7 +7,7 @@ title: "OpenClaw: Marketplace Plugin Download Follows Redirects Without SSRF Pro
 description: "Marketplace Plugin Download Follows Redirects Without SSRF Protection"
 date: "2026-04-07"
 pubdate: "2026-04-07"
-affected_range: "<2026.3.31"
+affected_range: "<0"
 fixed_versions:
 - "2026.3.31"
 affected_versions: "All versions before 2026.3.31"

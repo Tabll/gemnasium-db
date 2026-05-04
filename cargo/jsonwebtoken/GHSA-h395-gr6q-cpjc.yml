@@ -17,7 +17,7 @@ description: "It has been discovered that there is a Type Confusion vulnerabilit
   and authorization bypasses."
 date: "2026-02-03"
 pubdate: "2026-02-03"
-affected_range: "<10.3.0"
+affected_range: "<0"
 fixed_versions:
 - "10.3.0"
 affected_versions: "All versions before 10.3.0"

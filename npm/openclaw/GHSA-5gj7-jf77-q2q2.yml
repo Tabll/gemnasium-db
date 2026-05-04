@@ -12,7 +12,7 @@ description: "In `openclaw<=2026.2.23`, safe-bin trust in allowlist mode relied 
   can be satisfied and execute the attacker-controlled binary."
 date: "2026-03-03"
 pubdate: "2026-03-03"
-affected_range: "<2026.2.24"
+affected_range: "<0"
 fixed_versions:
 - "2026.2.24"
 affected_versions: "All versions before 2026.2.24"

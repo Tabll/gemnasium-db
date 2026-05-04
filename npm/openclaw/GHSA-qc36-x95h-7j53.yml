@@ -11,7 +11,7 @@ description: "In affected versions of `openclaw`, node-host `system.run` approva
   under the already approved run context."
 date: "2026-03-13"
 pubdate: "2026-03-13"
-affected_range: "<2026.3.11"
+affected_range: "<0"
 fixed_versions:
 - "2026.3.11"
 affected_versions: "All versions before 2026.3.11"

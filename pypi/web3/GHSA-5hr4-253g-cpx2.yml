@@ -20,7 +20,7 @@ description: "web3.py implements CCIP Read / `OffchainLookup` (EIP-3668) by perf
   including internal network services and cloud metadata endpoints.\n\n---"
 date: "2026-04-04"
 pubdate: "2026-04-04"
-affected_range: ">=6.0.0b3,<7.15.0||>=8.0.0b1,<8.0.0b2||==8.0.0b1"
+affected_range: "<0"
 fixed_versions:
 - "7.15.0"
 - "8.0.0b2"

@@ -13,7 +13,7 @@ description: "In affected releases, when an operator explicitly enabled `gateway
   in commit `40a292619e1f2be3a3b1db663d7494c9c2dc0abf` ([PR #20684](https://github.com/openclaw/openclaw/pull/20684))."
 date: "2026-03-03"
 pubdate: "2026-03-03"
-affected_range: "<2026.2.21"
+affected_range: "<0"
 fixed_versions:
 - "2026.2.21"
 affected_versions: "All versions before 2026.2.21"

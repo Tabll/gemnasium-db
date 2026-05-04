@@ -12,7 +12,7 @@ description: "When OpenFGA is configured to use preshared-key authentication wit
   and debugging and is not designed to be exposed to production environments."
 date: "2026-04-08"
 pubdate: "2026-04-08"
-affected_range: ">=0.1.4 <1.14.0"
+affected_range: "<0"
 fixed_versions:
 - "1.14.0"
 affected_versions: "All versions starting from 0.1.4 before 1.14.0"

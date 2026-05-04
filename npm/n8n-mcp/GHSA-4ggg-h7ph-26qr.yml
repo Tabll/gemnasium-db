@@ -17,7 +17,7 @@ description: "An authenticated Server-Side Request Forgery in `n8n-mcp` allows a
   without multi-tenant headers are not affected."
 date: "2026-04-08"
 pubdate: "2026-04-08"
-affected_range: "<2.47.4"
+affected_range: "<0"
 fixed_versions:
 - "2.47.4"
 affected_versions: "All versions before 2.47.4"

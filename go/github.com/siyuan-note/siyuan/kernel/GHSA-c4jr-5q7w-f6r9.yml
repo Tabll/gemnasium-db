@@ -11,7 +11,7 @@ description: "The `/api/file/copyFile` endpoint does not validate the `dest` par
   3.5.3 (and likely all prior versions)"
 date: "2026-01-29"
 pubdate: "2026-01-29"
-affected_range: "<=0.0.0-20260126094835-d5d10dd41b0c"
+affected_range: "<0"
 fixed_versions: []
 affected_versions: "All versions up to 0.0.0-20260126094835-d5d10dd41b0c"
 not_impacted: ""

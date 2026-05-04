@@ -16,7 +16,7 @@ description: "`dasel`'s YAML reader allows an attacker who can supply YAML for p
   unbounded resource growth."
 date: "2026-03-19"
 pubdate: "2026-03-19"
-affected_range: ">=3.0.0 <3.3.2"
+affected_range: "<0"
 fixed_versions:
 - "3.3.2"
 affected_versions: "All versions starting from 3.0.0 before 3.3.2"

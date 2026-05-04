@@ -14,7 +14,7 @@ description: "A local file inclusion vulnerability exists in the Crawl4AI Docker
   Disable the Docker API\n2. Add authentication to the API\n3. Use network-level filtering"
 date: "2026-01-16"
 pubdate: "2026-01-16"
-affected_range: "<0.8.0"
+affected_range: "<0"
 fixed_versions:
 - "0.8.0"
 affected_versions: "All versions before 0.8.0"

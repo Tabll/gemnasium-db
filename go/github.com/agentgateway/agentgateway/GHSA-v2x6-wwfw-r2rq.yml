@@ -8,7 +8,7 @@ description: "When converting MCP `tools/call` request to OpenAPI request, input
   query, and header values are not sanitized."
 date: "2026-03-05"
 pubdate: "2026-03-05"
-affected_range: "<0.12.0"
+affected_range: "<0"
 fixed_versions:
 - "0.12.0"
 affected_versions: "All versions before 0.12.0"

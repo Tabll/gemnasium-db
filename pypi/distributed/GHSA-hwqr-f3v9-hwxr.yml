@@ -17,7 +17,7 @@ description: "Versions of `distributed` earlier than `2021.10.0` had a potential
   is documented in CVE-2021-42343, and was fixed in version `2021.10.0` (PR #5427)."
 date: "2024-09-16"
 pubdate: "2022-07-15"
-affected_range: "<2021.10.0"
+affected_range: "<0"
 fixed_versions:
 - "2021.10.0"
 affected_versions: "All versions before 2021.10.0"

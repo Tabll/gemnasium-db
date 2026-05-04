@@ -8,7 +8,7 @@ description: "Browser trace/download output path handling allowed symlink-root a
   symlink-parent escapes from the managed temp root."
 date: "2026-03-02"
 pubdate: "2026-03-02"
-affected_range: "<2026.2.25"
+affected_range: "<0"
 fixed_versions:
 - "2026.2.25"
 affected_versions: "All versions before 2026.2.25"

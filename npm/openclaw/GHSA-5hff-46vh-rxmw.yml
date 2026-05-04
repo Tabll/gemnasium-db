@@ -10,7 +10,7 @@ description: "Before OpenClaw 2026.4.2, `POST /sessions/:sessionKey/kill` did no
   operator scopes could still terminate a running subagent session."
 date: "2026-04-07"
 pubdate: "2026-04-07"
-affected_range: "<2026.4.2"
+affected_range: "<0"
 fixed_versions:
 - "2026.4.2"
 affected_versions: "All versions before 2026.4.2"
