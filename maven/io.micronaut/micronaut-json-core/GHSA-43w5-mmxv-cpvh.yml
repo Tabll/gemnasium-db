@@ -13,7 +13,7 @@ description: "In `JsonBeanPropertyBinder::expandArrayToThreshold` in `io.microna
   by `authors[0].name`)."
 date: "2026-03-17"
 pubdate: "2026-03-17"
-affected_range: "[4.0.0-M1,4.10.16),[,3.10.5)"
+affected_range: "(,0)"
 fixed_versions:
 - "4.10.16"
 - "3.10.5"

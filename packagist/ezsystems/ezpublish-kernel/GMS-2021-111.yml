@@ -9,7 +9,7 @@ description: "Improper Neutralization of Input During Web Page Generation ('Cros
   Scripting') in ezsystems/ezpublish-kernel."
 date: "2021-03-19"
 pubdate: "2021-03-19"
-affected_range: "<=6.13.8.1||>=7.0.0,<=7.5.15.1"
+affected_range: "<0"
 fixed_versions:
 - "6.13.8.2"
 - "7.5.15.2"

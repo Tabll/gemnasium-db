@@ -8,7 +8,7 @@ title: "gobase subject to Incorrect routing of some HTTP requests when using htt
 description: "Incorrect routing of some HTTP requests when using httpauth"
 date: "2023-08-30"
 pubdate: "2022-02-11"
-affected_range: "<v0.7.2"
+affected_range: "<0"
 fixed_versions:
 - "v0.7.2"
 affected_versions: "All versions before 0.7.2"

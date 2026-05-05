@@ -9,7 +9,7 @@ description: "Improper Neutralization of Input During Web Page Generation ('Cros
   Scripting') in io.jenkins.plugins:folder-auth."
 date: "2022-03-22"
 pubdate: "2022-03-18"
-affected_range: "(,1.4)"
+affected_range: "(,0)"
 fixed_versions:
 - "1.4"
 affected_versions: "All versions before 1.4"

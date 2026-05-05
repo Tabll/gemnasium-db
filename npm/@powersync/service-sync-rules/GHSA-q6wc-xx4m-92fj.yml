@@ -13,7 +13,7 @@ description: "In version **1.20.0**, when using new sync streams with `config.ed
   data is exposed without authenticating"
 date: "2026-03-07"
 pubdate: "2026-03-07"
-affected_range: "<0.33.0"
+affected_range: "<0"
 fixed_versions:
 - "0.33.0"
 affected_versions: "All versions before 0.33.0"

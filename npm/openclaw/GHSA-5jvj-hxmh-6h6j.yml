@@ -7,7 +7,7 @@ title: "OpenClaw: Gateway HTTP Session History Route Bypasses Operator Read Scop
 description: "Gateway HTTP Session History Route Bypasses Operator Read Scope"
 date: "2026-03-29"
 pubdate: "2026-03-29"
-affected_range: "<=2026.3.24"
+affected_range: "<0"
 fixed_versions: []
 affected_versions: "All versions up to 2026.3.24"
 not_impacted: ""

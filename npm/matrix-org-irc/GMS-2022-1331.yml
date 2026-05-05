@@ -10,7 +10,7 @@ description: "Improper Neutralization of Special Elements used in an OS Command 
   Command Injection') in matrix-org-irc."
 date: "2022-05-05"
 pubdate: "2022-05-05"
-affected_range: "<=1.2.0"
+affected_range: "<0"
 fixed_versions:
 - "1.2.1"
 affected_versions: "All versions up to 1.2.0"

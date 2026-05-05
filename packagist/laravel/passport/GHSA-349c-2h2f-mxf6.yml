@@ -12,7 +12,7 @@ description: "Authentication Bypass for `client_credentials` tokens. the league/
   token can inadvertently authenticate as an actual user.\n"
 date: "2026-04-08"
 pubdate: "2026-04-08"
-affected_range: "<13.7.1"
+affected_range: "<0"
 fixed_versions:
 - "13.7.1"
 affected_versions: "All versions before 13.7.1"

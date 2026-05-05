@@ -10,7 +10,7 @@ description: "Improper Neutralization of Special Elements used in an OS Command 
   Command Injection') in AjaxNetProfessional."
 date: "2022-01-04"
 pubdate: "2021-12-07"
-affected_range: "(,21.11.29]"
+affected_range: "(,0)"
 fixed_versions:
 - "21.11.29.1"
 affected_versions: "All versions up to 21.11.29"
