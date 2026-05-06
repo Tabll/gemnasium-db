@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-h8cj-hpmg-636v"
+identifiers:
+- "GHSA-h8cj-hpmg-636v"
+package_slug: "maven/com.appsmith/interfaces"
+title: "appsmith has SQL Injection in FilterDataService via Unsafe DROP TABLE Execution"
+description: "A SQL injection vulnerability exists in `FilterDataServiceCE.java` where
+  the `dropTable` method constructs a SQL `DROP TABLE` statement using string concatenation
+  with the table name. If the table name is derived from user input, this allows for
+  arbitrary SQL command execution."
+date: "2026-04-29"
+pubdate: "2026-04-29"
+affected_range: "[,1.99)"
+fixed_versions:
+- "1.99"
+affected_versions: "All versions before 1.99"
+not_impacted: "All versions starting from 1.99"
+solution: "Upgrade to version 1.99 or above."
+urls:
+- "https://github.com/advisories/GHSA-h8cj-hpmg-636v"
+- "https://github.com/appsmithorg/appsmith/security/advisories/GHSA-h8cj-hpmg-636v"
+- "https://github.com/appsmithorg/appsmith/commit/c8023ba4b3b54204ff3309c9e5c33664ad15ba32"
+- "https://github.com/appsmithorg/appsmith"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H"
+uuid: "e0ceb040-e226-4047-8257-6161fb46e0e6"
+cwe_ids:
+- "CWE-89"
+- "CWE-937"
+- "CWE-1035"

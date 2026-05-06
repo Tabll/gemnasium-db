@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-93rg-2xm5-2p9v"
+identifiers:
+- "GHSA-93rg-2xm5-2p9v"
+package_slug: "npm/openclaw"
+title: "OpenClaw's Gateway Control UI bootstrap config required Gateway auth"
+description: "Gateway Control UI bootstrap config required Gateway auth."
+date: "2026-05-04"
+pubdate: "2026-05-04"
+affected_range: "<2026.4.22"
+fixed_versions:
+- "2026.4.22"
+affected_versions: "All versions before 2026.4.22"
+not_impacted: "All versions starting from 2026.4.22"
+solution: "Upgrade to version 2026.4.22 or above."
+urls:
+- "https://github.com/advisories/GHSA-93rg-2xm5-2p9v"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-93rg-2xm5-2p9v"
+- "https://github.com/openclaw/openclaw/commit/2321d67263bc710e357644d59f746b08d891051b"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N"
+uuid: "b33e3d34-8f69-4561-b0db-c6bbf1b5a7d5"
+cwe_ids:
+- "CWE-287"
+- "CWE-937"
+- "CWE-1035"

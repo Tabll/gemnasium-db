@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-5h3g-6xhh-rg6p"
+identifiers:
+- "GHSA-5h3g-6xhh-rg6p"
+package_slug: "npm/openclaw"
+title: "OpenClaw: OpenShell FS bridge reads pin and verify the opened file before
+  returning bytes"
+description: "OpenShell FS bridge reads pin and verify the opened file before returning
+  bytes"
+date: "2026-05-04"
+pubdate: "2026-05-04"
+affected_range: "<2026.4.22"
+fixed_versions:
+- "2026.4.22"
+affected_versions: "All versions before 2026.4.22"
+not_impacted: "All versions starting from 2026.4.22"
+solution: "Upgrade to version 2026.4.22 or above."
+urls:
+- "https://github.com/advisories/GHSA-5h3g-6xhh-rg6p"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-5h3g-6xhh-rg6p"
+- "https://github.com/openclaw/openclaw/commit/95119017c847c737bd113f0bff728c4666d79c45"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:C/C:H/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:L/AC:H/AT:P/PR:L/UI:N/VC:H/VI:N/VA:N/SC:H/SI:N/SA:N"
+uuid: "f5d91177-ad02-4eac-b2c6-1f0979eee32e"
+cwe_ids:
+- "CWE-367"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-jxh8-jh77-xh6g"
+identifiers:
+- "GHSA-jxh8-jh77-xh6g"
+package_slug: "npm/@evomap/evolver"
+title: "@evomap/evolver's validator sandbox allowlist permits `npm`/`npx`, yielding
+  RCE from Hub-delivered validation tasks via lifecycle scripts"
+description: "The validator-mode sandbox executor (`src/gep/validator/sandboxExecutor.js`)
+  places `npm` and `npx` in its hard executable allowlist. Because `npm install <pkg>`
+  and `npx -y -p <pkg> <bin>` execute arbitrary code by design (preinstall/install/postinstall
+  lifecycle scripts and remote-package bin entries), and because validator nodes consume
+  `validation_commands` strings from unsigned Hub responses with no per-response signature
+  check, an attacker who controls or MITMs the Hub achieves automatic remote code
+  execution on every validator node within one daemon poll (default 60s)."
+date: "2026-05-05"
+pubdate: "2026-05-05"
+affected_range: "<1.70.0-beta.5"
+fixed_versions:
+- "1.70.0-beta.5"
+affected_versions: "All versions before 1.70.0-beta.5"
+not_impacted: "All versions starting from 1.70.0-beta.5"
+solution: "Upgrade to version 1.70.0-beta.5 or above."
+urls:
+- "https://github.com/advisories/GHSA-jxh8-jh77-xh6g"
+- "https://github.com/EvoMap/evolver/security/advisories/GHSA-jxh8-jh77-xh6g"
+- "https://github.com/EvoMap/evolver"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+uuid: "871a2b89-e2c8-4bd6-90c5-0ef01e8c2130"
+cwe_ids:
+- "CWE-78"
+- "CWE-937"
+- "CWE-1035"

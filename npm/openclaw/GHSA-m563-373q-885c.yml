@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-m563-373q-885c"
+identifiers:
+- "GHSA-m563-373q-885c"
+package_slug: "npm/openclaw"
+title: "Duplicate Advisory: OpenClaw: OpenShell `mirror` mode can convert untrusted
+  sandbox files into explicitly enabled workspace hooks and execute them on the host
+  during gateway startup"
+description: "### Duplicate Advisory\nThis advisory has been withdrawn because it
+  is a duplicate of GHSA-42mx-vp8m-j7qh. This link is maintained to preserve external
+  references.\n\n### Original Description\nOpenShell before 2026.3.28 contains an
+  arbitrary code execution vulnerability in mirror mode that converts untrusted sandbox
+  files into workspace hooks. Attackers with mirror mode access can execute arbitrary
+  code on the host during gateway startup by exploiting enabled workspace hooks."
+date: "2026-05-04"
+pubdate: "2026-04-24"
+affected_range: "<2026.3.28"
+fixed_versions:
+- "2026.3.28"
+affected_versions: "All versions before 2026.3.28"
+not_impacted: "All versions starting from 2026.3.28"
+solution: "Upgrade to version 2026.3.28 or above."
+urls:
+- "https://github.com/advisories/GHSA-m563-373q-885c"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-42mx-vp8m-j7qh"
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-41355"
+- "https://github.com/openclaw/openclaw/commit/c02ee8a3a4cb390b23afdf21317aa8b2096854d1"
+- "https://www.vulncheck.com/advisories/openshell-arbitrary-code-execution-via-mirror-mode-sandbox-file-conversion"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:L/AC:L/AT:P/PR:L/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+uuid: "9e51b701-38cc-4b33-a346-50ac3c560140"
+cwe_ids:
+- "CWE-829"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-r7p2-r9g4-4xph"
+identifiers:
+- "GHSA-r7p2-r9g4-4xph"
+package_slug: "npm/openclaw"
+title: "Duplicate Advisory: OpenClaw: Gateway hello snapshots exposed host config
+  and state paths to non-admin clients"
+description: "### Duplicate Advisory\nThis advisory has been withdrawn because it
+  is a duplicate of GHSA-2f7j-rp58-mr42. This link is maintained to preserve external
+  references.\n\n### Original Description\nOpenClaw before 2026.4.2 exposes configPath
+  and stateDir metadata in Gateway connect success snapshots to non-admin authenticated
+  clients. Non-admin clients can recover host-specific filesystem paths and deployment
+  details, enabling host fingerprinting and facilitating chained attacks."
+date: "2026-05-04"
+pubdate: "2026-04-24"
+affected_range: "<2026.4.2"
+fixed_versions:
+- "2026.4.2"
+affected_versions: "All versions before 2026.4.2"
+not_impacted: "All versions starting from 2026.4.2"
+solution: "Upgrade to version 2026.4.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-r7p2-r9g4-4xph"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-2f7j-rp58-mr42"
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-41339"
+- "https://github.com/openclaw/openclaw/commit/676b748056b5efca6f1255708e9dd9469edf5e2e"
+- "https://www.vulncheck.com/advisories/openclaw-information-disclosure-via-gateway-connect-snapshot"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N"
+uuid: "aec93d64-c451-4e08-bd91-833f1311df89"
+cwe_ids:
+- "CWE-497"
+- "CWE-937"
+- "CWE-1035"

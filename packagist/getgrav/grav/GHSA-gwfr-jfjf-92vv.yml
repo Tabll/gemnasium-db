@@ -1,0 +1,57 @@
+---
+identifier: "GHSA-gwfr-jfjf-92vv"
+identifiers:
+- "GHSA-gwfr-jfjf-92vv"
+package_slug: "packagist/getgrav/grav"
+title: "Grav has Insecure Deserialization in File Cache"
+description: "# Insecure Deserialization in File Cache\n\n- **Severity:** High \n-
+  **CWE:** CWE-502\n- **Location:** `system/src/Grav/Framework/Cache/Adapter/FileCache.php`\n-
+  **Sink:** `unserialize($value, ['allowed_classes' => true])`\n\n## Affected version(s)\n\n-
+  **Affected:** `>= 1.7.44` and `<= 1.7.49.5` (verified in current codebase and changelog-covered
+  releases).\n- **Fixed:** No upstream fix identified in the reviewed branch at the
+  time of analysis.\n- **Notes:** Earlier `1.7.x` releases may also be affected, but
+  were not fully back-traced in this review.\n\n## Notes\n`allowed_classes => true`
+  allows object instantiation and does not constrain classes.\n\n## PoC (Primitive
+  Demonstration)\n\n### Preconditions\n- Local PHP runtime.\n- Goal is to validate
+  the deserialization primitive used in cache retrieval.\n\n### Steps\n```bash\nphp
+  -r '\nclass CacheWakeup { public function __wakeup(){ file_put_contents(\"/tmp/grav_filecache_poc.txt\",
+  \"wakeup\"); } }\n\n$payload = serialize(new CacheWakeup());\nunserialize($payload,
+  [\"allowed_classes\" => true]);\n\necho file_exists(\"/tmp/grav_filecache_poc.txt\")
+  ? \"FILECACHE_UNSERIALIZE_TRIGGERED\\n\" : \"FILECACHE_UNSERIALIZE_NOT_TRIGGERED\\n\";\n'\n```\n\n###
+  Expected Result\n- Output contains: `FILECACHE_UNSERIALIZE_TRIGGERED`.\n\n### Interpretation\nThis
+  reproduces the same unsafe primitive used by `FileCache::doGet()`:\n`unserialize($value,
+  ['allowed_classes' => true])`.\nIf cache files are attacker-tampered, object magic
+  methods may execute.\n\n## Exploit Preconditions\n- Cache file poisoning/tampering
+  capability.\n\n## Recommendation\n- Avoid object deserialization in cache payloads.\n-
+  Use non-object formats and integrity protection for cache files.\n\n\n\n---\n\n##
+  Maintainer note — fix applied (2026-04-24)\n\nFixed in Grav core on the `2.0` branch:
+  commit [`c66dfeb5f`](https://github.com/getgrav/grav/commit/c66dfeb5f) — will ship
+  in **2.0.0-beta.2**.\n\n**What changed:** `Framework\\Cache\\Adapter\\FileCache`
+  now HMAC-signs every cache payload with `Security::getNonceKey()` on write, and
+  verifies the HMAC on read. Tampered, forged, or pre-upgrade files are treated as
+  cache misses and unlinked instead of being unserialized. The on-disk format is now
+  versioned:\n\n```\nv2\n<expires>\n<key>\n<hmac-hex>\n<serialized>\n```\n\nExisting
+  caches rebuild transparently on first read. Note that `Framework\\Cache\\Adapter\\FileCache`
+  isn't wired into Grav's main cache path — Symfony's `FilesystemAdapter` is — but
+  the class is reachable by plugin and downstream consumers, so the hardening applies
+  defensively."
+date: "2026-05-05"
+pubdate: "2026-05-05"
+affected_range: "<2.0.0-beta.2"
+fixed_versions:
+- "2.0.0-beta.2"
+affected_versions: "All versions before 2.0.0-beta.2"
+not_impacted: "All versions starting from 2.0.0-beta.2"
+solution: "Upgrade to version 2.0.0-beta.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-gwfr-jfjf-92vv"
+- "https://github.com/getgrav/grav/security/advisories/GHSA-gwfr-jfjf-92vv"
+- "https://github.com/getgrav/grav/commit/5a12f9be8314682c8713e569e330f11805d0a663"
+- "https://github.com/getgrav/grav"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+uuid: "afd3d27b-ba24-4730-bd7d-bc5f1a193599"
+cwe_ids:
+- "CWE-502"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-wr32-99hh-6f35"
+identifiers:
+- "GHSA-wr32-99hh-6f35"
+package_slug: "go/github.com/0xJacky/Nginx-UI"
+title: "Nginx-UI has Server-Side Request Forgery (SSRF) via Cluster Proxy Middleware
+  that Allows Access to Internal Services"
+description: "An authenticated user can perform Server-Side Request Forgery (SSRF)
+  by creating a cluster node pointing to an arbitrary internal URL and then sending
+  API requests with the `X-Node-ID` header. The Proxy middleware forwards these requests
+  to the attacker-specified internal address, bypassing network segmentation and enabling
+  access to services bound to localhost or internal networks."
+date: "2026-04-29"
+pubdate: "2026-04-29"
+affected_range: "<=2.3.4"
+fixed_versions: []
+affected_versions: "All versions up to 2.3.4"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-wr32-99hh-6f35"
+- "https://github.com/0xJacky/nginx-ui/security/advisories/GHSA-wr32-99hh-6f35"
+- "https://github.com/0xJacky/nginx-ui"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:L/A:N"
+uuid: "196f53e2-9dde-4532-b7d8-a61ff3cdfb1e"
+cwe_ids:
+- "CWE-918"
+- "CWE-937"
+- "CWE-1035"

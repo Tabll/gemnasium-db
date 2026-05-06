@@ -4,11 +4,12 @@ identifiers:
 - "GHSA-p3h2-2j4p-p83g"
 package_slug: "npm/@samanhappy/mcphub"
 title: "MCPHub has Path Traversal via Malicious MCPB Manifest Name"
-description: "- **Vulnerability Type**: Path Traversal\n- **Flagged Location**: `src/controllers/mcpbController.ts:107`\n-
-  **Vulnerability Description**: The `name` field in the uploaded MCPB manifest is
-  used directly to construct file system paths for directory creation and move operations
-  without sanitization or normalization, potentially leading to a path traversal attack."
-date: "2026-04-22"
+description: "- **Vulnerability Type**: Path Traversal (CWE-22)\n- **Sink Location**:
+  src/controllers/mcpbController.ts:107\n- **Vulnerability Description**: The `name`
+  field from an uploaded MCPB manifest is used directly, without sanitization or normalization,
+  to construct a file system path for directory creation and move operations, which
+  may lead to path traversal attacks."
+date: "2026-05-05"
 pubdate: "2026-04-22"
 affected_range: "<0.12.13"
 fixed_versions:

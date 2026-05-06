@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-q4ph-8x8g-95f8"
+identifiers:
+- "GHSA-q4ph-8x8g-95f8"
+package_slug: "packagist/azuracast/azuracast"
+title: "AzuraCast Vulnerable to Liquidsoap Code Injection via Incomplete cleanUpString-to-toRawString
+  Migration in Remote Relay Password Field"
+description: "The `cleanUpString()` method in `ConfigWriter.php` uses an ungreedy
+  regex to strip Liquidsoap string interpolation patterns (`#{...}`) from user input.
+  This regex can be bypassed via nested interpolation syntax (`#{#{EXPR}}`), allowing
+  injection of arbitrary Liquidsoap code. Commit `ff49ef4` migrated most user-controlled
+  fields to the safe `toRawString()` method but left the remote relay password field
+  using the vulnerable `cleanUpString()`. A user with the `RemoteRelays` station permission
+  can achieve arbitrary code execution in the Liquidsoap process, leak internal API
+  keys, or disrupt station operation."
+date: "2026-05-04"
+pubdate: "2026-05-04"
+affected_range: "<0.23.6"
+fixed_versions:
+- "0.23.6"
+affected_versions: "All versions before 0.23.6"
+not_impacted: "All versions starting from 0.23.6"
+solution: "Upgrade to version 0.23.6 or above."
+urls:
+- "https://github.com/advisories/GHSA-q4ph-8x8g-95f8"
+- "https://github.com/AzuraCast/AzuraCast/security/advisories/GHSA-q4ph-8x8g-95f8"
+- "https://github.com/AzuraCast/AzuraCast/commit/d6b8422fc2c36269df9d1adec89dfbba58828915"
+- "https://github.com/AzuraCast/AzuraCast"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+uuid: "d28dfa87-0664-4d2d-a0ae-64d0410a89a6"
+cwe_ids:
+- "CWE-94"
+- "CWE-937"
+- "CWE-1035"

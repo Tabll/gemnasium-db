@@ -1,0 +1,43 @@
+---
+identifier: "GHSA-f26g-jm89-4g65"
+identifiers:
+- "GHSA-f26g-jm89-4g65"
+package_slug: "cargo/gix"
+title: "gitoxide: CommandForbiddenInModulesConfiguration Bypass in gix_submodule::File::update()
+  Enables Arbitrary Command Execution via .gitmodules"
+description: "[`gix_submodule::File::update()`](https://github.com/GitoxideLabs/gitoxide/blob/main/gix-submodule/src/access.rs#L168)
+  is the API that gates whether an attacker-supplied `.gitmodules` file may set `update
+  = !<shell command>`. The function is designed to return `Err(CommandForbiddenInModulesConfiguration)`
+  unless the `!command` value came from a trusted local source (`.git/config`). Git
+  CVE [CVE-2019-19604](https://nvd.nist.gov/vuln/detail/cve-2019-19604) illustrates
+  why this check is necessary.\n\nHowever, the guard is implemented incorrectly: it
+  checks whether any section with the same submodule name exists from a non-`.gitmodules`
+  source; it does not verify that the `update` value came from that section.\n\nOnce
+  a submodule has been initialized (any workflow that writes `submodule.<name>.url`
+  to `.git/config`), and the attacker subsequently adds `update = !cmd` to `.gitmodules`,
+  the guard passes while the command value falls through to the attacker-controlled
+  file.\n\nOn an identical repository state, `git submodule update` aborts with `fatal:
+  invalid value for 'submodule.sub.update'`, while `gix::Submodule::update()` returns
+  `Ok(Some(Update::Command(\"touch /tmp/pwned\")))`.\n\nThe vulnerable code was introduced
+  in https://github.com/GitoxideLabs/gitoxide/commit/6a2e6a436f76c8bbf2487f9967413a51356667a0."
+date: "2026-05-05"
+pubdate: "2026-05-05"
+affected_range: ">=0.31.0 <0.83.0"
+fixed_versions:
+- "0.83.0"
+affected_versions: "All versions starting from 0.31.0 before 0.83.0"
+not_impacted: "All versions before 0.31.0, all versions starting from 0.83.0"
+solution: "Upgrade to version 0.83.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-f26g-jm89-4g65"
+- "https://github.com/GitoxideLabs/gitoxide/security/advisories/GHSA-f26g-jm89-4g65"
+- "https://github.com/GitoxideLabs/gitoxide"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+uuid: "40732c51-4c94-4a02-b3eb-17157bbaeda5"
+cwe_ids:
+- "CWE-183"
+- "CWE-349"
+- "CWE-501"
+- "CWE-77"
+- "CWE-937"
+- "CWE-1035"

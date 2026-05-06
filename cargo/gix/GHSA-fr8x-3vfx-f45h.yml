@@ -1,0 +1,36 @@
+---
+identifier: "GHSA-fr8x-3vfx-f45h"
+identifiers:
+- "GHSA-fr8x-3vfx-f45h"
+package_slug: "cargo/gix"
+title: "gix and gitoxide: unvalidated submodule name traverses out of .git/modules
+  and redirects state() / open() to another repository"
+description: "attachments:\n[pocs.zip](https://github.com/user-attachments/files/26431422/pocs.zip)\n\nSubmodule
+  names coming from `.gitmodules` are exposed as unvalidated names and are later reused
+  to derive the submodule git directory as:\n\n```\n<superproject common_dir>/modules/<submodule
+  name>\n```\n\nBecause the submodule name is joined directly as a filesystem path
+  component, a name such as `../../../escaped-target.git` escapes `.git/modules` after
+  normalization. The current implementation then uses that escaped path in both `state()`
+  and `open()`.\n\nThe updated PoC demonstrates the real sink, not just string construction:\n\n-
+  `state()` reports `repository_exists=true` for the traversed path;\n- `open()` returns
+  a repository whose normalized `common_dir()` matches the attacker-chosen repository
+  outside `.git/modules`."
+date: "2026-05-05"
+pubdate: "2026-05-05"
+affected_range: "<0.83.0"
+fixed_versions:
+- "0.83.0"
+affected_versions: "All versions before 0.83.0"
+not_impacted: "All versions starting from 0.83.0"
+solution: "Upgrade to version 0.83.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-fr8x-3vfx-f45h"
+- "https://github.com/GitoxideLabs/gitoxide/security/advisories/GHSA-fr8x-3vfx-f45h"
+- "https://github.com/GitoxideLabs/gitoxide"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N"
+uuid: "4423c0b2-f456-42f0-af9b-e98b60bad02b"
+cwe_ids:
+- "CWE-22"
+- "CWE-937"
+- "CWE-1035"

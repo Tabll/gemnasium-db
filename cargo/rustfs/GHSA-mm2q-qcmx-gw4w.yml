@@ -1,0 +1,42 @@
+---
+identifier: "GHSA-mm2q-qcmx-gw4w"
+identifiers:
+- "GHSA-mm2q-qcmx-gw4w"
+package_slug: "cargo/rustfs"
+title: "RustFS: ListServiceAccount authorizes against wrong admin action, enabling
+  cross-user enumeration and root service account takeover"
+description: "`ListServiceAccount` (`GET /rustfs/admin/v3/list-service-accounts?user=<other>`)
+  authorizes cross-user requests against `UpdateServiceAccountAdminAction` instead
+  of `ListServiceAccountsAdminAction` at `rustfs/src/admin/handlers/service_account.rs:936`.
+  The handler accepts the **wrong** admin action and rejects the **correct** one:\n\n-
+  A user granted only `admin:UpdateServiceAccount` enumerates every service account
+  in the cluster, including the root user's (HTTP 200, full metadata).\n- A user granted
+  only `admin:ListServiceAccounts` — the permission name every IAM document treats
+  as \"list service accounts\" — receives HTTP 403 AccessDenied on the same request.\n\nBecause
+  service account access keys act as the identifier a `UpdateServiceAccount` holder
+  needs to rotate a secret, and the `UpdateServiceAccount` handler at `rustfs/src/admin/handlers/service_account.rs:489`
+  performs no ownership check on the target access key, leaking those access keys
+  lets a delegated \"service account updater\" role overwrite `root-sa-1`'s secret,
+  authenticate as the root user's service account, and create a persistent backdoor
+  admin with `admin:*` + `s3:*`. Proven live end-to-end against `rustfs/rustfs:latest`
+  (1.0.0-alpha.91, revision `d4ea14c2`) — the same revision is byte-identical on current
+  `origin/main`."
+date: "2026-05-05"
+pubdate: "2026-05-05"
+affected_range: "<1.0.0-alpha.98"
+fixed_versions:
+- "1.0.0-alpha.98"
+affected_versions: "All versions before 1.0.0-alpha.98"
+not_impacted: "All versions starting from 1.0.0-alpha.98"
+solution: "Upgrade to version 1.0.0-alpha.98 or above."
+urls:
+- "https://github.com/advisories/GHSA-mm2q-qcmx-gw4w"
+- "https://github.com/rustfs/rustfs/security/advisories/GHSA-mm2q-qcmx-gw4w"
+- "https://github.com/rustfs/rustfs"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+uuid: "6483b5f7-93fd-4258-abaa-12e794b42177"
+cwe_ids:
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

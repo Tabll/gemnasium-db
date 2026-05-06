@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-4fm3-ggg2-c6qx"
+identifiers:
+- "GHSA-4fm3-ggg2-c6qx"
+package_slug: "packagist/azuracast/azuracast"
+title: "AzuraCast's Missing RequireInternalConnection on Liquidsoap API Allows Low-Privilege
+  Metadata Injection and Broadcast Disruption"
+description: "The `/api/internal/{station_id}/liquidsoap/{action}` endpoint is accessible
+  from the public web interface because it lacks the `RequireInternalConnection` middleware
+  that protects other internal endpoints (`/sftp-auth`, `/sftp-event`). Combined with
+  a logic flaw where the `$asAutoDj` flag is set based on the *presence* of the `X-Liquidsoap-Api-Key`
+  header rather than its *validated value*, any user with the basic `View` station
+  permission can invoke privileged Liquidsoap commands — injecting arbitrary now-playing
+  metadata visible to all listeners, disrupting live broadcast tracking, and disclosing
+  absolute filesystem paths."
+date: "2026-05-04"
+pubdate: "2026-05-04"
+affected_range: "<0.23.6"
+fixed_versions:
+- "0.23.6"
+affected_versions: "All versions before 0.23.6"
+not_impacted: "All versions starting from 0.23.6"
+solution: "Upgrade to version 0.23.6 or above."
+urls:
+- "https://github.com/advisories/GHSA-4fm3-ggg2-c6qx"
+- "https://github.com/AzuraCast/AzuraCast/security/advisories/GHSA-4fm3-ggg2-c6qx"
+- "https://github.com/AzuraCast/AzuraCast/commit/13fa7a71435629147b351d3ee151b8de6acd5c8c"
+- "https://github.com/AzuraCast/AzuraCast"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L"
+uuid: "0f581f48-230e-4243-bc18-600b3b0cdfd8"
+cwe_ids:
+- "CWE-862"
+- "CWE-937"
+- "CWE-1035"

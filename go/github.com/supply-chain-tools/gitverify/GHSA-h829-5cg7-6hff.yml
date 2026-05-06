@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-h829-5cg7-6hff"
+identifiers:
+- "GHSA-h829-5cg7-6hff"
+package_slug: "go/github.com/supply-chain-tools/gitverify"
+title: "gitverify has improper tag signature verification"
+description: "gitverify is still a prototype."
+date: "2026-04-24"
+pubdate: "2026-04-24"
+affected_range: "<0.0.0-20260421124901-c2c60da05d5c"
+fixed_versions:
+- "0.0.0-20260421124901-c2c60da05d5c"
+affected_versions: "All versions before 0.0.0-20260421124901-c2c60da05d5c"
+not_impacted: "All versions starting from 0.0.0-20260421124901-c2c60da05d5c"
+solution: "Upgrade to version 0.0.0-20260421124901-c2c60da05d5c or above."
+urls:
+- "https://github.com/advisories/GHSA-h829-5cg7-6hff"
+- "https://github.com/supply-chain-tools/gitverify/security/advisories/GHSA-h829-5cg7-6hff"
+- "https://github.com/supply-chain-tools/gitverify/commit/c2c60da05d5c73621d0ce7ea02770bacd79ec8b1"
+- "https://github.com/supply-chain-tools/gitverify"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "41446ab0-3f65-491f-a5dd-dee272eaac7d"
+cwe_ids:
+- "CWE-347"
+- "CWE-937"
+- "CWE-1035"

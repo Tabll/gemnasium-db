@@ -1,0 +1,39 @@
+---
+identifier: "GHSA-82j2-j2ch-gfr8"
+identifiers:
+- "GHSA-82j2-j2ch-gfr8"
+package_slug: "cargo/rustls-webpki"
+title: "rustls-webpki: Denial of service via panic on malformed CRL BIT STRING"
+description: "`bit_string_flags()` in `src/der.rs` panics with an index-out-of-bounds
+  when given a BIT STRING whose content is exactly `[0x00]` (one byte: zero padding
+  bits, zero data bytes). This is reachable through the public API `BorrowedCertRevocationList::from_der()`
+  via the `issuingDistributionPoint` CRL extension.\n\n**Precondition**: CRL checking
+  is opt-in in rustls-webpki. This vulnerability affects only applications that explicitly
+  pass `RevocationOptions` to `verify_for_usage()` and load CRL bytes from a source
+  the attacker can influence. The default rustls configuration (no `RevocationOptions`)
+  is not affected.\n\n> **AI disclosure**: This report was prepared with AI assistance
+  (Claude). The vulnerability was discovered by differential fuzzing against a formally-verified
+  Rust oracle. All technical claims have been independently verified against the live
+  source code before submission."
+date: "2026-04-24"
+pubdate: "2026-04-24"
+affected_range: "<0.103.13||>=0.104.0-alpha.1 <0.104.0-alpha.7"
+fixed_versions:
+- "0.103.13"
+- "0.104.0-alpha.7"
+affected_versions: "All versions before 0.103.13, all versions starting from 0.104.0-alpha.1
+  before 0.104.0-alpha.7"
+not_impacted: "All versions starting from 0.103.13 before 0.104.0-alpha.1, all versions
+  starting from 0.104.0-alpha.7"
+solution: "Upgrade to versions 0.103.13, 0.104.0-alpha.7 or above."
+urls:
+- "https://github.com/advisories/GHSA-82j2-j2ch-gfr8"
+- "https://github.com/rustls/webpki/security/advisories/GHSA-82j2-j2ch-gfr8"
+- "https://github.com/rustls/webpki"
+- "https://rustsec.org/advisories/RUSTSEC-2026-0104.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "43920a5b-7b68-4d5c-bff9-8b3b464a6fc9"
+cwe_ids:
+- "CWE-125"
+- "CWE-937"
+- "CWE-1035"

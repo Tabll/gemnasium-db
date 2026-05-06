@@ -1,0 +1,36 @@
+---
+identifier: "GHSA-pr66-whqj-rq5p"
+identifiers:
+- "GHSA-pr66-whqj-rq5p"
+package_slug: "npm/openclaw"
+title: "Duplicate Advisory: OpenClaw: Discord Component Interaction Misclassifies
+  Group DM as Direct Message"
+description: "### Duplicate Advisory\nThis advisory has been withdrawn because it
+  is a duplicate of GHSA-6336-qqw9-v6x6. This link is maintained to preserve external
+  references.\n\n### Original Description\nOpenClaw before 2026.3.31 contains a logic
+  error in Discord component interaction routing that misclassifies group direct messages
+  as direct messages in extensions/discord/src/monitor/agent-components-helpers.ts.
+  Attackers can exploit this misclassification to bypass group DM policy enforcement
+  or trigger incorrect session handling."
+date: "2026-05-04"
+pubdate: "2026-04-24"
+affected_range: "<2026.3.31"
+fixed_versions:
+- "2026.3.31"
+affected_versions: "All versions before 2026.3.31"
+not_impacted: "All versions starting from 2026.3.31"
+solution: "Upgrade to version 2026.3.31 or above."
+urls:
+- "https://github.com/advisories/GHSA-pr66-whqj-rq5p"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-6336-qqw9-v6x6"
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-41341"
+- "https://github.com/openclaw/openclaw/commit/8c83128fc38d5a3642b8ccbea58550755fdbbbaf"
+- "https://github.com/openclaw/openclaw"
+- "https://www.vulncheck.com/advisories/openclaw-component-interaction-misclassification-in-discord-extension"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "d2cb94e6-684d-40be-bb6b-c77a24600a31"
+cwe_ids:
+- "CWE-351"
+- "CWE-937"
+- "CWE-1035"

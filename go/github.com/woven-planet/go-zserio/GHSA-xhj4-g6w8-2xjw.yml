@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-xhj4-g6w8-2xjw"
+identifiers:
+- "GHSA-xhj4-g6w8-2xjw"
+package_slug: "go/github.com/woven-planet/go-zserio"
+title: "go-zserio has Unbounded Memory Allocation for All Platforms"
+description: "When deserializing arrays, strings or bytes (blob) types zserio first
+  reads the size of the variable, and then allocates sufficient memory to load data.
+  Since the size is always trusted this can be abused by creating a data file with
+  a large size value, causing the zserio runtime to allocate large amounts of memory."
+date: "2026-04-24"
+pubdate: "2026-04-24"
+affected_range: "<0.9.1"
+fixed_versions:
+- "0.9.1"
+affected_versions: "All versions before 0.9.1"
+not_impacted: "All versions starting from 0.9.1"
+solution: "Upgrade to version 0.9.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-xhj4-g6w8-2xjw"
+- "https://github.com/woven-by-toyota/go-zserio/security/advisories/GHSA-xhj4-g6w8-2xjw"
+- "https://github.com/woven-by-toyota/go-zserio/commit/39ef1decde7e9766207794d396018776b33c6e45"
+- "https://github.com/woven-by-toyota/go-zserio"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+uuid: "4494e554-60d6-44f0-b828-1b2ac6888742"
+cwe_ids:
+- "CWE-789"
+- "CWE-937"
+- "CWE-1035"

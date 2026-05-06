@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-2xp4-qhr4-xqm2"
+identifiers:
+- "GHSA-2xp4-qhr4-xqm2"
+package_slug: "npm/openclaw"
+title: "Duplicate Advisory: OpenClaw: HTTP operator endpoints lack browser-origin
+  validation in trusted-proxy mode"
+description: "### Duplicate Advisory\nThis advisory has been withdrawn because it
+  is a duplicate of GHSA-mhr7-2xmv-4c4q. This link is maintained to preserve external
+  references.\n\n### Original Description\nOpenClaw before 2026.3.31 lacks browser-origin
+  validation in HTTP operator endpoints when operating in trusted-proxy mode, allowing
+  cross-site request forgery attacks. Attackers can exploit this by sending malicious
+  requests from a browser in trusted-proxy deployments to perform unauthorized actions
+  on HTTP operator endpoints."
+date: "2026-05-04"
+pubdate: "2026-04-24"
+affected_range: "<2026.3.31"
+fixed_versions:
+- "2026.3.31"
+affected_versions: "All versions before 2026.3.31"
+not_impacted: "All versions starting from 2026.3.31"
+solution: "Upgrade to version 2026.3.31 or above."
+urls:
+- "https://github.com/advisories/GHSA-2xp4-qhr4-xqm2"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-mhr7-2xmv-4c4q"
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-41347"
+- "https://github.com/openclaw/openclaw/commit/6b3f99a11f4d070fa5ed2533abbb3d7329ea4f0d"
+- "https://www.vulncheck.com/advisories/openclaw-cross-site-request-forgery-via-missing-browser-origin-validation-in-http-operator-endpoints"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:N/VI:L/VA:N/SC:L/SI:L/SA:L"
+uuid: "8bcba296-76f0-4edb-a147-255565923235"
+cwe_ids:
+- "CWE-352"
+- "CWE-937"
+- "CWE-1035"

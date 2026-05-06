@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-w9f5-8q83-qwpx"
+identifiers:
+- "GHSA-w9f5-8q83-qwpx"
+package_slug: "npm/openclaw"
+title: "Duplicate Advisory: OpenClaw: Fake DeviceToken Bypasses Shared Auth Rate Limiting"
+description: "### Duplicate Advisory\nThis advisory has been withdrawn because it
+  is a duplicate of GHSA-6p8r-6m93-557f. This link is maintained to preserve external
+  references.\n\n### Original Description\nOpenClaw before 2026.3.31 contains an authentication
+  rate limiting bypass vulnerability that allows attackers to circumvent shared authentication
+  protections using fake device tokens. Attackers can exploit the mixed WebSocket
+  authentication flow to bypass rate limiting controls and conduct brute force attacks
+  against weak shared passwords."
+date: "2026-05-04"
+pubdate: "2026-04-24"
+affected_range: "<2026.3.31"
+fixed_versions:
+- "2026.3.31"
+affected_versions: "All versions before 2026.3.31"
+not_impacted: "All versions starting from 2026.3.31"
+solution: "Upgrade to version 2026.3.31 or above."
+urls:
+- "https://github.com/advisories/GHSA-w9f5-8q83-qwpx"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-6p8r-6m93-557f"
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-41333"
+- "https://github.com/openclaw/openclaw/commit/af0c0862f22ca4492406a3103d05e3628f94cbe9"
+- "https://www.vulncheck.com/advisories/openclaw-authentication-rate-limiting-bypass-via-fake-devicetoken"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N"
+uuid: "595eebb3-7f02-468c-b4a3-c979a83b8856"
+cwe_ids:
+- "CWE-799"
+- "CWE-937"
+- "CWE-1035"
