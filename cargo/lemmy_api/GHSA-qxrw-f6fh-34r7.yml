@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-qxrw-f6fh-34r7"
+identifiers:
+- "GHSA-qxrw-f6fh-34r7"
+package_slug: "cargo/lemmy_api"
+title: "Lemmy resend-verification endpoint exposes registered email addresses to unauthenticated
+  users"
+description: "The unauthenticated resend-verification endpoint returns different responses
+  for registered and unregistered email addresses. A malicious third party can submit
+  candidate addresses to `/api/v4/account/auth/resend_verification_email` and distinguish
+  accounts from misses."
+date: "2026-05-06"
+pubdate: "2026-05-06"
+affected_range: "<=0.19.1-rc.1"
+fixed_versions: []
+affected_versions: "All versions up to 0.19.1-rc.1"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-qxrw-f6fh-34r7"
+- "https://github.com/LemmyNet/lemmy/security/advisories/GHSA-qxrw-f6fh-34r7"
+- "https://github.com/LemmyNet/lemmy/commit/4afff1699d08920b9a9023e81b229d772b894d91"
+- "https://github.com/LemmyNet/lemmy"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N"
+uuid: "c21f4894-680f-4405-938a-acb9fa84d615"
+cwe_ids:
+- "CWE-204"
+- "CWE-937"
+- "CWE-1035"

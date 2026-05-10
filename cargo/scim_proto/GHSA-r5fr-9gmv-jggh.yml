@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-r5fr-9gmv-jggh"
+identifiers:
+- "GHSA-r5fr-9gmv-jggh"
+package_slug: "cargo/scim_proto"
+title: "scim_proton and kanidm_proto have an authenticated process abort via SCIM
+  filter stack exhaustion"
+description: "A single unauthenticated `GET` to any `/scim/v1/...` endpoint with a
+  `?filter=` query string of a few thousand nested parentheses (≈ 4–12 KB) drives
+  the recursive-descent PEG parser past the worker thread's stack guard page. Rust
+  responds to stack overflow with `std::process::abort()` — the entire `kanidmd` process
+  exits. The parse runs inside axum's `Query<ScimEntryGetQuery>` extractor, before
+  any handler body and therefore before any ACL check."
+date: "2026-05-06"
+pubdate: "2026-05-06"
+affected_range: "<1.9.3"
+fixed_versions:
+- "1.9.3"
+affected_versions: "All versions before 1.9.3"
+not_impacted: "All versions starting from 1.9.3"
+solution: "Upgrade to version 1.9.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-r5fr-9gmv-jggh"
+- "https://github.com/kanidm/kanidm/security/advisories/GHSA-r5fr-9gmv-jggh"
+- "https://github.com/kanidm/kanidm"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+uuid: "928d10ac-d74c-417a-ae90-aa5a56992b57"
+cwe_ids:
+- "CWE-248"
+- "CWE-400"
+- "CWE-674"
+- "CWE-937"
+- "CWE-1035"

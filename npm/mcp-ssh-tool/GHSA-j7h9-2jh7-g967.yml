@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-j7h9-2jh7-g967"
+identifiers:
+- "GHSA-j7h9-2jh7-g967"
+package_slug: "npm/mcp-ssh-tool"
+title: "mcp-ssh-tool has file transfer path policy bypass and bearer token comparison
+  hardening"
+description: "`mcp-ssh-tool` has released version `2.1.1` with security hardening
+  for transfer path authorization and HTTP bearer authentication.\n\nThe release addresses:\n\n-
+  insufficient local path policy enforcement in transfer-related filesystem handling\n-
+  incomplete canonicalization and segment-boundary handling for deny-prefix path policy
+  checks\n- non-constant-time HTTP bearer token comparison"
+date: "2026-05-07"
+pubdate: "2026-05-07"
+affected_range: "<2.1.1"
+fixed_versions:
+- "2.1.1"
+affected_versions: "All versions before 2.1.1"
+not_impacted: "All versions starting from 2.1.1"
+solution: "Upgrade to version 2.1.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-j7h9-2jh7-g967"
+- "https://github.com/oaslananka/mcp-ssh-tool/security/advisories/GHSA-j7h9-2jh7-g967"
+- "https://github.com/oaslananka/mcp-ssh-tool"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N"
+uuid: "8e15cbdc-802c-4d99-b2f5-fcdae1b8e2c6"
+cwe_ids:
+- "CWE-22"
+- "CWE-208"
+- "CWE-937"
+- "CWE-1035"

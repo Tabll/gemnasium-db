@@ -1,0 +1,38 @@
+---
+identifier: "GHSA-mggx-p7jf-jgw4"
+identifiers:
+- "GHSA-mggx-p7jf-jgw4"
+package_slug: "maven/org.jdbi/jdbi3-freemarker"
+title: "jdbi3-freemarker Vulnerable to Improper Neutralization of Special Elements
+  Used in FreeMarker Template Engine"
+description: "**Description**\n\nAn Improper Neutralization of Special Elements Used
+  in a Template Engine (CWE-1336) vulnerability in Jdbi allows arbitrary command execution
+  when an application using `jdbi3-freemarker` permits attacker-influenced text to
+  reach `FreemarkerEngine.parse()` as template source. This affects `org.jdbi:jdbi3-freemarker`
+  through version 3.52.1.\n\nThe developer opts into FreeMarker-backed SQL templating,
+  but does not explicitly opt into reflective Java class loading from template source.\n\nJdbi’s
+  FreeMarker integration should not expose unrestricted Java class instantiation by
+  default in a SQL templating module. While the SQL injection risk is acknowledged,
+  Jdbi’s documentation explicitly supports and demonstrates dynamic SQL templating
+  through defined attributes, including substitution of non-bindable SQL elements
+  such `ORDER BY` columns."
+date: "2026-05-05"
+pubdate: "2026-05-05"
+affected_range: "[,3.53.0)"
+fixed_versions:
+- "3.53.0"
+affected_versions: "All versions before 3.53.0"
+not_impacted: "All versions starting from 3.53.0"
+solution: "Upgrade to version 3.53.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-mggx-p7jf-jgw4"
+- "https://github.com/jdbi/jdbi/security/advisories/GHSA-mggx-p7jf-jgw4"
+- "https://github.com/jdbi/jdbi"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:H/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+uuid: "da223687-d8d3-4202-853d-7a1f4d965aa2"
+cwe_ids:
+- "CWE-1336"
+- "CWE-94"
+- "CWE-937"
+- "CWE-1035"

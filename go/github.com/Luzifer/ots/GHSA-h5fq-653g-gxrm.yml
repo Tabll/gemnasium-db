@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-h5fq-653g-gxrm"
+identifiers:
+- "GHSA-h5fq-653g-gxrm"
+package_slug: "go/github.com/Luzifer/ots"
+title: "ots has a negative expire override that can bypass its secret retention policy"
+description: "The `/api/create` endpoint accepted negative `expire` query values.
+  For the memory storage backend, negative values were passed to secret creation as
+  a negative duration and treated as no expiry, allowing callers to create secrets
+  that persisted longer than intended."
+date: "2026-05-05"
+pubdate: "2026-05-05"
+affected_range: "<1.21.5"
+fixed_versions:
+- "1.21.5"
+affected_versions: "All versions before 1.21.5"
+not_impacted: "All versions starting from 1.21.5"
+solution: "Upgrade to version 1.21.5 or above."
+urls:
+- "https://github.com/advisories/GHSA-h5fq-653g-gxrm"
+- "https://github.com/Luzifer/ots/security/advisories/GHSA-h5fq-653g-gxrm"
+- "https://github.com/Luzifer/ots/commit/3511bd18a2bec75bd9c6b4d513f2a90ccf4209b7"
+- "https://github.com/Luzifer/ots"
+- "https://github.com/Luzifer/ots/releases/tag/v1.21.5"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+uuid: "20f2748e-c174-4dfd-8424-8a48d314ce71"
+cwe_ids:
+- "CWE-20"
+- "CWE-937"
+- "CWE-1035"

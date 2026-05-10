@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-v5mh-h5hx-7v92"
+identifiers:
+- "GHSA-v5mh-h5hx-7v92"
+package_slug: "go/github.com/cloudnativelabs/kube-router"
+title: "kube-router: GoBGP gRPC Admin Port Exposed on Node Primary IP Without Authentication,
+  Allowing Cluster-Wide BGP Route Injection"
+description: "When the kube-router routing controller starts (`--run-router`), it
+  binds the GoBGP gRPC management server to the node's primary IP (e.g., `192.168.1.10:50051`)
+  in addition to `127.0.0.1:50051`. The default admin port is `50051` and the server
+  is enabled by default with no TLS and no authentication. Any pod in the cluster
+  can reach node IPs and therefore call the GoBGP gRPC API to inject arbitrary BGP
+  routes, enumerate peer configurations, add unauthorized BGP neighbors, or withdraw
+  legitimate routes. While kube-router's BGP export policy of `ROUTE_ACTION_REJECT`
+  limits the attack surface to the local node's GoBGP RIB, an attacker can still impact
+  local routing decisions."
+date: "2026-05-06"
+pubdate: "2026-05-06"
+affected_range: "<2.9.0"
+fixed_versions:
+- "2.9.0"
+affected_versions: "All versions before 2.9.0"
+not_impacted: "All versions starting from 2.9.0"
+solution: "Upgrade to version 2.9.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-v5mh-h5hx-7v92"
+- "https://github.com/cloudnativelabs/kube-router/security/advisories/GHSA-v5mh-h5hx-7v92"
+- "https://github.com/cloudnativelabs/kube-router"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L"
+uuid: "619e3578-87e4-46da-9de3-ca8754374b0a"
+cwe_ids:
+- "CWE-862"
+- "CWE-937"
+- "CWE-1035"

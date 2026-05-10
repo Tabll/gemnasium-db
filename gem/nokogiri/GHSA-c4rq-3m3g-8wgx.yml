@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-c4rq-3m3g-8wgx"
+identifiers:
+- "GHSA-c4rq-3m3g-8wgx"
+package_slug: "gem/nokogiri"
+title: "Nokogiri CSS selector tokenizer has regular expression backtracking"
+description: "Nokogiri's CSS selector tokenizer contains regular expressions whose
+  construction may result in exponential regex backtracking on adversarial selectors.
+  Three ReDoS vectors are addressed in this release:\n\n1. String-literal tokenization
+  on certain unterminated quoted-string input.\n2. String-literal tokenization on
+  a separate class of hex-escape-rich input.\n3. Identifier tokenization on hex-escape-rich
+  input.\n\nThe public CSS selector methods that funnel through the affected tokenizer
+  are `Nokogiri::CSS.xpath_for`, `Node#css`, `Node#at_css`, `Searchable#search`, and
+  `CSS::Parser#parse`."
+date: "2026-05-06"
+pubdate: "2026-05-06"
+affected_range: "<1.19.3"
+fixed_versions:
+- "1.19.3"
+affected_versions: "All versions before 1.19.3"
+not_impacted: "All versions starting from 1.19.3"
+solution: "Upgrade to version 1.19.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-c4rq-3m3g-8wgx"
+- "https://github.com/sparklemotion/nokogiri/security/advisories/GHSA-c4rq-3m3g-8wgx"
+- "https://github.com/sparklemotion/nokogiri"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "a76edde9-c8ad-43fb-8536-29e0219526b3"
+cwe_ids:
+- "CWE-1333"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-cwfq-rfcr-8hmp"
+identifiers:
+- "GHSA-cwfq-rfcr-8hmp"
+package_slug: "cargo/zebrad"
+title: "Zebra's Transparent SIGHASH_SINGLE Handling Diverges from zcashd for Corresponding
+  Outputs"
+description: "For V5+ transparent spends, `Zebra` and `zcashd` disagree on the same
+  consensus rule: `SIGHASH_SINGLE` must fail when the input index has no corresponding
+  output. `zcashd` treats this as consensus-invalid under ZIP-244, while `Zebra`'s
+  transparent verification path computes a digest for the missing-output case instead
+  of failing.\n\nThe result is a direct block-validity split. A malformed V5 transparent
+  transaction can be accepted by `Zebra`, retained in `Zebra`'s mempool, selected
+  into `Zebra` `getblocktemplate`, mined into a block, and then rejected by `zcashd`."
+date: "2026-05-07"
+pubdate: "2026-05-07"
+affected_range: "<4.4.0"
+fixed_versions:
+- "4.4.0"
+affected_versions: "All versions before 4.4.0"
+not_impacted: "All versions starting from 4.4.0"
+solution: "Upgrade to version 4.4.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-cwfq-rfcr-8hmp"
+- "https://github.com/ZcashFoundation/zebra/security/advisories/GHSA-cwfq-rfcr-8hmp"
+- "https://github.com/ZcashFoundation/zebra"
+- "https://github.com/ZcashFoundation/zebra/releases/tag/v4.4.0"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:H/SA:N"
+uuid: "67f72986-fc3b-4775-be80-aa1c2cfc37c3"
+cwe_ids:
+- "CWE-573"
+- "CWE-354"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-qgx9-6px9-7p75"
+identifiers:
+- "GHSA-qgx9-6px9-7p75"
+package_slug: "npm/openclaw"
+title: "Duplicate Advisory: OpenClaw: Assistant media route missed scope enforcement
+  for trusted-proxy authorization"
+description: "### Duplicate Advisory\nThis advisory has been withdrawn because it
+  is a duplicate of GHSA-v8qf-fr4g-28p2. This link is maintained to preserve external
+  references.\n\n### Original Description\nOpenClaw before 2026.4.20 contains a scope
+  enforcement bypass vulnerability in the assistant-media route that allows trusted-proxy
+  callers without operator.read scope to access protected assistant-media files and
+  metadata. Attackers can bypass identity-bearing HTTP auth path scope validation
+  to retrieve sensitive media content within allowed media roots."
+date: "2026-05-04"
+pubdate: "2026-04-23"
+affected_range: "<2026.4.20"
+fixed_versions:
+- "2026.4.20"
+affected_versions: "All versions before 2026.4.20"
+not_impacted: "All versions starting from 2026.4.20"
+solution: "Upgrade to version 2026.4.20 or above."
+urls:
+- "https://github.com/advisories/GHSA-qgx9-6px9-7p75"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-v8qf-fr4g-28p2"
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-41908"
+- "https://github.com/openclaw/openclaw/commit/99ef3a63c58440d53f8e45ad861b846032fcb036"
+- "https://www.vulncheck.com/advisories/openclaw-scope-enforcement-bypass-in-assistant-media-route"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N"
+uuid: "6da9641a-8876-4baa-b9e6-e25dba8ff08e"
+cwe_ids:
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

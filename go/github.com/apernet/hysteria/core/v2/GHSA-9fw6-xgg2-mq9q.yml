@@ -1,0 +1,26 @@
+---
+identifier: "GHSA-9fw6-xgg2-mq9q"
+identifiers:
+- "GHSA-9fw6-xgg2-mq9q"
+package_slug: "go/github.com/apernet/hysteria/core/v2"
+title: "Hysteria: A specially constructed quic package can crash the server OOM when
+  the sniff is enabled"
+description: "A specially constructed quic package can crash the server OOM when the
+  sniff is enabled."
+date: "2026-05-05"
+pubdate: "2026-05-05"
+affected_range: "<=2.8.1"
+fixed_versions: []
+affected_versions: "All versions up to 2.8.1"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-9fw6-xgg2-mq9q"
+- "https://github.com/apernet/hysteria/security/advisories/GHSA-9fw6-xgg2-mq9q"
+- "https://github.com/apernet/hysteria"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+uuid: "3429589a-299c-4f67-a28c-6f720af735c4"
+cwe_ids:
+- "CWE-770"
+- "CWE-937"
+- "CWE-1035"

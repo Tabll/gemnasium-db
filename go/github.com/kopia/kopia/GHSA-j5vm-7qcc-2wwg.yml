@@ -7,7 +7,7 @@ title: "Kopia: Storage connection credentials written to console on \"repository
   CLI command with JSON output"
 description: "_What kind of vulnerability is it? Who is impacted?_\n\nStorage credentials
   are written to the console."
-date: "2024-04-10"
+date: "2026-04-27"
 pubdate: "2024-04-10"
 affected_range: "<0.16.0"
 fixed_versions:

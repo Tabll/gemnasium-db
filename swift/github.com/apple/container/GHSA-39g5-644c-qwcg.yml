@@ -1,0 +1,40 @@
+---
+identifier: "GHSA-39g5-644c-qwcg"
+identifiers:
+- "GHSA-39g5-644c-qwcg"
+package_slug: "swift/github.com/apple/container"
+title: "container: pf Rule Injection via Domain Name Argument in `container system
+  dns create --localhost` Command"
+description: "The `container system dns create --localhost` command accepts a `domainName`
+  argument and passes it unsanitized into the pf anchor file (`/etc/pf.anchors/com.apple.container`)
+  as a comment in a rule line. A domain name containing a newline character breaks
+  out of the comment context and injects an arbitrary pf rule into the anchor file.
+  When `pfctl -f` subsequently loads the configuration, the attacker-controlled rule
+  is loaded into the macOS kernel packet filter.\n\nA `isValidDomainName()` function
+  exists in `Parser.swift:892` but is **never called** from `DNSCreate`.\n\n**The
+  core harm caused by this vulnerability is the bypassing of sudo privileges. An administrator
+  may have only granted a user or an automation tool such as CI/CD the ability to
+  execute `container system dns create` with root privileges, expecting that the user
+  or automation tool could only add redirects from other IPs to localhost in the firewall
+  rules file via `--localhost`. However, an attacker can exploit this vulnerability
+  to write arbitrary rules into the firewall rules file: the target address is no
+  longer restricted to localhost, and the rules are no longer limited to redirects.**"
+date: "2026-05-07"
+pubdate: "2026-05-07"
+affected_range: "<0.12.3"
+fixed_versions:
+- "0.12.3"
+affected_versions: "All versions before 0.12.3"
+not_impacted: "All versions starting from 0.12.3"
+solution: "Upgrade to version 0.12.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-39g5-644c-qwcg"
+- "https://github.com/apple/container/security/advisories/GHSA-39g5-644c-qwcg"
+- "https://github.com/apple/container"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L"
+cvss_v4: "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N"
+uuid: "95255b5b-c1fc-4305-b09a-ad429affbcd6"
+cwe_ids:
+- "CWE-20"
+- "CWE-937"
+- "CWE-1035"

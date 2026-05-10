@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-qmq6-f8pr-cx5x"
+identifiers:
+- "GHSA-qmq6-f8pr-cx5x"
+package_slug: "npm/uuid"
+title: "Duplicate Advisory: uuid: Missing buffer bounds check in v3/v5/v6 when buf
+  is provided"
+description: "## Duplicate Advisory\nThis advisory has been withdrawn because it is
+  a duplicate of GHSA-w5hq-g745-h8pq. This link is maintained to preserve external
+  references.\n\n## Original Advisory\nuuid before 14.0.0 can make unexpected writes
+  when external output buffers are used, and the UUID version is 3, 5, or 6. In particular,
+  UUID version 4, which is very commonly used, is unaffected by this issue."
+date: "2026-05-05"
+pubdate: "2026-04-23"
+affected_range: "<14.0.0"
+fixed_versions:
+- "14.0.0"
+affected_versions: "All versions before 14.0.0"
+not_impacted: "All versions starting from 14.0.0"
+solution: "Upgrade to version 14.0.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-qmq6-f8pr-cx5x"
+- "https://github.com/uuidjs/uuid/security/advisories/GHSA-w5hq-g745-h8pq"
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-41988"
+- "https://github.com/uuidjs/uuid/commit/3d2c5b0342f0fcb52a5ac681c3d47c13e7444b34"
+cvss_v3: "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:C/C:N/I:L/A:N"
+uuid: "653adbcf-024c-4083-8ea9-79cbe44e84f0"
+cwe_ids:
+- "CWE-670"
+- "CWE-937"
+- "CWE-1035"

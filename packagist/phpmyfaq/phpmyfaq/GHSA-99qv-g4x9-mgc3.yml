@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-99qv-g4x9-mgc3"
+identifiers:
+- "GHSA-99qv-g4x9-mgc3"
+package_slug: "packagist/phpmyfaq/phpmyfaq"
+title: "phpMyFAQ has unauthenticated FAQ permission bypass via getFaqBySolutionId
+  fallback query"
+description: "The public `/solution_id_{id}.html` route calls `Faq::getIdFromSolutionId()`
+  in `phpmyfaq/src/phpMyFAQ/Faq.php:1312`. That query joins `faqdata` with `faqcategoryrelations`
+  solely by `solution_id` and returns the matching FAQ's `id`, `lang`, `thema` (title),
+  and `category_id` with no permission filter. An unauthenticated visitor hits the
+  route with a sequential integer and the server 301-redirects to `/content/<category>/<id>/<lang>/<title-slug>.html`,
+  leaking the FAQ's existence, internal id, language, category binding, and title
+  via the redirect's `Location` header and the redirected page's canonical link, share-to-social
+  URLs, and hidden form fields. The related `getFaqBySolutionId()` at line 1221 contains
+  an explicit fallback query (added \"for tests\") that also bypasses the permission
+  filter, widening the blast radius to any callsite that trusts its result."
+date: "2026-05-06"
+pubdate: "2026-05-06"
+affected_range: "<4.1.2"
+fixed_versions:
+- "4.1.2"
+affected_versions: "All versions before 4.1.2"
+not_impacted: "All versions starting from 4.1.2"
+solution: "Upgrade to version 4.1.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-99qv-g4x9-mgc3"
+- "https://github.com/thorsten/phpMyFAQ/security/advisories/GHSA-99qv-g4x9-mgc3"
+- "https://github.com/thorsten/phpMyFAQ"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+uuid: "6a048fc6-c084-413a-8255-21b10dcaa6d6"
+cwe_ids:
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

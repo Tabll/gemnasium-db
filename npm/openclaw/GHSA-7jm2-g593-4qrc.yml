@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-7jm2-g593-4qrc"
+identifiers:
+- "GHSA-7jm2-g593-4qrc"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Agent gateway config mutations could change protected operator settings"
+description: "The agent-facing `gateway config.patch` / `config.apply` guard did not
+  cover several operator-trusted settings, including sandbox policy, plugin enablement,
+  gateway auth/TLS, hook routing, MCP server configuration, SSRF policy, and filesystem
+  hardening. A prompt-injected model with access to the owner-only gateway tool could
+  persist changes to those settings.\n\nThis is a model-to-operator guard bypass,
+  not a remote unauthenticated gateway compromise. Severity is medium."
+date: "2026-04-25"
+pubdate: "2026-04-25"
+affected_range: "<2026.4.20"
+fixed_versions:
+- "2026.4.20"
+affected_versions: "All versions before 2026.4.20"
+not_impacted: "All versions starting from 2026.4.20"
+solution: "Upgrade to version 2026.4.20 or above."
+urls:
+- "https://github.com/advisories/GHSA-7jm2-g593-4qrc"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-7jm2-g593-4qrc"
+- "https://github.com/openclaw/openclaw/commit/fe30b31a97a917ecc6e92f6c85378b6b20352422"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:L"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:N/VI:H/VA:L/SC:N/SI:N/SA:N"
+uuid: "fe962e1a-5889-4e1b-ad7c-f0e62e0a8909"
+cwe_ids:
+- "CWE-1220"
+- "CWE-285"
+- "CWE-937"
+- "CWE-1035"

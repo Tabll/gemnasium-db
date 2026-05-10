@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-wppj-c6mr-83jj"
+identifiers:
+- "GHSA-wppj-c6mr-83jj"
+package_slug: "npm/openclaw"
+title: "OpenClaw: OpenShell FS bridge writes stay pinned to the sandbox mount root"
+description: "OpenShell FS bridge writes stay pinned to the sandbox mount root."
+date: "2026-05-04"
+pubdate: "2026-05-04"
+affected_range: "<2026.4.22"
+fixed_versions:
+- "2026.4.22"
+affected_versions: "All versions before 2026.4.22"
+not_impacted: "All versions starting from 2026.4.22"
+solution: "Upgrade to version 2026.4.22 or above."
+urls:
+- "https://github.com/advisories/GHSA-wppj-c6mr-83jj"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-wppj-c6mr-83jj"
+- "https://github.com/openclaw/openclaw/commit/7be82d4fd1193bcb7e44ee38838f00bf924ffa76"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:N/VI:H/VA:L/SC:H/SI:H/SA:H"
+uuid: "6e90a110-c378-40d0-a2e7-4ce3927d3f4e"
+cwe_ids:
+- "CWE-367"
+- "CWE-937"
+- "CWE-1035"

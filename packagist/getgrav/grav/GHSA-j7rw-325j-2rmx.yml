@@ -1,0 +1,40 @@
+---
+identifier: "GHSA-j7rw-325j-2rmx"
+identifiers:
+- "GHSA-j7rw-325j-2rmx"
+package_slug: "packagist/getgrav/grav"
+title: "Duplicate Advisory: Grav has Insecure Deserialization in File Cache"
+description: "### Duplicate Advisory\nThis advisory has been withdrawn because it
+  is a duplicate of GHSA-gwfr-jfjf-92vv. This link is maintained to preserve external
+  references.\n\n### Original Description\nA vulnerability was found in Grav CMS up
+  to 1.7.49.5/2.0.0-beta.1. Affected by this vulnerability is the function FileCache::doGet
+  of the file system/src/Grav/Framework/Cache/Adapter/FileCache.php of the component
+  Cache Value Handler. The manipulation results in deserialization. The attack may
+  be launched remotely. The attack requires a high level of complexity. The exploitation
+  appears to be difficult. The exploit has been made public and could be used. Upgrading
+  to version 2.0.0-beta.2 addresses this issue. The patch is identified as c66dfeb5f.
+  The affected component should be upgraded."
+date: "2026-05-06"
+pubdate: "2026-04-29"
+affected_range: "<2.0.0-beta.2"
+fixed_versions:
+- "2.0.0-beta.2"
+affected_versions: "All versions before 2.0.0-beta.2"
+not_impacted: "All versions starting from 2.0.0-beta.2"
+solution: "Upgrade to version 2.0.0-beta.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-j7rw-325j-2rmx"
+- "https://github.com/getgrav/grav/security/advisories/GHSA-gwfr-jfjf-92vv"
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-7317"
+- "https://github.com/getgrav/grav/commit/c66dfeb5f"
+- "https://github.com/devsamuelsantiago/grav-cms-filecache-object-injection"
+- "https://vuldb.com/submit/798732"
+- "https://vuldb.com/vuln/359965"
+- "https://vuldb.com/vuln/359965/cti"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:L"
+cvss_v4: "CVSS:4.0/AV:N/AC:H/AT:N/PR:L/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N"
+uuid: "4d90b959-66a8-4fca-bb9c-391c8b9fbebe"
+cwe_ids:
+- "CWE-20"
+- "CWE-937"
+- "CWE-1035"

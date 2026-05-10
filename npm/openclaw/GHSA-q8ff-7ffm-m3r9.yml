@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-q8ff-7ffm-m3r9"
+identifiers:
+- "GHSA-q8ff-7ffm-m3r9"
+package_slug: "npm/openclaw"
+title: "OpenClaw's Webhooks SecretRef route secret remains valid after rotation/reload"
+description: "OpenClaw webhooks allowed route secrets to be backed by `SecretRef`
+  values, but cached the resolved secret for a route. After an operator rotated the
+  underlying secret and ran `openclaw secrets reload`, the previous resolved webhook
+  secret could remain valid until the plugin or gateway restarted."
+date: "2026-05-05"
+pubdate: "2026-05-05"
+affected_range: "<2026.4.23"
+fixed_versions:
+- "2026.4.23"
+affected_versions: "All versions before 2026.4.23"
+not_impacted: "All versions starting from 2026.4.23"
+solution: "Upgrade to version 2026.4.23 or above."
+urls:
+- "https://github.com/advisories/GHSA-q8ff-7ffm-m3r9"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-q8ff-7ffm-m3r9"
+- "https://github.com/openclaw/openclaw/commit/36c4a372a0ad5dca8bfc0d93f7aab9c2f2de66fa"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:L/I:H/A:L"
+uuid: "2490a286-0d51-4cc1-95c7-bed1a8a89196"
+cwe_ids:
+- "CWE-613"
+- "CWE-937"
+- "CWE-1035"

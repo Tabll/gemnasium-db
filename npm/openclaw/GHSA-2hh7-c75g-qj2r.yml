@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-2hh7-c75g-qj2r"
+identifiers:
+- "GHSA-2hh7-c75g-qj2r"
+package_slug: "npm/openclaw"
+title: "OpenClaw validates Zalo outbound photo URLs through the SSRF guard"
+description: "Zalo outbound photo URLs are validated through the SSRF guard."
+date: "2026-05-04"
+pubdate: "2026-05-04"
+affected_range: "<2026.4.22"
+fixed_versions:
+- "2026.4.22"
+affected_versions: "All versions before 2026.4.22"
+not_impacted: "All versions starting from 2026.4.22"
+solution: "Upgrade to version 2026.4.22 or above."
+urls:
+- "https://github.com/advisories/GHSA-2hh7-c75g-qj2r"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-2hh7-c75g-qj2r"
+- "https://github.com/openclaw/openclaw/commit/a65eb1b864b7630c1242a82de9e5799b80583c3f"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "dfdf1ea7-c1a0-4ed3-98d6-1339de9189dd"
+cwe_ids:
+- "CWE-918"
+- "CWE-937"
+- "CWE-1035"

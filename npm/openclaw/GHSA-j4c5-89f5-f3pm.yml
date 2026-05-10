@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-j4c5-89f5-f3pm"
+identifiers:
+- "GHSA-j4c5-89f5-f3pm"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Browser CDP profile creation skipped strict-mode SSRF checks"
+description: "Browser profile creation normalized `cdpUrl` values before persisting
+  them, but did not apply the configured browser SSRF policy at creation time. In
+  deployments that explicitly disabled private-network CDP targets, a stored profile
+  could still point at a private-network or metadata endpoint and later be probed
+  by normal profile status flows.\n\nDefault trusted-operator browser behavior allows
+  private-network CDP endpoints, so this only affected strict-mode deployments. Severity
+  is low."
+date: "2026-04-25"
+pubdate: "2026-04-25"
+affected_range: "<2026.4.20"
+fixed_versions:
+- "2026.4.20"
+affected_versions: "All versions before 2026.4.20"
+not_impacted: "All versions starting from 2026.4.20"
+solution: "Upgrade to version 2026.4.20 or above."
+urls:
+- "https://github.com/advisories/GHSA-j4c5-89f5-f3pm"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-j4c5-89f5-f3pm"
+- "https://github.com/openclaw/openclaw/commit/1fd049e3074cac72f6734a7fe88468c84f5f8bd7"
+- "https://github.com/openclaw/openclaw/commit/e90c89cf8b1459f2aa1f3a665be67392b6c03fdf"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "3518d15b-0acc-42ad-95d4-926ade2528fb"
+cwe_ids:
+- "CWE-918"
+- "CWE-937"
+- "CWE-1035"

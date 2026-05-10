@@ -1,0 +1,25 @@
+---
+identifier: "GHSA-g38r-8gmr-ghrf"
+identifiers:
+- "GHSA-g38r-8gmr-ghrf"
+package_slug: "cargo/mysten-metrics"
+title: "`mysten-metrics` was removed from crates.io for malicious code"
+description: "`mysten-metrics` included a build script that attempted to exfiltrate
+  data from the build machine.\n\nThe malicious crate had 1 version published on 2026-04-20
+  and had no evidence of actual usage. This crate had no dependencies on crates.io."
+date: "2026-05-04"
+pubdate: "2026-05-04"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-g38r-8gmr-ghrf"
+- "https://github.com/MystenLabs/sui"
+- "https://rustsec.org/advisories/RUSTSEC-2026-0107.html"
+uuid: "7be3753f-4c7e-4cdf-879b-c30a423425cc"
+cwe_ids:
+- "CWE-506"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,36 @@
+---
+identifier: "GHSA-28xx-pppm-vqff"
+identifiers:
+- "GHSA-28xx-pppm-vqff"
+package_slug: "go/github.com/ydb-platform/ydb-go-sdk/v3"
+title: "ydb-go-sdk's transactions are not committed using the `options.WithCommit()`
+  option on last call `table.Transaction.Execute` in transaction"
+description: "Transactions were NOT committed despite the explicit `options.WithCommit`
+  flag using table service client. Because of this, clients did not commit changes
+  to the transaction, relying on the fact that the transaction commit was successful.
+  This led (in rare cases) to a loss of data consistency."
+date: "2026-04-30"
+pubdate: "2026-04-30"
+affected_range: ">=3.104.6 <3.134.2"
+fixed_versions:
+- "3.134.2"
+affected_versions: "All versions starting from 3.104.6 before 3.134.2"
+not_impacted: "All versions before 3.104.6, all versions starting from 3.134.2"
+solution: "Upgrade to version 3.134.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-28xx-pppm-vqff"
+- "https://github.com/ydb-platform/ydb-go-sdk/security/advisories/GHSA-28xx-pppm-vqff"
+- "https://github.com/ydb-platform/ydb-go-sdk/pull/2091"
+- "https://github.com/ydb-platform/ydb-go-sdk/commit/251128a64763555d9a79ee7a131dd154c9000eb9"
+- "https://github.com/ydb-platform/ydb-go-sdk/commit/25dcff4c41153f1f9413512ba12999b40bf7154d"
+- "https://github.com/ydb-platform/ydb-go-sdk"
+- "https://github.com/ydb-platform/ydb-go-sdk/releases/tag/v3.104.6"
+- "https://github.com/ydb-platform/ydb-go-sdk/releases/tag/v3.134.1"
+- "https://github.com/ydb-platform/ydb-go-sdk/releases/tag/v3.134.2"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "ee891f3d-9556-4c70-9221-209c95366b36"
+cwe_ids:
+- "CWE-670"
+- "CWE-937"
+- "CWE-1035"

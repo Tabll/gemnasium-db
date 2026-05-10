@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-jrc5-w569-h7h5"
+identifiers:
+- "GHSA-jrc5-w569-h7h5"
+package_slug: "packagist/phpmyfaq/phpmyfaq"
+title: "phpMyFAQ: Ordinary Authenticated User Can Access Admin-Only API Endpoints
+  Due to Insufficient Authorization Check in phpMyFAQ"
+description: "A review of `phpMyFAQ-main` uncovered an authorization issue in the
+  `admin-api` routes.\n\nSeveral backend endpoints only check whether the caller is
+  logged in. They do not verify that the caller actually has backend or administrative
+  privileges. As a result, a normal frontend user can access API endpoints that are
+  clearly intended for administrative use.\n\nDuring local reproduction, a regular
+  user account was able to request `/admin/api/index.php/dashboard/versions` and receive
+  a successful response from the backend management API.\n\nThis issue does not appear
+  to give direct write access in the affected paths that were confirmed, so it should
+  be treated as a backend information disclosure and privilege boundary failure rather
+  than full admin compromise."
+date: "2026-05-06"
+pubdate: "2026-05-06"
+affected_range: ">=4.1.1 <4.1.2||=4.1.1"
+fixed_versions:
+- "4.1.2"
+affected_versions: "All versions starting from 4.1.1 before 4.1.2, version 4.1.1"
+not_impacted: ""
+solution: "Upgrade to version 4.1.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-jrc5-w569-h7h5"
+- "https://github.com/thorsten/phpMyFAQ/security/advisories/GHSA-jrc5-w569-h7h5"
+- "https://github.com/thorsten/phpMyFAQ"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N"
+uuid: "a20d9ac7-7b92-45f5-9ef2-4c2e6557f122"
+cwe_ids:
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

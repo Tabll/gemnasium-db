@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-qgp3-3rj7-qqq4"
+identifiers:
+- "GHSA-qgp3-3rj7-qqq4"
+package_slug: "npm/openclaw"
+title: "Duplicate Advisory: OpenClaw: Discord Slash Commands Bypass Group DM Channel
+  Allowlist"
+description: "### Duplicate Advisory\nThis advisory has been withdrawn because it
+  is a duplicate of GHSA-rvvf-6vh3-9j43. This link is maintained to preserve external
+  references.\n\n### Original Description\nOpenClaw before 2026.3.31 contains an authorization
+  bypass vulnerability in Discord slash command and autocomplete paths that fail to
+  enforce group DM channel allowlist restrictions. Authorized Discord users can bypass
+  channel restrictions by invoking slash commands, allowing access to restricted group
+  DM channels."
+date: "2026-05-04"
+pubdate: "2026-04-24"
+affected_range: "<2026.3.31"
+fixed_versions:
+- "2026.3.31"
+affected_versions: "All versions before 2026.3.31"
+not_impacted: "All versions starting from 2026.3.31"
+solution: "Upgrade to version 2026.3.31 or above."
+urls:
+- "https://github.com/advisories/GHSA-qgp3-3rj7-qqq4"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-rvvf-6vh3-9j43"
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-41348"
+- "https://github.com/openclaw/openclaw/commit/8fdb19676ab44cf85d47ee13c578195f2e527591"
+- "https://www.vulncheck.com/advisories/openclaw-group-dm-channel-allowlist-bypass-via-discord-slash-commands"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "05443527-5d86-4b38-a0ce-9540ee3e8753"
+cwe_ids:
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

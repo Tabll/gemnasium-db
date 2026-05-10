@@ -1,0 +1,49 @@
+---
+identifier: "GHSA-vj3m-2g9h-vm4p"
+identifiers:
+- "GHSA-vj3m-2g9h-vm4p"
+package_slug: "packagist/getgrav/grav"
+title: "Grav has multiple RCE vectors: unsafe unserialize (x3), command injection
+  in git clone, SSTI blocklist bypass"
+description: "Multiple RCE vectors were found in Grav CMS. Three are critical, two
+  are high.\n\n**1. Unsafe unserialize() in JobQueue — direct RCE gadget (Critical)**\n\n`system/src/Grav/Common/Scheduler/JobQueue.php:465`
+  calls `unserialize(base64_decode(...))` without restricting `allowed_classes`. The
+  `Job` class has `call_user_func_array($this->command, $this->args)` in its execution
+  path, which is a direct gadget chain — inject a serialized `Job` with `command =
+  'system'` and `args = ['whoami']`.\n\nThe same codebase actually has a `Serializable`
+  trait that correctly restricts classes, so this inconsistency stands out.\n\n**2.
+  Unsafe unserialize() in FileCache — arbitrary class instantiation (Critical)**\n\n`system/src/Grav/Framework/Cache/Adapter/FileCache.php:75`
+  does `unserialize($value, ['allowed_classes' => true])`. That `true` allows instantiation
+  of any class. If an attacker can write to the cache directory (via any file write
+  primitive), they get object injection → RCE.\n\n**3. Unsafe unserialize() in Session
+  (High)**\n\n`system/src/Grav/Common/Session.php:116` — same `allowed_classes =>
+  true` pattern on session data. Lower severity since session storage is typically
+  more restricted.\n\n**4. Command injection in git clone (Critical)**\n\n`system/src/Grav/Console/Cli/InstallCommand.php:150`
+  — only `$this->destination` uses `escapeshellarg()`. The `$data['branch']`, `$data['url']`,
+  and `$data['path']` variables go directly into the shell command without escaping.
+  Admin-accessible via plugin/theme installation.\n\n**5. SSTI blocklist bypass (High)**\n\n`system/src/Grav/Common/Security.php:267-286`
+  — `cleanDangerousTwig()` blocks `twig_array_map` and `twig_array_filter` but not
+  `twig_array_reduce`. Also missing `file_get_contents` and `fwrite` from the dangerous
+  function blocklist. An attacker who can inject Twig templates can bypass the security
+  filter.\n\nAll five are independently exploitable. The unserialize issues are the
+  most concerning since they don't require admin access if there's any file write
+  primitive.\n\n— ProScan AppSec | proscan.one\n\n\n---"
+date: "2026-05-05"
+pubdate: "2026-05-05"
+affected_range: "<2.0.0-beta.2"
+fixed_versions:
+- "2.0.0-beta.2"
+affected_versions: "All versions before 2.0.0-beta.2"
+not_impacted: "All versions starting from 2.0.0-beta.2"
+solution: "Upgrade to version 2.0.0-beta.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-vj3m-2g9h-vm4p"
+- "https://github.com/getgrav/grav/security/advisories/GHSA-vj3m-2g9h-vm4p"
+- "https://github.com/getgrav/grav/commit/5a12f9be8314682c8713e569e330f11805d0a663"
+- "https://github.com/getgrav/grav"
+uuid: "efd0ab50-c4b7-46ac-bafb-042644815d0b"
+cwe_ids:
+- "CWE-502"
+- "CWE-78"
+- "CWE-937"
+- "CWE-1035"

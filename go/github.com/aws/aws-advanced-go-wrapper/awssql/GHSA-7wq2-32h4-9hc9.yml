@@ -7,12 +7,12 @@ title: "AWS Advanced Go Wrapper: Privilege Escalation in Aurora PostgreSQL Insta
 description: "### Description of Vulnerability: \nAn issue in AWS Wrappers for Amazon
   Aurora PostgreSQL may allow for privilege escalation to rds_superuser role. A low
   privilege authenticated user can create a crafted function that could be executed
-  with permissions of other Amazon Relational Database Service (RDS) users.\n\nAWS
-  recommends customers upgrade to the following versions:  AWS Go Wrapper to 2025-10-17.\n\n\n###
+  with permissions of other Amazon Relational Database Service (RDS) users.\n\nWe
+  recommend customers upgrade to the following versions:  AWS Go Wrapper to 2025-10-17\n\n\n###
   Source of Vulnerability Report: \nAllistair Ishmael Hakim [allistair.hakim@gmail.com](mailto:allistair.hakim@gmail.com)\n\n\n###
-  Affected products & versions: \nAWS Go Wrapper < 2025-10-17.\n\n\n### Platforms:\n
+  Affected products & versions: \nAWS Go Wrapper < 2025-10-17\n\n\n### Platforms:\n
   MacOS/Windows/Linux"
-date: "2025-11-13"
+date: "2026-05-06"
 pubdate: "2025-11-13"
 affected_range: "<1.1.1"
 fixed_versions:

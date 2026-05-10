@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-84g5-x8j3-7235"
+identifiers:
+- "GHSA-84g5-x8j3-7235"
+package_slug: "go/github.com/tinfoil-factory/netfoil"
+title: "Netfoil has incorrect allowlist enforcement"
+description: "Rules could be bypassed by changing the first character: `example.com`
+  could be be bypassed by e.g. `fxample.com`."
+date: "2026-04-29"
+pubdate: "2026-04-29"
+affected_range: "<0.2.1"
+fixed_versions:
+- "0.2.1"
+affected_versions: "All versions before 0.2.1"
+not_impacted: "All versions starting from 0.2.1"
+solution: "Upgrade to version 0.2.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-84g5-x8j3-7235"
+- "https://github.com/tinfoil-factory/netfoil/security/advisories/GHSA-84g5-x8j3-7235"
+- "https://github.com/tinfoil-factory/netfoil/commit/0ca054acf97b011e4fdd40392475c7786b975ec3"
+- "https://github.com/tinfoil-factory/netfoil"
+- "https://github.com/tinfoil-factory/netfoil/releases/tag/v0.2.1"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "a85e306d-e8d8-4d8f-b2d9-4527ff7dffd9"
+cwe_ids:
+- "CWE-183"
+- "CWE-193"
+- "CWE-937"
+- "CWE-1035"

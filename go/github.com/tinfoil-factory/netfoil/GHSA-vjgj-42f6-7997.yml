@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-vjgj-42f6-7997"
+identifiers:
+- "GHSA-vjgj-42f6-7997"
+package_slug: "go/github.com/tinfoil-factory/netfoil"
+title: "netfoil's optional seccomp sandboxing was not applied"
+description: "The optional flag `--filter-system-calls` was not applied even if specified."
+date: "2026-04-29"
+pubdate: "2026-04-29"
+affected_range: "<0.2.1"
+fixed_versions:
+- "0.2.1"
+affected_versions: "All versions before 0.2.1"
+not_impacted: "All versions starting from 0.2.1"
+solution: "Upgrade to version 0.2.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-vjgj-42f6-7997"
+- "https://github.com/tinfoil-factory/netfoil/security/advisories/GHSA-vjgj-42f6-7997"
+- "https://github.com/tinfoil-factory/netfoil/commit/8c84f1b03adf1df5b4e6d07a49043d13dbbf9ee1"
+- "https://github.com/tinfoil-factory/netfoil"
+- "https://github.com/tinfoil-factory/netfoil/releases/tag/v0.2.1"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "72379841-0272-4d6a-94b1-f973f330f0bf"
+cwe_ids:
+- "CWE-791"
+- "CWE-937"
+- "CWE-1035"

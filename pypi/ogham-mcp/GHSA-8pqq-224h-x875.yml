@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-8pqq-224h-x875"
+identifiers:
+- "GHSA-8pqq-224h-x875"
+package_slug: "pypi/ogham-mcp"
+title: "ogham-mcp had credentials embedded in published PyPI sdists -- Neon postgres
+  URLs and Voyage API key"
+description: "Between 2026-02 and 2026-04-24 a total of 22 public PyPI sdists of `ogham-mcp`
+  contained development credentials embedded in source files. All credentials have
+  since been rotated on the respective providers. No known exploitation. Upgrade to
+  **v0.11.1** to get a clean release."
+date: "2026-05-05"
+pubdate: "2026-05-05"
+affected_range: ">=0.6.3,<0.11.1"
+fixed_versions:
+- "0.11.1"
+affected_versions: "All versions starting from 0.6.3 before 0.11.1"
+not_impacted: "All versions before 0.6.3, all versions starting from 0.11.1"
+solution: "Upgrade to version 0.11.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-8pqq-224h-x875"
+- "https://github.com/ogham-mcp/ogham-mcp/security/advisories/GHSA-8pqq-224h-x875"
+- "https://github.com/ogham-mcp/ogham-mcp"
+uuid: "777d235a-a185-49ee-9182-47f70d78edd4"
+cwe_ids:
+- "CWE-798"
+- "CWE-937"
+- "CWE-1035"

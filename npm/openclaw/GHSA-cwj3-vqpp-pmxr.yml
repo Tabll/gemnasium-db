@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-cwj3-vqpp-pmxr"
+identifiers:
+- "GHSA-cwj3-vqpp-pmxr"
+package_slug: "npm/openclaw"
+title: "OpenClaw's gateway config mutation guard allowed unsafe model-driven config
+  writes"
+description: "The agent-facing `gateway` tool protects `config.apply` and `config.patch`
+  with a model-to-operator trust boundary. That guard used a hand-maintained denylist
+  of protected config paths. The config schema outgrew that denylist, leaving sensitive
+  subtrees writable through model-driven gateway config mutations."
+date: "2026-05-05"
+pubdate: "2026-05-05"
+affected_range: "<2026.4.23"
+fixed_versions:
+- "2026.4.23"
+affected_versions: "All versions before 2026.4.23"
+not_impacted: "All versions starting from 2026.4.23"
+solution: "Upgrade to version 2026.4.23 or above."
+urls:
+- "https://github.com/advisories/GHSA-cwj3-vqpp-pmxr"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-cwj3-vqpp-pmxr"
+- "https://github.com/openclaw/openclaw/commit/bceda6089aa7b3695cc7696b43c61ae3d01bb0ec"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+uuid: "647b4d45-4f22-4954-a85c-aff813e5deda"
+cwe_ids:
+- "CWE-862"
+- "CWE-937"
+- "CWE-1035"

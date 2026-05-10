@@ -1,0 +1,41 @@
+---
+identifier: "GHSA-84jc-3hj2-hwc7"
+identifiers:
+- "GHSA-84jc-3hj2-hwc7"
+package_slug: "cargo/kanidmd_lib"
+title: "kanidmd_lib: Image upload validators run before authorization; PNG validator
+  panics on malformed input"
+description: "The `POST /v1/domain/_image` and `POST /v1/oauth2/{rs_name}/_image`
+  handlers call `validate_image()` on the uploaded body **before** the ACL check that
+  restricts image upload to admins. Any bug in an image validator is therefore reachable
+  by an unauthenticated remote client rather than being admin-gated.\n\nOne such bug
+  exists today: `png_has_trailer()` panics on inputs shorter than 8 bytes, or whose
+  first chunk-length field is near `u32::MAX`.\n\n**On a default build this has no
+  server-wide impact.** The panic unwinds only the requester's own tokio task; the
+  server process survives, no shared state is poisoned, and other connections are
+  unaffected. This was reported privately rather than as a public issue because (a)
+  the project previously treated an admin-triggered thread crash of identical impact
+  as security-relevant (e51d0dee4), and this is reachable by a broader population;
+  and (b) a downstream build with `panic = \"abort\"` would upgrade it to an unauthenticated
+  process-crash DoS."
+date: "2026-05-06"
+pubdate: "2026-05-06"
+affected_range: "<1.9.3"
+fixed_versions:
+- "1.9.3"
+affected_versions: "All versions before 1.9.3"
+not_impacted: "All versions starting from 1.9.3"
+solution: "Upgrade to version 1.9.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-84jc-3hj2-hwc7"
+- "https://github.com/kanidm/kanidm/security/advisories/GHSA-84jc-3hj2-hwc7"
+- "https://github.com/kanidm/kanidm"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:N/A:L"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:L"
+uuid: "46a7eb64-a530-4606-8575-a5e32fec8f53"
+cwe_ids:
+- "CWE-190"
+- "CWE-20"
+- "CWE-696"
+- "CWE-937"
+- "CWE-1035"

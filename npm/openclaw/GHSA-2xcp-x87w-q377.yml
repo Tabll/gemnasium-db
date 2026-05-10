@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-2xcp-x87w-q377"
+identifiers:
+- "GHSA-2xcp-x87w-q377"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Hook mapping templates could bypass hook session-key opt-in"
+description: "Templated hook mapping `sessionKey` values were treated differently
+  from request-supplied session keys. A hook mapping could render an externally influenced
+  session key even when `hooks.allowRequestSessionKey` was disabled, bypassing the
+  intended routing opt-in for hook callers.\n\nThis affects webhook routing isolation.
+  It does not grant host execution by itself. Severity is medium."
+date: "2026-04-25"
+pubdate: "2026-04-25"
+affected_range: "<2026.4.20"
+fixed_versions:
+- "2026.4.20"
+affected_versions: "All versions before 2026.4.20"
+not_impacted: "All versions starting from 2026.4.20"
+solution: "Upgrade to version 2026.4.20 or above."
+urls:
+- "https://github.com/advisories/GHSA-2xcp-x87w-q377"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-2xcp-x87w-q377"
+- "https://github.com/openclaw/openclaw/commit/5275d008ed33203dba3f98e969ad683a65c416c3"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "7b52f1e6-11e3-43bf-bebb-b9afe12c701f"
+cwe_ids:
+- "CWE-639"
+- "CWE-937"
+- "CWE-1035"

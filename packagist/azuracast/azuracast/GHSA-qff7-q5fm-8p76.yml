@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-qff7-q5fm-8p76"
+identifiers:
+- "GHSA-qff7-q5fm-8p76"
+package_slug: "packagist/azuracast/azuracast"
+title: "AzuraCast has Missing Permissions Check on Media File Download, Allowing Cross-Station
+  Data Exfiltration"
+description: "The `GET /api/station/{station_id}/file/{id}/play` endpoint, handled
+  by `PlayAction`, is missing the `Middleware\\Permissions` check that protects all
+  sibling routes in the same `/file/{id}` route group. Any authenticated user can
+  download media files from any station, regardless of whether they have permissions
+  on that station. In multi-tenant deployments, this enables cross-station media exfiltration."
+date: "2026-05-04"
+pubdate: "2026-05-04"
+affected_range: "<0.23.6"
+fixed_versions:
+- "0.23.6"
+affected_versions: "All versions before 0.23.6"
+not_impacted: "All versions starting from 0.23.6"
+solution: "Upgrade to version 0.23.6 or above."
+urls:
+- "https://github.com/advisories/GHSA-qff7-q5fm-8p76"
+- "https://github.com/AzuraCast/AzuraCast/security/advisories/GHSA-qff7-q5fm-8p76"
+- "https://github.com/AzuraCast/AzuraCast/commit/ba92dc3f0ea15a9c0ba0f4557d99a9a26004108f"
+- "https://github.com/AzuraCast/AzuraCast"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+uuid: "409e83fb-c4d7-4e20-8484-17ae4492dfe7"
+cwe_ids:
+- "CWE-862"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-p3hw-mv63-rf9w"
+identifiers:
+- "GHSA-p3hw-mv63-rf9w"
+package_slug: "cargo/gix-validate"
+title: "gix's submodule name validation bypass + trust inheritance flaw enables path
+  traversal and credential disclosure"
+description: "Submodule name validation bypass plus missing validation in production
+  code paths allows path traversal via crafted `.gitmodules`. Combined with a trust
+  inheritance flaw in `Submodule::open()`, this enables reading arbitrary git repository
+  configs (including credentials) from traversed paths with full trust (CWE-22, CWE-200)."
+date: "2026-05-05"
+pubdate: "2026-05-05"
+affected_range: "<0.11.1"
+fixed_versions:
+- "0.11.1"
+affected_versions: "All versions before 0.11.1"
+not_impacted: "All versions starting from 0.11.1"
+solution: "Upgrade to version 0.11.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-p3hw-mv63-rf9w"
+- "https://github.com/GitoxideLabs/gitoxide/security/advisories/GHSA-p3hw-mv63-rf9w"
+- "https://github.com/GitoxideLabs/gitoxide"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+uuid: "359826ce-53f8-4d47-9f6b-2418844118e7"
+cwe_ids:
+- "CWE-22"
+- "CWE-200"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-9525-27vj-c8r8"
+identifiers:
+- "GHSA-9525-27vj-c8r8"
+package_slug: "packagist/phpmyfaq/phpmyfaq"
+title: "phpMyFAQ has stored XSS via Utils::parseUrl() in comment rendering"
+description: "A stored XSS vulnerability in the comment rendering pipeline allows
+  an authenticated user to inject JavaScript that executes for every visitor of an
+  affected FAQ or News page. An attacker with a registered account can steal admin
+  session cookies and take over the application."
+date: "2026-05-06"
+pubdate: "2026-05-06"
+affected_range: ">=4.1.1 <4.1.2||=4.1.1"
+fixed_versions:
+- "4.1.2"
+affected_versions: "All versions starting from 4.1.1 before 4.1.2, version 4.1.1"
+not_impacted: ""
+solution: "Upgrade to version 4.1.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-9525-27vj-c8r8"
+- "https://github.com/thorsten/phpMyFAQ/security/advisories/GHSA-9525-27vj-c8r8"
+- "https://github.com/thorsten/phpMyFAQ"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:L/A:N"
+uuid: "b59c0076-2f0b-4f85-80f5-b4e8e33c93a2"
+cwe_ids:
+- "CWE-116"
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

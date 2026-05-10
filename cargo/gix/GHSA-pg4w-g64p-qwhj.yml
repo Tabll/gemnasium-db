@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-pg4w-g64p-qwhj"
+identifiers:
+- "GHSA-pg4w-g64p-qwhj"
+package_slug: "cargo/gix"
+title: "gix and gitoxide's symlinked .gitmodules are followed and parsed from outside
+  of the repository"
+description: "attachments:\n[pocs.zip](https://github.com/user-attachments/files/26431422/pocs.zip)\n\n\nWhen
+  `Repository::submodules()` loads submodule metadata, it prefers the worktree `.gitmodules`
+  file if that path exists. In the current implementation, the path is read with `std::fs::read()`,
+  which follows symlinks. As a result, a repository can present a symlinked `.gitmodules`
+  that points outside the repository, and gitoxide will parse the out-of-repository
+  bytes as submodule configuration.\n\nThis is a repository-boundary violation. A
+  caller using the high-level submodule API can believe it is reading repository-local
+  submodule metadata, while the bytes are actually coming from an arbitrary file outside
+  the repository tree."
+date: "2026-05-05"
+pubdate: "2026-05-05"
+affected_range: "<0.83.0"
+fixed_versions:
+- "0.83.0"
+affected_versions: "All versions before 0.83.0"
+not_impacted: "All versions starting from 0.83.0"
+solution: "Upgrade to version 0.83.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-pg4w-g64p-qwhj"
+- "https://github.com/GitoxideLabs/gitoxide/security/advisories/GHSA-pg4w-g64p-qwhj"
+- "https://github.com/GitoxideLabs/gitoxide"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N"
+uuid: "f95f999b-de92-45f9-b7d9-649feb4b443b"
+cwe_ids:
+- "CWE-22"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-v3c2-39fm-jq4h"
+identifiers:
+- "GHSA-v3c2-39fm-jq4h"
+package_slug: "npm/openclaw"
+title: "Duplicate Advisory: OpenClaw: Gateway `operator.write` can reach admin-only
+  persisted `verboseLevel` via `chat.send` `/verbose`"
+description: "### Duplicate Advisory\nThis advisory has been withdrawn because it
+  is a duplicate of GHSA-5h2w-qmfp-ggp6. This link is maintained to preserve external
+  references.\n\n### Original Description\nOpenClaw before 2026.3.28 contains a privilege
+  escalation vulnerability in the chat.send endpoint that allows write-scoped gateway
+  callers to persist admin-only verboseLevel session overrides. Attackers can exploit
+  the /verbose parameter to bypass access controls and expose sensitive reasoning
+  or tool output intended to be restricted to administrators."
+date: "2026-05-06"
+pubdate: "2026-04-24"
+affected_range: "<2026.3.28"
+fixed_versions:
+- "2026.3.28"
+affected_versions: "All versions before 2026.3.28"
+not_impacted: "All versions starting from 2026.3.28"
+solution: "Upgrade to version 2026.3.28 or above."
+urls:
+- "https://github.com/advisories/GHSA-v3c2-39fm-jq4h"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-5h2w-qmfp-ggp6"
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-41344"
+- "https://www.vulncheck.com/advisories/openclaw-privilege-escalation-via-chat-send-verbose-parameter"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "7f71ec8b-c474-490f-ac3c-1a22d9bd1727"
+cwe_ids:
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

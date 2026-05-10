@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-8mc6-xjpr-h98x"
+identifiers:
+- "GHSA-8mc6-xjpr-h98x"
+package_slug: "go/github.com/lin-snow/ech0"
+title: "Ech0 has Server-Side Request Forgery (SSRF) via Connect Handler fetchPeerConnectInfo"
+description: "The `fetchPeerConnectInfo` function in `internal/service/connect/connect.go:214-239`
+  uses `httpUtil.SendRequest` (no SSRF protection) instead of `SendSafeRequest` (which
+  has `ValidatePublicHTTPURL` with private IP blocking). This allows authenticated
+  users to make the server request arbitrary URLs including internal/cloud metadata
+  endpoints."
+date: "2026-05-07"
+pubdate: "2026-05-07"
+affected_range: "<1.4.8-0.20260503040602-091d26d2d942"
+fixed_versions:
+- "1.4.8-0.20260503040602-091d26d2d942"
+affected_versions: "All versions before 1.4.8-0.20260503040602-091d26d2d942"
+not_impacted: "All versions starting from 1.4.8-0.20260503040602-091d26d2d942"
+solution: "Upgrade to version 1.4.8-0.20260503040602-091d26d2d942 or above."
+urls:
+- "https://github.com/advisories/GHSA-8mc6-xjpr-h98x"
+- "https://github.com/lin-snow/Ech0/security/advisories/GHSA-8mc6-xjpr-h98x"
+- "https://github.com/lin-snow/Ech0/commit/091d26d2d942df6df9f520328d2f9cf2592bbefc"
+- "https://github.com/lin-snow/Ech0"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N"
+uuid: "fa481004-e96d-4053-9b07-c4ffb5162325"
+cwe_ids:
+- "CWE-918"
+- "CWE-937"
+- "CWE-1035"

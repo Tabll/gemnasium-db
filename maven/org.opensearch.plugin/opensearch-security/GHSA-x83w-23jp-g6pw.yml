@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-x83w-23jp-g6pw"
+identifiers:
+- "GHSA-x83w-23jp-g6pw"
+package_slug: "maven/org.opensearch.plugin/opensearch-security"
+title: "OpenSearch Security plugin: DLS not applied on documents linked by has_child
+  or has_parent relation"
+description: "A flaw was identified in the OpenSearch Security plugin's document-level
+  security (DLS) implementation. DLS restrictions were not correctly applied to search
+  queries that use has_parent or has_child join relations. This could allow an authenticated
+  user to access document contents that should have been restricted by DLS rules."
+date: "2026-05-07"
+pubdate: "2026-05-07"
+affected_range: "[1.0.0,2.19.4.0),[3.0.0,3.2.0.0)"
+fixed_versions:
+- "2.19.4.0"
+- "3.2.0.0"
+affected_versions: "All versions starting from 1.0.0 before 2.19.4.0, all versions
+  starting from 3.0.0 before 3.2.0.0"
+not_impacted: "All versions before 1.0.0, all versions starting from 2.19.4.0 before
+  3.0.0, all versions starting from 3.2.0.0"
+solution: "Upgrade to versions 2.19.4.0, 3.2.0.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-x83w-23jp-g6pw"
+- "https://github.com/opensearch-project/security/security/advisories/GHSA-x83w-23jp-g6pw"
+- "https://github.com/opensearch-project/security"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N"
+uuid: "3307d5d7-6eca-4e0a-8904-8183a5c089d9"
+cwe_ids:
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

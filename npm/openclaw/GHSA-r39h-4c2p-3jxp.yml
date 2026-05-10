@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-r39h-4c2p-3jxp"
+identifiers:
+- "GHSA-r39h-4c2p-3jxp"
+package_slug: "npm/openclaw"
+title: "OpenClaw vulnerable to arbitrary code execution via attacker-controlled setup-api.js
+  loaded from cwd during env-key resolution"
+description: "OpenClaw's bundled plugin setup resolver could fall back to `process.cwd()`
+  while resolving provider setup metadata. If a user ran an OpenClaw command from
+  an attacker-controlled repository containing `extensions/<plugin>/setup-api.js`,
+  OpenClaw could load and execute that JavaScript during ordinary provider/model status
+  resolution."
+date: "2026-05-05"
+pubdate: "2026-05-05"
+affected_range: "<2026.4.23"
+fixed_versions:
+- "2026.4.23"
+affected_versions: "All versions before 2026.4.23"
+not_impacted: "All versions starting from 2026.4.23"
+solution: "Upgrade to version 2026.4.23 or above."
+urls:
+- "https://github.com/advisories/GHSA-r39h-4c2p-3jxp"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-r39h-4c2p-3jxp"
+- "https://github.com/openclaw/openclaw/commit/993781e6e6eaf50f033cfc3e3bf4f47059740707"
+- "https://github.com/openclaw/openclaw"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+uuid: "7f8f1476-0e6a-4193-bc54-16b06ec07287"
+cwe_ids:
+- "CWE-94"
+- "CWE-937"
+- "CWE-1035"

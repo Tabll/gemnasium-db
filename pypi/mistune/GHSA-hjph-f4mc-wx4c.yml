@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-hjph-f4mc-wx4c"
+identifiers:
+- "GHSA-hjph-f4mc-wx4c"
+package_slug: "pypi/mistune"
+title: "Duplicate Advisory: Mistune has a ReDoS in LINK_TITLE_RE that allows denial
+  of service via crafted Markdown input"
+description: "**Denial-of-Service (DoS)** vulnerability in the Mistune Markdown parser.
+  The issue occurs when processing specially crafted reference links, which can cause
+  excessive parsing and CPU consumption, leading to application hangs.\n\n**Function
+  affected:** parse_link_title() in helpers.py\n**Issue:** Malformed reference links
+  cause excessive backtracking and parsing loops.\n**Impact:** Remote attackers can
+  submit malicious Markdown to hang processes, causing service unavailability."
+date: "2026-05-06"
+pubdate: "2026-05-06"
+affected_range: ">=3.0.0a1,<3.2.1"
+fixed_versions:
+- "3.2.1"
+affected_versions: "All versions starting from 3.0.0a1 before 3.2.1"
+not_impacted: "All versions before 3.0.0a1, all versions starting from 3.2.1"
+solution: "Upgrade to version 3.2.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-hjph-f4mc-wx4c"
+- "https://github.com/lepture/mistune/security/advisories/GHSA-hjph-f4mc-wx4c"
+- "https://github.com/lepture/mistune"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+uuid: "6971a4eb-8bf7-48e0-a047-25b2f91e1f8e"
+cwe_ids:
+- "CWE-400"
+- "CWE-937"
+- "CWE-1035"

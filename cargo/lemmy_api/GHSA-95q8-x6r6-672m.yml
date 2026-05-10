@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-95q8-x6r6-672m"
+identifiers:
+- "GHSA-95q8-x6r6-672m"
+package_slug: "cargo/lemmy_api"
+title: "Lemmy may expose private community data through community, saved, liked, and
+  modlog API views"
+description: "Lemmy applies private-community checks in `PostView` and `CommentView`,
+  but several adjacent API views skip the accepted-follower filter. Bob, a registered
+  user who is not an accepted follower, can read private community `sidebar` and `summary`
+  fields. Alice, a former accepted follower, can still read saved and liked private
+  post bodies after she leaves. An unauthenticated visitor can read private community
+  metadata and removed private post names through the modlog."
+date: "2026-05-06"
+pubdate: "2026-05-06"
+affected_range: "<=0.19.1-rc.1"
+fixed_versions: []
+affected_versions: "All versions up to 0.19.1-rc.1"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-95q8-x6r6-672m"
+- "https://github.com/LemmyNet/lemmy/security/advisories/GHSA-95q8-x6r6-672m"
+- "https://github.com/LemmyNet/lemmy/commit/637151121a8e27b2b8c95e98d6f86966b31b4a6d"
+- "https://github.com/LemmyNet/lemmy"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+uuid: "a022c9e1-7d21-4b45-8354-e6550984031b"
+cwe_ids:
+- "CWE-862"
+- "CWE-937"
+- "CWE-1035"

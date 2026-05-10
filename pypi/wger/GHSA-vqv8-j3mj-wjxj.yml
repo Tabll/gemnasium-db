@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-vqv8-j3mj-wjxj"
+identifiers:
+- "GHSA-vqv8-j3mj-wjxj"
+package_slug: "pypi/wger"
+title: "wger: trainer_login open redirect - ?next= parameter not validated against
+  host"
+description: "The `trainer_login` view in wger redirects to `request.GET['next']`
+  directly via `HttpResponseRedirect()` without calling `url_has_allowed_host_and_scheme()`.
+  After the trainer successfully enters impersonation mode, their browser is redirected
+  to any attacker-controlled URL supplied in the `?next=` parameter, enabling Referer
+  exfiltration and phishing."
+date: "2026-05-06"
+pubdate: "2026-05-06"
+affected_range: "<2.6"
+fixed_versions:
+- "2.6"
+affected_versions: "All versions before 2.6"
+not_impacted: "All versions starting from 2.6"
+solution: "Upgrade to version 2.6 or above."
+urls:
+- "https://github.com/advisories/GHSA-vqv8-j3mj-wjxj"
+- "https://github.com/wger-project/wger/security/advisories/GHSA-vqv8-j3mj-wjxj"
+- "https://github.com/wger-project/wger"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N"
+uuid: "bfaa1548-d54f-4415-9872-cca2cbd06367"
+cwe_ids:
+- "CWE-601"
+- "CWE-937"
+- "CWE-1035"
