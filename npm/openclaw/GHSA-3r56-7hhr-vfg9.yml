@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-3r56-7hhr-vfg9"
+identifiers:
+- "GHSA-3r56-7hhr-vfg9"
+package_slug: "npm/openclaw"
+title: "Duplicate Advisory: OpenClaw: CDP /json/version WebSocket URL could pivot
+  to untrusted second-hop targets"
+description: "### Duplicate Advisory\nThis advisory has been withdrawn because it
+  is a duplicate of GHSA-f7fh-qg34-x2xh. This link is maintained to preserve external
+  references.\n\n### Original Description\nOpenClaw before 2026.4.5 contains a server-side
+  request forgery vulnerability in the CDP /json/version WebSocket endpoint that allows
+  attackers to pivot to untrusted second-hop targets. The webSocketDebuggerUrl response
+  field is not properly validated, enabling attackers to redirect connections to arbitrary
+  hosts and perform SSRF-style attacks."
+date: "2026-05-11"
+pubdate: "2026-05-06"
+affected_range: "<2026.4.5"
+fixed_versions:
+- "2026.4.5"
+affected_versions: "All versions before 2026.4.5"
+not_impacted: "All versions starting from 2026.4.5"
+solution: "Upgrade to version 2026.4.5 or above."
+urls:
+- "https://github.com/advisories/GHSA-3r56-7hhr-vfg9"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-f7fh-qg34-x2xh"
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-43576"
+- "https://github.com/openclaw/openclaw/commit/bc356cc8c2beaa747c71dd86cceab8f804699665"
+- "https://www.vulncheck.com/advisories/openclaw-second-hop-ssrf-via-cdp-json-version-websocket-url"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:N/VI:N/VA:N/SC:H/SI:N/SA:N"
+uuid: "57a48541-a89b-456c-b9c6-816fbc324d26"
+cwe_ids:
+- "CWE-601"
+- "CWE-937"
+- "CWE-1035"

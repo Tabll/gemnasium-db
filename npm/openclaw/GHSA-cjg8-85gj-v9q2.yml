@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-cjg8-85gj-v9q2"
+identifiers:
+- "GHSA-cjg8-85gj-v9q2"
+package_slug: "npm/openclaw"
+title: "Duplicate Advisory: OpenClaw: Feishu webhook and card-action validation now
+  fail closed"
+description: "### Duplicate Advisory\nThis advisory has been withdrawn because it
+  is a duplicate of GHSA-xh72-v6v9-mwhc. This link is maintained to preserve external
+  references.\n\n### Original Description\nOpenClaw before 2026.4.15 contains an authentication
+  bypass vulnerability in Feishu webhook and card-action validation that allows unauthenticated
+  requests to reach command dispatch. Missing encryptKey configuration and blank callback
+  tokens fail open instead of rejecting requests, enabling attackers to bypass signature
+  verification and replay protection to execute arbitrary commands."
+date: "2026-05-11"
+pubdate: "2026-05-06"
+affected_range: "<2026.4.15"
+fixed_versions:
+- "2026.4.15"
+affected_versions: "All versions before 2026.4.15"
+not_impacted: "All versions starting from 2026.4.15"
+solution: "Upgrade to version 2026.4.15 or above."
+urls:
+- "https://github.com/advisories/GHSA-cjg8-85gj-v9q2"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-xh72-v6v9-mwhc"
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-44109"
+- "https://github.com/openclaw/openclaw/commit/c8003f1b33ed2924be5f62131bd28742c5a41aae"
+- "https://www.vulncheck.com/advisories/openclaw-authentication-bypass-in-feishu-webhook-and-card-action-validation"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+uuid: "f3c57622-9e92-47d3-beea-c5066f787bca"
+cwe_ids:
+- "CWE-1188"
+- "CWE-937"
+- "CWE-1035"

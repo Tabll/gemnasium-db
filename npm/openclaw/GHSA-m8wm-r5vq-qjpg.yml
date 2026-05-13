@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-m8wm-r5vq-qjpg"
+identifiers:
+- "GHSA-m8wm-r5vq-qjpg"
+package_slug: "npm/openclaw"
+title: "Duplicate Advisory: OpenClaw: Gateway HTTP endpoints re-resolve bearer auth
+  after SecretRef rotation"
+description: "### Duplicate Advisory\nThis advisory has been withdrawn because it
+  is a duplicate of GHSA-xmxx-7p24-h892. This link is maintained to preserve external
+  references.\n\n### Original Description\nOpenClaw before 2026.4.15 captures resolved
+  bearer-auth configuration at startup, allowing revoked tokens to remain valid after
+  SecretRef rotation. Gateway HTTP and WebSocket handlers fail to re-resolve authentication
+  per-request, enabling attackers to use rotated-out bearer tokens for unauthorized
+  gateway access."
+date: "2026-05-11"
+pubdate: "2026-05-06"
+affected_range: "<2026.4.15"
+fixed_versions:
+- "2026.4.15"
+affected_versions: "All versions before 2026.4.15"
+not_impacted: "All versions starting from 2026.4.15"
+solution: "Upgrade to version 2026.4.15 or above."
+urls:
+- "https://github.com/advisories/GHSA-m8wm-r5vq-qjpg"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-xmxx-7p24-h892"
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-43585"
+- "https://github.com/openclaw/openclaw/commit/acd4e0a32f12e1ad85f3130f63b42443ce90f094"
+- "https://www.vulncheck.com/advisories/openclaw-bearer-token-validation-bypass-via-stale-secretref-resolution"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+uuid: "51fce0e4-8ae9-4571-b56d-59e074c1be6e"
+cwe_ids:
+- "CWE-672"
+- "CWE-937"
+- "CWE-1035"

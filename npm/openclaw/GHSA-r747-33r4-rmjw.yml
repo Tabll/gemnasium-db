@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-r747-33r4-rmjw"
+identifiers:
+- "GHSA-r747-33r4-rmjw"
+package_slug: "npm/openclaw"
+title: "Duplicate Advisory: OpenClaw: QQBot direct media upload skipped URL SSRF validation"
+description: "### Duplicate Advisory\nThis advisory has been withdrawn because it
+  is a duplicate of GHSA-c4qg-j8jg-42q5. This link is maintained to preserve external
+  references.\n\n### Original Description\nOpenClaw before 2026.4.20 contains a server-side
+  request forgery vulnerability in QQBot direct media upload that skips URL validation.
+  Attackers can bypass SSRF protections by sending crafted image URLs to uploadC2CMedia
+  and uploadGroupMedia endpoints to relay unintended requests."
+date: "2026-05-11"
+pubdate: "2026-05-06"
+affected_range: "<2026.4.20"
+fixed_versions:
+- "2026.4.20"
+affected_versions: "All versions before 2026.4.20"
+not_impacted: "All versions starting from 2026.4.20"
+solution: "Upgrade to version 2026.4.20 or above."
+urls:
+- "https://github.com/advisories/GHSA-r747-33r4-rmjw"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-c4qg-j8jg-42q5"
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-44117"
+- "https://github.com/openclaw/openclaw/commit/49db424c8001f2f419aad85f434894d8d85c1a09"
+- "https://www.vulncheck.com/advisories/openclaw-server-side-request-forgery-in-qqbot-direct-media-upload"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:N/SC:L/SI:N/SA:N"
+uuid: "963bf896-475d-4dbc-bfa0-3d4c0c6256ba"
+cwe_ids:
+- "CWE-918"
+- "CWE-937"
+- "CWE-1035"
