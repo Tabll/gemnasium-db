@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-q2qq-hmj6-3wpp"
+identifiers:
+- "GHSA-q2qq-hmj6-3wpp"
+package_slug: "cargo/hickory-proto"
+title: "hickory-proto vulnerable to CPU exhaustion during message encoding due to
+  O(n²) name compression"
+description: "During message encoding, `hickory-proto`'s `BinEncoder` stores pointers
+  to labels that are candidates for name compression in a `Vec<(usize, Vec<u8>)>`.
+  The name compression logic then searches for matches with a linear scan.\n\nA malicious
+  message with many records can both introduce many candidate labels, and invoke this
+  linear scan many times. This can amplify CPU exhaustion in DoS attacks.\n\nThis
+  is similar to [CVE-2024-8508](https://www.nlnetlabs.nl/downloads/unbound/CVE-2024-8508.txt)."
+date: "2026-05-07"
+pubdate: "2026-05-07"
+affected_range: ">=0.3.1 <0.26.1"
+fixed_versions:
+- "0.26.1"
+affected_versions: "All versions starting from 0.3.1 before 0.26.1"
+not_impacted: "All versions before 0.3.1, all versions starting from 0.26.1"
+solution: "Upgrade to version 0.26.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-q2qq-hmj6-3wpp"
+- "https://github.com/hickory-dns/hickory-dns/security/advisories/GHSA-q2qq-hmj6-3wpp"
+- "https://rustsec.org/advisories/RUSTSEC-2026-0119.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N"
+uuid: "3aa0d50b-30e3-4d43-b778-ab5433c4e885"
+cwe_ids:
+- "CWE-407"
+- "CWE-770"
+- "CWE-937"
+- "CWE-1035"

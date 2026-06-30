@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-gh9p-q46p-57g2"
+identifiers:
+- "CVE-2026-45008"
+- "GHSA-gh9p-q46p-57g2"
+package_slug: "packagist/phpmyfaq/phpmyfaq"
+title: "phpMyFAQ: Path Traversal in Client::deleteClientFolder enables arbitrary directory
+  deletion by non-super-admin admins"
+description: "This advisory has been withdrawn."
+date: "2026-06-09"
+pubdate: "2026-05-06"
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "This advisory has been withdrawn."
+not_impacted: "This advisory has been withdrawn."
+solution: "This advisory has been withdrawn."
+urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-45008"
+- "https://github.com/advisories/GHSA-gh9p-q46p-57g2"
+- "https://github.com/thorsten/phpMyFAQ/security/advisories/GHSA-gh9p-q46p-57g2"
+- "https://www.vulncheck.com/advisories/phpmyfaq-path-traversal-in-client-deleteclientfolder-via-url-parameter"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:H/A:H"
+uuid: "4d0aceed-56b1-4894-9ca7-a15fd5144f79"
+cwe_ids:
+- "CWE-22"
+- "CWE-937"
+- "CWE-1035"

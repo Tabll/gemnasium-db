@@ -1,0 +1,21 @@
+---
+identifier: "GMS-2026-396"
+identifiers:
+- "GMS-2026-396"
+package_slug: "npm/@squawk/weather"
+title: "@squawk/weather contains malware after npm account takeover"
+description: "On May 19th 2026, a new supply chain attack linked to the Mini Shai-Hulud campaign was identified. This package contains malicious code published through a compromised npm maintainer account. The malicious software is part of a coordinated high-volume publish wave targeting popular data visualization and charting ecosystems. It is recommended that all credentials be rotated, npm cache is cleared, the node_modules directory is removed, and all dependencies be rolled back to previous known-good versions."
+date: "2026-05-19"
+pubdate: "2026-05-19"
+affected_range: "=0.5.10 || =0.5.6 || =0.5.7 || =0.5.8 || =0.5.9"
+fixed_versions: []
+affected_versions: "Version =0.5.10, Version =0.5.6, Version =0.5.7, Version =0.5.8, Version =0.5.9"
+not_impacted: "All versions not =0.5.10 or =0.5.6 or =0.5.7 or =0.5.8 or =0.5.9"
+solution: "Unfortunately, there is no solution yet."
+urls:
+- "https://socket.dev/blog/antv-packages-compromised"
+- "https://safedep.io/mini-shai-hulud-strikes-again-314-npm-packages-compromised/"
+uuid: "08775a36-b2be-44fd-89e1-12ff9ed236f9"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H"
+cwe_ids:
+- "CWE-506"

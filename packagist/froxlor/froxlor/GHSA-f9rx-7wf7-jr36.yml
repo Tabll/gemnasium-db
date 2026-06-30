@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-f9rx-7wf7-jr36"
+identifiers:
+- "CVE-2026-52793"
+- "GHSA-f9rx-7wf7-jr36"
+package_slug: "packagist/froxlor/froxlor"
+title: "Froxlor's API Authentication bypasses 2FA Authentication"
+description: "Froxlor's API authentication (`FroxlorRPC::validateAuth`) does not enforce
+  Two-Factor Authentication. When a user (admin or customer) enables 2FA on their
+  account, the web UI correctly requires a TOTP code after password verification.
+  However, the API accepts requests authenticated with only an API key and secret
+  — no TOTP challenge is issued, checked, or required.\n\nAn attacker who obtains
+  a leaked API key+secret for a 2FA-protected account has full access to all API operations
+  without providing a second factor."
+date: "2026-06-09"
+pubdate: "2026-06-03"
+affected_range: "<2.3.7"
+fixed_versions:
+- "2.3.7"
+affected_versions: "All versions before 2.3.7"
+not_impacted: "All versions starting from 2.3.7"
+solution: "Upgrade to version 2.3.7 or above."
+urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-52793"
+- "https://github.com/advisories/GHSA-f9rx-7wf7-jr36"
+- "https://github.com/froxlor/froxlor/security/advisories/GHSA-f9rx-7wf7-jr36"
+- "https://github.com/advisories/GHSA-34qg-65m4-f23m"
+- "https://github.com/froxlor/froxlor/releases/tag/2.3.7"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N"
+uuid: "3c0316f3-2d36-4ba7-b2de-588456e1605f"
+cwe_ids:
+- "CWE-287"
+- "CWE-937"
+- "CWE-1035"

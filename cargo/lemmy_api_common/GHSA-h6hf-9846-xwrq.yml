@@ -14,7 +14,7 @@ description: "Lemmy fetches metadata for user-supplied post URLs and, under the 
   server-side and store a local thumbnail that can then be served back to users."
 date: "2026-04-24"
 pubdate: "2026-04-24"
-affected_range: "<0.19.18"
+affected_range: "<0"
 fixed_versions:
 - "0.19.18"
 affected_versions: "All versions before 0.19.18"

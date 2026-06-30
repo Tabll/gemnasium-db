@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-92vj-hp7m-gwcj"
+identifiers:
+- "GHSA-92vj-hp7m-gwcj"
+package_slug: "nuget/Nerdbank.MessagePack"
+title: "Nerdbank.MessagePack has Inefficient CPU Computation"
+description: "Applications that call `OptionalConverters.WithExpandoObjectConverter`
+  and deserialize untrusted data are open to a vulnerability by which an attacker
+  can exploit a `O(n²)` algorithm to burn an inordinate amount of CPU effort by adding
+  a great many properties to an `ExpandoObject`, whose `Add` method is implemented
+  as an `O(n)` algorithm."
+date: "2026-05-29"
+pubdate: "2026-05-29"
+affected_range: "[,1.2.4)"
+fixed_versions:
+- "1.2.4"
+affected_versions: "All versions before 1.2.4"
+not_impacted: "All versions starting from 1.2.4"
+solution: "Upgrade to version 1.2.4 or above."
+urls:
+- "https://github.com/advisories/GHSA-92vj-hp7m-gwcj"
+- "https://github.com/AArnott/Nerdbank.MessagePack/security/advisories/GHSA-92vj-hp7m-gwcj"
+- "https://github.com/AArnott/Nerdbank.MessagePack/commit/c5a239e4f20c38548de44c4dd2a782efd5e2547c"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+uuid: "53c436dc-36e7-48bc-8a4d-91e2b1b48f5a"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"
+- "CWE-1176"

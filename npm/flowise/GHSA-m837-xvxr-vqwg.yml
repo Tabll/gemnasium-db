@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-m837-xvxr-vqwg"
+identifiers:
+- "GHSA-m837-xvxr-vqwg"
+package_slug: "npm/flowise"
+title: "Flowise: Hardcoded CORS wildcard on TTS endpoint enables cross-origin credential
+  abuse from any webpage"
+description: "The TTS generation endpoint sets `Access-Control-Allow-Origin: *` as
+  a hardcoded response header, independent of the server's CORS configuration. This
+  enables any webpage to make cross-origin requests to generate speech using stored
+  credentials."
+date: "2026-05-20"
+pubdate: "2026-05-20"
+affected_range: "<3.1.2"
+fixed_versions:
+- "3.1.2"
+affected_versions: "All versions before 3.1.2"
+not_impacted: "All versions starting from 3.1.2"
+solution: "Upgrade to version 3.1.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-m837-xvxr-vqwg"
+- "https://github.com/FlowiseAI/Flowise/security/advisories/GHSA-m837-xvxr-vqwg"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "c5b01678-fc46-419f-b8b3-ac33098d9250"
+cwe_ids:
+- "CWE-937"
+- "CWE-942"
+- "CWE-1035"

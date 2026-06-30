@@ -12,7 +12,7 @@ description: "The FFI trampolines behind `SslContextBuilder::set_psk_client_call
   overflows and other unintended consequences."
 date: "2026-04-22"
 pubdate: "2026-04-22"
-affected_range: ">=0.9.24 <0.10.78"
+affected_range: "<0"
 fixed_versions:
 - "0.10.78"
 affected_versions: "All versions starting from 0.9.24 before 0.10.78"

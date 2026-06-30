@@ -1,0 +1,38 @@
+---
+identifier: "GHSA-wxg7-w2v3-w38g"
+identifiers:
+- "GHSA-wxg7-w2v3-w38g"
+package_slug: "go/github.com/zitadel/zitadel"
+title: " ZITADEL: Missing Token Lifecyle Validation (`exp` and `iat`) in JWT IdP Provider"
+description: "Two closely related token lifecycle validation vulnerabilities were
+  discovered in ZITADEL's external JWT Identity Provider (IdP) implementation.\n\nSpecifically,
+  within the validation pipeline:\n\n* **Missing Expiration (`exp`) Enforcement:**
+  If an incoming JWT omits the `exp` claim entirely, the expiration block is silently
+  skipped rather than rejected. The token is treated as valid forever.\n* **Missing
+  Issued-At (`iat`) Enforcement:** ZITADEL enforces a 1-hour freshness window (`maxAge`)
+  via the token's issue time. However, this safety check is guarded by a presence
+  condition. If a token omits the `iat` claim, the freshness check is entirely bypassed,
+  allowing arbitrarily old tokens to pass.\n\nPer the OIDC Core 1.0 specification,
+  identity token validation pipelines must strictly handle and enforce session expiration.
+  ZITADEL's silent acceptance of tokens missing these temporal constraints compromises
+  session integrity."
+date: "2026-06-18"
+pubdate: "2026-06-18"
+affected_range: "<1.80.0-v2.20.0.20260615122908-fad02c6d9f45"
+fixed_versions:
+- "1.80.0-v2.20.0.20260615122908-fad02c6d9f45"
+affected_versions: "All versions before 1.80.0-v2.20.0.20260615122908-fad02c6d9f45"
+not_impacted: "All versions starting from 1.80.0-v2.20.0.20260615122908-fad02c6d9f45"
+solution: "Upgrade to version 1.80.0-v2.20.0.20260615122908-fad02c6d9f45 or above."
+urls:
+- "https://github.com/advisories/GHSA-wxg7-w2v3-w38g"
+- "https://github.com/zitadel/zitadel/security/advisories/GHSA-wxg7-w2v3-w38g"
+- "https://github.com/zitadel/zitadel/commit/fad02c6d9f4587956f830d4536c64a9a94baa7ac"
+- "https://github.com/zitadel/zitadel/releases/tag/v3.4.12"
+- "https://github.com/zitadel/zitadel/releases/tag/v4.15.2"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:N"
+uuid: "88c3539c-bd98-4133-b70c-c73c5d24f696"
+cwe_ids:
+- "CWE-613"
+- "CWE-937"
+- "CWE-1035"

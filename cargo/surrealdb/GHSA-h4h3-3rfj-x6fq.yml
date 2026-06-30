@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-h4h3-3rfj-x6fq"
+identifiers:
+- "GHSA-h4h3-3rfj-x6fq"
+package_slug: "cargo/surrealdb"
+title: "SurrealDB: Indexed ORDER BY leaks the value ordering of a SELECT-restricted
+  field"
+description: "A field can be hidden from a user with a field-level SELECT permission
+  (`DEFINE FIELD code ON secret PERMISSIONS FOR select WHERE owner = $auth.id`). When
+  that field is indexed, a record user who cannot read it could still recover the
+  relative ordering of its values across every record by issuing `ORDER BY <field>`:
+  the field came back `null` as intended, but the rows were returned in the hidden
+  values' true sorted order.\n\nTo satisfy the sort, the planner selects the field's
+  index and walks it in value order; the field-level permission is applied later,
+  when the row is projected, so the value is nulled but the row order already encodes
+  it. The guard that withholds restricted fields from the `WHERE` path was never applied
+  to `ORDER BY`."
+date: "2026-06-19"
+pubdate: "2026-06-19"
+affected_range: ">=3.0.0 <3.1.5"
+fixed_versions:
+- "3.1.5"
+affected_versions: "All versions starting from 3.0.0 before 3.1.5"
+not_impacted: "All versions before 3.0.0, all versions starting from 3.1.5"
+solution: "Upgrade to version 3.1.5 or above."
+urls:
+- "https://github.com/advisories/GHSA-h4h3-3rfj-x6fq"
+- "https://github.com/surrealdb/surrealdb/security/advisories/GHSA-h4h3-3rfj-x6fq"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N"
+uuid: "b28b2504-b1b3-48e1-93a6-08c0b5ae2d13"
+cwe_ids:
+- "CWE-200"
+- "CWE-937"
+- "CWE-1035"

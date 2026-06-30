@@ -8,7 +8,7 @@ title: "OpenClaw: config.get redaction bypass through sourceConfig and runtimeCo
 description: "config.get redaction bypass through sourceConfig and runtimeConfig aliases."
 date: "2026-04-17"
 pubdate: "2026-04-17"
-affected_range: "<2026.4.14"
+affected_range: "<0"
 fixed_versions:
 - "2026.4.14"
 affected_versions: "All versions before 2026.4.14"

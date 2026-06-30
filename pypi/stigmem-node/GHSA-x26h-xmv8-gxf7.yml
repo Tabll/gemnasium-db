@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-x26h-xmv8-gxf7"
+identifiers:
+- "GHSA-x26h-xmv8-gxf7"
+package_slug: "pypi/stigmem-node"
+title: "stigmem-node: RTBF tombstones are mis-attributed and suppress reads tenant-blind
+  (cross-tenant BOLA)"
+description: "On a multi-tenant stigmem node, RTBF (right-to-be-forgotten) tombstones
+  were mis-scoped two ways. (1) `issue_tombstone` defaulted the tenant to `\"default\"`
+  instead of the caller's tenant, so tombstones could be written to the wrong tenant.
+  (2) The read-suppression path — `_get_tombstone_filter` (`routes/facts/common.py`)
+  and the `_tombstone_scope_cache` (`lifecycle/tombstones.py`) — had no `tenant_id`
+  predicate, so tombstone suppression was applied tenant-blind across fact queries
+  and provenance. Reached via `/v1/tombstones` and the fact query/provenance read
+  paths."
+date: "2026-06-19"
+pubdate: "2026-06-19"
+affected_range: "<0.9.0-a.12"
+fixed_versions:
+- "0.9.0-a.12"
+affected_versions: "All versions before 0.9.0-a.12"
+not_impacted: "All versions starting from 0.9.0-a.12"
+solution: "Upgrade to version 0.9.0-a.12 or above."
+urls:
+- "https://github.com/advisories/GHSA-x26h-xmv8-gxf7"
+- "https://github.com/eidetic-labs/stigmem/security/advisories/GHSA-x26h-xmv8-gxf7"
+- "https://github.com/eidetic-labs/stigmem/pull/728"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:H/A:L"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:H/VA:L/SC:N/SI:N/SA:N"
+uuid: "772e62ae-3f80-4f8b-b1e5-69a7628f8ada"
+cwe_ids:
+- "CWE-639"
+- "CWE-937"
+- "CWE-1035"

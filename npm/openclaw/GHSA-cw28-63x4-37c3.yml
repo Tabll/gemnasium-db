@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-cw28-63x4-37c3"
+identifiers:
+- "GHSA-cw28-63x4-37c3"
+package_slug: "npm/openclaw"
+title: "Duplicate Advisory: OpenClaw: Voice-call Plivo replay mutates in-process callback
+  origin before replay rejection"
+description: "This advisory has been withdrawn."
+date: "2026-05-04"
+pubdate: "2026-04-24"
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "This advisory has been withdrawn."
+not_impacted: "This advisory has been withdrawn."
+solution: "This advisory has been withdrawn."
+urls:
+- "https://github.com/advisories/GHSA-cw28-63x4-37c3"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-89r3-6x4j-v7wf"
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-41337"
+- "https://github.com/openclaw/openclaw/commit/efe9183f9d2fd5e01c8068fa01f4a07a58a63c0b"
+- "https://www.vulncheck.com/advisories/openclaw-callback-origin-mutation-in-plivo-voice-call-replay"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N"
+uuid: "eb794d1f-18e0-4de3-992e-3e275a1be4e2"
+cwe_ids:
+- "CWE-367"
+- "CWE-937"
+- "CWE-1035"

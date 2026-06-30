@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-fq3w-p4fg-mw73"
+identifiers:
+- "GHSA-fq3w-p4fg-mw73"
+package_slug: "cargo/fixurjavainstall"
+title: "fixurjavainstall: Previous Fuji versions can accidentally wipe `/usr/share/man/man8`"
+description: "Affects: Anyone who generates the UNIX man pages in Fuji <= `0.8.0`
+  build with the `dev` crate feature.\nConsequences: `/usr/share/man/man8` may be
+  entirely removed & re-created without any of the previous entries."
+date: "2026-06-25"
+pubdate: "2026-06-25"
+affected_range: "<0.8.1"
+fixed_versions:
+- "0.8.1"
+affected_versions: "All versions before 0.8.1"
+not_impacted: "All versions starting from 0.8.1"
+solution: "Upgrade to version 0.8.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-fq3w-p4fg-mw73"
+- "https://github.com/EpicVon2468/fixurjavainstall/security/advisories/GHSA-fq3w-p4fg-mw73"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+cvss_v4: "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N"
+uuid: "dd3cb28b-9ff5-4ae3-ae76-c0aca68d0272"
+cwe_ids:
+- "CWE-489"
+- "CWE-937"
+- "CWE-1035"

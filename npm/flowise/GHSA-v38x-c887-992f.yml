@@ -12,7 +12,7 @@ description: "ZDI-CAN-29412: FlowiseAI Flowise Airtable_Agent Code Injection Rem
   Platform tested:  Ubuntu 25.10\n\n---"
 date: "2026-04-18"
 pubdate: "2026-04-18"
-affected_range: "<3.1.0"
+affected_range: "<0"
 fixed_versions:
 - "3.1.0"
 affected_versions: "All versions before 3.1.0"

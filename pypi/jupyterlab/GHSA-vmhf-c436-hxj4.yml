@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-vmhf-c436-hxj4"
+identifiers:
+- "GHSA-vmhf-c436-hxj4"
+package_slug: "pypi/jupyterlab"
+title: "JupyterLab: Stored XSS in extension manager through package metadata unsanitized
+  URI protocol"
+description: "A malicious PyPI package can place a `javascript:` URL in its `[project.urls]`
+  metadata. JupyterLab's Extension Manager renders this as the extension's home-page
+  link without validating the protocol, so a user who clicks the extension name executes
+  attacker-controlled JavaScript in the JupyterLab origin."
+date: "2026-06-19"
+pubdate: "2026-06-19"
+affected_range: "<4.5.9"
+fixed_versions:
+- "4.5.9"
+affected_versions: "All versions before 4.5.9"
+not_impacted: "All versions starting from 4.5.9"
+solution: "Upgrade to version 4.5.9 or above."
+urls:
+- "https://github.com/advisories/GHSA-vmhf-c436-hxj4"
+- "https://github.com/jupyterlab/jupyterlab/security/advisories/GHSA-vmhf-c436-hxj4"
+- "https://github.com/jupyterlab/jupyterlab/commit/4e61e07d0a91145b53fbf96ac74b0387f6bc51f6"
+- "https://github.com/jupyterlab/jupyterlab/commit/d5d961f6e10a6442dddbf94d9a976b3897055a12"
+- "https://github.com/jupyterlab/jupyterlab/releases/tag/v4.5.9"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:A/VC:N/VI:N/VA:N/SC:L/SI:L/SA:N"
+uuid: "01567c7b-7158-4c75-a809-2ae51e1cb355"
+cwe_ids:
+- "CWE-84"
+- "CWE-937"
+- "CWE-1035"

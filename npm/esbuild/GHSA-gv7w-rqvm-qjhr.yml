@@ -1,0 +1,26 @@
+---
+identifier: "GHSA-gv7w-rqvm-qjhr"
+identifiers:
+- "GHSA-gv7w-rqvm-qjhr"
+package_slug: "npm/esbuild"
+title: "esbuild: Missing binary integrity verification in Deno module enables remote
+  code execution via NPM_CONFIG_REGISTRY"
+description: "This advisory has been withdrawn."
+date: "2026-06-12"
+pubdate: "2026-06-12"
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "This advisory has been withdrawn."
+not_impacted: "This advisory has been withdrawn."
+solution: "This advisory has been withdrawn."
+urls:
+- "https://github.com/advisories/GHSA-gv7w-rqvm-qjhr"
+- "https://github.com/evanw/esbuild/security/advisories/GHSA-gv7w-rqvm-qjhr"
+- "https://github.com/evanw/esbuild/releases/tag/v0.28.1"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+uuid: "26e5ccd0-f08a-4f96-9497-683595b8e1c5"
+cwe_ids:
+- "CWE-426"
+- "CWE-494"
+- "CWE-937"
+- "CWE-1035"

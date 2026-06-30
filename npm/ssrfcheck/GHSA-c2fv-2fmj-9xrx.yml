@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-c2fv-2fmj-9xrx"
+identifiers:
+- "GHSA-c2fv-2fmj-9xrx"
+package_slug: "npm/ssrfcheck"
+title: "Duplicate Advisory: ssrfcheck has Incomplete IP Address Deny List that leads
+  to Server-Side Request Forgery Vulnerability"
+description: "This advisory has been withdrawn."
+date: "2026-05-05"
+pubdate: "2025-07-28"
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "This advisory has been withdrawn."
+not_impacted: "This advisory has been withdrawn."
+solution: "This advisory has been withdrawn."
+urls:
+- "https://github.com/advisories/GHSA-c2fv-2fmj-9xrx"
+- "https://nvd.nist.gov/vuln/detail/CVE-2025-8267"
+- "https://github.com/felippe-regazio/ssrfcheck/issues/5"
+- "https://github.com/felippe-regazio/ssrfcheck/commit/9507b49fd764f2a1a1d1e3b9ee577b7545e6950e"
+- "https://gist.github.com/lirantal/2976840639df824cb3abe60d13c65e04"
+- "https://github.com/felippe-regazio/ssrfcheck"
+- "https://security.snyk.io/vuln/SNYK-JS-SSRFCHECK-9510756"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "ea37f857-27e5-4ac8-bc29-38611f6318ba"
+cwe_ids:
+- "CWE-918"
+- "CWE-937"
+- "CWE-1035"

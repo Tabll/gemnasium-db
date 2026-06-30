@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-ww5p-j6cj-6mqq"
+identifiers:
+- "GHSA-ww5p-j6cj-6mqq"
+package_slug: "go/github.com/nezhahq/nezha"
+title: "Nezha Dashboard: DDNS and Notification credential exposure via unredacted
+  list API"
+description: "The `GET /api/v1/ddns` and `GET /api/v1/notification` endpoints return
+  full resource objects including plaintext third-party API credentials — Cloudflare
+  API tokens, TencentCloud SecretKeys, Slack/Discord/Telegram webhook URLs with embedded
+  bot tokens, and Authorization header values — without any field-level redaction.
+  Any authenticated admin who calls these endpoints receives every stored credential
+  in the system in a single API response. A compromised admin session or leaked PAT
+  with `nezha:ddns:read` or `nezha:notification:read` scope exposes all third-party
+  integration secrets."
+date: "2026-06-26"
+pubdate: "2026-06-26"
+affected_range: "<2.2.5"
+fixed_versions:
+- "2.2.5"
+affected_versions: "All versions before 2.2.5"
+not_impacted: "All versions starting from 2.2.5"
+solution: "Upgrade to version 2.2.5 or above."
+urls:
+- "https://github.com/advisories/GHSA-ww5p-j6cj-6mqq"
+- "https://github.com/nezhahq/nezha/security/advisories/GHSA-ww5p-j6cj-6mqq"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N"
+uuid: "d8ab8be8-5b2d-45b6-a229-fe39e749ef74"
+cwe_ids:
+- "CWE-200"
+- "CWE-937"
+- "CWE-1035"

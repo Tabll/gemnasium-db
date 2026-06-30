@@ -11,7 +11,7 @@ description: "A pre-authentication denial-of-service vulnerability exists in the
   malformed packet, requiring no credentials."
 date: "2026-04-24"
 pubdate: "2026-04-24"
-affected_range: "<0.60.1"
+affected_range: "<0"
 fixed_versions:
 - "0.60.1"
 affected_versions: "All versions before 0.60.1"

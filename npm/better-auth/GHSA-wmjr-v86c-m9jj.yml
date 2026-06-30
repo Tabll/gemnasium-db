@@ -11,7 +11,7 @@ description: "A vulnerability was identified in the multi-session plugin for Bet
   without verifying the cookie signature. Because cookie values are not validated
   with getSignedCookie (or any equivalent check), an attacker can supply a forged
   _multi-* cookie to trigger deletion of arbitrary session tokens."
-date: "2025-12-09"
+date: "2026-05-08"
 pubdate: "2025-11-26"
 affected_range: ">=1.3.34 <1.4.0"
 fixed_versions:

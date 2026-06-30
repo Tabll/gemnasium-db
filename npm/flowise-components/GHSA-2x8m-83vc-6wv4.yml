@@ -11,7 +11,7 @@ description: "The core security wrappers (secureAxiosRequest and secureFetch) in
   deny list."
 date: "2026-04-18"
 pubdate: "2026-04-16"
-affected_range: "<3.1.0"
+affected_range: "<0"
 fixed_versions:
 - "3.1.0"
 affected_versions: "All versions before 3.1.0"

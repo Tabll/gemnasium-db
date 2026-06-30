@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-fp55-jw48-c537"
+identifiers:
+- "GHSA-fp55-jw48-c537"
+package_slug: "cargo/astral-tokio-tar"
+title: "astral-tokio-tar is Vulnerable to PAX Header Desynchronization"
+description: "Versions of astral-tokio-tar prior to 0.6.1 contain a PAX header interpretation
+  bug that allows manipulated entries to be made selectively visible or invisible
+  during extraction with astral-tokio-tar versus other tar implementations. An attacker
+  could use this differential to smuggle unexpected files onto a victim's filesystem.\n\nSee
+  GHSA-j5gw-2vrg-8fgx for a similar desynchronization bug in astral-tokio-tar."
+date: "2026-05-06"
+pubdate: "2026-05-06"
+affected_range: "<0.6.1"
+fixed_versions:
+- "0.6.1"
+affected_versions: "All versions before 0.6.1"
+not_impacted: "All versions starting from 0.6.1"
+solution: "Upgrade to version 0.6.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-fp55-jw48-c537"
+- "https://github.com/astral-sh/tokio-tar/security/advisories/GHSA-fp55-jw48-c537"
+- "https://rustsec.org/advisories/RUSTSEC-2026-0112.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N"
+uuid: "5bcbab8e-e590-4fcd-a269-b215295c32f5"
+cwe_ids:
+- "CWE-20"
+- "CWE-843"
+- "CWE-937"
+- "CWE-1035"

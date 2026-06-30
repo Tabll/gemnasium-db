@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-85q9-7467-r53q"
+identifiers:
+- "GHSA-85q9-7467-r53q"
+package_slug: "pypi/inventree"
+title: "XSS Vulnerability in Markdown Editor"
+description: "InvenTree uses [EasyMDE](https://github.com/Ionaru/easy-markdown-editor)
+  for displaying markdown text in various places (e.g. for the various \"notes\" fields
+  associated with various models).\n\nBy default, EasyMDE does not sanitize input
+  data, and it is possible for malicious code to be injected into the markdown editor,
+  and executed in the users browser.\n\n*Note: This malicious data must be first uploaded
+  to the database by an authorized user, so the risk here is limited to trusted users*"
+date: "2026-04-24"
+pubdate: "2022-06-17"
+affected_range: "<0.7.3"
+fixed_versions:
+- "0.7.3"
+affected_versions: "All versions before 0.7.3"
+not_impacted: "All versions starting from 0.7.3"
+solution: "Upgrade to version 0.7.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-85q9-7467-r53q"
+- "https://github.com/inventree/InvenTree/security/advisories/GHSA-85q9-7467-r53q"
+uuid: "c0b05e63-19fd-478a-bbdc-e40c4f8d71cf"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

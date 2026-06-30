@@ -9,7 +9,7 @@ description: "Ech0 allows any authenticated user to read historical system logs 
   subscribe to live log streams because the dashboard log endpoints validate only
   that a JWT is present and valid, but do not require an administrator role or privileged
   scope."
-date: "2026-04-10"
+date: "2026-06-02"
 pubdate: "2026-04-10"
 affected_range: "<4.3.5"
 fixed_versions:
@@ -20,7 +20,6 @@ solution: "Upgrade to version 4.3.5 or above."
 urls:
 - "https://github.com/advisories/GHSA-cp79-9mwr-wr49"
 - "https://github.com/lin-snow/Ech0/security/advisories/GHSA-cp79-9mwr-wr49"
-- "https://github.com/lin-snow/Ech0"
 - "https://github.com/lin-snow/Ech0/releases/tag/v4.3.5"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
 uuid: "8ee3ccd3-5598-4557-8f2f-e132d405c7d4"

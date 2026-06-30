@@ -1,0 +1,40 @@
+---
+identifier: "GHSA-vmf9-xx9w-86wx"
+identifiers:
+- "GHSA-vmf9-xx9w-86wx"
+package_slug: "pypi/praisonai"
+title: "PraisonAI ToolsMCPServer legacy SSE transport accepts attacker Host/Origin
+  and exposes registered tools"
+description: "`praisonaiagents.mcp.ToolsMCPServer.run_sse()` builds a Starlette MCP\nHTTP+SSE
+  server around `mcp.server.sse.SseServerTransport`. The server exposes\n`/sse` and
+  `/messages/`, but it does not validate `Origin`, does not validate\n`Host`, and
+  does not require any authentication.\n\nThis is reachable through supported PraisonAI
+  code paths that wrap configured\nMCP server tools and re-expose them over legacy
+  SSE:\n\n- `praisonai mcp run <name> --transport sse`\n- `praisonai serve mcp --name
+  <name> --transport sse`\n- direct use of `ToolsMCPServer(...).run_sse(...)` or\n`launch_tools_mcp_server(...,
+  transport=\"sse\")`\n\nA malicious website can use DNS rebinding against a local
+  or internal\nPraisonAI SSE MCP server and send requests with attacker-controlled
+  `Host` and\n`Origin` headers. The local PoV binds only to `127.0.0.1`, sends an
+  attacker\n`Host` and `Origin`, lists the registered tool, and invokes it successfully.\n\nThe
+  same attacker `Origin` is rejected by PraisonAI's current Streamable HTTP\ntransport
+  with HTTP 403. The vulnerability is therefore a sibling transport\nguard gap in
+  the legacy SSE wrapper, not intended behavior."
+date: "2026-06-18"
+pubdate: "2026-06-18"
+affected_range: ">=3.10.0,<4.6.59"
+fixed_versions:
+- "4.6.59"
+affected_versions: "All versions starting from 3.10.0 before 4.6.59"
+not_impacted: "All versions before 3.10.0, all versions starting from 4.6.59"
+solution: "Upgrade to version 4.6.59 or above."
+urls:
+- "https://github.com/advisories/GHSA-vmf9-xx9w-86wx"
+- "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-vmf9-xx9w-86wx"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:H/A:H"
+uuid: "58fdf6cd-a19f-4d00-a7d1-349ffc12388a"
+cwe_ids:
+- "CWE-306"
+- "CWE-346"
+- "CWE-862"
+- "CWE-937"
+- "CWE-1035"

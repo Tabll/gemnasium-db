@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-rpj2-4hq8-938g"
+identifiers:
+- "GHSA-rpj2-4hq8-938g"
+package_slug: "pypi/vcrpy"
+title: "VCR.py: Arbitrary code execution via unsafe YAML deserialization of cassette
+  files"
+description: "vcrpy deserializes YAML cassette files with PyYAML's object-constructing
+  loader (`yaml.CLoader` / `yaml.Loader`) instead of the safe loader (`yaml.CSafeLoader`
+  / `yaml.SafeLoader`). A cassette containing a `!!python/object/apply:` (or similar)
+  tag therefore executes arbitrary Python code the moment the cassette is loaded —
+  including through the normal `VCR().use_cassette()` path, before any HTTP interaction
+  is replayed.\n\nThis is **not** limited to environments lacking the libYAML C extension.
+  `CLoader` uses the C parser but PyYAML's full Python *constructor*, so Python\nobject
+  tags execute under `CLoader` exactly as under the pure-Python `Loader`. Confirmed
+  against vcrpy 8.1.1 + PyYAML 6.0.3 with `CLoader` active."
+date: "2026-06-19"
+pubdate: "2026-06-19"
+affected_range: "<8.2.1"
+fixed_versions:
+- "8.2.1"
+affected_versions: "All versions before 8.2.1"
+not_impacted: "All versions starting from 8.2.1"
+solution: "Upgrade to version 8.2.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-rpj2-4hq8-938g"
+- "https://github.com/kevin1024/vcrpy/security/advisories/GHSA-rpj2-4hq8-938g"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+uuid: "566af5e4-23bc-48bb-9fd0-29683556041a"
+cwe_ids:
+- "CWE-502"
+- "CWE-937"
+- "CWE-1035"

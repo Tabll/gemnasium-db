@@ -1,0 +1,39 @@
+---
+identifier: "GHSA-9j7f-3r4p-pwh6"
+identifiers:
+- "GHSA-9j7f-3r4p-pwh6"
+package_slug: "pypi/nono-py"
+title: "nono-py vulnerable to authorization bypass / policy confusion"
+description: "The python API made a restrictive-looking configuration unsafe by default.
+  A caller could configure only reverse-\nproxy credential routes, put the child in
+  CapabilitySet.proxy_only, and reasonably expect network access to be limited\nto
+  those routes. Instead, because empty allowed_hosts meant allow-all inside nono-proxy,
+  the child could use the local\nproxy as a transparent CONNECT tunnel to non-route
+  nominated hosts (not including metadata endpoints).\n\nThat is an authorization
+  bypass / policy confusion issue:\n\n- Intended policy: route-only proxy access.\n-
+  Actual policy: route-only plus arbitrary transparent CONNECT.\n- Boundary crossed:
+  sandboxed child gains broader outbound network reach than the Python policy appears
+  to grant.\n- Impact depends on environment, but it can allow exfiltration or access
+  to unintended internet/internal services\nthrough the unsandboxed proxy.\n\nThis
+  should be classified as medium severity by default, potentially high if users rely
+  on route-only configs for strict egress\ncontrol around untrusted code or sensitive
+  credentials. The fix is security-relevant because it changes the default from\nimplicit
+  allow-all to explicit opt-in."
+date: "2026-06-26"
+pubdate: "2026-06-26"
+affected_range: "<0.11.0"
+fixed_versions:
+- "0.11.0"
+affected_versions: "All versions before 0.11.0"
+not_impacted: "All versions starting from 0.11.0"
+solution: "Upgrade to version 0.11.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-9j7f-3r4p-pwh6"
+- "https://github.com/always-further/nono-py/security/advisories/GHSA-9j7f-3r4p-pwh6"
+- "https://github.com/nolabs-ai/nono-py/commit/163fca083a189967b882d1005bfba099fc9a9d63"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N"
+uuid: "f7b99925-5432-4e74-96de-04c7116bd9c5"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"
+- "CWE-1188"

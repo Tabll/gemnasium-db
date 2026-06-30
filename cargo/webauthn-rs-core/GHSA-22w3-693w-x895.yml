@@ -1,0 +1,36 @@
+---
+identifier: "GHSA-22w3-693w-x895"
+identifiers:
+- "GHSA-22w3-693w-x895"
+package_slug: "cargo/webauthn-rs-core"
+title: "webauthn-rs-core/webauthn-authenticator-rs: Origin validation mismatch possible
+  when subdomains are allowed"
+description: "`webauthn-rs-core` ([Relying Party][rp]) and `webauthn-authenticator-rs`
+  ([client][]) checked that [an `Origin` in `CollectedClientData`][origin] is valid
+  for [an RP ID][rpid] with [`str::ends_with()`][ends-with], [without checking for
+  a dot (`.`) before the RP ID when allowing subdomains][registerable-suffix].\n\nThis
+  check is flawed, and could allow requests from an attacker-controlled domain such
+  as `hermit-crab.example` to be accepted for the RP ID `crab.example` (assuming `.example`
+  was publicly-registerable TLD) when the RP allows authenticating from a subdomain
+  (disabled by default in `webauthn-rs-core` and `webauthn-rs`)."
+date: "2026-05-06"
+pubdate: "2026-05-06"
+affected_range: "<0.5.5||>=0.6.0-dev <0.6.1-dev"
+fixed_versions:
+- "0.5.5"
+- "0.6.1-dev"
+affected_versions: "All versions before 0.5.5, all versions starting from 0.6.0-dev
+  before 0.6.1-dev"
+not_impacted: "All versions starting from 0.5.5 before 0.6.0-dev, all versions starting
+  from 0.6.1-dev"
+solution: "Upgrade to versions 0.5.5, 0.6.1-dev or above."
+urls:
+- "https://github.com/advisories/GHSA-22w3-693w-x895"
+- "https://github.com/kanidm/webauthn-rs/security/advisories/GHSA-22w3-693w-x895"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:P/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "6cb20638-340a-4e6e-9ce9-d3e033847528"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"
+- "CWE-1289"

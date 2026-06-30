@@ -18,7 +18,6 @@ urls:
 - "https://github.com/openclaw/openclaw/security/advisories/GHSA-g375-h3v6-4873"
 - "https://github.com/openclaw/openclaw/pull/64376"
 - "https://github.com/openclaw/openclaw/commit/19a2e9ddb5a8a494abcba812bb11f51075026a27"
-- "https://github.com/openclaw/openclaw"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N"
 cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N"
 uuid: "0704175d-5ae9-4762-a53e-559188a9e0ab"

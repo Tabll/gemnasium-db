@@ -1,0 +1,25 @@
+---
+identifier: "GHSA-74r7-3mjm-jc5v"
+identifiers:
+- "GHSA-74r7-3mjm-jc5v"
+package_slug: "pypi/edumfa"
+title: "eduMFA: Unauthenticated Failcounter Increment on Resolver Tokens via /validate/check"
+description: "If the resolver parameter is passed, but the user does not exist, all
+  failcounters of tokens in that resolver will be increased."
+date: "2026-05-18"
+pubdate: "2026-05-18"
+affected_range: "<2.9.1"
+fixed_versions:
+- "2.9.1"
+affected_versions: "All versions before 2.9.1"
+not_impacted: "All versions starting from 2.9.1"
+solution: "Upgrade to version 2.9.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-74r7-3mjm-jc5v"
+- "https://github.com/eduMFA/eduMFA/security/advisories/GHSA-74r7-3mjm-jc5v"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+uuid: "6fb38937-e5bd-42a5-b6c8-904d453e1bcb"
+cwe_ids:
+- "CWE-20"
+- "CWE-937"
+- "CWE-1035"

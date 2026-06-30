@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-qcxq-75wr-5cm8"
+identifiers:
+- "GHSA-qcxq-75wr-5cm8"
+package_slug: "cargo/ldap3_proto"
+title: "ldap3_proto has LDAP Filter stack exhaustion"
+description: "LDAP queries are not validated for depth, which can cause the parser
+  (both PEG and ASN) to exhaust the stack. This *may* cause a denial of service in
+  applications that process queries."
+date: "2026-05-06"
+pubdate: "2026-05-06"
+affected_range: "<0.7.1"
+fixed_versions:
+- "0.7.1"
+affected_versions: "All versions before 0.7.1"
+not_impacted: "All versions starting from 0.7.1"
+solution: "Upgrade to version 0.7.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-qcxq-75wr-5cm8"
+- "https://github.com/kanidm/ldap3/security/advisories/GHSA-qcxq-75wr-5cm8"
+- "https://github.com/advisories/GHSA-r5fr-9gmv-jggh"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+uuid: "58e29c4b-fc75-4684-bfde-3ef4389b8d90"
+cwe_ids:
+- "CWE-770"
+- "CWE-937"
+- "CWE-1035"

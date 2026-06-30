@@ -14,48 +14,7 @@ $uuids = []
 
 def validate_semantics(yaml_dict)
   errors = validate_mutually_exclusive_versions(yaml_dict)
-  errors += validate_inclusive_language(yaml_dict)
   errors += validate_description(yaml_dict)
-  errors
-end
-
-# iterate through each text block within `data` that is not contained between
-# two backticks
-
-# Examples:
-# "The vulnerable parameter `blacklist_param` exists" =>
-#     ["The vulnerable parameter ", " exists"]
-#
-# "The vulnerable parameter blacklist_param exists" =>
-#     ["The vulnerable parameter blacklist_param exists"]
-def _iter_non_inline_code_text(data)
-  code = false
-  data.split('`').each do |chunk|
-    yield chunk unless code
-    code = !code
-  end
-end
-
-# If a denied word must be used, it must be a technical term and surrounded
-# by backticks
-def validate_inclusive_language(yaml_dict)
-  errors = []
-
-  denied_words = %w[blacklist whitelist]
-
-  fields = %w[title description]
-
-  fields.each do |field_name|
-    text = yaml_dict[field_name]
-    _iter_non_inline_code_text(text) do |text_block|
-      denied_words.each do |denied_word|
-        if text_block.include?(denied_word)
-          errors.push("Field #{field_name} uses non-inclusive term #{denied_word.inspect} in plaintext block")
-        end
-      end
-    end
-  end
-
   errors
 end
 

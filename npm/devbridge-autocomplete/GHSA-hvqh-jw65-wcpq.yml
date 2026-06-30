@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-hvqh-jw65-wcpq"
+identifiers:
+- "GHSA-hvqh-jw65-wcpq"
+package_slug: "npm/devbridge-autocomplete"
+title: "devbridge-autocomplete has XSS in its default formatters: formatGroup and
+  formatResult fail to escape HTML in untrusted inputs"
+description: "The default `formatGroup` and `formatResult` functions in `devbridge-autocomplete`
+  concatenate values into HTML without escaping, allowing XSS when an attacker controls
+  (or can taint) the suggestion data source."
+date: "2026-06-22"
+pubdate: "2026-06-22"
+affected_range: "<2.0.1"
+fixed_versions:
+- "2.0.1"
+affected_versions: "All versions before 2.0.1"
+not_impacted: "All versions starting from 2.0.1"
+solution: "Upgrade to version 2.0.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-hvqh-jw65-wcpq"
+- "https://github.com/devbridge/jQuery-Autocomplete/security/advisories/GHSA-hvqh-jw65-wcpq"
+- "https://github.com/devbridge/jQuery-Autocomplete/commit/63ff096ff5b77a90aac7fb5dad7c86e538a59ce0"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N"
+uuid: "6d2298f9-849a-4629-ae34-20e3dd836ac4"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

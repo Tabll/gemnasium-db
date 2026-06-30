@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-jv2j-mqmw-xvv5"
+identifiers:
+- "GHSA-jv2j-mqmw-xvv5"
+package_slug: "cargo/surrealdb"
+title: "SurrealDB: Denial of Service via deep operator chains"
+description: "An authenticated user could crash a SurrealDB server with a single query
+  containing a long chain of operators.\n\nSuch a query — for example `RETURN 1 +
+  1 + 1 + ...` with tens of thousands of terms — is parsed into an expression tree
+  one level deep per operator. Because the chain is flat and the pratt parser appends
+  to it iteratively, the configured query- and object-recursion limits never fire,
+  so the tree grows unbounded with the length of the query.\n\nThe root cause: the
+  over-deep tree is later walked recursively, one call per node, when it is dropped,
+  formatted, or lowered for execution — overflowing the thread stack and aborting
+  the process."
+date: "2026-06-19"
+pubdate: "2026-06-19"
+affected_range: ">=3.0.0 <3.1.5"
+fixed_versions:
+- "3.1.5"
+affected_versions: "All versions starting from 3.0.0 before 3.1.5"
+not_impacted: "All versions before 3.0.0, all versions starting from 3.1.5"
+solution: "Upgrade to version 3.1.5 or above."
+urls:
+- "https://github.com/advisories/GHSA-jv2j-mqmw-xvv5"
+- "https://github.com/surrealdb/surrealdb/security/advisories/GHSA-jv2j-mqmw-xvv5"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+uuid: "79be83c4-6247-4897-bbba-e5494b60b304"
+cwe_ids:
+- "CWE-674"
+- "CWE-937"
+- "CWE-1035"

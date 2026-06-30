@@ -7,7 +7,7 @@ title: "OpenClaw: screen_record outPath bypassed workspace-only filesystem guard
 description: "screen_record outPath bypassed workspace-only filesystem guard."
 date: "2026-04-17"
 pubdate: "2026-04-17"
-affected_range: "<2026.4.10"
+affected_range: "<0"
 fixed_versions:
 - "2026.4.10"
 affected_versions: "All versions before 2026.4.10"

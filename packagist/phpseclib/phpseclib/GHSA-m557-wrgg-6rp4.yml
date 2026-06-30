@@ -1,0 +1,39 @@
+---
+identifier: "GHSA-m557-wrgg-6rp4"
+identifiers:
+- "GHSA-m557-wrgg-6rp4"
+package_slug: "packagist/phpseclib/phpseclib"
+title: "phpseclib: X.509 certificate validation sends attacker-controlled outbound
+  requests (server-side request forgery) via Authority Information Access"
+description: "When an application validates an untrusted X.509 certificate with phpseclib,
+  **X509::validateSignature()** reads a URL out of that certificate's Authority Information
+  Access (AIA) extension and connects to it. Attacker who supplies certificate fully
+  controls host, port, and path of that connection. URL fetching is enabled by default,
+  and no destination is blocked. An unauthenticated attacker can therefore make a
+  validating server open connections to internal hosts and ports it should never reach,
+  for example loopback **127.0.0.1**, cloud metadata address **169.254.169.254**,
+  and internal-only services. This is a server-side request forgery (SSRF) caused
+  by an insecure default. It is reproducible on current released LTS 3.0.53 and on
+  4.0 development line."
+date: "2026-06-16"
+pubdate: "2026-06-16"
+affected_range: ">=0.1.1 <1.0.30||>=2.0.0 <2.0.55||>=3.0.0 <3.0.54"
+fixed_versions:
+- "1.0.30"
+- "2.0.55"
+- "3.0.54"
+affected_versions: "All versions starting from 0.1.1 before 1.0.30, all versions starting
+  from 2.0.0 before 2.0.55, all versions starting from 3.0.0 before 3.0.54"
+not_impacted: "All versions before 0.1.1, all versions starting from 1.0.30 before
+  2.0.0, all versions starting from 2.0.55 before 3.0.0, all versions starting from
+  3.0.54"
+solution: "Upgrade to versions 1.0.30, 2.0.55, 3.0.54 or above."
+urls:
+- "https://github.com/advisories/GHSA-m557-wrgg-6rp4"
+- "https://github.com/phpseclib/phpseclib/security/advisories/GHSA-m557-wrgg-6rp4"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:N/A:N"
+uuid: "a3d1425d-a0dd-4ef4-b621-935d2a60b651"
+cwe_ids:
+- "CWE-918"
+- "CWE-937"
+- "CWE-1035"

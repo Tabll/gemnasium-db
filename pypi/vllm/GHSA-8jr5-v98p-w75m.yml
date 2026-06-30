@@ -1,0 +1,37 @@
+---
+identifier: "GHSA-8jr5-v98p-w75m"
+identifiers:
+- "CVE-2026-12491"
+- "GHSA-8jr5-v98p-w75m"
+package_slug: "pypi/vllm"
+title: "vLLM: image EXIF Rotation & PNG tRNS Transparency Not Normalized, Causing
+  Mismatch Between Model Input and Expectations"
+description: "Issue 1: EXIF orientation not normalized → The image orientation processed
+  by the model differs from how humans view it, introducing interpretation bias.\n\nIssue
+  2: PNG tRNS not explicitly flattened before converting to RGB → After conversion,
+  transparent/semi-transparent pixels are rendered unexpectedly, making otherwise
+  subtle overlay elements visible and distorting the input content. (This attack is
+  similar to AlphaDog: RGBA handling is already correct in vLLM, but since tRNS permits
+  RGB images, the correct processing path isn’t taken.)\n\nIssue 3 : Pillow only loads
+  the first frame when loading APNG or GIF files.\n\n---"
+date: "2026-06-18"
+pubdate: "2026-06-17"
+affected_range: ">=0.11.0,<=0.23.0"
+fixed_versions: []
+affected_versions: "All versions starting from 0.11.0 up to 0.23.0"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-12491"
+- "https://github.com/advisories/GHSA-8jr5-v98p-w75m"
+- "https://github.com/vllm-project/vllm/security/advisories/GHSA-8jr5-v98p-w75m"
+- "https://github.com/vllm-project/vllm/pull/44974"
+- "https://github.com/vllm-project/vllm/commit/cf1c90672404548aa3bc51f92c4745576a65ee26"
+- "https://access.redhat.com/security/cve/CVE-2026-12491"
+- "https://bugzilla.redhat.com/show_bug.cgi?id=2489786"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:L"
+uuid: "ae054c43-d912-42ef-aecb-db4e9e2a988d"
+cwe_ids:
+- "CWE-436"
+- "CWE-937"
+- "CWE-1035"

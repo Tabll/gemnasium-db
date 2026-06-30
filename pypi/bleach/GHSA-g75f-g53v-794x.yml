@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-g75f-g53v-794x"
+identifiers:
+- "GHSA-g75f-g53v-794x"
+package_slug: "pypi/bleach"
+title: "Bleach linkify(parse_email=True) CPU exhaustion via unbounded email regex
+  scanning"
+description: "Bleach 6.3.0 exposes a documented email-linkification path through `bleach.linkify(...,
+  parse_email=True)`. The implementation scans attacker-controlled text with `EMAIL_RE.finditer()`
+  over the full character token and has no length, timeout, or linear prefilter before
+  applying the dot-atom email regex. A non-email payload around 30 KB causes multi-second
+  CPU consumption per request/call, creating a direct availability risk for applications
+  that enable email linkification on user-submitted text."
+date: "2026-06-16"
+pubdate: "2026-06-16"
+affected_range: "==6.3.0"
+fixed_versions: []
+affected_versions: "Version 6.3.0"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-g75f-g53v-794x"
+- "https://github.com/mozilla/bleach/security/advisories/GHSA-g75f-g53v-794x"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L"
+uuid: "b4dcae72-baa6-4574-a574-5895097580fb"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"
+- "CWE-1333"

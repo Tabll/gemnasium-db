@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-h5rg-8p7f-47g2"
+identifiers:
+- "GHSA-h5rg-8p7f-47g2"
+package_slug: "cargo/surrealdb"
+title: "SurrealDB: SSRF via JWKS URL — Redirect Following in JWT Key Fetch"
+description: "SurrealDB fetches the JWKS document for a JWT or record access method
+  using a bare `reqwest` client that follows HTTP redirects by default. The network
+  capability check in `core/src/iam/jwks.rs` (`check_capabilities_url`) is applied
+  only to the originally configured URL; redirect targets are not re-validated. An
+  `--allow-net`-permitted JWKS host that returns a `3xx Location` can therefore redirect
+  the request to an address the allowlist was meant to block, resulting in a server-side
+  request forgery (SSRF). The protected `HttpClient` used by `http::*` functions re-checks
+  every redirect hop and was hardened in 3.1.0, but the JWKS fetcher uses its own
+  client and was not covered."
+date: "2026-06-19"
+pubdate: "2026-06-19"
+affected_range: "<3.1.5"
+fixed_versions:
+- "3.1.5"
+affected_versions: "All versions before 3.1.5"
+not_impacted: "All versions starting from 3.1.5"
+solution: "Upgrade to version 3.1.5 or above."
+urls:
+- "https://github.com/advisories/GHSA-h5rg-8p7f-47g2"
+- "https://github.com/surrealdb/surrealdb/security/advisories/GHSA-h5rg-8p7f-47g2"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:L/I:N/A:N"
+uuid: "9bdb259f-07a6-4928-8ebe-3917ccc218d9"
+cwe_ids:
+- "CWE-918"
+- "CWE-937"
+- "CWE-1035"

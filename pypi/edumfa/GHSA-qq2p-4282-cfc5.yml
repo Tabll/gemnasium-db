@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-qq2p-4282-cfc5"
+identifiers:
+- "GHSA-qq2p-4282-cfc5"
+package_slug: "pypi/edumfa"
+title: "eduMFA: Incorrect InnoDB snapshot isolation possibly allows token reusage"
+description: "For deployments using MySQL or MariaDB < 11.6.2 (or newer with innodb_snapshot_isolation=off)
+  reusage of token values might be possible due to faulty transaction isolation inside
+  the database. Exploiting this requires racing this transaction.\nAffected are all
+  tokentypes whose values are only supposed to be used once, for example TOTP, HOTP
+  and likely also WebAuthN."
+date: "2026-05-18"
+pubdate: "2026-05-18"
+affected_range: "<2.9.1"
+fixed_versions:
+- "2.9.1"
+affected_versions: "All versions before 2.9.1"
+not_impacted: "All versions starting from 2.9.1"
+solution: "Upgrade to version 2.9.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-qq2p-4282-cfc5"
+- "https://github.com/eduMFA/eduMFA/security/advisories/GHSA-qq2p-4282-cfc5"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:C/C:H/I:L/A:L"
+cvss_v4: "CVSS:4.0/AV:N/AC:H/AT:P/PR:L/UI:P/VC:H/VI:L/VA:L/SC:H/SI:L/SA:L"
+uuid: "e0d6d68e-94ea-4238-b171-0570acdcb7a6"
+cwe_ids:
+- "CWE-285"
+- "CWE-937"
+- "CWE-1035"

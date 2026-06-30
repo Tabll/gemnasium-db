@@ -7,7 +7,7 @@ title: "OpenClaw: Heartbeat owner downgrade missed untrusted webhook wake events
 description: "Heartbeat owner downgrade missed untrusted webhook wake events."
 date: "2026-04-17"
 pubdate: "2026-04-17"
-affected_range: ">=2026.4.7 <2026.4.14"
+affected_range: "<0"
 fixed_versions:
 - "2026.4.14"
 affected_versions: "All versions starting from 2026.4.7 before 2026.4.14"

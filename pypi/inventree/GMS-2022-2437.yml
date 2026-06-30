@@ -10,7 +10,7 @@ description: "Improper Neutralization of Special Elements used in an OS Command 
   Command Injection') in inventree."
 date: "2022-06-17"
 pubdate: "2022-06-17"
-affected_range: "<0.7.3"
+affected_range: "<0"
 fixed_versions:
 - "0.7.3"
 affected_versions: "All versions before 0.7.3"

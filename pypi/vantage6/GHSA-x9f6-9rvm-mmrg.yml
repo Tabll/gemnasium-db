@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-x9f6-9rvm-mmrg"
+identifiers:
+- "CVE-2026-54533"
+- "GHSA-x9f6-9rvm-mmrg"
+package_slug: "pypi/vantage6"
+title: "vantage6 node has an Improper Access Control issue"
+description: "Malicious algorithms can potentially access other algorithms input and
+  output files."
+date: "2026-06-17"
+pubdate: "2026-06-05"
+affected_range: "<5.0.0"
+fixed_versions:
+- "5.0.0"
+affected_versions: "All versions before 5.0.0"
+not_impacted: "All versions starting from 5.0.0"
+solution: "Upgrade to version 5.0.0 or above."
+urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-54533"
+- "https://github.com/advisories/GHSA-x9f6-9rvm-mmrg"
+- "https://github.com/vantage6/vantage6/security/advisories/GHSA-x9f6-9rvm-mmrg"
+- "https://github.com/vantage6/vantage6/issues/1932"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "ddf4399f-ec7e-4700-a099-52ed42fb811b"
+cwe_ids:
+- "CWE-284"
+- "CWE-937"
+- "CWE-1035"

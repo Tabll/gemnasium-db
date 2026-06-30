@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-v3c2-39fm-jq4h"
+identifiers:
+- "GHSA-v3c2-39fm-jq4h"
+package_slug: "npm/openclaw"
+title: "Duplicate Advisory: OpenClaw: Gateway `operator.write` can reach admin-only
+  persisted `verboseLevel` via `chat.send` `/verbose`"
+description: "This advisory has been withdrawn."
+date: "2026-05-06"
+pubdate: "2026-04-24"
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "This advisory has been withdrawn."
+not_impacted: "This advisory has been withdrawn."
+solution: "This advisory has been withdrawn."
+urls:
+- "https://github.com/advisories/GHSA-v3c2-39fm-jq4h"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-5h2w-qmfp-ggp6"
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-41344"
+- "https://www.vulncheck.com/advisories/openclaw-privilege-escalation-via-chat-send-verbose-parameter"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "7f71ec8b-c474-490f-ac3c-1a22d9bd1727"
+cwe_ids:
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

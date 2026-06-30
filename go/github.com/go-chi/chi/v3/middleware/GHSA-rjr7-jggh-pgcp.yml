@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-rjr7-jggh-pgcp"
+identifiers:
+- "GHSA-rjr7-jggh-pgcp"
+package_slug: "go/github.com/go-chi/chi/v3/middleware"
+title: "chi's RealIP Middleware allows IP spoofing via unvalidated X-Forwarded-For
+  header"
+description: "realip middleware in go-chi/chi trusts headers like x-forwarded-for
+  without checking them, so attackers can fake their ip and bypass rate limits or
+  access controls"
+date: "2026-06-25"
+pubdate: "2026-06-25"
+affected_range: "<=3.3.5"
+fixed_versions: []
+affected_versions: "All versions up to 3.3.5"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-rjr7-jggh-pgcp"
+- "https://github.com/go-chi/chi/security/advisories/GHSA-rjr7-jggh-pgcp"
+- "https://github.com/go-chi/chi/releases/tag/v5.3.0"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N"
+uuid: "fdb3b252-b958-4530-9e59-e60a7e69892f"
+cwe_ids:
+- "CWE-290"
+- "CWE-348"
+- "CWE-937"
+- "CWE-1035"

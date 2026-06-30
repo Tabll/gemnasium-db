@@ -1,0 +1,39 @@
+---
+identifier: "GHSA-x8cv-xmq7-p8xp"
+identifiers:
+- "GHSA-x8cv-xmq7-p8xp"
+package_slug: "pypi/praisonaiagents"
+title: "PraisonAI AgentTeam.launch exposes unauthenticated remote agent listing and
+  invocation endpoints"
+description: "PraisonAI's documented Python `AgentTeam.launch()` / `Agents.launch()`
+  HTTP server starts externally reachable agent invocation endpoints without any authentication
+  enforcement.\n\nThe current implementation registers `GET /{path}/list`, `POST /{path}`,
+  and `POST /{path}/{agent_id}` routes. The POST routes directly call `agent.chat(...)`.
+  Requests with no `Authorization` header are accepted, and requests with an obviously
+  wrong bearer token are also accepted. The default Python API bind host for `Agents.launch()`
+  is `0.0.0.0`, and official documentation shows `host=\"0.0.0.0\"` for remote access.\n\nThis
+  is a sibling/incomplete-fix variant of PraisonAI's prior unauthenticated API server
+  and call server advisory family. Nearby server surfaces were hardened to require
+  tokens, fail closed, or bind locally by default, but the `AgentTeam.launch()` FastAPI
+  path still exposes unauthenticated agent execution on current upstream main and
+  the latest release.\n\nThis report is scoped to the Python `AgentTeam.launch()`
+  / `Agents.launch()` route-registration path. It does not require adjudicating whether
+  the separate `praisonai serve agents --api-key` CLI path is correctly enforced."
+date: "2026-06-18"
+pubdate: "2026-06-18"
+affected_range: "<1.6.59"
+fixed_versions:
+- "1.6.59"
+affected_versions: "All versions before 1.6.59"
+not_impacted: "All versions starting from 1.6.59"
+solution: "Upgrade to version 1.6.59 or above."
+urls:
+- "https://github.com/advisories/GHSA-x8cv-xmq7-p8xp"
+- "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-x8cv-xmq7-p8xp"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+uuid: "ee5fe7a5-b600-4198-bc82-7570b23f6085"
+cwe_ids:
+- "CWE-306"
+- "CWE-862"
+- "CWE-937"
+- "CWE-1035"

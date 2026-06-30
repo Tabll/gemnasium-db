@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-fr4h-3cph-29xv"
+identifiers:
+- "GHSA-fr4h-3cph-29xv"
+package_slug: "npm/pnpm"
+title: "pnpm: Hoisted install imports lockfile alias outside node_modules"
+description: "The hoisted dependency alias issue tracked as GHSA-fr4h-3cph-29xv /
+  CAND-PNPM-059 has been addressed in both pnpm and pacquet.\n\nA crafted lockfile
+  alias could be joined directly under a hoisted `node_modules` directory. Traversal
+  aliases could escape that directory, while reserved aliases such as `.bin` or `.pnpm`
+  could overwrite pnpm-owned layout. This patch validates package-name semantics and
+  path containment before graph insertion or filesystem work."
+date: "2026-06-27"
+pubdate: "2026-06-27"
+affected_range: "<10.34.4||>=11.0.0 <11.7.0"
+fixed_versions:
+- "10.34.4"
+- "11.7.0"
+affected_versions: "All versions before 10.34.4, all versions starting from 11.0.0
+  before 11.7.0"
+not_impacted: "All versions starting from 10.34.4 before 11.0.0, all versions starting
+  from 11.7.0"
+solution: "Upgrade to versions 10.34.4, 11.7.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-fr4h-3cph-29xv"
+- "https://github.com/pnpm/pnpm/security/advisories/GHSA-fr4h-3cph-29xv"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:L"
+uuid: "29cecba6-076c-4dd3-a927-3da6c5f0e5e3"
+cwe_ids:
+- "CWE-22"
+- "CWE-73"
+- "CWE-937"
+- "CWE-1035"

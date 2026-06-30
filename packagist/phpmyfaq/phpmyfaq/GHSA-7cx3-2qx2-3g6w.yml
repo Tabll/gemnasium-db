@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-7cx3-2qx2-3g6w"
+identifiers:
+- "GHSA-7cx3-2qx2-3g6w"
+package_slug: "packagist/phpmyfaq/phpmyfaq"
+title: "phpMyFAQ's Missing Authorization on Tag Deletion Allows Any Authenticated
+  User to Delete Tags"
+description: "The `TagController::delete()` endpoint at `DELETE /admin/api/content/tags/{tagId}`
+  only verifies that the user is logged in (`userIsAuthenticated()`), but does not
+  check any permission. Any authenticated user — including regular non-admin frontend
+  users — can delete any tag by ID. This contrasts with `TagController::update()`
+  and `TagController::search()`, which both enforce the `FAQ_EDIT` permission."
+date: "2026-05-06"
+pubdate: "2026-05-06"
+affected_range: "<4.1.2"
+fixed_versions:
+- "4.1.2"
+affected_versions: "All versions before 4.1.2"
+not_impacted: "All versions starting from 4.1.2"
+solution: "Upgrade to version 4.1.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-7cx3-2qx2-3g6w"
+- "https://github.com/thorsten/phpMyFAQ/security/advisories/GHSA-7cx3-2qx2-3g6w"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:L"
+uuid: "317ea41f-7e73-4ebe-9d8a-b20ff98b930a"
+cwe_ids:
+- "CWE-862"
+- "CWE-937"
+- "CWE-1035"

@@ -33,7 +33,7 @@ description: "**Vulnerability Type: CWE-89: Improper Neutralization of Special E
   />\n\nFigure 6: Example payload dropping the tables"
 date: "2026-04-23"
 pubdate: "2026-04-23"
-affected_range: ">=6.7.0 <7.0.0-rc3"
+affected_range: "<0"
 fixed_versions:
 - "7.0.0-rc3"
 affected_versions: "All versions starting from 6.7.0 before 7.0.0-rc3"

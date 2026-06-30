@@ -7,7 +7,7 @@ title: "Kopia: Storage connection credentials written to console on \"repository
   CLI command with JSON output"
 description: "_What kind of vulnerability is it? Who is impacted?_\n\nStorage credentials
   are written to the console."
-date: "2024-04-10"
+date: "2026-04-27"
 pubdate: "2024-04-10"
 affected_range: "<0.16.0"
 fixed_versions:
@@ -20,7 +20,6 @@ urls:
 - "https://github.com/kopia/kopia/security/advisories/GHSA-j5vm-7qcc-2wwg"
 - "https://github.com/kopia/kopia/pull/3589"
 - "https://github.com/kopia/kopia/commit/1d6f852cd6534f4bea978cbdc85c583803d79f77"
-- "https://github.com/kopia/kopia"
 cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:H/UI:R/S:U/C:L/I:N/A:N"
 uuid: "21ba1c76-729a-4d3a-833e-65ad1a48c40b"
 cwe_ids:

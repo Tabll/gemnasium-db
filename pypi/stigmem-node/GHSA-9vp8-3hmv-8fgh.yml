@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-9vp8-3hmv-8fgh"
+identifiers:
+- "GHSA-9vp8-3hmv-8fgh"
+package_slug: "pypi/stigmem-node"
+title: "stigmem-node's federation peer registration lacked explicit out-of-band approval"
+description: "Federation peer registration accepted peer key material during registration
+  without a separate administrator approval step based on an out-of-band fingerprint
+  check. Impacted deployments are nodes that accept federation peer registration across
+  a network where initial registration could be intercepted or misdirected."
+date: "2026-05-29"
+pubdate: "2026-05-29"
+affected_range: "<0.9.0-a.2"
+fixed_versions:
+- "0.9.0-a.2"
+affected_versions: "All versions before 0.9.0-a.2"
+not_impacted: "All versions starting from 0.9.0-a.2"
+solution: "Upgrade to version 0.9.0-a.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-9vp8-3hmv-8fgh"
+- "https://github.com/eidetic-labs/stigmem/security/advisories/GHSA-9vp8-3hmv-8fgh"
+- "https://github.com/eidetic-labs/stigmem/blob/v0.9.0a2/CHANGELOG.md#L14-L35"
+- "https://github.com/eidetic-labs/stigmem/blob/v0.9.0a2/SECURITY.md"
+- "https://github.com/eidetic-labs/stigmem/releases/tag/v0.9.0a2"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N"
+uuid: "3e458ebc-8472-448f-a236-1fe16c0d33a5"
+cwe_ids:
+- "CWE-295"
+- "CWE-345"
+- "CWE-937"
+- "CWE-1035"

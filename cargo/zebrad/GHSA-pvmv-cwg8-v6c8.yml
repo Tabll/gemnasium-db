@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-pvmv-cwg8-v6c8"
+identifiers:
+- "GHSA-pvmv-cwg8-v6c8"
+package_slug: "cargo/zebrad"
+title: "Zebra v4.4.0 still accepts V5 SIGHASH_SINGLE without a corresponding output"
+description: "Zebra failed to enforce a ZIP-244 consensus rule for V5 transparent
+  transactions: when an input is signed with `SIGHASH_SINGLE` and there is no transparent
+  output at the same index as that input, validation must fail. Zebra instead asked
+  the underlying sighash library to compute a digest, and that library produced a
+  digest over an empty output set rather than failing. An attacker could craft a V5
+  transaction with more transparent inputs than outputs that Zebra accepts but `zcashd`
+  rejects, creating a consensus split between Zebra and `zcashd` nodes."
+date: "2026-05-08"
+pubdate: "2026-05-08"
+affected_range: "<4.4.1"
+fixed_versions:
+- "4.4.1"
+affected_versions: "All versions before 4.4.1"
+not_impacted: "All versions starting from 4.4.1"
+solution: "Upgrade to version 4.4.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-pvmv-cwg8-v6c8"
+- "https://github.com/ZcashFoundation/zebra/security/advisories/GHSA-pvmv-cwg8-v6c8"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:H/SC:N/SI:H/SA:H"
+uuid: "6a8e57d8-8650-4b90-a2ae-8fa27a6451ef"
+cwe_ids:
+- "CWE-354"
+- "CWE-573"
+- "CWE-937"
+- "CWE-1035"

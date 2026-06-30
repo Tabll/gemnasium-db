@@ -13,7 +13,7 @@ description: "SQL Injection can occur when:\n\n1. The non-default simple protoco
   outside of a contrived scenario."
 date: "2026-04-22"
 pubdate: "2026-04-22"
-affected_range: "<=3.6.2"
+affected_range: "<0"
 fixed_versions: []
 affected_versions: "All versions up to 3.6.2"
 not_impacted: ""

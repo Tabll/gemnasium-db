@@ -12,7 +12,7 @@ description: "The text-to-speech generation endpoint (`POST /api/v1/text-to-spee
   speech."
 date: "2026-04-17"
 pubdate: "2026-04-17"
-affected_range: "<3.1.0"
+affected_range: "<0"
 fixed_versions:
 - "3.1.0"
 affected_versions: "All versions before 3.1.0"

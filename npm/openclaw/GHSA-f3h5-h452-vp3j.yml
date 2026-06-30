@@ -17,7 +17,6 @@ urls:
 - "https://github.com/advisories/GHSA-f3h5-h452-vp3j"
 - "https://github.com/openclaw/openclaw/security/advisories/GHSA-f3h5-h452-vp3j"
 - "https://github.com/openclaw/openclaw/pull/63553"
-- "https://github.com/openclaw/openclaw"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N"
 cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
 uuid: "e3570f4b-693b-44db-828b-2a68ce97a7c4"

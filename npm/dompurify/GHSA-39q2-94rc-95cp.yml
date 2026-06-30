@@ -21,7 +21,6 @@ solution: "Upgrade to version 3.4.0 or above."
 urls:
 - "https://github.com/advisories/GHSA-39q2-94rc-95cp"
 - "https://github.com/cure53/DOMPurify/security/advisories/GHSA-39q2-94rc-95cp"
-- "https://github.com/cure53/DOMPurify"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N"
 cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N"
 uuid: "272077ae-e9d2-4f53-8a95-cb17d9940c31"

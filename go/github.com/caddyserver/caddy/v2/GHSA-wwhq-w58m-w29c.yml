@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-wwhq-w58m-w29c"
+identifiers:
+- "GHSA-wwhq-w58m-w29c"
+package_slug: "go/github.com/caddyserver/caddy/v2"
+title: "Caddy CVE-2026-30852 Fix Bypass"
+description: "- **Environment variable disclosure:** `{env.AWS_SECRET_ACCESS_KEY}`,
+  `{env.DATABASE_URL}`, etc.\n- **Arbitrary file read (up to 1MB):** `{file./etc/passwd}`,
+  `{file./proc/self/environ}`\n- **System info:** `{system.hostname}`, `{system.os}`\n-
+  **Full env dump in one request:** `{file./proc/self/environ}`"
+date: "2026-05-19"
+pubdate: "2026-05-19"
+affected_range: ">=2.11.0 <=2.11.2"
+fixed_versions: []
+affected_versions: "All versions starting from 2.11.0 up to 2.11.2"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-wwhq-w58m-w29c"
+- "https://github.com/caddyserver/caddy/security/advisories/GHSA-wwhq-w58m-w29c"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N"
+uuid: "3be0e145-3b19-411e-92f9-685ae880fa0f"
+cwe_ids:
+- "CWE-917"
+- "CWE-937"
+- "CWE-1035"

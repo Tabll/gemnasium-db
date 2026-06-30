@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-vxr8-fq34-vvx9"
+identifiers:
+- "GHSA-vxr8-fq34-vvx9"
+package_slug: "npm/dompurify"
+title: "DOMPurify: Trusted Types policy survives `clearConfig()` and can poison later
+  `RETURN_TRUSTED_TYPE` output"
+description: "A DOMPurify instance that is reused across trust boundaries can stay
+  bound to a previously supplied `TRUSTED_TYPES_POLICY` even after `clearConfig()`
+  is called. A later caller that requests `RETURN_TRUSTED_TYPE` receives a `TrustedHTML`
+  object created by the old policy, not by a clean default configuration."
+date: "2026-06-15"
+pubdate: "2026-06-15"
+affected_range: "<3.4.9"
+fixed_versions:
+- "3.4.9"
+affected_versions: "All versions before 3.4.9"
+not_impacted: "All versions starting from 3.4.9"
+solution: "Upgrade to version 3.4.9 or above."
+urls:
+- "https://github.com/advisories/GHSA-vxr8-fq34-vvx9"
+- "https://github.com/cure53/DOMPurify/security/advisories/GHSA-vxr8-fq34-vvx9"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:N/VI:N/VA:N/SC:L/SI:L/SA:N"
+uuid: "2e39a27b-1720-4538-af85-0f6b8f51e8c0"
+cwe_ids:
+- "CWE-693"
+- "CWE-937"
+- "CWE-1035"

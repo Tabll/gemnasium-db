@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-j4hj-7hfh-g2f4"
+identifiers:
+- "GHSA-j4hj-7hfh-g2f4"
+package_slug: "pypi/praisonai"
+title: "praisonai: recipe serve auth middleware silently disables itself when no secret
+  is set"
+description: "The recipe-serve surface runs agentic workflows — same execution posture
+  as `praisonai/jobs/server.py` but separately configured / separately reached. Unauth
+  access on this surface yields:\n\n- Trigger arbitrary recipe executions, passing
+  attacker-controlled inputs and configurations.\n- Read the inputs / outputs of in-flight
+  recipes — the operator's prompts and the LLM responses.\n- In some deployments,
+  the recipe execution surface is wired to tools (browser automation, file-system
+  writes, code execution). Reaching those tools without auth is a direct RCE path."
+date: "2026-06-18"
+pubdate: "2026-06-18"
+affected_range: "<4.6.59"
+fixed_versions:
+- "4.6.59"
+affected_versions: "All versions before 4.6.59"
+not_impacted: "All versions starting from 4.6.59"
+solution: "Upgrade to version 4.6.59 or above."
+urls:
+- "https://github.com/advisories/GHSA-j4hj-7hfh-g2f4"
+- "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-j4hj-7hfh-g2f4"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+uuid: "5cdf29a4-d0cb-45ec-8608-91b4c16152de"
+cwe_ids:
+- "CWE-306"
+- "CWE-937"
+- "CWE-1035"
+- "CWE-1188"

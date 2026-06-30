@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-q9m2-fhv9-3jcf"
+identifiers:
+- "GHSA-q9m2-fhv9-3jcf"
+package_slug: "pypi/potato-annotation"
+title: "`potato-annotation` has a Project-Boundary Bypass"
+description: "`validate_path_security` uses string-prefix containment (`startswith`)
+  for boundary checks. This allows paths that are **outside** the intended project
+  directory but share its prefix string (e.g., `/tmp/potato_proj_demo_evil/...` vs
+  `/tmp/potato_proj_demo`) to be accepted."
+date: "2026-05-08"
+pubdate: "2026-05-08"
+affected_range: ">=2.0.0,<2.4.5"
+fixed_versions:
+- "2.4.5"
+affected_versions: "All versions starting from 2.0.0 before 2.4.5"
+not_impacted: "All versions before 2.0.0, all versions starting from 2.4.5"
+solution: "Upgrade to version 2.4.5 or above."
+urls:
+- "https://github.com/advisories/GHSA-q9m2-fhv9-3jcf"
+- "https://github.com/davidjurgens/potato/security/advisories/GHSA-q9m2-fhv9-3jcf"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N"
+uuid: "c8e74f38-d6e6-48ce-a572-b9f1d00be5f6"
+cwe_ids:
+- "CWE-22"
+- "CWE-937"
+- "CWE-1035"

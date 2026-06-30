@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-v3f4-w7r7-v3hm"
+identifiers:
+- "GHSA-v3f4-w7r7-v3hm"
+package_slug: "npm/@zenalexa/unicli"
+title: "Uni-CLI: Legacy HTTP MCP transport accepted browser-originated localhost requests"
+description: "Uni-CLI versions before 0.225.2 exposed the legacy JSON-RPC-over-HTTP
+  MCP transport on loopback without validating browser Origin headers before routing
+  requests. A malicious web page could send a CORS simple POST request, such as text/plain,
+  to the local /mcp endpoint and deliver a JSON-RPC body to the dispatcher. If the
+  user had started the local MCP HTTP transport, that page could drive tools/call
+  requests against the user's local Uni-CLI server.\n\nThe Streamable HTTP transport
+  already enforced this browser-to-localhost boundary. The legacy stateless HTTP path
+  did not, so the two HTTP transports had drifted. This issue is about the browser-to-localhost
+  boundary; it does not change Uni-CLI's local-code-execution trust model."
+date: "2026-06-19"
+pubdate: "2026-06-19"
+affected_range: "<0.225.2"
+fixed_versions:
+- "0.225.2"
+affected_versions: "All versions before 0.225.2"
+not_impacted: "All versions starting from 0.225.2"
+solution: "Upgrade to version 0.225.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-v3f4-w7r7-v3hm"
+- "https://github.com/olo-dot-io/Uni-CLI/security/advisories/GHSA-v3f4-w7r7-v3hm"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N"
+uuid: "ca465a27-13ce-46bd-87f6-60b9f29321d0"
+cwe_ids:
+- "CWE-346"
+- "CWE-352"
+- "CWE-937"
+- "CWE-1035"

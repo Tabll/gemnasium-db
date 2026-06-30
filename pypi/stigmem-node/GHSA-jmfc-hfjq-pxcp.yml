@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-jmfc-hfjq-pxcp"
+identifiers:
+- "GHSA-jmfc-hfjq-pxcp"
+package_slug: "pypi/stigmem-node"
+title: "stigmem-node's federation insecure transport settings may allow non-loopback
+  cleartext federation"
+description: "Stigmem nodes with federation enabled could be configured to run without
+  mTLS outside loopback-only local development. In affected deployments, federation
+  traffic may traverse the network without the intended transport protection. Impacted
+  users are operators who enabled federation and explicitly disabled mTLS while binding
+  the node to a non-loopback URL."
+date: "2026-05-29"
+pubdate: "2026-05-29"
+affected_range: "<0.9.0-a.2"
+fixed_versions:
+- "0.9.0-a.2"
+affected_versions: "All versions before 0.9.0-a.2"
+not_impacted: "All versions starting from 0.9.0-a.2"
+solution: "Upgrade to version 0.9.0-a.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-jmfc-hfjq-pxcp"
+- "https://github.com/eidetic-labs/stigmem/security/advisories/GHSA-jmfc-hfjq-pxcp"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N"
+uuid: "e3174c26-8e39-4250-9032-595fb04d6b29"
+cwe_ids:
+- "CWE-319"
+- "CWE-489"
+- "CWE-937"
+- "CWE-1035"

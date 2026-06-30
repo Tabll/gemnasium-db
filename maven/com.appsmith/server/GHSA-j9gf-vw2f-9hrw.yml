@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-j9gf-vw2f-9hrw"
+identifiers:
+- "GHSA-j9gf-vw2f-9hrw"
+package_slug: "maven/com.appsmith/server"
+title: "Appsmith: Configuration-dependent origin validation bypass in password reset
+  and email verification link generation"
+description: "A configuration-dependent origin validation bypass was identified in
+  Appsmith’s password reset and email verification flows on current `release`.\n\nBoth
+  flows derive the email-link base URL from the request `Origin` header. The current
+  validation only enforces a trusted base URL when `APPSMITH_BASE_URL` is configured.
+  If that setting is unset, the application accepts the caller-supplied origin and
+  uses it to generate token-bearing reset and verification links.\n\nOn deployments
+  with email delivery enabled and `APPSMITH_BASE_URL` unset, this can cause Appsmith
+  to send security-sensitive links whose clickable host is attacker-controlled, which
+  can plausibly lead to account takeover after victim interaction."
+date: "2026-06-12"
+pubdate: "2026-06-12"
+affected_range: "[,2.0.0)"
+fixed_versions:
+- "2.0.0"
+affected_versions: "All versions before 2.0.0"
+not_impacted: "All versions starting from 2.0.0"
+solution: "Upgrade to version 2.0.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-j9gf-vw2f-9hrw"
+- "https://github.com/appsmithorg/appsmith/security/advisories/GHSA-j9gf-vw2f-9hrw"
+- "https://github.com/appsmithorg/appsmith/releases/tag/v2.0"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N"
+uuid: "87d6d1fe-d5b1-42f2-8687-5af82104d0eb"
+cwe_ids:
+- "CWE-346"
+- "CWE-807"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-wfqx-gjrf-g28r"
+identifiers:
+- "GHSA-wfqx-gjrf-g28r"
+package_slug: "go/github.com/crossplane/crossplane"
+title: "Crossplane: Signature verification TOCTOU allows installing unverified package
+  content via mutable tag"
+description: "Crossplane allows package signature verification to be configured via
+  the `ImageConfig` mechanism. When enabled, the package manager uses cosign to verify
+  that packages are correctly signed before pulling and installing them.\n\nWhen a
+  package is installed using a tag reference (e.g., a semantic version), a malicious
+  OCI registry could serve a correctly signed image for verification, then subsequently
+  serve an unsigned image for installation. This is possible because Crossplane resolves
+  the tag reference separately for each step.\n\nThis vulnerability is relevant only
+  for users who do all three of the following:\n\n1. Configure signature verification
+  for packages,\n2. Install packages using tag references rather than digests, and\n3.
+  Install packages from registries they do not control."
+date: "2026-06-19"
+pubdate: "2026-06-19"
+affected_range: "<=1.21.0-rc.0"
+fixed_versions: []
+affected_versions: "All versions up to 1.21.0-rc.0"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-wfqx-gjrf-g28r"
+- "https://github.com/crossplane/crossplane/security/advisories/GHSA-wfqx-gjrf-g28r"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H"
+uuid: "7c828e0d-cb15-4b68-977c-a810b68a6dd7"
+cwe_ids:
+- "CWE-345"
+- "CWE-367"
+- "CWE-937"
+- "CWE-1035"

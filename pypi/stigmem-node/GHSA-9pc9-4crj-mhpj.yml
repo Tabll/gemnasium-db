@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-9pc9-4crj-mhpj"
+identifiers:
+- "GHSA-9pc9-4crj-mhpj"
+package_slug: "pypi/stigmem-node"
+title: "stigmem-node's Postgres schema identifier handling required defensive quoting"
+description: "Postgres backend schema identifiers were interpolated into SQL strings.
+  In the reviewed code path the schema value is operator-controlled, but the pattern
+  was unsafe if future call sites allowed tenant or request-controlled schema names.
+  Impacted users are operators using the Postgres backend in affected versions."
+date: "2026-05-29"
+pubdate: "2026-05-29"
+affected_range: "<0.9.0-a.2"
+fixed_versions:
+- "0.9.0-a.2"
+affected_versions: "All versions before 0.9.0-a.2"
+not_impacted: "All versions starting from 0.9.0-a.2"
+solution: "Upgrade to version 0.9.0-a.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-9pc9-4crj-mhpj"
+- "https://github.com/eidetic-labs/stigmem/security/advisories/GHSA-9pc9-4crj-mhpj"
+- "https://github.com/eidetic-labs/stigmem/blob/v0.9.0a2/CHANGELOG.md#L14-L35"
+- "https://github.com/eidetic-labs/stigmem/blob/v0.9.0a2/SECURITY.md"
+- "https://github.com/eidetic-labs/stigmem/releases/tag/v0.9.0a2"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:H/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+uuid: "8650f791-0173-4274-a263-5e6bbc7963c2"
+cwe_ids:
+- "CWE-89"
+- "CWE-937"
+- "CWE-1035"

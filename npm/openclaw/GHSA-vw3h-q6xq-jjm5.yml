@@ -7,7 +7,7 @@ title: "OpenClaw: Voice-call realtime WebSocket accepted oversized frames"
 description: "Voice-call realtime WebSocket accepted oversized frames."
 date: "2026-04-17"
 pubdate: "2026-04-17"
-affected_range: ">=2026.4.9 <2026.4.10"
+affected_range: "<0"
 fixed_versions:
 - "2026.4.10"
 affected_versions: "All versions starting from 2026.4.9 before 2026.4.10"

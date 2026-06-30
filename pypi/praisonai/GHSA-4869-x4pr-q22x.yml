@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-4869-x4pr-q22x"
+identifiers:
+- "GHSA-4869-x4pr-q22x"
+package_slug: "pypi/praisonai"
+title: "PraisonAI: Unauthenticated RCE via Jobs API + Approval Bypass "
+description: "An unauthenticated attacker can execute arbitrary OS commands on any
+  server running\nthe PraisonAI Jobs API by submitting a crafted workflow YAML. The
+  attack chains two\nweaknesses: the `/api/v1/runs` endpoint requires no credentials,
+  and a top-level\n`approve` field in the submitted YAML unconditionally bypasses
+  the\n`@require_approval` safety decorator on dangerous tools such as `execute_command`.\n\n**Ecosystem:**
+  pip | **Package:** `praisonai` | **Affected:** `<= 4.6.48` | **Patched:** *(none)*\n\n---"
+date: "2026-06-18"
+pubdate: "2026-06-18"
+affected_range: "<4.6.59"
+fixed_versions:
+- "4.6.59"
+affected_versions: "All versions before 4.6.59"
+not_impacted: "All versions starting from 4.6.59"
+solution: "Upgrade to version 4.6.59 or above."
+urls:
+- "https://github.com/advisories/GHSA-4869-x4pr-q22x"
+- "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-4869-x4pr-q22x"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+uuid: "a3e0194d-0c7b-4df8-adbc-d2b6f72fb231"
+cwe_ids:
+- "CWE-306"
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

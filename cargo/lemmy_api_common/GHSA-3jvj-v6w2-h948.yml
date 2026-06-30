@@ -13,7 +13,7 @@ description: "Lemmy allows an authenticated low-privileged user to create a link
   services."
 date: "2026-04-24"
 pubdate: "2026-04-24"
-affected_range: "<0.19.18"
+affected_range: "<0"
 fixed_versions:
 - "0.19.18"
 affected_versions: "All versions before 0.19.18"

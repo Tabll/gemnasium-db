@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-wcr3-9x4c-f5gj"
+identifiers:
+- "GHSA-wcr3-9x4c-f5gj"
+package_slug: "go/github.com/blnkfinance/blnk"
+title: "Blnk has an API key authorization bypass in owner and scope enforcement"
+description: "Blnk API key endpoints had an authorization issue that allowed non-master
+  API keys to perform key-management actions outside their intended authorization
+  boundary.\n\nIn affected versions, API key operations trusted caller-controlled
+  request values for owner and scope decisions. As a result, a non-master API key
+  could potentially manage keys for another owner by supplying a different owner value,
+  or create a more privileged API key by requesting broader scopes than it already
+  had.\n\nThis has been fixed by deriving the effective owner from the authenticated
+  API key and enforcing scope coverage checks when creating new keys."
+date: "2026-06-26"
+pubdate: "2026-06-26"
+affected_range: "<0.14.3"
+fixed_versions:
+- "0.14.3"
+affected_versions: "All versions before 0.14.3"
+not_impacted: "All versions starting from 0.14.3"
+solution: "Upgrade to version 0.14.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-wcr3-9x4c-f5gj"
+- "https://github.com/blnkfinance/blnk/security/advisories/GHSA-wcr3-9x4c-f5gj"
+uuid: "56cfa9f8-346b-4b3e-ab58-21acf29d7cba"
+cwe_ids:
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

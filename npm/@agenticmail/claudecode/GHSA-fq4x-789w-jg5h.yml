@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-fq4x-789w-jg5h"
+identifiers:
+- "GHSA-fq4x-789w-jg5h"
+package_slug: "npm/@agenticmail/claudecode"
+title: "AgenticMail: Unauthenticated inbound mail triggers bypassPermissions resume
+  of the operator's Claude Code session (bridge-wake)"
+description: "Two inbound-mail handlers act on a privileged effect without verifying
+  that the sender is the operator, while a sibling handler in the same repo does.
+  The higher-impact one: any external email routed to the bridge inbox causes the
+  dispatcher to resume the operator's Claude Code session with `permissionMode: 'bypassPermissions'`,
+  embedding the attacker-controlled `from`/`subject`/`preview` verbatim into the prompt
+  the resumed agent reads — an indirect prompt injection into a fully-privileged agent
+  (Bash/Write/Edit/WebFetch + the agenticmail MCP toolbelt) running as the operator's
+  OAuth identity. The sibling operator-query email-reply hook gates the same untrusted-From
+  provenance with `isOperatorReplySender(replyFrom, config.operatorEmail)` (fail-closed);
+  the bridge-wake path — a strictly higher-privilege effect — has no equivalent."
+date: "2026-06-18"
+pubdate: "2026-06-18"
+affected_range: "<0.2.39"
+fixed_versions:
+- "0.2.39"
+affected_versions: "All versions before 0.2.39"
+not_impacted: "All versions starting from 0.2.39"
+solution: "Upgrade to version 0.2.39 or above."
+urls:
+- "https://github.com/advisories/GHSA-fq4x-789w-jg5h"
+- "https://github.com/agenticmail/agenticmail/security/advisories/GHSA-fq4x-789w-jg5h"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N"
+uuid: "0326e48e-9cf8-496b-9aaa-6c10d33d73a3"
+cwe_ids:
+- "CWE-306"
+- "CWE-937"
+- "CWE-1035"

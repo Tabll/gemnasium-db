@@ -1,0 +1,39 @@
+---
+identifier: "GHSA-8whc-2wmv-ww35"
+identifiers:
+- "CVE-2026-54458"
+- "GHSA-8whc-2wmv-ww35"
+package_slug: "packagist/wwbn/avideo"
+title: "WWBN AVideo: Unauthenticated Stored DOM Cross-Site Scripting via Per-Client
+  Metadata Broadcast in YPTSocket Plugin"
+description: "A stored DOM Cross-Site Scripting vulnerability (CWE-79) in the AVideo
+  YPTSocket plugin lets any unauthenticated remote attacker execute arbitrary JavaScript
+  in the authenticated origin of every administrator currently viewing a page that
+  renders the YPTSocket online-users debug panel. `plugin/YPTSocket/getWebSocket.json.php`
+  issues a signed WebSocket token to any anonymous caller, and `MessageSQLiteV2::onOpen`
+  at `plugin/YPTSocket/MessageSQLiteV2.php` lines 91 and 110 reads the attacker-controlled
+  `webSocketSelfURI` and `page_title` query parameters from the WebSocket connection
+  URL with no validation. Both values persist into the in-memory SQLite `connections`
+  table and broadcast inside the `users_id_online` array sent to every connected client;
+  on the client, `plugin/YPTSocket/script.js::updateSocketUserCard` interpolates the
+  broadcast `page_title` into an HTML template literal that is passed to jQuery `$.append(html)`,
+  which parses attacker bytes into live DOM nodes including `<img>` with inline event
+  handlers."
+date: "2026-06-22"
+pubdate: "2026-06-04"
+affected_range: "<=29.0.0"
+fixed_versions: []
+affected_versions: "All versions up to 29.0.0"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-54458"
+- "https://github.com/advisories/GHSA-8whc-2wmv-ww35"
+- "https://github.com/WWBN/AVideo/security/advisories/GHSA-8whc-2wmv-ww35"
+- "https://github.com/WWBN/AVideo/commit/8be71e53ccbe9b84b30870db386fb4d2b11e1c16"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:L"
+uuid: "67f0f181-1ae6-494a-b1d9-ae97f59957ae"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

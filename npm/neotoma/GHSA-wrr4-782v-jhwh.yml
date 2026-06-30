@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-wrr4-782v-jhwh"
+identifiers:
+- "GHSA-wrr4-782v-jhwh"
+package_slug: "npm/neotoma"
+title: "neotoma has tenant isolation gap in relationship query endpoints"
+description: "The `/list_relationships` and `/retrieve_graph_neighborhood` endpoints
+  call `getAuthenticatedUserId` (confirming a valid session exists) but do not pass
+  the resolved user ID into the Supabase query as an `.eq(\"user_id\", userId)` filter.
+  As a result, queries return rows from all users rather than scoping to the authenticated
+  caller's data."
+date: "2026-06-25"
+pubdate: "2026-06-25"
+affected_range: ">=0.13.0 <0.14.0"
+fixed_versions:
+- "0.14.0"
+affected_versions: "All versions starting from 0.13.0 before 0.14.0"
+not_impacted: "All versions before 0.13.0, all versions starting from 0.14.0"
+solution: "Upgrade to version 0.14.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-wrr4-782v-jhwh"
+- "https://github.com/markmhendrickson/neotoma/security/advisories/GHSA-wrr4-782v-jhwh"
+- "https://github.com/markmhendrickson/neotoma/issues/365"
+- "https://github.com/markmhendrickson/neotoma/issues/366"
+- "https://github.com/markmhendrickson/neotoma/issues/372"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N"
+uuid: "e661eedb-bf1f-4e2d-a16c-4cfcd670897a"
+cwe_ids:
+- "CWE-201"
+- "CWE-937"
+- "CWE-1035"

@@ -11,7 +11,7 @@ description: "The `trustedCertPool()` function in the TLS configuration only par
   This silently breaks certificate chain validation for mTLS."
 date: "2026-04-14"
 pubdate: "2026-04-14"
-affected_range: "<0.16.2"
+affected_range: "<0"
 fixed_versions:
 - "0.16.2"
 affected_versions: "All versions before 0.16.2"

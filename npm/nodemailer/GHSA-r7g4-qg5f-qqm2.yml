@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-r7g4-qg5f-qqm2"
+identifiers:
+- "GHSA-r7g4-qg5f-qqm2"
+package_slug: "npm/nodemailer"
+title: "Nodemailer: Improper TLS Certificate Validation in OAuth2 Token Fetch Enables
+  Credential Interception"
+description: "Nodemailer disables TLS certificate verification in its internal HTTPS
+  fetch client through the use of rejectUnauthorized: false inside lib/fetch/index.js.\n\nAs
+  a result, OAuth2 token requests trust invalid or self-signed HTTPS certificates
+  and transmit sensitive OAuth credentials over connections that should fail TLS validation.\n\nAn
+  attacker in a machine-in-the-middle position can intercept OAuth2 credential exchanges
+  and capture:\n\n- OAuth client_secret\n- refresh_token\n- access tokens\n\nThe issue
+  was verified through runtime testing using a self-signed HTTPS OAuth endpoint."
+date: "2026-06-15"
+pubdate: "2026-06-15"
+affected_range: "<8.0.8"
+fixed_versions:
+- "8.0.8"
+affected_versions: "All versions before 8.0.8"
+not_impacted: "All versions starting from 8.0.8"
+solution: "Upgrade to version 8.0.8 or above."
+urls:
+- "https://github.com/advisories/GHSA-r7g4-qg5f-qqm2"
+- "https://github.com/nodemailer/nodemailer/security/advisories/GHSA-r7g4-qg5f-qqm2"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:L/A:N"
+uuid: "2489b8ee-269a-4df3-887f-6cc1ee8e05f7"
+cwe_ids:
+- "CWE-295"
+- "CWE-937"
+- "CWE-1035"

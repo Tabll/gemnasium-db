@@ -11,7 +11,7 @@ description: "A path traversal vulnerability in the skill download (`fetch`) com
   attacks that can overwrite critical system files or create files in sensitive locations."
 date: "2026-04-22"
 pubdate: "2026-04-22"
-affected_range: "<1.69.3"
+affected_range: "<0"
 fixed_versions:
 - "1.69.3"
 affected_versions: "All versions before 1.69.3"

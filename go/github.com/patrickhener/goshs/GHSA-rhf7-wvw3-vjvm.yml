@@ -13,7 +13,7 @@ description: "The PUT upload handler (`httpserver/updown.go`) lacks the CSRF tok
   localhost, internal network)."
 date: "2026-04-23"
 pubdate: "2026-04-23"
-affected_range: "<=1.1.4"
+affected_range: "<0"
 fixed_versions: []
 affected_versions: "All versions up to 1.1.4"
 not_impacted: ""

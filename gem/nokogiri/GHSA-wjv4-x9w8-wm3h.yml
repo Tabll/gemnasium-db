@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-wjv4-x9w8-wm3h"
+identifiers:
+- "GHSA-wjv4-x9w8-wm3h"
+package_slug: "gem/nokogiri"
+title: "Nokogiri: Possible Use-After-Free when setting `Document#root=` to an invalid
+  node type"
+description: "`Nokogiri::XML::Document#root=` validated only that the new root was
+  a `Nokogiri::XML::Node`, allowing a DTD node to be set as the document root. The
+  result is a heap use-after-free during garbage collection or finalization, leading
+  to an invalid memory read or potentially a segfault.\n\nNokogiri 1.19.4 restricts
+  `Document#root=` to element nodes, raising `TypeError` for any other node type.\n\nThis
+  memory-safety issue affects only the CRuby implementation (libxml2). The JRuby implementation
+  was not affected; the same input validation was added there for behavioral parity."
+date: "2026-06-19"
+pubdate: "2026-06-19"
+affected_range: "<1.19.4"
+fixed_versions:
+- "1.19.4"
+affected_versions: "All versions before 1.19.4"
+not_impacted: "All versions starting from 1.19.4"
+solution: "Upgrade to version 1.19.4 or above."
+urls:
+- "https://github.com/advisories/GHSA-wjv4-x9w8-wm3h"
+- "https://github.com/sparklemotion/nokogiri/security/advisories/GHSA-wjv4-x9w8-wm3h"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N"
+uuid: "94e641e6-0d93-4c09-82a6-daefebcc5c54"
+cwe_ids:
+- "CWE-416"
+- "CWE-937"
+- "CWE-1035"

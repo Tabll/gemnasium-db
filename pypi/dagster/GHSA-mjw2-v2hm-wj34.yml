@@ -14,7 +14,7 @@ description: "The DuckDB, Snowflake, BigQuery, and DeltaLake I/O managers constr
   impacted."
 date: "2026-04-18"
 pubdate: "2026-04-18"
-affected_range: "<1.13.1"
+affected_range: "<0"
 fixed_versions:
 - "1.13.1"
 affected_versions: "All versions before 1.13.1"

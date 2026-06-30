@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-q3fm-4wcw-g57x"
+identifiers:
+- "GHSA-q3fm-4wcw-g57x"
+package_slug: "npm/vm2"
+title: "vm2 setup-sandbox.js violates Defense Invariant #11 in stack-trace formatter"
+description: "`defaultSandboxPrepareStackTrace` in `lib/setup-sandbox.js` (lines 605,
+  607) appends to a fresh sandbox-realm `lines = []` via `lines[lines.length] = value`.
+  This is the exact invariant-violating pattern that GHSA-9qj6-qjgg-37qq (commit ca195f0,
+  2026-05-01) just patched in `neutralizeArraySpeciesBatch` and codified as Defense
+  Invariant #11 (\"Bridge-internal containers must not invoke sandbox code\"). A sandbox-installed
+  `Array.prototype[N]` setter fires during the bridge's safe-default stack-trace formatting
+  and observes / intercepts each appended line."
+date: "2026-05-29"
+pubdate: "2026-05-29"
+affected_range: "<3.11.4"
+fixed_versions:
+- "3.11.4"
+affected_versions: "All versions before 3.11.4"
+not_impacted: "All versions starting from 3.11.4"
+solution: "Upgrade to version 3.11.4 or above."
+urls:
+- "https://github.com/advisories/GHSA-q3fm-4wcw-g57x"
+- "https://github.com/patriksimek/vm2/security/advisories/GHSA-q3fm-4wcw-g57x"
+- "https://github.com/patriksimek/vm2/commit/ad31adc1fc4a2c163f2f8c11ab4af206074528fd"
+- "https://github.com/patriksimek/vm2/releases/tag/v3.11.4"
+cvss_v3: "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:L/AC:H/AT:N/PR:N/UI:N/VC:N/VI:N/VA:N/SC:N/SI:L/SA:N"
+uuid: "2cea6d2f-c50e-4102-9f83-607d792ad536"
+cwe_ids:
+- "CWE-693"
+- "CWE-937"
+- "CWE-1035"

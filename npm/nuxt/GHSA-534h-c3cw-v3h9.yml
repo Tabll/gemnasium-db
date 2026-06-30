@@ -1,0 +1,45 @@
+---
+identifier: "GHSA-534h-c3cw-v3h9"
+identifiers:
+- "GHSA-534h-c3cw-v3h9"
+package_slug: "npm/nuxt"
+title: "Nuxt dev server vite-node IPC socket is world-connectable on Linux"
+description: "When running `nuxt dev` on Linux (Node.js 20+, outside Docker / StackBlitz),
+  Nuxt's internal vite-node IPC server binds to a Linux abstract-namespace Unix socket
+  (`\\0nuxt-vite-node-<pid>-<ts>.sock`). Abstract sockets have no filesystem inode
+  and therefore no permission bits: any local UID on the host that can read `/proc/net/unix`
+  can enumerate the socket and connect to it.\n\nThe IPC server does not perform any
+  peer-credential or shared-secret check before dispatching requests. The `module`
+  request type passes its `moduleId` field straight into Vite's SSR `fetchModule()`,
+  which is not gated by Vite's HTTP-layer `server.fs.allow` deny-list. A co-resident
+  unprivileged local user can therefore request paths like `/home/<dev>/project/.env?raw`
+  or `~/.ssh/id_rsa?raw` and read the developer's secrets through the dev server's
+  SSR plugin pipeline. The `resolve` request type additionally enables filesystem
+  probing.\n\nThis affects developers running `nuxt dev` on shared multi-tenant Linux
+  hosts (lab machines, shared bastions, CI runners shared between jobs without per-job
+  container isolation). It does not affect:\n\n- Production builds (`nuxt build` /
+  `nuxt start`). The IPC server only runs in development.\n- macOS or Windows developers.\n-
+  Docker / StackBlitz environments, which already fall back to a filesystem socket.\n-
+  Single-user laptops or per-job containerised CI."
+date: "2026-06-16"
+pubdate: "2026-06-16"
+affected_range: ">=3.18.0 <3.21.7||>=4.0.0 <4.4.7"
+fixed_versions:
+- "3.21.7"
+- "4.4.7"
+affected_versions: "All versions starting from 3.18.0 before 3.21.7, all versions
+  starting from 4.0.0 before 4.4.7"
+not_impacted: "All versions before 3.18.0, all versions starting from 3.21.7 before
+  4.0.0, all versions starting from 4.4.7"
+solution: "Upgrade to versions 3.21.7, 4.4.7 or above."
+urls:
+- "https://github.com/advisories/GHSA-534h-c3cw-v3h9"
+- "https://github.com/nuxt/nuxt/security/advisories/GHSA-534h-c3cw-v3h9"
+- "https://github.com/nuxt/nuxt/commit/1f9f4767a8725104da9bee872bb8d35246f25ae5"
+- "https://github.com/nuxt/nuxt/commit/c293bf9503ccb3bc9559bff4a1f592f99063c9ea"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+uuid: "b8b33d4f-5df7-4239-8ac1-907c678ed4e2"
+cwe_ids:
+- "CWE-276"
+- "CWE-937"
+- "CWE-1035"

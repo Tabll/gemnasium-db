@@ -5,21 +5,14 @@ identifiers:
 package_slug: "packagist/wwbn/avideo"
 title: "WWBN AVideo has a CORS Origin Reflection Bypass via plugin/API/router.php
   and allowOrigin(true) Exposes Authenticated API Responses"
-description: "The CORS origin validation fix in commit `986e64aad` is incomplete.
-  Two separate code paths still reflect arbitrary `Origin` headers with credentials
-  allowed for all `/api/*` endpoints: (1) `plugin/API/router.php` lines 4-8 unconditionally
-  reflect any origin before application code runs, and (2) `allowOrigin(true)` called
-  by `get.json.php` and `set.json.php` reflects any origin with `Access-Control-Allow-Credentials:
-  true`. An attacker can make cross-origin credentialed requests to any API endpoint
-  and read authenticated responses containing user PII, email, admin status, and session-sensitive
-  data."
+description: "This advisory has been withdrawn."
 date: "2026-04-14"
 pubdate: "2026-04-14"
-affected_range: "<=29.0"
+affected_range: "<0"
 fixed_versions: []
-affected_versions: "All versions up to 29.0"
-not_impacted: ""
-solution: "Unfortunately, there is no solution available yet."
+affected_versions: "This advisory has been withdrawn."
+not_impacted: "This advisory has been withdrawn."
+solution: "This advisory has been withdrawn."
 urls:
 - "https://github.com/advisories/GHSA-ff5q-cc22-fgp4"
 - "https://github.com/WWBN/AVideo/security/advisories/GHSA-ff5q-cc22-fgp4"

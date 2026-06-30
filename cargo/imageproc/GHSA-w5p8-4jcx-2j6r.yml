@@ -1,0 +1,41 @@
+---
+identifier: "GHSA-w5p8-4jcx-2j6r"
+identifiers:
+- "GHSA-w5p8-4jcx-2j6r"
+package_slug: "cargo/imageproc"
+title: "imageproc: integer overflow in kernel size check leads to out-of-bounds read"
+description: "A bounds verification of a slice storage of a 2-dimensional matrix's
+  coefficients (a kernel) would compare the total size against the product of individual
+  dimensions. This would erroneously cast *after* the multiplication and consequently
+  fail to detect possible violations when overflow occurs.\n\nAfterwards, the individual
+  sizes were trusted to properly constrain coordinates within the matrix to indices
+  valid for the underlying storage. With a crafted `Kernel` object, certain combinations
+  of coordinates could then cause an out-of-bounds access in an `unsafe` function
+  while fulfilling its documented preconditions. The kernel value could be passed
+  to library functions that trusted the preconditions and then performed such reads."
+date: "2026-05-07"
+pubdate: "2026-05-07"
+affected_range: "<0.23.1||>=0.24.0 <0.24.1||>=0.25.0 <0.25.1||>=0.26.0 <0.26.2"
+fixed_versions:
+- "0.23.1"
+- "0.24.1"
+- "0.25.1"
+- "0.26.2"
+affected_versions: "All versions before 0.23.1, all versions starting from 0.24.0
+  before 0.24.1, all versions starting from 0.25.0 before 0.25.1, all versions starting
+  from 0.26.0 before 0.26.2"
+not_impacted: "All versions starting from 0.23.1 before 0.24.0, all versions starting
+  from 0.24.1 before 0.25.0, all versions starting from 0.25.1 before 0.26.0, all
+  versions starting from 0.26.2"
+solution: "Upgrade to versions 0.23.1, 0.24.1, 0.25.1, 0.26.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-w5p8-4jcx-2j6r"
+- "https://rustsec.org/advisories/RUSTSEC-2026-0116.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N"
+uuid: "17ae6475-c25b-4383-9cdf-b5c02212d408"
+cwe_ids:
+- "CWE-125"
+- "CWE-190"
+- "CWE-937"
+- "CWE-1035"

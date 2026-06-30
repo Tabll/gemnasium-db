@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-3v85-fqvh-7rxf"
+identifiers:
+- "GHSA-3v85-fqvh-7rxf"
+package_slug: "go/github.com/lin-snow/ech0"
+title: "Ech0's RSS feed renders unescaped tag names and raw-HTML markdown, stored
+  XSS against subscribers"
+description: "The public RSS/Atom feed at `/rss` renders two attacker-controlled surfaces
+  without HTML escaping. Tag names flow through `fmt.Appendf(renderedContent, \"<br
+  /><span class=\\\"tag\\\">#%s</span>\", tag.Name)` at `internal/service/common/common.go:120`,
+  and the Markdown renderer at `internal/util/md/md.go` does not set the `html.SkipHTML`
+  flag, so raw HTML blocks in echo content pass through unmodified. The resulting
+  Atom `<summary type=\"html\">` is valid XML but contains executable `<script>` tags
+  after the RSS reader decodes it. RSS subscribers whose readers render HTML (including
+  many self-hosted and desktop clients) execute attacker JavaScript in the reader's
+  origin."
+date: "2026-05-07"
+pubdate: "2026-05-07"
+affected_range: "<1.4.8-0.20260503035519-fd320fe3e902"
+fixed_versions:
+- "1.4.8-0.20260503035519-fd320fe3e902"
+affected_versions: "All versions before 1.4.8-0.20260503035519-fd320fe3e902"
+not_impacted: "All versions starting from 1.4.8-0.20260503035519-fd320fe3e902"
+solution: "Upgrade to version 1.4.8-0.20260503035519-fd320fe3e902 or above."
+urls:
+- "https://github.com/advisories/GHSA-3v85-fqvh-7rxf"
+- "https://github.com/lin-snow/Ech0/security/advisories/GHSA-3v85-fqvh-7rxf"
+- "https://github.com/lin-snow/Ech0/commit/fd320fe3e9021c8d8d284fb274775c018690520e"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:L/I:L/A:N"
+uuid: "dfbc9e72-178f-4bae-948d-62c4fdde9b5a"
+cwe_ids:
+- "CWE-79"
+- "CWE-116"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-rhq6-9rgh-v45c"
+identifiers:
+- "GHSA-rhq6-9rgh-v45c"
+package_slug: "go/github.com/pterodactyl/wings"
+title: "Pterodactyl Wings: Chmod operation can be used to change permissions of files
+  outside of the server container"
+description: "In `wings/internal/ufs/fs_unix.go` (line 92-94), this function is defined
+  and is used to change permissions of files in the server:\n\n```go\nfunc (fs *UnixFS)
+  fchmodat(op string, dirfd int, name string, mode FileMode) error {\nreturn ensurePathError(unix.Fchmodat(dirfd,
+  name, uint32(mode), 0), op, name)\n}\n```\n\nThis call to the unix function `fchmodat(int
+  fd, char* name, mode_t mode, int flags)`  does not have the flag `AT_SYMLINK_NOFOLLOW`
+  set, and Wings neither checks or validate if the target file is a symlink. This
+  allows one to change permissions of files or folders outside of the server container
+  by making symlinks to existing files in the host and then chmoding it."
+date: "2026-06-26"
+pubdate: "2026-06-26"
+affected_range: ">=1.11.9 <1.12.2"
+fixed_versions:
+- "1.12.2"
+affected_versions: "All versions starting from 1.11.9 before 1.12.2"
+not_impacted: "All versions before 1.11.9, all versions starting from 1.12.2"
+solution: "Upgrade to version 1.12.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-rhq6-9rgh-v45c"
+- "https://github.com/pterodactyl/wings/security/advisories/GHSA-rhq6-9rgh-v45c"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:N/I:L/A:N"
+uuid: "f79e3196-e67e-4424-bcc7-8cf625218c3e"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

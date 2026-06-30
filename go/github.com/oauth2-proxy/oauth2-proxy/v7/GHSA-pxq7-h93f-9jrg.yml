@@ -18,7 +18,7 @@ description: "A configuration-dependent authentication bypass exists in OAuth2 P
   exact public paths with tightly scoped method and path rules, **ARE NOT** affected."
 date: "2026-04-15"
 pubdate: "2026-04-15"
-affected_range: ">=7.5.0 <7.15.2"
+affected_range: "<0"
 fixed_versions:
 - "7.15.2"
 affected_versions: "All versions starting from 7.5.0 before 7.15.2"

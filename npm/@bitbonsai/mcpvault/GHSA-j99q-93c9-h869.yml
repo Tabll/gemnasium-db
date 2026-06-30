@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-j99q-93c9-h869"
+identifiers:
+- "GHSA-j99q-93c9-h869"
+package_slug: "npm/@bitbonsai/mcpvault"
+title: "MCPVault: PathFilter restricted-directory deny-list bypass via case and trailing
+  dot/space equivalence"
+description: "On case-insensitive filesystems (macOS, Windows), PathFilter compiled
+  its deny-list patterns case-sensitively and matched the path verbatim, so names
+  like `.Git/config`, `.GIT/config`, or `.oBsIdIaN/secrets.md` slipped past the `.git`/`.obsidian`/`node_modules`
+  restriction while the OS opened the real file. On Windows, trailing dots/spaces
+  (`.git./config`, `.git /config`) bypassed it the same way. Affects both `isAllowed`
+  (read/write/move/search) and `isAllowedForListing`. Vault-root `..` containment
+  is NOT affected. Fixed in 0.11.4 by case-insensitive matching plus per-segment canonicalization
+  before the deny-list check. Reported privately by novice-22."
+date: "2026-06-18"
+pubdate: "2026-06-18"
+affected_range: "<0.11.4"
+fixed_versions:
+- "0.11.4"
+affected_versions: "All versions before 0.11.4"
+not_impacted: "All versions starting from 0.11.4"
+solution: "Upgrade to version 0.11.4 or above."
+urls:
+- "https://github.com/advisories/GHSA-j99q-93c9-h869"
+- "https://github.com/bitbonsai/mcpvault/security/advisories/GHSA-j99q-93c9-h869"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "d645420d-3239-453c-8ce4-65befd9f5d66"
+cwe_ids:
+- "CWE-41"
+- "CWE-178"
+- "CWE-937"
+- "CWE-1035"

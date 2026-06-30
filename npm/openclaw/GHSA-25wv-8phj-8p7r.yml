@@ -12,7 +12,7 @@ description: "Concurrent async auth attempts can bypass the intended shared-secr
   assume a multi-tenant service boundary."
 date: "2026-04-09"
 pubdate: "2026-04-09"
-affected_range: "<2026.4.4"
+affected_range: "<0"
 fixed_versions:
 - "2026.4.4"
 affected_versions: "All versions before 2026.4.4"

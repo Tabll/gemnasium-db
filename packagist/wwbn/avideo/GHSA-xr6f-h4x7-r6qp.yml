@@ -4,19 +4,14 @@ identifiers:
 - "GHSA-xr6f-h4x7-r6qp"
 package_slug: "packagist/wwbn/avideo"
 title: "WWBN AVideo: RCE cause by clonesite plugin"
-description: "The `cloneServer.json.php` endpoint in the CloneSite plugin constructs
-  shell commands using user-controlled input (`url` parameter) without proper sanitization.
-  The input is directly concatenated into a `wget` command executed via `exec()`,
-  allowing command injection.\n\nAn attacker can inject arbitrary shell commands by
-  breaking out of the intended URL context using shell metacharacters (e.g., `;`).
-  This leads to **Remote Code Execution (RCE)** on the server."
+description: "This advisory has been withdrawn."
 date: "2026-04-16"
 pubdate: "2026-04-16"
-affected_range: "<=29.0"
+affected_range: "<0"
 fixed_versions: []
-affected_versions: "All versions up to 29.0"
-not_impacted: ""
-solution: "Unfortunately, there is no solution available yet."
+affected_versions: "This advisory has been withdrawn."
+not_impacted: "This advisory has been withdrawn."
+solution: "This advisory has been withdrawn."
 urls:
 - "https://github.com/advisories/GHSA-xr6f-h4x7-r6qp"
 - "https://github.com/WWBN/AVideo/security/advisories/GHSA-xr6f-h4x7-r6qp"

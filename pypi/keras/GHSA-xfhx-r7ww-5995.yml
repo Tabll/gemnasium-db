@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-xfhx-r7ww-5995"
+identifiers:
+- "GHSA-xfhx-r7ww-5995"
+package_slug: "pypi/keras"
+title: "Duplicate Advisory: Google Keras Allocates Resources Without Limits or Throttling
+  in the HDF5 weight loading component"
+description: "This advisory has been withdrawn."
+date: "2026-05-06"
+pubdate: "2026-01-15"
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "This advisory has been withdrawn."
+not_impacted: "This advisory has been withdrawn."
+solution: "This advisory has been withdrawn."
+urls:
+- "https://github.com/advisories/GHSA-xfhx-r7ww-5995"
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-0897"
+- "https://github.com/keras-team/keras/pull/21880"
+- "https://github.com/keras-team/keras/pull/22081"
+- "https://github.com/keras-team/keras/commit/7360d4f0d764fbb1fa9c6408fe53da41974dd4f6"
+- "https://github.com/keras-team/keras/commit/f704c887bf459b42769bfc8a9182f838009afddb"
+- "https://github.com/keras-team/keras"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+uuid: "2663f95c-215b-466e-9459-c660dc7393c5"
+cwe_ids:
+- "CWE-770"
+- "CWE-937"
+- "CWE-1035"

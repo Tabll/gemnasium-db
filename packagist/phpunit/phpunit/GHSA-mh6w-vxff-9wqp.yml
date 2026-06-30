@@ -33,7 +33,6 @@ urls:
 - "https://github.com/sebastianbergmann/phpunit/security/advisories/GHSA-qrr6-mg7r-m243"
 - "https://github.com/sebastianbergmann/phpunit/pull/6592"
 - "https://github.com/FriendsOfPHP/security-advisories/blob/master/phpunit/phpunit/GHSA-qrr6-mg7r-m243.yaml"
-- "https://github.com/sebastianbergmann/phpunit"
 - "https://owasp.org/www-project-top-10-ci-cd-security-risks/CICD-SEC-04-Poisoned-Pipeline-Execution"
 cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
 uuid: "e17d1963-e2fe-48ce-a5fa-bbcddd3be04a"

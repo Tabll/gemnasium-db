@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-w9xh-5f39-vq89"
+identifiers:
+- "GHSA-w9xh-5f39-vq89"
+package_slug: "packagist/phpmyfaq/phpmyfaq"
+title: "phpMyFAQ: Missing Password Reset Token Allows Account Takeover via Username/Email
+  Enumeration"
+description: "An authentication bypass vulnerability in phpMyFAQ allows any unauthenticated
+  attacker to reset the password of any user account, including SuperAdmin accounts.
+  By sending a PUT request with just a valid username and associated email address
+  to /api/user/password/update, an attacker receives a new plaintext password via
+  email without any token verification, rate limiting, or email confirmation. This
+  enables complete account takeover of any user, including full administrative access."
+date: "2026-05-20"
+pubdate: "2026-05-20"
+affected_range: "<0"
+fixed_versions:
+- "4.1.3"
+affected_versions: "All versions before 4.1.3"
+not_impacted: "All versions starting from 4.1.3"
+solution: "Upgrade to version 4.1.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-w9xh-5f39-vq89"
+- "https://github.com/thorsten/phpMyFAQ/security/advisories/GHSA-w9xh-5f39-vq89"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:H/A:N"
+uuid: "c3ec2a81-e7bf-4a1a-9bb1-485b26e10c31"
+cwe_ids:
+- "CWE-307"
+- "CWE-359"
+- "CWE-640"
+- "CWE-937"
+- "CWE-1035"

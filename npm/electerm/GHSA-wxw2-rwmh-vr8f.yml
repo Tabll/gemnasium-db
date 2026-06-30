@@ -18,7 +18,7 @@ description: "_What kind of vulnerability is it? Who is impacted?_\n\n**Two Comm
   compromise of development/runtime assets.\n\n---"
 date: "2026-04-16"
 pubdate: "2026-04-16"
-affected_range: "<3.3.8"
+affected_range: "<0"
 fixed_versions:
 - "3.3.8"
 affected_versions: "All versions before 3.3.8"

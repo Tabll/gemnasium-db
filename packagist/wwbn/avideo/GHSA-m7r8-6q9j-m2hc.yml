@@ -4,16 +4,14 @@ identifiers:
 - "GHSA-m7r8-6q9j-m2hc"
 package_slug: "packagist/wwbn/avideo"
 title: "WWBN AVideo has an incomplete fix for CVE-2026-33500: XSS"
-description: "The incomplete XSS fix in AVideo's `ParsedownSafeWithLinks` class overrides
-  `inlineMarkup` for raw HTML but does not override `inlineLink()` or `inlineUrlTag()`,
-  allowing `javascript:` URLs in markdown link syntax to bypass sanitization."
+description: "This advisory has been withdrawn."
 date: "2026-04-14"
 pubdate: "2026-04-14"
-affected_range: "<=29.0"
+affected_range: "<0"
 fixed_versions: []
-affected_versions: "All versions up to 29.0"
-not_impacted: ""
-solution: "Unfortunately, there is no solution available yet."
+affected_versions: "This advisory has been withdrawn."
+not_impacted: "This advisory has been withdrawn."
+solution: "This advisory has been withdrawn."
 urls:
 - "https://github.com/advisories/GHSA-m7r8-6q9j-m2hc"
 - "https://github.com/WWBN/AVideo/security/advisories/GHSA-m7r8-6q9j-m2hc"

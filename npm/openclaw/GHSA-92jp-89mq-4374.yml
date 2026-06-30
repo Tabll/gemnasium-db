@@ -18,7 +18,6 @@ urls:
 - "https://github.com/openclaw/openclaw/security/advisories/GHSA-92jp-89mq-4374"
 - "https://github.com/openclaw/openclaw/pull/63882"
 - "https://github.com/openclaw/openclaw/commit/8dfbf3268bd224b7377d1ecca77a445100746085"
-- "https://github.com/openclaw/openclaw"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N"
 cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N"
 uuid: "00c34f47-2c33-46b1-86ed-2af5a6b1b643"

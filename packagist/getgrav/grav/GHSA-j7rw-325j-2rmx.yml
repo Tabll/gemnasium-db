@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-j7rw-325j-2rmx"
+identifiers:
+- "GHSA-j7rw-325j-2rmx"
+package_slug: "packagist/getgrav/grav"
+title: "Duplicate Advisory: Grav has Insecure Deserialization in File Cache"
+description: "This advisory has been withdrawn."
+date: "2026-05-06"
+pubdate: "2026-04-29"
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "This advisory has been withdrawn."
+not_impacted: "This advisory has been withdrawn."
+solution: "This advisory has been withdrawn."
+urls:
+- "https://github.com/advisories/GHSA-j7rw-325j-2rmx"
+- "https://github.com/getgrav/grav/security/advisories/GHSA-gwfr-jfjf-92vv"
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-7317"
+- "https://github.com/getgrav/grav/commit/c66dfeb5f"
+- "https://github.com/devsamuelsantiago/grav-cms-filecache-object-injection"
+- "https://vuldb.com/submit/798732"
+- "https://vuldb.com/vuln/359965"
+- "https://vuldb.com/vuln/359965/cti"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:L"
+cvss_v4: "CVSS:4.0/AV:N/AC:H/AT:N/PR:L/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N"
+uuid: "4d90b959-66a8-4fca-bb9c-391c8b9fbebe"
+cwe_ids:
+- "CWE-20"
+- "CWE-937"
+- "CWE-1035"

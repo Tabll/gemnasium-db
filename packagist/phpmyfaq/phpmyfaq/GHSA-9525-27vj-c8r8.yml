@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-9525-27vj-c8r8"
+identifiers:
+- "CVE-2026-46367"
+- "GHSA-9525-27vj-c8r8"
+package_slug: "packagist/phpmyfaq/phpmyfaq"
+title: "phpMyFAQ has stored XSS via Utils::parseUrl() in comment rendering"
+description: "This advisory has been withdrawn."
+date: "2026-06-08"
+pubdate: "2026-05-06"
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "This advisory has been withdrawn."
+not_impacted: "This advisory has been withdrawn."
+solution: "This advisory has been withdrawn."
+urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-46367"
+- "https://github.com/advisories/GHSA-9525-27vj-c8r8"
+- "https://github.com/thorsten/phpMyFAQ/security/advisories/GHSA-9525-27vj-c8r8"
+- "https://www.vulncheck.com/advisories/phpmyfaq-stored-xss-via-utils-parseurl-in-comment-rendering"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:L/A:N"
+uuid: "b59c0076-2f0b-4f85-80f5-b4e8e33c93a2"
+cwe_ids:
+- "CWE-79"
+- "CWE-116"
+- "CWE-937"
+- "CWE-1035"

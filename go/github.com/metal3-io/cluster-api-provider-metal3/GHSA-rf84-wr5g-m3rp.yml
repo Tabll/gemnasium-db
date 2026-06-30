@@ -1,0 +1,40 @@
+---
+identifier: "GHSA-rf84-wr5g-m3rp"
+identifiers:
+- "GHSA-rf84-wr5g-m3rp"
+package_slug: "go/github.com/metal3-io/cluster-api-provider-metal3"
+title: "CAPM3 vulnerable to Cross-Namespace resource access"
+description: "CAPM3 is Metal3's Cluster API (CAPI) provider for baremetal provisioning
+  in Kubernetes. Multiple cross-namespace access control vulnerabilities in Cluster
+  API Provider Metal3 allow users with permissions to create or modify CAPM3 resources
+  in one namespace to reference, read, or claim resources belonging to other namespaces."
+date: "2026-05-29"
+pubdate: "2026-05-29"
+affected_range: "<1.11.8||>=1.12.0 <1.12.5"
+fixed_versions:
+- "1.11.8"
+- "1.12.5"
+affected_versions: "All versions before 1.11.8, all versions starting from 1.12.0
+  before 1.12.5"
+not_impacted: "All versions starting from 1.11.8 before 1.12.0, all versions starting
+  from 1.12.5"
+solution: "Upgrade to versions 1.11.8, 1.12.5 or above."
+urls:
+- "https://github.com/advisories/GHSA-rf84-wr5g-m3rp"
+- "https://github.com/metal3-io/cluster-api-provider-metal3/security/advisories/GHSA-rf84-wr5g-m3rp"
+- "https://github.com/metal3-io/cluster-api-provider-metal3/pull/3288"
+- "https://github.com/metal3-io/cluster-api-provider-metal3/pull/3294"
+- "https://github.com/metal3-io/cluster-api-provider-metal3/pull/3317"
+- "https://github.com/metal3-io/cluster-api-provider-metal3/pull/3319"
+- "https://github.com/metal3-io/cluster-api-provider-metal3/pull/3322"
+- "https://github.com/metal3-io/cluster-api-provider-metal3/pull/3323"
+- "https://github.com/metal3-io/cluster-api-provider-metal3/pull/3325"
+- "https://github.com/metal3-io/cluster-api-provider-metal3/pull/3327"
+- "https://github.com/metal3-io/cluster-api-provider-metal3/pull/3343"
+- "https://github.com/metal3-io/cluster-api-provider-metal3/pull/3344"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:L/I:L/A:N"
+uuid: "bc3d0270-5465-410e-abc2-5c27f7adc65c"
+cwe_ids:
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

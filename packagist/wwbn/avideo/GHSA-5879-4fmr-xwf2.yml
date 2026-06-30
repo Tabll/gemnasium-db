@@ -4,16 +4,14 @@ identifiers:
 - "GHSA-5879-4fmr-xwf2"
 package_slug: "packagist/wwbn/avideo"
 title: "WWBN AVideo has an incomplete fix for CVE-2026-33293: Path Traversal"
-description: "The incomplete fix for AVideo's CloneSite `deleteDump` parameter does
-  not apply path traversal filtering, allowing `unlink()` of arbitrary files via `../../`
-  sequences in the GET parameter."
+description: "This advisory has been withdrawn."
 date: "2026-04-14"
 pubdate: "2026-04-14"
-affected_range: "<=29.0"
+affected_range: "<0"
 fixed_versions: []
-affected_versions: "All versions up to 29.0"
-not_impacted: ""
-solution: "Unfortunately, there is no solution available yet."
+affected_versions: "This advisory has been withdrawn."
+not_impacted: "This advisory has been withdrawn."
+solution: "This advisory has been withdrawn."
 urls:
 - "https://github.com/advisories/GHSA-5879-4fmr-xwf2"
 - "https://github.com/WWBN/AVideo/security/advisories/GHSA-5879-4fmr-xwf2"

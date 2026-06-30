@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-r8cj-3554-33mr"
+identifiers:
+- "GHSA-r8cj-3554-33mr"
+package_slug: "pypi/justhtml"
+title: "justhtml introduces denial-of-service hardening"
+description: "`justhtml` `1.18.0` fixes multiple low-severity denial-of-service hardening
+  issues in CSS selector handling and linkification.\n\nThese issues are availability
+  concerns. They do not allow script execution, data disclosure, or sanitizer bypass
+  by themselves."
+date: "2026-05-08"
+pubdate: "2026-05-08"
+affected_range: "<1.18.0"
+fixed_versions:
+- "1.18.0"
+affected_versions: "All versions before 1.18.0"
+not_impacted: "All versions starting from 1.18.0"
+solution: "Upgrade to version 1.18.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-r8cj-3554-33mr"
+- "https://github.com/EmilStenstrom/justhtml/security/advisories/GHSA-r8cj-3554-33mr"
+uuid: "2a5f8797-16bd-4a3a-aef3-36221f3a42fa"
+cwe_ids:
+- "CWE-400"
+- "CWE-407"
+- "CWE-835"
+- "CWE-937"
+- "CWE-1035"

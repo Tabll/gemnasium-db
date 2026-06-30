@@ -12,7 +12,7 @@ description: "The `actionSavePermissions()` endpoint allows a user with only `vi
   memberships."
 date: "2026-04-14"
 pubdate: "2026-04-14"
-affected_range: ">=5.6.0 <5.9.15"
+affected_range: "<0"
 fixed_versions:
 - "5.9.15"
 affected_versions: "All versions starting from 5.6.0 before 5.9.15"

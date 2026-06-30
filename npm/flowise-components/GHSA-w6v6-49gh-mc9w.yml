@@ -20,7 +20,6 @@ solution: "Upgrade to version 3.1.0 or above."
 urls:
 - "https://github.com/advisories/GHSA-w6v6-49gh-mc9w"
 - "https://github.com/FlowiseAI/Flowise/security/advisories/GHSA-w6v6-49gh-mc9w"
-- "https://github.com/FlowiseAI/Flowise"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:N/I:H/A:N"
 cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:N/VI:L/VA:N/SC:N/SI:H/SA:N"
 uuid: "5ae096c0-aaad-47b1-b876-30afc0a708b2"

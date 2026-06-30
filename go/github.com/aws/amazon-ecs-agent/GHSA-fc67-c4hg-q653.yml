@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-fc67-c4hg-q653"
+identifiers:
+- "GHSA-fc67-c4hg-q653"
+package_slug: "go/github.com/aws/amazon-ecs-agent"
+title: "Amazon ECS Container Agent (Windows) is vulnerable to Information Disclosure"
+description: "[Amazon Elastic Container Service (Amazon ECS)](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html)
+  is a fully managed container orchestration service that enables customers to deploy,
+  manage, and scale containerized applications. An issue exists where, under certain
+  circumstances, improper input validation in the FSx Windows File Server volume mounting
+  process allows command injection through specially crafted credentials."
+date: "2026-05-07"
+pubdate: "2026-05-07"
+affected_range: ">=1.47.0 <1.103.0"
+fixed_versions:
+- "1.103.0"
+affected_versions: "All versions starting from 1.47.0 before 1.103.0"
+not_impacted: "All versions before 1.47.0, all versions starting from 1.103.0"
+solution: "Upgrade to version 1.103.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-fc67-c4hg-q653"
+- "https://github.com/aws/amazon-ecs-agent/security/advisories/GHSA-fc67-c4hg-q653"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H"
+uuid: "a81bff4a-9645-4234-a7b9-c07f874dab0a"
+cwe_ids:
+- "CWE-78"
+- "CWE-937"
+- "CWE-1035"

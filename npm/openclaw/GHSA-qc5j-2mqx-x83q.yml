@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-qc5j-2mqx-x83q"
+identifiers:
+- "GHSA-qc5j-2mqx-x83q"
+package_slug: "npm/openclaw"
+title: "Duplicate Advisory: OpenClaw: Webchat media embedding enforces local-root
+  containment for tool-result files"
+description: "This advisory has been withdrawn."
+date: "2026-05-05"
+pubdate: "2026-04-20"
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "This advisory has been withdrawn."
+not_impacted: "This advisory has been withdrawn."
+solution: "This advisory has been withdrawn."
+urls:
+- "https://github.com/advisories/GHSA-qc5j-2mqx-x83q"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-mr34-9552-qr95"
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-41389"
+- "https://github.com/openclaw/openclaw/commit/1470de5d3e0970856d86cd99336bb8ada3fe87da"
+- "https://github.com/openclaw/openclaw/commit/52ef42302ead9e183e6c8810e0a04ee4ef8ae9fc"
+- "https://github.com/openclaw/openclaw/commit/6e58f1f9f54bca1fea1268ec0ee4c01a2af03dde"
+- "https://www.vulncheck.com/advisories/openclaw-arbitrary-file-read-via-unvalidated-tool-result-media-paths"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:L/VI:N/VA:N/SC:L/SI:N/SA:N"
+uuid: "5d6e4c3e-237c-48cf-b3f8-a6c09984a98c"
+cwe_ids:
+- "CWE-73"
+- "CWE-937"
+- "CWE-1035"

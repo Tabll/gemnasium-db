@@ -4,16 +4,14 @@ identifiers:
 - "GHSA-pq8p-wc4f-vg7j"
 package_slug: "packagist/wwbn/avideo"
 title: "WWBN AVideo has an incomplete fix for CVE-2026-33502: Command Injection"
-description: "The incomplete fix for AVideo's `test.php` adds `escapeshellarg` for
-  wget but leaves the `file_get_contents` and `curl` code paths unsanitized, and the
-  URL validation regex `/^http/` accepts strings like `httpevil.com`."
+description: "This advisory has been withdrawn."
 date: "2026-04-14"
 pubdate: "2026-04-14"
-affected_range: "<=29.0"
+affected_range: "<0"
 fixed_versions: []
-affected_versions: "All versions up to 29.0"
-not_impacted: ""
-solution: "Unfortunately, there is no solution available yet."
+affected_versions: "This advisory has been withdrawn."
+not_impacted: "This advisory has been withdrawn."
+solution: "This advisory has been withdrawn."
 urls:
 - "https://github.com/advisories/GHSA-pq8p-wc4f-vg7j"
 - "https://github.com/WWBN/AVideo/security/advisories/GHSA-pq8p-wc4f-vg7j"

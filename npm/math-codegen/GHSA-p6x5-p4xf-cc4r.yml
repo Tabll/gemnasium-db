@@ -11,7 +11,7 @@ description: "String literal content passed to `cg.parse()` is injected verbatim
   vulnerable to full RCE."
 date: "2026-04-17"
 pubdate: "2026-04-17"
-affected_range: "<0.4.3"
+affected_range: "<0"
 fixed_versions:
 - "0.4.3"
 affected_versions: "All versions before 0.4.3"

@@ -1,0 +1,21 @@
+---
+identifier: "GMS-2017-340"
+identifiers:
+- "GMS-2017-340"
+package_slug: "packagist/phpxmlrpc/extras"
+title: "Cross-site Scripting"
+description: "XSS in class `documenting_xmlrpc_server`."
+date: "2017-10-29"
+pubdate: "2017-10-29"
+affected_range: "<0.6.1"
+fixed_versions:
+- "0.6.1"
+affected_versions: "All versions before 0.6.1"
+not_impacted: "All versions starting from 0.6.1"
+solution: "Upgrade to version 0.6.1 or above."
+urls:
+- "https://github.com/gggeek/phpxmlrpc-extras/releases/tag/0.6.1"
+uuid: "f910d758-565c-4e04-8266-d28173dbb684"
+cwe_ids:
+- "CWE-1035"
+- "CWE-937"

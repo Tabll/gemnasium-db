@@ -1,0 +1,41 @@
+---
+identifier: "GHSA-pv2j-rghr-v5r9"
+identifiers:
+- "GHSA-pv2j-rghr-v5r9"
+package_slug: "pypi/praisonaiagents"
+title: "PraisonAI: execute_code sandbox bypass: str.format C-level attribute access
+  reads every blocklisted dunder"
+description: "The `execute_code` tool's subprocess sandbox advertises a three-layer
+  defense (AST validation, text-pattern blocklist, restricted `__builtins__`). In
+  **sandbox mode** (the default) only two layers are active — the text-pattern blocklist
+  is skipped — and both remaining layers are bypassed by combining two CPython semantics:\n\n1.
+  **Runtime string assembly.** The AST validator (`src/praisonai-agents/praisonaiagents/tools/python_tools.py:75`)
+  enumerates blocked dunder names against `ast.Attribute.attr`, `ast.Call.func.id`,
+  and `ast.Constant` string-substring. Names assembled at runtime (e.g. `\"_\"*2 +
+  \"class\" + \"_\"*2`) appear in the AST as multiple short `ast.Constant` nodes,
+  none containing a blocked substring, so the static check passes.\n2. **C-level attribute
+  access via format-spec.** `str.format` / `str.format_map` resolve dotted field references
+  through CPython's internal `PyObject_GetAttr` (`do_string_format` → `get_field`).
+  This C path never consults the Python-level `getattr` binding. The sandbox's `_safe_getattr`
+  wrapper (`python_tools.py:221`) is installed only as the `getattr` name in `safe_builtins`,
+  so any C-level attribute access — including format-spec field resolution — sidesteps
+  it. `format`/`format_map` are also absent from `_SANDBOX_BLOCKED_CALLS` (`python_tools.py:56`).\n\nCombined,
+  this yields an arbitrary read primitive over every blocklisted attribute (`__class__`,
+  `__qualname__`, `__bases__`, `__base__`, function `__globals__`, `__dict__`, …)."
+date: "2026-06-18"
+pubdate: "2026-06-18"
+affected_range: "<1.6.59"
+fixed_versions:
+- "1.6.59"
+affected_versions: "All versions before 1.6.59"
+not_impacted: "All versions starting from 1.6.59"
+solution: "Upgrade to version 1.6.59 or above."
+urls:
+- "https://github.com/advisories/GHSA-pv2j-rghr-v5r9"
+- "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-pv2j-rghr-v5r9"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+uuid: "eaccb5d9-8f83-43b6-9fba-fc4e07502b73"
+cwe_ids:
+- "CWE-693"
+- "CWE-937"
+- "CWE-1035"

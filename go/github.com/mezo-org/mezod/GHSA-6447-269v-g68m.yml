@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-6447-269v-g68m"
+identifiers:
+- "GHSA-6447-269v-g68m"
+package_slug: "go/github.com/mezo-org/mezod"
+title: "Mezo: ERC-20 bridgeOut burn can be erased by a stale StateDB overwrite leading
+  to full L1 bridge drain"
+description: "**Note: the fixed version of the validator client has been deployed
+  for some time.**"
+date: "2026-05-06"
+pubdate: "2026-05-06"
+affected_range: "<8.0.0"
+fixed_versions:
+- "8.0.0"
+affected_versions: "All versions before 8.0.0"
+not_impacted: "All versions starting from 8.0.0"
+solution: "Upgrade to version 8.0.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-6447-269v-g68m"
+- "https://github.com/mezo-org/mezod/security/advisories/GHSA-6447-269v-g68m"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:H/SC:N/SI:N/SA:N"
+uuid: "4ed2132e-dadc-4bf7-8bab-4f7e8e839f44"
+cwe_ids:
+- "CWE-662"
+- "CWE-937"
+- "CWE-1035"

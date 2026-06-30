@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-gpxg-fx2g-qxj2"
+identifiers:
+- "GHSA-gpxg-fx2g-qxj2"
+package_slug: "cargo/kanidm"
+title: "Kanidm: Stored HTML injection in \"passkey-enrolment\" partial via displayname
+  → htmx-driven authenticated request forgery"
+description: "The kanidmd web UI renders the WebAuthn passkey-registration challenge
+  as raw JSON inside an inline `<script id=\"data\">` element using the Askama `|safe`
+  filter. The challenge embeds the account's `displayname`, which `serde_json` serialises
+  without escaping `<`/`>`. A `displayname` containing `</script>` therefore terminates
+  the script element early and injects arbitrary HTML into the credential-update page.
+  Because the page is htmx-driven and the server's CSP allows `'unsafe-eval'`, injected
+  `hx-*` attributes can issue authenticated same-origin API requests with the viewer's
+  bearer cookie."
+date: "2026-05-06"
+pubdate: "2026-05-06"
+affected_range: "<1.9.3"
+fixed_versions:
+- "1.9.3"
+affected_versions: "All versions before 1.9.3"
+not_impacted: "All versions starting from 1.9.3"
+solution: "Upgrade to version 1.9.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-gpxg-fx2g-qxj2"
+- "https://github.com/kanidm/kanidm/security/advisories/GHSA-gpxg-fx2g-qxj2"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:N"
+uuid: "e8c1abb3-32e4-404e-9f9e-206c7b34e03c"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

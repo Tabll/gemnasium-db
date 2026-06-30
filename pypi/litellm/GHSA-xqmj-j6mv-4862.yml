@@ -13,7 +13,7 @@ description: "The `POST /prompts/test` endpoint accepted user-supplied prompt te
   host.\n\nProxy deployments running an affected version are in scope."
 date: "2026-04-24"
 pubdate: "2026-04-24"
-affected_range: ">=1.80.5,<1.83.7"
+affected_range: "<0"
 fixed_versions:
 - "1.83.7"
 affected_versions: "All versions starting from 1.80.5 before 1.83.7"

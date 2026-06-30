@@ -20,7 +20,6 @@ urls:
 - "https://github.com/openclaw/openclaw/security/advisories/GHSA-f934-5rqf-xx47"
 - "https://github.com/openclaw/openclaw/pull/66026"
 - "https://github.com/openclaw/openclaw/commit/37d5971db36491d5050efd42c333cbe0b98ed292"
-- "https://github.com/openclaw/openclaw"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N"
 cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N"
 uuid: "f339bb34-e678-42bd-a9b0-536ed7205463"

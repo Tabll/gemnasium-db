@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-rj4g-rqgh-rx9h"
+identifiers:
+- "GHSA-rj4g-rqgh-rx9h"
+package_slug: "go/github.com/lin-snow/ech0"
+title: "Ech0 comment model's Email field returned on public /api/comments endpoints"
+description: "The `Comment` model serializes its `Email` field through the public
+  comment-listing API. `internal/model/comment/comment.go:33` uses `json:\"email\"`,
+  while adjacent PII fields (`IPHash`, `UserAgent`) correctly use `json:\"-\"`. The
+  public endpoints `GET /api/comments?echo_id=X` and `GET /api/comments/public?limit=N`
+  both live on `PublicRouterGroup` with no authentication. Alice retrieves every guest
+  commenter's email address on the instance with a few unauthenticated HTTP calls."
+date: "2026-05-07"
+pubdate: "2026-05-07"
+affected_range: "<1.4.8-0.20260503034700-cb8d7a997dd8"
+fixed_versions:
+- "1.4.8-0.20260503034700-cb8d7a997dd8"
+affected_versions: "All versions before 1.4.8-0.20260503034700-cb8d7a997dd8"
+not_impacted: "All versions starting from 1.4.8-0.20260503034700-cb8d7a997dd8"
+solution: "Upgrade to version 1.4.8-0.20260503034700-cb8d7a997dd8 or above."
+urls:
+- "https://github.com/advisories/GHSA-rj4g-rqgh-rx9h"
+- "https://github.com/lin-snow/Ech0/security/advisories/GHSA-rj4g-rqgh-rx9h"
+- "https://github.com/lin-snow/Ech0/commit/cb8d7a997dd8f573ef0e22e4e6b23b2b8ee92ebd"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+uuid: "2178acbb-dd32-4ba7-b9ae-972ee4b197b1"
+cwe_ids:
+- "CWE-200"
+- "CWE-359"
+- "CWE-937"
+- "CWE-1035"

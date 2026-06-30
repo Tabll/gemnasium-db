@@ -1,0 +1,42 @@
+---
+identifier: "GHSA-w4c6-7r69-w7j9"
+identifiers:
+- "CVE-2026-52880"
+- "GHSA-w4c6-7r69-w7j9"
+package_slug: "go/github.com/klever-io/klever-go"
+title: "klever-go: REST API slow-header connection exhaustion via Gin Engine.Run"
+description: "The Klever seednode REST API starts a Gin engine with `Engine.Run(restAPIInterface)`.
+  In Gin v1.9.1, `Engine.Run` calls Go's default `http.ListenAndServe`, which constructs
+  an HTTP server without application-level `ReadHeaderTimeout`, `ReadTimeout`, or
+  `MaxHeaderBytes` limits.\n\nAn unauthenticated client that can reach a REST listener
+  bound with Klever's documented `--rest-api-interface :8080` all-interface option
+  can hold incomplete HTTP headers open indefinitely. In a local proof against the
+  real `cmd/seednode/api.Start` path on `v1.7.17`, 120 slow-header connections caused
+  20/20 legitimate `/log` probes to fail with `accept: too many open files`. A fixed
+  control using the same Gin router behind an explicit `http.Server` with `ReadHeaderTimeout`,
+  `ReadTimeout`, and `MaxHeaderBytes` retained 0 slow connections and served 20/20
+  probes.\n\nThis report is distinct from the P2P advisories and from my direct-message
+  goroutine report. This finding concerns Klever-owned HTTP REST startup code (`cmd/seednode/api`
+  and `network/api`) using Gin `Engine.Run` without server-level header deadlines.
+  It does not depend on `MultiDataInterceptor`, `Batch.Decompress`, libp2p, malformed
+  P2P messages, or direct-message goroutine spawning."
+date: "2026-06-09"
+pubdate: "2026-06-05"
+affected_range: ">=1.7.14 <1.7.18"
+fixed_versions:
+- "1.7.18"
+affected_versions: "All versions starting from 1.7.14 before 1.7.18"
+not_impacted: "All versions before 1.7.14, all versions starting from 1.7.18"
+solution: "Upgrade to version 1.7.18 or above."
+urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-52880"
+- "https://github.com/advisories/GHSA-w4c6-7r69-w7j9"
+- "https://github.com/klever-io/klever-go/security/advisories/GHSA-w4c6-7r69-w7j9"
+- "https://github.com/klever-io/klever-go/releases/tag/v1.7.18"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "03370133-5dbc-495b-9ee3-d3929eba68d3"
+cwe_ids:
+- "CWE-400"
+- "CWE-770"
+- "CWE-937"
+- "CWE-1035"

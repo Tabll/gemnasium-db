@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-w7pm-9g55-mxfm"
+identifiers:
+- "GHSA-w7pm-9g55-mxfm"
+package_slug: "pypi/stigmem-node"
+title: "stigmem-node's unsigned plugin override could be enabled without a second
+  explicit acknowledgment"
+description: "A single configuration flag could disable plugin signature enforcement.
+  If an operator unintentionally carried that setting into an environment where plugin
+  paths are writable by less-trusted users, unsigned plugin code could be loaded."
+date: "2026-05-29"
+pubdate: "2026-05-29"
+affected_range: "<0.9.0-a.2"
+fixed_versions:
+- "0.9.0-a.2"
+affected_versions: "All versions before 0.9.0-a.2"
+not_impacted: "All versions starting from 0.9.0-a.2"
+solution: "Upgrade to version 0.9.0-a.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-w7pm-9g55-mxfm"
+- "https://github.com/eidetic-labs/stigmem/security/advisories/GHSA-w7pm-9g55-mxfm"
+- "https://github.com/eidetic-labs/stigmem/blob/v0.9.0a2/CHANGELOG.md#L14-L35"
+- "https://github.com/eidetic-labs/stigmem/blob/v0.9.0a2/SECURITY.md"
+- "https://github.com/eidetic-labs/stigmem/releases/tag/v0.9.0a2"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:L/AC:L/AT:P/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+uuid: "aded5c5d-e9b9-404f-b0fc-3fdc9fa9da09"
+cwe_ids:
+- "CWE-494"
+- "CWE-937"
+- "CWE-1035"

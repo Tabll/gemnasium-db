@@ -1,0 +1,26 @@
+---
+identifier: "GHSA-qmq6-f8pr-cx5x"
+identifiers:
+- "GHSA-qmq6-f8pr-cx5x"
+package_slug: "npm/uuid"
+title: "Duplicate Advisory: uuid: Missing buffer bounds check in v3/v5/v6 when buf
+  is provided"
+description: "This advisory has been withdrawn."
+date: "2026-05-05"
+pubdate: "2026-04-23"
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "This advisory has been withdrawn."
+not_impacted: "This advisory has been withdrawn."
+solution: "This advisory has been withdrawn."
+urls:
+- "https://github.com/advisories/GHSA-qmq6-f8pr-cx5x"
+- "https://github.com/uuidjs/uuid/security/advisories/GHSA-w5hq-g745-h8pq"
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-41988"
+- "https://github.com/uuidjs/uuid/commit/3d2c5b0342f0fcb52a5ac681c3d47c13e7444b34"
+cvss_v3: "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:C/C:N/I:L/A:N"
+uuid: "653adbcf-024c-4083-8ea9-79cbe44e84f0"
+cwe_ids:
+- "CWE-670"
+- "CWE-937"
+- "CWE-1035"

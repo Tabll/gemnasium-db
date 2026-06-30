@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-jf6w-2mvx-633j"
+identifiers:
+- "GHSA-jf6w-2mvx-633j"
+package_slug: "pypi/justhtml"
+title: "justhtml: to_markdown() code-span blank-line breakout enables XSS"
+description: "In `justhtml` 0.9.0 through 1.21.0, `to_markdown()` renders `<code>`
+  text (and `<pre>` text inside a link) as an inline Markdown code span whose only
+  protection is backtick-fence length. A blank line (`\\n\\n`) in that text terminates
+  the inline span in any compliant Markdown renderer, so attacker-controlled text
+  that survived HTML sanitization is emitted **unescaped** after the blank line and
+  is re-parsed as live raw HTML/Markdown — yielding XSS in the default configuration.
+  Likely **CWE-79 (Cross-site Scripting)** arising from **CWE-116 (Improper Encoding/Escaping
+  of Output)**."
+date: "2026-06-25"
+pubdate: "2026-06-25"
+affected_range: ">=0.9.0,<1.22.0"
+fixed_versions:
+- "1.22.0"
+affected_versions: "All versions starting from 0.9.0 before 1.22.0"
+not_impacted: "All versions before 0.9.0, all versions starting from 1.22.0"
+solution: "Upgrade to version 1.22.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-jf6w-2mvx-633j"
+- "https://github.com/EmilStenstrom/justhtml/security/advisories/GHSA-jf6w-2mvx-633j"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+uuid: "8e01654a-1860-4bb1-8992-4e30853a6bab"
+cwe_ids:
+- "CWE-79"
+- "CWE-116"
+- "CWE-937"
+- "CWE-1035"

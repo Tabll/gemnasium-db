@@ -1,0 +1,38 @@
+---
+identifier: "GHSA-97r8-rf7q-wmjw"
+identifiers:
+- "GHSA-97r8-rf7q-wmjw"
+package_slug: "npm/@sveltia/cms"
+title: "Sveltia CMS: Stored XSS in entry summary rendering via entity-decoded HTML"
+description: "A stored cross-site scripting (XSS) vulnerability affected entry summary
+  rendering in Sveltia CMS.\n\nEntry summaries that allowed limited Markdown were
+  parsed, sanitized, and then HTML entities were decoded. This order allowed specially
+  crafted entity-encoded HTML, such as encoded tags or event handler attributes, to
+  become active HTML after sanitization. When the resulting summary was rendered in
+  the CMS UI, arbitrary JavaScript could execute in the browser of a user viewing
+  the affected entry list or search result.\n\nThe practical impact is limited in
+  currently supported Sveltia CMS usage because the CMS is intended for a single developer
+  or a small trusted team, and [open authoring](https://sveltiacms.app/en/docs/workflows/open)
+  / untrusted multi-user authoring is not currently implemented. Exploitation requires
+  the ability to place malicious content into the repository or content source that
+  the CMS loads."
+date: "2026-05-18"
+pubdate: "2026-05-18"
+affected_range: "<0.160.1"
+fixed_versions:
+- "0.160.1"
+affected_versions: "All versions before 0.160.1"
+not_impacted: "All versions starting from 0.160.1"
+solution: "Upgrade to version 0.160.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-97r8-rf7q-wmjw"
+- "https://github.com/sveltia/sveltia-cms/security/advisories/GHSA-97r8-rf7q-wmjw"
+- "https://github.com/sveltia/sveltia-cms/commit/43a6ac5d0182a503400d8ce1ac156e08f537b1b2"
+- "https://github.com/sveltia/sveltia-cms/releases/tag/v0.160.1"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "425d7d5b-f47e-45d9-aa03-cc9f1c034ed2"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

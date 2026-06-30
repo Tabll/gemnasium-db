@@ -1,0 +1,30 @@
+---
+identifier: "GMS-2026-572"
+identifiers:
+- "GMS-2026-572"
+package_slug: "pypi/rlask"
+title: "Embedded Malicious Code (Shai-Hulud)"
+description: "This package was identified by GitLab's Vulnerability Research team as part 
+  of a coordinated Shai-Hulud copycat supply chain attack on PyPI on June 7, 2026. 
+  The package `rlask` is a typosquat of the popular Flask web framework. 
+  
+  It contains a `.pth` file that auto-executes on Python startup, downloads the Bun 
+  JavaScript runtime, and runs an obfuscated credential stealer targeting GitHub, 
+  AWS, Azure, GCP, HashiCorp Vault, NPM, PyPI, RubyGems, SSH keys, Kubernetes, and Sigstore. 
+  
+  The worm self-propagates by pushing malicious commits to accessible GitHub repositories and
+  publishing poisoned packages to other registries. Any computer that has this package 
+  installed or running should be considered fully compromised. All secrets and keys stored 
+  on that computer should be rotated immediately from a different computer."
+date: "2026-06-07"
+pubdate: "2026-06-07"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Remove this package immediately and rotate any secrets that may have been compromised."
+urls:
+- "https://about.gitlab.com/blog/gitlab-discovers-widespread-npm-supply-chain-attack/"
+uuid: "d5430e55-54ce-4a5f-ae5f-b3c49cdc1125"
+cwe_ids:
+- "CWE-506"

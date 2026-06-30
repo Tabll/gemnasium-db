@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-wfpw-mmfh-qq69"
+identifiers:
+- "GHSA-wfpw-mmfh-qq69"
+package_slug: "gem/nokogiri"
+title: "Nokogiri: Possible Use-After-Free in XInclude Processing"
+description: "XInclude substitution performed by `Nokogiri::XML::Node#do_xinclude`
+  replaced each `<xi:include>` in place, freeing the include node along with its children
+  (such as `<xi:fallback>` and its descendants) and any namespaces declared on them.
+  If an application had already exposed one of those nodes or namespaces to Ruby,
+  the corresponding Ruby object was left pointing at freed memory. Using the object
+  could result in invalid reads or writes to memory.\n\nNokogiri 1.19.4 substitutes
+  each `<xi:include>` on a defensive copy by default, so the structures libxml2 frees
+  are never the ones bound to live Ruby objects.\n\nOnly the CRuby implementation
+  is affected; JRuby is not affected."
+date: "2026-06-19"
+pubdate: "2026-06-19"
+affected_range: "<1.19.4"
+fixed_versions:
+- "1.19.4"
+affected_versions: "All versions before 1.19.4"
+not_impacted: "All versions starting from 1.19.4"
+solution: "Upgrade to version 1.19.4 or above."
+urls:
+- "https://github.com/advisories/GHSA-wfpw-mmfh-qq69"
+- "https://github.com/sparklemotion/nokogiri/security/advisories/GHSA-wfpw-mmfh-qq69"
+uuid: "4536ed35-acdc-4dbc-b7f5-e9060ca881e8"
+cwe_ids:
+- "CWE-416"
+- "CWE-937"
+- "CWE-1035"

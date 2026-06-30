@@ -1,0 +1,41 @@
+---
+identifier: "GHSA-97pr-9hgg-3p8r"
+identifiers:
+- "GHSA-97pr-9hgg-3p8r"
+package_slug: "npm/parse-server"
+title: "parse-server: LiveQuery discloses object data to a subscriber across an ACL
+  read-access change"
+description: "A Parse Server LiveQuery subscriber can receive object field values
+  they are not authorized to read when a single `save` changes both an object field
+  and the subscriber's ACL read access to that object. When such a save removes the
+  subscriber's read access, the resulting `leave` event still carries the post-update
+  object body, disclosing the new field values the subscriber is no longer permitted
+  to read. The symmetric case applies to the `enter` event: when a save grants read
+  access, the event includes the pre-grant object state the subscriber was not previously
+  permitted to read. The disclosure is bounded to the single object affected by that
+  save and is delivered only to the subscriber whose access changed. Applications
+  that combine content changes with access-control changes in the same save on LiveQuery-enabled
+  classes are affected."
+date: "2026-06-19"
+pubdate: "2026-06-19"
+affected_range: "<8.6.83||>=9.0.0 <9.9.1-alpha.13"
+fixed_versions:
+- "8.6.83"
+- "9.9.1-alpha.13"
+affected_versions: "All versions before 8.6.83, all versions starting from 9.0.0 before
+  9.9.1-alpha.13"
+not_impacted: "All versions starting from 8.6.83 before 9.0.0, all versions starting
+  from 9.9.1-alpha.13"
+solution: "Upgrade to versions 8.6.83, 9.9.1-alpha.13 or above."
+urls:
+- "https://github.com/advisories/GHSA-97pr-9hgg-3p8r"
+- "https://github.com/parse-community/parse-server/security/advisories/GHSA-97pr-9hgg-3p8r"
+- "https://github.com/parse-community/parse-server/pull/10515"
+- "https://github.com/parse-community/parse-server/pull/10516"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N"
+uuid: "2cd4b34e-13ef-4172-8d0c-db4c85fbddcb"
+cwe_ids:
+- "CWE-200"
+- "CWE-937"
+- "CWE-1035"

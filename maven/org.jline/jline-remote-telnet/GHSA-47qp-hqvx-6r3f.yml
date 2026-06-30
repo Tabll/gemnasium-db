@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-47qp-hqvx-6r3f"
+identifiers:
+- "GHSA-47qp-hqvx-6r3f"
+package_slug: "maven/org.jline/jline-remote-telnet"
+title: "JLine3 Telnet server: Unauthenticated Remote Memory Exhaustion via Unbounded
+  Telnet NEW-ENVIRON Variables"
+description: "The JLine3 Telnet server (`remote-telnet` module) does not limit the
+  number of\nenvironment variables a client may inject via the Telnet NEW-ENVIRON
+  option. An\nunauthenticated attacker can flood the server with a large number of
+  unique\nvariable pairs before sending the terminating IAC SE byte, exhausting JVM
+  heap\nmemory and causing an OutOfMemoryError (denial of service). Approximately
+  3–4 MB of\nnetwork traffic is sufficient to consume a 512 MB JVM heap."
+date: "2026-06-18"
+pubdate: "2026-06-18"
+affected_range: "[,4.2.1)"
+fixed_versions:
+- "4.2.1"
+affected_versions: "All versions before 4.2.1"
+not_impacted: "All versions starting from 4.2.1"
+solution: "Upgrade to version 4.2.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-47qp-hqvx-6r3f"
+- "https://github.com/jline/jline3/security/advisories/GHSA-47qp-hqvx-6r3f"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "d5e7e396-3ebf-4847-8437-7efc4d3f00f9"
+cwe_ids:
+- "CWE-400"
+- "CWE-937"
+- "CWE-1035"

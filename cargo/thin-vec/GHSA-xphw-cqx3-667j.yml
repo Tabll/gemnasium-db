@@ -12,7 +12,7 @@ description: "A **Double Free / Use-After-Free (UAF)** vulnerability has been id
   confirmed via **Miri** and **AddressSanitizer (ASAN)**.\n\n---"
 date: "2026-04-15"
 pubdate: "2026-04-15"
-affected_range: "<0.2.16"
+affected_range: "<0"
 fixed_versions:
 - "0.2.16"
 affected_versions: "All versions before 0.2.16"

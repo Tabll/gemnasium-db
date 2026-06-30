@@ -1,0 +1,44 @@
+---
+identifier: "GHSA-985r-q3qp-299h"
+identifiers:
+- "GHSA-985r-q3qp-299h"
+package_slug: "packagist/thorsten/phpmyfaq"
+title: "phpMyFAQ has an incomplete fix for GHSA-xvp4-phqj-cjr3 — editUser() and updateUserRights()
+  lack authorization guards"
+description: "phpMyFAQ 4.1.3 fixed **GHSA-xvp4-phqj-cjr3** (\"IDOR Account Takeover\")
+  by adding actor-authorization guards to `UserController::overwritePassword()`. The
+  patch establishes a new invariant, stated in its own code comments:\n\n> \"Only
+  SuperAdmins may change other users' [attributes]. Self-service is\n> always allowed.\"
+  and \"a non-SuperAdmin must never be able to alter a\n> SuperAdmin or protected
+  account.\"\n\nThat invariant is **not enforced** on two sibling endpoints in the
+  *same file*, which the 4.1.3 fix left **unchanged**, and which carry the identical
+  \"user-controlled `userId` → `getUserById()` → privileged mutation\" primitive —
+  but with a strictly more dangerous sink:\n\n| Endpoint | Route | Sink | Guard in
+  4.1.3 |\n|----------|-------|------|----------------|\n| `overwritePassword()` |
+  `admin/api/user/overwrite-password` | `changePassword()` | **isSelf + isSuperAdmin
+  + target-protection** (patched) |\n| `editUser()` | `admin/api/user/edit` | `setSuperAdmin((bool)$req.is_superadmin)`
+  | **none** (only `userHasPermission(USER_EDIT)`) |\n| `updateUserRights()` | `admin/api/user/update-rights`
+  | `grantUserRight($req.userId, …)` | **none** (only `userHasPermission(USER_EDIT)`)
+  |\n\nA logged-in administrator holding the delegable `edit_user` right — but  **not**
+  SuperAdmin — can therefore:\n\n1. Set their own (or anyone's) `is_superadmin` flag
+  to `true` via `admin/api/user/edit` → **full privilege escalation to SuperAdmin**.\n2.
+  Grant arbitrary rights to any account via `admin/api/user/update-rights`.\n\nThis
+  is exactly the threat model the parent advisory (GHSA-xvp4) calls out: \"organizations
+  with multiple admin users where not all should have SuperAdmin access.\""
+date: "2026-06-26"
+pubdate: "2026-06-26"
+affected_range: "<4.1.4"
+fixed_versions:
+- "4.1.4"
+affected_versions: "All versions before 4.1.4"
+not_impacted: "All versions starting from 4.1.4"
+solution: "Upgrade to version 4.1.4 or above."
+urls:
+- "https://github.com/advisories/GHSA-985r-q3qp-299h"
+- "https://github.com/thorsten/phpMyFAQ/security/advisories/GHSA-985r-q3qp-299h"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N"
+uuid: "627598b9-50fc-49a9-bf08-13602f42edf7"
+cwe_ids:
+- "CWE-832"
+- "CWE-937"
+- "CWE-1035"

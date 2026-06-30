@@ -25,7 +25,7 @@ description: "_What kind of vulnerability is it? Who is impacted?_\n\nAn authent
   (`PutObjectPartHandler`)."
 date: "2026-04-14"
 pubdate: "2026-04-14"
-affected_range: ">=0.0.0-20230506025312-76913a9fd5c6 <=0.0.0-20260212201848-7aac2a2c5b7c"
+affected_range: "<0"
 fixed_versions: []
 affected_versions: "All versions starting from 0.0.0-20230506025312-76913a9fd5c6 up
   to 0.0.0-20260212201848-7aac2a2c5b7c"

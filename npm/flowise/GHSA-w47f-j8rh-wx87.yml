@@ -13,7 +13,7 @@ description: "The `GET /api/v1/public-chatflows/:id` endpoint returns the full c
   plaintext API keys, and password-type fields."
 date: "2026-04-17"
 pubdate: "2026-04-17"
-affected_range: "<3.1.0"
+affected_range: "<0"
 fixed_versions:
 - "3.1.0"
 affected_versions: "All versions before 3.1.0"

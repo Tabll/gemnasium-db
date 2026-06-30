@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-ffp3-3562-8cv3"
 identifiers:
+- "CVE-2026-56074"
 - "GHSA-ffp3-3562-8cv3"
 package_slug: "pypi/praisonaiagents"
 title: "PraisonAI: Coarse-Grained Tool Approval Cache Bypasses Per-Invocation Consent
@@ -12,7 +13,7 @@ description: "The approval system in PraisonAI Agents caches tool approval decis
   passing all process environment variables to subprocesses, this allows an LLM agent
   (potentially via prompt injection) to silently exfiltrate API keys and credentials
   without further user consent."
-date: "2026-04-10"
+date: "2026-06-19"
 pubdate: "2026-04-10"
 affected_range: "<4.5.128"
 fixed_versions:
@@ -21,10 +22,11 @@ affected_versions: "All versions before 4.5.128"
 not_impacted: "All versions starting from 4.5.128"
 solution: "Upgrade to version 4.5.128 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-56074"
 - "https://github.com/advisories/GHSA-ffp3-3562-8cv3"
 - "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-ffp3-3562-8cv3"
-- "https://github.com/MervinPraison/PraisonAI"
 - "https://github.com/MervinPraison/PraisonAI/releases/tag/v4.5.128"
+- "https://www.vulncheck.com/advisories/praisonai-tool-approval-cache-bypass-via-coarse-grained-caching"
 cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N"
 uuid: "2720fdd6-cb03-4ca4-adc9-462713af04c7"
 cwe_ids:

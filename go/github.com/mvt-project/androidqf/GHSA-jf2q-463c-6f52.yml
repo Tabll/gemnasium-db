@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-jf2q-463c-6f52"
+identifiers:
+- "GHSA-jf2q-463c-6f52"
+package_slug: "go/github.com/mvt-project/androidqf"
+title: "androidqf: Zip entry Name Injection in APK bundle (Zip Slip for zip consumers)"
+description: "`generateZipPath()` constructs zip entry names for collected APKs using
+  device controlled content from `extractFileName()`. Since `extractFileName()` does
+  not reject traversal sequences, the resulting zip entry name can contain `../`.
+  AndroidQF itself does not extract the zip it creates, but any forensic tool that
+  extracts the acquisition bundle without zip-slip protection could write files to
+  attacker chosen paths."
+date: "2026-05-21"
+pubdate: "2026-05-21"
+affected_range: "<1.8.3"
+fixed_versions:
+- "1.8.3"
+affected_versions: "All versions before 1.8.3"
+not_impacted: "All versions starting from 1.8.3"
+solution: "Upgrade to version 1.8.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-jf2q-463c-6f52"
+- "https://github.com/mvt-project/androidqf/security/advisories/GHSA-jf2q-463c-6f52"
+- "https://github.com/mvt-project/androidqf/releases/tag/v1.8.3"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "14c53b02-cc6f-4153-997d-6997cf6e7cd0"
+cwe_ids:
+- "CWE-22"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-4xgf-cpjx-pc3j"
+identifiers:
+- "GHSA-4xgf-cpjx-pc3j"
+package_slug: "pypi/pydantic-settings"
+title: "pydantic-settings: NestedSecretsSettingsSource follows symlinks outside secrets_dir,
+  enabling local file read and bypassing secrets_dir_max_size"
+description: "`NestedSecretsSettingsSource` reads secret values from files in a configured
+  `secrets_dir`. When `secrets_nested_subdir=True`, a directory entry inside `secrets_dir`
+  that is a symbolic link pointing **outside** `secrets_dir` is followed, so files
+  outside the configured directory are read into settings values. The same code path
+  bypasses the documented `secrets_dir_max_size` protection. An attacker or lower-privileged
+  component able to influence entries in the configured secrets directory (for example,
+  a writable or shared secrets mount) can turn this into an unintended local file
+  read into settings and can defeat the advertised loading-size cap. This report does
+  not claim network reachability by itself."
+date: "2026-06-20"
+pubdate: "2026-06-19"
+affected_range: ">=2.12.0,<2.14.2"
+fixed_versions:
+- "2.14.2"
+affected_versions: "All versions starting from 2.12.0 before 2.14.2"
+not_impacted: "All versions before 2.12.0, all versions starting from 2.14.2"
+solution: "Upgrade to version 2.14.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-4xgf-cpjx-pc3j"
+- "https://github.com/pydantic/pydantic-settings/security/advisories/GHSA-4xgf-cpjx-pc3j"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L"
+uuid: "02a0128f-3989-4c91-90ff-c5c1a6f61760"
+cwe_ids:
+- "CWE-22"
+- "CWE-59"
+- "CWE-400"
+- "CWE-937"
+- "CWE-1035"

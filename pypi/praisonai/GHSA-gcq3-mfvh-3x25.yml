@@ -1,0 +1,37 @@
+---
+identifier: "GHSA-gcq3-mfvh-3x25"
+identifiers:
+- "GHSA-gcq3-mfvh-3x25"
+package_slug: "pypi/praisonai"
+title: "PraisonAI Code agent tools fail open without a workspace boundary"
+description: "PraisonAI Code's agent-compatible `CODE_TOOLS` wrappers keep a global
+  workspace root initialized to `None`. If an application uses `CODE_TOOLS`, `code_read_file`,
+  `code_search_replace`, or `code_apply_diff` before calling `set_workspace()`, the
+  wrappers pass `workspace=None` into lower-level helpers that only enforce path containment
+  when a workspace is truthy. Absolute paths outside the intended project workspace
+  are then read and modified.\n\nThe official examples correctly call `set_workspace()`
+  before `CODE_TOOLS`, and this report does not claim configured workspaces are ineffective.
+  The issue is the fail-open default. PraisonAI's security documentation describes
+  workspace boundaries as the path-traversal protection mechanism, and the already-published
+  Python API arbitrary file write advisory (`GHSA-hvhp-v2gc-268q`) was fixed by defaulting
+  an unset workspace to `os.getcwd()`. The adjacent read and edit paths reached through
+  `CODE_TOOLS` still fail open."
+date: "2026-06-18"
+pubdate: "2026-06-18"
+affected_range: "<4.6.59"
+fixed_versions:
+- "4.6.59"
+affected_versions: "All versions before 4.6.59"
+not_impacted: "All versions starting from 4.6.59"
+solution: "Upgrade to version 4.6.59 or above."
+urls:
+- "https://github.com/advisories/GHSA-gcq3-mfvh-3x25"
+- "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-gcq3-mfvh-3x25"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:N"
+uuid: "4bd9fe75-5d00-4cc1-9edd-869ea2119b00"
+cwe_ids:
+- "CWE-22"
+- "CWE-200"
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

@@ -5,23 +5,14 @@ identifiers:
 package_slug: "npm/nodemailer"
 title: "Duplicate Advisory: Nodemailer: Email to an unintended domain can occur due
   to Interpretation Conflict"
-description: "## Duplicate Advisory\nThis advisory has been withdrawn because it is
-  a duplicate of GHSA-mm7p-fcc7-pg87. This link is maintained to preserve external
-  references.\n\n## Original Description\nA vulnerability was identified in the email
-  parsing library due to improper handling of specially formatted recipient email
-  addresses. An attacker can exploit this flaw by crafting a recipient address that
-  embeds an external address within quotes. This causes the application to misdirect
-  the email to the attacker's external address instead of the intended internal recipient.
-  This could lead to a significant data leak of sensitive information and allow an
-  attacker to bypass security filters and access controls."
+description: "This advisory has been withdrawn."
 date: "2025-11-17"
 pubdate: "2025-11-14"
-affected_range: "<7.0.7"
-fixed_versions:
-- "7.0.7"
-affected_versions: "All versions before 7.0.7"
-not_impacted: "All versions starting from 7.0.7"
-solution: "Upgrade to version 7.0.7 or above."
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "This advisory has been withdrawn."
+not_impacted: "This advisory has been withdrawn."
+solution: "This advisory has been withdrawn."
 urls:
 - "https://github.com/advisories/GHSA-jj37-3377-m6vv"
 - "https://github.com/nodemailer/nodemailer/security/advisories/GHSA-mm7p-fcc7-pg87"

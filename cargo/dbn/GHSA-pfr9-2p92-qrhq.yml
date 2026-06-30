@@ -14,21 +14,21 @@ description: "The `heap-buffer-overflow` is triggered in the `strlen()` function
   of the buffer in search of a null terminator. This results in an out-of-bounds memory
   read and can lead to a heap-buffer-overflow, potentially causing memory corruption
   or exposing sensitive information."
-date: "2024-10-09"
+date: "2026-05-20"
 pubdate: "2024-10-09"
-affected_range: "<0.22.0"
+affected_range: "<0.22.1"
 fixed_versions:
-- "0.22.0"
-affected_versions: "All versions before 0.22.0"
-not_impacted: "All versions starting from 0.22.0"
-solution: "Upgrade to version 0.22.0 or above."
+- "0.22.1"
+affected_versions: "All versions before 0.22.1"
+not_impacted: "All versions starting from 0.22.1"
+solution: "Upgrade to version 0.22.1 or above."
 urls:
 - "https://github.com/advisories/GHSA-pfr9-2p92-qrhq"
 - "https://github.com/databento/dbn/issues/67"
 - "https://github.com/databento/dbn/commit/339efb90fdb980920a5e8829008abc1114f4bfdd"
-- "https://github.com/databento/dbn"
 - "https://rustsec.org/advisories/RUSTSEC-2024-0377.html"
 cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+cvss_v4: "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
 uuid: "e2fe121c-29ed-4b2f-9878-2e9561ac713f"
 cwe_ids:
 - "CWE-126"

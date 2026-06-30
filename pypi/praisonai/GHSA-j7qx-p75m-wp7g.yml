@@ -1,0 +1,40 @@
+---
+identifier: "GHSA-j7qx-p75m-wp7g"
+identifiers:
+- "GHSA-j7qx-p75m-wp7g"
+package_slug: "pypi/praisonai"
+title: "PraisonAI dynamic-context artifact tools read arbitrary host files outside
+  artifact storage"
+description: "PraisonAI's Dynamic Context Discovery feature exposes artifact helper
+  tools\nthrough `ctx.get_tools()`:\n\n```python\nctx = setup_dynamic_context()\n\nagent
+  = Agent(\ninstructions=\"You are a data analyst.\",\ntools=ctx.get_tools(),\nhooks=[ctx.get_middleware()],\n)\n```\n\nThe
+  official documentation describes these helpers as a way for the agent to\nexplore
+  large tool-output artifacts that were queued by the middleware:\n\n- large tool
+  outputs are saved as artifacts;\n- the agent receives compact artifact references;
+  and\n- the agent uses `artifact_tail` and `artifact_grep` to explore that data.\n\nThe
+  implemented artifact tools do not enforce that the supplied\n`artifact_path` is
+  an artifact created by the configured store or that it lives\nunder the configured
+  artifact base directory. Instead, `artifact_head`,\n`artifact_tail`, `artifact_grep`,
+  and `artifact_chunk` wrap the caller-supplied\npath directly into an `ArtifactRef`
+  and then read it from the host filesystem.\n\nAs a result, any prompt/user/tool-caller
+  that can influence those tool\narguments can read files readable by the PraisonAI
+  process, such as project\n`.env` files, cloud credentials, SSH keys, source files,
+  or other local data."
+date: "2026-06-18"
+pubdate: "2026-06-18"
+affected_range: ">=3.8.1,<4.6.59"
+fixed_versions:
+- "4.6.59"
+affected_versions: "All versions starting from 3.8.1 before 4.6.59"
+not_impacted: "All versions before 3.8.1, all versions starting from 4.6.59"
+solution: "Upgrade to version 4.6.59 or above."
+urls:
+- "https://github.com/advisories/GHSA-j7qx-p75m-wp7g"
+- "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-j7qx-p75m-wp7g"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+uuid: "3c282d76-4903-4d65-ad24-f78a0cba309d"
+cwe_ids:
+- "CWE-22"
+- "CWE-200"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-7cqp-7cfv-6c3q"
+identifiers:
+- "GHSA-7cqp-7cfv-6c3q"
+package_slug: "packagist/wwbn/avideo"
+title: "AVideo Meet plugin: anonymous-to-admin stored XSS via unescaped participant
+  User-Agent in getMeetInfo.json.php Participants panel"
+description: "The Meet plugin stores the raw HTTP `User-Agent` header of every meeting
+  participant and later renders it without output encoding in the meeting-management
+  (\"Participants\") panel that the meeting host and site administrators open. An
+  anonymous, unauthenticated attacker can join any public meeting while sending a
+  `User-Agent` header containing an HTML payload. The payload is persisted in `meet_join_log.user_agent`
+  and, when the host or an administrator opens the participant list, is injected verbatim
+  into their DOM, executing attacker-controlled JavaScript in a privileged, authenticated
+  session. This is a cross-privilege stored XSS: an anonymous visitor obtains script
+  execution in the administrator's browser."
+date: "2026-06-23"
+pubdate: "2026-06-23"
+affected_range: "<=29.0.0"
+fixed_versions: []
+affected_versions: "All versions up to 29.0.0"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-7cqp-7cfv-6c3q"
+- "https://github.com/WWBN/AVideo/security/advisories/GHSA-7cqp-7cfv-6c3q"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:N/VI:N/VA:N/SC:H/SI:H/SA:N"
+uuid: "5290e49b-1be0-4662-9656-692ad765965b"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

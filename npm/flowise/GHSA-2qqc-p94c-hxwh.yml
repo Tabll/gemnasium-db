@@ -19,7 +19,6 @@ solution: "Upgrade to version 3.1.0 or above."
 urls:
 - "https://github.com/advisories/GHSA-2qqc-p94c-hxwh"
 - "https://github.com/FlowiseAI/Flowise/security/advisories/GHSA-2qqc-p94c-hxwh"
-- "https://github.com/FlowiseAI/Flowise"
 cvss_v3: "CVSS:3.0/AV:L/AC:H/PR:H/UI:R/S:U/C:H/I:H/A:N"
 uuid: "f4262bf4-e85e-4d31-bd1e-041ce60c92ab"
 cwe_ids:

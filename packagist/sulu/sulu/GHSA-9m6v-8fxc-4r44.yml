@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-9m6v-8fxc-4r44"
+identifiers:
+- "GHSA-9m6v-8fxc-4r44"
+package_slug: "packagist/sulu/sulu"
+title: "Sulu: Used API Keys may be available via Admin API"
+description: "The users endpoint controller exposes a project's apiKey field to the
+  logged-in user, provided they have permission for that endpoint. This only has impact
+  if a project itself uses that specific field, Sulu itself does nothing with it and
+  has no authentication per apiKey in its core."
+date: "2026-05-18"
+pubdate: "2026-05-18"
+affected_range: "<2.6.23||>=3.0.0-alpha1 <3.0.6"
+fixed_versions:
+- "2.6.23"
+- "3.0.6"
+affected_versions: "All versions before 2.6.23, all versions starting from 3.0.0-alpha1
+  before 3.0.6"
+not_impacted: "All versions starting from 2.6.23 before 3.0.0-alpha1, all versions
+  starting from 3.0.6"
+solution: "Upgrade to versions 2.6.23, 3.0.6 or above."
+urls:
+- "https://github.com/advisories/GHSA-9m6v-8fxc-4r44"
+- "https://github.com/sulu/sulu/security/advisories/GHSA-9m6v-8fxc-4r44"
+- "https://github.com/sulu/sulu/releases/tag/2.6.23"
+- "https://github.com/sulu/sulu/releases/tag/3.0.6"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N"
+uuid: "0b81bf5b-8751-4e9e-a04e-5dc36d904411"
+cwe_ids:
+- "CWE-284"
+- "CWE-937"
+- "CWE-1035"

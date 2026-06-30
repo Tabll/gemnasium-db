@@ -8,7 +8,7 @@ description: "Allow-always persistence could trust wrapper carrier executables i
   of the actual invoked target when commands were routed through dispatch wrappers."
 date: "2026-04-01"
 pubdate: "2026-04-01"
-affected_range: "<2026.3.28"
+affected_range: "<0"
 fixed_versions:
 - "2026.3.28"
 affected_versions: "All versions before 2026.3.28"

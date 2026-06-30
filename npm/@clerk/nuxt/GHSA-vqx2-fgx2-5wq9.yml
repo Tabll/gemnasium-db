@@ -10,7 +10,7 @@ description: "`createRouteMatcher` in `@clerk/nextjs`, `@clerk/nuxt`, and `@cler
   can be impersonated - the bypass only affects the middleware-level gating decision."
 date: "2026-04-16"
 pubdate: "2026-04-16"
-affected_range: ">=1.1.0 <1.13.28||>=2.0.0 <2.2.2"
+affected_range: "<0"
 fixed_versions:
 - "1.13.28"
 - "2.2.2"

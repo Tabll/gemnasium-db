@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-j7f5-gfqm-pcx3"
+identifiers:
+- "GHSA-j7f5-gfqm-pcx3"
+package_slug: "packagist/pterodactyl/panel"
+title: "Pterodactyl Panel: Client email change endpoint allows enumeration of accounts
+  in system"
+description: "An unprotected user enumeration vulnerability exists in the account
+  email update endpoint, allowing authenticated users to verify whether email addresses
+  are registered on the panel through automated requests without rate limiting or
+  CAPTCHA protection."
+date: "2026-06-26"
+pubdate: "2026-06-26"
+affected_range: "<1.12.3"
+fixed_versions:
+- "1.12.3"
+affected_versions: "All versions before 1.12.3"
+not_impacted: "All versions starting from 1.12.3"
+solution: "Upgrade to version 1.12.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-j7f5-gfqm-pcx3"
+- "https://github.com/pterodactyl/panel/security/advisories/GHSA-j7f5-gfqm-pcx3"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N"
+uuid: "fbf32054-8b6a-47e8-b751-adfaba3d2d66"
+cwe_ids:
+- "CWE-204"
+- "CWE-937"
+- "CWE-1035"

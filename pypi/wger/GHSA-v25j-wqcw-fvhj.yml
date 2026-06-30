@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-v25j-wqcw-fvhj"
+identifiers:
+- "GHSA-v25j-wqcw-fvhj"
+package_slug: "pypi/wger"
+title: "wger has an Uncontrolled Resource Consumption issue"
+description: "Any authenticated user can create a routine spanning an arbitrarily
+  long date range (e.g. 100 years) and then trigger the `date_sequence` computation
+  via any of the routine detail endpoints. The server iterates once per day in an
+  unbounded `while` loop with no maximum duration validation, causing a single HTTP
+  request to consume multiple seconds of server CPU and return a response containing
+  tens of thousands of entries. Repeated requests can exhaust all worker threads and
+  deny service to other users."
+date: "2026-05-13"
+pubdate: "2026-05-13"
+affected_range: "<=2.5.0"
+fixed_versions: []
+affected_versions: "All versions up to 2.5.0"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-v25j-wqcw-fvhj"
+- "https://github.com/wger-project/wger/security/advisories/GHSA-v25j-wqcw-fvhj"
+- "https://github.com/wger-project/wger/commit/5f07a4473e2c32d298c8cdd31d78e5107840039c"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+uuid: "3a3d1792-a549-4d7a-8cc7-9bf5f5a24a16"
+cwe_ids:
+- "CWE-400"
+- "CWE-937"
+- "CWE-1035"

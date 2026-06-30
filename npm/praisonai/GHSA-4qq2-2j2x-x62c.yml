@@ -1,0 +1,43 @@
+---
+identifier: "GHSA-4qq2-2j2x-x62c"
+identifiers:
+- "GHSA-4qq2-2j2x-x62c"
+package_slug: "npm/praisonai"
+title: "npm PraisonAI MCPSecurity Basic/OAuth authentication policies accept invalid
+  credentials without validation"
+description: "The published npm package `praisonai` exports an `MCPSecurity` helper
+  described in source as:\n\n```text\nMCP Security - Authentication, authorization,
+  and rate limiting\nProvides security policies for MCP servers.\n```\n\nIts `AuthMethod`
+  type advertises five authentication methods:\n\n```ts\nexport type AuthMethod =
+  'none' | 'api-key' | 'bearer' | 'basic' | 'oauth';\n```\n\nThe authentication-policy
+  evaluator, however, only validates credentials for `api-key` and `bearer`:\n\n```ts\nif
+  (policy.auth.method === 'api-key' || policy.auth.method === 'bearer') {\nconst valid
+  = policy.auth.validate\n? await policy.auth.validate(token)\n: this.validateApiKey(token);\n\nif
+  (!valid) {\nreturn { allowed: false, reason: 'Invalid credentials' };\n}\n}\n\nreturn
+  { allowed: true, context: { authenticated: true } };\n```\n\nFor `basic` and `oauth`,
+  any non-empty `Authorization` header skips the supplied `validate` callback and
+  returns allowed. A local PoV configures `auth.validate` to always return `false`;
+  invalid `api-key` and `bearer` credentials are rejected, while invalid `basic` and
+  `oauth` credentials are accepted without calling the validator.\n\nThis is a protection-mechanism
+  failure in the exported npm MCP security helper. It is distinct from the separate
+  issue that the npm `MCPServer` HTTP transport does not enforce authentication by
+  default."
+date: "2026-06-18"
+pubdate: "2026-06-18"
+affected_range: ">=1.5.1 <1.7.2"
+fixed_versions:
+- "1.7.2"
+affected_versions: "All versions starting from 1.5.1 before 1.7.2"
+not_impacted: "All versions before 1.5.1, all versions starting from 1.7.2"
+solution: "Upgrade to version 1.7.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-4qq2-2j2x-x62c"
+- "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-4qq2-2j2x-x62c"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N"
+uuid: "2c7a7dad-0732-41ca-97a3-69fe70ba2973"
+cwe_ids:
+- "CWE-287"
+- "CWE-288"
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

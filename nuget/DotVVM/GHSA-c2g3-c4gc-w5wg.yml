@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-c2g3-c4gc-w5wg"
+identifiers:
+- "GHSA-c2g3-c4gc-w5wg"
+package_slug: "nuget/DotVVM"
+title: "ReDoS in DotVVM routing"
+description: "This impacts users which use multiple unconstrained route parameters
+  not separated by a `/`. For instance, the following code is vulnerable:\n```\nvar
+  route = new DotvvmRoute(\"edit/{a}-{b}-{c}/done\", null, \"testpage\", null, null,
+  configuration);\n\nvar adversarialInput = \"edit/\" + new string('-', 32000);\nroute.IsMatch(adversarialInput,
+  out _);\n```"
+date: "2026-06-19"
+pubdate: "2026-06-19"
+affected_range: "[,4.2.11),[4.3.0-preview01-final,4.3.15),[5.0.0-preview01-final,5.0.0-preview09-final)"
+fixed_versions:
+- "4.2.11"
+- "4.3.15"
+- "5.0.0-preview09-final"
+affected_versions: "All versions before 4.2.11, all versions starting from 4.3.0-preview01-final
+  before 4.3.15, all versions starting from 5.0.0-preview01-final before 5.0.0-preview09-final"
+not_impacted: "All versions starting from 4.2.11 before 4.3.0-preview01-final, all
+  versions starting from 4.3.15 before 5.0.0-preview01-final, all versions starting
+  from 5.0.0-preview09-final"
+solution: "Upgrade to versions 4.2.11, 4.3.15, 5.0.0-preview09-final or above."
+urls:
+- "https://github.com/advisories/GHSA-c2g3-c4gc-w5wg"
+- "https://github.com/riganti/dotvvm/security/advisories/GHSA-c2g3-c4gc-w5wg"
+- "https://www.dotvvm.com/docs/4.0/pages/concepts/routing/parameters#route-constraints"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+uuid: "3ca5dad6-6f9d-4141-b595-d1e2d8d0a27b"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"
+- "CWE-1333"

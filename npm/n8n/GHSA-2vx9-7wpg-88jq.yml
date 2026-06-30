@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-2vx9-7wpg-88jq"
+identifiers:
+- "GHSA-2vx9-7wpg-88jq"
+package_slug: "npm/n8n"
+title: "n8n: Legacy ExecuteWorkflow Node Bypassed File Path Restrictions"
+description: "The `ExecuteWorkflow` node's `localFile` source option read workflow
+  files from disk without applying checks enforced by other file-reading nodes. An
+  authenticated user with permission to create or modify workflows could supply an
+  arbitrary file path via the REST API, bypassing the `N8N_RESTRICT_FILE_ACCESS_TO`
+  restriction. This allowed the attacker to determine whether arbitrary files exist
+  on the server host. Where the targeted path contained a valid workflow JSON file,
+  the file could additionally be loaded and executed, potentially triggering actions
+  on downstream systems connected to that workflow.\n\nThe `localFile` source option
+  is hidden from the n8n UI since v1.2 but remains accessible via the REST API."
+date: "2026-05-19"
+pubdate: "2026-05-19"
+affected_range: "<2.19.3"
+fixed_versions:
+- "2.19.3"
+affected_versions: "All versions before 2.19.3"
+not_impacted: "All versions starting from 2.19.3"
+solution: "Upgrade to version 2.19.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-2vx9-7wpg-88jq"
+- "https://github.com/n8n-io/n8n/security/advisories/GHSA-2vx9-7wpg-88jq"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:L/VA:N/SC:L/SI:L/SA:N"
+uuid: "d2162e4b-d8d5-4006-9681-0987126ff65e"
+cwe_ids:
+- "CWE-22"
+- "CWE-937"
+- "CWE-1035"

@@ -9,7 +9,7 @@ description: "Ech0 scoped access tokens do not reliably enforce least privilege:
   privileged admin routes omit scope checks, and the backup export handler strips
   token scope metadata entirely, allowing a low-scope admin access token to reach
   broader admin functionality than intended."
-date: "2026-04-10"
+date: "2026-06-02"
 pubdate: "2026-04-10"
 affected_range: "<4.3.5"
 fixed_versions:
@@ -20,7 +20,6 @@ solution: "Upgrade to version 4.3.5 or above."
 urls:
 - "https://github.com/advisories/GHSA-4h9q-p5j4-xvvh"
 - "https://github.com/lin-snow/Ech0/security/advisories/GHSA-4h9q-p5j4-xvvh"
-- "https://github.com/lin-snow/Ech0"
 - "https://github.com/lin-snow/Ech0/releases/tag/v4.3.5"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:L"
 uuid: "824bdb69-8b1a-4134-8187-bd1d94efba19"

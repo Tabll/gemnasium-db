@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-q76j-gcg9-vxc6"
+identifiers:
+- "GHSA-q76j-gcg9-vxc6"
+package_slug: "go/github.com/gohugoio/hugo"
+title: "Hugo: XSS via unescaped code-fence language in default code block renderer"
+description: "Hugo's default code-block renderer wrote the Markdown code-fence language
+  / info-string into the `<code class=\"language-…\" data-lang=\"…\">` wrapper without
+  HTML escaping. A fence info-string containing a quote and a `<script>` payload breaks
+  out of the attribute and injects a live script element.\n\nThis is not an issue
+  if you fully trust every file under /content and every content adapter you load."
+date: "2026-06-19"
+pubdate: "2026-06-19"
+affected_range: ">=0.60.0 <0.163.3"
+fixed_versions:
+- "0.163.3"
+affected_versions: "All versions starting from 0.60.0 before 0.163.3"
+not_impacted: "All versions before 0.60.0, all versions starting from 0.163.3"
+solution: "Upgrade to version 0.163.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-q76j-gcg9-vxc6"
+- "https://github.com/gohugoio/hugo/security/advisories/GHSA-q76j-gcg9-vxc6"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:L/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:P/VC:N/VI:N/VA:N/SC:L/SI:L/SA:N"
+uuid: "a1c228b5-40e8-401a-81bb-b3751eea3e37"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

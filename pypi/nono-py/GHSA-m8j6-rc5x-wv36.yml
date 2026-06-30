@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-m8j6-rc5x-wv36"
+identifiers:
+- "GHSA-m8j6-rc5x-wv36"
+package_slug: "pypi/nono-py"
+title: "nono-py's policy JSON accepts unknown security fields"
+description: "nono-py policy handling could fail open in two ways. First, resolving
+  a policy-derived `ProxyConfig` did not automatically enforce `CapabilitySet.proxy_only`,
+  allowing sandboxed children to bypass a resolved domain allowlist by using direct
+  network access. Second, policy JSON accepted unknown security-sensitive fields,
+  so misspelled or unsupported restrictions could be silently ignored."
+date: "2026-06-26"
+pubdate: "2026-06-26"
+affected_range: "<0.10.1"
+fixed_versions:
+- "0.10.1"
+affected_versions: "All versions before 0.10.1"
+not_impacted: "All versions starting from 0.10.1"
+solution: "Upgrade to version 0.10.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-m8j6-rc5x-wv36"
+- "https://github.com/always-further/nono-py/security/advisories/GHSA-m8j6-rc5x-wv36"
+- "https://github.com/nolabs-ai/nono-py/commit/2897ee20df0d75afd298d94840b9d135b3b3a6e9"
+- "https://github.com/nolabs-ai/nono-py/commit/807fb4bce2385b9e88185bf160e0792b588813c7"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N"
+uuid: "50042025-e684-4433-9ce7-207cd42c8964"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"

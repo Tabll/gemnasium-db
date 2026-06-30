@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-4pcv-mg8v-vrgf"
+identifiers:
+- "GHSA-4pcv-mg8v-vrgf"
+package_slug: "pypi/praisonaiagents"
+title: "PraisonAI: Server-Side Request Forgery (SSRF) in SearxNG / search_web tools
+  via attacker-controlled searxng_url parameter"
+description: "A Server-Side Request Forgery (SSRF) vulnerability in the SearxNG /
+  `search_web` search tools allows an attacker to make the server perform requests
+  to arbitrary internal endpoints and read the responses back. The `searxng_url` argument
+  is passed directly to `requests.get()` with no validation of scheme, host, or port.
+  Because `searxng_url` is exposed to the LLM as a tool parameter and `search_web`
+  / `searxng_search` are part of the default agent toolset, the vulnerability is reachable
+  through prompt injection in any content an agent ingests (web pages, files, tool
+  output). This enables reading internal services and APIs, internal host/port enumeration,
+  and in cloud environments reachability of the instance metadata endpoint (169.254.169.254)
+  with potential IAM/credential exposure."
+date: "2026-06-18"
+pubdate: "2026-06-18"
+affected_range: "<1.6.61"
+fixed_versions:
+- "1.6.61"
+affected_versions: "All versions before 1.6.61"
+not_impacted: "All versions starting from 1.6.61"
+solution: "Upgrade to version 1.6.61 or above."
+urls:
+- "https://github.com/advisories/GHSA-4pcv-mg8v-vrgf"
+- "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-4pcv-mg8v-vrgf"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:L/A:L"
+uuid: "cb9fdefc-9395-4fcf-803c-b9f687781e1d"
+cwe_ids:
+- "CWE-20"
+- "CWE-918"
+- "CWE-937"
+- "CWE-1035"

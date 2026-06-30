@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-2r2c-cx56-8933"
+identifiers:
+- "GHSA-2r2c-cx56-8933"
+package_slug: "maven/org.jline/jline-remote-telnet"
+title: "JLine3 Telnet server: Unauthenticated Remote DoS via Unbounded Telnet NAWS
+  Terminal Geometry"
+description: "The JLine3 Telnet server (`remote-telnet` module) does not apply an
+  upper bound to\nterminal dimensions received via the Telnet NAWS (Negotiate About
+  Window Size) option.\nAn unauthenticated remote attacker can send a NAWS subnegotiation
+  advertising a\n65535×65535 terminal and repeatedly alternate values to trigger continuous,
+  expensive\nrendering work on the server, causing CPU exhaustion and denial of service."
+date: "2026-06-18"
+pubdate: "2026-06-18"
+affected_range: "[,4.2.1)"
+fixed_versions:
+- "4.2.1"
+affected_versions: "All versions before 4.2.1"
+not_impacted: "All versions starting from 4.2.1"
+solution: "Upgrade to version 4.2.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-2r2c-cx56-8933"
+- "https://github.com/jline/jline3/security/advisories/GHSA-2r2c-cx56-8933"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "643b933f-83fc-4b1a-8d5f-36f597099b6f"
+cwe_ids:
+- "CWE-400"
+- "CWE-937"
+- "CWE-1035"

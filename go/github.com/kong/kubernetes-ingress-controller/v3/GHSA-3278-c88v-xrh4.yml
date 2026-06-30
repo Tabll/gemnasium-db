@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-3278-c88v-xrh4"
+identifiers:
+- "GHSA-3278-c88v-xrh4"
+package_slug: "go/github.com/kong/kubernetes-ingress-controller/v3"
+title: "Kong Ingress Controller for Kubernetes (KIC): Secret-backed plugin configurations
+  leak through non-sensitive diagnostics endpoint"
+description: "A vulnerability in the Kong Ingress Controller (KIC) allows for the
+  unauthorized exposure of sensitive plugin credentials through the diagnostics interface.
+  Even when configured to redact sensitive information (using `--dump-sensitive-config=false`),
+  KIC fails to sanitize the `Plugins` field in diagnostic configuration dumps. This
+  causes secrets referenced via `configFrom.secretKeyRef` to be resolved and displayed
+  in plaintext.\n\nBecause the diagnostics HTTP endpoints require no authentication,
+  any process within the cluster network capable of reaching the KIC pod can exfiltrate
+  sensitive data, including API keys, bearer tokens, and database passwords."
+date: "2026-06-08"
+pubdate: "2026-05-19"
+affected_range: "<3.5.7"
+fixed_versions:
+- "3.5.7"
+affected_versions: "All versions before 3.5.7"
+not_impacted: "All versions starting from 3.5.7"
+solution: "Upgrade to version 3.5.7 or above."
+urls:
+- "https://github.com/advisories/GHSA-3278-c88v-xrh4"
+- "https://github.com/Kong/kubernetes-ingress-controller/security/advisories/GHSA-3278-c88v-xrh4"
+cvss_v3: "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:A/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:N/SC:H/SI:N/SA:N"
+uuid: "32a0f453-973f-447c-ae28-b98ee5272267"
+cwe_ids:
+- "CWE-201"
+- "CWE-937"
+- "CWE-1035"

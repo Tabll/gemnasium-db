@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-7vfx-4246-jcfh"
+identifiers:
+- "GHSA-7vfx-4246-jcfh"
+package_slug: "packagist/solidinvoice/solidinvoice"
+title: "SolidInvoice: IDOR in LiveComponent allows same-company cross-user access
+  to API tokens and notification transport settings"
+description: "Four authorization bypass vulnerabilities in Symfony LiveComponent actions
+  allow any authenticated user within a company to access, modify, or delete other
+  users' API tokens and notification transport settings. The root cause is that LiveComponent
+  actions accept entity IDs without verifying ownership, while the listing methods
+  correctly filter by user."
+date: "2026-06-26"
+pubdate: "2026-06-26"
+affected_range: "<2.3.16"
+fixed_versions:
+- "2.3.16"
+affected_versions: "All versions before 2.3.16"
+not_impacted: "All versions starting from 2.3.16"
+solution: "Upgrade to version 2.3.16 or above."
+urls:
+- "https://github.com/advisories/GHSA-7vfx-4246-jcfh"
+- "https://github.com/SolidInvoice/SolidInvoice/security/advisories/GHSA-7vfx-4246-jcfh"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+uuid: "9841534b-d7b9-4555-9bcd-ddfb6341038c"
+cwe_ids:
+- "CWE-639"
+- "CWE-862"
+- "CWE-937"
+- "CWE-1035"

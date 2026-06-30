@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-75mw-h36v-2jv7"
+identifiers:
+- "GHSA-75mw-h36v-2jv7"
+package_slug: "pypi/dosage"
+title: "Dosage Vulnerable to Stored Cross-Site Scripting (XSS) in HTML/RSS Output
+  Handlers"
+description: "The HTML and RSS output handlers in `dosagelib/events.py` write user-controlled
+  content (comic text and page URLs) directly into generated files without proper
+  HTML escaping. When a user scrapes a malicious webcomic and opens the generated
+  HTML/RSS file, attacker-controlled JavaScript can execute in their browser.\n\n**CWE**:
+  [CWE-79](https://cwe.mitre.org/data/definitions/79.html) - Improper Neutralization
+  of Input During Web Page Generation (Cross-site Scripting)\n\n---"
+date: "2026-06-26"
+pubdate: "2026-06-26"
+affected_range: "<3.3.0"
+fixed_versions:
+- "3.3.0"
+affected_versions: "All versions before 3.3.0"
+not_impacted: "All versions starting from 3.3.0"
+solution: "Upgrade to version 3.3.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-75mw-h36v-2jv7"
+- "https://github.com/webcomics/dosage/security/advisories/GHSA-75mw-h36v-2jv7"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+uuid: "b6283e54-44c7-458d-ad32-898a03d6f23a"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-f5fm-9jmp-c88r"
+identifiers:
+- "GHSA-f5fm-9jmp-c88r"
+package_slug: "npm/openclaw"
+title: "Duplicate Advisory: OpenClaw: Trailing-dot localhost CDP hosts could bypass
+  remote loopback protections"
+description: "This advisory has been withdrawn."
+date: "2026-05-06"
+pubdate: "2026-04-28"
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "This advisory has been withdrawn."
+not_impacted: "This advisory has been withdrawn."
+solution: "This advisory has been withdrawn."
+urls:
+- "https://github.com/advisories/GHSA-f5fm-9jmp-c88r"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-fh32-73r9-rgh5"
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-41372"
+- "https://github.com/openclaw/openclaw/commit/9c22d636697336a6b22b0ae24798d8b8325d7828"
+- "https://www.vulncheck.com/advisories/openclaw-loopback-protection-bypass-via-trailing-dot-localhost-in-cdp-discovery"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:N/VA:N/SC:L/SI:N/SA:N"
+uuid: "00beda9e-a2fb-4933-aace-a88b8c7c4e4a"
+cwe_ids:
+- "CWE-639"
+- "CWE-937"
+- "CWE-1035"

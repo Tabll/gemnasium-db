@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-xrgf-r9gr-jjjf"
+identifiers:
+- "GHSA-xrgf-r9gr-jjjf"
+package_slug: "npm/openclaw"
+title: "Duplicate Advisory: OpenClaw: Exec environment denylist missed high-risk interpreter
+  startup variables"
+description: "This advisory has been withdrawn."
+date: "2026-05-11"
+pubdate: "2026-05-06"
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "This advisory has been withdrawn."
+not_impacted: "This advisory has been withdrawn."
+solution: "This advisory has been withdrawn."
+urls:
+- "https://github.com/advisories/GHSA-xrgf-r9gr-jjjf"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-vfp4-8x56-j7c5"
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-43584"
+- "https://github.com/openclaw/openclaw/commit/2d126fc62343a7b6895351f96e4e1474bc358140"
+- "https://www.vulncheck.com/advisories/openclaw-insufficient-environment-variable-denylist-in-exec-policy"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+uuid: "fc6c9468-43d3-4e60-a54a-9033fbac494d"
+cwe_ids:
+- "CWE-184"
+- "CWE-937"
+- "CWE-1035"

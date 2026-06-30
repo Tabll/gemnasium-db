@@ -18,7 +18,7 @@ description: "Versions of `i18next-fs-backend` prior to 2.6.4 interpolate the ca
   helper in `i18next-http-backend`, there is no equivalent safety for path interpolation."
 date: "2026-04-22"
 pubdate: "2026-04-22"
-affected_range: "<2.6.4"
+affected_range: "<0"
 fixed_versions:
 - "2.6.4"
 affected_versions: "All versions before 2.6.4"

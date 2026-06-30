@@ -9,7 +9,7 @@ description: "QQBot reply media URL handling could trigger SSRF and re-upload fe
   bytes."
 date: "2026-04-17"
 pubdate: "2026-04-17"
-affected_range: "<2026.4.12"
+affected_range: "<0"
 fixed_versions:
 - "2026.4.12"
 affected_versions: "All versions before 2026.4.12"

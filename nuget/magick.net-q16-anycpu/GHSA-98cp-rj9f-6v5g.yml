@@ -18,7 +18,6 @@ solution: "Upgrade to version 14.12.0 or above."
 urls:
 - "https://github.com/advisories/GHSA-98cp-rj9f-6v5g"
 - "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-98cp-rj9f-6v5g"
-- "https://github.com/ImageMagick/ImageMagick"
 cvss_v3: "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:L/I:H/A:H"
 uuid: "fa66a991-22f5-4f6d-b2ad-a63c31e94df0"
 cwe_ids:

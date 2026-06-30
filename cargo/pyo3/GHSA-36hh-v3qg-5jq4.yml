@@ -1,0 +1,36 @@
+---
+identifier: "GHSA-36hh-v3qg-5jq4"
+identifiers:
+- "GHSA-36hh-v3qg-5jq4"
+package_slug: "cargo/pyo3"
+title: "PyO3 has an Out-of-bounds Read in `nth` / `nth_back` for `PyList` and `PyTuple`
+  iterators"
+description: "PyO3 0.24.0 added optimized implementations of `Iterator::nth` and `DoubleEndedIterator::nth_back`
+  for the `BoundListIterator` and `BoundTupleIterator` types. These implementations
+  computed the target index using unchecked `usize` addition (`index + n`) before
+  bounds-checking against the sequence length, then read the element via `get_item_unchecked`.\n\nIn
+  `nth` methods, a sufficiently large `n` (combined with a non-zero internal index)
+  could cause the addition to overflow and wrap around, producing a small \"target
+  index\" that passed the bounds check and enabling reads at the front of the `list`
+  or `tuple` of elements previously yielded by the iterator.\n\nIn `nth_back` methods,
+  a sufficiently large `n` could cause underflow in a similar fashion, however would
+  instead allow reads of arbitrary memory past the end of the `list` or `tuple` storage."
+date: "2026-06-12"
+pubdate: "2026-06-12"
+affected_range: "<0.29.0"
+fixed_versions:
+- "0.29.0"
+affected_versions: "All versions before 0.29.0"
+not_impacted: "All versions starting from 0.29.0"
+solution: "Upgrade to version 0.29.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-36hh-v3qg-5jq4"
+- "https://github.com/PyO3/pyo3/pull/6086"
+- "https://rustsec.org/advisories/RUSTSEC-2026-0176.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N"
+uuid: "fe922364-f353-4ff6-bd2d-40fd9c072913"
+cwe_ids:
+- "CWE-125"
+- "CWE-937"
+- "CWE-1035"

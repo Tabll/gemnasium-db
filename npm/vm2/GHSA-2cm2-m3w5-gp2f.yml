@@ -1,0 +1,26 @@
+---
+identifier: "GHSA-2cm2-m3w5-gp2f"
+identifiers:
+- "GHSA-2cm2-m3w5-gp2f"
+package_slug: "npm/vm2"
+title: "vm2 has access to `VM2_INTERNAL_STATE_DO_NOT_USE_OR_PROGRAM_WILL_FAIL`"
+description: "https://github.com/patriksimek/vm2/security/advisories/GHSA-wp5r-2gw5-m7q7
+  is not fully patched."
+date: "2026-05-08"
+pubdate: "2026-05-08"
+affected_range: "<3.11.2"
+fixed_versions:
+- "3.11.2"
+affected_versions: "All versions before 3.11.2"
+not_impacted: "All versions starting from 3.11.2"
+solution: "Upgrade to version 3.11.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-2cm2-m3w5-gp2f"
+- "https://github.com/patriksimek/vm2/security/advisories/GHSA-2cm2-m3w5-gp2f"
+- "https://github.com/patriksimek/vm2/releases/tag/v3.11.2"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+uuid: "df4e90a5-27e7-430e-ac06-6ac257a71564"
+cwe_ids:
+- "CWE-693"
+- "CWE-937"
+- "CWE-1035"

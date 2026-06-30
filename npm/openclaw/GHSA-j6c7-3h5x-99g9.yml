@@ -7,7 +7,7 @@ title: "OpenClaw: Shell-wrapper detection missed env-argv assignment injection f
 description: "Shell-wrapper detection missed env-argv assignment injection forms."
 date: "2026-04-17"
 pubdate: "2026-04-17"
-affected_range: ">=2026.2.22 <2026.4.12"
+affected_range: "<0"
 fixed_versions:
 - "2026.4.12"
 affected_versions: "All versions starting from 2026.2.22 before 2026.4.12"

@@ -1,0 +1,32 @@
+---
+identifier: "GMS-2026-576"
+identifiers:
+- "GMS-2026-576"
+package_slug: "pypi/mflux-streamlit"
+title: "Embedded Malicious Code (Shai-Hulud)"
+description: "This package was identified by GitLab's Vulnerability Research team as part 
+  of a coordinated Shai-Hulud copycat supply chain attack on PyPI on June 7, 2026. The 
+  package `mflux-streamlit` was weaponized by someone with maintainer access to include 
+  malicious code alongside previously clean releases. 
+  
+  Versions 0.0.3 and 0.0.4 contain a `.pth` file that auto-executes on Python startup, 
+  downloads the Bun JavaScript runtime, and runs an obfuscated credential
+  stealer targeting GitHub, AWS, Azure, GCP, HashiCorp Vault, NPM, PyPI, RubyGems, SSH keys,
+  Kubernetes, and Sigstore. 
+  
+  The worm self-propagates by pushing malicious commits to accessible GitHub repositories and 
+  publishing poisoned packages to other registries. Any computer that has this package
+  installed or running should be considered fully compromised. All secrets and keys stored on 
+  that computer should be rotated immediately from a different computer."
+date: "2026-06-07"
+pubdate: "2026-06-07"
+affected_range: ">=0.0.3,<=0.0.4"
+fixed_versions: []
+affected_versions: "All versions starting from 0.0.3 up to 0.0.4"
+not_impacted: "All versions before 0.0.3"
+solution: "Downgrade to version 0.0.2 and rotate any secrets that may have been compromised."
+urls:
+- "https://about.gitlab.com/blog/gitlab-discovers-widespread-npm-supply-chain-attack/"
+uuid: "22e053da-c018-46e2-8b05-a83f7794b65b"
+cwe_ids:
+- "CWE-506"

@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-35w5-pcw4-jx94"
+identifiers:
+- "GHSA-35w5-pcw4-jx94"
+package_slug: "pypi/praisonaiagents"
+title: "PraisonAI: Unauthenticated Event Injection via SSE `/publish` Endpoint"
+description: "The SSE (Server-Sent Events) server in `src/praisonai-agents/praisonaiagents/server/server.py`
+  exposes a `/publish` endpoint that broadcasts arbitrary messages to all connected
+  clients without any authentication. The `ServerConfig` dataclass (line 24) defines
+  an `auth_token` field, but this token is never validated in the `/publish` or `/events`
+  request handlers. Any attacker with access to the SSE server port can inject arbitrary
+  events into the SSE stream visible to all connected clients, or use `/info` to leak
+  server configuration including connected client count."
+date: "2026-06-18"
+pubdate: "2026-06-18"
+affected_range: "<1.6.59"
+fixed_versions:
+- "1.6.59"
+affected_versions: "All versions before 1.6.59"
+not_impacted: "All versions starting from 1.6.59"
+solution: "Upgrade to version 1.6.59 or above."
+urls:
+- "https://github.com/advisories/GHSA-35w5-pcw4-jx94"
+- "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-35w5-pcw4-jx94"
+cvss_v3: "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+uuid: "82d48c0d-ad15-4907-9e68-3b6e312d7042"
+cwe_ids:
+- "CWE-306"
+- "CWE-937"
+- "CWE-1035"

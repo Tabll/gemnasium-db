@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-jwm3-qcfw-c5pp"
+identifiers:
+- "GHSA-jwm3-qcfw-c5pp"
+package_slug: "npm/n8n"
+title: "n8n: Python Code Node AST Validator Bypass"
+description: "An authenticated user with permission to create or modify workflows
+  containing a Python Code node could bypass the AST security validator and access
+  the task executor module namespace. On self-hosted instances where `N8N_BLOCK_RUNNER_ENV_ACCESS=false`
+  is set, this extended to disclosure of environment variables accessible to the task
+  runner process.\n\nThis issue only affects instances where the Python Task Runner
+  is enabled and `N8N_BLOCK_RUNNER_ENV_ACCESS=true`."
+date: "2026-06-16"
+pubdate: "2026-06-16"
+affected_range: "<2.25.7||>=2.26.0 <2.26.2"
+fixed_versions:
+- "2.25.7"
+- "2.26.2"
+affected_versions: "All versions before 2.25.7, all versions starting from 2.26.0
+  before 2.26.2"
+not_impacted: "All versions starting from 2.25.7 before 2.26.0, all versions starting
+  from 2.26.2"
+solution: "Upgrade to versions 2.25.7, 2.26.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-jwm3-qcfw-c5pp"
+- "https://github.com/n8n-io/n8n/security/advisories/GHSA-jwm3-qcfw-c5pp"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N"
+uuid: "53a0179b-1952-448d-aca7-534c81ec1adf"
+cwe_ids:
+- "CWE-693"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-g7r4-m6w7-qqqr"
+identifiers:
+- "GHSA-g7r4-m6w7-qqqr"
+package_slug: "npm/esbuild"
+title: "esbuild allows arbitrary file read when running the development server on
+  Windows"
+description: "The development server contains a path traversal vulnerability on Windows
+  when serving files from `servedir`.\n\nDue to the use of `path.Clean()` (which only
+  normalizes forward-slash `/` separators) instead of a Windows-aware path normalization
+  function, it is possible to craft requests using backslashes (`\\`) that bypass
+  the intended directory containment logic. An attacker can escape the configured
+  `servedir` root and access arbitrary files on the filesystem.\nThis issue affects
+  Windows environments only."
+date: "2026-06-12"
+pubdate: "2026-06-12"
+affected_range: ">=0.27.3 <0.28.1"
+fixed_versions:
+- "0.28.1"
+affected_versions: "All versions starting from 0.27.3 before 0.28.1"
+not_impacted: "All versions before 0.27.3, all versions starting from 0.28.1"
+solution: "Upgrade to version 0.28.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-g7r4-m6w7-qqqr"
+- "https://github.com/evanw/esbuild/security/advisories/GHSA-g7r4-m6w7-qqqr"
+- "https://github.com/evanw/esbuild/releases/tag/v0.28.1"
+cvss_v3: "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:L/A:N"
+uuid: "1aa30b4e-7f74-4df3-b643-c12f24cfeaa0"
+cwe_ids:
+- "CWE-22"
+- "CWE-937"
+- "CWE-1035"

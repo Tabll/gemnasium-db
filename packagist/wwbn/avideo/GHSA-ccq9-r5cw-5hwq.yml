@@ -5,22 +5,14 @@ identifiers:
 package_slug: "packagist/wwbn/avideo"
 title: "WWBN AVideo has CORS Origin Reflection with Credentials on Sensitive API Endpoints
   Enables Cross-Origin Account Takeover"
-description: "The `allowOrigin($allowAll=true)` function in `objects/functions.php`
-  reflects any arbitrary `Origin` header back in `Access-Control-Allow-Origin` along
-  with `Access-Control-Allow-Credentials: true`. This function is called by both `plugin/API/get.json.php`
-  and `plugin/API/set.json.php` — the primary API endpoints that handle user data
-  retrieval, authentication, livestream credentials, and state-changing operations.
-  Combined with the application's `SameSite=None` session cookie policy, any website
-  can make credentialed cross-origin requests and read authenticated API responses,
-  enabling theft of user PII, livestream keys, and performing state changes on behalf
-  of the victim."
+description: "This advisory has been withdrawn."
 date: "2026-04-14"
 pubdate: "2026-04-14"
-affected_range: "<=29.0"
+affected_range: "<0"
 fixed_versions: []
-affected_versions: "All versions up to 29.0"
-not_impacted: ""
-solution: "Unfortunately, there is no solution available yet."
+affected_versions: "This advisory has been withdrawn."
+not_impacted: "This advisory has been withdrawn."
+solution: "This advisory has been withdrawn."
 urls:
 - "https://github.com/advisories/GHSA-ccq9-r5cw-5hwq"
 - "https://github.com/WWBN/AVideo/security/advisories/GHSA-ccq9-r5cw-5hwq"

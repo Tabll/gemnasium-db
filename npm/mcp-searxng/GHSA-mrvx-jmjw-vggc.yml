@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-mrvx-jmjw-vggc"
+identifiers:
+- "GHSA-mrvx-jmjw-vggc"
+package_slug: "npm/mcp-searxng"
+title: " SearXNG MCP Server: DNS-resolved Private Hostname SSRF in `web_url_read`"
+description: "The `web_url_read` MCP tool in `mcp-searxng` is vulnerable to Server-Side
+  Request Forgery (SSRF) via DNS rebinding bypass. The `assertUrlAllowed()` function
+  at `src/url-reader.ts:85-93` validates only the syntactic hostname string against
+  a private IP/hostname blocklist without performing DNS resolution. An attacker who
+  controls a domain that resolves to a private or loopback IP address (e.g., via a
+  wildcard DNS service like `nip.io`, or a custom DNS entry) can bypass the security
+  check and cause the MCP server to read arbitrary internal HTTP services reachable
+  from the server host. This allows exfiltration of sensitive data from internal services
+  with no authentication required in the default HTTP configuration."
+date: "2026-06-19"
+pubdate: "2026-06-19"
+affected_range: "<1.7.1"
+fixed_versions:
+- "1.7.1"
+affected_versions: "All versions before 1.7.1"
+not_impacted: "All versions starting from 1.7.1"
+solution: "Upgrade to version 1.7.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-mrvx-jmjw-vggc"
+- "https://github.com/ihor-sokoliuk/mcp-searxng/security/advisories/GHSA-mrvx-jmjw-vggc"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N"
+uuid: "73c84f4b-ff08-462e-ac8b-b77b165de24e"
+cwe_ids:
+- "CWE-918"
+- "CWE-937"
+- "CWE-1035"

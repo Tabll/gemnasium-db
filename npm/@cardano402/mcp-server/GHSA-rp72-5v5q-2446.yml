@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-rp72-5v5q-2446"
+identifiers:
+- "GHSA-rp72-5v5q-2446"
+package_slug: "npm/@cardano402/mcp-server"
+title: "@cardano402/mcp-server missing spending limits, LAN-exposed HTTP transport,
+  and SSRF via catalog.server.url"
+description: "`@cardano402/mcp-server` versions `<= 0.1.1` ship three security gaps
+  that can lead to unauthorized fund movement when the package is used as designed
+  (an MCP server exposing Cardano payment tools to an"
+date: "2026-06-26"
+pubdate: "2026-06-26"
+affected_range: "<0.1.2"
+fixed_versions:
+- "0.1.2"
+affected_versions: "All versions before 0.1.2"
+not_impacted: "All versions starting from 0.1.2"
+solution: "Upgrade to version 0.1.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-rp72-5v5q-2446"
+- "https://github.com/MorganOnCode/cardano402/security/advisories/GHSA-rp72-5v5q-2446"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N"
+uuid: "4f1e3668-b8cd-4b0b-9ef5-ee13caf795a2"
+cwe_ids:
+- "CWE-22"
+- "CWE-770"
+- "CWE-862"
+- "CWE-918"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-p4pj-vh7h-6cqh"
+identifiers:
+- "GHSA-p4pj-vh7h-6cqh"
+package_slug: "pypi/praisonai"
+title: "PraisonAI: Unauthenticated Local File Inclusion via agent_file path in PraisonAI
+  Jobs API"
+description: "An unauthenticated attacker can read arbitrary files on the server by
+  supplying an absolute filesystem path in the `agent_file` field of the Jobs API.
+  The field has no path validation, no allowlist, and no authentication is required
+  to submit jobs."
+date: "2026-06-18"
+pubdate: "2026-06-18"
+affected_range: "<4.6.59"
+fixed_versions:
+- "4.6.59"
+affected_versions: "All versions before 4.6.59"
+not_impacted: "All versions starting from 4.6.59"
+solution: "Upgrade to version 4.6.59 or above."
+urls:
+- "https://github.com/advisories/GHSA-p4pj-vh7h-6cqh"
+- "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-p4pj-vh7h-6cqh"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+uuid: "91c35e39-7ebb-4c37-974e-32e6d9ae9e3b"
+cwe_ids:
+- "CWE-22"
+- "CWE-937"
+- "CWE-1035"

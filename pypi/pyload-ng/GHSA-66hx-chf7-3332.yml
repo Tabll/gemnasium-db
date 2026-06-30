@@ -5,19 +5,14 @@ identifiers:
 package_slug: "pypi/pyload-ng"
 title: "pyLoad has Stale Session Privilege After Role/Permission Change (Privilege
   Revocation Bypass)"
-description: "pyLoad caches `role` and `permission` in the session at login and continues
-  to authorize requests using these cached values, even after an admin changes the
-  user's role/permissions in the database.\n\nAs a result, an already logged-in user
-  can keep old (revoked) privileges until logout/session expiry, enabling continued
-  privileged actions.\n\nThis is a core authorization/session-consistency issue and
-  is not resolved by toggling an optional security feature."
+description: "This advisory has been withdrawn."
 date: "2026-04-14"
 pubdate: "2026-04-14"
-affected_range: "<=0.5.0b3.dev97"
+affected_range: "<0"
 fixed_versions: []
-affected_versions: "All versions up to 0.5.0b3.dev97"
-not_impacted: ""
-solution: "Unfortunately, there is no solution available yet."
+affected_versions: "This advisory has been withdrawn."
+not_impacted: "This advisory has been withdrawn."
+solution: "This advisory has been withdrawn."
 urls:
 - "https://github.com/advisories/GHSA-66hx-chf7-3332"
 - "https://github.com/pyload/pyload/security/advisories/GHSA-66hx-chf7-3332"

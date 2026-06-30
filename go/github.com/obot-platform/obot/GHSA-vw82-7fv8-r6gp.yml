@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-vw82-7fv8-r6gp"
+identifiers:
+- "GHSA-vw82-7fv8-r6gp"
+package_slug: "go/github.com/obot-platform/obot"
+title: "Obot has an authorization bypass in /mcp-connect/{id} that allows any authenticated
+  user to use any registered MCP server"
+description: "If you have the MCP Server ID, you can connect to the MCP server even
+  if you don't have permissions to the server.\n\nThe MCP gateway endpoint `/mcp-connect/{mcp_id}`
+  does not enforce Access Control Rules (ACRs). Any authenticated Obot user who possesses
+  an MCP Server ID can connect to that server through the gateway — including making
+  tool calls — regardless of whether they are a member of any MCP Registry that grants
+  access to the server.\n\nIn practice this means any User can fully use MCP servers
+  that the administrator believed were restricted to specific groups."
+date: "2026-05-13"
+pubdate: "2026-05-13"
+affected_range: "<0.21.1"
+fixed_versions:
+- "0.21.1"
+affected_versions: "All versions before 0.21.1"
+not_impacted: "All versions starting from 0.21.1"
+solution: "Upgrade to version 0.21.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-vw82-7fv8-r6gp"
+- "https://github.com/obot-platform/obot/security/advisories/GHSA-vw82-7fv8-r6gp"
+- "https://github.com/obot-platform/obot/releases/tag/v0.21.1"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:N"
+uuid: "f0fbe13d-e3d3-49e2-aec2-0aa385301697"
+cwe_ids:
+- "CWE-284"
+- "CWE-937"
+- "CWE-1035"

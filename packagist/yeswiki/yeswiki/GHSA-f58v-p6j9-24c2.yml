@@ -45,7 +45,7 @@ description: "## Vulnerability Details\n\nYesWiki bazar module contains a SQL in
   .\n    \"WHERE tag='\" . $tag . \"'\"\n);\n```\n\n## PoC Screenshot"
 date: "2026-04-18"
 pubdate: "2026-04-18"
-affected_range: "<4.6.1"
+affected_range: "<0"
 fixed_versions:
 - "4.6.1"
 affected_versions: "All versions before 4.6.1"

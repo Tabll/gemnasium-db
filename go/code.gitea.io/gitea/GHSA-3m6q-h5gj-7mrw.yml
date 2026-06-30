@@ -19,12 +19,11 @@ solution: "Upgrade to version 1.25.0 or above."
 urls:
 - "https://github.com/advisories/GHSA-3m6q-h5gj-7mrw"
 - "https://github.com/go-gitea/gitea/security/advisories/GHSA-3m6q-h5gj-7mrw"
-- "https://github.com/go-gitea/gitea"
 cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N"
 cvss_v4: "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N"
 uuid: "30daa6be-9d94-4895-938a-8b8f734b4343"
 cwe_ids:
-- "CWE-1188"
 - "CWE-327"
 - "CWE-937"
 - "CWE-1035"
+- "CWE-1188"

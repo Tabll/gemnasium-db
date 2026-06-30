@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-f5p7-2c9q-8896"
+identifiers:
+- "CVE-2026-46363"
+- "GHSA-f5p7-2c9q-8896"
+package_slug: "packagist/thorsten/phpmyfaq"
+title: "phpMyFAQ has Stored XSS in FAQ Question/Answer via Encode-Decode Bypass of
+  removeAttributes() Sanitization"
+description: "This advisory has been withdrawn."
+date: "2026-06-09"
+pubdate: "2026-05-06"
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "This advisory has been withdrawn."
+not_impacted: "This advisory has been withdrawn."
+solution: "This advisory has been withdrawn."
+urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-46363"
+- "https://github.com/advisories/GHSA-f5p7-2c9q-8896"
+- "https://github.com/thorsten/phpMyFAQ/security/advisories/GHSA-f5p7-2c9q-8896"
+- "https://www.vulncheck.com/advisories/phpmyfaq-stored-xss-in-faq-question-answer-via-encode-decode-bypass"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N"
+uuid: "5ce01261-acaa-4166-94c7-ea2e60367265"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

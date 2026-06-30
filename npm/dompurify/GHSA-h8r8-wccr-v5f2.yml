@@ -11,7 +11,7 @@ description: "A mutation-XSS (mXSS) condition was confirmed when sanitized HTML 
   `DOMPurify.sanitize()`, but mutates during the second parse into executable markup
   with an event handler, enabling JavaScript execution in the client (`alert(1)` in
   the PoC)."
-date: "2026-03-27"
+date: "2026-05-07"
 pubdate: "2026-03-27"
 affected_range: "<3.3.2"
 fixed_versions:
@@ -22,7 +22,6 @@ solution: "Upgrade to version 3.3.2 or above."
 urls:
 - "https://github.com/advisories/GHSA-h8r8-wccr-v5f2"
 - "https://github.com/cure53/DOMPurify/security/advisories/GHSA-h8r8-wccr-v5f2"
-- "https://github.com/cure53/DOMPurify"
 - "https://github.com/cure53/DOMPurify/releases/tag/3.3.2"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N"
 cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:N/SC:L/SI:L/SA:N"

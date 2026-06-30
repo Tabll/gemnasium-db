@@ -15,7 +15,7 @@ description: "After a refactoring, Zebra failed to validate a consensus rule tha
   split."
 date: "2026-04-18"
 pubdate: "2026-04-18"
-affected_range: "<4.3.1"
+affected_range: "<0"
 fixed_versions:
 - "4.3.1"
 affected_versions: "All versions before 4.3.1"

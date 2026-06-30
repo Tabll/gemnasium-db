@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-fvh2-gm75-j4j7"
+identifiers:
+- "GHSA-fvh2-gm75-j4j7"
+package_slug: "cargo/dynoxide-rs"
+title: "dynoxide: DNS rebinding and cross-origin CSRF via MCP HTTP transport"
+description: "dynoxide's MCP HTTP transport was vulnerable to DNS rebinding via its
+  transitive `rmcp` dependency, plus a related cross-origin CSRF gap. A malicious
+  web page could make the user's browser send requests to a local `dynoxide mcp --http`
+  or `dynoxide serve --mcp` server with a non-loopback `Host` header, which the server
+  would then process. Affects 0.9.3 to 0.9.12. The stdio transport (`dynoxide mcp`
+  without `--http`, which is the default) is not affected."
+date: "2026-05-18"
+pubdate: "2026-05-18"
+affected_range: ">=0.9.3 <0.9.13"
+fixed_versions:
+- "0.9.13"
+affected_versions: "All versions starting from 0.9.3 before 0.9.13"
+not_impacted: "All versions before 0.9.3, all versions starting from 0.9.13"
+solution: "Upgrade to version 0.9.13 or above."
+urls:
+- "https://github.com/advisories/GHSA-fvh2-gm75-j4j7"
+- "https://github.com/nubo-db/dynoxide/security/advisories/GHSA-fvh2-gm75-j4j7"
+- "https://github.com/nubo-db/dynoxide/releases/tag/v0.9.13"
+- "https://rustsec.org/advisories/RUSTSEC-2026-0140.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H"
+uuid: "566d71c0-7a82-4446-91b2-4f9e3c3c51d6"
+cwe_ids:
+- "CWE-346"
+- "CWE-350"
+- "CWE-352"
+- "CWE-937"
+- "CWE-1035"

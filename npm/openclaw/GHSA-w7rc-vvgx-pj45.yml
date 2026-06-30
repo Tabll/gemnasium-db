@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-w7rc-vvgx-pj45"
+identifiers:
+- "GHSA-w7rc-vvgx-pj45"
+package_slug: "npm/openclaw"
+title: "Duplicate Advisory: OpenClaw: Browser SSRF hostname validation could be bypassed
+  by DNS rebinding"
+description: "This advisory has been withdrawn."
+date: "2026-05-11"
+pubdate: "2026-05-06"
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "This advisory has been withdrawn."
+not_impacted: "This advisory has been withdrawn."
+solution: "This advisory has been withdrawn."
+urls:
+- "https://github.com/advisories/GHSA-w7rc-vvgx-pj45"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-xq94-r468-qwgj"
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-43582"
+- "https://github.com/openclaw/openclaw/commit/121c452d666d4749744dc2089287d0227aae2ed3"
+- "https://www.vulncheck.com/advisories/openclaw-dns-rebinding-ssrf-via-hostname-validation-bypass"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:H/AT:P/PR:L/UI:N/VC:N/VI:N/VA:N/SC:H/SI:N/SA:N"
+uuid: "54398c2e-b251-4775-be0f-fe11d2fb8f26"
+cwe_ids:
+- "CWE-367"
+- "CWE-937"
+- "CWE-1035"

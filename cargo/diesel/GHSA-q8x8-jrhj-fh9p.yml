@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-q8x8-jrhj-fh9p"
+identifiers:
+- "GHSA-q8x8-jrhj-fh9p"
+package_slug: "cargo/diesel"
+title: "Diesel: Possible unaligned data access for implementations of `SqliteAggregate`"
+description: "Diesel allows to register custom aggregate SQL functions for SQLite
+  via the `SqliteAggregate` interface.\n\nTo store an instance of the custom aggregate
+  processor Diesel relied on the `sqlite3_aggregate_context` function provided by
+  sqlite. This function doesn't provide any guarantees about alignment of the returned
+  allocation, which in turn can lead to problems if the type implementing requires
+  a special alignment, e.g. via a custom `#[align(x)]` attribute on the type implementing
+  this trait. This affects any user of `SqliteAggregate` that registers the custom
+  aggregate function with an SQLite connection, while using a non-standard alignment
+  on the type implementing this trait."
+date: "2026-05-19"
+pubdate: "2026-05-19"
+affected_range: "<2.3.8"
+fixed_versions:
+- "2.3.8"
+affected_versions: "All versions before 2.3.8"
+not_impacted: "All versions starting from 2.3.8"
+solution: "Upgrade to version 2.3.8 or above."
+urls:
+- "https://github.com/advisories/GHSA-q8x8-jrhj-fh9p"
+- "https://github.com/diesel-rs/diesel/pull/5042"
+- "https://rustsec.org/advisories/RUSTSEC-2026-0137.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:L"
+cvss_v4: "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:N/VI:L/VA:L/SC:N/SI:N/SA:N"
+uuid: "b67850f5-76d1-4c69-a730-ac3905a3fb07"
+cwe_ids:
+- "CWE-188"
+- "CWE-937"
+- "CWE-1035"

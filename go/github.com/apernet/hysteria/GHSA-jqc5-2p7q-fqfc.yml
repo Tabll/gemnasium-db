@@ -1,0 +1,25 @@
+---
+identifier: "GHSA-jqc5-2p7q-fqfc"
+identifiers:
+- "GHSA-jqc5-2p7q-fqfc"
+package_slug: "go/github.com/apernet/hysteria"
+title: "Hysteria: http large header with sniff cause server DoS"
+description: "Sending an excessively large header by an attacker could lead to a server-side
+  DoS attack."
+date: "2026-06-26"
+pubdate: "2026-06-26"
+affected_range: "<2.9.2"
+fixed_versions:
+- "2.9.2"
+affected_versions: "All versions before 2.9.2"
+not_impacted: "All versions starting from 2.9.2"
+solution: "Upgrade to version 2.9.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-jqc5-2p7q-fqfc"
+- "https://github.com/apernet/hysteria/security/advisories/GHSA-jqc5-2p7q-fqfc"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "d6b9f344-7216-4af1-8951-f7dc9b4e78e6"
+cwe_ids:
+- "CWE-770"
+- "CWE-937"
+- "CWE-1035"

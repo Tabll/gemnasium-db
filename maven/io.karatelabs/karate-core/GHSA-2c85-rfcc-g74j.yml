@@ -1,0 +1,37 @@
+---
+identifier: "GHSA-2c85-rfcc-g74j"
+identifiers:
+- "GHSA-2c85-rfcc-g74j"
+package_slug: "maven/io.karatelabs/karate-core"
+title: "Karate Mock Server RCE via embedded expression evaluation of request-derived
+  data"
+description: "Karate Mock Server can execute embedded expressions found in attacker-controlled
+  HTTP request data when a Mock Server feature assigns request-derived values such
+  as `request`, `requestHeaders`, or `requestParams` to variables.\n\nIn affected
+  scenarios, an unauthenticated remote attacker can place a Karate embedded expression
+  such as `#(Java.type(...))` in the HTTP body, headers, or query parameters. The
+  Mock Server then recursively processes that untrusted data as embedded expressions
+  and evaluates it server-side, which can lead to arbitrary command execution under
+  the privileges of the Karate Mock Server process.\n\nThis issue does not require
+  the attacker to control the feature file. The vulnerable precondition is that the
+  Mock Server feature uses request-derived data in a way that passes through Karate
+  expression evaluation, for example:\n\n```karate\n* def body = request\n* def hdrs
+  = requestHeaders\n* def params = requestParams\n```"
+date: "2026-06-18"
+pubdate: "2026-06-18"
+affected_range: "[2.0.1,2.1.0)"
+fixed_versions:
+- "2.1.0"
+affected_versions: "All versions starting from 2.0.1 before 2.1.0"
+not_impacted: "All versions before 2.0.1, all versions starting from 2.1.0"
+solution: "Upgrade to version 2.1.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-2c85-rfcc-g74j"
+- "https://github.com/karatelabs/karate/security/advisories/GHSA-2c85-rfcc-g74j"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+uuid: "9d84fa97-c75b-411a-a9a2-1115047a3fbf"
+cwe_ids:
+- "CWE-95"
+- "CWE-937"
+- "CWE-1035"

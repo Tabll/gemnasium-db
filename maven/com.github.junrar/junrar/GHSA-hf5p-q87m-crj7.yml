@@ -9,7 +9,7 @@ description: "A path traversal vulnerability in `LocalFolderExtractor` allows an
   when a crafted RAR archive is extracted."
 date: "2026-04-16"
 pubdate: "2026-04-16"
-affected_range: "[,7.5.10)"
+affected_range: "(,0)"
 fixed_versions:
 - "7.5.10"
 affected_versions: "All versions before 7.5.10"

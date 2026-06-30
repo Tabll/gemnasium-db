@@ -1,0 +1,41 @@
+---
+identifier: "GHSA-m23h-6mwm-39m8"
+identifiers:
+- "GHSA-m23h-6mwm-39m8"
+package_slug: "go/github.com/kong/kubernetes-ingress-controller/v3"
+title: "Kong Ingress Controller for Kubernetes (KIC): Cross-namespace TLS Secret Exfiltration
+  in Gateways with GatewayClass missing `konghq.com/gatewayclass-unmanaged: 'true'`
+  annotation"
+description: "A vulnerability in the Kong Ingress Controller (KIC) allows for the
+  unauthorized exfiltration of TLS certificates and private keys across Kubernetes
+  namespace boundaries. In \"managed\" mode (where the `GatewayClass` lacks an unmanaged
+  annotation), the Gateway TLS translator skips critical status checks. This bypass
+  allows the translator to fetch Secrets from any namespace KIC watches, even when
+  a `ReferenceGrant` explicitly denies access or is missing.\n\nAn actor with RBAC
+  permissions to create or modify Gateways in a low-privileged namespace can reference
+  a Secret in a high-privileged namespace, causing KIC to \"leak\" that Secret's sensitive
+  private key material into the Kong dataplane configuration."
+date: "2026-05-19"
+pubdate: "2026-05-19"
+affected_range: "<3.4.14||>=3.5.0 <3.5.7"
+fixed_versions:
+- "3.4.14"
+- "3.5.7"
+affected_versions: "All versions before 3.4.14, all versions starting from 3.5.0 before
+  3.5.7"
+not_impacted: "All versions starting from 3.4.14 before 3.5.0, all versions starting
+  from 3.5.7"
+solution: "Upgrade to versions 3.4.14, 3.5.7 or above."
+urls:
+- "https://github.com/advisories/GHSA-m23h-6mwm-39m8"
+- "https://github.com/Kong/kubernetes-ingress-controller/security/advisories/GHSA-m23h-6mwm-39m8"
+- "https://github.com/Kong/kubernetes-ingress-controller/pull/7920"
+- "https://github.com/Kong/kubernetes-ingress-controller/pull/7921"
+- "https://github.com/Kong/kubernetes-ingress-controller/pull/7922"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:H/UI:N/VC:H/VI:N/VA:N/SC:H/SI:N/SA:N"
+uuid: "2d7cd750-3c53-417d-a977-db77c448caba"
+cwe_ids:
+- "CWE-200"
+- "CWE-937"
+- "CWE-1035"

@@ -10,7 +10,7 @@ description: "`v3`, `v5`, and `v6` accept external output buffers but do not rej
   **silent partial writes** into caller-provided buffers."
 date: "2026-04-22"
 pubdate: "2026-04-22"
-affected_range: "<14.0.0"
+affected_range: "<0"
 fixed_versions:
 - "14.0.0"
 affected_versions: "All versions before 14.0.0"

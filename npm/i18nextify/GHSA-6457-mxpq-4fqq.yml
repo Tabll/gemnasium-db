@@ -14,7 +14,7 @@ description: "Versions of `i18nextify` prior to 4.0.8 substitute `{{key}}` inter
   to the live DOM attribute."
 date: "2026-04-22"
 pubdate: "2026-04-22"
-affected_range: "<4.0.8"
+affected_range: "<0"
 fixed_versions:
 - "4.0.8"
 affected_versions: "All versions before 4.0.8"

@@ -16,7 +16,7 @@ description: "frp contains an authentication bypass in the HTTP vhost routing pa
   ordinary HTTP proxies that do not use this feature."
 date: "2026-04-14"
 pubdate: "2026-04-14"
-affected_range: ">=0.43.0 <0.68.1"
+affected_range: "<0"
 fixed_versions:
 - "0.68.1"
 affected_versions: "All versions starting from 0.43.0 before 0.68.1"

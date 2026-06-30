@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-m99r-2hxc-cp3q"
+identifiers:
+- "GHSA-m99r-2hxc-cp3q"
+package_slug: "npm/flowise-components"
+title: "Flowise has an MCP Security Bypass that Enables RCE"
+description: "There are three bypass methods for the security limitations of the Flowise
+  MCP feature, and attackers can execute arbitrary commands by combining these three
+  methods"
+date: "2026-05-15"
+pubdate: "2026-05-14"
+affected_range: "<3.1.2"
+fixed_versions:
+- "3.1.2"
+affected_versions: "All versions before 3.1.2"
+not_impacted: "All versions starting from 3.1.2"
+solution: "Upgrade to version 3.1.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-m99r-2hxc-cp3q"
+- "https://github.com/FlowiseAI/Flowise/security/advisories/GHSA-m99r-2hxc-cp3q"
+- "https://github.com/FlowiseAI/Flowise/releases/tag/flowise%403.1.2"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+uuid: "71acc45c-0e1d-4729-8d11-5d3b1e2626b8"
+cwe_ids:
+- "CWE-184"
+- "CWE-937"
+- "CWE-1035"

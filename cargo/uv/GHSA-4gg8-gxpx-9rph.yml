@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-4gg8-gxpx-9rph"
+identifiers:
+- "GHSA-4gg8-gxpx-9rph"
+package_slug: "cargo/uv"
+title: "uv is vulnerable to arbitrary file write through entry point names"
+description: "In versions of uv prior to 0.11.15, when installing a distribution containing
+  an entry point specification (under `console_scripts` or `gui_scripts`), uv would
+  place the generated entry point according to the given name even if doing so resulted
+  in a path outside of the environment's scripts directory.\n\nA malicious wheel could
+  use this to place an executable outside of the intended environment, including in
+  a directory already present on the user's `PATH`. This could shadow or overwrite
+  an existing executable and potentially result in unexpected code execution under
+  the wheel's control, even if the wheel's installation environment was not explicitly
+  added to `PATH` by the user.\n\nIn order to exploit this vulnerability, the attacker
+  must induce their target into installing a malicious wheel."
+date: "2026-05-29"
+pubdate: "2026-05-29"
+affected_range: "<0.11.15"
+fixed_versions:
+- "0.11.15"
+affected_versions: "All versions before 0.11.15"
+not_impacted: "All versions starting from 0.11.15"
+solution: "Upgrade to version 0.11.15 or above."
+urls:
+- "https://github.com/advisories/GHSA-4gg8-gxpx-9rph"
+- "https://github.com/astral-sh/uv/security/advisories/GHSA-4gg8-gxpx-9rph"
+uuid: "c427f663-0393-43de-9333-4abf3baf3a93"
+cwe_ids:
+- "CWE-22"
+- "CWE-937"
+- "CWE-1035"

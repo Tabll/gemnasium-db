@@ -14,7 +14,7 @@ description: "Saltcorn validates the post-login `dest` parameter with a string c
   a victim who can be tricked into logging in via a crafted Saltcorn URL."
 date: "2026-04-16"
 pubdate: "2026-04-16"
-affected_range: "<1.4.6||>=1.5.0-beta.0 <1.5.6||>=1.6.0-alpha.0 <1.6.0-beta.5"
+affected_range: "<0"
 fixed_versions:
 - "1.4.6"
 - "1.5.6"

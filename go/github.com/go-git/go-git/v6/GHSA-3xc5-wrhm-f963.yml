@@ -21,7 +21,7 @@ description: "`go-git` may leak HTTP authentication credentials when following r
   data."
 date: "2026-04-17"
 pubdate: "2026-04-17"
-affected_range: "<6.0.0-alpha.2"
+affected_range: "<0"
 fixed_versions:
 - "6.0.0-alpha.2"
 affected_versions: "All versions before 6.0.0-alpha.2"

@@ -24,7 +24,6 @@ urls:
 - "https://github.com/advisories/GHSA-3g92-f9ch-qjcm"
 - "https://github.com/Plonky3/Plonky3/security/advisories/GHSA-3g92-f9ch-qjcm"
 - "https://github.com/Plonky3/Plonky3/commit/5c1dc1d64c0516a8911bbf3ea40f173c21d6ae47"
-- "https://github.com/Plonky3/Plonky3"
 cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N"
 cvss_v4: "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
 uuid: "e7282ab6-da41-41e2-90f8-47fb056c40fc"

@@ -1,0 +1,37 @@
+---
+identifier: "GHSA-p64j-f4x9-wq66"
+identifiers:
+- "GHSA-p64j-f4x9-wq66"
+package_slug: "go/github.com/lin-snow/ech0"
+title: "Ech0's OAuth redirect URI validation ignores path component, enables exchange-code
+  theft"
+description: "`parseAndValidateClientRedirect` at `internal/service/auth/auth.go:448`
+  validates OAuth client-redirect URIs by comparing only scheme and host against the
+  admin-configured allowlist. Path, query, and fragment are ignored. The initiator
+  at `/oauth/:provider/login` embeds the caller-supplied `redirect_uri` verbatim into
+  the signed state JWT without any validation at login time. Alice submits a crafted
+  `redirect_uri` whose host matches an allowed origin but whose path points to any
+  page on that host. After the provider exchange, Ech0 redirects the victim to the
+  attacker-chosen path with the one-time exchange code in the query string. If the
+  chosen path leaks the URL via Referer, analytics, or an open redirect, the attacker
+  trades the code at `POST /api/auth/exchange` for the victim's access and refresh
+  tokens. RFC 6749 §3.1.2 requires exact redirect URI matching."
+date: "2026-05-07"
+pubdate: "2026-05-07"
+affected_range: "<1.4.8-0.20260503040728-a7e8b8e84bd1"
+fixed_versions:
+- "1.4.8-0.20260503040728-a7e8b8e84bd1"
+affected_versions: "All versions before 1.4.8-0.20260503040728-a7e8b8e84bd1"
+not_impacted: "All versions starting from 1.4.8-0.20260503040728-a7e8b8e84bd1"
+solution: "Upgrade to version 1.4.8-0.20260503040728-a7e8b8e84bd1 or above."
+urls:
+- "https://github.com/advisories/GHSA-p64j-f4x9-wq66"
+- "https://github.com/lin-snow/Ech0/security/advisories/GHSA-p64j-f4x9-wq66"
+- "https://github.com/lin-snow/Ech0/commit/a7e8b8e84bd1e3db090dfb720f2c6c433356b442"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:H/A:N"
+uuid: "87021167-dd3e-4547-ba4b-8d58b9fa4507"
+cwe_ids:
+- "CWE-601"
+- "CWE-937"
+- "CWE-1035"
+- "CWE-1173"

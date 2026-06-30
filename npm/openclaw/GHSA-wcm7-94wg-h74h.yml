@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-wcm7-94wg-h74h"
+identifiers:
+- "GHSA-wcm7-94wg-h74h"
+package_slug: "npm/openclaw"
+title: "Duplicate Advisory: OpenClaw host-env blocklist missing `GIT_TEMPLATE_DIR`
+  and `AWS_CONFIG_FILE` allows code execution via env override"
+description: "This advisory has been withdrawn."
+date: "2026-05-04"
+pubdate: "2026-04-24"
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "This advisory has been withdrawn."
+not_impacted: "This advisory has been withdrawn."
+solution: "This advisory has been withdrawn."
+urls:
+- "https://github.com/advisories/GHSA-wcm7-94wg-h74h"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-m866-6qv5-p2fg"
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-41332"
+- "https://www.vulncheck.com/advisories/openclaw-code-execution-via-missing-environment-variable-blocklist"
+cvss_v3: "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:L/AC:H/AT:N/PR:L/UI:N/VC:L/VI:H/VA:N/SC:N/SI:N/SA:N"
+uuid: "55ca2479-1152-4dd0-bc71-7343eed31617"
+cwe_ids:
+- "CWE-184"
+- "CWE-937"
+- "CWE-1035"

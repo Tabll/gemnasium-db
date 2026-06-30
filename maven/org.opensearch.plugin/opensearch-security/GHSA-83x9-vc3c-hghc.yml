@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-83x9-vc3c-hghc"
+identifiers:
+- "GHSA-83x9-vc3c-hghc"
+package_slug: "maven/org.opensearch.plugin/opensearch-security"
+title: "OpenSearch has a bypass of REST Layer Authorization Using Malformed Paths"
+description: "A flaw was identified in the OpenSearch REST layer that could allow
+  authorization checks to be bypassed when processing certain malformed HTTP requests.
+  This could permit unauthorized access to restricted API endpoints in environments
+  that rely on REST-layer authorization.\n\nTransport-level authorization is not affected
+  by this issue."
+date: "2026-05-07"
+pubdate: "2026-05-07"
+affected_range: "[2.11.0,2.19.0)"
+fixed_versions:
+- "2.19.0"
+affected_versions: "All versions starting from 2.11.0 before 2.19.0"
+not_impacted: "All versions before 2.11.0, all versions starting from 2.19.0"
+solution: "Upgrade to version 2.19.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-83x9-vc3c-hghc"
+- "https://github.com/opensearch-project/security/security/advisories/GHSA-83x9-vc3c-hghc"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N"
+uuid: "2ce4c3b3-f6c7-4392-b5d2-9b079871cbce"
+cwe_ids:
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

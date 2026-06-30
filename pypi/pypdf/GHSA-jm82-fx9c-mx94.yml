@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-jm82-fx9c-mx94"
+identifiers:
+- "GHSA-jm82-fx9c-mx94"
+package_slug: "pypi/pypdf"
+title: "pypdf: Missing stream length values ignore defined limits"
+description: "An attacker who uses this vulnerability can craft a PDF which leads
+  to large memory usage, as `MAX_DECLARED_STREAM_LENGTH` is sometimes ignored. This
+  requires parsing a content stream without a `/Length` value."
+date: "2026-06-18"
+pubdate: "2026-06-18"
+affected_range: "<6.13.3"
+fixed_versions:
+- "6.13.3"
+affected_versions: "All versions before 6.13.3"
+not_impacted: "All versions starting from 6.13.3"
+solution: "Upgrade to version 6.13.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-jm82-fx9c-mx94"
+- "https://github.com/py-pdf/pypdf/security/advisories/GHSA-jm82-fx9c-mx94"
+- "https://github.com/py-pdf/pypdf/pull/3871"
+- "https://github.com/py-pdf/pypdf/releases/tag/6.13.3"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+cvss_v4: "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+uuid: "b99cb023-e495-4a86-9631-dc223b0c7b6f"
+cwe_ids:
+- "CWE-400"
+- "CWE-770"
+- "CWE-937"
+- "CWE-1035"

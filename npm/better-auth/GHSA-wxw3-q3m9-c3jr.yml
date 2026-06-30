@@ -1,0 +1,39 @@
+---
+identifier: "GHSA-wxw3-q3m9-c3jr"
+identifiers:
+- "GHSA-wxw3-q3m9-c3jr"
+package_slug: "npm/better-auth"
+title: "Better Auth: OAuth callback accepts mismatched `state` when cookie-backed
+  state storage is used without PKCE"
+description: "In `parseGenericState`, the cookie branch decrypted the `oauth_state`
+  cookie and validated expiry, but did not compare the incoming OAuth `state` query
+  parameter to the nonce that `generateGenericState` issued at sign-in. Any callback
+  to `/api/auth/oauth2/callback/<providerId>` that arrived with a forged `state` and
+  any `code` was therefore accepted as long as the browser still held a live `oauth_state`
+  cookie. With `pkce: false` (or any `getToken` path that does not enforce a code-verifier
+  round-trip), an attacker who forced the victim to deliver an attacker-controlled
+  authorization code to the callback would mint a session bound to the attacker's
+  external identity in the victim's browser. Account-linking flows behaved the same
+  way, binding the attacker's external account to an authenticated victim row."
+date: "2026-05-15"
+pubdate: "2026-05-15"
+affected_range: "<1.6.2"
+fixed_versions:
+- "1.6.2"
+affected_versions: "All versions before 1.6.2"
+not_impacted: "All versions starting from 1.6.2"
+solution: "Upgrade to version 1.6.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-wxw3-q3m9-c3jr"
+- "https://github.com/better-auth/better-auth/security/advisories/GHSA-wxw3-q3m9-c3jr"
+- "https://github.com/better-auth/better-auth/issues/8897"
+- "https://github.com/better-auth/better-auth/pull/8949"
+- "https://github.com/better-auth/better-auth/commit/9deb7936aba7931f2db4b460141f476508f11bfd"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:H/A:N"
+uuid: "72b634e8-29d5-4e1a-8df6-86fdcdccc7b2"
+cwe_ids:
+- "CWE-287"
+- "CWE-345"
+- "CWE-352"
+- "CWE-937"
+- "CWE-1035"

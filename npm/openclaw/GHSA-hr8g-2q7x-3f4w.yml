@@ -7,7 +7,7 @@ title: "OpenClaw Has a Gateway Control Interface Information Disclosure Vulnerab
 description: "OpenClaw Gateway Control Interface Information Disclosure Vulnerability"
 date: "2026-04-03"
 pubdate: "2026-04-03"
-affected_range: "<2026.3.31"
+affected_range: "<0"
 fixed_versions:
 - "2026.3.31"
 affected_versions: "All versions before 2026.3.31"

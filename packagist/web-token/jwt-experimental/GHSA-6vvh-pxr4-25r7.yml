@@ -1,0 +1,36 @@
+---
+identifier: "GHSA-6vvh-pxr4-25r7"
+identifiers:
+- "GHSA-6vvh-pxr4-25r7"
+package_slug: "packagist/web-token/jwt-experimental"
+title: "PHP JWT Framework: Chacha20Poly1305 key-encryption algorithm discards the
+  Poly1305 authentication tag, performing no authentication on decryption"
+description: "The experimental `Chacha20Poly1305` key-encryption algorithm generates
+  the 16-byte Poly1305 authentication tag during `encryptKey()` but **discards it**:
+  the tag is never written to the header and therefore never reaches the wire. On
+  the receiving side, `decryptKey()` calls `openssl_decrypt('chacha20-poly1305', ...)`
+  **without the tag argument**, which makes OpenSSL skip authentication entirely.\n\nAs
+  a result the AEAD construction is silently degraded to unauthenticated ChaCha20:
+  a tampered encrypted CEK is accepted, and because ChaCha20 is a stream cipher, a
+  single-byte change in the ciphertext propagates as a single-byte change in the recovered
+  CEK with no integrity check (CWE-353 / CWE-347). An attacker on the token path can
+  manipulate the wrapped key without detection."
+date: "2026-06-18"
+pubdate: "2026-06-18"
+affected_range: "<=4.1.6"
+fixed_versions: []
+affected_versions: "All versions up to 4.1.6"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-6vvh-pxr4-25r7"
+- "https://github.com/web-token/jwt-framework/security/advisories/GHSA-6vvh-pxr4-25r7"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/web-token/jwt-library/GHSA-6vvh-pxr4-25r7.yaml"
+cvss_v3: "CVSS:3.1/AV:A/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:A/AC:H/AT:N/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N"
+uuid: "6456a59f-4f84-44bf-84c1-178145345556"
+cwe_ids:
+- "CWE-347"
+- "CWE-353"
+- "CWE-937"
+- "CWE-1035"

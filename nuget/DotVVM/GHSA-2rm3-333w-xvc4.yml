@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-2rm3-333w-xvc4"
+identifiers:
+- "GHSA-2rm3-333w-xvc4"
+package_slug: "nuget/DotVVM"
+title: "DotVVM: Unrestricted file upload"
+description: "All users of DotVVM with configured file upload storage are affected.\n\nDotVVM
+  allows anyone to upload files to the application, potentially causing denial of
+  service by filling the disk."
+date: "2026-06-19"
+pubdate: "2026-06-19"
+affected_range: "[,4.2.11),[4.3.0-preview01-final,4.3.15),[5.0.0-preview01-final,5.0.0-preview09-final)"
+fixed_versions:
+- "4.2.11"
+- "4.3.15"
+- "5.0.0-preview09-final"
+affected_versions: "All versions before 4.2.11, all versions starting from 4.3.0-preview01-final
+  before 4.3.15, all versions starting from 5.0.0-preview01-final before 5.0.0-preview09-final"
+not_impacted: "All versions starting from 4.2.11 before 4.3.0-preview01-final, all
+  versions starting from 4.3.15 before 5.0.0-preview01-final, all versions starting
+  from 5.0.0-preview09-final"
+solution: "Upgrade to versions 4.2.11, 4.3.15, 5.0.0-preview09-final or above."
+urls:
+- "https://github.com/advisories/GHSA-2rm3-333w-xvc4"
+- "https://github.com/riganti/dotvvm/security/advisories/GHSA-2rm3-333w-xvc4"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+uuid: "f1972587-fe07-4c44-865f-acd54af4154b"
+cwe_ids:
+- "CWE-434"
+- "CWE-937"
+- "CWE-1035"

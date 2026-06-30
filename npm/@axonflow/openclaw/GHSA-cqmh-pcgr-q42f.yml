@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-cqmh-pcgr-q42f"
+identifiers:
+- "GHSA-cqmh-pcgr-q42f"
+package_slug: "npm/@axonflow/openclaw"
+title: "@axonflow/openclaw fix introduces plugin cache and credential-file permission
+  hardening"
+description: "Two related permission defects in this AxonFlow plugin allowed registration
+  credentials and cache state to be readable by other local users on hosts where the
+  calling user's home directory was at the conventional `0755` mode."
+date: "2026-05-06"
+pubdate: "2026-05-06"
+affected_range: "<2.0.0"
+fixed_versions:
+- "2.0.0"
+affected_versions: "All versions before 2.0.0"
+not_impacted: "All versions starting from 2.0.0"
+solution: "Upgrade to version 2.0.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-cqmh-pcgr-q42f"
+- "https://github.com/getaxonflow/axonflow-openclaw-plugin/security/advisories/GHSA-cqmh-pcgr-q42f"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+uuid: "933e70cb-8237-4c66-bd27-2948ce3e571b"
+cwe_ids:
+- "CWE-552"
+- "CWE-732"
+- "CWE-937"
+- "CWE-1035"

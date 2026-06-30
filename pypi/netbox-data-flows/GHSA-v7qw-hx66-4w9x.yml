@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-v7qw-hx66-4w9x"
+identifiers:
+- "GHSA-v7qw-hx66-4w9x"
+package_slug: "pypi/netbox-data-flows"
+title: "netbox-data-flows has stored XSS in ObjectAlias names rendered inside DataFlow
+  tables"
+description: "An authenticated user who can create or edit `ObjectAlias` objects can
+  store arbitrary HTML/JavaScript in an alias name. That payload is later rendered
+  unescaped in `DataFlow` table views, causing a stored XSS when another user views
+  the affected page."
+date: "2026-05-07"
+pubdate: "2026-05-07"
+affected_range: "<1.5.1"
+fixed_versions:
+- "1.5.1"
+affected_versions: "All versions before 1.5.1"
+not_impacted: "All versions starting from 1.5.1"
+solution: "Upgrade to version 1.5.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-v7qw-hx66-4w9x"
+- "https://github.com/Alef-Burzmali/netbox-data-flows/security/advisories/GHSA-v7qw-hx66-4w9x"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:N"
+uuid: "4fb979e5-bb59-4582-8188-7f1d0ef9f278"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

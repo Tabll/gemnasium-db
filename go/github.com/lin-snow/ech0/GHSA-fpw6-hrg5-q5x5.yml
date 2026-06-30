@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-fpw6-hrg5-q5x5"
+identifiers:
+- "GHSA-fpw6-hrg5-q5x5"
+package_slug: "go/github.com/lin-snow/ech0"
+title: "ech0's acess tokens with expiry=never cannot be revoked: logout panics, delete
+  does not blacklist JTI"
+description: "Access tokens created with the \"never expire\" option have no `exp`
+  JWT claim. Three independent revocation mechanisms fail for this token type. Logout
+  at `internal/handler/auth/auth.go:154` and `:163` dereferences `claims.ExpiresAt.Time`,
+  panicking on the nil field so the token never hits the blacklist. `RevokeToken`
+  at `internal/repository/auth/auth.go:45-50` skips when `remainTTL <= 0`. The admin's
+  \"Delete token\" panel action at `internal/service/setting/access_token_service.go:183-185`
+  removes the database record but does not call `RevokeToken` to blacklist the JTI.
+  Once a never-expire token leaks, the JWT stays cryptographically valid until the
+  admin rotates the signing key across the entire instance."
+date: "2026-05-07"
+pubdate: "2026-05-07"
+affected_range: "<1.4.8-0.20260503041146-eab62379c795"
+fixed_versions:
+- "1.4.8-0.20260503041146-eab62379c795"
+affected_versions: "All versions before 1.4.8-0.20260503041146-eab62379c795"
+not_impacted: "All versions starting from 1.4.8-0.20260503041146-eab62379c795"
+solution: "Upgrade to version 1.4.8-0.20260503041146-eab62379c795 or above."
+urls:
+- "https://github.com/advisories/GHSA-fpw6-hrg5-q5x5"
+- "https://github.com/lin-snow/Ech0/security/advisories/GHSA-fpw6-hrg5-q5x5"
+- "https://github.com/lin-snow/Ech0/commit/eab62379c795c3f4850a9ca938ae3f27d7171541"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N"
+uuid: "908e7694-810c-47dc-bcc5-93c64a617338"
+cwe_ids:
+- "CWE-613"
+- "CWE-755"
+- "CWE-937"
+- "CWE-1035"

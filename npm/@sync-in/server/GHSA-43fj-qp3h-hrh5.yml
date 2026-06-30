@@ -9,7 +9,7 @@ description: "The `/api/auth/login` endpoint contains a logic flaw that allows u
   time."
 date: "2026-04-15"
 pubdate: "2026-04-15"
-affected_range: "<2.2.0"
+affected_range: "<0"
 fixed_versions:
 - "2.2.0"
 affected_versions: "All versions before 2.2.0"

@@ -21,7 +21,6 @@ solution: "Upgrade to version 1.17.0 or above."
 urls:
 - "https://github.com/advisories/GHSA-8wfp-579w-6r25"
 - "https://github.com/kyverno/kyverno/security/advisories/GHSA-8wfp-579w-6r25"
-- "https://github.com/kyverno/kyverno"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N"
 uuid: "1df5a371-23e1-40d1-baac-38bab7a9c11f"
 cwe_ids:

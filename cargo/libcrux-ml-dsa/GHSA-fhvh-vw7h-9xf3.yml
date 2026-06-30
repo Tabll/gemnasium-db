@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-fhvh-vw7h-9xf3"
+identifiers:
+- "GHSA-fhvh-vw7h-9xf3"
+package_slug: "cargo/libcrux-ml-dsa"
+title: " libcrux-ml-dsa: Signature Verification on AVX2 Platforms Mishandles Edge
+  Case"
+description: "The AVX2 implementation of ML-DSA verification incorrectly implemented\nthe
+  `use_hint` function, mishandling an edge case that should lead to\nsignature rejection."
+date: "2026-05-19"
+pubdate: "2026-05-19"
+affected_range: "<0.0.9"
+fixed_versions:
+- "0.0.9"
+affected_versions: "All versions before 0.0.9"
+not_impacted: "All versions starting from 0.0.9"
+solution: "Upgrade to version 0.0.9 or above."
+urls:
+- "https://github.com/advisories/GHSA-fhvh-vw7h-9xf3"
+- "https://github.com/C2SP/wycheproof/pull/234"
+- "https://github.com/cryspen/libcrux/pull/1398"
+- "https://github.com/tink-crypto/tink-go/pull/48"
+- "https://rustsec.org/advisories/RUSTSEC-2026-0125.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N"
+uuid: "26cf7fdb-266f-4004-897f-9caaa1af784e"
+cwe_ids:
+- "CWE-347"
+- "CWE-937"
+- "CWE-1035"

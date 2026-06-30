@@ -78,7 +78,6 @@ solution: "Upgrade to version 2.54.0 or above."
 urls:
 - "https://github.com/advisories/GHSA-jrc6-fmhw-fpq2"
 - "https://github.com/kimai/kimai/security/advisories/GHSA-jrc6-fmhw-fpq2"
-- "https://github.com/kimai/kimai"
 cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N"
 uuid: "e058fb89-442e-4b36-892f-d369cce99d16"
 cwe_ids:

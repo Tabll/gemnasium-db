@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-f3cj-j4f6-wq85"
+identifiers:
+- "GHSA-f3cj-j4f6-wq85"
+package_slug: "npm/svelte"
+title: "Svelte: SSR XSS via Insecure Promise Serialization in hydratable"
+description: "Contents of `hydratable` promises were not properly stringified, potentially
+  leading to an XSS exploit. You are vulnerable if all of the following is true:\n-
+  you are using `hydratable` (an experimental feature at the time of this report)\n-
+  you are passing attacker-controlled input such that a synchronous value is hydrated,
+  then a promise value, e.g. `hydratable('someKey', () => [synchronousValue, promiseValue])`"
+date: "2026-05-14"
+pubdate: "2026-05-14"
+affected_range: ">=5.46.0 <5.55.7"
+fixed_versions:
+- "5.55.7"
+affected_versions: "All versions starting from 5.46.0 before 5.55.7"
+not_impacted: "All versions before 5.46.0, all versions starting from 5.55.7"
+solution: "Upgrade to version 5.55.7 or above."
+urls:
+- "https://github.com/advisories/GHSA-f3cj-j4f6-wq85"
+- "https://github.com/sveltejs/svelte/security/advisories/GHSA-f3cj-j4f6-wq85"
+- "https://github.com/sveltejs/svelte/commit/a16ebc67bbcf8f708360195687e1b2719463e1a4"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:N/VI:N/VA:N/SC:H/SI:H/SA:N"
+uuid: "0ae3055c-43fb-4185-a00e-38fd587def87"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

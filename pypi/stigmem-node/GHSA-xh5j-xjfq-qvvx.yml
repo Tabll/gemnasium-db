@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-xh5j-xjfq-qvvx"
+identifiers:
+- "GHSA-xh5j-xjfq-qvvx"
+package_slug: "pypi/stigmem-node"
+title: "stigmem-node's federation peer token timestamp validation may reject valid
+  peer tokens"
+description: "A mismatch in federation peer-token timestamp handling could cause valid
+  peer tokens to be treated as expired. Impacted deployments are Stigmem nodes using
+  federation peer authentication paths from affected versions. The primary impact
+  is availability and reliability of authenticated federation flows."
+date: "2026-05-29"
+pubdate: "2026-05-29"
+affected_range: "<0.9.0-a.2"
+fixed_versions:
+- "0.9.0-a.2"
+affected_versions: "All versions before 0.9.0-a.2"
+not_impacted: "All versions starting from 0.9.0-a.2"
+solution: "Upgrade to version 0.9.0-a.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-xh5j-xjfq-qvvx"
+- "https://github.com/eidetic-labs/stigmem/security/advisories/GHSA-xh5j-xjfq-qvvx"
+- "https://github.com/eidetic-labs/stigmem/blob/v0.9.0a2/CHANGELOG.md#L14-L35"
+- "https://github.com/eidetic-labs/stigmem/blob/v0.9.0a2/SECURITY.md"
+- "https://github.com/eidetic-labs/stigmem/releases/tag/v0.9.0a2"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+uuid: "4c1cf9e5-a811-491a-85f3-667cfdb1ca33"
+cwe_ids:
+- "CWE-345"
+- "CWE-937"
+- "CWE-1035"

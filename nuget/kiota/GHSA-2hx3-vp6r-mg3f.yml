@@ -12,7 +12,7 @@ description: "Kiota versions **prior to 1.31.1** are affected by a code-generati
   can break out of string literals and inject additional code into generated clients."
 date: "2026-04-14"
 pubdate: "2026-04-14"
-affected_range: "[,1.31.1)"
+affected_range: "(,0)"
 fixed_versions:
 - "1.31.1"
 affected_versions: "All versions before 1.31.1"

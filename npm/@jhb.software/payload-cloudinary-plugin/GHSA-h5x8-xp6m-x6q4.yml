@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-h5x8-xp6m-x6q4"
+identifiers:
+- "GHSA-h5x8-xp6m-x6q4"
+package_slug: "npm/@jhb.software/payload-cloudinary-plugin"
+title: "@jhb.software/payload-cloudinary-plugin: Arbitrary Cloudinary API Parameter
+  Signing"
+description: "`@jhb.software/payload-cloudinary-plugin` v0.3.4 exposes a server-side
+  signing endpoint (`POST /api/cloudinary-generate-signature`) that passes attacker-supplied
+  `paramsToSign` directly to `cloudinary.utils.api_sign_request()` without any allowlist,
+  key filtering, or policy enforcement. Any authenticated Payload user can obtain
+  a cryptographically valid Cloudinary HMAC-SHA1 signature for arbitrary upload parameters
+  — including `overwrite=true`, `type=private`, `notification_url`, and path-traversal
+  folder values — enabling unauthorized asset replacement, access-control bypass,
+  and potential SSRF within the configured Cloudinary account."
+date: "2026-06-23"
+pubdate: "2026-06-19"
+affected_range: ">=0.3.0 <0.4.0"
+fixed_versions:
+- "0.4.0"
+affected_versions: "All versions starting from 0.3.0 before 0.4.0"
+not_impacted: "All versions before 0.3.0, all versions starting from 0.4.0"
+solution: "Upgrade to version 0.4.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-h5x8-xp6m-x6q4"
+- "https://github.com/jhb-software/payload-plugins/security/advisories/GHSA-h5x8-xp6m-x6q4"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:L"
+uuid: "e7387994-3d0d-456f-bd09-0f52b7aaf852"
+cwe_ids:
+- "CWE-347"
+- "CWE-937"
+- "CWE-1035"

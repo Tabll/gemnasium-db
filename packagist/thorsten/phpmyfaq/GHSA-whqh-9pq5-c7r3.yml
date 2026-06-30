@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-whqh-9pq5-c7r3"
+identifiers:
+- "CVE-2026-46360"
+- "GHSA-whqh-9pq5-c7r3"
+package_slug: "packagist/thorsten/phpmyfaq"
+title: "phpMyFAQ has a SVG Sanitizer Entity Decoding Depth Limit Bypass Leading to
+  Stored XSS"
+description: "This advisory has been withdrawn."
+date: "2026-06-09"
+pubdate: "2026-05-06"
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "This advisory has been withdrawn."
+not_impacted: "This advisory has been withdrawn."
+solution: "This advisory has been withdrawn."
+urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-46360"
+- "https://github.com/advisories/GHSA-whqh-9pq5-c7r3"
+- "https://github.com/thorsten/phpMyFAQ/security/advisories/GHSA-whqh-9pq5-c7r3"
+- "https://www.vulncheck.com/advisories/phpmyfaq-stored-xss-via-entity-decoding-depth-limit-bypass-in-svg-sanitizer"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N"
+uuid: "abe4b950-2056-4344-a4ff-f6aaace9585b"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

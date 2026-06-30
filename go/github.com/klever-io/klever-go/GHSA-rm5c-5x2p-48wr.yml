@@ -1,0 +1,37 @@
+---
+identifier: "GHSA-rm5c-5x2p-48wr"
+identifiers:
+- "CVE-2026-52878"
+- "GHSA-rm5c-5x2p-48wr"
+package_slug: "go/github.com/klever-io/klever-go"
+title: "Klever-Go KVM: Unauthenticated remote node crash (nil-pointer DoS) in klever-go
+  P2P transaction interceptor (txVersionChecker nil RawData) - potential chain halt"
+description: "Every transaction gossiped on the klever-go P2P network is decoded and
+  validated\nsynchronously inside the libp2p pubsub topic-validator callback. The
+  validator\n`txVersionChecker.CheckTxVersion` dereferences `tx.RawData.Version` with
+  no nil\ncheck. A protobuf `Transaction` whose embedded `RawData` sub-message is
+  omitted\ndecodes to `RawData == nil`, so validating it triggers a nil-pointer panic.\n\nThe
+  libp2p pubsub callback, the underlying go-libp2p-pubsub validation worker, and\nklever's
+  own `network/p2p` layer install no `recover()`, so the panic propagates and\ncrashes
+  the entire node process. The attacker payload is a 3-byte protobuf message;\nno
+  validator key, stake, funds, or on-chain account is required. Aimed at enough of\nthe
+  BLS validator set, repeated delivery halts block production (chain halt)."
+date: "2026-06-09"
+pubdate: "2026-06-05"
+affected_range: ">=1.7.14 <1.7.18"
+fixed_versions:
+- "1.7.18"
+affected_versions: "All versions starting from 1.7.14 before 1.7.18"
+not_impacted: "All versions before 1.7.14, all versions starting from 1.7.18"
+solution: "Upgrade to version 1.7.18 or above."
+urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-52878"
+- "https://github.com/advisories/GHSA-rm5c-5x2p-48wr"
+- "https://github.com/klever-io/klever-go/security/advisories/GHSA-rm5c-5x2p-48wr"
+- "https://github.com/klever-io/klever-go/releases/tag/v1.7.18"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "5c826597-61fd-4901-bfd9-31a7d51f74ba"
+cwe_ids:
+- "CWE-476"
+- "CWE-937"
+- "CWE-1035"

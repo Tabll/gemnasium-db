@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-qw48-84f6-28gv"
+identifiers:
+- "GHSA-qw48-84f6-28gv"
+package_slug: "pypi/graphitedb"
+title: "Graphite Has a Pickle Deserialization Vulnerability"
+description: "**Type of vulnerability:** Insecure Deserialization via Python's `pickle`
+  module.\n\n**Who is impacted:**\nUsers of *Graphite graph database engine* versions
+  **before 0.2** who load database files from untrusted or third-party sources.\nAn
+  attacker could craft a malicious database file that executes arbitrary code when
+  loaded by the engine. This is possible because the engine used `pickle` for serialization,
+  which is known to be unsafe for untrusted data."
+date: "2026-05-18"
+pubdate: "2026-05-18"
+affected_range: "<0.2.0"
+fixed_versions:
+- "0.2.0"
+affected_versions: "All versions before 0.2.0"
+not_impacted: "All versions starting from 0.2.0"
+solution: "Upgrade to version 0.2.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-qw48-84f6-28gv"
+- "https://github.com/mkh-user/graphite/security/advisories/GHSA-qw48-84f6-28gv"
+- "https://github.com/mkh-user/graphite/releases/tag/v0.2"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+uuid: "9063cf85-51cb-4efb-896e-42014e9e2c59"
+cwe_ids:
+- "CWE-502"
+- "CWE-937"
+- "CWE-1035"

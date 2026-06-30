@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-84r2-jw7c-4r5q"
 identifiers:
+- "CVE-2025-71320"
 - "GHSA-84r2-jw7c-4r5q"
 package_slug: "pypi/picklescan"
 title: "Picklescan has Incomplete List of Disallowed Inputs"
@@ -14,7 +15,7 @@ description: "Currently picklescanner only blocks some specific functions of the
   picklescan treats them as \"Safe\" or \"Suspicious\" (depending on configuration)
   but does not flag them as \"Dangerous\", allowing the malicious file to bypass the
   security check."
-date: "2025-12-29"
+date: "2026-06-18"
 pubdate: "2025-12-29"
 affected_range: "<0.0.33"
 fixed_versions:
@@ -23,12 +24,13 @@ affected_versions: "All versions before 0.0.33"
 not_impacted: "All versions starting from 0.0.33"
 solution: "Upgrade to version 0.0.33 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2025-71320"
 - "https://github.com/advisories/GHSA-84r2-jw7c-4r5q"
 - "https://github.com/mmaitre314/picklescan/security/advisories/GHSA-84r2-jw7c-4r5q"
 - "https://github.com/mmaitre314/picklescan/pull/53"
 - "https://github.com/mmaitre314/picklescan/commit/70c1c6c31beb6baaf52c8db1b6c3c0e84a6f9dab"
-- "https://github.com/mmaitre314/picklescan"
 - "https://github.com/mmaitre314/picklescan/releases/tag/v0.0.33"
+- "https://www.vulncheck.com/advisories/picklescan-remote-code-execution-via-incomplete-disallowed-inputs"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
 cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
 uuid: "c36bad51-fb46-4f2c-8d19-23bf1089cb3f"

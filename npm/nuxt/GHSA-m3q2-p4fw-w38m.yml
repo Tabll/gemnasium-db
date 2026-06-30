@@ -1,0 +1,42 @@
+---
+identifier: "GHSA-m3q2-p4fw-w38m"
+identifiers:
+- "GHSA-m3q2-p4fw-w38m"
+package_slug: "npm/nuxt"
+title: "Cross-site scripting via <NoScript> slot content in Nuxt's head components"
+description: "Nuxt's globally registered `<NoScript>` component (from `@unhead/vue`
+  head components, re-exported by Nuxt) wrote its default-slot content to the `innerHTML`
+  of the `<noscript>` head tag, bypassing the HTML escaping that `{{ }}` interpolation
+  normally applies in Vue templates.\n\nApplications that placed untrusted, attacker-controllable
+  data inside a `<NoScript>` slot, for example:\n\n```vue\n<NoScript>{{ route.query.banner
+  }}</NoScript>\n```\n\nwould emit that value unescaped inside `<noscript>` in the
+  server-rendered HTML. With scripting enabled, the HTML parser treats `<noscript>`
+  content in `<head>` under the \"in head noscript\" insertion mode: any tag other
+  than `link`, `meta`, `noframes`, or `style` implicitly closes `<noscript>` and is
+  re-processed in the head. A payload such as `<script>...</script>` therefore escapes
+  the element and executes in the document context.\n\nSibling head components (`<Style>`,
+  `<Title>`) were not affected because they already routed slot text through the safe
+  `textContent` path."
+date: "2026-06-16"
+pubdate: "2026-06-16"
+affected_range: "<3.21.7||>=4.0.0 <4.4.7"
+fixed_versions:
+- "3.21.7"
+- "4.4.7"
+affected_versions: "All versions before 3.21.7, all versions starting from 4.0.0 before
+  4.4.7"
+not_impacted: "All versions starting from 3.21.7 before 4.0.0, all versions starting
+  from 4.4.7"
+solution: "Upgrade to versions 3.21.7, 4.4.7 or above."
+urls:
+- "https://github.com/advisories/GHSA-m3q2-p4fw-w38m"
+- "https://github.com/nuxt/nuxt/security/advisories/GHSA-m3q2-p4fw-w38m"
+- "https://github.com/nuxt/nuxt/commit/4b054e9d95f8daf366cb144b52782047c511a66e"
+- "https://github.com/nuxt/nuxt/commit/7fea9fd687f1dacbfb63db5fae5839896b017a0e"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "2ff515a0-61d4-44ad-a405-d9a6ce538eb9"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

@@ -10,7 +10,7 @@ description: "An attacker who uses this vulnerability can craft a PDF which lead
   values or object streams with wrong large `/N` values."
 date: "2026-04-15"
 pubdate: "2026-04-15"
-affected_range: "<6.10.1"
+affected_range: "<0"
 fixed_versions:
 - "6.10.1"
 affected_versions: "All versions before 6.10.1"

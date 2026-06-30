@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-8pf2-vj79-4wxg"
+identifiers:
+- "GHSA-8pf2-vj79-4wxg"
+package_slug: "npm/openclaw"
+title: "Duplicate Advisory: OpenClaw: MSTeams thread history bypasses sender allowlist
+  via Graph API"
+description: "This advisory has been withdrawn."
+date: "2026-05-06"
+pubdate: "2026-04-28"
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "This advisory has been withdrawn."
+not_impacted: "This advisory has been withdrawn."
+solution: "This advisory has been withdrawn."
+urls:
+- "https://github.com/advisories/GHSA-8pf2-vj79-4wxg"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-chfm-xgc4-47rj"
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-41365"
+- "https://github.com/openclaw/openclaw/commit/5cca38084074fb5095aa11b6a59820d63e4937c9"
+- "https://www.vulncheck.com/advisories/openclaw-sender-allowlist-bypass-via-graph-api-thread-history"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "c4d76361-1669-4a1d-8e4c-d601ad9669fc"
+cwe_ids:
+- "CWE-441"
+- "CWE-937"
+- "CWE-1035"

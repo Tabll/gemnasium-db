@@ -12,7 +12,7 @@ description: "When a RequestAuthentication resource is created with a jwksUri po
   and missed a few codepaths. 1.29.2 and 1.28.6 contain the more robust fix."
 date: "2026-04-16"
 pubdate: "2026-04-16"
-affected_range: "<0.0.0-20260410004459-189832a289c1"
+affected_range: "<0"
 fixed_versions:
 - "0.0.0-20260410004459-189832a289c1"
 affected_versions: "All versions before 0.0.0-20260410004459-189832a289c1"

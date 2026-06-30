@@ -9,7 +9,7 @@ description: "When OIDC authentication fails, the full bearer token is logged at
   in application logs and any connected log aggregation system."
 date: "2026-04-14"
 pubdate: "2026-04-14"
-affected_range: "<0.16.2"
+affected_range: "<0"
 fixed_versions:
 - "0.16.2"
 affected_versions: "All versions before 0.16.2"

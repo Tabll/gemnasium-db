@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-w9f5-8q83-qwpx"
+identifiers:
+- "GHSA-w9f5-8q83-qwpx"
+package_slug: "npm/openclaw"
+title: "Duplicate Advisory: OpenClaw: Fake DeviceToken Bypasses Shared Auth Rate Limiting"
+description: "This advisory has been withdrawn."
+date: "2026-05-04"
+pubdate: "2026-04-24"
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "This advisory has been withdrawn."
+not_impacted: "This advisory has been withdrawn."
+solution: "This advisory has been withdrawn."
+urls:
+- "https://github.com/advisories/GHSA-w9f5-8q83-qwpx"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-6p8r-6m93-557f"
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-41333"
+- "https://github.com/openclaw/openclaw/commit/af0c0862f22ca4492406a3103d05e3628f94cbe9"
+- "https://www.vulncheck.com/advisories/openclaw-authentication-rate-limiting-bypass-via-fake-devicetoken"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N"
+uuid: "595eebb3-7f02-468c-b4a3-c979a83b8856"
+cwe_ids:
+- "CWE-799"
+- "CWE-937"
+- "CWE-1035"

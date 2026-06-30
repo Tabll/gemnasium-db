@@ -13,7 +13,7 @@ description: "The `--address` CLI flag (and `NORNICDB_ADDRESS` / `server.host` c
   sharing the network."
 date: "2026-04-22"
 pubdate: "2026-04-22"
-affected_range: "<1.0.42-hotfix"
+affected_range: "<0"
 fixed_versions:
 - "1.0.42-hotfix"
 affected_versions: "All versions before 1.0.42-hotfix"

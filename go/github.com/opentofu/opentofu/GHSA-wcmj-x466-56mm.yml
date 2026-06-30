@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-wcmj-x466-56mm"
+identifiers:
+- "GHSA-wcmj-x466-56mm"
+package_slug: "go/github.com/opentofu/opentofu"
+title: "OpenTofu: Provider cache installation follows root-module-controlled package
+  directory symlink and writes outside the working tree"
+description: "If a symlink already exists under the `.terraform/providers` directory
+  where a provider package needs to be installed, `tofu init` would follow that symlink
+  and install the new package content into it.\n\nIf an attacker can coerce an operator
+  into running `tofu init` in a directory whose contents are attacker-controlled,
+  they can include such a symlink along with instruction to install an attacker-controlled
+  provider package at the path of that symlink, which would then cause OpenTofu to
+  write the contents of that provider package into an arbitrary directory elsewhere
+  in the filesystem if the OpenTofu process has sufficient permission to write there."
+date: "2026-06-23"
+pubdate: "2026-06-23"
+affected_range: "<1.10.10||>=1.11.0 <1.11.7"
+fixed_versions:
+- "1.10.10"
+- "1.11.7"
+affected_versions: "All versions before 1.10.10, all versions starting from 1.11.0
+  before 1.11.7"
+not_impacted: "All versions starting from 1.10.10 before 1.11.0, all versions starting
+  from 1.11.7"
+solution: "Upgrade to versions 1.10.10, 1.11.7 or above."
+urls:
+- "https://github.com/advisories/GHSA-wcmj-x466-56mm"
+- "https://github.com/opentofu/opentofu/security/advisories/GHSA-wcmj-x466-56mm"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:N/I:H/A:N"
+uuid: "94758104-28aa-4cf0-be27-e21162fcbf18"
+cwe_ids:
+- "CWE-61"
+- "CWE-937"
+- "CWE-1035"

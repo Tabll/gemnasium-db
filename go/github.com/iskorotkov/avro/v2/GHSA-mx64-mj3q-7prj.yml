@@ -1,0 +1,38 @@
+---
+identifier: "GHSA-mx64-mj3q-7prj"
+identifiers:
+- "GHSA-mx64-mj3q-7prj"
+package_slug: "go/github.com/iskorotkov/avro/v2"
+title: "iskorotkov/avro: Denial-of-Service Vulnerability in Decoder"
+description: "The Avro map decoder accepted attacker-controlled block-element counts
+  from the wire format and grew the destination map without enforcing an upper bound.
+  The slice decoder already had `Config.MaxSliceAllocSize` for the equivalent attack
+  against arrays; the map decoder had no analogous limit, so a producer could declare
+  an arbitrarily large map (in one block, or chunked across many sub-limit blocks)
+  and exhaust process memory until the OOM killer fired.\n\nThe fix introduces `Config.MaxMapAllocSize`
+  with cumulative enforcement across block boundaries. **The new limit is opt-in**:
+  the field defaults to zero, which preserves the previous unbounded behavior for
+  backward compatibility. **Upgrading to `v2.33.0` alone does not mitigate the issue**
+  — consumers of untrusted Avro data must explicitly set `MaxMapAllocSize` on their
+  `avro.Config`."
+date: "2026-05-18"
+pubdate: "2026-05-18"
+affected_range: "<2.33.0"
+fixed_versions:
+- "2.33.0"
+affected_versions: "All versions before 2.33.0"
+not_impacted: "All versions starting from 2.33.0"
+solution: "Upgrade to version 2.33.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-mx64-mj3q-7prj"
+- "https://github.com/iskorotkov/avro/security/advisories/GHSA-mx64-mj3q-7prj"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+uuid: "7837970f-004e-403b-a6e0-b0a8dba95a96"
+cwe_ids:
+- "CWE-400"
+- "CWE-770"
+- "CWE-789"
+- "CWE-937"
+- "CWE-1035"
+- "CWE-1284"

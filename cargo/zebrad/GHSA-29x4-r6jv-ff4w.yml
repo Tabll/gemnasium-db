@@ -11,7 +11,7 @@ description: "A vulnerability in Zebra's JSON-RPC HTTP middleware allows an auth
   an unrecoverable error and aborts the process instead of returning an error response."
 date: "2026-04-18"
 pubdate: "2026-04-18"
-affected_range: ">=2.2.0 <4.3.1"
+affected_range: "<0"
 fixed_versions:
 - "4.3.1"
 affected_versions: "All versions starting from 2.2.0 before 4.3.1"

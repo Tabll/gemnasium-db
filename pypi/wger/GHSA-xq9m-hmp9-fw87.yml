@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-xq9m-hmp9-fw87"
+identifiers:
+- "GHSA-xq9m-hmp9-fw87"
+package_slug: "pypi/wger"
+title: "wger: CSV/TSV formula injection in gym member export (first_name/last_name)"
+description: "The gym member TSV export endpoint in wger writes `first_name` and `last_name`
+  profile fields verbatim to TSV cells with no formula-prefix sanitization. Any gym
+  member (including newly self-registered users) can pre-load a spreadsheet formula
+  into their own profile. When a gym admin later exports the member list and opens
+  the file in Excel, LibreOffice Calc, or Google Sheets, the formula executes in the
+  admin's local spreadsheet context — enabling data exfiltration and, on legacy Excel
+  with DDE enabled, arbitrary local code execution."
+date: "2026-05-06"
+pubdate: "2026-05-06"
+affected_range: "<2.6.0"
+fixed_versions:
+- "2.6.0"
+affected_versions: "All versions before 2.6.0"
+not_impacted: "All versions starting from 2.6.0"
+solution: "Upgrade to version 2.6.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-xq9m-hmp9-fw87"
+- "https://github.com/wger-project/wger/security/advisories/GHSA-xq9m-hmp9-fw87"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N"
+uuid: "1beae78c-8b13-4814-bc8e-769779958ae1"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"
+- "CWE-1236"

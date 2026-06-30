@@ -18,7 +18,7 @@ description: "Flarum's patch for [CVE-2023-27577](https://github.com/flarum/fram
   request forgery)."
 date: "2026-04-22"
 pubdate: "2026-04-22"
-affected_range: "<1.8.16||>=2.0.0-beta.1 <2.0.0-rc.1"
+affected_range: "<0"
 fixed_versions:
 - "1.8.16"
 - "2.0.0-rc.1"

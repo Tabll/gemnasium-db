@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-qh5x-rfwf-rvfv"
+identifiers:
+- "GHSA-qh5x-rfwf-rvfv"
+package_slug: "go/github.com/apernet/hysteria"
+title: "Hysteria vulnerable to server crash when max_datagram_frame_size very small"
+description: "An authenticated client can crash the Hysteria server by advertising
+  a very small QUIC `max_datagram_frame_size` and then triggering a UDP response from
+  the server. When the server tries to send the UDP response back via QUIC DATAGRAM,
+  quic-go returns `DatagramTooLargeError`. The server then attempts to fragment the
+  Hysteria UDP message, but the fragmentation code does not handle the case where
+  the UDP message header itself is larger than the maximum datagram payload size.
+  This results in a slice bounds panic and terminates the server process."
+date: "2026-06-26"
+pubdate: "2026-06-26"
+affected_range: "<2.9.2"
+fixed_versions:
+- "2.9.2"
+affected_versions: "All versions before 2.9.2"
+not_impacted: "All versions starting from 2.9.2"
+solution: "Upgrade to version 2.9.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-qh5x-rfwf-rvfv"
+- "https://github.com/apernet/hysteria/security/advisories/GHSA-qh5x-rfwf-rvfv"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "3072f4fb-c44f-440d-b7a1-13ea7a2abd85"
+cwe_ids:
+- "CWE-770"
+- "CWE-937"
+- "CWE-1035"

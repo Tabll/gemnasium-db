@@ -23,7 +23,6 @@ solution: "Upgrade to version 43.102.11 or above."
 urls:
 - "https://github.com/advisories/GHSA-5vjq-5jmg-39xq"
 - "https://github.com/renovatebot/renovate/security/advisories/GHSA-5vjq-5jmg-39xq"
-- "https://github.com/renovatebot/renovate"
 - "https://github.com/renovatebot/renovate/releases/tag/43.102.11"
 cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:L/I:H/A:H"
 uuid: "22a2e81b-4d5b-4479-b67c-8111694d428d"

@@ -23,7 +23,6 @@ solution: "Unfortunately, there is no solution available yet."
 urls:
 - "https://github.com/advisories/GHSA-gqqj-85qm-8qhf"
 - "https://github.com/paperclipai/paperclip/security/advisories/GHSA-gqqj-85qm-8qhf"
-- "https://github.com/paperclipai/paperclip"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:N"
 uuid: "ccc35311-6a63-40e9-b102-3428047c1431"
 cwe_ids:

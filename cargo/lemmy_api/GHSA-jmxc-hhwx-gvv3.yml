@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-jmxc-hhwx-gvv3"
+identifiers:
+- "GHSA-jmxc-hhwx-gvv3"
+package_slug: "cargo/lemmy_api"
+title: "Private Lemmy instances expose multi-community metadata without authentication"
+description: "`read_multi_community()` does not enforce the private-instance setting.
+  On a private instance, an unauthenticated visitor can read multi-community names,
+  titles, summaries, sidebars, owner identities, and member community lists.\n\nmid
+  = api(\"POST\", \"/multi_community\", admin, json={\n\"name\": \"m\" + suffix, \"title\":
+  secret,\n\"summary\": secret + \" summary\", \"sidebar\": secret + \" sidebar\",\n}).json()[\"multi_community_view\"][\"multi\"][\"id\"]"
+date: "2026-06-08"
+pubdate: "2026-05-06"
+affected_range: "<=0.19.1-rc.1"
+fixed_versions: []
+affected_versions: "All versions up to 0.19.1-rc.1"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-jmxc-hhwx-gvv3"
+- "https://github.com/LemmyNet/lemmy/security/advisories/GHSA-jmxc-hhwx-gvv3"
+- "https://github.com/LemmyNet/lemmy/commit/637151121a8e27b2b8c95e98d6f86966b31b4a6d"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+uuid: "f48afa53-bfc4-4630-9975-8e592cbc19eb"
+cwe_ids:
+- "CWE-862"
+- "CWE-937"
+- "CWE-1035"

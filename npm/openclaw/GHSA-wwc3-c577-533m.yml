@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-wwc3-c577-533m"
+identifiers:
+- "GHSA-wwc3-c577-533m"
+package_slug: "npm/openclaw"
+title: "Duplicate Advisory: OpenClaw: Gateway `device.token.rotate` does not terminate
+  active WebSocket sessions after credential rotation"
+description: "This advisory has been withdrawn."
+date: "2026-05-04"
+pubdate: "2026-04-24"
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "This advisory has been withdrawn."
+not_impacted: "This advisory has been withdrawn."
+solution: "This advisory has been withdrawn."
+urls:
+- "https://github.com/advisories/GHSA-wwc3-c577-533m"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-rfqg-qgf8-xr9x"
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-41356"
+- "https://github.com/openclaw/openclaw/commit/91f7a6b0fd67b703897e6e307762d471ca09333d"
+- "https://www.vulncheck.com/advisories/openclaw-incomplete-websocket-session-termination-in-device-token-rotate"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "db8ebd1a-94d6-4f93-bf57-a1fb816c375d"
+cwe_ids:
+- "CWE-613"
+- "CWE-937"
+- "CWE-1035"

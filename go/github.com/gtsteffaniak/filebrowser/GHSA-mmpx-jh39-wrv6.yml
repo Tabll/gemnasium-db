@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-mmpx-jh39-wrv6"
+identifiers:
+- "GHSA-mmpx-jh39-wrv6"
+package_slug: "go/github.com/gtsteffaniak/filebrowser"
+title: "FileBrowser Vulnerable to Stored XSS via SVG File in Public Share (Missing
+  CSP Header)"
+description: "FileBrowser Quantum serves inline SVG files without a `Content-Security-Policy`
+  header, allowing embedded JavaScript in SVG files to execute when accessed via public
+  share links.\n\nVerified on v1.3.0-stable."
+date: "2026-05-07"
+pubdate: "2026-05-07"
+affected_range: "<0.0.0-20260501184955-6bfc3974192e"
+fixed_versions:
+- "0.0.0-20260501184955-6bfc3974192e"
+affected_versions: "All versions before 0.0.0-20260501184955-6bfc3974192e"
+not_impacted: "All versions starting from 0.0.0-20260501184955-6bfc3974192e"
+solution: "Upgrade to version 0.0.0-20260501184955-6bfc3974192e or above."
+urls:
+- "https://github.com/advisories/GHSA-mmpx-jh39-wrv6"
+- "https://github.com/gtsteffaniak/filebrowser/security/advisories/GHSA-mmpx-jh39-wrv6"
+- "https://github.com/gtsteffaniak/filebrowser/commit/6bfc3974192e954f71cc5d1cd04baaaec3b76383"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N"
+uuid: "2c2d8c80-ff2c-4c2d-97a5-1c9ac07aacc9"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

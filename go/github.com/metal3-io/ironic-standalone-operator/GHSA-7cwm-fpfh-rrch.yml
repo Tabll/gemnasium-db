@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-7cwm-fpfh-rrch"
+identifiers:
+- "GHSA-7cwm-fpfh-rrch"
+package_slug: "go/github.com/metal3-io/ironic-standalone-operator"
+title: "Ironic Standalone Operator's prometheus metrics exporter bound to all interfaces"
+description: "The Ironic Standalone Operator (IRSO) is the operator to maintain an
+  Ironic deployment for Metal3. The Prometheus metrics exporter binds to 0.0.0.0 (all
+  network interfaces) by default with no authentication. The default config is disabled.
+  If enabled, this exposes operational metrics to any host on adjacent networks. Deployments
+  running IrSO v0.7.0 through v0.8.1 with the Prometheus exporter enabled are affected.
+  Versions prior to v0.7.0 do not have the Prometheus exporter feature."
+date: "2026-05-29"
+pubdate: "2026-05-29"
+affected_range: "<0.9.0"
+fixed_versions:
+- "0.9.0"
+affected_versions: "All versions before 0.9.0"
+not_impacted: "All versions starting from 0.9.0"
+solution: "Upgrade to version 0.9.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-7cwm-fpfh-rrch"
+- "https://github.com/metal3-io/ironic-standalone-operator/security/advisories/GHSA-7cwm-fpfh-rrch"
+- "https://github.com/metal3-io/ironic-standalone-operator/pull/635"
+cvss_v3: "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+uuid: "f377cad7-33ef-428e-b0a5-123c3620e389"
+cwe_ids:
+- "CWE-668"
+- "CWE-937"
+- "CWE-1035"

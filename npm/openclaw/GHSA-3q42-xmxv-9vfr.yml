@@ -9,7 +9,7 @@ description: "Gateway operator.write Can Reach Admin-Class Talk Voice Config Per
   via chat.send"
 date: "2026-04-07"
 pubdate: "2026-04-07"
-affected_range: "<2026.3.28"
+affected_range: "<0"
 fixed_versions:
 - "2026.3.28"
 affected_versions: "All versions before 2026.3.28"

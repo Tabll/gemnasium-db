@@ -9,7 +9,7 @@ description: "Memory dreaming config persistence was reachable from operator.wri
   commands."
 date: "2026-04-17"
 pubdate: "2026-04-17"
-affected_range: ">=2026.4.5 <2026.4.10"
+affected_range: "<0"
 fixed_versions:
 - "2026.4.10"
 affected_versions: "All versions starting from 2026.4.5 before 2026.4.10"

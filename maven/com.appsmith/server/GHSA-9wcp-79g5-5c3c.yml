@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-9wcp-79g5-5c3c"
+identifiers:
+- "GHSA-9wcp-79g5-5c3c"
+package_slug: "maven/com.appsmith/server"
+title: "Appsmith Super User Creation Race Condition Allows Multiple Instance Administrators"
+description: "The `/api/v1/users/super` endpoint enforces a restriction that only
+  one super user (Instance Administrator) can be created during initial setup. However,
+  due to a Time-of-Check-Time-of-Use (TOCTOU) race condition in the `signupAndLoginSuper()`
+  method, concurrent requests can bypass this restriction, allowing multiple unauthorized
+  users to obtain Instance Administrator privileges."
+date: "2026-06-12"
+pubdate: "2026-06-12"
+affected_range: "[,1.99.0)"
+fixed_versions:
+- "1.99.0"
+affected_versions: "All versions before 1.99.0"
+not_impacted: "All versions starting from 1.99.0"
+solution: "Upgrade to version 1.99.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-9wcp-79g5-5c3c"
+- "https://github.com/appsmithorg/appsmith/security/advisories/GHSA-9wcp-79g5-5c3c"
+- "https://github.com/appsmithorg/appsmith/releases/tag/v1.99"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+uuid: "4b8ed88e-3d44-461b-9d2d-a5ceb90a3fce"
+cwe_ids:
+- "CWE-367"
+- "CWE-937"
+- "CWE-1035"

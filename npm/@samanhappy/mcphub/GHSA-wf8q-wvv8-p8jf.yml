@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-wf8q-wvv8-p8jf"
+identifiers:
+- "GHSA-wf8q-wvv8-p8jf"
+package_slug: "npm/@samanhappy/mcphub"
+title: "@samanhappy/mcphub: SSE Endpoint Accepts Arbitrary Username from URL Path
+  Without Authentication, Enabling User Impersonation"
+description: "A critical identity spoofing vulnerability in MCPHub allows any unauthenticated
+  user to impersonate any other user — including administrators — on SSE (Server-Sent
+  Events) and MCP transport endpoints. The server accepts a username from the URL
+  path parameter and creates an internal user session without any database validation,
+  token verification, or authentication check. The source code itself acknowledges
+  this gap with a TODO comment."
+date: "2026-05-14"
+pubdate: "2026-05-14"
+affected_range: "<0.12.15"
+fixed_versions:
+- "0.12.15"
+affected_versions: "All versions before 0.12.15"
+not_impacted: "All versions starting from 0.12.15"
+solution: "Upgrade to version 0.12.15 or above."
+urls:
+- "https://github.com/advisories/GHSA-wf8q-wvv8-p8jf"
+- "https://github.com/samanhappy/mcphub/security/advisories/GHSA-wf8q-wvv8-p8jf"
+- "https://github.com/samanhappy/mcphub/releases/tag/v0.12.15"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N"
+uuid: "56cdb996-32b5-40f1-9741-cf60f8b0249a"
+cwe_ids:
+- "CWE-290"
+- "CWE-937"
+- "CWE-1035"

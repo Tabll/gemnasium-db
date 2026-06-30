@@ -23,7 +23,7 @@ description: "Versions of `i18next-http-middleware` prior to 3.9.3 pass user-con
   was forwarded into `saveMissing`."
 date: "2026-04-22"
 pubdate: "2026-04-22"
-affected_range: "<3.9.3"
+affected_range: "<0"
 fixed_versions:
 - "3.9.3"
 affected_versions: "All versions before 3.9.3"

@@ -1,0 +1,39 @@
+---
+identifier: "GHSA-g53w-w6mj-hrpp"
+identifiers:
+- "GHSA-g53w-w6mj-hrpp"
+package_slug: "go/github.com/Kuadrant/mcp-gateway"
+title: "MCP Gateway: Authority-injection and JWT/session bypass via the unauthenticated
+  router hair-pin \"router-key\" / \"mcp-init-host\" path"
+description: "The MCP router (ext_proc) exposes an `initialize`-method code path that,
+  when a\nrequest carries an `mcp-init-host` header, bypasses the gateway JWT session\nvalidator
+  and rewrites the upstream `:authority` header to whatever the caller\nchooses, gated
+  only by a single shared header value (`router-key`). The shared\nvalue is\n\n* a
+  literal string (`secret-api-key`) baked into `cmd/mcp-broker-router/main.go`\nas
+  a fall-back default, and\n* in controller-managed deployments, a SHA-256 truncation
+  of the\n`MCPGatewayExtension` UID — a non-secret value visible to anyone with `get`\npermission
+  on the resource, and additionally exposed in `argv` because it is\npassed to the
+  broker-router container via `--mcp-router-key=...`.\n\nA request that satisfies
+  the trivial header check is forwarded to any backend\nlistener registered with the
+  gateway (including external services such as\n`api.githubcopilot.com` when configured),
+  bypassing both the broker (where the\nsigned `x-mcp-authorized` capability filter
+  is enforced) and the gateway's\nJWT-based session model."
+date: "2026-05-19"
+pubdate: "2026-05-19"
+affected_range: "<=0.6.1"
+fixed_versions: []
+affected_versions: "All versions up to 0.6.1"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-g53w-w6mj-hrpp"
+- "https://github.com/Kuadrant/mcp-gateway/security/advisories/GHSA-g53w-w6mj-hrpp"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N"
+uuid: "19288e4e-258a-4fa0-9686-78f6fc289aca"
+cwe_ids:
+- "CWE-287"
+- "CWE-346"
+- "CWE-639"
+- "CWE-937"
+- "CWE-1035"

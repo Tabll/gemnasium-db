@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-jpvj-wpmj-h7rv"
+identifiers:
+- "GHSA-jpvj-wpmj-h7rv"
+package_slug: "npm/@cap-js/openapi"
+title: "Supply chain compromise via malicious @cap-js/openapi"
+description: "On May 19, 2026, a compromised version of @cap-js/openapi@1.4.1 was
+  published.\nThe malicious packages harvested credentials and attempted self-propagation.\nIf
+  a compromised version was installed, all credentials accessible on that machine
+  (npm tokens, cloud provider credentials, SSH keys, GitHub PATs) should be considered
+  compromised."
+date: "2026-06-04"
+pubdate: "2026-06-04"
+affected_range: ">=1.4.1 <1.4.2"
+fixed_versions:
+- "1.4.2"
+affected_versions: "All versions starting from 1.4.1 before 1.4.2"
+not_impacted: "All versions before 1.4.1, all versions starting from 1.4.2"
+solution: "Upgrade to version 1.4.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-jpvj-wpmj-h7rv"
+- "https://github.com/cap-js/openapi/security/advisories/GHSA-jpvj-wpmj-h7rv"
+- "https://me.sap.com/notes/3747787"
+- "https://www.sap.com/documents/2026/05/8203a8b9-4d7f-0010-bca6-c68f7e60039b.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H"
+uuid: "e47c6d13-aa59-4947-9677-2d85bb6f733b"
+cwe_ids:
+- "CWE-506"
+- "CWE-937"
+- "CWE-1035"

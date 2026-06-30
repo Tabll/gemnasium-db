@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-59fh-9f3p-7m39"
+identifiers:
+- "GHSA-59fh-9f3p-7m39"
+package_slug: "npm/flowise"
+title: "Flowise: Mass Assignment in PUT /api/v1/user Allows Authenticated Users to
+  Override Password Hash and Bypass Password Change Verification"
+description: "A Mass Assignment vulnerability in the PUT /api/v1/user endpoint allows
+  authenticated users to directly modify restricted user fields, including the credential
+  (password hash), bypassing the intended password change workflow.\n\nBecause the
+  endpoint forwards the entire request body to the service layer without filtering,
+  an attacker can override the credential field without providing the current password.\n\nThis
+  bypasses several security protections including:\n\n- old password verification\n-
+  password hashing enforcement\n- password policy validation\n- session invalidation
+  on password change\n\nWhile the vulnerability cannot be used to modify other users
+  due to an ID check in the controller, it allows attackers who obtain a temporary
+  session (e.g., via token theft or XSS) to establish persistent account access."
+date: "2026-05-20"
+pubdate: "2026-05-20"
+affected_range: "<3.1.2"
+fixed_versions:
+- "3.1.2"
+affected_versions: "All versions before 3.1.2"
+not_impacted: "All versions starting from 3.1.2"
+solution: "Upgrade to version 3.1.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-59fh-9f3p-7m39"
+- "https://github.com/FlowiseAI/Flowise/security/advisories/GHSA-59fh-9f3p-7m39"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:H/AT:N/PR:L/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N"
+uuid: "c0b4d8cf-e364-47d8-acc5-d946ea184a65"
+cwe_ids:
+- "CWE-915"
+- "CWE-937"
+- "CWE-1035"

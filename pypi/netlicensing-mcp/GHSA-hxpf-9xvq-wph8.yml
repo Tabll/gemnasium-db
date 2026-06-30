@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-hxpf-9xvq-wph8"
+identifiers:
+- "GHSA-hxpf-9xvq-wph8"
+package_slug: "pypi/netlicensing-mcp"
+title: "netlicensing-mcp: REST Path Traversal Bypasses Token Redaction"
+description: "The `netlicensing_get_product` MCP tool in `netlicensing-mcp` interpolates
+  a caller-controlled `product_number` argument directly into a REST URL path without
+  any validation. Passing `../token` as the product number causes `httpx` to normalize
+  `/product/../token` into `/token`, silently redirecting the request to the NetLicensing
+  token endpoint instead of the intended product endpoint. The response is then serialized
+  through the generic `_wrap_json` wrapper rather than the token-specific `_wrap_json_token_read`
+  wrapper, bypassing all APIKEY `number` and SHOP `shopURL` redaction. An authenticated
+  MCP client can recover plaintext API key values that the token read tools intentionally
+  mask, including admin-level APIKEY credentials."
+date: "2026-06-19"
+pubdate: "2026-06-18"
+affected_range: "<0.1.8"
+fixed_versions:
+- "0.1.8"
+affected_versions: "All versions before 0.1.8"
+not_impacted: "All versions starting from 0.1.8"
+solution: "Upgrade to version 0.1.8 or above."
+urls:
+- "https://github.com/advisories/GHSA-hxpf-9xvq-wph8"
+- "https://github.com/Labs64/NetLicensing-MCP/security/advisories/GHSA-hxpf-9xvq-wph8"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:N"
+uuid: "0ac6e84c-eda8-4c5b-8c34-c2138b58c6a9"
+cwe_ids:
+- "CWE-22"
+- "CWE-937"
+- "CWE-1035"

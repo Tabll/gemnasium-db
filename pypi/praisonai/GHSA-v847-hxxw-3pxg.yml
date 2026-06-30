@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-v847-hxxw-3pxg"
+identifiers:
+- "GHSA-v847-hxxw-3pxg"
+package_slug: "pypi/praisonai"
+title: "PraisonAI recipe.run_stream skips dangerous-tool policy enforcement"
+description: "PraisonAI recipe execution blocks default-denied dangerous tools unless
+  the\ncaller explicitly passes `allow_dangerous_tools=True`. The normal `recipe.run()`\npath
+  enforces this with `_check_tool_policy()`. The streaming path,\n`recipe.run_stream()`,
+  loads the same recipe, checks dependencies, and then\ncalls `_execute_recipe()`
+  without running the dangerous-tool policy check.\n\nAs a result, a recipe that honestly
+  declares `execute_command` in\n`TEMPLATE.yaml requires.tools` is denied by `recipe.run()`,
+  but reaches the\nexecution engine through `recipe.run_stream()` with\n`allow_dangerous_tools=False`.\n\nThe
+  local PoV uses a harmless `printf` canary, explicitly unsets\n`PRAISONAI_AUTO_APPROVE`,
+  and avoids network access."
+date: "2026-06-18"
+pubdate: "2026-06-18"
+affected_range: ">=4.5.87,<4.6.59"
+fixed_versions:
+- "4.6.59"
+affected_versions: "All versions starting from 4.5.87 before 4.6.59"
+not_impacted: "All versions before 4.5.87, all versions starting from 4.6.59"
+solution: "Upgrade to version 4.6.59 or above."
+urls:
+- "https://github.com/advisories/GHSA-v847-hxxw-3pxg"
+- "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-v847-hxxw-3pxg"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+uuid: "f704e6f9-9744-458e-a72e-0e4545cf9f1b"
+cwe_ids:
+- "CWE-78"
+- "CWE-693"
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

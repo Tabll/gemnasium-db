@@ -13,7 +13,7 @@ description: "A critical Broken Access Control vulnerability was identified in t
   entire application."
 date: "2026-04-24"
 pubdate: "2026-04-24"
-affected_range: "<3.31.2"
+affected_range: "<0"
 fixed_versions:
 - "3.31.2"
 affected_versions: "All versions before 3.31.2"

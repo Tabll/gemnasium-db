@@ -1,0 +1,38 @@
+---
+identifier: "GHSA-cwj8-7gp2-ggcw"
+identifiers:
+- "GHSA-cwj8-7gp2-ggcw"
+package_slug: "pypi/praisonai-platform"
+title: "praisonai-platform: default JWT signing secret 'dev-secret-change-me' enables
+  token forgery"
+description: "This is the familiar default-secret shape — a hardcoded fallback used
+  to sign authentication tokens — with the additional twist that this one has a guard
+  the author *intended* to catch the misconfiguration but whose polarity is wrong.
+  Every route in `praisonai_platform.api.app:create_app` is authenticated via Bearer
+  JWT, and every Bearer JWT is signed and verified with the public default secret.
+  An unauthenticated network-adjacent attacker mints a token carrying any user-id
+  (and any e-mail, name, etc.) they like, and the platform server treats them as that
+  user.\n\nWorkspace authorisation (`require_workspace_member` in `deps.py`) then
+  checks the forged user is a member of the requested workspace; if the attacker mints
+  a token with `sub` equal to a known member's id, they bypass that check too. In
+  default deployments, workspace IDs and member IDs are exposed via the activity and
+  labels endpoints to any authenticated client — including the attacker's own forged
+  token."
+date: "2026-06-18"
+pubdate: "2026-06-18"
+affected_range: "<0.1.6"
+fixed_versions:
+- "0.1.6"
+affected_versions: "All versions before 0.1.6"
+not_impacted: "All versions starting from 0.1.6"
+solution: "Upgrade to version 0.1.6 or above."
+urls:
+- "https://github.com/advisories/GHSA-cwj8-7gp2-ggcw"
+- "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-cwj8-7gp2-ggcw"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+uuid: "7c8d08a0-82c3-4d0a-b8ca-ce32b19c2be4"
+cwe_ids:
+- "CWE-798"
+- "CWE-937"
+- "CWE-1035"
+- "CWE-1188"

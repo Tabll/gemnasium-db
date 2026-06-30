@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-48x2-6pr9-2jjf"
+identifiers:
+- "GHSA-48x2-6pr9-2jjf"
+package_slug: "npm/network-ai"
+title: "Network-AI: EnvironmentManager.restore() backup ID path traversal copies arbitrary
+  directories into environment data"
+description: "`EnvironmentManager.restore(env, backupId)` computes the backup path
+  with `join(envDir, '.backups', backupId)` and only checks that this path exists.
+  It does not resolve the result or verify that it remains under `data/<env>/.backups`.\n\nA
+  caller can pass a traversal backup ID such as `../../../outside/source-dir` to restore
+  files from an arbitrary directory into the target environment data directory. Confirmed
+  in Network-AI 5.12.1."
+date: "2026-06-19"
+pubdate: "2026-06-19"
+affected_range: "<5.12.2"
+fixed_versions:
+- "5.12.2"
+affected_versions: "All versions before 5.12.2"
+not_impacted: "All versions starting from 5.12.2"
+solution: "Upgrade to version 5.12.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-48x2-6pr9-2jjf"
+- "https://github.com/Jovancoding/Network-AI/security/advisories/GHSA-48x2-6pr9-2jjf"
+- "https://github.com/Jovancoding/Network-AI/commit/a59c13a1f0ce0e8a0779a90343eef92fac5ab4c3"
+- "https://github.com/Jovancoding/Network-AI/releases/tag/v5.12.2"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:N"
+uuid: "7edaec17-6431-4542-be55-e43a0b090479"
+cwe_ids:
+- "CWE-22"
+- "CWE-23"
+- "CWE-937"
+- "CWE-1035"

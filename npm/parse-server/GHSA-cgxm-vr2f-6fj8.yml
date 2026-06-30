@@ -1,0 +1,38 @@
+---
+identifier: "GHSA-cgxm-vr2f-6fj8"
+identifiers:
+- "GHSA-cgxm-vr2f-6fj8"
+package_slug: "npm/parse-server"
+title: "parse-server: Denial of service via exponential-time processing of deeply
+  nested query operators"
+description: "Parse Server is vulnerable to denial of service. A remote attacker can
+  send a single, small query (~1 KB) containing deeply nested query condition operators.
+  Parse Server processes the nested structure with exponential time complexity, which
+  blocks the Node.js event loop and makes the server unresponsive to all clients for
+  the duration of processing. A single request can occupy the event loop for many
+  seconds, and the request is repeatable. The issue affects the REST API and LiveQuery
+  query handling and is reachable in the default configuration. Exploitation requires
+  only the public application identifier; no user authentication is needed."
+date: "2026-06-19"
+pubdate: "2026-06-19"
+affected_range: "<8.6.82||>=9.0.0 <9.9.1-alpha.12"
+fixed_versions:
+- "8.6.82"
+- "9.9.1-alpha.12"
+affected_versions: "All versions before 8.6.82, all versions starting from 9.0.0 before
+  9.9.1-alpha.12"
+not_impacted: "All versions starting from 8.6.82 before 9.0.0, all versions starting
+  from 9.9.1-alpha.12"
+solution: "Upgrade to versions 8.6.82, 9.9.1-alpha.12 or above."
+urls:
+- "https://github.com/advisories/GHSA-cgxm-vr2f-6fj8"
+- "https://github.com/parse-community/parse-server/security/advisories/GHSA-cgxm-vr2f-6fj8"
+- "https://github.com/parse-community/parse-server/pull/10511"
+- "https://github.com/parse-community/parse-server/pull/10512"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+uuid: "2573d845-9836-49f1-88b0-c8f2782f7ac8"
+cwe_ids:
+- "CWE-407"
+- "CWE-937"
+- "CWE-1035"

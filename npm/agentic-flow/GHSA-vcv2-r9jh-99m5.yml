@@ -1,0 +1,37 @@
+---
+identifier: "GHSA-vcv2-r9jh-99m5"
+identifiers:
+- "GHSA-vcv2-r9jh-99m5"
+package_slug: "npm/agentic-flow"
+title: "Agentic-Flow: OS Command Injection in agentic-flow MCP server tools via unsanitized
+  tool-parameter interpolation into execSync"
+description: "`agentic-flow` versions `<= 2.0.13` MCP server tools interpolated attacker-influenceable
+  tool parameters (e.g. `agent`, `task`, `name`, `language`, `agentdb` arguments)
+  directly into shell command strings passed to `execSync()`. A malicious value reaching
+  any of the affected MCP tools could break out of the surrounding double-quoted argument
+  and execute arbitrary OS commands with the privileges of the user running the MCP
+  server.\n\nThis was a partial-fix gap: prior commit `6a06854` (#158) fixed CWE-78
+  elsewhere in the project but missed the MCP server files entirely."
+date: "2026-06-19"
+pubdate: "2026-06-19"
+affected_range: "<2.0.14"
+fixed_versions:
+- "2.0.14"
+affected_versions: "All versions before 2.0.14"
+not_impacted: "All versions starting from 2.0.14"
+solution: "Upgrade to version 2.0.14 or above."
+urls:
+- "https://github.com/advisories/GHSA-vcv2-r9jh-99m5"
+- "https://github.com/ruvnet/agentic-flow/security/advisories/GHSA-vcv2-r9jh-99m5"
+- "https://github.com/ruvnet/agentic-flow/issues/169"
+- "https://github.com/ruvnet/ruflo/issues/2414"
+- "https://github.com/ruvnet/agentic-flow/pull/170"
+- "https://github.com/ruvnet/ruflo/pull/2415"
+- "https://github.com/ruvnet/ruflo/releases/tag/v3.12.4"
+- "https://www.npmjs.com/package/agentic-flow/v/2.0.14"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+uuid: "f65bd411-42a2-4e10-b534-d24895cd8d60"
+cwe_ids:
+- "CWE-78"
+- "CWE-937"
+- "CWE-1035"

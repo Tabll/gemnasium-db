@@ -11,7 +11,7 @@ description: "An authorization bypass in the OAuth provider allows any authentic
   for RBAC can be silently misconfigured into allowing unauthorized client registration."
 date: "2026-04-16"
 pubdate: "2026-04-16"
-affected_range: ">=1.4.8-beta.7 <1.6.5||>=1.7.0-beta.0 <=1.7.0-beta.1"
+affected_range: "<0"
 fixed_versions:
 - "1.6.5"
 affected_versions: "All versions starting from 1.4.8-beta.7 before 1.6.5, all versions

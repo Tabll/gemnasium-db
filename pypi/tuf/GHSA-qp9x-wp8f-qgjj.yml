@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-qp9x-wp8f-qgjj"
+identifiers:
+- "GHSA-qp9x-wp8f-qgjj"
+package_slug: "pypi/tuf"
+title: "tuf has platform-dependent delegation path matching"
+description: "`DelegatedRole._is_target_in_pathpattern` uses `fnmatch.fnmatch` to
+  decide whether a given target path is authorized by a delegation's glob pattern.\n\nPython's
+  `fnmatch.fnmatch` calls `os.path.normcase()` on both arguments before matching.
+  On POSIX hosts `normcase` is the identity function; on Windows hosts `os.path` resolves
+  to `ntpath`, whose `normcase` lowercases its input and replaces `/` with `\\`.\n\nAs
+  a result, python-tuf's delegation *path pattern* matching is case-sensitive on Linux/macOS
+  but case-INSENSITIVE on Windows. This makes the authorization decision for a target
+  dependent on the host operating system of the client running the updater.\n\nThe
+  result on Windows is a TUF specification violation in the python-tuf `ngclient`
+  implementation."
+date: "2026-05-28"
+pubdate: "2026-05-28"
+affected_range: "<7.0.0"
+fixed_versions:
+- "7.0.0"
+affected_versions: "All versions before 7.0.0"
+not_impacted: "All versions starting from 7.0.0"
+solution: "Upgrade to version 7.0.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-qp9x-wp8f-qgjj"
+- "https://github.com/theupdateframework/python-tuf/security/advisories/GHSA-qp9x-wp8f-qgjj"
+- "https://github.com/theupdateframework/python-tuf/releases/tag/v7.0.0"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+uuid: "21afbca0-25c5-43d1-a5a4-e1fa98555070"
+cwe_ids:
+- "CWE-178"
+- "CWE-937"
+- "CWE-1035"

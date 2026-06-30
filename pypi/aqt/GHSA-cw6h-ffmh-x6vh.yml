@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-cw6h-ffmh-x6vh"
+identifiers:
+- "GHSA-cw6h-ffmh-x6vh"
+package_slug: "pypi/aqt"
+title: "Anki: User scripts in iframes have access to the internal Anki API"
+description: "Anki's webview-based pages communicate with the Rust backend using an
+  internal localhost API. Anki implements measures to prevent user scripts run in
+  the reviewer/editor from accessing this API (https://github.com/ankitects/anki/pull/3925)
+  but it inadvertently allows access to scripts included via iframes in the editor.
+  While overall only a limited set of API methods are exposed, some such as `getImageForOcclusion`
+  can read arbitrary files.\n\n**CWE:** CWE-22 (Path Traversal)\n**Reporter:** Bankde
+  (Eakasit)"
+date: "2026-06-19"
+pubdate: "2026-06-19"
+affected_range: "<25.9.4"
+fixed_versions:
+- "25.9.4"
+affected_versions: "All versions before 25.9.4"
+not_impacted: "All versions starting from 25.9.4"
+solution: "Upgrade to version 25.9.4 or above."
+urls:
+- "https://github.com/advisories/GHSA-cw6h-ffmh-x6vh"
+- "https://github.com/ankitects/anki/security/advisories/GHSA-cw6h-ffmh-x6vh"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N"
+uuid: "3f07098e-39d2-4327-980e-60d8c6d9d741"
+cwe_ids:
+- "CWE-22"
+- "CWE-937"
+- "CWE-1035"

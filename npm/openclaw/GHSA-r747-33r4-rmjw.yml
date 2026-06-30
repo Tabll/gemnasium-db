@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-r747-33r4-rmjw"
+identifiers:
+- "GHSA-r747-33r4-rmjw"
+package_slug: "npm/openclaw"
+title: "Duplicate Advisory: OpenClaw: QQBot direct media upload skipped URL SSRF validation"
+description: "This advisory has been withdrawn."
+date: "2026-05-11"
+pubdate: "2026-05-06"
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "This advisory has been withdrawn."
+not_impacted: "This advisory has been withdrawn."
+solution: "This advisory has been withdrawn."
+urls:
+- "https://github.com/advisories/GHSA-r747-33r4-rmjw"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-c4qg-j8jg-42q5"
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-44117"
+- "https://github.com/openclaw/openclaw/commit/49db424c8001f2f419aad85f434894d8d85c1a09"
+- "https://www.vulncheck.com/advisories/openclaw-server-side-request-forgery-in-qqbot-direct-media-upload"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:N/SC:L/SI:N/SA:N"
+uuid: "963bf896-475d-4dbc-bfa0-3d4c0c6256ba"
+cwe_ids:
+- "CWE-918"
+- "CWE-937"
+- "CWE-1035"

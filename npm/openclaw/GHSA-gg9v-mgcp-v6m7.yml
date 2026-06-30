@@ -9,7 +9,7 @@ description: "Bootstrap setup codes were not bound to the intended device role a
   scopes, allowing first-use privilege escalation during pairing."
 date: "2026-04-03"
 pubdate: "2026-04-03"
-affected_range: "<2026.3.22"
+affected_range: "<0"
 fixed_versions:
 - "2026.3.22"
 affected_versions: "All versions before 2026.3.22"

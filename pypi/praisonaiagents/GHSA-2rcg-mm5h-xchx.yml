@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-2rcg-mm5h-xchx"
+identifiers:
+- "GHSA-2rcg-mm5h-xchx"
+package_slug: "pypi/praisonaiagents"
+title: "PraisonAI: Arbitrary File Read via `@file:` Mention Path Traversal"
+description: "The MentionsParser in `src/praisonai-agents/praisonaiagents/tools/mentions.py`
+  processes `@file:` mentions in agent prompts by reading arbitrary files from the
+  filesystem. When a file path is not found relative to the workspace, the parser
+  falls back to using the path as an absolute path without any validation or boundary
+  check. This allows an attacker who can influence agent prompts (via chat messages,
+  Telegram/Discord/Slack bot inputs, or YAML workflow configs) to read any file on
+  the filesystem accessible to the process user."
+date: "2026-06-18"
+pubdate: "2026-06-18"
+affected_range: "<1.6.59"
+fixed_versions:
+- "1.6.59"
+affected_versions: "All versions before 1.6.59"
+not_impacted: "All versions starting from 1.6.59"
+solution: "Upgrade to version 1.6.59 or above."
+urls:
+- "https://github.com/advisories/GHSA-2rcg-mm5h-xchx"
+- "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-2rcg-mm5h-xchx"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+uuid: "96921219-5287-4a43-ac80-b63317f8f4dd"
+cwe_ids:
+- "CWE-22"
+- "CWE-937"
+- "CWE-1035"

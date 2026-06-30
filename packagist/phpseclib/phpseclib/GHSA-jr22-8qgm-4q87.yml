@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-jr22-8qgm-4q87"
+identifiers:
+- "GHSA-jr22-8qgm-4q87"
+package_slug: "packagist/phpseclib/phpseclib"
+title: "Duplicate Advisory: phpseclib does not properly limit the ASN1 OID length"
+description: "This advisory has been withdrawn."
+date: "2026-05-08"
+pubdate: "2024-03-02"
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "This advisory has been withdrawn."
+not_impacted: "This advisory has been withdrawn."
+solution: "This advisory has been withdrawn."
+urls:
+- "https://github.com/advisories/GHSA-jr22-8qgm-4q87"
+- "https://nvd.nist.gov/vuln/detail/CVE-2024-27355"
+- "https://github.com/phpseclib/phpseclib/commit/e32531001b4d62c66c3d824ccef54ffad835eb59"
+- "https://gist.github.com/katzj/ee72f3c2a00590812b2ea3c0c8890e0b"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/phpseclib/phpseclib/CVE-2024-27355.yaml"
+- "https://github.com/phpseclib/phpseclib"
+- "https://github.com/phpseclib/phpseclib/blob/978d081fe50ff92879c50ff143c62a143edb0117/phpseclib/File/ASN1.php#L1129"
+- "https://lists.debian.org/debian-lts-announce/2024/03/msg00002.html"
+- "https://lists.debian.org/debian-lts-announce/2024/03/msg00003.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "14c99353-209c-46ea-b0c2-312df22ac3cc"
+cwe_ids:
+- "CWE-400"
+- "CWE-937"
+- "CWE-1035"

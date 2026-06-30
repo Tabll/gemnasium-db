@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-6gqw-jqv7-v88m"
+identifiers:
+- "GHSA-6gqw-jqv7-v88m"
+package_slug: "pypi/stigmem-node"
+title: "stigmem-node: decay sweep expires and counts facts across all tenants (cross-tenant
+  BOLA)"
+description: "On a multi-tenant stigmem node, a caller holding a `write` credential
+  for **one** tenant can run a decay sweep that acts on **every** tenant's facts.
+  The candidate-selection queries in `lifecycle/decay.py` (`_select_ttl_candidates`,
+  `_select_confidence_candidates`) carried no `tenant_id` predicate, and the caller's
+  tenant was not threaded into the sweep or its async worker (`run_decay_sweep` /
+  `_decay_job_worker`), reached via `POST /v1/decay/sweep`."
+date: "2026-06-19"
+pubdate: "2026-06-19"
+affected_range: "<0.9.0-a.12"
+fixed_versions:
+- "0.9.0-a.12"
+affected_versions: "All versions before 0.9.0-a.12"
+not_impacted: "All versions starting from 0.9.0-a.12"
+solution: "Upgrade to version 0.9.0-a.12 or above."
+urls:
+- "https://github.com/advisories/GHSA-6gqw-jqv7-v88m"
+- "https://github.com/eidetic-labs/stigmem/security/advisories/GHSA-6gqw-jqv7-v88m"
+- "https://github.com/eidetic-labs/stigmem/pull/728"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:H/VA:H/SC:N/SI:N/SA:N"
+uuid: "e6a403b0-a855-4218-8c67-e8fc9531551d"
+cwe_ids:
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

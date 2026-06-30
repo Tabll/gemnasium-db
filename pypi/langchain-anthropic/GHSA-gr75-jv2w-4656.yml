@@ -1,0 +1,38 @@
+---
+identifier: "GHSA-gr75-jv2w-4656"
+identifiers:
+- "GHSA-gr75-jv2w-4656"
+package_slug: "pypi/langchain-anthropic"
+title: "LangChain: Path traversal and sandbox escape in LangChain file-search middleware
+  and loaders"
+description: "Several LangChain components that resolve filesystem paths or expand
+  search patterns do not consistently confine the *resolved* path to the intended
+  root directory. Affected behaviors include: a file-search agent middleware that
+  validates a starting directory but not the search pattern or the resolved target
+  of matched files, so glob patterns and symlinks can reach files outside the configured
+  root; prompt- and chain/agent-configuration loaders that accept path fields and
+  resolve them without confining the result to a trusted base or rejecting symlink
+  targets; and path-prefix authorization checks that compare by string prefix without
+  a path-segment boundary, so a sibling path sharing the prefix is accepted. When
+  these components receive path values, search patterns, or workspace contents influenced
+  by an untrusted source — including an LLM acting on untrusted input — the result
+  can be disclosure of files outside the intended boundary. We have no evidence of
+  this behavior being triggered in the wild."
+date: "2026-06-16"
+pubdate: "2026-06-16"
+affected_range: "<1.4.6"
+fixed_versions:
+- "1.4.6"
+affected_versions: "All versions before 1.4.6"
+not_impacted: "All versions starting from 1.4.6"
+solution: "Upgrade to version 1.4.6 or above."
+urls:
+- "https://github.com/advisories/GHSA-gr75-jv2w-4656"
+- "https://github.com/langchain-ai/langchain/security/advisories/GHSA-gr75-jv2w-4656"
+cvss_v3: "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N"
+uuid: "2768eab9-16c2-4bf9-94d4-49ffd714be74"
+cwe_ids:
+- "CWE-22"
+- "CWE-59"
+- "CWE-937"
+- "CWE-1035"

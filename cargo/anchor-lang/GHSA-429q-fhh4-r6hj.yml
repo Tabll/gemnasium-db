@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-429q-fhh4-r6hj"
+identifiers:
+- "GHSA-429q-fhh4-r6hj"
+package_slug: "cargo/anchor-lang"
+title: "Anchor: `InterfaceAccount` allows account substitution between unexpected
+  types"
+description: "Any uses of `InterfaceAccount` allows another unexpected account type
+  to be passed, after https://github.com/solana-foundation/anchor/pull/3837 disabled
+  discriminator checking for this type.\n\nThe bug was originally reported and fixed
+  in https://github.com/solana-foundation/anchor/pull/4139, see that PR for more details."
+date: "2026-05-19"
+pubdate: "2026-05-13"
+affected_range: ">=1.0.0-rc.1 <1.0.0-rc.2"
+fixed_versions:
+- "1.0.0-rc.2"
+affected_versions: "All versions starting from 1.0.0-rc.1 before 1.0.0-rc.2"
+not_impacted: "All versions before 1.0.0-rc.1, all versions starting from 1.0.0-rc.2"
+solution: "Upgrade to version 1.0.0-rc.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-429q-fhh4-r6hj"
+- "https://github.com/solana-foundation/anchor/security/advisories/GHSA-429q-fhh4-r6hj"
+- "https://github.com/solana-foundation/anchor/pull/3837"
+- "https://github.com/solana-foundation/anchor/pull/4139"
+- "https://github.com/solana-foundation/anchor/commit/26ef36968a62e28a1f028e7adae4806af30c747d"
+- "https://github.com/otter-sec/anchor/security/advisories/GHSA-429q-fhh4-r6hj"
+- "https://rustsec.org/advisories/RUSTSEC-2026-0146.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N"
+uuid: "b7b54a8c-af89-4d05-abcd-9c1b7a1dbec6"
+cwe_ids:
+- "CWE-20"
+- "CWE-937"
+- "CWE-1035"

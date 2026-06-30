@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-5r97-79vw-qvm4"
+identifiers:
+- "GHSA-5r97-79vw-qvm4"
+package_slug: "nuget/directxtk12_uwp"
+title: "Microsoft DirectX12: .spritefont multiply overflow only in 32-bit builds"
+description: "The spritefont reader can be induced to perform a 32-bit overflow multiply
+  that could in theory result in a RCE.\n\nThis impacts the use of the *DirectX Tool
+  Kit* **SpriteFont** class file loading ctor if given untrusted data files.\n\n>
+  Note this only applies to x86/ARM builds of the library. ARM64 and x64 native is
+  not subject to this issue."
+date: "2026-05-18"
+pubdate: "2026-05-18"
+affected_range: "[,2026.5.8.1)"
+fixed_versions:
+- "2026.5.8.1"
+affected_versions: "All versions before 2026.5.8.1"
+not_impacted: "All versions starting from 2026.5.8.1"
+solution: "Upgrade to version 2026.5.8.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-5r97-79vw-qvm4"
+- "https://github.com/microsoft/DirectXTK12/security/advisories/GHSA-5r97-79vw-qvm4"
+- "https://github.com/microsoft/DirectXTK12/commit/c037a024a7ed3b2162fa2bbbe209b84ba2904494"
+- "https://github.com/microsoft/DirectXTK12/releases/tag/may2026"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N"
+uuid: "e1686773-7310-4cfd-919b-f071bc8a6a62"
+cwe_ids:
+- "CWE-190"
+- "CWE-937"
+- "CWE-1035"

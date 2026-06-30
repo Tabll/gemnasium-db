@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-9pq7-mfwh-xx2j"
+identifiers:
+- "CVE-2026-45010"
+- "GHSA-9pq7-mfwh-xx2j"
+package_slug: "packagist/phpmyfaq/phpmyfaq"
+title: "phpMyFAQ enables unauthenticated 2FA brute-force attack via /admin/check acceptance
+  of arbitrary user-id"
+description: "The `/admin/check` endpoint in `AuthenticationController` implements
+  `SkipsAuthenticationCheck`, making it reachable without any prior authentication.
+  An anonymous attacker (Bob) can POST arbitrary `user-id` and `token` values to brute-force
+  any user's 6-digit TOTP code. No rate limiting exists. The 10^6 keyspace is exhaustible
+  in minutes. Reachability confirmed against a default install: unauthenticated `POST
+  /admin/check` with a `user-id` body field returns HTTP 302 to `/admin/token?user-id=<value>`,
+  echoing the attacker-supplied user id without any binding to a prior password-phase
+  authentication."
+date: "2026-06-09"
+pubdate: "2026-05-06"
+affected_range: "<4.1.2"
+fixed_versions:
+- "4.1.2"
+affected_versions: "All versions before 4.1.2"
+not_impacted: "All versions starting from 4.1.2"
+solution: "Upgrade to version 4.1.2 or above."
+urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-45010"
+- "https://github.com/advisories/GHSA-9pq7-mfwh-xx2j"
+- "https://github.com/thorsten/phpMyFAQ/security/advisories/GHSA-9pq7-mfwh-xx2j"
+- "https://www.vulncheck.com/advisories/phpmyfaq-unauthenticated-two-factor-authentication-brute-force-via-admin-check-endpoint"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N"
+uuid: "11b0c155-84e2-4c84-bd19-acb2f151afe0"
+cwe_ids:
+- "CWE-307"
+- "CWE-937"
+- "CWE-1035"

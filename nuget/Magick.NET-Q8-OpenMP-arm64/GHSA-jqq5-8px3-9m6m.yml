@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-jqq5-8px3-9m6m"
+identifiers:
+- "GHSA-jqq5-8px3-9m6m"
+package_slug: "nuget/Magick.NET-Q8-OpenMP-arm64"
+title: "ImageMagick: Heap Buffer Over-Write in json and yaml encoder of a single byte
+  due to incorrect fix"
+description: "An incorrect fix that was applied in GHSA-5592-p365-24xh could result
+  in a heap buffer over-write of a single byte."
+date: "2026-05-21"
+pubdate: "2026-05-21"
+affected_range: "[,14.12.0)"
+fixed_versions:
+- "14.12.0"
+affected_versions: "All versions before 14.12.0"
+not_impacted: "All versions starting from 14.12.0"
+solution: "Upgrade to version 14.12.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-jqq5-8px3-9m6m"
+- "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-jqq5-8px3-9m6m"
+- "https://github.com/advisories/GHSA-5592-p365-24xh"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "4177be92-5e05-42a1-8b14-1b3f89e1e33a"
+cwe_ids:
+- "CWE-193"
+- "CWE-937"
+- "CWE-1035"

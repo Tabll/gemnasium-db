@@ -1,0 +1,49 @@
+---
+identifier: "GHSA-wx3m-whqv-xv47"
+identifiers:
+- "GHSA-wx3m-whqv-xv47"
+package_slug: "cargo/skillctl"
+title: "skillctl: Path traversal and symlink-follow in skillctl allow arbitrary file
+  disclosure and deletion"
+description: "`skillctl` 0.1.0 and 0.1.1 contained four path-safety vulnerabilities
+  that, in combination, allowed an attacker to:\n\n1. **Exfiltrate arbitrary files
+  on the operator's machine** by publishing a malicious skills library containing
+  a symlink inside a skill folder (e.g. `niania → /home/user/.aws/credentials`). The
+  symlink fell through `entry.file_type().is_dir()` in `fs_util::copy_dir_all`, was
+  dereferenced by `fs::copy`, and the target's content was copied into the project.
+  A subsequent `skillctl push` would have published the secret to the (possibly public)
+  library — what the reporter called \"round-trip path exfiltration\".\n\n2. **Delete
+  arbitrary directories outside the project or library root** by crafting a `.skills.toml`
+  with a malicious `destination` or `source_path` field. Both were deserialized as
+  `PathBuf` with zero validation. Because `Path::join` lets an absolute right-hand
+  side replace the base, `destination = \"/home/user/.ssh\"` made `cwd.join(...)`
+  resolve outside the project; `..` traversal was equally unguarded. Downstream `remove_dir_all`
+  in `replace_folder_contents` then wiped arbitrary writable directories on `skillctl
+  pull` / `push` / `detect`. `.skills.toml` is the exact kind of file teams commit
+  and exchange via PR; a single merged malicious PR was sufficient to weaponise the
+  maintainer's next `skillctl pull --all`.\n\n3. **`detect --target` accepted `..`
+  traversal**, even though absolute paths were rejected. `--target ../../../etc` would
+  have written outside the library root.\n\n4. **Fork-name validation accepted `.`
+  and `..` literally**, so a fork named `..` would have produced a `Path::join` resolving
+  to the parent directory and `fs::rename` could have clobbered it."
+date: "2026-06-05"
+pubdate: "2026-06-05"
+affected_range: "<0.1.2"
+fixed_versions:
+- "0.1.2"
+affected_versions: "All versions before 0.1.2"
+not_impacted: "All versions starting from 0.1.2"
+solution: "Upgrade to version 0.1.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-wx3m-whqv-xv47"
+- "https://github.com/umanio-agency/skillctl/security/advisories/GHSA-wx3m-whqv-xv47"
+- "https://github.com/umanio-agency/skillctl/commit/827fff5c0698dd9e48e777d5907cf7bc19b91aca"
+- "https://github.com/umanio-agency/skillctl/releases/tag/v0.1.2"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:L"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:H/VI:N/VA:L/SC:N/SI:N/SA:N"
+uuid: "c4bfd277-e726-4dd3-8042-24ae956a8641"
+cwe_ids:
+- "CWE-22"
+- "CWE-61"
+- "CWE-937"
+- "CWE-1035"

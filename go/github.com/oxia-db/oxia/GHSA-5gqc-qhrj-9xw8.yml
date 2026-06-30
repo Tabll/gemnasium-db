@@ -11,7 +11,7 @@ description: "A race condition between session heartbeat processing and session 
   or a panic (send on closed channel after TOCTOU gap in `KeepAlive`)."
 date: "2026-04-14"
 pubdate: "2026-04-14"
-affected_range: "<0.16.2"
+affected_range: "<0"
 fixed_versions:
 - "0.16.2"
 affected_versions: "All versions before 0.16.2"

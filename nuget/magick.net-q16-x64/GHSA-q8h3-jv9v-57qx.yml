@@ -20,7 +20,6 @@ solution: "Upgrade to version 14.12.0 or above."
 urls:
 - "https://github.com/advisories/GHSA-q8h3-jv9v-57qx"
 - "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-q8h3-jv9v-57qx"
-- "https://github.com/ImageMagick/ImageMagick"
 cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L"
 uuid: "874ee44b-cf17-41da-b45f-8979d5ef1f97"
 cwe_ids:

@@ -19,7 +19,6 @@ solution: "Upgrade to version 3.12.1 or above."
 urls:
 - "https://github.com/advisories/GHSA-xhj4-vrgc-hr34"
 - "https://github.com/actix/actix-web/security/advisories/GHSA-xhj4-vrgc-hr34"
-- "https://github.com/actix/actix-web"
 - "https://github.com/actix/actix-web/releases/tag/http-v3.12.1"
 - "https://www.rfc-editor.org/rfc/rfc9112.html#name-message-body-length"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"

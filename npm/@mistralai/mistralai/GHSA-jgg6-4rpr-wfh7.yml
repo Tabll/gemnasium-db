@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-jgg6-4rpr-wfh7"
+identifiers:
+- "GHSA-jgg6-4rpr-wfh7"
+package_slug: "npm/@mistralai/mistralai"
+title: "Broken dropper in @mistralai/mistralai, @mistralai/mistralai-azure, @mistralai/mistralai-gcp"
+description: "Mistral npm `@mistralai/mistralai`, `@mistralai/mistralai-azure`, `@mistralai/mistralai-gcp`
+  were compromised by a supply chain attack related to the [TanStack security incident](https://github.com/TanStack/router/security/advisories/GHSA-g7cv-rxg3-hmpx).
+  An automated worm associated with the attack led to **compromised npm package versions
+  being published**.\n\nCurrent investigation indicates that an affected developer
+  device was involved. We have no indication that Mistral infrastructure was compromised.
+  The compromised versions were removed from npm. They were available only between
+  May 11 at 22\\:45 UTC and May 12 at 01\\:53 UTC. **Previous and later versions are
+  not affected by this advisory**."
+date: "2026-05-18"
+pubdate: "2026-05-18"
+affected_range: "=2.2.2||=2.2.3||=2.2.4"
+fixed_versions: []
+affected_versions: "Version 2.2.2, version 2.2.3, version 2.2.4"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-jgg6-4rpr-wfh7"
+- "https://github.com/mistralai/client-ts/security/advisories/GHSA-jgg6-4rpr-wfh7"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:N"
+uuid: "2c01c4f0-0070-45d5-9915-a33c6819e5fc"
+cwe_ids:
+- "CWE-506"
+- "CWE-937"
+- "CWE-1035"

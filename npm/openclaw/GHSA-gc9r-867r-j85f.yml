@@ -7,7 +7,7 @@ title: "OpenClaw: Microsoft Teams SSO invoke handler missed sender authorization
 description: "Microsoft Teams SSO invoke handler missed sender authorization checks."
 date: "2026-04-17"
 pubdate: "2026-04-17"
-affected_range: ">=2026.4.10 <2026.4.14"
+affected_range: "<0"
 fixed_versions:
 - "2026.4.14"
 affected_versions: "All versions starting from 2026.4.10 before 2026.4.14"

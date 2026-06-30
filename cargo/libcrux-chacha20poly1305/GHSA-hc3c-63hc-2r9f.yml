@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-hc3c-63hc-2r9f"
+identifiers:
+- "GHSA-hc3c-63hc-2r9f"
+package_slug: "cargo/libcrux-chacha20poly1305"
+title: "libcrux: Potential Panic on Overlong Ciphertext Buffer"
+description: "An application that passes in a ciphertext buffer of length greater\nthan
+  `ptxt.len() + TAG_LEN` to `libcrux_chacha20poly1305::encrypt` or\n`libcrux_chacha20poly1305::xchacha20_poly1305::encrypt`
+  would\nexperience a panic."
+date: "2026-05-19"
+pubdate: "2026-05-19"
+affected_range: "<0.0.8"
+fixed_versions:
+- "0.0.8"
+affected_versions: "All versions before 0.0.8"
+not_impacted: "All versions starting from 0.0.8"
+solution: "Upgrade to version 0.0.8 or above."
+urls:
+- "https://github.com/advisories/GHSA-hc3c-63hc-2r9f"
+- "https://github.com/cryspen/libcrux/pull/1386"
+- "https://rustsec.org/advisories/RUSTSEC-2026-0124.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+uuid: "636dd2a8-42d0-4bd5-a198-7da4be8772d2"
+cwe_ids:
+- "CWE-120"
+- "CWE-937"
+- "CWE-1035"

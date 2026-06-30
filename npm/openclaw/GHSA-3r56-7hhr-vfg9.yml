@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-3r56-7hhr-vfg9"
+identifiers:
+- "GHSA-3r56-7hhr-vfg9"
+package_slug: "npm/openclaw"
+title: "Duplicate Advisory: OpenClaw: CDP /json/version WebSocket URL could pivot
+  to untrusted second-hop targets"
+description: "This advisory has been withdrawn."
+date: "2026-05-11"
+pubdate: "2026-05-06"
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "This advisory has been withdrawn."
+not_impacted: "This advisory has been withdrawn."
+solution: "This advisory has been withdrawn."
+urls:
+- "https://github.com/advisories/GHSA-3r56-7hhr-vfg9"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-f7fh-qg34-x2xh"
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-43576"
+- "https://github.com/openclaw/openclaw/commit/bc356cc8c2beaa747c71dd86cceab8f804699665"
+- "https://www.vulncheck.com/advisories/openclaw-second-hop-ssrf-via-cdp-json-version-websocket-url"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:N/VI:N/VA:N/SC:H/SI:N/SA:N"
+uuid: "57a48541-a89b-456c-b9c6-816fbc324d26"
+cwe_ids:
+- "CWE-601"
+- "CWE-937"
+- "CWE-1035"

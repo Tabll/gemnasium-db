@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-gx7w-56w6-g48x"
+identifiers:
+- "GHSA-gx7w-56w6-g48x"
+package_slug: "go/github.com/caddyserver/caddy/v2"
+title: "Caddy: Remote Admin Authorization Bypass on PKI Endpoints via Prefix-Based
+  Path Matching"
+description: "Caddy's remote admin access control performs path authorization using
+  prefix matching:\n\n- [`admin.go`](/caddy/admin.go#L719): `strings.HasPrefix(r.URL.Path,
+  allowedPath)`\n\nThis allows a client certificate authorized only for `/pki/ca/prod`
+  to access sibling PKI resources whose paths merely share the same prefix, such as
+  `/pki/ca/prod-backup`.\n\nThis is an authorization bug in Caddy's source code, not
+  a misconfiguration issue. The configured policy is more restrictive than the behavior
+  that Caddy actually enforces."
+date: "2026-05-19"
+pubdate: "2026-05-19"
+affected_range: "<2.11.3"
+fixed_versions:
+- "2.11.3"
+affected_versions: "All versions before 2.11.3"
+not_impacted: "All versions starting from 2.11.3"
+solution: "Upgrade to version 2.11.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-gx7w-56w6-g48x"
+- "https://github.com/caddyserver/caddy/security/advisories/GHSA-gx7w-56w6-g48x"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N"
+uuid: "c2ddc51a-e4a7-42dd-ad44-e895c6cff7f8"
+cwe_ids:
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

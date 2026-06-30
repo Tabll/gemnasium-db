@@ -8,7 +8,7 @@ title: "OpenClaw: QQBot media tags could read arbitrary local files through repl
 description: "QQBot media tags could read arbitrary local files through reply text."
 date: "2026-04-17"
 pubdate: "2026-04-17"
-affected_range: "<2026.4.10"
+affected_range: "<0"
 fixed_versions:
 - "2026.4.10"
 affected_versions: "All versions before 2026.4.10"

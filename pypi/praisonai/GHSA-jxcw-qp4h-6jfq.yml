@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-jxcw-qp4h-6jfq"
+identifiers:
+- "GHSA-jxcw-qp4h-6jfq"
+package_slug: "pypi/praisonai"
+title: "PraisonAI A2U incomplete authentication fix leaves current serve command unauthenticated
+  by default"
+description: "The published A2U advisory `GHSA-f292-66h9-fpmf` says unauthenticated
+  A2U event streaming was fixed in `praisonai` `4.5.115`. Current head still exposes
+  the same A2U subscription and event routes without authentication when the operator
+  starts the documented CLI entrypoint:\n\n```text\npraisonai serve a2u --host 0.0.0.0
+  --port 8002\n```\n\nThe current CLI wrapper does not expose `--api-key`, does not
+  install the common API-key middleware, and does not generate a token for A2U. It
+  calls `create_a2u_routes(app)` directly. That helper only enforces auth if `A2U_AUTH_TOKEN`
+  is already present; if the variable is missing, `_authenticate_request()` returns
+  `None` and treats auth as disabled.\n\nThis is an incomplete-fix report for the
+  published A2U issue, not a separate trust-model-only concern."
+date: "2026-06-18"
+pubdate: "2026-06-18"
+affected_range: ">=4.5.115,<4.6.61"
+fixed_versions:
+- "4.6.61"
+affected_versions: "All versions starting from 4.5.115 before 4.6.61"
+not_impacted: "All versions before 4.5.115, all versions starting from 4.6.61"
+solution: "Upgrade to version 4.6.61 or above."
+urls:
+- "https://github.com/advisories/GHSA-jxcw-qp4h-6jfq"
+- "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-jxcw-qp4h-6jfq"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+uuid: "4484c682-a228-4382-a1dc-388e0372fa56"
+cwe_ids:
+- "CWE-200"
+- "CWE-306"
+- "CWE-937"
+- "CWE-1035"

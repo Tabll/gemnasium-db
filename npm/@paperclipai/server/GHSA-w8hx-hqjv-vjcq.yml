@@ -18,7 +18,6 @@ solution: "Upgrade to version 2026.416.0 or above."
 urls:
 - "https://github.com/advisories/GHSA-w8hx-hqjv-vjcq"
 - "https://github.com/paperclipai/paperclip/security/advisories/GHSA-w8hx-hqjv-vjcq"
-- "https://github.com/paperclipai/paperclip"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:N"
 uuid: "22d1c643-de37-49f6-9307-54a6b2b60145"
 cwe_ids:

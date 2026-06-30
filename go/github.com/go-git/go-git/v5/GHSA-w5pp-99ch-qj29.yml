@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-w5pp-99ch-qj29"
+identifiers:
+- "GHSA-w5pp-99ch-qj29"
+package_slug: "go/github.com/go-git/go-git/v5"
+title: "go-git: Malformed Git object data may cause panics or resource exhaustion"
+description: "Several denial-of-service issues were identified in `go-git` when parsing
+  maliciously crafted Git repository data.\n\nAn attacker may craft a malicious `.pack`,
+  `.idx` or loose objects that causes an application using an affected version of
+  `go-git` to panic or consume excessive resources.\n\nThis can lead to denial of
+  service in applications that use `go-git` to clone, fetch, open, or otherwise process
+  untrusted repositories or Git object data.\n\nExploitation requires the ability
+  to alter read-only files such as `.pack` or `.idx` from the local repository's `.git/objects/pack/`
+  directory. Alternatively, the user would need to be interacting with a malicious
+  remote server, which is not recommended and exposes users to a broader class of
+  security risks beyond this issue."
+date: "2026-05-29"
+pubdate: "2026-05-29"
+affected_range: "<5.19.1"
+fixed_versions:
+- "5.19.1"
+affected_versions: "All versions before 5.19.1"
+not_impacted: "All versions starting from 5.19.1"
+solution: "Upgrade to version 5.19.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-w5pp-99ch-qj29"
+- "https://github.com/go-git/go-git/security/advisories/GHSA-w5pp-99ch-qj29"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+uuid: "0b3034cf-cedf-4634-9155-70ffacc3a15d"
+cwe_ids:
+- "CWE-400"
+- "CWE-937"
+- "CWE-1035"

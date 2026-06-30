@@ -13,7 +13,7 @@ description: "CVE-2026-22039 fixed cross-namespace privilege escalation in Kyver
   RBAC bypass in multi-tenant Kubernetes clusters."
 date: "2026-04-16"
 pubdate: "2026-04-16"
-affected_range: "<=1.17.1"
+affected_range: "<0"
 fixed_versions: []
 affected_versions: "All versions up to 1.17.1"
 not_impacted: ""

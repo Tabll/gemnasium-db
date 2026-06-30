@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-766v-q9x3-g744"
 identifiers:
+- "CVE-2026-56078"
 - "GHSA-766v-q9x3-g744"
 package_slug: "pypi/praisonaiagents"
 title: "PraisonAI has Memory State Leakage and Path Traversal in MultiAgent Context
@@ -15,7 +16,7 @@ description: "The `MultiAgentLedger` and `MultiAgentMonitor` components in the p
   agent ID without sanitization. This allows an attacker to escape the intended directory
   using path traversal sequences (e.g., `../`), potentially leading to arbitrary file
   read/write."
-date: "2026-04-08"
+date: "2026-06-19"
 pubdate: "2026-04-08"
 affected_range: "<1.5.115"
 fixed_versions:
@@ -24,9 +25,10 @@ affected_versions: "All versions before 1.5.115"
 not_impacted: "All versions starting from 1.5.115"
 solution: "Upgrade to version 1.5.115 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-56078"
 - "https://github.com/advisories/GHSA-766v-q9x3-g744"
 - "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-766v-q9x3-g744"
-- "https://github.com/MervinPraison/PraisonAI"
+- "https://www.vulncheck.com/advisories/praisonai-arbitrary-file-read-and-write-via-path-traversal-in-multiagentmonitor"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
 uuid: "9ebfd27f-4a35-49f3-8778-bae15a2ecd9a"
 cwe_ids:

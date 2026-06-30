@@ -5,19 +5,14 @@ identifiers:
 package_slug: "npm/openclaw"
 title: "Duplicate Advisory: OpenClaw: Google Chat Authz Bypass via Group Policy Rebinding
   with Mutable Space displayName"
-description: "## Duplicate Advisory\n\nThis advisory has been withdrawn because it
-  is a duplicate of GHSA-52q4-3xjc-6778. This link is maintained to preserve external
-  references.\n\n## Original Description\nOpenClaw before 2026.3.25 contains an authorization
-  bypass vulnerability in Google Chat group policy enforcement that relies on mutable
-  space display names. Attackers can rebind group policies by changing or colliding
-  space display names to gain unauthorized access to protected resources."
+description: "This advisory has been withdrawn."
 date: "2026-04-18"
 pubdate: "2026-04-10"
-affected_range: "<=2026.3.24"
+affected_range: "<0"
 fixed_versions: []
-affected_versions: "All versions up to 2026.3.24"
-not_impacted: ""
-solution: "Unfortunately, there is no solution available yet."
+affected_versions: "This advisory has been withdrawn."
+not_impacted: "This advisory has been withdrawn."
+solution: "This advisory has been withdrawn."
 urls:
 - "https://github.com/advisories/GHSA-j42q-r6qx-xrfp"
 - "https://github.com/openclaw/openclaw/security/advisories/GHSA-52q4-3xjc-6778"

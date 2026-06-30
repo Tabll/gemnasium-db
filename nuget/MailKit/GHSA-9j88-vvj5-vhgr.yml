@@ -15,7 +15,7 @@ description: "A STARTTLS Response Injection vulnerability in MailKit allows a Ma
   (Thunderbird), CVE-2021-33515 (Dovecot), and CVE-2011-0411 (Postfix)."
 date: "2026-04-18"
 pubdate: "2026-04-18"
-affected_range: "[,4.16.0)"
+affected_range: "(,0)"
 fixed_versions:
 - "4.16.0"
 affected_versions: "All versions before 4.16.0"

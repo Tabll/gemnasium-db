@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-fp6w-8wpg-74g5"
+identifiers:
+- "GHSA-fp6w-8wpg-74g5"
+package_slug: "pypi/stigmem-node"
+title: "stigmem-node: Auth-disabled deployments may grant broad anonymous access outside
+  loopback"
+description: "Stigmem nodes configured with authentication disabled could grant the
+  anonymous identity broad read/write/federation capabilities if exposed outside a
+  loopback-only local development environment. Impacted users are operators who intentionally
+  disabled authentication while binding the node to a non-loopback URL."
+date: "2026-05-29"
+pubdate: "2026-05-29"
+affected_range: "<0.9.0-a.2"
+fixed_versions:
+- "0.9.0-a.2"
+affected_versions: "All versions before 0.9.0-a.2"
+not_impacted: "All versions starting from 0.9.0-a.2"
+solution: "Upgrade to version 0.9.0-a.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-fp6w-8wpg-74g5"
+- "https://github.com/eidetic-labs/stigmem/security/advisories/GHSA-fp6w-8wpg-74g5"
+- "https://github.com/eidetic-labs/stigmem/blob/v0.9.0a2/CHANGELOG.md#L14-L35"
+- "https://github.com/eidetic-labs/stigmem/blob/v0.9.0a2/SECURITY.md"
+- "https://github.com/eidetic-labs/stigmem/releases/tag/v0.9.0a2"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+uuid: "4510064d-730d-460c-b8e1-1f4846a36cbd"
+cwe_ids:
+- "CWE-285"
+- "CWE-862"
+- "CWE-937"
+- "CWE-1035"

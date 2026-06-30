@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-g588-cjg3-6g78"
+identifiers:
+- "GHSA-g588-cjg3-6g78"
+package_slug: "cargo/steamworks"
+title: "Steamworks game clients/servers using P2P authentication vulnerable to denial
+  of service"
+description: "Processing the raw `ValidateAuthTicketResponse_t` callback data panics
+  when the `m_eAuthSessionResponse` field is `k_EAuthSessionResponseAuthTicketNetworkIdentityFailure`.
+  This can lead to denial of service in game clients and servers using the `begin_authentication_session`
+  API to authenticate players if a malicious game client sends an authentication ticket
+  with a network identity that does not match that of the verifier."
+date: "2026-05-11"
+pubdate: "2026-05-11"
+affected_range: "<0.13.1"
+fixed_versions:
+- "0.13.1"
+affected_versions: "All versions before 0.13.1"
+not_impacted: "All versions starting from 0.13.1"
+solution: "Upgrade to version 0.13.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-g588-cjg3-6g78"
+- "https://github.com/Noxime/steamworks-rs/issues/321"
+- "https://rustsec.org/advisories/RUSTSEC-2026-0121.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N"
+uuid: "400c7244-9f47-45fd-8084-91a72704c129"
+cwe_ids:
+- "CWE-20"
+- "CWE-937"
+- "CWE-1035"

@@ -5,24 +5,14 @@ identifiers:
 package_slug: "gem/openc3"
 title: "OpenC3 COSMOS allows arbitrary writes to plugins directory via path-traversed
   config filenames"
-description: "OpenC3 COSMOS contains a design flaw in the `save_tool_config()` function
-  that allows saving tool configuration files at arbitrary locations inside the shared
-  `/plugins` directory tree by supplying crafted configuration filenames. Although
-  the implementation sufficiently mitigates standard path traversal attacks, by canonicalizing
-  filename to an absolute path, all plugins share this same root directory. That enables
-  users to create arbitrary file structures and overwrite existing configuration files
-  within the shared `/plugins` directory."
+description: "This advisory has been withdrawn."
 date: "2026-04-22"
 pubdate: "2026-04-22"
-affected_range: "<6.10.5||>=7.0.0.pre.rc1 <7.0.0-rc3"
-fixed_versions:
-- "6.10.5"
-- "7.0.0-rc3"
-affected_versions: "All versions starting from 7.0.0.pre.rc1 before 7.0.0-rc3, all
-  versions before 6.10.5"
-not_impacted: "All versions before 7.0.0.pre.rc1, all versions starting from 7.0.0-rc3
-  before 0, all versions starting from 6.10.5"
-solution: "Upgrade to versions 6.10.5, 7.0.0-rc3 or above."
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "This advisory has been withdrawn."
+not_impacted: "This advisory has been withdrawn."
+solution: "This advisory has been withdrawn."
 urls:
 - "https://github.com/advisories/GHSA-4jvx-93h3-f45h"
 - "https://github.com/OpenC3/cosmos/security/advisories/GHSA-4jvx-93h3-f45h"

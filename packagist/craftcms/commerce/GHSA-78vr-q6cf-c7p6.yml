@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-78vr-q6cf-c7p6"
+identifiers:
+- "GHSA-78vr-q6cf-c7p6"
+package_slug: "packagist/craftcms/commerce"
+title: "Craft Commerce: Partial Payment Amount Without Lower Bound Validation"
+description: "The `Order::setPaymentAmount()` method accepts any float value without
+  enforcing a minimum positive amount. The PaymentsController casts the user-supplied
+  'paymentAmount' parameter directly to float with no lower-bound check."
+date: "2026-06-19"
+pubdate: "2026-06-19"
+affected_range: ">=4.0.0 <4.11.2||>=5.0.0 <5.6.5"
+fixed_versions:
+- "4.11.2"
+- "5.6.5"
+affected_versions: "All versions starting from 4.0.0 before 4.11.2, all versions starting
+  from 5.0.0 before 5.6.5"
+not_impacted: "All versions before 4.0.0, all versions starting from 4.11.2 before
+  5.0.0, all versions starting from 5.6.5"
+solution: "Upgrade to versions 4.11.2, 5.6.5 or above."
+urls:
+- "https://github.com/advisories/GHSA-78vr-q6cf-c7p6"
+- "https://github.com/craftcms/commerce/security/advisories/GHSA-78vr-q6cf-c7p6"
+- "https://github.com/craftcms/commerce/commit/9a88392b3074aa132a9455d4f4b582411df52c74"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "904b7c73-d599-4f12-88d3-e0c17fab5acb"
+cwe_ids:
+- "CWE-20"
+- "CWE-937"
+- "CWE-1035"
+- "CWE-1284"

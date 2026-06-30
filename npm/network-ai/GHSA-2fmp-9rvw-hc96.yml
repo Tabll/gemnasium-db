@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-2fmp-9rvw-hc96"
+identifiers:
+- "GHSA-2fmp-9rvw-hc96"
+package_slug: "npm/network-ai"
+title: "Network-AI: Poisoned environment backup manifest allows arbitrary recursive
+  deletion during backup pruning"
+description: "`EnvironmentManager.listBackups()` reads each backup's `_manifest.json`
+  and trusts the manifest's `path` field. `EnvironmentManager.pruneBackups()` later
+  passes that trusted `entry.path` directly to `rmSync(entry.path, { recursive: true,
+  force: true })`.\n\nAn attacker who can place or modify a manifest inside `data/<env>/.backups/<name>/_manifest.json`
+  can cause `network-ai env backup prune --env <env> --keep <n>` or any code path
+  invoking `pruneBackups()` to recursively delete an arbitrary path accessible to
+  the Network-AI process user. Confirmed in Network-AI 5.12.1."
+date: "2026-06-19"
+pubdate: "2026-06-19"
+affected_range: "<5.12.2"
+fixed_versions:
+- "5.12.2"
+affected_versions: "All versions before 5.12.2"
+not_impacted: "All versions starting from 5.12.2"
+solution: "Upgrade to version 5.12.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-2fmp-9rvw-hc96"
+- "https://github.com/Jovancoding/Network-AI/security/advisories/GHSA-2fmp-9rvw-hc96"
+- "https://github.com/Jovancoding/Network-AI/commit/a59c13a1f0ce0e8a0779a90343eef92fac5ab4c3"
+- "https://github.com/Jovancoding/Network-AI/releases/tag/v5.12.2"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H"
+uuid: "3e570c67-e062-48ce-aaca-06fbcc7062d9"
+cwe_ids:
+- "CWE-22"
+- "CWE-73"
+- "CWE-937"
+- "CWE-1035"

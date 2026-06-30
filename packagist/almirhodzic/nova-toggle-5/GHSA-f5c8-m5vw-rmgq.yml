@@ -15,7 +15,7 @@ description: "In versions `< 1.3.0`, the toggle endpoint (`POST /nova-vendor/nov
   `Toggle` fields on the resource."
 date: "2026-04-24"
 pubdate: "2026-04-24"
-affected_range: "<1.3.0"
+affected_range: "<0"
 fixed_versions:
 - "1.3.0"
 affected_versions: "All versions before 1.3.0"

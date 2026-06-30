@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-2jq4-q6vv-4cp3"
+identifiers:
+- "GHSA-2jq4-q6vv-4cp3"
+package_slug: "pypi/Crawl4AI"
+title: "Crawl4AI: Arbitrary file write (path traversal) in crawler downloads can lead
+  to RCE"
+description: "When the crawler saves a downloaded file, the destination filename was
+  taken from attacker-influenced input and joined to the downloads directory with
+  no confinement. A filename containing an absolute path (e.g. `/etc/cron.d/evil`)
+  or `../` traversal escaped the downloads directory, giving an arbitrary file write
+  with attacker-controlled contents. Because the written bytes are attacker-controlled,
+  this escalates to remote code execution (overwriting a shell rc-file, `~/.ssh/authorized_keys`,
+  a cron entry, or a Python module on the import path)."
+date: "2026-06-18"
+pubdate: "2026-06-18"
+affected_range: "<0.9.0"
+fixed_versions:
+- "0.9.0"
+affected_versions: "All versions before 0.9.0"
+not_impacted: "All versions starting from 0.9.0"
+solution: "Upgrade to version 0.9.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-2jq4-q6vv-4cp3"
+- "https://github.com/unclecode/crawl4ai/security/advisories/GHSA-2jq4-q6vv-4cp3"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H"
+uuid: "69ddbb7f-af40-42c3-9f05-98c1212c9ee3"
+cwe_ids:
+- "CWE-22"
+- "CWE-59"
+- "CWE-937"
+- "CWE-1035"

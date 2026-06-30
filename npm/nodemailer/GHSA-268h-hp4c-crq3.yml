@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-268h-hp4c-crq3"
+identifiers:
+- "GHSA-268h-hp4c-crq3"
+package_slug: "npm/nodemailer"
+title: "Nodemailer: CRLF injection in Nodemailer List-* header comments allows arbitrary
+  message header injection"
+description: "Nodemailer constructs `List-*` headers from the caller-provided `list`
+  message option using internally prepared header values. The `list.*.comment` field
+  is inserted into those prepared values without removing CR (`\\r`) or LF (`\\n`)
+  characters. Because prepared headers bypass the normal header-value sanitizer and
+  are passed to `mimeFuncs.foldLines()`, a CRLF sequence in a list comment is emitted
+  as an actual header boundary in the generated RFC822 message.\n\nAn application
+  that lets a lower-privileged or unauthenticated user influence `list.help.comment`,
+  `list.unsubscribe.comment`, `list.subscribe.comment`, `list.post.comment`, `list.owner.comment`,
+  `list.archive.comment`, or `list.id.comment` can therefore be made to generate messages
+  containing attacker-chosen additional headers."
+date: "2026-06-15"
+pubdate: "2026-06-15"
+affected_range: "<8.0.9"
+fixed_versions:
+- "8.0.9"
+affected_versions: "All versions before 8.0.9"
+not_impacted: "All versions starting from 8.0.9"
+solution: "Upgrade to version 8.0.9 or above."
+urls:
+- "https://github.com/advisories/GHSA-268h-hp4c-crq3"
+- "https://github.com/nodemailer/nodemailer/security/advisories/GHSA-268h-hp4c-crq3"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N"
+uuid: "643f3a38-3d46-47b9-8d1c-a9ad59b3a15e"
+cwe_ids:
+- "CWE-93"
+- "CWE-937"
+- "CWE-1035"

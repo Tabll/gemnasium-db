@@ -1,0 +1,47 @@
+---
+identifier: "GHSA-f946-9qp6-vgch"
+identifiers:
+- "CVE-2026-47740"
+- "GHSA-f946-9qp6-vgch"
+package_slug: "packagist/shopper/framework"
+title: "shopper/framework: Authorization bypass in multiple Livewire admin components"
+description: "Multiple Livewire components in the admin panel allowed an authenticated
+  low-privilege user to mutate data without the required permission:\n\n- Order detail
+  Filament actions (cancel, mark paid, mark complete, capture payment, archive, start
+  processing) were callable with `read_orders` only and did not require `edit_orders`.
+  `capturePayment` could trigger an actual PSP capture.\n- Order shipments table actions
+  (mark delivered, edit tracking) were callable with `browse_orders` only.\n- Sub-form
+  Livewire components for products (Edit, Inventory, Seo, Shipping, Files) had no
+  authorization on `store()`, so any authenticated panel user could mutate product
+  data without `edit_products`.\n- `Settings/Team/Index` had no `mount()` authorization
+  at all — any authenticated user could create roles and delete other users.\n- `Settings/Team/RolePermission`
+  gated its write actions on the read-only `view_users` permission, allowing privilege
+  escalation via the RBAC system itself.\n- `PaymentMethods`, `Currencies`, `Carriers`
+  table toggles and per-record actions had no per-action permission check.\n- `Customers/Create::store()`
+  re-passed a Hidden `_password` form field into the create payload.\n\nSeveral public
+  Eloquent model properties on Livewire components were not `#[Locked]`, allowing
+  client-side ID tampering.\n\nA stored XSS surface existed on the product barcode
+  field, which is rendered through `DNS1DFacade::getBarcodeHTML()` with `{!! !!}`."
+date: "2026-06-08"
+pubdate: "2026-05-18"
+affected_range: "<2.8.0"
+fixed_versions:
+- "2.8.0"
+affected_versions: "All versions before 2.8.0"
+not_impacted: "All versions starting from 2.8.0"
+solution: "Upgrade to version 2.8.0 or above."
+urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-47740"
+- "https://github.com/advisories/GHSA-f946-9qp6-vgch"
+- "https://github.com/shopperlabs/shopper/security/advisories/GHSA-f946-9qp6-vgch"
+- "https://github.com/shopperlabs/shopper/issues/510"
+- "https://github.com/shopperlabs/shopper/pull/511"
+- "https://github.com/shopperlabs/shopper/commit/fcd0c5920588702df5b874f432b1042abd77a50b"
+- "https://github.com/shopperlabs/shopper/releases/tag/v2.8.0"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N"
+uuid: "38559a12-1f87-43cf-a686-e3160397ff45"
+cwe_ids:
+- "CWE-285"
+- "CWE-862"
+- "CWE-937"
+- "CWE-1035"

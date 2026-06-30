@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-5v8h-3h3q-446p"
+identifiers:
+- "GHSA-5v8h-3h3q-446p"
+package_slug: "gem/nokogiri"
+title: "Nokogiri: Possible Use-After-Free when `Nokogiri::XML::Document#encoding=`
+  raises an exception"
+description: "Calling `Document#encoding=` with an invalid encoding (e.g., a non-string,
+  or a string containing a null byte) raises an exception, but only after freeing
+  the document's current encoding string without replacing it. The document is left
+  referencing freed memory, so the next call to `Document#encoding` reads invalid
+  memory, which can cause a segfault or leak freed bytes into a Ruby `String`.\n\nAffects
+  the CRuby (libxml2) implementation only; JRuby is not affected."
+date: "2026-06-19"
+pubdate: "2026-06-19"
+affected_range: "<1.19.4"
+fixed_versions:
+- "1.19.4"
+affected_versions: "All versions before 1.19.4"
+not_impacted: "All versions starting from 1.19.4"
+solution: "Upgrade to version 1.19.4 or above."
+urls:
+- "https://github.com/advisories/GHSA-5v8h-3h3q-446p"
+- "https://github.com/sparklemotion/nokogiri/security/advisories/GHSA-5v8h-3h3q-446p"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N"
+uuid: "78f1a075-aff1-4017-85bb-9f30fdb182da"
+cwe_ids:
+- "CWE-416"
+- "CWE-937"
+- "CWE-1035"

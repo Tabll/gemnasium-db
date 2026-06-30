@@ -27,13 +27,11 @@ solution: "Upgrade to version 2.1.1 or above."
 urls:
 - "https://github.com/advisories/GHSA-f5v8-v6q3-q4h6"
 - "https://github.com/UmutKorkmaz/meridian/security/advisories/GHSA-f5v8-v6q3-q4h6"
-- "https://github.com/UmutKorkmaz/meridian"
 - "https://github.com/UmutKorkmaz/meridian/blob/main/CHANGELOG.md#211---2026-04-16"
 - "https://github.com/UmutKorkmaz/meridian/releases/tag/v2.1.1"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
 uuid: "097e8f4c-007b-4c9e-9c6d-ed09757c32db"
 cwe_ids:
-- "CWE-1325"
 - "CWE-209"
 - "CWE-400"
 - "CWE-532"
@@ -42,3 +40,4 @@ cwe_ids:
 - "CWE-770"
 - "CWE-937"
 - "CWE-1035"
+- "CWE-1325"

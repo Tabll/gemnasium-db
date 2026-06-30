@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-hpgw-ww76-c68r"
+identifiers:
+- "CVE-2026-46362"
+- "GHSA-hpgw-ww76-c68r"
+package_slug: "packagist/phpmyfaq/phpmyfaq"
+title: "phpMyFAQ has an Authorization Bypass in All Admin Pages Due to Non-Terminating
+  Permission Check"
+description: "`AbstractAdministrationController::userHasPermission()` catches the
+  `ForbiddenException` thrown when a user lacks a specific permission, sends a \"forbidden\"
+  HTML page via `$response->send()`, but does not terminate execution. The calling
+  controller method continues to execute, fetches protected data, renders the full
+  template, and returns it as a Response. The final `$response->send()` in `admin/index.php`
+  outputs the protected page content after the forbidden page, leaking all permission-protected
+  admin data to any authenticated admin user regardless of their actual permissions."
+date: "2026-06-09"
+pubdate: "2026-05-06"
+affected_range: "<4.1.2"
+fixed_versions:
+- "4.1.2"
+affected_versions: "All versions before 4.1.2"
+not_impacted: "All versions starting from 4.1.2"
+solution: "Upgrade to version 4.1.2 or above."
+urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-46362"
+- "https://github.com/advisories/GHSA-hpgw-ww76-c68r"
+- "https://github.com/thorsten/phpMyFAQ/security/advisories/GHSA-hpgw-ww76-c68r"
+- "https://www.vulncheck.com/advisories/phpmyfaq-authorization-bypass-in-admin-pages-via-non-terminating-permission-check"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+uuid: "629b6673-f582-450d-8ba0-999509060135"
+cwe_ids:
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

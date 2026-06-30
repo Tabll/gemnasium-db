@@ -9,7 +9,7 @@ description: "The incomplete fix for SiYuan's bazaar README rendering enables th
   `srcdoc` attributes containing embedded scripts that execute in the Electron context."
 date: "2026-04-14"
 pubdate: "2026-04-14"
-affected_range: "<0.0.0-20260414013942-62eed37a3263"
+affected_range: "<0"
 fixed_versions:
 - "0.0.0-20260414013942-62eed37a3263"
 affected_versions: "All versions before 0.0.0-20260414013942-62eed37a3263"

@@ -11,7 +11,7 @@ description: "A path traversal vulnerability was discovered in YARD <= 0.9.41 wh
   was incorrectly applied."
 date: "2026-04-17"
 pubdate: "2026-04-17"
-affected_range: "<0.9.42"
+affected_range: "<0"
 fixed_versions:
 - "0.9.42"
 affected_versions: "All versions before 0.9.42"

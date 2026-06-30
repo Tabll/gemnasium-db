@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-6jcq-6546-qrrw"
+identifiers:
+- "GHSA-6jcq-6546-qrrw"
+package_slug: "pypi/praisonai"
+title: "PraisonAI SandlockSandbox falls back to unrestricted subprocess execution
+  when Landlock is unavailable"
+description: "`praisonai.sandbox.SandlockSandbox` is documented and implemented as
+  the kernel-enforced sandbox backend for untrusted code. Its `SandboxConfig.native()`
+  path lets callers configure allowed filesystem paths and `network=False`.\n\nOn
+  systems where the optional `sandlock` module imports but reports that Landlock is
+  unavailable, `SandlockSandbox.execute()` and `run_command()` do not fail closed.
+  They silently fall back to `SubprocessSandbox(self.config)`.\n\nThat fallback keeps
+  the same high-level native policy object but does not enforce the native filesystem
+  or network boundary during code execution. A sandboxed payload can read files outside
+  the configured allowed path and open network connections despite `network=False`."
+date: "2026-06-18"
+pubdate: "2026-06-18"
+affected_range: ">=4.5.110,<4.6.61"
+fixed_versions:
+- "4.6.61"
+affected_versions: "All versions starting from 4.5.110 before 4.6.61"
+not_impacted: "All versions before 4.5.110, all versions starting from 4.6.61"
+solution: "Upgrade to version 4.6.61 or above."
+urls:
+- "https://github.com/advisories/GHSA-6jcq-6546-qrrw"
+- "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-6jcq-6546-qrrw"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H"
+uuid: "c295b40f-4523-4192-a1f6-0be3c8a1c1ed"
+cwe_ids:
+- "CWE-266"
+- "CWE-668"
+- "CWE-693"
+- "CWE-937"
+- "CWE-1035"
