@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-7m8x-qg2j-4m3v"
+identifiers:
+- "GHSA-7m8x-qg2j-4m3v"
+package_slug: "go/github.com/fission/fission"
+title: "Fission: MessageQueueTrigger scaler manager materializes Secret values into
+  Deployment envvars and accepts arbitrary user PodSpec"
+description: "The Fission MessageQueueTrigger (MQT) scaler controller exposed two
+  privilege-escalation primitives to any subject able to create MQTs in a namespace."
+date: "2026-06-30"
+pubdate: "2026-06-30"
+affected_range: "<1.24.0"
+fixed_versions:
+- "1.24.0"
+affected_versions: "All versions before 1.24.0"
+not_impacted: "All versions starting from 1.24.0"
+solution: "Upgrade to version 1.24.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-7m8x-qg2j-4m3v"
+- "https://github.com/fission/fission/security/advisories/GHSA-7m8x-qg2j-4m3v"
+- "https://github.com/fission/fission/pull/3367"
+- "https://github.com/fission/fission/commit/94bf5792396989fdd71961e8701833c8110da889"
+- "https://github.com/fission/fission/releases/tag/v1.24.0"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N"
+uuid: "eb69cf1f-8ac4-40e5-8963-b71b0b2fef2d"
+cwe_ids:
+- "CWE-200"
+- "CWE-269"
+- "CWE-284"
+- "CWE-937"
+- "CWE-1035"

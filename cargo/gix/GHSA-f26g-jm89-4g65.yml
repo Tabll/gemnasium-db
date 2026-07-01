@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-f26g-jm89-4g65"
 identifiers:
+- "CVE-2026-40034"
 - "GHSA-f26g-jm89-4g65"
 package_slug: "cargo/gix"
 title: "gitoxide: CommandForbiddenInModulesConfiguration Bypass in gix_submodule::File::update()
@@ -20,7 +21,7 @@ description: "[`gix_submodule::File::update()`](https://github.com/GitoxideLabs/
   invalid value for 'submodule.sub.update'`, while `gix::Submodule::update()` returns
   `Ok(Some(Update::Command(\"touch /tmp/pwned\")))`.\n\nThe vulnerable code was introduced
   in https://github.com/GitoxideLabs/gitoxide/commit/6a2e6a436f76c8bbf2487f9967413a51356667a0."
-date: "2026-05-05"
+date: "2026-06-30"
 pubdate: "2026-05-05"
 affected_range: ">=0.31.0 <0.83.0"
 fixed_versions:
@@ -29,9 +30,15 @@ affected_versions: "All versions starting from 0.31.0 before 0.83.0"
 not_impacted: "All versions before 0.31.0, all versions starting from 0.83.0"
 solution: "Upgrade to version 0.83.0 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-40034"
 - "https://github.com/advisories/GHSA-f26g-jm89-4g65"
 - "https://github.com/GitoxideLabs/gitoxide/security/advisories/GHSA-f26g-jm89-4g65"
+- "https://github.com/GitoxideLabs/gitoxide/commit/6a2e6a436f76c8bbf2487f9967413a51356667a0"
+- "https://github.com/GitoxideLabs/gitoxide/commit/dd5c18d9e526e8de462fa40aa047acd097cfa7dc"
+- "https://red.anthropic.com/2026/cvd/findings/ANT-2026-6SNS6KMP"
+- "https://www.vulncheck.com/advisories/gitoxide-command-injection-via-partial-gitmodules-override-in-gix-submodule"
 cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
 uuid: "40732c51-4c94-4a02-b3eb-17157bbaeda5"
 cwe_ids:
 - "CWE-77"
