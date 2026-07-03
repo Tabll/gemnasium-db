@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-4m3v-q747-pc6h"
+identifiers:
+- "GHSA-4m3v-q747-pc6h"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Mattermost slash token revocation could lag until monitor refresh"
+description: "Mattermost slash token revocation could lag until monitor refresh. In
+  affected versions, a caller with an old Mattermost slash token during the refresh
+  window could continue accepting the old token until the monitor refreshed.\n\nThis
+  advisory is scoped to the named feature and configuration. It does not change OpenClaw's
+  trusted-operator model: authenticated Gateway operators, installed plugins, and
+  intentional local execution surfaces remain trusted unless a separate policy, approval,
+  allowlist, sandbox, or auth boundary is crossed."
+date: "2026-07-02"
+pubdate: "2026-07-02"
+affected_range: "<2026.4.24"
+fixed_versions:
+- "2026.4.24"
+affected_versions: "All versions before 2026.4.24"
+not_impacted: "All versions starting from 2026.4.24"
+solution: "Upgrade to version 2026.4.24 or above."
+urls:
+- "https://github.com/advisories/GHSA-4m3v-q747-pc6h"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-4m3v-q747-pc6h"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "4763ac34-b32a-41f8-a6ac-cd6dbb6b23bd"
+cwe_ids:
+- "CWE-613"
+- "CWE-937"
+- "CWE-1035"

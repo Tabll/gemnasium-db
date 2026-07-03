@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-q729-696q-g9pq"
+identifiers:
+- "GHSA-q729-696q-g9pq"
+package_slug: "cargo/surrealdb"
+title: "SurrealDB has Denial of Service in JSON parser due to nested objects"
+description: "The SurrealDB value and JSON parser did not enforce the configured recursion
+  depth limit when parsing nested `{`, `[`, or `(` tokens. The expression parser already
+  enforced the limit for these tokens; the value/JSON parser omitted it. An unauthenticated
+  attacker could send a deeply nested JSON payload to the WebSocket `/rpc` endpoint
+  and exhaust server memory, crashing the process."
+date: "2026-07-01"
+pubdate: "2026-07-01"
+affected_range: "<3.1.0"
+fixed_versions:
+- "3.1.0"
+affected_versions: "All versions before 3.1.0"
+not_impacted: "All versions starting from 3.1.0"
+solution: "Upgrade to version 3.1.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-q729-696q-g9pq"
+- "https://github.com/surrealdb/surrealdb/security/advisories/GHSA-q729-696q-g9pq"
+- "https://github.com/surrealdb/surrealdb/commit/1bd9826f477f4089134460dc5574b6f4e6916973"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "e24b9037-8569-4891-86a1-62eed0600f1a"
+cwe_ids:
+- "CWE-674"
+- "CWE-937"
+- "CWE-1035"

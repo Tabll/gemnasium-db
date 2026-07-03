@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-2944-57xv-2682"
+identifiers:
+- "GHSA-2944-57xv-2682"
+package_slug: "npm/@asymmetric-effort/specifyjs"
+title: "@asymmetric-effort/specifyjs: `data:` URI allowed without size restriction"
+description: "## Finding\n\n**Location**: `core/src/shared/secure-fetch.ts:33-35`\n\n`data:`
+  URIs were allowed without any restriction. While `data:` URIs don't make network
+  requests, they can be used for memory exhaustion via very large data URIs.\n\n##
+  Status\n\n**Fixed in v0.2.136** — `data:` URIs are now limited to 1MB. URIs exceeding
+  this limit throw an error."
+date: "2026-07-02"
+pubdate: "2026-07-02"
+affected_range: "<0.2.136"
+fixed_versions:
+- "0.2.136"
+affected_versions: "All versions before 0.2.136"
+not_impacted: "All versions starting from 0.2.136"
+solution: "Upgrade to version 0.2.136 or above."
+urls:
+- "https://github.com/advisories/GHSA-2944-57xv-2682"
+- "https://github.com/asymmetric-effort/specifyjs/security/advisories/GHSA-2944-57xv-2682"
+- "https://github.com/asymmetric-effort/specifyjs/commit/25d1fb491d99479efdf501f5f75e0bb80c908f0a"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N"
+uuid: "fdcc0fb0-973f-43db-b43e-206c3b6fe6fb"
+cwe_ids:
+- "CWE-918"
+- "CWE-937"
+- "CWE-1035"

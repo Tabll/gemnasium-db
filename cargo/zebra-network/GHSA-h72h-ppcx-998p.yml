@@ -1,0 +1,39 @@
+---
+identifier: "GHSA-h72h-ppcx-998p"
+identifiers:
+- "GHSA-h72h-ppcx-998p"
+package_slug: "cargo/zebra-network"
+title: "Zebra has pre-handshake buffer capacity reservation based on attacker-claimed
+  body length"
+description: "The P2P codec's `Codec::decode()` method calls `src.reserve(body_len
+  + HEADER_LEN)` after parsing a 24-byte protocol header, using the attacker-claimed
+  `body_len` field. This reserves up to `MAX_PROTOCOL_MESSAGE_LEN` (~2 MiB) of virtual
+  buffer capacity per connection before any body bytes arrive and before the handshake
+  completes.\n\nHowever, `BytesMut::reserve()` sets virtual capacity without committing
+  physical memory pages. The operating system does not allocate physical RAM until
+  bytes are actually written into the buffer. Since the attacker never sends body
+  bytes, the reserved capacity remains uncommitted. Reproduction of the reporter's
+  PoC (256 threads, 30 seconds of sustained connections) showed negligible RSS impact
+  on the Zebra process.\n\nZebra's existing mitigations further constrain the practical
+  attack surface: per-IP connection limits (`max_connections_per_ip = 1`), a per-connection
+  accept rate of approximately one per second, and a 3-second handshake timeout that
+  cleans up idle connections."
+date: "2026-07-02"
+pubdate: "2026-07-02"
+affected_range: "<7.0.0"
+fixed_versions:
+- "7.0.0"
+affected_versions: "All versions before 7.0.0"
+not_impacted: "All versions starting from 7.0.0"
+solution: "Upgrade to version 7.0.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-h72h-ppcx-998p"
+- "https://github.com/ZcashFoundation/zebra/security/advisories/GHSA-h72h-ppcx-998p"
+- "https://github.com/ZcashFoundation/zebra/blob/d4cd662c716382f6397d2a730148025a1ca79fec/zebra-network/src/peer/handshake.rs#L917-L934"
+- "https://github.com/ZcashFoundation/zebra/blob/d4cd662c716382f6397d2a730148025a1ca79fec/zebra-network/src/protocol/external/codec.rs#L359-L416"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L"
+uuid: "7362343f-cf51-4b47-87e1-fac04b953efc"
+cwe_ids:
+- "CWE-770"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-wv26-j37q-2g7p"
+identifiers:
+- "GHSA-wv26-j37q-2g7p"
+package_slug: "npm/openclaw"
+title: "OpenClaw's Slack plugin approvals used the exec approver gate for plugin actions"
+description: "Slack plugin approvals used the exec approver gate for plugin actions.
+  In affected versions, a Slack user authorized only for exec approvals could resolve
+  a plugin approval through the exec approver gate.\n\nThis advisory is scoped to
+  the named feature and configuration. It does not change OpenClaw's trusted-operator
+  model: authenticated Gateway operators, installed plugins, and intentional local
+  execution surfaces remain trusted unless a separate policy, approval, allowlist,
+  sandbox, or auth boundary is crossed."
+date: "2026-07-02"
+pubdate: "2026-07-02"
+affected_range: "<2026.5.12"
+fixed_versions:
+- "2026.5.12"
+affected_versions: "All versions before 2026.5.12"
+not_impacted: "All versions starting from 2026.5.12"
+solution: "Upgrade to version 2026.5.12 or above."
+urls:
+- "https://github.com/advisories/GHSA-wv26-j37q-2g7p"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-wv26-j37q-2g7p"
+uuid: "74b6f6c5-0ec6-4ca3-821f-943c4d65d987"
+cwe_ids:
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

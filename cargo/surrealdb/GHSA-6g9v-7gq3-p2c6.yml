@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-6g9v-7gq3-p2c6"
+identifiers:
+- "GHSA-6g9v-7gq3-p2c6"
+package_slug: "cargo/surrealdb"
+title: "SurrealDB: Authenticated callers can read fields hidden by field-level SELECT
+  permissions via error messages"
+description: "A record user with UPDATE access could read field values that field-level
+  SELECT permissions hid from them. Arithmetic operators and `extend` embedded the
+  raw operand into their error messages, and UPDATE permission checks evaluate against
+  the unreduced document — so triggering such an error against a hidden field returned
+  its value in the resulting error."
+date: "2026-07-01"
+pubdate: "2026-07-01"
+affected_range: "<3.1.0"
+fixed_versions:
+- "3.1.0"
+affected_versions: "All versions before 3.1.0"
+not_impacted: "All versions starting from 3.1.0"
+solution: "Upgrade to version 3.1.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-6g9v-7gq3-p2c6"
+- "https://github.com/surrealdb/surrealdb/security/advisories/GHSA-6g9v-7gq3-p2c6"
+- "https://github.com/surrealdb/surrealdb/commit/0aaa332c79195e4c40275eb5224aed3d52f5cf90"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N"
+uuid: "f289dfec-b3b9-42b5-bc1d-8c34ecc5cc9b"
+cwe_ids:
+- "CWE-209"
+- "CWE-937"
+- "CWE-1035"

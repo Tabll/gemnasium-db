@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-h3m5-97jq-qjrf"
 identifiers:
+- "CVE-2026-57168"
 - "GHSA-h3m5-97jq-qjrf"
 package_slug: "maven/io.openremote/openremote-manager"
 title: "OpenRemote Manager: removeAlarms cross-realm IDOR (bulk delete)"
@@ -50,19 +51,21 @@ description: "OpenRemote Manager is vulnerable to a cross-tenant Insecure Direct
   /api/smartcity/alarm HTTP/2\nContent-Type: application/json\n\n\n[1174,1173, 1180]
   \ /// <- alarm ID\n```\n\n<img width=\"1280\" height=\"404\" alt=\"image\" src=\"https://github.com/user-attachments/assets/ffbebea2-2248-42a0-bb22-7a0dc51c78ce\"
   />"
-date: "2026-06-19"
+date: "2026-07-02"
 pubdate: "2026-06-19"
-affected_range: "[,1.24.2)"
+affected_range: "[,1.25.0)"
 fixed_versions:
-- "1.24.2"
-affected_versions: "All versions before 1.24.2"
-not_impacted: "All versions starting from 1.24.2"
-solution: "Upgrade to version 1.24.2 or above."
+- "1.25.0"
+affected_versions: "All versions before 1.25.0"
+not_impacted: "All versions starting from 1.25.0"
+solution: "Upgrade to version 1.25.0 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-57168"
 - "https://github.com/advisories/GHSA-h3m5-97jq-qjrf"
 - "https://github.com/openremote/openremote/security/advisories/GHSA-h3m5-97jq-qjrf"
 - "https://github.com/openremote/openremote/blob/master/manager/src/main/java/org/openremote/manager/alarm/AlarmResourceImpl.java"
 - "https://github.com/openremote/openremote/blob/master/manager/src/main/java/org/openremote/manager/alarm/AlarmService.java"
+- "https://github.com/openremote/openremote/commit/9fad55e5a448c82772d241d395826e5d6fe1ce2d"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:N/I:H/A:H"
 uuid: "5888e5d9-b9de-422f-860b-a7e006ae2bdb"
 cwe_ids:

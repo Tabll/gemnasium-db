@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-65rj-r9fh-jp2v"
+identifiers:
+- "GHSA-65rj-r9fh-jp2v"
+package_slug: "cargo/surrealdb"
+title: "SurrealDB vulnerable to pre-auth memory amplification via unbounded `/sql`
+  WebSocket frames"
+description: "An anonymous caller could degrade `/sql` availability by streaming WebSocket
+  frames many times larger than the operator-configured per-connection limit. The
+  `/sql` upgrade handler accepted anonymous connections and did not propagate `SURREAL_WEBSOCKET_MAX_MESSAGE_SIZE`
+  to the WebSocket protocol layer — incoming bytes accumulated in the per-connection
+  read buffer before `check_anon` could reject the query, so the memory cost was incurred
+  regardless of whether the caller could ever execute SurrealQL. The same upgrade
+  path also silently ignored `--deny-http sql` and `--deny-arbitrary-query *` for
+  authenticated callers, but that secondary effect does not grant new permissions."
+date: "2026-07-01"
+pubdate: "2026-07-01"
+affected_range: "<3.1.0"
+fixed_versions:
+- "3.1.0"
+affected_versions: "All versions before 3.1.0"
+not_impacted: "All versions starting from 3.1.0"
+solution: "Upgrade to version 3.1.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-65rj-r9fh-jp2v"
+- "https://github.com/surrealdb/surrealdb/security/advisories/GHSA-65rj-r9fh-jp2v"
+- "https://github.com/surrealdb/surrealdb/commit/899967e6a9cf064c88a4bc4b35ea7e2da28a6411"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+uuid: "259ea4eb-aa01-40a0-93cb-084d50f2ac57"
+cwe_ids:
+- "CWE-770"
+- "CWE-937"
+- "CWE-1035"

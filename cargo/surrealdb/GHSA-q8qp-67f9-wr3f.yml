@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-q8qp-67f9-wr3f"
+identifiers:
+- "GHSA-q8qp-67f9-wr3f"
+package_slug: "cargo/surrealdb"
+title: "SurrealDB vulnerable to Denial of Service due to nested types annotations"
+description: "The SurrealDB type/kind parser did not enforce the configured recursion
+  depth limit when parsing nested type annotations. The expression parser already
+  enforced the limit for analogous constructs; the kind parser omitted it. An authenticated
+  attacker could send a query with deeply nested type annotations (e.g., `array<option<array<option<...>>>>`)
+  and exhaust server memory, crashing the process."
+date: "2026-07-01"
+pubdate: "2026-07-01"
+affected_range: "<3.1.0"
+fixed_versions:
+- "3.1.0"
+affected_versions: "All versions before 3.1.0"
+not_impacted: "All versions starting from 3.1.0"
+solution: "Upgrade to version 3.1.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-q8qp-67f9-wr3f"
+- "https://github.com/surrealdb/surrealdb/security/advisories/GHSA-q8qp-67f9-wr3f"
+- "https://github.com/surrealdb/surrealdb/commit/61d509b766afdf67cc26d8203fd7dc583c8d77aa"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+uuid: "224bb309-e023-4928-b9ab-a3d80a88ffe2"
+cwe_ids:
+- "CWE-674"
+- "CWE-937"
+- "CWE-1035"

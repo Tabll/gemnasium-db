@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-c8w6-x74f-vmg3"
+identifiers:
+- "GHSA-c8w6-x74f-vmg3"
+package_slug: "cargo/zebra-rpc"
+title: "zebrad vulnerable to full node denial of service via crafted Sapling receiver
+  in z_listunifiedreceivers"
+description: "The `z_listunifiedreceivers` RPC handler panics when processing a structurally
+  valid Unified Address whose Sapling receiver carries 43 bytes that fail cryptographic
+  validation (`sapling_crypto::PaymentAddress::from_bytes` returns `None` for non-subgroup
+  Jubjub points). The handler calls `.expect(\"using data already decoded as valid\")`
+  on the fallible result. Because Zebra's release profile sets `panic = \"abort\"`,
+  the panic terminates the entire node process, not just the RPC task."
+date: "2026-07-02"
+pubdate: "2026-07-02"
+affected_range: "<8.0.0"
+fixed_versions:
+- "8.0.0"
+affected_versions: "All versions before 8.0.0"
+not_impacted: "All versions starting from 8.0.0"
+solution: "Upgrade to version 8.0.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-c8w6-x74f-vmg3"
+- "https://github.com/ZcashFoundation/zebra/security/advisories/GHSA-c8w6-x74f-vmg3"
+- "https://github.com/ZcashFoundation/zebra/blob/d4cd662c716382f6397d2a730148025a1ca79fec/Cargo.toml#L305"
+- "https://github.com/ZcashFoundation/zebra/blob/d4cd662c716382f6397d2a730148025a1ca79fec/zebra-rpc/src/methods.rs#L2867-L2914"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+uuid: "9c146669-9912-4141-be3d-9a0a083218fa"
+cwe_ids:
+- "CWE-20"
+- "CWE-248"
+- "CWE-617"
+- "CWE-754"
+- "CWE-937"
+- "CWE-1035"

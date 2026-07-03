@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-fpxg-5xmv-922m"
+identifiers:
+- "GHSA-fpxg-5xmv-922m"
+package_slug: "cargo/surrealdb"
+title: "SurrealDB has bypass of field-level SELECT permissions through JSON Patch
+  `copy` and `move` with empty `from`"
+description: "SurrealDB lets callers modify records using JSON Patch operations via
+  the `UPDATE … PATCH` statement (and SDK equivalents such as `db.patch()`). One of
+  those operations is `copy`, which duplicates one field's value into another field
+  of the same record. A `PATCH` with an empty `from` — for example, `UPDATE thing:1
+  PATCH [{ op: 'copy', from: '', path: '/leak' }]` — was treated as \"copy the entire
+  record\" and duplicated every field, including fields the caller has no permission
+  to read, into the destination field the caller chose. The permission filter that
+  hides protected field values from the response only knew to hide the *original*
+  protected field names, not the new destinations, so the protected values were returned
+  to the caller intact under the new field name."
+date: "2026-07-01"
+pubdate: "2026-07-01"
+affected_range: "<3.1.0"
+fixed_versions:
+- "3.1.0"
+affected_versions: "All versions before 3.1.0"
+not_impacted: "All versions starting from 3.1.0"
+solution: "Upgrade to version 3.1.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-fpxg-5xmv-922m"
+- "https://github.com/surrealdb/surrealdb/security/advisories/GHSA-fpxg-5xmv-922m"
+- "https://github.com/surrealdb/surrealdb/commit/56a7a1540d9228f82fd6284c258344e8dcb690fd"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N"
+uuid: "adf5657b-52e4-4d75-ae25-12376d75f66e"
+cwe_ids:
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

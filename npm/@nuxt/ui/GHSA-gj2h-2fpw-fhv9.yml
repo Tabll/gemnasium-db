@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-gj2h-2fpw-fhv9"
+identifiers:
+- "GHSA-gj2h-2fpw-fhv9"
+package_slug: "npm/@nuxt/ui"
+title: "@nuxt/ui: UAuthForm / UForm SSR markup omits `method`, leaking credentials
+  via GET if submitted before hydration"
+description: "`UForm` and `UAuthForm` render a server-side `<form>` element with no
+  `method` and no `action` attribute, relying on a hydrated `@submit.prevent` handler
+  to intercept submission. If a user submits the form before Vue hydration has attached
+  the handler (autofill plus Enter on a slow network, JS bundle blocked by CSP or
+  CDN failure, etc.), the browser performs the native default: a `GET` to the current
+  URL with every named field, including `<input type=\"password\">`, serialised into
+  the query string."
+date: "2026-07-02"
+pubdate: "2026-07-02"
+affected_range: "<=4.7.1"
+fixed_versions: []
+affected_versions: "All versions up to 4.7.1"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-gj2h-2fpw-fhv9"
+- "https://github.com/nuxt/ui/security/advisories/GHSA-gj2h-2fpw-fhv9"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N"
+uuid: "c17d2ad9-3110-4a81-996c-c2dcba99860a"
+cwe_ids:
+- "CWE-200"
+- "CWE-598"
+- "CWE-937"
+- "CWE-1035"

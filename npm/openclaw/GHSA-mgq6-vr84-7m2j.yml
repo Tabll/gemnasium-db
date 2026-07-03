@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-mgq6-vr84-7m2j"
+identifiers:
+- "CVE-2026-35630"
+- "GHSA-mgq6-vr84-7m2j"
+package_slug: "npm/openclaw"
+title: "OpenClaw: QQBot native approval buttons did not enforce configured approver
+  identity"
+description: "OpenClaw's QQBot channel can deliver native approval buttons for exec
+  and plugin approvals. In affected releases, the button callback path resolved approvals
+  without enforcing the configured QQBot approver identity.\n\nThe text command approval
+  path used the authorization check; the issue was specific to native QQBot approval
+  buttons."
+date: "2026-07-02"
+pubdate: "2026-07-02"
+affected_range: "<2026.5.18"
+fixed_versions:
+- "2026.5.18"
+affected_versions: "All versions before 2026.5.18"
+not_impacted: "All versions starting from 2026.5.18"
+solution: "Upgrade to version 2026.5.18 or above."
+urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-35630"
+- "https://github.com/advisories/GHSA-mgq6-vr84-7m2j"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-mgq6-vr84-7m2j"
+- "https://www.vulncheck.com/advisories/openclaw-qqbot-missing-approver-identity-enforcement-in-native-approval-buttons"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+uuid: "0e535166-2187-47cd-85f0-4ec9c59fa838"
+cwe_ids:
+- "CWE-862"
+- "CWE-937"
+- "CWE-1035"

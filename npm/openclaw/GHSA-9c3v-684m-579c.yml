@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-9c3v-684m-579c"
+identifiers:
+- "GHSA-9c3v-684m-579c"
+package_slug: "npm/openclaw"
+title: "OpenClaw MCP SSE redirects could forward Authorization headers"
+description: "MCP SSE redirects could forward Authorization headers. In affected versions,
+  a lower-trust caller or configured input path could execute or persist actions beyond
+  the caller's intended authorization.\n\nThis advisory is scoped to the named feature
+  and configuration. It does not change OpenClaw's trusted-operator model: authenticated
+  Gateway operators, installed plugins, and intentional local execution surfaces remain
+  trusted unless a separate policy, approval, allowlist, sandbox, or auth boundary
+  is crossed."
+date: "2026-07-01"
+pubdate: "2026-07-01"
+affected_range: "<2026.6.5"
+fixed_versions:
+- "2026.6.5"
+affected_versions: "All versions before 2026.6.5"
+not_impacted: "All versions starting from 2026.6.5"
+solution: "Upgrade to version 2026.6.5 or above."
+urls:
+- "https://github.com/advisories/GHSA-9c3v-684m-579c"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-9c3v-684m-579c"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+uuid: "245fd7d3-1a8e-4b95-8348-1a0c23b304f8"
+cwe_ids:
+- "CWE-200"
+- "CWE-522"
+- "CWE-601"
+- "CWE-937"
+- "CWE-1035"

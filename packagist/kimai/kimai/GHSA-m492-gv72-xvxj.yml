@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-m492-gv72-xvxj"
+identifiers:
+- "GHSA-m492-gv72-xvxj"
+package_slug: "packagist/kimai/kimai"
+title: "Kimai Password Reset Link Remains Valid After Password Change"
+description: "The LoginLink signature used for password reset URLs covers only the
+  user's `id` — it does not include the password hash. After a user clicks a reset
+  link and successfully changes their password, the same link remains valid for up
+  to 2 additional uses within a 1-hour window. Anyone who intercepts or caches the
+  original link can log in as the user even after the password has been changed."
+date: "2026-07-01"
+pubdate: "2026-07-01"
+affected_range: "<2.58.0"
+fixed_versions:
+- "2.58.0"
+affected_versions: "All versions before 2.58.0"
+not_impacted: "All versions starting from 2.58.0"
+solution: "Upgrade to version 2.58.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-m492-gv72-xvxj"
+- "https://github.com/kimai/kimai/security/advisories/GHSA-m492-gv72-xvxj"
+- "https://www.kimai.org/en/security/ghsa-m492-gv72-xvxj"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:A/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "d3bb7d6d-8c73-4d0b-a526-f89f12db4241"
+cwe_ids:
+- "CWE-640"
+- "CWE-937"
+- "CWE-1035"

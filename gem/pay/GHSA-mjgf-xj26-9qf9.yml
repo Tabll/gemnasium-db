@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-mjgf-xj26-9qf9"
+identifiers:
+- "GHSA-mjgf-xj26-9qf9"
+package_slug: "gem/pay"
+title: "pay-rails/pay: non-constant-time HMAC comparison in Paddle Billing webhook
+  signature verifier"
+description: "`Pay::Webhooks::PaddleBillingController#valid_signature?` (`app/controllers/pay/webhooks/paddle_billing_controller.rb`)
+  verifies the Paddle Billing webhook signature by computing `OpenSSL::HMAC.hexdigest(...)`
+  and comparing it to the attacker-supplied header value using Ruby's `String#==`.
+  Ruby's `==` is non-constant-time — it returns as soon as the first byte mismatches
+  — and exposes a per-byte timing side channel on the webhook signature verification
+  path. The canonical mitigation is to use a constant-time primitive (`OpenSSL.fixed_length_secure_compare`
+  / `ActiveSupport::SecurityUtils.secure_compare`)."
+date: "2026-07-01"
+pubdate: "2026-07-01"
+affected_range: "<=11.6.1"
+fixed_versions: []
+affected_versions: "All versions up to 11.6.1"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-mjgf-xj26-9qf9"
+- "https://github.com/pay-rails/pay/security/advisories/GHSA-mjgf-xj26-9qf9"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N"
+uuid: "64a1f8dc-5da4-4028-a89e-279c199b3e90"
+cwe_ids:
+- "CWE-208"
+- "CWE-937"
+- "CWE-1035"

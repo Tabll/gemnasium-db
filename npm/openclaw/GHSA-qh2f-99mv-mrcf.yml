@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-qh2f-99mv-mrcf"
+identifiers:
+- "GHSA-qh2f-99mv-mrcf"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Bundle MCP loopback could miss its exec denylist on session spawn"
+description: "Bundle MCP loopback could miss its exec denylist on session spawn. In
+  affected versions, a caller that can reach the affected bundled MCP session-spawn
+  path could bypass the denylist that was intended for that loopback MCP entry point.\n\nThis
+  advisory is scoped to the named feature and configuration. It does not change OpenClaw's
+  trusted-operator model: authenticated Gateway operators, installed plugins, and
+  intentional local execution surfaces remain trusted unless a separate policy, approval,
+  allowlist, sandbox, or auth boundary is crossed."
+date: "2026-07-02"
+pubdate: "2026-07-02"
+affected_range: "<2026.5.12"
+fixed_versions:
+- "2026.5.12"
+affected_versions: "All versions before 2026.5.12"
+not_impacted: "All versions starting from 2026.5.12"
+solution: "Upgrade to version 2026.5.12 or above."
+urls:
+- "https://github.com/advisories/GHSA-qh2f-99mv-mrcf"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-qh2f-99mv-mrcf"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N"
+uuid: "859fcba3-18ff-4ff2-a23a-bb71585970c4"
+cwe_ids:
+- "CWE-78"
+- "CWE-284"
+- "CWE-937"
+- "CWE-1035"

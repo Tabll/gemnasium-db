@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-77q5-rr5v-x43q"
+identifiers:
+- "GHSA-77q5-rr5v-x43q"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Trusted retry endpoint checks could match hostname prefixes"
+description: "Trusted retry endpoint checks could match hostname prefixes. In affected
+  versions, a retry endpoint URL chosen by lower-trust input could pass validation
+  by using a hostname prefix that resembled a trusted host.\n\nThis advisory is scoped
+  to the named feature and configuration. It does not change OpenClaw's trusted-operator
+  model: authenticated Gateway operators, installed plugins, and intentional local
+  execution surfaces remain trusted unless a separate policy, approval, allowlist,
+  sandbox, or auth boundary is crossed."
+date: "2026-07-02"
+pubdate: "2026-07-02"
+affected_range: "<2026.5.7"
+fixed_versions:
+- "2026.5.7"
+affected_versions: "All versions before 2026.5.7"
+not_impacted: "All versions starting from 2026.5.7"
+solution: "Upgrade to version 2026.5.7 or above."
+urls:
+- "https://github.com/advisories/GHSA-77q5-rr5v-x43q"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-77q5-rr5v-x43q"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N"
+uuid: "e8f952bd-9c96-478e-a041-c61bc8970925"
+cwe_ids:
+- "CWE-20"
+- "CWE-345"
+- "CWE-937"
+- "CWE-1023"
+- "CWE-1035"

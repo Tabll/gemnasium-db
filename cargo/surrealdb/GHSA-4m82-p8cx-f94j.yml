@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-4m82-p8cx-f94j"
+identifiers:
+- "GHSA-4m82-p8cx-f94j"
+package_slug: "cargo/surrealdb"
+title: "SurrealDB: LIVE query subscriptions survive session state changes, bypassing
+  access controls"
+description: "A `LIVE SELECT` subscription records the user's auth state (`$auth`,
+  `$token`, `$session`, `$access`) when it is registered, and the server uses that
+  recorded state to evaluate the table- and row-level `PERMISSIONS` clauses for every
+  subsequent notification. The recorded state is never refreshed.\n\nWhen something
+  changes the user's effective auth state — the originating session is invalidated,
+  the session's TTL expires, or the user signs in, signs up, or authenticates as a
+  different identity on the same connection — the subscription keeps delivering notifications
+  under the old, stale auth state, and the `PERMISSIONS` that should now apply to
+  the connection are never consulted."
+date: "2026-07-01"
+pubdate: "2026-07-01"
+affected_range: "<3.1.0"
+fixed_versions:
+- "3.1.0"
+affected_versions: "All versions before 3.1.0"
+not_impacted: "All versions starting from 3.1.0"
+solution: "Upgrade to version 3.1.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-4m82-p8cx-f94j"
+- "https://github.com/surrealdb/surrealdb/security/advisories/GHSA-4m82-p8cx-f94j"
+- "https://github.com/surrealdb/surrealdb/commit/6cc48412c975d51b47617708ec44abc11ca5a89a"
+- "https://github.com/surrealdb/surrealdb/commit/cbec0a73dc9575994d2b9c1aec26af539dc99878"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N"
+uuid: "37d42710-a2c4-424c-be10-2595a86ac6f6"
+cwe_ids:
+- "CWE-613"
+- "CWE-937"
+- "CWE-1035"

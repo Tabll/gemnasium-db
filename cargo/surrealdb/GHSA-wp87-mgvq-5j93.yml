@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-wp87-mgvq-5j93"
+identifiers:
+- "GHSA-wp87-mgvq-5j93"
+package_slug: "cargo/surrealdb"
+title: "SurrealDB: USE NS/DB implicit creation bypasses DEFINE authorization"
+description: "An anonymous caller could create new namespaces and databases on a running
+  SurrealDB instance without holding `DEFINE NAMESPACE` or `DEFINE DATABASE` permission.\n\n`USE
+  NS <name>` and `USE DB <name>` automatically create the target when it does not
+  exist. The three places `USE` is handled — the RPC `use` method, `Datastore::process_use`,
+  and the SurrealQL executor — did not check whether the caller was allowed to create
+  the resource. Under default capabilities any session reached this path, including
+  an unauthenticated guest."
+date: "2026-07-01"
+pubdate: "2026-07-01"
+affected_range: "<3.1.0"
+fixed_versions:
+- "3.1.0"
+affected_versions: "All versions before 3.1.0"
+not_impacted: "All versions starting from 3.1.0"
+solution: "Upgrade to version 3.1.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-wp87-mgvq-5j93"
+- "https://github.com/surrealdb/surrealdb/security/advisories/GHSA-wp87-mgvq-5j93"
+- "https://github.com/surrealdb/surrealdb/commit/f3ee3bd55533c14f1fa3e69ce18fc8904c1ce3f9"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L"
+uuid: "59009c92-b54c-40ab-8688-b000ab96db5c"
+cwe_ids:
+- "CWE-862"
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

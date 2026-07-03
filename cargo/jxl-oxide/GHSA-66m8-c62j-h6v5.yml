@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-66m8-c62j-h6v5"
+identifiers:
+- "GHSA-66m8-c62j-h6v5"
+package_slug: "cargo/jxl-oxide"
+title: "jxl-oxide: `FrameBuffer::new` creates out-of-bounds slices on overflow"
+description: "`jxl-oxide` exposes a public safe API that can construct an undersized
+  `FrameBuffer` due to unchecked `usize` multiplication, which immediately trigger
+  panic while initializing the buffer in normal decoding path.\n\nAdditionally, calling
+  the safe grouped buffer accessors afterward can create invalid oversized slices
+  from a much smaller allocation, causing undefined behavior; however normal decoding
+  path never reaches UB, because these methods are never used within `jxl-oxide`."
+date: "2026-07-02"
+pubdate: "2026-07-02"
+affected_range: "<0.12.6"
+fixed_versions:
+- "0.12.6"
+affected_versions: "All versions before 0.12.6"
+not_impacted: "All versions starting from 0.12.6"
+solution: "Upgrade to version 0.12.6 or above."
+urls:
+- "https://github.com/advisories/GHSA-66m8-c62j-h6v5"
+- "https://github.com/tirr-c/jxl-oxide/security/advisories/GHSA-66m8-c62j-h6v5"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "63588fc1-45ba-4c6c-976c-5431ee8dc399"
+cwe_ids:
+- "CWE-131"
+- "CWE-190"
+- "CWE-937"
+- "CWE-1035"

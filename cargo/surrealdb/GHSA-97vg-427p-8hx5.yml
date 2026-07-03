@@ -1,0 +1,37 @@
+---
+identifier: "GHSA-97vg-427p-8hx5"
+identifiers:
+- "GHSA-97vg-427p-8hx5"
+package_slug: "cargo/surrealdb"
+title: "SurrealDB: Port-specific --deny-net rules silently bypassed on HTTP redirect"
+description: "SurrealDB offers `http::*` functions that can access external network
+  endpoints, with the `--allow-net` and `--deny-net` capabilities used to restrict
+  the set of network targets that can be reached. An authenticated user of SurrealDB
+  can bypass a port-scoped `--deny-net <host>:<port>` rule by chaining an HTTP redirect:
+  the initial request goes to an `--allow-net`-permitted hostname, the response's
+  `3xx Location` header points at the denied `host:port`, and the redirect is followed
+  even though the destination was explicitly denied.\n\nThe root cause is in the redirect
+  policy applied to outbound HTTP requests (`surrealdb/core/src/fnc/util/http/mod.rs`):
+  the `NetTarget` for the redirect destination is built from `url.host_str()` alone
+  and `url.port()` is dropped. The capability matcher (`surrealdb/core/src/dbs/capabilities.rs:259-264`)
+  refuses to match a port-bearing rule against a port-stripped target (`Self::Host(host,
+  Some(port)) => match tgt { _ => false }`), so the operator's port-scoped deny rule
+  silently does not fire on the redirect target."
+date: "2026-07-01"
+pubdate: "2026-07-01"
+affected_range: "<3.1.0"
+fixed_versions:
+- "3.1.0"
+affected_versions: "All versions before 3.1.0"
+not_impacted: "All versions starting from 3.1.0"
+solution: "Upgrade to version 3.1.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-97vg-427p-8hx5"
+- "https://github.com/surrealdb/surrealdb/security/advisories/GHSA-97vg-427p-8hx5"
+- "https://github.com/surrealdb/surrealdb/commit/https://github.com/surrealdb/surrealdb/commit/ceb1ca3a1"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N"
+uuid: "2ea0a85f-acd4-432e-90e4-d5fea8e8f80c"
+cwe_ids:
+- "CWE-918"
+- "CWE-937"
+- "CWE-1035"

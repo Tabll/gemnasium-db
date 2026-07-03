@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-xr4f-mjxj-w6w5"
+identifiers:
+- "GHSA-xr4f-mjxj-w6w5"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Non-owner chat senders could issue device-pairing bootstrap codes"
+description: "The bundled device-pair plugin exposed `/pair` on normal chat command
+  surfaces. In affected releases, authorized non-owner chat senders could issue device-pairing
+  bootstrap codes without having owner, admin, or pairing scope.\n\nThis issue does
+  not affect unauthenticated users. The caller must already be allowed to send commands
+  to the agent through a configured chat channel."
+date: "2026-07-02"
+pubdate: "2026-07-02"
+affected_range: "<2026.5.4"
+fixed_versions:
+- "2026.5.4"
+affected_versions: "All versions before 2026.5.4"
+not_impacted: "All versions starting from 2026.5.4"
+solution: "Upgrade to version 2026.5.4 or above."
+urls:
+- "https://github.com/advisories/GHSA-xr4f-mjxj-w6w5"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-xr4f-mjxj-w6w5"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:L"
+uuid: "24d416f2-95d9-4860-adaa-0627385b04ec"
+cwe_ids:
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

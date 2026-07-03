@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-x4hg-hfwf-p9mw"
+identifiers:
+- "GHSA-x4hg-hfwf-p9mw"
+package_slug: "npm/@asymmetric-effort/nogginlessdom"
+title: "@asymmetric-effort/nogginlessdom vulnerable to ReDoS via user-controlled regex
+  in HTMLInputElement pattern validation"
+description: "The `HTMLInputElement.checkValidity()` method constructed a `RegExp`
+  directly from the user-controlled `pattern` property without any sanitization or
+  timeout protection. This allowed an attacker to inject a regex with catastrophic
+  backtracking, freezing the event loop."
+date: "2026-07-02"
+pubdate: "2026-07-02"
+affected_range: "<0.0.22"
+fixed_versions:
+- "0.0.22"
+affected_versions: "All versions before 0.0.22"
+not_impacted: "All versions starting from 0.0.22"
+solution: "Upgrade to version 0.0.22 or above."
+urls:
+- "https://github.com/advisories/GHSA-x4hg-hfwf-p9mw"
+- "https://github.com/asymmetric-effort/NogginLessDom/security/advisories/GHSA-x4hg-hfwf-p9mw"
+- "https://github.com/asymmetric-effort/NogginLessDom/commit/25a3cbac665fae5663f8b71c073b80c3152dbe7b"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N"
+uuid: "89c8f03e-050e-45de-be3e-804429991b85"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"
+- "CWE-1333"

@@ -1,0 +1,37 @@
+---
+identifier: "GHSA-4v76-cw68-4vc9"
+identifiers:
+- "GHSA-4v76-cw68-4vc9"
+package_slug: "cargo/surrealdb"
+title: "SurrealDB: Crafting malicious LIVE queries writes to the database, resulting
+  in DoS, without permission to the table required"
+description: "A `LIVE` query whose `WHERE` clause evaluates to an error caused the
+  source data modifier (the user creating, updating, or deleting a record on the watched
+  table) to fail instead. Calling any arbitrary SurrealQL function with a typed parameter
+  and passing a value of the wrong type — for example `LIVE SELECT * FROM t WHERE
+  string::trim(deny)` — triggered an evaluation error inside the LIVE notification
+  path. That error then propagated through to the triggering write, rolling back the
+  attempted change.\n\nWhile such a `LIVE` query was registered, all `CREATE`, `UPDATE`,
+  and `DELETE` operations on the watched table failed — including those issued by
+  a root user — for as long as the registration remained active. Registering the `LIVE`
+  required `select` permission on the table; no other permission on the table was
+  needed."
+date: "2026-07-01"
+pubdate: "2026-07-01"
+affected_range: "<3.1.0"
+fixed_versions:
+- "3.1.0"
+affected_versions: "All versions before 3.1.0"
+not_impacted: "All versions starting from 3.1.0"
+solution: "Upgrade to version 3.1.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-4v76-cw68-4vc9"
+- "https://github.com/surrealdb/surrealdb/security/advisories/GHSA-4v76-cw68-4vc9"
+- "https://github.com/surrealdb/surrealdb/commit/af835eb199ad2327a04c42101d11aff21fce7e47"
+- "https://github.com/surrealdb/surrealdb/commit/b29e03f0714d1c4ec091fc6f27f1edbe243b8aec"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+uuid: "86702f43-b2f6-49f3-bbfb-59acbf7a1cfa"
+cwe_ids:
+- "CWE-754"
+- "CWE-937"
+- "CWE-1035"

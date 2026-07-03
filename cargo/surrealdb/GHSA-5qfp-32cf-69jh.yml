@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-5qfp-32cf-69jh"
+identifiers:
+- "GHSA-5qfp-32cf-69jh"
+package_slug: "cargo/surrealdb"
+title: "SurrealDB: HTTP /rpc `sessions` method leaks attached session UUIDs, enabling
+  full session hijack by anonymous callers"
+description: "The HTTP `/rpc` `sessions` method returned every attached session UUID
+  without authentication, and the `/rpc` handler accepted an arbitrary `session` field
+  with no ownership check. An anonymous caller could enumerate UUIDs and impersonate
+  any authenticated session.\n\n\"Attached\" means sessions registered via `{\"method\":\"attach\"}`
+  — the only writer to the HTTP session map. Ordinary stateless `/rpc` requests use
+  ephemeral per-request sessions that are filtered from `sessions()` and destroyed
+  at end-of-request, so they are not enumerable."
+date: "2026-07-01"
+pubdate: "2026-07-01"
+affected_range: "<3.1.0"
+fixed_versions:
+- "3.1.0"
+affected_versions: "All versions before 3.1.0"
+not_impacted: "All versions starting from 3.1.0"
+solution: "Upgrade to version 3.1.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-5qfp-32cf-69jh"
+- "https://github.com/surrealdb/surrealdb/security/advisories/GHSA-5qfp-32cf-69jh"
+- "https://github.com/surrealdb/surrealdb/commit/fd800fc7c55afcdc97057d18cf7cb7f83557e702"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+uuid: "56db485b-5516-487d-bde4-1f519e4b12db"
+cwe_ids:
+- "CWE-384"
+- "CWE-937"
+- "CWE-1035"

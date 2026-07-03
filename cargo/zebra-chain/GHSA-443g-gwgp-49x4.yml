@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-443g-gwgp-49x4"
+identifiers:
+- "GHSA-443g-gwgp-49x4"
+package_slug: "cargo/zebra-chain"
+title: "zebrad vulnerable to getblocks/getheaders locator CPU amplification via uncapped
+  vector length"
+description: "The `read_getblocks` and `read_getheaders` codec paths accepted block
+  locator vectors up to approximately 65,535 entries (the generic `TrustedPreallocate`
+  ceiling derived from `MAX_PROTOCOL_MESSAGE_LEN`), rather than the protocol-specification
+  limit of 101 entries (matching zcashd's `MAX_LOCATOR_SZ`). Each entry in the locator
+  vector triggers a per-hash chain lookup (`HashMap::contains_key` + `RocksDB::contains_hash`)
+  in `find_chain_intersection` on a tokio blocking-pool thread.\n\nA single maximally-sized
+  `getblocks` message occupies one blocking-pool thread for approximately 10–65ms.
+  Under sustained load from multiple peers, this can degrade state-read performance
+  for block validation, RPC, and mempool lookups."
+date: "2026-07-02"
+pubdate: "2026-07-02"
+affected_range: "<8.0.0"
+fixed_versions:
+- "8.0.0"
+affected_versions: "All versions before 8.0.0"
+not_impacted: "All versions starting from 8.0.0"
+solution: "Upgrade to version 8.0.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-443g-gwgp-49x4"
+- "https://github.com/ZcashFoundation/zebra/security/advisories/GHSA-443g-gwgp-49x4"
+- "https://github.com/ZcashFoundation/zebra/pull/10570"
+- "https://github.com/ZcashFoundation/zebra/commit/8981a1b95d4807cad99e5bb3b94fc8bc723ac033"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L"
+uuid: "eefdbe3d-328a-4069-8682-11f27127456f"
+cwe_ids:
+- "CWE-770"
+- "CWE-937"
+- "CWE-1035"

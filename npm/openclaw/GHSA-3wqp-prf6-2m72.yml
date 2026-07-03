@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-3wqp-prf6-2m72"
+identifiers:
+- "GHSA-3wqp-prf6-2m72"
+package_slug: "npm/openclaw"
+title: "OpenClaw: Feishu dynamic-agent bindings could miss configWrites enforcement"
+description: "Feishu dynamic-agent bindings could miss configWrites enforcement. In
+  affected versions, a Feishu sender using dynamic-agent binding behavior could create
+  or update bindings without honoring the configured config-write control.\n\nThis
+  advisory is scoped to the named feature and configuration. It does not change OpenClaw's
+  trusted-operator model: authenticated Gateway operators, installed plugins, and
+  intentional local execution surfaces remain trusted unless a separate policy, approval,
+  allowlist, sandbox, or auth boundary is crossed."
+date: "2026-07-02"
+pubdate: "2026-07-02"
+affected_range: "<2026.5.6"
+fixed_versions:
+- "2026.5.6"
+affected_versions: "All versions before 2026.5.6"
+not_impacted: "All versions starting from 2026.5.6"
+solution: "Upgrade to version 2026.5.6 or above."
+urls:
+- "https://github.com/advisories/GHSA-3wqp-prf6-2m72"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-3wqp-prf6-2m72"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:L/A:N"
+uuid: "d2242117-9799-4891-996f-f365c09f1389"
+cwe_ids:
+- "CWE-862"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-77pv-3w4q-vrj5"
+identifiers:
+- "GHSA-77pv-3w4q-vrj5"
+package_slug: "npm/openclaw"
+title: "OpenClaw: QQBot pre-dispatch slash commands could skip allowFrom checks"
+description: "QQBot pre-dispatch slash commands could skip allowFrom checks. In affected
+  versions, a QQBot sender able to invoke slash commands could dispatch the command
+  before applying the configured allowFrom policy.\n\nThis advisory is scoped to the
+  named feature and configuration. It does not change OpenClaw's trusted-operator
+  model: authenticated Gateway operators, installed plugins, and intentional local
+  execution surfaces remain trusted unless a separate policy, approval, allowlist,
+  sandbox, or auth boundary is crossed."
+date: "2026-07-02"
+pubdate: "2026-07-02"
+affected_range: "<2026.4.27"
+fixed_versions:
+- "2026.4.27"
+affected_versions: "All versions before 2026.4.27"
+not_impacted: "All versions starting from 2026.4.27"
+solution: "Upgrade to version 2026.4.27 or above."
+urls:
+- "https://github.com/advisories/GHSA-77pv-3w4q-vrj5"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-77pv-3w4q-vrj5"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:L/SA:N"
+uuid: "44ba6bc8-0b92-44b8-ae3e-44d4c7acbd82"
+cwe_ids:
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

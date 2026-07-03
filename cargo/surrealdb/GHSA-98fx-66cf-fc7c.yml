@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-98fx-66cf-fc7c"
+identifiers:
+- "GHSA-98fx-66cf-fc7c"
+package_slug: "cargo/surrealdb"
+title: "SurrealDB: Scraping a TABLE with no available PERMISSIONS to current auth
+  level"
+description: "A vulnerability was discovered where the user-supplied `WHERE` clause
+  in a `SELECT` statement is evaluated against the full record data before `PERMISSIONS
+  FOR SELECT WHERE` determines whether the principal is authorised to access that
+  record. A side-effecting expression in the `WHERE` clause can exfiltrate record
+  contents before the permission check runs. The same ordering bug affects the `SET`,
+  `MERGE`, `CONTENT` and `PATCH` clauses of update-variant statements (`UPDATE`, `UPSERT-update`,
+  `INSERT ON DUPLICATE KEY UPDATE`, `RELATE-update`).\n\nThis vulnerability is confined
+  to the attacker's current database. It does not cross namespace or database isolation
+  boundaries."
+date: "2026-07-01"
+pubdate: "2026-07-01"
+affected_range: "<3.1.0"
+fixed_versions:
+- "3.1.0"
+affected_versions: "All versions before 3.1.0"
+not_impacted: "All versions starting from 3.1.0"
+solution: "Upgrade to version 3.1.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-98fx-66cf-fc7c"
+- "https://github.com/surrealdb/surrealdb/security/advisories/GHSA-98fx-66cf-fc7c"
+- "https://github.com/surrealdb/surrealdb/commit/500f4060349580b9cbb9c07b8112a487551c4616"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+uuid: "4f628ccd-4596-4e62-b505-5e416c180aaa"
+cwe_ids:
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

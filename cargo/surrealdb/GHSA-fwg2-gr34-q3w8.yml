@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-fwg2-gr34-q3w8"
+identifiers:
+- "GHSA-fwg2-gr34-q3w8"
+package_slug: "cargo/surrealdb"
+title: "SurrealDB: ES512 silently downgraded to ES384 due to jsonwebtoken crate limitation"
+description: "When a user configures `ALGORITHM ES512` for any JWT access method (`DEFINE
+  ACCESS ... TYPE JWT ALGORITHM ES512`), SurrealDB silently substitutes ES384 at all
+  four internal algorithm conversion points. This occurs because the underlying `jsonwebtoken`
+  crate (v10.x) does not include an ES512 algorithm variant, so the mapping defaults
+  to ES384 without raising an error, warning, or log message.\n\nUsers who provide
+  the correct P-521 key type for ES512 will experience authentication handshake failures
+  due to the curve mismatch with ES384 (which expects P-384)."
+date: "2026-07-01"
+pubdate: "2026-07-01"
+affected_range: "<3.1.0"
+fixed_versions:
+- "3.1.0"
+affected_versions: "All versions before 3.1.0"
+not_impacted: "All versions starting from 3.1.0"
+solution: "Upgrade to version 3.1.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-fwg2-gr34-q3w8"
+- "https://github.com/surrealdb/surrealdb/security/advisories/GHSA-fwg2-gr34-q3w8"
+- "https://github.com/surrealdb/surrealdb/pull/7226"
+- "https://github.com/surrealdb/surrealdb/commit/bd043d73dad583219d7df2b91f81ab0054c53730"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L"
+uuid: "4ae2320c-9704-4ae9-ac03-6ffd0057845b"
+cwe_ids:
+- "CWE-327"
+- "CWE-937"
+- "CWE-1035"

@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-gfj5-979r-92pw"
 identifiers:
+- "CVE-2026-58399"
 - "GHSA-gfj5-979r-92pw"
 package_slug: "npm/@acastellon/auth"
 title: "@acastellon/auth: Authentication bypass via spoofable headers in validateToken()"
@@ -24,7 +25,7 @@ description: "@acastellon/auth v2.2.0 appears to allow an unauthenticated authen
   mTLS client certificate based service auth (with optional TRUSTED_MTLS_SERVICES
   allowlist).\nUpdated consumers (rest, graphql, dns-client) for mTLS support.\nUnit
   tests added for sanitization + mTLS path."
-date: "2026-06-18"
+date: "2026-07-01"
 pubdate: "2026-06-18"
 affected_range: "<2.3.0"
 fixed_versions:
@@ -33,6 +34,7 @@ affected_versions: "All versions before 2.3.0"
 not_impacted: "All versions starting from 2.3.0"
 solution: "Upgrade to version 2.3.0 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-58399"
 - "https://github.com/advisories/GHSA-gfj5-979r-92pw"
 - "https://github.com/antonio-castellon/module-auth/security/advisories/GHSA-gfj5-979r-92pw"
 - "https://github.com/antonio-castellon/module-auth/issues/6"
