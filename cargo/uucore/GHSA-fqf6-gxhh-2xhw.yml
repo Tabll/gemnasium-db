@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-fqf6-gxhh-2xhw"
+identifiers:
+- "GHSA-fqf6-gxhh-2xhw"
+package_slug: "cargo/uucore"
+title: "uutils coreutils: cp/install/mv/ln --suffix alone does not enable backup mode
+  (silent data loss vs GNU)"
+description: "`determine_backup_mode` in `src/uucore/src/lib/features/backup_control.rs`
+  only checks `--backup`/`-b` and returns `BackupMode::None` when only `--suffix`
+  is given. GNU enables backup mode when `--suffix` is used alone (defaulting to existing/numbered,
+  or `$VERSION_CONTROL`). Affects `cp`, `install`, `mv`, `ln` which share this code.\n\n```"
+date: "2026-07-07"
+pubdate: "2026-07-07"
+affected_range: "<0.6.0"
+fixed_versions:
+- "0.6.0"
+affected_versions: "All versions before 0.6.0"
+not_impacted: "All versions starting from 0.6.0"
+solution: "Upgrade to version 0.6.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-fqf6-gxhh-2xhw"
+- "https://github.com/uutils/coreutils/security/advisories/GHSA-fqf6-gxhh-2xhw"
+- "https://github.com/uutils/coreutils/pull/9741"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:L"
+cvss_v4: "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:L/SC:N/SI:N/SA:N"
+uuid: "bb27eb8e-ac58-4810-919a-60056f554ca7"
+cwe_ids:
+- "CWE-440"
+- "CWE-693"
+- "CWE-937"
+- "CWE-1035"

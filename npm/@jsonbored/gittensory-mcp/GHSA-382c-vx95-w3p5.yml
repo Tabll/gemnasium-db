@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-382c-vx95-w3p5"
+identifiers:
+- "GHSA-382c-vx95-w3p5"
+package_slug: "npm/@jsonbored/gittensory-mcp"
+title: "Gittensory: Missing contributor-scoped access control on profile endpoint
+  and MCP tool leaks miner financial data"
+description: "`GET /v1/contributors/:login/profile` and the `gittensory_get_contributor_profile`
+  MCP tool skip the contributor-scoped access check that every sibling endpoint enforces.
+  Any authenticated session/API/MCP token holder can read any contributor's profile;
+  for confirmed Gittensor miners that exposes `alphaPerDay`, `taoPerDay`, `usdPerDay`
+  (and the `hotkey` on the REST path). Authenticated cross-contributor disclosure,
+  CWE-284 / IDOR."
+date: "2026-07-09"
+pubdate: "2026-07-09"
+affected_range: "<=0.1.0"
+fixed_versions: []
+affected_versions: "All versions up to 0.1.0"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-382c-vx95-w3p5"
+- "https://github.com/JSONbored/gittensory/security/advisories/GHSA-382c-vx95-w3p5"
+- "https://github.com/JSONbored/gittensory/commit/811ef5fb9d748170011f8854d88c64627ad666a0"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+uuid: "868bb7ad-8a52-4d82-bd38-783a8bede713"
+cwe_ids:
+- "CWE-284"
+- "CWE-937"
+- "CWE-1035"

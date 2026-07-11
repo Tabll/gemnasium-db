@@ -1,0 +1,38 @@
+---
+identifier: "GHSA-9h47-pqcx-hjr4"
+identifiers:
+- "GHSA-9h47-pqcx-hjr4"
+package_slug: "npm/better-auth"
+title: "Better Auth has insecure cryptographic defaults in oidcProvider: alg=none
+  advertised and plain PKCE accepted by default"
+description: "The legacy `oidcProvider` and `mcp` plugins exhibit two related defects
+  in their OIDC discovery and authorize surfaces.\n\nThe discovery document advertises
+  `\"none\"` in `id_token_signing_alg_values_supported` (and, for `mcp`, in `resource_signing_alg_values_supported`
+  on the OAuth protected-resource metadata). Any relying party that performs algorithm
+  negotiation from this metadata without pinning to a real signing algorithm may accept
+  unsigned tokens.\n\nPKCE `plain` is enabled by default. The runtime gate in the
+  authorize handler accepts `code_challenge_method=plain` under this default, and
+  a missing `code_challenge_method` parameter is silently downgraded to `\"plain\"`
+  before the allowlist check. Discovery advertises `code_challenge_methods_supported:
+  [\"S256\"]`, contradicting the runtime acceptance of `plain`. RFC 9700 §2.1.1 (OAuth
+  2.1) explicitly forbids `plain`."
+date: "2026-07-07"
+pubdate: "2026-07-07"
+affected_range: "<1.6.11"
+fixed_versions:
+- "1.6.11"
+affected_versions: "All versions before 1.6.11"
+not_impacted: "All versions starting from 1.6.11"
+solution: "Upgrade to version 1.6.11 or above."
+urls:
+- "https://github.com/advisories/GHSA-9h47-pqcx-hjr4"
+- "https://github.com/better-auth/better-auth/security/advisories/GHSA-9h47-pqcx-hjr4"
+- "https://github.com/better-auth/better-auth/releases/tag/v1.6.11"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:N"
+uuid: "b2597e04-3904-4f99-9df4-6cbc52f04add"
+cwe_ids:
+- "CWE-327"
+- "CWE-757"
+- "CWE-937"
+- "CWE-1035"
+- "CWE-1188"

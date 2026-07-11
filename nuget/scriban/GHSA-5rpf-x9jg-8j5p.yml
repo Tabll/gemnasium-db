@@ -22,7 +22,7 @@ description: "`TemplateContext.LimitToString` defaults to `0` (unlimited). While
   Fix:**\nEnforce a sensible default limit for string output. Set default `LimitToString`
   to 1MB (1,048,576 characters).\n\n```csharp\npublic int LimitToString { get; set;
   } = 1048576;\n```"
-date: "2026-03-19"
+date: "2026-07-06"
 pubdate: "2026-03-19"
 affected_range: "[,6.6.0)"
 fixed_versions:
@@ -34,7 +34,6 @@ urls:
 - "https://github.com/advisories/GHSA-5rpf-x9jg-8j5p"
 - "https://github.com/scriban/scriban/security/advisories/GHSA-5rpf-x9jg-8j5p"
 - "https://github.com/scriban/scriban/commit/a6fe6074199e5c04f4d29dc8d8e652b24d33e3e4"
-- "https://github.com/scriban/scriban"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
 uuid: "5b07ae88-3048-4b8b-b273-580bd1717362"
 cwe_ids:

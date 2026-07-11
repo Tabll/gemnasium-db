@@ -1,0 +1,42 @@
+---
+identifier: "GHSA-9mqm-qcwf-5qhg"
+identifiers:
+- "GHSA-9mqm-qcwf-5qhg"
+package_slug: "pypi/credsweeper"
+title: "CredSweeper: Recursive archive size-limit bypass in deep scanner allows crafted
+  compressed inputs to exhaust resources"
+description: "CredSweeper's deep scanner does not enforce `recursive_limit_size` as
+  a hard limit. Several recursive scanners fully decompress or fully read attacker-controlled
+  content before the remaining budget is validated, and `AbstractScanner.recursive_scan()`
+  continues processing even when the residual budget is already negative.\n\nThis
+  allows a crafted archive to bypass the intended recursive zip-bomb protection and
+  force excessive memory / CPU consumption when deep scanning is enabled (`--depth
+  > 0`). I confirmed this on upstream commit `8b081acf04311eafe8fbd66ea41d02b0a7a4c6f6`
+  / package version `1.15.8`.\n\nThe issue has two closely related exploitation paths
+  that share the same root cause:\n\n1. Single-stream decompressor bypass:\n`gzip`,
+  `bzip2`, and `lzma/xz` inputs are fully decompressed first, then the remaining budget
+  is computed, and the recursive scan proceeds even if the result is negative.\n\n2.
+  Multi-entry archive cumulative-budget bypass:\n`zip` and `tar` entries are checked
+  only against the original per-entry budget, not against a mutable cumulative remaining
+  budget shared across sibling entries. Multiple individually small entries can therefore
+  exceed the configured recursive limit in aggregate.\n\nThe impact is availability/resource
+  exhaustion. I did not confirm arbitrary code execution, arbitrary file write, or
+  data exfiltration from this issue."
+date: "2026-07-10"
+pubdate: "2026-07-10"
+affected_range: ">=1.4.9,<1.16.0"
+fixed_versions:
+- "1.16.0"
+affected_versions: "All versions starting from 1.4.9 before 1.16.0"
+not_impacted: "All versions before 1.4.9, all versions starting from 1.16.0"
+solution: "Upgrade to version 1.16.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-9mqm-qcwf-5qhg"
+- "https://github.com/Samsung/CredSweeper/security/advisories/GHSA-9mqm-qcwf-5qhg"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+uuid: "6298dfc8-eee5-4266-974b-cc34a6f8539e"
+cwe_ids:
+- "CWE-400"
+- "CWE-409"
+- "CWE-937"
+- "CWE-1035"

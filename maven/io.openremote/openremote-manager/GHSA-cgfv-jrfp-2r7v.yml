@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-cgfv-jrfp-2r7v"
+identifiers:
+- "GHSA-cgfv-jrfp-2r7v"
+package_slug: "maven/io.openremote/openremote-manager"
+title: "OpenRemote has Authenticated SQL Injection via Datapoint Crosstab Export"
+description: "The datapoint export API builds a PostgreSQL crosstab export query by
+  concatenating asset display names into raw SQL. An authenticated user who can create
+  or rename an asset and then request a crosstab datapoint export can inject SQL through
+  the asset name. The injected query output is streamed back to the caller inside
+  the normal ZIP/CSV export response.\n\nThis creates a practical database exfiltration
+  primitive through the application API. In a multi-tenant deployment, this can expose
+  data outside the attacker's tenant if the application database role can read shared
+  manager tables."
+date: "2026-07-06"
+pubdate: "2026-07-06"
+affected_range: "[,1.26.0)"
+fixed_versions:
+- "1.26.0"
+affected_versions: "All versions before 1.26.0"
+not_impacted: "All versions starting from 1.26.0"
+solution: "Upgrade to version 1.26.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-cgfv-jrfp-2r7v"
+- "https://github.com/openremote/openremote/security/advisories/GHSA-cgfv-jrfp-2r7v"
+- "https://github.com/openremote/openremote/commit/02ac83074b81617add814b2a72d459abdf374147"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:L"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:L/VA:L/SC:N/SI:N/SA:N"
+uuid: "24dd4790-e94a-471e-b433-0db97d120899"
+cwe_ids:
+- "CWE-89"
+- "CWE-937"
+- "CWE-1035"

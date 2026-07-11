@@ -24,7 +24,7 @@ description: "The array multiplication operator (`array * integer`) in Scriban a
   DoS-hardening passes, and is still present in 7.2.0 (current) — i.e. it is both
   a missed sibling of GHSA-24c8 and an incomplete coverage of GHSA-c875's `LoopLimit`
   hardening."
-date: "2026-06-26"
+date: "2026-07-06"
 pubdate: "2026-06-26"
 affected_range: "[3.0.0,7.2.1)"
 fixed_versions:

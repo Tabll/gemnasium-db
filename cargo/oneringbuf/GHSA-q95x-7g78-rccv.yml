@@ -1,0 +1,41 @@
+---
+identifier: "GHSA-q95x-7g78-rccv"
+identifiers:
+- "GHSA-q95x-7g78-rccv"
+package_slug: "cargo/oneringbuf"
+title: "OneRingBuf has a Use After Free Vulnerability"
+description: "Affected versions of `oneringbuf` exposed the obsolete `IntoRef::into_ref`
+  method through the public `IntoRef` trait. For heap-backed ring buffers, this method
+  returned a `DroppableRef` handle.\n\n`DroppableRef` stored an owning raw pointer
+  created from `Box::into_raw`. Its `Clone` implementation copied this raw pointer
+  without incrementing the internal `alive_iters` counter. Internally, this clone
+  pattern appears to rely on a fixed number of handles being created to match the
+  initial `alive_iters` value. However, exposing `DroppableRef` through the public
+  `IntoRef::TargetRef` associated type allows safe external code to create additional
+  clones beyond that fixed count, breaking the lifetime protocol. `Drop` later dereferenced
+  the pointer and could free the backing allocation with `Box::from_raw`.\n\nSafe
+  code could call `IntoRef::into_ref` to obtain a `DroppableRef` and then clone it.
+  Each clone pointed to the same allocation, but the internal `alive_iters` counter
+  was not increased. As a result, one clone could free the allocation while another
+  clone still existed. Dropping the remaining clone then accessed freed memory, causing
+  a heap-use-after-free.\n\nThe issue was fixed in version 0.8.0 by removing the obsolete
+  `into_ref` method."
+date: "2026-07-08"
+pubdate: "2026-07-08"
+affected_range: "<0.8.0"
+fixed_versions:
+- "0.8.0"
+affected_versions: "All versions before 0.8.0"
+not_impacted: "All versions starting from 0.8.0"
+solution: "Upgrade to version 0.8.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-q95x-7g78-rccv"
+- "https://github.com/skilvingr/rust-oneringbuf/commit/643a24b30914068416dff9021a069c12c865a316"
+- "https://rustsec.org/advisories/RUSTSEC-2026-0152.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N"
+uuid: "ee850a75-a6b8-482c-8569-b2806c3691b0"
+cwe_ids:
+- "CWE-416"
+- "CWE-937"
+- "CWE-1035"

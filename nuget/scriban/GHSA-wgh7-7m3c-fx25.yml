@@ -17,7 +17,7 @@ description: "Scriban is vulnerable to an uncontrolled process crash resulting i
   from untrusted input), an attacker can supply thousands of nested parentheses or
   blocks. As the parser recursively evaluates each nested layer, it consumes thread
   stack space until it exceeds the limits of the host OS, triggering a fatal crash."
-date: "2026-03-20"
+date: "2026-07-06"
 pubdate: "2026-03-19"
 affected_range: "[,6.6.0)"
 fixed_versions:
@@ -30,7 +30,6 @@ urls:
 - "https://github.com/scriban/scriban/security/advisories/GHSA-wgh7-7m3c-fx25"
 - "https://github.com/scriban/scriban/commit/a6fe6074199e5c04f4d29dc8d8e652b24d33e3e4"
 - "https://github.com/scriban/scriban/commit/b5ac4bf30459fdc76964e3f751e16f7e96079ea7"
-- "https://github.com/scriban/scriban"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
 uuid: "3c8cec2d-a241-4c2b-87bc-8d02f7a11194"
 cwe_ids:

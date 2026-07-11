@@ -12,7 +12,7 @@ description: "The `LimitToString` safety limit (default 1MB since commit `b5ac4b
   top-level `ObjectToString` call that resets the length counter to zero, and the
   underlying `StringBuilderOutput` has no cumulative output size limit. An attacker
   who can supply a template can cause an out-of-memory condition in the host application."
-date: "2026-03-24"
+date: "2026-07-06"
 pubdate: "2026-03-24"
 affected_range: "[,7.0.0)"
 fixed_versions:
@@ -23,7 +23,6 @@ solution: "Upgrade to version 7.0.0 or above."
 urls:
 - "https://github.com/advisories/GHSA-m2p3-hwv5-xpqw"
 - "https://github.com/scriban/scriban/security/advisories/GHSA-m2p3-hwv5-xpqw"
-- "https://github.com/scriban/scriban"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
 uuid: "cc86d6de-7761-45c2-ada5-19eb81044845"
 cwe_ids:

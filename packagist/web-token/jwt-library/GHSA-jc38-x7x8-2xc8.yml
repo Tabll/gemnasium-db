@@ -16,7 +16,7 @@ description: "`JWSVerifier::getAlgorithm()` in `src/Library/Signature/JWSVerifie
   header\n2. `JWSVerifier` uses `alg` from the **unprotected** header for actual verification\n\nThe
   same issue exists in `JWEDecrypter.php` (lines 120-124) where `array_merge()` exhibits
   the same last-wins behavior for `alg` and `enc`."
-date: "2026-06-18"
+date: "2026-07-06"
 pubdate: "2026-06-18"
 affected_range: "<3.4.10||>=4.0.0 <4.0.7||>=4.1.0 <4.1.7"
 fixed_versions:

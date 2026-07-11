@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-xrmc-c5cg-rv7x"
+identifiers:
+- "GHSA-xrmc-c5cg-rv7x"
+package_slug: "npm/safeinstall-cli"
+title: "SafeInstall agent guard shell parsing can miss raw package execution"
+description: "SafeInstall CLI through 0.10.1 can fail to recognize some package-manager
+  and registry-runner commands in its agent guard. Case-variant launcher names, leading
+  file-descriptor redirections, and supported shell wrappers with options can cause
+  a raw install command to receive no guard decision. Remote project scaffolding through
+  package-manager create/init commands can also avoid the approval decision used for
+  other registry runners."
+date: "2026-07-10"
+pubdate: "2026-07-10"
+affected_range: "<0.10.2"
+fixed_versions:
+- "0.10.2"
+affected_versions: "All versions before 0.10.2"
+not_impacted: "All versions starting from 0.10.2"
+solution: "Upgrade to version 0.10.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-xrmc-c5cg-rv7x"
+- "https://github.com/Mickdownunder/SafeInstall/security/advisories/GHSA-xrmc-c5cg-rv7x"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+uuid: "8eca3b5b-ff90-47d9-b24d-981310df8782"
+cwe_ids:
+- "CWE-178"
+- "CWE-693"
+- "CWE-937"
+- "CWE-1035"

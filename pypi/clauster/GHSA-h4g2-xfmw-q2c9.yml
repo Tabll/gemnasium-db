@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-h4g2-xfmw-q2c9"
+identifiers:
+- "GHSA-h4g2-xfmw-q2c9"
+package_slug: "pypi/clauster"
+title: "Clauster: Non-loopback deployments can serve the dashboard unauthenticated
+  when auth.enabled is unset"
+description: "A Clauster instance bound to a **non-loopback** address (e.g. `0.0.0.0`
+  or a LAN IP) can serve the entire dashboard and its API **without any authentication**
+  — even when the operator has configured a password — if `auth.enabled` is left at
+  its default (`false`). The operator believes the instance is password-protected;
+  in reality every request is served unauthenticated."
+date: "2026-07-10"
+pubdate: "2026-07-10"
+affected_range: "<0.2.2"
+fixed_versions:
+- "0.2.2"
+affected_versions: "All versions before 0.2.2"
+not_impacted: "All versions starting from 0.2.2"
+solution: "Upgrade to version 0.2.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-h4g2-xfmw-q2c9"
+- "https://github.com/schubydoo/clauster/security/advisories/GHSA-h4g2-xfmw-q2c9"
+cvss_v3: "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:A/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+uuid: "71b1fb0e-2b5e-43af-bb44-d9b764b17583"
+cwe_ids:
+- "CWE-306"
+- "CWE-937"
+- "CWE-1035"

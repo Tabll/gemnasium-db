@@ -14,7 +14,7 @@ description: "vcrpy deserializes YAML cassette files with PyYAML's object-constr
   `CLoader` uses the C parser but PyYAML's full Python *constructor*, so Python\nobject
   tags execute under `CLoader` exactly as under the pure-Python `Loader`. Confirmed
   against vcrpy 8.1.1 + PyYAML 6.0.3 with `CLoader` active."
-date: "2026-06-19"
+date: "2026-07-10"
 pubdate: "2026-06-19"
 affected_range: "<8.2.1"
 fixed_versions:

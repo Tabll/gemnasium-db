@@ -10,7 +10,7 @@ description: "Vantage6 currently provides an initial user with username `root` a
   that almost all vantage6 servers have a user with username `root` that probably
   has admin rights\n- The initial password is very weak and it is possible that administrators
   forget to reset it."
-date: "2026-06-17"
+date: "2026-07-09"
 pubdate: "2026-06-05"
 affected_range: "<5.0.0"
 fixed_versions:
@@ -23,6 +23,7 @@ urls:
 - "https://github.com/advisories/GHSA-fgmc-2hqj-86v4"
 - "https://github.com/vantage6/vantage6/security/advisories/GHSA-fgmc-2hqj-86v4"
 - "https://github.com/vantage6/vantage6/issues/1932"
+- "https://github.com/vantage6/vantage6/blob/main/docs/release_notes.rst#500"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
 cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N"
 uuid: "3aa5bd0c-fec0-48f6-90ca-20b7628d306e"

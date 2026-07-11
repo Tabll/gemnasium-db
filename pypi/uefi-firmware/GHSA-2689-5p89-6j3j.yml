@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-2689-5p89-6j3j"
 identifiers:
+- "CVE-2026-54333"
 - "GHSA-2689-5p89-6j3j"
 package_slug: "pypi/uefi-firmware"
 title: "UEFI Firmware Parser has a stack out-of-bounds write in tiano decompressor
@@ -20,7 +21,7 @@ description: "`uefi-firmware` contains a stack out-of-bounds write vulnerability
   fix commit: <https://github.com/theopolis/uefi-firmware-parser/commit/bf3dfaa8a05675bae6ea0cbfa082ddcebfcde23e>\n-
   upstream related fixes: CVE-2017-5731, CVE-2017-5732, CVE-2017-5733, CVE-2017-5734,
   CVE-2017-5735"
-date: "2026-04-16"
+date: "2026-07-08"
 pubdate: "2026-04-16"
 affected_range: "<=1.12.0"
 fixed_versions: []
@@ -28,6 +29,7 @@ affected_versions: "All versions up to 1.12.0"
 not_impacted: ""
 solution: "Unfortunately, there is no solution available yet."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-54333"
 - "https://github.com/advisories/GHSA-2689-5p89-6j3j"
 - "https://github.com/theopolis/uefi-firmware-parser/security/advisories/GHSA-2689-5p89-6j3j"
 - "https://github.com/theopolis/uefi-firmware-parser/pull/145"

@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-q855-8rh5-jfgq"
+identifiers:
+- "GHSA-q855-8rh5-jfgq"
+package_slug: "pypi/ha-mcp"
+title: "ha-mcp: Add-on settings and policy routes are reachable without authentication
+  at the bare root path"
+description: "In add-on mode, the ha-mcp settings UI routes are mounted both under
+  the MCP secret path **and** at the bare root of the published port (`:9583`), so
+  Home Assistant ingress can serve the \"Open Web UI\" button. The root-mounted routes
+  perform no authentication — no secret, no `Origin` check, no CSRF token — so any
+  client that can reach `:9583` without the MCP secret can invoke them."
+date: "2026-07-07"
+pubdate: "2026-07-07"
+affected_range: "<7.10.0"
+fixed_versions:
+- "7.10.0"
+affected_versions: "All versions before 7.10.0"
+not_impacted: "All versions starting from 7.10.0"
+solution: "Upgrade to version 7.10.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-q855-8rh5-jfgq"
+- "https://github.com/homeassistant-ai/ha-mcp/security/advisories/GHSA-q855-8rh5-jfgq"
+- "https://github.com/homeassistant-ai/ha-mcp/pull/1508"
+- "https://github.com/homeassistant-ai/ha-mcp/commit/9f5b085ad4a7b38b067c9da0dc5b45462c4d796e"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L"
+uuid: "e0dae9f1-324e-4138-8206-6ce594767955"
+cwe_ids:
+- "CWE-306"
+- "CWE-352"
+- "CWE-937"
+- "CWE-1035"

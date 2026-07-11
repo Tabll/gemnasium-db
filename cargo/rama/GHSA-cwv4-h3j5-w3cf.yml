@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-cwv4-h3j5-w3cf"
+identifiers:
+- "GHSA-cwv4-h3j5-w3cf"
+package_slug: "cargo/rama"
+title: "rama has Stored XSS in ServeDir HTML directory listing via unescaped file
+  names and URI path"
+description: "`plabayo/rama` contains a stored/reflected cross-site scripting issue
+  in the `ServeDir` HTML directory listing feature.\n\nWhen `ServeDir` is configured
+  with `DirectoryServeMode::HtmlFileList`, file names and URI path components are
+  inserted directly into generated HTML without HTML escaping. If an attacker can
+  create or influence a file or directory name inside a served directory, they may
+  inject HTML or JavaScript into the directory listing page.\n\nThis can execute script
+  in the browser of any user who visits the affected directory listing."
+date: "2026-07-07"
+pubdate: "2026-07-07"
+affected_range: "<0.3.0-rc.1"
+fixed_versions:
+- "0.3.0-rc.1"
+affected_versions: "All versions before 0.3.0-rc.1"
+not_impacted: "All versions starting from 0.3.0-rc.1"
+solution: "Upgrade to version 0.3.0-rc.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-cwv4-h3j5-w3cf"
+- "https://github.com/plabayo/rama/security/advisories/GHSA-cwv4-h3j5-w3cf"
+- "https://github.com/plabayo/rama/commit/89ddff578fd78bbebec99482d7030f28c07757a3"
+cvss_v3: "CVSS:3.1/AV:L/AC:H/PR:H/UI:R/S:C/C:L/I:L/A:N"
+uuid: "c16587bd-c003-4561-889b-c8519453d588"
+cwe_ids:
+- "CWE-116"
+- "CWE-937"
+- "CWE-1035"

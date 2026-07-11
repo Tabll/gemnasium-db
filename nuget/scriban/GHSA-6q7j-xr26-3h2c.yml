@@ -21,7 +21,7 @@ description: "The `ExpressionDepthLimit` parser guard in Scriban does not actual
   array initializers bypasses ExpressionDepthLimit\", reported fixed in 7.0.0). Both
   fixes are incomplete: the limit they rely on never halts recursion. **All releases
   6.6.0 through 7.2.0 (current) are affected.**"
-date: "2026-06-26"
+date: "2026-07-06"
 pubdate: "2026-06-26"
 affected_range: "[6.6.0,7.2.1)"
 fixed_versions:

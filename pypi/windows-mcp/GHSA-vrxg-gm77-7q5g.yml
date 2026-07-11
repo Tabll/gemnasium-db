@@ -27,7 +27,7 @@ description: "HTTP transports expose unauthenticated PowerShell control with wil
   an MCP session and invoke `tools/call` for `PowerShell`. The issue is not just that
   PowerShell is powerful; it is that the HTTP control plane around that tool is unauthenticated
   and configured with wildcard CORS."
-date: "2026-06-08"
+date: "2026-07-09"
 pubdate: "2026-05-21"
 affected_range: "<0.7.5"
 fixed_versions:
@@ -39,6 +39,7 @@ urls:
 - "https://nvd.nist.gov/vuln/detail/CVE-2026-48989"
 - "https://github.com/advisories/GHSA-vrxg-gm77-7q5g"
 - "https://github.com/CursorTouch/Windows-MCP/security/advisories/GHSA-vrxg-gm77-7q5g"
+- "https://github.com/CursorTouch/Windows-MCP/releases/tag/v0.7.5"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
 cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
 uuid: "a3d68696-6f96-4abd-9fb9-bce7948159d9"

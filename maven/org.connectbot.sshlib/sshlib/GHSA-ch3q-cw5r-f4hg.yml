@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-ch3q-cw5r-f4hg"
 identifiers:
+- "CVE-2026-54700"
 - "GHSA-ch3q-cw5r-f4hg"
 package_slug: "maven/org.connectbot.sshlib/sshlib"
 title: "ConnectBot SSH Client Library: Unbounded SSH field lengths can cause excessive
@@ -16,7 +17,7 @@ description: "The SSH protocol parser trusted attacker-controlled length and cou
   process that uses the library.\n\nApplications that enable SSH agent forwarding
   have an additional attack path: the connected server can send malformed agent protocol
   messages containing the same class of oversized inner length."
-date: "2026-06-12"
+date: "2026-07-08"
 pubdate: "2026-06-12"
 affected_range: "[,0.3.0]"
 fixed_versions: []
@@ -24,6 +25,7 @@ affected_versions: "All versions up to 0.3.0"
 not_impacted: ""
 solution: "Unfortunately, there is no solution available yet."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-54700"
 - "https://github.com/advisories/GHSA-ch3q-cw5r-f4hg"
 - "https://github.com/connectbot/cbssh/security/advisories/GHSA-ch3q-cw5r-f4hg"
 - "https://github.com/connectbot/cbssh/releases/tag/v0.3.1"

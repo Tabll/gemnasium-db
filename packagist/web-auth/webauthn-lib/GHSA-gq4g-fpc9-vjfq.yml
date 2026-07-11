@@ -1,0 +1,41 @@
+---
+identifier: "GHSA-gq4g-fpc9-vjfq"
+identifiers:
+- "GHSA-gq4g-fpc9-vjfq"
+package_slug: "packagist/web-auth/webauthn-lib"
+title: "Webauthn: SimpleFakeCredentialGenerator with an empty secret produces predictable
+  fake credentials, weakening username enumeration protection"
+description: "`Webauthn\\SimpleFakeCredentialGenerator` is the library-provided default
+  implementation of the `FakeCredentialGenerator` interface. It returns a stable list
+  of decoy `PublicKeyCredentialDescriptor` objects for a given username so that an
+  assertion request for an unknown user looks the same as a request for a real one,
+  which mitigates username enumeration.\n\nThe generator derives the whole decoy list
+  from a single seed:\n\n```php\n$seed = hash('sha256', $username . $this->secret,
+  true);\n```\n\nWhen it is constructed without a secret (its constructor default,
+  `$secret = ''`), the seed depends only on the username. The username is attacker-chosen
+  and the algorithm is public, so an unauthenticated requester can recompute the exact,
+  byte-for-byte decoy list the server returns for any username. The attacker then
+  compares a probed username's response against the locally computed list and decides
+  whether the account is real or fake, which is precisely the distinction the mechanism
+  is meant to hide.\n\nWith any non-empty secret the seed becomes a value the attacker
+  cannot evaluate and the mitigation holds. The defect is the empty default, not the
+  algorithm."
+date: "2026-07-07"
+pubdate: "2026-07-07"
+affected_range: ">=4.9.0 <5.3.5"
+fixed_versions:
+- "5.3.5"
+affected_versions: "All versions starting from 4.9.0 before 5.3.5"
+not_impacted: "All versions before 4.9.0, all versions starting from 5.3.5"
+solution: "Upgrade to version 5.3.5 or above."
+urls:
+- "https://github.com/advisories/GHSA-gq4g-fpc9-vjfq"
+- "https://github.com/web-auth/webauthn-framework/security/advisories/GHSA-gq4g-fpc9-vjfq"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N"
+uuid: "574cf7d8-6645-4363-ac2b-8ae9f1d0a38a"
+cwe_ids:
+- "CWE-204"
+- "CWE-330"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,41 @@
+---
+identifier: "GHSA-jc38-x7x8-2xc8"
+identifiers:
+- "GHSA-jc38-x7x8-2xc8"
+package_slug: "packagist/web-token/jwt-bundle"
+title: "PHP JWT Framework: JWSVerifier uses algorithm from unprotected header, enabling
+  algorithm confusion attacks"
+description: "`JWSVerifier::getAlgorithm()` in `src/Library/Signature/JWSVerifier.php`
+  (line 144) merges protected and unprotected headers using PHP's spread operator:\n\n```php\n$completeHeader
+  = [...$signature->getProtectedHeader(), ...$signature->getHeader()];\n```\n\nIn
+  PHP, when spreading arrays with duplicate string keys, the **last array's values
+  take precedence**. Since the unprotected header (`getHeader()`) is spread second,
+  an attacker can override the integrity-protected `alg` parameter by placing a different
+  value in the unprotected header.\n\nThis creates a Time-of-Check/Time-of-Use (TOCTOU)
+  vulnerability:\n1. `HeaderCheckerManager` validates `alg` from the **protected**
+  header\n2. `JWSVerifier` uses `alg` from the **unprotected** header for actual verification\n\nThe
+  same issue exists in `JWEDecrypter.php` (lines 120-124) where `array_merge()` exhibits
+  the same last-wins behavior for `alg` and `enc`."
+date: "2026-07-06"
+pubdate: "2026-06-18"
+affected_range: "<3.4.10||>=4.0.0 <4.0.7||>=4.1.0 <4.1.7"
+fixed_versions:
+- "3.4.10"
+- "4.0.7"
+- "4.1.7"
+affected_versions: "All versions before 3.4.10, all versions starting from 4.0.0 before
+  4.0.7, all versions starting from 4.1.0 before 4.1.7"
+not_impacted: "All versions starting from 3.4.10 before 4.0.0, all versions starting
+  from 4.0.7 before 4.1.0, all versions starting from 4.1.7"
+solution: "Upgrade to versions 3.4.10, 4.0.7, 4.1.7 or above."
+urls:
+- "https://github.com/advisories/GHSA-jc38-x7x8-2xc8"
+- "https://github.com/web-token/jwt-framework/security/advisories/GHSA-jc38-x7x8-2xc8"
+- "https://github.com/FriendsOfPHP/security-advisories/blob/master/web-token/jwt-library/GHSA-jc38-x7x8-2xc8.yaml"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N"
+uuid: "64ca4a48-ae3a-4d2d-a75d-d254853ab14f"
+cwe_ids:
+- "CWE-345"
+- "CWE-937"
+- "CWE-1035"

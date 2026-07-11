@@ -1,0 +1,26 @@
+---
+identifier: "GHSA-99j7-fhr2-xfj4"
+identifiers:
+- "GHSA-99j7-fhr2-xfj4"
+package_slug: "cargo/exploration"
+title: "`exploration` was removed from crates.io for malicious code"
+description: "A method within the `exploration` crate attempted to download and execute
+  a payload from a remote site.\n\nThe malicious crate had 1 version published on
+  2026-06-02, approximately 1 hour before removal, and had no evidence of actual usage.
+  This crate had no dependencies on crates.io.\n\nRustsec to Kirill Boychenko from
+  the [Socket Threat Research Team](https://socket.dev/) for reporting this crate."
+date: "2026-07-10"
+pubdate: "2026-07-10"
+affected_range: ">=0"
+fixed_versions: []
+affected_versions: "All versions"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-99j7-fhr2-xfj4"
+- "https://rustsec.org/advisories/RUSTSEC-2026-0155.html"
+uuid: "021cbd85-4680-4039-a862-6eb0ff35aa4f"
+cwe_ids:
+- "CWE-506"
+- "CWE-937"
+- "CWE-1035"

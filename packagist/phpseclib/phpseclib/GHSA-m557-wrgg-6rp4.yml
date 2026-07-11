@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-m557-wrgg-6rp4"
 identifiers:
+- "CVE-2026-55599"
 - "GHSA-m557-wrgg-6rp4"
 package_slug: "packagist/phpseclib/phpseclib"
 title: "phpseclib: X.509 certificate validation sends attacker-controlled outbound
@@ -15,7 +16,7 @@ description: "When an application validates an untrusted X.509 certificate with 
   and internal-only services. This is a server-side request forgery (SSRF) caused
   by an insecure default. It is reproducible on current released LTS 3.0.53 and on
   4.0 development line."
-date: "2026-06-16"
+date: "2026-07-08"
 pubdate: "2026-06-16"
 affected_range: ">=0.1.1 <1.0.30||>=2.0.0 <2.0.55||>=3.0.0 <3.0.54"
 fixed_versions:
@@ -29,6 +30,7 @@ not_impacted: "All versions before 0.1.1, all versions starting from 1.0.30 befo
   3.0.54"
 solution: "Upgrade to versions 1.0.30, 2.0.55, 3.0.54 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-55599"
 - "https://github.com/advisories/GHSA-m557-wrgg-6rp4"
 - "https://github.com/phpseclib/phpseclib/security/advisories/GHSA-m557-wrgg-6rp4"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:N/A:N"

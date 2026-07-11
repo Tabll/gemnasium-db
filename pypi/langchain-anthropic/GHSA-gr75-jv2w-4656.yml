@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-gr75-jv2w-4656"
 identifiers:
+- "CVE-2026-55443"
 - "GHSA-gr75-jv2w-4656"
 package_slug: "pypi/langchain-anthropic"
 title: "LangChain: Path traversal and sandbox escape in LangChain file-search middleware
@@ -18,7 +19,7 @@ description: "Several LangChain components that resolve filesystem paths or expa
   by an untrusted source — including an LLM acting on untrusted input — the result
   can be disclosure of files outside the intended boundary. We have no evidence of
   this behavior being triggered in the wild."
-date: "2026-06-16"
+date: "2026-07-08"
 pubdate: "2026-06-16"
 affected_range: "<1.4.6"
 fixed_versions:
@@ -27,8 +28,10 @@ affected_versions: "All versions before 1.4.6"
 not_impacted: "All versions starting from 1.4.6"
 solution: "Upgrade to version 1.4.6 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-55443"
 - "https://github.com/advisories/GHSA-gr75-jv2w-4656"
 - "https://github.com/langchain-ai/langchain/security/advisories/GHSA-gr75-jv2w-4656"
+- "https://github.com/langchain-ai/langchain/commit/dcaf7795a3e6590af55c3ff7bda6add6355e9ea6"
 cvss_v3: "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N"
 uuid: "2768eab9-16c2-4bf9-94d4-49ffd714be74"
 cwe_ids:

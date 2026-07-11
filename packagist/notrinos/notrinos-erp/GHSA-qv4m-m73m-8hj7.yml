@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-qv4m-m73m-8hj7"
+identifiers:
+- "GHSA-qv4m-m73m-8hj7"
+package_slug: "packagist/notrinos/notrinos-erp"
+title: "NotrinosERP: Authenticated arbitrary file upload leads to remote code execution
+  via HRM employee \"Documents\" (doc_file)"
+description: "An authenticated user with the HR \"Manage Employees\" permission (`SA_EMPLOYEE`)
+  can upload a file with an arbitrary extension through the employee **Documents**
+  tab. The handler writes the raw client-supplied filename — extension intact — into
+  a web served directory with no extension, MIME, or content validation, so a `.php`
+  file is stored under the web root and executes as code, yielding remote code execution
+  on the server."
+date: "2026-07-10"
+pubdate: "2026-07-10"
+affected_range: "<=1.0.0"
+fixed_versions: []
+affected_versions: "All versions up to 1.0.0"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-qv4m-m73m-8hj7"
+- "https://github.com/notrinos/NotrinosERP/security/advisories/GHSA-qv4m-m73m-8hj7"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+uuid: "1754c0e1-dd66-48de-a797-4325c932f97c"
+cwe_ids:
+- "CWE-22"
+- "CWE-434"
+- "CWE-937"
+- "CWE-1035"
