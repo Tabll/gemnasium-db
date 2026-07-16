@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-8q6q-m837-fv64"
+identifiers:
+- "GHSA-8q6q-m837-fv64"
+package_slug: "packagist/phanan/koel"
+title: " Koel has SSRF through Authenticated Subsonic podcast feed URLs"
+description: "Koel's Subsonic `createPodcastChannel.view` endpoint accepts a user
+  supplied podcast feed URL and fetches it server-side before applying the safe URL
+  checks that are used for podcast episode enclosure URLs. An authenticated Subsonic
+  API user can provide a loopback or internal URL as the feed URL and cause the Koel
+  backend to issue a request to that address.\n\nA related redirect gap exists in
+  the podcast stream helper: `PodcastService::getStreamableUrl()` validates only the
+  original URL, then lets Guzzle follow redirects and accepts the final redirected
+  URL without re-validating it."
+date: "2026-07-15"
+pubdate: "2026-07-15"
+affected_range: "<9.7.0"
+fixed_versions:
+- "9.7.0"
+affected_versions: "All versions before 9.7.0"
+not_impacted: "All versions starting from 9.7.0"
+solution: "Upgrade to version 9.7.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-8q6q-m837-fv64"
+- "https://github.com/koel/koel/security/advisories/GHSA-8q6q-m837-fv64"
+- "https://github.com/koel/koel/releases/tag/v9.7.0"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N"
+uuid: "63a09c9f-82b5-42e0-8dcb-0bad9afff3b2"
+cwe_ids:
+- "CWE-918"
+- "CWE-937"
+- "CWE-1035"

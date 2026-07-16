@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-7gcf-g7xr-8hxj"
+identifiers:
+- "GHSA-7gcf-g7xr-8hxj"
+package_slug: "cargo/serde_with"
+title: "serde_with: KeyValueMap serialization panics on empty sequence or map entries"
+description: "The public `KeyValueMap` serializer assumes that each mapped element
+  has at least one field or item to use as the map key, but it subtracts `1` from
+  the caller-visible length before validating that assumption. An application that
+  serializes attacker-controlled data through `#[serde_as(as = \"KeyValueMap<_>\")]`
+  can be crashed by an empty inner sequence or map entry."
+date: "2026-07-15"
+pubdate: "2026-07-15"
+affected_range: "<3.21.0"
+fixed_versions:
+- "3.21.0"
+affected_versions: "All versions before 3.21.0"
+not_impacted: "All versions starting from 3.21.0"
+solution: "Upgrade to version 3.21.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-7gcf-g7xr-8hxj"
+- "https://github.com/jonasbb/serde_with/security/advisories/GHSA-7gcf-g7xr-8hxj"
+- "https://github.com/jonasbb/serde_with/pull/966"
+- "https://github.com/jonasbb/serde_with/commit/c8a1d820ea25df01692b367058d587343e199389"
+- "https://github.com/jonasbb/serde_with/releases/tag/v3.21.0"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+cvss_v4: "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N"
+uuid: "d38df5ec-7a53-4b97-8096-1894549aa25c"
+cwe_ids:
+- "CWE-20"
+- "CWE-937"
+- "CWE-1035"

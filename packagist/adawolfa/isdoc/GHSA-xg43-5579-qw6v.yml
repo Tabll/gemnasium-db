@@ -1,0 +1,48 @@
+---
+identifier: "GHSA-xg43-5579-qw6v"
+identifiers:
+- "GHSA-xg43-5579-qw6v"
+package_slug: "packagist/adawolfa/isdoc"
+title: "adawolfa/isdoc: Uncontrolled resource consumption (decompression bomb) when
+  reading untrusted ISDOCX or PDF files"
+description: "`adawolfa/isdoc` reads ISDOC invoices from ISDOCX (ZIP) archives and
+  from PDF files with embedded ISDOC documents and supplements. Affected versions
+  inflate ZIP entries and read embedded files **without validating their uncompressed
+  size**, so a small crafted file can amplify into gigabytes:\n\n- **ISDOCX decompression
+  bomb** — `getFromName()` inflates the ISDOC document and binary supplements with
+  no size cap.\n- **`saveTo()` disk-fill** — the supplement copy loop writes inflated
+  bytes to disk with no running byte budget, so a bomb can exhaust disk even if the
+  central-directory size is under-reported.\n- **PDF embedded files** — an embedded
+  file whose declared `Length` is enormous is read and digested with no upper bound.\n\nExploitation
+  requires the application to parse an attacker-supplied `.isdocx` or `.pdf` (the
+  typical use is generating files or parsing files from trusted vendors, so a user
+  must be induced to process a malicious file). When that happens the process can
+  be driven to exhaust memory or disk, causing denial of service. There is **no confidentiality
+  or integrity impact** — availability only."
+date: "2026-07-15"
+pubdate: "2026-07-15"
+affected_range: "<1.4.0||>=1.4.0 <1.4.3||>=1.5.0 <1.5.1||>=1.6.0 <1.6.1"
+fixed_versions:
+- "1.4.0"
+- "1.4.3"
+- "1.5.1"
+- "1.6.1"
+affected_versions: "All versions before 1.4.0, all versions starting from 1.4.0 before
+  1.4.3, all versions starting from 1.5.0 before 1.5.1, all versions starting from
+  1.6.0 before 1.6.1"
+not_impacted: "All versions starting from 1.4.0 before 1.4.0, all versions starting
+  from 1.4.3 before 1.5.0, all versions starting from 1.5.1 before 1.6.0, all versions
+  starting from 1.6.1"
+solution: "Upgrade to versions 1.4.0, 1.4.3, 1.5.1, 1.6.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-xg43-5579-qw6v"
+- "https://github.com/adawolfa/isdoc/security/advisories/GHSA-xg43-5579-qw6v"
+- "https://github.com/adawolfa/isdoc/commit/02a10123a3d5fd92950b8e4952959317c0a18952"
+- "https://github.com/adawolfa/isdoc/commit/935fb2aa41ceddfcf43174a61a36ec620611a105"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+uuid: "3cbb7b42-8a62-4bad-9745-034a2ada78bc"
+cwe_ids:
+- "CWE-400"
+- "CWE-409"
+- "CWE-937"
+- "CWE-1035"

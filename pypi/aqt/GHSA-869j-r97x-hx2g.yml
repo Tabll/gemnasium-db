@@ -1,15 +1,15 @@
 ---
 identifier: "GHSA-869j-r97x-hx2g"
 identifiers:
+- "CVE-2026-59153"
 - "GHSA-869j-r97x-hx2g"
 package_slug: "pypi/aqt"
 title: "Anki's local HTTP server does not sufficiently validate requests"
 description: "Anki launches a local HTTP server to serve media files and web pages
-  for parts of its interface. The server fails to validate requests in the following
-  ways:\n1. No sufficient validation of the Origin header.\n2. Some endpoints are
-  vulnerable to path traversal attacks.\n\nThis allows malicious websites to exfiltrate
-  local files given a known path."
-date: "2026-06-19"
+  for parts of its interface. While the server has a CORS setup, requests from other
+  origins were not blocked, allowing malicious websites to potentially trigger side-effecting
+  requests."
+date: "2026-07-15"
 pubdate: "2026-06-19"
 affected_range: "<25.9.3"
 fixed_versions:
@@ -18,9 +18,12 @@ affected_versions: "All versions before 25.9.3"
 not_impacted: "All versions starting from 25.9.3"
 solution: "Upgrade to version 25.9.3 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-59153"
 - "https://github.com/advisories/GHSA-869j-r97x-hx2g"
 - "https://github.com/ankitects/anki/security/advisories/GHSA-869j-r97x-hx2g"
 - "https://x.com/taviso/status/2051310678800253318"
+- "https://github.com/ankitects/anki/commit/858e5689d0e4fd24f74856c7e8f245412694a219"
+- "https://github.com/ankitects/anki/releases/tag/25.09.3"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
 cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N"
 uuid: "234418e2-2aa2-4e56-ae4b-c5796c8633d8"
