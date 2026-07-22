@@ -8,7 +8,7 @@ description: "`confluence_upload_attachment` passes `file_path` directly to `ope
   \"rb\")` with no path validation. Any authenticated MCP client — or an AI agent
   manipulated via prompt injection — can read any file the server process can access
   and exfiltrate it to Confluence as an attachment."
-date: "2026-07-10"
+date: "2026-07-17"
 pubdate: "2026-07-10"
 affected_range: "<0.22.0"
 fixed_versions:
@@ -19,6 +19,8 @@ solution: "Upgrade to version 0.22.0 or above."
 urls:
 - "https://github.com/advisories/GHSA-g5r6-gv6m-f5jv"
 - "https://github.com/sooperset/mcp-atlassian/security/advisories/GHSA-g5r6-gv6m-f5jv"
+- "https://github.com/sooperset/mcp-atlassian/commit/b041733473f95119dd539542a43c280737a8e460"
+- "https://github.com/sooperset/mcp-atlassian/releases/tag/v0.22.0"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N"
 uuid: "fafe7941-b7d2-4f8a-bbc7-86285f484ec8"
 cwe_ids:

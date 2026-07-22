@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-hxpf-9xvq-wph8"
 identifiers:
+- "CVE-2026-57496"
 - "GHSA-hxpf-9xvq-wph8"
 package_slug: "pypi/netlicensing-mcp"
 title: "netlicensing-mcp: REST Path Traversal Bypasses Token Redaction"
@@ -13,7 +14,7 @@ description: "The `netlicensing_get_product` MCP tool in `netlicensing-mcp` inte
   wrapper, bypassing all APIKEY `number` and SHOP `shopURL` redaction. An authenticated
   MCP client can recover plaintext API key values that the token read tools intentionally
   mask, including admin-level APIKEY credentials."
-date: "2026-06-19"
+date: "2026-07-21"
 pubdate: "2026-06-18"
 affected_range: "<0.1.8"
 fixed_versions:
@@ -22,6 +23,7 @@ affected_versions: "All versions before 0.1.8"
 not_impacted: "All versions starting from 0.1.8"
 solution: "Upgrade to version 0.1.8 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-57496"
 - "https://github.com/advisories/GHSA-hxpf-9xvq-wph8"
 - "https://github.com/Labs64/NetLicensing-MCP/security/advisories/GHSA-hxpf-9xvq-wph8"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:N"

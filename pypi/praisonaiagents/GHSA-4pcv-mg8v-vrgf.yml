@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-4pcv-mg8v-vrgf"
 identifiers:
+- "CVE-2026-57143"
 - "GHSA-4pcv-mg8v-vrgf"
 package_slug: "pypi/praisonaiagents"
 title: "PraisonAI: Server-Side Request Forgery (SSRF) in SearxNG / search_web tools
@@ -15,7 +16,7 @@ description: "A Server-Side Request Forgery (SSRF) vulnerability in the SearxNG 
   output). This enables reading internal services and APIs, internal host/port enumeration,
   and in cloud environments reachability of the instance metadata endpoint (169.254.169.254)
   with potential IAM/credential exposure."
-date: "2026-06-18"
+date: "2026-07-20"
 pubdate: "2026-06-18"
 affected_range: "<1.6.61"
 fixed_versions:
@@ -24,6 +25,7 @@ affected_versions: "All versions before 1.6.61"
 not_impacted: "All versions starting from 1.6.61"
 solution: "Upgrade to version 1.6.61 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-57143"
 - "https://github.com/advisories/GHSA-4pcv-mg8v-vrgf"
 - "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-4pcv-mg8v-vrgf"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:L/A:L"

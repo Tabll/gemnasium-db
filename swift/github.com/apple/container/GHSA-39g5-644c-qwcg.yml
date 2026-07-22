@@ -19,7 +19,7 @@ description: "The `container system dns create --localhost` command accepts a `d
   rules file via `--localhost`. However, an attacker can exploit this vulnerability
   to write arbitrary rules into the firewall rules file: the target address is no
   longer restricted to localhost, and the rules are no longer limited to redirects.**"
-date: "2026-05-07"
+date: "2026-07-16"
 pubdate: "2026-05-07"
 affected_range: "<0.12.3"
 fixed_versions:

@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-jxcw-qp4h-6jfq"
 identifiers:
+- "CVE-2026-57146"
 - "GHSA-jxcw-qp4h-6jfq"
 package_slug: "pypi/praisonai"
 title: "PraisonAI A2U incomplete authentication fix leaves current serve command unauthenticated
@@ -15,7 +16,7 @@ description: "The published A2U advisory `GHSA-f292-66h9-fpmf` says unauthentica
   is already present; if the variable is missing, `_authenticate_request()` returns
   `None` and treats auth as disabled.\n\nThis is an incomplete-fix report for the
   published A2U issue, not a separate trust-model-only concern."
-date: "2026-06-18"
+date: "2026-07-20"
 pubdate: "2026-06-18"
 affected_range: ">=4.5.115,<4.6.61"
 fixed_versions:
@@ -24,6 +25,7 @@ affected_versions: "All versions starting from 4.5.115 before 4.6.61"
 not_impacted: "All versions before 4.5.115, all versions starting from 4.6.61"
 solution: "Upgrade to version 4.6.61 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-57146"
 - "https://github.com/advisories/GHSA-jxcw-qp4h-6jfq"
 - "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-jxcw-qp4h-6jfq"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"

@@ -1,0 +1,37 @@
+---
+identifier: "GHSA-hp3v-mfqw-h74c"
+identifiers:
+- "GHSA-hp3v-mfqw-h74c"
+package_slug: "npm/@astrojs/netlify"
+title: "@astrojs/netlify generates an overly-broad Netlify Image CDN allowlist because
+  remotePatterns.pathname metacharacters are not escaped"
+description: "The `@astrojs/netlify` adapter converts each `image.remotePatterns`
+  entry into a regular expression that is written to `.netlify/v1/config.json` under
+  `images.remote_images`. Netlify's Image CDN uses these regexes as the allowlist
+  that decides which remote image URLs it will optimize. `remotePatternToRegex()`
+  escapes `.` in the hostname but interpolates the literal `pathname` into the regex
+  **without escaping regex metacharacters**. As a result, the generated allowlist
+  is broader than the pattern the developer declared, and broader than Astro's canonical
+  `matchPattern()` helper (which compares non-wildcard pathnames by exact string equality).\n\nThis
+  is a residual of the same bug class addressed in CVE-2026-54300 (PR #17018, commit
+  `1310277d`). That fix corrected wildcard semantics and added a `$` anchor but did
+  not add metacharacter escaping for literal pathnames."
+date: "2026-07-20"
+pubdate: "2026-07-20"
+affected_range: "<8.1.2"
+fixed_versions:
+- "8.1.2"
+affected_versions: "All versions before 8.1.2"
+not_impacted: "All versions starting from 8.1.2"
+solution: "Upgrade to version 8.1.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-hp3v-mfqw-h74c"
+- "https://github.com/withastro/astro/security/advisories/GHSA-hp3v-mfqw-h74c"
+- "https://github.com/withastro/astro/pull/17018"
+- "https://github.com/advisories/GHSA-529g-xq4f-cw38"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N"
+uuid: "4ee312d3-8480-41ba-b35c-e51065d31ef2"
+cwe_ids:
+- "CWE-185"
+- "CWE-937"
+- "CWE-1035"

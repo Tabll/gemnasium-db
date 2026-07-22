@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-8579-rgg5-ph2m"
 identifiers:
+- "CVE-2026-56832"
 - "GHSA-8579-rgg5-ph2m"
 package_slug: "pypi/praisonai"
 title: "PraisonAI DiscordApproval accepts unrelated channel messages as dangerous-tool
@@ -17,7 +18,7 @@ description: "`praisonai.bots.DiscordApproval` approves a pending dangerous tool
   have no explicit approver allowlist parameter, but\nthe primary report-grade issue
   is the Discord backend's unthreaded channel\ncross-talk: the approving message does
   not need to be a reply or otherwise\nrequest-bound."
-date: "2026-06-18"
+date: "2026-07-20"
 pubdate: "2026-06-18"
 affected_range: ">=4.5.2,<4.6.59"
 fixed_versions:
@@ -26,6 +27,7 @@ affected_versions: "All versions starting from 4.5.2 before 4.6.59"
 not_impacted: "All versions before 4.5.2, all versions starting from 4.6.59"
 solution: "Upgrade to version 4.6.59 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-56832"
 - "https://github.com/advisories/GHSA-8579-rgg5-ph2m"
 - "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-8579-rgg5-ph2m"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"

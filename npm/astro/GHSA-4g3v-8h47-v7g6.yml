@@ -1,0 +1,37 @@
+---
+identifier: "GHSA-4g3v-8h47-v7g6"
+identifiers:
+- "GHSA-4g3v-8h47-v7g6"
+package_slug: "npm/astro"
+title: "Astro: Reflected XSS via unescaped View Transition animation properties"
+description: "Astro's server-side View Transition CSS generator interpolates animation
+  properties into an inline `<style>` element without escaping them for the CSS and
+  HTML contexts.\n\nAn attacker-controlled value passed to an animation property such
+  as `duration` can contain a `</style>` sequence, terminate the generated style element,
+  and inject arbitrary HTML or JavaScript.\n\nThis is similar to GHSA-8hv8-536x-4wqp,
+  but exploits a different injection point: unescaped View Transition animation values
+  in a server-generated `<style>` element rather than an unescaped slot name in a
+  hydration template.\n\nLike GHSA-8hv8-536x-4wqp, exploitation requires an application
+  to pass attacker-controlled data to an Astro API. However, the value is subsequently
+  inserted into the HTML response without context-appropriate escaping by Astro."
+date: "2026-07-20"
+pubdate: "2026-07-20"
+affected_range: ">=2.9.0 <7.1.0"
+fixed_versions:
+- "7.1.0"
+affected_versions: "All versions starting from 2.9.0 before 7.1.0"
+not_impacted: "All versions before 2.9.0, all versions starting from 7.1.0"
+solution: "Upgrade to version 7.1.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-4g3v-8h47-v7g6"
+- "https://github.com/withastro/astro/security/advisories/GHSA-4g3v-8h47-v7g6"
+- "https://github.com/withastro/astro/pull/17393"
+- "https://github.com/withastro/astro/commit/092da560eea77ee63a3e2c583c80d8238544e42b"
+- "https://github.com/withastro/astro/releases/tag/astro@7.1.0"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:N/VI:N/VA:N/SC:L/SI:L/SA:N"
+uuid: "78830b8e-1660-4d90-8271-b0bd399448fd"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

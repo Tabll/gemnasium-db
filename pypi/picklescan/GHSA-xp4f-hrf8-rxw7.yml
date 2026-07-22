@@ -7,7 +7,7 @@ package_slug: "pypi/picklescan"
 title: "Picklescan is missing detection when calling built-in python ensurepip._run_pip"
 description: "Using ensurepip._run_pip function, which is a built-in python library
   function to execute remote pickle file."
-date: "2026-06-22"
+date: "2026-07-21"
 pubdate: "2025-08-26"
 affected_range: "<0.0.30"
 fixed_versions:
@@ -20,7 +20,14 @@ urls:
 - "https://github.com/advisories/GHSA-xp4f-hrf8-rxw7"
 - "https://github.com/mmaitre314/picklescan/security/advisories/GHSA-xp4f-hrf8-rxw7"
 - "https://github.com/mmaitre314/picklescan/commit/1931c2d04eaca8d20597705ff39cab78ba364e4b"
+- "https://github.com/mmaitre314/picklescan"
+- "https://github.com/pypa/advisory-database/tree/main/vulns/picklescan/PYSEC-2026-1792.yaml"
+- "https://pypi.org/project/picklescan"
+- "https://www.vulncheck.com/advisories/picklescan-arbitrary-code-execution-via-undetected-ensurepip-run-pip-function"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N"
 uuid: "8540bed7-afea-435d-9d81-877c6457a764"
 cwe_ids:
+- "CWE-502"
 - "CWE-937"
 - "CWE-1035"

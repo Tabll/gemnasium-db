@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-cwj8-7gp2-ggcw"
 identifiers:
+- "CVE-2026-57147"
 - "GHSA-cwj8-7gp2-ggcw"
 package_slug: "pypi/praisonai-platform"
 title: "praisonai-platform: default JWT signing secret 'dev-secret-change-me' enables
@@ -18,7 +19,7 @@ description: "This is the familiar default-secret shape — a hardcoded fallback
   default deployments, workspace IDs and member IDs are exposed via the activity and
   labels endpoints to any authenticated client — including the attacker's own forged
   token."
-date: "2026-06-18"
+date: "2026-07-20"
 pubdate: "2026-06-18"
 affected_range: "<0.1.6"
 fixed_versions:
@@ -27,6 +28,7 @@ affected_versions: "All versions before 0.1.6"
 not_impacted: "All versions starting from 0.1.6"
 solution: "Upgrade to version 0.1.6 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-57147"
 - "https://github.com/advisories/GHSA-cwj8-7gp2-ggcw"
 - "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-cwj8-7gp2-ggcw"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"

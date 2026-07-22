@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-x8cv-xmq7-p8xp"
 identifiers:
+- "CVE-2026-57118"
 - "GHSA-x8cv-xmq7-p8xp"
 package_slug: "pypi/praisonaiagents"
 title: "PraisonAI AgentTeam.launch exposes unauthenticated remote agent listing and
@@ -19,7 +20,7 @@ description: "PraisonAI's documented Python `AgentTeam.launch()` / `Agents.launc
   the latest release.\n\nThis report is scoped to the Python `AgentTeam.launch()`
   / `Agents.launch()` route-registration path. It does not require adjudicating whether
   the separate `praisonai serve agents --api-key` CLI path is correctly enforced."
-date: "2026-06-18"
+date: "2026-07-20"
 pubdate: "2026-06-18"
 affected_range: "<1.6.59"
 fixed_versions:
@@ -28,6 +29,7 @@ affected_versions: "All versions before 1.6.59"
 not_impacted: "All versions starting from 1.6.59"
 solution: "Upgrade to version 1.6.59 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-57118"
 - "https://github.com/advisories/GHSA-x8cv-xmq7-p8xp"
 - "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-x8cv-xmq7-p8xp"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"

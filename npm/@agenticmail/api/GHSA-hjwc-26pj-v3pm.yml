@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-hjwc-26pj-v3pm"
 identifiers:
+- "CVE-2026-57494"
 - "GHSA-hjwc-26pj-v3pm"
 package_slug: "npm/@agenticmail/api"
 title: "AgenticMail: Cross-agent task authorization bypass in AgenticMail API"
@@ -13,7 +14,7 @@ description: "A low-privileged authenticated AgenticMail agent can enumerate ano
   can discover agent names through `GET /api/agenticmail/accounts/directory`, the
   task ID effectively stops being a secret capability. This turns the intended capability
   model into a cross-agent authorization bypass."
-date: "2026-06-18"
+date: "2026-07-20"
 pubdate: "2026-06-18"
 affected_range: "<0.9.64"
 fixed_versions:
@@ -22,6 +23,7 @@ affected_versions: "All versions before 0.9.64"
 not_impacted: "All versions starting from 0.9.64"
 solution: "Upgrade to version 0.9.64 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-57494"
 - "https://github.com/advisories/GHSA-hjwc-26pj-v3pm"
 - "https://github.com/agenticmail/agenticmail/security/advisories/GHSA-hjwc-26pj-v3pm"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"

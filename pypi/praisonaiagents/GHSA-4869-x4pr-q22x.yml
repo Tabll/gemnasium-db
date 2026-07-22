@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-4869-x4pr-q22x"
 identifiers:
+- "CVE-2026-57125"
 - "GHSA-4869-x4pr-q22x"
 package_slug: "pypi/praisonaiagents"
 title: "PraisonAI: Unauthenticated RCE via Jobs API + Approval Bypass "
@@ -10,7 +11,7 @@ description: "An unauthenticated attacker can execute arbitrary OS commands on a
   and a top-level\n`approve` field in the submitted YAML unconditionally bypasses
   the\n`@require_approval` safety decorator on dangerous tools such as `execute_command`.\n\n**Ecosystem:**
   pip | **Package:** `praisonai` | **Affected:** `<= 4.6.48` | **Patched:** *(none)*\n\n---"
-date: "2026-06-18"
+date: "2026-07-20"
 pubdate: "2026-06-18"
 affected_range: "<1.6.59"
 fixed_versions:
@@ -19,6 +20,7 @@ affected_versions: "All versions before 1.6.59"
 not_impacted: "All versions starting from 1.6.59"
 solution: "Upgrade to version 1.6.59 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-57125"
 - "https://github.com/advisories/GHSA-4869-x4pr-q22x"
 - "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-4869-x4pr-q22x"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"

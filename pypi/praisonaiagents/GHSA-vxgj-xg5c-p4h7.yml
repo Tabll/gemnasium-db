@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-vxgj-xg5c-p4h7"
 identifiers:
+- "CVE-2026-57126"
 - "GHSA-vxgj-xg5c-p4h7"
 package_slug: "pypi/praisonaiagents"
 title: "praisonaiagents: SSRF guard validates literal IPs only and never resolves
@@ -21,7 +22,7 @@ description: "The SSRF guard shared by PraisonAI's web tools (`SpiderTools._vali
   correct pattern already exists in the same package: `file_tools.py` resolves the
   host with `socket.getaddrinfo` and checks each resolved address before fetching.
   `spider_tools` / `mentions` do not."
-date: "2026-06-18"
+date: "2026-07-20"
 pubdate: "2026-06-18"
 affected_range: "<1.6.59"
 fixed_versions:
@@ -30,6 +31,7 @@ affected_versions: "All versions before 1.6.59"
 not_impacted: "All versions starting from 1.6.59"
 solution: "Upgrade to version 1.6.59 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-57126"
 - "https://github.com/advisories/GHSA-vxgj-xg5c-p4h7"
 - "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-vxgj-xg5c-p4h7"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:L/A:N"

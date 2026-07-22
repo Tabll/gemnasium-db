@@ -1,0 +1,43 @@
+---
+identifier: "GHSA-x8mg-6r4p-87pf"
+identifiers:
+- "GHSA-x8mg-6r4p-87pf"
+package_slug: "maven/com.arcadedb/arcadedb-server"
+title: "ArcadeDB has cross-database IDOR: /ts/*, /batch/*, Prometheus and Grafana
+  handlers bypass authorization"
+description: "About 14 HTTP handlers resolve the {database} path param and call getDatabase(...)
+  WITHOUT user.canAccessToDatabase(...) and without setting the engine principal,
+  because they extend AbstractServerHttpHandler directly instead of DatabaseAbstractHandler
+  (which holds the only per-database gate at DatabaseAbstractHandler.java:69,88-90).
+  Affected: PostBatchHandler:129, PostTimeSeriesWriteHandler:115, PostPrometheusWriteHandler:83,
+  PostTimeSeriesQueryHandler:69, GetTimeSeriesLatestHandler:58, PostGrafanaQueryHandler:69,
+  GetGrafanaHealthHandler:49, GetGrafanaMetadataHandler:52, GetPromQLQueryHandler:63,
+  GetPromQLQueryRangeHandler:71, GetPromQLLabelsHandler:56, GetPromQLLabelValuesHandler:62,
+  GetPromQLSeriesHandler:72, PostPrometheusReadHandler:85. The engine fallback is
+  also void: LocalDatabase.checkPermissionsOnDatabase:711 early-returns when getCurrentUser()==null.\n\nExploit:
+  a user authorized only for DB 'a' calls POST /api/v1/batch/b, POST /api/v1/ts/b/write,
+  GET /api/v1/ts/b/prom/api/v1/query, POST /api/v1/ts/b/query -> full read AND write
+  of DB 'b' (200 OK). The equivalent /api/v1/command/b correctly returns 403.\n\nFix:
+  re-parent these handlers to DatabaseAbstractHandler, or add a shared resolveAuthorizedDatabase()
+  choke point that enforces canAccessToDatabase and sets the engine principal before
+  getDatabase(...). Fail closed when the security context is absent."
+date: "2026-07-16"
+pubdate: "2026-07-16"
+affected_range: "[,26.7.2)"
+fixed_versions:
+- "26.7.2"
+affected_versions: "All versions before 26.7.2"
+not_impacted: "All versions starting from 26.7.2"
+solution: "Upgrade to version 26.7.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-x8mg-6r4p-87pf"
+- "https://github.com/ArcadeData/arcadedb/security/advisories/GHSA-x8mg-6r4p-87pf"
+- "https://github.com/ArcadeData/arcadedb/releases/tag/26.7.2"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N"
+uuid: "f81eb568-199f-4470-a402-7f0ec9cf8371"
+cwe_ids:
+- "CWE-200"
+- "CWE-285"
+- "CWE-937"
+- "CWE-1035"

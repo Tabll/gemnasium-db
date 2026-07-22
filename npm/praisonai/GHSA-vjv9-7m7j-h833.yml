@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-vjv9-7m7j-h833"
 identifiers:
+- "CVE-2026-57136"
 - "GHSA-vjv9-7m7j-h833"
 package_slug: "npm/praisonai"
 title: "npm PraisonAI SandboxExecutor allowedCommands bypass via shell chaining"
@@ -16,7 +17,7 @@ description: "The published npm package `praisonai` exports `SandboxExecutor`, `
   when an application, CLI workflow, or agent pipeline exposes sandbox command execution
   to lower-trust users, prompts, or model output.\n\nThe PoV is deterministic and
   local-only. It creates and reads only a temporary marker file."
-date: "2026-06-18"
+date: "2026-07-20"
 pubdate: "2026-06-18"
 affected_range: ">=1.2.3 <1.7.2"
 fixed_versions:
@@ -25,6 +26,7 @@ affected_versions: "All versions starting from 1.2.3 before 1.7.2"
 not_impacted: "All versions before 1.2.3, all versions starting from 1.7.2"
 solution: "Upgrade to version 1.7.2 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-57136"
 - "https://github.com/advisories/GHSA-vjv9-7m7j-h833"
 - "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-vjv9-7m7j-h833"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"

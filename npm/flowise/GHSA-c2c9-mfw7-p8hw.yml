@@ -13,7 +13,7 @@ description: "The `/api/v1/chatflows/apikey/:apikey` endpoint (whitelisted, acce
   read the full configuration (including flowData, chatbotConfig, system prompts,
   and node configurations) of chatflows from Workspace B, Workspace C, and all other
   workspaces, as long as those chatflows have no API key assigned."
-date: "2026-06-22"
+date: "2026-07-20"
 pubdate: "2026-05-20"
 affected_range: "<3.1.2"
 fixed_versions:
@@ -25,7 +25,8 @@ urls:
 - "https://nvd.nist.gov/vuln/detail/CVE-2026-56268"
 - "https://github.com/advisories/GHSA-c2c9-mfw7-p8hw"
 - "https://github.com/FlowiseAI/Flowise/security/advisories/GHSA-c2c9-mfw7-p8hw"
-cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N"
+- "https://www.vulncheck.com/advisories/flowise-cross-workspace-information-disclosure-via-chatflows-apikey-endpoint"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N"
 cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N"
 uuid: "c59dc304-82d5-42c4-9a11-e558f123ced9"
 cwe_ids:

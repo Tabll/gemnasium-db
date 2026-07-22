@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-p75f-6fp4-p57w"
 identifiers:
+- "CVE-2026-57124"
 - "GHSA-p75f-6fp4-p57w"
 package_slug: "pypi/praisonai"
 title: "PraisonAI: Missing Authentication for Critical Function and Improper Neutralization
@@ -13,7 +14,7 @@ description: "PraisonAI v4.6.48 exposes the PraisonAIUI MCP client management AP
   PraisonAI's hosted UI integration (`praisonai ui`, `praisonai ui agents`, `praisonai
   claw`, and any app using `praisonai.integration.host_app.create_host_app()` / `build_host_app()`).
   `praisonai ui` and related Typer UI commands bind to `0.0.0.0` by default."
-date: "2026-06-18"
+date: "2026-07-20"
 pubdate: "2026-06-18"
 affected_range: "<4.6.59"
 fixed_versions:
@@ -22,6 +23,7 @@ affected_versions: "All versions before 4.6.59"
 not_impacted: "All versions starting from 4.6.59"
 solution: "Upgrade to version 4.6.59 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-57124"
 - "https://github.com/advisories/GHSA-p75f-6fp4-p57w"
 - "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-p75f-6fp4-p57w"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"

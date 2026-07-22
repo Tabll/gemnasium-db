@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-vmf9-xx9w-86wx"
 identifiers:
+- "CVE-2026-57112"
 - "GHSA-vmf9-xx9w-86wx"
 package_slug: "pypi/praisonaiagents"
 title: "PraisonAI ToolsMCPServer legacy SSE transport accepts attacker Host/Origin
@@ -19,7 +20,7 @@ description: "`praisonaiagents.mcp.ToolsMCPServer.run_sse()` builds a Starlette 
   same attacker `Origin` is rejected by PraisonAI's current Streamable HTTP\ntransport
   with HTTP 403. The vulnerability is therefore a sibling transport\nguard gap in
   the legacy SSE wrapper, not intended behavior."
-date: "2026-06-18"
+date: "2026-07-20"
 pubdate: "2026-06-18"
 affected_range: ">=0.6.0,<1.6.59"
 fixed_versions:
@@ -28,6 +29,7 @@ affected_versions: "All versions starting from 0.6.0 before 1.6.59"
 not_impacted: "All versions before 0.6.0, all versions starting from 1.6.59"
 solution: "Upgrade to version 1.6.59 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-57112"
 - "https://github.com/advisories/GHSA-vmf9-xx9w-86wx"
 - "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-vmf9-xx9w-86wx"
 cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:H/A:H"

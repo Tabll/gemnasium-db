@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-47qp-hqvx-6r3f"
 identifiers:
+- "CVE-2026-56740"
 - "GHSA-47qp-hqvx-6r3f"
 package_slug: "maven/org.jline/jline-remote-telnet"
 title: "JLine3 Telnet server: Unauthenticated Remote Memory Exhaustion via Unbounded
@@ -11,7 +12,7 @@ description: "The JLine3 Telnet server (`remote-telnet` module) does not limit t
   unique\nvariable pairs before sending the terminating IAC SE byte, exhausting JVM
   heap\nmemory and causing an OutOfMemoryError (denial of service). Approximately
   3–4 MB of\nnetwork traffic is sufficient to consume a 512 MB JVM heap."
-date: "2026-06-18"
+date: "2026-07-20"
 pubdate: "2026-06-18"
 affected_range: "[,4.2.1)"
 fixed_versions:
@@ -20,8 +21,17 @@ affected_versions: "All versions before 4.2.1"
 not_impacted: "All versions starting from 4.2.1"
 solution: "Upgrade to version 4.2.1 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-56740"
 - "https://github.com/advisories/GHSA-47qp-hqvx-6r3f"
 - "https://github.com/jline/jline3/security/advisories/GHSA-47qp-hqvx-6r3f"
+- "https://github.com/jline/jline3/pull/2000"
+- "https://github.com/jline/jline3/pull/2001"
+- "https://github.com/jline/jline3/commit/0389f0ee6d0375901b602671ad5dafd4d1d4ee09"
+- "https://github.com/jline/jline3/commit/4ee3a73849ffb9a85ec748e4e8cd8f6d81f84f40"
+- "https://github.com/jline/jline3/commit/934f09e6128cee33c2b13d42b6e859c1ee2d194b"
+- "https://github.com/jline/jline3/releases/tag/4.0.16"
+- "https://github.com/jline/jline3/releases/tag/4.2.1"
+- "https://github.com/jline/jline3/releases/tag/jline-3.30.14"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
 uuid: "d5e7e396-3ebf-4847-8437-7efc4d3f00f9"
 cwe_ids:

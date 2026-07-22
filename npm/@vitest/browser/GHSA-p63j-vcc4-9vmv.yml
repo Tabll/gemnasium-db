@@ -1,0 +1,54 @@
+---
+identifier: "GHSA-p63j-vcc4-9vmv"
+identifiers:
+- "GHSA-p63j-vcc4-9vmv"
+package_slug: "npm/@vitest/browser"
+title: "@vitest/browser: Browser Mode provider commands bypass the file-access permission
+  gate"
+description: "Browser Mode exposes a set of built-in \"commands\" that run on the
+  Node.js side of the test runner and can touch the local filesystem (taking screenshots,
+  managing Playwright traces, uploading files for `<input type=\"file\">`, comparing
+  screenshots).\n\nSeveral of these commands accept a file path from the browser and
+  act on it without checking the `allowWrite` permission gate and without confining
+  the path to the project directory. A client that can reach the Browser Mode API
+  can therefore read, create, overwrite, or delete files anywhere the Vitest process
+  can access, even when `allowWrite` is `false`.\n\nThis matters most when the Browser
+  Mode API is exposed to the network (for example `test.api.host` is set, or the dev
+  server is reachable from another machine or origin). In that configuration `allowWrite`
+  defaults to `false` precisely to block file access, and these commands bypass that
+  protection. On a default localhost-only setup with trusted test code, there is no
+  untrusted party in a position to exploit it. The gap still matters wherever you
+  rely on `allowWrite: false` to contain untrusted test code, because these commands
+  ignore that flag."
+date: "2026-07-21"
+pubdate: "2026-07-21"
+affected_range: "<3.2.7||>=4.0.0 <4.1.10||>=5.0.0-beta.1 <5.0.0-beta.6"
+fixed_versions:
+- "3.2.7"
+- "4.1.10"
+- "5.0.0-beta.6"
+affected_versions: "All versions before 3.2.7, all versions starting from 4.0.0 before
+  4.1.10, all versions starting from 5.0.0-beta.1 before 5.0.0-beta.6"
+not_impacted: "All versions starting from 3.2.7 before 4.0.0, all versions starting
+  from 4.1.10 before 5.0.0-beta.1, all versions starting from 5.0.0-beta.6"
+solution: "Upgrade to versions 3.2.7, 4.1.10, 5.0.0-beta.6 or above."
+urls:
+- "https://github.com/advisories/GHSA-p63j-vcc4-9vmv"
+- "https://github.com/vitest-dev/vitest/security/advisories/GHSA-p63j-vcc4-9vmv"
+- "https://github.com/vitest-dev/vitest/pull/10674"
+- "https://github.com/vitest-dev/vitest/pull/10679"
+- "https://github.com/vitest-dev/vitest/pull/10680"
+- "https://github.com/vitest-dev/vitest/commit/33f96a145ef09ca6a43b4e555eb273e64a87be23"
+- "https://github.com/vitest-dev/vitest/commit/5c18dd267ff7f47f24cab2f615a16b37d90feb7f"
+- "https://github.com/vitest-dev/vitest/commit/b795e36b34969bec50b47a9f29d26f799a6a04fb"
+- "https://github.com/vitest-dev/vitest/releases/tag/v3.2.7"
+- "https://github.com/vitest-dev/vitest/releases/tag/v4.1.10"
+- "https://github.com/vitest-dev/vitest/releases/tag/v5.0.0-beta.6"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:L"
+uuid: "593d61fa-d028-49f2-b592-9ef67d3be12b"
+cwe_ids:
+- "CWE-22"
+- "CWE-552"
+- "CWE-862"
+- "CWE-937"
+- "CWE-1035"

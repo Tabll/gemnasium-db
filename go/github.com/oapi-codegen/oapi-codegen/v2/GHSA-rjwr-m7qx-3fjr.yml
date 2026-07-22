@@ -1,0 +1,42 @@
+---
+identifier: "GHSA-rjwr-m7qx-3fjr"
+identifiers:
+- "GHSA-rjwr-m7qx-3fjr"
+package_slug: "go/github.com/oapi-codegen/oapi-codegen/v2"
+title: "oapi-codegen: OpenAPI Server Description Escapes Generated Go Comment and
+  Injects Executable Code"
+description: "The vulnerability in oapi-codegen seems to be similar with CVE-2026-22785,
+  \ which is a generated-code injection issue where untrusted OpenAPI `summary` text
+  is embedded into generated TypeScript MCP server source without proper escaping.
+  `oapi-codegen` has a similar vulnerability in its server URL generator: untrusted
+  OpenAPI `servers[].description` text is inserted into a generated Go line comment
+  without normalizing embedded newlines. A crafted description can break out of the
+  comment, add imports through `goimports`, and emit executable Go declarations into
+  the generated package.\n\n> [!NOTE]\n> A vulnerability like this requires that it
+  is missed in code review **and** that you then call the malicious method.\n>\n>
+  Using an `init()` function could be enough to not require a direct call to the code,
+  and instead rely on you importing the package, but either way, code review should
+  be performed before any `oapi-codegen` generated code is executed.\n>\n> We **strongly
+  recommend** all users to be reviewing changes to their generated code before they
+  execute anything within it, to protect against supply chain attacks or malicious
+  injected code.\n>\n> This is also why we recommend `oapi-codegen` generated code
+  is committed to source control."
+date: "2026-07-17"
+pubdate: "2026-07-17"
+affected_range: "<2.7.1"
+fixed_versions:
+- "2.7.1"
+affected_versions: "All versions before 2.7.1"
+not_impacted: "All versions starting from 2.7.1"
+solution: "Upgrade to version 2.7.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-rjwr-m7qx-3fjr"
+- "https://github.com/oapi-codegen/oapi-codegen/security/advisories/GHSA-rjwr-m7qx-3fjr"
+- "https://github.com/oapi-codegen/oapi-codegen/commit/19c6282e9a6fb84b51aa92b12fad1f0b7e5f5ef6"
+- "https://github.com/oapi-codegen/oapi-codegen/releases/tag/v2.7.1"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N"
+uuid: "ba660d7d-f6e2-411d-a049-e6b3148909cd"
+cwe_ids:
+- "CWE-74"
+- "CWE-937"
+- "CWE-1035"

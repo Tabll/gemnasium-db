@@ -7,7 +7,7 @@ package_slug: "pypi/picklescan"
 title: "Picklescan has a missing detection when calling built-in python idlelib.debugobj.ObjectTreeItem"
 description: "Using idlelib.debugobj.ObjectTreeItem.SetText, which is a built-in python
   library function to execute remote pickle file."
-date: "2026-06-24"
+date: "2026-07-21"
 pubdate: "2025-08-26"
 affected_range: "<0.0.29"
 fixed_versions:
@@ -20,7 +20,14 @@ urls:
 - "https://github.com/advisories/GHSA-3vg9-h568-4w9m"
 - "https://github.com/mmaitre314/picklescan/security/advisories/GHSA-3vg9-h568-4w9m"
 - "https://github.com/mmaitre314/picklescan/commit/aecd11be98702caa9ba9b12189d91ad596a36114"
+- "https://github.com/mmaitre314/picklescan"
+- "https://github.com/pypa/advisory-database/tree/main/vulns/picklescan/PYSEC-2026-1781.yaml"
+- "https://pypi.org/project/picklescan"
+- "https://www.vulncheck.com/advisories/picklescan-remote-code-execution-via-idlelib-debugobj-objecttreeitem-settext"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N"
 uuid: "a507cbf2-4f49-48a5-b1f3-43b1c1e97ffc"
 cwe_ids:
+- "CWE-502"
 - "CWE-937"
 - "CWE-1035"

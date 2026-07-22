@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-fc26-m9pf-v56q"
 identifiers:
+- "CVE-2026-56837"
 - "GHSA-fc26-m9pf-v56q"
 package_slug: "pypi/praisonai"
 title: "PraisonAI LinearBot processes unsigned webhooks when LINEAR_WEBHOOK_SECRET
@@ -20,7 +21,7 @@ description: "PraisonAI's LinearBot starts a public webhook listener on `0.0.0.0
   and bad signatures both return `401` and do not\ninvoke the agent;\n- secret configured
   with valid HMAC: request returns `200` and invokes the\nagent, proving the control
   path still works."
-date: "2026-06-18"
+date: "2026-07-20"
 pubdate: "2026-06-18"
 affected_range: ">=4.6.56,<4.6.59"
 fixed_versions:
@@ -29,6 +30,7 @@ affected_versions: "All versions starting from 4.6.56 before 4.6.59"
 not_impacted: "All versions before 4.6.56, all versions starting from 4.6.59"
 solution: "Upgrade to version 4.6.59 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-56837"
 - "https://github.com/advisories/GHSA-fc26-m9pf-v56q"
 - "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-fc26-m9pf-v56q"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:H/A:L"

@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-f44v-7qgw-9gh9"
 identifiers:
+- "CVE-2026-57113"
 - "GHSA-f44v-7qgw-9gh9"
 package_slug: "pypi/praisonai"
 title: "PraisonAI GitHub template cache path traversal allows outside-cache file write
@@ -17,7 +18,7 @@ description: "PraisonAI's template loader accepts GitHub template URIs with refs
   is distinct from the old template Zip Slip advisory. No malicious archive\nmember
   is needed, and the PoV disables network access entirely. The bug is in\ncache-key
   construction for GitHub template URIs."
-date: "2026-06-18"
+date: "2026-07-20"
 pubdate: "2026-06-18"
 affected_range: ">=2.6.0,<4.6.59"
 fixed_versions:
@@ -26,6 +27,7 @@ affected_versions: "All versions starting from 2.6.0 before 4.6.59"
 not_impacted: "All versions before 2.6.0, all versions starting from 4.6.59"
 solution: "Upgrade to version 4.6.59 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-57113"
 - "https://github.com/advisories/GHSA-f44v-7qgw-9gh9"
 - "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-f44v-7qgw-9gh9"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:H"

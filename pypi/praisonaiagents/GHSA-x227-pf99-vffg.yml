@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-x227-pf99-vffg"
 identifiers:
+- "CVE-2026-57123"
 - "GHSA-x227-pf99-vffg"
 package_slug: "pypi/praisonaiagents"
 title: "PraisonAI: MCP SSE transport binds 0.0.0.0 with no authentication and no Origin
@@ -34,7 +35,7 @@ description: "The MCP SSE server started via ToolsMCPServer.run_sse() / launch_t
   gate)\nCheck 3 - is_valid_origin / is_potential_dns_rebinding / validate_auth_header
   / SecurityConfig\nnever called by any transport  -> DEAD CODE\nLive exploitation
   against a running server:\ncurl -N http://VICTIM:8080/sse"
-date: "2026-06-18"
+date: "2026-07-20"
 pubdate: "2026-06-18"
 affected_range: "<1.6.59"
 fixed_versions:
@@ -43,6 +44,7 @@ affected_versions: "All versions before 1.6.59"
 not_impacted: "All versions starting from 1.6.59"
 solution: "Upgrade to version 1.6.59 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-57123"
 - "https://github.com/advisories/GHSA-x227-pf99-vffg"
 - "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-x227-pf99-vffg"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"

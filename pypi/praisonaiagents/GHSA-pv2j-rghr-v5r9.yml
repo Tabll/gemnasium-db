@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-pv2j-rghr-v5r9"
 identifiers:
+- "CVE-2026-57120"
 - "GHSA-pv2j-rghr-v5r9"
 package_slug: "pypi/praisonaiagents"
 title: "PraisonAI: execute_code sandbox bypass: str.format C-level attribute access
@@ -22,7 +23,7 @@ description: "The `execute_code` tool's subprocess sandbox advertises a three-la
   it. `format`/`format_map` are also absent from `_SANDBOX_BLOCKED_CALLS` (`python_tools.py:56`).\n\nCombined,
   this yields an arbitrary read primitive over every blocklisted attribute (`__class__`,
   `__qualname__`, `__bases__`, `__base__`, function `__globals__`, `__dict__`, …)."
-date: "2026-06-18"
+date: "2026-07-20"
 pubdate: "2026-06-18"
 affected_range: "<1.6.59"
 fixed_versions:
@@ -31,6 +32,7 @@ affected_versions: "All versions before 1.6.59"
 not_impacted: "All versions starting from 1.6.59"
 solution: "Upgrade to version 1.6.59 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-57120"
 - "https://github.com/advisories/GHSA-pv2j-rghr-v5r9"
 - "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-pv2j-rghr-v5r9"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"

@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-9c83-rr99-vfwj"
 identifiers:
+- "CVE-2026-57442"
 - "GHSA-9c83-rr99-vfwj"
 package_slug: "npm/@bitbonsai/mcpvault"
 title: "MCPVault: PathFilter restricted directories (.git/.obsidian/node_modules)
@@ -15,7 +16,7 @@ description: "PathFilter's deny-list glob patterns are anchored, so `.git`, `.ob
   to pollute the tag index (#128, the public symptom). Fixed in 0.11.5 by denying
   these restricted names at any path depth (matched case-insensitively as any path
   segment)."
-date: "2026-06-19"
+date: "2026-07-20"
 pubdate: "2026-06-19"
 affected_range: "<0.11.5"
 fixed_versions:
@@ -24,6 +25,7 @@ affected_versions: "All versions before 0.11.5"
 not_impacted: "All versions starting from 0.11.5"
 solution: "Upgrade to version 0.11.5 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-57442"
 - "https://github.com/advisories/GHSA-9c83-rr99-vfwj"
 - "https://github.com/bitbonsai/mcpvault/security/advisories/GHSA-9c83-rr99-vfwj"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"

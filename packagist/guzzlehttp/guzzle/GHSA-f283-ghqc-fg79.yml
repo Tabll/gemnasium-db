@@ -1,0 +1,49 @@
+---
+identifier: "GHSA-f283-ghqc-fg79"
+identifiers:
+- "GHSA-f283-ghqc-fg79"
+package_slug: "packagist/guzzlehttp/guzzle"
+title: "Guzzle: Unbounded response cookies risk denial of service"
+description: "In affected versions, Guzzle's built-in `CookieJar` accepts any number
+  of `Set-Cookie` header fields from one response, with no limit on the size of each
+  field. When a later request matches the stored cookies, Guzzle places every match
+  into one generated `Cookie` header without limiting the number of cookies or the
+  total header length.\n\nA malicious or compromised server can therefore return many
+  large cookies, causing Guzzle to store attacker-controlled data in memory and copy
+  it into later request headers. This can increase memory use and processing time.
+  It can also make later requests fail when the generated header exceeds a limit in
+  a handler, HTTP implementation, proxy, or destination server. A server on one sibling
+  host, such as `attacker.example.com`, can also set parent-domain cookies that are
+  later selected for another sibling, such as `service.example.com`. The denial can
+  therefore affect a different service that uses the same jar.\n\nAn application is
+  affected when it enables the built-in cookie support, receives an attacker-controlled
+  response, and retains or reuses the jar. The issue affects both built-in handlers
+  because Guzzle manages these cookies itself instead of using libcurl's native cookie
+  engine. cURL addressed a similar denial-of-service issue in CVE-2022-32205 by limiting
+  the cookies it accepts and sends, but those native limits do not protect Guzzle's
+  separate jar. Applications that do not use cookies, use separate jars for untrusted
+  origins, or use a third-party `CookieJarInterface` with suitable limits are not
+  affected by this behavior. The demonstrated direct impact is limited to availability.
+  The patch does not impose a lifetime limit on a jar built up over an unlimited number
+  of responses or populated directly by application code."
+date: "2026-07-20"
+pubdate: "2026-07-20"
+affected_range: "<7.15.1"
+fixed_versions:
+- "7.15.1"
+affected_versions: "All versions before 7.15.1"
+not_impacted: "All versions starting from 7.15.1"
+solution: "Upgrade to version 7.15.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-f283-ghqc-fg79"
+- "https://github.com/guzzle/guzzle/security/advisories/GHSA-f283-ghqc-fg79"
+- "https://github.com/guzzle/guzzle/pull/3901"
+- "https://github.com/guzzle/guzzle/commit/7b68220d6543f6f80fe62e633361fc9d4ead14d4"
+- "https://github.com/guzzle/guzzle/releases/tag/7.15.1"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+uuid: "03a58b21-ece4-403b-aabc-f0963d37ab78"
+cwe_ids:
+- "CWE-770"
+- "CWE-937"
+- "CWE-1035"
+- "CWE-1325"

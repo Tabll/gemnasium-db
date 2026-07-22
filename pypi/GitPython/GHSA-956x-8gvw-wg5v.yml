@@ -1,0 +1,53 @@
+---
+identifier: "GHSA-956x-8gvw-wg5v"
+identifiers:
+- "GHSA-956x-8gvw-wg5v"
+package_slug: "pypi/GitPython"
+title: "GitPython: command injection via unguarded Git options in `Repo.archive()`,
+  `git.ls_remote()`, and arbitrary file overwrite via `Repo.iter_commits()` / `Repo.blame()`"
+description: "GitPython spawns the real `git` binary with an argument vector built
+  from caller-supplied values. To prevent argument injection, GitPython maintains
+  denylists of \"unsafe\" Git options (`--upload-pack`, `--receive-pack`, `--exec`,
+  `-c`, `--config`, …) that can be abused to run arbitrary commands, and enforces
+  them with `Git.check_unsafe_options()`.\n\nThat enforcement is only wired into the
+  **network** commands — `clone_from`, `Remote.fetch`, `Remote.pull`, `Remote.push`.
+  Several other public APIs that also forward caller-controlled values into the `git`
+  argv have **no guard at all**:\n\n1. **`Repo.archive(ostream, treeish=None, prefix=None,
+  **kwargs)`** forwards `**kwargs` verbatim into `git archive`. An attacker-influenced
+  options mapping such as `{\"remote\": \".\", \"exec\": \"<cmd>\"}` becomes `git
+  archive --remote=. --exec=<cmd> -- <treeish>`, and `git archive --remote=<local
+  repo>` invokes `git-upload-archive` whose path is overridden by `--exec` → **arbitrary
+  command execution under default Git configuration** (no `protocol.ext.allow` needed).\n\n2.
+  **`repo.git.ls_remote(<url>, upload_pack=\"<cmd>\")`** (and the dynamic-command
+  builder generally) turns the `upload_pack` kwarg into `--upload-pack=<cmd>` with
+  no guard → **arbitrary command execution**.\n\n3. **`Repo.iter_commits(rev)`** and
+  **`Repo.blame(rev, file)`** place the caller's `rev` value into the argv *before*
+  the `--` end-of-options separator and apply no leading-dash check. A benign-looking
+  ref value such as `--output=/path/to/file` is parsed by `git rev-list` / `git blame`
+  as the `--output` option, which **opens and truncates an arbitrary file** before
+  Git even validates the revision → arbitrary file clobber (integrity/availability;
+  can destroy keys, configs, lockfiles, or be aimed at files the host later sources).\n\nThe
+  first two are direct code execution; the third is an arbitrary file-overwrite primitive.
+  All share one root cause: the `check_unsafe_options` / end-of-options discipline
+  that GitPython applies to clone/fetch/pull/push was never extended to these sinks."
+date: "2026-07-21"
+pubdate: "2026-07-21"
+affected_range: "<3.1.51"
+fixed_versions:
+- "3.1.51"
+affected_versions: "All versions before 3.1.51"
+not_impacted: "All versions starting from 3.1.51"
+solution: "Upgrade to version 3.1.51 or above."
+urls:
+- "https://github.com/advisories/GHSA-956x-8gvw-wg5v"
+- "https://github.com/gitpython-developers/GitPython/security/advisories/GHSA-956x-8gvw-wg5v"
+- "https://github.com/gitpython-developers/GitPython/pull/2163"
+- "https://github.com/gitpython-developers/GitPython/commit/701ce32fe5ba8cb622c0e0342a376a6beb47d738"
+- "https://github.com/gitpython-developers/GitPython/releases/tag/3.1.51"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+uuid: "1a4c2f35-f997-47ae-a5df-d6b5246676fb"
+cwe_ids:
+- "CWE-77"
+- "CWE-88"
+- "CWE-937"
+- "CWE-1035"

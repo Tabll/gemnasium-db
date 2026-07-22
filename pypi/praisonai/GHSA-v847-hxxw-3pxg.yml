@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-v847-hxxw-3pxg"
 identifiers:
+- "CVE-2026-56838"
 - "GHSA-v847-hxxw-3pxg"
 package_slug: "pypi/praisonai"
 title: "PraisonAI recipe.run_stream skips dangerous-tool policy enforcement"
@@ -13,7 +14,7 @@ description: "PraisonAI recipe execution blocks default-denied dangerous tools u
   but reaches the\nexecution engine through `recipe.run_stream()` with\n`allow_dangerous_tools=False`.\n\nThe
   local PoV uses a harmless `printf` canary, explicitly unsets\n`PRAISONAI_AUTO_APPROVE`,
   and avoids network access."
-date: "2026-06-18"
+date: "2026-07-20"
 pubdate: "2026-06-18"
 affected_range: ">=4.5.87,<4.6.59"
 fixed_versions:
@@ -22,6 +23,7 @@ affected_versions: "All versions starting from 4.5.87 before 4.6.59"
 not_impacted: "All versions before 4.5.87, all versions starting from 4.6.59"
 solution: "Upgrade to version 4.6.59 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-56838"
 - "https://github.com/advisories/GHSA-v847-hxxw-3pxg"
 - "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-v847-hxxw-3pxg"
 cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"

@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-9mqv-5hh9-4cgg"
+identifiers:
+- "GHSA-9mqv-5hh9-4cgg"
+package_slug: "npm/@hono/node-server"
+title: "Node.js Adapter for Hono: Unauthenticated memory-leak DoS via aborted WebSocket
+  handshake"
+description: "A WebSocket upgrade request to an `upgradeWebSocket` route with a missing
+  or malformed `Sec-WebSocket-Key` header leaks memory permanently. The request's
+  `IncomingMessage` is retained in an internal map and a pending promise is never
+  settled, even though no connection is established. Since the route is reachable
+  pre-handshake without authentication, an unauthenticated attacker can flood it to
+  gradually exhaust memory."
+date: "2026-07-21"
+pubdate: "2026-07-21"
+affected_range: ">=2.0.0 <2.0.10"
+fixed_versions:
+- "2.0.10"
+affected_versions: "All versions starting from 2.0.0 before 2.0.10"
+not_impacted: "All versions before 2.0.0, all versions starting from 2.0.10"
+solution: "Upgrade to version 2.0.10 or above."
+urls:
+- "https://github.com/advisories/GHSA-9mqv-5hh9-4cgg"
+- "https://github.com/honojs/node-server/security/advisories/GHSA-9mqv-5hh9-4cgg"
+- "https://github.com/honojs/node-server/commit/3a21938c418340e980cb7ffa88e78369f78392d1"
+- "https://github.com/honojs/node-server/releases/tag/v2.0.10"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+uuid: "1f60096b-b142-49b8-ac07-e92ef14c3c4c"
+cwe_ids:
+- "CWE-401"
+- "CWE-770"
+- "CWE-937"
+- "CWE-1035"

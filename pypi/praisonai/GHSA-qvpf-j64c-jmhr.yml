@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-qvpf-j64c-jmhr"
 identifiers:
+- "CVE-2026-56835"
 - "GHSA-qvpf-j64c-jmhr"
 package_slug: "pypi/praisonai"
 title: "PraisonAI Slack app_mention bypasses configured user/channel authorization"
@@ -15,7 +16,7 @@ description: "PraisonAI's Slack bot applies its configured `allowed_users`,\n`al
   as a distinct event type rather than a `message.*` event, so\ndeployments subscribed
   to app mentions can route unauthorized sender input\naround the guarded message
   path."
-date: "2026-06-18"
+date: "2026-07-20"
 pubdate: "2026-06-18"
 affected_range: ">=3.11.0,<4.6.59"
 fixed_versions:
@@ -24,6 +25,7 @@ affected_versions: "All versions starting from 3.11.0 before 4.6.59"
 not_impacted: "All versions before 3.11.0, all versions starting from 4.6.59"
 solution: "Upgrade to version 4.6.59 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-56835"
 - "https://github.com/advisories/GHSA-qvpf-j64c-jmhr"
 - "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-qvpf-j64c-jmhr"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:L"

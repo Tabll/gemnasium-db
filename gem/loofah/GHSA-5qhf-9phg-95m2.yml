@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-5qhf-9phg-95m2"
+identifiers:
+- "GHSA-5qhf-9phg-95m2"
+package_slug: "gem/loofah"
+title: "Loofah `allowed_uri?` does not detect `javascript:` URIs split by numeric
+  character references without semicolons"
+description: "`Loofah::HTML5::Scrub.allowed_uri?` does not correctly reject `javascript:`
+  or `vbscript:` URIs when the scheme is split by a numeric character reference that
+  has no trailing semicolon. A browser decodes such references and resolves the URL
+  to an executable `javascript:` scheme, while `allowed_uri?` reports it safe."
+date: "2026-07-21"
+pubdate: "2026-07-21"
+affected_range: ">=2.25.0 <2.25.2"
+fixed_versions:
+- "2.25.2"
+affected_versions: "All versions starting from 2.25.0 before 2.25.2"
+not_impacted: "All versions before 2.25.0, all versions starting from 2.25.2"
+solution: "Upgrade to version 2.25.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-5qhf-9phg-95m2"
+- "https://github.com/flavorjones/loofah/security/advisories/GHSA-5qhf-9phg-95m2"
+- "https://github.com/flavorjones/loofah/commit/f1be9d893b5a8dd79240441a912d8897e74c38c0"
+- "https://github.com/flavorjones/loofah/releases/tag/v2.25.2"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:H/AT:N/PR:L/UI:N/VC:N/VI:N/VA:N/SC:L/SI:L/SA:N"
+uuid: "e2939211-8992-450e-94b4-371858d70f82"
+cwe_ids:
+- "CWE-79"
+- "CWE-184"
+- "CWE-937"
+- "CWE-1035"

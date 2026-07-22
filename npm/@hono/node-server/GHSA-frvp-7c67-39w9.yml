@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-frvp-7c67-39w9"
+identifiers:
+- "GHSA-frvp-7c67-39w9"
+package_slug: "npm/@hono/node-server"
+title: "Node.js Adapter for Hono: Path traversal in `serve-static` on Windows via
+  encoded backslash (`%5C`)"
+description: "On Windows hosts, an encoded backslash (`%5C`) in the request path decodes
+  to `\\`, which the Windows path resolver treats as a separator. `serve-static` then
+  resolves a single URL segment such as `admin\\secret.txt` into a nested file under
+  the root and serves it, letting an attacker read static files meant to be protected
+  behind prefix-mounted middleware. Directory escape (`..`) remains blocked."
+date: "2026-07-21"
+pubdate: "2026-07-21"
+affected_range: "<2.0.5"
+fixed_versions:
+- "2.0.5"
+affected_versions: "All versions before 2.0.5"
+not_impacted: "All versions starting from 2.0.5"
+solution: "Upgrade to version 2.0.5 or above."
+urls:
+- "https://github.com/advisories/GHSA-frvp-7c67-39w9"
+- "https://github.com/honojs/node-server/security/advisories/GHSA-frvp-7c67-39w9"
+- "https://github.com/honojs/node-server/commit/cd076e117cfe4cb8d31f9eb11d2e8f38a6cb8faf"
+- "https://github.com/honojs/node-server/releases/tag/v2.0.5"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N"
+uuid: "86a0338c-ee16-4816-9afc-0f4c529a2c2c"
+cwe_ids:
+- "CWE-22"
+- "CWE-937"
+- "CWE-1035"

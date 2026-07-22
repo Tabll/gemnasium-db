@@ -9,7 +9,7 @@ description: "**Detection Method:** Kolega.dev Deep Code Scan\n\n| Attribute | V
   |\n|---|---|\n| Location | packages/server/src/enterprise/utils/tempTokenUtils.ts:31-34
   |\n| Practical Exploitability | Medium |\n| Developer Approver | faizan@kolega.ai
   |"
-date: "2026-06-24"
+date: "2026-07-20"
 pubdate: "2026-04-16"
 affected_range: "<3.1.0"
 fixed_versions:
@@ -21,7 +21,9 @@ urls:
 - "https://nvd.nist.gov/vuln/detail/CVE-2026-56269"
 - "https://github.com/advisories/GHSA-m7mq-85xj-9x33"
 - "https://github.com/FlowiseAI/Flowise/security/advisories/GHSA-m7mq-85xj-9x33"
+- "https://www.vulncheck.com/advisories/flowise-weak-default-token-hash-secret-in-jwt-token-encryption"
 cvss_v3: "CVSS:3.0/AV:L/AC:H/PR:H/UI:R/S:U/C:H/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:L/AC:H/AT:N/PR:H/UI:A/VC:H/VI:L/VA:N/SC:N/SI:N/SA:N"
 uuid: "10a7977a-c8e4-4435-b06e-16839226aa50"
 cwe_ids:
 - "CWE-798"

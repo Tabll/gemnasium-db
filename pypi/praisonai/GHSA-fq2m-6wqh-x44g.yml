@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-fq2m-6wqh-x44g"
 identifiers:
+- "CVE-2026-57131"
 - "GHSA-fq2m-6wqh-x44g"
 package_slug: "pypi/praisonai"
 title: "PraisonAI: Jobs API exposes agent-execution endpoints with no authentication "
@@ -215,7 +216,7 @@ description: "# praisonai: Jobs API exposes agent-execution endpoints with no au
   endpoint returns 401/403 — fully unauthenticated agent-execution API\n```\n\n##
   Credit\n\nKai Aizen — SnailSploit (@SnailSploit). Adversarial & Offensive Security
   Research."
-date: "2026-06-18"
+date: "2026-07-20"
 pubdate: "2026-06-18"
 affected_range: "<4.6.59"
 fixed_versions:
@@ -224,6 +225,7 @@ affected_versions: "All versions before 4.6.59"
 not_impacted: "All versions starting from 4.6.59"
 solution: "Upgrade to version 4.6.59 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-57131"
 - "https://github.com/advisories/GHSA-fq2m-6wqh-x44g"
 - "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-fq2m-6wqh-x44g"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"

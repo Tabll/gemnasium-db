@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-6h9p-93hq-q7h6"
 identifiers:
+- "CVE-2026-57115"
 - "GHSA-6h9p-93hq-q7h6"
 package_slug: "pypi/praisonaiagents"
 title: "PraisonAI: SpiderTools redirect-target SSRF protection bypass"
@@ -12,7 +13,7 @@ description: "`SpiderTools.scrape_page()` validates the initial URL and rejects 
   and have the redirected response body parsed\nand returned by `scrape_page()`.\n\nThe
   same sink is used by `extract_links()`, `crawl()`, and `extract_text()`\nthrough
   their calls to `scrape_page()`."
-date: "2026-06-18"
+date: "2026-07-20"
 pubdate: "2026-06-18"
 affected_range: "<1.6.59"
 fixed_versions:
@@ -21,6 +22,7 @@ affected_versions: "All versions before 1.6.59"
 not_impacted: "All versions starting from 1.6.59"
 solution: "Upgrade to version 1.6.59 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-57115"
 - "https://github.com/advisories/GHSA-6h9p-93hq-q7h6"
 - "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-6h9p-93hq-q7h6"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N"

@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-2r2c-cx56-8933"
 identifiers:
+- "CVE-2026-56741"
 - "GHSA-2r2c-cx56-8933"
 package_slug: "maven/org.jline/jline-remote-telnet"
 title: "JLine3 Telnet server: Unauthenticated Remote DoS via Unbounded Telnet NAWS
@@ -10,7 +11,7 @@ description: "The JLine3 Telnet server (`remote-telnet` module) does not apply a
   Window Size) option.\nAn unauthenticated remote attacker can send a NAWS subnegotiation
   advertising a\n65535×65535 terminal and repeatedly alternate values to trigger continuous,
   expensive\nrendering work on the server, causing CPU exhaustion and denial of service."
-date: "2026-06-18"
+date: "2026-07-20"
 pubdate: "2026-06-18"
 affected_range: "[,4.2.1)"
 fixed_versions:
@@ -19,8 +20,15 @@ affected_versions: "All versions before 4.2.1"
 not_impacted: "All versions starting from 4.2.1"
 solution: "Upgrade to version 4.2.1 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-56741"
 - "https://github.com/advisories/GHSA-2r2c-cx56-8933"
 - "https://github.com/jline/jline3/security/advisories/GHSA-2r2c-cx56-8933"
+- "https://github.com/jline/jline3/pull/2000"
+- "https://github.com/jline/jline3/commit/3ea9cad8699714dc072fade29d36be0d1e23d708"
+- "https://github.com/jline/jline3/commit/733eb353dca7b0ea0252e724445b6defa29c393e"
+- "https://github.com/jline/jline3/commit/86b7ba7801988aadb1a67555629522a71d603bd3"
+- "https://github.com/jline/jline3/releases/tag/4.0.16"
+- "https://github.com/jline/jline3/releases/tag/4.2.1"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
 uuid: "643b933f-83fc-4b1a-8d5f-36f597099b6f"
 cwe_ids:

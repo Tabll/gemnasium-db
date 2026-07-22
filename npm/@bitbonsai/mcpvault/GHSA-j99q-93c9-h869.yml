@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-j99q-93c9-h869"
 identifiers:
+- "CVE-2026-57441"
 - "GHSA-j99q-93c9-h869"
 package_slug: "npm/@bitbonsai/mcpvault"
 title: "MCPVault: PathFilter restricted-directory deny-list bypass via case and trailing
@@ -13,7 +14,7 @@ description: "On case-insensitive filesystems (macOS, Windows), PathFilter compi
   (read/write/move/search) and `isAllowedForListing`. Vault-root `..` containment
   is NOT affected. Fixed in 0.11.4 by case-insensitive matching plus per-segment canonicalization
   before the deny-list check. Reported privately by novice-22."
-date: "2026-06-18"
+date: "2026-07-20"
 pubdate: "2026-06-18"
 affected_range: "<0.11.4"
 fixed_versions:
@@ -22,6 +23,7 @@ affected_versions: "All versions before 0.11.4"
 not_impacted: "All versions starting from 0.11.4"
 solution: "Upgrade to version 0.11.4 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-57441"
 - "https://github.com/advisories/GHSA-j99q-93c9-h869"
 - "https://github.com/bitbonsai/mcpvault/security/advisories/GHSA-j99q-93c9-h869"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N"

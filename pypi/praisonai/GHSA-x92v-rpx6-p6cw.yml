@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-x92v-rpx6-p6cw"
 identifiers:
+- "CVE-2026-57122"
 - "GHSA-x92v-rpx6-p6cw"
 package_slug: "pypi/praisonai"
 title: "PraisonAI: Webhook signature verification skipped (fail-open) when secret
@@ -31,7 +32,7 @@ description: "The WhatsApp and Linear bot adapters verify the inbound webhook HM
   of concept (bot started without the secret - the default):\n\ncurl -X POST http://VICTIM:PORT/webhook
   \\\n-H 'Content-Type: application/json' \\\n-d '{\"object\":\"whatsapp_business_account\",\"entry\":[{\"changes\":[{\"value\":\n{\"messages\":[{\"from\":\"15551234567\",\"id\":\"wamid.x\",\"type\":\"text\",\n\"text\":{\"body\":\"attacker-injected
   message\"}}]}}]}]}'"
-date: "2026-06-18"
+date: "2026-07-20"
 pubdate: "2026-06-18"
 affected_range: "<4.6.59"
 fixed_versions:
@@ -40,6 +41,7 @@ affected_versions: "All versions before 4.6.59"
 not_impacted: "All versions starting from 4.6.59"
 solution: "Upgrade to version 4.6.59 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-57122"
 - "https://github.com/advisories/GHSA-x92v-rpx6-p6cw"
 - "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-x92v-rpx6-p6cw"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:H/A:L"

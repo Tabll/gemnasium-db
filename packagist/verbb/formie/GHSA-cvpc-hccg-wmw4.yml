@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-cvpc-hccg-wmw4"
+identifiers:
+- "GHSA-cvpc-hccg-wmw4"
+package_slug: "packagist/verbb/formie"
+title: "Formie: Missing authorization in administrative settings allows low-privileged
+  CP users to modify plugin configuration"
+description: "Formie contains a missing authorization vulnerability in administrative
+  settings routes. An authenticated, non-admin Craft CMS control panel user with limited
+  Formie access could directly access Formie settings pages and modify global plugin
+  configuration.\n\nIn affected versions, Formie settings-related control panel routes
+  did not consistently enforce the required settings permission on the server side.
+  A low-privileged Craft CMS control panel user with limited Formie access could access
+  /admin/formie/settings, save changes to global plugin settings, and access /admin/formie/settings/import-export.\n\nThe
+  issue has been fixed by enforcing the formie-accessSettings permission across Formie
+  settings controllers and related settings actions."
+date: "2026-07-17"
+pubdate: "2026-07-17"
+affected_range: "<3.1.28"
+fixed_versions:
+- "3.1.28"
+affected_versions: "All versions before 3.1.28"
+not_impacted: "All versions starting from 3.1.28"
+solution: "Upgrade to version 3.1.28 or above."
+urls:
+- "https://github.com/advisories/GHSA-cvpc-hccg-wmw4"
+- "https://github.com/verbb/formie/security/advisories/GHSA-cvpc-hccg-wmw4"
+- "https://github.com/verbb/formie/releases/tag/3.1.28"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L"
+uuid: "83fcc69e-369c-4726-9743-743442c7711f"
+cwe_ids:
+- "CWE-862"
+- "CWE-937"
+- "CWE-1035"

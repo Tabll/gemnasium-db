@@ -1,0 +1,37 @@
+---
+identifier: "GHSA-hrxh-6v49-42gf"
+identifiers:
+- "GHSA-hrxh-6v49-42gf"
+package_slug: "go/google.golang.org/grpc"
+title: "gRPC-Go: xDS RBAC and HTTP/2 Vulnerabilities"
+description: "Multiple security vulnerabilities have been identified and addressed
+  in grpc-go affecting the xDS RBAC authorization engine (internal/xds/rbac) and the
+  HTTP/2 transport server implementation (internal/transport). These vulnerabilities
+  could result in:\n\n- Authorization Bypass (Fail-Open) when translating xDS RBAC
+  policies containing `Metadata` or `RequestedServerName` fields.\n- Denial of Service
+  (High CPU Consumption) due to an HTTP/2 Rapid Reset mitigation bypass during client-initiated
+  stream resets.\n- Denial of Service (Server Panic) when parsing crafted xDS RBAC
+  policies containing `NOT` rules around unsupported fields."
+date: "2026-07-21"
+pubdate: "2026-07-21"
+affected_range: "<1.82.1"
+fixed_versions:
+- "1.82.1"
+affected_versions: "All versions before 1.82.1"
+not_impacted: "All versions starting from 1.82.1"
+solution: "Upgrade to version 1.82.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-hrxh-6v49-42gf"
+- "https://github.com/grpc/grpc-go/security/advisories/GHSA-hrxh-6v49-42gf"
+- "https://github.com/grpc/grpc-go/pull/9236"
+- "https://github.com/grpc/grpc-go/commit/4ea465d4ab98013f72a142fe0fc89c19770b2935"
+- "https://github.com/grpc/grpc-go/releases/tag/v1.82.1"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:H/SC:N/SI:N/SA:N"
+uuid: "c7642c21-b146-475b-9c83-1b996d829e53"
+cwe_ids:
+- "CWE-248"
+- "CWE-770"
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

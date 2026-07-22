@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-f88m-g3jw-g9cj"
+identifiers:
+- "GHSA-f88m-g3jw-g9cj"
+package_slug: "npm/sharp"
+title: "sharp inherited vulnerabilities in libvips: CVE-2026-33327, CVE-2026-33328,
+  CVE-2026-35590, CVE-2026-35591"
+description: "A number of vulnerabilities, two rated as \"High\" severity using CVSSv4,
+  have been discovered and fixed in the upstream libvips dependency.\n\nThose processing
+  untrusted input with versions of sharp prior to 0.35.0 are affected."
+date: "2026-07-21"
+pubdate: "2026-07-21"
+affected_range: "<0.35.0"
+fixed_versions:
+- "0.35.0"
+affected_versions: "All versions before 0.35.0"
+not_impacted: "All versions starting from 0.35.0"
+solution: "Upgrade to version 0.35.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-f88m-g3jw-g9cj"
+- "https://github.com/libvips/libvips/security/advisories/GHSA-2fcj-gj27-279x"
+- "https://github.com/libvips/libvips/security/advisories/GHSA-523x-vhfw-6r76"
+- "https://github.com/libvips/libvips/security/advisories/GHSA-jmwm-wc68-mhwm"
+- "https://github.com/libvips/libvips/security/advisories/GHSA-r98w-4fp7-m9c7"
+- "https://github.com/lovell/sharp/security/advisories/GHSA-f88m-g3jw-g9cj"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:L/VI:H/VA:H/SC:N/SI:N/SA:N"
+uuid: "942c9637-c65d-44ea-afd8-82a235c2b40d"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"
+- "CWE-1395"

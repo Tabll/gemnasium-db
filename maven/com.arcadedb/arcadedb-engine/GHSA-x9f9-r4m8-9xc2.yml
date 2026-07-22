@@ -1,0 +1,43 @@
+---
+identifier: "GHSA-x9f9-r4m8-9xc2"
+identifiers:
+- "GHSA-x9f9-r4m8-9xc2"
+package_slug: "maven/com.arcadedb/arcadedb-engine"
+title: "ArcadeDB: Trigger scripts run with java.lang.* allowed, enabling OS command
+  execution (RCE)"
+description: "ScriptTriggerExecutor sets allowedPackages to java.lang.*, java.util.*,
+  java.time.*, java.math.* (ScriptTriggerExecutor.java:56); trigger creation is gated
+  only at UPDATE_SCHEMA (LocalSchema.createTrigger:636). Permitting java.lang.* host-class
+  lookup lets a trigger script do Java.type(\"java.lang.Runtime\").getRuntime().exec(...)
+  (or ProcessBuilder). The reflection denylist does not block Java.type host lookups,
+  and allowCreateProcess(false) only restricts GraalVM's guest process API, not a
+  host Runtime.exec reached through HostAccess.ALL.\n\nExploit: a user with UPDATE_SCHEMA
+  (schema admin, strictly less than security admin) runs CREATE TRIGGER ... EXECUTE
+  JAVASCRIPT '<runtime.exec>' and obtains OS RCE when the trigger fires.\n\nFix: remove
+  java.lang.* (and narrow the rest) from the trigger allow-list; if host interop is
+  needed, expose an explicit @HostAccess.Export API surface instead of whole packages;
+  consider gating trigger creation at UPDATE_SECURITY. Prefer an allow-list (HostAccess.EXPLICIT)
+  over the current denylist-over-HostAccess.ALL.\n\nRelated medium/low items to fold
+  into the fix: IMPORT DATABASE SSRF via unfollowed-redirect re-validation (SourceDiscovery.java:113),
+  BACKUP/EXPORT DATABASE missing authorization (BackupDatabaseStatement.java:56, ExportDatabaseStatement.java:52),
+  chunked-transfer body-size DoS bypass (HttpServer.java:301,318-333), and no brute-force
+  lockout on password auth (ServerSecurity.java:189-205)."
+date: "2026-07-16"
+pubdate: "2026-07-16"
+affected_range: "[,26.7.2)"
+fixed_versions:
+- "26.7.2"
+affected_versions: "All versions before 26.7.2"
+not_impacted: "All versions starting from 26.7.2"
+solution: "Upgrade to version 26.7.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-x9f9-r4m8-9xc2"
+- "https://github.com/ArcadeData/arcadedb/security/advisories/GHSA-x9f9-r4m8-9xc2"
+- "https://github.com/ArcadeData/arcadedb/releases/tag/26.7.2"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+uuid: "c6047f58-b1a9-4107-9605-8efbb5543258"
+cwe_ids:
+- "CWE-78"
+- "CWE-937"
+- "CWE-1035"

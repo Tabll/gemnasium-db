@@ -1,0 +1,51 @@
+---
+identifier: "GHSA-xj6q-8x83-jv6g"
+identifiers:
+- "GHSA-xj6q-8x83-jv6g"
+package_slug: "npm/axios"
+title: "Axios: Prototype pollution auth subfields can inject Basic auth"
+description: "Axios versions after the `GHSA-q8qp-cvcw-x6jj` fix still contain prototype-pollution
+  read-side gadgets in Basic auth subfield handling. If a host application is already
+  affected by prototype pollution and then makes an axios request with an own `auth`
+  object that omits `username` or `password`, axios reads inherited `Object.prototype.username`
+  and `Object.prototype.password` values and uses them to construct an outbound `Authorization:
+  Basic ...` header.\n\nThis does not mean axios itself pollutes prototypes. Exploitation
+  requires a separate prototype-pollution primitive in the host process, plus an axios
+  call pattern such as `auth: opts.auth || {}`.\n\n\nAfter [GHSA-q8qp-cvcw-x6jj](https://github.com/axios/axios/security/advisories/GHSA-q8qp-cvcw-x6jj)
+  / [PR #10779](https://github.com/axios/axios/pull/10779) (shipped in `v1.15.2`)
+  and the further proxy-side hardening in\n[PR #10833](https://github.com/axios/axios/pull/10833)
+  (merged 2026-05-02), the **top-level** `config.auth` and the **proxy auth**sub-fields
+  are correctly read via `utils.hasOwnProp`. The **regular request auth sub-fields**
+  (`config.auth.username` and `config.auth.password`) and the **`config.params` /
+  `config.paramsSerializer`** reads inside `resolveConfig.js` are still unguarded
+  against a polluted `Object.prototype`.\n\nWhen a polluted host process makes an
+  axios call with the common \"optional override\" pattern (`auth: opts.auth || {}`
+  — an empty own `{}`), the sub-field reads `configAuth.username` and `configAuth.password`
+  walk the prototype chain and return the attacker-controlled values. Same for `params`
+  and `paramsSerializer`. The outbound HTTP request then carries an attacker-chosen
+  `Authorization: Basic <base64>` header and an attacker-chosen querystring, leaking
+  credentials and exfiltrating data to whichever host the request goes to (often attacker-influenced
+  too — i.e. the amplifier is wired into many credential-stuffing chains).\n\nReproduces
+  against `axios` `main` HEAD (`34723be`, dated 2026-05-24)\nas well as the released
+  `v1.16.1`."
+date: "2026-07-20"
+pubdate: "2026-07-20"
+affected_range: ">=1.15.2 <1.18.0"
+fixed_versions:
+- "1.18.0"
+affected_versions: "All versions starting from 1.15.2 before 1.18.0"
+not_impacted: "All versions before 1.15.2, all versions starting from 1.18.0"
+solution: "Upgrade to version 1.18.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-xj6q-8x83-jv6g"
+- "https://github.com/axios/axios/security/advisories/GHSA-xj6q-8x83-jv6g"
+- "https://github.com/axios/axios/pull/11000"
+- "https://github.com/axios/axios/commit/32fc489632377d214db55bfa4e2c48486a7d7ce2"
+- "https://github.com/axios/axios/releases/tag/v1.18.0"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:L/VA:L/SC:N/SI:N/SA:N"
+uuid: "20294573-cfd3-482a-ae6b-a7d9278ae411"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"
+- "CWE-1321"

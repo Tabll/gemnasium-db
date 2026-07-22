@@ -10,7 +10,7 @@ description: "An attacker who knows the webhook URL of a workflow using the GitH
   with arbitrary data. The node did not implement the HMAC-SHA256 signature verification
   that GitHub provides to authenticate webhook deliveries, allowing any party to spoof
   GitHub webhook events."
-date: "2026-06-22"
+date: "2026-07-18"
 pubdate: "2026-02-26"
 affected_range: "<1.123.15||>=2.0.0 <2.5.0"
 fixed_versions:
@@ -27,6 +27,7 @@ urls:
 - "https://github.com/n8n-io/n8n/security/advisories/GHSA-mqpr-49jj-32rc"
 - "https://github.com/n8n-io/n8n/commit/a19347a6bc9a96d5065ac77d25a811e46178c578"
 - "https://github.com/n8n-io/n8n/commit/afe322325502f448b33bff1db1575e4447c28a36"
+- "https://www.vulncheck.com/advisories/n8n-webhook-forgery-via-missing-hmac-sha256-signature-verification-in-github-webhook-trigger"
 cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:N/I:L/A:N"
 cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:L/SA:N"
 uuid: "29735c7f-67a2-4400-abed-ef253018c704"

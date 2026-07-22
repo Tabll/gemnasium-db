@@ -11,7 +11,7 @@ description: "The HTML and RSS output handlers in `dosagelib/events.py` write us
   HTML/RSS file, attacker-controlled JavaScript can execute in their browser.\n\n**CWE**:
   [CWE-79](https://cwe.mitre.org/data/definitions/79.html) - Improper Neutralization
   of Input During Web Page Generation (Cross-site Scripting)\n\n---"
-date: "2026-06-26"
+date: "2026-07-21"
 pubdate: "2026-06-26"
 affected_range: "<3.3.0"
 fixed_versions:
@@ -22,6 +22,8 @@ solution: "Upgrade to version 3.3.0 or above."
 urls:
 - "https://github.com/advisories/GHSA-75mw-h36v-2jv7"
 - "https://github.com/webcomics/dosage/security/advisories/GHSA-75mw-h36v-2jv7"
+- "https://github.com/webcomics/dosage/commit/b91fd5cc3889aed3d9cc81b98834648197b2859a"
+- "https://github.com/webcomics/dosage/releases/tag/3.3"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
 uuid: "b6283e54-44c7-458d-ad32-898a03d6f23a"
 cwe_ids:

@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-gcq3-mfvh-3x25"
 identifiers:
+- "CVE-2026-56839"
 - "GHSA-gcq3-mfvh-3x25"
 package_slug: "pypi/praisonai"
 title: "PraisonAI Code agent tools fail open without a workspace boundary"
@@ -16,7 +17,7 @@ description: "PraisonAI Code's agent-compatible `CODE_TOOLS` wrappers keep a glo
   Python API arbitrary file write advisory (`GHSA-hvhp-v2gc-268q`) was fixed by defaulting
   an unset workspace to `os.getcwd()`. The adjacent read and edit paths reached through
   `CODE_TOOLS` still fail open."
-date: "2026-06-18"
+date: "2026-07-20"
 pubdate: "2026-06-18"
 affected_range: "<4.6.59"
 fixed_versions:
@@ -25,6 +26,7 @@ affected_versions: "All versions before 4.6.59"
 not_impacted: "All versions starting from 4.6.59"
 solution: "Upgrade to version 4.6.59 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-56839"
 - "https://github.com/advisories/GHSA-gcq3-mfvh-3x25"
 - "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-gcq3-mfvh-3x25"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:N"

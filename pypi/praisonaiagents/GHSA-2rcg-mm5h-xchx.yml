@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-2rcg-mm5h-xchx"
 identifiers:
+- "CVE-2026-57129"
 - "GHSA-2rcg-mm5h-xchx"
 package_slug: "pypi/praisonaiagents"
 title: "PraisonAI: Arbitrary File Read via `@file:` Mention Path Traversal"
@@ -11,7 +12,7 @@ description: "The MentionsParser in `src/praisonai-agents/praisonaiagents/tools/
   check. This allows an attacker who can influence agent prompts (via chat messages,
   Telegram/Discord/Slack bot inputs, or YAML workflow configs) to read any file on
   the filesystem accessible to the process user."
-date: "2026-06-18"
+date: "2026-07-20"
 pubdate: "2026-06-18"
 affected_range: "<1.6.59"
 fixed_versions:
@@ -20,6 +21,7 @@ affected_versions: "All versions before 1.6.59"
 not_impacted: "All versions starting from 1.6.59"
 solution: "Upgrade to version 1.6.59 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-57129"
 - "https://github.com/advisories/GHSA-2rcg-mm5h-xchx"
 - "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-2rcg-mm5h-xchx"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
