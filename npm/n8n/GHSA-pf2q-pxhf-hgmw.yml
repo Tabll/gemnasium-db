@@ -1,0 +1,36 @@
+---
+identifier: "GHSA-pf2q-pxhf-hgmw"
+identifiers:
+- "GHSA-pf2q-pxhf-hgmw"
+package_slug: "npm/n8n"
+title: "n8n: Path-Confinement Bypass in computer-use search_files Allows Reading Files
+  Outside the Base Directory"
+description: "The component `@n8n/computer-use` file-search tool confined searches
+  to a configured base directory. A crafted search pattern could bypass the confinement
+  check and expand to locations outside that directory, causing the tool to return
+  the names and contents of files anywhere the daemon's OS user could read. Any deployment
+  where an actor could influence the tool's search input was affected; the result
+  was disclosure of arbitrary local files outside the intended sandbox."
+date: "2026-07-22"
+pubdate: "2026-07-22"
+affected_range: "<2.31.5||>=2.32.0 <2.32.1"
+fixed_versions:
+- "2.31.5"
+- "2.32.1"
+affected_versions: "All versions before 2.31.5, all versions starting from 2.32.0
+  before 2.32.1"
+not_impacted: "All versions starting from 2.31.5 before 2.32.0, all versions starting
+  from 2.32.1"
+solution: "Upgrade to versions 2.31.5, 2.32.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-pf2q-pxhf-hgmw"
+- "https://github.com/n8n-io/n8n/security/advisories/GHSA-pf2q-pxhf-hgmw"
+- "https://github.com/n8n-io/n8n/releases/tag/n8n@2.31.5"
+- "https://github.com/n8n-io/n8n/releases/tag/n8n@2.32.1"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:N/VI:N/VA:N/SC:H/SI:N/SA:N"
+uuid: "36480797-7cda-4cb6-8aad-e32ea9d8d00a"
+cwe_ids:
+- "CWE-22"
+- "CWE-937"
+- "CWE-1035"

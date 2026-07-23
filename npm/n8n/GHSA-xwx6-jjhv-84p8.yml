@@ -1,0 +1,39 @@
+---
+identifier: "GHSA-xwx6-jjhv-84p8"
+identifiers:
+- "GHSA-xwx6-jjhv-84p8"
+package_slug: "npm/n8n"
+title: "n8n: Prototype Pollution via Dot-Notation Field Names Leads To Instance-Wide
+  Denial of Service"
+description: "The Edit Fields (Set) node assigned output fields through a dot-notation
+  path setter without restricting the field name, so an authenticated user could name
+  a field after an inherited built-in method path and corrupt a shared global in the
+  main Node.js process. Because that global was used on the request-authentication
+  path, the instance then failed every authenticated request, causing a instance-wide
+  denial of service for all users until the process was restarted."
+date: "2026-07-22"
+pubdate: "2026-07-22"
+affected_range: "<1.123.67||>=2.0.0-rc.0 <2.31.5||>=2.32.0 <2.32.1"
+fixed_versions:
+- "1.123.67"
+- "2.31.5"
+- "2.32.1"
+affected_versions: "All versions before 1.123.67, all versions starting from 2.0.0-rc.0
+  before 2.31.5, all versions starting from 2.32.0 before 2.32.1"
+not_impacted: "All versions starting from 1.123.67 before 2.0.0-rc.0, all versions
+  starting from 2.31.5 before 2.32.0, all versions starting from 2.32.1"
+solution: "Upgrade to versions 1.123.67, 2.31.5, 2.32.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-xwx6-jjhv-84p8"
+- "https://github.com/n8n-io/n8n/security/advisories/GHSA-xwx6-jjhv-84p8"
+- "https://github.com/n8n-io/n8n/commit/f69dfc6dd2178a14ea1624d2e1d403c2e755042f"
+- "https://github.com/n8n-io/n8n/releases/tag/n8n@1.123.67"
+- "https://github.com/n8n-io/n8n/releases/tag/n8n@2.31.5"
+- "https://github.com/n8n-io/n8n/releases/tag/n8n@2.32.1"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+uuid: "0ae98625-0b2d-4b8b-8420-929527729734"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"
+- "CWE-1321"

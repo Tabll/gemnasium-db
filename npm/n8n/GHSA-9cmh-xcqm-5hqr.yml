@@ -1,0 +1,38 @@
+---
+identifier: "GHSA-9cmh-xcqm-5hqr"
+identifiers:
+- "GHSA-9cmh-xcqm-5hqr"
+package_slug: "npm/n8n"
+title: "n8n: Cross-Tenant Module-Cache Poisoning in the JS Task Runner"
+description: "n8n's JavaScript task runner shared one module cache across all users'
+  Code-node executions, so a user able to run a Code node could poison a cached module
+  and alter other users' Code-node executions on the same runner, affecting their
+  confidentiality, integrity, or availability.\n\nThis is a cross-user isolation break
+  within a single n8n instance. It does not constitute a sandbox escape or remote
+  code execution. All multi-user n8n instances running the JS task runner with built-in
+  or external modules enabled are affected."
+date: "2026-07-22"
+pubdate: "2026-07-22"
+affected_range: "<1.123.67||>=2.0.0-rc.0 <2.31.5||>=2.32.0 <2.32.1"
+fixed_versions:
+- "1.123.67"
+- "2.31.5"
+- "2.32.1"
+affected_versions: "All versions before 1.123.67, all versions starting from 2.0.0-rc.0
+  before 2.31.5, all versions starting from 2.32.0 before 2.32.1"
+not_impacted: "All versions starting from 1.123.67 before 2.0.0-rc.0, all versions
+  starting from 2.31.5 before 2.32.0, all versions starting from 2.32.1"
+solution: "Upgrade to versions 1.123.67, 2.31.5, 2.32.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-9cmh-xcqm-5hqr"
+- "https://github.com/n8n-io/n8n/security/advisories/GHSA-9cmh-xcqm-5hqr"
+- "https://github.com/n8n-io/n8n/releases/tag/n8n@1.123.67"
+- "https://github.com/n8n-io/n8n/releases/tag/n8n@2.31.5"
+- "https://github.com/n8n-io/n8n/releases/tag/n8n@2.32.1"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:N/VI:N/VA:N/SC:H/SI:H/SA:H"
+uuid: "b5b72862-03bd-48ff-8c88-554fb0666ab0"
+cwe_ids:
+- "CWE-20"
+- "CWE-937"
+- "CWE-1035"

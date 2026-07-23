@@ -1,0 +1,38 @@
+---
+identifier: "GHSA-rcv6-pvrj-4xcg"
+identifiers:
+- "GHSA-rcv6-pvrj-4xcg"
+package_slug: "npm/n8n"
+title: "n8n: Authenticated code execution in the n8n Git node"
+description: "Authenticated n8n users with rights to create and execute workflows
+  could achieve code execution on the n8n host. Using the Git node, under the default
+  `git` security settings, by staging a crafted local repository, an attacker could
+  cause `git` to run hooks, executing arbitrary commands as the n8n process user.\n\nBoth
+  self-hosted and cloud instances are affected where authenticated users can create
+  and execute workflows using the Git node."
+date: "2026-07-22"
+pubdate: "2026-07-22"
+affected_range: "<1.123.67||>=2.0.0-rc.0 <2.31.5||>=2.32.0 <2.32.1"
+fixed_versions:
+- "1.123.67"
+- "2.31.5"
+- "2.32.1"
+affected_versions: "All versions before 1.123.67, all versions starting from 2.0.0-rc.0
+  before 2.31.5, all versions starting from 2.32.0 before 2.32.1"
+not_impacted: "All versions starting from 1.123.67 before 2.0.0-rc.0, all versions
+  starting from 2.31.5 before 2.32.0, all versions starting from 2.32.1"
+solution: "Upgrade to versions 1.123.67, 2.31.5, 2.32.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-rcv6-pvrj-4xcg"
+- "https://github.com/n8n-io/n8n/security/advisories/GHSA-rcv6-pvrj-4xcg"
+- "https://github.com/n8n-io/n8n/commit/f69dfc6dd2178a14ea1624d2e1d403c2e755042f"
+- "https://github.com/n8n-io/n8n/releases/tag/n8n@1.123.67"
+- "https://github.com/n8n-io/n8n/releases/tag/n8n@2.31.5"
+- "https://github.com/n8n-io/n8n/releases/tag/n8n@2.32.1"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+uuid: "5bfdd806-ece1-499e-9700-fe7da9fa88f6"
+cwe_ids:
+- "CWE-78"
+- "CWE-937"
+- "CWE-1035"

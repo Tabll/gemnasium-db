@@ -1,0 +1,36 @@
+---
+identifier: "GHSA-xmc9-4f2h-jf9c"
+identifiers:
+- "GHSA-xmc9-4f2h-jf9c"
+package_slug: "npm/n8n"
+title: "n8n: Edit Image Node Format Injection Allows Arbitrary File Write"
+description: "The n8n Edit Image node passed its output format to the underlying image
+  library without validation, so a crafted value could write bytes to a location outside
+  the node's working directory. An authenticated user able to run workflows could
+  use this to write arbitrary files in the n8n instance."
+date: "2026-07-22"
+pubdate: "2026-07-22"
+affected_range: "<1.123.67||>=2.0.0-rc.0 <2.31.5||>=2.32.0 <2.32.1"
+fixed_versions:
+- "1.123.67"
+- "2.31.5"
+- "2.32.1"
+affected_versions: "All versions before 1.123.67, all versions starting from 2.0.0-rc.0
+  before 2.31.5, all versions starting from 2.32.0 before 2.32.1"
+not_impacted: "All versions starting from 1.123.67 before 2.0.0-rc.0, all versions
+  starting from 2.31.5 before 2.32.0, all versions starting from 2.32.1"
+solution: "Upgrade to versions 1.123.67, 2.31.5, 2.32.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-xmc9-4f2h-jf9c"
+- "https://github.com/n8n-io/n8n/security/advisories/GHSA-xmc9-4f2h-jf9c"
+- "https://github.com/n8n-io/n8n/commit/f69dfc6dd2178a14ea1624d2e1d403c2e755042f"
+- "https://github.com/n8n-io/n8n/releases/tag/n8n@1.123.67"
+- "https://github.com/n8n-io/n8n/releases/tag/n8n@2.31.5"
+- "https://github.com/n8n-io/n8n/releases/tag/n8n@2.32.1"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:H/AT:P/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+uuid: "a4771b07-fa86-4cc9-9cc0-975517b92311"
+cwe_ids:
+- "CWE-73"
+- "CWE-937"
+- "CWE-1035"

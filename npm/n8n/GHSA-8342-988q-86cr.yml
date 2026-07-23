@@ -1,0 +1,39 @@
+---
+identifier: "GHSA-8342-988q-86cr"
+identifiers:
+- "GHSA-8342-988q-86cr"
+package_slug: "npm/n8n"
+title: "n8n: Account Takeover via Unverified Email Claim in Token Exchange Embed Login"
+description: "In an n8n instance, when a validly-signed incoming token was matched
+  to a local account by its email claim, the service did not check that the trusted
+  key's permitted role ceiling covered that account, nor that the email claim was
+  verified. As a result, anyone able to obtain a token accepted by one of the configured
+  trusted keys, for example a trusted issuer that emitted unverified email addresses,
+  could authenticate as any existing user, gaining full account control.\n\nThis issue
+  only affects instances where the embed login feature is enabled and at least one
+  trusted key source is configured."
+date: "2026-07-22"
+pubdate: "2026-07-22"
+affected_range: "<2.31.5||>=2.32.0 <2.32.1"
+fixed_versions:
+- "2.31.5"
+- "2.32.1"
+affected_versions: "All versions before 2.31.5, all versions starting from 2.32.0
+  before 2.32.1"
+not_impacted: "All versions starting from 2.31.5 before 2.32.0, all versions starting
+  from 2.32.1"
+solution: "Upgrade to versions 2.31.5, 2.32.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-8342-988q-86cr"
+- "https://github.com/n8n-io/n8n/security/advisories/GHSA-8342-988q-86cr"
+- "https://github.com/n8n-io/n8n/commit/f69dfc6dd2178a14ea1624d2e1d403c2e755042f"
+- "https://github.com/n8n-io/n8n/releases/tag/n8n@2.31.5"
+- "https://github.com/n8n-io/n8n/releases/tag/n8n@2.32.1"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:L"
+uuid: "01c2e78f-6af4-42da-a772-bf8ddbe988f9"
+cwe_ids:
+- "CWE-345"
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

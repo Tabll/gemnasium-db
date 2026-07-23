@@ -1,0 +1,37 @@
+---
+identifier: "GHSA-jqwr-vx3p-r266"
+identifiers:
+- "GHSA-jqwr-vx3p-r266"
+package_slug: "npm/n8n"
+title: "n8n: PostgresTrigger Node SQL Injection Allows Authenticated Users to Execute
+  Arbitrary SQL on Connected PostgreSQL Instances"
+description: "The Postgres Trigger node interpolated user-supplied identifier parameters
+  (channel, function, and trigger names) into SQL statements without proper escaping,
+  so an authenticated user could inject arbitrary SQL executed against the connected
+  PostgreSQL database with the configured credential's privileges.\n\nSuccessful exploitation
+  allows full read and write access to the connected PostgreSQL database."
+date: "2026-07-22"
+pubdate: "2026-07-22"
+affected_range: "<1.123.67||>=2.0.0-rc.0 <2.31.5||>=2.32.0 <2.32.1"
+fixed_versions:
+- "1.123.67"
+- "2.31.5"
+- "2.32.1"
+affected_versions: "All versions before 1.123.67, all versions starting from 2.0.0-rc.0
+  before 2.31.5, all versions starting from 2.32.0 before 2.32.1"
+not_impacted: "All versions starting from 1.123.67 before 2.0.0-rc.0, all versions
+  starting from 2.31.5 before 2.32.0, all versions starting from 2.32.1"
+solution: "Upgrade to versions 1.123.67, 2.31.5, 2.32.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-jqwr-vx3p-r266"
+- "https://github.com/n8n-io/n8n/security/advisories/GHSA-jqwr-vx3p-r266"
+- "https://github.com/n8n-io/n8n/releases/tag/n8n@1.123.67"
+- "https://github.com/n8n-io/n8n/releases/tag/n8n@2.31.5"
+- "https://github.com/n8n-io/n8n/releases/tag/n8n@2.32.1"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:N/VI:N/VA:N/SC:H/SI:H/SA:H"
+uuid: "8581c1a4-520f-4016-85af-db7bf6b92f5e"
+cwe_ids:
+- "CWE-89"
+- "CWE-937"
+- "CWE-1035"

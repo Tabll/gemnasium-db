@@ -1,0 +1,36 @@
+---
+identifier: "GHSA-652q-gvq3-74qv"
+identifiers:
+- "GHSA-652q-gvq3-74qv"
+package_slug: "npm/n8n"
+title: "n8n: Snowflake Node executeQuery Operation Allows SQL Injection via Unparameterized
+  Expression Interpolation"
+description: "The n8n Snowflake node's Execute Query operation interpolated expression
+  values directly into the SQL string, making queries built with untrusted data susceptible
+  to SQL injection.\n\nExploitation requires that a workflow author has already embedded
+  untrusted expression data directly in a raw SQL query."
+date: "2026-07-22"
+pubdate: "2026-07-22"
+affected_range: "<1.123.67||>=2.0.0-rc.0 <2.31.5||>=2.32.0 <2.32.1"
+fixed_versions:
+- "1.123.67"
+- "2.31.5"
+- "2.32.1"
+affected_versions: "All versions before 1.123.67, all versions starting from 2.0.0-rc.0
+  before 2.31.5, all versions starting from 2.32.0 before 2.32.1"
+not_impacted: "All versions starting from 1.123.67 before 2.0.0-rc.0, all versions
+  starting from 2.31.5 before 2.32.0, all versions starting from 2.32.1"
+solution: "Upgrade to versions 1.123.67, 2.31.5, 2.32.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-652q-gvq3-74qv"
+- "https://github.com/n8n-io/n8n/security/advisories/GHSA-652q-gvq3-74qv"
+- "https://github.com/n8n-io/n8n/releases/tag/n8n@1.123.67"
+- "https://github.com/n8n-io/n8n/releases/tag/n8n@2.31.5"
+- "https://github.com/n8n-io/n8n/releases/tag/n8n@2.32.1"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:L/VI:L/VA:N/SC:H/SI:H/SA:N"
+uuid: "9d518388-a045-4b90-8ce8-179fec2920f9"
+cwe_ids:
+- "CWE-89"
+- "CWE-937"
+- "CWE-1035"
