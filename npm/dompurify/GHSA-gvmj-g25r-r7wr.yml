@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-gvmj-g25r-r7wr"
 identifiers:
+- "CVE-2026-65900"
 - "GHSA-gvmj-g25r-r7wr"
 package_slug: "npm/dompurify"
 title: "DOMPurify: SAFE_FOR_TEMPLATES bypass - template expressions survive sanitization
@@ -12,7 +13,7 @@ description: "When DOMPurify is configured with both `SAFE_FOR_TEMPLATES: true` 
   which is to prevent template engine evaluation of user-supplied content.\n\n> **Note:**
   The string output path is **not** affected. Only the DOM return paths (`RETURN_DOM:
   true`, `RETURN_DOM_FRAGMENT: true`, `IN_PLACE: true`) are vulnerable.\n\n---"
-date: "2026-06-15"
+date: "2026-07-23"
 pubdate: "2026-06-15"
 affected_range: ">=3.0.0 <3.4.8"
 fixed_versions:
@@ -21,6 +22,7 @@ affected_versions: "All versions starting from 3.0.0 before 3.4.8"
 not_impacted: "All versions before 3.0.0, all versions starting from 3.4.8"
 solution: "Upgrade to version 3.4.8 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-65900"
 - "https://github.com/advisories/GHSA-gvmj-g25r-r7wr"
 - "https://github.com/cure53/DOMPurify/security/advisories/GHSA-gvmj-g25r-r7wr"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N"

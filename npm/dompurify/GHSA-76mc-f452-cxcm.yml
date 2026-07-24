@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-76mc-f452-cxcm"
 identifiers:
+- "CVE-2026-65902"
 - "GHSA-76mc-f452-cxcm"
 package_slug: "npm/dompurify"
 title: "DOMPurify: Hook mutation of `data.allowedTags` / `data.allowedAttributes`
@@ -19,7 +20,7 @@ description: "The `data.allowedTags` and `data.allowedAttributes` fields passed 
   a new DOMPurify instance does.\n\nThe maintainer's existing defense at `src/purify.ts:696-700`
   explicitly clones `DEFAULT_ALLOWED_TAGS` before mutating it via `cfg.ADD_TAGS` (array
   form), demonstrating awareness of this exact class. The hook path remained uncovered."
-date: "2026-06-15"
+date: "2026-07-23"
 pubdate: "2026-06-15"
 affected_range: "<3.4.7"
 fixed_versions:
@@ -28,6 +29,7 @@ affected_versions: "All versions before 3.4.7"
 not_impacted: "All versions starting from 3.4.7"
 solution: "Upgrade to version 3.4.7 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-65902"
 - "https://github.com/advisories/GHSA-76mc-f452-cxcm"
 - "https://github.com/cure53/DOMPurify/security/advisories/GHSA-76mc-f452-cxcm"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"

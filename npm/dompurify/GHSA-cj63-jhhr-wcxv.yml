@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-cj63-jhhr-wcxv"
 identifiers:
+- "CVE-2026-65913"
 - "GHSA-cj63-jhhr-wcxv"
 package_slug: "npm/dompurify"
 title: "DOMPurify USE_PROFILES prototype pollution allows event handlers"
@@ -14,7 +15,7 @@ description: "When `USE_PROFILES` is enabled, DOMPurify rebuilds `ALLOWED_ATTR` 
   and adds the sanitized output to the DOM; the polluted prototype allows the event
   handler to survive and execute, turning what should be a blocklist into a silent
   XSS vector."
-date: "2026-04-03"
+date: "2026-07-23"
 pubdate: "2026-04-03"
 affected_range: "<3.3.2"
 fixed_versions:
@@ -23,14 +24,14 @@ affected_versions: "All versions before 3.3.2"
 not_impacted: "All versions starting from 3.3.2"
 solution: "Upgrade to version 3.3.2 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-65913"
 - "https://github.com/advisories/GHSA-cj63-jhhr-wcxv"
 - "https://github.com/cure53/DOMPurify/security/advisories/GHSA-cj63-jhhr-wcxv"
-- "https://github.com/cure53/DOMPurify"
 - "https://github.com/cure53/DOMPurify/releases/tag/3.3.2"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
 cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:N/VI:L/VA:N/SC:L/SI:L/SA:N"
 uuid: "6a66d209-4d59-4958-a376-fd47c26385ab"
 cwe_ids:
-- "CWE-1321"
 - "CWE-937"
 - "CWE-1035"
+- "CWE-1321"
