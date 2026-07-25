@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-p279-2cqp-84jg"
+identifiers:
+- "GHSA-p279-2cqp-84jg"
+package_slug: "maven/org.openidentityplatform.opendj/opendj-server-legacy"
+title: "OpenDJ SASL PLAIN authzid bypassing the proxy ACI scope check"
+description: "When a SASL PLAIN bind supplies an authorization identity (authzid)
+  that resolves to a **different** user, PlainSASLMechanismHandler verified only the
+  PROXIED_AUTH privilege and never evaluated the \"proxy\" access-control right (the
+  mayProxy ACI scope check). As a result, any account holding the proxied-auth privilege
+  could assume **any resolvable non-root identity** without being granted a proxy
+  ACI for that target.\n\nThis diverges from every other proxy path in OpenDJ — the
+  proxied-authorization controls (RFC 4370) and the DIGEST-MD5 / GSSAPI authzid handlers
+  all require **both** the privilege **and** the mayProxy scope grant."
+date: "2026-07-24"
+pubdate: "2026-07-24"
+affected_range: "[,5.1.2)"
+fixed_versions:
+- "5.1.2"
+affected_versions: "All versions before 5.1.2"
+not_impacted: "All versions starting from 5.1.2"
+solution: "Upgrade to version 5.1.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-p279-2cqp-84jg"
+- "https://github.com/OpenIdentityPlatform/OpenDJ/security/advisories/GHSA-p279-2cqp-84jg"
+- "https://github.com/OpenIdentityPlatform/OpenDJ/commit/5c326850f1ab945cfca7ac9c5aaf77d1052c6bed"
+- "https://github.com/OpenIdentityPlatform/OpenDJ/releases/tag/5.1.2"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:N"
+uuid: "7b37b605-43ea-43ca-9aac-ea81a1edf5d3"
+cwe_ids:
+- "CWE-285"
+- "CWE-639"
+- "CWE-937"
+- "CWE-1035"

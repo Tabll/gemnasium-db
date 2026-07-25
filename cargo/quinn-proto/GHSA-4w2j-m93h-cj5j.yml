@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-4w2j-m93h-cj5j"
+identifiers:
+- "GHSA-4w2j-m93h-cj5j"
+package_slug: "cargo/quinn-proto"
+title: "Quinn: Remote memory exhaustion in quinn-proto from unbounded out-of-order
+  stream reassembly"
+description: "The `Assembler` component that assembles unordered stream fragments
+  into consecutive chunks of the stream incurs some overhead for non-contiguous fragments.
+  Readers that read from a `RecvStream` in order (through an `AsyncRead` impl for
+  example) will be sensitive to peers that send fragments while leaving out early
+  parts of the stream, and in particular, fragments with many gaps (because these
+  cannot be defragmented). In such a scenario, the receiving connection suffers from
+  high buffer overhead, enabling memory exhaustion."
+date: "2026-07-24"
+pubdate: "2026-07-24"
+affected_range: ">=0.1.0 <0.11.15"
+fixed_versions:
+- "0.11.15"
+affected_versions: "All versions starting from 0.1.0 before 0.11.15"
+not_impacted: "All versions before 0.1.0, all versions starting from 0.11.15"
+solution: "Upgrade to version 0.11.15 or above."
+urls:
+- "https://github.com/advisories/GHSA-4w2j-m93h-cj5j"
+- "https://github.com/quinn-rs/quinn/security/advisories/GHSA-4w2j-m93h-cj5j"
+- "https://github.com/quinn-rs/quinn/pull/2694"
+- "https://github.com/quinn-rs/quinn/commit/fed0321a9a672819662caab37f5662f1ad91308e"
+- "https://github.com/quinn-rs/quinn/releases/tag/quinn-proto-0.11.15"
+- "https://rustsec.org/advisories/RUSTSEC-2026-0185.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "5babeedc-aeca-4d92-bc2e-85c54e578625"
+cwe_ids:
+- "CWE-770"
+- "CWE-937"
+- "CWE-1035"

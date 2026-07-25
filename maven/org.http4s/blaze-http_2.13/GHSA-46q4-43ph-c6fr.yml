@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-46q4-43ph-c6fr"
+identifiers:
+- "GHSA-46q4-43ph-c6fr"
+package_slug: "maven/org.http4s/blaze-http_2.13"
+title: "blaze: Chunked-body trailer fields promoted into Request.headers in blaze-server
+  (front-end header-sanitization bypass)"
+description: "blaze-server can merge HTTP/1.1 chunked-body trailer fields into `Request.headers`.
+  Because trailer fields are attacker-controlled, an unauthenticated remote client
+  can inject arbitrary header names/values (e.g. `X-Forwarded-For`, internal-auth
+  headers) that a fronting proxy sanitized from the request-header section, bypassing
+  header-based trust decisions in the application."
+date: "2026-07-24"
+pubdate: "2026-07-24"
+affected_range: "[,0.23.18),[1.0.0-M1,1.0.0-M42)"
+fixed_versions:
+- "0.23.18"
+- "1.0.0-M42"
+affected_versions: "All versions before 0.23.18, all versions starting from 1.0.0-M1
+  before 1.0.0-M42"
+not_impacted: "All versions starting from 0.23.18 before 1.0.0-M1, all versions starting
+  from 1.0.0-M42"
+solution: "Upgrade to versions 0.23.18, 1.0.0-M42 or above."
+urls:
+- "https://github.com/advisories/GHSA-46q4-43ph-c6fr"
+- "https://github.com/http4s/blaze/security/advisories/GHSA-46q4-43ph-c6fr"
+- "https://github.com/http4s/blaze/commit/ef3e666c146cfc16cb6603f1fc3c464daab4a24f"
+- "https://github.com/http4s/blaze/releases/tag/v0.23.18"
+- "https://github.com/http4s/blaze/releases/tag/v1.0.0-M42"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N"
+uuid: "2ba47565-028a-4e1b-959f-fd488ea915b2"
+cwe_ids:
+- "CWE-444"
+- "CWE-937"
+- "CWE-1035"

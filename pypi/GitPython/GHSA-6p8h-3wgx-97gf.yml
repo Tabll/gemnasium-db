@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-6p8h-3wgx-97gf"
+identifiers:
+- "GHSA-6p8h-3wgx-97gf"
+package_slug: "pypi/GitPython"
+title: "GitPython: Incomplete unsafe_git_clone_options denylist omits --template enabling
+  arbitrary command execution via clone hooks"
+description: "GitPython's `unsafe_git_clone_options` denylist omits `--template`.
+  `git clone --template=<dir>` copies `<dir>/hooks/` into the new repository and runs
+  them (`post-checkout` fires during clone), so a caller who can influence clone options
+  can achieve arbitrary command execution in the default `allow_unsafe_options=False`
+  configuration."
+date: "2026-07-24"
+pubdate: "2026-07-24"
+affected_range: "<3.1.54"
+fixed_versions:
+- "3.1.54"
+affected_versions: "All versions before 3.1.54"
+not_impacted: "All versions starting from 3.1.54"
+solution: "Upgrade to version 3.1.54 or above."
+urls:
+- "https://github.com/advisories/GHSA-6p8h-3wgx-97gf"
+- "https://github.com/gitpython-developers/GitPython/security/advisories/GHSA-6p8h-3wgx-97gf"
+- "https://github.com/gitpython-developers/GitPython/pull/2180"
+- "https://github.com/gitpython-developers/GitPython/commit/ffcb5359e87619f4fe4a70a4aff5f08c5580ba97"
+- "https://github.com/gitpython-developers/GitPython/releases/tag/3.1.54"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H"
+uuid: "7b80eb33-e81a-462c-9b09-8027ab735424"
+cwe_ids:
+- "CWE-78"
+- "CWE-184"
+- "CWE-937"
+- "CWE-1035"

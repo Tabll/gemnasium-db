@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-vghg-5jrg-2398"
+identifiers:
+- "GHSA-vghg-5jrg-2398"
+package_slug: "nuget/magick.net-q16-x64"
+title: "ImageMagick: Policy Bypass in script operation due to missing checks "
+description: "The -script operation is missing policy checks and that could result
+  in both reading from paths disallowed by the security policy."
+date: "2026-07-24"
+pubdate: "2026-07-24"
+affected_range: "[,14.15.0)"
+fixed_versions:
+- "14.15.0"
+affected_versions: "All versions before 14.15.0"
+not_impacted: "All versions starting from 14.15.0"
+solution: "Upgrade to version 14.15.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-vghg-5jrg-2398"
+- "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-vghg-5jrg-2398"
+- "https://github.com/dlemstra/Magick.NET/releases/tag/14.15.0"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N"
+uuid: "cec75af0-6d99-4e9e-9787-a3e1fe6dce88"
+cwe_ids:
+- "CWE-59"
+- "CWE-284"
+- "CWE-937"
+- "CWE-1035"

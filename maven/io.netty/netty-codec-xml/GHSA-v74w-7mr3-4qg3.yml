@@ -1,0 +1,36 @@
+---
+identifier: "GHSA-v74w-7mr3-4qg3"
+identifiers:
+- "GHSA-v74w-7mr3-4qg3"
+package_slug: "maven/io.netty/netty-codec-xml"
+title: "Netty: Denial of Service in XmlFrameDecoder via CPU Exhaustion"
+description: "An attacker can cause Denial of Service by sending a specially crafted
+  malicious XML payload (e.g., repeated `</` characters) to a Netty server utilizing
+  XmlFrameDecoder, causing the server's EventLoop thread to exhaust CPU resources
+  and become unresponsive."
+date: "2026-07-24"
+pubdate: "2026-07-24"
+affected_range: "[,4.1.136),[4.2.0,4.2.16)"
+fixed_versions:
+- "4.1.136"
+- "4.2.16"
+affected_versions: "All versions before 4.1.136, all versions starting from 4.2.0
+  before 4.2.16"
+not_impacted: "All versions starting from 4.1.136 before 4.2.0, all versions starting
+  from 4.2.16"
+solution: "Upgrade to versions 4.1.136, 4.2.16 or above."
+urls:
+- "https://github.com/advisories/GHSA-v74w-7mr3-4qg3"
+- "https://github.com/netty/netty/security/advisories/GHSA-v74w-7mr3-4qg3"
+- "https://github.com/netty/netty/pull/17063"
+- "https://github.com/netty/netty/pull/17065"
+- "https://github.com/netty/netty/commit/5b68c61f37aa4a3045cba624cbea239655c9003b"
+- "https://github.com/netty/netty/commit/bb2ff68a1fb71cb4b0eb9a9e17b66c52aff680c6"
+- "https://github.com/netty/netty/releases/tag/netty-4.1.136.Final"
+- "https://github.com/netty/netty/releases/tag/netty-4.2.16.Final"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "8573a24f-8c5f-442a-badb-e6a63f9708ad"
+cwe_ids:
+- "CWE-400"
+- "CWE-937"
+- "CWE-1035"

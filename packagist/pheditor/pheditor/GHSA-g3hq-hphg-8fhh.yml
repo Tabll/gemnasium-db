@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-g3hq-hphg-8fhh"
+identifiers:
+- "GHSA-g3hq-hphg-8fhh"
+package_slug: "packagist/pheditor/pheditor"
+title: "Pheditor: Terminal command-allowlist bypass via argument injection leads to
+  RCE — surviving vector after the metacharacter-sanitization fixes"
+description: "pheditor's terminal feature restricts callers to an allowlist of commands
+  (`TERMINAL_COMMANDS`) and rejects shell metacharacters. The allowlist is enforced
+  as a PREFIX match with no argument validation, and the allowlist includes binaries
+  that grant arbitrary command execution through their own options (`find`, `git`,
+  `php`, `tar`, `grep`). A caller can therefore run any command using only allowlisted
+  binaries and no rejected metacharacter, escaping the allowlist restriction the terminal
+  feature relies on."
+date: "2026-07-24"
+pubdate: "2026-07-24"
+affected_range: "<2.0.7"
+fixed_versions:
+- "2.0.7"
+affected_versions: "All versions before 2.0.7"
+not_impacted: "All versions starting from 2.0.7"
+solution: "Upgrade to version 2.0.7 or above."
+urls:
+- "https://github.com/advisories/GHSA-g3hq-hphg-8fhh"
+- "https://github.com/pheditor/pheditor/security/advisories/GHSA-g3hq-hphg-8fhh"
+- "https://github.com/pheditor/pheditor/commit/f40f5070d5a171b65359bc87568734d31de498e1"
+- "https://github.com/pheditor/pheditor/releases/tag/2.0.7"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+uuid: "4defc980-df66-49c7-a48f-a3ac8a1052fb"
+cwe_ids:
+- "CWE-78"
+- "CWE-88"
+- "CWE-937"
+- "CWE-1035"

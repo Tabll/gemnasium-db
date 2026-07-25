@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-7ppr-r889-mcf2"
+identifiers:
+- "GHSA-7ppr-r889-mcf2"
+package_slug: "maven/org.http4s/http4s-blaze-server_3"
+title: "blaze: Unbounded WebSocket message aggregation in http4s-blaze-server"
+description: "`http4s-blaze-server` aggregates the fragments of an incoming WebSocket\nmessage
+  with no limit on total size or fragment count. A client that\ncompletes a WebSocket
+  handshake can send an unterminated fragmented\nmessage and drive unbounded heap
+  growth in the server JVM, resulting in\ndenial of service via `OutOfMemoryError`."
+date: "2026-07-24"
+pubdate: "2026-07-24"
+affected_range: "[1.0.0-M1,1.0.0-M42)"
+fixed_versions:
+- "1.0.0-M42"
+affected_versions: "All versions starting from 1.0.0-M1 before 1.0.0-M42"
+not_impacted: "All versions before 1.0.0-M1, all versions starting from 1.0.0-M42"
+solution: "Upgrade to version 1.0.0-M42 or above."
+urls:
+- "https://github.com/advisories/GHSA-7ppr-r889-mcf2"
+- "https://github.com/http4s/blaze/security/advisories/GHSA-7ppr-r889-mcf2"
+- "https://github.com/http4s/blaze/commit/173e8ca820a0d12110bfe409c72e9b9c3d28d471"
+- "https://github.com/http4s/blaze/commit/2ae13a74d55209b6573d5228d1aa94f0361a75d0"
+- "https://github.com/http4s/blaze/commit/fadbe6d0f7f59045425688d313c8d4804973d12f"
+- "https://github.com/http4s/blaze/releases/tag/v0.23.18"
+- "https://github.com/http4s/blaze/releases/tag/v1.0.0-M42"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "7c494d22-da19-46fc-b26e-4f3744848f55"
+cwe_ids:
+- "CWE-770"
+- "CWE-937"
+- "CWE-1035"

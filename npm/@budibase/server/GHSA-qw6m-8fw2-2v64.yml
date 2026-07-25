@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-qw6m-8fw2-2v64"
+identifiers:
+- "GHSA-qw6m-8fw2-2v64"
+package_slug: "npm/@budibase/server"
+title: " Budibase: NoSQL Injection via JSON Parameter Interpolation in MongoDB Query
+  Execution"
+description: "Budibase's MongoDB query execution endpoint (`POST /api/v2/queries/:queryId`)
+  is vulnerable to NoSQL injection through user-supplied query parameters. The `enrichContext()`
+  function interpolates parameter values into JSON query templates using Handlebars
+  with `noEscaping: true`, then parses the result with `JSON.parse()`. An attacker
+  can inject JSON metacharacters (`\"`, `{`, `}`) into parameter values to alter the
+  structure of MongoDB queries, bypassing intended filters to read, modify, or delete
+  arbitrary documents."
+date: "2026-07-24"
+pubdate: "2026-07-24"
+affected_range: "<=3.38.1"
+fixed_versions: []
+affected_versions: "All versions up to 3.38.1"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-qw6m-8fw2-2v64"
+- "https://github.com/Budibase/budibase/security/advisories/GHSA-qw6m-8fw2-2v64"
+- "https://github.com/Budibase/budibase/pull/18907"
+- "https://github.com/Budibase/budibase/commit/2d6c1d17cff8a653adbb2f9003eda9de38c7670f"
+- "https://github.com/Budibase/budibase/releases/tag/3.39.9"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:L"
+uuid: "6ab872b6-b6df-44e4-9fcc-55cc182a3dc3"
+cwe_ids:
+- "CWE-937"
+- "CWE-943"
+- "CWE-1035"

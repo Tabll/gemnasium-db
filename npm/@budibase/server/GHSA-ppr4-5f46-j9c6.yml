@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-ppr4-5f46-j9c6"
+identifiers:
+- "GHSA-ppr4-5f46-j9c6"
+package_slug: "npm/@budibase/server"
+title: " Budibase: Server Filesystem Existence/Read Oracle via Builder-Controlled
+  MongoDB tlsCertificateKeyFile"
+description: "When creating a MongoDB datasource, Budibase passes the `tlsCertificateKeyFile`
+  and `tlsCAFile` fields straight to the MongoDB driver as server-side file paths.
+  On Budibase Cloud a customer cannot place files on the server, so these fields only
+  let a builder reference arbitrary absolute paths on the underlying multi-tenant
+  server. When the datasource is verified, the driver performs a real filesystem read
+  of that path, and the error differs by file state, turning `/api/datasources/verify`
+  into an arbitrary-path existence/read oracle over the whole server filesystem."
+date: "2026-07-24"
+pubdate: "2026-07-24"
+affected_range: "<=3.38.1"
+fixed_versions: []
+affected_versions: "All versions up to 3.38.1"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-ppr4-5f46-j9c6"
+- "https://github.com/Budibase/budibase/security/advisories/GHSA-ppr4-5f46-j9c6"
+- "https://github.com/Budibase/budibase/pull/19244"
+- "https://github.com/Budibase/budibase/commit/5e19b935536d6d1be1f47100e43c6fb30917826e"
+- "https://github.com/Budibase/budibase/releases/tag/3.40.0"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:H/VI:N/VA:N/SC:H/SI:N/SA:N"
+uuid: "a2386007-4a09-4fc8-9ce3-677f5599b659"
+cwe_ids:
+- "CWE-209"
+- "CWE-937"
+- "CWE-1035"

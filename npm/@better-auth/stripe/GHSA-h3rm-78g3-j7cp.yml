@@ -1,0 +1,37 @@
+---
+identifier: "GHSA-h3rm-78g3-j7cp"
+identifiers:
+- "GHSA-h3rm-78g3-j7cp"
+package_slug: "npm/@better-auth/stripe"
+title: "@better-auth/stripe: cross-organization billing tampering in organization
+  subscription actions"
+description: "An org subscription action can run against the wrong org. The actions
+  are cancel, change plan, restore, and open the billing portal. The plugin checks
+  permission against the org id in the request query string. It then runs the action
+  against the caller's active org from their session. When these two ids differ, a
+  member can act on billing for an org they may not manage. The target is always an
+  org the caller belongs to."
+date: "2026-07-24"
+pubdate: "2026-07-24"
+affected_range: ">=1.4.11 <1.6.21||>=1.7.0-beta.0 <1.7.0-beta.10"
+fixed_versions:
+- "1.6.21"
+- "1.7.0-beta.10"
+affected_versions: "All versions starting from 1.4.11 before 1.6.21, all versions
+  starting from 1.7.0-beta.0 before 1.7.0-beta.10"
+not_impacted: "All versions before 1.4.11, all versions starting from 1.6.21 before
+  1.7.0-beta.0, all versions starting from 1.7.0-beta.10"
+solution: "Upgrade to versions 1.6.21, 1.7.0-beta.10 or above."
+urls:
+- "https://github.com/advisories/GHSA-h3rm-78g3-j7cp"
+- "https://github.com/better-auth/better-auth/security/advisories/GHSA-h3rm-78g3-j7cp"
+- "https://github.com/better-auth/better-auth/commit/29fbcb573261242d8a05b131a9d39c9ae4352b06"
+- "https://github.com/better-auth/better-auth/releases/tag/v1.6.21"
+- "https://github.com/better-auth/better-auth/releases/tag/v1.7.0-beta.10"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:H/A:N"
+uuid: "01b4d621-43ac-45f0-89bc-a7e46b0d44ac"
+cwe_ids:
+- "CWE-639"
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

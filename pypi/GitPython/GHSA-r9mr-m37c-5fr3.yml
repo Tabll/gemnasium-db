@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-r9mr-m37c-5fr3"
+identifiers:
+- "GHSA-r9mr-m37c-5fr3"
+package_slug: "pypi/GitPython"
+title: "GitPython: Unsafe git option guard bypass via single-character kwarg value
+  token smuggling enables arbitrary command execution"
+description: "GitPython's `check_unsafe_options` guard (the control introduced by
+  CVE-2026-42215 / GHSA-2f96 and hardened since) can be bypassed for **every** guarded
+  method (`clone`/`clone_from`, `fetch`/`pull`/`push`, `ls_remote`, `iter_commits`,
+  `blame`, `archive`) by smuggling an option token inside the VALUE of a single-character
+  kwarg. In the default `allow_unsafe_options=False` configuration this yields arbitrary
+  command execution via `--upload-pack`."
+date: "2026-07-24"
+pubdate: "2026-07-24"
+affected_range: "<3.1.54"
+fixed_versions:
+- "3.1.54"
+affected_versions: "All versions before 3.1.54"
+not_impacted: "All versions starting from 3.1.54"
+solution: "Upgrade to version 3.1.54 or above."
+urls:
+- "https://github.com/advisories/GHSA-r9mr-m37c-5fr3"
+- "https://github.com/gitpython-developers/GitPython/security/advisories/GHSA-r9mr-m37c-5fr3"
+- "https://github.com/gitpython-developers/GitPython/pull/2180"
+- "https://github.com/gitpython-developers/GitPython/commit/e8d0fbf774d1f6baa3b481adfe48bd262e43b453"
+- "https://github.com/gitpython-developers/GitPython/releases/tag/3.1.54"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+uuid: "947f7b1b-3a0c-4ce6-9073-d4cedbb2ecef"
+cwe_ids:
+- "CWE-78"
+- "CWE-88"
+- "CWE-937"
+- "CWE-1035"

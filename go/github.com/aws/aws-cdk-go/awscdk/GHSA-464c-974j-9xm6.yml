@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-464c-974j-9xm6"
+identifiers:
+- "GHSA-464c-974j-9xm6"
+package_slug: "go/github.com/aws/aws-cdk-go/awscdk"
+title: "AWS CDK CodeBuild S3 Log Encryption Boolean Inversion"
+description: "The AWS Cloud Development Kit (AWS CDK) is an open-source software development
+  framework for defining cloud infrastructure in code and provisioning it through
+  AWS CloudFormation. We identified an issue in which explicitly setting `encrypted:
+  true` on the `S3LoggingOptions` property of an AWS CodeBuild project construct produces
+  the opposite of the intended behavior, disabling encryption on CodeBuild build logs
+  stored in S3."
+date: "2026-07-24"
+pubdate: "2026-07-24"
+affected_range: ">=1.175.0-devpreview <=1.204.0-devpreview"
+fixed_versions: []
+affected_versions: "All versions starting from 1.175.0-devpreview up to 1.204.0-devpreview"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-464c-974j-9xm6"
+- "https://github.com/aws/aws-cdk/security/advisories/GHSA-464c-974j-9xm6"
+- "https://github.com/aws/aws-cdk/pull/37761"
+- "https://github.com/aws/aws-cdk/commit/40319185dc645d2afc6acf1d25547a86250e97af"
+- "https://github.com/aws/aws-cdk/releases/tag/v2.253.0"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:N"
+uuid: "b6420d0d-2187-4962-a1b6-43df205bef0f"
+cwe_ids:
+- "CWE-311"
+- "CWE-682"
+- "CWE-937"
+- "CWE-1035"

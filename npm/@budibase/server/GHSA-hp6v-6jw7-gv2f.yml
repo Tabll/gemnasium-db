@@ -1,0 +1,39 @@
+---
+identifier: "GHSA-hp6v-6jw7-gv2f"
+identifiers:
+- "GHSA-hp6v-6jw7-gv2f"
+package_slug: "npm/@budibase/server"
+title: " Budibase: OIDC SSO account takeover: incoming identity linked by email without
+  checking email_verified"
+description: "Budibase's OIDC SSO login links an incoming SSO identity to an existing
+  Budibase account **by email address alone**, without ever checking the `email_verified`
+  claim of the OIDC ID token. Budibase first tries to match the IdP `sub`; when that
+  misses (any fresh attacker IdP account) it silently falls back to matching by the
+  `email` claim and **merges into the existing account by email**, preserving that
+  account's `_id` and roles. Because the `email_verified` flag is never read, an attacker
+  who can make a **configured/trusted** IdP emit a token carrying `email = <victim>`
+  with `email_verified = false` is logged into Budibase **as the victim**, inheriting
+  the victim's roles (including global admin/builder). Per OIDC Core §5.7 the `email`
+  claim MUST NOT be used as an identity key unless `email_verified` is `true`; Budibase
+  effectively delegates all account-linking trust to every configured IdP's email-verification
+  policy while checking nothing itself. Full account takeover of any existing Budibase
+  user, including the instance owner."
+date: "2026-07-24"
+pubdate: "2026-07-24"
+affected_range: "<=3.38.1"
+fixed_versions: []
+affected_versions: "All versions up to 3.38.1"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-hp6v-6jw7-gv2f"
+- "https://github.com/Budibase/budibase/security/advisories/GHSA-hp6v-6jw7-gv2f"
+- "https://github.com/Budibase/budibase/commit/9ecd0048d9c3ae0ee9bd0e6204c621794dd1a4d3"
+- "https://github.com/Budibase/budibase/releases/tag/3.39.30"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H"
+uuid: "63d9e5b9-9aa7-4474-ae23-90dcd7763a45"
+cwe_ids:
+- "CWE-287"
+- "CWE-937"
+- "CWE-1035"

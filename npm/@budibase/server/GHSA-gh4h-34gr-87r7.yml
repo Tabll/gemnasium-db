@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-gh4h-34gr-87r7"
+identifiers:
+- "GHSA-gh4h-34gr-87r7"
+package_slug: "npm/@budibase/server"
+title: " Budibase: OAuth2 Token Disclosure via Automation Test Results Broadcast to
+  Other Builders"
+description: "When an SSO-authenticated user tests an automation in the Budibase builder,
+  their OAuth2 access token and refresh token are included in the automation test
+  results. These results are broadcast via WebSocket to all builders connected to
+  the same dev app and stored in an in-memory cache accessible to any builder who
+  polls the test status endpoint. This allows any co-builder of the same app to steal
+  the testing user's OAuth2 tokens."
+date: "2026-07-24"
+pubdate: "2026-07-24"
+affected_range: "<=3.38.1"
+fixed_versions: []
+affected_versions: "All versions up to 3.38.1"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-gh4h-34gr-87r7"
+- "https://github.com/Budibase/budibase/security/advisories/GHSA-gh4h-34gr-87r7"
+- "https://github.com/Budibase/budibase/pull/19107"
+- "https://github.com/Budibase/budibase/commit/bca426de7dc36d680285295655dc640dea2aab21"
+- "https://github.com/Budibase/budibase/releases/tag/3.39.25"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:N/A:N"
+uuid: "c455e6a5-11ce-42c8-9408-8348e7472bc0"
+cwe_ids:
+- "CWE-200"
+- "CWE-937"
+- "CWE-1035"

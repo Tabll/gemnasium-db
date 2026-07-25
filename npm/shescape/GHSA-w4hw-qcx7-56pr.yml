@@ -1,0 +1,46 @@
+---
+identifier: "GHSA-w4hw-qcx7-56pr"
+identifiers:
+- "GHSA-w4hw-qcx7-56pr"
+package_slug: "npm/shescape"
+title: "Shescape: Shell injection via unescaped parentheses on Windows with CMD"
+description: "This impacts users of Shescape on Windows that explicitly configure
+  `shell` to CMD, or `true` with the default shell being CMD, using the `escape` and
+  `escapeAll` APIs.\n\nAn attacker may be able to achieve shell injection depending
+  on the original command.\n\n```javascript\nimport * as cp from \"node:child_process\";\nimport
+  { Shescape } from \"shescape\";\n\n// 1. Prerequisites\nconst options = {\nshell:
+  \"cmd.exe\",\n// Or\nshell: true, // Only if the default shell is CMD\n};\n\n//
+  2. Payload\nconst payload = \"x) else if a==a (echo y\";\n\n// 3. Usage\nconst shescape
+  = new Shescape(options);\nlet escapedPayload;\n\nescapedPayload = shescape.escape(payload);\n//
+  Or\nescapedPayload = shescape.escapeAll([payload]);\n\n// And (example)\nconst result
+  = cp.execSync(`if defined FALSY (echo ${escapedPayload})`, options);\n\n// 4. Impact\nconsole.log(result.toString());\n//
+  Outputs \"y\" instead of \"\"\n\n```"
+date: "2026-07-24"
+pubdate: "2026-07-24"
+affected_range: "<2.1.14||>=3.0.0 <3.0.1"
+fixed_versions:
+- "2.1.14"
+- "3.0.1"
+affected_versions: "All versions before 2.1.14, all versions starting from 3.0.0 before
+  3.0.1"
+not_impacted: "All versions starting from 2.1.14 before 3.0.0, all versions starting
+  from 3.0.1"
+solution: "Upgrade to versions 2.1.14, 3.0.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-w4hw-qcx7-56pr"
+- "https://github.com/ericcornelissen/shescape/security/advisories/GHSA-w4hw-qcx7-56pr"
+- "https://github.com/ericcornelissen/shescape/pull/2649"
+- "https://github.com/ericcornelissen/shescape/pull/2651"
+- "https://github.com/ericcornelissen/shescape/commit/43d70b59d09bbe5c3fd02ef08b3a123e977ed9de"
+- "https://github.com/ericcornelissen/shescape/commit/b4b34c394e7f9da2775bb75381066b9a228c425f"
+- "https://github.com/ericcornelissen/shescape/blob/dea8893a5877893d8d4923dbf253080e08899e6d/docs/migration.md"
+- "https://github.com/ericcornelissen/shescape/releases/tag/v2.1.14"
+- "https://github.com/ericcornelissen/shescape/releases/tag/v3.0.1"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+uuid: "db75c872-6a91-4c04-80c9-0e50a6a127fa"
+cwe_ids:
+- "CWE-78"
+- "CWE-150"
+- "CWE-937"
+- "CWE-1035"

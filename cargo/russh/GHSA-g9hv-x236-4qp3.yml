@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-g9hv-x236-4qp3"
+identifiers:
+- "GHSA-g9hv-x236-4qp3"
+package_slug: "cargo/russh"
+title: "Russh: client wrong-length X25519 `clone_from_slice` panic (pre-auth DoS)"
+description: "A malicious SSH server can crash a `russh` client session with a single\nmalformed
+  key-exchange reply, causing a pre-authentication Denial-of-Service\nbefore the server
+  host key is verified. The embedding process itself stays\nup, but the connection
+  is killed deterministically."
+date: "2026-07-24"
+pubdate: "2026-07-24"
+affected_range: "<0.62.4"
+fixed_versions:
+- "0.62.4"
+affected_versions: "All versions before 0.62.4"
+not_impacted: "All versions starting from 0.62.4"
+solution: "Upgrade to version 0.62.4 or above."
+urls:
+- "https://github.com/advisories/GHSA-g9hv-x236-4qp3"
+- "https://github.com/Eugeny/russh/security/advisories/GHSA-g9hv-x236-4qp3"
+- "https://github.com/Eugeny/russh/commit/a7fc1eb5717264e31c3c5f7dd849b73989a08f3d"
+- "https://github.com/Eugeny/russh/releases/tag/v0.62.4"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+uuid: "f453146d-5614-442f-bfa0-1ae5c5884bc0"
+cwe_ids:
+- "CWE-704"
+- "CWE-754"
+- "CWE-937"
+- "CWE-1035"

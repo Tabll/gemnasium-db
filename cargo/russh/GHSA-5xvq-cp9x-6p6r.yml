@@ -1,0 +1,43 @@
+---
+identifier: "GHSA-5xvq-cp9x-6p6r"
+identifiers:
+- "GHSA-5xvq-cp9x-6p6r"
+package_slug: "cargo/russh"
+title: "Russh: Pre-auth remote panic via all-zero Curve25519 peer public value (encode_mpint
+  OOB)"
+description: "A pre-authentication denial-of-service panic in `russh` 0.62.2 (commit\n`c4be19f1915c8682f4615c3fd50008512b474491`,
+  current default branch `main` as\nof 2026-07-22). An unauthenticated client sends
+  a single `SSH_MSG_KEX_ECDH_INIT`\nwhose `Q_C` is 32 zero bytes. russh's Curve25519
+  KEX does not reject the\nall-zero peer public value, so `server_dh()` computes the
+  all-zero shared\nsecret and `compute_exchange_hash()` then calls `encode_mpint(&shared.0,
+  ...)`,\nwhich indexes `s[i]` at `i == s.len()` and **panics** (`index out of bounds:\nthe
+  len is 32 but the index is 32`) **before host-key signature verification**.\nThe
+  server KEX task dies on the first KEX message, before authentication.\n\nThis is
+  reachable with the **default** server configuration\n(`Config::default()` → `Preferred::DEFAULT`,
+  whose kex list includes\n`curve25519-sha256`) and requires **no caller-supplied
+  parameter**. It is\nreproduced end-to-end against the unmodified real russh 0.62.2
+  library (a real\nserver + raw TCP client over TCP); the PoC below links the real
+  crate, not a\ncopied snippet. The defect is still present on `main` HEAD (`v0.62.3`,\n2026-07-22)
+  and is not covered by any of the 11 published russh GHSA advisories\n(GHSA-cqvm-j2r2-hwpg
+  / CVE-2023-28113 is modp DH group validation, not\nCurve25519).\n\nRust bounds-checked
+  panics abort the task safely (no memory corruption / RCE);\nthe impact is remote
+  **denial of service**."
+date: "2026-07-24"
+pubdate: "2026-07-24"
+affected_range: "<0.62.4"
+fixed_versions:
+- "0.62.4"
+affected_versions: "All versions before 0.62.4"
+not_impacted: "All versions starting from 0.62.4"
+solution: "Upgrade to version 0.62.4 or above."
+urls:
+- "https://github.com/advisories/GHSA-5xvq-cp9x-6p6r"
+- "https://github.com/Eugeny/russh/security/advisories/GHSA-5xvq-cp9x-6p6r"
+- "https://github.com/Eugeny/russh/commit/a7fc1eb5717264e31c3c5f7dd849b73989a08f3d"
+- "https://github.com/Eugeny/russh/releases/tag/v0.62.4"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+uuid: "1e15a268-837f-4424-b223-055fbfe03ae1"
+cwe_ids:
+- "CWE-754"
+- "CWE-937"
+- "CWE-1035"

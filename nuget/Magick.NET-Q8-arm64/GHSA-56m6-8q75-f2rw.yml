@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-56m6-8q75-f2rw"
+identifiers:
+- "GHSA-56m6-8q75-f2rw"
+package_slug: "nuget/Magick.NET-Q8-arm64"
+title: "ImageMagick: Policy Bypass due to an incomplete fix of CVE-2026-49219"
+description: "An incomplete fix of CVE-2026-49219 could result in a policy bypass."
+date: "2026-07-24"
+pubdate: "2026-07-24"
+affected_range: "[,14.15.0)"
+fixed_versions:
+- "14.15.0"
+affected_versions: "All versions before 14.15.0"
+not_impacted: "All versions starting from 14.15.0"
+solution: "Upgrade to version 14.15.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-56m6-8q75-f2rw"
+- "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-56m6-8q75-f2rw"
+- "https://github.com/dlemstra/Magick.NET/releases/tag/14.15.0"
+cvss_v3: "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N"
+uuid: "0ed51210-bea9-4fe4-b7e5-d7258672775f"
+cwe_ids:
+- "CWE-59"
+- "CWE-367"
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

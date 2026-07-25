@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-mqhr-6j6h-74p5"
+identifiers:
+- "GHSA-mqhr-6j6h-74p5"
+package_slug: "npm/@budibase/server"
+title: " Budibase: Unauthenticated REST Datasource Credential Theft via Cross-Origin
+  Auth Leak "
+description: "Budibase attaches a REST datasource's stored credentials (Bearer/Basic
+  tokens and static headers) to an outgoing request before it decides which host the
+  request goes to, and never checks that the destination host matches the datasource.
+  A query's request path can be pointed at any host (via an absolute URL or a user-supplied
+  `{{ parameter }}`), so the stored credentials are delivered to an attacker-chosen
+  server. Because a query can be published with the PUBLIC role, this is reachable
+  by a fully unauthenticated attacker with one HTTP request. The credentials are masked
+  (`--secret-value--`) everywhere in the API, yet this recovers them in cleartext.
+  This is a bypass of GHSA-3gp5 (which fixed the base-URL rewrite vector but added
+  no same-origin check; the query-path vector remains, now unauthenticated)."
+date: "2026-07-24"
+pubdate: "2026-07-24"
+affected_range: "<=3.38.1"
+fixed_versions: []
+affected_versions: "All versions up to 3.38.1"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-mqhr-6j6h-74p5"
+- "https://github.com/Budibase/budibase/security/advisories/GHSA-mqhr-6j6h-74p5"
+- "https://github.com/Budibase/budibase/pull/19239"
+- "https://github.com/Budibase/budibase/commit/8b1bca71501b11c68310351ef4f2c3028b2d5f08"
+- "https://github.com/Budibase/budibase/releases/tag/3.40.1"
+uuid: "c5241272-ab89-492d-a773-79341210cf6c"
+cwe_ids:
+- "CWE-200"
+- "CWE-937"
+- "CWE-1035"

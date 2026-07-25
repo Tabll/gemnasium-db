@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-pmpg-2mxq-6xwr"
+identifiers:
+- "GHSA-pmpg-2mxq-6xwr"
+package_slug: "npm/@budibase/server"
+title: " Budibase: NoSQL injection in MongoDB integration: collection dump, $where
+  JS exec, cross-collection pivot, arbitrary update/delete"
+description: "An end-user injection in Budibase's MongoDB datasource lets any BASIC
+  app user bypass the builder's query-level access controls. Builders scope MongoDB
+  reads per-user with bindings like `{\"email\": \"{{ currentUser.email }}\"}` so
+  each app user only sees their own rows. Because the binding is handlebars-enriched
+  into the query JSON with `noEscaping: true` and then `JSON.parse`d, Bob (a BASIC
+  user) overrides the builder's filter with a MongoDB operator and reads every document
+  the connection can touch. SQL datasources are parameterized through `interpolateSQL()`;
+  the MongoDB path has no equivalent, so the scoping pattern Budibase's own docs show
+  is unsafe."
+date: "2026-07-24"
+pubdate: "2026-07-24"
+affected_range: "<=3.38.1"
+fixed_versions: []
+affected_versions: "All versions up to 3.38.1"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-pmpg-2mxq-6xwr"
+- "https://github.com/Budibase/budibase/security/advisories/GHSA-pmpg-2mxq-6xwr"
+- "https://github.com/Budibase/budibase/pull/18907"
+- "https://github.com/Budibase/budibase/commit/dd8c0654b35cd89ce3645f2355f4bf2ff9a5dd80"
+- "https://github.com/Budibase/budibase/releases/tag/3.39.9"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:N"
+uuid: "a737073d-dc8b-48dc-b2af-77b41178b771"
+cwe_ids:
+- "CWE-89"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,26 @@
+---
+identifier: "GHSA-jfq9-q63x-rc63"
+identifiers:
+- "GHSA-jfq9-q63x-rc63"
+package_slug: "nuget/Magick.NET-Q16-HDRI-arm64"
+title: "ImageMagick: Memory Leak in TIFF encoder when an allocation fails"
+description: "When an allocation fails in the TIFF encoder a small memory leak will
+  occur."
+date: "2026-07-24"
+pubdate: "2026-07-24"
+affected_range: "[,14.15.0)"
+fixed_versions:
+- "14.15.0"
+affected_versions: "All versions before 14.15.0"
+not_impacted: "All versions starting from 14.15.0"
+solution: "Upgrade to version 14.15.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-jfq9-q63x-rc63"
+- "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-jfq9-q63x-rc63"
+- "https://github.com/dlemstra/Magick.NET/releases/tag/14.15.0"
+cvss_v3: "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L"
+uuid: "d09ac27c-bdfe-4a11-a9fb-5028ea479531"
+cwe_ids:
+- "CWE-401"
+- "CWE-937"
+- "CWE-1035"

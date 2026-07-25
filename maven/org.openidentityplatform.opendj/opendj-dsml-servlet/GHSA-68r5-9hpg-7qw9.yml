@@ -1,0 +1,39 @@
+---
+identifier: "GHSA-68r5-9hpg-7qw9"
+identifiers:
+- "GHSA-68r5-9hpg-7qw9"
+package_slug: "maven/org.openidentityplatform.opendj/opendj-dsml-servlet"
+title: "OpenDJ unauthenticated SSRF, local file read and unbounded-read DoS in the
+  DSMLv2 gateway"
+description: "The DSMLv2 SOAP gateway (opendj-dsml-servlet) in OpenIdentityPlatform
+  OpenDJ through 5.1.1 dereferences attacker-supplied xsd:anyURI values server-side
+  without a scheme allowlist, egress filtering, or a size cap, and is reachable without
+  authentication by default. A remote unauthenticated attacker can submit a DSML add/modify
+  request whose value is a URI to (1) perform server-side request forgery against
+  internal services and the cloud metadata endpoint (SSRF), (2) read local files via
+  file: URIs, and (3) exhaust memory through an unbounded response read (DoS). Fixed
+  in 5.1.2: anyURI dereferencing is disabled by default; when enabled it is limited
+  to an http/https allowlist, rejects loopback/link-local/private/reserved targets,
+  refuses HTTP redirects, and caps the bytes read. The gateway also now requires container-managed
+  authentication by default."
+date: "2026-07-24"
+pubdate: "2026-07-24"
+affected_range: "[,5.1.2)"
+fixed_versions:
+- "5.1.2"
+affected_versions: "All versions before 5.1.2"
+not_impacted: "All versions starting from 5.1.2"
+solution: "Upgrade to version 5.1.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-68r5-9hpg-7qw9"
+- "https://github.com/OpenIdentityPlatform/OpenDJ/security/advisories/GHSA-68r5-9hpg-7qw9"
+- "https://github.com/OpenIdentityPlatform/OpenDJ/commit/131e8576dcf3613f944c3e02527959bbf52370c3"
+- "https://github.com/OpenIdentityPlatform/OpenDJ/releases/tag/5.1.2"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:H"
+uuid: "b8949cf5-1209-4d08-9a9e-347f3eb9c677"
+cwe_ids:
+- "CWE-73"
+- "CWE-400"
+- "CWE-918"
+- "CWE-937"
+- "CWE-1035"

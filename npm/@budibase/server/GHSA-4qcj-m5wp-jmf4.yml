@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-4qcj-m5wp-jmf4"
+identifiers:
+- "GHSA-4qcj-m5wp-jmf4"
+package_slug: "npm/@budibase/server"
+title: " Budibase: Missing RBAC on GET /api/global/groups allows BASIC users to enumerate
+  all tenant groups and role mappings"
+description: "The `GET /api/global/groups` endpoint on the worker service has no role-based
+  authorization middleware. Any authenticated user (including BASIC role) can enumerate
+  all user groups in the tenant, including their role mappings, user memberships,
+  builder permissions, and the isDefault flag."
+date: "2026-07-24"
+pubdate: "2026-07-24"
+affected_range: "<=3.38.1"
+fixed_versions: []
+affected_versions: "All versions up to 3.38.1"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-4qcj-m5wp-jmf4"
+- "https://github.com/Budibase/budibase/security/advisories/GHSA-4qcj-m5wp-jmf4"
+- "https://github.com/Budibase/budibase/pull/19109"
+- "https://github.com/Budibase/budibase/commit/93db77846e68231ba655f180581c94503985421a"
+- "https://github.com/Budibase/budibase/releases/tag/3.39.25"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N"
+uuid: "6a90c316-9798-4237-8ee9-ac5aff3b8b02"
+cwe_ids:
+- "CWE-862"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-3r53-75j5-3g7j"
+identifiers:
+- "GHSA-3r53-75j5-3g7j"
+package_slug: "npm/quasar"
+title: "Quasar: Prototype pollution in the extend() utility"
+description: "`quasar@2.20.1`, the latest published version at the time of testing,
+  appears to be vulnerable to prototype pollution through the public `extend()` utility
+  exported from the package root.\n\nWhen `extend(true, target, source)` is used for
+  a deep merge, attacker-controlled object keys are recursively copied into the target
+  object without blocking prototype-pollution primitives such as `__proto__`, `constructor`,
+  or `prototype`.\n\nThis can allow attacker-controlled properties to be written to
+  `Object.prototype`."
+date: "2026-07-24"
+pubdate: "2026-07-24"
+affected_range: "<2.22.0"
+fixed_versions:
+- "2.22.0"
+affected_versions: "All versions before 2.22.0"
+not_impacted: "All versions starting from 2.22.0"
+solution: "Upgrade to version 2.22.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-3r53-75j5-3g7j"
+- "https://github.com/quasarframework/quasar/security/advisories/GHSA-3r53-75j5-3g7j"
+- "https://github.com/quasarframework/quasar/commit/d0a95d95ab3c29d13e1b8ba8c5e5025fd6ce35e7"
+- "https://github.com/quasarframework/quasar/releases/tag/quasar-v2.22.0"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L"
+uuid: "532620be-83f2-4b74-b45c-8b77aa656406"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"
+- "CWE-1321"

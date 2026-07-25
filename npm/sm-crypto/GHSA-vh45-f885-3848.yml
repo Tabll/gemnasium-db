@@ -1,0 +1,44 @@
+---
+identifier: "GHSA-vh45-f885-3848"
+identifiers:
+- "GHSA-vh45-f885-3848"
+package_slug: "npm/sm-crypto"
+title: "sm-crypto: Predictable SM2 key generation in Node.js: default RNG uses Math.random
+  + wall clock"
+description: "`sm-crypto` (npm package **0.4.0**, the latest release, published 2026-01-20)\ngenerates
+  SM2 private keys and signing ephemeral scalars from a single\nmodule-wide RNG instance
+  (`src/sm2/utils.js`: `const rng = new SecureRandom()`).\n`SecureRandom` is jsbn's
+  PRNG, which seeds an **ARC4** stream from\n`window.crypto.getRandomValues` when
+  available. **In Node.js — sm-crypto's\nprimary runtime — `window` is `undefined`,
+  so the CSPRNG branch is skipped**\nand the seed pool is instead filled from `Math.random()`
+  (V8 `xorshift128+`,\nrecoverable from a few outputs) plus `new Date().getTime()`
+  (wall clock,\nattacker-estimable).\n\nNode *does* expose Web Crypto as `globalThis.crypto`,
+  but jsbn checks\n`window.crypto`, not `globalThis.crypto`, so the secure path is
+  never taken.\nConsequently every SM2 private key produced by the default\n`sm2.generateKeyPairHex()`
+  and every signing ephemeral scalar is derived from\nnon-cryptographic sources and
+  is **predictable** by an attacker who can observe\na few `Math.random()` outputs
+  and estimate the generation time.\n\nThis is the library's **default** (no-argument)
+  path; no caller-selected\nparameter or configuration is required to trigger it.
+  It is reproduced\nend-to-end against the unmodified real npm packages (`sm-crypto@0.4.0`
+  +\n`jsbn@1.1.0`); the PoC below runs against the real installed package, not a\ncopy.
+  The defect is still present on the latest published version (0.4.0) and\nis not
+  covered by any existing `JuneAndGreen/sm-crypto` issue (0 afldl issues\nexist; the
+  most recent issues are unrelated SM3/HKDF/PBKDF2 feature requests)."
+date: "2026-07-24"
+pubdate: "2026-07-24"
+affected_range: "<0.5.0"
+fixed_versions:
+- "0.5.0"
+affected_versions: "All versions before 0.5.0"
+not_impacted: "All versions starting from 0.5.0"
+solution: "Upgrade to version 0.5.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-vh45-f885-3848"
+- "https://github.com/JuneAndGreen/sm-crypto/security/advisories/GHSA-vh45-f885-3848"
+- "https://github.com/JuneAndGreen/sm-crypto/commit/1f9bd7bd160c24efd9c26c8f7fda997c68c823d0"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N"
+uuid: "a4e9e426-2bf6-42aa-9de7-c1a5635f28f4"
+cwe_ids:
+- "CWE-338"
+- "CWE-937"
+- "CWE-1035"

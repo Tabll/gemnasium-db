@@ -1,0 +1,41 @@
+---
+identifier: "GHSA-6v4m-fw66-8r4x"
+identifiers:
+- "GHSA-6v4m-fw66-8r4x"
+package_slug: "npm/shescape"
+title: "Shescape: Path disclosure on Unix with Zsh"
+description: "This impacts users of Shescape on Unix systems that explicitly configure
+  `shell` to Zsh, or `true` when the default shell is Zsh, using the `escape` and
+  `escapeAll`. The Zsh options `EXTENDED_GLOB` and `MAGIC_EQUAL_SUBST` exacerbate
+  the problem.\n\nIn certain case, an attacker can leverage home directory expansion
+  and extended glob syntax to obtain lists of files and directories on the system.
+  Depending on what the command does, this may be used to leak more information."
+date: "2026-07-24"
+pubdate: "2026-07-24"
+affected_range: "<2.1.14||>=3.0.0 <3.0.1"
+fixed_versions:
+- "2.1.14"
+- "3.0.1"
+affected_versions: "All versions before 2.1.14, all versions starting from 3.0.0 before
+  3.0.1"
+not_impacted: "All versions starting from 2.1.14 before 3.0.0, all versions starting
+  from 3.0.1"
+solution: "Upgrade to versions 2.1.14, 3.0.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-6v4m-fw66-8r4x"
+- "https://github.com/ericcornelissen/shescape/security/advisories/GHSA-6v4m-fw66-8r4x"
+- "https://github.com/ericcornelissen/shescape/pull/2649"
+- "https://github.com/ericcornelissen/shescape/pull/2651"
+- "https://github.com/ericcornelissen/shescape/commit/43d70b59d09bbe5c3fd02ef08b3a123e977ed9de"
+- "https://github.com/ericcornelissen/shescape/commit/b4b34c394e7f9da2775bb75381066b9a228c425f"
+- "https://github.com/ericcornelissen/shescape/blob/dea8893a5877893d8d4923dbf253080e08899e6d/docs/migration.md"
+- "https://github.com/ericcornelissen/shescape/releases/tag/v2.1.14"
+- "https://github.com/ericcornelissen/shescape/releases/tag/v3.0.1"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N"
+uuid: "0144c3a0-c49d-40e1-85a9-d0d8e2d25079"
+cwe_ids:
+- "CWE-78"
+- "CWE-155"
+- "CWE-937"
+- "CWE-1035"

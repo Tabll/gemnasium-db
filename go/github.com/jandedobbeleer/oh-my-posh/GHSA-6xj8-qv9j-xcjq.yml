@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-6xj8-qv9j-xcjq"
+identifiers:
+- "GHSA-6xj8-qv9j-xcjq"
+package_slug: "go/github.com/jandedobbeleer/oh-my-posh"
+title: "Oh My Posh: Arbitrary command execution via template injection in the path
+  segment"
+description: "Oh My Posh re-renders the resolved path string, which contains the raw
+  folder names taken from the filesystem, through the Go `text/template` engine. That
+  engine's function map exposes a `cmd` function that runs arbitrary OS commands.
+  A directory whose name contains a Go template expression is therefore evaluated
+  when the prompt renders, giving arbitrary command execution as the current user
+  as soon as the shell is inside (or below) that directory. The built-in default configuration
+  is affected."
+date: "2026-07-24"
+pubdate: "2026-07-24"
+affected_range: "<29.35.1"
+fixed_versions:
+- "29.35.1"
+affected_versions: "All versions before 29.35.1"
+not_impacted: "All versions starting from 29.35.1"
+solution: "Upgrade to version 29.35.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-6xj8-qv9j-xcjq"
+- "https://github.com/JanDeDobbeleer/oh-my-posh/security/advisories/GHSA-6xj8-qv9j-xcjq"
+- "https://github.com/JanDeDobbeleer/oh-my-posh/commit/88ddbe0b0a4dd13cc345996108c9869493f2c690"
+- "https://github.com/JanDeDobbeleer/oh-my-posh/releases/tag/v29.35.1"
+- "https://github.com/JanDeDobbeleer/oh-my-posh/releases/tag/v29.36.0"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+uuid: "a34166ba-3ba9-46cc-8da4-c1d717d28d54"
+cwe_ids:
+- "CWE-94"
+- "CWE-937"
+- "CWE-1035"
+- "CWE-1336"

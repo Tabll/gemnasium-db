@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-f45q-w629-wr25"
+identifiers:
+- "GHSA-f45q-w629-wr25"
+package_slug: "cargo/hubuum_client"
+title: "Hubuum client library (Rust): Authenticated requests may escape the configured
+  base path through redirects"
+description: "The built-in async and blocking clients used reqwest's default redirect
+  policy. `BaseUrl` constrains the initial request to the configured origin and path
+  prefix, but redirect processing occurs after that validation. reqwest retains sensitive
+  headers when a redirect changes only the path on the same scheme, host, and port.
+  A redirect from a Hubuum endpoint to another path on a shared origin could therefore
+  carry the bearer `Authorization` header outside the configured Hubuum path prefix.\n\nExploitation
+  requires an attacker, compromised server, or intermediary to influence a 3xx response.
+  Cross-origin redirects are not affected because reqwest strips sensitive headers
+  when scheme, host, or port changes."
+date: "2026-07-24"
+pubdate: "2026-07-24"
+affected_range: ">=0.0.1 <0.6.1"
+fixed_versions:
+- "0.6.1"
+affected_versions: "All versions starting from 0.0.1 before 0.6.1"
+not_impacted: "All versions before 0.0.1, all versions starting from 0.6.1"
+solution: "Upgrade to version 0.6.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-f45q-w629-wr25"
+- "https://github.com/hubuum/hubuum-client-rust/security/advisories/GHSA-f45q-w629-wr25"
+- "https://github.com/hubuum/hubuum-client-rust/commit/5a5c275ffa45f342459b7d3e977926da643bde50"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N"
+uuid: "bdbec21f-c994-4138-8b2c-8d944385a5e7"
+cwe_ids:
+- "CWE-200"
+- "CWE-937"
+- "CWE-1035"

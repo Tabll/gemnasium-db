@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-r277-6w6q-xmqw"
+identifiers:
+- "GHSA-r277-6w6q-xmqw"
+package_slug: "go/github.com/getkin/kin-openapi"
+title: "kin-openapi: ValidationHandler.Load() Fail-Open Authentication Bypass via
+  NoopAuthenticationFunc Default"
+description: "`ValidationHandler.Load()` in `getkin/kin-openapi` silently replaces
+  a nil `AuthenticationFunc` with `NoopAuthenticationFunc`, which always returns `nil`
+  without performing any credential check. Because this substitution happens unconditionally
+  when the caller omits the field, every OpenAPI `security` requirement declared in
+  the spec is silently satisfied for unauthenticated requests. An unauthenticated
+  remote attacker can reach handlers for routes whose OpenAPI operation requires an
+  API key, OAuth token, or any other security scheme if the application relies on
+  `ValidationHandler` as its enforcement middleware."
+date: "2026-07-24"
+pubdate: "2026-07-24"
+affected_range: "<0.144.0"
+fixed_versions:
+- "0.144.0"
+affected_versions: "All versions before 0.144.0"
+not_impacted: "All versions starting from 0.144.0"
+solution: "Upgrade to version 0.144.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-r277-6w6q-xmqw"
+- "https://github.com/getkin/kin-openapi/security/advisories/GHSA-r277-6w6q-xmqw"
+- "https://github.com/getkin/kin-openapi/commit/f0407d53b0730280266f454b755010e7eeb985da"
+- "https://github.com/getkin/kin-openapi/releases/tag/v0.144.0"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N"
+uuid: "6e5bc9c7-4b18-45e3-b0b5-23abe8f0f8a7"
+cwe_ids:
+- "CWE-287"
+- "CWE-937"
+- "CWE-1035"

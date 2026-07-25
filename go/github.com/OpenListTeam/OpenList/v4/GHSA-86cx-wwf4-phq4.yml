@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-86cx-wwf4-phq4"
+identifiers:
+- "GHSA-86cx-wwf4-phq4"
+package_slug: "go/github.com/OpenListTeam/OpenList/v4"
+title: "OpenList: Arbitrary File Read via Path Prefix Confusion in Share Creation
+  API"
+description: "An authorization bypass vulnerability exists in the file sharing mechanism
+  of `Openlist`. Due to a flawed, non-separator-aware path validation check, an authenticated
+  user can create share links for files outside their restricted base directory. This
+  allows an attacker to bypass tenant/user isolation and gain unauthorized read access
+  to arbitrary files within the system."
+date: "2026-07-24"
+pubdate: "2026-07-24"
+affected_range: "<4.2.4"
+fixed_versions:
+- "4.2.4"
+affected_versions: "All versions before 4.2.4"
+not_impacted: "All versions starting from 4.2.4"
+solution: "Upgrade to version 4.2.4 or above."
+urls:
+- "https://github.com/advisories/GHSA-86cx-wwf4-phq4"
+- "https://github.com/OpenListTeam/OpenList/security/advisories/GHSA-86cx-wwf4-phq4"
+- "https://github.com/OpenListTeam/OpenList/commit/59bd3431408578f420895457554700cc9a52375a"
+- "https://github.com/OpenListTeam/OpenList/releases/tag/v4.2.4"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+uuid: "79603bf9-3715-4d8b-a602-03c495cf128a"
+cwe_ids:
+- "CWE-639"
+- "CWE-937"
+- "CWE-1035"

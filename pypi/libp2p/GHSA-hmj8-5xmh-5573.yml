@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-hmj8-5xmh-5573"
+identifiers:
+- "GHSA-hmj8-5xmh-5573"
+package_slug: "pypi/libp2p"
+title: "libp2p: yamux connection DoS via oversized data frame"
+description: "The yamux stream multiplexer in py-libp2p does not validate incoming
+  DATA frame lengths against the receive window before reading the frame body. Any
+  peer that completes a standard libp2p handshake can send a single 12-byte frame
+  claiming a 4 GB body, causing the victim's yamux read loop to block indefinitely.
+  This affects the default `new_host()` configuration and requires no special setup
+  on either side."
+date: "2026-07-24"
+pubdate: "2026-07-24"
+affected_range: "<=0.6.0"
+fixed_versions: []
+affected_versions: "All versions up to 0.6.0"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-hmj8-5xmh-5573"
+- "https://github.com/libp2p/py-libp2p/security/advisories/GHSA-hmj8-5xmh-5573"
+- "https://github.com/libp2p/py-libp2p/commit/146ea87d1a20cc7dacf684ecf7c204543be04b37"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "d797995c-854b-4272-8145-bc2fc202bc65"
+cwe_ids:
+- "CWE-400"
+- "CWE-937"
+- "CWE-1035"

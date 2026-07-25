@@ -1,0 +1,25 @@
+---
+identifier: "GHSA-q6x4-v3qx-85qw"
+identifiers:
+- "GHSA-q6x4-v3qx-85qw"
+package_slug: "npm/@budibase/server"
+title: " Budibase: SQL Injection via `multipleStatements: true`"
+description: "A critical SQL injection vulnerability was discovered in Budibase's
+  MySQL integration that allows remote attackers to execute arbitrary SQL commands."
+date: "2026-07-24"
+pubdate: "2026-07-24"
+affected_range: "<=3.38.1"
+fixed_versions: []
+affected_versions: "All versions up to 3.38.1"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-q6x4-v3qx-85qw"
+- "https://github.com/Budibase/budibase/security/advisories/GHSA-q6x4-v3qx-85qw"
+- "https://github.com/Budibase/budibase/releases/tag/3.40.0"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H"
+uuid: "126f699d-d484-4bd7-81e1-fe053003a1a3"
+cwe_ids:
+- "CWE-89"
+- "CWE-937"
+- "CWE-1035"
