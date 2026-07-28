@@ -8,7 +8,7 @@ title: "n8n: Expression sandbox escape via arrow-function bodies enabling comman
 description: "An authenticated user with permission to create or modify workflows
   could abuse crafted expressions using arrow functions to bypass the expression sandbox,
   triggering unintended system command execution on the host running n8n."
-date: "2026-07-22"
+date: "2026-07-27"
 pubdate: "2026-07-22"
 affected_range: "<2.31.5||>=2.32.0 <2.32.1"
 fixed_versions:
