@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-hc4m-q9jh-xw4j"
+identifiers:
+- "GHSA-hc4m-q9jh-xw4j"
+package_slug: "cargo/nono-cli"
+title: "nono-cli'scregistry pack verification can fail open when provenance metadata
+  is absent"
+description: "Registry-installed nono packs are expected to be verified from local
+  provenance metadata before they are used. Two files are relevant:\n\n- `~/.config/nono/packages/lockfile.json`\n-
+  `~/.config/nono/packages/<namespace>/<pack>/.nono-trust.bundle`\n\nTesting shows
+  that nono fails closed when a pack has a trust bundle but no lockfile entry. However,
+  if the trust bundle is also absent, the same pack can load successfully. Deleting
+  security metadata should not make a pack easier to run."
+date: "2026-07-28"
+pubdate: "2026-07-28"
+affected_range: "<0.61.3"
+fixed_versions:
+- "0.61.3"
+affected_versions: "All versions before 0.61.3"
+not_impacted: "All versions starting from 0.61.3"
+solution: "Upgrade to version 0.61.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-hc4m-q9jh-xw4j"
+- "https://github.com/always-further/nono/security/advisories/GHSA-hc4m-q9jh-xw4j"
+- "https://github.com/nolabs-ai/nono/commit/db07375031642f089d549b4f7b9abece87e39f87"
+- "https://github.com/nolabs-ai/nono/releases/tag/v0.62.0"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:N"
+uuid: "034ab894-ae52-4078-a252-f31eab003b6f"
+cwe_ids:
+- "CWE-636"
+- "CWE-937"
+- "CWE-1035"

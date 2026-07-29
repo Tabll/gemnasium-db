@@ -1,0 +1,41 @@
+---
+identifier: "GHSA-6xx4-9wp6-65p7"
+identifiers:
+- "GHSA-6xx4-9wp6-65p7"
+package_slug: "cargo/skilo"
+title: "skilo add follows symbolic links, allowing arbitrary local file disclosure
+  from a malicious skill source"
+description: "`skilo add` installs a skill by recursively copying the skill directory
+  into the\ntarget skills directory. The copy routine (`copy_dir_all`) classified
+  each entry\nwith `std::fs::DirEntry::file_type()` — which does **not** follow symlinks
+  — and\nthen copied non-directory entries with `std::fs::copy()`, which **does**\ndereference
+  symlinks.\n\nAs a result, a skill containing a symbolic link such as\n`reference.txt
+  -> /home/<user>/.ssh/id_rsa` was copied as a regular file whose\ncontents are the
+  link's **target**. A malicious skill source — for example a git\nrepository installed
+  via `skilo add github.com/<attacker>/<skills>`, or a local\npath — could read arbitrary
+  files readable by the user running `skilo add` (SSH\nkeys, cloud credentials, `.env`
+  files, etc.) and place their contents inside the\ninstalled skill directory, where
+  the user or their agent may later read, share,\nor sync them.\n\nThis is arbitrary
+  local file disclosure (CWE-59 / CWE-61, symlink following)\ntriggered by installing
+  an untrusted skills source."
+date: "2026-07-28"
+pubdate: "2026-07-28"
+affected_range: ">=0.5.0 <0.11.1"
+fixed_versions:
+- "0.11.1"
+affected_versions: "All versions starting from 0.5.0 before 0.11.1"
+not_impacted: "All versions before 0.5.0, all versions starting from 0.11.1"
+solution: "Upgrade to version 0.11.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-6xx4-9wp6-65p7"
+- "https://github.com/manuelmauro/skilo/security/advisories/GHSA-6xx4-9wp6-65p7"
+- "https://github.com/manuelmauro/skilo/pull/11"
+- "https://github.com/manuelmauro/skilo/commit/c14bdc2eddcf26633ab1dcc0b2d5c0ff42c72a3e"
+- "https://github.com/manuelmauro/skilo/releases/tag/v0.11.1"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N"
+uuid: "0470c88a-4a21-4bc3-a8eb-acc43c462e7d"
+cwe_ids:
+- "CWE-59"
+- "CWE-61"
+- "CWE-937"
+- "CWE-1035"

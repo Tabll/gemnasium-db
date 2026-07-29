@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-vg6v-j97m-h5xq"
+identifiers:
+- "GHSA-vg6v-j97m-h5xq"
+package_slug: "npm/@novu/application-generic"
+title: "@novu/application-generic: `validateUrlSsrf` permits CGNAT (100.64.0.0/10)
+  destinations — affects Workflow HTTP request step + Webhook filter condition"
+description: "Novu's shared SSRF guard `validateUrlSsrf(url)` is used before server-side
+  requests to user-configured URLs. The guard resolves hostnames and blocks a regex
+  list of private/reserved IP ranges, but it does not block `100.64.0.0/10` shared
+  address space. As a result, Novu features protected by this guard can still send
+  server-side requests to destinations such as `100.100.100.200` (Alibaba Cloud metadata
+  service) and any other service reachable in `100.64.0.0/10`."
+date: "2026-07-28"
+pubdate: "2026-07-28"
+affected_range: "<3.17.0"
+fixed_versions:
+- "3.17.0"
+affected_versions: "All versions before 3.17.0"
+not_impacted: "All versions starting from 3.17.0"
+solution: "Upgrade to version 3.17.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-vg6v-j97m-h5xq"
+- "https://github.com/novuhq/novu/security/advisories/GHSA-vg6v-j97m-h5xq"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:N/A:N"
+uuid: "abba8ea8-39ff-404e-8299-2013bef3eed1"
+cwe_ids:
+- "CWE-918"
+- "CWE-937"
+- "CWE-1035"
