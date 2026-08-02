@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-p7w7-4929-vpj5"
+identifiers:
+- "GHSA-p7w7-4929-vpj5"
+package_slug: "npm/@dynatrace-oss/dynatrace-mcp-server"
+title: "`@dynatrace-oss/dynatrace-mcp-server` has Unauthenticated HTTP MCP Tool Invocation"
+description: "`@dynatrace-oss/dynatrace-mcp-server` v1.8.5 exposes an HTTP transport
+  mode (`--http` flag) that performs no authentication, session validation, or origin/host
+  verification before dispatching MCP tool calls. Any network-reachable attacker can
+  send a raw JSON-RPC `tools/call` request without an `Authorization` header and have
+  it executed directly under the victim server's Dynatrace credentials. Confirmed
+  high-impact tools reachable without authentication include `execute_dql` (reads
+  arbitrary Grail data, including logs, security events, and user sessions) and `create_dynatrace_notebook`
+  (writes notebooks to the tenant)."
+date: "2026-07-31"
+pubdate: "2026-07-31"
+affected_range: "<2.0.0"
+fixed_versions:
+- "2.0.0"
+affected_versions: "All versions before 2.0.0"
+not_impacted: "All versions starting from 2.0.0"
+solution: "Upgrade to version 2.0.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-p7w7-4929-vpj5"
+- "https://github.com/dynatrace-oss/dynatrace-mcp/security/advisories/GHSA-p7w7-4929-vpj5"
+- "https://github.com/dynatrace-oss/dynatrace-mcp/pull/536"
+- "https://github.com/dynatrace-oss/dynatrace-mcp/commit/8f12972481e9165e8bd24d63b0a9e71976f85a43"
+- "https://github.com/dynatrace-oss/dynatrace-mcp/releases/tag/v2.0.0"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:L/A:L"
+uuid: "5210fbc2-e137-44ae-a426-64f3761ef04b"
+cwe_ids:
+- "CWE-306"
+- "CWE-937"
+- "CWE-1035"

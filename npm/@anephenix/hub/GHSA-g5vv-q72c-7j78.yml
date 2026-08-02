@@ -11,7 +11,7 @@ description: "`@anephenix/hub` starts a `setInterval` polling loop for every inc
   An unauthenticated attacker who opens many WebSocket connections and ignores all
   server RPC messages will therefore cause the server to accumulate unbounded timers
   and heap entries, leading to CPU and memory exhaustion (DoS)."
-date: "2026-07-24"
+date: "2026-07-31"
 pubdate: "2026-07-24"
 affected_range: "<0.2.16"
 fixed_versions:

@@ -12,7 +12,7 @@ description: "`Nokogiri::XML::Document#root=` validated only that the new root w
   `Document#root=` to element nodes, raising `TypeError` for any other node type.\n\nThis
   memory-safety issue affects only the CRuby implementation (libxml2). The JRuby implementation
   was not affected; the same input validation was added there for behavioral parity."
-date: "2026-06-19"
+date: "2026-07-30"
 pubdate: "2026-06-19"
 affected_range: "<1.19.4"
 fixed_versions:

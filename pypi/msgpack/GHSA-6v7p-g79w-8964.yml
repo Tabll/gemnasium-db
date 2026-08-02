@@ -8,7 +8,7 @@ title: "MessagePack for Python: Out-of-bounds read / crash on Unpacker reuse aft
 description: "If the Unpacker is used repeatedly after an error occurs, the process
   may crash with a SEGV.\n\nIf the Unpacker is used repeatedly to unpack untrusted
   input from external sources, it may be vulnerable to a DoS attack."
-date: "2026-06-19"
+date: "2026-07-31"
 pubdate: "2026-06-19"
 affected_range: "<1.2.1"
 fixed_versions:

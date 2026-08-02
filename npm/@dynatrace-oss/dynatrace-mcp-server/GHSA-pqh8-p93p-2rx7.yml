@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-pqh8-p93p-2rx7"
+identifiers:
+- "GHSA-pqh8-p93p-2rx7"
+package_slug: "npm/@dynatrace-oss/dynatrace-mcp-server"
+title: "@dynatrace-oss/dynatrace-mcp-server has a DQL injection via parameters not
+  documented as DQL"
+description: "A DQL injection vulnerability in several read tools lets a caller bypass
+  the tools' documented field-scope, time-window, and display caps by injecting DQL
+  pipeline stages through parameters typed as identifiers."
+date: "2026-07-31"
+pubdate: "2026-07-31"
+affected_range: "<2.1.1"
+fixed_versions:
+- "2.1.1"
+affected_versions: "All versions before 2.1.1"
+not_impacted: "All versions starting from 2.1.1"
+solution: "Upgrade to version 2.1.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-pqh8-p93p-2rx7"
+- "https://github.com/dynatrace-oss/dynatrace-mcp/security/advisories/GHSA-pqh8-p93p-2rx7"
+- "https://github.com/dynatrace-oss/dynatrace-mcp/pull/562"
+- "https://github.com/dynatrace-oss/dynatrace-mcp/commit/15d3546c0618ffbaeaeca477337e08e92f2151bc"
+- "https://github.com/dynatrace-oss/dynatrace-mcp/releases/tag/v2.1.1"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:N"
+uuid: "99800693-f8ee-4211-b76e-6cf840e30bbd"
+cwe_ids:
+- "CWE-937"
+- "CWE-943"
+- "CWE-1035"
