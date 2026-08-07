@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-gwfq-86j8-7qhv"
+identifiers:
+- "GHSA-gwfq-86j8-7qhv"
+package_slug: "go/github.com/rclone/rclone"
+title: "rclone: Verbose Stack Trace Disclosure in RC API Error Responses"
+description: "When an RC API call triggers a panic (recovered by the job runner),
+  the full Go stack trace is included in the JSON error response. This leaks internal
+  file paths, Go module versions, goroutine state, and memory addresses to the API
+  caller."
+date: "2026-08-05"
+pubdate: "2026-08-05"
+affected_range: "<1.75.0"
+fixed_versions:
+- "1.75.0"
+affected_versions: "All versions before 1.75.0"
+not_impacted: "All versions starting from 1.75.0"
+solution: "Upgrade to version 1.75.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-gwfq-86j8-7qhv"
+- "https://github.com/rclone/rclone/security/advisories/GHSA-gwfq-86j8-7qhv"
+- "https://github.com/rclone/rclone/commit/ff43a1e3ae17627c80e523a0ca7445f96516d199"
+- "https://github.com/rclone/rclone/releases/tag/v1.75.0"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:L/I:N/A:N"
+uuid: "cf89c5e3-a22d-4a31-92b9-55c774399a26"
+cwe_ids:
+- "CWE-209"
+- "CWE-937"
+- "CWE-1035"

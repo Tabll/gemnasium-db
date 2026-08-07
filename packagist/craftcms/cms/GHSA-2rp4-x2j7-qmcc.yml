@@ -1,0 +1,38 @@
+---
+identifier: "GHSA-2rp4-x2j7-qmcc"
+identifiers:
+- "GHSA-2rp4-x2j7-qmcc"
+package_slug: "packagist/craftcms/cms"
+title: "Craft CMS: Stored XSS in the control panel via unescaped draft name"
+description: "The control-panel helper that renders element chip/card labels writes
+  an element's `draftName` into the page without HTML-encoding it, while the surrounding
+  path segments are encoded.\n\nA low-privilege control-panel user who can create
+  a draft of an element (for example, an entry) controls the draft name, so they can
+  store an XSS payload that executes in the browser of any other control-panel user
+  who is shown that element’s chip or card (element indexes with drafts visible, relation
+  and element-selection fields that reference the element, and the drafts list).\n\nThis
+  allows a low-privilege author to run JavaScript in an administrator’s authenticated
+  session and take over the control panel. It is the same output-encoding class as
+  the recently fixed GHSA-xrqc-p465-2xvg (Structure entry title) and GHSA-3x4w-mxpf-fhqq
+  (revision context menu), which encoded other user-controlled titles but not the
+  draft name."
+date: "2026-08-06"
+pubdate: "2026-08-06"
+affected_range: ">=5.0.0-RC1 <5.10.8"
+fixed_versions:
+- "5.10.8"
+affected_versions: "All versions starting from 5.0.0-RC1 before 5.10.8"
+not_impacted: "All versions before 5.0.0-RC1, all versions starting from 5.10.8"
+solution: "Upgrade to version 5.10.8 or above."
+urls:
+- "https://github.com/advisories/GHSA-2rp4-x2j7-qmcc"
+- "https://github.com/craftcms/cms/security/advisories/GHSA-2rp4-x2j7-qmcc"
+- "https://github.com/craftcms/cms/commit/06c799148537ce960f6bc86e162b499947040eda"
+- "https://github.com/craftcms/cms/releases/tag/5.10.8"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:P/VC:L/VI:L/VA:N/SC:L/SI:L/SA:N"
+uuid: "488b6bc5-90fd-4fd5-8652-441586a1a03b"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

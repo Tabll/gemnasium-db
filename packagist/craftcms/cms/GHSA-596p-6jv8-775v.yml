@@ -1,0 +1,49 @@
+---
+identifier: "GHSA-596p-6jv8-775v"
+identifiers:
+- "GHSA-596p-6jv8-775v"
+package_slug: "packagist/craftcms/cms"
+title: "Craft CMS: Authenticated leak of secret environment variables"
+description: "Environment variables and secrets are interpolated into a Twig template
+  even when the Twig sandbox is enabled, allowing them to be leaked by an authenticated
+  attacker.\n\nThe Craft vulnerability [CVE-2026-31857](https://github.com/craftcms/cms/security/advisories/GHSA-fp5j-j7j4-mcxc)
+  was only patched by applying sandboxed Twig templating. This theoretically protects
+  Craft CMS against RCE attacks, provided the sandbox is enabled and secure, with
+  no known bypasses.\n\nHowever, the same request parameter `elementId,` which allows
+  for sandboxed Twig templates to be rendered, also includes functionality that interpolates
+  referenced environment variables. If the parameter includes a string of the form
+  `${ENV_VAR}` then the string is replaced with the environment variable or secret
+  from a secrets file with that name.\n\nAfterward, the string is rendered as a Twig
+  template. If the sandbox is disabled, Twig templates can already gain RCE or access
+  environment variables using the getenv function. Sandboxed Twig templates should
+  not have this access, but now do thanks to this additional environment-variable
+  replacement behavior.\n\nThe template’s resulting value is not directly reflected
+  in the response. To exfiltrate the value, the sandboxed Twig template cannot use
+  network functions. But it can use a blind error-based approach similar to blind
+  SQL injection. With enough requests, any environment variable or secret can be incrementally
+  leaked. This can be abused to forge a session, escalate privileges with the `CRAFT_SECURITY_KEY`,
+  and steal credentials for the database, SMTP server, or other connected APIs or
+  blob storage."
+date: "2026-08-06"
+pubdate: "2026-08-06"
+affected_range: ">=4.0.0-RC1 <4.18.2||>=5.0.0-RC1 <5.10.6"
+fixed_versions:
+- "4.18.2"
+- "5.10.6"
+affected_versions: "All versions starting from 4.0.0-RC1 before 4.18.2, all versions
+  starting from 5.0.0-RC1 before 5.10.6"
+not_impacted: "All versions before 4.0.0-RC1, all versions starting from 4.18.2 before
+  5.0.0-RC1, all versions starting from 5.10.6"
+solution: "Upgrade to versions 4.18.2, 5.10.6 or above."
+urls:
+- "https://github.com/advisories/GHSA-596p-6jv8-775v"
+- "https://github.com/craftcms/cms/security/advisories/GHSA-596p-6jv8-775v"
+- "https://github.com/craftcms/cms/releases/tag/4.18.2"
+- "https://github.com/craftcms/cms/releases/tag/5.10.6"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:L/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N"
+uuid: "ec6dcaaa-d68b-4fd7-9159-a6938cf3f3c5"
+cwe_ids:
+- "CWE-668"
+- "CWE-937"
+- "CWE-1035"

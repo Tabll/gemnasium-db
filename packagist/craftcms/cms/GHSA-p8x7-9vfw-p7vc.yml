@@ -1,0 +1,37 @@
+---
+identifier: "GHSA-p8x7-9vfw-p7vc"
+identifiers:
+- "GHSA-p8x7-9vfw-p7vc"
+package_slug: "packagist/craftcms/cms"
+title: "Craft CMS: Arbitrary user password reset leading to administrator account
+  takeover"
+description: "The vulnerability allows any authenticated user to change their own
+  password without providing the current password or having an active elevated session.
+  It also allows the attacker to change other users’ passwords if the attacker’s account
+  has `edit users` permission (which doesn’t allow changing others’ passwords) and
+  lacks `Administrate users` permission (which is required to change others’ passwords).\n\nThe
+  vulnerability exists in the `elements/save` action when saving a User element. The
+  `UserPasswordValidator` applies only a `safe` validator to the `newPassword` field
+  without an `on` scenario restriction. This makes `newPassword` mass-assignable during
+  the generic element save flow, completely bypassing the dedicated `users/set-password`
+  action that enforces elevated session verification.\n\nAn attacker with any authenticated
+  session (whether it’s hijacked or a normal / low-privileged user) can change their
+  own password, and potentially take over administrator accounts."
+date: "2026-08-06"
+pubdate: "2026-08-06"
+affected_range: ">=5.0.0-RC1 <5.10.8"
+fixed_versions:
+- "5.10.8"
+affected_versions: "All versions starting from 5.0.0-RC1 before 5.10.8"
+not_impacted: "All versions before 5.0.0-RC1, all versions starting from 5.10.8"
+solution: "Upgrade to version 5.10.8 or above."
+urls:
+- "https://github.com/advisories/GHSA-p8x7-9vfw-p7vc"
+- "https://github.com/craftcms/cms/security/advisories/GHSA-p8x7-9vfw-p7vc"
+- "https://github.com/craftcms/cms/commit/cbdf45fbd3ab548b147d7de375f6f6f580b7c294"
+- "https://github.com/craftcms/cms/releases/tag/5.10.8"
+uuid: "d44658e3-32a4-45fb-9364-abd4f2407ea4"
+cwe_ids:
+- "CWE-285"
+- "CWE-937"
+- "CWE-1035"

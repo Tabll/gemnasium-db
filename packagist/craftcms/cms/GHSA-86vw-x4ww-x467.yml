@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-86vw-x4ww-x467"
 identifiers:
+- "CVE-2026-56382"
 - "GHSA-86vw-x4ww-x467"
 package_slug: "packagist/craftcms/cms"
 title: "Craft CMS: RCE via missing cleanseConfig in FieldsController::actionRenderCardPreview"
@@ -11,7 +12,7 @@ description: "The `actionRenderCardPreview()` method in `FieldsController` passe
   is the same vulnerability pattern that was fixed in GHSA-4484-8v2f-5748 (same file,
   `_fldComponent` method correctly uses `cleanseConfig`), GHSA-qx2q-q59v-wf3j (EntryTypesController),
   and GHSA-2fph-6v5w-89hh (ElementIndexesController)."
-date: "2026-07-09"
+date: "2026-08-06"
 pubdate: "2026-07-09"
 affected_range: ">=5.5.0 <5.9.14"
 fixed_versions:
@@ -20,8 +21,10 @@ affected_versions: "All versions starting from 5.5.0 before 5.9.14"
 not_impacted: "All versions before 5.5.0, all versions starting from 5.9.14"
 solution: "Upgrade to version 5.9.14 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-56382"
 - "https://github.com/advisories/GHSA-86vw-x4ww-x467"
 - "https://github.com/craftcms/cms/security/advisories/GHSA-86vw-x4ww-x467"
+- "https://www.vulncheck.com/advisories/craft-cms-remote-code-execution-via-missing-config-sanitization-in-fieldscontroller"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H"
 cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
 uuid: "b8b4134b-6d13-47d3-896e-079094e471ce"

@@ -24,18 +24,17 @@ description: "The fix released in jackson-core `2.18.6` and `2.21.1` for [GHSA-7
   at line 1834-1837 of `NonBlockingUtf8JsonParserBase.java` in 2.18.6, where `_setFractLength(fractLen)`
   IS called before the `NOT_AVAILABLE` return); the equivalent call is missing from
   every integer-digit path."
-date: "2026-07-21"
+date: "2026-08-03"
 pubdate: "2026-07-21"
-affected_range: "[,2.18.8),[2.19.0,2.21.4),[2.22.0,2.22.1)"
+affected_range: "[,2.18.8),[2.19.0,2.21.4)"
 fixed_versions:
 - "2.18.8"
 - "2.21.4"
-- "2.22.1"
 affected_versions: "All versions before 2.18.8, all versions starting from 2.19.0
-  before 2.21.4, all versions starting from 2.22.0 before 2.22.1"
+  before 2.21.4"
 not_impacted: "All versions starting from 2.18.8 before 2.19.0, all versions starting
-  from 2.21.4 before 2.22.0, all versions starting from 2.22.1"
-solution: "Upgrade to versions 2.18.8, 2.21.4, 2.22.1 or above."
+  from 2.21.4"
+solution: "Upgrade to versions 2.18.8, 2.21.4 or above."
 urls:
 - "https://github.com/advisories/GHSA-r7wm-3cxj-wff9"
 - "https://github.com/FasterXML/jackson-core/security/advisories/GHSA-r7wm-3cxj-wff9"

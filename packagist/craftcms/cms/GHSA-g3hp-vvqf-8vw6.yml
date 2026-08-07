@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-g3hp-vvqf-8vw6"
 identifiers:
+- "CVE-2026-56381"
 - "GHSA-g3hp-vvqf-8vw6"
 package_slug: "packagist/craftcms/cms"
 title: "Craft CMS Vulnerable to Stored XSS via User Group Name in User Permissions
@@ -12,7 +13,7 @@ description: "A stored XSS vulnerability exists in the User Permissions page. Th
   the previously reported \"[Stored XSS via User Group Name in User Settings Page](https://github.com/craftcms/cms/security/advisories/GHSA-2423-8xxj-wc3g)\"
   and \"[Multiple Stored XSS in User Group Edit Page](https://github.com/craftcms/cms/security/advisories/GHSA-vx7g-xw92-g4xj)\".
   This affects a different sink: the individual user's permissions page."
-date: "2026-03-11"
+date: "2026-08-06"
 pubdate: "2026-03-11"
 affected_range: ">=5.0.0-RC1 <5.8.22"
 fixed_versions:
@@ -21,10 +22,11 @@ affected_versions: "All versions starting from 5.0.0-RC1 before 5.8.22"
 not_impacted: "All versions before 5.0.0-RC1, all versions starting from 5.8.22"
 solution: "Upgrade to version 5.8.22 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-56381"
 - "https://github.com/advisories/GHSA-g3hp-vvqf-8vw6"
 - "https://github.com/craftcms/cms/security/advisories/GHSA-g3hp-vvqf-8vw6"
-- "https://github.com/craftcms/cms"
 - "https://github.com/craftcms/cms/releases/tag/5.8.22"
+- "https://www.vulncheck.com/advisories/craft-cms-stored-xss-via-user-group-name-in-user-permissions-page"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:N/I:L/A:N"
 cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:A/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
 uuid: "aec92db2-65f5-4c60-9476-875339a848a2"

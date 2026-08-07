@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-94pj-82f3-465w"
 identifiers:
+- "CVE-2026-67339"
 - "GHSA-94pj-82f3-465w"
 package_slug: "packagist/guzzlehttp/guzzle"
 title: "Guzzle: Proxy-Authorization headers can be sent to origin servers"
@@ -46,7 +47,7 @@ description: "In affected versions, the built-in cURL handlers (`CurlHandler` an
   is unaffected. Literal lines supplied through raw `CURLOPT_HTTPHEADER`, `CURLOPT_PROXYHEADER`,
   or `stream_context.http.header` remain caller-controlled and outside the first-class-header
   guarantee."
-date: "2026-07-20"
+date: "2026-08-04"
 pubdate: "2026-07-20"
 affected_range: "<7.14.2"
 fixed_versions:
@@ -55,11 +56,13 @@ affected_versions: "All versions before 7.14.2"
 not_impacted: "All versions starting from 7.14.2"
 solution: "Upgrade to version 7.14.2 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-67339"
 - "https://github.com/advisories/GHSA-94pj-82f3-465w"
 - "https://github.com/guzzle/guzzle/security/advisories/GHSA-94pj-82f3-465w"
 - "https://github.com/guzzle/guzzle/pull/3876"
 - "https://github.com/guzzle/guzzle/commit/9e4580d4b9981e903dc6323fe37f50a96e85b05e"
 - "https://github.com/guzzle/guzzle/releases/tag/7.14.2"
+- "https://www.vulncheck.com/advisories/guzzlehttp-guzzle-before-proxy-authorization-header-disclosure"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
 uuid: "3e0a187e-831c-44b4-8943-27207a553131"
 cwe_ids:

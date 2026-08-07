@@ -1,0 +1,41 @@
+---
+identifier: "GHSA-mh25-x5hq-wrqp"
+identifiers:
+- "GHSA-mh25-x5hq-wrqp"
+package_slug: "packagist/league/commonmark"
+title: "league/commonmark: Denial of service via colliding heading slugs"
+description: "`UniqueSlugNormalizer::normalize()` makes each slug document-unique
+  by searching for an unused numeric suffix, but **restarts that search from `1` on
+  every collision**. The k-th heading that collapses to the same base slug performs
+  k−1 array lookups, so K colliding slugs cost Σ(k−1) = **O(K²)**. An attacker can
+  force every heading onto a single base slug trivially — many empty ATX headings,
+  identical heading text, or punctuation-only headings that normalize to the empty
+  string.\n\nThe path is reached whenever the shared slug normalizer runs over attacker-controlled
+  text. That happens when `HeadingPermalinkExtension` is registered (its `HeadingPermalinkProcessor`
+  normalizes every heading), independently through `FootnoteExtension` (its `AnonymousFootnoteRefParser`
+  normalizes every `^[label]` reference), and on any `TableOfContentsExtension` site
+  (which requires `HeadingPermalinkExtension` to be co-registered). The default `slug_normalizer/unique`
+  setting (`UniqueSlugNormalizerInterface::PER_DOCUMENT`) accumulates collisions across
+  the whole document. No authentication is required — a small document body turns
+  into seconds of CPU and denies service. Availability impact only. **`UniqueSlugNormalizer`
+  was introduced in 2.0.0 (first shipped in 2.0.0-beta1, May 2021); the 1.x heading-permalink
+  slug generator performed no de-duplication and is not affected. All 2.x releases
+  (including 2.8.x) are affected.**"
+date: "2026-08-06"
+pubdate: "2026-08-06"
+affected_range: ">=2.0.0 <2.9.0"
+fixed_versions:
+- "2.9.0"
+affected_versions: "All versions starting from 2.0.0 before 2.9.0"
+not_impacted: "All versions before 2.0.0, all versions starting from 2.9.0"
+solution: "Upgrade to version 2.9.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-mh25-x5hq-wrqp"
+- "https://github.com/thephpleague/commonmark/security/advisories/GHSA-mh25-x5hq-wrqp"
+- "https://github.com/thephpleague/commonmark/releases/tag/2.9.0"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "d26a2ef1-ea51-485c-918f-915e47fbf16b"
+cwe_ids:
+- "CWE-407"
+- "CWE-937"
+- "CWE-1035"

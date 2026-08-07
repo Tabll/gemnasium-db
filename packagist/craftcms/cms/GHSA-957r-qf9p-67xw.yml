@@ -1,0 +1,39 @@
+---
+identifier: "GHSA-957r-qf9p-67xw"
+identifiers:
+- "GHSA-957r-qf9p-67xw"
+package_slug: "packagist/craftcms/cms"
+title: "Craft CMS: Arbitrary file read via SplFileObject in non-sandboxed template
+  contexts"
+description: "The `create()` Twig function (introduced in 5.9.0) allows instantiation
+  of arbitrary PHP classes from template code, restricted only by a 5-entry blocklist.
+  `SplFileObject` is not in the blocklist, enabling arbitrary file read, including
+  `.env` (security key, DB credentials) and the passwd file from non-sandboxed Twig
+  template contexts, such as entry type title formats and URI formats.\n\nThe sandbox
+  correctly blocks `create()` in system email templates, so this finding applies only
+  to admin-configured, non-sandboxed contexts that require `allowAdminChanges=true`."
+date: "2026-08-06"
+pubdate: "2026-08-06"
+affected_range: ">=4.0.0-RC1 <4.18.2||>=5.0.0-RC1 <5.10.6"
+fixed_versions:
+- "4.18.2"
+- "5.10.6"
+affected_versions: "All versions starting from 4.0.0-RC1 before 4.18.2, all versions
+  starting from 5.0.0-RC1 before 5.10.6"
+not_impacted: "All versions before 4.0.0-RC1, all versions starting from 4.18.2 before
+  5.0.0-RC1, all versions starting from 5.10.6"
+solution: "Upgrade to versions 4.18.2, 5.10.6 or above."
+urls:
+- "https://github.com/advisories/GHSA-957r-qf9p-67xw"
+- "https://github.com/craftcms/cms/security/advisories/GHSA-957r-qf9p-67xw"
+- "https://github.com/craftcms/cms/commit/7c96fd73df936a10e8f85ae6ef61a9fc3f277c12"
+- "https://github.com/craftcms/cms/commit/87978f11c8f986c40ef41b941d79547230c4d6d9"
+- "https://github.com/craftcms/cms/releases/tag/4.18.2"
+- "https://github.com/craftcms/cms/releases/tag/5.10.6"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N"
+uuid: "c35d5598-1004-405c-9cde-b433842fc334"
+cwe_ids:
+- "CWE-184"
+- "CWE-937"
+- "CWE-1035"

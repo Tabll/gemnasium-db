@@ -12,7 +12,7 @@ description: "The non-blocking (async) JSON parser in `jackson-core` bypasses th
   resulting in a Denial of Service (DoS).\n\nThe standard synchronous parser correctly
   enforces this limit, but the async parser fails to do so, creating an inconsistent
   enforcement policy."
-date: "2026-04-07"
+date: "2026-08-03"
 pubdate: "2026-02-28"
 affected_range: "[3.0.0,3.1.0)"
 fixed_versions:
@@ -25,7 +25,6 @@ urls:
 - "https://github.com/FasterXML/jackson-core/security/advisories/GHSA-72hv-8253-57qq"
 - "https://github.com/FasterXML/jackson-core/pull/1555"
 - "https://github.com/FasterXML/jackson-core/commit/b0c428e6f993e1b5ece5c1c3cb2523e887cd52cf"
-- "https://github.com/FasterXML/jackson-core"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
 cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N"
 uuid: "0c6d431a-8260-4279-bbfa-f10751325a0e"

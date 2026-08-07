@@ -1,0 +1,42 @@
+---
+identifier: "GHSA-265m-7826-wjqm"
+identifiers:
+- "GHSA-265m-7826-wjqm"
+package_slug: "packagist/craftcms/cms"
+title: "Craft CMS: Authenticated RCE via `condition.config` JSON cleanse bypass"
+description: "Craft CMS has an authenticated remote code execution issue in the control
+  panel element-search condition handling.\n\nCraft cleans the outer request-controlled
+  condition array with `Component::cleanseConfig()`, but `Conditions::createCondition()`
+  later decodes and merges the JSON string in `condition.config` without re-running
+  `cleanseConfig()` on the decoded/merged configuration.\n\nBecause `condition.config`
+  is a JSON string during the first cleanse, Yii special config keys such as `as`
+  ... and `on` ... can be hidden inside it. After JSON decoding, those keys reach
+  FieldLayout object creation and are interpreted by Yii as behavior/event configuration.\n\nThe
+  RCE is semi-blind: the trigger endpoint returns a normal JSON response, and the
+  command output is verified via a server-side file-write side effect retrieved in
+  a subsequent request."
+date: "2026-08-06"
+pubdate: "2026-08-06"
+affected_range: ">=4.0.0-RC1 <4.18.2||>=5.0.0-RC1 <5.10.6"
+fixed_versions:
+- "4.18.2"
+- "5.10.6"
+affected_versions: "All versions starting from 4.0.0-RC1 before 4.18.2, all versions
+  starting from 5.0.0-RC1 before 5.10.6"
+not_impacted: "All versions before 4.0.0-RC1, all versions starting from 4.18.2 before
+  5.0.0-RC1, all versions starting from 5.10.6"
+solution: "Upgrade to versions 4.18.2, 5.10.6 or above."
+urls:
+- "https://github.com/advisories/GHSA-265m-7826-wjqm"
+- "https://github.com/craftcms/cms/security/advisories/GHSA-265m-7826-wjqm"
+- "https://github.com/craftcms/cms/commit/353b5d676c88a854c9f6409ad83b837ca0c0e8da"
+- "https://github.com/craftcms/cms/commit/789789dc9e2a4e2f2562f51aaf879fb7757d8340"
+- "https://github.com/craftcms/cms/releases/tag/4.18.2"
+- "https://github.com/craftcms/cms/releases/tag/5.10.6"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+uuid: "10909a41-c404-4db2-8b64-ae433e87e3a2"
+cwe_ids:
+- "CWE-915"
+- "CWE-937"
+- "CWE-1035"

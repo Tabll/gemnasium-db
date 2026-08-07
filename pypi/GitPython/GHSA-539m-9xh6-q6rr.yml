@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-539m-9xh6-q6rr"
+identifiers:
+- "GHSA-539m-9xh6-q6rr"
+package_slug: "pypi/GitPython"
+title: "GitPython: Incomplete unsafe_git_archive_options denylist omits --add-file
+  / --add-virtual-file, enabling arbitrary file read via Repo.archive()"
+description: "`Repo.archive()` does call the option guard, so this is not a missing-guard
+  report. The guard is present and working; the **denylist it consults is incomplete**.\n\n```python"
+date: "2026-08-03"
+pubdate: "2026-08-03"
+affected_range: "<3.1.57"
+fixed_versions:
+- "3.1.57"
+affected_versions: "All versions before 3.1.57"
+not_impacted: "All versions starting from 3.1.57"
+solution: "Upgrade to version 3.1.57 or above."
+urls:
+- "https://github.com/advisories/GHSA-539m-9xh6-q6rr"
+- "https://github.com/gitpython-developers/GitPython/security/advisories/GHSA-539m-9xh6-q6rr"
+- "https://github.com/gitpython-developers/GitPython/pull/2193"
+- "https://github.com/gitpython-developers/GitPython/commit/7a4f5dcb7bf3cbcbf6e438017efcdfe0bc0d36ca"
+- "https://github.com/gitpython-developers/GitPython/releases/tag/3.1.57"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+uuid: "e20472b1-6d1e-4ec9-a676-dbca1c34f671"
+cwe_ids:
+- "CWE-73"
+- "CWE-200"
+- "CWE-937"
+- "CWE-1035"

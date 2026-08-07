@@ -1,0 +1,40 @@
+---
+identifier: "GHSA-945v-v9p3-v5xw"
+identifiers:
+- "GHSA-945v-v9p3-v5xw"
+package_slug: "go/github.com/rclone/rclone"
+title: "rclone local `--metadata` applies attacker-controlled mode/uid - setuid binary
+  planted from an untrusted remote"
+description: "When writing an object with metadata, the local backend applies the
+  source-supplied `mode`, `uid`, and `gid` verbatim: it parses `mode` as an octal
+  integer and passes it straight into `os.Chmod(o.path, os.FileMode(umode))`, and
+  passes `uid`/`gid` straight into `os.Chown`. The value is never masked to permission
+  bits, so any value with Go's `ModeSetuid` (1<<23) or `ModeSetgid` (1<<22) bit set
+  causes the setuid/setgid bit to be applied. Because both the file content and its
+  metadata come from the (attacker-controlled) source remote, an attacker stores a
+  binary of their choosing with `mode = 40000755` (and `uid = 0`); when the victim
+  runs `rclone copy -M <remote>: /dest`, rclone writes the attacker's binary and makes
+  it setuid. If the victim runs rclone as root (typical for system backup/restore),
+  the `uid=0` chown plus setuid produces a root-owned setuid binary with attacker
+  content — any local user then escalates to root. When rclone runs as a non-root
+  service user, the planted setuid binary is owned by that user, giving any local
+  user that user's privileges (lateral escalation / persistent backdoor)."
+date: "2026-08-05"
+pubdate: "2026-08-05"
+affected_range: "<1.74.4"
+fixed_versions:
+- "1.74.4"
+affected_versions: "All versions before 1.74.4"
+not_impacted: "All versions starting from 1.74.4"
+solution: "Upgrade to version 1.74.4 or above."
+urls:
+- "https://github.com/advisories/GHSA-945v-v9p3-v5xw"
+- "https://github.com/rclone/rclone/security/advisories/GHSA-945v-v9p3-v5xw"
+- "https://github.com/rclone/rclone/commit/e58f09739a35774ca82b5211d2377ac0f2051500"
+- "https://github.com/rclone/rclone/releases/tag/v1.74.4"
+cvss_v3: "CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:U/C:L/I:L/A:N"
+uuid: "bca390fe-bf31-43eb-9038-8f1a73054a39"
+cwe_ids:
+- "CWE-732"
+- "CWE-937"
+- "CWE-1035"

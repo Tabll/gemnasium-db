@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-c43v-4cr8-6mvp"
 identifiers:
+- "CVE-2026-56394"
 - "GHSA-c43v-4cr8-6mvp"
 package_slug: "packagist/craftcms/cms"
 title: "Craft CMS has authenticated path traversal in `assets/icon`, allowing local
@@ -8,7 +9,7 @@ title: "Craft CMS has authenticated path traversal in `assets/icon`, allowing lo
 description: "An authenticated path traversal in `assets/icon` allows local SVG file
   read by passing traversal sequences in the `extension` parameter. The issue is caused
   by file existence checks happening before extension validation."
-date: "2026-07-09"
+date: "2026-08-06"
 pubdate: "2026-07-09"
 affected_range: ">=4.0.0-RC1 <4.17.7||>=5.0.0-RC1 <5.9.13"
 fixed_versions:
@@ -20,9 +21,11 @@ not_impacted: "All versions before 4.0.0-RC1, all versions starting from 4.17.7 
   5.0.0-RC1, all versions starting from 5.9.13"
 solution: "Upgrade to versions 4.17.7, 5.9.13 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-56394"
 - "https://github.com/advisories/GHSA-c43v-4cr8-6mvp"
 - "https://github.com/craftcms/cms/security/advisories/GHSA-c43v-4cr8-6mvp"
 - "https://github.com/craftcms/cms/commit/30f5f1a8d6edf0f3a00be72c42c78d9dc7d72d5c"
+- "https://www.vulncheck.com/advisories/craft-cms-authenticated-path-traversal-in-assets-icon-extension-parameter"
 cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N"
 cvss_v4: "CVSS:4.0/AV:L/AC:L/AT:P/PR:L/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
 uuid: "afb766d6-e48a-462c-8c68-c38749a2a8d4"
