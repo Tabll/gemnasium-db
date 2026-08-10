@@ -1,0 +1,37 @@
+---
+identifier: "GHSA-hh9p-6wh2-4mfc"
+identifiers:
+- "GHSA-hh9p-6wh2-4mfc"
+package_slug: "pypi/GitPython"
+title: "GitPython: Arbitrary file read via --pathspec-from-file in IndexFile.remove()
+  and Head.checkout()"
+description: "`IndexFile.remove()` and `Head.checkout()` forward `**kwargs` into `git
+  rm` and `git checkout`\nwith no guard. Passing `--pathspec-from-file=<file>` **together
+  with `--pathspec-file-nul`**\nmakes Git treat the whole file as a single NUL-delimited
+  pathspec, and the unmatched-pathspec\nerror quotes it verbatim. GitPython surfaces
+  that through `GitCommandError.stderr`, so the\nentire contents of a caller-chosen
+  file are returned to the caller in band.\n\nThis is the same primitive as Instance
+  2 of\n[GHSA-3f7w-8rr8-f37f](https://github.com/advisories/GHSA-3f7w-8rr8-f37f) -
+  `TagReference.create()`\nwith `-F`, arbitrary file read returned in band - at two
+  sites that advisory assessed and\ncleared."
+date: "2026-08-07"
+pubdate: "2026-08-07"
+affected_range: "<3.1.58"
+fixed_versions:
+- "3.1.58"
+affected_versions: "All versions before 3.1.58"
+not_impacted: "All versions starting from 3.1.58"
+solution: "Upgrade to version 3.1.58 or above."
+urls:
+- "https://github.com/advisories/GHSA-hh9p-6wh2-4mfc"
+- "https://github.com/gitpython-developers/GitPython/security/advisories/GHSA-hh9p-6wh2-4mfc"
+- "https://github.com/gitpython-developers/GitPython/pull/2204"
+- "https://github.com/gitpython-developers/GitPython/commit/f2550b65bf60ca087190981e2c7b6865e201f40c"
+- "https://github.com/gitpython-developers/GitPython/releases/tag/3.1.58"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+uuid: "e5af9923-12e8-46d1-ab44-e90bd88b6c3b"
+cwe_ids:
+- "CWE-73"
+- "CWE-200"
+- "CWE-937"
+- "CWE-1035"

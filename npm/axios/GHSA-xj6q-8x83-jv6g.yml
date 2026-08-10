@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-xj6q-8x83-jv6g"
 identifiers:
+- "CVE-2026-67314"
 - "GHSA-xj6q-8x83-jv6g"
 package_slug: "npm/axios"
 title: "Axios: Prototype pollution auth subfields can inject Basic auth"
@@ -28,7 +29,7 @@ description: "Axios versions after the `GHSA-q8qp-cvcw-x6jj` fix still contain p
   too — i.e. the amplifier is wired into many credential-stuffing chains).\n\nReproduces
   against `axios` `main` HEAD (`34723be`, dated 2026-05-24)\nas well as the released
   `v1.16.1`."
-date: "2026-07-20"
+date: "2026-08-07"
 pubdate: "2026-07-20"
 affected_range: ">=1.15.2 <1.18.0"
 fixed_versions:
@@ -37,11 +38,13 @@ affected_versions: "All versions starting from 1.15.2 before 1.18.0"
 not_impacted: "All versions before 1.15.2, all versions starting from 1.18.0"
 solution: "Upgrade to version 1.18.0 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-67314"
 - "https://github.com/advisories/GHSA-xj6q-8x83-jv6g"
 - "https://github.com/axios/axios/security/advisories/GHSA-xj6q-8x83-jv6g"
 - "https://github.com/axios/axios/pull/11000"
 - "https://github.com/axios/axios/commit/32fc489632377d214db55bfa4e2c48486a7d7ce2"
 - "https://github.com/axios/axios/releases/tag/v1.18.0"
+- "https://www.vulncheck.com/advisories/axios-before-prototype-pollution-via-auth-subfields"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L"
 cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:L/VA:L/SC:N/SI:N/SA:N"
 uuid: "20294573-cfd3-482a-ae6b-a7d9278ae411"

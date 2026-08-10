@@ -1,0 +1,40 @@
+---
+identifier: "GHSA-hmq2-w58f-27jc"
+identifiers:
+- "GHSA-hmq2-w58f-27jc"
+package_slug: "pypi/GitPython"
+title: "GitPython: Arbitrary Git Repository Creation Outside the Working Tree via
+  Unvalidated .gitmodules Submodule Name in GitPython"
+description: "GitPython computes the on-disk location of a submodule's separate Git
+  directory (`.git/modules/<name>`) from the submodule's `.gitmodules` section name
+  with no validation. Because that name is fully attacker-controlled content of a
+  cloned repository, a malicious repository can set a submodule name to a traversal
+  string (e.g. `../../../../home/victim/.something`) and cause GitPython to create
+  and initialize a full Git repository at an attacker-chosen filesystem path outside
+  the intended clone directory. The only precondition is that a victim clones the
+  malicious repository with GitPython and runs submodule initialization (`submodule_update(init=True)`
+  / `sm.update(init=True)`), a very common and often automatic step. Core Git itself
+  already blocks this exact attack class (CVE-2018-11235), but GitPython's independent
+  reimplementation never adopted an equivalent check."
+date: "2026-08-07"
+pubdate: "2026-08-07"
+affected_range: "<3.1.58"
+fixed_versions:
+- "3.1.58"
+affected_versions: "All versions before 3.1.58"
+not_impacted: "All versions starting from 3.1.58"
+solution: "Upgrade to version 3.1.58 or above."
+urls:
+- "https://github.com/advisories/GHSA-hmq2-w58f-27jc"
+- "https://github.com/gitpython-developers/GitPython/security/advisories/GHSA-hmq2-w58f-27jc"
+- "https://github.com/gitpython-developers/GitPython/pull/2202"
+- "https://github.com/gitpython-developers/GitPython/commit/4299c990e1ca21896f9485277caf7bb0ae5b404c"
+- "https://github.com/gitpython-developers/GitPython/commit/e4b8e7d026ca6abb4cf604f8e77093432ce23c06"
+- "https://github.com/gitpython-developers/GitPython/releases/tag/3.1.58"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:N/I:H/A:L"
+uuid: "5da97d06-d729-4129-a4ce-16d7185b3828"
+cwe_ids:
+- "CWE-22"
+- "CWE-73"
+- "CWE-937"
+- "CWE-1035"

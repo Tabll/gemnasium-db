@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-55q2-fjhq-7xh7"
+identifiers:
+- "GHSA-55q2-fjhq-7xh7"
+package_slug: "npm/dompurify"
+title: "DOMPurify: IN_PLACE hook removal leaves a detached subtree executable, causing
+  XSS"
+description: "During `IN_PLACE` sanitization, a hook that removes an element can leave
+  that element's detached descendants executable. A descendant image can retain its
+  attacker-provided `onload` handler and fire after `sanitize()` returns, even though
+  the returned root is clean and the image remains disconnected from the document."
+date: "2026-08-07"
+pubdate: "2026-08-07"
+affected_range: "<3.4.13"
+fixed_versions:
+- "3.4.13"
+affected_versions: "All versions before 3.4.13"
+not_impacted: "All versions starting from 3.4.13"
+solution: "Upgrade to version 3.4.13 or above."
+urls:
+- "https://github.com/advisories/GHSA-55q2-fjhq-7xh7"
+- "https://github.com/cure53/DOMPurify/security/advisories/GHSA-55q2-fjhq-7xh7"
+- "https://github.com/cure53/DOMPurify/pull/1557"
+- "https://github.com/cure53/DOMPurify/commit/3067f7746769"
+- "https://github.com/cure53/DOMPurify/releases/tag/3.4.13"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:L/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:P/VC:N/VI:N/VA:N/SC:L/SI:L/SA:N"
+uuid: "0d8247be-449d-4b13-8ec0-9ea018f093cf"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

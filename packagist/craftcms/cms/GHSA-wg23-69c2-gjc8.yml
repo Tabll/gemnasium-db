@@ -1,0 +1,38 @@
+---
+identifier: "GHSA-wg23-69c2-gjc8"
+identifiers:
+- "GHSA-wg23-69c2-gjc8"
+package_slug: "packagist/craftcms/cms"
+title: "Craft CMS: Passkey login accepts replayed WebAuthn assertions"
+description: "Craft CMS passkey login accepts WebAuthn requestOptions from the unauthenticated
+  login request body and does not persist the updated credential counter returned
+  by the WebAuthn assertion validator. A captured passkey login request body can therefore
+  be replayed because the old challenge is accepted again, and the stored credential
+  counter remains stale.\n\nCraft CMS 5.10.3 and current `5.x` HEAD accept `PublicKeyCredentialRequestOptions`
+  from the unauthenticated `users/login-with-passkey` request body and do not persist
+  the updated `PublicKeyCredentialSource` returned/mutated by `web-auth/webauthn-lib`
+  after assertion validation.\n\nAs a result, a captured passkey login request body
+  is not one-time-use. Reposting the same `requestOptions` and `response` can result
+  in validation against the same stale credential counter and create another Craft
+  session for that user. This weakens passkeys from a fresh, server-challenged authentication
+  ceremony into a replayable bearer artifact if one successful assertion body is exposed."
+date: "2026-08-07"
+pubdate: "2026-08-07"
+affected_range: ">=5.0.0-RC1 <5.10.5"
+fixed_versions:
+- "5.10.5"
+affected_versions: "All versions starting from 5.0.0-RC1 before 5.10.5"
+not_impacted: "All versions before 5.0.0-RC1, all versions starting from 5.10.5"
+solution: "Upgrade to version 5.10.5 or above."
+urls:
+- "https://github.com/advisories/GHSA-wg23-69c2-gjc8"
+- "https://github.com/craftcms/cms/security/advisories/GHSA-wg23-69c2-gjc8"
+- "https://github.com/craftcms/cms/commit/d71a66d69cf8852bcfca4484ca718750b5a316d6"
+- "https://github.com/craftcms/cms/releases/tag/5.10.5"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N"
+uuid: "6a8e7a32-2781-49aa-89d2-afddc43f112b"
+cwe_ids:
+- "CWE-294"
+- "CWE-937"
+- "CWE-1035"
