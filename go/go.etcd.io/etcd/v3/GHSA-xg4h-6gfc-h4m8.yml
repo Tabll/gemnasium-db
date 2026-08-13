@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-xg4h-6gfc-h4m8"
 identifiers:
+- "CVE-2026-73499"
 - "GHSA-xg4h-6gfc-h4m8"
 package_slug: "go/go.etcd.io/etcd/v3"
 title: "etcd: Watch API authorization bypass via open-ended range requests"
@@ -12,7 +13,7 @@ description: "_What kind of vulnerability is it? Who is impacted?_\n\nA user gra
   in etcd's RBAC enforcement for the Watch API; Range/Get and DeleteRange requests
   are not affected. It only affects clusters with authentication enabled — clusters
   running without auth already allow unrestricted read access."
-date: "2026-07-24"
+date: "2026-08-12"
 pubdate: "2026-07-24"
 affected_range: "<3.5.33||>=3.6.0 <3.6.14||>=3.7.0-alpha.0 <3.7.1"
 fixed_versions:
@@ -25,6 +26,7 @@ not_impacted: "All versions starting from 3.5.33 before 3.6.0, all versions star
   from 3.6.14 before 3.7.0-alpha.0, all versions starting from 3.7.1"
 solution: "Upgrade to versions 3.5.33, 3.6.14, 3.7.1 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-73499"
 - "https://github.com/advisories/GHSA-xg4h-6gfc-h4m8"
 - "https://github.com/etcd-io/etcd/security/advisories/GHSA-xg4h-6gfc-h4m8"
 - "https://github.com/etcd-io/etcd/commit/6643f80602461a6095c9b294b6512fd9719bef41"

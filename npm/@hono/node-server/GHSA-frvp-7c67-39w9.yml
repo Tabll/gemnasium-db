@@ -10,14 +10,17 @@ description: "On Windows hosts, an encoded backslash (`%5C`) in the request path
   resolves a single URL segment such as `admin\\secret.txt` into a nested file under
   the root and serves it, letting an attacker read static files meant to be protected
   behind prefix-mounted middleware. Directory escape (`..`) remains blocked."
-date: "2026-07-21"
+date: "2026-08-12"
 pubdate: "2026-07-21"
-affected_range: "<2.0.5"
+affected_range: "<1.19.15||>=2.0.0 <2.0.5"
 fixed_versions:
+- "1.19.15"
 - "2.0.5"
-affected_versions: "All versions before 2.0.5"
-not_impacted: "All versions starting from 2.0.5"
-solution: "Upgrade to version 2.0.5 or above."
+affected_versions: "All versions before 1.19.15, all versions starting from 2.0.0
+  before 2.0.5"
+not_impacted: "All versions starting from 1.19.15 before 2.0.0, all versions starting
+  from 2.0.5"
+solution: "Upgrade to versions 1.19.15, 2.0.5 or above."
 urls:
 - "https://github.com/advisories/GHSA-frvp-7c67-39w9"
 - "https://github.com/honojs/node-server/security/advisories/GHSA-frvp-7c67-39w9"

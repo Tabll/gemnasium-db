@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-8whx-365g-h9vv"
 identifiers:
+- "CVE-2026-73491"
 - "GHSA-8whx-365g-h9vv"
 package_slug: "gem/loofah"
 title: "Loofah `allowed_uri?` does not detect `javascript:` URIs split by named whitespace
@@ -8,7 +9,7 @@ title: "Loofah `allowed_uri?` does not detect `javascript:` URIs split by named 
 description: "`Loofah::HTML5::Scrub.allowed_uri?` does not correctly reject `javascript:`
   URIs when the scheme is split or prefixed by the HTML5 named character references
   `&Tab;` (tab) or `&NewLine;` (line feed)."
-date: "2026-07-21"
+date: "2026-08-12"
 pubdate: "2026-07-21"
 affected_range: ">=2.25.0 <2.25.2"
 fixed_versions:
@@ -17,6 +18,7 @@ affected_versions: "All versions starting from 2.25.0 before 2.25.2"
 not_impacted: "All versions before 2.25.0, all versions starting from 2.25.2"
 solution: "Upgrade to version 2.25.2 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-73491"
 - "https://github.com/advisories/GHSA-8whx-365g-h9vv"
 - "https://github.com/flavorjones/loofah/security/advisories/GHSA-8whx-365g-h9vv"
 - "https://github.com/flavorjones/loofah/commit/5e91af861e3cdab47b91dd0b81f3afdfd13a5e19"

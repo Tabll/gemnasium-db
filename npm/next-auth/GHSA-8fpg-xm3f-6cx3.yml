@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-8fpg-xm3f-6cx3"
 identifiers:
+- "CVE-2026-73421"
 - "GHSA-8fpg-xm3f-6cx3"
 package_slug: "npm/next-auth"
 title: "Auth.js: Configuration errors can cause existence-based auth checks to fail
@@ -32,7 +33,7 @@ description: "`next-auth` (Auth.js) v5 applications that gate access by checking
   the failure mode is silent and grants access to everyone, the consequences can be
   severe.\n\nThis is an instance of CWE-636 (Not Failing Securely / \"Failing Open\")
   leading to improper authorization (CWE-285)."
-date: "2026-07-23"
+date: "2026-08-12"
 pubdate: "2026-07-23"
 affected_range: ">=5.0.0-beta.0 <5.0.0-beta.32"
 fixed_versions:
@@ -41,6 +42,7 @@ affected_versions: "All versions starting from 5.0.0-beta.0 before 5.0.0-beta.32
 not_impacted: "All versions before 5.0.0-beta.0, all versions starting from 5.0.0-beta.32"
 solution: "Upgrade to version 5.0.0-beta.32 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-73421"
 - "https://github.com/advisories/GHSA-8fpg-xm3f-6cx3"
 - "https://github.com/nextauthjs/next-auth/security/advisories/GHSA-8fpg-xm3f-6cx3"
 - "https://github.com/nextauthjs/next-auth/commit/d008b9b764bf4b322a87e1822d1dda7789258d8f"

@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-cqjc-rmpq-xprq"
 identifiers:
+- "CVE-2026-73489"
 - "GHSA-cqjc-rmpq-xprq"
 package_slug: "cargo/russh"
 title: "Russh: Post-auth remote panic via pty-req with more than 130 terminal-mode
@@ -23,7 +24,7 @@ description: "A post-authentication denial-of-service panic in `russh` 0.62.2 (c
   fixed-array slice overflow; it was fixed in 0.61.0 but this\ncode path still overflows
   the fixed array).\n\nRust bounds-checked panics abort the task safely (no memory
   corruption / RCE);\nthe impact is remote **denial of service**."
-date: "2026-07-24"
+date: "2026-08-12"
 pubdate: "2026-07-24"
 affected_range: "<0.62.4"
 fixed_versions:
@@ -32,6 +33,7 @@ affected_versions: "All versions before 0.62.4"
 not_impacted: "All versions starting from 0.62.4"
 solution: "Upgrade to version 0.62.4 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-73489"
 - "https://github.com/advisories/GHSA-cqjc-rmpq-xprq"
 - "https://github.com/Eugeny/russh/security/advisories/GHSA-cqjc-rmpq-xprq"
 - "https://github.com/Eugeny/russh/commit/8912512371820167a12a0a638bd666856ce458ad"

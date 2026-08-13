@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-46q4-43ph-c6fr"
 identifiers:
+- "CVE-2026-73495"
 - "GHSA-46q4-43ph-c6fr"
 package_slug: "maven/org.http4s/blaze-http_3"
 title: "blaze: Chunked-body trailer fields promoted into Request.headers in blaze-server
@@ -10,7 +11,7 @@ description: "blaze-server can merge HTTP/1.1 chunked-body trailer fields into `
   can inject arbitrary header names/values (e.g. `X-Forwarded-For`, internal-auth
   headers) that a fronting proxy sanitized from the request-header section, bypassing
   header-based trust decisions in the application."
-date: "2026-07-24"
+date: "2026-08-12"
 pubdate: "2026-07-24"
 affected_range: "[,0.23.18),[1.0.0-M1,1.0.0-M42)"
 fixed_versions:
@@ -22,6 +23,7 @@ not_impacted: "All versions starting from 0.23.18 before 1.0.0-M1, all versions 
   from 1.0.0-M42"
 solution: "Upgrade to versions 0.23.18, 1.0.0-M42 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-73495"
 - "https://github.com/advisories/GHSA-46q4-43ph-c6fr"
 - "https://github.com/http4s/blaze/security/advisories/GHSA-46q4-43ph-c6fr"
 - "https://github.com/http4s/blaze/commit/ef3e666c146cfc16cb6603f1fc3c464daab4a24f"

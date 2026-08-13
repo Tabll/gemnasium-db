@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-cr7p-cr3q-h5cm"
 identifiers:
+- "CVE-2026-73306"
 - "GHSA-cr7p-cr3q-h5cm"
 package_slug: "npm/@budibase/server"
 title: " Budibase: Account Enumeration via Login Lockout Response Differential"
@@ -11,7 +12,7 @@ description: "The login lockout mechanism in Budibase creates an observable resp
   headers plus the message \"Account temporarily locked.\" For non-existing users,
   the response is always a generic `403 \"Unauthorized\"` regardless of attempt count,
   because the lockout counter is never incremented."
-date: "2026-07-24"
+date: "2026-08-12"
 pubdate: "2026-07-24"
 affected_range: "<=3.38.1"
 fixed_versions: []
@@ -19,6 +20,7 @@ affected_versions: "All versions up to 3.38.1"
 not_impacted: ""
 solution: "Unfortunately, there is no solution available yet."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-73306"
 - "https://github.com/advisories/GHSA-cr7p-cr3q-h5cm"
 - "https://github.com/Budibase/budibase/security/advisories/GHSA-cr7p-cr3q-h5cm"
 - "https://github.com/Budibase/budibase/pull/19108"

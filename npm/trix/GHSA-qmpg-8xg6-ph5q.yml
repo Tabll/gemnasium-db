@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-qmpg-8xg6-ph5q"
 identifiers:
+- "CVE-2026-73426"
 - "GHSA-qmpg-8xg6-ph5q"
 package_slug: "npm/trix"
 title: "Trix has a Stored XSS vulnerability through serialized attributes"
@@ -10,7 +11,7 @@ description: "The Trix editor, in versions prior to 2.1.17, is vulnerable to XSS
   with a malicious payload that, when the content is rendered, could execute arbitrary
   JavaScript code within the context of the user's session, potentially leading to
   unauthorized actions being performed or sensitive information being disclosed."
-date: "2026-03-18"
+date: "2026-08-12"
 pubdate: "2026-03-12"
 affected_range: "<2.1.17"
 fixed_versions:
@@ -19,11 +20,11 @@ affected_versions: "All versions before 2.1.17"
 not_impacted: "All versions starting from 2.1.17"
 solution: "Upgrade to version 2.1.17 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-73426"
 - "https://github.com/advisories/GHSA-qmpg-8xg6-ph5q"
 - "https://github.com/basecamp/trix/security/advisories/GHSA-qmpg-8xg6-ph5q"
 - "https://github.com/basecamp/trix/pull/1282"
 - "https://github.com/basecamp/trix/commit/53197ab5a142e6b0b76127cb790726b274eaf1bc"
-- "https://github.com/basecamp/trix"
 - "https://github.com/basecamp/trix/releases/tag/v2.1.17"
 - "https://github.com/rubysec/ruby-advisory-db/blob/master/gems/action_text-trix/GHSA-qmpg-8xg6-ph5q.yml"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:L/I:L/A:N"

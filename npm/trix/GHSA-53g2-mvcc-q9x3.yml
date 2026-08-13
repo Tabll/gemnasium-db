@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-53g2-mvcc-q9x3"
 identifiers:
+- "CVE-2026-73428"
 - "GHSA-53g2-mvcc-q9x3"
 package_slug: "npm/trix"
 title: "Trix: Stored XSS via HTMLParser attribute injection on paste"
@@ -19,7 +20,7 @@ description: "The Trix editor, in versions prior to 2.1.18, is vulnerable to XSS
   resolved by the `StringPiece.fromJSON` sanitization added in 2.1.18. This advisory
   covers the paste and HTMLParser entry vector, while GHSA-53p3-c7vp-4mcc covers the
   drag-and-drop path through the fallback Level0InputController."
-date: "2026-07-24"
+date: "2026-08-12"
 pubdate: "2026-07-24"
 affected_range: "<2.1.18"
 fixed_versions:
@@ -28,6 +29,7 @@ affected_versions: "All versions before 2.1.18"
 not_impacted: "All versions starting from 2.1.18"
 solution: "Upgrade to version 2.1.18 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-73428"
 - "https://github.com/advisories/GHSA-53g2-mvcc-q9x3"
 - "https://github.com/basecamp/trix/security/advisories/GHSA-53g2-mvcc-q9x3"
 - "https://github.com/basecamp/trix/commit/9c0a993d9fc2ffe9d56b013b030bc238f9c0557c"

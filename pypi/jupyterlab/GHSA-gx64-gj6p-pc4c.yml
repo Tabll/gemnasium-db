@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-gx64-gj6p-pc4c"
 identifiers:
+- "CVE-2026-73415"
 - "GHSA-gx64-gj6p-pc4c"
 package_slug: "pypi/jupyterlab"
 title: "JupyterLab: Image viewer allows XSS when opening malicious image in new browser
@@ -9,7 +10,7 @@ description: "JupyterLab's image viewer allows for cross-site scripting (XSS) wh
   a specially-crafted image file is opened through the image viewer and then opened
   in a new tab. This XSS issue can be used to cause remote code execution (RCE) on
   the JupyterLab server."
-date: "2026-07-22"
+date: "2026-08-12"
 pubdate: "2026-07-22"
 affected_range: "<4.5.10||>=4.6.0,<4.6.2"
 fixed_versions:
@@ -21,6 +22,7 @@ not_impacted: "All versions starting from 4.5.10 before 4.6.0, all versions star
   from 4.6.2"
 solution: "Upgrade to versions 4.5.10, 4.6.2 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-73415"
 - "https://github.com/advisories/GHSA-gx64-gj6p-pc4c"
 - "https://github.com/jupyterlab/jupyterlab/security/advisories/GHSA-gx64-gj6p-pc4c"
 - "https://github.com/jupyterlab/jupyterlab/pull/19184"

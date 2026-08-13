@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-ppr4-5f46-j9c6"
 identifiers:
+- "CVE-2026-73409"
 - "GHSA-ppr4-5f46-j9c6"
 package_slug: "npm/@budibase/server"
 title: " Budibase: Server Filesystem Existence/Read Oracle via Builder-Controlled
@@ -12,7 +13,7 @@ description: "When creating a MongoDB datasource, Budibase passes the `tlsCertif
   server. When the datasource is verified, the driver performs a real filesystem read
   of that path, and the error differs by file state, turning `/api/datasources/verify`
   into an arbitrary-path existence/read oracle over the whole server filesystem."
-date: "2026-07-24"
+date: "2026-08-12"
 pubdate: "2026-07-24"
 affected_range: "<=3.38.1"
 fixed_versions: []
@@ -20,6 +21,7 @@ affected_versions: "All versions up to 3.38.1"
 not_impacted: ""
 solution: "Unfortunately, there is no solution available yet."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-73409"
 - "https://github.com/advisories/GHSA-ppr4-5f46-j9c6"
 - "https://github.com/Budibase/budibase/security/advisories/GHSA-ppr4-5f46-j9c6"
 - "https://github.com/Budibase/budibase/pull/19244"

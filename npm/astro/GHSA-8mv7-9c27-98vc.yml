@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-8mv7-9c27-98vc"
 identifiers:
+- "CVE-2026-73423"
 - "GHSA-8mv7-9c27-98vc"
 package_slug: "npm/astro"
 title: "Astro: composable `astro/hono` pipeline bypasses `security.checkOrigin` when
@@ -10,7 +11,7 @@ description: "In the composable `astro/hono` pipeline, the `security.checkOrigin
   `pages()` primitives each dispatch to user code independently, so a pipeline that
   mounts either primitive before (or without) `middleware()` will bypass the origin
   check for those requests."
-date: "2026-07-20"
+date: "2026-08-12"
 pubdate: "2026-07-20"
 affected_range: ">=7.0.0 <7.0.6"
 fixed_versions:
@@ -19,6 +20,7 @@ affected_versions: "All versions starting from 7.0.0 before 7.0.6"
 not_impacted: "All versions before 7.0.0, all versions starting from 7.0.6"
 solution: "Upgrade to version 7.0.6 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-73423"
 - "https://github.com/advisories/GHSA-8mv7-9c27-98vc"
 - "https://github.com/withastro/astro/security/advisories/GHSA-8mv7-9c27-98vc"
 - "https://github.com/withastro/astro/pull/17250"

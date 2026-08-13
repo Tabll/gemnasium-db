@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-hfhx-w8p8-4hc7"
 identifiers:
+- "CVE-2026-73307"
 - "GHSA-hfhx-w8p8-4hc7"
 package_slug: "npm/@budibase/server"
 title: "Budibase: SSRF via bare fetch() in uploadUrl during AI table generation"
@@ -14,7 +15,7 @@ description: "The `uploadUrl()` function in `packages/server/src/utilities/fileU
   services, cloud metadata APIs (169.254.169.254), or other network-internal resources.\n\nThis
   is a variant of the same class of issue addressed in other Budibase code paths where
   `fetchWithBlacklist()` is correctly used to prevent SSRF."
-date: "2026-07-24"
+date: "2026-08-12"
 pubdate: "2026-07-24"
 affected_range: "<=3.38.1"
 fixed_versions: []
@@ -22,6 +23,7 @@ affected_versions: "All versions up to 3.38.1"
 not_impacted: ""
 solution: "Unfortunately, there is no solution available yet."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-73307"
 - "https://github.com/advisories/GHSA-hfhx-w8p8-4hc7"
 - "https://github.com/Budibase/budibase/security/advisories/GHSA-hfhx-w8p8-4hc7"
 - "https://github.com/Budibase/budibase/pull/18866"

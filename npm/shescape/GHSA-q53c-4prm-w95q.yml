@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-q53c-4prm-w95q"
 identifiers:
+- "CVE-2026-73411"
 - "GHSA-q53c-4prm-w95q"
 package_slug: "npm/shescape"
 title: "Shescape: Home-directory disclosure in assignment context on Unix with Dash"
@@ -17,7 +18,7 @@ description: "This impacts users of Shescape on Unix systems that explicitly con
   And (example)\nconst result = cp.execSync(`V=${escapedPayload}; echo $V`, options);\n\n//
   4. Impact\nconsole.log(result.toString());\n// Outputs \":\" followed by the user's
   home directory\n```"
-date: "2026-07-24"
+date: "2026-08-12"
 pubdate: "2026-07-24"
 affected_range: "<2.1.14||>=3.0.0 <3.0.1"
 fixed_versions:
@@ -29,6 +30,7 @@ not_impacted: "All versions starting from 2.1.14 before 3.0.0, all versions star
   from 3.0.1"
 solution: "Upgrade to versions 2.1.14, 3.0.1 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-73411"
 - "https://github.com/advisories/GHSA-q53c-4prm-w95q"
 - "https://github.com/ericcornelissen/shescape/security/advisories/GHSA-q53c-4prm-w95q"
 - "https://github.com/ericcornelissen/shescape/pull/2649"

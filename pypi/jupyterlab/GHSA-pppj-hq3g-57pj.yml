@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-pppj-hq3g-57pj"
 identifiers:
+- "CVE-2026-73417"
 - "GHSA-pppj-hq3g-57pj"
 package_slug: "pypi/jupyterlab"
 title: "JupyterLab: Cross-site scripting (XSS) via crafted settings file (`overrides.json`)"
@@ -13,7 +14,7 @@ description: "JupyterLab 4.5+ allows notebook settings to be shared and applied 
   another party without realizing it could do more. On multi-tenant file systems without
   proper permission control, another user could plant a malicious `overrides.json`.\n\n>
   CVE assignment pending, GitHub CNA is experiencing severe backlog"
-date: "2026-07-22"
+date: "2026-08-12"
 pubdate: "2026-07-22"
 affected_range: ">=3.3.0,<4.5.10||>=4.6.0,<4.6.2"
 fixed_versions:
@@ -25,6 +26,7 @@ not_impacted: "All versions before 3.3.0, all versions starting from 4.5.10 befo
   4.6.0, all versions starting from 4.6.2"
 solution: "Upgrade to versions 4.5.10, 4.6.2 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-73417"
 - "https://github.com/advisories/GHSA-pppj-hq3g-57pj"
 - "https://github.com/jupyterlab/jupyterlab/security/advisories/GHSA-pppj-hq3g-57pj"
 - "https://github.com/jupyterlab/jupyterlab/pull/19184"

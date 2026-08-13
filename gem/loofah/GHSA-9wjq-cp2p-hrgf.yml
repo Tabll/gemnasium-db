@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-9wjq-cp2p-hrgf"
 identifiers:
+- "CVE-2026-73490"
 - "GHSA-9wjq-cp2p-hrgf"
 package_slug: "gem/loofah"
 title: "Loofah: SVG `href` attribute bypasses local-reference restriction"
@@ -9,7 +10,7 @@ description: "Loofah's HTML5 sanitizer restricted only the `xlink:href` attribut
   a plain `href` attribute as an alternative to the deprecated `xlink:href` per the
   SVG 2 spec, but Loofah did not apply the same restriction to it, allowing those
   elements to reference arbitrary external documents."
-date: "2026-07-21"
+date: "2026-08-12"
 pubdate: "2026-07-21"
 affected_range: "<2.25.2"
 fixed_versions:
@@ -18,6 +19,7 @@ affected_versions: "All versions before 2.25.2"
 not_impacted: "All versions starting from 2.25.2"
 solution: "Upgrade to version 2.25.2 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-73490"
 - "https://github.com/advisories/GHSA-9wjq-cp2p-hrgf"
 - "https://github.com/flavorjones/loofah/security/advisories/GHSA-9wjq-cp2p-hrgf"
 - "https://github.com/flavorjones/loofah/commit/20867b9be689521887364b74822c41ef830523c9"

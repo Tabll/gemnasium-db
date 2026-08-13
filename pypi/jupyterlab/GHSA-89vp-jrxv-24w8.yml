@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-89vp-jrxv-24w8"
 identifiers:
+- "CVE-2026-73416"
 - "GHSA-89vp-jrxv-24w8"
 package_slug: "pypi/jupyterlab"
 title: "JupyterLab: PyPI extension blocklist package-name canonicalization bypass"
@@ -15,7 +16,7 @@ description: "JupyterLab's PyPI extension manager enforces `blocked_extensions_u
   (default) PyPI Extension Manager enabled; and\n- kernels and terminals disabled
   or delegated to remote hosts (otherwise a user with kernel access can install packages
   directly regardless of this check)"
-date: "2026-07-22"
+date: "2026-08-12"
 pubdate: "2026-07-22"
 affected_range: ">=4.5.0,<4.5.10||>=4.6.0,<4.6.2"
 fixed_versions:
@@ -27,6 +28,7 @@ not_impacted: "All versions before 4.5.0, all versions starting from 4.5.10 befo
   4.6.0, all versions starting from 4.6.2"
 solution: "Upgrade to versions 4.5.10, 4.6.2 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-73416"
 - "https://github.com/advisories/GHSA-89vp-jrxv-24w8"
 - "https://github.com/jupyterlab/jupyterlab/security/advisories/GHSA-89vp-jrxv-24w8"
 - "https://github.com/jupyterlab/jupyterlab/pull/19184"

@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-7rqj-j65f-68wh"
 identifiers:
+- "CVE-2026-73420"
 - "GHSA-7rqj-j65f-68wh"
 package_slug: "npm/next-auth"
 title: "Auth.js: Email normalizer validates the address before Unicode normalization,
@@ -14,7 +15,7 @@ description: "The default email-address normalizer used by the email/magic-link 
   string then sees two `@` separators and may deliver the passwordless sign-in link
   to a different recipient than intended. This is an instance of validating before
   canonicalizing."
-date: "2026-07-23"
+date: "2026-08-12"
 pubdate: "2026-07-23"
 affected_range: ">=4.10.3 <4.24.15||>=5.0.0-beta.1 <5.0.0-beta.32"
 fixed_versions:
@@ -26,6 +27,7 @@ not_impacted: "All versions before 4.10.3, all versions starting from 4.24.15 be
   5.0.0-beta.1, all versions starting from 5.0.0-beta.32"
 solution: "Upgrade to versions 4.24.15, 5.0.0-beta.32 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-73420"
 - "https://github.com/advisories/GHSA-7rqj-j65f-68wh"
 - "https://github.com/nextauthjs/next-auth/security/advisories/GHSA-7rqj-j65f-68wh"
 - "https://github.com/nextauthjs/next-auth/commit/19d2feb24359fa8c79418907fc68d9ec8152ca94"

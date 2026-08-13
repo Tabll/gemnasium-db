@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-6v4m-fw66-8r4x"
 identifiers:
+- "CVE-2026-73412"
 - "GHSA-6v4m-fw66-8r4x"
 package_slug: "npm/shescape"
 title: "Shescape: Path disclosure on Unix with Zsh"
@@ -10,7 +11,7 @@ description: "This impacts users of Shescape on Unix systems that explicitly con
   the problem.\n\nIn certain case, an attacker can leverage home directory expansion
   and extended glob syntax to obtain lists of files and directories on the system.
   Depending on what the command does, this may be used to leak more information."
-date: "2026-07-24"
+date: "2026-08-12"
 pubdate: "2026-07-24"
 affected_range: "<2.1.14||>=3.0.0 <3.0.1"
 fixed_versions:
@@ -22,6 +23,7 @@ not_impacted: "All versions starting from 2.1.14 before 3.0.0, all versions star
   from 3.0.1"
 solution: "Upgrade to versions 2.1.14, 3.0.1 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-73412"
 - "https://github.com/advisories/GHSA-6v4m-fw66-8r4x"
 - "https://github.com/ericcornelissen/shescape/security/advisories/GHSA-6v4m-fw66-8r4x"
 - "https://github.com/ericcornelissen/shescape/pull/2649"

@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-xmf8-cvqr-rfgj"
 identifiers:
+- "CVE-2026-73418"
 - "GHSA-xmf8-cvqr-rfgj"
 package_slug: "npm/@auth/core"
 title: "Auth.js: getToken() throws an uncaught exception on malformed Bearer authorization
@@ -13,7 +14,7 @@ description: "The exported `getToken()` helper (`next-auth/jwt` and `@auth/core/
   commonly called in API routes, middleware, and other request handlers, a single
   unauthenticated request can trigger an unhandled exception in code paths that authenticate
   requests."
-date: "2026-07-23"
+date: "2026-08-12"
 pubdate: "2026-07-23"
 affected_range: ">=0.1.0 <0.41.3"
 fixed_versions:
@@ -22,6 +23,7 @@ affected_versions: "All versions starting from 0.1.0 before 0.41.3"
 not_impacted: "All versions before 0.1.0, all versions starting from 0.41.3"
 solution: "Upgrade to version 0.41.3 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-73418"
 - "https://github.com/advisories/GHSA-xmf8-cvqr-rfgj"
 - "https://github.com/nextauthjs/next-auth/security/advisories/GHSA-xmf8-cvqr-rfgj"
 - "https://github.com/nextauthjs/next-auth/pull/13467"

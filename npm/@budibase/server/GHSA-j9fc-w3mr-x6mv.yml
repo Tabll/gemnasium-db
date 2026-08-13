@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-j9fc-w3mr-x6mv"
 identifiers:
+- "CVE-2026-73305"
 - "GHSA-j9fc-w3mr-x6mv"
 package_slug: "npm/@budibase/server"
 title: " Budibase: Privilege escalation via public role assignment API missing app-level
@@ -17,7 +18,7 @@ description: "Budibase `3.39.19` (commit `03fbabae4`) is affected by a privilege
   authorized lab using the verbatim authorization-gate and SDK logic.\n\nThis is an
   incomplete fix of the role-assignment hardening in commit `d63d1d9054` (\"Inline
   public user global role validation\"), which only ever validated the global flags."
-date: "2026-07-24"
+date: "2026-08-12"
 pubdate: "2026-07-24"
 affected_range: "<=3.38.1"
 fixed_versions: []
@@ -25,6 +26,7 @@ affected_versions: "All versions up to 3.38.1"
 not_impacted: ""
 solution: "Unfortunately, there is no solution available yet."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-73305"
 - "https://github.com/advisories/GHSA-j9fc-w3mr-x6mv"
 - "https://github.com/Budibase/budibase/security/advisories/GHSA-j9fc-w3mr-x6mv"
 - "https://github.com/Budibase/budibase/releases/tag/3.40.0"

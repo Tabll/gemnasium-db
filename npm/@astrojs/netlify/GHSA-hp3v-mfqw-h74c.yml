@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-hp3v-mfqw-h74c"
 identifiers:
+- "CVE-2026-73425"
 - "GHSA-hp3v-mfqw-h74c"
 package_slug: "npm/@astrojs/netlify"
 title: "@astrojs/netlify generates an overly-broad Netlify Image CDN allowlist because
@@ -16,7 +17,7 @@ description: "The `@astrojs/netlify` adapter converts each `image.remotePatterns
   is a residual of the same bug class addressed in CVE-2026-54300 (PR #17018, commit
   `1310277d`). That fix corrected wildcard semantics and added a `$` anchor but did
   not add metacharacter escaping for literal pathnames."
-date: "2026-07-20"
+date: "2026-08-12"
 pubdate: "2026-07-20"
 affected_range: "<8.1.2"
 fixed_versions:
@@ -25,6 +26,7 @@ affected_versions: "All versions before 8.1.2"
 not_impacted: "All versions starting from 8.1.2"
 solution: "Upgrade to version 8.1.2 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-73425"
 - "https://github.com/advisories/GHSA-hp3v-mfqw-h74c"
 - "https://github.com/withastro/astro/security/advisories/GHSA-hp3v-mfqw-h74c"
 - "https://github.com/withastro/astro/pull/17018"

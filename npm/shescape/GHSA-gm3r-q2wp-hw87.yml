@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-gm3r-q2wp-hw87"
 identifiers:
+- "CVE-2026-73413"
 - "GHSA-gm3r-q2wp-hw87"
 package_slug: "npm/shescape"
 title: "Shescape: Quadratic-time denial of service in the flag-protection"
@@ -15,7 +16,7 @@ description: "This impacts users of Shescape that have flag protection enabled, 
   t0 = process.hrtime.bigint();\ncallback();\nconst ms = Number(process.hrtime.bigint()
   - t0) / 1e6;\n\n// 4. Impact\nconsole.log(\"Duration:\", ms);\n// Outputs \"Duration:\"
   followed by a number close to 20000\n```"
-date: "2026-07-24"
+date: "2026-08-12"
 pubdate: "2026-07-24"
 affected_range: ">=2.1.11 <2.1.14||>=3.0.0 <3.0.1"
 fixed_versions:
@@ -27,6 +28,7 @@ not_impacted: "All versions before 2.1.11, all versions starting from 2.1.14 bef
   3.0.0, all versions starting from 3.0.1"
 solution: "Upgrade to versions 2.1.14, 3.0.1 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-73413"
 - "https://github.com/advisories/GHSA-gm3r-q2wp-hw87"
 - "https://github.com/ericcornelissen/shescape/security/advisories/GHSA-gm3r-q2wp-hw87"
 - "https://github.com/ericcornelissen/shescape/pull/2649"

@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-jpcw-4wr7-c3vq"
 identifiers:
+- "CVE-2026-73502"
 - "GHSA-jpcw-4wr7-c3vq"
 package_slug: "go/github.com/getkin/kin-openapi"
 title: "kin-openapi openapi3filter: unauthenticated nil-pointer panic when validating
@@ -14,7 +15,7 @@ description: "`openapi3filter.ValidateRequest` contains a NULL-pointer-dereferen
   it — and the defect affects **both OpenAPI 3.0.x and 3.1.x**. Depending on how the
   library is wired into the server (see Impact), this ranges from a per-request abort
   with unbounded panic-log growth to a full remote process crash."
-date: "2026-07-24"
+date: "2026-08-12"
 pubdate: "2026-07-24"
 affected_range: "<0.144.0"
 fixed_versions:
@@ -23,6 +24,7 @@ affected_versions: "All versions before 0.144.0"
 not_impacted: "All versions starting from 0.144.0"
 solution: "Upgrade to version 0.144.0 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-73502"
 - "https://github.com/advisories/GHSA-jpcw-4wr7-c3vq"
 - "https://github.com/getkin/kin-openapi/security/advisories/GHSA-jpcw-4wr7-c3vq"
 - "https://github.com/getkin/kin-openapi/commit/68ac2affa325514d7d6e731204d6a1edf6bdff64"

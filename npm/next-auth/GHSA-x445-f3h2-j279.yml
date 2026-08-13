@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-x445-f3h2-j279"
 identifiers:
+- "CVE-2026-73419"
 - "GHSA-x445-f3h2-j279"
 package_slug: "npm/next-auth"
 title: "Auth.js: OAuth state, nonce, and PKCE check cookies are not bound to the provider
@@ -13,7 +14,7 @@ description: "Auth.js stores the OAuth/OIDC anti-CSRF checks (`state`, `nonce`, 
   id, or redirect URI). In a multi-provider app that allows account linking while
   logged in, this provider-confusion / mix-up condition can let an attacker link their
   account at a second provider to a victim's user."
-date: "2026-07-23"
+date: "2026-08-12"
 pubdate: "2026-07-23"
 affected_range: "<4.24.15||>=5.0.0-beta.1 <5.0.0-beta.32"
 fixed_versions:
@@ -25,6 +26,7 @@ not_impacted: "All versions starting from 4.24.15 before 5.0.0-beta.1, all versi
   starting from 5.0.0-beta.32"
 solution: "Upgrade to versions 4.24.15, 5.0.0-beta.32 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-73419"
 - "https://github.com/advisories/GHSA-x445-f3h2-j279"
 - "https://github.com/nextauthjs/next-auth/security/advisories/GHSA-x445-f3h2-j279"
 - "https://github.com/nextauthjs/next-auth/pull/13469"

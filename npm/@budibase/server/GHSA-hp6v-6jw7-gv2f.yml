@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-hp6v-6jw7-gv2f"
 identifiers:
+- "CVE-2026-73302"
 - "GHSA-hp6v-6jw7-gv2f"
 package_slug: "npm/@budibase/server"
 title: " Budibase: OIDC SSO account takeover: incoming identity linked by email without
@@ -18,7 +19,7 @@ description: "Budibase's OIDC SSO login links an incoming SSO identity to an exi
   effectively delegates all account-linking trust to every configured IdP's email-verification
   policy while checking nothing itself. Full account takeover of any existing Budibase
   user, including the instance owner."
-date: "2026-07-24"
+date: "2026-08-12"
 pubdate: "2026-07-24"
 affected_range: "<=3.38.1"
 fixed_versions: []
@@ -26,6 +27,7 @@ affected_versions: "All versions up to 3.38.1"
 not_impacted: ""
 solution: "Unfortunately, there is no solution available yet."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-73302"
 - "https://github.com/advisories/GHSA-hp6v-6jw7-gv2f"
 - "https://github.com/Budibase/budibase/security/advisories/GHSA-hp6v-6jw7-gv2f"
 - "https://github.com/Budibase/budibase/commit/9ecd0048d9c3ae0ee9bd0e6204c621794dd1a4d3"

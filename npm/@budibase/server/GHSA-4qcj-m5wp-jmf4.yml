@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-4qcj-m5wp-jmf4"
 identifiers:
+- "CVE-2026-73301"
 - "GHSA-4qcj-m5wp-jmf4"
 package_slug: "npm/@budibase/server"
 title: " Budibase: Missing RBAC on GET /api/global/groups allows BASIC users to enumerate
@@ -9,7 +10,7 @@ description: "The `GET /api/global/groups` endpoint on the worker service has no
   authorization middleware. Any authenticated user (including BASIC role) can enumerate
   all user groups in the tenant, including their role mappings, user memberships,
   builder permissions, and the isDefault flag."
-date: "2026-07-24"
+date: "2026-08-12"
 pubdate: "2026-07-24"
 affected_range: "<=3.38.1"
 fixed_versions: []
@@ -17,6 +18,7 @@ affected_versions: "All versions up to 3.38.1"
 not_impacted: ""
 solution: "Unfortunately, there is no solution available yet."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-73301"
 - "https://github.com/advisories/GHSA-4qcj-m5wp-jmf4"
 - "https://github.com/Budibase/budibase/security/advisories/GHSA-4qcj-m5wp-jmf4"
 - "https://github.com/Budibase/budibase/pull/19109"

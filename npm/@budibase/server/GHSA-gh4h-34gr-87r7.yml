@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-gh4h-34gr-87r7"
 identifiers:
+- "CVE-2026-73308"
 - "GHSA-gh4h-34gr-87r7"
 package_slug: "npm/@budibase/server"
 title: " Budibase: OAuth2 Token Disclosure via Automation Test Results Broadcast to
@@ -11,7 +12,7 @@ description: "When an SSO-authenticated user tests an automation in the Budibase
   the same dev app and stored in an in-memory cache accessible to any builder who
   polls the test status endpoint. This allows any co-builder of the same app to steal
   the testing user's OAuth2 tokens."
-date: "2026-07-24"
+date: "2026-08-12"
 pubdate: "2026-07-24"
 affected_range: "<=3.38.1"
 fixed_versions: []
@@ -19,6 +20,7 @@ affected_versions: "All versions up to 3.38.1"
 not_impacted: ""
 solution: "Unfortunately, there is no solution available yet."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-73308"
 - "https://github.com/advisories/GHSA-gh4h-34gr-87r7"
 - "https://github.com/Budibase/budibase/security/advisories/GHSA-gh4h-34gr-87r7"
 - "https://github.com/Budibase/budibase/pull/19107"

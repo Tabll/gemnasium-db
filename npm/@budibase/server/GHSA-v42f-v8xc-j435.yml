@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-v42f-v8xc-j435"
 identifiers:
+- "CVE-2026-73410"
 - "GHSA-v42f-v8xc-j435"
 package_slug: "npm/@budibase/server"
 title: "Budibase: SSRF via DNS rebinding in the REST datasource integration"
@@ -21,7 +22,7 @@ description: "Budibase's central outbound-fetch guard (`fetchWithBlacklist`) pre
   (IAM credential theft), the internal CouchDB/Redis/MinIO, and other internal endpoints
   — reading and, because REST datasources allow arbitrary method/body, writing or
   destroying internal data."
-date: "2026-07-24"
+date: "2026-08-12"
 pubdate: "2026-07-24"
 affected_range: "<=3.38.1"
 fixed_versions: []
@@ -29,6 +30,7 @@ affected_versions: "All versions up to 3.38.1"
 not_impacted: ""
 solution: "Unfortunately, there is no solution available yet."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-73410"
 - "https://github.com/advisories/GHSA-v42f-v8xc-j435"
 - "https://github.com/Budibase/budibase/security/advisories/GHSA-v42f-v8xc-j435"
 - "https://github.com/Budibase/budibase/pull/19178"

@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-w4hw-qcx7-56pr"
 identifiers:
+- "CVE-2026-73414"
 - "GHSA-w4hw-qcx7-56pr"
 package_slug: "npm/shescape"
 title: "Shescape: Shell injection via unescaped parentheses on Windows with CMD"
@@ -15,7 +16,7 @@ description: "This impacts users of Shescape on Windows that explicitly configur
   Or\nescapedPayload = shescape.escapeAll([payload]);\n\n// And (example)\nconst result
   = cp.execSync(`if defined FALSY (echo ${escapedPayload})`, options);\n\n// 4. Impact\nconsole.log(result.toString());\n//
   Outputs \"y\" instead of \"\"\n\n```"
-date: "2026-07-24"
+date: "2026-08-12"
 pubdate: "2026-07-24"
 affected_range: "<2.1.14||>=3.0.0 <3.0.1"
 fixed_versions:
@@ -27,6 +28,7 @@ not_impacted: "All versions starting from 2.1.14 before 3.0.0, all versions star
   from 3.0.1"
 solution: "Upgrade to versions 2.1.14, 3.0.1 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-73414"
 - "https://github.com/advisories/GHSA-w4hw-qcx7-56pr"
 - "https://github.com/ericcornelissen/shescape/security/advisories/GHSA-w4hw-qcx7-56pr"
 - "https://github.com/ericcornelissen/shescape/pull/2649"

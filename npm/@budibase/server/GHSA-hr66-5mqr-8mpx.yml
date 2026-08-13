@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-hr66-5mqr-8mpx"
 identifiers:
+- "CVE-2026-73406"
 - "GHSA-hr66-5mqr-8mpx"
 package_slug: "npm/@budibase/server"
 title: " Budibase: Unauthenticated user information disclosure via public tenant user
@@ -11,7 +12,7 @@ description: "The Budibase Worker service exposes a public, unauthenticated API 
   list with a `TODO` comment acknowledging it \"should be an internal API.\" Any unauthenticated
   party can enumerate user emails or IDs to extract sensitive tenant and user metadata,
   enabling targeted attacks against multi-tenant deployments."
-date: "2026-07-24"
+date: "2026-08-12"
 pubdate: "2026-07-24"
 affected_range: "<=3.38.1"
 fixed_versions: []
@@ -19,6 +20,7 @@ affected_versions: "All versions up to 3.38.1"
 not_impacted: ""
 solution: "Unfortunately, there is no solution available yet."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-73406"
 - "https://github.com/advisories/GHSA-hr66-5mqr-8mpx"
 - "https://github.com/Budibase/budibase/security/advisories/GHSA-hr66-5mqr-8mpx"
 - "https://github.com/Budibase/budibase/pull/19221"

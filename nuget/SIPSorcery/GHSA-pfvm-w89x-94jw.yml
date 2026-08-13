@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-pfvm-w89x-94jw"
+identifiers:
+- "GHSA-pfvm-w89x-94jw"
+package_slug: "nuget/SIPSorcery"
+title: "SIPSorcery: Malformed UDP datagram crashes TurnServer receive loop with no
+  restart, disabling TURN UDP relay for all clients (DoS)"
+description: "`TurnServer.ReceiveUdpAsync` places its generic `catch (Exception)`
+  OUTSIDE the `while` receive loop, and `Start()` launches the loop fire-and-forget
+  with no supervision or restart. A single pre-authentication UDP datagram whose STUN
+  header first byte is in `0x80–0xFF` causes `STUNHeader.ParseSTUNHeader` to throw
+  `ApplicationException`, which unwinds past the loop and terminates it. The TURN
+  UDP relay is then dead for ALL clients until the process is restarted."
+date: "2026-08-12"
+pubdate: "2026-08-12"
+affected_range: "[10.0.5,10.0.14)"
+fixed_versions:
+- "10.0.14"
+affected_versions: "All versions starting from 10.0.5 before 10.0.14"
+not_impacted: "All versions before 10.0.5, all versions starting from 10.0.14"
+solution: "Upgrade to version 10.0.14 or above."
+urls:
+- "https://github.com/advisories/GHSA-pfvm-w89x-94jw"
+- "https://github.com/sipsorcery-org/sipsorcery/security/advisories/GHSA-pfvm-w89x-94jw"
+- "https://github.com/sipsorcery-org/sipsorcery/commit/ccb0b5a845efa2fb131fd00de4f5321bae627f29"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "1ed6fb4d-7b84-4633-9210-6b04d35f8f60"
+cwe_ids:
+- "CWE-248"
+- "CWE-755"
+- "CWE-937"
+- "CWE-1035"
