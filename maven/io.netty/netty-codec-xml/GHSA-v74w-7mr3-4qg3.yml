@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-v74w-7mr3-4qg3"
 identifiers:
+- "CVE-2026-73507"
 - "GHSA-v74w-7mr3-4qg3"
 package_slug: "maven/io.netty/netty-codec-xml"
 title: "Netty: Denial of Service in XmlFrameDecoder via CPU Exhaustion"
@@ -8,7 +9,7 @@ description: "An attacker can cause Denial of Service by sending a specially cra
   malicious XML payload (e.g., repeated `</` characters) to a Netty server utilizing
   XmlFrameDecoder, causing the server's EventLoop thread to exhaust CPU resources
   and become unresponsive."
-date: "2026-07-24"
+date: "2026-08-13"
 pubdate: "2026-07-24"
 affected_range: "[,4.1.136),[4.2.0,4.2.16)"
 fixed_versions:
@@ -20,6 +21,7 @@ not_impacted: "All versions starting from 4.1.136 before 4.2.0, all versions sta
   from 4.2.16"
 solution: "Upgrade to versions 4.1.136, 4.2.16 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-73507"
 - "https://github.com/advisories/GHSA-v74w-7mr3-4qg3"
 - "https://github.com/netty/netty/security/advisories/GHSA-v74w-7mr3-4qg3"
 - "https://github.com/netty/netty/pull/17063"

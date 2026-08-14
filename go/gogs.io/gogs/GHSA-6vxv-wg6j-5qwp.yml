@@ -6,7 +6,7 @@ package_slug: "go/gogs.io/gogs"
 title: "Gogs: XSS in .ipynb files renderer due to outdated notebookjs"
 description: "Gogs renders Jupyter notebook files (`.ipynb`) using [jsvine/notebookjs](https://github.com/jsvine/notebookjs),
   but the version is outdated, missing patches for known XSS vulnerabilities."
-date: "2026-06-19"
+date: "2026-08-13"
 pubdate: "2026-06-19"
 affected_range: "<0.14.3"
 fixed_versions:

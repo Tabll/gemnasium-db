@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-p279-2cqp-84jg"
 identifiers:
+- "CVE-2026-73644"
 - "GHSA-p279-2cqp-84jg"
 package_slug: "maven/org.openidentityplatform.opendj/opendj-server-legacy"
 title: "OpenDJ SASL PLAIN authzid bypassing the proxy ACI scope check"
@@ -12,7 +13,7 @@ description: "When a SASL PLAIN bind supplies an authorization identity (authzid
   ACI for that target.\n\nThis diverges from every other proxy path in OpenDJ — the
   proxied-authorization controls (RFC 4370) and the DIGEST-MD5 / GSSAPI authzid handlers
   all require **both** the privilege **and** the mayProxy scope grant."
-date: "2026-07-24"
+date: "2026-08-13"
 pubdate: "2026-07-24"
 affected_range: "[,5.1.2)"
 fixed_versions:
@@ -21,6 +22,7 @@ affected_versions: "All versions before 5.1.2"
 not_impacted: "All versions starting from 5.1.2"
 solution: "Upgrade to version 5.1.2 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-73644"
 - "https://github.com/advisories/GHSA-p279-2cqp-84jg"
 - "https://github.com/OpenIdentityPlatform/OpenDJ/security/advisories/GHSA-p279-2cqp-84jg"
 - "https://github.com/OpenIdentityPlatform/OpenDJ/commit/5c326850f1ab945cfca7ac9c5aaf77d1052c6bed"

@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-g5vv-q72c-7j78"
 identifiers:
+- "CVE-2026-73561"
 - "GHSA-g5vv-q72c-7j78"
 package_slug: "npm/@anephenix/hub"
 title: "@anephenix/hub: Unauthenticated WebSocket RPC Waiter Resource Exhaustion"
@@ -11,7 +12,7 @@ description: "`@anephenix/hub` starts a `setInterval` polling loop for every inc
   An unauthenticated attacker who opens many WebSocket connections and ignores all
   server RPC messages will therefore cause the server to accumulate unbounded timers
   and heap entries, leading to CPU and memory exhaustion (DoS)."
-date: "2026-07-31"
+date: "2026-08-13"
 pubdate: "2026-07-24"
 affected_range: "<0.2.16"
 fixed_versions:
@@ -20,6 +21,7 @@ affected_versions: "All versions before 0.2.16"
 not_impacted: "All versions starting from 0.2.16"
 solution: "Upgrade to version 0.2.16 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-73561"
 - "https://github.com/advisories/GHSA-g5vv-q72c-7j78"
 - "https://github.com/anephenix/hub/security/advisories/GHSA-g5vv-q72c-7j78"
 - "https://github.com/anephenix/hub/commit/67260d2a1407a77f082f02dc9e1f0891222c306d"

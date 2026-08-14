@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-p63j-vcc4-9vmv"
 identifiers:
+- "CVE-2026-73653"
 - "GHSA-p63j-vcc4-9vmv"
 package_slug: "npm/@vitest/browser"
 title: "@vitest/browser: Browser Mode provider commands bypass the file-access permission
@@ -20,7 +21,7 @@ description: "Browser Mode exposes a set of built-in \"commands\" that run on th
   untrusted party in a position to exploit it. The gap still matters wherever you
   rely on `allowWrite: false` to contain untrusted test code, because these commands
   ignore that flag."
-date: "2026-07-21"
+date: "2026-08-13"
 pubdate: "2026-07-21"
 affected_range: "<3.2.7||>=4.0.0 <4.1.10||>=5.0.0-beta.1 <5.0.0-beta.6"
 fixed_versions:
@@ -33,6 +34,7 @@ not_impacted: "All versions starting from 3.2.7 before 4.0.0, all versions start
   from 4.1.10 before 5.0.0-beta.1, all versions starting from 5.0.0-beta.6"
 solution: "Upgrade to versions 3.2.7, 4.1.10, 5.0.0-beta.6 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-73653"
 - "https://github.com/advisories/GHSA-p63j-vcc4-9vmv"
 - "https://github.com/vitest-dev/vitest/security/advisories/GHSA-p63j-vcc4-9vmv"
 - "https://github.com/vitest-dev/vitest/pull/10674"

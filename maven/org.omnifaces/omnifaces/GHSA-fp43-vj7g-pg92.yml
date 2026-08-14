@@ -64,7 +64,7 @@ description: "## 1. Forged combined-resource IDs\n`CombinedResourceInfo` accepts
   \ values.\n- Capture and verify HTTP-session or principal ownership during the WebSocket\n
   \ handshake; retain a finite idle timeout and configurable per-channel limits.\n\nDaniel
   Birtwhistle"
-date: "2026-07-24"
+date: "2026-08-13"
 pubdate: "2026-07-24"
 affected_range: "[,1.14.3),[2.0.0,2.7.33),[3.0.0,3.14.23),[4.0.0,4.7.12),[5.0.0,5.4.2)"
 fixed_versions:

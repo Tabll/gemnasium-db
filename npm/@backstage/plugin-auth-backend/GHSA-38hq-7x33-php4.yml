@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-38hq-7x33-php4"
 identifiers:
+- "CVE-2026-73563"
 - "GHSA-38hq-7x33-php4"
 package_slug: "npm/@backstage/plugin-auth-backend"
 title: "@backstage/plugin-auth-backend: Unauthenticated OAuth account takeover via
@@ -23,7 +24,7 @@ description: "The allowlist matching used by the experimental dynamic client reg
   fixed or loopback hosts and are not affected. Deployments are only impacted if they
   enable one of these features and configure custom allowlist patterns that contain
   a wildcard in the hostname, or patterns without an explicit protocol."
-date: "2026-07-24"
+date: "2026-08-13"
 pubdate: "2026-07-24"
 affected_range: "<0.29.2"
 fixed_versions:
@@ -32,6 +33,7 @@ affected_versions: "All versions before 0.29.2"
 not_impacted: "All versions starting from 0.29.2"
 solution: "Upgrade to version 0.29.2 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-73563"
 - "https://github.com/advisories/GHSA-38hq-7x33-php4"
 - "https://github.com/backstage/backstage/security/advisories/GHSA-38hq-7x33-php4"
 - "https://github.com/backstage/backstage/commit/274acc51d22a7dd919cdda49d9086cf12c0b8711"

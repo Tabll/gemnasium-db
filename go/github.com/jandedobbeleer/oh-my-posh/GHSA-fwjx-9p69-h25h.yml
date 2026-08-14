@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-fwjx-9p69-h25h"
 identifiers:
+- "CVE-2026-73506"
 - "GHSA-fwjx-9p69-h25h"
 package_slug: "go/github.com/jandedobbeleer/oh-my-posh"
 title: "Oh My Posh: Terminal escape sequence injection via unsanitized prompt segment
@@ -11,7 +12,7 @@ description: "Oh My Posh renders dynamic, potentially attacker-controlled string
   attacker who controls one of these values can inject ANSI/OSC escape sequences that
   the victim's terminal executes on every prompt render. (This is separate from the
   path-segment command-execution report; it has a different root cause and fix.)"
-date: "2026-07-24"
+date: "2026-08-13"
 pubdate: "2026-07-24"
 affected_range: "<29.35.1"
 fixed_versions:
@@ -20,6 +21,7 @@ affected_versions: "All versions before 29.35.1"
 not_impacted: "All versions starting from 29.35.1"
 solution: "Upgrade to version 29.35.1 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-73506"
 - "https://github.com/advisories/GHSA-fwjx-9p69-h25h"
 - "https://github.com/JanDeDobbeleer/oh-my-posh/security/advisories/GHSA-fwjx-9p69-h25h"
 - "https://github.com/JanDeDobbeleer/oh-my-posh/commit/edcf3c88f3fb582e84358b385c49d33d04c04224"

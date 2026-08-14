@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-hmj8-5xmh-5573"
 identifiers:
+- "CVE-2026-73568"
 - "GHSA-hmj8-5xmh-5573"
 package_slug: "pypi/libp2p"
 title: "libp2p: yamux connection DoS via oversized data frame"
@@ -10,14 +11,15 @@ description: "The yamux stream multiplexer in py-libp2p does not validate incomi
   claiming a 4 GB body, causing the victim's yamux read loop to block indefinitely.
   This affects the default `new_host()` configuration and requires no special setup
   on either side."
-date: "2026-07-24"
+date: "2026-08-13"
 pubdate: "2026-07-24"
-affected_range: "<=0.6.0"
+affected_range: "<=0.7.0"
 fixed_versions: []
-affected_versions: "All versions up to 0.6.0"
+affected_versions: "All versions up to 0.7.0"
 not_impacted: ""
 solution: "Unfortunately, there is no solution available yet."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-73568"
 - "https://github.com/advisories/GHSA-hmj8-5xmh-5573"
 - "https://github.com/libp2p/py-libp2p/security/advisories/GHSA-hmj8-5xmh-5573"
 - "https://github.com/libp2p/py-libp2p/commit/146ea87d1a20cc7dacf684ecf7c204543be04b37"

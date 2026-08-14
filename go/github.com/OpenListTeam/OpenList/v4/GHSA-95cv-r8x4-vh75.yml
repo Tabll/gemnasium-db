@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-95cv-r8x4-vh75"
 identifiers:
+- "CVE-2026-73509"
 - "GHSA-95cv-r8x4-vh75"
 package_slug: "go/github.com/OpenListTeam/OpenList/v4"
 title: "OpenList: Authenticated users can rename files outside their base path via
@@ -14,7 +15,7 @@ description: "The `/api/fs/batch_rename` handler validates and authorizes only t
   `/team/a` and `src_dir` is `/writable`, the authorized directory becomes `/team/a/writable`,
   but the final source path normalizes to `/team/ab/secret.txt`. The file outside
   the user's base path is then renamed."
-date: "2026-07-24"
+date: "2026-08-13"
 pubdate: "2026-07-24"
 affected_range: "<4.2.4"
 fixed_versions:
@@ -23,6 +24,7 @@ affected_versions: "All versions before 4.2.4"
 not_impacted: "All versions starting from 4.2.4"
 solution: "Upgrade to version 4.2.4 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-73509"
 - "https://github.com/advisories/GHSA-95cv-r8x4-vh75"
 - "https://github.com/OpenListTeam/OpenList/security/advisories/GHSA-95cv-r8x4-vh75"
 - "https://github.com/OpenListTeam/OpenList/commit/651da18da4c647d96648d4bb64462baac1c37e04"

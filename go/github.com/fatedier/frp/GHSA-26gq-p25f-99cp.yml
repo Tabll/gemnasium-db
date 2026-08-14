@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-26gq-p25f-99cp"
 identifiers:
+- "CVE-2026-73564"
 - "GHSA-26gq-p25f-99cp"
 package_slug: "go/github.com/fatedier/frp"
 title: "frp: Unauthenticated Remote Denial of Service in the frp SSH Tunnel Gateway
@@ -16,7 +17,7 @@ description: "An integer-overflow vulnerability in the frp server's optional SSH
   and the request is handled before any frp token is checked, so the crash is reachable
   pre-authentication. It carries no state and is trivially repeatable, turning one
   crash into a sustained outage that drops every tunnel for every user."
-date: "2026-07-24"
+date: "2026-08-13"
 pubdate: "2026-07-24"
 affected_range: ">=0.53.0 <0.70.1"
 fixed_versions:
@@ -25,6 +26,7 @@ affected_versions: "All versions starting from 0.53.0 before 0.70.1"
 not_impacted: "All versions before 0.53.0, all versions starting from 0.70.1"
 solution: "Upgrade to version 0.70.1 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-73564"
 - "https://github.com/advisories/GHSA-26gq-p25f-99cp"
 - "https://github.com/fatedier/frp/security/advisories/GHSA-26gq-p25f-99cp"
 - "https://github.com/fatedier/frp/pull/5428"

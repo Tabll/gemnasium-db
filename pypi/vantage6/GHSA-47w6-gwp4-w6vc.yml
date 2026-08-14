@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-47w6-gwp4-w6vc"
 identifiers:
+- "CVE-2026-73652"
 - "GHSA-47w6-gwp4-w6vc"
 package_slug: "pypi/vantage6"
 title: "vantage6: Algorithm developer can edit another developer's algorithm that
@@ -9,7 +10,7 @@ description: "Edit permission lacks ownership check, so another developer could 
   metadata that is later trusted by nodes.\n\nWorst they could do is update the image
   or image tag. If that is not noted, another image is approved than the one actually
   under review"
-date: "2026-07-24"
+date: "2026-08-13"
 pubdate: "2026-07-24"
 affected_range: "<=5.0.2"
 fixed_versions: []
@@ -17,6 +18,7 @@ affected_versions: "All versions up to 5.0.2"
 not_impacted: ""
 solution: "Unfortunately, there is no solution available yet."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-73652"
 - "https://github.com/advisories/GHSA-47w6-gwp4-w6vc"
 - "https://github.com/vantage6/vantage6/security/advisories/GHSA-47w6-gwp4-w6vc"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N"

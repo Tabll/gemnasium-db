@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-hqf9-8xv5-x8xw"
 identifiers:
+- "CVE-2026-73645"
 - "GHSA-hqf9-8xv5-x8xw"
 package_slug: "npm/@openzeppelin/confidential-contracts"
 title: "ERC7984ERC20Wrapper: once a wrapper is filled, subsequent wrap requests do
@@ -15,7 +16,7 @@ description: "The `ERC7984` contract tracks total supply using a confidential `e
   wrapping ~18.4 trillion tokens. There are very few tokens of value with sufficient
   total supply to result in the filling of the wrapper. That said, we recommend upgrading
   to `0.3.1` to remove this issue."
-date: "2026-01-05"
+date: "2026-08-13"
 pubdate: "2026-01-05"
 affected_range: "<0.3.1"
 fixed_versions:
@@ -24,9 +25,9 @@ affected_versions: "All versions before 0.3.1"
 not_impacted: "All versions starting from 0.3.1"
 solution: "Upgrade to version 0.3.1 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-73645"
 - "https://github.com/advisories/GHSA-hqf9-8xv5-x8xw"
 - "https://github.com/OpenZeppelin/openzeppelin-confidential-contracts/security/advisories/GHSA-hqf9-8xv5-x8xw"
-- "https://github.com/OpenZeppelin/openzeppelin-confidential-contracts"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
 cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N"
 uuid: "2ee9426d-56f8-4315-af0f-307eee9e6d20"

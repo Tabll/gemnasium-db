@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-2p49-hgcm-8545"
 identifiers:
+- "CVE-2026-73650"
 - "GHSA-2p49-hgcm-8545"
 package_slug: "npm/svgo"
 title: "SVGO removeScripts plugin leaves some executable scripts intact"
@@ -8,7 +9,7 @@ description: "SVGO's removeScripts plugin (disabled by default) removes scripts 
   the SVG, however executable scripts were left intact in some cases. If a consumer
   relied on this plugin for sanitization and served them to users, these SVGs could
   open up doors to XSS."
-date: "2026-07-21"
+date: "2026-08-13"
 pubdate: "2026-07-21"
 affected_range: ">=1.0.0 <2.8.3||>=3.0.0 <3.3.4||>=4.0.0 <4.0.2"
 fixed_versions:
@@ -22,6 +23,7 @@ not_impacted: "All versions before 1.0.0, all versions starting from 2.8.3 befor
   4.0.2"
 solution: "Upgrade to versions 2.8.3, 3.3.4, 4.0.2 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-73650"
 - "https://github.com/advisories/GHSA-2p49-hgcm-8545"
 - "https://github.com/svg/svgo/security/advisories/GHSA-2p49-hgcm-8545"
 - "https://github.com/svg/svgo/commit/628e3bc7336625a30365d0a9b60185307d852466"

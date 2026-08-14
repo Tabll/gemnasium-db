@@ -14,7 +14,7 @@ description: "Auth.js stores the OAuth/OIDC anti-CSRF checks (`state`, `nonce`, 
   id, or redirect URI). In a multi-provider app that allows account linking while
   logged in, this provider-confusion / mix-up condition can let an attacker link their
   account at a second provider to a victim's user."
-date: "2026-08-12"
+date: "2026-08-13"
 pubdate: "2026-07-23"
 affected_range: "<0.41.3"
 fixed_versions:

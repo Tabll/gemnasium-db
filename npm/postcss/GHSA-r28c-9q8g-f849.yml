@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-r28c-9q8g-f849"
 identifiers:
+- "CVE-2026-73646"
 - "GHSA-r28c-9q8g-f849"
 package_slug: "npm/postcss"
 title: "PostCSS: Path Traversal in Previous Source Map Auto-Loading (sourceMappingURL)
@@ -10,7 +11,7 @@ description: "Disclosure of the contents of arbitrary `.map` files reachable via
   Affects any application processing CSS it does not fully trust without explicitly
   passing `map: false`. No authentication or user interaction beyond submitting CSS
   text is required."
-date: "2026-07-24"
+date: "2026-08-13"
 pubdate: "2026-07-24"
 affected_range: "<8.5.18"
 fixed_versions:
@@ -19,6 +20,7 @@ affected_versions: "All versions before 8.5.18"
 not_impacted: "All versions starting from 8.5.18"
 solution: "Upgrade to version 8.5.18 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-73646"
 - "https://github.com/advisories/GHSA-r28c-9q8g-f849"
 - "https://github.com/postcss/postcss/security/advisories/GHSA-r28c-9q8g-f849"
 - "https://github.com/postcss/postcss/commit/95663d3eb7ba26f4854dd19d3b4f4425760cf56c"

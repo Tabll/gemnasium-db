@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-664h-wqgq-64gw"
 identifiers:
+- "CVE-2026-73562"
 - "GHSA-664h-wqgq-64gw"
 package_slug: "npm/mongoose"
 title: "Mongoose: Prototype pollution in mongoose update casting via __proto__-prefixed
@@ -16,7 +17,7 @@ description: "_What kind of vulnerability is it? Who is impacted?_\n\nPrototype 
   AFTER the pollution side-effect */ }\n\nconsole.log('after :', Object.prototype.$fullPath);
   \           // \"__proto__\"\nconsole.log('enumerable:', Object.prototype.propertyIsEnumerable('$fullPath'));
   \ // true\nconsole.log('fresh {}:', ({}).$fullPath);                      // \"__proto__\"\n```"
-date: "2026-07-24"
+date: "2026-08-13"
 pubdate: "2026-07-24"
 affected_range: "<6.13.10||>=7.0.0 <7.8.10||>=8.0.0 <8.24.1||>=9.0.0 <9.7.2"
 fixed_versions:
@@ -32,6 +33,7 @@ not_impacted: "All versions starting from 6.13.10 before 7.0.0, all versions sta
   starting from 9.7.2"
 solution: "Upgrade to versions 6.13.10, 7.8.10, 8.24.1, 9.7.2 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-73562"
 - "https://github.com/advisories/GHSA-664h-wqgq-64gw"
 - "https://github.com/Automattic/mongoose/security/advisories/GHSA-664h-wqgq-64gw"
 - "https://github.com/Automattic/mongoose/pull/16230"

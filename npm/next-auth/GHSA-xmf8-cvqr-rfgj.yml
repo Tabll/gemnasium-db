@@ -14,7 +14,7 @@ description: "The exported `getToken()` helper (`next-auth/jwt` and `@auth/core/
   commonly called in API routes, middleware, and other request handlers, a single
   unauthenticated request can trigger an unhandled exception in code paths that authenticate
   requests."
-date: "2026-08-12"
+date: "2026-08-13"
 pubdate: "2026-07-23"
 affected_range: ">=4.0.6 <4.24.15||>=5.0.0-beta.0 <5.0.0-beta.32"
 fixed_versions:

@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-7gfh-x38p-prh3"
 identifiers:
+- "CVE-2026-73649"
 - "GHSA-7gfh-x38p-prh3"
 package_slug: "npm/velocityjs"
 title: "Velocity.js: Remote Code Execution via property-read to Function constructor
@@ -11,7 +12,7 @@ description: "Remote Code Execution (RCE) in velocityjs v2.1.6 via property-read
   only in the #set assignment handler (set.cjs), but property read expressions are
   unfiltered. Any application rendering attacker-controlled Velocity templates is
   vulnerable to arbitrary code execution on the server."
-date: "2026-07-24"
+date: "2026-08-13"
 pubdate: "2026-07-24"
 affected_range: "<2.1.7"
 fixed_versions:
@@ -20,6 +21,7 @@ affected_versions: "All versions before 2.1.7"
 not_impacted: "All versions starting from 2.1.7"
 solution: "Upgrade to version 2.1.7 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-73649"
 - "https://github.com/advisories/GHSA-7gfh-x38p-prh3"
 - "https://github.com/shepherdwind/velocity.js/security/advisories/GHSA-7gfh-x38p-prh3"
 - "https://github.com/shepherdwind/velocity.js/pull/192"

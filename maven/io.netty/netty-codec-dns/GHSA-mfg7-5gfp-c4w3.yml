@@ -1,13 +1,14 @@
 ---
 identifier: "GHSA-mfg7-5gfp-c4w3"
 identifiers:
+- "CVE-2026-73508"
 - "GHSA-mfg7-5gfp-c4w3"
 package_slug: "maven/io.netty/netty-codec-dns"
 title: "Netty: Memory Leak in DNS Record Decoder via Malformed Domain Names"
 description: "A memory leak can be caused in Netty's DNS codec by sending malicious
   DNS packets containing invalid domain names. Because the leak occurs incrementally
   per packet, sustained malicious requests will cause a gradual Denial of Service."
-date: "2026-07-24"
+date: "2026-08-13"
 pubdate: "2026-07-24"
 affected_range: "[,4.1.136),[4.2.0,4.2.16)"
 fixed_versions:
@@ -19,6 +20,7 @@ not_impacted: "All versions starting from 4.1.136 before 4.2.0, all versions sta
   from 4.2.16"
 solution: "Upgrade to versions 4.1.136, 4.2.16 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-73508"
 - "https://github.com/advisories/GHSA-mfg7-5gfp-c4w3"
 - "https://github.com/netty/netty/security/advisories/GHSA-mfg7-5gfp-c4w3"
 - "https://github.com/netty/netty/pull/17063"

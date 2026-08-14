@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-2rp8-mm9q-fp49"
 identifiers:
+- "CVE-2026-73651"
 - "GHSA-2rp8-mm9q-fp49"
 package_slug: "npm/typeorm"
 title: " TypeORM: migration:generate template-literal code injection"
@@ -8,7 +9,7 @@ description: "`typeorm migration:generate` embeds database schema metadata into 
   template literals, escaping backticks but not `${...}`. An attacker who can write
   schema metadata (column comments, defaults, view definitions) achieves arbitrary
   code execution on the host that loads the generated migration."
-date: "2026-07-21"
+date: "2026-08-13"
 pubdate: "2026-07-21"
 affected_range: "<0.3.31||>=1.0.0 <1.1.0"
 fixed_versions:
@@ -20,6 +21,7 @@ not_impacted: "All versions starting from 0.3.31 before 1.0.0, all versions star
   from 1.1.0"
 solution: "Upgrade to versions 0.3.31, 1.1.0 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-73651"
 - "https://github.com/advisories/GHSA-2rp8-mm9q-fp49"
 - "https://github.com/typeorm/typeorm/security/advisories/GHSA-2rp8-mm9q-fp49"
 - "https://github.com/typeorm/typeorm/commit/41d1c62fe49f99c3ca916d4d986f61ee9f45d519"

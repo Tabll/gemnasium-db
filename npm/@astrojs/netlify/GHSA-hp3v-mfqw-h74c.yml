@@ -17,7 +17,7 @@ description: "The `@astrojs/netlify` adapter converts each `image.remotePatterns
   is a residual of the same bug class addressed in CVE-2026-54300 (PR #17018, commit
   `1310277d`). That fix corrected wildcard semantics and added a `$` anchor but did
   not add metacharacter escaping for literal pathnames."
-date: "2026-08-12"
+date: "2026-08-13"
 pubdate: "2026-07-20"
 affected_range: "<8.1.2"
 fixed_versions:
@@ -31,6 +31,9 @@ urls:
 - "https://github.com/withastro/astro/security/advisories/GHSA-hp3v-mfqw-h74c"
 - "https://github.com/withastro/astro/pull/17018"
 - "https://github.com/advisories/GHSA-529g-xq4f-cw38"
+- "https://github.com/withastro/astro/pull/17368"
+- "https://github.com/withastro/astro/commit/ee74c289bfe32fb6a7f59ed97c5c22db16394b72"
+- "https://github.com/withastro/astro/releases/tag/@astrojs/netlify@8.1.2"
 cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N"
 uuid: "4ee312d3-8480-41ba-b35c-e51065d31ef2"
 cwe_ids:

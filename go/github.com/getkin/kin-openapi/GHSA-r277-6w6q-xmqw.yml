@@ -13,7 +13,7 @@ description: "`ValidationHandler.Load()` in `getkin/kin-openapi` silently replac
   remote attacker can reach handlers for routes whose OpenAPI operation requires an
   API key, OAuth token, or any other security scheme if the application relies on
   `ValidationHandler` as its enforcement middleware."
-date: "2026-07-31"
+date: "2026-08-14"
 pubdate: "2026-07-24"
 affected_range: "<0.144.0"
 fixed_versions:

@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-7c4v-fwgw-9rf7"
 identifiers:
+- "CVE-2026-72744"
 - "GHSA-7c4v-fwgw-9rf7"
 package_slug: "npm/nuxt"
 title: "Nuxt dev server discloses project root and workspace UUID via the Chrome DevTools
@@ -22,7 +23,7 @@ description: "When a Nuxt dev server is bound to a network-reachable interface (
   and `experimental.chromeDevtoolsProjectSettings` to be enabled (it defaults to `true`).
   Production builds are unaffected, because the endpoint is registered only as a development
   handler."
-date: "2026-08-07"
+date: "2026-08-13"
 pubdate: "2026-08-07"
 affected_range: ">=3.21.7 <3.21.10||>=4.4.7 <4.5.1"
 fixed_versions:
@@ -34,12 +35,14 @@ not_impacted: "All versions before 3.21.7, all versions starting from 3.21.10 be
   4.4.7, all versions starting from 4.5.1"
 solution: "Upgrade to versions 3.21.10, 4.5.1 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-72744"
 - "https://github.com/advisories/GHSA-7c4v-fwgw-9rf7"
 - "https://github.com/nuxt/nuxt/security/advisories/GHSA-7c4v-fwgw-9rf7"
 - "https://github.com/nuxt/nuxt/commit/00f71bb6517abff67257c8ea1fcdc777b938b68d"
 - "https://github.com/nuxt/nuxt/commit/e30c611ea03240f341fe784ab1711aa6424da2fa"
 - "https://github.com/nuxt/nuxt/releases/tag/v3.21.10"
 - "https://github.com/nuxt/nuxt/releases/tag/v4.5.1"
+- "https://www.vulncheck.com/advisories/nuxt-before-information-disclosure-via-chrome-devtools"
 cvss_v3: "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
 cvss_v4: "CVSS:4.0/AV:A/AC:L/AT:N/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N"
 uuid: "cab73b24-ec31-48f4-9cb2-ad446e842ab7"

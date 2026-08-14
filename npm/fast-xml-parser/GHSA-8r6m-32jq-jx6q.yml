@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-8r6m-32jq-jx6q"
 identifiers:
+- "CVE-2026-73569"
 - "GHSA-8r6m-32jq-jx6q"
 package_slug: "npm/fast-xml-parser"
 title: "fast-xml-parser: Repeated DOCTYPE declarations reset entity expansion limits"
@@ -12,7 +13,7 @@ description: "`fast-xml-parser` processes multiple \"DOCTYPE\" declarations with
   one parse operation.\n\nThis allows a crafted XML document to exceed the configured
   entity-expansion limits and can cause excessive CPU use, event-loop blocking, memory
   exhaustion, and process termination."
-date: "2026-07-21"
+date: "2026-08-13"
 pubdate: "2026-07-21"
 affected_range: ">=5.9.3 <5.10.1"
 fixed_versions:
@@ -21,6 +22,7 @@ affected_versions: "All versions starting from 5.9.3 before 5.10.1"
 not_impacted: "All versions before 5.9.3, all versions starting from 5.10.1"
 solution: "Upgrade to version 5.10.1 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-73569"
 - "https://github.com/advisories/GHSA-8r6m-32jq-jx6q"
 - "https://github.com/NaturalIntelligence/fast-xml-parser/security/advisories/GHSA-8r6m-32jq-jx6q"
 - "https://github.com/NaturalIntelligence/fast-xml-parser/commit/4e546e03987662de5495d050b5fba26bea65383f"
