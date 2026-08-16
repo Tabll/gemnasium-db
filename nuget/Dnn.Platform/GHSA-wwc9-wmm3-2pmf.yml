@@ -1,0 +1,23 @@
+---
+identifier: "GHSA-wwc9-wmm3-2pmf"
+identifiers:
+- "GHSA-wwc9-wmm3-2pmf"
+package_slug: "nuget/Dnn.Platform"
+title: "Duplicate"
+description: "This advisory duplicates another."
+date: "2026-01-26"
+pubdate: "2025-06-20"
+affected_range: "(,0)"
+fixed_versions: []
+affected_versions: "None"
+not_impacted: "N/A"
+solution: "N/A"
+urls:
+- "https://github.com/advisories/GHSA-wwc9-wmm3-2pmf"
+- "https://github.com/dnnsoftware/Dnn.Platform/security/advisories/GHSA-wwc9-wmm3-2pmf"
+- "https://github.com/dnnsoftware/Dnn.Platform"
+uuid: "5f24ea3d-566e-4bc0-b9ec-19cfe64ff761"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

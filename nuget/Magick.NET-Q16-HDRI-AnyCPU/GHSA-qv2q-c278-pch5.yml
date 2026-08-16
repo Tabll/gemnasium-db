@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-qv2q-c278-pch5"
+identifiers:
+- "GHSA-qv2q-c278-pch5"
+package_slug: "nuget/Magick.NET-Q16-HDRI-AnyCPU"
+title: "ImageMagick: Information Disclosure in PasskeyEncipherImage via AES-CTR nonce
+  reuse"
+description: "The PasskeyEncipherImage method is vulnerable to information disclosure
+  via AES-CTR nonce reuse. ImageMagick has update the documentation on its website
+  to make it more clear that this is happening: https://imagemagick.org/cipher/"
+date: "2026-05-21"
+pubdate: "2026-05-21"
+affected_range: "[,14.12.0)"
+fixed_versions:
+- "14.12.0"
+affected_versions: "All versions before 14.12.0"
+not_impacted: "All versions starting from 14.12.0"
+solution: "Upgrade to version 14.12.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-qv2q-c278-pch5"
+- "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-qv2q-c278-pch5"
+- "https://imagemagick.org/cipher"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N"
+uuid: "7e1f8f05-41a3-4ca3-9a67-05171f69647d"
+cwe_ids:
+- "CWE-323"
+- "CWE-330"
+- "CWE-937"
+- "CWE-1035"

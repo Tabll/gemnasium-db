@@ -1,0 +1,25 @@
+---
+identifier: "GHSA-h58x-r7f7-rh84"
+identifiers:
+- "GHSA-h58x-r7f7-rh84"
+package_slug: "nuget/Magick.NET-Q8-x64"
+title: "ImageMagick: Memory Leak in ICON decoder when allocation fails"
+description: "A memory leak will occur in the ICON decoder when an allocation fails."
+date: "2026-07-24"
+pubdate: "2026-07-24"
+affected_range: "[,14.15.0)"
+fixed_versions:
+- "14.15.0"
+affected_versions: "All versions before 14.15.0"
+not_impacted: "All versions starting from 14.15.0"
+solution: "Upgrade to version 14.15.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-h58x-r7f7-rh84"
+- "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-h58x-r7f7-rh84"
+- "https://github.com/dlemstra/Magick.NET/releases/tag/14.15.0"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L"
+uuid: "d1be0a75-8935-4210-bf7d-93a750a1f8c8"
+cwe_ids:
+- "CWE-401"
+- "CWE-937"
+- "CWE-1035"

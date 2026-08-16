@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-8rw6-p7m8-63jp"
+identifiers:
+- "GHSA-8rw6-p7m8-63jp"
+package_slug: "cargo/surrealdb"
+title: "SurrealDB: Array element-level (field.*) SELECT permissions leak denied elements
+  to record users"
+description: "A `SELECT` permission defined on an array element (`DEFINE FIELD field.*
+  … PERMISSIONS FOR select …`) is not enforced correctly for `RECORD` users. Instead
+  of hiding the denied elements, the query leaks a subset of them: a deny-all returns
+  the odd-indexed elements, and a per-element predicate keeps and drops the wrong
+  ones.\n\nThe filter removed each denied element by index while walking the array
+  forwards. Because removing an element shifts every later index down, each cut invalidated
+  the indices still pending in the loop, leaving denied elements behind. Field-level
+  permissions are enforced correctly; only the element (`field.*`) level is affected,
+  and only for record users — root and record-owner sessions are not."
+date: "2026-08-14"
+pubdate: "2026-08-14"
+affected_range: "<3.1.4"
+fixed_versions:
+- "3.1.4"
+affected_versions: "All versions before 3.1.4"
+not_impacted: "All versions starting from 3.1.4"
+solution: "Upgrade to version 3.1.4 or above."
+urls:
+- "https://github.com/advisories/GHSA-8rw6-p7m8-63jp"
+- "https://github.com/surrealdb/surrealdb/security/advisories/GHSA-8rw6-p7m8-63jp"
+- "https://github.com/surrealdb/surrealdb/commit/8f89b260bb9692e5b0d58930793d482a8207eedc"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+uuid: "f5f95257-f4d1-4f11-b2fd-9f436eb0b0fb"
+cwe_ids:
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

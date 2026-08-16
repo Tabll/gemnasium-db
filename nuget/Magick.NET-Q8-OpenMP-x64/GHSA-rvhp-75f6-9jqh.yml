@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-rvhp-75f6-9jqh"
+identifiers:
+- "GHSA-rvhp-75f6-9jqh"
+package_slug: "nuget/Magick.NET-Q8-OpenMP-x64"
+title: "ImageMagick: Policy Bypass possible with matrix-backed operations"
+description: "Matrix bases operations like `-canny` are missing a check for allowed
+  memory allocation that could result allocating more memory than allowed."
+date: "2026-07-24"
+pubdate: "2026-07-24"
+affected_range: "[,14.15.0)"
+fixed_versions:
+- "14.15.0"
+affected_versions: "All versions before 14.15.0"
+not_impacted: "All versions starting from 14.15.0"
+solution: "Upgrade to version 14.15.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-rvhp-75f6-9jqh"
+- "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-rvhp-75f6-9jqh"
+- "https://github.com/dlemstra/Magick.NET/releases/tag/14.15.0"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L"
+uuid: "b55a30a0-b392-4f42-b215-bd4fee3186b4"
+cwe_ids:
+- "CWE-284"
+- "CWE-400"
+- "CWE-770"
+- "CWE-937"
+- "CWE-1035"

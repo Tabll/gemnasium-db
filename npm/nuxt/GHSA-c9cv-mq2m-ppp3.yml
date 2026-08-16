@@ -29,16 +29,16 @@ description: "Three weaknesses in Nuxt's client-navigation URL handling, all rea
   passes that check; the value is then assigned to\n`window.location.href`, which
   the browser treats as a cross-origin\nredirect. This is the same protocol-relative
   bypass family as (1), in\na different sink."
-date: "2026-06-22"
+date: "2026-08-14"
 pubdate: "2026-06-16"
-affected_range: "<3.21.7||>=4.0.0 <4.4.7"
+affected_range: ">=3.5.0 <3.21.7||>=4.0.0 <4.4.7"
 fixed_versions:
 - "3.21.7"
 - "4.4.7"
-affected_versions: "All versions before 3.21.7, all versions starting from 4.0.0 before
-  4.4.7"
-not_impacted: "All versions starting from 3.21.7 before 4.0.0, all versions starting
-  from 4.4.7"
+affected_versions: "All versions starting from 3.5.0 before 3.21.7, all versions starting
+  from 4.0.0 before 4.4.7"
+not_impacted: "All versions before 3.5.0, all versions starting from 3.21.7 before
+  4.0.0, all versions starting from 4.4.7"
 solution: "Upgrade to versions 3.21.7, 4.4.7 or above."
 urls:
 - "https://nvd.nist.gov/vuln/detail/CVE-2026-56326"
@@ -52,6 +52,7 @@ urls:
 - "https://github.com/nuxt/nuxt/commit/62fc32eddf648b00a3890141e0235d2a222b024d"
 - "https://github.com/nuxt/nuxt/commit/6497d99dd106254abd089f6a263d7773869a343b"
 - "https://github.com/nuxt/nuxt/commit/e447a793c47766834f7497f8412a76cd56fd8ee1"
+- "https://www.vulncheck.com/advisories/nuxt-server-side-open-redirect-via-path-normalization-bypass-in-navigateto"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
 cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:L/SA:N"
 uuid: "0f2ced9b-d1bb-4020-82a4-2179f5ac2460"
