@@ -10,7 +10,7 @@ description: "`mcp-ssh-tool` has released version `2.1.1` with security hardenin
   insufficient local path policy enforcement in transfer-related filesystem handling\n-
   incomplete canonicalization and segment-boundary handling for deny-prefix path policy
   checks\n- non-constant-time HTTP bearer token comparison"
-date: "2026-05-07"
+date: "2026-08-16"
 pubdate: "2026-05-07"
 affected_range: "<2.1.1"
 fixed_versions:
