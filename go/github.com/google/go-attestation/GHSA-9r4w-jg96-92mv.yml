@@ -1,29 +1,34 @@
 ---
 identifier: "GHSA-9r4w-jg96-92mv"
 identifiers:
+- "CVE-2026-12681"
 - "GHSA-9r4w-jg96-92mv"
 package_slug: "go/github.com/google/go-attestation"
 title: "Go-Attestation: Hash injection into trusted measurement list via unskipped
   SignatureHeaderSize vendor bytes in parseEfiSignatureList()"
-description: "`parseEfiSignatureList()` in `attest/internal/events.go` does not skip
-  `SignatureHeaderSize` vendor bytes before reading `EFI_SIGNATURE_LIST` signature
-  entries, violating UEFI specification section 31.4.1."
-date: "2026-06-12"
+description: "`parseEfiSignatureList()` in `attest/internal/events.go` does not skip\n`SignatureHeaderSize`
+  vendor bytes before reading `EFI_SIGNATURE_LIST`\nsignature entries, violating UEFI
+  specification section 31.4.1."
+date: "2026-08-28"
 pubdate: "2026-06-12"
-affected_range: "<=0.5.0"
-fixed_versions: []
-affected_versions: "All versions up to 0.5.0"
-not_impacted: ""
-solution: "Unfortunately, there is no solution available yet."
+affected_range: "<0.6.1"
+fixed_versions:
+- "0.6.1"
+affected_versions: "All versions before 0.6.1"
+not_impacted: "All versions starting from 0.6.1"
+solution: "Upgrade to version 0.6.1 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-12681"
 - "https://github.com/advisories/GHSA-9r4w-jg96-92mv"
 - "https://github.com/google/go-attestation/security/advisories/GHSA-9r4w-jg96-92mv"
 - "https://github.com/google/go-attestation/pull/502"
 - "https://github.com/google/go-attestation/commit/b6e905e7ae52937f02b5ca494dd1c6a3ac7a1003"
-- "https://github.com/google/go-attestation/releases/tag/v0.6.0"
+- "https://github.com/google/go-attestation/releases/tag/v0.6.1"
 cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:N/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:H/SA:N"
 uuid: "30779d5a-bdd3-4ddd-87f3-89479b956b5b"
 cwe_ids:
 - "CWE-20"
 - "CWE-937"
 - "CWE-1035"
+- "CWE-1285"

@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-vjjx-rfw4-rmfc"
 identifiers:
+- "CVE-2026-63746"
 - "GHSA-vjjx-rfw4-rmfc"
 package_slug: "cargo/surrealdb"
 title: "SurrealDB: Graph traversal bypasses table SELECT permissions"
@@ -13,7 +14,7 @@ description: "An authenticated record or scope user could read records on any ta
   root cause: `GraphEdgeScan` and `ReferenceScan` fetched records straight from storage
   without routing them through `Document::pluck_select`, so the target table's permission
   expression was never consulted."
-date: "2026-07-01"
+date: "2026-09-04"
 pubdate: "2026-07-01"
 affected_range: "<3.1.0"
 fixed_versions:
@@ -22,8 +23,10 @@ affected_versions: "All versions before 3.1.0"
 not_impacted: "All versions starting from 3.1.0"
 solution: "Upgrade to version 3.1.0 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-63746"
 - "https://github.com/advisories/GHSA-vjjx-rfw4-rmfc"
 - "https://github.com/surrealdb/surrealdb/security/advisories/GHSA-vjjx-rfw4-rmfc"
+- "https://www.vulncheck.com/advisories/surrealdb-before-permission-bypass-via-graph-traversal"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
 uuid: "7c6da6c0-353c-4404-b84d-71303979a3f7"
 cwe_ids:

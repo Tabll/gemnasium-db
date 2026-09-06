@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-72hv-8253-57qq"
 identifiers:
+- "CVE-2026-18401"
 - "GHSA-72hv-8253-57qq"
 package_slug: "maven/tools.jackson.core/jackson-core"
 title: "jackson-core: Number Length Constraint Bypass in Async Parser Leads to Potential
@@ -12,7 +13,7 @@ description: "The non-blocking (async) JSON parser in `jackson-core` bypasses th
   resulting in a Denial of Service (DoS).\n\nThe standard synchronous parser correctly
   enforces this limit, but the async parser fails to do so, creating an inconsistent
   enforcement policy."
-date: "2026-08-03"
+date: "2026-09-01"
 pubdate: "2026-02-28"
 affected_range: "[3.0.0,3.1.0)"
 fixed_versions:
@@ -21,6 +22,7 @@ affected_versions: "All versions starting from 3.0.0 before 3.1.0"
 not_impacted: "All versions before 3.0.0, all versions starting from 3.1.0"
 solution: "Upgrade to version 3.1.0 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-18401"
 - "https://github.com/advisories/GHSA-72hv-8253-57qq"
 - "https://github.com/FasterXML/jackson-core/security/advisories/GHSA-72hv-8253-57qq"
 - "https://github.com/FasterXML/jackson-core/pull/1555"

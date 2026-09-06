@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-8rw6-p7m8-63jp"
 identifiers:
+- "CVE-2026-63740"
 - "GHSA-8rw6-p7m8-63jp"
 package_slug: "cargo/surrealdb"
 title: "SurrealDB: Array element-level (field.*) SELECT permissions leak denied elements
@@ -14,7 +15,7 @@ description: "A `SELECT` permission defined on an array element (`DEFINE FIELD f
   the indices still pending in the loop, leaving denied elements behind. Field-level
   permissions are enforced correctly; only the element (`field.*`) level is affected,
   and only for record users — root and record-owner sessions are not."
-date: "2026-08-14"
+date: "2026-09-04"
 pubdate: "2026-08-14"
 affected_range: "<3.1.4"
 fixed_versions:
@@ -23,9 +24,11 @@ affected_versions: "All versions before 3.1.4"
 not_impacted: "All versions starting from 3.1.4"
 solution: "Upgrade to version 3.1.4 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-63740"
 - "https://github.com/advisories/GHSA-8rw6-p7m8-63jp"
 - "https://github.com/surrealdb/surrealdb/security/advisories/GHSA-8rw6-p7m8-63jp"
 - "https://github.com/surrealdb/surrealdb/commit/8f89b260bb9692e5b0d58930793d482a8207eedc"
+- "https://www.vulncheck.com/advisories/surrealdb-before-array-element-permission-bypass"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
 uuid: "f5f95257-f4d1-4f11-b2fd-9f436eb0b0fb"
 cwe_ids:

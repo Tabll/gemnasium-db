@@ -1,0 +1,38 @@
+---
+identifier: "GHSA-wwv5-g3v4-889x"
+identifiers:
+- "GHSA-wwv5-g3v4-889x"
+package_slug: "pypi/tornado"
+title: "Tornado: Incomplete fix for CVE-2026-35536: cookie attribute injection re-opened
+  via the legacy case-insensitive `**kwargs` path in `set_cookie`"
+description: "The CVE-2026-35536 fix added a validation loop that rejects `[\\x00-\\x20\\x3b\\x7f]`,
+  but only for the\nhardcoded **lowercase** keys `name`/`domain`/`path`/`samesite`.
+  The still-live deprecated `**kwargs` path\nwrites attacker-supplied attribute values
+  straight into the `Morsel` with no validation, and because\n`Morsel.__setitem__`
+  is case-insensitive, a capitalized kwarg (`Domain=`, `Path=`, `SameSite=`, `Max-Age=`)\nroutes
+  to the same reserved attribute while bypassing the loop — re-opening `;`-delimited
+  attribute injection.\n\n```python\nself.set_cookie(\"sid\", \"abc\", Domain=\"evil.com;
+  Secure; SameSite=None\")"
+date: "2026-09-01"
+pubdate: "2026-09-01"
+affected_range: ">=6.5.5,<6.5.8"
+fixed_versions:
+- "6.5.8"
+affected_versions: "All versions starting from 6.5.5 before 6.5.8"
+not_impacted: "All versions before 6.5.5, all versions starting from 6.5.8"
+solution: "Upgrade to version 6.5.8 or above."
+urls:
+- "https://github.com/advisories/GHSA-wwv5-g3v4-889x"
+- "https://github.com/tornadoweb/tornado/security/advisories/GHSA-wwv5-g3v4-889x"
+- "https://github.com/tornadoweb/tornado/pull/3704"
+- "https://github.com/tornadoweb/tornado/pull/3706"
+- "https://github.com/tornadoweb/tornado/commit/6ef836e43e1278530041376adb32504daa977b91"
+- "https://github.com/tornadoweb/tornado/commit/da284767eae8e1f0484f123b8c3225f6465b09c7"
+- "https://github.com/tornadoweb/tornado/releases/tag/v6.5.8"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "bfde0027-3358-4962-a910-08c12569184f"
+cwe_ids:
+- "CWE-74"
+- "CWE-937"
+- "CWE-1035"

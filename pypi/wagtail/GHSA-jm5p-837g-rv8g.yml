@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-jm5p-837g-rv8g"
+identifiers:
+- "GHSA-jm5p-837g-rv8g"
+package_slug: "pypi/wagtail"
+title: "Wagtail: Improper restriction handling on Page translation API endpoint"
+description: "A CMS user with the \"submit translations\" permission, could use the
+  Admin API's \"copy for translation\" endpoint to copy an existing page that they
+  do not have edit access to, allowing them to view its contents."
+date: "2026-08-20"
+pubdate: "2026-08-20"
+affected_range: "<7.0.9||>=7.1.0,<7.3.4||>=7.4.0,<7.4.3||>=8.0.0-rc.1,<8.0.0-rc.2"
+fixed_versions:
+- "7.0.9"
+- "7.3.4"
+- "7.4.3"
+- "8.0.0-rc.2"
+affected_versions: "All versions before 7.0.9, all versions starting from 7.1.0 before
+  7.3.4, all versions starting from 7.4.0 before 7.4.3, all versions starting from
+  8.0.0-rc.1 before 8.0.0-rc.2"
+not_impacted: "All versions starting from 7.0.9 before 7.1.0, all versions starting
+  from 7.3.4 before 7.4.0, all versions starting from 7.4.3 before 8.0.0-rc.1, all
+  versions starting from 8.0.0-rc.2"
+solution: "Upgrade to versions 7.0.9, 7.3.4, 7.4.3, 8.0.0-rc.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-jm5p-837g-rv8g"
+- "https://github.com/wagtail/wagtail/security/advisories/GHSA-jm5p-837g-rv8g"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+uuid: "45887612-cf08-4054-bc49-d4c496af0d25"
+cwe_ids:
+- "CWE-280"
+- "CWE-937"
+- "CWE-1035"

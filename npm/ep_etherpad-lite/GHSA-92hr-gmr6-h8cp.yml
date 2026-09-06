@@ -1,0 +1,44 @@
+---
+identifier: "GHSA-92hr-gmr6-h8cp"
+identifiers:
+- "GHSA-92hr-gmr6-h8cp"
+package_slug: "npm/ep_etherpad-lite"
+title: "Etherpad addressed weak token RNG, login timing, plugin path handling, API
+  request handling"
+description: "Fix: PR #7906 (ether/etherpad). A set of medium/low hardening fixes:\n\n-
+  **Weak RNG for tokens (CWE-330):** author/session/readonly IDs were generated with
+  `Math.random()` (client and server). Now use `crypto.getRandomValues`.\n- **Login
+  timing / no failure delay (CWE-208/CWE-307):** the OIDC interaction login used a
+  non-constant-time password compare with no failure delay. Now uses `crypto.timingSafeEqual`
+  plus a uniform failure delay; user lookup is own-property only.\n- **Plugin dependency
+  path handling (CWE-22):** plugin dependency names from package.json were used to
+  build filesystem paths without validation (admin-gated install). Now validated against
+  the npm name grammar.\n- **API parameter pollution (CWE-235):** `/api/2` merged
+  all request headers into the API field set. Now forwards only `authorization`, matching
+  the openapi.ts handler.\n- **Pad-creation side effect:** `API.appendChatMessage`
+  could create arbitrary pads (missing `getPadSafe`). Now requires the pad to exist.\n-
+  **Error info disclosure (CWE-209):** the admin file server echoed filesystem error
+  detail; now returns a generic message."
+date: "2026-08-17"
+pubdate: "2026-08-17"
+affected_range: "<3.3.0"
+fixed_versions:
+- "3.3.0"
+affected_versions: "All versions before 3.3.0"
+not_impacted: "All versions starting from 3.3.0"
+solution: "Upgrade to version 3.3.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-92hr-gmr6-h8cp"
+- "https://github.com/ether/etherpad/security/advisories/GHSA-92hr-gmr6-h8cp"
+- "https://github.com/ether/etherpad/pull/7906"
+- "https://github.com/ether/etherpad/commit/7ea99706483443239bbbc0f2df9aff8ab5de4805"
+- "https://github.com/ether/etherpad/releases/tag/3.3.0"
+uuid: "947d3540-f3c2-4a1f-9cd7-a5745f4375dd"
+cwe_ids:
+- "CWE-22"
+- "CWE-208"
+- "CWE-209"
+- "CWE-235"
+- "CWE-330"
+- "CWE-937"
+- "CWE-1035"

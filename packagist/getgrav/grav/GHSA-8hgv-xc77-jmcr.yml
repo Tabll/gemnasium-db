@@ -1,0 +1,40 @@
+---
+identifier: "GHSA-8hgv-xc77-jmcr"
+identifiers:
+- "GHSA-8hgv-xc77-jmcr"
+package_slug: "packagist/getgrav/grav"
+title: "Grav: Page editors can inject arbitrary script into rendered pages via the
+  Twig sandbox's assets.addJs/addCss allowlist, escalating to super-admin"
+description: "Grav 2.0 renders editor-authored Twig in page content by default and
+  relies on the Twig content sandbox to contain it. The shipped sandbox policy allowlists
+  `addcss` and `addjs` on `Grav\\Common\\Assets` (`system/src/Grav/Common/Twig/Sandbox/SandboxDefaults.php:307`).
+  Because the sandbox arbitrates the *call* and not its downstream effect, a user
+  holding only page-edit rights can register an arbitrary asset from page content;
+  the theme then emits it into the document head as a `<script src>` / `<link href>`
+  tag. The asset URL is concatenated into that tag **without escaping**, so it can
+  also break out of its own attribute.\n\nThe save-time XSS scan cannot see this:
+  `Security::detectXssInEditorContent()` renders the content body in isolation and
+  inspects the returned string, while `assets.addJs()` acts by mutating the shared
+  Assets service and returns only an object key. The payload contains no markup for
+  the scanner to flag.\n\nThis is not a `Security::detectXss()` bypass. It is content
+  reaching an unescaped output sink through an allowlisted method."
+date: "2026-08-21"
+pubdate: "2026-08-21"
+affected_range: "<2.0.20"
+fixed_versions:
+- "2.0.20"
+affected_versions: "All versions before 2.0.20"
+not_impacted: "All versions starting from 2.0.20"
+solution: "Upgrade to version 2.0.20 or above."
+urls:
+- "https://github.com/advisories/GHSA-8hgv-xc77-jmcr"
+- "https://github.com/getgrav/grav/security/advisories/GHSA-8hgv-xc77-jmcr"
+- "https://github.com/getgrav/grav/commit/a4e8c4b748eb338ee7ab1dd26e7620a93bade047"
+- "https://github.com/getgrav/grav/releases/tag/2.0.20"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:P/VC:L/VI:L/VA:N/SC:L/SI:L/SA:N"
+uuid: "4535f8eb-cc01-4e27-beb9-c8b9e6be993d"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

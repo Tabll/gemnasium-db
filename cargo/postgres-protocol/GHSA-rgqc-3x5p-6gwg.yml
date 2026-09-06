@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-rgqc-3x5p-6gwg"
+identifiers:
+- "GHSA-rgqc-3x5p-6gwg"
+package_slug: "cargo/postgres-protocol"
+title: "postgres-protocol: Panic decoding a malformed `hstore` value allows denial
+  of service"
+description: "A malicious or compromised server can return a binary `hstore` value
+  with an\ninvalid internal length field, causing the client to panic while decoding
+  it.\n\nApplications that connect only to a trusted database are not exposed; the
+  risk\napplies to clients that may connect to untrusted or user-supplied servers,
+  or\nwhose connection can be intercepted by a man-in-the-middle."
+date: "2026-08-24"
+pubdate: "2026-08-24"
+affected_range: "<0.6.12"
+fixed_versions:
+- "0.6.12"
+affected_versions: "All versions before 0.6.12"
+not_impacted: "All versions starting from 0.6.12"
+solution: "Upgrade to version 0.6.12 or above."
+urls:
+- "https://github.com/advisories/GHSA-rgqc-3x5p-6gwg"
+- "https://github.com/rust-postgres/rust-postgres/commit/a7cf84b5c46431cbca9d8ff50508c23f446efa7d"
+- "https://github.com/rust-postgres/rust-postgres/releases/tag/postgres-protocol-v0.6.12"
+- "https://rustsec.org/advisories/RUSTSEC-2026-0180.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N"
+uuid: "48df3c26-25f6-4d0e-b3ac-46ef507c906e"
+cwe_ids:
+- "CWE-20"
+- "CWE-248"
+- "CWE-937"
+- "CWE-1035"

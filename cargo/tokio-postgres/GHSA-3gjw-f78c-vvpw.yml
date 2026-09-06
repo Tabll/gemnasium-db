@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-3gjw-f78c-vvpw"
+identifiers:
+- "GHSA-3gjw-f78c-vvpw"
+package_slug: "cargo/tokio-postgres"
+title: "tokio-postgres: Panic on a `DataRow` with fewer fields than columns allows
+  denial of service"
+description: "A malicious or compromised server can send a row containing fewer fields
+  than\nits row description declares columns. Reading one of the missing columns then\npanics
+  with an out-of-bounds index, aborting the calling task. This affects even\nthe otherwise
+  non-panicking `try_get`, and both `Row` and `SimpleQueryRow`.\n\nApplications that
+  connect only to a trusted database are not exposed; the risk\napplies to clients
+  that may connect to untrusted or user-supplied servers, or\nwhose connection can
+  be intercepted by a man-in-the-middle."
+date: "2026-08-24"
+pubdate: "2026-08-24"
+affected_range: ">=0.4.0 <0.7.18"
+fixed_versions:
+- "0.7.18"
+affected_versions: "All versions starting from 0.4.0 before 0.7.18"
+not_impacted: "All versions before 0.4.0, all versions starting from 0.7.18"
+solution: "Upgrade to version 0.7.18 or above."
+urls:
+- "https://github.com/advisories/GHSA-3gjw-f78c-vvpw"
+- "https://github.com/rust-postgres/rust-postgres/commit/7a00ffa9ad4d951ec0a4564b52f1780fa9d353c1"
+- "https://github.com/rust-postgres/rust-postgres/releases/tag/tokio-postgres-v0.7.18"
+- "https://rustsec.org/advisories/RUSTSEC-2026-0178.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N"
+uuid: "a25bb682-fec6-454b-9797-52b5ea307348"
+cwe_ids:
+- "CWE-125"
+- "CWE-937"
+- "CWE-1035"

@@ -12,14 +12,18 @@ description: "The JLine3 Telnet server (`remote-telnet` module) does not limit t
   unique\nvariable pairs before sending the terminating IAC SE byte, exhausting JVM
   heap\nmemory and causing an OutOfMemoryError (denial of service). Approximately
   3–4 MB of\nnetwork traffic is sufficient to consume a 512 MB JVM heap."
-date: "2026-07-20"
+date: "2026-09-01"
 pubdate: "2026-06-18"
-affected_range: "[,4.2.1)"
+affected_range: "[,3.30.14),[4.0.0,4.0.16),[4.1.0,4.2.1)"
 fixed_versions:
+- "3.30.14"
+- "4.0.16"
 - "4.2.1"
-affected_versions: "All versions before 4.2.1"
-not_impacted: "All versions starting from 4.2.1"
-solution: "Upgrade to version 4.2.1 or above."
+affected_versions: "All versions before 3.30.14, all versions starting from 4.0.0
+  before 4.0.16, all versions starting from 4.1.0 before 4.2.1"
+not_impacted: "All versions starting from 3.30.14 before 4.0.0, all versions starting
+  from 4.0.16 before 4.1.0, all versions starting from 4.2.1"
+solution: "Upgrade to versions 3.30.14, 4.0.16, 4.2.1 or above."
 urls:
 - "https://nvd.nist.gov/vuln/detail/CVE-2026-56740"
 - "https://github.com/advisories/GHSA-47qp-hqvx-6r3f"

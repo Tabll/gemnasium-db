@@ -15,7 +15,7 @@ description: "`IndexFile.from_tree`, `IndexFile.reset` (→ from_tree) and `Inde
   only `checkout_index` and `tag`; `read_tree` was left unprotected (it is among the
   acknowledged unguarded call sites in that advisory's sweep but was never reported
   or fixed)."
-date: "2026-08-07"
+date: "2026-08-24"
 pubdate: "2026-08-07"
 affected_range: "<3.1.58"
 fixed_versions:

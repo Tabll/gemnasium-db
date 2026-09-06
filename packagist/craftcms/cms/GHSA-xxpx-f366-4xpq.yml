@@ -1,9 +1,10 @@
 ---
 identifier: "GHSA-xxpx-f366-4xpq"
 identifiers:
+- "CVE-2026-72785"
 - "GHSA-xxpx-f366-4xpq"
 package_slug: "packagist/craftcms/cms"
-title: "Craft CMS:Authorization bypass: view-only Categories user can modify category
+title: "Craft CMS: Authorization bypass: view-only Categories user can modify category
   structure via structures/move-element"
 description: "A control-panel user who holds only the viewCategories permission for
   a category group (and not saveCategories) can permanently modify that group's category
@@ -17,7 +18,7 @@ description: "A control-panel user who holds only the viewCategories permission 
   no canSave re-check.\n\nVerified on Craft CMS 5.10.5. Same class as the moderate-severity
   authorization bypasses fixed in 5.10.3 and 5.10.5; this is a distinct, unpatched
   instance."
-date: "2026-08-07"
+date: "2026-09-01"
 pubdate: "2026-08-06"
 affected_range: ">=5.0.0-RC1 <5.10.6"
 fixed_versions:
@@ -26,11 +27,13 @@ affected_versions: "All versions starting from 5.0.0-RC1 before 5.10.6"
 not_impacted: "All versions before 5.0.0-RC1, all versions starting from 5.10.6"
 solution: "Upgrade to version 5.10.6 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-72785"
 - "https://github.com/advisories/GHSA-xxpx-f366-4xpq"
 - "https://github.com/craftcms/cms/security/advisories/GHSA-xxpx-f366-4xpq"
 - "https://github.com/craftcms/cms/commit/eb63721b8476ef53f21d7de53d156eef531cb57d"
 - "https://github.com/craftcms/cms/releases/tag/4.18.2"
 - "https://github.com/craftcms/cms/releases/tag/5.10.6"
+- "https://www.vulncheck.com/advisories/craft-cms-before-authorization-bypass-via-structures-move-element"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N"
 cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
 uuid: "24f31153-5290-476c-aefc-e5c363588b6d"

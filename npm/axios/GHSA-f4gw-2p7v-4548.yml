@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-f4gw-2p7v-4548"
 identifiers:
+- "CVE-2026-67315"
 - "GHSA-f4gw-2p7v-4548"
 package_slug: "npm/axios"
 title: "Axios: NO_PROXY bypass for 0.0.0.0 local addresses in axios"
@@ -18,7 +19,7 @@ description: "Axios versions containing `lib/helpers/shouldBypassProxy.js` do no
   routes to the local machine on Linux and macOS.\n\nAn attacker who controls a URL
   passed to axios can use `http://0.0.0.0/<path>` to bypass proxy-based SSRF filtering
   that the application relies upon."
-date: "2026-07-20"
+date: "2026-09-01"
 pubdate: "2026-07-20"
 affected_range: ">=0.31.0 <0.33.0||>=1.15.0 <1.18.0"
 fixed_versions:
@@ -30,6 +31,7 @@ not_impacted: "All versions before 0.31.0, all versions starting from 0.33.0 bef
   1.15.0, all versions starting from 1.18.0"
 solution: "Upgrade to versions 0.33.0, 1.18.0 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-67315"
 - "https://github.com/advisories/GHSA-f4gw-2p7v-4548"
 - "https://github.com/axios/axios/security/advisories/GHSA-f4gw-2p7v-4548"
 - "https://github.com/axios/axios/pull/11000"
@@ -38,6 +40,8 @@ urls:
 - "https://github.com/axios/axios/commit/32fc489632377d214db55bfa4e2c48486a7d7ce2"
 - "https://github.com/axios/axios/releases/tag/v0.33.0"
 - "https://github.com/axios/axios/releases/tag/v1.18.0"
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-68946"
+- "https://www.vulncheck.com/advisories/axios-before-no-proxy-bypass-via"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N"
 cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:L/VI:N/VA:N/SC:H/SI:N/SA:N"
 uuid: "cb36d871-b8f5-4ad7-a1f0-2bd04da81498"

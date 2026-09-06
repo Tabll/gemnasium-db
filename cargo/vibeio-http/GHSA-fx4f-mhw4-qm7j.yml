@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-fx4f-mhw4-qm7j"
+identifiers:
+- "GHSA-fx4f-mhw4-qm7j"
+package_slug: "cargo/vibeio-http"
+title: "vibeio-http has a DoS vulnerability in HTTP/1.x chunked encoding parser triggered
+  by maliciously crafted chunk lengths"
+description: "When using the affected versions of the `vibeio-http` crate, an attacker
+  could craft a malicious HTTP/1.x request with a large chunk length (between `usize::MAX
+  - 1` and `usize::MAX` inclusive) and send it, causing the server to crash (integer
+  overflow panic in debug builds, split_to out of bounds panic in release builds).\n\nThis
+  was fixed in `vibeio-http` 0.3.2 by erroring on the chunk length if it exceeds `usize::MAX
+  - 2` (using `checked_add()` instead of `+` operator), preventing integer overflow."
+date: "2026-08-24"
+pubdate: "2026-08-24"
+affected_range: "<0.3.2"
+fixed_versions:
+- "0.3.2"
+affected_versions: "All versions before 0.3.2"
+not_impacted: "All versions starting from 0.3.2"
+solution: "Upgrade to version 0.3.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-fx4f-mhw4-qm7j"
+- "https://github.com/ferronweb/vibeio-http/blob/main/CHANGELOG.md#vibeio-http-032"
+- "https://rustsec.org/advisories/RUSTSEC-2026-0181.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N"
+uuid: "a49b7538-ec43-4699-b816-5116ea4bc177"
+cwe_ids:
+- "CWE-770"
+- "CWE-937"
+- "CWE-1035"

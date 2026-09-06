@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-7w8c-qgxg-m7jx"
+identifiers:
+- "GHSA-7w8c-qgxg-m7jx"
+package_slug: "packagist/librenms/librenms"
+title: "LibreNMS — Stored XSS via SNMP/Syslog Data in Legacy Templates"
+description: "Multiple legacy PHP template files in LibreNMS directly output SNMP-sourced
+  and syslog-sourced data into HTML without escaping. An attacker who controls a monitored
+  network device (via compromised SNMP agent or syslog sender) can inject arbitrary
+  JavaScript that executes when any authenticated LibreNMS user views the affected
+  pages."
+date: "2026-08-26"
+pubdate: "2026-08-26"
+affected_range: "<26.5.0"
+fixed_versions:
+- "26.5.0"
+affected_versions: "All versions before 26.5.0"
+not_impacted: "All versions starting from 26.5.0"
+solution: "Upgrade to version 26.5.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-7w8c-qgxg-m7jx"
+- "https://github.com/librenms/librenms/security/advisories/GHSA-7w8c-qgxg-m7jx"
+- "https://github.com/librenms/librenms/pull/19660"
+- "https://github.com/librenms/librenms/commit/6782af940c3c495755923b520a302f3a1cb1ce6b"
+- "https://github.com/librenms/librenms/releases/tag/26.5.0"
+- "https://github.com/librenms/librenms/releases/tag/26.8.1"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:L/A:N"
+uuid: "8770fbe0-9f78-4e2d-bbfd-5295ee349944"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

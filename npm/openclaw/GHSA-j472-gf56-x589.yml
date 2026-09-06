@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-j472-gf56-x589"
 identifiers:
+- "CVE-2026-53836"
 - "GHSA-j472-gf56-x589"
 package_slug: "npm/openclaw"
 title: "OpenClaw: PowerShell encoded-command aliases could miss exec allowlist checks"
@@ -11,7 +12,7 @@ description: "PowerShell encoded-command aliases could miss exec allowlist check
   trusted-operator model: authenticated Gateway operators, installed plugins, and
   intentional local execution surfaces remain trusted unless a separate policy, approval,
   allowlist, sandbox, or auth boundary is crossed."
-date: "2026-07-02"
+date: "2026-08-25"
 pubdate: "2026-07-02"
 affected_range: "<2026.5.12"
 fixed_versions:
@@ -20,8 +21,10 @@ affected_versions: "All versions before 2026.5.12"
 not_impacted: "All versions starting from 2026.5.12"
 solution: "Upgrade to version 2026.5.12 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-53836"
 - "https://github.com/advisories/GHSA-j472-gf56-x589"
 - "https://github.com/openclaw/openclaw/security/advisories/GHSA-j472-gf56-x589"
+- "https://www.vulncheck.com/advisories/openclaw-allowlist-bypass-via-powershell-encoded-command-aliases"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
 cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
 uuid: "58195849-2c1d-4c6b-a662-8b266acd234d"

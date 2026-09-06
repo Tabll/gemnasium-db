@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-2rx9-3g3h-c2jv"
+identifiers:
+- "GHSA-2rx9-3g3h-c2jv"
+package_slug: "npm/pnpm"
+title: "pnpm: pacquet trust-lockfile install can create dependency symlinks outside
+  the project"
+description: "A crafted lockfile alias could reach several install-time filesystem
+  joins. With `--trust-lockfile` or a frozen lockfile, traversal segments could create
+  links outside the intended project or `node_modules` boundary. This patch validates
+  dependency names and every virtual-store slot before creating directories, links,
+  bins, or hoisted entries."
+date: "2026-09-01"
+pubdate: "2026-09-01"
+affected_range: ">=12.0.0-alpha.0 <12.0.0-alpha.5"
+fixed_versions:
+- "12.0.0-alpha.5"
+affected_versions: "All versions starting from 12.0.0-alpha.0 before 12.0.0-alpha.5"
+not_impacted: "All versions before 12.0.0-alpha.0, all versions starting from 12.0.0-alpha.5"
+solution: "Upgrade to version 12.0.0-alpha.5 or above."
+urls:
+- "https://github.com/advisories/GHSA-2rx9-3g3h-c2jv"
+- "https://github.com/pnpm/pnpm/security/advisories/GHSA-2rx9-3g3h-c2jv"
+- "https://github.com/pnpm/pnpm/pull/12872"
+- "https://github.com/pnpm/pnpm/commit/51300fd41c5e4c8f47635108e373cc3d1f324fa7"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:L"
+uuid: "414672e0-3e88-4ce4-8fa1-3f8490a39458"
+cwe_ids:
+- "CWE-22"
+- "CWE-59"
+- "CWE-73"
+- "CWE-937"
+- "CWE-1035"

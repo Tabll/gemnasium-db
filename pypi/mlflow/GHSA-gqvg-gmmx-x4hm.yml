@@ -1,0 +1,37 @@
+---
+identifier: "GHSA-gqvg-gmmx-x4hm"
+identifiers:
+- "GHSA-gqvg-gmmx-x4hm"
+package_slug: "pypi/mlflow"
+title: "MLFLOW_ALLOW_PICKLE_DESERIALIZATION=False safety control bypassed by mlflow.statsmodels
+  flavor — RCE via crafted model artifact"
+description: "MLflow introduced `MLFLOW_ALLOW_PICKLE_DESERIALIZATION` as a security
+  control to prevent unsafe `pickle.load` execution during model loading, in response
+  to CVE-2024-37052 through CVE-2024-37060. When set to `False`, operators expect
+  all pickle deserialization to be blocked. The most recent related fix (#21188) patched
+  a bypass in the pyfunc flavor.\n\nHowever, the `mlflow.statsmodels` flavor completely
+  omits this guard. An attacker who places a crafted MLmodel artifact into any accessible
+  artifact store can trigger arbitrary code execution on any process that calls `mlflow.pyfunc.load_model()`
+  against the malicious model — **even when `MLFLOW_ALLOW_PICKLE_DESERIALIZATION=False`**.\n\nThis
+  is a security control bypass. The operator believes pickle RCE is mitigated; the
+  statsmodels flavor silently ignores the control.\n\n---"
+date: "2026-09-01"
+pubdate: "2026-09-01"
+affected_range: ">=2.1.0,<3.15.0"
+fixed_versions:
+- "3.15.0"
+affected_versions: "All versions starting from 2.1.0 before 3.15.0"
+not_impacted: "All versions before 2.1.0, all versions starting from 3.15.0"
+solution: "Upgrade to version 3.15.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-gqvg-gmmx-x4hm"
+- "https://github.com/mlflow/mlflow/security/advisories/GHSA-gqvg-gmmx-x4hm"
+- "https://github.com/mlflow/mlflow/pull/24686"
+- "https://github.com/mlflow/mlflow/commit/38615289094a4b700a20b5d1dbfbe57bdfb0411f"
+- "https://github.com/mlflow/mlflow/releases/tag/v3.15.0"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+uuid: "6fa60f5c-301a-4d45-86dc-89dc8c377de9"
+cwe_ids:
+- "CWE-502"
+- "CWE-937"
+- "CWE-1035"

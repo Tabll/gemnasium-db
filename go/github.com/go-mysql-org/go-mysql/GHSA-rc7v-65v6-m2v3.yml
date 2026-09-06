@@ -4,18 +4,14 @@ identifiers:
 - "GHSA-rc7v-65v6-m2v3"
 package_slug: "go/github.com/go-mysql-org/go-mysql"
 title: "Withdrawn Advisory: go-mysql affected by go.uuid's Predictable UUID Identifiers"
-description: "## Withdrawn Advisory\n\nThis advisory has been withdrawn because the
-  vulnerability does not affect a released version of the `github.com/go-mysql-org/go-mysql`
-  package.  For more information, see https://github.com/github/advisory-database/pull/4990.\n\n##
-  Original Advisory\n\nAffected by CVE-2021-3538"
+description: "This advisory has been withdrawn."
 date: "2024-11-08"
 pubdate: "2024-10-28"
-affected_range: "<1.5.0"
-fixed_versions:
-- "1.5.0"
-affected_versions: "All versions before 1.5.0"
-not_impacted: "All versions starting from 1.5.0"
-solution: "Upgrade to version 1.5.0 or above."
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "This advisory has been withdrawn."
+not_impacted: "This advisory has been withdrawn."
+solution: "This advisory has been withdrawn."
 urls:
 - "https://github.com/advisories/GHSA-rc7v-65v6-m2v3"
 - "https://github.com/apptainer/sif/security/advisories/GHSA-33m6-q9v5-62r7"

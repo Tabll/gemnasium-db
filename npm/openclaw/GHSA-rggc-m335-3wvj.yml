@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-rggc-m335-3wvj"
 identifiers:
+- "CVE-2026-53832"
 - "GHSA-rggc-m335-3wvj"
 package_slug: "npm/openclaw"
 title: "OpenClaw: Same-host trusted-proxy deployments could accept local forged identity
@@ -12,7 +13,7 @@ description: "Same-host trusted-proxy deployments could accept local forged iden
   trusted-operator model: authenticated Gateway operators, installed plugins, and
   intentional local execution surfaces remain trusted unless a separate policy, approval,
   allowlist, sandbox, or auth boundary is crossed."
-date: "2026-07-02"
+date: "2026-08-28"
 pubdate: "2026-07-02"
 affected_range: "<2026.5.18"
 fixed_versions:
@@ -21,10 +22,12 @@ affected_versions: "All versions before 2026.5.18"
 not_impacted: "All versions starting from 2026.5.18"
 solution: "Upgrade to version 2026.5.18 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-53832"
 - "https://github.com/advisories/GHSA-rggc-m335-3wvj"
 - "https://github.com/openclaw/openclaw/security/advisories/GHSA-rggc-m335-3wvj"
-cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
-cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+- "https://www.vulncheck.com/advisories/openclaw-identity-header-forgery-via-trusted-proxy-configuration"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:L/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N"
 uuid: "23a5f982-ffe5-4987-8c97-9ed3a5918280"
 cwe_ids:
 - "CWE-269"

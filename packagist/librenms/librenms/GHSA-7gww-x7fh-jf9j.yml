@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-7gww-x7fh-jf9j"
+identifiers:
+- "GHSA-7gww-x7fh-jf9j"
+package_slug: "packagist/librenms/librenms"
+title: "LibreNMS: SSRF-driven stored XSS via Oxidized API response fields in device
+  showconfig page"
+description: "The Oxidized integration URL (`oxidized.url`) is admin-configurable.
+  LibreNMS fetches device info and version history from that URL and renders JSON
+  fields (`name`, `ip`, `model`, `author`, commit message) into HTML without `htmlspecialchars()`.
+  An admin pointing the URL at an attacker-controlled server achieves persistent XSS
+  affecting all users who view any device's showconfig tab."
+date: "2026-08-18"
+pubdate: "2026-08-18"
+affected_range: "<26.7.0"
+fixed_versions:
+- "26.7.0"
+affected_versions: "All versions before 26.7.0"
+not_impacted: "All versions starting from 26.7.0"
+solution: "Upgrade to version 26.7.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-7gww-x7fh-jf9j"
+- "https://github.com/librenms/librenms/security/advisories/GHSA-7gww-x7fh-jf9j"
+- "https://github.com/librenms/librenms/releases/tag/26.7.0"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:H/I:H/A:N"
+uuid: "1cf9f944-fb86-47db-ad22-76dc31d564c6"
+cwe_ids:
+- "CWE-79"
+- "CWE-918"
+- "CWE-937"
+- "CWE-1035"

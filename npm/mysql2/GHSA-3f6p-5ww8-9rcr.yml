@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-3f6p-5ww8-9rcr"
+identifiers:
+- "GHSA-3f6p-5ww8-9rcr"
+package_slug: "npm/mysql2"
+title: "MySQL2: Auth Plugin Downgrade to mysql_clear_password Leaks Plaintext Credentials"
+description: "A rogue MySQL server (or MITM) can force mysql2 to send credentials
+  in **plaintext** by requesting an auth switch to `mysql_clear_password`. The driver
+  complies without verifying that TLS is active."
+date: "2026-09-01"
+pubdate: "2026-09-01"
+affected_range: "<3.22.0"
+fixed_versions:
+- "3.22.0"
+affected_versions: "All versions before 3.22.0"
+not_impacted: "All versions starting from 3.22.0"
+solution: "Upgrade to version 3.22.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-3f6p-5ww8-9rcr"
+- "https://github.com/sidorares/node-mysql2/security/advisories/GHSA-3f6p-5ww8-9rcr"
+- "https://github.com/sidorares/node-mysql2/issues/1617"
+- "https://github.com/sidorares/node-mysql2/pull/4236"
+- "https://github.com/sidorares/node-mysql2/commit/884bec56288d827939d0dd3f1f4ae476fbc8dbeb"
+- "https://github.com/sidorares/node-mysql2/releases/tag/v3.22.0"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N"
+uuid: "13877f42-c035-4dbf-92c6-34f05071067c"
+cwe_ids:
+- "CWE-522"
+- "CWE-937"
+- "CWE-1035"

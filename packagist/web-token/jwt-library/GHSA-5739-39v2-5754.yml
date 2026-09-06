@@ -18,7 +18,7 @@ description: "`RSACrypt::decryptWithRSA15()` (used by the `RSA1_5` key-encryptio
   path performs a measurably different amount of work, amplifiable by enlarging the
   ciphertext (CWE-208 timing side channel). Enough adaptive queries can recover the
   wrapped CEK."
-date: "2026-06-18"
+date: "2026-08-31"
 pubdate: "2026-06-18"
 affected_range: "<3.4.10||>=4.0.0 <4.0.7||>=4.1.0 <4.1.7"
 fixed_versions:

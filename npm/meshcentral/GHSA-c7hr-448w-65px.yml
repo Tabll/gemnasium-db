@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-c7hr-448w-65px"
+identifiers:
+- "GHSA-c7hr-448w-65px"
+package_slug: "npm/meshcentral"
+title: "MeshCentral has unsanitized data fields"
+description: "A rogue or compromised MeshAgent can inject arbitrary HTML/JavaScript
+  via the osdesc (OS description) field in its coreinfo message. The server stores
+  this value with zero HTML sanitization (meshagent.js:1903 only checks typeof ==
+  'string'). When an admin views the\ndevice details panel, the value is rendered
+  via addDeviceAttribute() → QH() which sets innerHTML, executing the payload in the
+  admin's browser session. The main management UI CSP includes 'unsafe-inline' (webserver.js:7072),
+  so inline event handlers and script execution are unrestricted."
+date: "2026-08-18"
+pubdate: "2026-08-18"
+affected_range: "<1.1.60"
+fixed_versions:
+- "1.1.60"
+affected_versions: "All versions before 1.1.60"
+not_impacted: "All versions starting from 1.1.60"
+solution: "Upgrade to version 1.1.60 or above."
+urls:
+- "https://github.com/advisories/GHSA-c7hr-448w-65px"
+- "https://github.com/Ylianst/MeshCentral/security/advisories/GHSA-c7hr-448w-65px"
+- "https://github.com/Ylianst/MeshCentral/releases/tag/1.1.60"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:H/A:H"
+uuid: "0c76a0a1-cf1a-4f50-8252-df1053fddf33"
+cwe_ids:
+- "CWE-20"
+- "CWE-74"
+- "CWE-937"
+- "CWE-1035"

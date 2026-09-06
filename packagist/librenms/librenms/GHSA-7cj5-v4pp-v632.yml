@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-7cj5-v4pp-v632"
+identifiers:
+- "GHSA-7cj5-v4pp-v632"
+package_slug: "packagist/librenms/librenms"
+title: "LibreNMS: Stored XSS via graph_descr admin config settings echoed without
+  escaping to all authenticated users"
+description: "The `graph_descr.<graphtype>` family of settings is echoed verbatim
+  without `htmlspecialchars()` in `includes/html/pages/graphs.inc.php:194`. Any admin
+  can store a malicious HTML payload that executes in every authenticated user's browser
+  viewing that graph type."
+date: "2026-08-18"
+pubdate: "2026-08-18"
+affected_range: "<26.7.0"
+fixed_versions:
+- "26.7.0"
+affected_versions: "All versions before 26.7.0"
+not_impacted: "All versions starting from 26.7.0"
+solution: "Upgrade to version 26.7.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-7cj5-v4pp-v632"
+- "https://github.com/librenms/librenms/security/advisories/GHSA-7cj5-v4pp-v632"
+- "https://github.com/librenms/librenms/releases/tag/26.7.0"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:L/I:L/A:N"
+uuid: "1475d915-9102-44e4-b94f-6f1ef279e29f"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

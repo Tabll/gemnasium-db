@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-p5rm-jg5c-8c77"
 identifiers:
+- "CVE-2026-73851"
 - "GHSA-p5rm-jg5c-8c77"
 package_slug: "nuget/Microsoft.OpenApi.Kiota"
 title: "Microsoft Kiota: Path traversal in generated plugin manifest static_template.file
@@ -29,15 +30,19 @@ description: "Kiota generates AI plugin manifests from an OpenAPI description. W
   the parent-directory segment check, encoding nested deeper than the decode budget
   (which failed open), and Unicode full-width homoglyphs (e.g. `%EF%BC%8E%EF%BC%8E`
   → `．．`)."
-date: "2026-07-24"
+date: "2026-08-17"
 pubdate: "2026-07-24"
-affected_range: "[,1.34.0)"
+affected_range: "[,1.29.1),[1.30.0,1.34.0)"
 fixed_versions:
+- "1.29.1"
 - "1.34.0"
-affected_versions: "All versions before 1.34.0"
-not_impacted: "All versions starting from 1.34.0"
-solution: "Upgrade to version 1.34.0 or above."
+affected_versions: "All versions before 1.29.1, all versions starting from 1.30.0
+  before 1.34.0"
+not_impacted: "All versions starting from 1.29.1 before 1.30.0, all versions starting
+  from 1.34.0"
+solution: "Upgrade to versions 1.29.1, 1.34.0 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-73851"
 - "https://github.com/advisories/GHSA-p5rm-jg5c-8c77"
 - "https://github.com/microsoft/kiota/security/advisories/GHSA-p5rm-jg5c-8c77"
 - "https://github.com/microsoft/kiota/issues/7912"

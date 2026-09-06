@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-rr55-jp92-8wp2"
+identifiers:
+- "GHSA-rr55-jp92-8wp2"
+package_slug: "npm/claude-faf-mcp"
+title: "claude-faf-mcp has an arbitrary local file read/write via unconfined `path`
+  argument in FAF tools"
+description: "`claude-faf-mcp` MCP tools accept a caller-controlled `path` argument
+  and resolve it (`~` expansion + `path.resolve()`) straight into a filesystem read/write
+  **without confining it to a trusted project directory**. An absolute path or `../`
+  traversal is resolved and used as-is, so the server process can be made to read
+  — and, via the file tools, write — files outside the intended `.faf` project context.
+  The only remaining limit is OS file permissions."
+date: "2026-08-19"
+pubdate: "2026-08-19"
+affected_range: "<5.7.2"
+fixed_versions:
+- "5.7.2"
+affected_versions: "All versions before 5.7.2"
+not_impacted: "All versions starting from 5.7.2"
+solution: "Upgrade to version 5.7.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-rr55-jp92-8wp2"
+- "https://github.com/Wolfe-Jam/claude-faf-mcp/security/advisories/GHSA-rr55-jp92-8wp2"
+- "https://github.com/Wolfe-Jam/claude-faf-mcp/releases/tag/v5.7.2"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+uuid: "8b73b575-b3b9-41bd-ae4c-223cd558726b"
+cwe_ids:
+- "CWE-22"
+- "CWE-73"
+- "CWE-200"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-8423-8fgw-73vq"
+identifiers:
+- "GHSA-8423-8fgw-73vq"
+package_slug: "pypi/tornado"
+title: "tornado: multipart split() creates huge temp list before max_parts check ->
+  memory amplification DoS (httputil.py:34)"
+description: "`parse_multipart_form_data` (httputil.py:34) calls\n`data.split(b\"--\"+boundary+b\"\\r\\n\")`
+  **before** the `max_parts` check (:35).\nA 600KB body with 100k parts creates a
+  100k-element transient list first,\nthen rejects   transient memory amplification
+  (each split element is a copy).\nPre-auth HTTP DoS."
+date: "2026-09-01"
+pubdate: "2026-09-01"
+affected_range: "<6.5.8"
+fixed_versions:
+- "6.5.8"
+affected_versions: "All versions before 6.5.8"
+not_impacted: "All versions starting from 6.5.8"
+solution: "Upgrade to version 6.5.8 or above."
+urls:
+- "https://github.com/advisories/GHSA-8423-8fgw-73vq"
+- "https://github.com/tornadoweb/tornado/security/advisories/GHSA-8423-8fgw-73vq"
+- "https://github.com/tornadoweb/tornado/pull/3704"
+- "https://github.com/tornadoweb/tornado/commit/de85b3f87446e323e881bbaa3d5a74f4b76e5f05"
+- "https://gist.github.com/afldl/649861f25d39b53b7edbe0298e171617"
+- "https://github.com/tornadoweb/tornado/releases/tag/v6.5.8"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N"
+uuid: "16a3588b-8d0e-4c8e-b76a-dfa41acc7d5c"
+cwe_ids:
+- "CWE-770"
+- "CWE-937"
+- "CWE-1035"

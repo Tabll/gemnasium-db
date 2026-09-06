@@ -1,0 +1,38 @@
+---
+identifier: "GHSA-5p3m-vhh6-9236"
+identifiers:
+- "GHSA-5p3m-vhh6-9236"
+package_slug: "pypi/stigmem-node"
+title: "stigmem-node has blind SSRF via unvalidated webhook subscription delivery_address"
+description: "Stigmem allows an authenticated user to create a webhook subscription
+  with a user-controlled `delivery_address`. That value is stored and later used directly
+  by the subscription delivery worker as the destination of a server-side HTTP POST
+  request.\n\nThe codebase already contains an outbound SSRF guard, `assert_safe_url()`,
+  which blocks loopback, private, link-local, and metadata-style destinations. However,
+  the subscription webhook delivery path does not appear to apply this guard either
+  when the subscription is created or immediately before delivery.\n\nAs a result,
+  an authenticated user can configure a webhook destination such as `http://127.0.0.1:9999/ssrf`,
+  trigger a matching fact-change event, and cause the Stigmem server to issue a server-side
+  HTTP request to an internal loopback address."
+date: "2026-08-20"
+pubdate: "2026-08-20"
+affected_range: "<0.9.0-a.11"
+fixed_versions:
+- "0.9.0-a.11"
+affected_versions: "All versions before 0.9.0-a.11"
+not_impacted: "All versions starting from 0.9.0-a.11"
+solution: "Upgrade to version 0.9.0-a.11 or above."
+urls:
+- "https://github.com/advisories/GHSA-5p3m-vhh6-9236"
+- "https://github.com/eidetic-labs/stigmem/security/advisories/GHSA-5p3m-vhh6-9236"
+- "https://github.com/eidetic-labs/stigmem/pull/726"
+- "https://github.com/eidetic-labs/stigmem/commit/11637401d50629fef040382aee5af4571842c152"
+- "https://github.com/eidetic-labs/stigmem/commit/2ff5be29291d1c042e00d57c5f9ef93650cc90e0"
+- "https://github.com/eidetic-labs/stigmem/releases/tag/v0.9.0a11"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L"
+uuid: "56026e76-312e-40d9-bbbb-04cf25529101"
+cwe_ids:
+- "CWE-20"
+- "CWE-918"
+- "CWE-937"
+- "CWE-1035"

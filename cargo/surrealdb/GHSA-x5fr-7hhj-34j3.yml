@@ -1,9 +1,10 @@
 ---
 identifier: "GHSA-x5fr-7hhj-34j3"
 identifiers:
+- "CVE-2023-54366"
 - "GHSA-x5fr-7hhj-34j3"
 package_slug: "cargo/surrealdb"
-title: "Full Table Permissions by Default"
+title: "SurrealDB: Full Table Permissions by Default"
 description: "Default table permissions in SurrealDB were `FULL` instead of `NONE`.
   This would lead to tables having `FULL` permissions for `SELECT`, `CREATE`, `UPDATE`
   and `DELETE` unless some other permissions were specified via the `PERMISSIONS`
@@ -12,7 +13,7 @@ description: "Default table permissions in SurrealDB were `FULL` instead of `NON
   and potential for confusion due to the `INFO FOR DB` statement previously not displaying
   default permissions. Treating it as a bug fix provides justification for a change
   in default behavior outside of a major release."
-date: "2023-12-15"
+date: "2026-09-04"
 pubdate: "2023-12-15"
 affected_range: "<1.0.1"
 fixed_versions:
@@ -21,11 +22,14 @@ affected_versions: "All versions before 1.0.1"
 not_impacted: "All versions starting from 1.0.1"
 solution: "Upgrade to version 1.0.1 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2023-54366"
 - "https://github.com/advisories/GHSA-x5fr-7hhj-34j3"
 - "https://github.com/surrealdb/surrealdb/security/advisories/GHSA-x5fr-7hhj-34j3"
-- "https://github.com/surrealdb/surrealdb"
+- "https://github.com/pypa/advisory-database/tree/main/vulns/surrealdb/PYSEC-2026-3718.yaml"
+- "https://www.vulncheck.com/advisories/surrealdb-before-insecure-default-table-permissions"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
 uuid: "d628cdd1-7a81-4a10-ba9f-544ccb0a98ee"
 cwe_ids:
+- "CWE-276"
 - "CWE-937"
 - "CWE-1035"

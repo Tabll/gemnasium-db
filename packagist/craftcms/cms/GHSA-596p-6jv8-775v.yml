@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-596p-6jv8-775v"
 identifiers:
+- "CVE-2026-72782"
 - "GHSA-596p-6jv8-775v"
 package_slug: "packagist/craftcms/cms"
 title: "Craft CMS: Authenticated leak of secret environment variables"
@@ -24,7 +25,7 @@ description: "Environment variables and secrets are interpolated into a Twig tem
   leaked. This can be abused to forge a session, escalate privileges with the `CRAFT_SECURITY_KEY`,
   and steal credentials for the database, SMTP server, or other connected APIs or
   blob storage."
-date: "2026-08-06"
+date: "2026-09-01"
 pubdate: "2026-08-06"
 affected_range: ">=4.0.0-RC1 <4.18.2||>=5.0.0-RC1 <5.10.6"
 fixed_versions:
@@ -36,10 +37,12 @@ not_impacted: "All versions before 4.0.0-RC1, all versions starting from 4.18.2 
   5.0.0-RC1, all versions starting from 5.10.6"
 solution: "Upgrade to versions 4.18.2, 5.10.6 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-72782"
 - "https://github.com/advisories/GHSA-596p-6jv8-775v"
 - "https://github.com/craftcms/cms/security/advisories/GHSA-596p-6jv8-775v"
 - "https://github.com/craftcms/cms/releases/tag/4.18.2"
 - "https://github.com/craftcms/cms/releases/tag/5.10.6"
+- "https://www.vulncheck.com/advisories/craft-cms-rc1-before-environment-variable-leak"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:L/I:N/A:N"
 cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N"
 uuid: "ec6dcaaa-d68b-4fd7-9159-a6938cf3f3c5"

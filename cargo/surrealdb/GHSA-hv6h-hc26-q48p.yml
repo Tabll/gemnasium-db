@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-hv6h-hc26-q48p"
 identifiers:
+- "CVE-2026-63738"
 - "GHSA-hv6h-hc26-q48p"
 package_slug: "cargo/surrealdb"
 title: "SurrealDB: Field-level SELECT permissions bypassed via graph and reference
@@ -17,7 +18,7 @@ description: "A record user could read field values hidden from them by field-le
   and `ReferenceScan` (`FullRecord`) enforced only the table-level SELECT permission
   and pushed raw record data, never running the field-level filtering (`build_field_state`
   / `filter_fields_by_permission`) that ordinary table scans and `fetch_record` apply."
-date: "2026-06-19"
+date: "2026-09-04"
 pubdate: "2026-06-19"
 affected_range: ">=3.1.0 <3.1.5"
 fixed_versions:
@@ -26,8 +27,10 @@ affected_versions: "All versions starting from 3.1.0 before 3.1.5"
 not_impacted: "All versions before 3.1.0, all versions starting from 3.1.5"
 solution: "Upgrade to version 3.1.5 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-63738"
 - "https://github.com/advisories/GHSA-hv6h-hc26-q48p"
 - "https://github.com/surrealdb/surrealdb/security/advisories/GHSA-hv6h-hc26-q48p"
+- "https://www.vulncheck.com/advisories/surrealdb-before-field-permission-bypass-via-traversal"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N"
 uuid: "23f8a8ef-07b3-44e2-9541-02f59d5a9344"
 cwe_ids:

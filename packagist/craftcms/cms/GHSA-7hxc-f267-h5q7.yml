@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-7hxc-f267-h5q7"
 identifiers:
+- "CVE-2026-72783"
 - "GHSA-7hxc-f267-h5q7"
 package_slug: "packagist/craftcms/cms"
 title: "Craft CMS: Incorrect path validation could potentially lead to path traversal"
@@ -17,7 +18,7 @@ description: "The `ensurePathIsContained` function of the `Local` file system cl
   the construction of the resulting file path. This opens the possibility of a desanitization-style
   vulnerability, where the normalization invalidates the assumptions made by the validation
   or sanitization that preceded it."
-date: "2026-08-06"
+date: "2026-09-01"
 pubdate: "2026-08-06"
 affected_range: ">=4.0.0-RC1 <4.18.2||>=5.0.0-RC1 <5.10.6"
 fixed_versions:
@@ -29,12 +30,14 @@ not_impacted: "All versions before 4.0.0-RC1, all versions starting from 4.18.2 
   5.0.0-RC1, all versions starting from 5.10.6"
 solution: "Upgrade to versions 4.18.2, 5.10.6 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-72783"
 - "https://github.com/advisories/GHSA-7hxc-f267-h5q7"
 - "https://github.com/craftcms/cms/security/advisories/GHSA-7hxc-f267-h5q7"
 - "https://github.com/craftcms/cms/commit/a8425b6c707335e42c35ee2aaf03af50ea4a494d"
 - "https://github.com/craftcms/cms/commit/bd6b9c175b4892e042e8a03760c39b0e94c4c7d6"
 - "https://github.com/craftcms/cms/releases/tag/4.18.2"
 - "https://github.com/craftcms/cms/releases/tag/5.10.6"
+- "https://www.vulncheck.com/advisories/craft-cms-rc1-before-path-traversal-via-ensurepathiscontained"
 cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:L/I:N/A:N"
 cvss_v4: "CVSS:4.0/AV:N/AC:H/AT:P/PR:H/UI:N/VC:N/VI:N/VA:N/SC:L/SI:N/SA:N"
 uuid: "78de00d6-ea7a-47e3-93d9-f3d375dd9a45"

@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-mhq8-78pj-5j79"
 identifiers:
+- "CVE-2026-53831"
 - "GHSA-mhq8-78pj-5j79"
 package_slug: "npm/openclaw"
 title: "OpenClaw's POSIX node system.run safe-bin allowlist could be widened by shell
@@ -11,7 +12,7 @@ description: "On POSIX nodes, OpenClaw's `system.run` safe-bin checks could appr
   and become a file operand.\n\nThis issue is limited to paired POSIX node execution
   through `system.run` with safe-bin or allowlist-style auto-approval. It is not an
   unauthenticated node takeover."
-date: "2026-07-02"
+date: "2026-08-25"
 pubdate: "2026-07-02"
 affected_range: "<2026.5.18"
 fixed_versions:
@@ -20,13 +21,17 @@ affected_versions: "All versions before 2026.5.18"
 not_impacted: "All versions starting from 2026.5.18"
 solution: "Upgrade to version 2026.5.18 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-53831"
 - "https://github.com/advisories/GHSA-mhq8-78pj-5j79"
 - "https://github.com/openclaw/openclaw/security/advisories/GHSA-mhq8-78pj-5j79"
+- "https://www.vulncheck.com/advisories/openclaw-arbitrary-file-read-via-shell-expansion-in-system-run-safe-bin-allowlist"
 cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:L"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:H/VI:H/VA:L/SC:N/SI:N/SA:N"
 uuid: "bafae0b6-4aee-43e7-9495-a5189ad2febf"
 cwe_ids:
 - "CWE-78"
 - "CWE-200"
 - "CWE-284"
+- "CWE-367"
 - "CWE-937"
 - "CWE-1035"

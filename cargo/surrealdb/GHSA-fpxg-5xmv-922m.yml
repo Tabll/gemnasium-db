@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-fpxg-5xmv-922m"
 identifiers:
+- "CVE-2026-63751"
 - "GHSA-fpxg-5xmv-922m"
 package_slug: "cargo/surrealdb"
 title: "SurrealDB has bypass of field-level SELECT permissions through JSON Patch
@@ -15,7 +16,7 @@ description: "SurrealDB lets callers modify records using JSON Patch operations 
   hides protected field values from the response only knew to hide the *original*
   protected field names, not the new destinations, so the protected values were returned
   to the caller intact under the new field name."
-date: "2026-07-01"
+date: "2026-09-04"
 pubdate: "2026-07-01"
 affected_range: "<3.1.0"
 fixed_versions:
@@ -24,9 +25,11 @@ affected_versions: "All versions before 3.1.0"
 not_impacted: "All versions starting from 3.1.0"
 solution: "Upgrade to version 3.1.0 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-63751"
 - "https://github.com/advisories/GHSA-fpxg-5xmv-922m"
 - "https://github.com/surrealdb/surrealdb/security/advisories/GHSA-fpxg-5xmv-922m"
 - "https://github.com/surrealdb/surrealdb/commit/56a7a1540d9228f82fd6284c258344e8dcb690fd"
+- "https://www.vulncheck.com/advisories/surrealdb-before-field-permission-bypass-via-json-patch"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N"
 uuid: "adf5657b-52e4-4d75-ae25-12376d75f66e"
 cwe_ids:

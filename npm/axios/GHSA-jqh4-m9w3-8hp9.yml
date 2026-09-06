@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-jqh4-m9w3-8hp9"
 identifiers:
+- "CVE-2026-67317"
 - "GHSA-jqh4-m9w3-8hp9"
 package_slug: "npm/axios"
 title: "Axios: Fetch adapter `ReadableStream` uploads bypass `maxBodyLength`"
@@ -16,7 +17,7 @@ description: "axios’ fetch adapter does not enforce `maxBodyLength` for live W
   ahead of dispatch. The pre-dispatch check is skipped when the length is unknown,
   and the in-flight wrapper that runs during transmission only emits progress events
   — it never enforces a byte cap. Severity: medium."
-date: "2026-07-20"
+date: "2026-09-01"
 pubdate: "2026-07-20"
 affected_range: ">=1.7.0 <1.18.0"
 fixed_versions:
@@ -25,11 +26,14 @@ affected_versions: "All versions starting from 1.7.0 before 1.18.0"
 not_impacted: "All versions before 1.7.0, all versions starting from 1.18.0"
 solution: "Upgrade to version 1.18.0 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-67317"
 - "https://github.com/advisories/GHSA-jqh4-m9w3-8hp9"
 - "https://github.com/axios/axios/security/advisories/GHSA-jqh4-m9w3-8hp9"
 - "https://github.com/axios/axios/pull/11000"
 - "https://github.com/axios/axios/commit/32fc489632377d214db55bfa4e2c48486a7d7ce2"
 - "https://github.com/axios/axios/releases/tag/v1.18.0"
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-68947"
+- "https://www.vulncheck.com/advisories/axios-before-maxbodylength-bypass-via-readablestream"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:N/A:L"
 cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:L"
 uuid: "0655b091-2955-4adc-8b52-efb7d5c7119c"

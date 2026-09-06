@@ -1,9 +1,10 @@
 ---
 identifier: "GHSA-9722-9j67-vjcr"
 identifiers:
+- "CVE-2024-58367"
 - "GHSA-9722-9j67-vjcr"
 package_slug: "cargo/surrealdb"
-title: "Improper Authorization in Select Permissions"
+title: "SurrealDB: Improper Authorization in Select Permissions"
 description: "Due to the order in which permissions were processed, some statements,
   filters and computations could lead to leaking field values or record contents to
   users without the required permissions. This behavior could be triggered in different
@@ -39,7 +40,7 @@ description: "Due to the order in which permissions were processed, some stateme
   but no `SELECT` permission for (e.g. `UPDATE data SET public = private`) in order
   to update the value of a field that the user had permission to `SELECT` to the value
   of another field for which the user did not."
-date: "2024-10-08"
+date: "2026-09-04"
 pubdate: "2024-10-08"
 affected_range: "<2.0.4"
 fixed_versions:
@@ -48,6 +49,7 @@ affected_versions: "All versions before 2.0.4"
 not_impacted: "All versions starting from 2.0.4"
 solution: "Upgrade to version 2.0.4 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2024-58367"
 - "https://github.com/advisories/GHSA-9722-9j67-vjcr"
 - "https://github.com/surrealdb/surrealdb/security/advisories/GHSA-9722-9j67-vjcr"
 - "https://github.com/surrealdb/surrealdb/issues/2161"
@@ -58,11 +60,12 @@ urls:
 - "https://github.com/surrealdb/surrealdb/commit/439ab99e15314ec5cf87047bf58246db646e3f8c"
 - "https://github.com/surrealdb/surrealdb/commit/c382fa158dc84b329328606f663efe574f102a7d"
 - "https://github.com/surrealdb/surrealdb/commit/e75e7736b3a028c4b6a4a4bdf00791d76f77e339"
-- "https://github.com/surrealdb/surrealdb"
 - "https://surrealdb.com/docs/surrealdb/security/summary#permissions"
 - "https://surrealdb.com/docs/surrealql/statements/define/field#setting-permissions-on-fields"
 - "https://surrealdb.com/docs/surrealql/statements/define/table#defining-permissions"
+- "https://www.vulncheck.com/advisories/surrealdb-before-improper-authorization-via-select-permissions"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N"
 uuid: "7aa5cace-bddd-4a6e-b42d-b7bab37c923b"
 cwe_ids:
 - "CWE-285"

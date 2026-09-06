@@ -1,0 +1,43 @@
+---
+identifier: "GHSA-7mpf-4465-7fc2"
+identifiers:
+- "GHSA-7mpf-4465-7fc2"
+package_slug: "packagist/winter/wn-backend-module"
+title: "Winter: Stored XSS through Backend List widget image columns"
+description: "`Backend\\Widgets\\Lists::evalImageTypeValue()` interpolated the resolved
+  image URL into a single-quoted `src` attribute without escaping it. Where a list
+  column of type [`image`](https://wintercms.com/docs/v1.2/docs/backend/lists#image)
+  rendered an attacker-influenced value, that value could break out of the attribute
+  and inject arbitrary attributes — including event handlers — into the backend list,
+  executing in the session of whichever backend user viewed it.\n\nWinter core ships
+  no `image` list column, so a default installation is unaffected. Exploitation requires
+  a plugin that renders attacker-influenced values through one.\n\nThe supported [image
+  sources](https://wintercms.com/docs/v1.2/docs/services/image-resizing#available-sources)
+  are plugins, themes, the Media Library, the uploads directory, and `Attach\\File`
+  models; an arbitrary external URL is not among them. `ImageResizer::filterGetUrl()`
+  returns the value it was given when it cannot resolve an image, however, so an unsupported
+  value reached the attribute verbatim rather than being rejected.\n\nAs with previous
+  issues of this kind the severity is limited: an attacker must already be able to
+  store the value, and a backend user must then open the affected list. Note that
+  validating a stored URL was not necessarily sufficient — a payload can survive `filter_var($url,
+  FILTER_VALIDATE_URL)`, since `/` is valid both in a URL path and after a quoted
+  HTML attribute value."
+date: "2026-08-20"
+pubdate: "2026-08-20"
+affected_range: ">=1.1.0 <1.2.14"
+fixed_versions:
+- "1.2.14"
+affected_versions: "All versions starting from 1.1.0 before 1.2.14"
+not_impacted: "All versions before 1.1.0, all versions starting from 1.2.14"
+solution: "Upgrade to version 1.2.14 or above."
+urls:
+- "https://github.com/advisories/GHSA-7mpf-4465-7fc2"
+- "https://github.com/wintercms/winter/security/advisories/GHSA-7mpf-4465-7fc2"
+- "https://github.com/wintercms/winter/commit/0941c9816181095fe35d58e78e6d0c4a49238967"
+- "https://github.com/wintercms/winter/releases/tag/v1.2.14"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:H/UI:R/S:U/C:N/I:L/A:N"
+uuid: "f74a5e66-0e4c-4d52-9a3e-ccb5cc83cbfa"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

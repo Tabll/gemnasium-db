@@ -1,0 +1,37 @@
+---
+identifier: "GHSA-22w5-2fxg-vrwx"
+identifiers:
+- "GHSA-22w5-2fxg-vrwx"
+package_slug: "go/github.com/opentofu/opentofu"
+title: "OpenTofu has high CPU usage when using K8S remote state backend or when parsing
+  specifically crafted TLS certificates from untrusted or compromised servers"
+description: "When OpenTofu performs requests against an untrusted (or compromised)
+  third-party server or connects to an attacker-controlled server, the initial connection
+  negotiation can produce high CPU usage, leading to possible denial of service.\n\nThese
+  vulnerabilities **do not** permit arbitrary code execution or allow disclosure of
+  confidential information."
+date: "2026-08-20"
+pubdate: "2026-08-20"
+affected_range: "<1.11.9||>=1.12.0-beta1 <1.12.2"
+fixed_versions:
+- "1.11.9"
+- "1.12.2"
+affected_versions: "All versions before 1.11.9, all versions starting from 1.12.0-beta1
+  before 1.12.2"
+not_impacted: "All versions starting from 1.11.9 before 1.12.0-beta1, all versions
+  starting from 1.12.2"
+solution: "Upgrade to versions 1.11.9, 1.12.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-22w5-2fxg-vrwx"
+- "https://github.com/opentofu/opentofu/security/advisories/GHSA-22w5-2fxg-vrwx"
+- "https://github.com/opentofu/opentofu/issues/4242"
+- "https://github.com/opentofu/opentofu/issues/4243"
+- "https://github.com/opentofu/opentofu/issues/4244"
+- "https://github.com/opentofu/opentofu/releases/tag/v1.11.9"
+- "https://github.com/opentofu/opentofu/releases/tag/v1.12.2"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:U/C:N/I:N/A:L"
+uuid: "88dda80f-50ef-4b5e-aeec-5985630daf0d"
+cwe_ids:
+- "CWE-400"
+- "CWE-937"
+- "CWE-1035"

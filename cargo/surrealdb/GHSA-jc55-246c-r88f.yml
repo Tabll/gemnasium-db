@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-jc55-246c-r88f"
 identifiers:
+- "CVE-2024-58358"
 - "GHSA-jc55-246c-r88f"
 package_slug: "cargo/surrealdb"
 title: "SurrealDB has an Uncaught Exception Handling Nonexistent Role"
@@ -11,7 +12,7 @@ description: "Roles for system users are stored as generic `Ident` values and co
   otherwise. However, the `unwrap()` method would be called on this result when implementing
   `std::convert::From<&Ident> for Role`, which would result in a panic where a nonexistent
   role was used."
-date: "2024-11-22"
+date: "2026-09-04"
 pubdate: "2024-11-22"
 affected_range: "<2.1.0"
 fixed_versions:
@@ -20,11 +21,12 @@ affected_versions: "All versions before 2.1.0"
 not_impacted: "All versions starting from 2.1.0"
 solution: "Upgrade to version 2.1.0 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2024-58358"
 - "https://github.com/advisories/GHSA-jc55-246c-r88f"
 - "https://github.com/surrealdb/surrealdb/security/advisories/GHSA-jc55-246c-r88f"
 - "https://github.com/surrealdb/surrealdb/pull/5079"
 - "https://github.com/surrealdb/surrealdb/pull/5092"
-- "https://github.com/surrealdb/surrealdb"
+- "https://www.vulncheck.com/advisories/surrealdb-before-denial-of-service-via-nonexistent-role"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H"
 uuid: "272c4d97-40ac-4ca8-a607-9a05c2dd6331"
 cwe_ids:

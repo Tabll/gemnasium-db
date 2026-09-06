@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-gcwr-5mrf-fvch"
 identifiers:
+- "CVE-2026-63758"
 - "GHSA-gcwr-5mrf-fvch"
 package_slug: "cargo/surrealdb"
 title: "SurrealDB: Authorization Bypass in KILL Statement Allows Termination of Other
@@ -20,7 +21,7 @@ description: "The `KILL` statement is used to terminate `LIVE SELECT` subscripti
   issue was discovered and patched during a code audit and penetration test of SurrealDB
   by cure53, the severity defined within cure53's preliminary finding is Medium, matched
   by our CVSS v3.1 assessment."
-date: "2026-07-01"
+date: "2026-09-04"
 pubdate: "2026-07-01"
 affected_range: "<3.1.0"
 fixed_versions:
@@ -29,9 +30,11 @@ affected_versions: "All versions before 3.1.0"
 not_impacted: "All versions starting from 3.1.0"
 solution: "Upgrade to version 3.1.0 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-63758"
 - "https://github.com/advisories/GHSA-gcwr-5mrf-fvch"
 - "https://github.com/surrealdb/surrealdb/security/advisories/GHSA-gcwr-5mrf-fvch"
 - "https://github.com/surrealdb/surrealdb/commit/36f0a41a69b551172c7d1d13b1e8dbbd868e2ead"
+- "https://www.vulncheck.com/advisories/surrealdb-before-authorization-bypass-via-kill-statement"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:L"
 uuid: "d0bf7fac-c607-44ad-8960-1d4dd3145538"
 cwe_ids:

@@ -1,0 +1,37 @@
+---
+identifier: "GHSA-vx2m-jpxr-xv7w"
+identifiers:
+- "GHSA-vx2m-jpxr-xv7w"
+package_slug: "go/github.com/cloudreve/Cloudreve/v4"
+title: "Cloudreve has Broken Access Control - Revoked Share Access Still Allows Signed
+  File URL Generation via Cached context_hint"
+description: "Cloudreve's file-listing responses hand the client a `context_hint`
+  (UUID) that is meant to speed up follow-up operations. When that hint is replayed
+  on the `file/url` (and `file/thumb`) routes, DBFS caches a `shareNavigatorState`
+  containing the already-loaded share root and share row.\n\nOn a later request carrying
+  the same hint, `shareNavigator.RestoreState` repopulates `shareRoot`, and `shareNavigator.To`
+  then **skips `Root`**. `Root` is the only place that re-checks `inventory.IsValidShare`
+  (share expiry, remaining-download count, owner status, source-file validity) and
+  the share password. As a result, a recipient who prewarms a context hint while access
+  is valid can keep minting signed file URLs for already-known shared file paths for
+  up to the context-hint TTL (`5 * 60` = 300 s) after the owner deletes the share
+  or the share expires — plus the lifetime of any signed entity URL minted in that
+  window.\n\nThis is a **revocation / expiry bypass**, not a way to discover unknown
+  share contents: the attacker must already have had access to the share and must
+  know the target file URI from a prior listing."
+date: "2026-08-24"
+pubdate: "2026-08-24"
+affected_range: "<=4.0.0-20260606032813-26b6b1044b02"
+fixed_versions: []
+affected_versions: "All versions up to 4.0.0-20260606032813-26b6b1044b02"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-vx2m-jpxr-xv7w"
+- "https://github.com/cloudreve/cloudreve/security/advisories/GHSA-vx2m-jpxr-xv7w"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+uuid: "4864e76e-2b47-4ae8-bcfb-59eccaf04ada"
+cwe_ids:
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

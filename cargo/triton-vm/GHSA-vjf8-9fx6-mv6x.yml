@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-vjf8-9fx6-mv6x"
+identifiers:
+- "GHSA-vjf8-9fx6-mv6x"
+package_slug: "cargo/triton-vm"
+title: "Triton VM Soundness Vulnerability due to Missing Constraint"
+description: "The instruction `sponge_absorb_mem` Triton VM fails to verify that hashed
+  values come from the claimed memory location. Malicious provers can substitute arbitrary
+  data instead of actual memory contents.\n\nAny application using instruction `sponge_absorb_mem`
+  to hash memory data can be given a proof for a forged hash that doesn't correspond
+  to the actual memory. This breaks the security of memory-based commitments.\n\nThe
+  flaw was corrected in commits `17c7ba0a` and `ef9d9e72` by including the appropriate
+  constraints."
+date: "2026-08-18"
+pubdate: "2026-08-18"
+affected_range: ">=0.42.0-alpha.4 <4.0.0"
+fixed_versions:
+- "4.0.0"
+affected_versions: "All versions starting from 0.42.0-alpha.4 before 4.0.0"
+not_impacted: "All versions before 0.42.0-alpha.4, all versions starting from 4.0.0"
+solution: "Upgrade to version 4.0.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-vjf8-9fx6-mv6x"
+- "https://github.com/TritonVM/triton-vm/commit/17c7ba0a19f31793f1c807a58afaf9504342aac5"
+- "https://rustsec.org/advisories/RUSTSEC-2021-0156.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "3a460c23-d712-495a-964c-87f20b05d979"
+cwe_ids:
+- "CWE-345"
+- "CWE-937"
+- "CWE-1035"

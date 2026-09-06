@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-vwf3-4xxj-qg6h"
+identifiers:
+- "GHSA-vwf3-4xxj-qg6h"
+package_slug: "pypi/mcp-contextforge-gateway"
+title: "mcp-contextforge-gateway has Server-Side Template Injection (SSTI) leading
+  to Remote Code Execution in `PromptService._render_template` via unsandboxed Jinja2
+  Environment"
+description: "`mcpgateway.services.prompt_service.PromptService` renders user-supplied
+  prompt templates using Jinja2's plain `Environment()` rather than `SandboxedEnvironment`.
+  An authenticated user with permission to register or update prompt templates can
+  store a malicious template that, on subsequent rendering, executes arbitrary Python
+  code on the gateway host with the privileges of the gateway process. This is a Server-Side
+  Template Injection (SSTI) vulnerability leading to Remote Code Execution."
+date: "2026-08-25"
+pubdate: "2026-08-25"
+affected_range: "<1.0.0"
+fixed_versions:
+- "1.0.0"
+affected_versions: "All versions before 1.0.0"
+not_impacted: "All versions starting from 1.0.0"
+solution: "Upgrade to version 1.0.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-vwf3-4xxj-qg6h"
+- "https://github.com/IBM/mcp-context-forge/security/advisories/GHSA-vwf3-4xxj-qg6h"
+- "https://github.com/IBM/mcp-context-forge/issues/538"
+- "https://github.com/IBM/mcp-context-forge/pull/4072"
+- "https://github.com/IBM/mcp-context-forge/commit/4d31004661858a2e99055b3c0c9f14218b8f7120"
+- "https://github.com/IBM/mcp-context-forge/releases/tag/v1.0.0"
+uuid: "ac589d88-c928-43aa-844b-7fdba83ebf7f"
+cwe_ids:
+- "CWE-94"
+- "CWE-937"
+- "CWE-1035"
+- "CWE-1336"

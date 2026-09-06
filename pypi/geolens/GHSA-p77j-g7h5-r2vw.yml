@@ -1,0 +1,37 @@
+---
+identifier: "GHSA-p77j-g7h5-r2vw"
+identifiers:
+- "GHSA-p77j-g7h5-r2vw"
+package_slug: "pypi/geolens"
+title: "GeoLens's authorization and cache-scope flaws disclose private dataset data
+  and metadata to unauthorized users (fixed in 1.2.4)"
+description: "GeoLens 1.2.4 fixes a set of vulnerabilities, the most serious of which
+  allow authenticated or anonymous users to obtain data and metadata for datasets
+  they are not authorized to access."
+date: "2026-08-19"
+pubdate: "2026-08-19"
+affected_range: "<1.2.4"
+fixed_versions:
+- "1.2.4"
+affected_versions: "All versions before 1.2.4"
+not_impacted: "All versions starting from 1.2.4"
+solution: "Upgrade to version 1.2.4 or above."
+urls:
+- "https://github.com/advisories/GHSA-p77j-g7h5-r2vw"
+- "https://github.com/geolens-io/geolens/security/advisories/GHSA-p77j-g7h5-r2vw"
+- "https://github.com/geolens-io/geolens/pull/243"
+- "https://github.com/advisories/GHSA-p23g-mvhj-jh3j"
+- "https://github.com/geolens-io/geolens/releases/tag/v1.2.4"
+uuid: "748a63f2-4ad5-4c02-a1cb-c948c6a17707"
+cwe_ids:
+- "CWE-93"
+- "CWE-200"
+- "CWE-285"
+- "CWE-400"
+- "CWE-524"
+- "CWE-532"
+- "CWE-918"
+- "CWE-937"
+- "CWE-1021"
+- "CWE-1035"
+- "CWE-1392"

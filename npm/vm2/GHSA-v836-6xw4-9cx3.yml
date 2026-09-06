@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-v836-6xw4-9cx3"
+identifiers:
+- "GHSA-v836-6xw4-9cx3"
+package_slug: "npm/vm2"
+title: "vm2 has Memory Exhaustion DoS via bufferAllocLimit Bypass"
+description: "The `bufferAllocLimit` defense (GHSA-6785-pvv7-mvg7) can be completely
+  bypassed using `ArrayBuffer`, `SharedArrayBuffer`, or any `TypedArray` constructor.
+  These allocate identical host-process RSS through the same V8/libuv C++ allocation
+  path as `Buffer.alloc` but are not subject to the size cap."
+date: "2026-08-17"
+pubdate: "2026-08-17"
+affected_range: "<3.11.6"
+fixed_versions:
+- "3.11.6"
+affected_versions: "All versions before 3.11.6"
+not_impacted: "All versions starting from 3.11.6"
+solution: "Upgrade to version 3.11.6 or above."
+urls:
+- "https://github.com/advisories/GHSA-v836-6xw4-9cx3"
+- "https://github.com/patriksimek/vm2/security/advisories/GHSA-v836-6xw4-9cx3"
+- "https://github.com/patriksimek/vm2/releases/tag/3.11.6"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "06da4cdb-6b76-42c4-95c7-dc26ee23065a"
+cwe_ids:
+- "CWE-770"
+- "CWE-937"
+- "CWE-1035"
