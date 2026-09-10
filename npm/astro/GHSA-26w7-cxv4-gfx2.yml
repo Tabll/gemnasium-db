@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-26w7-cxv4-gfx2"
+identifiers:
+- "GHSA-26w7-cxv4-gfx2"
+package_slug: "npm/astro"
+title: "Astro: Remote code execution through AVIF image optimization"
+description: "A vulnerability in `libheif`, used by the default Sharp image service
+  in Astro, can lead to remote code execution when a malicious AVIF image is optimized.\n\nProjects
+  are affected when an attacker can cause Astro to process an untrusted AVIF image.\n\nThe
+  fix was released in Astro 7.2.8, which requires Sharp 0.35.4."
+date: "2026-09-08"
+pubdate: "2026-09-08"
+affected_range: "<7.2.8"
+fixed_versions:
+- "7.2.8"
+affected_versions: "All versions before 7.2.8"
+not_impacted: "All versions starting from 7.2.8"
+solution: "Upgrade to version 7.2.8 or above."
+urls:
+- "https://github.com/advisories/GHSA-26w7-cxv4-gfx2"
+- "https://github.com/strukturag/libheif/security/advisories/GHSA-g89c-p67h-r497"
+- "https://github.com/withastro/astro/security/advisories/GHSA-26w7-cxv4-gfx2"
+- "https://github.com/withastro/astro/commit/ecb4082131490b4fe9a56aa44fda84b54ef8967b"
+- "https://github.com/withastro/astro/releases/tag/astro@7.2.8"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+uuid: "e21558d0-d849-4845-83a5-86f15136b085"
+cwe_ids:
+- "CWE-125"
+- "CWE-787"
+- "CWE-937"
+- "CWE-1035"

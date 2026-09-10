@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-4gmw-gg2m-w46p"
 identifiers:
+- "CVE-2026-76219"
 - "GHSA-4gmw-gg2m-w46p"
 package_slug: "pypi/GitPython"
 title: "GitPython: Unguarded git read-tree option forwarding in IndexFile.from_tree/reset/merge_tree
@@ -15,7 +16,7 @@ description: "`IndexFile.from_tree`, `IndexFile.reset` (→ from_tree) and `Inde
   only `checkout_index` and `tag`; `read_tree` was left unprotected (it is among the
   acknowledged unguarded call sites in that advisory's sweep but was never reported
   or fixed)."
-date: "2026-08-24"
+date: "2026-09-08"
 pubdate: "2026-08-07"
 affected_range: "<3.1.58"
 fixed_versions:
@@ -24,11 +25,13 @@ affected_versions: "All versions before 3.1.58"
 not_impacted: "All versions starting from 3.1.58"
 solution: "Upgrade to version 3.1.58 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-76219"
 - "https://github.com/advisories/GHSA-4gmw-gg2m-w46p"
 - "https://github.com/gitpython-developers/GitPython/security/advisories/GHSA-4gmw-gg2m-w46p"
 - "https://github.com/gitpython-developers/GitPython/pull/2204"
 - "https://github.com/gitpython-developers/GitPython/commit/9b5dcaf85da5946dbf69dcd53f9edba08f760b32"
 - "https://github.com/gitpython-developers/GitPython/releases/tag/3.1.58"
+- "https://www.vulncheck.com/advisories/gitpython-before-arbitrary-file-overwrite-via-read-tree"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H"
 uuid: "44e76710-31ca-444b-92ba-afd3783277a0"
 cwe_ids:

@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-rgj7-g3m4-5g8c"
+identifiers:
+- "GHSA-rgj7-g3m4-5g8c"
+package_slug: "npm/sharp"
+title: "sharp: Vulnerabilities in libheif: GHSA-g89c-p67h-r497 and GHSA-2jg2-4ch7-h545"
+description: "A number of vulnerabilities, two rated as \"Critical\" severity using
+  CVSSv3, have been discovered and fixed in the upstream libheif dependency. These
+  can lead to possible remote code execution (RCE) on glibc-based Linux when run under
+  certain conditions.\n\nThe attack vector for these claims to be \"network\" however
+  sharp does not provide any networking features so this vulnerability is down-rated
+  to a \"High\" severity using CVSSv4 but please note its Subsequent System Impact.\n\nThose
+  processing untrusted input with versions of sharp prior to 0.35.4 are affected."
+date: "2026-09-08"
+pubdate: "2026-09-08"
+affected_range: "<0.35.4"
+fixed_versions:
+- "0.35.4"
+affected_versions: "All versions before 0.35.4"
+not_impacted: "All versions starting from 0.35.4"
+solution: "Upgrade to version 0.35.4 or above."
+urls:
+- "https://github.com/advisories/GHSA-rgj7-g3m4-5g8c"
+- "https://github.com/lovell/sharp/security/advisories/GHSA-rgj7-g3m4-5g8c"
+- "https://github.com/strukturag/libheif/security/advisories/GHSA-2jg2-4ch7-h545"
+- "https://github.com/strukturag/libheif/security/advisories/GHSA-g89c-p67h-r497"
+- "https://github.com/lovell/sharp/releases/tag/v0.35.4"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:L/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H"
+uuid: "be346dbd-33c0-46f6-93b8-7c8ad1734ae1"
+cwe_ids:
+- "CWE-122"
+- "CWE-937"
+- "CWE-1035"

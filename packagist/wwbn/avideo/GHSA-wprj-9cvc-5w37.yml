@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-wprj-9cvc-5w37"
 identifiers:
+- "CVE-2026-56341"
 - "GHSA-wprj-9cvc-5w37"
 package_slug: "packagist/wwbn/avideo"
 title: "AVideo: Unauthenticated Access to Payment Log DataTables Endpoints Exposes
@@ -11,19 +12,20 @@ description: "Multiple payment plugin `list.json.php` endpoints lack authenticat
   Authorize.Net webhook payloads with transaction details, and Bitcoin payment records.
   This is the same class of vulnerability fixed in the Scheduler plugin (GHSA-j724-5c6c-68g5
   / commit 83390ab1f) but the fix was not applied to the remaining 21 affected endpoints."
-date: "2026-03-29"
+date: "2026-09-09"
 pubdate: "2026-03-29"
-affected_range: "<=26.0"
+affected_range: "<=26.0.0"
 fixed_versions: []
-affected_versions: "All versions up to 26.0"
+affected_versions: "All versions up to 26.0.0"
 not_impacted: ""
 solution: "Unfortunately, there is no solution available yet."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-56341"
 - "https://github.com/advisories/GHSA-wprj-9cvc-5w37"
 - "https://github.com/WWBN/AVideo/security/advisories/GHSA-wprj-9cvc-5w37"
 - "https://github.com/WWBN/AVideo/commit/1729a955f8de7e26552eb728b3d1e6f4b1b9352e"
-- "https://github.com/WWBN/AVideo"
 - "https://github.com/advisories/GHSA-j724-5c6c-68g5"
+- "https://www.vulncheck.com/advisories/avideo-unauthenticated-access-to-payment-log-datatables-endpoints-via-list-json-php"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
 uuid: "c65a606c-c72a-4f7e-b0f5-b0631af89488"
 cwe_ids:

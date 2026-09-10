@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-hh9p-6wh2-4mfc"
 identifiers:
+- "CVE-2026-76217"
 - "GHSA-hh9p-6wh2-4mfc"
 package_slug: "pypi/GitPython"
 title: "GitPython: Arbitrary file read via --pathspec-from-file in IndexFile.remove()
@@ -14,7 +15,7 @@ description: "`IndexFile.remove()` and `Head.checkout()` forward `**kwargs` into
   2 of\n[GHSA-3f7w-8rr8-f37f](https://github.com/advisories/GHSA-3f7w-8rr8-f37f) -
   `TagReference.create()`\nwith `-F`, arbitrary file read returned in band - at two
   sites that advisory assessed and\ncleared."
-date: "2026-08-07"
+date: "2026-09-08"
 pubdate: "2026-08-07"
 affected_range: "<3.1.58"
 fixed_versions:
@@ -23,11 +24,13 @@ affected_versions: "All versions before 3.1.58"
 not_impacted: "All versions starting from 3.1.58"
 solution: "Upgrade to version 3.1.58 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-76217"
 - "https://github.com/advisories/GHSA-hh9p-6wh2-4mfc"
 - "https://github.com/gitpython-developers/GitPython/security/advisories/GHSA-hh9p-6wh2-4mfc"
 - "https://github.com/gitpython-developers/GitPython/pull/2204"
 - "https://github.com/gitpython-developers/GitPython/commit/f2550b65bf60ca087190981e2c7b6865e201f40c"
 - "https://github.com/gitpython-developers/GitPython/releases/tag/3.1.58"
+- "https://www.vulncheck.com/advisories/gitpython-before-arbitrary-file-read-via-pathspec-from-file"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
 uuid: "e5af9923-12e8-46d1-ab44-e90bd88b6c3b"
 cwe_ids:

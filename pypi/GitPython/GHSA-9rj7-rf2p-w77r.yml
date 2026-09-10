@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-9rj7-rf2p-w77r"
 identifiers:
+- "CVE-2026-76218"
 - "GHSA-9rj7-rf2p-w77r"
 package_slug: "pypi/GitPython"
 title: "GitPython: Unguarded git option forwarding in Repo.init enables arbitrary
@@ -12,7 +13,7 @@ description: "`Repo.init()` forwards `**kwargs` verbatim to `git init` with no u
   `--template` is already recognized as unsafe for clone (it is on `unsafe_git_clone_options`,
   and GHSA-6p8h-3wgx-97gf covers the clone path), but `Repo.init` is a distinct method
   that never received a guard and needs an independent fix."
-date: "2026-08-07"
+date: "2026-09-08"
 pubdate: "2026-08-07"
 affected_range: "<3.1.58"
 fixed_versions:
@@ -21,11 +22,13 @@ affected_versions: "All versions before 3.1.58"
 not_impacted: "All versions starting from 3.1.58"
 solution: "Upgrade to version 3.1.58 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-76218"
 - "https://github.com/advisories/GHSA-9rj7-rf2p-w77r"
 - "https://github.com/gitpython-developers/GitPython/security/advisories/GHSA-9rj7-rf2p-w77r"
 - "https://github.com/gitpython-developers/GitPython/pull/2204"
 - "https://github.com/gitpython-developers/GitPython/commit/d9ddb55bdc66"
 - "https://github.com/gitpython-developers/GitPython/releases/tag/3.1.58"
+- "https://www.vulncheck.com/advisories/gitpython-before-remote-code-execution-via-repo-init"
 cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H"
 uuid: "c7d076d0-5f67-4420-b3eb-64b19966f4d7"
 cwe_ids:

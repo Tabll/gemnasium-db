@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-m3q2-p4fw-w38m"
 identifiers:
+- "CVE-2026-56317"
 - "GHSA-m3q2-p4fw-w38m"
 package_slug: "npm/nuxt"
 title: "Cross-site scripting via <NoScript> slot content in Nuxt's head components"
@@ -17,7 +18,7 @@ description: "Nuxt's globally registered `<NoScript>` component (from `@unhead/v
   the element and executes in the document context.\n\nSibling head components (`<Style>`,
   `<Title>`) were not affected because they already routed slot text through the safe
   `textContent` path."
-date: "2026-06-16"
+date: "2026-09-09"
 pubdate: "2026-06-16"
 affected_range: "<3.21.7||>=4.0.0 <4.4.7"
 fixed_versions:
@@ -29,10 +30,12 @@ not_impacted: "All versions starting from 3.21.7 before 4.0.0, all versions star
   from 4.4.7"
 solution: "Upgrade to versions 3.21.7, 4.4.7 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-56317"
 - "https://github.com/advisories/GHSA-m3q2-p4fw-w38m"
 - "https://github.com/nuxt/nuxt/security/advisories/GHSA-m3q2-p4fw-w38m"
 - "https://github.com/nuxt/nuxt/commit/4b054e9d95f8daf366cb144b52782047c511a66e"
 - "https://github.com/nuxt/nuxt/commit/7fea9fd687f1dacbfb63db5fae5839896b017a0e"
+- "https://www.vulncheck.com/advisories/nuxt-cross-site-scripting-via-noscript-component-slot-content"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N"
 cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N"
 uuid: "2ff515a0-61d4-44ad-a405-d9a6ce538eb9"
