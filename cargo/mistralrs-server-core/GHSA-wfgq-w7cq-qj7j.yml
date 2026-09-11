@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-wfgq-w7cq-qj7j"
+identifiers:
+- "GHSA-wfgq-w7cq-qj7j"
+package_slug: "cargo/mistralrs-server-core"
+title: "mistral.rs Media Loader: Unauthenticated SSRF and arbitrary local file read
+  via image_url"
+description: "mistral.rs fetches any request-supplied image/audio URL with no host
+  or IP validation, and opens arbitrary local files (a `file://` URL, or any existing
+  relative/absolute path). A remote, unauthenticated client of any vision/audio deployment
+  can cause the server to issue requests to internal or cloud-metadata addresses (SSRF)
+  and to open arbitrary local files, via the standard OpenAI `image_url` / `audio_url`
+  message content. The server is unauthenticated by default."
+date: "2026-09-10"
+pubdate: "2026-09-10"
+affected_range: "<0.8.18"
+fixed_versions:
+- "0.8.18"
+affected_versions: "All versions before 0.8.18"
+not_impacted: "All versions starting from 0.8.18"
+solution: "Upgrade to version 0.8.18 or above."
+urls:
+- "https://github.com/advisories/GHSA-wfgq-w7cq-qj7j"
+- "https://github.com/EricLBuehler/mistral.rs/security/advisories/GHSA-wfgq-w7cq-qj7j"
+- "https://github.com/EricLBuehler/mistral.rs/commit/74793379649febc758b6a0d4b71aa6aeabc80f9c"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:N/A:L"
+uuid: "1e280d12-e678-4fef-b0ed-be0323c0edf8"
+cwe_ids:
+- "CWE-73"
+- "CWE-918"
+- "CWE-937"
+- "CWE-1035"

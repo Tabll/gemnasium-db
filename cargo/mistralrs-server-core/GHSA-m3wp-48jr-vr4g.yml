@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-m3wp-48jr-vr4g"
+identifiers:
+- "GHSA-m3wp-48jr-vr4g"
+package_slug: "cargo/mistralrs-server-core"
+title: " mistral.rs: Unbounded Remote Media Fetch and Video Frame Expansion DoS"
+description: "The `POST /v1/chat/completions` endpoint in mistral.rs fetches attacker-supplied
+  media URLs (image, audio, video) into server memory with no byte limit, and extracts
+  every frame of a supplied video when `num_frames` is `None`. An unauthenticated
+  remote attacker can exhaust server memory, disk space, and CPU by pointing the endpoint
+  at an infinite-streaming HTTP server or a long high-framerate video, causing a complete
+  denial of service. No credentials or special configuration are required; the route
+  is open by default."
+date: "2026-09-10"
+pubdate: "2026-09-10"
+affected_range: "<0.8.18"
+fixed_versions:
+- "0.8.18"
+affected_versions: "All versions before 0.8.18"
+not_impacted: "All versions starting from 0.8.18"
+solution: "Upgrade to version 0.8.18 or above."
+urls:
+- "https://github.com/advisories/GHSA-m3wp-48jr-vr4g"
+- "https://github.com/EricLBuehler/mistral.rs/security/advisories/GHSA-m3wp-48jr-vr4g"
+- "https://github.com/EricLBuehler/mistral.rs/releases/tag/v0.8.18"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "7bacfd2c-33ab-4516-8048-4d69e51bfb58"
+cwe_ids:
+- "CWE-400"
+- "CWE-937"
+- "CWE-1035"
