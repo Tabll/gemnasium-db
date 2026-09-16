@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-rf68-8gjr-36q7"
+identifiers:
+- "GHSA-rf68-8gjr-36q7"
+package_slug: "go/github.com/nezhahq/nezha"
+title: "Nezha: OAuth2 redirect_uri Host header injection regression when dashboard_host
+  is empty"
+description: "Nezha v2.2.3 regresses the GHSA-9rc6-8cjv-rcvx host header injection
+  fix for deployments where the new `dashboard_host` setting is empty. In that configuration,
+  `/api/v1/oauth2/{provider}` again reflects the request `Host` header into the OAuth2
+  `redirect_uri` sent to the identity provider, even if `install_host` is configured."
+date: "2026-09-15"
+pubdate: "2026-09-15"
+affected_range: "=2.2.3"
+fixed_versions: []
+affected_versions: "Version 2.2.3"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-rf68-8gjr-36q7"
+- "https://github.com/nezhahq/nezha/security/advisories/GHSA-rf68-8gjr-36q7"
+- "https://github.com/nezhahq/nezha/commit/38824dbc11a63964c5b9296ae4c68e62b34fa04b"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "cf8e9185-47c7-456e-ab2b-2e6e4455d8c1"
+cwe_ids:
+- "CWE-601"
+- "CWE-937"
+- "CWE-1035"
