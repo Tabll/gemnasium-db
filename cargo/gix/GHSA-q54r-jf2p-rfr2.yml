@@ -1,0 +1,39 @@
+---
+identifier: "GHSA-q54r-jf2p-rfr2"
+identifiers:
+- "GHSA-q54r-jf2p-rfr2"
+package_slug: "cargo/gix"
+title: "gitoxide gix: untrusted .git/config disables filesystem .git-protection path
+  checks via unfiltered protect_options()"
+description: "In the `gix` crate, `Cache::protect_options()` in `gix/src/config/cache/access.rs`
+  reads the three filesystem path-protection settings (`core.protectHFS`, `core.protectNTFS`,
+  and `gitoxide.core.protectWindows`) with the unfiltered `gix_config::File::boolean()`
+  accessor instead of the trust-aware `boolean_filter()` accessor used by every other
+  security-critical config read in the same file. When a repository is opened with
+  reduced trust (an ownership mismatch, which maps `.git/config` sections to `Trust::Reduced`),
+  these protection settings should not be honored from the untrusted repository-local
+  config. Because the trust filter is skipped, an attacker who controls a repository's
+  `.git/config` on a shared filesystem can set `core.protectNTFS = false` and/or `core.protectHFS
+  = false`, disabling the `.git` path-confusion checks that run during checkout, index
+  creation, merge, and tree editing. On case-insensitive filesystems this lets crafted
+  tree entries resolve to the `.git` directory and overwrite hooks or config."
+date: "2026-10-23"
+pubdate: "2026-10-23"
+affected_range: ">=0.88.0 <0.90.0"
+fixed_versions:
+- "0.90.0"
+affected_versions: "All versions starting from 0.88.0 before 0.90.0"
+not_impacted: "All versions before 0.88.0, all versions starting from 0.90.0"
+solution: "Upgrade to version 0.90.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-q54r-jf2p-rfr2"
+- "https://github.com/GitoxideLabs/gitoxide/security/advisories/GHSA-q54r-jf2p-rfr2"
+- "https://github.com/GitoxideLabs/gitoxide/pull/3068"
+- "https://github.com/GitoxideLabs/gitoxide/commit/743957880154aa1726b30b8b5779fd10c78a058c"
+- "https://github.com/GitoxideLabs/gitoxide/releases/tag/gix-v0.90.0"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H"
+uuid: "c70da642-d151-558d-9508-c8350e536624"
+cwe_ids:
+- "CWE-349"
+- "CWE-937"
+- "CWE-1035"

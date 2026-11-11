@@ -1,0 +1,38 @@
+---
+identifier: "GHSA-6w6g-hm98-mhgm"
+identifiers:
+- "GHSA-6w6g-hm98-mhgm"
+package_slug: "cargo/hickory-resolver"
+title: "hickory-resolver: Unbounded TC-retry loop in `NameServerPool::try_send` (resource-exhaustion
+  DoS)"
+description: "When the `hickory-resolver` name server pool implementation receives
+  an upstream response with the TC (truncated) header bit set, it re-queues the request
+  to the same nameserver to retry with UDP transport disabled. However, the retry
+  arm never inspects the transport that just answered and carries no iteration counter.
+  An authoritative server that sets `TC=1` on **every** available transport  keeps
+  the resolver spinning on one persistent TCP connection until the 5s per-request
+  wall-clock deadline expires."
+date: "2026-10-05"
+pubdate: "2026-10-05"
+affected_range: ">=0.26.0-beta.1 <0.26.2"
+fixed_versions:
+- "0.26.2"
+affected_versions: "All versions starting from 0.26.0-beta.1 before 0.26.2"
+not_impacted: "All versions before 0.26.0-beta.1, all versions starting from 0.26.2"
+solution: "Upgrade to version 0.26.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-6w6g-hm98-mhgm"
+- "https://github.com/hickory-dns/hickory-dns/security/advisories/GHSA-6w6g-hm98-mhgm"
+- "https://github.com/hickory-dns/hickory-dns/pull/3871"
+- "https://github.com/hickory-dns/hickory-dns/commit/0848d2e9e4183499343318a690d6dd5e48bc21c1"
+- "https://github.com/hickory-dns/hickory-dns/commit/5d37e2e04a36a87013a213b58b820345ef76a263"
+- "https://github.com/hickory-dns/hickory-dns/releases/tag/v0.26.2"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+uuid: "9bbbbbbc-7d1c-4e8b-b98d-37666f3fef36"
+cwe_ids:
+- "CWE-400"
+- "CWE-406"
+- "CWE-835"
+- "CWE-937"
+- "CWE-1035"

@@ -5,21 +5,14 @@ identifiers:
 package_slug: "npm/openclaw"
 title: "Duplicate Advisory: OpenClaw Bypasses DM Policy Separation via Synology Chat
   Webhook Path Collision"
-description: "### Duplicate Advisory\nThis advisory has been withdrawn because it
-  is a duplicate of GHSA-rqp8-q22p-5j9q This link is maintained to preserve external
-  references.\n\n### Original Description\nOpenClaw before 2026.3.22 contains a webhook
-  path route replacement vulnerability in the Synology Chat extension that allows
-  attackers to collapse multi-account configurations onto shared webhook paths. Attackers
-  can exploit inherited or duplicate webhook paths to bypass per-account DM access
-  control policies and replace route ownership across accounts."
+description: "This advisory has been withdrawn."
 date: "2026-04-10"
 pubdate: "2026-04-10"
-affected_range: "<2026.3.22"
-fixed_versions:
-- "2026.3.22"
-affected_versions: "All versions before 2026.3.22"
-not_impacted: "All versions starting from 2026.3.22"
-solution: "Upgrade to version 2026.3.22 or above."
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "This advisory has been withdrawn."
+not_impacted: "This advisory has been withdrawn."
+solution: "This advisory has been withdrawn."
 urls:
 - "https://github.com/advisories/GHSA-g8mc-c5f2-mqg7"
 - "https://github.com/openclaw/openclaw/security/advisories/GHSA-rqp8-q22p-5j9q"

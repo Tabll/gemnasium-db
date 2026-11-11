@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-g38j-7v97-x298"
+identifiers:
+- "GHSA-g38j-7v97-x298"
+package_slug: "go/code.vikunja.io/api"
+title: "Vikunja: CalDAV relation creation bypasses TaskRelation.CanCreate, allowing
+  an unauthorized write into any task by known UID"
+description: "Creating a task relation over CalDAV does not run the `TaskRelation.CanCreate`
+  permission check that the REST API enforces. An attacker can attach a relation to
+  any task whose UID they know, including tasks in projects they have no access to.
+  The identical operation over REST is correctly refused with 403."
+date: "2026-10-09"
+pubdate: "2026-10-09"
+affected_range: "<2.6.0"
+fixed_versions:
+- "2.6.0"
+affected_versions: "All versions before 2.6.0"
+not_impacted: "All versions starting from 2.6.0"
+solution: "Upgrade to version 2.6.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-g38j-7v97-x298"
+- "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-g38j-7v97-x298"
+- "https://github.com/go-vikunja/vikunja/pull/3688"
+- "https://github.com/go-vikunja/vikunja/commit/077dc4de79ce6f1ab59215a2c7bf9b30423685f2"
+- "https://github.com/go-vikunja/vikunja/releases/tag/v2.6.0"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "0de9548e-a334-4d35-85d3-a84e644d3421"
+cwe_ids:
+- "CWE-862"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-rp9v-7xv3-r6g3"
+identifiers:
+- "CVE-2026-107834"
+- "GHSA-rp9v-7xv3-r6g3"
+package_slug: "go/github.com/corazawaf/coraza/v3"
+title: "Coraza: Resource exhaustion via deferred file handle accumulation in multipart
+  body processor"
+description: "`defer temp.Close()` sits inside a `for` loop in the multipart processor.
+  Go defers run at function return, not loop end, so every file part in the request
+  holds an open fd until `ProcessRequest()` exits. Send enough parts and you hit `EMFILE`.
+  With CRS loaded, that flips `MULTIPART_STRICT_ERROR` to 1 and rule `200001` starts
+  returning 400s, including on legitimate requests hitting the same condition."
+date: "2026-10-09"
+pubdate: "2026-10-08"
+affected_range: ">=3.0.0 <3.8.0"
+fixed_versions:
+- "3.8.0"
+affected_versions: "All versions starting from 3.0.0 before 3.8.0"
+not_impacted: "All versions before 3.0.0, all versions starting from 3.8.0"
+solution: "Upgrade to version 3.8.0 or above."
+urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-107834"
+- "https://github.com/advisories/GHSA-rp9v-7xv3-r6g3"
+- "https://github.com/corazawaf/coraza/security/advisories/GHSA-rp9v-7xv3-r6g3"
+- "https://github.com/corazawaf/coraza/commit/1bc39036e99c88e7de60cf8e6bb55ee4c311223c"
+- "https://github.com/corazawaf/coraza/releases/tag/v3.8.0"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+uuid: "d2b7a021-9cd1-47bd-92e1-01eb0d7536ff"
+cwe_ids:
+- "CWE-400"
+- "CWE-772"
+- "CWE-937"
+- "CWE-1035"

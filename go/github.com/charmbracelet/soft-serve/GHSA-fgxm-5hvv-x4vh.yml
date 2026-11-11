@@ -1,0 +1,44 @@
+---
+identifier: "GHSA-fgxm-5hvv-x4vh"
+identifiers:
+- "GHSA-fgxm-5hvv-x4vh"
+package_slug: "go/github.com/charmbracelet/soft-serve"
+title: "charmbracelet/soft-serve HTTP responses disclose the existence and names of
+  private repositories"
+description: "Soft Serve answers Go's `?go-get=1` requests by walking up the requested
+  path until it finds a repository, then rendering that repository's name and clone
+  URL into a `go-import` meta tag. The walk checked that each candidate repository
+  existed, but never that the caller could read it.\n\nA request for a path inside
+  a private repository, such as `GET /secret/anything?go-get=1`, therefore returned
+  `200` naming `secret` and its clone URL, even though `GET /secret?go-get=1` correctly
+  returned `404`. The same `?go-get=1` exception in the HTTP access middleware also
+  let requests reach the LFS and dumb-HTTP routes with the repository existence check
+  skipped, where two LFS handlers dereferenced the missing repository and panicked.\n\nThe
+  same disclosure appears without `?go-get=1`. The Git and LFS routes answered a repository
+  the caller could not read differently depending on whether it existed: an anonymous
+  clone of a private repository got `401` while a missing one got `404`, and a signed-in
+  user without access got the reverse pattern. Either way, one request confirms whether
+  a guessed name is a private repository. This was found while fixing the go-get issue
+  and is included here because it has the same impact and is fixed in the same release."
+date: "2026-10-30"
+pubdate: "2026-10-30"
+affected_range: ">=0.5.0 <0.12.3"
+fixed_versions:
+- "0.12.3"
+affected_versions: "All versions starting from 0.5.0 before 0.12.3"
+not_impacted: "All versions before 0.5.0, all versions starting from 0.12.3"
+solution: "Upgrade to version 0.12.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-fgxm-5hvv-x4vh"
+- "https://github.com/charmbracelet/soft-serve/security/advisories/GHSA-fgxm-5hvv-x4vh"
+- "https://github.com/charmbracelet/soft-serve/commit/74e41543304d1e12fd54fc59e410bd428373dd34"
+- "https://github.com/charmbracelet/soft-serve/commit/dc351aa0d824c8bef528c6924a7acdfb9f20c852"
+- "https://github.com/charmbracelet/soft-serve/releases/tag/v0.12.3"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+uuid: "0fd25982-8655-56aa-bdd3-8920e860f915"
+cwe_ids:
+- "CWE-203"
+- "CWE-425"
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-6gcq-wc29-5xf2"
+identifiers:
+- "CVE-2026-107826"
+- "GHSA-6gcq-wc29-5xf2"
+package_slug: "go/github.com/corazawaf/coraza/v3"
+title: "Coraza JSON body processor: argument-limit truncation reopens an unbounded-depth
+  gjson.Valid stack overflow (process crash)"
+description: "The JSON body processor (`internal/bodyprocessors/json.go`) can be made
+  to\ncrash the whole process with an unrecoverable `fatal error: stack overflow`,\nusing
+  a request body that is well under the recommended `SecRequestBodyLimit`\nand the
+  default `SecArgumentsLimit`."
+date: "2026-10-09"
+pubdate: "2026-10-08"
+affected_range: ">=3.0.0 <3.8.1"
+fixed_versions:
+- "3.8.1"
+affected_versions: "All versions starting from 3.0.0 before 3.8.1"
+not_impacted: "All versions before 3.0.0, all versions starting from 3.8.1"
+solution: "Upgrade to version 3.8.1 or above."
+urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-107826"
+- "https://github.com/advisories/GHSA-6gcq-wc29-5xf2"
+- "https://github.com/corazawaf/coraza/security/advisories/GHSA-6gcq-wc29-5xf2"
+- "https://github.com/corazawaf/coraza/commit/814e1898e083d2ff2ceb644382d0da17e930f93f"
+- "https://github.com/corazawaf/coraza/releases/tag/v3.8.1"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "8b09751e-3b77-4161-8c17-063876e92c58"
+cwe_ids:
+- "CWE-674"
+- "CWE-937"
+- "CWE-1035"

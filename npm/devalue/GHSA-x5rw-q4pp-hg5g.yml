@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-x5rw-q4pp-hg5g"
+identifiers:
+- "GHSA-x5rw-q4pp-hg5g"
+package_slug: "npm/devalue"
+title: "devalue: stringifyAsync can cause an unhandled rejection despite a caught
+  returned promise"
+description: "When serializing multiple promises, a later promise can reject before
+  an earlier one settles. An internal rejected promise remains unhandled even if the
+  caller catches the returned `stringifyAsync` promise. Under Node's default unhandled-rejection
+  behavior this can terminate the process. Applications whose asynchronous failures/timing
+  can be influenced by requests are potentially exposed.\n\nThis is essentially impossible
+  to exploit, and is much more likely to surface as a developer-introduced bug."
+date: "2026-10-01"
+pubdate: "2026-10-01"
+affected_range: ">=5.8.0 <5.9.3"
+fixed_versions:
+- "5.9.3"
+affected_versions: "All versions starting from 5.8.0 before 5.9.3"
+not_impacted: "All versions before 5.8.0, all versions starting from 5.9.3"
+solution: "Upgrade to version 5.9.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-x5rw-q4pp-hg5g"
+- "https://github.com/sveltejs/devalue/security/advisories/GHSA-x5rw-q4pp-hg5g"
+- "https://github.com/sveltejs/devalue/commit/dae8153e9d7541b975cc4018138d6cebec6c1199"
+- "https://github.com/sveltejs/devalue/releases/tag/v5.9.3"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+uuid: "6dbdcfb1-32ba-4c43-b593-7cd35d4e4f93"
+cwe_ids:
+- "CWE-248"
+- "CWE-755"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,42 @@
+---
+identifier: "GHSA-p3jp-9v83-76w9"
+identifiers:
+- "GHSA-p3jp-9v83-76w9"
+package_slug: "nuget/Microsoft.NETCore.App.Runtime.win-x86"
+title: "Microsoft Security Advisory CVE-2026-111497 - .NET Brotli Decoder Out-of-bounds
+  Write Vulnerability"
+description: "A buffer overflow vulnerability exists in the Brotli decompression library
+  used by .NET. This vulnerability may allow an unauthenticated attacker to read or
+  corrupt process memory. This could lead to information disclosure, denial of service,
+  or elevation of privilege.\n\nASP.NET Core and HttpClient do not automatically decompress
+  Brotli data in their default configurations. Applications are exposed when they
+  enable Brotli decompression or explicitly use Brotli decompression APIs to process
+  attacker-controlled data, as described below. .NET Framework is not affected."
+date: "2026-11-03"
+pubdate: "2026-11-03"
+affected_range: "[8.0.0,8.0.33),[9.0.0,9.0.22),[10.0.0,10.0.14),[11.0.0-preview.1,11.0.0-rc.3.26522.148)"
+fixed_versions:
+- "8.0.33"
+- "9.0.22"
+- "10.0.14"
+- "11.0.0-rc.3.26522.148"
+affected_versions: "All versions starting from 8.0.0 before 8.0.33, all versions starting
+  from 9.0.0 before 9.0.22, all versions starting from 10.0.0 before 10.0.14, all
+  versions starting from 11.0.0-preview.1 before 11.0.0-rc.3.26522.148"
+not_impacted: "All versions before 8.0.0, all versions starting from 8.0.33 before
+  9.0.0, all versions starting from 9.0.22 before 10.0.0, all versions starting from
+  10.0.14 before 11.0.0-preview.1, all versions starting from 11.0.0-rc.3.26522.148"
+solution: "Upgrade to versions 8.0.33, 9.0.22, 10.0.14, 11.0.0-rc.3.26522.148 or above."
+urls:
+- "https://github.com/advisories/GHSA-p3jp-9v83-76w9"
+- "https://github.com/dotnet/runtime/security/advisories/GHSA-p3jp-9v83-76w9"
+- "https://github.com/dotnet/announcements/issues/494"
+- "https://github.com/dotnet/runtime/issues/136446"
+- "https://github.com/dotnet/runtime/pull/136471"
+- "https://github.com/dotnet/runtime/commit/f3d8b2f230bc7c9899df6eef2d41e2748107cffa"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+uuid: "4470597c-9111-5043-afc0-bd3ddceaf7f3"
+cwe_ids:
+- "CWE-787"
+- "CWE-937"
+- "CWE-1035"

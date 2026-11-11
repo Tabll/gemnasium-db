@@ -1,0 +1,36 @@
+---
+identifier: "GHSA-xp3q-r38w-vgqm"
+identifiers:
+- "GHSA-xp3q-r38w-vgqm"
+package_slug: "go/github.com/siyuan-note/siyuan/kernel"
+title: "SiYuan: The publish filter for local storage returns the administrator's entire
+  storage map with only three keys sanitized"
+description: "Three routes, `/api/storage/getLocalStorage`, `getLocalStorageVal` and
+  `getLocalStorageVals`, are registered with `CheckAuth` only and are reachable by
+  the publish `RoleReader` token and anonymously when `Publish.Auth.Enable` is `false`.
+  All three call `model.GetLocalStorage()` and then, for read-only roles, `FilterLocalStorageByPublishAccess`.\n\nThat
+  filter begins by assigning the administrator's entire storage map to its return
+  value and then removes three specific fields. Everything else in the map is returned
+  unmodified. A single unauthenticated POST with an empty body returns the administrator's
+  recently closed tabs with their document titles and identifiers, their current search
+  keywords and the paths those searches cover, the expanded private paths in their
+  file tree, and per-document identifiers from several other keys."
+date: "2026-10-23"
+pubdate: "2026-10-23"
+affected_range: "<0.0.0-20260729005258-4daee87d4152"
+fixed_versions:
+- "0.0.0-20260729005258-4daee87d4152"
+affected_versions: "All versions before 0.0.0-20260729005258-4daee87d4152"
+not_impacted: "All versions starting from 0.0.0-20260729005258-4daee87d4152"
+solution: "Upgrade to version 0.0.0-20260729005258-4daee87d4152 or above."
+urls:
+- "https://github.com/advisories/GHSA-xp3q-r38w-vgqm"
+- "https://github.com/siyuan-note/siyuan/security/advisories/GHSA-xp3q-r38w-vgqm"
+- "https://github.com/siyuan-note/siyuan/commit/4daee87d41521d119979f2edda67e87f2be7b6ef"
+- "https://github.com/siyuan-note/siyuan/releases/tag/v3.7.4-alpha.3"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:N/A:N"
+uuid: "302e2e7c-a2f5-5d17-a31d-fe15dd804f84"
+cwe_ids:
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

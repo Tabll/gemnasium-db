@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-473q-m89c-ghf8"
+identifiers:
+- "GHSA-473q-m89c-ghf8"
+package_slug: "nuget/MySqlConnector"
+title: "MySqlConnector: Account password disclosed to a man-in-the-middle in zero-configuration
+  TLS mode (clear-text password sent before certificate is verified)"
+description: "With `SslMode` set to `VerifyCA` or `VerifyFull` with no configured
+  CA certificate, an unvalidated TLS connection is treated as secure and a clear-text
+  password can be sent before the certificate is checked. This can occur when relying
+  on the password to validate a self-signed cert, e.g., MariaDB's [zero-configuration
+  TLS](https://mariadb.com/docs/server/security/encryption/data-in-transit-encryption/zero-configuration-ssl)."
+date: "2026-10-28"
+pubdate: "2026-10-28"
+affected_range: "[,2.6.1)"
+fixed_versions:
+- "2.6.1"
+affected_versions: "All versions before 2.6.1"
+not_impacted: "All versions starting from 2.6.1"
+solution: "Upgrade to version 2.6.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-473q-m89c-ghf8"
+- "https://github.com/mysql-net/MySqlConnector/security/advisories/GHSA-473q-m89c-ghf8"
+- "https://github.com/mysql-net/MySqlConnector/commit/86503613fe3b72ae26c03dd1ea92f0e1e6e208f9"
+- "https://github.com/mysql-net/MySqlConnector/releases/tag/2.6.1"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N"
+uuid: "a3aae37a-2d52-530a-b459-d676d8805b10"
+cwe_ids:
+- "CWE-200"
+- "CWE-937"
+- "CWE-1035"

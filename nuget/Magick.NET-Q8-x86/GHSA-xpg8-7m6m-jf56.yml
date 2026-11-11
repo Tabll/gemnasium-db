@@ -1,13 +1,14 @@
 ---
 identifier: "GHSA-xpg8-7m6m-jf56"
 identifiers:
+- "CVE-2026-56379"
 - "GHSA-xpg8-7m6m-jf56"
 package_slug: "nuget/Magick.NET-Q8-x86"
 title: "ImageMagick: SVG-to-MVG Command Injection via coders/svg.c"
 description: "An attacker can inject arbitrary MVG (Magick Vector Graphics) drawing
   commands in an SVG file that is read by the internal SVG decoder of ImageMagick.
   The injected MVG commands execute during rendering."
-date: "2026-02-25"
+date: "2026-09-24"
 pubdate: "2026-02-25"
 affected_range: "[,14.10.3)"
 fixed_versions:
@@ -16,15 +17,20 @@ affected_versions: "All versions before 14.10.3"
 not_impacted: "All versions starting from 14.10.3"
 solution: "Upgrade to version 14.10.3 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-56379"
 - "https://github.com/advisories/GHSA-xpg8-7m6m-jf56"
 - "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-xpg8-7m6m-jf56"
 - "https://github.com/ImageMagick/ImageMagick/commit/9db96365ecab5de69cdec81b9359672b3a827aaa"
 - "https://github.com/ImageMagick/ImageMagick/commit/f63c78b3828933f1cc7cf499390248981af765aa"
-- "https://github.com/ImageMagick/ImageMagick"
+- "https://access.redhat.com/errata/RHSA-2026:32961"
+- "https://access.redhat.com/security/cve/CVE-2026-56379"
+- "https://bugzilla.redhat.com/show_bug.cgi?id=2491700"
+- "https://security.access.redhat.com/data/csaf/v2/vex/2026/cve-2026-56379.json"
+- "https://www.vulncheck.com/advisories/imagemagick-command-injection-via-svg-decoder"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N"
 uuid: "bf2c541e-6e33-4089-b4a6-9e4ccf3cf43b"
 cwe_ids:
-- "CWE-116"
 - "CWE-77"
+- "CWE-116"
 - "CWE-937"
 - "CWE-1035"

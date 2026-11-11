@@ -1,12 +1,13 @@
 ---
 identifier: "GHSA-6vqj-c2q5-j97w"
 identifiers:
+- "CVE-2025-71341"
 - "GHSA-6vqj-c2q5-j97w"
 package_slug: "pypi/picklescan"
 title: "Picklescan has a missing detection when calling built-in python profile.Profile.runctx"
 description: "Using profile.Profile.runctx, which is a built-in python library function
   to execute remote pickle file."
-date: "2025-08-26"
+date: "2026-09-23"
 pubdate: "2025-08-26"
 affected_range: "<0.0.29"
 fixed_versions:
@@ -15,11 +16,15 @@ affected_versions: "All versions before 0.0.29"
 not_impacted: "All versions starting from 0.0.29"
 solution: "Upgrade to version 0.0.29 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2025-71341"
 - "https://github.com/advisories/GHSA-6vqj-c2q5-j97w"
 - "https://github.com/mmaitre314/picklescan/security/advisories/GHSA-6vqj-c2q5-j97w"
 - "https://github.com/mmaitre314/picklescan/commit/aecd11be98702caa9ba9b12189d91ad596a36114"
-- "https://github.com/mmaitre314/picklescan"
+- "https://www.vulncheck.com/advisories/picklescan-remote-code-execution-via-undetected-profile-profile-runctx"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N"
 uuid: "9f7801f3-fb74-4361-9428-1c5ea6b46e82"
 cwe_ids:
+- "CWE-502"
 - "CWE-937"
 - "CWE-1035"

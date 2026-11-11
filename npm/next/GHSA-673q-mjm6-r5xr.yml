@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-673q-mjm6-r5xr"
+identifiers:
+- "GHSA-673q-mjm6-r5xr"
+package_slug: "npm/next"
+title: "Next.js: Unauthenticated Remote Code Execution in `use cache` functions returning
+  typed arrays"
+description: "A vulnerability in applications using App router with Cache Component
+  can lead to remote code execution. The application needs to have a `use cache` function
+  that returns multiple typed arrays."
+date: "2026-10-22"
+pubdate: "2026-10-22"
+affected_range: ">=16.0.0 <16.4.1"
+fixed_versions:
+- "16.4.1"
+affected_versions: "All versions starting from 16.0.0 before 16.4.1"
+not_impacted: "All versions before 16.0.0, all versions starting from 16.4.1"
+solution: "Upgrade to version 16.4.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-673q-mjm6-r5xr"
+- "https://github.com/vercel/next.js/security/advisories/GHSA-673q-mjm6-r5xr"
+- "https://github.com/vercel/next.js/commit/a4cea6aec5da89d116b8960e113189cf51745d2f"
+- "https://github.com/vercel/next.js/releases/tag/v16.4.1"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:N"
+uuid: "b0ae0859-2a19-5ce8-941b-ba84c615da57"
+cwe_ids:
+- "CWE-502"
+- "CWE-937"
+- "CWE-1035"

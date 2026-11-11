@@ -1,0 +1,43 @@
+---
+identifier: "GHSA-xjw9-38cr-6372"
+identifiers:
+- "CVE-2026-125112"
+- "GHSA-xjw9-38cr-6372"
+package_slug: "pypi/djust"
+title: "djust: A template binding inherits a context safety grant it never earned
+  (XSS)"
+description: "A context safety grant was inherited by a template **binding** that
+  never earned it, so rebinding a name the view had marked safe left the mark attached
+  to the new, attacker-controlled value.\n\ndjust's context safety channel is keyed
+  by **name**, not by value. Every bind copied the value and left the grant in place:\n\n```\nview
+  marks   p = mark_safe('<b>trusted</b>')\ntemplate     {% with p=user_input %}{{
+  p }}{% endwith %}\n\ndjust   '<img src=x onerror=alert(1)>'          <- executes\ndjango
+  \ '&lt;img src=x onerror=alert(1)&gt;'\n```"
+date: "2026-11-09"
+pubdate: "2026-09-17"
+affected_range: "<1.0.10||>=1.1.0,<1.1.2"
+fixed_versions:
+- "1.0.10"
+- "1.1.2"
+affected_versions: "All versions before 1.0.10, all versions starting from 1.1.0 before
+  1.1.2"
+not_impacted: "All versions starting from 1.0.10 before 1.1.0, all versions starting
+  from 1.1.2"
+solution: "Upgrade to versions 1.0.10, 1.1.2 or above."
+urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-125112"
+- "https://github.com/advisories/GHSA-xjw9-38cr-6372"
+- "https://github.com/djust-org/djust/security/advisories/GHSA-xjw9-38cr-6372"
+- "https://github.com/djust-org/djust/releases/tag/v1.1.2"
+- "https://github.com/djust-org/djust/pull/2444"
+- "https://github.com/djust-org/djust/commit/06d213dbdd82f5b1c2affe2f869ae88a71809e4a"
+- "https://github.com/djust-org/djust/commit/5288e5dbc8d83d8aee8a22a0a7a3a478461c8965"
+- "https://github.com/djust-org/djust/releases/tag/v1.0.10"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N"
+uuid: "e9643154-3cdb-436a-a251-7b863b6f1fd8"
+cwe_ids:
+- "CWE-79"
+- "CWE-116"
+- "CWE-937"
+- "CWE-1035"

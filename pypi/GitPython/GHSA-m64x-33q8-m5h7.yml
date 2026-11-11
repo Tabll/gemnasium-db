@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-m64x-33q8-m5h7"
+identifiers:
+- "GHSA-m64x-33q8-m5h7"
+package_slug: "pypi/GitPython"
+title: "GitPython parse_actor_and_date() is vulnerable to quadratic backtracking on
+  malformed identity lines"
+description: "This is a residual of GHSA-g5vv-9gxw-82hx / CVE-2026-87819. The 3.1.60
+  fix made `Actor._from_string` regex-free, but `parse_actor_and_date` still runs
+  `_re_actor_epoch` on the same author/committer/tagger line one step earlier. That
+  pattern backtracks quadratically when the trailing epoch or timezone is missing
+  or malformed, so the same class of slow parse is still reachable in 3.1.62."
+date: "2026-10-27"
+pubdate: "2026-10-27"
+affected_range: "<3.2.0"
+fixed_versions:
+- "3.2.0"
+affected_versions: "All versions before 3.2.0"
+not_impacted: "All versions starting from 3.2.0"
+solution: "Upgrade to version 3.2.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-m64x-33q8-m5h7"
+- "https://github.com/gitpython-developers/GitPython/security/advisories/GHSA-m64x-33q8-m5h7"
+- "https://github.com/gitpython-developers/GitPython/pull/2253"
+- "https://github.com/gitpython-developers/GitPython/commit/8290c98d35465a38090cdcc1b17be69967092a15"
+- "https://github.com/gitpython-developers/GitPython/releases/tag/3.2.0"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+uuid: "f4467a04-7e92-5dba-9c7b-f788b282f92f"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"
+- "CWE-1333"

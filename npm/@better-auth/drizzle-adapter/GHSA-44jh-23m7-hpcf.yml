@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-44jh-23m7-hpcf"
+identifiers:
+- "GHSA-44jh-23m7-hpcf"
+package_slug: "npm/@better-auth/drizzle-adapter"
+title: "@better-auth/drizzle-adapter: Concurrent requests can exceed rate limits on
+  PostgreSQL"
+description: "Database-backed rate limiting on PostgreSQL can let a burst of concurrent
+  requests go over the configured maximum. When many requests arrive at the same time,
+  several of them can pass the limit check together. This weakens the rate limit on
+  password sign-in, two-factor verification, one-time codes, password resets, and
+  other rate-limited endpoints."
+date: "2026-10-27"
+pubdate: "2026-10-27"
+affected_range: ">=1.6.17 <1.7.7"
+fixed_versions:
+- "1.7.7"
+affected_versions: "All versions starting from 1.6.17 before 1.7.7"
+not_impacted: "All versions before 1.6.17, all versions starting from 1.7.7"
+solution: "Upgrade to version 1.7.7 or above."
+urls:
+- "https://github.com/advisories/GHSA-44jh-23m7-hpcf"
+- "https://github.com/better-auth/better-auth/security/advisories/GHSA-44jh-23m7-hpcf"
+- "https://github.com/better-auth/better-auth/pull/11331"
+- "https://github.com/better-auth/better-auth/commit/35d7cd389220f99cfc98ac699e6a42b48313a740"
+- "https://github.com/better-auth/better-auth/releases/tag/v1.7.7"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N"
+uuid: "61b05c8e-65bd-5985-ba54-13d3f22aed20"
+cwe_ids:
+- "CWE-307"
+- "CWE-362"
+- "CWE-937"
+- "CWE-1035"

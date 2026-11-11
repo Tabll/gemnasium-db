@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-g5ff-637f-6q2m"
+identifiers:
+- "GHSA-g5ff-637f-6q2m"
+package_slug: "pypi/litellm"
+title: "LiteLLM: internal_user_viewer arbitrary local file read via `vertex_ai_credentials`"
+description: "An authenticated LiteLLM proxy user could read arbitrary local files
+  from the proxy runtime by sending a crafted `vertex_ai_credentials` value to `/utils/transform_request`.
+  The request-body safety blocklist rejected `vertex_credentials` but missed its alias
+  `vertex_ai_credentials`, which let the value reach the Vertex AI credential loader
+  and trigger a file read that is sent to an attacker-controlled URL."
+date: "2026-10-27"
+pubdate: "2026-10-27"
+affected_range: "<1.95.0"
+fixed_versions:
+- "1.95.0"
+affected_versions: "All versions before 1.95.0"
+not_impacted: "All versions starting from 1.95.0"
+solution: "Upgrade to version 1.95.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-g5ff-637f-6q2m"
+- "https://github.com/BerriAI/litellm/security/advisories/GHSA-g5ff-637f-6q2m"
+- "https://github.com/BerriAI/litellm/pull/34189"
+- "https://github.com/BerriAI/litellm/commit/065faf6e695be64a1a367601271839914e4a6621"
+- "https://github.com/BerriAI/litellm/releases/tag/v1.95.0"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N"
+uuid: "29c76b54-c08e-586f-9c0c-e3646e546c12"
+cwe_ids:
+- "CWE-20"
+- "CWE-22"
+- "CWE-937"
+- "CWE-1035"

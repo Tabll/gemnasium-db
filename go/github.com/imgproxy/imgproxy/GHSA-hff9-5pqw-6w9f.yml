@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-hff9-5pqw-6w9f"
+identifiers:
+- "GHSA-hff9-5pqw-6w9f"
+package_slug: "go/github.com/imgproxy/imgproxy"
+title: "imgproxy has integer overflow in imgproxy ICO loader that causes denial of
+  service and may permit remote code execution"
+description: "The ICO loader allocates `data_size + BMP_FILE_HEADER_LEN` bytes after
+  reading a 32-bit attacker-controlled `data_size`. For `data_size > UINT32_MAX -
+  BMP_FILE_HEADER_LEN`, the addition wraps before allocation. imgproxy then writes
+  the ICO prefix and reads up to the original declared size starting 14 bytes into
+  the undersized allocation. A network client can turn this heap overflow into remote
+  denial of service or remote code execution."
+date: "2026-10-30"
+pubdate: "2026-10-30"
+affected_range: ">=4.0.0 <4.0.16"
+fixed_versions:
+- "4.0.16"
+affected_versions: "All versions starting from 4.0.0 before 4.0.16"
+not_impacted: "All versions before 4.0.0, all versions starting from 4.0.16"
+solution: "Upgrade to version 4.0.16 or above."
+urls:
+- "https://github.com/advisories/GHSA-hff9-5pqw-6w9f"
+- "https://github.com/imgproxy/imgproxy/security/advisories/GHSA-hff9-5pqw-6w9f"
+- "https://github.com/imgproxy/imgproxy/commit/a821b6a4cb07a1bf2bb9077431d1c1e734d79917"
+- "https://github.com/imgproxy/imgproxy/releases/tag/v4.0.16"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+uuid: "edb7d7d0-4597-512a-8aac-b3b61dd53956"
+cwe_ids:
+- "CWE-122"
+- "CWE-190"
+- "CWE-937"
+- "CWE-1035"

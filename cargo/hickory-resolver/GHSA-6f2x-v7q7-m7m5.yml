@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-6f2x-v7q7-m7m5"
+identifiers:
+- "GHSA-6f2x-v7q7-m7m5"
+package_slug: "cargo/hickory-resolver"
+title: "hickory-resolver follows irrelevant CNAME records"
+description: "When the Hickory DNS resolver follows CNAME records, it sends queries
+  that are not necessary to answer the original recursive query. If there are any
+  CNAME records in the authority section or additional section of the response, queries
+  will be sent for those names. If there are any CNAME records that are not part of
+  a CNAME chain starting from the original recursive query name, queries will be sent
+  for those names. This increases query amplification beyond what is necessary to
+  answer the recursive query."
+date: "2026-10-05"
+pubdate: "2026-10-05"
+affected_range: ">=0.25.0 <0.26.2"
+fixed_versions:
+- "0.26.2"
+affected_versions: "All versions starting from 0.25.0 before 0.26.2"
+not_impacted: "All versions before 0.25.0, all versions starting from 0.26.2"
+solution: "Upgrade to version 0.26.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-6f2x-v7q7-m7m5"
+- "https://github.com/hickory-dns/hickory-dns/security/advisories/GHSA-6f2x-v7q7-m7m5"
+- "https://github.com/hickory-dns/hickory-dns/pull/3871"
+- "https://github.com/hickory-dns/hickory-dns/commit/4689fc8d3ddd3e3f99ec1b7be4e2e9e78afd2e6b"
+- "https://github.com/hickory-dns/hickory-dns/commit/ccd6952378f250c714fc2af0cb1053e1c179f832"
+- "https://github.com/hickory-dns/hickory-dns/releases/tag/v0.26.2"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N"
+uuid: "632e3974-2381-4b75-a5fb-6177ae6e89f9"
+cwe_ids:
+- "CWE-400"
+- "CWE-937"
+- "CWE-1035"

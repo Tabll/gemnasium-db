@@ -1,0 +1,49 @@
+---
+identifier: "GHSA-vp88-798v-h67f"
+identifiers:
+- "GHSA-vp88-798v-h67f"
+package_slug: "cargo/rustls"
+title: "rustls: ECH rejection can expose buffered application data to authenticated
+  outer server before `ech_required` alert"
+description: "In rustls 0.23.44 and 0.23.45, application data that a client buffers
+  before the handshake completes is sent to the server even when the server rejects
+  Encrypted Client Hello (ECH).\n\nWhen the server rejects ECH, the client completes
+  the handshake with the outer ClientHello and authenticates the server against the
+  ECH config's `public_name`. At the end of the handshake, `start_traffic()` encrypts
+  and queues any plaintext buffered by `ClientConnection::writer()`. It does this
+  *before* checking for `EchStatus::Rejected` and queueing the `ech_required` alert.\n\nThe
+  application then receives `Error::PeerIncompatible(ServerRejectedEncryptedClientHello)`,
+  as expected. However, the client is still expected to call `write_tls()` to send
+  the fatal alert, and that call also sends the encrypted application data. The server
+  decrypts the data and only then receives the alert.\n\nThe ordering bug is older
+  than 0.23.44. Before 0.23.44, the client checked the server certificate against
+  the inner server name rather than `public_name`, so a correctly configured server
+  failed certificate verification first and no data was sent. 0.23.44 fixed that check,
+  which makes the ordinary rejection path reachable."
+date: "2026-10-27"
+pubdate: "2026-10-27"
+affected_range: ">=0.23.44 <0.23.46||>=0.24.0-dev.1 <0.24.0-dev.2"
+fixed_versions:
+- "0.23.46"
+- "0.24.0-dev.2"
+affected_versions: "All versions starting from 0.23.44 before 0.23.46, all versions
+  starting from 0.24.0-dev.1 before 0.24.0-dev.2"
+not_impacted: "All versions before 0.23.44, all versions starting from 0.23.46 before
+  0.24.0-dev.1, all versions starting from 0.24.0-dev.2"
+solution: "Upgrade to versions 0.23.46, 0.24.0-dev.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-vp88-798v-h67f"
+- "https://github.com/rustls/rustls/security/advisories/GHSA-vp88-798v-h67f"
+- "https://github.com/rustls/rustls/pull/3300"
+- "https://github.com/rustls/rustls/pull/3354"
+- "https://github.com/rustls/rustls/commit/2bd5c0cefabb2c5fd4100383a736d59f9671b9b4"
+- "https://github.com/rustls/rustls/commit/4de14a508fbfa2273203ec17d9dfdd0fbd29e8d1"
+- "https://github.com/rustls/rustls/commit/7dcbe4c1ae12185237d22e9197583329630a2014"
+- "https://github.com/rustls/rustls/releases/tag/v/0.23.46"
+- "https://rustsec.org/advisories/RUSTSEC-2026-0347.html"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:L/I:N/A:N"
+uuid: "478546b4-df64-5d28-b1b4-72819b46ca51"
+cwe_ids:
+- "CWE-200"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,75 @@
+---
+identifier: "GHSA-6856-87hx-p5x7"
+identifiers:
+- "GHSA-6856-87hx-p5x7"
+package_slug: "nuget/Microsoft.TestPlatform.CLI"
+title: "Microsoft Security Advisory CVE-2026-105544 - .NET Elevation of Privilege
+  Vulnerability"
+description: "Microsoft is releasing this security advisory to provide information
+  about a vulnerability in .NET. This advisory provides guidance on updating affected
+  applications and components.\n\nThe VSTest artifact postprocessor can consume a
+  forged `executionComplete.json` from another local user and execute attacker-controlled
+  output handling."
+date: "2026-11-11"
+pubdate: "2026-11-11"
+affected_range: "[17.2.0-preview-20220301-01,17.3.4),[17.8.0,17.8.1),[17.11.0,17.11.2),[17.12.0,17.12.1),[17.14.0,17.14.2),[18.0.0,18.0.2),[18.7.0,18.7.1),[18.10.0,18.10.2),[18.11.0,18.11.1),[17.4.0,17.4.0],[17.4.1,17.4.1],[17.5.0,17.5.0],[17.6.0,17.6.0],[17.6.1,17.6.1],[17.6.2,17.6.2],[17.6.3,17.6.3],[17.7.0,17.7.0],[17.7.1,17.7.1],[17.7.2,17.7.2],[17.9.0,17.9.0],[17.10.0,17.10.0],[17.13.0,17.13.0],[18.3.0,18.3.0],[18.4.0,18.4.0],[18.5.0,18.5.0],[18.5.1,18.5.1],[18.6.0,18.6.0],[18.8.0,18.8.0],[18.8.1,18.8.1],[18.9.0,18.9.0],[17.4.0-preview-20220707-01,17.4.0-preview-20220707-01],[17.4.0-preview-20220726-02,17.4.0-preview-20220726-02],[17.4.0-preview-20221003-03,17.4.0-preview-20221003-03],[17.4.0-release-20220926-01,17.4.0-release-20220926-01],[17.5.0-preview-20221003-04,17.5.0-preview-20221003-04],[17.5.0-preview-20221221-03,17.5.0-preview-20221221-03],[17.6.0-preview-20230223-05,17.6.0-preview-20230223-05],[17.7.0-preview-23364-03,17.7.0-preview-23364-03],[17.7.0-preview.23280.1,17.7.0-preview.23280.1],[17.8.0-preview-23371-04,17.8.0-preview-23371-04],[17.8.0-preview-23424-02,17.8.0-preview-23424-02],[17.8.0-release-23468-02,17.8.0-release-23468-02],[17.9.0-preview-23503-02,17.9.0-preview-23503-02],[17.9.0-preview-23531-01,17.9.0-preview-23531-01],[17.9.0-preview-23577-04,17.9.0-preview-23577-04],[17.9.0-release-23619-01,17.9.0-release-23619-01],[17.10.0-preview-24080-01,17.10.0-preview-24080-01],[17.10.0-release-24177-07,17.10.0-release-24177-07],[17.11.0-release-24352-06,17.11.0-release-24352-06],[17.11.0-release-24373-02,17.11.0-release-24373-02],[17.14.0-preview-25107-01,17.14.0-preview-25107-01]"
+fixed_versions:
+- "17.3.4"
+- "17.8.1"
+- "17.11.2"
+- "17.12.1"
+- "17.14.2"
+- "18.0.2"
+- "18.7.1"
+- "18.10.2"
+- "18.11.1"
+affected_versions: "Version 17.4.0, version 17.4.1, version 17.5.0, version 17.6.0,
+  version 17.6.1, version 17.6.2, version 17.6.3, version 17.7.0, version 17.7.1,
+  version 17.7.2, version 17.9.0, version 17.10.0, version 17.13.0, version 18.3.0,
+  version 18.4.0, version 18.5.0, version 18.5.1, version 18.6.0, version 18.8.0,
+  version 18.8.1, version 18.9.0, version 17.4.0-preview-20220707-01, version 17.4.0-preview-20220726-02,
+  version 17.4.0-preview-20221003-03, version 17.4.0-release-20220926-01, version
+  17.5.0-preview-20221003-04, version 17.5.0-preview-20221221-03, version 17.6.0-preview-20230223-05,
+  version 17.7.0-preview-23364-03, version 17.7.0-preview.23280.1, version 17.8.0-preview-23371-04,
+  version 17.8.0-preview-23424-02, version 17.8.0-release-23468-02, version 17.9.0-preview-23503-02,
+  version 17.9.0-preview-23531-01, version 17.9.0-preview-23577-04, version 17.9.0-release-23619-01,
+  version 17.10.0-preview-24080-01, version 17.10.0-release-24177-07, version 17.11.0-release-24352-06,
+  version 17.11.0-release-24373-02, version 17.14.0-preview-25107-01, all versions
+  starting from 17.2.0-preview-20220301-01 before 17.3.4, all versions starting from
+  17.8.0 before 17.8.1, all versions starting from 17.11.0 before 17.11.2, all versions
+  starting from 17.12.0 before 17.12.1, all versions starting from 17.14.0 before
+  17.14.2, all versions starting from 18.0.0 before 18.0.2, all versions starting
+  from 18.7.0 before 18.7.1, all versions starting from 18.10.0 before 18.10.2, all
+  versions starting from 18.11.0 before 18.11.1"
+not_impacted: "All versions before 17.2.0-preview-20220301-01, all versions starting
+  from 17.3.4 before 17.8.0, all versions starting from 17.8.1 before 17.11.0, all
+  versions starting from 17.11.2 before 17.12.0, all versions starting from 17.12.1
+  before 17.14.0, all versions starting from 17.14.2 before 18.0.0, all versions starting
+  from 18.0.2 before 18.7.0, all versions starting from 18.7.1 before 18.10.0, all
+  versions starting from 18.10.2 before 18.11.0, all versions starting from 18.11.1"
+solution: "Upgrade to versions 17.3.4, 17.8.1, 17.11.2, 17.12.1, 17.14.2, 18.0.2,
+  18.7.1, 18.10.2, 18.11.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-6856-87hx-p5x7"
+- "https://github.com/microsoft/vstest/security/advisories/GHSA-6856-87hx-p5x7"
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-105544"
+- "https://github.com/dotnet/announcements/issues/517"
+- "https://github.com/microsoft/vstest/issues/16654"
+- "https://github.com/dotnet/core/blob/main/release-notes/10.0/10.0.15/10.0.15.md"
+- "https://github.com/dotnet/core/blob/main/release-notes/11.0/11.0.0/11.0.0.md"
+- "https://github.com/dotnet/core/blob/main/release-notes/8.0/8.0.34/8.0.34.md"
+- "https://github.com/dotnet/core/blob/main/release-notes/9.0/9.0.23/9.0.23.md"
+- "https://github.com/dotnet/sdk/releases/tag/v10.0.115"
+- "https://github.com/dotnet/sdk/releases/tag/v10.0.404"
+- "https://github.com/dotnet/sdk/releases/tag/v11.0.100"
+- "https://github.com/dotnet/sdk/releases/tag/v8.0.134"
+- "https://github.com/dotnet/sdk/releases/tag/v8.0.428"
+- "https://github.com/dotnet/sdk/releases/tag/v9.0.124"
+- "https://github.com/dotnet/sdk/releases/tag/v9.0.321"
+- "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105544"
+cvss_v3: "CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:C/C:H/I:H/A:H"
+uuid: "692739dc-2a4d-5065-92c3-90b6ea75a55c"
+cwe_ids:
+- "CWE-284"
+- "CWE-937"
+- "CWE-1035"

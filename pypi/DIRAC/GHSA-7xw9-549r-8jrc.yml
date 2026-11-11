@@ -15,7 +15,7 @@ description: "### Details\nA number of the functions in PilotManager pass parame
   is fixed by changing the SQL statements to use proper parameter substitution and
   providing a suitable set of access rules for the exported pilot management functions.\n\n###
   Patched versions:\nhttps://pypi.org/project/DIRAC/8.0.79/\nhttps://pypi.org/project/DIRAC/9.0.22/\nhttps://pypi.org/project/DIRAC/9.1.10/"
-date: "2026-07-13"
+date: "2026-11-10"
 pubdate: "2026-07-13"
 affected_range: ">=6.0.0,<8.0.79||>=8.1.0-a.1,<9.0.22||>=9.1.0,<9.1.10"
 fixed_versions:
@@ -34,6 +34,8 @@ urls:
 - "https://pypi.org/project/DIRAC/8.0.79"
 - "https://pypi.org/project/DIRAC/9.0.22"
 - "https://pypi.org/project/DIRAC/9.1.10"
+- "https://github.com/DIRACGrid/DIRAC/commit/8731de576cf96826dbbf505508526ada31efb927"
+- "https://github.com/DIRACGrid/DIRAC/commit/f67f754d4eef5bf40a8223dab77cf2591808031f"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:H/A:N"
 uuid: "d8690627-512a-432e-8d16-79dec015a0e8"
 cwe_ids:

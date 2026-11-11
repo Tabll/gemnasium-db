@@ -5,20 +5,14 @@ identifiers:
 package_slug: "npm/openclaw"
 title: "Duplicate Advisory: `OpenClaw: session_status` let sandboxed subagents access
   parent or sibling session state"
-description: "## Duplicate Advisory\n\nThis advisory has been withdrawn because it
-  is a duplicate of GHSA-wcxr-59v9-rxr8. This link is maintained to preserve external
-  references.\n\n## Original Description\nOpenClaw before 2026.3.11 contains a session
-  sandbox escape vulnerability in the session_status tool that allows sandboxed subagents
-  to access parent or sibling session state. Attackers can supply arbitrary sessionKey
-  values to read or modify session data outside their sandbox scope, including persisted
-  model overrides."
+description: "This advisory has been withdrawn."
 date: "2026-04-01"
 pubdate: "2026-03-29"
-affected_range: "<=2026.3.8"
+affected_range: "<0"
 fixed_versions: []
-affected_versions: "All versions up to 2026.3.8"
-not_impacted: ""
-solution: "Unfortunately, there is no solution available yet."
+affected_versions: "This advisory has been withdrawn."
+not_impacted: "This advisory has been withdrawn."
+solution: "This advisory has been withdrawn."
 urls:
 - "https://github.com/advisories/GHSA-hh43-q692-2xmq"
 - "https://github.com/openclaw/openclaw/security/advisories/GHSA-wcxr-59v9-rxr8"

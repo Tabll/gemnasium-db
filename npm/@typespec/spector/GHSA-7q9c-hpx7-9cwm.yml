@@ -12,7 +12,7 @@ description: "`@typespec/spector` registers a `POST /.admin/stop` HTTP route wit
   this endpoint is exposed to any host that can reach the server's port—not just localhost—making
   a complete denial-of-service trivially achievable with one HTTP request. Severity
   is **High (CVSS 7.5)**."
-date: "2026-09-04"
+date: "2026-10-22"
 pubdate: "2026-09-04"
 affected_range: "<0.1.0-alpha.27"
 fixed_versions:

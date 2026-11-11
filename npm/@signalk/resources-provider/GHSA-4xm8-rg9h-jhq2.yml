@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-4xm8-rg9h-jhq2"
+identifiers:
+- "CVE-2026-123807"
+- "GHSA-4xm8-rg9h-jhq2"
+package_slug: "npm/@signalk/resources-provider"
+title: "Signal K resources API path traversal can disclose the JWT signing secret
+  and enable remote code execution"
+description: "Path traversal in the Signal K resources and applicationData APIs lets
+  an\nunauthenticated or low-privileged user read, write and delete files outside\nthe
+  storage root. Reading <config>/security.json discloses the JWT signing\nsecret,
+  enabling admin token forgery and remote code execution."
+date: "2026-11-09"
+pubdate: "2026-10-30"
+affected_range: ">=1.0.0 <1.5.3"
+fixed_versions:
+- "1.5.3"
+affected_versions: "All versions starting from 1.0.0 before 1.5.3"
+not_impacted: "All versions before 1.0.0, all versions starting from 1.5.3"
+solution: "Upgrade to version 1.5.3 or above."
+urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-123807"
+- "https://github.com/advisories/GHSA-4xm8-rg9h-jhq2"
+- "https://github.com/SignalK/signalk-server/security/advisories/GHSA-4xm8-rg9h-jhq2"
+- "https://github.com/SignalK/signalk-server/commit/83689f040d7e90280dddc643f44f3e4ce348fbb1"
+- "https://github.com/SignalK/signalk-server/releases/tag/v2.34.0"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+uuid: "fd8a004d-ecb8-5556-98e7-5c20b7048fd8"
+cwe_ids:
+- "CWE-22"
+- "CWE-937"
+- "CWE-1035"

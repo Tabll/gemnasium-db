@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-qx75-2p3r-pwm5"
+identifiers:
+- "GHSA-qx75-2p3r-pwm5"
+package_slug: "go/github.com/canonical/lxd"
+title: "LXD has project restriction bypass in instance copy across projects "
+description: "Missing authorization checks exist for instance copying where an attacker
+  knowing the name of a project that they don't have access to and the name of an
+  instance in that project can copy the instance to a new project. This issue could
+  allow an attacker to access secrets in instances they are not authorized to access."
+date: "2026-11-06"
+pubdate: "2026-11-06"
+affected_range: "<0.0.0-20260630083100-c5184be310b1"
+fixed_versions:
+- "0.0.0-20260630083100-c5184be310b1"
+affected_versions: "All versions before 0.0.0-20260630083100-c5184be310b1"
+not_impacted: "All versions starting from 0.0.0-20260630083100-c5184be310b1"
+solution: "Upgrade to version 0.0.0-20260630083100-c5184be310b1 or above."
+urls:
+- "https://github.com/advisories/GHSA-qx75-2p3r-pwm5"
+- "https://github.com/canonical/lxd/security/advisories/GHSA-qx75-2p3r-pwm5"
+- "https://github.com/lxc/incus/security/advisories/GHSA-c9f5-j9c3-mhrg"
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-55622"
+- "https://github.com/canonical/lxd/commit/97cb037794cb6b21c5a184eb5f3292207adbf6b2"
+- "https://github.com/canonical/lxd/commit/bc1e20ea32dff6ae2df08803eee82832959ec80e"
+- "https://github.com/canonical/lxd/commit/f7849615eb89e71a12ea76daaab6110bdf0fdf7f"
+- "https://github.com/canonical/lxd/releases/tag/lxd-5.0.7"
+- "https://github.com/canonical/lxd/releases/tag/lxd-5.21.5"
+- "https://github.com/canonical/lxd/releases/tag/lxd-6.8"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N"
+uuid: "7324b385-0fe9-5358-8414-0aa36144a3f1"
+cwe_ids:
+- "CWE-284"
+- "CWE-937"
+- "CWE-1035"

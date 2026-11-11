@@ -1,0 +1,41 @@
+---
+identifier: "GHSA-fmc8-p6q7-75cc"
+identifiers:
+- "GHSA-fmc8-p6q7-75cc"
+package_slug: "go/github.com/canonical/lxd"
+title: "LXD has argument injection in backup compression algorithm leading to AFW
+  and ACE"
+description: "Improper validation of user-provided backup compression algorithm leads
+  to\nargument injection in the constructed command line. This leads to an\narbitrary
+  file write on the host, possibly leading to arbitrary command\nexecution."
+date: "2026-11-06"
+pubdate: "2026-11-06"
+affected_range: "<0.0.0-20260630083100-c5184be310b1"
+fixed_versions:
+- "0.0.0-20260630083100-c5184be310b1"
+affected_versions: "All versions before 0.0.0-20260630083100-c5184be310b1"
+not_impacted: "All versions starting from 0.0.0-20260630083100-c5184be310b1"
+solution: "Upgrade to version 0.0.0-20260630083100-c5184be310b1 or above."
+urls:
+- "https://github.com/advisories/GHSA-fmc8-p6q7-75cc"
+- "https://github.com/canonical/lxd/security/advisories/GHSA-fmc8-p6q7-75cc"
+- "https://github.com/lxc/incus/security/advisories/GHSA-v6mj-8pf4-hhw4"
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-48755"
+- "https://github.com/canonical/lxd/commit/0915bb88cbb0baed5ac1aef8e62079c57ac877da"
+- "https://github.com/canonical/lxd/commit/0ab30d1bbe398ef6359fb8116d6852790a1f151d"
+- "https://github.com/canonical/lxd/commit/1887e3da0f33af250d941e4e9ffafc8fd0911a89"
+- "https://github.com/canonical/lxd/commit/32fd88560ddfc10b0a808c9f176d93faf0e0069a"
+- "https://github.com/canonical/lxd/commit/932592daa790ddd1c0d074daee9c0522d8e268fe"
+- "https://github.com/canonical/lxd/commit/9b09906b3b4c27ba4416e522644bd1d5191cdf5f"
+- "https://github.com/canonical/lxd/commit/a2808429c2506d6fa5bf506e4790909c5bd3aac9"
+- "https://github.com/canonical/lxd/commit/afc0e7ff003b81fa00f3aff147b99838a610f796"
+- "https://github.com/canonical/lxd/commit/b3e8cedb39838e5effe7b9d0ae3a3ad3ce85f9ec"
+- "https://github.com/canonical/lxd/commit/c6c999561ccf0024337e9f3746087c7f9c5f096f"
+- "https://github.com/canonical/lxd/commit/e1e6018c509f52db0fb531c7c20fa7aac59858de"
+- "https://github.com/canonical/lxd/commit/e224d6f8230a2da7ed7e60ab2aee44c788f9dba8"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H"
+uuid: "21f35da8-7fb5-5573-bd41-969bc5b4c593"
+cwe_ids:
+- "CWE-20"
+- "CWE-937"
+- "CWE-1035"

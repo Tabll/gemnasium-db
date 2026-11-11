@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-3446-6mgw-f79p"
 identifiers:
+- "CVE-2026-56701"
 - "GHSA-3446-6mgw-f79p"
 package_slug: "packagist/getgrav/grav"
 title: "Grav is Vulnerable to XXE via SVG Upload "
@@ -40,7 +41,7 @@ description: "Dear Grav Security Team,\n\nA security vulnerability was discovere
   I am happy to assist with testing the fix\n4. I request a CVE be assigned for this
   vulnerability\n5. If you have a security advisory process, please include me in
   the credits\n\nTurki Almatrafi.\n\n\n\n---"
-date: "2026-05-05"
+date: "2026-09-23"
 pubdate: "2026-05-05"
 affected_range: "<2.0.0-beta.2"
 fixed_versions:
@@ -49,9 +50,11 @@ affected_versions: "All versions before 2.0.0-beta.2"
 not_impacted: "All versions starting from 2.0.0-beta.2"
 solution: "Upgrade to version 2.0.0-beta.2 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-56701"
 - "https://github.com/advisories/GHSA-3446-6mgw-f79p"
 - "https://github.com/getgrav/grav/security/advisories/GHSA-3446-6mgw-f79p"
 - "https://github.com/getgrav/grav/commit/5a12f9be8314682c8713e569e330f11805d0a663"
+- "https://www.vulncheck.com/advisories/grav-xml-external-entity-injection-via-svg-upload"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
 uuid: "3676b5c6-4e6d-4639-98a4-254656ba18cc"
 cwe_ids:

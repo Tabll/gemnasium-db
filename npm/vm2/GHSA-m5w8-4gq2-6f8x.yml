@@ -23,7 +23,7 @@ description: "GHSA-9g8x-92q2-p28f closed the \"process-wide observability builti
   extends the same fix to the rest of the class. The existing `isDangerousBuiltin(key)`
   family-prefix matcher (added by GHSA-rp36-8xq3-r6c4) automatically catches `node:os`,
   `node:dns`, and `node:dns/promises` once the family names are present."
-date: "2026-08-17"
+date: "2026-11-05"
 pubdate: "2026-08-17"
 affected_range: "<3.11.6"
 fixed_versions:
@@ -35,6 +35,7 @@ urls:
 - "https://github.com/advisories/GHSA-m5w8-4gq2-6f8x"
 - "https://github.com/patriksimek/vm2/security/advisories/GHSA-m5w8-4gq2-6f8x"
 - "https://github.com/patriksimek/vm2/releases/tag/3.11.6"
+- "https://github.com/patriksimek/vm2/commit/768bcfc515b12884c31f7cc70c3a39e8fa7eda74"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:L"
 uuid: "67274ca7-6da7-47a2-a2f0-c8f5b67c2940"
 cwe_ids:

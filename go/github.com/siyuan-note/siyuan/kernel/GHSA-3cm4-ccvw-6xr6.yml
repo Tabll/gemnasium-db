@@ -1,0 +1,41 @@
+---
+identifier: "GHSA-3cm4-ccvw-6xr6"
+identifiers:
+- "GHSA-3cm4-ccvw-6xr6"
+package_slug: "go/github.com/siyuan-note/siyuan/kernel"
+title: "SiYuan: /history/*path and /repo/diff/*path potentially exposing historical
+  snapshots of data/.siyuan/publishAccess.json and data/templates/*"
+description: "`GHSA-c8r8-95hg-mp34` added a centralized guard,\n`util.IsForbiddenAbsPath()`,
+  specifically to block access to a small\nset of sensitive files: `conf/conf.json`
+  (plaintext\n`accessAuthCode`/API token/cookie key), `data/snippets/conf.json`,\nthe
+  entire `data/templates/` directory, and\n`data/.siyuan/publishAccess.json` (plaintext
+  publish-mode passwords).\nIt was applied to `kernel/api/file.go` and `kernel/mcp/tools/file.go`.\nTwo
+  other routes in the same server that serve arbitrary files by path,\n`/history/*path`
+  and `/repo/diff/*path`, construct their target paths\nindependently and were not
+  updated to call this new guard. Since the\nrepo/history snapshot system's tracked
+  root is `data/` (confirmed by\n`getSyncIgnoreLines()`, whose ignore file lives at\n`data/.siyuan/syncignore`
+  with entries relative to `data/`), both\n`data/.siyuan/publishAccess.json` and `data/templates/*`
+  fall within\nthe scope that can legitimately be captured in historical snapshots,\nmeaning
+  a prior version of either file can exist in\n`util.HistoryDir`/the repo-diff temp
+  checkout even after the live file\nhas been protected by the new guard. This is
+  CWE-862 (Missing\nAuthorization) applied to a very recently introduced protection\nmechanism."
+date: "2026-10-05"
+pubdate: "2026-10-05"
+affected_range: "<0.0.0-20260816034002-035bf9a8c311"
+fixed_versions:
+- "0.0.0-20260816034002-035bf9a8c311"
+affected_versions: "All versions before 0.0.0-20260816034002-035bf9a8c311"
+not_impacted: "All versions starting from 0.0.0-20260816034002-035bf9a8c311"
+solution: "Upgrade to version 0.0.0-20260816034002-035bf9a8c311 or above."
+urls:
+- "https://github.com/advisories/GHSA-3cm4-ccvw-6xr6"
+- "https://github.com/siyuan-note/siyuan/security/advisories/GHSA-3cm4-ccvw-6xr6"
+- "https://github.com/siyuan-note/siyuan/commit/035bf9a8c311c6f8468f2f1054b4d5e1711787e2"
+- "https://github.com/siyuan-note/siyuan/releases/tag/v3.8.1"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:N/A:N"
+uuid: "d44663da-06c8-4f75-ac1b-9ad5272f7aa5"
+cwe_ids:
+- "CWE-200"
+- "CWE-862"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,36 @@
+---
+identifier: "GHSA-f3fj-9625-rv3m"
+identifiers:
+- "GHSA-f3fj-9625-rv3m"
+package_slug: "go/github.com/charmbracelet/soft-serve"
+title: "charmbracelet/soft-serve: Race in `SetPrivate` leaves a private repository
+  readable by unauthenticated users"
+description: "Soft Serve cached repository records in memory with no expiry, and trusted
+  the cached record for every access check. `SetPrivate` cleared the cached record
+  before it saved the new visibility, and not afterwards.\n\nA request that arrived
+  between the two read the old, public record from the database and cached it after
+  the change was saved. From then on every access check used that stale record, so
+  a repository the operator had just made private stayed readable by unauthenticated
+  users over HTTP, SSH, and `git://` until the server restarted."
+date: "2026-10-30"
+pubdate: "2026-10-30"
+affected_range: ">=0.6.0 <0.12.3"
+fixed_versions:
+- "0.12.3"
+affected_versions: "All versions starting from 0.6.0 before 0.12.3"
+not_impacted: "All versions before 0.6.0, all versions starting from 0.12.3"
+solution: "Upgrade to version 0.12.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-f3fj-9625-rv3m"
+- "https://github.com/charmbracelet/soft-serve/security/advisories/GHSA-f3fj-9625-rv3m"
+- "https://github.com/charmbracelet/soft-serve/commit/0a4e6f0b7e063927c7128756e1c1b3db871edabf"
+- "https://github.com/charmbracelet/soft-serve/commit/5b307b4da4db285f797cc028b381ba4d3d853019"
+- "https://github.com/charmbracelet/soft-serve/commit/e398b4dde723437f637b06710e0938d349b360e8"
+- "https://github.com/charmbracelet/soft-serve/releases/tag/v0.12.3"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N"
+uuid: "e7040fbe-3954-586f-a159-e445d4fc727b"
+cwe_ids:
+- "CWE-362"
+- "CWE-367"
+- "CWE-937"
+- "CWE-1035"

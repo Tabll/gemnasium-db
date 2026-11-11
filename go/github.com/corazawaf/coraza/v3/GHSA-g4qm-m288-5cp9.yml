@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-g4qm-m288-5cp9"
+identifiers:
+- "GHSA-g4qm-m288-5cp9"
+package_slug: "go/github.com/corazawaf/coraza/v3"
+title: "Coraza has Cookie Parser Confusion"
+description: "Coraza's cookie parser (`internal/cookies.ParseCookies`) does not strip
+  ASCII control characters (CTLs) from the edges of a cookie name/value before they're
+  matched against `REQUEST_COOKIES` / `REQUEST_COOKIES_NAMES`. When a CTL sits directly
+  next to the `=` separator, Coraza absorbs it into the adjacent name or value, while
+  several backend cookie parsers trim it away — so the WAF and the application disagree
+  about the cookie it just received."
+date: "2026-10-08"
+pubdate: "2026-10-08"
+affected_range: "<3.8.1"
+fixed_versions:
+- "3.8.1"
+affected_versions: "All versions before 3.8.1"
+not_impacted: "All versions starting from 3.8.1"
+solution: "Upgrade to version 3.8.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-g4qm-m288-5cp9"
+- "https://github.com/corazawaf/coraza/security/advisories/GHSA-g4qm-m288-5cp9"
+- "https://github.com/corazawaf/coraza/commit/0b940e197ad9983fb3aa36e84f1f81ff985461af"
+- "https://github.com/corazawaf/coraza/commit/9f8521398d1ff023b958fad0b944cac265763866"
+- "https://github.com/corazawaf/coraza/releases/tag/v3.8.1"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:N/I:L/A:N"
+uuid: "068bfe69-d8dd-4ab4-aac3-dd9486abb2e3"
+cwe_ids:
+- "CWE-436"
+- "CWE-937"
+- "CWE-1035"

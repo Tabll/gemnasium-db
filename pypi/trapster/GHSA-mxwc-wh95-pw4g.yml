@@ -13,16 +13,18 @@ description: "`trapster.libs.dns.decode_labels()` decodes DNS names from attacke
   into the asyncio event loop's default exception handler, the per-packet proxy task
   is never created, and a low-rate flood produces sustained CPU burn and log flooding
   (denial of service of the DNS honeypot module)."
-date: "2026-07-08"
+date: "2026-11-06"
 pubdate: "2026-07-08"
-affected_range: "<=1.2.0"
-fixed_versions: []
-affected_versions: "All versions up to 1.2.0"
-not_impacted: ""
-solution: "Unfortunately, there is no solution available yet."
+affected_range: "<1.2.2"
+fixed_versions:
+- "1.2.2"
+affected_versions: "All versions before 1.2.2"
+not_impacted: "All versions starting from 1.2.2"
+solution: "Upgrade to version 1.2.2 or above."
 urls:
 - "https://github.com/advisories/GHSA-mxwc-wh95-pw4g"
 - "https://github.com/0xBallpoint/trapster-community/security/advisories/GHSA-mxwc-wh95-pw4g"
+- "https://github.com/0xBallpoint/trapster-community/commit/dfc2c43dad119578f9c7344a0077790ed7fee01b"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
 uuid: "1a96f6fe-8582-4979-a535-2e54fb1d2151"
 cwe_ids:

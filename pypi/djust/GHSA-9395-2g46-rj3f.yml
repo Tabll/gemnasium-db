@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-9395-2g46-rj3f"
+identifiers:
+- "GHSA-9395-2g46-rj3f"
+package_slug: "pypi/djust"
+title: "djust: Six template-layer defects emit attacker-controlled markup unescaped
+  (XSS)"
+description: "Five independent defects in djust's template auto-escaping cause attacker-controlled
+  input to be rendered as live markup where Django escapes it. All four are present
+  in shipped 1.1.0 and are fixed in 1.1.1.\n\nThey share one shape: **a filter or
+  grant that escapes nothing itself and relies on the render-time auto-escape, which
+  something downstream then removes.** They are grouped into a single advisory because
+  the mitigation is identical — upgrade to 1.1.1 — and because no single one of them
+  is meaningfully actionable in isolation."
+date: "2026-09-17"
+pubdate: "2026-09-17"
+affected_range: "<1.1.1"
+fixed_versions:
+- "1.1.1"
+affected_versions: "All versions before 1.1.1"
+not_impacted: "All versions starting from 1.1.1"
+solution: "Upgrade to version 1.1.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-9395-2g46-rj3f"
+- "https://github.com/djust-org/djust/security/advisories/GHSA-9395-2g46-rj3f"
+- "https://github.com/djust-org/djust/releases/tag/v1.1.1"
+uuid: "53c11603-917f-461f-b673-804df3c2dbec"
+cwe_ids:
+- "CWE-79"
+- "CWE-116"
+- "CWE-937"
+- "CWE-1035"

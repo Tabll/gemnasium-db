@@ -1,0 +1,40 @@
+---
+identifier: "GHSA-6h2x-m376-mqjq"
+identifiers:
+- "CVE-2026-92599"
+- "GHSA-6h2x-m376-mqjq"
+package_slug: "npm/joi"
+title: "joi: Quadratic regular-expression backtracking in `Joi.string().isoDate()`"
+description: "Any application that validates a user-supplied string with `Joi.string().isoDate()`
+  can be stalled by a single request. One of the regular expressions the rule runs
+  over the input was unanchored, so a valid ISO date followed by a long run of fractional-second
+  digits made the regex engine restart its search from every position in the string,
+  costing time proportional to the square of the input length. 64 KB of digits costs
+  about 1.4 s and 256 KB about 22 s."
+date: "2026-10-05"
+pubdate: "2026-09-29"
+affected_range: ">=17.2.0 <17.13.7||>=18.0.0 <18.2.6"
+fixed_versions:
+- "17.13.7"
+- "18.2.6"
+affected_versions: "All versions starting from 17.2.0 before 17.13.7, all versions
+  starting from 18.0.0 before 18.2.6"
+not_impacted: "All versions before 17.2.0, all versions starting from 17.13.7 before
+  18.0.0, all versions starting from 18.2.6"
+solution: "Upgrade to versions 17.13.7, 18.2.6 or above."
+urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-92599"
+- "https://github.com/advisories/GHSA-6h2x-m376-mqjq"
+- "https://github.com/hapijs/joi/security/advisories/GHSA-6h2x-m376-mqjq"
+- "https://github.com/hapijs/joi/pull/3143"
+- "https://github.com/hapijs/joi/pull/3145"
+- "https://github.com/hapijs/joi/commit/115e7b58d5eaaecc5e9b7093d41899ad6fb053ec"
+- "https://github.com/hapijs/joi/commit/e70df424c367f2976db63b089504413744a21245"
+- "https://www.vulncheck.com/advisories/joi-before-17.13.7-and-18.2.6-redos-via-isodate"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+uuid: "68d85ba8-ee2e-4c19-9422-66b9ddf9d534"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"
+- "CWE-1333"

@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-8238-w5pm-2374"
+identifiers:
+- "GHSA-8238-w5pm-2374"
+package_slug: "npm/adm-zip"
+title: "adm-zip: Unhandled error event in async DEFLATE decompression crashes Node.js
+  process (DoS)"
+description: "Denial of Service in `adm-zip`'s async decompression API allows an unauthenticated
+  attacker to crash the entire Node.js host process by supplying a single malformed
+  ZIP file."
+date: "2026-09-29"
+pubdate: "2026-09-29"
+affected_range: "<0.6.1"
+fixed_versions:
+- "0.6.1"
+affected_versions: "All versions before 0.6.1"
+not_impacted: "All versions starting from 0.6.1"
+solution: "Upgrade to version 0.6.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-8238-w5pm-2374"
+- "https://github.com/cthackers/adm-zip/security/advisories/GHSA-8238-w5pm-2374"
+- "https://github.com/cthackers/adm-zip/commit/5e70d3a26097d68fa981c41f022c053117174e49"
+- "https://github.com/cthackers/adm-zip/releases/tag/v0.6.1"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "820b8306-a3fc-47fd-9dc8-e52c1335e6ba"
+cwe_ids:
+- "CWE-248"
+- "CWE-400"
+- "CWE-937"
+- "CWE-1035"

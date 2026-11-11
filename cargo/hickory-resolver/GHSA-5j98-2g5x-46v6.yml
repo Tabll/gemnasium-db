@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-5j98-2g5x-46v6"
+identifiers:
+- "GHSA-5j98-2g5x-46v6"
+package_slug: "cargo/hickory-resolver"
+title: "hickory-resolver: Resolver::lookup() and Resolver::lookup_ip() APIs obscure
+  DNSSEC validation failures"
+description: "When calling `Resolver::lookup()` or `Resolver::lookup_ip()` on a resolver
+  with DNSSEC validation enabled, both methods return `Ok(...)` if DNSSEC validation
+  fails. It is possible but very inconvenient to check the validation status of individual
+  records. These methods should instead return an error when DNSSEC validation determines
+  a response is bogus."
+date: "2026-10-05"
+pubdate: "2026-10-05"
+affected_range: "<0.26.2"
+fixed_versions:
+- "0.26.2"
+affected_versions: "All versions before 0.26.2"
+not_impacted: "All versions starting from 0.26.2"
+solution: "Upgrade to version 0.26.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-5j98-2g5x-46v6"
+- "https://github.com/hickory-dns/hickory-dns/security/advisories/GHSA-5j98-2g5x-46v6"
+- "https://github.com/hickory-dns/hickory-dns/pull/3871"
+- "https://github.com/hickory-dns/hickory-dns/commit/92f93c0b889f6a292bc943304d88c4c6561fe1b9"
+- "https://github.com/hickory-dns/hickory-dns/releases/tag/v0.26.2"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+uuid: "6f97f0d4-1345-4c24-855d-64e5afc087e8"
+cwe_ids:
+- "CWE-347"
+- "CWE-937"
+- "CWE-1035"

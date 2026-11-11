@@ -1,0 +1,39 @@
+---
+identifier: "GHSA-3q6v-r5mr-hxv8"
+identifiers:
+- "GHSA-3q6v-r5mr-hxv8"
+package_slug: "packagist/league/commonmark"
+title: "league/commonmark: Quadratic-time denial of service in the GitHub Flavored
+  Markdown Table extension block-start scan"
+description: "`league/commonmark`'s GitHub Flavored Markdown Table extension registers
+  `TableStartParser` as a block-start parser. While a paragraph is the active block,
+  the core block parser calls `TableStartParser::tryStart()` on every non-blank line.
+  Its first action fetches the entire growing paragraph buffer via `getParagraphContent()`
+  and runs `strpos($paragraph, '|')` across all of it. For a paragraph of M pipe-free
+  lines, line k rescans about k lines of buffer, so total work is 1+2+...+M, which
+  is O(M^2). An unauthenticated user who submits a single large paragraph of pipe-free
+  lines that do not begin with a letter (see Attack Chain) to any service that converts
+  untrusted Markdown with `GithubFlavoredMarkdownConverter` (or any environment that
+  enables `TableExtension`) drives seconds to tens of seconds of single-core CPU that
+  grows quadratically with body size, enough to exhaust worker processes and deny
+  service."
+date: "2026-09-30"
+pubdate: "2026-09-30"
+affected_range: ">=2.0.0 <2.10.2"
+fixed_versions:
+- "2.10.2"
+affected_versions: "All versions starting from 2.0.0 before 2.10.2"
+not_impacted: "All versions before 2.0.0, all versions starting from 2.10.2"
+solution: "Upgrade to version 2.10.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-3q6v-r5mr-hxv8"
+- "https://github.com/thephpleague/commonmark/security/advisories/GHSA-3q6v-r5mr-hxv8"
+- "https://github.com/thephpleague/commonmark/commit/5f63680a5e29dd57f9c6be9743b0e90493d3c2d0"
+- "https://github.com/thephpleague/commonmark/releases/tag/2.10.2"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "b7c0c5de-a9dc-4b15-bcdf-07be8068b62c"
+cwe_ids:
+- "CWE-400"
+- "CWE-407"
+- "CWE-937"
+- "CWE-1035"

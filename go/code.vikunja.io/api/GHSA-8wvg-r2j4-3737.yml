@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-8wvg-r2j4-3737"
+identifiers:
+- "GHSA-8wvg-r2j4-3737"
+package_slug: "go/code.vikunja.io/api"
+title: "Vikunja: Assignee email addresses disclosed to read-only project members via
+  the task assignees endpoint"
+description: "`TaskAssginee.ReadAll` returns assignee user objects without blanking
+  the `Email` field, disclosing assignee email addresses to any read-only project
+  member. Every sibling path that returns user objects obfuscates the email; this
+  one does not."
+date: "2026-10-09"
+pubdate: "2026-10-09"
+affected_range: "<2.6.0"
+fixed_versions:
+- "2.6.0"
+affected_versions: "All versions before 2.6.0"
+not_impacted: "All versions starting from 2.6.0"
+solution: "Upgrade to version 2.6.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-8wvg-r2j4-3737"
+- "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-8wvg-r2j4-3737"
+- "https://github.com/go-vikunja/vikunja/pull/3688"
+- "https://github.com/go-vikunja/vikunja/releases/tag/v2.6.0"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N"
+uuid: "1a292b21-3590-4d29-903f-e0c4f13a3bf7"
+cwe_ids:
+- "CWE-200"
+- "CWE-937"
+- "CWE-1035"

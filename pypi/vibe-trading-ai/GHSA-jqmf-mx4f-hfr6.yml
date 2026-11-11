@@ -1,0 +1,36 @@
+---
+identifier: "GHSA-jqmf-mx4f-hfr6"
+identifiers:
+- "GHSA-jqmf-mx4f-hfr6"
+package_slug: "pypi/vibe-trading-ai"
+title: "Vibe-Trading LLM-callable tools permit command execution, code injection,
+  and SSRF"
+description: "5 findings — `BashTool` shell-injection sink (F6, the canonical RCE
+  primitive), `BackgroundRunTool` async shell-injection sink (F7), backtest `exec_module()`
+  runs top-level statements before the `SignalEngine` class check (F8 — independent
+  RCE path that does not match BashTool signatures), `read_url` outbound HTTP forwarding
+  without schema/host validation (F-B4 SSRF), and Jinja2 codegen with autoescape disabled
+  for `.py.j2` templates (F-B5, defense-in-depth code-injection sink).\n\n---"
+date: "2026-10-02"
+pubdate: "2026-10-02"
+affected_range: ">=0.1.0,<0.1.7"
+fixed_versions:
+- "0.1.7"
+affected_versions: "All versions starting from 0.1.0 before 0.1.7"
+not_impacted: "All versions before 0.1.0, all versions starting from 0.1.7"
+solution: "Upgrade to version 0.1.7 or above."
+urls:
+- "https://github.com/advisories/GHSA-jqmf-mx4f-hfr6"
+- "https://github.com/HKUDS/Vibe-Trading/security/advisories/GHSA-jqmf-mx4f-hfr6"
+- "https://github.com/HKUDS/Vibe-Trading/commit/9454d4a27a763b80e1d6eb5763b86c88e9e4e714"
+- "https://github.com/HKUDS/Vibe-Trading/releases/tag/v0.1.7"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H"
+uuid: "f43390ea-6411-4791-bac0-78f5ebfb06c9"
+cwe_ids:
+- "CWE-77"
+- "CWE-78"
+- "CWE-94"
+- "CWE-116"
+- "CWE-918"
+- "CWE-937"
+- "CWE-1035"

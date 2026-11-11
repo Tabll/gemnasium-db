@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-fmmf-xq98-g327"
+identifiers:
+- "GHSA-fmmf-xq98-g327"
+package_slug: "go/code.vikunja.io/api"
+title: "Vikunja: Write-level project members can delete admin-tier link shares through
+  an unloaded permission check"
+description: "A project member with Write permission can delete an admin-tier link
+  share on that project. The deletion authorization check reads the permission from
+  an object populated only with URL IDs, rather than from the stored share. Its zero
+  value is Read, so the check falls through to project Write permission instead of
+  requiring Admin."
+date: "2026-10-27"
+pubdate: "2026-10-09"
+affected_range: ">=0.13.0 <2.7.0"
+fixed_versions:
+- "2.7.0"
+affected_versions: "All versions starting from 0.13.0 before 2.7.0"
+not_impacted: "All versions before 0.13.0, all versions starting from 2.7.0"
+solution: "Upgrade to version 2.7.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-fmmf-xq98-g327"
+- "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-fmmf-xq98-g327"
+- "https://github.com/go-vikunja/vikunja/commit/60e543777b4d3ec8376f5485911cdec697e8c8ee"
+- "https://github.com/go-vikunja/vikunja/releases/tag/v2.7.0"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:L/SC:N/SI:N/SA:N"
+uuid: "68dc029c-607e-45ca-bbe7-c9a2cfe3b93e"
+cwe_ids:
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

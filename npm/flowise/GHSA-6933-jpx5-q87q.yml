@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-6933-jpx5-q87q"
 identifiers:
+- "CVE-2025-71336"
 - "GHSA-6933-jpx5-q87q"
 package_slug: "npm/flowise"
 title: "Flowise has unsandboxed remote code execution via Custom MCP"
@@ -13,7 +14,7 @@ description: "The Custom MCPs feature is designed to execute OS commands, for in
   potentially allowing users on the platform to execute unsandboxed system commands.
   This can result in Remote Code Execution (RCE) and complete compromise of the running
   platform container or server."
-date: "2025-11-10"
+date: "2026-11-03"
 pubdate: "2025-09-15"
 affected_range: ">=2.2.7-patch.1 <3.0.6"
 fixed_versions:
@@ -22,12 +23,13 @@ affected_versions: "All versions starting from 2.2.7-patch.1 before 3.0.6"
 not_impacted: "All versions before 2.2.7-patch.1, all versions starting from 3.0.6"
 solution: "Upgrade to version 3.0.6 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2025-71336"
 - "https://github.com/advisories/GHSA-6933-jpx5-q87q"
 - "https://github.com/FlowiseAI/Flowise/security/advisories/GHSA-6933-jpx5-q87q"
 - "https://github.com/FlowiseAI/Flowise/pull/5201"
 - "https://github.com/FlowiseAI/Flowise/commit/ac7cf30e019cde54905bf09b5d3fe1c6ba42f9b9"
-- "https://github.com/FlowiseAI/Flowise"
 - "https://github.com/FlowiseAI/Flowise/releases/tag/flowise%403.0.6"
+- "https://www.vulncheck.com/advisories/flowise-unsandboxed-remote-code-execution-via-custom-mcp"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
 cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
 uuid: "4067dfea-8b4f-446d-b48d-2a31c46e4a97"

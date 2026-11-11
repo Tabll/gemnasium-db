@@ -1,0 +1,36 @@
+---
+identifier: "GHSA-7mr3-28h5-m5vx"
+identifiers:
+- "GHSA-7mr3-28h5-m5vx"
+package_slug: "go/github.com/canonical/lxd"
+title: "LXD has project restriction bypass for custom volume copy across projects "
+description: "Missing authorization checks exist for custom volume copying where an
+  attacker knowing the name of a project that they don't have access to and the name
+  of a custom volume in that project can copy the custom volume to a new project.
+  This issue could allow an attacker to access secrets in custom volumes they are
+  not authorized to access."
+date: "2026-11-06"
+pubdate: "2026-11-06"
+affected_range: "<0.0.0-20260630083100-c5184be310b1"
+fixed_versions:
+- "0.0.0-20260630083100-c5184be310b1"
+affected_versions: "All versions before 0.0.0-20260630083100-c5184be310b1"
+not_impacted: "All versions starting from 0.0.0-20260630083100-c5184be310b1"
+solution: "Upgrade to version 0.0.0-20260630083100-c5184be310b1 or above."
+urls:
+- "https://github.com/advisories/GHSA-7mr3-28h5-m5vx"
+- "https://github.com/canonical/lxd/security/advisories/GHSA-7mr3-28h5-m5vx"
+- "https://github.com/lxc/incus/security/advisories/GHSA-64f3-v33m-w89f"
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-55621"
+- "https://github.com/canonical/lxd/commit/8a4ed50ae855639d76021ba4bf26a50d7f2288fd"
+- "https://github.com/canonical/lxd/commit/e2635a26957737ec4a77dc28dd7b84bd380881d6"
+- "https://github.com/canonical/lxd/commit/eec1cf9504c18ad7c3c36ae0b62d21c05c25702c"
+- "https://github.com/canonical/lxd/releases/tag/lxd-5.0.7"
+- "https://github.com/canonical/lxd/releases/tag/lxd-5.21.5"
+- "https://github.com/canonical/lxd/releases/tag/lxd-6.8"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N"
+uuid: "9acd9784-9617-54a9-baba-880e44aa9a59"
+cwe_ids:
+- "CWE-284"
+- "CWE-937"
+- "CWE-1035"

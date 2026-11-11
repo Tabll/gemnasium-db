@@ -1,0 +1,37 @@
+---
+identifier: "GHSA-35mr-4567-66vg"
+identifiers:
+- "GHSA-35mr-4567-66vg"
+package_slug: "pypi/dulwich"
+title: "Dulwich: Infinite Loop Denial of Service (DoS) in Packfile Object Resolution"
+description: "A High-severity Denial of Service (DoS) vulnerability exists in the
+  `Pack.resolve_object` method. When resolving an `OFS_DELTA` object, the resolver
+  calculates the base offset using `base_offset = obj_offset - delta_offset`.\n\nIf
+  a malicious packfile contains an `OFS_DELTA` object where `delta_offset` is `0`,
+  the calculation `obj_offset - 0` resolves back to the current object's own offset.
+  Because the implementation lacks a depth counter, a \"visited\" set, or an explicit
+  rejection of `delta_offset == 0`, the resolver enters an infinite recursive loop,
+  exhausting CPU resources and eventually crashing the process.\n\n**Vulnerable Code
+  Breakdown (`dulwich/pack.py`):**\n```python\nelif obj_type == OFS_DELTA:\ndelta_offset
+  = parse_pack_object_offset_at(...)\nbase_offset = obj_offset - delta_offset          #
+  VULNERABILITY: Self-reference if delta_offset == 0\nbase_type, base_data = self.resolve_object(...)
+  \ # VULNERABILITY: Infinite recursion\n```"
+date: "2026-10-02"
+pubdate: "2026-10-02"
+affected_range: "<1.2.9"
+fixed_versions:
+- "1.2.9"
+affected_versions: "All versions before 1.2.9"
+not_impacted: "All versions starting from 1.2.9"
+solution: "Upgrade to version 1.2.9 or above."
+urls:
+- "https://github.com/advisories/GHSA-35mr-4567-66vg"
+- "https://github.com/jelmer/dulwich/security/advisories/GHSA-35mr-4567-66vg"
+- "https://github.com/jelmer/dulwich/commit/d06ffc3e1aff0ea0a32094debead891be0083eb7"
+- "https://github.com/jelmer/dulwich/releases/tag/dulwich-1.2.9"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+uuid: "379ab285-ff0c-4f9d-b8b0-9db86ef55f93"
+cwe_ids:
+- "CWE-835"
+- "CWE-937"
+- "CWE-1035"

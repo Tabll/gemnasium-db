@@ -1,0 +1,44 @@
+---
+identifier: "GHSA-fj2x-mqqp-3v2w"
+identifiers:
+- "GHSA-fj2x-mqqp-3v2w"
+package_slug: "npm/trigger.dev"
+title: "Trigger.dev: Trigger CLI debug deployment logs expose resolved environment
+  secret values"
+description: "Affected version: trigger.dev 4.5.3 (4.5.6 was advertised by the CLI
+  but was not tested).\n\nA staging dry-run executed with `trigger.dev deploy --env
+  staging --dry-run --log-level debug`. The debug output logged the complete build-worker
+  options object. Its `envVars` property contained unredacted values for every resolved
+  staging variable, including database connection strings and service credentials.
+  The non-debug environment listing correctly hides values, so users can reasonably
+  expect deployment logs not to print secrets.\n\nImpact: anyone with access to a
+  developer terminal transcript, CI debug log, captured agent/tool output, or support
+  bundle can recover deployment secrets even though no deployment occurs.\n\nReproduction:\n1.
+  Configure a Trigger.dev project with a secret environment variable.\n2. Run the
+  command above with an authenticated profile.\n3. Inspect the `Starting buildWorker`
+  debug record.\n4. `options.envVars` contains the plaintext value.\n\nNo real credential
+  is included in this report. The observed customer credentials are being rotated
+  separately.\n\nSuggested remediation: never serialize `envVars` values in debug
+  output; log names only or replace every value with a fixed marker. Add regression
+  coverage for deploy, dry-run, and debug logging, and review adjacent debug records
+  for resolved secrets."
+date: "2026-10-02"
+pubdate: "2026-10-02"
+affected_range: "<4.5.9"
+fixed_versions:
+- "4.5.9"
+affected_versions: "All versions before 4.5.9"
+not_impacted: "All versions starting from 4.5.9"
+solution: "Upgrade to version 4.5.9 or above."
+urls:
+- "https://github.com/advisories/GHSA-fj2x-mqqp-3v2w"
+- "https://github.com/triggerdotdev/trigger.dev/security/advisories/GHSA-fj2x-mqqp-3v2w"
+- "https://github.com/triggerdotdev/trigger.dev/pull/4420"
+- "https://github.com/triggerdotdev/trigger.dev/commit/878c15811aca8339a751aa0c2211012db7a47ce5"
+- "https://github.com/triggerdotdev/trigger.dev/releases/tag/v4.5.9"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N"
+uuid: "c87d43db-054f-40a6-9fb6-4154015c7063"
+cwe_ids:
+- "CWE-532"
+- "CWE-937"
+- "CWE-1035"

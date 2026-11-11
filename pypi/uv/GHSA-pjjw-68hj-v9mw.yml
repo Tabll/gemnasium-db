@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-pjjw-68hj-v9mw"
 identifiers:
+- "CVE-2026-114110"
 - "GHSA-pjjw-68hj-v9mw"
 package_slug: "pypi/uv"
 title: "uv vulnerable to arbitrary file deletion through RECORD entries"
@@ -20,7 +21,7 @@ description: "Wheel RECORD entries can contain relative paths that traverse outs
   installation prefix. Absolute paths cannot be used to delete arbitrary files.\n\nOnly
   files can be deleted, attempts to delete a directory via an invalid RECORD entry
   will fail."
-date: "2026-04-10"
+date: "2026-10-23"
 pubdate: "2026-04-10"
 affected_range: "<0.11.6"
 fixed_versions:
@@ -29,14 +30,15 @@ affected_versions: "All versions before 0.11.6"
 not_impacted: "All versions starting from 0.11.6"
 solution: "Upgrade to version 0.11.6 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-114110"
 - "https://github.com/advisories/GHSA-pjjw-68hj-v9mw"
 - "https://github.com/astral-sh/uv/security/advisories/GHSA-pjjw-68hj-v9mw"
 - "https://github.com/astral-sh/uv/pull/18942"
 - "https://github.com/astral-sh/uv/pull/18943"
 - "https://github.com/astral-sh/uv/commit/7983c7a5bef236fd8a04580fcedae7bd5bde4cdb"
 - "https://github.com/astral-sh/uv/commit/a0e461ac44851f9a0f6e8974733e77d46f7a9ea9"
-- "https://github.com/astral-sh/uv"
 - "https://github.com/astral-sh/uv/releases/tag/0.11.6"
+- "https://www.vulncheck.com/advisories/astral-uv-before-0.11.6-arbitrary-file-deletion-via-wheel-record-entries"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N"
 cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
 uuid: "9904dd9f-b2df-4534-a6f6-c511203bf9e0"

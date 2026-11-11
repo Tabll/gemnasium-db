@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-w9x9-j56r-h98r"
+identifiers:
+- "GHSA-w9x9-j56r-h98r"
+package_slug: "npm/@eeacms/volto-chatbot"
+title: "@eeacms/volto-chatbot has Unauthenticated Danswer API Confused Deputy Proxy"
+description: "`@eeacms/volto-chatbot` exposes an Express middleware route (`**/_v1_da/**`)
+  that accepts unauthenticated HTTP requests from any network client and proxies them
+  to the configured upstream Danswer API, automatically attaching the server-side
+  service credentials (`DANSWER_API_KEY` or session cookie). Because no authorization
+  check, path allowlist, or method restriction is applied before the upstream request
+  is issued, an unauthenticated attacker can invoke arbitrary Danswer API operations
+  — including privileged admin endpoints — as the configured service account. This
+  is a classic Confused Deputy attack: the Volto proxy acts as a deputy that carries
+  credentials on behalf of the attacker."
+date: "2026-10-29"
+pubdate: "2026-10-29"
+affected_range: "<2.0.4"
+fixed_versions:
+- "2.0.4"
+affected_versions: "All versions before 2.0.4"
+not_impacted: "All versions starting from 2.0.4"
+solution: "Upgrade to version 2.0.4 or above."
+urls:
+- "https://github.com/advisories/GHSA-w9x9-j56r-h98r"
+- "https://github.com/eea/volto-chatbot/security/advisories/GHSA-w9x9-j56r-h98r"
+- "https://github.com/eea/volto-chatbot/commit/eaf18b7c0f23560086b300bf0c5e62f9f76ad7b0"
+- "https://github.com/eea/volto-chatbot/releases/tag/2.0.4"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N"
+uuid: "b277c3f1-bd84-52f5-b327-3afe79d7958f"
+cwe_ids:
+- "CWE-862"
+- "CWE-937"
+- "CWE-1035"

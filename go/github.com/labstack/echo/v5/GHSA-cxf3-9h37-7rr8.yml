@@ -1,0 +1,41 @@
+---
+identifier: "GHSA-cxf3-9h37-7rr8"
+identifiers:
+- "CVE-2026-118264"
+- "GHSA-cxf3-9h37-7rr8"
+package_slug: "go/github.com/labstack/echo/v5"
+title: "Echo: Rejected WebSocket upgrades can bypass Echo route-level access controls"
+description: "Echo's Proxy middleware selected a raw tunnel when the client requested
+  a WebSocket upgrade, before validating whether the configured upstream accepted
+  it. If the upstream returned an ordinary HTTP response and kept the connection alive,
+  subsequent HTTP requests on that connection were forwarded directly to the same
+  upstream without passing through Echo's router or route-specific middleware.\n\nThis
+  can bypass authentication or authorization enforced only at Echo's routes. Exploitation
+  requires an accessible proxy route, an upstream that rejects the upgrade without
+  closing the connection, and a target resource on that upstream without independent
+  authorization. The issue does not provide arbitrary-host proxying or bypass the
+  upstream's own authentication."
+date: "2026-10-28"
+pubdate: "2026-10-23"
+affected_range: ">=5.0.0 <5.4.1"
+fixed_versions:
+- "5.4.1"
+affected_versions: "All versions starting from 5.0.0 before 5.4.1"
+not_impacted: "All versions before 5.0.0, all versions starting from 5.4.1"
+solution: "Upgrade to version 5.4.1 or above."
+urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-118264"
+- "https://github.com/advisories/GHSA-cxf3-9h37-7rr8"
+- "https://github.com/labstack/echo/security/advisories/GHSA-cxf3-9h37-7rr8"
+- "https://github.com/labstack/echo/commit/1855061e572ae9dab727c811d8382f266bfbaaec"
+- "https://github.com/labstack/echo/commit/3fb0ba7e17645bb65611e2a08875d0a2f65c421f"
+- "https://github.com/labstack/echo/releases/tag/v4.16.1"
+- "https://github.com/labstack/echo/releases/tag/v5.4.1"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N"
+uuid: "c3099c2e-62e5-5891-8db2-f6e1c03c51f1"
+cwe_ids:
+- "CWE-444"
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

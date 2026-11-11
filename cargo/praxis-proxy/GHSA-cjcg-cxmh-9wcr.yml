@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-cjcg-cxmh-9wcr"
+identifiers:
+- "GHSA-cjcg-cxmh-9wcr"
+package_slug: "cargo/praxis-proxy"
+title: "Praxis affected by HTTP/2 Bomb "
+description: "Multiple denial-of-service vulnerabilities have been discovered in HTTP/2
+  server implementations. All have been rated with a severity impact of [Important](https://access.redhat.com/security/updates/classification).
+  The vulnerabilities target HPACK, the header compression scheme in HTTP/2, where
+  a small request can trigger large memory allocations on the server."
+date: "2026-10-02"
+pubdate: "2026-10-02"
+affected_range: "<0.5.2"
+fixed_versions:
+- "0.5.2"
+affected_versions: "All versions before 0.5.2"
+not_impacted: "All versions starting from 0.5.2"
+solution: "Upgrade to version 0.5.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-cjcg-cxmh-9wcr"
+- "https://github.com/praxis-proxy/praxis/security/advisories/GHSA-cjcg-cxmh-9wcr"
+- "https://github.com/praxis-proxy/praxis/commit/2bb7b29d6992fc2d8045628475912d734e6bee97"
+- "https://access.redhat.com/security/vulnerabilities/RHSB-2026-007"
+- "https://blog.calif.io/p/codex-discovered-a-hidden-http2-bomb"
+- "https://github.com/praxis-proxy/praxis/releases/tag/v0.5.2"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "d7761047-7cf8-46ae-9d42-bd53d391f190"
+cwe_ids:
+- "CWE-409"
+- "CWE-937"
+- "CWE-1035"

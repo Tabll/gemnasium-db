@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-fhp4-pr5j-46m5"
 identifiers:
+- "CVE-2026-125107"
 - "GHSA-fhp4-pr5j-46m5"
 package_slug: "npm/muhammara"
 title: "Muhammara has a NULL pointer dereference in LZWDecode filter when DecodeParms
@@ -9,7 +10,7 @@ description: "A NULL pointer dereference vulnerability exists in `PDFParser::Cre
   when processing a PDF stream with `/Filter /LZWDecode` and a `/DecodeParms` dictionary
   that does not contain the `EarlyChange` key. This causes an access violation (0xC0000005)
   and crashes the process."
-date: "2026-06-26"
+date: "2026-11-09"
 pubdate: "2026-06-26"
 affected_range: "<6.0.5"
 fixed_versions:
@@ -18,6 +19,7 @@ affected_versions: "All versions before 6.0.5"
 not_impacted: "All versions starting from 6.0.5"
 solution: "Upgrade to version 6.0.5 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-125107"
 - "https://github.com/advisories/GHSA-fhp4-pr5j-46m5"
 - "https://github.com/julianhille/MuhammaraJS/security/advisories/GHSA-fhp4-pr5j-46m5"
 - "https://github.com/julianhille/MuhammaraJS/commit/a98c07780241353334eb65bfca1df025f14be70b"

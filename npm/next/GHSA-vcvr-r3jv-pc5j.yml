@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-vcvr-r3jv-pc5j"
+identifiers:
+- "GHSA-vcvr-r3jv-pc5j"
+package_slug: "npm/next"
+title: "Next.js: Remote Code Execution in next/og ImageResponse"
+description: "The Node.js `ImageResponse` implementation from `next/og` is affected
+  by an upstream vulnerability. This can lead to remote code execution.\n\nAffected
+  applications pass attacker-controlled values into SVG content, attributes, or styles
+  during image generation:\n\n```tsx\nimport { ImageResponse } from 'next/og'\n\nexport
+  async function GET(request: Request) {\nconst value = new URL(request.url).searchParams.get('value')
+  ?? ''\n\nreturn new ImageResponse(\n<svg width=\"1200\" height=\"630\">\n<title>{value}</title>\n</svg>\n)\n}\n```\n\nApplications
+  using the Edge `ImageResponse` implementation, or applications that do not pass
+  attacker-controlled values into SVG content, attributes, or styles, are not affected."
+date: "2026-09-30"
+pubdate: "2026-09-30"
+affected_range: ">=16.2.0 <16.3.6"
+fixed_versions:
+- "16.3.6"
+affected_versions: "All versions starting from 16.2.0 before 16.3.6"
+not_impacted: "All versions before 16.2.0, all versions starting from 16.3.6"
+solution: "Upgrade to version 16.3.6 or above."
+urls:
+- "https://github.com/advisories/GHSA-vcvr-r3jv-pc5j"
+- "https://github.com/vercel/next.js/security/advisories/GHSA-vcvr-r3jv-pc5j"
+- "https://github.com/vercel/satori/security/advisories/GHSA-wx4j-mvgx-mqwp"
+- "https://github.com/vercel/next.js/commit/868fad38690d72088868f299fa2bef339b26838e"
+- "https://github.com/vercel/next.js/releases/tag/v16.3.6"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H"
+uuid: "10019bd4-678f-414a-9a8b-06605584fe77"
+cwe_ids:
+- "CWE-937"
+- "CWE-1035"
+- "CWE-1395"

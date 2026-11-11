@@ -1,0 +1,46 @@
+---
+identifier: "GHSA-w44r-93j7-qv28"
+identifiers:
+- "GHSA-w44r-93j7-qv28"
+package_slug: "cargo/rustls"
+title: "rustls: An unauthenticated ServerHello poisons the per-name key-exchange record,
+  so later ClientHellos carry only a classical X25519 share"
+description: "The client records the server-selected key-exchange group per server
+  name when it processes the ServerHello, before the server is authenticated. A network
+  attacker can answer one connection attempt for a target name with a ServerHello
+  that selects X25519 and close the connection. Later ClientHellos for that name carry
+  one X25519 share while supported_groups still lists X25519MLKEM768 first. If the
+  server accepts that share instead of sending a HelloRetryRequest, the handshake
+  completes with classical key exchange only and no error.\n\nAn attacker that answers
+  one connection attempt for the target name with a ServerHello selecting X25519 changes
+  every later ClientHello of that client for that name, for as long as the entry stays
+  in the store. No certificate or completed handshake is needed: it parses the ClientHello,
+  sends the ServerHello, and closes.\n\nTLS 1.3 transcript binding stops an on-path
+  attacker from editing the ClientHello of one connection. It does not stop the attacker
+  from steering the client's prediction state beforehand, because that state is written
+  from an unauthenticated message."
+date: "2026-10-27"
+pubdate: "2026-10-27"
+affected_range: "<0.23.46||>=0.24.0-dev.1 <0.24.0-dev.2"
+fixed_versions:
+- "0.23.46"
+- "0.24.0-dev.2"
+affected_versions: "All versions before 0.23.46, all versions starting from 0.24.0-dev.1
+  before 0.24.0-dev.2"
+not_impacted: "All versions starting from 0.23.46 before 0.24.0-dev.1, all versions
+  starting from 0.24.0-dev.2"
+solution: "Upgrade to versions 0.23.46, 0.24.0-dev.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-w44r-93j7-qv28"
+- "https://github.com/rustls/rustls/security/advisories/GHSA-w44r-93j7-qv28"
+- "https://github.com/rustls/rustls/pull/3355"
+- "https://github.com/rustls/rustls/commit/8fa0dc5d517a63411ad1e528249bdf5b098ae5e4"
+- "https://github.com/rustls/rustls/commit/f04804fa13341a9b1dc02b5d1dd8a746f2c4b7fb"
+- "https://github.com/rustls/rustls/releases/tag/v/0.23.46"
+- "https://rustsec.org/advisories/RUSTSEC-2026-0349.html"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N"
+uuid: "691b21fc-e9c8-5d7d-9e68-20ae33015596"
+cwe_ids:
+- "CWE-757"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-9q47-3cm2-2rp8"
+identifiers:
+- "GHSA-9q47-3cm2-2rp8"
+package_slug: "pypi/pyload-ng"
+title: "pyLoad: Rate-Limit Bypass and Audit-Log Spoofing via Trusted Client-Controlled
+  `X-Forwarded-For` Header"
+description: "pyLoad determines the \"client IP\" used for its rate-limiting decorator
+  and for its\nsecurity/audit logging by reading the client-supplied `X-Forwarded-For`
+  (XFF) HTTP header and\ntaking the leftmost value. No trusted-proxy configuration
+  exists (the Cheroot WSGI server faces\nclients directly, and there is no `ProxyFix`
+  middleware). Because any client can freely set this\nheader, an attacker can (1)
+  completely bypass rate limiting by rotating the header on each request,\nand (2)
+  forge the source IP recorded in security logs for login and API-key authentication\nfailures,
+  defeating IP-based blocking (e.g. fail2ban) and poisoning attribution."
+date: "2026-10-09"
+pubdate: "2026-10-09"
+affected_range: "==0.5.0-b.3.dev101"
+fixed_versions: []
+affected_versions: "Version 0.5.0-b.3.dev101"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-9q47-3cm2-2rp8"
+- "https://github.com/pyload/pyload/security/advisories/GHSA-9q47-3cm2-2rp8"
+- "https://github.com/pyload/pyload/commit/5dc6b628e2d8b9f42dde82f396e5b7a2b513f6d1"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
+uuid: "0c8ff718-00d7-4955-a13b-759e4a719e0b"
+cwe_ids:
+- "CWE-290"
+- "CWE-937"
+- "CWE-1035"

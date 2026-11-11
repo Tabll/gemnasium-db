@@ -15,7 +15,7 @@ description: "Crossplane allows package signature verification to be configured 
   for users who do all three of the following:\n\n1. Configure signature verification
   for packages,\n2. Install packages using tag references rather than digests, and\n3.
   Install packages from registries they do not control."
-date: "2026-06-19"
+date: "2026-09-29"
 pubdate: "2026-06-19"
 affected_range: "<=1.21.0-rc.0"
 fixed_versions: []

@@ -5,21 +5,14 @@ identifiers:
 package_slug: "npm/openclaw"
 title: "Duplicate Advisory: OpenClaw: Unrecognized script runners could bypass `system.run`
   approval integrity"
-description: "### Duplicate Advisory\nThis advisory has been withdrawn because it
-  is a duplicate of GHSA-qc36-x95h-7j53. This link is maintained to preserve external
-  references.\n\n### Original Description\nOpenClaw before 2026.3.11 contains an approval
-  integrity vulnerability where system.run approvals fail to bind mutable file operands
-  for certain script runners like tsx and jiti. Attackers can obtain approval for
-  benign script commands, rewrite referenced scripts on disk, and execute modified
-  code under the approved run context."
+description: "This advisory has been withdrawn."
 date: "2026-04-06"
 pubdate: "2026-03-29"
-affected_range: "<2026.3.12"
-fixed_versions:
-- "2026.3.12"
-affected_versions: "All versions before 2026.3.12"
-not_impacted: "All versions starting from 2026.3.12"
-solution: "Upgrade to version 2026.3.12 or above."
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "This advisory has been withdrawn."
+not_impacted: "This advisory has been withdrawn."
+solution: "This advisory has been withdrawn."
 urls:
 - "https://github.com/advisories/GHSA-rwwx-25m7-ww73"
 - "https://github.com/openclaw/openclaw/security/advisories/GHSA-qc36-x95h-7j53"

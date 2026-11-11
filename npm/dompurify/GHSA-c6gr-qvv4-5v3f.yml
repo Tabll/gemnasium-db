@@ -1,0 +1,36 @@
+---
+identifier: "GHSA-c6gr-qvv4-5v3f"
+identifiers:
+- "GHSA-c6gr-qvv4-5v3f"
+package_slug: "npm/dompurify"
+title: "DOMPurify: SMIL attributeName=href guard is skipped when PARSER_MEDIA_TYPE
+  is application/xhtml+xml"
+description: "DOMPurify drops `attributeName` attributes whose value contains `href`,
+  so an allowed `<animate>` or `<set>` can't rewrite a link's href after sanitizing.
+  The check compares the attribute name after `transformCaseFunc`, and that function
+  doesn't lowercase in XHTML mode. In XHTML the attribute is spelled `attributeName`,
+  so the comparison with `\"attributename\"` never matches and the guard does nothing.\n\nAn
+  app that uses `PARSER_MEDIA_TYPE: 'application/xhtml+xml'` and allows `animate`
+  and `attributeName` will keep `<animate attributeName=\"href\" values=\"x;javascript:alert(1)\">`.
+  Clicking the parent link then runs the script.\n\nThis needs a non-default config,
+  so going by SECURITY.md, this is a hardening bug rather than a bypass of the default
+  config."
+date: "2026-10-22"
+pubdate: "2026-10-22"
+affected_range: "<3.4.17"
+fixed_versions:
+- "3.4.17"
+affected_versions: "All versions before 3.4.17"
+not_impacted: "All versions starting from 3.4.17"
+solution: "Upgrade to version 3.4.17 or above."
+urls:
+- "https://github.com/advisories/GHSA-c6gr-qvv4-5v3f"
+- "https://github.com/cure53/DOMPurify/security/advisories/GHSA-c6gr-qvv4-5v3f"
+- "https://github.com/cure53/DOMPurify/pull/1672"
+- "https://github.com/cure53/DOMPurify/commit/a77a3e78b59f72fa4d1c83f22e121ad9cc7d3575"
+- "https://github.com/cure53/DOMPurify/releases/tag/3.4.17"
+uuid: "4066d04c-16f8-5366-9489-c53c9e495b73"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

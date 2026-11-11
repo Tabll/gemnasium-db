@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-3rp5-jjmw-4wv2"
 identifiers:
+- "CVE-2026-69097"
 - "GHSA-3rp5-jjmw-4wv2"
 package_slug: "pypi/GitPython"
 title: "GitPython: git-config section-name injection enables arbitrary config directives
@@ -18,7 +19,7 @@ description: "In GitPython `<= 3.1.52`, the config writer neutralizes only CR, L
   by GHSA-mv93-w799-cj2w / GHSA-v87r-6q3f-2j67: those fixed **newline** injection
   into config values/names (patched in 3.1.50); the `[r\\n\\x00]` guard added for
   them does not stop a **same-line** section break inside a name."
-date: "2026-07-24"
+date: "2026-10-23"
 pubdate: "2026-07-24"
 affected_range: "<3.1.53"
 fixed_versions:
@@ -27,10 +28,14 @@ affected_versions: "All versions before 3.1.53"
 not_impacted: "All versions starting from 3.1.53"
 solution: "Upgrade to version 3.1.53 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-69097"
 - "https://github.com/advisories/GHSA-3rp5-jjmw-4wv2"
 - "https://github.com/gitpython-developers/GitPython/security/advisories/GHSA-3rp5-jjmw-4wv2"
 - "https://github.com/gitpython-developers/GitPython/commit/1ed1b924f4e2d2ee7bab296df77b978af21853f1"
 - "https://github.com/gitpython-developers/GitPython/releases/tag/3.1.53"
+- "https://github.com/gitpython-developers/GitPython/pull/2176"
+- "https://github.com/pypa/advisory-database/tree/main/vulns/gitpython/PYSEC-2026-3981.yaml"
+- "https://www.vulncheck.com/advisories/gitpython-before-config-injection-via-submodule-names"
 cvss_v3: "CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H"
 uuid: "ee257e8a-da2c-4a93-a484-aedbe15d8b06"
 cwe_ids:

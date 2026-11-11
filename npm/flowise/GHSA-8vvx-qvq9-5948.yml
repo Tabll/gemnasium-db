@@ -1,13 +1,14 @@
 ---
 identifier: "GHSA-8vvx-qvq9-5948"
 identifiers:
+- "CVE-2025-71338"
 - "GHSA-8vvx-qvq9-5948"
 package_slug: "npm/flowise"
 title: "Flowise allows arbitrary file write to RCE"
 description: "An attacker could write files with arbitrary content to the filesystem
   via the `/api/v1/document-store/loader/process` API.\nAn attacker can reach RCE(Remote
   Code Execution) via file writing."
-date: "2025-03-14"
+date: "2026-11-03"
 pubdate: "2025-03-14"
 affected_range: "<=2.2.7"
 fixed_versions: []
@@ -15,13 +16,17 @@ affected_versions: "All versions up to 2.2.7"
 not_impacted: ""
 solution: "Unfortunately, there is no solution available yet."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2025-71338"
 - "https://github.com/advisories/GHSA-8vvx-qvq9-5948"
 - "https://github.com/FlowiseAI/Flowise/security/advisories/GHSA-8vvx-qvq9-5948"
 - "https://github.com/FlowiseAI/Flowise/commit/c2b830f279e454e8b758da441016b2234f220ac7"
-- "https://github.com/FlowiseAI/Flowise"
+- "https://github.com/FlowiseAI/Flowise/releases/tag/flowise%402.2.7-patch.1"
+- "https://www.vulncheck.com/advisories/flowise-arbitrary-file-write-to-remote-code-execution-via-document-store-api"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H"
 uuid: "efc511d8-9976-4c7b-94ef-ba8b039055e7"
 cwe_ids:
+- "CWE-73"
 - "CWE-94"
 - "CWE-937"
 - "CWE-1035"

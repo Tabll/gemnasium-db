@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-3hc7-r24j-rpwc"
+identifiers:
+- "GHSA-3hc7-r24j-rpwc"
+package_slug: "go/code.vikunja.io/api"
+title: "Vikunja: Cross-project task disclosure through subtask expansion"
+description: "Vikunja lets a task in one project have a subtask that lives in a different
+  project. When listing a project's tasks, an option pulls in those subtasks (?expand%5B%5D=subtasks).
+  The main listing is correctly filtered to the projects the caller can access, but
+  the subtask expansion is not: it returns the linked subtasks regardless of whether
+  the caller has any access to the project they belong to. So a member with read-only
+  access to one project can read the full content of tasks in other, private projects,
+  any task that is a (recursive) subtask of a task the member is allowed to see."
+date: "2026-10-09"
+pubdate: "2026-10-09"
+affected_range: "<2.6.0"
+fixed_versions:
+- "2.6.0"
+affected_versions: "All versions before 2.6.0"
+not_impacted: "All versions starting from 2.6.0"
+solution: "Upgrade to version 2.6.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-3hc7-r24j-rpwc"
+- "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-3hc7-r24j-rpwc"
+- "https://github.com/go-vikunja/vikunja/pull/3688"
+- "https://github.com/go-vikunja/vikunja/commit/077dc4de79ce6f1ab59215a2c7bf9b30423685f2"
+- "https://github.com/go-vikunja/vikunja/releases/tag/v2.6.0"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N"
+uuid: "37f679e6-c7b0-4b46-9bf9-8b6fb41208dd"
+cwe_ids:
+- "CWE-200"
+- "CWE-862"
+- "CWE-937"
+- "CWE-1035"

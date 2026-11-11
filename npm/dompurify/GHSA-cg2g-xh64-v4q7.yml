@@ -1,0 +1,38 @@
+---
+identifier: "GHSA-cg2g-xh64-v4q7"
+identifiers:
+- "GHSA-cg2g-xh64-v4q7"
+package_slug: "npm/dompurify"
+title: "DOMPurify SAFE_FOR_TEMPLATES bypass: split template expressions survive in
+  attached shadow root content on DOM output modes"
+description: "When DOMPurify is configured with `SAFE_FOR_TEMPLATES: true` together
+  with a DOM-returning mode (`RETURN_DOM: true`, `RETURN_DOM_FRAGMENT: true`, or `IN_PLACE:
+  true`), template expressions such as `{{...}}`, `${...}`, and `<%...%>` survive
+  sanitization inside the text content of an attached shadow root. The post-walk safety
+  net `_scrubTemplateExpressions` (`src/purify.ts:1717`) was extended to recurse into
+  `<template>.content`, but it never recurses into attached shadow roots. An attacker
+  who can supply a DOM node carrying a shadow root (the `IN_PLACE` and shadow-aware
+  `RETURN_DOM` surfaces) can split an expression across text nodes separated by disallowed
+  elements; after those elements are removed the fragments become adjacent and serialize
+  into a complete expression that a downstream template engine will evaluate."
+date: "2026-10-22"
+pubdate: "2026-10-22"
+affected_range: ">=3.4.4 <3.4.17"
+fixed_versions:
+- "3.4.17"
+affected_versions: "All versions starting from 3.4.4 before 3.4.17"
+not_impacted: "All versions before 3.4.4, all versions starting from 3.4.17"
+solution: "Upgrade to version 3.4.17 or above."
+urls:
+- "https://github.com/advisories/GHSA-cg2g-xh64-v4q7"
+- "https://github.com/cure53/DOMPurify/security/advisories/GHSA-cg2g-xh64-v4q7"
+- "https://github.com/cure53/DOMPurify/pull/1672"
+- "https://github.com/cure53/DOMPurify/commit/a77a3e78b59f72fa4d1c83f22e121ad9cc7d3575"
+- "https://github.com/cure53/DOMPurify/releases/tag/3.4.17"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:L"
+cvss_v4: "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:H/VI:H/VA:L/SC:N/SI:N/SA:N"
+uuid: "16af5ac7-eaca-5ea2-b025-190222fd6c39"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

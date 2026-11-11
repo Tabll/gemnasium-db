@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-2jx3-ff3v-j7jj"
+identifiers:
+- "GHSA-2jx3-ff3v-j7jj"
+package_slug: "cargo/yara-x"
+title: "yara-x: Unvalidated deserialization in safe `Rules::deserialize` allows memory
+  corruption and UB"
+description: "> [!NOTE]\n> This finding was identified during an agentic unsafe Rust
+  code review performed by Gemini AI, followed by human review and verification."
+date: "2026-09-24"
+pubdate: "2026-09-24"
+affected_range: "<1.19.0"
+fixed_versions:
+- "1.19.0"
+affected_versions: "All versions before 1.19.0"
+not_impacted: "All versions starting from 1.19.0"
+solution: "Upgrade to version 1.19.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-2jx3-ff3v-j7jj"
+- "https://github.com/VirusTotal/yara-x/security/advisories/GHSA-2jx3-ff3v-j7jj"
+- "https://github.com/VirusTotal/yara-x/commit/25efa375572efcfbe880a263ee3b0932d4b61a24"
+- "https://github.com/VirusTotal/yara-x/releases/tag/v1.19.0"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L"
+cvss_v4: "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N"
+uuid: "0b3a8fc5-b6a8-4714-8365-ba4f06ee8e41"
+cwe_ids:
+- "CWE-502"
+- "CWE-937"
+- "CWE-1035"

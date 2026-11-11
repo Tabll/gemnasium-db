@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-hx4r-w6wj-j8fg"
+identifiers:
+- "GHSA-hx4r-w6wj-j8fg"
+package_slug: "npm/devalue"
+title: "devalue: Residual sparse-array CPU amplification in uneval"
+description: "`uneval` performs synchronous work proportional to a sparse array's
+  declared length. An application that passes attacker-influenced sparse values to
+  `uneval` can suffer event-loop blocking. Since attacker-controlled creation of sparse
+  arrays is so difficult, this vulnerability is very difficult to exploit."
+date: "2026-10-01"
+pubdate: "2026-10-01"
+affected_range: "<5.9.3"
+fixed_versions:
+- "5.9.3"
+affected_versions: "All versions before 5.9.3"
+not_impacted: "All versions starting from 5.9.3"
+solution: "Upgrade to version 5.9.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-hx4r-w6wj-j8fg"
+- "https://github.com/sveltejs/devalue/security/advisories/GHSA-hx4r-w6wj-j8fg"
+- "https://github.com/sveltejs/devalue/commit/6861dbbb7e548849e48bce718e88747a298f7250"
+- "https://github.com/sveltejs/devalue/releases/tag/v5.9.3"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L"
+cvss_v4: "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N"
+uuid: "9638a8d7-3e6b-4398-8ea2-15b06663267e"
+cwe_ids:
+- "CWE-400"
+- "CWE-407"
+- "CWE-937"
+- "CWE-1035"

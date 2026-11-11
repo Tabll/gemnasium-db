@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-p2ch-c2c3-4xm5"
 identifiers:
+- "CVE-2026-125339"
 - "GHSA-p2ch-c2c3-4xm5"
 package_slug: "packagist/winter/wn-backend-module"
 title: "Winter: CSRF through AJAX handler names reachable as backend page actions"
@@ -23,7 +24,7 @@ description: "Affected versions of Winter CMS allow a backend AJAX handler to be
   relevant permission to follow an attacker-supplied link. The permissions guarding
   the affected handlers, `system.access_logs` included, are by default assigned only
   to the built-in Developer role."
-date: "2026-08-20"
+date: "2026-11-10"
 pubdate: "2026-08-20"
 affected_range: ">=1.0.319 <1.2.14"
 fixed_versions:
@@ -32,6 +33,7 @@ affected_versions: "All versions starting from 1.0.319 before 1.2.14"
 not_impacted: "All versions before 1.0.319, all versions starting from 1.2.14"
 solution: "Upgrade to version 1.2.14 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-125339"
 - "https://github.com/advisories/GHSA-p2ch-c2c3-4xm5"
 - "https://github.com/wintercms/winter/security/advisories/GHSA-p2ch-c2c3-4xm5"
 - "https://github.com/wintercms/winter/commit/353b23804dee2acf49fca996c72637040446824f"

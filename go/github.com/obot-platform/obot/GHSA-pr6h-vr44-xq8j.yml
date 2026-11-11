@@ -1,0 +1,28 @@
+---
+identifier: "GHSA-pr6h-vr44-xq8j"
+identifiers:
+- "GHSA-pr6h-vr44-xq8j"
+package_slug: "go/github.com/obot-platform/obot"
+title: "Obot: MCP Registry API readable without authentication"
+description: "In affected versions, enabling registry authentication (`OBOT_SERVER_ENABLE_REGISTRY_AUTH=true`)
+  does not actually protect the MCP Registry endpoints under `/v0.1/*` — they remain
+  readable by unauthenticated callers."
+date: "2026-09-18"
+pubdate: "2026-09-18"
+affected_range: "<0.23.0"
+fixed_versions:
+- "0.23.0"
+affected_versions: "All versions before 0.23.0"
+not_impacted: "All versions starting from 0.23.0"
+solution: "Upgrade to version 0.23.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-pr6h-vr44-xq8j"
+- "https://github.com/obot-platform/obot/security/advisories/GHSA-pr6h-vr44-xq8j"
+- "https://github.com/obot-platform/obot/releases/tag/v0.23.0"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+uuid: "6113706c-c8bc-4718-b75d-5cd6c51a2e82"
+cwe_ids:
+- "CWE-862"
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

@@ -5,21 +5,14 @@ identifiers:
 package_slug: "npm/openclaw"
 title: "Duplicate Advisory: OpenClaw: Synology Chat Webhook Pre-Auth Rate-Limit Bypass
   Enables Brute-Force Guessing of Webhook Token"
-description: "### Duplicate Advisory\nThis advisory has been withdrawn because it
-  is a duplicate of GHSA-mf5g-6r6f-ghhm. This link is maintained to preserve external
-  references.\n\n### Original Description\nOpenClaw before 2026.3.25 contains a pre-authentication
-  rate-limit bypass vulnerability in webhook token validation that allows attackers
-  to brute-force weak webhook secrets. The vulnerability exists because invalid webhook
-  tokens are rejected without throttling repeated authentication attempts, enabling
-  attackers to guess weak tokens through rapid successive requests."
+description: "This advisory has been withdrawn."
 date: "2026-04-10"
 pubdate: "2026-04-10"
-affected_range: "<2026.3.28"
-fixed_versions:
-- "2026.3.28"
-affected_versions: "All versions before 2026.3.28"
-not_impacted: "All versions starting from 2026.3.28"
-solution: "Upgrade to version 2026.3.28 or above."
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "This advisory has been withdrawn."
+not_impacted: "This advisory has been withdrawn."
+solution: "This advisory has been withdrawn."
 urls:
 - "https://github.com/advisories/GHSA-59xc-5v89-r7pr"
 - "https://github.com/openclaw/openclaw/security/advisories/GHSA-mf5g-6r6f-ghhm"

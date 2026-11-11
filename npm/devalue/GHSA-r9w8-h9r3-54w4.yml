@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-r9w8-h9r3-54w4"
+identifiers:
+- "GHSA-r9w8-h9r3-54w4"
+package_slug: "npm/devalue"
+title: "devalue: Custom ArrayBuffer revivers can bypass typed-array allocation validation"
+description: "Under very specific circumstances, `parse` could create massive ArrayBuffers
+  with very small input. This required a malformed `ArrayBuffer` custom reviver."
+date: "2026-10-17"
+pubdate: "2026-10-01"
+affected_range: "<5.9.3"
+fixed_versions:
+- "5.9.3"
+affected_versions: "All versions before 5.9.3"
+not_impacted: "All versions starting from 5.9.3"
+solution: "Upgrade to version 5.9.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-r9w8-h9r3-54w4"
+- "https://github.com/sveltejs/devalue/security/advisories/GHSA-r9w8-h9r3-54w4"
+- "https://github.com/sveltejs/devalue/commit/8f8d78e173f8a00023d009c7677ccc600dee0b99"
+- "https://github.com/sveltejs/devalue/releases/tag/v5.9.3"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+uuid: "2ae4143b-97f1-5471-a15c-bd41f0fbfde7"
+cwe_ids:
+- "CWE-789"
+- "CWE-843"
+- "CWE-937"
+- "CWE-1035"

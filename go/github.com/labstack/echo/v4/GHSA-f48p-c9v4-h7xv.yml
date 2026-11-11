@@ -1,0 +1,39 @@
+---
+identifier: "GHSA-f48p-c9v4-h7xv"
+identifiers:
+- "CVE-2026-118260"
+- "GHSA-f48p-c9v4-h7xv"
+package_slug: "go/github.com/labstack/echo/v4"
+title: "Echo: BodyDump captures request and response bodies without size limits in
+  v4"
+description: "Echo v4's opt-in BodyDump middleware read complete request bodies into
+  memory and retained complete response bodies without a capture limit. A client able
+  to submit large requests to a route using BodyDump could cause large allocations
+  before the application handler ran. Large responses, including responses whose size
+  can be influenced by a client, also caused an additional unbounded capture allocation.\n\nRepeated
+  or concurrent requests can exhaust process memory and cause denial of service. BodyDump
+  is not enabled by default. Deployments with effective request limits may reduce
+  the request-side exposure; response capture requires separate consideration."
+date: "2026-10-28"
+pubdate: "2026-10-23"
+affected_range: ">=4.0.0 <4.16.1"
+fixed_versions:
+- "4.16.1"
+affected_versions: "All versions starting from 4.0.0 before 4.16.1"
+not_impacted: "All versions before 4.0.0, all versions starting from 4.16.1"
+solution: "Upgrade to version 4.16.1 or above."
+urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-118260"
+- "https://github.com/advisories/GHSA-f48p-c9v4-h7xv"
+- "https://github.com/labstack/echo/security/advisories/GHSA-f48p-c9v4-h7xv"
+- "https://github.com/labstack/echo/pull/3105"
+- "https://github.com/labstack/echo/commit/3fb0ba7e17645bb65611e2a08875d0a2f65c421f"
+- "https://github.com/labstack/echo/releases/tag/v4.16.1"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+uuid: "31188873-fa40-5f45-a647-de9a73162567"
+cwe_ids:
+- "CWE-400"
+- "CWE-770"
+- "CWE-937"
+- "CWE-1035"

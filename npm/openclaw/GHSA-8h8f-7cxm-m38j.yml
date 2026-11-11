@@ -5,24 +5,14 @@ identifiers:
 package_slug: "npm/openclaw"
 title: "Duplicate Advisory: OpenClaw: Windows media loaders accepted remote-host file
   URLs before local path validation"
-description: "### Duplicate Advisory\nThis advisory has been withdrawn because it
-  is a duplicate of GHSA-h3x4-hc5v-v2gm. This link is maintained to preserve external
-  references.\n\n### Original Description\nOpenClaw versions prior to commit b57b680 contain
-  an approval bypass vulnerability due to inconsistent environment variable normalization
-  between approval and execution paths, allowing attackers to inject attacker-controlled
-  environment variables into execution without approval system validation. Attackers
-  can exploit differing normalization logic to discard non-portable keys during approval
-  processing while accepting them at execution time, bypassing operator review and
-  potentially influencing runtime behavior including execution of attacker-controlled
-  binaries."
+description: "This advisory has been withdrawn."
 date: "2026-04-10"
 pubdate: "2026-04-02"
-affected_range: "<2026.3.22"
-fixed_versions:
-- "2026.3.22"
-affected_versions: "All versions before 2026.3.22"
-not_impacted: "All versions starting from 2026.3.22"
-solution: "Upgrade to version 2026.3.22 or above."
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "This advisory has been withdrawn."
+not_impacted: "This advisory has been withdrawn."
+solution: "This advisory has been withdrawn."
 urls:
 - "https://github.com/advisories/GHSA-8h8f-7cxm-m38j"
 - "https://github.com/openclaw/openclaw/security/advisories/GHSA-98ch-45wp-ch47"

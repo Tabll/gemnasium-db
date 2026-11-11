@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-xrmj-5g4g-8987"
 identifiers:
+- "CVE-2026-123809"
 - "GHSA-xrmj-5g4g-8987"
 package_slug: "npm/@dynatrace-oss/dynatrace-mcp-server"
 title: "@dynatrace-oss/dynatrace-mcp-server has a workflow template injection via
@@ -9,7 +10,7 @@ description: "A template injection vulnerability in the `create_workflow_for_not
   tool lets a caller embed Jinja2 expressions that the Dynatrace workflow engine evaluates
   at runtime, exfiltrating event data to attacker-controlled destinations through
   a workflow that persists in the tenant after the MCP session ends."
-date: "2026-07-31"
+date: "2026-11-09"
 pubdate: "2026-07-31"
 affected_range: "<2.0.0"
 fixed_versions:
@@ -18,6 +19,7 @@ affected_versions: "All versions before 2.0.0"
 not_impacted: "All versions starting from 2.0.0"
 solution: "Upgrade to version 2.0.0 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-123809"
 - "https://github.com/advisories/GHSA-xrmj-5g4g-8987"
 - "https://github.com/dynatrace-oss/dynatrace-mcp/security/advisories/GHSA-xrmj-5g4g-8987"
 - "https://github.com/dynatrace-oss/dynatrace-mcp/pull/547"

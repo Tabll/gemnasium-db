@@ -1,0 +1,47 @@
+---
+identifier: "GHSA-g73g-hqqh-jr95"
+identifiers:
+- "GHSA-g73g-hqqh-jr95"
+package_slug: "npm/nodemailer"
+title: "Nodemailer: RFC 5322 comment inside an angle-bracket address is never stripped"
+description: "Nodemailer's address parser has three published, patched fixes for RFC
+  5322 comment `( ... )` handling inside an addr-spec: GHSA-cc9r-2j5m-2m83 (comment
+  glued two domain atoms into one), GHSA-g57g-f23g-4646 (the same glue for a quoted
+  local part), and the related ReDoS fixes GHSA-prgh-xp8r-p3m5 / GHSA-v53p-9fqp-m79j.
+  All three fixes live in `_handleAddress()`'s `joins` / `_recoverAddrSpec()` logic
+  in `src/addressparser/index.ts`, and that logic is exercised whenever the local
+  text-accumulation path in the tokenizer runs.\n\nThat logic is **never reached at
+  all** for the single most common way a recipient is written: a display name followed
+  by an angle-bracket address, `Name <local@domain>`. When the input inside the angle
+  brackets itself contains an RFC 5322 comment, e.g.\n\n```\nLegit User <user@good-corp.com(x)evil.com>\n```\n\nthe
+  comment is not recognized as an operator, is not stripped, and the parenthesis characters
+  survive **verbatim** inside the parsed address. That value is used as-is for `envelope.to`
+  and is written raw onto the wire in the `RCPT TO` SMTP command. I confirmed this
+  end to end:\n\n* against nodemailer's own `jsonTransport`/`streamTransport` (`envelope.to`
+  and the emitted `To:` header both carry the malformed value), and\n* against a real
+  SMTP server (`aiosmtpd`), where the malformed value is fatal to the transaction
+  (`501 Syntax: RCPT TO: <address> [SP <mail-parameters>]`, all recipients rejected).\n\nThis
+  reproduces unmodified on every version I tested from `6.9.16` through the current
+  `10.0.12` HEAD, i.e. it predates and survives all three of the address-parser advisories
+  above unchanged, because it is a different root cause in a code path those fixes
+  never touch."
+date: "2026-10-27"
+pubdate: "2026-10-27"
+affected_range: ">=3.0.0 <10.0.13"
+fixed_versions:
+- "10.0.13"
+affected_versions: "All versions starting from 3.0.0 before 10.0.13"
+not_impacted: "All versions before 3.0.0, all versions starting from 10.0.13"
+solution: "Upgrade to version 10.0.13 or above."
+urls:
+- "https://github.com/advisories/GHSA-g73g-hqqh-jr95"
+- "https://github.com/nodemailer/nodemailer/security/advisories/GHSA-g73g-hqqh-jr95"
+- "https://github.com/nodemailer/nodemailer/commit/a502247555fd81773eac337486781f3b6008e16a"
+- "https://github.com/nodemailer/nodemailer/releases/tag/v10.0.13"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+uuid: "34d78e40-4c6e-58d8-88ee-80c88b5d81ea"
+cwe_ids:
+- "CWE-20"
+- "CWE-436"
+- "CWE-937"
+- "CWE-1035"

@@ -1,0 +1,30 @@
+---
+identifier: "GHSA-m3qr-fvp4-78xj"
+identifiers:
+- "GHSA-m3qr-fvp4-78xj"
+package_slug: "go/github.com/basekick-labs/arc"
+title: "Arc has unauthenticated application log disclosure via `/api/v1/logs`"
+description: "Arc exposes `GET /api/v1/logs` without authentication even when authentication
+  is enabled by default. The route is registered before the global Fiber authentication
+  middleware, and the handler returns recent buffered application logs without performing
+  its own authorization check."
+date: "2026-11-03"
+pubdate: "2026-11-03"
+affected_range: "<0.0.0-20260615165136-bb7d9761ad98"
+fixed_versions:
+- "0.0.0-20260615165136-bb7d9761ad98"
+affected_versions: "All versions before 0.0.0-20260615165136-bb7d9761ad98"
+not_impacted: "All versions starting from 0.0.0-20260615165136-bb7d9761ad98"
+solution: "Upgrade to version 0.0.0-20260615165136-bb7d9761ad98 or above."
+urls:
+- "https://github.com/advisories/GHSA-m3qr-fvp4-78xj"
+- "https://github.com/Basekick-Labs/arc/security/advisories/GHSA-m3qr-fvp4-78xj"
+- "https://github.com/Basekick-Labs/arc/pull/506"
+- "https://github.com/Basekick-Labs/arc/commit/bb7d9761ad9801e93837762ff7d37460f1df19dd"
+- "https://github.com/Basekick-Labs/arc/releases/tag/v26.06.2"
+uuid: "096a0152-1895-5076-94da-30f6e354c630"
+cwe_ids:
+- "CWE-200"
+- "CWE-306"
+- "CWE-937"
+- "CWE-1035"

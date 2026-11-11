@@ -5,21 +5,14 @@ identifiers:
 package_slug: "npm/openclaw"
 title: "Duplicate Advisory: OpenClaw: `fetchWithSsrFGuard` replays unsafe request
   bodies across cross-origin redirects"
-description: "### Duplicate Advisory\nThis advisory has been withdrawn because it
-  is a duplicate of GHSA-qx8j-g322-qj6m. This link is maintained to preserve external
-  references.\n\n### Original Description\nOpenClaw before 2026.3.31 (patched in 2026.4.8)
-  contains a request body replay vulnerability in fetchWithSsrFGuard that allows unsafe
-  request bodies to be resent across cross-origin redirects. Attackers can exploit
-  this by triggering redirects to exfiltrate sensitive request data or headers to
-  unintended origins."
+description: "This advisory has been withdrawn."
 date: "2026-04-10"
 pubdate: "2026-04-09"
-affected_range: "<2026.4.8"
-fixed_versions:
-- "2026.4.8"
-affected_versions: "All versions before 2026.4.8"
-not_impacted: "All versions starting from 2026.4.8"
-solution: "Upgrade to version 2026.4.8 or above."
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "This advisory has been withdrawn."
+not_impacted: "This advisory has been withdrawn."
+solution: "This advisory has been withdrawn."
 urls:
 - "https://github.com/advisories/GHSA-pg8g-f2hf-x82m"
 - "https://github.com/openclaw/openclaw/security/advisories/GHSA-qx8j-g322-qj6m"

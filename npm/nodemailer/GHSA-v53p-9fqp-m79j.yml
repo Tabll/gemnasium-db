@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-v53p-9fqp-m79j"
+identifiers:
+- "GHSA-v53p-9fqp-m79j"
+package_slug: "npm/nodemailer"
+title: "Nodemailer: Quadratic backtracking in the addressparser free-text fallback
+  allows remote denial of service"
+description: "When `addressparser` finds no address by its strict reading, it falls
+  back to pulling one out of the free text with `/\\s*\\b[^@\\s]+@[^\\s]+\\b\\s*/`.
+  That pattern backtracks quadratically: `[^@\\s]+` is retried from every offset and
+  rescans the run to the next `@` each time. A single header value holding a long
+  whitespace-free run with no usable `@` blocks the Node.js event loop for tens of
+  seconds.\n\nIt is cheaper to exploit than GHSA-prgh-xp8r-p3m5: 273KB is enough for
+  ~43s, where the comment-joined shape needed ~1.5MB for ~10s."
+date: "2026-09-29"
+pubdate: "2026-09-29"
+affected_range: "<10.0.6"
+fixed_versions:
+- "10.0.6"
+affected_versions: "All versions before 10.0.6"
+not_impacted: "All versions starting from 10.0.6"
+solution: "Upgrade to version 10.0.6 or above."
+urls:
+- "https://github.com/advisories/GHSA-v53p-9fqp-m79j"
+- "https://github.com/nodemailer/nodemailer/security/advisories/GHSA-v53p-9fqp-m79j"
+- "https://github.com/nodemailer/nodemailer/commit/437d7fc47403df176bc39271641541b7a9bce102"
+- "https://github.com/nodemailer/nodemailer/releases/tag/v10.0.6"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "f2565bfd-603c-4790-99f6-08df76000912"
+cwe_ids:
+- "CWE-407"
+- "CWE-937"
+- "CWE-1035"
+- "CWE-1333"

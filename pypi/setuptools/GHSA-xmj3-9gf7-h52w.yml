@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-xmj3-9gf7-h52w"
+identifiers:
+- "GHSA-xmj3-9gf7-h52w"
+package_slug: "pypi/setuptools"
+title: "setuptools: Windows path escape via namespace_packages.txt during legacy wheel
+  installation  Description"
+description: "On Windows, attacker-controlled content in a wheel's\n`.dist-info/namespace_packages.txt`
+  can cause setuptools' legacy wheel\ninstallation path to create an `__init__.py`
+  outside the requested\n`destination_eggdir`.\n\nThe attacker can influence the destination
+  path, but not the contents of\nthe created file."
+date: "2026-10-23"
+pubdate: "2026-10-23"
+affected_range: ">=38.2.2,<84.1.0"
+fixed_versions:
+- "84.1.0"
+affected_versions: "All versions starting from 38.2.2 before 84.1.0"
+not_impacted: "All versions before 38.2.2, all versions starting from 84.1.0"
+solution: "Upgrade to version 84.1.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-xmj3-9gf7-h52w"
+- "https://github.com/pypa/setuptools/security/advisories/GHSA-xmj3-9gf7-h52w"
+- "https://github.com/pypa/setuptools/pull/5329"
+- "https://github.com/pypa/setuptools/commit/6d07b8d17890dda58d944ac51e58f54af92d52af"
+- "https://github.com/pypa/setuptools/releases/tag/v84.1.0"
+cvss_v3: "CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:N/I:L/A:L"
+cvss_v4: "CVSS:4.0/AV:L/AC:H/AT:P/PR:L/UI:A/VC:N/VI:L/VA:L/SC:N/SI:N/SA:N"
+uuid: "d1ce8ba6-581f-5ba7-9f15-347733e52719"
+cwe_ids:
+- "CWE-22"
+- "CWE-937"
+- "CWE-1035"

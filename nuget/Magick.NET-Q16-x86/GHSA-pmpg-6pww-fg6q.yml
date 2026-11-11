@@ -8,7 +8,7 @@ title: "ImageMagick has out-of-bounds access in ConnectedComponentsImage() via C
   connected-components:* artifacts"
 description: "When the `connected-components:*` define specifies an invalid index
   and out of bound operation will result in an access violation."
-date: "2026-06-24"
+date: "2026-09-18"
 pubdate: "2026-04-14"
 affected_range: "[,14.12.0)"
 fixed_versions:
@@ -20,6 +20,7 @@ urls:
 - "https://nvd.nist.gov/vuln/detail/CVE-2026-56370"
 - "https://github.com/advisories/GHSA-pmpg-6pww-fg6q"
 - "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-pmpg-6pww-fg6q"
+- "https://www.vulncheck.com/advisories/imagemagick-out-of-bounds-access-in-connectedcomponentsimage-via-connected-components-artifact"
 cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L"
 uuid: "00e63dd4-c31a-445e-aabc-d95e57a27910"
 cwe_ids:

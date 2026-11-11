@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-g7fw-3gjp-g5hf"
+identifiers:
+- "GHSA-g7fw-3gjp-g5hf"
+package_slug: "npm/@openclaw/matrix"
+title: "OpenClaw: Channel read actions could skip target allowlists"
+description: "Channel read actions could skip target allowlists. In affected versions,
+  explicit read targets in Microsoft Teams, Feishu, Matrix, and Google Chat could
+  reach channels or rooms outside the configured read policy.\n\nThis advisory is
+  scoped to caller-supplied targets for message, reaction, pin, member, and related
+  metadata reads in the named plugins. It does not change OpenClaw's trusted-operator
+  model or create per-user isolation within one Gateway."
+date: "2026-10-05"
+pubdate: "2026-10-05"
+affected_range: "<2026.8.1"
+fixed_versions:
+- "2026.8.1"
+affected_versions: "All versions before 2026.8.1"
+not_impacted: "All versions starting from 2026.8.1"
+solution: "Upgrade to version 2026.8.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-g7fw-3gjp-g5hf"
+- "https://github.com/openclaw/openclaw/security/advisories/GHSA-g7fw-3gjp-g5hf"
+- "https://github.com/openclaw/openclaw/pull/99905"
+- "https://github.com/openclaw/openclaw/commit/fbd330b7aa4a26726fa8468f0db2a23ada3843bd"
+- "https://github.com/openclaw/openclaw/releases/tag/v2026.8.1"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+uuid: "6c40b289-fa74-4f52-b4b3-34666955e4d3"
+cwe_ids:
+- "CWE-862"
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

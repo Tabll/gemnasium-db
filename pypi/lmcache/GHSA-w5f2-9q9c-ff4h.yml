@@ -1,0 +1,39 @@
+---
+identifier: "GHSA-w5f2-9q9c-ff4h"
+identifiers:
+- "CVE-2026-105192"
+- "GHSA-w5f2-9q9c-ff4h"
+package_slug: "pypi/lmcache"
+title: "LMCache: Remote code execution via unsafe deserialization in multiprocess
+  mode transport"
+description: "LMCache is vulnerable to Unauthenticated Remote Code Execution via Pickle
+  Deserialization on the Multiprocess ZMQ Transport"
+date: "2026-11-10"
+pubdate: "2026-10-16"
+affected_range: ">=0.3.9,<0.5.6"
+fixed_versions:
+- "0.5.6"
+affected_versions: "All versions starting from 0.3.9 before 0.5.6"
+not_impacted: "All versions before 0.3.9, all versions starting from 0.5.6"
+solution: "Upgrade to version 0.5.6 or above."
+urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-105192"
+- "https://github.com/advisories/GHSA-w5f2-9q9c-ff4h"
+- "https://github.com/LMCache/LMCache/security/advisories/GHSA-w5f2-9q9c-ff4h"
+- "https://github.com/LMCache/LMCache/pull/5644"
+- "https://github.com/LMCache/LMCache/pull/5684"
+- "https://github.com/LMCache/LMCache/pull/5685"
+- "https://github.com/LMCache/LMCache/commit/160b6dec469edb765efd1fad42aca5a438b08bb5"
+- "https://github.com/LMCache/LMCache/commit/62f74c417dfe1ba56761733fd25dc8209a192f20"
+- "https://github.com/LMCache/LMCache/commit/767c7e367bbdc357c445cf7bd2ed259cff8d5865"
+- "https://blog.lmcache.ai/en/2026/10/13/an-update-on-cve-2026-105192"
+- "https://github.com/LMCache/LMCache/blob/v0.3.9/lmcache/v1/multiprocess/custom_types.py"
+- "https://github.com/LMCache/LMCache/blob/v0.5.5/lmcache/v1/platform/base/ipc_wrapper.py"
+- "https://research.jfrog.com/vulnerabilities/lmcache-is-vulnerable-to-unauthenticated-remote-code-execution-via-pickle-deserialization-on-the-multiprocess-zmq-transport-cve-2026-105192-jfsa-2026-001694382"
+- "https://github.com/LMCache/LMCache/releases/tag/v0.5.6"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+uuid: "60a47d5f-2968-55dc-9c35-df9e0959da47"
+cwe_ids:
+- "CWE-306"
+- "CWE-937"
+- "CWE-1035"

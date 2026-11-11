@@ -1,0 +1,36 @@
+---
+identifier: "GHSA-3cr3-8m4c-fpxw"
+identifiers:
+- "CVE-2026-105747"
+- "GHSA-3cr3-8m4c-fpxw"
+package_slug: "pypi/docling"
+title: "Docling: METS-GBS archive member limit enforced after full member enumeration
+  (memory exhaustion during format detection)"
+description: "When docling detects the input format of a gzip-compressed tar archive
+  (METS-GBS), and later when the METS-GBS backend opens it, it calls `tarfile.TarFile.getmembers()`.
+  That builds the full member list in memory before the `max_member_count` limit is
+  checked. A small archive with a very large number of empty members therefore makes
+  docling allocate memory in proportion to the member count, and the limit has no
+  effect."
+date: "2026-10-06"
+pubdate: "2026-10-06"
+affected_range: ">=2.45.0,<2.131.0"
+fixed_versions:
+- "2.131.0"
+affected_versions: "All versions starting from 2.45.0 before 2.131.0"
+not_impacted: "All versions before 2.45.0, all versions starting from 2.131.0"
+solution: "Upgrade to version 2.131.0 or above."
+urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-105747"
+- "https://github.com/advisories/GHSA-3cr3-8m4c-fpxw"
+- "https://github.com/docling-project/docling/security/advisories/GHSA-3cr3-8m4c-fpxw"
+- "https://github.com/docling-project/docling/pull/4412"
+- "https://github.com/docling-project/docling/commit/ebae65cd71c37c88b36185b406a449b92d8f7ffa"
+- "https://github.com/docling-project/docling/releases/tag/v2.131.0"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L"
+uuid: "169a9bc4-b7f1-4789-b05c-9096f4d91c3c"
+cwe_ids:
+- "CWE-409"
+- "CWE-770"
+- "CWE-937"
+- "CWE-1035"

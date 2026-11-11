@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-jgh3-fggc-mcpm"
+identifiers:
+- "GHSA-jgh3-fggc-mcpm"
+package_slug: "go/github.com/obot-platform/obot"
+title: "Obot: Server-Side Request Forgery via remote MCP server URL"
+description: "In affected versions, the URL of a remote MCP server is attacker-controlled
+  at registration and is fetched server-side with no validation of the destination.
+  There is no guard against loopback, link-local, RFC1918 private ranges, or the cloud
+  metadata endpoint (`169.254.169.254`), so a use with the Power User, Power User
+  Plus, or Admin role can coerce Obot into making requests to internal services and
+  to the cloud instance metadata service, and read the responses."
+date: "2026-09-18"
+pubdate: "2026-09-18"
+affected_range: "<0.23.0"
+fixed_versions:
+- "0.23.0"
+affected_versions: "All versions before 0.23.0"
+not_impacted: "All versions starting from 0.23.0"
+solution: "Upgrade to version 0.23.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-jgh3-fggc-mcpm"
+- "https://github.com/obot-platform/obot/security/advisories/GHSA-jgh3-fggc-mcpm"
+- "https://github.com/obot-platform/obot/releases/tag/v0.23.0"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:L/A:N"
+uuid: "52438190-59fe-4d99-8949-37d75eb1ae77"
+cwe_ids:
+- "CWE-918"
+- "CWE-937"
+- "CWE-1035"
+- "CWE-1188"

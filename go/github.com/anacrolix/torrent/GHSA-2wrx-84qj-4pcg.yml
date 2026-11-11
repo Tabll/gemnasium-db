@@ -1,0 +1,41 @@
+---
+identifier: "GHSA-2wrx-84qj-4pcg"
+identifiers:
+- "GHSA-2wrx-84qj-4pcg"
+package_slug: "go/github.com/anacrolix/torrent"
+title: "anacrolix torrent has unbounded recursion in the bencode decoder that causes
+  stack-overflow crash and CPU-exhaustion DoS"
+description: "anacrolix/torrent's bencode decoder (`bencode/`) applies **no limit
+  on the nesting depth** of nested dictionaries and lists. Two distinct denial-of-service
+  mechanisms follow from that single root cause, both reachable from a single crafted
+  `.torrent` file or from metadata obtained from a peer on a magnet-link/v2 download:\n\n1.
+  **Stack-overflow process crash.** `Decoder.readOneValue` recurses once per nesting
+  level with no depth bound. A `.torrent` whose `info` value is a list nested a few
+  million levels deep (≈8 MB file) drives the recursion past the 1 GiB goroutine-stack
+  limit and the process dies with an unrecoverable `fatal error: stack overflow`.
+  2. **Quadratic CPU exhaustion.** `metainfo.FileTree.UnmarshalBencode` (BitTorrent
+  v2) re-parses each subtree at every level, making parse time grow ~O(n²). A v2 info
+  dict with a ~30,000-level file tree (≈0.2 MB) takes ~66 s to decode; 60,000 levels
+  exceeds 90 s of decode time.\n\nAffected: every application embedding `github.com/anacrolix/torrent`
+  that ingests attacker-supplied metainfo - the CLI tools (`cmd/torrent`, `cmd/torrent2`),
+  any server that opens `.torrent` files, or any client that accepts metadata from
+  a peer for a magnet/v2 download. No depth limit has ever existed in the decoder."
+date: "2026-10-30"
+pubdate: "2026-10-30"
+affected_range: "<1.61.1-0.20260911233437-76452a2c8a2f"
+fixed_versions:
+- "1.61.1-0.20260911233437-76452a2c8a2f"
+affected_versions: "All versions before 1.61.1-0.20260911233437-76452a2c8a2f"
+not_impacted: "All versions starting from 1.61.1-0.20260911233437-76452a2c8a2f"
+solution: "Upgrade to version 1.61.1-0.20260911233437-76452a2c8a2f or above."
+urls:
+- "https://github.com/advisories/GHSA-2wrx-84qj-4pcg"
+- "https://github.com/anacrolix/torrent/security/advisories/GHSA-2wrx-84qj-4pcg"
+- "https://github.com/anacrolix/torrent/commit/76452a2c8a2fd9c59d4d4f10fc3495723d538c7b"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+uuid: "f6469ec1-0e29-5e7b-ae9a-6a0dd23675fe"
+cwe_ids:
+- "CWE-407"
+- "CWE-674"
+- "CWE-937"
+- "CWE-1035"

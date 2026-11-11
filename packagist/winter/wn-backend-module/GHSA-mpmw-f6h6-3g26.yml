@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-mpmw-f6h6-3g26"
 identifiers:
+- "CVE-2026-126061"
 - "GHSA-mpmw-f6h6-3g26"
 package_slug: "packagist/winter/wn-backend-module"
 title: "Winter: My Account preview exposes another backend user's profile by record
@@ -23,7 +24,7 @@ description: "`Backend\\Controllers\\MyAccount`, introduced in v1.2.13, declares
   authorization guards added in v1.2.13. The confirmed impact is unauthorized disclosure
   of backend user profile data.\n\nTo actively exploit this security issue, an attacker
   would need access to the Backend with a user account with any level of access."
-date: "2026-08-20"
+date: "2026-11-10"
 pubdate: "2026-08-20"
 affected_range: ">=1.2.13 <1.2.14"
 fixed_versions:
@@ -32,6 +33,7 @@ affected_versions: "All versions starting from 1.2.13 before 1.2.14"
 not_impacted: "All versions before 1.2.13, all versions starting from 1.2.14"
 solution: "Upgrade to version 1.2.14 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-126061"
 - "https://github.com/advisories/GHSA-mpmw-f6h6-3g26"
 - "https://github.com/wintercms/winter/security/advisories/GHSA-mpmw-f6h6-3g26"
 - "https://github.com/wintercms/winter/commit/cdbc8f5a23db27f72ccec658a8e5769e6d9f6dcb"

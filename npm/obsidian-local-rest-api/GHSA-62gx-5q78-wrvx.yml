@@ -13,7 +13,7 @@ description: "The Local REST API's `/vault/{path}` endpoints (GET/PUT/PATCH/POST
   a real `/` by the handler's `decodeURIComponent`, reconstituting a `../` traversal
   that walks out of the vault. An **authenticated** client can read, write, or delete
   **arbitrary files on the host** with the Obsidian process's privileges."
-date: "2026-07-15"
+date: "2026-11-02"
 pubdate: "2026-07-15"
 affected_range: "<4.1.3"
 fixed_versions:
@@ -25,6 +25,7 @@ urls:
 - "https://github.com/advisories/GHSA-62gx-5q78-wrvx"
 - "https://github.com/coddingtonbear/obsidian-local-rest-api/security/advisories/GHSA-62gx-5q78-wrvx"
 - "https://github.com/coddingtonbear/obsidian-local-rest-api/releases/tag/4.1.3"
+- "https://github.com/coddingtonbear/obsidian-local-rest-api/commit/fdc97f9e652e0d38cb43911d31f827a12b248fc8"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
 uuid: "65903cb0-25b5-462c-9730-98c250944bcb"
 cwe_ids:

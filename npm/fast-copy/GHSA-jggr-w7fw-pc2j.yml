@@ -1,0 +1,40 @@
+---
+identifier: "GHSA-jggr-w7fw-pc2j"
+identifiers:
+- "GHSA-jggr-w7fw-pc2j"
+package_slug: "npm/fast-copy"
+title: "fast-copy: Stack exhaustion in fast-copy when copying deeply-nested values"
+description: "`fast-copy` traverses values recursively with no bound on depth. Copying
+  a sufficiently deeply-nested value exhausts the JavaScript call stack and throws
+  a native `RangeError: Maximum call stack size exceeded` from inside the library."
+date: "2026-10-05"
+pubdate: "2026-10-05"
+affected_range: "<2.2.0||>=3.0.0 <3.1.0||>=4.0.0 <4.1.0"
+fixed_versions:
+- "2.2.0"
+- "3.1.0"
+- "4.1.0"
+affected_versions: "All versions before 2.2.0, all versions starting from 3.0.0 before
+  3.1.0, all versions starting from 4.0.0 before 4.1.0"
+not_impacted: "All versions starting from 2.2.0 before 3.0.0, all versions starting
+  from 3.1.0 before 4.0.0, all versions starting from 4.1.0"
+solution: "Upgrade to versions 2.2.0, 3.1.0, 4.1.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-jggr-w7fw-pc2j"
+- "https://github.com/planttheidea/fast-copy/security/advisories/GHSA-jggr-w7fw-pc2j"
+- "https://github.com/planttheidea/fast-copy/pull/137"
+- "https://github.com/planttheidea/fast-copy/pull/138"
+- "https://github.com/planttheidea/fast-copy/pull/139"
+- "https://github.com/planttheidea/fast-copy/commit/359c00884ae8ae31f10925fd0e2fc66661db6cef"
+- "https://github.com/planttheidea/fast-copy/commit/caa7caace65767dfe252f0dc5115d82c99ca16b9"
+- "https://github.com/planttheidea/fast-copy/commit/dedf465e5329fbd149f13b53521af962d16ff8df"
+- "https://github.com/planttheidea/fast-copy/releases/tag/v2.2.0"
+- "https://github.com/planttheidea/fast-copy/releases/tag/v3.1.0"
+- "https://github.com/planttheidea/fast-copy/releases/tag/v4.1.0"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N"
+uuid: "b8c640b6-4421-4971-8193-f060f0fdebb2"
+cwe_ids:
+- "CWE-674"
+- "CWE-937"
+- "CWE-1035"

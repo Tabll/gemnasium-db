@@ -1,0 +1,29 @@
+---
+identifier: "GHSA-mcm9-63f2-9j32"
+identifiers:
+- "GHSA-mcm9-63f2-9j32"
+package_slug: "npm/devalue"
+title: "devalue: Repeated primitive strings cause quadratic expansion in uneval"
+description: "Under very constrained circumstances, data that was `parse`d and then
+  passed to `uneval` could turn a small payload into a very large serialized string."
+date: "2026-10-01"
+pubdate: "2026-10-01"
+affected_range: "<5.9.3"
+fixed_versions:
+- "5.9.3"
+affected_versions: "All versions before 5.9.3"
+not_impacted: "All versions starting from 5.9.3"
+solution: "Upgrade to version 5.9.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-mcm9-63f2-9j32"
+- "https://github.com/sveltejs/devalue/security/advisories/GHSA-mcm9-63f2-9j32"
+- "https://github.com/sveltejs/devalue/commit/84f6f67999104e36940f744bec0443536de1b463"
+- "https://github.com/sveltejs/devalue/releases/tag/v5.9.3"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+uuid: "3a719b3b-e2c9-4dc8-934a-fc63c27bb17b"
+cwe_ids:
+- "CWE-400"
+- "CWE-409"
+- "CWE-937"
+- "CWE-1035"

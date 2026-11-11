@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-494m-4556-wf5p"
+identifiers:
+- "GHSA-494m-4556-wf5p"
+package_slug: "go/github.com/imgproxy/imgproxy/v3"
+title: "imgproxy has out-of-bounds heap read/write in ICO loader BMP header reconstruction
+  that allows unauthenticated remote worker crash"
+description: "Out-of-bounds heap write in imgproxy's ICO loader (`vips/icoload.c`):
+  when the ICO entry's image data buffer is small, the loader's BMP-header-reconstruction
+  writes land past the allocation, corrupting the size field of the following heap
+  chunk. The worker then aborts deterministically (glibc `munmap_chunk(): invalid
+  pointer` → SIGABRT → Go panic, exit code 2)."
+date: "2026-10-30"
+pubdate: "2026-10-30"
+affected_range: ">=3.3.0 <4.0.17"
+fixed_versions:
+- "4.0.17"
+affected_versions: "All versions starting from 3.3.0 before 4.0.17"
+not_impacted: "All versions before 3.3.0, all versions starting from 4.0.17"
+solution: "Upgrade to version 4.0.17 or above."
+urls:
+- "https://github.com/advisories/GHSA-494m-4556-wf5p"
+- "https://github.com/imgproxy/imgproxy/security/advisories/GHSA-494m-4556-wf5p"
+- "https://github.com/imgproxy/imgproxy/pull/1726"
+- "https://github.com/imgproxy/imgproxy/commit/39fd9e844a8a46084161502e993d5a3c16ccf28d"
+- "https://github.com/imgproxy/imgproxy/releases/tag/v4.0.17"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+uuid: "b0ac714b-2bf8-5489-8543-e74538c5a9d8"
+cwe_ids:
+- "CWE-125"
+- "CWE-787"
+- "CWE-937"
+- "CWE-1035"

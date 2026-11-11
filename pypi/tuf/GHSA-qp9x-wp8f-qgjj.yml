@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-qp9x-wp8f-qgjj"
 identifiers:
+- "CVE-2026-123806"
 - "GHSA-qp9x-wp8f-qgjj"
 package_slug: "pypi/tuf"
 title: "tuf has platform-dependent delegation path matching"
@@ -14,7 +15,7 @@ description: "`DelegatedRole._is_target_in_pathpattern` uses `fnmatch.fnmatch` t
   dependent on the host operating system of the client running the updater.\n\nThe
   result on Windows is a TUF specification violation in the python-tuf `ngclient`
   implementation."
-date: "2026-05-28"
+date: "2026-11-09"
 pubdate: "2026-05-28"
 affected_range: "<7.0.0"
 fixed_versions:
@@ -23,6 +24,7 @@ affected_versions: "All versions before 7.0.0"
 not_impacted: "All versions starting from 7.0.0"
 solution: "Upgrade to version 7.0.0 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-123806"
 - "https://github.com/advisories/GHSA-qp9x-wp8f-qgjj"
 - "https://github.com/theupdateframework/python-tuf/security/advisories/GHSA-qp9x-wp8f-qgjj"
 - "https://github.com/theupdateframework/python-tuf/releases/tag/v7.0.0"

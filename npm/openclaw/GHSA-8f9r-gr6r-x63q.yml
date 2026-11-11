@@ -5,21 +5,14 @@ identifiers:
 package_slug: "npm/openclaw"
 title: "Duplicate Advisory: OpenClaw: Feishu webhook reads and parses unauthenticated
   request bodies before signature validation"
-description: "### Duplicate Advisory\nThis advisory has been withdrawn because it
-  is a duplicate of GHSA-3h52-cx59-c456. This link is maintained to preserve external
-  references.\n\n### Original Description\nOpenClaw before 2026.3.25 parses JSON request
-  bodies before validating webhook signatures, allowing unauthenticated attackers
-  to force resource-intensive parsing operations. Remote attackers can send malicious
-  webhook requests to trigger denial of service by exhausting server resources through
-  forced JSON parsing before signature rejection."
+description: "This advisory has been withdrawn."
 date: "2026-04-10"
 pubdate: "2026-04-10"
-affected_range: "<2026.3.28"
-fixed_versions:
-- "2026.3.28"
-affected_versions: "All versions before 2026.3.28"
-not_impacted: "All versions starting from 2026.3.28"
-solution: "Upgrade to version 2026.3.28 or above."
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "This advisory has been withdrawn."
+not_impacted: "This advisory has been withdrawn."
+solution: "This advisory has been withdrawn."
 urls:
 - "https://github.com/advisories/GHSA-8f9r-gr6r-x63q"
 - "https://github.com/openclaw/openclaw/security/advisories/GHSA-3h52-cx59-c456"

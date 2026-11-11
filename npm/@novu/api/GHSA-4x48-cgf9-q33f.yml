@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-4x48-cgf9-q33f"
 identifiers:
+- "CVE-2026-125114"
 - "GHSA-4x48-cgf9-q33f"
 package_slug: "npm/@novu/api"
 title: "Novu has SSRF via conditions filter webhook bypasses validateUrlSsrf() protection"
@@ -9,7 +10,7 @@ description: "The conditions filter webhook at `libs/application-generic/src/use
   no SSRF validation. The HTTP Request workflow step in the same codebase correctly
   uses `validateUrlSsrf()` which blocks private IP ranges. The conditions webhook
   was not included in this protection."
-date: "2026-04-14"
+date: "2026-11-09"
 pubdate: "2026-04-14"
 affected_range: "<3.15.0"
 fixed_versions:
@@ -18,10 +19,10 @@ affected_versions: "All versions before 3.15.0"
 not_impacted: "All versions starting from 3.15.0"
 solution: "Upgrade to version 3.15.0 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-125114"
 - "https://github.com/advisories/GHSA-4x48-cgf9-q33f"
 - "https://github.com/novuhq/novu/security/advisories/GHSA-4x48-cgf9-q33f"
 - "https://github.com/novuhq/novu/commit/87d965eb88340ac7cd262dd52c8015acd092dc68"
-- "https://github.com/novuhq/novu"
 uuid: "922314b0-9450-4e7e-b6b3-8b2533ebdc92"
 cwe_ids:
 - "CWE-918"

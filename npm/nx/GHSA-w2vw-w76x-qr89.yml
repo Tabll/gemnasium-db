@@ -1,0 +1,51 @@
+---
+identifier: "GHSA-w2vw-w76x-qr89"
+identifiers:
+- "GHSA-w2vw-w76x-qr89"
+package_slug: "npm/nx"
+title: "Nx: OS command injection via git revisions and remote refs"
+description: "Nx core builds several `git` invocations as shell command strings with
+  untrusted values interpolated into them, so a value that should be a git revision
+  or ref is parsed by `/bin/sh` instead. Two entry points are reachable by an attacker:
+  `affected` commands, where `defaultBase` / `affected.defaultBase` from `nx.json`
+  (and the `NX_BASE` / `NX_HEAD` environment variables) reach `git merge-base` and
+  `git diff`; and `nx import`, where a branch name advertised by a remote repository
+  reaches `git fetch`, `git checkout`, and `git config`. In both cases an attacker
+  who controls a repository — or who opens a pull request against one — gets arbitrary
+  command execution on the machine of anyone who runs an ordinary Nx command against
+  it, including CI runners.\n\nThe `affected` path is the more serious of the two.
+  `nx affected` and `nx show projects --affected` run constantly in CI, so a pull
+  request that changes nothing but `nx.json` is enough to execute code on the runner
+  with whatever credentials that job holds."
+date: "2026-10-05"
+pubdate: "2026-10-05"
+affected_range: ">=14.0.0 <22.7.8||>=23.0.0 <23.1.1"
+fixed_versions:
+- "22.7.8"
+- "23.1.1"
+affected_versions: "All versions starting from 14.0.0 before 22.7.8, all versions
+  starting from 23.0.0 before 23.1.1"
+not_impacted: "All versions before 14.0.0, all versions starting from 22.7.8 before
+  23.0.0, all versions starting from 23.1.1"
+solution: "Upgrade to versions 22.7.8, 23.1.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-w2vw-w76x-qr89"
+- "https://github.com/nrwl/nx/security/advisories/GHSA-w2vw-w76x-qr89"
+- "https://github.com/nrwl/nx/pull/36348"
+- "https://github.com/nrwl/nx/pull/36379"
+- "https://github.com/nrwl/nx/commit/11ab38573478172109bb5306cb30ca4af246caf0"
+- "https://github.com/nrwl/nx/commit/4159295a037fdbd8e7f44a33a19d85ab3792415b"
+- "https://github.com/nrwl/nx/commit/9ce184a04d2098a4797c8b0d6877ee079b751abf"
+- "https://github.com/nrwl/nx/commit/c12850ce7b364db08e325c13541641d754db7123"
+- "https://github.com/nrwl/nx/commit/cd9b3c068e17adc9c1722b35b9ca962b98542c20"
+- "https://github.com/nrwl/nx/commit/cf996496bbad727362d48292b50fafc8c3665847"
+- "https://github.com/nrwl/nx/releases/tag/22.7.8"
+- "https://github.com/nrwl/nx/releases/tag/23.1.1"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+uuid: "211e232c-b1eb-48f4-97c0-60b82f54ef7f"
+cwe_ids:
+- "CWE-78"
+- "CWE-88"
+- "CWE-937"
+- "CWE-1035"

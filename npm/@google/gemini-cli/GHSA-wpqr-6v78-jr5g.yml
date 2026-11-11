@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-wpqr-6v78-jr5g"
 identifiers:
+- "CVE-2026-12537"
 - "GHSA-wpqr-6v78-jr5g"
 package_slug: "npm/@google/gemini-cli"
 title: "Gemini CLI: Remote Code Execution via workspace trust and tool allowlisting
@@ -10,7 +11,7 @@ description: "Gemini CLI (`@google/gemini-cli`) and the `run-gemini-cli` GitHub 
   when used in untrusted environments like GitHub Actions. This update introduces
   a breaking change to how non-interactive (headless) environments handle folder trust,
   which may impact existing CI/CD workflows under specific conditions."
-date: "2026-04-25"
+date: "2026-09-24"
 pubdate: "2026-04-24"
 affected_range: "<0.39.1||>=0.40.0-preview.2 <0.40.0-preview.3"
 fixed_versions:
@@ -22,6 +23,7 @@ not_impacted: "All versions starting from 0.39.1 before 0.40.0-preview.2, all ve
   starting from 0.40.0-preview.3"
 solution: "Upgrade to versions 0.39.1, 0.40.0-preview.3 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-12537"
 - "https://github.com/advisories/GHSA-wpqr-6v78-jr5g"
 - "https://github.com/google-github-actions/run-gemini-cli/security/advisories/GHSA-wpqr-6v78-jr5g"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H"

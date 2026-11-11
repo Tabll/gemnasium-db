@@ -5,21 +5,14 @@ identifiers:
 package_slug: "pypi/dfir-unfurl"
 title: "Duplicate Advisory: Unfurl's unbounded zlib decompression allows decompression
   bomb DoS"
-description: "### Duplicate Advisory\nThis advisory has been withdrawn because it
-  is a duplicate of GHSA-h5qv-qjv4-pc5m. This link is maintained to preserve external
-  references.\n\n### Original Description\nUnfurl before 2026.04 contains an unbounded
-  zlib decompression vulnerability in parse_compressed.py that allows remote attackers
-  to cause denial of service. Attackers can submit highly compressed payloads via
-  URL parameters to the /json/visjs endpoint that expand to gigabytes, exhausting
-  server memory and crashing the service."
+description: "This advisory has been withdrawn."
 date: "2026-04-10"
 pubdate: "2026-04-09"
-affected_range: "<2026.04"
-fixed_versions:
-- "2026.04"
-affected_versions: "All versions before 2026.04"
-not_impacted: "All versions starting from 2026.04"
-solution: "Upgrade to version 2026.04 or above."
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "This advisory has been withdrawn."
+not_impacted: "This advisory has been withdrawn."
+solution: "This advisory has been withdrawn."
 urls:
 - "https://github.com/advisories/GHSA-c3f2-qg8v-25q2"
 - "https://github.com/obsidianforensics/unfurl/security/advisories/GHSA-h5qv-qjv4-pc5m"

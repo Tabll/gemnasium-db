@@ -1,6 +1,7 @@
 ---
 identifier: "GHSA-r7wm-3cxj-wff9"
 identifiers:
+- "CVE-2026-68494"
 - "GHSA-r7wm-3cxj-wff9"
 package_slug: "maven/com.fasterxml.jackson.core/jackson-core"
 title: "jackson-core: Async parser maxNumberLength bypass via chunked digit accumulation
@@ -24,7 +25,7 @@ description: "The fix released in jackson-core `2.18.6` and `2.21.1` for [GHSA-7
   at line 1834-1837 of `NonBlockingUtf8JsonParserBase.java` in 2.18.6, where `_setFractLength(fractLen)`
   IS called before the `NOT_AVAILABLE` return); the equivalent call is missing from
   every integer-digit path."
-date: "2026-08-03"
+date: "2026-10-02"
 pubdate: "2026-07-21"
 affected_range: "[,2.18.8),[2.19.0,2.21.4)"
 fixed_versions:
@@ -36,6 +37,7 @@ not_impacted: "All versions starting from 2.18.8 before 2.19.0, all versions sta
   from 2.21.4"
 solution: "Upgrade to versions 2.18.8, 2.21.4 or above."
 urls:
+- "https://nvd.nist.gov/vuln/detail/CVE-2026-68494"
 - "https://github.com/advisories/GHSA-r7wm-3cxj-wff9"
 - "https://github.com/FasterXML/jackson-core/security/advisories/GHSA-r7wm-3cxj-wff9"
 - "https://github.com/FasterXML/jackson-core/pull/1611"

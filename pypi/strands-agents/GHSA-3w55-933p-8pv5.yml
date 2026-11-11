@@ -1,0 +1,32 @@
+---
+identifier: "GHSA-3w55-933p-8pv5"
+identifiers:
+- "GHSA-3w55-933p-8pv5"
+package_slug: "pypi/strands-agents"
+title: "Strands Agents: Local Privilege Escalation via Symlink Attack in Default Session
+  File Storage"
+description: "The `FileSessionManager` defaults to storing session data in `/tmp/strands/sessions/`
+  (a world-writable directory) using predictable file paths and a write pattern (`open(path
+  + \".tmp\", \"w\")` → `os.replace()`) that follows symbolic links. A local attacker
+  can exploit this to overwrite arbitrary files or inject malicious session data for
+  persistent prompt injection."
+date: "2026-10-27"
+pubdate: "2026-10-27"
+affected_range: "<1.48.0"
+fixed_versions:
+- "1.48.0"
+affected_versions: "All versions before 1.48.0"
+not_impacted: "All versions starting from 1.48.0"
+solution: "Upgrade to version 1.48.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-3w55-933p-8pv5"
+- "https://github.com/strands-agents/harness-sdk/security/advisories/GHSA-3w55-933p-8pv5"
+- "https://github.com/strands-agents/harness-sdk/pull/2937"
+- "https://github.com/strands-agents/harness-sdk/commit/8658b9e0d57427b77b69343262184d76d8e63e8f"
+- "https://github.com/strands-agents/harness-sdk/releases/tag/python/v1.48.0"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H"
+uuid: "4a9dc6ad-327e-57da-b83b-35bfe87c8cc6"
+cwe_ids:
+- "CWE-59"
+- "CWE-937"
+- "CWE-1035"

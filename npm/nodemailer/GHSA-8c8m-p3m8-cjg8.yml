@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-8c8m-p3m8-cjg8"
+identifiers:
+- "GHSA-8c8m-p3m8-cjg8"
+package_slug: "npm/nodemailer"
+title: "Nodemailer: A nested comment ends early in addressparser, releasing the rest
+  of the comment as a recipient"
+description: "RFC 5322 comments nest. addressparser ended a comment at the first `)`,
+  including the one that closes a nested comment, and parsed the rest of the outer
+  comment as header text. `Victim (x(y) <evil@evil.com>) <v@victim.com>` names `v@victim.com`
+  with `x(y) <evil@evil.com>` as a comment, and Nodemailer read it as the address
+  `evil@evil.com`. This is the same shape as the escaped parenthesis fixed in 10.1.2,
+  reached through nesting instead of a quoted-pair. Affected: 3.0.0 through 10.1.3."
+date: "2026-10-23"
+pubdate: "2026-10-23"
+affected_range: ">=3.0.0 <10.1.4"
+fixed_versions:
+- "10.1.4"
+affected_versions: "All versions starting from 3.0.0 before 10.1.4"
+not_impacted: "All versions before 3.0.0, all versions starting from 10.1.4"
+solution: "Upgrade to version 10.1.4 or above."
+urls:
+- "https://github.com/advisories/GHSA-8c8m-p3m8-cjg8"
+- "https://github.com/nodemailer/nodemailer/security/advisories/GHSA-8c8m-p3m8-cjg8"
+- "https://github.com/nodemailer/nodemailer/commit/0a8761762ac78f2db2ba37f712f2a52a404ce011"
+- "https://github.com/nodemailer/nodemailer/releases/tag/v10.1.4"
+cvss_v3: "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:L/A:N"
+uuid: "2f9539a7-7745-5879-96e5-dd984bcd4cb2"
+cwe_ids:
+- "CWE-20"
+- "CWE-436"
+- "CWE-937"
+- "CWE-1035"

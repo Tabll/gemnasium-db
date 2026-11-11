@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-q84f-53jg-9ppm"
+identifiers:
+- "GHSA-q84f-53jg-9ppm"
+package_slug: "npm/better-auth"
+title: "better-auth: Device login approval does not show the requesting client or
+  permissions"
+description: "The device authorization plugin lets a user sign in on one device by
+  approving a short code on another. In affected versions, the approval information
+  given to the user leaves out which client asked for access and which permissions
+  it wants. The official approval examples therefore show only a generic request and
+  a code, so users cannot tell their own device from an attacker's request."
+date: "2026-10-27"
+pubdate: "2026-10-27"
+affected_range: ">=1.3.8-beta.3 <1.7.0-rc.3"
+fixed_versions:
+- "1.7.0-rc.3"
+affected_versions: "All versions starting from 1.3.8-beta.3 before 1.7.0-rc.3"
+not_impacted: "All versions before 1.3.8-beta.3, all versions starting from 1.7.0-rc.3"
+solution: "Upgrade to version 1.7.0-rc.3 or above."
+urls:
+- "https://github.com/advisories/GHSA-q84f-53jg-9ppm"
+- "https://github.com/better-auth/better-auth/security/advisories/GHSA-q84f-53jg-9ppm"
+- "https://github.com/better-auth/better-auth/commit/f68044dcfbd9fb83763249ed9509cfacbcce47be"
+- "https://github.com/better-auth/better-auth/releases/tag/v1.7.0-rc.3"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N"
+uuid: "f95d07e5-e7f6-5fd0-a031-c2a389d589a7"
+cwe_ids:
+- "CWE-451"
+- "CWE-937"
+- "CWE-1035"

@@ -16,7 +16,7 @@ description: "`Repo.clone_from()` passes the caller-supplied remote URL through 
   network to the attacker-named host. This crosses the trust boundary between an untrusted
   remote URL and the server's process environment, disclosing secrets such as `AWS_SECRET_ACCESS_KEY`
   or `GITHUB_TOKEN` with no precondition beyond the ability to submit a clone URL."
-date: "2026-09-08"
+date: "2026-09-24"
 pubdate: "2026-07-21"
 affected_range: "<3.1.52"
 fixed_versions:
@@ -32,6 +32,9 @@ urls:
 - "https://github.com/gitpython-developers/GitPython/commit/8ac5a30519b6f4af85398b9b9d7064ff4d452da2"
 - "https://github.com/gitpython-developers/GitPython/releases/tag/3.1.52"
 - "https://www.vulncheck.com/advisories/gitpython-before-environment-variable-exfiltration-via-clone-from"
+- "https://github.com/gitpython-developers/GitPython"
+- "https://github.com/pypa/advisory-database/tree/main/vulns/gitpython/PYSEC-2026-3842.yaml"
+- "https://pypi.org/project/gitpython"
 cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
 uuid: "4cfb2533-aa19-406c-b1fc-0d4a60e6a60f"
 cwe_ids:

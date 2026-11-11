@@ -1,0 +1,31 @@
+---
+identifier: "GHSA-g28h-2cmm-rj9x"
+identifiers:
+- "GHSA-g28h-2cmm-rj9x"
+package_slug: "pypi/langchain-nvidia-ai-endpoints"
+title: "langchain-nvidia-ai-endpoints has local file disclosure through VLM image
+  inputs"
+description: "`langchain-nvidia-ai-endpoints` versions before 1.4.2 accepted local
+  filesystem paths as image inputs for Vision Language Model (VLM) requests. If an
+  application passed attacker-controlled image input to `ChatNVIDIA` or VLM reranking
+  APIs, an attacker could cause files readable by the application process to be read
+  and included in the outbound request to the configured NVIDIA/NIM model endpoint."
+date: "2026-09-24"
+pubdate: "2026-09-24"
+affected_range: "<1.4.2"
+fixed_versions:
+- "1.4.2"
+affected_versions: "All versions before 1.4.2"
+not_impacted: "All versions starting from 1.4.2"
+solution: "Upgrade to version 1.4.2 or above."
+urls:
+- "https://github.com/advisories/GHSA-g28h-2cmm-rj9x"
+- "https://github.com/langchain-ai/langchain-nvidia/security/advisories/GHSA-g28h-2cmm-rj9x"
+- "https://github.com/langchain-ai/langchain-nvidia/commit/b483c7cad07dd9d5fd0fee2668238c4a08825d86"
+- "https://github.com/langchain-ai/langchain-nvidia/releases/tag/libs%2Fai-endpoints%2Fv1.4.2"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+uuid: "7e36b9aa-69b0-4b74-9885-47a4b34bc69a"
+cwe_ids:
+- "CWE-22"
+- "CWE-937"
+- "CWE-1035"

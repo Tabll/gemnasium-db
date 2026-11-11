@@ -1,0 +1,34 @@
+---
+identifier: "GHSA-7w82-6f9j-v9jp"
+identifiers:
+- "GHSA-7w82-6f9j-v9jp"
+package_slug: "npm/mcp-sanitizer"
+title: "mcp-sanitizer: File Path Sanitizer Permits Arbitrary User-Home Absolute Paths"
+description: "`mcp-sanitizer` v1.3.3 explicitly whitelists `/home/` and `/Users/`
+  as allowed absolute path prefixes in its file path validation logic (`src/utils/validation-utils.js:188-196`).
+  As a result, paths such as `/home/alice/.ssh/id_rsa` and `/home/alice/.aws/credentials`
+  pass through `sanitizer.sanitize()` with `blocked=false`, even though they point
+  to highly sensitive files outside any configured safe root. Any consumer application
+  that trusts the sanitized path and passes it to a filesystem read/write operation
+  (e.g., `fs.readFile`) will expose arbitrary user-home directory files to an unauthenticated
+  network attacker. Dynamic reproduction confirmed exfiltration of a simulated SSH
+  private key and AWS credentials via a single HTTP POST request."
+date: "2026-10-28"
+pubdate: "2026-10-28"
+affected_range: "<1.4.0"
+fixed_versions:
+- "1.4.0"
+affected_versions: "All versions before 1.4.0"
+not_impacted: "All versions starting from 1.4.0"
+solution: "Upgrade to version 1.4.0 or above."
+urls:
+- "https://github.com/advisories/GHSA-7w82-6f9j-v9jp"
+- "https://github.com/starman69/mcp-sanitizer/security/advisories/GHSA-7w82-6f9j-v9jp"
+- "https://github.com/starman69/mcp-sanitizer/commit/200685889b073f7470859b0941b67b7f46255f09"
+- "https://github.com/starman69/mcp-sanitizer/releases/tag/v1.4.0"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+uuid: "bf17a540-a204-53d0-9d52-dd7ef28dc3bd"
+cwe_ids:
+- "CWE-22"
+- "CWE-937"
+- "CWE-1035"

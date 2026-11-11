@@ -1,0 +1,27 @@
+---
+identifier: "GHSA-9rcc-pmj8-ffhr"
+identifiers:
+- "GHSA-9rcc-pmj8-ffhr"
+package_slug: "packagist/mediawiki/semantic-media-wiki"
+title: "Semantic MediaWiki's Special:FacetedSearch cstate hidden inputs enable reflected
+  XSS (residual of CVE-2025-10354)"
+description: "Special:FacetedSearch `cstate` hidden inputs enable reflected XSS (residual
+  of CVE-2025-10354)"
+date: "2026-09-18"
+pubdate: "2026-09-18"
+affected_range: ">=4.2.0 <7.2.1"
+fixed_versions:
+- "7.2.1"
+affected_versions: "All versions starting from 4.2.0 before 7.2.1"
+not_impacted: "All versions before 4.2.0, all versions starting from 7.2.1"
+solution: "Upgrade to version 7.2.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-9rcc-pmj8-ffhr"
+- "https://github.com/SemanticMediaWiki/SemanticMediaWiki/security/advisories/GHSA-9rcc-pmj8-ffhr"
+- "https://github.com/SemanticMediaWiki/SemanticMediaWiki/releases/tag/7.2.1"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+uuid: "5a2fb699-15b0-466f-b228-7a5ed9aeb6e2"
+cwe_ids:
+- "CWE-79"
+- "CWE-937"
+- "CWE-1035"

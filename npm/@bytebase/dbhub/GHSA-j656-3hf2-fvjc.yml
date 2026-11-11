@@ -1,0 +1,70 @@
+---
+identifier: "GHSA-j656-3hf2-fvjc"
+identifiers:
+- "GHSA-j656-3hf2-fvjc"
+package_slug: "npm/@bytebase/dbhub"
+title: "DBHub: MySQL and MariaDB comment interpretation bypasses read-only SQL validation"
+description: "The read-only mode can be bypassed on the MySQL and MariaDB connectors.
+  In read-only mode a caller can still execute arbitrary write and DDL statements
+  (for example DROP TABLE), which defeats the protection that read-only mode is meant
+  to provide when a database is exposed to an AI agent.\n\nRoot cause\n\nThe problem
+  is a mismatch between how DBHub's SQL parser handles single-line comments and how
+  MySQL and MariaDB actually parse them.\n\nIn src/utils/sql-parser.ts, scanSingleLineComment
+  treats \"--\" as the start of a comment no matter what character follows it. MySQL
+  and MariaDB only begin a \"--\" comment when the two dashes are followed by whitespace,
+  a control character, or the end of the line. Otherwise the dashes are read as two
+  minus signs and the rest of the line is ordinary SQL.\n\nThe read-only check in
+  src/tools/execute-sql.ts splits the input and validates each statement with isReadOnlySQL,
+  but the connector then executes the original, unmodified string. The MySQL and MariaDB
+  connectors open their connection pool with multipleStatements: true (src/connectors/mysql/index.ts:54
+  and src/connectors/mariadb/index.ts:53) and run the whole string in a single call.\n\nBecause
+  of this, the following payload:\n\nSELECT 1--1;DROP TABLE victim\n\nis seen by DBHub
+  as a single SELECT statement, since everything after \"--\" is treated as a comment
+  and the read-only check passes. MySQL and MariaDB instead parse it as \"SELECT 1
+  - -1\" followed by \"DROP TABLE victim\" and execute both statements.\n\nProof of
+  concept\n\n1) DBHub's own parser. Running splitSQLStatements and isReadOnlySQL from
+  this repository on the payload returns a single statement and readOnly = true, so
+  the query is allowed in read-only mode. The same code correctly rejects \"SELECT
+  1; DROP TABLE victim\", which confirms that the \"--1\" is what gets through.\n\n2)
+  Execution. Connecting to MariaDB 11.4 with mysql2 and multipleStatements: true (the
+  same option the connector uses) and sending the payload returns 2 for the first
+  statement, which confirms \"--\" was not treated as a comment, and then drops the
+  table. The table exists before the call and is gone afterwards.\n\nImpact\n\nRead-only
+  mode is the control operators rely on to let an assistant read from a database without
+  being able to change it. With this bypass, anyone who can influence the SQL the
+  assistant sends, most realistically through prompt injection in content the assistant
+  reads, can perform writes and destructive DDL against MySQL and MariaDB. PostgreSQL
+  is not affected by this path, because it treats \"--\" as a comment regardless and
+  executes each split statement individually.\n\nAffected code (current main, commit
+  e99c3aa9, package version 0.22.3)\n\n- src/utils/sql-parser.ts — scanSingleLineComment
+  does not require whitespace after \"--\"\n- src/tools/execute-sql.ts — validates
+  the split statements but executes the original string\n- src/connectors/mysql/index.ts
+  and src/connectors/mariadb/index.ts — multipleStatements: true\n\nSuggested fix\n\nThe
+  most reliable fix is to stop executing the original string: run only the statements
+  that were validated, and disable multipleStatements on the MySQL and MariaDB connections
+  unless it is genuinely required. As defense in depth, make the comment scanner dialect-aware
+  so that for MySQL and MariaDB \"--\" only starts a comment when it is followed by
+  whitespace, a control character, or the end of the line, similar to the handling
+  already in place for MySQL conditional comments."
+date: "2026-11-02"
+pubdate: "2026-11-02"
+affected_range: "<0.22.6"
+fixed_versions:
+- "0.22.6"
+affected_versions: "All versions before 0.22.6"
+not_impacted: "All versions starting from 0.22.6"
+solution: "Upgrade to version 0.22.6 or above."
+urls:
+- "https://github.com/advisories/GHSA-j656-3hf2-fvjc"
+- "https://github.com/bytebase/dbhub/security/advisories/GHSA-j656-3hf2-fvjc"
+- "https://github.com/bytebase/dbhub/pull/342"
+- "https://github.com/bytebase/dbhub/commit/872bb338f7d31f6afe517a076ac3e3edafaaaf08"
+- "https://github.com/bytebase/dbhub/releases/tag/v0.22.6"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:H"
+cvss_v4: "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:N/VI:H/VA:H/SC:N/SI:N/SA:N"
+uuid: "cf235c6f-1ac4-5894-bfe1-d2190ce69319"
+cwe_ids:
+- "CWE-436"
+- "CWE-863"
+- "CWE-937"
+- "CWE-1035"

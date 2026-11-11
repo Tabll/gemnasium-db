@@ -21,7 +21,7 @@ description: "`reverseProxy()` and `reverseProxyRouting()` matched configured vh
   a public-facing inbound HTTP handler with two or more configured virtual hosts.
   The intended outbound / test-time usage is unaffected. If you *did* deploy `reverseProxy()`
   inbound and rely on multi-vhost routing for authorization, treat upgrade as urgent."
-date: "2026-06-19"
+date: "2026-09-24"
 pubdate: "2026-06-19"
 affected_range: "[,4.51.0),[5.0.0,5.42.0),[6.0.0,6.49.0)"
 fixed_versions:

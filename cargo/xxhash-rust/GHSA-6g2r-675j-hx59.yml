@@ -1,0 +1,35 @@
+---
+identifier: "GHSA-6g2r-675j-hx59"
+identifiers:
+- "GHSA-6g2r-675j-hx59"
+package_slug: "cargo/xxhash-rust"
+title: "xxhash-rust: Safe xxh3 custom-secret API accepts too-short secret in release"
+description: "I have a minimized safe Rust witness for xxhash-rust 0.8.15.\n\nSafe
+  public route:\n\nxxhash_rust::xxh3::xxh3_64_with_secret(&[0x41], &[])\n\nThe caller-side
+  harness contains no unsafe code. Under release execution, the internal minimum custom-secret
+  length predicate is enforced only by debug_assert!. Release-Miri reports construction
+  of a fixed-width reference beyond the empty secret allocation.\n\nObserved diagnostic:\n\nUndefined
+  Behavior: constructing invalid value of type &[u8; 4]: encountered a dangling reference\n\nLocal
+  repair evidence: handling custom-secret slices shorter than the internal minimum
+  before fixed-width secret reads makes the same safe short-secret harness pass under
+  Linux release-Miri.\n\nLocal artifacts:\n- vulnerable log: artifacts/logs/W-4332_xxhash_rust_short_secret_miri_release_linux_001.log\n-
+  repair log: artifacts/logs/differentials/W-4332_xxhash_rust_local_repair_miri_release_linux_001.log\n-
+  report: artifacts/reports/W-4332_xxhash_rust_short_secret_report.md"
+date: "2026-10-02"
+pubdate: "2026-10-02"
+affected_range: "<0.8.16"
+fixed_versions:
+- "0.8.16"
+affected_versions: "All versions before 0.8.16"
+not_impacted: "All versions starting from 0.8.16"
+solution: "Upgrade to version 0.8.16 or above."
+urls:
+- "https://github.com/advisories/GHSA-6g2r-675j-hx59"
+- "https://github.com/DoumanAsh/xxhash-rust/security/advisories/GHSA-6g2r-675j-hx59"
+- "https://github.com/DoumanAsh/xxhash-rust/commit/200cadb1a442c7f6cd9747e7d4297379b6b74200"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:L/I:N/A:N"
+uuid: "e8cb31ba-6d69-40f9-85c8-7321d562fd46"
+cwe_ids:
+- "CWE-125"
+- "CWE-937"
+- "CWE-1035"

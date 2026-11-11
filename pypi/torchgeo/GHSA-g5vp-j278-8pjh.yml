@@ -4,17 +4,14 @@ identifiers:
 - "GHSA-g5vp-j278-8pjh"
 package_slug: "pypi/torchgeo"
 title: "Duplicate Advisory: TorchGeo Remote Code Execution Vulnerability"
-description: "## Duplicate Advisory\n\nThis advisory has been withdrawn because it
-  is a duplicate of GHSA-ghq9-vc6f-8qjf. This link is maintained to preserve external
-  references.\n\n## Original Description\nTorchGeo Remote Code Execution Vulnerability"
+description: "This advisory has been withdrawn."
 date: "2026-04-01"
 pubdate: "2024-11-12"
-affected_range: "<0.6.1"
-fixed_versions:
-- "0.6.1"
-affected_versions: "All versions before 0.6.1"
-not_impacted: "All versions starting from 0.6.1"
-solution: "Upgrade to version 0.6.1 or above."
+affected_range: "<0"
+fixed_versions: []
+affected_versions: "This advisory has been withdrawn."
+not_impacted: "This advisory has been withdrawn."
+solution: "This advisory has been withdrawn."
 urls:
 - "https://github.com/advisories/GHSA-g5vp-j278-8pjh"
 - "https://nvd.nist.gov/vuln/detail/CVE-2024-49048"

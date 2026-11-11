@@ -1,0 +1,33 @@
+---
+identifier: "GHSA-m687-p538-r5hp"
+identifiers:
+- "GHSA-m687-p538-r5hp"
+package_slug: "go/code.vikunja.io/api"
+title: "Vikunja: Permissive Cross-domain Security Policy trusts every localhost origin
+  which should not be trusted"
+description: "Vikunja ships with `cors.origins` defaulting to `http://127.0.0.1:*`
+  and `http://localhost:*`, and sends `Access-Control-Allow-Credentials: true`, so
+  a page served from any port on the user's own machine may make credentialed cross-origin
+  requests to the API and read the responses. The mandatory `service.publicurl` is
+  appended to that default list rather than replacing it, so a fully configured production
+  deployment still trusts every localhost origin. Combined with the token refresh
+  endpoint, which authenticates with the `vikunja_refresh_token` cookie and returns
+  a bearer JWT in the response body, one `fetch()` from such a page yields a working
+  access token for whoever is logged in, and from there the whole account."
+date: "2026-10-09"
+pubdate: "2026-10-09"
+affected_range: ">=2.2.0 <=2.6.0"
+fixed_versions: []
+affected_versions: "All versions starting from 2.2.0 up to 2.6.0"
+not_impacted: ""
+solution: "Unfortunately, there is no solution available yet."
+urls:
+- "https://github.com/advisories/GHSA-m687-p538-r5hp"
+- "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-m687-p538-r5hp"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:L/AC:L/AT:P/PR:N/UI:P/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N"
+uuid: "54dc1996-4f9a-4935-8d15-b6f894eaaba7"
+cwe_ids:
+- "CWE-937"
+- "CWE-942"
+- "CWE-1035"
