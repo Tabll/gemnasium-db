@@ -1,0 +1,46 @@
+---
+identifier: "GHSA-7m8x-x364-m26j"
+identifiers:
+- "GHSA-7m8x-x364-m26j"
+package_slug: "npm/signalk-server"
+title: "Signal K Server: Buffered logs exposed to unauthenticated WebSocket clients"
+description: "An unauthenticated WebSocket client can subscribe to the log path and
+  receive buffered server logs.\n\nWebSocket connections are intentionally permitted
+  before authentication because login occurs over the WebSocket connection. However,
+  the log subscription path does not enforce an authorization check.\n\n`processSubscribe`
+  handles subscriptions to the log path separately, without applying access control:\n\n```ts\nif
+  (\nArray.isArray(msg.subscribe) &&\nmsg.subscribe.length > 0 &&\nmsg.subscribe[0].path
+  === 'log'\n) {\nif (!spark.logUnsubscribe) {\nspark.logUnsubscribe = startServerLog(app,
+  spark)\n}\n} else {\n// normal subscriptions go through subscriptionmanager, which
+  applies\n// securityStrategy.filterReadDelta\n}\n```\n\n`startServerLog` then replays
+  the whole buffer to that socket:\n\n```ts\napp.logging.getLog().forEach((log) =>
+  {\nspark.write({ type: 'LOG', data: log })\n})\n```\n\nThe asymmetry is inside this
+  one file. Writes are gated by `securityStrategy.shouldAllowWrite` (`ws.ts:961`),
+  normal delta subscriptions are filtered by `securityStrategy.filterReadDelta` (`ws.ts:1159`,
+  the else branch of this same function), and the log branch consults neither.\n\nAn
+  unauthenticated socket, which is legitimately open for login, can subscribe to `log`
+  and receive buffered server logs.\n\nFix: Requires an administrator principal, before
+  `startServerLog`, in the same way the other branch defers to `securityStrategy`.
+  The fix was released with version 2.31.0-beta.1.\n\nThe investigated code path was
+  reviewed at commit 26ab199. No server was run and no WebSocket frames were captured.
+  AI assistance was used during the investigation."
+date: "2026-11-12"
+pubdate: "2026-11-12"
+affected_range: "<2.31.0-beta.1"
+fixed_versions:
+- "2.31.0-beta.1"
+affected_versions: "All versions before 2.31.0-beta.1"
+not_impacted: "All versions starting from 2.31.0-beta.1"
+solution: "Upgrade to version 2.31.0-beta.1 or above."
+urls:
+- "https://github.com/advisories/GHSA-7m8x-x364-m26j"
+- "https://github.com/SignalK/signalk-server/security/advisories/GHSA-7m8x-x364-m26j"
+- "https://github.com/SignalK/signalk-server/commit/1bee85114a4cb7403aba71632d9902792d6b4f0c"
+- "https://github.com/SignalK/signalk-server/releases/tag/v2.31.0"
+- "https://github.com/SignalK/signalk-server/releases/tag/v2.31.0-beta.1"
+cvss_v3: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+uuid: "c11cb686-a30c-5540-84af-ba36df44247e"
+cwe_ids:
+- "CWE-306"
+- "CWE-937"
+- "CWE-1035"

@@ -11,7 +11,7 @@ description: "The `z_listunifiedreceivers` RPC handler panics when processing a 
   Jubjub points). The handler calls `.expect(\"using data already decoded as valid\")`
   on the fallible result. Because Zebra's release profile sets `panic = \"abort\"`,
   the panic terminates the entire node process, not just the RPC task."
-date: "2026-07-02"
+date: "2026-11-13"
 pubdate: "2026-07-02"
 affected_range: "<4.5.0"
 fixed_versions:

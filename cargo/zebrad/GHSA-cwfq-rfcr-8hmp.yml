@@ -12,7 +12,7 @@ description: "For V5+ transparent spends, `Zebra` and `zcashd` disagree on the s
   of failing.\n\nThe result is a direct block-validity split. A malformed V5 transparent
   transaction can be accepted by `Zebra`, retained in `Zebra`'s mempool, selected
   into `Zebra` `getblocktemplate`, mined into a block, and then rejected by `zcashd`."
-date: "2026-05-18"
+date: "2026-11-13"
 pubdate: "2026-05-07"
 affected_range: "<4.4.0"
 fixed_versions:
