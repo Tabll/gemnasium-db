@@ -1,0 +1,42 @@
+---
+identifier: "GHSA-4rj4-rcrq-gr92"
+identifiers:
+- "GHSA-4rj4-rcrq-gr92"
+package_slug: "npm/safari-mcp"
+title: "Safari MCP: JavaScript injection through single-quoted tool arguments (backslash
+  not escaped)"
+description: "Sixteen places in `safari.js` placed a tool argument inside a single-quoted
+  JavaScript string literal and escaped the single quote without first escaping backslashes.
+  An argument containing a backslash followed by a quote therefore closed the literal,
+  and the rest of the argument ran as JavaScript in the page.\n\nSeven of the affected
+  arguments belong to read-only tools that are exempt from the tab-ownership check:
+  `filter` in `safari_network_details` and `safari_extract_links`, `level` in `safari_console_filter`,
+  `selector` in `safari_snapshot`, `safari_accessibility_snapshot` and `safari_extract_tables`,
+  and `dbName` / `storeName` in `safari_get_indexed_db`. An MCP client limited to
+  read-only tools (with `safari_evaluate` and `safari_run_script` excluded from its
+  allowlist) could still run arbitrary page JavaScript through them, including in
+  a tab the session does not own. The other affected arguments are `ref` in `safari_select_option`,
+  `safari_react_select_set` and `safari_react_select_list_options`, the key in `safari_press_key`,
+  the file name in `safari_upload_file` and `safari_paste_image`, and the first line
+  of the text in `safari_replace_editor`."
+date: "2026-11-19"
+pubdate: "2026-11-19"
+affected_range: "<2.22.15"
+fixed_versions:
+- "2.22.15"
+affected_versions: "All versions before 2.22.15"
+not_impacted: "All versions starting from 2.22.15"
+solution: "Upgrade to version 2.22.15 or above."
+urls:
+- "https://github.com/advisories/GHSA-4rj4-rcrq-gr92"
+- "https://github.com/achiya-automation/safari-mcp/security/advisories/GHSA-4rj4-rcrq-gr92"
+- "https://github.com/achiya-automation/safari-mcp/commit/23f1319defefd2c5cbd06b23189ab01876a8c5d3"
+- "https://github.com/achiya-automation/safari-mcp/releases/tag/v2.22.15"
+cvss_v3: "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N"
+cvss_v4: "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:N/SC:H/SI:H/SA:N"
+uuid: "190200e4-0ea0-5b85-9d67-02619b0d6224"
+cwe_ids:
+- "CWE-94"
+- "CWE-116"
+- "CWE-937"
+- "CWE-1035"
